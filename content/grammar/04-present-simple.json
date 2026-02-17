@@ -1,0 +1,28 @@
+{
+  "id": 4,
+  "slug": "present-simple",
+  "title_en": "Present Simple",
+  "title_ka": "მარტივი აწმყო დრო (Present Simple)",
+  "level": "A1",
+  "explanation_ka": "Present Simple (მარტივი აწმყო) გამოიყენება ჩვეულებრივი, განმეორებადი მოქმედებებისთვის, ფაქტებისა და ჩვევებისთვის.\n\nროდის ვიყენებთ:\n- ყოველდღიური ჩვევები: I drink coffee every morning. (ყოველ დილით ყავას ვსვამ.)\n- ფაქტები და ჭეშმარიტებები: The sun rises in the east. (მზე აღმოსავლეთით ამოდის.)\n- განმეორებადი მოქმედებები: She goes to school every day. (ის ყოველ დღე სკოლაში მიდის.)\n\nწესები:\n1. I/you/we/they + ზმნის ძირითადი ფორმა: I work, they play.\n2. He/she/it + ზმნა + \"-s\" ან \"-es\": He works, she plays, it rains.\n   - ზმნები -s, -sh, -ch, -x, -o-ზე: + \"-es\": goes, watches, washes.\n   - თანხმოვანი + y: y → ies: study → studies, carry → carries.\n3. უარყოფა: I/you/we/they + don't + ზმნა: I don't like fish.\n   He/she/it + doesn't + ზმნა (\"s\" აღარ ემატება!): She doesn't like fish.\n4. კითხვა: Do + I/you/we/they + ზმნა?: Do you speak English?\n   Does + he/she/it + ზმნა?: Does she speak English?\n\nქართულში აწმყო დროს არ აქვს ამდენი წესი — ინგლისურში კი მესამე პირში \"-s\"-ის დამატება აუცილებელია!",
+  "examples": [
+    {"en": "I work every day.", "ka": "მე ყოველ დღე ვმუშაობ."},
+    {"en": "She speaks English.", "ka": "ის ინგლისურად ლაპარაკობს."},
+    {"en": "They don't eat meat.", "ka": "ისინი ხორცს არ ჭამენ."},
+    {"en": "Does he play football?", "ka": "ის ფეხბურთს თამაშობს?"},
+    {"en": "We live in Tbilisi.", "ka": "ჩვენ თბილისში ვცხოვრობთ."}
+  ],
+  "common_mistakes_ka": "ყველაზე გავრცელებული შეცდომა: მესამე პირში \"-s\"-ის დავიწყება. ქართველები ხშირად წერენ \"She speak\" ნაცვლად \"She speaks\"-ისა. ასევე ხშირი შეცდომაა does-თან \"-s\"-ის დატოვება: \"Does she speaks?\" — არასწორია! სწორია: \"Does she speak?\" რადგან does უკვე მიუთითებს მესამე პირზე.",
+  "exercises": [
+    {"type": "fill-blank", "question": "She ___ to school every day.", "answer": "goes", "options": ["go", "goes", "going"]},
+    {"type": "fill-blank", "question": "I ___ coffee in the morning.", "answer": "drink", "options": ["drink", "drinks", "drinking"]},
+    {"type": "fill-blank", "question": "He ___ English very well.", "answer": "speaks", "options": ["speak", "speaks", "speaking"]},
+    {"type": "fill-blank", "question": "They ___ like fish.", "answer": "don't", "options": ["don't", "doesn't", "isn't"]},
+    {"type": "fill-blank", "question": "___ she work here?", "answer": "Does", "options": ["Do", "Does", "Is"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He don't like milk.", "He doesn't like milk.", "He doesn't likes milk."], "answer": "He doesn't like milk."},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She studys hard.", "She studies hard.", "She study hard."], "answer": "She studies hard."},
+    {"type": "fill-blank", "question": "We ___ in Georgia.", "answer": "live", "options": ["live", "lives", "living"]},
+    {"type": "fill-blank", "question": "My father ___ a car.", "answer": "has", "options": ["have", "has", "having"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Do you likes pizza?", "Does you like pizza?", "Do you like pizza?"], "answer": "Do you like pizza?"}
+  ]
+}

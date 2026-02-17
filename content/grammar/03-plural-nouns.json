@@ -1,0 +1,28 @@
+{
+  "id": 3,
+  "slug": "plural-nouns",
+  "title_en": "Plural Nouns",
+  "title_ka": "მრავლობითი რიცხვი",
+  "level": "A1",
+  "explanation_ka": "ინგლისურში არსებითი სახელის მრავლობითი რიცხვის შესაქმნელად, უმეტეს შემთხვევაში სიტყვის ბოლოს \"-s\" ან \"-es\" ემატება.\n\nძირითადი წესები:\n1. უმეტეს სიტყვებს ბოლოში \"-s\" ემატება: cat → cats, book → books, dog → dogs.\n2. თუ სიტყვა მთავრდება -s, -sh, -ch, -x, -z-ით, ემატება \"-es\": bus → buses, dish → dishes, watch → watches, box → boxes.\n3. თუ სიტყვა მთავრდება თანხმოვანი + y-ით, \"y\" იცვლება \"ies\"-ით: baby → babies, city → cities. მაგრამ ხმოვანი + y: boy → boys, day → days.\n4. თუ სიტყვა მთავრდება -f ან -fe-ით, ხშირად იცვლება \"-ves\"-ით: knife → knives, wife → wives.\n5. არსებობს არაწესიერი მრავლობითი ფორმები: man → men, woman → women, child → children, tooth → teeth, foot → feet, mouse → mice, person → people.\n\nქართულში მრავლობითი რიცხვი \"-ები\" სუფიქსით წარმოიქმნება (წიგნი → წიგნები), რაც უფრო მარტივია. ინგლისურში კი რამდენიმე წესი უნდა დაიმახსოვროთ.",
+  "examples": [
+    {"en": "I have two cats.", "ka": "მე ორი კატა მყავს."},
+    {"en": "There are three boxes on the table.", "ka": "მაგიდაზე სამი ყუთია."},
+    {"en": "The children are playing.", "ka": "ბავშვები თამაშობენ."},
+    {"en": "She bought new knives.", "ka": "მან ახალი დანები იყიდა."},
+    {"en": "Those women are doctors.", "ka": "ის ქალები ექიმები არიან."}
+  ],
+  "common_mistakes_ka": "ქართველები ხშირად ავიწყდებათ \"-s\" დამატება მრავლობით რიცხვში, რადგან ქართულში რიცხვით სახელთან მხოლობითი ფორმა გამოიყენება: \"ორი წიგნი\" (არა \"ორი წიგნები\"). ინგლისურში კი აუცილებლად: \"two books\" (არა \"two book\"). ასევე არაწესიერი ფორმები ხშირად ერევათ: \"childs\" ნაცვლად \"children\"-ისა.",
+  "exercises": [
+    {"type": "fill-blank", "question": "One cat, two ___.", "answer": "cats", "options": ["cats", "cates", "caties"]},
+    {"type": "fill-blank", "question": "One box, three ___.", "answer": "boxes", "options": ["boxs", "boxes", "boxies"]},
+    {"type": "fill-blank", "question": "One baby, two ___.", "answer": "babies", "options": ["babys", "babyes", "babies"]},
+    {"type": "fill-blank", "question": "One child, five ___.", "answer": "children", "options": ["childs", "childes", "children"]},
+    {"type": "fill-blank", "question": "One man, two ___.", "answer": "men", "options": ["mans", "mens", "men"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I have three watchs.", "I have three watches.", "I have three watchies."], "answer": "I have three watches."},
+    {"type": "multiple-choice", "question": "Which is the plural of 'tooth'?", "options": ["tooths", "toothes", "teeth"], "answer": "teeth"},
+    {"type": "fill-blank", "question": "One knife, two ___.", "answer": "knives", "options": ["knifes", "knives", "knifees"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Two boy are here.", "Two boys are here.", "Two boies are here."], "answer": "Two boys are here."},
+    {"type": "fill-blank", "question": "One city, many ___.", "answer": "cities", "options": ["citys", "cityes", "cities"]}
+  ]
+}

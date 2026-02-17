@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "slug": "articles",
+  "title_en": "Articles (a/an/the)",
+  "title_ka": "არტიკლები (a/an/the)",
+  "level": "A1",
+  "explanation_ka": "ინგლისურში არსებობს სამი არტიკლი: a, an და the. ქართულ ენაში არტიკლები საერთოდ არ არსებობს, ამიტომ ეს ქართველებისთვის ერთ-ერთი ყველაზე რთული თემაა.\n\n\"a\" და \"an\" — განუსაზღვრელი არტიკლებია. გამოიყენება, როცა რაიმეზე პირველად საუბრობთ ან როცა კონკრეტული საგანი არ იგულისხმება.\n- \"a\" გამოიყენება თანხმოვნის ხმის წინ: a book, a cat, a university (\"იუ\" ხმა).\n- \"an\" გამოიყენება ხმოვნის ხმის წინ: an apple, an egg, an hour (\"h\" არ ისმის).\n\n\"the\" — განსაზღვრული არტიკლია. გამოიყენება, როცა ორივე მოსაუბრემ იცის რომელ საგანზეა საუბარი, ან როცა საგანი უკვე ნახსენებია.\n\nმაგალითად:\nI have a dog. The dog is big. — მე ძაღლი მყავს. ეს ძაღლი დიდია.\n\nმნიშვნელოვანი: არტიკლი მხოლოდ არსებით სახელთან გამოიყენება. მრავლობით რიცხვში \"a/an\" არ გამოიყენება.",
+  "examples": [
+    {"en": "I have a cat.", "ka": "მე კატა მყავს."},
+    {"en": "She is eating an apple.", "ka": "ის ვაშლს ჭამს."},
+    {"en": "The book is on the table.", "ka": "წიგნი მაგიდაზეა."},
+    {"en": "He is a teacher.", "ka": "ის მასწავლებელია."},
+    {"en": "Can you open the door?", "ka": "შეგიძლია კარი გააღო?"}
+  ],
+  "common_mistakes_ka": "ქართველები ხშირად ავიწყდებათ არტიკლის გამოყენება, რადგან ქართულში არტიკლები არ არსებობს. მაგალითად, ვამბობთ \"მე სტუდენტი ვარ\" და წერენ \"I am student\" ნაცვლად \"I am a student\"-ისა. ასევე ხშირი შეცდომაა \"a\" და \"an\" აღრევა — დაიმახსოვრეთ: მნიშვნელოვანია ხმა, არა ასო! \"A university\" (იუ-ხმა), მაგრამ \"an hour\" (ჰ-არ ისმის).",
+  "exercises": [
+    {"type": "fill-blank", "question": "I have ___ dog.", "answer": "a", "options": ["a", "an", "the"]},
+    {"type": "fill-blank", "question": "She is eating ___ orange.", "answer": "an", "options": ["a", "an", "the"]},
+    {"type": "fill-blank", "question": "___ sun is very hot today.", "answer": "The", "options": ["A", "An", "The"]},
+    {"type": "fill-blank", "question": "He is ___ engineer.", "answer": "an", "options": ["a", "an", "the"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I need a umbrella.", "I need an umbrella.", "I need umbrella."], "answer": "I need an umbrella."},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She is teacher.", "She is a teacher.", "She is an teacher."], "answer": "She is a teacher."},
+    {"type": "fill-blank", "question": "Can you pass me ___ salt?", "answer": "the", "options": ["a", "an", "the"]},
+    {"type": "fill-blank", "question": "I saw ___ interesting movie.", "answer": "an", "options": ["a", "an", "the"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He has a honest face.", "He has an honest face.", "He has the honest face."], "answer": "He has an honest face."},
+    {"type": "fill-blank", "question": "There is ___ cat in the garden.", "answer": "a", "options": ["a", "an", "the"]}
+  ]
+}
