@@ -26,10 +26,12 @@
 
 ### Not yet done (Phase 1 remaining):
 - [ ] Choose name and register .ge domain
-- [ ] Deploy to Cloudflare Pages
+- [x] Deploy to surge.sh — **LIVE at https://fluentge.surge.sh** ✅ (Feb 18)
+- [ ] Deploy to Cloudflare Pages (needs API token auth)
 - [ ] Firebase setup (auth + database)
 - [ ] PWA setup
-- [ ] Generate remaining 150 words to reach 200
+- [x] Generate 591 words across 9 categories ✅ (exceeds 200 target!)
+- [x] Wire all 9 decks into flashcard app ✅ (Feb 18) — was only 2 decks before
 
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started

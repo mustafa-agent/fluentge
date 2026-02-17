@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="რეგისტრაცია — FluentGe">
+  <section class="px-4 py-20 max-w-md mx-auto">
+    <div class="text-center mb-10">
+      <div class="text-5xl mb-4">🎓</div>
+      <h1 class="text-3xl font-extrabold mb-3">შექმენი ანგარიში</h1>
+      <p class="text-[#94a3b8]">დარეგისტრირდი და მიიღე წვდომა სრულ კურსზე</p>
+    </div>
+
+    <div class="bg-[#1e293b] rounded-2xl p-8">
+      <form id="registerForm" class="space-y-5">
+        <div>
+          <label class="block text-sm font-medium mb-1.5">სახელი</label>
+          <input type="text" name="name" required placeholder="შენი სახელი"
+            class="w-full bg-[#0f172a] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#64748b] focus:outline-none focus:border-[#22c55e] transition-colors" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1.5">ელ. ფოსტა</label>
+          <input type="email" name="email" required placeholder="example@gmail.com"
+            class="w-full bg-[#0f172a] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#64748b] focus:outline-none focus:border-[#22c55e] transition-colors" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1.5">პაროლი</label>
+          <input type="password" name="password" required placeholder="მინიმუმ 6 სიმბოლო"
+            class="w-full bg-[#0f172a] border border-white/10 rounded-xl px-4 py-3 text-white placeholder-[#64748b] focus:outline-none focus:border-[#22c55e] transition-colors" />
+        </div>
+
+        <button type="submit"
+          class="w-full bg-[#22c55e] hover:bg-[#16a34a] text-white font-bold py-3.5 rounded-xl text-lg transition-colors">
+          რეგისტრაცია
+        </button>
+      </form>
+
+      <p class="text-center text-[#94a3b8] text-sm mt-6">
+        უკვე გაქვს ანგარიში? <a href="/login/" class="text-[#22c55e] hover:underline">შესვლა</a>
+      </p>
+    </div>
+
+    <!-- Pricing info -->
+    <div class="mt-10 bg-[#1e293b] rounded-2xl p-8 text-center">
+      <h2 class="text-xl font-bold mb-4">💎 პრემიუმ კურსი</h2>
+      <div class="flex justify-center gap-4 mb-6">
+        <div class="bg-[#0f172a] rounded-xl p-4 flex-1">
+          <div class="text-2xl font-bold text-[#22c55e]">9.99 ₾</div>
+          <div class="text-[#94a3b8] text-sm">თვეში</div>
+        </div>
+        <div class="bg-[#0f172a] rounded-xl p-4 flex-1 border border-[#22c55e]">
+          <div class="text-2xl font-bold text-[#22c55e]">79.99 ₾</div>
+          <div class="text-[#94a3b8] text-sm">წელიწადში</div>
+          <div class="text-[#22c55e] text-xs font-semibold mt-1">დაზოგე 33%</div>
+        </div>
+      </div>
+      <ul class="text-left text-sm space-y-2 text-[#94a3b8]">
+        <li class="flex gap-2"><span class="text-[#22c55e]">✓</span> 1000+ ინგლისური სიტყვა</li>
+        <li class="flex gap-2"><span class="text-[#22c55e]">✓</span> 30 გრამატიკის გაკვეთილი</li>
+        <li class="flex gap-2"><span class="text-[#22c55e]">✓</span> აუდიო პოდკასტი</li>
+        <li class="flex gap-2"><span class="text-[#22c55e]">✓</span> ინტერაქტიული სავარჯიშოები</li>
+        <li class="flex gap-2"><span class="text-[#22c55e]">✓</span> პროგრესის თვალყურის დევნება</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('registerForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // TODO: Connect to Firebase Auth
+      alert('რეგისტრაცია მალე გააქტიურდება! 🚀');
+    });
+  </script>
+</Layout>
