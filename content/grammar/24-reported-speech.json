@@ -1,0 +1,28 @@
+{
+  "id": 24,
+  "slug": "reported-speech",
+  "title_en": "Reported Speech",
+  "title_ka": "ირიბი თქმა (Reported Speech)",
+  "level": "B1",
+  "explanation_ka": "ირიბი თქმა (Reported Speech) გამოიყენება მაშინ, როცა სხვისი ნათქვამის გადმოცემა გვინდა. პირდაპირი თქმიდან ირიბზე გადასვლისას დრო ერთი საფეხურით \"უკან\" იწევს:\n\nPresent Simple → Past Simple\n\"I like coffee\" → He said (that) he liked coffee.\n\nPresent Continuous → Past Continuous\n\"I am studying\" → She said she was studying.\n\nPast Simple → Past Perfect\n\"I went home\" → He said he had gone home.\n\nWill → Would\n\"I will help\" → She said she would help.\n\nCan → Could\n\"I can swim\" → He said he could swim.\n\nასევე იცვლება:\n• this → that\n• here → there\n• today → that day\n• tomorrow → the next day\n• yesterday → the day before\n• now → then\n\nSay vs Tell: \"He said (that)...\" vs \"He told me (that)...\" — tell-ის შემდეგ ყოველთვის პირი მოდის!",
+  "examples": [
+    {"en": "She said that she was tired.", "ka": "მან თქვა, რომ დაღლილი იყო."},
+    {"en": "He told me he would come tomorrow.", "ka": "მან მითხრა, რომ მეორე დღეს მოვიდოდა."},
+    {"en": "They said they had finished the project.", "ka": "მათ თქვეს, რომ პროექტი დაემთავრებინათ."},
+    {"en": "She said she couldn't find her keys.", "ka": "მან თქვა, რომ გასაღებები ვერ იპოვა."},
+    {"en": "He told us he was leaving the next day.", "ka": "მან გვითხრა, რომ მეორე დღეს მიდიოდა."}
+  ],
+  "common_mistakes_ka": "ქართველებისთვის ყველაზე რთული არის დროის \"უკან წევა\" (backshift), რადგან ქართულში ირიბ თქმაში დრო არ იცვლება. მაგალითად, ქართულად ვამბობთ: \"მან თქვა, რომ დაღლილია\" (აწმყო), მაგრამ ინგლისურად: \"He said he was tired\" (წარსული).\n\nასევე ხშირი შეცდომაა say და tell-ის აღრევა: \"He said me...\" — არასწორი! სწორია: \"He told me...\" ან \"He said to me...\"\n\nკიდევ ერთი შეცდომა: ბრჭყალების დატოვება ირიბ თქმაში — ირიბ თქმაში ბრჭყალები არ გამოიყენება.",
+  "exercises": [
+    {"type": "fill-blank", "question": "\"I am happy.\" → She said she ___ happy.", "answer": "was", "options": ["was", "is", "were"]},
+    {"type": "fill-blank", "question": "\"I will call you.\" → He said he ___ call me.", "answer": "would", "options": ["would", "will", "could"]},
+    {"type": "fill-blank", "question": "\"I can swim.\" → She said she ___ swim.", "answer": "could", "options": ["could", "can", "would"]},
+    {"type": "multiple-choice", "question": "\"I like pizza.\" In reported speech:", "options": ["He said he likes pizza.", "He said he liked pizza.", "He said he liking pizza."], "answer": "He said he liked pizza."},
+    {"type": "fill-blank", "question": "He ___ me that he was leaving.", "answer": "told", "options": ["told", "said", "tell"]},
+    {"type": "fill-blank", "question": "\"I went to the store.\" → She said she ___ to the store.", "answer": "had gone", "options": ["had gone", "went", "has gone"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She said me she was tired.", "She told me she was tired.", "She told that she was tired."], "answer": "She told me she was tired."},
+    {"type": "fill-blank", "question": "\"I am studying.\" → He said he ___ studying.", "answer": "was", "options": ["was", "is", "were"]},
+    {"type": "multiple-choice", "question": "\"I have finished.\" becomes:", "options": ["He said he has finished.", "He said he had finished.", "He said he finished."], "answer": "He said he had finished."},
+    {"type": "fill-blank", "question": "\"We are leaving today.\" → They said they were leaving ___.", "answer": "that day", "options": ["that day", "today", "this day"]}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": 25,
+  "slug": "relative-clauses",
+  "title_en": "Relative Clauses (who/which/that)",
+  "title_ka": "შესაბამისი წინადადებები (who/which/that)",
+  "level": "B1",
+  "explanation_ka": "Relative Clauses (შეზღუდვითი წინადადებები) გამოიყენება არსებითი სახელის დამატებითი ინფორმაციისთვის. ისინი იწყება relative pronoun-ებით:\n\n• who — ადამიანებისთვის: The woman who lives next door is a teacher.\n• which — საგნებისა და ცხოველებისთვის: The book which I bought is interesting.\n• that — ორივესთვის (არაფორმალური): The man that called you is my brother.\n• where — ადგილისთვის: The restaurant where we ate was great.\n• whose — კუთვნილებისთვის: The girl whose bag was stolen called the police.\n\nორი ტიპი არსებობს:\n1. Defining (შეზღუდვითი) — აუცილებელი ინფორმაცია, მძიმე არ არის საჭირო:\n   The man who called is my friend.\n2. Non-defining (არაშეზღუდვითი) — დამატებითი ინფორმაცია, მძიმეებით გამოიყოფა:\n   My brother, who lives in London, is a doctor.\n   ❗ Non-defining-ში \"that\" არ გამოიყენება!",
+  "examples": [
+    {"en": "The woman who works here is very kind.", "ka": "ქალი, რომელიც აქ მუშაობს, ძალიან კეთილია."},
+    {"en": "The phone which I bought yesterday is broken.", "ka": "ტელეფონი, რომელიც გუშინ ვიყიდე, გაფუჭებულია."},
+    {"en": "That's the restaurant where we had dinner.", "ka": "ეს არის რესტორანი, სადაც ვივახშმეთ."},
+    {"en": "The student whose essay won the prize is from Tbilisi.", "ka": "სტუდენტი, რომლის ესეიმ მოიგო პრიზი, თბილისიდანაა."},
+    {"en": "My mother, who is 60, still works every day.", "ka": "ჩემი დედა, რომელიც 60 წლისაა, მაინც ყოველდღე მუშაობს."}
+  ],
+  "common_mistakes_ka": "ქართველები ხშირად იყენებენ \"which\"-ს ადამიანებისთვის: \"The man which called me...\" — არასწორი! ადამიანებისთვის \"who\" ან \"that\" გამოიყენეთ.\n\nასევე ხშირი შეცდომაა non-defining clause-ში \"that\"-ის გამოყენება: \"My sister, that lives in Paris...\" — არასწორი! სწორია: \"My sister, who lives in Paris...\"\n\nქართულში \"რომელიც\" უნივერსალურია, მაგრამ ინგლისურში who/which/that-ის არჩევანი მნიშვნელოვანია.",
+  "exercises": [
+    {"type": "fill-blank", "question": "The man ___ called you is my uncle.", "answer": "who", "options": ["who", "which", "where"]},
+    {"type": "fill-blank", "question": "The book ___ I'm reading is very interesting.", "answer": "which", "options": ["which", "who", "whose"]},
+    {"type": "fill-blank", "question": "That's the park ___ we play football.", "answer": "where", "options": ["where", "which", "who"]},
+    {"type": "fill-blank", "question": "The girl ___ father is a doctor studies here.", "answer": "whose", "options": ["whose", "who", "which"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["The car who I bought is red.", "The car which I bought is red.", "The car whose I bought is red."], "answer": "The car which I bought is red."},
+    {"type": "fill-blank", "question": "The teacher ___ teaches us English is from America.", "answer": "who", "options": ["who", "which", "where"]},
+    {"type": "multiple-choice", "question": "Which is correct for a non-defining clause?", "options": ["Paris, that is in France, is beautiful.", "Paris, which is in France, is beautiful.", "Paris, who is in France, is beautiful."], "answer": "Paris, which is in France, is beautiful."},
+    {"type": "fill-blank", "question": "This is the house ___ I grew up.", "answer": "where", "options": ["where", "which", "who"]},
+    {"type": "multiple-choice", "question": "Choose the correct sentence:", "options": ["The woman which helped me was kind.", "The woman who helped me was kind.", "The woman where helped me was kind."], "answer": "The woman who helped me was kind."}
+  ]
+}
