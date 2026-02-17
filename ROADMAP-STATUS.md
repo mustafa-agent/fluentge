@@ -1,18 +1,36 @@
-# ROADMAP STATUS
+# FluentGe — Roadmap Status
 
-## Phase 1: Foundation (Weeks 1-2) — IN PROGRESS
-- [ ] Choose name and register domain
-- [ ] Set up Astro project + Tailwind
-- [ ] Deploy "Coming Soon" page to Cloudflare Pages
-- [ ] Set up Firebase project (auth + database)
-- [ ] Build flashcard app core (study screen, deck selection, progress)
-- [ ] Implement SM-2 spaced repetition
-- [ ] Generate first 200 vocabulary words (Tornike reviews Georgian)
-- [ ] Design and build homepage
-- [ ] Embed flashcard app at /flashcards
-- [ ] PWA setup (installable, offline)
-- [ ] Launch: flashcard app + website live
+## Phase 1: Foundation ✅ (Completed Feb 17, 2026)
 
-## Phase 2: Grammar (Weeks 3-4) — NOT STARTED
-## Phase 3: Growth (Weeks 5-6) — NOT STARTED
-## Phase 4: Podcast & Premium (Weeks 7-8) — NOT STARTED
+### Completed:
+- [x] **Astro website** built at `website/` with Tailwind CSS v4
+  - Homepage: Hero section, feature highlights (flashcards, grammar coming soon, podcast coming soon), "Why FluentGe" section, CTA, footer
+  - About page
+  - Navigation: მთავარი, ბარათები, გრამატიკა (coming soon), ჩვენ შესახებ
+  - Georgian UI text throughout, Inter font, dark theme with #22c55e green primary
+  - Mobile-first responsive design
+- [x] **Flashcard React app** built at `flashcard-app/` (Vite + React + TypeScript + Tailwind)
+  - SM-2 spaced repetition algorithm implemented
+  - Study screen: shows English word + pronunciation, tap to reveal Georgian translation + example sentences
+  - Deck selection screen with progress bars per category
+  - Stats bar: words learned, streak, accuracy (localStorage)
+  - 3-button rating: არ ვიცი / ძნელია / ვიცი!
+  - Session complete screen with accuracy report
+  - Builds to `website/public/flashcards/` — embedded at /flashcards/
+- [x] **50 flashcard words** generated (JSON):
+  - `content/word-lists/greetings-basics.json` — 25 words (Greetings & Basics, A1)
+  - `content/word-lists/numbers-time.json` — 25 words (Numbers & Time, A1)
+  - Georgian translations, pronunciations, example sentences in both languages
+- [x] Both `npm run build` succeed (website + flashcard-app)
+- [x] Git committed
+
+### Not yet done (Phase 1 remaining):
+- [ ] Choose name and register .ge domain
+- [ ] Deploy to Cloudflare Pages
+- [ ] Firebase setup (auth + database)
+- [ ] PWA setup
+- [ ] Generate remaining 150 words to reach 200
+
+## Phase 2: Grammar — Not started
+## Phase 3: Growth — Not started
+## Phase 4: Podcast & Premium — Not started
