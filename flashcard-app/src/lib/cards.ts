@@ -25,6 +25,12 @@ import travelData from '../../content/travel-transport.json';
 import healthData from '../../content/health-body.json';
 import shoppingData from '../../content/shopping-money.json';
 import workData from '../../content/work-business.json';
+import technologyData from '../../content/technology.json';
+import natureData from '../../content/nature-weather.json';
+import emotionsData from '../../content/emotions-personality.json';
+import educationData from '../../content/education.json';
+import entertainmentData from '../../content/entertainment.json';
+import idiomsData from '../../content/idioms-phrases.json';
 
 export const decks: Deck[] = [
   {
@@ -70,11 +76,11 @@ export const decks: Deck[] = [
     cards: travelData as FlashCard[],
   },
   {
-    id: 'health',
-    name: 'Health & Body',
-    nameKa: 'ჯანმრთელობა და სხეული',
-    icon: '🏥',
-    cards: healthData as FlashCard[],
+    id: 'work',
+    name: 'Work & Business',
+    nameKa: 'სამუშაო და ბიზნესი',
+    icon: '💼',
+    cards: workData as FlashCard[],
   },
   {
     id: 'shopping',
@@ -84,11 +90,53 @@ export const decks: Deck[] = [
     cards: shoppingData as FlashCard[],
   },
   {
-    id: 'work',
-    name: 'Work & Business',
-    nameKa: 'სამუშაო და ბიზნესი',
-    icon: '💼',
-    cards: workData as FlashCard[],
+    id: 'health',
+    name: 'Health & Body',
+    nameKa: 'ჯანმრთელობა და სხეული',
+    icon: '🏥',
+    cards: healthData as FlashCard[],
+  },
+  {
+    id: 'technology',
+    name: 'Technology',
+    nameKa: 'ტექნოლოგია',
+    icon: '💻',
+    cards: technologyData as FlashCard[],
+  },
+  {
+    id: 'nature',
+    name: 'Nature & Weather',
+    nameKa: 'ბუნება და ამინდი',
+    icon: '🌿',
+    cards: natureData as FlashCard[],
+  },
+  {
+    id: 'emotions',
+    name: 'Emotions & Personality',
+    nameKa: 'ემოციები და პიროვნება',
+    icon: '😊',
+    cards: emotionsData as FlashCard[],
+  },
+  {
+    id: 'education',
+    name: 'Education',
+    nameKa: 'განათლება',
+    icon: '📚',
+    cards: educationData as FlashCard[],
+  },
+  {
+    id: 'entertainment',
+    name: 'Entertainment',
+    nameKa: 'გართობა',
+    icon: '🎬',
+    cards: entertainmentData as FlashCard[],
+  },
+  {
+    id: 'idioms',
+    name: 'Idioms & Phrases',
+    nameKa: 'იდიომები და ფრაზები',
+    icon: '💬',
+    cards: idiomsData as FlashCard[],
   },
 ];
 
