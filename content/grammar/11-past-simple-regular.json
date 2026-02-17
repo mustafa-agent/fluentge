@@ -1,0 +1,28 @@
+{
+  "id": 11,
+  "slug": "past-simple-regular",
+  "title_en": "Past Simple (Regular Verbs)",
+  "title_ka": "წარსული მარტივი დრო (რეგულარული ზმნები)",
+  "level": "A2",
+  "explanation_ka": "Past Simple (წარსული მარტივი დრო) გამოიყენება იმ მოქმედებების აღსაწერად, რომლებიც წარსულში მოხდა და უკვე დასრულდა.\n\nრეგულარული ზმნების შემთხვევაში, ზმნის ბოლოს ემატება -ed:\nwork → worked (ვიმუშავე)\nplay → played (ვითამაშე)\nlive → lived (ვცხოვრობდი)\n\nწესები:\n1. თუ ზმნა მთავრდება -e-ზე, მხოლოდ -d ემატება: live → lived\n2. თუ ზმნა მთავრდება თანხმოვანი + y, y იცვლება i-ზე + ed: study → studied\n3. თუ ზმნა მთავრდება ერთი ხმოვანი + ერთი თანხმოვანი, თანხმოვანი ორმაგდება: stop → stopped\n\nუარყოფითი: did not (didn't) + ზმნის საწყისი ფორმა\nI didn't work yesterday.\n\nკითხვითი: Did + პირი + ზმნის საწყისი ფორმა?\nDid you work yesterday?",
+  "examples": [
+    {"en": "I walked to school yesterday.", "ka": "გუშინ სკოლაში ფეხით წავედი."},
+    {"en": "She cooked dinner last night.", "ka": "მან გუშინ საღამოს სადილი მოამზადა."},
+    {"en": "They played football on Sunday.", "ka": "მათ კვირას ფეხბურთი ითამაშეს."},
+    {"en": "We didn't watch TV.", "ka": "ჩვენ ტელევიზორი არ ვუყურეთ."},
+    {"en": "Did you study English?", "ka": "ინგლისური ისწავლე?"}
+  ],
+  "common_mistakes_ka": "ქართველები ხშირად ავიწყდებათ, რომ უარყოფით და კითხვით წინადადებებში ზმნა საწყის ფორმაში ბრუნდება: \"Did you worked?\" — არასწორია! სწორია: \"Did you work?\" ასევე ხშირი შეცდომაა -ed-ის არასწორი წარმოთქმა: worked = /wɜːkt/, played = /pleɪd/, wanted = /ˈwɒntɪd/.",
+  "exercises": [
+    {"type": "fill-blank", "question": "I ___ (walk) to work yesterday.", "answer": "walked", "options": ["walked", "walking", "walks"]},
+    {"type": "fill-blank", "question": "She ___ (study) all night.", "answer": "studied", "options": ["studyed", "studied", "studies"]},
+    {"type": "fill-blank", "question": "They ___ (play) tennis last week.", "answer": "played", "options": ["plaied", "played", "plays"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Did you watched the movie?", "Did you watch the movie?", "Did you watching the movie?"], "answer": "Did you watch the movie?"},
+    {"type": "fill-blank", "question": "We ___ (not/like) the food.", "answer": "didn't like", "options": ["didn't like", "didn't liked", "not liked"]},
+    {"type": "fill-blank", "question": "He ___ (stop) the car suddenly.", "answer": "stopped", "options": ["stoped", "stopped", "stopping"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She didn't called me.", "She didn't call me.", "She not called me."], "answer": "She didn't call me."},
+    {"type": "fill-blank", "question": "The train ___ (arrive) on time.", "answer": "arrived", "options": ["arrived", "arriveed", "arriving"]},
+    {"type": "fill-blank", "question": "___ they ___ (enjoy) the party?", "answer": "Did ... enjoy", "options": ["Did ... enjoy", "Did ... enjoyed", "Does ... enjoy"]},
+    {"type": "multiple-choice", "question": "Choose the past form of 'carry':", "options": ["carryed", "carried", "carred"], "answer": "carried"}
+  ]
+}

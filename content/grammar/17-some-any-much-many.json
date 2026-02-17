@@ -1,0 +1,27 @@
+{
+  "id": 17,
+  "slug": "some-any-much-many",
+  "title_en": "Some / Any / Much / Many",
+  "title_ka": "Some / Any / Much / Many — რაოდენობის გამოხატვა",
+  "level": "A2",
+  "explanation_ka": "ეს სიტყვები რაოდენობის გამოსახატავად გამოიყენება:\n\nSome — \"რამდენიმე\", \"ცოტა\"\n- დადებით წინადადებებში: I have some friends.\n- თავაზიან კითხვებში: Would you like some tea?\n\nAny — \"რამე\", \"რაიმე\"\n- უარყოფით წინადადებებში: I don't have any money.\n- კითხვით წინადადებებში: Do you have any questions?\n\nMuch — \"ბევრი\" (უთვლადი)\n- უარყოფითში/კითხვაში: I don't have much time. / Do you have much experience?\n\nMany — \"ბევრი\" (თვლადი)\n- ყველა წინადადებაში: I have many friends. / Do you have many books?\n\nA lot of — \"ბევრი\" (ორივესთვის, განსაკუთრებით დადებითში)\n- I have a lot of friends. / I have a lot of money.",
+  "examples": [
+    {"en": "I have some questions.", "ka": "რამდენიმე კითხვა მაქვს."},
+    {"en": "I don't have any money.", "ka": "ფული არ მაქვს."},
+    {"en": "There isn't much water left.", "ka": "ბევრი წყალი აღარ დარჩა."},
+    {"en": "How many students are in your class?", "ka": "რამდენი სტუდენტია შენს კლასში?"},
+    {"en": "She has a lot of experience.", "ka": "მას ბევრი გამოცდილება აქვს."}
+  ],
+  "common_mistakes_ka": "ქართველები ხშირად ურევენ much და many: \"much friends\" ❌ → \"many friends\" ✅ (თვლადი). \"many water\" ❌ → \"much water\" ✅ (უთვლადი). ასევე, some-ის ნაცვლად any უარყოფითში: \"I don't have some money\" ❌ → \"I don't have any money\" ✅.",
+  "exercises": [
+    {"type": "fill-blank", "question": "I don't have ___ friends here.", "answer": "any", "options": ["some", "any", "much"]},
+    {"type": "fill-blank", "question": "Would you like ___ coffee?", "answer": "some", "options": ["some", "any", "many"]},
+    {"type": "fill-blank", "question": "How ___ books do you have?", "answer": "many", "options": ["much", "many", "some"]},
+    {"type": "fill-blank", "question": "I don't have ___ time today.", "answer": "much", "options": ["many", "much", "some"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I have much friends.", "I have many friends.", "I have any friends."], "answer": "I have many friends."},
+    {"type": "fill-blank", "question": "There are ___ apples on the table.", "answer": "some", "options": ["some", "any", "much"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Do you have some questions?", "Do you have any questions?", "Do you have much questions?"], "answer": "Do you have any questions?"},
+    {"type": "fill-blank", "question": "She doesn't eat ___ sugar.", "answer": "much", "options": ["many", "much", "some"]},
+    {"type": "fill-blank", "question": "We have ___ of work to do.", "answer": "a lot", "options": ["a lot", "much", "many"]}
+  ]
+}

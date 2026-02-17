@@ -1,0 +1,143 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  const grammarDir = path.resolve('..', 'content', 'grammar');
+  const files = fs.readdirSync(grammarDir).filter(f => f.endsWith('.json'));
+  return files.map(f => {
+    const lesson = JSON.parse(fs.readFileSync(path.join(grammarDir, f), 'utf-8'));
+    return { params: { slug: lesson.slug }, props: { lesson } };
+  });
+}
+
+const { lesson } = Astro.props;
+---
+
+<Layout title={`${lesson.title_ka} — FluentGe`}>
+  <section class="max-w-3xl mx-auto px-4 py-16">
+    <!-- Header -->
+    <a href="/grammar/" class="text-[#22c55e] hover:underline text-sm mb-6 inline-block">← გრამატიკა</a>
+    <div class="flex items-center gap-3 mb-2">
+      <span class={`px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>{lesson.level}</span>
+      <span class="text-[#94a3b8] text-sm">გაკვეთილი #{lesson.id}</span>
+    </div>
+    <h1 class="text-3xl font-bold mb-1">{lesson.title_ka}</h1>
+    <p class="text-[#94a3b8] mb-8">{lesson.title_en}</p>
+
+    <!-- Explanation -->
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4">📚 ახსნა</h2>
+      <div class="text-[#cbd5e1] leading-relaxed whitespace-pre-line">{lesson.explanation_ka}</div>
+    </div>
+
+    <!-- Examples -->
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4">💡 მაგალითები</h2>
+      <div class="space-y-3">
+        {lesson.examples.map((ex: {en: string, ka: string}) => (
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 py-2 border-b border-white/5 last:border-0">
+            <span class="font-medium text-[#22c55e]">{ex.en}</span>
+            <span class="text-[#94a3b8]">— {ex.ka}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Common Mistakes -->
+    <div class="bg-red-500/5 border border-red-500/20 rounded-xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4 text-red-400">⚠️ ხშირი შეცდომები</h2>
+      <p class="text-[#cbd5e1] leading-relaxed whitespace-pre-line">{lesson.common_mistakes_ka}</p>
+    </div>
+
+    <!-- Exercises -->
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6" id="exercises-section">
+      <h2 class="text-xl font-bold mb-6">✏️ სავარჯიშოები</h2>
+      <div id="exercise-container"></div>
+      <div id="score-container" class="hidden mt-6 text-center">
+        <div class="text-4xl font-bold mb-2" id="score-text"></div>
+        <p class="text-[#94a3b8] mb-4" id="score-msg"></p>
+        <button id="retry-btn" class="bg-[#22c55e] hover:bg-[#16a34a] text-white px-6 py-2 rounded-lg font-semibold transition-colors">თავიდან ცდა</button>
+      </div>
+    </div>
+  </section>
+
+  <script define:vars={{ exercises: lesson.exercises }}>
+    let current = 0;
+    let score = 0;
+    let answered = false;
+
+    const container = document.getElementById('exercise-container');
+    const scoreContainer = document.getElementById('score-container');
+
+    function render() {
+      if (current >= exercises.length) {
+        container.classList.add('hidden');
+        scoreContainer.classList.remove('hidden');
+        const pct = Math.round((score / exercises.length) * 100);
+        document.getElementById('score-text').textContent = `${score}/${exercises.length} (${pct}%)`;
+        document.getElementById('score-msg').textContent = pct >= 80 ? '🎉 შესანიშნავი!' : pct >= 50 ? '👍 კარგი შედეგი!' : '💪 კიდევ სცადე!';
+        return;
+      }
+      answered = false;
+      const ex = exercises[current];
+      const isMulti = ex.type === 'multiple-choice';
+      
+      let html = `<div class="mb-3 text-xs text-[#64748b]">${current + 1}/${exercises.length}</div>`;
+      html += `<div class="w-full bg-white/10 rounded-full h-1.5 mb-6"><div class="bg-[#22c55e] h-1.5 rounded-full transition-all" style="width:${((current) / exercises.length) * 100}%"></div></div>`;
+      
+      if (isMulti) {
+        html += `<p class="text-lg font-medium mb-4">${ex.question}</p>`;
+      } else {
+        html += `<p class="text-lg font-medium mb-4">${ex.question.replace('___', '<span class="text-[#22c55e] font-bold">______</span>')}</p>`;
+      }
+      
+      html += `<div class="grid gap-3">`;
+      for (const opt of ex.options) {
+        html += `<button class="opt-btn text-left px-4 py-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors font-medium" data-val="${opt}">${opt}</button>`;
+      }
+      html += `</div><div id="feedback" class="mt-4"></div>`;
+      
+      container.innerHTML = html;
+      container.querySelectorAll('.opt-btn').forEach(btn => {
+        btn.addEventListener('click', () => handleAnswer(btn));
+      });
+    }
+
+    function handleAnswer(btn) {
+      if (answered) return;
+      answered = true;
+      const val = btn.dataset.val;
+      const ex = exercises[current];
+      const correct = val === ex.answer;
+      if (correct) score++;
+
+      container.querySelectorAll('.opt-btn').forEach(b => {
+        if (b.dataset.val === ex.answer) {
+          b.classList.remove('bg-white/5', 'border-white/10');
+          b.classList.add('bg-green-500/20', 'border-green-500', 'text-green-400');
+        } else if (b === btn && !correct) {
+          b.classList.remove('bg-white/5', 'border-white/10');
+          b.classList.add('bg-red-500/20', 'border-red-500', 'text-red-400');
+        }
+        b.classList.add('pointer-events-none');
+      });
+
+      document.getElementById('feedback').innerHTML = correct
+        ? '<p class="text-green-400 font-medium">✅ სწორია!</p>'
+        : `<p class="text-red-400 font-medium">❌ არასწორია. სწორი პასუხი: <strong>${ex.answer}</strong></p>`;
+
+      setTimeout(() => { current++; render(); }, 1500);
+    }
+
+    document.getElementById('retry-btn').addEventListener('click', () => {
+      current = 0; score = 0;
+      scoreContainer.classList.add('hidden');
+      container.classList.remove('hidden');
+      render();
+    });
+
+    render();
+  </script>
+</Layout>

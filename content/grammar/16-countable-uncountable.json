@@ -1,0 +1,27 @@
+{
+  "id": 16,
+  "slug": "countable-uncountable",
+  "title_en": "Countable vs Uncountable Nouns",
+  "title_ka": "თვლადი და უთვლადი არსებითი სახელები",
+  "level": "A2",
+  "explanation_ka": "ინგლისურში არსებითი სახელები იყოფა ორ კატეგორიად: თვლადი (Countable) და უთვლადი (Uncountable).\n\nთვლადი — შეგიძლიათ დათვალოთ: one apple, two apples, three books\nუთვლადი — ვერ დათვლით: water, rice, money, information, advice\n\nთვლადი არსებითი სახელები:\n- აქვთ მრავლობითი ფორმა: a book → books\n- შეიძლება a/an გამოყენება: a cat, an apple\n\nუთვლადი არსებითი სახელები:\n- არ აქვთ მრავლობითი ფორმა: water ✅, waters ❌\n- არ გამოიყენება a/an: a water ❌ → some water ✅\n- რაოდენობის გამოსახატავად: a glass of water, a piece of advice, a bag of rice\n\nხშირად უთვლადი სიტყვები ქართულისთვის:\nmoney (ფული), information (ინფორმაცია), news (ახალი ამბები), furniture (ავეჯი), homework (საშინაო დავალება), bread (პური), music (მუსიკა)",
+  "examples": [
+    {"en": "I have three books.", "ka": "მე სამი წიგნი მაქვს. (თვლადი)"},
+    {"en": "Can I have some water?", "ka": "შეიძლება ცოტა წყალი? (უთვლადი)"},
+    {"en": "She gave me good advice.", "ka": "მან კარგი რჩევა მომცა. (უთვლადი)"},
+    {"en": "There is a lot of furniture in the room.", "ka": "ოთახში ბევრი ავეჯია. (უთვლადი)"},
+    {"en": "I need a piece of information.", "ka": "ერთი ინფორმაცია მჭირდება."}
+  ],
+  "common_mistakes_ka": "ქართველები ხშირად თვლადად იყენებენ უთვლად სიტყვებს: \"an advice\" ❌ → \"a piece of advice\" ✅, \"informations\" ❌ → \"information\" ✅, \"a money\" ❌ → \"some money\" ✅. ასევე, \"news\" მხოლობითია ინგლისურში: \"The news is good\" ✅ (არა \"are\").",
+  "exercises": [
+    {"type": "multiple-choice", "question": "Which is uncountable?", "options": ["apple", "water", "book"], "answer": "water"},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I need an advice.", "I need a piece of advice.", "I need advices."], "answer": "I need a piece of advice."},
+    {"type": "fill-blank", "question": "Can I have ___ milk?", "answer": "some", "options": ["a", "some", "many"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["The news are bad.", "The news is bad.", "The news were bad."], "answer": "The news is bad."},
+    {"type": "fill-blank", "question": "She bought three ___ of bread.", "answer": "loaves", "options": ["breads", "loaves", "pieces"]},
+    {"type": "multiple-choice", "question": "Which is uncountable?", "options": ["chair", "table", "furniture"], "answer": "furniture"},
+    {"type": "fill-blank", "question": "I don't have much ___.", "answer": "money", "options": ["moneys", "money", "a money"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I have many informations.", "I have much information.", "I have a informations."], "answer": "I have much information."},
+    {"type": "fill-blank", "question": "There are many ___ in the park.", "answer": "trees", "options": ["tree", "trees", "a tree"]}
+  ]
+}
