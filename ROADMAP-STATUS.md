@@ -32,6 +32,8 @@
 - [x] PWA setup ✅ (Feb 18) — manifest, service worker, icons, apple-mobile-web-app tags
 - [x] Generate 591 words across 9 categories ✅ (exceeds 200 target!)
 - [x] Wire all 9 decks into flashcard app ✅ (Feb 18) — was only 2 decks before
+- [x] Added Politics & Society deck (50 B2 words) ✅ (Feb 18) — now 1010+ words across 16 decks!
+- [x] **1000+ word milestone reached!** 🎉
 
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
