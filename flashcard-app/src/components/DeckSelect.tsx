@@ -2,7 +2,7 @@ import { decks, Deck, isDeckFree } from '../lib/cards';
 import { getAllProgress } from '../lib/storage';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'spelling' | 'sentences') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble') => void;
 }
 
 export default function DeckSelect({ onSelect }: Props) {
@@ -68,6 +68,20 @@ export default function DeckSelect({ onSelect }: Props) {
                         onClick={() => onSelect(deck, 'sentences')}
                         className="flex-1 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 font-medium py-2 rounded-xl text-sm transition-colors"
                       >🔤 წინადადება</button>
+                      <button
+                        onClick={() => onSelect(deck, 'match')}
+                        className="flex-1 bg-rose-500/20 hover:bg-rose-500/30 text-rose-400 font-medium py-2 rounded-xl text-sm transition-colors"
+                      >🃏 თამაში</button>
+                    </div>
+                    <div className="mt-2 flex gap-2">
+                      <button
+                        onClick={() => onSelect(deck, 'speed')}
+                        className="flex-1 bg-orange-500/20 hover:bg-orange-500/30 text-orange-400 font-medium py-2 rounded-xl text-sm transition-colors"
+                      >⚡ სიჩქარე</button>
+                      <button
+                        onClick={() => onSelect(deck, 'scramble')}
+                        className="flex-1 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 font-medium py-2 rounded-xl text-sm transition-colors"
+                      >🔀 გაშიფვრა</button>
                     </div>
                   </div>
                 </div>

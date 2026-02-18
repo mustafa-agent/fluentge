@@ -4,10 +4,14 @@ import StudyScreen from './components/StudyScreen';
 import QuizScreen from './components/QuizScreen';
 import SpellingScreen from './components/SpellingScreen';
 import SentenceBuilder from './components/SentenceBuilder';
+import MatchGame from './components/MatchGame';
+import SpeedRound from './components/SpeedRound';
+import WordScramble from './components/WordScramble';
 import StatsBar from './components/StatsBar';
+import DailyWord from './components/DailyWord';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -16,7 +20,7 @@ export default function App() {
   const [screen, setScreen] = useState<Screen>('home');
   const [activeDeck, setActiveDeck] = useState<Deck | null>(null);
 
-  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'spelling' | 'sentences' = 'study') {
+  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' = 'study') {
     setActiveDeck(deck);
     setScreen(mode);
   }
@@ -46,6 +50,7 @@ export default function App() {
       {screen === 'home' && (
         <>
           <StatsBar />
+          <DailyWord />
           <DeckSelect onSelect={handleSelectDeck} />
         </>
       )}
@@ -64,6 +69,18 @@ export default function App() {
 
       {screen === 'sentences' && activeDeck && (
         <SentenceBuilder deck={activeDeck} onBack={handleBack} />
+      )}
+
+      {screen === 'match' && activeDeck && (
+        <MatchGame deck={activeDeck} onBack={handleBack} />
+      )}
+
+      {screen === 'speed' && activeDeck && (
+        <SpeedRound deck={activeDeck} onBack={handleBack} />
+      )}
+
+      {screen === 'scramble' && activeDeck && (
+        <WordScramble deck={activeDeck} onBack={handleBack} />
       )}
     </div>
   );

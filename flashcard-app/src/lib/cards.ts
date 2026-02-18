@@ -58,6 +58,8 @@ import directionsData from '../../content/directions-places.json';
 import verbsData from '../../content/verbs-common.json';
 import scienceData from '../../content/science-math.json';
 import religionData from '../../content/religion-culture.json';
+import emergencyData from '../../content/emergency-safety.json';
+import slangData from '../../content/slang-informal.json';
 import animalsPetsData from '../../content/animals-pets.json';
 import clothesFashionData from '../../content/clothes-fashion.json';
 import jobsCareersData from '../../content/jobs-careers.json';
@@ -409,6 +411,20 @@ export const decks: Deck[] = [
     nameKa: 'სპორტი და თამაშები',
     icon: '🏆',
     cards: sportsGamesData as FlashCard[],
+  },
+  {
+    id: 'emergency',
+    name: 'Emergency & Safety',
+    nameKa: 'გადაუდებელი და უსაფრთხოება',
+    icon: '🚨',
+    cards: emergencyData as FlashCard[],
+  },
+  {
+    id: 'slang',
+    name: 'Slang & Informal',
+    nameKa: 'სლენგი და არაფორმალური',
+    icon: '🤙',
+    cards: slangData as FlashCard[],
   },
 ];
 

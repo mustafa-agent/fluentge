@@ -43,6 +43,14 @@
   - [x] Podcast topics: Airport, Restaurant, Job Interview, Hotel, Shopping, Doctor, Making Friends, Directions, Phone, Bank, Apartment, Gym, Emergency, Supermarket, Plans, School, Cooking, Mechanic, Birthday, Travel
   - [x] App rebuilt and deploying to surge.sh
 
+### 4:00 PM Session — 4 New Fun Features!
+- [x] 🃏 **Word Match Memory Game** — flip cards to match English ↔ Georgian pairs (3×4 grid, flip animations, move/time tracking)
+- [x] 📅 **Daily Word Widget** — deterministic word-of-day on home screen, tap to reveal, streak tracking
+- [x] ⚡ **Speed Round** — 60-second timed quiz, pick correct Georgian translation, score tracker
+- [x] 🔀 **Word Scramble** — unscramble jumbled letters to spell the English word, Georgian hint shown
+- [x] All 4 features built, integrated, and deployed to fluentge.surge.sh ✅
+- **App now has 8 learning modes** (was 4): Flashcards, Quiz, Spelling, Sentence Builder, Match Game, Speed Round, Word Scramble + Daily Word
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started
