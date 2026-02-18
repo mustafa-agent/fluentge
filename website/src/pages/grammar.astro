@@ -14,6 +14,12 @@ for (const lesson of lessons) {
   grouped[level].push(lesson);
 }
 const levels = Object.keys(grouped).sort();
+
+// Free grammar: first 3 A1 lessons only
+const FREE_GRAMMAR_SLUGS = ['to-be', 'articles', 'plural-nouns'];
+function isLessonFree(slug: string) {
+  return FREE_GRAMMAR_SLUGS.includes(slug);
+}
 ---
 
 <Layout title="გრამატიკა — FluentGe">
@@ -28,18 +34,45 @@ const levels = Object.keys(grouped).sort();
           <span>{level === 'A1' ? 'დამწყები' : level === 'A2' ? 'ელემენტარული' : level}</span>
         </h2>
         <div class="grid gap-4 sm:grid-cols-2">
-          {grouped[level].map(lesson => (
-            <a href={`/grammar/${lesson.slug}/`} class="block bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-5 transition-all hover:scale-[1.02]">
-              <div class="flex items-start justify-between mb-2">
-                <h3 class="font-semibold text-lg">{lesson.title_ka}</h3>
-                <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>{level}</span>
-              </div>
-              <p class="text-[#94a3b8] text-sm">{lesson.title_en}</p>
-              <div class="mt-3 text-xs text-[#64748b]">📝 {lesson.exercises.length} სავარჯიშო</div>
-            </a>
-          ))}
+          {grouped[level].map(lesson => {
+            const free = isLessonFree(lesson.slug);
+            return free ? (
+              <a href={`/grammar/${lesson.slug}/`} class="block bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-5 transition-all hover:scale-[1.02]">
+                <div class="flex items-start justify-between mb-2">
+                  <h3 class="font-semibold text-lg">{lesson.title_ka}</h3>
+                  <div class="flex items-center gap-1">
+                    <span class="text-xs px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">✅ უფასო</span>
+                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>{level}</span>
+                  </div>
+                </div>
+                <p class="text-[#94a3b8] text-sm">{lesson.title_en}</p>
+                <div class="mt-3 text-xs text-[#64748b]">📝 {lesson.exercises.length} სავარჯიშო</div>
+              </a>
+            ) : (
+              <a href="/register/" class="block bg-white/5 border border-white/5 rounded-xl p-5 opacity-60 hover:opacity-80 hover:border-amber-500/30 transition-all">
+                <div class="flex items-start justify-between mb-2">
+                  <h3 class="font-semibold text-lg">{lesson.title_ka} 🔒</h3>
+                  <div class="flex items-center gap-1">
+                    <span class="text-xs px-2 py-0.5 rounded-full font-medium bg-amber-500/20 text-amber-400">🔒</span>
+                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
+                  </div>
+                </div>
+                <p class="text-[#94a3b8] text-sm">{lesson.title_en}</p>
+                <div class="mt-3 text-xs text-amber-400">გახსნა → პრემიუმი</div>
+              </a>
+            );
+          })}
         </div>
       </div>
     ))}
+
+    <!-- Premium CTA -->
+    <div class="mt-8 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
+      <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა გაკვეთილი</h3>
+      <p class="text-[#94a3b8] mb-6">30 გრამატიკის გაკვეთილი, 1060+ სიტყვა, ყველა კატეგორია</p>
+      <a href="/register/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
+        დაიწყე პრემიუმი
+      </a>
+    </div>
   </section>
 </Layout>

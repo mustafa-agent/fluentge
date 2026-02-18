@@ -33,6 +33,7 @@ import entertainmentData from '../../content/entertainment.json';
 import idiomsData from '../../content/idioms-phrases.json';
 import politicsData from '../../content/politics-society.json';
 import conversationsData from '../../content/daily-conversations.json';
+import sportsData from '../../content/sports-fitness.json';
 
 export const decks: Deck[] = [
   {
@@ -154,7 +155,21 @@ export const decks: Deck[] = [
     icon: '🗣️',
     cards: conversationsData as FlashCard[],
   },
+  {
+    id: 'sports',
+    name: 'Sports & Fitness',
+    nameKa: 'სპორტი და ფიტნესი',
+    icon: '💪',
+    cards: sportsData as FlashCard[],
+  },
 ];
+
+// Free tier: only these decks are accessible without premium
+export const FREE_DECK_IDS = ['greetings', 'numbers', 'food'];
+
+export function isDeckFree(deckId: string): boolean {
+  return FREE_DECK_IDS.includes(deckId);
+}
 
 export function getCardId(card: FlashCard): string {
   return `${card.category}_${card.english.toLowerCase().replace(/\s+/g, '_')}`;
