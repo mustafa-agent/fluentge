@@ -2,7 +2,7 @@ import { decks, Deck } from '../lib/cards';
 import { getAllProgress } from '../lib/storage';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'spelling') => void;
 }
 
 export default function DeckSelect({ onSelect }: Props) {
@@ -51,6 +51,10 @@ export default function DeckSelect({ onSelect }: Props) {
                       onClick={() => onSelect(deck, 'quiz')}
                       className="flex-1 bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 font-medium py-2 rounded-xl text-sm transition-colors"
                     >🧠 ქვიზი</button>
+                    <button
+                      onClick={() => onSelect(deck, 'spelling')}
+                      className="flex-1 bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 font-medium py-2 rounded-xl text-sm transition-colors"
+                    >✍️ წერა</button>
                   </div>
                 </div>
               </div>
