@@ -31,6 +31,7 @@ import emotionsData from '../../content/emotions-personality.json';
 import educationData from '../../content/education.json';
 import entertainmentData from '../../content/entertainment.json';
 import idiomsData from '../../content/idioms-phrases.json';
+import politicsData from '../../content/politics-society.json';
 
 export const decks: Deck[] = [
   {
@@ -137,6 +138,13 @@ export const decks: Deck[] = [
     nameKa: 'იდიომები და ფრაზები',
     icon: '💬',
     cards: idiomsData as FlashCard[],
+  },
+  {
+    id: 'politics',
+    name: 'Politics & Society',
+    nameKa: 'პოლიტიკა და საზოგადოება',
+    icon: '🏛️',
+    cards: politicsData as FlashCard[],
   },
 ];
 
