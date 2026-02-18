@@ -2,7 +2,7 @@ import { decks, Deck, isDeckFree } from '../lib/cards';
 import { getAllProgress } from '../lib/storage';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'reverse') => void;
 }
 
 export default function DeckSelect({ onSelect }: Props) {
@@ -82,6 +82,10 @@ export default function DeckSelect({ onSelect }: Props) {
                         onClick={() => onSelect(deck, 'scramble')}
                         className="flex-1 bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-400 font-medium py-2 rounded-xl text-sm transition-colors"
                       >🔀 გაშიფვრა</button>
+                      <button
+                        onClick={() => onSelect(deck, 'reverse')}
+                        className="flex-1 bg-teal-500/20 hover:bg-teal-500/30 text-teal-400 font-medium py-2 rounded-xl text-sm transition-colors"
+                      >🔄 შებრუნება</button>
                     </div>
                   </div>
                 </div>

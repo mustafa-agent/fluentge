@@ -9,9 +9,16 @@ import SpeedRound from './components/SpeedRound';
 import WordScramble from './components/WordScramble';
 import StatsBar from './components/StatsBar';
 import DailyWord from './components/DailyWord';
+import FillBlank from './components/FillBlank';
+import Achievements from './components/Achievements';
+import ProgressDashboard from './components/ProgressDashboard';
+import ReverseMode from './components/ReverseMode';
+import ConversationPractice from './components/ConversationPractice';
+import ReadingComprehension from './components/ReadingComprehension';
+import GrammarExercises from './components/GrammarExercises';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -20,7 +27,7 @@ export default function App() {
   const [screen, setScreen] = useState<Screen>('home');
   const [activeDeck, setActiveDeck] = useState<Deck | null>(null);
 
-  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' = 'study') {
+  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'reverse' = 'study') {
     setActiveDeck(deck);
     setScreen(mode);
   }
@@ -51,6 +58,55 @@ export default function App() {
         <>
           <StatsBar />
           <DailyWord />
+          {/* Quick access buttons */}
+          <div className="px-4 py-3 max-w-lg mx-auto">
+            <div className="grid grid-cols-4 gap-3">
+              <button
+                onClick={() => setScreen('fillblank')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">📝</div>
+                <div className="text-xs">შეავსე გამოტოვებული</div>
+              </button>
+              <button
+                onClick={() => setScreen('conversation')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">💬</div>
+                <div className="text-xs">საუბარი</div>
+              </button>
+              <button
+                onClick={() => setScreen('reading')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">📖</div>
+                <div className="text-xs">კითხვა</div>
+              </button>
+              <button
+                onClick={() => setScreen('grammar')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🏋️</div>
+                <div className="text-xs">გრამატიკა</div>
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-3 mt-3">
+              <button
+                onClick={() => setScreen('achievements')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🏆</div>
+                <div className="text-xs">მიღწევები</div>
+              </button>
+              <button
+                onClick={() => setScreen('progress')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">📊</div>
+                <div className="text-xs">პროგრესი</div>
+              </button>
+            </div>
+          </div>
           <DeckSelect onSelect={handleSelectDeck} />
         </>
       )}
@@ -81,6 +137,34 @@ export default function App() {
 
       {screen === 'scramble' && activeDeck && (
         <WordScramble deck={activeDeck} onBack={handleBack} />
+      )}
+
+      {screen === 'fillblank' && (
+        <FillBlank allCards={allCards} onBack={handleBack} />
+      )}
+
+      {screen === 'achievements' && (
+        <Achievements onBack={handleBack} />
+      )}
+
+      {screen === 'progress' && (
+        <ProgressDashboard onBack={handleBack} />
+      )}
+
+      {screen === 'reverse' && activeDeck && (
+        <ReverseMode deck={activeDeck} onBack={handleBack} />
+      )}
+
+      {screen === 'conversation' && (
+        <ConversationPractice onBack={handleBack} />
+      )}
+
+      {screen === 'reading' && (
+        <ReadingComprehension onBack={handleBack} />
+      )}
+
+      {screen === 'grammar' && (
+        <GrammarExercises onBack={handleBack} />
       )}
     </div>
   );

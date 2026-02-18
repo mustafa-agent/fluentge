@@ -20,12 +20,12 @@
 12. **📝 Fill in the Blank** — Sentences with missing words, pick from options
 13. **🎪 Word Scramble** — Unscramble jumbled English letters to form the word
 14. **⏱️ Speed Round** — How many cards can you get right in 60 seconds?
-15. **🔄 Reverse Mode** — See Georgian first, guess English (opposite of default)
+15. **🔄 Reverse Mode** — See Georgian first, guess English ✅ BUILT (Feb 18)
 
 ### Medium Effort (3-5 hours)
 
-16. **💬 Conversation Practice** — Interactive dialogues (restaurant, airport, etc.)
-17. **📖 Reading Comprehension** — Short English stories with Georgian glossary
+16. **💬 Conversation Practice** — Interactive dialogues (restaurant, airport, etc.) ✅ BUILT (Feb 18)
+17. **📖 Reading Comprehension** — Short English stories with Georgian glossary ✅ BUILT (Feb 18)
 18. **🎮 Word Snake** — Connect letters on a grid to spell words
 19. **📊 Progress Dashboard** — Visual charts of learning progress over time
 20. **🏋️ Grammar Exercises** — Basic English grammar with Georgian explanations

@@ -51,6 +51,13 @@
 - [x] All 4 features built, integrated, and deployed to fluentge.surge.sh ✅
 - **App now has 8 learning modes** (was 4): Flashcards, Quiz, Spelling, Sentence Builder, Match Game, Speed Round, Word Scramble + Daily Word
 
+### 8:00 PM Session — 3 New Learning Features!
+- [x] 🔄 **Reverse Mode** — See Georgian word, type the English translation (opposite of Spelling mode)
+- [x] 💬 **Conversation Practice** — 6 interactive dialogue scenarios (Restaurant, Airport, Hotel, Shopping, Doctor, Job Interview) with Georgian translations
+- [x] 📖 **Reading Comprehension** — 8 short English stories with Georgian glossary and comprehension questions (daily life, travel, work, food, sports, tech, nature, friendship)
+- [x] All 3 features built, integrated into App.tsx & DeckSelect.tsx, deployed
+- **App now has 14 learning modes!** Flashcards, Quiz, Spelling, Sentence Builder, Match, Speed, Scramble, Fill Blank, Achievements, Progress, Reverse, Conversation, Reading + Daily Word
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started
