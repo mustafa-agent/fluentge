@@ -2,7 +2,7 @@ import { decks, Deck } from '../lib/cards';
 import { getAllProgress } from '../lib/storage';
 
 interface Props {
-  onSelect: (deck: Deck) => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz') => void;
 }
 
 export default function DeckSelect({ onSelect }: Props) {
@@ -26,10 +26,9 @@ export default function DeckSelect({ onSelect }: Props) {
           const total = deck.cards.length;
           const pct = total > 0 ? Math.round((learned / total) * 100) : 0;
           return (
-            <button
+            <div
               key={deck.id}
-              onClick={() => onSelect(deck)}
-              className="w-full bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-2xl p-5 text-left transition-colors"
+              className="w-full bg-[var(--color-bg-card)] rounded-2xl p-5 transition-colors"
             >
               <div className="flex items-center gap-4">
                 <span className="text-4xl">{deck.icon}</span>
@@ -43,9 +42,19 @@ export default function DeckSelect({ onSelect }: Props) {
                     />
                   </div>
                   <div className="text-xs text-[var(--color-text-muted)] mt-1">{learned}/{total} ნასწავლი</div>
+                  <div className="mt-3 flex gap-2">
+                    <button
+                      onClick={() => onSelect(deck, 'study')}
+                      className="flex-1 bg-[var(--color-primary)]/20 hover:bg-[var(--color-primary)]/30 text-[var(--color-primary)] font-medium py-2 rounded-xl text-sm transition-colors"
+                    >📝 ბარათები</button>
+                    <button
+                      onClick={() => onSelect(deck, 'quiz')}
+                      className="flex-1 bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 font-medium py-2 rounded-xl text-sm transition-colors"
+                    >🧠 ქვიზი</button>
+                  </div>
                 </div>
               </div>
-            </button>
+            </div>
           );
         })}
       </div>

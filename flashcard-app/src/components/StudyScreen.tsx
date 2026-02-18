@@ -1,7 +1,16 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { sm2 } from '../lib/sm2';
 import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
+
+function speak(text: string) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US';
+  u.rate = 0.85;
+  window.speechSynthesis.speak(u);
+}
 
 interface Props {
   deck: Deck;
@@ -98,7 +107,14 @@ export default function StudyScreen({ deck, onBack }: Props) {
         onClick={() => !flipped && setFlipped(true)}
         className="bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[320px] flex flex-col items-center justify-center cursor-pointer select-none transition-all hover:bg-[var(--color-bg-card-hover)]"
       >
-        <div className="text-3xl font-bold mb-2">{card.english}</div>
+        <div className="flex items-center gap-3 mb-2">
+          <div className="text-3xl font-bold">{card.english}</div>
+          <button
+            onClick={(e) => { e.stopPropagation(); speak(card.english); }}
+            className="text-2xl hover:scale-110 transition-transform active:scale-95"
+            title="მოისმინე გამოთქმა"
+          >🔊</button>
+        </div>
         <div className="text-sm text-[var(--color-text-muted)] mb-4">{card.pronunciation}</div>
 
         {!flipped && (
@@ -110,7 +126,13 @@ export default function StudyScreen({ deck, onBack }: Props) {
         {flipped && (
           <div className="mt-4 text-center animate-[fadeIn_0.3s_ease-in]">
             <div className="text-2xl font-bold text-[var(--color-primary)] mb-3">{card.georgian}</div>
-            <div className="text-sm text-[var(--color-text-muted)] mb-1">📖 {card.example_en}</div>
+            <div className="text-sm text-[var(--color-text-muted)] mb-1 flex items-center gap-2">
+              <span>📖 {card.example_en}</span>
+              <button
+                onClick={(e) => { e.stopPropagation(); speak(card.example_en); }}
+                className="text-base hover:scale-110 transition-transform shrink-0"
+              >🔊</button>
+            </div>
             <div className="text-sm text-[var(--color-text-muted)]">📖 {card.example_ka}</div>
           </div>
         )}
