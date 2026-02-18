@@ -1,0 +1,28 @@
+{
+  "id": 34,
+  "slug": "question-tags",
+  "title_en": "Question Tags",
+  "title_ka": "კითხვითი დანართები (Question Tags)",
+  "level": "A2",
+  "explanation_ka": "კითხვითი დანართები (Question Tags) არის მოკლე კითხვები, რომლებიც წინადადების ბოლოს ემატება დასტურის მისაღებად ან საუბრის გასაგრძელებლად. მთავარი წესი: თუ წინადადება დადებითია, დანართი უარყოფითია და პირიქით. მაგალითად: You are Georgian, aren't you? (შენ ქართველი ხარ, არა?) / She doesn't like coffee, does she? (მას არ უყვარს ყავა, ხომ?). დანართში გამოიყენება იგივე დამხმარე ზმნა, რაც მთავარ წინადადებაშია. თუ მთავარ წინადადებაში დამხმარე ზმნა არ არის, გამოიყენება do/does/did. მაგალითად: You speak English, don't you?",
+  "examples": [
+    {"en": "You like chocolate, don't you?", "ka": "შენ შოკოლადი გიყვარს, არა?"},
+    {"en": "She is your sister, isn't she?", "ka": "ის შენი დაა, ხომ?"},
+    {"en": "They won't come, will they?", "ka": "ისინი არ მოვლენ, ხომ?"},
+    {"en": "He can swim, can't he?", "ka": "მას ცურვა შეუძლია, ხომ არა?"},
+    {"en": "We should leave now, shouldn't we?", "ka": "ახლა უნდა წავიდეთ, არა?"}
+  ],
+  "common_mistakes_ka": "ხშირი შეცდომები: 1) დადებით წინადადებას დადებითი დანართის დამატება — 'You are happy, are you?' არასწორია, სწორია 'You are happy, aren't you?'. 2) არასწორი დამხმარე ზმნის გამოყენება — 'She likes tea, doesn't she?' სწორია, მაგრამ 'She likes tea, isn't she?' არასწორია. 3) I am-ის დანართი: 'I am right, aren't I?' (და არა 'amn't I'). 4) Let's-ის დანართი: 'Let's go, shall we?' — ეს გამონაკლისია.",
+  "exercises": [
+    {"type": "fill-blank", "question": "You are a student, ___?", "options": ["aren't you", "don't you", "isn't it"], "answer": "aren't you"},
+    {"type": "fill-blank", "question": "She can't drive, ___?", "options": ["can she", "can't she", "does she"], "answer": "can she"},
+    {"type": "fill-blank", "question": "They went to the party, ___?", "options": ["didn't they", "don't they", "weren't they"], "answer": "didn't they"},
+    {"type": "multiple-choice", "question": "Which is the correct question tag for 'He doesn't like fish'?", "options": ["does he?", "doesn't he?", "is he?"], "answer": "does he?"},
+    {"type": "fill-blank", "question": "We should hurry, ___?", "options": ["shouldn't we", "should we", "don't we"], "answer": "shouldn't we"},
+    {"type": "fill-blank", "question": "I am late, ___?", "options": ["aren't I", "amn't I", "am I"], "answer": "aren't I"},
+    {"type": "fill-blank", "question": "You won't forget, ___?", "options": ["will you", "won't you", "do you"], "answer": "will you"},
+    {"type": "multiple-choice", "question": "The rule for question tags is:", "options": ["Positive sentence → negative tag", "Positive sentence → positive tag", "Always use 'isn't it'"], "answer": "Positive sentence → negative tag"},
+    {"type": "fill-blank", "question": "Let's go for a walk, ___?", "options": ["shall we", "will we", "don't we"], "answer": "shall we"},
+    {"type": "fill-blank", "question": "He has finished his work, ___?", "options": ["hasn't he", "doesn't he", "didn't he"], "answer": "hasn't he"}
+  ]
+}

@@ -1,5 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Word of the Day — rotates daily based on date
+const wordsOfDay = [
+  { en: "Accomplish", ka: "მიღწევა, შესრულება", pron: "/əˈkɑːmplɪʃ/", example: "She accomplished her goal.", exampleKa: "მან მიზანს მიაღწია." },
+  { en: "Resilient", ka: "გამძლე, მდგრადი", pron: "/rɪˈzɪliənt/", example: "Children are very resilient.", exampleKa: "ბავშვები ძალიან გამძლეები არიან." },
+  { en: "Opportunity", ka: "შესაძლებლობა", pron: "/ˌɑːpərˈtuːnəti/", example: "This is a great opportunity.", exampleKa: "ეს შესანიშნავი შესაძლებლობაა." },
+  { en: "Persevere", ka: "გამძლეობა, დაჟინება", pron: "/ˌpɜːrsəˈvɪr/", example: "You must persevere to succeed.", exampleKa: "წარმატებისთვის დაჟინება გჭირდება." },
+  { en: "Grateful", ka: "მადლიერი", pron: "/ˈɡreɪtfəl/", example: "I'm grateful for your help.", exampleKa: "მადლიერი ვარ შენი დახმარებისთვის." },
+  { en: "Curious", ka: "ცნობისმოყვარე", pron: "/ˈkjʊriəs/", example: "She is very curious about science.", exampleKa: "ის ძალიან ცნობისმოყვარეა მეცნიერებით." },
+  { en: "Ambitious", ka: "ამბიციური", pron: "/æmˈbɪʃəs/", example: "He has ambitious plans.", exampleKa: "მას ამბიციური გეგმები აქვს." },
+  { en: "Embrace", ka: "მიღება, მოხვევა", pron: "/ɪmˈbreɪs/", example: "Embrace every challenge.", exampleKa: "მიიღე ყველა გამოწვევა." },
+  { en: "Magnificent", ka: "ბრწყინვალე", pron: "/mæɡˈnɪfɪsnt/", example: "The view was magnificent.", exampleKa: "ხედი ბრწყინვალე იყო." },
+  { en: "Determine", ka: "გადაწყვეტა, განსაზღვრა", pron: "/dɪˈtɜːrmɪn/", example: "She determined to finish the project.", exampleKa: "მან გადაწყვიტა პროექტის დასრულება." },
+  { en: "Inspire", ka: "შთაგონება", pron: "/ɪnˈspaɪər/", example: "Great leaders inspire others.", exampleKa: "დიდი ლიდერები სხვებს შთააგონებენ." },
+  { en: "Genuine", ka: "ნამდვილი, გულწრფელი", pron: "/ˈdʒenjuɪn/", example: "She gave a genuine smile.", exampleKa: "მან გულწრფელად გაიღიმა." },
+  { en: "Patience", ka: "მოთმინება", pron: "/ˈpeɪʃns/", example: "Learning requires patience.", exampleKa: "სწავლა მოთმინებას მოითხოვს." },
+  { en: "Adventure", ka: "თავგადასავალი", pron: "/ədˈventʃər/", example: "Life is an adventure.", exampleKa: "ცხოვრება თავგადასავალია." },
+  { en: "Confident", ka: "თავდაჯერებული", pron: "/ˈkɑːnfɪdənt/", example: "Be confident in yourself.", exampleKa: "იყავი თავდაჯერებული." },
+  { en: "Knowledge", ka: "ცოდნა", pron: "/ˈnɑːlɪdʒ/", example: "Knowledge is power.", exampleKa: "ცოდნა ძალაა." },
+  { en: "Overcome", ka: "გადალახვა", pron: "/ˌoʊvərˈkʌm/", example: "She overcame her fears.", exampleKa: "მან შიშები გადალახა." },
+  { en: "Brilliant", ka: "ბრწყინვალე, გენიალური", pron: "/ˈbrɪliənt/", example: "That's a brilliant idea!", exampleKa: "ეს გენიალური იდეაა!" },
+  { en: "Appreciate", ka: "დაფასება", pron: "/əˈpriːʃieɪt/", example: "I appreciate your honesty.", exampleKa: "შენს პატიოსნებას ვაფასებ." },
+  { en: "Transform", ka: "გარდაქმნა", pron: "/trænsˈfɔːrm/", example: "Education can transform lives.", exampleKa: "განათლებას ცხოვრების გარდაქმნა შეუძლია." },
+  { en: "Discover", ka: "აღმოჩენა", pron: "/dɪˈskʌvər/", example: "They discovered a new species.", exampleKa: "მათ ახალი სახეობა აღმოაჩინეს." },
+  { en: "Encourage", ka: "წახალისება", pron: "/ɪnˈkɜːrɪdʒ/", example: "Teachers encourage students.", exampleKa: "მასწავლებლები სტუდენტებს წაახალისებენ." },
+  { en: "Establish", ka: "დაარსება", pron: "/ɪˈstæblɪʃ/", example: "They established a new company.", exampleKa: "მათ ახალი კომპანია დააარსეს." },
+  { en: "Volunteer", ka: "მოხალისე", pron: "/ˌvɑːlənˈtɪr/", example: "She volunteers at the hospital.", exampleKa: "ის საავადმყოფოში მოხალისეობს." },
+  { en: "Sacrifice", ka: "მსხვერპლი, შეწირვა", pron: "/ˈsækrɪfaɪs/", example: "Parents sacrifice for their children.", exampleKa: "მშობლები შვილებისთვის მსხვერპლს სწირავენ." },
+  { en: "Fortunate", ka: "იღბლიანი", pron: "/ˈfɔːrtʃənət/", example: "We are fortunate to be here.", exampleKa: "იღბლიანები ვართ, რომ აქ ვართ." },
+  { en: "Cooperate", ka: "თანამშრომლობა", pron: "/koʊˈɑːpəreɪt/", example: "Let's cooperate on this project.", exampleKa: "მოდი ამ პროექტზე ვითანამშრომლოთ." },
+  { en: "Struggle", ka: "ბრძოლა, სირთულე", pron: "/ˈstrʌɡl/", example: "He struggled with the exam.", exampleKa: "ის გამოცდას ძნელად გაუმკლავდა." },
+  { en: "Achieve", ka: "მიღწევა", pron: "/əˈtʃiːv/", example: "You can achieve anything.", exampleKa: "ყველაფრის მიღწევა შეგიძლია." },
+  { en: "Celebrate", ka: "აღნიშვნა, ზეიმი", pron: "/ˈselɪbreɪt/", example: "Let's celebrate your success!", exampleKa: "მოდი შენს წარმატებას აღვნიშნოთ!" },
+];
+
+const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
 ---
 
 <Layout title="FluentGe — ისწავლე ინგლისური ქართულად">
@@ -13,10 +50,11 @@ import Layout from '../layouts/Layout.astro';
     <p class="text-lg md:text-xl text-[#94a3b8] mb-6 max-w-xl mx-auto">
       პირველი ინგლისური ენის პლატფორმა, რომელიც სპეციალურად ქართველებისთვისაა შექმნილი. ფლეშბარათები, გრამატიკა და პოდკასტი — ყველაფერი ერთ ადგილას.
     </p>
-    <div class="flex justify-center gap-4 mb-8 text-sm">
-      <span class="bg-[#22c55e]/20 text-[#22c55e] px-3 py-1 rounded-full font-semibold">1110+ სიტყვა</span>
-      <span class="bg-[#22c55e]/20 text-[#22c55e] px-3 py-1 rounded-full font-semibold">18 კატეგორია</span>
-      <span class="bg-[#22c55e]/20 text-[#22c55e] px-3 py-1 rounded-full font-semibold">100% უფასო</span>
+    <div class="flex flex-wrap justify-center gap-3 mb-8 text-sm">
+      <span class="bg-[#22c55e]/20 text-[#22c55e] px-3 py-1 rounded-full font-semibold">2400+ სიტყვა</span>
+      <span class="bg-[#22c55e]/20 text-[#22c55e] px-3 py-1 rounded-full font-semibold">40 კატეგორია</span>
+      <span class="bg-[#22c55e]/20 text-[#22c55e] px-3 py-1 rounded-full font-semibold">21 პოდკასტი</span>
+      <span class="bg-[#22c55e]/20 text-[#22c55e] px-3 py-1 rounded-full font-semibold">38 გრამატიკა</span>
     </div>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="/flashcards/" class="bg-[#22c55e] hover:bg-[#16a34a] text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors">
@@ -28,27 +66,53 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Word of the Day -->
+  <section class="px-4 py-8 max-w-2xl mx-auto">
+    <div class="bg-gradient-to-r from-[#22c55e]/10 to-[#06b6d4]/10 border border-[#22c55e]/20 rounded-2xl p-6 text-center">
+      <p class="text-xs text-[#64748b] uppercase tracking-wider mb-2">📖 დღის სიტყვა</p>
+      <h3 class="text-3xl font-bold text-[#22c55e] mb-1">{todayWord.en}</h3>
+      <p class="text-[#94a3b8] text-sm mb-1">{todayWord.pron}</p>
+      <p class="text-lg font-medium mb-3">{todayWord.ka}</p>
+      <div class="bg-white/5 rounded-xl p-3 text-sm">
+        <p class="text-[#cbd5e1]">"{todayWord.example}"</p>
+        <p class="text-[#64748b] mt-1">{todayWord.exampleKa}</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Features -->
   <section class="px-4 py-16 max-w-5xl mx-auto">
     <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">რას გთავაზობთ</h2>
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-[#1e293b] rounded-2xl p-6 text-center hover:bg-[#334155] transition-colors">
         <div class="text-4xl mb-4">📝</div>
         <h3 class="text-xl font-bold mb-2">ფლეშბარათები</h3>
-        <p class="text-[#94a3b8] text-sm">1110+ ინგლისური სიტყვა და ფრაზა 18 კატეგორიაში, ქართული თარგმანით. 4 სასწავლო რეჟიმი: ბარათები, ქვიზი, წერა და წინადადების აგება.</p>
+        <p class="text-[#94a3b8] text-sm">2400+ სიტყვა 40 კატეგორიაში. 4 სასწავლო რეჟიმი: ბარათები, ქვიზი, წერა და წინადადება.</p>
         <a href="/flashcards/" class="inline-block mt-4 text-[#22c55e] text-sm font-semibold">დაიწყე →</a>
       </div>
       <div class="bg-[#1e293b] rounded-2xl p-6 text-center hover:bg-[#334155] transition-colors">
         <div class="text-4xl mb-4">📖</div>
         <h3 class="text-xl font-bold mb-2">გრამატიკა</h3>
-        <p class="text-[#94a3b8] text-sm">30 გაკვეთილი ინგლისურ გრამატიკაში ქართულ ენაზე. A1-დან B2-მდე, ინტერაქტიული სავარჯიშოებით.</p>
+        <p class="text-[#94a3b8] text-sm">38 გაკვეთილი A1-დან B2-მდე, ინტერაქტიული სავარჯიშოებით ქართულ ენაზე.</p>
         <a href="/grammar/" class="inline-block mt-4 text-[#22c55e] text-sm font-semibold">დაიწყე →</a>
       </div>
       <div class="bg-[#1e293b] rounded-2xl p-6 text-center hover:bg-[#334155] transition-colors">
         <div class="text-4xl mb-4">🎧</div>
         <h3 class="text-xl font-bold mb-2">პოდკასტი</h3>
-        <p class="text-[#94a3b8] text-sm">აუდიო გაკვეთილები რეალური სიტუაციებისთვის. მოისმინე და ისწავლე ყველგან.</p>
-        <span class="inline-block mt-4 text-[#94a3b8] text-sm">მალე დაემატება 🔜</span>
+        <p class="text-[#94a3b8] text-sm">21 ეპიზოდი რეალური დიალოგებით. მოისმინე და ისწავლე ყველგან.</p>
+        <a href="/podcast/" class="inline-block mt-4 text-[#22c55e] text-sm font-semibold">მოისმინე →</a>
+      </div>
+      <div class="bg-[#1e293b] rounded-2xl p-6 text-center hover:bg-[#334155] transition-colors">
+        <div class="text-4xl mb-4">💬</div>
+        <h3 class="text-xl font-bold mb-2">ფრაზები</h3>
+        <p class="text-[#94a3b8] text-sm">60+ სასარგებლო ფრაზა 10 სიტუაციისთვის. რესტორანი, მაღაზია, სამსახური.</p>
+        <a href="/phrases/" class="inline-block mt-4 text-[#22c55e] text-sm font-semibold">ნახე →</a>
+      </div>
+      <div class="bg-[#1e293b] rounded-2xl p-6 text-center hover:bg-[#334155] transition-colors">
+        <div class="text-4xl mb-4">🎮</div>
+        <h3 class="text-xl font-bold mb-2">თამაშები</h3>
+        <p class="text-[#94a3b8] text-sm">ისწავლე თამაშით! სიტყვების დაკავშირება, შერეული ასოები, სიჩქარის ქვიზი.</p>
+        <a href="/games/" class="inline-block mt-4 text-[#22c55e] text-sm font-semibold">ითამაშე →</a>
       </div>
     </div>
   </section>
@@ -92,7 +156,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="px-4 py-20 text-center">
     <div class="bg-[#1e293b] rounded-3xl p-10 max-w-2xl mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold mb-4">მზად ხარ?</h2>
-      <p class="text-[#94a3b8] mb-6">დაიწყე ინგლისური სიტყვების სწავლა ახლავე — უფასოდ.</p>
+      <p class="text-[#94a3b8] mb-6">2400+ სიტყვა, 21 პოდკასტი, 38 გრამატიკა — ყველაფერი ერთ ადგილას.</p>
       <a href="/flashcards/" class="bg-[#22c55e] hover:bg-[#16a34a] text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors inline-block">
         🚀 დაიწყე სწავლა
       </a>

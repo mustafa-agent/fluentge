@@ -11,14 +11,14 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="FluentGe — ინგლისური ენის შესწავლა ქართველებისთვის. 960+ სიტყვა ფლეშბარათებით, გრამატიკა, პოდკასტი. უფასო!" />
+    <meta name="description" content="FluentGe — ინგლისური ენის შესწავლა ქართველებისთვის. 2400+ სიტყვა, 40 კატეგორია, 38 გრამატიკა, 21 პოდკასტი. უფასო!" />
     <meta property="og:title" content="FluentGe — ისწავლე ინგლისური ქართულად" />
-    <meta property="og:description" content="პირველი ინგლისური ენის პლატფორმა ქართველებისთვის. 960+ სიტყვა, 15 კატეგორია, სმარტ გამეორება. უფასო!" />
+    <meta property="og:description" content="პირველი ინგლისური ენის პლატფორმა ქართველებისთვის. 2400+ სიტყვა, 40 კატეგორია, პოდკასტი და გრამატიკა." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fluentge.surge.sh" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="FluentGe — ისწავლე ინგლისური" />
-    <meta name="twitter:description" content="960+ სიტყვა ფლეშბარათებით. უფასო აპლიკაცია ქართველებისთვის." />
+    <meta name="twitter:description" content="2400+ სიტყვა, 21 პოდკასტი, 38 გრამატიკა. უფასო აპლიკაცია ქართველებისთვის." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -31,16 +31,39 @@ const { title } = Astro.props;
         <a href="/" class="text-xl font-bold">
           <span class="text-[#22c55e]">Fluent</span>Ge
         </a>
-        <div class="flex items-center gap-6 text-sm">
+        <!-- Desktop nav -->
+        <div class="hidden md:flex items-center gap-6 text-sm">
           <a href="/" class="hover:text-[#22c55e] transition-colors">მთავარი</a>
           <a href="/flashcards/" class="hover:text-[#22c55e] transition-colors">ბარათები</a>
           <a href="/grammar/" class="hover:text-[#22c55e] transition-colors">გრამატიკა</a>
+          <a href="/phrases/" class="hover:text-[#22c55e] transition-colors">💬 ფრაზები</a>
+          <a href="/games/" class="hover:text-[#22c55e] transition-colors">🎮 თამაშები</a>
           <a href="/podcast/" class="hover:text-[#22c55e] transition-colors">🎧 პოდკასტი</a>
           <a href="/about/" class="hover:text-[#22c55e] transition-colors">ჩვენ შესახებ</a>
           <a href="/register/" class="bg-[#22c55e] hover:bg-[#16a34a] text-white px-4 py-1.5 rounded-lg font-semibold transition-colors">რეგისტრაცია</a>
         </div>
+        <!-- Mobile hamburger -->
+        <button id="menu-toggle" class="md:hidden text-2xl p-1" aria-label="მენიუ">☰</button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-[#0f172a]/95 backdrop-blur-md">
+        <div class="flex flex-col px-4 py-3 gap-3 text-sm">
+          <a href="/" class="hover:text-[#22c55e] transition-colors py-1">🏠 მთავარი</a>
+          <a href="/flashcards/" class="hover:text-[#22c55e] transition-colors py-1">📝 ბარათები</a>
+          <a href="/grammar/" class="hover:text-[#22c55e] transition-colors py-1">📖 გრამატიკა</a>
+          <a href="/phrases/" class="hover:text-[#22c55e] transition-colors py-1">💬 ფრაზები</a>
+          <a href="/games/" class="hover:text-[#22c55e] transition-colors py-1">🎮 თამაშები</a>
+          <a href="/podcast/" class="hover:text-[#22c55e] transition-colors py-1">🎧 პოდკასტი</a>
+          <a href="/about/" class="hover:text-[#22c55e] transition-colors py-1">ℹ️ ჩვენ შესახებ</a>
+          <a href="/register/" class="bg-[#22c55e] hover:bg-[#16a34a] text-white px-4 py-2 rounded-lg font-semibold transition-colors text-center">რეგისტრაცია</a>
+        </div>
       </div>
     </nav>
+    <script>
+      document.getElementById('menu-toggle')?.addEventListener('click', () => {
+        document.getElementById('mobile-menu')?.classList.toggle('hidden');
+      });
+    </script>
 
     <main class="pt-14">
       <slot />
@@ -52,9 +75,13 @@ const { title } = Astro.props;
         <div class="mb-4">
           <span class="text-white font-bold"><span class="text-[#22c55e]">Fluent</span>Ge</span>
         </div>
-        <div class="flex justify-center gap-6 mb-4">
+        <div class="flex flex-wrap justify-center gap-6 mb-4">
           <a href="/" class="hover:text-white transition-colors">მთავარი</a>
           <a href="/flashcards/" class="hover:text-white transition-colors">ბარათები</a>
+          <a href="/grammar/" class="hover:text-white transition-colors">გრამატიკა</a>
+          <a href="/phrases/" class="hover:text-white transition-colors">ფრაზები</a>
+          <a href="/games/" class="hover:text-white transition-colors">თამაშები</a>
+          <a href="/podcast/" class="hover:text-white transition-colors">პოდკასტი</a>
           <a href="/about/" class="hover:text-white transition-colors">ჩვენ შესახებ</a>
         </div>
         <p>© 2026 FluentGe. ყველა უფლება დაცულია.</p>

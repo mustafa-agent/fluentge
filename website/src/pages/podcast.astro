@@ -1,46 +1,196 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const episodes = [
+  { id: 1, title: "At the Airport", titleKa: "აეროპორტში", icon: "✈️", duration: "2:00", file: "/podcast/episode1-at-the-airport.mp3", free: true,
+    vocab: ["Boarding pass", "Gate", "Luggage", "Passport", "Check in", "Departure", "Arrival", "Delay"],
+    vocabKa: ["ჩასხდომის ბარათი", "კარიბჭე", "ბარგი", "პასპორტი", "რეგისტრაცია", "გამგზავრება", "ჩამოსვლა", "დაგვიანება"],
+    descriptionKa: "ისწავლე ჩეკინი, კარიბჭეებზე კითხვა და აეროპორტის თანამშრომლებთან საუბარი.",
+    transcript: [
+      { speaker: "Agent", en: "Good morning. Can I see your passport and boarding pass, please?", ka: "დილა მშვიდობისა. შეიძლება პასპორტი და ჩასხდომის ბარათი?" },
+      { speaker: "Traveler", en: "Of course. Here you go.", ka: "რა თქმა უნდა. ბრძანდით." },
+      { speaker: "Agent", en: "Thank you. Are you checking in any luggage today?", ka: "გმადლობთ. ბარგს ჩააბარებთ დღეს?" },
+      { speaker: "Traveler", en: "Yes, I have one suitcase.", ka: "დიახ, ერთი ჩემოდანი მაქვს." },
+      { speaker: "Agent", en: "Please place it on the scale. Your bag is twenty-two kilograms. That's fine.", ka: "გთხოვთ სასწორზე დადეთ. თქვენი ჩანთა ოცდაორი კილოგრამია. კარგია." },
+      { speaker: "Traveler", en: "A window seat, please.", ka: "ფანჯარასთან, გთხოვთ." },
+      { speaker: "Agent", en: "Here is your boarding pass. Your flight departs from gate B7 at 3:45. Have a nice flight!", ka: "აი თქვენი ჩასხდომის ბარათი. ფრენა B7 კარიბჭიდან 3:45-ზე. სასიამოვნო ფრენას!" },
+    ]
+  },
+  { id: 2, title: "At the Restaurant", titleKa: "რესტორანში", icon: "🍽️", duration: "1:43", file: "/podcast/episode2-restaurant.mp3", free: true,
+    vocab: ["Menu", "Appetizer", "Main course", "Dessert", "Bill", "Tip", "Reservation", "Waiter"],
+    vocabKa: ["მენიუ", "წინაკერძი", "მთავარი კერძი", "დესერტი", "ანგარიში", "ჩაი ფული", "ჯავშანი", "მიმტანი"],
+    descriptionKa: "შეუკვეთე საკვები, იკითხე კერძებზე და გადაიხადე ანგარიში." },
+  { id: 3, title: "Job Interview", titleKa: "გასაუბრება სამსახურში", icon: "💼", duration: "1:48", file: "/podcast/episode3-job-interview.mp3", free: true,
+    vocab: ["Resume", "Experience", "Salary", "Position", "Skills", "Hire", "Interview", "Qualifications"],
+    vocabKa: ["რეზიუმე", "გამოცდილება", "ხელფასი", "პოზიცია", "უნარები", "დაქირავება", "გასაუბრება", "კვალიფიკაცია"],
+    descriptionKa: "უპასუხე გავრცელებულ კითხვებს და ისაუბრე გამოცდილებაზე." },
+  { id: 4, title: "At the Hotel", titleKa: "სასტუმროში", icon: "🏨", duration: "1:45", file: "/podcast/episode4-hotel.mp3", free: false,
+    vocab: ["Reception", "Room key", "Check-out", "Single room", "Double room", "Breakfast", "Elevator", "Lobby"],
+    vocabKa: ["რეცეფცია", "ოთახის გასაღები", "გასვლა", "ერთადგილიანი", "ორადგილიანი", "საუზმე", "ლიფტი", "ლობი"],
+    descriptionKa: "გაიარე რეგისტრაცია, იკითხე ოთახზე და მოითხოვე მომსახურება." },
+  { id: 5, title: "Shopping", titleKa: "შოპინგი", icon: "🛍️", duration: "1:47", file: "/podcast/episode5-shopping.mp3", free: false,
+    vocab: ["Discount", "Receipt", "Fitting room", "Size", "Cash", "Credit card", "Refund", "Exchange"],
+    vocabKa: ["ფასდაკლება", "ქვითარი", "სამოსახადი", "ზომა", "ნაღდი", "საკრედიტო ბარათი", "თანხის დაბრუნება", "გაცვლა"],
+    descriptionKa: "იყიდე ტანსაცმელი, იკითხე ზომებზე და გადაიხადე." },
+  { id: 6, title: "At the Doctor", titleKa: "ექიმთან", icon: "🏥", duration: "1:46", file: "/podcast/episode6-doctor.mp3", free: false,
+    vocab: ["Appointment", "Symptoms", "Prescription", "Fever", "Headache", "Allergic", "Medicine", "Pharmacy"],
+    vocabKa: ["ვიზიტი", "სიმპტომები", "რეცეპტი", "ცხელება", "თავის ტკივილი", "ალერგიული", "წამალი", "აფთიაქი"],
+    descriptionKa: "აღწერე სიმპტომები, გაიგე რჩევები და მიიღე რეცეპტი." },
+  { id: 7, title: "At the Airport", titleKa: "აეროპორტში (2)", icon: "🛫", duration: "1:45", file: "/podcast/episode7-airport.mp3", free: false,
+    vocab: ["Boarding pass", "Gate", "Luggage", "Customs", "Departure", "Arrival", "Passport control", "Turbulence"],
+    vocabKa: ["ჩასხდომის ბარათი", "კარიბჭე", "ბარგი", "საბაჟო", "გამგზავრება", "ჩამოსვლა", "პასპორტის კონტროლი", "ტურბულენცია"],
+    descriptionKa: "ჩეკინი, უსაფრთხოების გავლა და ფრენის პროცედურები." },
+  { id: 8, title: "Making Friends", titleKa: "მეგობრობა", icon: "🤝", duration: "1:45", file: "/podcast/episode8-making-friends.mp3", free: false,
+    vocab: ["Introduce", "Hobby", "Personality", "Hang out", "Invite", "Nickname", "Similar", "Trust"],
+    vocabKa: ["გაცნობა", "ჰობი", "პიროვნება", "გატარება", "მოწვევა", "მეტსახელი", "მსგავსი", "ნდობა"],
+    descriptionKa: "გაიცანი ახალი ადამიანი და გაცვალეთ კონტაქტები." },
+  { id: 9, title: "Asking for Directions", titleKa: "მიმართულების კითხვა", icon: "🗺️", duration: "1:45", file: "/podcast/episode9-directions.mp3", free: false,
+    vocab: ["Intersection", "Straight ahead", "Turn left", "Crosswalk", "Block", "Corner", "Opposite", "Landmark"],
+    vocabKa: ["გზაჯვარედინი", "პირდაპირ", "მარცხნივ მოუხვიე", "საფეხმავლო გადასასვლელი", "კვარტალი", "კუთხე", "პირდაპირ", "ორიენტირი"],
+    descriptionKa: "იკითხე და მიეცი მიმართულებები მუზეუმამდე." },
+  { id: 10, title: "Phone Conversations", titleKa: "სატელეფონო საუბარი", icon: "📞", duration: "1:45", file: "/podcast/episode10-phone.mp3", free: false,
+    vocab: ["Voicemail", "Dial", "Hang up", "Signal", "Text message", "Missed call", "Speaker", "Ringtone"],
+    vocabKa: ["ხმოვანი ფოსტა", "დარეკვა", "გათიშვა", "სიგნალი", "ტექსტური შეტყობინება", "გამოტოვებული ზარი", "დინამიკი", "ზარის მელოდია"],
+    descriptionKa: "დარეკე და დანიშნე შეხვედრა ტელეფონით." },
+  { id: 11, title: "At the Bank", titleKa: "ბანკში", icon: "🏦", duration: "1:45", file: "/podcast/episode11-bank.mp3", free: false,
+    vocab: ["Account", "Deposit", "Withdrawal", "Transfer", "Balance", "Loan", "Interest", "Statement"],
+    vocabKa: ["ანგარიში", "შენატანი", "გატანა", "გადარიცხვა", "ბალანსი", "სესხი", "პროცენტი", "ამონაწერი"],
+    descriptionKa: "გახსენი საბანკო ანგარიში და ისწავლე საბანკო ტერმინები." },
+  { id: 12, title: "Renting an Apartment", titleKa: "ბინის დაქირავება", icon: "🏠", duration: "1:45", file: "/podcast/episode12-apartment.mp3", free: false,
+    vocab: ["Lease", "Tenant", "Landlord", "Deposit", "Utilities", "Furnished", "Spacious", "Neighborhood"],
+    vocabKa: ["იჯარა", "მოიჯარე", "მეპატრონე", "გირაო", "კომუნალური", "გარემონტებული", "ფართო", "სამეზობლო"],
+    descriptionKa: "ნახე ბინა და მოილაპარაკე ქირაზე." },
+  { id: 13, title: "At the Gym", titleKa: "სპორტდარბაზში", icon: "💪", duration: "1:45", file: "/podcast/episode13-gym.mp3", free: false,
+    vocab: ["Treadmill", "Weights", "Stretch", "Membership", "Trainer", "Workout", "Warm up", "Cool down"],
+    vocabKa: ["სარბენი ბილიკი", "საწონები", "გაწელვა", "აბონემენტი", "მწვრთნელი", "ვარჯიში", "გახურება", "გაგრილება"],
+    descriptionKa: "დარეგისტრირდი სპორტდარბაზში და ისწავლე სავარჯიშო ტერმინები." },
+  { id: 14, title: "Emergency Situations", titleKa: "გადაუდებელი სიტუაციები", icon: "🚨", duration: "1:45", file: "/podcast/episode14-emergency.mp3", free: false,
+    vocab: ["Ambulance", "Fire truck", "Accident", "Injury", "First aid", "Emergency room", "Bandage", "911"],
+    vocabKa: ["სასწრაფო", "სახანძრო", "ავარია", "დაზიანება", "პირველადი დახმარება", "გადაუდებელი", "ბინტი", "911"],
+    descriptionKa: "დარეკე დახმარებისთვის ავარიის შემდეგ." },
+  { id: 15, title: "At the Supermarket", titleKa: "სუპერმარკეტში", icon: "🛒", duration: "1:45", file: "/podcast/episode15-supermarket.mp3", free: false,
+    vocab: ["Aisle", "Checkout", "Basket", "Organic", "Frozen", "Canned", "Expiration date", "Coupon"],
+    vocabKa: ["რიგი", "სალარო", "კალათა", "ორგანული", "გაყინული", "კონსერვი", "ვარგისიანობა", "კუპონი"],
+    descriptionKa: "იპოვე პროდუქტები და გადაიხადე სალაროსთან." },
+  { id: 16, title: "Making Plans", titleKa: "გეგმების შედგენა", icon: "📅", duration: "1:45", file: "/podcast/episode16-plans.mp3", free: false,
+    vocab: ["Schedule", "Available", "Cancel", "Postpone", "Confirm", "Flexible", "Suggest", "Definitely"],
+    vocabKa: ["განრიგი", "ხელმისაწვდომი", "გაუქმება", "გადავადება", "დადასტურება", "მოქნილი", "შეთავაზება", "აუცილებლად"],
+    descriptionKa: "დაგეგმე შაბათ-კვირის მოგზაურობა მეგობართან." },
+  { id: 17, title: "At School", titleKa: "სკოლაში", icon: "🎓", duration: "1:45", file: "/podcast/episode17-school.mp3", free: false,
+    vocab: ["Semester", "Lecture", "Assignment", "Grade", "Professor", "Deadline", "Scholarship", "Campus"],
+    vocabKa: ["სემესტრი", "ლექცია", "დავალება", "ნიშანი", "პროფესორი", "ვადა", "სტიპენდია", "კამპუსი"],
+    descriptionKa: "ისაუბრე გაკვეთილებზე და საშინაო დავალებაზე." },
+  { id: 18, title: "Cooking Together", titleKa: "ერთად საჭმლის მომზადება", icon: "👩‍🍳", duration: "1:45", file: "/podcast/episode18-cooking.mp3", free: false,
+    vocab: ["Recipe", "Ingredient", "Stir", "Chop", "Boil", "Oven", "Tablespoon", "Seasoning"],
+    vocabKa: ["რეცეპტი", "ინგრედიენტი", "მორევა", "დაჭრა", "დუღილი", "ღუმელი", "სუფრის კოვზი", "სანელებელი"],
+    descriptionKa: "მიჰყევი რეცეპტს და მოამზადე კერძი." },
+  { id: 19, title: "At the Mechanic", titleKa: "ავტომექანიკოსთან", icon: "🔧", duration: "1:45", file: "/podcast/episode19-mechanic.mp3", free: false,
+    vocab: ["Engine", "Brake", "Tire", "Oil change", "Inspection", "Repair", "Estimate", "Warranty"],
+    vocabKa: ["ძრავა", "მუხრუჭი", "საბურავი", "ზეთის შეცვლა", "შემოწმება", "შეკეთება", "შეფასება", "გარანტია"],
+    descriptionKa: "შეამოწმე და შეაკეთე მანქანა." },
+  { id: 20, title: "Birthday Party", titleKa: "დაბადების დღის წვეულება", icon: "🎂", duration: "1:45", file: "/podcast/episode20-birthday.mp3", free: false,
+    vocab: ["Celebrate", "Surprise", "Candle", "Wish", "Gift", "Decoration", "Invitation", "Toast"],
+    vocabKa: ["აღნიშვნა", "სიურპრიზი", "სანთელი", "სურვილი", "საჩუქარი", "დეკორაცია", "მოწვევა", "სადღეგრძელო"],
+    descriptionKa: "დაგეგმე და მონაწილეობა მიიღე დაბადების დღის წვეულებაში." },
+  { id: 21, title: "Travel Stories", titleKa: "მოგზაურობის ამბები", icon: "🌍", duration: "1:45", file: "/podcast/episode21-travel.mp3", free: false,
+    vocab: ["Adventure", "Souvenir", "Backpack", "Culture", "Tourist", "Guide", "Itinerary", "Memorable"],
+    vocabKa: ["თავგადასავალი", "სუვენირი", "ზურგჩანთა", "კულტურა", "ტურისტი", "გიდი", "მარშრუტი", "დასამახსოვრებელი"],
+    descriptionKa: "გაუზიარე სხვებს მოგზაურობის გამოცდილება." },
+];
 ---
 
-<Layout title="პოდკასტი — FluentGe">
-  <section class="max-w-3xl mx-auto px-4 py-20 text-center">
-    <div class="text-8xl mb-6">🎧</div>
-    <h1 class="text-4xl font-bold mb-4">პოდკასტი</h1>
-    <p class="text-[#94a3b8] text-lg mb-8 max-w-lg mx-auto">
-      აუდიო გაკვეთილები რეალური სიტუაციებისთვის. მოისმინე და ისწავლე ინგლისური ყველგან — მანქანაში, სპორტდარბაზში, გზაში.
-    </p>
-
-    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-      <h2 class="text-2xl font-bold mb-4">🔜 მალე!</h2>
-      <p class="text-[#94a3b8] mb-6">პოდკასტი მზადდება. დარეგისტრირდი რომ პირველმა შეიტყო!</p>
-      
-      <div class="space-y-4 text-left max-w-md mx-auto">
-        <div class="flex items-start gap-3 bg-white/5 rounded-xl p-4">
-          <span class="text-2xl">🗣️</span>
-          <div>
-            <div class="font-semibold">რეალური დიალოგები</div>
-            <div class="text-sm text-[#94a3b8]">ყოველდღიური სიტუაციები: მაღაზიაში, რესტორანში, სამსახურში</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 bg-white/5 rounded-xl p-4">
-          <span class="text-2xl">🇬🇪</span>
-          <div>
-            <div class="font-semibold">ქართული ახსნა</div>
-            <div class="text-sm text-[#94a3b8]">ყველა დიალოგი ახსნილია ქართულ ენაზე</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 bg-white/5 rounded-xl p-4">
-          <span class="text-2xl">📱</span>
-          <div>
-            <div class="font-semibold">ისმინე ყველგან</div>
-            <div class="text-sm text-[#94a3b8]">ტელეფონიდან, ნებისმიერ დროს</div>
-          </div>
-        </div>
-      </div>
+<Layout title="🎧 პოდკასტი — FluentGe">
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <div class="text-6xl mb-4">🎧</div>
+      <h1 class="text-4xl font-bold mb-3">FluentGe Podcast</h1>
+      <p class="text-[#94a3b8] text-lg max-w-lg mx-auto">
+        მოისმინე რეალური დიალოგები ინგლისურად. ისწავლე ყველგან — მანქანაში, გზაში, სპორტდარბაზში.
+      </p>
+      <p class="text-[#64748b] text-sm mt-2">{episodes.length} ეპიზოდი · 3 უფასო</p>
     </div>
 
-    <a href="/register/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
-      📩 შემატყობინე როცა გამოვა
-    </a>
+    <div class="space-y-6">
+      {episodes.map((ep) => (
+        <div class={`bg-white/5 border rounded-2xl overflow-hidden transition-all ${ep.free ? 'border-green-500/30' : 'border-white/10'}`}>
+          <div class="p-6">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-sm text-[#64748b]">ეპიზოდი {ep.id}</span>
+                  <span class="text-sm text-[#64748b]">· {ep.duration}</span>
+                  {ep.free ? (
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 font-medium">✅ უფასო</span>
+                  ) : (
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-medium">🔒 პრემიუმი</span>
+                  )}
+                </div>
+                <h2 class="text-xl font-bold">{ep.title}</h2>
+                <p class="text-[#94a3b8] text-sm">{ep.titleKa}</p>
+              </div>
+              <div class="text-4xl">{ep.icon}</div>
+            </div>
+            
+            <p class="text-sm text-[#94a3b8] mb-4">{ep.descriptionKa}</p>
+
+            <div class="mb-4">
+              <p class="text-xs text-[#64748b] mb-2 font-medium">📚 სიტყვები ამ ეპიზოდში:</p>
+              <div class="flex flex-wrap gap-2">
+                {ep.vocab.map((word, i) => (
+                  <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">
+                    {word} <span class="text-[#64748b]">— {ep.vocabKa[i]}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {ep.free ? (
+              <div>
+                <audio controls class="w-full mb-4" preload="metadata">
+                  <source src={ep.file} type="audio/mpeg" />
+                </audio>
+                
+                {ep.transcript && (
+                  <details class="mt-4">
+                    <summary class="cursor-pointer text-sm text-[#22c55e] hover:underline font-medium">
+                      📝 დიალოგის ტექსტი (ქართული თარგმანით)
+                    </summary>
+                    <div class="mt-3 space-y-3 bg-white/5 rounded-xl p-4">
+                      {ep.transcript.map((line) => (
+                        <div class="border-b border-white/5 pb-2 last:border-0">
+                          <div class="flex items-start gap-2">
+                            <span class={`text-xs px-1.5 py-0.5 rounded font-medium ${line.speaker === 'Agent' ? 'bg-purple-500/20 text-purple-400' : 'bg-blue-500/20 text-blue-400'}`}>
+                              {line.speaker}
+                            </span>
+                            <div>
+                              <p class="text-sm font-medium">{line.en}</p>
+                              <p class="text-xs text-[#64748b] mt-0.5">{line.ka}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                )}
+              </div>
+            ) : (
+              <a href="/register/" class="block bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-4 text-center hover:border-amber-500/40 transition-all">
+                <span class="text-2xl">🔒</span>
+                <p class="text-amber-400 font-medium mt-1">გახსენი პრემიუმით</p>
+                <p class="text-xs text-[#64748b] mt-1">თვეში 9.99 ₾</p>
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
+      <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა ეპიზოდი</h3>
+      <p class="text-[#94a3b8] mb-6">21 პოდკასტი, 2400+ სიტყვა, 38 გრამატიკის გაკვეთილი</p>
+      <a href="/register/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
+        🚀 დაიწყე პრემიუმი
+      </a>
+    </div>
   </section>
 </Layout>

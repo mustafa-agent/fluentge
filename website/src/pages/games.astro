@@ -1,0 +1,384 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="🎮 თამაშები — FluentGe">
+  <section class="max-w-3xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <div class="text-6xl mb-4">🎮</div>
+      <h1 class="text-4xl font-bold mb-3">სიტყვების თამაშები</h1>
+      <p class="text-[#94a3b8] text-lg">ისწავლე ინგლისური თამაშით — უფრო სახალისო და ეფექტური!</p>
+    </div>
+
+    <!-- Word Match Game -->
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-2">🔗 სიტყვების დაკავშირება</h2>
+      <p class="text-[#94a3b8] text-sm mb-6">დააკავშირე ინგლისური სიტყვა ქართულ თარგმანთან. რაც უფრო სწრაფად — მით უკეთესი!</p>
+      
+      <div id="match-game">
+        <div id="match-score" class="text-center mb-4">
+          <span class="text-[#22c55e] font-bold text-lg">ქულა: <span id="score">0</span></span>
+          <span class="text-[#64748b] ml-4">⏱️ <span id="timer">0</span>წმ</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div id="en-col" class="space-y-2"></div>
+          <div id="ka-col" class="space-y-2"></div>
+        </div>
+        <div id="match-result" class="hidden mt-6 text-center"></div>
+        <button id="new-round" class="mt-6 w-full bg-[#22c55e] hover:bg-[#16a34a] text-white font-semibold py-3 rounded-xl transition-colors">🔄 ახალი რაუნდი</button>
+      </div>
+    </div>
+
+    <!-- Word Scramble Game -->
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-2">🔀 შერეული ასოები</h2>
+      <p class="text-[#94a3b8] text-sm mb-6">ასოები აურიეა! გამოიცანი ინგლისური სიტყვა ქართული მინიშნებით.</p>
+      
+      <div id="scramble-game">
+        <div id="scramble-hint" class="text-center mb-4">
+          <p class="text-[#64748b] text-sm mb-1">მინიშნება:</p>
+          <p id="scramble-ka" class="text-lg font-bold text-[#22c55e]"></p>
+        </div>
+        <div id="scramble-letters" class="flex flex-wrap justify-center gap-2 mb-4"></div>
+        <div id="scramble-input" class="flex justify-center gap-1 mb-4 min-h-[48px]"></div>
+        <div id="scramble-feedback" class="text-center mb-4"></div>
+        <div class="flex gap-3 justify-center">
+          <button id="scramble-clear" class="bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg font-semibold transition-colors">🗑️ გასუფთავება</button>
+          <button id="scramble-check" class="bg-[#22c55e] hover:bg-[#16a34a] text-white px-6 py-2 rounded-lg font-semibold transition-colors">✅ შემოწმება</button>
+          <button id="scramble-skip" class="bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg font-semibold transition-colors">⏭️ გამოტოვება</button>
+        </div>
+        <div class="text-center mt-4">
+          <span class="text-[#22c55e] font-bold">ქულა: <span id="scramble-score">0</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speed Quiz -->
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+      <h2 class="text-xl font-bold mb-2">⚡ სიჩქარის ქვიზი</h2>
+      <p class="text-[#94a3b8] text-sm mb-6">30 წამი გაქვს! რამდენ სიტყვას დაიმახსოვრებ?</p>
+      
+      <div id="speed-game">
+        <div id="speed-start" class="text-center">
+          <button id="speed-go" class="bg-[#22c55e] hover:bg-[#16a34a] text-white font-bold py-4 px-10 rounded-xl text-lg transition-colors">▶️ დაიწყე!</button>
+        </div>
+        <div id="speed-play" class="hidden">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-[#22c55e] font-bold text-lg">ქულა: <span id="speed-score">0</span></span>
+            <span class="text-red-400 font-bold text-2xl">⏱️ <span id="speed-timer">30</span></span>
+          </div>
+          <div id="speed-word" class="text-center mb-6">
+            <p class="text-3xl font-bold mb-2" id="speed-en"></p>
+          </div>
+          <div id="speed-options" class="grid grid-cols-2 gap-3"></div>
+        </div>
+        <div id="speed-result" class="hidden text-center">
+          <div class="text-6xl mb-4" id="speed-emoji"></div>
+          <p class="text-2xl font-bold mb-2">შედეგი: <span id="speed-final" class="text-[#22c55e]"></span></p>
+          <p class="text-[#94a3b8] mb-4" id="speed-msg"></p>
+          <button id="speed-retry" class="bg-[#22c55e] hover:bg-[#16a34a] text-white font-bold py-3 px-8 rounded-xl transition-colors">🔄 თავიდან</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Word bank for games
+    const words = [
+      { en: "Hello", ka: "გამარჯობა" }, { en: "Thank you", ka: "მადლობა" },
+      { en: "Water", ka: "წყალი" }, { en: "Book", ka: "წიგნი" },
+      { en: "House", ka: "სახლი" }, { en: "Friend", ka: "მეგობარი" },
+      { en: "School", ka: "სკოლა" }, { en: "Food", ka: "საკვები" },
+      { en: "Doctor", ka: "ექიმი" }, { en: "Money", ka: "ფული" },
+      { en: "Time", ka: "დრო" }, { en: "Family", ka: "ოჯახი" },
+      { en: "Work", ka: "სამუშაო" }, { en: "Music", ka: "მუსიკა" },
+      { en: "City", ka: "ქალაქი" }, { en: "Country", ka: "ქვეყანა" },
+      { en: "Love", ka: "სიყვარული" }, { en: "Sun", ka: "მზე" },
+      { en: "Moon", ka: "მთვარე" }, { en: "Star", ka: "ვარსკვლავი" },
+      { en: "Cat", ka: "კატა" }, { en: "Dog", ka: "ძაღლი" },
+      { en: "Tree", ka: "ხე" }, { en: "Flower", ka: "ყვავილი" },
+      { en: "Rain", ka: "წვიმა" }, { en: "Snow", ka: "თოვლი" },
+      { en: "Car", ka: "მანქანა" }, { en: "Phone", ka: "ტელეფონი" },
+      { en: "Happy", ka: "ბედნიერი" }, { en: "Sad", ka: "სევდიანი" },
+      { en: "Big", ka: "დიდი" }, { en: "Small", ka: "პატარა" },
+      { en: "Good", ka: "კარგი" }, { en: "Bad", ka: "ცუდი" },
+      { en: "Fast", ka: "სწრაფი" }, { en: "Slow", ka: "ნელი" },
+      { en: "New", ka: "ახალი" }, { en: "Old", ka: "ძველი" },
+      { en: "Day", ka: "დღე" }, { en: "Night", ka: "ღამე" },
+      { en: "Morning", ka: "დილა" }, { en: "Evening", ka: "საღამო" },
+      { en: "Teacher", ka: "მასწავლებელი" }, { en: "Student", ka: "სტუდენტი" },
+      { en: "Question", ka: "კითხვა" }, { en: "Answer", ka: "პასუხი" },
+      { en: "Problem", ka: "პრობლემა" }, { en: "Story", ka: "ამბავი" },
+      { en: "Beautiful", ka: "ლამაზი" }, { en: "Strong", ka: "ძლიერი" },
+    ];
+
+    function shuffle(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    // Sound
+    let audioCtx = null;
+    function getCtx() {
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      return audioCtx;
+    }
+    function playCorrect() {
+      try { const c=getCtx(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);g.gain.setValueAtTime(0.15,c.currentTime);o.type='sine';o.frequency.setValueAtTime(523,c.currentTime);o.frequency.setValueAtTime(659,c.currentTime+0.1);g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.3);o.start(c.currentTime);o.stop(c.currentTime+0.35);} catch(e){}
+    }
+    function playWrong() {
+      try { const c=getCtx(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);g.gain.setValueAtTime(0.12,c.currentTime);o.type='sine';o.frequency.setValueAtTime(330,c.currentTime);o.frequency.setValueAtTime(262,c.currentTime+0.15);g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.25);o.start(c.currentTime);o.stop(c.currentTime+0.3);} catch(e){}
+    }
+
+    // ============ MATCH GAME ============
+    let matchScore = 0;
+    let timerSec = 0;
+    let timerInterval = null;
+    let selectedEn = null;
+    let selectedKa = null;
+    let matchedCount = 0;
+
+    function startMatch() {
+      matchScore = 0; timerSec = 0; matchedCount = 0;
+      selectedEn = null; selectedKa = null;
+      document.getElementById('score').textContent = '0';
+      document.getElementById('timer').textContent = '0';
+      document.getElementById('match-result').classList.add('hidden');
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        timerSec++;
+        document.getElementById('timer').textContent = timerSec;
+      }, 1000);
+
+      const round = shuffle(words).slice(0, 6);
+      const enShuffled = shuffle(round);
+      const kaShuffled = shuffle(round);
+
+      const enCol = document.getElementById('en-col');
+      const kaCol = document.getElementById('ka-col');
+      enCol.innerHTML = '';
+      kaCol.innerHTML = '';
+
+      enShuffled.forEach(w => {
+        const btn = document.createElement('button');
+        btn.className = 'w-full text-left px-4 py-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors font-medium text-sm';
+        btn.textContent = w.en;
+        btn.dataset.word = w.en;
+        btn.addEventListener('click', () => selectEn(btn, w.en));
+        enCol.appendChild(btn);
+      });
+
+      kaShuffled.forEach(w => {
+        const btn = document.createElement('button');
+        btn.className = 'w-full text-left px-4 py-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors font-medium text-sm';
+        btn.textContent = w.ka;
+        btn.dataset.word = w.en;
+        btn.addEventListener('click', () => selectKa(btn, w.en));
+        kaCol.appendChild(btn);
+      });
+    }
+
+    function selectEn(btn, word) {
+      document.querySelectorAll('#en-col button').forEach(b => b.classList.remove('ring-2', 'ring-[#22c55e]'));
+      btn.classList.add('ring-2', 'ring-[#22c55e]');
+      selectedEn = { btn, word };
+      checkMatch();
+    }
+
+    function selectKa(btn, word) {
+      document.querySelectorAll('#ka-col button').forEach(b => b.classList.remove('ring-2', 'ring-[#22c55e]'));
+      btn.classList.add('ring-2', 'ring-[#22c55e]');
+      selectedKa = { btn, word };
+      checkMatch();
+    }
+
+    function checkMatch() {
+      if (!selectedEn || !selectedKa) return;
+      if (selectedEn.word === selectedKa.word) {
+        playCorrect();
+        matchScore++;
+        matchedCount++;
+        document.getElementById('score').textContent = matchScore;
+        selectedEn.btn.classList.add('bg-green-500/20', 'border-green-500', 'pointer-events-none', 'opacity-50');
+        selectedKa.btn.classList.add('bg-green-500/20', 'border-green-500', 'pointer-events-none', 'opacity-50');
+        if (matchedCount >= 6) {
+          clearInterval(timerInterval);
+          const result = document.getElementById('match-result');
+          result.classList.remove('hidden');
+          result.innerHTML = `<p class="text-2xl font-bold text-[#22c55e]">🎉 შესანიშნავი!</p><p class="text-[#94a3b8]">${timerSec} წამში დაასრულე!</p>`;
+        }
+      } else {
+        playWrong();
+        selectedEn.btn.classList.add('bg-red-500/20');
+        selectedKa.btn.classList.add('bg-red-500/20');
+        setTimeout(() => {
+          selectedEn.btn.classList.remove('bg-red-500/20', 'ring-2', 'ring-[#22c55e]');
+          selectedKa.btn.classList.remove('bg-red-500/20', 'ring-2', 'ring-[#22c55e]');
+          selectedEn = null; selectedKa = null;
+        }, 500);
+        return;
+      }
+      selectedEn = null; selectedKa = null;
+    }
+
+    document.getElementById('new-round').addEventListener('click', startMatch);
+    startMatch();
+
+    // ============ SCRAMBLE GAME ============
+    let scrambleWord = null;
+    let scrambleAnswer = [];
+    let scrambleScoreVal = 0;
+
+    function newScramble() {
+      scrambleAnswer = [];
+      scrambleWord = words[Math.floor(Math.random() * words.length)];
+      document.getElementById('scramble-ka').textContent = scrambleWord.ka;
+      document.getElementById('scramble-feedback').innerHTML = '';
+      renderScramble();
+    }
+
+    function renderScramble() {
+      const letters = shuffle(scrambleWord.en.toUpperCase().split(''));
+      const remaining = [...letters];
+      // Remove letters already picked
+      scrambleAnswer.forEach(l => {
+        const idx = remaining.indexOf(l);
+        if (idx !== -1) remaining.splice(idx, 1);
+      });
+
+      const lettersDiv = document.getElementById('scramble-letters');
+      lettersDiv.innerHTML = '';
+      shuffle(scrambleWord.en.toUpperCase().split('')).forEach((l, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'w-10 h-10 rounded-lg bg-white/10 hover:bg-[#22c55e]/30 font-bold text-lg transition-colors flex items-center justify-center';
+        if (l === ' ') { btn.textContent = '⎵'; btn.dataset.letter = ' '; }
+        else { btn.textContent = l; btn.dataset.letter = l; }
+        const isUsed = scrambleAnswer.filter(a => a === l).length > 
+          scrambleWord.en.toUpperCase().split('').filter((x,j) => j >= i).filter(x => x === l).length;
+        btn.addEventListener('click', () => {
+          scrambleAnswer.push(l);
+          renderInput();
+          btn.classList.add('opacity-30', 'pointer-events-none');
+        });
+        lettersDiv.appendChild(btn);
+      });
+
+      renderInput();
+    }
+
+    function renderInput() {
+      const inputDiv = document.getElementById('scramble-input');
+      inputDiv.innerHTML = '';
+      scrambleAnswer.forEach((l, i) => {
+        const span = document.createElement('span');
+        span.className = 'w-8 h-10 rounded bg-[#22c55e]/20 border border-[#22c55e]/30 flex items-center justify-center font-bold';
+        span.textContent = l === ' ' ? '⎵' : l;
+        inputDiv.appendChild(span);
+      });
+      // Empty slots
+      for (let i = scrambleAnswer.length; i < scrambleWord.en.length; i++) {
+        const span = document.createElement('span');
+        span.className = 'w-8 h-10 rounded bg-white/5 border border-white/10 flex items-center justify-center';
+        span.textContent = '_';
+        inputDiv.appendChild(span);
+      }
+    }
+
+    document.getElementById('scramble-clear').addEventListener('click', () => {
+      scrambleAnswer = [];
+      renderScramble();
+    });
+
+    document.getElementById('scramble-check').addEventListener('click', () => {
+      const guess = scrambleAnswer.join('');
+      if (guess === scrambleWord.en.toUpperCase()) {
+        playCorrect();
+        scrambleScoreVal++;
+        document.getElementById('scramble-score').textContent = scrambleScoreVal;
+        document.getElementById('scramble-feedback').innerHTML = '<p class="text-green-400 font-bold">✅ სწორია!</p>';
+        setTimeout(newScramble, 1000);
+      } else {
+        playWrong();
+        document.getElementById('scramble-feedback').innerHTML = '<p class="text-red-400 font-bold">❌ სცადე თავიდან!</p>';
+      }
+    });
+
+    document.getElementById('scramble-skip').addEventListener('click', () => {
+      document.getElementById('scramble-feedback').innerHTML = `<p class="text-amber-400">პასუხი: <strong>${scrambleWord.en}</strong></p>`;
+      setTimeout(newScramble, 1500);
+    });
+
+    newScramble();
+
+    // ============ SPEED QUIZ ============
+    let speedScore = 0;
+    let speedTimeLeft = 30;
+    let speedInterval = null;
+
+    document.getElementById('speed-go').addEventListener('click', startSpeed);
+    document.getElementById('speed-retry').addEventListener('click', startSpeed);
+
+    function startSpeed() {
+      speedScore = 0; speedTimeLeft = 30;
+      document.getElementById('speed-score').textContent = '0';
+      document.getElementById('speed-timer').textContent = '30';
+      document.getElementById('speed-start').classList.add('hidden');
+      document.getElementById('speed-result').classList.add('hidden');
+      document.getElementById('speed-play').classList.remove('hidden');
+      
+      if (speedInterval) clearInterval(speedInterval);
+      speedInterval = setInterval(() => {
+        speedTimeLeft--;
+        document.getElementById('speed-timer').textContent = speedTimeLeft;
+        if (speedTimeLeft <= 0) {
+          clearInterval(speedInterval);
+          endSpeed();
+        }
+      }, 1000);
+
+      nextSpeedWord();
+    }
+
+    function nextSpeedWord() {
+      const correct = words[Math.floor(Math.random() * words.length)];
+      const wrongs = shuffle(words.filter(w => w.en !== correct.en)).slice(0, 3);
+      const options = shuffle([correct, ...wrongs]);
+
+      document.getElementById('speed-en').textContent = correct.en;
+      const optDiv = document.getElementById('speed-options');
+      optDiv.innerHTML = '';
+      
+      options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'px-4 py-3 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition-colors font-medium text-sm';
+        btn.textContent = opt.ka;
+        btn.addEventListener('click', () => {
+          if (opt.en === correct.en) {
+            playCorrect();
+            speedScore++;
+            document.getElementById('speed-score').textContent = speedScore;
+          } else {
+            playWrong();
+          }
+          nextSpeedWord();
+        });
+        optDiv.appendChild(btn);
+      });
+    }
+
+    function endSpeed() {
+      document.getElementById('speed-play').classList.add('hidden');
+      document.getElementById('speed-result').classList.remove('hidden');
+      document.getElementById('speed-final').textContent = `${speedScore} სიტყვა`;
+      const emoji = speedScore >= 15 ? '🏆' : speedScore >= 10 ? '🎉' : speedScore >= 5 ? '👍' : '💪';
+      const msg = speedScore >= 15 ? 'წარმოუდგენელია! შენ ჩემპიონი ხარ!' : speedScore >= 10 ? 'შესანიშნავი შედეგი!' : speedScore >= 5 ? 'კარგია, კიდევ სცადე!' : 'არ დანებდე, ივარჯიშე!';
+      document.getElementById('speed-emoji').textContent = emoji;
+      document.getElementById('speed-msg').textContent = msg;
+    }
+  </script>
+</Layout>

@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { sm2 } from '../lib/sm2';
 import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
+import { playCorrect, playWrong } from '../lib/sounds';
 
 function speak(text: string) {
   if (!('speechSynthesis' in window)) return;
@@ -41,6 +42,7 @@ export default function StudyScreen({ deck, onBack }: Props) {
     const id = getCardId(card);
     const progress = getCardProgress(id);
     const isCorrect = quality >= 3;
+    if (isCorrect) playCorrect(); else playWrong();
     const updated = sm2(progress, quality);
     saveCardProgress(updated);
     updateStats(isCorrect);

@@ -1,5 +1,24 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Deck, FlashCard } from '../lib/cards';
+import { playCorrect, playWrong } from '../lib/sounds';
+
+// Soft tap sound when placing a word
+function playTap() {
+  try {
+    const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+    if (ctx.state === 'suspended') ctx.resume();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    gain.gain.setValueAtTime(0.08, ctx.currentTime);
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(800, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.1);
+  } catch {}
+}
 
 interface Props {
   deck: Deck;
@@ -49,6 +68,7 @@ export default function SentenceBuilder({ deck, onBack }: Props) {
 
   const handleSelectWord = useCallback((wordIndex: number) => {
     if (checked) return;
+    playTap();
     setSelectedWords(prev => [...prev, wordIndex]);
   }, [checked]);
 
@@ -64,7 +84,7 @@ export default function SentenceBuilder({ deck, onBack }: Props) {
     setIsCorrect(result);
     setChecked(true);
     setTotal(prev => prev + 1);
-    if (result) setScore(prev => prev + 1);
+    if (result) { setScore(prev => prev + 1); playCorrect(); } else { playWrong(); }
   };
 
   const handleNext = () => {

@@ -32,9 +32,17 @@
 - [x] PWA setup ✅ (Feb 18) — manifest, service worker, icons, apple-mobile-web-app tags
 - [x] Generate 591 words across 9 categories ✅ (exceeds 200 target!)
 - [x] Wire all 9 decks into flashcard app ✅ (Feb 18) — was only 2 decks before
-- [x] Added Politics & Society deck (50 B2 words) ✅ (Feb 18) — now 1010+ words across 16 decks!
+- [x] Added Politics & Society deck (50 B2 words) ✅ (Feb 18)
 - [x] **1000+ word milestone reached!** 🎉
+- [x] Added Sports & Fitness deck (50 words) ✅ (Feb 18)
+- [x] Added Sentence Builder mode (4th study mode) ✅ (Feb 18)
+- [x] **BIG EXPANSION (Feb 18 noon):**
+  - [x] 41 flashcard decks in app (was 35) — added Daily Routines, Directions & Places, Common Verbs, Science & Math, Religion & Culture, Gardening & Plants
+  - [x] 31 word-list JSON files in content/word-lists/ (1780+ words total)
+  - [x] **21 podcast episodes generated!** (was 6) — Episodes 1-21 all have MP3 files
+  - [x] Podcast topics: Airport, Restaurant, Job Interview, Hotel, Shopping, Doctor, Making Friends, Directions, Phone, Bank, Apartment, Gym, Emergency, Supermarket, Plans, School, Cooking, Mechanic, Birthday, Travel
+  - [x] App rebuilt and deploying to surge.sh
 
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
-## Phase 4: Podcast & Premium — Not started
+## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

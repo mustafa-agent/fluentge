@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Deck, FlashCard } from '../lib/cards';
+import { playCorrect, playWrong } from '../lib/sounds';
 
 interface Props {
   deck: Deck;
@@ -53,9 +54,14 @@ export default function SpellingScreen({ deck, onBack }: Props) {
     e.preventDefault();
     if (result) return;
 
-    const correct = input.trim().toLowerCase() === card.english.toLowerCase();
-    setResult(correct ? 'correct' : 'wrong');
-    if (correct) setScore(s => s + 1);
+    const isCorrect = input.trim().toLowerCase() === card.english.toLowerCase();
+    setResult(isCorrect ? 'correct' : 'wrong');
+    if (isCorrect) {
+      setScore(s => s + 1);
+      playCorrect();
+    } else {
+      playWrong();
+    }
     speak(card.english);
   }
 

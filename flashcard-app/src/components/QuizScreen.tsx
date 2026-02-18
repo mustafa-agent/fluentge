@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { updateStats, incrementWordsLearned } from '../lib/storage';
+import { playCorrect, playWrong } from '../lib/sounds';
 
 interface Props {
   deck: Deck;
@@ -52,7 +53,12 @@ export default function QuizScreen({ deck, allCards, onBack }: Props) {
     if (selected !== null) return; // already answered
     setSelected(idx);
     const isCorrect = q.options[idx].correct;
-    if (isCorrect) setCorrect(c => c + 1);
+    if (isCorrect) {
+      setCorrect(c => c + 1);
+      playCorrect();
+    } else {
+      playWrong();
+    }
     updateStats(isCorrect);
 
     setTimeout(() => {
