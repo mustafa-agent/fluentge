@@ -58,6 +58,16 @@
 - [x] All 3 features built, integrated into App.tsx & DeckSelect.tsx, deployed
 - **App now has 14 learning modes!** Flashcards, Quiz, Spelling, Sentence Builder, Match, Speed, Scramble, Fill Blank, Achievements, Progress, Reverse, Conversation, Reading + Daily Word
 
+### 10:00 PM Session — Grammar Exercises!
+- [x] 🏋️ **Grammar Exercises** — 10 interactive lessons with theory (EN+KA) and 50 quiz questions
+  - Articles (A/An/The), To Be (Am/Is/Are), Simple Present, Simple Past
+  - Personal Pronouns, Comparatives & Superlatives, Prepositions (In/On/At)
+  - Present Continuous, Can & Could, Future (Will & Going to)
+  - Each lesson: read theory → answer 5 questions → get score
+- [x] Built, integrated, committed to git
+- [ ] Surge deploy timing out (11.8 MB too large) — need to optimize or use Cloudflare
+- **App now has 15 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

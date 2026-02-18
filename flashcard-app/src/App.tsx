@@ -16,9 +16,11 @@ import ReverseMode from './components/ReverseMode';
 import ConversationPractice from './components/ConversationPractice';
 import ReadingComprehension from './components/ReadingComprehension';
 import GrammarExercises from './components/GrammarExercises';
+import HangmanGame from './components/HangmanGame';
+import ListeningPractice from './components/ListeningPractice';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -90,7 +92,21 @@ export default function App() {
                 <div className="text-xs">გრამატიკა</div>
               </button>
             </div>
-            <div className="grid grid-cols-2 gap-3 mt-3">
+            <div className="grid grid-cols-4 gap-3 mt-3">
+              <button
+                onClick={() => setScreen('hangman')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🎯</div>
+                <div className="text-xs">ჰენგმენი</div>
+              </button>
+              <button
+                onClick={() => setScreen('listening')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🎧</div>
+                <div className="text-xs">მოსმენა</div>
+              </button>
               <button
                 onClick={() => setScreen('achievements')}
                 className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
@@ -165,6 +181,14 @@ export default function App() {
 
       {screen === 'grammar' && (
         <GrammarExercises onBack={handleBack} />
+      )}
+
+      {screen === 'hangman' && (
+        <HangmanGame onBack={handleBack} />
+      )}
+
+      {screen === 'listening' && (
+        <ListeningPractice onBack={handleBack} />
       )}
     </div>
   );
