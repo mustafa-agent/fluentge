@@ -21,6 +21,8 @@
 13. **🎪 Word Scramble** — Unscramble jumbled English letters to form the word
 14. **⏱️ Speed Round** — How many cards can you get right in 60 seconds?
 15. **🔄 Reverse Mode** — See Georgian first, guess English ✅ BUILT (Feb 18)
+25. **🎯 Hangman** — Classic word guessing game with SVG drawing ✅ BUILT (Feb 19)
+26. **🎧 Listening Practice** — Hear English word via TTS, type what you hear ✅ BUILT (Feb 19)
 
 ### Medium Effort (3-5 hours)
 

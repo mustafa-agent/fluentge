@@ -65,8 +65,15 @@
   - Present Continuous, Can & Could, Future (Will & Going to)
   - Each lesson: read theory → answer 5 questions → get score
 - [x] Built, integrated, committed to git
-- [ ] Surge deploy timing out (11.8 MB too large) — need to optimize or use Cloudflare
+- [ ] Surge deploy timing out with podcasts (11.8 MB) — deploying without MP3s for now (2MB)
 - **App now has 15 learning modes!**
+
+### 12:00 AM Session (Feb 19) — 2 New Fun Features!
+- [x] 🎯 **Hangman Game** — Classic word guessing with SVG hangman, keyboard/tap input, Georgian hints, score tracking
+- [x] 🎧 **Listening Practice** — Browser TTS speaks English words, user types what they hear, Georgian hints, 20-word sessions
+- [x] Deployed to fluentge.surge.sh ✅ (without podcast MP3s)
+- [x] Git committed
+- **App now has 17 learning modes!**
 
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
