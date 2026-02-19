@@ -24,11 +24,11 @@ const { title } = Astro.props;
   </head>
   <body class="bg-[#1C1C1E] text-[#F5F5F0] font-[Inter,system-ui,sans-serif] min-h-screen">
     <nav class="fixed top-0 w-full z-50 bg-[#1C1C1E]/95 backdrop-blur-md border-b border-[#2E2E30]">
-      <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" class="font-['Playfair_Display',serif] text-xl sm:text-2xl tracking-tight">
+      <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-6">
+        <a href="/" class="font-['Playfair_Display',serif] text-xl sm:text-2xl tracking-tight flex-shrink-0">
           <span class="text-[#C8C8C0]">Fluent</span><span class="text-white">Ge</span>
         </a>
-        <div class="hidden md:flex items-center gap-6 text-sm text-[#A0A09A]">
+        <div class="hidden lg:flex items-center gap-5 text-sm text-[#A0A09A]">
           <a href="/" class="hover:text-white transition-colors">მთავარი</a>
           <a href="/flashcards/" class="hover:text-white transition-colors">ბარათები</a>
           <a href="/grammar/" class="hover:text-white transition-colors">გრამატიკა</a>
@@ -36,13 +36,13 @@ const { title } = Astro.props;
           <a href="/games/" class="hover:text-white transition-colors">თამაშები</a>
           <a href="/podcast/" class="hover:text-white transition-colors">პოდკასტი</a>
           <a href="/about/" class="hover:text-white transition-colors">შესახებ</a>
-          <a href="/register/" class="bg-white text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">დაწყება</a>
+          <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">პრემიუმი</a>
         </div>
-        <button id="menu-toggle" class="md:hidden text-white p-1" aria-label="მენიუ">
+        <button id="menu-toggle" class="lg:hidden text-white p-1" aria-label="მენიუ">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden border-t border-[#2E2E30] bg-[#1C1C1E]/98">
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-[#2E2E30] bg-[#1C1C1E]/98">
         <div class="flex flex-col px-4 py-3 gap-3 text-sm text-[#A0A09A]">
           <a href="/" class="hover:text-white py-1">მთავარი</a>
           <a href="/flashcards/" class="hover:text-white py-1">ბარათები</a>
@@ -51,7 +51,7 @@ const { title } = Astro.props;
           <a href="/games/" class="hover:text-white py-1">თამაშები</a>
           <a href="/podcast/" class="hover:text-white py-1">პოდკასტი</a>
           <a href="/about/" class="hover:text-white py-1">შესახებ</a>
-          <a href="/register/" class="bg-white text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">დაწყება</a>
+          <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>
         </div>
       </div>
     </nav>

@@ -136,14 +136,20 @@ const categories = [
 ---
 
 <Layout title="💬 სასარგებლო ფრაზები — FluentGe">
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1543165796-5426273eaab3?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-30"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/60 to-[#1C1C1E]"></div>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-4 pt-24 pb-16 text-center">
+      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">ფრაზები</h1>
+      <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto">ყოველდღიური ინგლისური ფრაზები</p>
+    </div>
+  </section>
+
   <section class="max-w-4xl mx-auto px-4 py-16">
     <div class="text-center mb-12">
-      <div class="text-6xl mb-4">💬</div>
-      <h1 class="text-4xl font-bold mb-3">სასარგებლო ფრაზები</h1>
-      <p class="text-[#6B6B65] text-lg max-w-lg mx-auto">
-        ყოველდღიური ფრაზები რეალური სიტუაციებისთვის. დაიმახსოვრე და გამოიყენე!
-      </p>
-      <p class="text-[#6B6B65] text-sm mt-2">{categories.reduce((sum, c) => sum + c.phrases.length, 0)} ფრაზა · {categories.length} კატეგორია</p>
+      <p class="text-[#6B6B65] text-sm">{categories.reduce((sum, c) => sum + c.phrases.length, 0)} ფრაზა · {categories.length} კატეგორია</p>
     </div>
 
     <div class="space-y-8">

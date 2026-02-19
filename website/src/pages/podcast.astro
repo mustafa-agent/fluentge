@@ -100,14 +100,20 @@ const episodes = [
 ---
 
 <Layout title="🎧 პოდკასტი — FluentGe">
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-30"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/60 to-[#1C1C1E]"></div>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-4 pt-24 pb-16 text-center">
+      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">პოდკასტი</h1>
+      <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto">მოუსმინე და ისწავლე ინგლისური</p>
+    </div>
+  </section>
+
   <section class="max-w-4xl mx-auto px-4 py-16">
     <div class="text-center mb-12">
-      <div class="text-6xl mb-4">🎧</div>
-      <h1 class="text-4xl font-bold mb-3">FluentGe Podcast</h1>
-      <p class="text-[#6B6B65] text-lg max-w-lg mx-auto">
-        მოისმინე რეალური დიალოგები ინგლისურად. ისწავლე ყველგან — მანქანაში, გზაში, სპორტდარბაზში.
-      </p>
-      <p class="text-[#6B6B65] text-sm mt-2">{episodes.length} ეპიზოდი · 3 უფასო</p>
+      <p class="text-[#6B6B65] text-sm">{episodes.length} ეპიზოდი · 3 უფასო</p>
     </div>
 
     <div class="space-y-6">
@@ -174,7 +180,7 @@ const episodes = [
                 )}
               </div>
             ) : (
-              <a href="/register/" class="block bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-4 text-center hover:border-amber-500/40 transition-all">
+              <a href="/premium/" class="block bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-4 text-center hover:border-amber-500/40 transition-all">
                 <span class="text-2xl">🔒</span>
                 <p class="text-amber-400 font-medium mt-1">გახსენი პრემიუმით</p>
                 <p class="text-xs text-[#6B6B65] mt-1">თვეში 9.99 ₾</p>
@@ -188,7 +194,7 @@ const episodes = [
     <div class="mt-12 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
       <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა ეპიზოდი</h3>
       <p class="text-[#6B6B65] mb-6">21 პოდკასტი, 2400+ სიტყვა, 38 გრამატიკის გაკვეთილი</p>
-      <a href="/register/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
+      <a href="/premium/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
         🚀 დაიწყე პრემიუმი
       </a>
     </div>

@@ -38,9 +38,11 @@ import MovieQuotes from './components/MovieQuotes';
 import TravelPhrases from './components/TravelPhrases';
 import DailyChallenge from './components/DailyChallenge';
 import WordConnections from './components/WordConnections';
+import WordLadder from './components/WordLadder';
+import SpellingBee from './components/SpellingBee';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee';
 const allCards = decks.flatMap(d => d.cards);
 
 export default function App() {
@@ -60,8 +62,8 @@ export default function App() {
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
       {/* Header */}
       <header className="px-4 py-4 border-b border-white/10">
-        <div className="max-w-lg mx-auto flex items-center justify-between">
-          <h1 className="text-xl font-bold">
+        <div className="max-w-lg mx-auto flex items-center justify-between gap-6">
+          <h1 className="text-xl font-bold flex-shrink-0">
             <span className="text-[var(--color-primary)]">Fluent</span>Ge
             <span className="text-sm ml-2">📝</span>
           </h1>
@@ -75,6 +77,17 @@ export default function App() {
 
       {screen === 'home' && (
         <>
+          {/* Hero */}
+          <div className="relative overflow-hidden">
+            <div className="absolute inset-0">
+              <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=1400&q=80" alt="" className="w-full h-full object-cover opacity-30" />
+              <div className="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/80 to-[#1C1C1E]"></div>
+            </div>
+            <div className="relative text-center pt-20 pb-16 sm:pt-24 sm:pb-20 px-4">
+              <h2 style={{fontFamily: "'Playfair Display', serif"}} className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight">ფლეშქარდები</h2>
+              <p className="text-base sm:text-lg text-[#A0A09A]">ისწავლე ახალი სიტყვები ყოველდღე</p>
+            </div>
+          </div>
           <StatsBar />
           <DailyWord />
           {/* Daily features at top */}
@@ -89,6 +102,16 @@ export default function App() {
                 <div className="text-2xl mb-1">🔗</div>
                 <div className="font-bold text-sm">კავშირები</div>
                 <div className="text-xs text-[var(--color-text-muted)]">Word Connections</div>
+              </button>
+              <button onClick={() => setScreen('wordladder')} className="bg-gradient-to-br from-green-500/20 to-teal-500/20 border border-green-500/20 rounded-2xl p-4 text-left hover:border-green-500/40 transition-colors">
+                <div className="text-2xl mb-1">🪜</div>
+                <div className="font-bold text-sm">სიტყვის კიბე</div>
+                <div className="text-xs text-[var(--color-text-muted)]">Word Ladder</div>
+              </button>
+              <button onClick={() => setScreen('spellingbee')} className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/20 rounded-2xl p-4 text-left hover:border-amber-500/40 transition-colors">
+                <div className="text-2xl mb-1">🐝</div>
+                <div className="font-bold text-sm">სპელინგ ბი</div>
+                <div className="text-xs text-[var(--color-text-muted)]">Spelling Bee</div>
               </button>
             </div>
           </div>
@@ -132,6 +155,8 @@ export default function App() {
       {screen === 'travelphrases' && <TravelPhrases onBack={handleBack} />}
       {screen === 'dailychallenge' && <DailyChallenge onBack={handleBack} />}
       {screen === 'connections' && <WordConnections onBack={handleBack} />}
+      {screen === 'wordladder' && <WordLadder onBack={handleBack} />}
+      {screen === 'spellingbee' && <SpellingBee onBack={handleBack} />}
     </div>
   );
 }
