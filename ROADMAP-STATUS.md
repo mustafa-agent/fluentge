@@ -130,6 +130,14 @@
 - [x] Git committed
 - **App now has 35 learning modes!**
 
+### 8:00 PM Session (Feb 19) — 2 New Features!
+- [x] 🎯 **Daily Challenge** — 7 mixed daily tasks (translate, spell, unscramble, true/false, fill blank), new puzzle every day, streak tracking with localStorage
+- [x] 🔗 **Word Connections** — NYT Connections-style game: 16 words in a 4×4 grid, find 4 groups of 4 related words, 6 puzzles with daily rotation, shake animation on wrong guess, 4 mistakes max
+- [x] Both featured prominently on home screen with gradient cards
+- [x] Deployed to fluentge.surge.sh ✅ (without podcast MP3s)
+- [x] Git committed
+- **App now has 37 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

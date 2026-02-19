@@ -55,6 +55,9 @@
 42. **🎬 Movie Quotes** — 12 famous movie quotes, browse + quiz, Georgian translations ✅ BUILT (Feb 19)
 43. **🗺️ Travel Phrases** — 48 phrases across 8 situations, TTS, pronunciation, quiz ✅ BUILT (Feb 19)
 
+44. **🎯 Daily Challenge** — 7 mixed tasks daily (translate, spell, unscramble, true/false, fill blank), streak tracking, new puzzle each day ✅ BUILT (Feb 19)
+45. **🔗 Word Connections** — NYT Connections-style: find 4 groups of 4 words, 6 puzzles, daily rotation, mistake tracking ✅ BUILT (Feb 19)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections
