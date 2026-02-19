@@ -22,9 +22,11 @@ import WordCategories from './components/WordCategories';
 import TongueTwisters from './components/TongueTwisters';
 import IdiomsPhrases from './components/IdiomsPhrases';
 import MiniCrossword from './components/MiniCrossword';
+import WordSnake from './components/WordSnake';
+import StoryBuilder from './components/StoryBuilder';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -156,6 +158,22 @@ export default function App() {
                 <div className="text-xs">კროსვორდი</div>
               </button>
             </div>
+            <div className="grid grid-cols-4 gap-3 mt-3">
+              <button
+                onClick={() => setScreen('snake')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🐍</div>
+                <div className="text-xs">სიტყვის გველი</div>
+              </button>
+              <button
+                onClick={() => setScreen('storybuilder')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">📝</div>
+                <div className="text-xs">ამბის შემქმნელი</div>
+              </button>
+            </div>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
         </>
@@ -239,6 +257,14 @@ export default function App() {
 
       {screen === 'crossword' && (
         <MiniCrossword onBack={handleBack} />
+      )}
+
+      {screen === 'snake' && (
+        <WordSnake onBack={handleBack} />
+      )}
+
+      {screen === 'storybuilder' && (
+        <StoryBuilder onBack={handleBack} />
       )}
     </div>
   );
