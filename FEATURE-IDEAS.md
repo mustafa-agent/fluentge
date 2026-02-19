@@ -31,6 +31,8 @@
 
 32. **✅ True or False** — 20 English grammar/vocab statements, answer true/false with explanations ✅ BUILT (Feb 19)
 33. **🔊 Pronunciation Guide** — Vowels, consonants, word stress, silent letters with TTS and Georgian tips ✅ BUILT (Feb 19)
+34. **🎵 Song Lyrics** — Fill gaps in famous song lyrics (6 songs), learn vocabulary through music ✅ BUILT (Feb 19)
+35. **🎲 Word Bingo** — 4×4 bingo grid, hear Georgian → find English word, row/col/diagonal wins ✅ BUILT (Feb 19)
 
 ### Medium Effort (3-5 hours)
 

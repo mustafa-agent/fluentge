@@ -102,6 +102,13 @@
 - [x] Git committed
 - **App now has 25 learning modes!**
 
+### 10:00 AM Session (Feb 19) — 2 More Features!
+- [x] 🎵 **Song Lyrics** — Fill-in-the-blank with famous song lyrics (6 songs: Imagine, Let It Be, Happy, Shape of You, Yesterday, Count On Me), Georgian translations, multiple choice gaps
+- [x] 🎲 **Word Bingo** — 4×4 bingo grid with vocabulary words, hear Georgian → find English, row/column/diagonal wins
+- [x] Deployed to fluentge.surge.sh ✅ (without podcast MP3s)
+- [x] Git committed
+- **App now has 27 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

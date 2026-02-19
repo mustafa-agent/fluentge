@@ -28,9 +28,11 @@ import TrueOrFalse from './components/TrueOrFalse';
 import PronunciationGuide from './components/PronunciationGuide';
 import SongLyrics from './components/SongLyrics';
 import WordBingo from './components/WordBingo';
+import EmojiQuiz from './components/EmojiQuiz';
+import WordPairs from './components/WordPairs';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -207,6 +209,20 @@ export default function App() {
                 <div className="text-2xl mb-1">🎲</div>
                 <div className="text-xs">ბინგო</div>
               </button>
+              <button
+                onClick={() => setScreen('emojiquiz')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🎭</div>
+                <div className="text-xs">ემოჯი ქვიზი</div>
+              </button>
+              <button
+                onClick={() => setScreen('wordpairs')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🔗</div>
+                <div className="text-xs">წყვილები</div>
+              </button>
             </div>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
@@ -315,6 +331,14 @@ export default function App() {
 
       {screen === 'bingo' && (
         <WordBingo onBack={handleBack} />
+      )}
+
+      {screen === 'emojiquiz' && (
+        <EmojiQuiz onBack={handleBack} />
+      )}
+
+      {screen === 'wordpairs' && (
+        <WordPairs onBack={handleBack} />
       )}
     </div>
   );
