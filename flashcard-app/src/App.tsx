@@ -20,9 +20,11 @@ import HangmanGame from './components/HangmanGame';
 import ListeningPractice from './components/ListeningPractice';
 import WordCategories from './components/WordCategories';
 import TongueTwisters from './components/TongueTwisters';
+import IdiomsPhrases from './components/IdiomsPhrases';
+import MiniCrossword from './components/MiniCrossword';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -139,6 +141,20 @@ export default function App() {
                 <div className="text-2xl mb-1">👅</div>
                 <div className="text-xs">ენის გასატეხი</div>
               </button>
+              <button
+                onClick={() => setScreen('idioms')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🗣️</div>
+                <div className="text-xs">იდიომები</div>
+              </button>
+              <button
+                onClick={() => setScreen('crossword')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🧩</div>
+                <div className="text-xs">კროსვორდი</div>
+              </button>
             </div>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
@@ -215,6 +231,14 @@ export default function App() {
 
       {screen === 'twisters' && (
         <TongueTwisters onBack={handleBack} />
+      )}
+
+      {screen === 'idioms' && (
+        <IdiomsPhrases onBack={handleBack} />
+      )}
+
+      {screen === 'crossword' && (
+        <MiniCrossword onBack={handleBack} />
       )}
     </div>
   );

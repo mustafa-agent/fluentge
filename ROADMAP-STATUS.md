@@ -75,6 +75,19 @@
 - [x] Git committed
 - **App now has 17 learning modes!**
 
+### 2:00 AM Session (Feb 19) — 2 More Features!
+- [x] 🗂️ **Word Categories** — Sort 9 words into 3 random category buckets, score tracking, multiple rounds
+- [x] 👅 **Tongue Twisters** — 12 English tongue twisters with Georgian translations, TTS at 3 speeds (slow/normal/fast), pronunciation tips per twister
+- [x] Deployed to fluentge.surge.sh ✅ (without podcast MP3s)
+- [x] Git committed
+- **App now has 19 learning modes!**
+
+### 4:00 AM Session (Feb 19) — 2 More Features!
+- [x] 🗣️ **Idioms & Phrases** — 24 common English idioms with Georgian translations, examples, browse mode + 10-question quiz mode
+- [x] 🧩 **Mini Crossword** — Auto-generated crossword puzzles from vocabulary words, Georgian clues, reveal button, numbered cells
+- [x] Deployed to fluentge.surge.sh ✅
+- **App now has 21 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

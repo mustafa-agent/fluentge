@@ -23,6 +23,11 @@
 15. **🔄 Reverse Mode** — See Georgian first, guess English ✅ BUILT (Feb 18)
 25. **🎯 Hangman** — Classic word guessing game with SVG drawing ✅ BUILT (Feb 19)
 26. **🎧 Listening Practice** — Hear English word via TTS, type what you hear ✅ BUILT (Feb 19)
+27. **🗂️ Word Categories** — Sort 9 words into 3 categories, tests vocabulary grouping ✅ BUILT (Feb 19)
+28. **👅 Tongue Twisters** — 12 English tongue twisters with Georgian translations, TTS playback at 3 speeds, pronunciation tips ✅ BUILT (Feb 19)
+
+29. **🗣️ Idioms & Phrases** — 24 common English idioms with Georgian translations, examples, browse + quiz mode ✅ BUILT (Feb 19)
+30. **🧩 Mini Crossword** — Auto-generated crossword puzzles from vocabulary, Georgian clues, reveal option ✅ BUILT (Feb 19)
 
 ### Medium Effort (3-5 hours)
 
