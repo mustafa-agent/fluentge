@@ -95,6 +95,13 @@
 - [x] Git committed
 - **App now has 23 learning modes!**
 
+### 8:00 AM Session (Feb 19) — 2 More Features!
+- [x] ✅ **True or False** — 20 English grammar/vocabulary statements, answer true or false, Georgian explanations, score tracking, 10 random per session
+- [x] 🔊 **Pronunciation Guide** — 4 sections (vowels, consonants, word stress, silent letters), 20 sound entries, TTS playback for examples, Georgian tips for each sound
+- [x] Deployed to fluentge.surge.sh ✅
+- [x] Git committed
+- **App now has 25 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

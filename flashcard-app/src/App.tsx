@@ -26,9 +26,11 @@ import WordSnake from './components/WordSnake';
 import StoryBuilder from './components/StoryBuilder';
 import TrueOrFalse from './components/TrueOrFalse';
 import PronunciationGuide from './components/PronunciationGuide';
+import SongLyrics from './components/SongLyrics';
+import WordBingo from './components/WordBingo';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -190,6 +192,22 @@ export default function App() {
                 <div className="text-xs">წარმოთქმა</div>
               </button>
             </div>
+            <div className="grid grid-cols-4 gap-3 mt-3">
+              <button
+                onClick={() => setScreen('songlyrics')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🎵</div>
+                <div className="text-xs">სიმღერები</div>
+              </button>
+              <button
+                onClick={() => setScreen('bingo')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🎲</div>
+                <div className="text-xs">ბინგო</div>
+              </button>
+            </div>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
         </>
@@ -289,6 +307,14 @@ export default function App() {
 
       {screen === 'pronunciation' && (
         <PronunciationGuide onBack={handleBack} />
+      )}
+
+      {screen === 'songlyrics' && (
+        <SongLyrics onBack={handleBack} />
+      )}
+
+      {screen === 'bingo' && (
+        <WordBingo onBack={handleBack} />
       )}
     </div>
   );

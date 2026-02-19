@@ -29,6 +29,9 @@
 29. **🗣️ Idioms & Phrases** — 24 common English idioms with Georgian translations, examples, browse + quiz mode ✅ BUILT (Feb 19)
 30. **🧩 Mini Crossword** — Auto-generated crossword puzzles from vocabulary, Georgian clues, reveal option ✅ BUILT (Feb 19)
 
+32. **✅ True or False** — 20 English grammar/vocab statements, answer true/false with explanations ✅ BUILT (Feb 19)
+33. **🔊 Pronunciation Guide** — Vowels, consonants, word stress, silent letters with TTS and Georgian tips ✅ BUILT (Feb 19)
+
 ### Medium Effort (3-5 hours)
 
 16. **💬 Conversation Practice** — Interactive dialogues (restaurant, airport, etc.) ✅ BUILT (Feb 18)
