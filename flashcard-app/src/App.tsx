@@ -40,9 +40,11 @@ import DailyChallenge from './components/DailyChallenge';
 import WordConnections from './components/WordConnections';
 import WordLadder from './components/WordLadder';
 import SpellingBee from './components/SpellingBee';
+import WordleGame from './components/WordleGame';
+import SynonymAntonym from './components/SynonymAntonym';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee' | 'wordle' | 'synonymantonym';
 const allCards = decks.flatMap(d => d.cards);
 
 export default function App() {
@@ -113,6 +115,16 @@ export default function App() {
                 <div className="font-bold text-sm">სპელინგ ბი</div>
                 <div className="text-xs text-[var(--color-text-muted)]">Spelling Bee</div>
               </button>
+              <button onClick={() => setScreen('wordle')} className="bg-gradient-to-br from-emerald-500/20 to-green-500/20 border border-emerald-500/20 rounded-2xl p-4 text-left hover:border-emerald-500/40 transition-colors">
+                <div className="text-2xl mb-1">🟩</div>
+                <div className="font-bold text-sm">Wordle</div>
+                <div className="text-xs text-[var(--color-text-muted)]">გამოიცანი სიტყვა</div>
+              </button>
+              <button onClick={() => setScreen('synonymantonym')} className="bg-gradient-to-br from-pink-500/20 to-rose-500/20 border border-pink-500/20 rounded-2xl p-4 text-left hover:border-pink-500/40 transition-colors">
+                <div className="text-2xl mb-1">🔄</div>
+                <div className="font-bold text-sm">სინონიმები</div>
+                <div className="text-xs text-[var(--color-text-muted)]">Synonyms & Antonyms</div>
+              </button>
             </div>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
@@ -157,6 +169,8 @@ export default function App() {
       {screen === 'connections' && <WordConnections onBack={handleBack} />}
       {screen === 'wordladder' && <WordLadder onBack={handleBack} />}
       {screen === 'spellingbee' && <SpellingBee onBack={handleBack} />}
+      {screen === 'wordle' && <WordleGame onBack={handleBack} />}
+      {screen === 'synonymantonym' && <SynonymAntonym onBack={handleBack} />}
     </div>
   );
 }

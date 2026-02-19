@@ -58,6 +58,9 @@
 44. **🎯 Daily Challenge** — 7 mixed tasks daily (translate, spell, unscramble, true/false, fill blank), streak tracking, new puzzle each day ✅ BUILT (Feb 19)
 45. **🔗 Word Connections** — NYT Connections-style: find 4 groups of 4 words, 6 puzzles, daily rotation, mistake tracking ✅ BUILT (Feb 19)
 
+46. **🪜 Word Ladder** — Change one letter per step to reach target word, 10 puzzles, hints ✅ BUILT (Feb 19)
+47. **🐝 Spelling Bee** — NYT-style word game with center letter, 4 puzzles, pangram bonus ✅ BUILT (Feb 19)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections

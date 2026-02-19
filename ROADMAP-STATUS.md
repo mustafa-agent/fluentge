@@ -138,6 +138,13 @@
 - [x] Git committed
 - **App now has 37 learning modes!**
 
+### 10:00 PM Session (Feb 19) — 2 More Features!
+- [x] 🪜 **Word Ladder** — Change one letter at a time to transform start word into target word, 10 puzzles, hints, answer reveal, score tracking
+- [x] 🐝 **Spelling Bee** — NYT-style: make words from 7 letters (center letter required), 4 themed puzzles, pangram bonus, Georgian translations for found words, progress bar
+- [x] Deployed to fluentge.surge.sh ✅
+- [x] Git committed
+- **App now has 39 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started
