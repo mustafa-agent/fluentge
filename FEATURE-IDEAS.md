@@ -33,7 +33,8 @@
 
 16. **💬 Conversation Practice** — Interactive dialogues (restaurant, airport, etc.) ✅ BUILT (Feb 18)
 17. **📖 Reading Comprehension** — Short English stories with Georgian glossary ✅ BUILT (Feb 18)
-18. **🎮 Word Snake** — Connect letters on a grid to spell words
+18. **🎮 Word Snake** — Connect letters on a grid to spell words ✅ BUILT (Feb 19)
+31. **📝 Story Builder** — Mad Libs-style fill-in-the-blank stories for vocabulary practice ✅ BUILT (Feb 19)
 19. **📊 Progress Dashboard** — Visual charts of learning progress over time
 20. **🏋️ Grammar Exercises** — Basic English grammar with Georgian explanations ✅ BUILT (Feb 18) — 10 lessons, 50 questions
 
