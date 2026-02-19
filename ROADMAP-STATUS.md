@@ -123,6 +123,13 @@
 - [x] Surge deploy hanging (auth issue) — built files ready in dist/
 - **App now has 33 learning modes!**
 
+### 6:00 PM Session (Feb 19) — 2 More Features!
+- [x] 🎬 **Movie Quotes** — 12 famous movie quotes (Godfather, Forrest Gump, Lion King, Titanic, Star Wars, etc.), browse mode + fill-the-blank quiz, Georgian translations + vocabulary trivia
+- [x] 🗺️ **Travel Phrases** — 48 essential travel phrases across 8 situations (Airport, Hotel, Restaurant, Transport, Shopping, Emergency, Meeting People, Directions), TTS playback, Georgian pronunciation guide, quiz mode
+- [x] Deployed to fluentge.surge.sh ✅
+- [x] Git committed
+- **App now has 35 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

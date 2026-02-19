@@ -52,6 +52,9 @@
 40. **🔗 Phrasal Verbs** — 24 essential phrasal verbs, learn + quiz mode, Georgian translations ✅ BUILT (Feb 19)
 41. **⚠️ Common Mistakes** — 20 common English learner mistakes, learn + quiz, Georgian explanations ✅ BUILT (Feb 19)
 
+42. **🎬 Movie Quotes** — 12 famous movie quotes, browse + quiz, Georgian translations ✅ BUILT (Feb 19)
+43. **🗺️ Travel Phrases** — 48 phrases across 8 situations, TTS, pronunciation, quiz ✅ BUILT (Feb 19)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections

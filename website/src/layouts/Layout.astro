@@ -11,89 +11,81 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="FluentGe — ინგლისური ენის შესწავლა ქართველებისთვის. 2400+ სიტყვა, 40 კატეგორია, 38 გრამატიკა, 21 პოდკასტი." />
-    <meta property="og:title" content="FluentGe — ისწავლე ინგლისური ქართულად" />
-    <meta property="og:description" content="პირველი ინგლისური ენის პლატფორმა ქართველებისთვის." />
+    <meta name="description" content="FluentGe — ინგლისური ენის შესწავლა ქართველებისთვის." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>{title}</title>
+    <style>
+      * { cursor: default; }
+      a, button, [role="button"], input[type="submit"], .clickable, [onclick] { cursor: pointer !important; }
+      input, textarea, select { cursor: text; }
+    </style>
   </head>
-  <body class="bg-[#FDFBF7] text-[#2D2A26] font-[Inter,system-ui,sans-serif] min-h-screen">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-[#FDFBF7]/95 backdrop-blur-md border-b border-[#E8E2D9]">
+  <body class="bg-[#1C1C1E] text-[#F5F5F0] font-[Inter,system-ui,sans-serif] min-h-screen">
+    <nav class="fixed top-0 w-full z-50 bg-[#1C1C1E]/95 backdrop-blur-md border-b border-[#2E2E30]">
       <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" class="font-['DM_Serif_Display',serif] text-xl sm:text-2xl">
-          <span class="text-[#5B7F5E]">Fluent</span><span class="text-[#2D2A26]">Ge</span>
+        <a href="/" class="font-['Playfair_Display',serif] text-xl sm:text-2xl tracking-tight">
+          <span class="text-[#C8C8C0]">Fluent</span><span class="text-white">Ge</span>
         </a>
-        <!-- Desktop nav -->
-        <div class="hidden md:flex items-center gap-6 text-sm font-medium text-[#6B6560]">
-          <a href="/" class="hover:text-[#5B7F5E] transition-colors">მთავარი</a>
-          <a href="/flashcards/" class="hover:text-[#5B7F5E] transition-colors">ბარათები</a>
-          <a href="/grammar/" class="hover:text-[#5B7F5E] transition-colors">გრამატიკა</a>
-          <a href="/phrases/" class="hover:text-[#5B7F5E] transition-colors">ფრაზები</a>
-          <a href="/games/" class="hover:text-[#5B7F5E] transition-colors">თამაშები</a>
-          <a href="/podcast/" class="hover:text-[#5B7F5E] transition-colors">პოდკასტი</a>
-          <a href="/about/" class="hover:text-[#5B7F5E] transition-colors">შესახებ</a>
-          <a href="/register/" class="bg-[#5B7F5E] hover:bg-[#4A6B4D] text-white px-5 py-2 rounded-lg font-semibold transition-colors">დაწყება</a>
+        <div class="hidden md:flex items-center gap-6 text-sm text-[#A0A09A]">
+          <a href="/" class="hover:text-white transition-colors">მთავარი</a>
+          <a href="/flashcards/" class="hover:text-white transition-colors">ბარათები</a>
+          <a href="/grammar/" class="hover:text-white transition-colors">გრამატიკა</a>
+          <a href="/phrases/" class="hover:text-white transition-colors">ფრაზები</a>
+          <a href="/games/" class="hover:text-white transition-colors">თამაშები</a>
+          <a href="/podcast/" class="hover:text-white transition-colors">პოდკასტი</a>
+          <a href="/about/" class="hover:text-white transition-colors">შესახებ</a>
+          <a href="/register/" class="bg-white text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">დაწყება</a>
         </div>
-        <!-- Mobile hamburger -->
-        <button id="menu-toggle" class="md:hidden text-[#2D2A26] p-1" aria-label="მენიუ">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <button id="menu-toggle" class="md:hidden text-white p-1" aria-label="მენიუ">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
-      <!-- Mobile menu -->
-      <div id="mobile-menu" class="hidden md:hidden border-t border-[#E8E2D9] bg-[#FDFBF7]/98 backdrop-blur-md">
-        <div class="flex flex-col px-4 py-3 gap-3 text-sm font-medium text-[#6B6560]">
-          <a href="/" class="hover:text-[#5B7F5E] py-1">მთავარი</a>
-          <a href="/flashcards/" class="hover:text-[#5B7F5E] py-1">ბარათები</a>
-          <a href="/grammar/" class="hover:text-[#5B7F5E] py-1">გრამატიკა</a>
-          <a href="/phrases/" class="hover:text-[#5B7F5E] py-1">ფრაზები</a>
-          <a href="/games/" class="hover:text-[#5B7F5E] py-1">თამაშები</a>
-          <a href="/podcast/" class="hover:text-[#5B7F5E] py-1">პოდკასტი</a>
-          <a href="/about/" class="hover:text-[#5B7F5E] py-1">შესახებ</a>
-          <a href="/register/" class="bg-[#5B7F5E] hover:bg-[#4A6B4D] text-white px-4 py-2.5 rounded-lg font-semibold text-center">დაწყება</a>
+      <div id="mobile-menu" class="hidden md:hidden border-t border-[#2E2E30] bg-[#1C1C1E]/98">
+        <div class="flex flex-col px-4 py-3 gap-3 text-sm text-[#A0A09A]">
+          <a href="/" class="hover:text-white py-1">მთავარი</a>
+          <a href="/flashcards/" class="hover:text-white py-1">ბარათები</a>
+          <a href="/grammar/" class="hover:text-white py-1">გრამატიკა</a>
+          <a href="/phrases/" class="hover:text-white py-1">ფრაზები</a>
+          <a href="/games/" class="hover:text-white py-1">თამაშები</a>
+          <a href="/podcast/" class="hover:text-white py-1">პოდკასტი</a>
+          <a href="/about/" class="hover:text-white py-1">შესახებ</a>
+          <a href="/register/" class="bg-white text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">დაწყება</a>
         </div>
       </div>
     </nav>
-    <script>
-      document.getElementById('menu-toggle')?.addEventListener('click', () => {
-        document.getElementById('mobile-menu')?.classList.toggle('hidden');
-      });
-    </script>
+    <script>document.getElementById('menu-toggle')?.addEventListener('click',()=>{document.getElementById('mobile-menu')?.classList.toggle('hidden');});</script>
 
-    <main class="pt-14">
-      <slot />
-    </main>
+    <main class="pt-14"><slot /></main>
 
-    <!-- Footer -->
-    <footer class="border-t border-[#E8E2D9] mt-20 bg-[#F5F0E8]">
+    <footer class="border-t border-[#2E2E30] mt-20 bg-[#161618]">
       <div class="max-w-5xl mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <p class="font-['DM_Serif_Display',serif] text-xl mb-3"><span class="text-[#5B7F5E]">Fluent</span>Ge</p>
-            <p class="text-[#8A8480] text-sm leading-relaxed">პირველი ინგლისური ენის პლატფორმა, რომელიც სპეციალურად ქართველებისთვისაა შექმნილი.</p>
+            <p class="font-['Playfair_Display',serif] text-xl mb-3"><span class="text-[#C8C8C0]">Fluent</span>Ge</p>
+            <p class="text-[#6B6B65] text-sm leading-relaxed">პირველი ინგლისური ენის პლატფორმა ქართველებისთვის.</p>
           </div>
           <div>
-            <p class="font-semibold text-sm mb-3 text-[#2D2A26]">ნავიგაცია</p>
-            <div class="flex flex-col gap-2 text-sm text-[#8A8480]">
-              <a href="/" class="hover:text-[#5B7F5E]">მთავარი</a>
-              <a href="/flashcards/" class="hover:text-[#5B7F5E]">ბარათები</a>
-              <a href="/grammar/" class="hover:text-[#5B7F5E]">გრამატიკა</a>
-              <a href="/games/" class="hover:text-[#5B7F5E]">თამაშები</a>
+            <p class="font-semibold text-sm mb-3 text-[#A0A09A]">ნავიგაცია</p>
+            <div class="flex flex-col gap-2 text-sm text-[#6B6B65]">
+              <a href="/" class="hover:text-white transition-colors">მთავარი</a>
+              <a href="/flashcards/" class="hover:text-white transition-colors">ბარათები</a>
+              <a href="/grammar/" class="hover:text-white transition-colors">გრამატიკა</a>
+              <a href="/games/" class="hover:text-white transition-colors">თამაშები</a>
             </div>
           </div>
           <div>
-            <p class="font-semibold text-sm mb-3 text-[#2D2A26]">რესურსები</p>
-            <div class="flex flex-col gap-2 text-sm text-[#8A8480]">
-              <a href="/phrases/" class="hover:text-[#5B7F5E]">ფრაზები</a>
-              <a href="/podcast/" class="hover:text-[#5B7F5E]">პოდკასტი</a>
-              <a href="/about/" class="hover:text-[#5B7F5E]">შესახებ</a>
-              <a href="/register/" class="hover:text-[#5B7F5E]">რეგისტრაცია</a>
+            <p class="font-semibold text-sm mb-3 text-[#A0A09A]">რესურსები</p>
+            <div class="flex flex-col gap-2 text-sm text-[#6B6B65]">
+              <a href="/phrases/" class="hover:text-white transition-colors">ფრაზები</a>
+              <a href="/podcast/" class="hover:text-white transition-colors">პოდკასტი</a>
+              <a href="/about/" class="hover:text-white transition-colors">შესახებ</a>
+              <a href="/register/" class="hover:text-white transition-colors">რეგისტრაცია</a>
             </div>
           </div>
         </div>
-        <div class="border-t border-[#E8E2D9] pt-6 text-center text-[#8A8480] text-xs">
+        <div class="border-t border-[#2E2E30] pt-6 text-center text-[#6B6B65] text-xs">
           &copy; 2026 FluentGe. ყველა უფლება დაცულია.
         </div>
       </div>

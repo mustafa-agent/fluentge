@@ -1,18 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #22c55e;
-  --color-primary-dark: #16a34a;
-  --color-bg: #0f172a;
-  --color-bg-card: #1e293b;
-  --color-bg-card-hover: #334155;
-  --color-text: #f8fafc;
-  --color-text-muted: #94a3b8;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  --color-primary: #C8C8C0;
+  --color-primary-dark: #A0A09A;
+  --color-bg: #1C1C1E;
+  --color-bg-card: #242426;
+  --color-bg-card-hover: #2E2E30;
+  --color-text: #F5F5F0;
+  --color-text-muted: #6B6B65;
 }
 
 body {
@@ -22,3 +17,5 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+
+a, button, [role="button"], input[type="submit"] { cursor: pointer !important; }

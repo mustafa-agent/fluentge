@@ -20,30 +20,30 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
 <Layout title={`${lesson.title_ka} — FluentGe`}>
   <section class="max-w-3xl mx-auto px-4 py-16">
     <!-- Header -->
-    <a href="/grammar/" class="text-[#5B7F5E] hover:underline text-sm mb-6 inline-block">← გრამატიკა</a>
+    <a href="/grammar/" class="text-[#C8C8C0] hover:underline text-sm mb-6 inline-block">← გრამატიკა</a>
     <div class="flex items-center gap-3 mb-2">
       <span class={`px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>{lesson.level}</span>
-      <span class="text-[#8A8480] text-sm">გაკვეთილი #{lesson.id}</span>
+      <span class="text-[#6B6B65] text-sm">გაკვეთილი #{lesson.id}</span>
     </div>
     <h1 class="text-3xl font-bold mb-1">{lesson.title_ka}</h1>
-    <p class="text-[#8A8480] mb-8">{lesson.title_en}</p>
+    <p class="text-[#6B6B65] mb-8">{lesson.title_en}</p>
 
     {isFree ? (
     <>
     <!-- Explanation -->
-    <div class="bg-[#F5F0E8] border border-[#E8E2D9] rounded-xl p-6 mb-8">
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-6 mb-8">
       <h2 class="text-xl font-bold mb-4">📚 ახსნა</h2>
       <div class="text-[#cbd5e1] leading-relaxed whitespace-pre-line">{lesson.explanation_ka}</div>
     </div>
 
     <!-- Examples -->
-    <div class="bg-[#F5F0E8] border border-[#E8E2D9] rounded-xl p-6 mb-8">
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-6 mb-8">
       <h2 class="text-xl font-bold mb-4">💡 მაგალითები</h2>
       <div class="space-y-3">
         {lesson.examples.map((ex: {en: string, ka: string}) => (
           <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 py-2 border-b border-white/5 last:border-0">
-            <span class="font-medium text-[#5B7F5E]">{ex.en}</span>
-            <span class="text-[#8A8480]">— {ex.ka}</span>
+            <span class="font-medium text-[#C8C8C0]">{ex.en}</span>
+            <span class="text-[#6B6B65]">— {ex.ka}</span>
           </div>
         ))}
       </div>
@@ -56,13 +56,13 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
     </div>
 
     <!-- Exercises -->
-    <div class="bg-[#F5F0E8] border border-[#E8E2D9] rounded-xl p-6" id="exercises-section">
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-6" id="exercises-section">
       <h2 class="text-xl font-bold mb-6">✏️ სავარჯიშოები</h2>
       <div id="exercise-container"></div>
       <div id="score-container" class="hidden mt-6 text-center">
         <div class="text-4xl font-bold mb-2" id="score-text"></div>
-        <p class="text-[#8A8480] mb-4" id="score-msg"></p>
-        <button id="retry-btn" class="bg-[#5B7F5E] hover:bg-[#4A6B4D] text-white px-6 py-2 rounded-lg font-semibold transition-colors">თავიდან ცდა</button>
+        <p class="text-[#6B6B65] mb-4" id="score-msg"></p>
+        <button id="retry-btn" class="bg-[#C8C8C0] hover:bg-[#A0A09A] text-white px-6 py-2 rounded-lg font-semibold transition-colors">თავიდან ცდა</button>
       </div>
     </div>
     </>
@@ -72,11 +72,11 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
       <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-12">
         <div class="text-6xl mb-4">🔒</div>
         <h2 class="text-2xl font-bold mb-3">ეს გაკვეთილი პრემიუმია</h2>
-        <p class="text-[#8A8480] mb-6 max-w-md mx-auto">გახსენი ყველა 30 გრამატიკის გაკვეთილი, 1060+ სიტყვა და ყველა კატეგორია პრემიუმ გეგმით.</p>
+        <p class="text-[#6B6B65] mb-6 max-w-md mx-auto">გახსენი ყველა 30 გრამატიკის გაკვეთილი, 1060+ სიტყვა და ყველა კატეგორია პრემიუმ გეგმით.</p>
         <a href="/register/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
           🚀 დაიწყე პრემიუმი
         </a>
-        <p class="text-[#8A8480] text-sm mt-4">თვეში მხოლოდ 9.99 ლარი</p>
+        <p class="text-[#6B6B65] text-sm mt-4">თვეში მხოლოდ 9.99 ლარი</p>
       </div>
     </div>
     )}
@@ -145,18 +145,18 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
       const ex = exercises[current];
       const isMulti = ex.type === 'multiple-choice';
       
-      let html = `<div class="mb-3 text-xs text-[#8A8480]">${current + 1}/${exercises.length}</div>`;
-      html += `<div class="w-full bg-[#F5F0E8] rounded-full h-1.5 mb-6"><div class="bg-[#5B7F5E] h-1.5 rounded-full transition-all" style="width:${((current) / exercises.length) * 100}%"></div></div>`;
+      let html = `<div class="mb-3 text-xs text-[#6B6B65]">${current + 1}/${exercises.length}</div>`;
+      html += `<div class="w-full bg-[#242426] rounded-full h-1.5 mb-6"><div class="bg-[#C8C8C0] h-1.5 rounded-full transition-all" style="width:${((current) / exercises.length) * 100}%"></div></div>`;
       
       if (isMulti) {
         html += `<p class="text-lg font-medium mb-4">${ex.question}</p>`;
       } else {
-        html += `<p class="text-lg font-medium mb-4">${ex.question.replace('___', '<span class="text-[#5B7F5E] font-bold">______</span>')}</p>`;
+        html += `<p class="text-lg font-medium mb-4">${ex.question.replace('___', '<span class="text-[#C8C8C0] font-bold">______</span>')}</p>`;
       }
       
       html += `<div class="grid gap-3">`;
       for (const opt of ex.options) {
-        html += `<button class="opt-btn text-left px-4 py-3 rounded-lg border border-[#E8E2D9] bg-[#F5F0E8] hover:bg-[#F5F0E8] transition-colors font-medium" data-val="${opt}">${opt}</button>`;
+        html += `<button class="opt-btn text-left px-4 py-3 rounded-lg border border-[#2E2E30] bg-[#242426] hover:bg-[#242426] transition-colors font-medium" data-val="${opt}">${opt}</button>`;
       }
       html += `</div><div id="feedback" class="mt-4"></div>`;
       
@@ -176,10 +176,10 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
 
       container.querySelectorAll('.opt-btn').forEach(b => {
         if (b.dataset.val === ex.answer) {
-          b.classList.remove('bg-[#F5F0E8]', 'border-[#E8E2D9]');
+          b.classList.remove('bg-[#242426]', 'border-[#2E2E30]');
           b.classList.add('bg-green-500/20', 'border-green-500', 'text-green-400');
         } else if (b === btn && !correct) {
-          b.classList.remove('bg-[#F5F0E8]', 'border-[#E8E2D9]');
+          b.classList.remove('bg-[#242426]', 'border-[#2E2E30]');
           b.classList.add('bg-red-500/20', 'border-red-500', 'text-red-400');
         }
         b.classList.add('pointer-events-none');
