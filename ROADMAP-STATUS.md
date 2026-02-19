@@ -116,6 +116,13 @@
 - [x] Git committed
 - **App now has 31 learning modes!**
 
+### 4:00 PM Session (Feb 19) — 2 More Features!
+- [x] 🔗 **Phrasal Verbs** — 24 essential phrasal verbs (give up, look after, turn on, etc.), learn mode with reveal + quiz mode (match meaning to verb), Georgian translations + examples
+- [x] ⚠️ **Common Mistakes** — 20 mistakes English learners make (I am agree → I agree, I have 20 years → I am 20), learn with wrong/correct/rule + quiz mode, Georgian explanations
+- [x] Built, integrated, git committed
+- [x] Surge deploy hanging (auth issue) — built files ready in dist/
+- **App now has 33 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

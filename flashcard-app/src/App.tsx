@@ -34,9 +34,11 @@ import IrregularVerbs from './components/IrregularVerbs';
 import PictureDescribe from './components/PictureDescribe';
 import PhrasalVerbs from './components/PhrasalVerbs';
 import CommonMistakes from './components/CommonMistakes';
+import MovieQuotes from './components/MovieQuotes';
+import TravelPhrases from './components/TravelPhrases';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases';
 type Tab = 'flashcards' | 'games';
 
 const allCards = decks.flatMap(d => d.cards);
@@ -66,6 +68,8 @@ const gameButtons: { screen: Screen; emoji: string; label: string }[] = [
   { screen: 'picturedescribe', emoji: '🖼️', label: 'სურათის აღწერა' },
   { screen: 'phrasalverbs', emoji: '🔗', label: 'ფრაზული ზმნები' },
   { screen: 'commonmistakes', emoji: '⚠️', label: 'ხშირი შეცდომები' },
+  { screen: 'moviequotes', emoji: '🎬', label: 'ფილმის ციტატები' },
+  { screen: 'travelphrases', emoji: '🗺️', label: 'მოგზაურობა' },
 ];
 
 export default function App() {
@@ -180,6 +184,8 @@ export default function App() {
       {screen === 'picturedescribe' && <PictureDescribe onBack={handleBack} />}
       {screen === 'phrasalverbs' && <PhrasalVerbs onBack={handleBack} />}
       {screen === 'commonmistakes' && <CommonMistakes onBack={handleBack} />}
+      {screen === 'moviequotes' && <MovieQuotes onBack={handleBack} />}
+      {screen === 'travelphrases' && <TravelPhrases onBack={handleBack} />}
     </div>
   );
 }

@@ -104,21 +104,21 @@ const episodes = [
     <div class="text-center mb-12">
       <div class="text-6xl mb-4">🎧</div>
       <h1 class="text-4xl font-bold mb-3">FluentGe Podcast</h1>
-      <p class="text-[#94a3b8] text-lg max-w-lg mx-auto">
+      <p class="text-[#8A8480] text-lg max-w-lg mx-auto">
         მოისმინე რეალური დიალოგები ინგლისურად. ისწავლე ყველგან — მანქანაში, გზაში, სპორტდარბაზში.
       </p>
-      <p class="text-[#64748b] text-sm mt-2">{episodes.length} ეპიზოდი · 3 უფასო</p>
+      <p class="text-[#8A8480] text-sm mt-2">{episodes.length} ეპიზოდი · 3 უფასო</p>
     </div>
 
     <div class="space-y-6">
       {episodes.map((ep) => (
-        <div class={`bg-white/5 border rounded-2xl overflow-hidden transition-all ${ep.free ? 'border-green-500/30' : 'border-white/10'}`}>
+        <div class={`bg-[#F5F0E8] border rounded-2xl overflow-hidden transition-all ${ep.free ? 'border-green-500/30' : 'border-[#E8E2D9]'}`}>
           <div class="p-6">
             <div class="flex items-start justify-between mb-3">
               <div>
                 <div class="flex items-center gap-2 mb-1">
-                  <span class="text-sm text-[#64748b]">ეპიზოდი {ep.id}</span>
-                  <span class="text-sm text-[#64748b]">· {ep.duration}</span>
+                  <span class="text-sm text-[#8A8480]">ეპიზოდი {ep.id}</span>
+                  <span class="text-sm text-[#8A8480]">· {ep.duration}</span>
                   {ep.free ? (
                     <span class="text-xs px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 font-medium">✅ უფასო</span>
                   ) : (
@@ -126,19 +126,19 @@ const episodes = [
                   )}
                 </div>
                 <h2 class="text-xl font-bold">{ep.title}</h2>
-                <p class="text-[#94a3b8] text-sm">{ep.titleKa}</p>
+                <p class="text-[#8A8480] text-sm">{ep.titleKa}</p>
               </div>
               <div class="text-4xl">{ep.icon}</div>
             </div>
             
-            <p class="text-sm text-[#94a3b8] mb-4">{ep.descriptionKa}</p>
+            <p class="text-sm text-[#8A8480] mb-4">{ep.descriptionKa}</p>
 
             <div class="mb-4">
-              <p class="text-xs text-[#64748b] mb-2 font-medium">📚 სიტყვები ამ ეპიზოდში:</p>
+              <p class="text-xs text-[#8A8480] mb-2 font-medium">📚 სიტყვები ამ ეპიზოდში:</p>
               <div class="flex flex-wrap gap-2">
                 {ep.vocab.map((word, i) => (
-                  <span class="text-xs bg-white/10 px-2 py-1 rounded-lg">
-                    {word} <span class="text-[#64748b]">— {ep.vocabKa[i]}</span>
+                  <span class="text-xs bg-[#F5F0E8] px-2 py-1 rounded-lg">
+                    {word} <span class="text-[#8A8480]">— {ep.vocabKa[i]}</span>
                   </span>
                 ))}
               </div>
@@ -152,10 +152,10 @@ const episodes = [
                 
                 {ep.transcript && (
                   <details class="mt-4">
-                    <summary class="cursor-pointer text-sm text-[#22c55e] hover:underline font-medium">
+                    <summary class="cursor-pointer text-sm text-[#5B7F5E] hover:underline font-medium">
                       📝 დიალოგის ტექსტი (ქართული თარგმანით)
                     </summary>
-                    <div class="mt-3 space-y-3 bg-white/5 rounded-xl p-4">
+                    <div class="mt-3 space-y-3 bg-[#F5F0E8] rounded-xl p-4">
                       {ep.transcript.map((line) => (
                         <div class="border-b border-white/5 pb-2 last:border-0">
                           <div class="flex items-start gap-2">
@@ -164,7 +164,7 @@ const episodes = [
                             </span>
                             <div>
                               <p class="text-sm font-medium">{line.en}</p>
-                              <p class="text-xs text-[#64748b] mt-0.5">{line.ka}</p>
+                              <p class="text-xs text-[#8A8480] mt-0.5">{line.ka}</p>
                             </div>
                           </div>
                         </div>
@@ -177,7 +177,7 @@ const episodes = [
               <a href="/register/" class="block bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-4 text-center hover:border-amber-500/40 transition-all">
                 <span class="text-2xl">🔒</span>
                 <p class="text-amber-400 font-medium mt-1">გახსენი პრემიუმით</p>
-                <p class="text-xs text-[#64748b] mt-1">თვეში 9.99 ₾</p>
+                <p class="text-xs text-[#8A8480] mt-1">თვეში 9.99 ₾</p>
               </a>
             )}
           </div>
@@ -187,7 +187,7 @@ const episodes = [
 
     <div class="mt-12 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
       <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა ეპიზოდი</h3>
-      <p class="text-[#94a3b8] mb-6">21 პოდკასტი, 2400+ სიტყვა, 38 გრამატიკის გაკვეთილი</p>
+      <p class="text-[#8A8480] mb-6">21 პოდკასტი, 2400+ სიტყვა, 38 გრამატიკის გაკვეთილი</p>
       <a href="/register/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
         🚀 დაიწყე პრემიუმი
       </a>

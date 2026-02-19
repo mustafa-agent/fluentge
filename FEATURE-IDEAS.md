@@ -49,6 +49,9 @@
 38. **🔀 Irregular Verbs** — 30 verbs, learn (reveal) + quiz (type forms), Georgian translations ✅ BUILT (Feb 19)
 39. **🖼️ Picture Describe** — 8 emoji scenes, write descriptions, keyword matching, sample answers ✅ BUILT (Feb 19)
 
+40. **🔗 Phrasal Verbs** — 24 essential phrasal verbs, learn + quiz mode, Georgian translations ✅ BUILT (Feb 19)
+41. **⚠️ Common Mistakes** — 20 common English learner mistakes, learn + quiz, Georgian explanations ✅ BUILT (Feb 19)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections

@@ -140,16 +140,16 @@ const categories = [
     <div class="text-center mb-12">
       <div class="text-6xl mb-4">💬</div>
       <h1 class="text-4xl font-bold mb-3">სასარგებლო ფრაზები</h1>
-      <p class="text-[#94a3b8] text-lg max-w-lg mx-auto">
+      <p class="text-[#8A8480] text-lg max-w-lg mx-auto">
         ყოველდღიური ფრაზები რეალური სიტუაციებისთვის. დაიმახსოვრე და გამოიყენე!
       </p>
-      <p class="text-[#64748b] text-sm mt-2">{categories.reduce((sum, c) => sum + c.phrases.length, 0)} ფრაზა · {categories.length} კატეგორია</p>
+      <p class="text-[#8A8480] text-sm mt-2">{categories.reduce((sum, c) => sum + c.phrases.length, 0)} ფრაზა · {categories.length} კატეგორია</p>
     </div>
 
     <div class="space-y-8">
       {categories.map((cat) => (
-        <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
-          <div class="p-6 border-b border-white/10">
+        <div class="bg-[#F5F0E8] border border-[#E8E2D9] rounded-2xl overflow-hidden">
+          <div class="p-6 border-b border-[#E8E2D9]">
             <div class="flex items-center gap-3">
               <span class="text-3xl">{cat.icon}</span>
               <h2 class="text-xl font-bold">{cat.title}</h2>
@@ -157,11 +157,11 @@ const categories = [
           </div>
           <div class="divide-y divide-white/5">
             {cat.phrases.map((phrase) => (
-              <div class="px-6 py-4 hover:bg-white/5 transition-colors">
+              <div class="px-6 py-4 hover:bg-[#F5F0E8] transition-colors">
                 <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                  <p class="text-[#22c55e] font-medium text-lg">{phrase.en}</p>
-                  <span class="text-[#64748b] hidden sm:inline">—</span>
-                  <p class="text-[#94a3b8]">{phrase.ka}</p>
+                  <p class="text-[#5B7F5E] font-medium text-lg">{phrase.en}</p>
+                  <span class="text-[#8A8480] hidden sm:inline">—</span>
+                  <p class="text-[#8A8480]">{phrase.ka}</p>
                 </div>
                 <p class="text-xs text-[#475569] mt-1">📌 {phrase.usage}</p>
               </div>

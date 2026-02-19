@@ -25,7 +25,7 @@ function isLessonFree(slug: string) {
 <Layout title="გრამატიკა — FluentGe">
   <section class="max-w-4xl mx-auto px-4 py-16">
     <h1 class="text-4xl font-bold text-center mb-2">📖 გრამატიკა</h1>
-    <p class="text-center text-[#94a3b8] mb-12">ინგლისური გრამატიკის გაკვეთილები ქართულ ენაზე</p>
+    <p class="text-center text-[#8A8480] mb-12">ინგლისური გრამატიკის გაკვეთილები ქართულ ენაზე</p>
 
     {levels.map(level => (
       <div class="mb-12">
@@ -37,7 +37,7 @@ function isLessonFree(slug: string) {
           {grouped[level].map(lesson => {
             const free = isLessonFree(lesson.slug);
             return free ? (
-              <a href={`/grammar/${lesson.slug}/`} class="block bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-5 transition-all hover:scale-[1.02]">
+              <a href={`/grammar/${lesson.slug}/`} class="block bg-[#F5F0E8] hover:bg-[#F5F0E8] border border-[#E8E2D9] rounded-xl p-5 transition-all hover:scale-[1.02]">
                 <div class="flex items-start justify-between mb-2">
                   <h3 class="font-semibold text-lg">{lesson.title_ka}</h3>
                   <div class="flex items-center gap-1">
@@ -45,11 +45,11 @@ function isLessonFree(slug: string) {
                     <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>{level}</span>
                   </div>
                 </div>
-                <p class="text-[#94a3b8] text-sm">{lesson.title_en}</p>
-                <div class="mt-3 text-xs text-[#64748b]">📝 {lesson.exercises.length} სავარჯიშო</div>
+                <p class="text-[#8A8480] text-sm">{lesson.title_en}</p>
+                <div class="mt-3 text-xs text-[#8A8480]">📝 {lesson.exercises.length} სავარჯიშო</div>
               </a>
             ) : (
-              <a href="/register/" class="block bg-white/5 border border-white/5 rounded-xl p-5 opacity-60 hover:opacity-80 hover:border-amber-500/30 transition-all">
+              <a href="/register/" class="block bg-[#F5F0E8] border border-white/5 rounded-xl p-5 opacity-60 hover:opacity-80 hover:border-amber-500/30 transition-all">
                 <div class="flex items-start justify-between mb-2">
                   <h3 class="font-semibold text-lg">{lesson.title_ka} 🔒</h3>
                   <div class="flex items-center gap-1">
@@ -57,7 +57,7 @@ function isLessonFree(slug: string) {
                     <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
                   </div>
                 </div>
-                <p class="text-[#94a3b8] text-sm">{lesson.title_en}</p>
+                <p class="text-[#8A8480] text-sm">{lesson.title_en}</p>
                 <div class="mt-3 text-xs text-amber-400">გახსნა → პრემიუმი</div>
               </a>
             );
@@ -69,7 +69,7 @@ function isLessonFree(slug: string) {
     <!-- Premium CTA -->
     <div class="mt-8 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
       <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა გაკვეთილი</h3>
-      <p class="text-[#94a3b8] mb-6">30 გრამატიკის გაკვეთილი, 1060+ სიტყვა, ყველა კატეგორია</p>
+      <p class="text-[#8A8480] mb-6">30 გრამატიკის გაკვეთილი, 1060+ სიტყვა, ყველა კატეგორია</p>
       <a href="/register/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
         დაიწყე პრემიუმი
       </a>
