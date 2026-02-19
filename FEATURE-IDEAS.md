@@ -43,6 +43,9 @@
 19. **📊 Progress Dashboard** — Visual charts of learning progress over time
 20. **🏋️ Grammar Exercises** — Basic English grammar with Georgian explanations ✅ BUILT (Feb 18) — 10 lessons, 50 questions
 
+36. **🎭 Emoji Quiz** — Guess English word from emoji combinations, 30 puzzles, hints available ✅ BUILT (Feb 19)
+37. **🔗 Word Pairs (Collocations)** — Learn make/do/take/get/have collocations, learn then match game, 5 categories ✅ BUILT (Feb 19)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections

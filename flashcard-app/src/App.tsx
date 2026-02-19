@@ -30,9 +30,11 @@ import SongLyrics from './components/SongLyrics';
 import WordBingo from './components/WordBingo';
 import EmojiQuiz from './components/EmojiQuiz';
 import WordPairs from './components/WordPairs';
+import IrregularVerbs from './components/IrregularVerbs';
+import PictureDescribe from './components/PictureDescribe';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe';
 
 // Gather all cards for quiz wrong-answer pool
 const allCards = decks.flatMap(d => d.cards);
@@ -224,6 +226,22 @@ export default function App() {
                 <div className="text-xs">წყვილები</div>
               </button>
             </div>
+            <div className="grid grid-cols-4 gap-3 mt-3">
+              <button
+                onClick={() => setScreen('irregularverbs')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🔀</div>
+                <div className="text-xs">არაწესიერი ზმნები</div>
+              </button>
+              <button
+                onClick={() => setScreen('picturedescribe')}
+                className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors"
+              >
+                <div className="text-2xl mb-1">🖼️</div>
+                <div className="text-xs">სურათის აღწერა</div>
+              </button>
+            </div>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
         </>
@@ -339,6 +357,14 @@ export default function App() {
 
       {screen === 'wordpairs' && (
         <WordPairs onBack={handleBack} />
+      )}
+
+      {screen === 'irregularverbs' && (
+        <IrregularVerbs onBack={handleBack} />
+      )}
+
+      {screen === 'picturedescribe' && (
+        <PictureDescribe onBack={handleBack} />
       )}
     </div>
   );
