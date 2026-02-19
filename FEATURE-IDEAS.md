@@ -46,6 +46,9 @@
 36. **🎭 Emoji Quiz** — Guess English word from emoji combinations, 30 puzzles, hints available ✅ BUILT (Feb 19)
 37. **🔗 Word Pairs (Collocations)** — Learn make/do/take/get/have collocations, learn then match game, 5 categories ✅ BUILT (Feb 19)
 
+38. **🔀 Irregular Verbs** — 30 verbs, learn (reveal) + quiz (type forms), Georgian translations ✅ BUILT (Feb 19)
+39. **🖼️ Picture Describe** — 8 emoji scenes, write descriptions, keyword matching, sample answers ✅ BUILT (Feb 19)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections

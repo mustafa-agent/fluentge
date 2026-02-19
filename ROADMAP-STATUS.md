@@ -109,6 +109,13 @@
 - [x] Git committed
 - **App now has 27 learning modes!**
 
+### 2:00 PM Session (Feb 19) — 2 More Features!
+- [x] 🔀 **Irregular Verbs** — 30 common irregular verbs (go→went→gone), learn mode with reveal + quiz mode (type past/participle/base), Georgian translations, example sentences
+- [x] 🖼️ **Picture Describe** — 8 emoji scenes (beach, cooking, school, rainy day, gym, shopping, birthday, road trip), write 3-5 sentences describing the scene, keyword matching, sample answers with Georgian translations
+- [x] Deployed to fluentge.surge.sh ✅
+- [x] Git committed
+- **App now has 31 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started
