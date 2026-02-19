@@ -42,9 +42,11 @@ import WordLadder from './components/WordLadder';
 import SpellingBee from './components/SpellingBee';
 import WordleGame from './components/WordleGame';
 import SynonymAntonym from './components/SynonymAntonym';
+import Dictation from './components/Dictation';
+import Proverbs from './components/Proverbs';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee' | 'wordle' | 'synonymantonym';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee' | 'wordle' | 'synonymantonym' | 'dictation' | 'proverbs';
 const allCards = decks.flatMap(d => d.cards);
 
 export default function App() {
@@ -125,6 +127,16 @@ export default function App() {
                 <div className="font-bold text-sm">სინონიმები</div>
                 <div className="text-xs text-[var(--color-text-muted)]">Synonyms & Antonyms</div>
               </button>
+              <button onClick={() => setScreen('dictation')} className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/20 rounded-2xl p-4 text-left hover:border-cyan-500/40 transition-colors">
+                <div className="text-2xl mb-1">🎤</div>
+                <div className="font-bold text-sm">დიქტანტი</div>
+                <div className="text-xs text-[var(--color-text-muted)]">Dictation</div>
+              </button>
+              <button onClick={() => setScreen('proverbs')} className="bg-gradient-to-br from-orange-500/20 to-yellow-500/20 border border-orange-500/20 rounded-2xl p-4 text-left hover:border-orange-500/40 transition-colors">
+                <div className="text-2xl mb-1">📜</div>
+                <div className="font-bold text-sm">ანდაზები</div>
+                <div className="text-xs text-[var(--color-text-muted)]">Proverbs & Wisdom</div>
+              </button>
             </div>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
@@ -171,6 +183,8 @@ export default function App() {
       {screen === 'spellingbee' && <SpellingBee onBack={handleBack} />}
       {screen === 'wordle' && <WordleGame onBack={handleBack} />}
       {screen === 'synonymantonym' && <SynonymAntonym onBack={handleBack} />}
+      {screen === 'dictation' && <Dictation onBack={handleBack} />}
+      {screen === 'proverbs' && <Proverbs onBack={handleBack} />}
     </div>
   );
 }

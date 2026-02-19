@@ -145,6 +145,13 @@
 - [x] Git committed
 - **App now has 39 learning modes!**
 
+### 12:00 AM Session (Feb 20) — 2 More Features!
+- [x] 🟩 **Wordle** — Daily 5-letter word puzzle, Georgian hint, keyboard input, color feedback (green/yellow/gray), 30 words, 6 guesses
+- [x] 🔄 **Synonym/Antonym** — 20 word pairs, learn mode (browse) + quiz mode (10 random, mixed synonym/antonym questions), Georgian translations
+- [x] Deployed to fluentge.surge.sh ✅
+- [x] Git committed
+- **App now has 41 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

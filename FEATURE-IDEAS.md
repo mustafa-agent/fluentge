@@ -61,6 +61,9 @@
 46. **🪜 Word Ladder** — Change one letter per step to reach target word, 10 puzzles, hints ✅ BUILT (Feb 19)
 47. **🐝 Spelling Bee** — NYT-style word game with center letter, 4 puzzles, pangram bonus ✅ BUILT (Feb 19)
 
+48. **🟩 Wordle** — Daily 5-letter word puzzle with Georgian hint, 6 guesses, color feedback ✅ BUILT (Feb 20)
+49. **🔄 Synonym/Antonym** — 20 word pairs, learn + quiz mode, Georgian translations ✅ BUILT (Feb 20)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections
