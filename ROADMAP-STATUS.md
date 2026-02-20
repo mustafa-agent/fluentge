@@ -152,6 +152,15 @@
 - [x] Git committed
 - **App now has 41 learning modes!**
 
+### 4:00 AM Session (Feb 20) — Home Screen UX Overhaul!
+- [x] 🏠 **Reorganized entire home screen** — ALL 43 features now accessible! Was showing only 8 buttons before.
+  - 6 categorized sections: Daily, Word Games (9), Learning (9), Vocabulary (9), Fun (3), Stats (2)
+  - Clean 3-column grid layout per section with Georgian labels
+  - Flashcard decks moved below feature sections
+- [x] Deployed to fluentge.surge.sh ✅
+- [x] Git committed
+- **Major UX fix: ~25 features were previously unreachable from home screen!**
+
 ### 2:00 AM Session (Feb 20) — 2 More Features!
 - [x] 🎤 **Dictation** — Listen to English sentences via TTS, type what you hear, 3 difficulty levels (easy/medium/hard), word-by-word diff highlighting, Georgian hints, slow playback option
 - [x] 📜 **Proverbs & Wisdom** — 24 English proverbs with meanings, Georgian translations, example sentences, learn mode (browse) + quiz mode (match proverb to meaning)

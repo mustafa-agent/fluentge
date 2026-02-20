@@ -44,9 +44,11 @@ import WordleGame from './components/WordleGame';
 import SynonymAntonym from './components/SynonymAntonym';
 import Dictation from './components/Dictation';
 import Proverbs from './components/Proverbs';
+import TimePractice from './components/TimePractice';
+import NumberWriting from './components/NumberWriting';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee' | 'wordle' | 'synonymantonym' | 'dictation' | 'proverbs';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee' | 'wordle' | 'synonymantonym' | 'dictation' | 'proverbs' | 'timepractice' | 'numberwriting';
 const allCards = decks.flatMap(d => d.cards);
 
 export default function App() {
@@ -148,6 +150,8 @@ export default function App() {
                 { s: 'pronunciation', icon: '🔊', ka: 'გამოთქმა', en: 'Pronunciation' },
                 { s: 'fillblank', icon: '📝', ka: 'შეავსე', en: 'Fill Blank' },
                 { s: 'truefalse', icon: '✅', ka: 'მართალი?', en: 'True or False' },
+                { s: 'timepractice', icon: '🕐', ka: 'საათი', en: 'Time' },
+                { s: 'numberwriting', icon: '🔢', ka: 'რიცხვები', en: 'Numbers' },
                 { s: 'categories', icon: '🗂️', ka: 'კატეგორიები', en: 'Categories' },
               ] as const).map(item => (
                 <button key={item.s} onClick={() => setScreen(item.s as Screen)} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors border border-white/5 hover:border-white/10">
@@ -262,6 +266,8 @@ export default function App() {
       {screen === 'synonymantonym' && <SynonymAntonym onBack={handleBack} />}
       {screen === 'dictation' && <Dictation onBack={handleBack} />}
       {screen === 'proverbs' && <Proverbs onBack={handleBack} />}
+      {screen === 'timepractice' && <TimePractice onBack={handleBack} />}
+      {screen === 'numberwriting' && <NumberWriting onBack={handleBack} />}
     </div>
   );
 }
