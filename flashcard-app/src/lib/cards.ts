@@ -94,6 +94,11 @@ import gamingEsportsData from '../../content/gaming-esports.json';
 import universityData from '../../content/university-college.json';
 import apartmentRentData from '../../content/apartment-rent.json';
 import programmingCodingData from '../../content/programming-coding.json';
+import immigrationVisaData from '../../content/immigration-visa.json';
+import youtubeContentData from '../../content/youtube-content.json';
+import nightlifePartiesData from '../../content/nightlife-parties.json';
+import mentalHealthData from '../../content/mental-health.json';
+import freelancingRemoteData from '../../content/freelancing-remote.json';
 
 export const decks: Deck[] = [
   {
@@ -641,6 +646,41 @@ export const decks: Deck[] = [
     nameKa: 'პროგრამირება',
     icon: '💻',
     cards: programmingCodingData as FlashCard[],
+  },
+  {
+    id: 'immigration-visa',
+    name: 'Immigration & Visa',
+    nameKa: 'იმიგრაცია და ვიზა',
+    icon: '🛫',
+    cards: immigrationVisaData as FlashCard[],
+  },
+  {
+    id: 'youtube-content',
+    name: 'YouTube & Content Creation',
+    nameKa: 'YouTube და კონტენტი',
+    icon: '🎥',
+    cards: youtubeContentData as FlashCard[],
+  },
+  {
+    id: 'nightlife-parties',
+    name: 'Nightlife & Parties',
+    nameKa: 'ღამის ცხოვრება',
+    icon: '🎶',
+    cards: nightlifePartiesData as FlashCard[],
+  },
+  {
+    id: 'mental-health',
+    name: 'Mental Health',
+    nameKa: 'ფსიქიკური ჯანმრთელობა',
+    icon: '🧠',
+    cards: mentalHealthData as FlashCard[],
+  },
+  {
+    id: 'freelancing-remote',
+    name: 'Freelancing & Remote Work',
+    nameKa: 'ფრილანსი და დისტანციური მუშაობა',
+    icon: '💼',
+    cards: freelancingRemoteData as FlashCard[],
   },
 ];
 
