@@ -13,7 +13,22 @@ const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0,
 const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
 ---
 
-<Layout title="FluentGe — ისწავლე ინგლისური ქართულად">
+<Layout title="FluentGe — ისწავლე ინგლისური ქართულად" description="უფასო ინგლისური ენის შესწავლა ქართველებისთვის. 2400+ სიტყვა, 45 თამაში, 21 პოდკასტი, გრამატიკა — ყველაფერი ერთ ადგილას.">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FluentGe",
+    "url": "https://fluentge.surge.sh",
+    "description": "უფასო ინგლისური ენის შესწავლა ქართველებისთვის",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GEL" },
+    "inLanguage": ["ka", "en"],
+    "availableLanguage": [
+      { "@type": "Language", "name": "Georgian" },
+      { "@type": "Language", "name": "English" }
+    ]
+  })} />
   <!-- Hero -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
