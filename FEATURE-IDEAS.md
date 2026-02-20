@@ -64,6 +64,9 @@
 48. **🟩 Wordle** — Daily 5-letter word puzzle with Georgian hint, 6 guesses, color feedback ✅ BUILT (Feb 20)
 49. **🔄 Synonym/Antonym** — 20 word pairs, learn + quiz mode, Georgian translations ✅ BUILT (Feb 20)
 
+50. **🎤 Dictation** — Listen to sentences, type them, 3 difficulty levels, word diff highlighting ✅ BUILT (Feb 20)
+51. **📜 Proverbs & Wisdom** — 24 English proverbs, meanings, Georgian translations, learn + quiz ✅ BUILT (Feb 20)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections

@@ -152,6 +152,13 @@
 - [x] Git committed
 - **App now has 41 learning modes!**
 
+### 2:00 AM Session (Feb 20) — 2 More Features!
+- [x] 🎤 **Dictation** — Listen to English sentences via TTS, type what you hear, 3 difficulty levels (easy/medium/hard), word-by-word diff highlighting, Georgian hints, slow playback option
+- [x] 📜 **Proverbs & Wisdom** — 24 English proverbs with meanings, Georgian translations, example sentences, learn mode (browse) + quiz mode (match proverb to meaning)
+- [x] Deployed to fluentge.surge.sh ✅ (without podcast MP3s)
+- [x] Git committed
+- **App now has 43 learning modes!**
+
 ## Phase 2: Grammar — Not started
 ## Phase 3: Growth — Not started
 ## Phase 4: Podcast & Premium — Podcasts done (21 episodes), premium features not started

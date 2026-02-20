@@ -94,50 +94,127 @@ export default function App() {
           </div>
           <StatsBar />
           <DailyWord />
-          {/* Daily features at top */}
-          <div className="px-4 py-4 max-w-lg mx-auto">
+
+          {/* Featured: Daily Games */}
+          <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
+            <h3 className="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-3">🎯 ყოველდღიური</h3>
             <div className="grid grid-cols-2 gap-3">
               <button onClick={() => setScreen('dailychallenge')} className="bg-gradient-to-br from-amber-500/20 to-orange-500/20 border border-amber-500/20 rounded-2xl p-4 text-left hover:border-amber-500/40 transition-colors">
                 <div className="text-2xl mb-1">🎯</div>
                 <div className="font-bold text-sm">დღის გამოწვევა</div>
                 <div className="text-xs text-[var(--color-text-muted)]">Daily Challenge</div>
               </button>
-              <button onClick={() => setScreen('connections')} className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-purple-500/20 rounded-2xl p-4 text-left hover:border-purple-500/40 transition-colors">
-                <div className="text-2xl mb-1">🔗</div>
-                <div className="font-bold text-sm">კავშირები</div>
-                <div className="text-xs text-[var(--color-text-muted)]">Word Connections</div>
-              </button>
-              <button onClick={() => setScreen('wordladder')} className="bg-gradient-to-br from-green-500/20 to-teal-500/20 border border-green-500/20 rounded-2xl p-4 text-left hover:border-green-500/40 transition-colors">
-                <div className="text-2xl mb-1">🪜</div>
-                <div className="font-bold text-sm">სიტყვის კიბე</div>
-                <div className="text-xs text-[var(--color-text-muted)]">Word Ladder</div>
-              </button>
-              <button onClick={() => setScreen('spellingbee')} className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/20 rounded-2xl p-4 text-left hover:border-amber-500/40 transition-colors">
-                <div className="text-2xl mb-1">🐝</div>
-                <div className="font-bold text-sm">სპელინგ ბი</div>
-                <div className="text-xs text-[var(--color-text-muted)]">Spelling Bee</div>
-              </button>
               <button onClick={() => setScreen('wordle')} className="bg-gradient-to-br from-emerald-500/20 to-green-500/20 border border-emerald-500/20 rounded-2xl p-4 text-left hover:border-emerald-500/40 transition-colors">
                 <div className="text-2xl mb-1">🟩</div>
                 <div className="font-bold text-sm">Wordle</div>
                 <div className="text-xs text-[var(--color-text-muted)]">გამოიცანი სიტყვა</div>
               </button>
-              <button onClick={() => setScreen('synonymantonym')} className="bg-gradient-to-br from-pink-500/20 to-rose-500/20 border border-pink-500/20 rounded-2xl p-4 text-left hover:border-pink-500/40 transition-colors">
-                <div className="text-2xl mb-1">🔄</div>
-                <div className="font-bold text-sm">სინონიმები</div>
-                <div className="text-xs text-[var(--color-text-muted)]">Synonyms & Antonyms</div>
+            </div>
+          </div>
+
+          {/* Word Games */}
+          <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
+            <h3 className="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-3">🎮 სიტყვების თამაშები</h3>
+            <div className="grid grid-cols-3 gap-2">
+              {([
+                { s: 'connections', icon: '🔗', ka: 'კავშირები', en: 'Connections' },
+                { s: 'wordladder', icon: '🪜', ka: 'კიბე', en: 'Word Ladder' },
+                { s: 'spellingbee', icon: '🐝', ka: 'სპელინგ ბი', en: 'Spelling Bee' },
+                { s: 'hangman', icon: '🎯', ka: 'ჩამოკიდებული', en: 'Hangman' },
+                { s: 'crossword', icon: '🧩', ka: 'კროსვორდი', en: 'Crossword' },
+                { s: 'snake', icon: '🐍', ka: 'გველი', en: 'Word Snake' },
+                { s: 'bingo', icon: '🎲', ka: 'ბინგო', en: 'Word Bingo' },
+                { s: 'emojiquiz', icon: '😀', ka: 'ემოჯი ქვიზი', en: 'Emoji Quiz' },
+                { s: 'storybuilder', icon: '📝', ka: 'ამბავი', en: 'Story Builder' },
+              ] as const).map(item => (
+                <button key={item.s} onClick={() => setScreen(item.s as Screen)} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors border border-white/5 hover:border-white/10">
+                  <span className="text-xl block mb-1">{item.icon}</span>
+                  <span className="text-[11px] font-medium block leading-tight">{item.ka}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Learning & Practice */}
+          <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
+            <h3 className="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-3">📚 სწავლა და პრაქტიკა</h3>
+            <div className="grid grid-cols-3 gap-2">
+              {([
+                { s: 'grammar', icon: '🏋️', ka: 'გრამატიკა', en: 'Grammar' },
+                { s: 'conversation', icon: '💬', ka: 'საუბარი', en: 'Conversation' },
+                { s: 'reading', icon: '📖', ka: 'კითხვა', en: 'Reading' },
+                { s: 'listening', icon: '🎧', ka: 'მოსმენა', en: 'Listening' },
+                { s: 'dictation', icon: '🎤', ka: 'დიქტანტი', en: 'Dictation' },
+                { s: 'pronunciation', icon: '🔊', ka: 'გამოთქმა', en: 'Pronunciation' },
+                { s: 'fillblank', icon: '📝', ka: 'შეავსე', en: 'Fill Blank' },
+                { s: 'truefalse', icon: '✅', ka: 'მართალი?', en: 'True or False' },
+                { s: 'categories', icon: '🗂️', ka: 'კატეგორიები', en: 'Categories' },
+              ] as const).map(item => (
+                <button key={item.s} onClick={() => setScreen(item.s as Screen)} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors border border-white/5 hover:border-white/10">
+                  <span className="text-xl block mb-1">{item.icon}</span>
+                  <span className="text-[11px] font-medium block leading-tight">{item.ka}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Vocabulary */}
+          <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
+            <h3 className="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-3">📖 ლექსიკა</h3>
+            <div className="grid grid-cols-3 gap-2">
+              {([
+                { s: 'irregularverbs', icon: '🔀', ka: 'ზმნები', en: 'Irregular Verbs' },
+                { s: 'phrasalverbs', icon: '🔗', ka: 'ფრაზები', en: 'Phrasal Verbs' },
+                { s: 'idioms', icon: '🗣️', ka: 'იდიომები', en: 'Idioms' },
+                { s: 'synonymantonym', icon: '🔄', ka: 'სინონიმები', en: 'Synonyms' },
+                { s: 'commonmistakes', icon: '⚠️', ka: 'შეცდომები', en: 'Common Mistakes' },
+                { s: 'wordpairs', icon: '🔗', ka: 'წყვილები', en: 'Word Pairs' },
+                { s: 'proverbs', icon: '📜', ka: 'ანდაზები', en: 'Proverbs' },
+                { s: 'twisters', icon: '👅', ka: 'სკოროგოვორკა', en: 'Tongue Twisters' },
+                { s: 'travelphrases', icon: '🗺️', ka: 'მოგზაურობა', en: 'Travel Phrases' },
+              ] as const).map(item => (
+                <button key={item.s} onClick={() => setScreen(item.s as Screen)} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors border border-white/5 hover:border-white/10">
+                  <span className="text-xl block mb-1">{item.icon}</span>
+                  <span className="text-[11px] font-medium block leading-tight">{item.ka}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Fun & Culture */}
+          <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
+            <h3 className="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-3">🎬 გართობა</h3>
+            <div className="grid grid-cols-3 gap-2">
+              {([
+                { s: 'moviequotes', icon: '🎬', ka: 'ფილმები', en: 'Movie Quotes' },
+                { s: 'songlyrics', icon: '🎵', ka: 'სიმღერები', en: 'Song Lyrics' },
+                { s: 'picturedescribe', icon: '🖼️', ka: 'აღწერა', en: 'Describe' },
+              ] as const).map(item => (
+                <button key={item.s} onClick={() => setScreen(item.s as Screen)} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors border border-white/5 hover:border-white/10">
+                  <span className="text-xl block mb-1">{item.icon}</span>
+                  <span className="text-[11px] font-medium block leading-tight">{item.ka}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Stats */}
+          <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
+            <div className="grid grid-cols-2 gap-3">
+              <button onClick={() => setScreen('achievements')} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-4 text-center transition-colors border border-white/5 hover:border-white/10">
+                <span className="text-2xl block mb-1">🏆</span>
+                <span className="text-sm font-medium">მიღწევები</span>
               </button>
-              <button onClick={() => setScreen('dictation')} className="bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/20 rounded-2xl p-4 text-left hover:border-cyan-500/40 transition-colors">
-                <div className="text-2xl mb-1">🎤</div>
-                <div className="font-bold text-sm">დიქტანტი</div>
-                <div className="text-xs text-[var(--color-text-muted)]">Dictation</div>
-              </button>
-              <button onClick={() => setScreen('proverbs')} className="bg-gradient-to-br from-orange-500/20 to-yellow-500/20 border border-orange-500/20 rounded-2xl p-4 text-left hover:border-orange-500/40 transition-colors">
-                <div className="text-2xl mb-1">📜</div>
-                <div className="font-bold text-sm">ანდაზები</div>
-                <div className="text-xs text-[var(--color-text-muted)]">Proverbs & Wisdom</div>
+              <button onClick={() => setScreen('progress')} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-4 text-center transition-colors border border-white/5 hover:border-white/10">
+                <span className="text-2xl block mb-1">📊</span>
+                <span className="text-sm font-medium">პროგრესი</span>
               </button>
             </div>
+          </div>
+
+          {/* Flashcard Decks */}
+          <div className="px-4 pt-6 pb-2 max-w-lg mx-auto">
+            <h3 className="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-1">📝 ფლეშქარდები</h3>
           </div>
           <DeckSelect onSelect={handleSelectDeck} />
         </>
