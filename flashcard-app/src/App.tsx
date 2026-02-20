@@ -46,9 +46,13 @@ import Dictation from './components/Dictation';
 import Proverbs from './components/Proverbs';
 import TimePractice from './components/TimePractice';
 import NumberWriting from './components/NumberWriting';
+import ConfusingWords from './components/ConfusingWords';
+import AlphabetSounds from './components/AlphabetSounds';
+import SentenceCorrection from './components/SentenceCorrection';
+import Phrasebook from './components/Phrasebook';
 import { Deck, decks } from './lib/cards';
 
-type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee' | 'wordle' | 'synonymantonym' | 'dictation' | 'proverbs' | 'timepractice' | 'numberwriting';
+type Screen = 'home' | 'study' | 'quiz' | 'spelling' | 'sentences' | 'match' | 'speed' | 'scramble' | 'fillblank' | 'achievements' | 'progress' | 'reverse' | 'conversation' | 'reading' | 'grammar' | 'hangman' | 'listening' | 'categories' | 'twisters' | 'idioms' | 'crossword' | 'snake' | 'storybuilder' | 'truefalse' | 'pronunciation' | 'songlyrics' | 'bingo' | 'emojiquiz' | 'wordpairs' | 'irregularverbs' | 'picturedescribe' | 'phrasalverbs' | 'commonmistakes' | 'moviequotes' | 'travelphrases' | 'dailychallenge' | 'connections' | 'wordladder' | 'spellingbee' | 'wordle' | 'synonymantonym' | 'dictation' | 'proverbs' | 'timepractice' | 'numberwriting' | 'confusingwords' | 'alphabetsounds' | 'sentencecorrection' | 'phrasebook';
 const allCards = decks.flatMap(d => d.cards);
 
 export default function App() {
@@ -96,6 +100,21 @@ export default function App() {
           </div>
           <StatsBar />
           <DailyWord />
+
+          {/* Phrasebook - Featured */}
+          <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
+            <button onClick={() => setScreen('phrasebook')} className="w-full bg-gradient-to-r from-emerald-500/20 via-teal-500/20 to-cyan-500/20 border border-emerald-500/30 rounded-2xl p-5 text-left hover:border-emerald-500/50 transition-all active:scale-[0.98]">
+              <div className="flex items-center gap-4">
+                <div className="text-4xl">📖</div>
+                <div className="flex-1">
+                  <div className="font-bold text-lg">ფრაზარიუმი</div>
+                  <div className="text-sm text-[var(--color-text-muted)]">1,700+ ფრაზა აუდიოთი</div>
+                  <div className="text-xs text-emerald-400 mt-1">40 კატეგორია • A1→C1 • 🔊 აუდიო</div>
+                </div>
+                <div className="text-2xl">→</div>
+              </div>
+            </button>
+          </div>
 
           {/* Featured: Daily Games */}
           <div className="px-4 pt-4 pb-2 max-w-lg mx-auto">
@@ -153,6 +172,8 @@ export default function App() {
                 { s: 'timepractice', icon: '🕐', ka: 'საათი', en: 'Time' },
                 { s: 'numberwriting', icon: '🔢', ka: 'რიცხვები', en: 'Numbers' },
                 { s: 'categories', icon: '🗂️', ka: 'კატეგორიები', en: 'Categories' },
+                { s: 'alphabetsounds', icon: '🔤', ka: 'ანბანი', en: 'Alphabet' },
+                { s: 'sentencecorrection', icon: '✏️', ka: 'წინადადების გასწორება', en: 'Fix Sentences' },
               ] as const).map(item => (
                 <button key={item.s} onClick={() => setScreen(item.s as Screen)} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors border border-white/5 hover:border-white/10">
                   <span className="text-xl block mb-1">{item.icon}</span>
@@ -176,6 +197,7 @@ export default function App() {
                 { s: 'proverbs', icon: '📜', ka: 'ანდაზები', en: 'Proverbs' },
                 { s: 'twisters', icon: '👅', ka: 'სკოროგოვორკა', en: 'Tongue Twisters' },
                 { s: 'travelphrases', icon: '🗺️', ka: 'მოგზაურობა', en: 'Travel Phrases' },
+                { s: 'confusingwords', icon: '🔀', ka: 'მსგავსი', en: 'Confusing Words' },
               ] as const).map(item => (
                 <button key={item.s} onClick={() => setScreen(item.s as Screen)} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-3 text-center transition-colors border border-white/5 hover:border-white/10">
                   <span className="text-xl block mb-1">{item.icon}</span>
@@ -268,6 +290,10 @@ export default function App() {
       {screen === 'proverbs' && <Proverbs onBack={handleBack} />}
       {screen === 'timepractice' && <TimePractice onBack={handleBack} />}
       {screen === 'numberwriting' && <NumberWriting onBack={handleBack} />}
+      {screen === 'confusingwords' && <ConfusingWords onBack={handleBack} />}
+      {screen === 'alphabetsounds' && <AlphabetSounds onBack={handleBack} />}
+      {screen === 'sentencecorrection' && <SentenceCorrection onBack={handleBack} />}
+      {screen === 'phrasebook' && <Phrasebook onBack={handleBack} />}
     </div>
   );
 }

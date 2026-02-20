@@ -67,6 +67,11 @@
 50. **🎤 Dictation** — Listen to sentences, type them, 3 difficulty levels, word diff highlighting ✅ BUILT (Feb 20)
 51. **📜 Proverbs & Wisdom** — 24 English proverbs, meanings, Georgian translations, learn + quiz ✅ BUILT (Feb 20)
 
+54. **✏️ Sentence Correction** — 30 wrong sentences, type corrected version, hints in Georgian, grammar rules explained ✅ BUILT (Feb 20)
+
+52. **🔀 Confusing Words** — 18 commonly confused word pairs (their/there, affect/effect), side-by-side comparison, memory tips in Georgian, quiz mode ✅ BUILT (Feb 20)
+53. **🔤 Alphabet & Sounds** — Full English alphabet with IPA, Georgian phonetics, example words, TTS playback, quiz mode ✅ BUILT (Feb 20)
+
 ### Bigger Features (Future)
 
 21. **🤖 AI Chat Practice** — Chat with AI in English, get corrections

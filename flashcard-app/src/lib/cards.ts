@@ -71,6 +71,29 @@ import internetSocialData from '../../content/internet-social.json';
 import furnitureRoomsData from '../../content/furniture-rooms.json';
 import adjectivesCommonData from '../../content/adjectives-common.json';
 import carDrivingData from '../../content/car-driving.json';
+import feelingsMoodsData from '../../content/feelings-moods.json';
+import prepositionsData from '../../content/prepositions-conjunctions.json';
+import restaurantData from '../../content/restaurant-cafe.json';
+import gymData from '../../content/gym-fitness.json';
+import businessMoneyData from '../../content/business-money.json';
+import datingData from '../../content/dating-romance.json';
+import schoolData from '../../content/school-classroom.json';
+import hobbiesData from '../../content/hobbies-free-time.json';
+import weatherDetailedData from '../../content/weather-detailed.json';
+import socialSituationsData from '../../content/social-situations.json';
+import techInternetData from '../../content/technology-internet.json';
+import feelingsEmotionsData from '../../content/feelings-emotions.json';
+import hotelData from '../../content/hotel-accommodation.json';
+import jobInterviewData from '../../content/job-interview.json';
+import doctorMedicalData from '../../content/doctor-medical.json';
+import onlineShoppingData from '../../content/online-shopping.json';
+import textingChatData from '../../content/texting-chat.json';
+import socialLifeData from '../../content/social-life.json';
+import mmaFightingData from '../../content/mma-fighting.json';
+import gamingEsportsData from '../../content/gaming-esports.json';
+import universityData from '../../content/university-college.json';
+import apartmentRentData from '../../content/apartment-rent.json';
+import programmingCodingData from '../../content/programming-coding.json';
 
 export const decks: Deck[] = [
   {
@@ -457,6 +480,167 @@ export const decks: Deck[] = [
     nameKa: 'მანქანა და მართვა',
     icon: '🚗',
     cards: carDrivingData as FlashCard[],
+  },
+  {
+    id: 'feelings-moods',
+    name: 'Feelings & Moods',
+    nameKa: 'გრძნობები და განწყობა',
+    icon: '😊',
+    cards: feelingsMoodsData as FlashCard[],
+  },
+  {
+    id: 'prepositions-conjunctions',
+    name: 'Prepositions & Conjunctions',
+    nameKa: 'წინდებულები და კავშირები',
+    icon: '🔗',
+    cards: prepositionsData as FlashCard[],
+  },
+  {
+    id: 'restaurant-cafe',
+    name: 'Restaurant & Cafe',
+    nameKa: 'რესტორანი და კაფე',
+    icon: '🍽️',
+    cards: restaurantData as FlashCard[],
+  },
+  {
+    id: 'gym-fitness',
+    name: 'Gym & Fitness',
+    nameKa: 'სპორტდარბაზი და ფიტნესი',
+    icon: '💪',
+    cards: gymData as FlashCard[],
+  },
+  {
+    id: 'business-money',
+    name: 'Business & Money',
+    nameKa: 'ბიზნესი და ფული',
+    icon: '💰',
+    cards: businessMoneyData as FlashCard[],
+  },
+  {
+    id: 'dating-romance',
+    name: 'Dating & Romance',
+    nameKa: 'პაემანი და რომანტიკა',
+    icon: '💕',
+    cards: datingData as FlashCard[],
+  },
+  {
+    id: 'school-classroom',
+    name: 'School & Classroom',
+    nameKa: 'სკოლა და საკლასო ოთახი',
+    icon: '🎓',
+    cards: schoolData as FlashCard[],
+  },
+  {
+    id: 'hobbies-free-time',
+    name: 'Hobbies & Free Time',
+    nameKa: 'ჰობი და თავისუფალი დრო',
+    icon: '🎨',
+    cards: hobbiesData as FlashCard[],
+  },
+  {
+    id: 'weather-detailed',
+    name: 'Weather & Climate',
+    nameKa: 'ამინდი და კლიმატი',
+    icon: '🌤️',
+    cards: weatherDetailedData as FlashCard[],
+  },
+  {
+    id: 'social-situations',
+    name: 'Social Situations',
+    nameKa: 'სოციალური სიტუაციები',
+    icon: '🤝',
+    cards: socialSituationsData as FlashCard[],
+  },
+  {
+    id: 'tech-internet',
+    name: 'Technology & Internet',
+    nameKa: 'ტექნოლოგია და ინტერნეტი',
+    icon: '📱',
+    cards: techInternetData as FlashCard[],
+  },
+  {
+    id: 'feelings-emotions',
+    name: 'Feelings & Emotions',
+    nameKa: 'გრძნობები და ემოციები',
+    icon: '😊',
+    cards: feelingsEmotionsData as FlashCard[],
+  },
+  {
+    id: 'hotel',
+    name: 'Hotel & Accommodation',
+    nameKa: 'სასტუმრო და საცხოვრებელი',
+    icon: '🏨',
+    cards: hotelData as FlashCard[],
+  },
+  {
+    id: 'job-interview',
+    name: 'Job Interview',
+    nameKa: 'სამუშაო გასაუბრება',
+    icon: '👔',
+    cards: jobInterviewData as FlashCard[],
+  },
+  {
+    id: 'doctor',
+    name: 'Doctor & Medical',
+    nameKa: 'ექიმი და სამედიცინო',
+    icon: '🩺',
+    cards: doctorMedicalData as FlashCard[],
+  },
+  {
+    id: 'online-shopping',
+    name: 'Online Shopping',
+    nameKa: 'ონლაინ შოპინგი',
+    icon: '🛍️',
+    cards: onlineShoppingData as FlashCard[],
+  },
+  {
+    id: 'texting',
+    name: 'Texting & Chat Slang',
+    nameKa: 'მესიჯები და სლენგი',
+    icon: '💬',
+    cards: textingChatData as FlashCard[],
+  },
+  {
+    id: 'social-life',
+    name: 'Social Life',
+    nameKa: 'სოციალური ცხოვრება',
+    icon: '🎉',
+    cards: socialLifeData as FlashCard[],
+  },
+  {
+    id: 'mma-fighting',
+    name: 'MMA & Fighting',
+    nameKa: 'MMA და ბრძოლა',
+    icon: '🥊',
+    cards: mmaFightingData as FlashCard[],
+  },
+  {
+    id: 'gaming-esports',
+    name: 'Gaming & Esports',
+    nameKa: 'გეიმინგი და ესპორტი',
+    icon: '🎮',
+    cards: gamingEsportsData as FlashCard[],
+  },
+  {
+    id: 'university-college',
+    name: 'University & College',
+    nameKa: 'უნივერსიტეტი',
+    icon: '🎓',
+    cards: universityData as FlashCard[],
+  },
+  {
+    id: 'apartment-rent',
+    name: 'Apartment & Rent',
+    nameKa: 'ბინა და ქირა',
+    icon: '🏢',
+    cards: apartmentRentData as FlashCard[],
+  },
+  {
+    id: 'programming-coding',
+    name: 'Programming & Coding',
+    nameKa: 'პროგრამირება',
+    icon: '💻',
+    cards: programmingCodingData as FlashCard[],
   },
 ];
 
