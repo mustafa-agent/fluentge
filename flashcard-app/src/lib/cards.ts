@@ -67,6 +67,10 @@ import musicArtsData from '../../content/music-arts.json';
 import relationshipsSocialData from '../../content/relationships-social.json';
 import seasonsHolidaysData from '../../content/seasons-holidays.json';
 import sportsGamesData from '../../content/sports-games.json';
+import internetSocialData from '../../content/internet-social.json';
+import furnitureRoomsData from '../../content/furniture-rooms.json';
+import adjectivesCommonData from '../../content/adjectives-common.json';
+import carDrivingData from '../../content/car-driving.json';
 
 export const decks: Deck[] = [
   {
@@ -425,6 +429,34 @@ export const decks: Deck[] = [
     nameKa: 'სლენგი და არაფორმალური',
     icon: '🤙',
     cards: slangData as FlashCard[],
+  },
+  {
+    id: 'internet-social',
+    name: 'Internet & Social Media',
+    nameKa: 'ინტერნეტი და სოციალური ქსელები',
+    icon: '📱',
+    cards: internetSocialData as FlashCard[],
+  },
+  {
+    id: 'furniture-rooms',
+    name: 'Home & Furniture',
+    nameKa: 'სახლი და ავეჯი',
+    icon: '🏠',
+    cards: furnitureRoomsData as FlashCard[],
+  },
+  {
+    id: 'adjectives-common',
+    name: 'Common Adjectives',
+    nameKa: 'ხშირი ზედსართავები',
+    icon: '📝',
+    cards: adjectivesCommonData as FlashCard[],
+  },
+  {
+    id: 'car-driving',
+    name: 'Cars & Driving',
+    nameKa: 'მანქანა და მართვა',
+    icon: '🚗',
+    cards: carDrivingData as FlashCard[],
   },
 ];
 
