@@ -111,6 +111,9 @@ import academicEnglishData from '../../content/academic-english.json';
 import moviesShowsData from '../../content/movies-shows.json';
 import travelAbroadData from '../../content/travel-abroad.json';
 import motivationSuccessData from '../../content/motivation-success.json';
+import beautyCosmeticsData from '../../content/beauty-cosmetics.json';
+import publicTransportData from '../../content/public-transport.json';
+import photographyCameraData from '../../content/photography-camera.json';
 
 export const decks: Deck[] = [
   {
@@ -777,6 +780,27 @@ export const decks: Deck[] = [
     nameKa: 'მოტივაცია და წარმატება',
     icon: '🚀',
     cards: motivationSuccessData as FlashCard[],
+  },
+  {
+    id: 'beauty-cosmetics',
+    name: 'Beauty & Cosmetics',
+    nameKa: 'სილამაზე და კოსმეტიკა',
+    icon: '💄',
+    cards: beautyCosmeticsData as FlashCard[],
+  },
+  {
+    id: 'public-transport',
+    name: 'Public Transport',
+    nameKa: 'საზოგადოებრივი ტრანსპორტი',
+    icon: '🚌',
+    cards: publicTransportData as FlashCard[],
+  },
+  {
+    id: 'photography-camera',
+    name: 'Photography & Camera',
+    nameKa: 'ფოტოგრაფია და კამერა',
+    icon: '📸',
+    cards: photographyCameraData as FlashCard[],
   },
 ];
 

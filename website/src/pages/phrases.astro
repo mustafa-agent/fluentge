@@ -1,141 +1,84 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
 
-const categories = [
-  {
-    id: 'greetings',
-    icon: '👋',
-    title: 'მისალმება და გამოთხოვება',
-    phrases: [
-      { en: "How's it going?", ka: "როგორ მიდის საქმე?", usage: "არაფორმალური მისალმება" },
-      { en: "Long time no see!", ka: "დიდი ხანია არ გვინახავს ერთმანეთი!", usage: "როცა ძველ ნაცნობს ხვდები" },
-      { en: "Take care!", ka: "იფრთხილე!", usage: "გამოთხოვებისას" },
-      { en: "See you around!", ka: "სადმე შევხვდებით!", usage: "არაფორმალური გამოთხოვება" },
-      { en: "What's up?", ka: "რა ხდება?", usage: "მეგობრთან მისალმება" },
-      { en: "Nice to see you again.", ka: "სასიამოვნოა კვლავ შეხვედრა.", usage: "ფორმალური" },
-    ]
-  },
-  {
-    id: 'restaurant',
-    icon: '🍽️',
-    title: 'რესტორანში',
-    phrases: [
-      { en: "Can I see the menu, please?", ka: "შეიძლება მენიუ, გთხოვთ?", usage: "შეკვეთისას" },
-      { en: "I'd like to order...", ka: "მინდა შევუკვეთო...", usage: "შეკვეთის დაწყება" },
-      { en: "Could I have the bill?", ka: "შეიძლება ანგარიში?", usage: "გადახდისას" },
-      { en: "Is this dish spicy?", ka: "ეს კერძი ცხარეა?", usage: "კერძზე კითხვა" },
-      { en: "I'm allergic to...", ka: "მე ალერგია მაქვს...", usage: "ალერგიის შეტყობინება" },
-      { en: "Can I have some water?", ka: "შეიძლება წყალი?", usage: "სასმელის მოთხოვნა" },
-    ]
-  },
-  {
-    id: 'shopping',
-    icon: '🛍️',
-    title: 'მაღაზიაში',
-    phrases: [
-      { en: "How much does this cost?", ka: "რა ღირს ეს?", usage: "ფასის კითხვა" },
-      { en: "Do you have this in a larger size?", ka: "ეს უფრო დიდი ზომით გაქვთ?", usage: "ზომის კითხვა" },
-      { en: "Can I try this on?", ka: "შეიძლება მოვიზომო?", usage: "ტანსაცმლის მოზომვა" },
-      { en: "I'm just looking, thanks.", ka: "უბრალოდ ვათვალიერებ, მადლობა.", usage: "როცა დახმარება არ გჭირდება" },
-      { en: "Do you accept credit cards?", ka: "საკრედიტო ბარათს იღებთ?", usage: "გადახდის ხერხი" },
-      { en: "Can I get a refund?", ka: "შეიძლება თანხის დაბრუნება?", usage: "დაბრუნებისას" },
-    ]
-  },
-  {
-    id: 'transport',
-    icon: '🚌',
-    title: 'ტრანსპორტი და მიმართულება',
-    phrases: [
-      { en: "Excuse me, how do I get to...?", ka: "უკაცრავად, როგორ მივიდე...?", usage: "მიმართულების კითხვა" },
-      { en: "Is this the right way to...?", ka: "ეს სწორი გზაა...?", usage: "გზის დადასტურება" },
-      { en: "How far is it from here?", ka: "რამდენად შორსაა აქედან?", usage: "მანძილის კითხვა" },
-      { en: "Where is the nearest bus stop?", ka: "სად არის უახლოესი ავტობუსის გაჩერება?", usage: "გაჩერების პოვნა" },
-      { en: "Can you call me a taxi?", ka: "შეგიძლიათ ტაქსი გამოიძახოთ?", usage: "ტაქსის გამოძახება" },
-      { en: "One ticket to..., please.", ka: "ერთი ბილეთი..., გთხოვთ.", usage: "ბილეთის ყიდვა" },
-    ]
-  },
-  {
-    id: 'emergency',
-    icon: '🚨',
-    title: 'გადაუდებელი შემთხვევა',
-    phrases: [
-      { en: "I need help!", ka: "დახმარება მჭირდება!", usage: "დახმარების მოთხოვნა" },
-      { en: "Please call an ambulance.", ka: "გთხოვთ გამოიძახეთ სასწრაფო.", usage: "სამედიცინო გადაუდებლობა" },
-      { en: "Where is the hospital?", ka: "სად არის საავადმყოფო?", usage: "საავადმყოფოს პოვნა" },
-      { en: "I've lost my passport.", ka: "პასპორტი დავკარგე.", usage: "დაკარგვის შეტყობინება" },
-      { en: "I don't feel well.", ka: "ცუდად ვარ.", usage: "ექიმთან" },
-      { en: "Can you help me, please?", ka: "შეგიძლიათ დამეხმაროთ, გთხოვთ?", usage: "ზოგადი დახმარება" },
-    ]
-  },
-  {
-    id: 'work',
-    icon: '💼',
-    title: 'სამსახურში',
-    phrases: [
-      { en: "I have a meeting at 3.", ka: "მე 3 საათზე შეხვედრა მაქვს.", usage: "განრიგის შესახებ" },
-      { en: "Could you send me the report?", ka: "შეგიძლია ანგარიში გამომიგზავნო?", usage: "დოკუმენტის მოთხოვნა" },
-      { en: "Let me check my schedule.", ka: "ნება მიბოძეთ ჩემი განრიგი შევამოწმო.", usage: "შეხვედრის დანიშვნა" },
-      { en: "I'll get back to you.", ka: "მოგვიანებით გიპასუხებ.", usage: "პასუხის გადავადება" },
-      { en: "Sorry, I'm running late.", ka: "ბოდიში, ვაგვიანებ.", usage: "დაგვიანების შეტყობინება" },
-      { en: "What's the deadline?", ka: "რა ვადაა?", usage: "ვადის კითხვა" },
-    ]
-  },
-  {
-    id: 'social',
-    icon: '🎉',
-    title: 'სოციალური სიტუაციები',
-    phrases: [
-      { en: "Would you like to grab a coffee?", ka: "ყავაზე წახვალ?", usage: "მეგობრის მოწვევა" },
-      { en: "That sounds like fun!", ka: "საინტერესოდ ჟღერს!", usage: "შეთავაზებაზე თანხმობა" },
-      { en: "I'm sorry, I can't make it.", ka: "ბოდიში, ვერ მოვახერხებ.", usage: "უარის თქმა" },
-      { en: "Happy birthday!", ka: "დაბადების დღეს გილოცავ!", usage: "დაბადების დღეზე" },
-      { en: "Congratulations!", ka: "გილოცავ!", usage: "მიღწევის აღნიშვნა" },
-      { en: "It was nice talking to you.", ka: "სასიამოვნო იყო შენთან საუბარი.", usage: "საუბრის დასრულება" },
-    ]
-  },
-  {
-    id: 'travel',
-    icon: '✈️',
-    title: 'მოგზაურობა',
-    phrases: [
-      { en: "I'd like to book a room.", ka: "ოთახის დაჯავშნა მინდა.", usage: "სასტუმროში" },
-      { en: "When is the next flight to...?", ka: "როდის არის შემდეგი ფრენა...?", usage: "აეროპორტში" },
-      { en: "Is breakfast included?", ka: "საუზმე შედის?", usage: "სასტუმროში" },
-      { en: "Can you recommend a good restaurant?", ka: "შეგიძლიათ კარგი რესტორანი მირჩიოთ?", usage: "რეკომენდაციის მოთხოვნა" },
-      { en: "Where can I exchange money?", ka: "სად შეიძლება ფულის გადაცვლა?", usage: "ვალუტის გადაცვლა" },
-      { en: "Do you have Wi-Fi?", ka: "Wi-Fi გაქვთ?", usage: "ინტერნეტის მოთხოვნა" },
-    ]
-  },
-  {
-    id: 'phone',
-    icon: '📱',
-    title: 'ტელეფონით საუბარი',
-    phrases: [
-      { en: "Hello, this is...", ka: "გამარჯობა, მე ვარ...", usage: "ზარის დაწყება" },
-      { en: "Can I speak to...?", ka: "შემიძლია ესაუბრო...?", usage: "კონკრეტულ პირთან დაკავშირება" },
-      { en: "I'll call you back.", ka: "მოგვიანებით დაგირეკავ.", usage: "ზარის გადავადება" },
-      { en: "Sorry, you've got the wrong number.", ka: "ბოდიში, ნომერი შეცდომითაა.", usage: "არასწორი ნომერი" },
-      { en: "Can you text me the details?", ka: "შეგიძლია დეტალები მომწერო?", usage: "ინფორმაციის მოთხოვნა" },
-      { en: "I can't hear you well.", ka: "კარგად ვერ გისმენ.", usage: "კავშირის პრობლემა" },
-    ]
-  },
-  {
-    id: 'opinion',
-    icon: '💭',
-    title: 'აზრის გამოთქმა',
-    phrases: [
-      { en: "I think that...", ka: "ვფიქრობ, რომ...", usage: "აზრის გამოხატვა" },
-      { en: "In my opinion...", ka: "ჩემი აზრით...", usage: "ფორმალური აზრი" },
-      { en: "I agree with you.", ka: "გეთანხმები.", usage: "თანხმობის გამოხატვა" },
-      { en: "I'm not sure about that.", ka: "ამაში არ ვარ დარწმუნებული.", usage: "ეჭვის გამოხატვა" },
-      { en: "That's a good point.", ka: "ეს კარგი მოსაზრებაა.", usage: "მოწონების გამოხატვა" },
-      { en: "I disagree because...", ka: "არ ვეთანხმები, რადგან...", usage: "არათანხმობის გამოხატვა" },
-    ]
-  },
-];
+const phraseDir = path.resolve('..', 'content', 'phrasebook');
+const files = fs.readdirSync(phraseDir).filter(f => f.endsWith('.json')).sort();
+
+const categoryMeta: Record<string, { icon: string; title: string }> = {
+  '01-greetings-basics': { icon: '👋', title: 'მისალმება და საფუძვლები' },
+  '02-numbers-money': { icon: '💰', title: 'რიცხვები და ფული' },
+  '03-food-restaurant': { icon: '🍽️', title: 'საკვები და რესტორანი' },
+  '04-directions-transport': { icon: '🚌', title: 'მიმართულება და ტრანსპორტი' },
+  '05-emergency-help': { icon: '🚨', title: 'გადაუდებელი დახმარება' },
+  '06-shopping-basics': { icon: '🛍️', title: 'მაღაზიაში' },
+  '07-time-dates': { icon: '🕐', title: 'დრო და თარიღები' },
+  '08-family-people': { icon: '👨‍👩‍👧‍👦', title: 'ოჯახი და ადამიანები' },
+  '09-hotel-accommodation': { icon: '🏨', title: 'სასტუმრო' },
+  '10-phone-internet': { icon: '📱', title: 'ტელეფონი და ინტერნეტი' },
+  '11-weather-nature': { icon: '🌤️', title: 'ამინდი და ბუნება' },
+  '12-health-doctor': { icon: '🩺', title: 'ჯანმრთელობა და ექიმი' },
+  '13-home-apartment': { icon: '🏠', title: 'სახლი და ბინა' },
+  '14-work-office': { icon: '💼', title: 'სამსახური' },
+  '15-school-education': { icon: '🎓', title: 'სკოლა და განათლება' },
+  '16-hobbies-free-time': { icon: '🎨', title: 'ჰობი და თავისუფალი დრო' },
+  '17-opinions-agreements': { icon: '💭', title: 'აზრის გამოთქმა' },
+  '18-emotions-feelings': { icon: '😊', title: 'ემოციები და გრძნობები' },
+  '19-relationships-dating': { icon: '❤️', title: 'ურთიერთობები' },
+  '20-parties-social': { icon: '🎉', title: 'წვეულებები და სოციალური' },
+  '21-complaints-problems': { icon: '😤', title: 'საჩივრები და პრობლემები' },
+  '22-plans-future': { icon: '📋', title: 'გეგმები და მომავალი' },
+  '23-small-talk': { icon: '🗣️', title: 'მცირე საუბარი' },
+  '24-travel-vacation': { icon: '✈️', title: 'მოგზაურობა და შვებულება' },
+  '25-business-meetings': { icon: '🤝', title: 'ბიზნესი და შეხვედრები' },
+  '26-debates-arguments': { icon: '⚖️', title: 'დებატები და კამათი' },
+  '27-idioms-expressions': { icon: '🎯', title: 'იდიომები და გამოთქმები' },
+  '28-humor-jokes': { icon: '😂', title: 'იუმორი და ხუმრობები' },
+  '29-technology-apps': { icon: '💻', title: 'ტექნოლოგია და აპლიკაციები' },
+  '30-news-politics': { icon: '📰', title: 'ახალი ამბები და პოლიტიკა' },
+  '31-sports-fitness': { icon: '🏋️', title: 'სპორტი და ფიტნესი' },
+  '32-movies-entertainment': { icon: '🎬', title: 'ფილმები და გართობა' },
+  '33-slang-informal': { icon: '🔥', title: 'სლენგი და არაფორმალური' },
+  '34-professional-formal': { icon: '👔', title: 'პროფესიული და ფორმალური' },
+  '35-academic-intellectual': { icon: '📚', title: 'აკადემიური და ინტელექტუალური' },
+  '36-cultural-references': { icon: '🌍', title: 'კულტურული მითითებები' },
+  '37-sarcasm-irony': { icon: '😏', title: 'სარკაზმი და ირონია' },
+  '38-proverbs-wisdom': { icon: '🦉', title: 'ანდაზები და სიბრძნე' },
+  '39-negotiation-persuasion': { icon: '🎪', title: 'მოლაპარაკება და დარწმუნება' },
+  '40-storytelling-narrative': { icon: '📖', title: 'მოთხრობა და ნარატივი' },
+};
+
+interface Phrase {
+  id: string;
+  english: string;
+  georgian: string;
+  literal?: string;
+  context?: string;
+  level?: string;
+  category?: string;
+}
+
+interface Category {
+  key: string;
+  icon: string;
+  title: string;
+  phrases: Phrase[];
+}
+
+const categories: Category[] = files.map(f => {
+  const key = f.replace('.json', '');
+  const meta = categoryMeta[key] || { icon: '📝', title: key };
+  const phrases: Phrase[] = JSON.parse(fs.readFileSync(path.join(phraseDir, f), 'utf-8'));
+  return { key, ...meta, phrases };
+});
+
+const totalPhrases = categories.reduce((sum, c) => sum + c.phrases.length, 0);
+
+const FREE_CATEGORIES = 5;
 ---
 
-<Layout title="💬 სასარგებლო ფრაზები — FluentGe">
+<Layout title="💬 ფრაზები — FluentGe">
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://images.unsplash.com/photo-1543165796-5426273eaab3?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-30"/>
@@ -143,33 +86,65 @@ const categories = [
     </div>
     <div class="relative max-w-4xl mx-auto px-4 pt-24 pb-16 text-center">
       <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">ფრაზები</h1>
-      <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto">ყოველდღიური ინგლისური ფრაზები</p>
+      <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto">ყოველდღიური ინგლისური ფრაზები ქართული თარგმანით და აუდიოთი</p>
     </div>
   </section>
 
-  <section class="max-w-4xl mx-auto px-4 py-16">
-    <div class="text-center mb-12">
-      <p class="text-[#6B6B65] text-sm">{categories.reduce((sum, c) => sum + c.phrases.length, 0)} ფრაზა · {categories.length} კატეგორია</p>
+  <!-- Search & Stats -->
+  <section class="max-w-4xl mx-auto px-4 pt-8">
+    <div class="text-center mb-6">
+      <p class="text-[#6B6B65] text-sm">{totalPhrases} ფრაზა · {categories.length} კატეგორია · 🔊 აუდიოთი</p>
+    </div>
+    <div class="mb-8">
+      <input type="text" id="searchInput" placeholder="🔍 მოძებნე ფრაზა..." class="w-full bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 text-[#C8C8C0] placeholder-[#6B6B65] focus:outline-none focus:border-[#D4A853]"/>
     </div>
 
-    <div class="space-y-8">
-      {categories.map((cat) => (
-        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden">
-          <div class="p-6 border-b border-[#2E2E30]">
+    <!-- Level Filter -->
+    <div class="flex gap-2 justify-center mb-8 flex-wrap">
+      <button class="level-btn active px-4 py-2 rounded-full text-sm border border-[#2E2E30] bg-[#D4A853] text-black font-medium" data-level="all">ყველა</button>
+      <button class="level-btn px-4 py-2 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853]" data-level="A1">A1</button>
+      <button class="level-btn px-4 py-2 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853]" data-level="A2">A2</button>
+      <button class="level-btn px-4 py-2 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853]" data-level="B1">B1</button>
+      <button class="level-btn px-4 py-2 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853]" data-level="B2">B2</button>
+      <button class="level-btn px-4 py-2 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853]" data-level="C1">C1</button>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="max-w-4xl mx-auto px-4 pb-16">
+    <div class="space-y-6" id="categoriesContainer">
+      {categories.map((cat, catIdx) => (
+        <div class="category-block bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden" data-cat-index={catIdx}>
+          <button class="w-full p-5 border-b border-[#2E2E30] flex items-center justify-between cursor-pointer hover:bg-[#2A2A2C] transition-colors cat-toggle">
             <div class="flex items-center gap-3">
-              <span class="text-3xl">{cat.icon}</span>
-              <h2 class="text-xl font-bold">{cat.title}</h2>
+              <span class="text-2xl">{cat.icon}</span>
+              <div class="text-left">
+                <h2 class="text-lg font-bold text-[#C8C8C0]">{cat.title}</h2>
+                <p class="text-xs text-[#6B6B65]">{cat.phrases.length} ფრაზა</p>
+              </div>
             </div>
-          </div>
-          <div class="divide-y divide-white/5">
+            <div class="flex items-center gap-2">
+              {catIdx >= FREE_CATEGORIES && <span class="text-xs bg-[#D4A853]/20 text-[#D4A853] px-2 py-1 rounded-full">პრემიუმ</span>}
+              <svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </button>
+          <div class="phrases-list hidden divide-y divide-white/5">
             {cat.phrases.map((phrase) => (
-              <div class="px-6 py-4 hover:bg-[#242426] transition-colors">
-                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                  <p class="text-[#C8C8C0] font-medium text-lg">{phrase.en}</p>
-                  <span class="text-[#6B6B65] hidden sm:inline">—</span>
-                  <p class="text-[#6B6B65]">{phrase.ka}</p>
+              <div class="phrase-item px-5 py-4 hover:bg-[#2A2A2C] transition-colors" data-level={phrase.level} data-en={phrase.english.toLowerCase()} data-ka={phrase.georgian.toLowerCase()}>
+                <div class="flex items-start gap-3">
+                  <button class="play-btn mt-1 w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-[#D4A853]/20 text-[#D4A853] hover:bg-[#D4A853]/40 transition-colors" data-audio={`/audio/phrases/${phrase.id}.mp3`} title="მოუსმინე">
+                    🔊
+                  </button>
+                  <div class="flex-1">
+                    <p class="text-[#C8C8C0] font-medium text-lg">{phrase.english}</p>
+                    <p class="text-[#8B8B85] mt-1">{phrase.georgian}</p>
+                    {phrase.literal && <p class="text-xs text-[#5B5B55] mt-1 italic">პირდაპირი: {phrase.literal}</p>}
+                    <div class="flex items-center gap-2 mt-2">
+                      {phrase.level && <span class={`text-xs px-2 py-0.5 rounded-full ${phrase.level === 'A1' ? 'bg-green-900/30 text-green-400' : phrase.level === 'A2' ? 'bg-blue-900/30 text-blue-400' : phrase.level === 'B1' ? 'bg-yellow-900/30 text-yellow-400' : phrase.level === 'B2' ? 'bg-orange-900/30 text-orange-400' : 'bg-red-900/30 text-red-400'}`}>{phrase.level}</span>}
+                      {phrase.context && <span class="text-xs text-[#5B5B55]">📌 {phrase.context}</span>}
+                    </div>
+                  </div>
                 </div>
-                <p class="text-xs text-[#475569] mt-1">📌 {phrase.usage}</p>
               </div>
             ))}
           </div>
@@ -178,3 +153,89 @@ const categories = [
     </div>
   </section>
 </Layout>
+
+<script>
+  let currentAudio: HTMLAudioElement | null = null;
+
+  // Play audio
+  document.querySelectorAll('.play-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const src = (btn as HTMLElement).dataset.audio;
+      if (!src) return;
+      if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+      currentAudio = new Audio(src);
+      currentAudio.play().catch(() => {
+        // Fallback to Web Speech API
+        const text = btn.closest('.phrase-item')?.querySelector('.text-lg')?.textContent;
+        if (text) {
+          const u = new SpeechSynthesisUtterance(text);
+          u.lang = 'en-US';
+          u.rate = 0.85;
+          speechSynthesis.speak(u);
+        }
+      });
+    });
+  });
+
+  // Toggle categories
+  document.querySelectorAll('.cat-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const block = btn.closest('.category-block');
+      const list = block?.querySelector('.phrases-list');
+      const arrow = block?.querySelector('.cat-arrow');
+      if (list && arrow) {
+        list.classList.toggle('hidden');
+        arrow.classList.toggle('rotate-180');
+      }
+    });
+  });
+
+  // Search
+  const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+  searchInput?.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase().trim();
+    document.querySelectorAll('.phrase-item').forEach(el => {
+      const en = (el as HTMLElement).dataset.en || '';
+      const ka = (el as HTMLElement).dataset.ka || '';
+      const match = !q || en.includes(q) || ka.includes(q);
+      (el as HTMLElement).style.display = match ? '' : 'none';
+    });
+    // Show categories that have visible phrases
+    document.querySelectorAll('.category-block').forEach(block => {
+      const list = block.querySelector('.phrases-list');
+      if (!list) return;
+      const visiblePhrases = list.querySelectorAll('.phrase-item:not([style*="display: none"])');
+      (block as HTMLElement).style.display = visiblePhrases.length > 0 || !q ? '' : 'none';
+      if (q && visiblePhrases.length > 0) {
+        list.classList.remove('hidden');
+        block.querySelector('.cat-arrow')?.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Level filter
+  document.querySelectorAll('.level-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.level-btn').forEach(b => {
+        b.classList.remove('active', 'bg-[#D4A853]', 'text-black', 'font-medium');
+        b.classList.add('bg-[#242426]', 'text-[#C8C8C0]');
+      });
+      btn.classList.add('active', 'bg-[#D4A853]', 'text-black', 'font-medium');
+      btn.classList.remove('bg-[#242426]', 'text-[#C8C8C0]');
+      
+      const level = (btn as HTMLElement).dataset.level;
+      document.querySelectorAll('.phrase-item').forEach(el => {
+        const phraseLevel = (el as HTMLElement).dataset.level;
+        const match = level === 'all' || phraseLevel === level;
+        (el as HTMLElement).style.display = match ? '' : 'none';
+      });
+      document.querySelectorAll('.category-block').forEach(block => {
+        const list = block.querySelector('.phrases-list');
+        if (!list) return;
+        const visiblePhrases = list.querySelectorAll('.phrase-item:not([style*="display: none"])');
+        (block as HTMLElement).style.display = visiblePhrases.length > 0 ? '' : 'none';
+      });
+    });
+  });
+</script>
