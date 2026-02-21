@@ -106,6 +106,8 @@ import barbershopGroomingData from '../../content/barbershop-grooming.json';
 import drivingTestData from '../../content/driving-test.json';
 import phoneAppsData from '../../content/phone-apps.json';
 import fastFoodSnacksData from '../../content/fast-food-snacks.json';
+import phrasalVerbsData from '../../content/phrasal-verbs.json';
+import academicEnglishData from '../../content/academic-english.json';
 
 export const decks: Deck[] = [
   {
@@ -737,6 +739,20 @@ export const decks: Deck[] = [
     nameKa: 'ფასტფუდი და სნეკები',
     icon: '🍔',
     cards: fastFoodSnacksData as FlashCard[],
+  },
+  {
+    id: 'phrasal-verbs',
+    name: 'Phrasal Verbs',
+    nameKa: 'ფრაზული ზმნები',
+    icon: '🔗',
+    cards: phrasalVerbsData as FlashCard[],
+  },
+  {
+    id: 'academic-english',
+    name: 'Academic English',
+    nameKa: 'აკადემიური ინგლისური',
+    icon: '🎓',
+    cards: academicEnglishData as FlashCard[],
   },
 ];
 
