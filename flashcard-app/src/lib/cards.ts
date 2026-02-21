@@ -114,6 +114,7 @@ import motivationSuccessData from '../../content/motivation-success.json';
 import beautyCosmeticsData from '../../content/beauty-cosmetics.json';
 import publicTransportData from '../../content/public-transport.json';
 import photographyCameraData from '../../content/photography-camera.json';
+import musicLyricsData from '../../content/music-lyrics.json';
 
 export const decks: Deck[] = [
   {
@@ -801,6 +802,13 @@ export const decks: Deck[] = [
     nameKa: 'ფოტოგრაფია და კამერა',
     icon: '📸',
     cards: photographyCameraData as FlashCard[],
+  },
+  {
+    id: 'music-lyrics',
+    name: 'Music & Lyrics',
+    nameKa: 'მუსიკა და ტექსტები',
+    icon: '🎤',
+    cards: musicLyricsData as FlashCard[],
   },
 ];
 
