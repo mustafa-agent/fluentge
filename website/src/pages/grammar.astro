@@ -39,8 +39,8 @@ function isLessonFree(slug: string) {
     {levels.map(level => (
       <div class="mb-12">
         <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-          <span class={`px-3 py-1 rounded-full text-sm font-bold ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
-          <span>{level === 'A1' ? 'დამწყები' : level === 'A2' ? 'ელემენტარული' : level}</span>
+          <span class={`px-3 py-1 rounded-full text-sm font-bold ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
+          <span>{level === 'A1' ? 'დამწყები' : level === 'A2' ? 'ელემენტარული' : level === 'B1' ? 'საშუალო' : level === 'B2' ? 'საშუალო+' : level === 'C1' ? 'მოწინავე' : level}</span>
         </h2>
         <div class="grid gap-4 sm:grid-cols-2">
           {grouped[level].map(lesson => {
@@ -51,7 +51,7 @@ function isLessonFree(slug: string) {
                   <h3 class="font-semibold text-lg">{lesson.title_ka}</h3>
                   <div class="flex items-center gap-1">
                     <span class="text-xs px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">✅ უფასო</span>
-                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>{level}</span>
+                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
                   </div>
                 </div>
                 <p class="text-[#6B6B65] text-sm">{lesson.title_en}</p>
@@ -63,7 +63,7 @@ function isLessonFree(slug: string) {
                   <h3 class="font-semibold text-lg">{lesson.title_ka} 🔒</h3>
                   <div class="flex items-center gap-1">
                     <span class="text-xs px-2 py-0.5 rounded-full font-medium bg-amber-500/20 text-amber-400">🔒</span>
-                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
+                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
                   </div>
                 </div>
                 <p class="text-[#6B6B65] text-sm">{lesson.title_en}</p>
@@ -78,7 +78,7 @@ function isLessonFree(slug: string) {
     <!-- Premium CTA -->
     <div class="mt-8 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
       <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა გაკვეთილი</h3>
-      <p class="text-[#6B6B65] mb-6">30 გრამატიკის გაკვეთილი, 1060+ სიტყვა, ყველა კატეგორია</p>
+      <p class="text-[#6B6B65] mb-6">65 გრამატიკის გაკვეთილი, A1-დან C1-მდე, ყველა კატეგორია</p>
       <a href="/premium/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
         დაიწყე პრემიუმი
       </a>

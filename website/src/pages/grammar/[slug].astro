@@ -22,7 +22,7 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
     <!-- Header -->
     <a href="/grammar/" class="text-[#C8C8C0] hover:underline text-sm mb-6 inline-block">← გრამატიკა</a>
     <div class="flex items-center gap-3 mb-2">
-      <span class={`px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : 'bg-blue-500/20 text-blue-400'}`}>{lesson.level}</span>
+      <span class={`px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : lesson.level === 'A2' ? 'bg-blue-500/20 text-blue-400' : lesson.level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : lesson.level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{lesson.level}</span>
       <span class="text-[#6B6B65] text-sm">გაკვეთილი #{lesson.id}</span>
     </div>
     <h1 class="text-3xl font-bold mb-1">{lesson.title_ka}</h1>

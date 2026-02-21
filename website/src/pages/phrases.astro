@@ -113,21 +113,27 @@ const FREE_CATEGORIES = 5;
   <!-- Categories -->
   <section class="max-w-4xl mx-auto px-4 pb-16">
     <div class="space-y-6" id="categoriesContainer">
-      {categories.map((cat, catIdx) => (
-        <div class="category-block bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden" data-cat-index={catIdx}>
-          <button class="w-full p-5 border-b border-[#2E2E30] flex items-center justify-between cursor-pointer hover:bg-[#2A2A2C] transition-colors cat-toggle">
+      {categories.map((cat, catIdx) => {
+        const isPremium = catIdx >= FREE_CATEGORIES;
+        return (
+        <div class={`category-block bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden ${isPremium ? 'premium-locked' : ''}`} data-cat-index={catIdx} data-premium={isPremium ? 'true' : 'false'}>
+          <button class={`w-full p-5 border-b border-[#2E2E30] flex items-center justify-between cursor-pointer hover:bg-[#2A2A2C] transition-colors ${isPremium ? 'premium-toggle' : 'cat-toggle'}`}>
             <div class="flex items-center gap-3">
               <span class="text-2xl">{cat.icon}</span>
               <div class="text-left">
-                <h2 class="text-lg font-bold text-[#C8C8C0]">{cat.title}</h2>
+                <h2 class={`text-lg font-bold ${isPremium ? 'text-[#6B6B65]' : 'text-[#C8C8C0]'}`}>{cat.title}</h2>
                 <p class="text-xs text-[#6B6B65]">{cat.phrases.length} ფრაზა</p>
               </div>
             </div>
             <div class="flex items-center gap-2">
-              {catIdx >= FREE_CATEGORIES && <span class="text-xs bg-[#D4A853]/20 text-[#D4A853] px-2 py-1 rounded-full">პრემიუმ</span>}
-              <svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              {isPremium ? (
+                <span class="flex items-center gap-1 text-xs bg-[#D4A853]/20 text-[#D4A853] px-3 py-1 rounded-full">🔒 პრემიუმ</span>
+              ) : (
+                <svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              )}
             </div>
           </button>
+          {!isPremium && (
           <div class="phrases-list hidden divide-y divide-white/5">
             {cat.phrases.map((phrase) => (
               <div class="phrase-item px-5 py-4 hover:bg-[#2A2A2C] transition-colors" data-level={phrase.level} data-en={phrase.english.toLowerCase()} data-ka={phrase.georgian.toLowerCase()}>
@@ -148,10 +154,28 @@ const FREE_CATEGORIES = 5;
               </div>
             ))}
           </div>
+          )}
         </div>
-      ))}
+        );
+      })}
     </div>
   </section>
+
+  <!-- Premium Paywall Modal -->
+  <div id="premiumModal" class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl max-w-md w-full p-8 text-center">
+      <div class="text-5xl mb-4">🔒</div>
+      <h3 class="text-2xl font-bold text-[#C8C8C0] mb-3">პრემიუმ კონტენტი</h3>
+      <p class="text-[#8B8B85] mb-2">ეს კატეგორია მხოლოდ პრემიუმ მომხმარებლებისთვისაა.</p>
+      <p class="text-[#8B8B85] mb-6">გახსენი <strong class="text-[#D4A853]">1,400+ ფრაზა</strong> 35 კატეგორიაში აუდიოთი! მხოლოდ $9.99!</p>
+      <div class="bg-[#1C1C1E] rounded-xl p-4 mb-6">
+        <p class="text-[#D4A853] text-2xl font-bold">$9.99</p>
+        <p class="text-xs text-[#6B6B65] mt-1">ერთჯერადი გადახდა — სამუდამო წვდომა</p>
+      </div>
+      <a href="/premium" class="inline-block w-full bg-[#D4A853] text-black font-bold py-3 px-6 rounded-xl hover:bg-[#C49A48] transition-colors mb-3">გახსენი პრემიუმი ⚡</a>
+      <button id="closeModal" class="text-[#6B6B65] text-sm hover:text-[#C8C8C0] transition-colors">დახურვა</button>
+    </div>
+  </div>
 </Layout>
 
 <script>
@@ -178,7 +202,7 @@ const FREE_CATEGORIES = 5;
     });
   });
 
-  // Toggle categories
+  // Toggle free categories
   document.querySelectorAll('.cat-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
       const block = btn.closest('.category-block');
@@ -189,6 +213,20 @@ const FREE_CATEGORIES = 5;
         arrow.classList.toggle('rotate-180');
       }
     });
+  });
+
+  // Premium categories → show paywall
+  const modal = document.getElementById('premiumModal');
+  document.querySelectorAll('.premium-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal?.classList.remove('hidden');
+    });
+  });
+  document.getElementById('closeModal')?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+  });
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.add('hidden');
   });
 
   // Search

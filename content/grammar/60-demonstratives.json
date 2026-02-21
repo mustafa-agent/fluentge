@@ -1,0 +1,23 @@
+{
+  "id": 60,
+  "slug": "demonstratives",
+  "title_en": "This / That / These / Those",
+  "title_ka": "ჩვენებითი ნაცვალსახელები",
+  "level": "A1",
+  "explanation_ka": "ჩვენებითი ნაცვალსახელები გამოიყენება საგნებზე მისათითებლად.\n\nახლოს:\nthis — ეს (ერთი საგანი)\nthese — ეს (რამდენიმე საგანი)\n\nშორს:\nthat — ის (ერთი საგანი)\nthose — ის (რამდენიმე საგანი)\n\nმაგალითად:\nThis is my phone. — ეს ჩემი ტელეფონია.\nThose are expensive. — ისინი ძვირია.\n\nThis/that + მხოლობითი\nThese/those + მრავლობითი",
+  "examples": [
+    {"en": "This is my book.", "ka": "ეს ჩემი წიგნია."},
+    {"en": "That is a good idea.", "ka": "ის კარგი იდეაა."},
+    {"en": "These shoes are nice.", "ka": "ეს ფეხსაცმელები ლამაზია."},
+    {"en": "Those people are friendly.", "ka": "ის ხალხი მეგობრულია."},
+    {"en": "What is this?", "ka": "რა არის ეს?"}
+  ],
+  "common_mistakes_ka": "ხშირი შეცდომაა \"this\" მრავლობით რიცხვთან გამოყენება. \"This books\" არასწორია — სწორია \"These books\". ასევე \"that\" + მრავლობითი არასწორია — გამოიყენეთ \"those\".",
+  "exercises": [
+    {"type": "fill-blank", "question": "___ is my car. (ახლოს)", "answer": "This", "options": ["This", "That", "These"]},
+    {"type": "fill-blank", "question": "___ are my friends. (ახლოს)", "answer": "These", "options": ["This", "These", "Those"]},
+    {"type": "fill-blank", "question": "___ building is very old. (შორს)", "answer": "That", "options": ["This", "That", "Those"]},
+    {"type": "fill-blank", "question": "___ mountains are beautiful. (შორს)", "answer": "Those", "options": ["These", "That", "Those"]},
+    {"type": "multiple-choice", "question": "Which is correct?", "options": ["This books are mine.", "These books are mine.", "That books are mine."], "answer": "These books are mine."}
+  ]
+}

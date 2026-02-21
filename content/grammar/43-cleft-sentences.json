@@ -1,0 +1,31 @@
+{
+  "id": 43,
+  "slug": "cleft-sentences",
+  "title_en": "Cleft Sentences",
+  "title_ka": "გახლეჩილი წინადადებები (Cleft Sentences)",
+  "level": "B2",
+  "explanation_ka": "გახლეჩილი წინადადებები (Cleft Sentences) გამოიყენება წინადადების კონკრეტული ნაწილის ხაზგასასმელად. ჩვეულებრივი წინადადება ორ ნაწილად 'იხლეჩება'.\n\n**1. It-cleft (It was/is... that/who...)**\nსტრუქტურა: It + be + ხაზგასმული ნაწილი + that/who + დანარჩენი\n\nჩვეულებრივი: John broke the window.\nIt-cleft: It was John who broke the window. (ჯონმა გატეხა ფანჯარა — სწორედ ჯონმა.)\n\nIt was yesterday that I met her. (გუშინ შევხვდი — სწორედ გუშინ.)\nIt is this book that I need. (ეს წიგნი მჭირდება — სწორედ ეს.)\n\n**2. What-cleft (What... is/was...)**\nსტრუქტურა: What + clause + is/was + ხაზგასმული ნაწილი\n\nWhat I need is a good rest. (რაც მჭირდება, კარგი დასვენებაა.)\nWhat she did was call the police. (რაც მან გააკეთა — პოლიციას დაურეკა.)\n\n**3. All-cleft**\nAll I want is some peace and quiet. (მხოლოდ სიმშვიდე მინდა.)\n\n**4. The thing/reason/place-cleft**\nThe reason I left was the noise. (წასვლის მიზეზი ხმაური იყო.)\nThe place where I feel happy is home. (ადგილი სადაც ბედნიერი ვარ, სახლია.)\n\n| ტიპი | სტრუქტურა | მაგალითი |\n|------|-----------|----------|\n| It-cleft | It + be + X + that/who | It was Mary who called |\n| What-cleft | What + clause + be + X | What I want is coffee |\n| All-cleft | All + clause + be + X | All you need is love |\n| The thing-cleft | The thing + that + clause + be | The thing I like is the music |",
+  "examples": [
+    {"en": "It was the noise that woke me up.", "ka": "ხმაურმა გამაღვიძა — სწორედ ხმაურმა."},
+    {"en": "It is you who should apologize.", "ka": "სწორედ შენ უნდა მოიხადო ბოდიში."},
+    {"en": "What I really need is a vacation.", "ka": "რაც მართლა მჭირდება, შვებულებაა."},
+    {"en": "What bothers me is his attitude.", "ka": "რაც მაწუხებს, მისი დამოკიდებულებაა."},
+    {"en": "It was in Paris that they first met.", "ka": "სწორედ პარიზში შეხვდნენ პირველად."},
+    {"en": "All I wanted was a simple answer.", "ka": "მხოლოდ მარტივი პასუხი მინდოდა."},
+    {"en": "The reason I'm calling is to ask for help.", "ka": "ზარის მიზეზი ისაა, რომ დახმარება მინდა."},
+    {"en": "What she said was completely wrong.", "ka": "ის, რაც მან თქვა, სრულიად არასწორი იყო."}
+  ],
+  "common_mistakes_ka": "ხშირი შეცდომები:\n1) It-cleft-ში that/who-ს გამოტოვება:\n❌ It was John broke the window.\n✅ It was John who broke the window.\n\n2) What-cleft-ში ზმნის შეუთანხმებლობა:\n❌ What I need are money.\n✅ What I need is money.\n\n3) It-cleft-ში be ზმნის დროის არასწორი შერჩევა:\nწარსულის ხაზგასმისთვის: It was... (არა It is)\nაწმყოს ხაზგასმისთვის: It is... (არა It was)",
+  "exercises": [
+    {"type": "fill-blank", "question": "It ___ the dog that ate my homework.", "options": ["was", "is", "were"], "answer": "was"},
+    {"type": "fill-blank", "question": "What I need ___ more time.", "options": ["is", "are", "were"], "answer": "is"},
+    {"type": "fill-blank", "question": "It was Mary ___ won the prize.", "options": ["who", "which", "what"], "answer": "who"},
+    {"type": "multiple-choice", "question": "რომელია It-cleft?", "options": ["John broke the window.", "It was John who broke the window.", "The window was broken by John."], "answer": "It was John who broke the window."},
+    {"type": "fill-blank", "question": "___ I want is some peace and quiet.", "options": ["All", "It", "What"], "answer": "All"},
+    {"type": "fill-blank", "question": "It was in 2010 ___ they got married.", "options": ["that", "when", "which"], "answer": "that"},
+    {"type": "fill-blank", "question": "___ bothers me is the constant noise.", "options": ["What", "It", "That"], "answer": "What"},
+    {"type": "multiple-choice", "question": "გადააკეთეთ cleft-ად: 'I love the music.'", "options": ["What I love is the music.", "It was the music I love.", "The music is what I love it."], "answer": "What I love is the music."},
+    {"type": "fill-blank", "question": "The reason I came ___ to see you.", "options": ["was", "is", "were"], "answer": "was"},
+    {"type": "fill-blank", "question": "It ___ here that the accident happened.", "options": ["was", "is", "has"], "answer": "was"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 47,
+  "slug": "ellipsis-substitution",
+  "title_en": "Ellipsis & Substitution",
+  "title_ka": "ელიფსისი და ჩანაცვლება",
+  "level": "C1",
+  "explanation_ka": "ელიფსისი (Ellipsis) ნიშნავს სიტყვების გამოტოვებას, რომლებიც კონტექსტიდან გასაგებია. ჩანაცვლება (Substitution) ნიშნავს სიტყვის შეცვლას მოკლე ფორმით (one, do, so და ა.შ.). ორივე ტექნიკა ტექსტს ბუნებრივსა და არაგანმეორებადს ხდის.\n\n**1. ელიფსისი (გამოტოვება)**\n\n**დამხმარე ზმნის შემდეგ:**\n'Can you swim?' — 'Yes, I can.' (swim გამოტოვებულია)\n'She has finished but I haven't.' (finished გამოტოვებულია)\n\n**to-ინფინიტივთან:**\n'Would you like to come?' — 'I'd love to.' (come გამოტოვებულია)\n\n**that-ის გამოტოვება:**\nI think (that) he's right. — that არასავალდებულოა\n\n**2. ჩანაცვლება (Substitution)**\n\n**one/ones — არსებითი სახელის ნაცვლად:**\n'Which shirt?' — 'The blue one.' (one = shirt)\n\n**do/does/did — ზმნის ნაცვლად:**\nShe works harder than I do. (do = work)\n\n**so — წინადადების ნაცვლად:**\n'Is it going to rain?' — 'I think so.' (so = that it will rain)\n'Will they come?' — 'I hope so.'\n\n**not — უარყოფითი ჩანაცვლება:**\n'Will it rain?' — 'I hope not.' (not = that it won't rain)\n\n**neither/nor + auxiliary — უარყოფითი თანხმობა:**\n'I don't like spiders.' — 'Neither do I.'\n\n**so + auxiliary — დადებითი თანხმობა:**\n'I love coffee.' — 'So do I.'\n\n| ტექნიკა | მაგალითი | ახსნა |\n|---------|----------|-------|\n| ელიფსისი | 'Yes, I can.' | ძირითადი ზმნა გამოტოვებული |\n| one | 'The red one' | one = არსებითი სახელი |\n| do | 'She runs faster than I do' | do = run |\n| so | 'I think so' | so = მთელი წინადადება |\n| neither | 'Neither do I' | უარყოფითი თანხმობა |",
+  "examples": [
+    {"en": "'Can you drive?' — 'Yes, I can.'", "ka": "'ტარება შეგიძლია?' — 'დიახ, შემიძლია.'"},
+    {"en": "I wanted to help but I wasn't able to.", "ka": "დახმარება მინდოდა, მაგრამ ვერ შევძელი."},
+    {"en": "'Which bag do you want?' — 'The leather one.'", "ka": "'რომელი ჩანთა გინდა?' — 'ტყავის.'"},
+    {"en": "She speaks French and so does her sister.", "ka": "ის ფრანგულად ლაპარაკობს და მისი დაც ასევე."},
+    {"en": "'I don't like horror movies.' — 'Neither do I.'", "ka": "'საშინელებათა ფილმები არ მომწონს.' — 'მეც არა.'"},
+    {"en": "'Will it snow tomorrow?' — 'I hope not.'", "ka": "'ხვალ მოთოვს?' — 'იმედია არა.'"},
+    {"en": "'Is he coming to the party?' — 'I believe so.'", "ka": "'წვეულებაზე მოვა?' — 'ვფიქრობ, კი.'"},
+    {"en": "He works harder than she does.", "ka": "ის უფრო მეტს მუშაობს, ვიდრე ის (ქალი)."}
+  ],
+  "common_mistakes_ka": "ხშირი შეცდომები:\n1) so/neither-ს შემდეგ სიტყვათა თანმიმდევრობა:\n❌ 'I like tea.' — 'So I do.'\n✅ 'I like tea.' — 'So do I.'\n\n2) neither-ს ნაცვლად so not-ის გამოყენება:\n❌ 'I don't swim.' — 'So don't I.'\n✅ 'I don't swim.' — 'Neither do I.'\n\n3) think/believe/hope + not-ის ფორმა:\n✅ I don't think so. (არა 'I think not' — ეს ძალიან ფორმალურია)\n✅ I hope not. (არა 'I don't hope so')\n\n4) one-ს გამოყენება უთვლად არსებით სახელებთან:\n❌ 'Would you like water?' — 'Yes, the cold one.'\n✅ 'Would you like water?' — 'Yes, the cold.' ან 'Yes, some cold water.'",
+  "exercises": [
+    {"type": "fill-blank", "question": "'She can play piano.' — 'So ___ I.'", "options": ["can", "do", "am"], "answer": "can"},
+    {"type": "fill-blank", "question": "'I don't like snakes.' — '___ do I.'", "options": ["Neither", "So", "Not"], "answer": "Neither"},
+    {"type": "fill-blank", "question": "'Will it rain?' — 'I hope ___.'", "options": ["not", "no", "don't"], "answer": "not"},
+    {"type": "fill-blank", "question": "'Which shoes do you prefer?' — 'The black ___.'", "options": ["ones", "one", "shoe"], "answer": "ones"},
+    {"type": "fill-blank", "question": "She runs faster than he ___.", "options": ["does", "do", "runs"], "answer": "does"},
+    {"type": "multiple-choice", "question": "რომელია სწორი?", "options": ["'I love pizza.' — 'So I do.'", "'I love pizza.' — 'So do I.'", "'I love pizza.' — 'Neither do I.'"], "answer": "'I love pizza.' — 'So do I.'"},
+    {"type": "fill-blank", "question": "'Would you like to join us?' — 'I'd love ___.'", "options": ["to", "it", "so"], "answer": "to"},
+    {"type": "fill-blank", "question": "'Is he a doctor?' — 'I believe ___.'", "options": ["so", "it", "that"], "answer": "so"},
+    {"type": "fill-blank", "question": "'I haven't been to Japan.' — '___ have I.'", "options": ["Neither", "So", "Not"], "answer": "Neither"},
+    {"type": "multiple-choice", "question": "'Will they agree?' — 'I don't think ___.'", "options": ["so", "not", "it"], "answer": "so"}
+  ]
+}
