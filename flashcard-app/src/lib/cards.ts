@@ -115,6 +115,9 @@ import beautyCosmeticsData from '../../content/beauty-cosmetics.json';
 import publicTransportData from '../../content/public-transport.json';
 import photographyCameraData from '../../content/photography-camera.json';
 import musicLyricsData from '../../content/music-lyrics.json';
+import petsVetData from '../../content/pets-vet.json';
+import newsMediaData from '../../content/news-media.json';
+import streetUrbanData from '../../content/street-urban.json';
 
 export const decks: Deck[] = [
   {
@@ -809,6 +812,27 @@ export const decks: Deck[] = [
     nameKa: 'მუსიკა და ტექსტები',
     icon: '🎤',
     cards: musicLyricsData as FlashCard[],
+  },
+  {
+    id: 'pets-vet',
+    name: 'Pets & Vet',
+    nameKa: 'შინაური ცხოველები და ვეტერინარი',
+    icon: '🐾',
+    cards: petsVetData as FlashCard[],
+  },
+  {
+    id: 'news-media',
+    name: 'News & Media',
+    nameKa: 'ახალი ამბები და მედია',
+    icon: '📰',
+    cards: newsMediaData as FlashCard[],
+  },
+  {
+    id: 'street-urban',
+    name: 'Street & Urban Life',
+    nameKa: 'ქუჩა და ურბანული ცხოვრება',
+    icon: '🏙️',
+    cards: streetUrbanData as FlashCard[],
   },
 ];
 
