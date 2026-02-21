@@ -99,6 +99,13 @@ import youtubeContentData from '../../content/youtube-content.json';
 import nightlifePartiesData from '../../content/nightlife-parties.json';
 import mentalHealthData from '../../content/mental-health.json';
 import freelancingRemoteData from '../../content/freelancing-remote.json';
+import cryptoInvestingData from '../../content/crypto-investing.json';
+import selfImprovementData from '../../content/self-improvement.json';
+import geographyCountriesData from '../../content/geography-countries.json';
+import barbershopGroomingData from '../../content/barbershop-grooming.json';
+import drivingTestData from '../../content/driving-test.json';
+import phoneAppsData from '../../content/phone-apps.json';
+import fastFoodSnacksData from '../../content/fast-food-snacks.json';
 
 export const decks: Deck[] = [
   {
@@ -681,6 +688,55 @@ export const decks: Deck[] = [
     nameKa: 'ფრილანსი და დისტანციური მუშაობა',
     icon: '💼',
     cards: freelancingRemoteData as FlashCard[],
+  },
+  {
+    id: 'crypto-investing',
+    name: 'Crypto & Investing',
+    nameKa: 'კრიპტო და ინვესტიცია',
+    icon: '📈',
+    cards: cryptoInvestingData as FlashCard[],
+  },
+  {
+    id: 'self-improvement',
+    name: 'Self-Improvement',
+    nameKa: 'თვითგანვითარება',
+    icon: '🚀',
+    cards: selfImprovementData as FlashCard[],
+  },
+  {
+    id: 'geography-countries',
+    name: 'Geography & Countries',
+    nameKa: 'გეოგრაფია და ქვეყნები',
+    icon: '🌍',
+    cards: geographyCountriesData as FlashCard[],
+  },
+  {
+    id: 'barbershop-grooming',
+    name: 'Barbershop & Grooming',
+    nameKa: 'სალონი და მოვლა',
+    icon: '💈',
+    cards: barbershopGroomingData as FlashCard[],
+  },
+  {
+    id: 'driving-test',
+    name: 'Driving & Road Rules',
+    nameKa: 'მართვა და საგზაო წესები',
+    icon: '🚗',
+    cards: drivingTestData as FlashCard[],
+  },
+  {
+    id: 'phone-apps',
+    name: 'Phone & Apps',
+    nameKa: 'ტელეფონი და აპები',
+    icon: '📱',
+    cards: phoneAppsData as FlashCard[],
+  },
+  {
+    id: 'fast-food-snacks',
+    name: 'Fast Food & Snacks',
+    nameKa: 'ფასტფუდი და სნეკები',
+    icon: '🍔',
+    cards: fastFoodSnacksData as FlashCard[],
   },
 ];
 
