@@ -108,6 +108,9 @@ import phoneAppsData from '../../content/phone-apps.json';
 import fastFoodSnacksData from '../../content/fast-food-snacks.json';
 import phrasalVerbsData from '../../content/phrasal-verbs.json';
 import academicEnglishData from '../../content/academic-english.json';
+import moviesShowsData from '../../content/movies-shows.json';
+import travelAbroadData from '../../content/travel-abroad.json';
+import motivationSuccessData from '../../content/motivation-success.json';
 
 export const decks: Deck[] = [
   {
@@ -753,6 +756,27 @@ export const decks: Deck[] = [
     nameKa: 'აკადემიური ინგლისური',
     icon: '🎓',
     cards: academicEnglishData as FlashCard[],
+  },
+  {
+    id: 'movies-shows',
+    name: 'Movies & TV Shows',
+    nameKa: 'ფილმები და სერიალები',
+    icon: '🎬',
+    cards: moviesShowsData as FlashCard[],
+  },
+  {
+    id: 'travel-abroad',
+    name: 'Travel Abroad',
+    nameKa: 'საზღვარგარეთ მოგზაურობა',
+    icon: '✈️',
+    cards: travelAbroadData as FlashCard[],
+  },
+  {
+    id: 'motivation-success',
+    name: 'Motivation & Success',
+    nameKa: 'მოტივაცია და წარმატება',
+    icon: '🚀',
+    cards: motivationSuccessData as FlashCard[],
   },
 ];
 
