@@ -91,7 +91,7 @@ export default function App() {
           <div className="relative overflow-hidden">
             <div className="absolute inset-0">
               <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=1400&q=80" alt="" className="w-full h-full object-cover opacity-30" />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/80 to-[#1C1C1E]"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg)]/80 to-[var(--color-bg)]"></div>
             </div>
             <div className="relative text-center pt-20 pb-16 sm:pt-24 sm:pb-20 px-4">
               <h2 style={{fontFamily: "'Playfair Display', serif"}} className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight">ფლეშქარდები</h2>

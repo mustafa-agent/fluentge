@@ -38,7 +38,6 @@ import musicData from '../../content/music-art.json';
 import animalsData from '../../content/animals.json';
 import colorsData from '../../content/colors-shapes.json';
 import bodyPartsData from '../../content/body-parts.json';
-import weatherSeasonsData from '../../content/weather-seasons.json';
 import jobsData from '../../content/jobs-professions.json';
 import socialMediaData from '../../content/social-media.json';
 import clothingData from '../../content/clothing-fashion.json';
@@ -60,33 +59,17 @@ import scienceData from '../../content/science-math.json';
 import religionData from '../../content/religion-culture.json';
 import emergencyData from '../../content/emergency-safety.json';
 import slangData from '../../content/slang-informal.json';
-import animalsPetsData from '../../content/animals-pets.json';
-import clothesFashionData from '../../content/clothes-fashion.json';
-import jobsCareersData from '../../content/jobs-careers.json';
-import musicArtsData from '../../content/music-arts.json';
 import relationshipsSocialData from '../../content/relationships-social.json';
-import seasonsHolidaysData from '../../content/seasons-holidays.json';
-import sportsGamesData from '../../content/sports-games.json';
-import internetSocialData from '../../content/internet-social.json';
-import furnitureRoomsData from '../../content/furniture-rooms.json';
 import adjectivesCommonData from '../../content/adjectives-common.json';
 import carDrivingData from '../../content/car-driving.json';
-import feelingsMoodsData from '../../content/feelings-moods.json';
 import prepositionsData from '../../content/prepositions-conjunctions.json';
 import restaurantData from '../../content/restaurant-cafe.json';
 import gymData from '../../content/gym-fitness.json';
-import businessMoneyData from '../../content/business-money.json';
-import datingData from '../../content/dating-romance.json';
-import schoolData from '../../content/school-classroom.json';
 import hobbiesData from '../../content/hobbies-free-time.json';
-import weatherDetailedData from '../../content/weather-detailed.json';
 import socialSituationsData from '../../content/social-situations.json';
-import techInternetData from '../../content/technology-internet.json';
-import feelingsEmotionsData from '../../content/feelings-emotions.json';
 import hotelData from '../../content/hotel-accommodation.json';
 import jobInterviewData from '../../content/job-interview.json';
 import doctorMedicalData from '../../content/doctor-medical.json';
-import onlineShoppingData from '../../content/online-shopping.json';
 import textingChatData from '../../content/texting-chat.json';
 import socialLifeData from '../../content/social-life.json';
 import mmaFightingData from '../../content/mma-fighting.json';
@@ -108,8 +91,6 @@ import phoneAppsData from '../../content/phone-apps.json';
 import fastFoodSnacksData from '../../content/fast-food-snacks.json';
 import phrasalVerbsData from '../../content/phrasal-verbs.json';
 import academicEnglishData from '../../content/academic-english.json';
-import moviesShowsData from '../../content/movies-shows.json';
-import travelAbroadData from '../../content/travel-abroad.json';
 import motivationSuccessData from '../../content/motivation-success.json';
 import beautyCosmeticsData from '../../content/beauty-cosmetics.json';
 import publicTransportData from '../../content/public-transport.json';
@@ -118,8 +99,32 @@ import musicLyricsData from '../../content/music-lyrics.json';
 import petsVetData from '../../content/pets-vet.json';
 import newsMediaData from '../../content/news-media.json';
 import streetUrbanData from '../../content/street-urban.json';
+import emailFormalData from '../../content/email-formal-writing.json';
+import opinionsDebateData from '../../content/opinions-debate.json';
+import smallTalkData from '../../content/small-talk.json';
+import customerServiceData from '../../content/customer-service.json';
+import everydayProblemsData from '../../content/everyday-problems.json';
+import supermarketGroceryData from '../../content/supermarket-grocery.json';
+import householdChoresData from '../../content/household-chores.json';
+import officeWorkplaceData from '../../content/office-workplace.json';
+import taxiRideshareData from '../../content/taxi-rideshare.json';
+import linkingWordsData from '../../content/linking-words.json';
+import ieltsToeflData from '../../content/ielts-toefl-vocab.json';
+import startupBusinessData from '../../content/startup-business.json';
+import realEstatePropertyData from '../../content/real-estate-property.json';
+import workAbroadData from '../../content/work-abroad.json';
+import englishForGamersData from '../../content/english-for-gamers.json';
+import workEmailsData from '../../content/work-emails.json';
+import top5000WordsData from '../../content/top-5000-words.json';
 
 export const decks: Deck[] = [
+  {
+    id: 'top-5000',
+    name: 'Top 5000 English Words',
+    nameKa: 'ტოპ 5000 ინგლისური სიტყვა',
+    icon: '⭐',
+    cards: top5000WordsData as FlashCard[],
+  },
   {
     id: 'greetings',
     name: 'Greetings & Basics',
@@ -275,13 +280,6 @@ export const decks: Deck[] = [
     cards: bodyPartsData as FlashCard[],
   },
   {
-    id: 'weatherseasons',
-    name: 'Weather & Seasons',
-    nameKa: 'ამინდი და სეზონები',
-    icon: '🌦️',
-    cards: weatherSeasonsData as FlashCard[],
-  },
-  {
     id: 'jobs',
     name: 'Jobs & Professions',
     nameKa: 'პროფესიები',
@@ -415,53 +413,11 @@ export const decks: Deck[] = [
     cards: bankingData as FlashCard[],
   },
   {
-    id: 'animals-pets',
-    name: 'Animals & Pets',
-    nameKa: 'ცხოველები და შინაურები',
-    icon: '🐕',
-    cards: animalsPetsData as FlashCard[],
-  },
-  {
-    id: 'clothes-fashion',
-    name: 'Clothes & Fashion',
-    nameKa: 'ტანსაცმელი და მოდა',
-    icon: '👔',
-    cards: clothesFashionData as FlashCard[],
-  },
-  {
-    id: 'jobs-careers',
-    name: 'Jobs & Careers',
-    nameKa: 'პროფესიები და კარიერა',
-    icon: '👨‍💼',
-    cards: jobsCareersData as FlashCard[],
-  },
-  {
-    id: 'music-arts',
-    name: 'Music & Arts',
-    nameKa: 'მუსიკა და ხელოვნება',
-    icon: '🎭',
-    cards: musicArtsData as FlashCard[],
-  },
-  {
     id: 'relationships-social',
     name: 'Relationships & Social',
     nameKa: 'ურთიერთობები და სოციალური',
     icon: '🤝',
     cards: relationshipsSocialData as FlashCard[],
-  },
-  {
-    id: 'seasons-holidays',
-    name: 'Seasons & Holidays',
-    nameKa: 'სეზონები და დღესასწაულები',
-    icon: '🎄',
-    cards: seasonsHolidaysData as FlashCard[],
-  },
-  {
-    id: 'sports-games',
-    name: 'Sports & Games',
-    nameKa: 'სპორტი და თამაშები',
-    icon: '🏆',
-    cards: sportsGamesData as FlashCard[],
   },
   {
     id: 'emergency',
@@ -478,20 +434,6 @@ export const decks: Deck[] = [
     cards: slangData as FlashCard[],
   },
   {
-    id: 'internet-social',
-    name: 'Internet & Social Media',
-    nameKa: 'ინტერნეტი და სოციალური ქსელები',
-    icon: '📱',
-    cards: internetSocialData as FlashCard[],
-  },
-  {
-    id: 'furniture-rooms',
-    name: 'Home & Furniture',
-    nameKa: 'სახლი და ავეჯი',
-    icon: '🏠',
-    cards: furnitureRoomsData as FlashCard[],
-  },
-  {
     id: 'adjectives-common',
     name: 'Common Adjectives',
     nameKa: 'ხშირი ზედსართავები',
@@ -504,13 +446,6 @@ export const decks: Deck[] = [
     nameKa: 'მანქანა და მართვა',
     icon: '🚗',
     cards: carDrivingData as FlashCard[],
-  },
-  {
-    id: 'feelings-moods',
-    name: 'Feelings & Moods',
-    nameKa: 'გრძნობები და განწყობა',
-    icon: '😊',
-    cards: feelingsMoodsData as FlashCard[],
   },
   {
     id: 'prepositions-conjunctions',
@@ -534,27 +469,6 @@ export const decks: Deck[] = [
     cards: gymData as FlashCard[],
   },
   {
-    id: 'business-money',
-    name: 'Business & Money',
-    nameKa: 'ბიზნესი და ფული',
-    icon: '💰',
-    cards: businessMoneyData as FlashCard[],
-  },
-  {
-    id: 'dating-romance',
-    name: 'Dating & Romance',
-    nameKa: 'პაემანი და რომანტიკა',
-    icon: '💕',
-    cards: datingData as FlashCard[],
-  },
-  {
-    id: 'school-classroom',
-    name: 'School & Classroom',
-    nameKa: 'სკოლა და საკლასო ოთახი',
-    icon: '🎓',
-    cards: schoolData as FlashCard[],
-  },
-  {
     id: 'hobbies-free-time',
     name: 'Hobbies & Free Time',
     nameKa: 'ჰობი და თავისუფალი დრო',
@@ -562,32 +476,11 @@ export const decks: Deck[] = [
     cards: hobbiesData as FlashCard[],
   },
   {
-    id: 'weather-detailed',
-    name: 'Weather & Climate',
-    nameKa: 'ამინდი და კლიმატი',
-    icon: '🌤️',
-    cards: weatherDetailedData as FlashCard[],
-  },
-  {
     id: 'social-situations',
     name: 'Social Situations',
     nameKa: 'სოციალური სიტუაციები',
     icon: '🤝',
     cards: socialSituationsData as FlashCard[],
-  },
-  {
-    id: 'tech-internet',
-    name: 'Technology & Internet',
-    nameKa: 'ტექნოლოგია და ინტერნეტი',
-    icon: '📱',
-    cards: techInternetData as FlashCard[],
-  },
-  {
-    id: 'feelings-emotions',
-    name: 'Feelings & Emotions',
-    nameKa: 'გრძნობები და ემოციები',
-    icon: '😊',
-    cards: feelingsEmotionsData as FlashCard[],
   },
   {
     id: 'hotel',
@@ -609,13 +502,6 @@ export const decks: Deck[] = [
     nameKa: 'ექიმი და სამედიცინო',
     icon: '🩺',
     cards: doctorMedicalData as FlashCard[],
-  },
-  {
-    id: 'online-shopping',
-    name: 'Online Shopping',
-    nameKa: 'ონლაინ შოპინგი',
-    icon: '🛍️',
-    cards: onlineShoppingData as FlashCard[],
   },
   {
     id: 'texting',
@@ -765,20 +651,6 @@ export const decks: Deck[] = [
     cards: academicEnglishData as FlashCard[],
   },
   {
-    id: 'movies-shows',
-    name: 'Movies & TV Shows',
-    nameKa: 'ფილმები და სერიალები',
-    icon: '🎬',
-    cards: moviesShowsData as FlashCard[],
-  },
-  {
-    id: 'travel-abroad',
-    name: 'Travel Abroad',
-    nameKa: 'საზღვარგარეთ მოგზაურობა',
-    icon: '✈️',
-    cards: travelAbroadData as FlashCard[],
-  },
-  {
     id: 'motivation-success',
     name: 'Motivation & Success',
     nameKa: 'მოტივაცია და წარმატება',
@@ -833,6 +705,118 @@ export const decks: Deck[] = [
     nameKa: 'ქუჩა და ურბანული ცხოვრება',
     icon: '🏙️',
     cards: streetUrbanData as FlashCard[],
+  },
+  {
+    id: 'email-formal',
+    name: 'Email & Formal Writing',
+    nameKa: 'ელფოსტა და ფორმალური წერა',
+    icon: '📧',
+    cards: emailFormalData as FlashCard[],
+  },
+  {
+    id: 'opinions-debate',
+    name: 'Opinions & Debate',
+    nameKa: 'მოსაზრებები და დებატები',
+    icon: '💬',
+    cards: opinionsDebateData as FlashCard[],
+  },
+  {
+    id: 'small-talk',
+    name: 'Small Talk',
+    nameKa: 'მსუბუქი საუბარი',
+    icon: '🗣️',
+    cards: smallTalkData as FlashCard[],
+  },
+  {
+    id: 'customer-service',
+    name: 'Customer Service',
+    nameKa: 'მომხმარებელთა მომსახურება',
+    icon: '🛎️',
+    cards: customerServiceData as FlashCard[],
+  },
+  {
+    id: 'everyday-problems',
+    name: 'Everyday Problems',
+    nameKa: 'ყოველდღიური პრობლემები',
+    icon: '🔧',
+    cards: everydayProblemsData as FlashCard[],
+  },
+  {
+    id: 'supermarket-grocery',
+    name: 'Supermarket & Grocery',
+    nameKa: 'სუპერმარკეტი და სასურსათო',
+    icon: '🛒',
+    cards: supermarketGroceryData as FlashCard[],
+  },
+  {
+    id: 'household-chores',
+    name: 'Household Chores',
+    nameKa: 'საყოფაცხოვრებო საქმეები',
+    icon: '🧹',
+    cards: householdChoresData as FlashCard[],
+  },
+  {
+    id: 'office-workplace',
+    name: 'Office & Workplace',
+    nameKa: 'ოფისი და სამუშაო ადგილი',
+    icon: '💼',
+    cards: officeWorkplaceData as FlashCard[],
+  },
+  {
+    id: 'taxi-rideshare',
+    name: 'Taxi & Rideshare',
+    nameKa: 'ტაქსი და თანამგზავრობა',
+    icon: '🚕',
+    cards: taxiRideshareData as FlashCard[],
+  },
+  {
+    id: 'linking-words',
+    name: 'Linking Words',
+    nameKa: 'შემაერთებელი სიტყვები',
+    icon: '🔗',
+    cards: linkingWordsData as FlashCard[],
+  },
+  {
+    id: 'ielts-toefl-vocab',
+    name: 'IELTS & TOEFL Vocabulary',
+    nameKa: 'IELTS და TOEFL ლექსიკა',
+    icon: '🎓',
+    cards: ieltsToeflData as FlashCard[],
+  },
+  {
+    id: 'startup-business',
+    name: 'Startup & Business',
+    nameKa: 'სტარტაპი და ბიზნესი',
+    icon: '🚀',
+    cards: startupBusinessData as FlashCard[],
+  },
+  {
+    id: 'real-estate-property',
+    name: 'Real Estate & Property',
+    nameKa: 'უძრავი ქონება',
+    icon: '🏘️',
+    cards: realEstatePropertyData as FlashCard[],
+  },
+  {
+    id: 'work-abroad',
+    name: 'Work Abroad',
+    nameKa: 'საზღვარგარეთ მუშაობა',
+    icon: '🌍',
+    cards: workAbroadData as FlashCard[],
+  },
+  {
+    id: 'english-for-gamers',
+    name: 'English for Gamers',
+    nameKa: 'გეიმერის ინგლისური',
+    icon: '🎮',
+    cards: englishForGamersData as FlashCard[],
+  },
+  {
+    id: 'work-emails',
+    name: 'Work Emails',
+    nameKa: 'სამსახურის ელ-ფოსტა',
+    icon: '✉️',
+    cards: workEmailsData as FlashCard[],
   },
 ];
 

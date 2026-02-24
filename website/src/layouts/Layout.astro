@@ -5,7 +5,7 @@ interface Props {
   description?: string;
   ogImage?: string;
 }
-const { title, description = 'FluentGe — უფასო ინგლისური ენის შესწავლა ქართველებისთვის. 2400+ სიტყვა, 45 თამაში, პოდკასტი და გრამატიკა.', ogImage = '/og-image.svg' } = Astro.props;
+const { title, description = 'FluentGe — უფასო ინგლისური ენის შესწავლა ქართველებისთვის. 5,250+ სიტყვა, 65 გრამატიკის გაკვეთილი, 35 პოდკასტი და 1,695 ფრაზა აუდიოთი.', ogImage = '/og-image.svg' } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
 ---
 
@@ -41,6 +41,31 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>{title}</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FluentGe",
+      "alternateName": "ფლუენტჯი",
+      "url": "https://fluentge.surge.sh",
+      "description": "უფასო ინგლისური ენის შესწავლა ქართველებისთვის — ფლეშბარათები, გრამატიკა, პოდკასტი, თამაშები",
+      "inLanguage": ["ka", "en"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://fluentge.surge.sh/flashcards/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "FluentGe",
+      "url": "https://fluentge.surge.sh",
+      "description": "Free English learning platform for Georgian speakers",
+      "areaServed": { "@type": "Country", "name": "Georgia" },
+      "teaches": "English language"
+    })} />
     <style>
       * { cursor: default; }
       a, button, [role="button"], input[type="submit"], .clickable, [onclick] { cursor: pointer !important; }
@@ -60,12 +85,18 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           <a href="/phrases/" class="hover:text-white transition-colors">ფრაზები</a>
           <a href="/games/" class="hover:text-white transition-colors">თამაშები</a>
           <a href="/podcast/" class="hover:text-white transition-colors">პოდკასტი</a>
+          <a href="/blog/" class="hover:text-white transition-colors">ბლოგი</a>
           <a href="/about/" class="hover:text-white transition-colors">შესახებ</a>
           <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">პრემიუმი</a>
         </div>
-        <button id="menu-toggle" class="lg:hidden text-white p-1" aria-label="მენიუ">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
+        <div class="flex items-center gap-2">
+          <button id="theme-toggle" class="text-lg hover:scale-110 transition-transform p-1" title="თემის შეცვლა" aria-label="თემის შეცვლა">
+            ☀️
+          </button>
+          <button id="menu-toggle" class="lg:hidden text-white p-1" aria-label="მენიუ">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
       </div>
       <div id="mobile-menu" class="hidden lg:hidden border-t border-[#2E2E30] bg-[#1C1C1E]/98">
         <div class="flex flex-col px-4 py-3 gap-3 text-sm text-[#A0A09A]">
@@ -75,12 +106,50 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           <a href="/phrases/" class="hover:text-white py-1">ფრაზები</a>
           <a href="/games/" class="hover:text-white py-1">თამაშები</a>
           <a href="/podcast/" class="hover:text-white py-1">პოდკასტი</a>
+          <a href="/blog/" class="hover:text-white py-1">ბლოგი</a>
           <a href="/about/" class="hover:text-white py-1">შესახებ</a>
           <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>
         </div>
       </div>
     </nav>
     <script>document.getElementById('menu-toggle')?.addEventListener('click',()=>{document.getElementById('mobile-menu')?.classList.toggle('hidden');});</script>
+    
+    <script>
+      // Theme toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+      
+      // Load theme preference
+      const savedTheme = localStorage.getItem('theme');
+      const isDark = savedTheme ? savedTheme === 'dark' : true;
+      
+      function applyTheme(dark) {
+        if (dark) {
+          body.className = body.className.replace(/bg-\[[^\]]+\]/, 'bg-[#1C1C1E]');
+          body.className = body.className.replace(/text-\[[^\]]+\]/, 'text-[#F5F5F0]');
+          themeToggle.textContent = '☀️';
+          document.documentElement.style.setProperty('--color-bg', '#1C1C1E');
+          document.documentElement.style.setProperty('--color-text', '#F5F5F0');
+        } else {
+          body.className = body.className.replace(/bg-\[[^\]]+\]/, 'bg-white');
+          body.className = body.className.replace(/text-\[[^\]]+\]/, 'text-gray-900');
+          themeToggle.textContent = '🌙';
+          document.documentElement.style.setProperty('--color-bg', '#FFFFFF');
+          document.documentElement.style.setProperty('--color-text', '#111827');
+        }
+      }
+      
+      // Apply initial theme
+      applyTheme(isDark);
+      
+      // Theme toggle click handler
+      themeToggle?.addEventListener('click', () => {
+        const isCurrentlyDark = themeToggle.textContent === '☀️';
+        const newTheme = !isCurrentlyDark;
+        localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+        applyTheme(newTheme);
+      });
+    </script>
 
     <main class="pt-14"><slot /></main>
 
@@ -105,6 +174,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
             <div class="flex flex-col gap-2 text-sm text-[#6B6B65]">
               <a href="/phrases/" class="hover:text-white transition-colors">ფრაზები</a>
               <a href="/podcast/" class="hover:text-white transition-colors">პოდკასტი</a>
+              <a href="/blog/" class="hover:text-white transition-colors">ბლოგი</a>
               <a href="/about/" class="hover:text-white transition-colors">შესახებ</a>
               <a href="/register/" class="hover:text-white transition-colors">რეგისტრაცია</a>
             </div>

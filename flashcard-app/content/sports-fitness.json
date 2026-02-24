@@ -1,52 +1,659 @@
 [
-  {"english": "run", "georgian": "სირბილი", "pronunciation": "/rʌn/", "example_en": "I run every morning.", "example_ka": "მე ყოველ დილას ვირბენ.", "category": "sports_fitness", "level": "A1"},
-  {"english": "swim", "georgian": "ცურვა", "pronunciation": "/swɪm/", "example_en": "She likes to swim in the pool.", "example_ka": "მას მოსწონს აუზში ცურვა.", "category": "sports_fitness", "level": "A1"},
-  {"english": "gym", "georgian": "სპორტდარბაზი", "pronunciation": "/dʒɪm/", "example_en": "I go to the gym after work.", "example_ka": "სამსახურის შემდეგ სპორტდარბაზში მივდივარ.", "category": "sports_fitness", "level": "A1"},
-  {"english": "football", "georgian": "ფეხბურთი", "pronunciation": "/ˈfʊtbɔːl/", "example_en": "Football is very popular in Georgia.", "example_ka": "ფეხბურთი ძალიან პოპულარულია საქართველოში.", "category": "sports_fitness", "level": "A1"},
-  {"english": "basketball", "georgian": "კალათბურთი", "pronunciation": "/ˈbæskɪtbɔːl/", "example_en": "He plays basketball every weekend.", "example_ka": "ის ყოველ შაბათ-კვირას კალათბურთს თამაშობს.", "category": "sports_fitness", "level": "A1"},
-  {"english": "tennis", "georgian": "ჩოგბურთი", "pronunciation": "/ˈtenɪs/", "example_en": "She is learning to play tennis.", "example_ka": "ის ჩოგბურთის თამაშს სწავლობს.", "category": "sports_fitness", "level": "A1"},
-  {"english": "exercise", "georgian": "ვარჯიში", "pronunciation": "/ˈeksəsaɪz/", "example_en": "Exercise is good for your health.", "example_ka": "ვარჯიში ჯანმრთელობისთვის სასარგებლოა.", "category": "sports_fitness", "level": "A1"},
-  {"english": "team", "georgian": "გუნდი", "pronunciation": "/tiːm/", "example_en": "Our team won the game.", "example_ka": "ჩვენმა გუნდმა მოიგო თამაში.", "category": "sports_fitness", "level": "A1"},
-  {"english": "coach", "georgian": "მწვრთნელი", "pronunciation": "/koʊtʃ/", "example_en": "The coach trains the players every day.", "example_ka": "მწვრთნელი ყოველდღე ავარჯიშებს მოთამაშეებს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "goal", "georgian": "გოლი", "pronunciation": "/ɡoʊl/", "example_en": "He scored a goal in the last minute.", "example_ka": "მან ბოლო წუთზე გაიტანა გოლი.", "category": "sports_fitness", "level": "A1"},
-  {"english": "score", "georgian": "ანგარიში", "pronunciation": "/skɔːr/", "example_en": "The score was 3 to 1.", "example_ka": "ანგარიში იყო 3:1.", "category": "sports_fitness", "level": "A2"},
-  {"english": "win", "georgian": "მოგება", "pronunciation": "/wɪn/", "example_en": "We want to win this match.", "example_ka": "ჩვენ გვინდა ამ მატჩის მოგება.", "category": "sports_fitness", "level": "A1"},
-  {"english": "lose", "georgian": "წაგება", "pronunciation": "/luːz/", "example_en": "Nobody likes to lose.", "example_ka": "არავის უყვარს წაგება.", "category": "sports_fitness", "level": "A1"},
-  {"english": "match", "georgian": "მატჩი", "pronunciation": "/mætʃ/", "example_en": "The match starts at 7 o'clock.", "example_ka": "მატჩი 7 საათზე იწყება.", "category": "sports_fitness", "level": "A1"},
-  {"english": "player", "georgian": "მოთამაშე", "pronunciation": "/ˈpleɪər/", "example_en": "He is the best player on the team.", "example_ka": "ის გუნდის საუკეთესო მოთამაშეა.", "category": "sports_fitness", "level": "A1"},
-  {"english": "stadium", "georgian": "სტადიონი", "pronunciation": "/ˈsteɪdiəm/", "example_en": "The stadium is full of fans.", "example_ka": "სტადიონი გულშემატკივრებით სავსეა.", "category": "sports_fitness", "level": "A2"},
-  {"english": "train", "georgian": "ვარჯიშობა", "pronunciation": "/treɪn/", "example_en": "Athletes train every day.", "example_ka": "სპორტსმენები ყოველდღე ვარჯიშობენ.", "category": "sports_fitness", "level": "A1"},
-  {"english": "stretch", "georgian": "გაწელვა", "pronunciation": "/stretʃ/", "example_en": "Always stretch before running.", "example_ka": "სირბილის წინ ყოველთვის გაიწელეთ.", "category": "sports_fitness", "level": "A2"},
-  {"english": "muscle", "georgian": "კუნთი", "pronunciation": "/ˈmʌsl/", "example_en": "This exercise works your leg muscles.", "example_ka": "ეს ვარჯიში ფეხის კუნთებს ავარჯიშებს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "strong", "georgian": "ძლიერი", "pronunciation": "/strɒŋ/", "example_en": "He is very strong.", "example_ka": "ის ძალიან ძლიერია.", "category": "sports_fitness", "level": "A1"},
-  {"english": "fast", "georgian": "სწრაფი", "pronunciation": "/fæst/", "example_en": "She is a very fast runner.", "example_ka": "ის ძალიან სწრაფი მორბენალია.", "category": "sports_fitness", "level": "A1"},
-  {"english": "slow", "georgian": "ნელი", "pronunciation": "/sloʊ/", "example_en": "Start slow and then go faster.", "example_ka": "ნელა დაიწყე და შემდეგ დააჩქარე.", "category": "sports_fitness", "level": "A1"},
-  {"english": "jump", "georgian": "ხტომა", "pronunciation": "/dʒʌmp/", "example_en": "He can jump very high.", "example_ka": "მას ძალიან მაღლა შეუძლია ხტომა.", "category": "sports_fitness", "level": "A1"},
-  {"english": "kick", "georgian": "დარტყმა", "pronunciation": "/kɪk/", "example_en": "He kicked the ball into the goal.", "example_ka": "მან ბურთს კარში დაარტყა.", "category": "sports_fitness", "level": "A1"},
-  {"english": "throw", "georgian": "სროლა", "pronunciation": "/θroʊ/", "example_en": "Throw the ball to me.", "example_ka": "ბურთი მომისროლე.", "category": "sports_fitness", "level": "A1"},
-  {"english": "catch", "georgian": "დაჭერა", "pronunciation": "/kætʃ/", "example_en": "Catch the ball with both hands.", "example_ka": "ბურთი ორივე ხელით დაიჭირე.", "category": "sports_fitness", "level": "A1"},
-  {"english": "ball", "georgian": "ბურთი", "pronunciation": "/bɔːl/", "example_en": "The ball is round.", "example_ka": "ბურთი მრგვალია.", "category": "sports_fitness", "level": "A1"},
-  {"english": "race", "georgian": "რბოლა", "pronunciation": "/reɪs/", "example_en": "She won the race.", "example_ka": "მან რბოლა მოიგო.", "category": "sports_fitness", "level": "A1"},
-  {"english": "champion", "georgian": "ჩემპიონი", "pronunciation": "/ˈtʃæmpiən/", "example_en": "He became the world champion.", "example_ka": "ის მსოფლიო ჩემპიონი გახდა.", "category": "sports_fitness", "level": "A2"},
-  {"english": "medal", "georgian": "მედალი", "pronunciation": "/ˈmedl/", "example_en": "She won a gold medal.", "example_ka": "მან ოქროს მედალი მოიგო.", "category": "sports_fitness", "level": "A2"},
-  {"english": "compete", "georgian": "შეჯიბრება", "pronunciation": "/kəmˈpiːt/", "example_en": "They compete in many sports.", "example_ka": "ისინი ბევრ სპორტში ეჯიბრებიან.", "category": "sports_fitness", "level": "A2"},
-  {"english": "referee", "georgian": "მსაჯი", "pronunciation": "/ˌrefəˈriː/", "example_en": "The referee stopped the game.", "example_ka": "მსაჯმა თამაში შეაჩერა.", "category": "sports_fitness", "level": "A2"},
-  {"english": "field", "georgian": "მოედანი", "pronunciation": "/fiːld/", "example_en": "The players are on the field.", "example_ka": "მოთამაშეები მოედანზე არიან.", "category": "sports_fitness", "level": "A1"},
-  {"english": "court", "georgian": "კორტი", "pronunciation": "/kɔːrt/", "example_en": "The tennis court is outside.", "example_ka": "ჩოგბურთის კორტი გარეთაა.", "category": "sports_fitness", "level": "A2"},
-  {"english": "pool", "georgian": "აუზი", "pronunciation": "/puːl/", "example_en": "The swimming pool is open today.", "example_ka": "საცურაო აუზი დღეს ღიაა.", "category": "sports_fitness", "level": "A1"},
-  {"english": "boxing", "georgian": "კრივი", "pronunciation": "/ˈbɒksɪŋ/", "example_en": "Boxing is a tough sport.", "example_ka": "კრივი რთული სპორტია.", "category": "sports_fitness", "level": "A2"},
-  {"english": "wrestling", "georgian": "ჭიდაობა", "pronunciation": "/ˈreslɪŋ/", "example_en": "Wrestling is popular in Georgia.", "example_ka": "ჭიდაობა საქართველოში პოპულარულია.", "category": "sports_fitness", "level": "A2"},
-  {"english": "yoga", "georgian": "იოგა", "pronunciation": "/ˈjoʊɡə/", "example_en": "She does yoga every morning.", "example_ka": "ის ყოველ დილას იოგას აკეთებს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "push-up", "georgian": "ბრუნვა", "pronunciation": "/ˈpʊʃʌp/", "example_en": "He does fifty push-ups a day.", "example_ka": "ის დღეში ორმოცდაათ ბრუნვას აკეთებს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "squat", "georgian": "სკვოტი", "pronunciation": "/skwɒt/", "example_en": "Squats make your legs stronger.", "example_ka": "სკვოტი ფეხებს აძლიერებს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "treadmill", "georgian": "სარბენი ბილიკი", "pronunciation": "/ˈtredmɪl/", "example_en": "I run on the treadmill at the gym.", "example_ka": "სპორტდარბაზში სარბენ ბილიკზე ვირბენ.", "category": "sports_fitness", "level": "A2"},
-  {"english": "weight", "georgian": "წონა", "pronunciation": "/weɪt/", "example_en": "He lifts heavy weights.", "example_ka": "ის მძიმე წონებს სწევს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "fitness", "georgian": "ფიტნესი", "pronunciation": "/ˈfɪtnəs/", "example_en": "Fitness is important for everyone.", "example_ka": "ფიტნესი ყველასთვის მნიშვნელოვანია.", "category": "sports_fitness", "level": "A2"},
-  {"english": "healthy", "georgian": "ჯანმრთელი", "pronunciation": "/ˈhelθi/", "example_en": "Sport keeps you healthy.", "example_ka": "სპორტი ჯანმრთელს გიქარბს.", "category": "sports_fitness", "level": "A1"},
-  {"english": "tired", "georgian": "დაღლილი", "pronunciation": "/taɪərd/", "example_en": "I am tired after the game.", "example_ka": "თამაშის შემდეგ დაღლილი ვარ.", "category": "sports_fitness", "level": "A1"},
-  {"english": "energy", "georgian": "ენერგია", "pronunciation": "/ˈenədʒi/", "example_en": "I have a lot of energy today.", "example_ka": "დღეს ბევრი ენერგია მაქვს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "warm-up", "georgian": "გათბობა", "pronunciation": "/ˈwɔːrmʌp/", "example_en": "A warm-up prevents injuries.", "example_ka": "გათბობა ტრავმებს აცილებს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "cool-down", "georgian": "გაგრილება", "pronunciation": "/ˈkuːldaʊn/", "example_en": "Don't forget to cool down after exercise.", "example_ka": "ვარჯიშის შემდეგ გაგრილება არ დაგავიწყდეს.", "category": "sports_fitness", "level": "A2"},
-  {"english": "sprint", "georgian": "სპრინტი", "pronunciation": "/sprɪnt/", "example_en": "He sprinted to the finish line.", "example_ka": "ის ფინიშამდე სპრინტით მირბოდა.", "category": "sports_fitness", "level": "A2"},
-  {"english": "marathon", "georgian": "მარათონი", "pronunciation": "/ˈmærəθən/", "example_en": "Running a marathon is very difficult.", "example_ka": "მარათონის გარბენა ძალიან რთულია.", "category": "sports_fitness", "level": "A2"}
+  {
+    "english": "run",
+    "georgian": "სირბილი",
+    "pronunciation": "/rʌn/",
+    "example_en": "I run every morning.",
+    "example_ka": "მე ყოველ დილას ვირბენ.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "swim",
+    "georgian": "ცურვა",
+    "pronunciation": "/swɪm/",
+    "example_en": "She likes to swim in the pool.",
+    "example_ka": "მას მოსწონს აუზში ცურვა.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "gym",
+    "georgian": "სპორტდარბაზი",
+    "pronunciation": "/dʒɪm/",
+    "example_en": "I go to the gym after work.",
+    "example_ka": "სამსახურის შემდეგ სპორტდარბაზში მივდივარ.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "football",
+    "georgian": "ფეხბურთი",
+    "pronunciation": "/ˈfʊtbɔːl/",
+    "example_en": "Football is very popular in Georgia.",
+    "example_ka": "ფეხბურთი ძალიან პოპულარულია საქართველოში.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "basketball",
+    "georgian": "კალათბურთი",
+    "pronunciation": "/ˈbæskɪtbɔːl/",
+    "example_en": "He plays basketball every weekend.",
+    "example_ka": "ის ყოველ შაბათ-კვირას კალათბურთს თამაშობს.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "tennis",
+    "georgian": "ჩოგბურთი",
+    "pronunciation": "/ˈtenɪs/",
+    "example_en": "She is learning to play tennis.",
+    "example_ka": "ის ჩოგბურთის თამაშს სწავლობს.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "exercise",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈeksəsaɪz/",
+    "example_en": "Exercise is good for your health.",
+    "example_ka": "ვარჯიში ჯანმრთელობისთვის სასარგებლოა.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "team",
+    "georgian": "გუნდი",
+    "pronunciation": "/tiːm/",
+    "example_en": "Our team won the game.",
+    "example_ka": "ჩვენმა გუნდმა მოიგო თამაში.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "coach",
+    "georgian": "მწვრთნელი",
+    "pronunciation": "/koʊtʃ/",
+    "example_en": "The coach trains the players every day.",
+    "example_ka": "მწვრთნელი ყოველდღე ავარჯიშებს მოთამაშეებს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "goal",
+    "georgian": "გოლი",
+    "pronunciation": "/ɡoʊl/",
+    "example_en": "He scored a goal in the last minute.",
+    "example_ka": "მან ბოლო წუთზე გაიტანა გოლი.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "score",
+    "georgian": "ანგარიში",
+    "pronunciation": "/skɔːr/",
+    "example_en": "The score was 3 to 1.",
+    "example_ka": "ანგარიში იყო 3:1.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "win",
+    "georgian": "მოგება",
+    "pronunciation": "/wɪn/",
+    "example_en": "We want to win this match.",
+    "example_ka": "ჩვენ გვინდა ამ მატჩის მოგება.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "lose",
+    "georgian": "წაგება",
+    "pronunciation": "/luːz/",
+    "example_en": "Nobody likes to lose.",
+    "example_ka": "არავის უყვარს წაგება.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "match",
+    "georgian": "მატჩი",
+    "pronunciation": "/mætʃ/",
+    "example_en": "The match starts at 7 o'clock.",
+    "example_ka": "მატჩი 7 საათზე იწყება.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "player",
+    "georgian": "მოთამაშე",
+    "pronunciation": "/ˈpleɪər/",
+    "example_en": "He is the best player on the team.",
+    "example_ka": "ის გუნდის საუკეთესო მოთამაშეა.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "stadium",
+    "georgian": "სტადიონი",
+    "pronunciation": "/ˈsteɪdiəm/",
+    "example_en": "The stadium is full of fans.",
+    "example_ka": "სტადიონი გულშემატკივრებით სავსეა.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "train",
+    "georgian": "ვარჯიშობა",
+    "pronunciation": "/treɪn/",
+    "example_en": "Athletes train every day.",
+    "example_ka": "სპორტსმენები ყოველდღე ვარჯიშობენ.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "stretch",
+    "georgian": "გაწელვა",
+    "pronunciation": "/stretʃ/",
+    "example_en": "Always stretch before running.",
+    "example_ka": "სირბილის წინ ყოველთვის გაიწელეთ.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "muscle",
+    "georgian": "კუნთი",
+    "pronunciation": "/ˈmʌsl/",
+    "example_en": "This exercise works your leg muscles.",
+    "example_ka": "ეს ვარჯიში ფეხის კუნთებს ავარჯიშებს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "strong",
+    "georgian": "ძლიერი",
+    "pronunciation": "/strɒŋ/",
+    "example_en": "He is very strong.",
+    "example_ka": "ის ძალიან ძლიერია.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "fast",
+    "georgian": "სწრაფი",
+    "pronunciation": "/fæst/",
+    "example_en": "She is a very fast runner.",
+    "example_ka": "ის ძალიან სწრაფი მორბენალია.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "slow",
+    "georgian": "ნელი",
+    "pronunciation": "/sloʊ/",
+    "example_en": "Start slow and then go faster.",
+    "example_ka": "ნელა დაიწყე და შემდეგ დააჩქარე.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "jump",
+    "georgian": "ხტომა",
+    "pronunciation": "/dʒʌmp/",
+    "example_en": "He can jump very high.",
+    "example_ka": "მას ძალიან მაღლა შეუძლია ხტომა.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "kick",
+    "georgian": "დარტყმა",
+    "pronunciation": "/kɪk/",
+    "example_en": "He kicked the ball into the goal.",
+    "example_ka": "მან ბურთს კარში დაარტყა.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "throw",
+    "georgian": "სროლა",
+    "pronunciation": "/θroʊ/",
+    "example_en": "Throw the ball to me.",
+    "example_ka": "ბურთი მომისროლე.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "catch",
+    "georgian": "დაჭერა",
+    "pronunciation": "/kætʃ/",
+    "example_en": "Catch the ball with both hands.",
+    "example_ka": "ბურთი ორივე ხელით დაიჭირე.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "ball",
+    "georgian": "ბურთი",
+    "pronunciation": "/bɔːl/",
+    "example_en": "The ball is round.",
+    "example_ka": "ბურთი მრგვალია.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "race",
+    "georgian": "რბოლა",
+    "pronunciation": "/reɪs/",
+    "example_en": "She won the race.",
+    "example_ka": "მან რბოლა მოიგო.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "champion",
+    "georgian": "ჩემპიონი",
+    "pronunciation": "/ˈtʃæmpiən/",
+    "example_en": "He became the world champion.",
+    "example_ka": "ის მსოფლიო ჩემპიონი გახდა.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "medal",
+    "georgian": "მედალი",
+    "pronunciation": "/ˈmedl/",
+    "example_en": "She won a gold medal.",
+    "example_ka": "მან ოქროს მედალი მოიგო.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "compete",
+    "georgian": "შეჯიბრება",
+    "pronunciation": "/kəmˈpiːt/",
+    "example_en": "They compete in many sports.",
+    "example_ka": "ისინი ბევრ სპორტში ეჯიბრებიან.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "referee",
+    "georgian": "მსაჯი",
+    "pronunciation": "/ˌrefəˈriː/",
+    "example_en": "The referee stopped the game.",
+    "example_ka": "მსაჯმა თამაში შეაჩერა.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "field",
+    "georgian": "მოედანი",
+    "pronunciation": "/fiːld/",
+    "example_en": "The players are on the field.",
+    "example_ka": "მოთამაშეები მოედანზე არიან.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "court",
+    "georgian": "კორტი",
+    "pronunciation": "/kɔːrt/",
+    "example_en": "The tennis court is outside.",
+    "example_ka": "ჩოგბურთის კორტი გარეთაა.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "pool",
+    "georgian": "აუზი",
+    "pronunciation": "/puːl/",
+    "example_en": "The swimming pool is open today.",
+    "example_ka": "საცურაო აუზი დღეს ღიაა.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "boxing",
+    "georgian": "კრივი",
+    "pronunciation": "/ˈbɒksɪŋ/",
+    "example_en": "Boxing is a tough sport.",
+    "example_ka": "კრივი რთული სპორტია.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "wrestling",
+    "georgian": "ჭიდაობა",
+    "pronunciation": "/ˈreslɪŋ/",
+    "example_en": "Wrestling is popular in Georgia.",
+    "example_ka": "ჭიდაობა საქართველოში პოპულარულია.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "yoga",
+    "georgian": "იოგა",
+    "pronunciation": "/ˈjoʊɡə/",
+    "example_en": "She does yoga every morning.",
+    "example_ka": "ის ყოველ დილას იოგას აკეთებს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "push-up",
+    "georgian": "ბრუნვა",
+    "pronunciation": "/ˈpʊʃʌp/",
+    "example_en": "He does fifty push-ups a day.",
+    "example_ka": "ის დღეში ორმოცდაათ ბრუნვას აკეთებს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "squat",
+    "georgian": "სკვოტი",
+    "pronunciation": "/skwɒt/",
+    "example_en": "Squats make your legs stronger.",
+    "example_ka": "სკვოტი ფეხებს აძლიერებს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "treadmill",
+    "georgian": "სარბენი ბილიკი",
+    "pronunciation": "/ˈtredmɪl/",
+    "example_en": "I run on the treadmill at the gym.",
+    "example_ka": "სპორტდარბაზში სარბენ ბილიკზე ვირბენ.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "weight",
+    "georgian": "წონა",
+    "pronunciation": "/weɪt/",
+    "example_en": "He lifts heavy weights.",
+    "example_ka": "ის მძიმე წონებს სწევს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "fitness",
+    "georgian": "ფიტნესი",
+    "pronunciation": "/ˈfɪtnəs/",
+    "example_en": "Fitness is important for everyone.",
+    "example_ka": "ფიტნესი ყველასთვის მნიშვნელოვანია.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "healthy",
+    "georgian": "ჯანმრთელი",
+    "pronunciation": "/ˈhelθi/",
+    "example_en": "Sport keeps you healthy.",
+    "example_ka": "სპორტი ჯანმრთელს გიქარბს.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "tired",
+    "georgian": "დაღლილი",
+    "pronunciation": "/taɪərd/",
+    "example_en": "I am tired after the game.",
+    "example_ka": "თამაშის შემდეგ დაღლილი ვარ.",
+    "category": "sports_fitness",
+    "level": "A1"
+  },
+  {
+    "english": "energy",
+    "georgian": "ენერგია",
+    "pronunciation": "/ˈenədʒi/",
+    "example_en": "I have a lot of energy today.",
+    "example_ka": "დღეს ბევრი ენერგია მაქვს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "warm-up",
+    "georgian": "გათბობა",
+    "pronunciation": "/ˈwɔːrmʌp/",
+    "example_en": "A warm-up prevents injuries.",
+    "example_ka": "გათბობა ტრავმებს აცილებს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "cool-down",
+    "georgian": "გაგრილება",
+    "pronunciation": "/ˈkuːldaʊn/",
+    "example_en": "Don't forget to cool down after exercise.",
+    "example_ka": "ვარჯიშის შემდეგ გაგრილება არ დაგავიწყდეს.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "sprint",
+    "georgian": "სპრინტი",
+    "pronunciation": "/sprɪnt/",
+    "example_en": "He sprinted to the finish line.",
+    "example_ka": "ის ფინიშამდე სპრინტით მირბოდა.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "marathon",
+    "georgian": "მარათონი",
+    "pronunciation": "/ˈmærəθən/",
+    "example_en": "Running a marathon is very difficult.",
+    "example_ka": "მარათონის გარბენა ძალიან რთულია.",
+    "category": "sports_fitness",
+    "level": "A2"
+  },
+  {
+    "english": "volleyball",
+    "georgian": "ფრენბურთი",
+    "pronunciation": "/ˈvɒlibɔːl/",
+    "example_en": "We play volleyball on the beach.",
+    "example_ka": "სანაპიროზე ფრენბურთს ვთამაშობთ.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "swimming",
+    "georgian": "ცურვა",
+    "pronunciation": "/ˈswɪmɪŋ/",
+    "example_en": "Swimming is great exercise.",
+    "example_ka": "ცურვა შესანიშნავი ვარჯიშია.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "running",
+    "georgian": "სირბილი",
+    "pronunciation": "/ˈrʌnɪŋ/",
+    "example_en": "I go running every morning.",
+    "example_ka": "ყოველ დილით სირბილს მივდივარ.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "cycling",
+    "georgian": "ველოსპორტი",
+    "pronunciation": "/ˈsaɪklɪŋ/",
+    "example_en": "Cycling is good for your health.",
+    "example_ka": "ველოსპორტი ჯანმრთელობისთვის კარგია.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "skiing",
+    "georgian": "თხილამურებით სრიალი",
+    "pronunciation": "/ˈskiːɪŋ/",
+    "example_en": "We go skiing in Gudauri.",
+    "example_ka": "გუდაურში თხილამურებით სრიალზე მივდივართ.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "chess",
+    "georgian": "ჭადრაკი",
+    "pronunciation": "/tʃes/",
+    "example_en": "Chess is a game of strategy.",
+    "example_ka": "ჭადრაკი სტრატეგიის თამაშია.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "game",
+    "georgian": "თამაში",
+    "pronunciation": "/ɡeɪm/",
+    "example_en": "It was an exciting game.",
+    "example_ka": "ეს საინტერესო თამაში იყო.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "draw",
+    "georgian": "ფრე",
+    "pronunciation": "/drɔː/",
+    "example_en": "The match ended in a draw.",
+    "example_ka": "მატჩი ფრეთი დასრულდა.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "championship",
+    "georgian": "ჩემპიონატი",
+    "pronunciation": "/ˈtʃæmpiənʃɪp/",
+    "example_en": "The world championship is next month.",
+    "example_ka": "მსოფლიო ჩემპიონატი მომავალ თვეშია.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "trophy",
+    "georgian": "თასი",
+    "pronunciation": "/ˈtroʊfi/",
+    "example_en": "The team lifted the trophy.",
+    "example_ka": "გუნდმა თასი აიღო.",
+    "category": "sports-games",
+    "level": "intermediate"
+  },
+  {
+    "english": "Olympics",
+    "georgian": "ოლიმპიადა",
+    "pronunciation": "/əˈlɪmpɪks/",
+    "example_en": "The Olympics are held every four years.",
+    "example_ka": "ოლიმპიადა ოთხ წელიწადში ერთხელ იმართება.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "warm up",
+    "georgian": "გახურება",
+    "pronunciation": "/wɔːrm ʌp/",
+    "example_en": "Always warm up before exercising.",
+    "example_ka": "ვარჯიშის წინ ყოველთვის გახურდი.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "competition",
+    "georgian": "შეჯიბრი",
+    "pronunciation": "/ˌkɒmpəˈtɪʃn/",
+    "example_en": "The competition was very tough.",
+    "example_ka": "შეჯიბრი ძალიან რთული იყო.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "fan",
+    "georgian": "გულშემატკივარი",
+    "pronunciation": "/fæn/",
+    "example_en": "Football fans cheered loudly.",
+    "example_ka": "ფეხბურთის გულშემატკივრები ხმამაღლა გამოხატავდნენ მხარდაჭერას.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "record",
+    "georgian": "რეკორდი",
+    "pronunciation": "/ˈrekɔːrd/",
+    "example_en": "She broke the world record.",
+    "example_ka": "მან მსოფლიო რეკორდი მოხსნა.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "tournament",
+    "georgian": "ტურნირი",
+    "pronunciation": "/ˈtʊərnəmənt/",
+    "example_en": "The chess tournament starts tomorrow.",
+    "example_ka": "ჭადრაკის ტურნირი ხვალ იწყება.",
+    "category": "sports-games",
+    "level": "intermediate"
+  },
+  {
+    "english": "defeat",
+    "georgian": "დამარცხება",
+    "pronunciation": "/dɪˈfiːt/",
+    "example_en": "The team suffered a painful defeat.",
+    "example_ka": "გუნდმა მტკივნეული დამარცხება განიცადა.",
+    "category": "sports-games",
+    "level": "intermediate"
+  },
+  {
+    "english": "victory",
+    "georgian": "გამარჯვება",
+    "pronunciation": "/ˈvɪktəri/",
+    "example_en": "It was a great victory for the team.",
+    "example_ka": "ეს გუნდის დიდი გამარჯვება იყო.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "practice",
+    "georgian": "პრაქტიკა / ვარჯიში",
+    "pronunciation": "/ˈpræktɪs/",
+    "example_en": "Practice makes perfect.",
+    "example_ka": "ვარჯიში სრულყოფილებას ქმნის.",
+    "category": "sports-games",
+    "level": "beginner"
+  },
+  {
+    "english": "foul",
+    "georgian": "ფოლი",
+    "pronunciation": "/faʊl/",
+    "example_en": "The referee called a foul.",
+    "example_ka": "მსაჯმა ფოლი დააფიქსირა.",
+    "category": "sports-games",
+    "level": "intermediate"
+  },
+  {
+    "english": "penalty",
+    "georgian": "პენალტი",
+    "pronunciation": "/ˈpenəlti/",
+    "example_en": "He scored from the penalty spot.",
+    "example_ka": "მან პენალტიდან გაიტანა.",
+    "category": "sports-games",
+    "level": "intermediate"
+  },
+  {
+    "english": "halftime",
+    "georgian": "შესვენება",
+    "pronunciation": "/ˈhæftaɪm/",
+    "example_en": "The score was 1-0 at halftime.",
+    "example_ka": "შესვენებისას ანგარიში 1-0 იყო.",
+    "category": "sports-games",
+    "level": "intermediate"
+  },
+  {
+    "english": "board game",
+    "georgian": "სამაგიდო თამაში",
+    "pronunciation": "/bɔːrd ɡeɪm/",
+    "example_en": "We played board games at home.",
+    "example_ka": "სახლში სამაგიდო თამაშებს ვთამაშობდით.",
+    "category": "sports-games",
+    "level": "beginner"
+  }
 ]

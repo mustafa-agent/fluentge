@@ -1,72 +1,713 @@
 [
-  {"english":"house","georgian":"სახლი","pronunciation":"/haʊs/","example_en":"We bought a new house.","example_ka":"ახალი სახლი ვიყიდეთ.","category":"home-housing","level":"elementary"},
-  {"english":"apartment","georgian":"ბინა","pronunciation":"/əˈpɑːrtmənt/","example_en":"I live in a small apartment.","example_ka":"მე პატარა ბინაში ვცხოვრობ.","category":"home-housing","level":"elementary"},
-  {"english":"room","georgian":"ოთახი","pronunciation":"/ruːm/","example_en":"This room is very spacious.","example_ka":"ეს ოთახი ძალიან ფართოა.","category":"home-housing","level":"elementary"},
-  {"english":"kitchen","georgian":"სამზარეულო","pronunciation":"/ˈkɪtʃən/","example_en":"She is cooking in the kitchen.","example_ka":"ის სამზარეულოში ამზადებს.","category":"home-housing","level":"elementary"},
-  {"english":"bedroom","georgian":"საძინებელი","pronunciation":"/ˈbɛdruːm/","example_en":"The bedroom has a large window.","example_ka":"საძინებელს დიდი ფანჯარა აქვს.","category":"home-housing","level":"elementary"},
-  {"english":"bathroom","georgian":"აბაზანა","pronunciation":"/ˈbæθruːm/","example_en":"The bathroom needs cleaning.","example_ka":"აბაზანას დალაგება სჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"living room","georgian":"მისაღები","pronunciation":"/ˈlɪvɪŋ ruːm/","example_en":"We watch TV in the living room.","example_ka":"მისაღებში ტელევიზორს ვუყურებთ.","category":"home-housing","level":"elementary"},
-  {"english":"balcony","georgian":"აივანი","pronunciation":"/ˈbælkəni/","example_en":"I drink coffee on the balcony.","example_ka":"აივანზე ყავას ვსვამ.","category":"home-housing","level":"elementary"},
-  {"english":"door","georgian":"კარი","pronunciation":"/dɔːr/","example_en":"Please close the door.","example_ka":"გთხოვთ, კარი დახურე.","category":"home-housing","level":"elementary"},
-  {"english":"window","georgian":"ფანჯარა","pronunciation":"/ˈwɪndoʊ/","example_en":"Open the window for fresh air.","example_ka":"სუფთა ჰაერისთვის ფანჯარა გააღე.","category":"home-housing","level":"elementary"},
-  {"english":"wall","georgian":"კედელი","pronunciation":"/wɔːl/","example_en":"We painted the walls white.","example_ka":"კედლები თეთრად შევღებეთ.","category":"home-housing","level":"elementary"},
-  {"english":"floor","georgian":"იატაკი","pronunciation":"/flɔːr/","example_en":"The floor is made of wood.","example_ka":"იატაკი ხისაა.","category":"home-housing","level":"elementary"},
-  {"english":"ceiling","georgian":"ჭერი","pronunciation":"/ˈsiːlɪŋ/","example_en":"The ceiling is very high.","example_ka":"ჭერი ძალიან მაღალია.","category":"home-housing","level":"elementary"},
-  {"english":"roof","georgian":"სახურავი","pronunciation":"/ruːf/","example_en":"The roof needs repair.","example_ka":"სახურავს შეკეთება სჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"stairs","georgian":"კიბეები","pronunciation":"/stɛrz/","example_en":"Be careful on the stairs.","example_ka":"კიბეებზე ფრთხილად იყავი.","category":"home-housing","level":"elementary"},
-  {"english":"elevator","georgian":"ლიფტი","pronunciation":"/ˈɛlɪveɪtər/","example_en":"Take the elevator to the fifth floor.","example_ka":"მეხუთე სართულზე ლიფტით ავიდი.","category":"home-housing","level":"elementary"},
-  {"english":"garage","georgian":"ავტოფარეხი","pronunciation":"/ɡəˈrɑːʒ/","example_en":"Park the car in the garage.","example_ka":"მანქანა ავტოფარეხში დააყენე.","category":"home-housing","level":"elementary"},
-  {"english":"garden","georgian":"ბაღი","pronunciation":"/ˈɡɑːrdən/","example_en":"She grows flowers in the garden.","example_ka":"ის ბაღში ყვავილებს ზრდის.","category":"home-housing","level":"elementary"},
-  {"english":"yard","georgian":"ეზო","pronunciation":"/jɑːrd/","example_en":"Children play in the yard.","example_ka":"ბავშვები ეზოში თამაშობენ.","category":"home-housing","level":"elementary"},
-  {"english":"fence","georgian":"ღობე","pronunciation":"/fɛns/","example_en":"We built a new fence.","example_ka":"ახალი ღობე ავაშენეთ.","category":"home-housing","level":"elementary"},
-  {"english":"bed","georgian":"საწოლი","pronunciation":"/bɛd/","example_en":"I go to bed at eleven.","example_ka":"თერთმეტზე ვწვები საწოლში.","category":"home-housing","level":"elementary"},
-  {"english":"table","georgian":"მაგიდა","pronunciation":"/ˈteɪbəl/","example_en":"Put the book on the table.","example_ka":"წიგნი მაგიდაზე დადე.","category":"home-housing","level":"elementary"},
-  {"english":"chair","georgian":"სკამი","pronunciation":"/tʃɛr/","example_en":"Sit down on the chair.","example_ka":"სკამზე დაჯექი.","category":"home-housing","level":"elementary"},
-  {"english":"sofa","georgian":"დივანი","pronunciation":"/ˈsoʊfə/","example_en":"I fell asleep on the sofa.","example_ka":"დივანზე დამეძინა.","category":"home-housing","level":"elementary"},
-  {"english":"wardrobe","georgian":"კარადა","pronunciation":"/ˈwɔːrdroʊb/","example_en":"Put your clothes in the wardrobe.","example_ka":"ტანსაცმელი კარადაში ჩადე.","category":"home-housing","level":"elementary"},
-  {"english":"shelf","georgian":"თარო","pronunciation":"/ʃɛlf/","example_en":"The books are on the shelf.","example_ka":"წიგნები თაროზეა.","category":"home-housing","level":"elementary"},
-  {"english":"mirror","georgian":"სარკე","pronunciation":"/ˈmɪrər/","example_en":"She looked in the mirror.","example_ka":"მან სარკეში ჩაიხედა.","category":"home-housing","level":"elementary"},
-  {"english":"lamp","georgian":"ნათურა","pronunciation":"/læmp/","example_en":"Turn on the lamp, please.","example_ka":"ნათურა ჩართე, გთხოვთ.","category":"home-housing","level":"elementary"},
-  {"english":"carpet","georgian":"ხალიჩა","pronunciation":"/ˈkɑːrpɪt/","example_en":"The carpet needs vacuuming.","example_ka":"ხალიჩას მტვერსასრუტით გაწმენდა სჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"curtain","georgian":"ფარდა","pronunciation":"/ˈkɜːrtən/","example_en":"Close the curtains at night.","example_ka":"ღამით ფარდები დახურე.","category":"home-housing","level":"elementary"},
-  {"english":"pillow","georgian":"ბალიში","pronunciation":"/ˈpɪloʊ/","example_en":"I need a soft pillow.","example_ka":"რბილი ბალიში მჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"blanket","georgian":"საბანი","pronunciation":"/ˈblæŋkɪt/","example_en":"It's cold, bring me a blanket.","example_ka":"ცივა, საბანი მომიტანე.","category":"home-housing","level":"elementary"},
-  {"english":"towel","georgian":"პირსახოცი","pronunciation":"/ˈtaʊəl/","example_en":"Give me a clean towel.","example_ka":"სუფთა პირსახოცი მომეცი.","category":"home-housing","level":"elementary"},
-  {"english":"refrigerator","georgian":"მაცივარი","pronunciation":"/rɪˈfrɪdʒəreɪtər/","example_en":"Put the milk in the refrigerator.","example_ka":"რძე მაცივარში შედე.","category":"home-housing","level":"elementary"},
-  {"english":"stove","georgian":"ღუმელი","pronunciation":"/stoʊv/","example_en":"Be careful near the stove.","example_ka":"ღუმელთან ფრთხილად იყავი.","category":"home-housing","level":"elementary"},
-  {"english":"oven","georgian":"თონე","pronunciation":"/ˈʌvən/","example_en":"Preheat the oven to 180 degrees.","example_ka":"თონე 180 გრადუსამდე გააცხელე.","category":"home-housing","level":"elementary"},
-  {"english":"washing machine","georgian":"სარეცხი მანქანა","pronunciation":"/ˈwɔːʃɪŋ məˈʃiːn/","example_en":"The washing machine is broken.","example_ka":"სარეცხი მანქანა გაფუჭდა.","category":"home-housing","level":"elementary"},
-  {"english":"vacuum cleaner","georgian":"მტვერსასრუტი","pronunciation":"/ˈvækjuːm ˈkliːnər/","example_en":"I need to use the vacuum cleaner.","example_ka":"მტვერსასრუტის გამოყენება მჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"sink","georgian":"ნიჟარა","pronunciation":"/sɪŋk/","example_en":"Wash the dishes in the sink.","example_ka":"ჭურჭელი ნიჟარაში გარეცხე.","category":"home-housing","level":"elementary"},
-  {"english":"toilet","georgian":"ტუალეტი","pronunciation":"/ˈtɔɪlɪt/","example_en":"Where is the toilet?","example_ka":"სად არის ტუალეტი?","category":"home-housing","level":"elementary"},
-  {"english":"shower","georgian":"შხაპი","pronunciation":"/ˈʃaʊər/","example_en":"I take a shower every morning.","example_ka":"ყოველ დილით შხაპს ვიღებ.","category":"home-housing","level":"elementary"},
-  {"english":"key","georgian":"გასაღები","pronunciation":"/kiː/","example_en":"I lost my house key.","example_ka":"სახლის გასაღები დავკარგე.","category":"home-housing","level":"elementary"},
-  {"english":"lock","georgian":"საკეტი","pronunciation":"/lɑːk/","example_en":"Change the lock on the door.","example_ka":"კარზე საკეტი შეცვალე.","category":"home-housing","level":"elementary"},
-  {"english":"rent","georgian":"ქირა","pronunciation":"/rɛnt/","example_en":"The rent is due tomorrow.","example_ka":"ხვალ ქირის გადახდის დღეა.","category":"home-housing","level":"elementary"},
-  {"english":"landlord","georgian":"მეპატრონე","pronunciation":"/ˈlændlɔːrd/","example_en":"The landlord raised the rent.","example_ka":"მეპატრონემ ქირა გაზარდა.","category":"home-housing","level":"elementary"},
-  {"english":"neighbor","georgian":"მეზობელი","pronunciation":"/ˈneɪbər/","example_en":"Our neighbor is very noisy.","example_ka":"ჩვენი მეზობელი ძალიან ხმაურიანია.","category":"home-housing","level":"elementary"},
-  {"english":"furniture","georgian":"ავეჯი","pronunciation":"/ˈfɜːrnɪtʃər/","example_en":"We need new furniture.","example_ka":"ახალი ავეჯი გვჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"decoration","georgian":"დეკორაცია","pronunciation":"/ˌdɛkəˈreɪʃən/","example_en":"The room decoration is beautiful.","example_ka":"ოთახის დეკორაცია ლამაზია.","category":"home-housing","level":"elementary"},
-  {"english":"repair","georgian":"შეკეთება","pronunciation":"/rɪˈpɛr/","example_en":"The house needs some repairs.","example_ka":"სახლს შეკეთება სჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"move","georgian":"გადასახლება","pronunciation":"/muːv/","example_en":"We will move to a new apartment.","example_ka":"ახალ ბინაში გადავსახლდებით.","category":"home-housing","level":"elementary"},
-  {"english":"clean","georgian":"დალაგება","pronunciation":"/kliːn/","example_en":"I clean the house every weekend.","example_ka":"ყოველ შაბათ-კვირას სახლს ვალაგებ.","category":"home-housing","level":"elementary"},
-  {"english":"dirty","georgian":"ბინძური","pronunciation":"/ˈdɜːrti/","example_en":"The kitchen is dirty.","example_ka":"სამზარეულო ბინძურია.","category":"home-housing","level":"elementary"},
-  {"english":"comfortable","georgian":"კომფორტული","pronunciation":"/ˈkʌmfərtəbəl/","example_en":"This sofa is very comfortable.","example_ka":"ეს დივანი ძალიან კომფორტულია.","category":"home-housing","level":"elementary"},
-  {"english":"cozy","georgian":"მყუდრო","pronunciation":"/ˈkoʊzi/","example_en":"Their home is very cozy.","example_ka":"მათი სახლი ძალიან მყუდროა.","category":"home-housing","level":"elementary"},
-  {"english":"spacious","georgian":"ფართო","pronunciation":"/ˈspeɪʃəs/","example_en":"The living room is spacious.","example_ka":"მისაღები ფართოა.","category":"home-housing","level":"elementary"},
-  {"english":"narrow","georgian":"ვიწრო","pronunciation":"/ˈnæroʊ/","example_en":"The corridor is too narrow.","example_ka":"დერეფანი ძალიან ვიწროა.","category":"home-housing","level":"elementary"},
-  {"english":"basement","georgian":"სარდაფი","pronunciation":"/ˈbeɪsmənt/","example_en":"We store old things in the basement.","example_ka":"ძველ ნივთებს სარდაფში ვინახავთ.","category":"home-housing","level":"elementary"},
-  {"english":"attic","georgian":"სხვენი","pronunciation":"/ˈætɪk/","example_en":"There are old photos in the attic.","example_ka":"სხვენში ძველი ფოტოებია.","category":"home-housing","level":"elementary"},
-  {"english":"hallway","georgian":"დერეფანი","pronunciation":"/ˈhɔːlweɪ/","example_en":"Leave your shoes in the hallway.","example_ka":"ფეხსაცმელი დერეფანში დატოვე.","category":"home-housing","level":"elementary"},
-  {"english":"drawer","georgian":"უჯრა","pronunciation":"/drɔːr/","example_en":"The keys are in the drawer.","example_ka":"გასაღებები უჯრაშია.","category":"home-housing","level":"elementary"},
-  {"english":"clock","georgian":"საათი","pronunciation":"/klɑːk/","example_en":"The clock on the wall shows six.","example_ka":"კედელზე საათი ექვსს აჩვენებს.","category":"home-housing","level":"elementary"},
-  {"english":"trash","georgian":"ნაგავი","pronunciation":"/træʃ/","example_en":"Take out the trash, please.","example_ka":"ნაგავი გაიტანე, გთხოვთ.","category":"home-housing","level":"elementary"},
-  {"english":"electricity","georgian":"ელექტროენერგია","pronunciation":"/ɪˌlɛkˈtrɪsɪti/","example_en":"The electricity bill is expensive.","example_ka":"ელექტროენერგიის გადასახადი ძვირია.","category":"home-housing","level":"elementary"},
-  {"english":"heating","georgian":"გათბობა","pronunciation":"/ˈhiːtɪŋ/","example_en":"Turn on the heating, it's cold.","example_ka":"გათბობა ჩართე, ცივა.","category":"home-housing","level":"elementary"},
-  {"english":"air conditioner","georgian":"კონდიციონერი","pronunciation":"/ɛr kənˈdɪʃənər/","example_en":"The air conditioner is not working.","example_ka":"კონდიციონერი არ მუშაობს.","category":"home-housing","level":"elementary"},
-  {"english":"iron","georgian":"უთო","pronunciation":"/ˈaɪərn/","example_en":"I need to iron my shirt.","example_ka":"პერანგის დაუთოება მჭირდება.","category":"home-housing","level":"elementary"},
-  {"english":"broom","georgian":"ცოცხი","pronunciation":"/bruːm/","example_en":"Sweep the floor with a broom.","example_ka":"იატაკი ცოცხით გვე.","category":"home-housing","level":"elementary"},
-  {"english":"soap","georgian":"საპონი","pronunciation":"/soʊp/","example_en":"Wash your hands with soap.","example_ka":"ხელები საპნით დაიბანე.","category":"home-housing","level":"elementary"},
-  {"english":"building","georgian":"შენობა","pronunciation":"/ˈbɪldɪŋ/","example_en":"The building has ten floors.","example_ka":"შენობას ათი სართული აქვს.","category":"home-housing","level":"elementary"},
-  {"english":"address","georgian":"მისამართი","pronunciation":"/əˈdrɛs/","example_en":"What is your home address?","example_ka":"რა არის შენი სახლის მისამართი?","category":"home-housing","level":"elementary"}
+  {
+    "english": "house",
+    "georgian": "სახლი",
+    "pronunciation": "/haʊs/",
+    "example_en": "We bought a new house.",
+    "example_ka": "ახალი სახლი ვიყიდეთ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "apartment",
+    "georgian": "ბინა",
+    "pronunciation": "/əˈpɑːrtmənt/",
+    "example_en": "I live in a small apartment.",
+    "example_ka": "მე პატარა ბინაში ვცხოვრობ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "room",
+    "georgian": "ოთახი",
+    "pronunciation": "/ruːm/",
+    "example_en": "This room is very spacious.",
+    "example_ka": "ეს ოთახი ძალიან ფართოა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "kitchen",
+    "georgian": "სამზარეულო",
+    "pronunciation": "/ˈkɪtʃən/",
+    "example_en": "She is cooking in the kitchen.",
+    "example_ka": "ის სამზარეულოში ამზადებს.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "bedroom",
+    "georgian": "საძინებელი",
+    "pronunciation": "/ˈbɛdruːm/",
+    "example_en": "The bedroom has a large window.",
+    "example_ka": "საძინებელს დიდი ფანჯარა აქვს.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "bathroom",
+    "georgian": "აბაზანა",
+    "pronunciation": "/ˈbæθruːm/",
+    "example_en": "The bathroom needs cleaning.",
+    "example_ka": "აბაზანას დალაგება სჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "living room",
+    "georgian": "მისაღები",
+    "pronunciation": "/ˈlɪvɪŋ ruːm/",
+    "example_en": "We watch TV in the living room.",
+    "example_ka": "მისაღებში ტელევიზორს ვუყურებთ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "balcony",
+    "georgian": "აივანი",
+    "pronunciation": "/ˈbælkəni/",
+    "example_en": "I drink coffee on the balcony.",
+    "example_ka": "აივანზე ყავას ვსვამ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "door",
+    "georgian": "კარი",
+    "pronunciation": "/dɔːr/",
+    "example_en": "Please close the door.",
+    "example_ka": "გთხოვთ, კარი დახურე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "Open the window for fresh air.",
+    "example_ka": "სუფთა ჰაერისთვის ფანჯარა გააღე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "wall",
+    "georgian": "კედელი",
+    "pronunciation": "/wɔːl/",
+    "example_en": "We painted the walls white.",
+    "example_ka": "კედლები თეთრად შევღებეთ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "floor",
+    "georgian": "იატაკი",
+    "pronunciation": "/flɔːr/",
+    "example_en": "The floor is made of wood.",
+    "example_ka": "იატაკი ხისაა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "ceiling",
+    "georgian": "ჭერი",
+    "pronunciation": "/ˈsiːlɪŋ/",
+    "example_en": "The ceiling is very high.",
+    "example_ka": "ჭერი ძალიან მაღალია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "roof",
+    "georgian": "სახურავი",
+    "pronunciation": "/ruːf/",
+    "example_en": "The roof needs repair.",
+    "example_ka": "სახურავს შეკეთება სჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "stairs",
+    "georgian": "კიბეები",
+    "pronunciation": "/stɛrz/",
+    "example_en": "Be careful on the stairs.",
+    "example_ka": "კიბეებზე ფრთხილად იყავი.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "elevator",
+    "georgian": "ლიფტი",
+    "pronunciation": "/ˈɛlɪveɪtər/",
+    "example_en": "Take the elevator to the fifth floor.",
+    "example_ka": "მეხუთე სართულზე ლიფტით ავიდი.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "garage",
+    "georgian": "ავტოფარეხი",
+    "pronunciation": "/ɡəˈrɑːʒ/",
+    "example_en": "Park the car in the garage.",
+    "example_ka": "მანქანა ავტოფარეხში დააყენე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "garden",
+    "georgian": "ბაღი",
+    "pronunciation": "/ˈɡɑːrdən/",
+    "example_en": "She grows flowers in the garden.",
+    "example_ka": "ის ბაღში ყვავილებს ზრდის.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "yard",
+    "georgian": "ეზო",
+    "pronunciation": "/jɑːrd/",
+    "example_en": "Children play in the yard.",
+    "example_ka": "ბავშვები ეზოში თამაშობენ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "fence",
+    "georgian": "ღობე",
+    "pronunciation": "/fɛns/",
+    "example_en": "We built a new fence.",
+    "example_ka": "ახალი ღობე ავაშენეთ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "bed",
+    "georgian": "საწოლი",
+    "pronunciation": "/bɛd/",
+    "example_en": "I go to bed at eleven.",
+    "example_ka": "თერთმეტზე ვწვები საწოლში.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "table",
+    "georgian": "მაგიდა",
+    "pronunciation": "/ˈteɪbəl/",
+    "example_en": "Put the book on the table.",
+    "example_ka": "წიგნი მაგიდაზე დადე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "chair",
+    "georgian": "სკამი",
+    "pronunciation": "/tʃɛr/",
+    "example_en": "Sit down on the chair.",
+    "example_ka": "სკამზე დაჯექი.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "sofa",
+    "georgian": "დივანი",
+    "pronunciation": "/ˈsoʊfə/",
+    "example_en": "I fell asleep on the sofa.",
+    "example_ka": "დივანზე დამეძინა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "wardrobe",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈwɔːrdroʊb/",
+    "example_en": "Put your clothes in the wardrobe.",
+    "example_ka": "ტანსაცმელი კარადაში ჩადე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "shelf",
+    "georgian": "თარო",
+    "pronunciation": "/ʃɛlf/",
+    "example_en": "The books are on the shelf.",
+    "example_ka": "წიგნები თაროზეა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "mirror",
+    "georgian": "სარკე",
+    "pronunciation": "/ˈmɪrər/",
+    "example_en": "She looked in the mirror.",
+    "example_ka": "მან სარკეში ჩაიხედა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "lamp",
+    "georgian": "ნათურა",
+    "pronunciation": "/læmp/",
+    "example_en": "Turn on the lamp, please.",
+    "example_ka": "ნათურა ჩართე, გთხოვთ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "carpet",
+    "georgian": "ხალიჩა",
+    "pronunciation": "/ˈkɑːrpɪt/",
+    "example_en": "The carpet needs vacuuming.",
+    "example_ka": "ხალიჩას მტვერსასრუტით გაწმენდა სჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "curtain",
+    "georgian": "ფარდა",
+    "pronunciation": "/ˈkɜːrtən/",
+    "example_en": "Close the curtains at night.",
+    "example_ka": "ღამით ფარდები დახურე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "pillow",
+    "georgian": "ბალიში",
+    "pronunciation": "/ˈpɪloʊ/",
+    "example_en": "I need a soft pillow.",
+    "example_ka": "რბილი ბალიში მჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkɪt/",
+    "example_en": "It's cold, bring me a blanket.",
+    "example_ka": "ცივა, საბანი მომიტანე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "towel",
+    "georgian": "პირსახოცი",
+    "pronunciation": "/ˈtaʊəl/",
+    "example_en": "Give me a clean towel.",
+    "example_ka": "სუფთა პირსახოცი მომეცი.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "refrigerator",
+    "georgian": "მაცივარი",
+    "pronunciation": "/rɪˈfrɪdʒəreɪtər/",
+    "example_en": "Put the milk in the refrigerator.",
+    "example_ka": "რძე მაცივარში შედე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "stove",
+    "georgian": "ღუმელი",
+    "pronunciation": "/stoʊv/",
+    "example_en": "Be careful near the stove.",
+    "example_ka": "ღუმელთან ფრთხილად იყავი.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "oven",
+    "georgian": "თონე",
+    "pronunciation": "/ˈʌvən/",
+    "example_en": "Preheat the oven to 180 degrees.",
+    "example_ka": "თონე 180 გრადუსამდე გააცხელე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "washing machine",
+    "georgian": "სარეცხი მანქანა",
+    "pronunciation": "/ˈwɔːʃɪŋ məˈʃiːn/",
+    "example_en": "The washing machine is broken.",
+    "example_ka": "სარეცხი მანქანა გაფუჭდა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "vacuum cleaner",
+    "georgian": "მტვერსასრუტი",
+    "pronunciation": "/ˈvækjuːm ˈkliːnər/",
+    "example_en": "I need to use the vacuum cleaner.",
+    "example_ka": "მტვერსასრუტის გამოყენება მჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "sink",
+    "georgian": "ნიჟარა",
+    "pronunciation": "/sɪŋk/",
+    "example_en": "Wash the dishes in the sink.",
+    "example_ka": "ჭურჭელი ნიჟარაში გარეცხე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "toilet",
+    "georgian": "ტუალეტი",
+    "pronunciation": "/ˈtɔɪlɪt/",
+    "example_en": "Where is the toilet?",
+    "example_ka": "სად არის ტუალეტი?",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "shower",
+    "georgian": "შხაპი",
+    "pronunciation": "/ˈʃaʊər/",
+    "example_en": "I take a shower every morning.",
+    "example_ka": "ყოველ დილით შხაპს ვიღებ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "key",
+    "georgian": "გასაღები",
+    "pronunciation": "/kiː/",
+    "example_en": "I lost my house key.",
+    "example_ka": "სახლის გასაღები დავკარგე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "lock",
+    "georgian": "საკეტი",
+    "pronunciation": "/lɑːk/",
+    "example_en": "Change the lock on the door.",
+    "example_ka": "კარზე საკეტი შეცვალე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "rent",
+    "georgian": "ქირა",
+    "pronunciation": "/rɛnt/",
+    "example_en": "The rent is due tomorrow.",
+    "example_ka": "ხვალ ქირის გადახდის დღეა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "landlord",
+    "georgian": "მეპატრონე",
+    "pronunciation": "/ˈlændlɔːrd/",
+    "example_en": "The landlord raised the rent.",
+    "example_ka": "მეპატრონემ ქირა გაზარდა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "neighbor",
+    "georgian": "მეზობელი",
+    "pronunciation": "/ˈneɪbər/",
+    "example_en": "Our neighbor is very noisy.",
+    "example_ka": "ჩვენი მეზობელი ძალიან ხმაურიანია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "furniture",
+    "georgian": "ავეჯი",
+    "pronunciation": "/ˈfɜːrnɪtʃər/",
+    "example_en": "We need new furniture.",
+    "example_ka": "ახალი ავეჯი გვჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "decoration",
+    "georgian": "დეკორაცია",
+    "pronunciation": "/ˌdɛkəˈreɪʃən/",
+    "example_en": "The room decoration is beautiful.",
+    "example_ka": "ოთახის დეკორაცია ლამაზია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "repair",
+    "georgian": "შეკეთება",
+    "pronunciation": "/rɪˈpɛr/",
+    "example_en": "The house needs some repairs.",
+    "example_ka": "სახლს შეკეთება სჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "move",
+    "georgian": "გადასახლება",
+    "pronunciation": "/muːv/",
+    "example_en": "We will move to a new apartment.",
+    "example_ka": "ახალ ბინაში გადავსახლდებით.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "clean",
+    "georgian": "დალაგება",
+    "pronunciation": "/kliːn/",
+    "example_en": "I clean the house every weekend.",
+    "example_ka": "ყოველ შაბათ-კვირას სახლს ვალაგებ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "dirty",
+    "georgian": "ბინძური",
+    "pronunciation": "/ˈdɜːrti/",
+    "example_en": "The kitchen is dirty.",
+    "example_ka": "სამზარეულო ბინძურია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "comfortable",
+    "georgian": "კომფორტული",
+    "pronunciation": "/ˈkʌmfərtəbəl/",
+    "example_en": "This sofa is very comfortable.",
+    "example_ka": "ეს დივანი ძალიან კომფორტულია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "cozy",
+    "georgian": "მყუდრო",
+    "pronunciation": "/ˈkoʊzi/",
+    "example_en": "Their home is very cozy.",
+    "example_ka": "მათი სახლი ძალიან მყუდროა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "spacious",
+    "georgian": "ფართო",
+    "pronunciation": "/ˈspeɪʃəs/",
+    "example_en": "The living room is spacious.",
+    "example_ka": "მისაღები ფართოა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "narrow",
+    "georgian": "ვიწრო",
+    "pronunciation": "/ˈnæroʊ/",
+    "example_en": "The corridor is too narrow.",
+    "example_ka": "დერეფანი ძალიან ვიწროა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "basement",
+    "georgian": "სარდაფი",
+    "pronunciation": "/ˈbeɪsmənt/",
+    "example_en": "We store old things in the basement.",
+    "example_ka": "ძველ ნივთებს სარდაფში ვინახავთ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "attic",
+    "georgian": "სხვენი",
+    "pronunciation": "/ˈætɪk/",
+    "example_en": "There are old photos in the attic.",
+    "example_ka": "სხვენში ძველი ფოტოებია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "hallway",
+    "georgian": "დერეფანი",
+    "pronunciation": "/ˈhɔːlweɪ/",
+    "example_en": "Leave your shoes in the hallway.",
+    "example_ka": "ფეხსაცმელი დერეფანში დატოვე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "drawer",
+    "georgian": "უჯრა",
+    "pronunciation": "/drɔːr/",
+    "example_en": "The keys are in the drawer.",
+    "example_ka": "გასაღებები უჯრაშია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "clock",
+    "georgian": "საათი",
+    "pronunciation": "/klɑːk/",
+    "example_en": "The clock on the wall shows six.",
+    "example_ka": "კედელზე საათი ექვსს აჩვენებს.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "trash",
+    "georgian": "ნაგავი",
+    "pronunciation": "/træʃ/",
+    "example_en": "Take out the trash, please.",
+    "example_ka": "ნაგავი გაიტანე, გთხოვთ.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "electricity",
+    "georgian": "ელექტროენერგია",
+    "pronunciation": "/ɪˌlɛkˈtrɪsɪti/",
+    "example_en": "The electricity bill is expensive.",
+    "example_ka": "ელექტროენერგიის გადასახადი ძვირია.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "heating",
+    "georgian": "გათბობა",
+    "pronunciation": "/ˈhiːtɪŋ/",
+    "example_en": "Turn on the heating, it's cold.",
+    "example_ka": "გათბობა ჩართე, ცივა.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "air conditioner",
+    "georgian": "კონდიციონერი",
+    "pronunciation": "/ɛr kənˈdɪʃənər/",
+    "example_en": "The air conditioner is not working.",
+    "example_ka": "კონდიციონერი არ მუშაობს.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "iron",
+    "georgian": "უთო",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "I need to iron my shirt.",
+    "example_ka": "პერანგის დაუთოება მჭირდება.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "broom",
+    "georgian": "ცოცხი",
+    "pronunciation": "/bruːm/",
+    "example_en": "Sweep the floor with a broom.",
+    "example_ka": "იატაკი ცოცხით გვე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "soap",
+    "georgian": "საპონი",
+    "pronunciation": "/soʊp/",
+    "example_en": "Wash your hands with soap.",
+    "example_ka": "ხელები საპნით დაიბანე.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "building",
+    "georgian": "შენობა",
+    "pronunciation": "/ˈbɪldɪŋ/",
+    "example_en": "The building has ten floors.",
+    "example_ka": "შენობას ათი სართული აქვს.",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "address",
+    "georgian": "მისამართი",
+    "pronunciation": "/əˈdrɛs/",
+    "example_en": "What is your home address?",
+    "example_ka": "რა არის შენი სახლის მისამართი?",
+    "category": "home-housing",
+    "level": "elementary"
+  },
+  {
+    "english": "Desk",
+    "georgian": "წერის მაგიდა",
+    "pronunciation": "/dɛsk/",
+    "example_en": "I study at my desk.",
+    "example_ka": "მაგიდასთან ვსწავლობ.",
+    "category": "furniture",
+    "level": "A1"
+  },
+  {
+    "english": "Light",
+    "georgian": "შუქი",
+    "pronunciation": "/laɪt/",
+    "example_en": "Turn off the light.",
+    "example_ka": "შუქი გამორთე.",
+    "category": "furniture",
+    "level": "A1"
+  },
+  {
+    "english": "Switch",
+    "georgian": "გადამრთველი",
+    "pronunciation": "/swɪtʃ/",
+    "example_en": "The light switch is near the door.",
+    "example_ka": "შუქის გადამრთველი კართან არის.",
+    "category": "furniture",
+    "level": "A2"
+  },
+  {
+    "english": "Couch",
+    "georgian": "ტახტი",
+    "pronunciation": "/kaʊtʃ/",
+    "example_en": "I fell asleep on the couch.",
+    "example_ka": "ტახტზე ჩამეძინა.",
+    "category": "furniture",
+    "level": "A2"
+  },
+  {
+    "english": "Closet",
+    "georgian": "კარადა / ჩასაკეტი",
+    "pronunciation": "/ˈklɒzɪt/",
+    "example_en": "Hang your coat in the closet.",
+    "example_ka": "პალტო კარადაში ჩამოკიდე.",
+    "category": "furniture",
+    "level": "A2"
+  },
+  {
+    "english": "Move in",
+    "georgian": "შესახლება",
+    "pronunciation": "/muːv ɪn/",
+    "example_en": "We moved in last month.",
+    "example_ka": "გასულ თვეში შევსახლდით.",
+    "category": "furniture",
+    "level": "A2"
+  },
+  {
+    "english": "Vacuum",
+    "georgian": "მტვერსასრუტი / მტვერი წოვა",
+    "pronunciation": "/ˈvækjuːm/",
+    "example_en": "Vacuum the carpet, please.",
+    "example_ka": "ხალიჩა მტვერსასრუტით გაწმინდე, გთხოვთ.",
+    "category": "furniture",
+    "level": "A2"
+  },
+  {
+    "english": "Toothbrush",
+    "georgian": "კბილის ჯაგრისი",
+    "pronunciation": "/ˈtuːθbrʌʃ/",
+    "example_en": "I need a new toothbrush.",
+    "example_ka": "ახალი კბილის ჯაგრისი მჭირდება.",
+    "category": "furniture",
+    "level": "A1"
+  },
+  {
+    "english": "Shampoo",
+    "georgian": "შამპუნი",
+    "pronunciation": "/ʃæmˈpuː/",
+    "example_en": "Pass me the shampoo.",
+    "example_ka": "შამპუნი მომაწოდე.",
+    "category": "furniture",
+    "level": "A1"
+  }
 ]

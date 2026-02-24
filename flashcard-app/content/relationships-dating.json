@@ -1,62 +1,713 @@
 [
-  {"english": "Love", "georgian": "სიყვარული", "pronunciation": "/lʌv/", "example_en": "Love is the most powerful emotion.", "example_ka": "სიყვარული ყველაზე ძლიერი ემოციაა.", "category": "relationships", "level": "A1"},
-  {"english": "Kiss", "georgian": "კოცნა", "pronunciation": "/kɪs/", "example_en": "He gave her a kiss on the cheek.", "example_ka": "მან ლოყაზე აკოცა.", "category": "relationships", "level": "A1"},
-  {"english": "Hug", "georgian": "ჩახუტება", "pronunciation": "/hʌɡ/", "example_en": "She gave him a warm hug.", "example_ka": "მან თბილად ჩაუხუტა.", "category": "relationships", "level": "A1"},
-  {"english": "Date", "georgian": "პაემანი", "pronunciation": "/deɪt/", "example_en": "They went on a date last night.", "example_ka": "ისინი წუხელ პაემანზე წავიდნენ.", "category": "relationships", "level": "A1"},
-  {"english": "Couple", "georgian": "წყვილი", "pronunciation": "/ˈkʌpəl/", "example_en": "They are a lovely couple.", "example_ka": "ისინი საყვარელი წყვილი არიან.", "category": "relationships", "level": "A1"},
-  {"english": "Wedding", "georgian": "ქორწილი", "pronunciation": "/ˈwɛdɪŋ/", "example_en": "The wedding was beautiful.", "example_ka": "ქორწილი ლამაზი იყო.", "category": "relationships", "level": "A1"},
-  {"english": "Marriage", "georgian": "ქორწინება", "pronunciation": "/ˈmærɪdʒ/", "example_en": "A happy marriage requires effort.", "example_ka": "ბედნიერ ქორწინებას ძალისხმევა სჭირდება.", "category": "relationships", "level": "A2"},
-  {"english": "Boyfriend", "georgian": "შეყვარებული (ბიჭი)", "pronunciation": "/ˈbɔɪfrɛnd/", "example_en": "She introduced her boyfriend to her parents.", "example_ka": "მან შეყვარებული მშობლებს გააცნო.", "category": "relationships", "level": "A1"},
-  {"english": "Girlfriend", "georgian": "შეყვარებული (გოგო)", "pronunciation": "/ˈɡɜːrlfrɛnd/", "example_en": "He bought flowers for his girlfriend.", "example_ka": "მან შეყვარებულს ყვავილები უყიდა.", "category": "relationships", "level": "A1"},
-  {"english": "Husband", "georgian": "ქმარი", "pronunciation": "/ˈhʌzbənd/", "example_en": "Her husband is very supportive.", "example_ka": "მისი ქმარი ძალიან მხარდამჭერია.", "category": "relationships", "level": "A1"},
-  {"english": "Wife", "georgian": "ცოლი", "pronunciation": "/waɪf/", "example_en": "He loves his wife dearly.", "example_ka": "ის ცოლს ძალიან უყვარს.", "category": "relationships", "level": "A1"},
-  {"english": "Engagement", "georgian": "ნიშნობა", "pronunciation": "/ɪnˈɡeɪdʒmənt/", "example_en": "They announced their engagement.", "example_ka": "მათ ნიშნობა გამოაცხადეს.", "category": "relationships", "level": "A2"},
-  {"english": "Proposal", "georgian": "ხელის თხოვნა", "pronunciation": "/prəˈpoʊzəl/", "example_en": "The proposal was very romantic.", "example_ka": "ხელის თხოვნა ძალიან რომანტიული იყო.", "category": "relationships", "level": "A2"},
-  {"english": "Divorce", "georgian": "განქორწინება", "pronunciation": "/dɪˈvɔːrs/", "example_en": "They decided to get a divorce.", "example_ka": "მათ განქორწინება გადაწყვიტეს.", "category": "relationships", "level": "A2"},
-  {"english": "Breakup", "georgian": "დაშორება", "pronunciation": "/ˈbreɪkʌp/", "example_en": "The breakup was difficult for both.", "example_ka": "დაშორება ორივესთვის რთული იყო.", "category": "relationships", "level": "A2"},
-  {"english": "Crush", "georgian": "მოწონება", "pronunciation": "/krʌʃ/", "example_en": "She has a crush on her classmate.", "example_ka": "მას თანაკლასელი მოსწონს.", "category": "relationships", "level": "A2"},
-  {"english": "Flirt", "georgian": "ფლირტი", "pronunciation": "/flɜːrt/", "example_en": "He was flirting with her all night.", "example_ka": "ის მთელი საღამო უფლირტავებდა.", "category": "relationships", "level": "A2"},
-  {"english": "Romance", "georgian": "რომანტიკა", "pronunciation": "/roʊˈmæns/", "example_en": "Their romance began in college.", "example_ka": "მათი რომანტიკა უნივერსიტეტში დაიწყო.", "category": "relationships", "level": "A2"},
-  {"english": "Jealous", "georgian": "ეჭვიანი", "pronunciation": "/ˈdʒɛləs/", "example_en": "Don't be jealous.", "example_ka": "ნუ ეჭვიანობ.", "category": "relationships", "level": "A2"},
-  {"english": "Trust", "georgian": "ნდობა", "pronunciation": "/trʌst/", "example_en": "Trust is the foundation of any relationship.", "example_ka": "ნდობა ნებისმიერი ურთიერთობის საფუძველია.", "category": "relationships", "level": "A2"},
-  {"english": "Faithful", "georgian": "ერთგული", "pronunciation": "/ˈfeɪθfəl/", "example_en": "He has always been faithful.", "example_ka": "ის ყოველთვის ერთგული იყო.", "category": "relationships", "level": "A2"},
-  {"english": "Cheating", "georgian": "ღალატი", "pronunciation": "/ˈtʃiːtɪŋ/", "example_en": "Cheating destroys relationships.", "example_ka": "ღალატი ურთიერთობას ანგრევს.", "category": "relationships", "level": "A2"},
-  {"english": "Affection", "georgian": "სიყვარულის გამოხატვა", "pronunciation": "/əˈfɛkʃən/", "example_en": "She showed great affection.", "example_ka": "მან დიდი სიყვარული გამოხატა.", "category": "relationships", "level": "B1"},
-  {"english": "Passion", "georgian": "ვნება", "pronunciation": "/ˈpæʃən/", "example_en": "Their relationship was full of passion.", "example_ka": "მათი ურთიერთობა ვნებით სავსე იყო.", "category": "relationships", "level": "B1"},
-  {"english": "Soulmate", "georgian": "სულის მეგობარი", "pronunciation": "/ˈsoʊlmeɪt/", "example_en": "I've found my soulmate.", "example_ka": "სულის მეგობარი ვიპოვე.", "category": "relationships", "level": "B1"},
-  {"english": "Commitment", "georgian": "ერთგულება", "pronunciation": "/kəˈmɪtmənt/", "example_en": "Commitment is key in a relationship.", "example_ka": "ერთგულება ურთიერთობაში მთავარია.", "category": "relationships", "level": "B1"},
-  {"english": "Anniversary", "georgian": "წლისთავი", "pronunciation": "/ˌænɪˈvɜːrsəri/", "example_en": "Happy anniversary!", "example_ka": "გილოცავ წლისთავს!", "category": "relationships", "level": "A2"},
-  {"english": "Valentine", "georgian": "ვალენტინი", "pronunciation": "/ˈvæləntaɪn/", "example_en": "Will you be my Valentine?", "example_ka": "ჩემი ვალენტინი იქნები?", "category": "relationships", "level": "A2"},
-  {"english": "Compliment", "georgian": "კომპლიმენტი", "pronunciation": "/ˈkɒmplɪmənt/", "example_en": "He gave her a nice compliment.", "example_ka": "მან ლამაზი კომპლიმენტი უთხრა.", "category": "relationships", "level": "A2"},
-  {"english": "Attractive", "georgian": "მიმზიდველი", "pronunciation": "/əˈtræktɪv/", "example_en": "She is very attractive.", "example_ka": "ის ძალიან მიმზიდველია.", "category": "relationships", "level": "A2"},
-  {"english": "Beautiful", "georgian": "ლამაზი", "pronunciation": "/ˈbjuːtɪfəl/", "example_en": "You look beautiful tonight.", "example_ka": "ამ საღამოს ძალიან ლამაზი ხარ.", "category": "relationships", "level": "A1"},
-  {"english": "Handsome", "georgian": "ლამაზი (კაცი)", "pronunciation": "/ˈhænsəm/", "example_en": "He is a handsome man.", "example_ka": "ის ლამაზი კაცია.", "category": "relationships", "level": "A1"},
-  {"english": "Relationship", "georgian": "ურთიერთობა", "pronunciation": "/rɪˈleɪʃənʃɪp/", "example_en": "They have a strong relationship.", "example_ka": "მათ ძლიერი ურთიერთობა აქვთ.", "category": "relationships", "level": "A2"},
-  {"english": "Single", "georgian": "მარტოხელა", "pronunciation": "/ˈsɪŋɡəl/", "example_en": "Are you single?", "example_ka": "მარტოხელა ხარ?", "category": "relationships", "level": "A1"},
-  {"english": "Married", "georgian": "დაქორწინებული", "pronunciation": "/ˈmærɪd/", "example_en": "They have been married for ten years.", "example_ka": "ისინი ათი წელია დაქორწინებულები არიან.", "category": "relationships", "level": "A1"},
-  {"english": "Partner", "georgian": "პარტნიორი", "pronunciation": "/ˈpɑːrtnər/", "example_en": "She lives with her partner.", "example_ka": "ის პარტნიორთან ცხოვრობს.", "category": "relationships", "level": "A2"},
-  {"english": "Ex", "georgian": "ყოფილი", "pronunciation": "/ɛks/", "example_en": "She ran into her ex at the store.", "example_ka": "მაღაზიაში ყოფილს შეხვდა.", "category": "relationships", "level": "A2"},
-  {"english": "Honeymoon", "georgian": "თაფლობის თვე", "pronunciation": "/ˈhʌnimuːn/", "example_en": "They went to Paris for their honeymoon.", "example_ka": "თაფლობის თვეზე პარიზში წავიდნენ.", "category": "relationships", "level": "A2"},
-  {"english": "Friendship", "georgian": "მეგობრობა", "pronunciation": "/ˈfrɛndʃɪp/", "example_en": "Their friendship turned into love.", "example_ka": "მათი მეგობრობა სიყვარულად გადაიქცა.", "category": "relationships", "level": "A1"},
-  {"english": "Argue", "georgian": "კამათი", "pronunciation": "/ˈɑːrɡjuː/", "example_en": "Couples sometimes argue.", "example_ka": "წყვილები ზოგჯერ კამათობენ.", "category": "relationships", "level": "A2"},
-  {"english": "Forgive", "georgian": "მიტევება", "pronunciation": "/fərˈɡɪv/", "example_en": "She decided to forgive him.", "example_ka": "მან მიტევება გადაწყვიტა.", "category": "relationships", "level": "A2"},
-  {"english": "Apologize", "georgian": "ბოდიშის მოხდა", "pronunciation": "/əˈpɒlədʒaɪz/", "example_en": "He apologized for being late.", "example_ka": "მან დაგვიანებისთვის ბოდიში მოიხადა.", "category": "relationships", "level": "A2"},
-  {"english": "Miss", "georgian": "მონატრება", "pronunciation": "/mɪs/", "example_en": "I miss you so much.", "example_ka": "ძალიან მენატრები.", "category": "relationships", "level": "A1"},
-  {"english": "Loyalty", "georgian": "ერთგულება", "pronunciation": "/ˈlɔɪəlti/", "example_en": "Loyalty is important in relationships.", "example_ka": "ერთგულება ურთიერთობაში მნიშვნელოვანია.", "category": "relationships", "level": "B1"},
-  {"english": "Respect", "georgian": "პატივისცემა", "pronunciation": "/rɪˈspɛkt/", "example_en": "Mutual respect is essential.", "example_ka": "ორმხრივი პატივისცემა აუცილებელია.", "category": "relationships", "level": "A2"},
-  {"english": "Supportive", "georgian": "მხარდამჭერი", "pronunciation": "/səˈpɔːrtɪv/", "example_en": "She is very supportive of his dreams.", "example_ka": "ის მის ოცნებებს ძალიან უჭერს მხარს.", "category": "relationships", "level": "A2"},
-  {"english": "Communicate", "georgian": "კომუნიკაცია", "pronunciation": "/kəˈmjuːnɪkeɪt/", "example_en": "It's important to communicate openly.", "example_ka": "ღიად კომუნიკაცია მნიშვნელოვანია.", "category": "relationships", "level": "A2"},
-  {"english": "Heartbreak", "georgian": "გულის ტკივილი", "pronunciation": "/ˈhɑːrtbreɪk/", "example_en": "Heartbreak takes time to heal.", "example_ka": "გულის ტკივილს განკურნებისთვის დრო სჭირდება.", "category": "relationships", "level": "B1"},
-  {"english": "Intimate", "georgian": "ინტიმური", "pronunciation": "/ˈɪntɪmət/", "example_en": "They had an intimate conversation.", "example_ka": "მათ ინტიმური საუბარი გააბეს.", "category": "relationships", "level": "B1"},
-  {"english": "Chemistry", "georgian": "ქიმია (ადამიანებს შორის)", "pronunciation": "/ˈkɛmɪstri/", "example_en": "There was instant chemistry between them.", "example_ka": "მათ შორის მყისიერი ქიმია იყო.", "category": "relationships", "level": "B1"},
-  {"english": "Compatible", "georgian": "თავსებადი", "pronunciation": "/kəmˈpætɪbəl/", "example_en": "They are very compatible.", "example_ka": "ისინი ძალიან თავსებადი არიან.", "category": "relationships", "level": "B1"},
-  {"english": "Compromise", "georgian": "კომპრომისი", "pronunciation": "/ˈkɒmprəmaɪz/", "example_en": "Relationships require compromise.", "example_ka": "ურთიერთობა კომპრომისს მოითხოვს.", "category": "relationships", "level": "B1"},
-  {"english": "Long-distance", "georgian": "შორ მანძილზე", "pronunciation": "/lɒŋ ˈdɪstəns/", "example_en": "Long-distance relationships are challenging.", "example_ka": "შორ მანძილზე ურთიერთობა რთულია.", "category": "relationships", "level": "A2"},
-  {"english": "Blind date", "georgian": "შეუთანხმებელი პაემანი", "pronunciation": "/blaɪnd deɪt/", "example_en": "She went on a blind date.", "example_ka": "ის შეუთანხმებელ პაემანზე წავიდა.", "category": "relationships", "level": "A2"},
-  {"english": "Matchmaker", "georgian": "მაჭანკალი", "pronunciation": "/ˈmætʃmeɪkər/", "example_en": "Her friend played matchmaker.", "example_ka": "მეგობარმა მაჭანკალის როლი ითამაშა.", "category": "relationships", "level": "B1"},
-  {"english": "Adore", "georgian": "აღფრთოვანება", "pronunciation": "/əˈdɔːr/", "example_en": "I adore you.", "example_ka": "მე შენით ვხიბლავარ.", "category": "relationships", "level": "A2"},
-  {"english": "Cuddle", "georgian": "მიხუტება", "pronunciation": "/ˈkʌdəl/", "example_en": "They cuddled on the couch.", "example_ka": "ისინი დივანზე მიხუტებულები იყვნენ.", "category": "relationships", "level": "A2"},
-  {"english": "Embrace", "georgian": "მოხვევა", "pronunciation": "/ɪmˈbreɪs/", "example_en": "They held each other in a tight embrace.", "example_ka": "ერთმანეთს მჭიდროდ მოეხვივნენ.", "category": "relationships", "level": "B1"},
-  {"english": "Devotion", "georgian": "ერთგულება", "pronunciation": "/dɪˈvoʊʃən/", "example_en": "His devotion to her was clear.", "example_ka": "მისი ერთგულება ნათელი იყო.", "category": "relationships", "level": "B1"},
-  {"english": "Sweetheart", "georgian": "საყვარელი", "pronunciation": "/ˈswiːthɑːrt/", "example_en": "Goodnight, sweetheart.", "example_ka": "ძილი ნებისა, საყვარელო.", "category": "relationships", "level": "A2"}
+  {
+    "english": "Love",
+    "georgian": "სიყვარული",
+    "pronunciation": "/lʌv/",
+    "example_en": "Love is the most powerful emotion.",
+    "example_ka": "სიყვარული ყველაზე ძლიერი ემოციაა.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Kiss",
+    "georgian": "კოცნა",
+    "pronunciation": "/kɪs/",
+    "example_en": "He gave her a kiss on the cheek.",
+    "example_ka": "მან ლოყაზე აკოცა.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Hug",
+    "georgian": "ჩახუტება",
+    "pronunciation": "/hʌɡ/",
+    "example_en": "She gave him a warm hug.",
+    "example_ka": "მან თბილად ჩაუხუტა.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Date",
+    "georgian": "პაემანი",
+    "pronunciation": "/deɪt/",
+    "example_en": "They went on a date last night.",
+    "example_ka": "ისინი წუხელ პაემანზე წავიდნენ.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Couple",
+    "georgian": "წყვილი",
+    "pronunciation": "/ˈkʌpəl/",
+    "example_en": "They are a lovely couple.",
+    "example_ka": "ისინი საყვარელი წყვილი არიან.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Wedding",
+    "georgian": "ქორწილი",
+    "pronunciation": "/ˈwɛdɪŋ/",
+    "example_en": "The wedding was beautiful.",
+    "example_ka": "ქორწილი ლამაზი იყო.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Marriage",
+    "georgian": "ქორწინება",
+    "pronunciation": "/ˈmærɪdʒ/",
+    "example_en": "A happy marriage requires effort.",
+    "example_ka": "ბედნიერ ქორწინებას ძალისხმევა სჭირდება.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Boyfriend",
+    "georgian": "შეყვარებული (ბიჭი)",
+    "pronunciation": "/ˈbɔɪfrɛnd/",
+    "example_en": "She introduced her boyfriend to her parents.",
+    "example_ka": "მან შეყვარებული მშობლებს გააცნო.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Girlfriend",
+    "georgian": "შეყვარებული (გოგო)",
+    "pronunciation": "/ˈɡɜːrlfrɛnd/",
+    "example_en": "He bought flowers for his girlfriend.",
+    "example_ka": "მან შეყვარებულს ყვავილები უყიდა.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Husband",
+    "georgian": "ქმარი",
+    "pronunciation": "/ˈhʌzbənd/",
+    "example_en": "Her husband is very supportive.",
+    "example_ka": "მისი ქმარი ძალიან მხარდამჭერია.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Wife",
+    "georgian": "ცოლი",
+    "pronunciation": "/waɪf/",
+    "example_en": "He loves his wife dearly.",
+    "example_ka": "ის ცოლს ძალიან უყვარს.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Engagement",
+    "georgian": "ნიშნობა",
+    "pronunciation": "/ɪnˈɡeɪdʒmənt/",
+    "example_en": "They announced their engagement.",
+    "example_ka": "მათ ნიშნობა გამოაცხადეს.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Proposal",
+    "georgian": "ხელის თხოვნა",
+    "pronunciation": "/prəˈpoʊzəl/",
+    "example_en": "The proposal was very romantic.",
+    "example_ka": "ხელის თხოვნა ძალიან რომანტიული იყო.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Divorce",
+    "georgian": "განქორწინება",
+    "pronunciation": "/dɪˈvɔːrs/",
+    "example_en": "They decided to get a divorce.",
+    "example_ka": "მათ განქორწინება გადაწყვიტეს.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Breakup",
+    "georgian": "დაშორება",
+    "pronunciation": "/ˈbreɪkʌp/",
+    "example_en": "The breakup was difficult for both.",
+    "example_ka": "დაშორება ორივესთვის რთული იყო.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Crush",
+    "georgian": "მოწონება",
+    "pronunciation": "/krʌʃ/",
+    "example_en": "She has a crush on her classmate.",
+    "example_ka": "მას თანაკლასელი მოსწონს.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Flirt",
+    "georgian": "ფლირტი",
+    "pronunciation": "/flɜːrt/",
+    "example_en": "He was flirting with her all night.",
+    "example_ka": "ის მთელი საღამო უფლირტავებდა.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Romance",
+    "georgian": "რომანტიკა",
+    "pronunciation": "/roʊˈmæns/",
+    "example_en": "Their romance began in college.",
+    "example_ka": "მათი რომანტიკა უნივერსიტეტში დაიწყო.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Jealous",
+    "georgian": "ეჭვიანი",
+    "pronunciation": "/ˈdʒɛləs/",
+    "example_en": "Don't be jealous.",
+    "example_ka": "ნუ ეჭვიანობ.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Trust",
+    "georgian": "ნდობა",
+    "pronunciation": "/trʌst/",
+    "example_en": "Trust is the foundation of any relationship.",
+    "example_ka": "ნდობა ნებისმიერი ურთიერთობის საფუძველია.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Faithful",
+    "georgian": "ერთგული",
+    "pronunciation": "/ˈfeɪθfəl/",
+    "example_en": "He has always been faithful.",
+    "example_ka": "ის ყოველთვის ერთგული იყო.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Cheating",
+    "georgian": "ღალატი",
+    "pronunciation": "/ˈtʃiːtɪŋ/",
+    "example_en": "Cheating destroys relationships.",
+    "example_ka": "ღალატი ურთიერთობას ანგრევს.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Affection",
+    "georgian": "სიყვარულის გამოხატვა",
+    "pronunciation": "/əˈfɛkʃən/",
+    "example_en": "She showed great affection.",
+    "example_ka": "მან დიდი სიყვარული გამოხატა.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Passion",
+    "georgian": "ვნება",
+    "pronunciation": "/ˈpæʃən/",
+    "example_en": "Their relationship was full of passion.",
+    "example_ka": "მათი ურთიერთობა ვნებით სავსე იყო.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Soulmate",
+    "georgian": "სულის მეგობარი",
+    "pronunciation": "/ˈsoʊlmeɪt/",
+    "example_en": "I've found my soulmate.",
+    "example_ka": "სულის მეგობარი ვიპოვე.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Commitment",
+    "georgian": "ერთგულება",
+    "pronunciation": "/kəˈmɪtmənt/",
+    "example_en": "Commitment is key in a relationship.",
+    "example_ka": "ერთგულება ურთიერთობაში მთავარია.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Anniversary",
+    "georgian": "წლისთავი",
+    "pronunciation": "/ˌænɪˈvɜːrsəri/",
+    "example_en": "Happy anniversary!",
+    "example_ka": "გილოცავ წლისთავს!",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Valentine",
+    "georgian": "ვალენტინი",
+    "pronunciation": "/ˈvæləntaɪn/",
+    "example_en": "Will you be my Valentine?",
+    "example_ka": "ჩემი ვალენტინი იქნები?",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Compliment",
+    "georgian": "კომპლიმენტი",
+    "pronunciation": "/ˈkɒmplɪmənt/",
+    "example_en": "He gave her a nice compliment.",
+    "example_ka": "მან ლამაზი კომპლიმენტი უთხრა.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Attractive",
+    "georgian": "მიმზიდველი",
+    "pronunciation": "/əˈtræktɪv/",
+    "example_en": "She is very attractive.",
+    "example_ka": "ის ძალიან მიმზიდველია.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Beautiful",
+    "georgian": "ლამაზი",
+    "pronunciation": "/ˈbjuːtɪfəl/",
+    "example_en": "You look beautiful tonight.",
+    "example_ka": "ამ საღამოს ძალიან ლამაზი ხარ.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Handsome",
+    "georgian": "ლამაზი (კაცი)",
+    "pronunciation": "/ˈhænsəm/",
+    "example_en": "He is a handsome man.",
+    "example_ka": "ის ლამაზი კაცია.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Relationship",
+    "georgian": "ურთიერთობა",
+    "pronunciation": "/rɪˈleɪʃənʃɪp/",
+    "example_en": "They have a strong relationship.",
+    "example_ka": "მათ ძლიერი ურთიერთობა აქვთ.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Single",
+    "georgian": "მარტოხელა",
+    "pronunciation": "/ˈsɪŋɡəl/",
+    "example_en": "Are you single?",
+    "example_ka": "მარტოხელა ხარ?",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Married",
+    "georgian": "დაქორწინებული",
+    "pronunciation": "/ˈmærɪd/",
+    "example_en": "They have been married for ten years.",
+    "example_ka": "ისინი ათი წელია დაქორწინებულები არიან.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Partner",
+    "georgian": "პარტნიორი",
+    "pronunciation": "/ˈpɑːrtnər/",
+    "example_en": "She lives with her partner.",
+    "example_ka": "ის პარტნიორთან ცხოვრობს.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Ex",
+    "georgian": "ყოფილი",
+    "pronunciation": "/ɛks/",
+    "example_en": "She ran into her ex at the store.",
+    "example_ka": "მაღაზიაში ყოფილს შეხვდა.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Honeymoon",
+    "georgian": "თაფლობის თვე",
+    "pronunciation": "/ˈhʌnimuːn/",
+    "example_en": "They went to Paris for their honeymoon.",
+    "example_ka": "თაფლობის თვეზე პარიზში წავიდნენ.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Friendship",
+    "georgian": "მეგობრობა",
+    "pronunciation": "/ˈfrɛndʃɪp/",
+    "example_en": "Their friendship turned into love.",
+    "example_ka": "მათი მეგობრობა სიყვარულად გადაიქცა.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Argue",
+    "georgian": "კამათი",
+    "pronunciation": "/ˈɑːrɡjuː/",
+    "example_en": "Couples sometimes argue.",
+    "example_ka": "წყვილები ზოგჯერ კამათობენ.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Forgive",
+    "georgian": "მიტევება",
+    "pronunciation": "/fərˈɡɪv/",
+    "example_en": "She decided to forgive him.",
+    "example_ka": "მან მიტევება გადაწყვიტა.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Apologize",
+    "georgian": "ბოდიშის მოხდა",
+    "pronunciation": "/əˈpɒlədʒaɪz/",
+    "example_en": "He apologized for being late.",
+    "example_ka": "მან დაგვიანებისთვის ბოდიში მოიხადა.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Miss",
+    "georgian": "მონატრება",
+    "pronunciation": "/mɪs/",
+    "example_en": "I miss you so much.",
+    "example_ka": "ძალიან მენატრები.",
+    "category": "relationships",
+    "level": "A1"
+  },
+  {
+    "english": "Loyalty",
+    "georgian": "ერთგულება",
+    "pronunciation": "/ˈlɔɪəlti/",
+    "example_en": "Loyalty is important in relationships.",
+    "example_ka": "ერთგულება ურთიერთობაში მნიშვნელოვანია.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Respect",
+    "georgian": "პატივისცემა",
+    "pronunciation": "/rɪˈspɛkt/",
+    "example_en": "Mutual respect is essential.",
+    "example_ka": "ორმხრივი პატივისცემა აუცილებელია.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Supportive",
+    "georgian": "მხარდამჭერი",
+    "pronunciation": "/səˈpɔːrtɪv/",
+    "example_en": "She is very supportive of his dreams.",
+    "example_ka": "ის მის ოცნებებს ძალიან უჭერს მხარს.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Communicate",
+    "georgian": "კომუნიკაცია",
+    "pronunciation": "/kəˈmjuːnɪkeɪt/",
+    "example_en": "It's important to communicate openly.",
+    "example_ka": "ღიად კომუნიკაცია მნიშვნელოვანია.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Heartbreak",
+    "georgian": "გულის ტკივილი",
+    "pronunciation": "/ˈhɑːrtbreɪk/",
+    "example_en": "Heartbreak takes time to heal.",
+    "example_ka": "გულის ტკივილს განკურნებისთვის დრო სჭირდება.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Intimate",
+    "georgian": "ინტიმური",
+    "pronunciation": "/ˈɪntɪmət/",
+    "example_en": "They had an intimate conversation.",
+    "example_ka": "მათ ინტიმური საუბარი გააბეს.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Chemistry",
+    "georgian": "ქიმია (ადამიანებს შორის)",
+    "pronunciation": "/ˈkɛmɪstri/",
+    "example_en": "There was instant chemistry between them.",
+    "example_ka": "მათ შორის მყისიერი ქიმია იყო.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Compatible",
+    "georgian": "თავსებადი",
+    "pronunciation": "/kəmˈpætɪbəl/",
+    "example_en": "They are very compatible.",
+    "example_ka": "ისინი ძალიან თავსებადი არიან.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Compromise",
+    "georgian": "კომპრომისი",
+    "pronunciation": "/ˈkɒmprəmaɪz/",
+    "example_en": "Relationships require compromise.",
+    "example_ka": "ურთიერთობა კომპრომისს მოითხოვს.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Long-distance",
+    "georgian": "შორ მანძილზე",
+    "pronunciation": "/lɒŋ ˈdɪstəns/",
+    "example_en": "Long-distance relationships are challenging.",
+    "example_ka": "შორ მანძილზე ურთიერთობა რთულია.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Blind date",
+    "georgian": "შეუთანხმებელი პაემანი",
+    "pronunciation": "/blaɪnd deɪt/",
+    "example_en": "She went on a blind date.",
+    "example_ka": "ის შეუთანხმებელ პაემანზე წავიდა.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Matchmaker",
+    "georgian": "მაჭანკალი",
+    "pronunciation": "/ˈmætʃmeɪkər/",
+    "example_en": "Her friend played matchmaker.",
+    "example_ka": "მეგობარმა მაჭანკალის როლი ითამაშა.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Adore",
+    "georgian": "აღფრთოვანება",
+    "pronunciation": "/əˈdɔːr/",
+    "example_en": "I adore you.",
+    "example_ka": "მე შენით ვხიბლავარ.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Cuddle",
+    "georgian": "მიხუტება",
+    "pronunciation": "/ˈkʌdəl/",
+    "example_en": "They cuddled on the couch.",
+    "example_ka": "ისინი დივანზე მიხუტებულები იყვნენ.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "Embrace",
+    "georgian": "მოხვევა",
+    "pronunciation": "/ɪmˈbreɪs/",
+    "example_en": "They held each other in a tight embrace.",
+    "example_ka": "ერთმანეთს მჭიდროდ მოეხვივნენ.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Devotion",
+    "georgian": "ერთგულება",
+    "pronunciation": "/dɪˈvoʊʃən/",
+    "example_en": "His devotion to her was clear.",
+    "example_ka": "მისი ერთგულება ნათელი იყო.",
+    "category": "relationships",
+    "level": "B1"
+  },
+  {
+    "english": "Sweetheart",
+    "georgian": "საყვარელი",
+    "pronunciation": "/ˈswiːthɑːrt/",
+    "example_en": "Goodnight, sweetheart.",
+    "example_ka": "ძილი ნებისა, საყვარელო.",
+    "category": "relationships",
+    "level": "A2"
+  },
+  {
+    "english": "to love",
+    "georgian": "სიყვარული",
+    "pronunciation": "/tə lʌv/",
+    "example_en": "I love you.",
+    "example_ka": "მიყვარხარ.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to like",
+    "georgian": "მოწონება",
+    "pronunciation": "/tə laɪk/",
+    "example_en": "I really like you.",
+    "example_ka": "ძალიან მომწონხარ.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to flirt",
+    "georgian": "ფლირტი",
+    "pronunciation": "/tə flɜːrt/",
+    "example_en": "He was flirting with her all night.",
+    "example_ka": "მთელი ღამე ფლირტავდა მასთან.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "cute",
+    "georgian": "საყვარელი",
+    "pronunciation": "/kjuːt/",
+    "example_en": "That's so cute!",
+    "example_ka": "რა საყვარელია!",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to kiss",
+    "georgian": "კოცნა",
+    "pronunciation": "/tə kɪs/",
+    "example_en": "They kissed for the first time.",
+    "example_ka": "პირველად აკოცეს ერთმანეთს.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to hug",
+    "georgian": "ჩახუტება",
+    "pronunciation": "/tə hʌɡ/",
+    "example_en": "She hugged him tightly.",
+    "example_ka": "მჭიდროდ ჩაეხუტა.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to break up",
+    "georgian": "გაშორება",
+    "pronunciation": "/tə breɪk ʌp/",
+    "example_en": "They broke up last month.",
+    "example_ka": "გასულ თვეში გაშორდნენ.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to miss",
+    "georgian": "მონატრება",
+    "pronunciation": "/tə mɪs/",
+    "example_en": "I miss you so much.",
+    "example_ka": "ძალიან მენატრები.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to marry",
+    "georgian": "დაქორწინება",
+    "pronunciation": "/tə ˈmæri/",
+    "example_en": "Will you marry me?",
+    "example_ka": "დამიქორწინდები?",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to trust",
+    "georgian": "ნდობა",
+    "pronunciation": "/tə trʌst/",
+    "example_en": "Trust is the foundation of any relationship.",
+    "example_ka": "ნდობა ნებისმიერი ურთიერთობის საფუძველია.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "honest",
+    "georgian": "პატიოსანი",
+    "pronunciation": "/ˈɒnɪst/",
+    "example_en": "Be honest with me.",
+    "example_ka": "ჩემთან პატიოსანი იყავი.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "loyal",
+    "georgian": "ერთგული",
+    "pronunciation": "/ˈlɔɪəl/",
+    "example_en": "He is very loyal to his girlfriend.",
+    "example_ka": "ის ძალიან ერთგულია შეყვარებულის მიმართ.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "romantic",
+    "georgian": "რომანტიკული",
+    "pronunciation": "/roʊˈmæntɪk/",
+    "example_en": "He planned a romantic dinner.",
+    "example_ka": "რომანტიკული ვახშამი დაგეგმა.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "flowers",
+    "georgian": "ყვავილები",
+    "pronunciation": "/ˈflaʊərz/",
+    "example_en": "He bought her flowers.",
+    "example_ka": "მას ყვავილები უყიდა.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "gift",
+    "georgian": "საჩუქარი",
+    "pronunciation": "/ɡɪft/",
+    "example_en": "What gift should I buy for her?",
+    "example_ka": "რა საჩუქარი ვუყიდო?",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to argue",
+    "georgian": "კამათი",
+    "pronunciation": "/tə ˈɑːrɡjuː/",
+    "example_en": "Couples sometimes argue.",
+    "example_ka": "წყვილები ზოგჯერ კამათობენ.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to apologize",
+    "georgian": "ბოდიშის მოხდა",
+    "pronunciation": "/tə əˈpɒlədʒaɪz/",
+    "example_en": "I want to apologize for what I said.",
+    "example_ka": "მინდა ბოდიში მოვიხადო ნათქვამისთვის.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "to forgive",
+    "georgian": "პატიება",
+    "pronunciation": "/tə fərˈɡɪv/",
+    "example_en": "Please forgive me.",
+    "example_ka": "გთხოვ მაპატიე.",
+    "category": "dating-romance",
+    "level": "beginner"
+  },
+  {
+    "english": "heart",
+    "georgian": "გული",
+    "pronunciation": "/hɑːrt/",
+    "example_en": "You stole my heart.",
+    "example_ka": "გული მომპარე.",
+    "category": "dating-romance",
+    "level": "beginner"
+  }
 ]

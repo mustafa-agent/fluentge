@@ -1,32 +1,1010 @@
 [
-  {"english":"visa","georgian":"ვიზა","pronunciation":"/ˈviːzə/","example_en":"I need a visa to enter the US.","example_ka":"ამერიკაში შესასვლელად ვიზა მჭირდება.","category":"immigration-visa","level":"beginner"},
-  {"english":"passport","georgian":"პასპორტი","pronunciation":"/ˈpæspɔːrt/","example_en":"My passport expires next month.","example_ka":"ჩემი პასპორტი მომავალ თვეში იწურება.","category":"immigration-visa","level":"beginner"},
-  {"english":"embassy","georgian":"საელჩო","pronunciation":"/ˈembəsi/","example_en":"I went to the embassy for my visa interview.","example_ka":"ვიზის ინტერვიუსთვის საელჩოში წავედი.","category":"immigration-visa","level":"beginner"},
-  {"english":"consulate","georgian":"საკონსულო","pronunciation":"/ˈkɒnsjʊlət/","example_en":"The consulate is open on weekdays only.","example_ka":"საკონსულო მხოლოდ სამუშაო დღეებში მუშაობს.","category":"immigration-visa","level":"intermediate"},
-  {"english":"application","georgian":"განაცხადი","pronunciation":"/ˌæplɪˈkeɪʃən/","example_en":"I submitted my visa application online.","example_ka":"ვიზის განაცხადი ონლაინ გავაგზავნე.","category":"immigration-visa","level":"beginner"},
-  {"english":"interview","georgian":"გასაუბრება","pronunciation":"/ˈɪntərvjuː/","example_en":"The visa interview was 10 minutes long.","example_ka":"ვიზის გასაუბრება 10 წუთი გაგრძელდა.","category":"immigration-visa","level":"beginner"},
-  {"english":"deny","georgian":"უარყოფა","pronunciation":"/dɪˈnaɪ/","example_en":"They denied my visa application.","example_ka":"ჩემი ვიზის განაცხადი უარყვეს.","category":"immigration-visa","level":"beginner"},
-  {"english":"approve","georgian":"დამტკიცება","pronunciation":"/əˈpruːv/","example_en":"My visa was approved yesterday!","example_ka":"ჩემი ვიზა გუშინ დამტკიცდა!","category":"immigration-visa","level":"beginner"},
-  {"english":"border","georgian":"საზღვარი","pronunciation":"/ˈbɔːrdər/","example_en":"We crossed the border at midnight.","example_ka":"საზღვარი შუაღამისას გადავკვეთეთ.","category":"immigration-visa","level":"beginner"},
-  {"english":"customs","georgian":"საბაჟო","pronunciation":"/ˈkʌstəmz/","example_en":"You must declare items at customs.","example_ka":"საბაჟოზე ნივთების დეკლარირება უნდა.","category":"immigration-visa","level":"beginner"},
-  {"english":"immigration officer","georgian":"იმიგრაციის ოფიცერი","pronunciation":"/ˌɪmɪˈɡreɪʃən ˈɒfɪsər/","example_en":"The immigration officer asked for my documents.","example_ka":"იმიგრაციის ოფიცერმა დოკუმენტები მთხოვა.","category":"immigration-visa","level":"intermediate"},
-  {"english":"work permit","georgian":"სამუშაო ნებართვა","pronunciation":"/wɜːrk ˈpɜːrmɪt/","example_en":"You need a work permit to get a job here.","example_ka":"აქ სამუშაოდ სამუშაო ნებართვა გჭირდება.","category":"immigration-visa","level":"beginner"},
-  {"english":"residence permit","georgian":"ბინადრობის ნებართვა","pronunciation":"/ˈrezɪdəns ˈpɜːrmɪt/","example_en":"I applied for a residence permit.","example_ka":"ბინადრობის ნებართვაზე განვაცხადე.","category":"immigration-visa","level":"intermediate"},
-  {"english":"citizenship","georgian":"მოქალაქეობა","pronunciation":"/ˈsɪtɪzənʃɪp/","example_en":"She got citizenship after 5 years.","example_ka":"მან 5 წლის შემდეგ მოქალაქეობა მიიღო.","category":"immigration-visa","level":"intermediate"},
-  {"english":"permanent resident","georgian":"მუდმივი მცხოვრები","pronunciation":"/ˈpɜːrmənənt ˈrezɪdənt/","example_en":"He became a permanent resident.","example_ka":"ის მუდმივი მცხოვრები გახდა.","category":"immigration-visa","level":"intermediate"},
-  {"english":"green card","georgian":"გრინ ქარდი","pronunciation":"/ɡriːn kɑːrd/","example_en":"Many people dream of getting a green card.","example_ka":"ბევრი ადამიანი გრინ ქარდის მიღებაზე ოცნებობს.","category":"immigration-visa","level":"beginner"},
-  {"english":"deportation","georgian":"დეპორტაცია","pronunciation":"/ˌdiːpɔːrˈteɪʃən/","example_en":"He faced deportation for overstaying.","example_ka":"ვადის გადაცილებისთვის დეპორტაცია ემუქრებოდა.","category":"immigration-visa","level":"intermediate"},
-  {"english":"overstay","georgian":"ვადის გადაცილება","pronunciation":"/ˌoʊvərˈsteɪ/","example_en":"Don't overstay your visa.","example_ka":"ნუ გადააცილებ ვიზის ვადას.","category":"immigration-visa","level":"intermediate"},
-  {"english":"asylum","georgian":"თავშესაფარი","pronunciation":"/əˈsaɪləm/","example_en":"He applied for asylum in Germany.","example_ka":"მან გერმანიაში თავშესაფრის მოთხოვნა წარადგინა.","category":"immigration-visa","level":"intermediate"},
-  {"english":"refugee","georgian":"ლტოლვილი","pronunciation":"/ˌrefjʊˈdʒiː/","example_en":"The country accepted many refugees.","example_ka":"ქვეყანამ ბევრი ლტოლვილი მიიღო.","category":"immigration-visa","level":"intermediate"},
-  {"english":"tourist visa","georgian":"ტურისტული ვიზა","pronunciation":"/ˈtʊərɪst ˈviːzə/","example_en":"A tourist visa is valid for 90 days.","example_ka":"ტურისტული ვიზა 90 დღით მოქმედებს.","category":"immigration-visa","level":"beginner"},
-  {"english":"student visa","georgian":"სტუდენტური ვიზა","pronunciation":"/ˈstjuːdənt ˈviːzə/","example_en":"I got a student visa for the UK.","example_ka":"ინგლისში სტუდენტური ვიზა მივიღე.","category":"immigration-visa","level":"beginner"},
-  {"english":"sponsor","georgian":"სპონსორი","pronunciation":"/ˈspɒnsər/","example_en":"You need a sponsor for the visa.","example_ka":"ვიზისთვის სპონსორი გჭირდება.","category":"immigration-visa","level":"intermediate"},
-  {"english":"bank statement","georgian":"ბანკის ამონაწერი","pronunciation":"/bæŋk ˈsteɪtmənt/","example_en":"The embassy asked for my bank statement.","example_ka":"საელჩომ ბანკის ამონაწერი მთხოვა.","category":"immigration-visa","level":"beginner"},
-  {"english":"travel insurance","georgian":"სამოგზაურო დაზღვევა","pronunciation":"/ˈtrævəl ɪnˈʃʊərəns/","example_en":"Travel insurance is required for Schengen.","example_ka":"შენგენისთვის სამოგზაურო დაზღვევა სავალდებულოა.","category":"immigration-visa","level":"beginner"},
-  {"english":"Schengen","georgian":"შენგენი","pronunciation":"/ˈʃeŋən/","example_en":"Georgia hopes to join the Schengen area someday.","example_ka":"საქართველო იმედოვნებს ოდესმე შენგენის ზონაში გაწევრიანებას.","category":"immigration-visa","level":"beginner"},
-  {"english":"biometric","georgian":"ბიომეტრიული","pronunciation":"/ˌbaɪoʊˈmetrɪk/","example_en":"They took my biometric data at the embassy.","example_ka":"საელჩოში ბიომეტრიული მონაცემები ჩამაბარეს.","category":"immigration-visa","level":"intermediate"},
-  {"english":"flight ticket","georgian":"თვითმფრინავის ბილეთი","pronunciation":"/flaɪt ˈtɪkɪt/","example_en":"Show your return flight ticket.","example_ka":"უკან დაბრუნების ბილეთი წარადგინე.","category":"immigration-visa","level":"beginner"},
-  {"english":"invitation letter","georgian":"მოწვევის წერილი","pronunciation":"/ˌɪnvɪˈteɪʃən ˈletər/","example_en":"I need an invitation letter from my friend.","example_ka":"მეგობრისგან მოწვევის წერილი მჭირდება.","category":"immigration-visa","level":"intermediate"},
-  {"english":"expired","georgian":"ვადაგასული","pronunciation":"/ɪkˈspaɪərd/","example_en":"My visa is expired, I need to renew it.","example_ka":"ვიზა ვადაგასულია, განახლება მჭირდება.","category":"immigration-visa","level":"beginner"}
+  {
+    "english": "visa",
+    "georgian": "ვიზა",
+    "pronunciation": "/ˈviːzə/",
+    "example_en": "I need a visa to enter the US.",
+    "example_ka": "ამერიკაში შესასვლელად ვიზა მჭირდება.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "passport",
+    "georgian": "პასპორტი",
+    "pronunciation": "/ˈpæspɔːrt/",
+    "example_en": "My passport expires next month.",
+    "example_ka": "ჩემი პასპორტი მომავალ თვეში იწურება.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "embassy",
+    "georgian": "საელჩო",
+    "pronunciation": "/ˈembəsi/",
+    "example_en": "I went to the embassy for my visa interview.",
+    "example_ka": "ვიზის ინტერვიუსთვის საელჩოში წავედი.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "consulate",
+    "georgian": "საკონსულო",
+    "pronunciation": "/ˈkɒnsjʊlət/",
+    "example_en": "The consulate is open on weekdays only.",
+    "example_ka": "საკონსულო მხოლოდ სამუშაო დღეებში მუშაობს.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "application",
+    "georgian": "განაცხადი",
+    "pronunciation": "/ˌæplɪˈkeɪʃən/",
+    "example_en": "I submitted my visa application online.",
+    "example_ka": "ვიზის განაცხადი ონლაინ გავაგზავნე.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "interview",
+    "georgian": "გასაუბრება",
+    "pronunciation": "/ˈɪntərvjuː/",
+    "example_en": "The visa interview was 10 minutes long.",
+    "example_ka": "ვიზის გასაუბრება 10 წუთი გაგრძელდა.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "deny",
+    "georgian": "უარყოფა",
+    "pronunciation": "/dɪˈnaɪ/",
+    "example_en": "They denied my visa application.",
+    "example_ka": "ჩემი ვიზის განაცხადი უარყვეს.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "approve",
+    "georgian": "დამტკიცება",
+    "pronunciation": "/əˈpruːv/",
+    "example_en": "My visa was approved yesterday!",
+    "example_ka": "ჩემი ვიზა გუშინ დამტკიცდა!",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "border",
+    "georgian": "საზღვარი",
+    "pronunciation": "/ˈbɔːrdər/",
+    "example_en": "We crossed the border at midnight.",
+    "example_ka": "საზღვარი შუაღამისას გადავკვეთეთ.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "customs",
+    "georgian": "საბაჟო",
+    "pronunciation": "/ˈkʌstəmz/",
+    "example_en": "You must declare items at customs.",
+    "example_ka": "საბაჟოზე ნივთების დეკლარირება უნდა.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "immigration officer",
+    "georgian": "იმიგრაციის ოფიცერი",
+    "pronunciation": "/ˌɪmɪˈɡreɪʃən ˈɒfɪsər/",
+    "example_en": "The immigration officer asked for my documents.",
+    "example_ka": "იმიგრაციის ოფიცერმა დოკუმენტები მთხოვა.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "work permit",
+    "georgian": "სამუშაო ნებართვა",
+    "pronunciation": "/wɜːrk ˈpɜːrmɪt/",
+    "example_en": "You need a work permit to get a job here.",
+    "example_ka": "აქ სამუშაოდ სამუშაო ნებართვა გჭირდება.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "residence permit",
+    "georgian": "ბინადრობის ნებართვა",
+    "pronunciation": "/ˈrezɪdəns ˈpɜːrmɪt/",
+    "example_en": "I applied for a residence permit.",
+    "example_ka": "ბინადრობის ნებართვაზე განვაცხადე.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "citizenship",
+    "georgian": "მოქალაქეობა",
+    "pronunciation": "/ˈsɪtɪzənʃɪp/",
+    "example_en": "She got citizenship after 5 years.",
+    "example_ka": "მან 5 წლის შემდეგ მოქალაქეობა მიიღო.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "permanent resident",
+    "georgian": "მუდმივი მცხოვრები",
+    "pronunciation": "/ˈpɜːrmənənt ˈrezɪdənt/",
+    "example_en": "He became a permanent resident.",
+    "example_ka": "ის მუდმივი მცხოვრები გახდა.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "green card",
+    "georgian": "გრინ ქარდი",
+    "pronunciation": "/ɡriːn kɑːrd/",
+    "example_en": "Many people dream of getting a green card.",
+    "example_ka": "ბევრი ადამიანი გრინ ქარდის მიღებაზე ოცნებობს.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "deportation",
+    "georgian": "დეპორტაცია",
+    "pronunciation": "/ˌdiːpɔːrˈteɪʃən/",
+    "example_en": "He faced deportation for overstaying.",
+    "example_ka": "ვადის გადაცილებისთვის დეპორტაცია ემუქრებოდა.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "overstay",
+    "georgian": "ვადის გადაცილება",
+    "pronunciation": "/ˌoʊvərˈsteɪ/",
+    "example_en": "Don't overstay your visa.",
+    "example_ka": "ნუ გადააცილებ ვიზის ვადას.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "asylum",
+    "georgian": "თავშესაფარი",
+    "pronunciation": "/əˈsaɪləm/",
+    "example_en": "He applied for asylum in Germany.",
+    "example_ka": "მან გერმანიაში თავშესაფრის მოთხოვნა წარადგინა.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "refugee",
+    "georgian": "ლტოლვილი",
+    "pronunciation": "/ˌrefjʊˈdʒiː/",
+    "example_en": "The country accepted many refugees.",
+    "example_ka": "ქვეყანამ ბევრი ლტოლვილი მიიღო.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "tourist visa",
+    "georgian": "ტურისტული ვიზა",
+    "pronunciation": "/ˈtʊərɪst ˈviːzə/",
+    "example_en": "A tourist visa is valid for 90 days.",
+    "example_ka": "ტურისტული ვიზა 90 დღით მოქმედებს.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "student visa",
+    "georgian": "სტუდენტური ვიზა",
+    "pronunciation": "/ˈstjuːdənt ˈviːzə/",
+    "example_en": "I got a student visa for the UK.",
+    "example_ka": "ინგლისში სტუდენტური ვიზა მივიღე.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "sponsor",
+    "georgian": "სპონსორი",
+    "pronunciation": "/ˈspɒnsər/",
+    "example_en": "You need a sponsor for the visa.",
+    "example_ka": "ვიზისთვის სპონსორი გჭირდება.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "bank statement",
+    "georgian": "ბანკის ამონაწერი",
+    "pronunciation": "/bæŋk ˈsteɪtmənt/",
+    "example_en": "The embassy asked for my bank statement.",
+    "example_ka": "საელჩომ ბანკის ამონაწერი მთხოვა.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "travel insurance",
+    "georgian": "სამოგზაურო დაზღვევა",
+    "pronunciation": "/ˈtrævəl ɪnˈʃʊərəns/",
+    "example_en": "Travel insurance is required for Schengen.",
+    "example_ka": "შენგენისთვის სამოგზაურო დაზღვევა სავალდებულოა.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "Schengen",
+    "georgian": "შენგენი",
+    "pronunciation": "/ˈʃeŋən/",
+    "example_en": "Georgia hopes to join the Schengen area someday.",
+    "example_ka": "საქართველო იმედოვნებს ოდესმე შენგენის ზონაში გაწევრიანებას.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "biometric",
+    "georgian": "ბიომეტრიული",
+    "pronunciation": "/ˌbaɪoʊˈmetrɪk/",
+    "example_en": "They took my biometric data at the embassy.",
+    "example_ka": "საელჩოში ბიომეტრიული მონაცემები ჩამაბარეს.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "flight ticket",
+    "georgian": "თვითმფრინავის ბილეთი",
+    "pronunciation": "/flaɪt ˈtɪkɪt/",
+    "example_en": "Show your return flight ticket.",
+    "example_ka": "უკან დაბრუნების ბილეთი წარადგინე.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "invitation letter",
+    "georgian": "მოწვევის წერილი",
+    "pronunciation": "/ˌɪnvɪˈteɪʃən ˈletər/",
+    "example_en": "I need an invitation letter from my friend.",
+    "example_ka": "მეგობრისგან მოწვევის წერილი მჭირდება.",
+    "category": "immigration-visa",
+    "level": "intermediate"
+  },
+  {
+    "english": "expired",
+    "georgian": "ვადაგასული",
+    "pronunciation": "/ɪkˈspaɪərd/",
+    "example_en": "My visa is expired, I need to renew it.",
+    "example_ka": "ვიზა ვადაგასულია, განახლება მჭირდება.",
+    "category": "immigration-visa",
+    "level": "beginner"
+  },
+  {
+    "english": "Appointment",
+    "georgian": "შეხვედრა / ჩაწერა",
+    "pronunciation": "/əˈpɔɪntmənt/",
+    "example_en": "I have a visa appointment tomorrow.",
+    "example_ka": "ხვალ ვიზაზე ჩაწერა მაქვს.",
+    "category": "visa-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Purpose of visit",
+    "georgian": "ვიზიტის მიზანი",
+    "pronunciation": "/ˈpɜːrpəs əv ˈvɪzɪt/",
+    "example_en": "What is the purpose of your visit?",
+    "example_ka": "რა არის თქვენი ვიზიტის მიზანი?",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Duration",
+    "georgian": "ხანგრძლივობა",
+    "pronunciation": "/djʊˈreɪʃən/",
+    "example_en": "What is the duration of your stay?",
+    "example_ka": "რამდენ ხანს აპირებთ დარჩენას?",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Itinerary",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/aɪˈtɪnərəri/",
+    "example_en": "Show me your travel itinerary.",
+    "example_ka": "მაჩვენეთ მოგზაურობის მარშრუტი.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Financial statement",
+    "georgian": "ფინანსური ამონაწერი",
+    "pronunciation": "/faɪˈnænʃəl ˈsteɪtmənt/",
+    "example_en": "Bring your bank financial statement.",
+    "example_ka": "წამოიღეთ ბანკის ფინანსური ამონაწერი.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Proof of ties",
+    "georgian": "კავშირების დამადასტურებელი",
+    "pronunciation": "/pruːf əv taɪz/",
+    "example_en": "You need proof of ties to your country.",
+    "example_ka": "გჭირდებათ ქვეყანასთან კავშირების დადასტურება.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Employment letter",
+    "georgian": "სამუშაო ცნობა",
+    "pronunciation": "/ɪmˈplɔɪmənt ˈlɛtər/",
+    "example_en": "Get an employment letter from your company.",
+    "example_ka": "აიღეთ სამუშაო ცნობა კომპანიიდან.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Accommodation",
+    "georgian": "საცხოვრებელი",
+    "pronunciation": "/əˌkɒməˈdeɪʃən/",
+    "example_en": "Where is your accommodation?",
+    "example_ka": "სად არის თქვენი საცხოვრებელი?",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Return ticket",
+    "georgian": "საბრუნებელი ბილეთი",
+    "pronunciation": "/rɪˈtɜːrn ˈtɪkɪt/",
+    "example_en": "Do you have a return ticket?",
+    "example_ka": "საბრუნებელი ბილეთი გაქვთ?",
+    "category": "visa-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Immigration",
+    "georgian": "იმიგრაცია",
+    "pronunciation": "/ˌɪmɪˈɡreɪʃən/",
+    "example_en": "Go through immigration control.",
+    "example_ka": "გაიარეთ საიმიგრაციო კონტროლი.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Denied",
+    "georgian": "უარყოფილი",
+    "pronunciation": "/dɪˈnaɪd/",
+    "example_en": "My visa was denied.",
+    "example_ka": "ვიზაზე უარი მითხრეს.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Approved",
+    "georgian": "დამტკიცებული",
+    "pronunciation": "/əˈpruːvd/",
+    "example_en": "Your visa has been approved.",
+    "example_ka": "თქვენი ვიზა დამტკიცებულია.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Consular officer",
+    "georgian": "საკონსულო თანამშრომელი",
+    "pronunciation": "/ˈkɒnsjʊlər ˈɒfɪsər/",
+    "example_en": "The consular officer asked me questions.",
+    "example_ka": "საკონსულო თანამშრომელმა კითხვები დამისვა.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Sufficient funds",
+    "georgian": "საკმარისი თანხა",
+    "pronunciation": "/səˈfɪʃənt fʌndz/",
+    "example_en": "You must have sufficient funds.",
+    "example_ka": "საკმარისი თანხა უნდა გქონდეთ.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Biometrics",
+    "georgian": "ბიომეტრია",
+    "pronunciation": "/ˌbaɪoʊˈmɛtrɪks/",
+    "example_en": "You need to submit biometrics.",
+    "example_ka": "ბიომეტრიის ჩაბარება გჭირდებათ.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Processing time",
+    "georgian": "განხილვის ვადა",
+    "pronunciation": "/ˈprɒsɛsɪŋ taɪm/",
+    "example_en": "Processing time is two weeks.",
+    "example_ka": "განხილვის ვადა ორი კვირაა.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Dependant",
+    "georgian": "კმაყოფაზე მყოფი",
+    "pronunciation": "/dɪˈpɛndənt/",
+    "example_en": "List your dependants on the form.",
+    "example_ka": "ფორმაში მიუთითეთ კმაყოფაზე მყოფი პირები.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Marital status",
+    "georgian": "ოჯახური მდგომარეობა",
+    "pronunciation": "/ˈmærɪtəl ˈsteɪtəs/",
+    "example_en": "What is your marital status?",
+    "example_ka": "რა არის თქვენი ოჯახური მდგომარეობა?",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Declaration",
+    "georgian": "დეკლარაცია",
+    "pronunciation": "/ˌdɛkləˈreɪʃən/",
+    "example_en": "Sign the declaration form.",
+    "example_ka": "ხელი მოაწერეთ დეკლარაციას.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Multiple entry",
+    "georgian": "მრავალჯერადი შესვლა",
+    "pronunciation": "/ˈmʌltɪpəl ˈɛntri/",
+    "example_en": "I got a multiple entry visa.",
+    "example_ka": "მრავალჯერადი შესვლის ვიზა მივიღე.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Single entry",
+    "georgian": "ერთჯერადი შესვლა",
+    "pronunciation": "/ˈsɪŋɡəl ˈɛntri/",
+    "example_en": "This is a single entry visa.",
+    "example_ka": "ეს ერთჯერადი შესვლის ვიზაა.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Notarized",
+    "georgian": "ნოტარიულად დამოწმებული",
+    "pronunciation": "/ˈnoʊtəraɪzd/",
+    "example_en": "The document must be notarized.",
+    "example_ka": "დოკუმენტი ნოტარიულად დამოწმებული უნდა იყოს.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Waiver",
+    "georgian": "უარის თქმა / გათავისუფლება",
+    "pronunciation": "/ˈweɪvər/",
+    "example_en": "He applied for a visa waiver.",
+    "example_ka": "მან ვიზისგან გათავისუფლებაზე განაცხადი გააკეთა.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Renewal",
+    "georgian": "განახლება",
+    "pronunciation": "/rɪˈnjuːəl/",
+    "example_en": "Visa renewal takes time.",
+    "example_ka": "ვიზის განახლებას დრო სჭირდება.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Eligibility",
+    "georgian": "უფლებამოსილება",
+    "pronunciation": "/ˌɛlɪdʒɪˈbɪlɪti/",
+    "example_en": "Check your eligibility for the visa.",
+    "example_ka": "შეამოწმეთ ვიზის მიღების უფლებამოსილება.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Photocopy",
+    "georgian": "ასლი",
+    "pronunciation": "/ˈfoʊtoʊkɒpi/",
+    "example_en": "Bring photocopies of all documents.",
+    "example_ka": "წამოიღეთ ყველა დოკუმენტის ასლი.",
+    "category": "visa-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Certified translation",
+    "georgian": "დამოწმებული თარგმანი",
+    "pronunciation": "/ˈsɜːrtɪfaɪd trænzˈleɪʃən/",
+    "example_en": "Submit a certified translation.",
+    "example_ka": "წარადგინეთ დამოწმებული თარგმანი.",
+    "category": "visa-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Criminal record",
+    "georgian": "ნასამართლობის ცნობა",
+    "pronunciation": "/ˈkrɪmɪnəl ˈrɛkɔːrd/",
+    "example_en": "You need a clean criminal record.",
+    "example_ka": "სუფთა ნასამართლობის ცნობა გჭირდებათ.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Arrival date",
+    "georgian": "ჩასვლის თარიღი",
+    "pronunciation": "/əˈraɪvəl deɪt/",
+    "example_en": "What is your arrival date?",
+    "example_ka": "რა არის ჩასვლის თარიღი?",
+    "category": "visa-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Departure date",
+    "georgian": "გამგზავრების თარიღი",
+    "pronunciation": "/dɪˈpɑːrtʃər deɪt/",
+    "example_en": "Confirm your departure date.",
+    "example_ka": "დაადასტურეთ გამგზავრების თარიღი.",
+    "category": "visa-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Border control",
+    "georgian": "სასაზღვრო კონტროლი",
+    "pronunciation": "/ˈbɔːrdər kənˈtroʊl/",
+    "example_en": "Wait in line at border control.",
+    "example_ka": "დადექით რიგში სასაზღვრო კონტროლზე.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Scholarship",
+    "georgian": "სტიპენდია",
+    "pronunciation": "/ˈskɒlərʃɪp/",
+    "example_en": "I received a scholarship to study abroad.",
+    "example_ka": "საზღვარგარეთ სწავლის სტიპენდია მივიღე.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Enrollment",
+    "georgian": "ჩარიცხვა",
+    "pronunciation": "/ɪnˈroʊlmənt/",
+    "example_en": "Show proof of enrollment.",
+    "example_ka": "წარადგინეთ ჩარიცხვის დამადასტურებელი.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Transcript",
+    "georgian": "ნიშნების ფურცელი",
+    "pronunciation": "/ˈtrænskrɪpt/",
+    "example_en": "Bring your university transcript.",
+    "example_ka": "წამოიღეთ უნივერსიტეტის ნიშნების ფურცელი.",
+    "category": "visa-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Affidavit",
+    "georgian": "ფიცით დამოწმებული განცხადება",
+    "pronunciation": "/ˌæfɪˈdeɪvɪt/",
+    "example_en": "Sign the affidavit of support.",
+    "example_ka": "ხელი მოაწერეთ ფიცით დამოწმებულ განცხადებას.",
+    "category": "visa-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Fee",
+    "georgian": "საფასური / მოსაკრებელი",
+    "pronunciation": "/fiː/",
+    "example_en": "The visa fee is $160.",
+    "example_ka": "ვიზის საფასური 160 დოლარია.",
+    "category": "visa-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Purpose of visit?",
+    "georgian": "ვიზიტის მიზანი?",
+    "pronunciation": "/ˈpɜːrpəs əv ˈvɪzɪt/",
+    "example_en": "The officer asked me: 'What is the purpose of your visit?'",
+    "example_ka": "ოფიცერმა მკითხა: 'რა არის თქვენი ვიზიტის მიზანი?'",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "How long are you staying?",
+    "georgian": "რამდენ ხანს რჩებით?",
+    "pronunciation": "/haʊ lɒŋ ɑːr juː ˈsteɪɪŋ/",
+    "example_en": "How long are you staying in the country?",
+    "example_ka": "რამდენ ხანს რჩებით ქვეყანაში?",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "declaration form",
+    "georgian": "დეკლარაციის ფორმა",
+    "pronunciation": "/ˌdekləˈreɪʃən fɔːrm/",
+    "example_en": "Please fill out this declaration form.",
+    "example_ka": "გთხოვთ შეავსოთ ეს დეკლარაციის ფორმა.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "duty-free",
+    "georgian": "უბაჟო",
+    "pronunciation": "/ˈdjuːti friː/",
+    "example_en": "I bought perfume at the duty-free shop.",
+    "example_ka": "უბაჟო მაღაზიაში სუნამო ვიყიდე.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "nothing to declare",
+    "georgian": "არაფერი გამოსაცხადებელი",
+    "pronunciation": "/ˈnʌθɪŋ tə dɪˈkleər/",
+    "example_en": "I have nothing to declare — just personal items.",
+    "example_ka": "არაფერი გამოსაცხადებელი მაქვს — მხოლოდ პირადი ნივთები.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "connecting flight",
+    "georgian": "ტრანზიტული რეისი",
+    "pronunciation": "/kəˈnektɪŋ flaɪt/",
+    "example_en": "I have a connecting flight to Berlin.",
+    "example_ka": "ბერლინისკენ ტრანზიტული რეისი მაქვს.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "proof of funds",
+    "georgian": "ფინანსური მდგომარეობის დამადასტურებელი",
+    "pronunciation": "/pruːf əv fʌndz/",
+    "example_en": "You may need to show proof of funds at the border.",
+    "example_ka": "საზღვარზე ფინანსური მდგომარეობის დადასტურება შეიძლება დაგჭირდეთ.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "passport control",
+    "georgian": "პასპორტის კონტროლი",
+    "pronunciation": "/ˈpæspɔːrt kənˈtroʊl/",
+    "example_en": "Please proceed to passport control.",
+    "example_ka": "გთხოვთ გადახვიდეთ პასპორტის კონტროლზე.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "customs officer",
+    "georgian": "საბაჟოს ოფიცერი",
+    "pronunciation": "/ˈkʌstəmz ˈɒfɪsər/",
+    "example_en": "The customs officer checked my luggage.",
+    "example_ka": "საბაჟოს ოფიცერმა ჩემი ბარგი შეამოწმა.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "boarding pass",
+    "georgian": "ჩასხდომის ბარათი",
+    "pronunciation": "/ˈbɔːrdɪŋ pæs/",
+    "example_en": "Please have your boarding pass ready.",
+    "example_ka": "გთხოვთ ჩასხდომის ბარათი მომზადებული გქონდეთ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "baggage claim",
+    "georgian": "ბარგის მიღება",
+    "pronunciation": "/ˈbæɡɪdʒ kleɪm/",
+    "example_en": "Go to baggage claim to pick up your suitcase.",
+    "example_ka": "ჩემოდნის ასაღებად ბარგის მიღებაზე წადი.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "I'm here on holiday",
+    "georgian": "დასასვენებლად ვარ აქ",
+    "pronunciation": "/aɪm hɪər ɒn ˈhɒlɪdeɪ/",
+    "example_en": "I'm here on holiday for two weeks.",
+    "example_ka": "ორი კვირით დასასვენებლად ვარ აქ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "I'm here for business",
+    "georgian": "საქმიანი ვიზიტით ვარ აქ",
+    "pronunciation": "/aɪm hɪər fɔːr ˈbɪznəs/",
+    "example_en": "I'm here for business — I have meetings in the city.",
+    "example_ka": "საქმიანი ვიზიტით ვარ — ქალაქში შეხვედრები მაქვს.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "I'm visiting family",
+    "georgian": "ოჯახს ვნახულობ",
+    "pronunciation": "/aɪm ˈvɪzɪtɪŋ ˈfæməli/",
+    "example_en": "I'm visiting family — my brother lives here.",
+    "example_ka": "ოჯახს ვნახულობ — ძმა აქ ცხოვრობს.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "Where are you coming from?",
+    "georgian": "საიდან მოდიხართ?",
+    "pronunciation": "/weər ɑːr juː ˈkʌmɪŋ frɒm/",
+    "example_en": "Where are you coming from? — From Tbilisi, Georgia.",
+    "example_ka": "საიდან მოდიხართ? — თბილისიდან, საქართველოდან.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "Where will you be staying?",
+    "georgian": "სად დარჩებით?",
+    "pronunciation": "/weər wɪl juː biː ˈsteɪɪŋ/",
+    "example_en": "Where will you be staying during your visit?",
+    "example_ka": "ვიზიტის დროს სად დარჩებით?",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "hotel reservation",
+    "georgian": "სასტუმროს დაჯავშნა",
+    "pronunciation": "/hoʊˈtel ˌrezərˈveɪʃən/",
+    "example_en": "Can I see your hotel reservation?",
+    "example_ka": "შეიძლება თქვენი სასტუმროს დაჯავშნა ვნახო?",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "goods to declare",
+    "georgian": "გამოსაცხადებელი საქონელი",
+    "pronunciation": "/ɡʊdz tə dɪˈkleər/",
+    "example_en": "Do you have any goods to declare?",
+    "example_ka": "გაქვთ რაიმე გამოსაცხადებელი საქონელი?",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "prohibited items",
+    "georgian": "აკრძალული ნივთები",
+    "pronunciation": "/prəˈhɪbɪtɪd ˈaɪtəmz/",
+    "example_en": "These are prohibited items — you cannot bring them in.",
+    "example_ka": "ეს აკრძალული ნივთებია — შემოტანა არ შეიძლება.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "carry-on luggage",
+    "georgian": "ხელის ბარგი",
+    "pronunciation": "/ˈkæri ɒn ˈlʌɡɪdʒ/",
+    "example_en": "You can bring one carry-on luggage on the plane.",
+    "example_ka": "თვითმფრინავში ერთი ხელის ბარგის შეტანა შეგიძლიათ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "checked baggage",
+    "georgian": "ჩაბარებული ბარგი",
+    "pronunciation": "/tʃekt ˈbæɡɪdʒ/",
+    "example_en": "My checked baggage weighs 23 kilograms.",
+    "example_ka": "ჩემი ჩაბარებული ბარგი 23 კილოგრამი იწონის.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "valid passport",
+    "georgian": "მოქმედი პასპორტი",
+    "pronunciation": "/ˈvælɪd ˈpæspɔːrt/",
+    "example_en": "Make sure your passport is valid for at least six months.",
+    "example_ka": "დარწმუნდი, რომ პასპორტი მინიმუმ ექვსი თვე მოქმედია.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "visa on arrival",
+    "georgian": "ადგილზე მიღებული ვიზა",
+    "pronunciation": "/ˈviːzə ɒn əˈraɪvəl/",
+    "example_en": "Georgian citizens can get a visa on arrival in many countries.",
+    "example_ka": "საქართველოს მოქალაქეებს ბევრ ქვეყანაში ადგილზე ვიზის მიღება შეუძლიათ.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "visa-free",
+    "georgian": "უვიზო",
+    "pronunciation": "/ˈviːzə friː/",
+    "example_en": "Georgia has visa-free access to many European countries.",
+    "example_ka": "საქართველოს ბევრ ევროპულ ქვეყანაში უვიზო წვდომა აქვს.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "security check",
+    "georgian": "უსაფრთხოების შემოწმება",
+    "pronunciation": "/sɪˈkjʊrəti tʃek/",
+    "example_en": "Please remove your belt for the security check.",
+    "example_ka": "გთხოვთ უსაფრთხოების შემოწმებისთვის ქამარი მოიხსნათ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "metal detector",
+    "georgian": "მეტალის დეტექტორი",
+    "pronunciation": "/ˈmetəl dɪˈtektər/",
+    "example_en": "Walk through the metal detector, please.",
+    "example_ka": "გთხოვთ მეტალის დეტექტორში გაიაროთ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "X-ray machine",
+    "georgian": "რენტგენის აპარატი",
+    "pronunciation": "/ˈeksreɪ məˈʃiːn/",
+    "example_en": "Put your bag on the X-ray machine.",
+    "example_ka": "ჩანთა რენტგენის აპარატზე დადეთ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "Please open your bag",
+    "georgian": "გთხოვთ ჩანთა გახსნათ",
+    "pronunciation": "/pliːz ˈoʊpən jɔːr bæɡ/",
+    "example_en": "Please open your bag for inspection.",
+    "example_ka": "გთხოვთ ჩანთა გახსნათ შემოწმებისთვის.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "stamp",
+    "georgian": "ბეჭედი / შტამპი",
+    "pronunciation": "/stæmp/",
+    "example_en": "The officer stamped my passport.",
+    "example_ka": "ოფიცერმა პასპორტზე ბეჭედი დამისვა.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "entry permit",
+    "georgian": "შესვლის ნებართვა",
+    "pronunciation": "/ˈentri ˈpɜːrmɪt/",
+    "example_en": "You need an entry permit to cross the border.",
+    "example_ka": "საზღვრის გადასალახად შესვლის ნებართვა გჭირდება.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "departure gate",
+    "georgian": "გასვლის გეითი",
+    "pronunciation": "/dɪˈpɑːrtʃər ɡeɪt/",
+    "example_en": "Your departure gate is B12.",
+    "example_ka": "თქვენი გასვლის გეითი B12-ა.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "transit visa",
+    "georgian": "ტრანზიტული ვიზა",
+    "pronunciation": "/ˈtrænzɪt ˈviːzə/",
+    "example_en": "Do I need a transit visa for a layover in Istanbul?",
+    "example_ka": "სტამბოლში გაჩერებისთვის ტრანზიტული ვიზა მჭირდება?",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "layover",
+    "georgian": "ტრანზიტი / გაჩერება",
+    "pronunciation": "/ˈleɪoʊvər/",
+    "example_en": "We have a 4-hour layover in Warsaw.",
+    "example_ka": "ვარშავაში 4-საათიანი ტრანზიტი გვაქვს.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "final destination",
+    "georgian": "საბოლოო დანიშნულების ადგილი",
+    "pronunciation": "/ˈfaɪnəl ˌdestɪˈneɪʃən/",
+    "example_en": "What is your final destination?",
+    "example_ka": "რა არის თქვენი საბოლოო დანიშნულების ადგილი?",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "one-way ticket",
+    "georgian": "ცალმხრივი ბილეთი",
+    "pronunciation": "/wʌn weɪ ˈtɪkɪt/",
+    "example_en": "I only have a one-way ticket.",
+    "example_ka": "მხოლოद ცალმხრივი ბილეთი მაქვს.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "customs duty",
+    "georgian": "საბაჟო გადასახადი",
+    "pronunciation": "/ˈkʌstəmz ˈdjuːti/",
+    "example_en": "You may have to pay customs duty on electronics.",
+    "example_ka": "ელექტრონიკაზე საბაჟო გადასახადის გადახდა შეიძლება მოგიწიოთ.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "arrival hall",
+    "georgian": "ჩამოსვლის დარბაზი",
+    "pronunciation": "/əˈraɪvəl hɔːl/",
+    "example_en": "Your family is waiting in the arrival hall.",
+    "example_ka": "თქვენი ოჯახი ჩამოსვლის დარბაზში გელოდებათ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "departure hall",
+    "georgian": "გამგზავრების დარბაზი",
+    "pronunciation": "/dɪˈpɑːrtʃər hɔːl/",
+    "example_en": "Check-in counters are in the departure hall.",
+    "example_ka": "რეგისტრაციის სალაროები გამგზავრების დარბაზშია.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "lost luggage",
+    "georgian": "დაკარგული ბარგი",
+    "pronunciation": "/lɒst ˈlʌɡɪdʒ/",
+    "example_en": "Report lost luggage at the service desk.",
+    "example_ka": "დაკარგული ბარგის შესახებ მომსახურების სადგომზე განაცხადეთ.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "How much currency are you carrying?",
+    "georgian": "რამდენი ვალუტა გაქვთ თან?",
+    "pronunciation": "/haʊ mʌtʃ ˈkʌrənsi ɑːr juː ˈkæriɪŋ/",
+    "example_en": "How much currency are you carrying? — About 500 euros.",
+    "example_ka": "რამდენი ვალუტა გაქვთ თან? — დაახლოებით 500 ევრო.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "immigration line",
+    "georgian": "იმიგრაციის რიგი",
+    "pronunciation": "/ˌɪmɪˈɡreɪʃən laɪn/",
+    "example_en": "The immigration line took 45 minutes.",
+    "example_ka": "იმიგრაციის რიგში 45 წუთი დავყავი.",
+    "category": "customs-immigration",
+    "level": "A2"
+  },
+  {
+    "english": "biometric passport",
+    "georgian": "ბიომეტრიული პასპორტი",
+    "pronunciation": "/ˌbaɪoʊˈmetrɪk ˈpæspɔːrt/",
+    "example_en": "You need a biometric passport for e-gates.",
+    "example_ka": "ელექტრონული კარიბჭისთვის ბიომეტრიული პასპორტი გჭირდება.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "e-gate",
+    "georgian": "ელექტრონული კარიბჭე",
+    "pronunciation": "/ˈiː ɡeɪt/",
+    "example_en": "Use the e-gate for faster entry.",
+    "example_ka": "სწრაფი შესვლისთვის ელექტრონული კარიბჭე გამოიყენე.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "quarantine",
+    "georgian": "კარანტინი",
+    "pronunciation": "/ˈkwɒrəntiːn/",
+    "example_en": "Some countries still require quarantine upon arrival.",
+    "example_ka": "ზოგიერთ ქვეყანაში ჩამოსვლისას ჯერ კიდევ კარანტინია სავალდებულო.",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "vaccination certificate",
+    "georgian": "ვაქცინაციის სერტიფიკატი",
+    "pronunciation": "/ˌvæksɪˈneɪʃən sərˈtɪfɪkət/",
+    "example_en": "Do you have your vaccination certificate?",
+    "example_ka": "ვაქცინაციის სერტიფიკატი გაქვთ?",
+    "category": "customs-immigration",
+    "level": "B1"
+  },
+  {
+    "english": "Please step aside",
+    "georgian": "გთხოვთ გვერდით გადადგეთ",
+    "pronunciation": "/pliːz step əˈsaɪd/",
+    "example_en": "Please step aside for additional screening.",
+    "example_ka": "გთხოვთ გვერდით გადადგეთ დამატებითი შემოწმებისთვის.",
+    "category": "customs-immigration",
+    "level": "A2"
+  }
 ]

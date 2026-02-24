@@ -10,6 +10,16 @@
   --color-text-muted: #6B6B65;
 }
 
+html.light {
+  --color-bg: #F0F2F5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-card-hover: #F0F0F0;
+  --color-text: #1A1A2E;
+  --color-text-muted: #6B7280;
+  --color-primary: #4A4A44;
+  --color-primary-dark: #2A2A24;
+}
+
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: var(--color-bg);

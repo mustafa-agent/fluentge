@@ -1,62 +1,587 @@
 [
-  {"english":"school","georgian":"სკოლა","pronunciation":"/skuːl/","example_en":"My children go to school every day.","example_ka":"ჩემი შვილები ყოველდღე სკოლაში დადიან.","category":"education","level":"intermediate"},
-  {"english":"university","georgian":"უნივერსიტეტი","pronunciation":"/ˌjuːnɪˈvɜːrsəti/","example_en":"She studies at the university.","example_ka":"ის უნივერსიტეტში სწავლობს.","category":"education","level":"intermediate"},
-  {"english":"teacher","georgian":"მასწავლებელი","pronunciation":"/ˈtiːtʃər/","example_en":"The teacher explained the lesson.","example_ka":"მასწავლებელმა გაკვეთილი ახსნა.","category":"education","level":"intermediate"},
-  {"english":"student","georgian":"სტუდენტი","pronunciation":"/ˈstuːdənt/","example_en":"He's a medical student.","example_ka":"ის მედიცინის სტუდენტია.","category":"education","level":"intermediate"},
-  {"english":"homework","georgian":"საშინაო დავალება","pronunciation":"/ˈhoʊmwɜːrk/","example_en":"Did you finish your homework?","example_ka":"საშინაო დავალება დაამთავრე?","category":"education","level":"intermediate"},
-  {"english":"exam","georgian":"გამოცდა","pronunciation":"/ɪɡˈzæm/","example_en":"The final exam is next week.","example_ka":"საბოლოო გამოცდა მომავალ კვირაა.","category":"education","level":"intermediate"},
-  {"english":"grade","georgian":"ნიშანი","pronunciation":"/ɡreɪd/","example_en":"She got the highest grade in class.","example_ka":"მან კლასში ყველაზე მაღალი ნიშანი მიიღო.","category":"education","level":"intermediate"},
-  {"english":"classroom","georgian":"საკლასო ოთახი","pronunciation":"/ˈklæsruːm/","example_en":"The classroom is on the second floor.","example_ka":"საკლასო ოთახი მეორე სართულზეა.","category":"education","level":"intermediate"},
-  {"english":"textbook","georgian":"სახელმძღვანელო","pronunciation":"/ˈtekstbʊk/","example_en":"Open your textbook to page 50.","example_ka":"გახსენით სახელმძღვანელო მე-50 გვერდზე.","category":"education","level":"intermediate"},
-  {"english":"library","georgian":"ბიბლიოთეკა","pronunciation":"/ˈlaɪbreri/","example_en":"I study at the library.","example_ka":"ბიბლიოთეკაში ვსწავლობ.","category":"education","level":"intermediate"},
-  {"english":"lecture","georgian":"ლექცია","pronunciation":"/ˈlektʃər/","example_en":"The lecture starts at 9 AM.","example_ka":"ლექცია 9 საათზე იწყება.","category":"education","level":"intermediate"},
-  {"english":"professor","georgian":"პროფესორი","pronunciation":"/prəˈfesər/","example_en":"The professor published a new paper.","example_ka":"პროფესორმა ახალი ნაშრომი გამოაქვეყნა.","category":"education","level":"intermediate"},
-  {"english":"diploma","georgian":"დიპლომი","pronunciation":"/dɪˈploʊmə/","example_en":"She received her diploma last year.","example_ka":"მან დიპლომი შარშან მიიღო.","category":"education","level":"intermediate"},
-  {"english":"degree","georgian":"ხარისხი","pronunciation":"/dɪˈɡriː/","example_en":"He has a degree in engineering.","example_ka":"მას ინჟინერიის ხარისხი აქვს.","category":"education","level":"intermediate"},
-  {"english":"scholarship","georgian":"სტიპენდია","pronunciation":"/ˈskɒlərʃɪp/","example_en":"She won a full scholarship.","example_ka":"მან სრული სტიპენდია მოიგო.","category":"education","level":"intermediate"},
-  {"english":"curriculum","georgian":"სასწავლო გეგმა","pronunciation":"/kəˈrɪkjələm/","example_en":"The curriculum includes science and math.","example_ka":"სასწავლო გეგმა მეცნიერებას და მათემატიკას მოიცავს.","category":"education","level":"intermediate"},
-  {"english":"assignment","georgian":"დავალება","pronunciation":"/əˈsaɪnmənt/","example_en":"Submit the assignment by Friday.","example_ka":"დავალება პარასკევამდე ჩააბარეთ.","category":"education","level":"intermediate"},
-  {"english":"research","georgian":"კვლევა","pronunciation":"/rɪˈsɜːrtʃ/","example_en":"She's doing research on climate change.","example_ka":"ის კლიმატის ცვლილებაზე კვლევას აწარმოებს.","category":"education","level":"intermediate"},
-  {"english":"knowledge","georgian":"ცოდნა","pronunciation":"/ˈnɒlɪdʒ/","example_en":"Knowledge is power.","example_ka":"ცოდნა ძალაა.","category":"education","level":"intermediate"},
-  {"english":"education","georgian":"განათლება","pronunciation":"/ˌedʒuˈkeɪʃən/","example_en":"Education is important for everyone.","example_ka":"განათლება ყველასთვის მნიშვნელოვანია.","category":"education","level":"intermediate"},
-  {"english":"lesson","georgian":"გაკვეთილი","pronunciation":"/ˈlesən/","example_en":"Today's lesson is about grammar.","example_ka":"დღევანდელი გაკვეთილი გრამატიკაზეა.","category":"education","level":"intermediate"},
-  {"english":"notebook","georgian":"რვეული","pronunciation":"/ˈnoʊtbʊk/","example_en":"Write the notes in your notebook.","example_ka":"ჩანაწერები რვეულში ჩაწერეთ.","category":"education","level":"intermediate"},
-  {"english":"pencil","georgian":"ფანქარი","pronunciation":"/ˈpensəl/","example_en":"Can I borrow your pencil?","example_ka":"შეიძლება ფანქარი მათხოვო?","category":"education","level":"intermediate"},
-  {"english":"eraser","georgian":"საშლელი","pronunciation":"/ɪˈreɪsər/","example_en":"I need an eraser to fix this mistake.","example_ka":"ამ შეცდომის გამოსასწორებლად საშლელი მჭირდება.","category":"education","level":"intermediate"},
-  {"english":"blackboard","georgian":"დაფა","pronunciation":"/ˈblækbɔːrd/","example_en":"The teacher wrote on the blackboard.","example_ka":"მასწავლებელმა დაფაზე დაწერა.","category":"education","level":"intermediate"},
-  {"english":"principal","georgian":"დირექტორი","pronunciation":"/ˈprɪnsəpəl/","example_en":"The principal made an announcement.","example_ka":"დირექტორმა განცხადება გააკეთა.","category":"education","level":"intermediate"},
-  {"english":"semester","georgian":"სემესტრი","pronunciation":"/sɪˈmestər/","example_en":"The fall semester starts in September.","example_ka":"შემოდგომის სემესტრი სექტემბერში იწყება.","category":"education","level":"intermediate"},
-  {"english":"attendance","georgian":"დასწრება","pronunciation":"/əˈtendəns/","example_en":"Attendance is mandatory.","example_ka":"დასწრება სავალდებულოა.","category":"education","level":"intermediate"},
-  {"english":"graduation","georgian":"დამთავრება","pronunciation":"/ˌɡrædʒuˈeɪʃən/","example_en":"Her graduation ceremony is tomorrow.","example_ka":"მისი გამოსაშვები ცერემონია ხვალაა.","category":"education","level":"intermediate"},
-  {"english":"tuition","georgian":"სწავლის საფასური","pronunciation":"/tuˈɪʃən/","example_en":"Tuition fees are increasing every year.","example_ka":"სწავლის საფასური ყოველწლიურად იზრდება.","category":"education","level":"intermediate"},
-  {"english":"dormitory","georgian":"საერთო საცხოვრებელი","pronunciation":"/ˈdɔːrmɪtɔːri/","example_en":"He lives in the university dormitory.","example_ka":"ის უნივერსიტეტის საერთო საცხოვრებელში ცხოვრობს.","category":"education","level":"intermediate"},
-  {"english":"subject","georgian":"საგანი","pronunciation":"/ˈsʌbdʒekt/","example_en":"Math is my favorite subject.","example_ka":"მათემატიკა ჩემი საყვარელი საგანია.","category":"education","level":"intermediate"},
-  {"english":"schedule","georgian":"განრიგი","pronunciation":"/ˈskedʒuːl/","example_en":"Check the class schedule.","example_ka":"შეამოწმეთ გაკვეთილების განრიგი.","category":"education","level":"intermediate"},
-  {"english":"absent","georgian":"არმყოფი","pronunciation":"/ˈæbsənt/","example_en":"She was absent from class today.","example_ka":"ის დღეს გაკვეთილზე არ იყო.","category":"education","level":"intermediate"},
-  {"english":"quiz","georgian":"ქვიზი","pronunciation":"/kwɪz/","example_en":"We have a quiz on Monday.","example_ka":"ორშაბათს ქვიზი გვაქვს.","category":"education","level":"intermediate"},
-  {"english":"essay","georgian":"ესე","pronunciation":"/ˈeseɪ/","example_en":"Write a 500-word essay.","example_ka":"დაწერეთ 500-სიტყვიანი ესე.","category":"education","level":"intermediate"},
-  {"english":"presentation","georgian":"პრეზენტაცია","pronunciation":"/ˌprezənˈteɪʃən/","example_en":"She gave an excellent presentation.","example_ka":"მან შესანიშნავი პრეზენტაცია წარმოადგინა.","category":"education","level":"intermediate"},
-  {"english":"certificate","georgian":"სერტიფიკატი","pronunciation":"/sərˈtɪfɪkət/","example_en":"He earned a certificate in programming.","example_ka":"მან პროგრამირების სერტიფიკატი მიიღო.","category":"education","level":"intermediate"},
-  {"english":"vocabulary","georgian":"ლექსიკა","pronunciation":"/voʊˈkæbjəleri/","example_en":"Improve your vocabulary by reading.","example_ka":"ლექსიკა კითხვით გაიმდიდრეთ.","category":"education","level":"intermediate"},
-  {"english":"grammar","georgian":"გრამატიკა","pronunciation":"/ˈɡræmər/","example_en":"English grammar can be difficult.","example_ka":"ინგლისური გრამატიკა რთული შეიძლება იყოს.","category":"education","level":"intermediate"},
-  {"english":"dictionary","georgian":"ლექსიკონი","pronunciation":"/ˈdɪkʃəneri/","example_en":"Look up the word in the dictionary.","example_ka":"სიტყვა ლექსიკონში მოძებნეთ.","category":"education","level":"intermediate"},
-  {"english":"academic","georgian":"აკადემიური","pronunciation":"/ˌækəˈdemɪk/","example_en":"His academic performance improved.","example_ka":"მისი აკადემიური მოსწრება გაუმჯობესდა.","category":"education","level":"intermediate"},
-  {"english":"campus","georgian":"კამპუსი","pronunciation":"/ˈkæmpəs/","example_en":"The campus has a beautiful garden.","example_ka":"კამპუსს ლამაზი ბაღი აქვს.","category":"education","level":"intermediate"},
-  {"english":"discipline","georgian":"დისციპლინა","pronunciation":"/ˈdɪsəplɪn/","example_en":"Discipline is key to success.","example_ka":"დისციპლინა წარმატების გასაღებია.","category":"education","level":"intermediate"},
-  {"english":"enrollment","georgian":"ჩარიცხვა","pronunciation":"/ɪnˈroʊlmənt/","example_en":"Enrollment begins next month.","example_ka":"ჩარიცხვა მომავალ თვეს იწყება.","category":"education","level":"intermediate"},
-  {"english":"laboratory","georgian":"ლაბორატორია","pronunciation":"/ˈlæbrətɔːri/","example_en":"The experiment was conducted in the laboratory.","example_ka":"ექსპერიმენტი ლაბორატორიაში ჩატარდა.","category":"education","level":"intermediate"},
-  {"english":"tutor","georgian":"რეპეტიტორი","pronunciation":"/ˈtuːtər/","example_en":"She hired a math tutor.","example_ka":"მან მათემატიკის რეპეტიტორი დაიქირავა.","category":"education","level":"intermediate"},
-  {"english":"study","georgian":"სწავლა","pronunciation":"/ˈstʌdi/","example_en":"I need to study for the test.","example_ka":"ტესტისთვის სწავლა მჭირდება.","category":"education","level":"intermediate"},
-  {"english":"learn","georgian":"სწავლა","pronunciation":"/lɜːrn/","example_en":"I want to learn a new language.","example_ka":"ახალი ენის სწავლა მინდა.","category":"education","level":"intermediate"},
-  {"english":"teach","georgian":"სწავლება","pronunciation":"/tiːtʃ/","example_en":"She teaches English at school.","example_ka":"ის სკოლაში ინგლისურს ასწავლის.","category":"education","level":"intermediate"},
-  {"english":"graduate","georgian":"კურსდამთავრებული","pronunciation":"/ˈɡrædʒuət/","example_en":"He's a recent college graduate.","example_ka":"ის ახლახან დაამთავრა კოლეჯი.","category":"education","level":"intermediate"},
-  {"english":"fail","georgian":"ჩაჭრა","pronunciation":"/feɪl/","example_en":"He failed the math exam.","example_ka":"მათემატიკის გამოცდა ჩაიჭრა.","category":"education","level":"intermediate"},
-  {"english":"pass","georgian":"ჩაბარება","pronunciation":"/pæs/","example_en":"She passed all her exams.","example_ka":"მან ყველა გამოცდა ჩააბარა.","category":"education","level":"intermediate"},
-  {"english":"register","georgian":"რეგისტრაცია","pronunciation":"/ˈredʒɪstər/","example_en":"Register for the course online.","example_ka":"კურსზე ონლაინ დარეგისტრირდით.","category":"education","level":"intermediate"},
-  {"english":"syllabus","georgian":"სილაბუსი","pronunciation":"/ˈsɪləbəs/","example_en":"The syllabus outlines the course topics.","example_ka":"სილაბუსი კურსის თემებს აღწერს.","category":"education","level":"intermediate"},
-  {"english":"debate","georgian":"დებატი","pronunciation":"/dɪˈbeɪt/","example_en":"Students participated in a debate.","example_ka":"სტუდენტებმა დებატებში მიიღეს მონაწილეობა.","category":"education","level":"intermediate"},
-  {"english":"project","georgian":"პროექტი","pronunciation":"/ˈprɒdʒekt/","example_en":"The group project is due Friday.","example_ka":"ჯგუფური პროექტის ვადა პარასკევია.","category":"education","level":"intermediate"},
-  {"english":"deadline","georgian":"ვადა","pronunciation":"/ˈdedlaɪn/","example_en":"Don't miss the deadline.","example_ka":"ვადა არ გაუშვა.","category":"education","level":"intermediate"},
-  {"english":"course","georgian":"კურსი","pronunciation":"/kɔːrs/","example_en":"I signed up for a photography course.","example_ka":"ფოტოგრაფიის კურსზე დავრეგისტრირდი.","category":"education","level":"intermediate"},
-  {"english":"literate","georgian":"წიგნიერი","pronunciation":"/ˈlɪtərət/","example_en":"Every child should be literate.","example_ka":"ყველა ბავშვი წიგნიერი უნდა იყოს.","category":"education","level":"intermediate"}
+  {
+    "english": "school",
+    "georgian": "სკოლა",
+    "pronunciation": "/skuːl/",
+    "example_en": "My children go to school every day.",
+    "example_ka": "ჩემი შვილები ყოველდღე სკოლაში დადიან.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "university",
+    "georgian": "უნივერსიტეტი",
+    "pronunciation": "/ˌjuːnɪˈvɜːrsəti/",
+    "example_en": "She studies at the university.",
+    "example_ka": "ის უნივერსიტეტში სწავლობს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "teacher",
+    "georgian": "მასწავლებელი",
+    "pronunciation": "/ˈtiːtʃər/",
+    "example_en": "The teacher explained the lesson.",
+    "example_ka": "მასწავლებელმა გაკვეთილი ახსნა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "student",
+    "georgian": "სტუდენტი",
+    "pronunciation": "/ˈstuːdənt/",
+    "example_en": "He's a medical student.",
+    "example_ka": "ის მედიცინის სტუდენტია.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "homework",
+    "georgian": "საშინაო დავალება",
+    "pronunciation": "/ˈhoʊmwɜːrk/",
+    "example_en": "Did you finish your homework?",
+    "example_ka": "საშინაო დავალება დაამთავრე?",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "exam",
+    "georgian": "გამოცდა",
+    "pronunciation": "/ɪɡˈzæm/",
+    "example_en": "The final exam is next week.",
+    "example_ka": "საბოლოო გამოცდა მომავალ კვირაა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "grade",
+    "georgian": "ნიშანი",
+    "pronunciation": "/ɡreɪd/",
+    "example_en": "She got the highest grade in class.",
+    "example_ka": "მან კლასში ყველაზე მაღალი ნიშანი მიიღო.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "classroom",
+    "georgian": "საკლასო ოთახი",
+    "pronunciation": "/ˈklæsruːm/",
+    "example_en": "The classroom is on the second floor.",
+    "example_ka": "საკლასო ოთახი მეორე სართულზეა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "textbook",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/ˈtekstbʊk/",
+    "example_en": "Open your textbook to page 50.",
+    "example_ka": "გახსენით სახელმძღვანელო მე-50 გვერდზე.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "library",
+    "georgian": "ბიბლიოთეკა",
+    "pronunciation": "/ˈlaɪbreri/",
+    "example_en": "I study at the library.",
+    "example_ka": "ბიბლიოთეკაში ვსწავლობ.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "lecture",
+    "georgian": "ლექცია",
+    "pronunciation": "/ˈlektʃər/",
+    "example_en": "The lecture starts at 9 AM.",
+    "example_ka": "ლექცია 9 საათზე იწყება.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "professor",
+    "georgian": "პროფესორი",
+    "pronunciation": "/prəˈfesər/",
+    "example_en": "The professor published a new paper.",
+    "example_ka": "პროფესორმა ახალი ნაშრომი გამოაქვეყნა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "diploma",
+    "georgian": "დიპლომი",
+    "pronunciation": "/dɪˈploʊmə/",
+    "example_en": "She received her diploma last year.",
+    "example_ka": "მან დიპლომი შარშან მიიღო.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "degree",
+    "georgian": "ხარისხი",
+    "pronunciation": "/dɪˈɡriː/",
+    "example_en": "He has a degree in engineering.",
+    "example_ka": "მას ინჟინერიის ხარისხი აქვს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "scholarship",
+    "georgian": "სტიპენდია",
+    "pronunciation": "/ˈskɒlərʃɪp/",
+    "example_en": "She won a full scholarship.",
+    "example_ka": "მან სრული სტიპენდია მოიგო.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "curriculum",
+    "georgian": "სასწავლო გეგმა",
+    "pronunciation": "/kəˈrɪkjələm/",
+    "example_en": "The curriculum includes science and math.",
+    "example_ka": "სასწავლო გეგმა მეცნიერებას და მათემატიკას მოიცავს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "assignment",
+    "georgian": "დავალება",
+    "pronunciation": "/əˈsaɪnmənt/",
+    "example_en": "Submit the assignment by Friday.",
+    "example_ka": "დავალება პარასკევამდე ჩააბარეთ.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "research",
+    "georgian": "კვლევა",
+    "pronunciation": "/rɪˈsɜːrtʃ/",
+    "example_en": "She's doing research on climate change.",
+    "example_ka": "ის კლიმატის ცვლილებაზე კვლევას აწარმოებს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "knowledge",
+    "georgian": "ცოდნა",
+    "pronunciation": "/ˈnɒlɪdʒ/",
+    "example_en": "Knowledge is power.",
+    "example_ka": "ცოდნა ძალაა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "education",
+    "georgian": "განათლება",
+    "pronunciation": "/ˌedʒuˈkeɪʃən/",
+    "example_en": "Education is important for everyone.",
+    "example_ka": "განათლება ყველასთვის მნიშვნელოვანია.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "lesson",
+    "georgian": "გაკვეთილი",
+    "pronunciation": "/ˈlesən/",
+    "example_en": "Today's lesson is about grammar.",
+    "example_ka": "დღევანდელი გაკვეთილი გრამატიკაზეა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "notebook",
+    "georgian": "რვეული",
+    "pronunciation": "/ˈnoʊtbʊk/",
+    "example_en": "Write the notes in your notebook.",
+    "example_ka": "ჩანაწერები რვეულში ჩაწერეთ.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "pencil",
+    "georgian": "ფანქარი",
+    "pronunciation": "/ˈpensəl/",
+    "example_en": "Can I borrow your pencil?",
+    "example_ka": "შეიძლება ფანქარი მათხოვო?",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "eraser",
+    "georgian": "საშლელი",
+    "pronunciation": "/ɪˈreɪsər/",
+    "example_en": "I need an eraser to fix this mistake.",
+    "example_ka": "ამ შეცდომის გამოსასწორებლად საშლელი მჭირდება.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "blackboard",
+    "georgian": "დაფა",
+    "pronunciation": "/ˈblækbɔːrd/",
+    "example_en": "The teacher wrote on the blackboard.",
+    "example_ka": "მასწავლებელმა დაფაზე დაწერა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "principal",
+    "georgian": "დირექტორი",
+    "pronunciation": "/ˈprɪnsəpəl/",
+    "example_en": "The principal made an announcement.",
+    "example_ka": "დირექტორმა განცხადება გააკეთა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "semester",
+    "georgian": "სემესტრი",
+    "pronunciation": "/sɪˈmestər/",
+    "example_en": "The fall semester starts in September.",
+    "example_ka": "შემოდგომის სემესტრი სექტემბერში იწყება.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "attendance",
+    "georgian": "დასწრება",
+    "pronunciation": "/əˈtendəns/",
+    "example_en": "Attendance is mandatory.",
+    "example_ka": "დასწრება სავალდებულოა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "graduation",
+    "georgian": "დამთავრება",
+    "pronunciation": "/ˌɡrædʒuˈeɪʃən/",
+    "example_en": "Her graduation ceremony is tomorrow.",
+    "example_ka": "მისი გამოსაშვები ცერემონია ხვალაა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "tuition",
+    "georgian": "სწავლის საფასური",
+    "pronunciation": "/tuˈɪʃən/",
+    "example_en": "Tuition fees are increasing every year.",
+    "example_ka": "სწავლის საფასური ყოველწლიურად იზრდება.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "dormitory",
+    "georgian": "საერთო საცხოვრებელი",
+    "pronunciation": "/ˈdɔːrmɪtɔːri/",
+    "example_en": "He lives in the university dormitory.",
+    "example_ka": "ის უნივერსიტეტის საერთო საცხოვრებელში ცხოვრობს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "subject",
+    "georgian": "საგანი",
+    "pronunciation": "/ˈsʌbdʒekt/",
+    "example_en": "Math is my favorite subject.",
+    "example_ka": "მათემატიკა ჩემი საყვარელი საგანია.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈskedʒuːl/",
+    "example_en": "Check the class schedule.",
+    "example_ka": "შეამოწმეთ გაკვეთილების განრიგი.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "absent",
+    "georgian": "არმყოფი",
+    "pronunciation": "/ˈæbsənt/",
+    "example_en": "She was absent from class today.",
+    "example_ka": "ის დღეს გაკვეთილზე არ იყო.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "quiz",
+    "georgian": "ქვიზი",
+    "pronunciation": "/kwɪz/",
+    "example_en": "We have a quiz on Monday.",
+    "example_ka": "ორშაბათს ქვიზი გვაქვს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "essay",
+    "georgian": "ესე",
+    "pronunciation": "/ˈeseɪ/",
+    "example_en": "Write a 500-word essay.",
+    "example_ka": "დაწერეთ 500-სიტყვიანი ესე.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "presentation",
+    "georgian": "პრეზენტაცია",
+    "pronunciation": "/ˌprezənˈteɪʃən/",
+    "example_en": "She gave an excellent presentation.",
+    "example_ka": "მან შესანიშნავი პრეზენტაცია წარმოადგინა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "certificate",
+    "georgian": "სერტიფიკატი",
+    "pronunciation": "/sərˈtɪfɪkət/",
+    "example_en": "He earned a certificate in programming.",
+    "example_ka": "მან პროგრამირების სერტიფიკატი მიიღო.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "vocabulary",
+    "georgian": "ლექსიკა",
+    "pronunciation": "/voʊˈkæbjəleri/",
+    "example_en": "Improve your vocabulary by reading.",
+    "example_ka": "ლექსიკა კითხვით გაიმდიდრეთ.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "grammar",
+    "georgian": "გრამატიკა",
+    "pronunciation": "/ˈɡræmər/",
+    "example_en": "English grammar can be difficult.",
+    "example_ka": "ინგლისური გრამატიკა რთული შეიძლება იყოს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "dictionary",
+    "georgian": "ლექსიკონი",
+    "pronunciation": "/ˈdɪkʃəneri/",
+    "example_en": "Look up the word in the dictionary.",
+    "example_ka": "სიტყვა ლექსიკონში მოძებნეთ.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "academic",
+    "georgian": "აკადემიური",
+    "pronunciation": "/ˌækəˈdemɪk/",
+    "example_en": "His academic performance improved.",
+    "example_ka": "მისი აკადემიური მოსწრება გაუმჯობესდა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "campus",
+    "georgian": "კამპუსი",
+    "pronunciation": "/ˈkæmpəs/",
+    "example_en": "The campus has a beautiful garden.",
+    "example_ka": "კამპუსს ლამაზი ბაღი აქვს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "discipline",
+    "georgian": "დისციპლინა",
+    "pronunciation": "/ˈdɪsəplɪn/",
+    "example_en": "Discipline is key to success.",
+    "example_ka": "დისციპლინა წარმატების გასაღებია.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "enrollment",
+    "georgian": "ჩარიცხვა",
+    "pronunciation": "/ɪnˈroʊlmənt/",
+    "example_en": "Enrollment begins next month.",
+    "example_ka": "ჩარიცხვა მომავალ თვეს იწყება.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "laboratory",
+    "georgian": "ლაბორატორია",
+    "pronunciation": "/ˈlæbrətɔːri/",
+    "example_en": "The experiment was conducted in the laboratory.",
+    "example_ka": "ექსპერიმენტი ლაბორატორიაში ჩატარდა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "tutor",
+    "georgian": "რეპეტიტორი",
+    "pronunciation": "/ˈtuːtər/",
+    "example_en": "She hired a math tutor.",
+    "example_ka": "მან მათემატიკის რეპეტიტორი დაიქირავა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "study",
+    "georgian": "სწავლა",
+    "pronunciation": "/ˈstʌdi/",
+    "example_en": "I need to study for the test.",
+    "example_ka": "ტესტისთვის სწავლა მჭირდება.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "learn",
+    "georgian": "სწავლა",
+    "pronunciation": "/lɜːrn/",
+    "example_en": "I want to learn a new language.",
+    "example_ka": "ახალი ენის სწავლა მინდა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "teach",
+    "georgian": "სწავლება",
+    "pronunciation": "/tiːtʃ/",
+    "example_en": "She teaches English at school.",
+    "example_ka": "ის სკოლაში ინგლისურს ასწავლის.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "graduate",
+    "georgian": "კურსდამთავრებული",
+    "pronunciation": "/ˈɡrædʒuət/",
+    "example_en": "He's a recent college graduate.",
+    "example_ka": "ის ახლახან დაამთავრა კოლეჯი.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "fail",
+    "georgian": "ჩაჭრა",
+    "pronunciation": "/feɪl/",
+    "example_en": "He failed the math exam.",
+    "example_ka": "მათემატიკის გამოცდა ჩაიჭრა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "pass",
+    "georgian": "ჩაბარება",
+    "pronunciation": "/pæs/",
+    "example_en": "She passed all her exams.",
+    "example_ka": "მან ყველა გამოცდა ჩააბარა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "register",
+    "georgian": "რეგისტრაცია",
+    "pronunciation": "/ˈredʒɪstər/",
+    "example_en": "Register for the course online.",
+    "example_ka": "კურსზე ონლაინ დარეგისტრირდით.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "syllabus",
+    "georgian": "სილაბუსი",
+    "pronunciation": "/ˈsɪləbəs/",
+    "example_en": "The syllabus outlines the course topics.",
+    "example_ka": "სილაბუსი კურსის თემებს აღწერს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "debate",
+    "georgian": "დებატი",
+    "pronunciation": "/dɪˈbeɪt/",
+    "example_en": "Students participated in a debate.",
+    "example_ka": "სტუდენტებმა დებატებში მიიღეს მონაწილეობა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "project",
+    "georgian": "პროექტი",
+    "pronunciation": "/ˈprɒdʒekt/",
+    "example_en": "The group project is due Friday.",
+    "example_ka": "ჯგუფური პროექტის ვადა პარასკევია.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "deadline",
+    "georgian": "ვადა",
+    "pronunciation": "/ˈdedlaɪn/",
+    "example_en": "Don't miss the deadline.",
+    "example_ka": "ვადა არ გაუშვა.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "course",
+    "georgian": "კურსი",
+    "pronunciation": "/kɔːrs/",
+    "example_en": "I signed up for a photography course.",
+    "example_ka": "ფოტოგრაფიის კურსზე დავრეგისტრირდი.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "literate",
+    "georgian": "წიგნიერი",
+    "pronunciation": "/ˈlɪtərət/",
+    "example_en": "Every child should be literate.",
+    "example_ka": "ყველა ბავშვი წიგნიერი უნდა იყოს.",
+    "category": "education",
+    "level": "intermediate"
+  },
+  {
+    "english": "pen",
+    "georgian": "კალამი",
+    "pronunciation": "/pen/",
+    "example_en": "Can I borrow your pen?",
+    "example_ka": "შეიძლება კალამი მათხოვო?",
+    "category": "school-classroom",
+    "level": "A1"
+  },
+  {
+    "english": "desk",
+    "georgian": "მერხი/სამუშაო მაგიდა",
+    "pronunciation": "/desk/",
+    "example_en": "Sit at your desk.",
+    "example_ka": "მერხთან დაჯექი.",
+    "category": "school-classroom",
+    "level": "A1"
+  },
+  {
+    "english": "chair",
+    "georgian": "სკამი",
+    "pronunciation": "/tʃer/",
+    "example_en": "The chair is comfortable.",
+    "example_ka": "სკამი კომფორტულია.",
+    "category": "school-classroom",
+    "level": "A1"
+  },
+  {
+    "english": "question",
+    "georgian": "კითხვა",
+    "pronunciation": "/ˈkwestʃən/",
+    "example_en": "Do you have any questions?",
+    "example_ka": "კითხვები ხომ არ გაქვთ?",
+    "category": "school-classroom",
+    "level": "A1"
+  },
+  {
+    "english": "answer",
+    "georgian": "პასუხი",
+    "pronunciation": "/ˈænsər/",
+    "example_en": "I know the answer.",
+    "example_ka": "პასუხი ვიცი.",
+    "category": "school-classroom",
+    "level": "A1"
+  }
 ]

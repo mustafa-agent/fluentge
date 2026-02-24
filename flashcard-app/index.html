@@ -16,6 +16,24 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Theme toggle - persisted in localStorage
+      (function() {
+        var t = localStorage.getItem('fluentge-theme');
+        if (t === 'light') document.documentElement.classList.add('light');
+        var btn = document.createElement('button');
+        btn.id = 'theme-toggle';
+        btn.textContent = t === 'light' ? '🌙' : '☀️';
+        btn.style.cssText = 'position:fixed;bottom:20px;right:20px;z-index:9999;width:48px;height:48px;border-radius:50%;border:none;font-size:22px;cursor:pointer;background:rgba(100,100,100,0.3);backdrop-filter:blur(8px);box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        btn.onclick = function() {
+          document.documentElement.classList.toggle('light');
+          var isLight = document.documentElement.classList.contains('light');
+          localStorage.setItem('fluentge-theme', isLight ? 'light' : 'dark');
+          btn.textContent = isLight ? '🌙' : '☀️';
+        };
+        document.body.appendChild(btn);
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {

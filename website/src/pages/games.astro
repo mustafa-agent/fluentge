@@ -4,28 +4,31 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="თამაშები — FluentGe">
   <!-- Hero Section -->
-  <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #F5E6D0, #E8D5B7, #DCC9A8); box-shadow: inset 0 0 60px rgba(139,115,85,0.1);">
-    <div class="absolute inset-0 opacity-[0.05]" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%224%22 height=%224%22><rect width=%224%22 height=%224%22 fill=%22%238B7355%22 fill-opacity=%220.15%22/><rect width=%221%22 height=%221%22 fill=%22%238B7355%22 fill-opacity=%220.1%22/></svg>'); background-size: 4px 4px;"></div>
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-25"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/60 to-[#1C1C1E]"></div>
+    </div>
     <div class="relative max-w-4xl mx-auto px-4 pt-24 pb-16 text-center">
-      <h1 class="font-['DM_Serif_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight text-[#4A3F35]">სიტყვების თამაშები</h1>
-      <p class="text-base sm:text-lg text-[#8B7355] max-w-xl mx-auto mb-6">ისწავლე ინგლისური სახალისო და ინტერაქტიული თამაშებით</p>
-      <div class="inline-flex items-center gap-2 bg-[#FAF4EB]/80 border border-[#D4BC94]/40 rounded-full px-5 py-2">
-        <span class="w-2 h-2 bg-[#5B7F5E] rounded-full animate-pulse"></span>
-        <span class="text-sm text-[#8B7355]">3 უფასო თამაში</span>
-        <span class="text-[#D4BC94]">|</span>
-        <span class="text-sm text-[#8B7355]">27 პრემიუმ</span>
+      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">სიტყვების თამაშები</h1>
+      <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto mb-6">ისწავლე ინგლისური სახალისო და ინტერაქტიული თამაშებით</p>
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-5 py-2">
+        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+        <span class="text-sm text-[#C8C8C0]">3 უფასო თამაში</span>
+        <span class="text-[#6B6B65]">|</span>
+        <span class="text-sm text-[#C8C8C0]">27 პრემიუმ</span>
       </div>
     </div>
   </section>
 
   <!-- Game Grid -->
-  <section class="max-w-5xl mx-auto px-4 pb-20">
+  <section class="max-w-5xl mx-auto px-4 py-16">
     <!-- Free Games Section -->
     <div class="mb-12">
       <div class="flex items-center gap-3 mb-6">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#D4BC94] to-transparent"></div>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-[#4A3F35]">უფასო თამაშები</h2>
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#D4BC94] to-transparent"></div>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-[#C8C8C0]">უფასო თამაშები</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
       </div>
       <div id="free-games" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
     </div>
@@ -33,9 +36,9 @@ import Layout from '../layouts/Layout.astro';
     <!-- Premium Games Section -->
     <div>
       <div class="flex items-center gap-3 mb-6">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#D4BC94] to-transparent"></div>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-[#4A3F35]">პრემიუმ თამაშები</h2>
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#D4BC94] to-transparent"></div>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-[#C8C8C0]">პრემიუმ თამაშები</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
       </div>
       <div id="premium-games" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4"></div>
     </div>
@@ -54,7 +57,7 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Subscribe Modal -->
   <div id="sub-modal" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-    <div class="bg-white border border-[#2E2E30] rounded-2xl p-6 sm:p-8 max-w-sm w-full text-center shadow-lg">
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 max-w-sm w-full text-center shadow-lg">
       <div class="w-16 h-16 bg-[#C8C8C0]/10 rounded-full flex items-center justify-center mx-auto mb-4">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8C8C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
       </div>
@@ -71,7 +74,6 @@ import Layout from '../layouts/Layout.astro';
     }
     .game-card:hover {
       transform: translateY(-3px);
-      border-color: #C4A86C;
     }
     .game-card:hover img { opacity: 0.9 !important; transform: scale(1.05); }
     .game-card img { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -176,19 +178,55 @@ import Layout from '../layouts/Layout.astro';
     const cont=document.getElementById('game-container');
     const modal=document.getElementById('sub-modal');
 
+    // Background images for game cards
+    const GAME_IMAGES = {
+      match: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&q=60',
+      speed: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=400&q=60',
+      truefalse: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=60',
+      scramble: 'https://images.unsplash.com/photo-1516382799247-87df95d790b7?w=400&q=60',
+      hangman: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&q=60',
+      fillblank: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=60',
+      emojiquiz: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?w=400&q=60',
+      memory: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&q=60',
+      typing: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=60',
+      listening: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=60',
+      opposites: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&q=60',
+      numbers: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&q=60',
+      daysmonths: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=400&q=60',
+      countries: 'https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=400&q=60',
+      foodquiz: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=60',
+      clothesquiz: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=400&q=60',
+      rooms: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&q=60',
+      emotionsquiz: 'https://images.unsplash.com/photo-1508963493744-76fce69379c0?w=400&q=60',
+      family: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400&q=60',
+      travel: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&q=60',
+      phrasesquiz: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&q=60',
+      movies: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&q=60',
+      math: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=400&q=60',
+      routine: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=60',
+      spelling: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&q=60',
+      wordrace: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=400&q=60',
+      colorsquiz: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?w=400&q=60',
+      timequiz: 'https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=60',
+      categories: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=400&q=60',
+      wordcatch: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&q=60',
+    };
+
     GAMES.forEach((g,i)=>{
       const card=document.createElement('div');
-      card.className=`game-card bg-[#FAF4EB] border border-[#D4BC94]/40 shadow-md hover:shadow-lg rounded-2xl overflow-hidden cursor-pointer ${g.free?'':'opacity-70 hover:opacity-90'}`;
+      card.className=`game-card bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden cursor-pointer hover:border-[#C8C8C0]/30 ${g.free?'':'opacity-75 hover:opacity-100'}`;
       card.style.animationDelay=`${i*0.05}s`;
+      const bgImg = GAME_IMAGES[g.id] || '';
       card.innerHTML=`
-        <div class="relative h-32 sm:h-36 flex items-center justify-center overflow-hidden" style="background: linear-gradient(145deg, #F5E6D0, ${g.color}15, #E8D5B7); box-shadow: inset 0 0 30px rgba(139,115,85,0.15);">
-          <div class="absolute inset-0 opacity-[0.08]" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%224%22 height=%224%22><rect width=%224%22 height=%224%22 fill=%22%238B7355%22 fill-opacity=%220.15%22/><rect width=%221%22 height=%221%22 fill=%22%238B7355%22 fill-opacity=%220.1%22/></svg>'); background-size: 4px 4px;"></div>
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="${g.free?'opacity-60':'opacity-30'}">${g.icon}</svg>
-          ${g.free?'<div class="absolute top-2 right-2 bg-[#5B7F5E] text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm">FREE</div>':'<div class="absolute top-2 right-2 bg-[#8B7355]/60 backdrop-blur-sm rounded-lg px-2 py-1"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#F5E6D0" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>'}
+        <div class="relative h-32 sm:h-36 flex items-center justify-center overflow-hidden">
+          ${bgImg ? `<img src="${bgImg}" alt="" class="absolute inset-0 w-full h-full object-cover opacity-25" loading="lazy" onerror="this.style.display='none'"/>` : ''}
+          <div class="absolute inset-0 bg-gradient-to-t from-[#242426] via-[#242426]/40 to-transparent"></div>
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 opacity-80">${g.icon}</svg>
+          ${g.free?'<div class="absolute top-2 right-2 bg-green-500/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm z-10">FREE</div>':'<div class="absolute top-2 right-2 bg-white/10 backdrop-blur-sm rounded-lg px-2 py-1 z-10"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A09A" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>'}
         </div>
-        <div class="p-3 sm:p-4" style="background: linear-gradient(to bottom, #FAF4EB, #F5EDE0);">
-          <h3 class="font-semibold text-sm sm:text-base text-[#4A3F35]" style="font-family: 'Playfair Display', serif;">${g.name}</h3>
-          <p class="text-[#8B7355] text-xs mt-0.5">${g.desc}</p>
+        <div class="p-3 sm:p-4">
+          <h3 class="font-semibold text-sm sm:text-base text-[#F5F5F0]" style="font-family: 'Playfair Display', serif;">${g.name}</h3>
+          <p class="text-[#6B6B65] text-xs mt-0.5">${g.desc}</p>
         </div>
       `;
       card.onclick=()=>{if(!g.free){window.location.href='/premium';return;}openGame(g.id);};

@@ -71,3 +71,11 @@ function getYesterday(): string {
   d.setDate(d.getDate() - 1);
   return d.toISOString().split('T')[0];
 }
+
+export function getLocalStorageValue(key: string, defaultValue: string): string {
+  try {
+    return localStorage.getItem(key) || defaultValue;
+  } catch {
+    return defaultValue;
+  }
+}

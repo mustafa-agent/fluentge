@@ -1,62 +1,650 @@
 [
-  {"english": "Shirt", "georgian": "პერანგი", "pronunciation": "/ʃɜːrt/", "example_en": "He wore a white shirt to the office.", "example_ka": "მან თეთრი პერანგი ჩაიცვა ოფისში.", "category": "clothing", "level": "A1"},
-  {"english": "Dress", "georgian": "კაბა", "pronunciation": "/drɛs/", "example_en": "She bought a beautiful dress for the party.", "example_ka": "მან ლამაზი კაბა იყიდა წვეულებისთვის.", "category": "clothing", "level": "A1"},
-  {"english": "Trousers", "georgian": "შარვალი", "pronunciation": "/ˈtraʊzərz/", "example_en": "These trousers are too tight.", "example_ka": "ეს შარვალი ძალიან ვიწროა.", "category": "clothing", "level": "A1"},
-  {"english": "Jacket", "georgian": "ქურთუკი", "pronunciation": "/ˈdʒækɪt/", "example_en": "Put on your jacket, it's cold outside.", "example_ka": "ქურთუკი ჩაიცვი, გარეთ ცივა.", "category": "clothing", "level": "A1"},
-  {"english": "Skirt", "georgian": "ქვედაკაბა", "pronunciation": "/skɜːrt/", "example_en": "She prefers wearing a skirt in summer.", "example_ka": "ზაფხულში ქვედაკაბის ტარებას ამჯობინებს.", "category": "clothing", "level": "A1"},
-  {"english": "Shoes", "georgian": "ფეხსაცმელი", "pronunciation": "/ʃuːz/", "example_en": "I need new shoes for work.", "example_ka": "სამსახურისთვის ახალი ფეხსაცმელი მჭირდება.", "category": "clothing", "level": "A1"},
-  {"english": "Hat", "georgian": "ქუდი", "pronunciation": "/hæt/", "example_en": "Wear a hat to protect yourself from the sun.", "example_ka": "ქუდი დაიხურე მზისგან დასაცავად.", "category": "clothing", "level": "A1"},
-  {"english": "Socks", "georgian": "წინდები", "pronunciation": "/sɒks/", "example_en": "I always lose one sock in the laundry.", "example_ka": "სარეცხში ყოველთვის ერთ წინდას ვკარგავ.", "category": "clothing", "level": "A1"},
-  {"english": "Coat", "georgian": "პალტო", "pronunciation": "/koʊt/", "example_en": "She wore a warm coat in winter.", "example_ka": "ზამთარში თბილ პალტოს იცვამდა.", "category": "clothing", "level": "A1"},
-  {"english": "Gloves", "georgian": "ხელთათმანები", "pronunciation": "/ɡlʌvz/", "example_en": "Don't forget your gloves, it's freezing.", "example_ka": "ხელთათმანები არ დაგავიწყდეს, ყინავს.", "category": "clothing", "level": "A1"},
-  {"english": "Scarf", "georgian": "შარფი", "pronunciation": "/skɑːrf/", "example_en": "She wrapped a scarf around her neck.", "example_ka": "მან შარფი შემოიხვია კისერზე.", "category": "clothing", "level": "A1"},
-  {"english": "Belt", "georgian": "ქამარი", "pronunciation": "/bɛlt/", "example_en": "He tightened his belt.", "example_ka": "მან ქამარი მოიჭირა.", "category": "clothing", "level": "A1"},
-  {"english": "Sweater", "georgian": "სვიტერი", "pronunciation": "/ˈswɛtər/", "example_en": "This sweater is very warm.", "example_ka": "ეს სვიტერი ძალიან თბილია.", "category": "clothing", "level": "A1"},
-  {"english": "Boots", "georgian": "ჩექმები", "pronunciation": "/buːts/", "example_en": "She wore boots in the rain.", "example_ka": "წვიმაში ჩექმები ჩაიცვა.", "category": "clothing", "level": "A1"},
-  {"english": "Underwear", "georgian": "საცვალი", "pronunciation": "/ˈʌndərwɛr/", "example_en": "Pack enough underwear for the trip.", "example_ka": "მოგზაურობისთვის საკმარისი საცვალი ჩაალაგე.", "category": "clothing", "level": "A1"},
-  {"english": "T-shirt", "georgian": "მაისური", "pronunciation": "/ˈtiːʃɜːrt/", "example_en": "He wore a plain white T-shirt.", "example_ka": "მან უბრალო თეთრი მაისური ჩაიცვა.", "category": "clothing", "level": "A1"},
-  {"english": "Jeans", "georgian": "ჯინსი", "pronunciation": "/dʒiːnz/", "example_en": "Jeans are comfortable for everyday wear.", "example_ka": "ჯინსი ყოველდღიური ტარებისთვის მოსახერხებელია.", "category": "clothing", "level": "A1"},
-  {"english": "Tie", "georgian": "ჰალსტუხი", "pronunciation": "/taɪ/", "example_en": "He learned to tie a tie.", "example_ka": "მან ჰალსტუხის შეკვრა ისწავლა.", "category": "clothing", "level": "A1"},
-  {"english": "Pajamas", "georgian": "პიჟამო", "pronunciation": "/pəˈdʒɑːməz/", "example_en": "I put on my pajamas before bed.", "example_ka": "ძილის წინ პიჟამო ჩავიცვი.", "category": "clothing", "level": "A1"},
-  {"english": "Sandals", "georgian": "სანდლები", "pronunciation": "/ˈsændəlz/", "example_en": "Sandals are perfect for the beach.", "example_ka": "სანდლები სანაპიროსთვის იდეალურია.", "category": "clothing", "level": "A1"},
-  {"english": "Fabric", "georgian": "ქსოვილი", "pronunciation": "/ˈfæbrɪk/", "example_en": "This fabric is very soft.", "example_ka": "ეს ქსოვილი ძალიან რბილია.", "category": "clothing", "level": "A2"},
-  {"english": "Cotton", "georgian": "ბამბა", "pronunciation": "/ˈkɒtən/", "example_en": "Cotton is a natural fabric.", "example_ka": "ბამბა ბუნებრივი ქსოვილია.", "category": "clothing", "level": "A2"},
-  {"english": "Silk", "georgian": "აბრეშუმი", "pronunciation": "/sɪlk/", "example_en": "Silk feels smooth on the skin.", "example_ka": "აბრეშუმი კანზე გლუვია.", "category": "clothing", "level": "A2"},
-  {"english": "Wool", "georgian": "მატყლი", "pronunciation": "/wʊl/", "example_en": "This scarf is made of wool.", "example_ka": "ეს შარფი მატყლისგანაა.", "category": "clothing", "level": "A2"},
-  {"english": "Leather", "georgian": "ტყავი", "pronunciation": "/ˈlɛðər/", "example_en": "He bought a leather jacket.", "example_ka": "მან ტყავის ქურთუკი იყიდა.", "category": "clothing", "level": "A2"},
-  {"english": "Linen", "georgian": "სელი", "pronunciation": "/ˈlɪnɪn/", "example_en": "Linen is great for hot weather.", "example_ka": "სელი ცხელ ამინდში შესანიშნავია.", "category": "clothing", "level": "A2"},
-  {"english": "Velvet", "georgian": "ხავერდი", "pronunciation": "/ˈvɛlvɪt/", "example_en": "The velvet curtains looked luxurious.", "example_ka": "ხავერდის ფარდები ფუფუნებით გამოიყურებოდა.", "category": "clothing", "level": "A2"},
-  {"english": "Denim", "georgian": "ჯინსის ქსოვილი", "pronunciation": "/ˈdɛnɪm/", "example_en": "Denim jackets are always in style.", "example_ka": "ჯინსის ქურთუკები ყოველთვის მოდურია.", "category": "clothing", "level": "A2"},
-  {"english": "Bracelet", "georgian": "სამაჯური", "pronunciation": "/ˈbreɪslɪt/", "example_en": "She received a gold bracelet as a gift.", "example_ka": "მან საჩუქრად ოქროს სამაჯური მიიღო.", "category": "clothing", "level": "A2"},
-  {"english": "Necklace", "georgian": "ყელსაბამი", "pronunciation": "/ˈnɛklɪs/", "example_en": "The necklace matched her dress perfectly.", "example_ka": "ყელსაბამი კაბას იდეალურად უხდებოდა.", "category": "clothing", "level": "A2"},
-  {"english": "Earrings", "georgian": "საყურეები", "pronunciation": "/ˈɪrɪŋz/", "example_en": "She wore diamond earrings.", "example_ka": "მან ბრილიანტის საყურეები ატარებდა.", "category": "clothing", "level": "A2"},
-  {"english": "Ring", "georgian": "ბეჭედი", "pronunciation": "/rɪŋ/", "example_en": "He gave her an engagement ring.", "example_ka": "მან ნიშნობის ბეჭედი აჩუქა.", "category": "clothing", "level": "A1"},
-  {"english": "Sunglasses", "georgian": "სათვალე", "pronunciation": "/ˈsʌnɡlæsɪz/", "example_en": "Don't forget your sunglasses.", "example_ka": "სათვალე არ დაგავიწყდეს.", "category": "clothing", "level": "A1"},
-  {"english": "Handbag", "georgian": "ჩანთა", "pronunciation": "/ˈhændbæɡ/", "example_en": "She carries a large handbag.", "example_ka": "ის დიდ ჩანთას ატარებს.", "category": "clothing", "level": "A2"},
-  {"english": "Wallet", "georgian": "საფულე", "pronunciation": "/ˈwɒlɪt/", "example_en": "He lost his wallet on the bus.", "example_ka": "ავტობუსში საფულე დაკარგა.", "category": "clothing", "level": "A1"},
-  {"english": "Zipper", "georgian": "ელვა-შესაკრავი", "pronunciation": "/ˈzɪpər/", "example_en": "The zipper on my jacket is broken.", "example_ka": "ქურთუკის ელვა-შესაკრავი გაფუჭებულია.", "category": "clothing", "level": "A2"},
-  {"english": "Button", "georgian": "ღილი", "pronunciation": "/ˈbʌtən/", "example_en": "A button fell off my shirt.", "example_ka": "პერანგს ღილი მოსწყდა.", "category": "clothing", "level": "A1"},
-  {"english": "Pocket", "georgian": "ჯიბე", "pronunciation": "/ˈpɒkɪt/", "example_en": "He put the keys in his pocket.", "example_ka": "მან გასაღებები ჯიბეში ჩადო.", "category": "clothing", "level": "A1"},
-  {"english": "Sleeve", "georgian": "სახელო", "pronunciation": "/sliːv/", "example_en": "He rolled up his sleeves.", "example_ka": "მან სახელოები აიკეცა.", "category": "clothing", "level": "A2"},
-  {"english": "Collar", "georgian": "საყელო", "pronunciation": "/ˈkɒlər/", "example_en": "The shirt has a stiff collar.", "example_ka": "პერანგს მაგარი საყელო აქვს.", "category": "clothing", "level": "A2"},
-  {"english": "Fashion", "georgian": "მოდა", "pronunciation": "/ˈfæʃən/", "example_en": "Fashion trends change every season.", "example_ka": "მოდის ტენდენციები ყოველ სეზონზე იცვლება.", "category": "clothing", "level": "A2"},
-  {"english": "Style", "georgian": "სტილი", "pronunciation": "/staɪl/", "example_en": "She has a unique style.", "example_ka": "მას უნიკალური სტილი აქვს.", "category": "clothing", "level": "A2"},
-  {"english": "Outfit", "georgian": "ტანსაცმლის კომპლექტი", "pronunciation": "/ˈaʊtfɪt/", "example_en": "That outfit looks great on you.", "example_ka": "ეს ტანსაცმლის კომპლექტი შენზე მშვენიერად გამოიყურება.", "category": "clothing", "level": "A2"},
-  {"english": "Wardrobe", "georgian": "კარადა", "pronunciation": "/ˈwɔːrdroʊb/", "example_en": "Her wardrobe is full of dresses.", "example_ka": "მისი კარადა კაბებით სავსეა.", "category": "clothing", "level": "A2"},
-  {"english": "Try on", "georgian": "მოზომვა", "pronunciation": "/traɪ ɒn/", "example_en": "Can I try on this jacket?", "example_ka": "შეიძლება ეს ქურთუკი მოვიზომო?", "category": "clothing", "level": "A2"},
-  {"english": "Fitting room", "georgian": "გასახდელი", "pronunciation": "/ˈfɪtɪŋ ruːm/", "example_en": "The fitting room is over there.", "example_ka": "გასახდელი იქაა.", "category": "clothing", "level": "A2"},
-  {"english": "Size", "georgian": "ზომა", "pronunciation": "/saɪz/", "example_en": "What size do you wear?", "example_ka": "რა ზომა გაქვს?", "category": "clothing", "level": "A1"},
-  {"english": "Pattern", "georgian": "ნახატი", "pronunciation": "/ˈpætərn/", "example_en": "I like the floral pattern on this shirt.", "example_ka": "ამ პერანგზე ყვავილის ნახატი მომწონს.", "category": "clothing", "level": "A2"},
-  {"english": "Stripe", "georgian": "ზოლი", "pronunciation": "/straɪp/", "example_en": "He wore a shirt with blue stripes.", "example_ka": "მან ლურჯზოლიანი პერანგი ჩაიცვა.", "category": "clothing", "level": "A2"},
-  {"english": "Polka dot", "georgian": "ბურთულა", "pronunciation": "/ˈpoʊlkə dɒt/", "example_en": "She loves polka dot dresses.", "example_ka": "ის ბურთულებიან კაბებს ითხოვს.", "category": "clothing", "level": "A2"},
-  {"english": "Tailor", "georgian": "მკერავი", "pronunciation": "/ˈteɪlər/", "example_en": "The tailor adjusted my suit.", "example_ka": "მკერავმა ჩემი კოსტუმი შეაკეთა.", "category": "clothing", "level": "B1"},
-  {"english": "Stitch", "georgian": "ნაკერი", "pronunciation": "/stɪtʃ/", "example_en": "The stitch came undone.", "example_ka": "ნაკერი გაიხსნა.", "category": "clothing", "level": "B1"},
-  {"english": "Hem", "georgian": "კალთა", "pronunciation": "/hɛm/", "example_en": "The hem of her dress was too long.", "example_ka": "კაბის კალთა ძალიან გრძელი იყო.", "category": "clothing", "level": "B1"},
-  {"english": "Runway", "georgian": "პოდიუმი", "pronunciation": "/ˈrʌnweɪ/", "example_en": "Models walked down the runway.", "example_ka": "მოდელები პოდიუმზე გამოვიდნენ.", "category": "clothing", "level": "B1"},
-  {"english": "Designer", "georgian": "დიზაინერი", "pronunciation": "/dɪˈzaɪnər/", "example_en": "She works as a fashion designer.", "example_ka": "ის მოდის დიზაინერად მუშაობს.", "category": "clothing", "level": "B1"},
-  {"english": "Embroidery", "georgian": "ნაქარგი", "pronunciation": "/ɪmˈbrɔɪdəri/", "example_en": "The embroidery on the dress was beautiful.", "example_ka": "კაბაზე ნაქარგი ლამაზი იყო.", "category": "clothing", "level": "B1"},
-  {"english": "Laundry", "georgian": "სარეცხი", "pronunciation": "/ˈlɔːndri/", "example_en": "I need to do the laundry.", "example_ka": "სარეცხი უნდა გავრეცხო.", "category": "clothing", "level": "A2"},
-  {"english": "Iron", "georgian": "უთო", "pronunciation": "/ˈaɪərn/", "example_en": "Please iron my shirt.", "example_ka": "პერანგი გამიუთოვე, გთხოვ.", "category": "clothing", "level": "A2"},
-  {"english": "Hanger", "georgian": "საკიდი", "pronunciation": "/ˈhæŋər/", "example_en": "Hang your coat on the hanger.", "example_ka": "პალტო საკიდზე ჩამოკიდე.", "category": "clothing", "level": "A2"},
-  {"english": "Vintage", "georgian": "ვინტაჟური", "pronunciation": "/ˈvɪntɪdʒ/", "example_en": "She loves vintage clothing.", "example_ka": "ის ვინტაჟურ ტანსაცმელს უყვარს.", "category": "clothing", "level": "B1"}
+  {
+    "english": "Shirt",
+    "georgian": "პერანგი",
+    "pronunciation": "/ʃɜːrt/",
+    "example_en": "He wore a white shirt to the office.",
+    "example_ka": "მან თეთრი პერანგი ჩაიცვა ოფისში.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Dress",
+    "georgian": "კაბა",
+    "pronunciation": "/drɛs/",
+    "example_en": "She bought a beautiful dress for the party.",
+    "example_ka": "მან ლამაზი კაბა იყიდა წვეულებისთვის.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Trousers",
+    "georgian": "შარვალი",
+    "pronunciation": "/ˈtraʊzərz/",
+    "example_en": "These trousers are too tight.",
+    "example_ka": "ეს შარვალი ძალიან ვიწროა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Jacket",
+    "georgian": "ქურთუკი",
+    "pronunciation": "/ˈdʒækɪt/",
+    "example_en": "Put on your jacket, it's cold outside.",
+    "example_ka": "ქურთუკი ჩაიცვი, გარეთ ცივა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Skirt",
+    "georgian": "ქვედაკაბა",
+    "pronunciation": "/skɜːrt/",
+    "example_en": "She prefers wearing a skirt in summer.",
+    "example_ka": "ზაფხულში ქვედაკაბის ტარებას ამჯობინებს.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Shoes",
+    "georgian": "ფეხსაცმელი",
+    "pronunciation": "/ʃuːz/",
+    "example_en": "I need new shoes for work.",
+    "example_ka": "სამსახურისთვის ახალი ფეხსაცმელი მჭირდება.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Hat",
+    "georgian": "ქუდი",
+    "pronunciation": "/hæt/",
+    "example_en": "Wear a hat to protect yourself from the sun.",
+    "example_ka": "ქუდი დაიხურე მზისგან დასაცავად.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Socks",
+    "georgian": "წინდები",
+    "pronunciation": "/sɒks/",
+    "example_en": "I always lose one sock in the laundry.",
+    "example_ka": "სარეცხში ყოველთვის ერთ წინდას ვკარგავ.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Coat",
+    "georgian": "პალტო",
+    "pronunciation": "/koʊt/",
+    "example_en": "She wore a warm coat in winter.",
+    "example_ka": "ზამთარში თბილ პალტოს იცვამდა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Gloves",
+    "georgian": "ხელთათმანები",
+    "pronunciation": "/ɡlʌvz/",
+    "example_en": "Don't forget your gloves, it's freezing.",
+    "example_ka": "ხელთათმანები არ დაგავიწყდეს, ყინავს.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Scarf",
+    "georgian": "შარფი",
+    "pronunciation": "/skɑːrf/",
+    "example_en": "She wrapped a scarf around her neck.",
+    "example_ka": "მან შარფი შემოიხვია კისერზე.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Belt",
+    "georgian": "ქამარი",
+    "pronunciation": "/bɛlt/",
+    "example_en": "He tightened his belt.",
+    "example_ka": "მან ქამარი მოიჭირა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Sweater",
+    "georgian": "სვიტერი",
+    "pronunciation": "/ˈswɛtər/",
+    "example_en": "This sweater is very warm.",
+    "example_ka": "ეს სვიტერი ძალიან თბილია.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Boots",
+    "georgian": "ჩექმები",
+    "pronunciation": "/buːts/",
+    "example_en": "She wore boots in the rain.",
+    "example_ka": "წვიმაში ჩექმები ჩაიცვა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Underwear",
+    "georgian": "საცვალი",
+    "pronunciation": "/ˈʌndərwɛr/",
+    "example_en": "Pack enough underwear for the trip.",
+    "example_ka": "მოგზაურობისთვის საკმარისი საცვალი ჩაალაგე.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "T-shirt",
+    "georgian": "მაისური",
+    "pronunciation": "/ˈtiːʃɜːrt/",
+    "example_en": "He wore a plain white T-shirt.",
+    "example_ka": "მან უბრალო თეთრი მაისური ჩაიცვა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Jeans",
+    "georgian": "ჯინსი",
+    "pronunciation": "/dʒiːnz/",
+    "example_en": "Jeans are comfortable for everyday wear.",
+    "example_ka": "ჯინსი ყოველდღიური ტარებისთვის მოსახერხებელია.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Tie",
+    "georgian": "ჰალსტუხი",
+    "pronunciation": "/taɪ/",
+    "example_en": "He learned to tie a tie.",
+    "example_ka": "მან ჰალსტუხის შეკვრა ისწავლა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Pajamas",
+    "georgian": "პიჟამო",
+    "pronunciation": "/pəˈdʒɑːməz/",
+    "example_en": "I put on my pajamas before bed.",
+    "example_ka": "ძილის წინ პიჟამო ჩავიცვი.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Sandals",
+    "georgian": "სანდლები",
+    "pronunciation": "/ˈsændəlz/",
+    "example_en": "Sandals are perfect for the beach.",
+    "example_ka": "სანდლები სანაპიროსთვის იდეალურია.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Fabric",
+    "georgian": "ქსოვილი",
+    "pronunciation": "/ˈfæbrɪk/",
+    "example_en": "This fabric is very soft.",
+    "example_ka": "ეს ქსოვილი ძალიან რბილია.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Cotton",
+    "georgian": "ბამბა",
+    "pronunciation": "/ˈkɒtən/",
+    "example_en": "Cotton is a natural fabric.",
+    "example_ka": "ბამბა ბუნებრივი ქსოვილია.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Silk",
+    "georgian": "აბრეშუმი",
+    "pronunciation": "/sɪlk/",
+    "example_en": "Silk feels smooth on the skin.",
+    "example_ka": "აბრეშუმი კანზე გლუვია.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Wool",
+    "georgian": "მატყლი",
+    "pronunciation": "/wʊl/",
+    "example_en": "This scarf is made of wool.",
+    "example_ka": "ეს შარფი მატყლისგანაა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Leather",
+    "georgian": "ტყავი",
+    "pronunciation": "/ˈlɛðər/",
+    "example_en": "He bought a leather jacket.",
+    "example_ka": "მან ტყავის ქურთუკი იყიდა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Linen",
+    "georgian": "სელი",
+    "pronunciation": "/ˈlɪnɪn/",
+    "example_en": "Linen is great for hot weather.",
+    "example_ka": "სელი ცხელ ამინდში შესანიშნავია.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Velvet",
+    "georgian": "ხავერდი",
+    "pronunciation": "/ˈvɛlvɪt/",
+    "example_en": "The velvet curtains looked luxurious.",
+    "example_ka": "ხავერდის ფარდები ფუფუნებით გამოიყურებოდა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Denim",
+    "georgian": "ჯინსის ქსოვილი",
+    "pronunciation": "/ˈdɛnɪm/",
+    "example_en": "Denim jackets are always in style.",
+    "example_ka": "ჯინსის ქურთუკები ყოველთვის მოდურია.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Bracelet",
+    "georgian": "სამაჯური",
+    "pronunciation": "/ˈbreɪslɪt/",
+    "example_en": "She received a gold bracelet as a gift.",
+    "example_ka": "მან საჩუქრად ოქროს სამაჯური მიიღო.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Necklace",
+    "georgian": "ყელსაბამი",
+    "pronunciation": "/ˈnɛklɪs/",
+    "example_en": "The necklace matched her dress perfectly.",
+    "example_ka": "ყელსაბამი კაბას იდეალურად უხდებოდა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Earrings",
+    "georgian": "საყურეები",
+    "pronunciation": "/ˈɪrɪŋz/",
+    "example_en": "She wore diamond earrings.",
+    "example_ka": "მან ბრილიანტის საყურეები ატარებდა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Ring",
+    "georgian": "ბეჭედი",
+    "pronunciation": "/rɪŋ/",
+    "example_en": "He gave her an engagement ring.",
+    "example_ka": "მან ნიშნობის ბეჭედი აჩუქა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Sunglasses",
+    "georgian": "სათვალე",
+    "pronunciation": "/ˈsʌnɡlæsɪz/",
+    "example_en": "Don't forget your sunglasses.",
+    "example_ka": "სათვალე არ დაგავიწყდეს.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Handbag",
+    "georgian": "ჩანთა",
+    "pronunciation": "/ˈhændbæɡ/",
+    "example_en": "She carries a large handbag.",
+    "example_ka": "ის დიდ ჩანთას ატარებს.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Wallet",
+    "georgian": "საფულე",
+    "pronunciation": "/ˈwɒlɪt/",
+    "example_en": "He lost his wallet on the bus.",
+    "example_ka": "ავტობუსში საფულე დაკარგა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Zipper",
+    "georgian": "ელვა-შესაკრავი",
+    "pronunciation": "/ˈzɪpər/",
+    "example_en": "The zipper on my jacket is broken.",
+    "example_ka": "ქურთუკის ელვა-შესაკრავი გაფუჭებულია.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Button",
+    "georgian": "ღილი",
+    "pronunciation": "/ˈbʌtən/",
+    "example_en": "A button fell off my shirt.",
+    "example_ka": "პერანგს ღილი მოსწყდა.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Pocket",
+    "georgian": "ჯიბე",
+    "pronunciation": "/ˈpɒkɪt/",
+    "example_en": "He put the keys in his pocket.",
+    "example_ka": "მან გასაღებები ჯიბეში ჩადო.",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Sleeve",
+    "georgian": "სახელო",
+    "pronunciation": "/sliːv/",
+    "example_en": "He rolled up his sleeves.",
+    "example_ka": "მან სახელოები აიკეცა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Collar",
+    "georgian": "საყელო",
+    "pronunciation": "/ˈkɒlər/",
+    "example_en": "The shirt has a stiff collar.",
+    "example_ka": "პერანგს მაგარი საყელო აქვს.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Fashion",
+    "georgian": "მოდა",
+    "pronunciation": "/ˈfæʃən/",
+    "example_en": "Fashion trends change every season.",
+    "example_ka": "მოდის ტენდენციები ყოველ სეზონზე იცვლება.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Style",
+    "georgian": "სტილი",
+    "pronunciation": "/staɪl/",
+    "example_en": "She has a unique style.",
+    "example_ka": "მას უნიკალური სტილი აქვს.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Outfit",
+    "georgian": "ტანსაცმლის კომპლექტი",
+    "pronunciation": "/ˈaʊtfɪt/",
+    "example_en": "That outfit looks great on you.",
+    "example_ka": "ეს ტანსაცმლის კომპლექტი შენზე მშვენიერად გამოიყურება.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Wardrobe",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈwɔːrdroʊb/",
+    "example_en": "Her wardrobe is full of dresses.",
+    "example_ka": "მისი კარადა კაბებით სავსეა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Try on",
+    "georgian": "მოზომვა",
+    "pronunciation": "/traɪ ɒn/",
+    "example_en": "Can I try on this jacket?",
+    "example_ka": "შეიძლება ეს ქურთუკი მოვიზომო?",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Fitting room",
+    "georgian": "გასახდელი",
+    "pronunciation": "/ˈfɪtɪŋ ruːm/",
+    "example_en": "The fitting room is over there.",
+    "example_ka": "გასახდელი იქაა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Size",
+    "georgian": "ზომა",
+    "pronunciation": "/saɪz/",
+    "example_en": "What size do you wear?",
+    "example_ka": "რა ზომა გაქვს?",
+    "category": "clothing",
+    "level": "A1"
+  },
+  {
+    "english": "Pattern",
+    "georgian": "ნახატი",
+    "pronunciation": "/ˈpætərn/",
+    "example_en": "I like the floral pattern on this shirt.",
+    "example_ka": "ამ პერანგზე ყვავილის ნახატი მომწონს.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Stripe",
+    "georgian": "ზოლი",
+    "pronunciation": "/straɪp/",
+    "example_en": "He wore a shirt with blue stripes.",
+    "example_ka": "მან ლურჯზოლიანი პერანგი ჩაიცვა.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Polka dot",
+    "georgian": "ბურთულა",
+    "pronunciation": "/ˈpoʊlkə dɒt/",
+    "example_en": "She loves polka dot dresses.",
+    "example_ka": "ის ბურთულებიან კაბებს ითხოვს.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Tailor",
+    "georgian": "მკერავი",
+    "pronunciation": "/ˈteɪlər/",
+    "example_en": "The tailor adjusted my suit.",
+    "example_ka": "მკერავმა ჩემი კოსტუმი შეაკეთა.",
+    "category": "clothing",
+    "level": "B1"
+  },
+  {
+    "english": "Stitch",
+    "georgian": "ნაკერი",
+    "pronunciation": "/stɪtʃ/",
+    "example_en": "The stitch came undone.",
+    "example_ka": "ნაკერი გაიხსნა.",
+    "category": "clothing",
+    "level": "B1"
+  },
+  {
+    "english": "Hem",
+    "georgian": "კალთა",
+    "pronunciation": "/hɛm/",
+    "example_en": "The hem of her dress was too long.",
+    "example_ka": "კაბის კალთა ძალიან გრძელი იყო.",
+    "category": "clothing",
+    "level": "B1"
+  },
+  {
+    "english": "Runway",
+    "georgian": "პოდიუმი",
+    "pronunciation": "/ˈrʌnweɪ/",
+    "example_en": "Models walked down the runway.",
+    "example_ka": "მოდელები პოდიუმზე გამოვიდნენ.",
+    "category": "clothing",
+    "level": "B1"
+  },
+  {
+    "english": "Designer",
+    "georgian": "დიზაინერი",
+    "pronunciation": "/dɪˈzaɪnər/",
+    "example_en": "She works as a fashion designer.",
+    "example_ka": "ის მოდის დიზაინერად მუშაობს.",
+    "category": "clothing",
+    "level": "B1"
+  },
+  {
+    "english": "Embroidery",
+    "georgian": "ნაქარგი",
+    "pronunciation": "/ɪmˈbrɔɪdəri/",
+    "example_en": "The embroidery on the dress was beautiful.",
+    "example_ka": "კაბაზე ნაქარგი ლამაზი იყო.",
+    "category": "clothing",
+    "level": "B1"
+  },
+  {
+    "english": "Laundry",
+    "georgian": "სარეცხი",
+    "pronunciation": "/ˈlɔːndri/",
+    "example_en": "I need to do the laundry.",
+    "example_ka": "სარეცხი უნდა გავრეცხო.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Iron",
+    "georgian": "უთო",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "Please iron my shirt.",
+    "example_ka": "პერანგი გამიუთოვე, გთხოვ.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Hanger",
+    "georgian": "საკიდი",
+    "pronunciation": "/ˈhæŋər/",
+    "example_en": "Hang your coat on the hanger.",
+    "example_ka": "პალტო საკიდზე ჩამოკიდე.",
+    "category": "clothing",
+    "level": "A2"
+  },
+  {
+    "english": "Vintage",
+    "georgian": "ვინტაჟური",
+    "pronunciation": "/ˈvɪntɪdʒ/",
+    "example_en": "She loves vintage clothing.",
+    "example_ka": "ის ვინტაჟურ ტანსაცმელს უყვარს.",
+    "category": "clothing",
+    "level": "B1"
+  },
+  {
+    "english": "pants",
+    "georgian": "შარვალი",
+    "pronunciation": "/pænts/",
+    "example_en": "These pants are too tight.",
+    "example_ka": "ეს შარვალი ძალიან ვიწროა.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "shorts",
+    "georgian": "შორტი",
+    "pronunciation": "/ʃɔːrts/",
+    "example_en": "I wear shorts when it's hot.",
+    "example_ka": "ცხელ ამინდში შორტს ვიცვამ.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "umbrella",
+    "georgian": "ქოლგა",
+    "pronunciation": "/ʌmˈbrelə/",
+    "example_en": "Take an umbrella, it might rain.",
+    "example_ka": "ქოლგა წაიღე, შეიძლება იწვიმოს.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "purse",
+    "georgian": "ჩანთა",
+    "pronunciation": "/pɜːrs/",
+    "example_en": "She put the keys in her purse.",
+    "example_ka": "მან გასაღებები ჩანთაში ჩადო.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "backpack",
+    "georgian": "ზურგჩანთა",
+    "pronunciation": "/ˈbækpæk/",
+    "example_en": "I carry my books in a backpack.",
+    "example_ka": "წიგნებს ზურგჩანთაში ვატარებ.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "watch",
+    "georgian": "საათი",
+    "pronunciation": "/wɒtʃ/",
+    "example_en": "He bought an expensive watch.",
+    "example_ka": "მან ძვირი საათი იყიდა.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "suit",
+    "georgian": "კოსტიუმი",
+    "pronunciation": "/suːt/",
+    "example_en": "He wore a suit to the interview.",
+    "example_ka": "გასაუბრებაზე კოსტიუმი ჩაიცვა.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "uniform",
+    "georgian": "უნიფორმა",
+    "pronunciation": "/ˈjuːnɪfɔːrm/",
+    "example_en": "Students wear uniforms at school.",
+    "example_ka": "მოსწავლეები სკოლაში უნიფორმას ატარებენ.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "fit",
+    "georgian": "მოხდენა",
+    "pronunciation": "/fɪt/",
+    "example_en": "These shoes fit perfectly.",
+    "example_ka": "ეს ფეხსაცმელი იდეალურად მომიხდა.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "stylish",
+    "georgian": "მოდური",
+    "pronunciation": "/ˈstaɪlɪʃ/",
+    "example_en": "Your outfit is very stylish.",
+    "example_ka": "შენი ტანსაცმელი ძალიან მოდურია.",
+    "category": "clothes-fashion",
+    "level": "intermediate"
+  },
+  {
+    "english": "tight",
+    "georgian": "ვიწრო",
+    "pronunciation": "/taɪt/",
+    "example_en": "These jeans are too tight for me.",
+    "example_ka": "ეს ჯინსი ჩემთვის ძალიან ვიწროა.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  },
+  {
+    "english": "loose",
+    "georgian": "ფართო",
+    "pronunciation": "/luːs/",
+    "example_en": "I like wearing loose clothes.",
+    "example_ka": "ფართო ტანსაცმლის ტარება მიყვარს.",
+    "category": "clothes-fashion",
+    "level": "beginner"
+  }
 ]

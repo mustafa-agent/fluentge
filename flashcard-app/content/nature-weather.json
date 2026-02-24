@@ -1,62 +1,812 @@
 [
-  {"english":"sun","georgian":"მზე","pronunciation":"/sʌn/","example_en":"The sun is shining brightly.","example_ka":"მზე კაშკაშად ანათებს.","category":"nature-weather","level":"intermediate"},
-  {"english":"moon","georgian":"მთვარე","pronunciation":"/muːn/","example_en":"The moon is full tonight.","example_ka":"ამ ღამით მთვარე სავსეა.","category":"nature-weather","level":"intermediate"},
-  {"english":"star","georgian":"ვარსკვლავი","pronunciation":"/stɑːr/","example_en":"The stars are beautiful tonight.","example_ka":"ამ ღამით ვარსკვლავები ლამაზია.","category":"nature-weather","level":"intermediate"},
-  {"english":"sky","georgian":"ცა","pronunciation":"/skaɪ/","example_en":"The sky is clear today.","example_ka":"დღეს ცა ნათელია.","category":"nature-weather","level":"intermediate"},
-  {"english":"cloud","georgian":"ღრუბელი","pronunciation":"/klaʊd/","example_en":"Dark clouds are coming.","example_ka":"მუქი ღრუბლები მოდის.","category":"nature-weather","level":"intermediate"},
-  {"english":"rain","georgian":"წვიმა","pronunciation":"/reɪn/","example_en":"It's going to rain tomorrow.","example_ka":"ხვალ წვიმა იქნება.","category":"nature-weather","level":"intermediate"},
-  {"english":"snow","georgian":"თოვლი","pronunciation":"/snəʊ/","example_en":"It's snowing outside.","example_ka":"გარეთ თოვლი მოდის.","category":"nature-weather","level":"intermediate"},
-  {"english":"wind","georgian":"ქარი","pronunciation":"/wɪnd/","example_en":"The wind is very strong today.","example_ka":"დღეს ქარი ძალიან ძლიერია.","category":"nature-weather","level":"intermediate"},
-  {"english":"storm","georgian":"ქარიშხალი","pronunciation":"/stɔːrm/","example_en":"A big storm is coming.","example_ka":"დიდი ქარიშხალი მოდის.","category":"nature-weather","level":"intermediate"},
-  {"english":"thunder","georgian":"ჭექა-ქუხილი","pronunciation":"/ˈθʌndər/","example_en":"I heard thunder last night.","example_ka":"გუშინ ღამით ჭექა-ქუხილი მოვისმინე.","category":"nature-weather","level":"intermediate"},
-  {"english":"lightning","georgian":"ელვა","pronunciation":"/ˈlaɪtnɪŋ/","example_en":"Lightning struck the tree.","example_ka":"ელვამ ხეს მოხვდა.","category":"nature-weather","level":"intermediate"},
-  {"english":"fog","georgian":"ნისლი","pronunciation":"/fɒɡ/","example_en":"There is thick fog this morning.","example_ka":"დილით სქელი ნისლია.","category":"nature-weather","level":"intermediate"},
-  {"english":"rainbow","georgian":"ცისარტყელა","pronunciation":"/ˈreɪnbəʊ/","example_en":"Look at the beautiful rainbow!","example_ka":"ნახე რა ლამაზი ცისარტყელაა!","category":"nature-weather","level":"intermediate"},
-  {"english":"temperature","georgian":"ტემპერატურა","pronunciation":"/ˈtemprətʃər/","example_en":"The temperature dropped below zero.","example_ka":"ტემპერატურა ნულს ქვემოთ დაეცა.","category":"nature-weather","level":"intermediate"},
-  {"english":"hot","georgian":"ცხელი","pronunciation":"/hɒt/","example_en":"It's very hot in summer.","example_ka":"ზაფხულში ძალიან ცხელა.","category":"nature-weather","level":"intermediate"},
-  {"english":"cold","georgian":"ცივი","pronunciation":"/kəʊld/","example_en":"It's cold outside.","example_ka":"გარეთ ცივა.","category":"nature-weather","level":"intermediate"},
-  {"english":"warm","georgian":"თბილი","pronunciation":"/wɔːrm/","example_en":"The weather is warm today.","example_ka":"დღეს ამინდი თბილია.","category":"nature-weather","level":"intermediate"},
-  {"english":"cool","georgian":"გრილი","pronunciation":"/kuːl/","example_en":"The evenings are cool in autumn.","example_ka":"შემოდგომაზე საღამოები გრილია.","category":"nature-weather","level":"intermediate"},
-  {"english":"humid","georgian":"ნოტიო","pronunciation":"/ˈhjuːmɪd/","example_en":"The air is very humid today.","example_ka":"დღეს ჰაერი ძალიან ნოტიოა.","category":"nature-weather","level":"intermediate"},
-  {"english":"dry","georgian":"მშრალი","pronunciation":"/draɪ/","example_en":"The climate here is very dry.","example_ka":"აქ კლიმატი ძალიან მშრალია.","category":"nature-weather","level":"intermediate"},
-  {"english":"flood","georgian":"წყალდიდობა","pronunciation":"/flʌd/","example_en":"The flood destroyed many houses.","example_ka":"წყალდიდობამ ბევრი სახლი დაანგრია.","category":"nature-weather","level":"intermediate"},
-  {"english":"drought","georgian":"გვალვა","pronunciation":"/draʊt/","example_en":"The drought lasted for months.","example_ka":"გვალვა თვეების განმავლობაში გაგრძელდა.","category":"nature-weather","level":"intermediate"},
-  {"english":"earthquake","georgian":"მიწისძვრა","pronunciation":"/ˈɜːrθkweɪk/","example_en":"There was an earthquake last night.","example_ka":"გუშინ ღამით მიწისძვრა იყო.","category":"nature-weather","level":"intermediate"},
-  {"english":"forest","georgian":"ტყე","pronunciation":"/ˈfɒrɪst/","example_en":"The forest is full of animals.","example_ka":"ტყე ცხოველებით არის სავსე.","category":"nature-weather","level":"intermediate"},
-  {"english":"tree","georgian":"ხე","pronunciation":"/triː/","example_en":"The tree is very old.","example_ka":"ხე ძალიან ძველია.","category":"nature-weather","level":"intermediate"},
-  {"english":"flower","georgian":"ყვავილი","pronunciation":"/ˈflaʊər/","example_en":"The flowers bloom in spring.","example_ka":"გაზაფხულზე ყვავილები იფურჩქნება.","category":"nature-weather","level":"intermediate"},
-  {"english":"grass","georgian":"ბალახი","pronunciation":"/ɡrɑːs/","example_en":"The grass is green after the rain.","example_ka":"წვიმის შემდეგ ბალახი მწვანეა.","category":"nature-weather","level":"intermediate"},
-  {"english":"leaf","georgian":"ფოთოლი","pronunciation":"/liːf/","example_en":"The leaves fall in autumn.","example_ka":"შემოდგომაზე ფოთლები ცვივა.","category":"nature-weather","level":"intermediate"},
-  {"english":"river","georgian":"მდინარე","pronunciation":"/ˈrɪvər/","example_en":"The river flows through the city.","example_ka":"მდინარე ქალაქში გადის.","category":"nature-weather","level":"intermediate"},
-  {"english":"lake","georgian":"ტბა","pronunciation":"/leɪk/","example_en":"We swam in the lake.","example_ka":"ტბაში ვიბანავეთ.","category":"nature-weather","level":"intermediate"},
-  {"english":"sea","georgian":"ზღვა","pronunciation":"/siː/","example_en":"The sea is calm today.","example_ka":"დღეს ზღვა მშვიდია.","category":"nature-weather","level":"intermediate"},
-  {"english":"ocean","georgian":"ოკეანე","pronunciation":"/ˈəʊʃən/","example_en":"The Pacific Ocean is the largest.","example_ka":"წყნარი ოკეანე ყველაზე დიდია.","category":"nature-weather","level":"intermediate"},
-  {"english":"mountain","georgian":"მთა","pronunciation":"/ˈmaʊntɪn/","example_en":"We climbed the mountain.","example_ka":"მთაზე ავედით.","category":"nature-weather","level":"intermediate"},
-  {"english":"valley","georgian":"ხეობა","pronunciation":"/ˈvæli/","example_en":"The valley is beautiful in spring.","example_ka":"გაზაფხულზე ხეობა ლამაზია.","category":"nature-weather","level":"intermediate"},
-  {"english":"hill","georgian":"ბორცვი","pronunciation":"/hɪl/","example_en":"The house is on the hill.","example_ka":"სახლი ბორცვზეა.","category":"nature-weather","level":"intermediate"},
-  {"english":"island","georgian":"კუნძული","pronunciation":"/ˈaɪlənd/","example_en":"We visited a tropical island.","example_ka":"ტროპიკულ კუნძულს ვეწვიეთ.","category":"nature-weather","level":"intermediate"},
-  {"english":"desert","georgian":"უდაბნო","pronunciation":"/ˈdezərt/","example_en":"The desert is very hot during the day.","example_ka":"დღისით უდაბნოში ძალიან ცხელა.","category":"nature-weather","level":"intermediate"},
-  {"english":"cave","georgian":"გამოქვაბული","pronunciation":"/keɪv/","example_en":"We explored a dark cave.","example_ka":"ბნელი გამოქვაბული დავათვალიერეთ.","category":"nature-weather","level":"intermediate"},
-  {"english":"waterfall","georgian":"ჩანჩქერი","pronunciation":"/ˈwɔːtərfɔːl/","example_en":"The waterfall is stunning.","example_ka":"ჩანჩქერი თვალწარმტაცია.","category":"nature-weather","level":"intermediate"},
-  {"english":"soil","georgian":"ნიადაგი","pronunciation":"/sɔɪl/","example_en":"The soil here is very fertile.","example_ka":"აქ ნიადაგი ძალიან ნაყოფიერია.","category":"nature-weather","level":"intermediate"},
-  {"english":"rock","georgian":"კლდე","pronunciation":"/rɒk/","example_en":"Be careful of the rocks.","example_ka":"კლდეებს უფრთხილდით.","category":"nature-weather","level":"intermediate"},
-  {"english":"beach","georgian":"სანაპირო","pronunciation":"/biːtʃ/","example_en":"We spent the day at the beach.","example_ka":"დღე სანაპიროზე გავატარეთ.","category":"nature-weather","level":"intermediate"},
-  {"english":"wave","georgian":"ტალღა","pronunciation":"/weɪv/","example_en":"The waves are very big today.","example_ka":"დღეს ტალღები ძალიან დიდია.","category":"nature-weather","level":"intermediate"},
-  {"english":"bird","georgian":"ჩიტი","pronunciation":"/bɜːrd/","example_en":"The birds are singing.","example_ka":"ჩიტები მღერიან.","category":"nature-weather","level":"intermediate"},
-  {"english":"fish","georgian":"თევზი","pronunciation":"/fɪʃ/","example_en":"There are many fish in the river.","example_ka":"მდინარეში ბევრი თევზია.","category":"nature-weather","level":"intermediate"},
-  {"english":"animal","georgian":"ცხოველი","pronunciation":"/ˈænɪməl/","example_en":"Wild animals live in the forest.","example_ka":"ველური ცხოველები ტყეში ცხოვრობენ.","category":"nature-weather","level":"intermediate"},
-  {"english":"insect","georgian":"მწერი","pronunciation":"/ˈɪnsekt/","example_en":"There are many insects in summer.","example_ka":"ზაფხულში ბევრი მწერია.","category":"nature-weather","level":"intermediate"},
-  {"english":"plant","georgian":"მცენარე","pronunciation":"/plɑːnt/","example_en":"Water the plants every day.","example_ka":"მცენარეები ყოველდღე მორწყეთ.","category":"nature-weather","level":"intermediate"},
-  {"english":"seed","georgian":"თესლი","pronunciation":"/siːd/","example_en":"Plant the seeds in spring.","example_ka":"გაზაფხულზე თესლი დათესეთ.","category":"nature-weather","level":"intermediate"},
-  {"english":"harvest","georgian":"მოსავალი","pronunciation":"/ˈhɑːrvɪst/","example_en":"The harvest was very good this year.","example_ka":"წელს მოსავალი ძალიან კარგი იყო.","category":"nature-weather","level":"intermediate"},
-  {"english":"climate","georgian":"კლიმატი","pronunciation":"/ˈklaɪmət/","example_en":"The climate is changing rapidly.","example_ka":"კლიმატი სწრაფად იცვლება.","category":"nature-weather","level":"intermediate"},
-  {"english":"pollution","georgian":"დაბინძურება","pronunciation":"/pəˈluːʃən/","example_en":"Air pollution is a big problem.","example_ka":"ჰაერის დაბინძურება დიდი პრობლემაა.","category":"nature-weather","level":"intermediate"},
-  {"english":"environment","georgian":"გარემო","pronunciation":"/ɪnˈvaɪrənmənt/","example_en":"We must protect the environment.","example_ka":"გარემოს დაცვა გვმართებს.","category":"nature-weather","level":"intermediate"},
-  {"english":"recycle","georgian":"გადამუშავება","pronunciation":"/riːˈsaɪkəl/","example_en":"Please recycle your plastic bottles.","example_ka":"გთხოვთ, პლასტმასის ბოთლები გადაამუშავეთ.","category":"nature-weather","level":"intermediate"},
-  {"english":"natural","georgian":"ბუნებრივი","pronunciation":"/ˈnætʃərəl/","example_en":"This product is made from natural ingredients.","example_ka":"ეს პროდუქტი ბუნებრივი ინგრედიენტებისგანაა.","category":"nature-weather","level":"intermediate"},
-  {"english":"wild","georgian":"ველური","pronunciation":"/waɪld/","example_en":"Wild flowers grow in the meadow.","example_ka":"ველური ყვავილები მდელოში იზრდება.","category":"nature-weather","level":"intermediate"},
-  {"english":"season","georgian":"სეზონი","pronunciation":"/ˈsiːzən/","example_en":"Spring is my favorite season.","example_ka":"გაზაფხული ჩემი საყვარელი სეზონია.","category":"nature-weather","level":"intermediate"},
-  {"english":"spring","georgian":"გაზაფხული","pronunciation":"/sprɪŋ/","example_en":"Flowers bloom in spring.","example_ka":"გაზაფხულზე ყვავილები იფურჩქნება.","category":"nature-weather","level":"intermediate"},
-  {"english":"summer","georgian":"ზაფხული","pronunciation":"/ˈsʌmər/","example_en":"Summer is the hottest season.","example_ka":"ზაფხული ყველაზე ცხელი სეზონია.","category":"nature-weather","level":"intermediate"},
-  {"english":"autumn","georgian":"შემოდგომა","pronunciation":"/ˈɔːtəm/","example_en":"Leaves change color in autumn.","example_ka":"შემოდგომაზე ფოთლები ფერს იცვლის.","category":"nature-weather","level":"intermediate"}
+  {
+    "english": "sun",
+    "georgian": "მზე",
+    "pronunciation": "/sʌn/",
+    "example_en": "The sun is shining brightly.",
+    "example_ka": "მზე კაშკაშად ანათებს.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "moon",
+    "georgian": "მთვარე",
+    "pronunciation": "/muːn/",
+    "example_en": "The moon is full tonight.",
+    "example_ka": "ამ ღამით მთვარე სავსეა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "star",
+    "georgian": "ვარსკვლავი",
+    "pronunciation": "/stɑːr/",
+    "example_en": "The stars are beautiful tonight.",
+    "example_ka": "ამ ღამით ვარსკვლავები ლამაზია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "sky",
+    "georgian": "ცა",
+    "pronunciation": "/skaɪ/",
+    "example_en": "The sky is clear today.",
+    "example_ka": "დღეს ცა ნათელია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "cloud",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/klaʊd/",
+    "example_en": "Dark clouds are coming.",
+    "example_ka": "მუქი ღრუბლები მოდის.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "rain",
+    "georgian": "წვიმა",
+    "pronunciation": "/reɪn/",
+    "example_en": "It's going to rain tomorrow.",
+    "example_ka": "ხვალ წვიმა იქნება.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "snow",
+    "georgian": "თოვლი",
+    "pronunciation": "/snəʊ/",
+    "example_en": "It's snowing outside.",
+    "example_ka": "გარეთ თოვლი მოდის.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "wind",
+    "georgian": "ქარი",
+    "pronunciation": "/wɪnd/",
+    "example_en": "The wind is very strong today.",
+    "example_ka": "დღეს ქარი ძალიან ძლიერია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "storm",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/stɔːrm/",
+    "example_en": "A big storm is coming.",
+    "example_ka": "დიდი ქარიშხალი მოდის.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "thunder",
+    "georgian": "ჭექა-ქუხილი",
+    "pronunciation": "/ˈθʌndər/",
+    "example_en": "I heard thunder last night.",
+    "example_ka": "გუშინ ღამით ჭექა-ქუხილი მოვისმინე.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "lightning",
+    "georgian": "ელვა",
+    "pronunciation": "/ˈlaɪtnɪŋ/",
+    "example_en": "Lightning struck the tree.",
+    "example_ka": "ელვამ ხეს მოხვდა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "fog",
+    "georgian": "ნისლი",
+    "pronunciation": "/fɒɡ/",
+    "example_en": "There is thick fog this morning.",
+    "example_ka": "დილით სქელი ნისლია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "rainbow",
+    "georgian": "ცისარტყელა",
+    "pronunciation": "/ˈreɪnbəʊ/",
+    "example_en": "Look at the beautiful rainbow!",
+    "example_ka": "ნახე რა ლამაზი ცისარტყელაა!",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "temperature",
+    "georgian": "ტემპერატურა",
+    "pronunciation": "/ˈtemprətʃər/",
+    "example_en": "The temperature dropped below zero.",
+    "example_ka": "ტემპერატურა ნულს ქვემოთ დაეცა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "hot",
+    "georgian": "ცხელი",
+    "pronunciation": "/hɒt/",
+    "example_en": "It's very hot in summer.",
+    "example_ka": "ზაფხულში ძალიან ცხელა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "cold",
+    "georgian": "ცივი",
+    "pronunciation": "/kəʊld/",
+    "example_en": "It's cold outside.",
+    "example_ka": "გარეთ ცივა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "warm",
+    "georgian": "თბილი",
+    "pronunciation": "/wɔːrm/",
+    "example_en": "The weather is warm today.",
+    "example_ka": "დღეს ამინდი თბილია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "cool",
+    "georgian": "გრილი",
+    "pronunciation": "/kuːl/",
+    "example_en": "The evenings are cool in autumn.",
+    "example_ka": "შემოდგომაზე საღამოები გრილია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "humid",
+    "georgian": "ნოტიო",
+    "pronunciation": "/ˈhjuːmɪd/",
+    "example_en": "The air is very humid today.",
+    "example_ka": "დღეს ჰაერი ძალიან ნოტიოა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "dry",
+    "georgian": "მშრალი",
+    "pronunciation": "/draɪ/",
+    "example_en": "The climate here is very dry.",
+    "example_ka": "აქ კლიმატი ძალიან მშრალია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "flood",
+    "georgian": "წყალდიდობა",
+    "pronunciation": "/flʌd/",
+    "example_en": "The flood destroyed many houses.",
+    "example_ka": "წყალდიდობამ ბევრი სახლი დაანგრია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "drought",
+    "georgian": "გვალვა",
+    "pronunciation": "/draʊt/",
+    "example_en": "The drought lasted for months.",
+    "example_ka": "გვალვა თვეების განმავლობაში გაგრძელდა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "earthquake",
+    "georgian": "მიწისძვრა",
+    "pronunciation": "/ˈɜːrθkweɪk/",
+    "example_en": "There was an earthquake last night.",
+    "example_ka": "გუშინ ღამით მიწისძვრა იყო.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "forest",
+    "georgian": "ტყე",
+    "pronunciation": "/ˈfɒrɪst/",
+    "example_en": "The forest is full of animals.",
+    "example_ka": "ტყე ცხოველებით არის სავსე.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "tree",
+    "georgian": "ხე",
+    "pronunciation": "/triː/",
+    "example_en": "The tree is very old.",
+    "example_ka": "ხე ძალიან ძველია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "flower",
+    "georgian": "ყვავილი",
+    "pronunciation": "/ˈflaʊər/",
+    "example_en": "The flowers bloom in spring.",
+    "example_ka": "გაზაფხულზე ყვავილები იფურჩქნება.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "grass",
+    "georgian": "ბალახი",
+    "pronunciation": "/ɡrɑːs/",
+    "example_en": "The grass is green after the rain.",
+    "example_ka": "წვიმის შემდეგ ბალახი მწვანეა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "leaf",
+    "georgian": "ფოთოლი",
+    "pronunciation": "/liːf/",
+    "example_en": "The leaves fall in autumn.",
+    "example_ka": "შემოდგომაზე ფოთლები ცვივა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "river",
+    "georgian": "მდინარე",
+    "pronunciation": "/ˈrɪvər/",
+    "example_en": "The river flows through the city.",
+    "example_ka": "მდინარე ქალაქში გადის.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "lake",
+    "georgian": "ტბა",
+    "pronunciation": "/leɪk/",
+    "example_en": "We swam in the lake.",
+    "example_ka": "ტბაში ვიბანავეთ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "sea",
+    "georgian": "ზღვა",
+    "pronunciation": "/siː/",
+    "example_en": "The sea is calm today.",
+    "example_ka": "დღეს ზღვა მშვიდია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "ocean",
+    "georgian": "ოკეანე",
+    "pronunciation": "/ˈəʊʃən/",
+    "example_en": "The Pacific Ocean is the largest.",
+    "example_ka": "წყნარი ოკეანე ყველაზე დიდია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "mountain",
+    "georgian": "მთა",
+    "pronunciation": "/ˈmaʊntɪn/",
+    "example_en": "We climbed the mountain.",
+    "example_ka": "მთაზე ავედით.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "valley",
+    "georgian": "ხეობა",
+    "pronunciation": "/ˈvæli/",
+    "example_en": "The valley is beautiful in spring.",
+    "example_ka": "გაზაფხულზე ხეობა ლამაზია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "hill",
+    "georgian": "ბორცვი",
+    "pronunciation": "/hɪl/",
+    "example_en": "The house is on the hill.",
+    "example_ka": "სახლი ბორცვზეა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "island",
+    "georgian": "კუნძული",
+    "pronunciation": "/ˈaɪlənd/",
+    "example_en": "We visited a tropical island.",
+    "example_ka": "ტროპიკულ კუნძულს ვეწვიეთ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "desert",
+    "georgian": "უდაბნო",
+    "pronunciation": "/ˈdezərt/",
+    "example_en": "The desert is very hot during the day.",
+    "example_ka": "დღისით უდაბნოში ძალიან ცხელა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "cave",
+    "georgian": "გამოქვაბული",
+    "pronunciation": "/keɪv/",
+    "example_en": "We explored a dark cave.",
+    "example_ka": "ბნელი გამოქვაბული დავათვალიერეთ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "waterfall",
+    "georgian": "ჩანჩქერი",
+    "pronunciation": "/ˈwɔːtərfɔːl/",
+    "example_en": "The waterfall is stunning.",
+    "example_ka": "ჩანჩქერი თვალწარმტაცია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "soil",
+    "georgian": "ნიადაგი",
+    "pronunciation": "/sɔɪl/",
+    "example_en": "The soil here is very fertile.",
+    "example_ka": "აქ ნიადაგი ძალიან ნაყოფიერია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "rock",
+    "georgian": "კლდე",
+    "pronunciation": "/rɒk/",
+    "example_en": "Be careful of the rocks.",
+    "example_ka": "კლდეებს უფრთხილდით.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "beach",
+    "georgian": "სანაპირო",
+    "pronunciation": "/biːtʃ/",
+    "example_en": "We spent the day at the beach.",
+    "example_ka": "დღე სანაპიროზე გავატარეთ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "wave",
+    "georgian": "ტალღა",
+    "pronunciation": "/weɪv/",
+    "example_en": "The waves are very big today.",
+    "example_ka": "დღეს ტალღები ძალიან დიდია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "bird",
+    "georgian": "ჩიტი",
+    "pronunciation": "/bɜːrd/",
+    "example_en": "The birds are singing.",
+    "example_ka": "ჩიტები მღერიან.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "There are many fish in the river.",
+    "example_ka": "მდინარეში ბევრი თევზია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "animal",
+    "georgian": "ცხოველი",
+    "pronunciation": "/ˈænɪməl/",
+    "example_en": "Wild animals live in the forest.",
+    "example_ka": "ველური ცხოველები ტყეში ცხოვრობენ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "insect",
+    "georgian": "მწერი",
+    "pronunciation": "/ˈɪnsekt/",
+    "example_en": "There are many insects in summer.",
+    "example_ka": "ზაფხულში ბევრი მწერია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "plant",
+    "georgian": "მცენარე",
+    "pronunciation": "/plɑːnt/",
+    "example_en": "Water the plants every day.",
+    "example_ka": "მცენარეები ყოველდღე მორწყეთ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "seed",
+    "georgian": "თესლი",
+    "pronunciation": "/siːd/",
+    "example_en": "Plant the seeds in spring.",
+    "example_ka": "გაზაფხულზე თესლი დათესეთ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "harvest",
+    "georgian": "მოსავალი",
+    "pronunciation": "/ˈhɑːrvɪst/",
+    "example_en": "The harvest was very good this year.",
+    "example_ka": "წელს მოსავალი ძალიან კარგი იყო.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "climate",
+    "georgian": "კლიმატი",
+    "pronunciation": "/ˈklaɪmət/",
+    "example_en": "The climate is changing rapidly.",
+    "example_ka": "კლიმატი სწრაფად იცვლება.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "pollution",
+    "georgian": "დაბინძურება",
+    "pronunciation": "/pəˈluːʃən/",
+    "example_en": "Air pollution is a big problem.",
+    "example_ka": "ჰაერის დაბინძურება დიდი პრობლემაა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "environment",
+    "georgian": "გარემო",
+    "pronunciation": "/ɪnˈvaɪrənmənt/",
+    "example_en": "We must protect the environment.",
+    "example_ka": "გარემოს დაცვა გვმართებს.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "recycle",
+    "georgian": "გადამუშავება",
+    "pronunciation": "/riːˈsaɪkəl/",
+    "example_en": "Please recycle your plastic bottles.",
+    "example_ka": "გთხოვთ, პლასტმასის ბოთლები გადაამუშავეთ.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "natural",
+    "georgian": "ბუნებრივი",
+    "pronunciation": "/ˈnætʃərəl/",
+    "example_en": "This product is made from natural ingredients.",
+    "example_ka": "ეს პროდუქტი ბუნებრივი ინგრედიენტებისგანაა.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "wild",
+    "georgian": "ველური",
+    "pronunciation": "/waɪld/",
+    "example_en": "Wild flowers grow in the meadow.",
+    "example_ka": "ველური ყვავილები მდელოში იზრდება.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "season",
+    "georgian": "სეზონი",
+    "pronunciation": "/ˈsiːzən/",
+    "example_en": "Spring is my favorite season.",
+    "example_ka": "გაზაფხული ჩემი საყვარელი სეზონია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "spring",
+    "georgian": "გაზაფხული",
+    "pronunciation": "/sprɪŋ/",
+    "example_en": "Flowers bloom in spring.",
+    "example_ka": "გაზაფხულზე ყვავილები იფურჩქნება.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "summer",
+    "georgian": "ზაფხული",
+    "pronunciation": "/ˈsʌmər/",
+    "example_en": "Summer is the hottest season.",
+    "example_ka": "ზაფხული ყველაზე ცხელი სეზონია.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "autumn",
+    "georgian": "შემოდგომა",
+    "pronunciation": "/ˈɔːtəm/",
+    "example_en": "Leaves change color in autumn.",
+    "example_ka": "შემოდგომაზე ფოთლები ფერს იცვლის.",
+    "category": "nature-weather",
+    "level": "intermediate"
+  },
+  {
+    "english": "Weather",
+    "georgian": "ამინდი",
+    "pronunciation": "/ˈweðər/",
+    "example_en": "What's the weather like today?",
+    "example_ka": "დღეს როგორი ამინდია?",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Sunny",
+    "georgian": "მზიანი",
+    "pronunciation": "/ˈsʌni/",
+    "example_en": "It's a sunny day.",
+    "example_ka": "მზიანი დღეა.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Rainy",
+    "georgian": "წვიმიანი",
+    "pronunciation": "/ˈreɪni/",
+    "example_en": "It's a rainy day.",
+    "example_ka": "წვიმიანი დღეა.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Snowy",
+    "georgian": "თოვლიანი",
+    "pronunciation": "/ˈsnoʊi/",
+    "example_en": "The mountains are snowy.",
+    "example_ka": "მთები თოვლიანია.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Cloudy",
+    "georgian": "ღრუბლიანი",
+    "pronunciation": "/ˈklaʊdi/",
+    "example_en": "It's cloudy today.",
+    "example_ka": "დღეს ღრუბლიანია.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Windy",
+    "georgian": "ქარიანი",
+    "pronunciation": "/ˈwɪndi/",
+    "example_en": "It's windy outside.",
+    "example_ka": "გარეთ ქარიანია.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Foggy",
+    "georgian": "ნისლიანი",
+    "pronunciation": "/ˈfɒɡi/",
+    "example_en": "It's foggy this morning.",
+    "example_ka": "დღეს დილით ნისლიანია.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Ice",
+    "georgian": "ყინული",
+    "pronunciation": "/aɪs/",
+    "example_en": "Be careful, there's ice on the road.",
+    "example_ka": "ფრთხილად, გზაზე ყინულია.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Frost",
+    "georgian": "ყინვა",
+    "pronunciation": "/frɒst/",
+    "example_en": "There was frost on the grass.",
+    "example_ka": "ბალახზე ყინვა იყო.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Hail",
+    "georgian": "სეტყვა",
+    "pronunciation": "/heɪl/",
+    "example_en": "Hail damaged the crops.",
+    "example_ka": "სეტყვამ მოსავალი დააზიანა.",
+    "category": "weather-seasons",
+    "level": "B1"
+  },
+  {
+    "english": "Freeze",
+    "georgian": "გაყინვა",
+    "pronunciation": "/friːz/",
+    "example_en": "Water freezes at 0 degrees.",
+    "example_ka": "წყალი 0 გრადუსზე იყინება.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Melt",
+    "georgian": "დნობა",
+    "pronunciation": "/melt/",
+    "example_en": "The snow is melting.",
+    "example_ka": "თოვლი დნება.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Forecast",
+    "georgian": "პროგნოზი",
+    "pronunciation": "/ˈfɔːrkæst/",
+    "example_en": "What does the weather forecast say?",
+    "example_ka": "ამინდის პროგნოზი რას ამბობს?",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Umbrella",
+    "georgian": "ქოლგა",
+    "pronunciation": "/ʌmˈbrelə/",
+    "example_en": "Don't forget your umbrella.",
+    "example_ka": "ქოლგა არ დაგავიწყდეს.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Winter",
+    "georgian": "ზამთარი",
+    "pronunciation": "/ˈwɪntər/",
+    "example_en": "It snows a lot in winter.",
+    "example_ka": "ზამთარში ბევრი თოვლი მოდის.",
+    "category": "weather-seasons",
+    "level": "A1"
+  },
+  {
+    "english": "Degree",
+    "georgian": "გრადუსი",
+    "pronunciation": "/dɪˈɡriː/",
+    "example_en": "It's 25 degrees outside.",
+    "example_ka": "გარეთ 25 გრადუსია.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Breeze",
+    "georgian": "ნიავი",
+    "pronunciation": "/briːz/",
+    "example_en": "A gentle breeze is blowing.",
+    "example_ka": "ნაზი ნიავი უბერავს.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Sunshine",
+    "georgian": "მზის სხივები",
+    "pronunciation": "/ˈsʌnʃaɪn/",
+    "example_en": "Enjoy the sunshine.",
+    "example_ka": "ისიამოვნე მზის სხივებით.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Shade",
+    "georgian": "ჩრდილი",
+    "pronunciation": "/ʃeɪd/",
+    "example_en": "Let's sit in the shade.",
+    "example_ka": "ჩრდილში დავსხდეთ.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Dew",
+    "georgian": "ცვარი",
+    "pronunciation": "/djuː/",
+    "example_en": "There's dew on the grass.",
+    "example_ka": "ბალახზე ცვარია.",
+    "category": "weather-seasons",
+    "level": "B1"
+  },
+  {
+    "english": "Blizzard",
+    "georgian": "ქარბუქი",
+    "pronunciation": "/ˈblɪzərd/",
+    "example_en": "The blizzard closed the roads.",
+    "example_ka": "ქარბუქმა გზები დახურა.",
+    "category": "weather-seasons",
+    "level": "B1"
+  },
+  {
+    "english": "Sleet",
+    "georgian": "თოვლჭყაპი",
+    "pronunciation": "/sliːt/",
+    "example_en": "It's sleeting outside.",
+    "example_ka": "გარეთ თოვლჭყაპია.",
+    "category": "weather-seasons",
+    "level": "B1"
+  },
+  {
+    "english": "Drizzle",
+    "georgian": "წვრილი წვიმა",
+    "pronunciation": "/ˈdrɪzəl/",
+    "example_en": "It's just a light drizzle.",
+    "example_ka": "მხოლოდ წვრილი წვიმაა.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Puddle",
+    "georgian": "გუბე",
+    "pronunciation": "/ˈpʌdəl/",
+    "example_en": "The kids are jumping in puddles.",
+    "example_ka": "ბავშვები გუბეებში ხტებიან.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Sunset",
+    "georgian": "მზის ჩასვლა",
+    "pronunciation": "/ˈsʌnset/",
+    "example_en": "The sunset is beautiful.",
+    "example_ka": "მზის ჩასვლა ლამაზია.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Sunrise",
+    "georgian": "მზის ამოსვლა",
+    "pronunciation": "/ˈsʌnraɪz/",
+    "example_en": "We watched the sunrise.",
+    "example_ka": "მზის ამოსვლას უყურეთ.",
+    "category": "weather-seasons",
+    "level": "A2"
+  },
+  {
+    "english": "Overcast",
+    "georgian": "მოღრუბლული",
+    "pronunciation": "/ˌoʊvərˈkæst/",
+    "example_en": "The sky is overcast.",
+    "example_ka": "ცა მოღრუბლულია.",
+    "category": "weather-seasons",
+    "level": "B1"
+  },
+  {
+    "english": "freezing",
+    "georgian": "ყინვიანი",
+    "pronunciation": "/ˈfriːzɪŋ/",
+    "example_en": "It's freezing outside.",
+    "example_ka": "გარეთ ყინვაა.",
+    "category": "weather-detailed",
+    "level": "A1"
+  },
+  {
+    "english": "humidity",
+    "georgian": "ტენიანობა",
+    "pronunciation": "/hjuːˈmɪdəti/",
+    "example_en": "The humidity is very high.",
+    "example_ka": "ტენიანობა ძალიან მაღალია.",
+    "category": "weather-detailed",
+    "level": "A2"
+  },
+  {
+    "english": "jacket",
+    "georgian": "ქურთუკი",
+    "pronunciation": "/ˈdʒækɪt/",
+    "example_en": "Wear a warm jacket.",
+    "example_ka": "თბილი ქურთუკი ჩაიცვი.",
+    "category": "weather-detailed",
+    "level": "A1"
+  }
 ]

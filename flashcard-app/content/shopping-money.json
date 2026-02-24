@@ -1,72 +1,884 @@
 [
-  {"english":"shop","georgian":"მაღაზია","pronunciation":"/ʃɒp/","example_en":"I went to the shop.","example_ka":"მაღაზიაში წავედი.","category":"shopping-money","level":"elementary"},
-  {"english":"buy","georgian":"ყიდვა","pronunciation":"/baɪ/","example_en":"I want to buy a new phone.","example_ka":"ახალი ტელეფონის ყიდვა მინდა.","category":"shopping-money","level":"elementary"},
-  {"english":"sell","georgian":"გაყიდვა","pronunciation":"/sel/","example_en":"He wants to sell his car.","example_ka":"მას მანქანის გაყიდვა სურს.","category":"shopping-money","level":"elementary"},
-  {"english":"price","georgian":"ფასი","pronunciation":"/praɪs/","example_en":"What is the price?","example_ka":"რა ფასია?","category":"shopping-money","level":"elementary"},
-  {"english":"cheap","georgian":"იაფი","pronunciation":"/tʃiːp/","example_en":"This shirt is very cheap.","example_ka":"ეს პერანგი ძალიან იაფია.","category":"shopping-money","level":"elementary"},
-  {"english":"expensive","georgian":"ძვირი","pronunciation":"/ɪkˈspensɪv/","example_en":"This restaurant is too expensive.","example_ka":"ეს რესტორანი ძალიან ძვირია.","category":"shopping-money","level":"elementary"},
-  {"english":"money","georgian":"ფული","pronunciation":"/ˈmʌni/","example_en":"I don't have enough money.","example_ka":"საკმარისი ფული არ მაქვს.","category":"shopping-money","level":"elementary"},
-  {"english":"cash","georgian":"ნაღდი ფული","pronunciation":"/kæʃ/","example_en":"Do you accept cash?","example_ka":"ნაღდ ფულს იღებთ?","category":"shopping-money","level":"elementary"},
-  {"english":"card","georgian":"ბარათი","pronunciation":"/kɑːrd/","example_en":"Can I pay by card?","example_ka":"ბარათით შემიძლია გადახდა?","category":"shopping-money","level":"elementary"},
-  {"english":"wallet","georgian":"საფულე","pronunciation":"/ˈwɒlɪt/","example_en":"My wallet is in my pocket.","example_ka":"საფულე ჯიბეში მაქვს.","category":"shopping-money","level":"elementary"},
-  {"english":"change","georgian":"ხურდა","pronunciation":"/tʃeɪndʒ/","example_en":"Do you have change?","example_ka":"ხურდა გაქვთ?","category":"shopping-money","level":"elementary"},
-  {"english":"discount","georgian":"ფასდაკლება","pronunciation":"/ˈdɪskaʊnt/","example_en":"Is there a discount?","example_ka":"ფასდაკლება არის?","category":"shopping-money","level":"elementary"},
-  {"english":"sale","georgian":"ფასდაკლება/გაყიდვა","pronunciation":"/seɪl/","example_en":"Everything is on sale today.","example_ka":"დღეს ყველაფერი ფასდაკლებითაა.","category":"shopping-money","level":"elementary"},
-  {"english":"receipt","georgian":"ქვითარი","pronunciation":"/rɪˈsiːt/","example_en":"Can I have the receipt?","example_ka":"შეიძლება ქვითარი?","category":"shopping-money","level":"elementary"},
-  {"english":"bag","georgian":"ჩანთა","pronunciation":"/bæɡ/","example_en":"Do you need a bag?","example_ka":"ჩანთა გჭირდებათ?","category":"shopping-money","level":"elementary"},
-  {"english":"size","georgian":"ზომა","pronunciation":"/saɪz/","example_en":"What size do you wear?","example_ka":"რა ზომას იცვამთ?","category":"shopping-money","level":"elementary"},
-  {"english":"color","georgian":"ფერი","pronunciation":"/ˈkʌlər/","example_en":"What color do you want?","example_ka":"რა ფერი გინდა?","category":"shopping-money","level":"elementary"},
-  {"english":"try on","georgian":"მოსინჯვა","pronunciation":"/traɪ ɒn/","example_en":"Can I try this on?","example_ka":"შეიძლება ეს მოვისინჯო?","category":"shopping-money","level":"elementary"},
-  {"english":"fit","georgian":"მოხდენა","pronunciation":"/fɪt/","example_en":"Does it fit you?","example_ka":"მოგხდება?","category":"shopping-money","level":"elementary"},
-  {"english":"return","georgian":"დაბრუნება","pronunciation":"/rɪˈtɜːrn/","example_en":"Can I return this?","example_ka":"შეიძლება ეს დავაბრუნო?","category":"shopping-money","level":"elementary"},
-  {"english":"exchange","georgian":"გაცვლა","pronunciation":"/ɪksˈtʃeɪndʒ/","example_en":"I want to exchange this shirt.","example_ka":"ამ პერანგის გაცვლა მინდა.","category":"shopping-money","level":"elementary"},
-  {"english":"refund","georgian":"თანხის დაბრუნება","pronunciation":"/ˈriːfʌnd/","example_en":"I would like a refund.","example_ka":"თანხის დაბრუნება მინდა.","category":"shopping-money","level":"elementary"},
-  {"english":"supermarket","georgian":"სუპერმარკეტი","pronunciation":"/ˈsuːpərmɑːrkɪt/","example_en":"I go to the supermarket every week.","example_ka":"ყოველ კვირა სუპერმარკეტში მივდივარ.","category":"shopping-money","level":"elementary"},
-  {"english":"mall","georgian":"სავაჭრო ცენტრი","pronunciation":"/mɔːl/","example_en":"Let's go to the mall.","example_ka":"სავაჭრო ცენტრში წავიდეთ.","category":"shopping-money","level":"elementary"},
-  {"english":"market","georgian":"ბაზარი","pronunciation":"/ˈmɑːrkɪt/","example_en":"I bought fruit at the market.","example_ka":"ბაზარში ხილი ვიყიდე.","category":"shopping-money","level":"elementary"},
-  {"english":"pharmacy","georgian":"აფთიაქი","pronunciation":"/ˈfɑːrməsi/","example_en":"I need to go to the pharmacy.","example_ka":"აფთიაქში წასვლა მჭირდება.","category":"shopping-money","level":"elementary"},
-  {"english":"bakery","georgian":"საცხობი","pronunciation":"/ˈbeɪkəri/","example_en":"I bought bread from the bakery.","example_ka":"საცხობიდან პური ვიყიდე.","category":"shopping-money","level":"elementary"},
-  {"english":"bookstore","georgian":"წიგნის მაღაზია","pronunciation":"/ˈbʊkstɔːr/","example_en":"I found a great book at the bookstore.","example_ka":"წიგნის მაღაზიაში შესანიშნავი წიგნი ვიპოვე.","category":"shopping-money","level":"elementary"},
-  {"english":"clothing store","georgian":"ტანსაცმლის მაღაზია","pronunciation":"/ˈkləʊðɪŋ stɔːr/","example_en":"There is a new clothing store nearby.","example_ka":"ახლოს ახალი ტანსაცმლის მაღაზია გაიხსნა.","category":"shopping-money","level":"elementary"},
-  {"english":"cashier","georgian":"მოლარე","pronunciation":"/kæˈʃɪər/","example_en":"Pay at the cashier.","example_ka":"მოლარესთან გადაიხადეთ.","category":"shopping-money","level":"elementary"},
-  {"english":"queue","georgian":"რიგი","pronunciation":"/kjuː/","example_en":"There is a long queue.","example_ka":"გრძელი რიგია.","category":"shopping-money","level":"elementary"},
-  {"english":"basket","georgian":"კალათა","pronunciation":"/ˈbɑːskɪt/","example_en":"Put it in the basket.","example_ka":"კალათაში ჩადეთ.","category":"shopping-money","level":"elementary"},
-  {"english":"cart","georgian":"ურიკა","pronunciation":"/kɑːrt/","example_en":"I need a shopping cart.","example_ka":"სავაჭრო ურიკა მჭირდება.","category":"shopping-money","level":"elementary"},
-  {"english":"aisle","georgian":"შუალედი","pronunciation":"/aɪl/","example_en":"The milk is in aisle three.","example_ka":"რძე მესამე შუალედშია.","category":"shopping-money","level":"elementary"},
-  {"english":"brand","georgian":"ბრენდი","pronunciation":"/brænd/","example_en":"Which brand do you prefer?","example_ka":"რომელ ბრენდს ანიჭებთ უპირატესობას?","category":"shopping-money","level":"elementary"},
-  {"english":"bargain","georgian":"შეთანხმება ფასზე","pronunciation":"/ˈbɑːrɡɪn/","example_en":"That was a real bargain!","example_ka":"ეს მართლა კარგი ვაჭრობა იყო!","category":"shopping-money","level":"elementary"},
-  {"english":"afford","georgian":"ხელმისაწვდომი","pronunciation":"/əˈfɔːrd/","example_en":"I can't afford this car.","example_ka":"ეს მანქანა ხელმისაწვდომი არ არის ჩემთვის.","category":"shopping-money","level":"elementary"},
-  {"english":"spend","georgian":"დახარჯვა","pronunciation":"/spend/","example_en":"How much did you spend?","example_ka":"რამდენი დახარჯე?","category":"shopping-money","level":"elementary"},
-  {"english":"save","georgian":"დაზოგვა","pronunciation":"/seɪv/","example_en":"I'm trying to save money.","example_ka":"ფულის დაზოგვას ვცდილობ.","category":"shopping-money","level":"elementary"},
-  {"english":"cost","georgian":"ღირებულება","pronunciation":"/kɒst/","example_en":"How much does it cost?","example_ka":"რამდენი ღირს?","category":"shopping-money","level":"elementary"},
-  {"english":"pay","georgian":"გადახდა","pronunciation":"/peɪ/","example_en":"Where do I pay?","example_ka":"სად ვიხდი?","category":"shopping-money","level":"elementary"},
-  {"english":"free","georgian":"უფასო","pronunciation":"/friː/","example_en":"This sample is free.","example_ka":"ეს ნიმუში უფასოა.","category":"shopping-money","level":"elementary"},
-  {"english":"bill","georgian":"ანგარიში","pronunciation":"/bɪl/","example_en":"Can I have the bill please?","example_ka":"შეიძლება ანგარიში?","category":"shopping-money","level":"elementary"},
-  {"english":"tip","georgian":"ჩაის ფული","pronunciation":"/tɪp/","example_en":"I left a tip for the waiter.","example_ka":"მიმტანს ჩაის ფული დავუტოვე.","category":"shopping-money","level":"elementary"},
-  {"english":"bank","georgian":"ბანკი","pronunciation":"/bæŋk/","example_en":"I need to go to the bank.","example_ka":"ბანკში წასვლა მჭირდება.","category":"shopping-money","level":"elementary"},
-  {"english":"ATM","georgian":"ბანკომატი","pronunciation":"/ˌeɪtiːˈem/","example_en":"Where is the nearest ATM?","example_ka":"სად არის უახლოესი ბანკომატი?","category":"shopping-money","level":"elementary"},
-  {"english":"account","georgian":"ანგარიში","pronunciation":"/əˈkaʊnt/","example_en":"I opened a bank account.","example_ka":"საბანკო ანგარიში გავხსენი.","category":"shopping-money","level":"elementary"},
-  {"english":"transfer","georgian":"გადარიცხვა","pronunciation":"/ˈtrænsfɜːr/","example_en":"I will transfer the money.","example_ka":"ფულს გადავრიცხავ.","category":"shopping-money","level":"elementary"},
-  {"english":"withdraw","georgian":"გამოტანა","pronunciation":"/wɪðˈdrɔː/","example_en":"I need to withdraw cash.","example_ka":"ნაღდი ფულის გამოტანა მჭირდება.","category":"shopping-money","level":"elementary"},
-  {"english":"deposit","georgian":"შეტანა","pronunciation":"/dɪˈpɒzɪt/","example_en":"I deposited money in my account.","example_ka":"ანგარიშზე ფული შევიტანე.","category":"shopping-money","level":"elementary"},
-  {"english":"currency","georgian":"ვალუტა","pronunciation":"/ˈkʌrənsi/","example_en":"What currency do you accept?","example_ka":"რა ვალუტას იღებთ?","category":"shopping-money","level":"elementary"},
-  {"english":"exchange rate","georgian":"გაცვლითი კურსი","pronunciation":"/ɪksˈtʃeɪndʒ reɪt/","example_en":"What is the exchange rate today?","example_ka":"დღეს რა გაცვლითი კურსია?","category":"shopping-money","level":"elementary"},
-  {"english":"coin","georgian":"მონეტა","pronunciation":"/kɔɪn/","example_en":"I found a coin on the ground.","example_ka":"მიწაზე მონეტა ვიპოვე.","category":"shopping-money","level":"elementary"},
-  {"english":"banknote","georgian":"კუპიურა","pronunciation":"/ˈbæŋknəʊt/","example_en":"I have a fifty lari banknote.","example_ka":"ორმოცდაათლარიანი კუპიურა მაქვს.","category":"shopping-money","level":"elementary"},
-  {"english":"online shopping","georgian":"ონლაინ შოპინგი","pronunciation":"/ˌɒnlaɪn ˈʃɒpɪŋ/","example_en":"Online shopping is very convenient.","example_ka":"ონლაინ შოპინგი ძალიან მოსახერხებელია.","category":"shopping-money","level":"elementary"},
-  {"english":"delivery","georgian":"მიტანა","pronunciation":"/dɪˈlɪvəri/","example_en":"The delivery will arrive tomorrow.","example_ka":"მიტანა ხვალ მოვა.","category":"shopping-money","level":"elementary"},
-  {"english":"shipping","georgian":"მიწოდება","pronunciation":"/ˈʃɪpɪŋ/","example_en":"Shipping is free for this order.","example_ka":"ამ შეკვეთისთვის მიწოდება უფასოა.","category":"shopping-money","level":"elementary"},
-  {"english":"order","georgian":"შეკვეთა","pronunciation":"/ˈɔːrdər/","example_en":"I placed an order yesterday.","example_ka":"გუშინ შეკვეთა გავაკეთე.","category":"shopping-money","level":"elementary"},
-  {"english":"package","georgian":"ამანათი","pronunciation":"/ˈpækɪdʒ/","example_en":"My package arrived today.","example_ka":"ჩემი ამანათი დღეს მოვიდა.","category":"shopping-money","level":"elementary"},
-  {"english":"guarantee","georgian":"გარანტია","pronunciation":"/ˌɡærənˈtiː/","example_en":"This product has a two-year guarantee.","example_ka":"ამ პროდუქტს ორწლიანი გარანტია აქვს.","category":"shopping-money","level":"elementary"},
-  {"english":"quality","georgian":"ხარისხი","pronunciation":"/ˈkwɒlɪti/","example_en":"The quality is excellent.","example_ka":"ხარისხი შესანიშნავია.","category":"shopping-money","level":"elementary"},
-  {"english":"second-hand","georgian":"მეორადი","pronunciation":"/ˌsekəndˈhænd/","example_en":"I bought a second-hand laptop.","example_ka":"მეორადი ლეპტოპი ვიყიდე.","category":"shopping-money","level":"elementary"},
-  {"english":"gift","georgian":"საჩუქარი","pronunciation":"/ɡɪft/","example_en":"I bought a gift for my friend.","example_ka":"მეგობრისთვის საჩუქარი ვიყიდე.","category":"shopping-money","level":"elementary"},
-  {"english":"wrap","georgian":"შეფუთვა","pronunciation":"/ræp/","example_en":"Can you wrap this as a gift?","example_ka":"შეგიძლიათ ეს საჩუქრად შეფუთოთ?","category":"shopping-money","level":"elementary"},
-  {"english":"coupon","georgian":"კუპონი","pronunciation":"/ˈkuːpɒn/","example_en":"I have a discount coupon.","example_ka":"ფასდაკლების კუპონი მაქვს.","category":"shopping-money","level":"elementary"},
-  {"english":"membership","georgian":"წევრობა","pronunciation":"/ˈmembərʃɪp/","example_en":"Do you have a membership card?","example_ka":"წევრობის ბარათი გაქვთ?","category":"shopping-money","level":"elementary"},
-  {"english":"credit","georgian":"კრედიტი","pronunciation":"/ˈkredɪt/","example_en":"He bought it on credit.","example_ka":"მან ეს კრედიტით იყიდა.","category":"shopping-money","level":"elementary"},
-  {"english":"debt","georgian":"ვალი","pronunciation":"/det/","example_en":"I don't want to be in debt.","example_ka":"არ მინდა ვალში ჩავვარდე.","category":"shopping-money","level":"elementary"},
-  {"english":"wealthy","georgian":"მდიდარი","pronunciation":"/ˈwelθi/","example_en":"He became very wealthy.","example_ka":"ის ძალიან მდიდარი გახდა.","category":"shopping-money","level":"elementary"},
-  {"english":"poor","georgian":"ღარიბი","pronunciation":"/pʊər/","example_en":"Many people are very poor.","example_ka":"ბევრი ადამიანი ძალიან ღარიბია.","category":"shopping-money","level":"elementary"}
+  {
+    "english": "shop",
+    "georgian": "მაღაზია",
+    "pronunciation": "/ʃɒp/",
+    "example_en": "I went to the shop.",
+    "example_ka": "მაღაზიაში წავედი.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "buy",
+    "georgian": "ყიდვა",
+    "pronunciation": "/baɪ/",
+    "example_en": "I want to buy a new phone.",
+    "example_ka": "ახალი ტელეფონის ყიდვა მინდა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "sell",
+    "georgian": "გაყიდვა",
+    "pronunciation": "/sel/",
+    "example_en": "He wants to sell his car.",
+    "example_ka": "მას მანქანის გაყიდვა სურს.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "What is the price?",
+    "example_ka": "რა ფასია?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "This shirt is very cheap.",
+    "example_ka": "ეს პერანგი ძალიან იაფია.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspensɪv/",
+    "example_en": "This restaurant is too expensive.",
+    "example_ka": "ეს რესტორანი ძალიან ძვირია.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "money",
+    "georgian": "ფული",
+    "pronunciation": "/ˈmʌni/",
+    "example_en": "I don't have enough money.",
+    "example_ka": "საკმარისი ფული არ მაქვს.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "cash",
+    "georgian": "ნაღდი ფული",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Do you accept cash?",
+    "example_ka": "ნაღდ ფულს იღებთ?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "card",
+    "georgian": "ბარათი",
+    "pronunciation": "/kɑːrd/",
+    "example_en": "Can I pay by card?",
+    "example_ka": "ბარათით შემიძლია გადახდა?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "wallet",
+    "georgian": "საფულე",
+    "pronunciation": "/ˈwɒlɪt/",
+    "example_en": "My wallet is in my pocket.",
+    "example_ka": "საფულე ჯიბეში მაქვს.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "change",
+    "georgian": "ხურდა",
+    "pronunciation": "/tʃeɪndʒ/",
+    "example_en": "Do you have change?",
+    "example_ka": "ხურდა გაქვთ?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Is there a discount?",
+    "example_ka": "ფასდაკლება არის?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "sale",
+    "georgian": "ფასდაკლება/გაყიდვა",
+    "pronunciation": "/seɪl/",
+    "example_en": "Everything is on sale today.",
+    "example_ka": "დღეს ყველაფერი ფასდაკლებითაა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Can I have the receipt?",
+    "example_ka": "შეიძლება ქვითარი?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "bag",
+    "georgian": "ჩანთა",
+    "pronunciation": "/bæɡ/",
+    "example_en": "Do you need a bag?",
+    "example_ka": "ჩანთა გჭირდებათ?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "size",
+    "georgian": "ზომა",
+    "pronunciation": "/saɪz/",
+    "example_en": "What size do you wear?",
+    "example_ka": "რა ზომას იცვამთ?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "color",
+    "georgian": "ფერი",
+    "pronunciation": "/ˈkʌlər/",
+    "example_en": "What color do you want?",
+    "example_ka": "რა ფერი გინდა?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "try on",
+    "georgian": "მოსინჯვა",
+    "pronunciation": "/traɪ ɒn/",
+    "example_en": "Can I try this on?",
+    "example_ka": "შეიძლება ეს მოვისინჯო?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "fit",
+    "georgian": "მოხდენა",
+    "pronunciation": "/fɪt/",
+    "example_en": "Does it fit you?",
+    "example_ka": "მოგხდება?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "return",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "Can I return this?",
+    "example_ka": "შეიძლება ეს დავაბრუნო?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "exchange",
+    "georgian": "გაცვლა",
+    "pronunciation": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "I want to exchange this shirt.",
+    "example_ka": "ამ პერანგის გაცვლა მინდა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "refund",
+    "georgian": "თანხის დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "I would like a refund.",
+    "example_ka": "თანხის დაბრუნება მინდა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "supermarket",
+    "georgian": "სუპერმარკეტი",
+    "pronunciation": "/ˈsuːpərmɑːrkɪt/",
+    "example_en": "I go to the supermarket every week.",
+    "example_ka": "ყოველ კვირა სუპერმარკეტში მივდივარ.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "mall",
+    "georgian": "სავაჭრო ცენტრი",
+    "pronunciation": "/mɔːl/",
+    "example_en": "Let's go to the mall.",
+    "example_ka": "სავაჭრო ცენტრში წავიდეთ.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "market",
+    "georgian": "ბაზარი",
+    "pronunciation": "/ˈmɑːrkɪt/",
+    "example_en": "I bought fruit at the market.",
+    "example_ka": "ბაზარში ხილი ვიყიდე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "pharmacy",
+    "georgian": "აფთიაქი",
+    "pronunciation": "/ˈfɑːrməsi/",
+    "example_en": "I need to go to the pharmacy.",
+    "example_ka": "აფთიაქში წასვლა მჭირდება.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "bakery",
+    "georgian": "საცხობი",
+    "pronunciation": "/ˈbeɪkəri/",
+    "example_en": "I bought bread from the bakery.",
+    "example_ka": "საცხობიდან პური ვიყიდე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "bookstore",
+    "georgian": "წიგნის მაღაზია",
+    "pronunciation": "/ˈbʊkstɔːr/",
+    "example_en": "I found a great book at the bookstore.",
+    "example_ka": "წიგნის მაღაზიაში შესანიშნავი წიგნი ვიპოვე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "clothing store",
+    "georgian": "ტანსაცმლის მაღაზია",
+    "pronunciation": "/ˈkləʊðɪŋ stɔːr/",
+    "example_en": "There is a new clothing store nearby.",
+    "example_ka": "ახლოს ახალი ტანსაცმლის მაღაზია გაიხსნა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "cashier",
+    "georgian": "მოლარე",
+    "pronunciation": "/kæˈʃɪər/",
+    "example_en": "Pay at the cashier.",
+    "example_ka": "მოლარესთან გადაიხადეთ.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "queue",
+    "georgian": "რიგი",
+    "pronunciation": "/kjuː/",
+    "example_en": "There is a long queue.",
+    "example_ka": "გრძელი რიგია.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "basket",
+    "georgian": "კალათა",
+    "pronunciation": "/ˈbɑːskɪt/",
+    "example_en": "Put it in the basket.",
+    "example_ka": "კალათაში ჩადეთ.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "cart",
+    "georgian": "ურიკა",
+    "pronunciation": "/kɑːrt/",
+    "example_en": "I need a shopping cart.",
+    "example_ka": "სავაჭრო ურიკა მჭირდება.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "aisle",
+    "georgian": "შუალედი",
+    "pronunciation": "/aɪl/",
+    "example_en": "The milk is in aisle three.",
+    "example_ka": "რძე მესამე შუალედშია.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "brand",
+    "georgian": "ბრენდი",
+    "pronunciation": "/brænd/",
+    "example_en": "Which brand do you prefer?",
+    "example_ka": "რომელ ბრენდს ანიჭებთ უპირატესობას?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "bargain",
+    "georgian": "შეთანხმება ფასზე",
+    "pronunciation": "/ˈbɑːrɡɪn/",
+    "example_en": "That was a real bargain!",
+    "example_ka": "ეს მართლა კარგი ვაჭრობა იყო!",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "afford",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrd/",
+    "example_en": "I can't afford this car.",
+    "example_ka": "ეს მანქანა ხელმისაწვდომი არ არის ჩემთვის.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "spend",
+    "georgian": "დახარჯვა",
+    "pronunciation": "/spend/",
+    "example_en": "How much did you spend?",
+    "example_ka": "რამდენი დახარჯე?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "save",
+    "georgian": "დაზოგვა",
+    "pronunciation": "/seɪv/",
+    "example_en": "I'm trying to save money.",
+    "example_ka": "ფულის დაზოგვას ვცდილობ.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "cost",
+    "georgian": "ღირებულება",
+    "pronunciation": "/kɒst/",
+    "example_en": "How much does it cost?",
+    "example_ka": "რამდენი ღირს?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "pay",
+    "georgian": "გადახდა",
+    "pronunciation": "/peɪ/",
+    "example_en": "Where do I pay?",
+    "example_ka": "სად ვიხდი?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "free",
+    "georgian": "უფასო",
+    "pronunciation": "/friː/",
+    "example_en": "This sample is free.",
+    "example_ka": "ეს ნიმუში უფასოა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "bill",
+    "georgian": "ანგარიში",
+    "pronunciation": "/bɪl/",
+    "example_en": "Can I have the bill please?",
+    "example_ka": "შეიძლება ანგარიში?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "tip",
+    "georgian": "ჩაის ფული",
+    "pronunciation": "/tɪp/",
+    "example_en": "I left a tip for the waiter.",
+    "example_ka": "მიმტანს ჩაის ფული დავუტოვე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "bank",
+    "georgian": "ბანკი",
+    "pronunciation": "/bæŋk/",
+    "example_en": "I need to go to the bank.",
+    "example_ka": "ბანკში წასვლა მჭირდება.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "ATM",
+    "georgian": "ბანკომატი",
+    "pronunciation": "/ˌeɪtiːˈem/",
+    "example_en": "Where is the nearest ATM?",
+    "example_ka": "სად არის უახლოესი ბანკომატი?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "account",
+    "georgian": "ანგარიში",
+    "pronunciation": "/əˈkaʊnt/",
+    "example_en": "I opened a bank account.",
+    "example_ka": "საბანკო ანგარიში გავხსენი.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "transfer",
+    "georgian": "გადარიცხვა",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "I will transfer the money.",
+    "example_ka": "ფულს გადავრიცხავ.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "withdraw",
+    "georgian": "გამოტანა",
+    "pronunciation": "/wɪðˈdrɔː/",
+    "example_en": "I need to withdraw cash.",
+    "example_ka": "ნაღდი ფულის გამოტანა მჭირდება.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "deposit",
+    "georgian": "შეტანა",
+    "pronunciation": "/dɪˈpɒzɪt/",
+    "example_en": "I deposited money in my account.",
+    "example_ka": "ანგარიშზე ფული შევიტანე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "currency",
+    "georgian": "ვალუტა",
+    "pronunciation": "/ˈkʌrənsi/",
+    "example_en": "What currency do you accept?",
+    "example_ka": "რა ვალუტას იღებთ?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "exchange rate",
+    "georgian": "გაცვლითი კურსი",
+    "pronunciation": "/ɪksˈtʃeɪndʒ reɪt/",
+    "example_en": "What is the exchange rate today?",
+    "example_ka": "დღეს რა გაცვლითი კურსია?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "coin",
+    "georgian": "მონეტა",
+    "pronunciation": "/kɔɪn/",
+    "example_en": "I found a coin on the ground.",
+    "example_ka": "მიწაზე მონეტა ვიპოვე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "banknote",
+    "georgian": "კუპიურა",
+    "pronunciation": "/ˈbæŋknəʊt/",
+    "example_en": "I have a fifty lari banknote.",
+    "example_ka": "ორმოცდაათლარიანი კუპიურა მაქვს.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "online shopping",
+    "georgian": "ონლაინ შოპინგი",
+    "pronunciation": "/ˌɒnlaɪn ˈʃɒpɪŋ/",
+    "example_en": "Online shopping is very convenient.",
+    "example_ka": "ონლაინ შოპინგი ძალიან მოსახერხებელია.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "delivery",
+    "georgian": "მიტანა",
+    "pronunciation": "/dɪˈlɪvəri/",
+    "example_en": "The delivery will arrive tomorrow.",
+    "example_ka": "მიტანა ხვალ მოვა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "shipping",
+    "georgian": "მიწოდება",
+    "pronunciation": "/ˈʃɪpɪŋ/",
+    "example_en": "Shipping is free for this order.",
+    "example_ka": "ამ შეკვეთისთვის მიწოდება უფასოა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "order",
+    "georgian": "შეკვეთა",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "I placed an order yesterday.",
+    "example_ka": "გუშინ შეკვეთა გავაკეთე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "package",
+    "georgian": "ამანათი",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "My package arrived today.",
+    "example_ka": "ჩემი ამანათი დღეს მოვიდა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "guarantee",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˌɡærənˈtiː/",
+    "example_en": "This product has a two-year guarantee.",
+    "example_ka": "ამ პროდუქტს ორწლიანი გარანტია აქვს.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɒlɪti/",
+    "example_en": "The quality is excellent.",
+    "example_ka": "ხარისხი შესანიშნავია.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "second-hand",
+    "georgian": "მეორადი",
+    "pronunciation": "/ˌsekəndˈhænd/",
+    "example_en": "I bought a second-hand laptop.",
+    "example_ka": "მეორადი ლეპტოპი ვიყიდე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "gift",
+    "georgian": "საჩუქარი",
+    "pronunciation": "/ɡɪft/",
+    "example_en": "I bought a gift for my friend.",
+    "example_ka": "მეგობრისთვის საჩუქარი ვიყიდე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "wrap",
+    "georgian": "შეფუთვა",
+    "pronunciation": "/ræp/",
+    "example_en": "Can you wrap this as a gift?",
+    "example_ka": "შეგიძლიათ ეს საჩუქრად შეფუთოთ?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɒn/",
+    "example_en": "I have a discount coupon.",
+    "example_ka": "ფასდაკლების კუპონი მაქვს.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "membership",
+    "georgian": "წევრობა",
+    "pronunciation": "/ˈmembərʃɪp/",
+    "example_en": "Do you have a membership card?",
+    "example_ka": "წევრობის ბარათი გაქვთ?",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "credit",
+    "georgian": "კრედიტი",
+    "pronunciation": "/ˈkredɪt/",
+    "example_en": "He bought it on credit.",
+    "example_ka": "მან ეს კრედიტით იყიდა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "debt",
+    "georgian": "ვალი",
+    "pronunciation": "/det/",
+    "example_en": "I don't want to be in debt.",
+    "example_ka": "არ მინდა ვალში ჩავვარდე.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "wealthy",
+    "georgian": "მდიდარი",
+    "pronunciation": "/ˈwelθi/",
+    "example_en": "He became very wealthy.",
+    "example_ka": "ის ძალიან მდიდარი გახდა.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "poor",
+    "georgian": "ღარიბი",
+    "pronunciation": "/pʊər/",
+    "example_en": "Many people are very poor.",
+    "example_ka": "ბევრი ადამიანი ძალიან ღარიბია.",
+    "category": "shopping-money",
+    "level": "elementary"
+  },
+  {
+    "english": "Add to cart",
+    "georgian": "კალათაში დამატება",
+    "pronunciation": "/æd tə kɑːrt/",
+    "example_en": "Add to cart and continue shopping.",
+    "example_ka": "კალათაში დაამატე და განაგრძე შოპინგი.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Checkout",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈtʃɛkaʊt/",
+    "example_en": "Proceed to checkout.",
+    "example_ka": "გადახდაზე გადასვლა.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Coupon code",
+    "georgian": "კუპონის კოდი",
+    "pronunciation": "/ˈkuːpɒn koʊd/",
+    "example_en": "Enter the coupon code at checkout.",
+    "example_ka": "გადახდისას კუპონის კოდი შეიყვანე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Out of stock",
+    "georgian": "ამოწურულია",
+    "pronunciation": "/aʊt əv stɒk/",
+    "example_en": "Sorry, this item is out of stock.",
+    "example_ka": "ბოდიში, ეს ნივთი ამოწურულია.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Review",
+    "georgian": "შეფასება",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Read the reviews before buying.",
+    "example_ka": "ყიდვამდე შეფასებები წაიკითხე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Wishlist",
+    "georgian": "სასურველების სია",
+    "pronunciation": "/ˈwɪʃlɪst/",
+    "example_en": "Save it to your wishlist.",
+    "example_ka": "სასურველების სიაში შეინახე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Payment method",
+    "georgian": "გადახდის მეთოდი",
+    "pronunciation": "/ˈpeɪmənt ˈmɛθəd/",
+    "example_en": "Choose your payment method.",
+    "example_ka": "აირჩიე გადახდის მეთოდი.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Credit card",
+    "georgian": "საკრედიტო ბარათი",
+    "pronunciation": "/ˈkrɛdɪt kɑːrd/",
+    "example_en": "Pay with your credit card.",
+    "example_ka": "საკრედიტო ბარათით გადაიხადე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Tracking number",
+    "georgian": "თრექინგის ნომერი",
+    "pronunciation": "/ˈtrækɪŋ ˈnʌmbər/",
+    "example_en": "Here is your tracking number.",
+    "example_ka": "აი შენი თრექინგის ნომერი.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Size chart",
+    "georgian": "ზომების ცხრილი",
+    "pronunciation": "/saɪz tʃɑːrt/",
+    "example_en": "Check the size chart before ordering.",
+    "example_ka": "შეკვეთამდე ზომების ცხრილი ნახე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Best seller",
+    "georgian": "ბესტსელერი",
+    "pronunciation": "/bɛst ˈsɛlər/",
+    "example_en": "This is our best seller.",
+    "example_ka": "ეს ჩვენი ბესტსელერია.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Flash sale",
+    "georgian": "სწრაფი ფასდაკლება",
+    "pronunciation": "/flæʃ seɪl/",
+    "example_en": "The flash sale ends in 2 hours.",
+    "example_ka": "სწრაფი ფასდაკლება 2 საათში მთავრდება.",
+    "category": "online-shopping",
+    "level": "B1"
+  },
+  {
+    "english": "Subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Subscribe for updates.",
+    "example_ka": "გამოიწერე სიახლეები.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Unsubscribe",
+    "georgian": "გამოწერის გაუქმება",
+    "pronunciation": "/ˌʌnsəbˈskraɪb/",
+    "example_en": "Click here to unsubscribe.",
+    "example_ka": "გამოწერის გასაუქმებლად აქ დააჭირე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "The invoice is in your email.",
+    "example_ka": "ინვოისი ელფოსტაშია.",
+    "category": "online-shopping",
+    "level": "B1"
+  },
+  {
+    "english": "Warranty",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˈwɒrənti/",
+    "example_en": "This product has a 2-year warranty.",
+    "example_ka": "ამ პროდუქტს 2 წლიანი გარანტია აქვს.",
+    "category": "online-shopping",
+    "level": "B1"
+  },
+  {
+    "english": "Compare",
+    "georgian": "შედარება",
+    "pronunciation": "/kəmˈpɛr/",
+    "example_en": "Compare prices before you buy.",
+    "example_ka": "ყიდვამდე ფასები შეადარე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/",
+    "example_en": "You'll get a notification when it ships.",
+    "example_ka": "გაგზავნისას შეტყობინება მიიღებ.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswɜːrd/",
+    "example_en": "Choose a strong password.",
+    "example_ka": "ძლიერი პაროლი აირჩიე.",
+    "category": "online-shopping",
+    "level": "A1"
+  },
+  {
+    "english": "Authentic",
+    "georgian": "ორიგინალი",
+    "pronunciation": "/ɔːˈθɛntɪk/",
+    "example_en": "Make sure the product is authentic.",
+    "example_ka": "დარწმუნდი რომ პროდუქტი ორიგინალია.",
+    "category": "online-shopping",
+    "level": "B1"
+  },
+  {
+    "english": "Counterfeit",
+    "georgian": "ყალბი",
+    "pronunciation": "/ˈkaʊntərfɪt/",
+    "example_en": "Be careful of counterfeit products.",
+    "example_ka": "ყალბი პროდუქტებისგან ფრთხილად.",
+    "category": "online-shopping",
+    "level": "B1"
+  },
+  {
+    "english": "Quantity",
+    "georgian": "რაოდენობა",
+    "pronunciation": "/ˈkwɒntəti/",
+    "example_en": "Select the quantity you want.",
+    "example_ka": "აირჩიე სასურველი რაოდენობა.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Promo code",
+    "georgian": "პრომო კოდი",
+    "pronunciation": "/ˈproʊmoʊ koʊd/",
+    "example_en": "Use my promo code for 30% off.",
+    "example_ka": "გამოიყენე ჩემი პრომო კოდი 30% ფასდაკლებისთვის.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Digital wallet",
+    "georgian": "ციფრული საფულე",
+    "pronunciation": "/ˈdɪdʒɪtl ˈwɒlɪt/",
+    "example_en": "Pay with your digital wallet.",
+    "example_ka": "ციფრული საფულით გადაიხადე.",
+    "category": "online-shopping",
+    "level": "B1"
+  },
+  {
+    "english": "Cashback",
+    "georgian": "ქეშბეკი",
+    "pronunciation": "/ˈkæʃbæk/",
+    "example_en": "Get 5% cashback on this purchase.",
+    "example_ka": "ამ შეძენაზე 5% ქეშბეკი მიიღე.",
+    "category": "online-shopping",
+    "level": "B1"
+  },
+  {
+    "english": "Seller",
+    "georgian": "გამყიდველი",
+    "pronunciation": "/ˈsɛlər/",
+    "example_en": "Check the seller's rating.",
+    "example_ka": "გამყიდველის რეიტინგი შეამოწმე.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Buyer",
+    "georgian": "მყიდველი",
+    "pronunciation": "/ˈbaɪər/",
+    "example_en": "The buyer left a positive review.",
+    "example_ka": "მყიდველმა დადებითი შეფასება დატოვა.",
+    "category": "online-shopping",
+    "level": "A2"
+  },
+  {
+    "english": "Shipping fee",
+    "georgian": "მიტანის საფასური",
+    "pronunciation": "/ˈʃɪpɪŋ fiː/",
+    "example_en": "The shipping fee is $5.",
+    "example_ka": "მიტანის საფასურია 5 დოლარი.",
+    "category": "online-shopping",
+    "level": "A2"
+  }
 ]

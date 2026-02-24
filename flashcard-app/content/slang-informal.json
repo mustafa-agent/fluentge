@@ -1,62 +1,785 @@
 [
-  {"english":"Cool","georgian":"მაგარი","pronunciation":"/kuːl/","example_en":"That's so cool!","example_ka":"ეს ძალიან მაგარია!","category":"slang","level":"A1"},
-  {"english":"Chill","georgian":"მოდუნება","pronunciation":"/tʃɪl/","example_en":"Let's just chill at home tonight.","example_ka":"დღეს საღამოს სახლში მოვიდუნოთ.","category":"slang","level":"A2"},
-  {"english":"Vibe","georgian":"განწყობა","pronunciation":"/vaɪb/","example_en":"This place has a great vibe.","example_ka":"ამ ადგილს შესანიშნავი განწყობა აქვს.","category":"slang","level":"A2"},
-  {"english":"Lit","georgian":"ცეცხლოვანი","pronunciation":"/lɪt/","example_en":"The party was lit last night.","example_ka":"გუშინ წვეულება ცეცხლოვანი იყო.","category":"slang","level":"B1"},
-  {"english":"Salty","georgian":"გაბრაზებული","pronunciation":"/ˈsɔːlti/","example_en":"Why are you so salty about it?","example_ka":"რატომ ხარ ასე გაბრაზებული ამის გამო?","category":"slang","level":"B1"},
-  {"english":"Ghost","georgian":"გაქრობა","pronunciation":"/ɡoʊst/","example_en":"He ghosted me after our date.","example_ka":"პაემნის შემდეგ ის გაქრა.","category":"slang","level":"B1"},
-  {"english":"Flex","georgian":"მოწონება","pronunciation":"/flɛks/","example_en":"He's always flexing his new car.","example_ka":"ის ახალ მანქანას ყოველთვის აჩვენებს.","category":"slang","level":"B1"},
-  {"english":"Slay","georgian":"მოკლვა (გაანადგურა)","pronunciation":"/sleɪ/","example_en":"She slayed that presentation.","example_ka":"მან პრეზენტაცია გაანადგურა.","category":"slang","level":"B1"},
-  {"english":"GOAT","georgian":"საუკეთესო","pronunciation":"/ɡoʊt/","example_en":"Messi is the GOAT.","example_ka":"მესი საუკეთესოა.","category":"slang","level":"B1"},
-  {"english":"Lowkey","georgian":"ფარულად","pronunciation":"/ˈloʊˌkiː/","example_en":"I lowkey want to go home.","example_ka":"ფარულად სახლში წასვლა მინდა.","category":"slang","level":"B1"},
-  {"english":"Highkey","georgian":"აშკარად","pronunciation":"/ˈhaɪˌkiː/","example_en":"I highkey love this song.","example_ka":"აშკარად მიყვარს ეს სიმღერა.","category":"slang","level":"B1"},
-  {"english":"Sus","georgian":"საეჭვო","pronunciation":"/sʌs/","example_en":"That guy is acting sus.","example_ka":"ის ბიჭი საეჭვოდ იქცევა.","category":"slang","level":"B1"},
-  {"english":"No cap","georgian":"სერიოზულად","pronunciation":"/noʊ kæp/","example_en":"No cap, this is the best pizza ever.","example_ka":"სერიოზულად, ეს საუკეთესო პიცაა.","category":"slang","level":"B1"},
-  {"english":"Cap","georgian":"ტყუილი","pronunciation":"/kæp/","example_en":"That's cap, I don't believe you.","example_ka":"ეს ტყუილია, არ გჯერა.","category":"slang","level":"B1"},
-  {"english":"Bet","georgian":"კარგი / შეთანხმებულია","pronunciation":"/bɛt/","example_en":"Want to grab lunch? — Bet.","example_ka":"სადილზე წავიდეთ? — კარგი.","category":"slang","level":"A2"},
-  {"english":"Bruh","georgian":"ძმაო","pronunciation":"/brʌ/","example_en":"Bruh, you can't be serious.","example_ka":"ძმაო, სერიოზულად ვერ ამბობ.","category":"slang","level":"A2"},
-  {"english":"Dude","georgian":"ბიჭო","pronunciation":"/duːd/","example_en":"Dude, that was amazing!","example_ka":"ბიჭო, ეს საოცარი იყო!","category":"slang","level":"A1"},
-  {"english":"Bro","georgian":"ძმაო","pronunciation":"/broʊ/","example_en":"What's up, bro?","example_ka":"რა ხდება, ძმაო?","category":"slang","level":"A1"},
-  {"english":"Fam","georgian":"ოჯახი / ახლობელი","pronunciation":"/fæm/","example_en":"What's good, fam?","example_ka":"როგორ ხარ, ახლობელო?","category":"slang","level":"B1"},
-  {"english":"LOL","georgian":"ხმამაღლა სიცილი","pronunciation":"/ˌɛlˌoʊˈɛl/","example_en":"LOL, that was hilarious.","example_ka":"ჰაჰა, ეს სასაცილო იყო.","category":"slang","level":"A1"},
-  {"english":"OMG","georgian":"ღმერთო ჩემო","pronunciation":"/ˌoʊˌɛmˈdʒiː/","example_en":"OMG, I can't believe it!","example_ka":"ღმერთო ჩემო, ვერ ვიჯერებ!","category":"slang","level":"A1"},
-  {"english":"BRB","georgian":"მალე დავბრუნდები","pronunciation":"/ˌbiːˌɑːrˈbiː/","example_en":"BRB, I need to grab something.","example_ka":"მალე დავბრუნდები, რაღაც უნდა ავიღო.","category":"slang","level":"A2"},
-  {"english":"DM","georgian":"პირადი შეტყობინება","pronunciation":"/ˌdiːˈɛm/","example_en":"Send me a DM.","example_ka":"პირადი შეტყობინება გამომიგზავნე.","category":"slang","level":"A2"},
-  {"english":"TBH","georgian":"გულახდილად","pronunciation":"/ˌtiːbiːˈeɪtʃ/","example_en":"TBH, I don't really care.","example_ka":"გულახდილად, ნამდვილად არ მაინტერესებს.","category":"slang","level":"A2"},
-  {"english":"FOMO","georgian":"გამოტოვების შიში","pronunciation":"/ˈfoʊmoʊ/","example_en":"I have serious FOMO right now.","example_ka":"ახლა სერიოზული გამოტოვების შიში მაქვს.","category":"slang","level":"B1"},
-  {"english":"Savage","georgian":"სასტიკი / მაგარი","pronunciation":"/ˈsævɪdʒ/","example_en":"That comeback was savage.","example_ka":"ის პასუხი სასტიკი იყო.","category":"slang","level":"B1"},
-  {"english":"Shade","georgian":"შენიშვნა / სიხარბე","pronunciation":"/ʃeɪd/","example_en":"She threw shade at him.","example_ka":"მან მას შენიშვნა მისცა.","category":"slang","level":"B1"},
-  {"english":"Tea","georgian":"ჭორი","pronunciation":"/tiː/","example_en":"Spill the tea! What happened?","example_ka":"ჭორი მომიყევი! რა მოხდა?","category":"slang","level":"B1"},
-  {"english":"Snatched","georgian":"იდეალური","pronunciation":"/snætʃt/","example_en":"Your outfit is snatched!","example_ka":"შენი ტანსაცმელი იდეალურია!","category":"slang","level":"B1"},
-  {"english":"Stan","georgian":"მიძღვნილი გულშემატკივარი","pronunciation":"/stæn/","example_en":"I stan this artist.","example_ka":"ამ შემსრულებლის მიძღვნილი გულშემატკივარი ვარ.","category":"slang","level":"B1"},
-  {"english":"Clout","georgian":"გავლენა","pronunciation":"/klaʊt/","example_en":"He's just doing it for clout.","example_ka":"ის ამას მხოლოდ გავლენისთვის აკეთებს.","category":"slang","level":"B1"},
-  {"english":"Glow up","georgian":"გარდაქმნა","pronunciation":"/ɡloʊ ʌp/","example_en":"She had a major glow up.","example_ka":"მან სერიოზული გარდაქმნა განიცადა.","category":"slang","level":"B1"},
-  {"english":"Sic / Sick","georgian":"მაგარი","pronunciation":"/sɪk/","example_en":"That trick was sick!","example_ka":"ის ტრიუკი მაგარი იყო!","category":"slang","level":"A2"},
-  {"english":"Woke","georgian":"გაღვიძებული / ცნობიერი","pronunciation":"/woʊk/","example_en":"Stay woke about social issues.","example_ka":"სოციალურ საკითხებზე ცნობიერი იყავი.","category":"slang","level":"B1"},
-  {"english":"Cringe","georgian":"უხერხული","pronunciation":"/krɪndʒ/","example_en":"That video was so cringe.","example_ka":"ის ვიდეო ძალიან უხერხული იყო.","category":"slang","level":"A2"},
-  {"english":"Based","georgian":"გამბედავი / პრინციპული","pronunciation":"/beɪst/","example_en":"That opinion is so based.","example_ka":"ეს მოსაზრება ძალიან პრინციპულია.","category":"slang","level":"B1"},
-  {"english":"Fire","georgian":"ცეცხლოვანი / მაგარი","pronunciation":"/ˈfaɪər/","example_en":"This new album is fire.","example_ka":"ეს ახალი ალბომი მაგარია.","category":"slang","level":"A2"},
-  {"english":"Bussin","georgian":"გემრიელი / მაგარი","pronunciation":"/ˈbʌsɪn/","example_en":"This food is bussin!","example_ka":"ეს საჭმელი ძალიან გემრიელია!","category":"slang","level":"B1"},
-  {"english":"Rizz","georgian":"მომხიბვლელობა","pronunciation":"/rɪz/","example_en":"He has so much rizz.","example_ka":"მას დიდი მომხიბვლელობა აქვს.","category":"slang","level":"B1"},
-  {"english":"Simp","georgian":"მონა (ვინმეზე)","pronunciation":"/sɪmp/","example_en":"Stop simping for her.","example_ka":"შეწყვიტე მასზე გაგიჟება.","category":"slang","level":"B1"},
-  {"english":"Yeet","georgian":"გადაგდება","pronunciation":"/jiːt/","example_en":"He yeeted the ball across the field.","example_ka":"მან ბურთი მოედნის გაღმა გადაისროლა.","category":"slang","level":"B1"},
-  {"english":"Ratio","georgian":"გადაფარვა","pronunciation":"/ˈreɪʃioʊ/","example_en":"His tweet got ratioed.","example_ka":"მისი ტვიტი გადაფარეს.","category":"slang","level":"B2"},
-  {"english":"W","georgian":"მოგება / გამარჯვება","pronunciation":"/ˈdʌbəljuː/","example_en":"Getting that job was a huge W.","example_ka":"იმ სამსახურის მიღება დიდი მოგება იყო.","category":"slang","level":"B1"},
-  {"english":"L","georgian":"წაგება","pronunciation":"/ɛl/","example_en":"Forgetting the tickets was an L.","example_ka":"ბილეთების დავიწყება წაგება იყო.","category":"slang","level":"B1"},
-  {"english":"Catch feelings","georgian":"შეყვარება","pronunciation":"/kætʃ ˈfiːlɪŋz/","example_en":"I'm starting to catch feelings.","example_ka":"ვიწყებ შეყვარებას.","category":"slang","level":"B1"},
-  {"english":"Slide into DMs","georgian":"პირადში მიწერა","pronunciation":"/slaɪd ˈɪntuː diːˌɛmz/","example_en":"He slid into her DMs.","example_ka":"მან მას პირადში მიწერა.","category":"slang","level":"B1"},
-  {"english":"Drip","georgian":"სტილი","pronunciation":"/drɪp/","example_en":"Nice drip today!","example_ka":"დღეს მაგარი სტილი გაქვს!","category":"slang","level":"B1"},
-  {"english":"Dead","georgian":"მოკვდა (სიცილით)","pronunciation":"/dɛd/","example_en":"I'm dead, that's hilarious!","example_ka":"მოვკვდი სიცილით, ეს სასაცილოა!","category":"slang","level":"A2"},
-  {"english":"Mood","georgian":"განწყობა / ჩემი ხასიათი","pronunciation":"/muːd/","example_en":"Staying in bed all day is a mood.","example_ka":"მთელი დღე საწოლში ყოფნა ჩემი ხასიათია.","category":"slang","level":"A2"},
-  {"english":"Extra","georgian":"ზედმეტი / გადაჭარბებული","pronunciation":"/ˈɛkstrə/","example_en":"She's being so extra today.","example_ka":"ის დღეს ძალიან ზედმეტია.","category":"slang","level":"A2"},
-  {"english":"Periodt","georgian":"წერტილი / და ეს ფინალურია","pronunciation":"/ˈpɪəriəd/","example_en":"She's the best singer, periodt.","example_ka":"ის საუკეთესო მომღერალია, წერტილი.","category":"slang","level":"B1"},
-  {"english":"IRL","georgian":"რეალურ ცხოვრებაში","pronunciation":"/ˌaɪˌɑːrˈɛl/","example_en":"I want to meet you IRL.","example_ka":"რეალურ ცხოვრებაში მინდა შეგხვდე.","category":"slang","level":"A2"},
-  {"english":"NGL","georgian":"არ მოვატყუებ","pronunciation":"/ˌɛnˌdʒiːˈɛl/","example_en":"NGL, that was pretty good.","example_ka":"არ მოგატყუებ, ეს საკმაოდ კარგი იყო.","category":"slang","level":"A2"},
-  {"english":"Binge-watch","georgian":"სერიალის ყურება ზედიზედ","pronunciation":"/bɪndʒ wɒtʃ/","example_en":"I binge-watched the entire season.","example_ka":"მთელი სეზონი ზედიზედ ვუყურე.","category":"slang","level":"A2"},
-  {"english":"Hangover","georgian":"ბოხი","pronunciation":"/ˈhæŋoʊvər/","example_en":"I have a terrible hangover.","example_ka":"საშინელი ბოხი მაქვს.","category":"slang","level":"B1"},
-  {"english":"Vibe check","georgian":"განწყობის შემოწმება","pronunciation":"/vaɪb tʃɛk/","example_en":"Vibe check — how's everyone doing?","example_ka":"განწყობის შემოწმება — ყველა როგორ არის?","category":"slang","level":"B1"},
-  {"english":"Shook","georgian":"შოკირებული","pronunciation":"/ʃʊk/","example_en":"I'm shook, I didn't expect that.","example_ka":"შოკირებული ვარ, ეს არ მელოდა.","category":"slang","level":"B1"},
-  {"english":"Rent-free","georgian":"თავისუფლად (გონებაში)","pronunciation":"/rɛnt friː/","example_en":"That song lives rent-free in my head.","example_ka":"ის სიმღერა ჩემს თავში თავისუფლად ცხოვრობს.","category":"slang","level":"B1"},
-  {"english":"Touch grass","georgian":"გარეთ გადი","pronunciation":"/tʌtʃ ɡræs/","example_en":"You need to touch grass.","example_ka":"გარეთ გასვლა გჭირდება.","category":"slang","level":"B1"},
-  {"english":"Main character","georgian":"მთავარი გმირი","pronunciation":"/meɪn ˈkærɪktər/","example_en":"She's living her main character moment.","example_ka":"ის თავის მთავარი გმირის მომენტს ცხოვრობს.","category":"slang","level":"B1"}
+  {
+    "english": "Cool",
+    "georgian": "მაგარი",
+    "pronunciation": "/kuːl/",
+    "example_en": "That's so cool!",
+    "example_ka": "ეს ძალიან მაგარია!",
+    "category": "slang",
+    "level": "A1"
+  },
+  {
+    "english": "Chill",
+    "georgian": "მოდუნება",
+    "pronunciation": "/tʃɪl/",
+    "example_en": "Let's just chill at home tonight.",
+    "example_ka": "დღეს საღამოს სახლში მოვიდუნოთ.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Vibe",
+    "georgian": "განწყობა",
+    "pronunciation": "/vaɪb/",
+    "example_en": "This place has a great vibe.",
+    "example_ka": "ამ ადგილს შესანიშნავი განწყობა აქვს.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Lit",
+    "georgian": "ცეცხლოვანი",
+    "pronunciation": "/lɪt/",
+    "example_en": "The party was lit last night.",
+    "example_ka": "გუშინ წვეულება ცეცხლოვანი იყო.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Salty",
+    "georgian": "გაბრაზებული",
+    "pronunciation": "/ˈsɔːlti/",
+    "example_en": "Why are you so salty about it?",
+    "example_ka": "რატომ ხარ ასე გაბრაზებული ამის გამო?",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Ghost",
+    "georgian": "გაქრობა",
+    "pronunciation": "/ɡoʊst/",
+    "example_en": "He ghosted me after our date.",
+    "example_ka": "პაემნის შემდეგ ის გაქრა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Flex",
+    "georgian": "მოწონება",
+    "pronunciation": "/flɛks/",
+    "example_en": "He's always flexing his new car.",
+    "example_ka": "ის ახალ მანქანას ყოველთვის აჩვენებს.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Slay",
+    "georgian": "მოკლვა (გაანადგურა)",
+    "pronunciation": "/sleɪ/",
+    "example_en": "She slayed that presentation.",
+    "example_ka": "მან პრეზენტაცია გაანადგურა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "GOAT",
+    "georgian": "საუკეთესო",
+    "pronunciation": "/ɡoʊt/",
+    "example_en": "Messi is the GOAT.",
+    "example_ka": "მესი საუკეთესოა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Lowkey",
+    "georgian": "ფარულად",
+    "pronunciation": "/ˈloʊˌkiː/",
+    "example_en": "I lowkey want to go home.",
+    "example_ka": "ფარულად სახლში წასვლა მინდა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Highkey",
+    "georgian": "აშკარად",
+    "pronunciation": "/ˈhaɪˌkiː/",
+    "example_en": "I highkey love this song.",
+    "example_ka": "აშკარად მიყვარს ეს სიმღერა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Sus",
+    "georgian": "საეჭვო",
+    "pronunciation": "/sʌs/",
+    "example_en": "That guy is acting sus.",
+    "example_ka": "ის ბიჭი საეჭვოდ იქცევა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "No cap",
+    "georgian": "სერიოზულად",
+    "pronunciation": "/noʊ kæp/",
+    "example_en": "No cap, this is the best pizza ever.",
+    "example_ka": "სერიოზულად, ეს საუკეთესო პიცაა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Cap",
+    "georgian": "ტყუილი",
+    "pronunciation": "/kæp/",
+    "example_en": "That's cap, I don't believe you.",
+    "example_ka": "ეს ტყუილია, არ გჯერა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Bet",
+    "georgian": "კარგი / შეთანხმებულია",
+    "pronunciation": "/bɛt/",
+    "example_en": "Want to grab lunch? — Bet.",
+    "example_ka": "სადილზე წავიდეთ? — კარგი.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Bruh",
+    "georgian": "ძმაო",
+    "pronunciation": "/brʌ/",
+    "example_en": "Bruh, you can't be serious.",
+    "example_ka": "ძმაო, სერიოზულად ვერ ამბობ.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Dude",
+    "georgian": "ბიჭო",
+    "pronunciation": "/duːd/",
+    "example_en": "Dude, that was amazing!",
+    "example_ka": "ბიჭო, ეს საოცარი იყო!",
+    "category": "slang",
+    "level": "A1"
+  },
+  {
+    "english": "Bro",
+    "georgian": "ძმაო",
+    "pronunciation": "/broʊ/",
+    "example_en": "What's up, bro?",
+    "example_ka": "რა ხდება, ძმაო?",
+    "category": "slang",
+    "level": "A1"
+  },
+  {
+    "english": "Fam",
+    "georgian": "ოჯახი / ახლობელი",
+    "pronunciation": "/fæm/",
+    "example_en": "What's good, fam?",
+    "example_ka": "როგორ ხარ, ახლობელო?",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "LOL",
+    "georgian": "ხმამაღლა სიცილი",
+    "pronunciation": "/ˌɛlˌoʊˈɛl/",
+    "example_en": "LOL, that was hilarious.",
+    "example_ka": "ჰაჰა, ეს სასაცილო იყო.",
+    "category": "slang",
+    "level": "A1"
+  },
+  {
+    "english": "OMG",
+    "georgian": "ღმერთო ჩემო",
+    "pronunciation": "/ˌoʊˌɛmˈdʒiː/",
+    "example_en": "OMG, I can't believe it!",
+    "example_ka": "ღმერთო ჩემო, ვერ ვიჯერებ!",
+    "category": "slang",
+    "level": "A1"
+  },
+  {
+    "english": "BRB",
+    "georgian": "მალე დავბრუნდები",
+    "pronunciation": "/ˌbiːˌɑːrˈbiː/",
+    "example_en": "BRB, I need to grab something.",
+    "example_ka": "მალე დავბრუნდები, რაღაც უნდა ავიღო.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "DM",
+    "georgian": "პირადი შეტყობინება",
+    "pronunciation": "/ˌdiːˈɛm/",
+    "example_en": "Send me a DM.",
+    "example_ka": "პირადი შეტყობინება გამომიგზავნე.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "TBH",
+    "georgian": "გულახდილად",
+    "pronunciation": "/ˌtiːbiːˈeɪtʃ/",
+    "example_en": "TBH, I don't really care.",
+    "example_ka": "გულახდილად, ნამდვილად არ მაინტერესებს.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "FOMO",
+    "georgian": "გამოტოვების შიში",
+    "pronunciation": "/ˈfoʊmoʊ/",
+    "example_en": "I have serious FOMO right now.",
+    "example_ka": "ახლა სერიოზული გამოტოვების შიში მაქვს.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Savage",
+    "georgian": "სასტიკი / მაგარი",
+    "pronunciation": "/ˈsævɪdʒ/",
+    "example_en": "That comeback was savage.",
+    "example_ka": "ის პასუხი სასტიკი იყო.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Shade",
+    "georgian": "შენიშვნა / სიხარბე",
+    "pronunciation": "/ʃeɪd/",
+    "example_en": "She threw shade at him.",
+    "example_ka": "მან მას შენიშვნა მისცა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Tea",
+    "georgian": "ჭორი",
+    "pronunciation": "/tiː/",
+    "example_en": "Spill the tea! What happened?",
+    "example_ka": "ჭორი მომიყევი! რა მოხდა?",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Snatched",
+    "georgian": "იდეალური",
+    "pronunciation": "/snætʃt/",
+    "example_en": "Your outfit is snatched!",
+    "example_ka": "შენი ტანსაცმელი იდეალურია!",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Stan",
+    "georgian": "მიძღვნილი გულშემატკივარი",
+    "pronunciation": "/stæn/",
+    "example_en": "I stan this artist.",
+    "example_ka": "ამ შემსრულებლის მიძღვნილი გულშემატკივარი ვარ.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Clout",
+    "georgian": "გავლენა",
+    "pronunciation": "/klaʊt/",
+    "example_en": "He's just doing it for clout.",
+    "example_ka": "ის ამას მხოლოდ გავლენისთვის აკეთებს.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Glow up",
+    "georgian": "გარდაქმნა",
+    "pronunciation": "/ɡloʊ ʌp/",
+    "example_en": "She had a major glow up.",
+    "example_ka": "მან სერიოზული გარდაქმნა განიცადა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Sic / Sick",
+    "georgian": "მაგარი",
+    "pronunciation": "/sɪk/",
+    "example_en": "That trick was sick!",
+    "example_ka": "ის ტრიუკი მაგარი იყო!",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Woke",
+    "georgian": "გაღვიძებული / ცნობიერი",
+    "pronunciation": "/woʊk/",
+    "example_en": "Stay woke about social issues.",
+    "example_ka": "სოციალურ საკითხებზე ცნობიერი იყავი.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Cringe",
+    "georgian": "უხერხული",
+    "pronunciation": "/krɪndʒ/",
+    "example_en": "That video was so cringe.",
+    "example_ka": "ის ვიდეო ძალიან უხერხული იყო.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Based",
+    "georgian": "გამბედავი / პრინციპული",
+    "pronunciation": "/beɪst/",
+    "example_en": "That opinion is so based.",
+    "example_ka": "ეს მოსაზრება ძალიან პრინციპულია.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Fire",
+    "georgian": "ცეცხლოვანი / მაგარი",
+    "pronunciation": "/ˈfaɪər/",
+    "example_en": "This new album is fire.",
+    "example_ka": "ეს ახალი ალბომი მაგარია.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Bussin",
+    "georgian": "გემრიელი / მაგარი",
+    "pronunciation": "/ˈbʌsɪn/",
+    "example_en": "This food is bussin!",
+    "example_ka": "ეს საჭმელი ძალიან გემრიელია!",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Rizz",
+    "georgian": "მომხიბვლელობა",
+    "pronunciation": "/rɪz/",
+    "example_en": "He has so much rizz.",
+    "example_ka": "მას დიდი მომხიბვლელობა აქვს.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Simp",
+    "georgian": "მონა (ვინმეზე)",
+    "pronunciation": "/sɪmp/",
+    "example_en": "Stop simping for her.",
+    "example_ka": "შეწყვიტე მასზე გაგიჟება.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Yeet",
+    "georgian": "გადაგდება",
+    "pronunciation": "/jiːt/",
+    "example_en": "He yeeted the ball across the field.",
+    "example_ka": "მან ბურთი მოედნის გაღმა გადაისროლა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Ratio",
+    "georgian": "გადაფარვა",
+    "pronunciation": "/ˈreɪʃioʊ/",
+    "example_en": "His tweet got ratioed.",
+    "example_ka": "მისი ტვიტი გადაფარეს.",
+    "category": "slang",
+    "level": "B2"
+  },
+  {
+    "english": "W",
+    "georgian": "მოგება / გამარჯვება",
+    "pronunciation": "/ˈdʌbəljuː/",
+    "example_en": "Getting that job was a huge W.",
+    "example_ka": "იმ სამსახურის მიღება დიდი მოგება იყო.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "L",
+    "georgian": "წაგება",
+    "pronunciation": "/ɛl/",
+    "example_en": "Forgetting the tickets was an L.",
+    "example_ka": "ბილეთების დავიწყება წაგება იყო.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Catch feelings",
+    "georgian": "შეყვარება",
+    "pronunciation": "/kætʃ ˈfiːlɪŋz/",
+    "example_en": "I'm starting to catch feelings.",
+    "example_ka": "ვიწყებ შეყვარებას.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Slide into DMs",
+    "georgian": "პირადში მიწერა",
+    "pronunciation": "/slaɪd ˈɪntuː diːˌɛmz/",
+    "example_en": "He slid into her DMs.",
+    "example_ka": "მან მას პირადში მიწერა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Drip",
+    "georgian": "სტილი",
+    "pronunciation": "/drɪp/",
+    "example_en": "Nice drip today!",
+    "example_ka": "დღეს მაგარი სტილი გაქვს!",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Dead",
+    "georgian": "მოკვდა (სიცილით)",
+    "pronunciation": "/dɛd/",
+    "example_en": "I'm dead, that's hilarious!",
+    "example_ka": "მოვკვდი სიცილით, ეს სასაცილოა!",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Mood",
+    "georgian": "განწყობა / ჩემი ხასიათი",
+    "pronunciation": "/muːd/",
+    "example_en": "Staying in bed all day is a mood.",
+    "example_ka": "მთელი დღე საწოლში ყოფნა ჩემი ხასიათია.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Extra",
+    "georgian": "ზედმეტი / გადაჭარბებული",
+    "pronunciation": "/ˈɛkstrə/",
+    "example_en": "She's being so extra today.",
+    "example_ka": "ის დღეს ძალიან ზედმეტია.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Periodt",
+    "georgian": "წერტილი / და ეს ფინალურია",
+    "pronunciation": "/ˈpɪəriəd/",
+    "example_en": "She's the best singer, periodt.",
+    "example_ka": "ის საუკეთესო მომღერალია, წერტილი.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "IRL",
+    "georgian": "რეალურ ცხოვრებაში",
+    "pronunciation": "/ˌaɪˌɑːrˈɛl/",
+    "example_en": "I want to meet you IRL.",
+    "example_ka": "რეალურ ცხოვრებაში მინდა შეგხვდე.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "NGL",
+    "georgian": "არ მოვატყუებ",
+    "pronunciation": "/ˌɛnˌdʒiːˈɛl/",
+    "example_en": "NGL, that was pretty good.",
+    "example_ka": "არ მოგატყუებ, ეს საკმაოდ კარგი იყო.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Binge-watch",
+    "georgian": "სერიალის ყურება ზედიზედ",
+    "pronunciation": "/bɪndʒ wɒtʃ/",
+    "example_en": "I binge-watched the entire season.",
+    "example_ka": "მთელი სეზონი ზედიზედ ვუყურე.",
+    "category": "slang",
+    "level": "A2"
+  },
+  {
+    "english": "Hangover",
+    "georgian": "ბოხი",
+    "pronunciation": "/ˈhæŋoʊvər/",
+    "example_en": "I have a terrible hangover.",
+    "example_ka": "საშინელი ბოხი მაქვს.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Vibe check",
+    "georgian": "განწყობის შემოწმება",
+    "pronunciation": "/vaɪb tʃɛk/",
+    "example_en": "Vibe check — how's everyone doing?",
+    "example_ka": "განწყობის შემოწმება — ყველა როგორ არის?",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Shook",
+    "georgian": "შოკირებული",
+    "pronunciation": "/ʃʊk/",
+    "example_en": "I'm shook, I didn't expect that.",
+    "example_ka": "შოკირებული ვარ, ეს არ მელოდა.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Rent-free",
+    "georgian": "თავისუფლად (გონებაში)",
+    "pronunciation": "/rɛnt friː/",
+    "example_en": "That song lives rent-free in my head.",
+    "example_ka": "ის სიმღერა ჩემს თავში თავისუფლად ცხოვრობს.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Touch grass",
+    "georgian": "გარეთ გადი",
+    "pronunciation": "/tʌtʃ ɡræs/",
+    "example_en": "You need to touch grass.",
+    "example_ka": "გარეთ გასვლა გჭირდება.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "Main character",
+    "georgian": "მთავარი გმირი",
+    "pronunciation": "/meɪn ˈkærɪktər/",
+    "example_en": "She's living her main character moment.",
+    "example_ka": "ის თავის მთავარი გმირის მომენტს ცხოვრობს.",
+    "category": "slang",
+    "level": "B1"
+  },
+  {
+    "english": "main character energy",
+    "georgian": "მთავარი გმირის ენერგია",
+    "pronunciation": "/meɪn ˈkærɪktər ˈenərdʒi/",
+    "example_en": "She walked in with main character energy.",
+    "example_ka": "ის მთავარი გმირის ენერგიით შემოვიდა.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "sigma",
+    "georgian": "სიგმა / დამოუკიდებელი ადამიანი",
+    "pronunciation": "/ˈsɪɡmə/",
+    "example_en": "He doesn't care what anyone thinks — total sigma.",
+    "example_ka": "არ აინტერესებს სხვები რას ფიქრობენ — სრული სიგმაა.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "NPC behavior",
+    "georgian": "NPC-ს ქცევა / უაზრო ქცევა",
+    "pronunciation": "/en piː siː bɪˈheɪvjər/",
+    "example_en": "He just follows the crowd — total NPC behavior.",
+    "example_ka": "ის უბრალოდ ბრბოს მიჰყვება — სრული NPC-ს ქცევაა.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "W (win)",
+    "georgian": "მოგება / გამარჯვება",
+    "pronunciation": "/dʌbəljuː/",
+    "example_en": "Getting into that university is a huge W.",
+    "example_ka": "იმ უნივერსიტეტში ჩაბარება დიდი მოგებაა.",
+    "category": "modern-slang-2026",
+    "level": "A2"
+  },
+  {
+    "english": "L (loss)",
+    "georgian": "წაგება / მარცხი",
+    "pronunciation": "/el/",
+    "example_en": "Missing that concert was such an L.",
+    "example_ka": "იმ კონცერტის გაცდენა დიდი წაგება იყო.",
+    "category": "modern-slang-2026",
+    "level": "A2"
+  },
+  {
+    "english": "era",
+    "georgian": "ერა / პერიოდი",
+    "pronunciation": "/ˈɪrə/",
+    "example_en": "I'm in my gym era right now.",
+    "example_ka": "ახლა ჩემს სავარჯიშო ერაში ვარ.",
+    "category": "modern-slang-2026",
+    "level": "A2"
+  },
+  {
+    "english": "gatekeep",
+    "georgian": "არ გაზიარო / შეინახო",
+    "pronunciation": "/ˈɡeɪtkiːp/",
+    "example_en": "Don't gatekeep — tell me where you got that jacket!",
+    "example_ka": "ნუ მალავ — მითხარი სად იყიდე ეს ქურთუკი!",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "girlboss",
+    "georgian": "ძლიერი ქალი / გერლბოსი",
+    "pronunciation": "/ˈɡɜːrlbɒs/",
+    "example_en": "She started her own business at 22 — total girlboss.",
+    "example_ka": "22 წლისამ საკუთარი ბიზნესი წამოიწყო — სრული გერლბოსია.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "it's giving",
+    "georgian": "ჰგავს / იძლევა ვაიბს",
+    "pronunciation": "/ɪts ˈɡɪvɪŋ/",
+    "example_en": "That outfit is giving 90s vibes.",
+    "example_ka": "ეს ტანსაცმელი 90-იანების ვაიბს იძლევა.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "ick",
+    "georgian": "ზიზღი / უხერხულობა",
+    "pronunciation": "/ɪk/",
+    "example_en": "He chews with his mouth open — that's such an ick.",
+    "example_ka": "ის ღია პირით ღეჭავს — ეს ისეთი იქია.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "delulu",
+    "georgian": "ილუზიაში მყოფი",
+    "pronunciation": "/dɪˈluːluː/",
+    "example_en": "She thinks he likes her — she's so delulu.",
+    "example_ka": "ეგონა, რომ ის მოსწონს — ძალიან ილუზიაშია.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "ate",
+    "georgian": "მაგრად გააკეთე (წარსულში)",
+    "pronunciation": "/eɪt/",
+    "example_en": "She ate that performance — everyone was speechless.",
+    "example_ka": "მან ეს პერფორმანსი მაგრად გააკეთა — ყველა განცვიფრებული იყო.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "understood the assignment",
+    "georgian": "დავალება გაიგე",
+    "pronunciation": "/ˌʌndərˈstʊd ðə əˈsaɪnmənt/",
+    "example_en": "Her outfit for the party? She understood the assignment.",
+    "example_ka": "მისი ტანსაცმელი წვეულებისთვის? მან დავალება მშვენივრად გაიგო.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "mid",
+    "georgian": "საშუალო / არაფერი განსაკუთრებული",
+    "pronunciation": "/mɪd/",
+    "example_en": "That movie was mid — nothing special.",
+    "example_ka": "ის ფილმი საშუალო იყო — არაფერი განსაკუთრებული.",
+    "category": "modern-slang-2026",
+    "level": "A2"
+  },
+  {
+    "english": "ghosting",
+    "georgian": "პასუხის არმიცემა / გაქრობა",
+    "pronunciation": "/ˈɡoʊstɪŋ/",
+    "example_en": "She stopped replying — she's ghosting me.",
+    "example_ka": "წერას შეწყვიტა — პასუხს აღარ მიბრუნებს.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "caught in 4K",
+    "georgian": "მიჩხვლეტილი / ფაქტზე დაჭერილი",
+    "pronunciation": "/kɔːt ɪn fɔːr keɪ/",
+    "example_en": "He lied about being sick but was caught in 4K at a party.",
+    "example_ka": "ავადმყოფობას ასაბაბებდა, მაგრამ წვეულებაზე ფაქტზე დაიჭირეს.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "brainrot",
+    "georgian": "ტვინის გალღობა / უაზრო კონტენტი",
+    "pronunciation": "/ˈbreɪnrɒt/",
+    "example_en": "I've been watching brainrot videos all day.",
+    "example_ka": "მთელი დღე ტვინის გამლღობ ვიდეოებს ვუყურე.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "aura",
+    "georgian": "აურა / მიმზიდველობის ენერგია",
+    "pronunciation": "/ˈɔːrə/",
+    "example_en": "He lost 50 aura points for that awkward joke.",
+    "example_ka": "იმ უხერხულმა ხუმრობამ 50 აურის ქულა დააკარგვინა.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "core",
+    "georgian": "სტილი / ესთეტიკა",
+    "pronunciation": "/kɔːr/",
+    "example_en": "Her room is very cottagecore.",
+    "example_ka": "მისი ოთახი ძალიან კოთეჯქორია.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "living my best life",
+    "georgian": "საუკეთესო ცხოვრებით ვცხოვრობ",
+    "pronunciation": "/ˈlɪvɪŋ maɪ best laɪf/",
+    "example_en": "I'm in Batumi, living my best life.",
+    "example_ka": "ბათუმში ვარ, საუკეთესო ცხოვრებით ვცხოვრობ.",
+    "category": "modern-slang-2026",
+    "level": "A2"
+  },
+  {
+    "english": "red flag",
+    "georgian": "საფრთხის ნიშანი / წითელი დროშა",
+    "pronunciation": "/red flæɡ/",
+    "example_en": "If they're rude to waiters, that's a red flag.",
+    "example_ka": "თუ ოფიციანტებთან უხეშია, ეს წითელი დროშაა.",
+    "category": "modern-slang-2026",
+    "level": "A2"
+  },
+  {
+    "english": "green flag",
+    "georgian": "კარგი ნიშანი / მწვანე დროშა",
+    "pronunciation": "/ɡriːn flæɡ/",
+    "example_en": "He remembers small details — that's a green flag.",
+    "example_ka": "ის პატარა დეტალებს იმახსოვრებს — ეს მწვანე დროშაა.",
+    "category": "modern-slang-2026",
+    "level": "A2"
+  },
+  {
+    "english": "beige flag",
+    "georgian": "უცნაური ჩვევა / ბეჟის დროშა",
+    "pronunciation": "/beɪʒ flæɡ/",
+    "example_en": "He alphabetizes his spices — total beige flag.",
+    "example_ka": "ის სანელებლებს ანბანის მიხედვით ალაგებს — სრული ბეჟის დროშაა.",
+    "category": "modern-slang-2026",
+    "level": "B2"
+  },
+  {
+    "english": "pick me",
+    "georgian": "ყურადღების მაძიებელი",
+    "pronunciation": "/pɪk miː/",
+    "example_en": "She always acts different around guys — such pick me behavior.",
+    "example_ka": "ბიჭების გარშემო ყოველთვის სხვანაირად იქცევა — ყურადღების მაძიებელი ქცევაა.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "Roman Empire",
+    "georgian": "რომის იმპერია (ფიქრების ობსესია)",
+    "pronunciation": "/ˈroʊmən ˈempaɪər/",
+    "example_en": "Georgian history is my Roman Empire — I think about it every day.",
+    "example_ka": "საქართველოს ისტორია ჩემი რომის იმპერიაა — ყოველდღე ვფიქრობ ამაზე.",
+    "category": "modern-slang-2026",
+    "level": "B2"
+  },
+  {
+    "english": "unhinged",
+    "georgian": "გიჟური / გაუტეხელი",
+    "pronunciation": "/ʌnˈhɪndʒd/",
+    "example_en": "Her reaction was completely unhinged.",
+    "example_ka": "მისი რეაქცია სრულიად გიჟური იყო.",
+    "category": "modern-slang-2026",
+    "level": "B1"
+  },
+  {
+    "english": "understood the read",
+    "georgian": "სწორად წაიკითხა სიტუაცია",
+    "pronunciation": "/ˌʌndərˈstʊd ðə riːd/",
+    "example_en": "She read the room perfectly and kept quiet.",
+    "example_ka": "მან სიტუაცია სწორად წაიკითხა და გაჩუმდა.",
+    "category": "modern-slang-2026",
+    "level": "B2"
+  }
 ]

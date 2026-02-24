@@ -1,62 +1,767 @@
 [
-  {"english": "Holiday", "georgian": "დღესასწაული", "pronunciation": "/ˈhɒlɪdeɪ/", "example_en": "Christmas is my favorite holiday.", "example_ka": "შობა ჩემი საყვარელი დღესასწაულია.", "category": "holidays", "level": "A1"},
-  {"english": "Celebration", "georgian": "ზეიმი", "pronunciation": "/ˌselɪˈbreɪʃən/", "example_en": "The celebration lasted all night.", "example_ka": "ზეიმი მთელ ღამეს გაგრძელდა.", "category": "holidays", "level": "A1"},
-  {"english": "Party", "georgian": "წვეულება", "pronunciation": "/ˈpɑːrti/", "example_en": "We are having a birthday party.", "example_ka": "დაბადების დღის წვეულებას ვმართავთ.", "category": "holidays", "level": "A1"},
-  {"english": "Gift", "georgian": "საჩუქარი", "pronunciation": "/ɡɪft/", "example_en": "She gave me a beautiful gift.", "example_ka": "მან ლამაზი საჩუქარი მაჩუქა.", "category": "holidays", "level": "A1"},
-  {"english": "Present", "georgian": "საჩუქარი", "pronunciation": "/ˈprezənt/", "example_en": "I bought presents for everyone.", "example_ka": "ყველასთვის საჩუქრები ვიყიდე.", "category": "holidays", "level": "A1"},
-  {"english": "Birthday", "georgian": "დაბადების დღე", "pronunciation": "/ˈbɜːrθdeɪ/", "example_en": "Happy birthday to you!", "example_ka": "გილოცავ დაბადების დღეს!", "category": "holidays", "level": "A1"},
-  {"english": "Cake", "georgian": "ტორტი", "pronunciation": "/keɪk/", "example_en": "We ordered a chocolate cake.", "example_ka": "შოკოლადის ტორტი შევუკვეთეთ.", "category": "holidays", "level": "A1"},
-  {"english": "Candle", "georgian": "სანთელი", "pronunciation": "/ˈkændəl/", "example_en": "Blow out the candles on the cake.", "example_ka": "ტორტზე სანთლები ჩააქრე.", "category": "holidays", "level": "A1"},
-  {"english": "Balloon", "georgian": "ბუშტი", "pronunciation": "/bəˈluːn/", "example_en": "The room was decorated with balloons.", "example_ka": "ოთახი ბუშტებით იყო მორთული.", "category": "holidays", "level": "A1"},
-  {"english": "Decoration", "georgian": "დეკორაცია", "pronunciation": "/ˌdekəˈreɪʃən/", "example_en": "The decorations look wonderful.", "example_ka": "დეკორაცია მშვენივრად გამოიყურება.", "category": "holidays", "level": "A1"},
-  {"english": "Christmas", "georgian": "შობა", "pronunciation": "/ˈkrɪsməs/", "example_en": "We celebrate Christmas in January.", "example_ka": "შობას იანვარში ვზეიმობთ.", "category": "holidays", "level": "A1"},
-  {"english": "New Year", "georgian": "ახალი წელი", "pronunciation": "/njuː jɪər/", "example_en": "Happy New Year!", "example_ka": "გილოცავთ ახალ წელს!", "category": "holidays", "level": "A1"},
-  {"english": "Easter", "georgian": "აღდგომა", "pronunciation": "/ˈiːstər/", "example_en": "Easter is a very important holiday.", "example_ka": "აღდგომა ძალიან მნიშვნელოვანი დღესასწაულია.", "category": "holidays", "level": "A1"},
-  {"english": "Valentine's Day", "georgian": "წმინდა ვალენტინის დღე", "pronunciation": "/ˈvæləntaɪnz deɪ/", "example_en": "He gave her flowers on Valentine's Day.", "example_ka": "წმინდა ვალენტინის დღეს ყვავილები აჩუქა.", "category": "holidays", "level": "A1"},
-  {"english": "Halloween", "georgian": "ჰელოუინი", "pronunciation": "/ˌhæloʊˈiːn/", "example_en": "Kids wear costumes on Halloween.", "example_ka": "ჰელოუინზე ბავშვები კოსტიუმებს იცვამენ.", "category": "holidays", "level": "A1"},
-  {"english": "Thanksgiving", "georgian": "მადლიერების დღე", "pronunciation": "/ˌθæŋksˈɡɪvɪŋ/", "example_en": "Thanksgiving is an American tradition.", "example_ka": "მადლიერების დღე ამერიკული ტრადიციაა.", "category": "holidays", "level": "A2"},
-  {"english": "Tradition", "georgian": "ტრადიცია", "pronunciation": "/trəˈdɪʃən/", "example_en": "It is a family tradition.", "example_ka": "ეს საოჯახო ტრადიციაა.", "category": "holidays", "level": "A1"},
-  {"english": "Custom", "georgian": "ჩვეულება", "pronunciation": "/ˈkʌstəm/", "example_en": "Each country has its own customs.", "example_ka": "ყველა ქვეყანას თავისი ჩვეულებები აქვს.", "category": "holidays", "level": "A2"},
-  {"english": "Fireworks", "georgian": "ფეიერვერკი", "pronunciation": "/ˈfaɪərwɜːrks/", "example_en": "We watched fireworks at midnight.", "example_ka": "შუაღამისას ფეიერვერკი ვუყურეთ.", "category": "holidays", "level": "A1"},
-  {"english": "Invitation", "georgian": "მოწვევა", "pronunciation": "/ˌɪnvɪˈteɪʃən/", "example_en": "I received an invitation to the party.", "example_ka": "წვეულებაზე მოწვევა მივიღე.", "category": "holidays", "level": "A2"},
-  {"english": "Guest", "georgian": "სტუმარი", "pronunciation": "/ɡest/", "example_en": "We have guests coming tonight.", "example_ka": "დღეს საღამოს სტუმრები მოდიან.", "category": "holidays", "level": "A1"},
-  {"english": "Host", "georgian": "მასპინძელი", "pronunciation": "/hoʊst/", "example_en": "She is the host of the event.", "example_ka": "ის ღონისძიების მასპინძელია.", "category": "holidays", "level": "A2"},
-  {"english": "Toast", "georgian": "სადღეგრძელო", "pronunciation": "/toʊst/", "example_en": "Let's raise a toast to the new year!", "example_ka": "მოდი, ახალ წელს სადღეგრძელო ავუმაღლოთ!", "category": "holidays", "level": "A2"},
-  {"english": "Feast", "georgian": "ნადიმი", "pronunciation": "/fiːst/", "example_en": "The feast was magnificent.", "example_ka": "ნადიმი დიდებული იყო.", "category": "holidays", "level": "A2"},
-  {"english": "Wrapping paper", "georgian": "შესაფუთი ქაღალდი", "pronunciation": "/ˈræpɪŋ ˈpeɪpər/", "example_en": "I need more wrapping paper.", "example_ka": "მეტი შესაფუთი ქაღალდი მჭირდება.", "category": "holidays", "level": "A2"},
-  {"english": "Ribbon", "georgian": "ლენტი", "pronunciation": "/ˈrɪbən/", "example_en": "Tie a ribbon around the gift.", "example_ka": "საჩუქარს ლენტი შემოაბი.", "category": "holidays", "level": "A2"},
-  {"english": "Greeting card", "georgian": "მისალოცი ბარათი", "pronunciation": "/ˈɡriːtɪŋ kɑːrd/", "example_en": "I sent a greeting card to my friend.", "example_ka": "მეგობარს მისალოცი ბარათი გავუგზავნე.", "category": "holidays", "level": "A1"},
-  {"english": "Surprise", "georgian": "სიურპრიზი", "pronunciation": "/sərˈpraɪz/", "example_en": "We planned a surprise party.", "example_ka": "სიურპრიზ წვეულება დავგეგმეთ.", "category": "holidays", "level": "A1"},
-  {"english": "Congratulations", "georgian": "გილოცავთ", "pronunciation": "/kənˌɡrætʃəˈleɪʃənz/", "example_en": "Congratulations on your wedding!", "example_ka": "გილოცავთ ქორწილს!", "category": "holidays", "level": "A1"},
-  {"english": "Wedding", "georgian": "ქორწილი", "pronunciation": "/ˈwedɪŋ/", "example_en": "The wedding ceremony was beautiful.", "example_ka": "ქორწილის ცერემონია მშვენიერი იყო.", "category": "holidays", "level": "A1"},
-  {"english": "Anniversary", "georgian": "წლისთავი", "pronunciation": "/ˌænɪˈvɜːrsəri/", "example_en": "They celebrated their tenth anniversary.", "example_ka": "მათ მეათე წლისთავი აღნიშნეს.", "category": "holidays", "level": "A2"},
-  {"english": "Costume", "georgian": "კოსტიუმი", "pronunciation": "/ˈkɒstjuːm/", "example_en": "She wore a pirate costume.", "example_ka": "მეკობრის კოსტიუმი ეცვა.", "category": "holidays", "level": "A1"},
-  {"english": "Parade", "georgian": "აღლუმი", "pronunciation": "/pəˈreɪd/", "example_en": "The parade went through the city center.", "example_ka": "აღლუმი ქალაქის ცენტრში გაიარა.", "category": "holidays", "level": "A2"},
-  {"english": "Festival", "georgian": "ფესტივალი", "pronunciation": "/ˈfestɪvəl/", "example_en": "The music festival was amazing.", "example_ka": "მუსიკალური ფესტივალი საოცარი იყო.", "category": "holidays", "level": "A1"},
-  {"english": "Carnival", "georgian": "კარნავალი", "pronunciation": "/ˈkɑːrnɪvəl/", "example_en": "The carnival had colorful costumes.", "example_ka": "კარნავალზე ფერადი კოსტიუმები იყო.", "category": "holidays", "level": "A2"},
-  {"english": "Confetti", "georgian": "კონფეტი", "pronunciation": "/kənˈfeti/", "example_en": "They threw confetti in the air.", "example_ka": "ჰაერში კონფეტი მოფანტეს.", "category": "holidays", "level": "A2"},
-  {"english": "Wish", "georgian": "სურვილი", "pronunciation": "/wɪʃ/", "example_en": "Make a wish before blowing candles.", "example_ka": "სანთლების ჩაქრობამდე სურვილი ისურვე.", "category": "holidays", "level": "A1"},
-  {"english": "Celebrate", "georgian": "ზეიმობა", "pronunciation": "/ˈselɪbreɪt/", "example_en": "Let's celebrate your success!", "example_ka": "მოდი, შენს წარმატებას აღვნიშნოთ!", "category": "holidays", "level": "A1"},
-  {"english": "Champagne", "georgian": "შამპანური", "pronunciation": "/ʃæmˈpeɪn/", "example_en": "We opened a bottle of champagne.", "example_ka": "შამპანურის ბოთლი გავხსენით.", "category": "holidays", "level": "A2"},
-  {"english": "Midnight", "georgian": "შუაღამე", "pronunciation": "/ˈmɪdnaɪt/", "example_en": "We count down to midnight on New Year's.", "example_ka": "ახალ წელს შუაღამემდე ვითვლით.", "category": "holidays", "level": "A1"},
-  {"english": "Countdown", "georgian": "უკუთვლა", "pronunciation": "/ˈkaʊntdaʊn/", "example_en": "The countdown to New Year has begun.", "example_ka": "ახალი წლის უკუთვლა დაიწყო.", "category": "holidays", "level": "A2"},
-  {"english": "Resolution", "georgian": "გადაწყვეტილება", "pronunciation": "/ˌrezəˈluːʃən/", "example_en": "My New Year's resolution is to exercise more.", "example_ka": "ჩემი საახალწლო გადაწყვეტილებაა მეტი ვივარჯიშო.", "category": "holidays", "level": "A2"},
-  {"english": "Ornament", "georgian": "სამკაული", "pronunciation": "/ˈɔːrnəmənt/", "example_en": "Hang the ornaments on the tree.", "example_ka": "ხეზე სამკაულები ჩამოკიდე.", "category": "holidays", "level": "A2"},
-  {"english": "Christmas tree", "georgian": "ნაძვის ხე", "pronunciation": "/ˈkrɪsməs triː/", "example_en": "We decorated the Christmas tree.", "example_ka": "ნაძვის ხე მოვრთეთ.", "category": "holidays", "level": "A1"},
-  {"english": "Santa Claus", "georgian": "სანტა კლაუსი", "pronunciation": "/ˌsæntə ˈklɔːz/", "example_en": "Children believe in Santa Claus.", "example_ka": "ბავშვები სანტა კლაუსის სჯერათ.", "category": "holidays", "level": "A1"},
-  {"english": "Stocking", "georgian": "საშობაო წინდა", "pronunciation": "/ˈstɒkɪŋ/", "example_en": "Hang your stocking by the fireplace.", "example_ka": "საშობაო წინდა ბუხრის პირას ჩამოკიდე.", "category": "holidays", "level": "A2"},
-  {"english": "Gingerbread", "georgian": "კოჟრის ნამცხვარი", "pronunciation": "/ˈdʒɪndʒərbred/", "example_en": "We baked gingerbread cookies.", "example_ka": "კოჟრის ნამცხვრები გამოვაცხვეთ.", "category": "holidays", "level": "A2"},
-  {"english": "Reunion", "georgian": "შეხვედრა", "pronunciation": "/riːˈjuːniən/", "example_en": "The family reunion was wonderful.", "example_ka": "ოჯახური შეხვედრა მშვენიერი იყო.", "category": "holidays", "level": "A2"},
-  {"english": "Harvest", "georgian": "მოსავალი", "pronunciation": "/ˈhɑːrvɪst/", "example_en": "Thanksgiving celebrates the harvest.", "example_ka": "მადლიერების დღე მოსავალს აღნიშნავს.", "category": "holidays", "level": "A2"},
-  {"english": "Turkey", "georgian": "ინდაური", "pronunciation": "/ˈtɜːrki/", "example_en": "We eat turkey on Thanksgiving.", "example_ka": "მადლიერების დღეს ინდაურს ვჭამთ.", "category": "holidays", "level": "A1"},
-  {"english": "Pumpkin", "georgian": "გოგრა", "pronunciation": "/ˈpʌmpkɪn/", "example_en": "We carved a pumpkin for Halloween.", "example_ka": "ჰელოუინისთვის გოგრა ამოვჭრით.", "category": "holidays", "level": "A1"},
-  {"english": "Costume party", "georgian": "კოსტუმირებული წვეულება", "pronunciation": "/ˈkɒstjuːm ˈpɑːrti/", "example_en": "We are going to a costume party.", "example_ka": "კოსტუმირებულ წვეულებაზე მივდივართ.", "category": "holidays", "level": "A2"},
-  {"english": "Bonfire", "georgian": "კოცონი", "pronunciation": "/ˈbɒnfaɪər/", "example_en": "We sat around the bonfire.", "example_ka": "კოცონის გარშემო ვისხედით.", "category": "holidays", "level": "A2"},
-  {"english": "Sparkler", "georgian": "ბენგალური ცეცხლი", "pronunciation": "/ˈspɑːrklər/", "example_en": "Kids love playing with sparklers.", "example_ka": "ბავშვებს ბენგალური ცეცხლით თამაში უყვართ.", "category": "holidays", "level": "A2"},
-  {"english": "Gratitude", "georgian": "მადლიერება", "pronunciation": "/ˈɡrætɪtjuːd/", "example_en": "Express gratitude for what you have.", "example_ka": "მადლიერება გამოხატე იმისთვის, რაც გაქვს.", "category": "holidays", "level": "B1"},
-  {"english": "Ceremony", "georgian": "ცერემონია", "pronunciation": "/ˈserəmoʊni/", "example_en": "The ceremony was held outdoors.", "example_ka": "ცერემონია ღია ცის ქვეშ გაიმართა.", "category": "holidays", "level": "A2"},
-  {"english": "Garland", "georgian": "გირლანდა", "pronunciation": "/ˈɡɑːrlənd/", "example_en": "We hung garlands around the room.", "example_ka": "ოთახში გირლანდები ჩამოვკიდეთ.", "category": "holidays", "level": "A2"},
-  {"english": "Wreath", "georgian": "გვირგვინი", "pronunciation": "/riːθ/", "example_en": "Put a wreath on the front door.", "example_ka": "შესასვლელ კარზე გვირგვინი ჩამოკიდე.", "category": "holidays", "level": "B1"},
-  {"english": "Eggnog", "georgian": "კვერცხის ნაღების კოქტეილი", "pronunciation": "/ˈeɡnɒɡ/", "example_en": "Eggnog is a popular Christmas drink.", "example_ka": "კვერცხის ნაღების კოქტეილი პოპულარული საშობაო სასმელია.", "category": "holidays", "level": "B1"},
-  {"english": "Caroling", "georgian": "საშობაო სიმღერების მღერა", "pronunciation": "/ˈkærəlɪŋ/", "example_en": "We went caroling in the neighborhood.", "example_ka": "უბანში საშობაო სიმღერების სამღერად წავედით.", "category": "holidays", "level": "B1"}
+  {
+    "english": "Holiday",
+    "georgian": "დღესასწაული",
+    "pronunciation": "/ˈhɒlɪdeɪ/",
+    "example_en": "Christmas is my favorite holiday.",
+    "example_ka": "შობა ჩემი საყვარელი დღესასწაულია.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Celebration",
+    "georgian": "ზეიმი",
+    "pronunciation": "/ˌselɪˈbreɪʃən/",
+    "example_en": "The celebration lasted all night.",
+    "example_ka": "ზეიმი მთელ ღამეს გაგრძელდა.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Party",
+    "georgian": "წვეულება",
+    "pronunciation": "/ˈpɑːrti/",
+    "example_en": "We are having a birthday party.",
+    "example_ka": "დაბადების დღის წვეულებას ვმართავთ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Gift",
+    "georgian": "საჩუქარი",
+    "pronunciation": "/ɡɪft/",
+    "example_en": "She gave me a beautiful gift.",
+    "example_ka": "მან ლამაზი საჩუქარი მაჩუქა.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Present",
+    "georgian": "საჩუქარი",
+    "pronunciation": "/ˈprezənt/",
+    "example_en": "I bought presents for everyone.",
+    "example_ka": "ყველასთვის საჩუქრები ვიყიდე.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Birthday",
+    "georgian": "დაბადების დღე",
+    "pronunciation": "/ˈbɜːrθdeɪ/",
+    "example_en": "Happy birthday to you!",
+    "example_ka": "გილოცავ დაბადების დღეს!",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Cake",
+    "georgian": "ტორტი",
+    "pronunciation": "/keɪk/",
+    "example_en": "We ordered a chocolate cake.",
+    "example_ka": "შოკოლადის ტორტი შევუკვეთეთ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Candle",
+    "georgian": "სანთელი",
+    "pronunciation": "/ˈkændəl/",
+    "example_en": "Blow out the candles on the cake.",
+    "example_ka": "ტორტზე სანთლები ჩააქრე.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Balloon",
+    "georgian": "ბუშტი",
+    "pronunciation": "/bəˈluːn/",
+    "example_en": "The room was decorated with balloons.",
+    "example_ka": "ოთახი ბუშტებით იყო მორთული.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Decoration",
+    "georgian": "დეკორაცია",
+    "pronunciation": "/ˌdekəˈreɪʃən/",
+    "example_en": "The decorations look wonderful.",
+    "example_ka": "დეკორაცია მშვენივრად გამოიყურება.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Christmas",
+    "georgian": "შობა",
+    "pronunciation": "/ˈkrɪsməs/",
+    "example_en": "We celebrate Christmas in January.",
+    "example_ka": "შობას იანვარში ვზეიმობთ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "New Year",
+    "georgian": "ახალი წელი",
+    "pronunciation": "/njuː jɪər/",
+    "example_en": "Happy New Year!",
+    "example_ka": "გილოცავთ ახალ წელს!",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Easter",
+    "georgian": "აღდგომა",
+    "pronunciation": "/ˈiːstər/",
+    "example_en": "Easter is a very important holiday.",
+    "example_ka": "აღდგომა ძალიან მნიშვნელოვანი დღესასწაულია.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Valentine's Day",
+    "georgian": "წმინდა ვალენტინის დღე",
+    "pronunciation": "/ˈvæləntaɪnz deɪ/",
+    "example_en": "He gave her flowers on Valentine's Day.",
+    "example_ka": "წმინდა ვალენტინის დღეს ყვავილები აჩუქა.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Halloween",
+    "georgian": "ჰელოუინი",
+    "pronunciation": "/ˌhæloʊˈiːn/",
+    "example_en": "Kids wear costumes on Halloween.",
+    "example_ka": "ჰელოუინზე ბავშვები კოსტიუმებს იცვამენ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Thanksgiving",
+    "georgian": "მადლიერების დღე",
+    "pronunciation": "/ˌθæŋksˈɡɪvɪŋ/",
+    "example_en": "Thanksgiving is an American tradition.",
+    "example_ka": "მადლიერების დღე ამერიკული ტრადიციაა.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Tradition",
+    "georgian": "ტრადიცია",
+    "pronunciation": "/trəˈdɪʃən/",
+    "example_en": "It is a family tradition.",
+    "example_ka": "ეს საოჯახო ტრადიციაა.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Custom",
+    "georgian": "ჩვეულება",
+    "pronunciation": "/ˈkʌstəm/",
+    "example_en": "Each country has its own customs.",
+    "example_ka": "ყველა ქვეყანას თავისი ჩვეულებები აქვს.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Fireworks",
+    "georgian": "ფეიერვერკი",
+    "pronunciation": "/ˈfaɪərwɜːrks/",
+    "example_en": "We watched fireworks at midnight.",
+    "example_ka": "შუაღამისას ფეიერვერკი ვუყურეთ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Invitation",
+    "georgian": "მოწვევა",
+    "pronunciation": "/ˌɪnvɪˈteɪʃən/",
+    "example_en": "I received an invitation to the party.",
+    "example_ka": "წვეულებაზე მოწვევა მივიღე.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Guest",
+    "georgian": "სტუმარი",
+    "pronunciation": "/ɡest/",
+    "example_en": "We have guests coming tonight.",
+    "example_ka": "დღეს საღამოს სტუმრები მოდიან.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Host",
+    "georgian": "მასპინძელი",
+    "pronunciation": "/hoʊst/",
+    "example_en": "She is the host of the event.",
+    "example_ka": "ის ღონისძიების მასპინძელია.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Toast",
+    "georgian": "სადღეგრძელო",
+    "pronunciation": "/toʊst/",
+    "example_en": "Let's raise a toast to the new year!",
+    "example_ka": "მოდი, ახალ წელს სადღეგრძელო ავუმაღლოთ!",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Feast",
+    "georgian": "ნადიმი",
+    "pronunciation": "/fiːst/",
+    "example_en": "The feast was magnificent.",
+    "example_ka": "ნადიმი დიდებული იყო.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Wrapping paper",
+    "georgian": "შესაფუთი ქაღალდი",
+    "pronunciation": "/ˈræpɪŋ ˈpeɪpər/",
+    "example_en": "I need more wrapping paper.",
+    "example_ka": "მეტი შესაფუთი ქაღალდი მჭირდება.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Ribbon",
+    "georgian": "ლენტი",
+    "pronunciation": "/ˈrɪbən/",
+    "example_en": "Tie a ribbon around the gift.",
+    "example_ka": "საჩუქარს ლენტი შემოაბი.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Greeting card",
+    "georgian": "მისალოცი ბარათი",
+    "pronunciation": "/ˈɡriːtɪŋ kɑːrd/",
+    "example_en": "I sent a greeting card to my friend.",
+    "example_ka": "მეგობარს მისალოცი ბარათი გავუგზავნე.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Surprise",
+    "georgian": "სიურპრიზი",
+    "pronunciation": "/sərˈpraɪz/",
+    "example_en": "We planned a surprise party.",
+    "example_ka": "სიურპრიზ წვეულება დავგეგმეთ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Congratulations",
+    "georgian": "გილოცავთ",
+    "pronunciation": "/kənˌɡrætʃəˈleɪʃənz/",
+    "example_en": "Congratulations on your wedding!",
+    "example_ka": "გილოცავთ ქორწილს!",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Wedding",
+    "georgian": "ქორწილი",
+    "pronunciation": "/ˈwedɪŋ/",
+    "example_en": "The wedding ceremony was beautiful.",
+    "example_ka": "ქორწილის ცერემონია მშვენიერი იყო.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Anniversary",
+    "georgian": "წლისთავი",
+    "pronunciation": "/ˌænɪˈvɜːrsəri/",
+    "example_en": "They celebrated their tenth anniversary.",
+    "example_ka": "მათ მეათე წლისთავი აღნიშნეს.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Costume",
+    "georgian": "კოსტიუმი",
+    "pronunciation": "/ˈkɒstjuːm/",
+    "example_en": "She wore a pirate costume.",
+    "example_ka": "მეკობრის კოსტიუმი ეცვა.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Parade",
+    "georgian": "აღლუმი",
+    "pronunciation": "/pəˈreɪd/",
+    "example_en": "The parade went through the city center.",
+    "example_ka": "აღლუმი ქალაქის ცენტრში გაიარა.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Festival",
+    "georgian": "ფესტივალი",
+    "pronunciation": "/ˈfestɪvəl/",
+    "example_en": "The music festival was amazing.",
+    "example_ka": "მუსიკალური ფესტივალი საოცარი იყო.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Carnival",
+    "georgian": "კარნავალი",
+    "pronunciation": "/ˈkɑːrnɪvəl/",
+    "example_en": "The carnival had colorful costumes.",
+    "example_ka": "კარნავალზე ფერადი კოსტიუმები იყო.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Confetti",
+    "georgian": "კონფეტი",
+    "pronunciation": "/kənˈfeti/",
+    "example_en": "They threw confetti in the air.",
+    "example_ka": "ჰაერში კონფეტი მოფანტეს.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Wish",
+    "georgian": "სურვილი",
+    "pronunciation": "/wɪʃ/",
+    "example_en": "Make a wish before blowing candles.",
+    "example_ka": "სანთლების ჩაქრობამდე სურვილი ისურვე.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Celebrate",
+    "georgian": "ზეიმობა",
+    "pronunciation": "/ˈselɪbreɪt/",
+    "example_en": "Let's celebrate your success!",
+    "example_ka": "მოდი, შენს წარმატებას აღვნიშნოთ!",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Champagne",
+    "georgian": "შამპანური",
+    "pronunciation": "/ʃæmˈpeɪn/",
+    "example_en": "We opened a bottle of champagne.",
+    "example_ka": "შამპანურის ბოთლი გავხსენით.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Midnight",
+    "georgian": "შუაღამე",
+    "pronunciation": "/ˈmɪdnaɪt/",
+    "example_en": "We count down to midnight on New Year's.",
+    "example_ka": "ახალ წელს შუაღამემდე ვითვლით.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Countdown",
+    "georgian": "უკუთვლა",
+    "pronunciation": "/ˈkaʊntdaʊn/",
+    "example_en": "The countdown to New Year has begun.",
+    "example_ka": "ახალი წლის უკუთვლა დაიწყო.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Resolution",
+    "georgian": "გადაწყვეტილება",
+    "pronunciation": "/ˌrezəˈluːʃən/",
+    "example_en": "My New Year's resolution is to exercise more.",
+    "example_ka": "ჩემი საახალწლო გადაწყვეტილებაა მეტი ვივარჯიშო.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Ornament",
+    "georgian": "სამკაული",
+    "pronunciation": "/ˈɔːrnəmənt/",
+    "example_en": "Hang the ornaments on the tree.",
+    "example_ka": "ხეზე სამკაულები ჩამოკიდე.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Christmas tree",
+    "georgian": "ნაძვის ხე",
+    "pronunciation": "/ˈkrɪsməs triː/",
+    "example_en": "We decorated the Christmas tree.",
+    "example_ka": "ნაძვის ხე მოვრთეთ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Santa Claus",
+    "georgian": "სანტა კლაუსი",
+    "pronunciation": "/ˌsæntə ˈklɔːz/",
+    "example_en": "Children believe in Santa Claus.",
+    "example_ka": "ბავშვები სანტა კლაუსის სჯერათ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Stocking",
+    "georgian": "საშობაო წინდა",
+    "pronunciation": "/ˈstɒkɪŋ/",
+    "example_en": "Hang your stocking by the fireplace.",
+    "example_ka": "საშობაო წინდა ბუხრის პირას ჩამოკიდე.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Gingerbread",
+    "georgian": "კოჟრის ნამცხვარი",
+    "pronunciation": "/ˈdʒɪndʒərbred/",
+    "example_en": "We baked gingerbread cookies.",
+    "example_ka": "კოჟრის ნამცხვრები გამოვაცხვეთ.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Reunion",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/riːˈjuːniən/",
+    "example_en": "The family reunion was wonderful.",
+    "example_ka": "ოჯახური შეხვედრა მშვენიერი იყო.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Harvest",
+    "georgian": "მოსავალი",
+    "pronunciation": "/ˈhɑːrvɪst/",
+    "example_en": "Thanksgiving celebrates the harvest.",
+    "example_ka": "მადლიერების დღე მოსავალს აღნიშნავს.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Turkey",
+    "georgian": "ინდაური",
+    "pronunciation": "/ˈtɜːrki/",
+    "example_en": "We eat turkey on Thanksgiving.",
+    "example_ka": "მადლიერების დღეს ინდაურს ვჭამთ.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Pumpkin",
+    "georgian": "გოგრა",
+    "pronunciation": "/ˈpʌmpkɪn/",
+    "example_en": "We carved a pumpkin for Halloween.",
+    "example_ka": "ჰელოუინისთვის გოგრა ამოვჭრით.",
+    "category": "holidays",
+    "level": "A1"
+  },
+  {
+    "english": "Costume party",
+    "georgian": "კოსტუმირებული წვეულება",
+    "pronunciation": "/ˈkɒstjuːm ˈpɑːrti/",
+    "example_en": "We are going to a costume party.",
+    "example_ka": "კოსტუმირებულ წვეულებაზე მივდივართ.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Bonfire",
+    "georgian": "კოცონი",
+    "pronunciation": "/ˈbɒnfaɪər/",
+    "example_en": "We sat around the bonfire.",
+    "example_ka": "კოცონის გარშემო ვისხედით.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Sparkler",
+    "georgian": "ბენგალური ცეცხლი",
+    "pronunciation": "/ˈspɑːrklər/",
+    "example_en": "Kids love playing with sparklers.",
+    "example_ka": "ბავშვებს ბენგალური ცეცხლით თამაში უყვართ.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Gratitude",
+    "georgian": "მადლიერება",
+    "pronunciation": "/ˈɡrætɪtjuːd/",
+    "example_en": "Express gratitude for what you have.",
+    "example_ka": "მადლიერება გამოხატე იმისთვის, რაც გაქვს.",
+    "category": "holidays",
+    "level": "B1"
+  },
+  {
+    "english": "Ceremony",
+    "georgian": "ცერემონია",
+    "pronunciation": "/ˈserəmoʊni/",
+    "example_en": "The ceremony was held outdoors.",
+    "example_ka": "ცერემონია ღია ცის ქვეშ გაიმართა.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Garland",
+    "georgian": "გირლანდა",
+    "pronunciation": "/ˈɡɑːrlənd/",
+    "example_en": "We hung garlands around the room.",
+    "example_ka": "ოთახში გირლანდები ჩამოვკიდეთ.",
+    "category": "holidays",
+    "level": "A2"
+  },
+  {
+    "english": "Wreath",
+    "georgian": "გვირგვინი",
+    "pronunciation": "/riːθ/",
+    "example_en": "Put a wreath on the front door.",
+    "example_ka": "შესასვლელ კარზე გვირგვინი ჩამოკიდე.",
+    "category": "holidays",
+    "level": "B1"
+  },
+  {
+    "english": "Eggnog",
+    "georgian": "კვერცხის ნაღების კოქტეილი",
+    "pronunciation": "/ˈeɡnɒɡ/",
+    "example_en": "Eggnog is a popular Christmas drink.",
+    "example_ka": "კვერცხის ნაღების კოქტეილი პოპულარული საშობაო სასმელია.",
+    "category": "holidays",
+    "level": "B1"
+  },
+  {
+    "english": "Caroling",
+    "georgian": "საშობაო სიმღერების მღერა",
+    "pronunciation": "/ˈkærəlɪŋ/",
+    "example_en": "We went caroling in the neighborhood.",
+    "example_ka": "უბანში საშობაო სიმღერების სამღერად წავედით.",
+    "category": "holidays",
+    "level": "B1"
+  },
+  {
+    "english": "spring",
+    "georgian": "გაზაფხული",
+    "pronunciation": "/sprɪŋ/",
+    "example_en": "Spring is my favorite season.",
+    "example_ka": "გაზაფხული ჩემი საყვარელი სეზონია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "summer",
+    "georgian": "ზაფხული",
+    "pronunciation": "/ˈsʌmər/",
+    "example_en": "We go to the beach in summer.",
+    "example_ka": "ზაფხულში სანაპიროზე მივდივართ.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "autumn",
+    "georgian": "შემოდგომა",
+    "pronunciation": "/ˈɔːtəm/",
+    "example_en": "The leaves change color in autumn.",
+    "example_ka": "შემოდგომაზე ფოთლები ფერს იცვლის.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "winter",
+    "georgian": "ზამთარი",
+    "pronunciation": "/ˈwɪntər/",
+    "example_en": "Winter is cold in Georgia.",
+    "example_ka": "საქართველოში ზამთარი ცივია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "snowman",
+    "georgian": "თოვლის ბაბუა",
+    "pronunciation": "/ˈsnoʊmæn/",
+    "example_en": "The kids built a snowman.",
+    "example_ka": "ბავშვებმა თოვლის ბაბუა გააკეთეს.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "blossom",
+    "georgian": "ყვავილობა",
+    "pronunciation": "/ˈblɒsəm/",
+    "example_en": "Cherry blossoms are beautiful in spring.",
+    "example_ka": "ალუბლის ყვავილობა გაზაფხულზე ლამაზია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "snowflake",
+    "georgian": "ფიფქი",
+    "pronunciation": "/ˈsnoʊfleɪk/",
+    "example_en": "Every snowflake is unique.",
+    "example_ka": "ყოველი ფიფქი უნიკალურია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "sunshine",
+    "georgian": "მზის შუქი",
+    "pronunciation": "/ˈsʌnʃaɪn/",
+    "example_en": "I love the summer sunshine.",
+    "example_ka": "ზაფხულის მზის შუქი მიყვარს.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "rainy season",
+    "georgian": "წვიმიანი სეზონი",
+    "pronunciation": "/ˈreɪni ˈsiːzən/",
+    "example_en": "The rainy season starts in April.",
+    "example_ka": "წვიმიანი სეზონი აპრილში იწყება.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "warm",
+    "georgian": "თბილი",
+    "pronunciation": "/wɔːrm/",
+    "example_en": "Spring weather is warm.",
+    "example_ka": "გაზაფხულის ამინდი თბილია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "cold",
+    "georgian": "ცივი",
+    "pronunciation": "/koʊld/",
+    "example_en": "Winter nights are very cold.",
+    "example_ka": "ზამთრის ღამეები ძალიან ცივია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "hot",
+    "georgian": "ცხელი",
+    "pronunciation": "/hɒt/",
+    "example_en": "Summer days are hot.",
+    "example_ka": "ზაფხულის დღეები ცხელია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "cool",
+    "georgian": "გრილი",
+    "pronunciation": "/kuːl/",
+    "example_en": "Autumn evenings are cool.",
+    "example_ka": "შემოდგომის საღამოები გრილია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "snow",
+    "georgian": "თოვლი",
+    "pronunciation": "/snoʊ/",
+    "example_en": "It's snowing outside.",
+    "example_ka": "გარეთ თოვს.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "rain",
+    "georgian": "წვიმა",
+    "pronunciation": "/reɪn/",
+    "example_en": "It's going to rain tomorrow.",
+    "example_ka": "ხვალ იწვიმებს.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "leaf",
+    "georgian": "ფოთოლი",
+    "pronunciation": "/liːf/",
+    "example_en": "The leaf fell from the tree.",
+    "example_ka": "ფოთოლი ხიდან ჩამოვარდა.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "frozen",
+    "georgian": "გაყინული",
+    "pronunciation": "/ˈfroʊzən/",
+    "example_en": "The lake is frozen.",
+    "example_ka": "ტბა გაყინულია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "bloom",
+    "georgian": "აყვავება",
+    "pronunciation": "/bluːm/",
+    "example_en": "Flowers bloom in spring.",
+    "example_ka": "ყვავილები გაზაფხულზე ყვავის.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "breeze",
+    "georgian": "ნიავი",
+    "pronunciation": "/briːz/",
+    "example_en": "There's a nice breeze today.",
+    "example_ka": "დღეს სასიამოვნო ნიავია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "humid",
+    "georgian": "ნოტიო",
+    "pronunciation": "/ˈhjuːmɪd/",
+    "example_en": "Summer is very humid here.",
+    "example_ka": "აქ ზაფხული ძალიან ნოტიოა.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "foggy",
+    "georgian": "ნისლიანი",
+    "pronunciation": "/ˈfɒɡi/",
+    "example_en": "It's foggy this morning.",
+    "example_ka": "დღეს დილით ნისლიანია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "icy",
+    "georgian": "ყინულიანი",
+    "pronunciation": "/ˈaɪsi/",
+    "example_en": "Be careful, the road is icy.",
+    "example_ka": "ფრთხილად, გზა ყინულიანია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "windy",
+    "georgian": "ქარიანი",
+    "pronunciation": "/ˈwɪndi/",
+    "example_en": "It's windy today.",
+    "example_ka": "დღეს ქარიანია.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "calendar",
+    "georgian": "კალენდარი",
+    "pronunciation": "/ˈkælɪndər/",
+    "example_en": "Mark the date on the calendar.",
+    "example_ka": "თარიღი კალენდარში მონიშნე.",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  },
+  {
+    "english": "graduation",
+    "georgian": "გამოსაშვები",
+    "pronunciation": "/ˌɡrædʒuˈeɪʃən/",
+    "example_en": "Congratulations on your graduation!",
+    "example_ka": "გილოცავ გამოსაშვებს!",
+    "category": "seasons-holidays",
+    "level": "beginner"
+  }
 ]

@@ -1,0 +1,248 @@
+import {
+  collection,
+  doc,
+  getDoc,
+  setDoc,
+  updateDoc,
+  getDocs,
+  query,
+  where,
+  orderBy,
+  Timestamp
+} from 'firebase/firestore';
+import { db } from './firebase';
+import { CardProgress, createNewCard } from './spaced-repetition';
+import { FlashCard, getCardId } from './cards';
+
+export interface DeckProgress {
+  deckId: string;
+  addedAt: Date;
+  totalCards: number;
+  newCards: number;
+  learningCards: number;
+  reviewCards: number;
+  masteredCards: number;
+  lastStudied?: Date;
+}
+
+/**
+ * Add a deck to user's active decks
+ */
+export async function addDeckToUser(userId: string, deckId: string, cards: FlashCard[]): Promise<void> {
+  const deckRef = doc(db, 'users', userId, 'deckProgress', deckId);
+  
+  const deckProgress: DeckProgress = {
+    deckId,
+    addedAt: new Date(),
+    totalCards: cards.length,
+    newCards: cards.length,
+    learningCards: 0,
+    reviewCards: 0,
+    masteredCards: 0,
+  };
+
+  await setDoc(deckRef, {
+    ...deckProgress,
+    addedAt: Timestamp.fromDate(deckProgress.addedAt),
+  });
+
+  // Initialize card progress for all cards in the deck
+  const batch = cards.map(card => {
+    const cardId = getCardId(card);
+    const cardProgress = createNewCard(cardId, deckId);
+    const cardRef = doc(db, 'users', userId, 'cardProgress', cardId);
+    
+    return setDoc(cardRef, {
+      ...cardProgress,
+      nextReview: Timestamp.fromDate(cardProgress.nextReview),
+      lastReviewed: Timestamp.fromDate(cardProgress.lastReviewed),
+      createdAt: Timestamp.fromDate(cardProgress.createdAt),
+    });
+  });
+
+  await Promise.all(batch);
+}
+
+/**
+ * Get user's active decks
+ */
+export async function getUserDecks(userId: string): Promise<DeckProgress[]> {
+  const deckRef = collection(db, 'users', userId, 'deckProgress');
+  const snapshot = await getDocs(deckRef);
+  
+  return snapshot.docs.map(doc => {
+    const data = doc.data();
+    return {
+      deckId: data.deckId,
+      addedAt: data.addedAt?.toDate() || new Date(),
+      totalCards: data.totalCards,
+      newCards: data.newCards,
+      learningCards: data.learningCards,
+      reviewCards: data.reviewCards,
+      masteredCards: data.masteredCards,
+      lastStudied: data.lastStudied?.toDate(),
+    };
+  });
+}
+
+/**
+ * Get card progress for a specific deck
+ */
+export async function getDeckCardProgress(userId: string, deckId: string): Promise<CardProgress[]> {
+  const cardRef = collection(db, 'users', userId, 'cardProgress');
+  const q = query(
+    cardRef,
+    where('deckId', '==', deckId),
+    orderBy('nextReview', 'asc')
+  );
+  
+  const snapshot = await getDocs(q);
+  
+  return snapshot.docs.map(doc => {
+    const data = doc.data();
+    return {
+      cardId: data.cardId,
+      deckId: data.deckId,
+      state: data.state,
+      ease: data.ease,
+      interval: data.interval,
+      nextReview: data.nextReview?.toDate() || new Date(),
+      reviewCount: data.reviewCount,
+      lastReviewed: data.lastReviewed?.toDate() || new Date(),
+      createdAt: data.createdAt?.toDate() || new Date(),
+    };
+  });
+}
+
+/**
+ * Update card progress after review
+ */
+export async function updateCardProgress(userId: string, cardProgress: CardProgress): Promise<void> {
+  const cardRef = doc(db, 'users', userId, 'cardProgress', cardProgress.cardId);
+  
+  await updateDoc(cardRef, {
+    state: cardProgress.state,
+    ease: cardProgress.ease,
+    interval: cardProgress.interval,
+    nextReview: Timestamp.fromDate(cardProgress.nextReview),
+    reviewCount: cardProgress.reviewCount,
+    lastReviewed: Timestamp.fromDate(cardProgress.lastReviewed),
+  });
+}
+
+/**
+ * Update deck progress statistics
+ */
+export async function updateDeckProgress(userId: string, deckId: string, cards: CardProgress[]): Promise<void> {
+  const deckRef = doc(db, 'users', userId, 'deckProgress', deckId);
+  
+  const stats = {
+    totalCards: cards.length,
+    newCards: cards.filter(c => c.state === 'new').length,
+    learningCards: cards.filter(c => c.state === 'learning').length,
+    reviewCards: cards.filter(c => c.state === 'review').length,
+    masteredCards: cards.filter(c => c.state === 'mastered').length,
+    lastStudied: Timestamp.fromDate(new Date()),
+  };
+
+  await updateDoc(deckRef, stats);
+}
+
+/**
+ * Get all card progress for user (for statistics)
+ */
+export async function getAllCardProgress(userId: string): Promise<CardProgress[]> {
+  const cardRef = collection(db, 'users', userId, 'cardProgress');
+  const snapshot = await getDocs(cardRef);
+  
+  return snapshot.docs.map(doc => {
+    const data = doc.data();
+    return {
+      cardId: data.cardId,
+      deckId: data.deckId,
+      state: data.state,
+      ease: data.ease,
+      interval: data.interval,
+      nextReview: data.nextReview?.toDate() || new Date(),
+      reviewCount: data.reviewCount,
+      lastReviewed: data.lastReviewed?.toDate() || new Date(),
+      createdAt: data.createdAt?.toDate() || new Date(),
+    };
+  });
+}
+
+/**
+ * Check if user has added a deck
+ */
+export async function hasUserDeck(userId: string, deckId: string): Promise<boolean> {
+  const deckRef = doc(db, 'users', userId, 'deckProgress', deckId);
+  const snapshot = await getDoc(deckRef);
+  return snapshot.exists();
+}
+
+/**
+ * Remove a deck from user's active decks
+ */
+export async function removeDeckFromUser(userId: string, deckId: string): Promise<void> {
+  const deckRef = doc(db, 'users', userId, 'deckProgress', deckId);
+  
+  // Remove deck progress
+  await updateDoc(deckRef, { 
+    // We don't actually delete it, just mark as inactive
+    // This preserves progress history
+    isActive: false 
+  });
+
+  // Note: We keep card progress in case user re-adds the deck later
+}
+
+/**
+ * Get cards due for review across all decks
+ */
+export async function getDueCards(userId: string): Promise<CardProgress[]> {
+  const cardRef = collection(db, 'users', userId, 'cardProgress');
+  const now = Timestamp.now();
+  const q = query(
+    cardRef,
+    where('nextReview', '<=', now),
+    orderBy('nextReview', 'asc')
+  );
+  
+  const snapshot = await getDocs(q);
+  
+  return snapshot.docs.map(doc => {
+    const data = doc.data();
+    return {
+      cardId: data.cardId,
+      deckId: data.deckId,
+      state: data.state,
+      ease: data.ease,
+      interval: data.interval,
+      nextReview: data.nextReview?.toDate() || new Date(),
+      reviewCount: data.reviewCount,
+      lastReviewed: data.lastReviewed?.toDate() || new Date(),
+      createdAt: data.createdAt?.toDate() || new Date(),
+    };
+  });
+}
+
+/**
+ * Update user XP and level
+ */
+export async function updateUserXP(userId: string, xpGained: number): Promise<void> {
+  const userRef = doc(db, 'users', userId);
+  const userDoc = await getDoc(userRef);
+  
+  if (userDoc.exists()) {
+    const currentXP = userDoc.data().totalXP || 0;
+    const currentLevel = userDoc.data().level || 1;
+    
+    const newXP = currentXP + xpGained;
+    const newLevel = Math.floor(newXP / 100) + 1; // Level up every 100 XP
+    
+    await updateDoc(userRef, {
+      totalXP: newXP,
+      level: newLevel
+    });
+  }
+}
