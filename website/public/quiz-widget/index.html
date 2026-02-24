@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>რა დონეზეა შენი ინგლისური? 🎯 | FluentGe</title>
+<meta name="description" content="გაიგე შენი ინგლისურის დონე 2 წუთში! უფასო ტესტი ქართველებისთვის.">
+<meta property="og:title" content="რა დონეზეა შენი ინგლისური? 🎯">
+<meta property="og:description" content="2 წუთიანი ტესტი — გაიგე A1, A2, B1, B2 თუ C1 ხარ!">
+<meta property="og:url" content="https://fluentge.surge.sh/quiz-widget/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f0f23;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
+.container{max-width:480px;width:100%;background:#1a1a3e;border-radius:20px;padding:32px 24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+h1{text-align:center;font-size:24px;margin-bottom:8px}
+.subtitle{text-align:center;color:#8888cc;margin-bottom:24px;font-size:14px}
+.progress{height:6px;background:#2a2a5a;border-radius:3px;margin-bottom:24px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,#6366f1,#8b5cf6);border-radius:3px;transition:width .3s}
+.question{font-size:18px;margin-bottom:20px;line-height:1.5}
+.hint{color:#8888cc;font-size:13px;margin-bottom:16px;font-style:italic}
+.options{display:flex;flex-direction:column;gap:10px}
+.option{padding:14px 18px;background:#2a2a5a;border:2px solid transparent;border-radius:12px;cursor:pointer;font-size:15px;transition:all .2s;text-align:left}
+.option:hover{background:#3a3a6a;border-color:#6366f1}
+.option.correct{background:#065f46;border-color:#10b981;animation:pulse .3s}
+.option.wrong{background:#7f1d1d;border-color:#ef4444;animation:shake .3s}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.result{text-align:center}
+.result h2{font-size:48px;margin-bottom:8px}
+.result .level{font-size:28px;color:#8b5cf6;font-weight:bold;margin-bottom:16px}
+.result .desc{color:#8888cc;margin-bottom:24px;line-height:1.6}
+.btn{display:block;width:100%;padding:16px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:bold;cursor:pointer;text-decoration:none;text-align:center;margin-bottom:10px}
+.btn:hover{opacity:.9}
+.btn-outline{background:transparent;border:2px solid #6366f1;color:#6366f1}
+.share-btns{display:flex;gap:8px;margin-top:12px}
+.share-btns button{flex:1;padding:10px;border:none;border-radius:8px;cursor:pointer;font-size:13px;font-weight:bold}
+.share-fb{background:#1877f2;color:#fff}
+.share-tw{background:#000;color:#fff}
+.share-copy{background:#2a2a5a;color:#fff}
+.start{text-align:center}
+.start .emoji{font-size:64px;margin-bottom:16px}
+.start p{color:#8888cc;margin-bottom:24px;line-height:1.6}
+.hidden{display:none}
+.q-num{color:#6366f1;font-size:13px;font-weight:bold;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- Start Screen -->
+<div id="start" class="start">
+<div class="emoji">🎯</div>
+<h1>რა დონეზეა შენი ინგლისური?</h1>
+<p>10 შეკითხვა • 2 წუთი<br>გაიგე A1, A2, B1, B2 თუ C1 ხარ!</p>
+<button class="btn" onclick="startQuiz()">დაწყება →</button>
+<p style="margin-top:16px;font-size:12px;color:#666">FluentGe — ინგლისური ქართველებისთვის 🇬🇪</p>
+</div>
+
+<!-- Quiz Screen -->
+<div id="quiz" class="hidden">
+<div class="progress"><div class="progress-bar" id="prog"></div></div>
+<div class="q-num" id="qnum"></div>
+<div class="question" id="question"></div>
+<div class="hint" id="hint"></div>
+<div class="options" id="options"></div>
+</div>
+
+<!-- Result Screen -->
+<div id="result" class="result hidden">
+<h2 id="score-emoji"></h2>
+<div class="level" id="level"></div>
+<div class="desc" id="desc"></div>
+<a href="https://fluentge.surge.sh" class="btn">🎮 ისწავლე უფასოდ FluentGe-ზე →</a>
+<a href="https://fluentge.surge.sh/grammar" class="btn btn-outline">📖 გრამატიკის კურსი A1→C1</a>
+<div class="share-btns">
+<button class="share-fb" onclick="shareFB()">Facebook</button>
+<button class="share-tw" onclick="shareTW()">Twitter</button>
+<button class="share-copy" onclick="copyResult()">📋 კოპირება</button>
+</div>
+</div>
+</div>
+
+<script>
+const questions=[
+{q:"She ___ to school every day.",o:["go","goes","going","gone"],a:1,h:"Present Simple — he/she/it",lvl:"A1"},
+{q:"I ___ a great movie last night.",o:["watch","watched","have watched","watching"],a:1,h:"Past Simple",lvl:"A1"},
+{q:"If it rains, I ___ an umbrella.",o:["will take","would take","took","had taken"],a:0,h:"First Conditional",lvl:"A2"},
+{q:"She asked me where I ___.",o:["live","lived","am living","living"],a:1,h:"Reported Speech",lvl:"A2"},
+{q:"By the time we arrived, they ___.",o:["left","have left","had left","were leaving"],a:2,h:"Past Perfect",lvl:"B1"},
+{q:"I wish I ___ more time to study.",o:["have","had","will have","having"],a:1,h:"Wish + Past Simple",lvl:"B1"},
+{q:"Not only ___ late, but he also forgot the documents.",o:["he was","was he","he is","is he"],a:1,h:"Inversion with negative adverbs",lvl:"B2"},
+{q:"The project ___ by the deadline if we work overtime.",o:["will complete","will be completed","completes","completed"],a:1,h:"Future Passive",lvl:"B2"},
+{q:"___ the circumstances, we had no choice but to comply.",o:["Given","Giving","Having given","Being given"],a:0,h:"Participle clause",lvl:"C1"},
+{q:"He speaks as though he ___ an expert, but he isn't.",o:["is","was","were","be"],a:2,h:"Subjunctive mood",lvl:"C1"}
+];
+
+let current=0,score=0,answered=false;
+
+function startQuiz(){
+document.getElementById('start').classList.add('hidden');
+document.getElementById('quiz').classList.remove('hidden');
+showQ();
+}
+
+function showQ(){
+answered=false;
+const q=questions[current];
+document.getElementById('prog').style.width=((current/questions.length)*100)+'%';
+document.getElementById('qnum').textContent=`${current+1}/10 • ${q.lvl}`;
+document.getElementById('question').textContent=q.q;
+document.getElementById('hint').textContent=q.h;
+const opts=document.getElementById('options');
+opts.innerHTML='';
+q.o.forEach((o,i)=>{
+const btn=document.createElement('button');
+btn.className='option';
+btn.textContent=o;
+btn.onclick=()=>pick(i,btn);
+opts.appendChild(btn);
+});
+}
+
+function pick(i,btn){
+if(answered)return;
+answered=true;
+const q=questions[current];
+if(i===q.a){btn.classList.add('correct');score++}
+else{
+btn.classList.add('wrong');
+document.querySelectorAll('.option')[q.a].classList.add('correct');
+}
+setTimeout(()=>{
+current++;
+if(current<questions.length)showQ();
+else showResult();
+},1000);
+}
+
+function showResult(){
+document.getElementById('quiz').classList.add('hidden');
+document.getElementById('result').classList.remove('hidden');
+let lvl,emoji,desc;
+if(score<=2){lvl="A1 — დამწყები";emoji="🌱";desc="კარგი დასაწყისია! FluentGe-ს ბარათებით და პოდკასტებით სწრაფად წინ წახვალ.";}
+else if(score<=4){lvl="A2 — ელემენტარული";emoji="📗";desc="საფუძვლები იცი! გრამატიკის კურსი და დიალოგები დაგეხმარება.";}
+else if(score<=6){lvl="B1 — საშუალო";emoji="📘";desc="კარგად ხარ! ახლა იდიომები, ფრაზები და reading practice გჭირდება.";}
+else if(score<=8){lvl="B2 — საშუალოზე მაღალი";emoji="🏆";desc="ძალიან კარგი! Advanced grammar და writing practice შემდეგი ნაბიჯია.";}
+else{lvl="C1 — პროფესიონალი";emoji="👑";desc="შესანიშნავი! შენ თითქმის native speaker ხარ!";}
+document.getElementById('score-emoji').textContent=emoji;
+document.getElementById('level').textContent=lvl;
+document.getElementById('desc').textContent=`${score}/10 სწორი პასუხი\n${desc}`;
+}
+
+function shareFB(){window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://fluentge.surge.sh/quiz-widget/'),'_blank')}
+function shareTW(){
+const txt=`🇬🇪 ჩემი ინგლისურის დონე: ${document.getElementById('level').textContent}! (${score}/10)\n\nგაიგე შენი დონე: fluentge.surge.sh/quiz-widget/`;
+window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(txt),'_blank');
+}
+function copyResult(){
+const txt=`🇬🇪 ჩემი ინგლისურის დონე: ${document.getElementById('level').textContent}! (${score}/10)\n\nგაიგე შენი დონე: fluentge.surge.sh/quiz-widget/`;
+navigator.clipboard.writeText(txt).then(()=>{
+document.querySelector('.share-copy').textContent='✅ დაკოპირდა!';
+setTimeout(()=>document.querySelector('.share-copy').textContent='📋 კოპირება',2000);
+});
+}
+</script>
+</body>
+</html>
