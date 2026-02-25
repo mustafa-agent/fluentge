@@ -116,6 +116,16 @@ import workAbroadData from '../../content/work-abroad.json';
 import englishForGamersData from '../../content/english-for-gamers.json';
 import workEmailsData from '../../content/work-emails.json';
 import top5000WordsData from '../../content/top-5000-words.json';
+import historyWarData from '../../content/history-war.json';
+import moviesCinemaData from '../../content/movies-cinema.json';
+import musicGenresData from '../../content/music-genres.json';
+import psychologyMindData from '../../content/psychology-mind.json';
+import journalismNewsData from '../../content/journalism-news.json';
+import sportsExtremeData from '../../content/sports-extreme.json';
+import oceanMarineData from '../../content/ocean-marine.json';
+import weatherClimateData from '../../content/weather-climate.json';
+import campingOutdoorData from '../../content/camping-outdoor.json';
+import friendshipSocialData from '../../content/friendship-social.json';
 
 export const decks: Deck[] = [
   {
@@ -817,6 +827,76 @@ export const decks: Deck[] = [
     nameKa: 'სამსახურის ელ-ფოსტა',
     icon: '✉️',
     cards: workEmailsData as FlashCard[],
+  },
+  {
+    id: 'history-war',
+    name: 'History & War',
+    nameKa: 'ისტორია და ომი',
+    icon: '⚔️',
+    cards: historyWarData as FlashCard[],
+  },
+  {
+    id: 'movies-cinema',
+    name: 'Movies & Cinema',
+    nameKa: 'ფილმები და კინო',
+    icon: '🎬',
+    cards: moviesCinemaData as FlashCard[],
+  },
+  {
+    id: 'music-genres',
+    name: 'Music & Genres',
+    nameKa: 'მუსიკა და ჟანრები',
+    icon: '🎵',
+    cards: musicGenresData as FlashCard[],
+  },
+  {
+    id: 'psychology-mind',
+    name: 'Psychology & Mind',
+    nameKa: 'ფსიქოლოგია და გონება',
+    icon: '🧠',
+    cards: psychologyMindData as FlashCard[],
+  },
+  {
+    id: 'journalism-news',
+    name: 'Journalism & News',
+    nameKa: 'ჟურნალისტიკა და ახალი ამბები',
+    icon: '📰',
+    cards: journalismNewsData as FlashCard[],
+  },
+  {
+    id: 'sports-extreme',
+    name: 'Extreme Sports & Adventure',
+    nameKa: 'ექსტრემალური სპორტი',
+    icon: '🏔️',
+    cards: sportsExtremeData as FlashCard[],
+  },
+  {
+    id: 'ocean-marine',
+    name: 'Ocean & Marine Life',
+    nameKa: 'ოკეანე და ზღვის ცხოვრება',
+    icon: '🌊',
+    cards: oceanMarineData as FlashCard[],
+  },
+  {
+    id: 'weather-climate',
+    name: 'Weather & Climate',
+    nameKa: 'ამინდი და კლიმატი',
+    icon: '🌦️',
+    cards: weatherClimateData as FlashCard[],
+  },
+  {
+    id: 'camping-outdoor',
+    name: 'Camping & Outdoors',
+    nameKa: 'კემპინგი და ბუნება',
+    icon: '⛺',
+    cards: campingOutdoorData as FlashCard[],
+  },
+  {
+    id: 'friendship-social',
+    name: 'Friendship & Social Life',
+    nameKa: 'მეგობრობა და სოციალური ცხოვრება',
+    icon: '🤝',
+    cards: friendshipSocialData as FlashCard[],
   },
 ];
 

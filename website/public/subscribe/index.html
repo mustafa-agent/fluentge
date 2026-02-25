@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluentGe — უფასო ინგლისურის გაკვეთილები</title>
+    <meta name="description" content="მიიღე უფასო ინგლისურის გაკვეთილები ყოველდღე. შექმნილია ქართველებისთვის.">
+    <meta property="og:title" content="FluentGe — ისწავლე ინგლისური უფასოდ">
+    <meta property="og:description" content="მიიღე უფასო ინგლისურის გაკვეთილები ყოველდღე პირდაპირ შენს ელფოსტაზე.">
+    <meta property="og:url" content="https://fluentge.surge.sh/subscribe/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fluentge.surge.sh/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans Georgian', sans-serif;
+            background: #1C1C1E;
+            color: #F5F5F0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            line-height: 1.6;
+        }
+        .container { max-width: 520px; width: 100%; text-align: center; }
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #C8C8C0;
+            margin-bottom: 12px;
+        }
+        .logo span { color: #F5F5F0; }
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .subtitle {
+            color: #A0A0A0;
+            font-size: 15px;
+            margin-bottom: 32px;
+        }
+        .counter {
+            display: inline-block;
+            background: rgba(200,200,192,0.1);
+            border: 1px solid rgba(200,200,192,0.15);
+            border-radius: 24px;
+            padding: 8px 20px;
+            font-size: 14px;
+            color: #C8C8C0;
+            margin-bottom: 28px;
+        }
+        .counter strong { color: #F5F5F0; }
+        .form-wrap { margin-bottom: 40px; }
+        .input-group {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .input-group input {
+            flex: 1;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(200,200,192,0.2);
+            background: rgba(255,255,255,0.05);
+            color: #F5F5F0;
+            font-size: 16px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .input-group input::placeholder { color: #666; }
+        .input-group input:focus { border-color: #C8C8C0; }
+        .input-group button {
+            padding: 14px 28px;
+            border-radius: 12px;
+            border: none;
+            background: #C8C8C0;
+            color: #1C1C1E;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: transform 0.15s, opacity 0.15s;
+        }
+        .input-group button:hover { opacity: 0.9; transform: scale(1.02); }
+        .input-group button:active { transform: scale(0.98); }
+        .success {
+            display: none;
+            background: rgba(200,200,192,0.1);
+            border: 1px solid rgba(200,200,192,0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 16px;
+            animation: fadeIn 0.3s;
+        }
+        .success.show { display: block; }
+        .success h3 { color: #C8C8C0; margin-bottom: 4px; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .error { color: #e57373; font-size: 13px; margin-top: 6px; display: none; }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+        .benefit {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(200,200,192,0.1);
+            border-radius: 14px;
+            padding: 24px 12px 20px;
+        }
+        .benefit .icon { font-size: 32px; margin-bottom: 10px; }
+        .benefit h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+        .benefit p { font-size: 12px; color: #888; }
+
+        .share { margin-top: 8px; }
+        .share p { font-size: 13px; color: #777; margin-bottom: 12px; }
+        .share-btns { display: flex; justify-content: center; gap: 12px; }
+        .share-btns a {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(200,200,192,0.12);
+            text-decoration: none;
+            font-size: 20px;
+            transition: background 0.2s;
+        }
+        .share-btns a:hover { background: rgba(200,200,192,0.15); }
+
+        @media (max-width: 520px) {
+            h1 { font-size: 22px; }
+            .input-group { flex-direction: column; }
+            .input-group button { width: 100%; }
+            .benefits { grid-template-columns: 1fr; gap: 10px; }
+            .benefit { padding: 16px; display: flex; align-items: center; gap: 14px; text-align: left; }
+            .benefit .icon { font-size: 28px; margin-bottom: 0; flex-shrink: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Fluent<span>Ge</span></div>
+        <h1>მიიღე უფასო ინგლისურის გაკვეთილები ყოველდღე</h1>
+        <p class="subtitle">პირდაპირ შენს ელფოსტაზე — მარტივად, სწრაფად, ქართულად</p>
+
+        <div class="counter">
+            <strong id="count">47</strong> ადამიანი უკვე გამოწერილია
+        </div>
+
+        <div class="form-wrap">
+            <form id="form">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="შენი ელფოსტა" required autocomplete="email">
+                    <button type="submit">გამოწერა</button>
+                </div>
+                <div class="error" id="error">გთხოვთ შეიყვანოთ სწორი ელფოსტა</div>
+            </form>
+            <div class="success" id="success">
+                <h3>🎉 მადლობა!</h3>
+                <p>შენ წარმატებით გამოიწერე. მალე მიიღებ პირველ გაკვეთილს!</p>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <div class="benefit">
+                <div class="icon">📚</div>
+                <div>
+                    <h3>ყოველდღიური გაკვეთილი</h3>
+                    <p>მოკლე და ეფექტური</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="icon">🎁</div>
+                <div>
+                    <h3>სამუდამოდ უფასო</h3>
+                    <p>არანაირი ფარული გადასახადი</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="icon">🇬🇪</div>
+                <div>
+                    <h3>ქართველებისთვის</h3>
+                    <p>შენს ენაზე ახსნილი</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="share">
+            <p>გაუზიარე მეგობრებს</p>
+            <div class="share-btns">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://fluentge.surge.sh/subscribe/" target="_blank" rel="noopener" title="Facebook">📘</a>
+                <a href="https://api.whatsapp.com/send?text=%E1%83%98%E1%83%A1%E1%83%AC%E1%83%90%E1%83%95%E1%83%9A%E1%83%94%20%E1%83%98%E1%83%9C%E1%83%92%E1%83%9A%E1%83%98%E1%83%A1%E1%83%A3%E1%83%A0%E1%83%98%20%E1%83%A3%E1%83%A4%E1%83%90%E1%83%A1%E1%83%9D%E1%83%93%21%20https://fluentge.surge.sh/subscribe/" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+                <a href="https://t.me/share/url?url=https://fluentge.surge.sh/subscribe/&text=%E1%83%98%E1%83%A1%E1%83%AC%E1%83%90%E1%83%95%E1%83%9A%E1%83%94%20%E1%83%98%E1%83%9C%E1%83%92%E1%83%9A%E1%83%98%E1%83%A1%E1%83%A3%E1%83%A0%E1%83%98%20%E1%83%A3%E1%83%A4%E1%83%90%E1%83%A1%E1%83%9D%E1%83%93%21" target="_blank" rel="noopener" title="Telegram">✈️</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const STORAGE_KEY = 'fluentge_emails';
+        const COUNT_KEY = 'fluentge_count';
+
+        function getCount() {
+            return parseInt(localStorage.getItem(COUNT_KEY)) || 47;
+        }
+        function updateCount(n) {
+            localStorage.setItem(COUNT_KEY, n);
+            document.getElementById('count').textContent = n;
+        }
+        updateCount(getCount());
+
+        document.getElementById('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = document.getElementById('email');
+            const email = input.value.trim();
+            if (!email || !input.validity.valid) {
+                document.getElementById('error').style.display = 'block';
+                return;
+            }
+            document.getElementById('error').style.display = 'none';
+
+            // Save email
+            const emails = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            if (!emails.includes(email)) {
+                emails.push(email);
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(emails));
+                updateCount(getCount() + 1);
+            }
+
+            // Show success
+            this.style.display = 'none';
+            document.getElementById('success').classList.add('show');
+        });
+    </script>
+</body>
+</html>

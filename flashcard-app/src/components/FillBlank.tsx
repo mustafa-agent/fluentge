@@ -1,3 +1,4 @@
+import ShareResult from "./ShareResult";
 import { useState, useMemo } from 'react';
 import { FlashCard } from '../lib/cards';
 import { updateStats } from '../lib/storage';
@@ -82,6 +83,7 @@ export default function FillBlank({ allCards, onBack }: Props) {
         <button onClick={onBack} className="bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold px-6 py-3 rounded-xl transition-colors">
           უკან დაბრუნება
         </button>
+        <ShareResult score={correct} total={questions.length} label="შეავსე გამოტოვებული" />
       </div>
     );
   }

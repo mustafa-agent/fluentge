@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
+import ShareResult from './ShareResult';
 
 interface Props {
   deck: Deck;
@@ -87,6 +88,7 @@ export default function QuizScreen({ deck, allCards, onBack }: Props) {
         <button onClick={onBack} className="bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold px-6 py-3 rounded-xl transition-colors">
           უკან დაბრუნება
         </button>
+        <ShareResult score={correct} total={questions.length} label="ქვიზი" />
       </div>
     );
   }

@@ -41,6 +41,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>{title}</title>
+    <script is:inline>if(localStorage.getItem('fluentge-theme')==='light')document.documentElement.classList.add('light');</script>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -96,6 +97,14 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           <button id="menu-toggle" class="lg:hidden text-white p-1" aria-label="მენიუ">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
           </button>
+          <a href="/login/" id="nav-login" class="text-sm border border-[#2E2E30] px-4 py-1.5 rounded-lg hover:bg-[#242426] transition-colors flex items-center gap-1.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            შესვლა
+          </a>
+          <a href="/account/" id="nav-account" class="hidden text-sm border border-[#2E2E30] px-4 py-1.5 rounded-lg hover:bg-[#242426] transition-colors flex items-center gap-1.5" title="ანგარიში">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span id="nav-account-name"></span>
+          </a>
         </div>
       </div>
       <div id="mobile-menu" class="hidden lg:hidden border-t border-[#2E2E30] bg-[#1C1C1E]/98">
@@ -109,46 +118,46 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           <a href="/blog/" class="hover:text-white py-1">ბლოგი</a>
           <a href="/about/" class="hover:text-white py-1">შესახებ</a>
           <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>
+          <a href="/login/" id="nav-login-mobile" class="hover:text-white py-1">შესვლა</a>
+          <a href="/account/" id="nav-account-mobile" class="hidden hover:text-white py-1">ანგარიში</a>
         </div>
       </div>
     </nav>
     <script>document.getElementById('menu-toggle')?.addEventListener('click',()=>{document.getElementById('mobile-menu')?.classList.toggle('hidden');});</script>
     
     <script>
-      // Theme toggle functionality
-      const themeToggle = document.getElementById('theme-toggle');
-      const body = document.body;
-      
-      // Load theme preference
-      const savedTheme = localStorage.getItem('theme');
-      const isDark = savedTheme ? savedTheme === 'dark' : true;
-      
-      function applyTheme(dark) {
-        if (dark) {
-          body.className = body.className.replace(/bg-\[[^\]]+\]/, 'bg-[#1C1C1E]');
-          body.className = body.className.replace(/text-\[[^\]]+\]/, 'text-[#F5F5F0]');
-          themeToggle.textContent = '☀️';
-          document.documentElement.style.setProperty('--color-bg', '#1C1C1E');
-          document.documentElement.style.setProperty('--color-text', '#F5F5F0');
-        } else {
-          body.className = body.className.replace(/bg-\[[^\]]+\]/, 'bg-white');
-          body.className = body.className.replace(/text-\[[^\]]+\]/, 'text-gray-900');
-          themeToggle.textContent = '🌙';
-          document.documentElement.style.setProperty('--color-bg', '#FFFFFF');
-          document.documentElement.style.setProperty('--color-text', '#111827');
+      // Theme toggle - uses .light class on <html>
+      (function() {
+        var t = localStorage.getItem('fluentge-theme');
+        if (t === 'light') document.documentElement.classList.add('light');
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        btn.textContent = t === 'light' ? '🌙' : '☀️';
+        btn.addEventListener('click', function() {
+          document.documentElement.classList.toggle('light');
+          var isLight = document.documentElement.classList.contains('light');
+          localStorage.setItem('fluentge-theme', isLight ? 'light' : 'dark');
+          btn.textContent = isLight ? '🌙' : '☀️';
+        });
+      })();
+      // Auth nav toggle + premium check
+      (function() {
+        var PREMIUM_EMAILS = ['tokakhozre@gmail.com'];
+        var u = localStorage.getItem('fluentge-user');
+        if (u) {
+          var data = JSON.parse(u);
+          if (PREMIUM_EMAILS.indexOf(data.email) !== -1) {
+            localStorage.setItem('fluentge-premium', 'true');
+          }
+          var initial = (data.name || data.email || 'U')[0].toUpperCase();
+          var el;
+          el = document.getElementById('nav-login'); if(el) el.classList.add('hidden');
+          el = document.getElementById('nav-login-mobile'); if(el) el.classList.add('hidden');
+          el = document.getElementById('nav-account'); if(el) el.classList.remove('hidden');
+          el = document.getElementById('nav-account-name'); if(el) el.textContent = data.name || data.email.split('@')[0];
+          el = document.getElementById('nav-account-mobile'); if(el) el.classList.remove('hidden');
         }
-      }
-      
-      // Apply initial theme
-      applyTheme(isDark);
-      
-      // Theme toggle click handler
-      themeToggle?.addEventListener('click', () => {
-        const isCurrentlyDark = themeToggle.textContent === '☀️';
-        const newTheme = !isCurrentlyDark;
-        localStorage.setItem('theme', newTheme ? 'dark' : 'light');
-        applyTheme(newTheme);
-      });
+      })();
     </script>
 
     <main class="pt-14"><slot /></main>

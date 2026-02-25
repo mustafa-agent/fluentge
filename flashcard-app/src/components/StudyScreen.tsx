@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { sm2 } from '../lib/sm2';
 import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
@@ -13,6 +13,10 @@ function speak(text: string) {
   window.speechSynthesis.speak(u);
 }
 
+function normalize(s: string) {
+  return s.trim().toLowerCase().replace(/[.,!?;:'"()]/g, '');
+}
+
 interface Props {
   deck: Deck;
   onBack: () => void;
@@ -24,6 +28,9 @@ export default function StudyScreen({ deck, onBack }: Props) {
   const [sessionDone, setSessionDone] = useState(false);
   const [correct, setCorrect] = useState(0);
   const [total, setTotal] = useState(0);
+  const [guess, setGuess] = useState('');
+  const [guessResult, setGuessResult] = useState<'correct' | 'wrong' | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const studyCards = useMemo(() => {
     const now = Date.now();
@@ -31,18 +38,24 @@ export default function StudyScreen({ deck, onBack }: Props) {
       const p = getCardProgress(getCardId(c));
       return p.nextReview <= now || p.repetitions === 0;
     });
-    // If no due cards, show all
     return due.length > 0 ? due.slice(0, 10) : deck.cards.slice(0, 10);
   }, [deck]);
 
   const card: FlashCard | undefined = studyCards[currentIndex];
+
+  function handleGuess() {
+    if (!card || !guess.trim()) return;
+    const isCorrect = normalize(guess) === normalize(card.georgian);
+    setGuessResult(isCorrect ? 'correct' : 'wrong');
+    setFlipped(true);
+    if (isCorrect) playCorrect(); else playWrong();
+  }
 
   function handleRate(quality: number) {
     if (!card) return;
     const id = getCardId(card);
     const progress = getCardProgress(id);
     const isCorrect = quality >= 3;
-    if (isCorrect) playCorrect(); else playWrong();
     const updated = sm2(progress, quality);
     saveCardProgress(updated);
     updateStats(isCorrect);
@@ -52,11 +65,14 @@ export default function StudyScreen({ deck, onBack }: Props) {
     setCorrect(c => c + (isCorrect ? 1 : 0));
     setTotal(t => t + 1);
     setFlipped(false);
+    setGuess('');
+    setGuessResult(null);
 
     if (currentIndex + 1 >= studyCards.length) {
       setSessionDone(true);
     } else {
       setCurrentIndex(i => i + 1);
+      setTimeout(() => inputRef.current?.focus(), 100);
     }
   }
 
@@ -107,7 +123,7 @@ export default function StudyScreen({ deck, onBack }: Props) {
       {/* Card */}
       <div
         onClick={() => !flipped && setFlipped(true)}
-        className="bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[320px] flex flex-col items-center justify-center cursor-pointer select-none transition-all hover:bg-[var(--color-bg-card-hover)]"
+        className="bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[280px] flex flex-col items-center justify-center cursor-pointer select-none transition-all hover:bg-[var(--color-bg-card-hover)]"
       >
         <div className="flex items-center gap-3 mb-2">
           <div className="text-3xl font-bold">{card.english}</div>
@@ -119,15 +135,23 @@ export default function StudyScreen({ deck, onBack }: Props) {
         </div>
         <div className="text-sm text-[var(--color-text-muted)] mb-4">{card.pronunciation}</div>
 
-        {!flipped && (
-          <div className="text-[var(--color-text-muted)] text-sm mt-8 animate-pulse">
-            შეეხე თარგმანის სანახავად 👆
+        {!flipped && !guessResult && (
+          <div className="text-[var(--color-text-muted)] text-sm mt-6 animate-pulse">
+            ჩაწერე თარგმანი ქვემოთ ან შეეხე ბარათს 👇
           </div>
         )}
 
         {flipped && (
           <div className="mt-4 text-center animate-[fadeIn_0.3s_ease-in]">
+            {guessResult && (
+              <div className={`text-lg font-bold mb-2 ${guessResult === 'correct' ? 'text-green-400' : 'text-red-400'}`}>
+                {guessResult === 'correct' ? '✅ სწორია!' : '❌ არასწორია'}
+              </div>
+            )}
             <div className="text-2xl font-bold text-[var(--color-primary)] mb-3">{card.georgian}</div>
+            {guessResult === 'wrong' && guess.trim() && (
+              <div className="text-sm text-red-400/70 mb-2">შენი პასუხი: {guess}</div>
+            )}
             <div className="text-sm text-[var(--color-text-muted)] mb-1 flex items-center gap-2">
               <span>📖 {card.example_en}</span>
               <button
@@ -139,6 +163,27 @@ export default function StudyScreen({ deck, onBack }: Props) {
           </div>
         )}
       </div>
+
+      {/* Guess input */}
+      {!flipped && (
+        <div className="mt-4 flex gap-2">
+          <input
+            ref={inputRef}
+            type="text"
+            value={guess}
+            onChange={(e) => setGuess(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && handleGuess()}
+            placeholder="ჩაწერე ქართული თარგმანი..."
+            className="flex-1 bg-[var(--color-bg-card)] border border-white/10 rounded-xl px-4 py-3 text-[var(--color-text)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+          />
+          <button
+            onClick={handleGuess}
+            className="bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold px-5 py-3 rounded-xl transition-colors"
+          >
+            შემოწმება
+          </button>
+        </div>
+      )}
 
       {/* Rating buttons */}
       {flipped && (

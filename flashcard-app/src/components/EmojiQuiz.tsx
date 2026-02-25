@@ -1,3 +1,4 @@
+import ShareResult from "./ShareResult";
 import { useState, useEffect } from 'react';
 
 interface EmojiPuzzle {
@@ -103,6 +104,7 @@ export default function EmojiQuiz({ onBack }: { onBack: () => void }) {
             მთავარი
           </button>
         </div>
+        <ShareResult score={score} total={total} label="ემოჯი ქვიზი" />
       </div>
     );
   }

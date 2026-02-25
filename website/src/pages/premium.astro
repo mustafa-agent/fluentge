@@ -75,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Pricing Cards -->
   <section class="max-w-4xl mx-auto px-4 pb-20">
-    <h2 class="font-['DM_Serif_Display',serif] text-xl sm:text-2xl text-[#2D2A26] mb-8 text-center">აირჩიე გეგმა</h2>
+    <h2 class="font-['DM_Serif_Display',serif] text-xl sm:text-2xl text-[#C8C8C0] mb-8 text-center" style="color:#C8C8C0">აირჩიე გეგმა</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
       
       <!-- Monthly -->
@@ -99,7 +99,7 @@ import Layout from '../layouts/Layout.astro';
             ახალი კონტენტი ყოველთვე
           </li>
         </ul>
-        <button onclick="alert('მალე დაემატება! Coming soon!')" class="w-full bg-[#2D2A26] hover:bg-[#1a1816] text-white font-bold py-3 rounded-xl text-sm transition-colors">
+        <button onclick="alert('მალე დაემატება! Coming soon!')" class="w-full bg-[#2D2A26] hover:bg-[#1a1816] font-bold py-3 rounded-xl text-sm transition-colors" style="color:white">
           აირჩიე თვიური
         </button>
       </div>
@@ -133,7 +133,7 @@ import Layout from '../layouts/Layout.astro';
             33% დაზოგვა
           </li>
         </ul>
-        <button onclick="alert('მალე დაემატება! Coming soon!')" class="w-full bg-[#5B7F5E] hover:bg-[#4a6b4d] text-white font-bold py-3 rounded-xl text-sm transition-colors">
+        <button onclick="alert('მალე დაემატება! Coming soon!')" class="w-full bg-[#5B7F5E] hover:bg-[#4a6b4d] font-bold py-3 rounded-xl text-sm transition-colors" style="color:white">
           აირჩიე წლიური
         </button>
       </div>
@@ -141,7 +141,7 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- FAQ -->
     <div class="max-w-2xl mx-auto mt-16">
-      <h2 class="font-['DM_Serif_Display',serif] text-xl text-[#2D2A26] mb-6 text-center">ხშირად დასმული კითხვები</h2>
+      <h2 class="font-['DM_Serif_Display',serif] text-xl text-[#C8C8C0] mb-6 text-center" style="color:#C8C8C0">ხშირად დასმული კითხვები</h2>
       <div class="space-y-4">
         <div class="bg-white border border-[#E8E2D9] rounded-xl p-5">
           <h3 class="font-semibold text-[#2D2A26] text-sm mb-1">რა შედის პრემიუმ გეგმაში?</h3>
@@ -158,4 +158,19 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+  <script is:inline>
+    (function() {
+      var PREMIUM_EMAILS = ['tokakhozre@gmail.com'];
+      var u = localStorage.getItem('fluentge-user');
+      if (u) {
+        try {
+          var data = JSON.parse(u);
+          if (PREMIUM_EMAILS.indexOf(data.email) !== -1) {
+            localStorage.setItem('fluentge-premium', 'true');
+            document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;min-height:80vh;flex-direction:column;gap:16px"><h1 style="font-size:2rem;color:#5B7F5E">✅ შენ უკვე პრემიუმი ხარ!</h1><p style="color:#888">ყველა ფუნქცია განბლოკილია.</p><a href="/flashcards/" style="background:#5B7F5E;color:white;padding:12px 24px;border-radius:12px;text-decoration:none;font-weight:bold">ფლეშქარდები →</a></div>';
+          }
+        } catch(e) {}
+      }
+    })();
+  </script>
 </Layout>

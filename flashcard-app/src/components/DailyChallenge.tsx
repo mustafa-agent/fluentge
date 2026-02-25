@@ -1,3 +1,4 @@
+import ShareResult from "./ShareResult";
 import { useState, useEffect } from 'react';
 
 interface ChallengeTask {
@@ -134,6 +135,7 @@ export default function DailyChallenge({ onBack }: { onBack: () => void }) {
           </div>
           <p className="text-[var(--color-text-muted)] text-sm">ხვალ ახალი გამოწვევა გელის!</p>
           <p className="text-[var(--color-text-muted)] text-xs mt-1">New challenge tomorrow!</p>
+          <ShareResult score={score} total={tasks.length} label="დღის გამოწვევა" />
         </div>
       </div>
     );

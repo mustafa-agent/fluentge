@@ -1,1 +1,141 @@
 @import "tailwindcss";
+
+/* ========== LIGHT MODE OVERRIDES ========== */
+html.light {
+  --color-bg: #F5F5F0;
+  --color-bg-card: #FFFFFF;
+  --color-bg-card-hover: #F0F0EC;
+  --color-text: #1A1A2E;
+  --color-text-muted: #6B7280;
+  --color-border: #E5E7EB;
+  --color-primary: #4A4A44;
+}
+
+/* Background overrides */
+html.light body,
+html.light .bg-\[\#1C1C1E\],
+html.light .bg-\[\#161618\] {
+  background-color: #F5F5F0 !important;
+}
+
+html.light .bg-\[\#242426\],
+html.light .bg-\[\#2E2E30\] {
+  background-color: #FFFFFF !important;
+}
+
+/* Text overrides */
+html.light .text-white,
+html.light .text-\[\#F5F5F0\] {
+  color: #1A1A2E !important;
+}
+
+/* Keep white text on dark-background buttons */
+html.light button.bg-\[\#2D2A26\],
+html.light button.bg-\[\#5B7F5E\],
+html.light a.bg-\[\#1A1A2E\],
+html.light .bg-\[\#2D2A26\] > *,
+html.light .bg-\[\#5B7F5E\] > * {
+  color: #FFFFFF !important;
+}
+
+html.light .text-\[\#C8C8C0\] {
+  color: #4A4A44 !important;
+}
+
+html.light .text-\[\#A0A09A\] {
+  color: #6B7280 !important;
+}
+
+html.light .text-\[\#6B6B65\] {
+  color: #6B7280 !important;
+}
+
+/* Border overrides */
+html.light .border-\[\#2E2E30\],
+html.light .border-white\/10,
+html.light .border-white\/5 {
+  border-color: #E5E7EB !important;
+}
+
+/* Hover states */
+html.light .hover\:text-white:hover {
+  color: #1A1A2E !important;
+}
+
+html.light .hover\:border-\[\#404040\]:hover {
+  border-color: #D1D5DB !important;
+}
+
+html.light .hover\:bg-\[\#2A2A2C\]:hover {
+  background-color: #F0F0EC !important;
+}
+
+/* Navigation */
+html.light header,
+html.light nav {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+html.light #mobile-menu {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+/* Footer */
+html.light footer {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+/* Cards & sections */
+html.light .bg-\[\#242426\]\/50 {
+  background-color: rgba(255,255,255,0.7) !important;
+}
+
+/* Hero gradient overlay - make it work with light bg */
+html.light .from-\[\#1C1C1E\]\/80 {
+  --tw-gradient-from: rgba(245,245,240,0.8) !important;
+}
+html.light .to-\[\#1C1C1E\] {
+  --tw-gradient-to: #F5F5F0 !important;
+}
+
+/* Premium button */
+html.light .bg-\[\#C8C8C0\] {
+  background-color: #1A1A2E !important;
+  color: #FFFFFF !important;
+}
+html.light .hover\:bg-\[\#E8E8E0\]:hover {
+  background-color: #2A2A3E !important;
+}
+
+/* CTA button (white on dark → dark on light) */
+html.light .bg-white.text-\[\#1C1C1E\] {
+  background-color: #1A1A2E !important;
+  color: #FFFFFF !important;
+}
+
+/* Stat badges */
+html.light .border-\[\#C8C8C0\]\/30 {
+  border-color: #D1D5DB !important;
+}
+
+/* Image opacity boost in light mode */
+html.light img.opacity-60 {
+  opacity: 0.75 !important;
+}
+
+/* Box shadows for depth in light mode */
+html.light .rounded-2xl,
+html.light .rounded-3xl {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+/* Scrollbar */
+html.light ::-webkit-scrollbar-track {
+  background: #F5F5F0;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+}

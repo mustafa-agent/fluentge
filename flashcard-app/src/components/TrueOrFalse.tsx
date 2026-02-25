@@ -1,3 +1,4 @@
+import ShareResult from "./ShareResult";
 import { useState } from 'react';
 
 interface Question {
@@ -78,6 +79,7 @@ export default function TrueOrFalse({ onBack }: { onBack: () => void }) {
           <button onClick={() => { setIdx(0); setScore(0); setAnswered(null); setDone(false); }} className="px-6 py-3 bg-[var(--color-primary)] text-black rounded-xl font-semibold">თავიდან</button>
           <button onClick={onBack} className="px-6 py-3 bg-[var(--color-bg-card)] rounded-xl">უკან</button>
         </div>
+        <ShareResult score={score} total={pool.length} label="მართალი/მცდარი ტესტი" />
       </div>
     );
   }

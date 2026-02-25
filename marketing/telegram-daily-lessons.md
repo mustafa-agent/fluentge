@@ -249,24 +249,283 @@ Copy-paste these to Georgian Telegram groups/channels. Each lesson is self-conta
 
 ---
 
-## Day 11-30 Ideas (create as needed)
+## Day 11: Prepositions (in/on/at)
 
-11. **Prepositions (in/on/at)** — time & place rules
-12. **Phrasal verbs** — give up, look after, put off, etc.
-13. **Conditionals** — if I were rich...
-14. **Food vocabulary** — ordering at a restaurant
-15. **Travel phrases** — airport, hotel, directions
-16. **Job interview tips** — common questions & answers
-17. **Music lyrics** — learn from popular songs
-18. **Social media English** — DM, post, story, reel
-19. **False friends** — words that look similar but differ
-20. **British vs American** — vocabulary differences
+📚 **ინგლისურის გაკვეთილი #11**
+
+📍 **IN / ON / AT — სად და როდის?**
+
+**დრო (Time):**
+- **AT** → კონკრეტული დრო: at 5 PM, at noon, at night
+- **ON** → დღე/თარიღი: on Monday, on February 25th
+- **IN** → თვე/წელი/პერიოდი: in March, in 2026, in the morning
+
+**ადგილი (Place):**
+- **AT** → კონკრეტული წერტილი: at school, at the bus stop
+- **ON** → ზედაპირი: on the table, on the wall
+- **IN** → შიგნით: in the room, in Tbilisi, in Georgia
+
+❓ **ტესტი:** "I wake up ___ 7 AM ___ the morning"
+✅ at 7 AM, in the morning
+
+🎮 გრამატიკა: **fluentge.surge.sh/grammar**
+
+---
+
+## Day 12: Phrasal Verbs
+
+📚 **ინგლისურის გაკვეთილი #12**
+
+🔄 **Phrasal Verbs — ზმნები რომლებიც ცხოვრებას შეგიცვლის!**
+
+1. **Give up** = დანებება
+   "Don't give up on your dreams!" 💪
+
+2. **Look after** = მოვლა
+   "She looks after her little sister." 👶
+
+3. **Put off** = გადავადება
+   "Stop putting off your homework!" 📚
+
+4. **Find out** = გაგება, აღმოჩენა
+   "I found out the truth." 🔍
+
+5. **Turn down** = უარის თქმა
+   "He turned down the job offer." ❌
+
+6. **Run out of** = ამოწურვა
+   "We ran out of milk." 🥛
+
+❓ **ტესტი:** "She ___ ___ smoking last year" (დანებდა)
+✅ gave up
+
+🎧 პოდკასტი: **fluentge.surge.sh/podcast**
+
+---
+
+## Day 13: Conditionals
+
+📚 **ინგლისურის გაკვეთილი #13**
+
+🤔 **IF — პირობითი წინადადებები**
+
+**Zero (ფაქტი):**
+If you heat water, it boils. 💧
+თუ წყალს გაათბობ, დუღს.
+
+**First (რეალური მომავალი):**
+If it rains, I will stay home. 🌧️
+თუ იწვიმებს, სახლში დავრჩები.
+
+**Second (ფანტაზია):**
+If I were rich, I would travel the world. ✈️
+რომ მდიდარი ვიყო, მსოფლიოს მოვივლიდი.
+
+**Third (წარსულის ნანობა):**
+If I had studied, I would have passed. 📝
+რომ მემეცადინა, ჩავაბარებდი.
+
+💡 **Tip:** ქართველები ხშირად ამბობენ "If I would..." — ❌ არასწორია!
+✅ "If I were..." / "If I had..."
+
+🎮 გრამატიკა: **fluentge.surge.sh/grammar**
+
+---
+
+## Day 14: Restaurant English
+
+📚 **ინგლისურის გაკვეთილი #14**
+
+🍽️ **რესტორანში — რა თქვა ინგლისურად?**
+
+**შეკვეთა:**
+- "Can I have the menu, please?" — მენიუ მომიტანეთ
+- "I'd like the chicken, please." — ქათამს ვისურვებდი
+- "Could I get a glass of water?" — ერთი ჭიქა წყალი
+
+**კითხვები:**
+- "What do you recommend?" — რას გვირჩევთ?
+- "Is this spicy?" — ეს ცხარეა?
+- "Does this contain nuts?" — თხილი/კაკალი ხომ არ აქვს?
+
+**გადახდა:**
+- "Can I have the bill, please?" 🇬🇧
+- "Can I have the check, please?" 🇺🇸
+- "Do you accept card?" — ბარათი მიიღება?
+
+❓ **ტესტი:** რას ეტყვი ოფიციანტს დასრულებისას?
+✅ "Can I have the bill, please?"
+
+🗣️ დიალოგები: **fluentge.surge.sh/conversations**
+
+---
+
+## Day 15: Airport & Travel
+
+📚 **ინგლისურის გაკვეთილი #15**
+
+✈️ **აეროპორტში — აუცილებელი ფრაზები!**
+
+**Check-in:**
+- "I'd like to check in for my flight." — რეგისტრაცია
+- "Window or aisle seat?" — ფანჯარასთან თუ გასასვლელთან?
+- "How many bags are you checking?" — რამდენი ბარგი?
+
+**Security:**
+- "Please remove your belt and shoes." — ქამარი და ფეხსაცმელი
+- "Do you have any liquids?" — სითხეები ხომ არ გაქვთ?
+
+**Boarding:**
+- "Now boarding rows 20-30." — ახლა ჯდებიან რიგები 20-30
+- "Please have your boarding pass ready." — ბორდინგ პასი მოამზადეთ
+
+**დაკარგული ბარგი:**
+- "My luggage didn't arrive." — ჩემი ბარგი არ მოვიდა 😰
+- "Here's my baggage claim ticket." — აი ჩემი ბარგის ბილეთი
+
+🎧 Travel English პოდკასტი: **fluentge.surge.sh/podcast**
+
+---
+
+## Day 16: Job Interview
+
+📚 **ინგლისურის გაკვეთილი #16**
+
+💼 **სამსახურის გასაუბრება — Top 5 კითხვა და პასუხი**
+
+1. **"Tell me about yourself."**
+   ✅ "I'm a [profession] with [X] years of experience in..."
+   ❌ არ მოყვე ბავშვობიდან!
+
+2. **"What are your strengths?"**
+   ✅ "I'm a fast learner and I work well under pressure."
+
+3. **"What's your biggest weakness?"**
+   ✅ "I sometimes focus too much on details, but I'm working on prioritizing."
+   ❌ არ თქვა "I'm a perfectionist" — ყველა ამბობს!
+
+4. **"Why do you want this job?"**
+   ✅ "I'm excited about [company] because..." + კონკრეტული მიზეზი
+
+5. **"Where do you see yourself in 5 years?"**
+   ✅ "I want to grow with this company and take on more responsibility."
+
+🎧 Interview პოდკასტი: **fluentge.surge.sh/podcast**
+
+---
+
+## Day 17: Social Media English
+
+📚 **ინგლისურის გაკვეთილი #17**
+
+📱 **სოციალური მედიის ინგლისური**
+
+**ძირითადი სიტყვები:**
+- **Post** = პოსტი | **Feed** = ფიდი
+- **Story** = სთორი | **Reel** = რილსი
+- **DM** = პირადი მესიჯი (Direct Message)
+- **Follow/Unfollow** = გამოწერა/გაუქმება
+- **Like** = მოწონება | **Share** = გაზიარება
+
+**პოპულარული ფრაზები:**
+- "Link in bio" — ლინკი ბიოში
+- "Swipe up" — ასრიალე ზემოთ
+- "Drop a comment" — დაწერე კომენტარი
+- "Tag a friend" — მოანიშნე მეგობარი
+- "Go viral" — გავირუსდა
+
+**აბრევიატურები:**
+- **TBH** = To Be Honest (გულწრფელად)
+- **IMO** = In My Opinion (ჩემი აზრით)
+- **BRB** = Be Right Back (მალე დავბრუნდები)
+- **ASAP** = As Soon As Possible (რაც შეიძლება მალე)
+
+🎮 ისწავლე მეტი: **fluentge.surge.sh**
+
+---
+
+## Day 18: British vs American
+
+📚 **ინგლისურის გაკვეთილი #18**
+
+🇬🇧🇺🇸 **ბრიტანული vs ამერიკული — ერთი ენა, სხვა სიტყვები!**
+
+| 🇬🇧 British | 🇺🇸 American | 🇬🇪 ქართული |
+|------------|-------------|------------|
+| Flat | Apartment | ბინა |
+| Lift | Elevator | ლიფტი |
+| Lorry | Truck | სატვირთო |
+| Biscuit | Cookie | ნამცხვარი |
+| Chips | French fries | ფრი |
+| Crisps | Chips | ჩიფსი |
+| Rubbish | Trash/Garbage | ნაგავი |
+| Football | Soccer | ფეხბურთი |
+| Petrol | Gas | ბენზინი |
+| Queue | Line | რიგი |
+
+💡 **Tip:** ორივე სწორია! მაგრამ იცოდე ორივე ვარიანტი.
+
+🎮 ლექსიკა: **fluentge.surge.sh/flashcards**
+
+---
+
+## Day 19: Describing Symptoms
+
+📚 **ინგლისურის გაკვეთილი #19**
+
+🏥 **ექიმთან — როგორ აღწერო სიმპტომები?**
+
+**ძირითადი ფრაზები:**
+- "I have a headache." — თავი მტკივა 🤕
+- "I feel dizzy." — თავბრუსხვევა მაქვს
+- "My throat is sore." — ყელი მტკივა
+- "I've been coughing for 3 days." — 3 დღეა ვხველებ
+- "I have a high fever." — მაღალი ტემპერატურა მაქვს 🌡️
+- "It hurts here." — აქ მტკივა (+ მიანიშნე)
+
+**ექიმი გეკითხება:**
+- "How long have you had this?" — რამდენ ხანს?
+- "Are you allergic to anything?" — ალერგია ხომ არ გაქვს?
+- "I'll prescribe some medication." — წამალს დაგინიშნავ
+
+**აფთიაქში:**
+- "I need something for a cold." — გაციებისთვის რამე
+- "Do I need a prescription?" — რეცეპტი ხომ არ მჭირდება?
+
+🎮 ლექსიკა: **fluentge.surge.sh/flashcards**
+
+---
+
+## Day 20: Common Mistakes Georgians Make
+
+📚 **ინგლისურის გაკვეთილი #20**
+
+⚠️ **10 შეცდომა რომელსაც ყველა ქართველი უშვებს!**
+
+1. ❌ "I am agree" → ✅ "I agree"
+2. ❌ "He don't know" → ✅ "He doesn't know"
+3. ❌ "I went to home" → ✅ "I went home"
+4. ❌ "She is beautiful girl" → ✅ "She is a beautiful girl"
+5. ❌ "I very like it" → ✅ "I like it very much" / "I really like it"
+6. ❌ "I am 20 years" → ✅ "I am 20 years old"
+7. ❌ "He said me" → ✅ "He told me"
+8. ❌ "I will go yesterday" → ✅ "I went yesterday"
+9. ❌ "Information are" → ✅ "Information is" (uncountable!)
+10. ❌ "I'm living here since 5 years" → ✅ "I've been living here for 5 years"
+
+💡 **რომელი შეცდომა შენ უშვებ?** კომენტარში დაწერე! 💬
+
+🎧 Common Mistakes პოდკასტი: **fluentge.surge.sh/podcast**
+
+---
+
+## Day 21-30 Ideas (create as needed)
+
 21. **Texting abbreviations** — brb, tbh, imo, etc.
 22. **Weather & small talk** — most common conversation starter
 23. **Shopping English** — sizes, prices, returns
-24. **Doctor/health** — describing symptoms
-25. **Collocations** — words that go together
-26. **Reported speech** — "he said that..."
+24. **Collocations** — words that go together
+25. **Reported speech** — "he said that..."
 27. **Passive voice** — when to use it
 28. **Articles (a/an/the)** — hardest for Georgians!
 29. **Connectors** — however, moreover, therefore

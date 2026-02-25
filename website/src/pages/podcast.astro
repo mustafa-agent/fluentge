@@ -391,7 +391,7 @@ const episodes = [
       { speaker: "Neighbor", en: "Anytime! If you need anything, just knock on my door. Welcome again!", ka: "ნებისმიერ დროს! თუ რაიმე გჭირდებათ, უბრალოდ კარზე მოაკაკუნეთ. კვლავ კეთილი იყოს მობრძანება!" }
     ]
   },
-  { id: 27, title: "At the Dentist", titleKa: "სტომატოლოგთან", icon: "🦷", duration: "1:45", file: "/podcast/episode27-at-the-dentist.mp3", free: false,
+  { id: 27, title: "At the Dentist", titleKa: "სტომატოლოგთან", icon: "🦷", duration: "7:08", file: "/podcast/episode27-at-the-dentist.mp3", free: false,
     vocab: ["Appointment", "Toothache", "Filling", "Cleaning", "Check-up", "X-ray", "Cavity", "Treatment"],
     vocabKa: ["ვიზიტი", "კბილის ტკივილი", "პლომბა", "გაწმენდა", "შემოწმება", "რენტგენი", "ღრუ", "მკურნალობა"],
     descriptionKa: "განიკურნე კბილები, გაიწმინდე და მიიღე რჩევები სტომატოლოგისგან.",
@@ -406,7 +406,7 @@ const episodes = [
       { speaker: "Dentist", en: "Every six months for cleaning and examination. Take care of your teeth daily.", ka: "ყოველ ექვს თვეში გაწმენდისა და შემოწმებისთვის. ყოველდღე უვლიეთ კბილებს." }
     ]
   },
-  { id: 28, title: "Public Transport", titleKa: "საზოგადოებრივი ტრანსპორტი", icon: "🚌", duration: "1:45", file: "/podcast/episode28-public-transport.mp3", free: false,
+  { id: 28, title: "Public Transport", titleKa: "საზოგადოებრივი ტრანსპორტი", icon: "🚌", duration: "7:28", file: "/podcast/episode28-public-transport.mp3", free: false,
     vocab: ["Bus", "Subway", "Ticket", "Transfer", "Schedule", "Route", "Platform", "Conductor"],
     vocabKa: ["ავტობუსი", "მეტრო", "ბილეთი", "გადასვლა", "განრიგი", "მარშრუტი", "პლატფორმა", "კონდუქტორი"],
     descriptionKa: "იყიდე ბილეთი, იპოვე სწორი მარშრუტი და გამოიყენე საზოგადოებრივი ტრანსპორტი.",
@@ -421,7 +421,7 @@ const episodes = [
       { speaker: "Local", en: "Very reliable. Buses and subway usually run on time. Have a good trip!", ka: "ძალიან იმედსაც. ავტობუსები და მეტრო ჩვეულებრივ დროზე მიდის. კარგი მგზავრობა!" }
     ]
   },
-  { id: 29, title: "Ordering Online", titleKa: "ონლაინ შეკვეთა", icon: "💻", duration: "1:45", file: "/podcast/episode29-ordering-online.mp3", free: false,
+  { id: 29, title: "Ordering Online", titleKa: "ონლაინ შეკვეთა", icon: "💻", duration: "8:44", file: "/podcast/episode29-ordering-online.mp3", free: false,
     vocab: ["Website", "Cart", "Checkout", "Payment", "Shipping", "Delivery", "Order", "Confirmation"],
     vocabKa: ["ვებსაიტი", "კალათა", "გადახდა", "გადასახდელი", "მიწოდება", "მიყვანა", "შეკვეთა", "დადასტურება"],
     descriptionKa: "გააკეთე ონლაინ შეკვეთა, გადაიხადე და იპოვე მიწოდების ვარიანტები.",
@@ -436,7 +436,7 @@ const episodes = [
       { speaker: "Helper", en: "Yes, by email. You can track your package using the confirmation number.", ka: "დიახ, იმეილით. შეგიძლიათ ამანათის თვალთვალი დადასტურების ნომრით." }
     ]
   },
-  { id: 30, title: "At the Embassy", titleKa: "საელჩოში", icon: "🏛️", duration: "1:45", file: "/podcast/episode30-embassy.mp3", free: false,
+  { id: 30, title: "At the Embassy", titleKa: "საელჩოში", icon: "🏛️", duration: "10:22", file: "/podcast/episode30-embassy.mp3", free: false,
     vocab: ["Embassy", "Visa", "Interview", "Documents", "Purpose", "Stay", "Passport", "Application"],
     vocabKa: ["საელჩო", "ვიზა", "გასაუბრება", "დოკუმენტები", "მიზანი", "ყოფნა", "პასპორტი", "განცხადება"],
     descriptionKa: "ჩაბარე ვიზის განცხადება, გაიარე გასაუბრება და მიაწოდე საჭირო დოკუმენტები.",
@@ -570,6 +570,9 @@ const episodes = [
                 <audio controls class="w-full mb-4" preload="metadata">
                   <source src={ep.file} type="audio/mpeg" />
                 </audio>
+                <button class="mark-podcast-btn mb-4 inline-flex items-center gap-2 border-2 border-[#6B6B65] rounded-lg px-4 py-2 text-sm text-[#6B6B65] hover:border-green-400 hover:text-green-400 transition-colors" data-podcast={ep.title}>
+                  ✓ მოსმენილია
+                </button>
                 
                 {ep.transcript && (
                   <details class="mt-4">
@@ -614,4 +617,33 @@ const episodes = [
       </a>
     </div>
   </section>
+
+  <script is:inline>
+    (function() {
+      const learned = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
+      document.querySelectorAll('.mark-podcast-btn').forEach(btn => {
+        const title = btn.dataset.podcast;
+        if (learned.includes(title)) {
+          btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
+          btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
+          btn.textContent = '✓ მოსმენილია ✅';
+        }
+        btn.addEventListener('click', function() {
+          const stored = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
+          if (stored.includes(title)) {
+            stored.splice(stored.indexOf(title), 1);
+            btn.classList.remove('border-green-400', 'text-green-400', 'bg-green-400/10');
+            btn.classList.add('border-[#6B6B65]', 'text-[#6B6B65]');
+            btn.textContent = '✓ მოსმენილია';
+          } else {
+            stored.push(title);
+            btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
+            btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
+            btn.textContent = '✓ მოსმენილია ✅';
+          }
+          localStorage.setItem('fluentge-learned-podcasts', JSON.stringify(stored));
+        });
+      });
+    })();
+  </script>
 </Layout>

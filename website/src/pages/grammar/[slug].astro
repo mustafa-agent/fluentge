@@ -80,7 +80,46 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
       </div>
     </div>
     )}
+
+    <!-- Mark as learned -->
+    {isFree && (
+    <div class="mt-8 text-center">
+      <button id="mark-grammar-btn" data-title={lesson.title_en} class="inline-flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] border-2 border-[#6B6B65] rounded-xl px-6 py-3 font-semibold transition-colors">
+        <span id="mark-grammar-icon">✓</span>
+        <span id="mark-grammar-text">მონიშნე ნასწავლად</span>
+      </button>
+    </div>
+    )}
   </section>
+
+  <script is:inline>
+    (function() {
+      const btn = document.getElementById('mark-grammar-btn');
+      if (!btn) return;
+      const title = btn.dataset.title;
+      const stored = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
+      if (stored.includes(title)) {
+        btn.classList.remove('border-[#6B6B65]');
+        btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
+        document.getElementById('mark-grammar-text').textContent = 'ნასწავლია ✅';
+      }
+      btn.addEventListener('click', function() {
+        const items = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
+        if (items.includes(title)) {
+          items.splice(items.indexOf(title), 1);
+          btn.classList.remove('border-green-400', 'text-green-400', 'bg-green-400/10');
+          btn.classList.add('border-[#6B6B65]');
+          document.getElementById('mark-grammar-text').textContent = 'მონიშნე ნასწავლად';
+        } else {
+          items.push(title);
+          btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
+          btn.classList.remove('border-[#6B6B65]');
+          document.getElementById('mark-grammar-text').textContent = 'ნასწავლია ✅';
+        }
+        localStorage.setItem('fluentge-learned-grammar', JSON.stringify(items));
+      });
+    })();
+  </script>
 
   <script define:vars={{ exercises: lesson.exercises, isFree }}>
     // Sound feedback — resume AudioContext on first user click (required by browsers)

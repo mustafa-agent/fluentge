@@ -1,3 +1,4 @@
+import ShareResult from "./ShareResult";
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Deck, FlashCard } from '../lib/cards';
 
@@ -149,6 +150,7 @@ export default function SpeedRound({ deck, onBack }: Props) {
             ← უკან
           </button>
         </div>
+        <ShareResult score={correct} total={total} label="სიჩქარის რაუნდი" />
       </div>
     );
   }

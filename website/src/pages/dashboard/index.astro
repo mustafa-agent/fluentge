@@ -1,0 +1,88 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="დეშბორდი — FluentGe">
+  <section class="max-w-2xl mx-auto px-4 py-12">
+    <h1 class="font-['Playfair_Display',serif] text-3xl font-bold mb-2 text-center">📊 დეშბორდი</h1>
+    <p class="text-[#A0A09A] text-center mb-10">შენი სწავლის სტატისტიკა</p>
+
+    <div class="grid grid-cols-2 gap-4 mb-8">
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
+        <p class="text-3xl font-bold" id="stat-phrases">0</p>
+        <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი ფრაზები</p>
+      </div>
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
+        <p class="text-3xl font-bold" id="stat-grammar">0</p>
+        <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი გაკვეთილები</p>
+      </div>
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
+        <p class="text-3xl font-bold" id="stat-podcasts">0</p>
+        <p class="text-[#6B6B65] text-sm mt-1">მოსმენილი პოდკასტები</p>
+      </div>
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
+        <p class="text-3xl font-bold" id="stat-cards">0</p>
+        <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი სიტყვები</p>
+      </div>
+    </div>
+
+    <div class="space-y-3">
+      <a href="/dashboard/phrases/" class="flex items-center justify-between bg-[#242426] border border-[#2E2E30] rounded-xl p-4 hover:bg-[#2E2E30] transition-colors">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">💬</span>
+          <div>
+            <p class="font-semibold">ფრაზები</p>
+            <p class="text-[#6B6B65] text-xs">ნასწავლი ფრაზების სია</p>
+          </div>
+        </div>
+        <span class="text-[#6B6B65]">→</span>
+      </a>
+
+      <a href="/dashboard/grammar/" class="flex items-center justify-between bg-[#242426] border border-[#2E2E30] rounded-xl p-4 hover:bg-[#2E2E30] transition-colors">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">📖</span>
+          <div>
+            <p class="font-semibold">გრამატიკა</p>
+            <p class="text-[#6B6B65] text-xs">ნასწავლი გაკვეთილების სია</p>
+          </div>
+        </div>
+        <span class="text-[#6B6B65]">→</span>
+      </a>
+
+      <a href="/dashboard/podcasts/" class="flex items-center justify-between bg-[#242426] border border-[#2E2E30] rounded-xl p-4 hover:bg-[#2E2E30] transition-colors">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">🎧</span>
+          <div>
+            <p class="font-semibold">პოდკასტები</p>
+            <p class="text-[#6B6B65] text-xs">მოსმენილი პოდკასტების სია</p>
+          </div>
+        </div>
+        <span class="text-[#6B6B65]">→</span>
+      </a>
+
+      <a href="/dashboard/cards/" class="flex items-center justify-between bg-[#242426] border border-[#2E2E30] rounded-xl p-4 hover:bg-[#2E2E30] transition-colors">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">📝</span>
+          <div>
+            <p class="font-semibold">ფლეშქარდები</p>
+            <p class="text-[#6B6B65] text-xs">სიტყვების სტატისტიკა</p>
+          </div>
+        </div>
+        <span class="text-[#6B6B65]">→</span>
+      </a>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function() {
+      const phrases = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
+      const grammar = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
+      const podcasts = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
+      const cards = JSON.parse(localStorage.getItem('knownCards') || '[]');
+      document.getElementById('stat-phrases').textContent = phrases.length;
+      document.getElementById('stat-grammar').textContent = grammar.length;
+      document.getElementById('stat-podcasts').textContent = podcasts.length;
+      document.getElementById('stat-cards').textContent = cards.length;
+    })();
+  </script>
+</Layout>

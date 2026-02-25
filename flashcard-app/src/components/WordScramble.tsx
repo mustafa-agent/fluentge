@@ -1,3 +1,4 @@
+import ShareResult from "./ShareResult";
 import { useState, useEffect } from 'react';
 import { Deck, FlashCard } from '../lib/cards';
 
@@ -133,6 +134,7 @@ export default function WordScramble({ deck, onBack }: Props) {
             ← უკან
           </button>
         </div>
+        <ShareResult score={correct} total={total} label="სიტყვის აწყობა" />
       </div>
     );
   }

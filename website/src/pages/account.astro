@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="ჩემი ანგარიში — FluentGe">
+  <div class="min-h-[80vh] flex items-center justify-center px-4 py-12">
+    <div class="w-full max-w-lg">
+
+      <div id="not-logged" class="text-center hidden">
+        <p class="text-[#6B6B65] mb-4">გთხოვ შედი ანგარიშზე</p>
+        <a href="/login/" class="inline-block bg-[#C8C8C0] text-[#1C1C1E] font-semibold px-6 py-3 rounded-xl hover:bg-[#E8E8E0] transition-colors">შესვლა</a>
+      </div>
+
+      <div id="logged-in" class="hidden">
+        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6 text-center">
+          <img id="avatar-img" class="w-20 h-20 rounded-full mx-auto mb-4 hidden" />
+          <div id="avatar-letter" class="w-20 h-20 bg-[#C8C8C0] rounded-full mx-auto mb-4 flex items-center justify-center text-3xl text-[#1C1C1E] font-bold"></div>
+          <h1 class="text-xl font-bold mb-1" id="user-name"></h1>
+          <p class="text-[#6B6B65] text-sm" id="user-email"></p>
+        </div>
+
+        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6">
+          <h2 class="font-semibold text-lg mb-4">📋 გამოწერის სტატუსი</h2>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-[#A0A09A] text-sm">გეგმა</span>
+              <span class="font-semibold text-sm">უფასო</span>
+            </div>
+            <div class="h-px bg-[#2E2E30]"></div>
+            <div class="flex items-center justify-between" id="plan-status">
+              <span class="text-[#A0A09A] text-sm">სტატუსი</span>
+              <span class="text-sm text-[#C8C8C0]" id="plan-status-text">● უფასო გეგმა</span>
+            </div>
+          </div>
+          <div class="mt-6" id="upgrade-btn-wrap">
+            <a href="/premium/" style="color:white" class="block w-full bg-[#5B7F5E] hover:bg-[#4a6b4d] font-bold py-3 rounded-xl text-sm transition-colors text-center">
+              ⭐ გახდი პრემიუმი
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6">
+          <h2 class="font-semibold text-lg mb-4">📊 სტატისტიკა</h2>
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <p class="text-2xl font-bold" id="stat-words">0</p>
+              <p class="text-[#6B6B65] text-xs mt-1">ნასწავლი სიტყვა</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold" id="stat-streak">0</p>
+              <p class="text-[#6B6B65] text-xs mt-1">დღის სტრიქი</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold" id="stat-games">0</p>
+              <p class="text-[#6B6B65] text-xs mt-1">თამაშები</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="/dashboard/" class="block w-full bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] font-semibold py-3 rounded-xl text-sm transition-colors text-center text-[#C8C8C0] mb-3">
+          📊 დეშბორდი
+        </a>
+
+        <button id="logout-btn" class="w-full bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] font-semibold py-3 rounded-xl text-sm transition-colors text-red-400">
+          გასვლა
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+    import { getAuth, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+
+    const app = initializeApp({
+      apiKey: "AIzaSyBYJ6xzlp6tP7oIQoz9UzfYbjrVgR3JrwQ",
+      authDomain: "fluentge.firebaseapp.com",
+      projectId: "fluentge",
+      storageBucket: "fluentge.firebasestorage.app",
+      messagingSenderId: "140225085227",
+      appId: "1:140225085227:web:d10b8efd8c08a131574f6e"
+    });
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        document.getElementById('not-logged').classList.remove('hidden');
+        return;
+      }
+      document.getElementById('logged-in').classList.remove('hidden');
+      document.getElementById('user-name').textContent = user.displayName || 'მომხმარებელი';
+      document.getElementById('user-email').textContent = user.email;
+
+      // Premium check
+      const PREMIUM_EMAILS = ['tokakhozre@gmail.com'];
+      if (PREMIUM_EMAILS.includes(user.email)) {
+        localStorage.setItem('fluentge-premium', 'true');
+        document.getElementById('plan-status-text').innerHTML = '<span style="color:#5B7F5E">⭐ პრემიუმი</span>';
+        document.getElementById('upgrade-btn-wrap').style.display = 'none';
+      }
+      
+      if (user.photoURL) {
+        document.getElementById('avatar-img').src = user.photoURL;
+        document.getElementById('avatar-img').classList.remove('hidden');
+        document.getElementById('avatar-letter').classList.add('hidden');
+      } else {
+        document.getElementById('avatar-letter').textContent = (user.displayName || user.email || 'U')[0].toUpperCase();
+      }
+
+      try {
+        const known = JSON.parse(localStorage.getItem('knownCards') || '[]');
+        document.getElementById('stat-words').textContent = known.length;
+      } catch(e) {}
+    });
+
+    document.getElementById('logout-btn').addEventListener('click', async () => {
+      await signOut(auth);
+      localStorage.removeItem('fluentge-user');
+      localStorage.removeItem('fluentge-premium');
+      window.location.href = '/login/';
+    });
+  </script>
+</Layout>

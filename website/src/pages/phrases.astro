@@ -142,8 +142,15 @@ const FREE_CATEGORIES = 5;
                     🔊
                   </button>
                   <div class="flex-1">
-                    <p class="text-[#C8C8C0] font-medium text-lg">{phrase.english}</p>
-                    <p class="text-[#8B8B85] mt-1">{phrase.georgian}</p>
+                    <div class="flex items-start justify-between gap-2">
+                      <div>
+                        <p class="text-[#C8C8C0] font-medium text-lg">{phrase.english}</p>
+                        <p class="text-[#8B8B85] mt-1">{phrase.georgian}</p>
+                      </div>
+                      <button class="mark-phrase-btn flex-shrink-0 w-8 h-8 rounded-full border-2 border-[#6B6B65] flex items-center justify-center text-[#6B6B65] hover:border-green-400 hover:text-green-400 transition-colors" data-phrase={phrase.english} title="მონიშნე ნასწავლად">
+                        ✓
+                      </button>
+                    </div>
                     {phrase.literal && <p class="text-xs text-[#5B5B55] mt-1 italic">პირდაპირი: {phrase.literal}</p>}
                     <div class="flex items-center gap-2 mt-2">
                       {phrase.level && <span class={`text-xs px-2 py-0.5 rounded-full ${phrase.level === 'A1' ? 'bg-green-900/30 text-green-400' : phrase.level === 'A2' ? 'bg-blue-900/30 text-blue-400' : phrase.level === 'B1' ? 'bg-yellow-900/30 text-yellow-400' : phrase.level === 'B2' ? 'bg-orange-900/30 text-orange-400' : 'bg-red-900/30 text-red-400'}`}>{phrase.level}</span>}
@@ -215,6 +222,26 @@ const FREE_CATEGORIES = 5;
     });
   });
 
+  // Unlock premium for premium users
+  const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
+  if (isPremiumUser) {
+    document.querySelectorAll('.premium-locked').forEach(el => {
+      el.classList.remove('premium-locked');
+    });
+    document.querySelectorAll('.premium-toggle').forEach(btn => {
+      btn.classList.remove('premium-toggle');
+      btn.classList.add('cat-toggle');
+    });
+    // Re-bind cat-toggle for newly unlocked
+    document.querySelectorAll('.category-block[data-premium="true"] .cat-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const block = btn.closest('.category-block');
+        const list = block?.querySelector('.phrase-list');
+        if (list) list.classList.toggle('hidden');
+      });
+    });
+  }
+
   // Premium categories → show paywall
   const modal = document.getElementById('premiumModal');
   document.querySelectorAll('.premium-toggle').forEach(btn => {
@@ -274,6 +301,30 @@ const FREE_CATEGORIES = 5;
         const visiblePhrases = list.querySelectorAll('.phrase-item:not([style*="display: none"])');
         (block as HTMLElement).style.display = visiblePhrases.length > 0 ? '' : 'none';
       });
+    });
+  });
+
+  // Mark phrases as learned
+  const learned = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
+  document.querySelectorAll('.mark-phrase-btn').forEach(btn => {
+    const phrase = (btn as HTMLElement).dataset.phrase || '';
+    if (learned.includes(phrase)) {
+      btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
+      btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
+    }
+    btn.addEventListener('click', () => {
+      const stored = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
+      if (stored.includes(phrase)) {
+        const idx = stored.indexOf(phrase);
+        stored.splice(idx, 1);
+        btn.classList.remove('border-green-400', 'text-green-400', 'bg-green-400/10');
+        btn.classList.add('border-[#6B6B65]', 'text-[#6B6B65]');
+      } else {
+        stored.push(phrase);
+        btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
+        btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
+      }
+      localStorage.setItem('fluentge-learned-phrases', JSON.stringify(stored));
     });
   });
 </script>
