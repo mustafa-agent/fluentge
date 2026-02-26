@@ -160,6 +160,88 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
       })();
     </script>
 
+    <script is:inline type="module">
+      import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+      import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+      import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+
+      const cfg = {apiKey:"AIzaSyBYJ6xzlp6tP7oIQoz9UzfYbjrVgR3JrwQ",authDomain:"fluentge.firebaseapp.com",projectId:"fluentge",storageBucket:"fluentge.firebasestorage.app",messagingSenderId:"140225085227",appId:"1:140225085227:web:d10b8efd8c08a131574f6e"};
+      const app = getApps().length ? getApps()[0] : initializeApp(cfg);
+      const auth = getAuth(app);
+      let db; try { db = getFirestore(app); } catch(e) { console.warn('[Sync] Firestore init failed:', e); }
+
+      function jp(v, f) { try { return JSON.parse(v); } catch { return f; } }
+      function mergeArr(a, b) {
+        const s = new Set(), r = [];
+        for (const i of [...(b||[]), ...(a||[])]) { const k = typeof i==='object'?JSON.stringify(i):i; if(!s.has(k)){s.add(k);r.push(i);} }
+        return r;
+      }
+      function mergeObj(a, b) { return {...(a||{}), ...(b||{})}; }
+
+      function gather() {
+        const d = {};
+        d.knownCards = jp(localStorage.getItem('knownCards'), []);
+        d.learnedPhrases = jp(localStorage.getItem('fluentge-learned-phrases'), []);
+        d.learnedGrammar = jp(localStorage.getItem('fluentge-learned-grammar'), []);
+        d.learnedPodcasts = jp(localStorage.getItem('fluentge-learned-podcasts'), []);
+        d.gameRecords = jp(localStorage.getItem('fluentge-game-records'), {});
+        d.premium = localStorage.getItem('fluentge-premium') === 'true';
+        d.srsData = {}; d.cardProgress = {};
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k?.startsWith('fluentge-srs-')) d.srsData[k.slice(13)] = jp(localStorage.getItem(k), {});
+          if (k?.startsWith('card_progress_')) d.cardProgress[k] = jp(localStorage.getItem(k), {});
+        }
+        d.flashcardProgress = jp(localStorage.getItem('fluentge_progress'), {});
+        d.flashcardStats = jp(localStorage.getItem('fluentge_stats'), {});
+        return d;
+      }
+
+      function apply(local, cloud) {
+        localStorage.setItem('knownCards', JSON.stringify(mergeArr(local.knownCards, cloud.knownCards)));
+        localStorage.setItem('fluentge-learned-phrases', JSON.stringify(mergeArr(local.learnedPhrases, cloud.learnedPhrases)));
+        localStorage.setItem('fluentge-learned-grammar', JSON.stringify(mergeArr(local.learnedGrammar, cloud.learnedGrammar)));
+        localStorage.setItem('fluentge-learned-podcasts', JSON.stringify(mergeArr(local.learnedPodcasts, cloud.learnedPodcasts)));
+        localStorage.setItem('fluentge-game-records', JSON.stringify(mergeObj(local.gameRecords, cloud.gameRecords)));
+        if (cloud.premium !== undefined) localStorage.setItem('fluentge-premium', cloud.premium ? 'true' : 'false');
+        for (const id of new Set([...Object.keys(local.srsData||{}), ...Object.keys(cloud.srsData||{})])) {
+          localStorage.setItem('fluentge-srs-' + id, JSON.stringify(mergeObj(local.srsData?.[id], cloud.srsData?.[id])));
+        }
+        localStorage.setItem('fluentge_progress', JSON.stringify(mergeObj(local.flashcardProgress, cloud.flashcardProgress)));
+        localStorage.setItem('fluentge_stats', JSON.stringify(mergeObj(local.flashcardStats, cloud.flashcardStats)));
+        for (const k of new Set([...Object.keys(local.cardProgress||{}), ...Object.keys(cloud.cardProgress||{})])) {
+          localStorage.setItem(k, JSON.stringify(mergeObj(local.cardProgress?.[k], cloud.cardProgress?.[k])));
+        }
+      }
+
+      async function loadCloud(uid) {
+        if (!db) return;
+        try {
+          const snap = await getDoc(doc(db, 'users', uid));
+          if (snap.exists()) { apply(gather(), snap.data().progress || {}); console.log('[Sync] Loaded from cloud'); }
+        } catch (e) { console.warn('[Sync] Load failed:', e.message); }
+      }
+      async function saveCloud(uid) {
+        if (!db) return;
+        try {
+          const d = gather(); d.lastSync = new Date().toISOString();
+          await setDoc(doc(db, 'users', uid), { progress: d }, { merge: true });
+          console.log('[Sync] Saved to cloud');
+        } catch (e) { console.warn('[Sync] Save failed:', e.message); }
+      }
+
+      let iv = null, uid = null;
+      onAuthStateChanged(auth, async (user) => {
+        if (iv) { clearInterval(iv); iv = null; }
+        if (user) {
+          uid = user.uid;
+          await loadCloud(uid);
+          iv = setInterval(() => saveCloud(uid), 30000);
+          window.addEventListener('beforeunload', () => saveCloud(uid));
+        } else { uid = null; }
+      });
+      window.__fluentgeSync = { save: () => uid && saveCloud(uid), load: () => uid && loadCloud(uid) };
+    </script>
     <main class="pt-14"><slot /></main>
 
     <footer class="border-t border-[#2E2E30] mt-20 bg-[#161618]">

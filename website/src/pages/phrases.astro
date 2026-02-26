@@ -133,8 +133,7 @@ const FREE_CATEGORIES = 5;
               )}
             </div>
           </button>
-          {!isPremium && (
-          <div class="phrases-list hidden divide-y divide-white/5">
+          <div class={`phrases-list hidden divide-y divide-white/5 ${isPremium ? 'premium-phrases-hidden' : ''}`}>
             {cat.phrases.map((phrase) => (
               <div class="phrase-item px-5 py-4 hover:bg-[#2A2A2C] transition-colors" data-level={phrase.level} data-en={phrase.english.toLowerCase()} data-ka={phrase.georgian.toLowerCase()}>
                 <div class="flex items-start gap-3">
@@ -161,7 +160,6 @@ const FREE_CATEGORIES = 5;
               </div>
             ))}
           </div>
-          )}
         </div>
         );
       })}
@@ -228,15 +226,24 @@ const FREE_CATEGORIES = 5;
     document.querySelectorAll('.premium-locked').forEach(el => {
       el.classList.remove('premium-locked');
     });
+    document.querySelectorAll('.premium-phrases-hidden').forEach(el => {
+      el.classList.remove('premium-phrases-hidden');
+    });
     document.querySelectorAll('.premium-toggle').forEach(btn => {
       btn.classList.remove('premium-toggle');
       btn.classList.add('cat-toggle');
+      // Fix label colors
+      const title = btn.querySelector('h2');
+      if (title) { title.classList.remove('text-[#6B6B65]'); title.classList.add('text-[#C8C8C0]'); }
+      // Replace lock badge with arrow
+      const badge = btn.querySelector('.text-\\[\\#D4A853\\]');
+      if (badge) { badge.outerHTML = '<svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>'; }
     });
     // Re-bind cat-toggle for newly unlocked
     document.querySelectorAll('.category-block[data-premium="true"] .cat-toggle').forEach(btn => {
       btn.addEventListener('click', () => {
         const block = btn.closest('.category-block');
-        const list = block?.querySelector('.phrase-list');
+        const list = block?.querySelector('.phrases-list');
         if (list) list.classList.toggle('hidden');
       });
     });

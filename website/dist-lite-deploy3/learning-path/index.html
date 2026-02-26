@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30-დღიანი გეგმა — FluentGe</title>
+<meta name="description" content="30 დღეში ინგლისური ენის საფუძვლების შესწავლა. ყოველდღიური სტრუქტურირებული გეგმა ქართველებისთვის.">
+<link rel="icon" href="/favicon.svg">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh}
+.nav{background:#1e293b;padding:1rem;text-align:center;border-bottom:1px solid #334155}
+.nav a{color:#60a5fa;text-decoration:none;font-size:1.1rem;font-weight:600}
+.hero{text-align:center;padding:2.5rem 1rem 1.5rem;background:linear-gradient(135deg,#1e3a5f,#0f172a)}
+.hero h1{font-size:2rem;margin-bottom:.5rem;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:#94a3b8;font-size:1.05rem;max-width:500px;margin:0 auto}
+.level-tabs{display:flex;justify-content:center;gap:.5rem;padding:1rem;flex-wrap:wrap}
+.level-tab{padding:.6rem 1.2rem;border-radius:999px;border:2px solid #334155;background:transparent;color:#94a3b8;cursor:pointer;font-size:.95rem;transition:all .2s}
+.level-tab.active{background:#3b82f6;border-color:#3b82f6;color:#fff}
+.progress-bar{max-width:600px;margin:0 auto 1rem;padding:0 1rem}
+.progress-outer{background:#1e293b;border-radius:999px;height:12px;overflow:hidden}
+.progress-inner{background:linear-gradient(90deg,#3b82f6,#8b5cf6);height:100%;border-radius:999px;transition:width .5s}
+.progress-text{text-align:center;color:#94a3b8;font-size:.85rem;margin-top:.3rem}
+.days{max-width:700px;margin:0 auto;padding:1rem}
+.day-card{background:#1e293b;border-radius:12px;margin-bottom:.75rem;overflow:hidden;border:1px solid #334155;transition:all .2s}
+.day-card.completed{border-color:#22c55e50}
+.day-card.today{border-color:#3b82f680;box-shadow:0 0 20px #3b82f620}
+.day-header{display:flex;align-items:center;padding:1rem;cursor:pointer;gap:.75rem}
+.day-num{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem;flex-shrink:0;background:#334155;color:#94a3b8}
+.day-card.completed .day-num{background:#22c55e;color:#fff}
+.day-card.today .day-num{background:#3b82f6;color:#fff;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #3b82f640}50%{box-shadow:0 0 0 8px #3b82f600}}
+.day-title{flex:1;font-weight:600;font-size:1rem}
+.day-card.completed .day-title{color:#22c55e}
+.day-arrow{color:#64748b;transition:transform .3s;font-size:1.2rem}
+.day-card.open .day-arrow{transform:rotate(180deg)}
+.day-body{display:none;padding:0 1rem 1rem;border-top:1px solid #334155}
+.day-card.open .day-body{display:block}
+.task{display:flex;align-items:flex-start;gap:.6rem;padding:.6rem 0;border-bottom:1px solid #1e293b20}
+.task:last-child{border:none}
+.task-check{width:22px;height:22px;border-radius:6px;border:2px solid #475569;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;margin-top:2px}
+.task-check.done{background:#22c55e;border-color:#22c55e}
+.task-check.done::after{content:'✓';color:#fff;font-size:.8rem;font-weight:700}
+.task-info{flex:1}
+.task-name{font-size:.95rem;color:#e2e8f0}
+.task-check.done+.task-info .task-name{text-decoration:line-through;color:#64748b}
+.task-link{display:inline-block;margin-top:.3rem;color:#60a5fa;text-decoration:none;font-size:.85rem}
+.task-link:hover{text-decoration:underline}
+.task-time{color:#8b5cf6;font-size:.8rem;background:#8b5cf620;padding:2px 8px;border-radius:999px;white-space:nowrap;margin-top:2px}
+.complete-day{display:block;width:100%;padding:.7rem;border:none;border-radius:8px;background:#3b82f6;color:#fff;font-size:1rem;font-weight:600;cursor:pointer;margin-top:.5rem;transition:all .2s}
+.complete-day:hover{background:#2563eb}
+.complete-day.done{background:#22c55e}
+.stats{display:flex;justify-content:center;gap:2rem;padding:1rem;margin-bottom:1rem}
+.stat{text-align:center}
+.stat-num{font-size:1.8rem;font-weight:700;color:#60a5fa}
+.stat-label{font-size:.8rem;color:#94a3b8}
+.reset-btn{display:block;margin:2rem auto;padding:.5rem 1.5rem;background:transparent;border:1px solid #475569;color:#94a3b8;border-radius:8px;cursor:pointer;font-size:.85rem}
+.reset-btn:hover{border-color:#ef4444;color:#ef4444}
+</style>
+</head>
+<body>
+<nav class="nav"><a href="/">← FluentGe მთავარი</a></nav>
+<div class="hero">
+<h1>📅 30-დღიანი გეგმა</h1>
+<p>ყოველდღიური სტრუქტურირებული გზამკვლევი ინგლისურის შესასწავლად. აირჩიე შენი დონე და დაიწყე!</p>
+</div>
+
+<div class="level-tabs">
+<button class="level-tab active" data-level="a1">🟢 A1 დამწყები</button>
+<button class="level-tab" data-level="a2">🔵 A2 ელემენტარული</button>
+<button class="level-tab" data-level="b1">🟡 B1 საშუალო</button>
+</div>
+
+<div class="stats">
+<div class="stat"><div class="stat-num" id="completedDays">0</div><div class="stat-label">დღე დასრულდა</div></div>
+<div class="stat"><div class="stat-num" id="streak">0</div><div class="stat-label">🔥 სერია</div></div>
+<div class="stat"><div class="stat-num" id="totalTasks">0</div><div class="stat-label">დავალება</div></div>
+</div>
+
+<div class="progress-bar">
+<div class="progress-outer"><div class="progress-inner" id="progressBar" style="width:0%"></div></div>
+<div class="progress-text" id="progressText">0% დასრულდა</div>
+</div>
+
+<div class="days" id="daysContainer"></div>
+<button class="reset-btn" id="resetBtn">🔄 თავიდან დაწყება</button>
+
+<script>
+const plans={
+a1:[
+{day:1,title:"გაცნობა & მისალმებები",tasks:[
+{name:"შეისწავლე 10 მისალმება (Hello, Hi, Good morning...)",link:"/phrases/",time:"10 წთ"},
+{name:"ივარჯიშე გამოთქმაზე",link:"/pronunciation/",time:"5 წთ"},
+{name:"ბარათები: ოჯახი & ადამიანები",link:"/flashcards/",time:"10 წთ"},
+{name:"მოუსმინე პოდკასტი #1",link:"/podcast/",time:"5 წთ"}
+]},
+{day:2,title:"რიცხვები & ფერები",tasks:[
+{name:"ბარათები: რიცხვები & დრო",link:"/flashcards/",time:"10 წთ"},
+{name:"ბარათები: ფერები & ფორმები",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: ზმნა 'to be'",link:"/grammar/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:3,title:"საკვები & სასმელები",tasks:[
+{name:"ბარათები: საკვები & სასმელები",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: რესტორანში",link:"/phrases/",time:"10 წთ"},
+{name:"დიალოგი: კაფეში შეკვეთა",link:"/conversations/",time:"10 წთ"},
+{name:"ქვიზი: გამოცადე თავი",link:"/quiz-widget/",time:"5 წთ"}
+]},
+{day:4,title:"ყოველდღიური რუტინა",tasks:[
+{name:"ბარათები: ყოველდღიური მოქმედებები",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Present Simple",link:"/grammar/",time:"10 წთ"},
+{name:"წერა: აღწერე შენი დღე",link:"/writing/",time:"10 წთ"},
+{name:"პოდკასტი #2",link:"/podcast/",time:"5 წთ"}
+]},
+{day:5,title:"სახლი & ოთახები",tasks:[
+{name:"ბარათები: სახლი & ავეჯი",link:"/flashcards/",time:"10 წთ"},
+{name:"კითხვა: A1 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"მოსმენა: A1 სავარჯიშო",link:"/listening/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:6,title:"ტანსაცმელი & გარეგნობა",tasks:[
+{name:"ბარათები: ტანსაცმელი",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: This/That/These/Those",link:"/grammar/",time:"10 წთ"},
+{name:"იდიომები: პირველი 10",link:"/idioms/",time:"10 წთ"},
+{name:"თამაში: Word Scramble",link:"/games/",time:"5 წთ"}
+]},
+{day:7,title:"🏆 კვირის მიმოხილვა",tasks:[
+{name:"გაიმეორე ყველა ბარათი (ოჯახი→ტანსაცმელი)",link:"/flashcards/",time:"15 წთ"},
+{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},
+{name:"დაწერე 5 წინადადება ამ კვირის სიტყვებით",link:"/writing/",time:"10 წთ"}
+]},
+{day:8,title:"ამინდი & სეზონები",tasks:[
+{name:"ბარათები: ამინდი & კლიმატი",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: There is/There are",link:"/grammar/",time:"10 წთ"},
+{name:"დიალოგი: ამინდზე საუბარი",link:"/conversations/",time:"10 წთ"},
+{name:"პოდკასტი #3",link:"/podcast/",time:"5 წთ"}
+]},
+{day:9,title:"პროფესიები & სამუშაო",tasks:[
+{name:"ბარათები: პროფესიები",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: სამსახურში",link:"/phrases/",time:"10 წთ"},
+{name:"კითხვა: სამუშაო ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:10,title:"ტრანსპორტი & მოგზაურობა",tasks:[
+{name:"ბარათები: ტრანსპორტი",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Can/Can't",link:"/grammar/",time:"10 წთ"},
+{name:"დიალოგი: აეროპორტში",link:"/conversations/",time:"10 წთ"},
+{name:"მოსმენა: A1 სავარჯიშო #2",link:"/listening/",time:"5 წთ"}
+]},
+{day:11,title:"სხეულის ნაწილები & ჯანმრთელობა",tasks:[
+{name:"ბარათები: სხეული & ჯანმრთელობა",link:"/flashcards/",time:"10 წთ"},
+{name:"False Friends: ქართველების შეცდომები",link:"/false-friends/",time:"10 წთ"},
+{name:"წერა: აღწერე სურათი",link:"/writing/",time:"10 წთ"},
+{name:"პოდკასტი #4",link:"/podcast/",time:"5 წთ"}
+]},
+{day:12,title:"შოპინგი & ფასები",tasks:[
+{name:"ბარათები: შოპინგი",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: მაღაზიაში",link:"/phrases/",time:"10 წთ"},
+{name:"გრამატიკა: How much/How many",link:"/grammar/",time:"10 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:13,title:"ჰობი & თავისუფალი დრო",tasks:[
+{name:"ბარათები: ჰობი & სპორტი",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Like + -ing",link:"/grammar/",time:"10 წთ"},
+{name:"დიალოგი: ჰობიზე საუბარი",link:"/conversations/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:14,title:"🏆 კვირა 2 მიმოხილვა",tasks:[
+{name:"გაიმეორე კვირა 2 ბარათები",link:"/flashcards/",time:"15 წთ"},
+{name:"დონის ტესტი ხელახლა",link:"/level-test/",time:"10 წთ"},
+{name:"დაწერე პარაგრაფი: 'ჩემი საყვარელი ჰობი'",link:"/writing/",time:"10 წთ"}
+]},
+{day:15,title:"ემოციები & გრძნობები",tasks:[
+{name:"ბარათები: ემოციები",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Present Continuous",link:"/grammar/",time:"10 წთ"},
+{name:"გამოთქმა: 15 რთული სიტყვა",link:"/pronunciation/",time:"10 წთ"},
+{name:"პოდკასტი #5",link:"/podcast/",time:"5 წთ"}
+]},
+{day:16,title:"ქალაქი & მიმართულებები",tasks:[
+{name:"ბარათები: ქალაქი",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: მიმართულების კითხვა",link:"/phrases/",time:"10 წთ"},
+{name:"კითხვა: A1-A2 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:17,title:"ტექნოლოგია & ინტერნეტი",tasks:[
+{name:"ბარათები: ტექნოლოგია",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Past Simple (was/were)",link:"/grammar/",time:"10 წთ"},
+{name:"მოსმენა: A2 სავარჯიშო",link:"/listening/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:18,title:"ბუნება & ცხოველები",tasks:[
+{name:"ბარათები: ცხოველები & ბუნება",link:"/flashcards/",time:"10 წთ"},
+{name:"იდიომები: ცხოველების იდიომები",link:"/idioms/",time:"10 წთ"},
+{name:"წერა: აღწერე შენი საყვარელი ადგილი",link:"/writing/",time:"10 წთ"},
+{name:"პოდკასტი #6",link:"/podcast/",time:"5 წთ"}
+]},
+{day:19,title:"განათლება & სკოლა",tasks:[
+{name:"ბარათები: განათლება",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Past Simple (regular verbs)",link:"/grammar/",time:"10 წთ"},
+{name:"დიალოგი: სკოლაზე საუბარი",link:"/conversations/",time:"10 წთ"},
+{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"}
+]},
+{day:20,title:"დღესასწაულები & ტრადიციები",tasks:[
+{name:"ბარათები: დღესასწაულები",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: მილოცვები",link:"/phrases/",time:"10 წთ"},
+{name:"კითხვა: A2 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"მოსმენა: A2 სავარჯიშო #2",link:"/listening/",time:"5 წთ"}
+]},
+{day:21,title:"🏆 კვირა 3 მიმოხილვა",tasks:[
+{name:"გაიმეორე ყველა რთული სიტყვა",link:"/flashcards/",time:"15 წთ"},
+{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},
+{name:"დაწერე: 'რა ვისწავლე 3 კვირაში'",link:"/writing/",time:"10 წთ"}
+]},
+{day:22,title:"მუსიკა & გართობა",tasks:[
+{name:"ბარათები: მუსიკა & გართობა",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Future (will/going to)",link:"/grammar/",time:"10 წთ"},
+{name:"პოდკასტი #7",link:"/podcast/",time:"5 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:23,title:"ფული & ბანკი",tasks:[
+{name:"ბარათები: ფინანსები & ბანკი",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: ბანკში",link:"/phrases/",time:"10 წთ"},
+{name:"დიალოგი: ფულზე საუბარი",link:"/conversations/",time:"10 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:24,title:"სამზარეულო & კულინარია",tasks:[
+{name:"ბარათები: სამზარეულო",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Countable/Uncountable",link:"/grammar/",time:"10 წთ"},
+{name:"კითხვა: რეცეპტი ინგლისურად",link:"/reading/",time:"10 წთ"},
+{name:"მოსმენა",link:"/listening/",time:"5 წთ"}
+]},
+{day:25,title:"მოგზაურობა & სასტუმრო",tasks:[
+{name:"ბარათები: მოგზაურობა",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: სასტუმროში",link:"/phrases/",time:"10 წთ"},
+{name:"False Friends: მოგზაურობის სიტყვები",link:"/false-friends/",time:"10 წთ"},
+{name:"პოდკასტი #8",link:"/podcast/",time:"5 წთ"}
+]},
+{day:26,title:"სოციალური მედია",tasks:[
+{name:"ბარათები: სოც. მედია & ინტერნეტი",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Comparatives",link:"/grammar/",time:"10 წთ"},
+{name:"წერა: სოციალური პოსტი ინგლისურად",link:"/writing/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:27,title:"სამსახური & ინტერვიუ",tasks:[
+{name:"ბარათები: სამსახური & ბიზნესი",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: ინტერვიუსთვის",link:"/phrases/",time:"10 წთ"},
+{name:"დიალოგი: სამუშაო ინტერვიუ",link:"/conversations/",time:"10 წთ"},
+{name:"გამოთქმა: ბიზნეს სიტყვები",link:"/pronunciation/",time:"5 წთ"}
+]},
+{day:28,title:"🏆 კვირა 4 მიმოხილვა",tasks:[
+{name:"გაიმეორე კვირა 4 ბარათები",link:"/flashcards/",time:"15 წთ"},
+{name:"დონის ტესტი - პროგრესის შემოწმება",link:"/level-test/",time:"10 წთ"},
+{name:"წერა: 'ჩემი მიზნები ინგლისურში'",link:"/writing/",time:"10 წთ"}
+]},
+{day:29,title:"მთლიანი გამეორება",tasks:[
+{name:"გაიარე ყველა False Friends",link:"/false-friends/",time:"10 წთ"},
+{name:"გაიარე ყველა იდიომა",link:"/idioms/",time:"10 წთ"},
+{name:"მოისმინე 2 პოდკასტი",link:"/podcast/",time:"15 წთ"},
+{name:"ითამაშე 3 თამაში",link:"/games/",time:"10 წთ"}
+]},
+{day:30,title:"🎓 ფინალური ტესტი & სერთიფიკატი",tasks:[
+{name:"დონის ტესტი - ფინალური",link:"/level-test/",time:"15 წთ"},
+{name:"ყოველდღიური გამოწვევა - ფინალი",link:"/daily/",time:"10 წთ"},
+{name:"წერა: 'რა ვისწავლე 30 დღეში'",link:"/writing/",time:"15 წთ"},
+{name:"🎉 გილოცავ! შეაფასე პროგრესი",link:"/dashboard/",time:"5 წთ"}
+]}
+],
+a2:[
+{day:1,title:"Present Simple vs Continuous",tasks:[
+{name:"გრამატიკა: Present Simple vs Continuous",link:"/grammar/",time:"15 წთ"},
+{name:"ბარათები: ფრეიზალ ზმნები",link:"/flashcards/",time:"10 წთ"},
+{name:"კითხვა: A2 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"პოდკასტი #10",link:"/podcast/",time:"5 წთ"}
+]},
+{day:2,title:"Past Simple ღრმად",tasks:[
+{name:"გრამატიკა: Past Simple (irregular verbs)",link:"/grammar/",time:"15 წთ"},
+{name:"ბარათები: irregular verbs",link:"/flashcards/",time:"10 წთ"},
+{name:"წერა: აღწერე გუშინდელი დღე",link:"/writing/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:3,title:"სასტუმრო & მოგზაურობა",tasks:[
+{name:"ფრაზები: სასტუმროში/აეროპორტში",link:"/phrases/",time:"10 წთ"},
+{name:"დიალოგი: სასტუმროს დაჯავშნა",link:"/conversations/",time:"10 წთ"},
+{name:"მოსმენა: A2 დიალოგი",link:"/listening/",time:"10 წთ"},
+{name:"იდიომები: მოგზაურობის",link:"/idioms/",time:"5 წთ"}
+]},
+{day:4,title:"Comparatives & Superlatives",tasks:[
+{name:"გრამატიკა: Comparatives & Superlatives",link:"/grammar/",time:"15 წთ"},
+{name:"ბარათები: ზედსართავი სახელები",link:"/flashcards/",time:"10 წთ"},
+{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:5,title:"ტელეფონზე საუბარი",tasks:[
+{name:"ფრაზები: ტელეფონით საუბარი",link:"/phrases/",time:"10 წთ"},
+{name:"გამოთქმა: რთული ბგერები",link:"/pronunciation/",time:"10 წთ"},
+{name:"დიალოგი: ტელეფონით",link:"/conversations/",time:"10 წთ"},
+{name:"პოდკასტი #12",link:"/podcast/",time:"5 წთ"}
+]},
+{day:6,title:"Present Perfect",tasks:[
+{name:"გრამატიკა: Present Perfect",link:"/grammar/",time:"15 წთ"},
+{name:"კითხვა: A2 ამბავი",link:"/reading/",time:"10 წთ"},
+{name:"წერა: 'რა გამოცდილება მაქვს'",link:"/writing/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:7,title:"🏆 კვირის მიმოხილვა",tasks:[
+{name:"გაიმეორე კვირის გრამატიკა",link:"/grammar/",time:"15 წთ"},
+{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},
+{name:"მოისმინე 2 პოდკასტი",link:"/podcast/",time:"10 წთ"}
+]},
+{day:8,title:"ჯანმრთელობა & ექიმთან ვიზიტი",tasks:[
+{name:"ბარათები: სამედიცინო ტერმინები",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: ექიმთან",link:"/phrases/",time:"10 წთ"},
+{name:"დიალოგი: ექიმთან ვიზიტი",link:"/conversations/",time:"10 წთ"},
+{name:"False Friends",link:"/false-friends/",time:"5 წთ"}
+]},
+{day:9,title:"Modal Verbs",tasks:[
+{name:"გრამატიკა: Must/Should/Have to",link:"/grammar/",time:"15 წთ"},
+{name:"მოსმენა: A2 სავარჯიშო",link:"/listening/",time:"10 წთ"},
+{name:"იდიომები: 10 ახალი",link:"/idioms/",time:"10 წთ"},
+{name:"პოდკასტი #14",link:"/podcast/",time:"5 წთ"}
+]},
+{day:10,title:"ემოციები & აზრის გამოხატვა",tasks:[
+{name:"ბარათები: ემოციები (გაღრმავებული)",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: I think/I believe/In my opinion",link:"/grammar/",time:"10 წთ"},
+{name:"წერა: რეცენზია (ფილმი/წიგნი)",link:"/writing/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:11,title:"Past Continuous",tasks:[
+{name:"გრამატიკა: Past Continuous",link:"/grammar/",time:"15 წთ"},
+{name:"კითხვა: A2-B1 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"გამოთქმა: th, r, w ბგერები",link:"/pronunciation/",time:"10 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:12,title:"რჩევა & შეთავაზება",tasks:[
+{name:"ფრაზები: რჩევა & შეთავაზება",link:"/phrases/",time:"10 წთ"},
+{name:"დიალოგი: რჩევის მიცემა",link:"/conversations/",time:"10 წთ"},
+{name:"მოსმენა: A2 სავარჯიშო",link:"/listening/",time:"10 წთ"},
+{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"}
+]},
+{day:13,title:"Conditionals (First)",tasks:[
+{name:"გრამატიკა: First Conditional",link:"/grammar/",time:"15 წთ"},
+{name:"ბარათები: კავშირები (if, when, because)",link:"/flashcards/",time:"10 წთ"},
+{name:"წერა: 'თუ ლოტერეაში მოვიგებ...'",link:"/writing/",time:"10 წთ"},
+{name:"პოდკასტი #16",link:"/podcast/",time:"5 წთ"}
+]},
+{day:14,title:"🏆 კვირა 2 მიმოხილვა",tasks:[
+{name:"გაიმეორე ყველა გრამატიკა",link:"/grammar/",time:"15 წთ"},
+{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},
+{name:"დაწერე: 'ჩემი პროგრესი'",link:"/writing/",time:"10 წთ"}
+]},
+{day:15,title:"სამუშაო & CV",tasks:[
+{name:"ბარათები: ბიზნეს ლექსიკა",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: CV & სამოტივაციო წერილი",link:"/phrases/",time:"10 წთ"},
+{name:"დიალოგი: სამუშაო ინტერვიუ",link:"/conversations/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:16,title:"Passive Voice",tasks:[
+{name:"გრამატიკა: Passive Voice (basics)",link:"/grammar/",time:"15 წთ"},
+{name:"კითხვა: B1 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"იდიომები: ბიზნეს იდიომები",link:"/idioms/",time:"10 წთ"},
+{name:"მოსმენა",link:"/listening/",time:"5 წთ"}
+]},
+{day:17,title:"ფილმები & სერიალები",tasks:[
+{name:"ბარათები: გართობა & მედია",link:"/flashcards/",time:"10 წთ"},
+{name:"გამოთქმა: 20 რთული სიტყვა",link:"/pronunciation/",time:"10 წთ"},
+{name:"წერა: საყვარელი ფილმის რეცენზია",link:"/writing/",time:"10 წთ"},
+{name:"პოდკასტი #18",link:"/podcast/",time:"5 წთ"}
+]},
+{day:18,title:"Reported Speech",tasks:[
+{name:"გრამატიკა: Reported Speech",link:"/grammar/",time:"15 წთ"},
+{name:"დიალოგი: 'მან მითხრა რომ...'",link:"/conversations/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:19,title:"მოგზაურობის დაგეგმვა",tasks:[
+{name:"ფრაზები: დაგეგმვა & შეთანხმება",link:"/phrases/",time:"10 წთ"},
+{name:"კითხვა: მოგზაურობის ბლოგი",link:"/reading/",time:"10 წთ"},
+{name:"წერა: დაგეგმე მოგზაურობა",link:"/writing/",time:"10 წთ"},
+{name:"False Friends: მოგზაურობა",link:"/false-friends/",time:"5 წთ"}
+]},
+{day:20,title:"Phrasal Verbs",tasks:[
+{name:"ბარათები: ფრეიზალ ზმნები (20)",link:"/flashcards/",time:"10 წთ"},
+{name:"გრამატიკა: Phrasal Verbs",link:"/grammar/",time:"15 წთ"},
+{name:"მოსმენა: B1 სავარჯიშო",link:"/listening/",time:"10 წთ"},
+{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"}
+]},
+{day:21,title:"🏆 კვირა 3 მიმოხილვა",tasks:[
+{name:"გაიმეორე ფრეიზალ ზმნები",link:"/flashcards/",time:"15 წთ"},
+{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},
+{name:"3 პოდკასტი ზედიზედ",link:"/podcast/",time:"15 წთ"}
+]},
+{day:22,title:"Second Conditional",tasks:[
+{name:"გრამატიკა: Second Conditional",link:"/grammar/",time:"15 წთ"},
+{name:"წერა: 'რას გავაკეთებდი თუ...'",link:"/writing/",time:"10 წთ"},
+{name:"იდიომები: 10 ახალი",link:"/idioms/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:23,title:"ახალი ამბები & მედია",tasks:[
+{name:"ბარათები: ახალი ამბები & პოლიტიკა",link:"/flashcards/",time:"10 წთ"},
+{name:"კითხვა: ინგლისური სტატია",link:"/reading/",time:"15 წთ"},
+{name:"გამოთქმა: ფორმალური vs არაფორმალური",link:"/pronunciation/",time:"10 წთ"},
+{name:"პოდკასტი #22",link:"/podcast/",time:"5 წთ"}
+]},
+{day:24,title:"Present Perfect Continuous",tasks:[
+{name:"გრამატიკა: Present Perfect Continuous",link:"/grammar/",time:"15 წთ"},
+{name:"დიალოგი: გამოცდილებაზე საუბარი",link:"/conversations/",time:"10 წთ"},
+{name:"მოსმენა: B1 სავარჯიშო",link:"/listening/",time:"10 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:25,title:"ბიზნეს ინგლისური",tasks:[
+{name:"ბარათები: ბიზნეს ტერმინები",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: შეხვედრები & ელ.ფოსტა",link:"/phrases/",time:"10 წთ"},
+{name:"წერა: ბიზნეს ელ.ფოსტა",link:"/writing/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:26,title:"Relative Clauses",tasks:[
+{name:"გრამატიკა: Relative Clauses (who/which/that)",link:"/grammar/",time:"15 წთ"},
+{name:"კითხვა: B1 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"იდიომები: რთული იდიომები",link:"/idioms/",time:"10 წთ"},
+{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"}
+]},
+{day:27,title:"გასართობი & კულტურა",tasks:[
+{name:"ბარათები: კულტურა & ხელოვნება",link:"/flashcards/",time:"10 წთ"},
+{name:"პოდკასტი #25",link:"/podcast/",time:"10 წთ"},
+{name:"დიალოგი: კულტურაზე საუბარი",link:"/conversations/",time:"10 წთ"},
+{name:"False Friends: ფინალური",link:"/false-friends/",time:"5 წთ"}
+]},
+{day:28,title:"🏆 კვირა 4 მიმოხილვა",tasks:[
+{name:"გაიმეორე ყველა გრამატიკა (A2)",link:"/grammar/",time:"15 წთ"},
+{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},
+{name:"წერა: 'ჩემი A2 მოგზაურობა'",link:"/writing/",time:"10 წთ"}
+]},
+{day:29,title:"მთლიანი გამეორება",tasks:[
+{name:"ყველა False Friends & იდიომა",link:"/false-friends/",time:"10 წთ"},
+{name:"5 პოდკასტი ზედიზედ",link:"/podcast/",time:"20 წთ"},
+{name:"ითამაშე 5 თამაში",link:"/games/",time:"10 წთ"},
+{name:"მთლიანი ბარათების გამეორება",link:"/flashcards/",time:"10 წთ"}
+]},
+{day:30,title:"🎓 A2 ფინალური ტესტი",tasks:[
+{name:"დონის ტესტი - ფინალური A2",link:"/level-test/",time:"15 წთ"},
+{name:"ყოველდღიური გამოწვევა - ფინალი",link:"/daily/",time:"10 წთ"},
+{name:"წერა: '30 დღის შემდეგ' — ფინალური ესეი",link:"/writing/",time:"15 წთ"},
+{name:"🎉 მზად ხარ B1-სთვის!",link:"/dashboard/",time:"5 წთ"}
+]}
+],
+b1:[
+{day:1,title:"Tenses Review & Advanced",tasks:[
+{name:"გრამატიკა: All Tenses Review",link:"/grammar/",time:"15 წთ"},
+{name:"ბარათები: აკადემიური ლექსიკა",link:"/flashcards/",time:"10 წთ"},
+{name:"კითხვა: B1-B2 ტექსტი",link:"/reading/",time:"10 წთ"},
+{name:"პოდკასტი: გრძელი ეპიზოდი",link:"/podcast/",time:"10 წთ"}
+]},
+{day:2,title:"Third Conditional",tasks:[
+{name:"გრამატიკა: Third Conditional",link:"/grammar/",time:"15 წთ"},
+{name:"წერა: 'რას შევცვლიდი წარსულში'",link:"/writing/",time:"15 წთ"},
+{name:"იდიომები: 15 რთული",link:"/idioms/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:3,title:"დებატები & არგუმენტაცია",tasks:[
+{name:"ბარათები: დებატის ტერმინები",link:"/flashcards/",time:"10 წთ"},
+{name:"ფრაზები: დისკუსიის ფრაზები",link:"/phrases/",time:"10 წთ"},
+{name:"წერა: არგუმენტატიული ესეი",link:"/writing/",time:"15 წთ"},
+{name:"გამოთქმა: ფორმალური ტონი",link:"/pronunciation/",time:"5 წთ"}
+]},
+{day:4,title:"Advanced Passive & Causative",tasks:[
+{name:"გრამატიკა: Advanced Passive",link:"/grammar/",time:"15 წთ"},
+{name:"კითხვა: B2 სტატია",link:"/reading/",time:"15 წთ"},
+{name:"მოსმენა: B1-B2 სავარჯიშო",link:"/listening/",time:"10 წთ"},
+{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"}
+]},
+{day:5,title:"სამეცნიერო ინგლისური",tasks:[
+{name:"ბარათები: მეცნიერება & ტექნოლოგია",link:"/flashcards/",time:"10 წთ"},
+{name:"იდიომები: ტექნოლოგიის იდიომები",link:"/idioms/",time:"10 წთ"},
+{name:"პოდკასტი: Common Mistakes Georgians Make",link:"/podcast/",time:"10 წთ"},
+{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}
+]},
+{day:6,title:"Mixed Conditionals",tasks:[
+{name:"გრამატიკა: Mixed Conditionals",link:"/grammar/",time:"15 წთ"},
+{name:"დიალოგი: ჰიპოთეტური სიტუაციები",link:"/conversations/",time:"10 წთ"},
+{name:"False Friends: ყველა დონე",link:"/false-friends/",time:"10 წთ"},
+{name:"თამაში",link:"/games/",time:"5 წთ"}
+]},
+{day:7,title:"🏆 კვირის მიმოხილვა",tasks:[
+{name:"გრამატიკა: კვირის გამეორება",link:"/grammar/",time:"15 წთ"},
+{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},
+{name:"წერა: ესეი B1 თემაზე",link:"/writing/",time:"15 წთ"}
+]},
+{day:8,title:"Wish & If Only",tasks:[{name:"გრამატიკა: Wish/If Only",link:"/grammar/",time:"15 წთ"},{name:"კითხვა: B2 ტექსტი",link:"/reading/",time:"15 წთ"},{name:"მოსმენა: B2 სავარჯიშო",link:"/listening/",time:"10 წთ"},{name:"პოდკასტი",link:"/podcast/",time:"5 წთ"}]},
+{day:9,title:"პრეზენტაციები",tasks:[{name:"ფრაზები: პრეზენტაციის ენა",link:"/phrases/",time:"10 წთ"},{name:"ბარათები: აკადემიური",link:"/flashcards/",time:"10 წთ"},{name:"წერა: პრეზენტაციის სკრიპტი",link:"/writing/",time:"15 წთ"},{name:"გამოთქმა: სტრესი & ინტონაცია",link:"/pronunciation/",time:"5 წთ"}]},
+{day:10,title:"Gerunds & Infinitives",tasks:[{name:"გრამატიკა: Gerund vs Infinitive",link:"/grammar/",time:"15 წთ"},{name:"კითხვა",link:"/reading/",time:"10 წთ"},{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"},{name:"იდიომები: 10 ახალი",link:"/idioms/",time:"10 წთ"}]},
+{day:11,title:"Advanced Phrasal Verbs",tasks:[{name:"ბარათები: ფრეიზალ ზმნები (advanced)",link:"/flashcards/",time:"10 წთ"},{name:"მოსმენა",link:"/listening/",time:"10 წთ"},{name:"დიალოგი: არაფორმალური",link:"/conversations/",time:"10 წთ"},{name:"თამაში",link:"/games/",time:"5 წთ"}]},
+{day:12,title:"ფორმალური vs არაფორმალური",tasks:[{name:"ფრაზები: ფორმალური წერა",link:"/phrases/",time:"10 წთ"},{name:"წერა: ფორმალური წერილი",link:"/writing/",time:"15 წთ"},{name:"კითხვა: ფორმალური ტექსტი",link:"/reading/",time:"10 წთ"},{name:"პოდკასტი",link:"/podcast/",time:"5 წთ"}]},
+{day:13,title:"Inversion & Emphasis",tasks:[{name:"გრამატიკა: Inversion",link:"/grammar/",time:"15 წთ"},{name:"იდიომები",link:"/idioms/",time:"10 წთ"},{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"},{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}]},
+{day:14,title:"🏆 კვირა 2",tasks:[{name:"გრამატიკის გამეორება",link:"/grammar/",time:"15 წთ"},{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},{name:"ესეი: თავისუფალი თემა",link:"/writing/",time:"15 წთ"}]},
+{day:15,title:"Collocations",tasks:[{name:"ბარათები: კოლოკაციები",link:"/flashcards/",time:"10 წთ"},{name:"კითხვა: B2 სტატია",link:"/reading/",time:"15 წთ"},{name:"მოსმენა",link:"/listening/",time:"10 წთ"},{name:"პოდკასტი",link:"/podcast/",time:"5 წთ"}]},
+{day:16,title:"გარემო & ეკოლოგია",tasks:[{name:"ბარათები: გარემო",link:"/flashcards/",time:"10 წთ"},{name:"წერა: ესეი გარემოზე",link:"/writing/",time:"15 წთ"},{name:"იდიომები: ბუნების",link:"/idioms/",time:"10 წთ"},{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}]},
+{day:17,title:"Narrative Tenses",tasks:[{name:"გრამატიკა: Narrative Tenses",link:"/grammar/",time:"15 წთ"},{name:"კითხვა: მოთხრობა",link:"/reading/",time:"15 წთ"},{name:"წერა: მოკლე მოთხრობა",link:"/writing/",time:"15 წთ"}]},
+{day:18,title:"IELTS Prep Start",tasks:[{name:"ბარათები: IELTS ლექსიკა",link:"/flashcards/",time:"10 წთ"},{name:"კითხვა: IELTS სტილი",link:"/reading/",time:"15 წთ"},{name:"მოსმენა: IELTS სტილი",link:"/listening/",time:"10 წთ"},{name:"გამოთქმა",link:"/pronunciation/",time:"5 წთ"}]},
+{day:19,title:"სამართლებრივი ინგლისური",tasks:[{name:"ბარათები: სამართალი & კონტრაქტები",link:"/flashcards/",time:"10 წთ"},{name:"ფრაზები: ფორმალური",link:"/phrases/",time:"10 წთ"},{name:"False Friends: ფინალური",link:"/false-friends/",time:"10 წთ"},{name:"თამაში",link:"/games/",time:"5 წთ"}]},
+{day:20,title:"Advanced Modal Verbs",tasks:[{name:"გრამატიკა: Advanced Modals",link:"/grammar/",time:"15 წთ"},{name:"დიალოგი: რჩევა/ვალდებულება",link:"/conversations/",time:"10 წთ"},{name:"პოდკასტი",link:"/podcast/",time:"10 წთ"},{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"}]},
+{day:21,title:"🏆 კვირა 3",tasks:[{name:"გრამატიკა: სრული გამეორება",link:"/grammar/",time:"20 წთ"},{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},{name:"ესეი",link:"/writing/",time:"15 წთ"}]},
+{day:22,title:"Cleft Sentences",tasks:[{name:"გრამატიკა: Cleft Sentences",link:"/grammar/",time:"15 წთ"},{name:"კითხვა",link:"/reading/",time:"15 წთ"},{name:"იდიომები: 10 ახალი",link:"/idioms/",time:"10 წთ"},{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"}]},
+{day:23,title:"ბიზნეს მოლაპარაკებები",tasks:[{name:"ფრაზები: მოლაპარაკება",link:"/phrases/",time:"10 წთ"},{name:"დიალოგი: ბიზნეს შეხვედრა",link:"/conversations/",time:"10 წთ"},{name:"წერა: ბიზნეს წინადადება",link:"/writing/",time:"15 წთ"},{name:"მოსმენა",link:"/listening/",time:"5 წთ"}]},
+{day:24,title:"Subjunctive & Formal",tasks:[{name:"გრამატიკა: Subjunctive",link:"/grammar/",time:"15 წთ"},{name:"კითხვა: აკადემიური ტექსტი",link:"/reading/",time:"15 წთ"},{name:"პოდკასტი: Job Interview Prep",link:"/podcast/",time:"10 წთ"}]},
+{day:25,title:"Advanced Connectors",tasks:[{name:"გრამატიკა: Linking Words (advanced)",link:"/grammar/",time:"15 წთ"},{name:"წერა: ესეი კავშირებით",link:"/writing/",time:"15 წთ"},{name:"ყოველდღიური გამოწვევა",link:"/daily/",time:"5 წთ"},{name:"თამაში",link:"/games/",time:"5 წთ"}]},
+{day:26,title:"წარმოთქმის სრულყოფა",tasks:[{name:"გამოთქმა: ყველა რთული ბგერა",link:"/pronunciation/",time:"15 წთ"},{name:"მოსმენა: B2 სავარჯიშო",link:"/listening/",time:"10 წთ"},{name:"დიალოგი: ფორმალური",link:"/conversations/",time:"10 წთ"},{name:"ქვიზი",link:"/quiz-widget/",time:"5 წთ"}]},
+{day:27,title:"პოპ კულტურა ინგლისურად",tasks:[{name:"ბარათები: სლენგი & თანამედროვე",link:"/flashcards/",time:"10 წთ"},{name:"იდიომები: ფინალური 20",link:"/idioms/",time:"10 წთ"},{name:"პოდკასტი: Travel English",link:"/podcast/",time:"10 წთ"},{name:"False Friends: ფინალური ტესტი",link:"/false-friends/",time:"5 წთ"}]},
+{day:28,title:"🏆 კვირა 4",tasks:[{name:"სრული გრამატიკის გამეორება",link:"/grammar/",time:"20 წთ"},{name:"დონის ტესტი",link:"/level-test/",time:"10 წთ"},{name:"ესეი: B1 სრული ანალიზი",link:"/writing/",time:"15 წთ"}]},
+{day:29,title:"ბოლო გამეორება",tasks:[{name:"ყველა იდიომა & False Friends",link:"/false-friends/",time:"15 წთ"},{name:"5 პოდკასტი",link:"/podcast/",time:"20 წთ"},{name:"ყველა თამაში",link:"/games/",time:"10 წთ"},{name:"ბარათების მარათონი",link:"/flashcards/",time:"15 წთ"}]},
+{day:30,title:"🎓 B1 ფინალური ტესტი",tasks:[{name:"დონის ტესტი - ფინალური B1",link:"/level-test/",time:"15 წთ"},{name:"ყოველდღიური გამოწვევა - ფინალი",link:"/daily/",time:"10 წთ"},{name:"ესეი: '30 დღე B1-ზე'",link:"/writing/",time:"15 წთ"},{name:"🎓 გილოცავ! მზად ხარ B2-სთვის!",link:"/dashboard/",time:"5 წთ"}]}
+]
+};
+
+let currentLevel='a1';
+let state=JSON.parse(localStorage.getItem('fluentge-path')||'{}');
+if(!state.a1)state={a1:{},a2:{},b1:{}};
+
+function saveState(){localStorage.setItem('fluentge-path',JSON.stringify(state))}
+
+function getCompletedDays(level){return Object.values(state[level]||{}).filter(d=>d.completed).length}
+function getStreak(level){
+let s=0,days=plans[level];
+for(let i=days.length-1;i>=0;i--){
+if(state[level]?.[i+1]?.completed)s++;else break;
+}
+// count from start if end streak is 0
+if(s===0){for(let i=0;i<days.length;i++){if(state[level]?.[i+1]?.completed)s++;else break;}}
+return s;
+}
+function getTotalTasks(level){
+let t=0;
+Object.values(state[level]||{}).forEach(d=>{if(d.tasks)t+=Object.values(d.tasks).filter(Boolean).length});
+return t;
+}
+
+function render(){
+const days=plans[currentLevel];
+const container=document.getElementById('daysContainer');
+container.innerHTML='';
+const completed=getCompletedDays(currentLevel);
+document.getElementById('completedDays').textContent=completed;
+document.getElementById('streak').textContent=getStreak(currentLevel);
+document.getElementById('totalTasks').textContent=getTotalTasks(currentLevel);
+const pct=Math.round(completed/30*100);
+document.getElementById('progressBar').style.width=pct+'%';
+document.getElementById('progressText').textContent=pct+'% დასრულდა';
+
+// Find first incomplete day
+let firstIncomplete=31;
+for(let i=0;i<days.length;i++){if(!state[currentLevel]?.[i+1]?.completed){firstIncomplete=i+1;break;}}
+
+days.forEach((dayData,i)=>{
+const dayNum=i+1;
+const dayState=state[currentLevel]?.[dayNum]||{};
+const isCompleted=dayState.completed;
+const isToday=dayNum===firstIncomplete;
+const card=document.createElement('div');
+card.className='day-card'+(isCompleted?' completed':'')+(isToday?' today':'');
+card.innerHTML=`
+<div class="day-header" onclick="toggle(this)">
+<div class="day-num">${isCompleted?'✓':dayNum}</div>
+<div class="day-title">${dayData.title}</div>
+<div class="day-arrow">▼</div>
+</div>
+<div class="day-body">
+${dayData.tasks.map((t,ti)=>{
+const done=dayState.tasks?.[ti];
+return `<div class="task">
+<div class="task-check${done?' done':''}" onclick="event.stopPropagation();toggleTask(${dayNum},${ti},this)"></div>
+<div class="task-info">
+<div class="task-name">${t.name}</div>
+<a class="task-link" href="${t.link}" target="_blank">გახსნა →</a>
+</div>
+<div class="task-time">${t.time}</div>
+</div>`;
+}).join('')}
+<button class="complete-day${isCompleted?' done':''}" onclick="completeDay(${dayNum})">${isCompleted?'✅ დასრულდა':'დღის დასრულება'}</button>
+</div>`;
+if(isToday)setTimeout(()=>card.classList.add('open'),100);
+container.appendChild(card);
+});
+}
+
+function toggle(el){el.closest('.day-card').classList.toggle('open')}
+
+function toggleTask(day,taskIdx,el){
+if(!state[currentLevel][day])state[currentLevel][day]={tasks:{}};
+if(!state[currentLevel][day].tasks)state[currentLevel][day].tasks={};
+state[currentLevel][day].tasks[taskIdx]=!state[currentLevel][day].tasks[taskIdx];
+el.classList.toggle('done');
+saveState();
+render();
+}
+
+function completeDay(day){
+if(!state[currentLevel][day])state[currentLevel][day]={tasks:{}};
+state[currentLevel][day].completed=!state[currentLevel][day].completed;
+saveState();
+render();
+}
+
+document.querySelectorAll('.level-tab').forEach(tab=>{
+tab.addEventListener('click',()=>{
+document.querySelectorAll('.level-tab').forEach(t=>t.classList.remove('active'));
+tab.classList.add('active');
+currentLevel=tab.dataset.level;
+render();
+});
+});
+
+document.getElementById('resetBtn').addEventListener('click',()=>{
+if(confirm('ნამდვილად გინდა თავიდან დაწყება?')){
+state[currentLevel]={};
+saveState();
+render();
+}
+});
+
+render();
+</script>
+</body>
+</html>

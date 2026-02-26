@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>False Friends — FluentGe</title>
+<meta name="description" content="ინგლისური სიტყვები რომლებიც ქართველებს აბნევს — False Friends, მოტყუებითი მსგავსებები">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#1C1C1E;color:#F5F5F0;min-height:100vh}
+.nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(28,28,30,.95);backdrop-filter:blur(12px);border-bottom:1px solid #2E2E30;padding:12px 16px}
+.nav-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;text-decoration:none}
+.logo span:first-child{color:#C8C8C0}
+.logo span:last-child{color:#fff}
+.back-btn{color:#A0A09A;text-decoration:none;font-size:.85rem;padding:6px 14px;border:1px solid #2E2E30;border-radius:8px}
+.back-btn:hover{background:#242426;color:#fff}
+.hero{padding:100px 16px 40px;text-align:center;max-width:700px;margin:0 auto}
+.hero h1{font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:12px}
+.hero p{color:#A0A09A;font-size:.95rem;margin-bottom:24px}
+.stats{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.stat{background:#242426;border:1px solid #2E2E30;border-radius:12px;padding:10px 18px;font-size:.8rem}
+.stat strong{color:#C8C8C0;font-size:1.1rem;display:block}
+.filters{max-width:700px;margin:0 auto 30px;padding:0 16px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.filter-btn{background:#242426;border:1px solid #2E2E30;color:#A0A09A;padding:8px 16px;border-radius:20px;cursor:pointer;font-size:.82rem;transition:.2s}
+.filter-btn:hover,.filter-btn.active{background:#C8C8C0;color:#1C1C1E;border-color:#C8C8C0}
+.search-box{max-width:500px;margin:0 auto 30px;padding:0 16px}
+.search-box input{width:100%;background:#242426;border:1px solid #2E2E30;color:#F5F5F0;padding:12px 16px;border-radius:12px;font-size:.9rem;outline:none}
+.search-box input:focus{border-color:#C8C8C0}
+.grid{max-width:900px;margin:0 auto;padding:0 16px 60px;display:grid;gap:16px}
+.card{background:#242426;border:1px solid #2E2E30;border-radius:16px;padding:20px;transition:.2s}
+.card:hover{border-color:#404040}
+.card-header{display:flex;justify-content:space-between;align-items:start;margin-bottom:12px}
+.card-word{font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff}
+.card-level{font-size:.7rem;font-weight:700;background:rgba(200,200,192,.15);color:#C8C8C0;padding:3px 10px;border-radius:20px}
+.card-cat{font-size:.75rem;color:#6B6B65;margin-bottom:8px}
+.wrong{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);border-radius:10px;padding:12px;margin-bottom:10px}
+.wrong-label{color:#ef4444;font-size:.75rem;font-weight:600;margin-bottom:4px}
+.wrong p{color:#F5F5F0;font-size:.9rem}
+.right{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);border-radius:10px;padding:12px;margin-bottom:10px}
+.right-label{color:#22c55e;font-size:.75rem;font-weight:600;margin-bottom:4px}
+.right p{color:#F5F5F0;font-size:.9rem}
+.example{background:#1C1C1E;border-radius:10px;padding:12px;margin-top:8px}
+.example p{font-size:.85rem;color:#A0A09A}
+.example .ge{color:#6B6B65;margin-top:4px;font-size:.8rem}
+.mark-btn{margin-top:10px;background:transparent;border:1px solid #2E2E30;color:#A0A09A;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:.8rem;transition:.2s}
+.mark-btn:hover{border-color:#C8C8C0;color:#C8C8C0}
+.mark-btn.learned{background:#22c55e;border-color:#22c55e;color:#fff}
+.progress{max-width:500px;margin:0 auto 30px;padding:0 16px}
+.progress-bar{background:#242426;border-radius:8px;height:8px;overflow:hidden}
+.progress-fill{background:linear-gradient(90deg,#C8C8C0,#22c55e);height:100%;border-radius:8px;transition:.3s}
+.progress-text{text-align:center;font-size:.8rem;color:#6B6B65;margin-top:6px}
+footer{border-top:1px solid #2E2E30;padding:30px 16px;text-align:center;color:#6B6B65;font-size:.75rem}
+@media(max-width:600px){.hero h1{font-size:1.6rem}.card-word{font-size:1.1rem}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="/" class="logo"><span>Fluent</span><span>Ge</span></a><a href="/" class="back-btn">← მთავარი</a></div></nav>
+
+<div class="hero">
+<h1>🎭 False Friends</h1>
+<p>სიტყვები რომლებიც ქართველებს აბნევს — ჰგვანან ერთს, მაგრამ ნიშნავენ სხვას!</p>
+<div class="stats">
+<div class="stat"><strong id="total-count">0</strong>სიტყვა</div>
+<div class="stat"><strong id="learned-count">0</strong>ნასწავლი</div>
+</div>
+</div>
+
+<div class="progress"><div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div><div class="progress-text" id="progress-text">0%</div></div>
+
+<div class="search-box"><input type="text" id="search" placeholder="🔍 მოძებნე სიტყვა..."></div>
+
+<div class="filters" id="filters"></div>
+
+<div class="grid" id="grid"></div>
+
+<footer>© 2026 FluentGe — ყველა უფლება დაცულია</footer>
+
+<script>
+const data = [
+  // Confusing Pairs (look/sound similar but different meaning)
+  {word:"Actually",wrong:"აქტუალური (current)",right:"სინამდვილეში, რეალურად",example:"Actually, I changed my mind.",ge:"სინამდვილეში, აზრი შევიცვალე.",cat:"საერთო",level:"A2"},
+  {word:"Accurate",wrong:"აკურატული (neat/tidy)",right:"ზუსტი",example:"The information is accurate.",ge:"ინფორმაცია ზუსტია.",cat:"საერთო",level:"B1"},
+  {word:"Sympathy",wrong:"სიმპათია (attraction/crush)",right:"თანაგრძნობა",example:"I have sympathy for his situation.",ge:"მისი მდგომარეობის თანაგრძნობა მაქვს.",cat:"ემოციები",level:"B1"},
+  {word:"Pathetic",wrong:"პათეტიკური (dramatic/grand)",right:"საცოდავი, სავალალო",example:"That excuse is pathetic.",ge:"ეს გამართლება საცოდავია.",cat:"ემოციები",level:"B2"},
+  {word:"Magazine",wrong:"მაღაზია (store/shop)",right:"ჟურნალი",example:"I read a fashion magazine.",ge:"მოდის ჟურნალი წავიკითხე.",cat:"საერთო",level:"A1"},
+  {word:"Cabinet",wrong:"კაბინეტი (office room)",right:"კარადა, თარო",example:"The cups are in the cabinet.",ge:"ჭიქები კარადაშია.",cat:"სახლი",level:"A2"},
+  {word:"Fabric",wrong:"ფაბრიკა (factory)",right:"ქსოვილი, მასალა",example:"This fabric is very soft.",ge:"ეს ქსოვილი ძალიან რბილია.",cat:"საერთო",level:"B1"},
+  {word:"Prospect",wrong:"პროსპექტი (avenue/boulevard)",right:"პერსპექტივა, შესაძლებლობა",example:"There's no prospect of success.",ge:"წარმატების პერსპექტივა არ არის.",cat:"ბიზნესი",level:"B2"},
+  {word:"Conductor",wrong:"კონდუქტორი (only bus conductor)",right:"დირიჟორი / გამტარი (ელექტრო)",example:"The conductor led the orchestra.",ge:"დირიჟორმა ორკესტრი წარმართა.",cat:"კულტურა",level:"B1"},
+  {word:"Complexion",wrong:"კომპლექცია (body build)",right:"სახის ფერი/კანი",example:"She has a fair complexion.",ge:"მას ღია სახის ფერი აქვს.",cat:"გარეგნობა",level:"B2"},
+  {word:"Decade",wrong:"დეკადა (10-day period)",right:"ათწლეული",example:"I've lived here for a decade.",ge:"აქ ათწლეულია ვცხოვრობ.",cat:"დრო",level:"A2"},
+  {word:"Data",wrong:"დატა (date)",right:"მონაცემები, ინფორმაცია",example:"We need more data to decide.",ge:"გადაწყვეტილებისთვის მეტი მონაცემი გვჭირდება.",cat:"ტექნოლოგია",level:"A2"},
+  {word:"Preservative",wrong:"პრეზერვატივი (condom)",right:"კონსერვანტი",example:"This food has no preservatives.",ge:"ამ საკვებში კონსერვანტები არ არის.",cat:"საერთო",level:"B1"},
+  {word:"Angina",wrong:"ანგინა (tonsillitis)",right:"სტენოკარდია (გულის ტკივილი)",example:"He was diagnosed with angina.",ge:"მას სტენოკარდია დაუდგინეს.",cat:"ჯანმრთელობა",level:"C1"},
+  {word:"Routine",wrong:"რუტინა (only negative: boring routine)",right:"ჩვეული რიგი, ყოველდღიური წესი",example:"My morning routine includes exercise.",ge:"ჩემი დილის რუტინა ვარჯიშს მოიცავს.",cat:"საერთო",level:"A2"},
+  {word:"Genial",wrong:"გენიალური (genius-level)",right:"კეთილი, თბილი, მეგობრული",example:"He gave a genial smile.",ge:"მან კეთილი ღიმილი მოიღო.",cat:"ემოციები",level:"C1"},
+  {word:"Accurate",wrong:"აკურატი (neat person)",right:"ზუსტი, სწორი",example:"Is this translation accurate?",ge:"ეს თარგმანი ზუსტია?",cat:"საერთო",level:"B1"},
+  {word:"Biscuit",wrong:"ბისკვიტი (sponge cake)",right:"ფუნთუშა, კრეკერი",example:"Would you like a biscuit with tea?",ge:"ჩაისთან ფუნთუშა გინდა?",cat:"საკვები",level:"A1"},
+  {word:"Brilliant",wrong:"ბრილიანტი (diamond)",right:"ბრწყინვალე, შესანიშნავი",example:"That's a brilliant idea!",ge:"ეს ბრწყინვალე იდეაა!",cat:"საერთო",level:"A2"},
+  {word:"Concrete",wrong:"კონკრეტული (specific)",right:"ბეტონი (material) / კონკრეტული",example:"The floor is made of concrete.",ge:"იატაკი ბეტონისგან არის.",cat:"საერთო",level:"B1"},
+  // Confusing English words (not from Georgian but commonly confused)
+  {word:"Affect vs Effect",wrong:"ხშირად ერევათ ერთმანეთში",right:"Affect = ზემოქმედება (ზმნა), Effect = შედეგი (არსებითი)",example:"The rain affected our plans. The effect was significant.",ge:"წვიმამ ჩვენს გეგმებზე იმოქმედა. შედეგი მნიშვნელოვანი იყო.",cat:"გრამატიკა",level:"B1"},
+  {word:"Borrow vs Lend",wrong:"ქართულად ორივე 'სესხება'-ა",right:"Borrow = ითხოვ სხვისგან, Lend = აძლევ სხვას",example:"Can I borrow your pen? / Can you lend me your pen?",ge:"შეიძლება კალამი მათხოვო? / შეგიძლია კალამი მათხოვო?",cat:"გრამატიკა",level:"A2"},
+  {word:"Make vs Do",wrong:"ქართულად ორივე 'აკეთებ'-ია",right:"Make = ქმნი/ამზადებ, Do = ასრულებ/აკეთებ",example:"Make dinner / Do homework",ge:"სადილის მომზადება / საშინაო დავალების გაკეთება",cat:"გრამატიკა",level:"A2"},
+  {word:"Say vs Tell",wrong:"ორივე 'ამბობ' ქართულად",right:"Say = ამბობ (სიტყვებს), Tell = ეუბნები (ადამიანს)",example:"She said hello. / She told me the truth.",ge:"მან მისალმება თქვა. / მან სიმართლე მითხრა.",cat:"გრამატიკა",level:"A2"},
+  {word:"Hear vs Listen",wrong:"ორივე 'ისმენ' ქართულად",right:"Hear = გესმის (უნებლიეთ), Listen = უსმენ (შეგნებულად)",example:"I heard a noise. / Listen to the teacher!",ge:"ხმაური გავიგონე. / მასწავლებელს უსმინე!",cat:"გრამატიკა",level:"A1"},
+  {word:"Fun vs Funny",wrong:"ორივე 'სასაცილო' ჰგონიათ",right:"Fun = სახალისო, Funny = სასაცილო",example:"The party was fun. The joke was funny.",ge:"წვეულება სახალისო იყო. ხუმრობა სასაცილო იყო.",cat:"გრამატიკა",level:"A2"},
+  {word:"History vs Story",wrong:"ორივე 'ისტორია' ქართულად",right:"History = ისტორია (წარსული), Story = ამბავი/მოთხრობა",example:"I study history. Tell me a story.",ge:"ისტორიას ვსწავლობ. მიამბე ამბავი.",cat:"გრამატიკა",level:"A1"},
+  {word:"Económic vs Economical",wrong:"ორივე 'ეკონომიკური'-ა ქართულად",right:"Economic = ეკონომიკური, Economical = ეკონომიური (ხარჯების დამზოგველი)",example:"Economic growth / An economical car",ge:"ეკონომიკური ზრდა / ეკონომიური მანქანა",cat:"ბიზნესი",level:"B2"},
+  {word:"Sensible vs Sensitive",wrong:"ქართულად ორივე 'მგრძნობიარე'-ა",right:"Sensible = გონივრული, Sensitive = მგრძნობიარე",example:"Be sensible! / She's very sensitive.",ge:"გონივრულად მოიქეცი! / ის ძალიან მგრძნობიარეა.",cat:"ემოციები",level:"B1"},
+  {word:"Recipe vs Receipt",wrong:"ორივე 'რეცეპტი'-ს ჰგავს",right:"Recipe = სამზარეულო რეცეპტი, Receipt = ქვითარი/ჩეკი",example:"Follow the recipe. Keep the receipt.",ge:"რეცეპტს მიჰყევი. ქვითარი შეინახე.",cat:"საერთო",level:"A2"},
+  {word:"Comfortable",wrong:"'კომფორტული' — მხოლოდ ფიზიკური",right:"ფიზიკურად + ემოციურად კომფორტული",example:"I don't feel comfortable with this decision.",ge:"ამ გადაწყვეტილებით თავს კომფორტულად არ ვგრძნობ.",cat:"ემოციები",level:"A2"},
+  {word:"Control",wrong:"კონტროლი (ზედამხედველობა მხოლოდ)",right:"მართვა, გაკონტროლება + ტექნიკური მართვა",example:"Use the remote control. / Control your emotions.",ge:"დისტანციური მართვა გამოიყენე. / ემოციები გააკონტროლე.",cat:"საერთო",level:"A2"},
+  {word:"Ambitious",wrong:"ამბიციური (negative in Georgian — arrogant)",right:"ამბიციური (positive in English — driven, motivated)",example:"She's an ambitious young professional.",ge:"ის ამბიციური ახალგაზრდა პროფესიონალია.",cat:"ბიზნესი",level:"B1"},
+  {word:"Aggressive",wrong:"აგრესიული (only violent/angry)",right:"აგრესიული + ენერგიული/აქტიური (ბიზნესში)",example:"An aggressive marketing strategy.",ge:"აგრესიული მარკეტინგული სტრატეგია.",cat:"ბიზნესი",level:"B2"},
+  {word:"Intelligent vs Intellectual",wrong:"ორივე 'ინტელექტუალი'-ა",right:"Intelligent = ჭკვიანი, Intellectual = ინტელექტუალი (მეცნიერი/მოაზროვნე)",example:"She's intelligent. He's an intellectual.",ge:"ის ჭკვიანია. ის ინტელექტუალია.",cat:"გარეგნობა",level:"B2"},
+  {word:"Principal vs Principle",wrong:"ორივე ერთნაირად ჟღერს",right:"Principal = დირექტორი/მთავარი, Principle = პრინციპი",example:"The school principal. A matter of principle.",ge:"სკოლის დირექტორი. პრინციპის საკითხი.",cat:"გრამატიკა",level:"B1"},
+  {word:"Realize",wrong:"რეალიზება (sell/implement)",right:"მიხვდი, გააცნობიერე",example:"I realized I was wrong.",ge:"მივხვდი რომ ვცდებოდი.",cat:"საერთო",level:"A2"},
+  {word:"Prospect",wrong:"პროსპექტი (boulevard)",right:"პერსპექტივა, მომავლის ხედვა",example:"Job prospects are improving.",ge:"სამუშაო პერსპექტივა უმჯობესდება.",cat:"ბიზნესი",level:"B2"},
+  {word:"Insult",wrong:"ინსულტი (stroke)",right:"შეურაცხყოფა",example:"Don't insult me!",ge:"ნუ მაწყენინებ!",cat:"ემოციები",level:"B1"},
+  {word:"Compositor",wrong:"კომპოზიტორი (music composer)",right:"ტიპოგრაფი, აკინძავი",example:"A compositor sets type for printing.",ge:"კომპოზიტორი ბეჭდვისთვის შრიფტს ალაგებს.",cat:"კულტურა",level:"C1"},
+];
+
+const STORAGE_KEY = 'fluentge-false-friends-learned';
+let learned = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+const categories = [...new Set(data.map(d=>d.cat))];
+
+// Render filters
+const filtersEl = document.getElementById('filters');
+filtersEl.innerHTML = '<button class="filter-btn active" data-cat="all">ყველა</button>' + 
+  categories.map(c=>`<button class="filter-btn" data-cat="${c}">${c}</button>`).join('');
+
+filtersEl.addEventListener('click', e=>{
+  if(!e.target.classList.contains('filter-btn')) return;
+  filtersEl.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  render();
+});
+
+document.getElementById('search').addEventListener('input', ()=>render());
+
+function render(){
+  const cat = filtersEl.querySelector('.active').dataset.cat;
+  const q = document.getElementById('search').value.toLowerCase();
+  const filtered = data.filter(d=>{
+    if(cat!=='all' && d.cat!==cat) return false;
+    if(q && !d.word.toLowerCase().includes(q) && !d.wrong.toLowerCase().includes(q) && !d.right.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  
+  document.getElementById('total-count').textContent = data.length;
+  document.getElementById('learned-count').textContent = learned.length;
+  const pct = Math.round(learned.length/data.length*100);
+  document.getElementById('progress-fill').style.width = pct+'%';
+  document.getElementById('progress-text').textContent = pct+'% ნასწავლი';
+  
+  document.getElementById('grid').innerHTML = filtered.map((d,i)=>{
+    const idx = data.indexOf(d);
+    const isLearned = learned.includes(idx);
+    return `<div class="card">
+      <div class="card-header"><span class="card-word">${d.word}</span><span class="card-level">${d.level}</span></div>
+      <div class="card-cat">${d.cat}</div>
+      <div class="wrong"><div class="wrong-label">❌ ქართველები ფიქრობენ:</div><p>${d.wrong}</p></div>
+      <div class="right"><div class="right-label">✅ სინამდვილეში ნიშნავს:</div><p>${d.right}</p></div>
+      <div class="example"><p>"${d.example}"</p><p class="ge">${d.ge}</p></div>
+      <button class="mark-btn ${isLearned?'learned':''}" onclick="toggleLearn(${idx})">${isLearned?'✅ ნასწავლი':'📌 მონიშნე ნასწავლად'}</button>
+    </div>`;
+  }).join('');
+}
+
+window.toggleLearn = function(idx){
+  if(learned.includes(idx)) learned = learned.filter(i=>i!==idx);
+  else learned.push(idx);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(learned));
+  render();
+};
+
+render();
+</script>
+</body>
+</html>

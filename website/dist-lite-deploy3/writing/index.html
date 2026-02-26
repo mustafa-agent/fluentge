@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>წერის პრაქტიკა | FluentGe</title>
+<meta name="description" content="30 წერის სავარჯიშო A1-დან B2-მდე. გააუმჯობესე შენი ინგლისური წერა!">
+<meta property="og:title" content="წერის პრაქტიკა — ინგლისური წერის სავარჯიშოები">
+<meta property="og:description" content="30 თემა ყველა დონისთვის! მოამზადე წერითი ნამუშევრები და გააუმჯობესე უნარები.">
+<meta property="og:url" content="https://fluentge.surge.sh/writing/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f0f23;color:#fff;min-height:100vh;padding:16px}
+.container{max-width:800px;margin:0 auto;background:#1a1a3e;border-radius:20px;padding:32px 24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.header{text-align:center;margin-bottom:32px}
+h1{font-size:32px;margin-bottom:8px}
+.subtitle{color:#8888cc;margin-bottom:24px;font-size:16px}
+.level-tabs{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.level-tab{padding:8px 16px;background:#2a2a5a;border:2px solid transparent;border-radius:8px;cursor:pointer;font-size:14px;font-weight:bold;transition:all .2s}
+.level-tab:hover{border-color:#6366f1}
+.level-tab.active{background:linear-gradient(135deg,#6366f1,#8b5cf6);border-color:#8b5cf6}
+.prompts{display:grid;gap:16px;margin-bottom:32px}
+.prompt{background:#2a2a5a;border-radius:12px;padding:20px;cursor:pointer;transition:all .2s;border:2px solid transparent}
+.prompt:hover{border-color:#6366f1;background:#3a3a6a}
+.prompt.active{border-color:#8b5cf6;background:#3a3a6a}
+.prompt-title{font-size:18px;font-weight:bold;margin-bottom:8px;color:#8b5cf6}
+.prompt-desc{color:#8888cc;margin-bottom:12px;line-height:1.5}
+.prompt-meta{display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.word-count-target{color:#6366f1;font-weight:bold}
+.level-badge{background:#6366f1;color:#fff;padding:4px 8px;border-radius:4px;font-size:11px;font-weight:bold}
+.writing-area{background:#2a2a5a;border-radius:12px;padding:24px;margin-bottom:24px}
+.writing-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.selected-prompt{color:#8b5cf6;font-weight:bold;font-size:16px}
+.word-counter{color:#6366f1;font-size:14px}
+.writing-input{width:100%;min-height:300px;background:#1a1a3e;color:#fff;border:2px solid #3a3a6a;border-radius:8px;padding:16px;font-size:16px;line-height:1.6;resize:vertical;font-family:inherit}
+.writing-input:focus{outline:none;border-color:#6366f1}
+.writing-input::placeholder{color:#666}
+.action-buttons{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.btn{padding:12px 20px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:bold;cursor:pointer;text-decoration:none;text-align:center}
+.btn:hover{opacity:.9}
+.btn-outline{background:transparent;border:2px solid #6366f1;color:#6366f1}
+.btn-success{background:linear-gradient(135deg,#10b981,#059669)}
+.checklist{background:#2a2a5a;border-radius:12px;padding:20px}
+.checklist h3{color:#8b5cf6;margin-bottom:16px;font-size:18px}
+.checklist-item{display:flex;align-items:center;margin-bottom:12px;cursor:pointer;user-select:none}
+.checklist-item input{margin-right:12px;width:18px;height:18px;cursor:pointer}
+.checklist-item label{cursor:pointer;line-height:1.5;color:#ccc}
+.checklist-item.checked label{color:#10b981}
+.hidden{display:none}
+.back-link{display:inline-block;margin-bottom:16px;color:#8888cc;text-decoration:none;font-size:14px}
+.back-link:hover{color:#8b5cf6}
+@media (max-width: 640px){
+.container{padding:20px 16px}
+.level-tabs{justify-content:center}
+.writing-header{flex-direction:column;align-items:stretch}
+.action-buttons{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<a href="https://fluentge.surge.sh" class="back-link">← FluentGe-ზე დაბრუნება</a>
+
+<div class="header">
+<h1>წერის პრაქტიკა</h1>
+<div class="subtitle">აირჩიე თემა და დაიწყე წერა! 30 პრომპტი A1-დან B2-მდე</div>
+</div>
+
+<div class="level-tabs">
+<button class="level-tab active" data-level="A1">A1 - დამწყები</button>
+<button class="level-tab" data-level="A2">A2 - ელემენტარული</button>
+<button class="level-tab" data-level="B1">B1 - საშუალო</button>
+<button class="level-tab" data-level="B2">B2 - საშუალოზე მაღალი</button>
+</div>
+
+<div id="prompts-container" class="prompts">
+<!-- Prompts will be populated by JavaScript -->
+</div>
+
+<div id="writing-section" class="hidden">
+<div class="writing-area">
+<div class="writing-header">
+<div class="selected-prompt" id="current-prompt-title"></div>
+<div class="word-counter">სიტყვები: <span id="word-count">0</span> / <span id="target-words">50</span></div>
+</div>
+<textarea id="writing-input" class="writing-input" placeholder="დაიწყე წერა აქ..."></textarea>
+</div>
+
+<div class="action-buttons">
+<button class="btn" onclick="saveDraft()">📝 შენახვა</button>
+<button class="btn btn-outline" onclick="clearText()">🗑 გასუფთავება</button>
+<button class="btn btn-outline" onclick="backToPrompts()">← სხვა თემის არჩევა</button>
+</div>
+
+<div class="checklist">
+<h3>🎯 თვითშემოწმების ჩექ-ლისტი</h3>
+<div class="checklist-item">
+<input type="checkbox" id="check1">
+<label for="check1">გრამატიკა: წინადადებები სწორადაა აგებული?</label>
+</div>
+<div class="checklist-item">
+<input type="checkbox" id="check2">
+<label for="check2">ლექსიკა: შესაფერისი სიტყვები გამოვიყენე?</label>
+</div>
+<div class="checklist-item">
+<input type="checkbox" id="check3">
+<label for="check3">სტრუქტურა: აქვს თუ არა ნაშრომს სათანადო სტრუქტურა?</label>
+</div>
+<div class="checklist-item">
+<input type="checkbox" id="check4">
+<label for="check4">სპელინგი: სიტყვები სწორადაა დაწერილი?</label>
+</div>
+<div class="checklist-item">
+<input type="checkbox" id="check5">
+<label for="check5">თემა: ყველა მნიშვნელოვანი პუნქტი განვიხილე?</label>
+</div>
+<div class="checklist-item">
+<input type="checkbox" id="check6">
+<label for="check6">სიგრძე: მიღწეულია თუ არა სასურველი სიტყვების რაოდენობა?</label>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+const prompts={
+A1:[
+{title:"ჩემ შესახებ",desc:"წარადგინე შენი თავი. დაწერე შენი სახელი, ასაკი, საცხოვრებელი ადგილი და ჰობები.",words:50},
+{title:"ჩემი ოჯახი",desc:"აღწერე შენი ოჯახის წევრები. ვინ ცხოვრობს შენთან ერთად?",words:60},
+{title:"ჩემი ბინა",desc:"აღწერე შენი სახლი ან ბინა. რამდენი ოთახია, რა არის თითოეულ ოთახში?",words:70},
+{title:"ყოველდღიური რუტინა",desc:"აღწერე შენი ჩვეულებრივი დღე. როდის იღვიძებ, რას აკეთებ?",words:80},
+{title:"ჩემი მეგობარი",desc:"დაწერე შენს საუკეთესო მეგობარზე. როგორია ის და რა გიყვარს მასში?",words:60},
+{title:"საყვარელი საკვები",desc:"რა საკვები მოგწონს და რატომ? აღწერე შენი საყვარელი კერძი.",words:50},
+{title:"ვიკენდის გეგმები",desc:"რა გეგმები გაქვს შემდეგ შაბათ-კვირას? სად წახვალ და რას იზამ?",words:70},
+{title:"ძველი მეგობრის წერილი",desc:"დაწერე წერილი მეგობრისთვის. მიულოცე დაბადების დღე და ამბები რა სიახლეები გყავს.",words:80}
+],
+A2:[
+{title:"უჩვეულო შემთხვევა",desc:"დაწერე რაღაც საინტერესო ან უჩვეულო რამ რაც შეგემთხვა ბოლოს. სად იყავი და რა მოხდა?",words:100},
+{title:"მომავლის გეგმები",desc:"რა გეგმები გაქვს მომავალ წელს? სად გსურს მგზავრობა, რა ახალი გსურს ისწავლო?",words:120},
+{title:"შეთავაზება მეგობრისთვის",desc:"თქვენი მეგობარი იმუშავებს ძალიან რთულ საქმეზე. მიწერე რამ ერთად იმუშაოთ პროექტზე.",words:100},
+{title:"შედარება: ქალაქი vs სოფელი",desc:"შეადარე ცხოვრება ქალაქსა და სოფელში. რომელს ირჩევ და რატომ?",words:130},
+{title:"თექნოლოგია ჩვენს ცხოვრებაში",desc:"რა დადებითი და უარყოფითი მხარეები აქვს ტელეფონებს და ინტერნეტს?",words:120},
+{title:"ჯანსაღი ცხოვრების წესი",desc:"როგორ ცდილობ ჯანმრთელი იყო? რა შეგაქვს კვების, სპორტის და ძილის მხრივ?",words:110},
+{title:"უცხო ქვეყნის ვიზიტი",desc:"აღწერე ქვეყანა სადაც გსურს მგზავრობა. რა გნახავს მურიები, როგორი კულტურა?",words:120},
+{title:"პრობლემისა და გამოსავლის აღწერა",desc:"თქვენი მეგობარი კარგავს პასპორტს უცხოეთში. რა რჩევები მიცემ მას?",words:100}
+],
+B1:[
+{title:"განათლების მნიშვნელობა",desc:"რა როლს თამაშობს განათლება ადამიანის ცხოვრებაში? განიხილე შენი გამოცდილება.",words:150},
+{title:"კლიმატის ცვლილება",desc:"რა ზეგავლენა აქვს კლიმატის ცვლილებას ჩვენს პლანეტაზე? რა უნდა გავაკეთოთ?",words:170},
+{title:"სოციალური მედია: კარგი თუ ცუდი?",desc:"განიხილე სოციალური მედიის დადებითი და უარყოფითი მხარეები. შენი აზრი რა არის?",words:160},
+{title:"მომავლის სამსახური",desc:"როგორია შენი იდეალური სამსახური? რა უნარ-ჩვევები გჭირდება მისი მისაღწევად?",words:140},
+{title:"ქალაქის პრობლემები",desc:"რა ძირითადი პრობლემები აქვს თქვენს ქალაქს? შემოგეთავაზნე გამოსავლები.",words:160},
+{title:"მგზავრობის გამოცდილება",desc:"აღწერე აღსაუვი მგზავრობა რომელიც ძალიან დაგრჩა მეხსიერებაში. რა ისწავლე?",words:150},
+{title:"ღირებულებების კონფლიქტი",desc:"აღწერე სიტუაცია როცა შენი პირადი ღირებულებები შეჯახდა სოციალურ მოლოდინებს.",words:170},
+{title:"ტრადიცია თანამედროვე მსოფლიოში",desc:"როგორ შეიძლება ძველი ტრადიციების შენარჩუნება თანამედროვე ცხოვრებაში?",words:160}
+],
+B2:[
+{title:"ეთიკური დილემა",desc:"აღწერე რთული ეთიკური ამოცანა რომელიც შეგხვდა. როგორ მოაგვარე და რატომ?",words:200},
+{title:"ტექნოლოგიური პროგრესის ზეგავლენა",desc:"როგორ შეცვალა ტექნოლოგიამ ჩვენი ურთიერთობები? ეს ცვლილებები დადებითია თუ უარყოფითი?",words:220},
+{title:"გლობალიზაციის შედეგები",desc:"როგორ უჭირავს გლობალიზაცია ადგილობრივ კულტურებს და ეკონომიკას? შენი აზრი რა არის?",words:210},
+{title:"ხელოვნების როლი საზოგადოებაში",desc:"რა მნიშვნელობა აქვს ხელოვნებას (მუსიკა, ლიტერატურა, ფერწერა) ადამიანის განვითარებაში?",words:190},
+{title:"ლიდერობის თვისებები",desc:"რა თვისებები უნდა ჰქონდეს კარგ ლიდერს? მიიღე კონკრეტული მაგალითები.",words:180},
+{title:"მოქალაქეობრივი ვალდებულება",desc:"რა ვალდებულებები აქვს თითოეულ მოქალაქეს თემისა და ქვეყნის მიმართ?",words:190},
+{title:"წარმატების გაგება",desc:"რას ნიშნავს წარმატება შენთვის? განსხვავდება თუ არა ეს სხვადასხვა კულტურაში?",words:200},
+{title:"მედიის ზეგავლენა",desc:"როგორ უჭირავს მედია საზოგადოებრივ აზრს? რა გზები არსებობს ცრუ ინფორმაციასთან საბრძოლველად?",words:220}
+]
+};
+
+let currentLevel='A1';
+let selectedPrompt=null;
+let savedDrafts=JSON.parse(localStorage.getItem('writingDrafts'))||{};
+
+function initializePage(){
+renderPrompts();
+setupEventListeners();
+loadSavedState();
+}
+
+function renderPrompts(){
+const container=document.getElementById('prompts-container');
+const levelPrompts=prompts[currentLevel];
+container.innerHTML='';
+
+levelPrompts.forEach((prompt,index)=>{
+const div=document.createElement('div');
+div.className='prompt';
+div.onclick=()=>selectPrompt(index);
+div.innerHTML=`
+<div class="prompt-title">${prompt.title}</div>
+<div class="prompt-desc">${prompt.desc}</div>
+<div class="prompt-meta">
+<span class="word-count-target">მიზნის სიტყვები: ${prompt.words}</span>
+<span class="level-badge">${currentLevel}</span>
+</div>
+`;
+container.appendChild(div);
+});
+}
+
+function setupEventListeners(){
+// Level tabs
+document.querySelectorAll('.level-tab').forEach(tab=>{
+tab.onclick=()=>{
+document.querySelectorAll('.level-tab').forEach(t=>t.classList.remove('active'));
+tab.classList.add('active');
+currentLevel=tab.dataset.level;
+renderPrompts();
+};
+});
+
+// Writing input
+const writingInput=document.getElementById('writing-input');
+writingInput.oninput=updateWordCount;
+
+// Checklist items
+document.querySelectorAll('.checklist-item').forEach(item=>{
+const checkbox=item.querySelector('input');
+checkbox.onchange=()=>{
+item.classList.toggle('checked',checkbox.checked);
+};
+item.onclick=(e)=>{
+if(e.target!==checkbox){
+checkbox.checked=!checkbox.checked;
+item.classList.toggle('checked',checkbox.checked);
+}
+};
+});
+}
+
+function selectPrompt(index){
+selectedPrompt=index;
+const prompt=prompts[currentLevel][index];
+document.getElementById('current-prompt-title').textContent=prompt.title;
+document.getElementById('target-words').textContent=prompt.words;
+document.getElementById('prompts-container').classList.add('hidden');
+document.getElementById('writing-section').classList.remove('hidden');
+
+// Load saved draft if exists
+const draftKey=`${currentLevel}-${index}`;
+if(savedDrafts[draftKey]){
+document.getElementById('writing-input').value=savedDrafts[draftKey];
+updateWordCount();
+}else{
+document.getElementById('writing-input').value='';
+updateWordCount();
+}
+document.getElementById('writing-input').focus();
+}
+
+function updateWordCount(){
+const text=document.getElementById('writing-input').value;
+const words=text.trim().split(/\s+/).filter(word=>word.length>0).length;
+document.getElementById('word-count').textContent=words;
+}
+
+function saveDraft(){
+if(selectedPrompt===null)return;
+const text=document.getElementById('writing-input').value;
+const draftKey=`${currentLevel}-${selectedPrompt}`;
+savedDrafts[draftKey]=text;
+localStorage.setItem('writingDrafts',JSON.stringify(savedDrafts));
+
+// Show success feedback
+const btn=event.target;
+const originalText=btn.textContent;
+btn.textContent='✅ შენახულია!';
+btn.classList.add('btn-success');
+setTimeout(()=>{
+btn.textContent=originalText;
+btn.classList.remove('btn-success');
+},2000);
+}
+
+function clearText(){
+if(confirm('დარწმუნებული ხარ რომ გსურს ტექსტის გასუფთავება?')){
+document.getElementById('writing-input').value='';
+updateWordCount();
+}
+}
+
+function backToPrompts(){
+document.getElementById('writing-section').classList.add('hidden');
+document.getElementById('prompts-container').classList.remove('hidden');
+selectedPrompt=null;
+// Reset checklist
+document.querySelectorAll('.checklist-item input').forEach(cb=>{
+cb.checked=false;
+cb.parentElement.classList.remove('checked');
+});
+}
+
+function loadSavedState(){
+// Load last active level
+const savedLevel=localStorage.getItem('writingLevel');
+if(savedLevel&&prompts[savedLevel]){
+currentLevel=savedLevel;
+document.querySelector(`[data-level="${currentLevel}"]`).classList.add('active');
+document.querySelectorAll('.level-tab').forEach(tab=>{
+if(tab.dataset.level!==currentLevel)tab.classList.remove('active');
+});
+renderPrompts();
+}
+}
+
+// Save level preference
+function saveCurrentLevel(){
+localStorage.setItem('writingLevel',currentLevel);
+}
+
+document.querySelectorAll('.level-tab').forEach(tab=>{
+tab.addEventListener('click',saveCurrentLevel);
+});
+
+// Initialize the page
+initializePage();
+</script>
+</body>
+</html>

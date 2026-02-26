@@ -28,8 +28,8 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
     <h1 class="text-3xl font-bold mb-1">{lesson.title_ka}</h1>
     <p class="text-[#6B6B65] mb-8">{lesson.title_en}</p>
 
-    {isFree ? (
-    <>
+    <!-- Lesson Content (hidden for non-premium if lesson is premium) -->
+    <div id="lesson-content" class={isFree ? '' : 'hidden'}>
     <!-- Explanation -->
     <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-6 mb-8">
       <h2 class="text-xl font-bold mb-4">📚 ახსნა</h2>
@@ -65,35 +65,40 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
         <button id="retry-btn" class="bg-[#C8C8C0] hover:bg-[#A0A09A] text-white px-6 py-2 rounded-lg font-semibold transition-colors">თავიდან ცდა</button>
       </div>
     </div>
-    </>
-    ) : (
-    <!-- Premium locked -->
-    <div class="mt-8 text-center">
+    </div>
+
+    <!-- Premium locked overlay -->
+    <div id="premium-lock" class={isFree ? 'hidden' : 'mt-8 text-center'}>
       <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-12">
         <div class="text-6xl mb-4">🔒</div>
         <h2 class="text-2xl font-bold mb-3">ეს გაკვეთილი პრემიუმია</h2>
-        <p class="text-[#6B6B65] mb-6 max-w-md mx-auto">გახსენი ყველა 30 გრამატიკის გაკვეთილი, 1060+ სიტყვა და ყველა კატეგორია პრემიუმ გეგმით.</p>
+        <p class="text-[#6B6B65] mb-6 max-w-md mx-auto">გახსენი ყველა გრამატიკის გაკვეთილი პრემიუმ გეგმით.</p>
         <a href="/premium/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
           🚀 დაიწყე პრემიუმი
         </a>
-        <p class="text-[#6B6B65] text-sm mt-4">თვეში მხოლოდ 9.99 ლარი</p>
       </div>
     </div>
-    )}
 
     <!-- Mark as learned -->
-    {isFree && (
-    <div class="mt-8 text-center">
+    <div id="mark-section" class={isFree ? 'mt-8 text-center' : 'hidden mt-8 text-center'}>
       <button id="mark-grammar-btn" data-title={lesson.title_en} class="inline-flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] border-2 border-[#6B6B65] rounded-xl px-6 py-3 font-semibold transition-colors">
         <span id="mark-grammar-icon">✓</span>
         <span id="mark-grammar-text">მონიშნე ნასწავლად</span>
       </button>
     </div>
-    )}
   </section>
 
   <script is:inline>
     (function() {
+      // Unlock premium grammar for premium users
+      if (localStorage.getItem('fluentge-premium') === 'true') {
+        var lc = document.getElementById('lesson-content');
+        if (lc) lc.classList.remove('hidden');
+        var pl = document.getElementById('premium-lock');
+        if (pl) pl.classList.add('hidden');
+        var ms = document.getElementById('mark-section');
+        if (ms) ms.classList.remove('hidden');
+      }
       const btn = document.getElementById('mark-grammar-btn');
       if (!btn) return;
       const title = btn.dataset.title;

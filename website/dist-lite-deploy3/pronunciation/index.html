@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="ka"><head>
+<meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ინგლისური გამოთქმის გზამკვლევი ქართველებისთვის — 100+ სიტყვა რომელსაც ქართველები ხშირად არასწორად წარმოთქვამენ">
+<title>გამოთქმა — FluentGe</title>
+<link rel="canonical" href="https://fluentge.surge.sh/pronunciation/">
+<meta property="og:title" content="გამოთქმის გზამკვლევი — FluentGe">
+<meta property="og:description" content="100+ სიტყვა რომელსაც ქართველები არასწორად წარმოთქვამენ">
+<meta property="og:url" content="https://fluentge.surge.sh/pronunciation/">
+<meta property="og:image" content="https://fluentge.surge.sh/og-image.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>if(localStorage.getItem('fluentge-theme')==='light')document.documentElement.classList.add('light');</script>
+<style>
+:root{--bg:#1C1C1E;--text:#F5F5F0;--muted:#A0A09A;--dim:#6B6B65;--card:#242426;--border:#2E2E30;--accent:#C8C8C0;--green:#4ADE80;--red:#F87171;--blue:#60A5FA}
+.light{--bg:#F5F5F0;--text:#1C1C1E;--muted:#6B6B65;--dim:#A0A09A;--card:#FFFFFF;--border:#E0E0DA;--accent:#3D3D3D}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100vh;line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(28,28,30,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.75rem 1rem}
+nav .inner{max-width:72rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+nav a.logo{font-family:'Playfair Display',serif;font-size:1.4rem;text-decoration:none}
+nav a.logo .f{color:var(--accent)}nav a.logo .g{color:var(--text)}
+nav .links{display:flex;gap:1.2rem;align-items:center}
+nav .links a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
+nav .links a:hover{color:var(--text)}
+.hero{padding:7rem 1rem 3rem;text-center;max-width:48rem;margin:0 auto;text-align:center}
+.hero h1{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:.75rem}
+.hero p{color:var(--muted);font-size:1.05rem;max-width:32rem;margin:0 auto 1.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:.4rem 1.2rem;font-size:.85rem;color:var(--accent)}
+.filters{max-width:48rem;margin:0 auto 2rem;padding:0 1rem;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.filters button{background:var(--card);border:1px solid var(--border);color:var(--muted);padding:.4rem 1rem;border-radius:999px;font-size:.8rem;cursor:pointer;transition:all .2s}
+.filters button.active,.filters button:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.search-box{max-width:36rem;margin:0 auto 2rem;padding:0 1rem}
+.search-box input{width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:.7rem 1rem .7rem 2.5rem;border-radius:.75rem;font-size:.95rem;outline:none}
+.search-box input:focus{border-color:var(--accent)}
+.search-box{position:relative}
+.search-box svg{position:absolute;left:1.7rem;top:50%;transform:translateY(-50%);color:var(--dim)}
+.cards{max-width:48rem;margin:0 auto;padding:0 1rem 4rem;display:flex;flex-direction:column;gap:.75rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1.25rem;cursor:pointer;transition:all .2s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
+.card .word{font-size:1.3rem;font-weight:700}
+.card .level{font-size:.7rem;padding:.15rem .6rem;border-radius:999px;font-weight:600}
+.card .level.a1{background:#4ADE8020;color:#4ADE80}.card .level.a2{background:#60A5FA20;color:#60A5FA}
+.card .level.b1{background:#FACC1520;color:#FACC15}.card .level.b2{background:#FB923C20;color:#FB923C}
+.card .level.c1{background:#F8717120;color:#F87171}
+.card .pron{display:flex;gap:1.5rem;margin:.5rem 0;flex-wrap:wrap}
+.card .pron div{flex:1;min-width:140px}
+.card .pron .label{font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--dim);margin-bottom:.15rem}
+.card .pron .wrong{color:var(--red);font-size:1rem;text-decoration:line-through;opacity:.7}
+.card .pron .right{color:var(--green);font-size:1rem;font-weight:600}
+.card .geo{color:var(--muted);font-size:.85rem;margin-top:.3rem}
+.card .tip{display:none;margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;line-height:1.6}
+.card.open .tip{display:block}
+.card .play-btn{background:var(--accent);color:var(--bg);border:none;padding:.3rem .8rem;border-radius:.5rem;font-size:.8rem;cursor:pointer;font-weight:600;transition:background .2s}
+.card .play-btn:hover{opacity:.8}
+.counter{text-align:center;color:var(--dim);font-size:.8rem;padding:1rem}
+footer{border-top:1px solid var(--border);padding:2rem 1rem;text-align:center;color:var(--dim);font-size:.75rem}
+@media(max-width:640px){.hero h1{font-size:1.8rem}.hero p{font-size:.9rem}nav .links{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="inner">
+<a href="/" class="logo"><span class="f">Fluent</span><span class="g">Ge</span></a>
+<div class="links">
+<a href="/">მთავარი</a><a href="/flashcards/">ბარათები</a><a href="/grammar/">გრამატიკა</a>
+<a href="/games/">თამაშები</a><a href="/podcast/">პოდკასტი</a><a href="/pronunciation/" style="color:var(--text)">გამოთქმა</a>
+</div>
+</div></nav>
+
+<div class="hero">
+<h1>🗣️ გამოთქმის გზამკვლევი</h1>
+<p>სიტყვები რომლებსაც ქართველები ყველაზე ხშირად არასწორად წარმოთქვამენ — სწორი გამოთქმით და რჩევებით</p>
+<div class="stats">
+<span class="stat">📖 120+ სიტყვა</span>
+<span class="stat">🎯 5 დონე (A1→C1)</span>
+<span class="stat">🔊 აუდიო გამოთქმა</span>
+</div>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<div class="search-box">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+<input type="text" id="search" placeholder="მოძებნე სიტყვა...">
+</div>
+
+<div class="counter" id="counter"></div>
+<div class="cards" id="cards"></div>
+
+<footer>© 2026 FluentGe. ყველა უფლება დაცულია.</footer>
+
+<script>
+const words = [
+// A1 - Basic words Georgians mispronounce
+{word:"clothes",wrong:"კლოუთ-ეს",right:"კლოუზ",geo:"ტანსაცმელი",level:"A1",tip:"ერთ მარცვლადაა! 'th' და 'es' თითქმის არ ისმის. ჟღერს როგორც 'close' ზმნა."},
+{word:"comfortable",wrong:"კომ-ფორ-ტა-ბლ",right:"კამფ-ტერ-ბლ",geo:"კომფორტული",level:"A1",tip:"მხოლოდ 3 მარცვალი! 'o' ჟღერს როგორც 'a', შუა 'or' თითქმის გამოტოვებულია."},
+{word:"vegetable",wrong:"ვე-ჯე-ტა-ბლ",right:"ვეჯ-ტა-ბლ",geo:"ბოსტნეული",level:"A1",tip:"3 მარცვალი, არა 4. პირველი 'e' თითქმის არ ისმის."},
+{word:"chocolate",wrong:"ჩო-კო-ლა-ტე",right:"ჩოკ-ლეთ",geo:"შოკოლადი",level:"A1",tip:"2 მარცვალი! შუა 'o' გამოტოვებულია, ბოლო 'e' მუნჯია."},
+{word:"Wednesday",wrong:"ვედ-ნეს-დეი",right:"ვენზ-დეი",geo:"ოთხშაბათი",level:"A1",tip:"'d' მუნჯია! არ წარმოთქვა 'Wed-NES-day', მხოლოდ 'WENZ-day'."},
+{word:"breakfast",wrong:"ბრეაკ-ფასტ",right:"ბრეკ-ფესთ",geo:"საუზმე",level:"A1",tip:"'ea' ჟღერს როგორც 'e', არა 'ee'. სწრაფად თქვი: ბრეკფესთ."},
+{word:"women",wrong:"ვო-მენ",right:"ვი-მინ",geo:"ქალები",level:"A1",tip:"'o' ჟღერს როგორც 'i'! Woman=ვუმან, Women=ვიმინ."},
+{word:"island",wrong:"ის-ლანდ",right:"აი-ლენდ",geo:"კუნძული",level:"A1",tip:"'s' მუნჯია! 'i' ჟღერს როგორც 'eye'."},
+{word:"answer",wrong:"ან-სვერ",right:"ან-სერ",geo:"პასუხი",level:"A1",tip:"'w' მუნჯია! არ წარმოთქვა 'w'."},
+{word:"listen",wrong:"ლის-ტენ",right:"ლი-სენ",geo:"მოსმენა",level:"A1",tip:"'t' მუნჯია! არ თქვა 'lis-TEN'."},
+{word:"hour",wrong:"ჰაუერ",right:"აუ-ერ",geo:"საათი",level:"A1",tip:"'h' მუნჯია! იგივეა რაც 'our'."},
+{word:"fruit",wrong:"ფრუ-იტ",right:"ფრუთ",geo:"ხილი",level:"A1",tip:"ერთ მარცვლადაა! 'ui' ჟღერს როგორც 'oo'."},
+{word:"could",wrong:"კოულდ",right:"ქუდ",geo:"შეეძლო",level:"A1",tip:"'l' მუნჯია! Would, should, could — ყველაში 'l' მუნჯია."},
+{word:"walk",wrong:"ვოლკ",right:"ვოქ",geo:"სიარული",level:"A1",tip:"'l' მუნჯია! talk, walk, chalk — 'l' არასდროს ისმის."},
+{word:"know",wrong:"კნოუ",right:"ნოუ",geo:"ცოდნა",level:"A1",tip:"'k' მუნჯია! knife, knee, know — 'kn' ყოველთვის 'n'."},
+{word:"write",wrong:"ვრაიტ",right:"რაით",geo:"წერა",level:"A1",tip:"'w' მუნჯია! wrong, write, wrap — 'wr' ყოველთვის 'r'."},
+{word:"recipe",wrong:"რე-საიპ",right:"რე-სი-პი",geo:"რეცეპტი",level:"A1",tip:"3 მარცვალი! ბოლო 'e' არ არის მუნჯი აქ — ჟღერს 'ee'."},
+{word:"pizza",wrong:"პიზ-ზა",right:"პით-სა",geo:"პიცა",level:"A1",tip:"'zz' ჟღერს როგორც 'ts' ინგლისურში!"},
+{word:"says",wrong:"სეიზ",right:"სეზ",geo:"ამბობს",level:"A1",tip:"'ay' ჟღერს როგორც 'e', არა 'ei'. უბრალოდ 'sez'."},
+{word:"friend",wrong:"ფრაინდ",right:"ფრენდ",geo:"მეგობარი",level:"A1",tip:"'ie' ჟღერს როგორც 'e'. არა 'fry-end'!"},
+
+// A2 - Elementary
+{word:"receipt",wrong:"რი-საიპტ",right:"რი-სით",geo:"ქვითარი",level:"A2",tip:"'p' მუნჯია! ისევე როგორც 'recipe', მაგრამ ბოლო 'e' აქ მუნჯია."},
+{word:"salmon",wrong:"სალ-მონ",right:"სა-მენ",geo:"ორაგული",level:"A2",tip:"'l' მუნჯია! 'a' ჟღერს მოკლედ."},
+{word:"debt",wrong:"დებტ",right:"დეთ",geo:"ვალი",level:"A2",tip:"'b' მუნჯია! doubt, subtle — 'bt' ყოველთვის 't'."},
+{word:"muscle",wrong:"მას-კლ",right:"მა-სელ",geo:"კუნთი",level:"A2",tip:"'c' მუნჯია! ჟღერს ზუსტად როგორც 'mussel' (მიდია)."},
+{word:"colonel",wrong:"კო-ლო-ნელ",right:"ქერ-ნელ",geo:"პოლკოვნიკი",level:"A2",tip:"სრულიად არარეგულარული! ჟღერს 'kernel' — ყველა ახალბედა ამას ცდება."},
+{word:"iron",wrong:"აი-რონ",right:"აი-ერნ",geo:"უთო/რკინა",level:"A2",tip:"'r' და 'o' შეერწყმიან! ჟღერს თითქმის 'eye-urn'."},
+{word:"queue",wrong:"კვიუ-იუ",right:"ქიუ",geo:"რიგი",level:"A2",tip:"მხოლოდ 1 მარცვალი! 4 ასო მუნჯია — 'ueue' არ ჟღერს!"},
+{word:"stomach",wrong:"სტო-მაჩ",right:"სტა-მეკ",geo:"კუჭი",level:"A2",tip:"'ch' ჟღერს როგორც 'k'! 'o' ჟღერს როგორც 'a'."},
+{word:"cupboard",wrong:"კაპ-ბორდ",right:"ქა-ბერდ",geo:"კარადა",level:"A2",tip:"'p' მუნჯია! ჟღერს 'CUB-berd'."},
+{word:"comb",wrong:"კომბ",right:"კოუმ",geo:"სავარცხელი",level:"A2",tip:"'b' მუნჯია! bomb, climb, lamb — 'mb' ბოლოში ყოველთვის 'b' მუნჯია."},
+{word:"foreign",wrong:"ფო-რეიგნ",right:"ფო-რენ",geo:"უცხო",level:"A2",tip:"'g' მუნჯია! 'eig' ჟღერს როგორც 'e'."},
+{word:"psychology",wrong:"პსი-ქო-ლო-ჯი",right:"საი-ქო-ლო-ჯი",geo:"ფსიქოლოგია",level:"A2",tip:"'p' მუნჯია! ყველა 'psych-' სიტყვაში 'p' არ ისმის."},
+{word:"pneumonia",wrong:"პნიუ-მო-ნია",right:"ნიუ-მოუ-ნია",geo:"პნევმონია",level:"A2",tip:"'p' მუნჯია! 'pn-' ყოველთვის 'n'."},
+{word:"heir",wrong:"ჰეირ",right:"ეერ",geo:"მემკვიდრე",level:"A2",tip:"'h' მუნჯია! ჟღერს ზუსტად როგორც 'air'."},
+{word:"sword",wrong:"სვორდ",right:"სორდ",geo:"ხმალი",level:"A2",tip:"'w' მუნჯია!"},
+{word:"genre",wrong:"ჯენ-რე",right:"ჟონ-რა",geo:"ჟანრი",level:"A2",tip:"ფრანგული სესხებაა! 'g' ჟღერს როგორც 'ჟ'."},
+{word:"debris",wrong:"დებ-რის",right:"დე-ბრი",geo:"ნანგრევები",level:"A2",tip:"ფრანგული სესხება! 's' მუნჯია, აქცენტი ბოლო მარცვალზე."},
+{word:"buffet",wrong:"ბა-ფეტ",right:"ბუ-ფეი",geo:"ბუფეტი",level:"A2",tip:"ფრანგულიდან! 't' მუნჯია, აქცენტი მეორე მარცვალზე."},
+{word:"determined",wrong:"დე-ტერ-მა-ინდ",right:"დი-ტერ-მინდ",geo:"გადაწყვეტილი",level:"A2",tip:"3 მარცვალი! 'i' მოკლეა."},
+{word:"interesting",wrong:"ინ-ტე-რეს-ტინგ",right:"ინ-ტრეს-თინგ",geo:"საინტერესო",level:"A2",tip:"3 მარცვალი, არა 4! შუა 'e' გამოტოვებულია."},
+
+// B1 - Intermediate  
+{word:"entrepreneur",wrong:"ენტრე-პრენ-ეურ",right:"ონ-ტრე-პრე-ნერ",geo:"მეწარმე",level:"B1",tip:"ფრანგულიდან! პირველი მარცვალი 'on' ნაზალურია, აქცენტი ბოლოზე."},
+{word:"February",wrong:"ფებ-რუ-ა-რი",right:"ფებ-რუ-ე-რი",geo:"თებერვალი",level:"B1",tip:"პირველი 'r' ხშირად გამოტოვებულია ამერიკულში: 'FEB-yoo-erry'."},
+{word:"mischievous",wrong:"მის-ჩი-ვი-ოს",right:"მის-ჩი-ვეს",geo:"თავხედი",level:"B1",tip:"3 მარცვალი! არ არის 'mis-CHEEV-ee-us'. აქცენტი პირველ მარცვალზე."},
+{word:"pronunciation",wrong:"პრო-ნაუნ-სი-ეიშნ",right:"პრო-ნან-სი-ეიშნ",geo:"გამოთქმა",level:"B1",tip:"არ არის 'pronounce' + 'ation'! ჟღერს 'nun', არა 'nounce'."},
+{word:"hierarchy",wrong:"ჰაი-ერ-არ-ქი",right:"ჰაი-ე-რარ-ქი",geo:"იერარქია",level:"B1",tip:"4 მარცვალი, აქცენტი პირველზე."},
+{word:"hyperbole",wrong:"ჰაი-პერ-ბოულ",right:"ჰაი-პერ-ბო-ლი",geo:"ჰიპერბოლა",level:"B1",tip:"4 მარცვალი! ბოლო 'e' არ არის მუნჯი — ჟღერს 'lee'."},
+{word:"quinoa",wrong:"კვი-ნო-ა",right:"ქინ-ვა",geo:"კინოა",level:"B1",tip:"2 მარცვალი! ესპანურიდან, 'KEEN-wah'."},
+{word:"choir",wrong:"ჩო-ირ",right:"ქვა-ირ",geo:"გუნდი",level:"B1",tip:"ჟღერს ზუსტად როგორც 'acquire' გარეშე 'ac'!"},
+{word:"subtle",wrong:"საბ-თლ",right:"სა-თელ",geo:"დახვეწილი",level:"B1",tip:"'b' მუნჯია!"},
+{word:"paradigm",wrong:"პა-რა-დიგმ",right:"პა-რე-დაიმ",geo:"პარადიგმა",level:"B1",tip:"'g' მუნჯია! ბოლო მარცვალი ჟღერს 'dime'."},
+{word:"epitome",wrong:"ე-პი-ტოუმ",right:"ი-პი-თო-მი",geo:"განსახიერება",level:"B1",tip:"4 მარცვალი! ბოლო 'e' არ არის მუნჯი."},
+{word:"niche",wrong:"ნიჩ",right:"ნიშ / ნიჩ",geo:"ნიშა",level:"B1",tip:"ორივე მისაღებია! ბრიტანულში 'neesh', ამერიკულში 'nitch'."},
+{word:"cache",wrong:"კაჩ / კა-შე",right:"კაშ",geo:"ქეში",level:"B1",tip:"ერთ მარცვლადაა! ჟღერს ზუსტად როგორც 'cash'."},
+{word:"chaos",wrong:"ჩაოს",right:"ქეი-ოს",geo:"ქაოსი",level:"B1",tip:"'ch' ჟღერს როგორც 'k'! ბერძნულიდან."},
+{word:"archive",wrong:"არ-ჩაივ",right:"არ-ქაივ",geo:"არქივი",level:"B1",tip:"'ch' ჟღერს როგორც 'k'!"},
+{word:"restaurant",wrong:"რეს-ტაუ-რანტ",right:"რეს-ტრონთ",geo:"რესტორანი",level:"B1",tip:"2-3 მარცვალი! შუა 'au' თითქმის არ ისმის ამერიკულში."},
+{word:"temperature",wrong:"ტემ-პე-რა-ტუ-რე",right:"ტემ-პრე-ჩერ",geo:"ტემპერატურა",level:"B1",tip:"3 მარცვალი! 'ture' ჟღერს 'cher'."},
+{word:"library",wrong:"ლაიბ-რა-რი",right:"ლაიბ-რე-რი",geo:"ბიბლიოთეკა",level:"B1",tip:"არ გამოტოვო პირველი 'r'! 'LY-bruh-ree', არა 'ly-berry'."},
+{word:"February",wrong:"ფებ-იუ-ე-რი",right:"ფებ-რუ-ე-რი",geo:"თებერვალი",level:"B1",tip:"'r' არ გამოტოვო! თუმცა ამერიკულში ხშირად 'FEB-yoo-erry' ამბობენ."},
+{word:"clothes",wrong:"კლოთ-ეზ",right:"კლოუზ",geo:"ტანსაცმელი",level:"B1",tip:"ჟღერს ზუსტად როგორც 'close'!"},
+
+// B2 - Upper Intermediate
+{word:"consciousness",wrong:"კონ-სი-ოუს-ნეს",right:"ქონ-შეს-ნეს",geo:"ცნობიერება",level:"B2",tip:"3 მარცვალი! 'scious' ჟღერს 'shus'."},
+{word:"miscellaneous",wrong:"მის-სელ-ანეუს",right:"მი-სე-ლეი-ნი-ეს",geo:"სხვადასხვა",level:"B2",tip:"5 მარცვალი! აქცენტი მესამეზე."},
+{word:"contemporary",wrong:"კონ-ტემ-პო-რა-რი",right:"ქენ-ტემ-პრე-რი",geo:"თანამედროვე",level:"B2",tip:"4 მარცვალი ამერიკულში! 'o' ჟღერს 'uh'."},
+{word:"deteriorate",wrong:"დე-ტე-რი-ო-რეიტ",right:"დი-თი-რი-ე-რეით",geo:"გაუარესება",level:"B2",tip:"5 მარცვალი! აქცენტი მეორეზე."},
+{word:"remuneration",wrong:"რე-მუნ-ე-რეიშნ",right:"რი-მიუ-ნე-რეი-შნ",geo:"ანაზღაურება",level:"B2",tip:"5 მარცვალი! 'u' ჟღერს 'yoo'."},
+{word:"camaraderie",wrong:"კა-მა-რა-დე-რი",right:"ქა-მა-რა-დე-რი",geo:"ამხანაგობა",level:"B2",tip:"5 მარცვალი, ფრანგულიდან. აქცენტი მესამეზე."},
+{word:"unequivocally",wrong:"ან-ეკვი-ვო-კა-ლი",right:"ან-ი-ქვი-ვე-ქე-ლი",geo:"ცალსახად",level:"B2",tip:"6 მარცვალი!"},
+{word:"aesthetic",wrong:"ეს-თე-ტიკ",right:"ეს-თე-თიქ",geo:"ესთეტიკური",level:"B2",tip:"3 მარცვალი! 'ae' ჟღერს როგორც 'e'."},
+{word:"lieutenant",wrong:"ლიუ-ტე-ნანტ",right:"ლეფ-ტე-ნენთ (UK) / ლუ-ტე-ნენთ (US)",geo:"ლეიტენანტი",level:"B2",tip:"ბრიტანულში 'f' ჟღერს! ამერიკულში — არა. ორი სრულიად განსხვავებული გამოთქმა."},
+{word:"draught",wrong:"დრაუგთ",right:"დრაფთ",geo:"ნახაზი/წვნიანი",level:"B2",tip:"'augh' ჟღერს როგორც 'aft'. იგივეა რაც 'draft'."},
+{word:"thoroughly",wrong:"თო-როუ-ლი",right:"თერ-ე-ლი",geo:"საფუძვლიანად",level:"B2",tip:"3 მარცვალი! 'ough' ჟღერს 'uh'."},
+{word:"yacht",wrong:"იაჩტ",right:"იოთ",geo:"იახტა",level:"B2",tip:"'ach' მუნჯია! ჟღერს უბრალოდ 'yot'."},
+{word:"gauge",wrong:"გაუჯ",right:"გეიჯ",geo:"საზომი",level:"B2",tip:"ჟღერს 'GAYJ'. 'au' ჟღერს 'ay'."},
+{word:"chassis",wrong:"ჩა-სის",right:"შა-სი",geo:"შასი",level:"B2",tip:"ფრანგულიდან! 'ch' ჟღერს 'sh', 's' ბოლოში მუნჯია."},
+{word:"hierarchy",wrong:"ჰიერ-არ-ქი",right:"ჰაი-რარ-ქი",geo:"იერარქია",level:"B2",tip:"პირველი მარცვალი 'high'-ს ჰგავს!"},
+
+// C1 - Advanced
+{word:"onomatopoeia",wrong:"ონო-მატო-პოეია",right:"ონ-ე-მა-თე-პიი-ე",geo:"ონომატოპეა",level:"C1",tip:"6 მარცვალი! აქცენტი მეხუთეზე."},
+{word:"worcestershire",wrong:"ვორ-ჩეს-ტერ-შაირ",right:"ვუს-ტერ-შერ",geo:"ვუსტერშირი",level:"C1",tip:"3 მარცვალი! ეს ინგლისურის ყველაზე ცნობილი მახეა — 'WOOS-ter-sher'."},
+{word:"segue",wrong:"სე-გუ",right:"სეგ-ვეი",geo:"გადასვლა",level:"C1",tip:"იტალიურიდან. ჟღერს 'SEG-way' — კი, როგორც Segway სკუტერი!"},
+{word:"albeit",wrong:"ოლ-ბეით",right:"ოლ-ბი-იტ",geo:"თუმცა",level:"C1",tip:"3 მარცვალი! 'all-be-it'. სიტყვასიტყვით 'all be it'."},
+{word:"plethora",wrong:"პლეთ-ორა",right:"პლე-თე-რა",geo:"სიუხვე",level:"C1",tip:"აქცენტი პირველ მარცვალზე! 'PLETH-uh-ruh'."},
+{word:"bourgeois",wrong:"ბურ-გეოის",right:"ბურ-ჟვა",geo:"ბურჟუა",level:"C1",tip:"ფრანგულიდან! 3 მარცვალი: 'boor-ZHWAH'."},
+{word:"rendezvous",wrong:"რენ-დეზ-ვოუს",right:"რონ-დეი-ვუ",geo:"შეხვედრა",level:"C1",tip:"ფრანგულიდან! 's' მუნჯია, 'ez' ჟღერს 'ay'."},
+{word:"entrepreneur",wrong:"ენტრე-პრენ-ეურ",right:"ონ-ტრა-პრა-ნერ",geo:"მეწარმე",level:"C1",tip:"4 მარცვალი, ფრანგულიდან. აქცენტი ბოლოზე."},
+{word:"posthumous",wrong:"პოსთ-ჰიუ-მოუს",right:"პოს-ჩუ-მეს",geo:"სიკვდილის შემდეგ",level:"C1",tip:"'th' ჟღერს 'ch'! 'h' მუნჯია."},
+{word:"phlegm",wrong:"ფლეგმ",right:"ფლემ",geo:"ნახველი",level:"C1",tip:"'g' მუნჯია!"},
+{word:"mnemonics",wrong:"მნე-მო-ნიკს",right:"ნი-მო-ნიქს",geo:"მნემონიკა",level:"C1",tip:"'m' მუნჯია! ბერძნულიდან."},
+{word:"coup",wrong:"კოუპ",right:"ქუ",geo:"გადატრიალება",level:"C1",tip:"ფრანგულიდან! 'p' მუნჯია. მაგრამ 'coupe' (მანქანა) = 'koop'."},
+{word:"faux pas",wrong:"ფოქს პას",right:"ფოუ პა",geo:"შეცდომა",level:"C1",tip:"ფრანგულიდან! ორივე სიტყვაში ბოლო ასო მუნჯია."},
+{word:"lingerie",wrong:"ლინ-ჯე-რი",right:"ლონ-ჟე-რეი",geo:"საცვლები",level:"C1",tip:"ფრანგულიდან! 3 მარცვალი, ნაზალური 'on'."},
+{word:"hors d'oeuvres",wrong:"ჰორს დოევრეს",right:"ორ დერვ",geo:"საუზმე/მცირე კერძი",level:"C1",tip:"ფრანგულიდან! 'h' მუნჯია, ბოლო 's' მუნჯია."},
+{word:"isthmus",wrong:"ისთ-მუს",right:"ის-მეს",geo:"ყელი (გეოგრაფიული)",level:"C1",tip:"'th' მუნჯია!"},
+{word:"facetious",wrong:"ფა-სე-ტიოუს",right:"ფე-სი-შეს",geo:"ხუმრობით",level:"C1",tip:"3 მარცვალი! 'tious' ჟღერს 'shus'."},
+{word:"sanguine",wrong:"სან-გუინ",right:"სან-გვინ",geo:"ოპტიმისტური",level:"C1",tip:"2 მარცვალი! 'guine' ჟღერს 'gwin'."},
+];
+
+// Categories/levels
+const levels = ['ყველა','A1','A2','B1','B2','C1'];
+let activeLevel = 'ყველა';
+let searchTerm = '';
+
+function render(){
+  const filtered = words.filter(w => {
+    const matchLevel = activeLevel === 'ყველა' || w.level === activeLevel;
+    const matchSearch = !searchTerm || w.word.toLowerCase().includes(searchTerm) || w.geo.includes(searchTerm);
+    return matchLevel && matchSearch;
+  });
+  
+  document.getElementById('counter').textContent = `ნაჩვენებია ${filtered.length} სიტყვა ${words.length}-დან`;
+  
+  const html = filtered.map((w,i) => `
+    <div class="card" onclick="this.classList.toggle('open')" style="animation-delay:${i*30}ms">
+      <div class="top">
+        <span class="word">${w.word}</span>
+        <div style="display:flex;gap:.5rem;align-items:center">
+          <button class="play-btn" onclick="event.stopPropagation();speak('${w.word}')">🔊 მოსმენა</button>
+          <span class="level ${w.level.toLowerCase()}">${w.level}</span>
+        </div>
+      </div>
+      <div class="pron">
+        <div><div class="label">❌ არასწორი</div><div class="wrong">${w.wrong}</div></div>
+        <div><div class="label">✅ სწორი</div><div class="right">${w.right}</div></div>
+      </div>
+      <div class="geo">🇬🇪 ${w.geo}</div>
+      <div class="tip">💡 <strong>რჩევა:</strong> ${w.tip}</div>
+    </div>
+  `).join('');
+  document.getElementById('cards').innerHTML = html;
+}
+
+function speak(word){
+  if('speechSynthesis' in window){
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang='en-US';u.rate=0.8;
+    speechSynthesis.speak(u);
+  }
+}
+
+// Render filters
+document.getElementById('filters').innerHTML = levels.map(l => 
+  `<button class="${l===activeLevel?'active':''}" onclick="setLevel('${l}')">${l}</button>`
+).join('');
+
+function setLevel(l){
+  activeLevel=l;
+  document.getElementById('filters').innerHTML = levels.map(x => 
+    `<button class="${x===activeLevel?'active':''}" onclick="setLevel('${x}')">${x}</button>`
+  ).join('');
+  render();
+}
+
+document.getElementById('search').addEventListener('input', e => {
+  searchTerm = e.target.value.toLowerCase();
+  render();
+});
+
+render();
+</script>
+</body></html>

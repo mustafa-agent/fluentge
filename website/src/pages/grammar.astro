@@ -58,16 +58,16 @@ function isLessonFree(slug: string) {
                 <div class="mt-3 text-xs text-[#6B6B65]">📝 {lesson.exercises.length} სავარჯიშო</div>
               </a>
             ) : (
-              <a href="/premium/" class="block bg-[#242426] border border-white/5 rounded-xl p-5 opacity-60 hover:opacity-80 hover:border-amber-500/30 transition-all">
+              <a href="/premium/" class="premium-grammar-card block bg-[#242426] border border-white/5 rounded-xl p-5 opacity-60 hover:opacity-80 hover:border-amber-500/30 transition-all" data-lesson-url={`/grammar/${lesson.slug}/`}>
                 <div class="flex items-start justify-between mb-2">
-                  <h3 class="font-semibold text-lg">{lesson.title_ka} 🔒</h3>
+                  <h3 class="font-semibold text-lg">{lesson.title_ka} <span class="lock-icon">🔒</span></h3>
                   <div class="flex items-center gap-1">
-                    <span class="text-xs px-2 py-0.5 rounded-full font-medium bg-amber-500/20 text-amber-400">🔒</span>
+                    <span class="lock-badge text-xs px-2 py-0.5 rounded-full font-medium bg-amber-500/20 text-amber-400">🔒</span>
                     <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
                   </div>
                 </div>
                 <p class="text-[#6B6B65] text-sm">{lesson.title_en}</p>
-                <div class="mt-3 text-xs text-amber-400">გახსნა → პრემიუმი</div>
+                <div class="premium-hint mt-3 text-xs text-amber-400">გახსნა → პრემიუმი</div>
               </a>
             );
           })}
@@ -84,4 +84,21 @@ function isLessonFree(slug: string) {
       </a>
     </div>
   </section>
+
+  <script>
+    if (localStorage.getItem('fluentge-premium') === 'true') {
+      document.querySelectorAll('.premium-grammar-card').forEach(card => {
+        const url = card.getAttribute('data-lesson-url');
+        if (url) card.setAttribute('href', url);
+        card.classList.remove('opacity-60');
+        card.classList.add('hover:scale-[1.02]');
+        const lock = card.querySelector('.lock-icon');
+        if (lock) lock.remove();
+        const badge = card.querySelector('.lock-badge');
+        if (badge) { badge.textContent = '✅ პრემიუმ'; badge.classList.remove('bg-amber-500/20','text-amber-400'); badge.classList.add('bg-green-500/20','text-green-400'); }
+        const hint = card.querySelector('.premium-hint');
+        if (hint) hint.remove();
+      });
+    }
+  </script>
 </Layout>

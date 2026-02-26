@@ -565,8 +565,7 @@ const episodes = [
               </div>
             </div>
 
-            {ep.free ? (
-              <div>
+            <div class={ep.free ? '' : 'podcast-premium-content hidden'}>
                 <audio controls class="w-full mb-4" preload="metadata">
                   <source src={ep.file} type="audio/mpeg" />
                 </audio>
@@ -596,9 +595,9 @@ const episodes = [
                     </div>
                   </details>
                 )}
-              </div>
-            ) : (
-              <a href="/premium/" class="block bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-4 text-center hover:border-amber-500/40 transition-all">
+            </div>
+            {!ep.free && (
+              <a href="/premium/" class="podcast-lock-overlay block bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-4 text-center hover:border-amber-500/40 transition-all">
                 <span class="text-2xl">🔒</span>
                 <p class="text-amber-400 font-medium mt-1">გახსენი პრემიუმით</p>
                 <p class="text-xs text-[#6B6B65] mt-1">თვეში 9.99 ₾</p>
@@ -620,6 +619,19 @@ const episodes = [
 
   <script is:inline>
     (function() {
+      // Unlock premium podcasts
+      if (localStorage.getItem('fluentge-premium') === 'true') {
+        document.querySelectorAll('.podcast-premium-content').forEach(el => el.classList.remove('hidden'));
+        document.querySelectorAll('.podcast-lock-overlay').forEach(el => el.remove());
+        // Fix premium badges
+        document.querySelectorAll('.text-amber-400').forEach(el => {
+          if (el.textContent.trim() === '🔒 პრემიუმი') {
+            el.textContent = '⭐ პრემიუმ';
+            el.classList.remove('bg-amber-500/20', 'text-amber-400');
+            el.classList.add('bg-green-500/20', 'text-green-400');
+          }
+        });
+      }
       const learned = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
       document.querySelectorAll('.mark-podcast-btn').forEach(btn => {
         const title = btn.dataset.podcast;

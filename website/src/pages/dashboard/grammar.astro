@@ -6,7 +6,10 @@ import Layout from '../../layouts/Layout.astro';
   <section class="max-w-2xl mx-auto px-4 py-12">
     <a href="/dashboard/" class="text-[#6B6B65] hover:text-[#C8C8C0] text-sm mb-4 inline-block">← დეშბორდი</a>
     <h1 class="font-['Playfair_Display',serif] text-2xl font-bold mb-2">📖 ნასწავლი გაკვეთილები</h1>
-    <p class="text-[#A0A09A] text-sm mb-6">სულ: <span id="count" class="font-bold text-[#C8C8C0]">0</span> გაკვეთილი</p>
+    <div class="flex items-center justify-between mb-6">
+      <p class="text-[#A0A09A] text-sm">სულ: <span id="count" class="font-bold text-[#C8C8C0]">0</span> გაკვეთილი</p>
+      <a href="/dashboard/grammar/?clear=1" class="bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-400 text-xs font-semibold px-3 py-2 rounded-xl transition-colors inline-block cursor-pointer no-underline">🗑️ გასუფთავება</a>
+    </div>
     
     <div id="list" class="space-y-2"></div>
     <div id="empty" class="hidden text-center py-12">
@@ -18,18 +21,31 @@ import Layout from '../../layouts/Layout.astro';
 
   <script is:inline>
     (function() {
-      const items = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
+      if (window.location.search.indexOf('clear=1') > -1) {
+        localStorage.removeItem('fluentge-learned-grammar');
+        window.location.href = '/dashboard/grammar/';
+        return;
+      }
+      var items = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
       document.getElementById('count').textContent = items.length;
       if (items.length === 0) {
         document.getElementById('empty').classList.remove('hidden');
-        return;
+      } else {
+        var list = document.getElementById('list');
+        items.forEach(function(p) {
+          var div = document.createElement('div');
+          div.className = 'bg-[#242426] border border-[#2E2E30] rounded-xl p-4 flex items-center gap-3';
+          div.innerHTML = '<span class="text-green-400">✓</span><span class="text-sm">' + p + '</span>';
+          list.appendChild(div);
+        });
       }
-      const list = document.getElementById('list');
-      items.forEach(p => {
-        const div = document.createElement('div');
-        div.className = 'bg-[#242426] border border-[#2E2E30] rounded-xl p-4 flex items-center gap-3';
-        div.innerHTML = '<span class="text-green-400">✓</span><span class="text-sm">' + p + '</span>';
-        list.appendChild(div);
+      document.getElementById('clear-btn').addEventListener('click', function() {
+        if (confirm('ნამდვილად გინდა ყველა ნასწავლი გაკვეთილის გასუფთავება?')) {
+          localStorage.removeItem('fluentge-learned-grammar');
+          document.getElementById('count').textContent = '0';
+          document.getElementById('list').innerHTML = '';
+          document.getElementById('empty').classList.remove('hidden');
+        }
       });
     })();
   </script>

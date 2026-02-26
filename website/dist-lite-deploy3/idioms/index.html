@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="ka"><head>
+<meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="100 ინგლისური იდიომი და გამოთქმა ქართული თარგმანით — FluentGe">
+<title>იდიომები — FluentGe</title>
+<link rel="canonical" href="https://fluentge.surge.sh/idioms/">
+<meta property="og:title" content="იდიომები და გამოთქმები — FluentGe">
+<meta property="og:description" content="100 ინგლისური იდიომი ქართული ახსნით, მაგალითებით და კატეგორიებით">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1C1C1E;--text:#F5F5F0;--muted:#A0A09A;--dim:#6B6B65;--card:#242426;--border:#2E2E30;--accent:#C8C8C0;--green:#4ADE80;--red:#F87171;--blue:#60A5FA}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100vh;line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:50;background:rgba(28,28,30,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.75rem 1rem}
+nav .inner{max-width:72rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+nav a.logo{font-family:'Playfair Display',serif;font-size:1.4rem;text-decoration:none}
+nav a.logo .f{color:var(--accent)}nav a.logo .g{color:var(--text)}
+nav .links{display:flex;gap:1.2rem;align-items:center}
+nav .links a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:color .2s}
+nav .links a:hover{color:var(--text)}
+.hero{padding:7rem 1rem 3rem;max-width:48rem;margin:0 auto;text-align:center}
+.hero h1{font-family:'Playfair Display',serif;font-size:2.5rem;margin-bottom:.75rem}
+.hero p{color:var(--muted);font-size:1.05rem;max-width:32rem;margin:0 auto 1.5rem}
+.stats{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:.4rem 1.2rem;font-size:.85rem;color:var(--accent)}
+.progress-bar{max-width:36rem;margin:0 auto 1.5rem;padding:0 1rem}
+.progress-bar .bar-bg{background:var(--card);border:1px solid var(--border);border-radius:999px;height:.5rem;overflow:hidden}
+.progress-bar .bar-fill{background:var(--green);height:100%;border-radius:999px;transition:width .4s ease}
+.progress-bar .bar-label{font-size:.75rem;color:var(--dim);margin-top:.3rem;text-align:center}
+.actions{display:flex;gap:.5rem;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap;padding:0 1rem}
+.actions button{background:var(--card);border:1px solid var(--border);color:var(--accent);padding:.5rem 1.2rem;border-radius:.75rem;font-size:.85rem;cursor:pointer;transition:all .2s;font-family:inherit}
+.actions button:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.filters{max-width:48rem;margin:0 auto .75rem;padding:0 1rem;display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.filters button{background:var(--card);border:1px solid var(--border);color:var(--muted);padding:.4rem 1rem;border-radius:999px;font-size:.8rem;cursor:pointer;transition:all .2s;font-family:inherit}
+.filters button.active,.filters button:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.search-box{max-width:36rem;margin:0 auto 1.5rem;padding:0 1rem;position:relative}
+.search-box input{width:100%;background:var(--card);border:1px solid var(--border);color:var(--text);padding:.7rem 1rem .7rem 2.5rem;border-radius:.75rem;font-size:.95rem;outline:none;font-family:inherit}
+.search-box input:focus{border-color:var(--accent)}
+.search-box svg{position:absolute;left:1.7rem;top:50%;transform:translateY(-50%);color:var(--dim)}
+.cards{max-width:48rem;margin:0 auto;padding:0 1rem 4rem;display:flex;flex-direction:column;gap:.75rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1.25rem;cursor:pointer;transition:all .2s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card.learned{border-left:3px solid var(--green)}
+.card .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem;gap:.5rem}
+.card .idiom-text{font-size:1.2rem;font-weight:700;flex:1}
+.card .level{font-size:.7rem;padding:.15rem .6rem;border-radius:999px;font-weight:600;white-space:nowrap}
+.card .level.a2{background:#60A5FA20;color:#60A5FA}
+.card .level.b1{background:#FACC1520;color:#FACC15}
+.card .level.b2{background:#FB923C20;color:#FB923C}
+.card .level.c1{background:#F8717120;color:#F87171}
+.card .geo-translation{color:var(--accent);font-size:.95rem;margin:.3rem 0}
+.card .meaning{color:var(--muted);font-size:.85rem;margin:.3rem 0;display:none}
+.card .example{color:var(--blue);font-size:.85rem;font-style:italic;margin:.3rem 0;display:none}
+.card .card-actions{display:none;margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border);display:none;gap:.5rem;flex-wrap:wrap}
+.card.open .meaning,.card.open .example{display:block}
+.card.open .card-actions{display:flex}
+.card .learn-btn{background:transparent;border:1px solid var(--green);color:var(--green);padding:.3rem .8rem;border-radius:.5rem;font-size:.8rem;cursor:pointer;font-weight:600;transition:all .2s;font-family:inherit}
+.card .learn-btn:hover,.card .learn-btn.done{background:var(--green);color:var(--bg)}
+.card .cat-tag{font-size:.7rem;color:var(--dim);margin-top:.2rem}
+.counter{text-align:center;color:var(--dim);font-size:.8rem;padding:1rem}
+footer{border-top:1px solid var(--border);padding:2rem 1rem;text-align:center;color:var(--dim);font-size:.75rem}
+.random-modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:1rem}
+.random-modal.show{display:flex}
+.random-modal .modal-card{background:var(--card);border:1px solid var(--border);border-radius:1.5rem;padding:2rem;max-width:28rem;width:100%;text-align:center}
+.random-modal .modal-card h2{font-size:1.4rem;margin-bottom:.5rem}
+.random-modal .modal-card .geo{color:var(--accent);font-size:1rem;margin:.5rem 0}
+.random-modal .modal-card .meaning{color:var(--muted);font-size:.9rem;margin:.5rem 0}
+.random-modal .modal-card .example{color:var(--blue);font-size:.85rem;font-style:italic;margin:.5rem 0}
+.random-modal .modal-card .lvl{margin:.5rem 0}
+.random-modal .close-btn{margin-top:1rem;background:var(--accent);color:var(--bg);border:none;padding:.5rem 1.5rem;border-radius:.75rem;cursor:pointer;font-size:.9rem;font-family:inherit}
+@media(max-width:640px){.hero h1{font-size:1.8rem}.hero p{font-size:.9rem}nav .links{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="inner">
+<a href="/" class="logo"><span class="f">Fluent</span><span class="g">Ge</span></a>
+<div class="links">
+<a href="/">მთავარი</a><a href="/flashcards/">ბარათები</a><a href="/grammar/">გრამატიკა</a>
+<a href="/games/">თამაშები</a><a href="/pronunciation/">გამოთქმა</a><a href="/idioms/" style="color:var(--text)">იდიომები</a>
+</div>
+</div></nav>
+
+<div class="hero">
+<h1>💬 იდიომები და გამოთქმები</h1>
+<p>100 ყველაზე გავრცელებული ინგლისური იდიომი ქართული ახსნით, მაგალითებით და კატეგორიებით</p>
+<div class="stats">
+<span class="stat" id="progressStat">✅ 0/100 ნასწავლი</span>
+<span class="stat">📂 10 კატეგორია</span>
+<span class="stat">🎯 A2–C1 დონე</span>
+</div>
+</div>
+
+<div class="progress-bar">
+<div class="bar-bg"><div class="bar-fill" id="progressFill" style="width:0%"></div></div>
+<div class="bar-label" id="progressLabel">0% დასრულებული</div>
+</div>
+
+<div class="actions">
+<button onclick="showRandom()">🎲 შემთხვევითი იდიომი</button>
+<button onclick="toggleLearned()">👁️ მხოლოდ ნასწავლი</button>
+<button onclick="resetProgress()">🔄 პროგრესის წაშლა</button>
+</div>
+
+<div class="search-box">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+<input type="text" id="search" placeholder="ძებნა... (ინგლისურად ან ქართულად)">
+</div>
+
+<div class="filters" id="catFilters"></div>
+<div class="filters" id="lvlFilters" style="margin-bottom:1.5rem"></div>
+
+<div class="cards" id="cards"></div>
+<div class="counter" id="counter"></div>
+
+<div class="random-modal" id="randomModal">
+<div class="modal-card">
+<h2 id="rmIdiom"></h2>
+<div class="geo" id="rmGeo"></div>
+<div class="meaning" id="rmMeaning"></div>
+<div class="example" id="rmExample"></div>
+<div class="lvl"><span class="level" id="rmLevel"></span></div>
+<button class="close-btn" onclick="closeRandom()">დახურვა</button>
+</div>
+</div>
+
+<footer>FluentGe — ინგლისური ენის სწავლა ქართველებისთვის © 2025</footer>
+
+<script>
+const IDIOMS=[
+// 😊 ემოციები (Emotions)
+{id:1,en:"Break someone's heart",ge:"გულის გატეხა",meaning:"ვინმეს ძალიან გაწყენინო, განსაკუთრებით სიყვარულში",example:"She broke his heart when she left.",level:"A2",cat:"emotions"},
+{id:2,en:"Over the moon",ge:"მთვარეზე მაღლა (ძალიან ბედნიერი)",meaning:"უკიდურესად ბედნიერი და აღფრთოვანებული",example:"I was over the moon when I got the job.",level:"B1",cat:"emotions"},
+{id:3,en:"Down in the dumps",ge:"დეპრესიაში ყოფნა",meaning:"ძალიან სევდიანი და უიმედო გრძნობა",example:"He's been down in the dumps since he failed the exam.",level:"B1",cat:"emotions"},
+{id:4,en:"Cry over spilled milk",ge:"დაღვრილ რძეზე ტირილი",meaning:"უკვე მომხდარ რამეზე დარდი, რისი შეცვლაც შეუძლებელია",example:"There's no point crying over spilled milk — let's move on.",level:"B1",cat:"emotions"},
+{id:5,en:"Blow off steam",ge:"ორთქლის გაშვება",meaning:"დაგროვილი სტრესის ან რისხვის გამოხატვა",example:"I go running to blow off steam after work.",level:"B2",cat:"emotions"},
+{id:6,en:"Get cold feet",ge:"ფეხების გაცივება (შეშინება)",meaning:"რაღაცის გაკეთებამდე შიშის ან ეჭვის გრძნობა",example:"She got cold feet before the wedding.",level:"B1",cat:"emotions"},
+{id:7,en:"On cloud nine",ge:"მეცხრე ღრუბელზე",meaning:"უკიდურესად ბედნიერი",example:"After the proposal, she was on cloud nine.",level:"B1",cat:"emotions"},
+{id:8,en:"Have a change of heart",ge:"აზრის შეცვლა",meaning:"გადაწყვეტილების ან აზრის შეცვლა, განსაკუთრებით გრძნობების გამო",example:"He had a change of heart and decided to stay.",level:"B1",cat:"emotions"},
+{id:9,en:"Scared stiff",ge:"შიშით გაქვავება",meaning:"უკიდურესად შეშინებული",example:"I was scared stiff during the horror movie.",level:"B1",cat:"emotions"},
+{id:10,en:"Green with envy",ge:"შურით მწვანე",meaning:"ძალიან შურიანი",example:"She was green with envy when she saw my new car.",level:"B1",cat:"emotions"},
+
+// 💼 სამსახური (Work)
+{id:11,en:"Burn the midnight oil",ge:"შუაღამის ზეთის წვა",meaning:"გვიან ღამემდე მუშაობა",example:"I had to burn the midnight oil to finish the project.",level:"B2",cat:"work"},
+{id:12,en:"Get the ball rolling",ge:"ბურთის დაგორება (დაწყება)",meaning:"რაღაცის დაწყება, პროცესის ამოქმედება",example:"Let's get the ball rolling on this new campaign.",level:"B1",cat:"work"},
+{id:13,en:"Think outside the box",ge:"ყუთის მიღმა ფიქრი",meaning:"კრეატიულად და არატრადიციულად ფიქრი",example:"We need to think outside the box to solve this problem.",level:"B1",cat:"work"},
+{id:14,en:"Go the extra mile",ge:"ზედმეტი მილის გავლა",meaning:"საჭიროზე მეტის გაკეთება",example:"She always goes the extra mile for her clients.",level:"B1",cat:"work"},
+{id:15,en:"Call it a day",ge:"დღის დასრულება",meaning:"მუშაობის შეწყვეტა მოცემული დღისთვის",example:"It's 6 PM, let's call it a day.",level:"A2",cat:"work"},
+{id:16,en:"Back to the drawing board",ge:"საწყისზე დაბრუნება",meaning:"თავიდან დაწყება წარუმატებლობის შემდეგ",example:"The plan didn't work, so it's back to the drawing board.",level:"B2",cat:"work"},
+{id:17,en:"Cut corners",ge:"კუთხეების მოჭრა",meaning:"საქმის ხარისხის ხარჯზე გამარტივება",example:"Don't cut corners on safety procedures.",level:"B2",cat:"work"},
+{id:18,en:"Pull strings",ge:"ძაფების გაწევა",meaning:"გავლენის გამოყენება რაღაცის მისაღწევად",example:"He pulled strings to get his son the internship.",level:"C1",cat:"work"},
+{id:19,en:"Up to speed",ge:"სიჩქარეზე (ინფორმირებული)",meaning:"მიმდინარე მდგომარეობის შესახებ სრულად ინფორმირებული",example:"Let me bring you up to speed on the latest changes.",level:"B1",cat:"work"},
+{id:20,en:"Wear many hats",ge:"ბევრი ქუდის ტარება",meaning:"ბევრი სხვადასხვა როლის შესრულება",example:"In a startup, everyone wears many hats.",level:"B2",cat:"work"},
+
+// 💰 ფული (Money)
+{id:21,en:"Break the bank",ge:"ბანკის გატეხა",meaning:"ძალიან ძვირი ღირებულება",example:"This restaurant won't break the bank — prices are reasonable.",level:"B1",cat:"money"},
+{id:22,en:"Penny for your thoughts",ge:"პენი შენ ფიქრებში",meaning:"კითხვა, რაზე ფიქრობს ვინმე",example:"You look worried — penny for your thoughts?",level:"B2",cat:"money"},
+{id:23,en:"Cost an arm and a leg",ge:"ხელისა და ფეხის ფასი",meaning:"უკიდურესად ძვირი",example:"That designer bag cost an arm and a leg.",level:"B1",cat:"money"},
+{id:24,en:"Money doesn't grow on trees",ge:"ფული ხეზე არ იზრდება",meaning:"ფული ადვილად მოსაპოვებელი არ არის",example:"Be careful with spending — money doesn't grow on trees.",level:"A2",cat:"money"},
+{id:25,en:"Save for a rainy day",ge:"წვიმიანი დღისთვის დაზოგვა",meaning:"ფულის დაზოგვა მომავალი საჭიროებისთვის",example:"I always save a little for a rainy day.",level:"B1",cat:"money"},
+{id:26,en:"Go Dutch",ge:"ჰოლანდიურად გაყოფა",meaning:"თითოეულმა თავისი წილი გადაიხადოს",example:"Let's go Dutch on dinner tonight.",level:"B1",cat:"money"},
+{id:27,en:"Tighten your belt",ge:"ქამრის შემოჭერა",meaning:"ხარჯების შემცირება",example:"We need to tighten our belts until the economy improves.",level:"B2",cat:"money"},
+{id:28,en:"A penny saved is a penny earned",ge:"დაზოგილი პენი მოგებული პენია",meaning:"ფულის დაზოგვა ისეთივე მნიშვნელოვანია, როგორც გამომუშავება",example:"I bring lunch to work — a penny saved is a penny earned.",level:"B1",cat:"money"},
+{id:29,en:"Pay through the nose",ge:"ცხვირით გადახდა",meaning:"რაღაცისთვის ძალიან ბევრის გადახდა",example:"We paid through the nose for concert tickets.",level:"C1",cat:"money"},
+{id:30,en:"Make ends meet",ge:"ბოლოების შეხვედრა",meaning:"საკმარისი ფულის ქონა ძირითადი ხარჯებისთვის",example:"It's hard to make ends meet on minimum wage.",level:"B1",cat:"money"},
+
+// ❤️ ურთიერთობები (Relationships)
+{id:31,en:"Get along like a house on fire",ge:"მოწვარ სახლივით გაგება",meaning:"ძალიან კარგად დამეგობრება, სწრაფი ურთიერთგაგება",example:"My sister and my friend get along like a house on fire.",level:"B2",cat:"relationships"},
+{id:32,en:"Tie the knot",ge:"კვანძის შეკვრა",meaning:"დაქორწინება",example:"They're going to tie the knot next summer.",level:"B1",cat:"relationships"},
+{id:33,en:"See eye to eye",ge:"თვალიდან თვალში ხედვა",meaning:"ვინმესთან თანხმობა, ერთი აზრის ყოფნა",example:"We don't always see eye to eye on politics.",level:"B1",cat:"relationships"},
+{id:34,en:"Stab someone in the back",ge:"ზურგში დანის ჩარტყმა",meaning:"სანდო ადამიანის ღალატი",example:"I can't believe he stabbed me in the back like that.",level:"B1",cat:"relationships"},
+{id:35,en:"Hit it off",ge:"მაშინვე დამეგობრება",meaning:"პირველივე შეხვედრისას კარგი ურთიერთობის დამყარება",example:"We hit it off immediately at the party.",level:"B1",cat:"relationships"},
+{id:36,en:"Give someone the cold shoulder",ge:"ცივი მხრის ჩვენება",meaning:"ვინმეს განზრახ იგნორირება",example:"She's been giving me the cold shoulder all week.",level:"B2",cat:"relationships"},
+{id:37,en:"Bend over backwards",ge:"უკან მოხრა (ძალიან ცდა)",meaning:"ვინმესთვის უკიდურესად ბევრის გაკეთება",example:"She bends over backwards to help her friends.",level:"B2",cat:"relationships"},
+{id:38,en:"Bury the hatchet",ge:"ნაჯახის დამარხვა",meaning:"კამათის დასრულება და შერიგება",example:"After years of fighting, they finally buried the hatchet.",level:"B2",cat:"relationships"},
+{id:39,en:"Two peas in a pod",ge:"ორი ბარდა ერთ პარკში",meaning:"ძალიან მსგავსი ადამიანები",example:"Those twins are two peas in a pod.",level:"B1",cat:"relationships"},
+{id:40,en:"Keep someone at arm's length",ge:"მკლავის სიგრძეზე შენარჩუნება",meaning:"ვინმესთან ახლო ურთიერთობის თავიდან აცილება",example:"I keep my coworkers at arm's length.",level:"B2",cat:"relationships"},
+
+// 🏠 ყოველდღიური (Daily Life)
+{id:41,en:"Piece of cake",ge:"ტორტის ნაჭერი (ადვილი)",meaning:"ძალიან ადვილი რამ",example:"The test was a piece of cake!",level:"A2",cat:"daily"},
+{id:42,en:"Hit the sack",ge:"ტომარაზე წოლა (დაძინება)",meaning:"საწოლში წასვლა, დაძინება",example:"I'm exhausted — I'm going to hit the sack.",level:"B1",cat:"daily"},
+{id:43,en:"Under the weather",ge:"ამინდის ქვეშ (ავადმყოფი)",meaning:"ოდნავ ავადმყოფობა",example:"I'm feeling a bit under the weather today.",level:"B1",cat:"daily"},
+{id:44,en:"Break a leg",ge:"ფეხის მოტეხვა (წარმატებებს)",meaning:"წარმატებას გისურვებ! (თეატრალური გამოთქმა)",example:"You have an audition? Break a leg!",level:"A2",cat:"daily"},
+{id:45,en:"Hit the road",ge:"გზაზე გასვლა",meaning:"წასვლა, გამგზავრება",example:"We should hit the road early to avoid traffic.",level:"A2",cat:"daily"},
+{id:46,en:"Sleep on it",ge:"ძილის შემდეგ გადაწყვეტა",meaning:"გადაწყვეტილების მიღებამდე ერთი დღით დაფიქრება",example:"Don't decide now — sleep on it.",level:"B1",cat:"daily"},
+{id:47,en:"Bite the bullet",ge:"ტყვიის კბენა",meaning:"რთული ან უსიამოვნო რამის გაკეთება",example:"I bit the bullet and went to the dentist.",level:"B2",cat:"daily"},
+{id:48,en:"Ring a bell",ge:"ზარის დარეკვა (ნაცნობი)",meaning:"რაღაც ნაცნობად მოგვეჩვენოს",example:"That name rings a bell, but I can't place it.",level:"B1",cat:"daily"},
+{id:49,en:"The last straw",ge:"უკანასკნელი ჩალა",meaning:"ბოლო მოვლენა, რომელიც მოთმინების თასს ავსებს",example:"Being late again was the last straw — he got fired.",level:"B2",cat:"daily"},
+{id:50,en:"Burn the candle at both ends",ge:"სანთლის ორივე ბოლოდან წვა",meaning:"ძალიან ბევრი მუშაობა ძილისა და დასვენების გარეშე",example:"She's been burning the candle at both ends studying for finals.",level:"C1",cat:"daily"},
+
+// 🏆 წარმატება/წარუმატებლობა (Success/Failure)
+{id:51,en:"Hit the nail on the head",ge:"ლურსმანზე თავში დარტყმა",meaning:"ზუსტად სწორად თქმა ან გაკეთება",example:"You hit the nail on the head with that analysis.",level:"B1",cat:"success"},
+{id:52,en:"Back to square one",ge:"პირველ უჯრაზე დაბრუნება",meaning:"თავიდან დაწყება",example:"The deal fell through — we're back to square one.",level:"B1",cat:"success"},
+{id:53,en:"Knock it out of the park",ge:"პარკიდან გარეთ გატანა",meaning:"რაღაცის ძალიან კარგად გაკეთება",example:"She knocked it out of the park with her presentation.",level:"B2",cat:"success"},
+{id:54,en:"Miss the boat",ge:"ნავის გაცდენა",meaning:"შესაძლებლობის ხელიდან გაშვება",example:"I missed the boat on buying that stock cheap.",level:"B1",cat:"success"},
+{id:55,en:"Go down in flames",ge:"ცეცხლში ჩაქრობა",meaning:"სრული წარუმატებლობა",example:"The startup went down in flames after six months.",level:"B2",cat:"success"},
+{id:56,en:"On the right track",ge:"სწორ გზაზე",meaning:"სწორი მიმართულებით მოძრაობა",example:"Your project is on the right track — keep going!",level:"A2",cat:"success"},
+{id:57,en:"Bite off more than you can chew",ge:"იმაზე მეტის კბენა, ვიდრე შეგიძლია",meaning:"იმაზე მეტის აღება, ვიდრე შეგიძლია გაუმკლავდე",example:"I bit off more than I could chew with three courses.",level:"B2",cat:"success"},
+{id:58,en:"The sky's the limit",ge:"ცა არის ლიმიტი",meaning:"შეუზღუდავი შესაძლებლობები",example:"With your talent, the sky's the limit!",level:"B1",cat:"success"},
+{id:59,en:"Fall flat on your face",ge:"სახით წაქცევა",meaning:"სრული წარუმატებლობა, განსაკუთრებით საჯაროდ",example:"His joke fell flat on its face — nobody laughed.",level:"B2",cat:"success"},
+{id:60,en:"Learn the ropes",ge:"თოკების სწავლა",meaning:"ახალი სამუშაოს ან საქმიანობის საფუძვლების სწავლა",example:"It took me a few weeks to learn the ropes.",level:"B1",cat:"success"},
+
+// 🍕 საკვები (Food-related)
+{id:61,en:"Spill the beans",ge:"ლობიოს დაღვრა",meaning:"საიდუმლოს გამჟღავნება",example:"Come on, spill the beans — what happened?",level:"B1",cat:"food"},
+{id:62,en:"In a nutshell",ge:"კაკლის ნაჭუჭში (მოკლედ)",meaning:"მოკლედ, შეჯამებისას",example:"In a nutshell, the project was a success.",level:"B1",cat:"food"},
+{id:63,en:"Bite the dust",ge:"მტვრის კბენა",meaning:"წარუმატებლობა ან სიკვდილი",example:"Another competitor bites the dust.",level:"B2",cat:"food"},
+{id:64,en:"Have your cake and eat it too",ge:"ტორტიც გქონდეს და შეჭამო კიდეც",meaning:"ორი ურთიერთგამომრიცხავი რამის ერთდროულად ქონა",example:"You can't have your cake and eat it too.",level:"B2",cat:"food"},
+{id:65,en:"Bring home the bacon",ge:"ბეკონის სახლში მოტანა",meaning:"ოჯახის შემოსავლის მოტანა",example:"She brings home the bacon in their family.",level:"B2",cat:"food"},
+{id:66,en:"Egg someone on",ge:"ვინმეს კვერცხით წახალისება",meaning:"ვინმეს წახალისება (ხშირად ცუდი საქმისთვის)",example:"His friends egged him on to jump off the bridge.",level:"B2",cat:"food"},
+{id:67,en:"Take it with a grain of salt",ge:"მარილის მარცვლით მიღება",meaning:"რაღაცის სრულად არდაჯერება",example:"Take his advice with a grain of salt.",level:"B2",cat:"food"},
+{id:68,en:"Butter someone up",ge:"ვინმეს კარაქის წასმა",meaning:"ვინმესთვის პირფერობა რაღაცის მისაღებად",example:"He's buttering up the boss for a promotion.",level:"B2",cat:"food"},
+{id:69,en:"A hot potato",ge:"ცხელი კარტოფილი",meaning:"საკამათო ან რთული საკითხი",example:"Immigration is a hot potato in many countries.",level:"B2",cat:"food"},
+{id:70,en:"Cool as a cucumber",ge:"კიტრივით მშვიდი",meaning:"ძალიან მშვიდი და თავდაჯერებული",example:"She was cool as a cucumber during the interview.",level:"B1",cat:"food"},
+
+// 🐾 ცხოველები (Animal-related)
+{id:71,en:"Let the cat out of the bag",ge:"კატის ჩანთიდან გაშვება",meaning:"საიდუმლოს შემთხვევით გამჟღავნება",example:"Don't let the cat out of the bag about the surprise party!",level:"B1",cat:"animals"},
+{id:72,en:"When pigs fly",ge:"როცა ღორები გაფრინდებიან",meaning:"არასდროს (შეუძლებელი რამ)",example:"He'll clean his room when pigs fly.",level:"B1",cat:"animals"},
+{id:73,en:"The elephant in the room",ge:"სპილო ოთახში",meaning:"აშკარა პრობლემა, რომელზეც არავინ ლაპარაკობს",example:"His drinking problem is the elephant in the room.",level:"B2",cat:"animals"},
+{id:74,en:"Kill two birds with one stone",ge:"ორი ჩიტის ერთი ქვით მოკვლა",meaning:"ერთი მოქმედებით ორი მიზნის მიღწევა",example:"By cycling to work, I kill two birds with one stone — exercise and commuting.",level:"B1",cat:"animals"},
+{id:75,en:"Hold your horses",ge:"ცხენების შეკავება",meaning:"მოითმინე, ნუ ჩქარობ",example:"Hold your horses — we're not ready yet.",level:"A2",cat:"animals"},
+{id:76,en:"A little bird told me",ge:"პატარა ჩიტმა მითხრა",meaning:"ვიღაცისგან საიდუმლოდ გავიგე",example:"A little bird told me you got a promotion!",level:"B1",cat:"animals"},
+{id:77,en:"Straight from the horse's mouth",ge:"პირდაპირ ცხენის პირიდან",meaning:"ინფორმაცია პირდაპირ წყაროდან",example:"I heard it straight from the horse's mouth.",level:"B2",cat:"animals"},
+{id:78,en:"Like a fish out of water",ge:"წყლიდან ამოსული თევზივით",meaning:"უცხო და არაკომფორტულ სიტუაციაში ყოფნა",example:"I felt like a fish out of water at the formal dinner.",level:"B1",cat:"animals"},
+{id:79,en:"Open a can of worms",ge:"ჭიების ქილის გახსნა",meaning:"რთული პრობლემების წამოწყება",example:"Bringing up politics opened a can of worms.",level:"B2",cat:"animals"},
+{id:80,en:"Bark up the wrong tree",ge:"არასწორ ხეზე ყეფა",meaning:"არასწორ მიმართულებაში ძებნა",example:"If you think I did it, you're barking up the wrong tree.",level:"B2",cat:"animals"},
+
+// ⏰ დრო (Time)
+{id:81,en:"In the nick of time",ge:"ბოლო წამში",meaning:"ბოლო მომენტში, დროის ამოწურვამდე",example:"We arrived at the airport in the nick of time.",level:"B1",cat:"time"},
+{id:82,en:"Once in a blue moon",ge:"ერთხელ ლურჯ მთვარეზე",meaning:"ძალიან იშვიათად",example:"I eat fast food once in a blue moon.",level:"B1",cat:"time"},
+{id:83,en:"Better late than never",ge:"სჯობს გვიან, ვიდრე არასდროს",meaning:"სჯობს რაიმე გვიან გააკეთო, ვიდრე საერთოდ არ გააკეთო",example:"You finally started exercising? Better late than never!",level:"A2",cat:"time"},
+{id:84,en:"Kill time",ge:"დროის მოკვლა",meaning:"დროის უმიზნოდ ხარჯვა ლოდინისას",example:"I killed time by scrolling my phone.",level:"A2",cat:"time"},
+{id:85,en:"Around the clock",ge:"საათის ირგვლივ (24 საათი)",meaning:"მთელი დღე და ღამე, უწყვეტად",example:"The hospital operates around the clock.",level:"B1",cat:"time"},
+{id:86,en:"Time flies",ge:"დრო დაფრინავს",meaning:"დრო ძალიან სწრაფად გადის",example:"Time flies when you're having fun.",level:"A2",cat:"time"},
+{id:87,en:"In the long run",ge:"გრძელ პერსპექტივაში",meaning:"ხანგრძლივ პერიოდში, საბოლოოდ",example:"Investing in education pays off in the long run.",level:"B1",cat:"time"},
+{id:88,en:"At the eleventh hour",ge:"მეთერთმეტე საათზე",meaning:"ბოლო მომენტში",example:"The deal was saved at the eleventh hour.",level:"B2",cat:"time"},
+{id:89,en:"Behind the times",ge:"დროის უკან",meaning:"მოძველებული, არათანამედროვე",example:"His teaching methods are behind the times.",level:"B1",cat:"time"},
+{id:90,en:"Stand the test of time",ge:"დროის გამოცდის გაძლება",meaning:"დიდხანს გაძლება, აქტუალურობის შენარჩუნება",example:"Great literature stands the test of time.",level:"B2",cat:"time"},
+
+// 🌤️ ამინდი (Weather)
+{id:91,en:"Under the weather",ge:"ამინდის ქვეშ",meaning:"ოდნავ ცუდად ყოფნა, ავადმყოფობა",example:"I'm feeling a bit under the weather today.",level:"B1",cat:"weather"},
+{id:92,en:"Right as rain",ge:"წვიმასავით სწორი",meaning:"სრულიად ჯანმრთელი და კარგად",example:"After a good night's sleep, I'll be right as rain.",level:"B2",cat:"weather"},
+{id:93,en:"Every cloud has a silver lining",ge:"ყველა ღრუბელს ვერცხლის ფენა აქვს",meaning:"ყველა ცუდ სიტუაციას კარგი მხარეც აქვს",example:"I lost my job but found a better one — every cloud has a silver lining.",level:"B1",cat:"weather"},
+{id:94,en:"A storm in a teacup",ge:"ქარიშხალი ჩაის ფინჯანში",meaning:"პატარა პრობლემის გაზვიადება",example:"The argument was just a storm in a teacup.",level:"B2",cat:"weather"},
+{id:95,en:"Take a rain check",ge:"წვიმის ბილეთის აღება",meaning:"შეთავაზების გადადება სხვა დროისთვის",example:"Can I take a rain check on dinner? I'm busy tonight.",level:"B2",cat:"weather"},
+{id:96,en:"Steal someone's thunder",ge:"ვინმეს ქუხილის მოპარვა",meaning:"ვინმეს ყურადღების ან დამსახურების წართმევა",example:"She stole my thunder by announcing the news first.",level:"C1",cat:"weather"},
+{id:97,en:"Weather the storm",ge:"ქარიშხლის გადატანა",meaning:"რთული პერიოდის წარმატებით გადალახვა",example:"The company managed to weather the storm of the recession.",level:"B2",cat:"weather"},
+{id:98,en:"Chasing rainbows",ge:"ცისარტყელების დევნა",meaning:"მიუღწეველი მიზნების დევნა",example:"Stop chasing rainbows and get a real job.",level:"B2",cat:"weather"},
+{id:99,en:"Lightning fast",ge:"ელვისებურად სწრაფი",meaning:"უკიდურესად სწრაფი",example:"The delivery was lightning fast — it arrived in an hour.",level:"A2",cat:"weather"},
+{id:100,en:"Come rain or shine",ge:"წვიმაშიც და მზეშიც",meaning:"ნებისმიერ პირობებში, რაც არ უნდა მოხდეს",example:"I'll be there, come rain or shine.",level:"B1",cat:"weather"}
+];
+
+const CATS=[
+{id:"emotions",label:"😊 ემოციები"},
+{id:"work",label:"💼 სამსახური"},
+{id:"money",label:"💰 ფული"},
+{id:"relationships",label:"❤️ ურთიერთობები"},
+{id:"daily",label:"🏠 ყოველდღიური"},
+{id:"success",label:"🏆 წარმატება"},
+{id:"food",label:"🍕 საკვები"},
+{id:"animals",label:"🐾 ცხოველები"},
+{id:"time",label:"⏰ დრო"},
+{id:"weather",label:"🌤️ ამინდი"}
+];
+const LEVELS=["A2","B1","B2","C1"];
+let activeCat=null,activeLevel=null,showOnlyLearned=false;
+const LS_KEY="fluentge-idioms-learned";
+
+function getLearned(){try{return JSON.parse(localStorage.getItem(LS_KEY))||[]}catch(e){return[]}}
+function setLearned(arr){localStorage.setItem(LS_KEY,JSON.stringify(arr))}
+function toggleLearn(id,e){e.stopPropagation();let l=getLearned();if(l.includes(id))l=l.filter(x=>x!==id);else l.push(id);setLearned(l);render();}
+
+function updateProgress(){
+const l=getLearned().length;
+document.getElementById('progressStat').textContent=`✅ ${l}/100 ნასწავლი`;
+document.getElementById('progressFill').style.width=`${l}%`;
+document.getElementById('progressLabel').textContent=`${l}% დასრულებული`;
+}
+
+function render(){
+const q=document.getElementById('search').value.toLowerCase();
+const learned=getLearned();
+let filtered=IDIOMS.filter(i=>{
+if(activeCat&&i.cat!==activeCat)return false;
+if(activeLevel&&i.level!==activeLevel)return false;
+if(showOnlyLearned&&!learned.includes(i.id))return false;
+if(q&&!i.en.toLowerCase().includes(q)&&!i.ge.toLowerCase().includes(q)&&!i.meaning.toLowerCase().includes(q))return false;
+return true;
+});
+const c=document.getElementById('cards');
+c.innerHTML=filtered.map(i=>{
+const isLearned=learned.includes(i.id);
+const catLabel=CATS.find(c=>c.id===i.cat)?.label||'';
+return `<div class="card${isLearned?' learned':''}" onclick="this.classList.toggle('open')">
+<div class="top"><span class="idiom-text">${i.en}</span><span class="level ${i.level.toLowerCase()}">${i.level}</span></div>
+<div class="geo-translation">${i.ge}</div>
+<div class="meaning">💡 ${i.meaning}</div>
+<div class="example">📝 "${i.example}"</div>
+<div class="cat-tag">${catLabel}</div>
+<div class="card-actions">
+<button class="learn-btn${isLearned?' done':''}" onclick="toggleLearn(${i.id},event)">${isLearned?'✅ ნასწავლი':'📌 ნასწავლად მონიშვნა'}</button>
+</div>
+</div>`;
+}).join('');
+document.getElementById('counter').textContent=`ნაჩვენებია ${filtered.length} იდიომი ${IDIOMS.length}-დან`;
+updateProgress();
+}
+
+// Category filters
+const cf=document.getElementById('catFilters');
+cf.innerHTML='<button class="active" onclick="setCat(null,this)">ყველა</button>'+CATS.map(c=>`<button onclick="setCat('${c.id}',this)">${c.label}</button>`).join('');
+function setCat(cat,btn){activeCat=cat;cf.querySelectorAll('button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render();}
+
+// Level filters
+const lf=document.getElementById('lvlFilters');
+lf.innerHTML='<button class="active" onclick="setLvl(null,this)">ყველა დონე</button>'+LEVELS.map(l=>`<button onclick="setLvl('${l}',this)">${l}</button>`).join('');
+function setLvl(lvl,btn){activeLevel=lvl;lf.querySelectorAll('button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render();}
+
+document.getElementById('search').addEventListener('input',render);
+
+function toggleLearned(){showOnlyLearned=!showOnlyLearned;render();}
+function resetProgress(){if(confirm('ნამდვილად გსურთ პროგრესის წაშლა?')){localStorage.removeItem(LS_KEY);render();}}
+
+function showRandom(){
+const i=IDIOMS[Math.floor(Math.random()*IDIOMS.length)];
+document.getElementById('rmIdiom').textContent=i.en;
+document.getElementById('rmGeo').textContent=i.ge;
+document.getElementById('rmMeaning').textContent='💡 '+i.meaning;
+document.getElementById('rmExample').textContent='📝 "'+i.example+'"';
+const lvl=document.getElementById('rmLevel');
+lvl.textContent=i.level;lvl.className='level '+i.level.toLowerCase();
+document.getElementById('randomModal').classList.add('show');
+}
+function closeRandom(){document.getElementById('randomModal').classList.remove('show');}
+document.getElementById('randomModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeRandom();});
+
+render();
+</script>
+</body></html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>გაიგე შენი ინგლისურის დონე! 🎯 | FluentGe</title>
+<meta name="description" content="სრული CEFR ტესტი A1-დან C1-მდე! 40 შეკითხვა, ადაპტური ალგორითმი.">
+<meta property="og:title" content="გაიგე შენი ინგლისურის დონე! 🎯">
+<meta property="og:description" content="40 შეკითხვიანი ადაპტური ტესტი — გაიგე შენი რეალური A1, A2, B1, B2 ან C1 დონე!">
+<meta property="og:url" content="https://fluentge.surge.sh/level-test/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f0f23;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
+.container{max-width:520px;width:100%;background:#1a1a3e;border-radius:20px;padding:32px 24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+h1{text-align:center;font-size:28px;margin-bottom:8px}
+.subtitle{text-align:center;color:#8888cc;margin-bottom:24px;font-size:14px}
+.progress{height:8px;background:#2a2a5a;border-radius:4px;margin-bottom:24px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,#6366f1,#8b5cf6);border-radius:4px;transition:width .3s}
+.question{font-size:18px;margin-bottom:20px;line-height:1.5}
+.hint{color:#8888cc;font-size:13px;margin-bottom:16px;font-style:italic}
+.options{display:flex;flex-direction:column;gap:10px}
+.option{padding:14px 18px;background:#2a2a5a;border:2px solid transparent;border-radius:12px;cursor:pointer;font-size:15px;transition:all .2s;text-align:left}
+.option:hover{background:#3a3a6a;border-color:#6366f1}
+.option.correct{background:#065f46;border-color:#10b981;animation:pulse .3s}
+.option.wrong{background:#7f1d1d;border-color:#ef4444;animation:shake .3s}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.result{text-align:center}
+.result h2{font-size:48px;margin-bottom:8px}
+.result .level{font-size:28px;color:#8b5cf6;font-weight:bold;margin-bottom:16px}
+.result .desc{color:#8888cc;margin-bottom:24px;line-height:1.6}
+.btn{display:block;width:100%;padding:16px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:12px;font-size:16px;font-weight:bold;cursor:pointer;text-decoration:none;text-align:center;margin-bottom:10px}
+.btn:hover{opacity:.9}
+.btn-outline{background:transparent;border:2px solid #6366f1;color:#6366f1}
+.share-btns{display:flex;gap:8px;margin-top:12px}
+.share-btns button{flex:1;padding:10px;border:none;border-radius:8px;cursor:pointer;font-size:13px;font-weight:bold}
+.share-fb{background:#1877f2;color:#fff}
+.share-tw{background:#000;color:#fff}
+.share-copy{background:#2a2a5a;color:#fff}
+.start{text-align:center}
+.start .emoji{font-size:64px;margin-bottom:16px}
+.start p{color:#8888cc;margin-bottom:24px;line-height:1.6}
+.hidden{display:none}
+.q-num{color:#6366f1;font-size:13px;font-weight:bold;margin-bottom:8px}
+.difficulty{color:#8b5cf6;font-size:12px;margin-top:4px}
+.features{background:#2a2a5a;border-radius:12px;padding:16px;margin-bottom:24px;font-size:14px}
+.features h3{color:#8b5cf6;margin-bottom:8px;font-size:16px}
+.features ul{list-style:none}
+.features li{margin:4px 0;color:#8888cc}
+.features li:before{content:"✓ ";color:#10b981;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- Start Screen -->
+<div id="start" class="start">
+<div class="emoji">🎯</div>
+<h1>გაიგე შენი ინგლისურის დონე!</h1>
+<p>სრული CEFR ტესტი A1-დან C1-მდე<br>40 შეკითხვა • 10 წუთი • ადაპტური ალგორითმი</p>
+
+<div class="features">
+<h3>ამ ტესტის თავისებურებები:</h3>
+<ul>
+<li>40 პროფესიონალურად შერჩეული შეკითხვა</li>
+<li>ადაპტური ალგორითმი — რთულდება შენი პასუხების მიხედვით</li>
+<li>ზუსტი CEFR დონის განსაზღვრა (A1, A2, B1, B2, C1)</li>
+<li>დეტალური ანალიზი და რეკომენდაციები</li>
+</ul>
+</div>
+
+<button class="btn" onclick="startTest()">ტესტის დაწყება →</button>
+<p style="margin-top:16px;font-size:12px;color:#666">FluentGe — ინგლისური ქართველებისთვის 🇬🇪</p>
+</div>
+
+<!-- Test Screen -->
+<div id="test" class="hidden">
+<div class="progress"><div class="progress-bar" id="prog"></div></div>
+<div class="q-num" id="qnum"></div>
+<div class="question" id="question"></div>
+<div class="hint" id="hint"></div>
+<div class="difficulty" id="difficulty"></div>
+<div class="options" id="options"></div>
+</div>
+
+<!-- Result Screen -->
+<div id="result" class="result hidden">
+<h2 id="score-emoji"></h2>
+<div class="level" id="level"></div>
+<div class="desc" id="desc"></div>
+<div style="background:#2a2a5a;border-radius:12px;padding:16px;margin:16px 0;text-align:left">
+<div style="color:#8b5cf6;font-weight:bold;margin-bottom:8px">შენი შედეგები:</div>
+<div id="breakdown" style="color:#8888cc;font-size:14px;line-height:1.5"></div>
+</div>
+<a href="https://fluentge.surge.sh" class="btn">🎮 ისწავლე უფასოდ FluentGe-ზე →</a>
+<a href="https://fluentge.surge.sh/grammar" class="btn btn-outline">📖 შენი დონის კურსები</a>
+<div class="share-btns">
+<button class="share-fb" onclick="shareFB()">Facebook</button>
+<button class="share-copy" onclick="copyResult()">📋 კოპირება</button>
+</div>
+</div>
+</div>
+
+<script>
+const questions=[
+// A1 Level (8 questions)
+{q:"I ___ a teacher.",o:["am","is","are","be"],a:0,h:"Verb 'to be' - first person",lvl:"A1"},
+{q:"She ___ to school every day.",o:["go","goes","going","gone"],a:1,h:"Present Simple - third person",lvl:"A1"},
+{q:"There ___ three apples on the table.",o:["is","are","was","were"],a:1,h:"There is/are - plural",lvl:"A1"},
+{q:"I ___ coffee every morning.",o:["drink","drinks","drinking","drunk"],a:0,h:"Present Simple - first person",lvl:"A1"},
+{q:"___ you like pizza?",o:["Do","Does","Are","Is"],a:0,h:"Present Simple question",lvl:"A1"},
+{q:"My brother is ___ than me.",o:["tall","taller","tallest","more tall"],a:1,h:"Comparative adjectives",lvl:"A1"},
+{q:"I ___ TV last night.",o:["watch","watched","watching","watches"],a:1,h:"Past Simple regular verb",lvl:"A1"},
+{q:"Can you ___ me the time?",o:["say","tell","speak","talk"],a:1,h:"Tell vs Say",lvl:"A1"},
+
+// A2 Level (8 questions)
+{q:"I ___ to Paris last year.",o:["go","went","have gone","going"],a:1,h:"Past Simple irregular verb",lvl:"A2"},
+{q:"If it ___ tomorrow, I'll stay home.",o:["rain","rains","will rain","rained"],a:1,h:"First Conditional",lvl:"A2"},
+{q:"She ___ her homework yet.",o:["didn't finish","hasn't finished","don't finish","isn't finishing"],a:1,h:"Present Perfect - negative",lvl:"A2"},
+{q:"I'm looking forward ___ you again.",o:["to see","to seeing","see","seeing"],a:1,h:"Look forward to + gerund",lvl:"A2"},
+{q:"The book ___ by millions of people.",o:["reads","is read","is reading","read"],a:1,h:"Passive Voice present",lvl:"A2"},
+{q:"I've been waiting ___ an hour.",o:["since","for","from","during"],a:1,h:"For vs Since with Present Perfect",lvl:"A2"},
+{q:"Could you speak ___, please?",o:["more slow","more slowly","slowlier","most slowly"],a:1,h:"Comparative adverbs",lvl:"A2"},
+{q:"I ___ play tennis when I was young.",o:["was used to","used to","use to","am used to"],a:1,h:"Used to for past habits",lvl:"A2"},
+
+// B1 Level (8 questions)
+{q:"By the time we arrived, they ___ already left.",o:["have","has","had","were"],a:2,h:"Past Perfect",lvl:"B1"},
+{q:"I wish I ___ more money.",o:["have","had","will have","would have"],a:1,h:"Wish + Past Simple",lvl:"B1"},
+{q:"The meeting ___ postponed until next week.",o:["has been","have been","was been","is been"],a:0,h:"Present Perfect Passive",lvl:"B1"},
+{q:"She acts ___ she knows everything.",o:["like","as","as if","such as"],a:2,h:"As if/as though",lvl:"B1"},
+{q:"I'd rather you ___ smoke in here.",o:["don't","didn't","won't","wouldn't"],a:1,h:"Would rather + past tense",lvl:"B1"},
+{q:"The harder you work, ___ you'll become.",o:["more successful","the more successful","most successful","the most successful"],a:1,h:"The + comparative... the + comparative",lvl:"B1"},
+{q:"I'm not used to ___ so early.",o:["wake up","waking up","wake","woke up"],a:1,h:"Be used to + gerund",lvl:"B1"},
+{q:"If I ___ you, I would apologize.",o:["am","was","were","will be"],a:2,h:"Second Conditional",lvl:"B1"},
+
+// B2 Level (8 questions)
+{q:"Not only ___ late, but he also forgot the documents.",o:["he was","was he","he is","is he"],a:1,h:"Inversion with negative adverbs",lvl:"B2"},
+{q:"The project will ___ by the deadline if we work overtime.",o:["complete","be completed","have completed","completing"],a:1,h:"Future Passive",lvl:"B2"},
+{q:"I ___ working by the time you arrive.",o:["will finish","will be finishing","will have finished","would finish"],a:2,h:"Future Perfect",lvl:"B2"},
+{q:"___ the weather, the event was a success.",o:["Despite","Although","However","Nevertheless"],a:0,h:"Despite vs Although",lvl:"B2"},
+{q:"She suggested ___ the meeting until Monday.",o:["to postpone","postponing","postpone","postponed"],a:1,h:"Suggest + gerund",lvl:"B2"},
+{q:"Had I known about the traffic, I ___ earlier.",o:["would leave","would have left","will leave","left"],a:1,h:"Third Conditional with inversion",lvl:"B2"},
+{q:"The new policy is ___ to reduce costs significantly.",o:["likely","probably","possibly","certainly"],a:0,h:"Likely to vs adverbs of probability",lvl:"B2"},
+{q:"Little ___ that this decision would change everything.",o:["he knew","did he know","he knows","does he know"],a:1,h:"Inversion with 'little'",lvl:"B2"},
+
+// C1 Level (8 questions)
+{q:"___ the circumstances, we had no choice but to comply.",o:["Given","Giving","Having given","Being given"],a:0,h:"Participle clause",lvl:"C1"},
+{q:"He speaks as though he ___ an expert, but he isn't.",o:["is","was","were","be"],a:2,h:"Subjunctive mood",lvl:"C1"},
+{q:"It's high time the government ___ action on climate change.",o:["takes","took","will take","take"],a:1,h:"It's time + past subjunctive",lvl:"C1"},
+{q:"The proposal ___ serious consideration before being rejected.",o:["was given","gave","had given","has given"],a:0,h:"Advanced passive constructions",lvl:"C1"},
+{q:"So impressed ___ with her work that they offered her a promotion.",o:["they were","were they","they are","are they"],a:1,h:"Inversion after 'so'",lvl:"C1"},
+{q:"The committee ___ the budget for next year.",o:["are deliberating","is deliberating","deliberates","deliberate"],a:1,h:"Collective nouns with singular verbs",lvl:"C1"},
+{q:"___ for his intervention, the situation would have been much worse.",o:["If it wasn't","Weren't it","Had it not been","If it hadn't been"],a:2,h:"Mixed conditionals with inversion",lvl:"C1"},
+{q:"The company's failure to adapt ___ its eventual downfall.",o:["precipitated","precipitating","has precipitated","was precipitating"],a:0,h:"Advanced vocabulary and verb forms",lvl:"C1"}
+];
+
+let current=0, correctAnswers=0, answered=false, currentLevel="A1", levelCounts={A1:0,A2:0,B1:0,B2:0,C1:0};
+let questionsAsked=[], adaptiveQueue=[];
+
+function initializeAdaptiveTest(){
+// Start with A1 questions
+questionsAsked=[];
+adaptiveQueue=questions.filter(q=>q.lvl==="A1").sort(()=>Math.random()-0.5);
+currentLevel="A1";
+}
+
+function getNextQuestion(){
+if(adaptiveQueue.length===0){
+// Move to next level or fill from current level
+const levels=["A1","A2","B1","B2","C1"];
+const currentIndex=levels.indexOf(currentLevel);
+if(currentIndex<levels.length-1){
+currentLevel=levels[currentIndex+1];
+adaptiveQueue=questions.filter(q=>q.lvl===currentLevel&&!questionsAsked.includes(q))
+.sort(()=>Math.random()-0.5);
+}else{
+// Fill with remaining questions
+adaptiveQueue=questions.filter(q=>!questionsAsked.includes(q)).sort(()=>Math.random()-0.5);
+}
+}
+return adaptiveQueue.shift();
+}
+
+function adjustDifficulty(isCorrect){
+const levels=["A1","A2","B1","B2","C1"];
+const currentIndex=levels.indexOf(currentLevel);
+
+if(isCorrect&&currentIndex<levels.length-1){
+// If answered correctly and not at highest level, consider moving up
+if(levelCounts[currentLevel]>=2){// After 2 correct in current level
+currentLevel=levels[currentIndex+1];
+adaptiveQueue=questions.filter(q=>q.lvl===currentLevel&&!questionsAsked.includes(q))
+.sort(()=>Math.random()-0.5);
+}
+}else if(!isCorrect&&currentIndex>0){
+// If answered incorrectly, consider moving down
+if(levelCounts[currentLevel]===0){// First question at this level was wrong
+currentLevel=levels[currentIndex-1];
+adaptiveQueue=questions.filter(q=>q.lvl===currentLevel&&!questionsAsked.includes(q))
+.sort(()=>Math.random()-0.5);
+}
+}
+}
+
+function startTest(){
+initializeAdaptiveTest();
+document.getElementById('start').classList.add('hidden');
+document.getElementById('test').classList.remove('hidden');
+showQuestion();
+}
+
+function showQuestion(){
+answered=false;
+const q=getNextQuestion();
+if(!q||current>=40){
+showResult();
+return;
+}
+questionsAsked.push(q);
+
+document.getElementById('prog').style.width=((current/40)*100)+'%';
+document.getElementById('qnum').textContent=`${current+1}/40`;
+document.getElementById('question').textContent=q.q;
+document.getElementById('hint').textContent=q.h;
+document.getElementById('difficulty').textContent=`დონე: ${q.lvl}`;
+
+const opts=document.getElementById('options');
+opts.innerHTML='';
+q.o.forEach((o,i)=>{
+const btn=document.createElement('button');
+btn.className='option';
+btn.textContent=o;
+btn.onclick=()=>selectAnswer(i,btn,q);
+opts.appendChild(btn);
+});
+}
+
+function selectAnswer(i,btn,q){
+if(answered)return;
+answered=true;
+const isCorrect=i===q.a;
+
+if(isCorrect){
+btn.classList.add('correct');
+correctAnswers++;
+levelCounts[q.lvl]++;
+}else{
+btn.classList.add('wrong');
+document.querySelectorAll('.option')[q.a].classList.add('correct');
+}
+
+adjustDifficulty(isCorrect);
+
+setTimeout(()=>{
+current++;
+showQuestion();
+},1200);
+}
+
+function calculateLevel(){
+const percentage=correctAnswers/40;
+const levelBreakdown=Object.entries(levelCounts);
+
+if(percentage>=0.85)return"C1";
+if(percentage>=0.75)return"B2";  
+if(percentage>=0.6)return"B1";
+if(percentage>=0.4)return"A2";
+return"A1";
+}
+
+function showResult(){
+document.getElementById('test').classList.add('hidden');
+document.getElementById('result').classList.remove('hidden');
+
+const finalLevel=calculateLevel();
+const percentage=Math.round((correctAnswers/40)*100);
+let emoji,desc;
+
+if(finalLevel==="A1"){
+emoji="🌱";
+desc="დამწყები დონე. კარგი დასაწყისია! ძირითადი გრამატიკა და ლექსიკა შესწავლე პირველ რიგში.";
+}else if(finalLevel==="A2"){
+emoji="📗";
+desc="ელემენტარული დონე. საფუძვლები კარგად იცი! ახლა უფრო რთული გრამატიკული სტრუქტურები დაიწყე.";
+}else if(finalLevel==="B1"){
+emoji="📘";
+desc="საშუალო დონე. შენ შეგიძლია ინგლისურზე კომუნიკაცია! ახლა სიზუსტეზე იმუშავე.";
+}else if(finalLevel==="B2"){
+emoji="🏆";
+desc="საშუალოზე მაღალი დონე. ძალიან კარგი! შეგიძლია თავისუფლად ისაუბრო და წერო.";
+}else{
+emoji="👑";
+desc="მაღალი დონე. შესანიშნავი! შენ თითქმის native speaker ხარ!";
+}
+
+document.getElementById('score-emoji').textContent=emoji;
+document.getElementById('level').textContent=`${finalLevel} დონე`;
+document.getElementById('desc').textContent=desc;
+
+let breakdown=`სულ სწორი პასუხები: ${correctAnswers}/40 (${percentage}%)<br><br>დონეების მიხედვით სწორი პასუხები:<br>`;
+Object.entries(levelCounts).forEach(([level,count])=>{
+const total=questions.filter(q=>q.lvl===level&&questionsAsked.includes(q)).length;
+if(total>0)breakdown+=`${level}: ${count}/${total}<br>`;
+});
+
+document.getElementById('breakdown').innerHTML=breakdown;
+}
+
+function shareFB(){
+window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://fluentge.surge.sh/level-test/'),'_blank')
+}
+
+function copyResult(){
+const level=document.getElementById('level').textContent;
+const txt=`🇬🇪 ჩემი ინგლისურის დონე: ${level}! (${correctAnswers}/40 სწორი)\n\nგაიგე შენი დონე: https://fluentge.surge.sh/level-test/\n\n#ინგლისური #FluentGe #ქართული`;
+navigator.clipboard.writeText(txt).then(()=>{
+document.querySelector('.share-copy').textContent='✅ დაკოპირდა!';
+setTimeout(()=>document.querySelector('.share-copy').textContent='📋 კოპირება',2000);
+});
+}
+</script>
+</body>
+</html>

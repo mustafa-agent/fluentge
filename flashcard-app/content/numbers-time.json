@@ -1,27 +1,227 @@
 [
-  {"english": "One", "georgian": "ერთი", "pronunciation": "/wʌn/", "example_en": "I have one brother.", "example_ka": "ერთი ძმა მყავს.", "category": "numbers", "level": "A1"},
-  {"english": "Two", "georgian": "ორი", "pronunciation": "/tuː/", "example_en": "There are two cats.", "example_ka": "ორი კატაა.", "category": "numbers", "level": "A1"},
-  {"english": "Three", "georgian": "სამი", "pronunciation": "/θriː/", "example_en": "I need three tickets.", "example_ka": "სამი ბილეთი მჭირდება.", "category": "numbers", "level": "A1"},
-  {"english": "Four", "georgian": "ოთხი", "pronunciation": "/fɔːr/", "example_en": "The table has four legs.", "example_ka": "მაგიდას ოთხი ფეხი აქვს.", "category": "numbers", "level": "A1"},
-  {"english": "Five", "georgian": "ხუთი", "pronunciation": "/faɪv/", "example_en": "Give me five minutes.", "example_ka": "ხუთი წუთი მომეცი.", "category": "numbers", "level": "A1"},
-  {"english": "Six", "georgian": "ექვსი", "pronunciation": "/sɪks/", "example_en": "There are six eggs.", "example_ka": "ექვსი კვერცხია.", "category": "numbers", "level": "A1"},
-  {"english": "Seven", "georgian": "შვიდი", "pronunciation": "/ˈsɛvən/", "example_en": "There are seven days in a week.", "example_ka": "კვირაში შვიდი დღეა.", "category": "numbers", "level": "A1"},
-  {"english": "Eight", "georgian": "რვა", "pronunciation": "/eɪt/", "example_en": "I wake up at eight.", "example_ka": "რვა საათზე ვიღვიძებ.", "category": "numbers", "level": "A1"},
-  {"english": "Nine", "georgian": "ცხრა", "pronunciation": "/naɪn/", "example_en": "The store closes at nine.", "example_ka": "მაღაზია ცხრაზე იხურება.", "category": "numbers", "level": "A1"},
-  {"english": "Ten", "georgian": "ათი", "pronunciation": "/tɛn/", "example_en": "I count to ten.", "example_ka": "ათამდე ვთვლი.", "category": "numbers", "level": "A1"},
-  {"english": "Twenty", "georgian": "ოცი", "pronunciation": "/ˈtwɛnti/", "example_en": "She is twenty years old.", "example_ka": "ის ოცი წლისაა.", "category": "numbers", "level": "A1"},
-  {"english": "Hundred", "georgian": "ასი", "pronunciation": "/ˈhʌndrəd/", "example_en": "There are a hundred students.", "example_ka": "ასი სტუდენტია.", "category": "numbers", "level": "A1"},
-  {"english": "Thousand", "georgian": "ათასი", "pronunciation": "/ˈθaʊzənd/", "example_en": "It costs a thousand lari.", "example_ka": "ათასი ლარი ღირს.", "category": "numbers", "level": "A1"},
-  {"english": "Time", "georgian": "დრო", "pronunciation": "/taɪm/", "example_en": "What time is it?", "example_ka": "რომელი საათია?", "category": "time", "level": "A1"},
-  {"english": "Hour", "georgian": "საათი", "pronunciation": "/aʊər/", "example_en": "I waited for one hour.", "example_ka": "ერთი საათი ვიცადე.", "category": "time", "level": "A1"},
-  {"english": "Minute", "georgian": "წუთი", "pronunciation": "/ˈmɪnɪt/", "example_en": "Wait a minute, please.", "example_ka": "ერთი წუთით მოიცადეთ, გთხოვთ.", "category": "time", "level": "A1"},
-  {"english": "Today", "georgian": "დღეს", "pronunciation": "/təˈdeɪ/", "example_en": "Today is a beautiful day.", "example_ka": "დღეს ლამაზი დღეა.", "category": "time", "level": "A1"},
-  {"english": "Tomorrow", "georgian": "ხვალ", "pronunciation": "/təˈmɒroʊ/", "example_en": "I will go tomorrow.", "example_ka": "ხვალ წავალ.", "category": "time", "level": "A1"},
-  {"english": "Yesterday", "georgian": "გუშინ", "pronunciation": "/ˈjɛstərdeɪ/", "example_en": "I saw her yesterday.", "example_ka": "გუშინ დავინახე.", "category": "time", "level": "A1"},
-  {"english": "Monday", "georgian": "ორშაბათი", "pronunciation": "/ˈmʌndeɪ/", "example_en": "Monday is the first day of the week.", "example_ka": "ორშაბათი კვირის პირველი დღეა.", "category": "time", "level": "A1"},
-  {"english": "Morning", "georgian": "დილა", "pronunciation": "/ˈmɔːrnɪŋ/", "example_en": "I exercise every morning.", "example_ka": "ყოველ დილით ვვარჯიშობ.", "category": "time", "level": "A1"},
-  {"english": "Evening", "georgian": "საღამო", "pronunciation": "/ˈiːvnɪŋ/", "example_en": "We eat dinner in the evening.", "example_ka": "საღამოს ვვახშმობთ.", "category": "time", "level": "A1"},
-  {"english": "Night", "georgian": "ღამე", "pronunciation": "/naɪt/", "example_en": "The night is very quiet.", "example_ka": "ღამე ძალიან მშვიდია.", "category": "time", "level": "A1"},
-  {"english": "Week", "georgian": "კვირა", "pronunciation": "/wiːk/", "example_en": "I work five days a week.", "example_ka": "კვირაში ხუთ დღეს ვმუშაობ.", "category": "time", "level": "A1"},
-  {"english": "Year", "georgian": "წელი", "pronunciation": "/jɪr/", "example_en": "This year I will learn English.", "example_ka": "წელს ინგლისურს ვისწავლი.", "category": "time", "level": "A1"}
+  {
+    "english": "One",
+    "georgian": "ერთი",
+    "pronunciation": "/wʌn/",
+    "example_en": "I have one brother.",
+    "example_ka": "ერთი ძმა მყავს.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Two",
+    "georgian": "ორი",
+    "pronunciation": "/tuː/",
+    "example_en": "There are two cats.",
+    "example_ka": "ორი კატაა.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Three",
+    "georgian": "სამი",
+    "pronunciation": "/θriː/",
+    "example_en": "I need three tickets.",
+    "example_ka": "სამი ბილეთი მჭირდება.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Four",
+    "georgian": "ოთხი",
+    "pronunciation": "/fɔːr/",
+    "example_en": "The table has four legs.",
+    "example_ka": "მაგიდას ოთხი ფეხი აქვს.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Five",
+    "georgian": "ხუთი",
+    "pronunciation": "/faɪv/",
+    "example_en": "Give me five minutes.",
+    "example_ka": "ხუთი წუთი მომეცი.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Six",
+    "georgian": "ექვსი",
+    "pronunciation": "/sɪks/",
+    "example_en": "There are six eggs.",
+    "example_ka": "ექვსი კვერცხია.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Seven",
+    "georgian": "შვიდი",
+    "pronunciation": "/ˈsɛvən/",
+    "example_en": "There are seven days in a week.",
+    "example_ka": "კვირაში შვიდი დღეა.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Eight",
+    "georgian": "რვა",
+    "pronunciation": "/eɪt/",
+    "example_en": "I wake up at eight.",
+    "example_ka": "რვა საათზე ვიღვიძებ.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Nine",
+    "georgian": "ცხრა",
+    "pronunciation": "/naɪn/",
+    "example_en": "The store closes at nine.",
+    "example_ka": "მაღაზია ცხრაზე იხურება.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Ten",
+    "georgian": "ათი",
+    "pronunciation": "/tɛn/",
+    "example_en": "I count to ten.",
+    "example_ka": "ათამდე ვთვლი.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Twenty",
+    "georgian": "ოცი",
+    "pronunciation": "/ˈtwɛnti/",
+    "example_en": "She is twenty years old.",
+    "example_ka": "ის ოცი წლისაა.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Hundred",
+    "georgian": "ასი",
+    "pronunciation": "/ˈhʌndrəd/",
+    "example_en": "There are a hundred students.",
+    "example_ka": "ასი სტუდენტია.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Thousand",
+    "georgian": "ათასი",
+    "pronunciation": "/ˈθaʊzənd/",
+    "example_en": "It costs a thousand lari.",
+    "example_ka": "ათასი ლარი ღირს.",
+    "category": "numbers",
+    "level": "A1"
+  },
+  {
+    "english": "Time",
+    "georgian": "დრო",
+    "pronunciation": "/taɪm/",
+    "example_en": "What time is it?",
+    "example_ka": "რომელი საათია?",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Hour",
+    "georgian": "საათი",
+    "pronunciation": "/aʊər/",
+    "example_en": "I waited for one hour.",
+    "example_ka": "ერთი საათი ვიცადე.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Minute",
+    "georgian": "წუთი",
+    "pronunciation": "/ˈmɪnɪt/",
+    "example_en": "Wait a minute, please.",
+    "example_ka": "ერთი წუთით მოიცადეთ, გთხოვთ.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Today",
+    "georgian": "დღეს",
+    "pronunciation": "/təˈdeɪ/",
+    "example_en": "Today is a beautiful day.",
+    "example_ka": "დღეს ლამაზი დღეა.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Tomorrow",
+    "georgian": "ხვალ",
+    "pronunciation": "/təˈmɒroʊ/",
+    "example_en": "I will go tomorrow.",
+    "example_ka": "ხვალ წავალ.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Yesterday",
+    "georgian": "გუშინ",
+    "pronunciation": "/ˈjɛstərdeɪ/",
+    "example_en": "I saw her yesterday.",
+    "example_ka": "გუშინ დავინახე.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Monday",
+    "georgian": "ორშაბათი",
+    "pronunciation": "/ˈmʌndeɪ/",
+    "example_en": "Monday is the first day of the week.",
+    "example_ka": "ორშაბათი კვირის პირველი დღეა.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Morning",
+    "georgian": "დილა",
+    "pronunciation": "/ˈmɔːrnɪŋ/",
+    "example_en": "I exercise every morning.",
+    "example_ka": "ყოველ დილით ვვარჯიშობ.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Evening",
+    "georgian": "საღამო",
+    "pronunciation": "/ˈiːvnɪŋ/",
+    "example_en": "We eat dinner in the evening.",
+    "example_ka": "საღამოს ვვახშმობთ.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Night",
+    "georgian": "ღამე",
+    "pronunciation": "/naɪt/",
+    "example_en": "The night is very quiet.",
+    "example_ka": "ღამე ძალიან მშვიდია.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Week",
+    "georgian": "კვირა",
+    "pronunciation": "/wiːk/",
+    "example_en": "I work five days a week.",
+    "example_ka": "კვირაში ხუთ დღეს ვმუშაობ.",
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "english": "Year",
+    "georgian": "წელი",
+    "pronunciation": "/jɪr/",
+    "example_en": "This year I will learn English.",
+    "example_ka": "წელს ინგლისურს ვისწავლი.",
+    "category": "time",
+    "level": "A1"
+  }
 ]

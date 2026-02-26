@@ -103,7 +103,7 @@ function speak(text: string, lang: 'en' | 'ka') {
 
 // Check premium status
 function isPremiumUser(): boolean {
-  return localStorage.getItem('fluentge_premium') === 'true';
+  return localStorage.getItem('fluentge-premium') === 'true';
 }
 
 export default function Phrasebook({ onBack }: { onBack: () => void }) {

@@ -1,42 +1,362 @@
 [
-  {"english":"gym","georgian":"სპორტდარბაზი","pronunciation":"/dʒɪm/","example_en":"I go to the gym every day.","example_ka":"ყოველდღე სპორტდარბაზში დავდივარ.","category":"gym-fitness","level":"beginner"},
-  {"english":"workout","georgian":"ვარჯიში","pronunciation":"/ˈwɜːrkaʊt/","example_en":"That was a great workout!","example_ka":"შესანიშნავი ვარჯიში იყო!","category":"gym-fitness","level":"beginner"},
-  {"english":"to exercise","georgian":"ვარჯიში","pronunciation":"/tə ˈeksərsaɪz/","example_en":"You should exercise regularly.","example_ka":"რეგულარულად უნდა ივარჯიშო.","category":"gym-fitness","level":"beginner"},
-  {"english":"warm-up","georgian":"გახურება","pronunciation":"/ˈwɔːrm ʌp/","example_en":"Always do a warm-up before training.","example_ka":"ვარჯიშის წინ ყოველთვის გაიხურე.","category":"gym-fitness","level":"beginner"},
-  {"english":"cool-down","georgian":"გაგრილება","pronunciation":"/ˈkuːl daʊn/","example_en":"Don't forget the cool-down after your workout.","example_ka":"ვარჯიშის შემდეგ გაგრილება არ დაგავიწყდეს.","category":"gym-fitness","level":"beginner"},
-  {"english":"push-up","georgian":"ხელის ბრუნვა","pronunciation":"/ˈpʊʃ ʌp/","example_en":"I can do 50 push-ups.","example_ka":"50 ხელის ბრუნვა შემიძლია.","category":"gym-fitness","level":"beginner"},
-  {"english":"squat","georgian":"სქუატი","pronunciation":"/skwɒt/","example_en":"Squats are great for your legs.","example_ka":"სქუატი ფეხებისთვის შესანიშნავია.","category":"gym-fitness","level":"beginner"},
-  {"english":"pull-up","georgian":"შეკვრა","pronunciation":"/ˈpʊl ʌp/","example_en":"Pull-ups build your back muscles.","example_ka":"შეკვრა ზურგის კუნთებს აძლიერებს.","category":"gym-fitness","level":"beginner"},
-  {"english":"dumbbell","georgian":"ჰანტელი","pronunciation":"/ˈdʌmbel/","example_en":"I lifted 20kg dumbbells today.","example_ka":"დღეს 20კგ ჰანტელი ავწიე.","category":"gym-fitness","level":"beginner"},
-  {"english":"barbell","georgian":"შტანგა","pronunciation":"/ˈbɑːrbel/","example_en":"Put more weight on the barbell.","example_ka":"შტანგაზე მეტი წონა დადე.","category":"gym-fitness","level":"beginner"},
-  {"english":"bench press","georgian":"ბენჩ პრესი","pronunciation":"/bentʃ pres/","example_en":"My bench press max is 80kg.","example_ka":"ჩემი ბენჩ პრესის მაქსიმუმი 80კგ-ია.","category":"gym-fitness","level":"beginner"},
-  {"english":"deadlift","georgian":"დედლიფტი","pronunciation":"/ˈdedlɪft/","example_en":"Deadlifts work your whole body.","example_ka":"დედლიფტი მთელ სხეულს ავარჯიშებს.","category":"gym-fitness","level":"intermediate"},
-  {"english":"set","georgian":"სეტი","pronunciation":"/set/","example_en":"Do 3 sets of 12 reps.","example_ka":"გააკეთე 3 სეტი 12 გამეორებით.","category":"gym-fitness","level":"beginner"},
-  {"english":"rep","georgian":"გამეორება","pronunciation":"/rep/","example_en":"How many reps did you do?","example_ka":"რამდენი გამეორება გააკეთე?","category":"gym-fitness","level":"beginner"},
-  {"english":"rest","georgian":"დასვენება","pronunciation":"/rest/","example_en":"Rest 60 seconds between sets.","example_ka":"სეტებს შორის 60 წამი დაისვენე.","category":"gym-fitness","level":"beginner"},
-  {"english":"cardio","georgian":"კარდიო","pronunciation":"/ˈkɑːrdioʊ/","example_en":"I do 30 minutes of cardio.","example_ka":"30 წუთი კარდიოს ვაკეთებ.","category":"gym-fitness","level":"beginner"},
-  {"english":"treadmill","georgian":"სარბენი ბილიკი","pronunciation":"/ˈtredmɪl/","example_en":"I ran 5km on the treadmill.","example_ka":"სარბენ ბილიკზე 5კმ გავირბინე.","category":"gym-fitness","level":"beginner"},
-  {"english":"muscle","georgian":"კუნთი","pronunciation":"/ˈmʌsl/","example_en":"My muscles are sore after yesterday.","example_ka":"გუშინდელი ვარჯიშის შემდეგ კუნთები მტკივა.","category":"gym-fitness","level":"beginner"},
-  {"english":"protein","georgian":"პროტეინი","pronunciation":"/ˈproʊtiːn/","example_en":"Eat more protein to build muscle.","example_ka":"კუნთების ზრდისთვის მეტი პროტეინი მიირთვი.","category":"gym-fitness","level":"beginner"},
-  {"english":"stretching","georgian":"გაჭიმვა","pronunciation":"/ˈstretʃɪŋ/","example_en":"Stretching prevents injuries.","example_ka":"გაჭიმვა ტრავმებს თავიდან აგაცილებს.","category":"gym-fitness","level":"beginner"},
-  {"english":"personal trainer","georgian":"პერსონალური მწვრთნელი","pronunciation":"/ˈpɜːrsənl ˈtreɪnər/","example_en":"My personal trainer showed me the right form.","example_ka":"პერსონალურმა მწვრთნელმა სწორი ფორმა მაჩვენა.","category":"gym-fitness","level":"beginner"},
-  {"english":"abs","georgian":"მუცლის კუნთები","pronunciation":"/æbz/","example_en":"I train abs every other day.","example_ka":"მუცლის კუნთებს ყოველ მეორე დღე ვავარჯიშებ.","category":"gym-fitness","level":"beginner"},
-  {"english":"biceps","georgian":"ბიცეპსი","pronunciation":"/ˈbaɪseps/","example_en":"Curls work your biceps.","example_ka":"კერლები ბიცეპსს ავარჯიშებს.","category":"gym-fitness","level":"beginner"},
-  {"english":"chest","georgian":"მკერდი","pronunciation":"/tʃest/","example_en":"Monday is chest day.","example_ka":"ორშაბათი მკერდის დღეა.","category":"gym-fitness","level":"beginner"},
-  {"english":"back","georgian":"ზურგი","pronunciation":"/bæk/","example_en":"I trained back and shoulders today.","example_ka":"დღეს ზურგი და მხრები ვავარჯიშე.","category":"gym-fitness","level":"beginner"},
-  {"english":"shoulders","georgian":"მხრები","pronunciation":"/ˈʃoʊldərz/","example_en":"Shoulder press is my favorite exercise.","example_ka":"მხრის პრესი ჩემი საყვარელი ვარჯიშია.","category":"gym-fitness","level":"beginner"},
-  {"english":"legs","georgian":"ფეხები","pronunciation":"/leɡz/","example_en":"Never skip leg day!","example_ka":"ფეხის დღე არასოდეს გამოტოვო!","category":"gym-fitness","level":"beginner"},
-  {"english":"to lift","georgian":"აწევა","pronunciation":"/tə lɪft/","example_en":"How much can you lift?","example_ka":"რამდენი შეგიძლია აიწიო?","category":"gym-fitness","level":"beginner"},
-  {"english":"weight","georgian":"წონა","pronunciation":"/weɪt/","example_en":"Add more weight to the bar.","example_ka":"შტანგაზე მეტი წონა დაამატე.","category":"gym-fitness","level":"beginner"},
-  {"english":"bodybuilding","georgian":"ბოდიბილდინგი","pronunciation":"/ˈbɒdiˌbɪldɪŋ/","example_en":"He has been doing bodybuilding for 5 years.","example_ka":"ბოდიბილდინგით 5 წელია მუშაობს.","category":"gym-fitness","level":"beginner"},
-  {"english":"MMA","georgian":"შერეული საბრძოლო ხელოვნება","pronunciation":"/em em eɪ/","example_en":"I train MMA three times a week.","example_ka":"კვირაში სამჯერ შერეულ საბრძოლო ხელოვნებას ვვარჯიშობ.","category":"gym-fitness","level":"beginner"},
-  {"english":"to punch","georgian":"დარტყმა","pronunciation":"/tə pʌntʃ/","example_en":"He punched the bag hard.","example_ka":"ტომარას ძლიერად დაარტყა.","category":"gym-fitness","level":"beginner"},
-  {"english":"to kick","georgian":"წიხლის ჩარტყმა","pronunciation":"/tə kɪk/","example_en":"She can kick very high.","example_ka":"ძალიან მაღლა შეუძლია წიხლის ჩარტყმა.","category":"gym-fitness","level":"beginner"},
-  {"english":"sparring","georgian":"სპარინგი","pronunciation":"/ˈspɑːrɪŋ/","example_en":"We did sparring for 30 minutes.","example_ka":"30 წუთი სპარინგი გავაკეთეთ.","category":"gym-fitness","level":"intermediate"},
-  {"english":"recovery","georgian":"აღდგენა","pronunciation":"/rɪˈkʌvəri/","example_en":"Recovery is just as important as training.","example_ka":"აღდგენა ისეთივე მნიშვნელოვანია, როგორც ვარჯიში.","category":"gym-fitness","level":"intermediate"},
-  {"english":"progress","georgian":"პროგრესი","pronunciation":"/ˈprɒɡres/","example_en":"I can see real progress in my strength.","example_ka":"ძალაში ნამდვილი პროგრესი ჩანს.","category":"gym-fitness","level":"beginner"},
-  {"english":"motivation","georgian":"მოტივაცია","pronunciation":"/ˌmoʊtɪˈveɪʃn/","example_en":"Stay motivated and never give up!","example_ka":"იყავი მოტივირებული და არასოდეს დანებდე!","category":"gym-fitness","level":"beginner"},
-  {"english":"discipline","georgian":"დისციპლინა","pronunciation":"/ˈdɪsɪplɪn/","example_en":"Discipline beats motivation.","example_ka":"დისციპლინა მოტივაციას სჯობს.","category":"gym-fitness","level":"intermediate"},
-  {"english":"supplement","georgian":"დანამატი","pronunciation":"/ˈsʌplɪmənt/","example_en":"Do you take any supplements?","example_ka":"რამე დანამატს იღებ?","category":"gym-fitness","level":"intermediate"},
-  {"english":"calorie","georgian":"კალორია","pronunciation":"/ˈkæləri/","example_en":"This meal has 500 calories.","example_ka":"ამ კერძში 500 კალორიაა.","category":"gym-fitness","level":"beginner"}
+  {
+    "english": "gym",
+    "georgian": "სპორტდარბაზი",
+    "pronunciation": "/dʒɪm/",
+    "example_en": "I go to the gym every day.",
+    "example_ka": "ყოველდღე სპორტდარბაზში დავდივარ.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "workout",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈwɜːrkaʊt/",
+    "example_en": "That was a great workout!",
+    "example_ka": "შესანიშნავი ვარჯიში იყო!",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "to exercise",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/tə ˈeksərsaɪz/",
+    "example_en": "You should exercise regularly.",
+    "example_ka": "რეგულარულად უნდა ივარჯიშო.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "warm-up",
+    "georgian": "გახურება",
+    "pronunciation": "/ˈwɔːrm ʌp/",
+    "example_en": "Always do a warm-up before training.",
+    "example_ka": "ვარჯიშის წინ ყოველთვის გაიხურე.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "cool-down",
+    "georgian": "გაგრილება",
+    "pronunciation": "/ˈkuːl daʊn/",
+    "example_en": "Don't forget the cool-down after your workout.",
+    "example_ka": "ვარჯიშის შემდეგ გაგრილება არ დაგავიწყდეს.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "push-up",
+    "georgian": "ხელის ბრუნვა",
+    "pronunciation": "/ˈpʊʃ ʌp/",
+    "example_en": "I can do 50 push-ups.",
+    "example_ka": "50 ხელის ბრუნვა შემიძლია.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "squat",
+    "georgian": "სქუატი",
+    "pronunciation": "/skwɒt/",
+    "example_en": "Squats are great for your legs.",
+    "example_ka": "სქუატი ფეხებისთვის შესანიშნავია.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "pull-up",
+    "georgian": "შეკვრა",
+    "pronunciation": "/ˈpʊl ʌp/",
+    "example_en": "Pull-ups build your back muscles.",
+    "example_ka": "შეკვრა ზურგის კუნთებს აძლიერებს.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "dumbbell",
+    "georgian": "ჰანტელი",
+    "pronunciation": "/ˈdʌmbel/",
+    "example_en": "I lifted 20kg dumbbells today.",
+    "example_ka": "დღეს 20კგ ჰანტელი ავწიე.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "barbell",
+    "georgian": "შტანგა",
+    "pronunciation": "/ˈbɑːrbel/",
+    "example_en": "Put more weight on the barbell.",
+    "example_ka": "შტანგაზე მეტი წონა დადე.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "bench press",
+    "georgian": "ბენჩ პრესი",
+    "pronunciation": "/bentʃ pres/",
+    "example_en": "My bench press max is 80kg.",
+    "example_ka": "ჩემი ბენჩ პრესის მაქსიმუმი 80კგ-ია.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "deadlift",
+    "georgian": "დედლიფტი",
+    "pronunciation": "/ˈdedlɪft/",
+    "example_en": "Deadlifts work your whole body.",
+    "example_ka": "დედლიფტი მთელ სხეულს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "intermediate"
+  },
+  {
+    "english": "set",
+    "georgian": "სეტი",
+    "pronunciation": "/set/",
+    "example_en": "Do 3 sets of 12 reps.",
+    "example_ka": "გააკეთე 3 სეტი 12 გამეორებით.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "rep",
+    "georgian": "გამეორება",
+    "pronunciation": "/rep/",
+    "example_en": "How many reps did you do?",
+    "example_ka": "რამდენი გამეორება გააკეთე?",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "rest",
+    "georgian": "დასვენება",
+    "pronunciation": "/rest/",
+    "example_en": "Rest 60 seconds between sets.",
+    "example_ka": "სეტებს შორის 60 წამი დაისვენე.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "cardio",
+    "georgian": "კარდიო",
+    "pronunciation": "/ˈkɑːrdioʊ/",
+    "example_en": "I do 30 minutes of cardio.",
+    "example_ka": "30 წუთი კარდიოს ვაკეთებ.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "treadmill",
+    "georgian": "სარბენი ბილიკი",
+    "pronunciation": "/ˈtredmɪl/",
+    "example_en": "I ran 5km on the treadmill.",
+    "example_ka": "სარბენ ბილიკზე 5კმ გავირბინე.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "muscle",
+    "georgian": "კუნთი",
+    "pronunciation": "/ˈmʌsl/",
+    "example_en": "My muscles are sore after yesterday.",
+    "example_ka": "გუშინდელი ვარჯიშის შემდეგ კუნთები მტკივა.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "protein",
+    "georgian": "პროტეინი",
+    "pronunciation": "/ˈproʊtiːn/",
+    "example_en": "Eat more protein to build muscle.",
+    "example_ka": "კუნთების ზრდისთვის მეტი პროტეინი მიირთვი.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "stretching",
+    "georgian": "გაჭიმვა",
+    "pronunciation": "/ˈstretʃɪŋ/",
+    "example_en": "Stretching prevents injuries.",
+    "example_ka": "გაჭიმვა ტრავმებს თავიდან აგაცილებს.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "personal trainer",
+    "georgian": "პერსონალური მწვრთნელი",
+    "pronunciation": "/ˈpɜːrsənl ˈtreɪnər/",
+    "example_en": "My personal trainer showed me the right form.",
+    "example_ka": "პერსონალურმა მწვრთნელმა სწორი ფორმა მაჩვენა.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "abs",
+    "georgian": "მუცლის კუნთები",
+    "pronunciation": "/æbz/",
+    "example_en": "I train abs every other day.",
+    "example_ka": "მუცლის კუნთებს ყოველ მეორე დღე ვავარჯიშებ.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "biceps",
+    "georgian": "ბიცეპსი",
+    "pronunciation": "/ˈbaɪseps/",
+    "example_en": "Curls work your biceps.",
+    "example_ka": "კერლები ბიცეპსს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "chest",
+    "georgian": "მკერდი",
+    "pronunciation": "/tʃest/",
+    "example_en": "Monday is chest day.",
+    "example_ka": "ორშაბათი მკერდის დღეა.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "back",
+    "georgian": "ზურგი",
+    "pronunciation": "/bæk/",
+    "example_en": "I trained back and shoulders today.",
+    "example_ka": "დღეს ზურგი და მხრები ვავარჯიშე.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "shoulders",
+    "georgian": "მხრები",
+    "pronunciation": "/ˈʃoʊldərz/",
+    "example_en": "Shoulder press is my favorite exercise.",
+    "example_ka": "მხრის პრესი ჩემი საყვარელი ვარჯიშია.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "legs",
+    "georgian": "ფეხები",
+    "pronunciation": "/leɡz/",
+    "example_en": "Never skip leg day!",
+    "example_ka": "ფეხის დღე არასოდეს გამოტოვო!",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "to lift",
+    "georgian": "აწევა",
+    "pronunciation": "/tə lɪft/",
+    "example_en": "How much can you lift?",
+    "example_ka": "რამდენი შეგიძლია აიწიო?",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "weight",
+    "georgian": "წონა",
+    "pronunciation": "/weɪt/",
+    "example_en": "Add more weight to the bar.",
+    "example_ka": "შტანგაზე მეტი წონა დაამატე.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "bodybuilding",
+    "georgian": "ბოდიბილდინგი",
+    "pronunciation": "/ˈbɒdiˌbɪldɪŋ/",
+    "example_en": "He has been doing bodybuilding for 5 years.",
+    "example_ka": "ბოდიბილდინგით 5 წელია მუშაობს.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "MMA",
+    "georgian": "შერეული საბრძოლო ხელოვნება",
+    "pronunciation": "/em em eɪ/",
+    "example_en": "I train MMA three times a week.",
+    "example_ka": "კვირაში სამჯერ შერეულ საბრძოლო ხელოვნებას ვვარჯიშობ.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "to punch",
+    "georgian": "დარტყმა",
+    "pronunciation": "/tə pʌntʃ/",
+    "example_en": "He punched the bag hard.",
+    "example_ka": "ტომარას ძლიერად დაარტყა.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "to kick",
+    "georgian": "წიხლის ჩარტყმა",
+    "pronunciation": "/tə kɪk/",
+    "example_en": "She can kick very high.",
+    "example_ka": "ძალიან მაღლა შეუძლია წიხლის ჩარტყმა.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "sparring",
+    "georgian": "სპარინგი",
+    "pronunciation": "/ˈspɑːrɪŋ/",
+    "example_en": "We did sparring for 30 minutes.",
+    "example_ka": "30 წუთი სპარინგი გავაკეთეთ.",
+    "category": "gym-fitness",
+    "level": "intermediate"
+  },
+  {
+    "english": "recovery",
+    "georgian": "აღდგენა",
+    "pronunciation": "/rɪˈkʌvəri/",
+    "example_en": "Recovery is just as important as training.",
+    "example_ka": "აღდგენა ისეთივე მნიშვნელოვანია, როგორც ვარჯიში.",
+    "category": "gym-fitness",
+    "level": "intermediate"
+  },
+  {
+    "english": "progress",
+    "georgian": "პროგრესი",
+    "pronunciation": "/ˈprɒɡres/",
+    "example_en": "I can see real progress in my strength.",
+    "example_ka": "ძალაში ნამდვილი პროგრესი ჩანს.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "motivation",
+    "georgian": "მოტივაცია",
+    "pronunciation": "/ˌmoʊtɪˈveɪʃn/",
+    "example_en": "Stay motivated and never give up!",
+    "example_ka": "იყავი მოტივირებული და არასოდეს დანებდე!",
+    "category": "gym-fitness",
+    "level": "beginner"
+  },
+  {
+    "english": "discipline",
+    "georgian": "დისციპლინა",
+    "pronunciation": "/ˈdɪsɪplɪn/",
+    "example_en": "Discipline beats motivation.",
+    "example_ka": "დისციპლინა მოტივაციას სჯობს.",
+    "category": "gym-fitness",
+    "level": "intermediate"
+  },
+  {
+    "english": "supplement",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈsʌplɪmənt/",
+    "example_en": "Do you take any supplements?",
+    "example_ka": "რამე დანამატს იღებ?",
+    "category": "gym-fitness",
+    "level": "intermediate"
+  },
+  {
+    "english": "calorie",
+    "georgian": "კალორია",
+    "pronunciation": "/ˈkæləri/",
+    "example_en": "This meal has 500 calories.",
+    "example_ka": "ამ კერძში 500 კალორიაა.",
+    "category": "gym-fitness",
+    "level": "beginner"
+  }
 ]

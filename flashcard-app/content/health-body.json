@@ -1,82 +1,722 @@
 [
-  {"english":"head","georgian":"თავი","pronunciation":"/hed/","example_en":"My head hurts.","example_ka":"თავი მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"face","georgian":"სახე","pronunciation":"/feɪs/","example_en":"She has a beautiful face.","example_ka":"მას ლამაზი სახე აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"eye","georgian":"თვალი","pronunciation":"/aɪ/","example_en":"She has blue eyes.","example_ka":"მას ლურჯი თვალები აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"ear","georgian":"ყური","pronunciation":"/ɪər/","example_en":"My ear hurts.","example_ka":"ყური მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"nose","georgian":"ცხვირი","pronunciation":"/nəʊz/","example_en":"His nose is bleeding.","example_ka":"ცხვირიდან სისხლი სდის.","category":"health-body","level":"intermediate"},
-  {"english":"mouth","georgian":"პირი","pronunciation":"/maʊθ/","example_en":"Open your mouth.","example_ka":"პირი გააღეთ.","category":"health-body","level":"intermediate"},
-  {"english":"tooth","georgian":"კბილი","pronunciation":"/tuːθ/","example_en":"I have a toothache.","example_ka":"კბილი მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"tongue","georgian":"ენა","pronunciation":"/tʌŋ/","example_en":"Show me your tongue.","example_ka":"ენა მაჩვენეთ.","category":"health-body","level":"intermediate"},
-  {"english":"throat","georgian":"ყელი","pronunciation":"/θrəʊt/","example_en":"I have a sore throat.","example_ka":"ყელი მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"neck","georgian":"კისერი","pronunciation":"/nek/","example_en":"My neck is stiff.","example_ka":"კისერი გამიჯერდა.","category":"health-body","level":"intermediate"},
-  {"english":"shoulder","georgian":"მხარი","pronunciation":"/ˈʃəʊldər/","example_en":"He hurt his shoulder.","example_ka":"მხარი დაიზიანა.","category":"health-body","level":"intermediate"},
-  {"english":"arm","georgian":"მკლავი","pronunciation":"/ɑːrm/","example_en":"She broke her arm.","example_ka":"მკლავი მოიტეხა.","category":"health-body","level":"intermediate"},
-  {"english":"elbow","georgian":"იდაყვი","pronunciation":"/ˈelbəʊ/","example_en":"I hit my elbow on the table.","example_ka":"იდაყვი მაგიდას მოვარტყი.","category":"health-body","level":"intermediate"},
-  {"english":"hand","georgian":"ხელი","pronunciation":"/hænd/","example_en":"Wash your hands.","example_ka":"ხელები დაიბანეთ.","category":"health-body","level":"intermediate"},
-  {"english":"finger","georgian":"თითი","pronunciation":"/ˈfɪŋɡər/","example_en":"I cut my finger.","example_ka":"თითი გავიჭერი.","category":"health-body","level":"intermediate"},
-  {"english":"chest","georgian":"გულმკერდი","pronunciation":"/tʃest/","example_en":"He has chest pain.","example_ka":"გულმკერდის ტკივილი აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"back","georgian":"ზურგი","pronunciation":"/bæk/","example_en":"My back hurts.","example_ka":"ზურგი მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"stomach","georgian":"კუჭი","pronunciation":"/ˈstʌmək/","example_en":"I have a stomachache.","example_ka":"კუჭი მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"leg","georgian":"ფეხი","pronunciation":"/leɡ/","example_en":"He broke his leg.","example_ka":"ფეხი მოიტეხა.","category":"health-body","level":"intermediate"},
-  {"english":"knee","georgian":"მუხლი","pronunciation":"/niː/","example_en":"My knee hurts when I walk.","example_ka":"სიარულისას მუხლი მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"foot","georgian":"ტერფი","pronunciation":"/fʊt/","example_en":"I stepped on something with my foot.","example_ka":"ტერფით რაღაცას დავადექი.","category":"health-body","level":"intermediate"},
-  {"english":"skin","georgian":"კანი","pronunciation":"/skɪn/","example_en":"She has sensitive skin.","example_ka":"მას მგრძნობიარე კანი აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"bone","georgian":"ძვალი","pronunciation":"/bəʊn/","example_en":"He broke a bone in his hand.","example_ka":"ხელში ძვალი მოიტეხა.","category":"health-body","level":"intermediate"},
-  {"english":"muscle","georgian":"კუნთი","pronunciation":"/ˈmʌsəl/","example_en":"My muscles are sore after exercise.","example_ka":"ვარჯიშის შემდეგ კუნთები მტკივა.","category":"health-body","level":"intermediate"},
-  {"english":"blood","georgian":"სისხლი","pronunciation":"/blʌd/","example_en":"The doctor took a blood sample.","example_ka":"ექიმმა სისხლის ანალიზი აიღო.","category":"health-body","level":"intermediate"},
-  {"english":"heart","georgian":"გული","pronunciation":"/hɑːrt/","example_en":"His heart is beating fast.","example_ka":"გული სწრაფად უცემს.","category":"health-body","level":"intermediate"},
-  {"english":"brain","georgian":"ტვინი","pronunciation":"/breɪn/","example_en":"The brain controls the body.","example_ka":"ტვინი სხეულს მართავს.","category":"health-body","level":"intermediate"},
-  {"english":"lung","georgian":"ფილტვი","pronunciation":"/lʌŋ/","example_en":"Smoking damages your lungs.","example_ka":"მოწევა ფილტვებს აზიანებს.","category":"health-body","level":"intermediate"},
-  {"english":"liver","georgian":"ღვიძლი","pronunciation":"/ˈlɪvər/","example_en":"Alcohol is bad for the liver.","example_ka":"ალკოჰოლი ღვიძლისთვის მავნეა.","category":"health-body","level":"intermediate"},
-  {"english":"kidney","georgian":"თირკმელი","pronunciation":"/ˈkɪdni/","example_en":"He has kidney problems.","example_ka":"მას თირკმელის პრობლემები აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"healthy","georgian":"ჯანმრთელი","pronunciation":"/ˈhelθi/","example_en":"Eating fruit is healthy.","example_ka":"ხილის ჭამა ჯანმრთელია.","category":"health-body","level":"intermediate"},
-  {"english":"sick","georgian":"ავად","pronunciation":"/sɪk/","example_en":"I feel sick today.","example_ka":"დღეს ავად ვარ.","category":"health-body","level":"intermediate"},
-  {"english":"disease","georgian":"დაავადება","pronunciation":"/dɪˈziːz/","example_en":"Heart disease is very common.","example_ka":"გულის დაავადება ძალიან გავრცელებულია.","category":"health-body","level":"intermediate"},
-  {"english":"illness","georgian":"ავადმყოფობა","pronunciation":"/ˈɪlnəs/","example_en":"He recovered from a long illness.","example_ka":"ის ხანგრძლივი ავადმყოფობისგან გამოჯანმრთელდა.","category":"health-body","level":"intermediate"},
-  {"english":"fever","georgian":"ცხელება","pronunciation":"/ˈfiːvər/","example_en":"She has a high fever.","example_ka":"მას მაღალი ცხელება აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"cough","georgian":"ხველა","pronunciation":"/kɒf/","example_en":"I have a bad cough.","example_ka":"ძლიერი ხველა მაქვს.","category":"health-body","level":"intermediate"},
-  {"english":"cold","georgian":"გაციება","pronunciation":"/kəʊld/","example_en":"I caught a cold.","example_ka":"გავცივდი.","category":"health-body","level":"intermediate"},
-  {"english":"flu","georgian":"გრიპი","pronunciation":"/fluː/","example_en":"The flu is spreading quickly.","example_ka":"გრიპი სწრაფად ვრცელდება.","category":"health-body","level":"intermediate"},
-  {"english":"allergy","georgian":"ალერგია","pronunciation":"/ˈælərdʒi/","example_en":"I have a pollen allergy.","example_ka":"მტვრის ალერგია მაქვს.","category":"health-body","level":"intermediate"},
-  {"english":"infection","georgian":"ინფექცია","pronunciation":"/ɪnˈfekʃən/","example_en":"The wound has an infection.","example_ka":"ჭრილობას ინფექცია აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"pain","georgian":"ტკივილი","pronunciation":"/peɪn/","example_en":"I feel pain in my chest.","example_ka":"გულმკერდში ტკივილს ვგრძნობ.","category":"health-body","level":"intermediate"},
-  {"english":"headache","georgian":"თავის ტკივილი","pronunciation":"/ˈhedeɪk/","example_en":"I have a terrible headache.","example_ka":"საშინელი თავის ტკივილი მაქვს.","category":"health-body","level":"intermediate"},
-  {"english":"injury","georgian":"დაზიანება","pronunciation":"/ˈɪndʒəri/","example_en":"He has a knee injury.","example_ka":"მუხლის დაზიანება აქვს.","category":"health-body","level":"intermediate"},
-  {"english":"wound","georgian":"ჭრილობა","pronunciation":"/wuːnd/","example_en":"The wound needs stitches.","example_ka":"ჭრილობას ნაკერები სჭირდება.","category":"health-body","level":"intermediate"},
-  {"english":"bandage","georgian":"ბინტი","pronunciation":"/ˈbændɪdʒ/","example_en":"Put a bandage on the cut.","example_ka":"ჭრილობაზე ბინტი დაადეთ.","category":"health-body","level":"intermediate"},
-  {"english":"medicine","georgian":"წამალი","pronunciation":"/ˈmedɪsən/","example_en":"Take your medicine twice a day.","example_ka":"წამალი დღეში ორჯერ მიიღეთ.","category":"health-body","level":"intermediate"},
-  {"english":"pill","georgian":"აბი","pronunciation":"/pɪl/","example_en":"Take one pill after meals.","example_ka":"ჭამის შემდეგ ერთი აბი მიიღეთ.","category":"health-body","level":"intermediate"},
-  {"english":"prescription","georgian":"რეცეპტი","pronunciation":"/prɪˈskrɪpʃən/","example_en":"You need a prescription for this medicine.","example_ka":"ამ წამლისთვის რეცეპტი გჭირდებათ.","category":"health-body","level":"intermediate"},
-  {"english":"injection","georgian":"ინექცია","pronunciation":"/ɪnˈdʒekʃən/","example_en":"The nurse gave me an injection.","example_ka":"ექთანმა ინექცია გამიკეთა.","category":"health-body","level":"intermediate"},
-  {"english":"vaccine","georgian":"ვაქცინა","pronunciation":"/ˈvæksiːn/","example_en":"Did you get the flu vaccine?","example_ka":"გრიპის ვაქცინა გაიკეთე?","category":"health-body","level":"intermediate"},
-  {"english":"surgery","georgian":"ოპერაცია","pronunciation":"/ˈsɜːrdʒəri/","example_en":"She needs heart surgery.","example_ka":"მას გულის ოპერაცია სჭირდება.","category":"health-body","level":"intermediate"},
-  {"english":"hospital","georgian":"საავადმყოფო","pronunciation":"/ˈhɒspɪtəl/","example_en":"He was taken to the hospital.","example_ka":"ის საავადმყოფოში წაიყვანეს.","category":"health-body","level":"intermediate"},
-  {"english":"clinic","georgian":"კლინიკა","pronunciation":"/ˈklɪnɪk/","example_en":"I have an appointment at the clinic.","example_ka":"კლინიკაში ვიზიტი მაქვს.","category":"health-body","level":"intermediate"},
-  {"english":"ambulance","georgian":"სასწრაფო","pronunciation":"/ˈæmbjʊləns/","example_en":"Call an ambulance!","example_ka":"სასწრაფოს დაურეკეთ!","category":"health-body","level":"intermediate"},
-  {"english":"emergency","georgian":"გადაუდებელი","pronunciation":"/ɪˈmɜːrdʒənsi/","example_en":"This is an emergency!","example_ka":"ეს გადაუდებელი შემთხვევაა!","category":"health-body","level":"intermediate"},
-  {"english":"examination","georgian":"გამოკვლევა","pronunciation":"/ɪɡˌzæmɪˈneɪʃən/","example_en":"The doctor did a full examination.","example_ka":"ექიმმა სრული გამოკვლევა ჩაატარა.","category":"health-body","level":"intermediate"},
-  {"english":"diagnosis","georgian":"დიაგნოზი","pronunciation":"/ˌdaɪəɡˈnəʊsɪs/","example_en":"The diagnosis was correct.","example_ka":"დიაგნოზი სწორი იყო.","category":"health-body","level":"intermediate"},
-  {"english":"symptom","georgian":"სიმპტომი","pronunciation":"/ˈsɪmptəm/","example_en":"What are your symptoms?","example_ka":"რა სიმპტომები გაქვთ?","category":"health-body","level":"intermediate"},
-  {"english":"treatment","georgian":"მკურნალობა","pronunciation":"/ˈtriːtmənt/","example_en":"The treatment lasted three months.","example_ka":"მკურნალობა სამ თვეს გაგრძელდა.","category":"health-body","level":"intermediate"},
-  {"english":"recover","georgian":"გამოჯანმრთელება","pronunciation":"/rɪˈkʌvər/","example_en":"She recovered quickly.","example_ka":"ის სწრაფად გამოჯანმრთელდა.","category":"health-body","level":"intermediate"},
-  {"english":"exercise","georgian":"ვარჯიში","pronunciation":"/ˈeksərsaɪz/","example_en":"Exercise is good for health.","example_ka":"ვარჯიში ჯანმრთელობისთვის კარგია.","category":"health-body","level":"intermediate"},
-  {"english":"diet","georgian":"დიეტა","pronunciation":"/ˈdaɪət/","example_en":"She is on a strict diet.","example_ka":"ის მკაცრ დიეტაზეა.","category":"health-body","level":"intermediate"},
-  {"english":"vitamin","georgian":"ვიტამინი","pronunciation":"/ˈvɪtəmɪn/","example_en":"Take your vitamins daily.","example_ka":"ვიტამინები ყოველდღე მიიღეთ.","category":"health-body","level":"intermediate"},
-  {"english":"stress","georgian":"სტრესი","pronunciation":"/stres/","example_en":"Stress affects your health.","example_ka":"სტრესი ჯანმრთელობაზე მოქმედებს.","category":"health-body","level":"intermediate"},
-  {"english":"blood pressure","georgian":"წნევა","pronunciation":"/blʌd ˈpreʃər/","example_en":"Check your blood pressure regularly.","example_ka":"წნევა რეგულარულად შეამოწმეთ.","category":"health-body","level":"intermediate"},
-  {"english":"pulse","georgian":"პულსი","pronunciation":"/pʌls/","example_en":"The nurse checked my pulse.","example_ka":"ექთანმა პულსი შემიმოწმა.","category":"health-body","level":"intermediate"},
-  {"english":"temperature","georgian":"ტემპერატურა","pronunciation":"/ˈtemprətʃər/","example_en":"Let me take your temperature.","example_ka":"ტემპერატურა გაგიზომოთ.","category":"health-body","level":"intermediate"},
-  {"english":"X-ray","georgian":"რენტგენი","pronunciation":"/ˈeksreɪ/","example_en":"The doctor ordered an X-ray.","example_ka":"ექიმმა რენტგენი დანიშნა.","category":"health-body","level":"intermediate"},
-  {"english":"wheelchair","georgian":"ინვალიდის ეტლი","pronunciation":"/ˈwiːltʃeər/","example_en":"He uses a wheelchair.","example_ka":"ის ინვალიდის ეტლს იყენებს.","category":"health-body","level":"intermediate"},
-  {"english":"pregnant","georgian":"ორსული","pronunciation":"/ˈpreɡnənt/","example_en":"She is three months pregnant.","example_ka":"ის სამი თვის ორსულია.","category":"health-body","level":"intermediate"},
-  {"english":"dentist","georgian":"სტომატოლოგი","pronunciation":"/ˈdentɪst/","example_en":"I need to see a dentist.","example_ka":"სტომატოლოგთან ვიზიტი მჭირდება.","category":"health-body","level":"intermediate"},
-  {"english":"pharmacy","georgian":"აფთიაქი","pronunciation":"/ˈfɑːrməsi/","example_en":"Buy the medicine at the pharmacy.","example_ka":"წამალი აფთიაქში იყიდეთ.","category":"health-body","level":"intermediate"},
-  {"english":"nutrition","georgian":"კვება","pronunciation":"/njuːˈtrɪʃən/","example_en":"Good nutrition is essential.","example_ka":"კარგი კვება აუცილებელია.","category":"health-body","level":"intermediate"},
-  {"english":"obesity","georgian":"სიმსუქნე","pronunciation":"/əʊˈbiːsɪti/","example_en":"Obesity is a serious health problem.","example_ka":"სიმსუქნე სერიოზული ჯანმრთელობის პრობლემაა.","category":"health-body","level":"intermediate"},
-  {"english":"immune system","georgian":"იმუნური სისტემა","pronunciation":"/ɪˈmjuːn ˈsɪstəm/","example_en":"Sleep strengthens the immune system.","example_ka":"ძილი იმუნურ სისტემას აძლიერებს.","category":"health-body","level":"intermediate"},
-  {"english":"appetite","georgian":"მადა","pronunciation":"/ˈæpɪtaɪt/","example_en":"I have no appetite today.","example_ka":"დღეს მადა არ მაქვს.","category":"health-body","level":"intermediate"},
-  {"english":"dizzy","georgian":"თავბრუსხვევა","pronunciation":"/ˈdɪzi/","example_en":"I feel dizzy.","example_ka":"თავბრუსხვევა მაქვს.","category":"health-body","level":"intermediate"},
-  {"english":"swollen","georgian":"შესიებული","pronunciation":"/ˈswəʊlən/","example_en":"My ankle is swollen.","example_ka":"ტერფი შემისიებდა.","category":"health-body","level":"intermediate"},
-  {"english":"bruise","georgian":"სისხლჩაქცევა","pronunciation":"/bruːz/","example_en":"I have a bruise on my arm.","example_ka":"მკლავზე სისხლჩაქცევა მაქვს.","category":"health-body","level":"intermediate"},
-  {"english":"bleed","georgian":"სისხლდენა","pronunciation":"/bliːd/","example_en":"The cut is bleeding.","example_ka":"ჭრილობას სისხლი სდის.","category":"health-body","level":"intermediate"}
+  {
+    "english": "head",
+    "georgian": "თავი",
+    "pronunciation": "/hed/",
+    "example_en": "My head hurts.",
+    "example_ka": "თავი მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "face",
+    "georgian": "სახე",
+    "pronunciation": "/feɪs/",
+    "example_en": "She has a beautiful face.",
+    "example_ka": "მას ლამაზი სახე აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "eye",
+    "georgian": "თვალი",
+    "pronunciation": "/aɪ/",
+    "example_en": "She has blue eyes.",
+    "example_ka": "მას ლურჯი თვალები აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "ear",
+    "georgian": "ყური",
+    "pronunciation": "/ɪər/",
+    "example_en": "My ear hurts.",
+    "example_ka": "ყური მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "nose",
+    "georgian": "ცხვირი",
+    "pronunciation": "/nəʊz/",
+    "example_en": "His nose is bleeding.",
+    "example_ka": "ცხვირიდან სისხლი სდის.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "mouth",
+    "georgian": "პირი",
+    "pronunciation": "/maʊθ/",
+    "example_en": "Open your mouth.",
+    "example_ka": "პირი გააღეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "tooth",
+    "georgian": "კბილი",
+    "pronunciation": "/tuːθ/",
+    "example_en": "I have a toothache.",
+    "example_ka": "კბილი მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "tongue",
+    "georgian": "ენა",
+    "pronunciation": "/tʌŋ/",
+    "example_en": "Show me your tongue.",
+    "example_ka": "ენა მაჩვენეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "throat",
+    "georgian": "ყელი",
+    "pronunciation": "/θrəʊt/",
+    "example_en": "I have a sore throat.",
+    "example_ka": "ყელი მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "neck",
+    "georgian": "კისერი",
+    "pronunciation": "/nek/",
+    "example_en": "My neck is stiff.",
+    "example_ka": "კისერი გამიჯერდა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "shoulder",
+    "georgian": "მხარი",
+    "pronunciation": "/ˈʃəʊldər/",
+    "example_en": "He hurt his shoulder.",
+    "example_ka": "მხარი დაიზიანა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "arm",
+    "georgian": "მკლავი",
+    "pronunciation": "/ɑːrm/",
+    "example_en": "She broke her arm.",
+    "example_ka": "მკლავი მოიტეხა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "elbow",
+    "georgian": "იდაყვი",
+    "pronunciation": "/ˈelbəʊ/",
+    "example_en": "I hit my elbow on the table.",
+    "example_ka": "იდაყვი მაგიდას მოვარტყი.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "hand",
+    "georgian": "ხელი",
+    "pronunciation": "/hænd/",
+    "example_en": "Wash your hands.",
+    "example_ka": "ხელები დაიბანეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "finger",
+    "georgian": "თითი",
+    "pronunciation": "/ˈfɪŋɡər/",
+    "example_en": "I cut my finger.",
+    "example_ka": "თითი გავიჭერი.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "chest",
+    "georgian": "გულმკერდი",
+    "pronunciation": "/tʃest/",
+    "example_en": "He has chest pain.",
+    "example_ka": "გულმკერდის ტკივილი აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "back",
+    "georgian": "ზურგი",
+    "pronunciation": "/bæk/",
+    "example_en": "My back hurts.",
+    "example_ka": "ზურგი მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "stomach",
+    "georgian": "კუჭი",
+    "pronunciation": "/ˈstʌmək/",
+    "example_en": "I have a stomachache.",
+    "example_ka": "კუჭი მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "leg",
+    "georgian": "ფეხი",
+    "pronunciation": "/leɡ/",
+    "example_en": "He broke his leg.",
+    "example_ka": "ფეხი მოიტეხა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "knee",
+    "georgian": "მუხლი",
+    "pronunciation": "/niː/",
+    "example_en": "My knee hurts when I walk.",
+    "example_ka": "სიარულისას მუხლი მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "foot",
+    "georgian": "ტერფი",
+    "pronunciation": "/fʊt/",
+    "example_en": "I stepped on something with my foot.",
+    "example_ka": "ტერფით რაღაცას დავადექი.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "skin",
+    "georgian": "კანი",
+    "pronunciation": "/skɪn/",
+    "example_en": "She has sensitive skin.",
+    "example_ka": "მას მგრძნობიარე კანი აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "bone",
+    "georgian": "ძვალი",
+    "pronunciation": "/bəʊn/",
+    "example_en": "He broke a bone in his hand.",
+    "example_ka": "ხელში ძვალი მოიტეხა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "muscle",
+    "georgian": "კუნთი",
+    "pronunciation": "/ˈmʌsəl/",
+    "example_en": "My muscles are sore after exercise.",
+    "example_ka": "ვარჯიშის შემდეგ კუნთები მტკივა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "blood",
+    "georgian": "სისხლი",
+    "pronunciation": "/blʌd/",
+    "example_en": "The doctor took a blood sample.",
+    "example_ka": "ექიმმა სისხლის ანალიზი აიღო.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "heart",
+    "georgian": "გული",
+    "pronunciation": "/hɑːrt/",
+    "example_en": "His heart is beating fast.",
+    "example_ka": "გული სწრაფად უცემს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "brain",
+    "georgian": "ტვინი",
+    "pronunciation": "/breɪn/",
+    "example_en": "The brain controls the body.",
+    "example_ka": "ტვინი სხეულს მართავს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "lung",
+    "georgian": "ფილტვი",
+    "pronunciation": "/lʌŋ/",
+    "example_en": "Smoking damages your lungs.",
+    "example_ka": "მოწევა ფილტვებს აზიანებს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "liver",
+    "georgian": "ღვიძლი",
+    "pronunciation": "/ˈlɪvər/",
+    "example_en": "Alcohol is bad for the liver.",
+    "example_ka": "ალკოჰოლი ღვიძლისთვის მავნეა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "kidney",
+    "georgian": "თირკმელი",
+    "pronunciation": "/ˈkɪdni/",
+    "example_en": "He has kidney problems.",
+    "example_ka": "მას თირკმელის პრობლემები აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "healthy",
+    "georgian": "ჯანმრთელი",
+    "pronunciation": "/ˈhelθi/",
+    "example_en": "Eating fruit is healthy.",
+    "example_ka": "ხილის ჭამა ჯანმრთელია.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "sick",
+    "georgian": "ავად",
+    "pronunciation": "/sɪk/",
+    "example_en": "I feel sick today.",
+    "example_ka": "დღეს ავად ვარ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "disease",
+    "georgian": "დაავადება",
+    "pronunciation": "/dɪˈziːz/",
+    "example_en": "Heart disease is very common.",
+    "example_ka": "გულის დაავადება ძალიან გავრცელებულია.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "illness",
+    "georgian": "ავადმყოფობა",
+    "pronunciation": "/ˈɪlnəs/",
+    "example_en": "He recovered from a long illness.",
+    "example_ka": "ის ხანგრძლივი ავადმყოფობისგან გამოჯანმრთელდა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "fever",
+    "georgian": "ცხელება",
+    "pronunciation": "/ˈfiːvər/",
+    "example_en": "She has a high fever.",
+    "example_ka": "მას მაღალი ცხელება აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "cough",
+    "georgian": "ხველა",
+    "pronunciation": "/kɒf/",
+    "example_en": "I have a bad cough.",
+    "example_ka": "ძლიერი ხველა მაქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "cold",
+    "georgian": "გაციება",
+    "pronunciation": "/kəʊld/",
+    "example_en": "I caught a cold.",
+    "example_ka": "გავცივდი.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "flu",
+    "georgian": "გრიპი",
+    "pronunciation": "/fluː/",
+    "example_en": "The flu is spreading quickly.",
+    "example_ka": "გრიპი სწრაფად ვრცელდება.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "allergy",
+    "georgian": "ალერგია",
+    "pronunciation": "/ˈælərdʒi/",
+    "example_en": "I have a pollen allergy.",
+    "example_ka": "მტვრის ალერგია მაქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "infection",
+    "georgian": "ინფექცია",
+    "pronunciation": "/ɪnˈfekʃən/",
+    "example_en": "The wound has an infection.",
+    "example_ka": "ჭრილობას ინფექცია აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "pain",
+    "georgian": "ტკივილი",
+    "pronunciation": "/peɪn/",
+    "example_en": "I feel pain in my chest.",
+    "example_ka": "გულმკერდში ტკივილს ვგრძნობ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "headache",
+    "georgian": "თავის ტკივილი",
+    "pronunciation": "/ˈhedeɪk/",
+    "example_en": "I have a terrible headache.",
+    "example_ka": "საშინელი თავის ტკივილი მაქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "injury",
+    "georgian": "დაზიანება",
+    "pronunciation": "/ˈɪndʒəri/",
+    "example_en": "He has a knee injury.",
+    "example_ka": "მუხლის დაზიანება აქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "wound",
+    "georgian": "ჭრილობა",
+    "pronunciation": "/wuːnd/",
+    "example_en": "The wound needs stitches.",
+    "example_ka": "ჭრილობას ნაკერები სჭირდება.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "bandage",
+    "georgian": "ბინტი",
+    "pronunciation": "/ˈbændɪdʒ/",
+    "example_en": "Put a bandage on the cut.",
+    "example_ka": "ჭრილობაზე ბინტი დაადეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "medicine",
+    "georgian": "წამალი",
+    "pronunciation": "/ˈmedɪsən/",
+    "example_en": "Take your medicine twice a day.",
+    "example_ka": "წამალი დღეში ორჯერ მიიღეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "pill",
+    "georgian": "აბი",
+    "pronunciation": "/pɪl/",
+    "example_en": "Take one pill after meals.",
+    "example_ka": "ჭამის შემდეგ ერთი აბი მიიღეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "prescription",
+    "georgian": "რეცეპტი",
+    "pronunciation": "/prɪˈskrɪpʃən/",
+    "example_en": "You need a prescription for this medicine.",
+    "example_ka": "ამ წამლისთვის რეცეპტი გჭირდებათ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "injection",
+    "georgian": "ინექცია",
+    "pronunciation": "/ɪnˈdʒekʃən/",
+    "example_en": "The nurse gave me an injection.",
+    "example_ka": "ექთანმა ინექცია გამიკეთა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "vaccine",
+    "georgian": "ვაქცინა",
+    "pronunciation": "/ˈvæksiːn/",
+    "example_en": "Did you get the flu vaccine?",
+    "example_ka": "გრიპის ვაქცინა გაიკეთე?",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "surgery",
+    "georgian": "ოპერაცია",
+    "pronunciation": "/ˈsɜːrdʒəri/",
+    "example_en": "She needs heart surgery.",
+    "example_ka": "მას გულის ოპერაცია სჭირდება.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "hospital",
+    "georgian": "საავადმყოფო",
+    "pronunciation": "/ˈhɒspɪtəl/",
+    "example_en": "He was taken to the hospital.",
+    "example_ka": "ის საავადმყოფოში წაიყვანეს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "clinic",
+    "georgian": "კლინიკა",
+    "pronunciation": "/ˈklɪnɪk/",
+    "example_en": "I have an appointment at the clinic.",
+    "example_ka": "კლინიკაში ვიზიტი მაქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "ambulance",
+    "georgian": "სასწრაფო",
+    "pronunciation": "/ˈæmbjʊləns/",
+    "example_en": "Call an ambulance!",
+    "example_ka": "სასწრაფოს დაურეკეთ!",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "emergency",
+    "georgian": "გადაუდებელი",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "This is an emergency!",
+    "example_ka": "ეს გადაუდებელი შემთხვევაა!",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "examination",
+    "georgian": "გამოკვლევა",
+    "pronunciation": "/ɪɡˌzæmɪˈneɪʃən/",
+    "example_en": "The doctor did a full examination.",
+    "example_ka": "ექიმმა სრული გამოკვლევა ჩაატარა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "diagnosis",
+    "georgian": "დიაგნოზი",
+    "pronunciation": "/ˌdaɪəɡˈnəʊsɪs/",
+    "example_en": "The diagnosis was correct.",
+    "example_ka": "დიაგნოზი სწორი იყო.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "symptom",
+    "georgian": "სიმპტომი",
+    "pronunciation": "/ˈsɪmptəm/",
+    "example_en": "What are your symptoms?",
+    "example_ka": "რა სიმპტომები გაქვთ?",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "treatment",
+    "georgian": "მკურნალობა",
+    "pronunciation": "/ˈtriːtmənt/",
+    "example_en": "The treatment lasted three months.",
+    "example_ka": "მკურნალობა სამ თვეს გაგრძელდა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "recover",
+    "georgian": "გამოჯანმრთელება",
+    "pronunciation": "/rɪˈkʌvər/",
+    "example_en": "She recovered quickly.",
+    "example_ka": "ის სწრაფად გამოჯანმრთელდა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "exercise",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈeksərsaɪz/",
+    "example_en": "Exercise is good for health.",
+    "example_ka": "ვარჯიში ჯანმრთელობისთვის კარგია.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "diet",
+    "georgian": "დიეტა",
+    "pronunciation": "/ˈdaɪət/",
+    "example_en": "She is on a strict diet.",
+    "example_ka": "ის მკაცრ დიეტაზეა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "vitamin",
+    "georgian": "ვიტამინი",
+    "pronunciation": "/ˈvɪtəmɪn/",
+    "example_en": "Take your vitamins daily.",
+    "example_ka": "ვიტამინები ყოველდღე მიიღეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "stress",
+    "georgian": "სტრესი",
+    "pronunciation": "/stres/",
+    "example_en": "Stress affects your health.",
+    "example_ka": "სტრესი ჯანმრთელობაზე მოქმედებს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "blood pressure",
+    "georgian": "წნევა",
+    "pronunciation": "/blʌd ˈpreʃər/",
+    "example_en": "Check your blood pressure regularly.",
+    "example_ka": "წნევა რეგულარულად შეამოწმეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "pulse",
+    "georgian": "პულსი",
+    "pronunciation": "/pʌls/",
+    "example_en": "The nurse checked my pulse.",
+    "example_ka": "ექთანმა პულსი შემიმოწმა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "temperature",
+    "georgian": "ტემპერატურა",
+    "pronunciation": "/ˈtemprətʃər/",
+    "example_en": "Let me take your temperature.",
+    "example_ka": "ტემპერატურა გაგიზომოთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "X-ray",
+    "georgian": "რენტგენი",
+    "pronunciation": "/ˈeksreɪ/",
+    "example_en": "The doctor ordered an X-ray.",
+    "example_ka": "ექიმმა რენტგენი დანიშნა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "wheelchair",
+    "georgian": "ინვალიდის ეტლი",
+    "pronunciation": "/ˈwiːltʃeər/",
+    "example_en": "He uses a wheelchair.",
+    "example_ka": "ის ინვალიდის ეტლს იყენებს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "pregnant",
+    "georgian": "ორსული",
+    "pronunciation": "/ˈpreɡnənt/",
+    "example_en": "She is three months pregnant.",
+    "example_ka": "ის სამი თვის ორსულია.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "dentist",
+    "georgian": "სტომატოლოგი",
+    "pronunciation": "/ˈdentɪst/",
+    "example_en": "I need to see a dentist.",
+    "example_ka": "სტომატოლოგთან ვიზიტი მჭირდება.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "pharmacy",
+    "georgian": "აფთიაქი",
+    "pronunciation": "/ˈfɑːrməsi/",
+    "example_en": "Buy the medicine at the pharmacy.",
+    "example_ka": "წამალი აფთიაქში იყიდეთ.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "nutrition",
+    "georgian": "კვება",
+    "pronunciation": "/njuːˈtrɪʃən/",
+    "example_en": "Good nutrition is essential.",
+    "example_ka": "კარგი კვება აუცილებელია.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "obesity",
+    "georgian": "სიმსუქნე",
+    "pronunciation": "/əʊˈbiːsɪti/",
+    "example_en": "Obesity is a serious health problem.",
+    "example_ka": "სიმსუქნე სერიოზული ჯანმრთელობის პრობლემაა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "immune system",
+    "georgian": "იმუნური სისტემა",
+    "pronunciation": "/ɪˈmjuːn ˈsɪstəm/",
+    "example_en": "Sleep strengthens the immune system.",
+    "example_ka": "ძილი იმუნურ სისტემას აძლიერებს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "appetite",
+    "georgian": "მადა",
+    "pronunciation": "/ˈæpɪtaɪt/",
+    "example_en": "I have no appetite today.",
+    "example_ka": "დღეს მადა არ მაქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "dizzy",
+    "georgian": "თავბრუსხვევა",
+    "pronunciation": "/ˈdɪzi/",
+    "example_en": "I feel dizzy.",
+    "example_ka": "თავბრუსხვევა მაქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "swollen",
+    "georgian": "შესიებული",
+    "pronunciation": "/ˈswəʊlən/",
+    "example_en": "My ankle is swollen.",
+    "example_ka": "ტერფი შემისიებდა.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "bruise",
+    "georgian": "სისხლჩაქცევა",
+    "pronunciation": "/bruːz/",
+    "example_en": "I have a bruise on my arm.",
+    "example_ka": "მკლავზე სისხლჩაქცევა მაქვს.",
+    "category": "health-body",
+    "level": "intermediate"
+  },
+  {
+    "english": "bleed",
+    "georgian": "სისხლდენა",
+    "pronunciation": "/bliːd/",
+    "example_en": "The cut is bleeding.",
+    "example_ka": "ჭრილობას სისხლი სდის.",
+    "category": "health-body",
+    "level": "intermediate"
+  }
 ]

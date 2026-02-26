@@ -2,16 +2,111 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="ფლეშქარდების სტატისტიკა — FluentGe">
+<Layout title="ნასწავლი სიტყვები — FluentGe">
   <section class="max-w-2xl mx-auto px-4 py-12">
     <a href="/dashboard/" class="text-[#6B6B65] hover:text-[#C8C8C0] text-sm mb-4 inline-block">← დეშბორდი</a>
-    <h1 class="font-['Playfair_Display',serif] text-2xl font-bold mb-2">📝 ფლეშქარდების სტატისტიკა</h1>
-    <p class="text-[#A0A09A] text-sm mb-10">მალე დაემატება...</p>
+    <h1 class="font-['Playfair_Display',serif] text-2xl font-bold mb-2">📝 ნასწავლი სიტყვები</h1>
+    <p class="text-[#A0A09A] text-sm mb-6">სიტყვები რომლებიც იცი ფლეშქარდებიდან</p>
     
-    <div class="text-center py-16">
-      <p class="text-6xl mb-4">🚧</p>
-      <p class="text-[#6B6B65]">ეს გვერდი მალე დაემატება</p>
-      <a href="/flashcards/" class="inline-block mt-4 bg-[#5B7F5E] text-white px-6 py-2 rounded-xl text-sm font-semibold hover:bg-[#4a6b4d]">ფლეშქარდების გვერდზე გადასვლა</a>
+    <!-- Stats -->
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-8">
+      <div class="flex items-center justify-between">
+        <div>
+          <p class="text-4xl font-bold text-[#5B7F5E]" id="word-count">0</p>
+          <p class="text-sm text-[#6B6B65]">ნასწავლი სიტყვა</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="/dashboard/cards/?clear=1" id="clear-btn" class="bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-400 text-xs font-semibold px-3 py-2 rounded-xl transition-colors inline-block cursor-pointer no-underline">🗑️ გასუფთავება</a>
+          <div class="text-5xl">📚</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="mb-6">
+      <input type="text" id="search-input" placeholder="🔍 მოძებნე სიტყვა..." 
+        class="w-full bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 text-sm text-[#F5F5F0] placeholder:text-[#6B6B65] focus:outline-none focus:border-[#5B7F5E]" />
+    </div>
+
+    <!-- Word list -->
+    <div id="word-list" class="space-y-2"></div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden text-center py-16">
+      <p class="text-6xl mb-4">📝</p>
+      <p class="text-[#6B6B65] mb-2">ჯერ არ გაქვს ნასწავლი სიტყვები</p>
+      <p class="text-[#6B6B65] text-sm mb-4">ფლეშქარდებში დააჭირე "ვიცი" ღილაკს სიტყვის დასამატებლად</p>
+      <a href="/flashcards/" class="inline-block bg-[#5B7F5E] text-white px-6 py-2 rounded-xl text-sm font-semibold hover:bg-[#4a6b4d]">ფლეშქარდების გვერდზე →</a>
     </div>
   </section>
+
+  <script is:inline>
+    (function() {
+      // Clear data if ?clear=1
+      if (window.location.search.indexOf('clear=1') > -1) {
+        localStorage.removeItem('knownCards');
+        window.location.href = '/dashboard/cards/';
+        return;
+      }
+      // Deduplicate old data
+      var raw = JSON.parse(localStorage.getItem('knownCards') || '[]');
+      var seen = {};
+      var known = [];
+      raw.forEach(function(k) {
+        if (!seen[k.word]) {
+          seen[k.word] = true;
+          known.push(k);
+        }
+      });
+      if (known.length !== raw.length) {
+        localStorage.setItem('knownCards', JSON.stringify(known));
+      }
+      const countEl = document.getElementById('word-count');
+      const listEl = document.getElementById('word-list');
+      const emptyEl = document.getElementById('empty-state');
+      const searchEl = document.getElementById('search-input');
+      
+      countEl.textContent = known.length;
+      
+      function renderWords(filter) {
+        listEl.innerHTML = '';
+        const filtered = filter 
+          ? known.filter(k => k.word.toLowerCase().includes(filter) || k.georgian.toLowerCase().includes(filter))
+          : known;
+        
+        if (filtered.length === 0 && known.length === 0) {
+          emptyEl.classList.remove('hidden');
+          return;
+        }
+        emptyEl.classList.add('hidden');
+        
+        if (filtered.length === 0) {
+          listEl.innerHTML = '<p class="text-center text-[#6B6B65] py-8">ვერ მოიძებნა</p>';
+          return;
+        }
+        
+        filtered.forEach(function(item) {
+          const div = document.createElement('div');
+          div.className = 'flex items-center justify-between bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 hover:bg-[#2A2A2C] transition-colors';
+          div.innerHTML = '<div><p class="font-medium text-[#C8C8C0]">' + item.word + '</p><p class="text-sm text-[#6B6B65]">' + item.georgian + '</p></div><span class="text-green-400 text-sm">✅</span>';
+          listEl.appendChild(div);
+        });
+      }
+      
+      renderWords('');
+      
+      searchEl.addEventListener('input', function() {
+        renderWords(this.value.toLowerCase().trim());
+      });
+
+      document.getElementById('clear-btn').addEventListener('click', function() {
+        if (confirm('ნამდვილად გინდა ყველა ნასწავლი სიტყვის გასუფთავება?')) {
+          localStorage.removeItem('knownCards');
+          countEl.textContent = '0';
+          listEl.innerHTML = '';
+          emptyEl.classList.remove('hidden');
+        }
+      });
+    })();
+  </script>
 </Layout>

@@ -1,52 +1,452 @@
 [
-  {"english": "Head", "georgian": "თავი", "pronunciation": "/hed/", "example_en": "My head hurts.", "example_ka": "თავი მტკივა.", "category": "body-parts", "level": "A1"},
-  {"english": "Face", "georgian": "სახე", "pronunciation": "/feɪs/", "example_en": "Wash your face.", "example_ka": "სახე დაიბანე.", "category": "body-parts", "level": "A1"},
-  {"english": "Eye", "georgian": "თვალი", "pronunciation": "/aɪ/", "example_en": "She has blue eyes.", "example_ka": "მას ლურჯი თვალები აქვს.", "category": "body-parts", "level": "A1"},
-  {"english": "Ear", "georgian": "ყური", "pronunciation": "/ɪər/", "example_en": "I can't hear with my left ear.", "example_ka": "მარცხენა ყურით ვერ ვისმენ.", "category": "body-parts", "level": "A1"},
-  {"english": "Nose", "georgian": "ცხვირი", "pronunciation": "/noʊz/", "example_en": "His nose is red from the cold.", "example_ka": "სიცივისგან ცხვირი გაუწითლდა.", "category": "body-parts", "level": "A1"},
-  {"english": "Mouth", "georgian": "პირი", "pronunciation": "/maʊθ/", "example_en": "Open your mouth wide.", "example_ka": "პირი ფართოდ გააღე.", "category": "body-parts", "level": "A1"},
-  {"english": "Tooth", "georgian": "კბილი", "pronunciation": "/tuːθ/", "example_en": "I need to go to the dentist for my tooth.", "example_ka": "კბილის გამო სტომატოლოგთან წასვლა მჭირდება.", "category": "body-parts", "level": "A1"},
-  {"english": "Tongue", "georgian": "ენა", "pronunciation": "/tʌŋ/", "example_en": "The food burned my tongue.", "example_ka": "საკვებმა ენა დამიწვა.", "category": "body-parts", "level": "A2"},
-  {"english": "Lip", "georgian": "ტუჩი", "pronunciation": "/lɪp/", "example_en": "Her lips are dry.", "example_ka": "ტუჩები გაშრობილი აქვს.", "category": "body-parts", "level": "A1"},
-  {"english": "Hair", "georgian": "თმა", "pronunciation": "/heər/", "example_en": "She has long hair.", "example_ka": "მას გრძელი თმა აქვს.", "category": "body-parts", "level": "A1"},
-  {"english": "Neck", "georgian": "კისერი", "pronunciation": "/nek/", "example_en": "My neck is stiff.", "example_ka": "კისერი გამშრალდა.", "category": "body-parts", "level": "A1"},
-  {"english": "Shoulder", "georgian": "მხარი", "pronunciation": "/ˈʃoʊldər/", "example_en": "He put his hand on my shoulder.", "example_ka": "მან ხელი მხარზე დამადო.", "category": "body-parts", "level": "A1"},
-  {"english": "Arm", "georgian": "მკლავი", "pronunciation": "/ɑːrm/", "example_en": "She broke her arm.", "example_ka": "მან მკლავი მოიტეხა.", "category": "body-parts", "level": "A1"},
-  {"english": "Elbow", "georgian": "იდაყვი", "pronunciation": "/ˈelboʊ/", "example_en": "Don't put your elbows on the table.", "example_ka": "იდაყვები მაგიდაზე არ დადო.", "category": "body-parts", "level": "A2"},
-  {"english": "Wrist", "georgian": "მაჯა", "pronunciation": "/rɪst/", "example_en": "She wears a bracelet on her wrist.", "example_ka": "მას მაჯაზე სამაჯური აცვია.", "category": "body-parts", "level": "A2"},
-  {"english": "Hand", "georgian": "ხელი", "pronunciation": "/hænd/", "example_en": "Wash your hands before eating.", "example_ka": "ჭამის წინ ხელები დაიბანე.", "category": "body-parts", "level": "A1"},
-  {"english": "Finger", "georgian": "თითი (ხელის)", "pronunciation": "/ˈfɪŋɡər/", "example_en": "I cut my finger.", "example_ka": "თითი გავიჭერი.", "category": "body-parts", "level": "A1"},
-  {"english": "Thumb", "georgian": "ცერა თითი", "pronunciation": "/θʌm/", "example_en": "She gave a thumbs up.", "example_ka": "მან ცერა თითი აწია.", "category": "body-parts", "level": "A2"},
-  {"english": "Nail", "georgian": "ფრჩხილი", "pronunciation": "/neɪl/", "example_en": "She painted her nails red.", "example_ka": "მან ფრჩხილები წითლად გაილაქა.", "category": "body-parts", "level": "A2"},
-  {"english": "Chest", "georgian": "მკერდი", "pronunciation": "/tʃest/", "example_en": "He felt pain in his chest.", "example_ka": "მკერდში ტკივილი იგრძნო.", "category": "body-parts", "level": "A2"},
-  {"english": "Back", "georgian": "ზურგი", "pronunciation": "/bæk/", "example_en": "My back hurts after sitting all day.", "example_ka": "მთელი დღე ჯდომის შემდეგ ზურგი მტკივა.", "category": "body-parts", "level": "A1"},
-  {"english": "Stomach", "georgian": "მუცელი/კუჭი", "pronunciation": "/ˈstʌmək/", "example_en": "My stomach is full.", "example_ka": "მუცელი სავსე მაქვს.", "category": "body-parts", "level": "A1"},
-  {"english": "Waist", "georgian": "წელი", "pronunciation": "/weɪst/", "example_en": "She wears a belt around her waist.", "example_ka": "მას წელზე ქამარი აცვია.", "category": "body-parts", "level": "A2"},
-  {"english": "Hip", "georgian": "თეძო", "pronunciation": "/hɪp/", "example_en": "She fell and hurt her hip.", "example_ka": "დაეცა და თეძო დაიზიანა.", "category": "body-parts", "level": "A2"},
-  {"english": "Leg", "georgian": "ფეხი", "pronunciation": "/leɡ/", "example_en": "He broke his leg.", "example_ka": "მან ფეხი მოიტეხა.", "category": "body-parts", "level": "A1"},
-  {"english": "Knee", "georgian": "მუხლი", "pronunciation": "/niː/", "example_en": "She hurt her knee while running.", "example_ka": "სირბილისას მუხლი დაიზიანა.", "category": "body-parts", "level": "A1"},
-  {"english": "Ankle", "georgian": "კოჭი", "pronunciation": "/ˈæŋkəl/", "example_en": "She twisted her ankle.", "example_ka": "მან კოჭი გაიტეხა.", "category": "body-parts", "level": "A2"},
-  {"english": "Foot", "georgian": "ტერფი", "pronunciation": "/fʊt/", "example_en": "My feet are tired.", "example_ka": "ტერფები დამღლია.", "category": "body-parts", "level": "A1"},
-  {"english": "Toe", "georgian": "ფეხის თითი", "pronunciation": "/toʊ/", "example_en": "I stubbed my toe.", "example_ka": "ფეხის თითი მივარტყი.", "category": "body-parts", "level": "A2"},
-  {"english": "Heel", "georgian": "ქუსლი", "pronunciation": "/hiːl/", "example_en": "She wears high heels.", "example_ka": "ის მაღალქუსლიანებს ატარებს.", "category": "body-parts", "level": "A2"},
-  {"english": "Skin", "georgian": "კანი", "pronunciation": "/skɪn/", "example_en": "Protect your skin from the sun.", "example_ka": "კანი მზისგან დაიცავი.", "category": "body-parts", "level": "A1"},
-  {"english": "Bone", "georgian": "ძვალი", "pronunciation": "/boʊn/", "example_en": "The dog is chewing a bone.", "example_ka": "ძაღლი ძვალს ღრღნის.", "category": "body-parts", "level": "A2"},
-  {"english": "Muscle", "georgian": "კუნთი", "pronunciation": "/ˈmʌsəl/", "example_en": "He has strong muscles.", "example_ka": "მას ძლიერი კუნთები აქვს.", "category": "body-parts", "level": "A2"},
-  {"english": "Blood", "georgian": "სისხლი", "pronunciation": "/blʌd/", "example_en": "The blood test was normal.", "example_ka": "სისხლის ანალიზი ნორმალური იყო.", "category": "body-parts", "level": "A2"},
-  {"english": "Heart", "georgian": "გული", "pronunciation": "/hɑːrt/", "example_en": "The heart pumps blood.", "example_ka": "გული სისხლს ქაჩავს.", "category": "body-parts", "level": "A1"},
-  {"english": "Brain", "georgian": "ტვინი", "pronunciation": "/breɪn/", "example_en": "The brain controls the body.", "example_ka": "ტვინი სხეულს მართავს.", "category": "body-parts", "level": "A2"},
-  {"english": "Lung", "georgian": "ფილტვი", "pronunciation": "/lʌŋ/", "example_en": "Smoking damages the lungs.", "example_ka": "მოწევა ფილტვებს აზიანებს.", "category": "body-parts", "level": "B1"},
-  {"english": "Liver", "georgian": "ღვიძლი", "pronunciation": "/ˈlɪvər/", "example_en": "The liver cleans the blood.", "example_ka": "ღვიძლი სისხლს ასუფთავებს.", "category": "body-parts", "level": "B1"},
-  {"english": "Kidney", "georgian": "თირკმელი", "pronunciation": "/ˈkɪdni/", "example_en": "We have two kidneys.", "example_ka": "ორი თირკმელი გვაქვს.", "category": "body-parts", "level": "B1"},
-  {"english": "Spine", "georgian": "ხერხემალი", "pronunciation": "/spaɪn/", "example_en": "Keep your spine straight.", "example_ka": "ხერხემალი სწორად დაიჭირე.", "category": "body-parts", "level": "B1"},
-  {"english": "Rib", "georgian": "ნეკნი", "pronunciation": "/rɪb/", "example_en": "He cracked a rib.", "example_ka": "მან ნეკნი გაიტეხა.", "category": "body-parts", "level": "B1"},
-  {"english": "Forehead", "georgian": "შუბლი", "pronunciation": "/ˈfɔːrhed/", "example_en": "She has a high forehead.", "example_ka": "მას მაღალი შუბლი აქვს.", "category": "body-parts", "level": "A2"},
-  {"english": "Cheek", "georgian": "ლოყა", "pronunciation": "/tʃiːk/", "example_en": "Her cheeks turned red.", "example_ka": "ლოყები გაუწითლდა.", "category": "body-parts", "level": "A2"},
-  {"english": "Chin", "georgian": "ნიკაპი", "pronunciation": "/tʃɪn/", "example_en": "He has a strong chin.", "example_ka": "მას მაგარი ნიკაპი აქვს.", "category": "body-parts", "level": "A2"},
-  {"english": "Eyebrow", "georgian": "წარბი", "pronunciation": "/ˈaɪbraʊ/", "example_en": "She raised her eyebrow.", "example_ka": "მან წარბი აწია.", "category": "body-parts", "level": "A2"},
-  {"english": "Eyelash", "georgian": "წამწამი", "pronunciation": "/ˈaɪlæʃ/", "example_en": "She has long eyelashes.", "example_ka": "მას გრძელი წამწამები აქვს.", "category": "body-parts", "level": "A2"},
-  {"english": "Palm", "georgian": "ხელისგული", "pronunciation": "/pɑːm/", "example_en": "She held the coin in her palm.", "example_ka": "მან მონეტა ხელისგულში დაიჭირა.", "category": "body-parts", "level": "A2"},
-  {"english": "Fist", "georgian": "მუშტი", "pronunciation": "/fɪst/", "example_en": "He clenched his fist.", "example_ka": "მან მუშტი შეკრა.", "category": "body-parts", "level": "A2"},
-  {"english": "Thigh", "georgian": "ბარძაყი", "pronunciation": "/θaɪ/", "example_en": "His thigh muscles are strong.", "example_ka": "ბარძაყის კუნთები ძლიერი აქვს.", "category": "body-parts", "level": "B1"},
-  {"english": "Calf", "georgian": "კანჭი", "pronunciation": "/kæf/", "example_en": "My calves hurt after running.", "example_ka": "სირბილის შემდეგ კანჭები მტკივა.", "category": "body-parts", "level": "B1"}
+  {
+    "english": "Head",
+    "georgian": "თავი",
+    "pronunciation": "/hed/",
+    "example_en": "My head hurts.",
+    "example_ka": "თავი მტკივა.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Face",
+    "georgian": "სახე",
+    "pronunciation": "/feɪs/",
+    "example_en": "Wash your face.",
+    "example_ka": "სახე დაიბანე.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Eye",
+    "georgian": "თვალი",
+    "pronunciation": "/aɪ/",
+    "example_en": "She has blue eyes.",
+    "example_ka": "მას ლურჯი თვალები აქვს.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Ear",
+    "georgian": "ყური",
+    "pronunciation": "/ɪər/",
+    "example_en": "I can't hear with my left ear.",
+    "example_ka": "მარცხენა ყურით ვერ ვისმენ.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Nose",
+    "georgian": "ცხვირი",
+    "pronunciation": "/noʊz/",
+    "example_en": "His nose is red from the cold.",
+    "example_ka": "სიცივისგან ცხვირი გაუწითლდა.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Mouth",
+    "georgian": "პირი",
+    "pronunciation": "/maʊθ/",
+    "example_en": "Open your mouth wide.",
+    "example_ka": "პირი ფართოდ გააღე.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Tooth",
+    "georgian": "კბილი",
+    "pronunciation": "/tuːθ/",
+    "example_en": "I need to go to the dentist for my tooth.",
+    "example_ka": "კბილის გამო სტომატოლოგთან წასვლა მჭირდება.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Tongue",
+    "georgian": "ენა",
+    "pronunciation": "/tʌŋ/",
+    "example_en": "The food burned my tongue.",
+    "example_ka": "საკვებმა ენა დამიწვა.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Lip",
+    "georgian": "ტუჩი",
+    "pronunciation": "/lɪp/",
+    "example_en": "Her lips are dry.",
+    "example_ka": "ტუჩები გაშრობილი აქვს.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Hair",
+    "georgian": "თმა",
+    "pronunciation": "/heər/",
+    "example_en": "She has long hair.",
+    "example_ka": "მას გრძელი თმა აქვს.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Neck",
+    "georgian": "კისერი",
+    "pronunciation": "/nek/",
+    "example_en": "My neck is stiff.",
+    "example_ka": "კისერი გამშრალდა.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Shoulder",
+    "georgian": "მხარი",
+    "pronunciation": "/ˈʃoʊldər/",
+    "example_en": "He put his hand on my shoulder.",
+    "example_ka": "მან ხელი მხარზე დამადო.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Arm",
+    "georgian": "მკლავი",
+    "pronunciation": "/ɑːrm/",
+    "example_en": "She broke her arm.",
+    "example_ka": "მან მკლავი მოიტეხა.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Elbow",
+    "georgian": "იდაყვი",
+    "pronunciation": "/ˈelboʊ/",
+    "example_en": "Don't put your elbows on the table.",
+    "example_ka": "იდაყვები მაგიდაზე არ დადო.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Wrist",
+    "georgian": "მაჯა",
+    "pronunciation": "/rɪst/",
+    "example_en": "She wears a bracelet on her wrist.",
+    "example_ka": "მას მაჯაზე სამაჯური აცვია.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Hand",
+    "georgian": "ხელი",
+    "pronunciation": "/hænd/",
+    "example_en": "Wash your hands before eating.",
+    "example_ka": "ჭამის წინ ხელები დაიბანე.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Finger",
+    "georgian": "თითი (ხელის)",
+    "pronunciation": "/ˈfɪŋɡər/",
+    "example_en": "I cut my finger.",
+    "example_ka": "თითი გავიჭერი.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Thumb",
+    "georgian": "ცერა თითი",
+    "pronunciation": "/θʌm/",
+    "example_en": "She gave a thumbs up.",
+    "example_ka": "მან ცერა თითი აწია.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Nail",
+    "georgian": "ფრჩხილი",
+    "pronunciation": "/neɪl/",
+    "example_en": "She painted her nails red.",
+    "example_ka": "მან ფრჩხილები წითლად გაილაქა.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Chest",
+    "georgian": "მკერდი",
+    "pronunciation": "/tʃest/",
+    "example_en": "He felt pain in his chest.",
+    "example_ka": "მკერდში ტკივილი იგრძნო.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Back",
+    "georgian": "ზურგი",
+    "pronunciation": "/bæk/",
+    "example_en": "My back hurts after sitting all day.",
+    "example_ka": "მთელი დღე ჯდომის შემდეგ ზურგი მტკივა.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Stomach",
+    "georgian": "მუცელი/კუჭი",
+    "pronunciation": "/ˈstʌmək/",
+    "example_en": "My stomach is full.",
+    "example_ka": "მუცელი სავსე მაქვს.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Waist",
+    "georgian": "წელი",
+    "pronunciation": "/weɪst/",
+    "example_en": "She wears a belt around her waist.",
+    "example_ka": "მას წელზე ქამარი აცვია.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Hip",
+    "georgian": "თეძო",
+    "pronunciation": "/hɪp/",
+    "example_en": "She fell and hurt her hip.",
+    "example_ka": "დაეცა და თეძო დაიზიანა.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Leg",
+    "georgian": "ფეხი",
+    "pronunciation": "/leɡ/",
+    "example_en": "He broke his leg.",
+    "example_ka": "მან ფეხი მოიტეხა.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Knee",
+    "georgian": "მუხლი",
+    "pronunciation": "/niː/",
+    "example_en": "She hurt her knee while running.",
+    "example_ka": "სირბილისას მუხლი დაიზიანა.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Ankle",
+    "georgian": "კოჭი",
+    "pronunciation": "/ˈæŋkəl/",
+    "example_en": "She twisted her ankle.",
+    "example_ka": "მან კოჭი გაიტეხა.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Foot",
+    "georgian": "ტერფი",
+    "pronunciation": "/fʊt/",
+    "example_en": "My feet are tired.",
+    "example_ka": "ტერფები დამღლია.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Toe",
+    "georgian": "ფეხის თითი",
+    "pronunciation": "/toʊ/",
+    "example_en": "I stubbed my toe.",
+    "example_ka": "ფეხის თითი მივარტყი.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Heel",
+    "georgian": "ქუსლი",
+    "pronunciation": "/hiːl/",
+    "example_en": "She wears high heels.",
+    "example_ka": "ის მაღალქუსლიანებს ატარებს.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Skin",
+    "georgian": "კანი",
+    "pronunciation": "/skɪn/",
+    "example_en": "Protect your skin from the sun.",
+    "example_ka": "კანი მზისგან დაიცავი.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Bone",
+    "georgian": "ძვალი",
+    "pronunciation": "/boʊn/",
+    "example_en": "The dog is chewing a bone.",
+    "example_ka": "ძაღლი ძვალს ღრღნის.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Muscle",
+    "georgian": "კუნთი",
+    "pronunciation": "/ˈmʌsəl/",
+    "example_en": "He has strong muscles.",
+    "example_ka": "მას ძლიერი კუნთები აქვს.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Blood",
+    "georgian": "სისხლი",
+    "pronunciation": "/blʌd/",
+    "example_en": "The blood test was normal.",
+    "example_ka": "სისხლის ანალიზი ნორმალური იყო.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Heart",
+    "georgian": "გული",
+    "pronunciation": "/hɑːrt/",
+    "example_en": "The heart pumps blood.",
+    "example_ka": "გული სისხლს ქაჩავს.",
+    "category": "body-parts",
+    "level": "A1"
+  },
+  {
+    "english": "Brain",
+    "georgian": "ტვინი",
+    "pronunciation": "/breɪn/",
+    "example_en": "The brain controls the body.",
+    "example_ka": "ტვინი სხეულს მართავს.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Lung",
+    "georgian": "ფილტვი",
+    "pronunciation": "/lʌŋ/",
+    "example_en": "Smoking damages the lungs.",
+    "example_ka": "მოწევა ფილტვებს აზიანებს.",
+    "category": "body-parts",
+    "level": "B1"
+  },
+  {
+    "english": "Liver",
+    "georgian": "ღვიძლი",
+    "pronunciation": "/ˈlɪvər/",
+    "example_en": "The liver cleans the blood.",
+    "example_ka": "ღვიძლი სისხლს ასუფთავებს.",
+    "category": "body-parts",
+    "level": "B1"
+  },
+  {
+    "english": "Kidney",
+    "georgian": "თირკმელი",
+    "pronunciation": "/ˈkɪdni/",
+    "example_en": "We have two kidneys.",
+    "example_ka": "ორი თირკმელი გვაქვს.",
+    "category": "body-parts",
+    "level": "B1"
+  },
+  {
+    "english": "Spine",
+    "georgian": "ხერხემალი",
+    "pronunciation": "/spaɪn/",
+    "example_en": "Keep your spine straight.",
+    "example_ka": "ხერხემალი სწორად დაიჭირე.",
+    "category": "body-parts",
+    "level": "B1"
+  },
+  {
+    "english": "Rib",
+    "georgian": "ნეკნი",
+    "pronunciation": "/rɪb/",
+    "example_en": "He cracked a rib.",
+    "example_ka": "მან ნეკნი გაიტეხა.",
+    "category": "body-parts",
+    "level": "B1"
+  },
+  {
+    "english": "Forehead",
+    "georgian": "შუბლი",
+    "pronunciation": "/ˈfɔːrhed/",
+    "example_en": "She has a high forehead.",
+    "example_ka": "მას მაღალი შუბლი აქვს.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Cheek",
+    "georgian": "ლოყა",
+    "pronunciation": "/tʃiːk/",
+    "example_en": "Her cheeks turned red.",
+    "example_ka": "ლოყები გაუწითლდა.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Chin",
+    "georgian": "ნიკაპი",
+    "pronunciation": "/tʃɪn/",
+    "example_en": "He has a strong chin.",
+    "example_ka": "მას მაგარი ნიკაპი აქვს.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Eyebrow",
+    "georgian": "წარბი",
+    "pronunciation": "/ˈaɪbraʊ/",
+    "example_en": "She raised her eyebrow.",
+    "example_ka": "მან წარბი აწია.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Eyelash",
+    "georgian": "წამწამი",
+    "pronunciation": "/ˈaɪlæʃ/",
+    "example_en": "She has long eyelashes.",
+    "example_ka": "მას გრძელი წამწამები აქვს.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Palm",
+    "georgian": "ხელისგული",
+    "pronunciation": "/pɑːm/",
+    "example_en": "She held the coin in her palm.",
+    "example_ka": "მან მონეტა ხელისგულში დაიჭირა.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Fist",
+    "georgian": "მუშტი",
+    "pronunciation": "/fɪst/",
+    "example_en": "He clenched his fist.",
+    "example_ka": "მან მუშტი შეკრა.",
+    "category": "body-parts",
+    "level": "A2"
+  },
+  {
+    "english": "Thigh",
+    "georgian": "ბარძაყი",
+    "pronunciation": "/θaɪ/",
+    "example_en": "His thigh muscles are strong.",
+    "example_ka": "ბარძაყის კუნთები ძლიერი აქვს.",
+    "category": "body-parts",
+    "level": "B1"
+  },
+  {
+    "english": "Calf",
+    "georgian": "კანჭი",
+    "pronunciation": "/kæf/",
+    "example_en": "My calves hurt after running.",
+    "example_ka": "სირბილის შემდეგ კანჭები მტკივა.",
+    "category": "body-parts",
+    "level": "B1"
+  }
 ]
