@@ -116,6 +116,33 @@ html.light .bg-white.text-\[\#1C1C1E\] {
   color: #FFFFFF !important;
 }
 
+/* Green 3D buttons keep their color in light mode */
+html.light .bg-green-500 {
+  background-color: rgb(34 197 94) !important;
+  color: #FFFFFF !important;
+}
+
+/* Light mode: gradient card backgrounds */
+html.light .from-\[\#242426\] {
+  --tw-gradient-from: #FFFFFF !important;
+}
+html.light .to-\[\#1a1a2e\] {
+  --tw-gradient-to: #F0F0F8 !important;
+}
+
+/* Light mode: colored badge backgrounds need no override — they use opacity */
+
+/* Light mode: sky-400 link color → darker for contrast */
+html.light .text-sky-400 {
+  color: rgb(2 132 199) !important;
+}
+html.light .text-sky-300 {
+  color: rgb(2 132 199) !important;
+}
+html.light .text-green-400 {
+  color: rgb(22 163 74) !important;
+}
+
 /* Stat badges */
 html.light .border-\[\#C8C8C0\]\/30 {
   border-color: #D1D5DB !important;

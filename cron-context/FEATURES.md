@@ -2,18 +2,22 @@
 
 ## Priority: HIGH 🔴
 
+### 🎯 THIS SPRINT (Feb 28 night)
+- [ ] **Session summary after flashcard practice** (words learned, accuracy, time) ← Cron 3
+- [ ] **Onboarding CTA on homepage** — "New here? Start with basics" button → A1 deck ← Cron 3
+- [ ] **Extract Word of Day to JSON** — remove 75+ hardcoded words from index.astro ← Cron 2
+- [ ] **Dashboard: streak counter + "continue learning" button** ← Cron 4
+- [ ] **Section links:** grammar lesson → related deck, flashcard session → related game ← Cron 4
+
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
 - [ ] "Words I Know" counter — show total mastered vocabulary
 - [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
 - [ ] Written input mode: type the answer instead of self-grading
-- [ ] AI-generated association images on cards (find free/cheap API)
 - [ ] Better card flip animation
-- [ ] Session summary after practice (words learned, accuracy, time spent)
 
 ### Dashboard
 - [ ] XP system — earn XP for every activity
-- [ ] Daily/weekly streaks with visual fire counter
 - [ ] Achievements/badges system
 - [ ] Overall vocabulary size tracker
 - [ ] Leaderboard (top learners this week)
@@ -21,8 +25,6 @@
 - [ ] Progress visualization — chart of words learned over time
 
 ### Section Interconnection
-- [ ] After grammar lesson → suggest related flashcard deck
-- [ ] After flashcard session → suggest related quiz/game
 - [ ] "Recommended for you" section on dashboard
 - [ ] Learning paths (beginner → intermediate → advanced)
 

@@ -1,372 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const wordsOfDay = [
-  { en: "Accomplish", ka: "მიღწევა", pron: "/əˈkɑːmplɪʃ/", example: "She accomplished her goal.", exampleKa: "მან მიზანს მიაღწია.", level: "B1" },
-  { en: "Resilient", ka: "გამძლე", pron: "/rɪˈzɪliənt/", example: "Children are very resilient.", exampleKa: "ბავშვები ძალიან გამძლეები არიან.", level: "B2" },
-  { en: "Opportunity", ka: "შესაძლებლობა", pron: "/ˌɑːpərˈtuːnəti/", example: "This is a great opportunity.", exampleKa: "ეს შესანიშნავი შესაძლებლობაა.", level: "A2" },
-  { en: "Knowledge", ka: "ცოდნა", pron: "/ˈnɑːlɪdʒ/", example: "Knowledge is power.", exampleKa: "ცოდნა ძალაა.", level: "A2" },
-  { en: "Curious", ka: "ცნობისმოყვარე", pron: "/ˈkjʊriəs/", example: "She is curious about science.", exampleKa: "ის ცნობისმოყვარეა მეცნიერებით.", level: "A2" },
-  { en: "Grateful", ka: "მადლიერი", pron: "/ˈɡreɪtfəl/", example: "I'm grateful for your help.", exampleKa: "მადლიერი ვარ შენი დახმარებისთვის.", level: "B1" },
-  { en: "Persevere", ka: "დაჟინება", pron: "/ˌpɜːrsəˈvɪr/", example: "You must persevere.", exampleKa: "დაჟინება გჭირდება.", level: "B2" },
-  { en: "Hello", ka: "გამარჯობა", pron: "/həˈloʊ/", example: "Hello, how are you?", exampleKa: "გამარჯობა, როგორ ხარ?", level: "A1" },
-  { en: "Friend", ka: "მეგობარი", pron: "/frend/", example: "She is my best friend.", exampleKa: "ის ჩემი საუკეთესო მეგობარია.", level: "A1" },
-  { en: "Family", ka: "ოჯახი", pron: "/ˈfæməli/", example: "I love my family.", exampleKa: "მე მიყვარს ჩემი ოჯახი.", level: "A1" },
-  { en: "Water", ka: "წყალი", pron: "/ˈwɔːtər/", example: "Can I have some water?", exampleKa: "შეიძლება წყალი?", level: "A1" },
-  { en: "Beautiful", ka: "ლამაზი", pron: "/ˈbjuːtɪfəl/", example: "What a beautiful day!", exampleKa: "რა ლამაზი დღეა!", level: "A1" },
-  { en: "Important", ka: "მნიშვნელოვანი", pron: "/ɪmˈpɔːrtənt/", example: "Education is important.", exampleKa: "განათლება მნიშვნელოვანია.", level: "A2" },
-  { en: "Different", ka: "განსხვავებული", pron: "/ˈdɪfərənt/", example: "They are very different.", exampleKa: "ისინი ძალიან განსხვავებულები არიან.", level: "A2" },
-  { en: "Remember", ka: "დამახსოვრება", pron: "/rɪˈmembər/", example: "Remember to call me.", exampleKa: "დამირეკე, არ დაგავიწყდეს.", level: "A2" },
-  { en: "Understand", ka: "გაგება", pron: "/ˌʌndərˈstænd/", example: "I understand you.", exampleKa: "მე გესმი.", level: "A2" },
-  { en: "Together", ka: "ერთად", pron: "/təˈɡeðər/", example: "Let's work together.", exampleKa: "ერთად ვიმუშაოთ.", level: "A2" },
-  { en: "Experience", ka: "გამოცდილება", pron: "/ɪkˈspɪriəns/", example: "It was a great experience.", exampleKa: "ეს შესანიშნავი გამოცდილება იყო.", level: "B1" },
-  { en: "Achieve", ka: "მიღწევა", pron: "/əˈtʃiːv/", example: "You can achieve anything.", exampleKa: "შენ ყველაფრის მიღწევა შეგიძლია.", level: "B1" },
-  { en: "Improve", ka: "გაუმჯობესება", pron: "/ɪmˈpruːv/", example: "I want to improve my English.", exampleKa: "მინდა ინგლისური გავიუმჯობესო.", level: "A2" },
-  { en: "Encourage", ka: "წახალისება", pron: "/ɪnˈkɜːrɪdʒ/", example: "Teachers encourage students.", exampleKa: "მასწავლებლები ახალისებენ მოსწავლეებს.", level: "B1" },
-  { en: "Confident", ka: "თავდაჯერებული", pron: "/ˈkɑːnfɪdənt/", example: "She feels confident.", exampleKa: "ის თავდაჯერებულად გრძნობს თავს.", level: "B1" },
-  { en: "Develop", ka: "განვითარება", pron: "/dɪˈveləp/", example: "We need to develop new skills.", exampleKa: "ახალი უნარების განვითარება გვჭირდება.", level: "B1" },
-  { en: "Success", ka: "წარმატება", pron: "/səkˈses/", example: "Hard work leads to success.", exampleKa: "შრომა წარმატებამდე მიგვიყვანს.", level: "A2" },
-  { en: "Challenge", ka: "გამოწვევა", pron: "/ˈtʃælɪndʒ/", example: "This is a big challenge.", exampleKa: "ეს დიდი გამოწვევაა.", level: "B1" },
-  { en: "Consider", ka: "განხილვა", pron: "/kənˈsɪdər/", example: "Please consider my offer.", exampleKa: "გთხოვ, განიხილე ჩემი შეთავაზება.", level: "B1" },
-  { en: "Appreciate", ka: "დაფასება", pron: "/əˈpriːʃieɪt/", example: "I appreciate your help.", exampleKa: "ვაფასებ შენს დახმარებას.", level: "B1" },
-  { en: "Discover", ka: "აღმოჩენა", pron: "/dɪˈskʌvər/", example: "Scientists discover new things.", exampleKa: "მეცნიერები ახალ რამეებს აღმოაჩენენ.", level: "A2" },
-  { en: "Practice", ka: "ვარჯიში", pron: "/ˈpræktɪs/", example: "Practice makes perfect.", exampleKa: "ვარჯიშმა სრულყოფილება გამოიღო.", level: "A2" },
-  { en: "Mistake", ka: "შეცდომა", pron: "/mɪˈsteɪk/", example: "Everyone makes mistakes.", exampleKa: "ყველა უშვებს შეცდომებს.", level: "A2" },
-  { en: "Patient", ka: "მოთმინე", pron: "/ˈpeɪʃənt/", example: "Be patient with yourself.", exampleKa: "იყავი მოთმინე საკუთარი თავის მიმართ.", level: "A2" },
-  { en: "Advice", ka: "რჩევა", pron: "/ədˈvaɪs/", example: "Can you give me some advice?", exampleKa: "შეგიძლია რჩევა მომცე?", level: "A2" },
-  { en: "Comfortable", ka: "კომფორტული", pron: "/ˈkʌmftərbəl/", example: "This chair is comfortable.", exampleKa: "ეს სკამი კომფორტულია.", level: "A2" },
-  { en: "Dangerous", ka: "საშიში", pron: "/ˈdeɪndʒərəs/", example: "This road is dangerous.", exampleKa: "ეს გზა საშიშია.", level: "A2" },
-  { en: "Honest", ka: "პატიოსანი", pron: "/ˈɑːnɪst/", example: "He is an honest man.", exampleKa: "ის პატიოსანი კაცია.", level: "A2" },
-  { en: "Polite", ka: "თავაზიანი", pron: "/pəˈlaɪt/", example: "She is always polite.", exampleKa: "ის ყოველთვის თავაზიანია.", level: "A2" },
-  { en: "Intelligent", ka: "ჭკვიანი", pron: "/ɪnˈtelɪdʒənt/", example: "She is very intelligent.", exampleKa: "ის ძალიან ჭკვიანია.", level: "B1" },
-  { en: "Enthusiastic", ka: "ენთუზიასტი", pron: "/ɪnˌθuːziˈæstɪk/", example: "He is enthusiastic about learning.", exampleKa: "ის ენთუზიასტია სწავლის მიმართ.", level: "B1" },
-  { en: "Generous", ka: "გულუხვი", pron: "/ˈdʒenərəs/", example: "She is very generous.", exampleKa: "ის ძალიან გულუხვია.", level: "B1" },
-  { en: "Purpose", ka: "მიზანი", pron: "/ˈpɜːrpəs/", example: "What is your purpose?", exampleKa: "რა არის შენი მიზანი?", level: "B1" },
-  { en: "Struggle", ka: "ბრძოლა", pron: "/ˈstrʌɡəl/", example: "Life is a struggle.", exampleKa: "ცხოვრება ბრძოლაა.", level: "B1" },
-  { en: "Valuable", ka: "ღირებული", pron: "/ˈvæljuəbəl/", example: "Time is valuable.", exampleKa: "დრო ღირებულია.", level: "B1" },
-  { en: "Create", ka: "შექმნა", pron: "/kriˈeɪt/", example: "Let's create something new.", exampleKa: "შევქმნათ რაღაც ახალი.", level: "A2" },
-  { en: "Solve", ka: "გადაჭრა", pron: "/sɑːlv/", example: "Can you solve this problem?", exampleKa: "შეგიძლია ეს პრობლემა გადაჭრა?", level: "B1" },
-  { en: "Compare", ka: "შედარება", pron: "/kəmˈper/", example: "Don't compare yourself to others.", exampleKa: "არ შეადარო თავი სხვებს.", level: "B1" },
-  { en: "Decision", ka: "გადაწყვეტილება", pron: "/dɪˈsɪʒən/", example: "It was a difficult decision.", exampleKa: "ეს რთული გადაწყვეტილება იყო.", level: "B1" },
-  { en: "Calm", ka: "მშვიდი", pron: "/kɑːm/", example: "Stay calm.", exampleKa: "იყავი მშვიდი.", level: "A2" },
-  { en: "Brave", ka: "მამაცი", pron: "/breɪv/", example: "She was very brave.", exampleKa: "ის ძალიან მამაცი იყო.", level: "A2" },
-  { en: "Reliable", ka: "სანდო", pron: "/rɪˈlaɪəbəl/", example: "He is a reliable person.", exampleKa: "ის სანდო ადამიანია.", level: "B1" },
-  { en: "Explain", ka: "ახსნა", pron: "/ɪkˈspleɪn/", example: "Can you explain this?", exampleKa: "შეგიძლია ეს ახსნა?", level: "A2" },
-  { en: "Obvious", ka: "აშკარა", pron: "/ˈɑːbviəs/", example: "The answer is obvious.", exampleKa: "პასუხი აშკარაა.", level: "B1" },
-  { en: "Suggestion", ka: "შეთავაზება", pron: "/səˈdʒestʃən/", example: "Do you have any suggestions?", exampleKa: "შეთავაზება ხომ არ გაქვს?", level: "B1" },
-  { en: "Describe", ka: "აღწერა", pron: "/dɪˈskraɪb/", example: "Describe your favorite place.", exampleKa: "აღწერე შენი საყვარელი ადგილი.", level: "A2" },
-  { en: "Prepare", ka: "მომზადება", pron: "/prɪˈper/", example: "We need to prepare for the exam.", exampleKa: "გამოცდისთვის მომზადება გვჭირდება.", level: "A2" },
-  { en: "Concentrate", ka: "კონცენტრაცია", pron: "/ˈkɑːnsəntreɪt/", example: "I can't concentrate.", exampleKa: "კონცენტრაცია არ შემიძლია.", level: "B1" },
-  { en: "Organize", ka: "ორგანიზება", pron: "/ˈɔːrɡənaɪz/", example: "Let's organize a meeting.", exampleKa: "მოდი, შეხვედრა მოვაწყოთ.", level: "B1" },
-  { en: "Behavior", ka: "ქცევა", pron: "/bɪˈheɪvjər/", example: "His behavior was strange.", exampleKa: "მისი ქცევა უცნაური იყო.", level: "B1" },
-  { en: "Environment", ka: "გარემო", pron: "/ɪnˈvaɪrənmənt/", example: "Protect the environment.", exampleKa: "დაიცავი გარემო.", level: "B1" },
-  { en: "Community", ka: "საზოგადოება", pron: "/kəˈmjuːnəti/", example: "We live in a small community.", exampleKa: "პატარა საზოგადოებაში ვცხოვრობთ.", level: "B1" },
-  { en: "Research", ka: "კვლევა", pron: "/rɪˈsɜːrtʃ/", example: "She does research in biology.", exampleKa: "ის ბიოლოგიაში კვლევას აკეთებს.", level: "B1" },
-  { en: "Attract", ka: "მიზიდვა", pron: "/əˈtrækt/", example: "The city attracts tourists.", exampleKa: "ქალაქი ტურისტებს იზიდავს.", level: "B1" },
-  { en: "Available", ka: "ხელმისაწვდომი", pron: "/əˈveɪləbəl/", example: "Is this seat available?", exampleKa: "ეს ადგილი თავისუფალია?", level: "A2" },
-  { en: "Benefit", ka: "სარგებელი", pron: "/ˈbenɪfɪt/", example: "Exercise has many benefits.", exampleKa: "ვარჯიშს ბევრი სარგებელი აქვს.", level: "B1" },
-  { en: "Responsibility", ka: "პასუხისმგებლობა", pron: "/rɪˌspɑːnsəˈbɪləti/", example: "It's your responsibility.", exampleKa: "ეს შენი პასუხისმგებლობაა.", level: "B1" },
-  { en: "Communicate", ka: "კომუნიკაცია", pron: "/kəˈmjuːnɪkeɪt/", example: "We need to communicate better.", exampleKa: "უკეთ უნდა ვაკომუნიკაციოთ.", level: "B1" },
-  { en: "Doubt", ka: "ეჭვი", pron: "/daʊt/", example: "I have no doubt about it.", exampleKa: "ეჭვი არ მეპარება.", level: "B1" },
-  { en: "Effort", ka: "ძალისხმევა", pron: "/ˈefərt/", example: "It takes effort to learn.", exampleKa: "სწავლას ძალისხმევა სჭირდება.", level: "B1" },
-  { en: "Focus", ka: "ფოკუსირება", pron: "/ˈfoʊkəs/", example: "Focus on your goals.", exampleKa: "ფოკუსირდი შენს მიზნებზე.", level: "A2" },
-  { en: "Habit", ka: "ჩვევა", pron: "/ˈhæbɪt/", example: "Reading is a good habit.", exampleKa: "კითხვა კარგი ჩვევაა.", level: "A2" },
-  { en: "Imagine", ka: "წარმოდგენა", pron: "/ɪˈmædʒɪn/", example: "Imagine a better world.", exampleKa: "წარმოიდგინე უკეთესი სამყარო.", level: "A2" },
-  { en: "Journey", ka: "მოგზაურობა", pron: "/ˈdʒɜːrni/", example: "Life is a journey.", exampleKa: "ცხოვრება მოგზაურობაა.", level: "A2" },
-  { en: "Language", ka: "ენა", pron: "/ˈlæŋɡwɪdʒ/", example: "How many languages do you speak?", exampleKa: "რამდენ ენაზე ლაპარაკობ?", level: "A1" },
-  { en: "Nature", ka: "ბუნება", pron: "/ˈneɪtʃər/", example: "Nature is beautiful.", exampleKa: "ბუნება ლამაზია.", level: "A1" },
-  { en: "Opinion", ka: "აზრი", pron: "/əˈpɪnjən/", example: "What is your opinion?", exampleKa: "რა აზრის ხარ?", level: "B1" },
-  { en: "Progress", ka: "პროგრესი", pron: "/ˈprɑːɡres/", example: "You are making progress.", exampleKa: "შენ პროგრესს აკეთებ.", level: "B1" },
-  { en: "Quality", ka: "ხარისხი", pron: "/ˈkwɑːləti/", example: "Quality is more important than quantity.", exampleKa: "ხარისხი რაოდენობაზე მნიშვნელოვანია.", level: "B1" },
-  { en: "Respect", ka: "პატივისცემა", pron: "/rɪˈspekt/", example: "We must respect each other.", exampleKa: "ერთმანეთის პატივისცემა უნდა.", level: "A2" },
-  { en: "Simple", ka: "მარტივი", pron: "/ˈsɪmpəl/", example: "The answer is simple.", exampleKa: "პასუხი მარტივია.", level: "A1" },
-  { en: "Tradition", ka: "ტრადიცია", pron: "/trəˈdɪʃən/", example: "Georgia has many traditions.", exampleKa: "საქართველოს ბევრი ტრადიცია აქვს.", level: "B1" },
-  { en: "Unique", ka: "უნიკალური", pron: "/juˈniːk/", example: "Everyone is unique.", exampleKa: "ყველა უნიკალურია.", level: "B1" },
-  { en: "Volunteer", ka: "მოხალისე", pron: "/ˌvɑːlənˈtɪr/", example: "She works as a volunteer.", exampleKa: "ის მოხალისედ მუშაობს.", level: "B1" },
-  { en: "Weather", ka: "ამინდი", pron: "/ˈweðər/", example: "The weather is nice today.", exampleKa: "დღეს ამინდი კარგია.", level: "A1" },
-  { en: "Yesterday", ka: "გუშინ", pron: "/ˈjestərdeɪ/", example: "I saw him yesterday.", exampleKa: "გუშინ ვნახე.", level: "A1" },
-  { en: "Accept", ka: "მიღება", pron: "/əkˈsept/", example: "I accept your invitation.", exampleKa: "ვიღებ შენს მოწვევას.", level: "A2" },
-  { en: "Attention", ka: "ყურადღება", pron: "/əˈtenʃən/", example: "Pay attention!", exampleKa: "ყურადღება მიაქციე!", level: "A2" },
-  { en: "Balance", ka: "ბალანსი", pron: "/ˈbæləns/", example: "Find your balance.", exampleKa: "იპოვე შენი ბალანსი.", level: "B1" },
-  { en: "Career", ka: "კარიერა", pron: "/kəˈrɪr/", example: "She has a great career.", exampleKa: "მას შესანიშნავი კარიერა აქვს.", level: "B1" },
-  { en: "Culture", ka: "კულტურა", pron: "/ˈkʌltʃər/", example: "Georgian culture is rich.", exampleKa: "ქართული კულტურა მდიდარია.", level: "A2" },
-  { en: "Determine", ka: "განსაზღვრა", pron: "/dɪˈtɜːrmɪn/", example: "We need to determine the cause.", exampleKa: "მიზეზის განსაზღვრა გვჭირდება.", level: "B2" },
-  { en: "Eager", ka: "მოუთმენელი", pron: "/ˈiːɡər/", example: "She is eager to learn.", exampleKa: "ის მოუთმენელია სწავლის.", level: "B1" },
-  { en: "Flexible", ka: "მოქნილი", pron: "/ˈfleksəbəl/", example: "Be flexible with your plans.", exampleKa: "იყავი მოქნილი გეგმებში.", level: "B1" },
-  { en: "Goal", ka: "მიზანი", pron: "/ɡoʊl/", example: "Set clear goals.", exampleKa: "დაისახე მკაფიო მიზნები.", level: "A2" },
-  { en: "Hesitate", ka: "ყოყმანი", pron: "/ˈhezɪteɪt/", example: "Don't hesitate to ask.", exampleKa: "არ მოიყოყმანო კითხვაზე.", level: "B1" },
-  { en: "Independent", ka: "დამოუკიდებელი", pron: "/ˌɪndɪˈpendənt/", example: "She is very independent.", exampleKa: "ის ძალიან დამოუკიდებელია.", level: "B1" },
-  { en: "Jealous", ka: "ეჭვიანი", pron: "/ˈdʒeləs/", example: "Don't be jealous.", exampleKa: "ნუ ეჭვიანობ.", level: "B1" },
-  { en: "Keen", ka: "მოწადინე", pron: "/kiːn/", example: "She is keen on sports.", exampleKa: "ის სპორტით არის გატაცებული.", level: "B1" },
-  { en: "Luxury", ka: "ფუფუნება", pron: "/ˈlʌkʃəri/", example: "It's a luxury hotel.", exampleKa: "ეს ფუფუნების სასტუმროა.", level: "B1" },
-  { en: "Manage", ka: "მართვა", pron: "/ˈmænɪdʒ/", example: "Can you manage this task?", exampleKa: "შეგიძლია ამ დავალების მართვა?", level: "B1" },
-  { en: "Necessary", ka: "აუცილებელი", pron: "/ˈnesəseri/", example: "Sleep is necessary for health.", exampleKa: "ძილი ჯანმრთელობისთვის აუცილებელია.", level: "A2" },
-  { en: "Original", ka: "ორიგინალი", pron: "/əˈrɪdʒənəl/", example: "This is the original version.", exampleKa: "ეს ორიგინალი ვერსიაა.", level: "B1" },
-  { en: "Particular", ka: "კონკრეტული", pron: "/pərˈtɪkjələr/", example: "Is there a particular reason?", exampleKa: "კონკრეტული მიზეზი ხომ არაა?", level: "B1" },
-  { en: "Quite", ka: "საკმაოდ", pron: "/kwaɪt/", example: "It's quite cold today.", exampleKa: "დღეს საკმაოდ ცივა.", level: "A2" },
-  { en: "Reduce", ka: "შემცირება", pron: "/rɪˈduːs/", example: "We need to reduce waste.", exampleKa: "ნარჩენების შემცირება გვჭირდება.", level: "B1" },
-  { en: "Satisfy", ka: "დაკმაყოფილება", pron: "/ˈsætɪsfaɪ/", example: "Nothing satisfies him.", exampleKa: "არაფერი აკმაყოფილებს.", level: "B1" },
-  { en: "Typical", ka: "ტიპიური", pron: "/ˈtɪpɪkəl/", example: "This is a typical Georgian dish.", exampleKa: "ეს ტიპიური ქართული კერძია.", level: "B1" },
-  { en: "Urgent", ka: "სასწრაფო", pron: "/ˈɜːrdʒənt/", example: "This is urgent.", exampleKa: "ეს სასწრაფოა.", level: "B1" },
-  { en: "Variety", ka: "მრავალფეროვნება", pron: "/vəˈraɪəti/", example: "There is a great variety of food.", exampleKa: "საკვების დიდი მრავალფეროვნებაა.", level: "B1" },
-  { en: "Wisdom", ka: "სიბრძნე", pron: "/ˈwɪzdəm/", example: "With age comes wisdom.", exampleKa: "ასაკთან ერთად სიბრძნე მოდის.", level: "B2" },
-  { en: "Yield", ka: "დათმობა", pron: "/jiːld/", example: "Yield to traffic.", exampleKa: "დაუთმე გზა.", level: "B2" },
-  { en: "Abandon", ka: "მიტოვება", pron: "/əˈbændən/", example: "Never abandon your dreams.", exampleKa: "არასდროს მიატოვო შენი ოცნებები.", level: "B2" },
-  { en: "Brilliant", ka: "ბრწყინვალე", pron: "/ˈbrɪljənt/", example: "What a brilliant idea!", exampleKa: "რა ბრწყინვალე იდეაა!", level: "B1" },
-  { en: "Capture", ka: "ხელში ჩაგდება", pron: "/ˈkæptʃər/", example: "The photo captures the moment.", exampleKa: "ფოტო მომენტს იჭერს.", level: "B1" },
-  { en: "Delay", ka: "დაგვიანება", pron: "/dɪˈleɪ/", example: "The flight was delayed.", exampleKa: "ფრენა დაგვიანდა.", level: "B1" },
-  { en: "Emotion", ka: "ემოცია", pron: "/ɪˈmoʊʃən/", example: "She showed no emotion.", exampleKa: "მან ემოცია არ გამოხატა.", level: "B1" },
-  { en: "Familiar", ka: "ნაცნობი", pron: "/fəˈmɪliər/", example: "This place looks familiar.", exampleKa: "ეს ადგილი ნაცნობად გამოიყურება.", level: "A2" },
-  { en: "Gradually", ka: "თანდათან", pron: "/ˈɡrædʒuəli/", example: "Things improved gradually.", exampleKa: "საქმეები თანდათან გაუმჯობესდა.", level: "B1" },
-  { en: "Harmony", ka: "ჰარმონია", pron: "/ˈhɑːrməni/", example: "They live in harmony.", exampleKa: "ისინი ჰარმონიაში ცხოვრობენ.", level: "B2" },
-  { en: "Influence", ka: "გავლენა", pron: "/ˈɪnfluəns/", example: "Music has a big influence on me.", exampleKa: "მუსიკას დიდი გავლენა აქვს ჩემზე.", level: "B1" },
-  { en: "Judge", ka: "მსჯავრი", pron: "/dʒʌdʒ/", example: "Don't judge people.", exampleKa: "ნუ განსჯი ადამიანებს.", level: "B1" },
-  { en: "Maintain", ka: "შენარჩუნება", pron: "/meɪnˈteɪn/", example: "Maintain a healthy lifestyle.", exampleKa: "შეინარჩუნე ჯანსაღი ცხოვრების წესი.", level: "B1" },
-  { en: "Narrow", ka: "ვიწრო", pron: "/ˈnæroʊ/", example: "The street is very narrow.", exampleKa: "ქუჩა ძალიან ვიწროა.", level: "A2" },
-  { en: "Obtain", ka: "მოპოვება", pron: "/əbˈteɪn/", example: "She obtained her degree.", exampleKa: "მან ხარისხი მოიპოვა.", level: "B2" },
-  { en: "Prevent", ka: "თავიდან აცილება", pron: "/prɪˈvent/", example: "We must prevent accidents.", exampleKa: "ავარიების თავიდან აცილება უნდა.", level: "B1" },
-  { en: "Recognize", ka: "ამოცნობა", pron: "/ˈrekəɡnaɪz/", example: "I didn't recognize him.", exampleKa: "ვერ ვიცანი.", level: "B1" },
-  { en: "Significant", ka: "მნიშვნელოვანი", pron: "/sɪɡˈnɪfɪkənt/", example: "This is a significant change.", exampleKa: "ეს მნიშვნელოვანი ცვლილებაა.", level: "B2" },
-  { en: "Transform", ka: "გარდაქმნა", pron: "/trænsˈfɔːrm/", example: "Technology transforms our lives.", exampleKa: "ტექნოლოგია ცხოვრებას გარდაქმნის.", level: "B2" },
-  { en: "Achieve", ka: "მიღწევა", pron: "/əˈtʃiːv/", example: "She achieved her dreams.", exampleKa: "მან ოცნებები აისრულა.", level: "B1" },
-  { en: "Belong", ka: "ეკუთვნის", pron: "/bɪˈlɔːŋ/", example: "This book belongs to me.", exampleKa: "ეს წიგნი მეკუთვნის.", level: "A2" },
-  { en: "Celebrate", ka: "ზეიმი", pron: "/ˈseləbreɪt/", example: "Let's celebrate!", exampleKa: "მოდი, ვიზეიმოთ!", level: "A2" },
-  { en: "Depend", ka: "დამოკიდებულება", pron: "/dɪˈpend/", example: "It depends on you.", exampleKa: "ეს შენზეა დამოკიდებული.", level: "A2" },
-  { en: "Efficient", ka: "ეფექტური", pron: "/ɪˈfɪʃənt/", example: "She is very efficient.", exampleKa: "ის ძალიან ეფექტურია.", level: "B1" },
-  { en: "Fortunate", ka: "იღბლიანი", pron: "/ˈfɔːrtʃənət/", example: "We are fortunate to be here.", exampleKa: "იღბლიანები ვართ, რომ აქ ვართ.", level: "B2" },
-  { en: "Guarantee", ka: "გარანტია", pron: "/ˌɡærənˈtiː/", example: "I guarantee it will work.", exampleKa: "გარანტიას გაძლევ, რომ იმუშავებს.", level: "B1" },
-  { en: "Highlight", ka: "ხაზგასმა", pron: "/ˈhaɪlaɪt/", example: "Let me highlight the main points.", exampleKa: "ნება მიბოძეთ მთავარ პუნქტებს ხაზი გავუსვა.", level: "B1" },
-  { en: "Inspire", ka: "შთაგონება", pron: "/ɪnˈspaɪər/", example: "She inspires everyone.", exampleKa: "ის ყველას აშთაგონებს.", level: "B1" },
-  { en: "Justify", ka: "გამართლება", pron: "/ˈdʒʌstɪfaɪ/", example: "Can you justify your decision?", exampleKa: "შეგიძლია გადაწყვეტილების გამართლება?", level: "B2" },
-  { en: "Launch", ka: "გაშვება", pron: "/lɔːntʃ/", example: "They launched a new product.", exampleKa: "მათ ახალი პროდუქტი გაუშვეს.", level: "B1" },
-  { en: "Mention", ka: "ხსენება", pron: "/ˈmenʃən/", example: "Don't mention it.", exampleKa: "არაფერია.", level: "B1" },
-  { en: "Negotiate", ka: "მოლაპარაკება", pron: "/nɪˈɡoʊʃieɪt/", example: "We need to negotiate.", exampleKa: "მოლაპარაკება გვჭირდება.", level: "B2" },
-  { en: "Overcome", ka: "გადალახვა", pron: "/ˌoʊvərˈkʌm/", example: "She overcame her fears.", exampleKa: "მან შიშები გადალახა.", level: "B1" },
-  { en: "Predict", ka: "წინასწარმეტყველება", pron: "/prɪˈdɪkt/", example: "It's hard to predict the future.", exampleKa: "მომავლის წინასწარმეტყველება რთულია.", level: "B1" },
-  { en: "Quantity", ka: "რაოდენობა", pron: "/ˈkwɑːntəti/", example: "Quality over quantity.", exampleKa: "ხარისხი რაოდენობაზე მეტია.", level: "B1" },
-  { en: "Reveal", ka: "გამოვლენა", pron: "/rɪˈviːl/", example: "The truth was revealed.", exampleKa: "სიმართლე გამოვლინდა.", level: "B1" },
-  { en: "Sensitive", ka: "მგრძნობიარე", pron: "/ˈsensətɪv/", example: "She is very sensitive.", exampleKa: "ის ძალიან მგრძნობიარეა.", level: "B1" },
-  { en: "Tendency", ka: "ტენდენცია", pron: "/ˈtendənsi/", example: "He has a tendency to be late.", exampleKa: "მას დაგვიანების ტენდენცია აქვს.", level: "B2" },
-  { en: "Ultimately", ka: "საბოლოოდ", pron: "/ˈʌltɪmətli/", example: "Ultimately, you decide.", exampleKa: "საბოლოოდ, შენ წყვეტ.", level: "B2" },
-  { en: "Vivid", ka: "ნათელი", pron: "/ˈvɪvɪd/", example: "She has a vivid imagination.", exampleKa: "მას ნათელი წარმოსახვა აქვს.", level: "B2" },
-  { en: "Wander", ka: "ხეტიალი", pron: "/ˈwɑːndər/", example: "I like to wander around the city.", exampleKa: "ქალაქში ხეტიალი მიყვარს.", level: "B1" },
-  { en: "Accurate", ka: "ზუსტი", pron: "/ˈækjərət/", example: "The data is accurate.", exampleKa: "მონაცემები ზუსტია.", level: "B1" },
-  { en: "Boundary", ka: "საზღვარი", pron: "/ˈbaʊndəri/", example: "Set healthy boundaries.", exampleKa: "დაადგინე ჯანსაღი საზღვრები.", level: "B2" },
-  { en: "Conclude", ka: "დასკვნა", pron: "/kənˈkluːd/", example: "I conclude that he was right.", exampleKa: "ვასკვნი, რომ ის მართალი იყო.", level: "B2" },
-  { en: "Deserve", ka: "დამსახურება", pron: "/dɪˈzɜːrv/", example: "You deserve happiness.", exampleKa: "შენ ბედნიერებას იმსახურებ.", level: "B1" },
-  { en: "Enormous", ka: "უზარმაზარი", pron: "/ɪˈnɔːrməs/", example: "The building is enormous.", exampleKa: "შენობა უზარმაზარია.", level: "B1" },
-  { en: "Frequent", ka: "ხშირი", pron: "/ˈfriːkwənt/", example: "He is a frequent visitor.", exampleKa: "ის ხშირი სტუმარია.", level: "B1" },
-  { en: "Genuine", ka: "ნამდვილი", pron: "/ˈdʒenjuɪn/", example: "She is a genuine person.", exampleKa: "ის ნამდვილი ადამიანია.", level: "B2" },
-  { en: "Humble", ka: "თავმდაბალი", pron: "/ˈhʌmbəl/", example: "Stay humble.", exampleKa: "იყავი თავმდაბალი.", level: "B1" },
-  { en: "Invest", ka: "ინვესტირება", pron: "/ɪnˈvest/", example: "Invest in your education.", exampleKa: "განათლებაში ჩადე ინვესტიცია.", level: "B1" },
-  { en: "Kindness", ka: "სიკეთე", pron: "/ˈkaɪndnəs/", example: "Kindness matters.", exampleKa: "სიკეთეს მნიშვნელობა აქვს.", level: "A2" },
-  { en: "Limit", ka: "ლიმიტი", pron: "/ˈlɪmɪt/", example: "There is no limit.", exampleKa: "ლიმიტი არ არსებობს.", level: "A2" },
-  { en: "Motivate", ka: "მოტივაცია", pron: "/ˈmoʊtɪveɪt/", example: "What motivates you?", exampleKa: "რა გაძლევს მოტივაციას?", level: "B1" },
-  { en: "Notice", ka: "შენიშვნა", pron: "/ˈnoʊtɪs/", example: "Did you notice anything?", exampleKa: "რამე ხომ არ შეამჩნიე?", level: "A2" },
-  { en: "Outstanding", ka: "გამორჩეული", pron: "/aʊtˈstændɪŋ/", example: "She did outstanding work.", exampleKa: "მან გამორჩეული სამუშაო შეასრულა.", level: "B2" },
-  { en: "Persuade", ka: "დარწმუნება", pron: "/pərˈsweɪd/", example: "She persuaded me to go.", exampleKa: "მან წასვლაში დამარწმუნა.", level: "B2" },
-  { en: "Rapid", ka: "სწრაფი", pron: "/ˈræpɪd/", example: "The city saw rapid growth.", exampleKa: "ქალაქმა სწრაფი ზრდა განიცადა.", level: "B1" },
-  { en: "Severe", ka: "მძიმე", pron: "/sɪˈvɪr/", example: "The damage was severe.", exampleKa: "ზიანი მძიმე იყო.", level: "B2" },
-  { en: "Thorough", ka: "საფუძვლიანი", pron: "/ˈθɜːroʊ/", example: "Do a thorough check.", exampleKa: "საფუძვლიანი შემოწმება გააკეთე.", level: "B2" },
-  { en: "Utilize", ka: "გამოყენება", pron: "/ˈjuːtəlaɪz/", example: "Utilize your skills.", exampleKa: "გამოიყენე შენი უნარები.", level: "B2" },
-  { en: "Vulnerable", ka: "მოწყვლადი", pron: "/ˈvʌlnərəbəl/", example: "Children are vulnerable.", exampleKa: "ბავშვები მოწყვლადები არიან.", level: "B2" },
-  { en: "Widespread", ka: "ფართოდ გავრცელებული", pron: "/ˈwaɪdspred/", example: "The problem is widespread.", exampleKa: "პრობლემა ფართოდ გავრცელებულია.", level: "B2" },
-  { en: "Aware", ka: "ცნობიერი", pron: "/əˈwer/", example: "Be aware of your surroundings.", exampleKa: "გარემოცვაზე ყური იქონიე.", level: "B1" },
-  { en: "Beneath", ka: "ქვემოთ", pron: "/bɪˈniːθ/", example: "The treasure was beneath the tree.", exampleKa: "განძი ხის ქვემოთ იყო.", level: "B1" },
-  { en: "Constant", ka: "მუდმივი", pron: "/ˈkɑːnstənt/", example: "Change is constant.", exampleKa: "ცვლილება მუდმივია.", level: "B1" },
-  { en: "Domestic", ka: "შიდა", pron: "/dəˈmestɪk/", example: "Domestic flights are cheap.", exampleKa: "შიდა ფრენები იაფია.", level: "B1" },
-  { en: "Engage", ka: "ჩართვა", pron: "/ɪnˈɡeɪdʒ/", example: "Engage with the community.", exampleKa: "ჩაერთე საზოგადოებაში.", level: "B2" },
-  { en: "Firm", ka: "მტკიცე", pron: "/fɜːrm/", example: "She was firm in her decision.", exampleKa: "ის მტკიცე იყო გადაწყვეტილებაში.", level: "B1" },
-  { en: "Grab", ka: "წაგლეჯა", pron: "/ɡræb/", example: "Grab your coat.", exampleKa: "აიღე ქურთუკი.", level: "A2" },
-  { en: "Heritage", ka: "მემკვიდრეობა", pron: "/ˈherɪtɪdʒ/", example: "Georgia has a rich heritage.", exampleKa: "საქართველოს მდიდარი მემკვიდრეობა აქვს.", level: "B2" },
-  { en: "Impact", ka: "გავლენა", pron: "/ˈɪmpækt/", example: "Education has a big impact.", exampleKa: "განათლებას დიდი გავლენა აქვს.", level: "B1" },
-  { en: "Joyful", ka: "მხიარული", pron: "/ˈdʒɔɪfəl/", example: "It was a joyful celebration.", exampleKa: "ეს მხიარული ზეიმი იყო.", level: "B1" },
-  { en: "Knowledge", ka: "ცოდნა", pron: "/ˈnɑːlɪdʒ/", example: "Seek knowledge every day.", exampleKa: "ყოველდღე ეძიე ცოდნა.", level: "A2" },
-  { en: "Loyal", ka: "ერთგული", pron: "/ˈlɔɪəl/", example: "Dogs are loyal animals.", exampleKa: "ძაღლები ერთგული ცხოველები არიან.", level: "B1" },
-  { en: "Mature", ka: "მოწიფული", pron: "/məˈtʃʊr/", example: "She is very mature for her age.", exampleKa: "ის ძალიან მოწიფულია ასაკისთვის.", level: "B1" },
-  { en: "Noble", ka: "კეთილშობილი", pron: "/ˈnoʊbəl/", example: "Teaching is a noble profession.", exampleKa: "სწავლება კეთილშობილი პროფესიაა.", level: "B2" },
-  { en: "Obstacle", ka: "დაბრკოლება", pron: "/ˈɑːbstəkəl/", example: "Don't let obstacles stop you.", exampleKa: "ნუ მისცემ დაბრკოლებებს შეგაჩერონ.", level: "B1" },
-  { en: "Possess", ka: "ფლობა", pron: "/pəˈzes/", example: "She possesses great talent.", exampleKa: "მას დიდი ნიჭი აქვს.", level: "B2" },
-  { en: "Require", ka: "მოთხოვნა", pron: "/rɪˈkwaɪər/", example: "This job requires experience.", exampleKa: "ეს სამუშაო გამოცდილებას მოითხოვს.", level: "B1" },
-  { en: "Strategy", ka: "სტრატეგია", pron: "/ˈstrætədʒi/", example: "We need a new strategy.", exampleKa: "ახალი სტრატეგია გვჭირდება.", level: "B1" },
-  { en: "Treasure", ka: "საგანძური", pron: "/ˈtreʒər/", example: "Friendship is a treasure.", exampleKa: "მეგობრობა საგანძურია.", level: "B1" },
-  { en: "Universal", ka: "უნივერსალური", pron: "/ˌjuːnɪˈvɜːrsəl/", example: "Music is a universal language.", exampleKa: "მუსიკა უნივერსალური ენაა.", level: "B2" },
-  { en: "Visible", ka: "ხილული", pron: "/ˈvɪzəbəl/", example: "The stars are visible tonight.", exampleKa: "ვარსკვლავები ამაღამ ხილულია.", level: "B1" },
-  { en: "Witness", ka: "მოწმე", pron: "/ˈwɪtnəs/", example: "I witnessed the accident.", exampleKa: "ავარიის მოწმე ვიყავი.", level: "B1" },
-  { en: "Adapt", ka: "ადაპტაცია", pron: "/əˈdæpt/", example: "You must adapt to changes.", exampleKa: "ცვლილებებს უნდა ადაპტირდე.", level: "B1" },
-  { en: "Burden", ka: "ტვირთი", pron: "/ˈbɜːrdən/", example: "Don't be a burden.", exampleKa: "ნუ იქნები ტვირთი.", level: "B2" },
-  { en: "Circumstance", ka: "გარემოება", pron: "/ˈsɜːrkəmstæns/", example: "Under the circumstances, we agreed.", exampleKa: "გარემოებების გათვალისწინებით, დავეთანხმეთ.", level: "B2" },
-  { en: "Dignity", ka: "ღირსება", pron: "/ˈdɪɡnəti/", example: "Everyone deserves dignity.", exampleKa: "ყველა ღირსებას იმსახურებს.", level: "B2" },
-  { en: "Embrace", ka: "ჩახუტება", pron: "/ɪmˈbreɪs/", example: "Embrace change.", exampleKa: "მიიღე ცვლილებები.", level: "B1" },
-  { en: "Fierce", ka: "სასტიკი", pron: "/fɪrs/", example: "The competition is fierce.", exampleKa: "კონკურენცია სასტიკია.", level: "B2" },
-  { en: "Gratitude", ka: "მადლიერება", pron: "/ˈɡrætɪtuːd/", example: "Show gratitude every day.", exampleKa: "ყოველდღე გამოხატე მადლიერება.", level: "B2" },
-  { en: "Horizon", ka: "ჰორიზონტი", pron: "/həˈraɪzən/", example: "Look at the horizon.", exampleKa: "ჰორიზონტს შეხედე.", level: "B1" },
-  { en: "Inevitable", ka: "გარდაუვალი", pron: "/ɪnˈevɪtəbəl/", example: "Change is inevitable.", exampleKa: "ცვლილება გარდაუვალია.", level: "B2" },
-  { en: "Justice", ka: "სამართლიანობა", pron: "/ˈdʒʌstɪs/", example: "We fight for justice.", exampleKa: "სამართლიანობისთვის ვიბრძვით.", level: "B1" },
-  { en: "Knowledgeable", ka: "მცოდნე", pron: "/ˈnɑːlɪdʒəbəl/", example: "She is very knowledgeable.", exampleKa: "ის ძალიან მცოდნეა.", level: "B2" },
-  { en: "Legacy", ka: "მემკვიდრეობა", pron: "/ˈleɡəsi/", example: "Leave a positive legacy.", exampleKa: "დატოვე პოზიტიური მემკვიდრეობა.", level: "B2" },
-  { en: "Miracle", ka: "სასწაული", pron: "/ˈmɪrəkəl/", example: "It was a miracle.", exampleKa: "ეს სასწაული იყო.", level: "B1" },
-  { en: "Nurture", ka: "აღზრდა", pron: "/ˈnɜːrtʃər/", example: "Nurture your talents.", exampleKa: "იზრუნე შენს ნიჭზე.", level: "B2" },
-  { en: "Passion", ka: "ვნება", pron: "/ˈpæʃən/", example: "Follow your passion.", exampleKa: "მიჰყევი შენს ვნებას.", level: "B1" },
-  { en: "Regret", ka: "სინანული", pron: "/rɪˈɡret/", example: "I have no regrets.", exampleKa: "სინანული არ მაქვს.", level: "B1" },
-  { en: "Strength", ka: "ძალა", pron: "/streŋkθ/", example: "Knowledge is strength.", exampleKa: "ცოდნა ძალაა.", level: "A2" },
-  { en: "Talent", ka: "ნიჭი", pron: "/ˈtælənt/", example: "She has a great talent.", exampleKa: "მას დიდი ნიჭი აქვს.", level: "A2" },
-  { en: "Unite", ka: "გაერთიანება", pron: "/juˈnaɪt/", example: "Let's unite for a better future.", exampleKa: "გავერთიანდეთ უკეთესი მომავლისთვის.", level: "B1" },
-  { en: "Victory", ka: "გამარჯვება", pron: "/ˈvɪktəri/", example: "Victory requires effort.", exampleKa: "გამარჯვება ძალისხმევას მოითხოვს.", level: "B1" },
-  { en: "Wonder", ka: "გაკვირვება", pron: "/ˈwʌndər/", example: "I wonder what happened.", exampleKa: "მაინტერესებს, რა მოხდა.", level: "A2" },
-  { en: "Anxiety", ka: "შფოთვა", pron: "/æŋˈzaɪəti/", example: "She suffers from anxiety.", exampleKa: "ის შფოთვით იტანჯება.", level: "B2" },
-  { en: "Belief", ka: "რწმენა", pron: "/bɪˈliːf/", example: "Belief in yourself matters.", exampleKa: "საკუთარი თავის რწმენას მნიშვნელობა აქვს.", level: "B1" },
-  { en: "Courage", ka: "გამბედაობა", pron: "/ˈkɜːrɪdʒ/", example: "Have the courage to try.", exampleKa: "გქონდეს გამბედაობა სცადო.", level: "B1" },
-  { en: "Diligent", ka: "შრომისმოყვარე", pron: "/ˈdɪlɪdʒənt/", example: "She is a diligent student.", exampleKa: "ის შრომისმოყვარე სტუდენტია.", level: "B2" },
-  { en: "Essential", ka: "აუცილებელი", pron: "/ɪˈsenʃəl/", example: "Water is essential.", exampleKa: "წყალი აუცილებელია.", level: "B1" },
-  { en: "Freedom", ka: "თავისუფლება", pron: "/ˈfriːdəm/", example: "Freedom is precious.", exampleKa: "თავისუფლება ძვირფასია.", level: "A2" },
-  { en: "Glory", ka: "დიდება", pron: "/ˈɡlɔːri/", example: "They fought for glory.", exampleKa: "ისინი დიდებისთვის იბრძოდნენ.", level: "B2" },
-  { en: "Honor", ka: "პატივი", pron: "/ˈɑːnər/", example: "It's an honor to meet you.", exampleKa: "პატივი მაქვს შენი გაცნობის.", level: "B1" },
-  { en: "Insight", ka: "გამჭრიახობა", pron: "/ˈɪnsaɪt/", example: "She has great insight.", exampleKa: "მას დიდი გამჭრიახობა აქვს.", level: "B2" },
-  { en: "Jeopardize", ka: "საფრთხის შექმნა", pron: "/ˈdʒepərdaɪz/", example: "Don't jeopardize your future.", exampleKa: "ნუ შეუქმნი საფრთხეს მომავალს.", level: "B2" },
-  { en: "Milestone", ka: "ეტაპი", pron: "/ˈmaɪlstoʊn/", example: "This is a major milestone.", exampleKa: "ეს მნიშვნელოვანი ეტაპია.", level: "B2" },
-  { en: "Patience", ka: "მოთმინება", pron: "/ˈpeɪʃəns/", example: "Patience is a virtue.", exampleKa: "მოთმინება სათნოებაა.", level: "B1" },
-  { en: "Sacrifice", ka: "მსხვერპლი", pron: "/ˈsækrɪfaɪs/", example: "Success requires sacrifice.", exampleKa: "წარმატება მსხვერპლს მოითხოვს.", level: "B2" },
-  { en: "Thrive", ka: "აყვავება", pron: "/θraɪv/", example: "Plants thrive in sunlight.", exampleKa: "მცენარეები მზის შუქზე ყვავიან.", level: "B2" },
-  { en: "Venture", ka: "საწარმო", pron: "/ˈventʃər/", example: "It was a risky venture.", exampleKa: "ეს სარისკო საწარმო იყო.", level: "B2" },
-  { en: "Worthy", ka: "ღირსი", pron: "/ˈwɜːrði/", example: "You are worthy of love.", exampleKa: "შენ სიყვარულის ღირსი ხარ.", level: "B1" },
-  { en: "Ambition", ka: "ამბიცია", pron: "/æmˈbɪʃən/", example: "She has big ambitions.", exampleKa: "მას დიდი ამბიციები აქვს.", level: "B1" },
-  { en: "Compassion", ka: "თანაგრძნობა", pron: "/kəmˈpæʃən/", example: "Show compassion to others.", exampleKa: "გამოხატე თანაგრძნობა სხვების მიმართ.", level: "B2" },
-  { en: "Discipline", ka: "დისციპლინა", pron: "/ˈdɪsəplɪn/", example: "Success needs discipline.", exampleKa: "წარმატებას დისციპლინა სჭირდება.", level: "B1" },
-  { en: "Empathy", ka: "ემპათია", pron: "/ˈempəθi/", example: "Empathy is important.", exampleKa: "ემპათია მნიშვნელოვანია.", level: "B2" },
-  { en: "Forgive", ka: "პატიება", pron: "/fərˈɡɪv/", example: "Learn to forgive.", exampleKa: "ისწავლე პატიება.", level: "A2" },
-  { en: "Gratify", ka: "სიამოვნების მიცემა", pron: "/ˈɡrætɪfaɪ/", example: "The results gratified her.", exampleKa: "შედეგებმა სიამოვნება მიანიჭა.", level: "B2" },
-  { en: "Integrity", ka: "მთლიანობა", pron: "/ɪnˈteɡrəti/", example: "He is a man of integrity.", exampleKa: "ის პრინციპული ადამიანია.", level: "B2" },
-  { en: "Loyal", ka: "ერთგული", pron: "/ˈlɔɪəl/", example: "Be loyal to your friends.", exampleKa: "იყავი ერთგული მეგობრების.", level: "B1" },
-  { en: "Modest", ka: "მოკრძალებული", pron: "/ˈmɑːdɪst/", example: "She is very modest.", exampleKa: "ის ძალიან მოკრძალებულია.", level: "B1" },
-  { en: "Optimistic", ka: "ოპტიმისტი", pron: "/ˌɑːptɪˈmɪstɪk/", example: "Stay optimistic.", exampleKa: "იყავი ოპტიმისტი.", level: "B1" },
-  { en: "Principle", ka: "პრინციპი", pron: "/ˈprɪnsəpəl/", example: "Stick to your principles.", exampleKa: "შენს პრინციპებს ერთგული იყავი.", level: "B1" },
-  { en: "Sincerity", ka: "გულწრფელობა", pron: "/sɪnˈserəti/", example: "I appreciate your sincerity.", exampleKa: "ვაფასებ შენს გულწრფელობას.", level: "B2" },
-  { en: "Triumph", ka: "ტრიუმფი", pron: "/ˈtraɪʌmf/", example: "It was a moment of triumph.", exampleKa: "ეს ტრიუმფის მომენტი იყო.", level: "B2" },
-  { en: "Wealth", ka: "სიმდიდრე", pron: "/welθ/", example: "Health is better than wealth.", exampleKa: "ჯანმრთელობა სიმდიდრეზე უკეთესია.", level: "B1" },
-  { en: "Ability", ka: "უნარი", pron: "/əˈbɪləti/", example: "She has amazing ability.", exampleKa: "მას საოცარი უნარი აქვს.", level: "A2" },
-  { en: "Choose", ka: "არჩევა", pron: "/tʃuːz/", example: "Choose wisely.", exampleKa: "ბრძნულად აირჩიე.", level: "A1" },
-  { en: "Dream", ka: "ოცნება", pron: "/driːm/", example: "Never stop dreaming.", exampleKa: "არასდროს შეწყვიტო ოცნება.", level: "A1" },
-  { en: "Energy", ka: "ენერგია", pron: "/ˈenərdʒi/", example: "She has a lot of energy.", exampleKa: "მას ბევრი ენერგია აქვს.", level: "A2" },
-  { en: "Future", ka: "მომავალი", pron: "/ˈfjuːtʃər/", example: "The future is bright.", exampleKa: "მომავალი ნათელია.", level: "A1" },
-  { en: "Growth", ka: "ზრდა", pron: "/ɡroʊθ/", example: "Personal growth is important.", exampleKa: "პირადი ზრდა მნიშვნელოვანია.", level: "B1" },
-  { en: "Hope", ka: "იმედი", pron: "/hoʊp/", example: "Never lose hope.", exampleKa: "არასდროს დაკარგო იმედი.", level: "A1" },
-  { en: "Idea", ka: "იდეა", pron: "/aɪˈdiːə/", example: "That's a great idea!", exampleKa: "ეს შესანიშნავი იდეაა!", level: "A1" },
-  { en: "Join", ka: "შეერთება", pron: "/dʒɔɪn/", example: "Join us for dinner.", exampleKa: "შემოგვიერთდი ვახშამზე.", level: "A1" },
-  { en: "Learn", ka: "სწავლა", pron: "/lɜːrn/", example: "You are never too old to learn.", exampleKa: "სწავლისთვის არასდროსაა გვიან.", level: "A1" },
-  { en: "Mind", ka: "გონება", pron: "/maɪnd/", example: "Open your mind.", exampleKa: "გახსენი გონება.", level: "A2" },
-  { en: "Need", ka: "საჭიროება", pron: "/niːd/", example: "I need your help.", exampleKa: "შენი დახმარება მჭირდება.", level: "A1" },
-  { en: "Power", ka: "ძალა", pron: "/ˈpaʊər/", example: "Knowledge is power.", exampleKa: "ცოდნა ძალაა.", level: "A1" },
-  { en: "Question", ka: "კითხვა", pron: "/ˈkwestʃən/", example: "Ask questions!", exampleKa: "დასვი კითხვები!", level: "A1" },
-  { en: "Road", ka: "გზა", pron: "/roʊd/", example: "The road to success is long.", exampleKa: "წარმატებისკენ გზა გრძელია.", level: "A1" },
-  { en: "Smile", ka: "ღიმილი", pron: "/smaɪl/", example: "A smile can change everything.", exampleKa: "ღიმილს ყველაფრის შეცვლა შეუძლია.", level: "A1" },
-  { en: "Think", ka: "ფიქრი", pron: "/θɪŋk/", example: "Think before you speak.", exampleKa: "იფიქრე, სანამ ილაპარაკებ.", level: "A1" },
-  { en: "Voice", ka: "ხმა", pron: "/vɔɪs/", example: "She has a beautiful voice.", exampleKa: "მას ლამაზი ხმა აქვს.", level: "A1" },
-  { en: "World", ka: "სამყარო", pron: "/wɜːrld/", example: "The world is full of beauty.", exampleKa: "სამყარო სილამაზით სავსეა.", level: "A1" },
-  { en: "Youth", ka: "ახალგაზრდობა", pron: "/juːθ/", example: "Youth is a gift.", exampleKa: "ახალგაზრდობა საჩუქარია.", level: "B1" },
-  { en: "Admire", ka: "აღფრთოვანება", pron: "/ədˈmaɪər/", example: "I admire your courage.", exampleKa: "შენი გამბედაობა მაღფრთოვანებს.", level: "B1" },
-  { en: "Beyond", ka: "მიღმა", pron: "/bɪˈjɑːnd/", example: "Beyond the mountains lies a valley.", exampleKa: "მთების მიღმა ხეობა მდებარეობს.", level: "B1" },
-  { en: "Connect", ka: "დაკავშირება", pron: "/kəˈnekt/", example: "Connect with others.", exampleKa: "დაუკავშირდი სხვებს.", level: "A2" },
-  { en: "Delight", ka: "სიხარული", pron: "/dɪˈlaɪt/", example: "The children were full of delight.", exampleKa: "ბავშვები სიხარულით სავსე იყვნენ.", level: "B1" },
-  { en: "Explore", ka: "შესწავლა", pron: "/ɪkˈsplɔːr/", example: "Explore the world.", exampleKa: "შეისწავლე სამყარო.", level: "A2" },
-  { en: "Fulfill", ka: "შესრულება", pron: "/fʊlˈfɪl/", example: "Fulfill your potential.", exampleKa: "გამოიყენე შენი პოტენციალი.", level: "B2" },
-  { en: "Gentle", ka: "ნაზი", pron: "/ˈdʒentəl/", example: "Be gentle with animals.", exampleKa: "ნაზი იყავი ცხოველებთან.", level: "A2" },
-  { en: "Honest", ka: "პატიოსანი", pron: "/ˈɑːnɪst/", example: "Always be honest.", exampleKa: "ყოველთვის იყავი პატიოსანი.", level: "A2" },
-  { en: "Innovate", ka: "ინოვაცია", pron: "/ˈɪnəveɪt/", example: "We must innovate.", exampleKa: "ინოვაციები უნდა შემოვიტანოთ.", level: "B2" },
-  { en: "Keen", ka: "მოწადინე", pron: "/kiːn/", example: "He is keen to learn.", exampleKa: "ის მოწადინეა სწავლის.", level: "B1" },
-  { en: "Liberty", ka: "თავისუფლება", pron: "/ˈlɪbərti/", example: "Liberty is a human right.", exampleKa: "თავისუფლება ადამიანის უფლებაა.", level: "B2" },
-  { en: "Memory", ka: "მეხსიერება", pron: "/ˈmeməri/", example: "She has a good memory.", exampleKa: "მას კარგი მეხსიერება აქვს.", level: "A2" },
-  { en: "Nourish", ka: "კვება", pron: "/ˈnɜːrɪʃ/", example: "Nourish your body and mind.", exampleKa: "იკვებე სხეული და გონება.", level: "B2" },
-  { en: "Persist", ka: "დაჟინება", pron: "/pərˈsɪst/", example: "Persist and you will succeed.", exampleKa: "დაჟინებით იმოქმედე და წარმატებას მიაღწევ.", level: "B2" },
-  { en: "Radiant", ka: "მბრწყინავი", pron: "/ˈreɪdiənt/", example: "She had a radiant smile.", exampleKa: "მას მბრწყინავი ღიმილი ჰქონდა.", level: "B2" },
-  { en: "Sustain", ka: "შენარჩუნება", pron: "/səˈsteɪn/", example: "Sustain your efforts.", exampleKa: "შეინარჩუნე ძალისხმევა.", level: "B2" },
-  { en: "Trust", ka: "ნდობა", pron: "/trʌst/", example: "Trust the process.", exampleKa: "ენდე პროცესს.", level: "A2" },
-  { en: "Uplift", ka: "აყვანა", pron: "/ˈʌplɪft/", example: "Uplift those around you.", exampleKa: "აამაღლე ირგვლივ მყოფები.", level: "B2" },
-  { en: "Vast", ka: "ვრცელი", pron: "/væst/", example: "The ocean is vast.", exampleKa: "ოკეანე ვრცელია.", level: "B1" },
-  { en: "Whisper", ka: "ჩურჩული", pron: "/ˈwɪspər/", example: "She whispered a secret.", exampleKa: "მან საიდუმლო ჩაჩურჩულა.", level: "A2" },
-  { en: "Zeal", ka: "ენთუზიაზმი", pron: "/ziːl/", example: "He works with great zeal.", exampleKa: "ის დიდი ენთუზიაზმით მუშაობს.", level: "B2" },
-  { en: "Bloom", ka: "ყვავილობა", pron: "/bluːm/", example: "Flowers bloom in spring.", exampleKa: "ყვავილები გაზაფხულზე ყვავიან.", level: "A2" },
-  { en: "Cherish", ka: "ძვირფასად მიჩნევა", pron: "/ˈtʃerɪʃ/", example: "Cherish every moment.", exampleKa: "ყოველი წუთი ძვირფასად მიიჩნიე.", level: "B1" },
-  { en: "Dawn", ka: "გარიჟრაჟი", pron: "/dɔːn/", example: "A new dawn is rising.", exampleKa: "ახალი გარიჟრაჟი ამოდის.", level: "B1" },
-  { en: "Endure", ka: "გაძლება", pron: "/ɪnˈdʊr/", example: "You must endure the hardship.", exampleKa: "სიძნელეს უნდა გაუძლო.", level: "B2" },
-  { en: "Flourish", ka: "აყვავება", pron: "/ˈflɜːrɪʃ/", example: "Art flourishes in freedom.", exampleKa: "ხელოვნება თავისუფლებაში ყვავის.", level: "B2" },
-  { en: "Glow", ka: "ბრწყინვალება", pron: "/ɡloʊ/", example: "The sunset was glowing.", exampleKa: "მზის ჩასვლა ბრწყინავდა.", level: "B1" },
-  { en: "Harvest", ka: "მოსავალი", pron: "/ˈhɑːrvɪst/", example: "The harvest was good.", exampleKa: "მოსავალი კარგი იყო.", level: "B1" },
-  { en: "Illuminate", ka: "განათება", pron: "/ɪˈluːmɪneɪt/", example: "The lights illuminated the room.", exampleKa: "ნათებმა ოთახი გაანათა.", level: "B2" },
-  { en: "Journey", ka: "მოგზაურობა", pron: "/ˈdʒɜːrni/", example: "Every journey starts with one step.", exampleKa: "ყოველი მოგზაურობა ერთი ნაბიჯით იწყება.", level: "A2" },
-  { en: "Kindle", ka: "აანთება", pron: "/ˈkɪndəl/", example: "Kindle your passion.", exampleKa: "აანთე შენი ვნება.", level: "B2" },
-  { en: "Linger", ka: "შეყოვნება", pron: "/ˈlɪŋɡər/", example: "Don't linger too long.", exampleKa: "ზედმეტად ნუ შეიყოვნებ.", level: "B2" },
-  { en: "Mend", ka: "შეკეთება", pron: "/mend/", example: "Time will mend your heart.", exampleKa: "დრო გულს შეგიკეთებს.", level: "B1" },
-  { en: "Navigate", ka: "ნავიგაცია", pron: "/ˈnævɪɡeɪt/", example: "Navigate through challenges.", exampleKa: "გაიარე გამოწვევებში.", level: "B1" },
-  { en: "Oath", ka: "ფიცი", pron: "/oʊθ/", example: "He took an oath.", exampleKa: "მან ფიცი დადო.", level: "B2" },
-  { en: "Pledge", ka: "დაპირება", pron: "/pledʒ/", example: "I pledge my support.", exampleKa: "მხარდაჭერას გპირდები.", level: "B2" },
-  { en: "Quest", ka: "ძიება", pron: "/kwest/", example: "The quest for knowledge.", exampleKa: "ცოდნის ძიება.", level: "B2" },
-  { en: "Resolve", ka: "გადაწყვეტა", pron: "/rɪˈzɑːlv/", example: "Resolve the conflict peacefully.", exampleKa: "კონფლიქტი მშვიდობიანად გადაწყვიტე.", level: "B2" },
-  { en: "Spark", ka: "ნაპერწკალი", pron: "/spɑːrk/", example: "A spark of creativity.", exampleKa: "კრეატიულობის ნაპერწკალი.", level: "B1" },
-  { en: "Tender", ka: "ნაზი", pron: "/ˈtendər/", example: "She has a tender heart.", exampleKa: "მას ნაზი გული აქვს.", level: "B1" },
-  { en: "Unfold", ka: "გაშლა", pron: "/ʌnˈfoʊld/", example: "Let the story unfold.", exampleKa: "ამბავი დაე, გაიშალოს.", level: "B2" },
-  { en: "Valor", ka: "სიმამაცე", pron: "/ˈvælər/", example: "He showed great valor.", exampleKa: "მან დიდი სიმამაცე გამოიჩინა.", level: "B2" },
-  { en: "Wish", ka: "სურვილი", pron: "/wɪʃ/", example: "Make a wish!", exampleKa: "ისურვე!", level: "A1" },
-  { en: "Yearn", ka: "ნატვრა", pron: "/jɜːrn/", example: "She yearns for home.", exampleKa: "ის სახლს ნატრობს.", level: "B2" },
-  { en: "Absorb", ka: "შეწოვა", pron: "/əbˈzɔːrb/", example: "Absorb new information.", exampleKa: "შეიწოვე ახალი ინფორმაცია.", level: "B1" },
-  { en: "Bliss", ka: "ნეტარება", pron: "/blɪs/", example: "Ignorance is bliss.", exampleKa: "უცოდინრობა ნეტარებაა.", level: "B2" },
-  { en: "Clarity", ka: "სიცხადე", pron: "/ˈklærəti/", example: "Seek clarity in your goals.", exampleKa: "ეძიე სიცხადე შენს მიზნებში.", level: "B2" },
-  { en: "Dwell", ka: "ცხოვრება", pron: "/dwel/", example: "Don't dwell on the past.", exampleKa: "ნუ ჩერდები წარსულზე.", level: "B2" },
-  { en: "Evolve", ka: "ევოლუცია", pron: "/ɪˈvɑːlv/", example: "We must evolve and adapt.", exampleKa: "უნდა განვვითარდეთ და მოვერგოთ.", level: "B2" },
-  { en: "Forge", ka: "ჭედვა", pron: "/fɔːrdʒ/", example: "Forge your own path.", exampleKa: "შენი გზა თავად გაიკვალე.", level: "B2" },
-  { en: "Grace", ka: "მადლი", pron: "/ɡreɪs/", example: "She danced with grace.", exampleKa: "ის მადლით ცეკვავდა.", level: "B1" },
-  { en: "Humble", ka: "თავმდაბალი", pron: "/ˈhʌmbəl/", example: "He remained humble despite success.", exampleKa: "ის თავმდაბალი დარჩა წარმატების მიუხედავად.", level: "B1" },
-  { en: "Ignite", ka: "აალება", pron: "/ɪɡˈnaɪt/", example: "Ignite your imagination.", exampleKa: "აანთე წარმოსახვა.", level: "B2" },
-  { en: "Jubilant", ka: "აღტაცებული", pron: "/ˈdʒuːbɪlənt/", example: "The crowd was jubilant.", exampleKa: "ბრბო აღტაცებული იყო.", level: "B2" },
-  { en: "Kinship", ka: "ნათესაობა", pron: "/ˈkɪnʃɪp/", example: "I feel a kinship with nature.", exampleKa: "ბუნებასთან ნათესაობას ვგრძნობ.", level: "B2" },
-  { en: "Apple", ka: "ვაშლი", pron: "/ˈæpəl/", example: "I eat an apple every day.", exampleKa: "ყოველდღე ვაშლს ვჭამ.", level: "A1" },
-  { en: "Book", ka: "წიგნი", pron: "/bʊk/", example: "This is my favorite book.", exampleKa: "ეს ჩემი საყვარელი წიგნია.", level: "A1" },
-  { en: "Cat", ka: "კატა", pron: "/kæt/", example: "The cat is sleeping.", exampleKa: "კატა სძინავს.", level: "A1" },
-  { en: "Dog", ka: "ძაღლი", pron: "/dɔːɡ/", example: "My dog loves to play.", exampleKa: "ჩემ ძაღლს თამაში უყვარს.", level: "A1" },
-  { en: "Eat", ka: "ჭამა", pron: "/iːt/", example: "Let's eat together.", exampleKa: "ერთად ვჭამოთ.", level: "A1" },
-  { en: "Fish", ka: "თევზი", pron: "/fɪʃ/", example: "I like fish.", exampleKa: "თევზი მიყვარს.", level: "A1" },
-  { en: "Green", ka: "მწვანე", pron: "/ɡriːn/", example: "The grass is green.", exampleKa: "ბალახი მწვანეა.", level: "A1" },
-  { en: "House", ka: "სახლი", pron: "/haʊs/", example: "Welcome to my house.", exampleKa: "კეთილი იყოს შენი მობრძანება ჩემს სახლში.", level: "A1" },
-  { en: "Ice", ka: "ყინული", pron: "/aɪs/", example: "The ice is melting.", exampleKa: "ყინული დნება.", level: "A1" },
-  { en: "Jump", ka: "ხტომა", pron: "/dʒʌmp/", example: "Can you jump high?", exampleKa: "მაღლა ხტომა შეგიძლია?", level: "A1" },
-  { en: "Key", ka: "გასაღები", pron: "/kiː/", example: "Where is my key?", exampleKa: "სად არის ჩემი გასაღები?", level: "A1" },
-  { en: "Love", ka: "სიყვარული", pron: "/lʌv/", example: "Love conquers all.", exampleKa: "სიყვარული ყველაფერს იმარჯვებს.", level: "A1" },
-  { en: "Moon", ka: "მთვარე", pron: "/muːn/", example: "The moon is bright tonight.", exampleKa: "მთვარე ამაღამ კაშკაშაა.", level: "A1" },
-  { en: "Night", ka: "ღამე", pron: "/naɪt/", example: "Good night!", exampleKa: "ძილი ნებისა!", level: "A1" },
-  { en: "Open", ka: "გახსნა", pron: "/ˈoʊpən/", example: "Open the door.", exampleKa: "კარი გააღე.", level: "A1" },
-  { en: "Play", ka: "თამაში", pron: "/pleɪ/", example: "Children love to play.", exampleKa: "ბავშვებს თამაში უყვართ.", level: "A1" },
-  { en: "Rain", ka: "წვიმა", pron: "/reɪn/", example: "It's going to rain.", exampleKa: "წვიმა იქნება.", level: "A1" },
-  { en: "Sun", ka: "მზე", pron: "/sʌn/", example: "The sun is shining.", exampleKa: "მზე ანათებს.", level: "A1" },
-  { en: "Tree", ka: "ხე", pron: "/triː/", example: "There is a tall tree.", exampleKa: "იქ მაღალი ხეა.", level: "A1" },
-  { en: "Use", ka: "გამოყენება", pron: "/juːz/", example: "Can I use your phone?", exampleKa: "შეიძლება ტელეფონი გამოვიყენო?", level: "A1" },
-  { en: "Visit", ka: "სტუმრობა", pron: "/ˈvɪzɪt/", example: "Visit us soon.", exampleKa: "მალე მოგვინახულე.", level: "A1" },
-  { en: "Walk", ka: "სიარული", pron: "/wɔːk/", example: "Let's walk in the park.", exampleKa: "პარკში გავისეირნოთ.", level: "A1" },
-  { en: "Year", ka: "წელი", pron: "/jɪr/", example: "This year was great.", exampleKa: "ეს წელი შესანიშნავი იყო.", level: "A1" },
-  { en: "Zero", ka: "ნული", pron: "/ˈzɪroʊ/", example: "Start from zero.", exampleKa: "ნულიდან დაიწყე.", level: "A1" },
-  { en: "Always", ka: "ყოველთვის", pron: "/ˈɔːlweɪz/", example: "I will always love you.", exampleKa: "ყოველთვის მიყვარხარ.", level: "A1" },
-  { en: "Begin", ka: "დაწყება", pron: "/bɪˈɡɪn/", example: "Let's begin the lesson.", exampleKa: "დავიწყოთ გაკვეთილი.", level: "A1" },
-  { en: "Color", ka: "ფერი", pron: "/ˈkʌlər/", example: "What is your favorite color?", exampleKa: "რა არის შენი საყვარელი ფერი?", level: "A1" },
-  { en: "Dance", ka: "ცეკვა", pron: "/dæns/", example: "She loves to dance.", exampleKa: "მას ცეკვა უყვარს.", level: "A1" },
-  { en: "Enjoy", ka: "ტკბობა", pron: "/ɪnˈdʒɔɪ/", example: "Enjoy your day!", exampleKa: "ისიამოვნე დღით!", level: "A1" },
-  { en: "Fast", ka: "სწრაფი", pron: "/fæst/", example: "He runs fast.", exampleKa: "ის სწრაფად დარბის.", level: "A1" },
-  { en: "Gift", ka: "საჩუქარი", pron: "/ɡɪft/", example: "Thank you for the gift.", exampleKa: "მადლობა საჩუქრისთვის.", level: "A1" },
-  { en: "Happy", ka: "ბედნიერი", pron: "/ˈhæpi/", example: "I am happy today.", exampleKa: "დღეს ბედნიერი ვარ.", level: "A1" },
-  { en: "Island", ka: "კუნძული", pron: "/ˈaɪlənd/", example: "They live on an island.", exampleKa: "ისინი კუნძულზე ცხოვრობენ.", level: "A2" },
-  { en: "Kind", ka: "კეთილი", pron: "/kaɪnd/", example: "Be kind to everyone.", exampleKa: "იყავი კეთილი ყველას მიმართ.", level: "A1" },
-  { en: "Listen", ka: "მოსმენა", pron: "/ˈlɪsən/", example: "Listen carefully.", exampleKa: "ყურადღებით მოისმინე.", level: "A1" },
-  { en: "Mountain", ka: "მთა", pron: "/ˈmaʊntən/", example: "The mountains are beautiful.", exampleKa: "მთები ლამაზია.", level: "A1" },
-  { en: "Number", ka: "რიცხვი", pron: "/ˈnʌmbər/", example: "What is your phone number?", exampleKa: "რა არის შენი ტელეფონის ნომერი?", level: "A1" },
-  { en: "Ocean", ka: "ოკეანე", pron: "/ˈoʊʃən/", example: "The ocean is deep.", exampleKa: "ოკეანე ღრმაა.", level: "A2" },
-  { en: "Peace", ka: "მშვიდობა", pron: "/piːs/", example: "We want peace.", exampleKa: "ჩვენ მშვიდობა გვინდა.", level: "A2" },
-  { en: "Quiet", ka: "წყნარი", pron: "/ˈkwaɪət/", example: "Please be quiet.", exampleKa: "გთხოვ, ჩუმად იყავი.", level: "A1" },
-  { en: "Ready", ka: "მზად", pron: "/ˈredi/", example: "Are you ready?", exampleKa: "მზად ხარ?", level: "A1" },
-  { en: "Story", ka: "ისტორია", pron: "/ˈstɔːri/", example: "Tell me a story.", exampleKa: "მომიყევი ისტორია.", level: "A1" },
-  { en: "Teach", ka: "სწავლება", pron: "/tiːtʃ/", example: "She teaches English.", exampleKa: "ის ინგლისურს ასწავლის.", level: "A1" },
-  { en: "Useful", ka: "სასარგებლო", pron: "/ˈjuːsfəl/", example: "This is very useful.", exampleKa: "ეს ძალიან სასარგებლოა.", level: "A2" },
-  { en: "Value", ka: "ღირებულება", pron: "/ˈvæljuː/", example: "I value your opinion.", exampleKa: "ვაფასებ შენს აზრს.", level: "B1" },
-  { en: "Write", ka: "წერა", pron: "/raɪt/", example: "Write your name here.", exampleKa: "აქ დაწერე შენი სახელი.", level: "A1" },
-  { en: "Excellent", ka: "შესანიშნავი", pron: "/ˈeksələnt/", example: "Excellent work!", exampleKa: "შესანიშნავი სამუშაო!", level: "A2" },
-  { en: "Bright", ka: "ნათელი", pron: "/braɪt/", example: "The future is bright.", exampleKa: "მომავალი ნათელია.", level: "A2" },
-];
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+// Load words from JSON instead of hardcoding 365 words inline
+const wordsPath = resolve(process.cwd(), 'public/data/words-of-day.json');
+const wordsOfDay = JSON.parse(readFileSync(wordsPath, 'utf8'));
 const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
 const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
 ---
@@ -376,7 +15,7 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "FluentGe",
-    "url": "https://fluentge.surge.sh",
+    "url": "https://fluentge.pages.dev",
     "description": "უფასო ინგლისური ენის შესწავლა ქართველებისთვის — 5,250+ სიტყვა, 122 კატეგორია, 48 თამაში, 35 პოდკასტი, 65 გრამატიკა",
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
@@ -387,42 +26,49 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
       { "@type": "Language", "name": "English" }
     ]
   })} />
+
   <!-- Hero -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-30"/>
-      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/80 to-[#1C1C1E]"></div>
+      <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-20"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/90 to-[#1C1C1E]"></div>
     </div>
     <div class="relative max-w-3xl mx-auto px-4 pt-28 pb-24 sm:pt-36 sm:pb-32 text-center">
+      <div class="inline-block mb-5 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">
+        🇬🇪 #1 ინგლისურის პლატფორმა ქართველებისთვის
+      </div>
       <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-5xl md:text-6xl mb-5 leading-tight">
-        ისწავლე ინგლისური<br/><span class="text-[#C8C8C0]">მარტივად</span>
+        ისწავლე ინგლისური<br/>
+        <span class="bg-gradient-to-r from-sky-400 to-green-400 bg-clip-text text-transparent">სახალისოდ და უფასოდ</span>
       </h1>
       <p class="text-base sm:text-lg text-[#A0A09A] mb-8 max-w-xl mx-auto">
         ფლეშბარათები, გრამატიკა, პოდკასტი და თამაშები — ყველაფერი ერთ ადგილას.
       </p>
       <div class="flex flex-wrap justify-center gap-2 mb-8 text-xs">
-        <span class="bg-white/10 border border-white/10 text-[#C8C8C0] px-3 py-1 rounded-full">5,250+ სიტყვა</span>
-        <span class="bg-white/10 border border-white/10 text-[#C8C8C0] px-3 py-1 rounded-full">122 კატეგორია</span>
-        <span class="bg-white/10 border border-white/10 text-[#C8C8C0] px-3 py-1 rounded-full">65 გრამატიკა</span>
-        <span class="bg-white/10 border border-white/10 text-[#C8C8C0] px-3 py-1 rounded-full">35 პოდკასტი</span>
+        <span class="bg-sky-500/10 border border-sky-500/20 text-sky-300 px-3 py-1.5 rounded-full font-medium">📚 5,250+ სიტყვა</span>
+        <span class="bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 px-3 py-1.5 rounded-full font-medium">📖 122 კატეგორია</span>
+        <span class="bg-amber-500/10 border border-amber-500/20 text-amber-300 px-3 py-1.5 rounded-full font-medium">✏️ 65 გრამატიკა</span>
+        <span class="bg-rose-500/10 border border-rose-500/20 text-rose-300 px-3 py-1.5 rounded-full font-medium">🎙️ 35 პოდკასტი</span>
       </div>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="/flashcards/" class="bg-white text-[#1C1C1E] font-semibold px-8 py-3.5 rounded-xl text-base hover:bg-[#E8E8E0] transition-colors">დაიწყე სწავლა</a>
-        <a href="/about/" class="bg-white/10 border border-white/10 font-semibold px-8 py-3.5 rounded-xl text-base hover:bg-white/20 transition-colors">გაიგე მეტი</a>
+        <a href="/flashcards/" class="bg-green-500 text-white font-bold px-8 py-3.5 rounded-xl text-base border-b-4 border-green-600 hover:bg-green-400 active:border-b-0 active:mt-1 transition-all uppercase tracking-wide">დაიწყე სწავლა</a>
+        <a href="/about/" class="bg-white/10 border border-white/20 font-semibold px-8 py-3.5 rounded-xl text-base hover:bg-white/20 transition-colors">გაიგე მეტი</a>
       </div>
     </div>
   </section>
 
   <!-- Word of the Day -->
   <section class="px-4 py-10 max-w-2xl mx-auto">
-    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-      <div class="flex items-center justify-center gap-2 mb-2">
-        <p class="text-xs text-[#6B6B65] uppercase tracking-wider">დღის სიტყვა</p>
-        <span class="text-[10px] font-bold bg-white/10 text-[#C8C8C0] px-2 py-0.5 rounded-full">{todayWord.level}</span>
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center relative overflow-hidden">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 via-green-400 to-amber-400"></div>
+      <div class="flex items-center justify-center gap-2 mb-2 mt-1">
+        <span class="text-lg">✨</span>
+        <p class="text-xs text-[#6B6B65] uppercase tracking-wider font-bold">დღის სიტყვა</p>
+        <span class="text-[10px] font-bold bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded-full">{todayWord.level}</span>
       </div>
       <h3 class="font-['Playfair_Display',serif] text-3xl text-white mb-1">{todayWord.en}</h3>
       <p class="text-[#6B6B65] text-sm mb-1">{todayWord.pron}</p>
-      <p class="text-lg text-[#C8C8C0] mb-3">{todayWord.ka}</p>
+      <p class="text-lg text-sky-300 mb-3 font-medium">{todayWord.ka}</p>
       <div class="bg-[#1C1C1E] rounded-xl p-3 text-sm">
         <p class="text-[#A0A09A]">"{todayWord.example}"</p>
         <p class="text-[#6B6B65] mt-1">{todayWord.exampleKa}</p>
@@ -432,41 +78,39 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
 
   <!-- Features -->
   <section class="px-4 py-16 max-w-5xl mx-auto">
-    <h2 class="font-['Playfair_Display',serif] text-2xl sm:text-3xl text-center mb-12">რას გთავაზობთ</h2>
+    <h2 class="font-['Playfair_Display',serif] text-2xl sm:text-3xl text-center mb-3">რას გთავაზობთ</h2>
+    <p class="text-center text-[#6B6B65] text-sm mb-12">აირჩიე სწავლის მეთოდი</p>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <a href="/flashcards/" class="group bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden hover:border-[#404040] transition-all">
-        <div class="h-36 overflow-hidden"><img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&q=60" alt="" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"/></div>
-        <div class="p-5"><h3 class="font-bold text-base mb-1">ფლეშბარათები</h3><p class="text-[#6B6B65] text-sm">5,250+ სიტყვა 122 კატეგორიაში.</p><span class="inline-block mt-3 text-[#C8C8C0] text-sm font-medium group-hover:translate-x-1 transition-transform">დაიწყე &rarr;</span></div>
-      </a>
-      <a href="/grammar/" class="group bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden hover:border-[#404040] transition-all">
-        <div class="h-36 overflow-hidden"><img src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=400&q=60" alt="" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"/></div>
-        <div class="p-5"><h3 class="font-bold text-base mb-1">გრამატიკა</h3><p class="text-[#6B6B65] text-sm">65 გაკვეთილი A1-დან C1-მდე.</p><span class="inline-block mt-3 text-[#C8C8C0] text-sm font-medium group-hover:translate-x-1 transition-transform">დაიწყე &rarr;</span></div>
-      </a>
-      <a href="/podcast/" class="group bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden hover:border-[#404040] transition-all">
-        <div class="h-36 overflow-hidden"><img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&q=60" alt="" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"/></div>
-        <div class="p-5"><h3 class="font-bold text-base mb-1">პოდკასტი</h3><p class="text-[#6B6B65] text-sm">30 ეპიზოდი რეალური დიალოგებით.</p><span class="inline-block mt-3 text-[#C8C8C0] text-sm font-medium group-hover:translate-x-1 transition-transform">მოისმინე &rarr;</span></div>
-      </a>
-      <a href="/phrases/" class="group bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden hover:border-[#404040] transition-all">
-        <div class="h-36 overflow-hidden"><img src="https://images.unsplash.com/photo-1543165796-5426273eaab3?w=400&q=60" alt="" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"/></div>
-        <div class="p-5"><h3 class="font-bold text-base mb-1">ფრაზები</h3><p class="text-[#6B6B65] text-sm">1,695 ფრაზა 40 კატეგორიაში 🔊 აუდიოთი.</p><span class="inline-block mt-3 text-[#C8C8C0] text-sm font-medium group-hover:translate-x-1 transition-transform">ნახე &rarr;</span></div>
-      </a>
-      <a href="/games/" class="group bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden hover:border-[#404040] transition-all">
-        <div class="h-36 overflow-hidden"><img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&q=60" alt="" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"/></div>
-        <div class="p-5"><h3 class="font-bold text-base mb-1">თამაშები</h3><p class="text-[#6B6B65] text-sm">48 ინტერაქტიული თამაში.</p><span class="inline-block mt-3 text-[#C8C8C0] text-sm font-medium group-hover:translate-x-1 transition-transform">ითამაშე &rarr;</span></div>
-      </a>
-      <a href="/blog/" class="group bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden hover:border-[#404040] transition-all">
-        <div class="h-36 overflow-hidden"><img src="https://images.unsplash.com/photo-1519682577862-22b62b24e493?w=400&q=60" alt="" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"/></div>
-        <div class="p-5"><h3 class="font-bold text-base mb-1">ბლოგი</h3><p class="text-[#6B6B65] text-sm">სტატიები და რჩევები ინგლისურის შესასწავლად.</p><span class="inline-block mt-3 text-[#C8C8C0] text-sm font-medium group-hover:translate-x-1 transition-transform">წაიკითხე &rarr;</span></div>
-      </a>
+      {[
+        { href: "/flashcards/", img: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&q=60", icon: "📚", title: "ფლეშბარათები", desc: "5,250+ სიტყვა 122 კატეგორიაში.", cta: "დაიწყე", color: "sky" },
+        { href: "/grammar/", img: "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=400&q=60", icon: "✏️", title: "გრამატიკა", desc: "65 გაკვეთილი A1-დან C1-მდე.", cta: "დაიწყე", color: "green" },
+        { href: "/podcast/", img: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&q=60", icon: "🎙️", title: "პოდკასტი", desc: "30 ეპიზოდი რეალური დიალოგებით.", cta: "მოისმინე", color: "rose" },
+        { href: "/phrases/", img: "https://images.unsplash.com/photo-1543165796-5426273eaab3?w=400&q=60", icon: "💬", title: "ფრაზები", desc: "1,695 ფრაზა 40 კატეგორიაში 🔊", cta: "ნახე", color: "amber" },
+        { href: "/games/", img: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&q=60", icon: "🎮", title: "თამაშები", desc: "48 ინტერაქტიული თამაში.", cta: "ითამაშე", color: "indigo" },
+        { href: "/blog/", img: "https://images.unsplash.com/photo-1519682577862-22b62b24e493?w=400&q=60", icon: "📝", title: "ბლოგი", desc: "სტატიები და რჩევები.", cta: "წაიკითხე", color: "neutral" },
+      ].map(item => (
+        <a href={item.href} class="group bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden hover:border-[#404040] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-black/20">
+          <div class="h-36 overflow-hidden relative">
+            <img src={item.img} alt="" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"/>
+            <div class="absolute top-3 left-3 text-2xl bg-[#242426]/80 backdrop-blur-sm w-10 h-10 rounded-xl flex items-center justify-center">{item.icon}</div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-base mb-1">{item.title}</h3>
+            <p class="text-[#6B6B65] text-sm">{item.desc}</p>
+            <span class="inline-block mt-3 text-sky-400 text-sm font-medium group-hover:translate-x-1 transition-transform">{item.cta} &rarr;</span>
+          </div>
+        </a>
+      ))}
     </div>
   </section>
 
   <!-- CTA -->
   <section class="px-4 py-16 text-center">
-    <div class="bg-[#242426] border border-[#2E2E30] rounded-3xl p-10 sm:p-14 max-w-2xl mx-auto">
-      <h2 class="font-['Playfair_Display',serif] text-2xl sm:text-3xl mb-4">მზად ხარ?</h2>
-      <p class="text-[#6B6B65] mb-6 text-sm sm:text-base">5,250+ სიტყვა, 35 პოდკასტი, 65 გრამატიკა — უფასოდ.</p>
-      <a href="/flashcards/" class="bg-white text-[#1C1C1E] font-semibold px-8 py-3.5 rounded-xl text-base hover:bg-[#E8E8E0] transition-colors inline-block">დაიწყე სწავლა</a>
+    <div class="bg-gradient-to-br from-[#242426] to-[#1a1a2e] border border-[#2E2E30] rounded-3xl p-10 sm:p-14 max-w-2xl mx-auto relative overflow-hidden">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 via-green-400 to-amber-400"></div>
+      <h2 class="font-['Playfair_Display',serif] text-2xl sm:text-3xl mb-4">მზად ხარ? 🚀</h2>
+      <p class="text-[#6B6B65] mb-6 text-sm sm:text-base">5,250+ სიტყვა, 35 პოდკასტი, 65 გრამატიკა — ყველაფერი <span class="text-green-400 font-bold">უფასოდ</span>.</p>
+      <a href="/flashcards/" class="bg-green-500 text-white font-bold px-8 py-3.5 rounded-xl text-base border-b-4 border-green-600 hover:bg-green-400 active:border-b-0 active:mt-1 transition-all uppercase tracking-wide inline-block">დაიწყე სწავლა</a>
     </div>
   </section>
 </Layout>

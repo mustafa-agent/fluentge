@@ -31,7 +31,9 @@
 - [ ] Desktop layout — proper spacing
 
 ### Known Bugs
-(Crons log bugs here)
+- [ ] Homepage index.astro has 75+ hardcoded words (472 lines) — bloated, should be JSON
+- [ ] Flashcard page returns empty on server-fetch (React SPA, expected but no SSR fallback/loading state visible)
+- [ ] Grammar: only 3 lessons actually accessible (to-be, articles, plural-nouns), rest redirect to /premium/ — verify those lesson pages exist
 
 ### Fixed Bugs ✅
 - [x] weather-climate.json had card with missing english/georgian fields (Feb 27)

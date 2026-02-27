@@ -55,6 +55,12 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
+## 🎯 THIS SPRINT (Feb 28 night)
+- [ ] Homepage index.astro cleanup — extract word list, reduce from 472 lines ← Cron 2
+- [ ] Light/dark mode audit on all pages ← Cron 2
+- [ ] Dashboard: "continue where you left off" card ← Cron 4
+- [ ] Grammar → flashcards interconnection links ← Cron 4
+
 ## Recently Improved ✅
 (Crons update this section)
 
