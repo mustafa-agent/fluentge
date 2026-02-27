@@ -1,184 +1,1847 @@
 [
-  {"english":"gym","georgian":"სპორტდარბაზი","pronunciation":"/dʒɪm/","example_en":"I go to the gym every day.","example_ka":"ყოველდღე სპორტდარბაზში დავდივარ.","category":"gym-fitness","level":"A1"},
-  {"english":"workout","georgian":"ვარჯიში","pronunciation":"/ˈwɜːrkaʊt/","example_en":"That was a great workout!","example_ka":"შესანიშნავი ვარჯიში იყო!","category":"gym-fitness","level":"A1"},
-  {"english":"exercise","georgian":"ვარჯიში","pronunciation":"/ˈɛksərsaɪz/","example_en":"Regular exercise is good for health.","example_ka":"რეგულარული ვარჯიში ჯანმრთელობისთვის კარგია.","category":"gym-fitness","level":"A1"},
-  {"english":"training","georgian":"წვრთნა","pronunciation":"/ˈtreɪnɪŋ/","example_en":"Strength training builds muscle.","example_ka":"ძალის წვრთნა კუნთებს აშენებს.","category":"gym-fitness","level":"A1"},
-  {"english":"fitness","georgian":"ფიტნესი","pronunciation":"/ˈfɪtnəs/","example_en":"Good fitness improves quality of life.","example_ka":"კარგი ფიტნესი ცხოვრების ხარისხს აუმჯობესებს.","category":"gym-fitness","level":"A1"},
-  {"english":"muscle","georgian":"კუნთი","pronunciation":"/ˈmʌsl/","example_en":"My muscles are sore after yesterday.","example_ka":"გუშინდელი ვარჯიშის შემდეგ კუნთები მტკივა.","category":"gym-fitness","level":"A1"},
-  {"english":"strength","georgian":"ძალა","pronunciation":"/streŋθ/","example_en":"Building strength takes time and consistency.","example_ka":"ძალის შენება დროსა და თანმიმდევრობას მოითხოვს.","category":"gym-fitness","level":"A1"},
-  {"english":"endurance","georgian":"გამძლეობა","pronunciation":"/ɪnˈdʊrəns/","example_en":"Running improves cardiovascular endurance.","example_ka":"სირბილი გულ-სისხლძარღვთა სისტემის გამძლეობას აუმჯობესებს.","category":"gym-fitness","level":"A2"},
-  {"english":"cardio","georgian":"კარდიო","pronunciation":"/ˈkɑːrdioʊ/","example_en":"I do 30 minutes of cardio.","example_ka":"30 წუთი კარდიოს ვაკეთებ.","category":"gym-fitness","level":"A1"},
-  {"english":"aerobic","georgian":"აერობული","pronunciation":"/eɪˈroʊbɪk/","example_en":"Aerobic exercise strengthens the heart.","example_ka":"აერობული ვარჯიში გულს აძლიერებს.","category":"gym-fitness","level":"A2"},
-  {"english":"anaerobic","georgian":"ანაერობული","pronunciation":"/ˌænəˈroʊbɪk/","example_en":"Weight lifting is anaerobic exercise.","example_ka":"წონის აწევა ანაერობული ვარჯიშია.","category":"gym-fitness","level":"B2"},
-  {"english":"weight","georgian":"წონა","pronunciation":"/weɪt/","example_en":"Add more weight to the bar.","example_ka":"შტანგაზე მეტი წონა დაამატე.","category":"gym-fitness","level":"A1"},
-  {"english":"dumbbell","georgian":"ჰანტელი","pronunciation":"/ˈdʌmbel/","example_en":"I lifted 20kg dumbbells today.","example_ka":"დღეს 20კგ ჰანტელი ავწიე.","category":"gym-fitness","level":"A1"},
-  {"english":"barbell","georgian":"შტანგა","pronunciation":"/ˈbɑːrbel/","example_en":"Put more weight on the barbell.","example_ka":"შტანგაზე მეტი წონა დადე.","category":"gym-fitness","level":"A1"},
-  {"english":"kettlebell","georgian":"ქეთლბელი","pronunciation":"/ˈketlˌbel/","example_en":"Kettlebell swings are a full-body exercise.","example_ka":"ქეთლბელის ქანობა მთელი სხეულის ვარჯიშია.","category":"gym-fitness","level":"A2"},
-  {"english":"machine","georgian":"ტრენაჟორი","pronunciation":"/məˈʃiːn/","example_en":"The leg press machine is very effective.","example_ka":"ფეხის პრესის ტრენაჟორი ძალიან ეფექტურია.","category":"gym-fitness","level":"A1"},
-  {"english":"treadmill","georgian":"სარბენი ბილიკი","pronunciation":"/ˈtredmɪl/","example_en":"I ran 5km on the treadmill.","example_ka":"სარბენ ბილიკზე 5კმ გავირბინე.","category":"gym-fitness","level":"A1"},
-  {"english":"elliptical","georgian":"ელიფტური","pronunciation":"/ɪˈlɪptɪkəl/","example_en":"The elliptical machine is easier on joints.","example_ka":"ელიფტური ტრენაჟორი სახსრებისთვის უფრო ნაზია.","category":"gym-fitness","level":"A2"},
-  {"english":"bike","georgian":"ველოსიპედი","pronunciation":"/baɪk/","example_en":"Stationary bike is great for leg strength.","example_ka":"უძრავი ველოსიპედი ფეხების ძალისთვის შესანიშნავია.","category":"gym-fitness","level":"A1"},
-  {"english":"rowing","georgian":"ნაოსნობა","pronunciation":"/ˈroʊɪŋ/","example_en":"Rowing machine works the whole body.","example_ka":"ნაოსნობის ტრენაჟორი მთელ სხეულს მუშაობს.","category":"gym-fitness","level":"A2"},
-  {"english":"bench","georgian":"დაზგა","pronunciation":"/bentʃ/","example_en":"Bench press is a classic exercise.","example_ka":"პრესი დაზგაზე კლასიკური ვარჯიშია.","category":"gym-fitness","level":"A1"},
-  {"english":"rack","georgian":"სადგამი","pronunciation":"/ræk/","example_en":"Always use the safety rack when squatting.","example_ka":"სქუატისას ყოველთვის გამოიყენე უსაფრთხოების სადგამი.","category":"gym-fitness","level":"A2"},
-  {"english":"cable","georgian":"კაბელი","pronunciation":"/ˈkeɪbəl/","example_en":"Cable exercises provide constant tension.","example_ka":"კაბელის ვარჯიშები მუდმივ დაძაბულობას უზრუნველყოფს.","category":"gym-fitness","level":"A2"},
-  {"english":"pulley","georgian":"ბლოკი","pronunciation":"/ˈpʊli/","example_en":"Use the high pulley for lat pulldowns.","example_ka":"ზურგის ვარჯიშისთვის მაღალი ბლოკი გამოიყენე.","category":"gym-fitness","level":"B2"},
-  {"english":"plate","georgian":"დისკი","pronunciation":"/pleɪt/","example_en":"Add two 20kg plates to each side.","example_ka":"თითო მხარეს ორი 20 კგ-იანი დისკი დადე.","category":"gym-fitness","level":"A1"},
-  {"english":"rep","georgian":"გამეორება","pronunciation":"/rep/","example_en":"How many reps did you do?","example_ka":"რამდენი გამეორება გააკეთე?","category":"gym-fitness","level":"A1"},
-  {"english":"set","georgian":"სეტი","pronunciation":"/set/","example_en":"Do 3 sets of 12 reps.","example_ka":"გააკეთე 3 სეტი 12 გამეორებით.","category":"gym-fitness","level":"A1"},
-  {"english":"rest","georgian":"დასვენება","pronunciation":"/rest/","example_en":"Rest 60 seconds between sets.","example_ka":"სეტებს შორის 60 წამი დაისვენე.","category":"gym-fitness","level":"A1"},
-  {"english":"pause","georgian":"შეჩერება","pronunciation":"/pɔːz/","example_en":"Pause at the bottom of the squat.","example_ka":"სქუატის ქვედა წერტილში შეჩერდი.","category":"gym-fitness","level":"A2"},
-  {"english":"tempo","georgian":"ტემპო","pronunciation":"/ˈtempoʊ/","example_en":"Control the tempo of your movements.","example_ka":"შენი მოძრაობების ტემპო გააკონტროლე.","category":"gym-fitness","level":"B2"},
-  {"english":"form","georgian":"ტექნიკა","pronunciation":"/fɔːrm/","example_en":"Good form prevents injuries.","example_ka":"კარგი ტექნიკა ტრავმებს თავიდან აიცილებს.","category":"gym-fitness","level":"A2"},
-  {"english":"technique","georgian":"ტექნიკა","pronunciation":"/tekˈniːk/","example_en":"Perfect your technique before adding weight.","example_ka":"წონის დამატებამდე ტექნიკა სრულყავი.","category":"gym-fitness","level":"A2"},
-  {"english":"posture","georgian":"პოსტურა","pronunciation":"/ˈpɑːstʃər/","example_en":"Maintain proper posture during exercises.","example_ka":"ვარჯიშის დროს სწორი პოსტურა შეინარჩუნე.","category":"gym-fitness","level":"A2"},
-  {"english":"alignment","georgian":"განლაგება","pronunciation":"/əˈlaɪnmənt/","example_en":"Proper body alignment is crucial for safety.","example_ka":"სხეულის სწორი განლაგება უსაფრთხოებისთვის მნიშვნელოვანია.","category":"gym-fitness","level":"B2"},
-  {"english":"balance","georgian":"ბალანსი","pronunciation":"/ˈbæləns/","example_en":"Yoga improves balance and flexibility.","example_ka":"იოგა ბალანსსა და მოქნილობას აუმჯობესებს.","category":"gym-fitness","level":"A1"},
-  {"english":"coordination","georgian":"კოორდინაცია","pronunciation":"/koʊˌɔːrdɪˈneɪʃən/","example_en":"Boxing training improves hand-eye coordination.","example_ka":"კრივის წვრთნა ხელ-თვალის კოორდინაციას აუმჯობესებს.","category":"gym-fitness","level":"A2"},
-  {"english":"flexibility","georgian":"მოქნილობა","pronunciation":"/ˌfleksəˈbɪləti/","example_en":"Stretching increases flexibility.","example_ka":"გაჭიმვა მოქნილობას ზრდის.","category":"gym-fitness","level":"A2"},
-  {"english":"mobility","georgian":"მობილურობა","pronunciation":"/moʊˈbɪləti/","example_en":"Joint mobility decreases with age.","example_ka":"სახსრების მობილურობა ასაკთან ერთად მცირდება.","category":"gym-fitness","level":"B2"},
-  {"english":"stability","georgian":"სტაბილურობა","pronunciation":"/stəˈbɪləti/","example_en":"Core exercises improve stability.","example_ka":"ღერძის ვარჯიშები სტაბილურობას აუმჯობესებს.","category":"gym-fitness","level":"A2"},
-  {"english":"core","georgian":"ღერძი","pronunciation":"/kɔːr/","example_en":"A strong core supports good posture.","example_ka":"ძლიერი ღერძი კარგ პოსტურას უჭერს მხარს.","category":"gym-fitness","level":"A2"},
-  {"english":"abs","georgian":"მუცლის კუნთები","pronunciation":"/æbz/","example_en":"I train abs every other day.","example_ka":"მუცლის კუნთებს ყოველ მეორე დღე ვავარჯიშებ.","category":"gym-fitness","level":"A1"},
-  {"english":"obliques","georgian":"გვერდითი კუნთები","pronunciation":"/əˈbliːks/","example_en":"Side planks target the obliques.","example_ka":"გვერდითი პლანკები გვერდით კუნთებს ავარჯიშებს.","category":"gym-fitness","level":"B2"},
-  {"english":"chest","georgian":"მკერდი","pronunciation":"/tʃest/","example_en":"Monday is chest day.","example_ka":"ორშაბათი მკერდის დღეა.","category":"gym-fitness","level":"A1"},
-  {"english":"pectorals","georgian":"მკერდის კუნთები","pronunciation":"/ˈpektərəlz/","example_en":"Push-ups work the pectoral muscles.","example_ka":"ხელის ბრუნვა მკერდის კუნთებს მუშაობს.","category":"gym-fitness","level":"B2"},
-  {"english":"back","georgian":"ზურგი","pronunciation":"/bæk/","example_en":"I trained back and shoulders today.","example_ka":"დღეს ზურგი და მხრები ვავარჯიშე.","category":"gym-fitness","level":"A1"},
-  {"english":"lats","georgian":"ღია კუნთები","pronunciation":"/læts/","example_en":"Pull-ups primarily work the lats.","example_ka":"შეკვრა ძირითადად ღია კუნთებს მუშაობს.","category":"gym-fitness","level":"B2"},
-  {"english":"rhomboids","georgian":"რომბისებური კუნთები","pronunciation":"/ˈrɑːmbɔɪdz/","example_en":"Rows target the rhomboid muscles.","example_ka":"მიზიდვა რომბისებურ კუნთებს ავარჯიშებს.","category":"gym-fitness","level":"C1"},
-  {"english":"traps","georgian":"ტრაპეცია","pronunciation":"/træps/","example_en":"Shrugs build bigger traps.","example_ka":"მხრების აწევა ტრაპეციას ზრდის.","category":"gym-fitness","level":"B2"},
-  {"english":"shoulders","georgian":"მხრები","pronunciation":"/ˈʃoʊldərz/","example_en":"Shoulder press is my favorite exercise.","example_ka":"მხრის პრესი ჩემი საყვარელი ვარჯიშია.","category":"gym-fitness","level":"A1"},
-  {"english":"deltoids","georgian":"დელტისებური კუნთები","pronunciation":"/ˈdeltɔɪdz/","example_en":"Lateral raises work the deltoid muscles.","example_ka":"გვერდითი აწევა დელტისებურ კუნთებს მუშაობს.","category":"gym-fitness","level":"C1"},
-  {"english":"arms","georgian":"ხელები","pronunciation":"/ɑːrmz/","example_en":"Friday is arms day at the gym.","example_ka":"პარასკევი სპორტდარბაზში ხელების დღეა.","category":"gym-fitness","level":"A1"},
-  {"english":"biceps","georgian":"ბიცეპსი","pronunciation":"/ˈbaɪseps/","example_en":"Curls work your biceps.","example_ka":"კერლები ბიცეპსს ავარჯიშებს.","category":"gym-fitness","level":"A1"},
-  {"english":"triceps","georgian":"ტრიცეპსი","pronunciation":"/ˈtraɪseps/","example_en":"Dips are great for triceps development.","example_ka":"ჩაყოვნება ტრიცეპსის განვითარებისთვის შესანიშნავია.","category":"gym-fitness","level":"A2"},
-  {"english":"forearms","georgian":"წინამკლავები","pronunciation":"/ˈfɔːrɑːrmz/","example_en":"Rock climbing builds strong forearms.","example_ka":"კლდეზე ასვლა ძლიერ წინამკლავებს ქმნის.","category":"gym-fitness","level":"A2"},
-  {"english":"legs","georgian":"ფეხები","pronunciation":"/leɡz/","example_en":"Never skip leg day!","example_ka":"ფეხის დღე არასოდეს გამოტოვო!","category":"gym-fitness","level":"A1"},
-  {"english":"quadriceps","georgian":"ოთხთავა კუნთი","pronunciation":"/ˈkwɑːdrɪseps/","example_en":"Squats target the quadriceps muscles.","example_ka":"სქუატები ოთხთავა კუნთს ავარჯიშებს.","category":"gym-fitness","level":"B2"},
-  {"english":"hamstrings","georgian":"უკანა ზურგის კუნთი","pronunciation":"/ˈhæmstrɪŋz/","example_en":"Deadlifts work the hamstring muscles.","example_ka":"დედლიფტი უკანა ზურგის კუნთს მუშაობს.","category":"gym-fitness","level":"B2"},
-  {"english":"glutes","georgian":"დუნდულოს კუნთები","pronunciation":"/ɡluːts/","example_en":"Hip thrusts are excellent for glute development.","example_ka":"თეძოს უკუღმა ბიძგი დუნდულოს კუნთების განვითარებისთვის შესანიშნავია.","category":"gym-fitness","level":"B2"},
-  {"english":"calves","georgian":"კანჭები","pronunciation":"/kævz/","example_en":"Calf raises build stronger lower legs.","example_ka":"კანჭების აწევა ქვედა ფეხებს აძლიერებს.","category":"gym-fitness","level":"A2"},
-  {"english":"squat","georgian":"სქუატი","pronunciation":"/skwɑːt/","example_en":"Squats are great for your legs.","example_ka":"სქუატი ფეხებისთვის შესანიშნავია.","category":"gym-fitness","level":"A1"},
-  {"english":"deadlift","georgian":"დედლიფტი","pronunciation":"/ˈdedlɪft/","example_en":"Deadlifts work your whole body.","example_ka":"დედლიფტი მთელ სხეულს ავარჯიშებს.","category":"gym-fitness","level":"A2"},
-  {"english":"press","georgian":"პრესი","pronunciation":"/pres/","example_en":"Bench press builds chest strength.","example_ka":"პრესი დაზგაზე მკერდის ძალას ქმნის.","category":"gym-fitness","level":"A1"},
-  {"english":"curl","georgian":"კერლი","pronunciation":"/kɜːrl/","example_en":"Bicep curls isolate the arm muscles.","example_ka":"ბიცეპსის კერლი ხელის კუნთებს იზოლირებს.","category":"gym-fitness","level":"A1"},
-  {"english":"extension","georgian":"გაშლა","pronunciation":"/ɪkˈstenʃən/","example_en":"Leg extensions target the quadriceps.","example_ka":"ფეხის გაშლა ოთხთავა კუნთს ავარჯიშებს.","category":"gym-fitness","level":"A2"},
-  {"english":"flexion","georgian":"მოხრა","pronunciation":"/ˈflekʃən/","example_en":"Hip flexion occurs during squats.","example_ka":"თეძოს მოხრა სქუატის დროს ხდება.","category":"gym-fitness","level":"B2"},
-  {"english":"rotation","georgian":"მობრუნება","pronunciation":"/roʊˈteɪʃən/","example_en":"Russian twists involve spinal rotation.","example_ka":"რუსული ბრუნვები ხერხემლის მობრუნებას მოიცავს.","category":"gym-fitness","level":"B2"},
-  {"english":"abduction","georgian":"მოშორება","pronunciation":"/æbˈdʌkʃən/","example_en":"Lateral raises involve shoulder abduction.","example_ka":"გვერდითი აწევა მხრის მოშორებას მოიცავს.","category":"gym-fitness","level":"C1"},
-  {"english":"adduction","georgian":"მიახლოება","pronunciation":"/əˈdʌkʃən/","example_en":"Cable crossovers use adduction movement.","example_ka":"კაბელის გადაკვეთა მიახლოების მოძრაობას იყენებს.","category":"gym-fitness","level":"C1"},
-  {"english":"concentric","georgian":"კონცენტრული","pronunciation":"/kənˈsentrɪk/","example_en":"The concentric phase is when muscles contract.","example_ka":"კონცენტრული ფაზა მაშინაა, როცა კუნთები იკუმშება.","category":"gym-fitness","level":"C1"},
-  {"english":"eccentric","georgian":"ექსცენტრული","pronunciation":"/ɪkˈsentrɪk/","example_en":"The eccentric phase controls the weight down.","example_ka":"ექსცენტრული ფაზა წონის ქვემოთ დაშვებას აკონტროლებს.","category":"gym-fitness","level":"C1"},
-  {"english":"isometric","georgian":"იზომეტრული","pronunciation":"/ˌaɪsəˈmetrɪk/","example_en":"Planks are isometric exercises.","example_ka":"პლანკები იზომეტრული ვარჯიშებია.","category":"gym-fitness","level":"B2"},
-  {"english":"dynamic","georgian":"დინამიური","pronunciation":"/daɪˈnæmɪk/","example_en":"Dynamic stretching prepares muscles for activity.","example_ka":"დინამიური გაჭიმვა კუნთებს აქტივობისთვის ამზადებს.","category":"gym-fitness","level":"A2"},
-  {"english":"static","georgian":"სტატიური","pronunciation":"/ˈstætɪk/","example_en":"Static stretches are held for 30 seconds.","example_ka":"სტატიური გაჭიმვები 30 წამით ინარჩუნება.","category":"gym-fitness","level":"A2"},
-  {"english":"compound","georgian":"რთული","pronunciation":"/ˈkɑːmpaʊnd/","example_en":"Compound exercises work multiple muscle groups.","example_ka":"რთული ვარჯიშები მრავალ კუნთურ ჯგუფს მუშაობს.","category":"gym-fitness","level":"B2"},
-  {"english":"isolation","georgian":"იზოლაციური","pronunciation":"/ˌaɪsəˈleɪʃən/","example_en":"Isolation exercises target specific muscles.","example_ka":"იზოლაციური ვარჯიშები კონკრეტულ კუნთებს ავარჯიშებს.","category":"gym-fitness","level":"B2"},
-  {"english":"functional","georgian":"ფუნქციური","pronunciation":"/ˈfʌŋkʃənəl/","example_en":"Functional training mimics daily movements.","example_ka":"ფუნქციური წვრთნა ყოველდღიურ მოძრაობებს მიბაძავს.","category":"gym-fitness","level":"B2"},
-  {"english":"circuit","georgian":"წრე","pronunciation":"/ˈsɜːrkɪt/","example_en":"Circuit training combines multiple exercises.","example_ka":"წრიული წვრთნა რამდენიმე ვარჯიშს აერთიანებს.","category":"gym-fitness","level":"A2"},
-  {"english":"superset","georgian":"სუპერსეტი","pronunciation":"/ˈsuːpərset/","example_en":"Supersets save time by pairing exercises.","example_ka":"სუპერსეტები ვარჯიშების წყვილებით დროს იზოგავს.","category":"gym-fitness","level":"B2"},
-  {"english":"dropset","georgian":"დროპსეტი","pronunciation":"/ˈdrɑːpset/","example_en":"Dropsets push muscles to fatigue.","example_ka":"დროპსეტები კუნთებს დაღლილობამდე მიყავს.","category":"gym-fitness","level":"B2"},
-  {"english":"pyramid","georgian":"პირამიდა","pronunciation":"/ˈpɪrəmɪd/","example_en":"Pyramid sets gradually increase weight.","example_ka":"პირამიდული სეტები წონას თანდათანობით ზრდის.","category":"gym-fitness","level":"B2"},
-  {"english":"progressive","georgian":"პროგრესული","pronunciation":"/prəˈɡresɪv/","example_en":"Progressive overload drives muscle growth.","example_ka":"პროგრესული გადატვირთვა კუნთების ზრდას უწყობს ხელს.","category":"gym-fitness","level":"B2"},
-  {"english":"overload","georgian":"გადატვირთვა","pronunciation":"/ˌoʊvərˈloʊd/","example_en":"Muscle overload stimulates adaptation.","example_ka":"კუნთების გადატვირთვა ადაპტაციას ასტიმულირებს.","category":"gym-fitness","level":"B2"},
-  {"english":"plateau","georgian":"პლატო","pronunciation":"/plæˈtoʊ/","example_en":"Change your routine to break through plateaus.","example_ka":"პლატოს გასავლელად რუტინა შეცვალე.","category":"gym-fitness","level":"B2"},
-  {"english":"adaptation","georgian":"ადაპტაცია","pronunciation":"/ˌædæpˈteɪʃən/","example_en":"Your body adapts to exercise over time.","example_ka":"შენი სხეული დროთა განმავლობაში ვარჯიშს ადაპტირდება.","category":"gym-fitness","level":"B2"},
-  {"english":"recovery","georgian":"აღდგენა","pronunciation":"/rɪˈkʌvəri/","example_en":"Recovery is just as important as training.","example_ka":"აღდგენა ისეთივე მნიშვნელოვანია, როგორც ვარჯიში.","category":"gym-fitness","level":"A2"},
-  {"english":"regeneration","georgian":"რეგენერაცია","pronunciation":"/rɪˌdʒenəˈreɪʃən/","example_en":"Sleep promotes muscle regeneration.","example_ka":"ძილი კუნთების რეგენერაციას უწყობს ხელს.","category":"gym-fitness","level":"B2"},
-  {"english":"fatigue","georgian":"დაღლილობა","pronunciation":"/fəˈtiːɡ/","example_en":"Muscle fatigue indicates a good workout.","example_ka":"კუნთების დაღლილობა კარგ ვარჯიშზე მეტყველებს.","category":"gym-fitness","level":"A2"},
-  {"english":"soreness","georgian":"ტკივილი","pronunciation":"/ˈsɔːrnəs/","example_en":"Muscle soreness is normal after intense workouts.","example_ka":"კუნთების ტკივილი ინტენსური ვარჯიშის შემდეგ ნორმალურია.","category":"gym-fitness","level":"A2"},
-  {"english":"inflammation","georgian":"ანთება","pronunciation":"/ˌɪnfləˈmeɪʃən/","example_en":"Inflammation is part of muscle repair.","example_ka":"ანთება კუნთების აღდგენის ნაწილია.","category":"gym-fitness","level":"B2"},
-  {"english":"injury","georgian":"ტრავმა","pronunciation":"/ˈɪndʒəri/","example_en":"Proper form prevents injury.","example_ka":"სწორი ტექნიკა ტრავმას თავიდან აიცილებს.","category":"gym-fitness","level":"A2"},
-  {"english":"strain","georgian":"გადაჭიმვა","pronunciation":"/streɪn/","example_en":"Muscle strain requires rest and care.","example_ka":"კუნთის გადაჭიმვა დასვენებასა და ზრუნვას მოითხოვს.","category":"gym-fitness","level":"A2"},
-  {"english":"sprain","georgian":"შეჭმუხვნა","pronunciation":"/spreɪn/","example_en":"Ankle sprains are common in sports.","example_ka":"ტერფის შეჭმუხვნა სპორტში ხშირია.","category":"gym-fitness","level":"A2"},
-  {"english":"tear","georgian":"ნაწევი","pronunciation":"/ter/","example_en":"A muscle tear requires medical attention.","example_ka":"კუნთის ნაწევი სამედიცინო ყურადღებას მოითხოვს.","category":"gym-fitness","level":"B2"},
-  {"english":"rehabilitation","georgian":"რეაბილიტაცია","pronunciation":"/ˌriːəˌbɪlɪˈteɪʃən/","example_en":"Rehabilitation helps restore function after injury.","example_ka":"რეაბილიტაცია ტრავმის შემდეგ ფუნქციის აღდგენაში ეხმარება.","category":"gym-fitness","level":"B2"},
-  {"english":"prevention","georgian":"პრევენცია","pronunciation":"/prɪˈvenʃən/","example_en":"Injury prevention is better than treatment.","example_ka":"ტრავმის პრევენცია მკურნალობაზე უკეთესია.","category":"gym-fitness","level":"B2"},
-  {"english":"nutrition","georgian":"კვება","pronunciation":"/nuˈtrɪʃən/","example_en":"Good nutrition supports fitness goals.","example_ka":"კარგი კვება ფიტნესის მიზნებს უჭერს მხარს.","category":"gym-fitness","level":"A2"},
-  {"english":"protein","georgian":"ცილა","pronunciation":"/ˈproʊtiːn/","example_en":"Eat more protein to build muscle.","example_ka":"კუნთების ზრდისთვის მეტი ცილა მიირთვი.","category":"gym-fitness","level":"A1"},
-  {"english":"carbohydrates","georgian":"ნახშირწყალბადები","pronunciation":"/ˌkɑːrboʊˈhaɪdreɪts/","example_en":"Carbohydrates provide energy for workouts.","example_ka":"ნახშირწყალბადები ვარჯიშისთვის ენერგიას იძლევა.","category":"gym-fitness","level":"A2"},
-  {"english":"fats","georgian":"ცხიმები","pronunciation":"/fæts/","example_en":"Healthy fats support hormone production.","example_ka":"ჯანსაღი ცხიმები ჰორმონების წარმოებას უჭერს მხარს.","category":"gym-fitness","level":"A2"},
-  {"english":"calories","georgian":"კალორიები","pronunciation":"/ˈkæləriz/","example_en":"Track your calories for better results.","example_ka":"უკეთესი შედეგებისთვის კალორიებს აკონტროლე.","category":"gym-fitness","level":"A1"},
-  {"english":"macros","georgian":"მაკროები","pronunciation":"/ˈmækroʊz/","example_en":"Counting macros helps optimize nutrition.","example_ka":"მაკროების რაოდენობის თვლა კვების ოპტიმიზაციას ეხმარება.","category":"gym-fitness","level":"B2"},
-  {"english":"supplements","georgian":"დანამატები","pronunciation":"/ˈsʌpləmənts/","example_en":"Do you take any supplements?","example_ka":"რამე დანამატს იღებ?","category":"gym-fitness","level":"A2"},
-  {"english":"creatine","georgian":"კრეატინი","pronunciation":"/ˈkriːətiːn/","example_en":"Creatine improves strength and power.","example_ka":"კრეატინი ძალასა და სიძლიერეს აუმჯობესებს.","category":"gym-fitness","level":"B2"},
-  {"english":"whey","georgian":"შრატი","pronunciation":"/weɪ/","example_en":"Whey protein is quickly absorbed.","example_ka":"შრატის ცილა სწრაფად ირწოვება.","category":"gym-fitness","level":"B2"},
-  {"english":"casein","georgian":"კაზეინი","pronunciation":"/ˈkeɪsiːn/","example_en":"Casein protein digests slowly.","example_ka":"კაზეინის ცილა ნელა ირწოვება.","category":"gym-fitness","level":"B2"},
-  {"english":"amino","georgian":"ამინო","pronunciation":"/əˈmiːnoʊ/","example_en":"Amino acids are protein building blocks.","example_ka":"ამინომჟავები ცილის სამშენებლო ბლოკებია.","category":"gym-fitness","level":"B2"},
-  {"english":"hydration","georgian":"ჰიდრაცია","pronunciation":"/haɪˈdreɪʃən/","example_en":"Proper hydration is essential for performance.","example_ka":"სწორი ჰიდრაცია შესრულებისთვის აუცილებელია.","category":"gym-fitness","level":"A2"},
-  {"english":"electrolytes","georgian":"ელექტროლიტები","pronunciation":"/ɪˈlektrəlaɪts/","example_en":"Electrolytes maintain proper muscle function.","example_ka":"ელექტროლიტები კუნთების სწორ ფუნქციონირებას ინარჩუნებს.","category":"gym-fitness","level":"B2"},
-  {"english":"glucose","georgian":"გლუკოზა","pronunciation":"/ˈɡluːkoʊs/","example_en":"Glucose is the body's preferred energy source.","example_ka":"გლუკოზა სხეულის საყვარელი ენერგიის წყაროა.","category":"gym-fitness","level":"B2"},
-  {"english":"glycogen","georgian":"გლიკოგენი","pronunciation":"/ˈɡlaɪkədʒən/","example_en":"Glycogen stores energy in muscles.","example_ka":"გლიკოგენი კუნთებში ენერგიას ინახავს.","category":"gym-fitness","level":"B2"},
-  {"english":"metabolism","georgian":"მეტაბოლიზმი","pronunciation":"/məˈtæbəlɪzəm/","example_en":"Exercise boosts your metabolism.","example_ka":"ვარჯიში შენს მეტაბოლიზმს ააქტიურებს.","category":"gym-fitness","level":"A2"},
-  {"english":"anabolism","georgian":"ანაბოლიზმი","pronunciation":"/əˈnæbəlɪzəm/","example_en":"Anabolism builds muscle tissue.","example_ka":"ანაბოლიზმი კუნთოვან ქსოვილს აშენებს.","category":"gym-fitness","level":"C1"},
-  {"english":"catabolism","georgian":"კატაბოლიზმი","pronunciation":"/kəˈtæbəlɪzəm/","example_en":"Catabolism breaks down tissue for energy.","example_ka":"კატაბოლიზმი ქსოვილს ენერგიისთვის ანადგურებს.","category":"gym-fitness","level":"C1"},
-  {"english":"hormones","georgian":"ჰორმონები","pronunciation":"/ˈhɔːrmoʊnz/","example_en":"Exercise affects hormone production.","example_ka":"ვარჯიში ჰორმონების წარმოებაზე მოქმედებს.","category":"gym-fitness","level":"B2"},
-  {"english":"testosterone","georgian":"ტესტოსტერონი","pronunciation":"/tesˈtɑːstəroʊn/","example_en":"Resistance training can boost testosterone.","example_ka":"წინააღმდეგობის წვრთნამ შეიძლება ტესტოსტერონი გაზარდოს.","category":"gym-fitness","level":"C1"},
-  {"english":"cortisol","georgian":"კორტიზოლი","pronunciation":"/ˈkɔːrtɪzɔːl/","example_en":"High cortisol levels hinder muscle growth.","example_ka":"მაღალი კორტიზოლის დონე კუნთების ზრდას უშლის ხელს.","category":"gym-fitness","level":"C1"},
-  {"english":"adrenaline","georgian":"ადრენალინი","pronunciation":"/əˈdrenəlɪn/","example_en":"Adrenaline increases during intense exercise.","example_ka":"ინტენსური ვარჯიშის დროს ადრენალინი იზრდება.","category":"gym-fitness","level":"A2"},
-  {"english":"endorphins","georgian":"ენდორფინები","pronunciation":"/ɪnˈdɔːrfɪnz/","example_en":"Exercise releases natural endorphins.","example_ka":"ვარჯიში ბუნებრივ ენდორფინებს გამოყოფს.","category":"gym-fitness","level":"B2"},
-  {"english":"motivation","georgian":"მოტივაცია","pronunciation":"/ˌmoʊtɪˈveɪʃən/","example_en":"Stay motivated and never give up!","example_ka":"იყავი მოტივირებული და არასოდეს დანებდე!","category":"gym-fitness","level":"A1"},
-  {"english":"discipline","georgian":"დისციპლინა","pronunciation":"/ˈdɪsɪplɪn/","example_en":"Discipline beats motivation.","example_ka":"დისციპლინა მოტივაციას სჯობს.","category":"gym-fitness","level":"A2"},
-  {"english":"consistency","georgian":"თანმიმდევრობა","pronunciation":"/kənˈsɪstənsi/","example_en":"Consistency is key to long-term success.","example_ka":"თანმიმდევრობა გრძელვადიანი წარმატების გასაღებია.","category":"gym-fitness","level":"A2"},
-  {"english":"dedication","georgian":"ერთგულება","pronunciation":"/ˌdedɪˈkeɪʃən/","example_en":"Success requires dedication and hard work.","example_ka":"წარმატება ერთგულებასა და შრომას მოითხოვს.","category":"gym-fitness","level":"A2"},
-  {"english":"commitment","georgian":"ვალდებულება","pronunciation":"/kəˈmɪtmənt/","example_en":"Make a commitment to your health.","example_ka":"შენს ჯანმრთელობას მიმართ ვალდებულება აიღე.","category":"gym-fitness","level":"A2"},
-  {"english":"perseverance","georgian":"მუდმივობა","pronunciation":"/ˌpɜːrsəˈvɪrəns/","example_en":"Perseverance will get you through tough times.","example_ka":"მუდმივობა რთულ დროებში გადაგიყვანს.","category":"gym-fitness","level":"B2"},
-  {"english":"determination","georgian":"განწყობა","pronunciation":"/dɪˌtɜːrmɪˈneɪʃən/","example_en":"Her determination inspired everyone.","example_ka":"მისმა განწყობამ ყველა შთააგონა.","category":"gym-fitness","level":"A2"},
-  {"english":"goals","georgian":"მიზნები","pronunciation":"/ɡoʊlz/","example_en":"Set realistic and achievable goals.","example_ka":"რეალისტური და მისაღწევი მიზნები დაისახე.","category":"gym-fitness","level":"A1"},
-  {"english":"progress","georgian":"პროგრესი","pronunciation":"/ˈprɒɡres/","example_en":"I can see real progress in my strength.","example_ka":"ძალაში ნამდვილი პროგრესი ჩანს.","category":"gym-fitness","level":"A1"},
-  {"english":"results","georgian":"შედეგები","pronunciation":"/rɪˈzʌlts/","example_en":"Results take time and patience.","example_ka":"შედეგები დროსა და მოთმინებას მოითხოვს.","category":"gym-fitness","level":"A1"},
-  {"english":"transformation","georgian":"ტრანსფორმაცია","pronunciation":"/ˌtrænsfərˈmeɪʃən/","example_en":"His body transformation was incredible.","example_ka":"მისი სხეულის ტრანსფორმაცია დაუჯერებელი იყო.","category":"gym-fitness","level":"A2"},
-  {"english":"achievement","georgian":"მიღწევა","pronunciation":"/əˈtʃiːvmənt/","example_en":"Celebrate every fitness achievement.","example_ka":"ყოველი ფიტნესის მიღწევა აღნიშნე.","category":"gym-fitness","level":"A2"},
-  {"english":"milestone","georgian":"ეტაპი","pronunciation":"/ˈmaɪlstoʊn/","example_en":"Reaching 100kg bench press was a milestone.","example_ka":"100 კგ პრესის მიღწევა ეტაპი იყო.","category":"gym-fitness","level":"B2"},
-  {"english":"personal","georgian":"პირადი","pronunciation":"/ˈpɜːrsənəl/","example_en":"Beat your personal record today!","example_ka":"დღეს შენი პირადი რეკორდი გაიმარჯვე!","category":"gym-fitness","level":"A1"},
-  {"english":"record","georgian":"რეკორდი","pronunciation":"/ˈrekərd/","example_en":"I set a new personal record today.","example_ka":"დღეს ახალი პირადი რეკორდი დავდე.","category":"gym-fitness","level":"A1"},
-  {"english":"maximum","georgian":"მაქსიმალური","pronunciation":"/ˈmæksɪməm/","example_en":"Test your one-rep maximum carefully.","example_ka":"ერთი გამეორების მაქსიმუმი ფრთხილად შეამოწმე.","category":"gym-fitness","level":"A2"},
-  {"english":"intensity","georgian":"ინტენსივობა","pronunciation":"/ɪnˈtensəti/","example_en":"High intensity training burns more calories.","example_ka":"მაღალი ინტენსივობის წვრთნა მეტ კალორიას წვავს.","category":"gym-fitness","level":"A2"},
-  {"english":"volume","georgian":"მოცულობა","pronunciation":"/ˈvɑːljuːm/","example_en":"Training volume affects muscle growth.","example_ka":"წვრთნის მოცულობა კუნთების ზრდაზე მოქმედებს.","category":"gym-fitness","level":"B2"},
-  {"english":"frequency","georgian":"სიხშირე","pronunciation":"/ˈfriːkwənsi/","example_en":"Training frequency should match your goals.","example_ka":"წვრთნის სიხშირე შენს მიზნებს უნდა შეესაბამებოდეს.","category":"gym-fitness","level":"B2"},
-  {"english":"duration","georgian":"ხანგრძლივობა","pronunciation":"/duˈreɪʃən/","example_en":"Workout duration depends on your schedule.","example_ka":"ვარჯიშის ხანგრძლივობა შენს გრაფიკზეა დამოკიდებული.","category":"gym-fitness","level":"A2"},
-  {"english":"routine","georgian":"რუტინა","pronunciation":"/ruːˈtiːn/","example_en":"Stick to your workout routine.","example_ka":"შენს ვარჯიშის რუტინას მისდევი.","category":"gym-fitness","level":"A1"},
-  {"english":"schedule","georgian":"განრიგი","pronunciation":"/ˈskedʒuːl/","example_en":"Plan your training schedule ahead.","example_ka":"შენი წვრთნის განრიგი წინასწარ დაგეგმე.","category":"gym-fitness","level":"A1"},
-  {"english":"program","georgian":"პროგრამა","pronunciation":"/ˈproʊɡræm/","example_en":"Follow a structured training program.","example_ka":"სტრუქტურირებულ საწვრთნელ პროგრამას მისდევი.","category":"gym-fitness","level":"A1"},
-  {"english":"plan","georgian":"გეგმა","pronunciation":"/plæn/","example_en":"Every successful journey starts with a plan.","example_ka":"ყოველი წარმატებული მოგზაურობა გეგმით იწყება.","category":"gym-fitness","level":"A1"},
-  {"english":"towel","georgian":"ხელსახოცი","pronunciation":"/ˈtaʊəl/","example_en":"Always bring a towel to wipe off sweat.","example_ka":"ოფლის წასაშლელად ყოველთვის ხელსახოცი წამოიღე.","category":"gym-fitness","level":"A1"},
-  {"english":"water","georgian":"წყალი","pronunciation":"/ˈwɔːtər/","example_en":"Drink water during your workout.","example_ka":"ვარჯიშის დროს წყალი დალიე.","category":"gym-fitness","level":"A1"},
-  {"english":"bottle","georgian":"ბოთლი","pronunciation":"/ˈbɑːtəl/","example_en":"Bring a water bottle to stay hydrated.","example_ka":"ჰიდრაციისთვის წყლის ბოთლი მოიტანე.","category":"gym-fitness","level":"A1"},
-  {"english":"shoes","georgian":"ფეხსაცმელი","pronunciation":"/ʃuːz/","example_en":"Proper gym shoes prevent injuries.","example_ka":"სწორი ფეხსაცმელი ტრავმებს თავიდან აიცილებს.","category":"gym-fitness","level":"A1"},
-  {"english":"clothes","georgian":"ტანსაცმელი","pronunciation":"/kloʊðz/","example_en":"Wear comfortable workout clothes.","example_ka":"კომფორტული ვარჯიშის ტანსაცმელი ჩაიცვი.","category":"gym-fitness","level":"A1"},
-  {"english":"shorts","georgian":"შორტები","pronunciation":"/ʃɔːrts/","example_en":"Athletic shorts allow better movement.","example_ka":"სპორტული შორტები უკეთეს მოძრაობას უზრუნველყოფს.","category":"gym-fitness","level":"A1"},
-  {"english":"shirt","georgian":"მაისური","pronunciation":"/ʃɜːrt/","example_en":"Cotton shirts are good for the gym.","example_ka":"ბამბის მაისურები სპორტდარბაზისთვის კარგია.","category":"gym-fitness","level":"A1"},
-  {"english":"tank","georgian":"ზურგაცმული","pronunciation":"/tæŋk/","example_en":"Tank tops keep you cooler while working out.","example_ka":"ზურგაცმულები ვარჯიშის დროს სიიცივეს ინარჩუნებს.","category":"gym-fitness","level":"A1"},
-  {"english":"leggings","georgian":"ლეგინსები","pronunciation":"/ˈleɡɪŋz/","example_en":"Leggings are comfortable for yoga.","example_ka":"ლეგინსები იოგისთვის კომფორტულია.","category":"gym-fitness","level":"A1"},
-  {"english":"gloves","georgian":"ხელთათმანები","pronunciation":"/ɡlʌvz/","example_en":"Use gloves to protect your hands.","example_ka":"ხელების დასაცავად ხელთათმანები გამოიყენე.","category":"gym-fitness","level":"A2"},
-  {"english":"headband","georgian":"თავზე ლენტი","pronunciation":"/ˈhedbænd/","example_en":"A headband keeps sweat from your eyes.","example_ka":"თავზე ლენტი ოფლს თვალებისგან აცილებს.","category":"gym-fitness","level":"A2"},
-  {"english":"wristband","georgian":"მაჯის ლენტი","pronunciation":"/ˈrɪstbænd/","example_en":"Wristbands absorb sweat during workouts.","example_ka":"მაჯის ლენტები ვარჯიშის დროს ოფლს შეიწოვს.","category":"gym-fitness","level":"A2"},
-  {"english":"belt","georgian":"სარტყელი","pronunciation":"/belt/","example_en":"A lifting belt supports your back.","example_ka":"წამწევი სარტყელი ზურგს უჭერს მხარს.","category":"gym-fitness","level":"A2"},
-  {"english":"straps","georgian":"სარტყლები","pronunciation":"/stræps/","example_en":"Wrist straps help with heavy lifting.","example_ka":"მაჯის სარტყლები მძიმე წონის აწევაში ეხმარება.","category":"gym-fitness","level":"B1"},
-  {"english":"chalk","georgian":"ცარცი","pronunciation":"/tʃɔːk/","example_en":"Chalk improves grip during deadlifts.","example_ka":"ცარცი დედლიფტის დროს მუჭაობას აუმჯობესებს.","category":"gym-fitness","level":"B1"},
-  {"english":"grip","georgian":"მუჭაობა","pronunciation":"/ɡrɪp/","example_en":"Strong grip strength helps with pull-ups.","example_ka":"ძლიერი მუჭაობა შეკვრაში ეხმარება.","category":"gym-fitness","level":"A2"},
-  {"english":"squeeze","georgian":"ჩაჭიდება","pronunciation":"/skwiːz/","example_en":"Squeeze the bar tightly.","example_ka":"შტანგა მტკიცედ ჩაიჭირე.","category":"gym-fitness","level":"A2"},
-  {"english":"hold","georgian":"დაჭერა","pronunciation":"/hoʊld/","example_en":"Hold the position for 10 seconds.","example_ka":"პოზიცია 10 წამით შეინარჩუნე.","category":"gym-fitness","level":"A1"},
-  {"english":"release","georgian":"გაშვება","pronunciation":"/rɪˈliːs/","example_en":"Release the weight slowly.","example_ka":"წონა ნელა გაუშვი.","category":"gym-fitness","level":"A2"},
-  {"english":"breathe","georgian":"სუნთქვა","pronunciation":"/briːð/","example_en":"Breathe out when you lift.","example_ka":"აწევისას ამოისუნთქე.","category":"gym-fitness","level":"A1"},
-  {"english":"inhale","georgian":"ჩასუნთქვა","pronunciation":"/ɪnˈheɪl/","example_en":"Inhale before the lift.","example_ka":"აწევამდე ჩაისუნთქე.","category":"gym-fitness","level":"A2"},
-  {"english":"exhale","georgian":"ამოსუნთქვა","pronunciation":"/eksˈheɪl/","example_en":"Exhale during the lifting motion.","example_ka":"აწევის მოძრაობის დროს ამოისუნთქე.","category":"gym-fitness","level":"A2"},
-  {"english":"focus","georgian":"ფოკუსირება","pronunciation":"/ˈfoʊkəs/","example_en":"Focus on the muscle you're working.","example_ka":"იმ კუნთზე გაამახვილე ყურადღება რომელსაც ავარჯიშებ.","category":"gym-fitness","level":"A1"},
-  {"english":"concentrate","georgian":"კონცენტრირება","pronunciation":"/ˈkɑːnsəntreɪt/","example_en":"Concentrate on proper form.","example_ka":"სწორ ტექნიკაზე კონცენტრირდი.","category":"gym-fitness","level":"A2"},
-  {"english":"mindful","georgian":"ცნობიერი","pronunciation":"/ˈmaɪndfəl/","example_en":"Be mindful of your body movements.","example_ka":"შენი სხეულის მოძრაობების მიმართ ცნობიერი იყავი.","category":"gym-fitness","level":"B1"},
-  {"english":"awareness","georgian":"ცნობიერება","pronunciation":"/əˈwɛrnəs/","example_en":"Body awareness improves with practice.","example_ka":"სხეულის ცნობიერება პრაქტიკით უმჯობესდება.","category":"gym-fitness","level":"B1"},
-  {"english":"steady","georgian":"სტაბილური","pronunciation":"/ˈstedi/","example_en":"Keep a steady pace during cardio.","example_ka":"კარდიოს დროს სტაბილური ტემპი შეინარჩუნე.","category":"gym-fitness","level":"A2"},
-  {"english":"smooth","georgian":"გლუვი","pronunciation":"/smuːð/","example_en":"Make smooth, controlled movements.","example_ka":"გლუვი, კონტროლირებული მოძრაობები იქონიე.","category":"gym-fitness","level":"A2"},
-  {"english":"controlled","georgian":"კონტროლირებული","pronunciation":"/kənˈtroʊld/","example_en":"Use controlled movements throughout the exercise.","example_ka":"მთელი ვარჯიშის განმავლობაში კონტროლირებული მოძრაობები გამოიყენე.","category":"gym-fitness","level":"A2"},
-  {"english":"explosive","georgian":"აფეთქებითი","pronunciation":"/ɪkˈsploʊsɪv/","example_en":"Explosive movements build power.","example_ka":"აფეთქებითი მოძრაობები ძალას ქმნის.","category":"gym-fitness","level":"B1"},
-  {"english":"powerful","georgian":"ძლიერი","pronunciation":"/ˈpaʊərfəl/","example_en":"Develop powerful leg muscles.","example_ka":"ძლიერი ფეხის კუნთები განავითარე.","category":"gym-fitness","level":"A2"},
-  {"english":"weak","georgian":"სუსტი","pronunciation":"/wiːk/","example_en":"Strengthen your weak points.","example_ka":"შენი სუსტი მხარეები გააძლიერე.","category":"gym-fitness","level":"A1"},
-  {"english":"strong","georgian":"ძლიერი","pronunciation":"/strɔːŋ/","example_en":"Build strong foundations with basics.","example_ka":"ძლიერი საფუძვლები ბაზისურით ააშენე.","category":"gym-fitness","level":"A1"},
-  {"english":"tight","georgian":"მოძლივი","pronunciation":"/taɪt/","example_en":"Keep your core tight during planks.","example_ka":"პლანკის დროს ღერძი მოძლივად შეინარჩუნე.","category":"gym-fitness","level":"A2"},
-  {"english":"loose","georgian":"ნაბოლქვი","pronunciation":"/luːs/","example_en":"Keep your shoulders loose.","example_ka":"მხრები ნაბოლქვად შეინარჩუნე.","category":"gym-fitness","level":"A2"},
-  {"english":"tense","georgian":"დაძაბული","pronunciation":"/tens/","example_en":"Don't keep your muscles tense all the time.","example_ka":"კუნთები მუდამ დაძაბული ნუ შეინარჩუნებ.","category":"gym-fitness","level":"A2"},
-  {"english":"relax","georgian":"დამშვიდება","pronunciation":"/rɪˈlæks/","example_en":"Relax between sets.","example_ka":"სეტებს შორის დამშვიდდი.","category":"gym-fitness","level":"A1"},
-  {"english":"stretch","georgian":"გაჭიმვა","pronunciation":"/stretʃ/","example_en":"Stretch after every workout.","example_ka":"ყოველი ვარჯიშის შემდეგ გაიჭიმე.","category":"gym-fitness","level":"A1"},
-  {"english":"warm","georgian":"განთბობა","pronunciation":"/wɔːrm/","example_en":"Warm up before heavy lifting.","example_ka":"მძიმე აწევამდე განთბოდი.","category":"gym-fitness","level":"A1"},
-  {"english":"cool","georgian":"გაცივება","pronunciation":"/kuːl/","example_en":"Cool down with light stretching.","example_ka":"მსუბუქი გაჭიმვით გაცივდი.","category":"gym-fitness","level":"A1"}
+  {
+    "english": "gym",
+    "georgian": "სპორტდარბაზი",
+    "pronunciation": "/dʒɪm/",
+    "example_en": "I go to the gym every day.",
+    "example_ka": "ყოველდღე სპორტდარბაზში დავდივარ.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "workout",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈwɜːrkaʊt/",
+    "example_en": "That was a great workout!",
+    "example_ka": "შესანიშნავი ვარჯიში იყო!",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "exercise",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈɛksərsaɪz/",
+    "example_en": "Regular exercise is good for health.",
+    "example_ka": "რეგულარული ვარჯიში ჯანმრთელობისთვის კარგია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "training",
+    "georgian": "წვრთნა",
+    "pronunciation": "/ˈtreɪnɪŋ/",
+    "example_en": "Strength training builds muscle.",
+    "example_ka": "ძალის წვრთნა კუნთებს აშენებს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "fitness",
+    "georgian": "ფიტნესი",
+    "pronunciation": "/ˈfɪtnəs/",
+    "example_en": "Good fitness improves quality of life.",
+    "example_ka": "კარგი ფიტნესი ცხოვრების ხარისხს აუმჯობესებს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "muscle",
+    "georgian": "კუნთი",
+    "pronunciation": "/ˈmʌsl/",
+    "example_en": "My muscles are sore after yesterday.",
+    "example_ka": "გუშინდელი ვარჯიშის შემდეგ კუნთები მტკივა.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "strength",
+    "georgian": "ძალა",
+    "pronunciation": "/streŋθ/",
+    "example_en": "Building strength takes time and consistency.",
+    "example_ka": "ძალის შენება დროსა და თანმიმდევრობას მოითხოვს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "endurance",
+    "georgian": "გამძლეობა",
+    "pronunciation": "/ɪnˈdʊrəns/",
+    "example_en": "Running improves cardiovascular endurance.",
+    "example_ka": "სირბილი გულ-სისხლძარღვთა სისტემის გამძლეობას აუმჯობესებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "cardio",
+    "georgian": "კარდიო",
+    "pronunciation": "/ˈkɑːrdioʊ/",
+    "example_en": "I do 30 minutes of cardio.",
+    "example_ka": "30 წუთი კარდიოს ვაკეთებ.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "aerobic",
+    "georgian": "აერობული",
+    "pronunciation": "/eɪˈroʊbɪk/",
+    "example_en": "Aerobic exercise strengthens the heart.",
+    "example_ka": "აერობული ვარჯიში გულს აძლიერებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "anaerobic",
+    "georgian": "ანაერობული",
+    "pronunciation": "/ˌænəˈroʊbɪk/",
+    "example_en": "Weight lifting is anaerobic exercise.",
+    "example_ka": "წონის აწევა ანაერობული ვარჯიშია.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "weight",
+    "georgian": "წონა",
+    "pronunciation": "/weɪt/",
+    "example_en": "Add more weight to the bar.",
+    "example_ka": "შტანგაზე მეტი წონა დაამატე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "dumbbell",
+    "georgian": "ჰანტელი",
+    "pronunciation": "/ˈdʌmbel/",
+    "example_en": "I lifted 20kg dumbbells today.",
+    "example_ka": "დღეს 20კგ ჰანტელი ავწიე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "barbell",
+    "georgian": "შტანგა",
+    "pronunciation": "/ˈbɑːrbel/",
+    "example_en": "Put more weight on the barbell.",
+    "example_ka": "შტანგაზე მეტი წონა დადე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "kettlebell",
+    "georgian": "ქეთლბელი",
+    "pronunciation": "/ˈketlˌbel/",
+    "example_en": "Kettlebell swings are a full-body exercise.",
+    "example_ka": "ქეთლბელის ქანობა მთელი სხეულის ვარჯიშია.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "machine",
+    "georgian": "ტრენაჟორი",
+    "pronunciation": "/məˈʃiːn/",
+    "example_en": "The leg press machine is very effective.",
+    "example_ka": "ფეხის პრესის ტრენაჟორი ძალიან ეფექტურია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "treadmill",
+    "georgian": "სარბენი ბილიკი",
+    "pronunciation": "/ˈtredmɪl/",
+    "example_en": "I ran 5km on the treadmill.",
+    "example_ka": "სარბენ ბილიკზე 5კმ გავირბინე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "elliptical",
+    "georgian": "ელიფტური",
+    "pronunciation": "/ɪˈlɪptɪkəl/",
+    "example_en": "The elliptical machine is easier on joints.",
+    "example_ka": "ელიფტური ტრენაჟორი სახსრებისთვის უფრო ნაზია.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "bike",
+    "georgian": "ველოსიპედი",
+    "pronunciation": "/baɪk/",
+    "example_en": "Stationary bike is great for leg strength.",
+    "example_ka": "უძრავი ველოსიპედი ფეხების ძალისთვის შესანიშნავია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "rowing",
+    "georgian": "ნაოსნობა",
+    "pronunciation": "/ˈroʊɪŋ/",
+    "example_en": "Rowing machine works the whole body.",
+    "example_ka": "ნაოსნობის ტრენაჟორი მთელ სხეულს მუშაობს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "bench",
+    "georgian": "დაზგა",
+    "pronunciation": "/bentʃ/",
+    "example_en": "Bench press is a classic exercise.",
+    "example_ka": "პრესი დაზგაზე კლასიკური ვარჯიშია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "rack",
+    "georgian": "სადგამი",
+    "pronunciation": "/ræk/",
+    "example_en": "Always use the safety rack when squatting.",
+    "example_ka": "სქუატისას ყოველთვის გამოიყენე უსაფრთხოების სადგამი.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "cable",
+    "georgian": "კაბელი",
+    "pronunciation": "/ˈkeɪbəl/",
+    "example_en": "Cable exercises provide constant tension.",
+    "example_ka": "კაბელის ვარჯიშები მუდმივ დაძაბულობას უზრუნველყოფს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "pulley",
+    "georgian": "ბლოკი",
+    "pronunciation": "/ˈpʊli/",
+    "example_en": "Use the high pulley for lat pulldowns.",
+    "example_ka": "ზურგის ვარჯიშისთვის მაღალი ბლოკი გამოიყენე.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "plate",
+    "georgian": "დისკი",
+    "pronunciation": "/pleɪt/",
+    "example_en": "Add two 20kg plates to each side.",
+    "example_ka": "თითო მხარეს ორი 20 კგ-იანი დისკი დადე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "rep",
+    "georgian": "გამეორება",
+    "pronunciation": "/rep/",
+    "example_en": "How many reps did you do?",
+    "example_ka": "რამდენი გამეორება გააკეთე?",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "set",
+    "georgian": "სეტი",
+    "pronunciation": "/set/",
+    "example_en": "Do 3 sets of 12 reps.",
+    "example_ka": "გააკეთე 3 სეტი 12 გამეორებით.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "rest",
+    "georgian": "დასვენება",
+    "pronunciation": "/rest/",
+    "example_en": "Rest 60 seconds between sets.",
+    "example_ka": "სეტებს შორის 60 წამი დაისვენე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "pause",
+    "georgian": "შეჩერება",
+    "pronunciation": "/pɔːz/",
+    "example_en": "Pause at the bottom of the squat.",
+    "example_ka": "სქუატის ქვედა წერტილში შეჩერდი.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "tempo",
+    "georgian": "ტემპო",
+    "pronunciation": "/ˈtempoʊ/",
+    "example_en": "Control the tempo of your movements.",
+    "example_ka": "შენი მოძრაობების ტემპო გააკონტროლე.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "form",
+    "georgian": "ტექნიკა",
+    "pronunciation": "/fɔːrm/",
+    "example_en": "Good form prevents injuries.",
+    "example_ka": "კარგი ტექნიკა ტრავმებს თავიდან აიცილებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "technique",
+    "georgian": "ტექნიკა",
+    "pronunciation": "/tekˈniːk/",
+    "example_en": "Perfect your technique before adding weight.",
+    "example_ka": "წონის დამატებამდე ტექნიკა სრულყავი.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "posture",
+    "georgian": "პოსტურა",
+    "pronunciation": "/ˈpɑːstʃər/",
+    "example_en": "Maintain proper posture during exercises.",
+    "example_ka": "ვარჯიშის დროს სწორი პოსტურა შეინარჩუნე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "alignment",
+    "georgian": "განლაგება",
+    "pronunciation": "/əˈlaɪnmənt/",
+    "example_en": "Proper body alignment is crucial for safety.",
+    "example_ka": "სხეულის სწორი განლაგება უსაფრთხოებისთვის მნიშვნელოვანია.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "balance",
+    "georgian": "ბალანსი",
+    "pronunciation": "/ˈbæləns/",
+    "example_en": "Yoga improves balance and flexibility.",
+    "example_ka": "იოგა ბალანსსა და მოქნილობას აუმჯობესებს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "coordination",
+    "georgian": "კოორდინაცია",
+    "pronunciation": "/koʊˌɔːrdɪˈneɪʃən/",
+    "example_en": "Boxing training improves hand-eye coordination.",
+    "example_ka": "კრივის წვრთნა ხელ-თვალის კოორდინაციას აუმჯობესებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "flexibility",
+    "georgian": "მოქნილობა",
+    "pronunciation": "/ˌfleksəˈbɪləti/",
+    "example_en": "Stretching increases flexibility.",
+    "example_ka": "გაჭიმვა მოქნილობას ზრდის.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "mobility",
+    "georgian": "მობილურობა",
+    "pronunciation": "/moʊˈbɪləti/",
+    "example_en": "Joint mobility decreases with age.",
+    "example_ka": "სახსრების მობილურობა ასაკთან ერთად მცირდება.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "stability",
+    "georgian": "სტაბილურობა",
+    "pronunciation": "/stəˈbɪləti/",
+    "example_en": "Core exercises improve stability.",
+    "example_ka": "ღერძის ვარჯიშები სტაბილურობას აუმჯობესებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "core",
+    "georgian": "ღერძი",
+    "pronunciation": "/kɔːr/",
+    "example_en": "A strong core supports good posture.",
+    "example_ka": "ძლიერი ღერძი კარგ პოსტურას უჭერს მხარს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "abs",
+    "georgian": "მუცლის კუნთები",
+    "pronunciation": "/æbz/",
+    "example_en": "I train abs every other day.",
+    "example_ka": "მუცლის კუნთებს ყოველ მეორე დღე ვავარჯიშებ.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "obliques",
+    "georgian": "გვერდითი კუნთები",
+    "pronunciation": "/əˈbliːks/",
+    "example_en": "Side planks target the obliques.",
+    "example_ka": "გვერდითი პლანკები გვერდით კუნთებს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "chest",
+    "georgian": "მკერდი",
+    "pronunciation": "/tʃest/",
+    "example_en": "Monday is chest day.",
+    "example_ka": "ორშაბათი მკერდის დღეა.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "pectorals",
+    "georgian": "მკერდის კუნთები",
+    "pronunciation": "/ˈpektərəlz/",
+    "example_en": "Push-ups work the pectoral muscles.",
+    "example_ka": "ხელის ბრუნვა მკერდის კუნთებს მუშაობს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "back",
+    "georgian": "ზურგი",
+    "pronunciation": "/bæk/",
+    "example_en": "I trained back and shoulders today.",
+    "example_ka": "დღეს ზურგი და მხრები ვავარჯიშე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "lats",
+    "georgian": "ღია კუნთები",
+    "pronunciation": "/læts/",
+    "example_en": "Pull-ups primarily work the lats.",
+    "example_ka": "შეკვრა ძირითადად ღია კუნთებს მუშაობს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "rhomboids",
+    "georgian": "რომბისებური კუნთები",
+    "pronunciation": "/ˈrɑːmbɔɪdz/",
+    "example_en": "Rows target the rhomboid muscles.",
+    "example_ka": "მიზიდვა რომბისებურ კუნთებს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "traps",
+    "georgian": "ტრაპეცია",
+    "pronunciation": "/træps/",
+    "example_en": "Shrugs build bigger traps.",
+    "example_ka": "მხრების აწევა ტრაპეციას ზრდის.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "shoulders",
+    "georgian": "მხრები",
+    "pronunciation": "/ˈʃoʊldərz/",
+    "example_en": "Shoulder press is my favorite exercise.",
+    "example_ka": "მხრის პრესი ჩემი საყვარელი ვარჯიშია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "deltoids",
+    "georgian": "დელტისებური კუნთები",
+    "pronunciation": "/ˈdeltɔɪdz/",
+    "example_en": "Lateral raises work the deltoid muscles.",
+    "example_ka": "გვერდითი აწევა დელტისებურ კუნთებს მუშაობს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "arms",
+    "georgian": "ხელები",
+    "pronunciation": "/ɑːrmz/",
+    "example_en": "Friday is arms day at the gym.",
+    "example_ka": "პარასკევი სპორტდარბაზში ხელების დღეა.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "biceps",
+    "georgian": "ბიცეპსი",
+    "pronunciation": "/ˈbaɪseps/",
+    "example_en": "Curls work your biceps.",
+    "example_ka": "კერლები ბიცეპსს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "triceps",
+    "georgian": "ტრიცეპსი",
+    "pronunciation": "/ˈtraɪseps/",
+    "example_en": "Dips are great for triceps development.",
+    "example_ka": "ჩაყოვნება ტრიცეპსის განვითარებისთვის შესანიშნავია.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "forearms",
+    "georgian": "წინამკლავები",
+    "pronunciation": "/ˈfɔːrɑːrmz/",
+    "example_en": "Rock climbing builds strong forearms.",
+    "example_ka": "კლდეზე ასვლა ძლიერ წინამკლავებს ქმნის.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "legs",
+    "georgian": "ფეხები",
+    "pronunciation": "/leɡz/",
+    "example_en": "Never skip leg day!",
+    "example_ka": "ფეხის დღე არასოდეს გამოტოვო!",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "quadriceps",
+    "georgian": "ოთხთავა კუნთი",
+    "pronunciation": "/ˈkwɑːdrɪseps/",
+    "example_en": "Squats target the quadriceps muscles.",
+    "example_ka": "სქუატები ოთხთავა კუნთს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "hamstrings",
+    "georgian": "უკანა ზურგის კუნთი",
+    "pronunciation": "/ˈhæmstrɪŋz/",
+    "example_en": "Deadlifts work the hamstring muscles.",
+    "example_ka": "დედლიფტი უკანა ზურგის კუნთს მუშაობს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "glutes",
+    "georgian": "დუნდულოს კუნთები",
+    "pronunciation": "/ɡluːts/",
+    "example_en": "Hip thrusts are excellent for glute development.",
+    "example_ka": "თეძოს უკუღმა ბიძგი დუნდულოს კუნთების განვითარებისთვის შესანიშნავია.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "calves",
+    "georgian": "კანჭები",
+    "pronunciation": "/kævz/",
+    "example_en": "Calf raises build stronger lower legs.",
+    "example_ka": "კანჭების აწევა ქვედა ფეხებს აძლიერებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "squat",
+    "georgian": "სქუატი",
+    "pronunciation": "/skwɑːt/",
+    "example_en": "Squats are great for your legs.",
+    "example_ka": "სქუატი ფეხებისთვის შესანიშნავია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "deadlift",
+    "georgian": "დედლიფტი",
+    "pronunciation": "/ˈdedlɪft/",
+    "example_en": "Deadlifts work your whole body.",
+    "example_ka": "დედლიფტი მთელ სხეულს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "press",
+    "georgian": "პრესი",
+    "pronunciation": "/pres/",
+    "example_en": "Bench press builds chest strength.",
+    "example_ka": "პრესი დაზგაზე მკერდის ძალას ქმნის.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "curl",
+    "georgian": "კერლი",
+    "pronunciation": "/kɜːrl/",
+    "example_en": "Bicep curls isolate the arm muscles.",
+    "example_ka": "ბიცეპსის კერლი ხელის კუნთებს იზოლირებს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "extension",
+    "georgian": "გაშლა",
+    "pronunciation": "/ɪkˈstenʃən/",
+    "example_en": "Leg extensions target the quadriceps.",
+    "example_ka": "ფეხის გაშლა ოთხთავა კუნთს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "flexion",
+    "georgian": "მოხრა",
+    "pronunciation": "/ˈflekʃən/",
+    "example_en": "Hip flexion occurs during squats.",
+    "example_ka": "თეძოს მოხრა სქუატის დროს ხდება.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "rotation",
+    "georgian": "მობრუნება",
+    "pronunciation": "/roʊˈteɪʃən/",
+    "example_en": "Russian twists involve spinal rotation.",
+    "example_ka": "რუსული ბრუნვები ხერხემლის მობრუნებას მოიცავს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "abduction",
+    "georgian": "მოშორება",
+    "pronunciation": "/æbˈdʌkʃən/",
+    "example_en": "Lateral raises involve shoulder abduction.",
+    "example_ka": "გვერდითი აწევა მხრის მოშორებას მოიცავს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "adduction",
+    "georgian": "მიახლოება",
+    "pronunciation": "/əˈdʌkʃən/",
+    "example_en": "Cable crossovers use adduction movement.",
+    "example_ka": "კაბელის გადაკვეთა მიახლოების მოძრაობას იყენებს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "concentric",
+    "georgian": "კონცენტრული",
+    "pronunciation": "/kənˈsentrɪk/",
+    "example_en": "The concentric phase is when muscles contract.",
+    "example_ka": "კონცენტრული ფაზა მაშინაა, როცა კუნთები იკუმშება.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "eccentric",
+    "georgian": "ექსცენტრული",
+    "pronunciation": "/ɪkˈsentrɪk/",
+    "example_en": "The eccentric phase controls the weight down.",
+    "example_ka": "ექსცენტრული ფაზა წონის ქვემოთ დაშვებას აკონტროლებს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "isometric",
+    "georgian": "იზომეტრული",
+    "pronunciation": "/ˌaɪsəˈmetrɪk/",
+    "example_en": "Planks are isometric exercises.",
+    "example_ka": "პლანკები იზომეტრული ვარჯიშებია.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "dynamic",
+    "georgian": "დინამიური",
+    "pronunciation": "/daɪˈnæmɪk/",
+    "example_en": "Dynamic stretching prepares muscles for activity.",
+    "example_ka": "დინამიური გაჭიმვა კუნთებს აქტივობისთვის ამზადებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "static",
+    "georgian": "სტატიური",
+    "pronunciation": "/ˈstætɪk/",
+    "example_en": "Static stretches are held for 30 seconds.",
+    "example_ka": "სტატიური გაჭიმვები 30 წამით ინარჩუნება.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "compound",
+    "georgian": "რთული",
+    "pronunciation": "/ˈkɑːmpaʊnd/",
+    "example_en": "Compound exercises work multiple muscle groups.",
+    "example_ka": "რთული ვარჯიშები მრავალ კუნთურ ჯგუფს მუშაობს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "isolation",
+    "georgian": "იზოლაციური",
+    "pronunciation": "/ˌaɪsəˈleɪʃən/",
+    "example_en": "Isolation exercises target specific muscles.",
+    "example_ka": "იზოლაციური ვარჯიშები კონკრეტულ კუნთებს ავარჯიშებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "functional",
+    "georgian": "ფუნქციური",
+    "pronunciation": "/ˈfʌŋkʃənəl/",
+    "example_en": "Functional training mimics daily movements.",
+    "example_ka": "ფუნქციური წვრთნა ყოველდღიურ მოძრაობებს მიბაძავს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "circuit",
+    "georgian": "წრე",
+    "pronunciation": "/ˈsɜːrkɪt/",
+    "example_en": "Circuit training combines multiple exercises.",
+    "example_ka": "წრიული წვრთნა რამდენიმე ვარჯიშს აერთიანებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "superset",
+    "georgian": "სუპერსეტი",
+    "pronunciation": "/ˈsuːpərset/",
+    "example_en": "Supersets save time by pairing exercises.",
+    "example_ka": "სუპერსეტები ვარჯიშების წყვილებით დროს იზოგავს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "dropset",
+    "georgian": "დროპსეტი",
+    "pronunciation": "/ˈdrɑːpset/",
+    "example_en": "Dropsets push muscles to fatigue.",
+    "example_ka": "დროპსეტები კუნთებს დაღლილობამდე მიყავს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "pyramid",
+    "georgian": "პირამიდა",
+    "pronunciation": "/ˈpɪrəmɪd/",
+    "example_en": "Pyramid sets gradually increase weight.",
+    "example_ka": "პირამიდული სეტები წონას თანდათანობით ზრდის.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "progressive",
+    "georgian": "პროგრესული",
+    "pronunciation": "/prəˈɡresɪv/",
+    "example_en": "Progressive overload drives muscle growth.",
+    "example_ka": "პროგრესული გადატვირთვა კუნთების ზრდას უწყობს ხელს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "overload",
+    "georgian": "გადატვირთვა",
+    "pronunciation": "/ˌoʊvərˈloʊd/",
+    "example_en": "Muscle overload stimulates adaptation.",
+    "example_ka": "კუნთების გადატვირთვა ადაპტაციას ასტიმულირებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "plateau",
+    "georgian": "პლატო",
+    "pronunciation": "/plæˈtoʊ/",
+    "example_en": "Change your routine to break through plateaus.",
+    "example_ka": "პლატოს გასავლელად რუტინა შეცვალე.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "adaptation",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˌædæpˈteɪʃən/",
+    "example_en": "Your body adapts to exercise over time.",
+    "example_ka": "შენი სხეული დროთა განმავლობაში ვარჯიშს ადაპტირდება.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "recovery",
+    "georgian": "აღდგენა",
+    "pronunciation": "/rɪˈkʌvəri/",
+    "example_en": "Recovery is just as important as training.",
+    "example_ka": "აღდგენა ისეთივე მნიშვნელოვანია, როგორც ვარჯიში.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "regeneration",
+    "georgian": "რეგენერაცია",
+    "pronunciation": "/rɪˌdʒenəˈreɪʃən/",
+    "example_en": "Sleep promotes muscle regeneration.",
+    "example_ka": "ძილი კუნთების რეგენერაციას უწყობს ხელს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "fatigue",
+    "georgian": "დაღლილობა",
+    "pronunciation": "/fəˈtiːɡ/",
+    "example_en": "Muscle fatigue indicates a good workout.",
+    "example_ka": "კუნთების დაღლილობა კარგ ვარჯიშზე მეტყველებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "soreness",
+    "georgian": "ტკივილი",
+    "pronunciation": "/ˈsɔːrnəs/",
+    "example_en": "Muscle soreness is normal after intense workouts.",
+    "example_ka": "კუნთების ტკივილი ინტენსური ვარჯიშის შემდეგ ნორმალურია.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "inflammation",
+    "georgian": "ანთება",
+    "pronunciation": "/ˌɪnfləˈmeɪʃən/",
+    "example_en": "Inflammation is part of muscle repair.",
+    "example_ka": "ანთება კუნთების აღდგენის ნაწილია.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "injury",
+    "georgian": "ტრავმა",
+    "pronunciation": "/ˈɪndʒəri/",
+    "example_en": "Proper form prevents injury.",
+    "example_ka": "სწორი ტექნიკა ტრავმას თავიდან აიცილებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "strain",
+    "georgian": "გადაჭიმვა",
+    "pronunciation": "/streɪn/",
+    "example_en": "Muscle strain requires rest and care.",
+    "example_ka": "კუნთის გადაჭიმვა დასვენებასა და ზრუნვას მოითხოვს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "sprain",
+    "georgian": "შეჭმუხვნა",
+    "pronunciation": "/spreɪn/",
+    "example_en": "Ankle sprains are common in sports.",
+    "example_ka": "ტერფის შეჭმუხვნა სპორტში ხშირია.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "tear",
+    "georgian": "ნაწევი",
+    "pronunciation": "/ter/",
+    "example_en": "A muscle tear requires medical attention.",
+    "example_ka": "კუნთის ნაწევი სამედიცინო ყურადღებას მოითხოვს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "rehabilitation",
+    "georgian": "რეაბილიტაცია",
+    "pronunciation": "/ˌriːəˌbɪlɪˈteɪʃən/",
+    "example_en": "Rehabilitation helps restore function after injury.",
+    "example_ka": "რეაბილიტაცია ტრავმის შემდეგ ფუნქციის აღდგენაში ეხმარება.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "prevention",
+    "georgian": "პრევენცია",
+    "pronunciation": "/prɪˈvenʃən/",
+    "example_en": "Injury prevention is better than treatment.",
+    "example_ka": "ტრავმის პრევენცია მკურნალობაზე უკეთესია.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "nutrition",
+    "georgian": "კვება",
+    "pronunciation": "/nuˈtrɪʃən/",
+    "example_en": "Good nutrition supports fitness goals.",
+    "example_ka": "კარგი კვება ფიტნესის მიზნებს უჭერს მხარს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "protein",
+    "georgian": "ცილა",
+    "pronunciation": "/ˈproʊtiːn/",
+    "example_en": "Eat more protein to build muscle.",
+    "example_ka": "კუნთების ზრდისთვის მეტი ცილა მიირთვი.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "carbohydrates",
+    "georgian": "ნახშირწყალბადები",
+    "pronunciation": "/ˌkɑːrboʊˈhaɪdreɪts/",
+    "example_en": "Carbohydrates provide energy for workouts.",
+    "example_ka": "ნახშირწყალბადები ვარჯიშისთვის ენერგიას იძლევა.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "fats",
+    "georgian": "ცხიმები",
+    "pronunciation": "/fæts/",
+    "example_en": "Healthy fats support hormone production.",
+    "example_ka": "ჯანსაღი ცხიმები ჰორმონების წარმოებას უჭერს მხარს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "calories",
+    "georgian": "კალორიები",
+    "pronunciation": "/ˈkæləriz/",
+    "example_en": "Track your calories for better results.",
+    "example_ka": "უკეთესი შედეგებისთვის კალორიებს აკონტროლე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "macros",
+    "georgian": "მაკროები",
+    "pronunciation": "/ˈmækroʊz/",
+    "example_en": "Counting macros helps optimize nutrition.",
+    "example_ka": "მაკროების რაოდენობის თვლა კვების ოპტიმიზაციას ეხმარება.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "supplements",
+    "georgian": "დანამატები",
+    "pronunciation": "/ˈsʌpləmənts/",
+    "example_en": "Do you take any supplements?",
+    "example_ka": "რამე დანამატს იღებ?",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "creatine",
+    "georgian": "კრეატინი",
+    "pronunciation": "/ˈkriːətiːn/",
+    "example_en": "Creatine improves strength and power.",
+    "example_ka": "კრეატინი ძალასა და სიძლიერეს აუმჯობესებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "whey",
+    "georgian": "შრატი",
+    "pronunciation": "/weɪ/",
+    "example_en": "Whey protein is quickly absorbed.",
+    "example_ka": "შრატის ცილა სწრაფად ირწოვება.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "casein",
+    "georgian": "კაზეინი",
+    "pronunciation": "/ˈkeɪsiːn/",
+    "example_en": "Casein protein digests slowly.",
+    "example_ka": "კაზეინის ცილა ნელა ირწოვება.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "amino",
+    "georgian": "ამინო",
+    "pronunciation": "/əˈmiːnoʊ/",
+    "example_en": "Amino acids are protein building blocks.",
+    "example_ka": "ამინომჟავები ცილის სამშენებლო ბლოკებია.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "hydration",
+    "georgian": "ჰიდრაცია",
+    "pronunciation": "/haɪˈdreɪʃən/",
+    "example_en": "Proper hydration is essential for performance.",
+    "example_ka": "სწორი ჰიდრაცია შესრულებისთვის აუცილებელია.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "electrolytes",
+    "georgian": "ელექტროლიტები",
+    "pronunciation": "/ɪˈlektrəlaɪts/",
+    "example_en": "Electrolytes maintain proper muscle function.",
+    "example_ka": "ელექტროლიტები კუნთების სწორ ფუნქციონირებას ინარჩუნებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "glucose",
+    "georgian": "გლუკოზა",
+    "pronunciation": "/ˈɡluːkoʊs/",
+    "example_en": "Glucose is the body's preferred energy source.",
+    "example_ka": "გლუკოზა სხეულის საყვარელი ენერგიის წყაროა.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "glycogen",
+    "georgian": "გლიკოგენი",
+    "pronunciation": "/ˈɡlaɪkədʒən/",
+    "example_en": "Glycogen stores energy in muscles.",
+    "example_ka": "გლიკოგენი კუნთებში ენერგიას ინახავს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "metabolism",
+    "georgian": "მეტაბოლიზმი",
+    "pronunciation": "/məˈtæbəlɪzəm/",
+    "example_en": "Exercise boosts your metabolism.",
+    "example_ka": "ვარჯიში შენს მეტაბოლიზმს ააქტიურებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "anabolism",
+    "georgian": "ანაბოლიზმი",
+    "pronunciation": "/əˈnæbəlɪzəm/",
+    "example_en": "Anabolism builds muscle tissue.",
+    "example_ka": "ანაბოლიზმი კუნთოვან ქსოვილს აშენებს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "catabolism",
+    "georgian": "კატაბოლიზმი",
+    "pronunciation": "/kəˈtæbəlɪzəm/",
+    "example_en": "Catabolism breaks down tissue for energy.",
+    "example_ka": "კატაბოლიზმი ქსოვილს ენერგიისთვის ანადგურებს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "hormones",
+    "georgian": "ჰორმონები",
+    "pronunciation": "/ˈhɔːrmoʊnz/",
+    "example_en": "Exercise affects hormone production.",
+    "example_ka": "ვარჯიში ჰორმონების წარმოებაზე მოქმედებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "testosterone",
+    "georgian": "ტესტოსტერონი",
+    "pronunciation": "/tesˈtɑːstəroʊn/",
+    "example_en": "Resistance training can boost testosterone.",
+    "example_ka": "წინააღმდეგობის წვრთნამ შეიძლება ტესტოსტერონი გაზარდოს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "cortisol",
+    "georgian": "კორტიზოლი",
+    "pronunciation": "/ˈkɔːrtɪzɔːl/",
+    "example_en": "High cortisol levels hinder muscle growth.",
+    "example_ka": "მაღალი კორტიზოლის დონე კუნთების ზრდას უშლის ხელს.",
+    "category": "gym-fitness",
+    "level": "C1"
+  },
+  {
+    "english": "adrenaline",
+    "georgian": "ადრენალინი",
+    "pronunciation": "/əˈdrenəlɪn/",
+    "example_en": "Adrenaline increases during intense exercise.",
+    "example_ka": "ინტენსური ვარჯიშის დროს ადრენალინი იზრდება.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "endorphins",
+    "georgian": "ენდორფინები",
+    "pronunciation": "/ɪnˈdɔːrfɪnz/",
+    "example_en": "Exercise releases natural endorphins.",
+    "example_ka": "ვარჯიში ბუნებრივ ენდორფინებს გამოყოფს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "motivation",
+    "georgian": "მოტივაცია",
+    "pronunciation": "/ˌmoʊtɪˈveɪʃən/",
+    "example_en": "Stay motivated and never give up!",
+    "example_ka": "იყავი მოტივირებული და არასოდეს დანებდე!",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "discipline",
+    "georgian": "დისციპლინა",
+    "pronunciation": "/ˈdɪsɪplɪn/",
+    "example_en": "Discipline beats motivation.",
+    "example_ka": "დისციპლინა მოტივაციას სჯობს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "consistency",
+    "georgian": "თანმიმდევრობა",
+    "pronunciation": "/kənˈsɪstənsi/",
+    "example_en": "Consistency is key to long-term success.",
+    "example_ka": "თანმიმდევრობა გრძელვადიანი წარმატების გასაღებია.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "dedication",
+    "georgian": "ერთგულება",
+    "pronunciation": "/ˌdedɪˈkeɪʃən/",
+    "example_en": "Success requires dedication and hard work.",
+    "example_ka": "წარმატება ერთგულებასა და შრომას მოითხოვს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "commitment",
+    "georgian": "ვალდებულება",
+    "pronunciation": "/kəˈmɪtmənt/",
+    "example_en": "Make a commitment to your health.",
+    "example_ka": "შენს ჯანმრთელობას მიმართ ვალდებულება აიღე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "perseverance",
+    "georgian": "მუდმივობა",
+    "pronunciation": "/ˌpɜːrsəˈvɪrəns/",
+    "example_en": "Perseverance will get you through tough times.",
+    "example_ka": "მუდმივობა რთულ დროებში გადაგიყვანს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "determination",
+    "georgian": "განწყობა",
+    "pronunciation": "/dɪˌtɜːrmɪˈneɪʃən/",
+    "example_en": "Her determination inspired everyone.",
+    "example_ka": "მისმა განწყობამ ყველა შთააგონა.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "goals",
+    "georgian": "მიზნები",
+    "pronunciation": "/ɡoʊlz/",
+    "example_en": "Set realistic and achievable goals.",
+    "example_ka": "რეალისტური და მისაღწევი მიზნები დაისახე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "progress",
+    "georgian": "პროგრესი",
+    "pronunciation": "/ˈprɒɡres/",
+    "example_en": "I can see real progress in my strength.",
+    "example_ka": "ძალაში ნამდვილი პროგრესი ჩანს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "results",
+    "georgian": "შედეგები",
+    "pronunciation": "/rɪˈzʌlts/",
+    "example_en": "Results take time and patience.",
+    "example_ka": "შედეგები დროსა და მოთმინებას მოითხოვს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "transformation",
+    "georgian": "ტრანსფორმაცია",
+    "pronunciation": "/ˌtrænsfərˈmeɪʃən/",
+    "example_en": "His body transformation was incredible.",
+    "example_ka": "მისი სხეულის ტრანსფორმაცია დაუჯერებელი იყო.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "achievement",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːvmənt/",
+    "example_en": "Celebrate every fitness achievement.",
+    "example_ka": "ყოველი ფიტნესის მიღწევა აღნიშნე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "milestone",
+    "georgian": "ეტაპი",
+    "pronunciation": "/ˈmaɪlstoʊn/",
+    "example_en": "Reaching 100kg bench press was a milestone.",
+    "example_ka": "100 კგ პრესის მიღწევა ეტაპი იყო.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "personal",
+    "georgian": "პირადი",
+    "pronunciation": "/ˈpɜːrsənəl/",
+    "example_en": "Beat your personal record today!",
+    "example_ka": "დღეს შენი პირადი რეკორდი გაიმარჯვე!",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "record",
+    "georgian": "რეკორდი",
+    "pronunciation": "/ˈrekərd/",
+    "example_en": "I set a new personal record today.",
+    "example_ka": "დღეს ახალი პირადი რეკორდი დავდე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "maximum",
+    "georgian": "მაქსიმალური",
+    "pronunciation": "/ˈmæksɪməm/",
+    "example_en": "Test your one-rep maximum carefully.",
+    "example_ka": "ერთი გამეორების მაქსიმუმი ფრთხილად შეამოწმე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "intensity",
+    "georgian": "ინტენსივობა",
+    "pronunciation": "/ɪnˈtensəti/",
+    "example_en": "High intensity training burns more calories.",
+    "example_ka": "მაღალი ინტენსივობის წვრთნა მეტ კალორიას წვავს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "volume",
+    "georgian": "მოცულობა",
+    "pronunciation": "/ˈvɑːljuːm/",
+    "example_en": "Training volume affects muscle growth.",
+    "example_ka": "წვრთნის მოცულობა კუნთების ზრდაზე მოქმედებს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "frequency",
+    "georgian": "სიხშირე",
+    "pronunciation": "/ˈfriːkwənsi/",
+    "example_en": "Training frequency should match your goals.",
+    "example_ka": "წვრთნის სიხშირე შენს მიზნებს უნდა შეესაბამებოდეს.",
+    "category": "gym-fitness",
+    "level": "B2"
+  },
+  {
+    "english": "duration",
+    "georgian": "ხანგრძლივობა",
+    "pronunciation": "/duˈreɪʃən/",
+    "example_en": "Workout duration depends on your schedule.",
+    "example_ka": "ვარჯიშის ხანგრძლივობა შენს გრაფიკზეა დამოკიდებული.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "routine",
+    "georgian": "რუტინა",
+    "pronunciation": "/ruːˈtiːn/",
+    "example_en": "Stick to your workout routine.",
+    "example_ka": "შენს ვარჯიშის რუტინას მისდევი.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈskedʒuːl/",
+    "example_en": "Plan your training schedule ahead.",
+    "example_ka": "შენი წვრთნის განრიგი წინასწარ დაგეგმე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "program",
+    "georgian": "პროგრამა",
+    "pronunciation": "/ˈproʊɡræm/",
+    "example_en": "Follow a structured training program.",
+    "example_ka": "სტრუქტურირებულ საწვრთნელ პროგრამას მისდევი.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "plan",
+    "georgian": "გეგმა",
+    "pronunciation": "/plæn/",
+    "example_en": "Every successful journey starts with a plan.",
+    "example_ka": "ყოველი წარმატებული მოგზაურობა გეგმით იწყება.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "towel",
+    "georgian": "ხელსახოცი",
+    "pronunciation": "/ˈtaʊəl/",
+    "example_en": "Always bring a towel to wipe off sweat.",
+    "example_ka": "ოფლის წასაშლელად ყოველთვის ხელსახოცი წამოიღე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Drink water during your workout.",
+    "example_ka": "ვარჯიშის დროს წყალი დალიე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "bottle",
+    "georgian": "ბოთლი",
+    "pronunciation": "/ˈbɑːtəl/",
+    "example_en": "Bring a water bottle to stay hydrated.",
+    "example_ka": "ჰიდრაციისთვის წყლის ბოთლი მოიტანე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "shoes",
+    "georgian": "ფეხსაცმელი",
+    "pronunciation": "/ʃuːz/",
+    "example_en": "Proper gym shoes prevent injuries.",
+    "example_ka": "სწორი ფეხსაცმელი ტრავმებს თავიდან აიცილებს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "clothes",
+    "georgian": "ტანსაცმელი",
+    "pronunciation": "/kloʊðz/",
+    "example_en": "Wear comfortable workout clothes.",
+    "example_ka": "კომფორტული ვარჯიშის ტანსაცმელი ჩაიცვი.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "shorts",
+    "georgian": "შორტები",
+    "pronunciation": "/ʃɔːrts/",
+    "example_en": "Athletic shorts allow better movement.",
+    "example_ka": "სპორტული შორტები უკეთეს მოძრაობას უზრუნველყოფს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "shirt",
+    "georgian": "მაისური",
+    "pronunciation": "/ʃɜːrt/",
+    "example_en": "Cotton shirts are good for the gym.",
+    "example_ka": "ბამბის მაისურები სპორტდარბაზისთვის კარგია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "tank",
+    "georgian": "ზურგაცმული",
+    "pronunciation": "/tæŋk/",
+    "example_en": "Tank tops keep you cooler while working out.",
+    "example_ka": "ზურგაცმულები ვარჯიშის დროს სიიცივეს ინარჩუნებს.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "leggings",
+    "georgian": "ლეგინსები",
+    "pronunciation": "/ˈleɡɪŋz/",
+    "example_en": "Leggings are comfortable for yoga.",
+    "example_ka": "ლეგინსები იოგისთვის კომფორტულია.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "gloves",
+    "georgian": "ხელთათმანები",
+    "pronunciation": "/ɡlʌvz/",
+    "example_en": "Use gloves to protect your hands.",
+    "example_ka": "ხელების დასაცავად ხელთათმანები გამოიყენე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "headband",
+    "georgian": "თავზე ლენტი",
+    "pronunciation": "/ˈhedbænd/",
+    "example_en": "A headband keeps sweat from your eyes.",
+    "example_ka": "თავზე ლენტი ოფლს თვალებისგან აცილებს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "wristband",
+    "georgian": "მაჯის ლენტი",
+    "pronunciation": "/ˈrɪstbænd/",
+    "example_en": "Wristbands absorb sweat during workouts.",
+    "example_ka": "მაჯის ლენტები ვარჯიშის დროს ოფლს შეიწოვს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "belt",
+    "georgian": "სარტყელი",
+    "pronunciation": "/belt/",
+    "example_en": "A lifting belt supports your back.",
+    "example_ka": "წამწევი სარტყელი ზურგს უჭერს მხარს.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "straps",
+    "georgian": "სარტყლები",
+    "pronunciation": "/stræps/",
+    "example_en": "Wrist straps help with heavy lifting.",
+    "example_ka": "მაჯის სარტყლები მძიმე წონის აწევაში ეხმარება.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "chalk",
+    "georgian": "ცარცი",
+    "pronunciation": "/tʃɔːk/",
+    "example_en": "Chalk improves grip during deadlifts.",
+    "example_ka": "ცარცი დედლიფტის დროს მუჭაობას აუმჯობესებს.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "grip",
+    "georgian": "მუჭაობა",
+    "pronunciation": "/ɡrɪp/",
+    "example_en": "Strong grip strength helps with pull-ups.",
+    "example_ka": "ძლიერი მუჭაობა შეკვრაში ეხმარება.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "squeeze",
+    "georgian": "ჩაჭიდება",
+    "pronunciation": "/skwiːz/",
+    "example_en": "Squeeze the bar tightly.",
+    "example_ka": "შტანგა მტკიცედ ჩაიჭირე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "hold",
+    "georgian": "დაჭერა",
+    "pronunciation": "/hoʊld/",
+    "example_en": "Hold the position for 10 seconds.",
+    "example_ka": "პოზიცია 10 წამით შეინარჩუნე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "release",
+    "georgian": "გაშვება",
+    "pronunciation": "/rɪˈliːs/",
+    "example_en": "Release the weight slowly.",
+    "example_ka": "წონა ნელა გაუშვი.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "breathe",
+    "georgian": "სუნთქვა",
+    "pronunciation": "/briːð/",
+    "example_en": "Breathe out when you lift.",
+    "example_ka": "აწევისას ამოისუნთქე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "inhale",
+    "georgian": "ჩასუნთქვა",
+    "pronunciation": "/ɪnˈheɪl/",
+    "example_en": "Inhale before the lift.",
+    "example_ka": "აწევამდე ჩაისუნთქე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "exhale",
+    "georgian": "ამოსუნთქვა",
+    "pronunciation": "/eksˈheɪl/",
+    "example_en": "Exhale during the lifting motion.",
+    "example_ka": "აწევის მოძრაობის დროს ამოისუნთქე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "focus",
+    "georgian": "ფოკუსირება",
+    "pronunciation": "/ˈfoʊkəs/",
+    "example_en": "Focus on the muscle you're working.",
+    "example_ka": "იმ კუნთზე გაამახვილე ყურადღება რომელსაც ავარჯიშებ.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "concentrate",
+    "georgian": "კონცენტრირება",
+    "pronunciation": "/ˈkɑːnsəntreɪt/",
+    "example_en": "Concentrate on proper form.",
+    "example_ka": "სწორ ტექნიკაზე კონცენტრირდი.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "mindful",
+    "georgian": "ცნობიერი",
+    "pronunciation": "/ˈmaɪndfəl/",
+    "example_en": "Be mindful of your body movements.",
+    "example_ka": "შენი სხეულის მოძრაობების მიმართ ცნობიერი იყავი.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "awareness",
+    "georgian": "ცნობიერება",
+    "pronunciation": "/əˈwɛrnəs/",
+    "example_en": "Body awareness improves with practice.",
+    "example_ka": "სხეულის ცნობიერება პრაქტიკით უმჯობესდება.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "steady",
+    "georgian": "სტაბილური",
+    "pronunciation": "/ˈstedi/",
+    "example_en": "Keep a steady pace during cardio.",
+    "example_ka": "კარდიოს დროს სტაბილური ტემპი შეინარჩუნე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "smooth",
+    "georgian": "გლუვი",
+    "pronunciation": "/smuːð/",
+    "example_en": "Make smooth, controlled movements.",
+    "example_ka": "გლუვი, კონტროლირებული მოძრაობები იქონიე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "controlled",
+    "georgian": "კონტროლირებული",
+    "pronunciation": "/kənˈtroʊld/",
+    "example_en": "Use controlled movements throughout the exercise.",
+    "example_ka": "მთელი ვარჯიშის განმავლობაში კონტროლირებული მოძრაობები გამოიყენე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "explosive",
+    "georgian": "აფეთქებითი",
+    "pronunciation": "/ɪkˈsploʊsɪv/",
+    "example_en": "Explosive movements build power.",
+    "example_ka": "აფეთქებითი მოძრაობები ძალას ქმნის.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "powerful",
+    "georgian": "ძლიერი",
+    "pronunciation": "/ˈpaʊərfəl/",
+    "example_en": "Develop powerful leg muscles.",
+    "example_ka": "ძლიერი ფეხის კუნთები განავითარე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "weak",
+    "georgian": "სუსტი",
+    "pronunciation": "/wiːk/",
+    "example_en": "Strengthen your weak points.",
+    "example_ka": "შენი სუსტი მხარეები გააძლიერე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "strong",
+    "georgian": "ძლიერი",
+    "pronunciation": "/strɔːŋ/",
+    "example_en": "Build strong foundations with basics.",
+    "example_ka": "ძლიერი საფუძვლები ბაზისურით ააშენე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "tight",
+    "georgian": "მოძლივი",
+    "pronunciation": "/taɪt/",
+    "example_en": "Keep your core tight during planks.",
+    "example_ka": "პლანკის დროს ღერძი მოძლივად შეინარჩუნე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "loose",
+    "georgian": "ნაბოლქვი",
+    "pronunciation": "/luːs/",
+    "example_en": "Keep your shoulders loose.",
+    "example_ka": "მხრები ნაბოლქვად შეინარჩუნე.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "tense",
+    "georgian": "დაძაბული",
+    "pronunciation": "/tens/",
+    "example_en": "Don't keep your muscles tense all the time.",
+    "example_ka": "კუნთები მუდამ დაძაბული ნუ შეინარჩუნებ.",
+    "category": "gym-fitness",
+    "level": "A2"
+  },
+  {
+    "english": "relax",
+    "georgian": "დამშვიდება",
+    "pronunciation": "/rɪˈlæks/",
+    "example_en": "Relax between sets.",
+    "example_ka": "სეტებს შორის დამშვიდდი.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "stretch",
+    "georgian": "გაჭიმვა",
+    "pronunciation": "/stretʃ/",
+    "example_en": "Stretch after every workout.",
+    "example_ka": "ყოველი ვარჯიშის შემდეგ გაიჭიმე.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "warm",
+    "georgian": "განთბობა",
+    "pronunciation": "/wɔːrm/",
+    "example_en": "Warm up before heavy lifting.",
+    "example_ka": "მძიმე აწევამდე განთბოდი.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "cool",
+    "georgian": "გაცივება",
+    "pronunciation": "/kuːl/",
+    "example_en": "Cool down with light stretching.",
+    "example_ka": "მსუბუქი გაჭიმვით გაცივდი.",
+    "category": "gym-fitness",
+    "level": "A1"
+  },
+  {
+    "english": "plank",
+    "georgian": "პლანკა",
+    "pronunciation": "",
+    "example_en": "This word is plank.",
+    "example_ka": "ეს სიტყვა არის plank.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "lunge",
+    "georgian": "ფეხის გადადგმა",
+    "pronunciation": "",
+    "example_en": "This word is lunge.",
+    "example_ka": "ეს სიტყვა არის lunge.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "burpee",
+    "georgian": "ბურპი",
+    "pronunciation": "",
+    "example_en": "This word is burpee.",
+    "example_ka": "ეს სიტყვა არის burpee.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "crunch",
+    "georgian": "კრანჩი",
+    "pronunciation": "",
+    "example_en": "This word is crunch.",
+    "example_ka": "ეს სიტყვა არის crunch.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "pullup",
+    "georgian": "შეკვრა",
+    "pronunciation": "",
+    "example_en": "This word is pullup.",
+    "example_ka": "ეს სიტყვა არის pullup.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "pushup",
+    "georgian": "ბიძგი",
+    "pronunciation": "",
+    "example_en": "This word is pushup.",
+    "example_ka": "ეს სიტყვა არის pushup.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "resistance",
+    "georgian": "წინააღმდეგობა",
+    "pronunciation": "",
+    "example_en": "This word is resistance.",
+    "example_ka": "ეს სიტყვა არის resistance.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "repetition",
+    "georgian": "გამეორება",
+    "pronunciation": "",
+    "example_en": "This word is repetition.",
+    "example_ka": "ეს სიტყვა არის repetition.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "warmup",
+    "georgian": "გამთბარი",
+    "pronunciation": "",
+    "example_en": "This word is warmup.",
+    "example_ka": "ეს სიტყვა არის warmup.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "cooldown",
+    "georgian": "გაგრილება",
+    "pronunciation": "",
+    "example_en": "This word is cooldown.",
+    "example_ka": "ეს სიტყვა არის cooldown.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "spotter",
+    "georgian": "დამხმარე",
+    "pronunciation": "",
+    "example_en": "This word is spotter.",
+    "example_ka": "ეს სიტყვა არის spotter.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "bulk",
+    "georgian": "მასის მომატება",
+    "pronunciation": "",
+    "example_en": "This word is bulk.",
+    "example_ka": "ეს სიტყვა არის bulk.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "shred",
+    "georgian": "გამხდარიყოფა",
+    "pronunciation": "",
+    "example_en": "This word is shred.",
+    "example_ka": "ეს სიტყვა არის shred.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "interval",
+    "georgian": "ინტერვალი",
+    "pronunciation": "",
+    "example_en": "This word is interval.",
+    "example_ka": "ეს სიტყვა არის interval.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "hamstring",
+    "georgian": "ჰამსტრინგი",
+    "pronunciation": "",
+    "example_en": "This word is hamstring.",
+    "example_ka": "ეს სიტყვა არის hamstring.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "quadricep",
+    "georgian": "კვადრიცეპსი",
+    "pronunciation": "",
+    "example_en": "This word is quadricep.",
+    "example_ka": "ეს სიტყვა არის quadricep.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "bicep",
+    "georgian": "ბიცეპსი",
+    "pronunciation": "",
+    "example_en": "This word is bicep.",
+    "example_ka": "ეს სიტყვა არის bicep.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "tricep",
+    "georgian": "ტრიცეპსი",
+    "pronunciation": "",
+    "example_en": "This word is tricep.",
+    "example_ka": "ეს სიტყვა არის tricep.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "deltoid",
+    "georgian": "დელტა",
+    "pronunciation": "",
+    "example_en": "This word is deltoid.",
+    "example_ka": "ეს სიტყვა არის deltoid.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "trapezius",
+    "georgian": "ტრაპეცია",
+    "pronunciation": "",
+    "example_en": "This word is trapezius.",
+    "example_ka": "ეს სიტყვა არის trapezius.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "abdominal",
+    "georgian": "მუცლის კუნთი",
+    "pronunciation": "",
+    "example_en": "This word is abdominal.",
+    "example_ka": "ეს სიტყვა არის abdominal.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "glute",
+    "georgian": "სასქესო კუნთი",
+    "pronunciation": "",
+    "example_en": "This word is glute.",
+    "example_ka": "ეს სიტყვა არის glute.",
+    "category": "gym-fitness",
+    "level": "B1"
+  },
+  {
+    "english": "calve",
+    "georgian": "ყავარჯნის კუნთი",
+    "pronunciation": "",
+    "example_en": "This word is calve.",
+    "example_ka": "ეს სიტყვა არის calve.",
+    "category": "gym-fitness",
+    "level": "B1"
+  }
 ]
