@@ -1,52 +1,1802 @@
 [
-  {"english": "Office", "georgian": "ოფისი", "pronunciation": "/ˈɒfɪs/", "example_en": "I work in an office.", "example_ka": "ოფისში ვმუშაობ.", "category": "office", "level": "A1"},
-  {"english": "Meeting", "georgian": "შეხვედრა", "pronunciation": "/ˈmiːtɪŋ/", "example_en": "We have a meeting at 10 AM.", "example_ka": "10 საათზე შეხვედრა გვაქვს.", "category": "office", "level": "A2"},
-  {"english": "Deadline", "georgian": "ვადა", "pronunciation": "/ˈdɛdlaɪn/", "example_en": "The deadline is next Friday.", "example_ka": "ვადა მომავალ პარასკევსაა.", "category": "office", "level": "A2"},
-  {"english": "Report", "georgian": "ანგარიში", "pronunciation": "/rɪˈpɔːrt/", "example_en": "I need to finish the report today.", "example_ka": "ანგარიშის დასრულება დღეს მჭირდება.", "category": "office", "level": "A2"},
-  {"english": "Presentation", "georgian": "პრეზენტაცია", "pronunciation": "/ˌprɛzənˈteɪʃən/", "example_en": "She gave an excellent presentation.", "example_ka": "მან შესანიშნავი პრეზენტაცია წარმოადგინა.", "category": "office", "level": "A2"},
-  {"english": "Colleague", "georgian": "კოლეგა", "pronunciation": "/ˈkɒliːɡ/", "example_en": "My colleague helped me with the project.", "example_ka": "კოლეგამ პროექტში დამეხმარა.", "category": "office", "level": "A2"},
-  {"english": "Boss", "georgian": "უფროსი", "pronunciation": "/bɒs/", "example_en": "My boss is very supportive.", "example_ka": "ჩემი უფროსი ძალიან მხარდამჭერია.", "category": "office", "level": "A1"},
-  {"english": "Manager", "georgian": "მენეჯერი", "pronunciation": "/ˈmænɪdʒər/", "example_en": "The manager approved the budget.", "example_ka": "მენეჯერმა ბიუჯეტი დაამტკიცა.", "category": "office", "level": "A2"},
-  {"english": "Employee", "georgian": "თანამშრომელი", "pronunciation": "/ɪmˈplɔɪiː/", "example_en": "The company has 200 employees.", "example_ka": "კომპანიას 200 თანამშრომელი ჰყავს.", "category": "office", "level": "A2"},
-  {"english": "Schedule", "georgian": "განრიგი", "pronunciation": "/ˈʃɛdjuːl/", "example_en": "Let me check my schedule.", "example_ka": "ნება მომეცით, განრიგი შევამოწმო.", "category": "office", "level": "A2"},
-  {"english": "Email", "georgian": "ელფოსტა", "pronunciation": "/ˈiːmeɪl/", "example_en": "I sent you an email yesterday.", "example_ka": "გუშინ ელფოსტა გამოგიგზავნე.", "category": "office", "level": "A1"},
-  {"english": "Project", "georgian": "პროექტი", "pronunciation": "/ˈprɒdʒɛkt/", "example_en": "We're starting a new project.", "example_ka": "ახალ პროექტს ვიწყებთ.", "category": "office", "level": "A2"},
-  {"english": "Task", "georgian": "დავალება", "pronunciation": "/tæsk/", "example_en": "I have three tasks to complete.", "example_ka": "სამი დავალების შესრულება მაქვს.", "category": "office", "level": "A2"},
-  {"english": "Salary", "georgian": "ხელფასი", "pronunciation": "/ˈsæləri/", "example_en": "My salary is paid monthly.", "example_ka": "ხელფასს ყოველთვიურად ვიღებ.", "category": "office", "level": "A2"},
-  {"english": "Overtime", "georgian": "ზეგანაკვეთური", "pronunciation": "/ˈoʊvərtaɪm/", "example_en": "I worked overtime last week.", "example_ka": "გასულ კვირაში ზეგანაკვეთურად ვიმუშავე.", "category": "office", "level": "B1"},
-  {"english": "Promotion", "georgian": "დაწინაურება", "pronunciation": "/prəˈmoʊʃən/", "example_en": "She got a promotion this month.", "example_ka": "ამ თვეში დაწინაურება მიიღო.", "category": "office", "level": "B1"},
-  {"english": "Department", "georgian": "განყოფილება", "pronunciation": "/dɪˈpɑːrtmənt/", "example_en": "I work in the marketing department.", "example_ka": "მარკეტინგის განყოფილებაში ვმუშაობ.", "category": "office", "level": "A2"},
-  {"english": "Conference", "georgian": "კონფერენცია", "pronunciation": "/ˈkɒnfərəns/", "example_en": "The conference starts at noon.", "example_ka": "კონფერენცია შუადღისას იწყება.", "category": "office", "level": "B1"},
-  {"english": "Agenda", "georgian": "დღის წესრიგი", "pronunciation": "/əˈdʒɛndə/", "example_en": "Let's review the meeting agenda.", "example_ka": "შეხვედრის დღის წესრიგი განვიხილოთ.", "category": "office", "level": "B1"},
-  {"english": "Minutes", "georgian": "ოქმი", "pronunciation": "/ˈmɪnɪts/", "example_en": "Who is taking the minutes?", "example_ka": "ვინ აწარმოებს ოქმს?", "category": "office", "level": "B1"},
-  {"english": "Contract", "georgian": "კონტრაქტი", "pronunciation": "/ˈkɒntrækt/", "example_en": "Please sign the contract.", "example_ka": "გთხოვთ, კონტრაქტს ხელი მოაწერეთ.", "category": "office", "level": "A2"},
-  {"english": "Client", "georgian": "კლიენტი", "pronunciation": "/ˈklaɪənt/", "example_en": "We have a meeting with a new client.", "example_ka": "ახალ კლიენტთან შეხვედრა გვაქვს.", "category": "office", "level": "A2"},
-  {"english": "Budget", "georgian": "ბიუჯეტი", "pronunciation": "/ˈbʌdʒɪt/", "example_en": "We need to stay within budget.", "example_ka": "ბიუჯეტის ფარგლებში უნდა დავრჩეთ.", "category": "office", "level": "B1"},
-  {"english": "Strategy", "georgian": "სტრატეგია", "pronunciation": "/ˈstrætədʒi/", "example_en": "We need a new marketing strategy.", "example_ka": "ახალი მარკეტინგის სტრატეგია გვჭირდება.", "category": "office", "level": "B1"},
-  {"english": "Feedback", "georgian": "უკუკავშირი", "pronunciation": "/ˈfiːdbæk/", "example_en": "Can you give me feedback on this?", "example_ka": "ამაზე უკუკავშირს მომცემ?", "category": "office", "level": "A2"},
-  {"english": "Teamwork", "georgian": "გუნდური მუშაობა", "pronunciation": "/ˈtiːmwɜːrk/", "example_en": "Teamwork is essential for success.", "example_ka": "გუნდური მუშაობა წარმატებისთვის აუცილებელია.", "category": "office", "level": "A2"},
-  {"english": "Workspace", "georgian": "სამუშაო ადგილი", "pronunciation": "/ˈwɜːrkspeɪs/", "example_en": "Keep your workspace clean.", "example_ka": "სამუშაო ადგილი სუფთა შეინახე.", "category": "office", "level": "A2"},
-  {"english": "Desk", "georgian": "სამუშაო მაგიდა", "pronunciation": "/dɛsk/", "example_en": "My desk is by the window.", "example_ka": "ჩემი სამუშაო მაგიდა ფანჯარასთანაა.", "category": "office", "level": "A1"},
-  {"english": "Printer", "georgian": "პრინტერი", "pronunciation": "/ˈprɪntər/", "example_en": "The printer is out of paper.", "example_ka": "პრინტერში ქაღალდი გაუთავდა.", "category": "office", "level": "A2"},
-  {"english": "File", "georgian": "ფაილი", "pronunciation": "/faɪl/", "example_en": "Please send me the file.", "example_ka": "გთხოვთ, ფაილი გამომიგზავნე.", "category": "office", "level": "A2"},
-  {"english": "Document", "georgian": "დოკუმენტი", "pronunciation": "/ˈdɒkjumənt/", "example_en": "Sign the document here.", "example_ka": "დოკუმენტს აქ მოაწერეთ ხელი.", "category": "office", "level": "A2"},
-  {"english": "Spreadsheet", "georgian": "ცხრილი", "pronunciation": "/ˈsprɛdʃiːt/", "example_en": "Update the spreadsheet with new data.", "example_ka": "ცხრილი ახალი მონაცემებით განაახლე.", "category": "office", "level": "B1"},
-  {"english": "Invoice", "georgian": "ინვოისი", "pronunciation": "/ˈɪnvɔɪs/", "example_en": "I'll send the invoice tomorrow.", "example_ka": "ინვოისს ხვალ გამოგიგზავნი.", "category": "office", "level": "B1"},
-  {"english": "Proposal", "georgian": "წინადადება", "pronunciation": "/prəˈpoʊzəl/", "example_en": "The proposal was accepted.", "example_ka": "წინადადება მიღებულ იქნა.", "category": "office", "level": "B1"},
-  {"english": "Negotiate", "georgian": "მოლაპარაკება", "pronunciation": "/nɪˈɡoʊʃieɪt/", "example_en": "We need to negotiate the terms.", "example_ka": "პირობებზე მოლაპარაკება გვჭირდება.", "category": "office", "level": "B1"},
-  {"english": "Approve", "georgian": "დამტკიცება", "pronunciation": "/əˈpruːv/", "example_en": "The manager approved the plan.", "example_ka": "მენეჯერმა გეგმა დაამტკიცა.", "category": "office", "level": "A2"},
-  {"english": "Resign", "georgian": "გადადგომა", "pronunciation": "/rɪˈzaɪn/", "example_en": "He decided to resign from the company.", "example_ka": "მან კომპანიიდან გადადგომა გადაწყვიტა.", "category": "office", "level": "B1"},
-  {"english": "Hire", "georgian": "დაქირავება", "pronunciation": "/haɪər/", "example_en": "We need to hire more staff.", "example_ka": "მეტი პერსონალის დაქირავება გვჭირდება.", "category": "office", "level": "A2"},
-  {"english": "Fire", "georgian": "გათავისუფლება", "pronunciation": "/faɪər/", "example_en": "They had to fire two employees.", "example_ka": "ორი თანამშრომლის გათავისუფლება მოუწიათ.", "category": "office", "level": "A2"},
-  {"english": "Remote work", "georgian": "დისტანციური მუშაობა", "pronunciation": "/rɪˈmoʊt wɜːrk/", "example_en": "I prefer remote work.", "example_ka": "დისტანციურ მუშაობას ვამჯობინებ.", "category": "office", "level": "A2"},
-  {"english": "Break", "georgian": "შესვენება", "pronunciation": "/breɪk/", "example_en": "Let's take a short break.", "example_ka": "მოკლე შესვენება ავიღოთ.", "category": "office", "level": "A1"},
-  {"english": "Lunch break", "georgian": "სადილის შესვენება", "pronunciation": "/lʌntʃ breɪk/", "example_en": "I eat in the cafeteria during lunch break.", "example_ka": "სადილის შესვენებაზე კაფეტერიაში ვჭამ.", "category": "office", "level": "A2"},
-  {"english": "Stapler", "georgian": "სტეპლერი", "pronunciation": "/ˈsteɪplər/", "example_en": "Can I borrow your stapler?", "example_ka": "შეიძლება სტეპლერი მათხოვო?", "category": "office", "level": "A2"},
-  {"english": "Paperwork", "georgian": "საბუთები", "pronunciation": "/ˈpeɪpərwɜːrk/", "example_en": "I have a lot of paperwork to do.", "example_ka": "ბევრი საბუთის გაკეთება მაქვს.", "category": "office", "level": "A2"},
-  {"english": "Brainstorm", "georgian": "იდეების გენერაცია", "pronunciation": "/ˈbreɪnstɔːrm/", "example_en": "Let's brainstorm ideas for the campaign.", "example_ka": "კამპანიისთვის იდეები მოვიფიქროთ.", "category": "office", "level": "B1"},
-  {"english": "Workload", "georgian": "სამუშაო დატვირთვა", "pronunciation": "/ˈwɜːrkloʊd/", "example_en": "My workload has increased this month.", "example_ka": "ამ თვეში სამუშაო დატვირთვა გამიზარდა.", "category": "office", "level": "B1"},
-  {"english": "Shift", "georgian": "ცვლა", "pronunciation": "/ʃɪft/", "example_en": "My shift starts at 8 AM.", "example_ka": "ჩემი ცვლა დილის 8 საათზე იწყება.", "category": "office", "level": "A2"},
-  {"english": "Performance", "georgian": "შესრულება", "pronunciation": "/pərˈfɔːrməns/", "example_en": "Your performance has been excellent.", "example_ka": "შენი შესრულება შესანიშნავი იყო.", "category": "office", "level": "B1"},
-  {"english": "Cooperate", "georgian": "თანამშრომლობა", "pronunciation": "/koʊˈɒpəreɪt/", "example_en": "We must cooperate with other teams.", "example_ka": "სხვა გუნდებთან თანამშრომლობა გვმართებს.", "category": "office", "level": "B1"},
-  {"english": "Deadline extension", "georgian": "ვადის გაგრძელება", "pronunciation": "/ˈdɛdlaɪn ɪkˈstɛnʃən/", "example_en": "Can we get a deadline extension?", "example_ka": "ვადის გაგრძელება შეიძლება?", "category": "office", "level": "B1"}
+  {
+    "english": "Office",
+    "georgian": "ოფისი",
+    "pronunciation": "/ˈɒfɪs/",
+    "example_en": "I work in an office.",
+    "example_ka": "ოფისში ვმუშაობ.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Meeting",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/ˈmiːtɪŋ/",
+    "example_en": "We have a meeting at 10 AM.",
+    "example_ka": "10 საათზე შეხვედრა გვაქვს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Deadline",
+    "georgian": "ვადა",
+    "pronunciation": "/ˈdɛdlaɪn/",
+    "example_en": "The deadline is next Friday.",
+    "example_ka": "ვადა მომავალ პარასკევსაა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Report",
+    "georgian": "ანგარიში",
+    "pronunciation": "/rɪˈpɔːrt/",
+    "example_en": "I need to finish the report today.",
+    "example_ka": "ანგარიშის დასრულება დღეს მჭირდება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Presentation",
+    "georgian": "პრეზენტაცია",
+    "pronunciation": "/ˌprɛzənˈteɪʃən/",
+    "example_en": "She gave an excellent presentation.",
+    "example_ka": "მან შესანიშნავი პრეზენტაცია წარმოადგინა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Colleague",
+    "georgian": "კოლეგა",
+    "pronunciation": "/ˈkɒliːɡ/",
+    "example_en": "My colleague helped me with the project.",
+    "example_ka": "კოლეგამ პროექტში დამეხმარა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Boss",
+    "georgian": "უფროსი",
+    "pronunciation": "/bɒs/",
+    "example_en": "My boss is very supportive.",
+    "example_ka": "ჩემი უფროსი ძალიან მხარდამჭერია.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Manager",
+    "georgian": "მენეჯერი",
+    "pronunciation": "/ˈmænɪdʒər/",
+    "example_en": "The manager approved the budget.",
+    "example_ka": "მენეჯერმა ბიუჯეტი დაამტკიცა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Employee",
+    "georgian": "თანამშრომელი",
+    "pronunciation": "/ɪmˈplɔɪiː/",
+    "example_en": "The company has 200 employees.",
+    "example_ka": "კომპანიას 200 თანამშრომელი ჰყავს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈʃɛdjuːl/",
+    "example_en": "Let me check my schedule.",
+    "example_ka": "ნება მომეცით, განრიგი შევამოწმო.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Email",
+    "georgian": "ელფოსტა",
+    "pronunciation": "/ˈiːmeɪl/",
+    "example_en": "I sent you an email yesterday.",
+    "example_ka": "გუშინ ელფოსტა გამოგიგზავნე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Project",
+    "georgian": "პროექტი",
+    "pronunciation": "/ˈprɒdʒɛkt/",
+    "example_en": "We're starting a new project.",
+    "example_ka": "ახალ პროექტს ვიწყებთ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Task",
+    "georgian": "დავალება",
+    "pronunciation": "/tæsk/",
+    "example_en": "I have three tasks to complete.",
+    "example_ka": "სამი დავალების შესრულება მაქვს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Salary",
+    "georgian": "ხელფასი",
+    "pronunciation": "/ˈsæləri/",
+    "example_en": "My salary is paid monthly.",
+    "example_ka": "ხელფასს ყოველთვიურად ვიღებ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Overtime",
+    "georgian": "ზეგანაკვეთური",
+    "pronunciation": "/ˈoʊvərtaɪm/",
+    "example_en": "I worked overtime last week.",
+    "example_ka": "გასულ კვირაში ზეგანაკვეთურად ვიმუშავე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Promotion",
+    "georgian": "დაწინაურება",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "She got a promotion this month.",
+    "example_ka": "ამ თვეში დაწინაურება მიიღო.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Department",
+    "georgian": "განყოფილება",
+    "pronunciation": "/dɪˈpɑːrtmənt/",
+    "example_en": "I work in the marketing department.",
+    "example_ka": "მარკეტინგის განყოფილებაში ვმუშაობ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Conference",
+    "georgian": "კონფერენცია",
+    "pronunciation": "/ˈkɒnfərəns/",
+    "example_en": "The conference starts at noon.",
+    "example_ka": "კონფერენცია შუადღისას იწყება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Agenda",
+    "georgian": "დღის წესრიგი",
+    "pronunciation": "/əˈdʒɛndə/",
+    "example_en": "Let's review the meeting agenda.",
+    "example_ka": "შეხვედრის დღის წესრიგი განვიხილოთ.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Minutes",
+    "georgian": "ოქმი",
+    "pronunciation": "/ˈmɪnɪts/",
+    "example_en": "Who is taking the minutes?",
+    "example_ka": "ვინ აწარმოებს ოქმს?",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Contract",
+    "georgian": "კონტრაქტი",
+    "pronunciation": "/ˈkɒntrækt/",
+    "example_en": "Please sign the contract.",
+    "example_ka": "გთხოვთ, კონტრაქტს ხელი მოაწერეთ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Client",
+    "georgian": "კლიენტი",
+    "pronunciation": "/ˈklaɪənt/",
+    "example_en": "We have a meeting with a new client.",
+    "example_ka": "ახალ კლიენტთან შეხვედრა გვაქვს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "We need to stay within budget.",
+    "example_ka": "ბიუჯეტის ფარგლებში უნდა დავრჩეთ.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Strategy",
+    "georgian": "სტრატეგია",
+    "pronunciation": "/ˈstrætədʒi/",
+    "example_en": "We need a new marketing strategy.",
+    "example_ka": "ახალი მარკეტინგის სტრატეგია გვჭირდება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Feedback",
+    "georgian": "უკუკავშირი",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "Can you give me feedback on this?",
+    "example_ka": "ამაზე უკუკავშირს მომცემ?",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Teamwork",
+    "georgian": "გუნდური მუშაობა",
+    "pronunciation": "/ˈtiːmwɜːrk/",
+    "example_en": "Teamwork is essential for success.",
+    "example_ka": "გუნდური მუშაობა წარმატებისთვის აუცილებელია.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Workspace",
+    "georgian": "სამუშაო ადგილი",
+    "pronunciation": "/ˈwɜːrkspeɪs/",
+    "example_en": "Keep your workspace clean.",
+    "example_ka": "სამუშაო ადგილი სუფთა შეინახე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Desk",
+    "georgian": "სამუშაო მაგიდა",
+    "pronunciation": "/dɛsk/",
+    "example_en": "My desk is by the window.",
+    "example_ka": "ჩემი სამუშაო მაგიდა ფანჯარასთანაა.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Printer",
+    "georgian": "პრინტერი",
+    "pronunciation": "/ˈprɪntər/",
+    "example_en": "The printer is out of paper.",
+    "example_ka": "პრინტერში ქაღალდი გაუთავდა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "File",
+    "georgian": "ფაილი",
+    "pronunciation": "/faɪl/",
+    "example_en": "Please send me the file.",
+    "example_ka": "გთხოვთ, ფაილი გამომიგზავნე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Document",
+    "georgian": "დოკუმენტი",
+    "pronunciation": "/ˈdɒkjumənt/",
+    "example_en": "Sign the document here.",
+    "example_ka": "დოკუმენტს აქ მოაწერეთ ხელი.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Spreadsheet",
+    "georgian": "ცხრილი",
+    "pronunciation": "/ˈsprɛdʃiːt/",
+    "example_en": "Update the spreadsheet with new data.",
+    "example_ka": "ცხრილი ახალი მონაცემებით განაახლე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "I'll send the invoice tomorrow.",
+    "example_ka": "ინვოისს ხვალ გამოგიგზავნი.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Proposal",
+    "georgian": "წინადადება",
+    "pronunciation": "/prəˈpoʊzəl/",
+    "example_en": "The proposal was accepted.",
+    "example_ka": "წინადადება მიღებულ იქნა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Negotiate",
+    "georgian": "მოლაპარაკება",
+    "pronunciation": "/nɪˈɡoʊʃieɪt/",
+    "example_en": "We need to negotiate the terms.",
+    "example_ka": "პირობებზე მოლაპარაკება გვჭირდება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Approve",
+    "georgian": "დამტკიცება",
+    "pronunciation": "/əˈpruːv/",
+    "example_en": "The manager approved the plan.",
+    "example_ka": "მენეჯერმა გეგმა დაამტკიცა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Resign",
+    "georgian": "გადადგომა",
+    "pronunciation": "/rɪˈzaɪn/",
+    "example_en": "He decided to resign from the company.",
+    "example_ka": "მან კომპანიიდან გადადგომა გადაწყვიტა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Hire",
+    "georgian": "დაქირავება",
+    "pronunciation": "/haɪər/",
+    "example_en": "We need to hire more staff.",
+    "example_ka": "მეტი პერსონალის დაქირავება გვჭირდება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Fire",
+    "georgian": "გათავისუფლება",
+    "pronunciation": "/faɪər/",
+    "example_en": "They had to fire two employees.",
+    "example_ka": "ორი თანამშრომლის გათავისუფლება მოუწიათ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Break",
+    "georgian": "შესვენება",
+    "pronunciation": "/breɪk/",
+    "example_en": "Let's take a short break.",
+    "example_ka": "მოკლე შესვენება ავიღოთ.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Stapler",
+    "georgian": "სტეპლერი",
+    "pronunciation": "/ˈsteɪplər/",
+    "example_en": "Can I borrow your stapler?",
+    "example_ka": "შეიძლება სტეპლერი მათხოვო?",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Paperwork",
+    "georgian": "საბუთები",
+    "pronunciation": "/ˈpeɪpərwɜːrk/",
+    "example_en": "I have a lot of paperwork to do.",
+    "example_ka": "ბევრი საბუთის გაკეთება მაქვს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Brainstorm",
+    "georgian": "იდეების გენერაცია",
+    "pronunciation": "/ˈbreɪnstɔːrm/",
+    "example_en": "Let's brainstorm ideas for the campaign.",
+    "example_ka": "კამპანიისთვის იდეები მოვიფიქროთ.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Workload",
+    "georgian": "სამუშაო დატვირთვა",
+    "pronunciation": "/ˈwɜːrkloʊd/",
+    "example_en": "My workload has increased this month.",
+    "example_ka": "ამ თვეში სამუშაო დატვირთვა გამიზარდა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Shift",
+    "georgian": "ცვლა",
+    "pronunciation": "/ʃɪft/",
+    "example_en": "My shift starts at 8 AM.",
+    "example_ka": "ჩემი ცვლა დილის 8 საათზე იწყება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Performance",
+    "georgian": "შესრულება",
+    "pronunciation": "/pərˈfɔːrməns/",
+    "example_en": "Your performance has been excellent.",
+    "example_ka": "შენი შესრულება შესანიშნავი იყო.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Cooperate",
+    "georgian": "თანამშრომლობა",
+    "pronunciation": "/koʊˈɒpəreɪt/",
+    "example_en": "We must cooperate with other teams.",
+    "example_ka": "სხვა გუნდებთან თანამშრომლობა გვმართებს.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Calendar",
+    "georgian": "კალენდარი",
+    "pronunciation": "/ˈkælɪndər/",
+    "example_en": "Check your calendar for appointments.",
+    "example_ka": "შეხვედრებისთვის კალენდარი შეამოწმე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Appointment",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/əˈpɔɪntmənt/",
+    "example_en": "I have an appointment at 2 PM.",
+    "example_ka": "14:00 საათზე შეხვედრა მაქვს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Laptop",
+    "georgian": "ლეპტოპი",
+    "pronunciation": "/ˈlæptɑːp/",
+    "example_en": "I work on my laptop every day.",
+    "example_ka": "ყოველდღე ლეპტოპზე ვმუშაობ.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Monitor",
+    "georgian": "მონიტორი",
+    "pronunciation": "/ˈmɑːnɪtər/",
+    "example_en": "The monitor screen is very clear.",
+    "example_ka": "მონიტორის ეკრანი ძალიან მკაფიოა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Keyboard",
+    "georgian": "კლავიატურა",
+    "pronunciation": "/ˈkiːbɔːrd/",
+    "example_en": "Clean your keyboard regularly.",
+    "example_ka": "კლავიატურა რეგულარულად გაასუფთავე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Mouse",
+    "georgian": "მაუსი",
+    "pronunciation": "/maʊs/",
+    "example_en": "The computer mouse is broken.",
+    "example_ka": "კომპიუტერის მაუსი გაფუჭებულია.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Computer",
+    "georgian": "კომპიუტერი",
+    "pronunciation": "/kəmˈpjuːtər/",
+    "example_en": "Turn on your computer.",
+    "example_ka": "კომპიუტერი ჩართე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Software",
+    "georgian": "პროგრამული უზრუნველყოფა",
+    "pronunciation": "/ˈsɔːftwer/",
+    "example_en": "Install the new software update.",
+    "example_ka": "ახალი პროგრამული განახლება დააინსტალირე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Hardware",
+    "georgian": "ტექნიკური მოწყობილობა",
+    "pronunciation": "/ˈhɑːrdwer/",
+    "example_en": "The hardware needs replacement.",
+    "example_ka": "ტექნიკური მოწყობილობა ჩანაცვლებას საჭიროებს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Application",
+    "georgian": "აპლიკაცია",
+    "pronunciation": "/ˌæplɪˈkeɪʃən/",
+    "example_en": "Open the email application.",
+    "example_ka": "იმეილის აპლიკაცია გახსენი.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Folder",
+    "georgian": "ფოლდერი",
+    "pronunciation": "/ˈfoʊldər/",
+    "example_en": "Save the files in this folder.",
+    "example_ka": "ფაილები ამ ფოლდერში შეინახე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Database",
+    "georgian": "მონაცემთა ბაზა",
+    "pronunciation": "/ˈdeɪtəbeɪs/",
+    "example_en": "Update the customer database.",
+    "example_ka": "მომხმარებელთა მონაცემთა ბაზა განაახლე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Backup",
+    "georgian": "სარეზერვო ასლი",
+    "pronunciation": "/ˈbækʌp/",
+    "example_en": "Create a backup of important data.",
+    "example_ka": "მნიშვნელოვანი მონაცემების სარეზერვო ასლი შექმენი.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Server",
+    "georgian": "სერვერი",
+    "pronunciation": "/ˈsɜːrvər/",
+    "example_en": "The server is down for maintenance.",
+    "example_ka": "სერვერი ტექნიკური მომსახურებისთვის გათიშულია.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Network",
+    "georgian": "ქსელი",
+    "pronunciation": "/ˈnetwɜːrk/",
+    "example_en": "Connect to the office network.",
+    "example_ka": "ოფისის ქსელს მიუერთდი.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswɜːrd/",
+    "example_en": "Change your password regularly.",
+    "example_ka": "პაროლი რეგულარულად შეცვალე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊrəti/",
+    "example_en": "Office security is very important.",
+    "example_ka": "ოფისის უსაფრთხოება ძალიან მნიშვნელოვანია.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Access",
+    "georgian": "წვდომა",
+    "pronunciation": "/ˈækses/",
+    "example_en": "You need access to enter this room.",
+    "example_ka": "ამ ოთახში შესასვლელად წვდომა გჭირდება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Badge",
+    "georgian": "ბეჯი",
+    "pronunciation": "/bædʒ/",
+    "example_en": "Scan your badge to enter.",
+    "example_ka": "შესასვლელად ბეჯი დაასკანე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Reception",
+    "georgian": "მიღების ოთახი",
+    "pronunciation": "/rɪˈsepʃən/",
+    "example_en": "Wait at the reception desk.",
+    "example_ka": "მიღების მაგიდასთან დაელოდე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Lobby",
+    "georgian": "ლობი",
+    "pronunciation": "/ˈlɑːbi/",
+    "example_en": "Meet me in the lobby.",
+    "example_ka": "ლობში მიმნახე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Elevator",
+    "georgian": "ლიფტი",
+    "pronunciation": "/ˈeləveɪtər/",
+    "example_en": "Take the elevator to the 5th floor.",
+    "example_ka": "მე-5 სართულზე ლიფტით ავიდი.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Stairs",
+    "georgian": "კიბე",
+    "pronunciation": "/sterz/",
+    "example_en": "Use the stairs for exercise.",
+    "example_ka": "ვარჯიშისთვის კიბე გამოიყენე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Floor",
+    "georgian": "სართული",
+    "pronunciation": "/flɔːr/",
+    "example_en": "My office is on the third floor.",
+    "example_ka": "ჩემი ოფისი მესამე სართულზეა.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Building",
+    "georgian": "შენობა",
+    "pronunciation": "/ˈbɪldɪŋ/",
+    "example_en": "The office building has 20 floors.",
+    "example_ka": "ოფისის შენობას 20 სართული აქვს.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Parking",
+    "georgian": "პარკინგი",
+    "pronunciation": "/ˈpɑːrkɪŋ/",
+    "example_en": "Employee parking is free.",
+    "example_ka": "თანამშრომელთა პარკინგი უფასოა.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Cafeteria",
+    "georgian": "კაფეტერია",
+    "pronunciation": "/ˌkæfəˈtɪriə/",
+    "example_en": "Let's have lunch in the cafeteria.",
+    "example_ka": "კაფეტერიაში ვისადილოთ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Kitchen",
+    "georgian": "სამზარეულო",
+    "pronunciation": "/ˈkɪtʃən/",
+    "example_en": "Make coffee in the office kitchen.",
+    "example_ka": "ოფისის სამზარეულოში ყავა გააკეთე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Microwave",
+    "georgian": "მიკროტალღური",
+    "pronunciation": "/ˈmaɪkroʊweɪv/",
+    "example_en": "Heat your lunch in the microwave.",
+    "example_ka": "სადილი მიკროტალღურში გაახურე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Refrigerator",
+    "georgian": "მაცივარი",
+    "pronunciation": "/rɪˈfrɪdʒəreɪtər/",
+    "example_en": "Store your food in the refrigerator.",
+    "example_ka": "საკვები მაცივარში შეინახე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Supply",
+    "georgian": "მარაგი",
+    "pronunciation": "/səˈplaɪ/",
+    "example_en": "Order office supplies for next month.",
+    "example_ka": "მომავალ თვისთვის ოფისის მარაგი შეუკვეთე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Pen",
+    "georgian": "კალამი",
+    "pronunciation": "/pen/",
+    "example_en": "I need a pen to sign this.",
+    "example_ka": "ამის მოსაწერად კალამი მჭირდება.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Pencil",
+    "georgian": "ფანქარი",
+    "pronunciation": "/ˈpensəl/",
+    "example_en": "Use a pencil for the draft.",
+    "example_ka": "ნახაზისთვის ფანქარი გამოიყენე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Paper",
+    "georgian": "ქაღალდი",
+    "pronunciation": "/ˈpeɪpər/",
+    "example_en": "We're out of printer paper.",
+    "example_ka": "პრინტერის ქაღალდი გამოგვეწურა.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Notebook",
+    "georgian": "რვეული",
+    "pronunciation": "/ˈnoʊtbʊk/",
+    "example_en": "Write notes in your notebook.",
+    "example_ka": "შენიშვნები რვეულში ჩაწერე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Envelope",
+    "georgian": "კონვერტი",
+    "pronunciation": "/ˈenvəloʊp/",
+    "example_en": "Put the letter in an envelope.",
+    "example_ka": "წერილი კონვერტში ჩადე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Stamp",
+    "georgian": "მარკა",
+    "pronunciation": "/stæmp/",
+    "example_en": "Don't forget to put a stamp on it.",
+    "example_ka": "მარკის დადება არ დაივიწყო.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Mail",
+    "georgian": "ფოსტა",
+    "pronunciation": "/meɪl/",
+    "example_en": "Check the mail for new letters.",
+    "example_ka": "ახალ წერილებისთვის ფოსტა შეამოწმე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Package",
+    "georgian": "ამანათი",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "A package arrived for you.",
+    "example_ka": "შენთვის ამანათი მოვიდა.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Delivery",
+    "georgian": "მიტანა",
+    "pronunciation": "/dɪˈlɪvəri/",
+    "example_en": "The delivery will arrive tomorrow.",
+    "example_ka": "მიტანა ხვალ მოვა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Shipment",
+    "georgian": "გზავნილი",
+    "pronunciation": "/ˈʃɪpmənt/",
+    "example_en": "Track your shipment online.",
+    "example_ka": "გზავნილი ონლაინ თვალი ადევნე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Signature",
+    "georgian": "ხელმოწერა",
+    "pronunciation": "/ˈsɪɡnətʃər/",
+    "example_en": "Your signature is required here.",
+    "example_ka": "აქ შენი ხელმოწერაა საჭირო.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Form",
+    "georgian": "ფორმა",
+    "pronunciation": "/fɔːrm/",
+    "example_en": "Fill out this application form.",
+    "example_ka": "ეს განაცხადის ფორმა შეავსე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Resume",
+    "georgian": "რეზიუმე",
+    "pronunciation": "/rɪˈzuːmeɪ/",
+    "example_en": "Update your resume with new skills.",
+    "example_ka": "რეზიუმე ახალი უნარებით განაახლე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Interview",
+    "georgian": "ინტერვიუ",
+    "pronunciation": "/ˈɪntərvjuː/",
+    "example_en": "I have a job interview tomorrow.",
+    "example_ka": "ხვალ სამსახურის ინტერვიუ მაქვს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Candidate",
+    "georgian": "კანდიდატი",
+    "pronunciation": "/ˈkændɪdət/",
+    "example_en": "We interviewed five candidates today.",
+    "example_ka": "დღეს ხუთ კანდიდატს მივესაუბრეთ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Position",
+    "georgian": "პოზიცია",
+    "pronunciation": "/pəˈzɪʃən/",
+    "example_en": "Apply for the marketing position.",
+    "example_ka": "მარკეტინგის პოზიციაზე განაცხადი შეიტანე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Qualification",
+    "georgian": "კვალიფიკაცია",
+    "pronunciation": "/ˌkwɑːlɪfɪˈkeɪʃən/",
+    "example_en": "Do you have the right qualifications?",
+    "example_ka": "შესაფერისი კვალიფიკაცია გაქვს?",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Experience",
+    "georgian": "გამოცდილება",
+    "pronunciation": "/ɪkˈspɪriəns/",
+    "example_en": "I have five years of experience.",
+    "example_ka": "ხუთწლიანი გამოცდილება მაქვს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Skill",
+    "georgian": "უნარი",
+    "pronunciation": "/skɪl/",
+    "example_en": "Communication skills are important.",
+    "example_ka": "კომუნიკაციის უნარები მნიშვნელოვანია.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Training",
+    "georgian": "ტრენინგი",
+    "pronunciation": "/ˈtreɪnɪŋ/",
+    "example_en": "Attend the safety training session.",
+    "example_ka": "უსაფრთხოების ტრენინგის სესიაზე დაესწარი.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Workshop",
+    "georgian": "ვორქშოპი",
+    "pronunciation": "/ˈwɜːrkʃɑːp/",
+    "example_en": "Join the leadership workshop.",
+    "example_ka": "ლიდერობის ვორქშოპს შეუერთდი.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Seminar",
+    "georgian": "სემინარი",
+    "pronunciation": "/ˈsemɪnɑːr/",
+    "example_en": "The seminar starts at 9 AM.",
+    "example_ka": "სემინარი 9 საათზე იწყება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Course",
+    "georgian": "კურსი",
+    "pronunciation": "/kɔːrs/",
+    "example_en": "Take a computer course to improve.",
+    "example_ka": "გასაუმჯობესებლად კომპიუტერული კურსი გაიარე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Certificate",
+    "georgian": "სერთიფიკატი",
+    "pronunciation": "/sərˈtɪfɪkət/",
+    "example_en": "I received a certificate for completing the course.",
+    "example_ka": "კურსის დასრულებისთვის სერთიფიკატი მივიღე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "License",
+    "georgian": "ლიცენზია",
+    "pronunciation": "/ˈlaɪsəns/",
+    "example_en": "You need a license to operate this equipment.",
+    "example_ka": "ამ მოწყობილობის გამოსაყენებლად ლიცენზია გჭირდება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Permit",
+    "georgian": "ნებართვა",
+    "pronunciation": "/ˈpɜːrmɪt/",
+    "example_en": "Get a work permit before starting.",
+    "example_ka": "დაწყებამდე სამუშაო ნებართვა მოიპოვე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Regulation",
+    "georgian": "რეგულაცია",
+    "pronunciation": "/ˌreɡjəˈleɪʃən/",
+    "example_en": "Follow all safety regulations.",
+    "example_ka": "ყველა უსაფრთხოების რეგულაცია დაიცავი.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Policy",
+    "georgian": "პოლისი",
+    "pronunciation": "/ˈpɑːləsi/",
+    "example_en": "Read the company policy manual.",
+    "example_ka": "კომპანიის პოლისის სახელმძღვანელო წაიკითხე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Procedure",
+    "georgian": "პროცედურა",
+    "pronunciation": "/prəˈsiːdʒər/",
+    "example_en": "Follow the correct procedure.",
+    "example_ka": "სწორი პროცედურა მიჰყევი.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Protocol",
+    "georgian": "პროტოკოლი",
+    "pronunciation": "/ˈproʊtəkɔːl/",
+    "example_en": "Use the proper meeting protocol.",
+    "example_ka": "შეხვედრის სწორი პროტოკოლი გამოიყენე.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Standard",
+    "georgian": "სტანდარტი",
+    "pronunciation": "/ˈstændərd/",
+    "example_en": "Maintain high quality standards.",
+    "example_ka": "ხარისხის მაღალი სტანდარტები შენარჩუნე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɑːləti/",
+    "example_en": "We focus on quality over quantity.",
+    "example_ka": "ფოკუსი ხარისხზე გვაქვს, არა რაოდენობაზე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Efficiency",
+    "georgian": "ეფექტურობა",
+    "pronunciation": "/ɪˈfɪʃənsi/",
+    "example_en": "Improve work efficiency with better tools.",
+    "example_ka": "უკეთესი ინსტრუმენტებით სამუშაო ეფექტურობა გააუმჯობესე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Productivity",
+    "georgian": "პროდუქტიულობა",
+    "pronunciation": "/ˌproʊdʌkˈtɪvəti/",
+    "example_en": "Track your daily productivity.",
+    "example_ka": "ყოველდღიური პროდუქტიულობა თვალი ადევნე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Target",
+    "georgian": "მიზანი",
+    "pronunciation": "/ˈtɑːrɡət/",
+    "example_en": "We reached our sales target.",
+    "example_ka": "გაყიდვების მიზანს მივაღწიეთ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Goal",
+    "georgian": "მიზანი",
+    "pronunciation": "/ɡoʊl/",
+    "example_en": "Set realistic goals for your team.",
+    "example_ka": "გუნდისთვის რეალისტური მიზნები დააყენე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Objective",
+    "georgian": "ამოცანა",
+    "pronunciation": "/əbˈdʒektɪv/",
+    "example_en": "Our main objective is customer satisfaction.",
+    "example_ka": "ჩვენი მთავარი ამოცანა მომხმარებელთა კმაყოფილებაა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Priority",
+    "georgian": "პრიორიტეტი",
+    "pronunciation": "/praɪˈɔːrəti/",
+    "example_en": "Safety is our top priority.",
+    "example_ka": "უსაფრთხოება ჩვენი მთავარი პრიორიტეტია.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Urgent",
+    "georgian": "სასწრაფო",
+    "pronunciation": "/ˈɜːrdʒənt/",
+    "example_en": "This task is urgent and important.",
+    "example_ka": "ეს ამოცანა სასწრაფო და მნიშვნელოვანია.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Flexible",
+    "georgian": "მოქნილი",
+    "pronunciation": "/ˈfleksəbl/",
+    "example_en": "We offer flexible working hours.",
+    "example_ka": "ჩვენ მოქნილ სამუშაო საათებს ვთავაზობთ.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Remote",
+    "georgian": "დისტანციური",
+    "pronunciation": "/rɪˈmoʊt/",
+    "example_en": "Many people work remotely now.",
+    "example_ka": "ბევრი ადამიანი ახლა დისტანციურად მუშაობს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Telecommute",
+    "georgian": "ტელემუშაობა",
+    "pronunciation": "/ˈtelikəmjuːt/",
+    "example_en": "She telecommutes three days a week.",
+    "example_ka": "ის კვირაში სამ დღე ტელემუშაობს.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Attendance",
+    "georgian": "დასწრება",
+    "pronunciation": "/əˈtendəns/",
+    "example_en": "Perfect attendance is rewarded.",
+    "example_ka": "სრულყოფილი დასწრება ჯილდოვდება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Absence",
+    "georgian": "გაცდენა",
+    "pronunciation": "/ˈæbsəns/",
+    "example_en": "Notify HR about your absence.",
+    "example_ka": "HR-ს შენი გაცდენის შესახებ შეატყობინე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Vacation",
+    "georgian": "შვებულება",
+    "pronunciation": "/veɪˈkeɪʃən/",
+    "example_en": "I'm planning a vacation next month.",
+    "example_ka": "მომავალ თვეში შვებულებას ვგეგმავ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Holiday",
+    "georgian": "უქმე დღე",
+    "pronunciation": "/ˈhɑːlədeɪ/",
+    "example_en": "Monday is a national holiday.",
+    "example_ka": "ორშაბათს ეროვნული უქმე დღეა.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Sick",
+    "georgian": "ავად",
+    "pronunciation": "/sɪk/",
+    "example_en": "Call in sick if you're not well.",
+    "example_ka": "თუ კარგად არ გრძნობ თავს, ავადმყოფობა დარეკე.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Leave",
+    "georgian": "შვებულება",
+    "pronunciation": "/liːv/",
+    "example_en": "Apply for maternity leave early.",
+    "example_ka": "დედობის შვებულებაზე ადრე განაცხადი შეიტანე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Substitute",
+    "georgian": "შემცვლელი",
+    "pronunciation": "/ˈsʌbstɪtuːt/",
+    "example_en": "Find a substitute for tomorrow's meeting.",
+    "example_ka": "ხვალინდელი შეხვედრისთვის შემცვლელი მოძებნე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Replacement",
+    "georgian": "ჩანაცვლება",
+    "pronunciation": "/rɪˈpleɪsmənt/",
+    "example_en": "We need a replacement for this position.",
+    "example_ka": "ამ პოზიციაზე ჩანაცვლება გვჭირდება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Transfer",
+    "georgian": "გადაყვანა",
+    "pronunciation": "/ˈtrænsfər/",
+    "example_en": "She requested a transfer to London.",
+    "example_ka": "მან ლონდონში გადაყვანა მოითხოვა.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Relocate",
+    "georgian": "გადაადგილება",
+    "pronunciation": "/ˌriːloʊˈkeɪt/",
+    "example_en": "The company will relocate to a bigger office.",
+    "example_ka": "კომპანია უფრო დიდ ოფისში გადაადგილდება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Commute",
+    "georgian": "მგზავრობა",
+    "pronunciation": "/kəˈmjuːt/",
+    "example_en": "My commute takes 30 minutes.",
+    "example_ka": "ჩემი მგზავრობა 30 წუთს გრძელდება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Traffic",
+    "georgian": "ტრაფიკი",
+    "pronunciation": "/ˈtræfɪk/",
+    "example_en": "Heavy traffic made me late.",
+    "example_ka": "მძიმე ტრაფიკმა დამაგვიანებინა.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Transportation",
+    "georgian": "ტრანსპორტი",
+    "pronunciation": "/ˌtrænspərˈteɪʃən/",
+    "example_en": "Public transportation is convenient.",
+    "example_ka": "საზოგადოებრივი ტრანსპორტი მოხერხებულია.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Guard",
+    "georgian": "დაცვა",
+    "pronunciation": "/ɡɑːrd/",
+    "example_en": "The security guard checks IDs.",
+    "example_ka": "უსაფრთხოების დაცვა პირადობის მოწმობებს ამოწმებს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Equipment",
+    "georgian": "აღჭურვილობა",
+    "pronunciation": "/ɪˈkwɪpmənt/",
+    "example_en": "All equipment must be maintained.",
+    "example_ka": "ყველა აღჭურვილობა უნდა მოვითვისოთ.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Tool",
+    "georgian": "ინსტრუმენტი",
+    "pronunciation": "/tuːl/",
+    "example_en": "We need better tools for this job.",
+    "example_ka": "ამ სამუშაოსთვის უკეთესი ინსტრუმენტები გვჭირდება.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Machine",
+    "georgian": "მანქანა",
+    "pronunciation": "/məˈʃiːn/",
+    "example_en": "The copy machine is broken.",
+    "example_ka": "ასლების მანქანა გაფუჭებულია.",
+    "category": "office-workplace",
+    "level": "A1"
+  },
+  {
+    "english": "Device",
+    "georgian": "მოწყობილობა",
+    "pronunciation": "/dɪˈvaɪs/",
+    "example_en": "This device saves time and money.",
+    "example_ka": "ეს მოწყობილობა დროსა და ფულს ზოგავს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Technology",
+    "georgian": "ტექნოლოგია",
+    "pronunciation": "/tekˈnɑːlədʒi/",
+    "example_en": "New technology improves our work.",
+    "example_ka": "ახალი ტექნოლოგია ჩვენს მუშაობას აუმჯობესებს.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Innovation",
+    "georgian": "ინოვაცია",
+    "pronunciation": "/ˌɪnoʊˈveɪʃən/",
+    "example_en": "Innovation drives our company forward.",
+    "example_ka": "ინოვაცია ჩვენს კომპანიას წინ მიიყვანს.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Upgrade",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpɡreɪd/",
+    "example_en": "We need to upgrade our systems.",
+    "example_ka": "სისტემების განახლება გვჭირდება.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Maintenance",
+    "georgian": "მომსახურება",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "example_en": "Regular maintenance prevents problems.",
+    "example_ka": "რეგულარული მომსახურება პრობლემებს თავიდან აცილებს.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Repair",
+    "georgian": "შეკეთება",
+    "pronunciation": "/rɪˈper/",
+    "example_en": "Call someone to repair the printer.",
+    "example_ka": "პრინტერის შესაკეთებლად ვინმეს დარეკე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Installation",
+    "georgian": "დაყენება",
+    "pronunciation": "/ˌɪnstəˈleɪʃən/",
+    "example_en": "The software installation is complete.",
+    "example_ka": "პროგრამული უზრუნველყოფის დაყენება დასრულდა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Configuration",
+    "georgian": "კონფიგურაცია",
+    "pronunciation": "/kənˌfɪɡjəˈreɪʃən/",
+    "example_en": "Check the system configuration settings.",
+    "example_ka": "სისტემის კონფიგურაციის პარამეტრები შეამოწმე.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Integration",
+    "georgian": "ინტეგრაცია",
+    "pronunciation": "/ˌɪntɪˈɡreɪʃən/",
+    "example_en": "Software integration improves workflow.",
+    "example_ka": "პროგრამული ინტეგრაცია სამუშაო პროცესს აუმჯობესებს.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Automation",
+    "georgian": "ავტომატიზაცია",
+    "pronunciation": "/ˌɔːtəməˈteɪʃən/",
+    "example_en": "Automation reduces manual work.",
+    "example_ka": "ავტომატიზაცია ხელით სამუშაოს ამცირებს.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Optimization",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˌɑːptəməˈzeɪʃən/",
+    "example_en": "Process optimization saves money.",
+    "example_ka": "პროცესის ოპტიმიზაცია ფულს ზოგავს.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Implementation",
+    "georgian": "განხორციელება",
+    "pronunciation": "/ˌɪmplɪmɛnˈteɪʃən/",
+    "example_en": "Project implementation starts next week.",
+    "example_ka": "პროექტის განხორციელება მომავალ კვირაში იწყება.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Coordination",
+    "georgian": "კოორდინაცია",
+    "pronunciation": "/koʊˌɔːrdɪˈneɪʃən/",
+    "example_en": "Good coordination prevents conflicts.",
+    "example_ka": "კარგი კოორდინაცია კონფლიქტებს თავიდან აცილებს.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Communication",
+    "georgian": "კომუნიკაცია",
+    "pronunciation": "/kəˌmjuːnɪˈkeɪʃən/",
+    "example_en": "Clear communication is essential.",
+    "example_ka": "მკაფიო კომუნიკაცია აუცილებელია.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "Collaboration",
+    "georgian": "თანამშრომლობა",
+    "pronunciation": "/kəˌlæbəˈreɪʃən/",
+    "example_en": "Team collaboration produces better results.",
+    "example_ka": "გუნდური თანამშრომლობა უკეთეს შედეგებს იძლევა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Partnership",
+    "georgian": "პარტნიორობა",
+    "pronunciation": "/ˈpɑːrtnərʃɪp/",
+    "example_en": "Our partnership with them is beneficial.",
+    "example_ka": "მათთან ჩვენი პარტნიორობა სასარგებლოა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "Alliance",
+    "georgian": "ალიანსი",
+    "pronunciation": "/əˈlaɪəns/",
+    "example_en": "Form an alliance with other companies.",
+    "example_ka": "სხვა კომპანიებთან ალიანსი შექმენი.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Merger",
+    "georgian": "შერწყმა",
+    "pronunciation": "/ˈmɜːrdʒər/",
+    "example_en": "The merger was announced yesterday.",
+    "example_ka": "შერწყმა გუშინ გამოცხადდა.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Acquisition",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˌækwəˈzɪʃən/",
+    "example_en": "The acquisition doubled our size.",
+    "example_ka": "შეძენამ ჩვენი ზომა გააორმაგა.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "Expansion",
+    "georgian": "გაფართოება",
+    "pronunciation": "/ɪkˈspænʃən/",
+    "example_en": "Company expansion requires more staff.",
+    "example_ka": "კომპანიის გაფართოებას მეტი პერსონალი სჭირდება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "appraisal",
+    "georgian": "შეფასება",
+    "pronunciation": "/əˈpreɪzl/",
+    "example_en": "The annual appraisal went well.",
+    "example_ka": "წლიური შეფასება კარგად ჩაიარა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "boardroom",
+    "georgian": "სხდომათა დარბაზი",
+    "pronunciation": "/ˈbɔːrdruːm/",
+    "example_en": "Meet in the boardroom.",
+    "example_ka": "სხდომათა დარბაზში შეხვდით.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "briefing",
+    "georgian": "ინფორმირება",
+    "pronunciation": "/ˈbriːfɪŋ/",
+    "example_en": "Attend the morning briefing.",
+    "example_ka": "დილის ინფორმირებას დაესწარი.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "bureaucracy",
+    "georgian": "ბიუროკრატია",
+    "pronunciation": "/bjʊˈrɒkrəsi/",
+    "example_en": "Bureaucracy slows things down.",
+    "example_ka": "ბიუროკრატია საქმეს ანელებს.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "clipboard",
+    "georgian": "ბუფერი",
+    "pronunciation": "/ˈklɪpbɔːrd/",
+    "example_en": "Use the clipboard for notes.",
+    "example_ka": "ჩანიშვნებისთვის ბუფერი გამოიყენე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "cubicle",
+    "georgian": "კაბინა",
+    "pronunciation": "/ˈkjuːbɪkl/",
+    "example_en": "She works in a cubicle.",
+    "example_ka": "კაბინაში მუშაობს.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "delegate",
+    "georgian": "დელეგირება",
+    "pronunciation": "/ˈdelɪɡeɪt/",
+    "example_en": "Delegate tasks to your team.",
+    "example_ka": "ამოცანები გუნდს გადაანდე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "demotion",
+    "georgian": "დაქვეითება",
+    "pronunciation": "/dɪˈmoʊʃn/",
+    "example_en": "He feared demotion.",
+    "example_ka": "დაქვეითების ეშინოდა.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "downsize",
+    "georgian": "შემცირება",
+    "pronunciation": "/ˈdaʊnsaɪz/",
+    "example_en": "The company downsized.",
+    "example_ka": "კომპანიამ თანამშრომლები შეამცირა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "ergonomic",
+    "georgian": "ერგონომიული",
+    "pronunciation": "/ˌɜːrɡəˈnɒmɪk/",
+    "example_en": "Buy an ergonomic chair.",
+    "example_ka": "ერგონომიული სავარძელი იყიდე.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "facilitate",
+    "georgian": "ხელშეწყობა",
+    "pronunciation": "/fəˈsɪlɪteɪt/",
+    "example_en": "Facilitate the discussion.",
+    "example_ka": "დისკუსიას ხელი შეუწყვი.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "grievance",
+    "georgian": "საჩივარი",
+    "pronunciation": "/ˈɡriːvəns/",
+    "example_en": "File a formal grievance.",
+    "example_ka": "ოფიციალური საჩივარი შეიტანე.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "hierarchy",
+    "georgian": "იერარქია",
+    "pronunciation": "/ˈhaɪərɑːrki/",
+    "example_en": "The corporate hierarchy is strict.",
+    "example_ka": "კორპორატიული იერარქია მკაცრია.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "incentive",
+    "georgian": "სტიმული",
+    "pronunciation": "/ɪnˈsentɪv/",
+    "example_en": "Bonuses are great incentives.",
+    "example_ka": "პრემიები შესანიშნავი სტიმულებია.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "jargon",
+    "georgian": "ჟარგონი",
+    "pronunciation": "/ˈdʒɑːrɡən/",
+    "example_en": "Avoid office jargon.",
+    "example_ka": "ოფისის ჟარგონს მოერიდე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "keynote",
+    "georgian": "ძირითადი გამოსვლა",
+    "pronunciation": "/ˈkiːnoʊt/",
+    "example_en": "She gave the keynote speech.",
+    "example_ka": "მან ძირითადი გამოსვლა წარმოთქვა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "layoff",
+    "georgian": "გათავისუფლება",
+    "pronunciation": "/ˈleɪɒf/",
+    "example_en": "Mass layoffs were announced.",
+    "example_ka": "მასობრივი გათავისუფლება გამოცხადდა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "liaison",
+    "georgian": "კავშირი",
+    "pronunciation": "/liˈeɪzɒn/",
+    "example_en": "She is the team liaison.",
+    "example_ka": "ის გუნდის კავშირია.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "memo",
+    "georgian": "მემორანდუმი",
+    "pronunciation": "/ˈmemoʊ/",
+    "example_en": "Read the office memo.",
+    "example_ka": "ოფისის მემორანდუმი წაიკითხე.",
+    "category": "office-workplace",
+    "level": "A2"
+  },
+  {
+    "english": "morale",
+    "georgian": "მორალი",
+    "pronunciation": "/məˈræl/",
+    "example_en": "Team morale is high.",
+    "example_ka": "გუნდის მორალი მაღალია.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "niche",
+    "georgian": "ნიშა",
+    "pronunciation": "/niːʃ/",
+    "example_en": "Find your niche at work.",
+    "example_ka": "სამსახურში შენი ნიშა იპოვე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "onboarding",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˈɒnbɔːrdɪŋ/",
+    "example_en": "The onboarding process is smooth.",
+    "example_ka": "ადაპტაციის პროცესი გლუვია.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "outsource",
+    "georgian": "აუთსორსინგი",
+    "pronunciation": "/ˈaʊtsɔːrs/",
+    "example_en": "They outsourced the work.",
+    "example_ka": "სამუშაო აუთსორსზე გაიტანეს.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "payroll",
+    "georgian": "სახელფასო",
+    "pronunciation": "/ˈpeɪroʊl/",
+    "example_en": "Payroll is processed monthly.",
+    "example_ka": "სახელფასო ყოველთვიურად დამუშავდება.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "probation",
+    "georgian": "გამოსაცდელი ვადა",
+    "pronunciation": "/proʊˈbeɪʃn/",
+    "example_en": "He is on probation.",
+    "example_ka": "ის გამოსაცდელ ვადაზეა.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "quota",
+    "georgian": "კვოტა",
+    "pronunciation": "/ˈkwoʊtə/",
+    "example_en": "Meet your sales quota.",
+    "example_ka": "გაყიდვების კვოტა შეასრულე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "redundancy",
+    "georgian": "რედუნდანტურობა",
+    "pronunciation": "/rɪˈdʌndənsi/",
+    "example_en": "She faced redundancy.",
+    "example_ka": "მას რედუნდანტურობა ემუქრებოდა.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "roster",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈrɒstər/",
+    "example_en": "Check the work roster.",
+    "example_ka": "სამუშაო განრიგი შეამოწმე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "sabbatical",
+    "georgian": "საბატიკალი",
+    "pronunciation": "/səˈbætɪkl/",
+    "example_en": "She took a sabbatical.",
+    "example_ka": "მან საბატიკალი აიღო.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "stakeholder",
+    "georgian": "დაინტერესებული მხარე",
+    "pronunciation": "/ˈsteɪkhoʊldər/",
+    "example_en": "Inform all stakeholders.",
+    "example_ka": "ყველა დაინტერესებულ მხარეს აცნობე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "stipend",
+    "georgian": "სტიპენდია",
+    "pronunciation": "/ˈstaɪpend/",
+    "example_en": "Interns receive a stipend.",
+    "example_ka": "სტაჟიორები სტიპენდიას იღებენ.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "subordinate",
+    "georgian": "ხელქვეით",
+    "pronunciation": "/səˈbɔːrdɪnət/",
+    "example_en": "He manages five subordinates.",
+    "example_ka": "ის ხუთ ხელქვეითს მართავს.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "synergy",
+    "georgian": "სინერგია",
+    "pronunciation": "/ˈsɪnərdʒi/",
+    "example_en": "Create team synergy.",
+    "example_ka": "გუნდის სინერგია შექმენი.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "tenure",
+    "georgian": "თანამდებობის ვადა",
+    "pronunciation": "/ˈtenjər/",
+    "example_en": "Her tenure lasted five years.",
+    "example_ka": "მისი თანამდებობის ვადა ხუთ წელს გაგრძელდა.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "turnover",
+    "georgian": "კადრების ცვლა",
+    "pronunciation": "/ˈtɜːrnoʊvər/",
+    "example_en": "High turnover is costly.",
+    "example_ka": "კადრების ხშირი ცვლა ძვირია.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "headcount",
+    "georgian": "პერსონალის რაოდენობა",
+    "pronunciation": "/ˈhedkaʊnt/",
+    "example_en": "What is the headcount?",
+    "example_ka": "პერსონალის რაოდენობა რამდენია?",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "benchmark",
+    "georgian": "ნიშნული",
+    "pronunciation": "/ˈbentʃmɑːrk/",
+    "example_en": "Set a performance benchmark.",
+    "example_ka": "შესრულების ნიშნული დააყენე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "bottleneck",
+    "georgian": "შეფერხება",
+    "pronunciation": "/ˈbɒtlnek/",
+    "example_en": "Identify the bottleneck.",
+    "example_ka": "შეფერხება იპოვე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "backlog",
+    "georgian": "ნარჩენი სამუშაო",
+    "pronunciation": "/ˈbæklɒɡ/",
+    "example_en": "Clear the backlog.",
+    "example_ka": "ნარჩენი სამუშაო დაასრულე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "compliance",
+    "georgian": "შესაბამისობა",
+    "pronunciation": "/kəmˈplaɪəns/",
+    "example_en": "Ensure compliance.",
+    "example_ka": "შესაბამისობა უზრუნველყავი.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "escalate",
+    "georgian": "ესკალაცია",
+    "pronunciation": "/ˈeskəleɪt/",
+    "example_en": "Escalate the issue.",
+    "example_ka": "საკითხის ესკალაცია გააკეთე.",
+    "category": "office-workplace",
+    "level": "B1"
+  },
+  {
+    "english": "micromanage",
+    "georgian": "მიკრომენეჯმენტი",
+    "pronunciation": "/ˈmaɪkroʊmænɪdʒ/",
+    "example_en": "Don't micromanage your team.",
+    "example_ka": "გუნდს მიკრომენეჯმენტი ნუ გაუკეთებ.",
+    "category": "office-workplace",
+    "level": "B2"
+  },
+  {
+    "english": "pivot",
+    "georgian": "პივოტი",
+    "pronunciation": "/ˈpɪvət/",
+    "example_en": "We need to pivot our strategy.",
+    "example_ka": "სტრატეგიის პივოტი გვჭირდება.",
+    "category": "office-workplace",
+    "level": "B1"
+  }
 ]

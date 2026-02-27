@@ -1,62 +1,1637 @@
 [
-  {"english": "Airport", "georgian": "აეროპორტი", "pronunciation": "/ˈeərpɔːrt/", "example_en": "We arrived at the airport two hours early.", "example_ka": "აეროპორტში ორი საათით ადრე მივედით.", "category": "airport", "level": "A1"},
-  {"english": "Flight", "georgian": "ფრენა", "pronunciation": "/flaɪt/", "example_en": "Our flight departs at noon.", "example_ka": "ჩვენი ფრენა შუადღისას გადის.", "category": "airport", "level": "A1"},
-  {"english": "Passport", "georgian": "პასპორტი", "pronunciation": "/ˈpɑːspɔːrt/", "example_en": "Don't forget your passport.", "example_ka": "პასპორტი არ დაგავიწყდეს.", "category": "airport", "level": "A1"},
-  {"english": "Ticket", "georgian": "ბილეთი", "pronunciation": "/ˈtɪkɪt/", "example_en": "I bought a round-trip ticket.", "example_ka": "ორმხრივი ბილეთი ვიყიდე.", "category": "airport", "level": "A1"},
-  {"english": "Luggage", "georgian": "ბარგი", "pronunciation": "/ˈlʌɡɪdʒ/", "example_en": "Please collect your luggage at belt three.", "example_ka": "გთხოვთ, ბარგი მესამე ლენტიდან აიღოთ.", "category": "airport", "level": "A1"},
-  {"english": "Suitcase", "georgian": "ჩემოდანი", "pronunciation": "/ˈsuːtkeɪs/", "example_en": "My suitcase is very heavy.", "example_ka": "ჩემი ჩემოდანი ძალიან მძიმეა.", "category": "airport", "level": "A1"},
-  {"english": "Boarding pass", "georgian": "ჩასხდომის ბარათი", "pronunciation": "/ˈbɔːrdɪŋ pɑːs/", "example_en": "Show your boarding pass at the gate.", "example_ka": "ჩასხდომის ბარათი გეითზე წარადგინეთ.", "category": "airport", "level": "A1"},
-  {"english": "Gate", "georgian": "გეითი", "pronunciation": "/ɡeɪt/", "example_en": "Boarding at gate twelve.", "example_ka": "ჩასხდომა მეთორმეტე გეითზეა.", "category": "airport", "level": "A1"},
-  {"english": "Departure", "georgian": "გამგზავრება", "pronunciation": "/dɪˈpɑːrtʃər/", "example_en": "The departure time has changed.", "example_ka": "გამგზავრების დრო შეიცვალა.", "category": "airport", "level": "A1"},
-  {"english": "Arrival", "georgian": "ჩამოფრენა", "pronunciation": "/əˈraɪvəl/", "example_en": "Check the arrival screen for updates.", "example_ka": "განახლებისთვის ჩამოფრენის ტაბლოს მიაქციეთ ყურადღება.", "category": "airport", "level": "A1"},
-  {"english": "Check-in", "georgian": "რეგისტრაცია", "pronunciation": "/ˈtʃek ɪn/", "example_en": "Online check-in saves time.", "example_ka": "ონლაინ რეგისტრაცია დროს ზოგავს.", "category": "airport", "level": "A1"},
-  {"english": "Security", "georgian": "უსაფრთხოება", "pronunciation": "/sɪˈkjʊərəti/", "example_en": "Go through security before boarding.", "example_ka": "ჩასხდომამდე უსაფრთხოების კონტროლი გაიარეთ.", "category": "airport", "level": "A1"},
-  {"english": "Runway", "georgian": "ასაფრენ-დასაფრენი ზოლი", "pronunciation": "/ˈrʌnweɪ/", "example_en": "The plane is on the runway.", "example_ka": "თვითმფრინავი ასაფრენ-დასაფრენ ზოლზეა.", "category": "airport", "level": "A2"},
-  {"english": "Terminal", "georgian": "ტერმინალი", "pronunciation": "/ˈtɜːrmɪnəl/", "example_en": "We need to go to terminal two.", "example_ka": "მეორე ტერმინალში უნდა წავიდეთ.", "category": "airport", "level": "A1"},
-  {"english": "Pilot", "georgian": "პილოტი", "pronunciation": "/ˈpaɪlət/", "example_en": "The pilot announced turbulence ahead.", "example_ka": "პილოტმა წინმსწრები ტურბულენცია გამოაცხადა.", "category": "airport", "level": "A1"},
-  {"english": "Cabin crew", "georgian": "ბორტგამცილებლები", "pronunciation": "/ˈkæbɪn kruː/", "example_en": "The cabin crew was very friendly.", "example_ka": "ბორტგამცილებლები ძალიან მეგობრულები იყვნენ.", "category": "airport", "level": "A2"},
-  {"english": "Takeoff", "georgian": "აფრენა", "pronunciation": "/ˈteɪkɒf/", "example_en": "Please fasten your seatbelt for takeoff.", "example_ka": "გთხოვთ, აფრენისთვის ღვედი შეიკარით.", "category": "airport", "level": "A1"},
-  {"english": "Landing", "georgian": "დაფრენა", "pronunciation": "/ˈlændɪŋ/", "example_en": "We had a smooth landing.", "example_ka": "რბილი დაფრენა გვქონდა.", "category": "airport", "level": "A1"},
-  {"english": "Delay", "georgian": "დაგვიანება", "pronunciation": "/dɪˈleɪ/", "example_en": "The flight has a two-hour delay.", "example_ka": "ფრენას ორსაათიანი დაგვიანება აქვს.", "category": "airport", "level": "A1"},
-  {"english": "Cancelled", "georgian": "გაუქმებული", "pronunciation": "/ˈkænsəld/", "example_en": "Our flight was cancelled due to fog.", "example_ka": "ჩვენი ფრენა ნისლის გამო გაუქმდა.", "category": "airport", "level": "A2"},
-  {"english": "Baggage claim", "georgian": "ბარგის მიღება", "pronunciation": "/ˈbæɡɪdʒ kleɪm/", "example_en": "Head to baggage claim after landing.", "example_ka": "დაფრენის შემდეგ ბარგის მიღებისკენ გაემართეთ.", "category": "airport", "level": "A2"},
-  {"english": "Customs", "georgian": "საბაჟო", "pronunciation": "/ˈkʌstəmz/", "example_en": "You must declare items at customs.", "example_ka": "საბაჟოზე ნივთები უნდა დეკლარირდეს.", "category": "airport", "level": "A2"},
-  {"english": "Duty-free", "georgian": "დიუთი-ფრი", "pronunciation": "/ˌdjuːti ˈfriː/", "example_en": "I bought perfume at the duty-free shop.", "example_ka": "სუნამო დიუთი-ფრი მაღაზიაში ვიყიდე.", "category": "airport", "level": "A2"},
-  {"english": "Aisle seat", "georgian": "გასასვლელთან ადგილი", "pronunciation": "/aɪl siːt/", "example_en": "I prefer an aisle seat.", "example_ka": "გასასვლელთან ადგილს ვამჯობინებ.", "category": "airport", "level": "A2"},
-  {"english": "Window seat", "georgian": "ფანჯარასთან ადგილი", "pronunciation": "/ˈwɪndoʊ siːt/", "example_en": "Can I have a window seat?", "example_ka": "შეიძლება ფანჯარასთან ადგილი?", "category": "airport", "level": "A2"},
-  {"english": "Overhead bin", "georgian": "თავზე განთავსებული თარო", "pronunciation": "/ˈoʊvərhed bɪn/", "example_en": "Put your bag in the overhead bin.", "example_ka": "ჩანთა თავზე განთავსებულ თაროში დადეთ.", "category": "airport", "level": "A2"},
-  {"english": "Carry-on", "georgian": "ხელბარგი", "pronunciation": "/ˈkæri ɒn/", "example_en": "You are allowed one carry-on bag.", "example_ka": "ერთი ხელბარგის წაღება შეგიძლიათ.", "category": "airport", "level": "A2"},
-  {"english": "Turbulence", "georgian": "ტურბულენცია", "pronunciation": "/ˈtɜːrbjələns/", "example_en": "We experienced some turbulence.", "example_ka": "ტურბულენცია შეგვხვდა.", "category": "airport", "level": "A2"},
-  {"english": "Layover", "georgian": "გადაჯდომა", "pronunciation": "/ˈleɪoʊvər/", "example_en": "We have a three-hour layover in Istanbul.", "example_ka": "სამსაათიანი გადაჯდომა გვაქვს სტამბოლში.", "category": "airport", "level": "A2"},
-  {"english": "Connecting flight", "georgian": "დამაკავშირებელი ფრენა", "pronunciation": "/kəˈnektɪŋ flaɪt/", "example_en": "I almost missed my connecting flight.", "example_ka": "დამაკავშირებელ ფრენას თითქმის დავაგვიანე.", "category": "airport", "level": "A2"},
-  {"english": "Direct flight", "georgian": "პირდაპირი ფრენა", "pronunciation": "/dəˈrekt flaɪt/", "example_en": "A direct flight is more convenient.", "example_ka": "პირდაპირი ფრენა უფრო მოსახერხებელია.", "category": "airport", "level": "A2"},
-  {"english": "Boarding", "georgian": "ჩასხდომა", "pronunciation": "/ˈbɔːrdɪŋ/", "example_en": "Boarding will begin in ten minutes.", "example_ka": "ჩასხდომა ათ წუთში დაიწყება.", "category": "airport", "level": "A1"},
-  {"english": "Immigration", "georgian": "იმიგრაცია", "pronunciation": "/ˌɪmɪˈɡreɪʃən/", "example_en": "The immigration line was long.", "example_ka": "იმიგრაციის რიგი გრძელი იყო.", "category": "airport", "level": "A2"},
-  {"english": "Jet lag", "georgian": "ჯეტ ლაგი", "pronunciation": "/ˈdʒet læɡ/", "example_en": "I'm suffering from jet lag.", "example_ka": "ჯეტ ლაგისგან ვიტანჯები.", "category": "airport", "level": "A2"},
-  {"english": "Seatbelt", "georgian": "უსაფრთხოების ღვედი", "pronunciation": "/ˈsiːtbelt/", "example_en": "Please fasten your seatbelt.", "example_ka": "გთხოვთ, უსაფრთხოების ღვედი შეიკარით.", "category": "airport", "level": "A1"},
-  {"english": "Cockpit", "georgian": "კაბინა", "pronunciation": "/ˈkɒkpɪt/", "example_en": "The cockpit door must remain locked.", "example_ka": "კაბინის კარი დაკეტილი უნდა იყოს.", "category": "airport", "level": "B1"},
-  {"english": "Air traffic control", "georgian": "საჰაერო მოძრაობის მართვა", "pronunciation": "/eər ˈtræfɪk kənˈtroʊl/", "example_en": "Air traffic control cleared us for landing.", "example_ka": "საჰაერო მოძრაობის მართვამ დაფრენის ნებართვა მოგვცა.", "category": "airport", "level": "B1"},
-  {"english": "Altitude", "georgian": "სიმაღლე", "pronunciation": "/ˈæltɪtjuːd/", "example_en": "We are cruising at an altitude of 35,000 feet.", "example_ka": "35,000 ფუტის სიმაღლეზე ვფრინავთ.", "category": "airport", "level": "B1"},
-  {"english": "Emergency exit", "georgian": "საავარიო გასასვლელი", "pronunciation": "/ɪˈmɜːrdʒənsi ˈeksɪt/", "example_en": "Locate the nearest emergency exit.", "example_ka": "იპოვეთ უახლოესი საავარიო გასასვლელი.", "category": "airport", "level": "A2"},
-  {"english": "Life vest", "georgian": "სამაშველო ჟილეტი", "pronunciation": "/laɪf vest/", "example_en": "The life vest is under your seat.", "example_ka": "სამაშველო ჟილეტი სავარძლის ქვეშაა.", "category": "airport", "level": "A2"},
-  {"english": "Tray table", "georgian": "მაგიდა", "pronunciation": "/treɪ ˈteɪbəl/", "example_en": "Please fold your tray table for landing.", "example_ka": "გთხოვთ, დაფრენისთვის მაგიდა დაკეცოთ.", "category": "airport", "level": "A2"},
-  {"english": "Airplane", "georgian": "თვითმფრინავი", "pronunciation": "/ˈeərpleɪn/", "example_en": "The airplane is ready for departure.", "example_ka": "თვითმფრინავი გამგზავრებისთვის მზადაა.", "category": "airport", "level": "A1"},
-  {"english": "Control tower", "georgian": "სადისპეტჩერო კოშკი", "pronunciation": "/kənˈtroʊl ˈtaʊər/", "example_en": "The control tower gave permission to land.", "example_ka": "სადისპეტჩერო კოშკმა დაფრენის ნებართვა გასცა.", "category": "airport", "level": "B1"},
-  {"english": "First class", "georgian": "პირველი კლასი", "pronunciation": "/fɜːrst klɑːs/", "example_en": "She always flies first class.", "example_ka": "ის ყოველთვის პირველი კლასით დაფრინავს.", "category": "airport", "level": "A2"},
-  {"english": "Economy class", "georgian": "ეკონომ კლასი", "pronunciation": "/ɪˈkɒnəmi klɑːs/", "example_en": "Economy class tickets are cheaper.", "example_ka": "ეკონომ კლასის ბილეთები უფრო იაფია.", "category": "airport", "level": "A2"},
-  {"english": "Boarding time", "georgian": "ჩასხდომის დრო", "pronunciation": "/ˈbɔːrdɪŋ taɪm/", "example_en": "What is the boarding time?", "example_ka": "რა დროსაა ჩასხდომა?", "category": "airport", "level": "A1"},
-  {"english": "Round trip", "georgian": "ორმხრივი მგზავრობა", "pronunciation": "/raʊnd trɪp/", "example_en": "A round trip is usually cheaper.", "example_ka": "ორმხრივი მგზავრობა ჩვეულებრივ უფრო იაფია.", "category": "airport", "level": "A2"},
-  {"english": "One-way", "georgian": "ცალმხრივი", "pronunciation": "/wʌn weɪ/", "example_en": "I booked a one-way ticket.", "example_ka": "ცალმხრივი ბილეთი დავჯავშნე.", "category": "airport", "level": "A2"},
-  {"english": "Visa", "georgian": "ვიზა", "pronunciation": "/ˈviːzə/", "example_en": "Do I need a visa for this country?", "example_ka": "ამ ქვეყნისთვის ვიზა მჭირდება?", "category": "airport", "level": "A1"},
-  {"english": "Declaration form", "georgian": "დეკლარაციის ფორმა", "pronunciation": "/ˌdekləˈreɪʃən fɔːrm/", "example_en": "Fill out the declaration form before landing.", "example_ka": "დაფრენამდე დეკლარაციის ფორმა შეავსეთ.", "category": "airport", "level": "B1"},
-  {"english": "Hangar", "georgian": "ანგარი", "pronunciation": "/ˈhæŋər/", "example_en": "The plane is stored in the hangar.", "example_ka": "თვითმფრინავი ანგარში დგას.", "category": "airport", "level": "B1"},
-  {"english": "Fuselage", "georgian": "ფიუზელაჟი", "pronunciation": "/ˈfjuːzəlɑːʒ/", "example_en": "The fuselage was damaged in the storm.", "example_ka": "ფიუზელაჟი ქარიშხალში დაზიანდა.", "category": "airport", "level": "B1"},
-  {"english": "Propeller", "georgian": "პროპელერი", "pronunciation": "/prəˈpelər/", "example_en": "The propeller started spinning.", "example_ka": "პროპელერი ბრუნვას დაიწყო.", "category": "airport", "level": "B1"},
-  {"english": "In-flight meal", "georgian": "ბორტზე კვება", "pronunciation": "/ɪn flaɪt miːl/", "example_en": "The in-flight meal was delicious.", "example_ka": "ბორტზე კვება გემრიელი იყო.", "category": "airport", "level": "A2"},
-  {"english": "Departure lounge", "georgian": "გამგზავრების დარბაზი", "pronunciation": "/dɪˈpɑːrtʃər laʊndʒ/", "example_en": "Wait in the departure lounge.", "example_ka": "გამგზავრების დარბაზში დაელოდეთ.", "category": "airport", "level": "A2"},
-  {"english": "Taxi (verb)", "georgian": "რულირება", "pronunciation": "/ˈtæksi/", "example_en": "The plane taxied to the runway.", "example_ka": "თვითმფრინავმა ასაფრენ ზოლამდე რულირება მოახდინა.", "category": "airport", "level": "B1"},
-  {"english": "Cabin", "georgian": "სალონი", "pronunciation": "/ˈkæbɪn/", "example_en": "The cabin pressure is maintained automatically.", "example_ka": "სალონში წნევა ავტომატურად რეგულირდება.", "category": "airport", "level": "A2"},
-  {"english": "Checked bag", "georgian": "ჩაბარებული ბარგი", "pronunciation": "/tʃekt bæɡ/", "example_en": "You can have one checked bag for free.", "example_ka": "ერთი ჩაბარებული ბარგი უფასოა.", "category": "airport", "level": "A2"},
-  {"english": "Baggage tag", "georgian": "ბარგის ნომერი", "pronunciation": "/ˈbæɡɪdʒ tæɡ/", "example_en": "Keep your baggage tag safe.", "example_ka": "ბარგის ნომერი შეინახეთ.", "category": "airport", "level": "A2"},
-  {"english": "Metal detector", "georgian": "ლითონის დეტექტორი", "pronunciation": "/ˈmetəl dɪˈtektər/", "example_en": "Walk through the metal detector.", "example_ka": "ლითონის დეტექტორში გაიარეთ.", "category": "airport", "level": "A2"}
+  {
+    "english": "Airport",
+    "georgian": "აეროპორტი",
+    "pronunciation": "/ˈeərpɔːrt/",
+    "example_en": "We arrived at the airport two hours early.",
+    "example_ka": "აეროპორტში ორი საათით ადრე მივედით.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Flight",
+    "georgian": "ფრენა",
+    "pronunciation": "/flaɪt/",
+    "example_en": "Our flight departs at noon.",
+    "example_ka": "ჩვენი ფრენა შუადღისას გადის.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Passport",
+    "georgian": "პასპორტი",
+    "pronunciation": "/ˈpɑːspɔːrt/",
+    "example_en": "Don't forget your passport.",
+    "example_ka": "პასპორტი არ დაგავიწყდეს.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Ticket",
+    "georgian": "ბილეთი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "I bought a round-trip ticket.",
+    "example_ka": "ორმხრივი ბილეთი ვიყიდე.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Luggage",
+    "georgian": "ბარგი",
+    "pronunciation": "/ˈlʌɡɪdʒ/",
+    "example_en": "Please collect your luggage at belt three.",
+    "example_ka": "გთხოვთ, ბარგი მესამე ლენტიდან აიღოთ.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Suitcase",
+    "georgian": "ჩემოდანი",
+    "pronunciation": "/ˈsuːtkeɪs/",
+    "example_en": "My suitcase is very heavy.",
+    "example_ka": "ჩემი ჩემოდანი ძალიან მძიმეა.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Gate",
+    "georgian": "გეითი",
+    "pronunciation": "/ɡeɪt/",
+    "example_en": "Boarding at gate twelve.",
+    "example_ka": "ჩასხდომა მეთორმეტე გეითზეა.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Departure",
+    "georgian": "გამგზავრება",
+    "pronunciation": "/dɪˈpɑːrtʃər/",
+    "example_en": "The departure time has changed.",
+    "example_ka": "გამგზავრების დრო შეიცვალა.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Arrival",
+    "georgian": "ჩამოფრენა",
+    "pronunciation": "/əˈraɪvəl/",
+    "example_en": "Check the arrival screen for updates.",
+    "example_ka": "განახლებისთვის ჩამოფრენის ტაბლოს მიაქციეთ ყურადღება.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Check-in",
+    "georgian": "რეგისტრაცია",
+    "pronunciation": "/ˈtʃek ɪn/",
+    "example_en": "Online check-in saves time.",
+    "example_ka": "ონლაინ რეგისტრაცია დროს ზოგავს.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊərəti/",
+    "example_en": "Go through security before boarding.",
+    "example_ka": "ჩასხდომამდე უსაფრთხოების კონტროლი გაიარეთ.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Runway",
+    "georgian": "ასაფრენ-დასაფრენი ზოლი",
+    "pronunciation": "/ˈrʌnweɪ/",
+    "example_en": "The plane is on the runway.",
+    "example_ka": "თვითმფრინავი ასაფრენ-დასაფრენ ზოლზეა.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Terminal",
+    "georgian": "ტერმინალი",
+    "pronunciation": "/ˈtɜːrmɪnəl/",
+    "example_en": "We need to go to terminal two.",
+    "example_ka": "მეორე ტერმინალში უნდა წავიდეთ.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Pilot",
+    "georgian": "პილოტი",
+    "pronunciation": "/ˈpaɪlət/",
+    "example_en": "The pilot announced turbulence ahead.",
+    "example_ka": "პილოტმა წინმსწრები ტურბულენცია გამოაცხადა.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Takeoff",
+    "georgian": "აფრენა",
+    "pronunciation": "/ˈteɪkɒf/",
+    "example_en": "Please fasten your seatbelt for takeoff.",
+    "example_ka": "გთხოვთ, აფრენისთვის ღვედი შეიკარით.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Landing",
+    "georgian": "დაფრენა",
+    "pronunciation": "/ˈlændɪŋ/",
+    "example_en": "We had a smooth landing.",
+    "example_ka": "რბილი დაფრენა გვქონდა.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Delay",
+    "georgian": "დაგვიანება",
+    "pronunciation": "/dɪˈleɪ/",
+    "example_en": "The flight has a two-hour delay.",
+    "example_ka": "ფრენას ორსაათიანი დაგვიანება აქვს.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Cancelled",
+    "georgian": "გაუქმებული",
+    "pronunciation": "/ˈkænsəld/",
+    "example_en": "Our flight was cancelled due to fog.",
+    "example_ka": "ჩვენი ფრენა ნისლის გამო გაუქმდა.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Customs",
+    "georgian": "საბაჟო",
+    "pronunciation": "/ˈkʌstəmz/",
+    "example_en": "You must declare items at customs.",
+    "example_ka": "საბაჟოზე ნივთები უნდა დეკლარირდეს.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Duty-free",
+    "georgian": "დიუთი-ფრი",
+    "pronunciation": "/ˌdjuːti ˈfriː/",
+    "example_en": "I bought perfume at the duty-free shop.",
+    "example_ka": "სუნამო დიუთი-ფრი მაღაზიაში ვიყიდე.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Carry-on",
+    "georgian": "ხელბარგი",
+    "pronunciation": "/ˈkæri ɒn/",
+    "example_en": "You are allowed one carry-on bag.",
+    "example_ka": "ერთი ხელბარგის წაღება შეგიძლიათ.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Turbulence",
+    "georgian": "ტურბულენცია",
+    "pronunciation": "/ˈtɜːrbjələns/",
+    "example_en": "We experienced some turbulence.",
+    "example_ka": "ტურბულენცია შეგვხვდა.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Layover",
+    "georgian": "გადაჯდომა",
+    "pronunciation": "/ˈleɪoʊvər/",
+    "example_en": "We have a three-hour layover in Istanbul.",
+    "example_ka": "სამსაათიანი გადაჯდომა გვაქვს სტამბოლში.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Boarding",
+    "georgian": "ჩასხდომა",
+    "pronunciation": "/ˈbɔːrdɪŋ/",
+    "example_en": "Boarding will begin in ten minutes.",
+    "example_ka": "ჩასხდომა ათ წუთში დაიწყება.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Immigration",
+    "georgian": "იმიგრაცია",
+    "pronunciation": "/ˌɪmɪˈɡreɪʃən/",
+    "example_en": "The immigration line was long.",
+    "example_ka": "იმიგრაციის რიგი გრძელი იყო.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Seatbelt",
+    "georgian": "უსაფრთხოების ღვედი",
+    "pronunciation": "/ˈsiːtbelt/",
+    "example_en": "Please fasten your seatbelt.",
+    "example_ka": "გთხოვთ, უსაფრთხოების ღვედი შეიკარით.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Cockpit",
+    "georgian": "კაბინა",
+    "pronunciation": "/ˈkɒkpɪt/",
+    "example_en": "The cockpit door must remain locked.",
+    "example_ka": "კაბინის კარი დაკეტილი უნდა იყოს.",
+    "category": "airport",
+    "level": "B1"
+  },
+  {
+    "english": "Altitude",
+    "georgian": "სიმაღლე",
+    "pronunciation": "/ˈæltɪtjuːd/",
+    "example_en": "We are cruising at an altitude of 35,000 feet.",
+    "example_ka": "35,000 ფუტის სიმაღლეზე ვფრინავთ.",
+    "category": "airport",
+    "level": "B1"
+  },
+  {
+    "english": "Airplane",
+    "georgian": "თვითმფრინავი",
+    "pronunciation": "/ˈeərpleɪn/",
+    "example_en": "The airplane is ready for departure.",
+    "example_ka": "თვითმფრინავი გამგზავრებისთვის მზადაა.",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "One-way",
+    "georgian": "ცალმხრივი",
+    "pronunciation": "/wʌn weɪ/",
+    "example_en": "I booked a one-way ticket.",
+    "example_ka": "ცალმხრივი ბილეთი დავჯავშნე.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Visa",
+    "georgian": "ვიზა",
+    "pronunciation": "/ˈviːzə/",
+    "example_en": "Do I need a visa for this country?",
+    "example_ka": "ამ ქვეყნისთვის ვიზა მჭირდება?",
+    "category": "airport",
+    "level": "A1"
+  },
+  {
+    "english": "Hangar",
+    "georgian": "ანგარი",
+    "pronunciation": "/ˈhæŋər/",
+    "example_en": "The plane is stored in the hangar.",
+    "example_ka": "თვითმფრინავი ანგარში დგას.",
+    "category": "airport",
+    "level": "B1"
+  },
+  {
+    "english": "Fuselage",
+    "georgian": "ფიუზელაჟი",
+    "pronunciation": "/ˈfjuːzəlɑːʒ/",
+    "example_en": "The fuselage was damaged in the storm.",
+    "example_ka": "ფიუზელაჟი ქარიშხალში დაზიანდა.",
+    "category": "airport",
+    "level": "B1"
+  },
+  {
+    "english": "Propeller",
+    "georgian": "პროპელერი",
+    "pronunciation": "/prəˈpelər/",
+    "example_en": "The propeller started spinning.",
+    "example_ka": "პროპელერი ბრუნვას დაიწყო.",
+    "category": "airport",
+    "level": "B1"
+  },
+  {
+    "english": "Cabin",
+    "georgian": "სალონი",
+    "pronunciation": "/ˈkæbɪn/",
+    "example_en": "The cabin pressure is maintained automatically.",
+    "example_ka": "სალონში წნევა ავტომატურად რეგულირდება.",
+    "category": "airport",
+    "level": "A2"
+  },
+  {
+    "english": "Aisle",
+    "georgian": "გასასვლელი",
+    "pronunciation": "/aɪl/",
+    "example_en": "I prefer an aisle seat.",
+    "example_ka": "გასასვლელთან ადგილი მირჩევნია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "Can I have a window seat?",
+    "example_ka": "ფანჯარასთან ადგილი შეიძლება?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Overhead",
+    "georgian": "თავზე",
+    "pronunciation": "/ˌoʊvərˈhed/",
+    "example_en": "Put your bag in the overhead bin.",
+    "example_ka": "ჩანთა თავზე განყოფილებაში დადეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Crew",
+    "georgian": "ეკიპაჟი",
+    "pronunciation": "/kruː/",
+    "example_en": "The crew was very friendly.",
+    "example_ka": "ეკიპაჟი ძალიან მეგობრული იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Stewardess",
+    "georgian": "სტიუარდესა",
+    "pronunciation": "/ˈstjuːərdəs/",
+    "example_en": "The stewardess served drinks.",
+    "example_ka": "სტიუარდესამ სასმელები მოგვიტანა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Copilot",
+    "georgian": "მეორე პილოტი",
+    "pronunciation": "/ˈkoʊpaɪlət/",
+    "example_en": "The copilot assisted with landing.",
+    "example_ka": "მეორე პილოტმა დაფრენაში დაეხმარა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Helicopter",
+    "georgian": "ვერტმფრენი",
+    "pronunciation": "/ˈhelɪkɒptər/",
+    "example_en": "A helicopter landed on the roof.",
+    "example_ka": "ვერტმფრენი სახურავზე დაეშვა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Jet",
+    "georgian": "რეაქტიული თვითმფრინავი",
+    "pronunciation": "/dʒet/",
+    "example_en": "The private jet was luxurious.",
+    "example_ka": "კერძო რეაქტიული თვითმფრინავი ფუფუნებით იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Engine",
+    "georgian": "ძრავა",
+    "pronunciation": "/ˈendʒɪn/",
+    "example_en": "The engine is very powerful.",
+    "example_ka": "ძრავა ძალიან ძლიერია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Wing",
+    "georgian": "ფრთა",
+    "pronunciation": "/wɪŋ/",
+    "example_en": "I could see the wing from my seat.",
+    "example_ka": "ჩემი ადგილიდან ფრთა ჩანდა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Tail",
+    "georgian": "კუდი",
+    "pronunciation": "/teɪl/",
+    "example_en": "The airline logo is on the tail.",
+    "example_ka": "ავიაკომპანიის ლოგო კუდზეა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Tray",
+    "georgian": "მაგიდა",
+    "pronunciation": "/treɪ/",
+    "example_en": "Please fold up your tray table.",
+    "example_ka": "გთხოვთ, მაგიდა აკეცოთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkɪt/",
+    "example_en": "May I have a blanket please?",
+    "example_ka": "შეიძლება საბანი მომცეთ?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Headphones",
+    "georgian": "ყურსასმენი",
+    "pronunciation": "/ˈhedfəʊnz/",
+    "example_en": "Headphones are provided on board.",
+    "example_ka": "ყურსასმენი ბორტზე გაიცემა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Announcement",
+    "georgian": "განცხადება",
+    "pronunciation": "/əˈnaʊnsmənt/",
+    "example_en": "Listen to the announcement.",
+    "example_ka": "განცხადებას მოუსმინეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Baggage",
+    "georgian": "ბარგი",
+    "pronunciation": "/ˈbæɡɪdʒ/",
+    "example_en": "Baggage claim is downstairs.",
+    "example_ka": "ბარგის მიღება ქვედა სართულზეა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Carousel",
+    "georgian": "კარუსელი",
+    "pronunciation": "/ˌkærəˈsel/",
+    "example_en": "Wait at the baggage carousel.",
+    "example_ka": "ბარგის კარუსელთან დაელოდეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Belt",
+    "georgian": "ლენტი",
+    "pronunciation": "/belt/",
+    "example_en": "Your bag is on belt number four.",
+    "example_ka": "თქვენი ჩანთა მეოთხე ლენტაზეა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Tag",
+    "georgian": "ბირკა",
+    "pronunciation": "/tæɡ/",
+    "example_en": "Attach a tag to your luggage.",
+    "example_ka": "ბარგზე ბირკა მიამაგრეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Scale",
+    "georgian": "სასწორი",
+    "pronunciation": "/skeɪl/",
+    "example_en": "Put your bag on the scale.",
+    "example_ka": "ჩანთა სასწორზე დადეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Weight",
+    "georgian": "წონა",
+    "pronunciation": "/weɪt/",
+    "example_en": "The weight limit is 23 kilograms.",
+    "example_ka": "წონის ლიმიტი 23 კილოგრამია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Overweight",
+    "georgian": "ზედმეტი წონა",
+    "pronunciation": "/ˌoʊvərˈweɪt/",
+    "example_en": "Your bag is overweight.",
+    "example_ka": "თქვენი ჩანთა ზედმეტი წონისაა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Counter",
+    "georgian": "მრიცხველი",
+    "pronunciation": "/ˈkaʊntər/",
+    "example_en": "Go to the check-in counter.",
+    "example_ka": "რეგისტრაციის დახლთან მიდით.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Lounge",
+    "georgian": "დარბაზი",
+    "pronunciation": "/laʊndʒ/",
+    "example_en": "We relaxed in the airport lounge.",
+    "example_ka": "აეროპორტის დარბაზში დავისვენეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Queue",
+    "georgian": "რიგი",
+    "pronunciation": "/kjuː/",
+    "example_en": "The queue at security was long.",
+    "example_ka": "უსაფრთხოების რიგი გრძელი იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Scanner",
+    "georgian": "სკანერი",
+    "pronunciation": "/ˈskænər/",
+    "example_en": "Put your items through the scanner.",
+    "example_ka": "ნივთები სკანერში გაატარეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "X-ray",
+    "georgian": "რენტგენი",
+    "pronunciation": "/ˈeksreɪ/",
+    "example_en": "Your bag will go through the X-ray.",
+    "example_ka": "თქვენი ჩანთა რენტგენს გაივლის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Metal",
+    "georgian": "ლითონი",
+    "pronunciation": "/ˈmetəl/",
+    "example_en": "Remove all metal objects.",
+    "example_ka": "ყველა ლითონის ნივთი მოიხსენით.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Detector",
+    "georgian": "დეტექტორი",
+    "pronunciation": "/dɪˈtektər/",
+    "example_en": "Walk through the metal detector.",
+    "example_ka": "ლითონის დეტექტორში გაიარეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Prohibited",
+    "georgian": "აკრძალული",
+    "pronunciation": "/prəˈhɪbɪtɪd/",
+    "example_en": "Liquids over 100ml are prohibited.",
+    "example_ka": "100 მლ-ზე მეტი სითხე აკრძალულია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Liquid",
+    "georgian": "სითხე",
+    "pronunciation": "/ˈlɪkwɪd/",
+    "example_en": "Pack liquids in a clear bag.",
+    "example_ka": "სითხეები გამჭვირვალე ჩანთაში ჩადეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Boarding pass",
+    "georgian": "ჩასხდომის ბარათი",
+    "pronunciation": "/ˈbɔːrdɪŋ pɑːs/",
+    "example_en": "Show your boarding pass at the gate.",
+    "example_ka": "გეითზე ჩასხდომის ბარათი აჩვენეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Destination",
+    "georgian": "დანიშნულების ადგილი",
+    "pronunciation": "/ˌdestɪˈneɪʃən/",
+    "example_en": "What is your final destination?",
+    "example_ka": "რა არის თქვენი საბოლოო დანიშნულების ადგილი?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Direct",
+    "georgian": "პირდაპირი",
+    "pronunciation": "/dəˈrekt/",
+    "example_en": "Is this a direct flight?",
+    "example_ka": "ეს პირდაპირი ფრენაა?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Domestic",
+    "georgian": "შიდა",
+    "pronunciation": "/dəˈmestɪk/",
+    "example_en": "Domestic flights are cheaper.",
+    "example_ka": "შიდა ფრენები უფრო იაფია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "International",
+    "georgian": "საერთაშორისო",
+    "pronunciation": "/ˌɪntərˈnæʃənəl/",
+    "example_en": "The international terminal is larger.",
+    "example_ka": "საერთაშორისო ტერმინალი უფრო დიდია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Connecting",
+    "georgian": "დამაკავშირებელი",
+    "pronunciation": "/kəˈnektɪŋ/",
+    "example_en": "I have a connecting flight.",
+    "example_ka": "დამაკავშირებელი ფრენა მაქვს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Transfer",
+    "georgian": "ტრანსფერი",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "Follow signs for transfer passengers.",
+    "example_ka": "ტრანსფერის მგზავრებისთვის ნიშნებს მიჰყევით.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Round-trip",
+    "georgian": "ორმხრივი",
+    "pronunciation": "/raʊnd trɪp/",
+    "example_en": "A round-trip ticket costs less.",
+    "example_ka": "ორმხრივი ბილეთი ნაკლები ღირს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Refund",
+    "georgian": "თანხის დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "Can I get a refund for my ticket?",
+    "example_ka": "ბილეთის თანხის დაბრუნება შეიძლება?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Reservation",
+    "georgian": "დაჯავშნა",
+    "pronunciation": "/ˌrezərˈveɪʃən/",
+    "example_en": "I have a reservation for today.",
+    "example_ka": "დღეისთვის დაჯავშნა მაქვს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Itinerary",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/aɪˈtɪnəreri/",
+    "example_en": "Print your travel itinerary.",
+    "example_ka": "მოგზაურობის მარშრუტი ამობეჭდეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Stopover",
+    "georgian": "გაჩერება",
+    "pronunciation": "/ˈstɒpoʊvər/",
+    "example_en": "We had a stopover in Dubai.",
+    "example_ka": "დუბაიში გაჩერება გვქონდა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Nonstop",
+    "georgian": "უგაჩერებო",
+    "pronunciation": "/ˌnɒnˈstɒp/",
+    "example_en": "This is a nonstop flight.",
+    "example_ka": "ეს უგაჩერებო ფრენაა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Charter",
+    "georgian": "ჩარტერი",
+    "pronunciation": "/ˈtʃɑːrtər/",
+    "example_en": "We flew on a charter flight.",
+    "example_ka": "ჩარტერული ფრენით ვიფრინეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Economy",
+    "georgian": "ეკონომ",
+    "pronunciation": "/ɪˈkɒnəmi/",
+    "example_en": "I always fly economy class.",
+    "example_ka": "ყოველთვის ეკონომ კლასით დავფრინავ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Business",
+    "georgian": "ბიზნეს",
+    "pronunciation": "/ˈbɪznəs/",
+    "example_en": "Business class has more legroom.",
+    "example_ka": "ბიზნეს კლასში მეტი ფეხის ადგილია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "First class",
+    "georgian": "პირველი კლასი",
+    "pronunciation": "/fɜːrst klɑːs/",
+    "example_en": "First class tickets are expensive.",
+    "example_ka": "პირველი კლასის ბილეთები ძვირია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Upgrade",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/ˈʌpɡreɪd/",
+    "example_en": "I got an upgrade to business class.",
+    "example_ka": "ბიზნეს კლასში გადაყვანა მომცეს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Recline",
+    "georgian": "გადაწევა",
+    "pronunciation": "/rɪˈklaɪn/",
+    "example_en": "May I recline my seat?",
+    "example_ka": "შეიძლება სავარძელი გადავწიო?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Armrest",
+    "georgian": "სახელური",
+    "pronunciation": "/ˈɑːrmrest/",
+    "example_en": "Please share the armrest.",
+    "example_ka": "გთხოვთ, სახელური გაიყოთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Oxygen",
+    "georgian": "ჟანგბადი",
+    "pronunciation": "/ˈɒksɪdʒən/",
+    "example_en": "Oxygen masks will drop automatically.",
+    "example_ka": "ჟანგბადის ნიღბები ავტომატურად ჩამოვარდება.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Mask",
+    "georgian": "ნიღაბი",
+    "pronunciation": "/mɑːsk/",
+    "example_en": "Put on your oxygen mask first.",
+    "example_ka": "ჯერ თქვენი ჟანგბადის ნიღაბი დაიფარეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Emergency",
+    "georgian": "საგანგებო",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Find the nearest emergency exit.",
+    "example_ka": "უახლოესი საგანგებო გასასვლელი იპოვეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Exit",
+    "georgian": "გასასვლელი",
+    "pronunciation": "/ˈeksɪt/",
+    "example_en": "The exit is at the rear of the plane.",
+    "example_ka": "გასასვლელი თვითმფრინავის უკანაა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Vest",
+    "georgian": "ჟილეტი",
+    "pronunciation": "/vest/",
+    "example_en": "A life vest is under your seat.",
+    "example_ka": "სამაშველო ჟილეტი სავარძლის ქვეშაა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Inflate",
+    "georgian": "გაბერვა",
+    "pronunciation": "/ɪnˈfleɪt/",
+    "example_en": "Pull the tab to inflate the vest.",
+    "example_ka": "ჟილეტის გასაბერად ზოლი მოიწიეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Evacuate",
+    "georgian": "ევაკუაცია",
+    "pronunciation": "/ɪˈvækjueɪt/",
+    "example_en": "Passengers must evacuate quickly.",
+    "example_ka": "მგზავრებმა სწრაფად უნდა მოახდინონ ევაკუაცია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Crash",
+    "georgian": "კატასტროფა",
+    "pronunciation": "/kræʃ/",
+    "example_en": "The plane made a crash landing.",
+    "example_ka": "თვითმფრინავმა ავარიული დაშვება განახორციელა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Radar",
+    "georgian": "რადარი",
+    "pronunciation": "/ˈreɪdɑːr/",
+    "example_en": "The radar detected a storm.",
+    "example_ka": "რადარმა ქარიშხალი აღმოაჩინა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Control tower",
+    "georgian": "მართვის კოშკი",
+    "pronunciation": "/kənˈtroʊl taʊər/",
+    "example_en": "The control tower gave clearance.",
+    "example_ka": "მართვის კოშკმა ნებართვა გასცა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Taxiing",
+    "georgian": "რულირება",
+    "pronunciation": "/ˈtæksiɪŋ/",
+    "example_en": "The plane is taxiing to the gate.",
+    "example_ka": "თვითმფრინავი გეითისკენ რულირებს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Throttle",
+    "georgian": "საჭე",
+    "pronunciation": "/ˈθrɒtəl/",
+    "example_en": "The pilot pushed the throttle forward.",
+    "example_ka": "პილოტმა საჭე წინ მიწია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Autopilot",
+    "georgian": "ავტოპილოტი",
+    "pronunciation": "/ˈɔːtoʊpaɪlət/",
+    "example_en": "The autopilot was engaged.",
+    "example_ka": "ავტოპილოტი ჩართული იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Navigation",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˌnævɪˈɡeɪʃən/",
+    "example_en": "Navigation systems are very advanced.",
+    "example_ka": "ნავიგაციის სისტემები ძალიან განვითარებულია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Compass",
+    "georgian": "კომპასი",
+    "pronunciation": "/ˈkʌmpəs/",
+    "example_en": "Pilots still carry a compass.",
+    "example_ka": "პილოტები კომპასს კვლავ ატარებენ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Airspace",
+    "georgian": "საჰაერო სივრცე",
+    "pronunciation": "/ˈeərspeɪs/",
+    "example_en": "We entered foreign airspace.",
+    "example_ka": "უცხო ქვეყნის საჰაერო სივრცეში შევედით.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Route",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/ruːt/",
+    "example_en": "The flight route goes over the ocean.",
+    "example_ka": "ფრენის მარშრუტი ოკეანეზე გადის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Weather",
+    "georgian": "ამინდი",
+    "pronunciation": "/ˈweðər/",
+    "example_en": "Bad weather delayed the flight.",
+    "example_ka": "ცუდმა ამინდმა ფრენა დააგვიანა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Fog",
+    "georgian": "ნისლი",
+    "pronunciation": "/fɒɡ/",
+    "example_en": "Thick fog closed the airport.",
+    "example_ka": "სქელმა ნისლმა აეროპორტი დახურა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Storm",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/stɔːrm/",
+    "example_en": "The storm caused many cancellations.",
+    "example_ka": "ქარიშხალმა ბევრი გაუქმება გამოიწვია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Lightning",
+    "georgian": "ელვა",
+    "pronunciation": "/ˈlaɪtnɪŋ/",
+    "example_en": "Lightning struck near the runway.",
+    "example_ka": "ასაფრენი ზოლის მახლობლად ელვა დაეცა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Wind",
+    "georgian": "ქარი",
+    "pronunciation": "/wɪnd/",
+    "example_en": "Strong winds affected the landing.",
+    "example_ka": "ძლიერმა ქარმა დაფრენაზე იმოქმედა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Cloud",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/klaʊd/",
+    "example_en": "We flew above the clouds.",
+    "example_ka": "ღრუბლებს ზემოთ ვფრინავდით.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Horizon",
+    "georgian": "ჰორიზონტი",
+    "pronunciation": "/həˈraɪzən/",
+    "example_en": "The sun set on the horizon.",
+    "example_ka": "მზე ჰორიზონტზე ჩაესვენა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Skies",
+    "georgian": "ცა",
+    "pronunciation": "/skaɪz/",
+    "example_en": "The skies were clear for flying.",
+    "example_ka": "ცა ფრენისთვის ნათელი იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Airfare",
+    "georgian": "ავიაბილეთის ფასი",
+    "pronunciation": "/ˈeərfer/",
+    "example_en": "Airfare has increased this year.",
+    "example_ka": "ავიაბილეთის ფასი წელს გაიზარდა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Airline",
+    "georgian": "ავიაკომპანია",
+    "pronunciation": "/ˈeərlaɪn/",
+    "example_en": "Which airline are you flying with?",
+    "example_ka": "რომელი ავიაკომპანიით დაფრინავთ?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Passenger",
+    "georgian": "მგზავრი",
+    "pronunciation": "/ˈpæsɪndʒər/",
+    "example_en": "All passengers must board now.",
+    "example_ka": "ყველა მგზავრმა ახლა უნდა ჩაჯდეს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Crew member",
+    "georgian": "ეკიპაჟის წევრი",
+    "pronunciation": "/kruː ˈmembər/",
+    "example_en": "Ask a crew member for help.",
+    "example_ka": "დახმარებისთვის ეკიპაჟის წევრს მიმართეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Steward",
+    "georgian": "სტიუარდი",
+    "pronunciation": "/ˈstjuːərd/",
+    "example_en": "The steward served dinner.",
+    "example_ka": "სტიუარდმა სადილი მოგვიტანა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Captain",
+    "georgian": "კაპიტანი",
+    "pronunciation": "/ˈkæptɪn/",
+    "example_en": "The captain welcomed us aboard.",
+    "example_ka": "კაპიტანმა ბორტზე მოგვესალმა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Cockpit door",
+    "georgian": "კაბინის კარი",
+    "pronunciation": "/ˈkɒkpɪt dɔːr/",
+    "example_en": "The cockpit door is reinforced.",
+    "example_ka": "კაბინის კარი გამაგრებულია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Fuel",
+    "georgian": "საწვავი",
+    "pronunciation": "/fjuːəl/",
+    "example_en": "The plane needs to refuel.",
+    "example_ka": "თვითმფრინავს საწვავის შევსება სჭირდება.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Tank",
+    "georgian": "ავზი",
+    "pronunciation": "/tæŋk/",
+    "example_en": "The fuel tank is full.",
+    "example_ka": "საწვავის ავზი სავსეა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Cargo",
+    "georgian": "ტვირთი",
+    "pronunciation": "/ˈkɑːrɡoʊ/",
+    "example_en": "Cargo is loaded in the belly.",
+    "example_ka": "ტვირთი მუცელში იტვირთება.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Freight",
+    "georgian": "სატვირთო",
+    "pronunciation": "/freɪt/",
+    "example_en": "The freight plane carried goods.",
+    "example_ka": "სატვირთო თვითმფრინავმა საქონელი გადაიტანა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Cockpit window",
+    "georgian": "კაბინის ფანჯარა",
+    "pronunciation": "/ˈkɒkpɪt ˈwɪndoʊ/",
+    "example_en": "The cockpit window cracked.",
+    "example_ka": "კაბინის ფანჯარა დაიბზარა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Nose",
+    "georgian": "ცხვირი",
+    "pronunciation": "/noʊz/",
+    "example_en": "The nose of the plane is aerodynamic.",
+    "example_ka": "თვითმფრინავის ცხვირი აეროდინამიკურია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Gear",
+    "georgian": "შასი",
+    "pronunciation": "/ɡɪr/",
+    "example_en": "The landing gear is down.",
+    "example_ka": "სადესანტო შასი დაშვებულია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Flap",
+    "georgian": "ფარფალი",
+    "pronunciation": "/flæp/",
+    "example_en": "The flaps extended for landing.",
+    "example_ka": "ფარფლები დაფრენისთვის გაიშალა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Thrust",
+    "georgian": "ბიძგი",
+    "pronunciation": "/θrʌst/",
+    "example_en": "Maximum thrust for takeoff.",
+    "example_ka": "მაქსიმალური ბიძგი აფრენისთვის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Speed",
+    "georgian": "სიჩქარე",
+    "pronunciation": "/spiːd/",
+    "example_en": "The plane reached cruising speed.",
+    "example_ka": "თვითმფრინავმა კრეისერულ სიჩქარეს მიაღწია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Knot",
+    "georgian": "კვანძი",
+    "pronunciation": "/nɒt/",
+    "example_en": "The wind speed is fifty knots.",
+    "example_ka": "ქარის სიჩქარე ორმოცდაათი კვანძია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Mach",
+    "georgian": "მახი",
+    "pronunciation": "/mɑːk/",
+    "example_en": "Concorde flew at Mach two.",
+    "example_ka": "კონკორდი მახ ორით ფრინავდა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Pressurize",
+    "georgian": "ჰერმეტიზაცია",
+    "pronunciation": "/ˈpreʃəraɪz/",
+    "example_en": "The cabin is pressurized.",
+    "example_ka": "სალონი ჰერმეტიზებულია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Depressurize",
+    "georgian": "დეჰერმეტიზაცია",
+    "pronunciation": "/diːˈpreʃəraɪz/",
+    "example_en": "The cabin depressurized suddenly.",
+    "example_ka": "სალონი მოულოდნელად დეჰერმეტიზებული.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Oxygen tank",
+    "georgian": "ჟანგბადის ბალონი",
+    "pronunciation": "/ˈɒksɪdʒən tæŋk/",
+    "example_en": "The oxygen tank is in the overhead.",
+    "example_ka": "ჟანგბადის ბალონი თავზე განყოფილებაშია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Parachute",
+    "georgian": "პარაშუტი",
+    "pronunciation": "/ˈpærəʃuːt/",
+    "example_en": "Skydivers use parachutes.",
+    "example_ka": "პარაშუტისტები პარაშუტს იყენებენ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Skydive",
+    "georgian": "თავისუფალი ვარდნა",
+    "pronunciation": "/ˈskaɪdaɪv/",
+    "example_en": "I want to skydive someday.",
+    "example_ka": "ოდესმე თავისუფალი ვარდნა მინდა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Glider",
+    "georgian": "პლანერი",
+    "pronunciation": "/ˈɡlaɪdər/",
+    "example_en": "A glider has no engine.",
+    "example_ka": "პლანერს ძრავა არ აქვს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Biplane",
+    "georgian": "ბიპლანი",
+    "pronunciation": "/ˈbaɪpleɪn/",
+    "example_en": "The biplane did aerial tricks.",
+    "example_ka": "ბიპლანმა საჰაერო ტრიუკები გააკეთა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Handbag",
+    "georgian": "ხელჩანთა",
+    "pronunciation": "/ˈhændbæɡ/",
+    "example_en": "Keep your handbag with you.",
+    "example_ka": "ხელჩანთა თან იქონიეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Backpack",
+    "georgian": "ზურგჩანთა",
+    "pronunciation": "/ˈbækpæk/",
+    "example_en": "My backpack fits under the seat.",
+    "example_ka": "ჩემი ზურგჩანთა სავარძლის ქვეშ ეტევა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Trolley",
+    "georgian": "ურიკა",
+    "pronunciation": "/ˈtrɒli/",
+    "example_en": "I need a luggage trolley.",
+    "example_ka": "ბარგის ურიკა მჭირდება.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Conveyor",
+    "georgian": "კონვეიერი",
+    "pronunciation": "/kənˈveɪər/",
+    "example_en": "Bags arrive on the conveyor.",
+    "example_ka": "ჩანთები კონვეიერზე მოდის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Claim",
+    "georgian": "მიღება",
+    "pronunciation": "/kleɪm/",
+    "example_en": "Claim your luggage at belt two.",
+    "example_ka": "ბარგი მეორე ლენტაზე მიიღეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Lost",
+    "georgian": "დაკარგული",
+    "pronunciation": "/lɒst/",
+    "example_en": "My luggage is lost.",
+    "example_ka": "ჩემი ბარგი დაიკარგა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Found",
+    "georgian": "ნაპოვნი",
+    "pronunciation": "/faʊnd/",
+    "example_en": "Your bag has been found.",
+    "example_ka": "თქვენი ჩანთა იპოვეს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Declare",
+    "georgian": "დეკლარირება",
+    "pronunciation": "/dɪˈkler/",
+    "example_en": "Do you have anything to declare?",
+    "example_ka": "რამე გაქვთ სადეკლარაციო?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Inspection",
+    "georgian": "შემოწმება",
+    "pronunciation": "/ɪnˈspekʃən/",
+    "example_en": "Random inspections are normal.",
+    "example_ka": "შემთხვევითი შემოწმება ჩვეულებრივია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Quarantine",
+    "georgian": "კარანტინი",
+    "pronunciation": "/ˈkwɒrəntiːn/",
+    "example_en": "Some items require quarantine.",
+    "example_ka": "ზოგიერთ ნივთს კარანტინი სჭირდება.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Vaccination",
+    "georgian": "ვაქცინაცია",
+    "pronunciation": "/ˌvæksɪˈneɪʃən/",
+    "example_en": "Show your vaccination certificate.",
+    "example_ka": "ვაქცინაციის მოწმობა აჩვენეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Certificate",
+    "georgian": "მოწმობა",
+    "pronunciation": "/sərˈtɪfɪkət/",
+    "example_en": "Keep your certificate handy.",
+    "example_ka": "მოწმობა ხელთ იქონიეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Currency",
+    "georgian": "ვალუტა",
+    "pronunciation": "/ˈkʌrənsi/",
+    "example_en": "Exchange currency at the airport.",
+    "example_ka": "ვალუტა აეროპორტში გადაცვალეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Exchange",
+    "georgian": "გაცვლა",
+    "pronunciation": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "The exchange rate is good today.",
+    "example_ka": "გაცვლის კურსი დღეს კარგია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Taxi",
+    "georgian": "ტაქსი",
+    "pronunciation": "/ˈtæksi/",
+    "example_en": "Take a taxi from the airport.",
+    "example_ka": "აეროპორტიდან ტაქსით წადით.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Shuttle",
+    "georgian": "შატლი",
+    "pronunciation": "/ˈʃʌtəl/",
+    "example_en": "The hotel shuttle is free.",
+    "example_ka": "სასტუმროს შატლი უფასოა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Rental",
+    "georgian": "გაქირავება",
+    "pronunciation": "/ˈrentəl/",
+    "example_en": "I booked a rental car.",
+    "example_ka": "მანქანის გაქირავება დავჯავშნე.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Parking",
+    "georgian": "პარკინგი",
+    "pronunciation": "/ˈpɑːrkɪŋ/",
+    "example_en": "Airport parking is expensive.",
+    "example_ka": "აეროპორტის პარკინგი ძვირია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Snack",
+    "georgian": "საჭმელი",
+    "pronunciation": "/snæk/",
+    "example_en": "Would you like a snack?",
+    "example_ka": "საჭმელი გინდათ?",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Meal",
+    "georgian": "კვება",
+    "pronunciation": "/miːl/",
+    "example_en": "A meal is included on long flights.",
+    "example_ka": "გრძელ ფრენებზე კვება შედის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Beverage",
+    "georgian": "სასმელი",
+    "pronunciation": "/ˈbevərɪdʒ/",
+    "example_en": "Choose your beverage.",
+    "example_ka": "სასმელი აირჩიეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Turboprop",
+    "georgian": "ტურბოვინტური",
+    "pronunciation": "/ˈtɜːrboʊprɒp/",
+    "example_en": "We flew on a turboprop plane.",
+    "example_ka": "ტურბოვინტურით ვიფრინეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Biometric",
+    "georgian": "ბიომეტრიული",
+    "pronunciation": "/ˌbaɪoʊˈmetrɪk/",
+    "example_en": "Biometric passports are common now.",
+    "example_ka": "ბიომეტრიული პასპორტები ახლა გავრცელებულია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Fingerprint",
+    "georgian": "თითის ანაბეჭდი",
+    "pronunciation": "/ˈfɪŋɡərprɪnt/",
+    "example_en": "Scan your fingerprint at the gate.",
+    "example_ka": "გეითზე თითის ანაბეჭდი დაასკანერეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Retina",
+    "georgian": "ბადურა",
+    "pronunciation": "/ˈretɪnə/",
+    "example_en": "Retina scans are used for security.",
+    "example_ka": "ბადურის სკანირება უსაფრთხოებისთვის გამოიყენება.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Lavatory",
+    "georgian": "ტუალეტი",
+    "pronunciation": "/ˈlævətɔːri/",
+    "example_en": "The lavatory is occupied.",
+    "example_ka": "ტუალეტი დაკავებულია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Galley",
+    "georgian": "სამზარეულო",
+    "pronunciation": "/ˈɡæli/",
+    "example_en": "Meals are prepared in the galley.",
+    "example_ka": "კვება სამზარეულოში მზადდება.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Cabin crew",
+    "georgian": "სალონის ეკიპაჟი",
+    "pronunciation": "/ˈkæbɪn kruː/",
+    "example_en": "Cabin crew, prepare for landing.",
+    "example_ka": "სალონის ეკიპაჟო, დაფრენისთვის მოემზადეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Taxiway",
+    "georgian": "სარულირებო ბილიკი",
+    "pronunciation": "/ˈtæksiweɪ/",
+    "example_en": "The plane moved along the taxiway.",
+    "example_ka": "თვითმფრინავი სარულირებო ბილიკზე გადაადგილდა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Apron",
+    "georgian": "პერონი",
+    "pronunciation": "/ˈeɪprən/",
+    "example_en": "Planes are parked on the apron.",
+    "example_ka": "თვითმფრინავები პერონზე დგას.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Beacon",
+    "georgian": "მაშუქი",
+    "pronunciation": "/ˈbiːkən/",
+    "example_en": "The airport beacon guides pilots at night.",
+    "example_ka": "აეროპორტის მაშუქი ღამით პილოტებს უძღვის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Clearance",
+    "georgian": "ნებართვა",
+    "pronunciation": "/ˈklɪrəns/",
+    "example_en": "The pilot received clearance to land.",
+    "example_ka": "პილოტმა დაშვების ნებართვა მიიღო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Mayday",
+    "georgian": "მეიდეი",
+    "pronunciation": "/ˈmeɪdeɪ/",
+    "example_en": "The pilot called mayday.",
+    "example_ka": "პილოტმა მეიდეი გამოაცხადა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Crosswind",
+    "georgian": "გვერდითი ქარი",
+    "pronunciation": "/ˈkrɒswɪnd/",
+    "example_en": "Crosswinds made landing difficult.",
+    "example_ka": "გვერდითმა ქარმა დაფრენა გაართულა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Headwind",
+    "georgian": "საპირისპირო ქარი",
+    "pronunciation": "/ˈhedwɪnd/",
+    "example_en": "Headwinds slowed the flight.",
+    "example_ka": "საპირისპირო ქარმა ფრენა შეანელა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Tailwind",
+    "georgian": "ზურგის ქარი",
+    "pronunciation": "/ˈteɪlwɪnd/",
+    "example_en": "A tailwind helped us arrive early.",
+    "example_ka": "ზურგის ქარმა ადრე მოსვლაში დაგვეხმარა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Deice",
+    "georgian": "ყინულის მოცილება",
+    "pronunciation": "/diːˈaɪs/",
+    "example_en": "They need to deice the wings.",
+    "example_ka": "ფრთებიდან ყინულის მოცილება სჭირდებათ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Handrail",
+    "georgian": "მოაჯირი",
+    "pronunciation": "/ˈhændreɪl/",
+    "example_en": "Hold the handrail on the stairs.",
+    "example_ka": "კიბეზე მოაჯირს მოეჭიდეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Jetway",
+    "georgian": "ტელესკოპური ხიდი",
+    "pronunciation": "/ˈdʒetweɪ/",
+    "example_en": "Walk through the jetway to board.",
+    "example_ka": "ჩასხდომისთვის ტელესკოპურ ხიდში გაიარეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Stairway",
+    "georgian": "კიბე",
+    "pronunciation": "/ˈsterweɪ/",
+    "example_en": "Use the stairway to board the plane.",
+    "example_ka": "თვითმფრინავში ჩასასხდომად კიბე გამოიყენეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Runway lights",
+    "georgian": "ზოლის განათება",
+    "pronunciation": "/ˈrʌnweɪ laɪts/",
+    "example_en": "Runway lights guide the pilot.",
+    "example_ka": "ზოლის განათება პილოტს უძღვის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Windshield",
+    "georgian": "ქარსაცავი მინა",
+    "pronunciation": "/ˈwɪndʃiːld/",
+    "example_en": "The windshield was covered in ice.",
+    "example_ka": "ქარსაცავი მინა ყინულით იყო დაფარული.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Intercom",
+    "georgian": "ინტერკომი",
+    "pronunciation": "/ˈɪntərkɒm/",
+    "example_en": "The captain spoke on the intercom.",
+    "example_ka": "კაპიტანმა ინტერკომით ილაპარაკა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Turbine",
+    "georgian": "ტურბინა",
+    "pronunciation": "/ˈtɜːrbaɪn/",
+    "example_en": "The turbine generates thrust.",
+    "example_ka": "ტურბინა ბიძგს ქმნის.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Aileron",
+    "georgian": "ელერონი",
+    "pronunciation": "/ˈeɪlərɒn/",
+    "example_en": "Ailerons control the roll.",
+    "example_ka": "ელერონები გადახრას აკონტროლებს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Rudder",
+    "georgian": "საჭე",
+    "pronunciation": "/ˈrʌdər/",
+    "example_en": "The rudder controls direction.",
+    "example_ka": "საჭე მიმართულებას აკონტროლებს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Elevator",
+    "georgian": "რულის სიმაღლე",
+    "pronunciation": "/ˈelɪveɪtər/",
+    "example_en": "The elevator controls pitch.",
+    "example_ka": "სიმაღლის რული ტანგაჟს აკონტროლებს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Black box",
+    "georgian": "შავი ყუთი",
+    "pronunciation": "/blæk bɒks/",
+    "example_en": "The black box records flight data.",
+    "example_ka": "შავი ყუთი ფრენის მონაცემებს ჩაწერს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Descent",
+    "georgian": "დაშვება",
+    "pronunciation": "/dɪˈsent/",
+    "example_en": "We began our descent.",
+    "example_ka": "დაშვება დავიწყეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Ascent",
+    "georgian": "აღმასვლა",
+    "pronunciation": "/əˈsent/",
+    "example_en": "The ascent was smooth.",
+    "example_ka": "აღმასვლა მშვიდი იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Cruising",
+    "georgian": "კრეისერული",
+    "pronunciation": "/ˈkruːzɪŋ/",
+    "example_en": "We reached cruising altitude.",
+    "example_ka": "კრეისერულ სიმაღლეს მივაღწიეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Approach",
+    "georgian": "მიახლოება",
+    "pronunciation": "/əˈproʊtʃ/",
+    "example_en": "The plane is on final approach.",
+    "example_ka": "თვითმფრინავი საბოლოო მიახლოებაზეა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Touchdown",
+    "georgian": "მიწაზე შეხება",
+    "pronunciation": "/ˈtʌtʃdaʊn/",
+    "example_en": "Touchdown was perfectly smooth.",
+    "example_ka": "მიწაზე შეხება სრულყოფილად მშვიდი იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Taxistand",
+    "georgian": "ტაქსის გაჩერება",
+    "pronunciation": "/ˈtæksi stænd/",
+    "example_en": "The taxistand is outside arrivals.",
+    "example_ka": "ტაქსის გაჩერება ჩამოფრენის გარეთაა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Hangar door",
+    "georgian": "ანგარის კარი",
+    "pronunciation": "/ˈhæŋər dɔːr/",
+    "example_en": "The hangar door opened slowly.",
+    "example_ka": "ანგარის კარი ნელა გაიღო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Maintenance",
+    "georgian": "ტექნიკური მომსახურება",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "example_en": "The plane is under maintenance.",
+    "example_ka": "თვითმფრინავი ტექნიკურ მომსახურებაზეა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Inspection report",
+    "georgian": "შემოწმების ანგარიში",
+    "pronunciation": "/ɪnˈspekʃən rɪˈpɔːrt/",
+    "example_en": "The inspection report was clean.",
+    "example_ka": "შემოწმების ანგარიში სუფთა იყო.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Preflight",
+    "georgian": "წინასაფრენო",
+    "pronunciation": "/ˈpriːflaɪt/",
+    "example_en": "Complete the preflight checklist.",
+    "example_ka": "წინასაფრენო ჩამონათვალი შეავსეთ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Checklist",
+    "georgian": "ჩამონათვალი",
+    "pronunciation": "/ˈtʃeklɪst/",
+    "example_en": "The pilot reviewed the checklist.",
+    "example_ka": "პილოტმა ჩამონათვალი გადახედა.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Standby",
+    "georgian": "მოლოდინი",
+    "pronunciation": "/ˈstændbaɪ/",
+    "example_en": "We are on standby for the next flight.",
+    "example_ka": "შემდეგი ფრენისთვის მოლოდინში ვართ.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Overbooking",
+    "georgian": "ზედმეტად დაჯავშნა",
+    "pronunciation": "/ˌoʊvərˈbʊkɪŋ/",
+    "example_en": "Overbooking caused delays.",
+    "example_ka": "ზედმეტად დაჯავშნამ დაგვიანება გამოიწვია.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Bumped",
+    "georgian": "გადმოტვირთული",
+    "pronunciation": "/bʌmpt/",
+    "example_en": "I was bumped from my flight.",
+    "example_ka": "ფრენიდან გადმომტვირთეს.",
+    "category": "airport-flying"
+  },
+  {
+    "english": "Compensation",
+    "georgian": "კომპენსაცია",
+    "pronunciation": "/ˌkɒmpənˈseɪʃən/",
+    "example_en": "They offered compensation for the delay.",
+    "example_ka": "დაგვიანებისთვის კომპენსაცია შემოგვთავაზეს.",
+    "category": "airport-flying"
+  }
 ]

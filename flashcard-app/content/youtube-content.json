@@ -1,32 +1,1811 @@
 [
-  {"english":"subscriber","georgian":"გამომწერი","pronunciation":"/səbˈskraɪbər/","example_en":"I reached 1000 subscribers!","example_ka":"1000 გამომწერს მივაღწიე!","category":"youtube-content","level":"beginner"},
-  {"english":"upload","georgian":"ატვირთვა","pronunciation":"/ˈʌploʊd/","example_en":"I upload videos every week.","example_ka":"ვიდეოებს ყოველ კვირას ვტვირთავ.","category":"youtube-content","level":"beginner"},
-  {"english":"thumbnail","georgian":"თამბნეილი","pronunciation":"/ˈθʌmneɪl/","example_en":"A good thumbnail gets more clicks.","example_ka":"კარგი თამბნეილი მეტ კლიკს იღებს.","category":"youtube-content","level":"beginner"},
-  {"english":"algorithm","georgian":"ალგორითმი","pronunciation":"/ˈælɡərɪðəm/","example_en":"The algorithm decides what videos people see.","example_ka":"ალგორითმი წყვეტს ხალხი რა ვიდეოებს ნახავს.","category":"youtube-content","level":"intermediate"},
-  {"english":"monetize","georgian":"მონეტიზაცია","pronunciation":"/ˈmɒnɪtaɪz/","example_en":"You can monetize your channel with ads.","example_ka":"არხის მონეტიზაცია რეკლამებით შეგიძლია.","category":"youtube-content","level":"intermediate"},
-  {"english":"views","georgian":"ნახვები","pronunciation":"/vjuːz/","example_en":"This video got a million views.","example_ka":"ამ ვიდეომ მილიონი ნახვა მიიღო.","category":"youtube-content","level":"beginner"},
-  {"english":"trending","georgian":"ტრენდული","pronunciation":"/ˈtrendɪŋ/","example_en":"My video is trending on YouTube!","example_ka":"ჩემი ვიდეო YouTube-ზე ტრენდშია!","category":"youtube-content","level":"beginner"},
-  {"english":"edit","georgian":"მონტაჟი","pronunciation":"/ˈedɪt/","example_en":"I spent 3 hours editing this video.","example_ka":"ამ ვიდეოს მონტაჟში 3 საათი დავხარჯე.","category":"youtube-content","level":"beginner"},
-  {"english":"content creator","georgian":"კონტენტ მეიკერი","pronunciation":"/ˈkɒntent kriˈeɪtər/","example_en":"She is a full-time content creator.","example_ka":"ის სრული განაკვეთით კონტენტ მეიკერია.","category":"youtube-content","level":"beginner"},
-  {"english":"niche","georgian":"ნიშა","pronunciation":"/niːʃ/","example_en":"Find your niche and stick to it.","example_ka":"იპოვე შენი ნიშა და მიჰყევი.","category":"youtube-content","level":"intermediate"},
-  {"english":"engagement","georgian":"ჩართულობა","pronunciation":"/ɪnˈɡeɪdʒmənt/","example_en":"High engagement helps your channel grow.","example_ka":"მაღალი ჩართულობა არხის ზრდას ეხმარება.","category":"youtube-content","level":"intermediate"},
-  {"english":"livestream","georgian":"ლაივი","pronunciation":"/ˈlaɪvstriːm/","example_en":"I'm going live at 8 PM tonight.","example_ka":"დღეს საღამოს 8-ზე ლაივს ვიქნები.","category":"youtube-content","level":"beginner"},
-  {"english":"collab","georgian":"კოლაბორაცია","pronunciation":"/kəˈlæb/","example_en":"Let's do a collab on a video.","example_ka":"მოდი ვიდეოზე კოლაბი გავაკეთოთ.","category":"youtube-content","level":"beginner"},
-  {"english":"sponsor","georgian":"სპონსორი","pronunciation":"/ˈspɒnsər/","example_en":"I got my first brand sponsor!","example_ka":"პირველი ბრენდ სპონსორი მივიღე!","category":"youtube-content","level":"beginner"},
-  {"english":"click-through rate","georgian":"კლიკის მაჩვენებელი","pronunciation":"/klɪk θruː reɪt/","example_en":"Improve your click-through rate with better titles.","example_ka":"კლიკის მაჩვენებელი უკეთესი სათაურებით გააუმჯობესე.","category":"youtube-content","level":"advanced"},
-  {"english":"watch time","georgian":"ყურების დრო","pronunciation":"/wɒtʃ taɪm/","example_en":"Watch time is the most important metric.","example_ka":"ყურების დრო ყველაზე მნიშვნელოვანი მეტრიკაა.","category":"youtube-content","level":"intermediate"},
-  {"english":"copyright","georgian":"საავტორო უფლება","pronunciation":"/ˈkɒpiraɪt/","example_en":"Don't use copyrighted music.","example_ka":"საავტორო უფლებებით დაცული მუსიკა არ გამოიყენო.","category":"youtube-content","level":"intermediate"},
-  {"english":"analytics","georgian":"ანალიტიკა","pronunciation":"/ˌænəˈlɪtɪks/","example_en":"Check your analytics to see what works.","example_ka":"ანალიტიკას შეხედე რომ ნახო რა მუშაობს.","category":"youtube-content","level":"intermediate"},
-  {"english":"go viral","georgian":"გავირუსება","pronunciation":"/ɡoʊ ˈvaɪrəl/","example_en":"My video went viral overnight!","example_ka":"ჩემი ვიდეო ერთ ღამეში გავირუსდა!","category":"youtube-content","level":"beginner"},
-  {"english":"subscribe","georgian":"გამოწერა","pronunciation":"/səbˈskraɪb/","example_en":"Don't forget to subscribe and like.","example_ka":"არ დაგავიწყდეს გამოწერა და ლაიქი.","category":"youtube-content","level":"beginner"},
-  {"english":"notification bell","georgian":"შეტყობინების ზარი","pronunciation":"/ˌnoʊtɪfɪˈkeɪʃən bel/","example_en":"Hit the notification bell for updates.","example_ka":"სიახლეებისთვის შეტყობინების ზარს დააჭირე.","category":"youtube-content","level":"beginner"},
-  {"english":"affiliate link","georgian":"აფილიეტ ბმული","pronunciation":"/əˈfɪliət lɪŋk/","example_en":"Check the affiliate link in the description.","example_ka":"აღწერაში აფილიეტ ბმული ნახე.","category":"youtube-content","level":"intermediate"},
-  {"english":"description","georgian":"აღწერა","pronunciation":"/dɪˈskrɪpʃən/","example_en":"Put all links in the video description.","example_ka":"ყველა ბმული ვიდეოს აღწერაში ჩადე.","category":"youtube-content","level":"beginner"},
-  {"english":"playlist","georgian":"პლეილისტი","pronunciation":"/ˈpleɪlɪst/","example_en":"I created a playlist of all my tutorials.","example_ka":"ყველა ტუტორიალის პლეილისტი შევქმენი.","category":"youtube-content","level":"beginner"},
-  {"english":"faceless channel","georgian":"უსახო არხი","pronunciation":"/ˈfeɪsləs ˈtʃænəl/","example_en":"Faceless channels don't show the creator.","example_ka":"უსახო არხებში შემქმნელი არ ჩანს.","category":"youtube-content","level":"intermediate"},
-  {"english":"hook","georgian":"ჰუკი","pronunciation":"/hʊk/","example_en":"The first 3 seconds need a strong hook.","example_ka":"პირველ 3 წამს ძლიერი ჰუკი სჭირდება.","category":"youtube-content","level":"intermediate"},
-  {"english":"call to action","georgian":"მოწოდება","pronunciation":"/kɔːl tuː ˈækʃən/","example_en":"Always include a call to action.","example_ka":"ყოველთვის ჩართე მოწოდება მოქმედებისკენ.","category":"youtube-content","level":"intermediate"},
-  {"english":"caption","georgian":"სუბტიტრი","pronunciation":"/ˈkæpʃən/","example_en":"Add captions for accessibility.","example_ka":"ხელმისაწვდომობისთვის სუბტიტრები დაამატე.","category":"youtube-content","level":"beginner"},
-  {"english":"shorts","georgian":"შორთსი","pronunciation":"/ʃɔːrts/","example_en":"YouTube Shorts get more views than long videos.","example_ka":"YouTube შორთსი გრძელ ვიდეოებზე მეტ ნახვას იღებს.","category":"youtube-content","level":"beginner"},
-  {"english":"revenue","georgian":"შემოსავალი","pronunciation":"/ˈrevənjuː/","example_en":"My monthly revenue is growing.","example_ka":"ჩემი ყოველთვიური შემოსავალი იზრდება.","category":"youtube-content","level":"intermediate"}
+  {
+    "english": "subscriber",
+    "georgian": "გამომწერი",
+    "pronunciation": "/səbˈskraɪbər/",
+    "example_en": "I reached 1000 subscribers!",
+    "example_ka": "1000 გამომწერს მივაღწიე!",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ˈʌploʊd/",
+    "example_en": "I upload videos every week.",
+    "example_ka": "ვიდეოებს ყოველ კვირას ვტვირთავ.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "thumbnail",
+    "georgian": "თამბნეილი",
+    "pronunciation": "/ˈθʌmneɪl/",
+    "example_en": "A good thumbnail gets more clicks.",
+    "example_ka": "კარგი თამბნეილი მეტ კლიკს იღებს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "algorithm",
+    "georgian": "ალგორითმი",
+    "pronunciation": "/ˈælɡərɪðəm/",
+    "example_en": "The algorithm decides what videos people see.",
+    "example_ka": "ალგორითმი წყვეტს ხალხი რა ვიდეოებს ნახავს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "monetize",
+    "georgian": "მონეტიზაცია",
+    "pronunciation": "/ˈmɒnɪtaɪz/",
+    "example_en": "You can monetize your channel with ads.",
+    "example_ka": "არხის მონეტიზაცია რეკლამებით შეგიძლია.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "views",
+    "georgian": "ნახვები",
+    "pronunciation": "/vjuːz/",
+    "example_en": "This video got a million views.",
+    "example_ka": "ამ ვიდეომ მილიონი ნახვა მიიღო.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "trending",
+    "georgian": "ტრენდული",
+    "pronunciation": "/ˈtrendɪŋ/",
+    "example_en": "My video is trending on YouTube!",
+    "example_ka": "ჩემი ვიდეო YouTube-ზე ტრენდშია!",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "edit",
+    "georgian": "მონტაჟი",
+    "pronunciation": "/ˈedɪt/",
+    "example_en": "I spent 3 hours editing this video.",
+    "example_ka": "ამ ვიდეოს მონტაჟში 3 საათი დავხარჯე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "niche",
+    "georgian": "ნიშა",
+    "pronunciation": "/niːʃ/",
+    "example_en": "Find your niche and stick to it.",
+    "example_ka": "იპოვე შენი ნიშა და მიჰყევი.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "engagement",
+    "georgian": "ჩართულობა",
+    "pronunciation": "/ɪnˈɡeɪdʒmənt/",
+    "example_en": "High engagement helps your channel grow.",
+    "example_ka": "მაღალი ჩართულობა არხის ზრდას ეხმარება.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "livestream",
+    "georgian": "ლაივი",
+    "pronunciation": "/ˈlaɪvstriːm/",
+    "example_en": "I'm going live at 8 PM tonight.",
+    "example_ka": "დღეს საღამოს 8-ზე ლაივს ვიქნები.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "collab",
+    "georgian": "კოლაბორაცია",
+    "pronunciation": "/kəˈlæb/",
+    "example_en": "Let's do a collab on a video.",
+    "example_ka": "მოდი ვიდეოზე კოლაბი გავაკეთოთ.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "sponsor",
+    "georgian": "სპონსორი",
+    "pronunciation": "/ˈspɒnsər/",
+    "example_en": "I got my first brand sponsor!",
+    "example_ka": "პირველი ბრენდ სპონსორი მივიღე!",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "copyright",
+    "georgian": "საავტორო უფლება",
+    "pronunciation": "/ˈkɒpiraɪt/",
+    "example_en": "Don't use copyrighted music.",
+    "example_ka": "საავტორო უფლებებით დაცული მუსიკა არ გამოიყენო.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "analytics",
+    "georgian": "ანალიტიკა",
+    "pronunciation": "/ˌænəˈlɪtɪks/",
+    "example_en": "Check your analytics to see what works.",
+    "example_ka": "ანალიტიკას შეხედე რომ ნახო რა მუშაობს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Don't forget to subscribe and like.",
+    "example_ka": "არ დაგავიწყდეს გამოწერა და ლაიქი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "description",
+    "georgian": "აღწერა",
+    "pronunciation": "/dɪˈskrɪpʃən/",
+    "example_en": "Put all links in the video description.",
+    "example_ka": "ყველა ბმული ვიდეოს აღწერაში ჩადე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "playlist",
+    "georgian": "პლეილისტი",
+    "pronunciation": "/ˈpleɪlɪst/",
+    "example_en": "I created a playlist of all my tutorials.",
+    "example_ka": "ყველა ტუტორიალის პლეილისტი შევქმენი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "hook",
+    "georgian": "ჰუკი",
+    "pronunciation": "/hʊk/",
+    "example_en": "The first 3 seconds need a strong hook.",
+    "example_ka": "პირველ 3 წამს ძლიერი ჰუკი სჭირდება.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "caption",
+    "georgian": "სუბტიტრი",
+    "pronunciation": "/ˈkæpʃən/",
+    "example_en": "Add captions for accessibility.",
+    "example_ka": "ხელმისაწვდომობისთვის სუბტიტრები დაამატე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "shorts",
+    "georgian": "შორთსი",
+    "pronunciation": "/ʃɔːrts/",
+    "example_en": "YouTube Shorts get more views than long videos.",
+    "example_ka": "YouTube შორთსი გრძელ ვიდეოებზე მეტ ნახვას იღებს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "revenue",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈrevənjuː/",
+    "example_en": "My monthly revenue is growing.",
+    "example_ka": "ჩემი ყოველთვიური შემოსავალი იზრდება.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "channel",
+    "georgian": "არხი",
+    "pronunciation": "/ˈtʃænəl/",
+    "example_en": "My channel focuses on cooking videos.",
+    "example_ka": "ჩემი არხი საზრდელზე ვიდეოებზეა მიმართული.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "video",
+    "georgian": "ვიდეო",
+    "pronunciation": "/ˈvɪdioʊ/",
+    "example_en": "I posted a new video yesterday.",
+    "example_ka": "გუშინ ახალი ვიდეო ავტვირთე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "comment",
+    "georgian": "კომენტარი",
+    "pronunciation": "/ˈkɒment/",
+    "example_en": "Please leave a comment below.",
+    "example_ka": "გთხოვთ დატოვოთ კომენტარი ქვემოთ.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "like",
+    "georgian": "ლაიქი",
+    "pronunciation": "/laɪk/",
+    "example_en": "This video got 5000 likes.",
+    "example_ka": "ამ ვიდეომ 5000 ლაიქი მიიღო.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "creator",
+    "georgian": "შემქმნელი",
+    "pronunciation": "/kriˈeɪtər/",
+    "example_en": "She's a popular content creator.",
+    "example_ka": "ის პოპულარული კონტენტ შემქმნელია.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "content",
+    "georgian": "კონტენტი",
+    "pronunciation": "/ˈkɒntent/",
+    "example_en": "Quality content is key to success.",
+    "example_ka": "ხარისხიანი კონტენტი წარმატების გასაღებია.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtəfəˈkeɪʃən/",
+    "example_en": "Turn on notifications for new videos.",
+    "example_ka": "ახალი ვიდეოებისთვის შეტყობინებები ჩართე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "watch",
+    "georgian": "ყურება",
+    "pronunciation": "/wɒtʃ/",
+    "example_en": "Watch my latest video.",
+    "example_ka": "ჩემი უახლესი ვიდეო ნახე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "share",
+    "georgian": "გაზიარება",
+    "pronunciation": "/ʃer/",
+    "example_en": "Please share this video with friends.",
+    "example_ka": "ეს ვიდეო მეგობრებთან გააზიარე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "music",
+    "georgian": "მუსიკა",
+    "pronunciation": "/ˈmjuːzɪk/",
+    "example_en": "Background music makes videos better.",
+    "example_ka": "ფონური მუსიკა ვიდეოებს უკეთესს ხდის.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Use filters to improve video quality.",
+    "example_ka": "ვიდეოს ხარისხის გასაუმჯობესებლად ფილტრები გამოიყენე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "tutorial",
+    "georgian": "ტუტორიალი",
+    "pronunciation": "/tuˈtɔːriəl/",
+    "example_en": "I'm making a makeup tutorial.",
+    "example_ka": "მაკიაჟის ტუტორიალს ვაკეთებ.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "vlog",
+    "georgian": "ვლოგი",
+    "pronunciation": "/vlɒɡ/",
+    "example_en": "My daily vlog shows my routine.",
+    "example_ka": "ჩემი ყოველდღიური ვლოგი რეჟიმს აჩვენებს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɒləti/",
+    "example_en": "High quality videos perform better.",
+    "example_ka": "მაღალხარისხიანი ვიდეოები უკეთეს შედეგს იძლევა.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "audience",
+    "georgian": "აუდიტორია",
+    "pronunciation": "/ˈɔːdiəns/",
+    "example_en": "Know your target audience well.",
+    "example_ka": "კარგად იცოდე შენი სამიზნე აუდიტორია.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "brand",
+    "georgian": "ბრენდი",
+    "pronunciation": "/brænd/",
+    "example_en": "Build your personal brand on YouTube.",
+    "example_ka": "YouTube-ზე პიროვნული ბრენდი ააგე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "microphone",
+    "georgian": "მიკროფონი",
+    "pronunciation": "/ˈmaɪkrəfoʊn/",
+    "example_en": "Good audio needs a quality microphone.",
+    "example_ka": "კარგი აუდიოსთვის ხარისხიანი მიკროფონია საჭირო.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "camera",
+    "georgian": "კამერა",
+    "pronunciation": "/ˈkæmərə/",
+    "example_en": "I bought a new camera for filming.",
+    "example_ka": "გადაღებისთვის ახალი კამერა ვიყიდე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "lighting",
+    "georgian": "განათება",
+    "pronunciation": "/ˈlaɪtɪŋ/",
+    "example_en": "Good lighting improves video appearance.",
+    "example_ka": "კარგი განათება ვიდეოს გარეგნობას აუმჯობესებს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "script",
+    "georgian": "სკრიპტი",
+    "pronunciation": "/skrɪpt/",
+    "example_en": "Write a script before filming.",
+    "example_ka": "გადაღებამდე სკრიპტი დაწერე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "intro",
+    "georgian": "ინტრო",
+    "pronunciation": "/ˈɪntroʊ/",
+    "example_en": "My intro is 5 seconds long.",
+    "example_ka": "ჩემი ინტრო 5 წამიანია.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "outro",
+    "georgian": "აუტრო",
+    "pronunciation": "/ˈaʊtroʊ/",
+    "example_en": "Add a subscribe button in your outro.",
+    "example_ka": "აუტროში გამოწერის ღილაკი დაამატე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "editing",
+    "georgian": "მონტაჟი",
+    "pronunciation": "/ˈedɪtɪŋ/",
+    "example_en": "Video editing takes patience and skill.",
+    "example_ka": "ვიდეო მონტაჟი მოთმინებასა და უნარს მოითხოვს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "software",
+    "georgian": "პროგრამა",
+    "pronunciation": "/ˈsɔːftwer/",
+    "example_en": "I use editing software to make videos.",
+    "example_ka": "ვიდეოების შესაქმნელად რედაქტირების პროგრამას ვიყენებ.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "transition",
+    "georgian": "გადასვლა",
+    "pronunciation": "/trænˈzɪʃən/",
+    "example_en": "Smooth transitions keep viewers engaged.",
+    "example_ka": "გლუვი გადასვლები მაყურებლებს ინტერესით ინახავს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "effect",
+    "georgian": "ეფექტი",
+    "pronunciation": "/ɪˈfekt/",
+    "example_en": "Add special effects to enhance your video.",
+    "example_ka": "ვიდეოს გასაუმჯობესებლად სპეციალური ეფექტები დაამატე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "title",
+    "georgian": "სათაური",
+    "pronunciation": "/ˈtaɪtəl/",
+    "example_en": "The video title must grab attention.",
+    "example_ka": "ვიდეოს სათაური ყურადღებას უნდა იპყრობდეს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "tag",
+    "georgian": "ტეგი",
+    "pronunciation": "/tæɡ/",
+    "example_en": "Use relevant tags for better discoverability.",
+    "example_ka": "უკეთესი აღმოჩენისთვის შესაბამისი ტეგები გამოიყენე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "keyword",
+    "georgian": "საკვანძო სიტყვა",
+    "pronunciation": "/ˈkiːwɜːrd/",
+    "example_en": "Research keywords for your niche.",
+    "example_ka": "შენი ნიშისთვის საკვანძო სიტყვები გამოიკვლიე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "trending",
+    "georgian": "ტრენდში მყოფი",
+    "pronunciation": "/ˈtrendɪŋ/",
+    "example_en": "Follow trending topics for more views.",
+    "example_ka": "მეტი ნახვებისთვის ტრენდულ თემებს მიჰყევი.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "viral",
+    "georgian": "ვირუსული",
+    "pronunciation": "/ˈvaɪrəl/",
+    "example_en": "My video went viral overnight.",
+    "example_ka": "ჩემი ვიდეო ღამით ვირუსული გახდა.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "subscriber",
+    "georgian": "გამომწერი",
+    "pronunciation": "/səbˈskraɪbər/",
+    "example_en": "Thank you to all my subscribers.",
+    "example_ka": "მადლობა ყველა ჩემს გამომწერს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "milestone",
+    "georgian": "მიღწევა",
+    "pronunciation": "/ˈmaɪlstoʊn/",
+    "example_en": "Reaching 100K subscribers is a big milestone.",
+    "example_ka": "100 ათასი გამომწერის მიღწევა დიდი მიღწევაა.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "growth",
+    "georgian": "ზრდა",
+    "pronunciation": "/ɡroʊθ/",
+    "example_en": "Channel growth requires consistency.",
+    "example_ka": "არხის ზრდა მუდმივობას მოითხოვს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "consistency",
+    "georgian": "მუდმივობა",
+    "pronunciation": "/kənˈsɪstənsi/",
+    "example_en": "Consistency is key to YouTube success.",
+    "example_ka": "მუდმივობა YouTube წარმატების გასაღებია.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈskedʒuːl/",
+    "example_en": "Stick to a regular posting schedule.",
+    "example_ka": "რეგულარულ გამოქვეყნების განრიგს დაიცავი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "retention",
+    "georgian": "შენარჩუნება",
+    "pronunciation": "/rɪˈtenʃən/",
+    "example_en": "Good content improves audience retention.",
+    "example_ka": "კარგი კონტენტი აუდიტორიის შენარჩუნებას აუმჯობესებს.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "impression",
+    "georgian": "ჩვენება",
+    "pronunciation": "/ɪmˈpreʃən/",
+    "example_en": "High impressions don't guarantee views.",
+    "example_ka": "მაღალი ჩვენებები ნახვებს არ გარანტირებს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "clickthrough",
+    "georgian": "კლიკრეიტი",
+    "pronunciation": "/ˈklɪkθruː/",
+    "example_en": "Improve your clickthrough rate with better thumbnails.",
+    "example_ka": "უკეთესი თამბნეილებით კლიკრეიტი გააუმჯობესე.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "demographic",
+    "georgian": "დემოგრაფია",
+    "pronunciation": "/ˌdeməˈɡræfɪk/",
+    "example_en": "Know your audience demographics well.",
+    "example_ka": "შენი აუდიტორიის დემოგრაფია კარგად იცოდე.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "optimization",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˌɑːptəmɪˈzeɪʃən/",
+    "example_en": "SEO optimization helps videos rank better.",
+    "example_ka": "SEO ოპტიმიზაცია ვიდეოების რანგის გაუმჯობესებას ეხმარება.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "demonetized",
+    "georgian": "დემონეტიზებული",
+    "pronunciation": "/ˌdiːˈmʌnətaɪzd/",
+    "example_en": "My video got demonetized for copyright issues.",
+    "example_ka": "ჩემი ვიდეო საავტორო უფლებების პრობლემების გამო დემონეტიზდა.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "strike",
+    "georgian": "სტრაიკი",
+    "pronunciation": "/straɪk/",
+    "example_en": "Three strikes and your channel gets deleted.",
+    "example_ka": "სამი სტრაიკის შემდეგ არხი იშლება.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "guideline",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/ˈɡaɪdlaɪn/",
+    "example_en": "Follow YouTube's community guidelines.",
+    "example_ka": "YouTube-ის საზოგადოების სახელმძღვანელო დაიცავი.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "partnership",
+    "georgian": "პარტნიორობა",
+    "pronunciation": "/ˈpɑːrtnərʃɪp/",
+    "example_en": "I joined the YouTube Partner Program.",
+    "example_ka": "YouTube პარტნიორობის პროგრამაში გაწევრიანდი.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "collaboration",
+    "georgian": "კოლაბორაცია",
+    "pronunciation": "/kəˌlæbəˈreɪʃən/",
+    "example_en": "Collaboration with other creators helps growth.",
+    "example_ka": "სხვა შემქმნელებთან კოლაబორაცია ზრდას ეხმარება.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "premiere",
+    "georgian": "პრემიერა",
+    "pronunciation": "/prəˈmɪr/",
+    "example_en": "I'm doing a premiere for my new video.",
+    "example_ka": "ახალი ვიდეოსთვის პრემიერას ვაკეთებ.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "community",
+    "georgian": "კომუნიტი",
+    "pronunciation": "/kəˈmjuːnəti/",
+    "example_en": "Build a strong community around your channel.",
+    "example_ka": "შენი არხის ირგვლივ ძლიერი კომუნიტი ააგე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "feedback",
+    "georgian": "უკუკავშირი",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "Listen to feedback from your audience.",
+    "example_ka": "შენი აუდიტორიის უკუკავშირი მოისმინე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "I'm making a product review video.",
+    "example_ka": "პროდუქტის მიმოხილვის ვიდეოს ვაკეთებ.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "unboxing",
+    "georgian": "გახსნა",
+    "pronunciation": "/ʌnˈbɑːksɪŋ/",
+    "example_en": "Unboxing videos are very popular.",
+    "example_ka": "გახსნის ვიდეოები ძალიან პოპულარულია.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "reaction",
+    "georgian": "რეაქცია",
+    "pronunciation": "/riˈækʃən/",
+    "example_en": "Reaction videos get lots of engagement.",
+    "example_ka": "რეაქციის ვიდეოები ბევრ ჩართულობას იღებს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "challenge",
+    "georgian": "გამოწვევა",
+    "pronunciation": "/ˈtʃælɪndʒ/",
+    "example_en": "I'm doing the 24-hour challenge.",
+    "example_ka": "24-საათიან გამოწვევას ვაკეთებ.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "prank",
+    "georgian": "ღონება",
+    "pronunciation": "/præŋk/",
+    "example_en": "Prank videos can be controversial.",
+    "example_ka": "ღონების ვიდეოები კამათის საგანი შეიძლება იყოს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "entertainment",
+    "georgian": "გართობა",
+    "pronunciation": "/ˌentərˈteɪnmənt/",
+    "example_en": "My channel focuses on entertainment content.",
+    "example_ka": "ჩემი არხი გართობის კონტენტზეა მიმართული.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "educational",
+    "georgian": "განმანათლებლური",
+    "pronunciation": "/ˌedʒuˈkeɪʃənəl/",
+    "example_en": "Educational content performs well on YouTube.",
+    "example_ka": "განმანათლებლური კონტენტი YouTube-ზე კარგს მუშაობს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "informative",
+    "georgian": "ინფორმაციული",
+    "pronunciation": "/ɪnˈfɔːrmətɪv/",
+    "example_en": "Make your videos informative and engaging.",
+    "example_ka": "შენი ვიდეოები ინფორმაციული და საინტერესო გახადე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "storytelling",
+    "georgian": "ზღაპრození",
+    "pronunciation": "/ˈstɔːriˌtelɪŋ/",
+    "example_en": "Good storytelling keeps viewers watching.",
+    "example_ka": "კარგი ზღაპრძძoვნება მაყურებლებს ყურებისას ინახავს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "personality",
+    "georgian": "პიროვნება",
+    "pronunciation": "/ˌpɜːrsəˈnæləti/",
+    "example_en": "Show your personality in your videos.",
+    "example_ka": "შენი ვიდეოებში პიროვნება გამოიჩინე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "authentic",
+    "georgian": "ავთენტური",
+    "pronunciation": "/ɔːˈθentɪk/",
+    "example_en": "Be authentic to build trust with viewers.",
+    "example_ka": "მაყურებლებთან ნდობის ასაშენებლად ავთენტური იყავი.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "subscriber",
+    "georgian": "მიმდევარი",
+    "pronunciation": "/səbˈskraɪbər/",
+    "example_en": "Interact with your subscribers regularly.",
+    "example_ka": "შენს მიმდევრებთან რეგულარულად ურთიერთქმედე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "interaction",
+    "georgian": "ურთიერთქმედება",
+    "pronunciation": "/ˌɪntərˈækʃən/",
+    "example_en": "Audience interaction improves engagement.",
+    "example_ka": "აუდიტორიასთან ურთიერთქმედება ჩართულობას აუმჯობესებს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "community",
+    "georgian": "საზოგადოება",
+    "pronunciation": "/kəˈmjuːnəti/",
+    "example_en": "Use the community tab to post updates.",
+    "example_ka": "განახლებების გასაზიარებლად საზოგადოების ტაბს გამოიყენე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "poll",
+    "georgian": "გამოკითხვა",
+    "pronunciation": "/poʊl/",
+    "example_en": "Create polls to engage your audience.",
+    "example_ka": "აუდიტორიის ჩასართავად გამოკითხვები შექმენი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "Post regular updates about your channel.",
+    "example_ka": "შენი არხის შესახებ რეგულარული განახლებები გამოაქვეყნე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "announcement",
+    "georgian": "განცხადება",
+    "pronunciation": "/əˈnaʊnsmənt/",
+    "example_en": "I have an exciting announcement to make.",
+    "example_ka": "საინტერესო განცხადება მაქვს გასაკეთებელი.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "behind-the-scenes",
+    "georgian": "კულისებში",
+    "pronunciation": "/bɪˈhaɪnd ðə siːnz/",
+    "example_en": "Show behind-the-scenes content occasionally.",
+    "example_ka": "ზოგჯერ კულისების კონტენტი აჩვენე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "exclusive",
+    "georgian": "ექსკლუზივური",
+    "pronunciation": "/ɪkˈskluːsɪv/",
+    "example_en": "Offer exclusive content to subscribers.",
+    "example_ka": "გამომწერებს ექსკლუზივური კონტენტი შეთავაზე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "series",
+    "georgian": "სერია",
+    "pronunciation": "/ˈsɪriːz/",
+    "example_en": "Start a video series on your favorite topic.",
+    "example_ka": "შენს საყვარელ თემაზე ვიდეო სერია დაიწყე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "episode",
+    "georgian": "ეპიზოდი",
+    "pronunciation": "/ˈepɪsoʊd/",
+    "example_en": "This is episode 10 of my cooking series.",
+    "example_ka": "ეს არის ჩემი კულინარიული სერიის მე-10 ეპიზოდი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "season",
+    "georgian": "სეზონი",
+    "pronunciation": "/ˈsiːzən/",
+    "example_en": "Season 2 of my vlog starts next month.",
+    "example_ka": "ჩემი ვლოგის მე-2 სეზონი მომავალ თვეს იწყება.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "finale",
+    "georgian": "ფინალე",
+    "pronunciation": "/fɪˈnæli/",
+    "example_en": "The season finale will be epic!",
+    "example_ka": "სეზონის ფინალე ეპიკური იქნება!",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "teaser",
+    "georgian": "თიზერი",
+    "pronunciation": "/ˈtiːzər/",
+    "example_en": "I posted a teaser for my next video.",
+    "example_ka": "შემდეგი ვიდეოსთვის თიზერი ავტვირთე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "trailer",
+    "georgian": "ტრეილერი",
+    "pronunciation": "/ˈtreɪlər/",
+    "example_en": "The trailer got people excited for the full video.",
+    "example_ka": "ტრეილერმა ხალხი სრული ვიდეოსთვის აღაგზნა.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "preview",
+    "georgian": "წინასწარი ნახვა",
+    "pronunciation": "/ˈpriːvjuː/",
+    "example_en": "Give viewers a preview of upcoming content.",
+    "example_ka": "მაყურებლებს მომავალი კონტენტის წინასწარი ნახვა მისცე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "compilation",
+    "georgian": "კომპილაცია",
+    "pronunciation": "/ˌkɒmpəˈleɪʃən/",
+    "example_en": "I made a compilation of my best moments.",
+    "example_ka": "ჩემი საუკეთესო მომენტების კომპილაცია გავაკეთე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "highlight",
+    "georgian": "მთავარი მომენტი",
+    "pronunciation": "/ˈhaɪlaɪt/",
+    "example_en": "This was the highlight of the video.",
+    "example_ka": "ეს იყო ვიდეოს მთავარი მომენტი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "blooper",
+    "georgian": "შეცდომა",
+    "pronunciation": "/ˈbluːpər/",
+    "example_en": "I'll show bloopers at the end.",
+    "example_ka": "ბოლოს შეცდომებს აჩვენებ.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "outtake",
+    "georgian": "ამოჭრილი ნაწყვეტი",
+    "pronunciation": "/ˈaʊtteɪk/",
+    "example_en": "The outtakes are funnier than the main video.",
+    "example_ka": "ამოჭრილი ნაწყვეტები მთავარ ვიდეოზე უფრო სასაცილოა.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "timestamp",
+    "georgian": "დროის ნიშნული",
+    "pronunciation": "/ˈtaɪmstæmp/",
+    "example_en": "Add timestamps in your video description.",
+    "example_ka": "ვიდეოს აღწერაში დროის ნიშნულები დაამატე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "chapter",
+    "georgian": "თავი",
+    "pronunciation": "/ˈtʃæptər/",
+    "example_en": "Divide your video into chapters.",
+    "example_ka": "შენი ვიდეო თავებად დაჰყავი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "summary",
+    "georgian": "შეჯამება",
+    "pronunciation": "/ˈsʌməri/",
+    "example_en": "End with a quick summary of key points.",
+    "example_ka": "მთავარი ქულების სწრაფი შეჯამებით დაასრულე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "conclusion",
+    "georgian": "დასკვნა",
+    "pronunciation": "/kənˈkluːʒən/",
+    "example_en": "The conclusion should leave viewers wanting more.",
+    "example_ka": "დასკვნამ მაყურებლებს მეტის სურვილი უნდა დაუტოვოს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "call-to-action",
+    "georgian": "მოწოდება მოქმედებისკენ",
+    "pronunciation": "/kɔːl tu ˈækʃən/",
+    "example_en": "End with a strong call-to-action.",
+    "example_ka": "ძლიერი მოწოდებით მოქმედებისკენ დაასრულე.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "endscreen",
+    "georgian": "დასასრულის ეკრანი",
+    "pronunciation": "/ˈendskriːn/",
+    "example_en": "Use endscreens to promote other videos.",
+    "example_ka": "სხვა ვიდეოების პროპაგანდისთვის დასასრულის ეკრანები გამოიყენე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "annotation",
+    "georgian": "ანოტაცია",
+    "pronunciation": "/ˌænəˈteɪʃən/",
+    "example_en": "Annotations are no longer supported on YouTube.",
+    "example_ka": "ანოტაციები უღარ არის მხარდაჭერილი YouTube-ზე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "card",
+    "georgian": "ბარათი",
+    "pronunciation": "/kɑːrd/",
+    "example_en": "Use cards to link to related content.",
+    "example_ka": "დაკავშირებულ კონტენტზე ბმულისთვის ბარათები გამოიყენე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "overlay",
+    "georgian": "გადაფარვა",
+    "pronunciation": "/ˈoʊvərleɪ/",
+    "example_en": "Add text overlays to explain complex topics.",
+    "example_ka": "რთული თემების ასახსნელად ტექსტური გადაფარვები დაამატე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "watermark",
+    "georgian": "წყლის ნიშანი",
+    "pronunciation": "/ˈwɔːtərmɑːrk/",
+    "example_en": "Add a watermark to protect your content.",
+    "example_ka": "შენი კონტენტის დასაცავად წყლის ნიშანი დაამატე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "branding",
+    "georgian": "ბრენდინგი",
+    "pronunciation": "/ˈbrændɪŋ/",
+    "example_en": "Consistent branding helps build recognition.",
+    "example_ka": "მუდმივი ბრენდინგი ამოცნობის ასაშენებლად ეხმარება.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "logo",
+    "georgian": "ლოგო",
+    "pronunciation": "/ˈloʊɡoʊ/",
+    "example_en": "Design a memorable logo for your channel.",
+    "example_ka": "შენი არხისთვის დასამახსოვრებელი ლოგო შექმენი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "banner",
+    "georgian": "ბანერი",
+    "pronunciation": "/ˈbænər/",
+    "example_en": "Update your channel banner regularly.",
+    "example_ka": "შენი არხის ბანერი რეგულარულად განაახლე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "avatar",
+    "georgian": "ავატარი",
+    "pronunciation": "/ˈævətɑːr/",
+    "example_en": "Choose a clear avatar for your channel.",
+    "example_ka": "შენი არხისთვის მკაფიო ავატარი აირჩიე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "profile",
+    "georgian": "პროფილი",
+    "pronunciation": "/ˈproʊfaɪl/",
+    "example_en": "Complete your channel profile information.",
+    "example_ka": "შენი არხის პროფილის ინფორმაცია შეავსე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "bio",
+    "georgian": "ბიოგრაფია",
+    "pronunciation": "/ˈbaɪoʊ/",
+    "example_en": "Write an engaging bio for your about page.",
+    "example_ka": "შენი შესახებ გვერდისთვის საინტერესო ბიოგრაფია დაწერე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "about",
+    "georgian": "შესახებ",
+    "pronunciation": "/əˈbaʊt/",
+    "example_en": "Fill out your channel's about section.",
+    "example_ka": "შენი არხის შესახებ სექცია შეავსე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "contact",
+    "georgian": "კონტაქტი",
+    "pronunciation": "/ˈkɒntækt/",
+    "example_en": "Add contact information for business inquiries.",
+    "example_ka": "ბიზნეს მოთხოვნებისთვის კონტაქტის ინფორმაცია დაამატე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "email",
+    "georgian": "ელფოსტა",
+    "pronunciation": "/ˈiːmeɪl/",
+    "example_en": "Provide a business email for partnerships.",
+    "example_ka": "პარტნიორობისთვის ბიზნეს ელფოსტა მიაწოდე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "social",
+    "georgian": "სოციალური",
+    "pronunciation": "/ˈsoʊʃəl/",
+    "example_en": "Link your other social media accounts.",
+    "example_ka": "შენი სხვა სოციალური მედიის ანგარიშები დაუკავშირე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "platform",
+    "georgian": "პლატფორმა",
+    "pronunciation": "/ˈplætfɔːrm/",
+    "example_en": "YouTube is the biggest video platform.",
+    "example_ka": "YouTube არის უდიდესი ვიდეო პლატფორმა.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "streaming",
+    "georgian": "სტრიმინგი",
+    "pronunciation": "/ˈstriːmɪŋ/",
+    "example_en": "Live streaming is becoming more popular.",
+    "example_ka": "ლაივ სტრიმინგი უფრო პოპულარული ხდება.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "broadcast",
+    "georgian": "მაუწყებლობა",
+    "pronunciation": "/ˈbrɔːdkæst/",
+    "example_en": "I'll broadcast live from the event.",
+    "example_ka": "ღონისძიებიდან ლაივ მაუწყებლობას გავაკეთებ.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "chat",
+    "georgian": "ჩატი",
+    "pronunciation": "/tʃæt/",
+    "example_en": "Interact with viewers through live chat.",
+    "example_ka": "ლაივ ჩატის მეშვეობით მაყურებლებთან ურთიერთქმედე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "donation",
+    "georgian": "შემოწირულება",
+    "pronunciation": "/doʊˈneɪʃən/",
+    "example_en": "Thank viewers for their donations.",
+    "example_ka": "მაყურებლებს მათი შემოწირულებებისთვის მადლობა.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "superchat",
+    "georgian": "სუპერჩატი",
+    "pronunciation": "/ˈsuːpərtʃæt/",
+    "example_en": "Superchat messages appear highlighted.",
+    "example_ka": "სუპერჩატის შეტყობინებები გამოკვეთილად ჩნდება.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "membership",
+    "georgian": "წევრობა",
+    "pronunciation": "/ˈmembərʃɪp/",
+    "example_en": "Offer channel memberships to loyal fans.",
+    "example_ka": "ერთგულ ფანებს არხის წევრობა შეთავაზე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "patron",
+    "georgian": "მფარველი",
+    "pronunciation": "/ˈpeɪtrən/",
+    "example_en": "Thank your patrons for their support.",
+    "example_ka": "შენს მფარველებს მათი მხარდაჭერისთვის მადლობა.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "merchandise",
+    "georgian": "მერჩენდაიზინგი",
+    "pronunciation": "/ˈmɜːrtʃəndaɪs/",
+    "example_en": "Sell merchandise to your fans.",
+    "example_ka": "შენს ფანებს მერჩენდაიზინგი გაუყიდე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "store",
+    "georgian": "მაღაზია",
+    "pronunciation": "/stɔːr/",
+    "example_en": "I opened my own merchandise store.",
+    "example_ka": "ჩემი მერჩენდაიზინგის მაღაზია გავხსენი.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "product",
+    "georgian": "პროდუქტი",
+    "pronunciation": "/ˈprɑːdʌkt/",
+    "example_en": "Promote products relevant to your audience.",
+    "example_ka": "შენი აუდიტორიისთვის შესაბამისი პროდუქტები პროპაგანდისე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "affiliate",
+    "georgian": "აფილიეითი",
+    "pronunciation": "/əˈfɪliət/",
+    "example_en": "Use affiliate links in your descriptions.",
+    "example_ka": "შენს აღწერებში აფილიეითი ბმულები გამოიყენე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "commission",
+    "georgian": "კომისია",
+    "pronunciation": "/kəˈmɪʃən/",
+    "example_en": "Earn commission from affiliate sales.",
+    "example_ka": "აფილიეითი გაყიდვებიდან კომისია ინახე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "endorsement",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/ɪnˈdɔːrsmənt/",
+    "example_en": "Celebrity endorsements boost channel growth.",
+    "example_ka": "ცნობილი პიროვნების მხარდაჭერა არხის ზრდას ეხმარება.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "testimonial",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌtestəˈmoʊniəl/",
+    "example_en": "Share testimonials from satisfied customers.",
+    "example_ka": "კმაყოფილი მომხმარებლების რეკომენდაციები გააზიარე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "advertisement",
+    "georgian": "რეკლამა",
+    "pronunciation": "/ədˈvɜːrtɪsmənt/",
+    "example_en": "YouTube shows advertisements before videos.",
+    "example_ka": "YouTube ვიდეოებამდე რეკლამებს აჩვენებს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "ad",
+    "georgian": "რეკლამა",
+    "pronunciation": "/æd/",
+    "example_en": "Skip the ad after 5 seconds.",
+    "example_ka": "5 წამის შემდეგ რეკლამა გამოტოვე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "revenue",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈrevənjuː/",
+    "example_en": "Ad revenue depends on views and engagement.",
+    "example_ka": "რეკლამური შემოსავალი ნახვებსა და ჩართულობაზე არის დამოკიდებული.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "income",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈɪnkʌm/",
+    "example_en": "YouTube can become a source of income.",
+    "example_ka": "YouTube შემოსავლის წყარო შეიძლება გახდეს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "earnings",
+    "georgian": "ზღარბა",
+    "pronunciation": "/ˈɜːrnɪŋz/",
+    "example_en": "My monthly earnings have increased.",
+    "example_ka": "ჩემი ყოველთვიური ზღარბა გაიზარდა.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "profit",
+    "georgian": "მოგება",
+    "pronunciation": "/ˈprɑːfɪt/",
+    "example_en": "Calculate your profit after expenses.",
+    "example_ka": "ხარჯების შემდეგ შენი მოგება გამოთვალე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "Set a budget for equipment and editing.",
+    "example_ka": "აღჭურვილობისა და მონტაჟისთვის ბიუჯეტი დაიდე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "investment",
+    "georgian": "ინვესტიცია",
+    "pronunciation": "/ɪnˈvestmənt/",
+    "example_en": "Consider YouTube as a long-term investment.",
+    "example_ka": "YouTube გრძელვადიან ინვესტიციად მიაჩნიე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "expense",
+    "georgian": "ხარჯი",
+    "pronunciation": "/ɪkˈspens/",
+    "example_en": "Track all business expenses for tax purposes.",
+    "example_ka": "გადასახადის მიზნებისთვის ყველა ბიზნეს ხარჯი აღირიცხე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "tax",
+    "georgian": "გადასახადი",
+    "pronunciation": "/tæks/",
+    "example_en": "YouTubers must pay taxes on their income.",
+    "example_ka": "ყუთუბერები თავიანთ შემოსავალზე გადასახადს უნდა იხდიდნენ.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "business",
+    "georgian": "ბიზნესი",
+    "pronunciation": "/ˈbɪznəs/",
+    "example_en": "Treat your channel like a business.",
+    "example_ka": "შენი არხი ბიზნესივით მოეპყარი.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "professional",
+    "georgian": "პროფესიონალური",
+    "pronunciation": "/prəˈfeʃənəl/",
+    "example_en": "Maintain a professional image online.",
+    "example_ka": "ონლაინ პროფესიონალური იმიჯი შეინარჩუნე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "career",
+    "georgian": "კარიერა",
+    "pronunciation": "/kəˈrɪr/",
+    "example_en": "YouTube can become a full-time career.",
+    "example_ka": "YouTube სრული განაკვეთით კარიერა შეიძლება გახდეს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "success",
+    "georgian": "წარმატება",
+    "pronunciation": "/səkˈses/",
+    "example_en": "Success on YouTube takes time and effort.",
+    "example_ka": "YouTube-ზე წარმატება დროსა და ძალისხმევას მოითხოვს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "failure",
+    "georgian": "წარუმატებლობა",
+    "pronunciation": "/ˈfeɪljər/",
+    "example_en": "Learn from failure and keep improving.",
+    "example_ka": "წარუმატებლობისგან იაღო და განაგრძე გაუმჯობესება.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "persistence",
+    "georgian": "დაჟინებულება",
+    "pronunciation": "/pərˈsɪstəns/",
+    "example_en": "Persistence is key to YouTube success.",
+    "example_ka": "დაჟინებულება YouTube წარმატების გასაღებია.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "patience",
+    "georgian": "მოთმინება",
+    "pronunciation": "/ˈpeɪʃəns/",
+    "example_en": "Building an audience requires patience.",
+    "example_ka": "აუდიტორიის ჩამოყალიბება მოთმინებას მოითხოვს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "dedication",
+    "georgian": "ერთგულება",
+    "pronunciation": "/ˌdedəˈkeɪʃən/",
+    "example_en": "Show dedication to your craft and audience.",
+    "example_ka": "შენს ხელოვნებასა და აუდიტორიისადმი ერთგულება გამოიჩინე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "passion",
+    "georgian": "ვნება",
+    "pronunciation": "/ˈpæʃən/",
+    "example_en": "Passion for your content shows in your videos.",
+    "example_ka": "კონტენტისადმი ვნება შენს ვიდეოებში ჩანს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "creativity",
+    "georgian": "კრეატიულობა",
+    "pronunciation": "/ˌkrieɪˈtɪvəti/",
+    "example_en": "Creativity helps you stand out from competitors.",
+    "example_ka": "კრეატიულობა კონკურენტებისგან გამოსაყოფად გეხმარება.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "innovation",
+    "georgian": "ინოვაცია",
+    "pronunciation": "/ˌɪnəˈveɪʃən/",
+    "example_en": "Innovation keeps your channel fresh and interesting.",
+    "example_ka": "ინოვაცია შენს არხს ახალ და საინტერესოს ინახავს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "originality",
+    "georgian": "ორიგინალურობა",
+    "pronunciation": "/əˌrɪdʒəˈnæləti/",
+    "example_en": "Originality is what makes creators memorable.",
+    "example_ka": "ორიგინალურობა არის ის, რაც შემქმნელებს დასამახსოვრებელს ხდის.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "unique",
+    "georgian": "უნიკალური",
+    "pronunciation": "/juˈniːk/",
+    "example_en": "Find your unique voice and perspective.",
+    "example_ka": "შენი უნიკალური ხმა და პერსპექტივა იპოვე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "distinctive",
+    "georgian": "განმასხვავებელი",
+    "pronunciation": "/dɪˈstɪŋktɪv/",
+    "example_en": "Develop a distinctive style for your videos.",
+    "example_ka": "შენი ვიდეოებისთვის განმასხვავებელი სტილი შეიმუშავე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "memorable",
+    "georgian": "დასამახსოვრებელი",
+    "pronunciation": "/ˈmemərbəl/",
+    "example_en": "Create memorable content that sticks with viewers.",
+    "example_ka": "დასამახსოვრებელი კონტენტი შექმენი, რომელიც მაყურებლებს დარჩება.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "impactful",
+    "georgian": "ზემოქმედი",
+    "pronunciation": "/ˈɪmpæktfəl/",
+    "example_en": "Make impactful content that influences people.",
+    "example_ka": "ზემოქმედი კონტენტი გაკეთე, რომელიც ხალხს ზეგავლენას ახდენს.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "influential",
+    "georgian": "ზეგავლენიანი",
+    "pronunciation": "/ˌɪnfluˈenʃəl/",
+    "example_en": "Become an influential voice in your niche.",
+    "example_ka": "შენ ნიშაში ზეგავლენიანი ხმა გახდი.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "viral",
+    "georgian": "ვირუსული",
+    "pronunciation": "/ˈvaɪrəl/",
+    "example_en": "Going viral can change everything.",
+    "example_ka": "ვირუსულად გავრცელება ყველაფერს შეუძლია შეცვალოს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "phenomenon",
+    "georgian": "ფენომენი",
+    "pronunciation": "/fəˈnɑːmənən/",
+    "example_en": "She became an internet phenomenon.",
+    "example_ka": "ის ინტერნეტ ფენომენი გახდა.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "celebrity",
+    "georgian": "ცნობილი პიროვნება",
+    "pronunciation": "/səˈlebrəti/",
+    "example_en": "Some YouTubers become celebrities.",
+    "example_ka": "ზოგი ყუთუბერი ცნობილი პიროვნება ხდება.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "fame",
+    "georgian": "სახელი",
+    "pronunciation": "/feɪm/",
+    "example_en": "Fame comes with responsibility.",
+    "example_ka": "სახელს პასუხისმგებლობა მოაქვს.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "popular",
+    "georgian": "პოპულარული",
+    "pronunciation": "/ˈpɑːpjələr/",
+    "example_en": "Popular videos get shared more often.",
+    "example_ka": "პოპულარული ვიდეოები უფრო ხშირად იზიარება.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "trending",
+    "georgian": "ტენდენციური",
+    "pronunciation": "/ˈtrendɪŋ/",
+    "example_en": "My video is currently trending.",
+    "example_ka": "ჩემი ვიდეო ამჟამად ტენდენციურია.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "recommendation",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrekəmenˈdeɪʃən/",
+    "example_en": "The algorithm shows video recommendations.",
+    "example_ka": "ალგორითმი ვიდეო რეკომენდაციებს აჩვენებს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "suggested",
+    "georgian": "შემოთავაზებული",
+    "pronunciation": "/səˈdʒestəd/",
+    "example_en": "Check the suggested videos sidebar.",
+    "example_ka": "შემოთავაზებული ვიდეოების გვერდითა ზოლი შეამოწმე.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "autoplay",
+    "georgian": "ავტომატური დაკვრა",
+    "pronunciation": "/ˈɔːtoʊpleɪ/",
+    "example_en": "Autoplay keeps viewers watching longer.",
+    "example_ka": "ავტომატური დაკვრა მაყურებლებს უფრო დიდხანს ინახავს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "binge",
+    "georgian": "გადაჭარბება",
+    "pronunciation": "/bɪndʒ/",
+    "example_en": "Viewers love to binge-watch series.",
+    "example_ka": "მაყურებლებს სერიების ღამისთევა უყვართ.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "addiction",
+    "georgian": "დამოკიდებულება",
+    "pronunciation": "/əˈdɪkʃən/",
+    "example_en": "YouTube can become addictive.",
+    "example_ka": "YouTube დამოკიდებული შეიძლება გახდეს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "habit",
+    "georgian": "ჩვევა",
+    "pronunciation": "/ˈhæbət/",
+    "example_en": "Watching YouTube became my daily habit.",
+    "example_ka": "YouTube-ის ყურება ჩემი ყოველდღიური ჩვევა გახდა.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "routine",
+    "georgian": "რუტინა",
+    "pronunciation": "/ruˈtiːn/",
+    "example_en": "Include video creation in your routine.",
+    "example_ka": "ვიდეო შექმნა შენ რუტინაში ჩართე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "schedule",
+    "georgian": "გრაფიკი",
+    "pronunciation": "/ˈʃedjuːl/",
+    "example_en": "Maintain a consistent upload schedule.",
+    "example_ka": "მუდმივი ატვირთვის გრაფიკი შეინარჩუნე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "frequency",
+    "georgian": "სიხშირე",
+    "pronunciation": "/ˈfriːkwənsi/",
+    "example_en": "Increase your posting frequency gradually.",
+    "example_ka": "გამოქვეყნების სიხშირე თანდათან გაზარდე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɑːləti/",
+    "example_en": "Focus on quality over quantity.",
+    "example_ka": "ხარისხზე რაოდენობაზე მეტი ყურადღება გაამახვილე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "quantity",
+    "georgian": "რაოდენობა",
+    "pronunciation": "/ˈkwɑːntəti/",
+    "example_en": "Don't sacrifice quality for quantity.",
+    "example_ka": "ხარისხი რაოდენობისთვის ნუ შეწირავ.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "improvement",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/ɪmˈpruːvmənt/",
+    "example_en": "Continuous improvement is essential.",
+    "example_ka": "უწყვეტი გაუმჯობესება აუცილებელია.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "evolution",
+    "georgian": "ევოლუცია",
+    "pronunciation": "/ˌevəˈluːʃən/",
+    "example_en": "Watch your channel's evolution over time.",
+    "example_ka": "დროთა განმავლობაში შენი არხის ევოლუცია შეამოწმე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "transformation",
+    "georgian": "გარდაქმნა",
+    "pronunciation": "/ˌtrænsfərˈmeɪʃən/",
+    "example_en": "Document your personal transformation.",
+    "example_ka": "შენი პირადი გარდაქმნა ადოკუმენტირე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "journey",
+    "georgian": "მოგზაურობა",
+    "pronunciation": "/ˈdʒɜːrni/",
+    "example_en": "Share your creative journey with viewers.",
+    "example_ka": "შენი შემოქმედებითი მოგზაურობა მაყურებლებთან გააზიარე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "milestone",
+    "georgian": "მნიშვნელოვანი მოვლენა",
+    "pronunciation": "/ˈmaɪlstoʊn/",
+    "example_en": "Celebrate every milestone with your audience.",
+    "example_ka": "ყოველი მნიშვნელოვანი მოვლენა შენს აუდიტორიასთან იზეიმე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "anniversary",
+    "georgian": "იუბილე",
+    "pronunciation": "/ˌænəˈvɜːrsəri/",
+    "example_en": "Today is my channel's first anniversary.",
+    "example_ka": "დღეს ჩემი არხის პირველი იუბილეა.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "birthday",
+    "georgian": "დაბადების დღე",
+    "pronunciation": "/ˈbɜːrθdeɪ/",
+    "example_en": "I celebrated my birthday with subscribers.",
+    "example_ka": "დაბადების დღე გამომწერებთან ვიზეიმე.",
+    "category": "youtube",
+    "level": "A1"
+  },
+  {
+    "english": "special",
+    "georgian": "სპეციალური",
+    "pronunciation": "/ˈspeʃəl/",
+    "example_en": "I'm planning a special video for 100K.",
+    "example_ka": "100 ათასისთვის სპეციალურ ვიდეოს ვგეგმავ.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "exclusive",
+    "georgian": "ექსკლუზიური",
+    "pronunciation": "/ɪkˈskluːsɪv/",
+    "example_en": "Members get exclusive behind-the-scenes content.",
+    "example_ka": "წევრები ექსკლუზიური კულისების კონტენტს იღებენ.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "bonus",
+    "georgian": "ბონუსი",
+    "pronunciation": "/ˈboʊnəs/",
+    "example_en": "I added bonus content at the end.",
+    "example_ka": "ბოლოს ბონუს კონტენტი დავამატე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "extra",
+    "georgian": "დამატებითი",
+    "pronunciation": "/ˈekstrə/",
+    "example_en": "Check the description for extra information.",
+    "example_ka": "დამატებითი ინფორმაციისთვის აღწერა შეამოწმე.",
+    "category": "youtube",
+    "level": "A2"
+  },
+  {
+    "english": "supplement",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈsʌpləmənt/",
+    "example_en": "This video supplements my previous tutorial.",
+    "example_ka": "ეს ვიდეო ჩემს წინა ტუტორიალს ავსებს.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "follow-up",
+    "georgian": "შემდგომი",
+    "pronunciation": "/ˈfɑːloʊ ʌp/",
+    "example_en": "This is a follow-up to last week's video.",
+    "example_ka": "ეს წინა კვირის ვიდეოს შემდგომია.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "sequel",
+    "georgian": "გაგრძელება",
+    "pronunciation": "/ˈsiːkwəl/",
+    "example_en": "Part 2 is the sequel to this video.",
+    "example_ka": "მე-2 ნაწილი ამ ვიდეოს გაგრძელებაა.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "prequel",
+    "georgian": "წინამორბედი",
+    "pronunciation": "/ˈpriːkwəl/",
+    "example_en": "Watch the prequel to understand the story.",
+    "example_ka": "ისტორიის გასაგებად წინამორბედი ნახე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "continuation",
+    "georgian": "გაგრძელება",
+    "pronunciation": "/kənˌtɪnjuˈeɪʃən/",
+    "example_en": "This video is a continuation of the series.",
+    "example_ka": "ეს ვიდეო სერიის გაგრძელებაა.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "spinoff",
+    "georgian": "ღეროვანი",
+    "pronunciation": "/ˈspɪnɔːf/",
+    "example_en": "I created a spinoff channel for gaming.",
+    "example_ka": "გეიმინგისთვის ღეროვანი არხი შევქმენი.",
+    "category": "youtube",
+    "level": "C1"
+  },
+  {
+    "english": "crossover",
+    "georgian": "კროსოვერი",
+    "pronunciation": "/ˈkrɔːsoʊvər/",
+    "example_en": "We did a crossover episode together.",
+    "example_ka": "ერთად კროსოვერ ეპიზოდი გავაკეთეთ.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "mashup",
+    "georgian": "შერწყმა",
+    "pronunciation": "/ˈmæʃʌp/",
+    "example_en": "I made a mashup of my best clips.",
+    "example_ka": "ჩემი საუკეთესო კლიპების შერწყმა გავაკეთე.",
+    "category": "youtube",
+    "level": "B2"
+  },
+  {
+    "english": "remix",
+    "georgian": "რემიქსი",
+    "pronunciation": "/ˈriːmɪks/",
+    "example_en": "Fans created remixes of my video.",
+    "example_ka": "ფანებმა ჩემი ვიდეოს რემიქსები შექმნეს.",
+    "category": "youtube",
+    "level": "B1"
+  },
+  {
+    "english": "parody",
+    "georgian": "პაროდია",
+    "pronunciation": "/ˈpærədi/",
+    "example_en": "Comedy channels often make parodies.",
+    "example_ka": "კომედიური არხები ხშირად პაროდიებს აკეთებენ.",
+    "category": "youtube",
+    "level": "B1"
+  }
 ]

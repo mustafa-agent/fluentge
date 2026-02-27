@@ -1,32 +1,1802 @@
 [
-  {"english": "Analyze", "georgian": "ანალიზი", "pronunciation": "/ˈænəlaɪz/", "example_en": "Analyze the data carefully.", "example_ka": "ყურადღებით გააანალიზე მონაცემები.", "category": "academic", "level": "B1"},
-  {"english": "Evidence", "georgian": "მტკიცებულება", "pronunciation": "/ˈɛvɪdəns/", "example_en": "There is no evidence to support this.", "example_ka": "ამის დასამტკიცებელი მტკიცებულება არ არსებობს.", "category": "academic", "level": "B1"},
-  {"english": "Research", "georgian": "კვლევა", "pronunciation": "/rɪˈsɜːrtʃ/", "example_en": "She did a lot of research on the topic.", "example_ka": "ამ თემაზე ბევრი კვლევა ჩაატარა.", "category": "academic", "level": "B1"},
-  {"english": "Conclusion", "georgian": "დასკვნა", "pronunciation": "/kənˈkluːʒən/", "example_en": "In conclusion, the experiment was a success.", "example_ka": "დასკვნის სახით, ექსპერიმენტი წარმატებული იყო.", "category": "academic", "level": "B1"},
-  {"english": "Hypothesis", "georgian": "ჰიპოთეზა", "pronunciation": "/haɪˈpɒθəsɪs/", "example_en": "We need to test this hypothesis.", "example_ka": "ეს ჰიპოთეზა უნდა შევამოწმოთ.", "category": "academic", "level": "B2"},
-  {"english": "Significant", "georgian": "მნიშვნელოვანი", "pronunciation": "/sɪɡˈnɪfɪkənt/", "example_en": "The results are statistically significant.", "example_ka": "შედეგები სტატისტიკურად მნიშვნელოვანია.", "category": "academic", "level": "B1"},
-  {"english": "Theory", "georgian": "თეორია", "pronunciation": "/ˈθɪəri/", "example_en": "Darwin's theory of evolution.", "example_ka": "დარვინის ევოლუციის თეორია.", "category": "academic", "level": "B1"},
-  {"english": "Method", "georgian": "მეთოდი", "pronunciation": "/ˈmɛθəd/", "example_en": "What method did you use?", "example_ka": "რა მეთოდი გამოიყენე?", "category": "academic", "level": "A2"},
-  {"english": "Evaluate", "georgian": "შეფასება", "pronunciation": "/ɪˈvæljueɪt/", "example_en": "We need to evaluate the results.", "example_ka": "შედეგების შეფასება გვჭირდება.", "category": "academic", "level": "B1"},
-  {"english": "Define", "georgian": "განსაზღვრა", "pronunciation": "/dɪˈfaɪn/", "example_en": "Can you define this word?", "example_ka": "შეგიძლია ეს სიტყვა განსაზღვრო?", "category": "academic", "level": "A2"},
-  {"english": "Compare", "georgian": "შედარება", "pronunciation": "/kəmˈpɛr/", "example_en": "Compare the two products.", "example_ka": "შეადარე ორი პროდუქტი.", "category": "academic", "level": "A2"},
-  {"english": "Contrast", "georgian": "კონტრასტი / განსხვავება", "pronunciation": "/ˈkɒntræst/", "example_en": "In contrast to last year, sales are up.", "example_ka": "გასულ წელთან განსხვავებით, გაყიდვები გაიზარდა.", "category": "academic", "level": "B1"},
-  {"english": "Summary", "georgian": "რეზიუმე / შეჯამება", "pronunciation": "/ˈsʌməri/", "example_en": "Write a summary of the article.", "example_ka": "დაწერე სტატიის შეჯამება.", "category": "academic", "level": "A2"},
-  {"english": "Source", "georgian": "წყარო", "pronunciation": "/sɔːrs/", "example_en": "Always check your sources.", "example_ka": "ყოველთვის შეამოწმე შენი წყაროები.", "category": "academic", "level": "A2"},
-  {"english": "Structure", "georgian": "სტრუქტურა", "pronunciation": "/ˈstrʌktʃər/", "example_en": "The essay needs a clear structure.", "example_ka": "ესეს მკაფიო სტრუქტურა სჭირდება.", "category": "academic", "level": "B1"},
-  {"english": "Perspective", "georgian": "თვალსაზრისი", "pronunciation": "/pərˈspɛktɪv/", "example_en": "From my perspective, this is wrong.", "example_ka": "ჩემი თვალსაზრისით, ეს არასწორია.", "category": "academic", "level": "B1"},
-  {"english": "Context", "georgian": "კონტექსტი", "pronunciation": "/ˈkɒntɛkst/", "example_en": "You need to understand the context.", "example_ka": "კონტექსტის გაგება გჭირდება.", "category": "academic", "level": "B1"},
-  {"english": "Paragraph", "georgian": "პარაგრაფი", "pronunciation": "/ˈpærəɡræf/", "example_en": "Start a new paragraph here.", "example_ka": "აქ ახალი პარაგრაფი დაიწყე.", "category": "academic", "level": "A2"},
-  {"english": "Argue", "georgian": "კამათი / არგუმენტირება", "pronunciation": "/ˈɑːrɡjuː/", "example_en": "The author argues that education is key.", "example_ka": "ავტორი ამტკიცებს, რომ განათლება მთავარია.", "category": "academic", "level": "B1"},
-  {"english": "Debate", "georgian": "დებატი", "pronunciation": "/dɪˈbeɪt/", "example_en": "There is a big debate about this issue.", "example_ka": "ამ საკითხზე დიდი დებატებია.", "category": "academic", "level": "B1"},
-  {"english": "Paraphrase", "georgian": "პერიფრაზირება", "pronunciation": "/ˈpærəfreɪz/", "example_en": "Paraphrase the text in your own words.", "example_ka": "ტექსტი შენი სიტყვებით გადმოეცი.", "category": "academic", "level": "B2"},
-  {"english": "Plagiarism", "georgian": "პლაგიატი", "pronunciation": "/ˈpleɪdʒərɪzəm/", "example_en": "Plagiarism is a serious offense.", "example_ka": "პლაგიატი სერიოზული დარღვევაა.", "category": "academic", "level": "B2"},
-  {"english": "Cite", "georgian": "ციტირება", "pronunciation": "/saɪt/", "example_en": "You must cite your sources.", "example_ka": "წყაროების ციტირება აუცილებელია.", "category": "academic", "level": "B1"},
-  {"english": "Essay", "georgian": "ესე", "pronunciation": "/ˈɛseɪ/", "example_en": "Write a 500-word essay.", "example_ka": "დაწერე 500-სიტყვიანი ესე.", "category": "academic", "level": "A2"},
-  {"english": "Lecture", "georgian": "ლექცია", "pronunciation": "/ˈlɛktʃər/", "example_en": "The lecture starts at 9 AM.", "example_ka": "ლექცია 9 საათზე იწყება.", "category": "academic", "level": "A2"},
-  {"english": "Assignment", "georgian": "დავალება", "pronunciation": "/əˈsaɪnmənt/", "example_en": "The assignment is due Friday.", "example_ka": "დავალების ჩაბარებაა პარასკევს.", "category": "academic", "level": "A2"},
-  {"english": "Deadline", "georgian": "ბოლო ვადა", "pronunciation": "/ˈdɛdlaɪn/", "example_en": "The deadline is tomorrow.", "example_ka": "ბოლო ვადა ხვალაა.", "category": "academic", "level": "A2"},
-  {"english": "Relevant", "georgian": "შესაბამისი", "pronunciation": "/ˈrɛlɪvənt/", "example_en": "Is this information relevant?", "example_ka": "ეს ინფორმაცია შესაბამისია?", "category": "academic", "level": "B1"},
-  {"english": "Accurate", "georgian": "ზუსტი", "pronunciation": "/ˈækjʊrət/", "example_en": "The report is accurate.", "example_ka": "ანგარიში ზუსტია.", "category": "academic", "level": "B1"},
-  {"english": "Abstract", "georgian": "აბსტრაქტი / აბსტრაქტული", "pronunciation": "/ˈæbstrækt/", "example_en": "Read the abstract before the full paper.", "example_ka": "სრულ ნაშრომამდე აბსტრაქტი წაიკითხე.", "category": "academic", "level": "B2"}
+  {
+    "english": "Analyze",
+    "georgian": "ანალიზი",
+    "pronunciation": "/ˈænəlaɪz/",
+    "example_en": "Analyze the data carefully.",
+    "example_ka": "ყურადღებით გააანალიზე მონაცემები.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Evidence",
+    "georgian": "მტკიცებულება",
+    "pronunciation": "/ˈɛvɪdəns/",
+    "example_en": "There is no evidence to support this.",
+    "example_ka": "ამის დასამტკიცებელი მტკიცებულება არ არსებობს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Research",
+    "georgian": "კვლევა",
+    "pronunciation": "/rɪˈsɜːrtʃ/",
+    "example_en": "She did a lot of research on the topic.",
+    "example_ka": "ამ თემაზე ბევრი კვლევა ჩაატარა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Conclusion",
+    "georgian": "დასკვნა",
+    "pronunciation": "/kənˈkluːʒən/",
+    "example_en": "In conclusion, the experiment was a success.",
+    "example_ka": "დასკვნის სახით, ექსპერიმენტი წარმატებული იყო.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Hypothesis",
+    "georgian": "ჰიპოთეზა",
+    "pronunciation": "/haɪˈpɒθəsɪs/",
+    "example_en": "We need to test this hypothesis.",
+    "example_ka": "ეს ჰიპოთეზა უნდა შევამოწმოთ.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Significant",
+    "georgian": "მნიშვნელოვანი",
+    "pronunciation": "/sɪɡˈnɪfɪkənt/",
+    "example_en": "The results are statistically significant.",
+    "example_ka": "შედეგები სტატისტიკურად მნიშვნელოვანია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Theory",
+    "georgian": "თეორია",
+    "pronunciation": "/ˈθɪəri/",
+    "example_en": "Darwin's theory of evolution.",
+    "example_ka": "დარვინის ევოლუციის თეორია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Method",
+    "georgian": "მეთოდი",
+    "pronunciation": "/ˈmɛθəd/",
+    "example_en": "What method did you use?",
+    "example_ka": "რა მეთოდი გამოიყენე?",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Evaluate",
+    "georgian": "შეფასება",
+    "pronunciation": "/ɪˈvæljueɪt/",
+    "example_en": "We need to evaluate the results.",
+    "example_ka": "შედეგების შეფასება გვჭირდება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Define",
+    "georgian": "განსაზღვრა",
+    "pronunciation": "/dɪˈfaɪn/",
+    "example_en": "Can you define this word?",
+    "example_ka": "შეგიძლია ეს სიტყვა განსაზღვრო?",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Compare",
+    "georgian": "შედარება",
+    "pronunciation": "/kəmˈpɛr/",
+    "example_en": "Compare the two products.",
+    "example_ka": "შეადარე ორი პროდუქტი.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Contrast",
+    "georgian": "კონტრასტი / განსხვავება",
+    "pronunciation": "/ˈkɒntræst/",
+    "example_en": "In contrast to last year, sales are up.",
+    "example_ka": "გასულ წელთან განსხვავებით, გაყიდვები გაიზარდა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Summary",
+    "georgian": "რეზიუმე / შეჯამება",
+    "pronunciation": "/ˈsʌməri/",
+    "example_en": "Write a summary of the article.",
+    "example_ka": "დაწერე სტატიის შეჯამება.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Source",
+    "georgian": "წყარო",
+    "pronunciation": "/sɔːrs/",
+    "example_en": "Always check your sources.",
+    "example_ka": "ყოველთვის შეამოწმე შენი წყაროები.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Structure",
+    "georgian": "სტრუქტურა",
+    "pronunciation": "/ˈstrʌktʃər/",
+    "example_en": "The essay needs a clear structure.",
+    "example_ka": "ესეს მკაფიო სტრუქტურა სჭირდება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Perspective",
+    "georgian": "თვალსაზრისი",
+    "pronunciation": "/pərˈspɛktɪv/",
+    "example_en": "From my perspective, this is wrong.",
+    "example_ka": "ჩემი თვალსაზრისით, ეს არასწორია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Context",
+    "georgian": "კონტექსტი",
+    "pronunciation": "/ˈkɒntɛkst/",
+    "example_en": "You need to understand the context.",
+    "example_ka": "კონტექსტის გაგება გჭირდება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Paragraph",
+    "georgian": "პარაგრაფი",
+    "pronunciation": "/ˈpærəɡræf/",
+    "example_en": "Start a new paragraph here.",
+    "example_ka": "აქ ახალი პარაგრაფი დაიწყე.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Argue",
+    "georgian": "კამათი / არგუმენტირება",
+    "pronunciation": "/ˈɑːrɡjuː/",
+    "example_en": "The author argues that education is key.",
+    "example_ka": "ავტორი ამტკიცებს, რომ განათლება მთავარია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Debate",
+    "georgian": "დებატი",
+    "pronunciation": "/dɪˈbeɪt/",
+    "example_en": "There is a big debate about this issue.",
+    "example_ka": "ამ საკითხზე დიდი დებატებია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Paraphrase",
+    "georgian": "პერიფრაზირება",
+    "pronunciation": "/ˈpærəfreɪz/",
+    "example_en": "Paraphrase the text in your own words.",
+    "example_ka": "ტექსტი შენი სიტყვებით გადმოეცი.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Plagiarism",
+    "georgian": "პლაგიატი",
+    "pronunciation": "/ˈpleɪdʒərɪzəm/",
+    "example_en": "Plagiarism is a serious offense.",
+    "example_ka": "პლაგიატი სერიოზული დარღვევაა.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Cite",
+    "georgian": "ციტირება",
+    "pronunciation": "/saɪt/",
+    "example_en": "You must cite your sources.",
+    "example_ka": "წყაროების ციტირება აუცილებელია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Essay",
+    "georgian": "ესე",
+    "pronunciation": "/ˈɛseɪ/",
+    "example_en": "Write a 500-word essay.",
+    "example_ka": "დაწერე 500-სიტყვიანი ესე.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Lecture",
+    "georgian": "ლექცია",
+    "pronunciation": "/ˈlɛktʃər/",
+    "example_en": "The lecture starts at 9 AM.",
+    "example_ka": "ლექცია 9 საათზე იწყება.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Assignment",
+    "georgian": "დავალება",
+    "pronunciation": "/əˈsaɪnmənt/",
+    "example_en": "The assignment is due Friday.",
+    "example_ka": "დავალების ჩაბარებაა პარასკევს.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Deadline",
+    "georgian": "ბოლო ვადა",
+    "pronunciation": "/ˈdɛdlaɪn/",
+    "example_en": "The deadline is tomorrow.",
+    "example_ka": "ბოლო ვადა ხვალაა.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Relevant",
+    "georgian": "შესაბამისი",
+    "pronunciation": "/ˈrɛlɪvənt/",
+    "example_en": "Is this information relevant?",
+    "example_ka": "ეს ინფორმაცია შესაბამისია?",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Accurate",
+    "georgian": "ზუსტი",
+    "pronunciation": "/ˈækjʊrət/",
+    "example_en": "The report is accurate.",
+    "example_ka": "ანგარიში ზუსტია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Abstract",
+    "georgian": "აბსტრაქტი / აბსტრაქტული",
+    "pronunciation": "/ˈæbstrækt/",
+    "example_en": "Read the abstract before the full paper.",
+    "example_ka": "სრულ ნაშრომამდე აბსტრაქტი წაიკითხე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Thesis",
+    "georgian": "თეზისი",
+    "pronunciation": "/ˈθiːsɪs/",
+    "example_en": "She defended her thesis successfully.",
+    "example_ka": "მან წარმატებით დაიცვა თეზისი.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Dissertation",
+    "georgian": "დისერტაცია",
+    "pronunciation": "/ˌdɪsərˈteɪʃən/",
+    "example_en": "He is writing his dissertation.",
+    "example_ka": "ის დისერტაციას წერს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Bibliography",
+    "georgian": "ბიბლიოგრაფია",
+    "pronunciation": "/ˌbɪbliˈɒɡrəfi/",
+    "example_en": "Include a bibliography at the end.",
+    "example_ka": "ბოლოს ბიბლიოგრაფია დაამატე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Curriculum",
+    "georgian": "სასწავლო გეგმა",
+    "pronunciation": "/kəˈrɪkjələm/",
+    "example_en": "The curriculum was updated this year.",
+    "example_ka": "სასწავლო გეგმა წელს განახლდა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Syllabus",
+    "georgian": "სილაბუსი",
+    "pronunciation": "/ˈsɪləbəs/",
+    "example_en": "Check the syllabus for details.",
+    "example_ka": "დეტალებისთვის სილაბუსი შეამოწმე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Semester",
+    "georgian": "სემესტრი",
+    "pronunciation": "/sɪˈmɛstər/",
+    "example_en": "The semester starts in September.",
+    "example_ka": "სემესტრი სექტემბერში იწყება.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Tutor",
+    "georgian": "რეპეტიტორი",
+    "pronunciation": "/ˈtjuːtər/",
+    "example_en": "She hired a math tutor.",
+    "example_ka": "მან მათემატიკის რეპეტიტორი დაიქირავა.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Professor",
+    "georgian": "პროფესორი",
+    "pronunciation": "/prəˈfɛsər/",
+    "example_en": "The professor gave an interesting lecture.",
+    "example_ka": "პროფესორმა საინტერესო ლექცია წაიკითხა.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Scholar",
+    "georgian": "მეცნიერი",
+    "pronunciation": "/ˈskɒlər/",
+    "example_en": "He is a renowned scholar.",
+    "example_ka": "ის ცნობილი მეცნიერია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Academic",
+    "georgian": "აკადემიური",
+    "pronunciation": "/ˌækəˈdɛmɪk/",
+    "example_en": "Her academic record is excellent.",
+    "example_ka": "მისი აკადემიური მოსწრება შესანიშნავია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Campus",
+    "georgian": "კამპუსი",
+    "pronunciation": "/ˈkæmpəs/",
+    "example_en": "The campus is very large.",
+    "example_ka": "კამპუსი ძალიან დიდია.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Faculty",
+    "georgian": "ფაკულტეტი",
+    "pronunciation": "/ˈfækəlti/",
+    "example_en": "She works in the science faculty.",
+    "example_ka": "ის მეცნიერების ფაკულტეტზე მუშაობს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Dean",
+    "georgian": "დეკანი",
+    "pronunciation": "/diːn/",
+    "example_en": "The dean approved the request.",
+    "example_ka": "დეკანმა მოთხოვნა დაამტკიცა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Diploma",
+    "georgian": "დიპლომი",
+    "pronunciation": "/dɪˈploʊmə/",
+    "example_en": "She received her diploma.",
+    "example_ka": "მან დიპლომი მიიღო.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Degree",
+    "georgian": "ხარისხი",
+    "pronunciation": "/dɪˈɡriː/",
+    "example_en": "He has a degree in engineering.",
+    "example_ka": "მას ინჟინერიის ხარისხი აქვს.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Graduate",
+    "georgian": "კურსდამთავრებული",
+    "pronunciation": "/ˈɡrædʒuət/",
+    "example_en": "She is a university graduate.",
+    "example_ka": "ის უნივერსიტეტის კურსდამთავრებულია.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Undergraduate",
+    "georgian": "ბაკალავრი",
+    "pronunciation": "/ˌʌndərˈɡrædʒuət/",
+    "example_en": "He is an undergraduate student.",
+    "example_ka": "ის ბაკალავრიატის სტუდენტია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Enrollment",
+    "georgian": "ჩარიცხვა",
+    "pronunciation": "/ɪnˈroʊlmənt/",
+    "example_en": "Enrollment begins next week.",
+    "example_ka": "ჩარიცხვა მომავალ კვირას იწყება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Scholarship",
+    "georgian": "სტიპენდია",
+    "pronunciation": "/ˈskɒlərʃɪp/",
+    "example_en": "She won a scholarship.",
+    "example_ka": "მან სტიპენდია მოიგო.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Tuition",
+    "georgian": "სწავლის საფასური",
+    "pronunciation": "/tjuˈɪʃən/",
+    "example_en": "Tuition fees are expensive.",
+    "example_ka": "სწავლის საფასური ძვირია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Seminar",
+    "georgian": "სემინარი",
+    "pronunciation": "/ˈsɛmɪnɑːr/",
+    "example_en": "I attended a seminar on history.",
+    "example_ka": "ისტორიის სემინარს დავესწარი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Workshop",
+    "georgian": "სემინარი",
+    "pronunciation": "/ˈwɜːrkʃɒp/",
+    "example_en": "The writing workshop was helpful.",
+    "example_ka": "წერის სემინარი სასარგებლო იყო.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Symposium",
+    "georgian": "სიმპოზიუმი",
+    "pronunciation": "/sɪmˈpoʊziəm/",
+    "example_en": "The symposium attracted many experts.",
+    "example_ka": "სიმპოზიუმმა ბევრი ექსპერტი მიიზიდა.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Conference",
+    "georgian": "კონფერენცია",
+    "pronunciation": "/ˈkɒnfərəns/",
+    "example_en": "She presented at the conference.",
+    "example_ka": "მან კონფერენციაზე წარადგინა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Publication",
+    "georgian": "პუბლიკაცია",
+    "pronunciation": "/ˌpʌblɪˈkeɪʃən/",
+    "example_en": "His publication was well received.",
+    "example_ka": "მისი პუბლიკაცია კარგად მიიღეს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Journal",
+    "georgian": "ჟურნალი",
+    "pronunciation": "/ˈdʒɜːrnəl/",
+    "example_en": "The article was published in a journal.",
+    "example_ka": "სტატია ჟურნალში გამოქვეყნდა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Manuscript",
+    "georgian": "ხელნაწერი",
+    "pronunciation": "/ˈmænjuskrɪpt/",
+    "example_en": "The manuscript needs editing.",
+    "example_ka": "ხელნაწერს რედაქტირება სჭირდება.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Annotation",
+    "georgian": "ანოტაცია",
+    "pronunciation": "/ˌænəˈteɪʃən/",
+    "example_en": "Add annotations to the text.",
+    "example_ka": "ტექსტს ანოტაციები დაამატე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Critique",
+    "georgian": "კრიტიკა",
+    "pronunciation": "/krɪˈtiːk/",
+    "example_en": "She wrote a critique of the book.",
+    "example_ka": "მან წიგნის კრიტიკა დაწერა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Interpret",
+    "georgian": "ინტერპრეტაცია",
+    "pronunciation": "/ɪnˈtɜːrprɪt/",
+    "example_en": "How do you interpret this data?",
+    "example_ka": "როგორ ინტერპრეტირებ ამ მონაცემებს?",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Classify",
+    "georgian": "კლასიფიცირება",
+    "pronunciation": "/ˈklæsɪfaɪ/",
+    "example_en": "Classify the items by type.",
+    "example_ka": "ნივთები ტიპის მიხედვით კლასიფიცირე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Summarize",
+    "georgian": "შეჯამება",
+    "pronunciation": "/ˈsʌməraɪz/",
+    "example_en": "Summarize the main points.",
+    "example_ka": "მთავარი პუნქტები შეაჯამე.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Demonstrate",
+    "georgian": "დემონსტრირება",
+    "pronunciation": "/ˈdɛmənstreɪt/",
+    "example_en": "Demonstrate how it works.",
+    "example_ka": "აჩვენე როგორ მუშაობს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Illustrate",
+    "georgian": "ილუსტრირება",
+    "pronunciation": "/ˈɪləstreɪt/",
+    "example_en": "Illustrate your point with examples.",
+    "example_ka": "შენი აზრი მაგალითებით ილუსტრირე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Imply",
+    "georgian": "მინიშნება",
+    "pronunciation": "/ɪmˈplaɪ/",
+    "example_en": "What does the author imply?",
+    "example_ka": "რას მინიშნებს ავტორი?",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Infer",
+    "georgian": "დასკვნის გაკეთება",
+    "pronunciation": "/ɪnˈfɜːr/",
+    "example_en": "What can you infer from this?",
+    "example_ka": "რა დასკვნის გაკეთება შეგიძლია აქედან?",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Assume",
+    "georgian": "ვარაუდი",
+    "pronunciation": "/əˈsjuːm/",
+    "example_en": "Do not assume anything.",
+    "example_ka": "არაფერი ივარაუდო.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Justify",
+    "georgian": "გამართლება",
+    "pronunciation": "/ˈdʒʌstɪfaɪ/",
+    "example_en": "Justify your answer.",
+    "example_ka": "შენი პასუხი გაამართლე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Specify",
+    "georgian": "დაზუსტება",
+    "pronunciation": "/ˈspɛsɪfaɪ/",
+    "example_en": "Please specify the requirements.",
+    "example_ka": "გთხოვთ, მოთხოვნები დააზუსტოთ.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Elaborate",
+    "georgian": "დაწვრილებით",
+    "pronunciation": "/ɪˈlæbəreɪt/",
+    "example_en": "Can you elaborate on that?",
+    "example_ka": "შეგიძლია დაწვრილებით ახსნა?",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Examine",
+    "georgian": "შესწავლა",
+    "pronunciation": "/ɪɡˈzæmɪn/",
+    "example_en": "Examine the evidence carefully.",
+    "example_ka": "მტკიცებულება ყურადღებით შეისწავლე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Investigate",
+    "georgian": "გამოძიება",
+    "pronunciation": "/ɪnˈvɛstɪɡeɪt/",
+    "example_en": "We need to investigate the issue.",
+    "example_ka": "საკითხის გამოძიება გვჭირდება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Observe",
+    "georgian": "დაკვირვება",
+    "pronunciation": "/əbˈzɜːrv/",
+    "example_en": "Observe the changes carefully.",
+    "example_ka": "ცვლილებებს ყურადღებით დააკვირდი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Identify",
+    "georgian": "იდენტიფიცირება",
+    "pronunciation": "/aɪˈdɛntɪfaɪ/",
+    "example_en": "Identify the main problem.",
+    "example_ka": "მთავარი პრობლემა იდენტიფიცირე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Establish",
+    "georgian": "დადგენა",
+    "pronunciation": "/ɪˈstæblɪʃ/",
+    "example_en": "We need to establish the facts.",
+    "example_ka": "ფაქტების დადგენა გვჭირდება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Determine",
+    "georgian": "დადგენა",
+    "pronunciation": "/dɪˈtɜːrmɪn/",
+    "example_en": "Determine the cause of the problem.",
+    "example_ka": "პრობლემის მიზეზი დაადგინე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Contribute",
+    "georgian": "წვლილი",
+    "pronunciation": "/kənˈtrɪbjuːt/",
+    "example_en": "She contributed to the research.",
+    "example_ka": "მან კვლევაში წვლილი შეიტანა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Acquire",
+    "georgian": "შეძენა",
+    "pronunciation": "/əˈkwaɪər/",
+    "example_en": "Students acquire new skills.",
+    "example_ka": "სტუდენტები ახალ უნარებს იძენენ.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Achieve",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːv/",
+    "example_en": "She achieved excellent results.",
+    "example_ka": "მან შესანიშნავ შედეგებს მიაღწია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Adapt",
+    "georgian": "ადაპტირება",
+    "pronunciation": "/əˈdæpt/",
+    "example_en": "You must adapt to new methods.",
+    "example_ka": "ახალ მეთოდებს უნდა მოერგო.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Allocate",
+    "georgian": "გამოყოფა",
+    "pronunciation": "/ˈæləkeɪt/",
+    "example_en": "Allocate time for studying.",
+    "example_ka": "სწავლისთვის დრო გამოყავი.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Append",
+    "georgian": "დამატება",
+    "pronunciation": "/əˈpɛnd/",
+    "example_en": "Append the references at the end.",
+    "example_ka": "ცნობარები ბოლოს დაამატე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Approximate",
+    "georgian": "მიახლოებითი",
+    "pronunciation": "/əˈprɒksɪmət/",
+    "example_en": "Give an approximate number.",
+    "example_ka": "მიახლოებითი რიცხვი მითხარი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Assess",
+    "georgian": "შეფასება",
+    "pronunciation": "/əˈsɛs/",
+    "example_en": "The teacher will assess your work.",
+    "example_ka": "მასწავლებელი შენს ნამუშევარს შეაფასებს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Attribute",
+    "georgian": "მიწერა",
+    "pronunciation": "/əˈtrɪbjuːt/",
+    "example_en": "Attribute the quote to the author.",
+    "example_ka": "ციტატა ავტორს მიაწერე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Capacity",
+    "georgian": "ტევადობა",
+    "pronunciation": "/kəˈpæsɪti/",
+    "example_en": "The hall has a large capacity.",
+    "example_ka": "დარბაზს დიდი ტევადობა აქვს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Clarify",
+    "georgian": "დაზუსტება",
+    "pronunciation": "/ˈklærɪfaɪ/",
+    "example_en": "Please clarify your statement.",
+    "example_ka": "გთხოვთ, თქვენი განცხადება დააზუსტოთ.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Coherent",
+    "georgian": "თანმიმდევრული",
+    "pronunciation": "/koʊˈhɪərənt/",
+    "example_en": "Write a coherent essay.",
+    "example_ka": "თანმიმდევრული ესე დაწერე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Compile",
+    "georgian": "შედგენა",
+    "pronunciation": "/kəmˈpaɪl/",
+    "example_en": "Compile a list of references.",
+    "example_ka": "ცნობარების სია შეადგინე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Comprehensive",
+    "georgian": "ყოვლისმომცველი",
+    "pronunciation": "/ˌkɒmprɪˈhɛnsɪv/",
+    "example_en": "This is a comprehensive study.",
+    "example_ka": "ეს ყოვლისმომცველი კვლევაა.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Concept",
+    "georgian": "კონცეფცია",
+    "pronunciation": "/ˈkɒnsɛpt/",
+    "example_en": "Explain the concept clearly.",
+    "example_ka": "კონცეფცია ნათლად ახსენი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Conclude",
+    "georgian": "დასკვნის გაკეთება",
+    "pronunciation": "/kənˈkluːd/",
+    "example_en": "We can conclude that it works.",
+    "example_ka": "შეგვიძლია დავასკვნათ, რომ მუშაობს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Conduct",
+    "georgian": "ჩატარება",
+    "pronunciation": "/kənˈdʌkt/",
+    "example_en": "We will conduct an experiment.",
+    "example_ka": "ექსპერიმენტს ჩავატარებთ.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Consist",
+    "georgian": "შედგება",
+    "pronunciation": "/kənˈsɪst/",
+    "example_en": "The team consists of five members.",
+    "example_ka": "გუნდი ხუთი წევრისგან შედგება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Construct",
+    "georgian": "აგება",
+    "pronunciation": "/kənˈstrʌkt/",
+    "example_en": "Construct a logical argument.",
+    "example_ka": "ლოგიკური არგუმენტი ააგე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Contradict",
+    "georgian": "წინააღმდეგობა",
+    "pronunciation": "/ˌkɒntrəˈdɪkt/",
+    "example_en": "The results contradict the theory.",
+    "example_ka": "შედეგები თეორიას ეწინააღმდეგება.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Correlate",
+    "georgian": "კორელაცია",
+    "pronunciation": "/ˈkɒrəleɪt/",
+    "example_en": "The two variables correlate.",
+    "example_ka": "ორი ცვლადი კორელირებს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Criteria",
+    "georgian": "კრიტერიუმები",
+    "pronunciation": "/kraɪˈtɪəriə/",
+    "example_en": "What are the criteria for success?",
+    "example_ka": "რა არის წარმატების კრიტერიუმები?",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Data",
+    "georgian": "მონაცემები",
+    "pronunciation": "/ˈdeɪtə/",
+    "example_en": "The data supports the theory.",
+    "example_ka": "მონაცემები თეორიას ამყარებს.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Deduce",
+    "georgian": "გამოყვანა",
+    "pronunciation": "/dɪˈdjuːs/",
+    "example_en": "We can deduce the answer.",
+    "example_ka": "პასუხის გამოყვანა შეგვიძლია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Derive",
+    "georgian": "გამომდინარეობა",
+    "pronunciation": "/dɪˈraɪv/",
+    "example_en": "This word derives from Latin.",
+    "example_ka": "ეს სიტყვა ლათინურიდან მომდინარეობს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Deviate",
+    "georgian": "გადახვევა",
+    "pronunciation": "/ˈdiːvieɪt/",
+    "example_en": "Do not deviate from the topic.",
+    "example_ka": "თემიდან არ გადაუხვიო.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Dimension",
+    "georgian": "განზომილება",
+    "pronunciation": "/dɪˈmɛnʃən/",
+    "example_en": "Consider every dimension of the problem.",
+    "example_ka": "პრობლემის ყველა განზომილება განიხილე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Distinct",
+    "georgian": "განსხვავებული",
+    "pronunciation": "/dɪˈstɪŋkt/",
+    "example_en": "These are two distinct categories.",
+    "example_ka": "ეს ორი განსხვავებული კატეგორიაა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Distort",
+    "georgian": "დამახინჯება",
+    "pronunciation": "/dɪˈstɔːrt/",
+    "example_en": "Do not distort the facts.",
+    "example_ka": "ფაქტები არ დაამახინჯო.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Dominate",
+    "georgian": "დომინირება",
+    "pronunciation": "/ˈdɒmɪneɪt/",
+    "example_en": "One theory dominates the field.",
+    "example_ka": "ერთი თეორია დომინირებს სფეროში.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Draft",
+    "georgian": "მონახაზი",
+    "pronunciation": "/dræft/",
+    "example_en": "Write a first draft.",
+    "example_ka": "პირველი მონახაზი დაწერე.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Emphasize",
+    "georgian": "ხაზგასმა",
+    "pronunciation": "/ˈɛmfəsaɪz/",
+    "example_en": "I want to emphasize this point.",
+    "example_ka": "ამ პუნქტზე ხაზის გასმა მინდა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Empirical",
+    "georgian": "ემპირიული",
+    "pronunciation": "/ɪmˈpɪrɪkəl/",
+    "example_en": "We need empirical evidence.",
+    "example_ka": "ემპირიული მტკიცებულება გვჭირდება.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Enable",
+    "georgian": "საშუალება",
+    "pronunciation": "/ɪˈneɪbl/",
+    "example_en": "Technology enables faster research.",
+    "example_ka": "ტექნოლოგია სწრაფ კვლევას უზრუნველყოფს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Encounter",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/ɪnˈkaʊntər/",
+    "example_en": "You may encounter difficulties.",
+    "example_ka": "სირთულეებს შეიძლება წააწყდე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Enhance",
+    "georgian": "გაძლიერება",
+    "pronunciation": "/ɪnˈhæns/",
+    "example_en": "Enhance the quality of your work.",
+    "example_ka": "ნამუშევრის ხარისხი გააუმჯობესე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Ensure",
+    "georgian": "უზრუნველყოფა",
+    "pronunciation": "/ɪnˈʃʊər/",
+    "example_en": "Ensure accuracy in your work.",
+    "example_ka": "ნამუშევარში სიზუსტე უზრუნველყავი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Entity",
+    "georgian": "ერთეული",
+    "pronunciation": "/ˈɛntɪti/",
+    "example_en": "Each entity has unique properties.",
+    "example_ka": "თითოეულ ერთეულს უნიკალური თვისებები აქვს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Equivalent",
+    "georgian": "ექვივალენტი",
+    "pronunciation": "/ɪˈkwɪvələnt/",
+    "example_en": "Find the equivalent expression.",
+    "example_ka": "ექვივალენტური გამოსახულება იპოვე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Erroneous",
+    "georgian": "მცდარი",
+    "pronunciation": "/ɪˈroʊniəs/",
+    "example_en": "The conclusion is erroneous.",
+    "example_ka": "დასკვნა მცდარია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Ethical",
+    "georgian": "ეთიკური",
+    "pronunciation": "/ˈɛθɪkəl/",
+    "example_en": "Consider the ethical implications.",
+    "example_ka": "ეთიკური შედეგები განიხილე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Evident",
+    "georgian": "აშკარა",
+    "pronunciation": "/ˈɛvɪdənt/",
+    "example_en": "The answer is evident.",
+    "example_ka": "პასუხი აშკარაა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Exceed",
+    "georgian": "გადაჭარბება",
+    "pronunciation": "/ɪkˈsiːd/",
+    "example_en": "Do not exceed the word limit.",
+    "example_ka": "სიტყვების ლიმიტს ნუ გადააჭარბებ.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Exclude",
+    "georgian": "გამორიცხვა",
+    "pronunciation": "/ɪkˈskluːd/",
+    "example_en": "Exclude irrelevant data.",
+    "example_ka": "შეუსაბამო მონაცემები გამორიცხე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Exhibit",
+    "georgian": "გამოფენა",
+    "pronunciation": "/ɪɡˈzɪbɪt/",
+    "example_en": "The results exhibit a clear pattern.",
+    "example_ka": "შედეგები მკაფიო ნიმუშს ავლენს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Explicit",
+    "georgian": "მკაფიო",
+    "pronunciation": "/ɪkˈsplɪsɪt/",
+    "example_en": "Be explicit in your explanation.",
+    "example_ka": "ახსნაში მკაფიო იყავი.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Extract",
+    "georgian": "ამოღება",
+    "pronunciation": "/ɪkˈstrækt/",
+    "example_en": "Extract the main ideas.",
+    "example_ka": "მთავარი იდეები ამოიღე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Factor",
+    "georgian": "ფაქტორი",
+    "pronunciation": "/ˈfæktər/",
+    "example_en": "Consider every factor.",
+    "example_ka": "ყველა ფაქტორი განიხილე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Feasible",
+    "georgian": "შესაძლებელი",
+    "pronunciation": "/ˈfiːzəbl/",
+    "example_en": "Is this plan feasible?",
+    "example_ka": "ეს გეგმა შესაძლებელია?",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Fluctuate",
+    "georgian": "მერყეობა",
+    "pronunciation": "/ˈflʌktʃueɪt/",
+    "example_en": "The results fluctuate over time.",
+    "example_ka": "შედეგები დროთა განმავლობაში მერყეობს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Focus",
+    "georgian": "ფოკუსირება",
+    "pronunciation": "/ˈfoʊkəs/",
+    "example_en": "Focus on the main topic.",
+    "example_ka": "მთავარ თემაზე ფოკუსირდი.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Formulate",
+    "georgian": "ფორმულირება",
+    "pronunciation": "/ˈfɔːrmjuleɪt/",
+    "example_en": "Formulate your hypothesis.",
+    "example_ka": "შენი ჰიპოთეზა ჩამოაყალიბე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Framework",
+    "georgian": "ჩარჩო",
+    "pronunciation": "/ˈfreɪmwɜːrk/",
+    "example_en": "Use a theoretical framework.",
+    "example_ka": "თეორიული ჩარჩო გამოიყენე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Fundamental",
+    "georgian": "ფუნდამენტური",
+    "pronunciation": "/ˌfʌndəˈmɛntəl/",
+    "example_en": "This is a fundamental concept.",
+    "example_ka": "ეს ფუნდამენტური კონცეფციაა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Generate",
+    "georgian": "გენერირება",
+    "pronunciation": "/ˈdʒɛnəreɪt/",
+    "example_en": "Generate new ideas.",
+    "example_ka": "ახალი იდეები გენერირე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Guideline",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/ˈɡaɪdlaɪn/",
+    "example_en": "Follow the guidelines carefully.",
+    "example_ka": "სახელმძღვანელო ყურადღებით დაიცავი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Hence",
+    "georgian": "აქედან",
+    "pronunciation": "/hɛns/",
+    "example_en": "Hence the results are unreliable.",
+    "example_ka": "აქედან გამომდინარე, შედეგები არასანდოა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Ideology",
+    "georgian": "იდეოლოგია",
+    "pronunciation": "/ˌaɪdiˈɒlədʒi/",
+    "example_en": "Political ideology influences policy.",
+    "example_ka": "პოლიტიკური იდეოლოგია პოლიტიკაზე მოქმედებს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Impact",
+    "georgian": "გავლენა",
+    "pronunciation": "/ˈɪmpækt/",
+    "example_en": "The study had a significant impact.",
+    "example_ka": "კვლევას მნიშვნელოვანი გავლენა ჰქონდა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Implement",
+    "georgian": "განხორციელება",
+    "pronunciation": "/ˈɪmplɪmɛnt/",
+    "example_en": "Implement the new policy.",
+    "example_ka": "ახალი პოლიტიკა განახორციელე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Implicit",
+    "georgian": "ნაგულისხმევი",
+    "pronunciation": "/ɪmˈplɪsɪt/",
+    "example_en": "The meaning is implicit.",
+    "example_ka": "მნიშვნელობა ნაგულისხმევია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Incidence",
+    "georgian": "სიხშირე",
+    "pronunciation": "/ˈɪnsɪdəns/",
+    "example_en": "The incidence of errors is high.",
+    "example_ka": "შეცდომების სიხშირე მაღალია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Inclination",
+    "georgian": "მიდრეკილება",
+    "pronunciation": "/ˌɪnklɪˈneɪʃən/",
+    "example_en": "She has an inclination for science.",
+    "example_ka": "მას მეცნიერებისკენ მიდრეკილება აქვს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Incorporate",
+    "georgian": "ჩართვა",
+    "pronunciation": "/ɪnˈkɔːrpəreɪt/",
+    "example_en": "Incorporate feedback into your work.",
+    "example_ka": "უკუკავშირი ნამუშევარში ჩართე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Indicate",
+    "georgian": "მითითება",
+    "pronunciation": "/ˈɪndɪkeɪt/",
+    "example_en": "The results indicate a trend.",
+    "example_ka": "შედეგები ტენდენციაზე მიუთითებს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Inherent",
+    "georgian": "თანდაყოლილი",
+    "pronunciation": "/ɪnˈhɪərənt/",
+    "example_en": "There is an inherent risk.",
+    "example_ka": "არსებობს თანდაყოლილი რისკი.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Initial",
+    "georgian": "საწყისი",
+    "pronunciation": "/ɪˈnɪʃəl/",
+    "example_en": "The initial results are promising.",
+    "example_ka": "საწყისი შედეგები იმედისმომცემია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Innovate",
+    "georgian": "ინოვაცია",
+    "pronunciation": "/ˈɪnəveɪt/",
+    "example_en": "We must innovate to succeed.",
+    "example_ka": "წარმატებისთვის ინოვაცია გვჭირდება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Integral",
+    "georgian": "განუყოფელი",
+    "pronunciation": "/ˈɪntɪɡrəl/",
+    "example_en": "Reading is integral to learning.",
+    "example_ka": "კითხვა სწავლის განუყოფელი ნაწილია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Interaction",
+    "georgian": "ურთიერთქმედება",
+    "pronunciation": "/ˌɪntərˈækʃən/",
+    "example_en": "Study the interaction between variables.",
+    "example_ka": "ცვლადებს შორის ურთიერთქმედება შეისწავლე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Interval",
+    "georgian": "ინტერვალი",
+    "pronunciation": "/ˈɪntərvəl/",
+    "example_en": "Measure at regular intervals.",
+    "example_ka": "რეგულარული ინტერვალებით გაზომე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Isolate",
+    "georgian": "იზოლირება",
+    "pronunciation": "/ˈaɪsəleɪt/",
+    "example_en": "Isolate the key variable.",
+    "example_ka": "მთავარი ცვლადი იზოლირე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Issue",
+    "georgian": "საკითხი",
+    "pronunciation": "/ˈɪʃuː/",
+    "example_en": "This is a complex issue.",
+    "example_ka": "ეს რთული საკითხია.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Label",
+    "georgian": "იარლიყი",
+    "pronunciation": "/ˈleɪbəl/",
+    "example_en": "Label the diagram correctly.",
+    "example_ka": "დიაგრამა სწორად მონიშნე.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Layer",
+    "georgian": "ფენა",
+    "pronunciation": "/ˈleɪər/",
+    "example_en": "Each layer adds complexity.",
+    "example_ka": "თითოეული ფენა სირთულეს ამატებს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Likewise",
+    "georgian": "ანალოგიურად",
+    "pronunciation": "/ˈlaɪkwaɪz/",
+    "example_en": "Likewise, the second group showed improvement.",
+    "example_ka": "ანალოგიურად, მეორე ჯგუფმაც გაუმჯობესება აჩვენა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Logical",
+    "georgian": "ლოგიკური",
+    "pronunciation": "/ˈlɒdʒɪkəl/",
+    "example_en": "Present a logical argument.",
+    "example_ka": "ლოგიკური არგუმენტი წარმოადგინე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Maintain",
+    "georgian": "შენარჩუნება",
+    "pronunciation": "/meɪnˈteɪn/",
+    "example_en": "Maintain academic integrity.",
+    "example_ka": "აკადემიური კეთილსინდისიერება შეინარჩუნე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Manipulate",
+    "georgian": "მანიპულირება",
+    "pronunciation": "/məˈnɪpjuleɪt/",
+    "example_en": "Do not manipulate the data.",
+    "example_ka": "მონაცემებით ნუ მანიპულირებ.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Margin",
+    "georgian": "ზღვარი",
+    "pronunciation": "/ˈmɑːrdʒɪn/",
+    "example_en": "The margin of error is small.",
+    "example_ka": "შეცდომის ზღვარი მცირეა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Maximize",
+    "georgian": "მაქსიმიზაცია",
+    "pronunciation": "/ˈmæksɪmaɪz/",
+    "example_en": "Maximize your study time.",
+    "example_ka": "სწავლის დრო მაქსიმალურად გამოიყენე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Mechanism",
+    "georgian": "მექანიზმი",
+    "pronunciation": "/ˈmɛkənɪzəm/",
+    "example_en": "Explain the mechanism.",
+    "example_ka": "მექანიზმი ახსენი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Medium",
+    "georgian": "საშუალო",
+    "pronunciation": "/ˈmiːdiəm/",
+    "example_en": "Use a different medium.",
+    "example_ka": "სხვა საშუალება გამოიყენე.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Minimize",
+    "georgian": "მინიმიზაცია",
+    "pronunciation": "/ˈmɪnɪmaɪz/",
+    "example_en": "Minimize errors in your work.",
+    "example_ka": "ნამუშევარში შეცდომები მინიმუმამდე დაიყვანე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Modify",
+    "georgian": "მოდიფიცირება",
+    "pronunciation": "/ˈmɒdɪfaɪ/",
+    "example_en": "Modify the hypothesis.",
+    "example_ka": "ჰიპოთეზა მოდიფიცირე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Monitor",
+    "georgian": "მონიტორინგი",
+    "pronunciation": "/ˈmɒnɪtər/",
+    "example_en": "Monitor the progress regularly.",
+    "example_ka": "პროგრესის რეგულარული მონიტორინგი გააკეთე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Negate",
+    "georgian": "უარყოფა",
+    "pronunciation": "/nɪˈɡeɪt/",
+    "example_en": "This does not negate the findings.",
+    "example_ka": "ეს აღმოჩენებს არ უარყოფს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Norm",
+    "georgian": "ნორმა",
+    "pronunciation": "/nɔːrm/",
+    "example_en": "This is the accepted norm.",
+    "example_ka": "ეს მიღებული ნორმაა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Notion",
+    "georgian": "წარმოდგენა",
+    "pronunciation": "/ˈnoʊʃən/",
+    "example_en": "Challenge the traditional notion.",
+    "example_ka": "ტრადიციულ წარმოდგენას გაუწიე გამოწვევა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Objective",
+    "georgian": "ობიექტური",
+    "pronunciation": "/əbˈdʒɛktɪv/",
+    "example_en": "Be objective in your analysis.",
+    "example_ka": "ანალიზში ობიექტური იყავი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Obtain",
+    "georgian": "მოპოვება",
+    "pronunciation": "/əbˈteɪn/",
+    "example_en": "Obtain permission first.",
+    "example_ka": "ჯერ ნებართვა მოიპოვე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Occur",
+    "georgian": "ხდება",
+    "pronunciation": "/əˈkɜːr/",
+    "example_en": "Errors occur frequently.",
+    "example_ka": "შეცდომები ხშირად ხდება.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Ongoing",
+    "georgian": "მიმდინარე",
+    "pronunciation": "/ˈɒnɡoʊɪŋ/",
+    "example_en": "The research is ongoing.",
+    "example_ka": "კვლევა მიმდინარეობს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Outcome",
+    "georgian": "შედეგი",
+    "pronunciation": "/ˈaʊtkʌm/",
+    "example_en": "The outcome was positive.",
+    "example_ka": "შედეგი დადებითი იყო.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Overlap",
+    "georgian": "გადაფარვა",
+    "pronunciation": "/ˌoʊvərˈlæp/",
+    "example_en": "The topics overlap.",
+    "example_ka": "თემები ერთმანეთს გადაფარავს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Parameter",
+    "georgian": "პარამეტრი",
+    "pronunciation": "/pəˈræmɪtər/",
+    "example_en": "Set the parameters first.",
+    "example_ka": "ჯერ პარამეტრები დააყენე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Participate",
+    "georgian": "მონაწილეობა",
+    "pronunciation": "/pɑːrˈtɪsɪpeɪt/",
+    "example_en": "Participate in the discussion.",
+    "example_ka": "დისკუსიაში მონაწილეობა მიიღე.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Perceive",
+    "georgian": "აღქმა",
+    "pronunciation": "/pərˈsiːv/",
+    "example_en": "How do you perceive this issue?",
+    "example_ka": "როგორ აღიქვამ ამ საკითხს?",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Period",
+    "georgian": "პერიოდი",
+    "pronunciation": "/ˈpɪəriəd/",
+    "example_en": "Over a long period of time.",
+    "example_ka": "ხანგრძლივი პერიოდის განმავლობაში.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Phenomenon",
+    "georgian": "ფენომენი",
+    "pronunciation": "/fɪˈnɒmɪnən/",
+    "example_en": "This is a natural phenomenon.",
+    "example_ka": "ეს ბუნებრივი ფენომენია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Philosophy",
+    "georgian": "ფილოსოფია",
+    "pronunciation": "/fɪˈlɒsəfi/",
+    "example_en": "She studied philosophy.",
+    "example_ka": "მან ფილოსოფია ისწავლა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Portion",
+    "georgian": "ნაწილი",
+    "pronunciation": "/ˈpɔːrʃən/",
+    "example_en": "A large portion of students passed.",
+    "example_ka": "სტუდენტების დიდმა ნაწილმა ჩააბარა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Potential",
+    "georgian": "პოტენციალი",
+    "pronunciation": "/pəˈtɛnʃəl/",
+    "example_en": "This has great potential.",
+    "example_ka": "ამას დიდი პოტენციალი აქვს.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Precede",
+    "georgian": "წინ უსწრებს",
+    "pronunciation": "/prɪˈsiːd/",
+    "example_en": "The introduction precedes the body.",
+    "example_ka": "შესავალი ძირითად ნაწილს წინ უსწრებს.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Precise",
+    "georgian": "ზუსტი",
+    "pronunciation": "/prɪˈsaɪs/",
+    "example_en": "Be precise in your language.",
+    "example_ka": "ენაში ზუსტი იყავი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Predict",
+    "georgian": "წინასწარმეტყველება",
+    "pronunciation": "/prɪˈdɪkt/",
+    "example_en": "We cannot predict the outcome.",
+    "example_ka": "შედეგის წინასწარმეტყველება არ შეგვიძლია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Predominant",
+    "georgian": "უპირატესი",
+    "pronunciation": "/prɪˈdɒmɪnənt/",
+    "example_en": "The predominant view is different.",
+    "example_ka": "უპირატესი შეხედულება განსხვავებულია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Preliminary",
+    "georgian": "წინასწარი",
+    "pronunciation": "/prɪˈlɪmɪnəri/",
+    "example_en": "These are preliminary results.",
+    "example_ka": "ეს წინასწარი შედეგებია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Presume",
+    "georgian": "ვარაუდი",
+    "pronunciation": "/prɪˈzjuːm/",
+    "example_en": "We presume this is correct.",
+    "example_ka": "ვვარაუდობთ, რომ ეს სწორია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Prevalent",
+    "georgian": "გავრცელებული",
+    "pronunciation": "/ˈprɛvələnt/",
+    "example_en": "This disease is prevalent.",
+    "example_ka": "ეს დაავადება გავრცელებულია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Principle",
+    "georgian": "პრინციპი",
+    "pronunciation": "/ˈprɪnsɪpəl/",
+    "example_en": "The principle is simple.",
+    "example_ka": "პრინციპი მარტივია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Prior",
+    "georgian": "წინა",
+    "pronunciation": "/ˈpraɪər/",
+    "example_en": "Read the prior chapter.",
+    "example_ka": "წინა თავი წაიკითხე.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Proceed",
+    "georgian": "გაგრძელება",
+    "pronunciation": "/prəˈsiːd/",
+    "example_en": "Proceed to the next section.",
+    "example_ka": "შემდეგ სექციაზე გადადი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Process",
+    "georgian": "პროცესი",
+    "pronunciation": "/ˈprɒsɛs/",
+    "example_en": "Explain the whole process.",
+    "example_ka": "მთელი პროცესი ახსენი.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Prohibit",
+    "georgian": "აკრძალვა",
+    "pronunciation": "/prəˈhɪbɪt/",
+    "example_en": "Plagiarism is prohibited.",
+    "example_ka": "პლაგიატი აკრძალულია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Promote",
+    "georgian": "ხელშეწყობა",
+    "pronunciation": "/prəˈmoʊt/",
+    "example_en": "Promote critical thinking.",
+    "example_ka": "კრიტიკულ აზროვნებას შეუწყვე ხელი.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Proportion",
+    "georgian": "პროპორცია",
+    "pronunciation": "/prəˈpɔːrʃən/",
+    "example_en": "A small proportion of data.",
+    "example_ka": "მონაცემების მცირე პროპორცია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Prospect",
+    "georgian": "პერსპექტივა",
+    "pronunciation": "/ˈprɒspɛkt/",
+    "example_en": "The prospects are bright.",
+    "example_ka": "პერსპექტივა ნათელია.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Protocol",
+    "georgian": "პროტოკოლი",
+    "pronunciation": "/ˈproʊtəkɒl/",
+    "example_en": "Follow the research protocol.",
+    "example_ka": "კვლევის პროტოკოლი დაიცავი.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Pursue",
+    "georgian": "მისდევს",
+    "pronunciation": "/pərˈsjuː/",
+    "example_en": "She decided to pursue a PhD.",
+    "example_ka": "მან დოქტორანტურის გაგრძელება გადაწყვიტა.",
+    "category": "academic",
+    "level": "B1"
+  },
+  {
+    "english": "Qualitative",
+    "georgian": "თვისობრივი",
+    "pronunciation": "/ˈkwɒlɪtətɪv/",
+    "example_en": "Use qualitative methods.",
+    "example_ka": "თვისობრივი მეთოდები გამოიყენე.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Quantitative",
+    "georgian": "რაოდენობრივი",
+    "pronunciation": "/ˈkwɒntɪtətɪv/",
+    "example_en": "The quantitative data is clear.",
+    "example_ka": "რაოდენობრივი მონაცემები ნათელია.",
+    "category": "academic",
+    "level": "B2"
+  },
+  {
+    "english": "Range",
+    "georgian": "დიაპაზონი",
+    "pronunciation": "/reɪndʒ/",
+    "example_en": "A wide range of topics.",
+    "example_ka": "თემების ფართო დიაპაზონი.",
+    "category": "academic",
+    "level": "A2"
+  },
+  {
+    "english": "Ratio",
+    "georgian": "თანაფარდობა",
+    "pronunciation": "/ˈreɪʃioʊ/",
+    "example_en": "Calculate the ratio.",
+    "example_ka": "თანაფარდობა გამოთვალე.",
+    "category": "academic",
+    "level": "B1"
+  }
 ]

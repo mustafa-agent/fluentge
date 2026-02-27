@@ -1,27 +1,1802 @@
 [
-  {"english": "Makeup", "georgian": "მაკიაჟი", "pronunciation": "/ˈmeɪkʌp/", "example_en": "She doesn't wear much makeup.", "example_ka": "ის ბევრ მაკიაჟს არ იკეთებს.", "category": "beauty", "level": "A2"},
-  {"english": "Lipstick", "georgian": "ტუჩსაცხი", "pronunciation": "/ˈlɪpstɪk/", "example_en": "That red lipstick looks great on you.", "example_ka": "ეს წითელი ტუჩსაცხი ძალიან გიხდება.", "category": "beauty", "level": "A2"},
-  {"english": "Foundation", "georgian": "ტონალური კრემი", "pronunciation": "/faʊnˈdeɪʃən/", "example_en": "Find a foundation that matches your skin tone.", "example_ka": "იპოვე ტონალური კრემი, რომელიც შეესაბამება შენს კანის ფერს.", "category": "beauty", "level": "B1"},
-  {"english": "Mascara", "georgian": "ტუში", "pronunciation": "/mæˈskærə/", "example_en": "Waterproof mascara won't run when you cry.", "example_ka": "წყალგაუმტარი ტუში არ დაიშლება ტირილისას.", "category": "beauty", "level": "A2"},
-  {"english": "Moisturizer", "georgian": "დამატენიანებელი კრემი", "pronunciation": "/ˈmɔɪstʃəraɪzər/", "example_en": "Apply moisturizer every morning.", "example_ka": "დამატენიანებელი კრემი ყოველ დილით წაისვი.", "category": "beauty", "level": "B1"},
-  {"english": "Sunscreen", "georgian": "მზისგან დამცავი კრემი", "pronunciation": "/ˈsʌnskriːn/", "example_en": "Don't forget sunscreen at the beach.", "example_ka": "ნუ დაგავიწყდება მზისგან დამცავი კრემი სანაპიროზე.", "category": "beauty", "level": "A2"},
-  {"english": "Skincare", "georgian": "კანის მოვლა", "pronunciation": "/ˈskɪnkeər/", "example_en": "My skincare routine takes ten minutes.", "example_ka": "კანის მოვლის რუტინას ათი წუთი მჭირდება.", "category": "beauty", "level": "A2"},
-  {"english": "Nail polish", "georgian": "ფრჩხილის ლაქი", "pronunciation": "/neɪl ˈpɒlɪʃ/", "example_en": "She chose a pink nail polish.", "example_ka": "მან ვარდისფერი ფრჩხილის ლაქი აირჩია.", "category": "beauty", "level": "A2"},
-  {"english": "Perfume", "georgian": "სუნამო", "pronunciation": "/pərˈfjuːm/", "example_en": "That perfume smells amazing.", "example_ka": "ეს სუნამო საოცრად სურნელებს.", "category": "beauty", "level": "A2"},
-  {"english": "Shampoo", "georgian": "შამპუნი", "pronunciation": "/ʃæmˈpuː/", "example_en": "I need to buy more shampoo.", "example_ka": "შამპუნის ყიდვა მჭირდება.", "category": "beauty", "level": "A1"},
-  {"english": "Conditioner", "georgian": "კონდიციონერი", "pronunciation": "/kənˈdɪʃənər/", "example_en": "Use conditioner after shampoo.", "example_ka": "შამპუნის შემდეგ კონდიციონერი გამოიყენე.", "category": "beauty", "level": "A2"},
-  {"english": "Hair dye", "georgian": "თმის საღებავი", "pronunciation": "/hɛr daɪ/", "example_en": "She used hair dye to go blonde.", "example_ka": "მან თმის საღებავი გამოიყენა ქერად შესაღებად.", "category": "beauty", "level": "B1"},
-  {"english": "Eyebrow", "georgian": "წარბი", "pronunciation": "/ˈaɪbraʊ/", "example_en": "She gets her eyebrows done every month.", "example_ka": "ის ყოველ თვეში წარბებს იკეთებს.", "category": "beauty", "level": "A2"},
-  {"english": "Eyeliner", "georgian": "თვალის ფანქარი", "pronunciation": "/ˈaɪlaɪnər/", "example_en": "She applied black eyeliner.", "example_ka": "მან შავი თვალის ფანქარი წაისვა.", "category": "beauty", "level": "B1"},
-  {"english": "Blush", "georgian": "რუჟი", "pronunciation": "/blʌʃ/", "example_en": "A little blush makes your face glow.", "example_ka": "ცოტა რუჟი სახეს აბრწყინებს.", "category": "beauty", "level": "B1"},
-  {"english": "Acne", "georgian": "აკნე", "pronunciation": "/ˈækni/", "example_en": "Many teenagers struggle with acne.", "example_ka": "ბევრ მოზარდს აკნეს პრობლემა აქვს.", "category": "beauty", "level": "B1"},
-  {"english": "Wrinkle", "georgian": "ნაოჭი", "pronunciation": "/ˈrɪŋkəl/", "example_en": "Sunscreen helps prevent wrinkles.", "example_ka": "მზისგან დამცავი კრემი ნაოჭების პრევენციაში ეხმარება.", "category": "beauty", "level": "B1"},
-  {"english": "Salon", "georgian": "სალონი", "pronunciation": "/səˈlɒn/", "example_en": "I have an appointment at the salon.", "example_ka": "სალონში ჩაწერილი ვარ.", "category": "beauty", "level": "A2"},
-  {"english": "Manicure", "georgian": "მანიკური", "pronunciation": "/ˈmænɪkjʊər/", "example_en": "She gets a manicure every two weeks.", "example_ka": "ის ორ კვირაში ერთხელ მანიკურს აკეთებს.", "category": "beauty", "level": "A2"},
-  {"english": "Glow", "georgian": "ბრწყინვალება", "pronunciation": "/ɡloʊ/", "example_en": "Your skin has a healthy glow.", "example_ka": "შენს კანს ჯანსაღი ბრწყინვალება აქვს.", "category": "beauty", "level": "B1"},
-  {"english": "Pimple", "georgian": "მუწუკი", "pronunciation": "/ˈpɪmpəl/", "example_en": "Don't pop that pimple!", "example_ka": "ნუ გატეხავ იმ მუწუკს!", "category": "beauty", "level": "A2"},
-  {"english": "Serum", "georgian": "შრატი", "pronunciation": "/ˈsɪrəm/", "example_en": "Apply serum before moisturizer.", "example_ka": "შრატი დამატენიანებელ კრემამდე წაისვი.", "category": "beauty", "level": "B1"},
-  {"english": "Cosmetics", "georgian": "კოსმეტიკა", "pronunciation": "/kɒzˈmɛtɪks/", "example_en": "This store sells organic cosmetics.", "example_ka": "ეს მაღაზია ორგანულ კოსმეტიკას ყიდის.", "category": "beauty", "level": "A2"},
-  {"english": "Concealer", "georgian": "კონსილერი", "pronunciation": "/kənˈsiːlər/", "example_en": "Use concealer to hide dark circles.", "example_ka": "კონსილერი გამოიყენე შავი წრეების დასამალად.", "category": "beauty", "level": "B1"},
-  {"english": "Tan", "georgian": "რუხი ფერი / შეჭამება", "pronunciation": "/tæn/", "example_en": "She got a nice tan on vacation.", "example_ka": "შვებულებაში ლამაზად შეეჭამა.", "category": "beauty", "level": "A2"}
+  {
+    "english": "makeup",
+    "georgian": "მაკიაჟი",
+    "pronunciation": "/ˈmeɪkʌp/",
+    "example_en": "She doesn't wear much makeup.",
+    "example_ka": "ის ბევრ მაკიაჟს არ იკეთებს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "lipstick",
+    "georgian": "ტუჩსაცხი",
+    "pronunciation": "/ˈlɪpstɪk/",
+    "example_en": "That red lipstick looks great on you.",
+    "example_ka": "ეს წითელი ტუჩსაცხი ძალიან გიხდება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "foundation",
+    "georgian": "ტონალური კრემი",
+    "pronunciation": "/faʊnˈdeɪʃən/",
+    "example_en": "Find a foundation that matches your skin tone.",
+    "example_ka": "იპოვე ტონალური კრემი, რომელიც შეესაბამება შენს კანის ფერს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "mascara",
+    "georgian": "ტუში",
+    "pronunciation": "/mæˈskærə/",
+    "example_en": "Waterproof mascara won't run when you cry.",
+    "example_ka": "წყალგაუმტარი ტუში არ დაიშლება ტირილისას.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "moisturizer",
+    "georgian": "დამატენიანებელი კრემი",
+    "pronunciation": "/ˈmɔɪstʃəraɪzər/",
+    "example_en": "Apply moisturizer every morning.",
+    "example_ka": "დამატენიანებელი კრემი ყოველ დილით წაისვი.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "sunscreen",
+    "georgian": "მზისგან დამცავი კრემი",
+    "pronunciation": "/ˈsʌnskriːn/",
+    "example_en": "Don't forget sunscreen at the beach.",
+    "example_ka": "ნუ დაგავიწყდება მზისგან დამცავი კრემი სანაპიროზე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "skincare",
+    "georgian": "კანის მოვლა",
+    "pronunciation": "/ˈskɪnkeər/",
+    "example_en": "My skincare routine takes ten minutes.",
+    "example_ka": "კანის მოვლის რუტინას ათი წუთი მჭირდება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "perfume",
+    "georgian": "სუნამო",
+    "pronunciation": "/pərˈfjuːm/",
+    "example_en": "That perfume smells amazing.",
+    "example_ka": "ეს სუნამო საოცრად სურნელებს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "shampoo",
+    "georgian": "შამპუნი",
+    "pronunciation": "/ʃæmˈpuː/",
+    "example_en": "I need to buy more shampoo.",
+    "example_ka": "შამპუნის ყიდვა მჭირდება.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "conditioner",
+    "georgian": "კონდიციონერი",
+    "pronunciation": "/kənˈdɪʃənər/",
+    "example_en": "Use conditioner after shampoo.",
+    "example_ka": "შამპუნის შემდეგ კონდიციონერი გამოიყენე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "eyebrow",
+    "georgian": "წარბი",
+    "pronunciation": "/ˈaɪbraʊ/",
+    "example_en": "She gets her eyebrows done every month.",
+    "example_ka": "ის ყოველ თვეში წარბებს იკეთებს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "eyeliner",
+    "georgian": "თვალის ფანქარი",
+    "pronunciation": "/ˈaɪlaɪnər/",
+    "example_en": "She applied black eyeliner.",
+    "example_ka": "მან შავი თვალის ფანქარი წაისვა.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "blush",
+    "georgian": "რუჟი",
+    "pronunciation": "/blʌʃ/",
+    "example_en": "A little blush makes your face glow.",
+    "example_ka": "ცოტა რუჟი სახეს აბრწყინებს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "acne",
+    "georgian": "აკნე",
+    "pronunciation": "/ˈækni/",
+    "example_en": "Many teenagers struggle with acne.",
+    "example_ka": "ბევრ მოზარდს აკნეს პრობლემა აქვს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "wrinkle",
+    "georgian": "ნაოჭი",
+    "pronunciation": "/ˈrɪŋkəl/",
+    "example_en": "Sunscreen helps prevent wrinkles.",
+    "example_ka": "მზისგან დამცავი კრემი ნაოჭების პრევენციაში ეხმარება.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "salon",
+    "georgian": "სალონი",
+    "pronunciation": "/səˈlɒn/",
+    "example_en": "I have an appointment at the salon.",
+    "example_ka": "სალონში ჩაწერილი ვარ.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "manicure",
+    "georgian": "მანიკური",
+    "pronunciation": "/ˈmænɪkjʊər/",
+    "example_en": "She gets a manicure every two weeks.",
+    "example_ka": "ის ორ კვირაში ერთხელ მანიკურს აკეთებს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "glow",
+    "georgian": "ბრწყინვალება",
+    "pronunciation": "/ɡloʊ/",
+    "example_en": "Your skin has a healthy glow.",
+    "example_ka": "შენს კანს ჯანსაღი ბრწყინვალება აქვს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "pimple",
+    "georgian": "მუწუკი",
+    "pronunciation": "/ˈpɪmpəl/",
+    "example_en": "Don't pop that pimple!",
+    "example_ka": "ნუ გატეხავ იმ მუწუკს!",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "serum",
+    "georgian": "შრატი",
+    "pronunciation": "/ˈsɪrəm/",
+    "example_en": "Apply serum before moisturizer.",
+    "example_ka": "შრატი დამატენიანებელ კრემამდე წაისვი.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "cosmetics",
+    "georgian": "კოსმეტიკა",
+    "pronunciation": "/kɒzˈmɛtɪks/",
+    "example_en": "This store sells organic cosmetics.",
+    "example_ka": "ეს მაღაზია ორგანულ კოსმეტიკას ყიდის.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "concealer",
+    "georgian": "კონსილერი",
+    "pronunciation": "/kənˈsiːlər/",
+    "example_en": "Use concealer to hide dark circles.",
+    "example_ka": "კონსილერი გამოიყენე შავი წრეების დასამალად.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "tan",
+    "georgian": "შეჭამება",
+    "pronunciation": "/tæn/",
+    "example_en": "She got a nice tan on vacation.",
+    "example_ka": "შვებულებაში ლამაზად შეეჭამა.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "lotion",
+    "georgian": "ლოსიონი",
+    "pronunciation": "/ˈloʊʃən/",
+    "example_en": "Apply body lotion after showering.",
+    "example_ka": "შხაპის შემდეგ სხეულის ლოსიონი წაისვი.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "cream",
+    "georgian": "კრემი",
+    "pronunciation": "/kriːm/",
+    "example_en": "Night cream helps repair skin while you sleep.",
+    "example_ka": "ღამის კრემი ძილში კანის აღდგენას ეხმარება.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "powder",
+    "georgian": "პუდრა",
+    "pronunciation": "/ˈpaʊdər/",
+    "example_en": "Set your makeup with translucent powder.",
+    "example_ka": "მაკიაჟი გამჭვირვალე პუდრით დაფიქსირე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "brush",
+    "georgian": "ფუნჯი",
+    "pronunciation": "/brʌʃ/",
+    "example_en": "Use a soft brush for applying powder.",
+    "example_ka": "პუდრის წასმისთვის რბილი ფუნჯი გამოიყენე.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "mirror",
+    "georgian": "სარკე",
+    "pronunciation": "/ˈmɪrər/",
+    "example_en": "Check your makeup in the mirror.",
+    "example_ka": "სარკეში მაკიაჟი შეამოწმე.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "cleanser",
+    "georgian": "საწმენდი",
+    "pronunciation": "/ˈklenzər/",
+    "example_en": "Use a gentle cleanser for sensitive skin.",
+    "example_ka": "მგრძნობიარე კანისთვის ნაზი საწმენდი გამოიყენე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "toner",
+    "georgian": "ტონერი",
+    "pronunciation": "/ˈtoʊnər/",
+    "example_en": "Apply toner after cleansing your face.",
+    "example_ka": "სახის გასუფთავების შემდეგ ტონერი წაისვი.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "exfoliant",
+    "georgian": "ექსფოლიანტი",
+    "pronunciation": "/ɪkˈsfoʊliənt/",
+    "example_en": "Use an exfoliant twice a week.",
+    "example_ka": "ექსფოლიანტი კვირაში ორჯერ გამოიყენე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "scrub",
+    "georgian": "სკრაბი",
+    "pronunciation": "/skrʌb/",
+    "example_en": "This face scrub removes dead skin cells.",
+    "example_ka": "ეს სახის სკრაბი მკვდარ უჯრედებს შლის.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "mask",
+    "georgian": "ნიღაბი",
+    "pronunciation": "/mæsk/",
+    "example_en": "I use a face mask every Sunday.",
+    "example_ka": "სახის ნიღაბს ყოველ კვირას ვიყენებ.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "primer",
+    "georgian": "პრაიმერი",
+    "pronunciation": "/ˈpraɪmər/",
+    "example_en": "Apply primer before foundation.",
+    "example_ka": "ტონალურ კრემამდე პრაიმერი წაისვი.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "highlighter",
+    "georgian": "ჰაილაითერი",
+    "pronunciation": "/ˈhaɪlaɪtər/",
+    "example_en": "Add highlighter to your cheekbones.",
+    "example_ka": "ლოყის ძვლებზე ჰაილაითერი წაისვი.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "contour",
+    "georgian": "კონტური",
+    "pronunciation": "/ˈkɒntʊər/",
+    "example_en": "Contour your face to define your features.",
+    "example_ka": "თვისებების გამოსაკვეთად სახე გააკონტურე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "bronzer",
+    "georgian": "ბრონზერი",
+    "pronunciation": "/ˈbrɑːnzər/",
+    "example_en": "Use bronzer to add warmth to your complexion.",
+    "example_ka": "კანს სითბოს მისაცემად ბრონზერი გამოიყენე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "eyeshadow",
+    "georgian": "ღია",
+    "pronunciation": "/ˈaɪʃædoʊ/",
+    "example_en": "She wore shimmery blue eyeshadow.",
+    "example_ka": "მან ბრჭყვიალა ლურჯი ღია იკეთა.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "palette",
+    "georgian": "პალიტრა",
+    "pronunciation": "/ˈpælɪt/",
+    "example_en": "This eyeshadow palette has 12 colors.",
+    "example_ka": "ამ ღიას პალიტრაში 12 ფერია.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "gloss",
+    "georgian": "ბრჭყვიალება",
+    "pronunciation": "/ɡlɔːs/",
+    "example_en": "Lip gloss makes lips look fuller.",
+    "example_ka": "ტუჩების ბრჭყვიალება ტუჩებს მოცულობითს ხდის.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "lipbalm",
+    "georgian": "ტუჩების ბალზამი",
+    "pronunciation": "/ˈlɪpbɑːm/",
+    "example_en": "Apply lipbalm before lipstick.",
+    "example_ka": "ტუჩსაცხამდე ტუჩების ბალზამი წაისვი.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "nail",
+    "georgian": "ფრჩხილი",
+    "pronunciation": "/neɪl/",
+    "example_en": "She painted her nails bright red.",
+    "example_ka": "მან ფრჩხილები ნათელ წითლად შეიღება.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "polish",
+    "georgian": "ლაკი",
+    "pronunciation": "/ˈpɒlɪʃ/",
+    "example_en": "This nail polish dries quickly.",
+    "example_ka": "ეს ფრჩხილების ლაკი სწრაფად შრება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "pedicure",
+    "georgian": "პედიკური",
+    "pronunciation": "/ˈpedɪkjʊər/",
+    "example_en": "I need a pedicure before summer.",
+    "example_ka": "ზაფხულამდე პედიკური მჭირდება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "cuticle",
+    "georgian": "ნაზავი",
+    "pronunciation": "/ˈkjuːtɪkəl/",
+    "example_en": "Push back your cuticles before applying polish.",
+    "example_ka": "ლაკის წასმამდე ნაზავები უკან გადაწიე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "file",
+    "georgian": "ნაღები",
+    "pronunciation": "/faɪl/",
+    "example_en": "File your nails in one direction.",
+    "example_ka": "ფრჩხილები ერთი მიმართულებით დანაღე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "hair",
+    "georgian": "თმა",
+    "pronunciation": "/hɛr/",
+    "example_en": "Her hair is naturally curly.",
+    "example_ka": "მას ბუნებრივად ხვეული თმა აქვს.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "haircut",
+    "georgian": "თმის ჭრა",
+    "pronunciation": "/ˈhɛrkʌt/",
+    "example_en": "I need a haircut badly.",
+    "example_ka": "ძალიან მჭირდება თმის ჭრა.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "hairstyle",
+    "georgian": "თმის სტილი",
+    "pronunciation": "/ˈhɛrstaɪl/",
+    "example_en": "That hairstyle suits you perfectly.",
+    "example_ka": "ეს თმის სტილი შენ შესანიშნავად გიხდება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "dye",
+    "georgian": "საღებავი",
+    "pronunciation": "/daɪ/",
+    "example_en": "She wants to dye her hair blonde.",
+    "example_ka": "მას თმის ყვითლად შეღებვა უნდა.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "color",
+    "georgian": "ფერი",
+    "pronunciation": "/ˈkʌlər/",
+    "example_en": "What hair color do you prefer?",
+    "example_ka": "რა თმის ფერს ანიჭებ უპირატესობას?",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "blonde",
+    "georgian": "ყვითელთმიანი",
+    "pronunciation": "/blɒnd/",
+    "example_en": "She has beautiful blonde hair.",
+    "example_ka": "მას ლამაზი ყვითელი თმა აქვს.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "brunette",
+    "georgian": "ღია ყვითელთმიანი",
+    "pronunciation": "/bruˈnet/",
+    "example_en": "Most people here are brunette.",
+    "example_ka": "აქ ბუნად ადამიანი ღია ყვითელთმიანია.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "curl",
+    "georgian": "ხვეული",
+    "pronunciation": "/kɜːrl/",
+    "example_en": "Use a curling iron to create curls.",
+    "example_ka": "ხვეულების შესაქმნელად ფენი გამოიყენე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "straight",
+    "georgian": "სწორი",
+    "pronunciation": "/streɪt/",
+    "example_en": "She straightened her curly hair.",
+    "example_ka": "მან ხვეული თმა გაასწორა.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "wavy",
+    "georgian": "ტალღოვანი",
+    "pronunciation": "/ˈweɪvi/",
+    "example_en": "Her hair is naturally wavy.",
+    "example_ka": "მას ბუნებრივად ტალღოვანი თმა აქვს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "bangs",
+    "georgian": "პონი",
+    "pronunciation": "/bæŋz/",
+    "example_en": "Side-swept bangs frame her face nicely.",
+    "example_ka": "გვერდიდან ჩასული პონი სახეს ლამაზად ათამაშებს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "layers",
+    "georgian": "ფენები",
+    "pronunciation": "/ˈleɪərz/",
+    "example_en": "Ask for layers to add volume to your hair.",
+    "example_ka": "თმას მოცულობის მისაცემად ფენები მოითხოვე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "trim",
+    "georgian": "მოჭრა",
+    "pronunciation": "/trɪm/",
+    "example_en": "I just need a trim, not a full cut.",
+    "example_ka": "მხოლოდ მოჭრა მჭირდება, არა სრული ჭრა.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "split",
+    "georgian": "გაყოფილი ბოლოები",
+    "pronunciation": "/splɪt/",
+    "example_en": "Trim split ends to keep hair healthy.",
+    "example_ka": "თმის ჯანმრთელობისთვის გაყოფილი ბოლოები მოჭერი.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "gel",
+    "georgian": "ჟელე",
+    "pronunciation": "/dʒel/",
+    "example_en": "Use hair gel for a sleek look.",
+    "example_ka": "ელეგანტური გარეგნობისთვის თმის ჟელე გამოიყენე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "mousse",
+    "georgian": "მუსი",
+    "pronunciation": "/muːs/",
+    "example_en": "Mousse adds volume to fine hair.",
+    "example_ka": "მუსი თხელ თმას მოცულობას აძლევს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "spray",
+    "georgian": "სპრეი",
+    "pronunciation": "/spreɪ/",
+    "example_en": "Hairspray keeps your style in place.",
+    "example_ka": "თმის სპრეი სტილს ადგილზე ინახავს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "dryer",
+    "georgian": "ფენი",
+    "pronunciation": "/ˈdraɪər/",
+    "example_en": "Use a hair dryer on low heat.",
+    "example_ka": "ფენი დაბალ ტემპერატურაზე გამოიყენე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "iron",
+    "georgian": "უთო",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "A flat iron straightens hair quickly.",
+    "example_ka": "ბრტყელი უთო თმას სწრაფად ასწორებს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "curler",
+    "georgian": "შემხვევი",
+    "pronunciation": "/ˈkɜːrlər/",
+    "example_en": "Hot rollers create lasting curls.",
+    "example_ka": "ცხელი შემხვევები მყარ ხვეულებს ქმნის.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "bobby",
+    "georgian": "თმის ქამარი",
+    "pronunciation": "/ˈbɑːbi/",
+    "example_en": "Use bobby pins to secure loose hair.",
+    "example_ka": "შავი თმის ქამარებით ფაშანური თმა დააფიქსირე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "elastic",
+    "georgian": "რეზინი",
+    "pronunciation": "/ɪˈlæstɪk/",
+    "example_en": "Tie your hair with an elastic band.",
+    "example_ka": "თმა რეზინით შეიბნიე.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "ponytail",
+    "georgian": "ღეროვანი კუდი",
+    "pronunciation": "/ˈpoʊniteɪl/",
+    "example_en": "She wore her hair in a ponytail.",
+    "example_ka": "მან თმა ღეროვან კუდად აიღო.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "braid",
+    "georgian": "ნაწნავი",
+    "pronunciation": "/breɪd/",
+    "example_en": "French braids look elegant.",
+    "example_ka": "ფრანგული ნაწნავები ელეგანტურად გამოიყურება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "bun",
+    "georgian": "კოკი",
+    "pronunciation": "/bʌn/",
+    "example_en": "A low bun is perfect for formal events.",
+    "example_ka": "დაბალი კოკი ოფიციალური ღონისძიებებისთვის შესანიშნავია.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "updo",
+    "georgian": "ზედა სტილი",
+    "pronunciation": "/ˈʌpduː/",
+    "example_en": "An updo works well for weddings.",
+    "example_ka": "ზედა სტილი ქორწილებისთვის კარგია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "texture",
+    "georgian": "ტექსტურა",
+    "pronunciation": "/ˈtekstʃər/",
+    "example_en": "This product adds texture to fine hair.",
+    "example_ka": "ეს პროდუქტი თხელ თმას ტექსტურას აძლევს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "volume",
+    "georgian": "მოცულობა",
+    "pronunciation": "/ˈvɑːljuːm/",
+    "example_en": "Backcombing creates instant volume.",
+    "example_ka": "უკუკავი მყისიერ მოცულობას ქმნის.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "shine",
+    "georgian": "ბზინვარება",
+    "pronunciation": "/ʃaɪn/",
+    "example_en": "Healthy hair has a natural shine.",
+    "example_ka": "ჯანმრთელ თმას ბუნებრივი ბზინვარება აქვს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "frizz",
+    "georgian": "ღერძულობა",
+    "pronunciation": "/frɪz/",
+    "example_en": "Humidity causes hair frizz.",
+    "example_ka": "ტენიანობა თმის ღერძულობას იწვევს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "dandruff",
+    "georgian": "ქედები",
+    "pronunciation": "/ˈdændrəf/",
+    "example_en": "Use anti-dandruff shampoo weekly.",
+    "example_ka": "ქედების საწინააღმდეგო შამპუნი კვირაში გამოიყენე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "scalp",
+    "georgian": "თავის კანი",
+    "pronunciation": "/skælp/",
+    "example_en": "Massage your scalp to improve circulation.",
+    "example_ka": "კრავეობის გასაუმჯობესებლად თავის კანი ამასაჟე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "treatment",
+    "georgian": "მკურნალობა",
+    "pronunciation": "/ˈtriːtmənt/",
+    "example_en": "Deep conditioning treatments repair damaged hair.",
+    "example_ka": "ღრმა კონდიციონირების მკურნალობა დაზიანებული თმის აღდგენას ეხმარება.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "oil",
+    "georgian": "ზეთი",
+    "pronunciation": "/ɔɪl/",
+    "example_en": "Argan oil nourishes dry hair.",
+    "example_ka": "არგანის ზეთი მშრალ თმას კვებავს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "vitamins",
+    "georgian": "ვიტამინები",
+    "pronunciation": "/ˈvaɪtəmɪnz/",
+    "example_en": "Hair vitamins promote healthy growth.",
+    "example_ka": "თმის ვიტამინები ჯანსაღ ზრდას ხელს უწყობს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "supplement",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈsʌpləmənt/",
+    "example_en": "Biotin supplements strengthen nails and hair.",
+    "example_ka": "ბიოტინის დანამატები ფრჩხილებსა და თმას აძლიერებს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "collagen",
+    "georgian": "კოლაგენი",
+    "pronunciation": "/ˈkɑːlədʒən/",
+    "example_en": "Collagen supplements improve skin elasticity.",
+    "example_ka": "კოლაგენის დანამატები კანის ელასტიურობას აუმჯობესებს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "antioxidant",
+    "georgian": "ანტიოქსიდანტი",
+    "pronunciation": "/ˌæntiˈɑːksɪdənt/",
+    "example_en": "Antioxidants protect skin from damage.",
+    "example_ka": "ანტიოქსიდანტები კანს დაზიანებისგან იცავს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "retinol",
+    "georgian": "რეტინოლი",
+    "pronunciation": "/ˈretɪnɔːl/",
+    "example_en": "Retinol reduces signs of aging.",
+    "example_ka": "რეტინოლი მოხუცებულობის ნიშნებს ამცირებს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "peptide",
+    "georgian": "პეპტიდი",
+    "pronunciation": "/ˈpeptaɪd/",
+    "example_en": "Peptide creams stimulate collagen production.",
+    "example_ka": "პეპტიდური კრემები კოლაგენის წარმოებას ასტიმულირებს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "hyaluronic",
+    "georgian": "ჰიალურონული",
+    "pronunciation": "/ˌhaɪələˈrɑːnɪk/",
+    "example_en": "Hyaluronic acid provides intense hydration.",
+    "example_ka": "ჰიალურონული მჟავა ინტენსიურ ჰიდრატაციას უზრუნველყოფს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "glycolic",
+    "georgian": "გლიკოლური",
+    "pronunciation": "/ɡlaɪˈkɑːlɪk/",
+    "example_en": "Glycolic acid exfoliates dead skin cells.",
+    "example_ka": "გლიკოლური მჟავა მკვდარ კანის უჯრედებს ამოშლის.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "salicylic",
+    "georgian": "სალიცილური",
+    "pronunciation": "/ˌsælɪˈsɪlɪk/",
+    "example_en": "Salicylic acid treats acne effectively.",
+    "example_ka": "სალიცილური მჟავა აკნეს ეფექტურად მკურნალობს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "ceramide",
+    "georgian": "ცერამიდი",
+    "pronunciation": "/ˈsɛrəmaɪd/",
+    "example_en": "Ceramides restore the skin barrier.",
+    "example_ka": "ცერამიდები კანის ბარიერს აღადგენს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "niacinamide",
+    "georgian": "ნიაცინამიდი",
+    "pronunciation": "/naɪəˈsɪnəmaɪd/",
+    "example_en": "Niacinamide minimizes pore appearance.",
+    "example_ka": "ნიაცინამიდი ფორების გამოჩენას ამცირებს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "vitamin",
+    "georgian": "ვიტამინი",
+    "pronunciation": "/ˈvaɪtəmɪn/",
+    "example_en": "Vitamin C brightens skin tone.",
+    "example_ka": "ვიტამინი C კანის ტონს ანათებს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "enzyme",
+    "georgian": "ფერმენტი",
+    "pronunciation": "/ˈenzaɪm/",
+    "example_en": "Fruit enzymes gently exfoliate skin.",
+    "example_ka": "ხილის ფერმენტები ნაზად ვარჯიშავს კანს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "extract",
+    "georgian": "ექსტრაქტი",
+    "pronunciation": "/ˈekstrækt/",
+    "example_en": "Green tea extract has anti-inflammatory properties.",
+    "example_ka": "მწვანე ჩაის ექსტრაქტს ანთების საწინააღმდეგო თვისებები აქვს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "natural",
+    "georgian": "ბუნებრივი",
+    "pronunciation": "/ˈnætʃərəl/",
+    "example_en": "I prefer natural skincare products.",
+    "example_ka": "ბუნებრივ კანის მოვლის პროდუქტებს ვანიჭებ უპირატესობას.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "organic",
+    "georgian": "ორგანული",
+    "pronunciation": "/ɔːrˈɡænɪk/",
+    "example_en": "Organic cosmetics are chemical-free.",
+    "example_ka": "ორგანული კოსმეტიკა ქიმიკატებისგან თავისუფალია.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "vegan",
+    "georgian": "ვეგანური",
+    "pronunciation": "/ˈviːɡən/",
+    "example_en": "This makeup brand is completely vegan.",
+    "example_ka": "ეს მაკიაჟის ბრენდი სრულიად ვეგანურია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "cruelty-free",
+    "georgian": "სისასტიკისგან თავისუფალი",
+    "pronunciation": "/ˈkruːəlti friː/",
+    "example_en": "I only buy cruelty-free beauty products.",
+    "example_ka": "მხოლოდ სისასტიკისგან თავისუფალ სილამაზის პროდუქტებს ვყიდულობ.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "paraben",
+    "georgian": "პარაბენი",
+    "pronunciation": "/ˈpærəben/",
+    "example_en": "This shampoo is paraben-free.",
+    "example_ka": "ეს შამპუნი პარაბენისგან თავისუფალია.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "sulfate",
+    "georgian": "სულფატი",
+    "pronunciation": "/ˈsʌlfeɪt/",
+    "example_en": "Sulfate-free shampoos are gentler on hair.",
+    "example_ka": "სულფატისგან თავისუფალი შამპუნები თმისთვის უფრო ნაზია.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "fragrance",
+    "georgian": "სურნელოვანი ნივთიერება",
+    "pronunciation": "/ˈfreɪɡrəns/",
+    "example_en": "This moisturizer is fragrance-free.",
+    "example_ka": "ეს დამატენიანებელი კრემი სურნელისგან თავისუფალია.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "sensitive",
+    "georgian": "მგრძნობიარე",
+    "pronunciation": "/ˈsensətɪv/",
+    "example_en": "Use gentle products for sensitive skin.",
+    "example_ka": "მგრძნობიარე კანისთვის ნაზი პროდუქტები გამოიყენე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "allergic",
+    "georgian": "ალერგიული",
+    "pronunciation": "/əˈlɜːrdʒɪk/",
+    "example_en": "I'm allergic to certain makeup ingredients.",
+    "example_ka": "ზოგ მაკიაჟის ინგრედიენტზე ალერგია მაქვს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "reaction",
+    "georgian": "რეაქცია",
+    "pronunciation": "/riˈækʃən/",
+    "example_en": "Patch test products to avoid reactions.",
+    "example_ka": "რეაქციების თავიდან ასაცილებლად პროდუქტები შეამოწმე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "patch",
+    "georgian": "ლაქა",
+    "pronunciation": "/pætʃ/",
+    "example_en": "Do a patch test before using new products.",
+    "example_ka": "ახალი პროდუქტების გამოყენებამდე ლაქის ტესტი გაუკეთე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "hydrating",
+    "georgian": "ჰიდრატირებადი",
+    "pronunciation": "/ˈhaɪdreɪtɪŋ/",
+    "example_en": "This mask is deeply hydrating.",
+    "example_ka": "ეს ნიღაბი ღრმად ჰიდრატირებადია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "nourishing",
+    "georgian": "მკვებავი",
+    "pronunciation": "/ˈnɜːrɪʃɪŋ/",
+    "example_en": "Use nourishing oils for dry skin.",
+    "example_ka": "მშრალი კანისთვის მკვებავი ზეთები გამოიყენე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "rejuvenating",
+    "georgian": "განახლებადი",
+    "pronunciation": "/rɪˈdʒuːvəneɪtɪŋ/",
+    "example_en": "This serum has rejuvenating properties.",
+    "example_ka": "ამ შრატს განახლებადი თვისებები აქვს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "brightening",
+    "georgian": "გამანათლებელი",
+    "pronunciation": "/ˈbraɪtənɪŋ/",
+    "example_en": "Use a brightening serum for dark spots.",
+    "example_ka": "შავი ლაქების საწინააღმდეგოდ გამანათლებელი შრატი გამოიყენე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "firming",
+    "georgian": "მამჭენი",
+    "pronunciation": "/ˈfɜːrmɪŋ/",
+    "example_en": "This cream has firming effects.",
+    "example_ka": "ამ კრემს მამჭენი ეფექტი აქვს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "tightening",
+    "georgian": "მამკაცრებელი",
+    "pronunciation": "/ˈtaɪtənɪŋ/",
+    "example_en": "The mask provides skin tightening benefits.",
+    "example_ka": "ნიღაბი კანის მამკაცრებელ სარგებელს უზრუნველყოფს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "lifting",
+    "georgian": "აწევა",
+    "pronunciation": "/ˈlɪftɪŋ/",
+    "example_en": "This treatment provides instant lifting.",
+    "example_ka": "ეს მკურნალობა მყისიერ აწევას უზრუნველყოფს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "smoothing",
+    "georgian": "გასწორებადი",
+    "pronunciation": "/ˈsmuːðɪŋ/",
+    "example_en": "This primer has smoothing properties.",
+    "example_ka": "ამ პრაიმერს გასწორებადი თვისებები აქვს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "mattifying",
+    "georgian": "მატირებადი",
+    "pronunciation": "/ˈmætɪfaɪɪŋ/",
+    "example_en": "Use mattifying powder for oily skin.",
+    "example_ka": "ცხიმიანი კანისთვის მატირებადი პუდრა გამოიყენე.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "illuminating",
+    "georgian": "გამანათებელი",
+    "pronunciation": "/ɪˈluːməneɪtɪŋ/",
+    "example_en": "This highlighter has illuminating effects.",
+    "example_ka": "ამ ჰაილაითერს გამანათებელი ეფექტი აქვს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "radiant",
+    "georgian": "გამოსხივებული",
+    "pronunciation": "/ˈreɪdiənt/",
+    "example_en": "Her skin looks radiant and healthy.",
+    "example_ka": "მისი კანი გამოსხივებული და ჯანსაღად გამოიყურება.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "luminous",
+    "georgian": "ნათელი",
+    "pronunciation": "/ˈluːmənəs/",
+    "example_en": "This foundation gives a luminous finish.",
+    "example_ka": "ეს ტონალური კრემი ნათელ დასრულებას აძლევს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "dewy",
+    "georgian": "ნალიანი",
+    "pronunciation": "/ˈduːi/",
+    "example_en": "I love the dewy makeup look.",
+    "example_ka": "ნალიანი მაკიაჟის ლუქი მიყვარს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "matte",
+    "georgian": "მატი",
+    "pronunciation": "/mæt/",
+    "example_en": "Matte lipsticks last longer.",
+    "example_ka": "მატი ტუჩსაცხები უფრო დიდხანს გრძელდება.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "satin",
+    "georgian": "ატლასისებური",
+    "pronunciation": "/ˈsætən/",
+    "example_en": "This lipstick has a satin finish.",
+    "example_ka": "ამ ტუჩსაცხს ატლასისებური დასრულება აქვს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "shimmer",
+    "georgian": "ბზინვარება",
+    "pronunciation": "/ˈʃɪmər/",
+    "example_en": "Add shimmer eyeshadow for evening looks.",
+    "example_ka": "საღამო ლუქებისთვის ბზინვარე ღია დაამატე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "glitter",
+    "georgian": "მბზინავი",
+    "pronunciation": "/ˈɡlɪtər/",
+    "example_en": "Glitter makeup is perfect for parties.",
+    "example_ka": "მბზინავი მაკიაჟი წვეულებებისთვის შესანიშნავია.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "metallic",
+    "georgian": "ლითონისებური",
+    "pronunciation": "/məˈtælɪk/",
+    "example_en": "Metallic eyeshadows are trendy this season.",
+    "example_ka": "ლითონისებური ღიები ამ სეზონში ტრენდულია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "nude",
+    "georgian": "ნუდი",
+    "pronunciation": "/nuːd/",
+    "example_en": "Nude lipstick suits everyone.",
+    "example_ka": "ნუდი ტუჩსაცხი ყველას შეეფერება.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "bold",
+    "georgian": "მკაფიო",
+    "pronunciation": "/boʊld/",
+    "example_en": "She's known for her bold makeup choices.",
+    "example_ka": "ის თავისი მკაფიო მაკიაჟის არჩევანითაა ცნობილი.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "dramatic",
+    "georgian": "დრამატული",
+    "pronunciation": "/drəˈmætɪk/",
+    "example_en": "Dramatic eyeliner creates striking looks.",
+    "example_ka": "დრამატული თვალის ფანქარი ეფექტურ ლუქებს ქმნის.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "subtle",
+    "georgian": "ნაზი",
+    "pronunciation": "/ˈsʌtəl/",
+    "example_en": "I prefer subtle, natural makeup.",
+    "example_ka": "ნაზ, ბუნებრივ მაკიაჟს ვანიჭებ უპირატესობას.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "glamorous",
+    "georgian": "გლამურული",
+    "pronunciation": "/ˈɡlæmərəs/",
+    "example_en": "Red carpet looks are always glamorous.",
+    "example_ka": "წითელი ხალიჩის ლუქები ყოველთვის გლამურულია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "elegant",
+    "georgian": "ელეგანტური",
+    "pronunciation": "/ˈelɪɡənt/",
+    "example_en": "An elegant updo completes the look.",
+    "example_ka": "ელეგანტური ზედა სტილი ლუქს ასრულებს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "sophisticated",
+    "georgian": "დახვეწილი",
+    "pronunciation": "/səˈfɪstəkeɪtəd/",
+    "example_en": "Her makeup style is sophisticated and timeless.",
+    "example_ka": "მისი მაკიაჟის სტილი დახვეწილი და დროულია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "trendy",
+    "georgian": "ტრენდული",
+    "pronunciation": "/ˈtrendi/",
+    "example_en": "Glass skin is a trendy Korean beauty concept.",
+    "example_ka": "მინის კანი არის ტრენდული კორეული სილამაზის კონცეფცია.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "vintage",
+    "georgian": "ვინტაჟი",
+    "pronunciation": "/ˈvɪntɪdʒ/",
+    "example_en": "Vintage makeup looks never go out of style.",
+    "example_ka": "ვინტაჟური მაკიაჟის ლუქები არასოდეს გამოდის მოდიდან.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "classic",
+    "georgian": "კლასიკური",
+    "pronunciation": "/ˈklæsɪk/",
+    "example_en": "A classic red lip is always chic.",
+    "example_ka": "კლასიკური წითელი ტუჩები ყოველთვის შიკია.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "modern",
+    "georgian": "თანამედროვე",
+    "pronunciation": "/ˈmɑːdərn/",
+    "example_en": "Modern makeup trends change frequently.",
+    "example_ka": "თანამედროვე მაკიაჟის ტრენდები ხშირად იცვლება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "minimalist",
+    "georgian": "მინიმალისტური",
+    "pronunciation": "/ˈmɪnəməlɪst/",
+    "example_en": "She prefers a minimalist beauty routine.",
+    "example_ka": "მან მინიმალისტურ სილამაზის რუტინას ანიჭებს უპირატესობას.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "maximalist",
+    "georgian": "მაქსიმალისტური",
+    "pronunciation": "/ˈmæksəməlɪst/",
+    "example_en": "Maximalist makeup uses bold colors and textures.",
+    "example_ka": "მაქსიმალისტური მაკიაჟი მკაფიო ფერებსა და ტექსტურებს იყენებს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "editorial",
+    "georgian": "რედაქციული",
+    "pronunciation": "/ˌedɪˈtɔːriəl/",
+    "example_en": "Editorial makeup is artistic and creative.",
+    "example_ka": "რედაქციული მაკიაჟი მხატვრული და კრეატიულია.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "commercial",
+    "georgian": "კომერციული",
+    "pronunciation": "/kəˈmɜːrʃəl/",
+    "example_en": "Commercial beauty looks are wearable daily.",
+    "example_ka": "კომერციული სილამაზის ლუქები ყოველდღიურადაა ცვადი.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "artistic",
+    "georgian": "მხატვრული",
+    "pronunciation": "/ɑːrˈtɪstɪk/",
+    "example_en": "She's known for her artistic makeup designs.",
+    "example_ka": "ის თავისი მხატვრული მაკიაჟის დიზაინითაა ცნობილი.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "creative",
+    "georgian": "კრეატიული",
+    "pronunciation": "/kriˈeɪtɪv/",
+    "example_en": "Social media encourages creative beauty content.",
+    "example_ka": "სოციალური მედია კრეატიულ სილამაზის კონტენტს ახალისებს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "innovative",
+    "georgian": "ინოვაციური",
+    "pronunciation": "/ˈɪnəveɪtɪv/",
+    "example_en": "This brand is known for innovative formulas.",
+    "example_ka": "ეს ბრენდი ინოვაციური ფორმულებითაა ცნობილი.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "revolutionary",
+    "georgian": "რევოლუციური",
+    "pronunciation": "/ˌrevəˈluːʃəˌneri/",
+    "example_en": "This skincare ingredient is revolutionary.",
+    "example_ka": "კანის მოვლის ეს ინგრედიენტი რევოლუციურია.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "breakthrough",
+    "georgian": "გარღვევა",
+    "pronunciation": "/ˈbreɪkθruː/",
+    "example_en": "Scientists made a breakthrough in anti-aging research.",
+    "example_ka": "მეცნიერებმა ანტისაბერძნე კვლევაში გარღვევა გააკეთეს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "advanced",
+    "georgian": "მოწინავე",
+    "pronunciation": "/ədˈvænst/",
+    "example_en": "This cream uses advanced peptide technology.",
+    "example_ka": "ეს კრემი მოწინავე პეპტიდურ ტექნოლოგიას იყენებს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "premium",
+    "georgian": "პრემიუმი",
+    "pronunciation": "/ˈpriːmiəm/",
+    "example_en": "Premium skincare products cost more.",
+    "example_ka": "პრემიუმ კანის მოვლის პროდუქტები მეტი ღირს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "luxury",
+    "georgian": "ლუქსი",
+    "pronunciation": "/ˈlʌkʃəri/",
+    "example_en": "She treats herself to luxury beauty treatments.",
+    "example_ka": "ის თავს ლუქსურ სილამაზის პროცედურებს უწყობს ხელს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "affordable",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrdəbəl/",
+    "example_en": "This drugstore brand offers affordable options.",
+    "example_ka": "ეს აფთიაქების ბრენდი ხელმისაწვდომ ვარიანტებს გთავაზობთ.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "You can find great beauty products on a budget.",
+    "example_ka": "შესანიშნავი სილამაზის პროდუქტები ბიუჯეტში შეგიძლია იპოვო.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "value",
+    "georgian": "ღირებულება",
+    "pronunciation": "/ˈvæljuː/",
+    "example_en": "This product offers great value for money.",
+    "example_ka": "ეს პროდუქტი ფულისთვის მშვენიერ ღირებულებას გთავაზობს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "investment",
+    "georgian": "ინვესტიცია",
+    "pronunciation": "/ɪnˈvestmənt/",
+    "example_en": "Good skincare is an investment in yourself.",
+    "example_ka": "კანის კარგი მოვლა შენში ინვესტიციაა.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "splurge",
+    "georgian": "ფუფუნება",
+    "pronunciation": "/splɜːrdʒ/",
+    "example_en": "Sometimes it's worth it to splurge on quality makeup.",
+    "example_ka": "ზოგჯერ ღირს ხარისხიან მაკიაჟზე ფუფუნება.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "dupe",
+    "georgian": "კოპია",
+    "pronunciation": "/duːp/",
+    "example_en": "This drugstore product is a great dupe for the expensive one.",
+    "example_ka": "აფთიაქის ეს პროდუქტი ძვირი პროდუქტის მშვენიერი კოპიაა.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "alternative",
+    "georgian": "ალტერნატივა",
+    "pronunciation": "/ɔːlˈtɜːrnətɪv/",
+    "example_en": "Here's a cheaper alternative to that foundation.",
+    "example_ka": "აი იაფი ალტერნატივა იმ ტონალური კრემისთვის.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "comparison",
+    "georgian": "შედარება",
+    "pronunciation": "/kəmˈpærəsən/",
+    "example_en": "Beauty influencers often make product comparisons.",
+    "example_ka": "სილამაზის ინფლუენსერები ხშირად აკეთებენ პროდუქტების შედარებას.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Read reviews before buying new products.",
+    "example_ka": "ახალი პროდუქტების ყიდვამდე მიმოხილვები წაიკითხე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "recommendation",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrekəmənˈdeɪʃən/",
+    "example_en": "I trust her beauty product recommendations.",
+    "example_ka": "მის სილამაზის პროდუქტების რეკომენდაციებს ვენდობი.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "tutorial",
+    "georgian": "სასწავლო მასალა",
+    "pronunciation": "/tuˈtɔːriəl/",
+    "example_en": "YouTube makeup tutorials are very helpful.",
+    "example_ka": "YouTube-ის მაკიაჟის სასწავლო მასალები ძალიან სასარგებლოა.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "technique",
+    "georgian": "ტექნიკა",
+    "pronunciation": "/tekˈniːk/",
+    "example_en": "Master different application techniques.",
+    "example_ka": "სხვადასხვა გამოყენების ტექნიკა დაეუფლე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "application",
+    "georgian": "გამოყენება",
+    "pronunciation": "/ˌæplɪˈkeɪʃən/",
+    "example_en": "Proper application makes all the difference.",
+    "example_ka": "სწორი გამოყენება ყველაფერს განსხვავებულს ხდის.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "blending",
+    "georgian": "შერევა",
+    "pronunciation": "/ˈblendɪŋ/",
+    "example_en": "Good blending is key to natural-looking makeup.",
+    "example_ka": "კარგი შერევა ბუნებრივი მაკიაჟის გასაღებია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "buffing",
+    "georgian": "დაპრიალება",
+    "pronunciation": "/ˈbʌfɪŋ/",
+    "example_en": "Buffing helps blend foundation seamlessly.",
+    "example_ka": "დაპრიალება ტონალური კრემის უწყვეტ შერევაში ეხმარება.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "stippling",
+    "georgian": "კრაპვა",
+    "pronunciation": "/ˈstɪplɪŋ/",
+    "example_en": "Use stippling motion for full coverage.",
+    "example_ka": "სრული დაფარვისთვის კრაპვის მოძრაობა გამოიყენე.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "patting",
+    "georgian": "ხელის დარტყმა",
+    "pronunciation": "/ˈpætɪŋ/",
+    "example_en": "Apply concealer using patting motions.",
+    "example_ka": "კონსილერი ხელის ნაზი დარტყმით წაისვი.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "layering",
+    "georgian": "ფენების დადება",
+    "pronunciation": "/ˈleɪərɪŋ/",
+    "example_en": "Layering products builds color intensity.",
+    "example_ka": "პროდუქტების ფენების დადება ფერის ინტენსივობას ზრდის.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "setting",
+    "georgian": "ფიქსაცია",
+    "pronunciation": "/ˈsetɪŋ/",
+    "example_en": "Setting spray locks makeup in place.",
+    "example_ka": "ფიქსაციის სპრეი მაკიაჟს ადგილზე ინახავს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "baking",
+    "georgian": "ცხობა",
+    "pronunciation": "/ˈbeɪkɪŋ/",
+    "example_en": "Baking is a technique to set under-eye concealer.",
+    "example_ka": "ცხობა არის ტექნიკა თვალქვეშა კონსილერის დასაფიქსირებლად.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "color-correcting",
+    "georgian": "ფერის კორექცია",
+    "pronunciation": "/ˈkʌlər kəˈrektɪŋ/",
+    "example_en": "Color-correcting concealer neutralizes discoloration.",
+    "example_ka": "ფერის კორექციის კონსილერი ფერის დარღვევას ნეიტრალიზებს.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "neutralizing",
+    "georgian": "ნეიტრალიზება",
+    "pronunciation": "/ˈnuːtrəlaɪzɪŋ/",
+    "example_en": "Green concealer is good for neutralizing redness.",
+    "example_ka": "მწვანე კონსილერი სიწითლის ნეიტრალიზებისთვის კარგია.",
+    "category": "beauty",
+    "level": "C1"
+  },
+  {
+    "english": "corrector",
+    "georgian": "კორექტორი",
+    "pronunciation": "/kəˈrektər/",
+    "example_en": "Use an orange corrector for dark circles.",
+    "example_ka": "შავი წრეებისთვის ნაცრისფერი კორექტორი გამოიყენე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "eraser",
+    "georgian": "წამშლელი",
+    "pronunciation": "/ɪˈreɪsər/",
+    "example_en": "This eraser pen removes makeup mistakes.",
+    "example_ka": "ეს წამშლელი კალამი მაკიაჟის შეცდომებს შლის.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "sponge",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/spʌndʒ/",
+    "example_en": "Damp sponges blend foundation better.",
+    "example_ka": "ნამი ღრუბლები ტონალურ კრემს უკეთ ურევს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "beauty-blender",
+    "georgian": "ბიუთი-ბლენდერი",
+    "pronunciation": "/ˈbjuːti blendər/",
+    "example_en": "Beauty blenders create flawless makeup application.",
+    "example_ka": "ბიუთი-ბლენდერები უნაკლო მაკიაჟის წასმას ქმნის.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "spatula",
+    "georgian": "შპატელა",
+    "pronunciation": "/ˈspætʃələ/",
+    "example_en": "Use a spatula to mix custom shades.",
+    "example_ka": "საკუთარი ფერების შესარევად შპატელა გამოიყენე.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "tweezers",
+    "georgian": "ფხუნელები",
+    "pronunciation": "/ˈtwiːzərz/",
+    "example_en": "Use tweezers to shape your eyebrows.",
+    "example_ka": "წარბების ფორმირებისთვის ფხუნელები გამოიყენე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "curler",
+    "georgian": "ღუნვა",
+    "pronunciation": "/ˈkɜːrlər/",
+    "example_en": "An eyelash curler opens up your eyes.",
+    "example_ka": "წამწამების ღუნვა თვალებს ხსნის.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "spoolie",
+    "georgian": "სპული",
+    "pronunciation": "/ˈspuːli/",
+    "example_en": "Use a spoolie brush to groom brows.",
+    "example_ka": "წარბების მოვლისთვის სპული ფუნჯი გამოიყენე.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "scissors",
+    "georgian": "მაკრატელი",
+    "pronunciation": "/ˈsɪzərz/",
+    "example_en": "Trim eyebrow hairs with small scissors.",
+    "example_ka": "წარბების თმები პატარა მაკრატლით მოჭერი.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "razor",
+    "georgian": "საპარსი",
+    "pronunciation": "/ˈreɪzər/",
+    "example_en": "Use a facial razor for dermaplaning.",
+    "example_ka": "დერმაპლანინგისთვის სახის საპარსი გამოიყენე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "sharpener",
+    "georgian": "სათიბავი",
+    "pronunciation": "/ˈʃɑːrpənər/",
+    "example_en": "Sharpen your eyeliner pencil regularly.",
+    "example_ka": "თვალის ფანქრის ფანქარი რეგულარულად გაათიბე.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "applicator",
+    "georgian": "აპლიკატორი",
+    "pronunciation": "/ˈæplɪkeɪtər/",
+    "example_en": "Some lipsticks come with applicators.",
+    "example_ka": "ზოგ ტუჩსაცხს აპლიკატორი ახლავს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "wand",
+    "georgian": "ჩხირი",
+    "pronunciation": "/wɑːnd/",
+    "example_en": "Mascara wands come in different shapes.",
+    "example_ka": "ტუშის ჩხირები სხვადასხვა ფორმისაა.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "compact",
+    "georgian": "კომპაქტი",
+    "pronunciation": "/kəmˈpækt/",
+    "example_en": "Travel-size compacts are convenient.",
+    "example_ka": "მოგზაურობისთვის განკუთვნილი კომპაქტები მოხერხებულია.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "refillable",
+    "georgian": "ისევ შევსებადი",
+    "pronunciation": "/riˈfɪləbəl/",
+    "example_en": "Refillable products are more sustainable.",
+    "example_ka": "ისევ შევსებადი პროდუქტები უფრო მდგრადია.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "cushion",
+    "georgian": "ბალიში",
+    "pronunciation": "/ˈkʊʃən/",
+    "example_en": "Cushion foundations provide buildable coverage.",
+    "example_ka": "ბალიშის ტონალური კრემები აგებადი დაფარვას უზრუნველყოფს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "stick",
+    "georgian": "ჩხირული",
+    "pronunciation": "/stɪk/",
+    "example_en": "Foundation sticks are perfect for touch-ups.",
+    "example_ka": "ტონალური ჩხირები კორექტირებისთვის შესანიშნავია.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "crayon",
+    "georgian": "კრაიონი",
+    "pronunciation": "/ˈkreɪɑːn/",
+    "example_en": "Lip crayons are easy to apply.",
+    "example_ka": "ტუჩების კრაიონები ადვილად იწოება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "marker",
+    "georgian": "მარკერი",
+    "pronunciation": "/ˈmɑːrkər/",
+    "example_en": "Eyeliner markers create precise lines.",
+    "example_ka": "თვალის ფანქრის მარკერები ზუსტ ხაზებს ქმნის.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "pen",
+    "georgian": "კალამი",
+    "pronunciation": "/pen/",
+    "example_en": "Felt-tip eyeliner pens are user-friendly.",
+    "example_ka": "ლბად ბოლოიანი თვალის ფანქრის კალმები მომხმარებელზე ორიენტირებულია.",
+    "category": "beauty",
+    "level": "A1"
+  },
+  {
+    "english": "gel",
+    "georgian": "ჟელე",
+    "pronunciation": "/dʒel/",
+    "example_en": "Gel eyeliner lasts longer than pencil.",
+    "example_ka": "ჟელე თვალის ფანქარი ფანქრამდე უფრო ხანს გრძელდება.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "liquid",
+    "georgian": "სითხე",
+    "pronunciation": "/ˈlɪkwɪd/",
+    "example_en": "Liquid lipsticks have intense color payoff.",
+    "example_ka": "სითხე ტუჩსაცხებს ინტენსიური ფერის უზრუნველყოფა აქვთ.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "mousse",
+    "georgian": "მუსი",
+    "pronunciation": "/muːs/",
+    "example_en": "Foundation mousse feels lightweight on skin.",
+    "example_ka": "ტონალური მუსი კანზე მსუბუქად გრძნობს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "balm",
+    "georgian": "ბალზამი",
+    "pronunciation": "/bɑːm/",
+    "example_en": "Tinted lip balms provide subtle color.",
+    "example_ka": "ფერადი ტუჩების ბალზამები ნაზ ფერს აძლევს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "stain",
+    "georgian": "ლაქა",
+    "pronunciation": "/steɪn/",
+    "example_en": "Lip stains last through meals.",
+    "example_ka": "ტუჩების ლაქები საჭმელზე გრძელდება.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "tint",
+    "georgian": "ფერადობა",
+    "pronunciation": "/tɪnt/",
+    "example_en": "Cheek tints give a natural flush.",
+    "example_ka": "ლოყების ფერადობა ბუნებრივ სიწითლეს აძლევს.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "flush",
+    "georgian": "სიწითლე",
+    "pronunciation": "/flʌʃ/",
+    "example_en": "A healthy flush makes you look youthful.",
+    "example_ka": "ჯანსაღი სიწითლე ახალგაზრდულს გხდის.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "glow",
+    "georgian": "ბზინვარება",
+    "pronunciation": "/ɡloʊ/",
+    "example_en": "Highlighter creates a radiant glow.",
+    "example_ka": "ჰაილაითერი გამოსხივებულ ბზინვარებას ქმნის.",
+    "category": "beauty",
+    "level": "B1"
+  },
+  {
+    "english": "sparkle",
+    "georgian": "ნაპერწკალი",
+    "pronunciation": "/ˈspɑːrkəl/",
+    "example_en": "Glitter adds sparkle to party looks.",
+    "example_ka": "ბზინვარება წვეულების ლუქებს ნაპერწკალს ამატებს.",
+    "category": "beauty",
+    "level": "A2"
+  },
+  {
+    "english": "twinkle",
+    "georgian": "მოკავშირება",
+    "pronunciation": "/ˈtwɪŋkəl/",
+    "example_en": "Her eyes had a beautiful twinkle.",
+    "example_ka": "მის თვალებს ლამაზი მოკავშირება ჰქონდა.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "pigmented",
+    "georgian": "პიგმენტირებული",
+    "pronunciation": "/ˈpɪɡməntəd/",
+    "example_en": "Highly pigmented eyeshadows show up well.",
+    "example_ka": "მაღალი პიგმენტირებადი ღიები კარგად ჩანს.",
+    "category": "beauty",
+    "level": "B2"
+  },
+  {
+    "english": "pigment",
+    "georgian": "პიგმენტი",
+    "pronunciation": "/ˈpɪɡmənt/",
+    "example_en": "Pure pigments create the most vibrant colors.",
+    "example_ka": "სუფთა პიგმენტები ყველაზე ცოცხალ ფერებს ქმნის.",
+    "category": "beauty",
+    "level": "B2"
+  }
 ]

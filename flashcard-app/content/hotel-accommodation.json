@@ -1,42 +1,1802 @@
 [
-  {"english": "Reservation", "georgian": "ჯავშანი", "pronunciation": "/ˌrɛzərˈveɪʃən/", "example_en": "I have a reservation for tonight.", "example_ka": "მე მაქვს ჯავშანი ამ ღამისთვის.", "category": "hotel", "level": "A2"},
-  {"english": "Check in", "georgian": "რეგისტრაცია", "pronunciation": "/tʃɛk ɪn/", "example_en": "What time is check in?", "example_ka": "რომელ საათზეა რეგისტრაცია?", "category": "hotel", "level": "A2"},
-  {"english": "Check out", "georgian": "გასვლა", "pronunciation": "/tʃɛk aʊt/", "example_en": "Check out is at 11 AM.", "example_ka": "გასვლა 11 საათზეა.", "category": "hotel", "level": "A2"},
-  {"english": "Single room", "georgian": "ერთადგილიანი ნომერი", "pronunciation": "/ˈsɪŋɡl ruːm/", "example_en": "I'd like a single room, please.", "example_ka": "ერთადგილიანი ნომერი მინდა, გთხოვთ.", "category": "hotel", "level": "A2"},
-  {"english": "Double room", "georgian": "ორადგილიანი ნომერი", "pronunciation": "/ˈdʌbl ruːm/", "example_en": "We need a double room for two nights.", "example_ka": "ორადგილიანი ნომერი გვჭირდება ორი ღამით.", "category": "hotel", "level": "A2"},
-  {"english": "Key card", "georgian": "ბარათი-გასაღები", "pronunciation": "/kiː kɑːrd/", "example_en": "Here is your key card.", "example_ka": "აი თქვენი ბარათი-გასაღები.", "category": "hotel", "level": "A2"},
-  {"english": "Lobby", "georgian": "ვესტიბიულე", "pronunciation": "/ˈlɒbi/", "example_en": "I'll meet you in the lobby.", "example_ka": "ვესტიბიულეში შეგხვდები.", "category": "hotel", "level": "A2"},
-  {"english": "Reception", "georgian": "მიმღები", "pronunciation": "/rɪˈsɛpʃən/", "example_en": "Please ask at reception.", "example_ka": "გთხოვთ მიმღებთან იკითხოთ.", "category": "hotel", "level": "A2"},
-  {"english": "Room service", "georgian": "ნომრის მომსახურება", "pronunciation": "/ruːm ˈsɜːrvɪs/", "example_en": "Can I order room service?", "example_ka": "შემიძლია ნომრის მომსახურება შევუკვეთო?", "category": "hotel", "level": "A2"},
-  {"english": "Towel", "georgian": "პირსახოცი", "pronunciation": "/ˈtaʊəl/", "example_en": "We need extra towels.", "example_ka": "დამატებითი პირსახოცები გვჭირდება.", "category": "hotel", "level": "A1"},
-  {"english": "Pillow", "georgian": "ბალიში", "pronunciation": "/ˈpɪloʊ/", "example_en": "Can I get an extra pillow?", "example_ka": "შემიძლია დამატებითი ბალიში?", "category": "hotel", "level": "A1"},
-  {"english": "Blanket", "georgian": "საბანი", "pronunciation": "/ˈblæŋkɪt/", "example_en": "The blanket is very warm.", "example_ka": "საბანი ძალიან თბილია.", "category": "hotel", "level": "A1"},
-  {"english": "Elevator", "georgian": "ლიფტი", "pronunciation": "/ˈɛlɪveɪtər/", "example_en": "Take the elevator to the third floor.", "example_ka": "ლიფტით ასულიყავით მესამე სართულზე.", "category": "hotel", "level": "A2"},
-  {"english": "Breakfast included", "georgian": "საუზმე შედის", "pronunciation": "/ˈbrɛkfəst ɪnˈkluːdɪd/", "example_en": "Is breakfast included in the price?", "example_ka": "საუზმე შედის ფასში?", "category": "hotel", "level": "A2"},
-  {"english": "Wi-Fi password", "georgian": "ვაი-ფაის პაროლი", "pronunciation": "/ˈwaɪfaɪ ˈpæswɜːrd/", "example_en": "What is the Wi-Fi password?", "example_ka": "რა არის ვაი-ფაის პაროლი?", "category": "hotel", "level": "A2"},
-  {"english": "Air conditioning", "georgian": "კონდიციონერი", "pronunciation": "/ɛr kənˈdɪʃənɪŋ/", "example_en": "The air conditioning is not working.", "example_ka": "კონდიციონერი არ მუშაობს.", "category": "hotel", "level": "A2"},
-  {"english": "Housekeeping", "georgian": "დამლაგებელი", "pronunciation": "/ˈhaʊskiːpɪŋ/", "example_en": "Please send housekeeping to room 305.", "example_ka": "გთხოვთ დამლაგებელი გამოგზავნოთ 305 ნომერში.", "category": "hotel", "level": "B1"},
-  {"english": "Complimentary", "georgian": "უფასო", "pronunciation": "/ˌkɒmplɪˈmɛntəri/", "example_en": "The hotel offers complimentary breakfast.", "example_ka": "სასტუმრო უფასო საუზმეს გთავაზობთ.", "category": "hotel", "level": "B1"},
-  {"english": "Vacancy", "georgian": "თავისუფალი ნომერი", "pronunciation": "/ˈveɪkənsi/", "example_en": "Do you have any vacancies?", "example_ka": "თავისუფალი ნომერი გაქვთ?", "category": "hotel", "level": "B1"},
-  {"english": "Suite", "georgian": "ლუქსი", "pronunciation": "/swiːt/", "example_en": "We booked the honeymoon suite.", "example_ka": "თაფლობის თვის ლუქსი დავჯავშნეთ.", "category": "hotel", "level": "B1"},
-  {"english": "Minibar", "georgian": "მინიბარი", "pronunciation": "/ˈmɪnibɑːr/", "example_en": "The minibar has drinks and snacks.", "example_ka": "მინიბარში სასმელი და საჭმელია.", "category": "hotel", "level": "A2"},
-  {"english": "Luggage", "georgian": "ბარგი", "pronunciation": "/ˈlʌɡɪdʒ/", "example_en": "Can you help with my luggage?", "example_ka": "ბარგში შეგიძლია დამეხმარო?", "category": "hotel", "level": "A2"},
-  {"english": "Do not disturb", "georgian": "არ შემაწუხოთ", "pronunciation": "/duː nɒt dɪˈstɜːrb/", "example_en": "Please hang the do not disturb sign.", "example_ka": "გთხოვთ გამოკიდოთ 'არ შემაწუხოთ' ნიშანი.", "category": "hotel", "level": "A2"},
-  {"english": "Late check-out", "georgian": "გვიან გასვლა", "pronunciation": "/leɪt tʃɛk aʊt/", "example_en": "Is late check-out available?", "example_ka": "შესაძლებელია გვიან გასვლა?", "category": "hotel", "level": "B1"},
-  {"english": "Pool", "georgian": "აუზი", "pronunciation": "/puːl/", "example_en": "The pool is open until 10 PM.", "example_ka": "აუზი ღიაა 10 საათამდე.", "category": "hotel", "level": "A1"},
-  {"english": "Balcony", "georgian": "აივანი", "pronunciation": "/ˈbælkəni/", "example_en": "Our room has a nice balcony.", "example_ka": "ჩვენს ნომერს ლამაზი აივანი აქვს.", "category": "hotel", "level": "A2"},
-  {"english": "Sea view", "georgian": "ზღვის ხედი", "pronunciation": "/siː vjuː/", "example_en": "I want a room with sea view.", "example_ka": "ზღვის ხედით ნომერი მინდა.", "category": "hotel", "level": "A2"},
-  {"english": "Deposit", "georgian": "დეპოზიტი", "pronunciation": "/dɪˈpɒzɪt/", "example_en": "We need a $50 deposit.", "example_ka": "50 დოლარის დეპოზიტი გვჭირდება.", "category": "hotel", "level": "B1"},
-  {"english": "Concierge", "georgian": "კონსიერჟი", "pronunciation": "/ˌkɒnsiˈɛrʒ/", "example_en": "Ask the concierge for restaurant suggestions.", "example_ka": "კონსიერჟს ჰკითხეთ რესტორნის რეკომენდაციები.", "category": "hotel", "level": "B1"},
-  {"english": "Bed sheets", "georgian": "თეთრეული", "pronunciation": "/bɛd ʃiːts/", "example_en": "Can you change the bed sheets?", "example_ka": "შეგიძლიათ თეთრეული შეცვალოთ?", "category": "hotel", "level": "A2"},
-  {"english": "Safe", "georgian": "სეიფი", "pronunciation": "/seɪf/", "example_en": "Put your passport in the safe.", "example_ka": "პასპორტი სეიფში შეინახე.", "category": "hotel", "level": "A2"},
-  {"english": "Heating", "georgian": "გათბობა", "pronunciation": "/ˈhiːtɪŋ/", "example_en": "The heating doesn't work.", "example_ka": "გათბობა არ მუშაობს.", "category": "hotel", "level": "A2"},
-  {"english": "Booking", "georgian": "დაჯავშნა", "pronunciation": "/ˈbʊkɪŋ/", "example_en": "I made a booking online.", "example_ka": "ინტერნეტით დავჯავშნე.", "category": "hotel", "level": "A2"},
-  {"english": "Guest", "georgian": "სტუმარი", "pronunciation": "/ɡɛst/", "example_en": "Each guest receives a welcome drink.", "example_ka": "ყველა სტუმარი მისასალმებელ სასმელს იღებს.", "category": "hotel", "level": "A2"},
-  {"english": "Noise complaint", "georgian": "ხმაურის საჩივარი", "pronunciation": "/nɔɪz kəmˈpleɪnt/", "example_en": "I want to make a noise complaint.", "example_ka": "ხმაურის საჩივარი მინდა.", "category": "hotel", "level": "B1"},
-  {"english": "Iron", "georgian": "უთო", "pronunciation": "/ˈaɪərn/", "example_en": "Is there an iron in the room?", "example_ka": "ნომერში უთო არის?", "category": "hotel", "level": "A2"},
-  {"english": "Hairdryer", "georgian": "ფენი", "pronunciation": "/ˈhɛrdraɪər/", "example_en": "The hairdryer is in the bathroom.", "example_ka": "ფენი აბაზანაშია.", "category": "hotel", "level": "A2"},
-  {"english": "Room number", "georgian": "ნომრის ნომერი", "pronunciation": "/ruːm ˈnʌmbər/", "example_en": "Your room number is 412.", "example_ka": "თქვენი ნომრის ნომერია 412.", "category": "hotel", "level": "A1"},
-  {"english": "Floor", "georgian": "სართული", "pronunciation": "/flɔːr/", "example_en": "We are on the fifth floor.", "example_ka": "მეხუთე სართულზე ვართ.", "category": "hotel", "level": "A1"},
-  {"english": "Spa", "georgian": "სპა", "pronunciation": "/spɑː/", "example_en": "The hotel has a great spa.", "example_ka": "სასტუმროს შესანიშნავი სპა აქვს.", "category": "hotel", "level": "A2"}
+  {
+    "english": "Reservation",
+    "georgian": "ჯავშანი",
+    "pronunciation": "/ˌrɛzərˈveɪʃən/",
+    "example_en": "I have a reservation for tonight.",
+    "example_ka": "მე მაქვს ჯავშანი ამ ღამისთვის.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Lobby",
+    "georgian": "ვესტიბიულე",
+    "pronunciation": "/ˈlɒbi/",
+    "example_en": "I'll meet you in the lobby.",
+    "example_ka": "ვესტიბიულეში შეგხვდები.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Reception",
+    "georgian": "მიმღები",
+    "pronunciation": "/rɪˈsɛpʃən/",
+    "example_en": "Please ask at reception.",
+    "example_ka": "გთხოვთ მიმღებთან იკითხოთ.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Towel",
+    "georgian": "პირსახოცი",
+    "pronunciation": "/ˈtaʊəl/",
+    "example_en": "We need extra towels.",
+    "example_ka": "დამატებითი პირსახოცები გვჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "Pillow",
+    "georgian": "ბალიში",
+    "pronunciation": "/ˈpɪloʊ/",
+    "example_en": "Can I get an extra pillow?",
+    "example_ka": "შემიძლია დამატებითი ბალიში?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "Blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkɪt/",
+    "example_en": "The blanket is very warm.",
+    "example_ka": "საბანი ძალიან თბილია.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "Elevator",
+    "georgian": "ლიფტი",
+    "pronunciation": "/ˈɛlɪveɪtər/",
+    "example_en": "Take the elevator to the third floor.",
+    "example_ka": "ლიფტით ასულიყავით მესამე სართულზე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Housekeeping",
+    "georgian": "დამლაგებელი",
+    "pronunciation": "/ˈhaʊskiːpɪŋ/",
+    "example_en": "Please send housekeeping to room 305.",
+    "example_ka": "გთხოვთ დამლაგებელი გამოგზავნოთ 305 ნომერში.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "Complimentary",
+    "georgian": "უფასო",
+    "pronunciation": "/ˌkɒmplɪˈmɛntəri/",
+    "example_en": "The hotel offers complimentary breakfast.",
+    "example_ka": "სასტუმრო უფასო საუზმეს გთავაზობთ.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "Vacancy",
+    "georgian": "თავისუფალი ნომერი",
+    "pronunciation": "/ˈveɪkənsi/",
+    "example_en": "Do you have any vacancies?",
+    "example_ka": "თავისუფალი ნომერი გაქვთ?",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "Suite",
+    "georgian": "ლუქსი",
+    "pronunciation": "/swiːt/",
+    "example_en": "We booked the honeymoon suite.",
+    "example_ka": "თაფლობის თვის ლუქსი დავჯავშნეთ.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "Minibar",
+    "georgian": "მინიბარი",
+    "pronunciation": "/ˈmɪnibɑːr/",
+    "example_en": "The minibar has drinks and snacks.",
+    "example_ka": "მინიბარში სასმელი და საჭმელია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Luggage",
+    "georgian": "ბარგი",
+    "pronunciation": "/ˈlʌɡɪdʒ/",
+    "example_en": "Can you help with my luggage?",
+    "example_ka": "ბარგში შეგიძლია დამეხმარო?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Pool",
+    "georgian": "აუზი",
+    "pronunciation": "/puːl/",
+    "example_en": "The pool is open until 10 PM.",
+    "example_ka": "აუზი ღიაა 10 საათამდე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "Balcony",
+    "georgian": "აივანი",
+    "pronunciation": "/ˈbælkəni/",
+    "example_en": "Our room has a nice balcony.",
+    "example_ka": "ჩვენს ნომერს ლამაზი აივანი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Deposit",
+    "georgian": "დეპოზიტი",
+    "pronunciation": "/dɪˈpɒzɪt/",
+    "example_en": "We need a $50 deposit.",
+    "example_ka": "50 დოლარის დეპოზიტი გვჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "Concierge",
+    "georgian": "კონსიერჟი",
+    "pronunciation": "/ˌkɒnsiˈɛrʒ/",
+    "example_en": "Ask the concierge for restaurant suggestions.",
+    "example_ka": "კონსიერჟს ჰკითხეთ რესტორნის რეკომენდაციები.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "Safe",
+    "georgian": "სეიფი",
+    "pronunciation": "/seɪf/",
+    "example_en": "Put your passport in the safe.",
+    "example_ka": "პასპორტი სეიფში შეინახე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Heating",
+    "georgian": "გათბობა",
+    "pronunciation": "/ˈhiːtɪŋ/",
+    "example_en": "The heating doesn't work.",
+    "example_ka": "გათბობა არ მუშაობს.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Booking",
+    "georgian": "დაჯავშნა",
+    "pronunciation": "/ˈbʊkɪŋ/",
+    "example_en": "I made a booking online.",
+    "example_ka": "ინტერნეტით დავჯავშნე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Guest",
+    "georgian": "სტუმარი",
+    "pronunciation": "/ɡɛst/",
+    "example_en": "Each guest receives a welcome drink.",
+    "example_ka": "ყველა სტუმარი მისასალმებელ სასმელს იღებს.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Iron",
+    "georgian": "უთო",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "Is there an iron in the room?",
+    "example_ka": "ნომერში უთო არის?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Hairdryer",
+    "georgian": "ფენი",
+    "pronunciation": "/ˈhɛrdraɪər/",
+    "example_en": "The hairdryer is in the bathroom.",
+    "example_ka": "ფენი აბაზანაშია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "Floor",
+    "georgian": "სართული",
+    "pronunciation": "/flɔːr/",
+    "example_en": "We are on the fifth floor.",
+    "example_ka": "მეხუთე სართულზე ვართ.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "Spa",
+    "georgian": "სპა",
+    "pronunciation": "/spɑː/",
+    "example_en": "The hotel has a great spa.",
+    "example_ka": "სასტუმროს შესანიშნავი სპა აქვს.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "room",
+    "georgian": "ოთახი",
+    "pronunciation": "/ruːm/",
+    "example_en": "I need a room for two nights.",
+    "example_ka": "ორი ღამით ოთახი მჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "bed",
+    "georgian": "საწოლი",
+    "pronunciation": "/bed/",
+    "example_en": "The bed is very comfortable.",
+    "example_ka": "საწოლი ძალიან კომფორტულია.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "key",
+    "georgian": "გასაღები",
+    "pronunciation": "/kiː/",
+    "example_en": "Here is your room key.",
+    "example_ka": "აქ არის თქვენი ოთახის გასაღები.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "check",
+    "georgian": "შემოწმება",
+    "pronunciation": "/tʃek/",
+    "example_en": "Check if the room is ready.",
+    "example_ka": "ოთახი მზადაა თუ არა შეამოწმე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "stay",
+    "georgian": "დარჩენა",
+    "pronunciation": "/steɪ/",
+    "example_en": "How long will you stay?",
+    "example_ka": "რამდენ ხანს დარჩებით?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "night",
+    "georgian": "ღამე",
+    "pronunciation": "/naɪt/",
+    "example_en": "One night costs fifty dollars.",
+    "example_ka": "ერთი ღამე ორმოცდაათი დოლარი ღირს.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "What is the price per night?",
+    "example_ka": "რა ფასია ერთ ღამეში?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "pay",
+    "georgian": "გადახდა",
+    "pronunciation": "/peɪ/",
+    "example_en": "I want to pay by card.",
+    "example_ka": "ბარათით გადახდა მინდა.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "clean",
+    "georgian": "სუფთა",
+    "pronunciation": "/kliːn/",
+    "example_en": "The room is very clean.",
+    "example_ka": "ოთახი ძალიან სუფთაა.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "dirty",
+    "georgian": "ბინძური",
+    "pronunciation": "/ˈdɜːrti/",
+    "example_en": "The bathroom is dirty.",
+    "example_ka": "აბაზანა ბინძურია.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "bathroom",
+    "georgian": "აბაზანა",
+    "pronunciation": "/ˈbæθruːm/",
+    "example_en": "The bathroom has a shower.",
+    "example_ka": "აბაზანაში შხაპია.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "shower",
+    "georgian": "შხაპი",
+    "pronunciation": "/ˈʃaʊər/",
+    "example_en": "The shower has hot water.",
+    "example_ka": "შხაპს ცხელი წყალი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "soap",
+    "georgian": "საპონი",
+    "pronunciation": "/soʊp/",
+    "example_en": "There is no soap in the room.",
+    "example_ka": "ოთახში საპონი არ არის.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "breakfast",
+    "georgian": "საუზმე",
+    "pronunciation": "/ˈbrekfəst/",
+    "example_en": "Is breakfast included?",
+    "example_ka": "საუზმე შედის?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "door",
+    "georgian": "კარი",
+    "pronunciation": "/dɔːr/",
+    "example_en": "Please lock the door.",
+    "example_ka": "გთხოვთ კარი დაკეტოთ.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "The window has a nice view.",
+    "example_ka": "ფანჯარას ლამაზი ხედი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "view",
+    "georgian": "ხედი",
+    "pronunciation": "/vjuː/",
+    "example_en": "I want a room with a sea view.",
+    "example_ka": "ზღვის ხედიანი ოთახი მინდა.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "quiet",
+    "georgian": "წყნარი",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "I need a quiet room.",
+    "example_ka": "წყნარი ოთახი მჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "noisy",
+    "georgian": "ხმაურიანი",
+    "pronunciation": "/ˈnɔɪzi/",
+    "example_en": "The room is too noisy.",
+    "example_ka": "ოთახი ძალიან ხმაურიანია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "available",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈveɪləbəl/",
+    "example_en": "Are any rooms available?",
+    "example_ka": "ოთახები ხელმისაწვდომია?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "cancel",
+    "georgian": "გაუქმება",
+    "pronunciation": "/ˈkænsəl/",
+    "example_en": "I need to cancel my reservation.",
+    "example_ka": "ჯავშნის გაუქმება მჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "complaint",
+    "georgian": "საჩივარი",
+    "pronunciation": "/kəmˈpleɪnt/",
+    "example_en": "I want to make a complaint.",
+    "example_ka": "საჩივრის გაკეთება მინდა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "receptionist",
+    "georgian": "ადმინისტრატორი",
+    "pronunciation": "/rɪˈsepʃənɪst/",
+    "example_en": "Ask the receptionist.",
+    "example_ka": "ადმინისტრატორს ჰკითხე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "bellboy",
+    "georgian": "მეკარე",
+    "pronunciation": "/ˈbelbɔɪ/",
+    "example_en": "The bellboy carried my luggage.",
+    "example_ka": "მეკარემ ბარგი მომიტანა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "checkout",
+    "georgian": "გასვლა",
+    "pronunciation": "/ˈtʃekaʊt/",
+    "example_en": "Checkout is at noon.",
+    "example_ka": "გასვლა შუადღისას არის.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "checkin",
+    "georgian": "შესვლა",
+    "pronunciation": "/ˈtʃekɪn/",
+    "example_en": "Checkin starts at three.",
+    "example_ka": "შესვლა სამიდან იწყება.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "wifi",
+    "georgian": "ვაიფაი",
+    "pronunciation": "/ˈwaɪfaɪ/",
+    "example_en": "What is the wifi password?",
+    "example_ka": "ვაიფაის პაროლი რაა?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswɜːrd/",
+    "example_en": "The password is on the card.",
+    "example_ka": "პაროლი ბარათზეა.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "air",
+    "georgian": "ჰაერი",
+    "pronunciation": "/er/",
+    "example_en": "Turn on the air conditioning.",
+    "example_ka": "კონდიციონერი ჩართე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "lamp",
+    "georgian": "ლამპა",
+    "pronunciation": "/læmp/",
+    "example_en": "The lamp doesn't work.",
+    "example_ka": "ლამპა არ მუშაობს.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "mirror",
+    "georgian": "სარკე",
+    "pronunciation": "/ˈmɪrər/",
+    "example_en": "There is a mirror in the bathroom.",
+    "example_ka": "აბაზანაში სარკეა.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "wardrobe",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈwɔːrdroʊb/",
+    "example_en": "Put your clothes in the wardrobe.",
+    "example_ka": "ტანსაცმელი კარადაში ჩადე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "hanger",
+    "georgian": "საკიდი",
+    "pronunciation": "/ˈhæŋər/",
+    "example_en": "I need more hangers.",
+    "example_ka": "მეტი საკიდი მჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "sheet",
+    "georgian": "ზეწარი",
+    "pronunciation": "/ʃiːt/",
+    "example_en": "Please change the sheets.",
+    "example_ka": "გთხოვთ ზეწარი შეცვალოთ.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "mattress",
+    "georgian": "ლეიბი",
+    "pronunciation": "/ˈmætrəs/",
+    "example_en": "The mattress is too soft.",
+    "example_ka": "ლეიბი ძალიან რბილია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "curtain",
+    "georgian": "ფარდა",
+    "pronunciation": "/ˈkɜːrtən/",
+    "example_en": "Close the curtains please.",
+    "example_ka": "გთხოვთ ფარდები დახურეთ.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "carpet",
+    "georgian": "ხალიჩა",
+    "pronunciation": "/ˈkɑːrpɪt/",
+    "example_en": "The carpet is stained.",
+    "example_ka": "ხალიჩა დალაქებულია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "socket",
+    "georgian": "როზეტი",
+    "pronunciation": "/ˈsɒkɪt/",
+    "example_en": "Where is the power socket?",
+    "example_ka": "სად არის როზეტი?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "adapter",
+    "georgian": "ადაპტერი",
+    "pronunciation": "/əˈdæptər/",
+    "example_en": "I need a plug adapter.",
+    "example_ka": "ადაპტერი მჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "television",
+    "georgian": "ტელევიზორი",
+    "pronunciation": "/ˈtelɪvɪʒən/",
+    "example_en": "The television has many channels.",
+    "example_ka": "ტელევიზორს ბევრი არხი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "remote",
+    "georgian": "პულტი",
+    "pronunciation": "/rɪˈmoʊt/",
+    "example_en": "Where is the remote control?",
+    "example_ka": "სად არის პულტი?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "fridge",
+    "georgian": "მაცივარი",
+    "pronunciation": "/frɪdʒ/",
+    "example_en": "There is water in the fridge.",
+    "example_ka": "მაცივარში წყალია.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "kettle",
+    "georgian": "ჩაიდანი",
+    "pronunciation": "/ˈketəl/",
+    "example_en": "Use the kettle for tea.",
+    "example_ka": "ჩაისთვის ჩაიდანი გამოიყენე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "coffee",
+    "georgian": "ყავა",
+    "pronunciation": "/ˈkɒfi/",
+    "example_en": "Is there coffee in the room?",
+    "example_ka": "ოთახში ყავა არის?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "tea",
+    "georgian": "ჩაი",
+    "pronunciation": "/tiː/",
+    "example_en": "I prefer tea in the morning.",
+    "example_ka": "დილით ჩაის ვანიჭებ უპირატესობას.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "service",
+    "georgian": "მომსახურება",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "The room service is excellent.",
+    "example_ka": "ოთახის მომსახურება შესანიშნავია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "tip",
+    "georgian": "ჩაი",
+    "pronunciation": "/tɪp/",
+    "example_en": "Leave a tip for the maid.",
+    "example_ka": "მოახლეს ჩაი დაუტოვე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "maid",
+    "georgian": "მოახლე",
+    "pronunciation": "/meɪd/",
+    "example_en": "The maid cleaned the room.",
+    "example_ka": "მოახლემ ოთახი დაალაგა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "laundry",
+    "georgian": "სამრეცხაო",
+    "pronunciation": "/ˈlɔːndri/",
+    "example_en": "Is there a laundry service?",
+    "example_ka": "სამრეცხაოს მომსახურება არის?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "stain",
+    "georgian": "ლაქა",
+    "pronunciation": "/steɪn/",
+    "example_en": "There is a stain on the towel.",
+    "example_ka": "პირსახოცზე ლაქაა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "renovated",
+    "georgian": "განახლებული",
+    "pronunciation": "/ˈrenəveɪtɪd/",
+    "example_en": "The hotel was recently renovated.",
+    "example_ka": "სასტუმრო ახლახან განახლდა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "furnished",
+    "georgian": "გარემონტებული",
+    "pronunciation": "/ˈfɜːrnɪʃt/",
+    "example_en": "The room is fully furnished.",
+    "example_ka": "ოთახი სრულად გარემონტებულია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "spacious",
+    "georgian": "ფართო",
+    "pronunciation": "/ˈspeɪʃəs/",
+    "example_en": "The suite is very spacious.",
+    "example_ka": "სუიტა ძალიან ფართოა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "cozy",
+    "georgian": "მყუდრო",
+    "pronunciation": "/ˈkoʊzi/",
+    "example_en": "The room feels cozy.",
+    "example_ka": "ოთახი მყუდროა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "luxurious",
+    "georgian": "ფუფუნებული",
+    "pronunciation": "/lʌɡˈʒʊriəs/",
+    "example_en": "The hotel is luxurious.",
+    "example_ka": "სასტუმრო ფუფუნებულია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტური",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "We chose a budget hotel.",
+    "example_ka": "ბიუჯეტური სასტუმრო ავირჩიეთ.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "hostel",
+    "georgian": "ჰოსტელი",
+    "pronunciation": "/ˈhɒstəl/",
+    "example_en": "The hostel is cheaper.",
+    "example_ka": "ჰოსტელი უფრო იაფია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "motel",
+    "georgian": "მოტელი",
+    "pronunciation": "/moʊˈtel/",
+    "example_en": "We stopped at a motel.",
+    "example_ka": "მოტელში გავჩერდით.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "resort",
+    "georgian": "კურორტი",
+    "pronunciation": "/rɪˈzɔːrt/",
+    "example_en": "The beach resort is beautiful.",
+    "example_ka": "სანაპირო კურორტი ლამაზია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "inn",
+    "georgian": "სასტუმრო",
+    "pronunciation": "/ɪn/",
+    "example_en": "The inn is small but nice.",
+    "example_ka": "სასტუმრო პატარა მაგრამ ლამაზია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "lodge",
+    "georgian": "ლოჯი",
+    "pronunciation": "/lɒdʒ/",
+    "example_en": "We stayed at a mountain lodge.",
+    "example_ka": "მთის ლოჯში დავრჩით.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "cabin",
+    "georgian": "ქოხი",
+    "pronunciation": "/ˈkæbɪn/",
+    "example_en": "The cabin has a fireplace.",
+    "example_ka": "ქოხს ბუხარი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "bungalow",
+    "georgian": "ბუნგალო",
+    "pronunciation": "/ˈbʌŋɡəloʊ/",
+    "example_en": "We rented a beach bungalow.",
+    "example_ka": "სანაპირო ბუნგალო ვიქირავეთ.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "penthouse",
+    "georgian": "პენტჰაუსი",
+    "pronunciation": "/ˈpenthaʊs/",
+    "example_en": "The penthouse has an amazing view.",
+    "example_ka": "პენტჰაუსს საოცარი ხედი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "dormitory",
+    "georgian": "საერთო საცხოვრებელი",
+    "pronunciation": "/ˈdɔːrmɪtɔːri/",
+    "example_en": "The dormitory has eight beds.",
+    "example_ka": "საერთო საცხოვრებელში რვა საწოლია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "single",
+    "georgian": "ერთადგილიანი",
+    "pronunciation": "/ˈsɪŋɡəl/",
+    "example_en": "I booked a single room.",
+    "example_ka": "ერთადგილიანი ოთახი დავჯავშნე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "double",
+    "georgian": "ორადგილიანი",
+    "pronunciation": "/ˈdʌbəl/",
+    "example_en": "A double room please.",
+    "example_ka": "ორადგილიანი ოთახი გთხოვთ.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "twin",
+    "georgian": "ორსაწოლიანი",
+    "pronunciation": "/twɪn/",
+    "example_en": "We need a twin room.",
+    "example_ka": "ორსაწოლიანი ოთახი გვჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "upgrade",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpɡreɪd/",
+    "example_en": "Can I upgrade my room?",
+    "example_ka": "ოთახის განახლება შეიძლება?",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "downgrade",
+    "georgian": "გაუარესება",
+    "pronunciation": "/ˈdaʊnɡreɪd/",
+    "example_en": "They downgraded my room.",
+    "example_ka": "ოთახი გამიუარესეს.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "rate",
+    "georgian": "ტარიფი",
+    "pronunciation": "/reɪt/",
+    "example_en": "What is the daily rate?",
+    "example_ka": "ყოველდღიური ტარიფი რაა?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Is there a discount for students?",
+    "example_ka": "სტუდენტებისთვის ფასდაკლებაა?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "inclusive",
+    "georgian": "ინკლუზიური",
+    "pronunciation": "/ɪnˈkluːsɪv/",
+    "example_en": "The price is all-inclusive.",
+    "example_ka": "ფასი ყველაფრის ჩათვლითაა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "occupancy",
+    "georgian": "დატვირთვა",
+    "pronunciation": "/ˈɒkjʊpənsi/",
+    "example_en": "Maximum occupancy is four people.",
+    "example_ka": "მაქსიმალური დატვირთვა ოთხი ადამიანია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "accommodation",
+    "georgian": "საცხოვრებელი",
+    "pronunciation": "/əˌkɒməˈdeɪʃən/",
+    "example_en": "We need accommodation for three.",
+    "example_ka": "სამი ადამიანისთვის საცხოვრებელი გვჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "hospitality",
+    "georgian": "სტუმართმოყვარეობა",
+    "pronunciation": "/ˌhɒspɪˈtæləti/",
+    "example_en": "Georgian hospitality is famous.",
+    "example_ka": "ქართული სტუმართმოყვარეობა ცნობილია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "amenity",
+    "georgian": "კეთილმოწყობა",
+    "pronunciation": "/əˈmenɪti/",
+    "example_en": "The hotel has great amenities.",
+    "example_ka": "სასტუმროს შესანიშნავი კეთილმოწყობა აქვს.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "terrace",
+    "georgian": "ტერასა",
+    "pronunciation": "/ˈterəs/",
+    "example_en": "Have breakfast on the terrace.",
+    "example_ka": "ტერასაზე დასაუზმე.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "rooftop",
+    "georgian": "სახურავი",
+    "pronunciation": "/ˈruːftɒp/",
+    "example_en": "The rooftop bar is amazing.",
+    "example_ka": "სახურავის ბარი საოცარია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "gym",
+    "georgian": "სპორტდარბაზი",
+    "pronunciation": "/dʒɪm/",
+    "example_en": "The hotel has a gym.",
+    "example_ka": "სასტუმროში სპორტდარბაზია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "sauna",
+    "georgian": "საუნა",
+    "pronunciation": "/ˈsaʊnə/",
+    "example_en": "I relaxed in the sauna.",
+    "example_ka": "საუნაში მოვისვენე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "jacuzzi",
+    "georgian": "ჯაკუზი",
+    "pronunciation": "/dʒəˈkuːzi/",
+    "example_en": "The room has a jacuzzi.",
+    "example_ka": "ოთახში ჯაკუზია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "valet",
+    "georgian": "პარკინგის მომსახურე",
+    "pronunciation": "/ˈvæleɪ/",
+    "example_en": "Use the valet parking.",
+    "example_ka": "ვალე პარკინგი გამოიყენე.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "porter",
+    "georgian": "მტვირთავი",
+    "pronunciation": "/ˈpɔːrtər/",
+    "example_en": "The porter helped with bags.",
+    "example_ka": "მტვირთავმა ჩანთებთან დამეხმარა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "lounge",
+    "georgian": "ლაუნჯი",
+    "pronunciation": "/laʊndʒ/",
+    "example_en": "Wait in the lounge.",
+    "example_ka": "ლაუნჯში დაელოდე.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "bar",
+    "georgian": "ბარი",
+    "pronunciation": "/bɑːr/",
+    "example_en": "The hotel bar is open late.",
+    "example_ka": "სასტუმროს ბარი გვიანამდე მუშაობს.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "restaurant",
+    "georgian": "რესტორანი",
+    "pronunciation": "/ˈrestərɒnt/",
+    "example_en": "The hotel restaurant serves dinner.",
+    "example_ka": "სასტუმროს რესტორანი სადილს ემსახურება.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "buffet",
+    "georgian": "ბუფეტი",
+    "pronunciation": "/bəˈfeɪ/",
+    "example_en": "Breakfast is a buffet.",
+    "example_ka": "საუზმე ბუფეტია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmenjuː/",
+    "example_en": "Look at the room service menu.",
+    "example_ka": "ოთახის მომსახურების მენიუ ნახე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "corridor",
+    "georgian": "დერეფანი",
+    "pronunciation": "/ˈkɒrɪdɔːr/",
+    "example_en": "Walk down the corridor.",
+    "example_ka": "დერეფანში ჩადი.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "staircase",
+    "georgian": "კიბე",
+    "pronunciation": "/ˈsterkeɪs/",
+    "example_en": "Take the staircase to the third floor.",
+    "example_ka": "კიბით მესამე სართულზე ავიდე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "parking",
+    "georgian": "პარკინგი",
+    "pronunciation": "/ˈpɑːrkɪŋ/",
+    "example_en": "Is there free parking?",
+    "example_ka": "უფასო პარკინგია?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "garage",
+    "georgian": "გარაჟი",
+    "pronunciation": "/ɡəˈrɑːʒ/",
+    "example_en": "Park in the underground garage.",
+    "example_ka": "მიწისქვეშა გარაჟში დააყენე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "entrance",
+    "georgian": "შესასვლელი",
+    "pronunciation": "/ˈentrəns/",
+    "example_en": "The main entrance is on the left.",
+    "example_ka": "მთავარი შესასვლელი მარცხნივაა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "exit",
+    "georgian": "გასასვლელი",
+    "pronunciation": "/ˈeɡzɪt/",
+    "example_en": "The emergency exit is nearby.",
+    "example_ka": "საგანგებო გასასვლელი ახლოსაა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "fire",
+    "georgian": "ხანძარი",
+    "pronunciation": "/ˈfaɪər/",
+    "example_en": "The fire alarm went off.",
+    "example_ka": "ხანძრის სიგნალი ჩაირთო.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "emergency",
+    "georgian": "საგანგებო",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Call in case of emergency.",
+    "example_ka": "საგანგებო შემთხვევაში დარეკე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "crib",
+    "georgian": "საბავშვო საწოლი",
+    "pronunciation": "/krɪb/",
+    "example_en": "We need a crib for the baby.",
+    "example_ka": "ბავშვისთვის საწოლი გვჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "rollaway",
+    "georgian": "გადასაადგილებელი საწოლი",
+    "pronunciation": "/ˈroʊləweɪ/",
+    "example_en": "Can we get a rollaway bed?",
+    "example_ka": "გადასაადგილებელი საწოლი შეგვიძლია?",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "adjoining",
+    "georgian": "მიმდებარე",
+    "pronunciation": "/əˈdʒɔɪnɪŋ/",
+    "example_en": "We want adjoining rooms.",
+    "example_ka": "მიმდებარე ოთახები გვინდა.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "interconnecting",
+    "georgian": "დამაკავშირებელი",
+    "pronunciation": "/ˌɪntərkəˈnektɪŋ/",
+    "example_en": "The rooms are interconnecting.",
+    "example_ka": "ოთახები დაკავშირებულია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "turndown",
+    "georgian": "საღამოს მომსახურება",
+    "pronunciation": "/ˈtɜːrndaʊn/",
+    "example_en": "The turndown service is nice.",
+    "example_ka": "საღამოს მომსახურება კარგია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "maintenance",
+    "georgian": "ტექნიკური მომსახურება",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "example_en": "Call maintenance for the broken lamp.",
+    "example_ka": "გატეხილი ლამპისთვის ტექნიკურ მომსახურებას დაურეკე.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "plumbing",
+    "georgian": "წყალგაყვანილობა",
+    "pronunciation": "/ˈplʌmɪŋ/",
+    "example_en": "The plumbing needs fixing.",
+    "example_ka": "წყალგაყვანილობა შეკეთებას საჭიროებს.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "leak",
+    "georgian": "გაჟონვა",
+    "pronunciation": "/liːk/",
+    "example_en": "There is a leak in the ceiling.",
+    "example_ka": "ჭერიდან წყალი ჟონავს.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "clogged",
+    "georgian": "გაჭედილი",
+    "pronunciation": "/klɒɡd/",
+    "example_en": "The drain is clogged.",
+    "example_ka": "კანალიზაცია გაჭედილია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "thermostat",
+    "georgian": "თერმოსტატი",
+    "pronunciation": "/ˈθɜːrməstæt/",
+    "example_en": "Adjust the thermostat.",
+    "example_ka": "თერმოსტატი დაარეგულირე.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "ventilation",
+    "georgian": "ვენტილაცია",
+    "pronunciation": "/ˌventɪˈleɪʃən/",
+    "example_en": "The ventilation is poor.",
+    "example_ka": "ვენტილაცია ცუდია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "soundproof",
+    "georgian": "ხმაიზოლირებული",
+    "pronunciation": "/ˈsaʊndpruːf/",
+    "example_en": "The room is soundproof.",
+    "example_ka": "ოთახი ხმაიზოლირებულია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "linen",
+    "georgian": "თეთრეული",
+    "pronunciation": "/ˈlɪnɪn/",
+    "example_en": "Fresh linen is provided daily.",
+    "example_ka": "სუფთა თეთრეულს ყოველდღე ცვლიან.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "bathrobe",
+    "georgian": "ხალათი",
+    "pronunciation": "/ˈbæθroʊb/",
+    "example_en": "There are bathrobes in the closet.",
+    "example_ka": "კარადაში ხალათებია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "slipper",
+    "georgian": "ჩუსტი",
+    "pronunciation": "/ˈslɪpər/",
+    "example_en": "Put on the hotel slippers.",
+    "example_ka": "სასტუმროს ჩუსტები ჩაიცვი.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "toiletry",
+    "georgian": "ტუალეტის ნივთები",
+    "pronunciation": "/ˈtɔɪlətri/",
+    "example_en": "The toiletries are free.",
+    "example_ka": "ტუალეტის ნივთები უფასოა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "shampoo",
+    "georgian": "შამპუნი",
+    "pronunciation": "/ʃæmˈpuː/",
+    "example_en": "The shampoo is in the bathroom.",
+    "example_ka": "შამპუნი აბაზანაშია.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "conditioner",
+    "georgian": "კონდიციონერი",
+    "pronunciation": "/kənˈdɪʃənər/",
+    "example_en": "There is no conditioner.",
+    "example_ka": "კონდიციონერი არ არის.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "lotion",
+    "georgian": "ლოსიონი",
+    "pronunciation": "/ˈloʊʃən/",
+    "example_en": "Use the body lotion.",
+    "example_ka": "ლოსიონი გამოიყენე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "plug",
+    "georgian": "შტეფსელი",
+    "pronunciation": "/plʌɡ/",
+    "example_en": "Where do I plug in my phone?",
+    "example_ka": "სად ჩავრთო ტელეფონი?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "charger",
+    "georgian": "დამტენი",
+    "pronunciation": "/ˈtʃɑːrdʒər/",
+    "example_en": "I forgot my charger.",
+    "example_ka": "დამტენი დამავიწყდა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "wake",
+    "georgian": "გაღვიძება",
+    "pronunciation": "/weɪk/",
+    "example_en": "Set a wake-up call for seven.",
+    "example_ka": "გაღვიძების ზარი შვიდზე დააყენე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "noise",
+    "georgian": "ხმაური",
+    "pronunciation": "/nɔɪz/",
+    "example_en": "There is too much noise.",
+    "example_ka": "ძალიან ბევრი ხმაურია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "refund",
+    "georgian": "თანხის დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "I want a refund.",
+    "example_ka": "თანხის დაბრუნება მინდა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "Can I get an invoice?",
+    "example_ka": "ინვოისი შეიძლება?",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Keep the receipt.",
+    "example_ka": "ქვითარი შეინახე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "transfer",
+    "georgian": "ტრანსფერი",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "Is airport transfer available?",
+    "example_ka": "აეროპორტის ტრანსფერი ხელმისაწვდომია?",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "shuttle",
+    "georgian": "შატლი",
+    "pronunciation": "/ˈʃʌtəl/",
+    "example_en": "The hotel shuttle is free.",
+    "example_ka": "სასტუმროს შატლი უფასოა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "location",
+    "georgian": "მდებარეობა",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "The hotel location is perfect.",
+    "example_ka": "სასტუმროს მდებარეობა სრულყოფილია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "nearby",
+    "georgian": "ახლოს",
+    "pronunciation": "/ˌnɪrˈbaɪ/",
+    "example_en": "Is there a store nearby?",
+    "example_ka": "ახლოს მაღაზიაა?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "confirm",
+    "georgian": "დადასტურება",
+    "pronunciation": "/kənˈfɜːrm/",
+    "example_en": "Please confirm my booking.",
+    "example_ka": "გთხოვთ ჯავშანი დაადასტუროთ.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "extend",
+    "georgian": "გახანგრძლივება",
+    "pronunciation": "/ɪkˈstend/",
+    "example_en": "Can I extend my stay?",
+    "example_ka": "დარჩენის გახანგრძლივება შეიძლება?",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "early",
+    "georgian": "ადრე",
+    "pronunciation": "/ˈɜːrli/",
+    "example_en": "Is early checkin possible?",
+    "example_ka": "ადრე შესვლა შესაძლებელია?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "late",
+    "georgian": "გვიანი",
+    "pronunciation": "/leɪt/",
+    "example_en": "I need late checkout.",
+    "example_ka": "გვიანი გასვლა მჭირდება.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "suitcase",
+    "georgian": "ჩემოდანი",
+    "pronunciation": "/ˈsuːtkeɪs/",
+    "example_en": "My suitcase is heavy.",
+    "example_ka": "ჩემი ჩემოდანი მძიმეა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "backpack",
+    "georgian": "ზურგჩანთა",
+    "pronunciation": "/ˈbækpæk/",
+    "example_en": "Leave your backpack in the room.",
+    "example_ka": "ზურგჩანთა ოთახში დატოვე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "doorman",
+    "georgian": "კარისმცველი",
+    "pronunciation": "/ˈdɔːrmən/",
+    "example_en": "The doorman opened the door.",
+    "example_ka": "კარისმცველმა კარი გაგვიღო.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "vending",
+    "georgian": "ავტომატი",
+    "pronunciation": "/ˈvendɪŋ/",
+    "example_en": "The vending machine is on the first floor.",
+    "example_ka": "ავტომატი პირველ სართულზეა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "ice",
+    "georgian": "ყინული",
+    "pronunciation": "/aɪs/",
+    "example_en": "Where is the ice machine?",
+    "example_ka": "სად არის ყინულის მანქანა?",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "panoramic",
+    "georgian": "პანორამული",
+    "pronunciation": "/ˌpænəˈræmɪk/",
+    "example_en": "The room has a panoramic view.",
+    "example_ka": "ოთახს პანორამული ხედი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "boutique",
+    "georgian": "ბუტიკი",
+    "pronunciation": "/buːˈtiːk/",
+    "example_en": "It's a boutique hotel.",
+    "example_ka": "ეს ბუტიკ სასტუმროა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "chain",
+    "georgian": "ქსელი",
+    "pronunciation": "/tʃeɪn/",
+    "example_en": "It's a famous hotel chain.",
+    "example_ka": "ეს ცნობილი სასტუმროების ქსელია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "rating",
+    "georgian": "რეიტინგი",
+    "pronunciation": "/ˈreɪtɪŋ/",
+    "example_en": "The hotel has a five-star rating.",
+    "example_ka": "სასტუმროს ხუთვარსკვლავიანი რეიტინგი აქვს.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "recommend",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrekəˈmend/",
+    "example_en": "Can you recommend a good hotel?",
+    "example_ka": "კარგ სასტუმროს მირჩევთ?",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Read the reviews first.",
+    "example_ka": "ჯერ მიმოხილვები წაიკითხე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "duvet",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈdjuːveɪ/",
+    "example_en": "The duvet is too thin.",
+    "example_ka": "საბანი ძალიან თხელია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "quilt",
+    "georgian": "საბანი",
+    "pronunciation": "/kwɪlt/",
+    "example_en": "The quilt has a nice pattern.",
+    "example_ka": "საბანს ლამაზი ნიმუში აქვს.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "closet",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈklɒzɪt/",
+    "example_en": "Hang your coat in the closet.",
+    "example_ka": "ქურთუკი კარადაში ჩამოკიდე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "drawer",
+    "georgian": "უჯრა",
+    "pronunciation": "/drɔːr/",
+    "example_en": "Put things in the drawer.",
+    "example_ka": "ნივთები უჯრაში ჩადე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "desk",
+    "georgian": "მაგიდა",
+    "pronunciation": "/desk/",
+    "example_en": "There is a desk in the room.",
+    "example_ka": "ოთახში მაგიდაა.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "chair",
+    "georgian": "სკამი",
+    "pronunciation": "/tʃer/",
+    "example_en": "Sit on the chair.",
+    "example_ka": "სკამზე დაჯექი.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "sofa",
+    "georgian": "დივანი",
+    "pronunciation": "/ˈsoʊfə/",
+    "example_en": "The sofa is comfortable.",
+    "example_ka": "დივანი კომფორტულია.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "bathtub",
+    "georgian": "აბაზანა",
+    "pronunciation": "/ˈbæθtʌb/",
+    "example_en": "The room has a bathtub.",
+    "example_ka": "ოთახში აბაზანაა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "drain",
+    "georgian": "კანალიზაცია",
+    "pronunciation": "/dreɪn/",
+    "example_en": "The drain is blocked.",
+    "example_ka": "კანალიზაცია გაჭედილია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "faucet",
+    "georgian": "ონკანი",
+    "pronunciation": "/ˈfɔːsɪt/",
+    "example_en": "The faucet is dripping.",
+    "example_ka": "ონკანი წვეთავს.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "tap",
+    "georgian": "ონკანი",
+    "pronunciation": "/tæp/",
+    "example_en": "Turn off the tap.",
+    "example_ka": "ონკანი გამორთე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "lock",
+    "georgian": "საკეტი",
+    "pronunciation": "/lɒk/",
+    "example_en": "Lock the door.",
+    "example_ka": "კარი დაკეტე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "bell",
+    "georgian": "ზარი",
+    "pronunciation": "/bel/",
+    "example_en": "Ring the bell for service.",
+    "example_ka": "მომსახურებისთვის ზარი დააჭირე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "sign",
+    "georgian": "ნიშანი",
+    "pronunciation": "/saɪn/",
+    "example_en": "Hang the sign on the door.",
+    "example_ka": "ნიშანი კარზე ჩამოკიდე.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "property",
+    "georgian": "საკუთრება",
+    "pronunciation": "/ˈprɒpərti/",
+    "example_en": "The property is beautiful.",
+    "example_ka": "საკუთრება ლამაზია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "occupant",
+    "georgian": "მცხოვრები",
+    "pronunciation": "/ˈɒkjʊpənt/",
+    "example_en": "The previous occupant left.",
+    "example_ka": "წინა მცხოვრები წავიდა.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "tenant",
+    "georgian": "მოიჯარე",
+    "pronunciation": "/ˈtenənt/",
+    "example_en": "The tenant checked out.",
+    "example_ka": "მოიჯარე გავიდა.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "proprietor",
+    "georgian": "მფლობელი",
+    "pronunciation": "/prəˈpraɪətər/",
+    "example_en": "The proprietor is friendly.",
+    "example_ka": "მფლობელი მეგობრულია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "houseguest",
+    "georgian": "სტუმარი",
+    "pronunciation": "/ˈhaʊsɡest/",
+    "example_en": "We have a houseguest tonight.",
+    "example_ka": "დღეს სტუმარი გვყავს.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "amenities",
+    "georgian": "კეთილმოწყობა",
+    "pronunciation": "/əˈmenɪtiz/",
+    "example_en": "The amenities are excellent.",
+    "example_ka": "კეთილმოწყობა შესანიშნავია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "renovate",
+    "georgian": "რემონტი",
+    "pronunciation": "/ˈrenəveɪt/",
+    "example_en": "They will renovate next year.",
+    "example_ka": "მომავალ წელს გარემონტებენ.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "complain",
+    "georgian": "ჩივილი",
+    "pronunciation": "/kəmˈpleɪn/",
+    "example_en": "I want to complain about the noise.",
+    "example_ka": "ხმაურზე ჩივილი მინდა.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "comfortable",
+    "georgian": "კომფორტული",
+    "pronunciation": "/ˈkʌmfərtəbəl/",
+    "example_en": "The bed is very comfortable.",
+    "example_ka": "საწოली ძალიან კომფორტულია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "uncomfortable",
+    "georgian": "არაკომფორტული",
+    "pronunciation": "/ʌnˈkʌmfərtəbəl/",
+    "example_en": "The chair is uncomfortable.",
+    "example_ka": "სკამი არაკომფორტულია.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "overbooked",
+    "georgian": "ზედმეტად დაჯავშნილი",
+    "pronunciation": "/ˌoʊvərˈbʊkt/",
+    "example_en": "The hotel is overbooked.",
+    "example_ka": "სასტუმრო ზედმეტად დაჯავშნილია.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "prepaid",
+    "georgian": "წინასწარ გადახდილი",
+    "pronunciation": "/ˌpriːˈpeɪd/",
+    "example_en": "The room is prepaid.",
+    "example_ka": "ოთახი წინასწარ გადახდილია.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "overnight",
+    "georgian": "ღამისთევა",
+    "pronunciation": "/ˌoʊvərˈnaɪt/",
+    "example_en": "We stayed overnight.",
+    "example_ka": "ღამე გავათიეთ.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "foyer",
+    "georgian": "ფოიე",
+    "pronunciation": "/ˈfɔɪeɪ/",
+    "example_en": "Wait in the foyer.",
+    "example_ka": "ფოიეში დაელოდე.",
+    "category": "hotel-accommodation",
+    "level": "B2"
+  },
+  {
+    "english": "hallway",
+    "georgian": "დერეფანი",
+    "pronunciation": "/ˈhɔːlweɪ/",
+    "example_en": "Walk down the hallway.",
+    "example_ka": "დერეფანში ჩადი.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "roof",
+    "georgian": "სახურავი",
+    "pronunciation": "/ruːf/",
+    "example_en": "The pool is on the roof.",
+    "example_ka": "აუზი სახურავზეა.",
+    "category": "hotel-accommodation",
+    "level": "A1"
+  },
+  {
+    "english": "bedside",
+    "georgian": "საწოლის გვერდი",
+    "pronunciation": "/ˈbedsaɪd/",
+    "example_en": "Put it on the bedside table.",
+    "example_ka": "საწოლის გვერდის მაგიდაზე დადე.",
+    "category": "hotel-accommodation",
+    "level": "A2"
+  },
+  {
+    "english": "housemaid",
+    "georgian": "მოსამსახურე ქალი",
+    "pronunciation": "/ˈhaʊsmeɪd/",
+    "example_en": "The housemaid cleaned the room.",
+    "example_ka": "მოსამსახურე ქალმა ოთახი დაალაგა.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  },
+  {
+    "english": "intercom",
+    "georgian": "ინტერკომი",
+    "pronunciation": "/ˈɪntərkɒm/",
+    "example_en": "Use the intercom to call reception.",
+    "example_ka": "მიმღებში დასარეკად ინტერკომი გამოიყენე.",
+    "category": "hotel-accommodation",
+    "level": "B1"
+  }
 ]

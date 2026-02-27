@@ -1,42 +1,1802 @@
 [
-  {"english":"money","georgian":"ფული","pronunciation":"/ˈmʌni/","example_en":"I need to save more money.","example_ka":"მეტი ფულის დაზოგვა მჭირდება.","category":"business-money","level":"beginner"},
-  {"english":"income","georgian":"შემოსავალი","pronunciation":"/ˈɪnkʌm/","example_en":"My monthly income is growing.","example_ka":"ჩემი ყოველთვიური შემოსავალი იზრდება.","category":"business-money","level":"beginner"},
-  {"english":"expense","georgian":"ხარჯი","pronunciation":"/ɪkˈspens/","example_en":"Track your expenses carefully.","example_ka":"ხარჯები ყურადღებით აკონტროლე.","category":"business-money","level":"beginner"},
-  {"english":"profit","georgian":"მოგება","pronunciation":"/ˈprɒfɪt/","example_en":"We made a good profit this month.","example_ka":"ამ თვეში კარგი მოგება მივიღეთ.","category":"business-money","level":"beginner"},
-  {"english":"loss","georgian":"ზარალი","pronunciation":"/lɒs/","example_en":"The company reported a loss.","example_ka":"კომპანიამ ზარალი აჩვენა.","category":"business-money","level":"beginner"},
-  {"english":"investment","georgian":"ინვესტიცია","pronunciation":"/ɪnˈvestmənt/","example_en":"This is a good investment.","example_ka":"ეს კარგი ინვესტიციაა.","category":"business-money","level":"beginner"},
-  {"english":"to invest","georgian":"ინვესტირება","pronunciation":"/tə ɪnˈvest/","example_en":"Invest in yourself first.","example_ka":"ჯერ საკუთარ თავში ჩადე ინვესტიცია.","category":"business-money","level":"beginner"},
-  {"english":"savings","georgian":"დანაზოგი","pronunciation":"/ˈseɪvɪŋz/","example_en":"I keep my savings in the bank.","example_ka":"დანაზოგს ბანკში ვინახავ.","category":"business-money","level":"beginner"},
-  {"english":"budget","georgian":"ბიუჯეტი","pronunciation":"/ˈbʌdʒɪt/","example_en":"We need to plan our budget.","example_ka":"ბიუჯეტის დაგეგმვა გვჭირდება.","category":"business-money","level":"beginner"},
-  {"english":"debt","georgian":"ვალი","pronunciation":"/det/","example_en":"I want to pay off all my debt.","example_ka":"მინდა ყველა ვალი დავფარო.","category":"business-money","level":"beginner"},
-  {"english":"loan","georgian":"სესხი","pronunciation":"/loʊn/","example_en":"He took a loan from the bank.","example_ka":"ბანკიდან სესხი აიღო.","category":"business-money","level":"beginner"},
-  {"english":"tax","georgian":"გადასახადი","pronunciation":"/tæks/","example_en":"Everyone must pay taxes.","example_ka":"ყველამ უნდა გადაიხადოს გადასახადი.","category":"business-money","level":"beginner"},
-  {"english":"salary","georgian":"ხელფასი","pronunciation":"/ˈsæləri/","example_en":"The average salary here is low.","example_ka":"აქ საშუალო ხელფასი დაბალია.","category":"business-money","level":"beginner"},
-  {"english":"freelance","georgian":"ფრილანსი","pronunciation":"/ˈfriːlæns/","example_en":"I work as a freelancer.","example_ka":"ფრილანსერად ვმუშაობ.","category":"business-money","level":"beginner"},
-  {"english":"client","georgian":"კლიენტი","pronunciation":"/ˈklaɪənt/","example_en":"I have five clients this month.","example_ka":"ამ თვეში ხუთი კლიენტი მყავს.","category":"business-money","level":"beginner"},
-  {"english":"customer","georgian":"მომხმარებელი","pronunciation":"/ˈkʌstəmər/","example_en":"The customer is always right.","example_ka":"მომხმარებელი ყოველთვის მართალია.","category":"business-money","level":"beginner"},
-  {"english":"entrepreneur","georgian":"მეწარმე","pronunciation":"/ˌɒntrəprəˈnɜːr/","example_en":"I want to be an entrepreneur.","example_ka":"მეწარმე მინდა გავხდე.","category":"business-money","level":"intermediate"},
-  {"english":"startup","georgian":"სტარტაპი","pronunciation":"/ˈstɑːrtʌp/","example_en":"He launched a startup last year.","example_ka":"შარშან სტარტაპი გაუშვა.","category":"business-money","level":"beginner"},
-  {"english":"revenue","georgian":"შემოსავალი","pronunciation":"/ˈrevənjuː/","example_en":"Our revenue doubled this year.","example_ka":"ჩვენი შემოსავალი წელს გაორმაგდა.","category":"business-money","level":"intermediate"},
-  {"english":"brand","georgian":"ბრენდი","pronunciation":"/brænd/","example_en":"Build a strong personal brand.","example_ka":"ძლიერი პერსონალური ბრენდი ააშენე.","category":"business-money","level":"beginner"},
-  {"english":"marketing","georgian":"მარკეტინგი","pronunciation":"/ˈmɑːrkɪtɪŋ/","example_en":"Good marketing brings more customers.","example_ka":"კარგი მარკეტინგი მეტ მომხმარებელს მოიზიდავს.","category":"business-money","level":"beginner"},
-  {"english":"advertising","georgian":"რეკლამა","pronunciation":"/ˈædvərtaɪzɪŋ/","example_en":"We spend a lot on advertising.","example_ka":"რეკლამაზე ბევრს ვხარჯავთ.","category":"business-money","level":"beginner"},
-  {"english":"competition","georgian":"კონკურენცია","pronunciation":"/ˌkɒmpəˈtɪʃn/","example_en":"There is a lot of competition in this market.","example_ka":"ამ ბაზარზე ბევრი კონკურენციაა.","category":"business-money","level":"intermediate"},
-  {"english":"deal","georgian":"გარიგება","pronunciation":"/diːl/","example_en":"We closed a big deal today.","example_ka":"დღეს დიდი გარიგება დავხურეთ.","category":"business-money","level":"beginner"},
-  {"english":"contract","georgian":"კონტრაქტი","pronunciation":"/ˈkɒntrækt/","example_en":"Read the contract before signing.","example_ka":"ხელმოწერამდე კონტრაქტი წაიკითხე.","category":"business-money","level":"beginner"},
-  {"english":"invoice","georgian":"ინვოისი","pronunciation":"/ˈɪnvɔɪs/","example_en":"I sent the invoice to the client.","example_ka":"კლიენტს ინვოისი გავუგზავნე.","category":"business-money","level":"intermediate"},
-  {"english":"payment","georgian":"გადახდა","pronunciation":"/ˈpeɪmənt/","example_en":"Payment is due in 30 days.","example_ka":"გადახდა 30 დღეში უნდა მოხდეს.","category":"business-money","level":"beginner"},
-  {"english":"commission","georgian":"საკომისიო","pronunciation":"/kəˈmɪʃn/","example_en":"I earn a 10% commission on sales.","example_ka":"გაყიდვებზე 10% საკომისიოს ვიღებ.","category":"business-money","level":"intermediate"},
-  {"english":"affiliate","georgian":"აფილიატი","pronunciation":"/əˈfɪliət/","example_en":"Affiliate marketing is a great way to earn online.","example_ka":"აფილიატ მარკეტინგი ონლაინ შემოსავლის კარგი გზაა.","category":"business-money","level":"intermediate"},
-  {"english":"passive income","georgian":"პასიური შემოსავალი","pronunciation":"/ˈpæsɪv ˈɪnkʌm/","example_en":"I want to build passive income streams.","example_ka":"მინდა პასიური შემოსავლის წყაროები ავაშენო.","category":"business-money","level":"intermediate"},
-  {"english":"side hustle","georgian":"დამატებითი შემოსავალი","pronunciation":"/saɪd ˈhʌsl/","example_en":"My side hustle makes extra money.","example_ka":"დამატებითი შემოსავლით ფულს ვშოულობ.","category":"business-money","level":"beginner"},
-  {"english":"to negotiate","georgian":"მოლაპარაკება","pronunciation":"/tə nɪˈɡoʊʃieɪt/","example_en":"Always negotiate the price.","example_ka":"ფასზე ყოველთვის მოილაპარაკე.","category":"business-money","level":"intermediate"},
-  {"english":"to earn","georgian":"შოვნა","pronunciation":"/tə ɜːrn/","example_en":"How much do you earn per month?","example_ka":"თვეში რამდენს შოულობ?","category":"business-money","level":"beginner"},
-  {"english":"to spend","georgian":"ხარჯვა","pronunciation":"/tə spend/","example_en":"Don't spend more than you earn.","example_ka":"იმაზე მეტს ნუ ხარჯავ, რამდენსაც შოულობ.","category":"business-money","level":"beginner"},
-  {"english":"to save","georgian":"დაზოგვა","pronunciation":"/tə seɪv/","example_en":"Save at least 20% of your income.","example_ka":"შემოსავლის მინიმუმ 20% დაზოგე.","category":"business-money","level":"beginner"},
-  {"english":"bank account","georgian":"საბანკო ანგარიში","pronunciation":"/bæŋk əˈkaʊnt/","example_en":"Open a bank account first.","example_ka":"ჯერ საბანკო ანგარიში გახსენი.","category":"business-money","level":"beginner"},
-  {"english":"credit card","georgian":"საკრედიტო ბარათი","pronunciation":"/ˈkredɪt kɑːrd/","example_en":"I paid with my credit card.","example_ka":"საკრედიტო ბარათით გადავიხადე.","category":"business-money","level":"beginner"},
-  {"english":"cryptocurrency","georgian":"კრიპტოვალუტა","pronunciation":"/ˈkrɪptoʊˌkʌrənsi/","example_en":"Bitcoin is the most popular cryptocurrency.","example_ka":"ბიტკოინი ყველაზე პოპულარული კრიპტოვალუტაა.","category":"business-money","level":"intermediate"},
-  {"english":"e-commerce","georgian":"ელექტრონული კომერცია","pronunciation":"/iː ˈkɒmɜːrs/","example_en":"E-commerce is growing fast worldwide.","example_ka":"ელექტრონული კომერცია მთელ მსოფლიოში სწრაფად იზრდება.","category":"business-money","level":"intermediate"},
-  {"english":"goal","georgian":"მიზანი","pronunciation":"/ɡoʊl/","example_en":"Set clear financial goals.","example_ka":"მკაფიო ფინანსური მიზნები დაისახე.","category":"business-money","level":"beginner"}
+  {
+    "english": "money",
+    "georgian": "ფული",
+    "pronunciation": "/ˈmʌni/",
+    "example_en": "I need to save more money.",
+    "example_ka": "მეტი ფულის დაზოგვა მჭირდება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "income",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈɪnkʌm/",
+    "example_en": "My monthly income is growing.",
+    "example_ka": "ჩემი ყოველთვიური შემოსავალი იზრდება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "expense",
+    "georgian": "ხარჯი",
+    "pronunciation": "/ɪkˈspens/",
+    "example_en": "Track your expenses carefully.",
+    "example_ka": "ხარჯები ყურადღებით აკონტროლე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "profit",
+    "georgian": "მოგება",
+    "pronunciation": "/ˈprɒfɪt/",
+    "example_en": "We made a good profit this month.",
+    "example_ka": "ამ თვეში კარგი მოგება მივიღეთ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "loss",
+    "georgian": "ზარალი",
+    "pronunciation": "/lɒs/",
+    "example_en": "The company reported a loss.",
+    "example_ka": "კომპანიამ ზარალი აჩვენა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "investment",
+    "georgian": "ინვესტიცია",
+    "pronunciation": "/ɪnˈvestmənt/",
+    "example_en": "This is a good investment.",
+    "example_ka": "ეს კარგი ინვესტიციაა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "savings",
+    "georgian": "დანაზოგი",
+    "pronunciation": "/ˈseɪvɪŋz/",
+    "example_en": "I keep my savings in the bank.",
+    "example_ka": "დანაზოგს ბანკში ვინახავ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "We need to plan our budget.",
+    "example_ka": "ბიუჯეტის დაგეგმვა გვჭირდება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "debt",
+    "georgian": "ვალი",
+    "pronunciation": "/det/",
+    "example_en": "I want to pay off all my debt.",
+    "example_ka": "მინდა ყველა ვალი დავფარო.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "loan",
+    "georgian": "სესხი",
+    "pronunciation": "/loʊn/",
+    "example_en": "He took a loan from the bank.",
+    "example_ka": "ბანკიდან სესხი აიღო.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "tax",
+    "georgian": "გადასახადი",
+    "pronunciation": "/tæks/",
+    "example_en": "Everyone must pay taxes.",
+    "example_ka": "ყველამ უნდა გადაიხადოს გადასახადი.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "salary",
+    "georgian": "ხელფასი",
+    "pronunciation": "/ˈsæləri/",
+    "example_en": "The average salary here is low.",
+    "example_ka": "აქ საშუალო ხელფასი დაბალია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "freelance",
+    "georgian": "ფრილანსი",
+    "pronunciation": "/ˈfriːlæns/",
+    "example_en": "I work as a freelancer.",
+    "example_ka": "ფრილანსერად ვმუშაობ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "client",
+    "georgian": "კლიენტი",
+    "pronunciation": "/ˈklaɪənt/",
+    "example_en": "I have five clients this month.",
+    "example_ka": "ამ თვეში ხუთი კლიენტი მყავს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "customer",
+    "georgian": "მომხმარებელი",
+    "pronunciation": "/ˈkʌstəmər/",
+    "example_en": "The customer is always right.",
+    "example_ka": "მომხმარებელი ყოველთვის მართალია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "entrepreneur",
+    "georgian": "მეწარმე",
+    "pronunciation": "/ˌɒntrəprəˈnɜːr/",
+    "example_en": "I want to be an entrepreneur.",
+    "example_ka": "მეწარმე მინდა გავხდე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "startup",
+    "georgian": "სტარტაპი",
+    "pronunciation": "/ˈstɑːrtʌp/",
+    "example_en": "He launched a startup last year.",
+    "example_ka": "შარშან სტარტაპი გაუშვა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "revenue",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈrevənjuː/",
+    "example_en": "Our revenue doubled this year.",
+    "example_ka": "ჩვენი შემოსავალი წელს გაორმაგდა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "brand",
+    "georgian": "ბრენდი",
+    "pronunciation": "/brænd/",
+    "example_en": "Build a strong personal brand.",
+    "example_ka": "ძლიერი პერსონალური ბრენდი ააშენე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "marketing",
+    "georgian": "მარკეტინგი",
+    "pronunciation": "/ˈmɑːrkɪtɪŋ/",
+    "example_en": "Good marketing brings more customers.",
+    "example_ka": "კარგი მარკეტინგი მეტ მომხმარებელს მოიზიდავს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "advertising",
+    "georgian": "რეკლამა",
+    "pronunciation": "/ˈædvərtaɪzɪŋ/",
+    "example_en": "We spend a lot on advertising.",
+    "example_ka": "რეკლამაზე ბევრს ვხარჯავთ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "competition",
+    "georgian": "კონკურენცია",
+    "pronunciation": "/ˌkɒmpəˈtɪʃn/",
+    "example_en": "There is a lot of competition in this market.",
+    "example_ka": "ამ ბაზარზე ბევრი კონკურენციაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "deal",
+    "georgian": "გარიგება",
+    "pronunciation": "/diːl/",
+    "example_en": "We closed a big deal today.",
+    "example_ka": "დღეს დიდი გარიგება დავხურეთ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "contract",
+    "georgian": "კონტრაქტი",
+    "pronunciation": "/ˈkɒntrækt/",
+    "example_en": "Read the contract before signing.",
+    "example_ka": "ხელმოწერამდე კონტრაქტი წაიკითხე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "I sent the invoice to the client.",
+    "example_ka": "კლიენტს ინვოისი გავუგზავნე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "payment",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈpeɪmənt/",
+    "example_en": "Payment is due in 30 days.",
+    "example_ka": "გადახდა 30 დღეში უნდა მოხდეს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "commission",
+    "georgian": "საკომისიო",
+    "pronunciation": "/kəˈmɪʃn/",
+    "example_en": "I earn a 10% commission on sales.",
+    "example_ka": "გაყიდვებზე 10% საკომისიოს ვიღებ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "affiliate",
+    "georgian": "აფილიატი",
+    "pronunciation": "/əˈfɪliət/",
+    "example_en": "Affiliate marketing is a great way to earn online.",
+    "example_ka": "აფილიატ მარკეტინგი ონლაინ შემოსავლის კარგი გზაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "cryptocurrency",
+    "georgian": "კრიპტოვალუტა",
+    "pronunciation": "/ˈkrɪptoʊˌkʌrənsi/",
+    "example_en": "Bitcoin is the most popular cryptocurrency.",
+    "example_ka": "ბიტკოინი ყველაზე პოპულარული კრიპტოვალუტაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "e-commerce",
+    "georgian": "ელექტრონული კომერცია",
+    "pronunciation": "/iː ˈkɒmɜːrs/",
+    "example_en": "E-commerce is growing fast worldwide.",
+    "example_ka": "ელექტრონული კომერცია მთელ მსოფლიოში სწრაფად იზრდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "goal",
+    "georgian": "მიზანი",
+    "pronunciation": "/ɡoʊl/",
+    "example_en": "Set clear financial goals.",
+    "example_ka": "მკაფიო ფინანსური მიზნები დაისახე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "economy",
+    "georgian": "ეკონომიკა",
+    "pronunciation": "/ɪˈkɒnəmi/",
+    "example_en": "The economy is growing slowly.",
+    "example_ka": "ეკონომიკა ნელა იზრდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "inflation",
+    "georgian": "ინფლაცია",
+    "pronunciation": "/ɪnˈfleɪʃn/",
+    "example_en": "Inflation is affecting everyone.",
+    "example_ka": "ინფლაცია ყველას ეხება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "recession",
+    "georgian": "რეცესია",
+    "pronunciation": "/rɪˈseʃn/",
+    "example_en": "The country is entering a recession.",
+    "example_ka": "ქვეყანა რეცესიაში შედის.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "market",
+    "georgian": "ბაზარი",
+    "pronunciation": "/ˈmɑːrkɪt/",
+    "example_en": "The stock market is volatile today.",
+    "example_ka": "საფონდო ბაზარი დღეს ცვალებადია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "stock",
+    "georgian": "აქცია",
+    "pronunciation": "/stɒk/",
+    "example_en": "I bought Apple stock last year.",
+    "example_ka": "შარშან Apple-ის აქციები ვიყიდე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "share",
+    "georgian": "წილი",
+    "pronunciation": "/ʃer/",
+    "example_en": "Each share costs $50.",
+    "example_ka": "თითოეული წილი $50 ღირს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "bond",
+    "georgian": "ობლიგაცია",
+    "pronunciation": "/bɒnd/",
+    "example_en": "Government bonds are safer investments.",
+    "example_ka": "სამთავრობო ობლიგაციები უფრო უსაფრთხო ინვესტიციებია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "portfolio",
+    "georgian": "პორტფოლიო",
+    "pronunciation": "/pɔːrtˈfoʊlioʊ/",
+    "example_en": "Diversify your investment portfolio.",
+    "example_ka": "საინვესტიციო პორტფოლიო დივერსიფიცირება გაუკეთე.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "asset",
+    "georgian": "აქტივი",
+    "pronunciation": "/ˈæset/",
+    "example_en": "Real estate is a valuable asset.",
+    "example_ka": "უძრავი ქონება ღირებული აქტივია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "liability",
+    "georgian": "ვალდებულება",
+    "pronunciation": "/ˌlaɪəˈbɪləti/",
+    "example_en": "All debts are liabilities.",
+    "example_ka": "ყველა ვალი ვალდებულებაა.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "equity",
+    "georgian": "კაპიტალი",
+    "pronunciation": "/ˈekwɪti/",
+    "example_en": "Home equity is growing.",
+    "example_ka": "სახლის კაპიტალი იზრდება.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "capital",
+    "georgian": "კაპიტალი",
+    "pronunciation": "/ˈkæpɪtl/",
+    "example_en": "We need more working capital.",
+    "example_ka": "მეტი მუშა კაპიტალი გვჭირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "wealth",
+    "georgian": "სიმდიდრე",
+    "pronunciation": "/welθ/",
+    "example_en": "Building wealth takes time.",
+    "example_ka": "სიმდიდრის შენება დრო სჭირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "finance",
+    "georgian": "ფინანსები",
+    "pronunciation": "/fəˈnæns/",
+    "example_en": "I studied finance in college.",
+    "example_ka": "კოლეჯში ფინანსები ვისწავლე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "accounting",
+    "georgian": "ბუღალტერია",
+    "pronunciation": "/əˈkaʊntɪŋ/",
+    "example_en": "Good accounting is essential for business.",
+    "example_ka": "კარგი ბუღალტერია ბიზნესისთვის აუცილებელია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "bookkeeping",
+    "georgian": "წიგნების წარმოება",
+    "pronunciation": "/ˈbʊkˌkiːpɪŋ/",
+    "example_en": "Bookkeeping requires attention to detail.",
+    "example_ka": "წიგნების წარმოება დეტალებზე ყურადღების მიქცევას მოითხოვს.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "cash",
+    "georgian": "ნაღდი",
+    "pronunciation": "/kæʃ/",
+    "example_en": "I prefer to pay in cash.",
+    "example_ka": "ნაღდით გადახდას ვანჯობებ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "credit",
+    "georgian": "საკრედიტო",
+    "pronunciation": "/ˈkredɪt/",
+    "example_en": "My credit score is improving.",
+    "example_ka": "ჩემი საკრედიტო რეიტინგი უმჯობესდება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "debit",
+    "georgian": "დებეტი",
+    "pronunciation": "/ˈdebɪt/",
+    "example_en": "Use your debit card for purchases.",
+    "example_ka": "ყიდვებისთვის დებეტ ბარათს გამოიყენე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "balance",
+    "georgian": "ბალანსი",
+    "pronunciation": "/ˈbæləns/",
+    "example_en": "Check your account balance regularly.",
+    "example_ka": "ანგარიშის ბალანსი რეგულარულად შეამოწმე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "transaction",
+    "georgian": "ტრანზაქცია",
+    "pronunciation": "/trænˈzækʃn/",
+    "example_en": "All transactions are recorded.",
+    "example_ka": "ყველა ტრანზაქცია ფიქსირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "transfer",
+    "georgian": "გადაცემა",
+    "pronunciation": "/ˈtrænsfər/",
+    "example_en": "I need to transfer money to my friend.",
+    "example_ka": "მეგობარს ფულის გადაცემა მჭირდება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "withdrawal",
+    "georgian": "განაღდება",
+    "pronunciation": "/wɪðˈdrɔːəl/",
+    "example_en": "The withdrawal limit is $500 per day.",
+    "example_ka": "განაღდების ლიმიტი დღეში $500-ია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "deposit",
+    "georgian": "შეტანა",
+    "pronunciation": "/dɪˈpɒzɪt/",
+    "example_en": "Make a deposit before 5 PM.",
+    "example_ka": "17:00-მდე შეტანა გააკეთე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "compound",
+    "georgian": "რთული",
+    "pronunciation": "/ˈkɒmpaʊnd/",
+    "example_en": "Compound interest grows your money faster.",
+    "example_ka": "რთული პროცენტი უფრო სწრაფად ზრდის შენს ფულს.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "interest",
+    "georgian": "პროცენტი",
+    "pronunciation": "/ˈɪntrəst/",
+    "example_en": "The interest rate is 3% annually.",
+    "example_ka": "პროცენტი განაკვეთი წელიწადში 3%-ია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "dividend",
+    "georgian": "დივიდენდი",
+    "pronunciation": "/ˈdɪvɪdend/",
+    "example_en": "The company pays quarterly dividends.",
+    "example_ka": "კომპანია კვარტალურ დივიდენდებს იხდის.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "yield",
+    "georgian": "უკუგება",
+    "pronunciation": "/jiːld/",
+    "example_en": "This bond has a 5% yield.",
+    "example_ka": "ამ ობლიგაციას 5% უკუგება აქვს.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "return",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "What's the expected return on this investment?",
+    "example_ka": "რა არის მოსალოდნელი დაბრუნება ამ ინვესტიციაზე?",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "risk",
+    "georgian": "რისკი",
+    "pronunciation": "/rɪsk/",
+    "example_en": "Higher risk usually means higher potential returns.",
+    "example_ka": "უფრო მაღალი რისკი ჩვეულებრივ უფრო მაღალ პოტენციურ უკუგებას ნიშნავს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "volatility",
+    "georgian": "ცვალებადობა",
+    "pronunciation": "/ˌvɒləˈtɪləti/",
+    "example_en": "Market volatility makes investors nervous.",
+    "example_ka": "ბაზრის ცვალებადობა ინვესტორებს აღელვებს.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "corporation",
+    "georgian": "კორპორაცია",
+    "pronunciation": "/ˌkɔːrpəˈreɪʃn/",
+    "example_en": "Apple is a large corporation.",
+    "example_ka": "Apple დიდი კორპორაციაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "company",
+    "georgian": "კომპანია",
+    "pronunciation": "/ˈkʌmpəni/",
+    "example_en": "I work for a small company.",
+    "example_ka": "პატარა კომპანიაში ვმუშაობ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "business",
+    "georgian": "ბიზნესი",
+    "pronunciation": "/ˈbɪznəs/",
+    "example_en": "Running a business is challenging.",
+    "example_ka": "ბიზნესის წარმართვა რთულია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "firm",
+    "georgian": "ფირმა",
+    "pronunciation": "/fɜːrm/",
+    "example_en": "The law firm handles corporate cases.",
+    "example_ka": "იურიდიული ფირმა კორპორაციული საქმეების წარმოებას უწევს ხელს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "enterprise",
+    "georgian": "საწარმო",
+    "pronunciation": "/ˈentərpraɪz/",
+    "example_en": "Small enterprises drive the economy.",
+    "example_ka": "მცირე საწარმოები ეკონომიკას მართავენ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "organization",
+    "georgian": "ორგანიზაცია",
+    "pronunciation": "/ˌɔːrɡənəˈzeɪʃn/",
+    "example_en": "This is a non-profit organization.",
+    "example_ka": "ეს არაკომერციული ორგანიზაციაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "partnership",
+    "georgian": "პარტნიორობა",
+    "pronunciation": "/ˈpɑːrtnərʃɪp/",
+    "example_en": "They formed a business partnership.",
+    "example_ka": "ისინი ბიზნეს პარტნიორობა შექმნეს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "board",
+    "georgian": "საბჭო",
+    "pronunciation": "/bɔːrd/",
+    "example_en": "The board meets monthly.",
+    "example_ka": "საბჭო ყოველთვიურად იკრიბება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "director",
+    "georgian": "დირექტორი",
+    "pronunciation": "/dəˈrektər/",
+    "example_en": "She is a board director.",
+    "example_ka": "იგი საბჭოს დირექტორია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "manager",
+    "georgian": "მენეჯერი",
+    "pronunciation": "/ˈmænɪdʒər/",
+    "example_en": "The manager approved the budget.",
+    "example_ka": "მენეჯერმა ბიუჯეტი დაამტკიცა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "employee",
+    "georgian": "თანამშრომელი",
+    "pronunciation": "/ɪmˈplɔɪiː/",
+    "example_en": "Every employee deserves respect.",
+    "example_ka": "ყველა თანამშრომელი პატივისცემას იმსახურებს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "staff",
+    "georgian": "პერსონალი",
+    "pronunciation": "/stæf/",
+    "example_en": "We have a small staff of 10 people.",
+    "example_ka": "10 კაციანი მცირე პერსონალი გვყავს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "team",
+    "georgian": "გუნდი",
+    "pronunciation": "/tiːm/",
+    "example_en": "Our team works well together.",
+    "example_ka": "ჩვენი გუნდი კარგად მუშაობს ერთად.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "department",
+    "georgian": "დეპარტამენტი",
+    "pronunciation": "/dɪˈpɑːrtmənt/",
+    "example_en": "I work in the marketing department.",
+    "example_ka": "მარკეტინგის დეპარტამენტში ვმუშაობ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "office",
+    "georgian": "ოფისი",
+    "pronunciation": "/ˈɔːfɪs/",
+    "example_en": "The office opens at 9 AM.",
+    "example_ka": "ოფისი 9 საათზე იღებს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "headquarters",
+    "georgian": "შტაბბინა",
+    "pronunciation": "/ˈhedkwɔːrtərz/",
+    "example_en": "The headquarters is in New York.",
+    "example_ka": "შტაბბინა ნიუ იორკშია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "branch",
+    "georgian": "ფილიალი",
+    "pronunciation": "/bræntʃ/",
+    "example_en": "We opened a new branch downtown.",
+    "example_ka": "ცენტრში ახალი ფილიალი გავხსენით.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "subsidiary",
+    "georgian": "შვილობილი",
+    "pronunciation": "/səbˈsɪdiˌeri/",
+    "example_en": "This is a subsidiary of Google.",
+    "example_ka": "ეს Google-ის შვილობილი კომპანიაა.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "merger",
+    "georgian": "შერწყმა",
+    "pronunciation": "/ˈmɜːrdʒər/",
+    "example_en": "The merger was announced today.",
+    "example_ka": "შერწყმა დღეს გამოცხადდა.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "acquisition",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˌækwɪˈzɪʃn/",
+    "example_en": "The acquisition cost $10 billion.",
+    "example_ka": "შეძენა $10 მილიარდი ღირდა.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "currency",
+    "georgian": "ვალუტა",
+    "pronunciation": "/ˈkɜːrənsi/",
+    "example_en": "What's the local currency here?",
+    "example_ka": "რა არის ადგილობრივი ვალუტა აქ?",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "dollar",
+    "georgian": "დოლარი",
+    "pronunciation": "/ˈdɒlər/",
+    "example_en": "One dollar equals 100 cents.",
+    "example_ka": "ერთი დოლარი 100 ცენტს უდრის.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "euro",
+    "georgian": "ევრო",
+    "pronunciation": "/ˈjʊroʊ/",
+    "example_en": "The euro is used in many European countries.",
+    "example_ka": "ევრო ბევრ ევროპულ ქვეყანაში იყენება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "exchange",
+    "georgian": "გაცვლა",
+    "pronunciation": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "The exchange rate changes daily.",
+    "example_ka": "გაცვლითი კურსი ყოველდღიურად იცვლება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "rate",
+    "georgian": "განაკვეთი",
+    "pronunciation": "/reɪt/",
+    "example_en": "Interest rates are rising.",
+    "example_ka": "საპროცენტო განაკვეთები იმატებს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "purchasing",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˈpɜːrtʃəsɪŋ/",
+    "example_en": "Purchasing power has decreased.",
+    "example_ka": "შეძენითუნარიანობა შემცირდა.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "power",
+    "georgian": "შესაძლებლობა",
+    "pronunciation": "/ˈpaʊər/",
+    "example_en": "Money gives you purchasing power.",
+    "example_ka": "ფული შეძენითი შესაძლებლობას გაძლევს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "cost",
+    "georgian": "ღირებულება",
+    "pronunciation": "/kɒst/",
+    "example_en": "What does it cost to start a business?",
+    "example_ka": "რამდენში ღირს ბიზნესის დაწყება?",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "The price of gas is increasing.",
+    "example_ka": "ბენზინის ფასი იმატებს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "value",
+    "georgian": "ღირებულება",
+    "pronunciation": "/ˈvæljuː/",
+    "example_en": "This stock has good value.",
+    "example_ka": "ამ აქციას კარგი ღირებულება აქვს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "worth",
+    "georgian": "ღირებული",
+    "pronunciation": "/wɜːrθ/",
+    "example_en": "How much is this company worth?",
+    "example_ka": "რამდენი ღირს ეს კომპანია?",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "affordable",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrdəbəl/",
+    "example_en": "We need affordable housing.",
+    "example_ka": "ხელმისაწვდომი საცხოვრებელი გვჭირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspensɪv/",
+    "example_en": "That car is too expensive.",
+    "example_ka": "ეს მანქანა ძალიან ძვირია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "I found a cheap apartment.",
+    "example_ka": "იაფი ბინა ვიპოვე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "costly",
+    "georgian": "ღირებული",
+    "pronunciation": "/ˈkɒstli/",
+    "example_en": "Making mistakes can be costly.",
+    "example_ka": "შეცდომების დაშვება ღირებული შეიძლება იყოს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "free",
+    "georgian": "უფასო",
+    "pronunciation": "/friː/",
+    "example_en": "The app is completely free.",
+    "example_ka": "აპი სრულიად უფასოა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "premium",
+    "georgian": "პრემიუმი",
+    "pronunciation": "/ˈpriːmiəm/",
+    "example_en": "They offer a premium service.",
+    "example_ka": "ისინი პრემიუმ სერვისს სთავაზობენ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Students get a 20% discount.",
+    "example_ka": "სტუდენტები 20% ფასდაკლებას იღებენ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "sale",
+    "georgian": "აქცია",
+    "pronunciation": "/seɪl/",
+    "example_en": "Everything is on sale today.",
+    "example_ka": "დღეს ყველაფერი აქციაშია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "offer",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/ˈɔːfər/",
+    "example_en": "This is a limited-time offer.",
+    "example_ka": "ეს შეზღუდული დროის შეთავაზებაა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "bargain",
+    "georgian": "ხელსაყრელი შეთავაზება",
+    "pronunciation": "/ˈbɑːrɡɪn/",
+    "example_en": "That laptop is a real bargain.",
+    "example_ka": "ეს ლეპტოპი ნამდვილი ხელსაყრელი შეთავაზებაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "cashflow",
+    "georgian": "ფულადი ნაკადი",
+    "pronunciation": "/ˈkæʃfloʊ/",
+    "example_en": "Positive cashflow is crucial for business.",
+    "example_ka": "დადებითი ფულადი ნაკადი ბიზნესისთვის გადამწყვეტია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "liquidity",
+    "georgian": "ლიკვიდობა",
+    "pronunciation": "/lɪˈkwɪdəti/",
+    "example_en": "The company has good liquidity.",
+    "example_ka": "კომპანიას კარგი ლიკვიდობა აქვს.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "solvency",
+    "georgian": "გადახდისუნარიანობა",
+    "pronunciation": "/ˈsɒlvənsi/",
+    "example_en": "Banks check your solvency before lending.",
+    "example_ka": "ბანკები სესხის გაცემამდე გადახდისუნარიანობას ამოწმებენ.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "bankruptcy",
+    "georgian": "გაკოტრება",
+    "pronunciation": "/ˈbæŋkrʌptsi/",
+    "example_en": "The company filed for bankruptcy.",
+    "example_ka": "კომპანიამ გაკოტრების თაობაზე განცხადება შეიტანა.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "foreclosure",
+    "georgian": "უღებავება",
+    "pronunciation": "/fɔːrˈkloʊʒər/",
+    "example_en": "They lost their house to foreclosure.",
+    "example_ka": "სახლი უღებავების გამო დაკარგეს.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "audit",
+    "georgian": "აუდიტი",
+    "pronunciation": "/ˈɔːdɪt/",
+    "example_en": "The company is having an audit this month.",
+    "example_ka": "კომპანიაში ამ თვეში აუდიტი ტარდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "financial",
+    "georgian": "ფინანსური",
+    "pronunciation": "/faɪˈnænʃəl/",
+    "example_en": "Review your financial statements regularly.",
+    "example_ka": "ფინანსური ანგარიშგებები რეგულარულად გადახედეთ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "statement",
+    "georgian": "ანგარიშგება",
+    "pronunciation": "/ˈsteɪtmənt/",
+    "example_en": "I need to see your bank statement.",
+    "example_ka": "შენი ბანკის ანგარიშგების ნახვა მჭირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Keep all your receipts for tax purposes.",
+    "example_ka": "ყველა ქვითარი გადასახადების მიზნებისთვის შეინახე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "record",
+    "georgian": "ჩანაწერი",
+    "pronunciation": "/ˈrekərd/",
+    "example_en": "Keep accurate records of all transactions.",
+    "example_ka": "ყველა ტრანზაქციის ზუსტი ჩანაწერები შეინახეთ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "analysis",
+    "georgian": "ანალიზი",
+    "pronunciation": "/əˈnæləsɪs/",
+    "example_en": "Financial analysis shows good growth.",
+    "example_ka": "ფინანსური ანალიზი კარგ ზრდას აჩვენებს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "forecast",
+    "georgian": "პროგნოზი",
+    "pronunciation": "/ˈfɔːrkæst/",
+    "example_en": "The sales forecast looks promising.",
+    "example_ka": "გაყიდვების პროგნოზი მომღებიანი ჩანს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "projection",
+    "georgian": "პროექცია",
+    "pronunciation": "/prəˈdʒekʃn/",
+    "example_en": "Revenue projections are optimistic.",
+    "example_ka": "შემოსავლების პროექციები ოპტიმისტურია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "estimate",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈestɪmət/",
+    "example_en": "Can you give me a cost estimate?",
+    "example_ka": "ღირებულების შეფასება შეგიძლია მომცე?",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "calculation",
+    "georgian": "გამოთვლა",
+    "pronunciation": "/ˌkælkjəˈleɪʃn/",
+    "example_en": "Check your calculation again.",
+    "example_ka": "გამოთვლა კვლავ შეამოწმე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "formula",
+    "georgian": "ფორმულა",
+    "pronunciation": "/ˈfɔːrmjələ/",
+    "example_en": "Use this formula to calculate interest.",
+    "example_ka": "პროცენტის გამოსათვლელად ეს ფორმულა გამოიყენე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "percentage",
+    "georgian": "პროცენტული",
+    "pronunciation": "/pərˈsentɪdʒ/",
+    "example_en": "What percentage of profit do we make?",
+    "example_ka": "რამდენი პროცენტი მოგება გვაქვს?",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "margin",
+    "georgian": "მარჟა",
+    "pronunciation": "/ˈmɑːrdʒɪn/",
+    "example_en": "Our profit margin is 25%.",
+    "example_ka": "ჩვენი მოგების მარჟა 25%-ია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "markup",
+    "georgian": "მარკაპი",
+    "pronunciation": "/ˈmɑːrkʌp/",
+    "example_en": "We use a 50% markup on wholesale prices.",
+    "example_ka": "საბითუმო ფასებზე 50% მარკაპს ვიყენებთ.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "wholesale",
+    "georgian": "საბითუმო",
+    "pronunciation": "/ˈhoʊlseɪl/",
+    "example_en": "Wholesale prices are lower than retail.",
+    "example_ka": "საბითუმო ფასები საცალო ფასებზე დაბალია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "retail",
+    "georgian": "საცალო",
+    "pronunciation": "/ˈriːteɪl/",
+    "example_en": "This store sells at retail prices.",
+    "example_ka": "ეს მაღაზია საცალო ფასებზე ყიდის.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "supplier",
+    "georgian": "მომწოდებელი",
+    "pronunciation": "/səˈplaɪər/",
+    "example_en": "We need reliable suppliers.",
+    "example_ka": "სანდო მომწოდებლები გვჭირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "vendor",
+    "georgian": "მყიდველი",
+    "pronunciation": "/ˈvendər/",
+    "example_en": "Choose your vendors carefully.",
+    "example_ka": "მყიდველები ყურადღებით აირჩიე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "distributor",
+    "georgian": "დისტრიბუტორი",
+    "pronunciation": "/dɪˈstrɪbjətər/",
+    "example_en": "We work with several distributors.",
+    "example_ka": "რამდენიმე დისტრიბუტორთან ვმუშაობთ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "inventory",
+    "georgian": "ინვენტარი",
+    "pronunciation": "/ˈɪnvəntɔːri/",
+    "example_en": "We need to check our inventory levels.",
+    "example_ka": "ინვენტარის დონეების შემოწმება გვჭირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "stock",
+    "georgian": "მარაგი",
+    "pronunciation": "/stɑːk/",
+    "example_en": "We're running low on stock.",
+    "example_ka": "მარაგი გვთავდება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "warehouse",
+    "georgian": "საწყობი",
+    "pronunciation": "/ˈwerhaʊs/",
+    "example_en": "The warehouse is full of products.",
+    "example_ka": "საწყობი პროდუქტებით სავსეა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "shipping",
+    "georgian": "ტრანსპორტირება",
+    "pronunciation": "/ˈʃɪpɪŋ/",
+    "example_en": "Shipping costs are increasing.",
+    "example_ka": "ტრანსპორტირების ღირებულება იმატებს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "delivery",
+    "georgian": "მიტანა",
+    "pronunciation": "/dɪˈlɪvəri/",
+    "example_en": "Free delivery on orders over $50.",
+    "example_ka": "$50-ზე მეტ შეკვეთებზე უფასო მიტანა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "logistics",
+    "georgian": "ლოგისტიკა",
+    "pronunciation": "/ləˈdʒɪstɪks/",
+    "example_en": "Good logistics save money.",
+    "example_ka": "კარგი ლოგისტიკა ფულს ზოგავს.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "supply",
+    "georgian": "მიწოდება",
+    "pronunciation": "/səˈplaɪ/",
+    "example_en": "Supply and demand affect prices.",
+    "example_ka": "მიწოდება და მოთხოვნა ფასებზე გავლენას ახდენს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "demand",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/dɪˈmænd/",
+    "example_en": "There's high demand for this product.",
+    "example_ka": "ამ პროდუქტზე მაღალი მოთხოვნაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "consumer",
+    "georgian": "მომხმარებელი",
+    "pronunciation": "/kənˈsuːmər/",
+    "example_en": "Consumer behavior is changing.",
+    "example_ka": "მომხმარებლის ქცევა იცვლება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "market",
+    "georgian": "ბაზარი",
+    "pronunciation": "/ˈmɑːrkɪt/",
+    "example_en": "We need to analyze the market.",
+    "example_ka": "ბაზრის ანალიზი გვჭირდება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "niche",
+    "georgian": "ნიშა",
+    "pronunciation": "/niːʃ/",
+    "example_en": "We found our niche market.",
+    "example_ka": "ჩვენი ნიშის ბაზარი ვიპოვეთ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "segment",
+    "georgian": "სეგმენტი",
+    "pronunciation": "/ˈseɡmənt/",
+    "example_en": "Target the youth segment.",
+    "example_ka": "ახალგაზრდების სეგმენტზე დათვალე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "target",
+    "georgian": "სამიზნე",
+    "pronunciation": "/ˈtɑːrɡɪt/",
+    "example_en": "Who is your target audience?",
+    "example_ka": "ვინ არის შენი სამიზნე აუდიტორია?",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "audience",
+    "georgian": "აუდიტორია",
+    "pronunciation": "/ˈɔːdiəns/",
+    "example_en": "Know your audience before marketing.",
+    "example_ka": "მარკეტინგამდე შენი აუდიტორია იცოდე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "demographic",
+    "georgian": "დემოგრაფიული",
+    "pronunciation": "/ˌdeməˈɡræfɪk/",
+    "example_en": "Study the demographic data carefully.",
+    "example_ka": "დემოგრაფიული მონაცემები ყურადღებით შეისწავლე.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "survey",
+    "georgian": "კვლევა",
+    "pronunciation": "/ˈsɜːrveɪ/",
+    "example_en": "We conducted a customer survey.",
+    "example_ka": "მომხმარებელთა კვლევა ჩავატარეთ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "feedback",
+    "georgian": "უკუკავშირი",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "Customer feedback is very important.",
+    "example_ka": "მომხმარებლის უკუკავშირი ძალიან მნიშვნელოვანია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Read customer reviews before buying.",
+    "example_ka": "ყიდვამდე მომხმარებელთა მიმოხილვები წაიკითხე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "rating",
+    "georgian": "რეიტინგი",
+    "pronunciation": "/ˈreɪtɪŋ/",
+    "example_en": "Our app has a 5-star rating.",
+    "example_ka": "ჩვენს აპს 5-ვარსკვლავიანი რეიტინგი აქვს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "reputation",
+    "georgian": "რეპუტაცია",
+    "pronunciation": "/ˌrepjəˈteɪʃn/",
+    "example_en": "Good reputation takes years to build.",
+    "example_ka": "კარგი რეპუტაციის გაღებას წლები სჭირდება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "credibility",
+    "georgian": "სანდოობა",
+    "pronunciation": "/ˌkredəˈbɪləti/",
+    "example_en": "Credibility is crucial in business.",
+    "example_ka": "სანდოობა ბიზნესში გადამწყვეტია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "trust",
+    "georgian": "ნდობა",
+    "pronunciation": "/trʌst/",
+    "example_en": "Trust is the foundation of business.",
+    "example_ka": "ნდობა ბიზნესის საფუძველია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "loyalty",
+    "georgian": "ერთგულება",
+    "pronunciation": "/ˈlɔɪəlti/",
+    "example_en": "Customer loyalty programs work well.",
+    "example_ka": "მომხმარებელთა ერთგულების პროგრამები კარგად მუშაობს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "retention",
+    "georgian": "შენარჩუნება",
+    "pronunciation": "/rɪˈtenʃn/",
+    "example_en": "Customer retention is cheaper than acquisition.",
+    "example_ka": "მომხმარებლის შენარჩუნება შეძენაზე იაფია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "acquisition",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˌækwɪˈzɪʃn/",
+    "example_en": "Customer acquisition costs are rising.",
+    "example_ka": "მომხმარებელთა შეძენის ღირებულება იზრდება.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "conversion",
+    "georgian": "კონვერტაცია",
+    "pronunciation": "/kənˈvɜːrʒn/",
+    "example_en": "Our conversion rate is 3%.",
+    "example_ka": "ჩვენი კონვერტაციის მაჩვენებელი 3%-ია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "lead",
+    "georgian": "ლიდი",
+    "pronunciation": "/liːd/",
+    "example_en": "We generated 100 new leads this month.",
+    "example_ka": "ამ თვეში 100 ახალი ლიდი გენერაცია მოვახდინეთ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "prospect",
+    "georgian": "პროსპექტი",
+    "pronunciation": "/ˈprɒspekt/",
+    "example_en": "This looks like a good prospect.",
+    "example_ka": "ეს კარგ პროსპექტს ჰგავს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "sale",
+    "georgian": "გაყიდვა",
+    "pronunciation": "/seɪl/",
+    "example_en": "We made our first sale today.",
+    "example_ka": "დღეს პირველი გაყიდვა მოვახდინეთ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "purchase",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˈpɜːrtʃəs/",
+    "example_en": "Thank you for your purchase.",
+    "example_ka": "მადლობა შეძენისთვის.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "order",
+    "georgian": "შეკვეთა",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "Your order will arrive tomorrow.",
+    "example_ka": "შენი შეკვეთა ხვალ ჩამოვა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "quantity",
+    "georgian": "რაოდენობა",
+    "pronunciation": "/ˈkwɒntəti/",
+    "example_en": "What quantity do you need?",
+    "example_ka": "რა რაოდენობა გჭირდება?",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "volume",
+    "georgian": "მოცულობა",
+    "pronunciation": "/ˈvɒljuːm/",
+    "example_en": "High volume orders get discounts.",
+    "example_ka": "მაღალი მოცულობის შეკვეთები ფასდაკლებას იღებენ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "bulk",
+    "georgian": "მასობრივი",
+    "pronunciation": "/bʌlk/",
+    "example_en": "Bulk purchases save money.",
+    "example_ka": "მასობრივი შეძენები ფულს ზოგავს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "unit",
+    "georgian": "ერთეული",
+    "pronunciation": "/ˈjuːnɪt/",
+    "example_en": "The price per unit is $10.",
+    "example_ka": "ერთეულის ფასი $10-ია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "total",
+    "georgian": "საერთო",
+    "pronunciation": "/ˈtoʊtl/",
+    "example_en": "What's the total cost?",
+    "example_ka": "რა არის საერთო ღირებულება?",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "subtotal",
+    "georgian": "ქვეჯამი",
+    "pronunciation": "/ˈsʌbtoʊtl/",
+    "example_en": "The subtotal before tax is $100.",
+    "example_ka": "გადასახადის გარეშე ქვეჯამი $100-ია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "fee",
+    "georgian": "საფასური",
+    "pronunciation": "/fiː/",
+    "example_en": "There's a processing fee of $5.",
+    "example_ka": "დამუშავების საფასური $5-ია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "charge",
+    "georgian": "ტარიფი",
+    "pronunciation": "/tʃɑːrdʒ/",
+    "example_en": "There's no charge for delivery.",
+    "example_ka": "მიტანისთვის ტარიფი არ არის.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "billing",
+    "georgian": "ბილინგი",
+    "pronunciation": "/ˈbɪlɪŋ/",
+    "example_en": "Check your billing address.",
+    "example_ka": "ბილინგის მისამართი შეამოწმე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "subscription",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskrɪpʃn/",
+    "example_en": "Cancel your subscription anytime.",
+    "example_ka": "გამოწერა ნებისმიერ დროს გააუქმე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "membership",
+    "georgian": "წევრობა",
+    "pronunciation": "/ˈmembərʃɪp/",
+    "example_en": "Premium membership costs $20/month.",
+    "example_ka": "პრემიუმ წევრობა თვეში $20 ღირს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "plan",
+    "georgian": "გეგმა",
+    "pronunciation": "/plæn/",
+    "example_en": "Choose the plan that fits your needs.",
+    "example_ka": "აირჩიე შენს მოთხოვნებს შესაბამისი გეგმა.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "package",
+    "georgian": "პაკეტი",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "We offer three different packages.",
+    "example_ka": "სამი განსხვავებული პაკეტი ვთავაზობთ.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "bundle",
+    "georgian": "ნაკრები",
+    "pronunciation": "/ˈbʌndl/",
+    "example_en": "Save money with our bundle deals.",
+    "example_ka": "ჩვენი ნაკრების შეთავაზებებით ფული დაზოგე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "tier",
+    "georgian": "დონე",
+    "pronunciation": "/tɪr/",
+    "example_en": "Upgrade to the premium tier.",
+    "example_ka": "პრემიუმ დონემდე განაახლე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "upgrade",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpɡreɪd/",
+    "example_en": "Upgrade your account for more features.",
+    "example_ka": "მეტი ფუნქციისთვის ანგარიში განაახლე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "downgrade",
+    "georgian": "შემცირება",
+    "pronunciation": "/ˈdaʊnɡreɪd/",
+    "example_en": "You can downgrade anytime.",
+    "example_ka": "ნებისმიერ დროს შეგიძლია შემცირება.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "trial",
+    "georgian": "საცდელი",
+    "pronunciation": "/ˈtraɪəl/",
+    "example_en": "Start with a free trial.",
+    "example_ka": "უფასო საცდელით დაიწყე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "demo",
+    "georgian": "დემო",
+    "pronunciation": "/ˈdemoʊ/",
+    "example_en": "Watch the product demo first.",
+    "example_ka": "ჯერ პროდუქტის დემო ნახე.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "sample",
+    "georgian": "ნიმუში",
+    "pronunciation": "/ˈsæmpl/",
+    "example_en": "Would you like a free sample?",
+    "example_ka": "უფასო ნიმუში გინდა?",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "prototype",
+    "georgian": "პროტოტიპი",
+    "pronunciation": "/ˈproʊtətaɪp/",
+    "example_en": "We built a working prototype.",
+    "example_ka": "მუშა პროტოტიპი ავაშენეთ.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "product",
+    "georgian": "პროდუქტი",
+    "pronunciation": "/ˈprɑːdʌkt/",
+    "example_en": "Our new product launches next month.",
+    "example_ka": "ჩვენი ახალი პროდუქტი შემდეგ თვეში ეშვება.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "service",
+    "georgian": "სერვისი",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "We provide excellent customer service.",
+    "example_ka": "ვაწვდით შესანიშნავ მომხმარებელთა სერვისს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɑːləti/",
+    "example_en": "Quality is our top priority.",
+    "example_ka": "ხარისხი ჩვენი მთავარი პრიორიტეტია.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "feature",
+    "georgian": "ფუნქცია",
+    "pronunciation": "/ˈfiːtʃər/",
+    "example_en": "This app has many useful features.",
+    "example_ka": "ამ აპს ბევრი სასარგებლო ფუნქცია აქვს.",
+    "category": "business-money",
+    "level": "beginner"
+  },
+  {
+    "english": "benefit",
+    "georgian": "სარგებელი",
+    "pronunciation": "/ˈbenɪfɪt/",
+    "example_en": "What are the benefits of this plan?",
+    "example_ka": "რა არის ამ გეგმის სარგებელი?",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "advantage",
+    "georgian": "უპირატესობა",
+    "pronunciation": "/ədˈvæntɪdʒ/",
+    "example_en": "We have a competitive advantage.",
+    "example_ka": "კონკურენტული უპირატესობა გვაქვს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "disadvantage",
+    "georgian": "ნაკლული",
+    "pronunciation": "/ˌdɪsədˈvæntɪdʒ/",
+    "example_en": "High prices are a disadvantage.",
+    "example_ka": "მაღალი ფასები ნაკლულია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "strength",
+    "georgian": "ძლიერება",
+    "pronunciation": "/streŋθ/",
+    "example_en": "Customer service is our strength.",
+    "example_ka": "მომხმარებელთა სერვისი ჩვენი ძლიერებაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "weakness",
+    "georgian": "სისუსტე",
+    "pronunciation": "/ˈwiːknəs/",
+    "example_en": "High costs are our main weakness.",
+    "example_ka": "მაღალი ღირებულებები ჩვენი მთავარი სისუსტეა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "opportunity",
+    "georgian": "შესაძლებლობა",
+    "pronunciation": "/ˌɑːpərˈtuːnəti/",
+    "example_en": "This is a great business opportunity.",
+    "example_ka": "ეს შესანიშნავი ბიზნეს შესაძლებლობაა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "threat",
+    "georgian": "საფრთხე",
+    "pronunciation": "/θret/",
+    "example_en": "Economic downturn is a threat.",
+    "example_ka": "ეკონომიკური ვარდნა საფრთხეა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "challenge",
+    "georgian": "გამოწვევა",
+    "pronunciation": "/ˈtʃælɪndʒ/",
+    "example_en": "Every business faces challenges.",
+    "example_ka": "ყველა ბიზნესს გამოწვევები ხვდება წინ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "solution",
+    "georgian": "ამოხსნა",
+    "pronunciation": "/səˈluːʃn/",
+    "example_en": "We found a creative solution.",
+    "example_ka": "შემოქმედებითი ამოხსნა ვიპოვეთ.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "strategy",
+    "georgian": "სტრატეგია",
+    "pronunciation": "/ˈstrætədʒi/",
+    "example_en": "Our marketing strategy is working.",
+    "example_ka": "ჩვენი მარკეტინგის სტრატეგია მუშაობს.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "tactic",
+    "georgian": "ტაქტიკა",
+    "pronunciation": "/ˈtæktɪk/",
+    "example_en": "This sales tactic is effective.",
+    "example_ka": "ეს გაყიდვების ტაქტიკა ეფექტურია.",
+    "category": "business-money",
+    "level": "advanced"
+  },
+  {
+    "english": "approach",
+    "georgian": "მიდგომა",
+    "pronunciation": "/əˈproʊtʃ/",
+    "example_en": "Try a different approach.",
+    "example_ka": "განსხვავებული მიდგომა სცადე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "method",
+    "georgian": "მეთოდი",
+    "pronunciation": "/ˈmeθəd/",
+    "example_en": "This payment method is secure.",
+    "example_ka": "ეს გადახდის მეთოდი უსაფრთხოა.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "technique",
+    "georgian": "ტექნიკა",
+    "pronunciation": "/tekˈniːk/",
+    "example_en": "Learn new sales techniques.",
+    "example_ka": "გაყიდვების ახალი ტექნიკები ისწავლე.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "process",
+    "georgian": "პროცესი",
+    "pronunciation": "/ˈprɑːses/",
+    "example_en": "The ordering process is simple.",
+    "example_ka": "შეკვეთის პროცესი მარტივია.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "procedure",
+    "georgian": "პროცედურა",
+    "pronunciation": "/prəˈsiːdʒər/",
+    "example_en": "Follow the standard procedure.",
+    "example_ka": "სტანდარტული პროცედურა მიჰყევი.",
+    "category": "business-money",
+    "level": "intermediate"
+  },
+  {
+    "english": "system",
+    "georgian": "სისტემა",
+    "pronunciation": "/ˈsɪstəm/",
+    "example_en": "Our payment system is down.",
+    "example_ka": "ჩვენი გადახდის სისტემა არ მუშაობს.",
+    "category": "business-money",
+    "level": "intermediate"
+  }
 ]

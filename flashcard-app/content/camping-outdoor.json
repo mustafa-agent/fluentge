@@ -1,52 +1,1802 @@
 [
-  {"english":"camping","georgian":"კემპინგი","pronunciation":"/ˈkæmpɪŋ/","example_en":"We go camping every summer.","example_ka":"ყოველ ზაფხულს კემპინგზე მივდივართ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"tent","georgian":"კარავი","pronunciation":"/tɛnt/","example_en":"We set up the tent near the lake.","example_ka":"კარავი ტბასთან გავშალეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"campfire","georgian":"კოცონი","pronunciation":"/ˈkæmpfaɪər/","example_en":"We sat around the campfire telling stories.","example_ka":"კოცონთან ვისხედით და ამბებს ვყვებოდით.","category":"camping-outdoor","level":"beginner"},
-  {"english":"sleeping bag","georgian":"საძილე ტომარა","pronunciation":"/ˈsliːpɪŋ bæɡ/","example_en":"Don't forget your sleeping bag.","example_ka":"საძილე ტომარა არ დაგავიწყდეს.","category":"camping-outdoor","level":"beginner"},
-  {"english":"backpack","georgian":"ზურგჩანთა","pronunciation":"/ˈbækpæk/","example_en":"Pack your backpack the night before.","example_ka":"ზურგჩანთა წინა ღამით შეავსე.","category":"camping-outdoor","level":"beginner"},
-  {"english":"hiking","georgian":"ლაშქრობა","pronunciation":"/ˈhaɪkɪŋ/","example_en":"Hiking in the mountains is refreshing.","example_ka":"მთაში ლაშქრობა გამამხნევებელია.","category":"camping-outdoor","level":"beginner"},
-  {"english":"flashlight","georgian":"ფანარი","pronunciation":"/ˈflæʃlaɪt/","example_en":"Bring a flashlight for the night.","example_ka":"ღამისთვის ფანარი წამოიღე.","category":"camping-outdoor","level":"beginner"},
-  {"english":"compass","georgian":"კომპასი","pronunciation":"/ˈkʌmpəs/","example_en":"A compass helps you find direction.","example_ka":"კომპასი მიმართულების პოვნაში გეხმარება.","category":"camping-outdoor","level":"beginner"},
-  {"english":"firewood","georgian":"შეშა","pronunciation":"/ˈfaɪərwʊd/","example_en":"We collected firewood for the campfire.","example_ka":"კოცონისთვის შეშა შევაგროვეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"matches","georgian":"ასანთი","pronunciation":"/ˈmætʃɪz/","example_en":"Do you have matches to start the fire?","example_ka":"ცეცხლის დასანთებად ასანთი გაქვს?","category":"camping-outdoor","level":"beginner"},
-  {"english":"knife","georgian":"დანა","pronunciation":"/naɪf/","example_en":"A pocket knife is useful when camping.","example_ka":"ჯიბის დანა კემპინგზე სასარგებლოა.","category":"camping-outdoor","level":"beginner"},
-  {"english":"binoculars","georgian":"ბინოკლი","pronunciation":"/bɪˈnɒkjʊlərz/","example_en":"Use binoculars to watch the birds.","example_ka":"ფრინველების დასაკვირვებლად ბინოკლი გამოიყენე.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"map","georgian":"რუკა","pronunciation":"/mæp/","example_en":"Study the map before you go hiking.","example_ka":"ლაშქრობის წინ რუკა შეისწავლე.","category":"camping-outdoor","level":"beginner"},
-  {"english":"canoe","georgian":"კანოე","pronunciation":"/kəˈnuː/","example_en":"We paddled the canoe across the lake.","example_ka":"კანოეთი ტბა გადავცურეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"fishing rod","georgian":"სათევზაო ანკესი","pronunciation":"/ˈfɪʃɪŋ rɒd/","example_en":"He brought his fishing rod to the river.","example_ka":"მან მდინარეზე სათევზაო ანკესი წამოიღო.","category":"camping-outdoor","level":"beginner"},
-  {"english":"insect repellent","georgian":"მწერების საწინააღმდეგო საშუალება","pronunciation":"/ˈɪnsɛkt rɪˈpɛlənt/","example_en":"Apply insect repellent before going outside.","example_ka":"გარეთ გასვლამდე მწერების საწინააღმდეგო საშუალება წაისვით.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"sunscreen","georgian":"მზისგან დამცავი კრემი","pronunciation":"/ˈsʌnskriːn/","example_en":"Don't forget to apply sunscreen.","example_ka":"მზისგან დამცავი კრემის წასმა არ დაგავიწყდეს.","category":"camping-outdoor","level":"beginner"},
-  {"english":"water bottle","georgian":"წყლის ბოთლი","pronunciation":"/ˈwɔːtər ˈbɒtəl/","example_en":"Always carry a water bottle when hiking.","example_ka":"ლაშქრობისას ყოველთვის იქონიე წყლის ბოთლი.","category":"camping-outdoor","level":"beginner"},
-  {"english":"hammock","georgian":"ჰამაკი","pronunciation":"/ˈhæmək/","example_en":"I relaxed in a hammock between two trees.","example_ka":"ორ ხეს შორის ჰამაკში ვისვენებდი.","category":"camping-outdoor","level":"beginner"},
-  {"english":"wildlife","georgian":"ველური ბუნება","pronunciation":"/ˈwaɪldlaɪf/","example_en":"We observed wildlife during our hike.","example_ka":"ლაშქრობისას ველურ ბუნებას ვაკვირდებოდით.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"bonfire","georgian":"კოცონი","pronunciation":"/ˈbɒnfaɪər/","example_en":"We built a bonfire on the beach.","example_ka":"სანაპიროზე კოცონი ავანთეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"cooler","georgian":"სამაცივრე","pronunciation":"/ˈkuːlər/","example_en":"Keep the drinks in the cooler.","example_ka":"სასმელები სამაცივრეში შეინახე.","category":"camping-outdoor","level":"beginner"},
-  {"english":"grill","georgian":"გრილი","pronunciation":"/ɡrɪl/","example_en":"We cooked burgers on the grill.","example_ka":"გრილზე ბურგერები მოვამზადეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"marshmallow","georgian":"მარშმელოუ","pronunciation":"/ˈmɑːrʃmɛloʊ/","example_en":"Roasting marshmallows is a camping tradition.","example_ka":"მარშმელოუს შეწვა კემპინგის ტრადიციაა.","category":"camping-outdoor","level":"beginner"},
-  {"english":"cabin","georgian":"ქოხი","pronunciation":"/ˈkæbɪn/","example_en":"We rented a cabin in the woods.","example_ka":"ტყეში ქოხი ვიქირავეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"campsite","georgian":"კემპინგის ადგილი","pronunciation":"/ˈkæmpsaɪt/","example_en":"The campsite has a beautiful view.","example_ka":"კემპინგის ადგილს ლამაზი ხედი აქვს.","category":"camping-outdoor","level":"beginner"},
-  {"english":"trail mix","georgian":"ხილის და თხილეულის ნარევი","pronunciation":"/treɪl mɪks/","example_en":"Trail mix is a great hiking snack.","example_ka":"ხილის და თხილეულის ნარევი ლაშქრობისთვის შესანიშნავი საჭმელია.","category":"camping-outdoor","level":"beginner"},
-  {"english":"stargazing","georgian":"ვარსკვლავების ცქერა","pronunciation":"/ˈstɑːrɡeɪzɪŋ/","example_en":"Stargazing is best away from city lights.","example_ka":"ვარსკვლავების ცქერა ქალაქის შუქებისგან მოშორებით უკეთესია.","category":"camping-outdoor","level":"beginner"},
-  {"english":"mosquito","georgian":"კოღო","pronunciation":"/məˈskiːtoʊ/","example_en":"Mosquitoes are annoying at night.","example_ka":"კოღოები ღამით მაღიზიანებელია.","category":"camping-outdoor","level":"beginner"},
-  {"english":"bear","georgian":"დათვი","pronunciation":"/bɛər/","example_en":"Store food properly to avoid attracting bears.","example_ka":"საკვები სწორად შეინახეთ, დათვების მოსაზიდად რომ არ იყოს.","category":"camping-outdoor","level":"beginner"},
-  {"english":"pine tree","georgian":"ფიჭვი","pronunciation":"/paɪn triː/","example_en":"The forest was full of pine trees.","example_ka":"ტყე ფიჭვის ხეებით იყო სავსე.","category":"camping-outdoor","level":"beginner"},
-  {"english":"stream","georgian":"ნაკადული","pronunciation":"/striːm/","example_en":"We drank water from the mountain stream.","example_ka":"მთის ნაკადულიდან წყალი დავლიეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"valley","georgian":"ხეობა","pronunciation":"/ˈvæli/","example_en":"The valley was green and peaceful.","example_ka":"ხეობა მწვანე და მშვიდი იყო.","category":"camping-outdoor","level":"beginner"},
-  {"english":"meadow","georgian":"მდელო","pronunciation":"/ˈmɛdoʊ/","example_en":"Wildflowers bloomed in the meadow.","example_ka":"მდელოზე ველური ყვავილები აყვავდა.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"sunrise","georgian":"მზის ამოსვლა","pronunciation":"/ˈsʌnraɪz/","example_en":"We woke up to watch the sunrise.","example_ka":"მზის ამოსვლის სანახავად ადრე გავიღვიძეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"sunset","georgian":"მზის ჩასვლა","pronunciation":"/ˈsʌnsɛt/","example_en":"The sunset over the lake was stunning.","example_ka":"ტბაზე მზის ჩასვლა თვალწარმტაცი იყო.","category":"camping-outdoor","level":"beginner"},
-  {"english":"first aid kit","georgian":"პირველადი დახმარების ნაკრები","pronunciation":"/fɜːrst eɪd kɪt/","example_en":"Always bring a first aid kit.","example_ka":"ყოველთვის იქონიეთ პირველადი დახმარების ნაკრები.","category":"camping-outdoor","level":"beginner"},
-  {"english":"boots","georgian":"ჩექმები","pronunciation":"/buːts/","example_en":"Wear sturdy boots for the hike.","example_ka":"ლაშქრობისთვის მტკიცე ჩექმები ჩაიცვი.","category":"camping-outdoor","level":"beginner"},
-  {"english":"trail marker","georgian":"ბილიკის ნიშნული","pronunciation":"/treɪl ˈmɑːrkər/","example_en":"Follow the trail markers to stay on path.","example_ka":"ბილიკზე რომ დარჩეთ, ბილიკის ნიშნულებს მიჰყევით.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"campground","georgian":"კემპინგის ტერიტორია","pronunciation":"/ˈkæmpɡraʊnd/","example_en":"The campground has shower facilities.","example_ka":"კემპინგის ტერიტორიაზე საშხაპე აქვთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"lantern","georgian":"ფარანი","pronunciation":"/ˈlæntərn/","example_en":"Hang the lantern outside the tent.","example_ka":"ფარანი კარვის გარეთ ჩამოკიდე.","category":"camping-outdoor","level":"beginner"},
-  {"english":"thermos","georgian":"თერმოსი","pronunciation":"/ˈθɜːrməs/","example_en":"I filled the thermos with hot tea.","example_ka":"თერმოსი ცხელი ჩაით ავავსე.","category":"camping-outdoor","level":"beginner"},
-  {"english":"picnic","georgian":"პიკნიკი","pronunciation":"/ˈpɪknɪk/","example_en":"We had a picnic by the river.","example_ka":"მდინარესთან პიკნიკი მოვაწყვეთ.","category":"camping-outdoor","level":"beginner"},
-  {"english":"nature","georgian":"ბუნება","pronunciation":"/ˈneɪtʃər/","example_en":"Spending time in nature is healing.","example_ka":"ბუნებაში დროის გატარება მკურნალია.","category":"camping-outdoor","level":"beginner"},
-  {"english":"campstove","georgian":"საბანაკო ღუმელი","pronunciation":"/ˈkæmpstoʊv/","example_en":"We boiled water on the campstove.","example_ka":"საბანაკო ღუმელზე წყალი გავადუღეთ.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"tarp","georgian":"ბრეზენტი","pronunciation":"/tɑːrp/","example_en":"Put a tarp under the tent for protection.","example_ka":"კარვის ქვეშ ბრეზენტი დაფინეთ დასაცავად.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"orienteering","georgian":"ორიენტირება","pronunciation":"/ˌɔːriənˈtɪərɪŋ/","example_en":"Orienteering uses maps and compasses.","example_ka":"ორიენტირებისას რუკასა და კომპასს იყენებენ.","category":"camping-outdoor","level":"advanced"},
-  {"english":"altitude sickness","georgian":"სიმაღლის ავადმყოფობა","pronunciation":"/ˈæltɪtjuːd ˈsɪknəs/","example_en":"Altitude sickness can occur above 2500 meters.","example_ka":"სიმაღლის ავადმყოფობა 2500 მეტრზე ზემოთ შეიძლება მოხდეს.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"foraging","georgian":"საკვების მოძიება","pronunciation":"/ˈfɒrɪdʒɪŋ/","example_en":"Foraging for wild berries is fun.","example_ka":"ველური კენკრის მოძიება სახალისოა.","category":"camping-outdoor","level":"intermediate"},
-  {"english":"waterproof","georgian":"წყალგაუმტარი","pronunciation":"/ˈwɔːtərpruːf/","example_en":"Make sure your jacket is waterproof.","example_ka":"დარწმუნდი, რომ ქურთუკი წყალგაუმტარია.","category":"camping-outdoor","level":"beginner"}
+  {
+    "english": "camping",
+    "georgian": "კემპინგი",
+    "pronunciation": "/ˈkæmpɪŋ/",
+    "example_en": "We go camping every summer.",
+    "example_ka": "ყოველ ზაფხულს კემპინგზე მივდივართ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "tent",
+    "georgian": "კარავი",
+    "pronunciation": "/tɛnt/",
+    "example_en": "We set up the tent near the lake.",
+    "example_ka": "კარავი ტბასთან გავშალეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "campfire",
+    "georgian": "კოცონი",
+    "pronunciation": "/ˈkæmpfaɪər/",
+    "example_en": "We sat around the campfire telling stories.",
+    "example_ka": "კოცონთან ვისხედით და ამბებს ვყვებოდით.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "backpack",
+    "georgian": "ზურგჩანთა",
+    "pronunciation": "/ˈbækpæk/",
+    "example_en": "Pack your backpack the night before.",
+    "example_ka": "ზურგჩანთა წინა ღამით შეავსე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "hiking",
+    "georgian": "ლაშქრობა",
+    "pronunciation": "/ˈhaɪkɪŋ/",
+    "example_en": "Hiking in the mountains is refreshing.",
+    "example_ka": "მთაში ლაშქრობა გამამხნევებელია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "flashlight",
+    "georgian": "ფანარი",
+    "pronunciation": "/ˈflæʃlaɪt/",
+    "example_en": "Bring a flashlight for the night.",
+    "example_ka": "ღამისთვის ფანარი წამოიღე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "compass",
+    "georgian": "კომპასი",
+    "pronunciation": "/ˈkʌmpəs/",
+    "example_en": "A compass helps you find direction.",
+    "example_ka": "კომპასი მიმართულების პოვნაში გეხმარება.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "firewood",
+    "georgian": "შეშა",
+    "pronunciation": "/ˈfaɪərwʊd/",
+    "example_en": "We collected firewood for the campfire.",
+    "example_ka": "კოცონისთვის შეშა შევაგროვეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "matches",
+    "georgian": "ასანთი",
+    "pronunciation": "/ˈmætʃɪz/",
+    "example_en": "Do you have matches to start the fire?",
+    "example_ka": "ცეცხლის დასანთებად ასანთი გაქვს?",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "knife",
+    "georgian": "დანა",
+    "pronunciation": "/naɪf/",
+    "example_en": "A pocket knife is useful when camping.",
+    "example_ka": "ჯიბის დანა კემპინგზე სასარგებლოა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "binoculars",
+    "georgian": "ბინოკლი",
+    "pronunciation": "/bɪˈnɒkjʊlərz/",
+    "example_en": "Use binoculars to watch the birds.",
+    "example_ka": "ფრინველების დასაკვირვებლად ბინოკლი გამოიყენე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "Study the map before you go hiking.",
+    "example_ka": "ლაშქრობის წინ რუკა შეისწავლე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "canoe",
+    "georgian": "კანოე",
+    "pronunciation": "/kəˈnuː/",
+    "example_en": "We paddled the canoe across the lake.",
+    "example_ka": "კანოეთი ტბა გადავცურეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "sunscreen",
+    "georgian": "მზისგან დამცავი კრემი",
+    "pronunciation": "/ˈsʌnskriːn/",
+    "example_en": "Don't forget to apply sunscreen.",
+    "example_ka": "მზისგან დამცავი კრემის წასმა არ დაგავიწყდეს.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "hammock",
+    "georgian": "ჰამაკი",
+    "pronunciation": "/ˈhæmək/",
+    "example_en": "I relaxed in a hammock between two trees.",
+    "example_ka": "ორ ხეს შორის ჰამაკში ვისვენებდი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "wildlife",
+    "georgian": "ველური ბუნება",
+    "pronunciation": "/ˈwaɪldlaɪf/",
+    "example_en": "We observed wildlife during our hike.",
+    "example_ka": "ლაშქრობისას ველურ ბუნებას ვაკვირდებოდით.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "bonfire",
+    "georgian": "კოცონი",
+    "pronunciation": "/ˈbɒnfaɪər/",
+    "example_en": "We built a bonfire on the beach.",
+    "example_ka": "სანაპიროზე კოცონი ავანთეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "cooler",
+    "georgian": "სამაცივრე",
+    "pronunciation": "/ˈkuːlər/",
+    "example_en": "Keep the drinks in the cooler.",
+    "example_ka": "სასმელები სამაცივრეში შეინახე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "grill",
+    "georgian": "გრილი",
+    "pronunciation": "/ɡrɪl/",
+    "example_en": "We cooked burgers on the grill.",
+    "example_ka": "გრილზე ბურგერები მოვამზადეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "marshmallow",
+    "georgian": "მარშმელოუ",
+    "pronunciation": "/ˈmɑːrʃmɛloʊ/",
+    "example_en": "Roasting marshmallows is a camping tradition.",
+    "example_ka": "მარშმელოუს შეწვა კემპინგის ტრადიციაა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "cabin",
+    "georgian": "ქოხი",
+    "pronunciation": "/ˈkæbɪn/",
+    "example_en": "We rented a cabin in the woods.",
+    "example_ka": "ტყეში ქოხი ვიქირავეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "campsite",
+    "georgian": "კემპინგის ადგილი",
+    "pronunciation": "/ˈkæmpsaɪt/",
+    "example_en": "The campsite has a beautiful view.",
+    "example_ka": "კემპინგის ადგილს ლამაზი ხედი აქვს.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "stargazing",
+    "georgian": "ვარსკვლავების ცქერა",
+    "pronunciation": "/ˈstɑːrɡeɪzɪŋ/",
+    "example_en": "Stargazing is best away from city lights.",
+    "example_ka": "ვარსკვლავების ცქერა ქალაქის შუქებისგან მოშორებით უკეთესია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "mosquito",
+    "georgian": "კოღო",
+    "pronunciation": "/məˈskiːtoʊ/",
+    "example_en": "Mosquitoes are annoying at night.",
+    "example_ka": "კოღოები ღამით მაღიზიანებელია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "bear",
+    "georgian": "დათვი",
+    "pronunciation": "/bɛər/",
+    "example_en": "Store food properly to avoid attracting bears.",
+    "example_ka": "საკვები სწორად შეინახეთ, დათვების მოსაზიდად რომ არ იყოს.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "stream",
+    "georgian": "ნაკადული",
+    "pronunciation": "/striːm/",
+    "example_en": "We drank water from the mountain stream.",
+    "example_ka": "მთის ნაკადულიდან წყალი დავლიეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "valley",
+    "georgian": "ხეობა",
+    "pronunciation": "/ˈvæli/",
+    "example_en": "The valley was green and peaceful.",
+    "example_ka": "ხეობა მწვანე და მშვიდი იყო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "meadow",
+    "georgian": "მდელო",
+    "pronunciation": "/ˈmɛdoʊ/",
+    "example_en": "Wildflowers bloomed in the meadow.",
+    "example_ka": "მდელოზე ველური ყვავილები აყვავდა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "sunrise",
+    "georgian": "მზის ამოსვლა",
+    "pronunciation": "/ˈsʌnraɪz/",
+    "example_en": "We woke up to watch the sunrise.",
+    "example_ka": "მზის ამოსვლის სანახავად ადრე გავიღვიძეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "sunset",
+    "georgian": "მზის ჩასვლა",
+    "pronunciation": "/ˈsʌnsɛt/",
+    "example_en": "The sunset over the lake was stunning.",
+    "example_ka": "ტბაზე მზის ჩასვლა თვალწარმტაცი იყო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "boots",
+    "georgian": "ჩექმები",
+    "pronunciation": "/buːts/",
+    "example_en": "Wear sturdy boots for the hike.",
+    "example_ka": "ლაშქრობისთვის მტკიცე ჩექმები ჩაიცვი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "campground",
+    "georgian": "კემპინგის ტერიტორია",
+    "pronunciation": "/ˈkæmpɡraʊnd/",
+    "example_en": "The campground has shower facilities.",
+    "example_ka": "კემპინგის ტერიტორიაზე საშხაპე აქვთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "lantern",
+    "georgian": "ფარანი",
+    "pronunciation": "/ˈlæntərn/",
+    "example_en": "Hang the lantern outside the tent.",
+    "example_ka": "ფარანი კარვის გარეთ ჩამოკიდე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "thermos",
+    "georgian": "თერმოსი",
+    "pronunciation": "/ˈθɜːrməs/",
+    "example_en": "I filled the thermos with hot tea.",
+    "example_ka": "თერმოსი ცხელი ჩაით ავავსე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "picnic",
+    "georgian": "პიკნიკი",
+    "pronunciation": "/ˈpɪknɪk/",
+    "example_en": "We had a picnic by the river.",
+    "example_ka": "მდინარესთან პიკნიკი მოვაწყვეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "nature",
+    "georgian": "ბუნება",
+    "pronunciation": "/ˈneɪtʃər/",
+    "example_en": "Spending time in nature is healing.",
+    "example_ka": "ბუნებაში დროის გატარება მკურნალია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "campstove",
+    "georgian": "საბანაკო ღუმელი",
+    "pronunciation": "/ˈkæmpstoʊv/",
+    "example_en": "We boiled water on the campstove.",
+    "example_ka": "საბანაკო ღუმელზე წყალი გავადუღეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "tarp",
+    "georgian": "ბრეზენტი",
+    "pronunciation": "/tɑːrp/",
+    "example_en": "Put a tarp under the tent for protection.",
+    "example_ka": "კარვის ქვეშ ბრეზენტი დაფინეთ დასაცავად.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "orienteering",
+    "georgian": "ორიენტირება",
+    "pronunciation": "/ˌɔːriənˈtɪərɪŋ/",
+    "example_en": "Orienteering uses maps and compasses.",
+    "example_ka": "ორიენტირებისას რუკასა და კომპასს იყენებენ.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "foraging",
+    "georgian": "საკვების მოძიება",
+    "pronunciation": "/ˈfɒrɪdʒɪŋ/",
+    "example_en": "Foraging for wild berries is fun.",
+    "example_ka": "ველური კენკრის მოძიება სახალისოა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "waterproof",
+    "georgian": "წყალგაუმტარი",
+    "pronunciation": "/ˈwɔːtərpruːf/",
+    "example_en": "Make sure your jacket is waterproof.",
+    "example_ka": "დარწმუნდი, რომ ქურთუკი წყალგაუმტარია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "adventure",
+    "georgian": "თავგადასავალი",
+    "pronunciation": "/ədˈvɛntʃər/",
+    "example_en": "Camping is a great adventure.",
+    "example_ka": "კემპინგი შესანიშნავი თავგადასავალია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "trail",
+    "georgian": "ბილიკი",
+    "pronunciation": "/treɪl/",
+    "example_en": "Follow the trail to the summit.",
+    "example_ka": "მწვერვალამდე ბილიკს მიჰყევი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "summit",
+    "georgian": "მწვერვალი",
+    "pronunciation": "/ˈsʌmɪt/",
+    "example_en": "We reached the summit at noon.",
+    "example_ka": "მწვერვალს შუადღისას მივაღწიეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "cliff",
+    "georgian": "კლდე",
+    "pronunciation": "/klɪf/",
+    "example_en": "Be careful near the cliff edge.",
+    "example_ka": "კლდის კიდესთან ფრთხილად იყავი.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "cave",
+    "georgian": "გამოქვაბული",
+    "pronunciation": "/keɪv/",
+    "example_en": "We explored a cave during our hike.",
+    "example_ka": "ლაშქრობისას გამოქვაბული გამოვიკვლიეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "rock",
+    "georgian": "ქვა",
+    "pronunciation": "/rɒk/",
+    "example_en": "We sat on a large rock to rest.",
+    "example_ka": "დასასვენებლად დიდ ქვაზე ჩავსხედით.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "boulder",
+    "georgian": "ღია ქვა",
+    "pronunciation": "/ˈboʊldər/",
+    "example_en": "A huge boulder blocked the path.",
+    "example_ka": "უზარმაზარმა ღია ქვამ გზა ჩაკეტა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "forest",
+    "georgian": "ტყე",
+    "pronunciation": "/ˈfɔːrɪst/",
+    "example_en": "The forest was full of tall trees.",
+    "example_ka": "ტყე მაღალი ხეებით იყო სავსე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "wood",
+    "georgian": "ხე",
+    "pronunciation": "/wʊd/",
+    "example_en": "We collected dry wood for burning.",
+    "example_ka": "დასაწვავად მშრალი ხე შევაგროვეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "branch",
+    "georgian": "ტოტი",
+    "pronunciation": "/bræntʃ/",
+    "example_en": "A branch fell across the trail.",
+    "example_ka": "ტოტი ბილიკზე დაეცა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "leaf",
+    "georgian": "ფოთოლი",
+    "pronunciation": "/liːf/",
+    "example_en": "The leaves changed color in autumn.",
+    "example_ka": "შემოდგომაზე ფოთლები შეიცვალა ფერი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "bark",
+    "georgian": "ქერქი",
+    "pronunciation": "/bɑːrk/",
+    "example_en": "The tree bark was rough and thick.",
+    "example_ka": "ხის ქერქი უხეში და სქელი იყო.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "pine",
+    "georgian": "ფიჭვი",
+    "pronunciation": "/paɪn/",
+    "example_en": "Pine trees grew on the mountainside.",
+    "example_ka": "მთის კალთაზე ფიჭვის ხეები იზრდებოდა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "oak",
+    "georgian": "მუხა",
+    "pronunciation": "/oʊk/",
+    "example_en": "An old oak tree provided shade.",
+    "example_ka": "ძველმა მუხის ხემ ჩრდილი მოგვცა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "shelter",
+    "georgian": "თავშესაფარი",
+    "pronunciation": "/ˈʃɛltər/",
+    "example_en": "We found shelter from the rain.",
+    "example_ka": "წვიმისგან თავშესაფარი ვიპოვეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "sleeping",
+    "georgian": "ძილი",
+    "pronunciation": "/ˈsliːpɪŋ/",
+    "example_en": "My sleeping bag is warm and comfortable.",
+    "example_ka": "ჩემი საძინებელი ტომარა თბილი და კომფორტულია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "pillow",
+    "georgian": "ბალიში",
+    "pronunciation": "/ˈpɪloʊ/",
+    "example_en": "I forgot to bring a camping pillow.",
+    "example_ka": "საბანაკო ბალიშის მოტანა დამავიწყდა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkɪt/",
+    "example_en": "We shared a blanket by the fire.",
+    "example_ka": "ცეცხლთან საბანი გავიზიარეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "rope",
+    "georgian": "თოვლი",
+    "pronunciation": "/roʊp/",
+    "example_en": "We used rope to secure the tent.",
+    "example_ka": "კარვის დასამაგრებლად თოვლი გამოვიყენეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "stake",
+    "georgian": "ღია",
+    "pronunciation": "/steɪk/",
+    "example_en": "Hammer the stakes into the ground.",
+    "example_ka": "ღიები მიწაში ჩაარტყი.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "hook",
+    "georgian": "კაუჭი",
+    "pronunciation": "/hʊk/",
+    "example_en": "Hang your backpack on the hook.",
+    "example_ka": "ზურგჩანთა კაუჭზე ჩამოკიდე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "zipper",
+    "georgian": "ლენტი",
+    "pronunciation": "/ˈzɪpər/",
+    "example_en": "The tent zipper got stuck.",
+    "example_ka": "კარვის ლენტი გაიჯვა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "pocket",
+    "georgian": "ჯიბე",
+    "pronunciation": "/ˈpɒkɪt/",
+    "example_en": "Keep the compass in your pocket.",
+    "example_ka": "კომპასი ჯიბეში შეინახე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "whistle",
+    "georgian": "სასტვენი",
+    "pronunciation": "/ˈwɪsəl/",
+    "example_en": "Blow the whistle in case of emergency.",
+    "example_ka": "საგანგებო შემთხვევაში სასტვენს დაუკარი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "emergency",
+    "georgian": "საგანგებო შემთხვევა",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Pack an emergency first-aid kit.",
+    "example_ka": "საგანგებო პირველადი დახმარების ნაკრები შეიფუთე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "bandage",
+    "georgian": "ბინტი",
+    "pronunciation": "/ˈbændɪdʒ/",
+    "example_en": "Apply a bandage to the wound.",
+    "example_ka": "ჭრილობაზე ბინტი დადე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "insect",
+    "georgian": "მწერი",
+    "pronunciation": "/ˈɪnsɛkt/",
+    "example_en": "Various insects live in the forest.",
+    "example_ka": "ტყეში სხვადასხვა მწერი ცხოვრობს.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "spider",
+    "georgian": "ობობა",
+    "pronunciation": "/ˈspaɪdər/",
+    "example_en": "A spider built a web between the trees.",
+    "example_ka": "ობობამ ხეებს შორის ქსელი გაშალა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "snake",
+    "georgian": "გველი",
+    "pronunciation": "/sneɪk/",
+    "example_en": "Watch out for snakes on the trail.",
+    "example_ka": "ბილიკზე გველებს უფრთხილდი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "bird",
+    "georgian": "ფრინველი",
+    "pronunciation": "/bɜːrd/",
+    "example_en": "Colorful birds sang in the morning.",
+    "example_ka": "დილით ფერადი ფრინველები მღეროდნენ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "eagle",
+    "georgian": "არწივი",
+    "pronunciation": "/ˈiːɡəl/",
+    "example_en": "An eagle soared high above us.",
+    "example_ka": "არწივი ჩვენს თავზე მაღლა დაფრინავდა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "rabbit",
+    "georgian": "კურდღელი",
+    "pronunciation": "/ˈræbɪt/",
+    "example_en": "A rabbit hopped across our path.",
+    "example_ka": "კურდღელი ჩვენი გზის გადაკვეთა ხტუნავდა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "deer",
+    "georgian": "ირემი",
+    "pronunciation": "/dɪər/",
+    "example_en": "We saw deer drinking from the stream.",
+    "example_ka": "ნაკადულიდან წყალს მლეველ ირემებს ვნახავთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "squirrel",
+    "georgian": "ციყვი",
+    "pronunciation": "/ˈskwɪrəl/",
+    "example_en": "Squirrels collected nuts for winter.",
+    "example_ka": "ციყვები ზამთრისთვის თხილს აგროვებდნენ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "raccoon",
+    "georgian": "რაკუნი",
+    "pronunciation": "/rækˈuːn/",
+    "example_en": "Raccoons got into our food supplies.",
+    "example_ka": "რაკუნებმა ჩვენს საკვებ მარაგებს მიაღწიეს.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "fox",
+    "georgian": "მელა",
+    "pronunciation": "/fɒks/",
+    "example_en": "A red fox ran through the bushes.",
+    "example_ka": "წითელი მელა ბუჩქებში გაქცეული.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "wolf",
+    "georgian": "მგელი",
+    "pronunciation": "/wʊlf/",
+    "example_en": "We heard wolves howling at night.",
+    "example_ka": "ღამით მგლების ყმენა მოვისმინეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "We caught fish in the lake.",
+    "example_ka": "ტბაში თევზი დავიჭირეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "fishing",
+    "georgian": "თევზაობა",
+    "pronunciation": "/ˈfɪʃɪŋ/",
+    "example_en": "Fishing requires patience and skill.",
+    "example_ka": "თევზაობა მოთმინებასა და უნარს მოითხოვს.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "rod",
+    "georgian": "ჯოხი",
+    "pronunciation": "/rɒd/",
+    "example_en": "Cast your fishing rod into the water.",
+    "example_ka": "თევზის ჯოხი წყალში გადაგდე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "bait",
+    "georgian": "მტყუარა",
+    "pronunciation": "/beɪt/",
+    "example_en": "Use worms as bait for fishing.",
+    "example_ka": "თევზაობისთვის ჭიები მტყუარად გამოიყენე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "net",
+    "georgian": "ქსელი",
+    "pronunciation": "/nɛt/",
+    "example_en": "Use a net to catch the fish.",
+    "example_ka": "თევზის დასაჭერად ქსელი გამოიყენე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "lake",
+    "georgian": "ტბა",
+    "pronunciation": "/leɪk/",
+    "example_en": "The lake was crystal clear and calm.",
+    "example_ka": "ტბა ნათელი და მშვიდი იყო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "river",
+    "georgian": "მდინარე",
+    "pronunciation": "/ˈrɪvər/",
+    "example_en": "The river flowed rapidly downstream.",
+    "example_ka": "მდინარე სწრაფად მიედინებოდა ქვევით.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "waterfall",
+    "georgian": "ჩანჩქერი",
+    "pronunciation": "/ˈwɔːtərfɔːl/",
+    "example_en": "The waterfall created a beautiful mist.",
+    "example_ka": "ჩანჩქერმა ლამაზი ნისლი შექმნა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "mountain",
+    "georgian": "მთა",
+    "pronunciation": "/ˈmaʊntən/",
+    "example_en": "The mountain peak was covered in snow.",
+    "example_ka": "მთის მწვერვალი თოვლით იყო დაფარული.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "hill",
+    "georgian": "გორაკი",
+    "pronunciation": "/hɪl/",
+    "example_en": "We climbed a steep hill.",
+    "example_ka": "ციცაბო გორაკზე ავედით.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "slope",
+    "georgian": "ფერდობი",
+    "pronunciation": "/sloʊp/",
+    "example_en": "Be careful on the slippery slope.",
+    "example_ka": "მოცურცუმე ფერდობზე ფრთხილად იყავი.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "canyon",
+    "georgian": "ხეობა",
+    "pronunciation": "/ˈkænjən/",
+    "example_en": "The canyon walls were steep and tall.",
+    "example_ka": "ხეობის კედლები ციცაბო და მაღალი იყო.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "desert",
+    "georgian": "უდაბნო",
+    "pronunciation": "/ˈdɛzərt/",
+    "example_en": "Desert camping requires extra water.",
+    "example_ka": "უდაბნოში კემპინგი ზედმეტ წყალს მოითხოვს.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "sand",
+    "georgian": "ქვიშა",
+    "pronunciation": "/sænd/",
+    "example_en": "Hot sand burned our feet.",
+    "example_ka": "ცხელმა ქვიშამ ფეხები დაგვიწვა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "dune",
+    "georgian": "დიუნა",
+    "pronunciation": "/duːn/",
+    "example_en": "We slid down the sand dune.",
+    "example_ka": "ქვიშის დიუნაზე ჩავსრიალდით.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "cactus",
+    "georgian": "კაკტუსი",
+    "pronunciation": "/ˈkæktəs/",
+    "example_en": "Be careful around the prickly cactus.",
+    "example_ka": "ეკლიანი კაკტუსის მახლობლობაში ფრთხილად იყავი.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "oasis",
+    "georgian": "ოაზისი",
+    "pronunciation": "/oʊˈeɪsɪs/",
+    "example_en": "We found an oasis in the desert.",
+    "example_ka": "უდაბნოში ოაზისი ვიპოვეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "beach",
+    "georgian": "სანაპირო",
+    "pronunciation": "/biːtʃ/",
+    "example_en": "We set up camp on the beach.",
+    "example_ka": "სანაპიროზე ბანაკი განვალაგეთ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "shore",
+    "georgian": "ნაპირი",
+    "pronunciation": "/ʃɔːr/",
+    "example_en": "Waves crashed against the rocky shore.",
+    "example_ka": "ღია ტალღები ციცაბო ნაპირს ვარდებოდნენ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "waves",
+    "georgian": "ტალღები",
+    "pronunciation": "/weɪvz/",
+    "example_en": "The sound of waves was relaxing.",
+    "example_ka": "ტალღების ხმა დამამშვიდებელი იყო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "tide",
+    "georgian": "მიმდინარება",
+    "pronunciation": "/taɪd/",
+    "example_en": "High tide covered our footprints.",
+    "example_ka": "მაღალმა მიმდინარებამ ჩვენი კვალი დაფარა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "seashell",
+    "georgian": "ღოვს ნაჭუჭი",
+    "pronunciation": "/ˈsiːʃɛl/",
+    "example_en": "Children collected colorful seashells.",
+    "example_ka": "ბავშვებმა ფერადი ღოვს ნაჭუჭები შეაგროვეს.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "coral",
+    "georgian": "მარჯანი",
+    "pronunciation": "/ˈkɔːrəl/",
+    "example_en": "The coral reef was full of fish.",
+    "example_ka": "მარჯნის რიფი თევზებით იყო სავსე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "island",
+    "georgian": "კუნძული",
+    "pronunciation": "/ˈaɪlənd/",
+    "example_en": "We kayaked to a small island.",
+    "example_ka": "პატარა კუნძულზე კაიაკით ჩავედით.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "kayak",
+    "georgian": "კაიაკი",
+    "pronunciation": "/ˈkaɪæk/",
+    "example_en": "Paddling a kayak requires balance.",
+    "example_ka": "კაიაკის ნაოსნობა წონასწორობას მოითხოვს.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "paddle",
+    "georgian": "ნაოსანი",
+    "pronunciation": "/ˈpædəl/",
+    "example_en": "Use the paddle to steer the canoe.",
+    "example_ka": "კანოეს მისართავად ნაოსანი გამოიყენე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "raft",
+    "georgian": "ფალი",
+    "pronunciation": "/ræft/",
+    "example_en": "We built a raft from logs.",
+    "example_ka": "ღეროებისგან ფალი ავაშენეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "dock",
+    "georgian": "ნავმისადგომი",
+    "pronunciation": "/dɒk/",
+    "example_en": "Tie the boat to the dock.",
+    "example_ka": "ნავი ნავმისადგომთან მიამაგრე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "anchor",
+    "georgian": "ღუზა",
+    "pronunciation": "/ˈæŋkər/",
+    "example_en": "Drop the anchor to stop the boat.",
+    "example_ka": "ნავის გასაჩერებლად ღუზა ჩაუშვი.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "sailor",
+    "georgian": "მეზღვაური",
+    "pronunciation": "/ˈseɪlər/",
+    "example_en": "The sailor navigated by the stars.",
+    "example_ka": "მეზღვაური ვარსკვლავებით ორიენტირდებოდა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "navigation",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˌnævɪˈɡeɪʃən/",
+    "example_en": "Good navigation skills are essential.",
+    "example_ka": "კარგი ნავიგაციის უნარები აუცილებელია.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "telescope",
+    "georgian": "ტელესკოპი",
+    "pronunciation": "/ˈtɛlɪskoʊp/",
+    "example_en": "We used a telescope to see the stars.",
+    "example_ka": "ვარსკვლავების სანახავად ტელესკოპი გამოვიყენეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "constellation",
+    "georgian": "თანავარსკვლავედი",
+    "pronunciation": "/ˌkɒnstəˈleɪʃən/",
+    "example_en": "We identified several constellations.",
+    "example_ka": "რამდენიმე თანავარსკვლავედი განვსაზღვრეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "galaxy",
+    "georgian": "გალაქტიკა",
+    "pronunciation": "/ˈɡæləksi/",
+    "example_en": "The Milky Way galaxy was visible.",
+    "example_ka": "რძის გზის გალაქტიკა ჩანდა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "planet",
+    "georgian": "პლანეტა",
+    "pronunciation": "/ˈplænɪt/",
+    "example_en": "Venus was the brightest planet tonight.",
+    "example_ka": "ვენერა დღეს ღამით ყველაზე კაშკაშა პლანეტა იყო.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "moon",
+    "georgian": "მთვარე",
+    "pronunciation": "/muːn/",
+    "example_en": "The full moon lit our campsite.",
+    "example_ka": "სავსე მთვარემ ჩვენი კემპინგი გაანათა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "star",
+    "georgian": "ვარსკვლავი",
+    "pronunciation": "/stɑːr/",
+    "example_en": "Stars appeared as darkness fell.",
+    "example_ka": "სიბნელის დადგომისთანავე ვარსკვლავები გამოჩნდა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "darkness",
+    "georgian": "სიბნელე",
+    "pronunciation": "/ˈdɑːrknəs/",
+    "example_en": "Total darkness surrounded our camp.",
+    "example_ka": "სრული სიბნელე ჩვენს ბანაკს ეკურთა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "dawn",
+    "georgian": "ალისფერი",
+    "pronunciation": "/dɔːn/",
+    "example_en": "We woke up at dawn to start hiking.",
+    "example_ka": "ლაშქრობის დასაწყებად ალისფერზე გავიღვიძეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "dusk",
+    "georgian": "საღამო",
+    "pronunciation": "/dʌsk/",
+    "example_en": "Fireflies appeared at dusk.",
+    "example_ka": "საღამოს კრაზანები გამოჩნდნენ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "firefly",
+    "georgian": "კრაზანა",
+    "pronunciation": "/ˈfaɪərflaɪ/",
+    "example_en": "Fireflies danced in the evening air.",
+    "example_ka": "კრაზანები საღამოს ჰაერში ცეკვავდნენ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "cricket",
+    "georgian": "ყვრიმა",
+    "pronunciation": "/ˈkrɪkɪt/",
+    "example_en": "Crickets chirped throughout the night.",
+    "example_ka": "ყვრიმები ღამე-ღამე ღრიალებდნენ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "owl",
+    "georgian": "ბუ",
+    "pronunciation": "/aʊl/",
+    "example_en": "An owl hooted in the distance.",
+    "example_ka": "შორიდან ბუს ყირინი მოესმებოდა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "bat",
+    "georgian": "ღამურა",
+    "pronunciation": "/bæt/",
+    "example_en": "Bats flew overhead at twilight.",
+    "example_ka": "წიაღში ღამურები გადაფრინავდნენ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "camp",
+    "georgian": "ბანაკი",
+    "pronunciation": "/kæmp/",
+    "example_en": "Our camp was well organized.",
+    "example_ka": "ჩვენი ბანაკი კარგად იყო მოწყობილი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "equipment",
+    "georgian": "აღჭურვილობა",
+    "pronunciation": "/ɪˈkwɪpmənt/",
+    "example_en": "Check all camping equipment before leaving.",
+    "example_ka": "წასვლამდე მთელი საბანაკო აღჭურვილობა შეამოწმე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "gear",
+    "georgian": "ინვენტარი",
+    "pronunciation": "/ɡɪər/",
+    "example_en": "Pack your gear carefully.",
+    "example_ka": "ინვენტარი ფრთხილად შეიფუთე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "supplies",
+    "georgian": "მარაგები",
+    "pronunciation": "/səˈplaɪz/",
+    "example_en": "We brought enough supplies for three days.",
+    "example_ka": "სამი დღის საკმარისი მარაგები მოვიტანეთ.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "food",
+    "georgian": "საკვები",
+    "pronunciation": "/fuːd/",
+    "example_en": "Store food away from animals.",
+    "example_ka": "საკვები ცხოველებისგან მოშორებით შეინახე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Clean water is essential for survival.",
+    "example_ka": "სუფთა წყალი გადარჩენისთვის აუცილებელია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "bottle",
+    "georgian": "ბოთლი",
+    "pronunciation": "/ˈbɒtəl/",
+    "example_en": "Fill your water bottle at the spring.",
+    "example_ka": "წყაროსთან წყლის ბოთლი ავსე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "purify",
+    "georgian": "გაწმენდა",
+    "pronunciation": "/ˈpjʊrɪfaɪ/",
+    "example_en": "Purify the water before drinking.",
+    "example_ka": "დალევამდე წყალი გაწმინდე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Use a filter to clean the water.",
+    "example_ka": "წყლის გასაწმენდად ფილტრი გამოიყენე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "boil",
+    "georgian": "უღება",
+    "pronunciation": "/bɔɪl/",
+    "example_en": "Boil water for ten minutes.",
+    "example_ka": "წყალი ათ წუთი ადუღე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "cup",
+    "georgian": "ფინჯანი",
+    "pronunciation": "/kʌp/",
+    "example_en": "Pour hot tea into the metal cup.",
+    "example_ka": "ლითონის ფინჯანში ცხელი ჩაი ჩაასხი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "plate",
+    "georgian": "თეფში",
+    "pronunciation": "/pleɪt/",
+    "example_en": "Eat dinner from your camping plate.",
+    "example_ka": "საბანაკო თეფშიდან სადილი შეჭამე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "bowl",
+    "georgian": "ფიალა",
+    "pronunciation": "/boʊl/",
+    "example_en": "Serve soup in the lightweight bowl.",
+    "example_ka": "ნაბდი მსუბუქ ფიალაში მიირთი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "spoon",
+    "georgian": "კოვზი",
+    "pronunciation": "/spuːn/",
+    "example_en": "Stir the food with a wooden spoon.",
+    "example_ka": "საჭმელი ხის კოვზით აურიე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "fork",
+    "georgian": "ჩანგალი",
+    "pronunciation": "/fɔːrk/",
+    "example_en": "Use the plastic fork for meals.",
+    "example_ka": "საჭმლისთვის პლასტმასის ჩანგალი გამოიყენე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "pan",
+    "georgian": "ტაფა",
+    "pronunciation": "/pæn/",
+    "example_en": "Cook eggs in the camping pan.",
+    "example_ka": "საბანაკო ტაფაში კვერცხი მოამზადე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "pot",
+    "georgian": "ქოთანი",
+    "pronunciation": "/pɒt/",
+    "example_en": "Boil pasta in the large pot.",
+    "example_ka": "დიდ ქოთანში მაკარონი ადუღე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "lid",
+    "georgian": "თავსახურავი",
+    "pronunciation": "/lɪd/",
+    "example_en": "Put the lid on the pot.",
+    "example_ka": "ქოთანზე თავსახურავი დადე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "can",
+    "georgian": "ქილა",
+    "pronunciation": "/kæn/",
+    "example_en": "Open the can of beans.",
+    "example_ka": "ლობიოს ქილა გახსენი.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "opener",
+    "georgian": "გამხსნელი",
+    "pronunciation": "/ˈoʊpənər/",
+    "example_en": "Don't forget the can opener.",
+    "example_ka": "ქილის გამხსნელი არ დაგავიწყდეს.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "cooktop",
+    "georgian": "ღუმელის ზედაპირი",
+    "pronunciation": "/ˈkʊktɒp/",
+    "example_en": "The portable cooktop works on gas.",
+    "example_ka": "პორტატული ღუმელი გაზზე მუშაობს.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "fuel",
+    "georgian": "საწვავი",
+    "pronunciation": "/ˈfjuːəl/",
+    "example_en": "Bring extra fuel for the stove.",
+    "example_ka": "ღუმელისთვის ზედმეტი საწვავი წამოიღე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "gas",
+    "georgian": "გაზი",
+    "pronunciation": "/ɡæs/",
+    "example_en": "The gas cartridge is almost empty.",
+    "example_ka": "გაზის ბალონი თითქმის ცარიელია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "cartridge",
+    "georgian": "ბალონი",
+    "pronunciation": "/ˈkɑːrtrɪdʒ/",
+    "example_en": "Replace the empty cartridge.",
+    "example_ka": "ცარიელი ბალონი შეუცვალე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "ignite",
+    "georgian": "ანთება",
+    "pronunciation": "/ɪɡˈnaɪt/",
+    "example_en": "Ignite the stove carefully.",
+    "example_ka": "ღუმელი ფრთხილად აანთე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "flame",
+    "georgian": "ალი",
+    "pronunciation": "/fleɪm/",
+    "example_en": "Adjust the flame to medium heat.",
+    "example_ka": "ალი საშუალო სიცხეზე დაარეგულირე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "heat",
+    "georgian": "სიცხე",
+    "pronunciation": "/hiːt/",
+    "example_en": "The heat from the fire felt good.",
+    "example_ka": "ცეცხლისგან მომავალი სიცხე კარგად იგრძნობოდა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "warm",
+    "georgian": "თბილი",
+    "pronunciation": "/wɔːrm/",
+    "example_en": "The fire kept us warm all night.",
+    "example_ka": "ცეცხლმა ღამე-ღამე გვარჩია.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "cold",
+    "georgian": "ცივი",
+    "pronunciation": "/koʊld/",
+    "example_en": "The night air was cold and fresh.",
+    "example_ka": "ღამის ჰაერი ცივი და სუფთა იყო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "temperature",
+    "georgian": "ტემპერატურა",
+    "pronunciation": "/ˈtɛmpərətʃər/",
+    "example_en": "The temperature dropped after sunset.",
+    "example_ka": "მზის ჩასვლის შემდეგ ტემპერატურა დაეცა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "weather",
+    "georgian": "ამინდი",
+    "pronunciation": "/ˈwɛðər/",
+    "example_en": "Check the weather forecast before camping.",
+    "example_ka": "კემპინგამდე ამინდის პროგნოზი შეამოწმე.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "rain",
+    "georgian": "წვიმა",
+    "pronunciation": "/reɪn/",
+    "example_en": "Light rain began falling at midnight.",
+    "example_ka": "შუაღამეს მსუბუქი წვიმა დაიწყო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "storm",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/stɔːrm/",
+    "example_en": "The storm passed quickly.",
+    "example_ka": "ქარიშხალი სწრაფად გაიარა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "wind",
+    "georgian": "ქარი",
+    "pronunciation": "/wɪnd/",
+    "example_en": "Strong wind shook our tent.",
+    "example_ka": "ძლიერმა ქარმა ჩვენი კარვი შააძრო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "snow",
+    "georgian": "თოვლი",
+    "pronunciation": "/snoʊ/",
+    "example_en": "Snow covered the mountain peaks.",
+    "example_ka": "თოვლმა მთის მწვერვალები დაფარა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "ice",
+    "georgian": "ყინული",
+    "pronunciation": "/aɪs/",
+    "example_en": "Ice formed on our water bottles.",
+    "example_ka": "ჩვენს წყლის ბოთლებზე ყინული გაიყინა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "frost",
+    "georgian": "ნამი",
+    "pronunciation": "/frɔːst/",
+    "example_en": "Morning frost covered the grass.",
+    "example_ka": "დილის ნამმა ბალახი დაფარა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "dew",
+    "georgian": "ცვარი",
+    "pronunciation": "/duː/",
+    "example_en": "Heavy dew made everything wet.",
+    "example_ka": "მძიმე ცვარმა ყველაფერი სველი გახადა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "mist",
+    "georgian": "ნისლი",
+    "pronunciation": "/mɪst/",
+    "example_en": "Morning mist covered the valley.",
+    "example_ka": "დილის ნისლმა ხეობა დაფარა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "fog",
+    "georgian": "ნისლი",
+    "pronunciation": "/fɒɡ/",
+    "example_en": "Dense fog made navigation difficult.",
+    "example_ka": "მკვრივმა ნისლმა ნავიგაცია გართულა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "cloud",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/klaʊd/",
+    "example_en": "Dark clouds gathered overhead.",
+    "example_ka": "მუქი ღრუბლები თავზე შეიკრიბა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "sky",
+    "georgian": "ცა",
+    "pronunciation": "/skaɪ/",
+    "example_en": "The sky was clear and blue.",
+    "example_ka": "ცა ღია და ლურჯი იყო.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "horizon",
+    "georgian": "ჰორიზონტი",
+    "pronunciation": "/həˈraɪzən/",
+    "example_en": "The sun disappeared behind the horizon.",
+    "example_ka": "მზე ჰორიზონტის მიღმა გაქრა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "direction",
+    "georgian": "მიმართულება",
+    "pronunciation": "/dɪˈrɛkʃən/",
+    "example_en": "Use the compass to find direction.",
+    "example_ka": "მიმართულების პოვნისთვის კომპასი გამოიყენე.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "north",
+    "georgian": "ჩრდილოეთი",
+    "pronunciation": "/nɔːrθ/",
+    "example_en": "The mountain is to the north.",
+    "example_ka": "მთა ჩრდილოეთით არის.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "south",
+    "georgian": "სამხრეთი",
+    "pronunciation": "/saʊθ/",
+    "example_en": "We're heading south toward the lake.",
+    "example_ka": "ტბისკენ სამხრეთით მივდივართ.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "east",
+    "georgian": "აღმოსავლეთი",
+    "pronunciation": "/iːst/",
+    "example_en": "The sun rises in the east.",
+    "example_ka": "მზე აღმოსავლეთიდან ამოდის.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "west",
+    "georgian": "დასავლეთი",
+    "pronunciation": "/wɛst/",
+    "example_en": "The town is five miles west.",
+    "example_ka": "ქალაქი ხუთი მილით დასავლეთითაა.",
+    "category": "camping-outdoor",
+    "level": "A1"
+  },
+  {
+    "english": "bivouac",
+    "georgian": "ბივუაკი",
+    "pronunciation": "/ˈbɪvuæk/",
+    "example_en": "We set up a bivouac.",
+    "example_ka": "ბივუაკი მოვაწყეთ.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "blaze",
+    "georgian": "ალი",
+    "pronunciation": "/bleɪz/",
+    "example_en": "The campfire blazed brightly.",
+    "example_ka": "კოცონი ნათლად ანთებდა.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "brook",
+    "georgian": "ნაკადული",
+    "pronunciation": "/brʊk/",
+    "example_en": "We crossed the brook.",
+    "example_ka": "ნაკადულზე გადავედით.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "canopy",
+    "georgian": "ტყის ბალდახინი",
+    "pronunciation": "/ˈkænəpi/",
+    "example_en": "The forest canopy blocked the sun.",
+    "example_ka": "ტყის ბალდახინი მზეს ფარავდა.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "cascade",
+    "georgian": "ჩანჩქერი",
+    "pronunciation": "/kæˈskeɪd/",
+    "example_en": "Water cascaded down the rocks.",
+    "example_ka": "წყალი კლდეებზე ჩანჩქერად ჩამოედინებოდა.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "clearing",
+    "georgian": "გაწმენდილი ადგილი",
+    "pronunciation": "/ˈklɪrɪŋ/",
+    "example_en": "We camped in a clearing.",
+    "example_ka": "გაწმენდილ ადგილზე დავბანაკდით.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "cove",
+    "georgian": "უბე",
+    "pronunciation": "/koʊv/",
+    "example_en": "We swam in the cove.",
+    "example_ka": "უბეში ვცურავდით.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "creek",
+    "georgian": "წყარო",
+    "pronunciation": "/kriːk/",
+    "example_en": "The creek flows gently.",
+    "example_ka": "წყარო ნელა მიედინება.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "ember",
+    "georgian": "ნაკვერჩხალი",
+    "pronunciation": "/ˈembər/",
+    "example_en": "Embers glowed in the dark.",
+    "example_ka": "ნაკვერჩხლები სიბნელეში ანთებდა.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "fauna",
+    "georgian": "ფაუნა",
+    "pronunciation": "/ˈfɔːnə/",
+    "example_en": "The local fauna is diverse.",
+    "example_ka": "ადგილობრივი ფაუნა მრავალფეროვანია.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "flora",
+    "georgian": "ფლორა",
+    "pronunciation": "/ˈflɔːrə/",
+    "example_en": "Study the local flora.",
+    "example_ka": "ადგილობრივი ფლორა შეისწავლე.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "foliage",
+    "georgian": "ფოთლოვანი",
+    "pronunciation": "/ˈfoʊliɪdʒ/",
+    "example_en": "Autumn foliage is beautiful.",
+    "example_ka": "შემოდგომის ფოთლოვანი ლამაზია.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "ford",
+    "georgian": "წყლის გადასასვლელი",
+    "pronunciation": "/fɔːrd/",
+    "example_en": "We forded the shallow river.",
+    "example_ka": "წყნარ მდინარეზე გადავედით.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "geyser",
+    "georgian": "გეიზერი",
+    "pronunciation": "/ˈɡaɪzər/",
+    "example_en": "The geyser erupted.",
+    "example_ka": "გეიზერი ამოიფრქვა.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "glacier",
+    "georgian": "მყინვარი",
+    "pronunciation": "/ˈɡlæsiər/",
+    "example_en": "The glacier was enormous.",
+    "example_ka": "მყინვარი უზარმაზარი იყო.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "gorge",
+    "georgian": "ხევი",
+    "pronunciation": "/ɡɔːrdʒ/",
+    "example_en": "The river carved a gorge.",
+    "example_ka": "მდინარემ ხევი გამოთალა.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "grove",
+    "georgian": "კორომი",
+    "pronunciation": "/ɡroʊv/",
+    "example_en": "We rested in the grove.",
+    "example_ka": "კორომში დავისვენეთ.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "habitat",
+    "georgian": "ბინადრობა",
+    "pronunciation": "/ˈhæbɪtæt/",
+    "example_en": "Protect natural habitats.",
+    "example_ka": "ბუნებრივი საცხოვრისი დაიცავი.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "knoll",
+    "georgian": "ბორცვი",
+    "pronunciation": "/noʊl/",
+    "example_en": "We picnicked on the knoll.",
+    "example_ka": "ბორცვზე ვპიკნიკობდით.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "ledge",
+    "georgian": "კლდის თარო",
+    "pronunciation": "/ledʒ/",
+    "example_en": "Birds nest on the ledge.",
+    "example_ka": "ფრინველები კლდის თაროზე იბუდებენ.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "marsh",
+    "georgian": "ჭაობი",
+    "pronunciation": "/mɑːrʃ/",
+    "example_en": "Avoid walking in the marsh.",
+    "example_ka": "ჭაობში სიარულს მოერიდე.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "moss",
+    "georgian": "ხავსი",
+    "pronunciation": "/mɒs/",
+    "example_en": "Moss grows on wet rocks.",
+    "example_ka": "ხავსი სველ კლდეებზე იზრდება.",
+    "category": "camping-outdoor",
+    "level": "A2"
+  },
+  {
+    "english": "outcrop",
+    "georgian": "კლდის შვერილი",
+    "pronunciation": "/ˈaʊtkrɒp/",
+    "example_en": "We climbed the rock outcrop.",
+    "example_ka": "კლდის შვერილზე ავედით.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "plateau",
+    "georgian": "პლატო",
+    "pronunciation": "/plæˈtoʊ/",
+    "example_en": "The plateau offers great views.",
+    "example_ka": "პლატო შესანიშნავ ხედებს სთავაზობს.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "ravine",
+    "georgian": "ხრამი",
+    "pronunciation": "/rəˈviːn/",
+    "example_en": "Don't fall into the ravine.",
+    "example_ka": "ხრამში არ ჩავარდე.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "ridge",
+    "georgian": "ქედი",
+    "pronunciation": "/rɪdʒ/",
+    "example_en": "We hiked along the ridge.",
+    "example_ka": "ქედის გასწვრივ ვიარეთ.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  },
+  {
+    "english": "thicket",
+    "georgian": "ბუჩქნარი",
+    "pronunciation": "/ˈθɪkɪt/",
+    "example_en": "Animals hide in the thicket.",
+    "example_ka": "ცხოველები ბუჩქნარში იმალებიან.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "dale",
+    "georgian": "ხეობა",
+    "pronunciation": "/deɪl/",
+    "example_en": "The dale was green.",
+    "example_ka": "ხეობა მწვანე იყო.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "dell",
+    "georgian": "პატარა ხეობა",
+    "pronunciation": "/del/",
+    "example_en": "Rest in the shady dell.",
+    "example_ka": "ჩრდილიან პატარა ხეობაში დაისვენე.",
+    "category": "camping-outdoor",
+    "level": "B2"
+  },
+  {
+    "english": "tundra",
+    "georgian": "ტუნდრა",
+    "pronunciation": "/ˈtʌndrə/",
+    "example_en": "The tundra is frozen.",
+    "example_ka": "ტუნდრა გაყინულია.",
+    "category": "camping-outdoor",
+    "level": "B1"
+  }
 ]

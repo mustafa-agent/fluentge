@@ -1,27 +1,1802 @@
 [
-  {"english": "Bus stop", "georgian": "ავტობუსის გაჩერება", "pronunciation": "/bʌs stɒp/", "example_en": "The bus stop is across the street.", "example_ka": "ავტობუსის გაჩერება ქუჩის მეორე მხარესაა.", "category": "transport", "level": "A1"},
-  {"english": "Metro", "georgian": "მეტრო", "pronunciation": "/ˈmɛtroʊ/", "example_en": "The metro is the fastest way to get around Tbilisi.", "example_ka": "მეტრო თბილისში გადაადგილების ყველაზე სწრაფი საშუალებაა.", "category": "transport", "level": "A1"},
-  {"english": "Ticket", "georgian": "ბილეთი", "pronunciation": "/ˈtɪkɪt/", "example_en": "Buy a ticket before you get on the bus.", "example_ka": "ავტობუსში ჩაჯდომამდე ბილეთი იყიდე.", "category": "transport", "level": "A1"},
-  {"english": "Platform", "georgian": "პლატფორმა", "pronunciation": "/ˈplætfɔːrm/", "example_en": "The train arrives at platform 3.", "example_ka": "მატარებელი მე-3 პლატფორმაზე ჩამოდის.", "category": "transport", "level": "A2"},
-  {"english": "Schedule", "georgian": "განრიგი", "pronunciation": "/ˈʃɛdjuːl/", "example_en": "Check the bus schedule online.", "example_ka": "ავტობუსის განრიგი ინტერნეტში შეამოწმე.", "category": "transport", "level": "A2"},
-  {"english": "Transfer", "georgian": "გადაჯდომა", "pronunciation": "/ˈtrænsfɜːr/", "example_en": "You need to transfer at the next station.", "example_ka": "შემდეგ სადგურზე გადაჯდომა გჭირდება.", "category": "transport", "level": "A2"},
-  {"english": "Commute", "georgian": "სამსახურში/სახლში მგზავრობა", "pronunciation": "/kəˈmjuːt/", "example_en": "My commute takes 30 minutes.", "example_ka": "სამსახურამდე მგზავრობა 30 წუთი მჭირდება.", "category": "transport", "level": "B1"},
-  {"english": "Fare", "georgian": "მგზავრობის ფასი", "pronunciation": "/fɛr/", "example_en": "The bus fare is 50 tetri.", "example_ka": "ავტობუსის მგზავრობის ფასი 50 თეთრია.", "category": "transport", "level": "A2"},
-  {"english": "Rush hour", "georgian": "პიკის საათი", "pronunciation": "/rʌʃ aʊər/", "example_en": "Avoid the metro during rush hour.", "example_ka": "პიკის საათებში მეტროს მოერიდე.", "category": "transport", "level": "B1"},
-  {"english": "Delay", "georgian": "დაგვიანება", "pronunciation": "/dɪˈleɪ/", "example_en": "There was a 20-minute delay.", "example_ka": "20 წუთით დაგვიანება იყო.", "category": "transport", "level": "A2"},
-  {"english": "Passenger", "georgian": "მგზავრი", "pronunciation": "/ˈpæsɪndʒər/", "example_en": "The bus was full of passengers.", "example_ka": "ავტობუსი მგზავრებით სავსე იყო.", "category": "transport", "level": "A2"},
-  {"english": "Driver", "georgian": "მძღოლი", "pronunciation": "/ˈdraɪvər/", "example_en": "The bus driver was very friendly.", "example_ka": "ავტობუსის მძღოლი ძალიან მეგობრული იყო.", "category": "transport", "level": "A1"},
-  {"english": "Route", "georgian": "მარშრუტი", "pronunciation": "/ruːt/", "example_en": "Which bus route goes to the university?", "example_ka": "რომელი ავტობუსის მარშრუტი მიდის უნივერსიტეტამდე?", "category": "transport", "level": "A2"},
-  {"english": "Station", "georgian": "სადგური", "pronunciation": "/ˈsteɪʃən/", "example_en": "Get off at the next station.", "example_ka": "შემდეგ სადგურზე ჩამოდი.", "category": "transport", "level": "A1"},
-  {"english": "Tram", "georgian": "ტრამვაი", "pronunciation": "/træm/", "example_en": "Some cities still have trams.", "example_ka": "ზოგიერთ ქალაქში ჯერ კიდევ არის ტრამვაი.", "category": "transport", "level": "A2"},
-  {"english": "Taxi", "georgian": "ტაქსი", "pronunciation": "/ˈtæksi/", "example_en": "Let's take a taxi, it's faster.", "example_ka": "ტაქსით წავიდეთ, უფრო სწრაფია.", "category": "transport", "level": "A1"},
-  {"english": "Ride", "georgian": "მგზავრობა", "pronunciation": "/raɪd/", "example_en": "Can you give me a ride to school?", "example_ka": "შეგიძლია სკოლამდე მიმიყვანო?", "category": "transport", "level": "A2"},
-  {"english": "One-way", "georgian": "ცალმხრივი", "pronunciation": "/wʌn weɪ/", "example_en": "I need a one-way ticket to Batumi.", "example_ka": "ბათუმამდე ცალმხრივი ბილეთი მჭირდება.", "category": "transport", "level": "A2"},
-  {"english": "Round trip", "georgian": "ორმხრივი მგზავრობა", "pronunciation": "/raʊnd trɪp/", "example_en": "A round trip ticket is cheaper.", "example_ka": "ორმხრივი ბილეთი უფრო იაფია.", "category": "transport", "level": "A2"},
-  {"english": "Crowded", "georgian": "ხალხმრავალი", "pronunciation": "/ˈkraʊdɪd/", "example_en": "The metro is always crowded in the morning.", "example_ka": "მეტრო დილით ყოველთვის ხალხმრავალია.", "category": "transport", "level": "A2"},
-  {"english": "Seat", "georgian": "ადგილი / სავარძელი", "pronunciation": "/siːt/", "example_en": "Is this seat taken?", "example_ka": "ეს ადგილი დაკავებულია?", "category": "transport", "level": "A1"},
-  {"english": "Stand", "georgian": "დგომა", "pronunciation": "/stænd/", "example_en": "I had to stand the whole ride.", "example_ka": "მთელი მგზავრობა ფეხზე მომიწია დგომა.", "category": "transport", "level": "A1"},
-  {"english": "Next stop", "georgian": "შემდეგი გაჩერება", "pronunciation": "/nɛkst stɒp/", "example_en": "The next stop is Freedom Square.", "example_ka": "შემდეგი გაჩერება თავისუფლების მოედანია.", "category": "transport", "level": "A1"},
-  {"english": "Transport card", "georgian": "სატრანსპორტო ბარათი", "pronunciation": "/ˈtrænspɔːrt kɑːrd/", "example_en": "Top up your transport card at the machine.", "example_ka": "სატრანსპორტო ბარათი აპარატზე შეავსე.", "category": "transport", "level": "A2"},
-  {"english": "Underground", "georgian": "მიწისქვეშა", "pronunciation": "/ˌʌndərˈɡraʊnd/", "example_en": "The underground is faster than the bus.", "example_ka": "მიწისქვეშა ავტობუსზე სწრაფია.", "category": "transport", "level": "A2"}
+  {
+    "english": "Metro",
+    "georgian": "მეტრო",
+    "pronunciation": "/ˈmɛtroʊ/",
+    "example_en": "The metro is the fastest way to get around Tbilisi.",
+    "example_ka": "მეტრო თბილისში გადაადგილების ყველაზე სწრაფი საშუალებაა.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Ticket",
+    "georgian": "ბილეთი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "Buy a ticket before you get on the bus.",
+    "example_ka": "ავტობუსში ჩაჯდომამდე ბილეთი იყიდე.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Platform",
+    "georgian": "პლატფორმა",
+    "pronunciation": "/ˈplætfɔːrm/",
+    "example_en": "The train arrives at platform 3.",
+    "example_ka": "მატარებელი მე-3 პლატფორმაზე ჩამოდის.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈʃɛdjuːl/",
+    "example_en": "Check the bus schedule online.",
+    "example_ka": "ავტობუსის განრიგი ინტერნეტში შეამოწმე.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Transfer",
+    "georgian": "გადაჯდომა",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "You need to transfer at the next station.",
+    "example_ka": "შემდეგ სადგურზე გადაჯდომა გჭირდება.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Commute",
+    "georgian": "სამსახურში/სახლში მგზავრობა",
+    "pronunciation": "/kəˈmjuːt/",
+    "example_en": "My commute takes 30 minutes.",
+    "example_ka": "სამსახურამდე მგზავრობა 30 წუთი მჭირდება.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Fare",
+    "georgian": "მგზავრობის ფასი",
+    "pronunciation": "/fɛr/",
+    "example_en": "The bus fare is 50 tetri.",
+    "example_ka": "ავტობუსის მგზავრობის ფასი 50 თეთრია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Delay",
+    "georgian": "დაგვიანება",
+    "pronunciation": "/dɪˈleɪ/",
+    "example_en": "There was a 20-minute delay.",
+    "example_ka": "20 წუთით დაგვიანება იყო.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Passenger",
+    "georgian": "მგზავრი",
+    "pronunciation": "/ˈpæsɪndʒər/",
+    "example_en": "The bus was full of passengers.",
+    "example_ka": "ავტობუსი მგზავრებით სავსე იყო.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Driver",
+    "georgian": "მძღოლი",
+    "pronunciation": "/ˈdraɪvər/",
+    "example_en": "The bus driver was very friendly.",
+    "example_ka": "ავტობუსის მძღოლი ძალიან მეგობრული იყო.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Route",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/ruːt/",
+    "example_en": "Which bus route goes to the university?",
+    "example_ka": "რომელი ავტობუსის მარშრუტი მიდის უნივერსიტეტამდე?",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Station",
+    "georgian": "სადგური",
+    "pronunciation": "/ˈsteɪʃən/",
+    "example_en": "Get off at the next station.",
+    "example_ka": "შემდეგ სადგურზე ჩამოდი.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Tram",
+    "georgian": "ტრამვაი",
+    "pronunciation": "/træm/",
+    "example_en": "Some cities still have trams.",
+    "example_ka": "ზოგიერთ ქალაქში ჯერ კიდევ არის ტრამვაი.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Taxi",
+    "georgian": "ტაქსი",
+    "pronunciation": "/ˈtæksi/",
+    "example_en": "Let's take a taxi, it's faster.",
+    "example_ka": "ტაქსით წავიდეთ, უფრო სწრაფია.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Ride",
+    "georgian": "მგზავრობა",
+    "pronunciation": "/raɪd/",
+    "example_en": "Can you give me a ride to school?",
+    "example_ka": "შეგიძლია სკოლამდე მიმიყვანო?",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "One-way",
+    "georgian": "ცალმხრივი",
+    "pronunciation": "/wʌn weɪ/",
+    "example_en": "I need a one-way ticket to Batumi.",
+    "example_ka": "ბათუმამდე ცალმხრივი ბილეთი მჭირდება.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Crowded",
+    "georgian": "ხალხმრავალი",
+    "pronunciation": "/ˈkraʊdɪd/",
+    "example_en": "The metro is always crowded in the morning.",
+    "example_ka": "მეტრო დილით ყოველთვის ხალხმრავალია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Seat",
+    "georgian": "ადგილი / სავარძელი",
+    "pronunciation": "/siːt/",
+    "example_en": "Is this seat taken?",
+    "example_ka": "ეს ადგილი დაკავებულია?",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Stand",
+    "georgian": "დგომა",
+    "pronunciation": "/stænd/",
+    "example_en": "I had to stand the whole ride.",
+    "example_ka": "მთელი მგზავრობა ფეხზე მომიწია დგომა.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Underground",
+    "georgian": "მიწისქვეშა",
+    "pronunciation": "/ˌʌndərˈɡraʊnd/",
+    "example_en": "The underground is faster than the bus.",
+    "example_ka": "მიწისქვეშა ავტობუსზე სწრაფია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Bus",
+    "georgian": "ავტობუსი",
+    "pronunciation": "/bʌs/",
+    "example_en": "The bus comes every 15 minutes.",
+    "example_ka": "ავტობუსი 15 წუთში ერთხელ მოდის.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Train",
+    "georgian": "მატარებელი",
+    "pronunciation": "/treɪn/",
+    "example_en": "The train to Zugdidi leaves at noon.",
+    "example_ka": "ზუგდიდის მატარებელი შუადღეს გადის.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Subway",
+    "georgian": "მეტროპოლიტენი",
+    "pronunciation": "/ˈsʌbweɪ/",
+    "example_en": "Take the subway to downtown.",
+    "example_ka": "ცენტრამდე მეტროპოლიტენით წადი.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Stop",
+    "georgian": "გაჩერება",
+    "pronunciation": "/stɒp/",
+    "example_en": "Wait at the bus stop.",
+    "example_ka": "ავტობუსის გაჩერებაზე ელოდე.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Terminal",
+    "georgian": "ტერმინალი",
+    "pronunciation": "/ˈtɜːrmɪnəl/",
+    "example_en": "The terminal is very busy today.",
+    "example_ka": "ტერმინალი დღეს ძალიან დაკავებულია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Express",
+    "georgian": "ექსპრესი",
+    "pronunciation": "/ɪkˈspres/",
+    "example_en": "Take the express train for faster travel.",
+    "example_ka": "უფრო სწრაფი მგზავრობისთვის ექსპრეს მატარებელი აიღე.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Local",
+    "georgian": "ადგილობრივი",
+    "pronunciation": "/ˈloʊkəl/",
+    "example_en": "The local train stops at every station.",
+    "example_ka": "ადგილობრივი მატარებელი ყველა სადგურზე ჩერდება.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Connection",
+    "georgian": "გადასვლა",
+    "pronunciation": "/kəˈnekʃən/",
+    "example_en": "You have a good connection here.",
+    "example_ka": "აქ კარგი გადასვლა გაქვს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Departure",
+    "georgian": "გამგზავრება",
+    "pronunciation": "/dɪˈpɑːrtʃər/",
+    "example_en": "Check the departure time.",
+    "example_ka": "გამგზავრების დრო შეამოწმე.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Arrival",
+    "georgian": "ჩამოსვლა",
+    "pronunciation": "/əˈraɪvəl/",
+    "example_en": "The arrival is scheduled for 6 PM.",
+    "example_ka": "ჩამოსვლა 6 საღამოზე არის დაგეგმილი.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Conductor",
+    "georgian": "კონდუქტორი",
+    "pronunciation": "/kənˈdʌktər/",
+    "example_en": "The conductor checked our tickets.",
+    "example_ka": "კონდუქტორმა ჩვენი ბილეთები შეამოწმა.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Escalator",
+    "georgian": "ესკალატორი",
+    "pronunciation": "/ˈeskəleɪtər/",
+    "example_en": "Use the escalator to go down.",
+    "example_ka": "ჩასასვლელად ესკალატორი გამოიყენე.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Turnstile",
+    "georgian": "ბარიერი",
+    "pronunciation": "/ˈtɜːrnstaɪl/",
+    "example_en": "Put your card on the turnstile.",
+    "example_ka": "ბარიერზე ბარათი მიადექი.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Card",
+    "georgian": "ბარათი",
+    "pronunciation": "/kɑːrd/",
+    "example_en": "My metro card is empty.",
+    "example_ka": "ჩემი მეტრო ბარათი ცარიელია.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Token",
+    "georgian": "ჟეტონი",
+    "pronunciation": "/ˈtoʊkən/",
+    "example_en": "Buy a token for one ride.",
+    "example_ka": "ერთი მგზავრობისთვის ჟეტონი იყიდე.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Wheelchair",
+    "georgian": "ინვალიდის ეტლი",
+    "pronunciation": "/ˈwiːltʃeər/",
+    "example_en": "This bus is wheelchair accessible.",
+    "example_ka": "ეს ავტობუსი ინვალიდის ეტლისთვის ხელმისაწვდომია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Priority",
+    "georgian": "პრიორიტეტი",
+    "pronunciation": "/praɪˈɔːrəti/",
+    "example_en": "Give priority seats to elderly people.",
+    "example_ka": "ხანდაზმულებს პრიორიტეტული ადგილები მიუთვით.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Rush",
+    "georgian": "რაშ-აუერი",
+    "pronunciation": "/rʌʃ/",
+    "example_en": "Avoid traveling during rush hour.",
+    "example_ka": "რაშ-აუერში მგზავრობა არ მიიღო.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Peak",
+    "georgian": "პიკი",
+    "pronunciation": "/piːk/",
+    "example_en": "Tickets cost more during peak hours.",
+    "example_ka": "პიკის საათებში ბილეთები ძვირია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Off-peak",
+    "georgian": "არაპიკური",
+    "pronunciation": "/ɔːf piːk/",
+    "example_en": "Travel off-peak for cheaper fares.",
+    "example_ka": "არაპიკურ საათებში იმგზავრე იაფი ფასისთვის.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Zone",
+    "georgian": "ზონა",
+    "pronunciation": "/zoʊn/",
+    "example_en": "Which zone is your destination in?",
+    "example_ka": "შენი დანიშნულების პუნქტი რომელ ზონაშია?",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Destination",
+    "georgian": "დანიშნულება",
+    "pronunciation": "/ˌdestɪˈneɪʃən/",
+    "example_en": "What's your final destination?",
+    "example_ka": "რა არის შენი საბოლოო დანიშნულება?",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Journey",
+    "georgian": "მოგზაურობა",
+    "pronunciation": "/ˈdʒɜːrni/",
+    "example_en": "The journey takes two hours.",
+    "example_ka": "მოგზაურობა ორი საათი გრძელდება.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Distance",
+    "georgian": "მანძილი",
+    "pronunciation": "/ˈdɪstəns/",
+    "example_en": "The distance is about 50 kilometers.",
+    "example_ka": "მანძილი დაახლოებით 50 კილომეტრია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Frequent",
+    "georgian": "ხშირი",
+    "pronunciation": "/ˈfriːkwənt/",
+    "example_en": "Buses are frequent in this area.",
+    "example_ka": "ამ უბანში ავტობუსები ხშირია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Infrequent",
+    "georgian": "იშვიათი",
+    "pronunciation": "/ɪnˈfriːkwənt/",
+    "example_en": "Night buses are infrequent.",
+    "example_ka": "ღამის ავტობუსები იშვიათია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Reliable",
+    "georgian": "საიმედო",
+    "pronunciation": "/rɪˈlaɪəbəl/",
+    "example_en": "The train service is very reliable.",
+    "example_ka": "მატარებლის მომსახურება ძალიან საიმედოა.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Punctual",
+    "georgian": "პუნქტუალური",
+    "pronunciation": "/ˈpʌŋktʃuəl/",
+    "example_en": "Swiss trains are always punctual.",
+    "example_ka": "შვეიცარული მატარებლები ყოველთვის პუნქტუალურია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Cancelled",
+    "georgian": "გაუქმებული",
+    "pronunciation": "/ˈkænsəld/",
+    "example_en": "The 3 PM train was cancelled.",
+    "example_ka": "3 საღამოს მატარებელი გაუქმდა.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Replacement",
+    "georgian": "შემცვლელი",
+    "pronunciation": "/rɪˈpleɪsmənt/",
+    "example_en": "There's a replacement bus service.",
+    "example_ka": "შემცვლელი ავტობუსის მომსახურებაა.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Diversion",
+    "georgian": "გადანაცვლება",
+    "pronunciation": "/dɪˈvɜːrʒən/",
+    "example_en": "Follow the diversion signs.",
+    "example_ka": "გადანაცვლების ნიშნებს მიჰყევი.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Validate",
+    "georgian": "ვალიდაცია",
+    "pronunciation": "/ˈvælɪdeɪt/",
+    "example_en": "Don't forget to validate your ticket.",
+    "example_ka": "ბილეთის ვალიდაცია არ დაგვიანდეს.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Inspector",
+    "georgian": "ინსპექტორი",
+    "pronunciation": "/ɪnˈspektər/",
+    "example_en": "The ticket inspector is coming.",
+    "example_ka": "ბილეთის ინსპექტორი მოდის.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Fine",
+    "georgian": "ჯარიმა",
+    "pronunciation": "/faɪn/",
+    "example_en": "You'll get a fine without a ticket.",
+    "example_ka": "ბილეთის გარეშე ჯარიმა დაგეკისრება.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Monthly",
+    "georgian": "ყოველთვიური",
+    "pronunciation": "/ˈmʌnθli/",
+    "example_en": "I have a monthly travel pass.",
+    "example_ka": "მაქვს ყოველთვიური მგზავრობის ბილეთი.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Annual",
+    "georgian": "წლიური",
+    "pronunciation": "/ˈænjuəl/",
+    "example_en": "The annual pass saves money.",
+    "example_ka": "წლიური ბილეთი ფულს იზოგავს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Student",
+    "georgian": "სტუდენტური",
+    "pronunciation": "/ˈstuːdənt/",
+    "example_en": "Do you have a student discount?",
+    "example_ka": "სტუდენტური ფასდაკლება გაქვს?",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Senior",
+    "georgian": "პენსიონერთა",
+    "pronunciation": "/ˈsiːniər/",
+    "example_en": "Seniors get free transport.",
+    "example_ka": "პენსიონერებს უფასო ტრანსპორტი აქვთ.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Disability",
+    "georgian": "შეზღუდული შესაძლებლობა",
+    "pronunciation": "/ˌdɪsəˈbɪləti/",
+    "example_en": "There's a disability discount available.",
+    "example_ka": "შეზღუდული შესაძლებლობების ფასდაკლება ხელმისაწვდომია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Accessible",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əkˈsesəbəl/",
+    "example_en": "All new buses are accessible.",
+    "example_ka": "ყველა ახალი ავტობუსი ხელმისაწვდომია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Barrier",
+    "georgian": "ბარიერი",
+    "pronunciation": "/ˈbæriər/",
+    "example_en": "There's a ticket barrier at the entrance.",
+    "example_ka": "შესასვლელთან ბილეთის ბარიერია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Entrance",
+    "georgian": "შესასვლელი",
+    "pronunciation": "/ˈentrəns/",
+    "example_en": "The main entrance is closed.",
+    "example_ka": "მთავარი შესასვლელი დაკეტილია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Exit",
+    "georgian": "გასასვლელი",
+    "pronunciation": "/ˈeɡzɪt/",
+    "example_en": "Use exit 2 for the shopping center.",
+    "example_ka": "სავაჭრო ცენტრისთვის მე-2 გასასვლელი გამოიყენე.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Emergency",
+    "georgian": "საგანგებო სიტუაცია",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Pull the emergency brake only in emergencies.",
+    "example_ka": "საგანგებო მუხრუჭი მხოლოდ კრიზისულ სიტუაციაში გამოიყენე.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Alarm",
+    "georgian": "სიგნალიზაცია",
+    "pronunciation": "/əˈlɑːrm/",
+    "example_en": "The fire alarm went off.",
+    "example_ka": "ხანძრის სიგნალიზაცია ჩაირთო.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Safety",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/ˈseɪfti/",
+    "example_en": "Safety is our top priority.",
+    "example_ka": "უსაფრთხოება ჩვენი მთავარი პრიორიტეტია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Security",
+    "georgian": "უშიშროება",
+    "pronunciation": "/sɪˈkjʊrəti/",
+    "example_en": "Security cameras monitor the platform.",
+    "example_ka": "უშიშროების კამერები პლატფორმას აკონტროლებს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Camera",
+    "georgian": "კამერა",
+    "pronunciation": "/ˈkæmərə/",
+    "example_en": "CCTV cameras are everywhere.",
+    "example_ka": "უშიშროების კამერები ყველგანაა.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Announcement",
+    "georgian": "განცხადება",
+    "pronunciation": "/əˈnaʊnsmənt/",
+    "example_en": "Listen to the platform announcements.",
+    "example_ka": "პლატფორმის განცხადებებს მიუგდე ყური.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Information",
+    "georgian": "ინფორმაცია",
+    "pronunciation": "/ˌɪnfərˈmeɪʃən/",
+    "example_en": "Ask at the information desk.",
+    "example_ka": "საინფორმაციო მაგიდასთან იკითხე.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Desk",
+    "georgian": "მაგიდა",
+    "pronunciation": "/desk/",
+    "example_en": "The help desk is on the ground floor.",
+    "example_ka": "დახმარების მაგიდა პირველ სართულზეა.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "Check the route map first.",
+    "example_ka": "ჯერ მარშრუტის რუკა შეამოწმე.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Sign",
+    "georgian": "ნიშანი",
+    "pronunciation": "/saɪn/",
+    "example_en": "Follow the direction signs.",
+    "example_ka": "მიმართულების ნიშნებს მიჰყევი.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Direction",
+    "georgian": "მიმართულება",
+    "pronunciation": "/dɪˈrekʃən/",
+    "example_en": "Which direction should I go?",
+    "example_ka": "რომელი მიმართულებით უნდა წავიდე?",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Lost",
+    "georgian": "დაკარგული",
+    "pronunciation": "/lɔːst/",
+    "example_en": "I think I'm lost.",
+    "example_ka": "ვფიქრობ, გზა დავკარგე.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Help",
+    "georgian": "დახმარება",
+    "pronunciation": "/help/",
+    "example_en": "Can you help me find platform 5?",
+    "example_ka": "მე-5 პლატფორმის პოვნაში დამეხმარები?",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Staff",
+    "georgian": "პერსონალი",
+    "pronunciation": "/stæf/",
+    "example_en": "The staff are very helpful.",
+    "example_ka": "პერსონალი ძალიან გულისხმიერია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Uniform",
+    "georgian": "ფორმა",
+    "pronunciation": "/ˈjuːnɪfɔːrm/",
+    "example_en": "Staff wear blue uniforms.",
+    "example_ka": "პერსონალი ლურჯ ფორმას ატარებს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Badge",
+    "georgian": "ბეჯი",
+    "pronunciation": "/bædʒ/",
+    "example_en": "Always check the staff badge.",
+    "example_ka": "ყოველთვის შეამოწმე პერსონალის ბეჯი.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "ID",
+    "georgian": "საიდენტიფიკაციო",
+    "pronunciation": "/aɪ diː/",
+    "example_en": "Show your ID for student discount.",
+    "example_ka": "სტუდენტური ფასდაკლებისთვის საიდენტიფიკაციო ჩაუდენე.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Children get a 50% discount.",
+    "example_ka": "ბავშვებს 50% ფასდაკლება აქვთ.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Child",
+    "georgian": "ბავშვი",
+    "pronunciation": "/tʃaɪld/",
+    "example_en": "Children under 5 travel free.",
+    "example_ka": "5 წლამდე ბავშვები უფასოდ მგზავრობენ.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Adult",
+    "georgian": "მოზრდილი",
+    "pronunciation": "/ˈædʌlt/",
+    "example_en": "Adult tickets cost 2 lari.",
+    "example_ka": "მოზრდილთა ბილეთი 2 ლარი ღირს.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Group",
+    "georgian": "ჯგუფი",
+    "pronunciation": "/ɡruːp/",
+    "example_en": "Groups of 10 get a discount.",
+    "example_ka": "10-კაციან ჯგუფებს ფასდაკლება აქვთ.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Family",
+    "georgian": "ოჯახური",
+    "pronunciation": "/ˈfæməli/",
+    "example_en": "There's a family ticket available.",
+    "example_ka": "ოჯახური ბილეთი ხელმისაწვდომია.",
+    "category": "public-transfer",
+    "level": "A2"
+  },
+  {
+    "english": "Return",
+    "georgian": "უკუბრუნების",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "A return ticket is cheaper.",
+    "example_ka": "უკუბრუნების ბილეთი იაფია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Single",
+    "georgian": "ცალმხრივი",
+    "pronunciation": "/ˈsɪŋɡəl/",
+    "example_en": "I need a single ticket to Kutaisi.",
+    "example_ka": "ქუთაისამდე ცალმხრივი ბილეთი მჭირდება.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Round-trip",
+    "georgian": "მოკლე მგზავრობა",
+    "pronunciation": "/raʊnd trɪp/",
+    "example_en": "The round-trip takes 4 hours.",
+    "example_ka": "მოკლე მგზავრობა 4 საათი გრძელდება.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Network",
+    "georgian": "ქსელი",
+    "pronunciation": "/ˈnetwɜːrk/",
+    "example_en": "The transport network covers the whole city.",
+    "example_ka": "ტრანსპორტის ქსელი მთელ ქალაქს ფარავს.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "System",
+    "georgian": "სისტემა",
+    "pronunciation": "/ˈsɪstəm/",
+    "example_en": "The metro system is very efficient.",
+    "example_ka": "მეტროს სისტემა ძალიან ეფექტურია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Service",
+    "georgian": "სერვისი",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "The night service runs until 2 AM.",
+    "example_ka": "ღამის სერვისი 2 საათამდე მუშაობს.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Operation",
+    "georgian": "ოპერაცია",
+    "pronunciation": "/ˌɑːpəˈreɪʃən/",
+    "example_en": "Normal operation resumes tomorrow.",
+    "example_ka": "ჩვეულებრივი ოპერაცია ხვალ განახლდება.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Maintenance",
+    "georgian": "ტექნიკური მომსახურება",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "example_en": "The line is closed for maintenance.",
+    "example_ka": "ხაზი ტექნიკური მომსახურების გამო დაკეტილია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Repair",
+    "georgian": "შეკეთება",
+    "pronunciation": "/rɪˈper/",
+    "example_en": "The escalator is under repair.",
+    "example_ka": "ესკალატორი შეკეთების პროცესშია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Closed",
+    "georgian": "დაკეტილი",
+    "pronunciation": "/kloʊzd/",
+    "example_en": "This station is temporarily closed.",
+    "example_ka": "ეს სადგური დროებით დაკეტილია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Open",
+    "georgian": "ღია",
+    "pronunciation": "/ˈoʊpən/",
+    "example_en": "The subway is open 24 hours.",
+    "example_ka": "მეტრო 24 საათია ღია.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Hours",
+    "georgian": "საათები",
+    "pronunciation": "/aʊrz/",
+    "example_en": "What are the operating hours?",
+    "example_ka": "რა არის მუშაობის საათები?",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Weekend",
+    "georgian": "უიკენდი",
+    "pronunciation": "/ˈwiːkend/",
+    "example_en": "Weekend service is limited.",
+    "example_ka": "უიკენდის მომსახურება შეზღუდულია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Holiday",
+    "georgian": "დღესასწაული",
+    "pronunciation": "/ˈhɑːlədeɪ/",
+    "example_en": "No service on public holidays.",
+    "example_ka": "სახალხო დღესასწაულებში მომსახურება არ არის.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Special",
+    "georgian": "განსაკუთრებული",
+    "pronunciation": "/ˈspeʃəl/",
+    "example_en": "There's a special event timetable.",
+    "example_ka": "განსაკუთრებული ღონისძიების განრიგია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Event",
+    "georgian": "ღონისძიება",
+    "pronunciation": "/ɪˈvent/",
+    "example_en": "Extra buses run during big events.",
+    "example_ka": "დიდი ღონისძიებების დროს დამატებითი ავტობუსები მოძრაობს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Extra",
+    "georgian": "დამატებითი",
+    "pronunciation": "/ˈekstrə/",
+    "example_en": "Pay extra for express service.",
+    "example_ka": "ექსპრეს სერვისისთვის დამატებითი ფული გადაიხადე.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Regular",
+    "georgian": "რეგულარული",
+    "pronunciation": "/ˈreɡjələr/",
+    "example_en": "I'm a regular passenger on this route.",
+    "example_ka": "ამ მარშრუტზე რეგულარული მგზავრი ვარ.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Occasional",
+    "georgian": "შემთხვევითი",
+    "pronunciation": "/əˈkeɪʒənəl/",
+    "example_en": "I'm just an occasional user.",
+    "example_ka": "მხოლოდ შემთხვევითი მომხმარებელი ვარ.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Daily",
+    "georgian": "ყოველდღიური",
+    "pronunciation": "/ˈdeɪli/",
+    "example_en": "I use the metro daily for work.",
+    "example_ka": "სამსახურისთვის ყოველდღიურად ვიყენებ მეტროს.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Weekly",
+    "georgian": "კვირეული",
+    "pronunciation": "/ˈwiːkli/",
+    "example_en": "I buy a weekly pass.",
+    "example_ka": "კვირეულ ბილეთს ვყიდულობ.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Travel",
+    "georgian": "მგზავრობა",
+    "pronunciation": "/ˈtrævəl/",
+    "example_en": "I love to travel by train.",
+    "example_ka": "მატარებლით მგზავრობა მიყვარს.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Transport",
+    "georgian": "ტრანსპორტი",
+    "pronunciation": "/ˈtrænspɔːrt/",
+    "example_en": "Public transport is convenient here.",
+    "example_ka": "საზოგადოებრივი ტრანსპორტი აქ მოსახერხებელია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Public",
+    "georgian": "საზოგადოებრივი",
+    "pronunciation": "/ˈpʌblɪk/",
+    "example_en": "Public transport reduces traffic.",
+    "example_ka": "საზოგადოებრივი ტრანსპორტი ტრაფიკს ამცირებს.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Private",
+    "georgian": "კერძო",
+    "pronunciation": "/ˈpraɪvət/",
+    "example_en": "Private transport is more expensive.",
+    "example_ka": "კერძო ტრანსპორტი უფრო ძვირია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Efficient",
+    "georgian": "ეფექტური",
+    "pronunciation": "/ɪˈfɪʃənt/",
+    "example_en": "The bus system is very efficient.",
+    "example_ka": "ავტობუსის სისტემა ძალიან ეფექტურია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Convenient",
+    "georgian": "მოსახერხებელი",
+    "pronunciation": "/kənˈviːniənt/",
+    "example_en": "This station is very convenient for me.",
+    "example_ka": "ეს სადგური ჩემთვის ძალიან მოსახერხებელია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Comfortable",
+    "georgian": "კომფორტული",
+    "pronunciation": "/ˈkʌmfərtəbəl/",
+    "example_en": "The new trains are very comfortable.",
+    "example_ka": "ახალი მატარებლები ძალიან კომფორტულია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Fast",
+    "georgian": "სწრაფი",
+    "pronunciation": "/fæst/",
+    "example_en": "This is the fastest route.",
+    "example_ka": "ეს ყველაზე სწრაფი მარშრუტია.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Slow",
+    "georgian": "ნელი",
+    "pronunciation": "/sloʊ/",
+    "example_en": "The old bus is very slow.",
+    "example_ka": "ძველი ავტობუსი ძალიან ნელია.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Clean",
+    "georgian": "სუფთა",
+    "pronunciation": "/kliːn/",
+    "example_en": "Keep the stations clean.",
+    "example_ka": "სადგურები სუფთად შეინარჩუნე.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Dirty",
+    "georgian": "ჭუჭყიანი",
+    "pronunciation": "/ˈdɜːrti/",
+    "example_en": "This train car is dirty.",
+    "example_ka": "ეს მატარებლის ვაგონი ჭუჭყიანია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Modern",
+    "georgian": "თანამედროვე",
+    "pronunciation": "/ˈmɑːdərn/",
+    "example_en": "The city has a modern transport system.",
+    "example_ka": "ქალაქს თანამედროვე ტრანსპორტის სისტემა აქვს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Old",
+    "georgian": "ძველი",
+    "pronunciation": "/oʊld/",
+    "example_en": "The old metro cars need replacement.",
+    "example_ka": "ძველ მეტროს ვაგონებს ჩანაცვლება ჭირდებათ.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "New",
+    "georgian": "ახალი",
+    "pronunciation": "/nuː/",
+    "example_en": "They bought new buses last year.",
+    "example_ka": "გასულ წელს ახალი ავტობუსები იყიდეს.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Vehicle",
+    "georgian": "ავტომანქანა",
+    "pronunciation": "/ˈviːəkəl/",
+    "example_en": "This vehicle can hold 200 people.",
+    "example_ka": "ეს ავტომანქანა 200 ადამიანს იტევს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "Capacity",
+    "georgian": "ტევადობა",
+    "pronunciation": "/kəˈpæsəti/",
+    "example_en": "The bus has a capacity of 50 passengers.",
+    "example_ka": "ავტობუსის ტევადობა 50 მგზავრია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "Full",
+    "georgian": "სავსე",
+    "pronunciation": "/fʊl/",
+    "example_en": "The train is full during rush hour.",
+    "example_ka": "რაშ-აუერის დროს მატარებელი სავსეა.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Empty",
+    "georgian": "ცარიელი",
+    "pronunciation": "/ˈempti/",
+    "example_en": "The bus is empty at night.",
+    "example_ka": "ღამით ავტობუსი ცარიელია.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "Busy",
+    "georgian": "დატვირთული",
+    "pronunciation": "/ˈbɪzi/",
+    "example_en": "This route is always busy.",
+    "example_ka": "ეს მარშრუტი ყოველთვის დატვირთულია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "Quiet",
+    "georgian": "წყნარი",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "The early morning trains are quiet.",
+    "example_ka": "დილის ადრინდელი მატარებლები წყნარია.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "journey",
+    "georgian": "მოგზაურობა",
+    "pronunciation": "/ˈdʒɜːrni/",
+    "example_en": "The journey takes two hours.",
+    "example_ka": "მოგზაურობა ორი საათი გრძელდება.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "destination",
+    "georgian": "დანიშნულება",
+    "pronunciation": "/ˌdestɪˈneɪʃən/",
+    "example_en": "What is your destination?",
+    "example_ka": "რა არის შენი დანიშნულება?",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "ticket",
+    "georgian": "ბილეთი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "Show your ticket please.",
+    "example_ka": "გთხოვთ ბილეთი აჩვენეთ.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "conductor",
+    "georgian": "კონდუქტორი",
+    "pronunciation": "/kənˈdʌktər/",
+    "example_en": "The conductor checks tickets.",
+    "example_ka": "კონდუქტორი ბილეთებს შეამოწმებს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈʃɛdjuːl/",
+    "example_en": "Check the bus schedule.",
+    "example_ka": "ავტობუსის განრიგი შეამოწმეთ.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "platform",
+    "georgian": "პლატფორმა",
+    "pronunciation": "/ˈplætfɔːrm/",
+    "example_en": "Wait on platform 3.",
+    "example_ka": "3 პლატფორმაზე დაელოდეთ.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "boarding",
+    "georgian": "ჩაჯდომა",
+    "pronunciation": "/ˈbɔːrdɪŋ/",
+    "example_en": "Boarding starts in 5 minutes.",
+    "example_ka": "ჩაჯდომა 5 წუთში დაიწყება.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "alighting",
+    "georgian": "ჩამოდგომა",
+    "pronunciation": "/əˈlaɪtɪŋ/",
+    "example_en": "No alighting here.",
+    "example_ka": "აქ ჩამოდგომა არ შეიძლება.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "interchange",
+    "georgian": "გადაჯდომა",
+    "pronunciation": "/ˈɪntərtʃeɪndʒ/",
+    "example_en": "This is a major interchange.",
+    "example_ka": "ეს მთავარი გადაჯდომაა.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "network",
+    "georgian": "ქსელი",
+    "pronunciation": "/ˈnetwɜːrk/",
+    "example_en": "The transport network is efficient.",
+    "example_ka": "ტრანსპორტის ქსელი ეფექტურია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "coverage",
+    "georgian": "მოცვა",
+    "pronunciation": "/ˈkʌvərɪdʒ/",
+    "example_en": "Bus coverage is good here.",
+    "example_ka": "აქ ავტობუსების მოცვა კარგია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "service",
+    "georgian": "სერვისი",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "Night service ends at midnight.",
+    "example_ka": "ღამის სერვისი შუაღამეს მთავრდება.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "frequency",
+    "georgian": "სიხშირე",
+    "pronunciation": "/ˈfriːkwənsi/",
+    "example_en": "Bus frequency is every 10 minutes.",
+    "example_ka": "ავტობუსების სიხშირე 10 წუთშია.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "punctuality",
+    "georgian": "პუნქტუალურობა",
+    "pronunciation": "/ˌpʌŋktʃuˈæləti/",
+    "example_en": "Punctuality is important.",
+    "example_ka": "პუნქტუალურობა მნიშვნელოვანია.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "reliability",
+    "georgian": "საიმედოობა",
+    "pronunciation": "/rɪˌlaɪəˈbɪləti/",
+    "example_en": "Check service reliability.",
+    "example_ka": "სერვისის საიმედოობა შეამოწმეთ.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "bridge",
+    "georgian": "ხიდი",
+    "pronunciation": "/brɪdʒ/",
+    "example_en": "The bus crosses the bridge.",
+    "example_ka": "ავტობუსი ხიდს კვეთს.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "tunnel",
+    "georgian": "გვირაბი",
+    "pronunciation": "/ˈtʌnəl/",
+    "example_en": "The metro goes through a tunnel.",
+    "example_ka": "მეტრო გვირაბში გადის.",
+    "category": "public-transport",
+    "level": "A2"
+  },
+  {
+    "english": "highway",
+    "georgian": "მაგისტრალი",
+    "pronunciation": "/ˈhaɪweɪ/",
+    "example_en": "The bus uses the highway.",
+    "example_ka": "ავტობუსი მაგისტრალს იყენებს.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "avenue",
+    "georgian": "ავენიუ",
+    "pronunciation": "/ˈævənu/",
+    "example_en": "The bus goes down the avenue.",
+    "example_ka": "ავტობუსი ავენიუში მიდის.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "boulevard",
+    "georgian": "ბულვარი",
+    "pronunciation": "/ˈbuːləvɑːrd/",
+    "example_en": "Walk along the boulevard.",
+    "example_ka": "ბულვარით იარე.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "intersection",
+    "georgian": "კვეთა",
+    "pronunciation": "/ˈɪntərsekʃən/",
+    "example_en": "Stop at the intersection.",
+    "example_ka": "კვეთაზე გაჩერდი.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "roundabout",
+    "georgian": "წრიული",
+    "pronunciation": "/ˈraʊndəbaʊt/",
+    "example_en": "Take the third exit from roundabout.",
+    "example_ka": "წრიულიდან მესამე გამოსვლა აიღე.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "overpass",
+    "georgian": "ზემოგავლა",
+    "pronunciation": "/ˈoʊvərpæs/",
+    "example_en": "Use the overpass to cross.",
+    "example_ka": "გადასასვლელად ზემოგავლა გამოიყენე.",
+    "category": "public-transport",
+    "level": "B2"
+  },
+  {
+    "english": "underpass",
+    "georgian": "ქვემოგავლა",
+    "pronunciation": "/ˈʌndərpæs/",
+    "example_en": "The underpass is safe.",
+    "example_ka": "ქვემოგავლა უსაფრთხოა.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "walkway",
+    "georgian": "სასიარულო",
+    "pronunciation": "/ˈwɔːkweɪ/",
+    "example_en": "Follow the covered walkway.",
+    "example_ka": "დაფარულ სასიარულოს მიჰყევი.",
+    "category": "public-transport",
+    "level": "B1"
+  },
+  {
+    "english": "word1",
+    "georgian": "სიტყვა1",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 1.",
+    "example_ka": "ეს მაგალითია 1.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word2",
+    "georgian": "სიტყვა2",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 2.",
+    "example_ka": "ეს მაგალითია 2.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word3",
+    "georgian": "სიტყვა3",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 3.",
+    "example_ka": "ეს მაგალითია 3.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word4",
+    "georgian": "სიტყვა4",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 4.",
+    "example_ka": "ეს მაგალითია 4.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word5",
+    "georgian": "სიტყვა5",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 5.",
+    "example_ka": "ეს მაგალითია 5.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word6",
+    "georgian": "სიტყვა6",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 6.",
+    "example_ka": "ეს მაგალითია 6.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word7",
+    "georgian": "სიტყვა7",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 7.",
+    "example_ka": "ეს მაგალითია 7.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word8",
+    "georgian": "სიტყვა8",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 8.",
+    "example_ka": "ეს მაგალითია 8.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word9",
+    "georgian": "სიტყვა9",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 9.",
+    "example_ka": "ეს მაგალითია 9.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word10",
+    "georgian": "სიტყვა10",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 10.",
+    "example_ka": "ეს მაგალითია 10.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word11",
+    "georgian": "სიტყვა11",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 11.",
+    "example_ka": "ეს მაგალითია 11.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word12",
+    "georgian": "სიტყვა12",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 12.",
+    "example_ka": "ეს მაგალითია 12.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word13",
+    "georgian": "სიტყვა13",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 13.",
+    "example_ka": "ეს მაგალითია 13.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word14",
+    "georgian": "სიტყვა14",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 14.",
+    "example_ka": "ეს მაგალითია 14.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word15",
+    "georgian": "სიტყვა15",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 15.",
+    "example_ka": "ეს მაგალითია 15.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word16",
+    "georgian": "სიტყვა16",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 16.",
+    "example_ka": "ეს მაგალითია 16.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word17",
+    "georgian": "სიტყვა17",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 17.",
+    "example_ka": "ეს მაგალითია 17.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word18",
+    "georgian": "სიტყვა18",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 18.",
+    "example_ka": "ეს მაგალითია 18.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word19",
+    "georgian": "სიტყვა19",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 19.",
+    "example_ka": "ეს მაგალითია 19.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word20",
+    "georgian": "სიტყვა20",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 20.",
+    "example_ka": "ეს მაგალითია 20.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word21",
+    "georgian": "სიტყვა21",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 21.",
+    "example_ka": "ეს მაგალითია 21.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word22",
+    "georgian": "სიტყვა22",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 22.",
+    "example_ka": "ეს მაგალითია 22.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word23",
+    "georgian": "სიტყვა23",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 23.",
+    "example_ka": "ეს მაგალითია 23.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word24",
+    "georgian": "სიტყვა24",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 24.",
+    "example_ka": "ეს მაგალითია 24.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word25",
+    "georgian": "სიტყვა25",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 25.",
+    "example_ka": "ეს მაგალითია 25.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word26",
+    "georgian": "სიტყვა26",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 26.",
+    "example_ka": "ეს მაგალითია 26.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word27",
+    "georgian": "სიტყვა27",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 27.",
+    "example_ka": "ეს მაგალითია 27.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word28",
+    "georgian": "სიტყვა28",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 28.",
+    "example_ka": "ეს მაგალითია 28.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word29",
+    "georgian": "სიტყვა29",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 29.",
+    "example_ka": "ეს მაგალითია 29.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word30",
+    "georgian": "სიტყვა30",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 30.",
+    "example_ka": "ეს მაგალითია 30.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word31",
+    "georgian": "სიტყვა31",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 31.",
+    "example_ka": "ეს მაგალითია 31.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word32",
+    "georgian": "სიტყვა32",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 32.",
+    "example_ka": "ეს მაგალითია 32.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word33",
+    "georgian": "სიტყვა33",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 33.",
+    "example_ka": "ეს მაგალითია 33.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word34",
+    "georgian": "სიტყვა34",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 34.",
+    "example_ka": "ეს მაგალითია 34.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word35",
+    "georgian": "სიტყვა35",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 35.",
+    "example_ka": "ეს მაგალითია 35.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word36",
+    "georgian": "სიტყვა36",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 36.",
+    "example_ka": "ეს მაგალითია 36.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word37",
+    "georgian": "სიტყვა37",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 37.",
+    "example_ka": "ეს მაგალითია 37.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word38",
+    "georgian": "სიტყვა38",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 38.",
+    "example_ka": "ეს მაგალითია 38.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word39",
+    "georgian": "სიტყვა39",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 39.",
+    "example_ka": "ეს მაგალითია 39.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word40",
+    "georgian": "სიტყვა40",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 40.",
+    "example_ka": "ეს მაგალითია 40.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word41",
+    "georgian": "სიტყვა41",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 41.",
+    "example_ka": "ეს მაგალითია 41.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word42",
+    "georgian": "სიტყვა42",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 42.",
+    "example_ka": "ეს მაგალითია 42.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word43",
+    "georgian": "სიტყვა43",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 43.",
+    "example_ka": "ეს მაგალითია 43.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word44",
+    "georgian": "სიტყვა44",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 44.",
+    "example_ka": "ეს მაგალითია 44.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word45",
+    "georgian": "სიტყვა45",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 45.",
+    "example_ka": "ეს მაგალითია 45.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word46",
+    "georgian": "სიტყვა46",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 46.",
+    "example_ka": "ეს მაგალითია 46.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word47",
+    "georgian": "სიტყვა47",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 47.",
+    "example_ka": "ეს მაგალითია 47.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word48",
+    "georgian": "სიტყვა48",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 48.",
+    "example_ka": "ეს მაგალითია 48.",
+    "category": "public-transport",
+    "level": "A1"
+  },
+  {
+    "english": "word49",
+    "georgian": "სიტყვა49",
+    "pronunciation": "/wɜːrd/",
+    "example_en": "This is example 49.",
+    "example_ka": "ეს მაგალითია 49.",
+    "category": "public-transport",
+    "level": "A1"
+  }
 ]

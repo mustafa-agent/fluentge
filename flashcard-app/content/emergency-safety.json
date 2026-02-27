@@ -1,62 +1,1289 @@
 [
-  {"english": "Fire", "georgian": "ხანძარი", "pronunciation": "khandzari", "example_en": "There's a fire in the building!", "example_ka": "შენობაში ხანძარია!", "category": "emergency", "level": "A2"},
-  {"english": "Flood", "georgian": "წყალდიდობა", "pronunciation": "ts'qaldidoba", "example_en": "The flood destroyed many homes.", "example_ka": "წყალდიდობამ ბევრი სახლი დაანგრია.", "category": "emergency", "level": "B1"},
-  {"english": "Earthquake", "georgian": "მიწისძვრა", "pronunciation": "mits'isdzvra", "example_en": "An earthquake hit the city last night.", "example_ka": "გუშინ ღამე ქალაქს მიწისძვრა მოხდა.", "category": "emergency", "level": "B1"},
-  {"english": "Ambulance", "georgian": "სასწრაფო", "pronunciation": "sasts'rapo", "example_en": "Call an ambulance immediately!", "example_ka": "დაუძახეთ სასწრაფოს დაუყოვნებლივ!", "category": "emergency", "level": "A2"},
-  {"english": "First aid kit", "georgian": "პირველადი დახმარების ნაკრები", "pronunciation": "pirveladi dakhmartbis nakrebi", "example_en": "Every car should have a first aid kit.", "example_ka": "ყველა მანქანაში უნდა იყოს პირველადი დახმარების ნაკრები.", "category": "emergency", "level": "B1"},
-  {"english": "Bandage", "georgian": "ბინტი", "pronunciation": "binti", "example_en": "Put a bandage on the wound.", "example_ka": "ჭრილობაზე ბინტი დაადეთ.", "category": "emergency", "level": "A2"},
-  {"english": "CPR", "georgian": "გულ-ფილტვის რეანიმაცია", "pronunciation": "gul-piltvის reanimatsia", "example_en": "Do you know how to perform CPR?", "example_ka": "იცით როგორ გაკეთდეს გულ-ფილტვის რეანიმაცია?", "category": "emergency", "level": "B2"},
-  {"english": "Evacuation", "georgian": "ევაკუაცია", "pronunciation": "evakuatsia", "example_en": "The evacuation started at noon.", "example_ka": "ევაკუაცია შუადღისას დაიწყო.", "category": "emergency", "level": "B1"},
-  {"english": "Smoke detector", "georgian": "კვამლის დეტექტორი", "pronunciation": "kvamlis detekt'ori", "example_en": "Install a smoke detector in every room.", "example_ka": "ყველა ოთახში კვამლის დეტექტორი დააყენეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Fire extinguisher", "georgian": "ცეცხლმაქრი", "pronunciation": "tsetskhlmakri", "example_en": "The fire extinguisher is near the door.", "example_ka": "ცეცხლმაქრი კარის ახლოს არის.", "category": "emergency", "level": "B1"},
-  {"english": "Injury", "georgian": "დაზიანება", "pronunciation": "dazianeba", "example_en": "He suffered a minor injury.", "example_ka": "მას მცირე დაზიანება მიადგა.", "category": "emergency", "level": "A2"},
-  {"english": "Bleeding", "georgian": "სისხლდენა", "pronunciation": "siskhldena", "example_en": "Apply pressure to stop the bleeding.", "example_ka": "სისხლდენის შესაჩერებლად დააჭირეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Fracture", "georgian": "მოტეხილობა", "pronunciation": "mot'ekhiloba", "example_en": "The X-ray showed a fracture.", "example_ka": "რენტგენმა მოტეხილობა აჩვენა.", "category": "emergency", "level": "B1"},
-  {"english": "Unconscious", "georgian": "უგონო", "pronunciation": "ugono", "example_en": "The victim was found unconscious.", "example_ka": "დაზარალებული უგონო მდგომარეობაში იპოვეს.", "category": "emergency", "level": "B2"},
-  {"english": "Rescue", "georgian": "გადარჩენა", "pronunciation": "gadarchtena", "example_en": "The rescue team arrived quickly.", "example_ka": "სამაშველო გუნდი სწრაფად მოვიდა.", "category": "emergency", "level": "A2"},
-  {"english": "Shelter", "georgian": "თავშესაფარი", "pronunciation": "tavshesapari", "example_en": "Find shelter during the storm.", "example_ka": "ქარიშხლის დროს თავშესაფარი იპოვეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Hazard", "georgian": "საფრთხე", "pronunciation": "saprtkhe", "example_en": "This area is a health hazard.", "example_ka": "ეს ტერიტორია ჯანმრთელობისთვის საფრთხეა.", "category": "emergency", "level": "B1"},
-  {"english": "Toxic", "georgian": "ტოქსიკური", "pronunciation": "t'oksik'uri", "example_en": "Don't touch the toxic chemicals.", "example_ka": "ტოქსიკურ ქიმიკატებს ნუ შეეხებით.", "category": "emergency", "level": "B1"},
-  {"english": "Alarm", "georgian": "განგაში", "pronunciation": "gangashi", "example_en": "The fire alarm went off.", "example_ka": "ხანძრის განგაში ჩაირთო.", "category": "emergency", "level": "A2"},
-  {"english": "Escape route", "georgian": "გაქცევის გზა", "pronunciation": "gaktsjevis gza", "example_en": "Know your escape route before an emergency.", "example_ka": "საგანგებო სიტუაციამდე იცოდეთ გაქცევის გზა.", "category": "emergency", "level": "B1"},
-  {"english": "Emergency", "georgian": "საგანგებო სიტუაცია", "pronunciation": "sagangebo sit'uatsia", "example_en": "Call 112 in case of emergency.", "example_ka": "საგანგებო სიტუაციის შემთხვევაში დარეკეთ 112-ზე.", "category": "emergency", "level": "A2"},
-  {"english": "Survivor", "georgian": "გადარჩენილი", "pronunciation": "gadarchenili", "example_en": "They found three survivors.", "example_ka": "სამი გადარჩენილი იპოვეს.", "category": "emergency", "level": "B1"},
-  {"english": "Disaster", "georgian": "კატასტროფა", "pronunciation": "k'at'ast'ropa", "example_en": "The natural disaster caused massive damage.", "example_ka": "სტიქიურმა კატასტროფამ დიდი ზარალი გამოიწვია.", "category": "emergency", "level": "B1"},
-  {"english": "Wound", "georgian": "ჭრილობა", "pronunciation": "ch'riloba", "example_en": "Clean the wound with water.", "example_ka": "ჭრილობა წყლით გაწმინდეთ.", "category": "emergency", "level": "A2"},
-  {"english": "Burn", "georgian": "დამწვრობა", "pronunciation": "damts'vroba", "example_en": "She got a burn from the stove.", "example_ka": "მას ქურიდან დამწვრობა მიიღო.", "category": "emergency", "level": "A2"},
-  {"english": "Poison", "georgian": "შხამი", "pronunciation": "shkhami", "example_en": "Keep poison away from children.", "example_ka": "შხამი ბავშვებისგან მოარიდეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Drowning", "georgian": "დახრჩობა", "pronunciation": "dakhrchoba", "example_en": "Drowning can happen in seconds.", "example_ka": "დახრჩობა წამებში შეიძლება მოხდეს.", "category": "emergency", "level": "B1"},
-  {"english": "Paramedic", "georgian": "პარამედიკოსი", "pronunciation": "paramedik'osi", "example_en": "The paramedic treated the patient.", "example_ka": "პარამედიკოსმა პაციენტს დახმარება გაუწია.", "category": "emergency", "level": "B1"},
-  {"english": "Stretcher", "georgian": "სატარი", "pronunciation": "sat'ari", "example_en": "They carried him on a stretcher.", "example_ka": "ის სატარით წაიყვანეს.", "category": "emergency", "level": "B1"},
-  {"english": "Siren", "georgian": "სირენა", "pronunciation": "sirena", "example_en": "I heard the ambulance siren.", "example_ka": "სასწრაფოს სირენა გავიგონე.", "category": "emergency", "level": "A2"},
-  {"english": "Tornado", "georgian": "ტორნადო", "pronunciation": "t'ornado", "example_en": "A tornado warning was issued.", "example_ka": "ტორნადოს შესახებ გაფრთხილება გაიცა.", "category": "emergency", "level": "B1"},
-  {"english": "Hurricane", "georgian": "ქარიშხალი", "pronunciation": "karishkhali", "example_en": "The hurricane destroyed the coast.", "example_ka": "ქარიშხალმა სანაპირო გაანადგურა.", "category": "emergency", "level": "B1"},
-  {"english": "Landslide", "georgian": "მეწყერი", "pronunciation": "mets'qeri", "example_en": "Heavy rain caused a landslide.", "example_ka": "ძლიერმა წვიმამ მეწყერი გამოიწვია.", "category": "emergency", "level": "B2"},
-  {"english": "Blackout", "georgian": "გათიშვა", "pronunciation": "gatishva", "example_en": "The storm caused a blackout.", "example_ka": "ქარიშხალმა დენის გათიშვა გამოიწვია.", "category": "emergency", "level": "B1"},
-  {"english": "Helmet", "georgian": "ჩაფხუტი", "pronunciation": "chapkhut'i", "example_en": "Wear a helmet for protection.", "example_ka": "დაცვისთვის ჩაფხუტი დაიხურეთ.", "category": "emergency", "level": "A2"},
-  {"english": "Defibrillator", "georgian": "დეფიბრილატორი", "pronunciation": "depibrilat'ori", "example_en": "Use the defibrillator on the patient.", "example_ka": "პაციენტზე დეფიბრილატორი გამოიყენეთ.", "category": "emergency", "level": "B2"},
-  {"english": "Choking", "georgian": "დახშობა", "pronunciation": "dakhshoba", "example_en": "Learn how to help someone who is choking.", "example_ka": "ისწავლეთ როგორ დაეხმაროთ დახშობის მსხვერპლს.", "category": "emergency", "level": "B1"},
-  {"english": "Smoke", "georgian": "კვამლი", "pronunciation": "kvamli", "example_en": "The room was full of smoke.", "example_ka": "ოთახი კვამლით იყო სავსე.", "category": "emergency", "level": "A2"},
-  {"english": "Explosion", "georgian": "აფეთქება", "pronunciation": "apet'keba", "example_en": "We heard a loud explosion.", "example_ka": "ხმამაღალი აფეთქება გავიგონეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Collapse", "georgian": "ჩამონგრევა", "pronunciation": "chamongreva", "example_en": "The building is about to collapse.", "example_ka": "შენობა ჩამონგრევის პირასაა.", "category": "emergency", "level": "B1"},
-  {"english": "Warning", "georgian": "გაფრთხილება", "pronunciation": "gaprtkkhileba", "example_en": "Pay attention to the warning signs.", "example_ka": "გაფრთხილების ნიშნებს ყურადღება მიაქციეთ.", "category": "emergency", "level": "A2"},
-  {"english": "Danger", "georgian": "საშიშროება", "pronunciation": "sashishroeba", "example_en": "You are in danger, leave now!", "example_ka": "საშიშროებაში ხართ, დატოვეთ ახლავე!", "category": "emergency", "level": "A2"},
-  {"english": "Panic", "georgian": "პანიკა", "pronunciation": "p'anik'a", "example_en": "Don't panic during an emergency.", "example_ka": "საგანგებო სიტუაციის დროს ნუ დაპანიკდებით.", "category": "emergency", "level": "A2"},
-  {"english": "Earthquake drill", "georgian": "მიწისძვრის წვრთნა", "pronunciation": "mits'isdzvris ts'vrthna", "example_en": "We had an earthquake drill at school.", "example_ka": "სკოლაში მიწისძვრის წვრთნა ჩავატარეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Oxygen mask", "georgian": "ჟანგბადის ნიღაბი", "pronunciation": "zhangbadis nighabi", "example_en": "Put on the oxygen mask first.", "example_ka": "ჯერ ჟანგბადის ნიღაბი დაიხურეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Tourniquet", "georgian": "ტურნიკეტი", "pronunciation": "t'urnik'et'i", "example_en": "Apply a tourniquet to stop severe bleeding.", "example_ka": "ძლიერი სისხლდენის შესაჩერებლად ტურნიკეტი დაადეთ.", "category": "emergency", "level": "B2"},
-  {"english": "Heatstroke", "georgian": "სითბური დარტყმა", "pronunciation": "sitburi dart'qma", "example_en": "Drink water to prevent heatstroke.", "example_ka": "სითბური დარტყმის თავიდან ასაცილებლად წყალი დალიეთ.", "category": "emergency", "level": "B1"},
-  {"english": "Frostbite", "georgian": "მოყინვა", "pronunciation": "moqinva", "example_en": "Wear gloves to avoid frostbite.", "example_ka": "მოყინვის თავიდან ასაცილებლად ხელთათმანები ჩაიცვით.", "category": "emergency", "level": "B1"},
-  {"english": "Shock", "georgian": "შოკი", "pronunciation": "shok'i", "example_en": "The patient is in shock.", "example_ka": "პაციენტი შოკშია.", "category": "emergency", "level": "B1"},
-  {"english": "Voltage", "georgian": "ძაბვა", "pronunciation": "dzabva", "example_en": "High voltage is extremely dangerous.", "example_ka": "მაღალი ძაბვა ძალიან საშიშია.", "category": "emergency", "level": "B1"},
-  {"english": "Gas leak", "georgian": "გაზის გაჟონვა", "pronunciation": "gazis gazhonva", "example_en": "If you smell gas, there might be a gas leak.", "example_ka": "თუ გაზის სუნი იგრძენით, შეიძლება გაზის გაჟონვა იყოს.", "category": "emergency", "level": "B1"},
-  {"english": "Fire truck", "georgian": "სახანძრო მანქანა", "pronunciation": "sakhandzro mankana", "example_en": "The fire truck arrived in five minutes.", "example_ka": "სახანძრო მანქანა ხუთ წუთში მოვიდა.", "category": "emergency", "level": "A2"},
-  {"english": "Victim", "georgian": "მსხვერპლი", "pronunciation": "mskhverp'li", "example_en": "The victim was taken to the hospital.", "example_ka": "მსხვერპლი საავადმყოფოში წაიყვანეს.", "category": "emergency", "level": "B1"},
-  {"english": "Safety vest", "georgian": "უსაფრთხოების ჟილეტი", "pronunciation": "usaprtkhoebis zhilet'i", "example_en": "Workers must wear a safety vest.", "example_ka": "მუშებმა უსაფრთხოების ჟილეტი უნდა ჩაიცვან.", "category": "emergency", "level": "B1"},
-  {"english": "Flood warning", "georgian": "წყალდიდობის გაფრთხილება", "pronunciation": "ts'qaldidобis gaprtkkhileba", "example_en": "A flood warning has been issued.", "example_ka": "წყალდიდობის გაფრთხილება გაიცა.", "category": "emergency", "level": "B1"},
-  {"english": "Life jacket", "georgian": "სამაშველო ჟილეტი", "pronunciation": "samashvelo zhilet'i", "example_en": "Always wear a life jacket on the boat.", "example_ka": "ნავზე ყოველთვის სამაშველო ჟილეტი ჩაიცვით.", "category": "emergency", "level": "A2"},
-  {"english": "Electrocution", "georgian": "დენით დაზიანება", "pronunciation": "denit dazianeba", "example_en": "Be careful to avoid electrocution.", "example_ka": "ფრთხილად იყავით დენით დაზიანების თავიდან ასაცილებლად.", "category": "emergency", "level": "B2"},
-  {"english": "Tsunami", "georgian": "ცუნამი", "pronunciation": "tsunami", "example_en": "A tsunami can follow an earthquake.", "example_ka": "მიწისძვრის შემდეგ ცუნამი შეიძლება მოხდეს.", "category": "emergency", "level": "B1"},
-  {"english": "Avalanche", "georgian": "ზვავი", "pronunciation": "zvavi", "example_en": "An avalanche blocked the road.", "example_ka": "ზვავმა გზა გადაკეტა.", "category": "emergency", "level": "B2"},
-  {"english": "Emergency exit", "georgian": "საგანგებო გასასვლელი", "pronunciation": "sagangebo gasasvleli", "example_en": "The emergency exit is at the back.", "example_ka": "საგანგებო გასასვლელი უკანაა.", "category": "emergency", "level": "A2"}
+  {
+    "english": "Fire",
+    "georgian": "ხანძარი",
+    "pronunciation": "/ˈfaɪər/",
+    "example_en": "There's a fire in the building!",
+    "example_ka": "შენობაში ხანძარია!",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Flood",
+    "georgian": "წყალდიდობა",
+    "pronunciation": "/flʌd/",
+    "example_en": "The flood destroyed many homes.",
+    "example_ka": "წყალდიდობამ ბევრი სახლი დაანგრია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Earthquake",
+    "georgian": "მიწისძვრა",
+    "pronunciation": "/ˈɜːrθkweɪk/",
+    "example_en": "An earthquake hit the city last night.",
+    "example_ka": "გუშინ ღამე ქალაქს მიწისძვრა მოხდა.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Ambulance",
+    "georgian": "სასწრაფო",
+    "pronunciation": "/ˈæmbjʊləns/",
+    "example_en": "Call an ambulance immediately!",
+    "example_ka": "დაუძახეთ სასწრაფოს დაუყოვნებლივ!",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Bandage",
+    "georgian": "ბინტი",
+    "pronunciation": "/ˈbændɪdʒ/",
+    "example_en": "Put a bandage on the wound.",
+    "example_ka": "ჭრილობაზე ბინტი დაადეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "CPR",
+    "georgian": "გულ-ფილტვის რეანიმაცია",
+    "pronunciation": "/ˌsiː piː ˈɑːr/",
+    "example_en": "Do you know how to perform CPR?",
+    "example_ka": "იცით როგორ გაკეთდეს გულ-ფილტვის რეანიმაცია?",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Evacuation",
+    "georgian": "ევაკუაცია",
+    "pronunciation": "/ɪˌvækjuˈeɪʃən/",
+    "example_en": "The evacuation started at noon.",
+    "example_ka": "ევაკუაცია შუადღისას დაიწყო.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Injury",
+    "georgian": "დაზიანება",
+    "pronunciation": "/ˈɪndʒəri/",
+    "example_en": "He suffered a minor injury.",
+    "example_ka": "მას მცირე დაზიანება მიადგა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Bleeding",
+    "georgian": "სისხლდენა",
+    "pronunciation": "/ˈbliːdɪŋ/",
+    "example_en": "Apply pressure to stop the bleeding.",
+    "example_ka": "სისხლდენის შესაჩერებლად დააჭირეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Fracture",
+    "georgian": "მოტეხილობა",
+    "pronunciation": "/ˈfræktʃər/",
+    "example_en": "The X-ray showed a fracture.",
+    "example_ka": "რენტგენმა მოტეხილობა აჩვენა.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Unconscious",
+    "georgian": "უგონო",
+    "pronunciation": "/ʌnˈkɒnʃəs/",
+    "example_en": "The victim was found unconscious.",
+    "example_ka": "დაზარალებული უგონო მდგომარეობაში იპოვეს.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Rescue",
+    "georgian": "გადარჩენა",
+    "pronunciation": "/ˈreskjuː/",
+    "example_en": "The rescue team arrived quickly.",
+    "example_ka": "სამაშველო გუნდი სწრაფად მოვიდა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Shelter",
+    "georgian": "თავშესაფარი",
+    "pronunciation": "/ˈʃeltər/",
+    "example_en": "Find shelter during the storm.",
+    "example_ka": "ქარიშხლის დროს თავშესაფარი იპოვეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Hazard",
+    "georgian": "საფრთხე",
+    "pronunciation": "/ˈhæzərd/",
+    "example_en": "This area is a health hazard.",
+    "example_ka": "ეს ტერიტორია ჯანმრთელობისთვის საფრთხეა.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Toxic",
+    "georgian": "ტოქსიკური",
+    "pronunciation": "/ˈtɒksɪk/",
+    "example_en": "Don't touch the toxic chemicals.",
+    "example_ka": "ტოქსიკურ ქიმიკატებს ნუ შეეხებით.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Alarm",
+    "georgian": "განგაში",
+    "pronunciation": "/əˈlɑːrm/",
+    "example_en": "The fire alarm went off.",
+    "example_ka": "ხანძრის განგაში ჩაირთო.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Emergency",
+    "georgian": "საგანგებო სიტუაცია",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Call 112 in case of emergency.",
+    "example_ka": "საგანგებო სიტუაციის შემთხვევაში დარეკეთ 112-ზე.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Survivor",
+    "georgian": "გადარჩენილი",
+    "pronunciation": "/sərˈvaɪvər/",
+    "example_en": "They found three survivors.",
+    "example_ka": "სამი გადარჩენილი იპოვეს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Disaster",
+    "georgian": "კატასტროფა",
+    "pronunciation": "/dɪˈzæstər/",
+    "example_en": "The natural disaster caused massive damage.",
+    "example_ka": "სტიქიურმა კატასტროფამ დიდი ზარალი გამოიწვია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Wound",
+    "georgian": "ჭრილობა",
+    "pronunciation": "/wuːnd/",
+    "example_en": "Clean the wound with water.",
+    "example_ka": "ჭრილობა წყლით გაწმინდეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Burn",
+    "georgian": "დამწვრობა",
+    "pronunciation": "/bɜːrn/",
+    "example_en": "She got a burn from the stove.",
+    "example_ka": "მას ქურიდან დამწვრობა მიიღო.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Poison",
+    "georgian": "შხამი",
+    "pronunciation": "/ˈpɔɪzən/",
+    "example_en": "Keep poison away from children.",
+    "example_ka": "შხამი ბავშვებისგან მოარიდეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Drowning",
+    "georgian": "დახრჩობა",
+    "pronunciation": "/ˈdraʊnɪŋ/",
+    "example_en": "Drowning can happen in seconds.",
+    "example_ka": "დახრჩობა წამებში შეიძლება მოხდეს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Paramedic",
+    "georgian": "პარამედიკოსი",
+    "pronunciation": "/ˌpærəˈmedɪk/",
+    "example_en": "The paramedic treated the patient.",
+    "example_ka": "პარამედიკოსმა პაციენტს დახმარება გაუწია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Stretcher",
+    "georgian": "სატარი",
+    "pronunciation": "/ˈstretʃər/",
+    "example_en": "They carried him on a stretcher.",
+    "example_ka": "ის სატარით წაიყვანეს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Siren",
+    "georgian": "სირენა",
+    "pronunciation": "/ˈsaɪrən/",
+    "example_en": "I heard the ambulance siren.",
+    "example_ka": "სასწრაფოს სირენა გავიგონე.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Tornado",
+    "georgian": "ტორნადო",
+    "pronunciation": "/tɔːrˈneɪdoʊ/",
+    "example_en": "A tornado warning was issued.",
+    "example_ka": "ტორნადოს შესახებ გაფრთხილება გაიცა.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Hurricane",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/ˈhɜːrɪkeɪn/",
+    "example_en": "The hurricane destroyed the coast.",
+    "example_ka": "ქარიშხალმა სანაპირო გაანადგურა.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Landslide",
+    "georgian": "მეწყერი",
+    "pronunciation": "/ˈlændslaɪd/",
+    "example_en": "Heavy rain caused a landslide.",
+    "example_ka": "ძლიერმა წვიმამ მეწყერი გამოიწვია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Blackout",
+    "georgian": "გათიშვა",
+    "pronunciation": "/ˈblækaʊt/",
+    "example_en": "The storm caused a blackout.",
+    "example_ka": "ქარიშხალმა დენის გათიშვა გამოიწვია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Helmet",
+    "georgian": "ჩაფხუტი",
+    "pronunciation": "/ˈhelmɪt/",
+    "example_en": "Wear a helmet for protection.",
+    "example_ka": "დაცვისთვის ჩაფხუტი დაიხურეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Defibrillator",
+    "georgian": "დეფიბრილატორი",
+    "pronunciation": "/dɪˈfɪbrɪleɪtər/",
+    "example_en": "Use the defibrillator on the patient.",
+    "example_ka": "პაციენტზე დეფიბრილატორი გამოიყენეთ.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Choking",
+    "georgian": "დახშობა",
+    "pronunciation": "/ˈtʃoʊkɪŋ/",
+    "example_en": "Learn how to help someone who is choking.",
+    "example_ka": "ისწავლეთ როგორ დაეხმაროთ დახშობის მსხვერპლს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Smoke",
+    "georgian": "კვამლი",
+    "pronunciation": "/smoʊk/",
+    "example_en": "The room was full of smoke.",
+    "example_ka": "ოთახი კვამლით იყო სავსე.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Explosion",
+    "georgian": "აფეთქება",
+    "pronunciation": "/ɪkˈsploʊʒən/",
+    "example_en": "We heard a loud explosion.",
+    "example_ka": "ხმამაღალი აფეთქება გავიგონეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Collapse",
+    "georgian": "ჩამონგრევა",
+    "pronunciation": "/kəˈlæps/",
+    "example_en": "The building is about to collapse.",
+    "example_ka": "შენობა ჩამონგრევის პირასაა.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Warning",
+    "georgian": "გაფრთხილება",
+    "pronunciation": "/ˈwɔːrnɪŋ/",
+    "example_en": "Pay attention to the warning signs.",
+    "example_ka": "გაფრთხილების ნიშნებს ყურადღება მიაქციეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Danger",
+    "georgian": "საშიშროება",
+    "pronunciation": "/ˈdeɪndʒər/",
+    "example_en": "You are in danger, leave now!",
+    "example_ka": "საშიშროებაში ხართ, დატოვეთ ახლავე!",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Panic",
+    "georgian": "პანიკა",
+    "pronunciation": "/ˈpænɪk/",
+    "example_en": "Don't panic during an emergency.",
+    "example_ka": "საგანგებო სიტუაციის დროს ნუ დაპანიკდებით.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Tourniquet",
+    "georgian": "ტურნიკეტი",
+    "pronunciation": "/ˈtɜːrnɪkət/",
+    "example_en": "Apply a tourniquet to stop severe bleeding.",
+    "example_ka": "ძლიერი სისხლდენის შესაჩერებლად ტურნიკეტი დაადეთ.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Heatstroke",
+    "georgian": "სითბური დარტყმა",
+    "pronunciation": "/ˈhiːtstroʊk/",
+    "example_en": "Drink water to prevent heatstroke.",
+    "example_ka": "სითბური დარტყმის თავიდან ასაცილებლად წყალი დალიეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Frostbite",
+    "georgian": "მოყინვა",
+    "pronunciation": "/ˈfrɔːstbaɪt/",
+    "example_en": "Wear gloves to avoid frostbite.",
+    "example_ka": "მოყინვის თავიდან ასაცილებლად ხელთათმანები ჩაიცვით.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Shock",
+    "georgian": "შოკი",
+    "pronunciation": "/ʃɑːk/",
+    "example_en": "The patient is in shock.",
+    "example_ka": "პაციენტი შოკშია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Voltage",
+    "georgian": "ძაბვა",
+    "pronunciation": "/ˈvoʊltɪdʒ/",
+    "example_en": "High voltage is extremely dangerous.",
+    "example_ka": "მაღალი ძაბვა ძალიან საშიშია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Victim",
+    "georgian": "მსხვერპლი",
+    "pronunciation": "/ˈvɪktɪm/",
+    "example_en": "The victim was taken to the hospital.",
+    "example_ka": "მსხვერპლი საავადმყოფოში წაიყვანეს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Electrocution",
+    "georgian": "დენით დაზიანება",
+    "pronunciation": "/ɪˌlektrəˈkjuːʃən/",
+    "example_en": "Be careful to avoid electrocution.",
+    "example_ka": "ფრთხილად იყავით დენით დაზიანების თავიდან ასაცილებლად.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Tsunami",
+    "georgian": "ცუნამი",
+    "pronunciation": "/tsuːˈnɑːmi/",
+    "example_en": "A tsunami can follow an earthquake.",
+    "example_ka": "მიწისძვრის შემდეგ ცუნამი შეიძლება მოხდეს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Avalanche",
+    "georgian": "ზვავი",
+    "pronunciation": "/ˈævəlæntʃ/",
+    "example_en": "An avalanche blocked the road.",
+    "example_ka": "ზვავმა გზა გადაკეტა.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Extinguisher",
+    "georgian": "ჩამქრობი",
+    "pronunciation": "/ɪkˈstɪŋɡwɪʃər/",
+    "example_en": "Use the fire extinguisher immediately.",
+    "example_ka": "ხანძრის ჩამქრობი დაუყოვნებლივ გამოიყენეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Oxygen",
+    "georgian": "ჟანგბადი",
+    "pronunciation": "/ˈɑːksɪdʒən/",
+    "example_en": "The patient needs oxygen.",
+    "example_ka": "პაციენტს ჟანგბადი სჭირდება.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Escape",
+    "georgian": "გარბენა",
+    "pronunciation": "/ɪˈskeɪp/",
+    "example_en": "Find the nearest escape route.",
+    "example_ka": "უახლოესი გარბენის გზა იპოვეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Exit",
+    "georgian": "გასასვლელი",
+    "pronunciation": "/ˈeksɪt/",
+    "example_en": "The exit is clearly marked.",
+    "example_ka": "გასასვლელი მკაფიოდ არის აღნიშნული.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Firefighter",
+    "georgian": "მეხანძრე",
+    "pronunciation": "/ˈfaɪərfaɪtər/",
+    "example_en": "The firefighter saved the child.",
+    "example_ka": "მეხანძრემ ბავშვი გადაარჩინა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Police",
+    "georgian": "პოლიცია",
+    "pronunciation": "/pəˈliːs/",
+    "example_en": "Call the police now!",
+    "example_ka": "პოლიციას ახლავე დაუძახეთ!",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Hospital",
+    "georgian": "საავადმყოფო",
+    "pronunciation": "/ˈhɑːspɪtəl/",
+    "example_en": "Take him to the hospital.",
+    "example_ka": "საავადმყოფოში წაიყვანეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Doctor",
+    "georgian": "ექიმი",
+    "pronunciation": "/ˈdɑːktər/",
+    "example_en": "Call a doctor quickly.",
+    "example_ka": "ექიმს სწრაფად დაუძახეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Medicine",
+    "georgian": "წამალი",
+    "pronunciation": "/ˈmedɪsən/",
+    "example_en": "He needs his medicine.",
+    "example_ka": "მას წამალი სჭირდება.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Broken",
+    "georgian": "გატეხილი",
+    "pronunciation": "/ˈbroʊkən/",
+    "example_en": "His arm is broken.",
+    "example_ka": "მისი ხელი გატეხილია.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Cut",
+    "georgian": "ნაჭერი",
+    "pronunciation": "/kʌt/",
+    "example_en": "There's a deep cut on his leg.",
+    "example_ka": "მის ფეხზე ღრმა ნაჭერია.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "First-aid",
+    "georgian": "პირველადი დახმარება",
+    "pronunciation": "/ˌfɜːrst ˈeɪd/",
+    "example_en": "Apply first aid immediately.",
+    "example_ka": "პირველადი დახმარება დაუყოვნებლივ გაუწიეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Bruise",
+    "georgian": "სისხლჩაქცევა",
+    "pronunciation": "/bruːz/",
+    "example_en": "The bruise is turning purple.",
+    "example_ka": "სისხლჩაქცევა იაისფერდება.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Sprain",
+    "georgian": "დახვევა",
+    "pronunciation": "/spreɪn/",
+    "example_en": "She sprained her ankle.",
+    "example_ka": "მან ტერფი დაახვია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Fever",
+    "georgian": "ცხელება",
+    "pronunciation": "/ˈfiːvər/",
+    "example_en": "The child has a high fever.",
+    "example_ka": "ბავშვს მაღალი ცხელება აქვს.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Heart",
+    "georgian": "გული",
+    "pronunciation": "/hɑːrt/",
+    "example_en": "Check his heart rate.",
+    "example_ka": "მისი გულისცემა შეამოწმეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Pulse",
+    "georgian": "პულსი",
+    "pronunciation": "/pʌls/",
+    "example_en": "Feel for a pulse on his wrist.",
+    "example_ka": "კისრის ზღვარზე პულსი შეამოწმეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Breathe",
+    "georgian": "სუნთქვა",
+    "pronunciation": "/briːð/",
+    "example_en": "She can't breathe properly.",
+    "example_ka": "მას სწორად ვერ სუნთქავს.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Pain",
+    "georgian": "ტკივილი",
+    "pronunciation": "/peɪn/",
+    "example_en": "Where does it hurt?",
+    "example_ka": "სად გტკივათ?",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Conscious",
+    "georgian": "ცნობიერებაში",
+    "pronunciation": "/ˈkɑːnʃəs/",
+    "example_en": "Is the patient conscious?",
+    "example_ka": "პაციენტი ცნობიერებაშია?",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Stable",
+    "georgian": "სტაბილური",
+    "pronunciation": "/ˈsteɪbəl/",
+    "example_en": "His condition is stable.",
+    "example_ka": "მისი მდგომარეობა სტაბილურია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Critical",
+    "georgian": "კრიტიკული",
+    "pronunciation": "/ˈkrɪtɪkəl/",
+    "example_en": "The patient is in critical condition.",
+    "example_ka": "პაციენტი კრიტიკულ მდგომარეობაშია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Alert",
+    "georgian": "გამაფრთხილებელი",
+    "pronunciation": "/əˈlɜːrt/",
+    "example_en": "Stay alert for danger signs.",
+    "example_ka": "საფრთხის ნიშნებისადმი ფხიზელი იყავით.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Recovery",
+    "georgian": "გამოჯანმრთელება",
+    "pronunciation": "/rɪˈkʌvəri/",
+    "example_en": "His recovery will take time.",
+    "example_ka": "მისი გამოჯანმრთელება დროს მოითხოვს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Survival",
+    "georgian": "გადარჩენა",
+    "pronunciation": "/sərˈvaɪvəl/",
+    "example_en": "Survival skills are important.",
+    "example_ka": "გადარჩენის უნარები მნიშვნელოვანია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Crisis",
+    "georgian": "კრიზისი",
+    "pronunciation": "/ˈkraɪsɪs/",
+    "example_en": "We need to handle this crisis.",
+    "example_ka": "ამ კრიზისის მოგვარება გვჭირდება.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Accident",
+    "georgian": "ნეშტი",
+    "pronunciation": "/ˈæksɪdənt/",
+    "example_en": "There was a car accident.",
+    "example_ka": "საავტომობილო ნეშტი მოხდა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Crash",
+    "georgian": "შეჯახება",
+    "pronunciation": "/kræʃ/",
+    "example_en": "The plane crash was terrible.",
+    "example_ka": "თვითმფრინავის შეჯახება საშინელი იყო.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Safety",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/ˈseɪfti/",
+    "example_en": "Safety comes first.",
+    "example_ka": "უსაფრთხოება პირველ ადგილზეა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Protection",
+    "georgian": "დაცვა",
+    "pronunciation": "/prəˈtekʃən/",
+    "example_en": "Wear protection gear.",
+    "example_ka": "დამცველი აღჭურვილობა ჩაიცვით.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Risk",
+    "georgian": "რისკი",
+    "pronunciation": "/rɪsk/",
+    "example_en": "Don't take unnecessary risks.",
+    "example_ka": "ზედმეტი რისკი ნუ იღებთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Threat",
+    "georgian": "საფრთხე",
+    "pronunciation": "/θret/",
+    "example_en": "There's no immediate threat.",
+    "example_ka": "უშუალო საფრთხე არ არსებობს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊrəti/",
+    "example_en": "Call security immediately.",
+    "example_ka": "უსაფრთხოების სამსახურს დაუყოვნებლივ დაუძახეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Guard",
+    "georgian": "მცველი",
+    "pronunciation": "/ɡɑːrd/",
+    "example_en": "The security guard helped us.",
+    "example_ka": "უსაფრთხოების მცველმა დაგვეხმარა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Prevention",
+    "georgian": "პრევენცია",
+    "pronunciation": "/prɪˈvenʃən/",
+    "example_en": "Prevention is better than cure.",
+    "example_ka": "პრევენცია მკურნალობაზე უკეთესია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Prepare",
+    "georgian": "მომზადება",
+    "pronunciation": "/prɪˈper/",
+    "example_en": "Prepare for emergencies.",
+    "example_ka": "საგანგებო სიტუაციებისთვის მომზადდით.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Plan",
+    "georgian": "გეგმა",
+    "pronunciation": "/plæn/",
+    "example_en": "We need an emergency plan.",
+    "example_ka": "საგანგებო გეგმა გვჭირდება.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Kit",
+    "georgian": "კომპლექტი",
+    "pronunciation": "/kɪt/",
+    "example_en": "Keep a first aid kit ready.",
+    "example_ka": "პირველადი დახმარების კომპლექტი მზად იქონიეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Supplies",
+    "georgian": "მარაგი",
+    "pronunciation": "/səˈplaɪz/",
+    "example_en": "Emergency supplies are essential.",
+    "example_ka": "საგანგებო მარაგი აუცილებელია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Backup",
+    "georgian": "სარეზერვო",
+    "pronunciation": "/ˈbækʌp/",
+    "example_en": "We need a backup generator.",
+    "example_ka": "სარეზერვო გენერატორი გვჭირდება.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Contact",
+    "georgian": "კონტაქტი",
+    "pronunciation": "/ˈkɑːntækt/",
+    "example_en": "Keep emergency contacts ready.",
+    "example_ka": "საგანგებო კონტაქტები მზად იქონიეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Procedure",
+    "georgian": "პროცედურა",
+    "pronunciation": "/prəˈsiːdʒər/",
+    "example_en": "Follow the emergency procedure.",
+    "example_ka": "საგანგებო პროცედურას დაიცავით.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Protocol",
+    "georgian": "პროტოკოლი",
+    "pronunciation": "/ˈproʊtəkɔːl/",
+    "example_en": "Follow safety protocol.",
+    "example_ka": "უსაფრთხოების პროტოკოლს დაიცავით.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Response",
+    "georgian": "რეაქცია",
+    "pronunciation": "/rɪˈspɑːns/",
+    "example_en": "Quick response saves lives.",
+    "example_ka": "სწრაფი რეაქცია ცხოვრებას არჩენს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Signal",
+    "georgian": "სიგნალი",
+    "pronunciation": "/ˈsɪɡnəl/",
+    "example_en": "Send a distress signal.",
+    "example_ka": "საშინაო სიგნალი გააგზავნეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Communication",
+    "georgian": "კომუნიკაცია",
+    "pronunciation": "/kəˌmjuːnɪˈkeɪʃən/",
+    "example_en": "Communication is vital in emergencies.",
+    "example_ka": "კომუნიკაცია საგანგებო სიტუაციებში მნიშვნელოვანია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Location",
+    "georgian": "მდებარეობა",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "Report your exact location.",
+    "example_ka": "ზუსტი მდებარეობა მოგვახსენეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Coordination",
+    "georgian": "კოორდინაცია",
+    "pronunciation": "/koʊˌɔːrdɪˈneɪʃən/",
+    "example_en": "Good coordination is necessary.",
+    "example_ka": "კარგი კოორდინაცია აუცილებელია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Equipment",
+    "georgian": "აღჭურვილობა",
+    "pronunciation": "/ɪˈkwɪpmənt/",
+    "example_en": "Check all safety equipment.",
+    "example_ka": "ყველა უსაფრთხოების აღჭურვილობა შეამოწმეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Resources",
+    "georgian": "რესურსები",
+    "pronunciation": "/ˈriːsɔːrsɪz/",
+    "example_en": "Allocate resources efficiently.",
+    "example_ka": "რესურსები ეფექტურად განალაგეთ.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Support",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/səˈpɔːrt/",
+    "example_en": "Provide emotional support.",
+    "example_ka": "ემოციური მხარდაჭერა გაუწიეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Assistance",
+    "georgian": "დახმარება",
+    "pronunciation": "/əˈsɪstəns/",
+    "example_en": "We need immediate assistance.",
+    "example_ka": "დაუყოვნებელი დახმარება გვჭირდება.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Relief",
+    "georgian": "შვება",
+    "pronunciation": "/rɪˈliːf/",
+    "example_en": "Relief efforts are underway.",
+    "example_ka": "შვების მუშაობა მიმდინარეობს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Aid",
+    "georgian": "დახმარება",
+    "pronunciation": "/eɪd/",
+    "example_en": "International aid arrived.",
+    "example_ka": "საერთაშორისო დახმარება ჩამოვიდა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Volunteer",
+    "georgian": "მოხალისე",
+    "pronunciation": "/ˌvɑːlənˈtɪr/",
+    "example_en": "Many volunteers helped.",
+    "example_ka": "ბევრი მოხალისე დაეხმარა.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Training",
+    "georgian": "ტრენინგი",
+    "pronunciation": "/ˈtreɪnɪŋ/",
+    "example_en": "Emergency training is important.",
+    "example_ka": "საგანგებო ტრენინგი მნიშვნელოვანია.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Drill",
+    "georgian": "წვრთნა",
+    "pronunciation": "/drɪl/",
+    "example_en": "We practice fire drills regularly.",
+    "example_ka": "ხანძრის წვრთნას რეგულარულად ვაკეთებთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Simulation",
+    "georgian": "სიმულაცია",
+    "pronunciation": "/ˌsɪmjəˈleɪʃən/",
+    "example_en": "Run emergency simulations.",
+    "example_ka": "საგანგებო სიმულაციები ჩაატარეთ.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Ready",
+    "georgian": "მზად",
+    "pronunciation": "/ˈredi/",
+    "example_en": "Are you ready for emergencies?",
+    "example_ka": "საგანგებო სიტუაციებისთვის მზად ხართ?",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Radiation",
+    "georgian": "რადიაცია",
+    "pronunciation": "/ˌreɪdiˈeɪʃən/",
+    "example_en": "Radiation exposure is dangerous.",
+    "example_ka": "რადიაციის ზემოქმედება საშიშია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Chemical",
+    "georgian": "ქიმიური",
+    "pronunciation": "/ˈkemɪkəl/",
+    "example_en": "Chemical spills require special handling.",
+    "example_ka": "ქიმიური ნივთიერებების დაღვრა სპეციალურ მუშაობას მოითხოვს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Biological",
+    "georgian": "ბიოლოგიური",
+    "pronunciation": "/ˌbaɪəˈlɑːdʒɪkəl/",
+    "example_en": "Biological threats need quarantine.",
+    "example_ka": "ბიოლოგიური საფრთხეები კარანტინს მოითხოვს.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Nuclear",
+    "georgian": "ბირთვული",
+    "pronunciation": "/ˈnuːkliər/",
+    "example_en": "Nuclear accidents are rare but serious.",
+    "example_ka": "ბირთვული ავარიები იშვიათია, მაგრამ სერიოზული.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Contamination",
+    "georgian": "დაბინძურება",
+    "pronunciation": "/kənˌtæmɪˈneɪʃən/",
+    "example_en": "Water contamination poses health risks.",
+    "example_ka": "წყლის დაბინძურება ჯანმრთელობისთვის რისკს შეიცავს.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Quarantine",
+    "georgian": "კარანტინი",
+    "pronunciation": "/ˈkwɔːrəntiːn/",
+    "example_en": "The building is under quarantine.",
+    "example_ka": "შენობა კარანტინშია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Isolation",
+    "georgian": "იზოლაცია",
+    "pronunciation": "/ˌaɪsəˈleɪʃən/",
+    "example_en": "Patient isolation prevents spread.",
+    "example_ka": "პაციენტის იზოლაცია გავრცელებას ხელს უშლის.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Decontamination",
+    "georgian": "გასუფთავება",
+    "pronunciation": "/ˌdiːkənˌtæmɪˈneɪʃən/",
+    "example_en": "Decontamination procedures are strict.",
+    "example_ka": "გასუფთავების პროცედურები მკაცრია.",
+    "category": "emergency-safety",
+    "level": "advanced"
+  },
+  {
+    "english": "Protective",
+    "georgian": "დამცველი",
+    "pronunciation": "/prəˈtektɪv/",
+    "example_en": "Wear protective clothing.",
+    "example_ka": "დამცველი ტანსაცმელი ჩაიცვით.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Mask",
+    "georgian": "ნიღაბი",
+    "pronunciation": "/mæsk/",
+    "example_en": "Put on a protective mask.",
+    "example_ka": "დამცველი ნიღაბი დაიხურეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Gloves",
+    "georgian": "ხელთათმანები",
+    "pronunciation": "/ɡlʌvz/",
+    "example_en": "Wear rubber gloves for safety.",
+    "example_ka": "უსაფრთხოებისთვის რეზინის ხელთათმანები ჩაიცვით.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Goggles",
+    "georgian": "სათვალე",
+    "pronunciation": "/ˈɡɑːɡəlz/",
+    "example_en": "Safety goggles protect your eyes.",
+    "example_ka": "უსაფრთხოების სათვალე თვალებს იცავს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Boots",
+    "georgian": "ჩექმები",
+    "pronunciation": "/buːts/",
+    "example_en": "Steel-toed boots prevent foot injuries.",
+    "example_ka": "ფოლადწვერიანი ჩექმები ფეხის დაზიანებისგან იცავს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Vest",
+    "georgian": "ჟილეტი",
+    "pronunciation": "/vest/",
+    "example_en": "The safety vest is highly visible.",
+    "example_ka": "უსაფრთხოების ჟილეტი კარგად ჩანს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Harness",
+    "georgian": "ზურგჩამომაგრებელი",
+    "pronunciation": "/ˈhɑːrnəs/",
+    "example_en": "Use a safety harness when working at height.",
+    "example_ka": "სიმაღლეზე მუშაობისას უსაფრთხოების ზურგჩამომაგრებელი გამოიყენეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Rope",
+    "georgian": "თოვლი",
+    "pronunciation": "/roʊp/",
+    "example_en": "Throw him a rope to climb out.",
+    "example_ka": "ასასვლელად თოვლი მიაგდეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Ladder",
+    "georgian": "კიბე",
+    "pronunciation": "/ˈlædər/",
+    "example_en": "Use the emergency ladder to escape.",
+    "example_ka": "გასაქცევად საგანგებო კიბე გამოიყენეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Flashlight",
+    "georgian": "ფანარი",
+    "pronunciation": "/ˈflæʃlaɪt/",
+    "example_en": "Keep a flashlight in your emergency kit.",
+    "example_ka": "საგანგებო კომპლექტში ფანარი შეინახეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Battery",
+    "georgian": "ბატარეა",
+    "pronunciation": "/ˈbætəri/",
+    "example_en": "Check battery levels regularly.",
+    "example_ka": "ბატარეის დონე რეგულარულად შეამოწმეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Radio",
+    "georgian": "რადიო",
+    "pronunciation": "/ˈreɪdioʊ/",
+    "example_en": "Listen to emergency radio broadcasts.",
+    "example_ka": "საგანგებო რადიო გადაცემები მოუსმინეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Whistle",
+    "georgian": "სასტვენი",
+    "pronunciation": "/ˈwɪsəl/",
+    "example_en": "Blow the whistle to signal for help.",
+    "example_ka": "დახმარებისთვის სასტვენი დაუკარით.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Mirror",
+    "georgian": "სარკე",
+    "pronunciation": "/ˈmɪrər/",
+    "example_en": "Use a mirror to signal rescue teams.",
+    "example_ka": "სამაშველო გუნდებისთვის სარკე გამოიყენეთ სიგნალისთვის.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Flare",
+    "georgian": "სასიგნალო ფანარი",
+    "pronunciation": "/flɛr/",
+    "example_en": "Launch a flare to mark your position.",
+    "example_ka": "პოზიციის მისათითებლად სასიგნალო ფანარი გაუშვით.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Compass",
+    "georgian": "კომპასი",
+    "pronunciation": "/ˈkʌmpəs/",
+    "example_en": "Use a compass to find direction.",
+    "example_ka": "მიმართულების პოვნისთვის კომპასი გამოიყენეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Map",
+    "georgian": "რუქა",
+    "pronunciation": "/mæp/",
+    "example_en": "Study the evacuation map.",
+    "example_ka": "ევაკუაციის რუქა შეისწავლეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "GPS",
+    "georgian": "GPS",
+    "pronunciation": "/ˌdʒiː piː ˈes/",
+    "example_en": "GPS helps rescuers find your location.",
+    "example_ka": "GPS სამაშველებს თქვენი მდებარეობის პოვნაში ეხმარება.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Smartphone",
+    "georgian": "სმარტფონი",
+    "pronunciation": "/ˈsmɑːrtfoʊn/",
+    "example_en": "Your smartphone can save lives in emergencies.",
+    "example_ka": "სმარტფონი საგანგებო სიტუაციებში სიცოცხლეს იხსნის.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Generator",
+    "georgian": "გენერატორი",
+    "pronunciation": "/ˈdʒenəreɪtər/",
+    "example_en": "The backup generator provides power.",
+    "example_ka": "სარეზერვო გენერატორი ენერგიას უზრუნველყოფს.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Candle",
+    "georgian": "სანთელი",
+    "pronunciation": "/ˈkændəl/",
+    "example_en": "Light candles during power outages.",
+    "example_ka": "დენის გათიშვისას სანთლები დაანთეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Matches",
+    "georgian": "ასანთი",
+    "pronunciation": "/ˈmætʃəz/",
+    "example_en": "Keep matches in a waterproof container.",
+    "example_ka": "ასანთი წყალგაუმტარ კონტეინერში შეინახეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Lighter",
+    "georgian": "სანთებელი",
+    "pronunciation": "/ˈlaɪtər/",
+    "example_en": "A lighter is useful for starting fires.",
+    "example_ka": "სანთებელი ცეცხლის დანთებისთვის სასარგებლოა.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Store emergency water supplies.",
+    "example_ka": "საგანგებო წყლის მარაგი შეინახეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Food",
+    "georgian": "საკვები",
+    "pronunciation": "/fuːd/",
+    "example_en": "Pack non-perishable food items.",
+    "example_ka": "ხანგამძლე საკვები პროდუქტები ჩაალაგეთ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkət/",
+    "example_en": "Emergency blankets retain body heat.",
+    "example_ka": "საგანგებო საბნები სხეულის სითბოს იცავენ.",
+    "category": "emergency-safety",
+    "level": "beginner"
+  },
+  {
+    "english": "Tent",
+    "georgian": "კარავი",
+    "pronunciation": "/tent/",
+    "example_en": "Set up a tent for temporary shelter.",
+    "example_ka": "დროებითი თავშესაფრისთვის კარავი დააყენეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  },
+  {
+    "english": "Tarp",
+    "georgian": "ტენტი",
+    "pronunciation": "/tɑːrp/",
+    "example_en": "Use a tarp to cover supplies.",
+    "example_ka": "მარაგის დასაფარად ტენტი გამოიყენეთ.",
+    "category": "emergency-safety",
+    "level": "intermediate"
+  }
 ]

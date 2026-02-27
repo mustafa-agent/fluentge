@@ -1,27 +1,1802 @@
 [
-  {"english": "vaccine", "georgian": "ვაქცინა", "pronunciation": "vækˈsiːn", "example_en": "The puppy needs a vaccine next week.", "example_ka": "ლეკვს მომავალ კვირას ვაქცინა სჭირდება.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "leash", "georgian": "საბმელი", "pronunciation": "liːʃ", "example_en": "Keep your dog on a leash in the park.", "example_ka": "ძაღლი პარკში საბმელზე დააყენე.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "collar", "georgian": "საყელო", "pronunciation": "ˈkɒlər", "example_en": "The cat has a red collar with a bell.", "example_ka": "კატას წითელი საყელო აქვს ზარით.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "breed", "georgian": "ჯიში", "pronunciation": "briːd", "example_en": "What breed is your dog?", "example_ka": "რა ჯიშის ძაღლი გყავს?", "category": "Pets & Vet", "level": "A2"},
-  {"english": "shelter", "georgian": "თავშესაფარი", "pronunciation": "ˈʃeltər", "example_en": "We adopted our cat from a shelter.", "example_ka": "კატა თავშესაფრიდან ავიყვანეთ.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "adopt", "georgian": "აყვანა (ცხოველის)", "pronunciation": "əˈdɒpt", "example_en": "It's better to adopt than to buy a pet.", "example_ka": "უკეთესია ცხოველი აიყვანო, ვიდრე იყიდო.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "vet", "georgian": "ვეტერინარი", "pronunciation": "vet", "example_en": "I'm taking the cat to the vet today.", "example_ka": "დღეს კატას ვეტერინართან მივიყვან.", "category": "Pets & Vet", "level": "A1"},
-  {"english": "paw", "georgian": "თათი", "pronunciation": "pɔː", "example_en": "The dog gave me its paw.", "example_ka": "ძაღლმა თათი მომცა.", "category": "Pets & Vet", "level": "A1"},
-  {"english": "fur", "georgian": "ბეწვი", "pronunciation": "fɜːr", "example_en": "This cat has very soft fur.", "example_ka": "ამ კატას ძალიან რბილი ბეწვი აქვს.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "scratch", "georgian": "კაწვრა", "pronunciation": "skrætʃ", "example_en": "The cat loves to scratch the sofa.", "example_ka": "კატას დივანზე კაწვრა უყვარს.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "bark", "georgian": "ყეფა", "pronunciation": "bɑːrk", "example_en": "The dog barks at strangers.", "example_ka": "ძაღლი უცნობებს აყეფებს.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "cage", "georgian": "გალია", "pronunciation": "keɪdʒ", "example_en": "The bird sings in its cage.", "example_ka": "ფრინველი გალიაში მღერის.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "aquarium", "georgian": "აკვარიუმი", "pronunciation": "əˈkweəriəm", "example_en": "We have a small aquarium with goldfish.", "example_ka": "პატარა აკვარიუმი გვაქვს ოქროს თევზებით.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "stray", "georgian": "მიუსაფარი", "pronunciation": "streɪ", "example_en": "There are many stray dogs in Tbilisi.", "example_ka": "თბილისში ბევრი მიუსაფარი ძაღლია.", "category": "Pets & Vet", "level": "B1"},
-  {"english": "neuter", "georgian": "სტერილიზაცია", "pronunciation": "ˈnjuːtər", "example_en": "You should neuter your pet.", "example_ka": "შინაურ ცხოველს სტერილიზაცია უნდა გაუკეთო.", "category": "Pets & Vet", "level": "B1"},
-  {"english": "litter box", "georgian": "ტუალეტის ყუთი (კატის)", "pronunciation": "ˈlɪtər bɒks", "example_en": "Clean the litter box every day.", "example_ka": "კატის ტუალეტის ყუთი ყოველდღე გაასუფთავე.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "kibble", "georgian": "მშრალი საკვები", "pronunciation": "ˈkɪbl", "example_en": "The dog eats kibble twice a day.", "example_ka": "ძაღლი მშრალ საკვებს დღეში ორჯერ ჭამს.", "category": "Pets & Vet", "level": "B1"},
-  {"english": "fetch", "georgian": "მოტანა (თამაში)", "pronunciation": "fetʃ", "example_en": "My dog loves to play fetch.", "example_ka": "ჩემს ძაღლს მოტანის თამაში უყვარს.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "tail", "georgian": "კუდი", "pronunciation": "teɪl", "example_en": "The dog wags its tail when happy.", "example_ka": "ძაღლი კუდს აქნევს, როცა ბედნიერია.", "category": "Pets & Vet", "level": "A1"},
-  {"english": "treat", "georgian": "გემრიელი (ცხოველისთვის)", "pronunciation": "triːt", "example_en": "Give the dog a treat when it sits.", "example_ka": "ძაღლს გემრიელი მიეცი, როცა ჯდება.", "category": "Pets & Vet", "level": "A2"},
-  {"english": "microchip", "georgian": "მიკროჩიპი", "pronunciation": "ˈmaɪkroʊtʃɪp", "example_en": "All pets should have a microchip.", "example_ka": "ყველა შინაურ ცხოველს მიკროჩიპი უნდა ჰქონდეს.", "category": "Pets & Vet", "level": "B1"},
-  {"english": "grooming", "georgian": "მოვლა (ცხოველის)", "pronunciation": "ˈɡruːmɪŋ", "example_en": "The poodle needs regular grooming.", "example_ka": "პუდელს რეგულარული მოვლა სჭირდება.", "category": "Pets & Vet", "level": "B1"},
-  {"english": "puppy", "georgian": "ლეკვი", "pronunciation": "ˈpʌpi", "example_en": "The puppy is only 3 months old.", "example_ka": "ლეკვი მხოლოდ 3 თვისაა.", "category": "Pets & Vet", "level": "A1"},
-  {"english": "kitten", "georgian": "კნუტი", "pronunciation": "ˈkɪtn", "example_en": "We found a kitten on the street.", "example_ka": "ქუჩაში კნუტი ვიპოვეთ.", "category": "Pets & Vet", "level": "A1"},
-  {"english": "walk the dog", "georgian": "ძაღლის გასეირნება", "pronunciation": "wɔːk ðə dɒɡ", "example_en": "I walk the dog every morning.", "example_ka": "ძაღლს ყოველ დილით ვასეირნებ.", "category": "Pets & Vet", "level": "A1"}
+  {
+    "english": "vaccine",
+    "georgian": "ვაქცინა",
+    "pronunciation": "/vækˈsiːn/",
+    "example_en": "The puppy needs a vaccine next week.",
+    "example_ka": "ლეკვს მომავალ კვირას ვაქცინა სჭირდება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "leash",
+    "georgian": "საბმელი",
+    "pronunciation": "/liːʃ/",
+    "example_en": "Keep your dog on a leash in the park.",
+    "example_ka": "ძაღლი პარკში საბმელზე დააყენე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "collar",
+    "georgian": "საყელო",
+    "pronunciation": "/ˈkɒlər/",
+    "example_en": "The cat has a red collar with a bell.",
+    "example_ka": "კატას წითელი საყელო აქვს ზარით.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "breed",
+    "georgian": "ჯიში",
+    "pronunciation": "/briːd/",
+    "example_en": "What breed is your dog?",
+    "example_ka": "რა ჯიშის ძაღლი გყავს?",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "shelter",
+    "georgian": "თავშესაფარი",
+    "pronunciation": "/ˈʃeltər/",
+    "example_en": "We adopted our cat from a shelter.",
+    "example_ka": "კატა თავშესაფრიდან ავიყვანეთ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "adopt",
+    "georgian": "აყვანა",
+    "pronunciation": "/əˈdɒpt/",
+    "example_en": "It's better to adopt than to buy a pet.",
+    "example_ka": "უკეთესია ცხოველი აიყვანო, ვიდრე იყიდო.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "vet",
+    "georgian": "ვეტერინარი",
+    "pronunciation": "/vet/",
+    "example_en": "I'm taking the cat to the vet today.",
+    "example_ka": "დღეს კატას ვეტერინართან მივიყვან.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "paw",
+    "georgian": "თათი",
+    "pronunciation": "/pɔː/",
+    "example_en": "The dog gave me its paw.",
+    "example_ka": "ძაღლმა თათი მომცა.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "fur",
+    "georgian": "ბეწვი",
+    "pronunciation": "/fɜːr/",
+    "example_en": "This cat has very soft fur.",
+    "example_ka": "ამ კატას ძალიან რბილი ბეწვი აქვს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "scratch",
+    "georgian": "კაწვრა",
+    "pronunciation": "/skrætʃ/",
+    "example_en": "The cat loves to scratch the sofa.",
+    "example_ka": "კატას დივანზე კაწვრა უყვარს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "bark",
+    "georgian": "ყეფა",
+    "pronunciation": "/bɑːrk/",
+    "example_en": "The dog barks at strangers.",
+    "example_ka": "ძაღლი უცნობებს აყეფებს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "cage",
+    "georgian": "გალია",
+    "pronunciation": "/keɪdʒ/",
+    "example_en": "The bird sings in its cage.",
+    "example_ka": "ფრინველი გალიაში მღერის.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "aquarium",
+    "georgian": "აკვარიუმი",
+    "pronunciation": "/əˈkweəriəm/",
+    "example_en": "We have a small aquarium with goldfish.",
+    "example_ka": "პატარა აკვარიუმი გვაქვს ოქროს თევზებით.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "stray",
+    "georgian": "მიუსაფარი",
+    "pronunciation": "/streɪ/",
+    "example_en": "There are many stray dogs in Tbilisi.",
+    "example_ka": "თბილისში ბევრი მიუსაფარი ძაღლია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "neuter",
+    "georgian": "სტერილიზაცია",
+    "pronunciation": "/ˈnjuːtər/",
+    "example_en": "You should neuter your pet.",
+    "example_ka": "შინაურ ცხოველს სტერილიზაცია უნდა გაუკეთო.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "kibble",
+    "georgian": "მშრალი საკვები",
+    "pronunciation": "/ˈkɪbl/",
+    "example_en": "The dog eats kibble twice a day.",
+    "example_ka": "ძაღლი მშრალ საკვებს დღეში ორჯერ ჭამს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "fetch",
+    "georgian": "მოტანა",
+    "pronunciation": "/fetʃ/",
+    "example_en": "My dog loves to play fetch.",
+    "example_ka": "ჩემს ძაღლს მოტანის თამაში უყვარს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "tail",
+    "georgian": "კუდი",
+    "pronunciation": "/teɪl/",
+    "example_en": "The dog wags its tail when happy.",
+    "example_ka": "ძაღლი კუდს აქნევს, როცა ბედნიერია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "treat",
+    "georgian": "გემრიელი",
+    "pronunciation": "/triːt/",
+    "example_en": "Give the dog a treat when it sits.",
+    "example_ka": "ძაღლს გემრიელი მიეცი, როცა ჯდება.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "microchip",
+    "georgian": "მიკროჩიპი",
+    "pronunciation": "/ˈmaɪkroʊtʃɪp/",
+    "example_en": "All pets should have a microchip.",
+    "example_ka": "ყველა შინაურ ცხოველს მიკროჩიპი უნდა ჰქონდეს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "grooming",
+    "georgian": "მოვლა",
+    "pronunciation": "/ˈɡruːmɪŋ/",
+    "example_en": "The poodle needs regular grooming.",
+    "example_ka": "პუდელს რეგულარული მოვლა სჭირდება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "puppy",
+    "georgian": "ლეკვი",
+    "pronunciation": "/ˈpʌpi/",
+    "example_en": "The puppy is only 3 months old.",
+    "example_ka": "ლეკვი მხოლოდ 3 თვისაა.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "kitten",
+    "georgian": "კნუტი",
+    "pronunciation": "/ˈkɪtn/",
+    "example_en": "We found a kitten on the street.",
+    "example_ka": "ქუჩაში კნუტი ვიპოვეთ.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "dog",
+    "georgian": "ძაღლი",
+    "pronunciation": "/dɔːɡ/",
+    "example_en": "My dog is very friendly.",
+    "example_ka": "ჩემი ძაღლი ძალიან მეგობრულია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "cat",
+    "georgian": "კატა",
+    "pronunciation": "/kæt/",
+    "example_en": "The cat sleeps on the bed.",
+    "example_ka": "კატა საწოლზე იძინებს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "rabbit",
+    "georgian": "კურდღელი",
+    "pronunciation": "/ˈræbɪt/",
+    "example_en": "The rabbit eats carrots.",
+    "example_ka": "კურდღელი სტაფილოს ჭამს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "hamster",
+    "georgian": "ზღარბი",
+    "pronunciation": "/ˈhæmstər/",
+    "example_en": "The hamster runs on its wheel.",
+    "example_ka": "ზღარბი თავის ბორბალზე რბის.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "bird",
+    "georgian": "ფრინველი",
+    "pronunciation": "/bɜːrd/",
+    "example_en": "The bird can speak a few words.",
+    "example_ka": "ფრინველს რამდენიმე სიტყვა შეუძლია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "I feed the fish every morning.",
+    "example_ka": "ყოველ დილით თევზს ვაჭმევ.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "turtle",
+    "georgian": "კუ",
+    "pronunciation": "/ˈtɜːrtəl/",
+    "example_en": "The turtle moves very slowly.",
+    "example_ka": "კუ ძალიან ნელა მოძრაობს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "snake",
+    "georgian": "გველი",
+    "pronunciation": "/sneɪk/",
+    "example_en": "Some people keep snakes as pets.",
+    "example_ka": "ზოგი ადამიანი გველებს შინაურ ცხოველებად იყენებს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "lizard",
+    "georgian": "ხვლიკი",
+    "pronunciation": "/ˈlɪzərd/",
+    "example_en": "The lizard likes to bask in the sun.",
+    "example_ka": "ხვლიკს მზეში ყოფნა უყვარს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "guinea",
+    "georgian": "ღორი",
+    "pronunciation": "/ˈɡɪni/",
+    "example_en": "Guinea pigs are very social animals.",
+    "example_ka": "საზღვაო ღორები ძალიან სოციალური ცხოველები არიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "ferret",
+    "georgian": "ქრცვინი",
+    "pronunciation": "/ˈfɛrət/",
+    "example_en": "Ferrets are playful and curious pets.",
+    "example_ka": "ქრცვინები სათამაშო და ცნობისმოყვარე ცხოველებია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "food",
+    "georgian": "საკვები",
+    "pronunciation": "/fuːd/",
+    "example_en": "Don't forget to buy pet food.",
+    "example_ka": "ცხოველის საკვების ყიდვა არ დაგავიწყდეს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Change the water in the bowl daily.",
+    "example_ka": "ყოველდღე თასში წყალი შეცვალე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "bowl",
+    "georgian": "თასი",
+    "pronunciation": "/boʊl/",
+    "example_en": "Fill the food bowl for the dog.",
+    "example_ka": "ძაღლისთვის საკვების თასი ააავსე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "dish",
+    "georgian": "თეფში",
+    "pronunciation": "/dɪʃ/",
+    "example_en": "Wash the pet's dish regularly.",
+    "example_ka": "ცხოველის თეფში რეგულარულად გარეცხე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "toy",
+    "georgian": "სათამაშო",
+    "pronunciation": "/tɔɪ/",
+    "example_en": "The puppy loves its new toy.",
+    "example_ka": "ლეკვს ახალი სათამაშო უყვარს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "ball",
+    "georgian": "ბურთი",
+    "pronunciation": "/bɔːl/",
+    "example_en": "Throw the ball for the dog to catch.",
+    "example_ka": "ძაღლისთვის დასაჭერად ბურთი ისროლე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "rope",
+    "georgian": "თოვლი",
+    "pronunciation": "/roʊp/",
+    "example_en": "The dog likes playing with a rope toy.",
+    "example_ka": "ძაღლს თოვლის სათამაშოსთან თამაში უყვარს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "bone",
+    "georgian": "ძვალი",
+    "pronunciation": "/boʊn/",
+    "example_en": "Give the dog a bone to chew.",
+    "example_ka": "ძაღლს ღეჭვისთვის ძვალი მიეცი.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "chew",
+    "georgian": "ღეჭვა",
+    "pronunciation": "/tʃuː/",
+    "example_en": "Puppies like to chew on things.",
+    "example_ka": "ლეკვებს ნივთების ღეჭვა უყვართ.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "bed",
+    "georgian": "საწოლი",
+    "pronunciation": "/bɛd/",
+    "example_en": "The cat sleeps in its own bed.",
+    "example_ka": "კატა თავის საწოლში იძინებს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkət/",
+    "example_en": "The old dog needs a warm blanket.",
+    "example_ka": "მოხუცებულ ძაღლს თბილი საბანი სჭირდება.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "house",
+    "georgian": "სახლი",
+    "pronunciation": "/haʊs/",
+    "example_en": "The dog sleeps in its house outside.",
+    "example_ka": "ძაღლი გარეთ თავის სახლში იძინებს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "kennel",
+    "georgian": "ბუდე",
+    "pronunciation": "/ˈkɛnəl/",
+    "example_en": "We're boarding the dog at a kennel.",
+    "example_ka": "ძაღლს ბუდეში ვაბარებთ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "litter",
+    "georgian": "ქვიშა",
+    "pronunciation": "/ˈlɪtər/",
+    "example_en": "Change the cat litter regularly.",
+    "example_ka": "კატის ქვიშა რეგულარულად შეცვალე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "tray",
+    "georgian": "ყუთი",
+    "pronunciation": "/treɪ/",
+    "example_en": "Clean the litter tray every day.",
+    "example_ka": "ყოველდღე ქვიშის ყუთი გაასუფთავე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "walk",
+    "georgian": "გასეირნება",
+    "pronunciation": "/wɔːk/",
+    "example_en": "Dogs need a walk every day.",
+    "example_ka": "ძაღლებს ყოველდღე გასეირნება სჭირდებათ.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "exercise",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈɛksərsaɪz/",
+    "example_en": "Pets need regular exercise.",
+    "example_ka": "შინაურ ცხოველებს რეგულარული ვარჯიში სჭირდებათ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "run",
+    "georgian": "სირბილი",
+    "pronunciation": "/rʌn/",
+    "example_en": "The dog loves to run in the park.",
+    "example_ka": "ძაღლს პარკში სირბილი უყვარს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "play",
+    "georgian": "თამაში",
+    "pronunciation": "/pleɪ/",
+    "example_en": "Cats love to play with string.",
+    "example_ka": "კატებს ძაფთან თამაში უყვართ.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "jump",
+    "georgian": "ხტომა",
+    "pronunciation": "/dʒʌmp/",
+    "example_en": "The dog can jump very high.",
+    "example_ka": "ძაღლს ძალიან მაღლა ხტომა შეუძლია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "sit",
+    "georgian": "ჯდომა",
+    "pronunciation": "/sɪt/",
+    "example_en": "Teach your dog to sit on command.",
+    "example_ka": "ძაღლს ბრძანებაზე ჯდომა ასწავლე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "stay",
+    "georgian": "დგომა",
+    "pronunciation": "/steɪ/",
+    "example_en": "Tell the dog to stay while you prepare food.",
+    "example_ka": "ძაღლს უთხარი დარჩენა, სანამ საკვებს ამზადებ.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "come",
+    "georgian": "მოსვლა",
+    "pronunciation": "/kʌm/",
+    "example_en": "Call the dog to come to you.",
+    "example_ka": "ძაღლს შენთან მოსვლა ეძახე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "heel",
+    "georgian": "ფეხთან სიარული",
+    "pronunciation": "/hiːl/",
+    "example_en": "Train your dog to walk at heel.",
+    "example_ka": "ძაღლს ფეხთან სიარული ასწავლე.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "down",
+    "georgian": "წოლა",
+    "pronunciation": "/daʊn/",
+    "example_en": "The dog lies down when told.",
+    "example_ka": "ძაღლი წოლა, როცა ეუბნებიან.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "roll",
+    "georgian": "ბრუნვა",
+    "pronunciation": "/roʊl/",
+    "example_en": "The dog can roll over on command.",
+    "example_ka": "ძაღლს ბრძანებაზე ბრუნვა შეუძლია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "shake",
+    "georgian": "ხელის დაწურება",
+    "pronunciation": "/ʃeɪk/",
+    "example_en": "Teach your dog to shake hands.",
+    "example_ka": "ძაღლს ხელის დაწურება ასწავლე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "speak",
+    "georgian": "ყეფა",
+    "pronunciation": "/spiːk/",
+    "example_en": "The dog will speak on command.",
+    "example_ka": "ძაღლი ბრძანებაზე ყეფს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "quiet",
+    "georgian": "სიმშვიდე",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "Tell the barking dog to be quiet.",
+    "example_ka": "მყეფ ძაღლს სიმშვიდე ეუბნე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "train",
+    "georgian": "მოწყობა",
+    "pronunciation": "/treɪn/",
+    "example_en": "It takes time to train a puppy.",
+    "example_ka": "ლეკვის მოწყობას დრო სჭირდება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "training",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈtreɪnɪŋ/",
+    "example_en": "The dog needs obedience training.",
+    "example_ka": "ძაღლს მორჩილების ვარჯიში სჭირდება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "command",
+    "georgian": "ბრძანება",
+    "pronunciation": "/kəˈmænd/",
+    "example_en": "The dog responds to basic commands.",
+    "example_ka": "ძაღლი ძირითად ბრძანებებს პასუხობს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "obedience",
+    "georgian": "მორჩილება",
+    "pronunciation": "/əˈbiːdiəns/",
+    "example_en": "Good obedience makes pets easier to manage.",
+    "example_ka": "კარგი მორჩილება შინაურ ცხოველებს უფრო მართვად ხდის.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "reward",
+    "georgian": "ჯილდო",
+    "pronunciation": "/rɪˈwɔːrd/",
+    "example_en": "Give your pet a reward for good behavior.",
+    "example_ka": "კარგი ქცევისთვის ცხოველს ჯილდო მიეცი.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "punishment",
+    "georgian": "სასჯელი",
+    "pronunciation": "/ˈpʌnɪʃmənt/",
+    "example_en": "Never use harsh punishment on pets.",
+    "example_ka": "ცხოველებზე არასოდეს გამოიყენო მკაცრი სასჯელი.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "behavior",
+    "georgian": "ქცევა",
+    "pronunciation": "/bɪˈheɪvjər/",
+    "example_en": "Monitor your pet's behavior for changes.",
+    "example_ka": "ცხოველის ქცევას ცვლილებებისთვის გადაადევნე თვალი.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "aggressive",
+    "georgian": "აგრესიული",
+    "pronunciation": "/əˈɡrɛsɪv/",
+    "example_en": "Some dogs become aggressive when scared.",
+    "example_ka": "ზოგიერთი ძაღლი შიშით აგრესიული ხდება.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "friendly",
+    "georgian": "მეგობრული",
+    "pronunciation": "/ˈfrɛndli/",
+    "example_en": "This dog is very friendly with children.",
+    "example_ka": "ეს ძაღლი ბავშვებთან ძალიან მეგობრულია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "playful",
+    "georgian": "სათამაშო",
+    "pronunciation": "/ˈpleɪfəl/",
+    "example_en": "Kittens are naturally playful.",
+    "example_ka": "კნუტები ბუნებრივად სათამაშო არიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "calm",
+    "georgian": "მშვიდი",
+    "pronunciation": "/kɑːm/",
+    "example_en": "This breed is known for being calm.",
+    "example_ka": "ეს ჯიში მშვიდობით არის ცნობილი.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "energetic",
+    "georgian": "ენერგიული",
+    "pronunciation": "/ˌɛnərˈdʒɛtɪk/",
+    "example_en": "Young dogs are usually very energetic.",
+    "example_ka": "ახალგაზრდა ძაღლები ჩვეულებრივ ძალიან ენერგიულები არიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "lazy",
+    "georgian": "ზარმაცი",
+    "pronunciation": "/ˈleɪzi/",
+    "example_en": "My cat is quite lazy during the day.",
+    "example_ka": "ჩემი კატა დღისით საკმაოდ ზარმაცია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "active",
+    "georgian": "აქტიური",
+    "pronunciation": "/ˈæktɪv/",
+    "example_en": "Border collies are very active dogs.",
+    "example_ka": "ბორდერ კოლები ძალიან აქტიური ძაღლები არიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "intelligent",
+    "georgian": "ჭკვიანი",
+    "pronunciation": "/ɪnˈtɛlədʒənt/",
+    "example_en": "Poodles are intelligent dogs.",
+    "example_ka": "პუდელები ჭკვიანი ძაღლები არიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "loyal",
+    "georgian": "ერთგული",
+    "pronunciation": "/ˈlɔɪəl/",
+    "example_en": "Dogs are known to be loyal companions.",
+    "example_ka": "ძაღლები ერთგული მეგობრებით არიან ცნობილი.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "independent",
+    "georgian": "დამოუკიდებელი",
+    "pronunciation": "/ˌɪndɪˈpɛndənt/",
+    "example_en": "Cats are more independent than dogs.",
+    "example_ka": "კატები ძაღლებზე უფრო დამოუკიდებელები არიან.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "social",
+    "georgian": "სოციალური",
+    "pronunciation": "/ˈsoʊʃəl/",
+    "example_en": "Some pets are more social than others.",
+    "example_ka": "ზოგიერთი ცხოველი სხვებზე უფრო სოციალურია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "shy",
+    "georgian": "მორცხვი",
+    "pronunciation": "/ʃaɪ/",
+    "example_en": "The new cat is still shy around strangers.",
+    "example_ka": "ახალი კატა ჯერ კიდევ უცნობების მიმართ მორცხვია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "scared",
+    "georgian": "შეშინებული",
+    "pronunciation": "/skɛrd/",
+    "example_en": "The dog is scared of thunder.",
+    "example_ka": "ძაღლი ქუხილისგან შეშინებულია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "nervous",
+    "georgian": "ნერვიული",
+    "pronunciation": "/ˈnɜːrvəs/",
+    "example_en": "Some pets get nervous at the vet.",
+    "example_ka": "ზოგი ცხოველი ვეტერინართან ნერვიული ხდება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "excited",
+    "georgian": "ამაღელვებული",
+    "pronunciation": "/ɪkˈsaɪtəd/",
+    "example_en": "The dog gets excited when you come home.",
+    "example_ka": "ძაღლი ამაღელვდება, როცა სახლში ბრუნდები.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "happy",
+    "georgian": "ბედნიერი",
+    "pronunciation": "/ˈhæpi/",
+    "example_en": "A well-cared pet is a happy pet.",
+    "example_ka": "კარგად მოვლილი ცხოველი ბედნიერი ცხოველია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "sad",
+    "georgian": "ღიმილიანი",
+    "pronunciation": "/sæd/",
+    "example_en": "Pets can feel sad when left alone.",
+    "example_ka": "ცხოველებს შეუძლიათ მწუხარება, როცა მარტო რჩებიან.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "healthy",
+    "georgian": "ჯანმრთელი",
+    "pronunciation": "/ˈhɛlθi/",
+    "example_en": "Regular vet visits keep pets healthy.",
+    "example_ka": "რეგულარული ვეტერინარული ვიზიტები ცხოველებს ჯანმრთელს ინახავს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "sick",
+    "georgian": "ავადმყოფი",
+    "pronunciation": "/sɪk/",
+    "example_en": "Take your pet to the vet if it seems sick.",
+    "example_ka": "ცხოველი ავადმყოფი თუ ჩანს, ვეტერინართან წაიყვანე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "medicine",
+    "georgian": "წამალი",
+    "pronunciation": "/ˈmɛdəsən/",
+    "example_en": "Give the medicine as prescribed by the vet.",
+    "example_ka": "წამალი ვეტერინარის დანიშნულების მიხედვით მიეცი.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "pill",
+    "georgian": "აბი",
+    "pronunciation": "/pɪl/",
+    "example_en": "Hide the pill in a treat to make it easier.",
+    "example_ka": "გაადვილებისთვის აბი განვრიელში დამალე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "injection",
+    "georgian": "ინექცია",
+    "pronunciation": "/ɪnˈdʒɛkʃən/",
+    "example_en": "The vet gave the cat an injection.",
+    "example_ka": "ვეტერინარმა კატას ინექცია გაუკეთა.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "surgery",
+    "georgian": "ოპერაცია",
+    "pronunciation": "/ˈsɜːrdʒəri/",
+    "example_en": "The dog needs surgery on its leg.",
+    "example_ka": "ძაღლს ფეხზე ოპერაცია სჭირდება.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "bandage",
+    "georgian": "ბანდაჟი",
+    "pronunciation": "/ˈbændɪdʒ/",
+    "example_en": "The vet put a bandage on the wound.",
+    "example_ka": "ვეტერინარმა ჭრილობაზე ბანდაჟი დაადო.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "wound",
+    "georgian": "ჭრილობა",
+    "pronunciation": "/wuːnd/",
+    "example_en": "Clean the wound gently with water.",
+    "example_ka": "ჭრილობა წყლით ნაზად გაასუფთავე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "emergency",
+    "georgian": "გადაუდებელი",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Call the emergency vet if it's urgent.",
+    "example_ka": "გადაუდებელი შემთხვევისას გადაუდებელი ვეტერინარი დაურეკე.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "appointment",
+    "georgian": "ვიზიტი",
+    "pronunciation": "/əˈpɔɪntmənt/",
+    "example_en": "Book an appointment with the vet.",
+    "example_ka": "ვეტერინართან ვიზიტი დაჯავშნე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "clinic",
+    "georgian": "კლინიკა",
+    "pronunciation": "/ˈklɪnɪk/",
+    "example_en": "The new pet clinic opened last month.",
+    "example_ka": "ახალი ვეტერინარული კლინიკა გასული თვე გაიხსნა.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "examination",
+    "georgian": "გამოკვლევა",
+    "pronunciation": "/ɪɡˌzæməˈneɪʃən/",
+    "example_en": "The vet did a thorough examination.",
+    "example_ka": "ვეტერინარმა საფუძვლიანი გამოკვლევა ჩაატარა.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "checkup",
+    "georgian": "შემოწმება",
+    "pronunciation": "/ˈtʃɛkʌp/",
+    "example_en": "Annual checkups are important for pets.",
+    "example_ka": "ყოველწლიური შემოწმებები ცხოველებისთვის მნიშვნელოვანია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "diagnosis",
+    "georgian": "დიაგნოზი",
+    "pronunciation": "/ˌdaɪəɡˈnoʊsɪs/",
+    "example_en": "The vet made a quick diagnosis.",
+    "example_ka": "ვეტერინარმა სწრაფი დიაგნოზი დაადგინა.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "treatment",
+    "georgian": "მკურნალობა",
+    "pronunciation": "/ˈtriːtmənt/",
+    "example_en": "The treatment was successful.",
+    "example_ka": "მკურნალობა წარმატებული იყო.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "recovery",
+    "georgian": "გამოჯანმრთელება",
+    "pronunciation": "/rɪˈkʌvəri/",
+    "example_en": "The pet's recovery took two weeks.",
+    "example_ka": "ცხოველის გამოჯანმრთელება ორი კვირა გაგრძელდა.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "/ɪnˈʃʊrəns/",
+    "example_en": "Pet insurance can help with vet bills.",
+    "example_ka": "ცხოველის დაზღვევა ვეტერინარული ხარჯებით დაგეხმარება.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "cost",
+    "georgian": "ღირებულება",
+    "pronunciation": "/kɔːst/",
+    "example_en": "The cost of pet care is increasing.",
+    "example_ka": "ცხოველების მოვლის ღირებულება იზრდება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspɛnsɪv/",
+    "example_en": "Veterinary care can be expensive.",
+    "example_ka": "ვეტერინარული მოვლა ძვირი შეიძლება იყოს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "affordable",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrdəbəl/",
+    "example_en": "We found an affordable vet clinic.",
+    "example_ka": "ხელმისაწვდომი ვეტერინარული კლინიკა ვიპოვეთ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "spay",
+    "georgian": "სტერილიზაცია",
+    "pronunciation": "/speɪ/",
+    "example_en": "We decided to spay our female cat.",
+    "example_ka": "ქალი კატის სტერილიზაცია გადავწყვიტეთ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "pregnancy",
+    "georgian": "ორსულობა",
+    "pronunciation": "/ˈprɛɡnənsi/",
+    "example_en": "Pet pregnancy lasts about 9 weeks.",
+    "example_ka": "ცხოველის ორსულობა დაახლოებით 9 კვირა გრძელდება.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "birth",
+    "georgian": "დაბადება",
+    "pronunciation": "/bɜːrθ/",
+    "example_en": "The cat gave birth to five kittens.",
+    "example_ka": "კატამ ხუთი კნუტი გამოიტანა.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "babies",
+    "georgian": "ბავშვები",
+    "pronunciation": "/ˈbeɪbiz/",
+    "example_en": "The mother cat takes care of her babies.",
+    "example_ka": "დედა კატა თავის ბავშვებს უვლის.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "mother",
+    "georgian": "დედა",
+    "pronunciation": "/ˈmʌðər/",
+    "example_en": "The mother dog is very protective.",
+    "example_ka": "დედა ძაღლი ძალიან დაცვითია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "father",
+    "georgian": "მამა",
+    "pronunciation": "/ˈfɑːðər/",
+    "example_en": "The father cat is usually not involved.",
+    "example_ka": "მამა კატა ჩვეულებრივ ჩაურეული არაა.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "offspring",
+    "georgian": "შთამომავლობა",
+    "pronunciation": "/ˈɔːfsprɪŋ/",
+    "example_en": "This breed's offspring are very valuable.",
+    "example_ka": "ამ ჯიშის შთამომავლობა ძალიან ღირებულია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "generation",
+    "georgian": "თაობა",
+    "pronunciation": "/ˌdʒɛnəˈreɪʃən/",
+    "example_en": "This is the third generation of this bloodline.",
+    "example_ka": "ეს ამ სისხლის მესამე თაობაა.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "pedigree",
+    "georgian": "წარმომავლობა",
+    "pronunciation": "/ˈpɛdɪɡri/",
+    "example_en": "This dog has an excellent pedigree.",
+    "example_ka": "ამ ძაღლს შესანიშნავი წარმომავლობა აქვს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "purebred",
+    "georgian": "სუფთაჯიშიანი",
+    "pronunciation": "/ˈpjʊrbred/",
+    "example_en": "Purebred dogs are more expensive.",
+    "example_ka": "სუფთაჯიშიანი ძაღლები უფრო ძვირია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "mixed",
+    "georgian": "შერეული",
+    "pronunciation": "/mɪkst/",
+    "example_en": "Mixed breed dogs can be healthier.",
+    "example_ka": "შერეული ჯიშის ძაღლები უფრო ჯანმრთელები შეიძლება იყვნენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "crossbreed",
+    "georgian": "კვეთაჯიშიანი",
+    "pronunciation": "/ˈkrɔːsbrid/",
+    "example_en": "Crossbreed dogs combine traits from both parents.",
+    "example_ka": "კვეთაჯიშიანი ძაღლები ორივე მშობლის თვისებებს აერთიანებენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "mutt",
+    "georgian": "თოვლიანი ძაღლი",
+    "pronunciation": "/mʌt/",
+    "example_en": "Our mutt is the sweetest dog ever.",
+    "example_ka": "ჩვენი თოვლიანი ძაღლი ყველაზე ტკბილია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "rescue",
+    "georgian": "გადარჩენა",
+    "pronunciation": "/ˈrɛskju/",
+    "example_en": "We adopted from a rescue organization.",
+    "example_ka": "გადამრჩენი ორგანიზაციიდან ავიყვანეთ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "abandoned",
+    "georgian": "მიტოვებული",
+    "pronunciation": "/əˈbændənd/",
+    "example_en": "Many abandoned pets need homes.",
+    "example_ka": "ბევრ მიტოვებულ ცხოველს სახლი სჭირდება.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "homeless",
+    "georgian": "უსახლკარო",
+    "pronunciation": "/ˈhoʊmləs/",
+    "example_en": "Homeless animals struggle to survive.",
+    "example_ka": "უსახლკარო ცხოველები გადარჩენისთვის იბრძვიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "responsibility",
+    "georgian": "პასუხისმგებლობა",
+    "pronunciation": "/rɪˌspɑːnsəˈbɪləti/",
+    "example_en": "Pet ownership is a big responsibility.",
+    "example_ka": "ცხოველის ყოლა დიდი პასუხისმგებლობაა.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "commitment",
+    "georgian": "ვალდებულება",
+    "pronunciation": "/kəˈmɪtmənt/",
+    "example_en": "Pets require a long-term commitment.",
+    "example_ka": "ცხოველები გრძელვადიან ვალდებულებას მოითხოვენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "lifetime",
+    "georgian": "ცხოვრების განმავლობაში",
+    "pronunciation": "/ˈlaɪftaɪm/",
+    "example_en": "A pet is a lifetime companion.",
+    "example_ka": "შინაური ცხოველი ცხოვრების მანძილზე მეგობარია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "companion",
+    "georgian": "მეგობარი",
+    "pronunciation": "/kəmˈpænjən/",
+    "example_en": "Pets make wonderful companions.",
+    "example_ka": "შინაური ცხოველები შესანიშნავ მეგობრებს შეადგენენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "bond",
+    "georgian": "კავშირი",
+    "pronunciation": "/bɑːnd/",
+    "example_en": "The bond between pet and owner is special.",
+    "example_ka": "ცხოველსა და მეპატრონეს შორის კავშირი განსაკუთრებულია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "love",
+    "georgian": "სიყვარული",
+    "pronunciation": "/lʌv/",
+    "example_en": "Pets show unconditional love.",
+    "example_ka": "შინაური ცხოველები უპირობო სიყვარულს გამოხატავენ.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "care",
+    "georgian": "მზრუნველობა",
+    "pronunciation": "/kɛr/",
+    "example_en": "Proper care keeps pets healthy and happy.",
+    "example_ka": "სწორი მზრუნველობა ცხოველებს ჯანმრთელს და ბედნიერს ინახავს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "attention",
+    "georgian": "ყურადღება",
+    "pronunciation": "/əˈtɛnʃən/",
+    "example_en": "All pets need attention and interaction.",
+    "example_ka": "ყველა შინაურ ცხოველს ყურადღება და ურთიერთობა სჭირდება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "interaction",
+    "georgian": "ურთიერთობა",
+    "pronunciation": "/ˌɪntərˈækʃən/",
+    "example_en": "Daily interaction strengthens the pet-owner bond.",
+    "example_ka": "ყოველდღიური ურთიერთობა ცხოველ-მეპატრონის კავშირს ამყარებს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "whiskers",
+    "georgian": "ულვაშები",
+    "pronunciation": "/ˈwɪskərz/",
+    "example_en": "The cat's whiskers help it navigate in the dark.",
+    "example_ka": "კატის ულვაშები ბნელში ნავიგაციაში ეხმარება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "claws",
+    "georgian": "კლანჭები",
+    "pronunciation": "/klɔːz/",
+    "example_en": "Cats use their claws for climbing.",
+    "example_ka": "კატები კლანჭებს ასვლისთვის იყენებენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "muzzle",
+    "georgian": "ღრტუნა",
+    "pronunciation": "/ˈmʌzəl/",
+    "example_en": "The dog had a wet muzzle.",
+    "example_ka": "ძაღლს სველი ღრტუნა ჰქონდა.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "snout",
+    "georgian": "წვერი",
+    "pronunciation": "/snaʊt/",
+    "example_en": "The pig has a pink snout.",
+    "example_ka": "ღორს ვარდისფერი წვერი აქვს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "ears",
+    "georgian": "ყურები",
+    "pronunciation": "/ɪrz/",
+    "example_en": "The rabbit has long ears.",
+    "example_ka": "კურდღელს გრძელი ყურები აქვს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "eyes",
+    "georgian": "თვალები",
+    "pronunciation": "/aɪz/",
+    "example_en": "The cat has beautiful green eyes.",
+    "example_ka": "კატას ლამაზი მწვანე თვალები აქვს.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "nose",
+    "georgian": "ცხვირი",
+    "pronunciation": "/noʊz/",
+    "example_en": "The dog's nose is always cold.",
+    "example_ka": "ძაღლის ცხვირი ყოველთვის ცივია.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "teeth",
+    "georgian": "კბილები",
+    "pronunciation": "/tiːθ/",
+    "example_en": "Brush your dog's teeth regularly.",
+    "example_ka": "ძაღლის კბილები რეგულარულად გაიხეხე.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "tongue",
+    "georgian": "ენა",
+    "pronunciation": "/tʌŋ/",
+    "example_en": "The dog's tongue hangs out when it's hot.",
+    "example_ka": "ცხელის დროს ძაღლის ენა გარეთ ჩამოდის.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "saliva",
+    "georgian": "ნერწყვი",
+    "pronunciation": "/səˈlaɪvə/",
+    "example_en": "Dog saliva contains natural enzymes.",
+    "example_ka": "ძაღლის ნერწყვი ბუნებრივ ფერმენტებს შეიცავს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "drool",
+    "georgian": "ნერწყვის დინება",
+    "pronunciation": "/druːl/",
+    "example_en": "Some dogs drool more than others.",
+    "example_ka": "ზოგ ძაღლს სხვებზე მეტი ნერწყვი ეშვება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "shed",
+    "georgian": "ბეწვის ცვენა",
+    "pronunciation": "/ʃɛd/",
+    "example_en": "Cats shed more hair in spring.",
+    "example_ka": "კატები გაზაფხულზე მეტ ბეწვს სცვენენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "molt",
+    "georgian": "ლპობა",
+    "pronunciation": "/moʊlt/",
+    "example_en": "Birds molt their feathers seasonally.",
+    "example_ka": "ფრინველები სეზონურად ლპობენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "feathers",
+    "georgian": "ბუმბული",
+    "pronunciation": "/ˈfɛðərz/",
+    "example_en": "The parrot has colorful feathers.",
+    "example_ka": "თუთიყუშს ფერადი ბუმბული აქვს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "scales",
+    "georgian": "ქერცლები",
+    "pronunciation": "/skeɪlz/",
+    "example_en": "Fish and reptiles have scales.",
+    "example_ka": "თევზებსა და ქვეწარმავლებს ქერცლები აქვთ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "gills",
+    "georgian": "ლაყები",
+    "pronunciation": "/ɡɪlz/",
+    "example_en": "Fish breathe through their gills.",
+    "example_ka": "თევზები ლაყებით სუნთქავენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "fins",
+    "georgian": "ყჩე",
+    "pronunciation": "/fɪnz/",
+    "example_en": "Fish use fins to swim.",
+    "example_ka": "თევზები ცურვისთვის ყჩეებს იყენებენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "wings",
+    "georgian": "ფრთები",
+    "pronunciation": "/wɪŋz/",
+    "example_en": "The bird spread its wings and flew away.",
+    "example_ka": "ფრინველმა ფრთები გაშალა და გაფრინდა.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "beak",
+    "georgian": "ნისკარტი",
+    "pronunciation": "/biːk/",
+    "example_en": "The bird cracked seeds with its beak.",
+    "example_ka": "ფრინველმა ნისკარტით თესლი გატეხა.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "shell",
+    "georgian": "ჭურვი",
+    "pronunciation": "/ʃɛl/",
+    "example_en": "The turtle retreated into its shell.",
+    "example_ka": "კუმ ჭურვში გაიმალა.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "hibernate",
+    "georgian": "ზამთრის ძილი",
+    "pronunciation": "/ˈhaɪbərneɪt/",
+    "example_en": "Some pets hibernate during winter.",
+    "example_ka": "ზოგიერთი ცხოველი ზამთარში ძინავს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "migrate",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/ˈmaɪɡreɪt/",
+    "example_en": "Wild birds migrate south in winter.",
+    "example_ka": "ველური ფრინველები ზამთარში სამხრეთისკენ მიგრაციას უკეთებენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "domestic",
+    "georgian": "შინაური",
+    "pronunciation": "/dəˈmɛstɪk/",
+    "example_en": "Cats are domestic animals.",
+    "example_ka": "კატები შინაური ცხოველები არიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "wild",
+    "georgian": "ველური",
+    "pronunciation": "/waɪld/",
+    "example_en": "Wild animals are not suitable as pets.",
+    "example_ka": "ველური ცხოველები შინაური ცხოველებისთვის შეუფერებელია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "tame",
+    "georgian": "მშვიდი",
+    "pronunciation": "/teɪm/",
+    "example_en": "This bird is completely tame.",
+    "example_ka": "ეს ფრინველი სრულიად მშვიდია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "feral",
+    "georgian": "გაველურებული",
+    "pronunciation": "/ˈfɛrəl/",
+    "example_en": "Feral cats avoid human contact.",
+    "example_ka": "გაველურებული კატები ადამიანთან კონტაქტს თავს არიდებენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "territory",
+    "georgian": "ტერიტორია",
+    "pronunciation": "/ˈtɛrətɔːri/",
+    "example_en": "Male cats defend their territory.",
+    "example_ka": "მამრი კატები თავიანთ ტერიტორიას იცავენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "instinct",
+    "georgian": "ინსტინქტი",
+    "pronunciation": "/ˈɪnstɪŋkt/",
+    "example_en": "Hunting is a natural instinct for cats.",
+    "example_ka": "ნადირობა კატების ბუნებრივი ინსტინქტია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "hunt",
+    "georgian": "ნადირობა",
+    "pronunciation": "/hʌnt/",
+    "example_en": "Cats hunt mice and birds.",
+    "example_ka": "კატები თაგვებსა და ფრინველებს ნადირობენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "prey",
+    "georgian": "მტაცებელი",
+    "pronunciation": "/preɪ/",
+    "example_en": "Mice are common prey for cats.",
+    "example_ka": "თაგვები კატების ჩვეული მტაცებელია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "predator",
+    "georgian": "მტაცებელი",
+    "pronunciation": "/ˈprɛdətər/",
+    "example_en": "Dogs were once predators in the wild.",
+    "example_ka": "ძაღლები ოდესღაც ველურ მტაცებლებს იყვნენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "herbivore",
+    "georgian": "ბალახისმჭამელი",
+    "pronunciation": "/ˈhɜːrbɪvɔːr/",
+    "example_en": "Rabbits are herbivores.",
+    "example_ka": "კურდღლები ბალახისმჭამელები არიან.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "carnivore",
+    "georgian": "ხორცისმჭამელი",
+    "pronunciation": "/ˈkɑːrnɪvɔːr/",
+    "example_en": "Cats are natural carnivores.",
+    "example_ka": "კატები ბუნებრივი ხორცისმჭამელები არიან.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "omnivore",
+    "georgian": "ყველაფრისმჭამელი",
+    "pronunciation": "/ˈɑːmnɪvɔːr/",
+    "example_en": "Dogs are omnivores like humans.",
+    "example_ka": "ძაღლები ადამიანების მსგავსად ყველაფრისმჭამელები არიან.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "diet",
+    "georgian": "დიეტა",
+    "pronunciation": "/ˈdaɪət/",
+    "example_en": "A balanced diet is important for pets.",
+    "example_ka": "დაბალანსებული დიეტა შინაური ცხოველებისთვის მნიშვნელოვანია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "nutrition",
+    "georgian": "კვება",
+    "pronunciation": "/nuˈtrɪʃən/",
+    "example_en": "Good nutrition prevents many health problems.",
+    "example_ka": "კარგი კვება ბევრ ჯანმრთელობის პრობლემას უშლის.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "vitamins",
+    "georgian": "ვიტამინები",
+    "pronunciation": "/ˈvaɪtəmɪnz/",
+    "example_en": "Pet food should contain essential vitamins.",
+    "example_ka": "ცხოველის საკვები აუცილებელ ვიტამინებს უნდა შეიცავდეს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "minerals",
+    "georgian": "მინერალები",
+    "pronunciation": "/ˈmɪnərəlz/",
+    "example_en": "Calcium and other minerals support bone health.",
+    "example_ka": "კალციუმი და სხვა მინერალები ძვლების ჯანმრთელობას უჭერს მხარს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "protein",
+    "georgian": "ცილა",
+    "pronunciation": "/ˈproʊtiːn/",
+    "example_en": "Cats need high-protein diets.",
+    "example_ka": "კატებს მაღალცილოვანი დიეტა სჭირდებათ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "carbs",
+    "georgian": "ნახშირწყლები",
+    "pronunciation": "/kɑːrbz/",
+    "example_en": "Dogs can digest carbs better than cats.",
+    "example_ka": "ძაღლებს ნახშირწყლების მონელება კატებზე უკეთ შეუძლიათ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "fat",
+    "georgian": "ცხიმი",
+    "pronunciation": "/fæt/",
+    "example_en": "Some fat in the diet is necessary.",
+    "example_ka": "დიეტაში გარკვეული რაოდენობით ცხიმი აუცილებელია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "fiber",
+    "georgian": "ბოჭკო",
+    "pronunciation": "/ˈfaɪbər/",
+    "example_en": "Fiber aids in healthy digestion.",
+    "example_ka": "ბოჭკო ჯანსაღი მონელებას უწყობს ხელს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "calories",
+    "georgian": "კალორიები",
+    "pronunciation": "/ˈkæləriz/",
+    "example_en": "Overweight pets need fewer calories.",
+    "example_ka": "ჭარბწონიანი ცხოველები ნაკლები კალორია სჭირდებათ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "obesity",
+    "georgian": "სიმსუქნე",
+    "pronunciation": "/oʊˈbiːsəti/",
+    "example_en": "Pet obesity is a growing health concern.",
+    "example_ka": "შინაური ცხოველების სიმსუქნე მზარდი ჯანმრთელობის პრობლემაა.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "overweight",
+    "georgian": "ჭარბწონიანი",
+    "pronunciation": "/ˌoʊvərˈweɪt/",
+    "example_en": "The vet said our cat is overweight.",
+    "example_ka": "ვეტერინარმა თქვა, რომ ჩვენი კატა ჭარბწონიანია.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "underweight",
+    "georgian": "ნაკლებწონიანი",
+    "pronunciation": "/ˌʌndərˈweɪt/",
+    "example_en": "Rescue animals are often underweight.",
+    "example_ka": "გადარჩენილი ცხოველები ხშირად ნაკლებწონიანები არიან.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "weight",
+    "georgian": "წონა",
+    "pronunciation": "/weɪt/",
+    "example_en": "Monitor your pet's weight regularly.",
+    "example_ka": "ცხოველის წონას რეგულარულად ადევნე თვალი.",
+    "category": "pets-vet",
+    "level": "beginner"
+  },
+  {
+    "english": "scale",
+    "georgian": "წონასწორი",
+    "pronunciation": "/skeɪl/",
+    "example_en": "Use a scale to weigh small pets.",
+    "example_ka": "პატარა ცხოველების დასაწონად წონასწორი გამოიყენე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "portion",
+    "georgian": "ნაწილი",
+    "pronunciation": "/ˈpɔːrʃən/",
+    "example_en": "Control food portion sizes for pets.",
+    "example_ka": "ცხოველებისთვის საკვების ნაწილების ზომები გააკონტროლე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈskɛdʒuːl/",
+    "example_en": "Pets thrive on feeding schedules.",
+    "example_ka": "შინაური ცხოველები კვების განრიგს იცავენ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "routine",
+    "georgian": "რუტინა",
+    "pronunciation": "/ruˈtiːn/",
+    "example_en": "Dogs need a daily routine.",
+    "example_ka": "ძაღლებს ყოველდღიური რუტინა სჭირდებათ.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "habits",
+    "georgian": "ჩვევები",
+    "pronunciation": "/ˈhæbəts/",
+    "example_en": "Good habits start from a young age.",
+    "example_ka": "კარგი ჩვევები ადრეული ასაკიდან იწყება.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "discipline",
+    "georgian": "დისციპლინა",
+    "pronunciation": "/ˈdɪsəplən/",
+    "example_en": "Consistent discipline helps train pets.",
+    "example_ka": "მუდმივი დისციპლინა ცხოველების ასწავლას ეხმარება.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "patience",
+    "georgian": "მოთმინება",
+    "pronunciation": "/ˈpeɪʃəns/",
+    "example_en": "Training pets requires patience.",
+    "example_ka": "ცხოველების ასწავლა მოთმინებას მოითხოვს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "consistency",
+    "georgian": "თანმიმდევრობა",
+    "pronunciation": "/kənˈsɪstənsi/",
+    "example_en": "Consistency is key in pet training.",
+    "example_ka": "თანმიმდევრობა ცხოველების ასწავლაში მთავარია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "socialization",
+    "georgian": "სოციალიზაცია",
+    "pronunciation": "/ˌsoʊʃələˈzeɪʃən/",
+    "example_en": "Early socialization is important for puppies.",
+    "example_ka": "ადრეული სოციალიზაცია ლეკვებისთვის მნიშვნელოვანია.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "environment",
+    "georgian": "გარემო",
+    "pronunciation": "/ɪnˈvaɪrənmənt/",
+    "example_en": "A clean environment keeps pets healthy.",
+    "example_ka": "სუფთა გარემო შინაურ ცხოველებს ჯანმრთელს ინახავს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "temperature",
+    "georgian": "ტემპერატურა",
+    "pronunciation": "/ˈtɛmpərətʃər/",
+    "example_en": "Monitor the room temperature for reptiles.",
+    "example_ka": "ქვეწარმავლებისთვის ოთახის ტემპერატურა იმონიტორე.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "humidity",
+    "georgian": "ტენიანობა",
+    "pronunciation": "/hjuˈmɪdəti/",
+    "example_en": "Some exotic pets need high humidity.",
+    "example_ka": "ზოგი ეგზოტიკური ცხოველი მაღალ ტენიანობას მოითხოვს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "lighting",
+    "georgian": "განათება",
+    "pronunciation": "/ˈlaɪtɪŋ/",
+    "example_en": "Proper lighting affects bird behavior.",
+    "example_ka": "სწორი განათება ფრინველების ქცევაზე მოქმედებს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "ventilation",
+    "georgian": "ვენტილაცია",
+    "pronunciation": "/ˌvɛntəˈleɪʃən/",
+    "example_en": "Good ventilation prevents odors in pet areas.",
+    "example_ka": "კარგი ვენტილაცია ცხოველების უბნებში სუნებს იცავს.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "hygiene",
+    "georgian": "ჰიგიენა",
+    "pronunciation": "/ˈhaɪdʒin/",
+    "example_en": "Maintain good hygiene in pet areas.",
+    "example_ka": "ცხოველების უბნებში კარგი ჰიგიენა შეინარჩუნე.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "cleaning",
+    "georgian": "დასუფთავება",
+    "pronunciation": "/ˈklinɪŋ/",
+    "example_en": "Regular cleaning prevents diseases.",
+    "example_ka": "რეგულარული დასუფთავება ავადმყოფობებს უშლის.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "disinfect",
+    "georgian": "დეზინფექცია",
+    "pronunciation": "/ˌdɪsɪnˈfɛkt/",
+    "example_en": "Disinfect pet areas weekly.",
+    "example_ka": "ცხოველების უბნების დეზინფექცია კვირაში ერთხელ ჩაატარე.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "quarantine",
+    "georgian": "კარანტინი",
+    "pronunciation": "/ˈkwɔːrəntiːn/",
+    "example_en": "New pets should be quarantined initially.",
+    "example_ka": "ახალი ცხოველები დასაწყისში კარანტინში უნდა ყოფილიყვნენ.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "symptoms",
+    "georgian": "სიმპტომები",
+    "pronunciation": "/ˈsɪmptəmz/",
+    "example_en": "Watch for symptoms of illness in pets.",
+    "example_ka": "ცხოველებში ავადმყოფობის სიმპტომებს გადაადევნე თვალი.",
+    "category": "pets-vet",
+    "level": "advanced"
+  },
+  {
+    "english": "fever",
+    "georgian": "ცხელება",
+    "pronunciation": "/ˈfivər/",
+    "example_en": "A warm nose might indicate fever.",
+    "example_ka": "თბილი ცხვირი ცხელებაზე შეიძლება მიუთითებდეს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  },
+  {
+    "english": "appetite",
+    "georgian": "მადა",
+    "pronunciation": "/ˈæpəˌtaɪt/",
+    "example_en": "Loss of appetite can signal illness.",
+    "example_ka": "მადის დაკარგვა ავადმყოფობას შეიძლება ნიშნავდეს.",
+    "category": "pets-vet",
+    "level": "intermediate"
+  }
 ]

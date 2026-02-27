@@ -1,62 +1,1811 @@
 [
-  {"english":"Garden","georgian":"ბაღი","pronunciation":"/ˈɡɑːrdən/","example_en":"She spends weekends in the garden.","example_ka":"ის შაბათ-კვირას ბაღში ატარებს.","category":"gardening","level":"A1"},
-  {"english":"Flower","georgian":"ყვავილი","pronunciation":"/ˈflaʊər/","example_en":"The flower is blooming beautifully.","example_ka":"ყვავილი ლამაზად ყვავის.","category":"gardening","level":"A1"},
-  {"english":"Tree","georgian":"ხე","pronunciation":"/triː/","example_en":"There is a tall tree in the yard.","example_ka":"ეზოში მაღალი ხე დგას.","category":"gardening","level":"A1"},
-  {"english":"Grass","georgian":"ბალახი","pronunciation":"/ɡræs/","example_en":"The grass needs to be cut.","example_ka":"ბალახი მოჭრა საჭიროებს.","category":"gardening","level":"A1"},
-  {"english":"Soil","georgian":"ნიადაგი","pronunciation":"/sɔɪl/","example_en":"The soil here is very fertile.","example_ka":"აქ ნიადაგი ძალიან ნაყოფიერია.","category":"gardening","level":"A2"},
-  {"english":"Seed","georgian":"თესლი","pronunciation":"/siːd/","example_en":"Plant the seeds in spring.","example_ka":"გაზაფხულზე თესლი დარგე.","category":"gardening","level":"A1"},
-  {"english":"Root","georgian":"ფესვი","pronunciation":"/ruːt/","example_en":"The roots go deep into the ground.","example_ka":"ფესვები ღრმად მიდის მიწაში.","category":"gardening","level":"A2"},
-  {"english":"Leaf","georgian":"ფოთოლი","pronunciation":"/liːf/","example_en":"The leaf turned yellow in autumn.","example_ka":"შემოდგომაზე ფოთოლი გაყვითლდა.","category":"gardening","level":"A1"},
-  {"english":"Branch","georgian":"ტოტი","pronunciation":"/bræntʃ/","example_en":"A bird is sitting on the branch.","example_ka":"ჩიტი ტოტზე ზის.","category":"gardening","level":"A2"},
-  {"english":"Bush","georgian":"ბუჩქი","pronunciation":"/bʊʃ/","example_en":"There are roses growing on the bush.","example_ka":"ბუჩქზე ვარდები იზრდება.","category":"gardening","level":"A2"},
-  {"english":"Rose","georgian":"ვარდი","pronunciation":"/roʊz/","example_en":"He gave her a red rose.","example_ka":"მან მას წითელი ვარდი აჩუქა.","category":"gardening","level":"A1"},
-  {"english":"Tulip","georgian":"ტიტა","pronunciation":"/ˈtjuːlɪp/","example_en":"Tulips bloom in spring.","example_ka":"ტიტები გაზაფხულზე ყვავის.","category":"gardening","level":"A2"},
-  {"english":"Sunflower","georgian":"მზესუმზირა","pronunciation":"/ˈsʌnˌflaʊər/","example_en":"Sunflowers always face the sun.","example_ka":"მზესუმზირა ყოველთვის მზისკენ იხედება.","category":"gardening","level":"A2"},
-  {"english":"Daisy","georgian":"გვირილა","pronunciation":"/ˈdeɪzi/","example_en":"She picked daisies from the field.","example_ka":"მან მინდვრიდან გვირილები დაკრიფა.","category":"gardening","level":"A2"},
-  {"english":"Lily","georgian":"შროშანი","pronunciation":"/ˈlɪli/","example_en":"The lily has a strong fragrance.","example_ka":"შროშანს ძლიერი სურნელი აქვს.","category":"gardening","level":"A2"},
-  {"english":"Pot","georgian":"ქოთანი","pronunciation":"/pɒt/","example_en":"The plant is in a clay pot.","example_ka":"მცენარე თიხის ქოთანშია.","category":"gardening","level":"A1"},
-  {"english":"Watering can","georgian":"საქშენი","pronunciation":"/ˈwɔːtərɪŋ kæn/","example_en":"Fill the watering can with water.","example_ka":"საქშენი წყლით აავსე.","category":"gardening","level":"A2"},
-  {"english":"Shovel","georgian":"ნიჩაბი","pronunciation":"/ˈʃʌvəl/","example_en":"Use the shovel to dig a hole.","example_ka":"ორმოს გასათხრელად ნიჩაბი გამოიყენე.","category":"gardening","level":"A2"},
-  {"english":"Rake","georgian":"ფოცხი","pronunciation":"/reɪk/","example_en":"Rake the leaves from the lawn.","example_ka":"გაზონიდან ფოთლები ფოცხით მოაგროვე.","category":"gardening","level":"B1"},
-  {"english":"Hose","georgian":"შლანგი","pronunciation":"/hoʊz/","example_en":"Water the garden with the hose.","example_ka":"ბაღი შლანგით მორწყე.","category":"gardening","level":"A2"},
-  {"english":"Lawn","georgian":"გაზონი","pronunciation":"/lɔːn/","example_en":"He is mowing the lawn.","example_ka":"ის გაზონს თიბავს.","category":"gardening","level":"A2"},
-  {"english":"Weed","georgian":"სარეველა","pronunciation":"/wiːd/","example_en":"Pull out the weeds from the garden.","example_ka":"ბაღიდან სარეველები ამოიღე.","category":"gardening","level":"B1"},
-  {"english":"Fertilizer","georgian":"სასუქი","pronunciation":"/ˈfɜːrtəlaɪzər/","example_en":"Add fertilizer to help the plants grow.","example_ka":"მცენარეების ზრდისთვის სასუქი დაამატე.","category":"gardening","level":"B1"},
-  {"english":"Hedge","georgian":"ღობე","pronunciation":"/hɛdʒ/","example_en":"Trim the hedge once a month.","example_ka":"ღობე თვეში ერთხელ გასხვალე.","category":"gardening","level":"B1"},
-  {"english":"Greenhouse","georgian":"სათბური","pronunciation":"/ˈɡriːnhaʊs/","example_en":"Tomatoes grow well in a greenhouse.","example_ka":"პამიდორი სათბურში კარგად იზრდება.","category":"gardening","level":"B1"},
-  {"english":"Compost","georgian":"კომპოსტი","pronunciation":"/ˈkɒmpɒst/","example_en":"Put food scraps in the compost bin.","example_ka":"საჭმლის ნარჩენები კომპოსტის ყუთში ჩაყარე.","category":"gardening","level":"B1"},
-  {"english":"Stem","georgian":"ღერო","pronunciation":"/stɛm/","example_en":"The stem of this flower is very long.","example_ka":"ამ ყვავილის ღერო ძალიან გრძელია.","category":"gardening","level":"A2"},
-  {"english":"Petal","georgian":"ფურცელი","pronunciation":"/ˈpɛtəl/","example_en":"Rose petals fell on the ground.","example_ka":"ვარდის ფურცლები მიწაზე დაცვივდა.","category":"gardening","level":"B1"},
-  {"english":"Bud","georgian":"კვირტი","pronunciation":"/bʌd/","example_en":"The buds will open soon.","example_ka":"კვირტები მალე გაიხსნება.","category":"gardening","level":"B1"},
-  {"english":"Thorn","georgian":"ეკალი","pronunciation":"/θɔːrn/","example_en":"Be careful of the thorns on the rose.","example_ka":"ვარდზე ეკლებს უფრთხილდი.","category":"gardening","level":"A2"},
-  {"english":"Vine","georgian":"ვაზი","pronunciation":"/vaɪn/","example_en":"The vine climbs up the wall.","example_ka":"ვაზი კედელზე ადის.","category":"gardening","level":"B1"},
-  {"english":"Herb","georgian":"მწვანილი","pronunciation":"/hɜːrb/","example_en":"She grows herbs in the kitchen.","example_ka":"ის სამზარეულოში მწვანილს ზრდის.","category":"gardening","level":"A2"},
-  {"english":"Cactus","georgian":"კაქტუსი","pronunciation":"/ˈkæktəs/","example_en":"A cactus needs very little water.","example_ka":"კაქტუსს ძალიან ცოტა წყალი სჭირდება.","category":"gardening","level":"A2"},
-  {"english":"Orchid","georgian":"ორქიდეა","pronunciation":"/ˈɔːrkɪd/","example_en":"Orchids are delicate flowers.","example_ka":"ორქიდეები ნაზი ყვავილებია.","category":"gardening","level":"B1"},
-  {"english":"Moss","georgian":"ხავსი","pronunciation":"/mɒs/","example_en":"Moss grows on the old stones.","example_ka":"ძველ ქვებზე ხავსი იზრდება.","category":"gardening","level":"B1"},
-  {"english":"Fern","georgian":"გვიმრა","pronunciation":"/fɜːrn/","example_en":"Ferns grow well in the shade.","example_ka":"გვიმრა ჩრდილში კარგად იზრდება.","category":"gardening","level":"B1"},
-  {"english":"Mulch","georgian":"მულჩა","pronunciation":"/mʌltʃ/","example_en":"Spread mulch around the plants.","example_ka":"მცენარეების გარშემო მულჩა გაფინე.","category":"gardening","level":"B2"},
-  {"english":"Prune","georgian":"გასხვლა","pronunciation":"/pruːn/","example_en":"Prune the roses in winter.","example_ka":"ზამთარში ვარდები გასხვალე.","category":"gardening","level":"B1"},
-  {"english":"Harvest","georgian":"მოსავალი","pronunciation":"/ˈhɑːrvɪst/","example_en":"The harvest was excellent this year.","example_ka":"წელს მოსავალი შესანიშნავი იყო.","category":"gardening","level":"A2"},
-  {"english":"Bloom","georgian":"ყვავილობა","pronunciation":"/bluːm/","example_en":"Cherry trees bloom in April.","example_ka":"ალუბლის ხეები აპრილში ყვავის.","category":"gardening","level":"A2"},
-  {"english":"Sprout","georgian":"ღივი","pronunciation":"/spraʊt/","example_en":"The seeds have started to sprout.","example_ka":"თესლმა ღივება დაიწყო.","category":"gardening","level":"B1"},
-  {"english":"Irrigation","georgian":"მორწყვა","pronunciation":"/ˌɪrɪˈɡeɪʃən/","example_en":"The irrigation system waters the field.","example_ka":"სარწყავი სისტემა მინდორს რწყავს.","category":"gardening","level":"B2"},
-  {"english":"Wheelbarrow","georgian":"ურიკა","pronunciation":"/ˈwiːlˌbæroʊ/","example_en":"Load the dirt into the wheelbarrow.","example_ka":"მიწა ურიკაში ჩაყარე.","category":"gardening","level":"B1"},
-  {"english":"Trowel","georgian":"ბარი","pronunciation":"/ˈtraʊəl/","example_en":"Use a trowel to plant the flowers.","example_ka":"ყვავილების დასარგავად ბარი გამოიყენე.","category":"gardening","level":"B1"},
-  {"english":"Gloves","georgian":"ხელთათმანები","pronunciation":"/ɡlʌvz/","example_en":"Wear gloves when gardening.","example_ka":"ბაღში მუშაობისას ხელთათმანები ჩაიცვი.","category":"gardening","level":"A1"},
-  {"english":"Plant","georgian":"მცენარე","pronunciation":"/plænt/","example_en":"This plant needs more sunlight.","example_ka":"ამ მცენარეს მეტი მზის შუქი სჭირდება.","category":"gardening","level":"A1"},
-  {"english":"Water","georgian":"მორწყვა","pronunciation":"/ˈwɔːtər/","example_en":"Don't forget to water the plants.","example_ka":"მცენარეების მორწყვა არ დაგავიწყდეს.","category":"gardening","level":"A1"},
-  {"english":"Dig","georgian":"თხრა","pronunciation":"/dɪɡ/","example_en":"Dig a hole for the new tree.","example_ka":"ახალი ხისთვის ორმო გათხარე.","category":"gardening","level":"A2"},
-  {"english":"Mow","georgian":"თიბვა","pronunciation":"/moʊ/","example_en":"I mow the lawn every Saturday.","example_ka":"გაზონს ყოველ შაბათს ვთიბავ.","category":"gardening","level":"B1"},
-  {"english":"Drought","georgian":"გვალვა","pronunciation":"/draʊt/","example_en":"The drought killed many plants.","example_ka":"გვალვამ ბევრი მცენარე გაანადგურა.","category":"gardening","level":"B2"},
-  {"english":"Pollinate","georgian":"დამტვერვა","pronunciation":"/ˈpɒlɪneɪt/","example_en":"Bees pollinate the flowers.","example_ka":"ფუტკრები ყვავილებს ამტვერავენ.","category":"gardening","level":"B2"},
-  {"english":"Shade","georgian":"ჩრდილი","pronunciation":"/ʃeɪd/","example_en":"Some plants prefer shade.","example_ka":"ზოგიერთი მცენარე ჩრდილს ამჯობინებს.","category":"gardening","level":"A2"},
-  {"english":"Fence","georgian":"ღობე","pronunciation":"/fɛns/","example_en":"Build a fence around the garden.","example_ka":"ბაღის გარშემო ღობე ააშენე.","category":"gardening","level":"A2"},
-  {"english":"Vegetable","georgian":"ბოსტნეული","pronunciation":"/ˈvɛdʒtəbəl/","example_en":"We grow vegetables in the backyard.","example_ka":"ეზოში ბოსტნეულს ვზრდით.","category":"gardening","level":"A1"},
-  {"english":"Fruit","georgian":"ხილი","pronunciation":"/fruːt/","example_en":"The tree bears fruit in summer.","example_ka":"ხე ზაფხულში ხილს ისხამს.","category":"gardening","level":"A1"},
-  {"english":"Mushroom","georgian":"სოკო","pronunciation":"/ˈmʌʃruːm/","example_en":"Mushrooms grow in damp places.","example_ka":"სოკო ნესტიან ადგილებში იზრდება.","category":"gardening","level":"A2"},
-  {"english":"Pollen","georgian":"მტვერი","pronunciation":"/ˈpɒlən/","example_en":"Pollen causes allergies in spring.","example_ka":"მტვერი გაზაფხულზე ალერგიას იწვევს.","category":"gardening","level":"B2"},
-  {"english":"Sapling","georgian":"ნერგი","pronunciation":"/ˈsæplɪŋ/","example_en":"We planted a sapling in the park.","example_ka":"პარკში ნერგი დავრგეთ.","category":"gardening","level":"B1"},
-  {"english":"Topsoil","georgian":"ზედა ფენა","pronunciation":"/ˈtɒpsɔɪl/","example_en":"Add fresh topsoil to the garden bed.","example_ka":"საწოლში ახალი ზედა ფენის ნიადაგი დაამატე.","category":"gardening","level":"B2"},
-  {"english":"Scarecrow","georgian":"საფრთხობელა","pronunciation":"/ˈskɛrkroʊ/","example_en":"The scarecrow keeps birds away.","example_ka":"საფრთხობელა ფრინველებს აშორებს.","category":"gardening","level":"B1"}
+  {
+    "english": "Garden",
+    "georgian": "ბაღი",
+    "pronunciation": "/ˈɡɑːrdən/",
+    "example_en": "She spends weekends in the garden.",
+    "example_ka": "ის შაბათ-კვირას ბაღში ატარებს.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Flower",
+    "georgian": "ყვავილი",
+    "pronunciation": "/ˈflaʊər/",
+    "example_en": "The flower is blooming beautifully.",
+    "example_ka": "ყვავილი ლამაზად ყვავის.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Tree",
+    "georgian": "ხე",
+    "pronunciation": "/triː/",
+    "example_en": "There is a tall tree in the yard.",
+    "example_ka": "ეზოში მაღალი ხე დგას.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Grass",
+    "georgian": "ბალახი",
+    "pronunciation": "/ɡræs/",
+    "example_en": "The grass needs to be cut.",
+    "example_ka": "ბალახი მოჭრა საჭიროებს.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Soil",
+    "georgian": "ნიადაგი",
+    "pronunciation": "/sɔɪl/",
+    "example_en": "The soil here is very fertile.",
+    "example_ka": "აქ ნიადაგი ძალიან ნაყოფიერია.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Seed",
+    "georgian": "თესლი",
+    "pronunciation": "/siːd/",
+    "example_en": "Plant the seeds in spring.",
+    "example_ka": "გაზაფხულზე თესლი დარგე.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Root",
+    "georgian": "ფესვი",
+    "pronunciation": "/ruːt/",
+    "example_en": "The roots go deep into the ground.",
+    "example_ka": "ფესვები ღრმად მიდის მიწაში.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Leaf",
+    "georgian": "ფოთოლი",
+    "pronunciation": "/liːf/",
+    "example_en": "The leaf turned yellow in autumn.",
+    "example_ka": "შემოდგომაზე ფოთოლი გაყვითლდა.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Branch",
+    "georgian": "ტოტი",
+    "pronunciation": "/bræntʃ/",
+    "example_en": "A bird is sitting on the branch.",
+    "example_ka": "ჩიტი ტოტზე ზის.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Bush",
+    "georgian": "ბუჩქი",
+    "pronunciation": "/bʊʃ/",
+    "example_en": "There are roses growing on the bush.",
+    "example_ka": "ბუჩქზე ვარდები იზრდება.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Rose",
+    "georgian": "ვარდი",
+    "pronunciation": "/roʊz/",
+    "example_en": "He gave her a red rose.",
+    "example_ka": "მან მას წითელი ვარდი აჩუქა.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Tulip",
+    "georgian": "ტიტა",
+    "pronunciation": "/ˈtjuːlɪp/",
+    "example_en": "Tulips bloom in spring.",
+    "example_ka": "ტიტები გაზაფხულზე ყვავის.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Sunflower",
+    "georgian": "მზესუმზირა",
+    "pronunciation": "/ˈsʌnˌflaʊər/",
+    "example_en": "Sunflowers always face the sun.",
+    "example_ka": "მზესუმზირა ყოველთვის მზისკენ იხედება.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Daisy",
+    "georgian": "გვირილა",
+    "pronunciation": "/ˈdeɪzi/",
+    "example_en": "She picked daisies from the field.",
+    "example_ka": "მან მინდვრიდან გვირილები დაკრიფა.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Lily",
+    "georgian": "შროშანი",
+    "pronunciation": "/ˈlɪli/",
+    "example_en": "The lily has a strong fragrance.",
+    "example_ka": "შროშანს ძლიერი სურნელი აქვს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Pot",
+    "georgian": "ქოთანი",
+    "pronunciation": "/pɒt/",
+    "example_en": "The plant is in a clay pot.",
+    "example_ka": "მცენარე თიხის ქოთანშია.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Shovel",
+    "georgian": "ნიჩაბი",
+    "pronunciation": "/ˈʃʌvəl/",
+    "example_en": "Use the shovel to dig a hole.",
+    "example_ka": "ორმოს გასათხრელად ნიჩაბი გამოიყენე.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Rake",
+    "georgian": "ფოცხი",
+    "pronunciation": "/reɪk/",
+    "example_en": "Rake the leaves from the lawn.",
+    "example_ka": "გაზონიდან ფოთლები ფოცხით მოაგროვე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Hose",
+    "georgian": "შლანგი",
+    "pronunciation": "/hoʊz/",
+    "example_en": "Water the garden with the hose.",
+    "example_ka": "ბაღი შლანგით მორწყე.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Lawn",
+    "georgian": "გაზონი",
+    "pronunciation": "/lɔːn/",
+    "example_en": "He is mowing the lawn.",
+    "example_ka": "ის გაზონს თიბავს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Weed",
+    "georgian": "სარეველა",
+    "pronunciation": "/wiːd/",
+    "example_en": "Pull out the weeds from the garden.",
+    "example_ka": "ბაღიდან სარეველები ამოიღე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Fertilizer",
+    "georgian": "სასუქი",
+    "pronunciation": "/ˈfɜːrtəlaɪzər/",
+    "example_en": "Add fertilizer to help the plants grow.",
+    "example_ka": "მცენარეების ზრდისთვის სასუქი დაამატე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Hedge",
+    "georgian": "ღობე",
+    "pronunciation": "/hɛdʒ/",
+    "example_en": "Trim the hedge once a month.",
+    "example_ka": "ღობე თვეში ერთხელ გასხვალე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Greenhouse",
+    "georgian": "სათბური",
+    "pronunciation": "/ˈɡriːnhaʊs/",
+    "example_en": "Tomatoes grow well in a greenhouse.",
+    "example_ka": "პამიდორი სათბურში კარგად იზრდება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Compost",
+    "georgian": "კომპოსტი",
+    "pronunciation": "/ˈkɒmpɒst/",
+    "example_en": "Put food scraps in the compost bin.",
+    "example_ka": "საჭმლის ნარჩენები კომპოსტის ყუთში ჩაყარე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Stem",
+    "georgian": "ღერო",
+    "pronunciation": "/stɛm/",
+    "example_en": "The stem of this flower is very long.",
+    "example_ka": "ამ ყვავილის ღერო ძალიან გრძელია.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Petal",
+    "georgian": "ფურცელი",
+    "pronunciation": "/ˈpɛtəl/",
+    "example_en": "Rose petals fell on the ground.",
+    "example_ka": "ვარდის ფურცლები მიწაზე დაცვივდა.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Bud",
+    "georgian": "კვირტი",
+    "pronunciation": "/bʌd/",
+    "example_en": "The buds will open soon.",
+    "example_ka": "კვირტები მალე გაიხსნება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Thorn",
+    "georgian": "ეკალი",
+    "pronunciation": "/θɔːrn/",
+    "example_en": "Be careful of the thorns on the rose.",
+    "example_ka": "ვარდზე ეკლებს უფრთხილდი.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Vine",
+    "georgian": "ვაზი",
+    "pronunciation": "/vaɪn/",
+    "example_en": "The vine climbs up the wall.",
+    "example_ka": "ვაზი კედელზე ადის.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Herb",
+    "georgian": "მწვანილი",
+    "pronunciation": "/hɜːrb/",
+    "example_en": "She grows herbs in the kitchen.",
+    "example_ka": "ის სამზარეულოში მწვანილს ზრდის.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Cactus",
+    "georgian": "კაქტუსი",
+    "pronunciation": "/ˈkæktəs/",
+    "example_en": "A cactus needs very little water.",
+    "example_ka": "კაქტუსს ძალიან ცოტა წყალი სჭირდება.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Orchid",
+    "georgian": "ორქიდეა",
+    "pronunciation": "/ˈɔːrkɪd/",
+    "example_en": "Orchids are delicate flowers.",
+    "example_ka": "ორქიდეები ნაზი ყვავილებია.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Moss",
+    "georgian": "ხავსი",
+    "pronunciation": "/mɒs/",
+    "example_en": "Moss grows on the old stones.",
+    "example_ka": "ძველ ქვებზე ხავსი იზრდება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Fern",
+    "georgian": "გვიმრა",
+    "pronunciation": "/fɜːrn/",
+    "example_en": "Ferns grow well in the shade.",
+    "example_ka": "გვიმრა ჩრდილში კარგად იზრდება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Mulch",
+    "georgian": "მულჩა",
+    "pronunciation": "/mʌltʃ/",
+    "example_en": "Spread mulch around the plants.",
+    "example_ka": "მცენარეების გარშემო მულჩა გაფინე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Prune",
+    "georgian": "გასხვლა",
+    "pronunciation": "/pruːn/",
+    "example_en": "Prune the roses in winter.",
+    "example_ka": "ზამთარში ვარდები გასხვალე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Harvest",
+    "georgian": "მოსავალი",
+    "pronunciation": "/ˈhɑːrvɪst/",
+    "example_en": "The harvest was excellent this year.",
+    "example_ka": "წელს მოსავალი შესანიშნავი იყო.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Bloom",
+    "georgian": "ყვავილობა",
+    "pronunciation": "/bluːm/",
+    "example_en": "Cherry trees bloom in April.",
+    "example_ka": "ალუბლის ხეები აპრილში ყვავის.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Sprout",
+    "georgian": "ღივი",
+    "pronunciation": "/spraʊt/",
+    "example_en": "The seeds have started to sprout.",
+    "example_ka": "თესლმა ღივება დაიწყო.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Irrigation",
+    "georgian": "მორწყვა",
+    "pronunciation": "/ˌɪrɪˈɡeɪʃən/",
+    "example_en": "The irrigation system waters the field.",
+    "example_ka": "სარწყავი სისტემა მინდორს რწყავს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Wheelbarrow",
+    "georgian": "ურიკა",
+    "pronunciation": "/ˈwiːlˌbæroʊ/",
+    "example_en": "Load the dirt into the wheelbarrow.",
+    "example_ka": "მიწა ურიკაში ჩაყარე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Trowel",
+    "georgian": "ბარი",
+    "pronunciation": "/ˈtraʊəl/",
+    "example_en": "Use a trowel to plant the flowers.",
+    "example_ka": "ყვავილების დასარგავად ბარი გამოიყენე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Gloves",
+    "georgian": "ხელთათმანები",
+    "pronunciation": "/ɡlʌvz/",
+    "example_en": "Wear gloves when gardening.",
+    "example_ka": "ბაღში მუშაობისას ხელთათმანები ჩაიცვი.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Plant",
+    "georgian": "მცენარე",
+    "pronunciation": "/plænt/",
+    "example_en": "This plant needs more sunlight.",
+    "example_ka": "ამ მცენარეს მეტი მზის შუქი სჭირდება.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Water",
+    "georgian": "მორწყვა",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Don't forget to water the plants.",
+    "example_ka": "მცენარეების მორწყვა არ დაგავიწყდეს.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Dig",
+    "georgian": "თხრა",
+    "pronunciation": "/dɪɡ/",
+    "example_en": "Dig a hole for the new tree.",
+    "example_ka": "ახალი ხისთვის ორმო გათხარე.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Mow",
+    "georgian": "თიბვა",
+    "pronunciation": "/moʊ/",
+    "example_en": "I mow the lawn every Saturday.",
+    "example_ka": "გაზონს ყოველ შაბათს ვთიბავ.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Drought",
+    "georgian": "გვალვა",
+    "pronunciation": "/draʊt/",
+    "example_en": "The drought killed many plants.",
+    "example_ka": "გვალვამ ბევრი მცენარე გაანადგურა.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Pollinate",
+    "georgian": "დამტვერვა",
+    "pronunciation": "/ˈpɒlɪneɪt/",
+    "example_en": "Bees pollinate the flowers.",
+    "example_ka": "ფუტკრები ყვავილებს ამტვერავენ.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Shade",
+    "georgian": "ჩრდილი",
+    "pronunciation": "/ʃeɪd/",
+    "example_en": "Some plants prefer shade.",
+    "example_ka": "ზოგიერთი მცენარე ჩრდილს ამჯობინებს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Fence",
+    "georgian": "ღობე",
+    "pronunciation": "/fɛns/",
+    "example_en": "Build a fence around the garden.",
+    "example_ka": "ბაღის გარშემო ღობე ააშენე.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Vegetable",
+    "georgian": "ბოსტნეული",
+    "pronunciation": "/ˈvɛdʒtəbəl/",
+    "example_en": "We grow vegetables in the backyard.",
+    "example_ka": "ეზოში ბოსტნეულს ვზრდით.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Fruit",
+    "georgian": "ხილი",
+    "pronunciation": "/fruːt/",
+    "example_en": "The tree bears fruit in summer.",
+    "example_ka": "ხე ზაფხულში ხილს ისხამს.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Mushroom",
+    "georgian": "სოკო",
+    "pronunciation": "/ˈmʌʃruːm/",
+    "example_en": "Mushrooms grow in damp places.",
+    "example_ka": "სოკო ნესტიან ადგილებში იზრდება.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Pollen",
+    "georgian": "მტვერი",
+    "pronunciation": "/ˈpɒlən/",
+    "example_en": "Pollen causes allergies in spring.",
+    "example_ka": "მტვერი გაზაფხულზე ალერგიას იწვევს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Sapling",
+    "georgian": "ნერგი",
+    "pronunciation": "/ˈsæplɪŋ/",
+    "example_en": "We planted a sapling in the park.",
+    "example_ka": "პარკში ნერგი დავრგეთ.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Topsoil",
+    "georgian": "ზედა ფენა",
+    "pronunciation": "/ˈtɒpsɔɪl/",
+    "example_en": "Add fresh topsoil to the garden bed.",
+    "example_ka": "საწოლში ახალი ზედა ფენის ნიადაგი დაამატე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Scarecrow",
+    "georgian": "საფრთხობელა",
+    "pronunciation": "/ˈskɛrkroʊ/",
+    "example_en": "The scarecrow keeps birds away.",
+    "example_ka": "საფრთხობელა ფრინველებს აშორებს.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Watering",
+    "georgian": "მოსარწყად",
+    "pronunciation": "/ˈwɔːtərɪŋ/",
+    "example_en": "The watering can is empty.",
+    "example_ka": "მოსარწყავი ღია ცარიელია.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Pruning",
+    "georgian": "გასხვლა",
+    "pronunciation": "/ˈpruːnɪŋ/",
+    "example_en": "Pruning shears are sharp tools.",
+    "example_ka": "საგასხვლელო მაკრატელები ბასრი იარაღებია.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Pesticide",
+    "georgian": "პესტიციდი",
+    "pronunciation": "/ˈpɛstɪsaɪd/",
+    "example_en": "Use pesticide to control insects.",
+    "example_ka": "მწერების საკონტროლოდ პესტიციდი გამოიყენე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Seedling",
+    "georgian": "ღივი",
+    "pronunciation": "/ˈsiːdlɪŋ/",
+    "example_en": "The seedlings need more light.",
+    "example_ka": "ღივებს მეტი შუქი სჭირდება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Nursery",
+    "georgian": "ნერგებშიდა",
+    "pronunciation": "/ˈnɜːrsəri/",
+    "example_en": "Buy plants from the nursery.",
+    "example_ka": "ნერგებშიდან მცენარეები იყიდე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Grafting",
+    "georgian": "კალმობა",
+    "pronunciation": "/ˈɡræftɪŋ/",
+    "example_en": "Grafting joins two plant parts.",
+    "example_ka": "კალმობა ორი მცენარის ნაწილს აერთებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Transplant",
+    "georgian": "გადარგვა",
+    "pronunciation": "/trænˈsplænt/",
+    "example_en": "Transplant the seedlings carefully.",
+    "example_ka": "ღივები ფრთხილად გადარგე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Germinate",
+    "georgian": "აღმოცენება",
+    "pronunciation": "/ˈdʒɜːrmɪneɪt/",
+    "example_en": "Seeds germinate in warm soil.",
+    "example_ka": "თესლი თბილ ნიადაგში იღივება.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Photosynthesis",
+    "georgian": "ფოტოსინთეზი",
+    "pronunciation": "/ˌfoʊtoʊˈsɪnθəsɪs/",
+    "example_en": "Plants use photosynthesis to make food.",
+    "example_ka": "მცენარეები საკვების გასაკეთებლად ფოტოსინთეზს იყენებენ.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Perennial",
+    "georgian": "მრავალწლოვანი",
+    "pronunciation": "/pəˈrɛniəl/",
+    "example_en": "This perennial comes back every year.",
+    "example_ka": "ეს მრავალწლოვანი ყოველწლიურად ბრუნდება.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Annual",
+    "georgian": "ერთწლოვანი",
+    "pronunciation": "/ˈænjuəl/",
+    "example_en": "Annual plants live for one season.",
+    "example_ka": "ერთწლოვანი მცენარეები ერთ სეზონში ცოცხლობენ.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Biennial",
+    "georgian": "ორწლოვანი",
+    "pronunciation": "/baɪˈɛniəl/",
+    "example_en": "Biennial plants bloom in their second year.",
+    "example_ka": "ორწლოვანი მცენარეები მეორე წელს ყვავის.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Deciduous",
+    "georgian": "ფოთლოვნა",
+    "pronunciation": "/dɪˈsɪdʒuəs/",
+    "example_en": "Deciduous trees lose leaves in autumn.",
+    "example_ka": "ფოთლოვანი ხეები შემოდგომაზე ფოთლებს კარგავენ.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Evergreen",
+    "georgian": "მუდამწვანე",
+    "pronunciation": "/ˈɛvərɡriːn/",
+    "example_en": "Evergreen trees stay green all year.",
+    "example_ka": "მუდამწვანე ხეები მთელი წელი მწვანე რჩება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Hardiness",
+    "georgian": "ცივაგამძლეობა",
+    "pronunciation": "/ˈhɑːrdinəs/",
+    "example_en": "Check the plant's hardiness zone.",
+    "example_ka": "მცენარის ცივაგამძლეობის ზონა შეამოწმე.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Cultivar",
+    "georgian": "კულტივარი",
+    "pronunciation": "/ˈkʌltɪvɑːr/",
+    "example_en": "This rose cultivar is disease resistant.",
+    "example_ka": "ამ ვარდის კულტივარი დაავადებებისადმი მდგრადია.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Hybrid",
+    "georgian": "ჰიბრიდი",
+    "pronunciation": "/ˈhaɪbrɪd/",
+    "example_en": "The hybrid tomato produces larger fruits.",
+    "example_ka": "ჰიბრიდული პამიდორი უფრო დიდ ნაყოფს იღებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Aphid",
+    "georgian": "ტლეები",
+    "pronunciation": "/ˈeɪfɪd/",
+    "example_en": "Aphids are damaging the rose bush.",
+    "example_ka": "ტლეები ვარდის ბუჩქს აზიანებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Ladybug",
+    "georgian": "ბიჭი",
+    "pronunciation": "/ˈleɪdiˌbʌɡ/",
+    "example_en": "Ladybugs eat harmful insects.",
+    "example_ka": "ბიჭი მავნე მწერებს ჭამს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Caterpillar",
+    "georgian": "მატლი",
+    "pronunciation": "/ˈkætərˌpɪlər/",
+    "example_en": "The caterpillar is eating the leaves.",
+    "example_ka": "მატლი ფოთლებს ჭამს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Beetle",
+    "georgian": "ხოვერი",
+    "pronunciation": "/ˈbitəl/",
+    "example_en": "The beetle destroyed the crop.",
+    "example_ka": "ხოვერმა მოსავალი გაანადგურა.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Spider",
+    "georgian": "ობობა",
+    "pronunciation": "/ˈspaɪdər/",
+    "example_en": "Garden spiders help control pests.",
+    "example_ka": "ბაღის ობობები მავნებლების კონტროლში ეხმარება.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Butterfly",
+    "georgian": "პეპელა",
+    "pronunciation": "/ˈbʌtərflaɪ/",
+    "example_en": "Butterflies help pollinate flowers.",
+    "example_ka": "პეპელები ყვავილების დამტვერვაში ეხმარება.",
+    "category": "gardening",
+    "level": "A1"
+  },
+  {
+    "english": "Earthworm",
+    "georgian": "მიწის ჭია",
+    "pronunciation": "/ˈɜːrθwɜːrm/",
+    "example_en": "Earthworms improve soil quality.",
+    "example_ka": "მიწის ჭიები ნიადაგის ხარისხს აუმჯობესებს.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Snail",
+    "georgian": "ლოკოკინა",
+    "pronunciation": "/sneɪl/",
+    "example_en": "Snails can damage young plants.",
+    "example_ka": "ლოკოკინებმა შეიძლება ახალგაზრდა მცენარეები დააზიანოს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Slug",
+    "georgian": "ლურჯი",
+    "pronunciation": "/slʌɡ/",
+    "example_en": "Slugs eat the lettuce leaves.",
+    "example_ka": "ლურჯები სალატის ფოთლებს ჭამენ.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Beneficial",
+    "georgian": "სასარგებლო",
+    "pronunciation": "/ˌbɛnɪˈfɪʃəl/",
+    "example_en": "Bees are beneficial insects.",
+    "example_ka": "ფუტკრები სასარგებლო მწერებია.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Organic",
+    "georgian": "ბუნებრივი",
+    "pronunciation": "/ɔːrˈɡænɪk/",
+    "example_en": "Use organic methods to grow vegetables.",
+    "example_ka": "ბოსტნეულის მოსაზრდელად ბუნებრივი მეთოდები გამოიყენე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Chemical",
+    "georgian": "ქიმიური",
+    "pronunciation": "/ˈkɛmɪkəl/",
+    "example_en": "Avoid chemical fertilizers near water.",
+    "example_ka": "წყლის ახლოს ქიმიური სასუქების გამოყენება აიცილე.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Synthetic",
+    "georgian": "ხელოვნური",
+    "pronunciation": "/sɪnˈθɛtɪk/",
+    "example_en": "Synthetic pesticides can harm wildlife.",
+    "example_ka": "ხელოვნურმა პესტიციდებმა შეიძლება ცხოველებს ზიანი მიაყენოს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Natural",
+    "georgian": "ბუნებრივი",
+    "pronunciation": "/ˈnætʃərəl/",
+    "example_en": "Natural compost improves the soil.",
+    "example_ka": "ბუნებრივი კომპოსტი ნიადაგს აუმჯობესებს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Sustainable",
+    "georgian": "მდგრადი",
+    "pronunciation": "/səˈsteɪnəbəl/",
+    "example_en": "Practice sustainable gardening methods.",
+    "example_ka": "მდგრადი ბაღის მოყვანის მეთოდები გამოიყენე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Biodiversity",
+    "georgian": "ბიომრავალფეროვნება",
+    "pronunciation": "/ˌbaɪoʊdaɪˈvɜːrsəti/",
+    "example_en": "Gardens support local biodiversity.",
+    "example_ka": "ბაღები ადგილობრივ ბიომრავალფეროვნებას უჭერს მხარს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Ecosystem",
+    "georgian": "ეკოსისტემა",
+    "pronunciation": "/ˈiːkoʊˌsɪstəm/",
+    "example_en": "A healthy garden is a balanced ecosystem.",
+    "example_ka": "ჯანსაღი ბაღი დაბალანსებული ეკოსისტემაა.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Companion",
+    "georgian": "თანამგზავრი",
+    "pronunciation": "/kəmˈpænjən/",
+    "example_en": "Basil is a companion plant for tomatoes.",
+    "example_ka": "რეჰანი პამიდვრის თანამგზავრი მცენარეა.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Rotation",
+    "georgian": "როტაცია",
+    "pronunciation": "/roʊˈteɪʃən/",
+    "example_en": "Crop rotation prevents soil depletion.",
+    "example_ka": "მოსავლის როტაცია ნიადაგის გამოფიტვას თავიდან აიცილებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Succession",
+    "georgian": "მემკვიდრეობა",
+    "pronunciation": "/səkˈsɛʃən/",
+    "example_en": "Plant succession extends the harvest season.",
+    "example_ka": "მცენარეული მემკვიდრეობა მოსავლის სეზონს ახანგრძლივებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Dormancy",
+    "georgian": "სიძილე",
+    "pronunciation": "/ˈdɔːrmənsɪ/",
+    "example_en": "Plants enter dormancy in winter.",
+    "example_ka": "მცენარეები ზამთარში სიძილეს ეღებებიან.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Vigor",
+    "georgian": "ენერგია",
+    "pronunciation": "/ˈvɪɡər/",
+    "example_en": "The plant shows good vigor this season.",
+    "example_ka": "მცენარე ამ სეზონში კარგ ენერგიას ავლენს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Resilience",
+    "georgian": "მდგრადობა",
+    "pronunciation": "/rɪˈzɪliəns/",
+    "example_en": "Native plants show greater resilience.",
+    "example_ka": "ადგილობრივი მცენარეები უფრო დიდ მდგრადობას ავლენენ.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Adaptation",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˌædæpˈteɪʃən/",
+    "example_en": "Plant adaptation to climate takes time.",
+    "example_ka": "მცენარის კლიმატზე ადაპტაცია დროს საჭიროებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Microclimate",
+    "georgian": "მიკროკლიმატი",
+    "pronunciation": "/ˈmaɪkroʊˌklaɪmət/",
+    "example_en": "Create a microclimate for tender plants.",
+    "example_ka": "ნაზი მცენარეებისთვის მიკროკლიმატი შექმენი.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Humidity",
+    "georgian": "ტენიანობა",
+    "pronunciation": "/hjuˈmɪdəti/",
+    "example_en": "High humidity helps tropical plants.",
+    "example_ka": "მაღალი ტენიანობა ტროპიკული მცენარეების დახმარება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Drainage",
+    "georgian": "დრენაჟი",
+    "pronunciation": "/ˈdreɪnɪdʒ/",
+    "example_en": "Good drainage prevents root rot.",
+    "example_ka": "კარგი დრენაჟი ფესვების გამწვალვას აიცილებს.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Aeration",
+    "georgian": "ვენტილაცია",
+    "pronunciation": "/ɛrˈeɪʃən/",
+    "example_en": "Soil aeration improves root growth.",
+    "example_ka": "ნიადაგის ვენტილაცია ფესვების ზრდას აუმჯობესებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Compaction",
+    "georgian": "შეკუმშვა",
+    "pronunciation": "/kəmˈpækʃən/",
+    "example_en": "Soil compaction limits plant growth.",
+    "example_ka": "ნიადაგის შეკუმშვა მცენარის ზრდას ზღუდავს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Amendment",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/əˈmɛndmənt/",
+    "example_en": "Add soil amendments before planting.",
+    "example_ka": "დარგვამდე ნიადაგის გაუმჯობესება დაამატე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Acidity",
+    "georgian": "მჟავიანობა",
+    "pronunciation": "/əˈsɪdəti/",
+    "example_en": "Test the soil acidity level.",
+    "example_ka": "ნიადაგის მჟავიანობის დონე შეამოწმე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Alkalinity",
+    "georgian": "ტუტიანობა",
+    "pronunciation": "/ˌælkəˈlɪnəti/",
+    "example_en": "High alkalinity affects nutrient uptake.",
+    "example_ka": "მაღალი ტუტიანობა საკვები ნივთიერებების მიღებას ზემოქმედებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Nutrients",
+    "georgian": "საკვები ნივთიერებები",
+    "pronunciation": "/ˈnutriənts/",
+    "example_en": "Plants need various nutrients to grow.",
+    "example_ka": "მცენარეებს ზრდისთვის სხვადასხვა საკვები ნივთიერება სჭირდება.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Nitrogen",
+    "georgian": "ნიტროგენი",
+    "pronunciation": "/ˈnaɪtrədʒən/",
+    "example_en": "Nitrogen promotes leafy growth.",
+    "example_ka": "ნიტროგენი ფოთლოვან ზრდას უწყობს ხელს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Phosphorus",
+    "georgian": "ფოსფორი",
+    "pronunciation": "/ˈfɑsfərəs/",
+    "example_en": "Phosphorus helps root development.",
+    "example_ka": "ფოსფორი ფესვების განვითარებას ეხმარება.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Potassium",
+    "georgian": "კალიუმი",
+    "pronunciation": "/pəˈtæsiəm/",
+    "example_en": "Potassium strengthens plant immunity.",
+    "example_ka": "კალიუმი მცენარის იმუნიტეტს ამაგრებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Calcium",
+    "georgian": "კალციუმი",
+    "pronunciation": "/ˈkælsiəm/",
+    "example_en": "Calcium prevents blossom end rot.",
+    "example_ka": "კალციუმი ყვავილის ბოლოს გამწვალვას აიცილებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Magnesium",
+    "georgian": "მაგნიუმი",
+    "pronunciation": "/mæɡˈniziəm/",
+    "example_en": "Magnesium is essential for chlorophyll.",
+    "example_ka": "მაგნიუმი ქლოროფილისთვის აუცილებელია.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Sulfur",
+    "georgian": "გოგირდი",
+    "pronunciation": "/ˈsʌlfər/",
+    "example_en": "Sulfur helps protein synthesis.",
+    "example_ka": "გოგირდი ცილის სინთეზს ეხმარება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Iron",
+    "georgian": "რკინა",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "Iron deficiency causes yellowing leaves.",
+    "example_ka": "რკინის დეფიციტი ფოთლების გაყვითლებას იწვევს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Manganese",
+    "georgian": "მანგანუმი",
+    "pronunciation": "/ˈmæŋɡəniːz/",
+    "example_en": "Manganese aids in photosynthesis.",
+    "example_ka": "მანგანუმი ფოტოსინთეზში ეხმარება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Zinc",
+    "georgian": "თუთია",
+    "pronunciation": "/zɪŋk/",
+    "example_en": "Zinc supports enzyme function.",
+    "example_ka": "თუთია ფერმენტების ფუნქციას უჭერს მხარს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Boron",
+    "georgian": "ბორონი",
+    "pronunciation": "/ˈbɔrɑn/",
+    "example_en": "Boron is needed for cell walls.",
+    "example_ka": "ბორონი უჯრედის კედლებისთვისაა საჭირო.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Copper",
+    "georgian": "სპილენძი",
+    "pronunciation": "/ˈkɑpər/",
+    "example_en": "Copper helps in enzyme reactions.",
+    "example_ka": "სპილენძი ფერმენტული რეაქციების დახმარება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Molybdenum",
+    "georgian": "მოლიბდენი",
+    "pronunciation": "/məˈlɪbdənəm/",
+    "example_en": "Molybdenum aids nitrogen fixation.",
+    "example_ka": "მოლიბდენი ნიტროგენის ფიქსაციას ეხმარება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Chlorophyll",
+    "georgian": "ქლოროფილი",
+    "pronunciation": "/ˈklɔrəfɪl/",
+    "example_en": "Chlorophyll gives plants their green color.",
+    "example_ka": "ქლოროფილი მცენარეებს მწვანე ფერს აძლევს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Stomata",
+    "georgian": "სტომატები",
+    "pronunciation": "/ˈstoʊmətə/",
+    "example_en": "Stomata control gas exchange.",
+    "example_ka": "სტომატები აირების გაცვლას აკონტროლებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Transpiration",
+    "georgian": "ოფლვა",
+    "pronunciation": "/ˌtrænspəˈreɪʃən/",
+    "example_en": "Transpiration cools the plant.",
+    "example_ka": "ოფლვა მცენარეს აგრილებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Respiration",
+    "georgian": "სუნთქვა",
+    "pronunciation": "/ˌrɛspəˈreɪʃən/",
+    "example_en": "Plant respiration occurs day and night.",
+    "example_ka": "მცენარის სუნთქვა დღე-ღამე ხდება.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Metabolism",
+    "georgian": "ნივთიერებათა ცვლა",
+    "pronunciation": "/məˈtæbəˌlɪzəm/",
+    "example_en": "Plant metabolism slows in cold weather.",
+    "example_ka": "მცენარის ნივთიერებათა ცვლა ცივ ამინდში იკლებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Auxin",
+    "georgian": "აუქსინი",
+    "pronunciation": "/ˈɔksɪn/",
+    "example_en": "Auxin promotes cell elongation.",
+    "example_ka": "აუქსინი უჯრედების გაგრძელებას ხელს უწყობს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Gibberellin",
+    "georgian": "გიბერელინი",
+    "pronunciation": "/ˌdʒɪbəˈrɛlɪn/",
+    "example_en": "Gibberellin stimulates stem growth.",
+    "example_ka": "გიბერელინი ღეროს ზრდას სტიმულირებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Cytokinin",
+    "georgian": "ციტოკინინი",
+    "pronunciation": "/ˌsaɪtoʊˈkaɪnɪn/",
+    "example_en": "Cytokinin promotes cell division.",
+    "example_ka": "ციტოკინინი უჯრედების გაყოფას ხელს უწყობს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Ethylene",
+    "georgian": "ეთილენი",
+    "pronunciation": "/ˈɛθəˌlin/",
+    "example_en": "Ethylene triggers fruit ripening.",
+    "example_ka": "ეთილენი ხილის მომწიფებას იწვევს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Abscisic",
+    "georgian": "აბსცისური",
+    "pronunciation": "/æbˈsɪsɪk/",
+    "example_en": "Abscisic acid helps plants survive drought.",
+    "example_ka": "აბსცისური მჟავა მცენარეებს გვალვის გადარჩენაში ეხმარება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Hormone",
+    "georgian": "ჰორმონი",
+    "pronunciation": "/ˈhɔrmoʊn/",
+    "example_en": "Plant hormones regulate growth.",
+    "example_ka": "მცენარეული ჰორმონები ზრდას აკონტროლებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Enzyme",
+    "georgian": "ფერმენტი",
+    "pronunciation": "/ˈɛnzaɪm/",
+    "example_en": "Enzymes speed up chemical reactions.",
+    "example_ka": "ფერმენტები ქიმიურ რეაქციებს აჩქარებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Protein",
+    "georgian": "ცილა",
+    "pronunciation": "/ˈproʊtin/",
+    "example_en": "Plants synthesize their own proteins.",
+    "example_ka": "მცენარეები თავად ასინთეზირებენ ცილებს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Carbohydrate",
+    "georgian": "ნახშირწყალი",
+    "pronunciation": "/ˌkɑrboʊˈhaɪdreɪt/",
+    "example_en": "Plants store energy as carbohydrates.",
+    "example_ka": "მცენარეები ენერგიას ნახშირწყლების სახით ინახავენ.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Glucose",
+    "georgian": "გლუკოზა",
+    "pronunciation": "/ˈɡlukos/",
+    "example_en": "Photosynthesis produces glucose.",
+    "example_ka": "ფოტოსინთეზი გლუკოზას ქმნის.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Starch",
+    "georgian": "სახამებელი",
+    "pronunciation": "/stɑrtʃ/",
+    "example_en": "Plants store starch in their roots.",
+    "example_ka": "მცენარეები სახამებელს ფესვებში ინახავენ.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Cellulose",
+    "georgian": "ცელულოზა",
+    "pronunciation": "/ˈsɛljəloʊs/",
+    "example_en": "Cellulose gives strength to plant cells.",
+    "example_ka": "ცელულოზა მცენარის უჯრედებს სიმტკიცეს აძლევს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Lignin",
+    "georgian": "ლიგნინი",
+    "pronunciation": "/ˈlɪɡnɪn/",
+    "example_en": "Lignin makes wood hard and strong.",
+    "example_ka": "ლიგნინი ხეს მყარს და მტკიცეს ხდის.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Cuticle",
+    "georgian": "კუტიკული",
+    "pronunciation": "/ˈkjutɪkəl/",
+    "example_en": "The waxy cuticle prevents water loss.",
+    "example_ka": "ცვილოვანი კუტიკული წყლის დაკარგვას ამუნჯავს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Epidermis",
+    "georgian": "ეპიდერმისი",
+    "pronunciation": "/ˌɛpɪˈdɜrmɪs/",
+    "example_en": "The epidermis is the outer cell layer.",
+    "example_ka": "ეპიდერმისი გარე უჯრედული ფენაა.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Cambium",
+    "georgian": "კამბიუმი",
+    "pronunciation": "/ˈkæmbiəm/",
+    "example_en": "The cambium produces new wood.",
+    "example_ka": "კამბიუმი ახალ ხეს ქმნის.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Xylem",
+    "georgian": "ქსილემა",
+    "pronunciation": "/ˈzaɪləm/",
+    "example_en": "Xylem transports water upward.",
+    "example_ka": "ქსილემა წყალს ზევით გადააქვს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Phloem",
+    "georgian": "ფლოემა",
+    "pronunciation": "/ˈfloʊəm/",
+    "example_en": "Phloem carries sugars throughout the plant.",
+    "example_ka": "ფლოემა შაქარს მცენარეში ატარებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Meristem",
+    "georgian": "მერისტემა",
+    "pronunciation": "/ˈmɛrɪstɛm/",
+    "example_en": "Meristem tissue produces new growth.",
+    "example_ka": "მერისტემული ქსოვილი ახალ ზრდას ქმნის.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Apical",
+    "georgian": "წვერული",
+    "pronunciation": "/ˈeɪpɪkəl/",
+    "example_en": "Apical meristem is at the growing tip.",
+    "example_ka": "წვერული მერისტემა მზარდ წვერშია.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Lateral",
+    "georgian": "გვერდითი",
+    "pronunciation": "/ˈlætərəl/",
+    "example_en": "Lateral buds form side branches.",
+    "example_ka": "გვერდითი კვირტები გვერდით ტოტებს ქმნიან.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Terminal",
+    "georgian": "ტერმინალური",
+    "pronunciation": "/ˈtɜrmənəl/",
+    "example_en": "The terminal bud grows at the tip.",
+    "example_ka": "ტერმინალური კვირტი წვერში იზრდება.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Adventitious",
+    "georgian": "დამატებითი",
+    "pronunciation": "/ˌædvənˈtɪʃəs/",
+    "example_en": "Adventitious roots grow from stems.",
+    "example_ka": "დამატებითი ფესვები ღეროებიდან იზრდება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Taproot",
+    "georgian": "მთავარი ფესვი",
+    "pronunciation": "/ˈtæpˌrut/",
+    "example_en": "Carrots have a large taproot.",
+    "example_ka": "სტაფილოს დიდი მთავარი ფესვი აქვს.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Fibrous",
+    "georgian": "ბოჭკოვანი",
+    "pronunciation": "/ˈfaɪbrəs/",
+    "example_en": "Grass has fibrous roots.",
+    "example_ka": "ბალახს ბოჭკოვანი ფესვები აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Rhizome",
+    "georgian": "რიზომა",
+    "pronunciation": "/ˈraɪzoʊm/",
+    "example_en": "Iris spreads through underground rhizomes.",
+    "example_ka": "ისრისი მიწისქვეშა რიზომებით ვრცელდება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Stolon",
+    "georgian": "სტოლონი",
+    "pronunciation": "/ˈstoʊlən/",
+    "example_en": "Strawberry plants produce stolons.",
+    "example_ka": "მარწყვის მცენარეები სტოლონებს ქმნით.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Tuber",
+    "georgian": "კუმელი",
+    "pronunciation": "/ˈtubər/",
+    "example_en": "Potatoes are edible tubers.",
+    "example_ka": "კარტოფილი საკვები კუმელია.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Bulb",
+    "georgian": "ბოლქვი",
+    "pronunciation": "/bʌlb/",
+    "example_en": "Onions grow from bulbs.",
+    "example_ka": "ხახვი ბოლქვებისგან იზრდება.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Corm",
+    "georgian": "კორმი",
+    "pronunciation": "/kɔrm/",
+    "example_en": "Crocus grows from a corm.",
+    "example_ka": "ყვითელი ყვავილი კორმისგან იზრდება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Node",
+    "georgian": "კვანძი",
+    "pronunciation": "/noʊd/",
+    "example_en": "Leaves grow from stem nodes.",
+    "example_ka": "ფოთლები ღეროს კვანძებისგან იზრდება.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Internode",
+    "georgian": "კვანძთაშორისი",
+    "pronunciation": "/ˈɪntərnoʊd/",
+    "example_en": "The internode is the space between nodes.",
+    "example_ka": "კვანძთაშორისი კვანძებს შორის სივრცეა.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Petiole",
+    "georgian": "ფოთლის ღერო",
+    "pronunciation": "/ˈpɛtioʊl/",
+    "example_en": "The petiole connects leaf to stem.",
+    "example_ka": "ფოთლის ღერო ფოთოლს ღეროსთან აკავშირებს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Blade",
+    "georgian": "ფირფიტა",
+    "pronunciation": "/bleɪd/",
+    "example_en": "The leaf blade captures sunlight.",
+    "example_ka": "ფოთლის ფირფიტა მზის შუქს იჭერს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Stipule",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈstɪpjul/",
+    "example_en": "Some plants have stipules at leaf bases.",
+    "example_ka": "ზოგიერთ მცენარეს ფოთლის ძირში დანამატები აქვს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Venation",
+    "georgian": "ძარღვული",
+    "pronunciation": "/vɪˈneɪʃən/",
+    "example_en": "Leaf venation patterns help identify plants.",
+    "example_ka": "ფოთლის ძარღვული ნიმუშები მცენარეთა იდენტიფიკაციაში ეხმარება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Pinnate",
+    "georgian": "ფრთისებური",
+    "pronunciation": "/ˈpɪneɪt/",
+    "example_en": "Rose leaves have pinnate venation.",
+    "example_ka": "ვარდის ფოთლებს ფრთისებური ძარღვული აქვს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Palmate",
+    "georgian": "ხელისგულისებური",
+    "pronunciation": "/ˈpælmeɪt/",
+    "example_en": "Maple leaves are palmate.",
+    "example_ka": "ნეკერჩხლის ფოთლები ხელისგულისებურია.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Parallel",
+    "georgian": "პარალელური",
+    "pronunciation": "/ˈpærəlel/",
+    "example_en": "Grass has parallel leaf venation.",
+    "example_ka": "ბალახს პარალელური ფოთლოვანი ძარღვული აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Serrated",
+    "georgian": "კბილწვეტიანი",
+    "pronunciation": "/səˈreɪtəd/",
+    "example_en": "Many leaves have serrated edges.",
+    "example_ka": "ბევრ ფოთოლს კბილწვეტიანი კიდეები აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Lobed",
+    "georgian": "წანაზარდიანი",
+    "pronunciation": "/loʊbd/",
+    "example_en": "Oak leaves are deeply lobed.",
+    "example_ka": "მუხის ფოთლები ღრმად წანაზარდიანია.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Compound",
+    "georgian": "რთული",
+    "pronunciation": "/ˈkɑmpaʊnd/",
+    "example_en": "Some plants have compound leaves.",
+    "example_ka": "ზოგ მცენარეს რთული ფოთლები აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Simple",
+    "georgian": "მარტივი",
+    "pronunciation": "/ˈsɪmpəl/",
+    "example_en": "Most trees have simple leaves.",
+    "example_ka": "ხეების უმეტესობას მარტივი ფოთლები აქვს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Opposite",
+    "georgian": "საპირისპირო",
+    "pronunciation": "/ˈɑpəzət/",
+    "example_en": "These leaves grow in opposite pairs.",
+    "example_ka": "ეს ფოთლები საპირისპირო წყვილებით იზრდება.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Alternate",
+    "georgian": "მონაცვლეობითი",
+    "pronunciation": "/ˈɔltərnət/",
+    "example_en": "Alternate leaf arrangement is common.",
+    "example_ka": "ფოთლების მონაცვლეობითი განლაგება გავრცელებულია.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Whorled",
+    "georgian": "ვირტაკოვანი",
+    "pronunciation": "/wɜrld/",
+    "example_en": "Some plants have whorled leaf patterns.",
+    "example_ka": "ზოგ მცენარეს ვირტაკოვანი ფოთლოვანი ნიმუში აქვს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Sessile",
+    "georgian": "უღეროვანი",
+    "pronunciation": "/ˈsesaɪl/",
+    "example_en": "Sessile leaves attach directly to stems.",
+    "example_ka": "უღეროვანი ფოთლები პირდაპირ ღეროს ერთვება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Clasping",
+    "georgian": "გადამაბღუჯი",
+    "pronunciation": "/ˈklæspɪŋ/",
+    "example_en": "Clasping leaves wrap around the stem.",
+    "example_ka": "გადამაბღუჯი ფოთლები ღეროს ატყუპებენ.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Sheath",
+    "georgian": "გარსი",
+    "pronunciation": "/ʃiθ/",
+    "example_en": "Grass leaves have a protective sheath.",
+    "example_ka": "ბალახის ფოთლებს დამცავი გარსი აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Ligule",
+    "georgian": "ენაკი",
+    "pronunciation": "/ˈlɪɡjul/",
+    "example_en": "The ligule is found in grass leaves.",
+    "example_ka": "ენაკი ბალახის ფოთლებში მოიპოვება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Auricle",
+    "georgian": "ყური",
+    "pronunciation": "/ˈɔrɪkəl/",
+    "example_en": "Some grass species have auricles.",
+    "example_ka": "ბალახის ზოგიერთ სახეობას ყურები აქვს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Midrib",
+    "georgian": "ცენტრალური ძარღვი",
+    "pronunciation": "/ˈmɪdrɪb/",
+    "example_en": "The midrib runs down the leaf center.",
+    "example_ka": "ცენტრალური ძარღვი ფოთლის ცენტრში გადის.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Margin",
+    "georgian": "კიდე",
+    "pronunciation": "/ˈmɑrdʒən/",
+    "example_en": "Examine the leaf margin closely.",
+    "example_ka": "ფოთლის კიდე ყურადღებით შეისწავლე.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Apex",
+    "georgian": "წვერი",
+    "pronunciation": "/ˈeɪpeks/",
+    "example_en": "The leaf apex can be pointed or rounded.",
+    "example_ka": "ფოთლის წვერი შეიძლება დაჭრილი ან დამრგვალებული იყოს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Base",
+    "georgian": "საფუძველი",
+    "pronunciation": "/beɪs/",
+    "example_en": "The leaf base connects to the petiole.",
+    "example_ka": "ფოთლის საფუძველი ღეროსთან უკავშირდება.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Cordate",
+    "georgian": "გულისებური",
+    "pronunciation": "/ˈkɔrdeɪt/",
+    "example_en": "Heart-shaped leaves are called cordate.",
+    "example_ka": "გულის ფორმის ფოთლებს გულისებური ეწოდება.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Ovate",
+    "georgian": "კვერცხისებური",
+    "pronunciation": "/ˈoʊveɪt/",
+    "example_en": "Ovate leaves are egg-shaped.",
+    "example_ka": "კვერცხისებური ფოთლები კვერცხის ფორმისაა.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Lanceolate",
+    "georgian": "შუბისპირისებური",
+    "pronunciation": "/ˈlænsioʊlət/",
+    "example_en": "Lanceolate leaves are narrow and pointed.",
+    "example_ka": "შუბისპირისებური ფოთლები ვიწრო და წაწვეტებულია.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Linear",
+    "georgian": "ხაზისებური",
+    "pronunciation": "/ˈlɪniər/",
+    "example_en": "Grass has linear leaves.",
+    "example_ka": "ბალახს ხაზისებური ფოთლები აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Elliptical",
+    "georgian": "ელიფსისებური",
+    "pronunciation": "/ɪˈlɪptɪkəl/",
+    "example_en": "Many trees have elliptical leaves.",
+    "example_ka": "ბევრ ხეს ელიფსისებური ფოთლები აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Orbicular",
+    "georgian": "მრგვალი",
+    "pronunciation": "/ɔrˈbɪkjələr/",
+    "example_en": "Water lilies have orbicular leaves.",
+    "example_ka": "წყლის ლილიას მრგვალი ფოთლები აქვს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Reniform",
+    "georgian": "ერკვისებური",
+    "pronunciation": "/ˈriːnɪfɔrm/",
+    "example_en": "Kidney-shaped leaves are reniform.",
+    "example_ka": "ერკვის ფორმის ფოთლები ერკვისებურია.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Peltate",
+    "georgian": "ფარისებური",
+    "pronunciation": "/ˈpelteɪt/",
+    "example_en": "Some aquatic plants have peltate leaves.",
+    "example_ka": "ზოგიერთ წყლის მცენარეს ფარისებური ფოთლები აქვს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Succulent",
+    "georgian": "წვნიანი",
+    "pronunciation": "/ˈsʌkjələnt/",
+    "example_en": "Succulent plants store water in leaves.",
+    "example_ka": "წვნიანი მცენარეები წყალს ფოთლებში ინახავენ.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Waxy",
+    "georgian": "ცვილოვანი",
+    "pronunciation": "/ˈwæksi/",
+    "example_en": "Some leaves have a waxy coating.",
+    "example_ka": "ზოგიერთ ფოთოლს ცვილოვანი საფარი აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Hairy",
+    "georgian": "ბეწვიანი",
+    "pronunciation": "/ˈheəri/",
+    "example_en": "Many desert plants have hairy leaves.",
+    "example_ka": "ბევრ უდაბნოს მცენარეს ბეწვიანი ფოთლები აქვს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Smooth",
+    "georgian": "გლუვი",
+    "pronunciation": "/smuð/",
+    "example_en": "These leaves feel smooth to touch.",
+    "example_ka": "ეს ფოთლები შეხებისას გლუვია.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Rough",
+    "georgian": "უხეში",
+    "pronunciation": "/rʌf/",
+    "example_en": "Some plant leaves feel rough.",
+    "example_ka": "ზოგიერთი მცენარის ფოთლები უხეშია.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Glossy",
+    "georgian": "ბრჭყვიალა",
+    "pronunciation": "/ˈɡlɔsi/",
+    "example_en": "Holly leaves are dark and glossy.",
+    "example_ka": "კუნჭულის ფოთლები მუქი და ბრჭყვიალაა.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Dull",
+    "georgian": "მშრალი",
+    "pronunciation": "/dʌl/",
+    "example_en": "Some leaves have a dull appearance.",
+    "example_ka": "ზოგიერთ ფოთოლს მშრალი გარეგნობა აქვს.",
+    "category": "gardening",
+    "level": "A2"
+  },
+  {
+    "english": "Variegated",
+    "georgian": "ლაქიანი",
+    "pronunciation": "/ˈveəriəˌɡeɪtəd/",
+    "example_en": "Variegated leaves have multiple colors.",
+    "example_ka": "ლაქიან ფოთლებს რამდენიმე ფერი აქვს.",
+    "category": "gardening",
+    "level": "B2"
+  },
+  {
+    "english": "Chlorosis",
+    "georgian": "ქლოროზი",
+    "pronunciation": "/kləˈroʊsəs/",
+    "example_en": "Chlorosis causes leaves to turn yellow.",
+    "example_ka": "ქლოროზი ფოთლების გაყვითლებას იწვევს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Necrosis",
+    "georgian": "ნეკროზი",
+    "pronunciation": "/nəˈkroʊsəs/",
+    "example_en": "Necrosis causes tissue death.",
+    "example_ka": "ნეკროზი ქსოვილის სიკვდილს იწვევს.",
+    "category": "gardening",
+    "level": "C1"
+  },
+  {
+    "english": "Wilting",
+    "georgian": "ხმობა",
+    "pronunciation": "/ˈwɪltɪŋ/",
+    "example_en": "Wilting indicates water stress.",
+    "example_ka": "ხმობა წყლის სტრესზე მიუთითებს.",
+    "category": "gardening",
+    "level": "B1"
+  },
+  {
+    "english": "Drooping",
+    "georgian": "ჩამონგრევა",
+    "pronunciation": "/ˈdrupɪŋ/",
+    "example_en": "Drooping leaves need immediate water.",
+    "example_ka": "ჩამონგრეული ფოთლებისთვის დაუყოვნებლივ წყალი სჭირდება.",
+    "category": "gardening",
+    "level": "B1"
+  }
 ]

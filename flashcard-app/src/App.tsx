@@ -164,7 +164,7 @@ export default function App() {
       {screen === 'study' && activeDeck && (
         studyMode === 'srs'
           ? <SRSStudy cards={activeDeck.cards} deckId={activeDeck.id} onBack={handleBack} />
-          : <StudyScreen key={activeDeck.id + '-' + studyMode} deck={activeDeck} direction={studyMode === 'reverse' ? 'ka-en' : studyMode === 'mixed' ? 'mixed' : 'en-ka'} onBack={handleBack} onNextDeck={getNextDeck() ? handleNextDeck : undefined} nextDeckName={getNextDeck()?.name} />
+          : <StudyScreen key={activeDeck.id + '-' + studyMode} deck={activeDeck} direction={studyMode === 'reverse' ? 'ka-en' : studyMode === 'mixed' ? 'mixed' : 'en-ka'} onBack={handleBack} />
       )}
       {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={decks.flatMap(d => d.cards)} onBack={handleBack} />}
       {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}

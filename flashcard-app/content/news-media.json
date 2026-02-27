@@ -1,27 +1,1623 @@
 [
-  {"english": "headline", "georgian": "სათაური", "pronunciation": "ˈhedlaɪn", "example_en": "Did you see the headline today?", "example_ka": "დღევანდელი სათაური ნახე?", "category": "News & Media", "level": "A2"},
-  {"english": "breaking news", "georgian": "სასწრაფო ახალი ამბები", "pronunciation": "ˈbreɪkɪŋ njuːz", "example_en": "Breaking news: earthquake in Turkey.", "example_ka": "სასწრაფო ახალი ამბები: მიწისძვრა თურქეთში.", "category": "News & Media", "level": "A2"},
-  {"english": "journalist", "georgian": "ჟურნალისტი", "pronunciation": "ˈdʒɜːrnəlɪst", "example_en": "The journalist interviewed the president.", "example_ka": "ჟურნალისტმა პრეზიდენტს ინტერვიუ ჩამოართვა.", "category": "News & Media", "level": "A2"},
-  {"english": "source", "georgian": "წყარო", "pronunciation": "sɔːrs", "example_en": "Always check your sources.", "example_ka": "ყოველთვის შეამოწმე შენი წყაროები.", "category": "News & Media", "level": "B1"},
-  {"english": "broadcast", "georgian": "მაუწყებლობა", "pronunciation": "ˈbrɔːdkɑːst", "example_en": "The game will be broadcast live.", "example_ka": "თამაში პირდაპირ ეთერში გადაიცემა.", "category": "News & Media", "level": "B1"},
-  {"english": "reporter", "georgian": "რეპორტიორი", "pronunciation": "rɪˈpɔːrtər", "example_en": "The reporter is live from the scene.", "example_ka": "რეპორტიორი შემთხვევის ადგილიდან ცოცხალ ეთერშია.", "category": "News & Media", "level": "A2"},
-  {"english": "fake news", "georgian": "ყალბი ახალი ამბები", "pronunciation": "feɪk njuːz", "example_en": "Don't believe everything — it might be fake news.", "example_ka": "ყველაფერს ნუ დაიჯერებ — ყალბი ახალი ამბები შეიძლება იყოს.", "category": "News & Media", "level": "A2"},
-  {"english": "editorial", "georgian": "სარედაქციო", "pronunciation": "ˌedɪˈtɔːriəl", "example_en": "The editorial criticized the government.", "example_ka": "სარედაქციო სტატიამ მთავრობა გააკრიტიკა.", "category": "News & Media", "level": "B1"},
-  {"english": "press conference", "georgian": "პრესკონფერენცია", "pronunciation": "pres ˈkɒnfərəns", "example_en": "The mayor held a press conference.", "example_ka": "მერმა პრესკონფერენცია გამართა.", "category": "News & Media", "level": "B1"},
-  {"english": "viral", "georgian": "ვირუსული / გავრცელებული", "pronunciation": "ˈvaɪrəl", "example_en": "The video went viral overnight.", "example_ka": "ვიდეო ღამით გავირუსდა.", "category": "News & Media", "level": "A2"},
-  {"english": "subscriber", "georgian": "გამომწერი", "pronunciation": "səbˈskraɪbər", "example_en": "The channel has 1 million subscribers.", "example_ka": "არხს 1 მილიონი გამომწერი ჰყავს.", "category": "News & Media", "level": "A2"},
-  {"english": "podcast", "georgian": "პოდკასტი", "pronunciation": "ˈpɒdkɑːst", "example_en": "I listen to podcasts on the bus.", "example_ka": "ავტობუსში პოდკასტებს ვუსმენ.", "category": "News & Media", "level": "A2"},
-  {"english": "censorship", "georgian": "ცენზურა", "pronunciation": "ˈsensərʃɪp", "example_en": "Some countries have strict censorship.", "example_ka": "ზოგიერთ ქვეყანაში მკაცრი ცენზურაა.", "category": "News & Media", "level": "B1"},
-  {"english": "anchor", "georgian": "წამყვანი", "pronunciation": "ˈæŋkər", "example_en": "The news anchor reads the evening news.", "example_ka": "საინფორმაციო წამყვანი საღამოს ახალ ამბებს კითხულობს.", "category": "News & Media", "level": "B1"},
-  {"english": "column", "georgian": "სვეტი (სტატია)", "pronunciation": "ˈkɒləm", "example_en": "She writes a weekly column about food.", "example_ka": "ის კვირაში ერთხელ საკვების შესახებ სვეტს წერს.", "category": "News & Media", "level": "B1"},
-  {"english": "click bait", "georgian": "კლიკბეიტი", "pronunciation": "ˈklɪkbeɪt", "example_en": "That title is total clickbait.", "example_ka": "ეს სათაური სრული კლიკბეიტია.", "category": "News & Media", "level": "B1"},
-  {"english": "exclusive", "georgian": "ექსკლუზიური", "pronunciation": "ɪkˈskluːsɪv", "example_en": "We have an exclusive interview.", "example_ka": "ჩვენ ექსკლუზიური ინტერვიუ გვაქვს.", "category": "News & Media", "level": "B1"},
-  {"english": "opinion", "georgian": "აზრი / მოსაზრება", "pronunciation": "əˈpɪnjən", "example_en": "Everyone has a different opinion.", "example_ka": "ყველას განსხვავებული აზრი აქვს.", "category": "News & Media", "level": "A2"},
-  {"english": "documentary", "georgian": "დოკუმენტური ფილმი", "pronunciation": "ˌdɒkjuˈmentri", "example_en": "I watched a documentary about space.", "example_ka": "კოსმოსის შესახებ დოკუმენტური ფილმი ვნახე.", "category": "News & Media", "level": "A2"},
-  {"english": "investigate", "georgian": "გამოძიება", "pronunciation": "ɪnˈvestɪɡeɪt", "example_en": "Police are investigating the case.", "example_ka": "პოლიცია საქმეს იძიებს.", "category": "News & Media", "level": "B1"},
-  {"english": "scandal", "georgian": "სკანდალი", "pronunciation": "ˈskændl", "example_en": "The scandal shocked the whole country.", "example_ka": "სკანდალმა მთელი ქვეყანა შოკში ჩააგდო.", "category": "News & Media", "level": "B1"},
-  {"english": "media", "georgian": "მედია", "pronunciation": "ˈmiːdiə", "example_en": "Social media changed everything.", "example_ka": "სოციალურმა მედიამ ყველაფერი შეცვალა.", "category": "News & Media", "level": "A2"},
-  {"english": "coverage", "georgian": "გაშუქება", "pronunciation": "ˈkʌvərɪdʒ", "example_en": "The news coverage was 24/7.", "example_ka": "ახალი ამბების გაშუქება 24 საათი იყო.", "category": "News & Media", "level": "B1"},
-  {"english": "publish", "georgian": "გამოქვეყნება", "pronunciation": "ˈpʌblɪʃ", "example_en": "The article was published yesterday.", "example_ka": "სტატია გუშინ გამოქვეყნდა.", "category": "News & Media", "level": "A2"},
-  {"english": "trending", "georgian": "ტრენდული", "pronunciation": "ˈtrendɪŋ", "example_en": "This topic is trending on Twitter.", "example_ka": "ეს თემა Twitter-ზე ტრენდულია.", "category": "News & Media", "level": "A2"}
+  {
+    "english": "headline",
+    "georgian": "სათაური",
+    "pronunciation": "ˈhedlaɪn",
+    "example_en": "Did you see the headline today?",
+    "example_ka": "დღევანდელი სათაური ნახე?",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "journalist",
+    "georgian": "ჟურნალისტი",
+    "pronunciation": "ˈdʒɜːrnəlɪst",
+    "example_en": "The journalist interviewed the president.",
+    "example_ka": "ჟურნალისტმა პრეზიდენტს ინტერვიუ ჩამოართვა.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "source",
+    "georgian": "წყარო",
+    "pronunciation": "sɔːrs",
+    "example_en": "Always check your sources.",
+    "example_ka": "ყოველთვის შეამოწმე შენი წყაროები.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "broadcast",
+    "georgian": "მაუწყებლობა",
+    "pronunciation": "ˈbrɔːdkɑːst",
+    "example_en": "The game will be broadcast live.",
+    "example_ka": "თამაში პირდაპირ ეთერში გადაიცემა.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "reporter",
+    "georgian": "რეპორტიორი",
+    "pronunciation": "rɪˈpɔːrtər",
+    "example_en": "The reporter is live from the scene.",
+    "example_ka": "რეპორტიორი შემთხვევის ადგილიდან ცოცხალ ეთერშია.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "editorial",
+    "georgian": "სარედაქციო",
+    "pronunciation": "ˌedɪˈtɔːriəl",
+    "example_en": "The editorial criticized the government.",
+    "example_ka": "სარედაქციო სტატიამ მთავრობა გააკრიტიკა.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "viral",
+    "georgian": "ვირუსული / გავრცელებული",
+    "pronunciation": "ˈvaɪrəl",
+    "example_en": "The video went viral overnight.",
+    "example_ka": "ვიდეო ღამით გავირუსდა.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "subscriber",
+    "georgian": "გამომწერი",
+    "pronunciation": "səbˈskraɪbər",
+    "example_en": "The channel has 1 million subscribers.",
+    "example_ka": "არხს 1 მილიონი გამომწერი ჰყავს.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "podcast",
+    "georgian": "პოდკასტი",
+    "pronunciation": "ˈpɒdkɑːst",
+    "example_en": "I listen to podcasts on the bus.",
+    "example_ka": "ავტობუსში პოდკასტებს ვუსმენ.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "censorship",
+    "georgian": "ცენზურა",
+    "pronunciation": "ˈsensərʃɪp",
+    "example_en": "Some countries have strict censorship.",
+    "example_ka": "ზოგიერთ ქვეყანაში მკაცრი ცენზურაა.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "anchor",
+    "georgian": "წამყვანი",
+    "pronunciation": "ˈæŋkər",
+    "example_en": "The news anchor reads the evening news.",
+    "example_ka": "საინფორმაციო წამყვანი საღამოს ახალ ამბებს კითხულობს.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "column",
+    "georgian": "სვეტი (სტატია)",
+    "pronunciation": "ˈkɒləm",
+    "example_en": "She writes a weekly column about food.",
+    "example_ka": "ის კვირაში ერთხელ საკვების შესახებ სვეტს წერს.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "exclusive",
+    "georgian": "ექსკლუზიური",
+    "pronunciation": "ɪkˈskluːsɪv",
+    "example_en": "We have an exclusive interview.",
+    "example_ka": "ჩვენ ექსკლუზიური ინტერვიუ გვაქვს.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "opinion",
+    "georgian": "აზრი / მოსაზრება",
+    "pronunciation": "əˈpɪnjən",
+    "example_en": "Everyone has a different opinion.",
+    "example_ka": "ყველას განსხვავებული აზრი აქვს.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "documentary",
+    "georgian": "დოკუმენტური ფილმი",
+    "pronunciation": "ˌdɒkjuˈmentri",
+    "example_en": "I watched a documentary about space.",
+    "example_ka": "კოსმოსის შესახებ დოკუმენტური ფილმი ვნახე.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "investigate",
+    "georgian": "გამოძიება",
+    "pronunciation": "ɪnˈvestɪɡeɪt",
+    "example_en": "Police are investigating the case.",
+    "example_ka": "პოლიცია საქმეს იძიებს.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "scandal",
+    "georgian": "სკანდალი",
+    "pronunciation": "ˈskændl",
+    "example_en": "The scandal shocked the whole country.",
+    "example_ka": "სკანდალმა მთელი ქვეყანა შოკში ჩააგდო.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "media",
+    "georgian": "მედია",
+    "pronunciation": "ˈmiːdiə",
+    "example_en": "Social media changed everything.",
+    "example_ka": "სოციალურმა მედიამ ყველაფერი შეცვალა.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "coverage",
+    "georgian": "გაშუქება",
+    "pronunciation": "ˈkʌvərɪdʒ",
+    "example_en": "The news coverage was 24/7.",
+    "example_ka": "ახალი ამბების გაშუქება 24 საათი იყო.",
+    "category": "News & Media",
+    "level": "B1"
+  },
+  {
+    "english": "publish",
+    "georgian": "გამოქვეყნება",
+    "pronunciation": "ˈpʌblɪʃ",
+    "example_en": "The article was published yesterday.",
+    "example_ka": "სტატია გუშინ გამოქვეყნდა.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "trending",
+    "georgian": "ტრენდული",
+    "pronunciation": "ˈtrendɪŋ",
+    "example_en": "This topic is trending on Twitter.",
+    "example_ka": "ეს თემა Twitter-ზე ტრენდულია.",
+    "category": "News & Media",
+    "level": "A2"
+  },
+  {
+    "english": "article",
+    "georgian": "სტატია",
+    "pronunciation": "ˈɑːrtɪkl",
+    "example_en": "I read an interesting article online.",
+    "example_ka": "ინტერნეტში საინტერესო სტატია წავიკითხე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "editor",
+    "georgian": "რედაქტორი",
+    "pronunciation": "ˈedɪtər",
+    "example_en": "The editor approved the story.",
+    "example_ka": "რედაქტორმა სტატია დაამტკიცა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "press",
+    "georgian": "პრესა",
+    "pronunciation": "pres",
+    "example_en": "The press gathered outside the building.",
+    "example_ka": "პრესა შენობის გარეთ შეიკრიბა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "interview",
+    "georgian": "ინტერვიუ",
+    "pronunciation": "ˈɪntərvjuː",
+    "example_en": "She gave an interview to the newspaper.",
+    "example_ka": "მან გაზეთს ინტერვიუ მისცა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "newspaper",
+    "georgian": "გაზეთი",
+    "pronunciation": "ˈnjuːzpeɪpər",
+    "example_en": "He reads the newspaper every morning.",
+    "example_ka": "ის ყოველ დილით გაზეთს კითხულობს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "magazine",
+    "georgian": "ჟურნალი",
+    "pronunciation": "ˌmæɡəˈziːn",
+    "example_en": "She bought a fashion magazine.",
+    "example_ka": "მან მოდის ჟურნალი იყიდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "report",
+    "georgian": "მოხსენება",
+    "pronunciation": "rɪˈpɔːrt",
+    "example_en": "The report was released this morning.",
+    "example_ka": "მოხსენება დილით გამოქვეყნდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "ʌpˈdeɪt",
+    "example_en": "We will give you an update soon.",
+    "example_ka": "მალე განახლებულ ინფორმაციას მოგაწვდით.",
+    "category": "News & Media"
+  },
+  {
+    "english": "channel",
+    "georgian": "არხი",
+    "pronunciation": "ˈtʃænl",
+    "example_en": "Change the channel, please.",
+    "example_ka": "არხი შეცვალე, გთხოვთ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "breaking",
+    "georgian": "სასწრაფო",
+    "pronunciation": "ˈbreɪkɪŋ",
+    "example_en": "We have breaking news right now.",
+    "example_ka": "ახლა სასწრაფო ამბავი გვაქვს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "correspondent",
+    "georgian": "კორესპონდენტი",
+    "pronunciation": "ˌkɒrɪˈspɒndənt",
+    "example_en": "Our correspondent is in London.",
+    "example_ka": "ჩვენი კორესპონდენტი ლონდონშია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "audience",
+    "georgian": "აუდიტორია",
+    "pronunciation": "ˈɔːdiəns",
+    "example_en": "The audience watched the debate.",
+    "example_ka": "აუდიტორიამ დებატებს უყურა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "propaganda",
+    "georgian": "პროპაგანდა",
+    "pronunciation": "ˌprɒpəˈɡændə",
+    "example_en": "That channel spreads propaganda.",
+    "example_ka": "ის არხი პროპაგანდას ავრცელებს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "bias",
+    "georgian": "მიკერძოება",
+    "pronunciation": "ˈbaɪəs",
+    "example_en": "The article shows clear bias.",
+    "example_ka": "სტატიაში აშკარა მიკერძოებაა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "fact",
+    "georgian": "ფაქტი",
+    "pronunciation": "fækt",
+    "example_en": "Check the facts before sharing.",
+    "example_ka": "გაზიარებამდე ფაქტები შეამოწმე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "rumor",
+    "georgian": "ხმა / ჭორი",
+    "pronunciation": "ˈruːmər",
+    "example_en": "It is just a rumor.",
+    "example_ka": "ეს მხოლოდ ჭორია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "footage",
+    "georgian": "კადრები",
+    "pronunciation": "ˈfʊtɪdʒ",
+    "example_en": "The footage shows the accident.",
+    "example_ka": "კადრებზე ავარია ჩანს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "stream",
+    "georgian": "სტრიმი",
+    "pronunciation": "striːm",
+    "example_en": "I watched the live stream.",
+    "example_ka": "პირდაპირ სტრიმს ვუყურე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "blog",
+    "georgian": "ბლოგი",
+    "pronunciation": "blɒɡ",
+    "example_en": "She writes a popular blog.",
+    "example_ka": "ის პოპულარულ ბლოგს წერს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "influencer",
+    "georgian": "ინფლუენსერი",
+    "pronunciation": "ˈɪnfluənsər",
+    "example_en": "The influencer has millions of followers.",
+    "example_ka": "ინფლუენსერს მილიონობით მიმდევარი ჰყავს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "tabloid",
+    "georgian": "ტაბლოიდი",
+    "pronunciation": "ˈtæblɔɪd",
+    "example_en": "Tabloids love celebrity gossip.",
+    "example_ka": "ტაბლოიდებს ცნობილი ადამიანების ჭორები უყვართ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "deadline",
+    "georgian": "ვადა",
+    "pronunciation": "ˈdedlaɪn",
+    "example_en": "The deadline for the article is tomorrow.",
+    "example_ka": "სტატიის ვადა ხვალაა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "scoop",
+    "georgian": "სენსაცია",
+    "pronunciation": "skuːp",
+    "example_en": "The reporter got a big scoop.",
+    "example_ka": "რეპორტიორმა დიდი სენსაცია მოიპოვა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "leak",
+    "georgian": "გაჟონვა",
+    "pronunciation": "liːk",
+    "example_en": "Someone leaked the document.",
+    "example_ka": "ვიღაცამ დოკუმენტი გააჟონა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "circulation",
+    "georgian": "ტირაჟი",
+    "pronunciation": "ˌsɜːrkjəˈleɪʃn",
+    "example_en": "The newspaper has a large circulation.",
+    "example_ka": "გაზეთს დიდი ტირაჟი აქვს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "credibility",
+    "georgian": "სანდოობა",
+    "pronunciation": "ˌkredɪˈbɪləti",
+    "example_en": "The reporter lost credibility.",
+    "example_ka": "რეპორტიორმა სანდოობა დაკარგა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "verify",
+    "georgian": "გადამოწმება",
+    "pronunciation": "ˈverɪfaɪ",
+    "example_en": "We need to verify the information.",
+    "example_ka": "ინფორმაციის გადამოწმება გვჭირდება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "anonymous",
+    "georgian": "ანონიმური",
+    "pronunciation": "əˈnɒnɪməs",
+    "example_en": "The source wanted to stay anonymous.",
+    "example_ka": "წყაროს ანონიმურად დარჩენა სურდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "expose",
+    "georgian": "გამოაშკარავება",
+    "pronunciation": "ɪkˈspoʊz",
+    "example_en": "The journalist exposed corruption.",
+    "example_ka": "ჟურნალისტმა კორუფცია გამოაშკარავა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "paparazzi",
+    "georgian": "პაპარაცი",
+    "pronunciation": "ˌpæpəˈrætsi",
+    "example_en": "The paparazzi followed the celebrity.",
+    "example_ka": "პაპარაცი ცნობილ ადამიანს მისდევდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "mainstream",
+    "georgian": "მეინსტრიმი",
+    "pronunciation": "ˈmeɪnstriːm",
+    "example_en": "Mainstream media covered the story.",
+    "example_ka": "მეინსტრიმ მედიამ ამბავი გააშუქა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "freelance",
+    "georgian": "ფრილანსი",
+    "pronunciation": "ˈfriːlæns",
+    "example_en": "She works as a freelance writer.",
+    "example_ka": "ის ფრილანს მწერლად მუშაობს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "satire",
+    "georgian": "სატირა",
+    "pronunciation": "ˈsætaɪər",
+    "example_en": "The show uses political satire.",
+    "example_ka": "შოუ პოლიტიკურ სატირას იყენებს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "censor",
+    "georgian": "ცენზორი",
+    "pronunciation": "ˈsensər",
+    "example_en": "They tried to censor the news.",
+    "example_ka": "ახალი ამბების ცენზურა სცადეს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "retract",
+    "georgian": "უკან გახმობა",
+    "pronunciation": "rɪˈtrækt",
+    "example_en": "The newspaper retracted the story.",
+    "example_ka": "გაზეთმა სტატია უკან გაიხმო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "caption",
+    "georgian": "წარწერა",
+    "pronunciation": "ˈkæpʃn",
+    "example_en": "Read the caption under the photo.",
+    "example_ka": "ფოტოს ქვეშ წარწერა წაიკითხე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "newsletter",
+    "georgian": "ბიულეტენი",
+    "pronunciation": "ˈnjuːzletər",
+    "example_en": "Subscribe to our newsletter.",
+    "example_ka": "გამოიწერეთ ჩვენი ბიულეტენი.",
+    "category": "News & Media"
+  },
+  {
+    "english": "debate",
+    "georgian": "დებატები",
+    "pronunciation": "dɪˈbeɪt",
+    "example_en": "The debate was on live television.",
+    "example_ka": "დებატები პირდაპირ ეთერში იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "commentary",
+    "georgian": "კომენტარი",
+    "pronunciation": "ˈkɒməntəri",
+    "example_en": "The commentary was very insightful.",
+    "example_ka": "კომენტარი ძალიან საინტერესო იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "critic",
+    "georgian": "კრიტიკოსი",
+    "pronunciation": "ˈkrɪtɪk",
+    "example_en": "The critic gave a bad review.",
+    "example_ka": "კრიტიკოსმა ცუდი შეფასება დაწერა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "exposure",
+    "georgian": "გამოვლინება",
+    "pronunciation": "ɪkˈspoʊʒər",
+    "example_en": "The story got a lot of exposure.",
+    "example_ka": "ამბავმა დიდი გამოვლინება მიიღო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "freelancer",
+    "georgian": "ფრილანსერი",
+    "pronunciation": "ˈfriːlænsər",
+    "example_en": "The freelancer submitted the article.",
+    "example_ka": "ფრილანსერმა სტატია წარადგინა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "misinformation",
+    "georgian": "დეზინფორმაცია",
+    "pronunciation": "ˌmɪsɪnfərˈmeɪʃn",
+    "example_en": "Misinformation spreads quickly online.",
+    "example_ka": "დეზინფორმაცია ინტერნეტში სწრაფად ვრცელდება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "clickbait",
+    "georgian": "კლიკბეითი",
+    "pronunciation": "ˈklɪkbeɪt",
+    "example_en": "That title is just clickbait.",
+    "example_ka": "ეს სათაური მხოლოდ კლიკბეითია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "paywall",
+    "georgian": "ფასიანი კედელი",
+    "pronunciation": "ˈpeɪwɔːl",
+    "example_en": "The article is behind a paywall.",
+    "example_ka": "სტატია ფასიანი კედლის მიღმაა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "subscription",
+    "georgian": "გამოწერა",
+    "pronunciation": "səbˈskrɪpʃn",
+    "example_en": "I canceled my subscription.",
+    "example_ka": "გამოწერა გავაუქმე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "objectivity",
+    "georgian": "ობიექტურობა",
+    "pronunciation": "ˌɒbdʒekˈtɪvəti",
+    "example_en": "Objectivity is important in journalism.",
+    "example_ka": "ჟურნალისტიკაში ობიექტურობა მნიშვნელოვანია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "transparency",
+    "georgian": "გამჭვირვალობა",
+    "pronunciation": "trænsˈpærənsi",
+    "example_en": "We demand transparency from the media.",
+    "example_ka": "მედიისგან გამჭვირვალობას მოვითხოვთ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "embargo",
+    "georgian": "ემბარგო",
+    "pronunciation": "ɪmˈbɑːrɡoʊ",
+    "example_en": "The news is under embargo until Monday.",
+    "example_ka": "ახალი ამბები ორშაბათამდე ემბარგოს ქვეშაა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "testimony",
+    "georgian": "ჩვენება",
+    "pronunciation": "ˈtestɪmoʊni",
+    "example_en": "The witness gave testimony on television.",
+    "example_ka": "მოწმემ ტელევიზიით ჩვენება მისცა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "allegation",
+    "georgian": "ბრალდება",
+    "pronunciation": "ˌæləˈɡeɪʃn",
+    "example_en": "The allegations were serious.",
+    "example_ka": "ბრალდებები სერიოზული იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "controversy",
+    "georgian": "კამათი",
+    "pronunciation": "ˈkɒntrəvɜːrsi",
+    "example_en": "The decision caused controversy.",
+    "example_ka": "გადაწყვეტილებამ კამათი გამოიწვია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "unbiased",
+    "georgian": "მიუკერძოებელი",
+    "pronunciation": "ʌnˈbaɪəst",
+    "example_en": "We need unbiased reporting.",
+    "example_ka": "მიუკერძოებელი რეპორტაჟი გვჭირდება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "witness",
+    "georgian": "მოწმე",
+    "pronunciation": "ˈwɪtnəs",
+    "example_en": "The witness spoke to reporters.",
+    "example_ka": "მოწმე რეპორტიორებთან ისაუბრა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "publication",
+    "georgian": "გამოცემა",
+    "pronunciation": "ˌpʌblɪˈkeɪʃn",
+    "example_en": "The publication is well-respected.",
+    "example_ka": "ეს გამოცემა პატივცემულია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "syndicate",
+    "georgian": "სინდიკატი",
+    "pronunciation": "ˈsɪndɪkeɪt",
+    "example_en": "The article was syndicated worldwide.",
+    "example_ka": "სტატია მთელ მსოფლიოში გავრცელდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "libel",
+    "georgian": "ცილისწამება",
+    "pronunciation": "ˈlaɪbl",
+    "example_en": "He sued the newspaper for libel.",
+    "example_ka": "მან გაზეთს ცილისწამებისთვის უჩივლა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "slander",
+    "georgian": "ცილისმწამებლობა",
+    "pronunciation": "ˈslændər",
+    "example_en": "That statement is slander.",
+    "example_ka": "ეს განცხადება ცილისწამებაა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "whistleblower",
+    "georgian": "მამხილებელი",
+    "pronunciation": "ˈwɪslbloʊər",
+    "example_en": "The whistleblower revealed the truth.",
+    "example_ka": "მამხილებელმა სიმართლე გამოავლინა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "redact",
+    "georgian": "რედაქტირება",
+    "pronunciation": "rɪˈdækt",
+    "example_en": "Some names were redacted from the report.",
+    "example_ka": "ზოგიერთი სახელი მოხსენებიდან ამოიშალა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "ticker",
+    "georgian": "ტიკერი",
+    "pronunciation": "ˈtɪkər",
+    "example_en": "I read the news ticker on the screen.",
+    "example_ka": "ეკრანზე ახალი ამბების ტიკერი წავიკითხე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "photojournalist",
+    "georgian": "ფოტოჟურნალისტი",
+    "pronunciation": "ˌfoʊtoʊˈdʒɜːrnəlɪst",
+    "example_en": "The photojournalist captured the protest.",
+    "example_ka": "ფოტოჟურნალისტმა აქცია გადაიღო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "byline",
+    "georgian": "ავტორის სახელი",
+    "pronunciation": "ˈbaɪlaɪn",
+    "example_en": "Check the byline to see who wrote it.",
+    "example_ka": "ავტორის სახელი ნახე, ვინ დაწერა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "outlet",
+    "georgian": "გამოშვება / საშუალება",
+    "pronunciation": "ˈaʊtlet",
+    "example_en": "Several news outlets reported the story.",
+    "example_ka": "რამდენიმე მედიასაშუალებამ ამბავი გააშუქა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "recap",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "ˈriːkæp",
+    "example_en": "Here is a quick recap of the news.",
+    "example_ka": "აქ არის ახალი ამბების სწრაფი მიმოხილვა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "pundit",
+    "georgian": "ექსპერტი",
+    "pronunciation": "ˈpʌndɪt",
+    "example_en": "The pundit shared his analysis.",
+    "example_ka": "ექსპერტმა თავისი ანალიზი გააზიარა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "archive",
+    "georgian": "არქივი",
+    "pronunciation": "ˈɑːrkaɪv",
+    "example_en": "You can find old articles in the archive.",
+    "example_ka": "ძველ სტატიებს არქივში იპოვი.",
+    "category": "News & Media"
+  },
+  {
+    "english": "blackout",
+    "georgian": "ინფორმაციის ბლოკირება",
+    "pronunciation": "ˈblækaʊt",
+    "example_en": "There was a media blackout during the crisis.",
+    "example_ka": "კრიზისის დროს მედიის ბლოკირება იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "primetime",
+    "georgian": "პრაიმტაიმი",
+    "pronunciation": "ˈpraɪmtaɪm",
+    "example_en": "The show airs during primetime.",
+    "example_ka": "შოუ პრაიმტაიმში გადის.",
+    "category": "News & Media"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "rɪˈvjuː",
+    "example_en": "I read the movie review.",
+    "example_ka": "ფილმის მიმოხილვა წავიკითხე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "syndication",
+    "georgian": "სინდიკაცია",
+    "pronunciation": "ˌsɪndɪˈkeɪʃn",
+    "example_en": "The show is available through syndication.",
+    "example_ka": "შოუ სინდიკაციის გზით ხელმისაწვდომია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "transcript",
+    "georgian": "ტრანსკრიპტი",
+    "pronunciation": "ˈtrænskrɪpt",
+    "example_en": "Read the transcript of the speech.",
+    "example_ka": "სიტყვის ტრანსკრიპტი წაიკითხე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "newsfeed",
+    "georgian": "ახალი ამბების არხი",
+    "pronunciation": "ˈnjuːzfiːd",
+    "example_en": "My newsfeed is full of politics.",
+    "example_ka": "ჩემი ახალი ამბების არხი პოლიტიკით არის სავსე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "sensor",
+    "georgian": "სენსორი",
+    "pronunciation": "ˈsensər",
+    "example_en": "The camera sensor captured the scene.",
+    "example_ka": "კამერის სენსორმა სცენა გადაიღო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "columnist",
+    "georgian": "კოლუმნისტი",
+    "pronunciation": "ˈkɒləmnɪst",
+    "example_en": "The columnist writes about politics.",
+    "example_ka": "კოლუმნისტი პოლიტიკაზე წერს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "bureau",
+    "georgian": "ბიურო",
+    "pronunciation": "ˈbjʊəroʊ",
+    "example_en": "The news bureau is in Washington.",
+    "example_ka": "ახალი ამბების ბიურო ვაშინგტონშია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "correction",
+    "georgian": "შესწორება",
+    "pronunciation": "kəˈrekʃn",
+    "example_en": "The newspaper published a correction.",
+    "example_ka": "გაზეთმა შესწორება გამოაქვეყნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "disinformation",
+    "georgian": "დეზინფორმაცია",
+    "pronunciation": "dɪsˌɪnfərˈmeɪʃn",
+    "example_en": "Disinformation is a serious problem.",
+    "example_ka": "დეზინფორმაცია სერიოზული პრობლემაა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "gazette",
+    "georgian": "გაზეთი",
+    "pronunciation": "ɡəˈzet",
+    "example_en": "The official gazette published the law.",
+    "example_ka": "ოფიციალურმა გაზეთმა კანონი გამოაქვეყნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "impartial",
+    "georgian": "მიუკერძოებელი",
+    "pronunciation": "ɪmˈpɑːrʃl",
+    "example_en": "A judge must be impartial.",
+    "example_ka": "მოსამართლე მიუკერძოებელი უნდა იყოს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "inform",
+    "georgian": "ინფორმირება",
+    "pronunciation": "ɪnˈfɔːrm",
+    "example_en": "The media should inform the public.",
+    "example_ka": "მედიამ საზოგადოება უნდა აინფორმიროს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "journalism",
+    "georgian": "ჟურნალისტიკა",
+    "pronunciation": "ˈdʒɜːrnəlɪzəm",
+    "example_en": "She studied journalism at university.",
+    "example_ka": "მან უნივერსიტეტში ჟურნალისტიკა ისწავლა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "monopoly",
+    "georgian": "მონოპოლია",
+    "pronunciation": "məˈnɒpəli",
+    "example_en": "One company has a monopoly on news.",
+    "example_ka": "ერთ კომპანიას ახალ ამბებზე მონოპოლია აქვს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "network",
+    "georgian": "ქსელი",
+    "pronunciation": "ˈnetwɜːrk",
+    "example_en": "Which network do you watch?",
+    "example_ka": "რომელ ქსელს უყურებ?",
+    "category": "News & Media"
+  },
+  {
+    "english": "newsroom",
+    "georgian": "ახალი ამბების ოთახი",
+    "pronunciation": "ˈnjuːzruːm",
+    "example_en": "The newsroom was very busy.",
+    "example_ka": "ახალი ამბების ოთახი ძალიან დაკავებული იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "obituary",
+    "georgian": "ნეკროლოგი",
+    "pronunciation": "əˈbɪtʃueri",
+    "example_en": "The obituary was published in the newspaper.",
+    "example_ka": "ნეკროლოგი გაზეთში გამოქვეყნდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "paraphrase",
+    "georgian": "პერიფრაზი",
+    "pronunciation": "ˈpærəfreɪz",
+    "example_en": "Try to paraphrase the quote.",
+    "example_ka": "ციტატის პერიფრაზი სცადე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "plagiarism",
+    "georgian": "პლაგიატი",
+    "pronunciation": "ˈpleɪdʒərɪzəm",
+    "example_en": "Plagiarism is not acceptable.",
+    "example_ka": "პლაგიატი მიუღებელია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "proofread",
+    "georgian": "კორექტურა",
+    "pronunciation": "ˈpruːfriːd",
+    "example_en": "Please proofread the article.",
+    "example_ka": "გთხოვთ, სტატიას კორექტურა გაუკეთე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "quote",
+    "georgian": "ციტატა",
+    "pronunciation": "kwoʊt",
+    "example_en": "The article included a direct quote.",
+    "example_ka": "სტატიაში პირდაპირი ციტატა იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "segment",
+    "georgian": "სეგმენტი",
+    "pronunciation": "ˈseɡmənt",
+    "example_en": "The next segment is about sports.",
+    "example_ka": "შემდეგი სეგმენტი სპორტზეა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "sensation",
+    "georgian": "სენსაცია",
+    "pronunciation": "senˈseɪʃn",
+    "example_en": "The story became a sensation.",
+    "example_ka": "ამბავი სენსაცია გახდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "truthful",
+    "georgian": "სიმართლის მოყვარე",
+    "pronunciation": "ˈtruːθfl",
+    "example_en": "The report was truthful.",
+    "example_ka": "მოხსენება სიმართლეს შეესაბამებოდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "viewership",
+    "georgian": "მაყურებლობა",
+    "pronunciation": "ˈvjuːərʃɪp",
+    "example_en": "Viewership increased this month.",
+    "example_ka": "მაყურებლობა ამ თვეში გაიზარდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "watchdog",
+    "georgian": "მეთვალყურე",
+    "pronunciation": "ˈwɒtʃdɒɡ",
+    "example_en": "The press acts as a watchdog.",
+    "example_ka": "პრესა მეთვალყურის როლს ასრულებს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "airtime",
+    "georgian": "ეთერის დრო",
+    "pronunciation": "ˈeərtaɪm",
+    "example_en": "They got more airtime than expected.",
+    "example_ka": "მოსალოდნელზე მეტი ეთერის დრო მიიღეს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "bulletin",
+    "georgian": "ბიულეტენი",
+    "pronunciation": "ˈbʊlətɪn",
+    "example_en": "The news bulletin was brief.",
+    "example_ka": "ახალი ამბების ბიულეტენი მოკლე იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "censored",
+    "georgian": "ცენზურირებული",
+    "pronunciation": "ˈsensərd",
+    "example_en": "The images were censored.",
+    "example_ka": "სურათები ცენზურირებული იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "classified",
+    "georgian": "საიდუმლო",
+    "pronunciation": "ˈklæsɪfaɪd",
+    "example_en": "The document is classified.",
+    "example_ka": "დოკუმენტი საიდუმლოა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "disclaimer",
+    "georgian": "პასუხისმგებლობის უარყოფა",
+    "pronunciation": "dɪsˈkleɪmər",
+    "example_en": "There was a disclaimer at the end.",
+    "example_ka": "ბოლოს პასუხისმგებლობის უარყოფა იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "distribute",
+    "georgian": "გავრცელება",
+    "pronunciation": "dɪˈstrɪbjuːt",
+    "example_en": "They distribute the newspaper daily.",
+    "example_ka": "ისინი გაზეთს ყოველდღიურად ავრცელებენ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "excerpt",
+    "georgian": "ამონარიდი",
+    "pronunciation": "ˈeksɜːrpt",
+    "example_en": "Here is an excerpt from the article.",
+    "example_ka": "აქ არის ამონარიდი სტატიიდან.",
+    "category": "News & Media"
+  },
+  {
+    "english": "fabricate",
+    "georgian": "გაყალბება",
+    "pronunciation": "ˈfæbrɪkeɪt",
+    "example_en": "He fabricated the entire story.",
+    "example_ka": "მან მთელი ამბავი გააყალბა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "hoax",
+    "georgian": "თაღლითობა",
+    "pronunciation": "hoʊks",
+    "example_en": "The story turned out to be a hoax.",
+    "example_ka": "ამბავი თაღლითობა აღმოჩნდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "infographic",
+    "georgian": "ინფოგრაფიკა",
+    "pronunciation": "ˌɪnfoʊˈɡræfɪk",
+    "example_en": "The infographic explained the data clearly.",
+    "example_ka": "ინფოგრაფიკამ მონაცემები ნათლად ახსნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "investigative",
+    "georgian": "საგამოძიებო",
+    "pronunciation": "ɪnˈvestɪɡeɪtɪv",
+    "example_en": "Investigative journalism takes time.",
+    "example_ka": "საგამოძიებო ჟურნალისტიკა დროს მოითხოვს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "lede",
+    "georgian": "შესავალი",
+    "pronunciation": "liːd",
+    "example_en": "The lede should grab the reader.",
+    "example_ka": "შესავალმა მკითხველი უნდა მიიზიდოს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "masthead",
+    "georgian": "სარედაქციო გვერდი",
+    "pronunciation": "ˈmæsthed",
+    "example_en": "The editor's name is on the masthead.",
+    "example_ka": "რედაქტორის სახელი სარედაქციო გვერდზეა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "narrate",
+    "georgian": "თხრობა",
+    "pronunciation": "ˈnæreɪt",
+    "example_en": "She narrated the documentary.",
+    "example_ka": "მან დოკუმენტური ფილმი გახმოვანა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "op-ed",
+    "georgian": "საავტორო სტატია",
+    "pronunciation": "ˌɒpˈed",
+    "example_en": "He wrote an op-ed for the newspaper.",
+    "example_ka": "მან გაზეთისთვის საავტორო სტატია დაწერა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "ratify",
+    "georgian": "რატიფიკაცია",
+    "pronunciation": "ˈrætɪfaɪ",
+    "example_en": "The parliament will ratify the agreement.",
+    "example_ka": "პარლამენტი შეთანხმებას მოახდენს რატიფიკაციას.",
+    "category": "News & Media"
+  },
+  {
+    "english": "sensationalism",
+    "georgian": "სენსაციონალიზმი",
+    "pronunciation": "senˈseɪʃənəlɪzəm",
+    "example_en": "Sensationalism sells newspapers.",
+    "example_ka": "სენსაციონალიზმი გაზეთებს ყიდის.",
+    "category": "News & Media"
+  },
+  {
+    "english": "spin",
+    "georgian": "ინტერპრეტაცია",
+    "pronunciation": "spɪn",
+    "example_en": "Politicians put their own spin on events.",
+    "example_ka": "პოლიტიკოსები მოვლენებს თავისებურად ინტერპრეტირებენ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "telecast",
+    "georgian": "ტელეგადაცემა",
+    "pronunciation": "ˈtelɪkɑːst",
+    "example_en": "The telecast reached millions of viewers.",
+    "example_ka": "ტელეგადაცემამ მილიონობით მაყურებელს მიაღწია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "undercover",
+    "georgian": "საიდუმლო",
+    "pronunciation": "ˌʌndərˈkʌvər",
+    "example_en": "The reporter went undercover.",
+    "example_ka": "რეპორტიორი საიდუმლოდ იმოქმედა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "webcast",
+    "georgian": "ვებგადაცემა",
+    "pronunciation": "ˈwebkɑːst",
+    "example_en": "The conference was available as a webcast.",
+    "example_ka": "კონფერენცია ვებგადაცემის სახით იყო ხელმისაწვდომი.",
+    "category": "News & Media"
+  },
+  {
+    "english": "accreditation",
+    "georgian": "აკრედიტაცია",
+    "pronunciation": "əˌkredɪˈteɪʃn",
+    "example_en": "You need accreditation to enter.",
+    "example_ka": "შესასვლელად აკრედიტაცია გჭირდება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "advertise",
+    "georgian": "რეკლამირება",
+    "pronunciation": "ˈædvərtaɪz",
+    "example_en": "Companies advertise in newspapers.",
+    "example_ka": "კომპანიები გაზეთებში რეკლამას აკეთებენ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "affiliate",
+    "georgian": "ფილიალი",
+    "pronunciation": "əˈfɪlieɪt",
+    "example_en": "The local station is a network affiliate.",
+    "example_ka": "ადგილობრივი სადგური ქსელის ფილიალია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "airwave",
+    "georgian": "ეთერი",
+    "pronunciation": "ˈeərweɪv",
+    "example_en": "The news dominated the airwaves.",
+    "example_ka": "ახალი ამბები ეთერში დომინირებდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "amplify",
+    "georgian": "გაძლიერება",
+    "pronunciation": "ˈæmplɪfaɪ",
+    "example_en": "Social media can amplify a message.",
+    "example_ka": "სოციალურ მედიას შეუძლია მესიჯის გაძლიერება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "authenticate",
+    "georgian": "ავთენტიფიკაცია",
+    "pronunciation": "ɔːˈθentɪkeɪt",
+    "example_en": "Experts authenticated the document.",
+    "example_ka": "ექსპერტებმა დოკუმენტი დაადასტურეს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "briefing",
+    "georgian": "ბრიფინგი",
+    "pronunciation": "ˈbriːfɪŋ",
+    "example_en": "The press briefing starts at noon.",
+    "example_ka": "პრესბრიფინგი შუადღეს იწყება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "cameraman",
+    "georgian": "კამერამენი",
+    "pronunciation": "ˈkæmərəmæn",
+    "example_en": "The cameraman filmed the protest.",
+    "example_ka": "კამერამენმა აქცია გადაიღო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "contribute",
+    "georgian": "წვლილის შეტანა",
+    "pronunciation": "kənˈtrɪbjuːt",
+    "example_en": "She contributes articles to the magazine.",
+    "example_ka": "ის ჟურნალში სტატიებს აქვეყნებს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "decode",
+    "georgian": "გაშიფვრა",
+    "pronunciation": "diːˈkoʊd",
+    "example_en": "Experts decoded the message.",
+    "example_ka": "ექსპერტებმა შეტყობინება გაშიფრეს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "dispatch",
+    "georgian": "გაგზავნა",
+    "pronunciation": "dɪˈspætʃ",
+    "example_en": "The reporter filed a dispatch from abroad.",
+    "example_ka": "რეპორტიორმა საზღვარგარეთიდან ცნობა გამოაგზავნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "ethics",
+    "georgian": "ეთიკა",
+    "pronunciation": "ˈeθɪks",
+    "example_en": "Journalism ethics are important.",
+    "example_ka": "ჟურნალისტიკის ეთიკა მნიშვნელოვანია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "feature",
+    "georgian": "ფეიჩერი",
+    "pronunciation": "ˈfiːtʃər",
+    "example_en": "She wrote a feature about local heroes.",
+    "example_ka": "მან ადგილობრივი გმირების შესახებ ფეიჩერი დაწერა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "forecast",
+    "georgian": "პროგნოზი",
+    "pronunciation": "ˈfɔːrkæst",
+    "example_en": "The weather forecast says rain.",
+    "example_ka": "ამინდის პროგნოზი წვიმას ამბობს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "host",
+    "georgian": "წამყვანი",
+    "pronunciation": "hoʊst",
+    "example_en": "The host asked tough questions.",
+    "example_ka": "წამყვანმა რთული კითხვები დასვა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "independent",
+    "georgian": "დამოუკიდებელი",
+    "pronunciation": "ˌɪndɪˈpendənt",
+    "example_en": "Independent media is essential.",
+    "example_ka": "დამოუკიდებელი მედია აუცილებელია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "mislead",
+    "georgian": "შეცდომაში შეყვანა",
+    "pronunciation": "mɪsˈliːd",
+    "example_en": "The report misled the audience.",
+    "example_ka": "მოხსენებამ აუდიტორია შეცდომაში შეიყვანა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "newscast",
+    "georgian": "საინფორმაციო გამოშვება",
+    "pronunciation": "ˈnjuːzkæst",
+    "example_en": "The newscast airs at seven.",
+    "example_ka": "საინფორმაციო გამოშვება შვიდ საათზე გადის.",
+    "category": "News & Media"
+  },
+  {
+    "english": "photojournalism",
+    "georgian": "ფოტოჟურნალისტიკა",
+    "pronunciation": "ˌfoʊtoʊˈdʒɜːrnəlɪzəm",
+    "example_en": "Photojournalism tells stories through images.",
+    "example_ka": "ფოტოჟურნალისტიკა სურათებით ამბებს ყვება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "readership",
+    "georgian": "მკითხველობა",
+    "pronunciation": "ˈriːdərʃɪp",
+    "example_en": "The readership declined this year.",
+    "example_ka": "მკითხველობა წელს შემცირდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "reliable",
+    "georgian": "სანდო",
+    "pronunciation": "rɪˈlaɪəbl",
+    "example_en": "Is this a reliable source?",
+    "example_ka": "ეს სანდო წყაროა?",
+    "category": "News & Media"
+  },
+  {
+    "english": "sensational",
+    "georgian": "სენსაციური",
+    "pronunciation": "senˈseɪʃənl",
+    "example_en": "The report was sensational.",
+    "example_ka": "მოხსენება სენსაციური იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "simulate",
+    "georgian": "სიმულაცია",
+    "pronunciation": "ˈsɪmjuleɪt",
+    "example_en": "They simulated the event for the broadcast.",
+    "example_ka": "მათ ეთერისთვის მოვლენის სიმულაცია გააკეთეს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "uncover",
+    "georgian": "გამოვლენა",
+    "pronunciation": "ʌnˈkʌvər",
+    "example_en": "The journalist uncovered the fraud.",
+    "example_ka": "ჟურნალისტმა თაღლითობა გამოავლინა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "viewpoint",
+    "georgian": "თვალსაზრისი",
+    "pronunciation": "ˈvjuːpɔɪnt",
+    "example_en": "Every viewpoint should be represented.",
+    "example_ka": "ყველა თვალსაზრისი უნდა იყოს წარმოდგენილი.",
+    "category": "News & Media"
+  },
+  {
+    "english": "wire",
+    "georgian": "საინფორმაციო სააგენტო",
+    "pronunciation": "ˈwaɪər",
+    "example_en": "The story came from the wire service.",
+    "example_ka": "ამბავი საინფორმაციო სააგენტოდან მოვიდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "stringer",
+    "georgian": "სტრინგერი",
+    "pronunciation": "ˈstrɪŋər",
+    "example_en": "The stringer sent photos from the field.",
+    "example_ka": "სტრინგერმა ადგილიდან ფოტოები გამოაგზავნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "dateline",
+    "georgian": "თარიღის ხაზი",
+    "pronunciation": "ˈdeɪtlaɪn",
+    "example_en": "The dateline says New York.",
+    "example_ka": "თარიღის ხაზი ნიუ-იორკს ამბობს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "broadsheet",
+    "georgian": "ფორმატიანი გაზეთი",
+    "pronunciation": "ˈbrɔːdʃiːt",
+    "example_en": "The broadsheet covers serious news.",
+    "example_ka": "ფორმატიანი გაზეთი სერიოზულ ამბებს აშუქებს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "copywriter",
+    "georgian": "კოპირაიტერი",
+    "pronunciation": "ˈkɒpiraɪtər",
+    "example_en": "The copywriter wrote the ad.",
+    "example_ka": "კოპირაიტერმა რეკლამა დაწერა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "microphone",
+    "georgian": "მიკროფონი",
+    "pronunciation": "ˈmaɪkrəfoʊn",
+    "example_en": "The microphone was not working.",
+    "example_ka": "მიკროფონი არ მუშაობდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "satellite",
+    "georgian": "თანამგზავრი",
+    "pronunciation": "ˈsætəlaɪt",
+    "example_en": "The news came via satellite.",
+    "example_ka": "ახალი ამბები თანამგზავრით მოვიდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "teleprompter",
+    "georgian": "ტელეპრომპტერი",
+    "pronunciation": "ˈteləprɒmptər",
+    "example_en": "The anchor reads from a teleprompter.",
+    "example_ka": "წამყვანი ტელეპრომპტერიდან კითხულობს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "typography",
+    "georgian": "ტიპოგრაფია",
+    "pronunciation": "taɪˈpɒɡrəfi",
+    "example_en": "Good typography improves readability.",
+    "example_ka": "კარგი ტიპოგრაფია კითხვადობას აუმჯობესებს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "hashtag",
+    "georgian": "ჰეშთეგი",
+    "pronunciation": "ˈhæʃtæɡ",
+    "example_en": "Use a hashtag to find the topic.",
+    "example_ka": "თემის საპოვნელად ჰეშთეგი გამოიყენე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "algorithm",
+    "georgian": "ალგორითმი",
+    "pronunciation": "ˈælɡərɪðəm",
+    "example_en": "The algorithm decides what you see.",
+    "example_ka": "ალგორითმი წყვეტს რას ხედავ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "credible",
+    "georgian": "სანდო",
+    "pronunciation": "ˈkredɪbl",
+    "example_en": "Is this source credible?",
+    "example_ka": "ეს წყარო სანდოა?",
+    "category": "News & Media"
+  },
+  {
+    "english": "plagiarize",
+    "georgian": "პლაგიატის ჩადენა",
+    "pronunciation": "ˈpleɪdʒəraɪz",
+    "example_en": "Do not plagiarize other writers.",
+    "example_ka": "სხვა მწერლებს ნუ მოპარავ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "frontpage",
+    "georgian": "მთავარი გვერდი",
+    "pronunciation": "ˈfrʌntpeɪdʒ",
+    "example_en": "The story made the frontpage.",
+    "example_ka": "ამბავი მთავარ გვერდზე მოხვდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "interviewee",
+    "georgian": "ინტერვიუერი",
+    "pronunciation": "ˌɪntərvjuːˈiː",
+    "example_en": "The interviewee was nervous.",
+    "example_ka": "გამოკითხული ნერვიულობდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "interviewer",
+    "georgian": "ინტერვიუერი",
+    "pronunciation": "ˈɪntərvjuːər",
+    "example_en": "The interviewer asked hard questions.",
+    "example_ka": "ინტერვიუერმა რთული კითხვები დასვა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "manuscript",
+    "georgian": "ხელნაწერი",
+    "pronunciation": "ˈmænjuskrɪpt",
+    "example_en": "The manuscript was rejected.",
+    "example_ka": "ხელნაწერი უარყოფილ იქნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "photoshop",
+    "georgian": "ფოტოშოპი",
+    "pronunciation": "ˈfoʊtoʊʃɒp",
+    "example_en": "The image was photoshopped.",
+    "example_ka": "სურათი ფოტოშოპით იყო დამუშავებული.",
+    "category": "News & Media"
+  },
+  {
+    "english": "reprint",
+    "georgian": "ხელახალი ბეჭდვა",
+    "pronunciation": "ˌriːˈprɪnt",
+    "example_en": "They ordered a reprint.",
+    "example_ka": "ხელახალი ბეჭდვა შეუკვეთეს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "subtitle",
+    "georgian": "სუბტიტრი",
+    "pronunciation": "ˈsʌbtaɪtl",
+    "example_en": "Turn on the subtitles.",
+    "example_ka": "სუბტიტრები ჩართე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "voiceover",
+    "georgian": "ხმოვანი თანხლება",
+    "pronunciation": "ˈvɔɪsoʊvər",
+    "example_en": "The voiceover was in English.",
+    "example_ka": "ხმოვანი თანხლება ინგლისურად იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "advertisement",
+    "georgian": "რეკლამა",
+    "pronunciation": "ədˈvɜːrtɪsmənt",
+    "example_en": "I saw the advertisement on TV.",
+    "example_ka": "რეკლამა ტელევიზორში ვნახე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "corroborate",
+    "georgian": "დადასტურება",
+    "pronunciation": "kəˈrɒbəreɪt",
+    "example_en": "Can anyone corroborate the story?",
+    "example_ka": "ვინმეს შეუძლია ამბის დადასტურება?",
+    "category": "News & Media"
+  },
+  {
+    "english": "demographic",
+    "georgian": "დემოგრაფიული",
+    "pronunciation": "ˌdeməˈɡræfɪk",
+    "example_en": "Know your target demographic.",
+    "example_ka": "იცოდე შენი სამიზნე დემოგრაფია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "encrypt",
+    "georgian": "დაშიფვრა",
+    "pronunciation": "ɪnˈkrɪpt",
+    "example_en": "Encrypt your messages for safety.",
+    "example_ka": "უსაფრთხოებისთვის შეტყობინებები დაშიფრე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "footnote",
+    "georgian": "სქოლიო",
+    "pronunciation": "ˈfʊtnoʊt",
+    "example_en": "Check the footnote for details.",
+    "example_ka": "დეტალებისთვის სქოლიო ნახე.",
+    "category": "News & Media"
+  },
+  {
+    "english": "hearsay",
+    "georgian": "ჭორი",
+    "pronunciation": "ˈhɪrseɪ",
+    "example_en": "That is just hearsay.",
+    "example_ka": "ეს მხოლოდ ჭორია.",
+    "category": "News & Media"
+  },
+  {
+    "english": "imprint",
+    "georgian": "გამომცემლობა",
+    "pronunciation": "ˈɪmprɪnt",
+    "example_en": "The book was published under their imprint.",
+    "example_ka": "წიგნი მათი გამომცემლობის ქვეშ გამოვიდა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "journalistic",
+    "georgian": "ჟურნალისტური",
+    "pronunciation": "ˌdʒɜːrnəˈlɪstɪk",
+    "example_en": "She has journalistic integrity.",
+    "example_ka": "მას ჟურნალისტური მთლიანობა აქვს.",
+    "category": "News & Media"
+  },
+  {
+    "english": "keynote",
+    "georgian": "ძირითადი სიტყვა",
+    "pronunciation": "ˈkiːnoʊt",
+    "example_en": "The keynote speech was powerful.",
+    "example_ka": "ძირითადი სიტყვა ძლიერი იყო.",
+    "category": "News & Media"
+  },
+  {
+    "english": "layout",
+    "georgian": "განლაგება",
+    "pronunciation": "ˈleɪaʊt",
+    "example_en": "The page layout looks great.",
+    "example_ka": "გვერდის განლაგება შესანიშნავად გამოიყურება.",
+    "category": "News & Media"
+  },
+  {
+    "english": "memoir",
+    "georgian": "მემუარი",
+    "pronunciation": "ˈmemwɑːr",
+    "example_en": "She published a memoir.",
+    "example_ka": "მან მემუარი გამოაქვეყნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "nonfiction",
+    "georgian": "არამხატვრული",
+    "pronunciation": "nɒnˈfɪkʃn",
+    "example_en": "I prefer nonfiction books.",
+    "example_ka": "არამხატვრულ წიგნებს ვამჯობინებ.",
+    "category": "News & Media"
+  },
+  {
+    "english": "ombudsman",
+    "georgian": "ომბუდსმენი",
+    "pronunciation": "ˈɒmbʊdzmən",
+    "example_en": "The ombudsman handled the complaint.",
+    "example_ka": "ომბუდსმენმა საჩივარი განიხილა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "periodical",
+    "georgian": "პერიოდული გამოცემა",
+    "pronunciation": "ˌpɪəriˈɒdɪkl",
+    "example_en": "The library has many periodicals.",
+    "example_ka": "ბიბლიოთეკაში ბევრი პერიოდული გამოცემაა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "rebuttal",
+    "georgian": "უარყოფა",
+    "pronunciation": "rɪˈbʌtl",
+    "example_en": "He wrote a rebuttal to the article.",
+    "example_ka": "მან სტატიის საპასუხოდ უარყოფა დაწერა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "retraction",
+    "georgian": "უკან გახმობა",
+    "pronunciation": "rɪˈtrækʃn",
+    "example_en": "The paper issued a retraction.",
+    "example_ka": "გაზეთმა უკან გახმობა გამოაქვეყნა.",
+    "category": "News & Media"
+  },
+  {
+    "english": "scribe",
+    "georgian": "მწერალი",
+    "pronunciation": "skraɪb",
+    "example_en": "The scribe recorded everything.",
+    "example_ka": "მწერალმა ყველაფერი ჩაწერა.",
+    "category": "News & Media"
+  }
 ]

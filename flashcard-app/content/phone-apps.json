@@ -1,27 +1,1802 @@
 [
-  {"english":"download","georgian":"ჩამოტვირთვა","pronunciation":"DOWN-lohd","example_en":"Download the app from the App Store.","example_ka":"აპლიკაცია App Store-დან ჩამოტვირთე.","category":"Phone & Apps","level":"A2"},
-  {"english":"update","georgian":"განახლება","pronunciation":"up-DAYT","example_en":"Update your phone to the latest version.","example_ka":"ტელეფონი უახლეს ვერსიაზე განაახლე.","category":"Phone & Apps","level":"A2"},
-  {"english":"notification","georgian":"შეტყობინება","pronunciation":"noh-tih-fih-KAY-shun","example_en":"I turned off notifications for that app.","example_ka":"იმ აპლიკაციის შეტყობინებები გავთიშე.","category":"Phone & Apps","level":"A2"},
-  {"english":"screenshot","georgian":"ეკრანის ანაბეჭდი","pronunciation":"SKREEN-shot","example_en":"Take a screenshot of the error.","example_ka":"შეცდომის ეკრანის ანაბეჭდი გადაიღე.","category":"Phone & Apps","level":"A2"},
-  {"english":"storage","georgian":"მეხსიერება","pronunciation":"STOR-ij","example_en":"My phone is running out of storage.","example_ka":"ტელეფონს მეხსიერება ელევა.","category":"Phone & Apps","level":"A2"},
-  {"english":"battery","georgian":"ბატარეა","pronunciation":"BAT-uh-ree","example_en":"My battery is at 5%.","example_ka":"ბატარეა 5%-ზეა.","category":"Phone & Apps","level":"A2"},
-  {"english":"charger","georgian":"დამტენი","pronunciation":"CHAR-jer","example_en":"Can I borrow your charger?","example_ka":"შეიძლება შენი დამტენი?","category":"Phone & Apps","level":"A2"},
-  {"english":"Wi-Fi","georgian":"ვაი-ფაი","pronunciation":"WY-fy","example_en":"What's the Wi-Fi password?","example_ka":"ვაი-ფაის პაროლი რა არის?","category":"Phone & Apps","level":"A1"},
-  {"english":"data","georgian":"ინტერნეტი/დატა","pronunciation":"DAY-tuh","example_en":"I ran out of mobile data.","example_ka":"მობილური ინტერნეტი ამომეწურა.","category":"Phone & Apps","level":"A2"},
-  {"english":"settings","georgian":"პარამეტრები","pronunciation":"SET-ingz","example_en":"Go to Settings and change it.","example_ka":"პარამეტრებში შედი და შეცვალე.","category":"Phone & Apps","level":"A2"},
-  {"english":"backup","georgian":"სარეზერვო ასლი","pronunciation":"BAK-up","example_en":"Always backup your photos.","example_ka":"ყოველთვის გააკეთე ფოტოების სარეზერვო ასლი.","category":"Phone & Apps","level":"B1"},
-  {"english":"crash","georgian":"გათიშვა/ჩავარდნა","pronunciation":"krash","example_en":"The app keeps crashing.","example_ka":"აპლიკაცია სულ ითიშება.","category":"Phone & Apps","level":"A2"},
-  {"english":"lag","georgian":"ყინვა/შეფერხება","pronunciation":"lag","example_en":"My phone is lagging.","example_ka":"ტელეფონი მეყინება.","category":"Phone & Apps","level":"A2"},
-  {"english":"password","georgian":"პაროლი","pronunciation":"PAS-werd","example_en":"Change your password regularly.","example_ka":"რეგულარულად შეცვალე პაროლი.","category":"Phone & Apps","level":"A1"},
-  {"english":"fingerprint","georgian":"თითის ანაბეჭდი","pronunciation":"FIN-ger-print","example_en":"Unlock your phone with fingerprint.","example_ka":"ტელეფონი თითის ანაბეჭდით გახსენი.","category":"Phone & Apps","level":"A2"},
-  {"english":"screen time","georgian":"ეკრანის დრო","pronunciation":"skreen tym","example_en":"My screen time is 6 hours a day.","example_ka":"ეკრანის დრო დღეში 6 საათია.","category":"Phone & Apps","level":"B1"},
-  {"english":"airplane mode","georgian":"თვითმფრინავის რეჟიმი","pronunciation":"AIR-playn mohd","example_en":"Turn on airplane mode during the flight.","example_ka":"ფრენის დროს ჩართე თვითმფრინავის რეჟიმი.","category":"Phone & Apps","level":"A2"},
-  {"english":"dark mode","georgian":"მუქი რეჟიმი","pronunciation":"dark mohd","example_en":"Dark mode saves battery.","example_ka":"მუქი რეჟიმი ბატარეას ზოგავს.","category":"Phone & Apps","level":"A2"},
-  {"english":"hotspot","georgian":"ჰოტსპოტი","pronunciation":"HOT-spot","example_en":"Can you turn on your hotspot?","example_ka":"შეგიძლია ჰოტსპოტი ჩართო?","category":"Phone & Apps","level":"B1"},
-  {"english":"SIM card","georgian":"სიმ ბარათი","pronunciation":"sim kard","example_en":"I need a new SIM card.","example_ka":"ახალი სიმ ბარათი მჭირდება.","category":"Phone & Apps","level":"A2"},
-  {"english":"voicemail","georgian":"ხმოვანი ფოსტა","pronunciation":"VOYS-mayl","example_en":"Leave a voicemail after the beep.","example_ka":"სიგნალის შემდეგ დატოვე ხმოვანი შეტყობინება.","category":"Phone & Apps","level":"B1"},
-  {"english":"bluetooth","georgian":"ბლუთუზი","pronunciation":"BLOO-tooth","example_en":"Connect your headphones via Bluetooth.","example_ka":"ყურსასმენები ბლუთუზით დააკავშირე.","category":"Phone & Apps","level":"A2"},
-  {"english":"app store","georgian":"აპლიკაციების მაღაზია","pronunciation":"ap stor","example_en":"Search for it in the App Store.","example_ka":"აპლიკაციების მაღაზიაში მოძებნე.","category":"Phone & Apps","level":"A2"},
-  {"english":"swipe","georgian":"გადასმა","pronunciation":"swyp","example_en":"Swipe right to like.","example_ka":"მარჯვნივ გადაასმე მოსაწონებლად.","category":"Phone & Apps","level":"A2"},
-  {"english":"cloud","georgian":"ღრუბელი","pronunciation":"klowd","example_en":"My photos are saved in the cloud.","example_ka":"ჩემი ფოტოები ღრუბელში ინახება.","category":"Phone & Apps","level":"A2"}
+  {
+    "english": "download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the app from the App Store.",
+    "example_ka": "აპლიკაცია App Store-დან ჩამოტვირთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "Update your phone to the latest version.",
+    "example_ka": "ტელეფონი უახლეს ვერსიაზე განაახლე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/",
+    "example_en": "I turned off notifications for that app.",
+    "example_ka": "იმ აპლიკაციის შეტყობინებები გავთიშე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "screenshot",
+    "georgian": "ეკრანის ანაბეჭდი",
+    "pronunciation": "/ˈskriːnʃɑːt/",
+    "example_en": "Take a screenshot of the error.",
+    "example_ka": "შეცდომის ეკრანის ანაბეჭდი გადაიღე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "storage",
+    "georgian": "მეხსიერება",
+    "pronunciation": "/ˈstɔːrɪdʒ/",
+    "example_en": "My phone is running out of storage.",
+    "example_ka": "ტელეფონს მეხსიერება ელევა.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "battery",
+    "georgian": "ბატარეა",
+    "pronunciation": "/ˈbætəri/",
+    "example_en": "My battery is at 5%.",
+    "example_ka": "ბატარეა 5%-ზეა.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "charger",
+    "georgian": "დამტენი",
+    "pronunciation": "/ˈtʃɑːrdʒər/",
+    "example_en": "Can I borrow your charger?",
+    "example_ka": "შეიძლება შენი დამტენი?",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "wifi",
+    "georgian": "ვაი-ფაი",
+    "pronunciation": "/ˈwaɪfaɪ/",
+    "example_en": "What's the Wi-Fi password?",
+    "example_ka": "ვაი-ფაის პაროლი რა არის?",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "data",
+    "georgian": "დატა",
+    "pronunciation": "/ˈdeɪtə/",
+    "example_en": "I ran out of mobile data.",
+    "example_ka": "მობილური ინტერნეტი ამომეწურა.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "settings",
+    "georgian": "პარამეტრები",
+    "pronunciation": "/ˈsetɪŋz/",
+    "example_en": "Go to Settings and change it.",
+    "example_ka": "პარამეტრებში შედი და შეცვალე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "backup",
+    "georgian": "სარეზერვო ასლი",
+    "pronunciation": "/ˈbækʌp/",
+    "example_en": "Always backup your photos.",
+    "example_ka": "ყოველთვის გააკეთე ფოტოების სარეზერვო ასლი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "crash",
+    "georgian": "ჩავარდნა",
+    "pronunciation": "/kræʃ/",
+    "example_en": "The app keeps crashing.",
+    "example_ka": "აპლიკაცია სულ ითიშება.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "lag",
+    "georgian": "შეფერხება",
+    "pronunciation": "/læɡ/",
+    "example_en": "My phone is lagging.",
+    "example_ka": "ტელეფონი მეყინება.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswərd/",
+    "example_en": "Change your password regularly.",
+    "example_ka": "რეგულარულად შეცვალე პაროლი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "fingerprint",
+    "georgian": "თითის ანაბეჭდი",
+    "pronunciation": "/ˈfɪŋɡərprɪnt/",
+    "example_en": "Unlock your phone with fingerprint.",
+    "example_ka": "ტელეფონი თითის ანაბეჭდით გახსენი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "hotspot",
+    "georgian": "ჰოტსპოტი",
+    "pronunciation": "/ˈhɑːtspɑːt/",
+    "example_en": "Can you turn on your hotspot?",
+    "example_ka": "შეგიძლია ჰოტსპოტი ჩართო?",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "voicemail",
+    "georgian": "ხმოვანი ფოსტა",
+    "pronunciation": "/ˈvɔɪsmeɪl/",
+    "example_en": "Leave a voicemail after the beep.",
+    "example_ka": "სიგნალის შემდეგ დატოვე ხმოვანი შეტყობინება.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "bluetooth",
+    "georgian": "ბლუთუზი",
+    "pronunciation": "/ˈbluːtuːθ/",
+    "example_en": "Connect your headphones via Bluetooth.",
+    "example_ka": "ყურსასმენები ბლუთუზით დააკავშირე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "swipe",
+    "georgian": "გადასმა",
+    "pronunciation": "/swaɪp/",
+    "example_en": "Swipe right to like.",
+    "example_ka": "მარჯვნივ გადაასმე მოსაწონებლად.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "cloud",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/klaʊd/",
+    "example_en": "My photos are saved in the cloud.",
+    "example_ka": "ჩემი ფოტოები ღრუბელში ინახება.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "install",
+    "georgian": "ინსტალაცია",
+    "pronunciation": "/ɪnˈstɔːl/",
+    "example_en": "Install the latest version.",
+    "example_ka": "უახლესი ვერსია დააინსტალირე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "uninstall",
+    "georgian": "წაშლა",
+    "pronunciation": "/ˌʌnɪnˈstɔːl/",
+    "example_en": "Uninstall apps you don't use.",
+    "example_ka": "წაშალე აპლიკაციები რომლებსაც არ იყენებ.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "sync",
+    "georgian": "სინქრონიზაცია",
+    "pronunciation": "/sɪŋk/",
+    "example_en": "Sync your contacts with Gmail.",
+    "example_ka": "კონტაქტები Gmail-თან სინქრონიზაცია გააკეთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "refresh",
+    "georgian": "განახლება",
+    "pronunciation": "/rɪˈfreʃ/",
+    "example_en": "Pull down to refresh the page.",
+    "example_ka": "გვერდის განასახლებლად ჩამოწიე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "cache",
+    "georgian": "კეში",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Clear the app cache to fix problems.",
+    "example_ka": "პრობლემების მოსაგვარებლად აპლიკაციის კეში გაასუფთავე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "keyboard",
+    "georgian": "კლავიატურა",
+    "pronunciation": "/ˈkiːbɔːrd/",
+    "example_en": "Switch to a different keyboard.",
+    "example_ka": "სხვა კლავიატურაზე გადაერთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "microphone",
+    "georgian": "მიკროფონი",
+    "pronunciation": "/ˈmaɪkrəfoʊn/",
+    "example_en": "The app needs microphone permission.",
+    "example_ka": "აპლიკაციას მიკროფონის ნებართვა სჭირდება.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "camera",
+    "georgian": "კამერა",
+    "pronunciation": "/ˈkæmərə/",
+    "example_en": "Allow camera access for photos.",
+    "example_ka": "კამერის წვდომა ფოტოებისთვის ნება დაე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "gallery",
+    "georgian": "გალერეა",
+    "pronunciation": "/ˈɡæləri/",
+    "example_en": "Open your photo gallery.",
+    "example_ka": "ფოტოგალერეა გახსენი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "contact",
+    "georgian": "კონტაქტი",
+    "pronunciation": "/ˈkɑːntækt/",
+    "example_en": "Add me to your contacts.",
+    "example_ka": "კონტაქტებში დამამატე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "ringtone",
+    "georgian": "ზარი",
+    "pronunciation": "/ˈrɪŋtoʊn/",
+    "example_en": "Change your ringtone.",
+    "example_ka": "ზარი შეცვალე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "vibration",
+    "georgian": "ვიბრაცია",
+    "pronunciation": "/vaɪˈbreɪʃən/",
+    "example_en": "Turn on vibration mode.",
+    "example_ka": "ვიბრაციის რეჟიმი ჩართე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "silent",
+    "georgian": "ჩუმი",
+    "pronunciation": "/ˈsaɪlənt/",
+    "example_en": "Put your phone on silent.",
+    "example_ka": "ტელეფონი ჩუმ რეჟიმზე დადე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "volume",
+    "georgian": "ხმა",
+    "pronunciation": "/ˈvɑːljuːm/",
+    "example_en": "Turn up the volume.",
+    "example_ka": "ხმა აწიე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "brightness",
+    "georgian": "სიკაშკაშე",
+    "pronunciation": "/ˈbraɪtnəs/",
+    "example_en": "Adjust the screen brightness.",
+    "example_ka": "ეკრანის სიკაშკაშე შეარეგულირე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "lockscreen",
+    "georgian": "დაბლოკილი ეკრანი",
+    "pronunciation": "/ˈlɑːkskriːn/",
+    "example_en": "Customize your lockscreen wallpaper.",
+    "example_ka": "დაბლოკილი ეკრანის ფონი მოირგე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "wallpaper",
+    "georgian": "ფონი",
+    "pronunciation": "/ˈwɔːlpeɪpər/",
+    "example_en": "Set a new wallpaper.",
+    "example_ka": "ახალი ფონი დააყენე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "widget",
+    "georgian": "ვიჯეტი",
+    "pronunciation": "/ˈwɪdʒɪt/",
+    "example_en": "Add weather widget to home screen.",
+    "example_ka": "მთავარ ეკრანზე ამინდის ვიჯეტი დაამატე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "folder",
+    "georgian": "საქაღალდე",
+    "pronunciation": "/ˈfoʊldər/",
+    "example_en": "Create a folder for social apps.",
+    "example_ka": "სოციალური აპლიკაციებისთვის საქაღალდე შექმენი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "homescreen",
+    "georgian": "მთავარი ეკრანი",
+    "pronunciation": "/ˈhoʊmskriːn/",
+    "example_en": "Organize your homescreen icons.",
+    "example_ka": "მთავარი ეკრანის აიქონები მოაწყვე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "icon",
+    "georgian": "აიქონი",
+    "pronunciation": "/ˈaɪkɑːn/",
+    "example_en": "Tap the app icon to open it.",
+    "example_ka": "გასახსნელად აპლიკაციის აიქონზე დააჭირე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmenjuː/",
+    "example_en": "Open the settings menu.",
+    "example_ka": "პარამეტრების მენიუ გახსენი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "toolbar",
+    "georgian": "ხელსაწყოთა ზოლი",
+    "pronunciation": "/ˈtuːlbɑːr/",
+    "example_en": "The toolbar has useful shortcuts.",
+    "example_ka": "ხელსაწყოთა ზოლში სასარგებლო მალსახმობები არის.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "sidebar",
+    "georgian": "გვერდითი ზოლი",
+    "pronunciation": "/ˈsaɪdbɑːr/",
+    "example_en": "Check the sidebar for more options.",
+    "example_ka": "დამატებითი ოფციებისთვის გვერდითი ზოლი შეამოწმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "tab",
+    "georgian": "ჩანართი",
+    "pronunciation": "/tæb/",
+    "example_en": "Switch to the next tab.",
+    "example_ka": "შემდეგ ჩანართზე გადაერთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "scroll",
+    "georgian": "გადაადგილება",
+    "pronunciation": "/skroʊl/",
+    "example_en": "Scroll down to see more content.",
+    "example_ka": "მეტი კონტენტის სანახავად ქვემოთ იყოყმანე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "zoom",
+    "georgian": "მასშტაბირება",
+    "pronunciation": "/zuːm/",
+    "example_en": "Pinch to zoom on the image.",
+    "example_ka": "სურათის გასამასშტაბებლად ჩაჩუმტე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "rotate",
+    "georgian": "მობრუნება",
+    "pronunciation": "/ˈroʊteɪt/",
+    "example_en": "Rotate your phone to landscape mode.",
+    "example_ka": "ტელეფონი ლანდშაფტ რეჟიმზე მობრუნე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "portrait",
+    "georgian": "პორტრეტული",
+    "pronunciation": "/ˈpɔːrtrət/",
+    "example_en": "Hold your phone in portrait mode.",
+    "example_ka": "ტელეფონი პორტრეტულ რეჟიმში დაიჭირე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "landscape",
+    "georgian": "ლანდშაფტური",
+    "pronunciation": "/ˈlændskeɪp/",
+    "example_en": "Switch to landscape for better viewing.",
+    "example_ka": "უკეთესი ნახვისთვის ლანდშაფტ რეჟიმზე გადაერთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "multitask",
+    "georgian": "მულტიტასკინგი",
+    "pronunciation": "/ˈmʌltitæsk/",
+    "example_en": "Use multitask view to switch apps.",
+    "example_ka": "აპლიკაციების გადასართველად მულტიტასკინგის ხედი გამოიყენე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "background",
+    "georgian": "ფონური რეჟიმი",
+    "pronunciation": "/ˈbækɡraʊnd/",
+    "example_en": "The app runs in the background.",
+    "example_ka": "აპლიკაცია ფონურ რეჟიმში მუშაობს.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "foreground",
+    "georgian": "წინა პლანი",
+    "pronunciation": "/ˈfɔːrɡraʊnd/",
+    "example_en": "Bring the app to the foreground.",
+    "example_ka": "აპლიკაცია წინა პლანზე გამოიყვანე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "permission",
+    "georgian": "ნებართვა",
+    "pronunciation": "/pərˈmɪʃən/",
+    "example_en": "Grant location permission to the app.",
+    "example_ka": "აპლიკაციას მდებარეობის ნებართვა მიეცი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "privacy",
+    "georgian": "კონფიდენციალურობა",
+    "pronunciation": "/ˈpraɪvəsi/",
+    "example_en": "Check your privacy settings regularly.",
+    "example_ka": "კონფიდენციალურობის პარამეტრები რეგულარულად შეამოწმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊrəti/",
+    "example_en": "Enable two-factor security authentication.",
+    "example_ka": "ორფაქტორიანი უსაფრთხოების ავთენტიფიკაცია ჩართე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "encryption",
+    "georgian": "დაშიფვრა",
+    "pronunciation": "/ɪnˈkrɪpʃən/",
+    "example_en": "Messages are protected by encryption.",
+    "example_ka": "შეტყობინებები დაშიფვრით არის დაცული.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "login",
+    "georgian": "შესვლა",
+    "pronunciation": "/ˈlɔːɡɪn/",
+    "example_en": "Use your login credentials.",
+    "example_ka": "შესვლის რეკვიზიტები გამოიყენე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "logout",
+    "georgian": "გამოსვლა",
+    "pronunciation": "/ˈlɔːɡaʊt/",
+    "example_en": "Don't forget to logout safely.",
+    "example_ka": "უსაფრთხოდ გამოსვლა არ დაგავიწყდეს.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "username",
+    "georgian": "მომხმარებლის სახელი",
+    "pronunciation": "/ˈjuːzərneɪm/",
+    "example_en": "Enter your username to continue.",
+    "example_ka": "გასაგრძელებლად მომხმარებლის სახელი შეიყვანე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "profile",
+    "georgian": "პროფილი",
+    "pronunciation": "/ˈproʊfaɪl/",
+    "example_en": "Update your profile picture.",
+    "example_ka": "პროფილის ფოტო განაახლე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "avatar",
+    "georgian": "ავატარი",
+    "pronunciation": "/ˈævətɑːr/",
+    "example_en": "Choose a cool avatar image.",
+    "example_ka": "მაგარი ავატარის სურათი აირჩიე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "status",
+    "georgian": "სტატუსი",
+    "pronunciation": "/ˈsteɪtəs/",
+    "example_en": "Set your online status.",
+    "example_ka": "ონლაინ სტატუსი დააყენე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "message",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈmesɪdʒ/",
+    "example_en": "Send a message to your friend.",
+    "example_ka": "მეგობარს შეტყობინება გაუგზავნე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "chat",
+    "georgian": "ჩატი",
+    "pronunciation": "/tʃæt/",
+    "example_en": "Start a group chat.",
+    "example_ka": "ჯგუფური ჩატი დაიწყე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "call",
+    "georgian": "ზარი",
+    "pronunciation": "/kɔːl/",
+    "example_en": "Make a video call.",
+    "example_ka": "ვიდეო ზარი განახორციელე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "videocall",
+    "georgian": "ვიდეო ზარი",
+    "pronunciation": "/ˈvɪdioʊkɔːl/",
+    "example_en": "Join the videocall meeting.",
+    "example_ka": "ვიდეო ზარის შეხვედრას შეუერთდი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "mute",
+    "georgian": "ხმის გათიშვა",
+    "pronunciation": "/mjuːt/",
+    "example_en": "Mute your microphone during the call.",
+    "example_ka": "ზარის დროს მიკროფონი გათიშე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "unmute",
+    "georgian": "ხმის ჩართვა",
+    "pronunciation": "/ʌnˈmjuːt/",
+    "example_en": "Unmute to speak in the meeting.",
+    "example_ka": "შეხვედრაში საუბრისთვის ხმა ჩართე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "speaker",
+    "georgian": "დინამიკი",
+    "pronunciation": "/ˈspiːkər/",
+    "example_en": "Turn on speaker mode.",
+    "example_ka": "დინამიკის რეჟიმი ჩართე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "headphones",
+    "georgian": "ყურსასმენები",
+    "pronunciation": "/ˈhɛdfoʊnz/",
+    "example_en": "Connect your wireless headphones.",
+    "example_ka": "უსადენო ყურსასმენები დააკავშირე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "earbuds",
+    "georgian": "ყურსაცმები",
+    "pronunciation": "/ˈɪrbʌdz/",
+    "example_en": "Put in your earbuds for better sound.",
+    "example_ka": "უკეთესი ხმისთვის ყურსაცმები ჩადე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "streaming",
+    "georgian": "სტრიმინგი",
+    "pronunciation": "/ˈstriːmɪŋ/",
+    "example_en": "Start streaming your gameplay.",
+    "example_ka": "თამაშის სტრიმინგი დაიწყე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "livestream",
+    "georgian": "ლაივ სტრიმი",
+    "pronunciation": "/ˈlaɪvstriːm/",
+    "example_en": "Watch the livestream event.",
+    "example_ka": "ლაივ სტრიმ ღონისძიება უყურე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ˈʌploʊd/",
+    "example_en": "Upload your photos to the cloud.",
+    "example_ka": "ფოტოები ღრუბელში ატვირთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "share",
+    "georgian": "გაზიარება",
+    "pronunciation": "/ʃeər/",
+    "example_en": "Share this post with friends.",
+    "example_ka": "ეს პოსტი მეგობრებს გაუზიარე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "like",
+    "georgian": "მოწონება",
+    "pronunciation": "/laɪk/",
+    "example_en": "Like the photo if you enjoyed it.",
+    "example_ka": "მოგეწონა თუ ფოტო მოიწონე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "comment",
+    "georgian": "კომენტარი",
+    "pronunciation": "/ˈkɑːment/",
+    "example_en": "Leave a comment on the video.",
+    "example_ka": "ვიდეოზე კომენტარი დატოვე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "follow",
+    "georgian": "გაყოლა",
+    "pronunciation": "/ˈfɑːloʊ/",
+    "example_en": "Follow your favorite creators.",
+    "example_ka": "საყვარელი შემქმნელები გაჰყევი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "unfollow",
+    "georgian": "გაყოლის გაუქმება",
+    "pronunciation": "/ʌnˈfɑːloʊ/",
+    "example_en": "Unfollow accounts you don't like.",
+    "example_ka": "არასასურველი ანგარიშების გაყოლა გააუქმე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "block",
+    "georgian": "დაბლოკვა",
+    "pronunciation": "/blɑːk/",
+    "example_en": "Block users who send spam.",
+    "example_ka": "სპამ მომხმარებლები დაბლოკე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "report",
+    "georgian": "მოხსენება",
+    "pronunciation": "/rɪˈpɔːrt/",
+    "example_en": "Report inappropriate content.",
+    "example_ka": "შეუფერებელი კონტენტი მოახსენე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Subscribe to premium features.",
+    "example_ka": "პრემიუმ ფუნქციებზე გამოიწერე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "unsubscribe",
+    "georgian": "გამოწერის გაუქმება",
+    "pronunciation": "/ʌnsəbˈskraɪb/",
+    "example_en": "Unsubscribe from unwanted emails.",
+    "example_ka": "არასასურველი იმეილების გამოწერა გააუქმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "premium",
+    "georgian": "პრემიუმი",
+    "pronunciation": "/ˈpriːmiəm/",
+    "example_en": "Upgrade to premium account.",
+    "example_ka": "პრემიუმ ანგარიშზე განაახლე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "trial",
+    "georgian": "სასინჯი ვერსია",
+    "pronunciation": "/ˈtraɪəl/",
+    "example_en": "Start your free trial today.",
+    "example_ka": "უფასო სასინჯი ვერსია დღეს დაიწყე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "subscription",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskrɪpʃən/",
+    "example_en": "Cancel your subscription anytime.",
+    "example_ka": "გამოწერა ნებისმიერ დროს გააუქმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "payment",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈpeɪmənt/",
+    "example_en": "Add your payment method.",
+    "example_ka": "გადახდის მეთოდი დაამატე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Check your purchase receipt.",
+    "example_ka": "ყიდვის ქვითარი შეამოწმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "refund",
+    "georgian": "თანხის დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "Request a refund for the app.",
+    "example_ka": "აპლიკაციისთვის თანხის დაბრუნება მოითხოვე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "store",
+    "georgian": "მაღაზია",
+    "pronunciation": "/stɔːr/",
+    "example_en": "Browse the app store.",
+    "example_ka": "აპლიკაციების მაღაზიაში მოინახულე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Write a review for the app.",
+    "example_ka": "აპლიკაციისთვის მიმოხილვა დაწერე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "rating",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈreɪtɪŋ/",
+    "example_en": "Give the app a five-star rating.",
+    "example_ka": "აპლიკაციას ხუთვარსკვლავიანი შეფასება მიეცი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "feedback",
+    "georgian": "გამოხმაურება",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "Send feedback to the developers.",
+    "example_ka": "დეველოპერებს გამოხმაურება გაუგზავნე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "bug",
+    "georgian": "ხარვეზი",
+    "pronunciation": "/bʌɡ/",
+    "example_en": "Report any bugs you find.",
+    "example_ka": "ნაპოვნი ხარვეზები მოახსენე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "glitch",
+    "georgian": "გრცენა",
+    "pronunciation": "/ɡlɪtʃ/",
+    "example_en": "There's a glitch in the interface.",
+    "example_ka": "ინტერფეისში გრცენაა.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "error",
+    "georgian": "შეცდომა",
+    "pronunciation": "/ˈerər/",
+    "example_en": "An error occurred during download.",
+    "example_ka": "ჩამოტვირთვისას შეცდომა მოხდა.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "loading",
+    "georgian": "ჩატვირთვა",
+    "pronunciation": "/ˈloʊdɪŋ/",
+    "example_en": "The app is still loading.",
+    "example_ka": "აპლიკაცია ჯერ კიდევ იტვირთება.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "buffering",
+    "georgian": "ბუფერირება",
+    "pronunciation": "/ˈbʌfərɪŋ/",
+    "example_en": "The video keeps buffering.",
+    "example_ka": "ვიდეო სულ ბუფერირდება.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "streaming",
+    "georgian": "სტრიმინგი",
+    "pronunciation": "/ˈstriːmɪŋ/",
+    "example_en": "Watch movies on streaming platforms.",
+    "example_ka": "ფილმები სტრიმინგ პლატფორმებზე უყურე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "offline",
+    "georgian": "ოფლაინი",
+    "pronunciation": "/ˈɔːflaɪn/",
+    "example_en": "Download content for offline viewing.",
+    "example_ka": "კონტენტი ოფლაინ ნახვისთვის ჩამოტვირთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "online",
+    "georgian": "ონლაინი",
+    "pronunciation": "/ˈɔːnlaɪn/",
+    "example_en": "You need to be online to use this.",
+    "example_ka": "ამის გამოსაყენებლად ონლაინში უნდა იყო.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "connection",
+    "georgian": "კავშირი",
+    "pronunciation": "/kəˈnekʃən/",
+    "example_en": "Check your internet connection.",
+    "example_ka": "ინტერნეტ კავშირი შეამოწმე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "signal",
+    "georgian": "სიგნალი",
+    "pronunciation": "/ˈsɪɡnəl/",
+    "example_en": "The phone signal is weak here.",
+    "example_ka": "აქ ტელეფონის სიგნალი სუსტია.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "network",
+    "georgian": "ქსელი",
+    "pronunciation": "/ˈnetwɜːrk/",
+    "example_en": "Connect to a secure network.",
+    "example_ka": "დაცულ ქსელთან დაუკავშირდი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "roaming",
+    "georgian": "როუმინგი",
+    "pronunciation": "/ˈroʊmɪŋ/",
+    "example_en": "Turn off data roaming abroad.",
+    "example_ka": "საზღვარგარეთ მონაცემთა როუმინგი გათიშე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "airplane",
+    "georgian": "თვითმფრინავის რეჟიმი",
+    "pronunciation": "/ˈerpleɪn/",
+    "example_en": "Switch to airplane mode during flight.",
+    "example_ka": "ფრენისას თვითმფრინავის რეჟიმზე გადაერთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "restart",
+    "georgian": "თავიდან ჩართვა",
+    "pronunciation": "/riːˈstɑːrt/",
+    "example_en": "Restart your phone to fix issues.",
+    "example_ka": "პრობლემების მოსაგვარებლად ტელეფონი თავიდან ჩართე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "reboot",
+    "georgian": "ხელახლა ჩატვირთვა",
+    "pronunciation": "/riːˈbuːt/",
+    "example_en": "Reboot the device completely.",
+    "example_ka": "მოწყობილობა მთლიანად ხელახლა ჩატვირთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "factory",
+    "georgian": "ქარხნული პარამეტრები",
+    "pronunciation": "/ˈfæktəri/",
+    "example_en": "Perform a factory reset carefully.",
+    "example_ka": "ქარხნული პარამეტრების აღდგენა ფრთხილად გააკეთე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "restore",
+    "georgian": "აღდგენა",
+    "pronunciation": "/rɪˈstɔːr/",
+    "example_en": "Restore data from your backup.",
+    "example_ka": "მონაცემები სარეზერვო ასლიდან აღადგინე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "transfer",
+    "georgian": "გადატანა",
+    "pronunciation": "/ˈtrænsfər/",
+    "example_en": "Transfer files to your new phone.",
+    "example_ka": "ფაილები ახალ ტელეფონზე გადაიტანე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "migrate",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/ˈmaɪɡreɪt/",
+    "example_en": "Migrate your account to the new device.",
+    "example_ka": "ანგარიში ახალ მოწყობილობაზე მიიცვალე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "import",
+    "georgian": "იმპორტი",
+    "pronunciation": "/ɪmˈpɔːrt/",
+    "example_en": "Import contacts from your old phone.",
+    "example_ka": "კონტაქტები ძველი ტელეფონიდან იმპორტი გააკეთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "export",
+    "georgian": "ექსპორტი",
+    "pronunciation": "/ɪkˈspɔːrt/",
+    "example_en": "Export your photos before switching.",
+    "example_ka": "გადარჩემამდე ფოტოების ექსპორტი გააკეთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "format",
+    "georgian": "ფორმატირება",
+    "pronunciation": "/ˈfɔːrmæt/",
+    "example_en": "Format the SD card before using.",
+    "example_ka": "გამოყენებამდე SD ბარათი გაფორმატე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "memory",
+    "georgian": "მეხსიერება",
+    "pronunciation": "/ˈmeməri/",
+    "example_en": "Free up memory space on your device.",
+    "example_ka": "მოწყობილობაზე მეხსიერების ადგილი გათავისუფლე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "space",
+    "georgian": "ადგილი",
+    "pronunciation": "/speɪs/",
+    "example_en": "You need more space for this app.",
+    "example_ka": "ამ აპლიკაციისთვის მეტი ადგილი გჭირდება.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "capacity",
+    "georgian": "ტევადობა",
+    "pronunciation": "/kəˈpæsəti/",
+    "example_en": "Check your phone's storage capacity.",
+    "example_ka": "ტელეფონის მეხსიერების ტევადობა შეამოწმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "limit",
+    "georgian": "ლიმიტი",
+    "pronunciation": "/ˈlɪmɪt/",
+    "example_en": "You've reached your data limit.",
+    "example_ka": "მონაცემთა ლიმიტი მიაღწიე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "unlimited",
+    "georgian": "ულიმიტო",
+    "pronunciation": "/ʌnˈlɪmɪtɪd/",
+    "example_en": "Get unlimited data with this plan.",
+    "example_ka": "ამ პაკეტით ულიმიტო ინტერნეტი მიიღე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "plan",
+    "georgian": "პაკეტი",
+    "pronunciation": "/plæn/",
+    "example_en": "Choose the best mobile plan.",
+    "example_ka": "სარჩელი მობილური პაკეტი აირჩიე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "contract",
+    "georgian": "კონტრაქტი",
+    "pronunciation": "/ˈkɑːntrækt/",
+    "example_en": "Read the contract terms carefully.",
+    "example_ka": "კონტრაქტის პირობები ყურადღებით წაიკითხე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "carrier",
+    "georgian": "ოპერატორი",
+    "pronunciation": "/ˈkæriər/",
+    "example_en": "Switch to a better carrier.",
+    "example_ka": "უკეთეს ოპერატორზე გადაერთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "provider",
+    "georgian": "პროვაიდერი",
+    "pronunciation": "/prəˈvaɪdər/",
+    "example_en": "Contact your service provider.",
+    "example_ka": "სერვის პროვაიდერს დაუკავშირდი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "coverage",
+    "georgian": "კავშირის ზონა",
+    "pronunciation": "/ˈkʌvərɪdʒ/",
+    "example_en": "Check coverage in your area.",
+    "example_ka": "შენს რეგიონში კავშირის ზონა შეამოწმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "tower",
+    "georgian": "ანძა",
+    "pronunciation": "/ˈtaʊər/",
+    "example_en": "The cell tower is under maintenance.",
+    "example_ka": "მობილური ანძა პროფილაქტიკაშია.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "antenna",
+    "georgian": "ანტენა",
+    "pronunciation": "/ænˈtenə/",
+    "example_en": "The phone's antenna is damaged.",
+    "example_ka": "ტელეფონის ანტენა დაზიანებულია.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "satellite",
+    "georgian": "თანამგზავრი",
+    "pronunciation": "/ˈsætəlaɪt/",
+    "example_en": "Use satellite internet in remote areas.",
+    "example_ka": "დაშორებულ ადგილებში თანამგზავრული ინტერნეტი იყენე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "reception",
+    "georgian": "რეცეფცია",
+    "pronunciation": "/rɪˈsepʃən/",
+    "example_en": "The reception here is terrible.",
+    "example_ka": "აქ რეცეფცია საშინელებაა.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "frequency",
+    "georgian": "სიხშირე",
+    "pronunciation": "/ˈfriːkwənsi/",
+    "example_en": "Check which frequency your phone supports.",
+    "example_ka": "შეამოწმე რომელ სიხშირეს უჭერს შენი ტელეფონი.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "bandwidth",
+    "georgian": "გამტარუნარიანობა",
+    "pronunciation": "/ˈbændwɪdθ/",
+    "example_en": "This app requires high bandwidth.",
+    "example_ka": "ამ აპლიკაციას მაღალი გამტარუნარიანობა სჭირდება.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "latency",
+    "georgian": "დაყოვნება",
+    "pronunciation": "/ˈleɪtənsi/",
+    "example_en": "Low latency is important for gaming.",
+    "example_ka": "თამაშებისთვის დაბალი დაყოვნება მნიშვნელოვანია.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "ping",
+    "georgian": "პინგი",
+    "pronunciation": "/pɪŋ/",
+    "example_en": "Test your internet ping speed.",
+    "example_ka": "ინტერნეტის პინგის სიჩქარე შეამოწმე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "speed",
+    "georgian": "სიჩქარე",
+    "pronunciation": "/spiːd/",
+    "example_en": "Run a speed test on your connection.",
+    "example_ka": "კავშირის სიჩქარის ტესტი ჩაატარე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "throttling",
+    "georgian": "შეზღუდვა",
+    "pronunciation": "/ˈθrɑːtlɪŋ/",
+    "example_en": "Your data is being throttled.",
+    "example_ka": "შენი ინტერნეტი შეიზღუდება.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "unlimited",
+    "georgian": "ულიმიტო",
+    "pronunciation": "/ʌnˈlɪmɪtɪd/",
+    "example_en": "Enjoy unlimited streaming.",
+    "example_ka": "ულიმიტო სტრიმინგი ისიამოვნე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "quota",
+    "georgian": "კვოტა",
+    "pronunciation": "/ˈkwoʊtə/",
+    "example_en": "You've exceeded your monthly quota.",
+    "example_ka": "თვიური კვოტა გადააჭარბე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "overage",
+    "georgian": "ზედმეტი მოხმარება",
+    "pronunciation": "/ˈoʊvərɪdʒ/",
+    "example_en": "Watch out for overage charges.",
+    "example_ka": "ზედმეტი მოხმარების ფასების მიმართ ყურადღებით იყავი.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "prepaid",
+    "georgian": "წინასწარ გადახდილი",
+    "pronunciation": "/priːˈpeɪd/",
+    "example_en": "Top up your prepaid account.",
+    "example_ka": "წინასწარ გადახდილი ანგარიში შეავსე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "postpaid",
+    "georgian": "შემდგომ გადახდილი",
+    "pronunciation": "/ˈpoʊstpeɪd/",
+    "example_en": "Switch to a postpaid plan.",
+    "example_ka": "შემდგომ გადახდილ პაკეტზე გადაერთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "billing",
+    "georgian": "ბილინგი",
+    "pronunciation": "/ˈbɪlɪŋ/",
+    "example_en": "Check your billing statement.",
+    "example_ka": "ბილინგის განცხადება შეამოწმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "Download your monthly invoice.",
+    "example_ka": "თვიური ინვოისი ჩამოტვირთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "balance",
+    "georgian": "ნაშთი",
+    "pronunciation": "/ˈbæləns/",
+    "example_en": "Check your account balance.",
+    "example_ka": "ანგარიშის ნაშთი შეამოწმე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "topup",
+    "georgian": "შევსება",
+    "pronunciation": "/ˈtɑːpʌp/",
+    "example_en": "Do a quick topup online.",
+    "example_ka": "ონლაინ სწრაფი შევსება გააკეთე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "credit",
+    "georgian": "კრედიტი",
+    "pronunciation": "/ˈkredɪt/",
+    "example_en": "Your credit is running low.",
+    "example_ka": "კრედიტი გელევა.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "debit",
+    "georgian": "დებეტი",
+    "pronunciation": "/ˈdebɪt/",
+    "example_en": "Money was debited from your account.",
+    "example_ka": "ანგარიშიდან თანხა ჩამოიწერა.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "charge",
+    "georgian": "ტარიფი",
+    "pronunciation": "/tʃɑːrdʒ/",
+    "example_en": "There's an extra charge for this service.",
+    "example_ka": "ამ სერვისისთვის დამატებითი ტარიფია.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "fee",
+    "georgian": "საკომისიო",
+    "pronunciation": "/fiː/",
+    "example_en": "There's no activation fee.",
+    "example_ka": "აქტივაციის საკომისიო არ არის.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "tax",
+    "georgian": "გადასახადი",
+    "pronunciation": "/tæks/",
+    "example_en": "Price includes all taxes.",
+    "example_ka": "ფასი ყველა გადასახადს მოიცავს.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Students get a special discount.",
+    "example_ka": "სტუდენტები სპეციალურ ფასდაკლებას იღებენ.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "promotion",
+    "georgian": "აქცია",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "Take advantage of this promotion.",
+    "example_ka": "ამ აქციით ისარგებლე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "offer",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/ˈɔːfər/",
+    "example_en": "This is a limited-time offer.",
+    "example_ka": "ეს შეზღუდული დროის შეთავაზებაა.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "deal",
+    "georgian": "შეთანხმება",
+    "pronunciation": "/diːl/",
+    "example_en": "That's a great deal!",
+    "example_ka": "ეს ძალიან კარგი შეთანხმებაა!",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "bundle",
+    "georgian": "პაკეტი",
+    "pronunciation": "/ˈbʌndəl/",
+    "example_en": "Get the phone and service bundle.",
+    "example_ka": "ტელეფონისა და სერვისის პაკეტი მიიღე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "package",
+    "georgian": "ნაკრები",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "Choose the best package for you.",
+    "example_ka": "შენთვის საუკეთესო ნაკრები აირჩიე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "upgrade",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpɡreɪd/",
+    "example_en": "Time to upgrade your phone.",
+    "example_ka": "ტელეფონის განახლების დროა.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "downgrade",
+    "georgian": "დაქვეითება",
+    "pronunciation": "/ˈdaʊnɡreɪd/",
+    "example_en": "You can downgrade your plan anytime.",
+    "example_ka": "პაკეტი ნებისმიერ დროს შეგიძლია დაიქვეითო.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "migration",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/maɪˈɡreɪʃən/",
+    "example_en": "Data migration takes time.",
+    "example_ka": "მონაცემთა მიგრაციას დრო სჭირდება.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "activation",
+    "georgian": "გააქტივება",
+    "pronunciation": "/ˌæktɪˈveɪʃən/",
+    "example_en": "Complete the activation process.",
+    "example_ka": "გააქტივების პროცესი დაამთავრე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "deactivation",
+    "georgian": "გათიშვა",
+    "pronunciation": "/diːˌæktɪˈveɪʃən/",
+    "example_en": "Request account deactivation.",
+    "example_ka": "ანგარიშის გათიშვა მოითხოვე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "suspension",
+    "georgian": "შეჩერება",
+    "pronunciation": "/səˈspenʃən/",
+    "example_en": "Your service is under suspension.",
+    "example_ka": "შენი სერვისი შეჩერებულია.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "termination",
+    "georgian": "შეწყვეტა",
+    "pronunciation": "/ˌtɜːrməˈneɪʃən/",
+    "example_en": "Avoid contract termination fees.",
+    "example_ka": "კონტრაქტის შეწყვეტის საკომისიო ავირიდე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "cancellation",
+    "georgian": "გაუქმება",
+    "pronunciation": "/ˌkænsəˈleɪʃən/",
+    "example_en": "Process the service cancellation.",
+    "example_ka": "სერვისის გაუქმების პროცესი გაიარე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "renewal",
+    "georgian": "განახლება",
+    "pronunciation": "/rɪˈnuːəl/",
+    "example_en": "Your plan renewal is due.",
+    "example_ka": "პაკეტის განახლების დროა.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "expiration",
+    "georgian": "ვადის გასვლა",
+    "pronunciation": "/ˌekspəˈreɪʃən/",
+    "example_en": "Check the expiration date.",
+    "example_ka": "ვადის გასვლის თარიღი შეამოწმე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "extension",
+    "georgian": "გაგრძელება",
+    "pronunciation": "/ɪkˈstenʃən/",
+    "example_en": "Request a service extension.",
+    "example_ka": "სერვისის გაგრძელება მოითხოვე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "warranty",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˈwɔːrənti/",
+    "example_en": "Your phone is still under warranty.",
+    "example_ka": "შენი ტელეფონი ჯერ კიდევ გარანტიაშია.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "/ɪnˈʃʊrəns/",
+    "example_en": "Get phone insurance for protection.",
+    "example_ka": "ტელეფონის დაზღვევა დაცვისთვის გააკეთე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "coverage",
+    "georgian": "დაფარვა",
+    "pronunciation": "/ˈkʌvərɪdʒ/",
+    "example_en": "Check what your insurance coverage includes.",
+    "example_ka": "შეამოწმე რას მოიცავს დაზღვევის დაფარვა.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "claim",
+    "georgian": "პრეტენზია",
+    "pronunciation": "/kleɪm/",
+    "example_en": "File an insurance claim.",
+    "example_ka": "დაზღვევის პრეტენზია შეიტანე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "replacement",
+    "georgian": "ჩანაცვლება",
+    "pronunciation": "/rɪˈpleɪsmənt/",
+    "example_en": "Get a replacement device.",
+    "example_ka": "ჩანაცვლების მოწყობილობა მიიღე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "repair",
+    "georgian": "შეკეთება",
+    "pronunciation": "/rɪˈper/",
+    "example_en": "Take your phone for repair.",
+    "example_ka": "ტელეფონი შეკეთებაში წაიღე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "damage",
+    "georgian": "ზიანი",
+    "pronunciation": "/ˈdæmɪdʒ/",
+    "example_en": "The phone has water damage.",
+    "example_ka": "ტელეფონს წყლის ზიანი აქვს.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "crack",
+    "georgian": "ნაპრალი",
+    "pronunciation": "/kræk/",
+    "example_en": "There's a crack in the screen.",
+    "example_ka": "ეკრანში ნაპრალია.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "scratch",
+    "georgian": "ნაკაწონა",
+    "pronunciation": "/skrætʃ/",
+    "example_en": "Protect your phone from scratches.",
+    "example_ka": "ტელეფონი ნაკაწონისგან დაიცავი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "protector",
+    "georgian": "დამცავი",
+    "pronunciation": "/prəˈtektər/",
+    "example_en": "Use a screen protector.",
+    "example_ka": "ეკრანის დამცავი გამოიყენე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "gesture",
+    "georgian": "ჟესტი",
+    "pronunciation": "/ˈdʒestʃər/",
+    "example_en": "Use touch gestures to navigate.",
+    "example_ka": "ნავიგაციისთვის შეხების ჟესტები გამოიყენე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "shortcut",
+    "georgian": "მალსახმობი",
+    "pronunciation": "/ˈʃɔːrtkʌt/",
+    "example_en": "Create shortcuts for quick access.",
+    "example_ka": "სწრაფი წვდომისთვის მალსახმობები შექმენი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "automation",
+    "georgian": "ავტომატიზაცია",
+    "pronunciation": "/ˌɔːtəməˈteɪʃən/",
+    "example_en": "Set up task automation to save time.",
+    "example_ka": "დროის დაზოგვისთვის ავტომატიზაცია დაყენე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "launcher",
+    "georgian": "გამშვები",
+    "pronunciation": "/ˈlɔːntʃər/",
+    "example_en": "Try a different app launcher.",
+    "example_ka": "სხვა აპლიკაციის გამშვები ცადე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "drawer",
+    "georgian": "უჯრა",
+    "pronunciation": "/drɔːr/",
+    "example_en": "Open the app drawer to find more apps.",
+    "example_ka": "მეტი აპლიკაციის საპოვნელად უჯრა გახსენი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "dock",
+    "georgian": "დოკი",
+    "pronunciation": "/dɑːk/",
+    "example_en": "Pin your favorite apps to the dock.",
+    "example_ka": "საყვარელი აპლიკაციები დოკზე მიამაგრე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "carousel",
+    "georgian": "კარუსელი",
+    "pronunciation": "/ˌkærəˈsel/",
+    "example_en": "Swipe through the image carousel.",
+    "example_ka": "სურათების კარუსელში გადაადგილდი.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "slider",
+    "georgian": "სლაიდერი",
+    "pronunciation": "/ˈslaɪdər/",
+    "example_en": "Adjust the volume with the slider.",
+    "example_ka": "ხმა სლაიდერით შეარეგულირე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "toggle",
+    "georgian": "გადამრთველი",
+    "pronunciation": "/ˈtɑːɡəl/",
+    "example_en": "Toggle WiFi on and off.",
+    "example_ka": "WiFi ჩართე და გათიშე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "dropdown",
+    "georgian": "ჩამოსაშლელი მენიუ",
+    "pronunciation": "/ˈdrɑːpˌdaʊn/",
+    "example_en": "Select an option from the dropdown menu.",
+    "example_ka": "ჩამოსაშლელი მენიუდან ოფცია აირჩიე.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "popup",
+    "georgian": "ამომხტარი ფანჯარა",
+    "pronunciation": "/ˈpɑːpʌp/",
+    "example_en": "Close the popup window to continue.",
+    "example_ka": "გასაგრძელებლად ამომხტარი ფანჯარა დახურე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "modal",
+    "georgian": "მოდალური",
+    "pronunciation": "/ˈmoʊdəl/",
+    "example_en": "The modal dialog requires your attention.",
+    "example_ka": "მოდალური დიალოგი შენს ყურადღებას მოითხოვს.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "banner",
+    "georgian": "ბანერი",
+    "pronunciation": "/ˈbænər/",
+    "example_en": "The notification banner appeared at the top.",
+    "example_ka": "შეტყობინების ბანერი ზემოთ გამოჩნდა.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "badge",
+    "georgian": "ნიშანი",
+    "pronunciation": "/bædʒ/",
+    "example_en": "The app shows a red badge for new messages.",
+    "example_ka": "აპლიკაცია ახალი შეტყობინებისთვის წითელ ნიშანს აჩვენებს.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "indicator",
+    "georgian": "მაჩვენებელი",
+    "pronunciation": "/ˈɪndɪkeɪtər/",
+    "example_en": "The loading indicator shows progress.",
+    "example_ka": "ჩატვირთვის მაჩვენებელი პროგრესს აჩვენებს.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  },
+  {
+    "english": "progress",
+    "georgian": "პროგრესი",
+    "pronunciation": "/ˈprɑːɡres/",
+    "example_en": "Check the download progress bar.",
+    "example_ka": "ჩამოტვირთვის პროგრესის ზოლი შეამოწმე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "timer",
+    "georgian": "ტაიმერი",
+    "pronunciation": "/ˈtaɪmər/",
+    "example_en": "Set a timer for 10 minutes.",
+    "example_ka": "10 წუთზე ტაიმერი დადე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "alarm",
+    "georgian": "მაღვიძარა",
+    "pronunciation": "/əˈlɑːrm/",
+    "example_en": "Set an alarm for tomorrow morning.",
+    "example_ka": "ხვალ დილისთვის მაღვიძარა დაყენე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "reminder",
+    "georgian": "შეხსენება",
+    "pronunciation": "/rɪˈmaɪndər/",
+    "example_en": "Create a reminder for your appointment.",
+    "example_ka": "ვიზიტისთვის შეხსენება შექმენი.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "calendar",
+    "georgian": "კალენდარი",
+    "pronunciation": "/ˈkæləndər/",
+    "example_en": "Add the event to your calendar.",
+    "example_ka": "ღონისძიება კალენდარში დაამატე.",
+    "category": "phone-apps",
+    "level": "beginner"
+  },
+  {
+    "english": "scheduler",
+    "georgian": "მგრაფიკბელი",
+    "pronunciation": "/ˈskedʒulər/",
+    "example_en": "Use the task scheduler for automation.",
+    "example_ka": "ავტომატიზაციისთვის მგრაფიკბელი გამოიყენე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "workflow",
+    "georgian": "სამუშაო პროცესი",
+    "pronunciation": "/ˈwɜːrkfloʊ/",
+    "example_en": "Customize your workflow for efficiency.",
+    "example_ka": "ეფექტურობისთვის სამუშაო პროცესი მოირგე.",
+    "category": "phone-apps",
+    "level": "advanced"
+  },
+  {
+    "english": "interface",
+    "georgian": "ინტერფეისი",
+    "pronunciation": "/ˈɪntərfeɪs/",
+    "example_en": "The app has a user-friendly interface.",
+    "example_ka": "აპლიკაციას მომხმარებელზე ორიენტირებული ინტერფეისი აქვს.",
+    "category": "phone-apps",
+    "level": "intermediate"
+  }
 ]

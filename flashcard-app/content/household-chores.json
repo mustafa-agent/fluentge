@@ -1,52 +1,1802 @@
 [
-  {"english": "Clean", "georgian": "დალაგება", "pronunciation": "/kliːn/", "example_en": "I need to clean the house.", "example_ka": "სახლის დალაგება მჭირდება.", "category": "chores", "level": "A1"},
-  {"english": "Sweep", "georgian": "გვა", "pronunciation": "/swiːp/", "example_en": "Sweep the floor, please.", "example_ka": "გთხოვთ, იატაკი მოგავე.", "category": "chores", "level": "A2"},
-  {"english": "Mop", "georgian": "შლიფვა", "pronunciation": "/mɒp/", "example_en": "I mop the kitchen floor every day.", "example_ka": "სამზარეულოს იატაკს ყოველდღე ვშლიფავ.", "category": "chores", "level": "A2"},
-  {"english": "Vacuum", "georgian": "მტვერსასრუტით გაწმენდა", "pronunciation": "/ˈvækjuːm/", "example_en": "I vacuum the carpet once a week.", "example_ka": "ხალიჩას კვირაში ერთხელ მტვერსასრუტით ვწმენდ.", "category": "chores", "level": "A2"},
-  {"english": "Dust", "georgian": "მტვრის გადაწმენდა", "pronunciation": "/dʌst/", "example_en": "Don't forget to dust the shelves.", "example_ka": "თაროების მტვრის გადაწმენდა არ დაგავიწყდეს.", "category": "chores", "level": "A2"},
-  {"english": "Laundry", "georgian": "სარეცხი", "pronunciation": "/ˈlɔːndri/", "example_en": "I need to do the laundry today.", "example_ka": "დღეს სარეცხის გარეცხვა მჭირდება.", "category": "chores", "level": "A2"},
-  {"english": "Wash", "georgian": "გარეცხვა", "pronunciation": "/wɒʃ/", "example_en": "Wash your hands before eating.", "example_ka": "ჭამამდე ხელები დაიბანე.", "category": "chores", "level": "A1"},
-  {"english": "Iron", "georgian": "დაუთოვება", "pronunciation": "/ˈaɪərn/", "example_en": "I need to iron my shirt.", "example_ka": "პერანგის დაუთოვება მჭირდება.", "category": "chores", "level": "A2"},
-  {"english": "Fold", "georgian": "დაკეცვა", "pronunciation": "/foʊld/", "example_en": "Fold the clothes and put them away.", "example_ka": "ტანსაცმელი დაკეცე და მოაწესრიგე.", "category": "chores", "level": "A2"},
-  {"english": "Hang up", "georgian": "გაშრობაზე გაკიდება", "pronunciation": "/hæŋ ʌp/", "example_en": "Hang up the wet clothes outside.", "example_ka": "სველი ტანსაცმელი გარეთ გააკიდე.", "category": "chores", "level": "A2"},
-  {"english": "Dishes", "georgian": "ჭურჭელი", "pronunciation": "/ˈdɪʃɪz/", "example_en": "It's your turn to do the dishes.", "example_ka": "შენი ჯერია ჭურჭლის დაბანა.", "category": "chores", "level": "A1"},
-  {"english": "Dishwasher", "georgian": "ჭურჭლის სარეცხი მანქანა", "pronunciation": "/ˈdɪʃˌwɒʃər/", "example_en": "Put the plates in the dishwasher.", "example_ka": "თეფშები ჭურჭლის სარეცხ მანქანაში ჩადე.", "category": "chores", "level": "A2"},
-  {"english": "Washing machine", "georgian": "სარეცხი მანქანა", "pronunciation": "/ˈwɒʃɪŋ məˈʃiːn/", "example_en": "The washing machine is broken.", "example_ka": "სარეცხი მანქანა გაფუჭებულია.", "category": "chores", "level": "A2"},
-  {"english": "Dryer", "georgian": "საშრობი", "pronunciation": "/ˈdraɪər/", "example_en": "Put the clothes in the dryer.", "example_ka": "ტანსაცმელი საშრობში ჩადე.", "category": "chores", "level": "A2"},
-  {"english": "Trash", "georgian": "ნაგავი", "pronunciation": "/træʃ/", "example_en": "Take out the trash, please.", "example_ka": "გთხოვთ, ნაგავი გაიტანე.", "category": "chores", "level": "A1"},
-  {"english": "Garbage bag", "georgian": "ნაგვის პარკი", "pronunciation": "/ˈɡɑːrbɪdʒ bæɡ/", "example_en": "We need more garbage bags.", "example_ka": "მეტი ნაგვის პარკი გვჭირდება.", "category": "chores", "level": "A2"},
-  {"english": "Recycle", "georgian": "გადამუშავება", "pronunciation": "/riːˈsaɪkəl/", "example_en": "Don't forget to recycle the bottles.", "example_ka": "ბოთლების გადამუშავება არ დაგავიწყდეს.", "category": "chores", "level": "B1"},
-  {"english": "Organize", "georgian": "მოწესრიგება", "pronunciation": "/ˈɔːrɡənaɪz/", "example_en": "I need to organize my closet.", "example_ka": "კარადის მოწესრიგება მჭირდება.", "category": "chores", "level": "A2"},
-  {"english": "Tidy up", "georgian": "დალაგება", "pronunciation": "/ˈtaɪdi ʌp/", "example_en": "Tidy up your room before guests arrive.", "example_ka": "სტუმრების მოსვლამდე ოთახი დაალაგე.", "category": "chores", "level": "A2"},
-  {"english": "Scrub", "georgian": "გახეხვა", "pronunciation": "/skrʌb/", "example_en": "Scrub the bathroom tiles.", "example_ka": "აბაზანის ფილები გახეხე.", "category": "chores", "level": "B1"},
-  {"english": "Wipe", "georgian": "გადაწმენდა", "pronunciation": "/waɪp/", "example_en": "Wipe the table after dinner.", "example_ka": "სადილის შემდეგ მაგიდა გადაწმინდე.", "category": "chores", "level": "A2"},
-  {"english": "Polish", "georgian": "გაპრიალება", "pronunciation": "/ˈpɒlɪʃ/", "example_en": "Polish the furniture with this spray.", "example_ka": "ავეჯი ამ სპრეით გააპრიალე.", "category": "chores", "level": "B1"},
-  {"english": "Detergent", "georgian": "სარეცხი საშუალება", "pronunciation": "/dɪˈtɜːrdʒənt/", "example_en": "We need more laundry detergent.", "example_ka": "მეტი სარეცხი საშუალება გვჭირდება.", "category": "chores", "level": "A2"},
-  {"english": "Bleach", "georgian": "მათეთრებელი", "pronunciation": "/bliːtʃ/", "example_en": "Use bleach to clean the bathroom.", "example_ka": "აბაზანის გასაწმენდად მათეთრებელი გამოიყენე.", "category": "chores", "level": "B1"},
-  {"english": "Sponge", "georgian": "ღრუბელი", "pronunciation": "/spʌndʒ/", "example_en": "Use a sponge to wash the dishes.", "example_ka": "ჭურჭლის დასაბანად ღრუბელი გამოიყენე.", "category": "chores", "level": "A2"},
-  {"english": "Broom", "georgian": "ცოცხი", "pronunciation": "/bruːm/", "example_en": "Where is the broom?", "example_ka": "სად არის ცოცხი?", "category": "chores", "level": "A2"},
-  {"english": "Bucket", "georgian": "ვედრო", "pronunciation": "/ˈbʌkɪt/", "example_en": "Fill the bucket with water.", "example_ka": "ვედრო წყლით ავსე.", "category": "chores", "level": "A2"},
-  {"english": "Stain", "georgian": "ლაქა", "pronunciation": "/steɪn/", "example_en": "There's a stain on your shirt.", "example_ka": "პერანგზე ლაქაა.", "category": "chores", "level": "A2"},
-  {"english": "Dirty", "georgian": "ბინძური", "pronunciation": "/ˈdɜːrti/", "example_en": "The floor is very dirty.", "example_ka": "იატაკი ძალიან ბინძურია.", "category": "chores", "level": "A1"},
-  {"english": "Spotless", "georgian": "უმწიკვლო", "pronunciation": "/ˈspɒtləs/", "example_en": "The kitchen is spotless.", "example_ka": "სამზარეულო უმწიკვლოა.", "category": "chores", "level": "B1"},
-  {"english": "Mess", "georgian": "არეულობა", "pronunciation": "/mɛs/", "example_en": "What a mess in this room!", "example_ka": "რა არეულობაა ამ ოთახში!", "category": "chores", "level": "A2"},
-  {"english": "Chore", "georgian": "საყოფაცხოვრებო საქმე", "pronunciation": "/tʃɔːr/", "example_en": "Doing chores is boring.", "example_ka": "საყოფაცხოვრებო საქმეების კეთება მოსაწყენია.", "category": "chores", "level": "A2"},
-  {"english": "Cooking", "georgian": "საჭმლის მომზადება", "pronunciation": "/ˈkʊkɪŋ/", "example_en": "I enjoy cooking dinner.", "example_ka": "სადილის მომზადება მსიამოვნებს.", "category": "chores", "level": "A1"},
-  {"english": "Bed making", "georgian": "საწოლის გასწორება", "pronunciation": "/bɛd ˈmeɪkɪŋ/", "example_en": "Make your bed every morning.", "example_ka": "ყოველ დილით საწოლი გაისწორე.", "category": "chores", "level": "A1"},
-  {"english": "Dry", "georgian": "გაშრობა", "pronunciation": "/draɪ/", "example_en": "Dry the dishes with a towel.", "example_ka": "ჭურჭელი პირსახოცით გაშალე.", "category": "chores", "level": "A1"},
-  {"english": "Sort", "georgian": "დახარისხება", "pronunciation": "/sɔːrt/", "example_en": "Sort the laundry by color.", "example_ka": "სარეცხი ფერების მიხედვით დაახარისხე.", "category": "chores", "level": "A2"},
-  {"english": "Repair", "georgian": "შეკეთება", "pronunciation": "/rɪˈpɛr/", "example_en": "I need to repair the faucet.", "example_ka": "ონკანის შეკეთება მჭირდება.", "category": "chores", "level": "A2"},
-  {"english": "Fix", "georgian": "გამოსწორება", "pronunciation": "/fɪks/", "example_en": "Can you fix the broken chair?", "example_ka": "გატეხილი სკამის გამოსწორება შეგიძლია?", "category": "chores", "level": "A2"},
-  {"english": "Water the plants", "georgian": "მცენარეების მორწყვა", "pronunciation": "/ˈwɔːtər ðə plænts/", "example_en": "Don't forget to water the plants.", "example_ka": "მცენარეების მორწყვა არ დაგავიწყდეს.", "category": "chores", "level": "A2"},
-  {"english": "Vacuum cleaner", "georgian": "მტვერსასრუტი", "pronunciation": "/ˈvækjuːm ˈkliːnər/", "example_en": "The vacuum cleaner is very loud.", "example_ka": "მტვერსასრუტი ძალიან ხმამაღალია.", "category": "chores", "level": "A2"},
-  {"english": "Rag", "georgian": "ნაჭერი", "pronunciation": "/ræɡ/", "example_en": "Use a wet rag to clean the surface.", "example_ka": "ზედაპირის გასაწმენდად სველი ნაჭერი გამოიყენე.", "category": "chores", "level": "A2"},
-  {"english": "Spray", "georgian": "სპრეი", "pronunciation": "/spreɪ/", "example_en": "Spray the cleaner on the mirror.", "example_ka": "სარკეზე სპრეი შეაფრქვიე.", "category": "chores", "level": "A2"},
-  {"english": "Mow the lawn", "georgian": "ბალახის გათიბვა", "pronunciation": "/moʊ ðə lɔːn/", "example_en": "I mow the lawn every Saturday.", "example_ka": "ყოველ შაბათს ბალახს ვთიბავ.", "category": "chores", "level": "B1"},
-  {"english": "Rinse", "georgian": "ჩამოვლება", "pronunciation": "/rɪns/", "example_en": "Rinse the vegetables before cooking.", "example_ka": "ბოსტნეული მომზადებამდე ჩამოავლე.", "category": "chores", "level": "A2"},
-  {"english": "Soak", "georgian": "დალბობა", "pronunciation": "/soʊk/", "example_en": "Soak the beans overnight.", "example_ka": "ლობიო ღამით დაალბე.", "category": "chores", "level": "B1"},
-  {"english": "Hang the curtains", "georgian": "ფარდების გაკიდება", "pronunciation": "/hæŋ ðə ˈkɜːrtnz/", "example_en": "Can you help me hang the curtains?", "example_ka": "ფარდების გაკიდებაში დამეხმარები?", "category": "chores", "level": "B1"},
-  {"english": "Declutter", "georgian": "ზედმეტის მოცილება", "pronunciation": "/diːˈklʌtər/", "example_en": "It's time to declutter the garage.", "example_ka": "ავტოფარეხიდან ზედმეტის მოცილების დროა.", "category": "chores", "level": "B1"},
-  {"english": "Soap", "georgian": "საპონი", "pronunciation": "/soʊp/", "example_en": "Use soap to wash your hands.", "example_ka": "ხელების დასაბანად საპონი გამოიყენე.", "category": "chores", "level": "A1"},
-  {"english": "Gloves", "georgian": "ხელთათმანები", "pronunciation": "/ɡlʌvz/", "example_en": "Wear gloves when using chemicals.", "example_ka": "ქიმიკატების გამოყენებისას ხელთათმანები ჩაიცვი.", "category": "chores", "level": "A2"},
-  {"english": "Squeegee", "georgian": "მინის საწმენდი", "pronunciation": "/ˈskwiːdʒiː/", "example_en": "Use the squeegee on the shower glass.", "example_ka": "საშხაპე მინაზე მინის საწმენდი გამოიყენე.", "category": "chores", "level": "B1"}
+  {
+    "english": "Clean",
+    "georgian": "დალაგება",
+    "pronunciation": "/kliːn/",
+    "example_en": "I need to clean the house.",
+    "example_ka": "სახლის დალაგება მჭირდება.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Sweep",
+    "georgian": "გვა",
+    "pronunciation": "/swiːp/",
+    "example_en": "Sweep the floor, please.",
+    "example_ka": "გთხოვთ, იატაკი მოგავე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Mop",
+    "georgian": "შლიფვა",
+    "pronunciation": "/mɒp/",
+    "example_en": "I mop the kitchen floor every day.",
+    "example_ka": "სამზარეულოს იატაკს ყოველდღე ვშლიფავ.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Vacuum",
+    "georgian": "მტვერსასრუტით გაწმენდა",
+    "pronunciation": "/ˈvækjuːm/",
+    "example_en": "I vacuum the carpet once a week.",
+    "example_ka": "ხალიჩას კვირაში ერთხელ მტვერსასრუტით ვწმენდ.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Dust",
+    "georgian": "მტვრის გადაწმენდა",
+    "pronunciation": "/dʌst/",
+    "example_en": "Don't forget to dust the shelves.",
+    "example_ka": "თაროების მტვრის გადაწმენდა არ დაგავიწყდეს.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Laundry",
+    "georgian": "სარეცხი",
+    "pronunciation": "/ˈlɔːndri/",
+    "example_en": "I need to do the laundry today.",
+    "example_ka": "დღეს სარეცხის გარეცხვა მჭირდება.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Wash",
+    "georgian": "გარეცხვა",
+    "pronunciation": "/wɒʃ/",
+    "example_en": "Wash your hands before eating.",
+    "example_ka": "ჭამამდე ხელები დაიბანე.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Iron",
+    "georgian": "დაუთოვება",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "I need to iron my shirt.",
+    "example_ka": "პერანგის დაუთოვება მჭირდება.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Fold",
+    "georgian": "დაკეცვა",
+    "pronunciation": "/foʊld/",
+    "example_en": "Fold the clothes and put them away.",
+    "example_ka": "ტანსაცმელი დაკეცე და მოაწესრიგე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Dishes",
+    "georgian": "ჭურჭელი",
+    "pronunciation": "/ˈdɪʃɪz/",
+    "example_en": "It's your turn to do the dishes.",
+    "example_ka": "შენი ჯერია ჭურჭლის დაბანა.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Dishwasher",
+    "georgian": "ჭურჭლის სარეცხი მანქანა",
+    "pronunciation": "/ˈdɪʃˌwɒʃər/",
+    "example_en": "Put the plates in the dishwasher.",
+    "example_ka": "თეფშები ჭურჭლის სარეცხ მანქანაში ჩადე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Dryer",
+    "georgian": "საშრობი",
+    "pronunciation": "/ˈdraɪər/",
+    "example_en": "Put the clothes in the dryer.",
+    "example_ka": "ტანსაცმელი საშრობში ჩადე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Trash",
+    "georgian": "ნაგავი",
+    "pronunciation": "/træʃ/",
+    "example_en": "Take out the trash, please.",
+    "example_ka": "გთხოვთ, ნაგავი გაიტანე.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Recycle",
+    "georgian": "გადამუშავება",
+    "pronunciation": "/riːˈsaɪkəl/",
+    "example_en": "Don't forget to recycle the bottles.",
+    "example_ka": "ბოთლების გადამუშავება არ დაგავიწყდეს.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Organize",
+    "georgian": "მოწესრიგება",
+    "pronunciation": "/ˈɔːrɡənaɪz/",
+    "example_en": "I need to organize my closet.",
+    "example_ka": "კარადის მოწესრიგება მჭირდება.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Scrub",
+    "georgian": "გახეხვა",
+    "pronunciation": "/skrʌb/",
+    "example_en": "Scrub the bathroom tiles.",
+    "example_ka": "აბაზანის ფილები გახეხე.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Wipe",
+    "georgian": "გადაწმენდა",
+    "pronunciation": "/waɪp/",
+    "example_en": "Wipe the table after dinner.",
+    "example_ka": "სადილის შემდეგ მაგიდა გადაწმინდე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Polish",
+    "georgian": "გაპრიალება",
+    "pronunciation": "/ˈpɒlɪʃ/",
+    "example_en": "Polish the furniture with this spray.",
+    "example_ka": "ავეჯი ამ სპრეით გააპრიალე.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Detergent",
+    "georgian": "სარეცხი საშუალება",
+    "pronunciation": "/dɪˈtɜːrdʒənt/",
+    "example_en": "We need more laundry detergent.",
+    "example_ka": "მეტი სარეცხი საშუალება გვჭირდება.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Bleach",
+    "georgian": "მათეთრებელი",
+    "pronunciation": "/bliːtʃ/",
+    "example_en": "Use bleach to clean the bathroom.",
+    "example_ka": "აბაზანის გასაწმენდად მათეთრებელი გამოიყენე.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Sponge",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/spʌndʒ/",
+    "example_en": "Use a sponge to wash the dishes.",
+    "example_ka": "ჭურჭლის დასაბანად ღრუბელი გამოიყენე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Broom",
+    "georgian": "ცოცხი",
+    "pronunciation": "/bruːm/",
+    "example_en": "Where is the broom?",
+    "example_ka": "სად არის ცოცხი?",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Bucket",
+    "georgian": "ვედრო",
+    "pronunciation": "/ˈbʌkɪt/",
+    "example_en": "Fill the bucket with water.",
+    "example_ka": "ვედრო წყლით ავსე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Stain",
+    "georgian": "ლაქა",
+    "pronunciation": "/steɪn/",
+    "example_en": "There's a stain on your shirt.",
+    "example_ka": "პერანგზე ლაქაა.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Dirty",
+    "georgian": "ბინძური",
+    "pronunciation": "/ˈdɜːrti/",
+    "example_en": "The floor is very dirty.",
+    "example_ka": "იატაკი ძალიან ბინძურია.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Spotless",
+    "georgian": "უმწიკვლო",
+    "pronunciation": "/ˈspɒtləs/",
+    "example_en": "The kitchen is spotless.",
+    "example_ka": "სამზარეულო უმწიკვლოა.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Mess",
+    "georgian": "არეულობა",
+    "pronunciation": "/mɛs/",
+    "example_en": "What a mess in this room!",
+    "example_ka": "რა არეულობაა ამ ოთახში!",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Chore",
+    "georgian": "საყოფაცხოვრებო საქმე",
+    "pronunciation": "/tʃɔːr/",
+    "example_en": "Doing chores is boring.",
+    "example_ka": "საყოფაცხოვრებო საქმეების კეთება მოსაწყენია.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Cooking",
+    "georgian": "საჭმლის მომზადება",
+    "pronunciation": "/ˈkʊkɪŋ/",
+    "example_en": "I enjoy cooking dinner.",
+    "example_ka": "სადილის მომზადება მსიამოვნებს.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Dry",
+    "georgian": "გაშრობა",
+    "pronunciation": "/draɪ/",
+    "example_en": "Dry the dishes with a towel.",
+    "example_ka": "ჭურჭელი პირსახოცით გაშალე.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Sort",
+    "georgian": "დახარისხება",
+    "pronunciation": "/sɔːrt/",
+    "example_en": "Sort the laundry by color.",
+    "example_ka": "სარეცხი ფერების მიხედვით დაახარისხე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Repair",
+    "georgian": "შეკეთება",
+    "pronunciation": "/rɪˈpɛr/",
+    "example_en": "I need to repair the faucet.",
+    "example_ka": "ონკანის შეკეთება მჭირდება.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Fix",
+    "georgian": "გამოსწორება",
+    "pronunciation": "/fɪks/",
+    "example_en": "Can you fix the broken chair?",
+    "example_ka": "გატეხილი სკამის გამოსწორება შეგიძლია?",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Rag",
+    "georgian": "ნაჭერი",
+    "pronunciation": "/ræɡ/",
+    "example_en": "Use a wet rag to clean the surface.",
+    "example_ka": "ზედაპირის გასაწმენდად სველი ნაჭერი გამოიყენე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Spray",
+    "georgian": "სპრეი",
+    "pronunciation": "/spreɪ/",
+    "example_en": "Spray the cleaner on the mirror.",
+    "example_ka": "სარკეზე სპრეი შეაფრქვიე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Rinse",
+    "georgian": "ჩამოვლება",
+    "pronunciation": "/rɪns/",
+    "example_en": "Rinse the vegetables before cooking.",
+    "example_ka": "ბოსტნეული მომზადებამდე ჩამოავლე.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Soak",
+    "georgian": "დალბობა",
+    "pronunciation": "/soʊk/",
+    "example_en": "Soak the beans overnight.",
+    "example_ka": "ლობიო ღამით დაალბე.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Declutter",
+    "georgian": "ზედმეტის მოცილება",
+    "pronunciation": "/diːˈklʌtər/",
+    "example_en": "It's time to declutter the garage.",
+    "example_ka": "ავტოფარეხიდან ზედმეტის მოცილების დროა.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Soap",
+    "georgian": "საპონი",
+    "pronunciation": "/soʊp/",
+    "example_en": "Use soap to wash your hands.",
+    "example_ka": "ხელების დასაბანად საპონი გამოიყენე.",
+    "category": "chores",
+    "level": "A1"
+  },
+  {
+    "english": "Gloves",
+    "georgian": "ხელთათმანები",
+    "pronunciation": "/ɡlʌvz/",
+    "example_en": "Wear gloves when using chemicals.",
+    "example_ka": "ქიმიკატების გამოყენებისას ხელთათმანები ჩაიცვი.",
+    "category": "chores",
+    "level": "A2"
+  },
+  {
+    "english": "Squeegee",
+    "georgian": "მინის საწმენდი",
+    "pronunciation": "/ˈskwiːdʒiː/",
+    "example_en": "Use the squeegee on the shower glass.",
+    "example_ka": "საშხაპე მინაზე მინის საწმენდი გამოიყენე.",
+    "category": "chores",
+    "level": "B1"
+  },
+  {
+    "english": "Hang",
+    "georgian": "გაშლა",
+    "pronunciation": "/hæŋ/",
+    "example_en": "Hang the clothes.",
+    "example_ka": "ტანსაცმელი გაშალე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Starch",
+    "georgian": "სახამებელი",
+    "pronunciation": "/stɑːrtʃ/",
+    "example_en": "Starch the collar.",
+    "example_ka": "საყელო დასახამებლე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Disinfect",
+    "georgian": "დეზინფექცია",
+    "pronunciation": "/ˌdɪsɪnˈfekt/",
+    "example_en": "Disinfect the bathroom.",
+    "example_ka": "აბაზანა დეზინფექცია გაუკეთე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Sanitize",
+    "georgian": "გაწმენდა",
+    "pronunciation": "/ˈsænɪtaɪz/",
+    "example_en": "Sanitize the kitchen.",
+    "example_ka": "სამზარეულო გაასანიტარე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Tidy",
+    "georgian": "მოწესრიგება",
+    "pronunciation": "/ˈtaɪdi/",
+    "example_en": "Tidy up the room.",
+    "example_ka": "ოთახი მოაწესრიგე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Arrange",
+    "georgian": "მოწყობა",
+    "pronunciation": "/əˈreɪndʒ/",
+    "example_en": "Arrange the books.",
+    "example_ka": "წიგნები დაალაგე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Stack",
+    "georgian": "დაწყობა",
+    "pronunciation": "/stæk/",
+    "example_en": "Stack the boxes.",
+    "example_ka": "ყუთები დააწყვე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Store",
+    "georgian": "შენახვა",
+    "pronunciation": "/stɔːr/",
+    "example_en": "Store the winter clothes.",
+    "example_ka": "ზამთრის ტანსაცმელი შეინახე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Paint",
+    "georgian": "შეღებვა",
+    "pronunciation": "/peɪnt/",
+    "example_en": "Paint the wall.",
+    "example_ka": "კედელი შეღებე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Hammer",
+    "georgian": "ჩაქუჩი",
+    "pronunciation": "/ˈhæmər/",
+    "example_en": "Use a hammer.",
+    "example_ka": "ჩაქუჩი გამოიყენე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Drill",
+    "georgian": "ბურღი",
+    "pronunciation": "/drɪl/",
+    "example_en": "I need a drill.",
+    "example_ka": "ბურღი მჭირდება.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Screw",
+    "georgian": "ხრახნი",
+    "pronunciation": "/skruː/",
+    "example_en": "Tighten the screw.",
+    "example_ka": "ხრახნი მოხადე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Nail",
+    "georgian": "ლურსმანი",
+    "pronunciation": "/neɪl/",
+    "example_en": "Hammer a nail.",
+    "example_ka": "ლურსმანი ჩააჭედე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Plumber",
+    "georgian": "სანტექნიკოსი",
+    "pronunciation": "/ˈplʌmər/",
+    "example_en": "Call the plumber.",
+    "example_ka": "სანტექნიკოსს დაურეკე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Electrician",
+    "georgian": "ელექტრიკოსი",
+    "pronunciation": "/ˌɪlekˈtrɪʃən/",
+    "example_en": "The electrician fixed the wiring.",
+    "example_ka": "ელექტრიკოსმა გაყვანილობა შეაკეთა.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Garbage",
+    "georgian": "ნაგავი",
+    "pronunciation": "/ˈɡɑːrbɪdʒ/",
+    "example_en": "Take out the garbage.",
+    "example_ka": "ნაგავი გაიტანე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Compost",
+    "georgian": "კომპოსტი",
+    "pronunciation": "/ˈkɒmpɒst/",
+    "example_en": "Add scraps to the compost.",
+    "example_ka": "ნარჩენები კომპოსტში ჩაყარე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Dispose",
+    "georgian": "მოშორება",
+    "pronunciation": "/dɪˈspoʊz/",
+    "example_en": "Dispose of waste properly.",
+    "example_ka": "ნარჩენები სწორად მოაშორე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Shred",
+    "georgian": "დაქუცმაცება",
+    "pronunciation": "/ʃred/",
+    "example_en": "Shred old documents.",
+    "example_ka": "ძველი დოკუმენტები დაქუცმაცე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Cook",
+    "georgian": "მზარეულობა",
+    "pronunciation": "/kʊk/",
+    "example_en": "Cook dinner tonight.",
+    "example_ka": "ამაღამ სადილი მოამზადე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Bake",
+    "georgian": "გამოცხობა",
+    "pronunciation": "/beɪk/",
+    "example_en": "Bake a cake.",
+    "example_ka": "ტორტი გამოაცხვე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Boil",
+    "georgian": "ადუღება",
+    "pronunciation": "/bɔɪl/",
+    "example_en": "Boil the water.",
+    "example_ka": "წყალი ადუღე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Fry",
+    "georgian": "შეწვა",
+    "pronunciation": "/fraɪ/",
+    "example_en": "Fry the eggs.",
+    "example_ka": "კვერცხები შეწვი.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Grill",
+    "georgian": "გრილზე შეწვა",
+    "pronunciation": "/ɡrɪl/",
+    "example_en": "Grill the meat.",
+    "example_ka": "ხორცი გრილზე შეწვი.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Chop",
+    "georgian": "დაჭრა",
+    "pronunciation": "/tʃɒp/",
+    "example_en": "Chop the vegetables.",
+    "example_ka": "ბოსტნეული დაჭერი.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Slice",
+    "georgian": "ნაჭრებად დაჭრა",
+    "pronunciation": "/slaɪs/",
+    "example_en": "Slice the bread.",
+    "example_ka": "პური ნაჭრებად დაჭერი.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Peel",
+    "georgian": "გაცლა",
+    "pronunciation": "/piːl/",
+    "example_en": "Peel the potatoes.",
+    "example_ka": "კარტოფილი გააცალე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Stir",
+    "georgian": "მორევა",
+    "pronunciation": "/stɜːr/",
+    "example_en": "Stir the soup.",
+    "example_ka": "წვნიანი მოურიე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Season",
+    "georgian": "მოსუნელება",
+    "pronunciation": "/ˈsiːzn/",
+    "example_en": "Season the meat.",
+    "example_ka": "ხორცი მოასუნელე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Marinate",
+    "georgian": "მარინადში დადება",
+    "pronunciation": "/ˈmærɪneɪt/",
+    "example_en": "Marinate the chicken overnight.",
+    "example_ka": "ქათამი ღამით მარინადში დადე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Defrost",
+    "georgian": "გალღობა",
+    "pronunciation": "/diːˈfrɒst/",
+    "example_en": "Defrost the meat.",
+    "example_ka": "ხორცი გაალღვე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Refrigerate",
+    "georgian": "გაცივება",
+    "pronunciation": "/rɪˈfrɪdʒəreɪt/",
+    "example_en": "Refrigerate the leftovers.",
+    "example_ka": "ნარჩენები მაცივარში შეინახე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Freeze",
+    "georgian": "გაყინვა",
+    "pronunciation": "/friːz/",
+    "example_en": "Freeze the extra portions.",
+    "example_ka": "ზედმეტი ულუფები გაყინე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Microwave",
+    "georgian": "მიკროტალღური",
+    "pronunciation": "/ˈmaɪkroʊweɪv/",
+    "example_en": "Microwave the food.",
+    "example_ka": "საჭმელი მიკროტალღურში გაათბე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Blend",
+    "georgian": "შერევა",
+    "pronunciation": "/blend/",
+    "example_en": "Blend the fruits.",
+    "example_ka": "ხილი გააქუცე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Knead",
+    "georgian": "ზელა",
+    "pronunciation": "/niːd/",
+    "example_en": "Knead the dough.",
+    "example_ka": "ცომი მოზილე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Simmer",
+    "georgian": "ნელ ცეცხლზე მოხარშვა",
+    "pronunciation": "/ˈsɪmər/",
+    "example_en": "Simmer for thirty minutes.",
+    "example_ka": "ოცდაათი წუთი ნელ ცეცხლზე მოხარშე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Sauté",
+    "georgian": "მოშუშვა",
+    "pronunciation": "/soʊˈteɪ/",
+    "example_en": "Sauté the onions.",
+    "example_ka": "ხახვი მოშუშე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Braise",
+    "georgian": "შეთუშვა",
+    "pronunciation": "/breɪz/",
+    "example_en": "Braise the beef.",
+    "example_ka": "საქონლის ხორცი შეათუშე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Poach",
+    "georgian": "წყალში მოხარშვა",
+    "pronunciation": "/poʊtʃ/",
+    "example_en": "Poach the eggs.",
+    "example_ka": "კვერცხები წყალში მოხარშე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Fabric",
+    "georgian": "ქსოვილი",
+    "pronunciation": "/ˈfæbrɪk/",
+    "example_en": "Use fabric softener.",
+    "example_ka": "ქსოვილის დამარბილებელი გამოიყენე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Spot",
+    "georgian": "ლაქა",
+    "pronunciation": "/spɒt/",
+    "example_en": "There is a spot on the shirt.",
+    "example_ka": "პერანგზე ლაქაა.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Dustpan",
+    "georgian": "ნაგვის სათხელი",
+    "pronunciation": "/ˈdʌstpæn/",
+    "example_en": "Use the dustpan.",
+    "example_ka": "ნაგვის სათხელი გამოიყენე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Towel",
+    "georgian": "პირსახოცი",
+    "pronunciation": "/ˈtaʊəl/",
+    "example_en": "Hang the towel.",
+    "example_ka": "პირსახოცი გაკიდე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Curtain",
+    "georgian": "ფარდა",
+    "pronunciation": "/ˈkɜːrtn/",
+    "example_en": "Wash the curtains.",
+    "example_ka": "ფარდები გარეცხე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Rug",
+    "georgian": "ხალიჩა",
+    "pronunciation": "/rʌɡ/",
+    "example_en": "Vacuum the rug.",
+    "example_ka": "ხალიჩა მტვერსასრუტით გაასუფთავე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Carpet",
+    "georgian": "ხალიჩა",
+    "pronunciation": "/ˈkɑːrpɪt/",
+    "example_en": "Clean the carpet.",
+    "example_ka": "ხალიჩა გაასუფთავე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Mattress",
+    "georgian": "ლეიბი",
+    "pronunciation": "/ˈmætrəs/",
+    "example_en": "Turn the mattress.",
+    "example_ka": "ლეიბი შემოაბრუნე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Pillow",
+    "georgian": "ბალიში",
+    "pronunciation": "/ˈpɪloʊ/",
+    "example_en": "Fluff the pillows.",
+    "example_ka": "ბალიშები გაფუვე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Sheet",
+    "georgian": "თეთრეული",
+    "pronunciation": "/ʃiːt/",
+    "example_en": "Change the bed sheets.",
+    "example_ka": "საწოლის თეთრეული შეცვალე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkɪt/",
+    "example_en": "Wash the blanket.",
+    "example_ka": "საბანი გარეცხე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Duvet",
+    "georgian": "საბნის საფარი",
+    "pronunciation": "/ˈduːveɪ/",
+    "example_en": "Put on a clean duvet.",
+    "example_ka": "სუფთა საბნის საფარი გამოაცვალე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Linen",
+    "georgian": "თეთრეული",
+    "pronunciation": "/ˈlɪnɪn/",
+    "example_en": "Change the linen weekly.",
+    "example_ka": "თეთრეული ყოველკვირეულად შეცვალე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Plunger",
+    "georgian": "პომპი",
+    "pronunciation": "/ˈplʌndʒər/",
+    "example_en": "Use a plunger.",
+    "example_ka": "პომპი გამოიყენე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Drain",
+    "georgian": "სანიაღვრე",
+    "pronunciation": "/dreɪn/",
+    "example_en": "Unclog the drain.",
+    "example_ka": "სანიაღვრე გაწმინდე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Faucet",
+    "georgian": "ონკანი",
+    "pronunciation": "/ˈfɔːsɪt/",
+    "example_en": "Fix the leaking faucet.",
+    "example_ka": "გამტარე ონკანი შეაკეთე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Sink",
+    "georgian": "ნიჟარა",
+    "pronunciation": "/sɪŋk/",
+    "example_en": "Clean the sink.",
+    "example_ka": "ნიჟარა გაწმინდე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Bathtub",
+    "georgian": "აბაზანა",
+    "pronunciation": "/ˈbæθtʌb/",
+    "example_en": "Scrub the bathtub.",
+    "example_ka": "აბაზანა მოხეხე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Toilet",
+    "georgian": "ტუალეტი",
+    "pronunciation": "/ˈtɔɪlɪt/",
+    "example_en": "Clean the toilet.",
+    "example_ka": "ტუალეტი გაწმინდე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Shower",
+    "georgian": "შხაპი",
+    "pronunciation": "/ˈʃaʊər/",
+    "example_en": "Clean the shower.",
+    "example_ka": "შხაპი გაწმინდე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Tile",
+    "georgian": "კაფელი",
+    "pronunciation": "/taɪl/",
+    "example_en": "Scrub the tiles.",
+    "example_ka": "კაფელი მოხეხე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Grout",
+    "georgian": "ნაკერი",
+    "pronunciation": "/ɡraʊt/",
+    "example_en": "Clean the grout.",
+    "example_ka": "ნაკერი გაწმინდე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Ventilate",
+    "georgian": "ვენტილაცია",
+    "pronunciation": "/ˈventɪleɪt/",
+    "example_en": "Ventilate the room.",
+    "example_ka": "ოთახი გაანიავე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Dehumidify",
+    "georgian": "გაშრობა",
+    "pronunciation": "/diːhjuːˈmɪdɪfaɪ/",
+    "example_en": "Dehumidify the basement.",
+    "example_ka": "სარდაფი გაუტენიანე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Fumigate",
+    "georgian": "შეფრქვევა",
+    "pronunciation": "/ˈfjuːmɪɡeɪt/",
+    "example_en": "Fumigate the house.",
+    "example_ka": "სახლი შეაფრქვიე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Exterminate",
+    "georgian": "მოსპობა",
+    "pronunciation": "/ɪkˈstɜːrmɪneɪt/",
+    "example_en": "Exterminate the pests.",
+    "example_ka": "მავნებლები მოსპე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Pesticide",
+    "georgian": "პესტიციდი",
+    "pronunciation": "/ˈpestɪsaɪd/",
+    "example_en": "Use pesticide carefully.",
+    "example_ka": "პესტიციდი ფრთხილად გამოიყენე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Fertilize",
+    "georgian": "განოყიერება",
+    "pronunciation": "/ˈfɜːrtɪlaɪz/",
+    "example_en": "Fertilize the garden.",
+    "example_ka": "ბაღი განოყიერე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Prune",
+    "georgian": "გასხვლა",
+    "pronunciation": "/pruːn/",
+    "example_en": "Prune the roses.",
+    "example_ka": "ვარდები გასხლაე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Mulch",
+    "georgian": "მულჩი",
+    "pronunciation": "/mʌltʃ/",
+    "example_en": "Add mulch to the garden.",
+    "example_ka": "ბაღში მულჩი დაამატე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Weed",
+    "georgian": "სარეველა",
+    "pronunciation": "/wiːd/",
+    "example_en": "Weed the garden.",
+    "example_ka": "ბაღი სარეველისგან გაასუფთავე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Plant",
+    "georgian": "დარგვა",
+    "pronunciation": "/plænt/",
+    "example_en": "Plant the flowers.",
+    "example_ka": "ყვავილები დარგე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Water",
+    "georgian": "მორწყვა",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Water the plants.",
+    "example_ka": "მცენარეები მორწყე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Trim",
+    "georgian": "გასხვლა",
+    "pronunciation": "/trɪm/",
+    "example_en": "Trim the hedge.",
+    "example_ka": "ღობე გასხლაე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Rake",
+    "georgian": "ფოცხი",
+    "pronunciation": "/reɪk/",
+    "example_en": "Rake the leaves.",
+    "example_ka": "ფოთლები მოგროვე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Shovel",
+    "georgian": "ნიჩაბი",
+    "pronunciation": "/ˈʃʌvl/",
+    "example_en": "Shovel the snow.",
+    "example_ka": "თოვლი მოგროვე ნიჩბით.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Hose",
+    "georgian": "შლანგი",
+    "pronunciation": "/hoʊz/",
+    "example_en": "Use the hose to wash.",
+    "example_ka": "სარეცხად შლანგი გამოიყენე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Sprinkler",
+    "georgian": "მომრწყავი",
+    "pronunciation": "/ˈsprɪŋklər/",
+    "example_en": "Turn on the sprinkler.",
+    "example_ka": "მომრწყავი ჩართე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Gutter",
+    "georgian": "წყალსადინარი",
+    "pronunciation": "/ˈɡʌtər/",
+    "example_en": "Clean the gutters.",
+    "example_ka": "წყალსადინარები გაწმინდე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Roof",
+    "georgian": "სახურავი",
+    "pronunciation": "/ruːf/",
+    "example_en": "Inspect the roof.",
+    "example_ka": "სახურავი შეამოწმე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Chimney",
+    "georgian": "საკვამური",
+    "pronunciation": "/ˈtʃɪmni/",
+    "example_en": "Clean the chimney.",
+    "example_ka": "საკვამური გაწმინდე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Insulate",
+    "georgian": "იზოლირება",
+    "pronunciation": "/ˈɪnsjuleɪt/",
+    "example_en": "Insulate the attic.",
+    "example_ka": "სხვენი მოუწყვე იზოლაცია.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Caulk",
+    "georgian": "ჰერმეტიზაცია",
+    "pronunciation": "/kɔːk/",
+    "example_en": "Caulk the windows.",
+    "example_ka": "ფანჯრები ჰერმეტიზაცია გაუკეთე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Sealant",
+    "georgian": "ჰერმეტიკი",
+    "pronunciation": "/ˈsiːlənt/",
+    "example_en": "Apply sealant.",
+    "example_ka": "ჰერმეტიკი წაუსვი.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Wallpaper",
+    "georgian": "შპალერი",
+    "pronunciation": "/ˈwɔːlpeɪpər/",
+    "example_en": "Hang new wallpaper.",
+    "example_ka": "ახალი შპალერი დააწებე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Plaster",
+    "georgian": "თაბაშირი",
+    "pronunciation": "/ˈplæstər/",
+    "example_en": "Plaster the wall.",
+    "example_ka": "კედელი თაბაშირით მოლესე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Grease",
+    "georgian": "ზეთი",
+    "pronunciation": "/ɡriːs/",
+    "example_en": "Grease the hinges.",
+    "example_ka": "სახსრები შეზეთე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Lubricate",
+    "georgian": "შეზეთვა",
+    "pronunciation": "/ˈluːbrɪkeɪt/",
+    "example_en": "Lubricate the door.",
+    "example_ka": "კარი შეზეთე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Replace",
+    "georgian": "შეცვლა",
+    "pronunciation": "/rɪˈpleɪs/",
+    "example_en": "Replace the light bulb.",
+    "example_ka": "ნათურა შეცვალე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Install",
+    "georgian": "დამონტაჟება",
+    "pronunciation": "/ɪnˈstɔːl/",
+    "example_en": "Install the shelf.",
+    "example_ka": "თარო დაამონტაჟე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Assemble",
+    "georgian": "აწყობა",
+    "pronunciation": "/əˈsembl/",
+    "example_en": "Assemble the furniture.",
+    "example_ka": "ავეჯი აწყვე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Unpack",
+    "georgian": "ამოლაგება",
+    "pronunciation": "/ʌnˈpæk/",
+    "example_en": "Unpack the boxes.",
+    "example_ka": "ყუთები ამოლაგე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Label",
+    "georgian": "მარკირება",
+    "pronunciation": "/ˈleɪbl/",
+    "example_en": "Label the containers.",
+    "example_ka": "კონტეინერები მოანიშნე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Inventory",
+    "georgian": "ინვენტარი",
+    "pronunciation": "/ˈɪnvəntɔːri/",
+    "example_en": "Take inventory of supplies.",
+    "example_ka": "მარაგის ინვენტარი გააკეთე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Sterilize",
+    "georgian": "სტერილიზაცია",
+    "pronunciation": "/ˈsterɪlaɪz/",
+    "example_en": "Sterilize the bottles.",
+    "example_ka": "ბოთლები გაასტერილე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Deodorize",
+    "georgian": "დეოდორირება",
+    "pronunciation": "/diːˈoʊdəraɪz/",
+    "example_en": "Deodorize the fridge.",
+    "example_ka": "მაცივარი დეოდორირე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Upholster",
+    "georgian": "ტაპიცირება",
+    "pronunciation": "/ʌpˈhoʊlstər/",
+    "example_en": "Upholster the sofa.",
+    "example_ka": "დივანი ტაპიცირე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Renovate",
+    "georgian": "რემონტი",
+    "pronunciation": "/ˈrenəveɪt/",
+    "example_en": "Renovate the kitchen.",
+    "example_ka": "სამზარეულო გაარემონტე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Remodel",
+    "georgian": "გადაკეთება",
+    "pronunciation": "/riːˈmɒdl/",
+    "example_en": "Remodel the bathroom.",
+    "example_ka": "აბაზანა გადააკეთე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Demolish",
+    "georgian": "დანგრევა",
+    "pronunciation": "/dɪˈmɒlɪʃ/",
+    "example_en": "Demolish the old wall.",
+    "example_ka": "ძველი კედელი დაანგრიე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Plumb",
+    "georgian": "სანტექნიკა",
+    "pronunciation": "/plʌm/",
+    "example_en": "Plumb the new sink.",
+    "example_ka": "ახალ ნიჟარას სანტექნიკა მიუერთე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Rewire",
+    "georgian": "გაყვანილობა",
+    "pronunciation": "/riːˈwaɪər/",
+    "example_en": "Rewire the house.",
+    "example_ka": "სახლს გაყვანილობა შეუცვალე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Scrape",
+    "georgian": "მოფხეკა",
+    "pronunciation": "/skreɪp/",
+    "example_en": "Scrape the old paint.",
+    "example_ka": "ძველი საღებავი მოფხეკე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Sand",
+    "georgian": "დახეხვა",
+    "pronunciation": "/sænd/",
+    "example_en": "Sand the surface.",
+    "example_ka": "ზედაპირი დახეხე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Varnish",
+    "georgian": "ლაქით დაფარვა",
+    "pronunciation": "/ˈvɑːrnɪʃ/",
+    "example_en": "Varnish the table.",
+    "example_ka": "მაგიდა ლაქით დაფარე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Lacquer",
+    "georgian": "ლაქი",
+    "pronunciation": "/ˈlækər/",
+    "example_en": "Apply lacquer to the wood.",
+    "example_ka": "ხეს ლაქი წაუსვი.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Whitewash",
+    "georgian": "შეთეთრება",
+    "pronunciation": "/ˈwaɪtwɒʃ/",
+    "example_en": "Whitewash the fence.",
+    "example_ka": "ღობე შეათეთრე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Maintain",
+    "georgian": "მოვლა",
+    "pronunciation": "/meɪnˈteɪn/",
+    "example_en": "Maintain the garden regularly.",
+    "example_ka": "ბაღს რეგულარულად მოუარე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Upkeep",
+    "georgian": "მოვლა",
+    "pronunciation": "/ˈʌpkiːp/",
+    "example_en": "Home upkeep takes time.",
+    "example_ka": "სახლის მოვლა დროს მოითხოვს.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Errand",
+    "georgian": "დავალება",
+    "pronunciation": "/ˈerənd/",
+    "example_en": "I need to run errands.",
+    "example_ka": "დავალებების შესრულება მჭირდება.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Delegate",
+    "georgian": "გადაცემა",
+    "pronunciation": "/ˈdelɪɡeɪt/",
+    "example_en": "Delegate chores to children.",
+    "example_ka": "საქმეები ბავშვებს გადაეცი.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈʃedjuːl/",
+    "example_en": "Make a cleaning schedule.",
+    "example_ka": "გაწმენდის განრიგი შექმენი.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Routine",
+    "georgian": "რუტინა",
+    "pronunciation": "/ruːˈtiːn/",
+    "example_en": "Establish a cleaning routine.",
+    "example_ka": "გაწმენდის რუტინა დაამკვიდრე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Appliance",
+    "georgian": "მოწყობილობა",
+    "pronunciation": "/əˈplaɪəns/",
+    "example_en": "Clean the appliances.",
+    "example_ka": "მოწყობილობები გაწმინდე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Replace the filter.",
+    "example_ka": "ფილტრი შეცვალე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Thermostat",
+    "georgian": "თერმოსტატი",
+    "pronunciation": "/ˈθɜːrməstæt/",
+    "example_en": "Adjust the thermostat.",
+    "example_ka": "თერმოსტატი დაარეგულირე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Generator",
+    "georgian": "გენერატორი",
+    "pronunciation": "/ˈdʒenəreɪtər/",
+    "example_en": "Check the generator.",
+    "example_ka": "გენერატორი შეამოწმე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Circuit",
+    "georgian": "წრე",
+    "pronunciation": "/ˈsɜːrkɪt/",
+    "example_en": "Check the circuit breaker.",
+    "example_ka": "ავტომატური გამთიშველი შეამოწმე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Outlet",
+    "georgian": "როზეტი",
+    "pronunciation": "/ˈaʊtlet/",
+    "example_en": "Fix the electrical outlet.",
+    "example_ka": "ელექტრო როზეტი შეაკეთე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Switch",
+    "georgian": "ჩამრთველი",
+    "pronunciation": "/swɪtʃ/",
+    "example_en": "Replace the light switch.",
+    "example_ka": "ჩამრთველი შეცვალე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Bulb",
+    "georgian": "ნათურა",
+    "pronunciation": "/bʌlb/",
+    "example_en": "Change the light bulb.",
+    "example_ka": "ნათურა შეცვალე.",
+    "category": "household-chores",
+    "level": "A1"
+  },
+  {
+    "english": "Furnace",
+    "georgian": "ღუმელი",
+    "pronunciation": "/ˈfɜːrnɪs/",
+    "example_en": "Service the furnace.",
+    "example_ka": "ღუმელს მომსახურება გაუწიე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Boiler",
+    "georgian": "ბოილერი",
+    "pronunciation": "/ˈbɔɪlər/",
+    "example_en": "The boiler needs servicing.",
+    "example_ka": "ბოილერს მომსახურება სჭირდება.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Radiator",
+    "georgian": "რადიატორი",
+    "pronunciation": "/ˈreɪdieɪtər/",
+    "example_en": "Bleed the radiator.",
+    "example_ka": "რადიატორი გააფხვიერე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Unclog",
+    "georgian": "გაწმენდა",
+    "pronunciation": "/ʌnˈklɒɡ/",
+    "example_en": "Unclog the toilet.",
+    "example_ka": "ტუალეტი გაწმინდე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Defog",
+    "georgian": "ნისლის მოცილება",
+    "pronunciation": "/diːˈfɒɡ/",
+    "example_en": "Defog the mirror.",
+    "example_ka": "სარკეს ნისლი მოუცილე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Descale",
+    "georgian": "ნაკერის მოცილება",
+    "pronunciation": "/diːˈskeɪl/",
+    "example_en": "Descale the kettle.",
+    "example_ka": "ჩაიდანს ნაგარი მოუცილე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Whittle",
+    "georgian": "გამოკვეთა",
+    "pronunciation": "/ˈwɪtl/",
+    "example_en": "Whittle the wood.",
+    "example_ka": "ხე გამოკვეთე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Patching",
+    "georgian": "შეკერვა",
+    "pronunciation": "/ˈpætʃɪŋ/",
+    "example_en": "Patching clothes saves money.",
+    "example_ka": "ტანსაცმლის შეკერვა ფულს ზოგავს.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Mend",
+    "georgian": "შეკეთება",
+    "pronunciation": "/mend/",
+    "example_en": "Mend the torn shirt.",
+    "example_ka": "გახეული პერანგი შეკერე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Sew",
+    "georgian": "კერვა",
+    "pronunciation": "/soʊ/",
+    "example_en": "Sew a button.",
+    "example_ka": "ღილი მიაკერე.",
+    "category": "household-chores",
+    "level": "A2"
+  },
+  {
+    "english": "Darn",
+    "georgian": "შეკეთება",
+    "pronunciation": "/dɑːrn/",
+    "example_en": "Darn the socks.",
+    "example_ka": "წინდები შეაკერე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Embroider",
+    "georgian": "ქარგვა",
+    "pronunciation": "/ɪmˈbrɔɪdər/",
+    "example_en": "Embroider a pattern.",
+    "example_ka": "ნიმუში ქარგე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Tailor",
+    "georgian": "კერვა",
+    "pronunciation": "/ˈteɪlər/",
+    "example_en": "Tailor the curtains.",
+    "example_ka": "ფარდები მოჭერი.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Hem",
+    "georgian": "საკერი",
+    "pronunciation": "/hem/",
+    "example_en": "Hem the pants.",
+    "example_ka": "შარვალი მოკერე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Stitch",
+    "georgian": "ნაკერი",
+    "pronunciation": "/stɪtʃ/",
+    "example_en": "Stitch the tear.",
+    "example_ka": "ნახევი შეაკერე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Degrease",
+    "georgian": "ცხიმის მოცილება",
+    "pronunciation": "/diːˈɡriːs/",
+    "example_en": "Degrease the stove.",
+    "example_ka": "ქურას ცხიმი მოუცილე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Aerate",
+    "georgian": "აერაცია",
+    "pronunciation": "/ˈeəreɪt/",
+    "example_en": "Aerate the lawn.",
+    "example_ka": "გაზონი აირე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Thatch",
+    "georgian": "ჩალის სახურავი",
+    "pronunciation": "/θætʃ/",
+    "example_en": "Remove the thatch.",
+    "example_ka": "ჩალის ფენა მოაშორე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Reupholster",
+    "georgian": "გადატაპიცირება",
+    "pronunciation": "/ˌriːʌpˈhoʊlstər/",
+    "example_en": "Reupholster the old chair.",
+    "example_ka": "ძველი სკამი გადატაპიცირე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Winterize",
+    "georgian": "ზამთრისთვის მომზადება",
+    "pronunciation": "/ˈwɪntəraɪz/",
+    "example_en": "Winterize your home.",
+    "example_ka": "სახლი ზამთრისთვის მოამზადე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Weatherproof",
+    "georgian": "ამინდგამძლეობა",
+    "pronunciation": "/ˈweðərpruːf/",
+    "example_en": "Weatherproof the deck.",
+    "example_ka": "ტერასა ამინდგამძლე გააკეთე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Childproof",
+    "georgian": "ბავშვისგან დაცვა",
+    "pronunciation": "/ˈtʃaɪldpruːf/",
+    "example_en": "Childproof the cabinets.",
+    "example_ka": "კარადები ბავშვისგან დაიცავი.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Fireproof",
+    "georgian": "ცეცხლგამძლეობა",
+    "pronunciation": "/ˈfaɪərpruːf/",
+    "example_en": "Fireproof your home.",
+    "example_ka": "სახლი ცეცხლგამძლე გააკეთე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Soundproof",
+    "georgian": "ხმაიზოლაცია",
+    "pronunciation": "/ˈsaʊndpruːf/",
+    "example_en": "Soundproof the room.",
+    "example_ka": "ოთახს ხმაიზოლაცია გაუკეთე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "Budget for home repairs.",
+    "example_ka": "სახლის რემონტისთვის ბიუჯეტი დაგეგმე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Handyman",
+    "georgian": "ხელოსანი",
+    "pronunciation": "/ˈhændimæn/",
+    "example_en": "Call a handyman.",
+    "example_ka": "ხელოსანს დაურეკე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Contractor",
+    "georgian": "კონტრაქტორი",
+    "pronunciation": "/ˈkɒntræktər/",
+    "example_en": "Hire a contractor.",
+    "example_ka": "კონტრაქტორი დაიქირავე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Estimate",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈestɪmeɪt/",
+    "example_en": "Get a repair estimate.",
+    "example_ka": "შეკეთების შეფასება აიღე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Permit",
+    "georgian": "ნებართვა",
+    "pronunciation": "/ˈpɜːrmɪt/",
+    "example_en": "You need a building permit.",
+    "example_ka": "მშენებლობის ნებართვა გჭირდება.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Inspect",
+    "georgian": "ინსპექტირება",
+    "pronunciation": "/ɪnˈspekt/",
+    "example_en": "Inspect the plumbing.",
+    "example_ka": "სანტექნიკა შეამოწმე.",
+    "category": "household-chores",
+    "level": "B1"
+  },
+  {
+    "english": "Appraise",
+    "georgian": "შეფასება",
+    "pronunciation": "/əˈpreɪz/",
+    "example_en": "Appraise the property.",
+    "example_ka": "ქონება შეაფასე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Reglaze",
+    "georgian": "მინის შეცვლა",
+    "pronunciation": "/riːˈɡleɪz/",
+    "example_en": "Reglaze the window.",
+    "example_ka": "ფანჯარას მინა შეუცვალე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Coppice",
+    "georgian": "გათხელება",
+    "pronunciation": "/ˈkɒpɪs/",
+    "example_en": "Coppice the trees.",
+    "example_ka": "ხეები გაათხელე.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Deadhead",
+    "georgian": "მოჭრა",
+    "pronunciation": "/ˈdedhed/",
+    "example_en": "Deadhead the roses.",
+    "example_ka": "ვარდებს გახმობილი ყვავილები მოაჭერი.",
+    "category": "household-chores",
+    "level": "C1"
+  },
+  {
+    "english": "Putty",
+    "georgian": "შპაკლი",
+    "pronunciation": "/ˈpʌti/",
+    "example_en": "Apply putty to the crack.",
+    "example_ka": "ბზარს შპაკლი წაუსვი.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Mortar",
+    "georgian": "დუღაბი",
+    "pronunciation": "/ˈmɔːrtər/",
+    "example_en": "Mix the mortar.",
+    "example_ka": "დუღაბი აურიე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Trowel",
+    "georgian": "მალა",
+    "pronunciation": "/ˈtraʊəl/",
+    "example_en": "Use a trowel.",
+    "example_ka": "მალა გამოიყენე.",
+    "category": "household-chores",
+    "level": "B2"
+  },
+  {
+    "english": "Wrench",
+    "georgian": "გასაღები",
+    "pronunciation": "/rentʃ/",
+    "example_en": "Hand me the wrench.",
+    "example_ka": "გასაღები მომეცი.",
+    "category": "household-chores",
+    "level": "A2"
+  }
 ]

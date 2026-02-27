@@ -1,57 +1,1802 @@
 [
-  {"english":"dog","georgian":"ძაღლი","pronunciation":"/dɒɡ/","example_en":"My dog loves to play in the park.","example_ka":"ჩემს ძაღლს პარკში თამაში უყვარს.","category":"animals-pets","level":"beginner"},
-  {"english":"cat","georgian":"კატა","pronunciation":"/kæt/","example_en":"The cat is sleeping on the sofa.","example_ka":"კატა დივანზე სძინავს.","category":"animals-pets","level":"beginner"},
-  {"english":"bird","georgian":"ჩიტი","pronunciation":"/bɜːrd/","example_en":"A bird is singing in the tree.","example_ka":"ჩიტი ხეზე მღერის.","category":"animals-pets","level":"beginner"},
-  {"english":"fish","georgian":"თევზი","pronunciation":"/fɪʃ/","example_en":"We have a fish in the aquarium.","example_ka":"აკვარიუმში თევზი გვყავს.","category":"animals-pets","level":"beginner"},
-  {"english":"horse","georgian":"ცხენი","pronunciation":"/hɔːrs/","example_en":"The horse runs very fast.","example_ka":"ცხენი ძალიან სწრაფად დარბის.","category":"animals-pets","level":"beginner"},
-  {"english":"cow","georgian":"ძროხა","pronunciation":"/kaʊ/","example_en":"The cow gives us milk.","example_ka":"ძროხა რძეს გვაძლევს.","category":"animals-pets","level":"beginner"},
-  {"english":"pig","georgian":"ღორი","pronunciation":"/pɪɡ/","example_en":"The pig lives on the farm.","example_ka":"ღორი ფერმაში ცხოვრობს.","category":"animals-pets","level":"beginner"},
-  {"english":"sheep","georgian":"ცხვარი","pronunciation":"/ʃiːp/","example_en":"There are many sheep in the field.","example_ka":"მინდორში ბევრი ცხვარია.","category":"animals-pets","level":"beginner"},
-  {"english":"chicken","georgian":"ქათამი","pronunciation":"/ˈtʃɪkɪn/","example_en":"The chicken laid an egg.","example_ka":"ქათამმა კვერცხი დადო.","category":"animals-pets","level":"beginner"},
-  {"english":"rabbit","georgian":"კურდღელი","pronunciation":"/ˈræbɪt/","example_en":"The rabbit eats carrots.","example_ka":"კურდღელი სტაფილოს ჭამს.","category":"animals-pets","level":"beginner"},
-  {"english":"mouse","georgian":"თაგვი","pronunciation":"/maʊs/","example_en":"I saw a mouse in the kitchen.","example_ka":"სამზარეულოში თაგვი დავინახე.","category":"animals-pets","level":"beginner"},
-  {"english":"bear","georgian":"დათვი","pronunciation":"/beər/","example_en":"The bear lives in the forest.","example_ka":"დათვი ტყეში ცხოვრობს.","category":"animals-pets","level":"beginner"},
-  {"english":"wolf","georgian":"მგელი","pronunciation":"/wʊlf/","example_en":"The wolf howls at the moon.","example_ka":"მგელი მთვარეს უყმუის.","category":"animals-pets","level":"beginner"},
-  {"english":"fox","georgian":"მელა","pronunciation":"/fɒks/","example_en":"The fox is very clever.","example_ka":"მელა ძალიან ჭკვიანია.","category":"animals-pets","level":"beginner"},
-  {"english":"deer","georgian":"ირემი","pronunciation":"/dɪər/","example_en":"We saw a deer in the mountains.","example_ka":"მთაში ირემი დავინახეთ.","category":"animals-pets","level":"beginner"},
-  {"english":"snake","georgian":"გველი","pronunciation":"/sneɪk/","example_en":"I am afraid of snakes.","example_ka":"გველების მეშინია.","category":"animals-pets","level":"beginner"},
-  {"english":"frog","georgian":"ბაყაყი","pronunciation":"/frɒɡ/","example_en":"The frog jumped into the water.","example_ka":"ბაყაყი წყალში გადახტა.","category":"animals-pets","level":"beginner"},
-  {"english":"turtle","georgian":"კუ","pronunciation":"/ˈtɜːrtl/","example_en":"The turtle moves very slowly.","example_ka":"კუ ძალიან ნელა მოძრაობს.","category":"animals-pets","level":"beginner"},
-  {"english":"elephant","georgian":"სპილო","pronunciation":"/ˈelɪfənt/","example_en":"The elephant is the largest land animal.","example_ka":"სპილო ყველაზე დიდი ხმელეთის ცხოველია.","category":"animals-pets","level":"beginner"},
-  {"english":"lion","georgian":"ლომი","pronunciation":"/ˈlaɪən/","example_en":"The lion is the king of animals.","example_ka":"ლომი ცხოველთა მეფეა.","category":"animals-pets","level":"beginner"},
-  {"english":"tiger","georgian":"ვეფხვი","pronunciation":"/ˈtaɪɡər/","example_en":"Tigers are endangered animals.","example_ka":"ვეფხვები გადაშენების საფრთხის ქვეშ მყოფი ცხოველებია.","category":"animals-pets","level":"beginner"},
-  {"english":"monkey","georgian":"მაიმუნი","pronunciation":"/ˈmʌŋki/","example_en":"The monkey climbed the tree.","example_ka":"მაიმუნი ხეზე ავიდა.","category":"animals-pets","level":"beginner"},
-  {"english":"giraffe","georgian":"ჟირაფი","pronunciation":"/dʒɪˈræf/","example_en":"The giraffe has a very long neck.","example_ka":"ჟირაფს ძალიან გრძელი კისერი აქვს.","category":"animals-pets","level":"beginner"},
-  {"english":"eagle","georgian":"არწივი","pronunciation":"/ˈiːɡl/","example_en":"The eagle flies high in the sky.","example_ka":"არწივი ცაში მაღლა დაფრინავს.","category":"animals-pets","level":"beginner"},
-  {"english":"parrot","georgian":"თუთიყუში","pronunciation":"/ˈpærət/","example_en":"The parrot can repeat words.","example_ka":"თუთიყუშს სიტყვების გამეორება შეუძლია.","category":"animals-pets","level":"beginner"},
-  {"english":"duck","georgian":"იხვი","pronunciation":"/dʌk/","example_en":"The duck is swimming in the pond.","example_ka":"იხვი გუბეში ცურავს.","category":"animals-pets","level":"beginner"},
-  {"english":"goat","georgian":"თხა","pronunciation":"/ɡoʊt/","example_en":"The goat eats grass on the hill.","example_ka":"თხა ბორცვზე ბალახს ჭამს.","category":"animals-pets","level":"beginner"},
-  {"english":"donkey","georgian":"ვირი","pronunciation":"/ˈdɒŋki/","example_en":"The donkey carried heavy bags.","example_ka":"ვირმა მძიმე ტომრები წაიღო.","category":"animals-pets","level":"beginner"},
-  {"english":"butterfly","georgian":"პეპელა","pronunciation":"/ˈbʌtərflaɪ/","example_en":"A beautiful butterfly landed on the flower.","example_ka":"ლამაზი პეპელა ყვავილზე დაჯდა.","category":"animals-pets","level":"beginner"},
-  {"english":"bee","georgian":"ფუტკარი","pronunciation":"/biː/","example_en":"The bee makes honey.","example_ka":"ფუტკარი თაფლს აკეთებს.","category":"animals-pets","level":"beginner"},
-  {"english":"ant","georgian":"ჭიანჭველა","pronunciation":"/ænt/","example_en":"Ants work very hard.","example_ka":"ჭიანჭველები ძალიან ბეჯითად მუშაობენ.","category":"animals-pets","level":"beginner"},
-  {"english":"spider","georgian":"ობობა","pronunciation":"/ˈspaɪdər/","example_en":"The spider made a web.","example_ka":"ობობამ ქსელი მოქსოვა.","category":"animals-pets","level":"beginner"},
-  {"english":"whale","georgian":"ვეშაპი","pronunciation":"/weɪl/","example_en":"The whale is the largest animal in the world.","example_ka":"ვეშაპი მსოფლიოში ყველაზე დიდი ცხოველია.","category":"animals-pets","level":"beginner"},
-  {"english":"dolphin","georgian":"დელფინი","pronunciation":"/ˈdɒlfɪn/","example_en":"Dolphins are very intelligent animals.","example_ka":"დელფინები ძალიან ჭკვიანი ცხოველებია.","category":"animals-pets","level":"beginner"},
-  {"english":"shark","georgian":"ზვიგენი","pronunciation":"/ʃɑːrk/","example_en":"Sharks live in the ocean.","example_ka":"ზვიგენები ოკეანეში ცხოვრობენ.","category":"animals-pets","level":"beginner"},
-  {"english":"crocodile","georgian":"ნიანგი","pronunciation":"/ˈkrɒkədaɪl/","example_en":"The crocodile lives in the river.","example_ka":"ნიანგი მდინარეში ცხოვრობს.","category":"animals-pets","level":"beginner"},
-  {"english":"penguin","georgian":"პინგვინი","pronunciation":"/ˈpeŋɡwɪn/","example_en":"Penguins live in cold places.","example_ka":"პინგვინები ცივ ადგილებში ცხოვრობენ.","category":"animals-pets","level":"beginner"},
-  {"english":"squirrel","georgian":"ციყვი","pronunciation":"/ˈskwɪrəl/","example_en":"The squirrel collects nuts.","example_ka":"ციყვი კაკალს აგროვებს.","category":"animals-pets","level":"beginner"},
-  {"english":"hedgehog","georgian":"ზღარბი","pronunciation":"/ˈhedʒhɒɡ/","example_en":"The hedgehog has sharp spines.","example_ka":"ზღარბს ბასრი ეკლები აქვს.","category":"animals-pets","level":"beginner"},
-  {"english":"puppy","georgian":"ლეკვი","pronunciation":"/ˈpʌpi/","example_en":"The puppy is very playful.","example_ka":"ლეკვი ძალიან მოთამაშეა.","category":"animals-pets","level":"beginner"},
-  {"english":"kitten","georgian":"კნუტი","pronunciation":"/ˈkɪtn/","example_en":"The kitten drinks milk.","example_ka":"კნუტი რძეს სვამს.","category":"animals-pets","level":"beginner"},
-  {"english":"feather","georgian":"ბუმბული","pronunciation":"/ˈfeðər/","example_en":"The bird lost a feather.","example_ka":"ჩიტმა ბუმბული დაკარგა.","category":"animals-pets","level":"beginner"},
-  {"english":"wing","georgian":"ფრთა","pronunciation":"/wɪŋ/","example_en":"The bird spread its wings.","example_ka":"ჩიტმა ფრთები გაშალა.","category":"animals-pets","level":"beginner"},
-  {"english":"tail","georgian":"კუდი","pronunciation":"/teɪl/","example_en":"The dog wags its tail.","example_ka":"ძაღლი კუდს აქნევს.","category":"animals-pets","level":"beginner"},
-  {"english":"paw","georgian":"თათი","pronunciation":"/pɔː/","example_en":"The cat hurt its paw.","example_ka":"კატამ თათი დაიზიანა.","category":"animals-pets","level":"beginner"},
-  {"english":"fur","georgian":"ბეწვი","pronunciation":"/fɜːr/","example_en":"The cat has soft fur.","example_ka":"კატას რბილი ბეწვი აქვს.","category":"animals-pets","level":"beginner"},
-  {"english":"cage","georgian":"გალია","pronunciation":"/keɪdʒ/","example_en":"The bird lives in a cage.","example_ka":"ჩიტი გალიაში ცხოვრობს.","category":"animals-pets","level":"beginner"},
-  {"english":"leash","georgian":"საბმელი","pronunciation":"/liːʃ/","example_en":"Please keep your dog on a leash.","example_ka":"გთხოვთ, ძაღლი საბმელზე გეჭიროთ.","category":"animals-pets","level":"beginner"},
-  {"english":"veterinarian","georgian":"ვეტერინარი","pronunciation":"/ˌvetərɪˈneəriən/","example_en":"I took my cat to the veterinarian.","example_ka":"კატა ვეტერინართან წავიყვანე.","category":"animals-pets","level":"intermediate"},
-  {"english":"breed","georgian":"ჯიში","pronunciation":"/briːd/","example_en":"What breed is your dog?","example_ka":"რა ჯიშისაა შენი ძაღლი?","category":"animals-pets","level":"intermediate"},
-  {"english":"pet","georgian":"შინაური ცხოველი","pronunciation":"/pet/","example_en":"Do you have any pets?","example_ka":"შინაური ცხოველები გყავს?","category":"animals-pets","level":"beginner"},
-  {"english":"wild","georgian":"ველური","pronunciation":"/waɪld/","example_en":"Wild animals live in the forest.","example_ka":"ველური ცხოველები ტყეში ცხოვრობენ.","category":"animals-pets","level":"beginner"},
-  {"english":"insect","georgian":"მწერი","pronunciation":"/ˈɪnsekt/","example_en":"There are many insects in summer.","example_ka":"ზაფხულში ბევრი მწერია.","category":"animals-pets","level":"beginner"},
-  {"english":"nest","georgian":"ბუდე","pronunciation":"/nest/","example_en":"The bird built a nest in the tree.","example_ka":"ჩიტმა ხეზე ბუდე გაიკეთა.","category":"animals-pets","level":"beginner"},
-  {"english":"zoo","georgian":"ზოოპარკი","pronunciation":"/zuː/","example_en":"We went to the zoo on Sunday.","example_ka":"კვირას ზოოპარკში წავედით.","category":"animals-pets","level":"beginner"}
+  {
+    "english": "dog",
+    "georgian": "ძაღლი",
+    "pronunciation": "/dɒɡ/",
+    "example_en": "My dog loves to play in the park.",
+    "example_ka": "ჩემს ძაღლს პარკში თამაში უყვარს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "cat",
+    "georgian": "კატა",
+    "pronunciation": "/kæt/",
+    "example_en": "The cat is sleeping on the sofa.",
+    "example_ka": "კატა დივანზე სძინავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bird",
+    "georgian": "ჩიტი",
+    "pronunciation": "/bɜːrd/",
+    "example_en": "A bird is singing in the tree.",
+    "example_ka": "ჩიტი ხეზე მღერის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "We have a fish in the aquarium.",
+    "example_ka": "აკვარიუმში თევზი გვყავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "horse",
+    "georgian": "ცხენი",
+    "pronunciation": "/hɔːrs/",
+    "example_en": "The horse runs very fast.",
+    "example_ka": "ცხენი ძალიან სწრაფად დარბის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "cow",
+    "georgian": "ძროხა",
+    "pronunciation": "/kaʊ/",
+    "example_en": "The cow gives us milk.",
+    "example_ka": "ძროხა რძეს გვაძლევს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "pig",
+    "georgian": "ღორი",
+    "pronunciation": "/pɪɡ/",
+    "example_en": "The pig lives on the farm.",
+    "example_ka": "ღორი ფერმაში ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "sheep",
+    "georgian": "ცხვარი",
+    "pronunciation": "/ʃiːp/",
+    "example_en": "There are many sheep in the field.",
+    "example_ka": "მინდორში ბევრი ცხვარია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "chicken",
+    "georgian": "ქათამი",
+    "pronunciation": "/ˈtʃɪkɪn/",
+    "example_en": "The chicken laid an egg.",
+    "example_ka": "ქათამმა კვერცხი დადო.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "rabbit",
+    "georgian": "კურდღელი",
+    "pronunciation": "/ˈræbɪt/",
+    "example_en": "The rabbit eats carrots.",
+    "example_ka": "კურდღელი სტაფილოს ჭამს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "mouse",
+    "georgian": "თაგვი",
+    "pronunciation": "/maʊs/",
+    "example_en": "I saw a mouse in the kitchen.",
+    "example_ka": "სამზარეულოში თაგვი დავინახე.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bear",
+    "georgian": "დათვი",
+    "pronunciation": "/beər/",
+    "example_en": "The bear lives in the forest.",
+    "example_ka": "დათვი ტყეში ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "wolf",
+    "georgian": "მგელი",
+    "pronunciation": "/wʊlf/",
+    "example_en": "The wolf howls at the moon.",
+    "example_ka": "მგელი მთვარეს უყმუის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "fox",
+    "georgian": "მელა",
+    "pronunciation": "/fɒks/",
+    "example_en": "The fox is very clever.",
+    "example_ka": "მელა ძალიან ჭკვიანია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "deer",
+    "georgian": "ირემი",
+    "pronunciation": "/dɪər/",
+    "example_en": "We saw a deer in the mountains.",
+    "example_ka": "მთაში ირემი დავინახეთ.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "snake",
+    "georgian": "გველი",
+    "pronunciation": "/sneɪk/",
+    "example_en": "I am afraid of snakes.",
+    "example_ka": "გველების მეშინია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "frog",
+    "georgian": "ბაყაყი",
+    "pronunciation": "/frɒɡ/",
+    "example_en": "The frog jumped into the water.",
+    "example_ka": "ბაყაყი წყალში გადახტა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "turtle",
+    "georgian": "კუ",
+    "pronunciation": "/ˈtɜːrtl/",
+    "example_en": "The turtle moves very slowly.",
+    "example_ka": "კუ ძალიან ნელა მოძრაობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "elephant",
+    "georgian": "სპილო",
+    "pronunciation": "/ˈelɪfənt/",
+    "example_en": "The elephant is the largest land animal.",
+    "example_ka": "სპილო ყველაზე დიდი ხმელეთის ცხოველია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "lion",
+    "georgian": "ლომი",
+    "pronunciation": "/ˈlaɪən/",
+    "example_en": "The lion is the king of animals.",
+    "example_ka": "ლომი ცხოველთა მეფეა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "tiger",
+    "georgian": "ვეფხვი",
+    "pronunciation": "/ˈtaɪɡər/",
+    "example_en": "Tigers are endangered animals.",
+    "example_ka": "ვეფხვები გადაშენების საფრთხის ქვეშ მყოფი ცხოველებია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "monkey",
+    "georgian": "მაიმუნი",
+    "pronunciation": "/ˈmʌŋki/",
+    "example_en": "The monkey climbed the tree.",
+    "example_ka": "მაიმუნი ხეზე ავიდა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "giraffe",
+    "georgian": "ჟირაფი",
+    "pronunciation": "/dʒɪˈræf/",
+    "example_en": "The giraffe has a very long neck.",
+    "example_ka": "ჟირაფს ძალიან გრძელი კისერი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "eagle",
+    "georgian": "არწივი",
+    "pronunciation": "/ˈiːɡl/",
+    "example_en": "The eagle flies high in the sky.",
+    "example_ka": "არწივი ცაში მაღლა დაფრინავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "parrot",
+    "georgian": "თუთიყუში",
+    "pronunciation": "/ˈpærət/",
+    "example_en": "The parrot can repeat words.",
+    "example_ka": "თუთიყუშს სიტყვების გამეორება შეუძლია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "duck",
+    "georgian": "იხვი",
+    "pronunciation": "/dʌk/",
+    "example_en": "The duck is swimming in the pond.",
+    "example_ka": "იხვი გუბეში ცურავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "goat",
+    "georgian": "თხა",
+    "pronunciation": "/ɡoʊt/",
+    "example_en": "The goat eats grass on the hill.",
+    "example_ka": "თხა ბორცვზე ბალახს ჭამს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "donkey",
+    "georgian": "ვირი",
+    "pronunciation": "/ˈdɒŋki/",
+    "example_en": "The donkey carried heavy bags.",
+    "example_ka": "ვირმა მძიმე ტომრები წაიღო.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "butterfly",
+    "georgian": "პეპელა",
+    "pronunciation": "/ˈbʌtərflaɪ/",
+    "example_en": "A beautiful butterfly landed on the flower.",
+    "example_ka": "ლამაზი პეპელა ყვავილზე დაჯდა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bee",
+    "georgian": "ფუტკარი",
+    "pronunciation": "/biː/",
+    "example_en": "The bee makes honey.",
+    "example_ka": "ფუტკარი თაფლს აკეთებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "ant",
+    "georgian": "ჭიანჭველა",
+    "pronunciation": "/ænt/",
+    "example_en": "Ants work very hard.",
+    "example_ka": "ჭიანჭველები ძალიან ბეჯითად მუშაობენ.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "spider",
+    "georgian": "ობობა",
+    "pronunciation": "/ˈspaɪdər/",
+    "example_en": "The spider made a web.",
+    "example_ka": "ობობამ ქსელი მოქსოვა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "whale",
+    "georgian": "ვეშაპი",
+    "pronunciation": "/weɪl/",
+    "example_en": "The whale is the largest animal in the world.",
+    "example_ka": "ვეშაპი მსოფლიოში ყველაზე დიდი ცხოველია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "dolphin",
+    "georgian": "დელფინი",
+    "pronunciation": "/ˈdɒlfɪn/",
+    "example_en": "Dolphins are very intelligent animals.",
+    "example_ka": "დელფინები ძალიან ჭკვიანი ცხოველებია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "shark",
+    "georgian": "ზვიგენი",
+    "pronunciation": "/ʃɑːrk/",
+    "example_en": "Sharks live in the ocean.",
+    "example_ka": "ზვიგენები ოკეანეში ცხოვრობენ.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "crocodile",
+    "georgian": "ნიანგი",
+    "pronunciation": "/ˈkrɒkədaɪl/",
+    "example_en": "The crocodile lives in the river.",
+    "example_ka": "ნიანგი მდინარეში ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "penguin",
+    "georgian": "პინგვინი",
+    "pronunciation": "/ˈpeŋɡwɪn/",
+    "example_en": "Penguins live in cold places.",
+    "example_ka": "პინგვინები ცივ ადგილებში ცხოვრობენ.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "squirrel",
+    "georgian": "ციყვი",
+    "pronunciation": "/ˈskwɪrəl/",
+    "example_en": "The squirrel collects nuts.",
+    "example_ka": "ციყვი კაკალს აგროვებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "hedgehog",
+    "georgian": "ზღარბი",
+    "pronunciation": "/ˈhedʒhɒɡ/",
+    "example_en": "The hedgehog has sharp spines.",
+    "example_ka": "ზღარბს ბასრი ეკლები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "puppy",
+    "georgian": "ლეკვი",
+    "pronunciation": "/ˈpʌpi/",
+    "example_en": "The puppy is very playful.",
+    "example_ka": "ლეკვი ძალიან მოთამაშეა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "kitten",
+    "georgian": "კნუტი",
+    "pronunciation": "/ˈkɪtn/",
+    "example_en": "The kitten drinks milk.",
+    "example_ka": "კნუტი რძეს სვამს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "feather",
+    "georgian": "ბუმბული",
+    "pronunciation": "/ˈfeðər/",
+    "example_en": "The bird lost a feather.",
+    "example_ka": "ჩიტმა ბუმბული დაკარგა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "wing",
+    "georgian": "ფრთა",
+    "pronunciation": "/wɪŋ/",
+    "example_en": "The bird spread its wings.",
+    "example_ka": "ჩიტმა ფრთები გაშალა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "tail",
+    "georgian": "კუდი",
+    "pronunciation": "/teɪl/",
+    "example_en": "The dog wags its tail.",
+    "example_ka": "ძაღლი კუდს აქნევს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "paw",
+    "georgian": "თათი",
+    "pronunciation": "/pɔː/",
+    "example_en": "The cat hurt its paw.",
+    "example_ka": "კატამ თათი დაიზიანა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "fur",
+    "georgian": "ბეწვი",
+    "pronunciation": "/fɜːr/",
+    "example_en": "The cat has soft fur.",
+    "example_ka": "კატას რბილი ბეწვი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "cage",
+    "georgian": "გალია",
+    "pronunciation": "/keɪdʒ/",
+    "example_en": "The bird lives in a cage.",
+    "example_ka": "ჩიტი გალიაში ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "leash",
+    "georgian": "საბმელი",
+    "pronunciation": "/liːʃ/",
+    "example_en": "Please keep your dog on a leash.",
+    "example_ka": "გთხოვთ, ძაღლი საბმელზე გეჭიროთ.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "veterinarian",
+    "georgian": "ვეტერინარი",
+    "pronunciation": "/ˌvetərɪˈneəriən/",
+    "example_en": "I took my cat to the veterinarian.",
+    "example_ka": "კატა ვეტერინართან წავიყვანე.",
+    "category": "animals-pets",
+    "level": "intermediate"
+  },
+  {
+    "english": "breed",
+    "georgian": "ჯიში",
+    "pronunciation": "/briːd/",
+    "example_en": "What breed is your dog?",
+    "example_ka": "რა ჯიშისაა შენი ძაღლი?",
+    "category": "animals-pets",
+    "level": "intermediate"
+  },
+  {
+    "english": "pet",
+    "georgian": "შინაური ცხოველი",
+    "pronunciation": "/pet/",
+    "example_en": "Do you have any pets?",
+    "example_ka": "შინაური ცხოველები გყავს?",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "wild",
+    "georgian": "ველური",
+    "pronunciation": "/waɪld/",
+    "example_en": "Wild animals live in the forest.",
+    "example_ka": "ველური ცხოველები ტყეში ცხოვრობენ.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "insect",
+    "georgian": "მწერი",
+    "pronunciation": "/ˈɪnsekt/",
+    "example_en": "There are many insects in summer.",
+    "example_ka": "ზაფხულში ბევრი მწერია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "nest",
+    "georgian": "ბუდე",
+    "pronunciation": "/nest/",
+    "example_en": "The bird built a nest in the tree.",
+    "example_ka": "ჩიტმა ხეზე ბუდე გაიკეთა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "zoo",
+    "georgian": "ზოოპარკი",
+    "pronunciation": "/zuː/",
+    "example_en": "We went to the zoo on Sunday.",
+    "example_ka": "კვირას ზოოპარკში წავედით.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "hamster",
+    "georgian": "ზაზუნა",
+    "pronunciation": "/hamster/",
+    "example_en": "The hamster runs on its wheel.",
+    "example_ka": "ზაზუნა ბორბალზე დარბის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "gerbil",
+    "georgian": "მინდვრის თაგვი",
+    "pronunciation": "/gerbil/",
+    "example_en": "The gerbil digs tunnels in its cage.",
+    "example_ka": "მინდვრის თაგვი გვირაბებს თხრის გალიაში.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "ferret",
+    "georgian": "ქრცვინი",
+    "pronunciation": "/ferret/",
+    "example_en": "The ferret is very playful.",
+    "example_ka": "ქრცვინი ძალიან მოთამაშეა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "canary",
+    "georgian": "კანარეიკა",
+    "pronunciation": "/canary/",
+    "example_en": "The canary sings beautifully.",
+    "example_ka": "კანარეიკა ლამაზად მღერის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "parakeet",
+    "georgian": "ტალღოვანი თუთიყუში",
+    "pronunciation": "/parakeet/",
+    "example_en": "The parakeet repeats words.",
+    "example_ka": "ტალღოვანი თუთიყუში სიტყვებს იმეორებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "cockatiel",
+    "georgian": "კორელა",
+    "pronunciation": "/cockatiel/",
+    "example_en": "The cockatiel sits on my shoulder.",
+    "example_ka": "კორელა მხარზე მიზის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "macaw",
+    "georgian": "არა",
+    "pronunciation": "/macaw/",
+    "example_en": "The macaw has colorful feathers.",
+    "example_ka": "არას ფერადი ბუმბული აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "chinchilla",
+    "georgian": "შინშილა",
+    "pronunciation": "/chinchilla/",
+    "example_en": "The chinchilla has soft fur.",
+    "example_ka": "შინშილას რბილი ბეწვი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "iguana",
+    "georgian": "იგუანა",
+    "pronunciation": "/iguana/",
+    "example_en": "The iguana basks in the sun.",
+    "example_ka": "იგუანა მზეზე იბრუნებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "gecko",
+    "georgian": "გეკონი",
+    "pronunciation": "/gecko/",
+    "example_en": "The gecko climbs the wall.",
+    "example_ka": "გეკონი კედელზე ადის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "chameleon",
+    "georgian": "ქამელეონი",
+    "pronunciation": "/chameleon/",
+    "example_en": "The chameleon changes color.",
+    "example_ka": "ქამელეონი ფერს იცვლის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "beagle",
+    "georgian": "ბიგლი",
+    "pronunciation": "/beagle/",
+    "example_en": "The beagle has long ears.",
+    "example_ka": "ბიგლს გრძელი ყურები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "poodle",
+    "georgian": "პუდელი",
+    "pronunciation": "/poodle/",
+    "example_en": "The poodle needs grooming.",
+    "example_ka": "პუდელს მოვლა სჭირდება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bulldog",
+    "georgian": "ბულდოგი",
+    "pronunciation": "/bulldog/",
+    "example_en": "The bulldog is strong.",
+    "example_ka": "ბულდოგი ძლიერია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "labrador",
+    "georgian": "ლაბრადორი",
+    "pronunciation": "/labrador/",
+    "example_en": "The labrador loves swimming.",
+    "example_ka": "ლაბრადორს ცურვა უყვარს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "dalmatian",
+    "georgian": "დალმატინი",
+    "pronunciation": "/dalmatian/",
+    "example_en": "The dalmatian has spots.",
+    "example_ka": "დალმატინს ლაქები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "pug",
+    "georgian": "მოფსი",
+    "pronunciation": "/pug/",
+    "example_en": "The pug snores loudly.",
+    "example_ka": "მოფსი ხმამაღლა ხვრინავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "collie",
+    "georgian": "კოლი",
+    "pronunciation": "/collie/",
+    "example_en": "The collie herds sheep.",
+    "example_ka": "კოლი ცხვრებს მწყემსავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "terrier",
+    "georgian": "ტერიერი",
+    "pronunciation": "/terrier/",
+    "example_en": "The terrier barks a lot.",
+    "example_ka": "ტერიერი ბევრს ყეფს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "spaniel",
+    "georgian": "სპანიელი",
+    "pronunciation": "/spaniel/",
+    "example_en": "The spaniel is gentle.",
+    "example_ka": "სპანიელი ნაზია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "chihuahua",
+    "georgian": "ჩიჰუაჰუა",
+    "pronunciation": "/chihuahua/",
+    "example_en": "The chihuahua is tiny.",
+    "example_ka": "ჩიჰუაჰუა პაწაწინაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "retriever",
+    "georgian": "რეტრივერი",
+    "pronunciation": "/retriever/",
+    "example_en": "The retriever fetches the ball.",
+    "example_ka": "რეტრივერი ბურთს მოაქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "shepherd",
+    "georgian": "ნაგაზი",
+    "pronunciation": "/shepherd/",
+    "example_en": "The shepherd guards the house.",
+    "example_ka": "ნაგაზი სახლს იცავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "husky",
+    "georgian": "ჰასკი",
+    "pronunciation": "/husky/",
+    "example_en": "The husky loves cold weather.",
+    "example_ka": "ჰასკს ცივი ამინდი უყვარს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "corgi",
+    "georgian": "კორგი",
+    "pronunciation": "/corgi/",
+    "example_en": "The corgi has short legs.",
+    "example_ka": "კორგს მოკლე ფეხები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "rottweiler",
+    "georgian": "როტვაილერი",
+    "pronunciation": "/rottweiler/",
+    "example_en": "The rottweiler is loyal.",
+    "example_ka": "როტვაილერი ერთგულია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "doberman",
+    "georgian": "დობერმანი",
+    "pronunciation": "/doberman/",
+    "example_en": "The doberman is alert.",
+    "example_ka": "დობერმანი ფხიზელია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "boxer",
+    "georgian": "ბოქსერი",
+    "pronunciation": "/boxer/",
+    "example_en": "The boxer is energetic.",
+    "example_ka": "ბოქსერი ენერგიულია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "mastiff",
+    "georgian": "მასტიფი",
+    "pronunciation": "/mastiff/",
+    "example_en": "The mastiff is enormous.",
+    "example_ka": "მასტიფი უზარმაზარია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "greyhound",
+    "georgian": "გრეიჰაუნდი",
+    "pronunciation": "/greyhound/",
+    "example_en": "The greyhound runs fast.",
+    "example_ka": "გრეიჰაუნდი სწრაფად დარბის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "dachshund",
+    "georgian": "ტაქსა",
+    "pronunciation": "/dachshund/",
+    "example_en": "The dachshund is long.",
+    "example_ka": "ტაქსა გრძელია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "akita",
+    "georgian": "აკიტა",
+    "pronunciation": "/akita/",
+    "example_en": "The akita is brave.",
+    "example_ka": "აკიტა მამაცია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "shiba",
+    "georgian": "შიბა",
+    "pronunciation": "/shiba/",
+    "example_en": "The shiba is independent.",
+    "example_ka": "შიბა დამოუკიდებელია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "maltese",
+    "georgian": "მალტეზე",
+    "pronunciation": "/maltese/",
+    "example_en": "The maltese has white fur.",
+    "example_ka": "მალტეზეს თეთრი ბეწვი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "persian",
+    "georgian": "სპარსული",
+    "pronunciation": "/persian/",
+    "example_en": "The persian cat is fluffy.",
+    "example_ka": "სპარსული კატა ფუმფულაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "siamese",
+    "georgian": "სიამური",
+    "pronunciation": "/siamese/",
+    "example_en": "The siamese cat meows loudly.",
+    "example_ka": "სიამური კატა ხმამაღლა კნავის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "sphynx",
+    "georgian": "სფინქსი",
+    "pronunciation": "/sphynx/",
+    "example_en": "The sphynx cat has no fur.",
+    "example_ka": "სფინქს კატას ბეწვი არ აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bengal",
+    "georgian": "ბენგალური",
+    "pronunciation": "/bengal/",
+    "example_en": "The bengal cat is active.",
+    "example_ka": "ბენგალური კატა აქტიურია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "ragdoll",
+    "georgian": "რეგდოლი",
+    "pronunciation": "/ragdoll/",
+    "example_en": "The ragdoll cat is calm.",
+    "example_ka": "რეგდოლი კატა მშვიდია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "maine",
+    "georgian": "მეინ-კუნი",
+    "pronunciation": "/maine/",
+    "example_en": "The maine coon is large.",
+    "example_ka": "მეინ-კუნი დიდია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "abyssinian",
+    "georgian": "აბისინური",
+    "pronunciation": "/abyssinian/",
+    "example_en": "The abyssinian cat is curious.",
+    "example_ka": "აბისინური კატა ცნობისმოყვარეა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "birman",
+    "georgian": "ბირმული",
+    "pronunciation": "/birman/",
+    "example_en": "The birman cat has blue eyes.",
+    "example_ka": "ბირმულ კატას ლურჯი თვალები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "burmese",
+    "georgian": "ბირმანული",
+    "pronunciation": "/burmese/",
+    "example_en": "The burmese cat is social.",
+    "example_ka": "ბირმანული კატა საზოგადოებრივია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "scottish",
+    "georgian": "შოტლანდიური",
+    "pronunciation": "/scottish/",
+    "example_en": "The scottish fold has folded ears.",
+    "example_ka": "შოტლანდიურ კატას დაკეცილი ყურები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "angora",
+    "georgian": "ანგორა",
+    "pronunciation": "/angora/",
+    "example_en": "The angora rabbit is fluffy.",
+    "example_ka": "ანგორის კურდღელი ფუმფულაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "lovebird",
+    "georgian": "მიჯნური თუთიყუში",
+    "pronunciation": "/lovebird/",
+    "example_en": "The lovebird needs a partner.",
+    "example_ka": "მიჯნურ თუთიყუშს პარტნიორი სჭირდება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "cockatoo",
+    "georgian": "კაკადუ",
+    "pronunciation": "/cockatoo/",
+    "example_en": "The cockatoo is noisy.",
+    "example_ka": "კაკადუ ხმაურიანია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "conure",
+    "georgian": "კონური",
+    "pronunciation": "/conure/",
+    "example_en": "The conure is colorful.",
+    "example_ka": "კონური ფერადია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "finch",
+    "georgian": "ჩიტბატონა",
+    "pronunciation": "/finch/",
+    "example_en": "The finch sings at dawn.",
+    "example_ka": "ჩიტბატონა გარიჟრაჟზე მღერის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "dove",
+    "georgian": "მტრედი",
+    "pronunciation": "/dove/",
+    "example_en": "The dove coos softly.",
+    "example_ka": "მტრედი ნაზად გუგუნებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "pigeon",
+    "georgian": "მტრედი",
+    "pronunciation": "/pigeon/",
+    "example_en": "The pigeon eats seeds.",
+    "example_ka": "მტრედი მარცვლებს ჭამს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "duckling",
+    "georgian": "იხვის ბარტყი",
+    "pronunciation": "/duckling/",
+    "example_en": "The duckling follows its mother.",
+    "example_ka": "იხვის ბარტყი დედას მისდევს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "chick",
+    "georgian": "წიწილა",
+    "pronunciation": "/chick/",
+    "example_en": "The chick is yellow.",
+    "example_ka": "წიწილა ყვითელია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "gosling",
+    "georgian": "ბატის ბარტყი",
+    "pronunciation": "/gosling/",
+    "example_en": "The gosling waddles around.",
+    "example_ka": "ბატის ბარტყი ყიყინებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "foal",
+    "georgian": "კვიცი",
+    "pronunciation": "/foal/",
+    "example_en": "The foal runs in the field.",
+    "example_ka": "კვიცი მინდორში დარბის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bunny",
+    "georgian": "კურდღელი",
+    "pronunciation": "/bunny/",
+    "example_en": "The bunny hops around.",
+    "example_ka": "კურდღელი ხტუნავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "pony",
+    "georgian": "პონი",
+    "pronunciation": "/pony/",
+    "example_en": "The pony is small.",
+    "example_ka": "პონი პატარაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "lamb",
+    "georgian": "ბატკანი",
+    "pronunciation": "/lamb/",
+    "example_en": "The lamb follows the flock.",
+    "example_ka": "ბატკანი ფარას მისდევს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "calf",
+    "georgian": "ხბო",
+    "pronunciation": "/calf/",
+    "example_en": "The calf stays near its mother.",
+    "example_ka": "ხბო დედასთან რჩება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "piglet",
+    "georgian": "გოჭი",
+    "pronunciation": "/piglet/",
+    "example_en": "The piglet is tiny.",
+    "example_ka": "გოჭი პატარაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "hen",
+    "georgian": "დედალი",
+    "pronunciation": "/hen/",
+    "example_en": "The hen lays eggs.",
+    "example_ka": "დედალი კვერცხებს დებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "rooster",
+    "georgian": "მამალი",
+    "pronunciation": "/rooster/",
+    "example_en": "The rooster crows at dawn.",
+    "example_ka": "მამალი გარიჟრაჟზე ყივის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "goose",
+    "georgian": "ბატი",
+    "pronunciation": "/goose/",
+    "example_en": "The goose honks loudly.",
+    "example_ka": "ბატი ხმამაღლა ყიჟინებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "turkey",
+    "georgian": "ინდაური",
+    "pronunciation": "/turkey/",
+    "example_en": "The turkey gobbles.",
+    "example_ka": "ინდაური ტკრუტუნებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "peacock",
+    "georgian": "ფარშევანგი",
+    "pronunciation": "/peacock/",
+    "example_en": "The peacock displays its feathers.",
+    "example_ka": "ფარშევანგი ბუმბულს შლის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "swan",
+    "georgian": "გედი",
+    "pronunciation": "/swan/",
+    "example_en": "The swan glides on the lake.",
+    "example_ka": "გედი ტბაზე ცურავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "stallion",
+    "georgian": "ულაყი",
+    "pronunciation": "/stallion/",
+    "example_en": "The stallion gallops fast.",
+    "example_ka": "ულაყი სწრაფად ჭენებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "mare",
+    "georgian": "ფაშატი",
+    "pronunciation": "/mare/",
+    "example_en": "The mare nurses its foal.",
+    "example_ka": "ფაშატი კვიცს კვებავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "ox",
+    "georgian": "ხარი",
+    "pronunciation": "/ox/",
+    "example_en": "The ox pulls the plow.",
+    "example_ka": "ხარი გუთანს ათრევს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bull",
+    "georgian": "ხარი",
+    "pronunciation": "/bull/",
+    "example_en": "The bull is strong.",
+    "example_ka": "ხარი ძლიერია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "ram",
+    "georgian": "ვერძი",
+    "pronunciation": "/ram/",
+    "example_en": "The ram has curved horns.",
+    "example_ka": "ვერძს მოხრილი რქები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "ewe",
+    "georgian": "ბატკანი",
+    "pronunciation": "/ewe/",
+    "example_en": "The ewe feeds her lamb.",
+    "example_ka": "დედა ცხვარი ბატკანს კვებავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "billy",
+    "georgian": "ვაცი",
+    "pronunciation": "/billy/",
+    "example_en": "The billy goat has a beard.",
+    "example_ka": "ვაცს წვერი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "nanny",
+    "georgian": "ნიანგი",
+    "pronunciation": "/nanny/",
+    "example_en": "The nanny goat gives milk.",
+    "example_ka": "დედა თხა რძეს იძლევა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "gelding",
+    "georgian": "საჯინიბო",
+    "pronunciation": "/gelding/",
+    "example_en": "The gelding is calm.",
+    "example_ka": "საჯინიბო ცხენი მშვიდია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "steer",
+    "georgian": "დაკოდილი",
+    "pronunciation": "/steer/",
+    "example_en": "The steer grazes peacefully.",
+    "example_ka": "ხარი მშვიდად ძოვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "heifer",
+    "georgian": "დეკეული",
+    "pronunciation": "/heifer/",
+    "example_en": "The heifer is young.",
+    "example_ka": "დეკეული ახალგაზრდაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "colt",
+    "georgian": "კვიცი",
+    "pronunciation": "/colt/",
+    "example_en": "The colt is playful.",
+    "example_ka": "კვიცი მოთამაშეა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "filly",
+    "georgian": "ფაშატის კვიცი",
+    "pronunciation": "/filly/",
+    "example_en": "The filly runs gracefully.",
+    "example_ka": "ფაშატის კვიცი მოხდენილად დარბის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "alpaca",
+    "georgian": "ალპაკა",
+    "pronunciation": "/alpaca/",
+    "example_en": "The alpaca has soft wool.",
+    "example_ka": "ალპაკას რბილი მატყლი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "llama",
+    "georgian": "ლამა",
+    "pronunciation": "/llama/",
+    "example_en": "The llama carries supplies.",
+    "example_ka": "ლამა მარაგს ზიდავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "mule",
+    "georgian": "ჯორი",
+    "pronunciation": "/mule/",
+    "example_en": "The mule is stubborn.",
+    "example_ka": "ჯორი ჯიუტია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "guppy",
+    "georgian": "გუპი",
+    "pronunciation": "/guppy/",
+    "example_en": "The guppy is colorful.",
+    "example_ka": "გუპი ფერადია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "molly",
+    "georgian": "მოლი",
+    "pronunciation": "/molly/",
+    "example_en": "The molly fish is peaceful.",
+    "example_ka": "მოლი თევზი მშვიდია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "tetra",
+    "georgian": "ტეტრა",
+    "pronunciation": "/tetra/",
+    "example_en": "The tetra swims in schools.",
+    "example_ka": "ტეტრა ჯგუფურად ცურავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "betta",
+    "georgian": "ბეტა",
+    "pronunciation": "/betta/",
+    "example_en": "The betta fish has bright fins.",
+    "example_ka": "ბეტა თევზს კაშკაშა ფარფლები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "platy",
+    "georgian": "პლატი",
+    "pronunciation": "/platy/",
+    "example_en": "The platy is easy to care for.",
+    "example_ka": "პლატის მოვლა ადვილია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "angelfish",
+    "georgian": "ანგელოზი თევზი",
+    "pronunciation": "/angelfish/",
+    "example_en": "The angelfish is elegant.",
+    "example_ka": "ანგელოზი თევზი ელეგანტურია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "discus",
+    "georgian": "დისკუსი",
+    "pronunciation": "/discus/",
+    "example_en": "The discus fish is round.",
+    "example_ka": "დისკუსი თევზი მრგვალია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "cichlid",
+    "georgian": "ციხლიდი",
+    "pronunciation": "/cichlid/",
+    "example_en": "The cichlid is territorial.",
+    "example_ka": "ციხლიდი ტერიტორიულია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "barb",
+    "georgian": "ბარბუსი",
+    "pronunciation": "/barb/",
+    "example_en": "The barb swims quickly.",
+    "example_ka": "ბარბუსი სწრაფად ცურავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "loach",
+    "georgian": "ლოჩი",
+    "pronunciation": "/loach/",
+    "example_en": "The loach hides under rocks.",
+    "example_ka": "ლოჩი ქვების ქვეშ იმალება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "catfish",
+    "georgian": "ლოქო",
+    "pronunciation": "/catfish/",
+    "example_en": "The catfish lives at the bottom.",
+    "example_ka": "ლოქო ფსკერზე ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "axolotl",
+    "georgian": "აქსოლოტლი",
+    "pronunciation": "/axolotl/",
+    "example_en": "The axolotl regenerates limbs.",
+    "example_ka": "აქსოლოტლი კიდურებს აღიდგენს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "newt",
+    "georgian": "ტრიტონი",
+    "pronunciation": "/newt/",
+    "example_en": "The newt lives in water.",
+    "example_ka": "ტრიტონი წყალში ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "salamander",
+    "georgian": "სალამანდრა",
+    "pronunciation": "/salamander/",
+    "example_en": "The salamander is amphibious.",
+    "example_ka": "სალამანდრა ამფიბიაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "hermit",
+    "georgian": "პუსტელგა",
+    "pronunciation": "/hermit/",
+    "example_en": "The hermit crab changes shells.",
+    "example_ka": "პუსტელგა ნიჟარას იცვლის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "tarantula",
+    "georgian": "ტარანტულა",
+    "pronunciation": "/tarantula/",
+    "example_en": "The tarantula is hairy.",
+    "example_ka": "ტარანტულა ბეწვიანია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "scorpion",
+    "georgian": "მორიელი",
+    "pronunciation": "/scorpion/",
+    "example_en": "The scorpion has a stinger.",
+    "example_ka": "მორიელს ნესტარი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "snail",
+    "georgian": "ლოკოკინა",
+    "pronunciation": "/snail/",
+    "example_en": "The snail moves slowly.",
+    "example_ka": "ლოკოკინა ნელა მოძრაობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "slug",
+    "georgian": "შიშველი ლოკოკინა",
+    "pronunciation": "/slug/",
+    "example_en": "The slug leaves a trail.",
+    "example_ka": "შიშველი ლოკოკინა კვალს ტოვებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "rat",
+    "georgian": "ვირთხა",
+    "pronunciation": "/rat/",
+    "example_en": "The rat is intelligent.",
+    "example_ka": "ვირთხა ჭკვიანია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "guinea",
+    "georgian": "ზღვის გოჭი",
+    "pronunciation": "/guinea/",
+    "example_en": "The guinea pig squeaks.",
+    "example_ka": "ზღვის გოჭი ჭყივის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "python",
+    "georgian": "პითონი",
+    "pronunciation": "/python/",
+    "example_en": "The python coils around branches.",
+    "example_ka": "პითონი ტოტებს ეხვევა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "boa",
+    "georgian": "ბოა",
+    "pronunciation": "/boa/",
+    "example_en": "The boa constricts its prey.",
+    "example_ka": "ბოა მსხვერპლს უჭერს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "corn",
+    "georgian": "სიმინდის გველი",
+    "pronunciation": "/corn/",
+    "example_en": "The corn snake is harmless.",
+    "example_ka": "სიმინდის გველი უვნებელია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "king",
+    "georgian": "სამეფო გველი",
+    "pronunciation": "/king/",
+    "example_en": "The king snake eats other snakes.",
+    "example_ka": "სამეფო გველი სხვა გველებს ჭამს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "ball",
+    "georgian": "ბურთი პითონი",
+    "pronunciation": "/ball/",
+    "example_en": "The ball python is docile.",
+    "example_ka": "ბურთი პითონი მორჩილია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "bearded",
+    "georgian": "წვეროსანი",
+    "pronunciation": "/bearded/",
+    "example_en": "The bearded dragon is friendly.",
+    "example_ka": "წვეროსანი დრაკონი მეგობრულია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "leopard",
+    "georgian": "ლეოპარდის გეკონი",
+    "pronunciation": "/leopard/",
+    "example_en": "The leopard gecko is spotted.",
+    "example_ka": "ლეოპარდის გეკონი ლაქიანია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "crested",
+    "georgian": "ქოჩორიანი",
+    "pronunciation": "/crested/",
+    "example_en": "The crested gecko is arboreal.",
+    "example_ka": "ქოჩორიანი გეკონი ხეზე ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "monitor",
+    "georgian": "მონიტორი",
+    "pronunciation": "/monitor/",
+    "example_en": "The monitor lizard is large.",
+    "example_ka": "მონიტორი ხვლიკი დიდია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "skink",
+    "georgian": "სცინკი",
+    "pronunciation": "/skink/",
+    "example_en": "The skink burrows underground.",
+    "example_ka": "სცინკი მიწის ქვეშ იბურება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "anole",
+    "georgian": "ანოლი",
+    "pronunciation": "/anole/",
+    "example_en": "The anole changes color.",
+    "example_ka": "ანოლი ფერს იცვლის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "tortoise",
+    "georgian": "კუ",
+    "pronunciation": "/tortoise/",
+    "example_en": "The tortoise lives long.",
+    "example_ka": "კუ დიდხანს ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "terrapin",
+    "georgian": "წყლის კუ",
+    "pronunciation": "/terrapin/",
+    "example_en": "The terrapin lives near water.",
+    "example_ka": "წყლის კუ წყალთან ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "clownfish",
+    "georgian": "ჯამბაზი თევზი",
+    "pronunciation": "/clownfish/",
+    "example_en": "The clownfish hides in anemones.",
+    "example_ka": "ჯამბაზი თევზი ანემონებში იმალება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "tang",
+    "georgian": "ტანგი",
+    "pronunciation": "/tang/",
+    "example_en": "The tang fish is blue.",
+    "example_ka": "ტანგი თევზი ლურჯია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "wrasse",
+    "georgian": "გუბარა",
+    "pronunciation": "/wrasse/",
+    "example_en": "The wrasse cleans other fish.",
+    "example_ka": "გუბარა სხვა თევზებს ასუფთავებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "goby",
+    "georgian": "ქაშაყი",
+    "pronunciation": "/goby/",
+    "example_en": "The goby stays near the bottom.",
+    "example_ka": "ქაშაყი ფსკერთან რჩება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "blenny",
+    "georgian": "ბლენი",
+    "pronunciation": "/blenny/",
+    "example_en": "The blenny peeks from rocks.",
+    "example_ka": "ბლენი ქვებიდან იყურება.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "damsel",
+    "georgian": "დამზელი",
+    "pronunciation": "/damsel/",
+    "example_en": "The damsel fish is aggressive.",
+    "example_ka": "დამზელი თევზი აგრესიულია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "cardinal",
+    "georgian": "კარდინალი",
+    "pronunciation": "/cardinal/",
+    "example_en": "The cardinal fish is red.",
+    "example_ka": "კარდინალი თევზი წითელია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "shrimp",
+    "georgian": "კრევეტი",
+    "pronunciation": "/shrimp/",
+    "example_en": "The shrimp cleans the tank.",
+    "example_ka": "კრევეტი აკვარიუმს ასუფთავებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "crayfish",
+    "georgian": "კიბო",
+    "pronunciation": "/crayfish/",
+    "example_en": "The crayfish has claws.",
+    "example_ka": "კიბოს ბრჭყალები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "starfish",
+    "georgian": "ზღვის ვარსკვლავი",
+    "pronunciation": "/starfish/",
+    "example_en": "The starfish has five arms.",
+    "example_ka": "ზღვის ვარსკვლავს ხუთი მკლავი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "seahorse",
+    "georgian": "ზღვის ცხენი",
+    "pronunciation": "/seahorse/",
+    "example_en": "The seahorse swims upright.",
+    "example_ka": "ზღვის ცხენი ვერტიკალურად ცურავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "urchin",
+    "georgian": "ზღვის ზღარბი",
+    "pronunciation": "/urchin/",
+    "example_en": "The sea urchin has spines.",
+    "example_ka": "ზღვის ზღარბს ეკლები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "anemone",
+    "georgian": "ანემონი",
+    "pronunciation": "/anemone/",
+    "example_en": "The anemone waves its tentacles.",
+    "example_ka": "ანემონი საცეცებს აქნევს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "jellyfish",
+    "georgian": "მედუზა",
+    "pronunciation": "/jellyfish/",
+    "example_en": "The jellyfish glows.",
+    "example_ka": "მედუზა ანათებს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "octopus",
+    "georgian": "რვაფეხა",
+    "pronunciation": "/octopus/",
+    "example_en": "The octopus has eight arms.",
+    "example_ka": "რვაფეხას რვა მკლავი აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "crab",
+    "georgian": "კიბორჩხალა",
+    "pronunciation": "/crab/",
+    "example_en": "The crab walks sideways.",
+    "example_ka": "კიბორჩხალა გვერდულად დადის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "lobster",
+    "georgian": "ლობსტერი",
+    "pronunciation": "/lobster/",
+    "example_en": "The lobster lives in the ocean.",
+    "example_ka": "ლობსტერი ოკეანეში ცხოვრობს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "clam",
+    "georgian": "მიდია",
+    "pronunciation": "/clam/",
+    "example_en": "The clam closes its shell.",
+    "example_ka": "მიდია ნიჟარას ხურავს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "mussel",
+    "georgian": "მუსელი",
+    "pronunciation": "/mussel/",
+    "example_en": "The mussel attaches to rocks.",
+    "example_ka": "მუსელი ქვებს ეკვრის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "oyster",
+    "georgian": "ხამანწკა",
+    "pronunciation": "/oyster/",
+    "example_en": "The oyster makes pearls.",
+    "example_ka": "ხამანწკა მარგალიტებს ქმნის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "squid",
+    "georgian": "კალმარი",
+    "pronunciation": "/squid/",
+    "example_en": "The squid squirts ink.",
+    "example_ka": "კალმარი მელანს ისვრის.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "whippet",
+    "georgian": "უიპეტი",
+    "pronunciation": "/whippet/",
+    "example_en": "The whippet is fast.",
+    "example_ka": "უიპეტი სწრაფია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "samoyed",
+    "georgian": "სამოედი",
+    "pronunciation": "/samoyed/",
+    "example_en": "The samoyed is fluffy.",
+    "example_ka": "სამოედი ფუმფულაა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "weimaraner",
+    "georgian": "ვაიმარანერი",
+    "pronunciation": "/weimaraner/",
+    "example_en": "The weimaraner is athletic.",
+    "example_ka": "ვაიმარანერი ათლეტურია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "vizsla",
+    "georgian": "ვიჟლა",
+    "pronunciation": "/vizsla/",
+    "example_en": "The vizsla is loyal.",
+    "example_ka": "ვიჟლა ერთგულია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "basenji",
+    "georgian": "ბასენჯი",
+    "pronunciation": "/basenji/",
+    "example_en": "The basenji does not bark.",
+    "example_ka": "ბასენჯი არ ყეფს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "havanese",
+    "georgian": "ჰავანეზი",
+    "pronunciation": "/havanese/",
+    "example_en": "The havanese is friendly.",
+    "example_ka": "ჰავანეზი მეგობრულია.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "papillon",
+    "georgian": "პაპილონი",
+    "pronunciation": "/papillon/",
+    "example_en": "The papillon has butterfly ears.",
+    "example_ka": "პაპილონს პეპლის ყურები აქვს.",
+    "category": "animals-pets",
+    "level": "beginner"
+  },
+  {
+    "english": "affenpinscher",
+    "georgian": "აფენპინჩერი",
+    "pronunciation": "/affenpinscher/",
+    "example_en": "The affenpinscher is curious.",
+    "example_ka": "აფენპინჩერი ცნობისმოყვარეა.",
+    "category": "animals-pets",
+    "level": "beginner"
+  }
 ]

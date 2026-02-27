@@ -1,52 +1,1802 @@
 [
-  {"english":"movie","georgian":"ფილმი","pronunciation":"/ˈmuːvi/","example_en":"Let's watch a movie tonight.","example_ka":"დღეს საღამოს ფილმი ვნახოთ.","category":"movies-cinema","level":"beginner"},
-  {"english":"actor","georgian":"მსახიობი","pronunciation":"/ˈæktər/","example_en":"He is a famous actor.","example_ka":"ის ცნობილი მსახიობია.","category":"movies-cinema","level":"beginner"},
-  {"english":"actress","georgian":"მსახიობი ქალი","pronunciation":"/ˈæktrəs/","example_en":"The actress won an Oscar.","example_ka":"მსახიობმა ქალმა ოსკარი მოიგო.","category":"movies-cinema","level":"beginner"},
-  {"english":"director","georgian":"რეჟისორი","pronunciation":"/dɪˈrɛktər/","example_en":"The director made a brilliant film.","example_ka":"რეჟისორმა ბრწყინვალე ფილმი გადაიღო.","category":"movies-cinema","level":"beginner"},
-  {"english":"scene","georgian":"სცენა","pronunciation":"/siːn/","example_en":"That scene was very emotional.","example_ka":"ის სცენა ძალიან ემოციური იყო.","category":"movies-cinema","level":"beginner"},
-  {"english":"script","georgian":"სცენარი","pronunciation":"/skrɪpt/","example_en":"The script was written by a young writer.","example_ka":"სცენარი ახალგაზრდა მწერალმა დაწერა.","category":"movies-cinema","level":"intermediate"},
-  {"english":"plot","georgian":"სიუჟეტი","pronunciation":"/plɒt/","example_en":"The plot of the movie was unpredictable.","example_ka":"ფილმის სიუჟეტი მოულოდნელი იყო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"genre","georgian":"ჟანრი","pronunciation":"/ˈʒɒnrə/","example_en":"What genre of movies do you prefer?","example_ka":"რომელი ჟანრის ფილმებს ანიჭებ უპირატესობას?","category":"movies-cinema","level":"intermediate"},
-  {"english":"comedy","georgian":"კომედია","pronunciation":"/ˈkɒmədi/","example_en":"I love watching comedies.","example_ka":"კომედიების ყურება მიყვარს.","category":"movies-cinema","level":"beginner"},
-  {"english":"drama","georgian":"დრამა","pronunciation":"/ˈdrɑːmə/","example_en":"This drama made everyone cry.","example_ka":"ამ დრამამ ყველა ატირა.","category":"movies-cinema","level":"beginner"},
-  {"english":"horror","georgian":"საშინელება","pronunciation":"/ˈhɒrər/","example_en":"Horror movies scare me.","example_ka":"საშინელებათა ფილმები მაშინებს.","category":"movies-cinema","level":"beginner"},
-  {"english":"thriller","georgian":"თრილერი","pronunciation":"/ˈθrɪlər/","example_en":"The thriller kept me on the edge of my seat.","example_ka":"თრილერმა მთელი ფილმის განმავლობაში დაძაბულობაში მაჩერა.","category":"movies-cinema","level":"intermediate"},
-  {"english":"documentary","georgian":"დოკუმენტური ფილმი","pronunciation":"/ˌdɒkjʊˈmɛntəri/","example_en":"I watched a documentary about nature.","example_ka":"ბუნებაზე დოკუმენტური ფილმი ვნახე.","category":"movies-cinema","level":"intermediate"},
-  {"english":"animation","georgian":"ანიმაცია","pronunciation":"/ˌænɪˈmeɪʃən/","example_en":"Children love animation films.","example_ka":"ბავშვებს ანიმაციური ფილმები უყვართ.","category":"movies-cinema","level":"beginner"},
-  {"english":"subtitle","georgian":"სუბტიტრი","pronunciation":"/ˈsʌbtaɪtəl/","example_en":"I always watch movies with subtitles.","example_ka":"ფილმებს ყოველთვის სუბტიტრებით ვუყურებ.","category":"movies-cinema","level":"intermediate"},
-  {"english":"trailer","georgian":"თრეილერი","pronunciation":"/ˈtreɪlər/","example_en":"Have you seen the trailer for the new movie?","example_ka":"ახალი ფილმის თრეილერი ნახე?","category":"movies-cinema","level":"beginner"},
-  {"english":"premiere","georgian":"პრემიერა","pronunciation":"/prɪˈmɪər/","example_en":"We attended the movie premiere.","example_ka":"ფილმის პრემიერაზე დავესწარით.","category":"movies-cinema","level":"intermediate"},
-  {"english":"sequel","georgian":"გაგრძელება","pronunciation":"/ˈsiːkwəl/","example_en":"The sequel was better than the original.","example_ka":"გაგრძელება ორიგინალზე უკეთესი იყო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"soundtrack","georgian":"საუნდტრეკი","pronunciation":"/ˈsaʊndtræk/","example_en":"The soundtrack of this movie is amazing.","example_ka":"ამ ფილმის საუნდტრეკი საოცარია.","category":"movies-cinema","level":"intermediate"},
-  {"english":"screen","georgian":"ეკრანი","pronunciation":"/skriːn/","example_en":"The movie looks great on the big screen.","example_ka":"ფილმი დიდ ეკრანზე შესანიშნავად გამოიყურება.","category":"movies-cinema","level":"beginner"},
-  {"english":"cinema","georgian":"კინოთეატრი","pronunciation":"/ˈsɪnəmə/","example_en":"Shall we go to the cinema?","example_ka":"კინოთეატრში წავიდეთ?","category":"movies-cinema","level":"beginner"},
-  {"english":"popcorn","georgian":"პოპკორნი","pronunciation":"/ˈpɒpkɔːrn/","example_en":"I always buy popcorn at the cinema.","example_ka":"კინოთეატრში ყოველთვის პოპკორნს ვყიდულობ.","category":"movies-cinema","level":"beginner"},
-  {"english":"ticket","georgian":"ბილეთი","pronunciation":"/ˈtɪkɪt/","example_en":"I bought two tickets for the movie.","example_ka":"ფილმზე ორი ბილეთი ვიყიდე.","category":"movies-cinema","level":"beginner"},
-  {"english":"camera","georgian":"კამერა","pronunciation":"/ˈkæmərə/","example_en":"The camera work in this film is excellent.","example_ka":"ამ ფილმში კამერის მუშაობა შესანიშნავია.","category":"movies-cinema","level":"beginner"},
-  {"english":"producer","georgian":"პროდიუსერი","pronunciation":"/prəˈdjuːsər/","example_en":"The producer funded the entire project.","example_ka":"პროდიუსერმა მთელი პროექტი დააფინანსა.","category":"movies-cinema","level":"intermediate"},
-  {"english":"cast","georgian":"მსახიობთა შემადგენლობა","pronunciation":"/kæst/","example_en":"The cast of the movie is impressive.","example_ka":"ფილმის მსახიობთა შემადგენლობა შთამბეჭდავია.","category":"movies-cinema","level":"intermediate"},
-  {"english":"role","georgian":"როლი","pronunciation":"/roʊl/","example_en":"She played the leading role.","example_ka":"მან მთავარი როლი ითამაშა.","category":"movies-cinema","level":"beginner"},
-  {"english":"audience","georgian":"აუდიტორია","pronunciation":"/ˈɔːdiəns/","example_en":"The audience applauded loudly.","example_ka":"აუდიტორია ხმამაღლა აპლოდისმენტებს აძლევდა.","category":"movies-cinema","level":"intermediate"},
-  {"english":"review","georgian":"მიმოხილვა","pronunciation":"/rɪˈvjuː/","example_en":"The movie received positive reviews.","example_ka":"ფილმმა დადებითი მიმოხილვები მიიღო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"blockbuster","georgian":"ბლოკბასტერი","pronunciation":"/ˈblɒkbʌstər/","example_en":"The new blockbuster broke box office records.","example_ka":"ახალმა ბლოკბასტერმა საკინოჩვენებების რეკორდი მოხსნა.","category":"movies-cinema","level":"intermediate"},
-  {"english":"special effects","georgian":"სპეცეფექტები","pronunciation":"/ˈspɛʃəl ɪˈfɛkts/","example_en":"The special effects were incredible.","example_ka":"სპეცეფექტები წარმოუდგენელი იყო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"stunt","georgian":"ტრიუკი","pronunciation":"/stʌnt/","example_en":"The actor performed his own stunts.","example_ka":"მსახიობმა ტრიუკები თავად შეასრულა.","category":"movies-cinema","level":"intermediate"},
-  {"english":"filming","georgian":"გადაღება","pronunciation":"/ˈfɪlmɪŋ/","example_en":"Filming took place in Georgia.","example_ka":"გადაღება საქართველოში მიმდინარეობდა.","category":"movies-cinema","level":"beginner"},
-  {"english":"costume","georgian":"კოსტიუმი","pronunciation":"/ˈkɒstjuːm/","example_en":"The costumes in the period film were authentic.","example_ka":"ისტორიულ ფილმში კოსტიუმები ავთენტიკური იყო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"award","georgian":"ჯილდო","pronunciation":"/əˈwɔːrd/","example_en":"The film won several awards.","example_ka":"ფილმმა რამდენიმე ჯილდო მოიპოვა.","category":"movies-cinema","level":"beginner"},
-  {"english":"nomination","georgian":"ნომინაცია","pronunciation":"/ˌnɒmɪˈneɪʃən/","example_en":"The movie received five nominations.","example_ka":"ფილმმა ხუთი ნომინაცია მიიღო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"box office","georgian":"საკინოჩვენებები","pronunciation":"/bɒks ˈɒfɪs/","example_en":"The film earned millions at the box office.","example_ka":"ფილმმა საკინოჩვენებებზე მილიონები შეაგროვა.","category":"movies-cinema","level":"intermediate"},
-  {"english":"screenplay","georgian":"სცენარი","pronunciation":"/ˈskriːnpleɪ/","example_en":"He wrote the screenplay in three months.","example_ka":"მან სცენარი სამ თვეში დაწერა.","category":"movies-cinema","level":"advanced"},
-  {"english":"protagonist","georgian":"მთავარი გმირი","pronunciation":"/proʊˈtæɡənɪst/","example_en":"The protagonist faces many challenges.","example_ka":"მთავარი გმირი ბევრ გამოწვევას აწყდება.","category":"movies-cinema","level":"advanced"},
-  {"english":"villain","georgian":"ბოროტმოქმედი","pronunciation":"/ˈvɪlən/","example_en":"The villain was the most interesting character.","example_ka":"ბოროტმოქმედი ყველაზე საინტერესო პერსონაჟი იყო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"climax","georgian":"კულმინაცია","pronunciation":"/ˈklaɪmæks/","example_en":"The climax of the film was unexpected.","example_ka":"ფილმის კულმინაცია მოულოდნელი იყო.","category":"movies-cinema","level":"advanced"},
-  {"english":"flashback","georgian":"რეტროსპექცია","pronunciation":"/ˈflæʃbæk/","example_en":"The movie used flashbacks to tell the story.","example_ka":"ფილმში ისტორიის მოსათხრობად რეტროსპექციას იყენებდნენ.","category":"movies-cinema","level":"advanced"},
-  {"english":"dialogue","georgian":"დიალოგი","pronunciation":"/ˈdaɪəlɒɡ/","example_en":"The dialogue in this movie is very natural.","example_ka":"ამ ფილმში დიალოგი ძალიან ბუნებრივია.","category":"movies-cinema","level":"intermediate"},
-  {"english":"editing","georgian":"მონტაჟი","pronunciation":"/ˈɛdɪtɪŋ/","example_en":"Good editing makes a film better.","example_ka":"კარგი მონტაჟი ფილმს აუმჯობესებს.","category":"movies-cinema","level":"intermediate"},
-  {"english":"remake","georgian":"რიმეიკი","pronunciation":"/ˈriːmeɪk/","example_en":"The remake was not as good as the original.","example_ka":"რიმეიკი ორიგინალივით კარგი არ იყო.","category":"movies-cinema","level":"intermediate"},
-  {"english":"franchise","georgian":"ფრანჩაიზი","pronunciation":"/ˈfræntʃaɪz/","example_en":"Star Wars is a popular movie franchise.","example_ka":"ვარსკვლავური ომები პოპულარული კინო ფრანჩაიზია.","category":"movies-cinema","level":"advanced"},
-  {"english":"dubbing","georgian":"გახმოვანება","pronunciation":"/ˈdʌbɪŋ/","example_en":"The dubbing was done in Georgian.","example_ka":"გახმოვანება ქართულად იყო შესრულებული.","category":"movies-cinema","level":"intermediate"},
-  {"english":"cinematography","georgian":"კინემატოგრაფია","pronunciation":"/ˌsɪnəməˈtɒɡrəfi/","example_en":"The cinematography was breathtaking.","example_ka":"კინემატოგრაფია თვალწარმტაცი იყო.","category":"movies-cinema","level":"advanced"},
-  {"english":"streaming","georgian":"სტრიმინგი","pronunciation":"/ˈstriːmɪŋ/","example_en":"Most people watch movies through streaming services.","example_ka":"ადამიანების უმეტესობა ფილმებს სტრიმინგის სერვისებით უყურებს.","category":"movies-cinema","level":"beginner"},
-  {"english":"spoiler","georgian":"სპოილერი","pronunciation":"/ˈspɔɪlər/","example_en":"Don't tell me any spoilers!","example_ka":"არანაირი სპოილერი არ მითხრა!","category":"movies-cinema","level":"beginner"}
+  {
+    "english": "movie",
+    "georgian": "ფილმი",
+    "pronunciation": "/ˈmuːvi/",
+    "example_en": "Let's watch a movie tonight.",
+    "example_ka": "დღეს საღამოს ფილმი ვნახოთ.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "actor",
+    "georgian": "მსახიობი",
+    "pronunciation": "/ˈæktər/",
+    "example_en": "He is a famous actor.",
+    "example_ka": "ის ცნობილი მსახიობია.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "actress",
+    "georgian": "მსახიობი ქალი",
+    "pronunciation": "/ˈæktrəs/",
+    "example_en": "The actress won an Oscar.",
+    "example_ka": "მსახიობმა ქალმა ოსკარი მოიგო.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "director",
+    "georgian": "რეჟისორი",
+    "pronunciation": "/dɪˈrɛktər/",
+    "example_en": "The director made a brilliant film.",
+    "example_ka": "რეჟისორმა ბრწყინვალე ფილმი გადაიღო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "scene",
+    "georgian": "სცენა",
+    "pronunciation": "/siːn/",
+    "example_en": "That scene was very emotional.",
+    "example_ka": "ის სცენა ძალიან ემოციური იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "script",
+    "georgian": "სცენარი",
+    "pronunciation": "/skrɪpt/",
+    "example_en": "The script was written by a young writer.",
+    "example_ka": "სცენარი ახალგაზრდა მწერალმა დაწერა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "plot",
+    "georgian": "სიუჟეტი",
+    "pronunciation": "/plɒt/",
+    "example_en": "The plot of the movie was unpredictable.",
+    "example_ka": "ფილმის სიუჟეტი მოულოდნელი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "genre",
+    "georgian": "ჟანრი",
+    "pronunciation": "/ˈʒɒnrə/",
+    "example_en": "What genre of movies do you prefer?",
+    "example_ka": "რომელი ჟანრის ფილმებს ანიჭებ უპირატესობას?",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "comedy",
+    "georgian": "კომედია",
+    "pronunciation": "/ˈkɒmədi/",
+    "example_en": "I love watching comedies.",
+    "example_ka": "კომედიების ყურება მიყვარს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "drama",
+    "georgian": "დრამა",
+    "pronunciation": "/ˈdrɑːmə/",
+    "example_en": "This drama made everyone cry.",
+    "example_ka": "ამ დრამამ ყველა ატირა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "horror",
+    "georgian": "საშინელება",
+    "pronunciation": "/ˈhɒrər/",
+    "example_en": "Horror movies scare me.",
+    "example_ka": "საშინელებათა ფილმები მაშინებს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "thriller",
+    "georgian": "თრილერი",
+    "pronunciation": "/ˈθrɪlər/",
+    "example_en": "The thriller kept me on the edge of my seat.",
+    "example_ka": "თრილერმა მთელი ფილმის განმავლობაში დაძაბულობაში მაჩერა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "documentary",
+    "georgian": "დოკუმენტური ფილმი",
+    "pronunciation": "/ˌdɒkjʊˈmɛntəri/",
+    "example_en": "I watched a documentary about nature.",
+    "example_ka": "ბუნებაზე დოკუმენტური ფილმი ვნახე.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "animation",
+    "georgian": "ანიმაცია",
+    "pronunciation": "/ˌænɪˈmeɪʃən/",
+    "example_en": "Children love animation films.",
+    "example_ka": "ბავშვებს ანიმაციური ფილმები უყვართ.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "subtitle",
+    "georgian": "სუბტიტრი",
+    "pronunciation": "/ˈsʌbtaɪtəl/",
+    "example_en": "I always watch movies with subtitles.",
+    "example_ka": "ფილმებს ყოველთვის სუბტიტრებით ვუყურებ.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "trailer",
+    "georgian": "თრეილერი",
+    "pronunciation": "/ˈtreɪlər/",
+    "example_en": "Have you seen the trailer for the new movie?",
+    "example_ka": "ახალი ფილმის თრეილერი ნახე?",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "premiere",
+    "georgian": "პრემიერა",
+    "pronunciation": "/prɪˈmɪər/",
+    "example_en": "We attended the movie premiere.",
+    "example_ka": "ფილმის პრემიერაზე დავესწარით.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "sequel",
+    "georgian": "გაგრძელება",
+    "pronunciation": "/ˈsiːkwəl/",
+    "example_en": "The sequel was better than the original.",
+    "example_ka": "გაგრძელება ორიგინალზე უკეთესი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "soundtrack",
+    "georgian": "საუნდტრეკი",
+    "pronunciation": "/ˈsaʊndtræk/",
+    "example_en": "The soundtrack of this movie is amazing.",
+    "example_ka": "ამ ფილმის საუნდტრეკი საოცარია.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "screen",
+    "georgian": "ეკრანი",
+    "pronunciation": "/skriːn/",
+    "example_en": "The movie looks great on the big screen.",
+    "example_ka": "ფილმი დიდ ეკრანზე შესანიშნავად გამოიყურება.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "cinema",
+    "georgian": "კინოთეატრი",
+    "pronunciation": "/ˈsɪnəmə/",
+    "example_en": "Shall we go to the cinema?",
+    "example_ka": "კინოთეატრში წავიდეთ?",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "popcorn",
+    "georgian": "პოპკორნი",
+    "pronunciation": "/ˈpɒpkɔːrn/",
+    "example_en": "I always buy popcorn at the cinema.",
+    "example_ka": "კინოთეატრში ყოველთვის პოპკორნს ვყიდულობ.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "ticket",
+    "georgian": "ბილეთი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "I bought two tickets for the movie.",
+    "example_ka": "ფილმზე ორი ბილეთი ვიყიდე.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "camera",
+    "georgian": "კამერა",
+    "pronunciation": "/ˈkæmərə/",
+    "example_en": "The camera work in this film is excellent.",
+    "example_ka": "ამ ფილმში კამერის მუშაობა შესანიშნავია.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "producer",
+    "georgian": "პროდიუსერი",
+    "pronunciation": "/prəˈdjuːsər/",
+    "example_en": "The producer funded the entire project.",
+    "example_ka": "პროდიუსერმა მთელი პროექტი დააფინანსა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "cast",
+    "georgian": "მსახიობთა შემადგენლობა",
+    "pronunciation": "/kæst/",
+    "example_en": "The cast of the movie is impressive.",
+    "example_ka": "ფილმის მსახიობთა შემადგენლობა შთამბეჭდავია.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "role",
+    "georgian": "როლი",
+    "pronunciation": "/roʊl/",
+    "example_en": "She played the leading role.",
+    "example_ka": "მან მთავარი როლი ითამაშა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "audience",
+    "georgian": "აუდიტორია",
+    "pronunciation": "/ˈɔːdiəns/",
+    "example_en": "The audience applauded loudly.",
+    "example_ka": "აუდიტორია ხმამაღლა აპლოდისმენტებს აძლევდა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "The movie received positive reviews.",
+    "example_ka": "ფილმმა დადებითი მიმოხილვები მიიღო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "blockbuster",
+    "georgian": "ბლოკბასტერი",
+    "pronunciation": "/ˈblɒkbʌstər/",
+    "example_en": "The new blockbuster broke box office records.",
+    "example_ka": "ახალმა ბლოკბასტერმა საკინოჩვენებების რეკორდი მოხსნა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "stunt",
+    "georgian": "ტრიუკი",
+    "pronunciation": "/stʌnt/",
+    "example_en": "The actor performed his own stunts.",
+    "example_ka": "მსახიობმა ტრიუკები თავად შეასრულა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "filming",
+    "georgian": "გადაღება",
+    "pronunciation": "/ˈfɪlmɪŋ/",
+    "example_en": "Filming took place in Georgia.",
+    "example_ka": "გადაღება საქართველოში მიმდინარეობდა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "costume",
+    "georgian": "კოსტიუმი",
+    "pronunciation": "/ˈkɒstjuːm/",
+    "example_en": "The costumes in the period film were authentic.",
+    "example_ka": "ისტორიულ ფილმში კოსტიუმები ავთენტიკური იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "award",
+    "georgian": "ჯილდო",
+    "pronunciation": "/əˈwɔːrd/",
+    "example_en": "The film won several awards.",
+    "example_ka": "ფილმმა რამდენიმე ჯილდო მოიპოვა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "nomination",
+    "georgian": "ნომინაცია",
+    "pronunciation": "/ˌnɒmɪˈneɪʃən/",
+    "example_en": "The movie received five nominations.",
+    "example_ka": "ფილმმა ხუთი ნომინაცია მიიღო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "screenplay",
+    "georgian": "სცენარი",
+    "pronunciation": "/ˈskriːnpleɪ/",
+    "example_en": "He wrote the screenplay in three months.",
+    "example_ka": "მან სცენარი სამ თვეში დაწერა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "protagonist",
+    "georgian": "მთავარი გმირი",
+    "pronunciation": "/proʊˈtæɡənɪst/",
+    "example_en": "The protagonist faces many challenges.",
+    "example_ka": "მთავარი გმირი ბევრ გამოწვევას აწყდება.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "villain",
+    "georgian": "ბოროტმოქმედი",
+    "pronunciation": "/ˈvɪlən/",
+    "example_en": "The villain was the most interesting character.",
+    "example_ka": "ბოროტმოქმედი ყველაზე საინტერესო პერსონაჟი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "climax",
+    "georgian": "კულმინაცია",
+    "pronunciation": "/ˈklaɪmæks/",
+    "example_en": "The climax of the film was unexpected.",
+    "example_ka": "ფილმის კულმინაცია მოულოდნელი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "flashback",
+    "georgian": "რეტროსპექცია",
+    "pronunciation": "/ˈflæʃbæk/",
+    "example_en": "The movie used flashbacks to tell the story.",
+    "example_ka": "ფილმში ისტორიის მოსათხრობად რეტროსპექციას იყენებდნენ.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "dialogue",
+    "georgian": "დიალოგი",
+    "pronunciation": "/ˈdaɪəlɒɡ/",
+    "example_en": "The dialogue in this movie is very natural.",
+    "example_ka": "ამ ფილმში დიალოგი ძალიან ბუნებრივია.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "editing",
+    "georgian": "მონტაჟი",
+    "pronunciation": "/ˈɛdɪtɪŋ/",
+    "example_en": "Good editing makes a film better.",
+    "example_ka": "კარგი მონტაჟი ფილმს აუმჯობესებს.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "remake",
+    "georgian": "რიმეიკი",
+    "pronunciation": "/ˈriːmeɪk/",
+    "example_en": "The remake was not as good as the original.",
+    "example_ka": "რიმეიკი ორიგინალივით კარგი არ იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "franchise",
+    "georgian": "ფრანჩაიზი",
+    "pronunciation": "/ˈfræntʃaɪz/",
+    "example_en": "Star Wars is a popular movie franchise.",
+    "example_ka": "ვარსკვლავური ომები პოპულარული კინო ფრანჩაიზია.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "dubbing",
+    "georgian": "გახმოვანება",
+    "pronunciation": "/ˈdʌbɪŋ/",
+    "example_en": "The dubbing was done in Georgian.",
+    "example_ka": "გახმოვანება ქართულად იყო შესრულებული.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "cinematography",
+    "georgian": "კინემატოგრაფია",
+    "pronunciation": "/ˌsɪnəməˈtɒɡrəfi/",
+    "example_en": "The cinematography was breathtaking.",
+    "example_ka": "კინემატოგრაფია თვალწარმტაცი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "streaming",
+    "georgian": "სტრიმინგი",
+    "pronunciation": "/ˈstriːmɪŋ/",
+    "example_en": "Most people watch movies through streaming services.",
+    "example_ka": "ადამიანების უმეტესობა ფილმებს სტრიმინგის სერვისებით უყურებს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "spoiler",
+    "georgian": "სპოილერი",
+    "pronunciation": "/ˈspɔɪlər/",
+    "example_en": "Don't tell me any spoilers!",
+    "example_ka": "არანაირი სპოილერი არ მითხრა!",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "prequel",
+    "georgian": "პრიკველი",
+    "pronunciation": "/ˈpriːkwəl/",
+    "example_en": "The prequel explains the backstory.",
+    "example_ka": "პრიკველი ისტორიის წინამორბედს ხსნის.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "cliffhanger",
+    "georgian": "ღია დასასრული",
+    "pronunciation": "/ˈklɪfhæŋər/",
+    "example_en": "The movie ended with a cliffhanger.",
+    "example_ka": "ფილმი ღია დასასრულით დამთავრდა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "subplot",
+    "georgian": "გვერდითი სიუჟეტი",
+    "pronunciation": "/ˈsʌbplɒt/",
+    "example_en": "The romantic subplot was touching.",
+    "example_ka": "რომანტიული გვერდითი სიუჟეტი გამაოგნებელი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "narrator",
+    "georgian": "მთხრობელი",
+    "pronunciation": "/ˈnæreɪtər/",
+    "example_en": "The narrator's voice was familiar.",
+    "example_ka": "მთხრობელის ხმა ნაცნობი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "montage",
+    "georgian": "მონტაჟი",
+    "pronunciation": "/mɒnˈtɑːʒ/",
+    "example_en": "The training montage was inspiring.",
+    "example_ka": "ვარჯიშის მონტაჟი შთამაგონებელი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "close-up",
+    "georgian": "ახლო გადაღება",
+    "pronunciation": "/ˈkloʊs ʌp/",
+    "example_en": "The close-up shot was dramatic.",
+    "example_ka": "ახლო გადაღების კადრი დრამატული იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "zoom",
+    "georgian": "ზუმი",
+    "pronunciation": "/zuːm/",
+    "example_en": "The camera zoomed in on her face.",
+    "example_ka": "კამერამ მის სახეს ზუმით მიუახლოვდა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "fade",
+    "georgian": "ქრობა",
+    "pronunciation": "/feɪd/",
+    "example_en": "The scene fades to black.",
+    "example_ka": "სცენა შავში ქრება.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "voiceover",
+    "georgian": "ხმოვანება",
+    "pronunciation": "/ˈvɔɪsˌoʊvər/",
+    "example_en": "The voiceover explained the story.",
+    "example_ka": "ხმოვანებამ ისტორია ახსნა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "special-effects",
+    "georgian": "სპეციალური ეფექტები",
+    "pronunciation": "/ˈspeʃəl ɪˈfekts/",
+    "example_en": "The special effects were amazing.",
+    "example_ka": "სპეციალური ეფექტები საოცარი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "makeup",
+    "georgian": "მაკიაჟი",
+    "pronunciation": "/ˈmeɪkʌp/",
+    "example_en": "The makeup artist did incredible work.",
+    "example_ka": "მაკიაჟისტმა წარმოუდგენელი მუშაობა შეასრულა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "lighting",
+    "georgian": "განათება",
+    "pronunciation": "/ˈlaɪtɪŋ/",
+    "example_en": "The lighting created a perfect mood.",
+    "example_ka": "განათებამ შესანიშნავი განწყობა შექმნა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "set",
+    "georgian": "მეცნიერი",
+    "pronunciation": "/set/",
+    "example_en": "The movie set was enormous.",
+    "example_ka": "ფილმის მეცნიერი უზარმაზარი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "studio",
+    "georgian": "სტუდია",
+    "pronunciation": "/ˈstuːdioʊ/",
+    "example_en": "The film was made in a famous studio.",
+    "example_ka": "ფილმი ცნობილ სტუდიაში იქნა გადაღებული.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "location",
+    "georgian": "ადგილმდებარეობა",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "They filmed on location in Paris.",
+    "example_ka": "ისინი პარიზში ადგილზე იღებდნენ.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "The movie had a huge budget.",
+    "example_ka": "ფილმს უზარმაზარი ბიუჯეტი ქონდა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "box-office",
+    "georgian": "კასოსი",
+    "pronunciation": "/ˈbɑːks ɔːfɪs/",
+    "example_en": "The movie was a box office hit.",
+    "example_ka": "ფილმი კასოსის ჰიტი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "opening",
+    "georgian": "გახსნა",
+    "pronunciation": "/ˈoʊpənɪŋ/",
+    "example_en": "The opening scene was spectacular.",
+    "example_ka": "გამხსნელი სცენა სპექტაკლური იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "ending",
+    "georgian": "დასასრული",
+    "pronunciation": "/ˈendɪŋ/",
+    "example_en": "The ending was unexpected.",
+    "example_ka": "დასასრული მოულოდნელი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "credits",
+    "georgian": "ტიტრები",
+    "pronunciation": "/ˈkredɪts/",
+    "example_en": "Stay for the credits scene.",
+    "example_ka": "ტიტრების სცენისთვის დარჩით.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "intermission",
+    "georgian": "შესვენება",
+    "pronunciation": "/ˌɪntərˈmɪʃən/",
+    "example_en": "There was a short intermission.",
+    "example_ka": "მოკლე შესვენება იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "matinee",
+    "georgian": "დღისის სეანსი",
+    "pronunciation": "/ˌmætɪˈneɪ/",
+    "example_en": "We watched the matinee show.",
+    "example_ka": "დღისის სეანსი ვნახეთ.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "projection",
+    "georgian": "პროექცია",
+    "pronunciation": "/prəˈdʒekʃən/",
+    "example_en": "The projection quality was excellent.",
+    "example_ka": "პროექციის ხარისხი შესანიშნავი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "theater",
+    "georgian": "კინოთეატრი",
+    "pronunciation": "/ˈθiːətər/",
+    "example_en": "The theater was packed.",
+    "example_ka": "კინოთეატრი სავსე იყო.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "auditorium",
+    "georgian": "ავდიტორიუმი",
+    "pronunciation": "/ˌɔːdɪˈtɔːriəm/",
+    "example_en": "The auditorium was beautifully designed.",
+    "example_ka": "ავდიტორიუმი ლამაზად იყო გაკეთებული.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "balcony",
+    "georgian": "ბალკონი",
+    "pronunciation": "/ˈbælkəni/",
+    "example_en": "We sat in the balcony section.",
+    "example_ka": "ბალკონის სექციაში ვისხედით.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "aisle",
+    "georgian": "ტრანკი",
+    "pronunciation": "/aɪl/",
+    "example_en": "Please keep the aisle clear.",
+    "example_ka": "ტრანკი გარკვეული იქონიეთ.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "usher",
+    "georgian": "გამყვანი",
+    "pronunciation": "/ˈʌʃər/",
+    "example_en": "The usher showed us to our seats.",
+    "example_ka": "გამყვანმა ადგილები გვიჩვენა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "concession",
+    "georgian": "ბუფეტი",
+    "pronunciation": "/kənˈseʃən/",
+    "example_en": "We bought snacks at the concession stand.",
+    "example_ka": "ბუფეტში საჭმელი ვიყიდეთ.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "candy",
+    "georgian": "ნამცხვარი",
+    "pronunciation": "/ˈkændi/",
+    "example_en": "I always buy candy at movies.",
+    "example_ka": "კინოში ყოველთვის ნამცხვარს ვყიდულობ.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "soda",
+    "georgian": "ლიმონათი",
+    "pronunciation": "/ˈsoʊdə/",
+    "example_en": "Can I have a large soda?",
+    "example_ka": "შეიძლება დიდი ლიმონათი?",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "nachos",
+    "georgian": "ნაჩოს",
+    "pronunciation": "/ˈnɑːtʃoʊz/",
+    "example_en": "The nachos were delicious.",
+    "example_ka": "ნაჩოს გემრიელი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "multiplex",
+    "georgian": "მულტიპლექსი",
+    "pronunciation": "/ˈmʌltɪpleks/",
+    "example_en": "The multiplex has 12 screens.",
+    "example_ka": "მულტიპლექსს 12 ეკრანი აქვს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "IMAX",
+    "georgian": "აიმაქსი",
+    "pronunciation": "/ˈaɪmæks/",
+    "example_en": "Let's watch it in IMAX.",
+    "example_ka": "აიმაქსში ვნახოთ.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "4D",
+    "georgian": "4D",
+    "pronunciation": "/ˌfɔːr ˈdiː/",
+    "example_en": "The 4D experience was incredible.",
+    "example_ka": "4D გამოცდილება წარმოუდგენელი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "surround-sound",
+    "georgian": "სუროუნდ ხმა",
+    "pronunciation": "/səˈraʊnd saʊnd/",
+    "example_en": "The surround sound was amazing.",
+    "example_ka": "სუროუნდ ხმა საოცარი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "projection",
+    "georgian": "პროექცია",
+    "pronunciation": "/prəˈdʒekʃən/",
+    "example_en": "Digital projection is now standard.",
+    "example_ka": "ციფრული პროექცია ახლა სტანდარტია.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "reel",
+    "georgian": "ლენტი",
+    "pronunciation": "/riːl/",
+    "example_en": "The film comes on several reels.",
+    "example_ka": "ფილმი რამდენიმე ლენტზე მოდის.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "celluloid",
+    "georgian": "ცელულოიდი",
+    "pronunciation": "/ˈselyəlɔɪd/",
+    "example_en": "Old movies were shot on celluloid.",
+    "example_ka": "ძველი ფილმები ცელულოიდზე იღებოდა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "digital",
+    "georgian": "ციფრული",
+    "pronunciation": "/ˈdɪdʒɪtəl/",
+    "example_en": "Most movies are now shot digitally.",
+    "example_ka": "ფილმების უმეტესობა ახლა ციფრულად იღება.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "format",
+    "georgian": "ფორმატი",
+    "pronunciation": "/ˈfɔːrmæt/",
+    "example_en": "What format is this movie in?",
+    "example_ka": "რა ფორმატშია ეს ფილმი?",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "resolution",
+    "georgian": "გარჩევადობა",
+    "pronunciation": "/ˌrezəˈluːʃən/",
+    "example_en": "The 4K resolution was crystal clear.",
+    "example_ka": "4K გარჩევადობა კრისტალურად მკაფიო იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "aspect-ratio",
+    "georgian": "პროპორცია",
+    "pronunciation": "/ˈæspekt ˈreɪʃioʊ/",
+    "example_en": "The aspect ratio was perfect for the story.",
+    "example_ka": "პროპორცია იდეალური იყო ისტორიისთვის.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "wide-screen",
+    "georgian": "ფართო ეკრანი",
+    "pronunciation": "/ˈwaɪd skriːn/",
+    "example_en": "The wide-screen format was impressive.",
+    "example_ka": "ფართო ეკრანის ფორმატი შთამბეჭდავი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "frame",
+    "georgian": "კადრი",
+    "pronunciation": "/freɪm/",
+    "example_en": "Each frame was beautifully composed.",
+    "example_ka": "ყოველი კადრი ლამაზად იყო შედგენილი.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "shot",
+    "georgian": "გადაღება",
+    "pronunciation": "/ʃɑːt/",
+    "example_en": "That shot was perfectly timed.",
+    "example_ka": "ეს გადაღება იდეალურად იყო დადგმული.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "take",
+    "georgian": "ტეიკი",
+    "pronunciation": "/teɪk/",
+    "example_en": "They did that scene in one take.",
+    "example_ka": "ეს სცენა ერთ ტეიკში გადაიღეს.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "rehearsal",
+    "georgian": "რეპეტიცია",
+    "pronunciation": "/rɪˈhɜːrsəl/",
+    "example_en": "The actors needed more rehearsal time.",
+    "example_ka": "მსახიობებს მეტი რეპეტიციის დრო სჭირდებოდათ.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "performance",
+    "georgian": "წარმოდგენა",
+    "pronunciation": "/pərˈfɔːrməns/",
+    "example_en": "Her performance was outstanding.",
+    "example_ka": "მისი წარმოდგენა შესანიშნავი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "audition",
+    "georgian": "ოდიშენი",
+    "pronunciation": "/ɔːˈdɪʃən/",
+    "example_en": "She got the role after her audition.",
+    "example_ka": "მან ოდიშენის შემდეგ როლი მიიღო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "casting",
+    "georgian": "კასტინგი",
+    "pronunciation": "/ˈkæstɪŋ/",
+    "example_en": "The casting director chose well.",
+    "example_ka": "კასტინგის დირექტორმა კარგად აირჩია.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "method-acting",
+    "georgian": "მეთოდური მსახიობობა",
+    "pronunciation": "/ˈmeθəd ˈæktɪŋ/",
+    "example_en": "He's known for his method acting.",
+    "example_ka": "ის მეთოდური მსახიობობით არის ცნობილი.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "improvisation",
+    "georgian": "იმპროვიზაცია",
+    "pronunciation": "/ɪmˌprɑːvəˈzeɪʃən/",
+    "example_en": "The best scenes came from improvisation.",
+    "example_ka": "საუკეთესო სცენები იმპროვიზაციიდან გამოვიდა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "character",
+    "georgian": "პერსონაჟი",
+    "pronunciation": "/ˈkærəktər/",
+    "example_en": "The main character was very likable.",
+    "example_ka": "მთავარი პერსონაჟი ძალიან სასიამოვნო იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "development",
+    "georgian": "განვითარება",
+    "pronunciation": "/dɪˈveləpmənt/",
+    "example_en": "The character development was excellent.",
+    "example_ka": "პერსონაჟის განვითარება შესანიშნავი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "backstory",
+    "georgian": "წინისტორია",
+    "pronunciation": "/ˈbækstɔːri/",
+    "example_en": "The villain's backstory was tragic.",
+    "example_ka": "ანტაგონისტის წინისტორია ტრაგიკული იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "motif",
+    "georgian": "მოტივი",
+    "pronunciation": "/moʊˈtiːf/",
+    "example_en": "The musical motif appeared throughout.",
+    "example_ka": "მუსიკალური მოტივი მთელ ფილმში გამეორდება.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "symbolism",
+    "georgian": "სიმბოლიზმი",
+    "pronunciation": "/ˈsɪmbəˌlɪzəm/",
+    "example_en": "The film was full of symbolism.",
+    "example_ka": "ფილმი სიმბოლიზმით სავსე იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "metaphor",
+    "georgian": "მეტაფორა",
+    "pronunciation": "/ˈmetəfɔːr/",
+    "example_en": "The storm was a metaphor for conflict.",
+    "example_ka": "ქარბუქი კონფლიქტის მეტაფორა იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "theme",
+    "georgian": "თემა",
+    "pronunciation": "/θiːm/",
+    "example_en": "The main theme was redemption.",
+    "example_ka": "მთავარი თემა გამოსყიდვა იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "message",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈmesɪdʒ/",
+    "example_en": "The film's message was powerful.",
+    "example_ka": "ფილმის შეტყობინება ძლიერი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "moral",
+    "georgian": "მორალი",
+    "pronunciation": "/ˈmɔːrəl/",
+    "example_en": "What's the moral of this story?",
+    "example_ka": "რა არის ამ ისტორიის მორალი?",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "allegory",
+    "georgian": "ალეგორია",
+    "pronunciation": "/ˈæləɡɔːri/",
+    "example_en": "The movie was an allegory for war.",
+    "example_ka": "ფილმი ომის ალეგორია იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "satire",
+    "georgian": "სატირა",
+    "pronunciation": "/ˈsætaɪər/",
+    "example_en": "The film was a brilliant satire.",
+    "example_ka": "ფილმი ბრწყინვალე სატირა იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "parody",
+    "georgian": "პაროდია",
+    "pronunciation": "/ˈpærədi/",
+    "example_en": "It was a parody of classic films.",
+    "example_ka": "ეს კლასიკური ფილმების პაროდია იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "homage",
+    "georgian": "კურთხევა",
+    "pronunciation": "/ˈhɑːmɪdʒ/",
+    "example_en": "The scene was an homage to Hitchcock.",
+    "example_ka": "სცენა ჰიჩკოკის კურთხევა იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "reference",
+    "georgian": "მინიშნება",
+    "pronunciation": "/ˈrefərəns/",
+    "example_en": "I caught that movie reference.",
+    "example_ka": "ამ ფილმის მინიშნება გავიგე.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "cameo",
+    "georgian": "კამეო",
+    "pronunciation": "/ˈkæmioʊ/",
+    "example_en": "The director made a cameo appearance.",
+    "example_ka": "რეჟისორმა კამეო გამოჩენა მოახდინა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "extra",
+    "georgian": "ღია",
+    "pronunciation": "/ˈekstrə/",
+    "example_en": "She worked as an extra in the film.",
+    "example_ka": "მან ფილმში ღია როლი ითამაშა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "stand-in",
+    "georgian": "დუბლიორი",
+    "pronunciation": "/ˈstænd ɪn/",
+    "example_en": "The stand-in looked just like the star.",
+    "example_ka": "დუბლიორი ზუსტად ვარსკვლავის მსგავსი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "double",
+    "georgian": "ორმაგი",
+    "pronunciation": "/ˈdʌbəl/",
+    "example_en": "He used a stunt double for that scene.",
+    "example_ka": "მან ამ სცენისთვის ტრიუკის ორმაგი გამოიყენა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "body-double",
+    "georgian": "სხეულის ორმაგი",
+    "pronunciation": "/ˈbɑːdi ˈdʌbəl/",
+    "example_en": "She used a body double for the nude scenes.",
+    "example_ka": "მან შიშველი სცენებისთვის სხეულის ორმაგი გამოიყენა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "understudy",
+    "georgian": "მდებარე მსახიობი",
+    "pronunciation": "/ˈʌndərˌstʌdi/",
+    "example_en": "The understudy was ready to perform.",
+    "example_ka": "მდებარე მსახიობი შესრულებისთვის მზად იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "western",
+    "georgian": "ვესტერნი",
+    "pronunciation": "/ˈwestərn/",
+    "example_en": "He loves watching western movies.",
+    "example_ka": "მას ვესტერნების ყურება უყვარს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "musical",
+    "georgian": "მიუზიკლი",
+    "pronunciation": "/ˈmjuːzɪkəl/",
+    "example_en": "The musical was full of amazing songs.",
+    "example_ka": "მიუზიკლი საოცარი სიმღერებით იყო სავსე.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "romance",
+    "georgian": "რომანტიკა",
+    "pronunciation": "/roʊˈmæns/",
+    "example_en": "The romance between them was believable.",
+    "example_ka": "მათ შორის რომანტიკა დამაჯერებელი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "action",
+    "georgian": "ექშენი",
+    "pronunciation": "/ˈækʃən/",
+    "example_en": "Action movies are popular worldwide.",
+    "example_ka": "ექშენ ფილმები მთელ მსოფლიოში პოპულარულია.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "adventure",
+    "georgian": "თავგადასავალი",
+    "pronunciation": "/ədˈventʃər/",
+    "example_en": "The adventure film took place in the jungle.",
+    "example_ka": "თავგადასავლის ფილმი ჯუნგლებში ვითარდებოდა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "mystery",
+    "georgian": "მისტერია",
+    "pronunciation": "/ˈmɪstəri/",
+    "example_en": "The mystery was solved in the final scene.",
+    "example_ka": "მისტერია ბოლო სცენაში გაიხსნა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "fantasy",
+    "georgian": "ფანტასტიკა",
+    "pronunciation": "/ˈfæntəsi/",
+    "example_en": "Fantasy films transport you to other worlds.",
+    "example_ka": "ფანტასტიკური ფილმები სხვა სამყაროებში გგზავნის.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "sci-fi",
+    "georgian": "მეცნიერული ფანტასტიკა",
+    "pronunciation": "/ˈsaɪ faɪ/",
+    "example_en": "Sci-fi movies often predict the future.",
+    "example_ka": "მეცნიერული ფანტასტიკის ფილმები ხშირად მომავალს წინასწარმეტყველებს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "biography",
+    "georgian": "ბიოგრაფია",
+    "pronunciation": "/baɪˈɑːɡrəfi/",
+    "example_en": "The biography film won several awards.",
+    "example_ka": "ბიოგრაფიულმა ფილმმა რამდენიმე ჯილდო მოიგო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "historical",
+    "georgian": "ისტორიული",
+    "pronunciation": "/hɪˈstɔːrɪkəl/",
+    "example_en": "Historical films teach us about the past.",
+    "example_ka": "ისტორიული ფილმები წარსულზე გვასწავლის.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "war",
+    "georgian": "საომარი",
+    "pronunciation": "/wɔːr/",
+    "example_en": "War movies show the brutality of conflict.",
+    "example_ka": "საომარი ფილმები კონფლიქტის სისასტიკეს გვიჩვენებს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "crime",
+    "georgian": "კრიმინალური",
+    "pronunciation": "/kraɪm/",
+    "example_en": "Crime thrillers keep you guessing.",
+    "example_ka": "კრიმინალური თრილერები ვარაუდებაში გტოვებს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "superhero",
+    "georgian": "სუპერგმირი",
+    "pronunciation": "/ˈsuːpərˌhɪroʊ/",
+    "example_en": "Superhero movies are very popular now.",
+    "example_ka": "სუპერგმირების ფილმები ახლა ძალიან პოპულარულია.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "independent",
+    "georgian": "დამოუკიდებელი",
+    "pronunciation": "/ˌɪndɪˈpendənt/",
+    "example_en": "Independent films often have unique stories.",
+    "example_ka": "დამოუკიდებელ ფილმებს ხშირად უნიკალური ისტორიები აქვს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "indie",
+    "georgian": "ინდი",
+    "pronunciation": "/ˈɪndi/",
+    "example_en": "Indie films are made on small budgets.",
+    "example_ka": "ინდი ფილმები პატარა ბიუჯეტით იღება.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "mainstream",
+    "georgian": "მთავარი ნაკადი",
+    "pronunciation": "/ˈmeɪnstriːm/",
+    "example_en": "Mainstream movies attract large audiences.",
+    "example_ka": "მთავარი ნაკადის ფილმები დიდ აუდიტორიას იზიდავს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "arthaus",
+    "georgian": "არტჰაუსი",
+    "pronunciation": "/ˈɑːrthaʊs/",
+    "example_en": "Arthaus films are often experimental.",
+    "example_ka": "არტჰაუსის ფილმები ხშირად ექსპერიმენტულია.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "experimental",
+    "georgian": "ექსპერიმენტული",
+    "pronunciation": "/ɪkˌsperɪˈmentəl/",
+    "example_en": "Experimental cinema challenges conventional storytelling.",
+    "example_ka": "ექსპერიმენტული კინო ამოწმებს ტრადიციულ ნაჩრობას.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "avant-garde",
+    "georgian": "ავანგარდული",
+    "pronunciation": "/ˌævɒ̃ˈɡɑːrd/",
+    "example_en": "Avant-garde films push artistic boundaries.",
+    "example_ka": "ავანგარდული ფილმები მხატვრული საზღვრების გადათრთოლებაა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "classic",
+    "georgian": "კლასიკური",
+    "pronunciation": "/ˈklæsɪk/",
+    "example_en": "Classic films never go out of style.",
+    "example_ka": "კლასიკური ფილმები არასდროს გადის მოდიდან.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "vintage",
+    "georgian": "ძველი",
+    "pronunciation": "/ˈvɪntɪdʒ/",
+    "example_en": "Vintage movies have a special charm.",
+    "example_ka": "ძველ ფილმებს განსაკუთრებული ლტოლვა აქვს.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "contemporary",
+    "georgian": "თანამედროვე",
+    "pronunciation": "/kənˈtemprəri/",
+    "example_en": "Contemporary cinema reflects modern society.",
+    "example_ka": "თანამედროვე კინო თანამედროვე საზოგადოებას ასახავს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "modern",
+    "georgian": "თანამედროვე",
+    "pronunciation": "/ˈmɑːdərn/",
+    "example_en": "Modern filmmaking uses advanced technology.",
+    "example_ka": "თანამედროვე კინოაღება მოწინავე ტექნოლოგიებს იყენებს.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "cult",
+    "georgian": "კულტური",
+    "pronunciation": "/kʌlt/",
+    "example_en": "Cult films have devoted followers.",
+    "example_ka": "კულტურულ ფილმებს ერთგული მიმდევრები ყავს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "underground",
+    "georgian": "ანდერგრაუნდული",
+    "pronunciation": "/ˈʌndərɡraʊnd/",
+    "example_en": "Underground cinema often deals with controversial topics.",
+    "example_ka": "ანდერგრაუნდული კინო ხშირად კონტროვერსიულ თემებს ეხება.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "crossover",
+    "georgian": "კროსოვერი",
+    "pronunciation": "/ˈkrɔːsoʊvər/",
+    "example_en": "The crossover film combined different genres.",
+    "example_ka": "კროსოვერ ფილმმა სხვადასხვა ჟანრი გააერთიანა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "reboot",
+    "georgian": "რიბუტი",
+    "pronunciation": "/ˈriːbuːt/",
+    "example_en": "The reboot gave new life to the old franchise.",
+    "example_ka": "რიბუტმა ძველ ფრანჩაიზს ახალი სიცოცხლე შერუგო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "adaptation",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˌædæpˈteɪʃən/",
+    "example_en": "The book adaptation was faithful to the original.",
+    "example_ka": "წიგნის ადაპტაცია ორიგინალის მორე იყო ერთგული.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "premiere",
+    "georgian": "პრემიერა",
+    "pronunciation": "/prɪˈmɪr/",
+    "example_en": "The movie premiere was glamorous.",
+    "example_ka": "ფილმის პრემიერა ბრწყინვალე იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "screening",
+    "georgian": "ჩვენება",
+    "pronunciation": "/ˈskriːnɪŋ/",
+    "example_en": "The screening starts at 8 PM.",
+    "example_ka": "ჩვენება 8 საათზე იწყება.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "theater",
+    "georgian": "კინოთეატრი",
+    "pronunciation": "/ˈθiːətər/",
+    "example_en": "We went to the theater downtown.",
+    "example_ka": "ცენტრში კინოთეატრში წავედით.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "ticket",
+    "georgian": "ბილეთი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "Buy your ticket online.",
+    "example_ka": "ბილეთი ონლაინ იყიდე.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "popcorn",
+    "georgian": "პოპკორნი",
+    "pronunciation": "/ˈpɑːpkɔːrn/",
+    "example_en": "I love eating popcorn at movies.",
+    "example_ka": "კინოზე პოპკორნის ჭამა მიყვარს.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "seat",
+    "georgian": "ადგილი",
+    "pronunciation": "/siːt/",
+    "example_en": "This seat has a great view.",
+    "example_ka": "ამ ადგილიდან კარგად ჩანს.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "intermission",
+    "georgian": "შესვენება",
+    "pronunciation": "/ˌɪntərˈmɪʃən/",
+    "example_en": "There's a 15-minute intermission.",
+    "example_ka": "15 წუთიანი შესვენებაა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "projection",
+    "georgian": "პროექცია",
+    "pronunciation": "/prəˈdʒɛkʃən/",
+    "example_en": "The projection quality was excellent.",
+    "example_ka": "პროექციის ხარისხი შესანიშნავი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "screen",
+    "georgian": "ეკრანი",
+    "pronunciation": "/skriːn/",
+    "example_en": "The screen was huge.",
+    "example_ka": "ეკრანი უზარმაზარი იყო.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "sound",
+    "georgian": "ხმა",
+    "pronunciation": "/saʊnd/",
+    "example_en": "The sound effects were amazing.",
+    "example_ka": "ხმოვანი ეფექტები საოცარი იყო.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "volume",
+    "georgian": "ხმის სიძლიერე",
+    "pronunciation": "/ˈvɑːljuːm/",
+    "example_en": "Please turn down the volume.",
+    "example_ka": "გთხოვთ, ხმის სიძლიერე დააწიეთ.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "surround",
+    "georgian": "გარშემო",
+    "pronunciation": "/səˈraʊnd/",
+    "example_en": "Surround sound enhances the experience.",
+    "example_ka": "გარშემო ხმა გამოცდილებას აუმჯობესებს.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "stereo",
+    "georgian": "სტერეო",
+    "pronunciation": "/ˈstɛrioʊ/",
+    "example_en": "The movie was in stereo sound.",
+    "example_ka": "ფილმი სტერეო ხმით იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "digital",
+    "georgian": "ციფრული",
+    "pronunciation": "/ˈdɪdʒɪtəl/",
+    "example_en": "Digital cinema offers better quality.",
+    "example_ka": "ციფრული კინო უკეთეს ხარისხს გთავაზობს.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "projector",
+    "georgian": "პროექტორი",
+    "pronunciation": "/prəˈdʒɛktər/",
+    "example_en": "The projector broke down.",
+    "example_ka": "პროექტორი გაფუჭდა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "lens",
+    "georgian": "ლინზა",
+    "pronunciation": "/lɛnz/",
+    "example_en": "The camera lens was expensive.",
+    "example_ka": "კამერის ლინზა ძვირი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "focus",
+    "georgian": "ფოკუსი",
+    "pronunciation": "/ˈfoʊkəs/",
+    "example_en": "The image was out of focus.",
+    "example_ka": "სურათი ფოკუსს გარეშე იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "frame",
+    "georgian": "კადრი",
+    "pronunciation": "/freɪm/",
+    "example_en": "Each frame tells a story.",
+    "example_ka": "ყველა კადრი ამბავს ყვება.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "shot",
+    "georgian": "გადაღება",
+    "pronunciation": "/ʃɑːt/",
+    "example_en": "That was a beautiful shot.",
+    "example_ka": "ეს ლამაზი გადაღება იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "angle",
+    "georgian": "კუთხე",
+    "pronunciation": "/ˈæŋɡəl/",
+    "example_en": "The camera angle was perfect.",
+    "example_ka": "კამერის კუთხე სრულყოფილი იყო.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "close-up",
+    "georgian": "ახლო პლანი",
+    "pronunciation": "/ˈkloʊsʌp/",
+    "example_en": "The close-up revealed her emotions.",
+    "example_ka": "ახლო პლანმა მისი ემოციები გამოავლინა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "wide",
+    "georgian": "ფართო",
+    "pronunciation": "/waɪd/",
+    "example_en": "The wide shot showed the landscape.",
+    "example_ka": "ფართო პლანმა პეიზაჟი აჩვენა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "zoom",
+    "georgian": "ზუმი",
+    "pronunciation": "/zuːm/",
+    "example_en": "Zoom in on that detail.",
+    "example_ka": "იმ დეტალზე ზუმი გაიკეთე.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "pan",
+    "georgian": "პანორამა",
+    "pronunciation": "/pæn/",
+    "example_en": "The camera will pan across the city.",
+    "example_ka": "კამერა ქალაქზე პანორამას გააკეთებს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "tilt",
+    "georgian": "დახრა",
+    "pronunciation": "/tɪlt/",
+    "example_en": "Tilt the camera slightly upward.",
+    "example_ka": "კამერა ოდნავ ზემოთ დახარეთ.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "dolly",
+    "georgian": "დოლი",
+    "pronunciation": "/ˈdɑːli/",
+    "example_en": "The dolly shot was smooth.",
+    "example_ka": "დოლი გადაღება გლუვი იყო.",
+    "category": "movies-cinema",
+    "level": "C1"
+  },
+  {
+    "english": "crane",
+    "georgian": "კრანი",
+    "pronunciation": "/kreɪn/",
+    "example_en": "They used a crane for the aerial shot.",
+    "example_ka": "საჰაერო გადასაღებად კრანი გამოიყენეს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "steadicam",
+    "georgian": "სტედიკამი",
+    "pronunciation": "/ˈstɛdɪkæm/",
+    "example_en": "The steadicam provided smooth movement.",
+    "example_ka": "სტედიკამმა გლუვი მოძრაობა უზრუნველყო.",
+    "category": "movies-cinema",
+    "level": "C1"
+  },
+  {
+    "english": "tripod",
+    "georgian": "ტრიპოდი",
+    "pronunciation": "/ˈtraɪpɑːd/",
+    "example_en": "Set the camera on the tripod.",
+    "example_ka": "კამერა ტრიპოდზე დააყენე.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "microphone",
+    "georgian": "მიკროფონი",
+    "pronunciation": "/ˈmaɪkrəfoʊn/",
+    "example_en": "The microphone picked up clear audio.",
+    "example_ka": "მიკროფონმა მკაფიო აუდიო ჩაწერა.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "boom",
+    "georgian": "ბუმი",
+    "pronunciation": "/buːm/",
+    "example_en": "The boom operator held the microphone.",
+    "example_ka": "ბუმის ოპერატორმა მიკროფონი დაიჭირა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "clapper",
+    "georgian": "კლაპერი",
+    "pronunciation": "/ˈklæpər/",
+    "example_en": "The clapper board marked each take.",
+    "example_ka": "კლაპერმა ყველა გადაღება მონიშნა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "slate",
+    "georgian": "ფირფიტა",
+    "pronunciation": "/sleɪt/",
+    "example_en": "Write the scene number on the slate.",
+    "example_ka": "ფირფიტაზე სცენის ნომერი დაწერე.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "marker",
+    "georgian": "მარკერი",
+    "pronunciation": "/ˈmɑːrkər/",
+    "example_en": "The marker helps with editing.",
+    "example_ka": "მარკერი მონტაჟს ეხმარება.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "cue",
+    "georgian": "სიგნალი",
+    "pronunciation": "/kjuː/",
+    "example_en": "Wait for your cue to start acting.",
+    "example_ka": "თამაშის დასაწყებად სიგნალს დაელოდე.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "action",
+    "georgian": "მოქმედება",
+    "pronunciation": "/ˈækʃən/",
+    "example_en": "The director shouted 'Action!'",
+    "example_ka": "რეჟისორმა 'მოქმედება!' დაიყვირა.",
+    "category": "movies-cinema",
+    "level": "A1"
+  },
+  {
+    "english": "cut",
+    "georgian": "გაჩერება",
+    "pronunciation": "/kʌt/",
+    "example_en": "Cut! That was perfect.",
+    "example_ka": "გაჩერება! ეს სრულყოფილი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "take",
+    "georgian": "დუბლი",
+    "pronunciation": "/teɪk/",
+    "example_en": "Let's do one more take.",
+    "example_ka": "კიდევ ერთი დუბლი გავაკეთოთ.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "rehearsal",
+    "georgian": "რეპეტიცია",
+    "pronunciation": "/rɪˈhɜːrsəl/",
+    "example_en": "The rehearsal went smoothly.",
+    "example_ka": "რეპეტიცია გლუვად წავიდა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "blocking",
+    "georgian": "ბლოკინგი",
+    "pronunciation": "/ˈblɑːkɪŋ/",
+    "example_en": "The blocking needs to be precise.",
+    "example_ka": "ბლოკინგი ზუსტი უნდა იყოს.",
+    "category": "movies-cinema",
+    "level": "C1"
+  },
+  {
+    "english": "choreography",
+    "georgian": "ქორეოგრაფია",
+    "pronunciation": "/ˌkɔːriˈɑːɡrəfi/",
+    "example_en": "The fight choreography was impressive.",
+    "example_ka": "ბრძოლის ქორეოგრაფია შთამბეჭდავი იყო.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "wardrobe",
+    "georgian": "გარდერობი",
+    "pronunciation": "/ˈwɔːrdroʊb/",
+    "example_en": "The wardrobe department designed costumes.",
+    "example_ka": "გარდერობის განყოფილებამ კოსტუმები შეიმუშავა.",
+    "category": "movies-cinema",
+    "level": "B1"
+  },
+  {
+    "english": "makeup",
+    "georgian": "მეიქაპი",
+    "pronunciation": "/ˈmeɪkʌp/",
+    "example_en": "The makeup artist was talented.",
+    "example_ka": "მეიქაპის ოსტატი ნიჭიერი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "prosthetics",
+    "georgian": "პროტეზები",
+    "pronunciation": "/prɑːsˈθɛtɪks/",
+    "example_en": "The prosthetics looked very realistic.",
+    "example_ka": "პროტეზები ძალიან რეალისტური გამოიყურებოდა.",
+    "category": "movies-cinema",
+    "level": "C1"
+  },
+  {
+    "english": "props",
+    "georgian": "რეკვიზიტები",
+    "pronunciation": "/prɑːps/",
+    "example_en": "The props department handled all objects.",
+    "example_ka": "რეკვიზიტების განყოფილება ყველა ობიექტს უვლიდა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "backdrop",
+    "georgian": "ფონი",
+    "pronunciation": "/ˈbækdrɑːp/",
+    "example_en": "The backdrop created the perfect setting.",
+    "example_ka": "ფონმა სრულყოფილი გარემო შექმნა.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "greenscreen",
+    "georgian": "მწვანე ეკრანი",
+    "pronunciation": "/ˈɡriːnskriːn/",
+    "example_en": "They filmed against a greenscreen.",
+    "example_ka": "მწვანე ეკრანზე გადაიღეს.",
+    "category": "movies-cinema",
+    "level": "B2"
+  },
+  {
+    "english": "studio",
+    "georgian": "სტუდია",
+    "pronunciation": "/ˈstuːdioʊ/",
+    "example_en": "The studio was fully equipped.",
+    "example_ka": "სტუდია სრულად აღჭურვილი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  },
+  {
+    "english": "soundstage",
+    "georgian": "ხმის სცენა",
+    "pronunciation": "/ˈsaʊndsteɪdʒ/",
+    "example_en": "They built sets on the soundstage.",
+    "example_ka": "ხმის სცენაზე დეკორაციები ააგეს.",
+    "category": "movies-cinema",
+    "level": "C1"
+  },
+  {
+    "english": "backlot",
+    "georgian": "უკანა ნაწილი",
+    "pronunciation": "/ˈbæklɑːt/",
+    "example_en": "The backlot had various outdoor sets.",
+    "example_ka": "უკანა ნაწილში სხვადასხვა გარე დეკორაციები იყო.",
+    "category": "movies-cinema",
+    "level": "C1"
+  },
+  {
+    "english": "location",
+    "georgian": "ადგილი",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "The location was perfect for filming.",
+    "example_ka": "ადგილი გადასაღებად შესანიშნავი იყო.",
+    "category": "movies-cinema",
+    "level": "A2"
+  }
 ]

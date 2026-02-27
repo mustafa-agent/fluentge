@@ -1,32 +1,1802 @@
 [
-  {"english":"game","georgian":"თამაში","pronunciation":"/ɡeɪm/","example_en":"What game are you playing?","example_ka":"რა თამაშს თამაშობ?","category":"gaming-esports","level":"beginner"},
-  {"english":"controller","georgian":"კონტროლერი","pronunciation":"/kənˈtroʊlər/","example_en":"Pass me the controller.","example_ka":"კონტროლერი მომაწოდე.","category":"gaming-esports","level":"beginner"},
-  {"english":"headset","georgian":"ყურსასმენი","pronunciation":"/ˈhedset/","example_en":"Put on your headset so we can talk.","example_ka":"ყურსასმენი დაიდე რომ ვილაპარაკოთ.","category":"gaming-esports","level":"beginner"},
-  {"english":"lag","georgian":"ლაგი","pronunciation":"/læɡ/","example_en":"I died because of lag.","example_ka":"ლაგის გამო მოვკვდი.","category":"gaming-esports","level":"beginner"},
-  {"english":"noob","georgian":"ნუბი","pronunciation":"/nuːb/","example_en":"Don't be a noob, learn the controls.","example_ka":"ნუბი არ იყო, კონტროლი ისწავლე.","category":"gaming-esports","level":"beginner"},
-  {"english":"GG","georgian":"კარგი თამაში","pronunciation":"/dʒiː dʒiː/","example_en":"GG, that was a close match.","example_ka":"კარგი თამაში, მჭიდრო მატჩი იყო.","category":"gaming-esports","level":"beginner"},
-  {"english":"respawn","georgian":"გაცოცხლება","pronunciation":"/riːˈspɔːn/","example_en":"Wait for me to respawn.","example_ka":"დამელოდე სანამ გავცოცხლდები.","category":"gaming-esports","level":"beginner"},
-  {"english":"loot","georgian":"ნადავლი","pronunciation":"/luːt/","example_en":"Check the loot in that building.","example_ka":"იმ შენობაში ნადავლი შეამოწმე.","category":"gaming-esports","level":"beginner"},
-  {"english":"stream","georgian":"სტრიმი","pronunciation":"/striːm/","example_en":"I'm going to stream tonight.","example_ka":"დღეს საღამოს ვისტრიმებ.","category":"gaming-esports","level":"beginner"},
-  {"english":"clutch","georgian":"კლაჩი","pronunciation":"/klʌtʃ/","example_en":"That was an insane clutch play!","example_ka":"ეს გიჟური კლაჩი იყო!","category":"gaming-esports","level":"beginner"},
-  {"english":"to carry","georgian":"გატანა","pronunciation":"/tə ˈkæri/","example_en":"He carried the whole team.","example_ka":"მან მთელი გუნდი გაიტანა.","category":"gaming-esports","level":"beginner"},
-  {"english":"toxic","georgian":"ტოქსიკური","pronunciation":"/ˈtɒksɪk/","example_en":"That player is so toxic.","example_ka":"ეს მოთამაშე ძალიან ტოქსიკურია.","category":"gaming-esports","level":"beginner"},
-  {"english":"nerf","georgian":"შესუსტება","pronunciation":"/nɜːrf/","example_en":"They nerfed my favorite weapon.","example_ka":"ჩემი საყვარელი იარაღი შეასუსტეს.","category":"gaming-esports","level":"intermediate"},
-  {"english":"buff","georgian":"გაძლიერება","pronunciation":"/bʌf/","example_en":"This character got a huge buff.","example_ka":"ამ პერსონაჟს დიდი გაძლიერება მისცეს.","category":"gaming-esports","level":"intermediate"},
-  {"english":"rank","georgian":"რანგი","pronunciation":"/ræŋk/","example_en":"I reached Diamond rank!","example_ka":"ბრილიანტის რანგს მივაღწიე!","category":"gaming-esports","level":"beginner"},
-  {"english":"grind","georgian":"გრაინდი","pronunciation":"/ɡraɪnd/","example_en":"I need to grind more to level up.","example_ka":"დონის ასამაღლებლად მეტი გრაინდი მჭირდება.","category":"gaming-esports","level":"beginner"},
-  {"english":"boss fight","georgian":"ბოსთან ბრძოლა","pronunciation":"/bɒs faɪt/","example_en":"The final boss fight was epic.","example_ka":"ბოლო ბოსთან ბრძოლა ეპიკური იყო.","category":"gaming-esports","level":"beginner"},
-  {"english":"multiplayer","georgian":"მალტიპლეიერი","pronunciation":"/ˈmʌltiˌpleɪər/","example_en":"Let's play multiplayer together.","example_ka":"მოდი ერთად მალტიპლეიერი ვითამაშოთ.","category":"gaming-esports","level":"beginner"},
-  {"english":"update","georgian":"განახლება","pronunciation":"/ʌpˈdeɪt/","example_en":"The new update added cool features.","example_ka":"ახალმა განახლებამ მაგარი ფუნქციები დაამატა.","category":"gaming-esports","level":"beginner"},
-  {"english":"skin","georgian":"სკინი","pronunciation":"/skɪn/","example_en":"I bought a rare skin for my character.","example_ka":"ჩემს პერსონაჟს იშვიათი სკინი ვუყიდე.","category":"gaming-esports","level":"beginner"},
-  {"english":"AFK","georgian":"კომპიუტერთან არ ვარ","pronunciation":"/eɪ ef keɪ/","example_en":"I'll be AFK for five minutes.","example_ka":"ხუთ წუთს კომპიუტერთან არ ვიქნები.","category":"gaming-esports","level":"beginner"},
-  {"english":"camping","georgian":"კემპინგი","pronunciation":"/ˈkæmpɪŋ/","example_en":"Stop camping in the corner!","example_ka":"კუთხეში კემპინგი შეწყვიტე!","category":"gaming-esports","level":"beginner"},
-  {"english":"damage","georgian":"დამეიჯი","pronunciation":"/ˈdæmɪdʒ/","example_en":"This weapon does massive damage.","example_ka":"ეს იარაღი უზარმაზარ დამეიჯს აკეთებს.","category":"gaming-esports","level":"beginner"},
-  {"english":"healing","georgian":"მკურნალობა","pronunciation":"/ˈhiːlɪŋ/","example_en":"I need healing, I'm low HP.","example_ka":"მკურნალობა მჭირდება, დაბალი HP მაქვს.","category":"gaming-esports","level":"beginner"},
-  {"english":"teammate","georgian":"გუნდელი","pronunciation":"/ˈtiːmmeɪt/","example_en":"Cover your teammate!","example_ka":"გუნდელს გადაფარე!","category":"gaming-esports","level":"beginner"},
-  {"english":"squad","georgian":"სქვადი","pronunciation":"/skwɒd/","example_en":"Our squad won the tournament.","example_ka":"ჩვენმა სქვადმა ტურნირი მოიგო.","category":"gaming-esports","level":"beginner"},
-  {"english":"headshot","georgian":"ჰედშოტი","pronunciation":"/ˈhedʃɒt/","example_en":"One headshot and he was down.","example_ka":"ერთი ჰედშოტი და დავარდა.","category":"gaming-esports","level":"beginner"},
-  {"english":"to rage quit","georgian":"გაბრაზებით გასვლა","pronunciation":"/tə reɪdʒ kwɪt/","example_en":"He rage quit after losing three times.","example_ka":"სამჯერ წაგების შემდეგ გაბრაზებით გავიდა.","category":"gaming-esports","level":"beginner"},
-  {"english":"save file","georgian":"სეივი","pronunciation":"/seɪv faɪl/","example_en":"Don't forget to save your progress.","example_ka":"პროგრესის დასეივება არ დაგავიწყდეს.","category":"gaming-esports","level":"beginner"},
-  {"english":"cheat code","georgian":"ჩიტ კოდი","pronunciation":"/tʃiːt koʊd/","example_en":"Using cheat codes ruins the fun.","example_ka":"ჩიტ კოდების გამოყენება სიამოვნებას აფუჭებს.","category":"gaming-esports","level":"beginner"}
+  {
+    "english": "game",
+    "georgian": "თამაში",
+    "pronunciation": "/ɡeɪm/",
+    "example_en": "What game are you playing?",
+    "example_ka": "რა თამაშს თამაშობ?",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "controller",
+    "georgian": "კონტროლერი",
+    "pronunciation": "/kənˈtroʊlər/",
+    "example_en": "Pass me the controller.",
+    "example_ka": "კონტროლერი მომაწოდე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "headset",
+    "georgian": "ყურსასმენი",
+    "pronunciation": "/ˈhedset/",
+    "example_en": "Put on your headset so we can talk.",
+    "example_ka": "ყურსასმენი დაიდე რომ ვილაპარაკოთ.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "lag",
+    "georgian": "ლაგი",
+    "pronunciation": "/læɡ/",
+    "example_en": "I died because of lag.",
+    "example_ka": "ლაგის გამო მოვკვდი.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "noob",
+    "georgian": "ნუბი",
+    "pronunciation": "/nuːb/",
+    "example_en": "Don't be a noob, learn the controls.",
+    "example_ka": "ნუბი არ იყო, კონტროლი ისწავლე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "GG",
+    "georgian": "კარგი თამაში",
+    "pronunciation": "/dʒiː dʒiː/",
+    "example_en": "GG, that was a close match.",
+    "example_ka": "კარგი თამაში, მჭიდრო მატჩი იყო.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "respawn",
+    "georgian": "გაცოცხლება",
+    "pronunciation": "/riːˈspɔːn/",
+    "example_en": "Wait for me to respawn.",
+    "example_ka": "დამელოდე სანამ გავცოცხლდები.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "loot",
+    "georgian": "ნადავლი",
+    "pronunciation": "/luːt/",
+    "example_en": "Check the loot in that building.",
+    "example_ka": "იმ შენობაში ნადავლი შეამოწმე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "stream",
+    "georgian": "სტრიმი",
+    "pronunciation": "/striːm/",
+    "example_en": "I'm going to stream tonight.",
+    "example_ka": "დღეს საღამოს ვისტრიმებ.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "clutch",
+    "georgian": "კლაჩი",
+    "pronunciation": "/klʌtʃ/",
+    "example_en": "That was an insane clutch play!",
+    "example_ka": "ეს გიჟური კლაჩი იყო!",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "toxic",
+    "georgian": "ტოქსიკური",
+    "pronunciation": "/ˈtɒksɪk/",
+    "example_en": "That player is so toxic.",
+    "example_ka": "ეს მოთამაშე ძალიან ტოქსიკურია.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "nerf",
+    "georgian": "შესუსტება",
+    "pronunciation": "/nɜːrf/",
+    "example_en": "They nerfed my favorite weapon.",
+    "example_ka": "ჩემი საყვარელი იარაღი შეასუსტეს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "buff",
+    "georgian": "გაძლიერება",
+    "pronunciation": "/bʌf/",
+    "example_en": "This character got a huge buff.",
+    "example_ka": "ამ პერსონაჟს დიდი გაძლიერება მისცეს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "rank",
+    "georgian": "რანგი",
+    "pronunciation": "/ræŋk/",
+    "example_en": "I reached Diamond rank!",
+    "example_ka": "ბრილიანტის რანგს მივაღწიე!",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "grind",
+    "georgian": "გრაინდი",
+    "pronunciation": "/ɡraɪnd/",
+    "example_en": "I need to grind more to level up.",
+    "example_ka": "დონის ასამაღლებლად მეტი გრაინდი მჭირდება.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "multiplayer",
+    "georgian": "მალტიპლეიერი",
+    "pronunciation": "/ˈmʌltiˌpleɪər/",
+    "example_en": "Let's play multiplayer together.",
+    "example_ka": "მოდი ერთად მალტიპლეიერი ვითამაშოთ.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "The new update added cool features.",
+    "example_ka": "ახალმა განახლებამ მაგარი ფუნქციები დაამატა.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "skin",
+    "georgian": "სკინი",
+    "pronunciation": "/skɪn/",
+    "example_en": "I bought a rare skin for my character.",
+    "example_ka": "ჩემს პერსონაჟს იშვიათი სკინი ვუყიდე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "AFK",
+    "georgian": "კომპიუტერთან არ ვარ",
+    "pronunciation": "/eɪ ef keɪ/",
+    "example_en": "I'll be AFK for five minutes.",
+    "example_ka": "ხუთ წუთს კომპიუტერთან არ ვიქნები.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "camping",
+    "georgian": "კემპინგი",
+    "pronunciation": "/ˈkæmpɪŋ/",
+    "example_en": "Stop camping in the corner!",
+    "example_ka": "კუთხეში კემპინგი შეწყვიტე!",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "damage",
+    "georgian": "დამეიჯი",
+    "pronunciation": "/ˈdæmɪdʒ/",
+    "example_en": "This weapon does massive damage.",
+    "example_ka": "ეს იარაღი უზარმაზარ დამეიჯს აკეთებს.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "healing",
+    "georgian": "მკურნალობა",
+    "pronunciation": "/ˈhiːlɪŋ/",
+    "example_en": "I need healing, I'm low HP.",
+    "example_ka": "მკურნალობა მჭირდება, დაბალი HP მაქვს.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "teammate",
+    "georgian": "გუნდელი",
+    "pronunciation": "/ˈtiːmmeɪt/",
+    "example_en": "Cover your teammate!",
+    "example_ka": "გუნდელს გადაფარე!",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "squad",
+    "georgian": "სქვადი",
+    "pronunciation": "/skwɒd/",
+    "example_en": "Our squad won the tournament.",
+    "example_ka": "ჩვენმა სქვადმა ტურნირი მოიგო.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "headshot",
+    "georgian": "ჰედშოტი",
+    "pronunciation": "/ˈhedʃɒt/",
+    "example_en": "One headshot and he was down.",
+    "example_ka": "ერთი ჰედშოტი და დავარდა.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "play",
+    "georgian": "თამაში",
+    "pronunciation": "/pleɪ/",
+    "example_en": "Let's play together.",
+    "example_ka": "მოდი ერთად ვითამაშოთ.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "win",
+    "georgian": "მოგება",
+    "pronunciation": "/wɪn/",
+    "example_en": "We need to win this round.",
+    "example_ka": "ეს რაუნდი უნდა მოვიგოთ.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "lose",
+    "georgian": "წაგება",
+    "pronunciation": "/luːz/",
+    "example_en": "I don't want to lose again.",
+    "example_ka": "აღარ მინდა წაგება.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "team",
+    "georgian": "გუნდი",
+    "pronunciation": "/tiːm/",
+    "example_en": "Our team is the best.",
+    "example_ka": "ჩვენი გუნდი საუკეთესოა.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "level",
+    "georgian": "დონე",
+    "pronunciation": "/ˈlevəl/",
+    "example_en": "What level are you?",
+    "example_ka": "რა დონეზე ხარ?",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "player",
+    "georgian": "მოთამაშე",
+    "pronunciation": "/ˈpleɪər/",
+    "example_en": "How many players are online?",
+    "example_ka": "რამდენი მოთამაშეა ონლაინ?",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "score",
+    "georgian": "ქულა",
+    "pronunciation": "/skɔːr/",
+    "example_en": "Check the score on the screen.",
+    "example_ka": "ეკრანზე ქულა ნახე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "This map is huge.",
+    "example_ka": "ეს რუკა უზარმაზარია.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "kill",
+    "georgian": "მოკვლა",
+    "pronunciation": "/kɪl/",
+    "example_en": "I got three kills in a row.",
+    "example_ka": "ზედიზედ სამი მოკვლა გავაკეთე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "die",
+    "georgian": "მოკვდა",
+    "pronunciation": "/daɪ/",
+    "example_en": "I keep dying in this spot.",
+    "example_ka": "ამ ადგილას მუდმივად ვკვდები.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "run",
+    "georgian": "სირბილი",
+    "pronunciation": "/rʌn/",
+    "example_en": "Run to the safe zone!",
+    "example_ka": "უსაფრთხო ზონაში გაიქეცი!",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "shoot",
+    "georgian": "სროლა",
+    "pronunciation": "/ʃuːt/",
+    "example_en": "Shoot the enemy!",
+    "example_ka": "მტერს ესროლე!",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "jump",
+    "georgian": "ხტომა",
+    "pronunciation": "/dʒʌmp/",
+    "example_en": "You need to jump over the wall.",
+    "example_ka": "კედელზე უნდა გადახტე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "hide",
+    "georgian": "დამალვა",
+    "pronunciation": "/haɪd/",
+    "example_en": "Hide behind the building.",
+    "example_ka": "შენობის უკან დაიმალე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "attack",
+    "georgian": "შეტევა",
+    "pronunciation": "/əˈtæk/",
+    "example_en": "Attack from the left side.",
+    "example_ka": "მარცხენა მხრიდან შეუტიე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "defend",
+    "georgian": "დაცვა",
+    "pronunciation": "/dɪˈfend/",
+    "example_en": "Defend the base!",
+    "example_ka": "ბაზა დაიცავით!",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "match",
+    "georgian": "მატჩი",
+    "pronunciation": "/mætʃ/",
+    "example_en": "The match starts in two minutes.",
+    "example_ka": "მატჩი ორ წუთში იწყება.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "round",
+    "georgian": "რაუნდი",
+    "pronunciation": "/raʊnd/",
+    "example_en": "We won the first round.",
+    "example_ka": "პირველი რაუნდი მოვიგეთ.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "weapon",
+    "georgian": "იარაღი",
+    "pronunciation": "/ˈwepən/",
+    "example_en": "Pick up that weapon.",
+    "example_ka": "ის იარაღი აიღე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "shield",
+    "georgian": "ფარი",
+    "pronunciation": "/ʃiːld/",
+    "example_en": "My shield is broken.",
+    "example_ka": "ჩემი ფარი გატეხილია.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "armor",
+    "georgian": "ჯავშანი",
+    "pronunciation": "/ˈɑːrmər/",
+    "example_en": "I need better armor.",
+    "example_ka": "უკეთესი ჯავშანი მჭირდება.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "ammo",
+    "georgian": "ტყვია",
+    "pronunciation": "/ˈæmoʊ/",
+    "example_en": "I'm running out of ammo.",
+    "example_ka": "ტყვია მეწურება.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "reload",
+    "georgian": "გადატენვა",
+    "pronunciation": "/riːˈloʊd/",
+    "example_en": "I need to reload my gun.",
+    "example_ka": "იარაღის გადატენვა მჭირდება.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "spawn",
+    "georgian": "გაჩენა",
+    "pronunciation": "/spɔːn/",
+    "example_en": "Enemies are spawning nearby.",
+    "example_ka": "მტრები ახლოს ჩნდებიან.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "boss",
+    "georgian": "ბოსი",
+    "pronunciation": "/bɒs/",
+    "example_en": "The final boss is very hard.",
+    "example_ka": "ფინალური ბოსი ძალიან რთულია.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "quest",
+    "georgian": "კვესტი",
+    "pronunciation": "/kwest/",
+    "example_en": "I finished the main quest.",
+    "example_ka": "მთავარი კვესტი დავასრულე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "mission",
+    "georgian": "მისია",
+    "pronunciation": "/ˈmɪʃən/",
+    "example_en": "This mission is impossible.",
+    "example_ka": "ეს მისია შეუძლებელია.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "inventory",
+    "georgian": "ინვენტარი",
+    "pronunciation": "/ˈɪnvəntɔːri/",
+    "example_en": "Check your inventory for potions.",
+    "example_ka": "ინვენტარში წამლები შეამოწმე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "craft",
+    "georgian": "შექმნა",
+    "pronunciation": "/kræft/",
+    "example_en": "You can craft a sword here.",
+    "example_ka": "აქ ხმალი შეგიძლია შექმნა.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "build",
+    "georgian": "აშენება",
+    "pronunciation": "/bɪld/",
+    "example_en": "Build a wall quickly!",
+    "example_ka": "სწრაფად კედელი ააშენე!",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "mine",
+    "georgian": "მოპოვება",
+    "pronunciation": "/maɪn/",
+    "example_en": "Mine some diamonds first.",
+    "example_ka": "ჯერ ბრილიანტები მოიპოვე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "farm",
+    "georgian": "ფარმი",
+    "pronunciation": "/fɑːrm/",
+    "example_en": "I'm farming gold right now.",
+    "example_ka": "ახლა ოქროს ვფარმავ.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "patch",
+    "georgian": "პატჩი",
+    "pronunciation": "/pætʃ/",
+    "example_en": "The new patch fixed many bugs.",
+    "example_ka": "ახალმა პატჩმა ბევრი ბაგი გაასწორა.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "bug",
+    "georgian": "ბაგი",
+    "pronunciation": "/bʌɡ/",
+    "example_en": "I found a bug in the game.",
+    "example_ka": "თამაშში ბაგი ვიპოვე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "glitch",
+    "georgian": "გლიჩი",
+    "pronunciation": "/ɡlɪtʃ/",
+    "example_en": "There's a glitch in the wall.",
+    "example_ka": "კედელში გლიჩია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "hack",
+    "georgian": "ჰაკი",
+    "pronunciation": "/hæk/",
+    "example_en": "That player is using hacks.",
+    "example_ka": "ეს მოთამაშე ჰაკებს იყენებს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "cheat",
+    "georgian": "ჩითი",
+    "pronunciation": "/tʃiːt/",
+    "example_en": "Don't use cheats in ranked games.",
+    "example_ka": "რეიტინგულ თამაშებში ჩითებს ნუ იყენებ.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "ban",
+    "georgian": "ბანი",
+    "pronunciation": "/bæn/",
+    "example_en": "He got banned for cheating.",
+    "example_ka": "ჩითინგის გამო დაიბანა.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "mute",
+    "georgian": "დადუმება",
+    "pronunciation": "/mjuːt/",
+    "example_en": "I muted the toxic player.",
+    "example_ka": "ტოქსიკური მოთამაშე დავადუმე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "report",
+    "georgian": "რეპორტი",
+    "pronunciation": "/rɪˈpɔːrt/",
+    "example_en": "Report that player for cheating.",
+    "example_ka": "ეს მოთამაშე ჩითინგისთვის დაარეპორტე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "ping",
+    "georgian": "პინგი",
+    "pronunciation": "/pɪŋ/",
+    "example_en": "My ping is too high.",
+    "example_ka": "პინგი ძალიან მაღალი მაქვს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "server",
+    "georgian": "სერვერი",
+    "pronunciation": "/ˈsɜːrvər/",
+    "example_en": "Which server are you on?",
+    "example_ka": "რომელ სერვერზე ხარ?",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "lobby",
+    "georgian": "ლობი",
+    "pronunciation": "/ˈlɒbi/",
+    "example_en": "Wait for me in the lobby.",
+    "example_ka": "ლობიში დამელოდე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "queue",
+    "georgian": "რიგი",
+    "pronunciation": "/kjuː/",
+    "example_en": "The queue time is long.",
+    "example_ka": "რიგის დრო გრძელია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "matchmaking",
+    "georgian": "მატჩმეიქინგი",
+    "pronunciation": "/ˈmætʃˌmeɪkɪŋ/",
+    "example_en": "Matchmaking takes forever.",
+    "example_ka": "მატჩმეიქინგი სამუდამოდ გრძელდება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "console",
+    "georgian": "კონსოლი",
+    "pronunciation": "/ˈkɒnsoʊl/",
+    "example_en": "I play on console.",
+    "example_ka": "კონსოლზე ვთამაშობ.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "mouse",
+    "georgian": "მაუსი",
+    "pronunciation": "/maʊs/",
+    "example_en": "I need a better mouse for gaming.",
+    "example_ka": "თამაშისთვის უკეთესი მაუსი მჭირდება.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "keyboard",
+    "georgian": "კლავიატურა",
+    "pronunciation": "/ˈkiːbɔːrd/",
+    "example_en": "My keyboard has RGB lights.",
+    "example_ka": "ჩემ კლავიატურას RGB განათება აქვს.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "monitor",
+    "georgian": "მონიტორი",
+    "pronunciation": "/ˈmɒnɪtər/",
+    "example_en": "I bought a 144Hz monitor.",
+    "example_ka": "144Hz მონიტორი ვიყიდე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "graphics",
+    "georgian": "გრაფიკა",
+    "pronunciation": "/ˈɡræfɪks/",
+    "example_en": "The graphics in this game are amazing.",
+    "example_ka": "ამ თამაშში გრაფიკა საოცარია.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "resolution",
+    "georgian": "გარჩევადობა",
+    "pronunciation": "/ˌrezəˈluːʃən/",
+    "example_en": "Set the resolution to 1080p.",
+    "example_ka": "გარჩევადობა 1080p-ზე დააყენე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "fps",
+    "georgian": "კადრი",
+    "pronunciation": "/ef piː es/",
+    "example_en": "I'm getting 60 fps.",
+    "example_ka": "60 კადრს ვიღებ.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the game from the store.",
+    "example_ka": "თამაში მაღაზიიდან ჩამოტვირთე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "install",
+    "georgian": "დაყენება",
+    "pronunciation": "/ɪnˈstɔːl/",
+    "example_en": "Install the latest update.",
+    "example_ka": "უახლესი განახლება დააყენე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "load",
+    "georgian": "ჩატვირთვა",
+    "pronunciation": "/loʊd/",
+    "example_en": "The game is still loading.",
+    "example_ka": "თამაში ჯერ კიდევ იტვირთება.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "save",
+    "georgian": "შენახვა",
+    "pronunciation": "/seɪv/",
+    "example_en": "Don't forget to save your progress.",
+    "example_ka": "პროგრესის შენახვა არ დაგავიწყდეს.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "character",
+    "georgian": "პერსონაჟი",
+    "pronunciation": "/ˈkærəktər/",
+    "example_en": "Choose your character.",
+    "example_ka": "აირჩიე შენი პერსონაჟი.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "avatar",
+    "georgian": "ავატარი",
+    "pronunciation": "/ˈævətɑːr/",
+    "example_en": "Customize your avatar.",
+    "example_ka": "ავატარი მოირგე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "emote",
+    "georgian": "ემოტი",
+    "pronunciation": "/ɪˈmoʊt/",
+    "example_en": "Use the dance emote!",
+    "example_ka": "ცეკვის ემოტი გამოიყენე!",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "chat",
+    "georgian": "ჩატი",
+    "pronunciation": "/tʃæt/",
+    "example_en": "Type in the chat.",
+    "example_ka": "ჩატში დაწერე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "voice",
+    "georgian": "ხმა",
+    "pronunciation": "/vɔɪs/",
+    "example_en": "Turn on your voice chat.",
+    "example_ka": "ხმოვანი ჩატი ჩართე.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "mic",
+    "georgian": "მიკროფონი",
+    "pronunciation": "/maɪk/",
+    "example_en": "Your mic is too loud.",
+    "example_ka": "მიკროფონი ძალიან ხმამაღალია.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "strategy",
+    "georgian": "სტრატეგია",
+    "pronunciation": "/ˈstrætədʒi/",
+    "example_en": "We need a better strategy.",
+    "example_ka": "უკეთესი სტრატეგია გვჭირდება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "tactic",
+    "georgian": "ტაქტიკა",
+    "pronunciation": "/ˈtæktɪk/",
+    "example_en": "That's a smart tactic.",
+    "example_ka": "ეს ჭკვიანი ტაქტიკაა.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "flank",
+    "georgian": "ფლანგი",
+    "pronunciation": "/flæŋk/",
+    "example_en": "Flank them from the right.",
+    "example_ka": "მარჯვნიდან შემოუარეთ.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "rush",
+    "georgian": "რაში",
+    "pronunciation": "/rʌʃ/",
+    "example_en": "Let's rush the point.",
+    "example_ka": "მოდი პუნქტს მივაწყდეთ.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "rotate",
+    "georgian": "როტაცია",
+    "pronunciation": "/roʊˈteɪt/",
+    "example_en": "Rotate to the next zone.",
+    "example_ka": "შემდეგ ზონაში გადაინაცვლე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "callout",
+    "georgian": "ქოლაუთი",
+    "pronunciation": "/ˈkɔːlaʊt/",
+    "example_en": "Give me a callout.",
+    "example_ka": "ინფორმაცია მომეცი.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "sniper",
+    "georgian": "სნაიპერი",
+    "pronunciation": "/ˈsnaɪpər/",
+    "example_en": "There's a sniper on the roof.",
+    "example_ka": "სახურავზე სნაიპერია.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "rifle",
+    "georgian": "თოფი",
+    "pronunciation": "/ˈraɪfəl/",
+    "example_en": "The assault rifle is the best weapon.",
+    "example_ka": "შტურმის თოფი საუკეთესო იარაღია.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "shotgun",
+    "georgian": "შოტგანი",
+    "pronunciation": "/ˈʃɒtɡʌn/",
+    "example_en": "Use the shotgun in close range.",
+    "example_ka": "ახლო მანძილზე შოტგანი გამოიყენე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "pistol",
+    "georgian": "პისტოლეტი",
+    "pronunciation": "/ˈpɪstəl/",
+    "example_en": "I only have a pistol left.",
+    "example_ka": "მხოლოდ პისტოლეტი მაქვს დარჩენილი.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "grenade",
+    "georgian": "ყუმბარა",
+    "pronunciation": "/ɡrɪˈneɪd/",
+    "example_en": "Throw a grenade in the room.",
+    "example_ka": "ოთახში ყუმბარა ჩააგდე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "scope",
+    "georgian": "სკოპი",
+    "pronunciation": "/skoʊp/",
+    "example_en": "Use the scope for long range.",
+    "example_ka": "შორ მანძილზე სკოპი გამოიყენე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "crosshair",
+    "georgian": "ნიშანი",
+    "pronunciation": "/ˈkrɒsher/",
+    "example_en": "Put the crosshair on the target.",
+    "example_ka": "ნიშანი სამიზნეზე დააყენე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "aim",
+    "georgian": "მიზანი",
+    "pronunciation": "/eɪm/",
+    "example_en": "Your aim is really good.",
+    "example_ka": "შენი მიზანი ძალიან კარგია.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "recoil",
+    "georgian": "უკუგდება",
+    "pronunciation": "/rɪˈkɔɪl/",
+    "example_en": "Control the recoil of the gun.",
+    "example_ka": "იარაღის უკუგდება აკონტროლე.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "tournament",
+    "georgian": "ტურნირი",
+    "pronunciation": "/ˈtʊrnəmənt/",
+    "example_en": "We're entering the tournament.",
+    "example_ka": "ტურნირში ვხვდებით.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "championship",
+    "georgian": "ჩემპიონატი",
+    "pronunciation": "/ˈtʃæmpiənʃɪp/",
+    "example_en": "The world championship starts tomorrow.",
+    "example_ka": "მსოფლიო ჩემპიონატი ხვალ იწყება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "league",
+    "georgian": "ლიგა",
+    "pronunciation": "/liːɡ/",
+    "example_en": "He plays in a professional league.",
+    "example_ka": "ის პროფესიონალურ ლიგაში თამაშობს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "season",
+    "georgian": "სეზონი",
+    "pronunciation": "/ˈsiːzən/",
+    "example_en": "The new season starts next week.",
+    "example_ka": "ახალი სეზონი მომავალ კვირას იწყება.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "trophy",
+    "georgian": "თასი",
+    "pronunciation": "/ˈtroʊfi/",
+    "example_en": "They won the trophy.",
+    "example_ka": "მათ თასი მოიგეს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "prize",
+    "georgian": "პრიზი",
+    "pronunciation": "/praɪz/",
+    "example_en": "The prize pool is huge.",
+    "example_ka": "საპრიზო ფონდი უზარმაზარია.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "sponsor",
+    "georgian": "სპონსორი",
+    "pronunciation": "/ˈspɒnsər/",
+    "example_en": "The team got a new sponsor.",
+    "example_ka": "გუნდმა ახალი სპონსორი მიიღო.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "caster",
+    "georgian": "კასტერი",
+    "pronunciation": "/ˈkæstər/",
+    "example_en": "The caster is very exciting.",
+    "example_ka": "კასტერი ძალიან ემოციურია.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "commentator",
+    "georgian": "კომენტატორი",
+    "pronunciation": "/ˈkɒmənteɪtər/",
+    "example_en": "The commentator is explaining the play.",
+    "example_ka": "კომენტატორი თამაშს ხსნის.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "audience",
+    "georgian": "აუდიტორია",
+    "pronunciation": "/ˈɔːdiəns/",
+    "example_en": "The audience is cheering.",
+    "example_ka": "აუდიტორია მხარს უჭერს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "fan",
+    "georgian": "გულშემატკივარი",
+    "pronunciation": "/fæn/",
+    "example_en": "I'm a big fan of this team.",
+    "example_ka": "ამ გუნდის დიდი გულშემატკივარი ვარ.",
+    "category": "gaming-esports",
+    "level": "A1"
+  },
+  {
+    "english": "coach",
+    "georgian": "მწვრთნელი",
+    "pronunciation": "/koʊtʃ/",
+    "example_en": "The coach makes all the decisions.",
+    "example_ka": "მწვრთნელი ყველა გადაწყვეტილებას იღებს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "practice",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈpræktɪs/",
+    "example_en": "We need more practice.",
+    "example_ka": "მეტი ვარჯიში გვჭირდება.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "warmup",
+    "georgian": "გახურება",
+    "pronunciation": "/ˈwɔːrmʌp/",
+    "example_en": "Let's do a quick warmup.",
+    "example_ka": "მოდი სწრაფი გახურება გავაკეთოთ.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "combo",
+    "georgian": "კომბო",
+    "pronunciation": "/ˈkɒmboʊ/",
+    "example_en": "That combo does a lot of damage.",
+    "example_ka": "ეს კომბო დიდ დამეიჯს აკეთებს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "cooldown",
+    "georgian": "გაციება",
+    "pronunciation": "/ˈkuːldaʊn/",
+    "example_en": "Wait for the cooldown.",
+    "example_ka": "გაციებას დაელოდე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "ability",
+    "georgian": "უნარი",
+    "pronunciation": "/əˈbɪləti/",
+    "example_en": "Use your special ability.",
+    "example_ka": "შენი სპეციალური უნარი გამოიყენე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "ultimate",
+    "georgian": "ალტიმეითი",
+    "pronunciation": "/ˈʌltɪmət/",
+    "example_en": "Save your ultimate for the fight.",
+    "example_ka": "ალტიმეითი ბრძოლისთვის შეინახე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "passive",
+    "georgian": "პასიური",
+    "pronunciation": "/ˈpæsɪv/",
+    "example_en": "The passive skill is very useful.",
+    "example_ka": "პასიური უნარი ძალიან სასარგებლოა.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "healer",
+    "georgian": "ჰილერი",
+    "pronunciation": "/ˈhiːlər/",
+    "example_en": "We need a healer on the team.",
+    "example_ka": "გუნდში ჰილერი გვჭირდება.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "tank",
+    "georgian": "ტანკი",
+    "pronunciation": "/tæŋk/",
+    "example_en": "The tank goes in first.",
+    "example_ka": "ტანკი პირველი შედის.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "support",
+    "georgian": "საპორტი",
+    "pronunciation": "/səˈpɔːrt/",
+    "example_en": "Play support for the team.",
+    "example_ka": "გუნდს საპორტი უთამაშე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "carry",
+    "georgian": "ქარი",
+    "pronunciation": "/ˈkæri/",
+    "example_en": "He carried the whole team.",
+    "example_ka": "მან მთელი გუნდი წაიყვანა.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "meta",
+    "georgian": "მეტა",
+    "pronunciation": "/ˈmetə/",
+    "example_en": "What's the current meta?",
+    "example_ka": "ახლა რა მეტაა?",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "tier",
+    "georgian": "დონე",
+    "pronunciation": "/tɪr/",
+    "example_en": "This weapon is S-tier.",
+    "example_ka": "ეს იარაღი S-დონისაა.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "counter",
+    "georgian": "კონტრა",
+    "pronunciation": "/ˈkaʊntər/",
+    "example_en": "This character counters yours.",
+    "example_ka": "ეს პერსონაჟი შენსას აკონტრებს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "dodge",
+    "georgian": "აცდენა",
+    "pronunciation": "/dɒdʒ/",
+    "example_en": "Dodge the attack!",
+    "example_ka": "შეტევა აარიდე!",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "block",
+    "georgian": "ბლოკი",
+    "pronunciation": "/blɒk/",
+    "example_en": "Block the incoming damage.",
+    "example_ka": "შემომავალი დამეიჯი დაბლოკე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "parry",
+    "georgian": "მოგერიება",
+    "pronunciation": "/ˈpæri/",
+    "example_en": "Parry his attack at the right moment.",
+    "example_ka": "სწორ მომენტში შეტევა მოიგერიე.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "stun",
+    "georgian": "სტანი",
+    "pronunciation": "/stʌn/",
+    "example_en": "The stun lasts three seconds.",
+    "example_ka": "სტანი სამ წამს გრძელდება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "freeze",
+    "georgian": "გაყინვა",
+    "pronunciation": "/friːz/",
+    "example_en": "Freeze the enemy in place.",
+    "example_ka": "მტერი ადგილზე გაყინე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "heal",
+    "georgian": "მკურნალობა",
+    "pronunciation": "/hiːl/",
+    "example_en": "Heal me please!",
+    "example_ka": "გთხოვ გამიჰილე!",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "revive",
+    "georgian": "გაცოცხლება",
+    "pronunciation": "/rɪˈvaɪv/",
+    "example_en": "Revive me quickly!",
+    "example_ka": "სწრაფად გამაცოცხლე!",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "eliminate",
+    "georgian": "ელიმინაცია",
+    "pronunciation": "/ɪˈlɪmɪneɪt/",
+    "example_en": "We eliminated the last squad.",
+    "example_ka": "ბოლო სქვადი დავამარცხეთ.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "clutching",
+    "georgian": "კლაჩინგი",
+    "pronunciation": "/ˈklʌtʃɪŋ/",
+    "example_en": "He's clutching the round alone.",
+    "example_ka": "ის მარტო კლაჩავს რაუნდს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "streak",
+    "georgian": "სერია",
+    "pronunciation": "/striːk/",
+    "example_en": "I'm on a five-kill streak.",
+    "example_ka": "ხუთი მოკვლის სერიაზე ვარ.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "pro",
+    "georgian": "პროფესიონალი",
+    "pronunciation": "/proʊ/",
+    "example_en": "He plays like a pro.",
+    "example_ka": "ის პროფესიონალივით თამაშობს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "casual",
+    "georgian": "კაჟუალი",
+    "pronunciation": "/ˈkæʒuəl/",
+    "example_en": "I'm a casual gamer.",
+    "example_ka": "მე კაჟუალი მოთამაშე ვარ.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "competitive",
+    "georgian": "კონკურენტული",
+    "pronunciation": "/kəmˈpetɪtɪv/",
+    "example_en": "Play competitive mode.",
+    "example_ka": "კონკურენტულ რეჟიმში ითამაშე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "ranked",
+    "georgian": "რეიტინგული",
+    "pronunciation": "/ræŋkt/",
+    "example_en": "I only play ranked games.",
+    "example_ka": "მხოლოდ რეიტინგულ თამაშებს ვთამაშობ.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "unranked",
+    "georgian": "არარეიტინგული",
+    "pronunciation": "/ʌnˈræŋkt/",
+    "example_en": "Let's play unranked first.",
+    "example_ka": "ჯერ არარეიტინგული ვითამაშოთ.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "leaderboard",
+    "georgian": "ლიდერბორდი",
+    "pronunciation": "/ˈliːdərbɔːrd/",
+    "example_en": "I'm on the leaderboard.",
+    "example_ka": "ლიდერბორდზე ვარ.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "achievement",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːvmənt/",
+    "example_en": "I unlocked a new achievement.",
+    "example_ka": "ახალი მიღწევა განვბლოკე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "unlock",
+    "georgian": "განბლოკვა",
+    "pronunciation": "/ʌnˈlɒk/",
+    "example_en": "Unlock the new character.",
+    "example_ka": "ახალი პერსონაჟი განბლოკე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "purchase",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˈpɜːrtʃəs/",
+    "example_en": "Purchase the battle pass.",
+    "example_ka": "ბეთლ პასი შეიძინე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "reward",
+    "georgian": "ჯილდო",
+    "pronunciation": "/rɪˈwɔːrd/",
+    "example_en": "Claim your daily reward.",
+    "example_ka": "ყოველდღიური ჯილდო მიიღე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Subscribe to the channel.",
+    "example_ka": "არხს გამოეწერე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "follower",
+    "georgian": "მიმდევარი",
+    "pronunciation": "/ˈfɒloʊər/",
+    "example_en": "He has millions of followers.",
+    "example_ka": "მას მილიონობით მიმდევარი ჰყავს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "donate",
+    "georgian": "დონაცია",
+    "pronunciation": "/doʊˈneɪt/",
+    "example_en": "Donate to your favorite streamer.",
+    "example_ka": "საყვარელ სტრიმერს დონაცია გაუკეთე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "clip",
+    "georgian": "კლიპი",
+    "pronunciation": "/klɪp/",
+    "example_en": "That clip went viral.",
+    "example_ka": "ეს კლიპი ვირუსულად გავრცელდა.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "highlight",
+    "georgian": "ჰაილაითი",
+    "pronunciation": "/ˈhaɪlaɪt/",
+    "example_en": "Watch the highlights of the match.",
+    "example_ka": "მატჩის ჰაილაითები ნახე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "replay",
+    "georgian": "რეფლეი",
+    "pronunciation": "/ˈriːpleɪ/",
+    "example_en": "Let me watch the replay.",
+    "example_ka": "რეფლეი ნახე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "tutorial",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/tjuːˈtɔːriəl/",
+    "example_en": "Watch the tutorial first.",
+    "example_ka": "ჯერ სახელმძღვანელო ნახე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "settings",
+    "georgian": "პარამეტრები",
+    "pronunciation": "/ˈsetɪŋz/",
+    "example_en": "Change your settings.",
+    "example_ka": "პარამეტრები შეცვალე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "sensitivity",
+    "georgian": "მგრძნობელობა",
+    "pronunciation": "/ˌsensɪˈtɪvɪti/",
+    "example_en": "Lower your sensitivity.",
+    "example_ka": "მგრძნობელობა შეამცირე.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "keybind",
+    "georgian": "კლავიშის მიბმა",
+    "pronunciation": "/ˈkiːbaɪnd/",
+    "example_en": "Change your keybinds.",
+    "example_ka": "კლავიშების მიბმა შეცვალე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "optimize",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˈɒptɪmaɪz/",
+    "example_en": "Optimize your game settings.",
+    "example_ka": "თამაშის პარამეტრები ოპტიმიზებულე.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "disconnect",
+    "georgian": "გათიშვა",
+    "pronunciation": "/ˌdɪskəˈnekt/",
+    "example_en": "I got disconnected from the game.",
+    "example_ka": "თამაშიდან გავითიშე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "reconnect",
+    "georgian": "ხელახალი დაკავშირება",
+    "pronunciation": "/ˌriːkəˈnekt/",
+    "example_en": "Try to reconnect quickly.",
+    "example_ka": "სწრაფად სცადე ხელახალი დაკავშირება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "crash",
+    "georgian": "ქრეში",
+    "pronunciation": "/kræʃ/",
+    "example_en": "My game crashed again.",
+    "example_ka": "თამაში კიდევ დამიქრეშა.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "mod",
+    "georgian": "მოდი",
+    "pronunciation": "/mɒd/",
+    "example_en": "Install this mod for better graphics.",
+    "example_ka": "უკეთესი გრაფიკისთვის ეს მოდი დააყენე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "addon",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈædɒn/",
+    "example_en": "This addon makes the game easier.",
+    "example_ka": "ეს დანამატი თამაშს აადვილებს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "sandbox",
+    "georgian": "სენდბოქსი",
+    "pronunciation": "/ˈsændbɒks/",
+    "example_en": "Play in sandbox mode.",
+    "example_ka": "სენდბოქს რეჟიმში ითამაშე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "survival",
+    "georgian": "გადარჩენა",
+    "pronunciation": "/sərˈvaɪvəl/",
+    "example_en": "I love survival games.",
+    "example_ka": "გადარჩენის თამაშები მიყვარს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "simulation",
+    "georgian": "სიმულაცია",
+    "pronunciation": "/ˌsɪmjuˈleɪʃən/",
+    "example_en": "This is a racing simulation.",
+    "example_ka": "ეს რბოლის სიმულაციაა.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "genre",
+    "georgian": "ჟანრი",
+    "pronunciation": "/ˈʒɒnrə/",
+    "example_en": "What genre do you prefer?",
+    "example_ka": "რომელ ჟანრს ამჯობინებ?",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "indie",
+    "georgian": "ინდი",
+    "pronunciation": "/ˈɪndi/",
+    "example_en": "This indie game is amazing.",
+    "example_ka": "ეს ინდი თამაში საოცარია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "beta",
+    "georgian": "ბეტა",
+    "pronunciation": "/ˈbeɪtə/",
+    "example_en": "The game is still in beta.",
+    "example_ka": "თამაში ჯერ კიდევ ბეტაშია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "alpha",
+    "georgian": "ალფა",
+    "pronunciation": "/ˈælfə/",
+    "example_en": "I played the alpha version.",
+    "example_ka": "ალფა ვერსია ვითამაშე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "demo",
+    "georgian": "დემო",
+    "pronunciation": "/ˈdemoʊ/",
+    "example_en": "Try the free demo first.",
+    "example_ka": "ჯერ უფასო დემო სცადე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "launch",
+    "georgian": "გაშვება",
+    "pronunciation": "/lɔːntʃ/",
+    "example_en": "The game launches next month.",
+    "example_ka": "თამაში მომავალ თვეში გაეშვება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "preorder",
+    "georgian": "წინასწარი შეკვეთა",
+    "pronunciation": "/priːˈɔːrdər/",
+    "example_en": "I preordered the game.",
+    "example_ka": "თამაში წინასწარ შევუკვეთე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "dlc",
+    "georgian": "დამატებითი კონტენტი",
+    "pronunciation": "/diː el siː/",
+    "example_en": "The new DLC is worth buying.",
+    "example_ka": "ახალი DLC ყიდვად ღირს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "expansion",
+    "georgian": "გაფართოება",
+    "pronunciation": "/ɪkˈspænʃən/",
+    "example_en": "The expansion adds new areas.",
+    "example_ka": "გაფართოება ახალ ზონებს ამატებს.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "content",
+    "georgian": "კონტენტი",
+    "pronunciation": "/ˈkɒntent/",
+    "example_en": "They released new content.",
+    "example_ka": "ახალი კონტენტი გამოუშვეს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "roleplay",
+    "georgian": "როლის თამაში",
+    "pronunciation": "/ˈroʊlpleɪ/",
+    "example_en": "I enjoy roleplay servers.",
+    "example_ka": "როლური თამაშის სერვერები მომწონს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "simulator",
+    "georgian": "სიმულატორი",
+    "pronunciation": "/ˈsɪmjuleɪtər/",
+    "example_en": "This simulator is very realistic.",
+    "example_ka": "ეს სიმულატორი ძალიან რეალისტურია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "pixel",
+    "georgian": "პიქსელი",
+    "pronunciation": "/ˈpɪksəl/",
+    "example_en": "I love pixel art games.",
+    "example_ka": "პიქსელ არტის თამაშები მიყვარს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "render",
+    "georgian": "რენდერი",
+    "pronunciation": "/ˈrendər/",
+    "example_en": "The render distance is too low.",
+    "example_ka": "რენდერის მანძილი ძალიან დაბალია.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "texture",
+    "georgian": "ტექსტურა",
+    "pronunciation": "/ˈtekstʃər/",
+    "example_en": "The textures look beautiful.",
+    "example_ka": "ტექსტურები ლამაზად გამოიყურება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "animation",
+    "georgian": "ანიმაცია",
+    "pronunciation": "/ˌænɪˈmeɪʃən/",
+    "example_en": "The animation is very smooth.",
+    "example_ka": "ანიმაცია ძალიან გლუვია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "physics",
+    "georgian": "ფიზიკა",
+    "pronunciation": "/ˈfɪzɪks/",
+    "example_en": "The game physics are realistic.",
+    "example_ka": "თამაშის ფიზიკა რეალისტურია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "engine",
+    "georgian": "ძრავი",
+    "pronunciation": "/ˈendʒɪn/",
+    "example_en": "It uses Unreal Engine.",
+    "example_ka": "ის Unreal ძრავს იყენებს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "developer",
+    "georgian": "დეველოპერი",
+    "pronunciation": "/dɪˈveləpər/",
+    "example_en": "The developers listen to fans.",
+    "example_ka": "დეველოპერები გულშემატკივრებს უსმენენ.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "publisher",
+    "georgian": "გამომცემელი",
+    "pronunciation": "/ˈpʌblɪʃər/",
+    "example_en": "The publisher is very greedy.",
+    "example_ka": "გამომცემელი ძალიან ხარბია.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "studio",
+    "georgian": "სტუდია",
+    "pronunciation": "/ˈstjuːdioʊ/",
+    "example_en": "Which studio made this game?",
+    "example_ka": "რომელმა სტუდიამ გააკეთა ეს თამაში?",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "release",
+    "georgian": "გამოშვება",
+    "pronunciation": "/rɪˈliːs/",
+    "example_en": "The release date is confirmed.",
+    "example_ka": "გამოშვების თარიღი დადასტურებულია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "trailer",
+    "georgian": "ტრეილერი",
+    "pronunciation": "/ˈtreɪlər/",
+    "example_en": "Watch the new trailer.",
+    "example_ka": "ახალი ტრეილერი ნახე.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "The reviews are very positive.",
+    "example_ka": "მიმოხილვები ძალიან პოზიტიურია.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "rating",
+    "georgian": "რეიტინგი",
+    "pronunciation": "/ˈreɪtɪŋ/",
+    "example_en": "The game has a high rating.",
+    "example_ka": "თამაშს მაღალი რეიტინგი აქვს.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "subscription",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskrɪpʃən/",
+    "example_en": "The subscription costs ten dollars.",
+    "example_ka": "გამოწერა ათ დოლარი ღირს.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "microtransaction",
+    "georgian": "მიკროტრანზაქცია",
+    "pronunciation": "/ˌmaɪkroʊtrænˈzækʃən/",
+    "example_en": "I hate microtransactions.",
+    "example_ka": "მიკროტრანზაქციები მძულს.",
+    "category": "gaming-esports",
+    "level": "C1"
+  },
+  {
+    "english": "lootbox",
+    "georgian": "ლუთბოქსი",
+    "pronunciation": "/ˈluːtbɒks/",
+    "example_en": "Lootboxes are gambling.",
+    "example_ka": "ლუთბოქსები აზარტული თამაშია.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "currency",
+    "georgian": "ვალუტა",
+    "pronunciation": "/ˈkɜːrənsi/",
+    "example_en": "Buy in-game currency.",
+    "example_ka": "თამაშის ვალუტა იყიდე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "token",
+    "georgian": "ტოკენი",
+    "pronunciation": "/ˈtoʊkən/",
+    "example_en": "You need tokens to play.",
+    "example_ka": "თამაშისთვის ტოკენები გჭირდება.",
+    "category": "gaming-esports",
+    "level": "B1"
+  },
+  {
+    "english": "economy",
+    "georgian": "ეკონომიკა",
+    "pronunciation": "/ɪˈkɒnəmi/",
+    "example_en": "The in-game economy is broken.",
+    "example_ka": "თამაშის ეკონომიკა გაფუჭებულია.",
+    "category": "gaming-esports",
+    "level": "B2"
+  },
+  {
+    "english": "trade",
+    "georgian": "გაცვლა",
+    "pronunciation": "/treɪd/",
+    "example_en": "Let's trade items.",
+    "example_ka": "მოდი ნივთები გავცვალოთ.",
+    "category": "gaming-esports",
+    "level": "A2"
+  },
+  {
+    "english": "marketplace",
+    "georgian": "ბაზარი",
+    "pronunciation": "/ˈmɑːrkɪtpleɪs/",
+    "example_en": "Sell it on the marketplace.",
+    "example_ka": "ბაზარზე გაყიდე.",
+    "category": "gaming-esports",
+    "level": "B1"
+  }
 ]

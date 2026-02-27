@@ -1,42 +1,1802 @@
 [
-  {"english":"menu","georgian":"მენიუ","pronunciation":"/ˈmenjuː/","example_en":"Can I see the menu, please?","example_ka":"შეიძლება მენიუ?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"waiter","georgian":"მიმტანი","pronunciation":"/ˈweɪtər/","example_en":"The waiter brought our food.","example_ka":"მიმტანმა საჭმელი მოგვიტანა.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"waitress","georgian":"მიმტანი (ქალი)","pronunciation":"/ˈweɪtrəs/","example_en":"The waitress was very friendly.","example_ka":"მიმტანი ძალიან მეგობრული იყო.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"bill","georgian":"ანგარიში","pronunciation":"/bɪl/","example_en":"Can we have the bill, please?","example_ka":"შეიძლება ანგარიში?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"tip","georgian":"ჩაის ფული","pronunciation":"/tɪp/","example_en":"I left a good tip for the waiter.","example_ka":"მიმტანს კარგი ჩაის ფული დავუტოვე.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"reservation","georgian":"ჯავშანი","pronunciation":"/ˌrezərˈveɪʃn/","example_en":"I have a reservation for two.","example_ka":"ორ ადამიანზე ჯავშანი მაქვს.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"appetizer","georgian":"წინამღერი","pronunciation":"/ˈæpɪtaɪzər/","example_en":"Would you like an appetizer?","example_ka":"წინამღერი ხომ არ გსურთ?","category":"restaurant-cafe","level":"intermediate"},
-  {"english":"main course","georgian":"მთავარი კერძი","pronunciation":"/meɪn kɔːrs/","example_en":"For the main course, I'll have chicken.","example_ka":"მთავარ კერძად ქათამს ავიღებ.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"dessert","georgian":"დესერტი","pronunciation":"/dɪˈzɜːrt/","example_en":"What desserts do you have?","example_ka":"რა დესერტები გაქვთ?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"to order","georgian":"შეკვეთა","pronunciation":"/tə ˈɔːrdər/","example_en":"Are you ready to order?","example_ka":"შეკვეთისთვის მზად ხართ?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"chef","georgian":"შეფ-მზარეული","pronunciation":"/ʃef/","example_en":"The chef prepared a special dish.","example_ka":"შეფ-მზარეულმა სპეციალური კერძი მოამზადა.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"spicy","georgian":"ცხარე","pronunciation":"/ˈspaɪsi/","example_en":"This food is too spicy for me.","example_ka":"ეს საჭმელი ჩემთვის ძალიან ცხარეა.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"delicious","georgian":"გემრიელი","pronunciation":"/dɪˈlɪʃəs/","example_en":"The food was delicious!","example_ka":"საჭმელი გემრიელი იყო!","category":"restaurant-cafe","level":"beginner"},
-  {"english":"portion","georgian":"პორცია","pronunciation":"/ˈpɔːrʃn/","example_en":"The portions here are very big.","example_ka":"აქ პორციები ძალიან დიდია.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"takeaway","georgian":"წასაღები","pronunciation":"/ˈteɪkəweɪ/","example_en":"Can I get this as takeaway?","example_ka":"შეიძლება ეს წასაღებად?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"napkin","georgian":"ხელსახოცი","pronunciation":"/ˈnæpkɪn/","example_en":"Can I have some napkins?","example_ka":"შეიძლება ხელსახოცები?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"fork","georgian":"ჩანგალი","pronunciation":"/fɔːrk/","example_en":"I need a clean fork.","example_ka":"სუფთა ჩანგალი მჭირდება.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"knife","georgian":"დანა","pronunciation":"/naɪf/","example_en":"This knife is not sharp enough.","example_ka":"ეს დანა საკმარისად ბასრი არ არის.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"spoon","georgian":"კოვზი","pronunciation":"/spuːn/","example_en":"I need a spoon for the soup.","example_ka":"წვნიანისთვის კოვზი მჭირდება.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"glass","georgian":"ჭიქა","pronunciation":"/ɡlæs/","example_en":"Can I have a glass of water?","example_ka":"შეიძლება ერთი ჭიქა წყალი?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"plate","georgian":"თეფში","pronunciation":"/pleɪt/","example_en":"The plate is very hot.","example_ka":"თეფში ძალიან ცხელია.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"cup","georgian":"ფინჯანი","pronunciation":"/kʌp/","example_en":"A cup of coffee, please.","example_ka":"ერთი ფინჯანი ყავა, გთხოვთ.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"straw","georgian":"საწრუპი","pronunciation":"/strɔː/","example_en":"Can I have a straw for my drink?","example_ka":"შეიძლება საწრუპი?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"vegetarian","georgian":"ვეგეტარიანული","pronunciation":"/ˌvedʒɪˈteəriən/","example_en":"Do you have vegetarian options?","example_ka":"ვეგეტარიანული კერძები გაქვთ?","category":"restaurant-cafe","level":"intermediate"},
-  {"english":"allergic","georgian":"ალერგიული","pronunciation":"/əˈlɜːrdʒɪk/","example_en":"I am allergic to nuts.","example_ka":"თხილზე ალერგიული ვარ.","category":"restaurant-cafe","level":"intermediate"},
-  {"english":"fresh","georgian":"ახალი","pronunciation":"/freʃ/","example_en":"The fish is very fresh today.","example_ka":"დღეს თევზი ძალიან ახალია.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"rare","georgian":"ნახევრად მოხარშული","pronunciation":"/reər/","example_en":"I like my steak rare.","example_ka":"სტეიკი ნახევრად მოხარშული მიყვარს.","category":"restaurant-cafe","level":"intermediate"},
-  {"english":"well-done","georgian":"კარგად მოხარშული","pronunciation":"/wel dʌn/","example_en":"I want my meat well-done.","example_ka":"ხორცი კარგად მოხარშული მინდა.","category":"restaurant-cafe","level":"intermediate"},
-  {"english":"to recommend","georgian":"რეკომენდაცია","pronunciation":"/tə ˌrekəˈmend/","example_en":"What do you recommend?","example_ka":"რას გვირჩევთ?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"receipt","georgian":"ქვითარი","pronunciation":"/rɪˈsiːt/","example_en":"Can I have a receipt, please?","example_ka":"შეიძლება ქვითარი?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"terrace","georgian":"ტერასა","pronunciation":"/ˈterəs/","example_en":"Can we sit on the terrace?","example_ka":"ტერასაზე შეგვიძლია დავსხდეთ?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"to pay","georgian":"გადახდა","pronunciation":"/tə peɪ/","example_en":"Can I pay by card?","example_ka":"ბარათით შეიძლება გადახდა?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"cash","georgian":"ნაღდი ფული","pronunciation":"/kæʃ/","example_en":"Do you accept cash only?","example_ka":"მხოლოდ ნაღდ ფულს იღებთ?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"breakfast","georgian":"საუზმე","pronunciation":"/ˈbrekfəst/","example_en":"Breakfast is served until 11 AM.","example_ka":"საუზმე 11 საათამდე მზადდება.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"lunch","georgian":"სადილი","pronunciation":"/lʌntʃ/","example_en":"Let's have lunch together.","example_ka":"ერთად ვისადილოთ.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"dinner","georgian":"ვახშამი","pronunciation":"/ˈdɪnər/","example_en":"We had dinner at a nice restaurant.","example_ka":"კარგ რესტორანში ვივახშმეთ.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"snack","georgian":"წასახემსებელი","pronunciation":"/snæk/","example_en":"I just want a quick snack.","example_ka":"უბრალოდ წასახემსებელი მინდა.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"to taste","georgian":"გასინჯვა","pronunciation":"/tə teɪst/","example_en":"Would you like to taste the wine?","example_ka":"ღვინოს ხომ არ გასინჯავთ?","category":"restaurant-cafe","level":"beginner"},
-  {"english":"service","georgian":"მომსახურება","pronunciation":"/ˈsɜːrvɪs/","example_en":"The service here is excellent.","example_ka":"აქ მომსახურება შესანიშნავია.","category":"restaurant-cafe","level":"beginner"},
-  {"english":"ingredient","georgian":"ინგრედიენტი","pronunciation":"/ɪnˈɡriːdiənt/","example_en":"What ingredients are in this dish?","example_ka":"რა ინგრედიენტებია ამ კერძში?","category":"restaurant-cafe","level":"intermediate"}
+  {
+    "english": "menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmenjuː/",
+    "example_en": "Can I see the menu, please?",
+    "example_ka": "შეიძლება მენიუ?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "waiter",
+    "georgian": "მიმტანი",
+    "pronunciation": "/ˈweɪtər/",
+    "example_en": "The waiter brought our food.",
+    "example_ka": "მიმტანმა საჭმელი მოგვიტანა.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "waitress",
+    "georgian": "მიმტანი",
+    "pronunciation": "/ˈweɪtrəs/",
+    "example_en": "The waitress was very friendly.",
+    "example_ka": "მიმტანი ძალიან მეგობრული იყო.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "bill",
+    "georgian": "ანგარიში",
+    "pronunciation": "/bɪl/",
+    "example_en": "Can we have the bill, please?",
+    "example_ka": "შეიძლება ანგარიში?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "tip",
+    "georgian": "ჩაის ფული",
+    "pronunciation": "/tɪp/",
+    "example_en": "I left a good tip for the waiter.",
+    "example_ka": "მიმტანს კარგი ჩაის ფული დავუტოვე.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "reservation",
+    "georgian": "ჯავშანი",
+    "pronunciation": "/ˌrezərˈveɪʃn/",
+    "example_en": "I have a reservation for two.",
+    "example_ka": "ორ ადამიანზე ჯავშანი მაქვს.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "appetizer",
+    "georgian": "წინამღერი",
+    "pronunciation": "/ˈæpɪtaɪzər/",
+    "example_en": "Would you like an appetizer?",
+    "example_ka": "წინამღერი ხომ არ გსურთ?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "dessert",
+    "georgian": "დესერტი",
+    "pronunciation": "/dɪˈzɜːrt/",
+    "example_en": "What desserts do you have?",
+    "example_ka": "რა დესერტები გაქვთ?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "chef",
+    "georgian": "მზარეული",
+    "pronunciation": "/ʃef/",
+    "example_en": "The chef prepared a special dish.",
+    "example_ka": "მზარეულმა სპეციალური კერძი მოამზადა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "spicy",
+    "georgian": "ცხარე",
+    "pronunciation": "/ˈspaɪsi/",
+    "example_en": "This food is too spicy for me.",
+    "example_ka": "ეს საჭმელი ჩემთვის ძალიან ცხარეა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "delicious",
+    "georgian": "გემრიელი",
+    "pronunciation": "/dɪˈlɪʃəs/",
+    "example_en": "The food was delicious!",
+    "example_ka": "საჭმელი გემრიელი იყო!",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "portion",
+    "georgian": "პორცია",
+    "pronunciation": "/ˈpɔːrʃn/",
+    "example_en": "The portions here are very big.",
+    "example_ka": "აქ პორციები ძალიან დიდია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "takeaway",
+    "georgian": "წასაღები",
+    "pronunciation": "/ˈteɪkəweɪ/",
+    "example_en": "Can I get this as takeaway?",
+    "example_ka": "შეიძლება ეს წასაღებად?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "napkin",
+    "georgian": "ხელსახოცი",
+    "pronunciation": "/ˈnæpkɪn/",
+    "example_en": "Can I have some napkins?",
+    "example_ka": "შეიძლება ხელსახოცები?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "fork",
+    "georgian": "ჩანგალი",
+    "pronunciation": "/fɔːrk/",
+    "example_en": "I need a clean fork.",
+    "example_ka": "სუფთა ჩანგალი მჭირდება.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "knife",
+    "georgian": "დანა",
+    "pronunciation": "/naɪf/",
+    "example_en": "This knife is not sharp enough.",
+    "example_ka": "ეს დანა საკმარისად ბასრი არ არის.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "spoon",
+    "georgian": "კოვზი",
+    "pronunciation": "/spuːn/",
+    "example_en": "I need a spoon for the soup.",
+    "example_ka": "წვნიანისთვის კოვზი მჭირდება.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "glass",
+    "georgian": "ჭიქა",
+    "pronunciation": "/ɡlæs/",
+    "example_en": "Can I have a glass of water?",
+    "example_ka": "შეიძლება ერთი ჭიქა წყალი?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "plate",
+    "georgian": "თეფში",
+    "pronunciation": "/pleɪt/",
+    "example_en": "The plate is very hot.",
+    "example_ka": "თეფში ძალიან ცხელია.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "cup",
+    "georgian": "ფინჯანი",
+    "pronunciation": "/kʌp/",
+    "example_en": "A cup of coffee, please.",
+    "example_ka": "ერთი ფინჯანი ყავა, გთხოვთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "straw",
+    "georgian": "საწრუპი",
+    "pronunciation": "/strɔː/",
+    "example_en": "Can I have a straw for my drink?",
+    "example_ka": "შეიძლება საწრუპი?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "vegetarian",
+    "georgian": "ვეგეტარიანული",
+    "pronunciation": "/ˌvedʒɪˈteəriən/",
+    "example_en": "Do you have vegetarian options?",
+    "example_ka": "ვეგეტარიანული კერძები გაქვთ?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "allergic",
+    "georgian": "ალერგიული",
+    "pronunciation": "/əˈlɜːrdʒɪk/",
+    "example_en": "I am allergic to nuts.",
+    "example_ka": "თხილზე ალერგიული ვარ.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "fresh",
+    "georgian": "ახალი",
+    "pronunciation": "/freʃ/",
+    "example_en": "The fish is very fresh today.",
+    "example_ka": "დღეს თევზი ძალიან ახალია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "rare",
+    "georgian": "ნახევრად მოხარშული",
+    "pronunciation": "/reər/",
+    "example_en": "I like my steak rare.",
+    "example_ka": "სტეიკი ნახევრად მოხარშული მიყვარს.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "well-done",
+    "georgian": "კარგად მოხარშული",
+    "pronunciation": "/wel dʌn/",
+    "example_en": "I want my meat well-done.",
+    "example_ka": "ხორცი კარგად მოხარშული მინდა.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Can I have a receipt, please?",
+    "example_ka": "შეიძლება ქვითარი?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "terrace",
+    "georgian": "ტერასა",
+    "pronunciation": "/ˈterəs/",
+    "example_en": "Can we sit on the terrace?",
+    "example_ka": "ტერასაზე შეგვიძლია დავსხდეთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "cash",
+    "georgian": "ნაღდი ფული",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Do you accept cash only?",
+    "example_ka": "მხოლოდ ნაღდ ფულს იღებთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "breakfast",
+    "georgian": "საუზმე",
+    "pronunciation": "/ˈbrekfəst/",
+    "example_en": "Breakfast is served until 11 AM.",
+    "example_ka": "საუზმე 11 საათამდე მზადდება.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "lunch",
+    "georgian": "სადილი",
+    "pronunciation": "/lʌntʃ/",
+    "example_en": "Let's have lunch together.",
+    "example_ka": "ერთად ვისადილოთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "dinner",
+    "georgian": "ვახშამი",
+    "pronunciation": "/ˈdɪnər/",
+    "example_en": "We had dinner at a nice restaurant.",
+    "example_ka": "კარგ რესტორანში ვივახშმეთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "snack",
+    "georgian": "წასახემსებელი",
+    "pronunciation": "/snæk/",
+    "example_en": "I just want a quick snack.",
+    "example_ka": "უბრალოდ წასახემსებელი მინდა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "service",
+    "georgian": "მომსახურება",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "The service here is excellent.",
+    "example_ka": "აქ მომსახურება შესანიშნავია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "ingredient",
+    "georgian": "ინგრედიენტი",
+    "pronunciation": "/ɪnˈɡriːdiənt/",
+    "example_en": "What ingredients are in this dish?",
+    "example_ka": "რა ინგრედიენტებია ამ კერძში?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "kitchen",
+    "georgian": "სამზარეულო",
+    "pronunciation": "/ˈkɪtʃɪn/",
+    "example_en": "The kitchen is very busy tonight.",
+    "example_ka": "დღეს საღამოს სამზარეულო ძალიან დაკავებულია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "order",
+    "georgian": "შეკვეთა",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "Are you ready to order?",
+    "example_ka": "შეკვეთისთვის მზად ხარ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "table",
+    "georgian": "მაგიდა",
+    "pronunciation": "/ˈteɪbl/",
+    "example_en": "This table is reserved.",
+    "example_ka": "ეს მაგიდა დაჯავშნილია.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "chair",
+    "georgian": "სკამი",
+    "pronunciation": "/tʃeər/",
+    "example_en": "Can I have another chair?",
+    "example_ka": "შეიძლება კიდევ ერთი სკამი?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "seat",
+    "georgian": "ადგილი",
+    "pronunciation": "/siːt/",
+    "example_en": "Please take a seat.",
+    "example_ka": "გთხოვთ დაჯექით.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "booth",
+    "georgian": "კაბინა",
+    "pronunciation": "/buːθ/",
+    "example_en": "I'd like a booth for privacy.",
+    "example_ka": "კაბინა მინდა კონფიდენციალურობისთვის.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "bar",
+    "georgian": "ბარი",
+    "pronunciation": "/bɑːr/",
+    "example_en": "Let's sit at the bar.",
+    "example_ka": "ბართან დავჯდეთ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "bartender",
+    "georgian": "ბარმენი",
+    "pronunciation": "/ˈbɑːrtendər/",
+    "example_en": "The bartender makes great cocktails.",
+    "example_ka": "ბარმენი შესანიშნავ კოქტეილებს ამზადებს.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "cocktail",
+    "georgian": "კოქტეილი",
+    "pronunciation": "/ˈkɑːkteɪl/",
+    "example_en": "I'll have a cocktail, please.",
+    "example_ka": "კოქტეილი ვისურვებ, გთხოვთ.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "wine",
+    "georgian": "ღვინო",
+    "pronunciation": "/waɪn/",
+    "example_en": "Do you have red wine?",
+    "example_ka": "წითელი ღვინო გაქვთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "beer",
+    "georgian": "ლუდი",
+    "pronunciation": "/bɪr/",
+    "example_en": "Two beers, please.",
+    "example_ka": "ორი ლუდი, გთხოვთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "juice",
+    "georgian": "წვენი",
+    "pronunciation": "/dʒuːs/",
+    "example_en": "I'd like orange juice.",
+    "example_ka": "ნარინჯის წვენი ვისურვებ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Can I have some water?",
+    "example_ka": "შეიძლება წყალი?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "coffee",
+    "georgian": "ყავა",
+    "pronunciation": "/ˈkɔːfi/",
+    "example_en": "Black coffee for me.",
+    "example_ka": "ჩემთვის შავი ყავა.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "tea",
+    "georgian": "ჩაი",
+    "pronunciation": "/tiː/",
+    "example_en": "Green tea, please.",
+    "example_ka": "მწვანე ჩაი, გთხოვთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "soda",
+    "georgian": "გაზიანი სასმელი",
+    "pronunciation": "/ˈsoʊdə/",
+    "example_en": "Do you have diet soda?",
+    "example_ka": "დიეტური გაზიანი გაქვთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "milk",
+    "georgian": "რძე",
+    "pronunciation": "/mɪlk/",
+    "example_en": "Coffee with milk, please.",
+    "example_ka": "ყავა რძით, გთხოვთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "sugar",
+    "georgian": "შაქარი",
+    "pronunciation": "/ˈʃʊɡər/",
+    "example_en": "Two sugars in my coffee.",
+    "example_ka": "ყავაში ორი შაქარი.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "salt",
+    "georgian": "მარილი",
+    "pronunciation": "/sɔːlt/",
+    "example_en": "Can you pass the salt?",
+    "example_ka": "მარილი შეიძლება?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "pepper",
+    "georgian": "პილპილი",
+    "pronunciation": "/ˈpepər/",
+    "example_en": "Black pepper, please.",
+    "example_ka": "შავი პილპილი, გთხოვთ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "sauce",
+    "georgian": "საღებავი",
+    "pronunciation": "/sɔːs/",
+    "example_en": "Do you have hot sauce?",
+    "example_ka": "ცხარე საღებავი გაქვთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "ketchup",
+    "georgian": "კეთჩუპი",
+    "pronunciation": "/ˈketʃəp/",
+    "example_en": "Can I get some ketchup?",
+    "example_ka": "შეიძლება კეთჩუპი?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "mustard",
+    "georgian": "მდოგვი",
+    "pronunciation": "/ˈmʌstərd/",
+    "example_en": "I'd like mustard on my sandwich.",
+    "example_ka": "სენდვიჩზე მდოგვი ვისურვებ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "mayonnaise",
+    "georgian": "მაიონეზი",
+    "pronunciation": "/ˈmeɪəneɪz/",
+    "example_en": "No mayonnaise for me.",
+    "example_ka": "მაიონეზი არ მინდა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "butter",
+    "georgian": "კარაქი",
+    "pronunciation": "/ˈbʌtər/",
+    "example_en": "Can I have some butter?",
+    "example_ka": "შეიძლება კარაქი?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "bread",
+    "georgian": "პური",
+    "pronunciation": "/bred/",
+    "example_en": "The bread is complimentary.",
+    "example_ka": "პური უფასოა.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "soup",
+    "georgian": "წვნიანი",
+    "pronunciation": "/suːp/",
+    "example_en": "What soup do you have today?",
+    "example_ka": "რა წვნიანი გაქვთ დღეს?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "salad",
+    "georgian": "სალათი",
+    "pronunciation": "/ˈsæləd/",
+    "example_en": "I'll start with a salad.",
+    "example_ka": "სალათით დავიწყებ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "sandwich",
+    "georgian": "სენდვიჩი",
+    "pronunciation": "/ˈsændwɪtʃ/",
+    "example_en": "Can I get a sandwich to go?",
+    "example_ka": "შეიძლება სენდვიჩი წასაღებად?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "burger",
+    "georgian": "ბურგერი",
+    "pronunciation": "/ˈbɜːrɡər/",
+    "example_en": "I'll have the cheeseburger.",
+    "example_ka": "ყველიან ბურგერს ვისურვებ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "pizza",
+    "georgian": "პიცა",
+    "pronunciation": "/ˈpiːtsə/",
+    "example_en": "Let's order a large pizza.",
+    "example_ka": "დიდი პიცა შევუკვეთოთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "pasta",
+    "georgian": "პასტა",
+    "pronunciation": "/ˈpɑːstə/",
+    "example_en": "The pasta here is amazing.",
+    "example_ka": "აქ პასტა საოცარია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "steak",
+    "georgian": "სტეიკი",
+    "pronunciation": "/steɪk/",
+    "example_en": "How would you like your steak?",
+    "example_ka": "როგორ გნებავთ სტეიკი?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "chicken",
+    "georgian": "ქათამი",
+    "pronunciation": "/ˈtʃɪkɪn/",
+    "example_en": "Grilled chicken breast, please.",
+    "example_ka": "შემწვარი ქათმის ხორცი, გთხოვთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "beef",
+    "georgian": "ძროხის ხორცი",
+    "pronunciation": "/biːf/",
+    "example_en": "Do you serve beef dishes?",
+    "example_ka": "ძროხის ხორცის კერძები მიირთმევით?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "pork",
+    "georgian": "ღორის ხორცი",
+    "pronunciation": "/pɔːrk/",
+    "example_en": "I don't eat pork.",
+    "example_ka": "ღორის ხორცს არ ვჭამ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "What fish do you recommend?",
+    "example_ka": "რა თევზს გვირჩევთ?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "seafood",
+    "georgian": "ზღვის პროდუქტები",
+    "pronunciation": "/ˈsiːfuːd/",
+    "example_en": "I love seafood pasta.",
+    "example_ka": "ზღვის პროდუქტებიანი პასტა მიყვარს.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "shrimp",
+    "georgian": "კრევეტები",
+    "pronunciation": "/ʃrɪmp/",
+    "example_en": "Shrimp cocktail as a starter.",
+    "example_ka": "კრევეტების კოქტეილი წინამღერად.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "lobster",
+    "georgian": "ომარი",
+    "pronunciation": "/ˈlɑːbstər/",
+    "example_en": "Lobster is expensive here.",
+    "example_ka": "ომარი აქ ძვირია.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "rice",
+    "georgian": "ბრინჯი",
+    "pronunciation": "/raɪs/",
+    "example_en": "Can I have rice instead of potatoes?",
+    "example_ka": "კარტოფილის მაგივრად ბრინჯი შეიძლება?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "potato",
+    "georgian": "კარტოფილი",
+    "pronunciation": "/pəˈteɪtoʊ/",
+    "example_en": "Mashed potatoes as a side.",
+    "example_ka": "ღეჟილი კარტოფილი გარნირად.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "vegetables",
+    "georgian": "ბოსტნეული",
+    "pronunciation": "/ˈvedʒtəblz/",
+    "example_en": "I need more vegetables in my diet.",
+    "example_ka": "ჩემს დიეტაში მეტი ბოსტნეული მჭირდება.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "cheese",
+    "georgian": "ყველი",
+    "pronunciation": "/tʃiːz/",
+    "example_en": "Extra cheese on my pizza.",
+    "example_ka": "დამატებითი ყველი პიცაზე.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "egg",
+    "georgian": "კვერცხი",
+    "pronunciation": "/eɡ/",
+    "example_en": "How do you like your eggs?",
+    "example_ka": "როგორ გნებავთ კვერცხი?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "bacon",
+    "georgian": "ბეკონი",
+    "pronunciation": "/ˈbeɪkən/",
+    "example_en": "Bacon and eggs for breakfast.",
+    "example_ka": "ბეკონი და კვერცხი საუზმეზე.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "fruit",
+    "georgian": "ხილი",
+    "pronunciation": "/fruːt/",
+    "example_en": "Fresh fruit for dessert.",
+    "example_ka": "ახალი ხილი დესერტად.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "ice cream",
+    "georgian": "ნაყინი",
+    "pronunciation": "/aɪs kriːm/",
+    "example_en": "Vanilla ice cream, please.",
+    "example_ka": "ვანილის ნაყინი, გთხოვთ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "cake",
+    "georgian": "ნამცხვარი",
+    "pronunciation": "/keɪk/",
+    "example_en": "Chocolate cake looks delicious.",
+    "example_ka": "შოკოლადის ნამცხვარი გემრიელად გამოიყურება.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "cookie",
+    "georgian": "ბისკვითი",
+    "pronunciation": "/ˈkʊki/",
+    "example_en": "Free cookies with coffee.",
+    "example_ka": "უფასო ბისკვითი ყავასთან.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "pie",
+    "georgian": "ღვეზელი",
+    "pronunciation": "/paɪ/",
+    "example_en": "Apple pie is our specialty.",
+    "example_ka": "ვაშლის ღვეზელი ჩვენი სპეციალობაა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "cold",
+    "georgian": "ცივი",
+    "pronunciation": "/koʊld/",
+    "example_en": "This soup is cold.",
+    "example_ka": "ეს წვნიანი ცივია.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "hot",
+    "georgian": "ცხელი",
+    "pronunciation": "/hɑːt/",
+    "example_en": "Be careful, the plate is hot.",
+    "example_ka": "ფრთხილად, თეფში ცხელია.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "warm",
+    "georgian": "თბილი",
+    "pronunciation": "/wɔːrm/",
+    "example_en": "Can you warm this up?",
+    "example_ka": "შეიძლება ეს გათბო?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "frozen",
+    "georgian": "გაყინული",
+    "pronunciation": "/ˈfroʊzən/",
+    "example_en": "We don't use frozen ingredients.",
+    "example_ka": "გაყინულ ინგრედიენტებს არ ვიყენებთ.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "cooked",
+    "georgian": "მოხარშული",
+    "pronunciation": "/kʊkt/",
+    "example_en": "Is the fish cooked properly?",
+    "example_ka": "თევზი კარგად არის მოხარშული?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "raw",
+    "georgian": "ნედლი",
+    "pronunciation": "/rɔː/",
+    "example_en": "I don't eat raw fish.",
+    "example_ka": "ნედლ თევზს არ ვჭამ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "grilled",
+    "georgian": "შემწვარი",
+    "pronunciation": "/ɡrɪld/",
+    "example_en": "Grilled vegetables are healthy.",
+    "example_ka": "შემწვარი ბოსტნეული ჯანსაღია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "fried",
+    "georgian": "შეტვრილი",
+    "pronunciation": "/fraɪd/",
+    "example_en": "I'll have fried chicken.",
+    "example_ka": "შეტვრილ ქათამს ვისურვებ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "boiled",
+    "georgian": "მოხარშული",
+    "pronunciation": "/bɔɪld/",
+    "example_en": "Boiled eggs for breakfast.",
+    "example_ka": "მოხარშული კვერცხი საუზმეზე.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "steamed",
+    "georgian": "ორთქლზე მომზადებული",
+    "pronunciation": "/stiːmd/",
+    "example_en": "Steamed rice is healthier.",
+    "example_ka": "ორთქლზე მომზადებული ბრინჯი ჯანსაღია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "baked",
+    "georgian": "ღუმელში მომზადებული",
+    "pronunciation": "/beɪkt/",
+    "example_en": "Baked potato with butter.",
+    "example_ka": "ღუმელში მომზადებული კარტოფილი კარაქით.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "roasted",
+    "georgian": "მწვადი",
+    "pronunciation": "/ˈroʊstɪd/",
+    "example_en": "Roasted chicken with herbs.",
+    "example_ka": "მწვადი ქათამი ბალახებით.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "marinated",
+    "georgian": "მარინადში ჩადებული",
+    "pronunciation": "/ˈmærɪneɪtɪd/",
+    "example_en": "Marinated beef is tender.",
+    "example_ka": "მარინადში ჩადებული ძროხის ხორცი რბილია.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "seasoned",
+    "georgian": "გაშუშული",
+    "pronunciation": "/ˈsiːzənd/",
+    "example_en": "Well seasoned vegetables.",
+    "example_ka": "კარგად გაშუშული ბოსტნეული.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "bland",
+    "georgian": "უგემური",
+    "pronunciation": "/blænd/",
+    "example_en": "This food is too bland.",
+    "example_ka": "ეს საჭმელი ძალიან უგემურია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "salty",
+    "georgian": "მარილიანი",
+    "pronunciation": "/ˈsɔːlti/",
+    "example_en": "The soup is too salty.",
+    "example_ka": "წვნიანი ძალიან მარილიანია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "sweet",
+    "georgian": "ტკბილი",
+    "pronunciation": "/swiːt/",
+    "example_en": "This dessert is very sweet.",
+    "example_ka": "ეს დესერტი ძალიან ტკბილია.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "sour",
+    "georgian": "მჟავე",
+    "pronunciation": "/saʊər/",
+    "example_en": "The lemon is sour.",
+    "example_ka": "ლიმონი მჟავეა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "bitter",
+    "georgian": "მწარე",
+    "pronunciation": "/ˈbɪtər/",
+    "example_en": "Dark chocolate tastes bitter.",
+    "example_ka": "მუქი შოკოლადი მწარეა.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "crispy",
+    "georgian": "ხარკი",
+    "pronunciation": "/ˈkrɪspi/",
+    "example_en": "I love crispy fries.",
+    "example_ka": "ხარკი კარტოფილი მიყვარს.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "crunchy",
+    "georgian": "ხრაშუნა",
+    "pronunciation": "/ˈkrʌntʃi/",
+    "example_en": "These nuts are crunchy.",
+    "example_ka": "ეს თხილი ხრაშუნაა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "soft",
+    "georgian": "რბილი",
+    "pronunciation": "/sɔːft/",
+    "example_en": "The bread is nice and soft.",
+    "example_ka": "პური რბილი და კარგია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "tender",
+    "georgian": "ნაზი",
+    "pronunciation": "/ˈtendər/",
+    "example_en": "The meat is very tender.",
+    "example_ka": "ხორცი ძალიან ნაზია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "tough",
+    "georgian": "მყარი",
+    "pronunciation": "/tʌf/",
+    "example_en": "This steak is too tough.",
+    "example_ka": "ეს სტეიკი ძალიან მყარია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "juicy",
+    "georgian": "წვნიანი",
+    "pronunciation": "/ˈdʒuːsi/",
+    "example_en": "The burger is juicy.",
+    "example_ka": "ბურგერი წვნიანია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "dry",
+    "georgian": "მშრალი",
+    "pronunciation": "/draɪ/",
+    "example_en": "The chicken is a bit dry.",
+    "example_ka": "ქათამი ცოტა მშრალია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "creamy",
+    "georgian": "კრემისფერი",
+    "pronunciation": "/ˈkriːmi/",
+    "example_en": "This sauce is very creamy.",
+    "example_ka": "ეს საღებავი ძალიან კრემისფერია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "thick",
+    "georgian": "სქელი",
+    "pronunciation": "/θɪk/",
+    "example_en": "The soup is too thick.",
+    "example_ka": "წვნიანი ძალიან სქელია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "thin",
+    "georgian": "თხელი",
+    "pronunciation": "/θɪn/",
+    "example_en": "I like thin crust pizza.",
+    "example_ka": "თხელი ლავაშიანი პიცა მიყვარს.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "heavy",
+    "georgian": "მძიმე",
+    "pronunciation": "/ˈhevi/",
+    "example_en": "That meal was too heavy.",
+    "example_ka": "ეს კერძი ძალიან მძიმე იყო.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "light",
+    "georgian": "მსუბუქი",
+    "pronunciation": "/laɪt/",
+    "example_en": "I want something light.",
+    "example_ka": "რამე მსუბუქი მინდა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "filling",
+    "georgian": "მაჯე",
+    "pronunciation": "/ˈfɪlɪŋ/",
+    "example_en": "This sandwich is very filling.",
+    "example_ka": "ეს სენდვიჩი ძალიან მაჯეა.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "hungry",
+    "georgian": "მშიერი",
+    "pronunciation": "/ˈhʌŋɡri/",
+    "example_en": "I'm very hungry.",
+    "example_ka": "ძალიან მშიერი ვარ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "thirsty",
+    "georgian": "მწყურვალე",
+    "pronunciation": "/ˈθɜːrsti/",
+    "example_en": "Can I get water? I'm thirsty.",
+    "example_ka": "შეიძლება წყალი? მწყურვალე ვარ.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "full",
+    "georgian": "მაჯე",
+    "pronunciation": "/fʊl/",
+    "example_en": "I'm full, thanks.",
+    "example_ka": "მაჯე ვარ, მადლობა.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "satisfied",
+    "georgian": "კმაყოფილი",
+    "pronunciation": "/ˈsætɪsfaɪd/",
+    "example_en": "I'm satisfied with the meal.",
+    "example_ka": "კერძით კმაყოფილი ვარ.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "recommend",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrekəˈmend/",
+    "example_en": "What do you recommend?",
+    "example_ka": "რას გვირჩევთ?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "special",
+    "georgian": "სპეციალური",
+    "pronunciation": "/ˈspeʃəl/",
+    "example_en": "What's today's special?",
+    "example_ka": "რა სპეციალურია დღეს?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "popular",
+    "georgian": "პოპულარული",
+    "pronunciation": "/ˈpɑːpjələr/",
+    "example_en": "This is our most popular dish.",
+    "example_ka": "ეს ჩვენი ყველაზე პოპულარული კერძია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "famous",
+    "georgian": "ცნობილი",
+    "pronunciation": "/ˈfeɪməs/",
+    "example_en": "We're famous for our pizza.",
+    "example_ka": "პიცით ვართ ცნობილები.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "signature",
+    "georgian": "ხელმოწერისა",
+    "pronunciation": "/ˈsɪɡnətʃər/",
+    "example_en": "Try our signature cocktail.",
+    "example_ka": "ჩვენი ხელმოწერის კოქტეილი სცადეთ.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "homemade",
+    "georgian": "სახლისმაღალური",
+    "pronunciation": "/ˌhoʊmˈmeɪd/",
+    "example_en": "We serve homemade pasta.",
+    "example_ka": "სახლისმაღალურ პასტას მივირთმევთ.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "traditional",
+    "georgian": "ტრადიციული",
+    "pronunciation": "/trəˈdɪʃənəl/",
+    "example_en": "This is traditional Georgian food.",
+    "example_ka": "ეს ტრადიციული ქართული საჭმელია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "authentic",
+    "georgian": "ავთენტური",
+    "pronunciation": "/ɔːˈθentɪk/",
+    "example_en": "We serve authentic Italian cuisine.",
+    "example_ka": "ავთენტურ იტალიურ სამზარეულოს მივირთმევთ.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "exotic",
+    "georgian": "ეგზოტიკური",
+    "pronunciation": "/ɪɡˈzɑːtɪk/",
+    "example_en": "They serve exotic fruits here.",
+    "example_ka": "აქ ეგზოტიკურ ხილს მირთმევენ.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "gourmet",
+    "georgian": "გურმეტული",
+    "pronunciation": "/ɡʊrˈmeɪ/",
+    "example_en": "This is a gourmet restaurant.",
+    "example_ka": "ეს გურმეტული რესტორანია.",
+    "category": "restaurant",
+    "level": "C1"
+  },
+  {
+    "english": "casual",
+    "georgian": "ყოველდღიური",
+    "pronunciation": "/ˈkæʒuəl/",
+    "example_en": "This is a casual dining place.",
+    "example_ka": "ეს ყოველდღიური კვების ადგილია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "fine",
+    "georgian": "მაღალი ხარისხის",
+    "pronunciation": "/faɪn/",
+    "example_en": "This is fine dining.",
+    "example_ka": "ეს მაღალი ხარისხის კვებაა.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "fast",
+    "georgian": "სწრაფი",
+    "pronunciation": "/fæst/",
+    "example_en": "This is a fast food restaurant.",
+    "example_ka": "ეს სწრაფი კვების რესტორანია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "delivery",
+    "georgian": "მიტანა",
+    "pronunciation": "/dɪˈlɪvəri/",
+    "example_en": "Do you offer delivery service?",
+    "example_ka": "მიტანის სერვისი გაქვთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "pickup",
+    "georgian": "წაღება",
+    "pronunciation": "/ˈpɪkʌp/",
+    "example_en": "I'm here for pickup.",
+    "example_ka": "წასაღებად ვარ აქ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "dine-in",
+    "georgian": "ადგილზე კვება",
+    "pronunciation": "/daɪn ɪn/",
+    "example_en": "Is this for dine-in or takeout?",
+    "example_ka": "ეს ადგილზე კვებისთვისა თუ წასაღებისთვის?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "buffet",
+    "georgian": "ბუფეტი",
+    "pronunciation": "/bəˈfeɪ/",
+    "example_en": "They have a breakfast buffet.",
+    "example_ka": "მათ საუზმის ბუფეტი აქვთ.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmenjuː/",
+    "example_en": "Can I see the wine menu?",
+    "example_ka": "შეიძლება ღვინის მენიუ?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "combo",
+    "georgian": "კომბო",
+    "pronunciation": "/ˈkɑːmboʊ/",
+    "example_en": "I'll take the combo meal.",
+    "example_ka": "კომბო კერძს ავიღებ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "side",
+    "georgian": "გარნირი",
+    "pronunciation": "/saɪd/",
+    "example_en": "What sides do you have?",
+    "example_ka": "რა გარნირები გაქვთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "main",
+    "georgian": "მთავარი",
+    "pronunciation": "/meɪn/",
+    "example_en": "What's your main course?",
+    "example_ka": "რა არის მთავარი კერძი?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "course",
+    "georgian": "კერძი",
+    "pronunciation": "/kɔːrs/",
+    "example_en": "We offer a three-course meal.",
+    "example_ka": "სამკერძიან კვებას ვთავაზობთ.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "starter",
+    "georgian": "საწყისი კერძი",
+    "pronunciation": "/ˈstɑːrtər/",
+    "example_en": "What starters do you have?",
+    "example_ka": "რა საწყისი კერძები გაქვთ?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "entree",
+    "georgian": "მთავარი კერძი",
+    "pronunciation": "/ˈɑːntreɪ/",
+    "example_en": "The entree comes with salad.",
+    "example_ka": "მთავარ კერძს სალათი ერთვის.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "What's the price of this dish?",
+    "example_ka": "ამ კერძის ფასი რაა?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspensɪv/",
+    "example_en": "This restaurant is expensive.",
+    "example_ka": "ეს რესტორანი ძვირია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "I'm looking for cheap food.",
+    "example_ka": "იაფ საჭმელს ვეძებ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "affordable",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrdəbl/",
+    "example_en": "The prices here are affordable.",
+    "example_ka": "აქ ფასები ხელმისაწვდომია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "worth",
+    "georgian": "ღირებული",
+    "pronunciation": "/wɜːrθ/",
+    "example_en": "This meal is worth the price.",
+    "example_ka": "ეს კერძი ფასის ღირებულია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "value",
+    "georgian": "ღირებულება",
+    "pronunciation": "/ˈvæljuː/",
+    "example_en": "Great value for money.",
+    "example_ka": "ფულის კარგი ღირებულება.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Do you offer student discounts?",
+    "example_ka": "სტუდენტებისთვის ფასდაკლება გაქვთ?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "promotion",
+    "georgian": "აქცია",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "We have a lunch promotion today.",
+    "example_ka": "დღეს სადილის აქცია გვაქვს.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɑːn/",
+    "example_en": "I have a discount coupon.",
+    "example_ka": "ფასდაკლების კუპონი მაქვს.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "split",
+    "georgian": "გაყოფა",
+    "pronunciation": "/splɪt/",
+    "example_en": "Can we split the bill?",
+    "example_ka": "შეგვიძლია ანგარიშის გაყოფა?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "change",
+    "georgian": "ხურდა",
+    "pronunciation": "/tʃeɪndʒ/",
+    "example_en": "Keep the change.",
+    "example_ka": "ხურდა შეინახე.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "card",
+    "georgian": "ბარათი",
+    "pronunciation": "/kɑːrd/",
+    "example_en": "Can I pay by card?",
+    "example_ka": "ბარათით შემიძლია გადახდა?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "credit",
+    "georgian": "საკრედიტო",
+    "pronunciation": "/ˈkredɪt/",
+    "example_en": "Do you accept credit cards?",
+    "example_ka": "საკრედიტო ბარათებს იღებთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "debit",
+    "georgian": "სადებეტო",
+    "pronunciation": "/ˈdebɪt/",
+    "example_en": "I'll pay with my debit card.",
+    "example_ka": "სადებეტო ბარათით გადავიხდი.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "contactless",
+    "georgian": "უკონტაქტო",
+    "pronunciation": "/ˈkɑːntæktləs/",
+    "example_en": "Do you have contactless payment?",
+    "example_ka": "უკონტაქტო გადახდა გაქვთ?",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "mobile",
+    "georgian": "მობილური",
+    "pronunciation": "/ˈmoʊbaɪl/",
+    "example_en": "Can I pay with my mobile?",
+    "example_ka": "მობილურით შემიძლია გადახდა?",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "atmosphere",
+    "georgian": "ატმოსფერო",
+    "pronunciation": "/ˈætməsfɪr/",
+    "example_en": "This place has a great atmosphere.",
+    "example_ka": "ამ ადგილს შესანიშნავი ატმოსფერო აქვს.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "ambiance",
+    "georgian": "ამბიენტი",
+    "pronunciation": "/ˈæmbiəns/",
+    "example_en": "The restaurant has romantic ambiance.",
+    "example_ka": "რესტორანს რომანტიკული ამბიენტი აქვს.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "decor",
+    "georgian": "დეკორი",
+    "pronunciation": "/deɪˈkɔr/",
+    "example_en": "I love the vintage decor here.",
+    "example_ka": "მიყვარს აქ ვინტაჟური დეკორი.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "lighting",
+    "georgian": "განათება",
+    "pronunciation": "/ˈlaɪtɪŋ/",
+    "example_en": "The lighting is very dim.",
+    "example_ka": "განათება ძალიან მუქია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "music",
+    "georgian": "მუსიკა",
+    "pronunciation": "/ˈmjuzɪk/",
+    "example_en": "The music is too loud here.",
+    "example_ka": "აქ მუსიკა ძალიან ხმამაღლაა.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "noise",
+    "georgian": "ხმაური",
+    "pronunciation": "/nɔɪz/",
+    "example_en": "There's too much noise in here.",
+    "example_ka": "აქ ძალიან მეტი ხმაურია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "quiet",
+    "georgian": "წყნარი",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "This is a quiet restaurant.",
+    "example_ka": "ეს წყნარი რესტორანია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "busy",
+    "georgian": "დაკავებული",
+    "pronunciation": "/ˈbɪzi/",
+    "example_en": "The restaurant is very busy tonight.",
+    "example_ka": "რესტორანი დღეს საღამოს ძალიან დაკავებულია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "crowded",
+    "georgian": "ხალხმრავალი",
+    "pronunciation": "/ˈkraʊdəd/",
+    "example_en": "The cafe gets crowded on weekends.",
+    "example_ka": "კაფე შაბათ-კვირას ხალხმრავალი ხდება.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "empty",
+    "georgian": "ცარიელი",
+    "pronunciation": "/ˈempti/",
+    "example_en": "The restaurant is empty today.",
+    "example_ka": "რესტორანი დღეს ცარიელია.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "spacious",
+    "georgian": "ვრცელი",
+    "pronunciation": "/ˈspeɪʃəs/",
+    "example_en": "The dining room is very spacious.",
+    "example_ka": "სასადილო ღალიმტილი ძალიან ვრცელია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "cramped",
+    "georgian": "ვიწრო",
+    "pronunciation": "/kræmpt/",
+    "example_en": "The tables are too cramped together.",
+    "example_ka": "მაგიდები ძალიან ვიწროდ არის დაყენებული.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "cozy",
+    "georgian": "მყუდრო",
+    "pronunciation": "/ˈkoʊzi/",
+    "example_en": "This is a cozy little cafe.",
+    "example_ka": "ეს მყუდრო პატარა კაფეა.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "intimate",
+    "georgian": "ინტიმური",
+    "pronunciation": "/ˈɪntəmət/",
+    "example_en": "Perfect for an intimate dinner.",
+    "example_ka": "შესანიშნავია ინტიმური ვახშმისთვის.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "elegant",
+    "georgian": "ელეგანტური",
+    "pronunciation": "/ˈelɪɡənt/",
+    "example_en": "The restaurant has elegant decor.",
+    "example_ka": "რესტორანს ელეგანტური დეკორი აქვს.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "rustic",
+    "georgian": "სოფლური",
+    "pronunciation": "/ˈrʌstɪk/",
+    "example_en": "I like the rustic style here.",
+    "example_ka": "მიყვარს აქ სოფლური სტილი.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "modern",
+    "georgian": "თანამედროვე",
+    "pronunciation": "/ˈmɑdərn/",
+    "example_en": "The restaurant has modern furniture.",
+    "example_ka": "რესტორანს თანამედროვე ავეჯი აქვს.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "vintage",
+    "georgian": "ვინტაჟური",
+    "pronunciation": "/ˈvɪntɪdʒ/",
+    "example_en": "They have vintage decorations.",
+    "example_ka": "მათ ვინტაჟური დეკორაციები აქვთ.",
+    "category": "restaurant",
+    "level": "B2"
+  },
+  {
+    "english": "outdoor",
+    "georgian": "გარე",
+    "pronunciation": "/ˈaʊtdɔr/",
+    "example_en": "Do you have outdoor seating?",
+    "example_ka": "გარე ჯდომა გაქვთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "indoor",
+    "georgian": "შიდა",
+    "pronunciation": "/ˈɪndɔr/",
+    "example_en": "Let's sit in the indoor area.",
+    "example_ka": "შიდა ადგილას დავსხდეთ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "patio",
+    "georgian": "ეზო",
+    "pronunciation": "/ˈpæti.oʊ/",
+    "example_en": "The patio is nice in summer.",
+    "example_ka": "ეზო ზაფხულში კარგია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "garden",
+    "georgian": "ბაღი",
+    "pronunciation": "/ˈɡɑrdən/",
+    "example_en": "They have a beautiful garden area.",
+    "example_ka": "მათ ლამაზი ბაღის ნაწილი აქვთ.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "balcony",
+    "georgian": "აივანი",
+    "pronunciation": "/ˈbælkəni/",
+    "example_en": "Can we sit on the balcony?",
+    "example_ka": "აივანზე შეგვიძლია დავსხდეთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "rooftop",
+    "georgian": "სახურავზე",
+    "pronunciation": "/ˈruftɑp/",
+    "example_en": "The rooftop bar has great views.",
+    "example_ka": "სახურავის ბარს შესანიშნავი ხედები აქვს.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "Can we have a window table?",
+    "example_ka": "შეგვიძლია ფანჯრის მაგიდა?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "corner",
+    "georgian": "კუთხე",
+    "pronunciation": "/ˈkɔrnər/",
+    "example_en": "I like the corner table.",
+    "example_ka": "კუთხის მაგიდა მიყვარს.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "private",
+    "georgian": "პირადი",
+    "pronunciation": "/ˈpraɪvət/",
+    "example_en": "Do you have private dining rooms?",
+    "example_ka": "პირადი სასადილო ოთახები გაქვთ?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "open",
+    "georgian": "ღია",
+    "pronunciation": "/ˈoʊpən/",
+    "example_en": "Are you open on Sundays?",
+    "example_ka": "კვირას ღია ხართ?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "closed",
+    "georgian": "დახურული",
+    "pronunciation": "/kloʊzd/",
+    "example_en": "The kitchen is closed now.",
+    "example_ka": "სამზარეულო ახლა დახურულია.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "hours",
+    "georgian": "საათები",
+    "pronunciation": "/aʊərz/",
+    "example_en": "What are your opening hours?",
+    "example_ka": "რა საათებია თქვენი გახსნის?",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "late",
+    "georgian": "გვიან",
+    "pronunciation": "/leɪt/",
+    "example_en": "Do you serve food late?",
+    "example_ka": "გვიან მირთმევთ საჭმელს?",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "early",
+    "georgian": "ადრე",
+    "pronunciation": "/ˈɜrli/",
+    "example_en": "We open early for breakfast.",
+    "example_ka": "საუზმისთვის ადრე ვიხსნებით.",
+    "category": "restaurant",
+    "level": "A1"
+  },
+  {
+    "english": "rush",
+    "georgian": "ჩქარა",
+    "pronunciation": "/rʌʃ/",
+    "example_en": "This is the lunch rush hour.",
+    "example_ka": "ეს სადილის ჩქარული საათია.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "peak",
+    "georgian": "პიკი",
+    "pronunciation": "/pik/",
+    "example_en": "Dinner is our peak time.",
+    "example_ka": "ვახშამი ჩვენი პიკური დროა.",
+    "category": "restaurant",
+    "level": "B1"
+  },
+  {
+    "english": "slow",
+    "georgian": "ნელი",
+    "pronunciation": "/sloʊ/",
+    "example_en": "The service is a bit slow tonight.",
+    "example_ka": "მომსახურება ღამეს ოდნავ ნელია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "fast",
+    "georgian": "სწრაფი",
+    "pronunciation": "/fæst/",
+    "example_en": "We need fast service tonight.",
+    "example_ka": "ღამეს სწრაფი მომსახურება გვჭირდება.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "queue",
+    "georgian": "რიგი",
+    "pronunciation": "/kju/",
+    "example_en": "There's a long queue outside.",
+    "example_ka": "გარეთ გრძელი რიგია.",
+    "category": "restaurant",
+    "level": "A2"
+  },
+  {
+    "english": "wait",
+    "georgian": "მოლოდინი",
+    "pronunciation": "/weɪt/",
+    "example_en": "The wait time is 20 minutes.",
+    "example_ka": "მოლოდინის დრო 20 წუთია.",
+    "category": "restaurant",
+    "level": "A1"
+  }
 ]

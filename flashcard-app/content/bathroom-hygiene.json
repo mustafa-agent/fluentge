@@ -1,62 +1,1802 @@
 [
-  {"english": "Bathroom", "georgian": "აბაზანა", "pronunciation": "/ˈbɑːθruːm/", "example_en": "The bathroom is on the second floor.", "example_ka": "აბაზანა მეორე სართულზეა.", "category": "hygiene", "level": "A1"},
-  {"english": "Shower", "georgian": "შხაპი", "pronunciation": "/ˈʃaʊər/", "example_en": "I take a shower every morning.", "example_ka": "ყოველ დილით შხაპს ვიღებ.", "category": "hygiene", "level": "A1"},
-  {"english": "Bathtub", "georgian": "აბაზანის ვანა", "pronunciation": "/ˈbɑːθtʌb/", "example_en": "The bathtub is full of warm water.", "example_ka": "ვანა თბილი წყლით სავსეა.", "category": "hygiene", "level": "A1"},
-  {"english": "Soap", "georgian": "საპონი", "pronunciation": "/soʊp/", "example_en": "Wash your hands with soap.", "example_ka": "ხელები საპნით დაიბანე.", "category": "hygiene", "level": "A1"},
-  {"english": "Shampoo", "georgian": "შამპუნი", "pronunciation": "/ʃæmˈpuː/", "example_en": "I need to buy more shampoo.", "example_ka": "მეტი შამპუნი უნდა ვიყიდო.", "category": "hygiene", "level": "A1"},
-  {"english": "Conditioner", "georgian": "კონდიციონერი", "pronunciation": "/kənˈdɪʃənər/", "example_en": "Use conditioner after shampoo.", "example_ka": "შამპუნის შემდეგ კონდიციონერი გამოიყენე.", "category": "hygiene", "level": "A2"},
-  {"english": "Towel", "georgian": "პირსახოცი", "pronunciation": "/ˈtaʊəl/", "example_en": "Hand me a clean towel, please.", "example_ka": "გთხოვ, სუფთა პირსახოცი მომაწოდე.", "category": "hygiene", "level": "A1"},
-  {"english": "Toothbrush", "georgian": "კბილის ჯაგრისი", "pronunciation": "/ˈtuːθbrʌʃ/", "example_en": "Replace your toothbrush every three months.", "example_ka": "კბილის ჯაგრისი სამ თვეში ერთხელ შეცვალე.", "category": "hygiene", "level": "A1"},
-  {"english": "Toothpaste", "georgian": "კბილის პასტა", "pronunciation": "/ˈtuːθpeɪst/", "example_en": "I ran out of toothpaste.", "example_ka": "კბილის პასტა ამომიწურა.", "category": "hygiene", "level": "A1"},
-  {"english": "Mirror", "georgian": "სარკე", "pronunciation": "/ˈmɪrər/", "example_en": "Look in the mirror.", "example_ka": "სარკეში ჩაიხედე.", "category": "hygiene", "level": "A1"},
-  {"english": "Sink", "georgian": "ნიჟარა", "pronunciation": "/sɪŋk/", "example_en": "Wash your hands in the sink.", "example_ka": "ხელები ნიჟარაში დაიბანე.", "category": "hygiene", "level": "A1"},
-  {"english": "Faucet", "georgian": "ონკანი", "pronunciation": "/ˈfɔːsɪt/", "example_en": "Turn off the faucet after use.", "example_ka": "გამოყენების შემდეგ ონკანი გამორთე.", "category": "hygiene", "level": "A2"},
-  {"english": "Toilet", "georgian": "ტუალეტი", "pronunciation": "/ˈtɔɪlɪt/", "example_en": "The toilet is clean.", "example_ka": "ტუალეტი სუფთაა.", "category": "hygiene", "level": "A1"},
-  {"english": "Toilet paper", "georgian": "ტუალეტის ქაღალდი", "pronunciation": "/ˈtɔɪlɪt ˈpeɪpər/", "example_en": "We need more toilet paper.", "example_ka": "მეტი ტუალეტის ქაღალდი გვჭირდება.", "category": "hygiene", "level": "A1"},
-  {"english": "Razor", "georgian": "საპარსი", "pronunciation": "/ˈreɪzər/", "example_en": "I cut myself with a razor.", "example_ka": "საპარსით დავიჭერი.", "category": "hygiene", "level": "A2"},
-  {"english": "Shaving cream", "georgian": "საპარსი კრემი", "pronunciation": "/ˈʃeɪvɪŋ kriːm/", "example_en": "Apply shaving cream before shaving.", "example_ka": "გაპარსვამდე საპარსი კრემი წაისვი.", "category": "hygiene", "level": "A2"},
-  {"english": "Deodorant", "georgian": "დეოდორანტი", "pronunciation": "/diˈoʊdərənt/", "example_en": "Don't forget to put on deodorant.", "example_ka": "დეოდორანტის წასმა არ დაგავიწყდეს.", "category": "hygiene", "level": "A2"},
-  {"english": "Perfume", "georgian": "სუნამო", "pronunciation": "/pərˈfjuːm/", "example_en": "This perfume smells wonderful.", "example_ka": "ეს სუნამო მშვენივრად სურნელებს.", "category": "hygiene", "level": "A2"},
-  {"english": "Lotion", "georgian": "ლოსიონი", "pronunciation": "/ˈloʊʃən/", "example_en": "Apply lotion to dry skin.", "example_ka": "მშრალ კანზე ლოსიონი წაისვი.", "category": "hygiene", "level": "A2"},
-  {"english": "Moisturizer", "georgian": "დამატენიანებელი კრემი", "pronunciation": "/ˈmɔɪstʃəraɪzər/", "example_en": "Use moisturizer daily.", "example_ka": "დამატენიანებელი კრემი ყოველდღე გამოიყენე.", "category": "hygiene", "level": "A2"},
-  {"english": "Sunscreen", "georgian": "მზისგან დამცავი კრემი", "pronunciation": "/ˈsʌnskriːn/", "example_en": "Wear sunscreen at the beach.", "example_ka": "სანაპიროზე მზისგან დამცავი კრემი წაისვი.", "category": "hygiene", "level": "A2"},
-  {"english": "Comb", "georgian": "სავარცხელი", "pronunciation": "/koʊm/", "example_en": "Comb your hair before going out.", "example_ka": "გასვლამდე თმა გაივარცხნე.", "category": "hygiene", "level": "A1"},
-  {"english": "Hairbrush", "georgian": "თმის ჯაგრისი", "pronunciation": "/ˈheərbrʌʃ/", "example_en": "Where is my hairbrush?", "example_ka": "სად არის ჩემი თმის ჯაგრისი?", "category": "hygiene", "level": "A1"},
-  {"english": "Hair dryer", "georgian": "ფენი", "pronunciation": "/heər ˈdraɪər/", "example_en": "Dry your hair with the hair dryer.", "example_ka": "თმა ფენით გაიშრე.", "category": "hygiene", "level": "A1"},
-  {"english": "Nail clipper", "georgian": "ფრჩხილის საჭრელი", "pronunciation": "/neɪl ˈklɪpər/", "example_en": "I need the nail clipper.", "example_ka": "ფრჩხილის საჭრელი მჭირდება.", "category": "hygiene", "level": "A2"},
-  {"english": "Cotton pad", "georgian": "ბამბის დისკი", "pronunciation": "/ˈkɒtən pæd/", "example_en": "Use a cotton pad to remove makeup.", "example_ka": "მაკიაჟის მოსაშორებლად ბამბის დისკი გამოიყენე.", "category": "hygiene", "level": "A2"},
-  {"english": "Dental floss", "georgian": "კბილის ძაფი", "pronunciation": "/ˈdentəl flɒs/", "example_en": "Use dental floss every night.", "example_ka": "ყოველ საღამოს კბილის ძაფი გამოიყენე.", "category": "hygiene", "level": "A2"},
-  {"english": "Mouthwash", "georgian": "პირის ღრუის გამოსავლები", "pronunciation": "/ˈmaʊθwɒʃ/", "example_en": "Mouthwash keeps your breath fresh.", "example_ka": "პირის ღრუის გამოსავლები სუნთქვას ასუფთავებს.", "category": "hygiene", "level": "A2"},
-  {"english": "Bath mat", "georgian": "აბაზანის ხალიჩა", "pronunciation": "/bɑːθ mæt/", "example_en": "Step on the bath mat when you get out.", "example_ka": "გამოსვლისას აბაზანის ხალიჩაზე დადექი.", "category": "hygiene", "level": "A2"},
-  {"english": "Bathrobe", "georgian": "ხალათი", "pronunciation": "/ˈbɑːθroʊb/", "example_en": "He put on his bathrobe.", "example_ka": "ხალათი ჩაიცვა.", "category": "hygiene", "level": "A2"},
-  {"english": "Sponge", "georgian": "ღრუბელი", "pronunciation": "/spʌndʒ/", "example_en": "Use a sponge to wash dishes.", "example_ka": "ჭურჭლის დასაბანად ღრუბელი გამოიყენე.", "category": "hygiene", "level": "A1"},
-  {"english": "Body wash", "georgian": "ტანის საშუალება", "pronunciation": "/ˈbɒdi wɒʃ/", "example_en": "I prefer body wash over bar soap.", "example_ka": "საპონს ტანის საშუალებას ვამჯობინებ.", "category": "hygiene", "level": "A2"},
-  {"english": "Washcloth", "georgian": "საწმენდი ტილო", "pronunciation": "/ˈwɒʃklɒθ/", "example_en": "Use a washcloth to scrub your face.", "example_ka": "სახის მოსაწმენდად საწმენდი ტილო გამოიყენე.", "category": "hygiene", "level": "A2"},
-  {"english": "Drain", "georgian": "ნიჟარის ხვრელი", "pronunciation": "/dreɪn/", "example_en": "The drain is clogged.", "example_ka": "ნიჟარის ხვრელი გაიჭედა.", "category": "hygiene", "level": "A2"},
-  {"english": "Plunger", "georgian": "ვანტუზი", "pronunciation": "/ˈplʌndʒər/", "example_en": "Use a plunger to unclog the toilet.", "example_ka": "ტუალეტის გასაწმენდად ვანტუზი გამოიყენე.", "category": "hygiene", "level": "B1"},
-  {"english": "Bleach", "georgian": "მათეთრებელი", "pronunciation": "/bliːtʃ/", "example_en": "Clean the bathroom with bleach.", "example_ka": "აბაზანა მათეთრებლით გაასუფთავე.", "category": "hygiene", "level": "B1"},
-  {"english": "Tissue", "georgian": "ხელსახოცი", "pronunciation": "/ˈtɪʃuː/", "example_en": "Pass me a tissue, please.", "example_ka": "გთხოვ, ხელსახოცი მომაწოდე.", "category": "hygiene", "level": "A1"},
-  {"english": "Lip balm", "georgian": "ტუჩის ბალზამი", "pronunciation": "/lɪp bɑːm/", "example_en": "Apply lip balm in cold weather.", "example_ka": "ცივ ამინდში ტუჩის ბალზამი წაისვი.", "category": "hygiene", "level": "A2"},
-  {"english": "Tweezers", "georgian": "პინცეტი", "pronunciation": "/ˈtwiːzərz/", "example_en": "I need tweezers to remove the splinter.", "example_ka": "ეკლის ამოსაღებად პინცეტი მჭირდება.", "category": "hygiene", "level": "B1"},
-  {"english": "Curling iron", "georgian": "თმის უთო", "pronunciation": "/ˈkɜːrlɪŋ ˈaɪərn/", "example_en": "She used a curling iron for her hair.", "example_ka": "თმის უთო გამოიყენა.", "category": "hygiene", "level": "B1"},
-  {"english": "Makeup", "georgian": "მაკიაჟი", "pronunciation": "/ˈmeɪkʌp/", "example_en": "She put on her makeup.", "example_ka": "მაკიაჟი გაიკეთა.", "category": "hygiene", "level": "A1"},
-  {"english": "Mascara", "georgian": "ტუში", "pronunciation": "/mæˈskærə/", "example_en": "She applied mascara to her eyelashes.", "example_ka": "წამწამებზე ტუში წაისვა.", "category": "hygiene", "level": "A2"},
-  {"english": "Lipstick", "georgian": "პომადა", "pronunciation": "/ˈlɪpstɪk/", "example_en": "She chose a red lipstick.", "example_ka": "წითელი პომადა აირჩია.", "category": "hygiene", "level": "A1"},
-  {"english": "Foundation", "georgian": "ტონალური კრემი", "pronunciation": "/faʊnˈdeɪʃən/", "example_en": "Match your foundation to your skin tone.", "example_ka": "ტონალური კრემი კანის ფერს შეუთანხმე.", "category": "hygiene", "level": "A2"},
-  {"english": "Shower gel", "georgian": "შხაპის გელი", "pronunciation": "/ˈʃaʊər dʒel/", "example_en": "I bought a new shower gel.", "example_ka": "ახალი შხაპის გელი ვიყიდე.", "category": "hygiene", "level": "A1"},
-  {"english": "Hand sanitizer", "georgian": "ხელის ანტისეპტიკი", "pronunciation": "/hænd ˈsænɪtaɪzər/", "example_en": "Use hand sanitizer when you can't wash.", "example_ka": "როცა ხელის დაბანა არ შეგიძლია, ანტისეპტიკი გამოიყენე.", "category": "hygiene", "level": "A2"},
-  {"english": "Floss", "georgian": "კბილის ძაფი", "pronunciation": "/flɒs/", "example_en": "Remember to floss your teeth.", "example_ka": "კბილის ძაფით გაწმენდა არ დაგავიწყდეს.", "category": "hygiene", "level": "A2"},
-  {"english": "Shower curtain", "georgian": "შხაპის ფარდა", "pronunciation": "/ˈʃaʊər ˈkɜːrtən/", "example_en": "The shower curtain needs replacing.", "example_ka": "შხაპის ფარდა შეცვლას საჭიროებს.", "category": "hygiene", "level": "A2"},
-  {"english": "Scale", "georgian": "სასწორი", "pronunciation": "/skeɪl/", "example_en": "I weigh myself on the bathroom scale.", "example_ka": "აბაზანის სასწორზე ვიწონი თავს.", "category": "hygiene", "level": "A2"},
-  {"english": "Scrub", "georgian": "სკრაბი", "pronunciation": "/skrʌb/", "example_en": "Use a face scrub once a week.", "example_ka": "კვირაში ერთხელ სახის სკრაბი გამოიყენე.", "category": "hygiene", "level": "A2"},
-  {"english": "Bubble bath", "georgian": "ქაფიანი აბაზანა", "pronunciation": "/ˈbʌbəl bɑːθ/", "example_en": "She loves taking a bubble bath.", "example_ka": "ქაფიანი აბაზანის მიღება უყვარს.", "category": "hygiene", "level": "A2"},
-  {"english": "Rinse", "georgian": "ჩამობანა", "pronunciation": "/rɪns/", "example_en": "Rinse the shampoo out of your hair.", "example_ka": "შამპუნი თმიდან ჩამოიბანე.", "category": "hygiene", "level": "A2"},
-  {"english": "Lather", "georgian": "ქაფი", "pronunciation": "/ˈlæðər/", "example_en": "Work the soap into a lather.", "example_ka": "საპონი დააქაფე.", "category": "hygiene", "level": "B1"},
-  {"english": "Hygiene", "georgian": "ჰიგიენა", "pronunciation": "/ˈhaɪdʒiːn/", "example_en": "Good hygiene prevents illness.", "example_ka": "კარგი ჰიგიენა ავადმყოფობას ხელს უშლის.", "category": "hygiene", "level": "A2"},
-  {"english": "Brush teeth", "georgian": "კბილების გახეხვა", "pronunciation": "/brʌʃ tiːθ/", "example_en": "Brush your teeth twice a day.", "example_ka": "კბილები დღეში ორჯერ გაიხეხე.", "category": "hygiene", "level": "A1"},
-  {"english": "Wash face", "georgian": "სახის დაბანა", "pronunciation": "/wɒʃ feɪs/", "example_en": "Wash your face before bed.", "example_ka": "ძილის წინ სახე დაიბანე.", "category": "hygiene", "level": "A1"},
-  {"english": "Dry off", "georgian": "გაშრობა", "pronunciation": "/draɪ ɒf/", "example_en": "Dry off with a towel after swimming.", "example_ka": "ცურვის შემდეგ პირსახოცით გაიშრე.", "category": "hygiene", "level": "A1"},
-  {"english": "Exfoliate", "georgian": "ექსფოლიაცია", "pronunciation": "/ɪkˈsfoʊlieɪt/", "example_en": "Exfoliate your skin to remove dead cells.", "example_ka": "მკვდარი უჯრედების მოსაშორებლად კანის ექსფოლიაცია გაიკეთე.", "category": "hygiene", "level": "B1"},
-  {"english": "Antibacterial", "georgian": "ანტიბაქტერიული", "pronunciation": "/ˌæntibækˈtɪəriəl/", "example_en": "Use antibacterial soap.", "example_ka": "ანტიბაქტერიული საპონი გამოიყენე.", "category": "hygiene", "level": "B1"},
-  {"english": "Flush", "georgian": "ჩაშვება", "pronunciation": "/flʌʃ/", "example_en": "Don't forget to flush the toilet.", "example_ka": "ტუალეტის ჩაშვება არ დაგავიწყდეს.", "category": "hygiene", "level": "A1"}
+  {
+    "english": "Bathroom",
+    "georgian": "აბაზანა",
+    "pronunciation": "/ˈbɑːθruːm/",
+    "example_en": "The bathroom is on the second floor.",
+    "example_ka": "აბაზანა მეორე სართულზეა.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Shower",
+    "georgian": "შხაპი",
+    "pronunciation": "/ˈʃaʊər/",
+    "example_en": "I take a shower every morning.",
+    "example_ka": "ყოველ დილით შხაპს ვიღებ.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Bathtub",
+    "georgian": "აბაზანის ვანა",
+    "pronunciation": "/ˈbɑːθtʌb/",
+    "example_en": "The bathtub is full of warm water.",
+    "example_ka": "ვანა თბილი წყლით სავსეა.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Soap",
+    "georgian": "საპონი",
+    "pronunciation": "/soʊp/",
+    "example_en": "Wash your hands with soap.",
+    "example_ka": "ხელები საპნით დაიბანე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Shampoo",
+    "georgian": "შამპუნი",
+    "pronunciation": "/ʃæmˈpuː/",
+    "example_en": "I need to buy more shampoo.",
+    "example_ka": "მეტი შამპუნი უნდა ვიყიდო.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Conditioner",
+    "georgian": "კონდიციონერი",
+    "pronunciation": "/kənˈdɪʃənər/",
+    "example_en": "Use conditioner after shampoo.",
+    "example_ka": "შამპუნის შემდეგ კონდიციონერი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Towel",
+    "georgian": "პირსახოცი",
+    "pronunciation": "/ˈtaʊəl/",
+    "example_en": "Hand me a clean towel, please.",
+    "example_ka": "გთხოვ, სუფთა პირსახოცი მომაწოდე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Toothbrush",
+    "georgian": "კბილის ჯაგრისი",
+    "pronunciation": "/ˈtuːθbrʌʃ/",
+    "example_en": "Replace your toothbrush every three months.",
+    "example_ka": "კბილის ჯაგრისი სამ თვეში ერთხელ შეცვალე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Toothpaste",
+    "georgian": "კბილის პასტა",
+    "pronunciation": "/ˈtuːθpeɪst/",
+    "example_en": "I ran out of toothpaste.",
+    "example_ka": "კბილის პასტა ამომიწურა.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Mirror",
+    "georgian": "სარკე",
+    "pronunciation": "/ˈmɪrər/",
+    "example_en": "Look in the mirror.",
+    "example_ka": "სარკეში ჩაიხედე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Sink",
+    "georgian": "ნიჟარა",
+    "pronunciation": "/sɪŋk/",
+    "example_en": "Wash your hands in the sink.",
+    "example_ka": "ხელები ნიჟარაში დაიბანე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Faucet",
+    "georgian": "ონკანი",
+    "pronunciation": "/ˈfɔːsɪt/",
+    "example_en": "Turn off the faucet after use.",
+    "example_ka": "გამოყენების შემდეგ ონკანი გამორთე.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Toilet",
+    "georgian": "ტუალეტი",
+    "pronunciation": "/ˈtɔɪlɪt/",
+    "example_en": "The toilet is clean.",
+    "example_ka": "ტუალეტი სუფთაა.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Razor",
+    "georgian": "საპარსი",
+    "pronunciation": "/ˈreɪzər/",
+    "example_en": "I cut myself with a razor.",
+    "example_ka": "საპარსით დავიჭერი.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Deodorant",
+    "georgian": "დეოდორანტი",
+    "pronunciation": "/diˈoʊdərənt/",
+    "example_en": "Don't forget to put on deodorant.",
+    "example_ka": "დეოდორანტის წასმა არ დაგავიწყდეს.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Perfume",
+    "georgian": "სუნამო",
+    "pronunciation": "/pərˈfjuːm/",
+    "example_en": "This perfume smells wonderful.",
+    "example_ka": "ეს სუნამო მშვენივრად სურნელებს.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Lotion",
+    "georgian": "ლოსიონი",
+    "pronunciation": "/ˈloʊʃən/",
+    "example_en": "Apply lotion to dry skin.",
+    "example_ka": "მშრალ კანზე ლოსიონი წაისვი.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Moisturizer",
+    "georgian": "დამატენიანებელი კრემი",
+    "pronunciation": "/ˈmɔɪstʃəraɪzər/",
+    "example_en": "Use moisturizer daily.",
+    "example_ka": "დამატენიანებელი კრემი ყოველდღე გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Sunscreen",
+    "georgian": "მზისგან დამცავი კრემი",
+    "pronunciation": "/ˈsʌnskriːn/",
+    "example_en": "Wear sunscreen at the beach.",
+    "example_ka": "სანაპიროზე მზისგან დამცავი კრემი წაისვი.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Comb",
+    "georgian": "სავარცხელი",
+    "pronunciation": "/koʊm/",
+    "example_en": "Comb your hair before going out.",
+    "example_ka": "გასვლამდე თმა გაივარცხნე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Hairbrush",
+    "georgian": "თმის ჯაგრისი",
+    "pronunciation": "/ˈheərbrʌʃ/",
+    "example_en": "Where is my hairbrush?",
+    "example_ka": "სად არის ჩემი თმის ჯაგრისი?",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Mouthwash",
+    "georgian": "პირის ღრუის გამოსავლები",
+    "pronunciation": "/ˈmaʊθwɒʃ/",
+    "example_en": "Mouthwash keeps your breath fresh.",
+    "example_ka": "პირის ღრუის გამოსავლები სუნთქვას ასუფთავებს.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Bathrobe",
+    "georgian": "ხალათი",
+    "pronunciation": "/ˈbɑːθroʊb/",
+    "example_en": "He put on his bathrobe.",
+    "example_ka": "ხალათი ჩაიცვა.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Sponge",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/spʌndʒ/",
+    "example_en": "Use a sponge to wash dishes.",
+    "example_ka": "ჭურჭლის დასაბანად ღრუბელი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Washcloth",
+    "georgian": "საწმენდი ტილო",
+    "pronunciation": "/ˈwɒʃklɒθ/",
+    "example_en": "Use a washcloth to scrub your face.",
+    "example_ka": "სახის მოსაწმენდად საწმენდი ტილო გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Drain",
+    "georgian": "ნიჟარის ხვრელი",
+    "pronunciation": "/dreɪn/",
+    "example_en": "The drain is clogged.",
+    "example_ka": "ნიჟარის ხვრელი გაიჭედა.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Plunger",
+    "georgian": "ვანტუზი",
+    "pronunciation": "/ˈplʌndʒər/",
+    "example_en": "Use a plunger to unclog the toilet.",
+    "example_ka": "ტუალეტის გასაწმენდად ვანტუზი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bleach",
+    "georgian": "მათეთრებელი",
+    "pronunciation": "/bliːtʃ/",
+    "example_en": "Clean the bathroom with bleach.",
+    "example_ka": "აბაზანა მათეთრებლით გაასუფთავე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Tissue",
+    "georgian": "ხელსახოცი",
+    "pronunciation": "/ˈtɪʃuː/",
+    "example_en": "Pass me a tissue, please.",
+    "example_ka": "გთხოვ, ხელსახოცი მომაწოდე.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Tweezers",
+    "georgian": "პინცეტი",
+    "pronunciation": "/ˈtwiːzərz/",
+    "example_en": "I need tweezers to remove the splinter.",
+    "example_ka": "ეკლის ამოსაღებად პინცეტი მჭირდება.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Makeup",
+    "georgian": "მაკიაჟი",
+    "pronunciation": "/ˈmeɪkʌp/",
+    "example_en": "She put on her makeup.",
+    "example_ka": "მაკიაჟი გაიკეთა.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Mascara",
+    "georgian": "ტუში",
+    "pronunciation": "/mæˈskærə/",
+    "example_en": "She applied mascara to her eyelashes.",
+    "example_ka": "წამწამებზე ტუში წაისვა.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Lipstick",
+    "georgian": "პომადა",
+    "pronunciation": "/ˈlɪpstɪk/",
+    "example_en": "She chose a red lipstick.",
+    "example_ka": "წითელი პომადა აირჩია.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Foundation",
+    "georgian": "ტონალური კრემი",
+    "pronunciation": "/faʊnˈdeɪʃən/",
+    "example_en": "Match your foundation to your skin tone.",
+    "example_ka": "ტონალური კრემი კანის ფერს შეუთანხმე.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Floss",
+    "georgian": "კბილის ძაფი",
+    "pronunciation": "/flɒs/",
+    "example_en": "Remember to floss your teeth.",
+    "example_ka": "კბილის ძაფით გაწმენდა არ დაგავიწყდეს.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Scale",
+    "georgian": "სასწორი",
+    "pronunciation": "/skeɪl/",
+    "example_en": "I weigh myself on the bathroom scale.",
+    "example_ka": "აბაზანის სასწორზე ვიწონი თავს.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Scrub",
+    "georgian": "სკრაბი",
+    "pronunciation": "/skrʌb/",
+    "example_en": "Use a face scrub once a week.",
+    "example_ka": "კვირაში ერთხელ სახის სკრაბი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Rinse",
+    "georgian": "ჩამობანა",
+    "pronunciation": "/rɪns/",
+    "example_en": "Rinse the shampoo out of your hair.",
+    "example_ka": "შამპუნი თმიდან ჩამოიბანე.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Lather",
+    "georgian": "ქაფი",
+    "pronunciation": "/ˈlæðər/",
+    "example_en": "Work the soap into a lather.",
+    "example_ka": "საპონი დააქაფე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Hygiene",
+    "georgian": "ჰიგიენა",
+    "pronunciation": "/ˈhaɪdʒiːn/",
+    "example_en": "Good hygiene prevents illness.",
+    "example_ka": "კარგი ჰიგიენა ავადმყოფობას ხელს უშლის.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Exfoliate",
+    "georgian": "ექსფოლიაცია",
+    "pronunciation": "/ɪkˈsfoʊlieɪt/",
+    "example_en": "Exfoliate your skin to remove dead cells.",
+    "example_ka": "მკვდარი უჯრედების მოსაშორებლად კანის ექსფოლიაცია გაიკეთე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Antibacterial",
+    "georgian": "ანტიბაქტერიული",
+    "pronunciation": "/ˌæntibækˈtɪəriəl/",
+    "example_en": "Use antibacterial soap.",
+    "example_ka": "ანტიბაქტერიული საპონი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Flush",
+    "georgian": "ჩაშვება",
+    "pronunciation": "/flʌʃ/",
+    "example_en": "Don't forget to flush the toilet.",
+    "example_ka": "ტუალეტის ჩაშვება არ დაგავიწყდეს.",
+    "category": "bathroom-hygiene",
+    "level": "A1"
+  },
+  {
+    "english": "Washbasin",
+    "georgian": "ხელსაბანი",
+    "pronunciation": "/ˈwɒʃbeɪsɪn/",
+    "example_en": "The washbasin is cracked.",
+    "example_ka": "ხელსაბანი გაბზარულია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Showerhead",
+    "georgian": "შხაპის თავი",
+    "pronunciation": "/ˈʃaʊərhed/",
+    "example_en": "Replace the showerhead.",
+    "example_ka": "შხაპის თავი შეცვალე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Curtain",
+    "georgian": "ფარდა",
+    "pronunciation": "/ˈkɜːrtən/",
+    "example_en": "Close the shower curtain.",
+    "example_ka": "შხაპის ფარდა დახურე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Mat",
+    "georgian": "ფეხსაგები",
+    "pronunciation": "/mæt/",
+    "example_en": "Step on the bath mat.",
+    "example_ka": "აბაზანის ფეხსაგებზე დადექი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Rack",
+    "georgian": "თაროს",
+    "pronunciation": "/ræk/",
+    "example_en": "Hang the towel on the rack.",
+    "example_ka": "პირსახოცი თაროზე ჩამოკიდე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Shelf",
+    "georgian": "თარო",
+    "pronunciation": "/ʃelf/",
+    "example_en": "Put the shampoo on the shelf.",
+    "example_ka": "შამპუნი თაროზე დადე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Cabinet",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈkæbɪnɪt/",
+    "example_en": "The medicine is in the cabinet.",
+    "example_ka": "წამალი კარადაშია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Hamper",
+    "georgian": "კალათა",
+    "pronunciation": "/ˈhæmpər/",
+    "example_en": "Put dirty clothes in the hamper.",
+    "example_ka": "ბინძური ტანსაცმელი კალათაში ჩადე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Hook",
+    "georgian": "კაუჭი",
+    "pronunciation": "/hʊk/",
+    "example_en": "Hang your robe on the hook.",
+    "example_ka": "ხალათი კაუჭზე ჩამოკიდე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Plug",
+    "georgian": "საცობი",
+    "pronunciation": "/plʌɡ/",
+    "example_en": "Put the plug in the drain.",
+    "example_ka": "საცობი ხვრელში ჩადე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Tile",
+    "georgian": "ფილა",
+    "pronunciation": "/taɪl/",
+    "example_en": "The bathroom tiles are slippery.",
+    "example_ka": "აბაზანის ფილები ცურია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Grout",
+    "georgian": "ფუგა",
+    "pronunciation": "/ɡraʊt/",
+    "example_en": "Clean the grout regularly.",
+    "example_ka": "ფუგა რეგულარულად გაასუფთავე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Pipe",
+    "georgian": "მილი",
+    "pronunciation": "/paɪp/",
+    "example_en": "The pipe is leaking.",
+    "example_ka": "მილი ჟონავს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Valve",
+    "georgian": "სარქველი",
+    "pronunciation": "/vælv/",
+    "example_en": "Turn the valve to the left.",
+    "example_ka": "სარქველი მარცხნივ მოატრიალე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Heater",
+    "georgian": "გამაცხელებელი",
+    "pronunciation": "/ˈhiːtər/",
+    "example_en": "The water heater is broken.",
+    "example_ka": "წყლის გამაცხელებელი გაფუჭდა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Ventilator",
+    "georgian": "ვენტილატორი",
+    "pronunciation": "/ˈventɪleɪtər/",
+    "example_en": "Turn on the ventilator.",
+    "example_ka": "ვენტილატორი ჩართე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Fan",
+    "georgian": "გულშემატკივარი",
+    "pronunciation": "/fæn/",
+    "example_en": "The exhaust fan removes steam.",
+    "example_ka": "გამწოვი ორთქლს აცილებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Steam",
+    "georgian": "ორთქლი",
+    "pronunciation": "/stiːm/",
+    "example_en": "The mirror fogged up from steam.",
+    "example_ka": "სარკე ორთქლისგან დაიბინდა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Humidity",
+    "georgian": "ტენიანობა",
+    "pronunciation": "/hjuːˈmɪdɪti/",
+    "example_en": "Humidity causes mold.",
+    "example_ka": "ტენიანობა ობს იწვევს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Mold",
+    "georgian": "ობი",
+    "pronunciation": "/moʊld/",
+    "example_en": "Clean the mold from the walls.",
+    "example_ka": "ობი კედლებიდან გაასუფთავე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Mildew",
+    "georgian": "ობი",
+    "pronunciation": "/ˈmɪlduː/",
+    "example_en": "Mildew grows in damp areas.",
+    "example_ka": "ობი ნესტიან ადგილებში ჩნდება.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Cleaner",
+    "georgian": "საწმენდი",
+    "pronunciation": "/ˈkliːnər/",
+    "example_en": "Use bathroom cleaner weekly.",
+    "example_ka": "ყოველ კვირა აბაზანის საწმენდი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Disinfectant",
+    "georgian": "სადეზინფექციო",
+    "pronunciation": "/ˌdɪsɪnˈfektənt/",
+    "example_en": "Spray disinfectant on surfaces.",
+    "example_ka": "ზედაპირებზე სადეზინფექციო შეასხურე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Detergent",
+    "georgian": "სარეცხი",
+    "pronunciation": "/dɪˈtɜːrdʒənt/",
+    "example_en": "Use mild detergent.",
+    "example_ka": "რბილი სარეცხი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Sanitizer",
+    "georgian": "სანიტაიზერი",
+    "pronunciation": "/ˈsænɪtaɪzər/",
+    "example_en": "Apply hand sanitizer.",
+    "example_ka": "ხელის სანიტაიზერი წაისვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Germs",
+    "georgian": "მიკრობები",
+    "pronunciation": "/dʒɜːrmz/",
+    "example_en": "Wash hands to kill germs.",
+    "example_ka": "მიკრობების მოსაკლავად ხელები დაიბანე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bacteria",
+    "georgian": "ბაქტერიები",
+    "pronunciation": "/bækˈtɪəriə/",
+    "example_en": "Bacteria spread on wet surfaces.",
+    "example_ka": "ბაქტერიები სველ ზედაპირებზე ვრცელდება.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Infection",
+    "georgian": "ინფექცია",
+    "pronunciation": "/ɪnˈfekʃən/",
+    "example_en": "Poor hygiene causes infection.",
+    "example_ka": "ცუდი ჰიგიენა ინფექციას იწვევს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Prevention",
+    "georgian": "პრევენცია",
+    "pronunciation": "/prɪˈvenʃən/",
+    "example_en": "Prevention is better than cure.",
+    "example_ka": "პრევენცია მკურნალობაზე უკეთესია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Cleanser",
+    "georgian": "საწმენდი",
+    "pronunciation": "/ˈklenzər/",
+    "example_en": "Use a gentle facial cleanser.",
+    "example_ka": "რბილი სახის საწმენდი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Toner",
+    "georgian": "ტონერი",
+    "pronunciation": "/ˈtoʊnər/",
+    "example_en": "Apply toner after cleansing.",
+    "example_ka": "გაწმენდის შემდეგ ტონერი წაისვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Cotton",
+    "georgian": "ბამბა",
+    "pronunciation": "/ˈkɒtən/",
+    "example_en": "Use cotton pads to remove makeup.",
+    "example_ka": "მაკიაჟის მოსაშორებლად ბამბის ტამპონები გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Swab",
+    "georgian": "ჩხირი",
+    "pronunciation": "/swɒb/",
+    "example_en": "Use a cotton swab carefully.",
+    "example_ka": "ბამბის ჩხირი ფრთხილად გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Pad",
+    "georgian": "ტამპონი",
+    "pronunciation": "/pæd/",
+    "example_en": "Apply toner with a cotton pad.",
+    "example_ka": "ტონერი ბამბის ტამპონით წაისვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Dispenser",
+    "georgian": "დისპენსერი",
+    "pronunciation": "/dɪˈspensər/",
+    "example_en": "Refill the soap dispenser.",
+    "example_ka": "საპნის დისპენსერი შეავსე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bottle",
+    "georgian": "ბოთლი",
+    "pronunciation": "/ˈbɒtəl/",
+    "example_en": "The shampoo bottle is empty.",
+    "example_ka": "შამპუნის ბოთლი ცარიელია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Tube",
+    "georgian": "ტუბი",
+    "pronunciation": "/tjuːb/",
+    "example_en": "Squeeze the tube from the bottom.",
+    "example_ka": "ტუბი ბოლოდან დააჭირე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bucket",
+    "georgian": "თაიგული",
+    "pronunciation": "/ˈbʌkɪt/",
+    "example_en": "Fill the bucket with water.",
+    "example_ka": "ვედრო წყლით აავსე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Basin",
+    "georgian": "აუზი",
+    "pronunciation": "/ˈbeɪsən/",
+    "example_en": "Fill the basin with warm water.",
+    "example_ka": "აუზი თბილი წყლით აავსე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Tap",
+    "georgian": "ონკანი",
+    "pronunciation": "/tæp/",
+    "example_en": "Turn on the hot tap.",
+    "example_ka": "ცხელი წყლის ონკანი გახსენი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Nozzle",
+    "georgian": "თავაკი",
+    "pronunciation": "/ˈnɒzəl/",
+    "example_en": "Adjust the shower nozzle.",
+    "example_ka": "შხაპის თავაკი შეასწორე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Hose",
+    "georgian": "შლანგი",
+    "pronunciation": "/hoʊz/",
+    "example_en": "The shower hose needs replacing.",
+    "example_ka": "შხაპის შლანგი შეცვლას საჭიროებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Stopper",
+    "georgian": "საცობი",
+    "pronunciation": "/ˈstɒpər/",
+    "example_en": "Put the stopper in the tub.",
+    "example_ka": "საცობი ვანაში ჩადე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Overflow",
+    "georgian": "გადმოსვლა",
+    "pronunciation": "/ˈoʊvərfloʊ/",
+    "example_en": "The overflow prevents flooding.",
+    "example_ka": "გადმოსვლის ხვრელი დატბორვას ხელს უშლის.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Leak",
+    "georgian": "ჟონვა",
+    "pronunciation": "/liːk/",
+    "example_en": "There is a leak under the sink.",
+    "example_ka": "ნიჟარის ქვეშ ჟონვაა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Drip",
+    "georgian": "წვეთი",
+    "pronunciation": "/drɪp/",
+    "example_en": "The faucet drips all night.",
+    "example_ka": "ონკანი მთელ ღამეს წვეთავს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Clog",
+    "georgian": "გაჭედვა",
+    "pronunciation": "/klɒɡ/",
+    "example_en": "Hair can clog the drain.",
+    "example_ka": "თმამ შეიძლება ხვრელი გაჭედოს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Unclog",
+    "georgian": "გასუფთავება",
+    "pronunciation": "/ʌnˈklɒɡ/",
+    "example_en": "Unclog the drain with chemicals.",
+    "example_ka": "ხვრელი ქიმიკატებით გაასუფთავე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Plumbing",
+    "georgian": "სანტექნიკა",
+    "pronunciation": "/ˈplʌmɪŋ/",
+    "example_en": "Call the plumbing service.",
+    "example_ka": "სანტექნიკის სერვისს დაურეკე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Plumber",
+    "georgian": "სანტექნიკოსი",
+    "pronunciation": "/ˈplʌmər/",
+    "example_en": "The plumber fixed the pipe.",
+    "example_ka": "სანტექნიკოსმა მილი გაასწორა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Fixture",
+    "georgian": "არმატურა",
+    "pronunciation": "/ˈfɪkstʃər/",
+    "example_en": "Update the bathroom fixtures.",
+    "example_ka": "აბაზანის არმატურა განაახლე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bidet",
+    "georgian": "ბიდე",
+    "pronunciation": "/bɪˈdeɪ/",
+    "example_en": "Many homes have a bidet.",
+    "example_ka": "ბევრ სახლში ბიდეა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Seat",
+    "georgian": "დასაჯდომი",
+    "pronunciation": "/siːt/",
+    "example_en": "Put the toilet seat down.",
+    "example_ka": "ტუალეტის დასაჯდომი ჩამოწიე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Lid",
+    "georgian": "სახურავი",
+    "pronunciation": "/lɪd/",
+    "example_en": "Close the toilet lid.",
+    "example_ka": "ტუალეტის სახურავი დახურე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Handle",
+    "georgian": "სახელური",
+    "pronunciation": "/ˈhændəl/",
+    "example_en": "Push the handle to flush.",
+    "example_ka": "ჩასაშვებად სახელური დააჭირე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Brush",
+    "georgian": "ჯაგრისი",
+    "pronunciation": "/brʌʃ/",
+    "example_en": "Clean with a toilet brush.",
+    "example_ka": "ტუალეტის ჯაგრისით გაასუფთავე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Roll",
+    "georgian": "რულონი",
+    "pronunciation": "/roʊl/",
+    "example_en": "Replace the toilet paper roll.",
+    "example_ka": "ტუალეტის ქაღალდის რულონი შეცვალე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Holder",
+    "georgian": "სადგამი",
+    "pronunciation": "/ˈhoʊldər/",
+    "example_en": "The toothbrush holder is full.",
+    "example_ka": "კბილის ჯაგრისის სადგამი სავსეა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Tray",
+    "georgian": "თეფში",
+    "pronunciation": "/treɪ/",
+    "example_en": "Put soap on the tray.",
+    "example_ka": "საპონი თეფშზე დადე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Caddy",
+    "georgian": "ყუთი",
+    "pronunciation": "/ˈkædi/",
+    "example_en": "The shower caddy holds bottles.",
+    "example_ka": "შხაპის ყუთი ბოთლებს იტევს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Stool",
+    "georgian": "სკამელი",
+    "pronunciation": "/stuːl/",
+    "example_en": "She sat on the bathroom stool.",
+    "example_ka": "აბაზანის სკამელზე დაჯდა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Rug",
+    "georgian": "ხალიჩა",
+    "pronunciation": "/rʌɡ/",
+    "example_en": "The bathroom rug is soft.",
+    "example_ka": "აბაზანის ხალიჩა რბილია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Ventilation",
+    "georgian": "ვენტილაცია",
+    "pronunciation": "/ˌventɪˈleɪʃən/",
+    "example_en": "Good ventilation prevents mold.",
+    "example_ka": "კარგი ვენტილაცია ობს ხელს უშლის.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Odor",
+    "georgian": "სუნი",
+    "pronunciation": "/ˈoʊdər/",
+    "example_en": "Remove bad odors with spray.",
+    "example_ka": "ცუდი სუნი სპრეით მოაცილე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Freshener",
+    "georgian": "გამაჟანჟღარებელი",
+    "pronunciation": "/ˈfreʃənər/",
+    "example_en": "Use an air freshener.",
+    "example_ka": "ჰაერის გამაჟანჟღარებელი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Candle",
+    "georgian": "სანთელი",
+    "pronunciation": "/ˈkændəl/",
+    "example_en": "Light a candle for a nice scent.",
+    "example_ka": "სასიამოვნო სურნელისთვის სანთელი აანთე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Fragrance",
+    "georgian": "არომატი",
+    "pronunciation": "/ˈfreɪɡrəns/",
+    "example_en": "This soap has a lavender fragrance.",
+    "example_ka": "ამ საპონს ლავანდის არომატი აქვს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Scent",
+    "georgian": "სურნელი",
+    "pronunciation": "/sent/",
+    "example_en": "The scent of soap is pleasant.",
+    "example_ka": "საპნის სურნელი სასიამოვნოა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Aroma",
+    "georgian": "არომა",
+    "pronunciation": "/əˈroʊmə/",
+    "example_en": "The bath oil has a calming aroma.",
+    "example_ka": "აბაზანის ზეთს დამამშვიდებელი არომა აქვს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bubble",
+    "georgian": "ბუშტი",
+    "pronunciation": "/ˈbʌbəl/",
+    "example_en": "The children love bubble baths.",
+    "example_ka": "ბავშვებს ბუშტიანი აბაზანა უყვართ.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Foam",
+    "georgian": "ქაფი",
+    "pronunciation": "/foʊm/",
+    "example_en": "The shaving foam is soft.",
+    "example_ka": "საპარსი ქაფი რბილია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Suds",
+    "georgian": "ქაფი",
+    "pronunciation": "/sʌdz/",
+    "example_en": "Rinse off all the suds.",
+    "example_ka": "მთელი ქაფი ჩამოიბანე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Scrubber",
+    "georgian": "საფხეკი",
+    "pronunciation": "/ˈskrʌbər/",
+    "example_en": "Use a scrubber on tough stains.",
+    "example_ka": "რთულ ლაქებზე საფხეკი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Loofah",
+    "georgian": "ლუფა",
+    "pronunciation": "/ˈluːfə/",
+    "example_en": "A loofah exfoliates the skin.",
+    "example_ka": "ლუფა კანს ასუფთავებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Pumice",
+    "georgian": "პემზა",
+    "pronunciation": "/ˈpʌmɪs/",
+    "example_en": "Use pumice on rough heels.",
+    "example_ka": "უხეშ ქუსლებზე პემზა გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Nail",
+    "georgian": "ფრჩხილი",
+    "pronunciation": "/neɪl/",
+    "example_en": "Trim your nails regularly.",
+    "example_ka": "ფრჩხილები რეგულარულად შეიჭერი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Clipper",
+    "georgian": "საჭრელი",
+    "pronunciation": "/ˈklɪpər/",
+    "example_en": "Use a nail clipper.",
+    "example_ka": "ფრჩხილის საჭრელი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "File",
+    "georgian": "ქანჩი",
+    "pronunciation": "/faɪl/",
+    "example_en": "Smooth your nails with a file.",
+    "example_ka": "ფრჩხილები ქანჩით გაასწორე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Cuticle",
+    "georgian": "კუტიკულა",
+    "pronunciation": "/ˈkjuːtɪkəl/",
+    "example_en": "Push back the cuticles gently.",
+    "example_ka": "კუტიკულა ნაზად უკან მიწიე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Pedicure",
+    "georgian": "პედიკური",
+    "pronunciation": "/ˈpedɪkjʊər/",
+    "example_en": "She got a pedicure yesterday.",
+    "example_ka": "გუშინ პედიკური გაიკეთა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Wax",
+    "georgian": "ცვილი",
+    "pronunciation": "/wæks/",
+    "example_en": "She uses wax for hair removal.",
+    "example_ka": "თმის მოსაშორებლად ცვილს იყენებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Epilator",
+    "georgian": "ეპილატორი",
+    "pronunciation": "/ˈepɪleɪtər/",
+    "example_en": "An epilator removes hair.",
+    "example_ka": "ეპილატორი თმას აცილებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Depilatory",
+    "georgian": "დეპილატორი",
+    "pronunciation": "/dɪˈpɪlətɔːri/",
+    "example_en": "Use depilatory cream carefully.",
+    "example_ka": "დეპილატორის კრემი ფრთხილად გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bandage",
+    "georgian": "ბინტი",
+    "pronunciation": "/ˈbændɪdʒ/",
+    "example_en": "Put a bandage on the cut.",
+    "example_ka": "ჭრილობაზე ბინტი შემოახვიე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Plaster",
+    "georgian": "პლასტირი",
+    "pronunciation": "/ˈplɑːstər/",
+    "example_en": "Cover the wound with a plaster.",
+    "example_ka": "ჭრილობა პლასტირით დაფარე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Ointment",
+    "georgian": "მალამო",
+    "pronunciation": "/ˈɔɪntmənt/",
+    "example_en": "Apply ointment to the burn.",
+    "example_ka": "დამწვრობაზე მალამო წაისვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Antiseptic",
+    "georgian": "ანტისეპტიკი",
+    "pronunciation": "/ˌæntɪˈseptɪk/",
+    "example_en": "Clean wounds with antiseptic.",
+    "example_ka": "ჭრილობები ანტისეპტიკით გაასუფთავე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Peroxide",
+    "georgian": "პეროქსიდი",
+    "pronunciation": "/pəˈrɒksaɪd/",
+    "example_en": "Hydrogen peroxide cleans wounds.",
+    "example_ka": "წყალბადის პეროქსიდი ჭრილობებს ასუფთავებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Thermometer",
+    "georgian": "თერმომეტრი",
+    "pronunciation": "/θərˈmɒmɪtər/",
+    "example_en": "Check your temperature with a thermometer.",
+    "example_ka": "ტემპერატურა თერმომეტრით შეამოწმე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Medicine",
+    "georgian": "წამალი",
+    "pronunciation": "/ˈmedɪsɪn/",
+    "example_en": "Keep medicine in the cabinet.",
+    "example_ka": "წამალი კარადაში შეინახე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Vitamin",
+    "georgian": "ვიტამინი",
+    "pronunciation": "/ˈvɪtəmɪn/",
+    "example_en": "Take your vitamins daily.",
+    "example_ka": "ვიტამინები ყოველდღე მიიღე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Supplement",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈsʌplɪmənt/",
+    "example_en": "Iron supplements help with anemia.",
+    "example_ka": "რკინის დანამატი ანემიაში ეხმარება.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Tablet",
+    "georgian": "ტაბლეტი",
+    "pronunciation": "/ˈtæblɪt/",
+    "example_en": "Take one tablet after meals.",
+    "example_ka": "ჭამის შემდეგ ერთი ტაბლეტი მიიღე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Capsule",
+    "georgian": "კაფსულა",
+    "pronunciation": "/ˈkæpsjuːl/",
+    "example_en": "Swallow the capsule with water.",
+    "example_ka": "კაფსულა წყლით გადაყლაპე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Spray",
+    "georgian": "სპრეი",
+    "pronunciation": "/spreɪ/",
+    "example_en": "Use body spray after showering.",
+    "example_ka": "შხაპის შემდეგ სხეულის სპრეი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Powder",
+    "georgian": "პუდრი",
+    "pronunciation": "/ˈpaʊdər/",
+    "example_en": "Apply talcum powder to stay dry.",
+    "example_ka": "სიმშრალისთვის ტალკის პუდრი წაისვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Balm",
+    "georgian": "ბალზამი",
+    "pronunciation": "/bɑːm/",
+    "example_en": "Lip balm prevents chapping.",
+    "example_ka": "ტუჩის ბალზამი გახეთქვას ხელს უშლის.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Gel",
+    "georgian": "გელი",
+    "pronunciation": "/dʒel/",
+    "example_en": "Shower gel smells great.",
+    "example_ka": "შხაპის გელი კარგად სურნელებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Oil",
+    "georgian": "ზეთი",
+    "pronunciation": "/ɔɪl/",
+    "example_en": "Bath oil relaxes muscles.",
+    "example_ka": "აბაზანის ზეთი კუნთებს ასვენებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Salt",
+    "georgian": "მარილი",
+    "pronunciation": "/sɔːlt/",
+    "example_en": "Add bath salts to the water.",
+    "example_ka": "წყალში აბაზანის მარილი ჩააყარე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Bomb",
+    "georgian": "ბომბი",
+    "pronunciation": "/bɒm/",
+    "example_en": "A bath bomb fizzes in water.",
+    "example_ka": "აბაზანის ბომბი წყალში ქაფავს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Soak",
+    "georgian": "დალბობა",
+    "pronunciation": "/soʊk/",
+    "example_en": "Soak in the tub for twenty minutes.",
+    "example_ka": "ვანაში ოცი წუთი დაიალბე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Dry",
+    "georgian": "გაშრობა",
+    "pronunciation": "/draɪ/",
+    "example_en": "Dry yourself thoroughly.",
+    "example_ka": "კარგად გაიშრე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Wipe",
+    "georgian": "წმენდა",
+    "pronunciation": "/waɪp/",
+    "example_en": "Wipe the counter after use.",
+    "example_ka": "გამოყენების შემდეგ ზედაპირი წაწმინდე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Scrape",
+    "georgian": "ფხეკა",
+    "pronunciation": "/skreɪp/",
+    "example_en": "Scrape the buildup from tiles.",
+    "example_ka": "ფილებიდან ნალექი მოფხიკე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Polish",
+    "georgian": "გაპრიალება",
+    "pronunciation": "/ˈpɒlɪʃ/",
+    "example_en": "Polish the faucet.",
+    "example_ka": "ონკანი გააპრიალე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Sparkle",
+    "georgian": "ბრწყინვა",
+    "pronunciation": "/ˈspɑːrkəl/",
+    "example_en": "The clean tiles sparkle.",
+    "example_ka": "სუფთა ფილები ბრწყინავს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Stain",
+    "georgian": "ლაქა",
+    "pronunciation": "/steɪn/",
+    "example_en": "Remove the stain from the tub.",
+    "example_ka": "ვანიდან ლაქა მოაცილე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Residue",
+    "georgian": "ნაშთი",
+    "pronunciation": "/ˈrezɪduː/",
+    "example_en": "Soap residue builds up.",
+    "example_ka": "საპნის ნაშთი გროვდება.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Buildup",
+    "georgian": "დაგროვება",
+    "pronunciation": "/ˈbɪldʌp/",
+    "example_en": "Calcium buildup clogs pipes.",
+    "example_ka": "კალციუმის დაგროვება მილებს ჭედავს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Mineral",
+    "georgian": "მინერალი",
+    "pronunciation": "/ˈmɪnərəl/",
+    "example_en": "Hard water has many minerals.",
+    "example_ka": "ხისტ წყალში ბევრი მინერალია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Install a shower filter.",
+    "example_ka": "შხაპის ფილტრი დაამონტაჟე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Purifier",
+    "georgian": "გამწმენდი",
+    "pronunciation": "/ˈpjʊərɪfaɪər/",
+    "example_en": "A water purifier improves quality.",
+    "example_ka": "წყლის გამწმენდი ხარისხს აუმჯობესებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Softener",
+    "georgian": "დამარბილებელი",
+    "pronunciation": "/ˈsɒfənər/",
+    "example_en": "Use fabric softener for towels.",
+    "example_ka": "პირსახოცებისთვის ქსოვილის დამარბილებელი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Whitener",
+    "georgian": "მათეთრებელი",
+    "pronunciation": "/ˈwaɪtənər/",
+    "example_en": "Teeth whitener makes your smile bright.",
+    "example_ka": "კბილის მათეთრებელი ღიმილს ანათებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Gargle",
+    "georgian": "ღრაჭუნა",
+    "pronunciation": "/ˈɡɑːrɡəl/",
+    "example_en": "Gargle with warm salt water.",
+    "example_ka": "თბილი მარილწყლით იღრაჭუნე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Spit",
+    "georgian": "ფურთხება",
+    "pronunciation": "/spɪt/",
+    "example_en": "Spit out the mouthwash.",
+    "example_ka": "პირის წყალი გადმოაფურთხე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Swallow",
+    "georgian": "გადაყლაპვა",
+    "pronunciation": "/ˈswɒloʊ/",
+    "example_en": "Do not swallow mouthwash.",
+    "example_ka": "პირის წყალი არ გადაყლაპო.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Breath",
+    "georgian": "სუნთქვა",
+    "pronunciation": "/breθ/",
+    "example_en": "Fresh breath is important.",
+    "example_ka": "სუფთა სუნთქვა მნიშვნელოვანია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Dental",
+    "georgian": "სტომატოლოგიური",
+    "pronunciation": "/ˈdentəl/",
+    "example_en": "Visit the dental clinic.",
+    "example_ka": "სტომატოლოგიურ კლინიკაში ეწვიე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Cavity",
+    "georgian": "კარიესი",
+    "pronunciation": "/ˈkævɪti/",
+    "example_en": "Sugar causes cavities.",
+    "example_ka": "შაქარი კარიესს იწვევს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Gum",
+    "georgian": "ღრძილი",
+    "pronunciation": "/ɡʌm/",
+    "example_en": "Brush your gums gently.",
+    "example_ka": "ღრძილები ნაზად გაიწმინდე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Enamel",
+    "georgian": "მინანქარი",
+    "pronunciation": "/ɪˈnæməl/",
+    "example_en": "Protect your tooth enamel.",
+    "example_ka": "კბილის მინანქარი დაიცავი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Plaque",
+    "georgian": "ნადები",
+    "pronunciation": "/plæk/",
+    "example_en": "Remove plaque by brushing.",
+    "example_ka": "ხეხვით ნადები მოაცილე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Tartar",
+    "georgian": "კბილის ქვა",
+    "pronunciation": "/ˈtɑːrtər/",
+    "example_en": "A dentist removes tartar.",
+    "example_ka": "სტომატოლოგი კბილის ქვას აცილებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Whitening",
+    "georgian": "გათეთრება",
+    "pronunciation": "/ˈwaɪtənɪŋ/",
+    "example_en": "Try a whitening toothpaste.",
+    "example_ka": "გამათეთრებელი პასტა სცადე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Sensitivity",
+    "georgian": "მგრძნობელობა",
+    "pronunciation": "/ˌsensɪˈtɪvɪti/",
+    "example_en": "This paste helps with sensitivity.",
+    "example_ka": "ეს პასტა მგრძნობელობაში ეხმარება.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Fluoride",
+    "georgian": "ფტორი",
+    "pronunciation": "/ˈflʊəraɪd/",
+    "example_en": "Fluoride strengthens teeth.",
+    "example_ka": "ფტორი კბილებს აძლიერებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Retainer",
+    "georgian": "რეტეინერი",
+    "pronunciation": "/rɪˈteɪnər/",
+    "example_en": "Wear your retainer at night.",
+    "example_ka": "ღამით რეტეინერი ითვალე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Splash",
+    "georgian": "ფერფლი",
+    "pronunciation": "/splæʃ/",
+    "example_en": "Don't splash water everywhere.",
+    "example_ka": "წყალი ყველგან ნუ ფერფლავ.",
+    "category": "bathroom-hygiene",
+    "level": "A2"
+  },
+  {
+    "english": "Braces",
+    "georgian": "ბრეკეტები",
+    "pronunciation": "/ˈbreɪsɪz/",
+    "example_en": "She got braces last month.",
+    "example_ka": "გასულ თვეში ბრეკეტები დაიდგა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Dentures",
+    "georgian": "პროთეზები",
+    "pronunciation": "/ˈdentʃərz/",
+    "example_en": "He cleans his dentures daily.",
+    "example_ka": "პროთეზებს ყოველდღე ასუფთავებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Irrigation",
+    "georgian": "ირიგაცია",
+    "pronunciation": "/ˌɪrɪˈɡeɪʃən/",
+    "example_en": "Oral irrigation cleans between teeth.",
+    "example_ka": "ირიგაცია კბილებს შორის ასუფთავებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Rash",
+    "georgian": "გამონაყარი",
+    "pronunciation": "/ræʃ/",
+    "example_en": "The soap caused a rash.",
+    "example_ka": "საპონმა გამონაყარი გამოიწვია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Itch",
+    "georgian": "ქავილი",
+    "pronunciation": "/ɪtʃ/",
+    "example_en": "The itch won't stop.",
+    "example_ka": "ქავილი არ წყდება.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Irritation",
+    "georgian": "გაღიზიანება",
+    "pronunciation": "/ˌɪrɪˈteɪʃən/",
+    "example_en": "Avoid products that cause irritation.",
+    "example_ka": "გაღიზიანების გამომწვევი პროდუქტები მოერიდე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Allergy",
+    "georgian": "ალერგია",
+    "pronunciation": "/ˈælərdi/",
+    "example_en": "She has a soap allergy.",
+    "example_ka": "საპონზე ალერგია აქვს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Redness",
+    "georgian": "სიწითლე",
+    "pronunciation": "/ˈrednəs/",
+    "example_en": "Redness indicates irritation.",
+    "example_ka": "სიწითლე გაღიზიანებაზე მიუთითებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Swelling",
+    "georgian": "შეშუპება",
+    "pronunciation": "/ˈswelɪŋ/",
+    "example_en": "Cold water reduces swelling.",
+    "example_ka": "ცივი წყალი შეშუპებას ამცირებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Blister",
+    "georgian": "ბუშტუკი",
+    "pronunciation": "/ˈblɪstər/",
+    "example_en": "Don't pop the blister.",
+    "example_ka": "ბუშტუკი არ გატეხო.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Callus",
+    "georgian": "კალუსი",
+    "pronunciation": "/ˈkæləs/",
+    "example_en": "Use pumice to remove calluses.",
+    "example_ka": "კალუსის მოსაშორებლად პემზა გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Fungus",
+    "georgian": "სოკო",
+    "pronunciation": "/ˈfʌŋɡəs/",
+    "example_en": "Keep feet dry to prevent fungus.",
+    "example_ka": "სოკოს პრევენციისთვის ფეხები მშრალი გქონდეს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Athlete",
+    "georgian": "ათლეტი",
+    "pronunciation": "/ˈæθliːt/",
+    "example_en": "Athlete's foot is a common fungus.",
+    "example_ka": "ათლეტის ფეხი გავრცელებული სოკოვანი დაავადებაა.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Dehumidifier",
+    "georgian": "გამშრობელი",
+    "pronunciation": "/diːhjuːˈmɪdɪfaɪər/",
+    "example_en": "A dehumidifier reduces moisture.",
+    "example_ka": "გამშრობელი ტენიანობას ამცირებს.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Slippers",
+    "georgian": "ჩუსტები",
+    "pronunciation": "/ˈslɪpərz/",
+    "example_en": "Wear slippers in the bathroom.",
+    "example_ka": "აბაზანაში ჩუსტები ჩაიცვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Robe",
+    "georgian": "ხალათი",
+    "pronunciation": "/roʊb/",
+    "example_en": "Put on your robe after the bath.",
+    "example_ka": "აბაზანის შემდეგ ხალათი ჩაიცვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Pajamas",
+    "georgian": "პიჯამა",
+    "pronunciation": "/pəˈdʒɑːməz/",
+    "example_en": "Change into pajamas before bed.",
+    "example_ka": "ძილის წინ პიჯამა ჩაიცვი.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Underwear",
+    "georgian": "საცვალი",
+    "pronunciation": "/ˈʌndərwer/",
+    "example_en": "Change underwear daily.",
+    "example_ka": "საცვალი ყოველდღე შეიცვალე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Laundry",
+    "georgian": "სარეცხი",
+    "pronunciation": "/ˈlɔːndri/",
+    "example_en": "Do the laundry today.",
+    "example_ka": "დღეს სარეცხი გარეცხე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Washer",
+    "georgian": "სარეცხი მანქანა",
+    "pronunciation": "/ˈwɒʃər/",
+    "example_en": "Put towels in the washer.",
+    "example_ka": "პირსახოცები სარეცხ მანქანაში ჩადე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Dryer",
+    "georgian": "საშრობი",
+    "pronunciation": "/ˈdraɪər/",
+    "example_en": "Move clothes to the dryer.",
+    "example_ka": "ტანსაცმელი საშრობში გადაიტანე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "Iron",
+    "georgian": "უთო",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "Iron the towels flat.",
+    "example_ka": "პირსახოცები ბრტყლად დაუთოე.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "grooming",
+    "georgian": "მოვლა",
+    "pronunciation": "/ˈɡruːmɪŋ/",
+    "example_en": "Good grooming is important.",
+    "example_ka": "კარგი მოვლა მნიშვნელოვანია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "squeegee",
+    "georgian": "მინის საწმენდი",
+    "pronunciation": "/ˈskwiːdʒiː/",
+    "example_en": "Use the squeegee after showering.",
+    "example_ka": "შხაპის შემდეგ მინის საწმენდი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B2"
+  },
+  {
+    "english": "sanitary",
+    "georgian": "სანიტარული",
+    "pronunciation": "/ˈsænɪteri/",
+    "example_en": "Keep the bathroom sanitary.",
+    "example_ka": "აბაზანა სანიტარულ მდგომარეობაში შეინარჩუნე.",
+    "category": "bathroom-hygiene",
+    "level": "B2"
+  },
+  {
+    "english": "waterproof",
+    "georgian": "წყალგაუმტარი",
+    "pronunciation": "/ˈwɔːtərpruːf/",
+    "example_en": "This watch is waterproof.",
+    "example_ka": "ეს საათი წყალგაუმტარია.",
+    "category": "bathroom-hygiene",
+    "level": "B1"
+  },
+  {
+    "english": "disposable",
+    "georgian": "ერთჯერადი",
+    "pronunciation": "/dɪˈspoʊzəbl/",
+    "example_en": "Use disposable razors.",
+    "example_ka": "ერთჯერადი საპარსი გამოიყენე.",
+    "category": "bathroom-hygiene",
+    "level": "B2"
+  }
 ]

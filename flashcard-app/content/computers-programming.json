@@ -1,62 +1,1802 @@
 [
-  {"english": "Computer", "georgian": "კომპიუტერი", "pronunciation": "komp'iut'eri", "example_en": "I bought a new computer.", "example_ka": "მე ახალი კომპიუტერი ვიყიდე.", "category": "computers", "level": "beginner"},
-  {"english": "Software", "georgian": "პროგრამული უზრუნველყოფა", "pronunciation": "p'rogramuli uzrunvelq'opa", "example_en": "This software is easy to use.", "example_ka": "ეს პროგრამული უზრუნველყოფა მარტივია გამოსაყენებლად.", "category": "computers", "level": "beginner"},
-  {"english": "Hardware", "georgian": "აპარატურა", "pronunciation": "ap'arat'ura", "example_en": "The hardware needs an upgrade.", "example_ka": "აპარატურას განახლება სჭირდება.", "category": "computers", "level": "beginner"},
-  {"english": "Keyboard", "georgian": "კლავიატურა", "pronunciation": "k'laviat'ura", "example_en": "My keyboard is wireless.", "example_ka": "ჩემი კლავიატურა უსადენოა.", "category": "computers", "level": "beginner"},
-  {"english": "Mouse", "georgian": "მაუსი", "pronunciation": "mausi", "example_en": "Click the mouse button.", "example_ka": "დააჭირეთ მაუსის ღილაკს.", "category": "computers", "level": "beginner"},
-  {"english": "Monitor", "georgian": "მონიტორი", "pronunciation": "monit'ori", "example_en": "The monitor has high resolution.", "example_ka": "მონიტორს მაღალი გარჩევადობა აქვს.", "category": "computers", "level": "beginner"},
-  {"english": "Screen", "georgian": "ეკრანი", "pronunciation": "ek'rani", "example_en": "The screen is too bright.", "example_ka": "ეკრანი ძალიან ნათელია.", "category": "computers", "level": "beginner"},
-  {"english": "Printer", "georgian": "პრინტერი", "pronunciation": "p'rint'eri", "example_en": "The printer is out of ink.", "example_ka": "პრინტერს მელანი გაუთავდა.", "category": "computers", "level": "beginner"},
-  {"english": "Internet", "georgian": "ინტერნეტი", "pronunciation": "int'ernet'i", "example_en": "The internet is slow today.", "example_ka": "ინტერნეტი დღეს ნელია.", "category": "computers", "level": "beginner"},
-  {"english": "Website", "georgian": "ვებგვერდი", "pronunciation": "vebgverdi", "example_en": "Visit our website for more info.", "example_ka": "ეწვიეთ ჩვენს ვებგვერდს მეტი ინფორმაციისთვის.", "category": "computers", "level": "beginner"},
-  {"english": "Password", "georgian": "პაროლი", "pronunciation": "p'aroli", "example_en": "Don't share your password.", "example_ka": "არ გაუზიაროთ თქვენი პაროლი.", "category": "computers", "level": "beginner"},
-  {"english": "File", "georgian": "ფაილი", "pronunciation": "paili", "example_en": "Save the file before closing.", "example_ka": "შეინახეთ ფაილი დახურვამდე.", "category": "computers", "level": "beginner"},
-  {"english": "Folder", "georgian": "საქაღალდე", "pronunciation": "sakagalde", "example_en": "Create a new folder.", "example_ka": "შექმენით ახალი საქაღალდე.", "category": "computers", "level": "beginner"},
-  {"english": "Download", "georgian": "ჩამოტვირთვა", "pronunciation": "chamot'virtva", "example_en": "Download the app from the store.", "example_ka": "ჩამოტვირთეთ აპლიკაცია მაღაზიიდან.", "category": "computers", "level": "beginner"},
-  {"english": "Upload", "georgian": "ატვირთვა", "pronunciation": "at'virtva", "example_en": "Upload your photo here.", "example_ka": "ატვირთეთ თქვენი ფოტო აქ.", "category": "computers", "level": "beginner"},
-  {"english": "Program", "georgian": "პროგრამა", "pronunciation": "p'rograma", "example_en": "This program runs fast.", "example_ka": "ეს პროგრამა სწრაფად მუშაობს.", "category": "computers", "level": "beginner"},
-  {"english": "Code", "georgian": "კოდი", "pronunciation": "k'odi", "example_en": "I write code every day.", "example_ka": "მე ყოველდღე ვწერ კოდს.", "category": "computers", "level": "intermediate"},
-  {"english": "Programming", "georgian": "პროგრამირება", "pronunciation": "p'rogramireba", "example_en": "Programming is a valuable skill.", "example_ka": "პროგრამირება ღირებული უნარია.", "category": "computers", "level": "intermediate"},
-  {"english": "Developer", "georgian": "დეველოპერი", "pronunciation": "develop'eri", "example_en": "She is a web developer.", "example_ka": "ის ვებ დეველოპერია.", "category": "computers", "level": "intermediate"},
-  {"english": "Database", "georgian": "მონაცემთა ბაზა", "pronunciation": "monatsemta baza", "example_en": "The database stores user information.", "example_ka": "მონაცემთა ბაზა ინახავს მომხმარებლის ინფორმაციას.", "category": "computers", "level": "intermediate"},
-  {"english": "Server", "georgian": "სერვერი", "pronunciation": "serveri", "example_en": "The server is down.", "example_ka": "სერვერი გათიშულია.", "category": "computers", "level": "intermediate"},
-  {"english": "Network", "georgian": "ქსელი", "pronunciation": "kseli", "example_en": "Connect to the network.", "example_ka": "დაუკავშირდით ქსელს.", "category": "computers", "level": "intermediate"},
-  {"english": "Browser", "georgian": "ბრაუზერი", "pronunciation": "brauzeri", "example_en": "Open a new browser tab.", "example_ka": "გახსენით ბრაუზერის ახალი ჩანართი.", "category": "computers", "level": "beginner"},
-  {"english": "Application", "georgian": "აპლიკაცია", "pronunciation": "ap'lik'atsia", "example_en": "Install the application.", "example_ka": "დააინსტალირეთ აპლიკაცია.", "category": "computers", "level": "beginner"},
-  {"english": "Bug", "georgian": "ხარვეზი", "pronunciation": "kharvezi", "example_en": "I found a bug in the code.", "example_ka": "კოდში ხარვეზი ვიპოვე.", "category": "computers", "level": "intermediate"},
-  {"english": "Debug", "georgian": "გამართვა", "pronunciation": "gamartva", "example_en": "We need to debug this program.", "example_ka": "ამ პროგრამის გამართვა გვჭირდება.", "category": "computers", "level": "intermediate"},
-  {"english": "Algorithm", "georgian": "ალგორითმი", "pronunciation": "algoritmი", "example_en": "The algorithm is efficient.", "example_ka": "ალგორითმი ეფექტურია.", "category": "computers", "level": "advanced"},
-  {"english": "Variable", "georgian": "ცვლადი", "pronunciation": "tsvladi", "example_en": "Declare a variable first.", "example_ka": "ჯერ გამოაცხადეთ ცვლადი.", "category": "computers", "level": "intermediate"},
-  {"english": "Function", "georgian": "ფუნქცია", "pronunciation": "punktsia", "example_en": "Call the function here.", "example_ka": "აქ გამოიძახეთ ფუნქცია.", "category": "computers", "level": "intermediate"},
-  {"english": "Loop", "georgian": "ციკლი", "pronunciation": "tsik'li", "example_en": "The loop runs ten times.", "example_ka": "ციკლი ათჯერ სრულდება.", "category": "computers", "level": "intermediate"},
-  {"english": "Array", "georgian": "მასივი", "pronunciation": "masivi", "example_en": "Store the data in an array.", "example_ka": "შეინახეთ მონაცემები მასივში.", "category": "computers", "level": "intermediate"},
-  {"english": "String", "georgian": "სტრიქონი", "pronunciation": "st'rik'oni", "example_en": "A string is a sequence of characters.", "example_ka": "სტრიქონი სიმბოლოების თანმიმდევრობაა.", "category": "computers", "level": "intermediate"},
-  {"english": "Processor", "georgian": "პროცესორი", "pronunciation": "p'rotsesori", "example_en": "This processor is very fast.", "example_ka": "ეს პროცესორი ძალიან სწრაფია.", "category": "computers", "level": "intermediate"},
-  {"english": "Memory", "georgian": "მეხსიერება", "pronunciation": "mekhsiereba", "example_en": "The computer needs more memory.", "example_ka": "კომპიუტერს მეტი მეხსიერება სჭირდება.", "category": "computers", "level": "intermediate"},
-  {"english": "Hard drive", "georgian": "მყარი დისკი", "pronunciation": "mq'ari disk'i", "example_en": "My hard drive is full.", "example_ka": "ჩემი მყარი დისკი სავსეა.", "category": "computers", "level": "intermediate"},
-  {"english": "Operating system", "georgian": "ოპერაციული სისტემა", "pronunciation": "op'eratsiuli sist'ema", "example_en": "Which operating system do you use?", "example_ka": "რომელ ოპერაციულ სისტემას იყენებთ?", "category": "computers", "level": "intermediate"},
-  {"english": "Update", "georgian": "განახლება", "pronunciation": "ganakhleba", "example_en": "Update your software regularly.", "example_ka": "რეგულარულად განაახლეთ პროგრამული უზრუნველყოფა.", "category": "computers", "level": "beginner"},
-  {"english": "Virus", "georgian": "ვირუსი", "pronunciation": "virusi", "example_en": "A virus infected my computer.", "example_ka": "ვირუსმა ჩემი კომპიუტერი დააინფიცირა.", "category": "computers", "level": "beginner"},
-  {"english": "Firewall", "georgian": "ბრანდმაუერი", "pronunciation": "brandmaueri", "example_en": "The firewall blocks dangerous sites.", "example_ka": "ბრანდმაუერი სახიფათო საიტებს ბლოკავს.", "category": "computers", "level": "advanced"},
-  {"english": "Encryption", "georgian": "დაშიფვრა", "pronunciation": "dashiprva", "example_en": "Encryption protects your data.", "example_ka": "დაშიფვრა იცავს თქვენს მონაცემებს.", "category": "computers", "level": "advanced"},
-  {"english": "Backup", "georgian": "სარეზერვო ასლი", "pronunciation": "sarezervო asli", "example_en": "Always make a backup.", "example_ka": "ყოველთვის გააკეთეთ სარეზერვო ასლი.", "category": "computers", "level": "intermediate"},
-  {"english": "Cloud", "georgian": "ღრუბელი", "pronunciation": "ghrubeli", "example_en": "Save your files to the cloud.", "example_ka": "შეინახეთ ფაილები ღრუბელში.", "category": "computers", "level": "intermediate"},
-  {"english": "Email", "georgian": "ელფოსტა", "pronunciation": "elpost'a", "example_en": "Send me an email.", "example_ka": "გამომიგზავნეთ ელფოსტა.", "category": "computers", "level": "beginner"},
-  {"english": "Link", "georgian": "ბმული", "pronunciation": "bmuli", "example_en": "Click the link below.", "example_ka": "დააჭირეთ ქვემოთ მოცემულ ბმულს.", "category": "computers", "level": "beginner"},
-  {"english": "Search engine", "georgian": "საძიებო სისტემა", "pronunciation": "sadziebo sist'ema", "example_en": "Google is a search engine.", "example_ka": "გუგლი საძიებო სისტემაა.", "category": "computers", "level": "intermediate"},
-  {"english": "Cursor", "georgian": "კურსორი", "pronunciation": "k'ursori", "example_en": "Move the cursor to the right.", "example_ka": "გადაიტანეთ კურსორი მარჯვნივ.", "category": "computers", "level": "beginner"},
-  {"english": "Tab", "georgian": "ჩანართი", "pronunciation": "chanarti", "example_en": "Open a new tab.", "example_ka": "გახსენით ახალი ჩანართი.", "category": "computers", "level": "beginner"},
-  {"english": "Shortcut", "georgian": "მალსახმობი", "pronunciation": "malsakhmob", "example_en": "Use keyboard shortcuts.", "example_ka": "გამოიყენეთ კლავიატურის მალსახმობები.", "category": "computers", "level": "intermediate"},
-  {"english": "Interface", "georgian": "ინტერფეისი", "pronunciation": "int'erpeisi", "example_en": "The interface is user-friendly.", "example_ka": "ინტერფეისი მოსახერხებელია.", "category": "computers", "level": "intermediate"},
-  {"english": "Plugin", "georgian": "დანამატი", "pronunciation": "danamat'i", "example_en": "Install this plugin.", "example_ka": "დააინსტალირეთ ეს დანამატი.", "category": "computers", "level": "intermediate"},
-  {"english": "Compile", "georgian": "კომპილაცია", "pronunciation": "k'omp'ilatsia", "example_en": "Compile the code before running.", "example_ka": "გაშვებამდე გააკეთეთ კოდის კომპილაცია.", "category": "computers", "level": "advanced"},
-  {"english": "Syntax", "georgian": "სინტაქსი", "pronunciation": "sint'aksi", "example_en": "Check the syntax of your code.", "example_ka": "შეამოწმეთ კოდის სინტაქსი.", "category": "computers", "level": "advanced"},
-  {"english": "Framework", "georgian": "ფრეიმვორკი", "pronunciation": "preimvorki", "example_en": "We use React as our framework.", "example_ka": "ჩვენ React-ს ვიყენებთ როგორც ფრეიმვორკს.", "category": "computers", "level": "advanced"},
-  {"english": "Wireless", "georgian": "უსადენო", "pronunciation": "usadeno", "example_en": "Connect to the wireless network.", "example_ka": "დაუკავშირდით უსადენო ქსელს.", "category": "computers", "level": "intermediate"},
-  {"english": "Laptop", "georgian": "ლეპტოპი", "pronunciation": "lep't'op'i", "example_en": "I carry my laptop everywhere.", "example_ka": "ლეპტოპს ყველგან მივიტან.", "category": "computers", "level": "beginner"},
-  {"english": "Charger", "georgian": "დამტენი", "pronunciation": "damt'eni", "example_en": "Where is my charger?", "example_ka": "სად არის ჩემი დამტენი?", "category": "computers", "level": "beginner"},
-  {"english": "Reboot", "georgian": "გადატვირთვა", "pronunciation": "gadat'virtva", "example_en": "Try to reboot the computer.", "example_ka": "სცადეთ კომპიუტერის გადატვირთვა.", "category": "computers", "level": "intermediate"},
-  {"english": "Data", "georgian": "მონაცემები", "pronunciation": "monatsemebi", "example_en": "Don't lose important data.", "example_ka": "არ დაკარგოთ მნიშვნელოვანი მონაცემები.", "category": "computers", "level": "intermediate"},
-  {"english": "Coding", "georgian": "კოდირება", "pronunciation": "k'odireba", "example_en": "I am learning coding.", "example_ka": "მე კოდირებას ვსწავლობ.", "category": "computers", "level": "intermediate"},
-  {"english": "Pixel", "georgian": "პიქსელი", "pronunciation": "p'ikseli", "example_en": "Each pixel displays a color.", "example_ka": "თითოეული პიქსელი ფერს აჩვენებს.", "category": "computers", "level": "intermediate"}
+  {
+    "english": "Computer",
+    "georgian": "კომპიუტერი",
+    "pronunciation": "/kəmˈpjuːtər/",
+    "example_en": "I bought a new computer.",
+    "example_ka": "მე ახალი კომპიუტერი ვიყიდე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Software",
+    "georgian": "პროგრამული უზრუნველყოფა",
+    "pronunciation": "/ˈsɔːftwɛr/",
+    "example_en": "This software is easy to use.",
+    "example_ka": "ეს პროგრამული უზრუნველყოფა მარტივია გამოსაყენებლად.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Hardware",
+    "georgian": "აპარატურა",
+    "pronunciation": "/ˈhɑːrdwɛr/",
+    "example_en": "The hardware needs an upgrade.",
+    "example_ka": "აპარატურას განახლება სჭირდება.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Keyboard",
+    "georgian": "კლავიატურა",
+    "pronunciation": "/ˈkiːbɔːrd/",
+    "example_en": "My keyboard is wireless.",
+    "example_ka": "ჩემი კლავიატურა უსადენოა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Mouse",
+    "georgian": "მაუსი",
+    "pronunciation": "/maʊs/",
+    "example_en": "Click the mouse button.",
+    "example_ka": "დააჭირეთ მაუსის ღილაკს.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Monitor",
+    "georgian": "მონიტორი",
+    "pronunciation": "/ˈmɒnɪtər/",
+    "example_en": "The monitor has high resolution.",
+    "example_ka": "მონიტორს მაღალი გარჩევადობა აქვს.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Screen",
+    "georgian": "ეკრანი",
+    "pronunciation": "/skriːn/",
+    "example_en": "The screen is too bright.",
+    "example_ka": "ეკრანი ძალიან ნათელია.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Printer",
+    "georgian": "პრინტერი",
+    "pronunciation": "/ˈprɪntər/",
+    "example_en": "The printer is out of ink.",
+    "example_ka": "პრინტერს მელანი გაუთავდა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Internet",
+    "georgian": "ინტერნეტი",
+    "pronunciation": "/ˈɪntərnet/",
+    "example_en": "The internet is slow today.",
+    "example_ka": "ინტერნეტი დღეს ნელია.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Website",
+    "georgian": "ვებგვერდი",
+    "pronunciation": "/ˈwɛbsaɪt/",
+    "example_en": "Visit our website for more info.",
+    "example_ka": "ეწვიეთ ჩვენს ვებგვერდს მეტი ინფორმაციისთვის.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswɜːrd/",
+    "example_en": "Don't share your password.",
+    "example_ka": "არ გაუზიაროთ თქვენი პაროლი.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "File",
+    "georgian": "ფაილი",
+    "pronunciation": "/faɪl/",
+    "example_en": "Save the file before closing.",
+    "example_ka": "შეინახეთ ფაილი დახურვამდე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Folder",
+    "georgian": "საქაღალდე",
+    "pronunciation": "/ˈfoʊldər/",
+    "example_en": "Create a new folder.",
+    "example_ka": "შექმენით ახალი საქაღალდე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˌdaʊnˈloʊd/",
+    "example_en": "Download the app from the store.",
+    "example_ka": "ჩამოტვირთეთ აპლიკაცია მაღაზიიდან.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ˌʌpˈloʊd/",
+    "example_en": "Upload your photo here.",
+    "example_ka": "ატვირთეთ თქვენი ფოტო აქ.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Program",
+    "georgian": "პროგრამა",
+    "pronunciation": "/ˈproʊɡræm/",
+    "example_en": "This program runs fast.",
+    "example_ka": "ეს პროგრამა სწრაფად მუშაობს.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Code",
+    "georgian": "კოდი",
+    "pronunciation": "/koʊd/",
+    "example_en": "I write code every day.",
+    "example_ka": "მე ყოველდღე ვწერ კოდს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Programming",
+    "georgian": "პროგრამირება",
+    "pronunciation": "/ˈproʊɡræmɪŋ/",
+    "example_en": "Programming is a valuable skill.",
+    "example_ka": "პროგრამირება ღირებული უნარია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Developer",
+    "georgian": "დეველოპერი",
+    "pronunciation": "/dɪˈvɛləpər/",
+    "example_en": "She is a web developer.",
+    "example_ka": "ის ვებ დეველოპერია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Database",
+    "georgian": "მონაცემთა ბაზა",
+    "pronunciation": "/ˈdeɪtəbeɪs/",
+    "example_en": "The database stores user information.",
+    "example_ka": "მონაცემთა ბაზა ინახავს მომხმარებლის ინფორმაციას.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Server",
+    "georgian": "სერვერი",
+    "pronunciation": "/ˈsɜːrvər/",
+    "example_en": "The server is down.",
+    "example_ka": "სერვერი გათიშულია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Network",
+    "georgian": "ქსელი",
+    "pronunciation": "/ˈnɛtwɜːrk/",
+    "example_en": "Connect to the network.",
+    "example_ka": "დაუკავშირდით ქსელს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Browser",
+    "georgian": "ბრაუზერი",
+    "pronunciation": "/ˈbraʊzər/",
+    "example_en": "Open a new browser tab.",
+    "example_ka": "გახსენით ბრაუზერის ახალი ჩანართი.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Application",
+    "georgian": "აპლიკაცია",
+    "pronunciation": "/ˌæplɪˈkeɪʃən/",
+    "example_en": "Install the application.",
+    "example_ka": "დააინსტალირეთ აპლიკაცია.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Bug",
+    "georgian": "ხარვეზი",
+    "pronunciation": "/bʌɡ/",
+    "example_en": "I found a bug in the code.",
+    "example_ka": "კოდში ხარვეზი ვიპოვე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Debug",
+    "georgian": "გამართვა",
+    "pronunciation": "/diːˈbʌɡ/",
+    "example_en": "We need to debug this program.",
+    "example_ka": "ამ პროგრამის გამართვა გვჭირდება.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Algorithm",
+    "georgian": "ალგორითმი",
+    "pronunciation": "/ˈælɡəˌrɪðəm/",
+    "example_en": "The algorithm is efficient.",
+    "example_ka": "ალგორითმი ეფექტურია.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Variable",
+    "georgian": "ცვლადი",
+    "pronunciation": "/ˈvɛriəbəl/",
+    "example_en": "Declare a variable first.",
+    "example_ka": "ჯერ გამოაცხადეთ ცვლადი.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Function",
+    "georgian": "ფუნქცია",
+    "pronunciation": "/ˈfʌŋkʃən/",
+    "example_en": "Call the function here.",
+    "example_ka": "აქ გამოიძახეთ ფუნქცია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Loop",
+    "georgian": "ციკლი",
+    "pronunciation": "/luːp/",
+    "example_en": "The loop runs ten times.",
+    "example_ka": "ციკლი ათჯერ სრულდება.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Array",
+    "georgian": "მასივი",
+    "pronunciation": "/əˈreɪ/",
+    "example_en": "Store the data in an array.",
+    "example_ka": "შეინახეთ მონაცემები მასივში.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "String",
+    "georgian": "სტრიქონი",
+    "pronunciation": "/strɪŋ/",
+    "example_en": "A string is a sequence of characters.",
+    "example_ka": "სტრიქონი სიმბოლოების თანმიმდევრობაა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Processor",
+    "georgian": "პროცესორი",
+    "pronunciation": "/ˈproʊsesər/",
+    "example_en": "This processor is very fast.",
+    "example_ka": "ეს პროცესორი ძალიან სწრაფია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Memory",
+    "georgian": "მეხსიერება",
+    "pronunciation": "/ˈmeməri/",
+    "example_en": "The computer needs more memory.",
+    "example_ka": "კომპიუტერს მეტი მეხსიერება სჭირდება.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "Update your software regularly.",
+    "example_ka": "რეგულარულად განაახლეთ პროგრამული უზრუნველყოფა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Virus",
+    "georgian": "ვირუსი",
+    "pronunciation": "/ˈvaɪrəs/",
+    "example_en": "A virus infected my computer.",
+    "example_ka": "ვირუსმა ჩემი კომპიუტერი დააინფიცირა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Firewall",
+    "georgian": "ბრანდმაუერი",
+    "pronunciation": "/ˈfaɪərwɔːl/",
+    "example_en": "The firewall blocks dangerous sites.",
+    "example_ka": "ბრანდმაუერი სახიფათო საიტებს ბლოკავს.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Encryption",
+    "georgian": "დაშიფვრა",
+    "pronunciation": "/ɪnˈkrɪpʃən/",
+    "example_en": "Encryption protects your data.",
+    "example_ka": "დაშიფვრა იცავს თქვენს მონაცემებს.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Backup",
+    "georgian": "სარეზერვო ასლი",
+    "pronunciation": "/ˈbækʌp/",
+    "example_en": "Always make a backup.",
+    "example_ka": "ყოველთვის გააკეთეთ სარეზერვო ასლი.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Cloud",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/klaʊd/",
+    "example_en": "Save your files to the cloud.",
+    "example_ka": "შეინახეთ ფაილები ღრუბელში.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Email",
+    "georgian": "ელფოსტა",
+    "pronunciation": "/ˈiːmeɪl/",
+    "example_en": "Send me an email.",
+    "example_ka": "გამომიგზავნეთ ელფოსტა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Link",
+    "georgian": "ბმული",
+    "pronunciation": "/lɪŋk/",
+    "example_en": "Click the link below.",
+    "example_ka": "დააჭირეთ ქვემოთ მოცემულ ბმულს.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Cursor",
+    "georgian": "კურსორი",
+    "pronunciation": "/ˈkɜːrsər/",
+    "example_en": "Move the cursor to the right.",
+    "example_ka": "გადაიტანეთ კურსორი მარჯვნივ.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Tab",
+    "georgian": "ჩანართი",
+    "pronunciation": "/tæb/",
+    "example_en": "Open a new tab.",
+    "example_ka": "გახსენით ახალი ჩანართი.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Shortcut",
+    "georgian": "მალსახმობი",
+    "pronunciation": "/ˈʃɔːrtkʌt/",
+    "example_en": "Use keyboard shortcuts.",
+    "example_ka": "გამოიყენეთ კლავიატურის მალსახმობები.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Interface",
+    "georgian": "ინტერფეისი",
+    "pronunciation": "/ˈɪntərfeɪs/",
+    "example_en": "The interface is user-friendly.",
+    "example_ka": "ინტერფეისი მოსახერხებელია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Plugin",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈplʌɡɪn/",
+    "example_en": "Install this plugin.",
+    "example_ka": "დააინსტალირეთ ეს დანამატი.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Compile",
+    "georgian": "კომპილაცია",
+    "pronunciation": "/kəmˈpaɪl/",
+    "example_en": "Compile the code before running.",
+    "example_ka": "გაშვებამდე გააკეთეთ კოდის კომპილაცია.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Syntax",
+    "georgian": "სინტაქსი",
+    "pronunciation": "/ˈsɪntæks/",
+    "example_en": "Check the syntax of your code.",
+    "example_ka": "შეამოწმეთ კოდის სინტაქსი.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Framework",
+    "georgian": "ფრეიმვორკი",
+    "pronunciation": "/ˈfreɪmwɜːrk/",
+    "example_en": "We use React as our framework.",
+    "example_ka": "ჩვენ React-ს ვიყენებთ როგორც ფრეიმვორკს.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Wireless",
+    "georgian": "უსადენო",
+    "pronunciation": "/ˈwaɪərləs/",
+    "example_en": "Connect to the wireless network.",
+    "example_ka": "დაუკავშირდით უსადენო ქსელს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Laptop",
+    "georgian": "ლეპტოპი",
+    "pronunciation": "/ˈlæptɒp/",
+    "example_en": "I carry my laptop everywhere.",
+    "example_ka": "ლეპტოპს ყველგან მივიტან.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Charger",
+    "georgian": "დამტენი",
+    "pronunciation": "/ˈtʃɑːrdʒər/",
+    "example_en": "Where is my charger?",
+    "example_ka": "სად არის ჩემი დამტენი?",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Reboot",
+    "georgian": "გადატვირთვა",
+    "pronunciation": "/riːˈbuːt/",
+    "example_en": "Try to reboot the computer.",
+    "example_ka": "სცადეთ კომპიუტერის გადატვირთვა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Data",
+    "georgian": "მონაცემები",
+    "pronunciation": "/ˈdeɪtə/",
+    "example_en": "Don't lose important data.",
+    "example_ka": "არ დაკარგოთ მნიშვნელოვანი მონაცემები.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Coding",
+    "georgian": "კოდირება",
+    "pronunciation": "/ˈkoʊdɪŋ/",
+    "example_en": "I am learning coding.",
+    "example_ka": "მე კოდირებას ვსწავლობ.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Pixel",
+    "georgian": "პიქსელი",
+    "pronunciation": "/ˈpɪksəl/",
+    "example_en": "Each pixel displays a color.",
+    "example_ka": "თითოეული პიქსელი ფერს აჩვენებს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Operating",
+    "georgian": "ოპერაციული",
+    "pronunciation": "/ˈɒpəreɪtɪŋ/",
+    "example_en": "What operating system do you use?",
+    "example_ka": "რომელ ოპერაციულ სისტემას იყენებ?",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "System",
+    "georgian": "სისტემა",
+    "pronunciation": "/ˈsɪstəm/",
+    "example_en": "The system is running smoothly.",
+    "example_ka": "სისტემა უმტკივნეულოდ მუშაობს.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Windows",
+    "georgian": "ვინდოუსი",
+    "pronunciation": "/ˈwɪndoʊz/",
+    "example_en": "I use Windows on my computer.",
+    "example_ka": "ჩემ კომპიუტერზე ვინდოუსს ვიყენებ.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "MacOS",
+    "georgian": "მაკოსი",
+    "pronunciation": "/mækˈoʊ es/",
+    "example_en": "MacOS is Apple's operating system.",
+    "example_ka": "მაკოსი Apple-ის ოპერაციული სისტემაა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Linux",
+    "georgian": "ლინუქსი",
+    "pronunciation": "/ˈlɪnʌks/",
+    "example_en": "Linux is open-source software.",
+    "example_ka": "ლინუქსი ღია კოდის პროგრამაა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Desktop",
+    "georgian": "მაგიდის კომპიუტერი",
+    "pronunciation": "/ˈdesktɒp/",
+    "example_en": "My desktop computer is powerful.",
+    "example_ka": "ჩემი მაგიდის კომპიუტერი ძლიერია.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Smartphone",
+    "georgian": "სმარტფონი",
+    "pronunciation": "/ˈsmɑːrtfoʊn/",
+    "example_en": "Everyone has a smartphone now.",
+    "example_ka": "ყველას ახლა სმარტფონი აქვს.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Tablet",
+    "georgian": "ტაბლეტი",
+    "pronunciation": "/ˈtæblət/",
+    "example_en": "I read books on my tablet.",
+    "example_ka": "წიგნებს ტაბლეტზე ვკითხულობ.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "USB",
+    "georgian": "იუესბი",
+    "pronunciation": "/ˌjuː es ˈbiː/",
+    "example_en": "Insert the USB drive.",
+    "example_ka": "USB მოწყობილობა ჩადე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Cable",
+    "georgian": "კაბელი",
+    "pronunciation": "/ˈkeɪbəl/",
+    "example_en": "Connect the cable to the port.",
+    "example_ka": "კაბელი პორტში ჩართე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Port",
+    "georgian": "პორტი",
+    "pronunciation": "/pɔːrt/",
+    "example_en": "The USB port is not working.",
+    "example_ka": "USB პორტი არ მუშაობს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Bluetooth",
+    "georgian": "ბლუთუსი",
+    "pronunciation": "/ˈbluːtuːθ/",
+    "example_en": "Turn on Bluetooth to connect.",
+    "example_ka": "დაკავშირებისთვის ბლუთუსი ჩართე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "WiFi",
+    "georgian": "ვაიფაი",
+    "pronunciation": "/ˈwaɪfaɪ/",
+    "example_en": "Connect to the WiFi network.",
+    "example_ka": "ვაიფაი ქსელს დაუკავშირდი.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Router",
+    "georgian": "როუტერი",
+    "pronunciation": "/ˈruːtər/",
+    "example_en": "Reset the router if needed.",
+    "example_ka": "საჭიროების შემთხვევაში როუტერი გადაატვირთე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Modem",
+    "georgian": "მოდემი",
+    "pronunciation": "/ˈmoʊdəm/",
+    "example_en": "The modem provides internet access.",
+    "example_ka": "მოდემი ინტერნეტ წვდომას უზრუნველყოფს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Bandwidth",
+    "georgian": "გამტარუნარიანობა",
+    "pronunciation": "/ˈbændwɪdθ/",
+    "example_en": "We need more bandwidth for video calls.",
+    "example_ka": "ვიდეო ზარებისთვის მეტი გამტარუნარიანობა გვჭირდება.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Storage",
+    "georgian": "შესანახი",
+    "pronunciation": "/ˈstɔːrɪdʒ/",
+    "example_en": "We need more storage space.",
+    "example_ka": "მეტი შესანახი ადგილი გვჭირდება.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Disk",
+    "georgian": "დისკი",
+    "pronunciation": "/dɪsk/",
+    "example_en": "The hard disk is almost full.",
+    "example_ka": "მყარი დისკი თითქმის სავსეა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "SSD",
+    "georgian": "ესესდი",
+    "pronunciation": "/ˌes es ˈdiː/",
+    "example_en": "SSD drives are faster than regular disks.",
+    "example_ka": "SSD დისკები ჩვეულებრივ დისკებზე სწრაფია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "RAM",
+    "georgian": "რამი",
+    "pronunciation": "/ræm/",
+    "example_en": "This computer has 16GB of RAM.",
+    "example_ka": "ამ კომპიუტერს 16GB RAM აქვს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "CPU",
+    "georgian": "ცპუ",
+    "pronunciation": "/ˌsiː piː ˈjuː/",
+    "example_en": "The CPU is the brain of the computer.",
+    "example_ka": "CPU კომპიუტერის ტვინია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "GPU",
+    "georgian": "ჯიპიუ",
+    "pronunciation": "/ˌdʒiː piː ˈjuː/",
+    "example_en": "A good GPU is needed for gaming.",
+    "example_ka": "კარგი GPU თამაშებისთვის არის საჭირო.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Motherboard",
+    "georgian": "მთავარი დაფა",
+    "pronunciation": "/ˈmʌðərboːrd/",
+    "example_en": "All components connect to the motherboard.",
+    "example_ka": "ყველა კომპონენტი მთავარ დაფას უკავშირდება.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Driver",
+    "georgian": "დრაივერი",
+    "pronunciation": "/ˈdraɪvər/",
+    "example_en": "Install the latest drivers.",
+    "example_ka": "უახლესი დრაივერები დააინსტალირე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Registry",
+    "georgian": "რეესტრი",
+    "pronunciation": "/ˈredʒɪstri/",
+    "example_en": "Don't edit the registry unless necessary.",
+    "example_ka": "რეესტრი საჭიროების გარეშე არ შეცვალო.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Installation",
+    "georgian": "ინსტალაცია",
+    "pronunciation": "/ˌɪnstəˈleɪʃən/",
+    "example_en": "The installation is complete.",
+    "example_ka": "ინსტალაცია დასრულდა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Uninstall",
+    "georgian": "წაშლა",
+    "pronunciation": "/ˌʌnɪnˈstɔːl/",
+    "example_en": "Uninstall programs you don't use.",
+    "example_ka": "წაშალე პროგრამები, რომლებსაც არ იყენებ.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Configuration",
+    "georgian": "კონფიგურაცია",
+    "pronunciation": "/kənˌfɪɡjəˈreɪʃən/",
+    "example_en": "Check the system configuration.",
+    "example_ka": "სისტემის კონფიგურაცია შეამოწმე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Settings",
+    "georgian": "პარამეტრები",
+    "pronunciation": "/ˈsetɪŋz/",
+    "example_en": "Change the display settings.",
+    "example_ka": "დისპლეის პარამეტრები შეცვალე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Preferences",
+    "georgian": "უპირატესობები",
+    "pronunciation": "/ˈprɛfərənsəz/",
+    "example_en": "Set your preferences in the menu.",
+    "example_ka": "მენიუში თქვენი უპირატესობები დააყენეთ.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmenjuː/",
+    "example_en": "Select options from the menu.",
+    "example_ka": "მენიუდან ოფციები აირჩიეთ.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Icon",
+    "georgian": "იკონა",
+    "pronunciation": "/ˈaɪkɒn/",
+    "example_en": "Click on the desktop icon.",
+    "example_ka": "მაგიდის იკონაზე დააჭირე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "Close the window when finished.",
+    "example_ka": "დასრულებისას ფანჯარა დახურე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Dialog",
+    "georgian": "დიალოგი",
+    "pronunciation": "/ˈdaɪəlɒɡ/",
+    "example_en": "A dialog box appeared on screen.",
+    "example_ka": "ეკრანზე დიალოგის ფანჯარა გამოჩნდა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Button",
+    "georgian": "ღილაკი",
+    "pronunciation": "/ˈbʌtən/",
+    "example_en": "Press the OK button.",
+    "example_ka": "OK ღილაკს დააჭირე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Toolbar",
+    "georgian": "ინსტრუმენტების ზოლი",
+    "pronunciation": "/ˈtuːlbɑːr/",
+    "example_en": "The toolbar contains useful buttons.",
+    "example_ka": "ინსტრუმენტების ზოლი სასარგებლო ღილაკებს შეიცავს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Taskbar",
+    "georgian": "ამოცანების ზოლი",
+    "pronunciation": "/ˈtæskbɑːr/",
+    "example_en": "Pin the app to the taskbar.",
+    "example_ka": "აპლიკაცია ამოცანების ზოლზე მიამაგრე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Wallpaper",
+    "georgian": "ფონის სურათი",
+    "pronunciation": "/ˈwɔːlpeɪpər/",
+    "example_en": "Change your desktop wallpaper.",
+    "example_ka": "სამუშაო მაგიდის ფონი შეცვალე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Screensaver",
+    "georgian": "ეკრანის მცველი",
+    "pronunciation": "/ˈskriːnseɪvər/",
+    "example_en": "Set a screensaver for your computer.",
+    "example_ka": "კომპიუტერისთვის ეკრანის მცველი დააყენე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Resolution",
+    "georgian": "გარჩევადობა",
+    "pronunciation": "/ˌrezəˈluːʃən/",
+    "example_en": "Increase the screen resolution.",
+    "example_ka": "ეკრანის გარჩევადობა გაზარდე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Graphics",
+    "georgian": "გრაფიკა",
+    "pronunciation": "/ˈɡræfɪks/",
+    "example_en": "This game has amazing graphics.",
+    "example_ka": "ამ თამაშს საოცარი გრაფიკა აქვს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Audio",
+    "georgian": "აუდიო",
+    "pronunciation": "/ˈɔːdioʊ/",
+    "example_en": "Adjust the audio volume.",
+    "example_ka": "აუდიოს ხმა მოარეგულირე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Video",
+    "georgian": "ვიდეო",
+    "pronunciation": "/ˈvɪdioʊ/",
+    "example_en": "Watch the video tutorial.",
+    "example_ka": "ვიდეო ტუტორიალი ნახე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Streaming",
+    "georgian": "სტრიმინგი",
+    "pronunciation": "/ˈstriːmɪŋ/",
+    "example_en": "I love streaming music online.",
+    "example_ka": "მუსიკის ონლაინ სტრიმინგი მიყვარს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Podcast",
+    "georgian": "პოდკასტი",
+    "pronunciation": "/ˈpɒdkæst/",
+    "example_en": "Listen to this tech podcast.",
+    "example_ka": "ეს ტექნოლოგიების პოდკასტი მოისმინე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Social",
+    "georgian": "სოციალური",
+    "pronunciation": "/ˈsoʊʃəl/",
+    "example_en": "Join our social media group.",
+    "example_ka": "ჩვენს სოციალური მედიის ჯგუფს შემოუერთდი.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Media",
+    "georgian": "მედია",
+    "pronunciation": "/ˈmiːdiə/",
+    "example_en": "Share your media files.",
+    "example_ka": "თქვენი მედია ფაილები გააზიარეთ.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Chat",
+    "georgian": "ჩატი",
+    "pronunciation": "/tʃæt/",
+    "example_en": "Join the online chat.",
+    "example_ka": "ონლაინ ჩატში შემოუერთდი.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Message",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈmesɪdʒ/",
+    "example_en": "Send me a message later.",
+    "example_ka": "მოგვიანებით შეტყობინება გამომიგზავნე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/",
+    "example_en": "Turn off notifications for now.",
+    "example_ka": "ახლჯერ შეტყობინებები გამორთე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Alert",
+    "georgian": "გაფრთხილება",
+    "pronunciation": "/əˈlɜːrt/",
+    "example_en": "The system showed an alert.",
+    "example_ka": "სისტემამ გაფრთხილება აჩვენა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Error",
+    "georgian": "შეცდომა",
+    "pronunciation": "/ˈerər/",
+    "example_en": "Fix the error in your code.",
+    "example_ka": "კოდში შეცდომა გამოასწორე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Warning",
+    "georgian": "გაფრთხილება",
+    "pronunciation": "/ˈwɔːrnɪŋ/",
+    "example_en": "Heed the security warning.",
+    "example_ka": "უსაფრთხოების გაფრთხილებას ყურადღება მიაქციე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Permission",
+    "georgian": "ნებართვა",
+    "pronunciation": "/pərˈmɪʃən/",
+    "example_en": "Grant permission to access files.",
+    "example_ka": "ფაილებზე წვდომის ნებართვა მიეცი.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Access",
+    "georgian": "წვდომა",
+    "pronunciation": "/ˈækses/",
+    "example_en": "You don't have access to this folder.",
+    "example_ka": "ამ საქაღალდეზე არ გაქვს წვდომა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊrəti/",
+    "example_en": "Enable two-factor security.",
+    "example_ka": "ორფაქტორიანი უსაფრთხოება ჩართე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Privacy",
+    "georgian": "კონფიდენციალურობა",
+    "pronunciation": "/ˈpraɪvəsi/",
+    "example_en": "Check your privacy settings.",
+    "example_ka": "კონფიდენციალურობის პარამეტრები შეამოწმე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Anonymous",
+    "georgian": "ანონიმური",
+    "pronunciation": "/əˈnɑːnəməs/",
+    "example_en": "Browse the internet anonymously.",
+    "example_ka": "ინტერნეტი ანონიმურად დათვალიერე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Cookie",
+    "georgian": "ქუქი",
+    "pronunciation": "/ˈkʊki/",
+    "example_en": "Clear your browser cookies.",
+    "example_ka": "ბრაუზერის ქუქები გაასუფთავე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Cache",
+    "georgian": "კეში",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Clear the browser cache.",
+    "example_ka": "ბრაუზერის კეში გაასუფთავე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "History",
+    "georgian": "ისტორია",
+    "pronunciation": "/ˈhɪstəri/",
+    "example_en": "Check your browsing history.",
+    "example_ka": "დათვალიერების ისტორია შეამოწმე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Bookmark",
+    "georgian": "სანიშნე",
+    "pronunciation": "/ˈbʊkmɑːrk/",
+    "example_en": "Bookmark this useful website.",
+    "example_ka": "ეს სასარგებლო ვებგვერდი სანიშნეში დამატე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Search",
+    "georgian": "ძიება",
+    "pronunciation": "/sɜːrtʃ/",
+    "example_en": "Search for the information online.",
+    "example_ka": "ინფორმაცია ონლაინ მოძებნე.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Engine",
+    "georgian": "ძრავა",
+    "pronunciation": "/ˈendʒɪn/",
+    "example_en": "Google is a popular search engine.",
+    "example_ka": "Google პოპულარული საძიებო ძრავაა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Query",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/ˈkwɪri/",
+    "example_en": "Enter your search query here.",
+    "example_ka": "საძიებო მოთხოვნა აქ შეიყვანე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Result",
+    "georgian": "შედეგი",
+    "pronunciation": "/rɪˈzʌlt/",
+    "example_en": "The search returned many results.",
+    "example_ka": "ძიებამ ბევრი შედეგი გამოიტანა.",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "Filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Apply a filter to narrow results.",
+    "example_ka": "შედეგების შესამცირებლად ფილტრი გამოიყენე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Sort",
+    "georgian": "დალაგება",
+    "pronunciation": "/sɔːrt/",
+    "example_en": "Sort the files by date.",
+    "example_ka": "ფაილები თარიღის მიხედვით დაალაგე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Format",
+    "georgian": "ფორმატი",
+    "pronunciation": "/ˈfɔːrmæt/",
+    "example_en": "What format is this file?",
+    "example_ka": "რა ფორმატისაა ეს ფაილი?",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Extension",
+    "georgian": "გაფართოება",
+    "pronunciation": "/ɪkˈstenʃən/",
+    "example_en": "The file extension is .txt",
+    "example_ka": "ფაილის გაფართოება .txt არის.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Compression",
+    "georgian": "შეკუმშვა",
+    "pronunciation": "/kəmˈpreʃən/",
+    "example_en": "Use compression to save space.",
+    "example_ka": "ადგილის დასაზოგად შეკუმშვა გამოიყენე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Archive",
+    "georgian": "არქივი",
+    "pronunciation": "/ˈɑːrkaɪv/",
+    "example_en": "Extract files from the archive.",
+    "example_ka": "ფაილები არქივიდან ამოიღე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Extraction",
+    "georgian": "ამოღება",
+    "pronunciation": "/ɪkˈstrækʃən/",
+    "example_en": "The extraction process is complete.",
+    "example_ka": "ამოღების პროცესი დასრულდა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Wizard",
+    "georgian": "დამხმარე",
+    "pronunciation": "/ˈwɪzərd/",
+    "example_en": "Use the setup wizard.",
+    "example_ka": "დაყენების დამხმარე გამოიყენე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Tutorial",
+    "georgian": "ტუტორიალი",
+    "pronunciation": "/tuːˈtɔːriəl/",
+    "example_en": "Watch the video tutorial.",
+    "example_ka": "ვიდეო ტუტორიალი ნახე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Manual",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/ˈmænjuəl/",
+    "example_en": "Read the user manual first.",
+    "example_ka": "ჯერ მომხმარებლის სახელმძღვანელო წაიკითხე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Documentation",
+    "georgian": "დოკუმენტაცია",
+    "pronunciation": "/ˌdɑːkjəmənˈteɪʃən/",
+    "example_en": "Check the official documentation.",
+    "example_ka": "ოფიციალური დოკუმენტაცია შეამოწმე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Support",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/səˈpɔːrt/",
+    "example_en": "Contact technical support.",
+    "example_ka": "ტექნიკურ მხარდაჭერას დაუკავშირდი.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Troubleshoot",
+    "georgian": "პრობლემის გადაწყვეტა",
+    "pronunciation": "/ˈtrʌbəlʃuːt/",
+    "example_en": "Troubleshoot the network issue.",
+    "example_ka": "ქსელის პრობლემა გადაწყვიტე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Maintenance",
+    "georgian": "მოვლა",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "example_en": "Perform regular system maintenance.",
+    "example_ka": "რეგულარულად განახორციელე სისტემის მოვლა.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Optimize",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˈɑːptəmaɪz/",
+    "example_en": "Optimize your computer performance.",
+    "example_ka": "კომპიუტერის მუშაობა ოპტიმიზირე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Performance",
+    "georgian": "წარმადობა",
+    "pronunciation": "/pərˈfɔːrməns/",
+    "example_en": "Monitor system performance.",
+    "example_ka": "სისტემის წარმადობას აკონტროლე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Benchmark",
+    "georgian": "ტესტირება",
+    "pronunciation": "/ˈbentʃmɑːrk/",
+    "example_en": "Run a benchmark test.",
+    "example_ka": "ბენჩმარკის ტესტი ჩაატარე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Upgrade",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpɡreɪd/",
+    "example_en": "Upgrade to the latest version.",
+    "example_ka": "უახლეს ვერსიაზე განახლდი.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Downgrade",
+    "georgian": "ძველ ვერსიაზე დაბრუნება",
+    "pronunciation": "/ˈdaʊnɡreɪd/",
+    "example_en": "Downgrade if the new version has problems.",
+    "example_ka": "ძველ ვერსიაზე დაბრუნდი, თუ ახალს პრობლემები აქვს.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Version",
+    "georgian": "ვერსია",
+    "pronunciation": "/ˈvɜːrʒən/",
+    "example_en": "What version of the software do you have?",
+    "example_ka": "პროგრამის რა ვერსია გაქვს?",
+    "category": "computers-programming",
+    "level": "A1"
+  },
+  {
+    "english": "License",
+    "georgian": "ლიცენზია",
+    "pronunciation": "/ˈlaɪsəns/",
+    "example_en": "Check the software license terms.",
+    "example_ka": "პროგრამის ლიცენზიის პირობები შეამოწმე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Open-source",
+    "georgian": "ღია კოდი",
+    "pronunciation": "/ˌoʊpən ˈsɔːrs/",
+    "example_en": "This is open-source software.",
+    "example_ka": "ეს ღია კოდის პროგრამაა.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Proprietary",
+    "georgian": "კერძო",
+    "pronunciation": "/prəˈpraɪəteri/",
+    "example_en": "Microsoft Windows is proprietary software.",
+    "example_ka": "Microsoft Windows კერძო პროგრამაა.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Freeware",
+    "georgian": "უფასო პროგრამა",
+    "pronunciation": "/ˈfriːwɛr/",
+    "example_en": "Download this useful freeware.",
+    "example_ka": "ეს სასარგებლო უფასო პროგრამა ჩამოტვირთე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Shareware",
+    "georgian": "გაზიარებადი პროგრამა",
+    "pronunciation": "/ˈʃɛrwɛr/",
+    "example_en": "Try the shareware version first.",
+    "example_ka": "ჯერ საცდელი ვერსია გამოსცადე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Beta",
+    "georgian": "ბეტა",
+    "pronunciation": "/ˈbeɪtə/",
+    "example_en": "This is a beta version of the app.",
+    "example_ka": "ეს აპლიკაციის ბეტა ვერსიაა.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Alpha",
+    "georgian": "ალფა",
+    "pronunciation": "/ˈælfə/",
+    "example_en": "The alpha version is for testing only.",
+    "example_ka": "ალფა ვერსია მხოლოდ ტესტირებისთვისაა.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Patch",
+    "georgian": "პაჩი",
+    "pronunciation": "/pætʃ/",
+    "example_en": "Install the security patch.",
+    "example_ka": "უსაფრთხოების პაჩი დააინსტალირე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "Hotfix",
+    "georgian": "სწრაფი გასწორება",
+    "pronunciation": "/ˈhɑːtfɪks/",
+    "example_en": "Apply the hotfix immediately.",
+    "example_ka": "სწრაფი გასწორება მაშინვე გამოიყენე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Rollback",
+    "georgian": "უკან დაბრუნება",
+    "pronunciation": "/ˈroʊlbæk/",
+    "example_en": "Rollback to the previous version.",
+    "example_ka": "წინა ვერსიაზე უკან დაბრუნდი.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Migration",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/maɪˈɡreɪʃən/",
+    "example_en": "The data migration is complete.",
+    "example_ka": "მონაცემების მიგრაცია დასრულდა.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Compatibility",
+    "georgian": "თავსებადობა",
+    "pronunciation": "/kəmˌpætəˈbɪləti/",
+    "example_en": "Check software compatibility first.",
+    "example_ka": "ჯერ პროგრამის თავსებადობა შეამოწმე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "Legacy",
+    "georgian": "მემკვიდრეობითი",
+    "pronunciation": "/ˈleɡəsi/",
+    "example_en": "We still support legacy systems.",
+    "example_ka": "ჩვენ ჯერ კიდევ ვუჭერთ მხარს მემკვიდრეობით სისტემებს.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Deprecated",
+    "georgian": "მოძველებული",
+    "pronunciation": "/ˈdeprəkeɪtɪd/",
+    "example_en": "This feature is deprecated.",
+    "example_ka": "ეს ფუნქცია მოძველებულია.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "Obsolete",
+    "georgian": "მოუძველდა",
+    "pronunciation": "/ˌɑːbsəˈliːt/",
+    "example_en": "This technology is now obsolete.",
+    "example_ka": "ეს ტექნოლოგია ახლა მოძველებულია.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "abstraction",
+    "georgian": "აბსტრაქცია",
+    "pronunciation": "/æbˈstrækʃn/",
+    "example_en": "Abstraction simplifies complex code.",
+    "example_ka": "აბსტრაქცია კომპლექსურ კოდს ამარტივებს.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "agile",
+    "georgian": "აჯაილი",
+    "pronunciation": "/ˈædʒaɪl/",
+    "example_en": "We use agile methodology.",
+    "example_ka": "აჯაილ მეთოდოლოგიას ვიყენებთ.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "authenticate",
+    "georgian": "ავთენტიფიკაცია",
+    "pronunciation": "/ɔːˈθentɪkeɪt/",
+    "example_en": "Authenticate the user.",
+    "example_ka": "მომხმარებელი ავთენტიფიცირე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "backend",
+    "georgian": "ბექენდი",
+    "pronunciation": "/ˈbækend/",
+    "example_en": "He works on the backend.",
+    "example_ka": "ის ბექენდზე მუშაობს.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "binary",
+    "georgian": "ორობითი",
+    "pronunciation": "/ˈbaɪnəri/",
+    "example_en": "Computers use binary code.",
+    "example_ka": "კომპიუტერები ორობით კოდს იყენებენ.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "boolean",
+    "georgian": "ბულინი",
+    "pronunciation": "/ˈbuːliən/",
+    "example_en": "Boolean values are true or false.",
+    "example_ka": "ბულინის მნიშვნელობები არის true ან false.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "breakpoint",
+    "georgian": "ბრეიქპოინტი",
+    "pronunciation": "/ˈbreɪkpɔɪnt/",
+    "example_en": "Set a breakpoint in the code.",
+    "example_ka": "კოდში ბრეიქპოინტი დააყენე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "callback",
+    "georgian": "ქოლბექი",
+    "pronunciation": "/ˈkɔːlbæk/",
+    "example_en": "Use a callback function.",
+    "example_ka": "ქოლბექ ფუნქცია გამოიყენე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "concatenate",
+    "georgian": "შეერთება",
+    "pronunciation": "/kənˈkætɪneɪt/",
+    "example_en": "Concatenate the strings.",
+    "example_ka": "სტრინგები შეაერთე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "constructor",
+    "georgian": "კონსტრუქტორი",
+    "pronunciation": "/kənˈstrʌktər/",
+    "example_en": "Define a constructor.",
+    "example_ka": "კონსტრუქტორი განსაზღვრე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "daemon",
+    "georgian": "დემონი",
+    "pronunciation": "/ˈdiːmən/",
+    "example_en": "The daemon runs in background.",
+    "example_ka": "დემონი ფონზე მუშაობს.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "deprecate",
+    "georgian": "მოძველება",
+    "pronunciation": "/ˈdeprɪkeɪt/",
+    "example_en": "This function is deprecated.",
+    "example_ka": "ეს ფუნქცია მოძველებულია.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "deploy",
+    "georgian": "დეპლოი",
+    "pronunciation": "/dɪˈplɔɪ/",
+    "example_en": "Deploy the application.",
+    "example_ka": "აპლიკაცია დეპლოი გააკეთე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "endpoint",
+    "georgian": "ენდპოინტი",
+    "pronunciation": "/ˈendpɔɪnt/",
+    "example_en": "Call the API endpoint.",
+    "example_ka": "API ენდპოინტზე მიმართე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "enumerate",
+    "georgian": "ჩამოთვლა",
+    "pronunciation": "/ɪˈnjuːməreɪt/",
+    "example_en": "Enumerate the list items.",
+    "example_ka": "სიის ელემენტები ჩამოთვალე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "exception",
+    "georgian": "გამონაკლისი",
+    "pronunciation": "/ɪkˈsepʃn/",
+    "example_en": "Handle the exception.",
+    "example_ka": "გამონაკლისი დაამუშავე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "frontend",
+    "georgian": "ფრონტენდი",
+    "pronunciation": "/ˈfrʌntend/",
+    "example_en": "She specializes in frontend.",
+    "example_ka": "ის ფრონტენდში სპეციალიზდება.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "fullstack",
+    "georgian": "ფულსტეკი",
+    "pronunciation": "/ˈfʊlstæk/",
+    "example_en": "He is a fullstack developer.",
+    "example_ka": "ის ფულსტეკ დეველოპერია.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "garbage",
+    "georgian": "ნაგავი",
+    "pronunciation": "/ˈɡɑːrbɪdʒ/",
+    "example_en": "Garbage collection frees memory.",
+    "example_ka": "ნაგვის კოლექცია მეხსიერებას ათავისუფლებს.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "hardcode",
+    "georgian": "ჰარდკოდი",
+    "pronunciation": "/ˈhɑːrdkoʊd/",
+    "example_en": "Don't hardcode values.",
+    "example_ka": "მნიშვნელობები არ დაჰარდკოდო.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "heap",
+    "georgian": "ჰიპი",
+    "pronunciation": "/hiːp/",
+    "example_en": "Allocate memory on the heap.",
+    "example_ka": "მეხსიერება ჰიპზე გამოყავი.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "inheritance",
+    "georgian": "მემკვიდრეობა",
+    "pronunciation": "/ɪnˈherɪtəns/",
+    "example_en": "Use class inheritance.",
+    "example_ka": "კლასის მემკვიდრეობა გამოიყენე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "instance",
+    "georgian": "ინსტანცია",
+    "pronunciation": "/ˈɪnstəns/",
+    "example_en": "Create a new instance.",
+    "example_ka": "ახალი ინსტანცია შექმენი.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "iterate",
+    "georgian": "იტერაცია",
+    "pronunciation": "/ˈɪtəreɪt/",
+    "example_en": "Iterate over the array.",
+    "example_ka": "მასივზე იტერაცია გააკეთე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "kernel",
+    "georgian": "ბირთვი",
+    "pronunciation": "/ˈkɜːrnl/",
+    "example_en": "The kernel manages hardware.",
+    "example_ka": "ბირთვი აპარატურას მართავს.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "latency",
+    "georgian": "ლატენტობა",
+    "pronunciation": "/ˈleɪtənsi/",
+    "example_en": "Reduce network latency.",
+    "example_ka": "ქსელის ლატენტობა შეამცირე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "middleware",
+    "georgian": "მიდლვეარი",
+    "pronunciation": "/ˈmɪdlweər/",
+    "example_en": "Add authentication middleware.",
+    "example_ka": "ავთენტიფიკაციის მიდლვეარი დაამატე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "namespace",
+    "georgian": "ნეიმსფეისი",
+    "pronunciation": "/ˈneɪmspeɪs/",
+    "example_en": "Avoid namespace conflicts.",
+    "example_ka": "ნეიმსფეისის კონფლიქტები ასაცილე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "operand",
+    "georgian": "ოპერანდი",
+    "pronunciation": "/ˈɒpərænd/",
+    "example_en": "The operand is a number.",
+    "example_ka": "ოპერანდი რიცხვია.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "overload",
+    "georgian": "გადატვირთვა",
+    "pronunciation": "/ˌoʊvərˈloʊd/",
+    "example_en": "Overload the method.",
+    "example_ka": "მეთოდი გადატვირთე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "parse",
+    "georgian": "პარსინგი",
+    "pronunciation": "/pɑːrs/",
+    "example_en": "Parse the JSON data.",
+    "example_ka": "JSON მონაცემები დაპარსე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "pointer",
+    "georgian": "მაჩვენებელი",
+    "pronunciation": "/ˈpɔɪntər/",
+    "example_en": "A pointer references memory.",
+    "example_ka": "მაჩვენებელი მეხსიერებაზე მიუთითებს.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "polymorphism",
+    "georgian": "პოლიმორფიზმი",
+    "pronunciation": "/ˌpɒliˈmɔːrfɪzəm/",
+    "example_en": "Polymorphism enables flexibility.",
+    "example_ka": "პოლიმორფიზმი მოქნილობას უზრუნველყოფს.",
+    "category": "computers-programming",
+    "level": "C1"
+  },
+  {
+    "english": "recursion",
+    "georgian": "რეკურსია",
+    "pronunciation": "/rɪˈkɜːrʒn/",
+    "example_en": "Recursion solves complex problems.",
+    "example_ka": "რეკურსია კომპლექსურ პრობლემებს ხსნის.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "refactor",
+    "georgian": "რეფაქტორინგი",
+    "pronunciation": "/riːˈfæktər/",
+    "example_en": "Refactor the messy code.",
+    "example_ka": "არეულ-დარეული კოდი გარეფაქტორე.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "repository",
+    "georgian": "რეპოზიტორი",
+    "pronunciation": "/rɪˈpɒzɪtɔːri/",
+    "example_en": "Clone the repository.",
+    "example_ka": "რეპოზიტორი დააკლონირე.",
+    "category": "computers-programming",
+    "level": "A2"
+  },
+  {
+    "english": "runtime",
+    "georgian": "რანთაიმი",
+    "pronunciation": "/ˈrʌntaɪm/",
+    "example_en": "A runtime error occurred.",
+    "example_ka": "რანთაიმ ერორი მოხდა.",
+    "category": "computers-programming",
+    "level": "B1"
+  },
+  {
+    "english": "scaffold",
+    "georgian": "სქაფოლდი",
+    "pronunciation": "/ˈskæfoʊld/",
+    "example_en": "Scaffold the project.",
+    "example_ka": "პროექტი სქაფოლდე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "serialize",
+    "georgian": "სერიალიზაცია",
+    "pronunciation": "/ˈsɪriəlaɪz/",
+    "example_en": "Serialize the object to JSON.",
+    "example_ka": "ობიექტი JSON-ში სერიალიზე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "singleton",
+    "georgian": "სინგლტონი",
+    "pronunciation": "/ˈsɪŋɡltən/",
+    "example_en": "Use the singleton pattern.",
+    "example_ka": "სინგლტონ პატერნი გამოიყენე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "verbose",
+    "georgian": "ვერბოზი",
+    "pronunciation": "/vɜːrˈboʊs/",
+    "example_en": "Enable verbose logging.",
+    "example_ka": "ვერბოზ ლოგირება ჩართე.",
+    "category": "computers-programming",
+    "level": "B2"
+  },
+  {
+    "english": "wrapper",
+    "georgian": "რეპერი",
+    "pronunciation": "/ˈræpər/",
+    "example_en": "Create a wrapper function.",
+    "example_ka": "რეპერ ფუნქცია შექმენი.",
+    "category": "computers-programming",
+    "level": "B1"
+  }
 ]

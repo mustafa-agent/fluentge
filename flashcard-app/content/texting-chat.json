@@ -1,37 +1,1802 @@
 [
-  {"english": "LOL", "georgian": "ხმამაღლა სიცილი", "pronunciation": "/ɛl oʊ ɛl/", "example_en": "That joke was funny, LOL!", "example_ka": "ეს ხუმრობა სასაცილო იყო, ხმამაღლა სიცილი!", "category": "texting", "level": "A2"},
-  {"english": "BRB", "georgian": "მალე დავბრუნდები", "pronunciation": "/biː ɑːr biː/", "example_en": "BRB, getting coffee.", "example_ka": "მალე დავბრუნდები, ყავას ვიღებ.", "category": "texting", "level": "A2"},
-  {"english": "OMG", "georgian": "ღმერთო ჩემო", "pronunciation": "/oʊ ɛm dʒiː/", "example_en": "OMG, that's amazing!", "example_ka": "ღმერთო ჩემო, ეს საოცარია!", "category": "texting", "level": "A2"},
-  {"english": "DM", "georgian": "პირადი შეტყობინება", "pronunciation": "/diː ɛm/", "example_en": "Send me a DM.", "example_ka": "პირადი შეტყობინება მომწერე.", "category": "texting", "level": "A2"},
-  {"english": "TBH", "georgian": "გულახდილად", "pronunciation": "/tiː biː eɪtʃ/", "example_en": "TBH, I don't like it.", "example_ka": "გულახდილად, არ მომწონს.", "category": "texting", "level": "A2"},
-  {"english": "IMO", "georgian": "ჩემი აზრით", "pronunciation": "/aɪ ɛm oʊ/", "example_en": "IMO, this is the best movie.", "example_ka": "ჩემი აზრით, ეს საუკეთესო ფილმია.", "category": "texting", "level": "A2"},
-  {"english": "ASAP", "georgian": "რაც შეიძლება სწრაფად", "pronunciation": "/eɪ ɛs eɪ piː/", "example_en": "Please reply ASAP.", "example_ka": "გთხოვთ რაც შეიძლება სწრაფად უპასუხე.", "category": "texting", "level": "A2"},
-  {"english": "FYI", "georgian": "შენი ინფორმაციისთვის", "pronunciation": "/ɛf waɪ aɪ/", "example_en": "FYI, the meeting is at 3 PM.", "example_ka": "შენი ინფორმაციისთვის, შეხვედრა 3 საათზეა.", "category": "texting", "level": "A2"},
-  {"english": "FOMO", "georgian": "გამოტოვების შიში", "pronunciation": "/ˈfoʊmoʊ/", "example_en": "I have FOMO about the party.", "example_ka": "წვეულების გამოტოვების შიში მაქვს.", "category": "texting", "level": "B1"},
-  {"english": "Ghosting", "georgian": "უგულებელყოფა", "pronunciation": "/ˈɡoʊstɪŋ/", "example_en": "He started ghosting me.", "example_ka": "დამიწყო უგულებელყოფა.", "category": "texting", "level": "B1"},
-  {"english": "Vibe", "georgian": "ატმოსფერო/ვაიბი", "pronunciation": "/vaɪb/", "example_en": "This place has a great vibe.", "example_ka": "ამ ადგილს კარგი ვაიბი აქვს.", "category": "texting", "level": "A2"},
-  {"english": "Lowkey", "georgian": "ფარულად/ცოტათი", "pronunciation": "/ˈloʊkiː/", "example_en": "I lowkey want pizza.", "example_ka": "ცოტათი პიცა მინდა.", "category": "texting", "level": "B1"},
-  {"english": "Highkey", "georgian": "აშკარად/ძალიან", "pronunciation": "/ˈhaɪkiː/", "example_en": "I highkey love this song.", "example_ka": "ძალიან მიყვარს ეს სიმღერა.", "category": "texting", "level": "B1"},
-  {"english": "NGL", "georgian": "არ ვიტყუები", "pronunciation": "/ɛn dʒiː ɛl/", "example_en": "NGL, that was scary.", "example_ka": "არ ვიტყუები, ეს საშინელი იყო.", "category": "texting", "level": "A2"},
-  {"english": "IRL", "georgian": "რეალურ ცხოვრებაში", "pronunciation": "/aɪ ɑːr ɛl/", "example_en": "Let's meet IRL.", "example_ka": "რეალურ ცხოვრებაში შევხვდეთ.", "category": "texting", "level": "A2"},
-  {"english": "Sus", "georgian": "საეჭვო", "pronunciation": "/sʌs/", "example_en": "That's kinda sus.", "example_ka": "ეს ცოტა საეჭვოა.", "category": "texting", "level": "B1"},
-  {"english": "Slay", "georgian": "მაგრად გაკეთება", "pronunciation": "/sleɪ/", "example_en": "You look amazing, slay!", "example_ka": "მაგრად გამოიყურები!", "category": "texting", "level": "B1"},
-  {"english": "No cap", "georgian": "სერიოზულად", "pronunciation": "/noʊ kæp/", "example_en": "This is the best, no cap.", "example_ka": "ეს საუკეთესოა, სერიოზულად.", "category": "texting", "level": "B1"},
-  {"english": "Cap", "georgian": "ტყუილი", "pronunciation": "/kæp/", "example_en": "That's cap, I don't believe you.", "example_ka": "ეს ტყუილია, არ გჯერა.", "category": "texting", "level": "B1"},
-  {"english": "Flex", "georgian": "მოწონება/ტრაბახი", "pronunciation": "/flɛks/", "example_en": "He's just flexing his new car.", "example_ka": "ახალ მანქანას ტრაბახობს.", "category": "texting", "level": "B1"},
-  {"english": "Lit", "georgian": "მაგარი", "pronunciation": "/lɪt/", "example_en": "The party was lit!", "example_ka": "წვეულება მაგარი იყო!", "category": "texting", "level": "A2"},
-  {"english": "Cringe", "georgian": "უხერხული", "pronunciation": "/krɪndʒ/", "example_en": "That video is so cringe.", "example_ka": "ეს ვიდეო ძალიან უხერხულია.", "category": "texting", "level": "B1"},
-  {"english": "Bet", "georgian": "კარგი/გასაგებია", "pronunciation": "/bɛt/", "example_en": "Wanna grab food? Bet.", "example_ka": "საჭმელი გინდა? კარგი.", "category": "texting", "level": "A2"},
-  {"english": "Savage", "georgian": "სასტიკი/უშიშარი", "pronunciation": "/ˈsævɪdʒ/", "example_en": "That comeback was savage.", "example_ka": "ეს პასუხი უშიშარი იყო.", "category": "texting", "level": "B1"},
-  {"english": "Ratio", "georgian": "მეტი პასუხი ვიდრე ლაიქი", "pronunciation": "/ˈreɪʃioʊ/", "example_en": "He got ratio'd on Twitter.", "example_ka": "ტვიტერზე რეითიო დაჭირეს.", "category": "texting", "level": "B1"},
-  {"english": "W", "georgian": "მოგება/წარმატება", "pronunciation": "/ˈdʌblju/", "example_en": "Getting that job was a W.", "example_ka": "ამ სამსახურის მიღება მოგება იყო.", "category": "texting", "level": "A2"},
-  {"english": "L", "georgian": "წაგება/მარცხი", "pronunciation": "/ɛl/", "example_en": "Missing the flight was an L.", "example_ka": "რეისის გაშვება მარცხი იყო.", "category": "texting", "level": "A2"},
-  {"english": "Stan", "georgian": "ფანატი", "pronunciation": "/stæn/", "example_en": "I stan this artist.", "example_ka": "ამ არტისტის ფანატი ვარ.", "category": "texting", "level": "B1"},
-  {"english": "GOAT", "georgian": "საუკეთესო", "pronunciation": "/ɡoʊt/", "example_en": "Messi is the GOAT.", "example_ka": "მესი საუკეთესოა.", "category": "texting", "level": "A2"},
-  {"english": "AFK", "georgian": "კომპიუტერთან არ ვარ", "pronunciation": "/eɪ ɛf keɪ/", "example_en": "I'll be AFK for 10 minutes.", "example_ka": "10 წუთი კომპიუტერთან არ ვიქნები.", "category": "texting", "level": "A2"},
-  {"english": "TLDR", "georgian": "მოკლედ", "pronunciation": "/tiː ɛl diː ɑːr/", "example_en": "TLDR: the movie was bad.", "example_ka": "მოკლედ: ფილმი ცუდი იყო.", "category": "texting", "level": "B1"},
-  {"english": "WFH", "georgian": "სახლიდან მუშაობა", "pronunciation": "/dʌblju ɛf eɪtʃ/", "example_en": "I'm WFH today.", "example_ka": "დღეს სახლიდან ვმუშაობ.", "category": "texting", "level": "A2"},
-  {"english": "IDK", "georgian": "არ ვიცი", "pronunciation": "/aɪ diː keɪ/", "example_en": "IDK what to eat.", "example_ka": "არ ვიცი რა ვჭამო.", "category": "texting", "level": "A1"},
-  {"english": "SMH", "georgian": "თავის გაქნევა", "pronunciation": "/ɛs ɛm eɪtʃ/", "example_en": "He forgot again, SMH.", "example_ka": "ისევ დაავიწყდა, თავის გაქნევა.", "category": "texting", "level": "A2"},
-  {"english": "Binge-watch", "georgian": "სერიების ყურება ზედიზედ", "pronunciation": "/bɪndʒ wɒtʃ/", "example_en": "Let's binge-watch this show.", "example_ka": "ეს შოუ ზედიზედ ვნახოთ.", "category": "texting", "level": "A2"}
+  {
+    "english": "LOL",
+    "georgian": "ხმამაღლა სიცილი",
+    "pronunciation": "/ɛl oʊ ɛl/",
+    "example_en": "That joke was funny, LOL!",
+    "example_ka": "ეს ხუმრობა სასაცილო იყო, ხმამაღლა სიცილი!",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "BRB",
+    "georgian": "მალე დავბრუნდები",
+    "pronunciation": "/biː ɑːr biː/",
+    "example_en": "BRB, getting coffee.",
+    "example_ka": "მალე დავბრუნდები, ყავას ვიღებ.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "OMG",
+    "georgian": "ღმერთო ჩემო",
+    "pronunciation": "/oʊ ɛm dʒiː/",
+    "example_en": "OMG, that's amazing!",
+    "example_ka": "ღმერთო ჩემო, ეს საოცარია!",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "DM",
+    "georgian": "პირადი შეტყობინება",
+    "pronunciation": "/diː ɛm/",
+    "example_en": "Send me a DM.",
+    "example_ka": "პირადი შეტყობინება მომწერე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "TBH",
+    "georgian": "გულახდილად",
+    "pronunciation": "/tiː biː eɪtʃ/",
+    "example_en": "TBH, I don't like it.",
+    "example_ka": "გულახდილად, არ მომწონს.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "IMO",
+    "georgian": "ჩემი აზრით",
+    "pronunciation": "/aɪ ɛm oʊ/",
+    "example_en": "IMO, this is the best movie.",
+    "example_ka": "ჩემი აზრით, ეს საუკეთესო ფილმია.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "ASAP",
+    "georgian": "რაც შეიძლება სწრაფად",
+    "pronunciation": "/eɪ ɛs eɪ piː/",
+    "example_en": "Please reply ASAP.",
+    "example_ka": "გთხოვთ რაც შეიძლება სწრაფად უპასუხე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "FYI",
+    "georgian": "შენი ინფორმაციისთვის",
+    "pronunciation": "/ɛf waɪ aɪ/",
+    "example_en": "FYI, the meeting is at 3 PM.",
+    "example_ka": "შენი ინფორმაციისთვის, შეხვედრა 3 საათზეა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "FOMO",
+    "georgian": "გამოტოვების შიში",
+    "pronunciation": "/ˈfoʊmoʊ/",
+    "example_en": "I have FOMO about the party.",
+    "example_ka": "წვეულების გამოტოვების შიში მაქვს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Ghosting",
+    "georgian": "უგულებელყოფა",
+    "pronunciation": "/ˈɡoʊstɪŋ/",
+    "example_en": "He started ghosting me.",
+    "example_ka": "დამიწყო უგულებელყოფა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Vibe",
+    "georgian": "ატმოსფერო",
+    "pronunciation": "/vaɪb/",
+    "example_en": "This place has a great vibe.",
+    "example_ka": "ამ ადგილს კარგი ვაიბი აქვს.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Lowkey",
+    "georgian": "ცოტათი",
+    "pronunciation": "/ˈloʊkiː/",
+    "example_en": "I lowkey want pizza.",
+    "example_ka": "ცოტათი პიცა მინდა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Highkey",
+    "georgian": "ძალიან",
+    "pronunciation": "/ˈhaɪkiː/",
+    "example_en": "I highkey love this song.",
+    "example_ka": "ძალიან მიყვარს ეს სიმღერა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "NGL",
+    "georgian": "არ ვიტყუები",
+    "pronunciation": "/ɛn dʒiː ɛl/",
+    "example_en": "NGL, that was scary.",
+    "example_ka": "არ ვიტყუები, ეს საშინელი იყო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "IRL",
+    "georgian": "რეალურ ცხოვრებაში",
+    "pronunciation": "/aɪ ɑːr ɛl/",
+    "example_en": "Let's meet IRL.",
+    "example_ka": "რეალურ ცხოვრებაში შევხვდეთ.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Sus",
+    "georgian": "საეჭვო",
+    "pronunciation": "/sʌs/",
+    "example_en": "That's kinda sus.",
+    "example_ka": "ეს ცოტა საეჭვოა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Slay",
+    "georgian": "მაგრად გაკეთება",
+    "pronunciation": "/sleɪ/",
+    "example_en": "You look amazing, slay!",
+    "example_ka": "მაგრად გამოიყურები!",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Cap",
+    "georgian": "ტყუილი",
+    "pronunciation": "/kæp/",
+    "example_en": "That's cap, I don't believe you.",
+    "example_ka": "ეს ტყუილია, არ გჯერა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Flex",
+    "georgian": "ტრაბახი",
+    "pronunciation": "/flɛks/",
+    "example_en": "He's just flexing his new car.",
+    "example_ka": "ახალ მანქანას ტრაბახობს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Lit",
+    "georgian": "მაგარი",
+    "pronunciation": "/lɪt/",
+    "example_en": "The party was lit!",
+    "example_ka": "წვეულება მაგარი იყო!",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Cringe",
+    "georgian": "უხერხული",
+    "pronunciation": "/krɪndʒ/",
+    "example_en": "That video is so cringe.",
+    "example_ka": "ეს ვიდეო ძალიან უხერხულია.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Bet",
+    "georgian": "კარგი",
+    "pronunciation": "/bɛt/",
+    "example_en": "Wanna grab food? Bet.",
+    "example_ka": "საჭმელი გინდა? კარგი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Savage",
+    "georgian": "უშიშარი",
+    "pronunciation": "/ˈsævɪdʒ/",
+    "example_en": "That comeback was savage.",
+    "example_ka": "ეს პასუხი უშიშარი იყო.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Ratio",
+    "georgian": "რეითიო",
+    "pronunciation": "/ˈreɪʃioʊ/",
+    "example_en": "He got ratio'd on Twitter.",
+    "example_ka": "ტვიტერზე რეითიო დაჭირეს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "W",
+    "georgian": "მოგება",
+    "pronunciation": "/ˈdʌblju/",
+    "example_en": "Getting that job was a W.",
+    "example_ka": "ამ სამსახურის მიღება მოგება იყო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "L",
+    "georgian": "მარცხი",
+    "pronunciation": "/ɛl/",
+    "example_en": "Missing the flight was an L.",
+    "example_ka": "რეისის გაშვება მარცხი იყო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Stan",
+    "georgian": "ფანატი",
+    "pronunciation": "/stæn/",
+    "example_en": "I stan this artist.",
+    "example_ka": "ამ არტისტის ფანატი ვარ.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "GOAT",
+    "georgian": "საუკეთესო",
+    "pronunciation": "/ɡoʊt/",
+    "example_en": "Messi is the GOAT.",
+    "example_ka": "მესი საუკეთესოა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "AFK",
+    "georgian": "კომპიუტერთან არ ვარ",
+    "pronunciation": "/eɪ ɛf keɪ/",
+    "example_en": "I'll be AFK for 10 minutes.",
+    "example_ka": "10 წუთი კომპიუტერთან არ ვიქნები.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "TLDR",
+    "georgian": "მოკლედ",
+    "pronunciation": "/tiː ɛl diː ɑːr/",
+    "example_en": "TLDR: the movie was bad.",
+    "example_ka": "მოკლედ: ფილმი ცუდი იყო.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "WFH",
+    "georgian": "სახლიდან მუშაობა",
+    "pronunciation": "/dʌblju ɛf eɪtʃ/",
+    "example_en": "I'm WFH today.",
+    "example_ka": "დღეს სახლიდან ვმუშაობ.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "IDK",
+    "georgian": "არ ვიცი",
+    "pronunciation": "/aɪ diː keɪ/",
+    "example_en": "IDK what to eat.",
+    "example_ka": "არ ვიცი რა ვჭამო.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "SMH",
+    "georgian": "თავის გაქნევა",
+    "pronunciation": "/ɛs ɛm eɪtʃ/",
+    "example_en": "He forgot again, SMH.",
+    "example_ka": "ისევ დაავიწყდა, თავის გაქნევა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Binge",
+    "georgian": "ზედიზედ ყურება",
+    "pronunciation": "/bɪndʒ/",
+    "example_en": "Let's binge this show.",
+    "example_ka": "ეს შოუ ზედიზედ ვნახოთ.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Trolling",
+    "georgian": "ტროლინგი",
+    "pronunciation": "/ˈtroʊlɪŋ/",
+    "example_en": "Stop trolling me.",
+    "example_ka": "ტროლინგი აღარ გააკეთო.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Meme",
+    "georgian": "მემი",
+    "pronunciation": "/miːm/",
+    "example_en": "That meme is hilarious.",
+    "example_ka": "ეს მემი სასაცილოა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Emoji",
+    "georgian": "ემოჯი",
+    "pronunciation": "/ɪˈmoʊdʒi/",
+    "example_en": "Send me a happy emoji.",
+    "example_ka": "ბედნიერი ემოჯი მომიგზავნე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Hashtag",
+    "georgian": "ჰეშტეგი",
+    "pronunciation": "/ˈhæʃtæɡ/",
+    "example_en": "Use this hashtag in your post.",
+    "example_ka": "ამ ჰეშტეგის გამოყენება შენს პოსტში.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Story",
+    "georgian": "სტორი",
+    "pronunciation": "/ˈstɔːri/",
+    "example_en": "Did you see my story?",
+    "example_ka": "ჩემი სტორი ნახე?",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Post",
+    "georgian": "პოსტი",
+    "pronunciation": "/poʊst/",
+    "example_en": "I liked your post.",
+    "example_ka": "შენი პოსტი მომეწონა.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Share",
+    "georgian": "გაზიარება",
+    "pronunciation": "/ʃeər/",
+    "example_en": "Please share this video.",
+    "example_ka": "გთხოვ ეს ვიდეო გააზიარე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Like",
+    "georgian": "მოწონება",
+    "pronunciation": "/laɪk/",
+    "example_en": "Like my photo please.",
+    "example_ka": "ჩემი ფოტო მოიწონე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Follow",
+    "georgian": "მიყვება",
+    "pronunciation": "/ˈfɑːloʊ/",
+    "example_en": "Follow me on Instagram.",
+    "example_ka": "ინსტაგრამზე გამომყევი.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Unfollow",
+    "georgian": "არმიყვება",
+    "pronunciation": "/ʌnˈfɑːloʊ/",
+    "example_en": "I had to unfollow him.",
+    "example_ka": "მისი არმიყვება მომიწია.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Block",
+    "georgian": "დაბლოკვა",
+    "pronunciation": "/blɑːk/",
+    "example_en": "I will block this user.",
+    "example_ka": "ამ მომხმარებელს დავბლოკავ.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Comment",
+    "georgian": "კომენტარი",
+    "pronunciation": "/ˈkɑːment/",
+    "example_en": "Leave a comment below.",
+    "example_ka": "ქვემოთ კომენტარი დატოვე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Reply",
+    "georgian": "პასუხი",
+    "pronunciation": "/rɪˈplaɪ/",
+    "example_en": "Please reply to my message.",
+    "example_ka": "ჩემს შეტყობინებას უპასუხე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Message",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈmesɪdʒ/",
+    "example_en": "I sent you a message.",
+    "example_ka": "შეტყობინება გამოგიგზავნე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/",
+    "example_en": "I got a notification from you.",
+    "example_ka": "შენგან შეტყობინება მივიღე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Screenshot",
+    "georgian": "სკრინშოტი",
+    "pronunciation": "/ˈskriːnʃɑːt/",
+    "example_en": "Take a screenshot of this.",
+    "example_ka": "ამის სკრინშოტი გააკეთე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Video",
+    "georgian": "ვიდეო",
+    "pronunciation": "/ˈvɪdioʊ/",
+    "example_en": "Send me that funny video.",
+    "example_ka": "ეს სასაცილო ვიდეო მომიგზავნე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Photo",
+    "georgian": "ფოტო",
+    "pronunciation": "/ˈfoʊtoʊ/",
+    "example_en": "I love this photo of us.",
+    "example_ka": "ჩვენი ეს ფოტო მიყვარს.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Selfie",
+    "georgian": "სელფი",
+    "pronunciation": "/ˈselfi/",
+    "example_en": "Let's take a selfie together.",
+    "example_ka": "ერთად სელფი გადავიღოთ.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Use this cute filter.",
+    "example_ka": "ეს ლამაზი ფილტრი გამოიყენე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Tag",
+    "georgian": "ტეგი",
+    "pronunciation": "/tæɡ/",
+    "example_en": "Tag me in your photo.",
+    "example_ka": "ფოტოში ჩამტეგე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Status",
+    "georgian": "სტატუსი",
+    "pronunciation": "/ˈsteɪtəs/",
+    "example_en": "Update your status message.",
+    "example_ka": "სტატუსი განაახლე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Profile",
+    "georgian": "პროფილი",
+    "pronunciation": "/ˈproʊfaɪl/",
+    "example_en": "Check out my new profile picture.",
+    "example_ka": "ჩემი ახალი პროფილის ფოტო ნახე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Username",
+    "georgian": "მომხმარებლის სახელი",
+    "pronunciation": "/ˈjuːzərneɪm/",
+    "example_en": "What's your username?",
+    "example_ka": "შენი მომხმარებლის სახელი რაა?",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswərd/",
+    "example_en": "I forgot my password.",
+    "example_ka": "პაროლი დამავიწყდა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Login",
+    "georgian": "შესვლა",
+    "pronunciation": "/ˈlɔːɡɪn/",
+    "example_en": "I can't login to my account.",
+    "example_ka": "ანგარიშში შესვლა არ შემიძლია.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Logout",
+    "georgian": "გამოსვლა",
+    "pronunciation": "/ˈlɔːɡaʊt/",
+    "example_en": "Don't forget to logout.",
+    "example_ka": "გამოსვლა არ დაგავიწყდეს.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "App",
+    "georgian": "აპლიკაცია",
+    "pronunciation": "/æp/",
+    "example_en": "Download this new app.",
+    "example_ka": "ეს ახალი აპლიკაცია ჩამოტვირთე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "Update your app to the latest version.",
+    "example_ka": "აპლიკაცია უახლეს ვერსიაზე განაახლე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download this file.",
+    "example_ka": "ეს ფაილი ჩამოტვირთე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ˈʌploʊd/",
+    "example_en": "Upload your photos here.",
+    "example_ka": "ფოტოები აქ ატვირთე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Link",
+    "georgian": "ბმული",
+    "pronunciation": "/lɪŋk/",
+    "example_en": "Click on this link.",
+    "example_ka": "ამ ბმულზე დაწკაპუნე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "URL",
+    "georgian": "ვებ მისამართი",
+    "pronunciation": "/juː ɑːr ɛl/",
+    "example_en": "Copy this URL and send it.",
+    "example_ka": "ეს URL-ი გადაიტანე და გამოგზავნე.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Website",
+    "georgian": "ვებსაიტი",
+    "pronunciation": "/ˈwebsaɪt/",
+    "example_en": "Check out this cool website.",
+    "example_ka": "ეს საინტერესო ვებსაიტი ნახე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Browser",
+    "georgian": "ბრაუზერი",
+    "pronunciation": "/ˈbraʊzər/",
+    "example_en": "Open it in your browser.",
+    "example_ka": "ბრაუზერში გახსენი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Internet",
+    "georgian": "ინტერნეტი",
+    "pronunciation": "/ˈɪntərnet/",
+    "example_en": "My internet is so slow.",
+    "example_ka": "ინტერნეტი ძალიან ნელია.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "WiFi",
+    "georgian": "ვაიფაი",
+    "pronunciation": "/ˈwaɪfaɪ/",
+    "example_en": "What's the WiFi password?",
+    "example_ka": "ვაიფაის პაროლი რაა?",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Data",
+    "georgian": "მონაცემები",
+    "pronunciation": "/ˈdeɪtə/",
+    "example_en": "I'm running out of data.",
+    "example_ka": "მონაცემები მიწურება.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Signal",
+    "georgian": "სიგნალი",
+    "pronunciation": "/ˈsɪɡnəl/",
+    "example_en": "There's no signal here.",
+    "example_ka": "აქ სიგნალი არაა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Battery",
+    "georgian": "ბატარეა",
+    "pronunciation": "/ˈbætəri/",
+    "example_en": "My battery is dying.",
+    "example_ka": "ბატარეა მიწურება.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Charge",
+    "georgian": "დატენვა",
+    "pronunciation": "/tʃɑːrdʒ/",
+    "example_en": "I need to charge my phone.",
+    "example_ka": "ტელეფონის დატენვა მჭირდება.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Phone",
+    "georgian": "ტელეფონი",
+    "pronunciation": "/foʊn/",
+    "example_en": "Can you call my phone?",
+    "example_ka": "ტელეფონზე შეიძლება დამირეკო?",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Call",
+    "georgian": "ზარი",
+    "pronunciation": "/kɔːl/",
+    "example_en": "I'll give you a call later.",
+    "example_ka": "მოგვიანებით დაგირეკავ.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Text",
+    "georgian": "ტექსტი",
+    "pronunciation": "/tekst/",
+    "example_en": "Send me a text when you arrive.",
+    "example_ka": "როცა ჩავალ ტექსტი მომწერე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Chat",
+    "georgian": "ჩეტი",
+    "pronunciation": "/tʃæt/",
+    "example_en": "Let's chat online tonight.",
+    "example_ka": "დღეს ღამით ონლაინ ვისაუბროთ.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Online",
+    "georgian": "ონლაინ",
+    "pronunciation": "/ˈɔːnlaɪn/",
+    "example_en": "Are you online right now?",
+    "example_ka": "ახლა ონლაინ ხარ?",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Offline",
+    "georgian": "ოფლაინ",
+    "pronunciation": "/ˈɔːflaɪn/",
+    "example_en": "I'll be offline for a while.",
+    "example_ka": "ცოტა ხანს ოფლაინ ვიქნები.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Connect",
+    "georgian": "დაკავშირება",
+    "pronunciation": "/kəˈnekt/",
+    "example_en": "I can't connect to the server.",
+    "example_ka": "სერვერთან დაკავშირება არ შემიძლია.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Disconnect",
+    "georgian": "გათიშვა",
+    "pronunciation": "/ˌdɪskəˈnekt/",
+    "example_en": "The call got disconnected.",
+    "example_ka": "ზარი გაითიშა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Server",
+    "georgian": "სერვერი",
+    "pronunciation": "/ˈsɜːrvər/",
+    "example_en": "The server is down.",
+    "example_ka": "სერვერი გათიშულია.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Bug",
+    "georgian": "ბაგი",
+    "pronunciation": "/bʌɡ/",
+    "example_en": "There's a bug in this app.",
+    "example_ka": "ამ აპში ბაგია.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Glitch",
+    "georgian": "ხარვეზი",
+    "pronunciation": "/ɡlɪtʃ/",
+    "example_en": "The video has a glitch.",
+    "example_ka": "ვიდეოს ხარვეზი აქვს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Lag",
+    "georgian": "შენელება",
+    "pronunciation": "/læɡ/",
+    "example_en": "There's too much lag in this game.",
+    "example_ka": "ამ თამაშში ძალიან ბევრი შენელებაა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Spam",
+    "georgian": "სპამი",
+    "pronunciation": "/spæm/",
+    "example_en": "This message looks like spam.",
+    "example_ka": "ეს შეტყობინება სპამის მსგავსია.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Virus",
+    "georgian": "ვირუსი",
+    "pronunciation": "/ˈvaɪrəs/",
+    "example_en": "My computer has a virus.",
+    "example_ka": "კომპიუტერს ვირუსი აქვს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Backup",
+    "georgian": "სარეზერვო ასლი",
+    "pronunciation": "/ˈbækʌp/",
+    "example_en": "Always backup your data.",
+    "example_ka": "ყოველთვის გაიკეთე მონაცემების სარეზერვო ასლი.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊrəti/",
+    "example_en": "Check your security settings.",
+    "example_ka": "უსაფრთხოების პარამეტრები შეამოწმე.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Privacy",
+    "georgian": "პრივატულობა",
+    "pronunciation": "/ˈpraɪvəsi/",
+    "example_en": "Protect your privacy online.",
+    "example_ka": "ონლაინ პრივატულობა დაიცავი.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Settings",
+    "georgian": "პარამეტრები",
+    "pronunciation": "/ˈsetɪŋz/",
+    "example_en": "Change the settings in the app.",
+    "example_ka": "აპლიკაციაში პარამეტრები შეცვალე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmenjuː/",
+    "example_en": "Click on the menu button.",
+    "example_ka": "მენიუს ღილაკზე დაწკაპუნე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Button",
+    "georgian": "ღილაკი",
+    "pronunciation": "/ˈbʌtən/",
+    "example_en": "Press the red button.",
+    "example_ka": "წითელ ღილაკზე დააჭირე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Click",
+    "georgian": "დაწკაპუნება",
+    "pronunciation": "/klɪk/",
+    "example_en": "Click here to continue.",
+    "example_ka": "გასაგრძელებლად აქ დაწკაპუნე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Swipe",
+    "georgian": "სმაუხი",
+    "pronunciation": "/swaɪp/",
+    "example_en": "Swipe left to delete.",
+    "example_ka": "წასაშლელად მარცხნივ გააკეთე სმაუხი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Tap",
+    "georgian": "შეხება",
+    "pronunciation": "/tæp/",
+    "example_en": "Tap the screen twice.",
+    "example_ka": "ეკრანს ორჯერ შეეხე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Scroll",
+    "georgian": "გადახვევა",
+    "pronunciation": "/skroʊl/",
+    "example_en": "Scroll down to see more.",
+    "example_ka": "მეტის სანახავად ქვემოთ გადახვევი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Refresh",
+    "georgian": "განახლება",
+    "pronunciation": "/rɪˈfreʃ/",
+    "example_en": "Refresh the page to load new content.",
+    "example_ka": "ახალი კონტენტის ჩასატვირთად გვერდი განაახლე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Loading",
+    "georgian": "იტვირთება",
+    "pronunciation": "/ˈloʊdɪŋ/",
+    "example_en": "The page is still loading.",
+    "example_ka": "გვერდი ჯერ კიდევ იტვირთება.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Error",
+    "georgian": "შეცდომა",
+    "pronunciation": "/ˈerər/",
+    "example_en": "I got an error message.",
+    "example_ka": "შეცდომის შეტყობინება მივიღე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Delete",
+    "georgian": "წაშლა",
+    "pronunciation": "/dɪˈliːt/",
+    "example_en": "Delete this old photo.",
+    "example_ka": "ეს ძველი ფოტო წაშალე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Save",
+    "georgian": "შენახვა",
+    "pronunciation": "/seɪv/",
+    "example_en": "Don't forget to save your work.",
+    "example_ka": "სამუშაოს შენახვა არ დაგავიწყდეს.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Copy",
+    "georgian": "კოპირება",
+    "pronunciation": "/ˈkɑːpi/",
+    "example_en": "Copy this text and paste it.",
+    "example_ka": "ეს ტექსტი გადაიტანე და ჩასვი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Paste",
+    "georgian": "ჩასმა",
+    "pronunciation": "/peɪst/",
+    "example_en": "Paste the link here.",
+    "example_ka": "ბმული აქ ჩასვი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Cut",
+    "georgian": "ამოჭრა",
+    "pronunciation": "/kʌt/",
+    "example_en": "Cut this part from the text.",
+    "example_ka": "ტექსტიდან ეს ნაწილი ამოიჭერი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Edit",
+    "georgian": "რედაქტირება",
+    "pronunciation": "/ˈedɪt/",
+    "example_en": "Edit your message before sending.",
+    "example_ka": "გაგზავნამდე შეტყობინება დაარედაქტირე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Send",
+    "georgian": "გაგზავნა",
+    "pronunciation": "/send/",
+    "example_en": "Send me your address.",
+    "example_ka": "შენი მისამართი გამომიგზავნე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Receive",
+    "georgian": "მიღება",
+    "pronunciation": "/rɪˈsiːv/",
+    "example_en": "Did you receive my email?",
+    "example_ka": "ჩემი იმეილი მიგიღია?",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Inbox",
+    "georgian": "ღია ყუთი",
+    "pronunciation": "/ˈɪnbɑːks/",
+    "example_en": "Check your inbox for new messages.",
+    "example_ka": "ღია ყუთში ახალი შეტყობინებები შეამოწმე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Outbox",
+    "georgian": "გამავალი",
+    "pronunciation": "/ˈaʊtbɑːks/",
+    "example_en": "The message is stuck in outbox.",
+    "example_ka": "შეტყობინება გამავალში ჩარჩა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Draft",
+    "georgian": "ნაცვლადი",
+    "pronunciation": "/dræft/",
+    "example_en": "Save this as a draft.",
+    "example_ka": "ეს ნაცვლადად შეინახე.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Archive",
+    "georgian": "არქივი",
+    "pronunciation": "/ˈɑːrkaɪv/",
+    "example_en": "Archive old conversations.",
+    "example_ka": "ძველი საუბრები არქივში ჩადე.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Trash",
+    "georgian": "კოშკი",
+    "pronunciation": "/træʃ/",
+    "example_en": "Move this to trash.",
+    "example_ka": "ეს კოშკში გადაიტანე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Forward",
+    "georgian": "გადაფორვარდება",
+    "pronunciation": "/ˈfɔːrwərd/",
+    "example_en": "Forward this to your friends.",
+    "example_ka": "ეს მეგობრებს გადაუფორვარდე.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Attachment",
+    "georgian": "დანართი",
+    "pronunciation": "/əˈtætʃmənt/",
+    "example_en": "Open the email attachment.",
+    "example_ka": "იმეილის დანართი გახსენი.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "File",
+    "georgian": "ფაილი",
+    "pronunciation": "/faɪl/",
+    "example_en": "Send me that file.",
+    "example_ka": "ეს ფაილი მომიგზავნე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Folder",
+    "georgian": "საქაღალდე",
+    "pronunciation": "/ˈfoʊldər/",
+    "example_en": "Create a new folder for photos.",
+    "example_ka": "ფოტოებისთვის ახალი საქაღალდე შექმენი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Search",
+    "georgian": "ძებნა",
+    "pronunciation": "/sɜːrtʃ/",
+    "example_en": "Search for your old messages.",
+    "example_ka": "შენი ძველი შეტყობინებების ძებნა გააკეთე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Find",
+    "georgian": "პოვნა",
+    "pronunciation": "/faɪnd/",
+    "example_en": "I can't find that conversation.",
+    "example_ka": "ეს საუბარი ვერ ვპოულობ.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Contact",
+    "georgian": "კონტაქტი",
+    "pronunciation": "/ˈkɑːntækt/",
+    "example_en": "Add me to your contacts.",
+    "example_ka": "კონტაქტებში დამამატე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Group",
+    "georgian": "ჯგუფი",
+    "pronunciation": "/ɡruːp/",
+    "example_en": "Create a group chat.",
+    "example_ka": "ჯგუფური ჩეტი შექმენი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Admin",
+    "georgian": "ადმინისტრატორი",
+    "pronunciation": "/ˈædmɪn/",
+    "example_en": "You're the admin of this group.",
+    "example_ka": "შენ ხარ ამ ჯგუფის ადმინისტრატორი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Moderator",
+    "georgian": "მოდერატორი",
+    "pronunciation": "/ˈmɑːdəreɪtər/",
+    "example_en": "The moderator removed the message.",
+    "example_ka": "მოდერატორმა შეტყობინება წაშალა.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Ban",
+    "georgian": "აკრძალვა",
+    "pronunciation": "/bæn/",
+    "example_en": "They banned him from the group.",
+    "example_ka": "ჯგუფიდან აკრძალეს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Mute",
+    "georgian": "დადუმება",
+    "pronunciation": "/mjuːt/",
+    "example_en": "Mute this noisy group.",
+    "example_ka": "ეს ხმაურიანი ჯგუფი დადუმე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Unmute",
+    "georgian": "ხმის ჩართვა",
+    "pronunciation": "/ʌnˈmjuːt/",
+    "example_en": "Unmute the group to see messages.",
+    "example_ka": "შეტყობინებების სანახავად ჯგუფის ხმა ჩართე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Voice",
+    "georgian": "ხმა",
+    "pronunciation": "/vɔɪs/",
+    "example_en": "Send me a voice message.",
+    "example_ka": "ხმოვანი შეტყობინება მომიგზავნე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Audio",
+    "georgian": "აუდიო",
+    "pronunciation": "/ˈɔːdioʊ/",
+    "example_en": "The audio quality is bad.",
+    "example_ka": "აუდიოს ხარისხი ცუდია.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Record",
+    "georgian": "ჩაწერა",
+    "pronunciation": "/rɪˈkɔːrd/",
+    "example_en": "Record a voice note for me.",
+    "example_ka": "ჩემთვის ხმოვანი შენიშვნა ჩაწერე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Play",
+    "georgian": "დაკვრა",
+    "pronunciation": "/pleɪ/",
+    "example_en": "Play the audio message.",
+    "example_ka": "აუდიო შეტყობინება დაუკარი.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Pause",
+    "georgian": "პაუზა",
+    "pronunciation": "/pɔːz/",
+    "example_en": "Pause the video for a moment.",
+    "example_ka": "ვიდეო ერთ წამით გაჩერე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Stop",
+    "georgian": "შეჩერება",
+    "pronunciation": "/stɑːp/",
+    "example_en": "Stop the music.",
+    "example_ka": "მუსიკა შეაჩერე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Volume",
+    "georgian": "ხმის სიძლიერე",
+    "pronunciation": "/ˈvɑːljuːm/",
+    "example_en": "Turn up the volume.",
+    "example_ka": "ხმის სიძლიერე გააძლიერე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Speaker",
+    "georgian": "ამბავი",
+    "pronunciation": "/ˈspiːkər/",
+    "example_en": "Put it on speaker.",
+    "example_ka": "ამბავზე ჩაერთე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Headphones",
+    "georgian": "ყურსასმენი",
+    "pronunciation": "/ˈhedfəʊnz/",
+    "example_en": "Use headphones in public.",
+    "example_ka": "საჯაროდ ყურსასმენი გამოიყენე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Microphone",
+    "georgian": "მიკროფონი",
+    "pronunciation": "/ˈmaɪkrəfoʊn/",
+    "example_en": "Your microphone is not working.",
+    "example_ka": "შენი მიკროფონი არ მუშაობს.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Camera",
+    "georgian": "კამერა",
+    "pronunciation": "/ˈkæmərə/",
+    "example_en": "Turn on your camera for video call.",
+    "example_ka": "ვიდეო ზარისთვის კამერა ჩართე.",
+    "category": "texting-chat",
+    "level": "A1"
+  },
+  {
+    "english": "Stream",
+    "georgian": "ნაკადი",
+    "pronunciation": "/striːm/",
+    "example_en": "I'm going to stream live.",
+    "example_ka": "ლაივ ნაკადს გავაკეთებ.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Live",
+    "georgian": "ლაივი",
+    "pronunciation": "/laɪv/",
+    "example_en": "Join my live broadcast.",
+    "example_ka": "ჩემს ლაივ ტრანსლაციას შემოუერთდი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Trending",
+    "georgian": "ტრენდინგი",
+    "pronunciation": "/ˈtrendɪŋ/",
+    "example_en": "This video is trending now.",
+    "example_ka": "ეს ვიდეო ახლა ტრენდინგშია.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Viral",
+    "georgian": "ვირუსული",
+    "pronunciation": "/ˈvaɪrəl/",
+    "example_en": "The video went viral overnight.",
+    "example_ka": "ვიდეო ღამით გავირუსდა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Algorithm",
+    "georgian": "ალგორითმი",
+    "pronunciation": "/ˈælɡərɪðəm/",
+    "example_en": "The algorithm shows relevant content.",
+    "example_ka": "ალგორითმი რელევანტურ კონტენტს აჩვენებს.",
+    "category": "texting-chat",
+    "level": "C1"
+  },
+  {
+    "english": "Feed",
+    "georgian": "ფიდი",
+    "pronunciation": "/fiːd/",
+    "example_en": "Check your news feed.",
+    "example_ka": "შენი ახალი ამბების ფიდი შეამოწმე.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Timeline",
+    "georgian": "ტაიმლაინი",
+    "pronunciation": "/ˈtaɪmlaɪn/",
+    "example_en": "Post this on your timeline.",
+    "example_ka": "ეს შენს ტაიმლაინზე გამოაქვეყნე.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Newsfeed",
+    "georgian": "ახალი ამბების ლენტი",
+    "pronunciation": "/ˈnuːzfiːd/",
+    "example_en": "Scroll through your newsfeed.",
+    "example_ka": "ახალი ამბების ლენტა გადახვევი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Subscribe to my channel.",
+    "example_ka": "ჩემი არხის გამოწერა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Unsubscribe",
+    "georgian": "გამოწერის გაუქმება",
+    "pronunciation": "/ˌʌnsəbˈskraɪb/",
+    "example_en": "Unsubscribe from spam emails.",
+    "example_ka": "სპამ იმეილების გამოწერის გაუქმება.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Subscriber",
+    "georgian": "გამომწერი",
+    "pronunciation": "/səbˈskraɪbər/",
+    "example_en": "I have 1000 subscribers now.",
+    "example_ka": "ახლა 1000 გამომწერი მყავს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Channel",
+    "georgian": "არხი",
+    "pronunciation": "/ˈtʃænəl/",
+    "example_en": "Create your own channel.",
+    "example_ka": "შენი არხი შექმენი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Content",
+    "georgian": "კონტენტი",
+    "pronunciation": "/ˈkɑːntent/",
+    "example_en": "Create original content.",
+    "example_ka": "ორიგინალური კონტენტი შექმენი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Creator",
+    "georgian": "შემქმნელი",
+    "pronunciation": "/kriˈeɪtər/",
+    "example_en": "Support your favorite creator.",
+    "example_ka": "შენი საყვარელი შემქმნელი მხარი დაუჭერი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Influencer",
+    "georgian": "ინფლუენსერი",
+    "pronunciation": "/ˈɪnfluənsər/",
+    "example_en": "She's a famous influencer.",
+    "example_ka": "ის ცნობილი ინფლუენსერია.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Collaboration",
+    "georgian": "თანამშრომლობა",
+    "pronunciation": "/kəˌlæbəˈreɪʃən/",
+    "example_en": "Let's do a collaboration.",
+    "example_ka": "თანამშრომლობა გავაკეთოთ.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Partnership",
+    "georgian": "პარტნიორობა",
+    "pronunciation": "/ˈpɑːrtnərʃɪp/",
+    "example_en": "We signed a partnership deal.",
+    "example_ka": "პარტნიორობის შეთანხმება გავაფორმეთ.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Sponsored",
+    "georgian": "სპონსორირებული",
+    "pronunciation": "/ˈspɑːnsərd/",
+    "example_en": "This is a sponsored post.",
+    "example_ka": "ეს სპონსორირებული პოსტია.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Advertisement",
+    "georgian": "რეკლამა",
+    "pronunciation": "/ˌædvərˈtaɪzmənt/",
+    "example_en": "Skip this advertisement.",
+    "example_ka": "ეს რეკლამა გამოტოვე.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Monetize",
+    "georgian": "მონეტიზაცია",
+    "pronunciation": "/ˈmʌnɪtaɪz/",
+    "example_en": "Monetize your YouTube channel.",
+    "example_ka": "YouTube არხის მონეტიზაცია.",
+    "category": "texting-chat",
+    "level": "C1"
+  },
+  {
+    "english": "Slide",
+    "georgian": "ზოვნა",
+    "pronunciation": "/slaɪd/",
+    "example_en": "Slide into my DMs.",
+    "example_ka": "ჩემს პირად შეტყობინებებში ზეძი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Simp",
+    "georgian": "გულუბრყვილო",
+    "pronunciation": "/sɪmp/",
+    "example_en": "Don't be a simp.",
+    "example_ka": "გულუბრყვილო ნუ იქნები.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Clout",
+    "georgian": "ავტორიტეტი",
+    "pronunciation": "/klaʊt/",
+    "example_en": "He's just chasing clout.",
+    "example_ka": "უბრალოდ ავტორიტეტს კიდია.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Drip",
+    "georgian": "სტილი",
+    "pronunciation": "/drɪp/",
+    "example_en": "Your outfit has drip.",
+    "example_ka": "შენს ჩაცმულობას კარგი სტილი აქვს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Periodt",
+    "georgian": "წერტილი",
+    "pronunciation": "/ˈpɪriədt/",
+    "example_en": "That's the truth, periodt.",
+    "example_ka": "ეს ჭეშმარიტებაა, წერტილი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Salty",
+    "georgian": "ღირსებული",
+    "pronunciation": "/ˈsɔːlti/",
+    "example_en": "Why are you so salty?",
+    "example_ka": "რატომ ხარ ასე ღირსებული?",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Basic",
+    "georgian": "საშუალო",
+    "pronunciation": "/ˈbeɪsɪk/",
+    "example_en": "That's so basic.",
+    "example_ka": "ეს ძალიან საშუალოა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Extra",
+    "georgian": "ზედმეტი",
+    "pronunciation": "/ˈekstrə/",
+    "example_en": "She's being extra today.",
+    "example_ka": "დღეს ძალიან ზედმეტად იქცევა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Shade",
+    "georgian": "ქედმაღლობა",
+    "pronunciation": "/ʃeɪd/",
+    "example_en": "She threw shade at him.",
+    "example_ka": "ქედმაღლობა გამოუვლინა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Receipts",
+    "georgian": "მტკიცებულება",
+    "pronunciation": "/rɪˈsiːts/",
+    "example_en": "I have receipts of what you said.",
+    "example_ka": "შენი სიტყვების მტკიცებულება მაქვს.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Spill",
+    "georgian": "გაშიშვლება",
+    "pronunciation": "/spɪl/",
+    "example_en": "Spill the tea about what happened.",
+    "example_ka": "რა მოხდა იმის შესახებ ყველაფერი მითხარი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Tea",
+    "georgian": "ჩხუბი",
+    "pronunciation": "/tiː/",
+    "example_en": "What's the tea on their breakup?",
+    "example_ka": "მათი დაშორების შესახებ რა ამბავია?",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Mood",
+    "georgian": "განწყობა",
+    "pronunciation": "/muːd/",
+    "example_en": "This picture is a mood.",
+    "example_ka": "ეს ფოტო განწყობაა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Vibes",
+    "georgian": "ვაიბები",
+    "pronunciation": "/vaɪbz/",
+    "example_en": "I'm sending good vibes.",
+    "example_ka": "კარგ ვაიბებს ვგზავნი.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Finsta",
+    "georgian": "ყალბი ინსტაგრამი",
+    "pronunciation": "/ˈfɪnstə/",
+    "example_en": "Follow my finsta account.",
+    "example_ka": "ყალბი ინსტაგრამის ანგარიშს გამომყევი.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Toxic",
+    "georgian": "ტოქსიკური",
+    "pronunciation": "/ˈtɒksɪk/",
+    "example_en": "That group chat is toxic.",
+    "example_ka": "ეს ჯგუფური ჩატი ტოქსიკურია.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Queen",
+    "georgian": "დედოფალი",
+    "pronunciation": "/kwiːn/",
+    "example_en": "Yes queen, you look amazing!",
+    "example_ka": "კი დედოფალო, საოცრად გამოიყურები!",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "King",
+    "georgian": "მეფე",
+    "pronunciation": "/kɪŋ/",
+    "example_en": "You're a king for helping me.",
+    "example_ka": "მეფე ხარ, რომ დამეხმარე.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Squad",
+    "georgian": "ჯგუფი",
+    "pronunciation": "/skwɑːd/",
+    "example_en": "My squad is the best.",
+    "example_ka": "ჩემი ჯგუფი საუკეთესოა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Bestie",
+    "georgian": "ყველაზე ახლო მეგობარი",
+    "pronunciation": "/ˈbesti/",
+    "example_en": "Hey bestie, how are you?",
+    "example_ka": "გამარჯობა ყველაზე ახლო მეგობარო, როგორ ხარ?",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Bae",
+    "georgian": "საყვარელი",
+    "pronunciation": "/beɪ/",
+    "example_en": "Good morning bae.",
+    "example_ka": "დილა მშვიდობისა საყვარელო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Ship",
+    "georgian": "წყვილად მხედველობა",
+    "pronunciation": "/ʃɪp/",
+    "example_en": "I ship those two together.",
+    "example_ka": "ამ ორს ერთად ვხედავ წყვილად.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Soft",
+    "georgian": "რბილი",
+    "pronunciation": "/sɒft/",
+    "example_en": "That message was so soft.",
+    "example_ka": "ეს შეტყობინება ძალიან რბილი იყო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Hard",
+    "georgian": "მკაცრი",
+    "pronunciation": "/hɑːrd/",
+    "example_en": "That's a hard no from me.",
+    "example_ka": "ეს ჩემგან მკაცრი არაა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Fire",
+    "georgian": "ცეცხლოვანი",
+    "pronunciation": "/ˈfaɪər/",
+    "example_en": "Your new song is fire!",
+    "example_ka": "შენი ახალი სიმღერა ცეცხლოვანია!",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Bomb",
+    "georgian": "საოცარი",
+    "pronunciation": "/bɒm/",
+    "example_en": "That outfit is bomb.",
+    "example_ka": "ეს ჩაცმულობა საოცარია.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Fresh",
+    "georgian": "ახალი",
+    "pronunciation": "/freʃ/",
+    "example_en": "Your haircut looks fresh.",
+    "example_ka": "შენი თმის შეჭრა ახალ გამოიყურება.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Clean",
+    "georgian": "სუფთა",
+    "pronunciation": "/kliːn/",
+    "example_en": "That edit was clean.",
+    "example_ka": "ეს რედაქტირება სუფთა იყო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Smooth",
+    "georgian": "გლუვი",
+    "pronunciation": "/smuːð/",
+    "example_en": "That was a smooth move.",
+    "example_ka": "ეს გლუვი ნაბიჯი იყო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "Woke",
+    "georgian": "გაღვიძებული",
+    "pronunciation": "/woʊk/",
+    "example_en": "Stay woke about social issues.",
+    "example_ka": "სოციალური საკითხების მიმართ გაღვიძებული იყავი.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Canceled",
+    "georgian": "გაუქმებული",
+    "pronunciation": "/ˈkænsəld/",
+    "example_en": "That celebrity got canceled.",
+    "example_ka": "ეს ცნობილი პიროვნება გაუქმდა.",
+    "category": "texting-chat",
+    "level": "B2"
+  },
+  {
+    "english": "Triggered",
+    "georgian": "გამწვავებული",
+    "pronunciation": "/ˈtrɪɡərd/",
+    "example_en": "I'm triggered by that comment.",
+    "example_ka": "ამ კომენტარმა გამამწვავა.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Pressed",
+    "georgian": "დაღელვილი",
+    "pronunciation": "/prest/",
+    "example_en": "Why are you so pressed about it?",
+    "example_ka": "რატომ ხარ ამაზე ასე დაღელვილი?",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Unbothered",
+    "georgian": "უშფოთველი",
+    "pronunciation": "/ʌnˈbɒðərd/",
+    "example_en": "I'm unbothered by their drama.",
+    "example_ka": "მათი დრამით უშფოთველი ვარ.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Slaps",
+    "georgian": "მაგრად ურტყამს",
+    "pronunciation": "/slæps/",
+    "example_en": "This song slaps so hard.",
+    "example_ka": "ეს სიმღერა მაგრად ურტყამს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "Hits",
+    "georgian": "კარგად აღწევს",
+    "pronunciation": "/hɪts/",
+    "example_en": "This playlist hits different.",
+    "example_ka": "ეს რეპერტუარი განსხვავებულად აღწევს.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "ping",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/pɪŋ/",
+    "example_en": "Ping me when you're free.",
+    "example_ka": "როცა თავისუფალი ხარ, მომწერე.",
+    "level": "A2",
+    "category": "texting-chat"
+  },
+  {
+    "english": "lurk",
+    "georgian": "თვალყურის დევნება",
+    "pronunciation": "/lɜːrk/",
+    "example_en": "He lurks in group chats.",
+    "example_ka": "ჯგუფურ ჩატებში თვალყურს ადევნებს.",
+    "category": "texting-chat",
+    "level": "B1"
+  },
+  {
+    "english": "autocorrect",
+    "georgian": "ავტოკორექცია",
+    "pronunciation": "/ˌɔːtoʊkəˈrekt/",
+    "example_en": "Autocorrect changed my word.",
+    "example_ka": "ავტოკორექციამ ჩემი სიტყვა შეცვალა.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "unsend",
+    "georgian": "გაგზავნის გაუქმება",
+    "pronunciation": "/ʌnˈsend/",
+    "example_en": "You can unsend a message.",
+    "example_ka": "შეტყობინების გაგზავნა შეგიძლია გააუქმო.",
+    "category": "texting-chat",
+    "level": "A2"
+  },
+  {
+    "english": "fam",
+    "georgian": "ოჯახი/მეგობრები",
+    "pronunciation": "/fæm/",
+    "example_en": "Hey fam, what's up?",
+    "example_ka": "ჰეი ოჯახო, რა ხდება?",
+    "category": "texting-chat",
+    "level": "A1"
+  }
 ]

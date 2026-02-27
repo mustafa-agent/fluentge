@@ -1,22 +1,1621 @@
 [
-  {"english":"haircut","georgian":"თმის შეჭრა","pronunciation":"HAIR-kut","example_en":"I need a haircut.","example_ka":"თმის შეჭრა მჭირდება.","category":"Barbershop","level":"A1"},
-  {"english":"fade","georgian":"ფეიდი","pronunciation":"fayd","example_en":"Give me a mid fade on the sides.","example_ka":"გვერდებზე საშუალო ფეიდი გამიკეთე.","category":"Barbershop","level":"B1"},
-  {"english":"trim","georgian":"მოჭრა","pronunciation":"trim","example_en":"Just a trim, please.","example_ka":"უბრალოდ მოჭრა, გთხოვთ.","category":"Barbershop","level":"A2"},
-  {"english":"beard","georgian":"წვერი","pronunciation":"beerd","example_en":"I'm growing a beard.","example_ka":"წვერს ვიზრდი.","category":"Barbershop","level":"A2"},
-  {"english":"shave","georgian":"გაპარსვა","pronunciation":"shayv","example_en":"I shave every morning.","example_ka":"ყოველ დილით ვიპარსები.","category":"Barbershop","level":"A2"},
-  {"english":"razor","georgian":"საპარსი","pronunciation":"RAY-zer","example_en":"Be careful with the razor.","example_ka":"საპარსით ფრთხილად იყავი.","category":"Barbershop","level":"A2"},
-  {"english":"clippers","georgian":"მანქანა (თმის)","pronunciation":"KLIP-erz","example_en":"Use the clippers for the sides.","example_ka":"გვერდებისთვის მანქანა გამოიყენე.","category":"Barbershop","level":"B1"},
-  {"english":"sideburns","georgian":"ბაკენბარდი","pronunciation":"SYD-burnz","example_en":"Keep the sideburns short.","example_ka":"ბაკენბარდი მოკლე დატოვე.","category":"Barbershop","level":"B1"},
-  {"english":"gel","georgian":"გელი","pronunciation":"jel","example_en":"I use gel to style my hair.","example_ka":"თმის დასალაგებლად გელს ვიყენებ.","category":"Barbershop","level":"A2"},
-  {"english":"wax","georgian":"ვაქსი","pronunciation":"waks","example_en":"Hair wax gives a natural look.","example_ka":"თმის ვაქსი ბუნებრივ სახეს აძლევს.","category":"Barbershop","level":"B1"},
-  {"english":"comb","georgian":"სავარცხელი","pronunciation":"kohm","example_en":"Comb your hair before going out.","example_ka":"გასვლამდე თმა დაივარცხნე.","category":"Barbershop","level":"A2"},
-  {"english":"barber","georgian":"დალაქი","pronunciation":"BAR-ber","example_en":"My barber is very skilled.","example_ka":"ჩემი დალაქი ძალიან გამოცდილია.","category":"Barbershop","level":"A2"},
-  {"english":"undercut","georgian":"ანდერქათი","pronunciation":"UN-der-kut","example_en":"An undercut looks clean.","example_ka":"ანდერქათი სუფთად გამოიყურება.","category":"Barbershop","level":"B1"},
-  {"english":"buzz cut","georgian":"ნულოვანი თმა","pronunciation":"buz kut","example_en":"I got a buzz cut for summer.","example_ka":"ზაფხულისთვის ნულოვანი თმა გავიკეთე.","category":"Barbershop","level":"B1"},
-  {"english":"part","georgian":"გამყოფი","pronunciation":"part","example_en":"I wear my hair with a side part.","example_ka":"თმას გვერდითი გამყოფით ვატარებ.","category":"Barbershop","level":"A2"},
-  {"english":"texture","georgian":"ტექსტურა","pronunciation":"TEKS-cher","example_en":"Add some texture on top.","example_ka":"ზემოდან ტექსტურა დაამატე.","category":"Barbershop","level":"B1"},
-  {"english":"cologne","georgian":"ოდეკოლონი","pronunciation":"kuh-LOHN","example_en":"Don't use too much cologne.","example_ka":"ზედმეტი ოდეკოლონი არ გამოიყენო.","category":"Barbershop","level":"B1"},
-  {"english":"aftershave","georgian":"აფტერშეივი","pronunciation":"AF-ter-shayv","example_en":"Aftershave helps prevent irritation.","example_ka":"აფტერშეივი გაღიზიანების თავიდან აცილებაში ეხმარება.","category":"Barbershop","level":"B1"},
-  {"english":"dandruff","georgian":"ქერტლი","pronunciation":"DAN-druf","example_en":"Use special shampoo for dandruff.","example_ka":"ქერტლისთვის სპეციალური შამპუნი გამოიყენე.","category":"Barbershop","level":"B1"},
-  {"english":"taper","georgian":"თანდათანობით შემცირება","pronunciation":"TAY-per","example_en":"A taper fade looks professional.","example_ka":"თანდათანობით ფეიდი პროფესიონალურად გამოიყურება.","category":"Barbershop","level":"B1"}
+  {
+    "english": "haircut",
+    "georgian": "თმის შეჭრა",
+    "pronunciation": "HAIR-kut",
+    "example_en": "I need a haircut.",
+    "example_ka": "თმის შეჭრა მჭირდება.",
+    "category": "Barbershop",
+    "level": "A1"
+  },
+  {
+    "english": "fade",
+    "georgian": "ფეიდი",
+    "pronunciation": "fayd",
+    "example_en": "Give me a mid fade on the sides.",
+    "example_ka": "გვერდებზე საშუალო ფეიდი გამიკეთე.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "trim",
+    "georgian": "მოჭრა",
+    "pronunciation": "trim",
+    "example_en": "Just a trim, please.",
+    "example_ka": "უბრალოდ მოჭრა, გთხოვთ.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "beard",
+    "georgian": "წვერი",
+    "pronunciation": "beerd",
+    "example_en": "I'm growing a beard.",
+    "example_ka": "წვერს ვიზრდი.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "shave",
+    "georgian": "გაპარსვა",
+    "pronunciation": "shayv",
+    "example_en": "I shave every morning.",
+    "example_ka": "ყოველ დილით ვიპარსები.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "razor",
+    "georgian": "საპარსი",
+    "pronunciation": "RAY-zer",
+    "example_en": "Be careful with the razor.",
+    "example_ka": "საპარსით ფრთხილად იყავი.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "clippers",
+    "georgian": "მანქანა (თმის)",
+    "pronunciation": "KLIP-erz",
+    "example_en": "Use the clippers for the sides.",
+    "example_ka": "გვერდებისთვის მანქანა გამოიყენე.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "sideburns",
+    "georgian": "ბაკენბარდი",
+    "pronunciation": "SYD-burnz",
+    "example_en": "Keep the sideburns short.",
+    "example_ka": "ბაკენბარდი მოკლე დატოვე.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "gel",
+    "georgian": "გელი",
+    "pronunciation": "jel",
+    "example_en": "I use gel to style my hair.",
+    "example_ka": "თმის დასალაგებლად გელს ვიყენებ.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "wax",
+    "georgian": "ვაქსი",
+    "pronunciation": "waks",
+    "example_en": "Hair wax gives a natural look.",
+    "example_ka": "თმის ვაქსი ბუნებრივ სახეს აძლევს.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "comb",
+    "georgian": "სავარცხელი",
+    "pronunciation": "kohm",
+    "example_en": "Comb your hair before going out.",
+    "example_ka": "გასვლამდე თმა დაივარცხნე.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "barber",
+    "georgian": "დალაქი",
+    "pronunciation": "BAR-ber",
+    "example_en": "My barber is very skilled.",
+    "example_ka": "ჩემი დალაქი ძალიან გამოცდილია.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "undercut",
+    "georgian": "ანდერქათი",
+    "pronunciation": "UN-der-kut",
+    "example_en": "An undercut looks clean.",
+    "example_ka": "ანდერქათი სუფთად გამოიყურება.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "part",
+    "georgian": "გამყოფი",
+    "pronunciation": "part",
+    "example_en": "I wear my hair with a side part.",
+    "example_ka": "თმას გვერდითი გამყოფით ვატარებ.",
+    "category": "Barbershop",
+    "level": "A2"
+  },
+  {
+    "english": "texture",
+    "georgian": "ტექსტურა",
+    "pronunciation": "TEKS-cher",
+    "example_en": "Add some texture on top.",
+    "example_ka": "ზემოდან ტექსტურა დაამატე.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "cologne",
+    "georgian": "ოდეკოლონი",
+    "pronunciation": "kuh-LOHN",
+    "example_en": "Don't use too much cologne.",
+    "example_ka": "ზედმეტი ოდეკოლონი არ გამოიყენო.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "aftershave",
+    "georgian": "აფტერშეივი",
+    "pronunciation": "AF-ter-shayv",
+    "example_en": "Aftershave helps prevent irritation.",
+    "example_ka": "აფტერშეივი გაღიზიანების თავიდან აცილებაში ეხმარება.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "dandruff",
+    "georgian": "ქერტლი",
+    "pronunciation": "DAN-druf",
+    "example_en": "Use special shampoo for dandruff.",
+    "example_ka": "ქერტლისთვის სპეციალური შამპუნი გამოიყენე.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "taper",
+    "georgian": "თანდათანობით შემცირება",
+    "pronunciation": "TAY-per",
+    "example_en": "A taper fade looks professional.",
+    "example_ka": "თანდათანობით ფეიდი პროფესიონალურად გამოიყურება.",
+    "category": "Barbershop",
+    "level": "B1"
+  },
+  {
+    "english": "mustache",
+    "georgian": "ულვაში",
+    "pronunciation": "MUS-tash",
+    "example_en": "He has a thick mustache.",
+    "example_ka": "მას სქელი ულვაში აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "scissors",
+    "georgian": "მაკრატელი",
+    "pronunciation": "SIZ-erz",
+    "example_en": "The barber uses sharp scissors.",
+    "example_ka": "დალაქი ბასრ მაკრატელს იყენებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "brush",
+    "georgian": "ჯაგრისი",
+    "pronunciation": "brush",
+    "example_en": "He cleaned the hair with a brush.",
+    "example_ka": "თმა ჯაგრისით გაასუფთავა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "blade",
+    "georgian": "პირი",
+    "pronunciation": "blayd",
+    "example_en": "Change the blade regularly.",
+    "example_ka": "პირი რეგულარულად შეცვალე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "lather",
+    "georgian": "ქაფი",
+    "pronunciation": "LATH-er",
+    "example_en": "Apply lather before shaving.",
+    "example_ka": "გაპარსვამდე ქაფი წაისვი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "stubble",
+    "georgian": "ჯეჯილი",
+    "pronunciation": "STUB-ul",
+    "example_en": "He has two-day stubble.",
+    "example_ka": "ორდღიანი ჯეჯილი აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "sidepart",
+    "georgian": "გვერდითი",
+    "pronunciation": "SYD-part",
+    "example_en": "A sidepart suits your face.",
+    "example_ka": "გვერდითი შენს სახეს უხდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "pomade",
+    "georgian": "პომადა",
+    "pronunciation": "poh-MAYD",
+    "example_en": "Pomade adds shine to hair.",
+    "example_ka": "პომადა თმას ბზინვარებას აძლევს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "mousse",
+    "georgian": "მუსი",
+    "pronunciation": "moos",
+    "example_en": "Use mousse for volume.",
+    "example_ka": "მოცულობისთვის მუსი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "spray",
+    "georgian": "სპრეი",
+    "pronunciation": "spray",
+    "example_en": "Hairspray holds the style.",
+    "example_ka": "სპრეი ვარცხნილობას ინარჩუნებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "cape",
+    "georgian": "პელერინი",
+    "pronunciation": "kayp",
+    "example_en": "The barber put on a cape.",
+    "example_ka": "დალაქმა პელერინი მოახურა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "mirror",
+    "georgian": "სარკე",
+    "pronunciation": "MIR-er",
+    "example_en": "Check the back in the mirror.",
+    "example_ka": "უკანა მხარე სარკეში შეამოწმე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "chair",
+    "georgian": "სკამი",
+    "pronunciation": "chair",
+    "example_en": "Sit in the barber chair.",
+    "example_ka": "საპარიკმახერო სკამზე დაჯექი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "apron",
+    "georgian": "წინსაფარი",
+    "pronunciation": "AY-prun",
+    "example_en": "The barber wore an apron.",
+    "example_ka": "დალაქმა წინსაფარი ჩაიცვა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "strop",
+    "georgian": "ზოლი",
+    "pronunciation": "strop",
+    "example_en": "He sharpened the blade on a strop.",
+    "example_ka": "პირი ზოლზე გაილესა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "neckline",
+    "georgian": "კისრის ხაზი",
+    "pronunciation": "NEK-lyn",
+    "example_en": "Clean up the neckline.",
+    "example_ka": "კისრის ხაზი გაასუფთავე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "lineup",
+    "georgian": "ლაინაფი",
+    "pronunciation": "LYN-up",
+    "example_en": "I want a sharp lineup.",
+    "example_ka": "მკვეთრი ლაინაფი მინდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "layers",
+    "georgian": "ფენები",
+    "pronunciation": "LAY-erz",
+    "example_en": "Cut it in layers.",
+    "example_ka": "ფენებად შეჭერი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "bangs",
+    "georgian": "კაკული",
+    "pronunciation": "bangz",
+    "example_en": "She wants short bangs.",
+    "example_ka": "მოკლე კაკული უნდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "highlights",
+    "georgian": "ჰაილაითები",
+    "pronunciation": "HY-lyts",
+    "example_en": "Add highlights for contrast.",
+    "example_ka": "კონტრასტისთვის ჰაილაითები დაამატე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "dye",
+    "georgian": "საღებავი",
+    "pronunciation": "dy",
+    "example_en": "She wants to dye her hair.",
+    "example_ka": "თმის შეღებვა უნდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "bleach",
+    "georgian": "მათეთრებელი",
+    "pronunciation": "bleech",
+    "example_en": "Bleach the hair before coloring.",
+    "example_ka": "შეღებვამდე თმა გაათეთრე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "thinning",
+    "georgian": "გათხელება",
+    "pronunciation": "THIN-ing",
+    "example_en": "Use thinning shears for thick hair.",
+    "example_ka": "სქელი თმისთვის გამათხელებელი მაკრატელი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "blowout",
+    "georgian": "წარება",
+    "pronunciation": "BLOH-out",
+    "example_en": "A blowout adds volume.",
+    "example_ka": "წარება მოცულობას მატებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "dryer",
+    "georgian": "ფენი",
+    "pronunciation": "DRY-er",
+    "example_en": "Dry your hair with a dryer.",
+    "example_ka": "თმა ფენით გააშრე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "straightener",
+    "georgian": "უთო",
+    "pronunciation": "STRAY-ten-er",
+    "example_en": "She used a straightener.",
+    "example_ka": "მან უთო გამოიყენა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "curler",
+    "georgian": "ხვეულა",
+    "pronunciation": "KUR-ler",
+    "example_en": "Use a curler for waves.",
+    "example_ka": "ტალღებისთვის ხვეულა გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "perm",
+    "georgian": "პერმანენტი",
+    "pronunciation": "purm",
+    "example_en": "She got a perm last week.",
+    "example_ka": "გასულ კვირას პერმანენტი გაიკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "braid",
+    "georgian": "წნული",
+    "pronunciation": "brayd",
+    "example_en": "She wore her hair in a braid.",
+    "example_ka": "თმა წნულად ეკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "ponytail",
+    "georgian": "კუდი",
+    "pronunciation": "POH-nee-tayl",
+    "example_en": "She tied her hair in a ponytail.",
+    "example_ka": "თმა კუდად შეიკრა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "bun",
+    "georgian": "ფუნთუშა",
+    "pronunciation": "bun",
+    "example_en": "She wore a messy bun.",
+    "example_ka": "გაბნეული ფუნთუშა ეკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "fringe",
+    "georgian": "კაკული",
+    "pronunciation": "frinj",
+    "example_en": "The fringe covers her forehead.",
+    "example_ka": "კაკული შუბლს უფარავს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "volume",
+    "georgian": "მოცულობა",
+    "pronunciation": "VOL-yoom",
+    "example_en": "I want more volume on top.",
+    "example_ka": "ზემოდან მეტი მოცულობა მინდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "shine",
+    "georgian": "ბრწყინვალება",
+    "pronunciation": "shyn",
+    "example_en": "This product adds shine.",
+    "example_ka": "ეს პროდუქტი ბრწყინვალებას მატებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "matte",
+    "georgian": "მატი",
+    "pronunciation": "mat",
+    "example_en": "I prefer a matte finish.",
+    "example_ka": "მატი დასრულება მირჩევნია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "follicle",
+    "georgian": "ფოლიკულა",
+    "pronunciation": "FOL-ik-ul",
+    "example_en": "Each follicle grows one hair.",
+    "example_ka": "თითოეული ფოლიკულა ერთ თმას ზრდის.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "scalp",
+    "georgian": "თავის კანი",
+    "pronunciation": "skalp",
+    "example_en": "Massage your scalp gently.",
+    "example_ka": "თავის კანი ნაზად დაიმასაჟე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "baldness",
+    "georgian": "სიმელოტე",
+    "pronunciation": "BAWLD-nes",
+    "example_en": "Baldness runs in his family.",
+    "example_ka": "სიმელოტე მის ოჯახში გადაეცემა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "receding",
+    "georgian": "უკანდახეული",
+    "pronunciation": "rih-SEE-ding",
+    "example_en": "He has a receding hairline.",
+    "example_ka": "თმის უკანდახეული ხაზი აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "goatee",
+    "georgian": "თხის წვერი",
+    "pronunciation": "goh-TEE",
+    "example_en": "He trimmed his goatee.",
+    "example_ka": "თხის წვერი შეიჭრა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "sideburn",
+    "georgian": "ბაკენბარდი",
+    "pronunciation": "SYD-burn",
+    "example_en": "Keep the sideburn even.",
+    "example_ka": "ბაკენბარდი თანაბარი დატოვე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "parting",
+    "georgian": "გამყოფი",
+    "pronunciation": "PAR-ting",
+    "example_en": "The parting is on the left.",
+    "example_ka": "გამყოფი მარცხნივაა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "cowlick",
+    "georgian": "ხვეული",
+    "pronunciation": "KOW-lik",
+    "example_en": "His cowlick makes styling hard.",
+    "example_ka": "ხვეული დალაგებას ართულებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "strand",
+    "georgian": "ღერი",
+    "pronunciation": "strand",
+    "example_en": "A strand of hair fell on his face.",
+    "example_ka": "თმის ღერი სახეზე დაეცა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "roots",
+    "georgian": "ფესვები",
+    "pronunciation": "roots",
+    "example_en": "Her roots are showing.",
+    "example_ka": "ფესვები გამოჩნდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "tips",
+    "georgian": "წვერები",
+    "pronunciation": "tips",
+    "example_en": "Trim the tips only.",
+    "example_ka": "მხოლოდ წვერები შეჭერი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "split",
+    "georgian": "გახლეჩილი",
+    "pronunciation": "split",
+    "example_en": "She has split ends.",
+    "example_ka": "გახლეჩილი წვერები აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "knot",
+    "georgian": "კვანძი",
+    "pronunciation": "not",
+    "example_en": "There is a knot in my hair.",
+    "example_ka": "თმაში კვანძი მაქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "tangle",
+    "georgian": "გახლართვა",
+    "pronunciation": "TANG-ul",
+    "example_en": "Brush out the tangles.",
+    "example_ka": "გახლართული ადგილები გაიხსენი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "clip",
+    "georgian": "სამაგრი",
+    "pronunciation": "klip",
+    "example_en": "Use a clip to hold the hair.",
+    "example_ka": "თმის დასაჭერად სამაგრი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "pin",
+    "georgian": "პინი",
+    "pronunciation": "pin",
+    "example_en": "She used a pin to secure the bun.",
+    "example_ka": "ფუნთუშის დასამაგრებლად პინი გამოიყენა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "elastic",
+    "georgian": "რეზინი",
+    "pronunciation": "ih-LAS-tik",
+    "example_en": "She tied her hair with an elastic.",
+    "example_ka": "თმა რეზინით შეიკრა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "headband",
+    "georgian": "თავსაბურავი",
+    "pronunciation": "HED-band",
+    "example_en": "She wore a headband.",
+    "example_ka": "თავსაბურავი ეკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "wig",
+    "georgian": "პარიკი",
+    "pronunciation": "wig",
+    "example_en": "She wore a wig to the party.",
+    "example_ka": "წვეულებაზე პარიკი ეკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "extensions",
+    "georgian": "ექსთენშენები",
+    "pronunciation": "ik-STEN-shunz",
+    "example_en": "She got hair extensions.",
+    "example_ka": "თმის ექსთენშენები გაიკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "keratin",
+    "georgian": "კერატინი",
+    "pronunciation": "KER-uh-tin",
+    "example_en": "Keratin treatment smooths hair.",
+    "example_ka": "კერატინის პროცედურა თმას ასწორებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "protein",
+    "georgian": "პროტეინი",
+    "pronunciation": "PROH-teen",
+    "example_en": "Use a protein mask for strength.",
+    "example_ka": "სიმტკიცისთვის პროტეინის ნიღაბი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "serum",
+    "georgian": "შრატი",
+    "pronunciation": "SIR-um",
+    "example_en": "Apply serum to wet hair.",
+    "example_ka": "სველ თმაზე შრატი წაისვი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "oil",
+    "georgian": "ზეთი",
+    "pronunciation": "oyl",
+    "example_en": "Coconut oil nourishes hair.",
+    "example_ka": "ქოქოსის ზეთი თმას კვებავს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "mask",
+    "georgian": "ნიღაბი",
+    "pronunciation": "mask",
+    "example_en": "Use a hair mask weekly.",
+    "example_ka": "ყოველ კვირა თმის ნიღაბი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "balm",
+    "georgian": "ბალზამი",
+    "pronunciation": "bahm",
+    "example_en": "Beard balm softens facial hair.",
+    "example_ka": "წვერის ბალზამი სახის თმას არბილებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "cream",
+    "georgian": "კრემი",
+    "pronunciation": "kreem",
+    "example_en": "Shaving cream prevents cuts.",
+    "example_ka": "საპარსი კრემი ჭრილობებს ხელს უშლის.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "foam",
+    "georgian": "ქაფი",
+    "pronunciation": "fohm",
+    "example_en": "Apply shaving foam evenly.",
+    "example_ka": "საპარსი ქაფი თანაბრად წაისვი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "lotion",
+    "georgian": "ლოსიონი",
+    "pronunciation": "LOH-shun",
+    "example_en": "Use lotion after shaving.",
+    "example_ka": "გაპარსვის შემდეგ ლოსიონი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "conditioner",
+    "georgian": "კონდიციონერი",
+    "pronunciation": "kun-DISH-un-er",
+    "example_en": "Conditioner makes hair soft.",
+    "example_ka": "კონდიციონერი თმას არბილებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "shampoo",
+    "georgian": "შამპუნი",
+    "pronunciation": "sham-POO",
+    "example_en": "Use a gentle shampoo.",
+    "example_ka": "რბილი შამპუნი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "rinse",
+    "georgian": "ჩამობანვა",
+    "pronunciation": "rins",
+    "example_en": "Rinse your hair thoroughly.",
+    "example_ka": "თმა კარგად ჩამოიბანე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "towel",
+    "georgian": "პირსახოცი",
+    "pronunciation": "TOW-ul",
+    "example_en": "Dry your hair with a towel.",
+    "example_ka": "თმა პირსახოცით გააშრე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "diffuser",
+    "georgian": "დიფუზორი",
+    "pronunciation": "dih-FYOO-zer",
+    "example_en": "A diffuser enhances curls.",
+    "example_ka": "დიფუზორი ხვეულებს აძლიერებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "nozzle",
+    "georgian": "თავაკი",
+    "pronunciation": "NOZ-ul",
+    "example_en": "Attach the nozzle to the dryer.",
+    "example_ka": "ფენზე თავაკი მიამაგრე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "iron",
+    "georgian": "უთო",
+    "pronunciation": "EYE-urn",
+    "example_en": "A flat iron straightens hair.",
+    "example_ka": "უთო თმას ასწორებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "tongs",
+    "georgian": "მაშა",
+    "pronunciation": "tongz",
+    "example_en": "Curling tongs create waves.",
+    "example_ka": "მაშა ტალღებს ქმნის.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "roller",
+    "georgian": "როლიკი",
+    "pronunciation": "ROH-ler",
+    "example_en": "Use rollers overnight.",
+    "example_ka": "ღამით როლიკები გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "attachment",
+    "georgian": "თავაკი",
+    "pronunciation": "uh-TACH-ment",
+    "example_en": "This clipper has several attachments.",
+    "example_ka": "ამ მანქანას რამდენიმე თავაკი აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "guard",
+    "georgian": "ნასადკა",
+    "pronunciation": "gard",
+    "example_en": "Put the number two guard on.",
+    "example_ka": "მეორე ნომრის ნასადკა მოარგე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "trimmer",
+    "georgian": "ტრიმერი",
+    "pronunciation": "TRIM-er",
+    "example_en": "Use a trimmer for details.",
+    "example_ka": "დეტალებისთვის ტრიმერი გამოიყენე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "edger",
+    "georgian": "კიდეების საჭრელი",
+    "pronunciation": "EJ-er",
+    "example_en": "An edger defines the hairline.",
+    "example_ka": "კიდეების საჭრელი თმის ხაზს ამკვეთრებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "shears",
+    "georgian": "მაკრატელი",
+    "pronunciation": "sheerz",
+    "example_en": "Professional shears cut precisely.",
+    "example_ka": "პროფესიონალური მაკრატელი ზუსტად ჭრის.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "razor",
+    "georgian": "საპარსი",
+    "pronunciation": "RAY-zer",
+    "example_en": "A straight razor gives a close shave.",
+    "example_ka": "სწორი საპარსი ახლოს პარსავს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "mohawk",
+    "georgian": "მოჰაუკი",
+    "pronunciation": "MOH-hawk",
+    "example_en": "He got a mohawk haircut.",
+    "example_ka": "მოჰაუკი გაიკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "buzzcut",
+    "georgian": "ბაზქათი",
+    "pronunciation": "BUZ-kut",
+    "example_en": "A buzzcut is easy to maintain.",
+    "example_ka": "ბაზქათი ადვილი მოსავლელია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "mullet",
+    "georgian": "მალეტი",
+    "pronunciation": "MUL-it",
+    "example_en": "The mullet is back in fashion.",
+    "example_ka": "მალეტი ისევ მოდაშია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "bob",
+    "georgian": "ბობი",
+    "pronunciation": "bob",
+    "example_en": "She has a stylish bob.",
+    "example_ka": "სტილიანი ბობი აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "pixie",
+    "georgian": "პიქსი",
+    "pronunciation": "PIK-see",
+    "example_en": "A pixie cut suits her face.",
+    "example_ka": "პიქსი მის სახეს უხდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "crop",
+    "georgian": "კროპი",
+    "pronunciation": "krop",
+    "example_en": "A textured crop is trendy.",
+    "example_ka": "ტექსტურიანი კროპი მოდურია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "quiff",
+    "georgian": "კვიფი",
+    "pronunciation": "kwif",
+    "example_en": "Style a quiff with pomade.",
+    "example_ka": "კვიფი პომადით დაალაგე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "pompadour",
+    "georgian": "პომპადური",
+    "pronunciation": "POM-puh-dor",
+    "example_en": "The pompadour is a classic style.",
+    "example_ka": "პომპადური კლასიკური სტილია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "slickback",
+    "georgian": "უკანგავარცხნილი",
+    "pronunciation": "SLIK-bak",
+    "example_en": "He wore a slickback to the event.",
+    "example_ka": "ღონისძიებაზე უკანგავარცხნილით მივიდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "combover",
+    "georgian": "კომბოვერი",
+    "pronunciation": "KOHM-oh-ver",
+    "example_en": "A combover hides thinning hair.",
+    "example_ka": "კომბოვერი გათხელებულ თმას ფარავს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "toupee",
+    "georgian": "ტუპეი",
+    "pronunciation": "too-PAY",
+    "example_en": "He wears a toupee.",
+    "example_ka": "ტუპეის ატარებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "transplant",
+    "georgian": "გადანერგვა",
+    "pronunciation": "TRANS-plant",
+    "example_en": "He had a hair transplant.",
+    "example_ka": "თმის გადანერგვა გაიკეთა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "regrowth",
+    "georgian": "ხელახალი ზრდა",
+    "pronunciation": "REE-grohth",
+    "example_en": "There is visible regrowth.",
+    "example_ka": "ხელახალი ზრდა შესამჩნევია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "alopecia",
+    "georgian": "ალოპეცია",
+    "pronunciation": "al-oh-PEE-sha",
+    "example_en": "Alopecia causes hair loss.",
+    "example_ka": "ალოპეცია თმის ცვენას იწვევს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "shedding",
+    "georgian": "ცვენა",
+    "pronunciation": "SHED-ing",
+    "example_en": "Some shedding is normal.",
+    "example_ka": "გარკვეული ცვენა ნორმალურია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "thickness",
+    "georgian": "სისქე",
+    "pronunciation": "THIK-nes",
+    "example_en": "This shampoo adds thickness.",
+    "example_ka": "ეს შამპუნი სისქეს მატებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "thinness",
+    "georgian": "სითხელე",
+    "pronunciation": "THIN-nes",
+    "example_en": "Hair thinness increases with age.",
+    "example_ka": "თმის სითხელე ასაკთან ერთად იზრდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "oiliness",
+    "georgian": "ცხიმიანობა",
+    "pronunciation": "OY-lee-nes",
+    "example_en": "Shampoo reduces oiliness.",
+    "example_ka": "შამპუნი ცხიმიანობას ამცირებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "dryness",
+    "georgian": "სიმშრალე",
+    "pronunciation": "DRY-nes",
+    "example_en": "Conditioner helps with dryness.",
+    "example_ka": "კონდიციონერი სიმშრალეში ეხმარება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "frizz",
+    "georgian": "ბუსუსი",
+    "pronunciation": "friz",
+    "example_en": "Humidity causes frizz.",
+    "example_ka": "ტენიანობა ბუსუსს იწვევს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "curl",
+    "georgian": "ხვეული",
+    "pronunciation": "kurl",
+    "example_en": "She has natural curls.",
+    "example_ka": "ბუნებრივი ხვეულები აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "wave",
+    "georgian": "ტალღა",
+    "pronunciation": "wayv",
+    "example_en": "He has wavy hair.",
+    "example_ka": "ტალღოვანი თმა აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "straight",
+    "georgian": "სწორი",
+    "pronunciation": "strayt",
+    "example_en": "Her hair is naturally straight.",
+    "example_ka": "მისი თმა ბუნებრივად სწორია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "coarse",
+    "georgian": "უხეში",
+    "pronunciation": "kors",
+    "example_en": "Coarse hair needs more moisture.",
+    "example_ka": "უხეშ თმას მეტი ტენიანობა სჭირდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "fine",
+    "georgian": "წვრილი",
+    "pronunciation": "fyn",
+    "example_en": "Fine hair tangles easily.",
+    "example_ka": "წვრილი თმა ადვილად იხლართება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "silky",
+    "georgian": "აბრეშუმისებრი",
+    "pronunciation": "SIL-kee",
+    "example_en": "Her hair is silky smooth.",
+    "example_ka": "მისი თმა აბრეშუმისებრია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "glossy",
+    "georgian": "პრიალა",
+    "pronunciation": "GLOS-ee",
+    "example_en": "The product gives a glossy look.",
+    "example_ka": "პროდუქტი პრიალა სახეს აძლევს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "brittle",
+    "georgian": "მტვრევადი",
+    "pronunciation": "BRIT-ul",
+    "example_en": "Brittle hair breaks easily.",
+    "example_ka": "მტვრევადი თმა ადვილად ტყდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "damaged",
+    "georgian": "დაზიანებული",
+    "pronunciation": "DAM-ijd",
+    "example_en": "Heat damages hair over time.",
+    "example_ka": "სითბო დროთა განმავლობაში თმას აზიანებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "healthy",
+    "georgian": "ჯანსაღი",
+    "pronunciation": "HEL-thee",
+    "example_en": "Healthy hair shines naturally.",
+    "example_ka": "ჯანსაღი თმა ბუნებრივად ბრწყინავს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "greasy",
+    "georgian": "ცხიმიანი",
+    "pronunciation": "GREE-see",
+    "example_en": "Wash greasy hair daily.",
+    "example_ka": "ცხიმიანი თმა ყოველდღე დაიბანე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "dry",
+    "georgian": "მშრალი",
+    "pronunciation": "dry",
+    "example_en": "Dry hair needs deep conditioning.",
+    "example_ka": "მშრალ თმას ღრმა კონდიცირება სჭირდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "clean",
+    "georgian": "სუფთა",
+    "pronunciation": "kleen",
+    "example_en": "Clean hair styles better.",
+    "example_ka": "სუფთა თმა უკეთ ილაგება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "dirty",
+    "georgian": "ბინძური",
+    "pronunciation": "DUR-tee",
+    "example_en": "Dirty hair holds styles longer.",
+    "example_ka": "ბინძური თმა სტილს უფრო დიდხანს ინარჩუნებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "wash",
+    "georgian": "დაბანვა",
+    "pronunciation": "wosh",
+    "example_en": "Wash your hair twice a week.",
+    "example_ka": "თმა კვირაში ორჯერ დაიბანე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "condition",
+    "georgian": "კონდიცირება",
+    "pronunciation": "kun-DISH-un",
+    "example_en": "Condition your hair after washing.",
+    "example_ka": "დაბანვის შემდეგ თმა დააკონდიციონირე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "style",
+    "georgian": "სტილი",
+    "pronunciation": "styl",
+    "example_en": "Choose a style that suits you.",
+    "example_ka": "შესაფერისი სტილი აირჩიე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "shape",
+    "georgian": "ფორმა",
+    "pronunciation": "shayp",
+    "example_en": "Shape the beard neatly.",
+    "example_ka": "წვერი მოწესრიგებულად გაფორმე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "blend",
+    "georgian": "შერწყმა",
+    "pronunciation": "blend",
+    "example_en": "Blend the sides gradually.",
+    "example_ka": "გვერდები თანდათანობით შეარწყვე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "thinned",
+    "georgian": "გათხელებული",
+    "pronunciation": "thind",
+    "example_en": "Thinned hair looks lighter.",
+    "example_ka": "გათხელებული თმა უფრო მსუბუქად გამოიყურება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "tapered",
+    "georgian": "დავიწროებული",
+    "pronunciation": "TAY-perd",
+    "example_en": "The sides are tapered.",
+    "example_ka": "გვერდები დავიწროებულია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "shaved",
+    "georgian": "გაპარსული",
+    "pronunciation": "shayvd",
+    "example_en": "He has shaved sides.",
+    "example_ka": "გვერდები გაპარსული აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "cropped",
+    "georgian": "მოჭრილი",
+    "pronunciation": "kropt",
+    "example_en": "She has a cropped hairstyle.",
+    "example_ka": "მოჭრილი ვარცხნილობა აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "layered",
+    "georgian": "ფენიანი",
+    "pronunciation": "LAY-erd",
+    "example_en": "Layered cuts add movement.",
+    "example_ka": "ფენიანი ჭრა მოძრაობას მატებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "textured",
+    "georgian": "ტექსტურიანი",
+    "pronunciation": "TEKS-cherd",
+    "example_en": "A textured crop looks modern.",
+    "example_ka": "ტექსტურიანი კროპი თანამედროვეა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "wavy",
+    "georgian": "ტალღოვანი",
+    "pronunciation": "WAY-vee",
+    "example_en": "Wavy hair suits many styles.",
+    "example_ka": "ტალღოვანი თმა ბევრ სტილს უხდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "curly",
+    "georgian": "ხვეულა",
+    "pronunciation": "KUR-lee",
+    "example_en": "Curly hair needs moisture.",
+    "example_ka": "ხვეულა თმას ტენი სჭირდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "kinky",
+    "georgian": "ხუჭუჭა",
+    "pronunciation": "KING-kee",
+    "example_en": "Kinky hair has tight coils.",
+    "example_ka": "ხუჭუჭა თმას მჭიდრო ხვეულები აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "limp",
+    "georgian": "უსიცოცხლო",
+    "pronunciation": "limp",
+    "example_en": "Limp hair lacks volume.",
+    "example_ka": "უსიცოცხლო თმას მოცულობა აკლია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "bouncy",
+    "georgian": "მოქნილი",
+    "pronunciation": "BOWN-see",
+    "example_en": "Healthy hair is bouncy.",
+    "example_ka": "ჯანსაღი თმა მოქნილია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "sleek",
+    "georgian": "გლუვი",
+    "pronunciation": "sleek",
+    "example_en": "A sleek look is elegant.",
+    "example_ka": "გლუვი სახე ელეგანტურია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "messy",
+    "georgian": "გაბნეული",
+    "pronunciation": "MES-ee",
+    "example_en": "A messy look is trendy now.",
+    "example_ka": "გაბნეული სტილი ახლა მოდურია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "neat",
+    "georgian": "მოწესრიგებული",
+    "pronunciation": "neet",
+    "example_en": "Keep your beard neat.",
+    "example_ka": "წვერი მოწესრიგებული გქონდეს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "polished",
+    "georgian": "გაპრიალებული",
+    "pronunciation": "POL-isht",
+    "example_en": "A polished style suits formal events.",
+    "example_ka": "გაპრიალებული სტილი ფორმალურ ღონისძიებებს უხდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "rugged",
+    "georgian": "უხეში",
+    "pronunciation": "RUG-id",
+    "example_en": "A rugged beard looks masculine.",
+    "example_ka": "უხეში წვერი მამაკაცურად გამოიყურება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "groomed",
+    "georgian": "მოვლილი",
+    "pronunciation": "groomd",
+    "example_en": "A well-groomed appearance matters.",
+    "example_ka": "მოვლილი გარეგნობა მნიშვნელოვანია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "unkempt",
+    "georgian": "მოუვლელი",
+    "pronunciation": "un-KEMPT",
+    "example_en": "His hair looked unkempt.",
+    "example_ka": "მისი თმა მოუვლელად გამოიყურებოდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "edgy",
+    "georgian": "თამამი",
+    "pronunciation": "EJ-ee",
+    "example_en": "She chose an edgy hairstyle.",
+    "example_ka": "თამამი ვარცხნილობა აირჩია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "classic",
+    "georgian": "კლასიკური",
+    "pronunciation": "KLAS-ik",
+    "example_en": "A classic cut never goes out of style.",
+    "example_ka": "კლასიკური ჭრა არასდროს მოძველდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "modern",
+    "georgian": "თანამედროვე",
+    "pronunciation": "MOD-ern",
+    "example_en": "Modern styles use less product.",
+    "example_ka": "თანამედროვე სტილებს ნაკლები პროდუქტი სჭირდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "vintage",
+    "georgian": "ვინტაჟური",
+    "pronunciation": "VIN-tij",
+    "example_en": "Vintage hairstyles are popular again.",
+    "example_ka": "ვინტაჟური ვარცხნილობები ისევ პოპულარულია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "trendy",
+    "georgian": "მოდური",
+    "pronunciation": "TREN-dee",
+    "example_en": "That haircut is very trendy.",
+    "example_ka": "ის ვარცხნილობა ძალიან მოდურია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "retro",
+    "georgian": "რეტრო",
+    "pronunciation": "RET-roh",
+    "example_en": "Retro styles are making a comeback.",
+    "example_ka": "რეტრო სტილები ბრუნდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "appointment",
+    "georgian": "ჩანიშვნა",
+    "pronunciation": "uh-POYNT-ment",
+    "example_en": "I have an appointment at three.",
+    "example_ka": "სამზე ჩანიშვნა მაქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "queue",
+    "georgian": "რიგი",
+    "pronunciation": "kyoo",
+    "example_en": "There is a long queue at the barbershop.",
+    "example_ka": "საპარიკმახეროში გრძელი რიგია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "tip",
+    "georgian": "ჩაი",
+    "pronunciation": "tip",
+    "example_en": "Leave a tip for the barber.",
+    "example_ka": "დალაქს ჩაი დაუტოვე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "customer",
+    "georgian": "მომხმარებელი",
+    "pronunciation": "KUS-tuh-mer",
+    "example_en": "The customer wants a fade.",
+    "example_ka": "მომხმარებელს ფეიდი უნდა.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "hairstylist",
+    "georgian": "სტილისტი",
+    "pronunciation": "HAIR-sty-list",
+    "example_en": "My hairstylist is creative.",
+    "example_ka": "ჩემი სტილისტი კრეატიულია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "salon",
+    "georgian": "სალონი",
+    "pronunciation": "suh-LON",
+    "example_en": "The salon opens at nine.",
+    "example_ka": "სალონი ცხრაზე იხსნება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "barbershop",
+    "georgian": "საპარიკმახერო",
+    "pronunciation": "BAR-ber-shop",
+    "example_en": "The barbershop is downtown.",
+    "example_ka": "საპარიკმახერო ცენტრშია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "consultation",
+    "georgian": "კონსულტაცია",
+    "pronunciation": "kon-sul-TAY-shun",
+    "example_en": "Book a consultation first.",
+    "example_ka": "ჯერ კონსულტაცია დაჯავშნე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "transformation",
+    "georgian": "ტრანსფორმაცია",
+    "pronunciation": "trans-for-MAY-shun",
+    "example_en": "The haircut was a transformation.",
+    "example_ka": "ვარცხნილობა ტრანსფორმაცია იყო.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "maintenance",
+    "georgian": "მოვლა",
+    "pronunciation": "MAYN-tuh-nuns",
+    "example_en": "Short hair needs less maintenance.",
+    "example_ka": "მოკლე თმას ნაკლები მოვლა სჭირდება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "grooming",
+    "georgian": "მოვლა",
+    "pronunciation": "GROOM-ing",
+    "example_en": "Grooming is part of self-care.",
+    "example_ka": "მოვლა თვითზრუნვის ნაწილია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "hygiene",
+    "georgian": "ჰიგიენა",
+    "pronunciation": "HY-jeen",
+    "example_en": "Good hygiene is important.",
+    "example_ka": "კარგი ჰიგიენა მნიშვნელოვანია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "appearance",
+    "georgian": "გარეგნობა",
+    "pronunciation": "uh-PEER-uns",
+    "example_en": "Your appearance matters.",
+    "example_ka": "გარეგნობა მნიშვნელოვანია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "confidence",
+    "georgian": "თავდაჯერებულობა",
+    "pronunciation": "KON-fih-duns",
+    "example_en": "A good haircut boosts confidence.",
+    "example_ka": "კარგი ვარცხნილობა თავდაჯერებულობას ამაღლებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "compliment",
+    "georgian": "კომპლიმენტი",
+    "pronunciation": "KOM-plih-ment",
+    "example_en": "He got a compliment on his hair.",
+    "example_ka": "მის თმაზე კომპლიმენტი მიიღო.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "preference",
+    "georgian": "უპირატესობა",
+    "pronunciation": "PREF-er-uns",
+    "example_en": "What is your preference?",
+    "example_ka": "რას ანიჭებ უპირატესობას?",
+    "category": "Barbershop"
+  },
+  {
+    "english": "recommendation",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "rek-uh-men-DAY-shun",
+    "example_en": "Do you have a recommendation?",
+    "example_ka": "რეკომენდაცია გაქვს?",
+    "category": "Barbershop"
+  },
+  {
+    "english": "satisfaction",
+    "georgian": "კმაყოფილება",
+    "pronunciation": "sat-is-FAK-shun",
+    "example_en": "Customer satisfaction is our goal.",
+    "example_ka": "მომხმარებლის კმაყოფილება ჩვენი მიზანია.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "length",
+    "georgian": "სიგრძე",
+    "pronunciation": "length",
+    "example_en": "What length do you want?",
+    "example_ka": "რა სიგრძე გინდა?",
+    "category": "Barbershop"
+  },
+  {
+    "english": "width",
+    "georgian": "სიგანე",
+    "pronunciation": "width",
+    "example_en": "The part has good width.",
+    "example_ka": "გამყოფს კარგი სიგანე აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "angle",
+    "georgian": "კუთხე",
+    "pronunciation": "ANG-ul",
+    "example_en": "Cut at an angle for layers.",
+    "example_ka": "ფენებისთვის კუთხით შეჭერი.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "precision",
+    "georgian": "სიზუსტე",
+    "pronunciation": "prih-SIZH-un",
+    "example_en": "This cut requires precision.",
+    "example_ka": "ეს ჭრა სიზუსტეს მოითხოვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "symmetry",
+    "georgian": "სიმეტრია",
+    "pronunciation": "SIM-uh-tree",
+    "example_en": "Check for symmetry.",
+    "example_ka": "სიმეტრია შეამოწმე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "proportion",
+    "georgian": "პროპორცია",
+    "pronunciation": "proh-POR-shun",
+    "example_en": "The proportions look right.",
+    "example_ka": "პროპორციები სწორად გამოიყურება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "definition",
+    "georgian": "განსაზღვრულობა",
+    "pronunciation": "def-ih-NISH-un",
+    "example_en": "Add more definition to the curls.",
+    "example_ka": "ხვეულებს მეტი განსაზღვრულობა დაამატე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "movement",
+    "georgian": "მოძრაობა",
+    "pronunciation": "MOOV-ment",
+    "example_en": "Layers create movement.",
+    "example_ka": "ფენები მოძრაობას ქმნის.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "dimension",
+    "georgian": "განზომილება",
+    "pronunciation": "dih-MEN-shun",
+    "example_en": "Color adds dimension.",
+    "example_ka": "ფერი განზომილებას მატებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "contrast",
+    "georgian": "კონტრასტი",
+    "pronunciation": "KON-trast",
+    "example_en": "The fade creates contrast.",
+    "example_ka": "ფეიდი კონტრასტს ქმნის.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "transition",
+    "georgian": "გადასვლა",
+    "pronunciation": "tran-ZISH-un",
+    "example_en": "The transition should be smooth.",
+    "example_ka": "გადასვლა გლუვი უნდა იყოს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "gradient",
+    "georgian": "გრადიენტი",
+    "pronunciation": "GRAY-dee-ent",
+    "example_en": "A gradient fade looks natural.",
+    "example_ka": "გრადიენტული ფეიდი ბუნებრივად გამოიყურება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "technique",
+    "georgian": "ტექნიკა",
+    "pronunciation": "tek-NEEK",
+    "example_en": "He uses a special technique.",
+    "example_ka": "სპეციალურ ტექნიკას იყენებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "skill",
+    "georgian": "უნარი",
+    "pronunciation": "skil",
+    "example_en": "Barbering requires skill.",
+    "example_ka": "დალაქობა უნარს მოითხოვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "experience",
+    "georgian": "გამოცდილება",
+    "pronunciation": "ik-SPEER-ee-uns",
+    "example_en": "Experience makes a better barber.",
+    "example_ka": "გამოცდილება უკეთეს დალაქს ქმნის.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "practice",
+    "georgian": "პრაქტიკა",
+    "pronunciation": "PRAK-tis",
+    "example_en": "Practice improves technique.",
+    "example_ka": "პრაქტიკა ტექნიკას აუმჯობესებს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "talent",
+    "georgian": "ნიჭი",
+    "pronunciation": "TAL-ent",
+    "example_en": "He has a talent for cutting hair.",
+    "example_ka": "თმის ჭრის ნიჭი აქვს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "creativity",
+    "georgian": "კრეატიულობა",
+    "pronunciation": "kree-ay-TIV-ih-tee",
+    "example_en": "Creativity sets great barbers apart.",
+    "example_ka": "კრეატიულობა დიდ დალაქებს გამოარჩევს.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "detail",
+    "georgian": "დეტალი",
+    "pronunciation": "dih-TAYL",
+    "example_en": "Pay attention to detail.",
+    "example_ka": "დეტალებს ყურადღება მიაქციე.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "finish",
+    "georgian": "დასრულება",
+    "pronunciation": "FIN-ish",
+    "example_en": "The finish looks perfect.",
+    "example_ka": "დასრულება იდეალურად გამოიყურება.",
+    "category": "Barbershop"
+  },
+  {
+    "english": "touchup",
+    "georgian": "შესწორება",
+    "pronunciation": "TUCH-up",
+    "example_en": "Come back for a touchup.",
+    "example_ka": "შესწორებისთვის დაბრუნდი.",
+    "category": "Barbershop"
+  }
 ]

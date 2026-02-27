@@ -110,26 +110,26 @@ export default function DeckSelect({ onSelect }: Props) {
     );
   }
 
-  // Separate Top 5000 from other decks
-  const top5000 = decks.find(d => d.id === 'top-5000');
-  const otherFreeDecks = freeDecks.filter(d => d.id !== 'top-5000');
+  // Separate Top 2000 from other decks
+  const top2000 = decks.find(d => d.id === 'top-2000');
+  const otherFreeDecks = freeDecks.filter(d => d.id !== 'top-2000');
   
-  // SRS progress for Top 5000
+  // SRS progress for Top 2000
   const srsLearned = (() => {
     try {
       const data = JSON.parse(localStorage.getItem('fluentge-srs-data') || '{}');
       return Object.values(data).filter((d: any) => d.repetitions >= 2).length;
     } catch { return 0; }
   })();
-  const srsTotal = top5000?.cards.length || 5000;
+  const srsTotal = top2000?.cards.length || 2000;
   const srsPct = Math.round(srsLearned / srsTotal * 100);
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
-      {/* Featured: Top 5000 */}
-      {top5000 && (
+      {/* Featured: Top 2000 */}
+      {top2000 && (
         <button
-          onClick={() => setSelectedDeck(top5000)}
+          onClick={() => setSelectedDeck(top2000)}
           className="w-full mb-8 relative overflow-hidden rounded-2xl text-left transition-all hover:scale-[1.01] group"
         >
           <div className="absolute inset-0 bg-gradient-to-br from-[#5B7F5E] via-[#3D5940] to-[#1C3A2E]"></div>
@@ -141,8 +141,8 @@ export default function DeckSelect({ onSelect }: Props) {
                   <span className="text-3xl">⭐</span>
                   <span className="text-xs font-bold bg-white/20 px-2.5 py-1 rounded-full text-white uppercase tracking-wider">თავისუფალი</span>
                 </div>
-                <h2 className="text-2xl font-bold text-white mt-2">ტოპ 5000 სიტყვა</h2>
-                <p className="text-white/60 text-sm mt-1">Top 5000 English Words · თავისუფალი ბარათები</p>
+                <h2 className="text-2xl font-bold text-white mt-2">ტოპ 2000 სიტყვა</h2>
+                <p className="text-white/60 text-sm mt-1">Top 2000 English Words · თავისუფალი ბარათები</p>
               </div>
               <div className="text-right">
                 <p className="text-3xl font-bold text-white">{srsTotal.toLocaleString()}</p>

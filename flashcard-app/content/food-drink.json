@@ -1,82 +1,1802 @@
 [
-  {"english":"water","georgian":"წყალი","pronunciation":"/ˈwɔːtər/","example_en":"Can I have a glass of water?","example_ka":"შეიძლება ერთი ჭიქა წყალი?","category":"food-drink","level":"beginner"},
-  {"english":"bread","georgian":"პური","pronunciation":"/brɛd/","example_en":"I bought fresh bread from the bakery.","example_ka":"პურის სახლიდან ახალი პური ვიყიდე.","category":"food-drink","level":"beginner"},
-  {"english":"milk","georgian":"რძე","pronunciation":"/mɪlk/","example_en":"Children should drink milk every day.","example_ka":"ბავშვებმა ყოველდღე უნდა დალიონ რძე.","category":"food-drink","level":"beginner"},
-  {"english":"cheese","georgian":"ყველი","pronunciation":"/tʃiːz/","example_en":"Georgian cheese is very delicious.","example_ka":"ქართული ყველი ძალიან გემრიელია.","category":"food-drink","level":"beginner"},
-  {"english":"meat","georgian":"ხორცი","pronunciation":"/miːt/","example_en":"We need to buy some meat for dinner.","example_ka":"სადილისთვის ხორცი უნდა ვიყიდოთ.","category":"food-drink","level":"beginner"},
-  {"english":"chicken","georgian":"ქათამი","pronunciation":"/ˈtʃɪkɪn/","example_en":"I ordered grilled chicken.","example_ka":"შემწვარი ქათამი შევუკვეთე.","category":"food-drink","level":"beginner"},
-  {"english":"fish","georgian":"თევზი","pronunciation":"/fɪʃ/","example_en":"Fish is good for your health.","example_ka":"თევზი ჯანმრთელობისთვის სასარგებლოა.","category":"food-drink","level":"beginner"},
-  {"english":"egg","georgian":"კვერცხი","pronunciation":"/ɛɡ/","example_en":"I eat two eggs for breakfast.","example_ka":"საუზმეზე ორ კვერცხს ვჭამ.","category":"food-drink","level":"beginner"},
-  {"english":"rice","georgian":"ბრინჯი","pronunciation":"/raɪs/","example_en":"Rice is a staple food in Asia.","example_ka":"ბრინჯი აზიაში ძირითადი საკვებია.","category":"food-drink","level":"beginner"},
-  {"english":"potato","georgian":"კარტოფილი","pronunciation":"/pəˈteɪtoʊ/","example_en":"Fried potatoes are my favorite.","example_ka":"შემწვარი კარტოფილი ჩემი საყვარელია.","category":"food-drink","level":"beginner"},
-  {"english":"tomato","georgian":"პამიდორი","pronunciation":"/təˈmeɪtoʊ/","example_en":"Add some tomatoes to the salad.","example_ka":"სალათში პამიდორი დაამატე.","category":"food-drink","level":"beginner"},
-  {"english":"onion","georgian":"ხახვი","pronunciation":"/ˈʌnjən/","example_en":"Cutting onions makes me cry.","example_ka":"ხახვის თლისას ტირილი მიწყება.","category":"food-drink","level":"beginner"},
-  {"english":"apple","georgian":"ვაშლი","pronunciation":"/ˈæpəl/","example_en":"An apple a day keeps the doctor away.","example_ka":"დღეში ერთი ვაშლი ექიმს შორს გაგიშვებს.","category":"food-drink","level":"beginner"},
-  {"english":"banana","georgian":"ბანანი","pronunciation":"/bəˈnænə/","example_en":"Bananas are rich in potassium.","example_ka":"ბანანი კალიუმით მდიდარია.","category":"food-drink","level":"beginner"},
-  {"english":"orange","georgian":"ფორთოხალი","pronunciation":"/ˈɔːrɪndʒ/","example_en":"I drink orange juice every morning.","example_ka":"ყოველ დილით ფორთოხლის წვენს ვსვამ.","category":"food-drink","level":"beginner"},
-  {"english":"grape","georgian":"ყურძენი","pronunciation":"/ɡreɪp/","example_en":"Georgia is famous for its grapes.","example_ka":"საქართველო ყურძნით არის ცნობილი.","category":"food-drink","level":"beginner"},
-  {"english":"sugar","georgian":"შაქარი","pronunciation":"/ˈʃʊɡər/","example_en":"Do you take sugar in your tea?","example_ka":"ჩაიში შაქარს იყრი?","category":"food-drink","level":"beginner"},
-  {"english":"salt","georgian":"მარილი","pronunciation":"/sɔːlt/","example_en":"This soup needs more salt.","example_ka":"ამ წვნიანს მეტი მარილი სჭირდება.","category":"food-drink","level":"beginner"},
-  {"english":"pepper","georgian":"წიწაკა","pronunciation":"/ˈpɛpər/","example_en":"Add some pepper to the dish.","example_ka":"კერძს ცოტა წიწაკა დაამატე.","category":"food-drink","level":"beginner"},
-  {"english":"butter","georgian":"კარაქი","pronunciation":"/ˈbʌtər/","example_en":"Spread butter on the bread.","example_ka":"პურზე კარაქი წაუსვი.","category":"food-drink","level":"beginner"},
-  {"english":"oil","georgian":"ზეთი","pronunciation":"/ɔɪl/","example_en":"Heat the oil in a pan.","example_ka":"ტაფაში ზეთი გაახურე.","category":"food-drink","level":"beginner"},
-  {"english":"tea","georgian":"ჩაი","pronunciation":"/tiː/","example_en":"Would you like a cup of tea?","example_ka":"ჩაის ჭიქას ხომ არ ისურვებდი?","category":"food-drink","level":"beginner"},
-  {"english":"coffee","georgian":"ყავა","pronunciation":"/ˈkɔːfi/","example_en":"I cannot start my day without coffee.","example_ka":"ყავის გარეშე დღის დაწყება არ შემიძლია.","category":"food-drink","level":"beginner"},
-  {"english":"juice","georgian":"წვენი","pronunciation":"/dʒuːs/","example_en":"Fresh juice is better than soda.","example_ka":"ნატურალური წვენი გაზიანზე უკეთესია.","category":"food-drink","level":"beginner"},
-  {"english":"soup","georgian":"წვნიანი","pronunciation":"/suːp/","example_en":"Hot soup is perfect in winter.","example_ka":"ცხელი წვნიანი ზამთარში შესანიშნავია.","category":"food-drink","level":"beginner"},
-  {"english":"salad","georgian":"სალათი","pronunciation":"/ˈsæləd/","example_en":"I ordered a green salad.","example_ka":"მწვანე სალათი შევუკვეთე.","category":"food-drink","level":"beginner"},
-  {"english":"cake","georgian":"ნამცხვარი","pronunciation":"/keɪk/","example_en":"She baked a chocolate cake.","example_ka":"მან შოკოლადის ნამცხვარი გამოაცხო.","category":"food-drink","level":"beginner"},
-  {"english":"ice cream","georgian":"ნაყინი","pronunciation":"/aɪs kriːm/","example_en":"Children love ice cream.","example_ka":"ბავშვებს ნაყინი უყვართ.","category":"food-drink","level":"beginner"},
-  {"english":"chocolate","georgian":"შოკოლადი","pronunciation":"/ˈtʃɔːklət/","example_en":"Dark chocolate is healthy.","example_ka":"შავი შოკოლადი სასარგებლოა.","category":"food-drink","level":"beginner"},
-  {"english":"restaurant","georgian":"რესტორანი","pronunciation":"/ˈrɛstərɑːnt/","example_en":"Let's go to a restaurant tonight.","example_ka":"დღეს საღამოს რესტორანში წავიდეთ.","category":"food-drink","level":"beginner"},
-  {"english":"menu","georgian":"მენიუ","pronunciation":"/ˈmɛnjuː/","example_en":"Can I see the menu, please?","example_ka":"შეიძლება მენიუ ვნახო?","category":"food-drink","level":"beginner"},
-  {"english":"waiter","georgian":"მიმტანი","pronunciation":"/ˈweɪtər/","example_en":"The waiter brought our order.","example_ka":"მიმტანმა შეკვეთა მოგვიტანა.","category":"food-drink","level":"beginner"},
-  {"english":"bill","georgian":"ანგარიში","pronunciation":"/bɪl/","example_en":"Can we have the bill, please?","example_ka":"ანგარიში შეიძლება?","category":"food-drink","level":"beginner"},
-  {"english":"breakfast","georgian":"საუზმე","pronunciation":"/ˈbrɛkfəst/","example_en":"Breakfast is the most important meal.","example_ka":"საუზმე ყველაზე მნიშვნელოვანი კვებაა.","category":"food-drink","level":"beginner"},
-  {"english":"lunch","georgian":"სადილი","pronunciation":"/lʌntʃ/","example_en":"We usually have lunch at noon.","example_ka":"ჩვეულებრივ შუადღისას ვსადილობთ.","category":"food-drink","level":"beginner"},
-  {"english":"dinner","georgian":"ვახშამი","pronunciation":"/ˈdɪnər/","example_en":"What's for dinner tonight?","example_ka":"დღეს ვახშამზე რა გვაქვს?","category":"food-drink","level":"beginner"},
-  {"english":"snack","georgian":"საჭმელი","pronunciation":"/snæk/","example_en":"I need a quick snack.","example_ka":"სწრაფი საჭმელი მჭირდება.","category":"food-drink","level":"beginner"},
-  {"english":"recipe","georgian":"რეცეპტი","pronunciation":"/ˈrɛsəpi/","example_en":"Can you share the recipe?","example_ka":"რეცეპტს გამიზიარებ?","category":"food-drink","level":"beginner"},
-  {"english":"cook","georgian":"მზარეული","pronunciation":"/kʊk/","example_en":"My mother is a great cook.","example_ka":"ჩემი დედა შესანიშნავი მზარეულია.","category":"food-drink","level":"beginner"},
-  {"english":"fry","georgian":"შეწვა","pronunciation":"/fraɪ/","example_en":"Fry the onions until golden.","example_ka":"ხახვი ოქროსფრად შეწვი.","category":"food-drink","level":"beginner"},
-  {"english":"boil","georgian":"მოხარშვა","pronunciation":"/bɔɪl/","example_en":"Boil the water before adding pasta.","example_ka":"მაკარონის ჩაყრამდე წყალი მოახარშე.","category":"food-drink","level":"beginner"},
-  {"english":"bake","georgian":"გამოცხობა","pronunciation":"/beɪk/","example_en":"I love to bake cookies.","example_ka":"ნამცხვრების გამოცხობა მიყვარს.","category":"food-drink","level":"beginner"},
-  {"english":"taste","georgian":"გემო","pronunciation":"/teɪst/","example_en":"This dish has an amazing taste.","example_ka":"ამ კერძს საოცარი გემო აქვს.","category":"food-drink","level":"beginner"},
-  {"english":"delicious","georgian":"გემრიელი","pronunciation":"/dɪˈlɪʃəs/","example_en":"The food was absolutely delicious.","example_ka":"საჭმელი უკიდურესად გემრიელი იყო.","category":"food-drink","level":"beginner"},
-  {"english":"hungry","georgian":"მშიერი","pronunciation":"/ˈhʌŋɡri/","example_en":"I am very hungry.","example_ka":"ძალიან მშია.","category":"food-drink","level":"beginner"},
-  {"english":"thirsty","georgian":"მწყურვალი","pronunciation":"/ˈθɜːrsti/","example_en":"I'm thirsty, give me some water.","example_ka":"მწყურია, ცოტა წყალი მომეცი.","category":"food-drink","level":"beginner"},
-  {"english":"spicy","georgian":"ცხარე","pronunciation":"/ˈspaɪsi/","example_en":"I don't like spicy food.","example_ka":"ცხარე საჭმელი არ მიყვარს.","category":"food-drink","level":"beginner"},
-  {"english":"sweet","georgian":"ტკბილი","pronunciation":"/swiːt/","example_en":"This cake is too sweet.","example_ka":"ეს ნამცხვარი ძალიან ტკბილია.","category":"food-drink","level":"beginner"},
-  {"english":"sour","georgian":"მჟავე","pronunciation":"/ˈsaʊər/","example_en":"Lemons are very sour.","example_ka":"ლიმონი ძალიან მჟავეა.","category":"food-drink","level":"beginner"},
-  {"english":"bitter","georgian":"მწარე","pronunciation":"/ˈbɪtər/","example_en":"This coffee is too bitter.","example_ka":"ეს ყავა ძალიან მწარეა.","category":"food-drink","level":"beginner"},
-  {"english":"fresh","georgian":"ახალი","pronunciation":"/frɛʃ/","example_en":"I prefer fresh vegetables.","example_ka":"ახალ ბოსტნეულს ვამჯობინებ.","category":"food-drink","level":"beginner"},
-  {"english":"frozen","georgian":"გაყინული","pronunciation":"/ˈfroʊzən/","example_en":"We bought frozen pizza.","example_ka":"გაყინული პიცა ვიყიდეთ.","category":"food-drink","level":"beginner"},
-  {"english":"vegetable","georgian":"ბოსტნეული","pronunciation":"/ˈvɛdʒtəbəl/","example_en":"Eat more vegetables.","example_ka":"მეტი ბოსტნეული ჭამე.","category":"food-drink","level":"beginner"},
-  {"english":"fruit","georgian":"ხილი","pronunciation":"/fruːt/","example_en":"Fruit is a healthy snack.","example_ka":"ხილი ჯანსაღი საჭმელია.","category":"food-drink","level":"beginner"},
-  {"english":"mushroom","georgian":"სოკო","pronunciation":"/ˈmʌʃruːm/","example_en":"I love mushroom soup.","example_ka":"სოკოს წვნიანი მიყვარს.","category":"food-drink","level":"beginner"},
-  {"english":"bean","georgian":"ლობიო","pronunciation":"/biːn/","example_en":"Bean stew is a traditional Georgian dish.","example_ka":"ლობიო ტრადიციული ქართული კერძია.","category":"food-drink","level":"beginner"},
-  {"english":"garlic","georgian":"ნიორი","pronunciation":"/ˈɡɑːrlɪk/","example_en":"Add some garlic to the sauce.","example_ka":"სოუსში ნიორი დაამატე.","category":"food-drink","level":"beginner"},
-  {"english":"cucumber","georgian":"კიტრი","pronunciation":"/ˈkjuːkʌmbər/","example_en":"Cucumber salad is refreshing.","example_ka":"კიტრის სალათი გამაგრილებელია.","category":"food-drink","level":"beginner"},
-  {"english":"carrot","georgian":"სტაფილო","pronunciation":"/ˈkærət/","example_en":"Carrots are good for your eyes.","example_ka":"სტაფილო თვალებისთვის კარგია.","category":"food-drink","level":"beginner"},
-  {"english":"lemon","georgian":"ლიმონი","pronunciation":"/ˈlɛmən/","example_en":"Add lemon to your tea.","example_ka":"ჩაიში ლიმონი დაამატე.","category":"food-drink","level":"beginner"},
-  {"english":"watermelon","georgian":"საზამთრო","pronunciation":"/ˈwɔːtərˌmɛlən/","example_en":"Watermelon is perfect in summer.","example_ka":"საზამთრო ზაფხულში შესანიშნავია.","category":"food-drink","level":"beginner"},
-  {"english":"peach","georgian":"ატამი","pronunciation":"/piːtʃ/","example_en":"Georgian peaches are very sweet.","example_ka":"ქართული ატამი ძალიან ტკბილია.","category":"food-drink","level":"beginner"},
-  {"english":"wine","georgian":"ღვინო","pronunciation":"/waɪn/","example_en":"Georgia is known for its wine.","example_ka":"საქართველო ღვინით არის ცნობილი.","category":"food-drink","level":"beginner"},
-  {"english":"beer","georgian":"ლუდი","pronunciation":"/bɪr/","example_en":"Would you like a cold beer?","example_ka":"ცივ ლუდს ხომ არ ისურვებდი?","category":"food-drink","level":"beginner"},
-  {"english":"soda","georgian":"გაზიანი სასმელი","pronunciation":"/ˈsoʊdə/","example_en":"I don't drink soda anymore.","example_ka":"გაზიან სასმელს აღარ ვსვამ.","category":"food-drink","level":"beginner"},
-  {"english":"plate","georgian":"თეფში","pronunciation":"/pleɪt/","example_en":"Put the food on the plate.","example_ka":"საჭმელი თეფშზე დადე.","category":"food-drink","level":"beginner"},
-  {"english":"glass","georgian":"ჭიქა","pronunciation":"/ɡlæs/","example_en":"Give me a glass of water.","example_ka":"ერთი ჭიქა წყალი მომეცი.","category":"food-drink","level":"beginner"},
-  {"english":"cup","georgian":"ფინჯანი","pronunciation":"/kʌp/","example_en":"I drink three cups of coffee a day.","example_ka":"დღეში სამ ფინჯან ყავას ვსვამ.","category":"food-drink","level":"beginner"},
-  {"english":"fork","georgian":"ჩანგალი","pronunciation":"/fɔːrk/","example_en":"Use a fork to eat the salad.","example_ka":"სალათის საჭმელად ჩანგალი გამოიყენე.","category":"food-drink","level":"beginner"},
-  {"english":"knife","georgian":"დანა","pronunciation":"/naɪf/","example_en":"Be careful with the knife.","example_ka":"დანასთან ფრთხილად იყავი.","category":"food-drink","level":"beginner"},
-  {"english":"spoon","georgian":"კოვზი","pronunciation":"/spuːn/","example_en":"Stir the soup with a spoon.","example_ka":"წვნიანი კოვზით აურიე.","category":"food-drink","level":"beginner"},
-  {"english":"bowl","georgian":"თასი","pronunciation":"/boʊl/","example_en":"Pour the soup into the bowl.","example_ka":"წვნიანი თასში ჩაასხი.","category":"food-drink","level":"beginner"},
-  {"english":"bottle","georgian":"ბოთლი","pronunciation":"/ˈbɑːtəl/","example_en":"Buy a bottle of water.","example_ka":"ერთი ბოთლი წყალი იყიდე.","category":"food-drink","level":"beginner"},
-  {"english":"order","georgian":"შეკვეთა","pronunciation":"/ˈɔːrdər/","example_en":"Are you ready to order?","example_ka":"მზად ხართ შეკვეთისთვის?","category":"food-drink","level":"beginner"},
-  {"english":"tip","georgian":"ჩაის ფული","pronunciation":"/tɪp/","example_en":"We left a generous tip.","example_ka":"გულუხვი ჩაის ფული დავტოვეთ.","category":"food-drink","level":"beginner"},
-  {"english":"appetizer","georgian":"მადის აღმძვრელი","pronunciation":"/ˈæpɪtaɪzər/","example_en":"We ordered appetizers first.","example_ka":"ჯერ მადის აღმძვრელი შევუკვეთეთ.","category":"food-drink","level":"beginner"},
-  {"english":"dessert","georgian":"დესერტი","pronunciation":"/dɪˈzɜːrt/","example_en":"What would you like for dessert?","example_ka":"დესერტად რას ისურვებდით?","category":"food-drink","level":"beginner"},
-  {"english":"grill","georgian":"შეწვა ცეცხლზე","pronunciation":"/ɡrɪl/","example_en":"Let's grill some meat outside.","example_ka":"გარეთ ხორცი შევწვათ ცეცხლზე.","category":"food-drink","level":"beginner"},
-  {"english":"pasta","georgian":"მაკარონი","pronunciation":"/ˈpɑːstə/","example_en":"I cooked pasta for dinner.","example_ka":"ვახშმად მაკარონი მოვამზადე.","category":"food-drink","level":"beginner"},
-  {"english":"sandwich","georgian":"სენდვიჩი","pronunciation":"/ˈsænwɪtʃ/","example_en":"I made a sandwich for lunch.","example_ka":"სადილისთვის სენდვიჩი გავაკეთე.","category":"food-drink","level":"beginner"}
+  {
+    "english": "water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Can I have a glass of water?",
+    "example_ka": "შეიძლება ერთი ჭიქა წყალი?",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "bread",
+    "georgian": "პური",
+    "pronunciation": "/brɛd/",
+    "example_en": "I bought fresh bread from the bakery.",
+    "example_ka": "პურის სახლიდან ახალი პური ვიყიდე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "milk",
+    "georgian": "რძე",
+    "pronunciation": "/mɪlk/",
+    "example_en": "Children should drink milk every day.",
+    "example_ka": "ბავშვებმა ყოველდღე უნდა დალიონ რძე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cheese",
+    "georgian": "ყველი",
+    "pronunciation": "/tʃiːz/",
+    "example_en": "Georgian cheese is very delicious.",
+    "example_ka": "ქართული ყველი ძალიან გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "meat",
+    "georgian": "ხორცი",
+    "pronunciation": "/miːt/",
+    "example_en": "We need to buy some meat for dinner.",
+    "example_ka": "სადილისთვის ხორცი უნდა ვიყიდოთ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "chicken",
+    "georgian": "ქათამი",
+    "pronunciation": "/ˈtʃɪkɪn/",
+    "example_en": "I ordered grilled chicken.",
+    "example_ka": "შემწვარი ქათამი შევუკვეთე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "Fish is good for your health.",
+    "example_ka": "თევზი ჯანმრთელობისთვის სასარგებლოა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "egg",
+    "georgian": "კვერცხი",
+    "pronunciation": "/ɛɡ/",
+    "example_en": "I eat two eggs for breakfast.",
+    "example_ka": "საუზმეზე ორ კვერცხს ვჭამ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "rice",
+    "georgian": "ბრინჯი",
+    "pronunciation": "/raɪs/",
+    "example_en": "Rice is a staple food in Asia.",
+    "example_ka": "ბრინჯი აზიაში ძირითადი საკვებია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "potato",
+    "georgian": "კარტოფილი",
+    "pronunciation": "/pəˈteɪtoʊ/",
+    "example_en": "Fried potatoes are my favorite.",
+    "example_ka": "შემწვარი კარტოფილი ჩემი საყვარელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "tomato",
+    "georgian": "პამიდორი",
+    "pronunciation": "/təˈmeɪtoʊ/",
+    "example_en": "Add some tomatoes to the salad.",
+    "example_ka": "სალათში პამიდორი დაამატე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "onion",
+    "georgian": "ხახვი",
+    "pronunciation": "/ˈʌnjən/",
+    "example_en": "Cutting onions makes me cry.",
+    "example_ka": "ხახვის თლისას ტირილი მიწყება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "apple",
+    "georgian": "ვაშლი",
+    "pronunciation": "/ˈæpəl/",
+    "example_en": "An apple a day keeps the doctor away.",
+    "example_ka": "დღეში ერთი ვაშლი ექიმს შორს გაგიშვებს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "banana",
+    "georgian": "ბანანი",
+    "pronunciation": "/bəˈnænə/",
+    "example_en": "Bananas are rich in potassium.",
+    "example_ka": "ბანანი კალიუმით მდიდარია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "orange",
+    "georgian": "ფორთოხალი",
+    "pronunciation": "/ˈɔːrɪndʒ/",
+    "example_en": "I drink orange juice every morning.",
+    "example_ka": "ყოველ დილით ფორთოხლის წვენს ვსვამ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "grape",
+    "georgian": "ყურძენი",
+    "pronunciation": "/ɡreɪp/",
+    "example_en": "Georgia is famous for its grapes.",
+    "example_ka": "საქართველო ყურძნით არის ცნობილი.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "sugar",
+    "georgian": "შაქარი",
+    "pronunciation": "/ˈʃʊɡər/",
+    "example_en": "Do you take sugar in your tea?",
+    "example_ka": "ჩაიში შაქარს იყრი?",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "salt",
+    "georgian": "მარილი",
+    "pronunciation": "/sɔːlt/",
+    "example_en": "This soup needs more salt.",
+    "example_ka": "ამ წვნიანს მეტი მარილი სჭირდება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pepper",
+    "georgian": "წიწაკა",
+    "pronunciation": "/ˈpɛpər/",
+    "example_en": "Add some pepper to the dish.",
+    "example_ka": "კერძს ცოტა წიწაკა დაამატე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "butter",
+    "georgian": "კარაქი",
+    "pronunciation": "/ˈbʌtər/",
+    "example_en": "Spread butter on the bread.",
+    "example_ka": "პურზე კარაქი წაუსვი.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "oil",
+    "georgian": "ზეთი",
+    "pronunciation": "/ɔɪl/",
+    "example_en": "Heat the oil in a pan.",
+    "example_ka": "ტაფაში ზეთი გაახურე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "tea",
+    "georgian": "ჩაი",
+    "pronunciation": "/tiː/",
+    "example_en": "Would you like a cup of tea?",
+    "example_ka": "ჩაის ჭიქას ხომ არ ისურვებდი?",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "coffee",
+    "georgian": "ყავა",
+    "pronunciation": "/ˈkɔːfi/",
+    "example_en": "I cannot start my day without coffee.",
+    "example_ka": "ყავის გარეშე დღის დაწყება არ შემიძლია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "juice",
+    "georgian": "წვენი",
+    "pronunciation": "/dʒuːs/",
+    "example_en": "Fresh juice is better than soda.",
+    "example_ka": "ნატურალური წვენი გაზიანზე უკეთესია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "soup",
+    "georgian": "წვნიანი",
+    "pronunciation": "/suːp/",
+    "example_en": "Hot soup is perfect in winter.",
+    "example_ka": "ცხელი წვნიანი ზამთარში შესანიშნავია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "salad",
+    "georgian": "სალათი",
+    "pronunciation": "/ˈsæləd/",
+    "example_en": "I ordered a green salad.",
+    "example_ka": "მწვანე სალათი შევუკვეთე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cake",
+    "georgian": "ნამცხვარი",
+    "pronunciation": "/keɪk/",
+    "example_en": "She baked a chocolate cake.",
+    "example_ka": "მან შოკოლადის ნამცხვარი გამოაცხო.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "chocolate",
+    "georgian": "შოკოლადი",
+    "pronunciation": "/ˈtʃɔːklət/",
+    "example_en": "Dark chocolate is healthy.",
+    "example_ka": "შავი შოკოლადი სასარგებლოა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "breakfast",
+    "georgian": "საუზმე",
+    "pronunciation": "/ˈbrɛkfəst/",
+    "example_en": "Breakfast is the most important meal.",
+    "example_ka": "საუზმე ყველაზე მნიშვნელოვანი კვებაა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "lunch",
+    "georgian": "სადილი",
+    "pronunciation": "/lʌntʃ/",
+    "example_en": "We usually have lunch at noon.",
+    "example_ka": "ჩვეულებრივ შუადღისას ვსადილობთ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "dinner",
+    "georgian": "ვახშამი",
+    "pronunciation": "/ˈdɪnər/",
+    "example_en": "What's for dinner tonight?",
+    "example_ka": "დღეს ვახშამზე რა გვაქვს?",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "hungry",
+    "georgian": "მშიერი",
+    "pronunciation": "/ˈhʌŋɡri/",
+    "example_en": "I am very hungry.",
+    "example_ka": "ძალიან მშია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "thirsty",
+    "georgian": "მწყურვალი",
+    "pronunciation": "/ˈθɜːrsti/",
+    "example_en": "I'm thirsty, give me some water.",
+    "example_ka": "მწყურია, ცოტა წყალი მომეცი.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "spicy",
+    "georgian": "ცხარე",
+    "pronunciation": "/ˈspaɪsi/",
+    "example_en": "I don't like spicy food.",
+    "example_ka": "ცხარე საჭმელი არ მიყვარს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "sweet",
+    "georgian": "ტკბილი",
+    "pronunciation": "/swiːt/",
+    "example_en": "This cake is too sweet.",
+    "example_ka": "ეს ნამცხვარი ძალიან ტკბილია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "sour",
+    "georgian": "მჟავე",
+    "pronunciation": "/ˈsaʊər/",
+    "example_en": "Lemons are very sour.",
+    "example_ka": "ლიმონი ძალიან მჟავეა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "bitter",
+    "georgian": "მწარე",
+    "pronunciation": "/ˈbɪtər/",
+    "example_en": "This coffee is too bitter.",
+    "example_ka": "ეს ყავა ძალიან მწარეა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "fresh",
+    "georgian": "ახალი",
+    "pronunciation": "/frɛʃ/",
+    "example_en": "I prefer fresh vegetables.",
+    "example_ka": "ახალ ბოსტნეულს ვამჯობინებ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "vegetable",
+    "georgian": "ბოსტნეული",
+    "pronunciation": "/ˈvɛdʒtəbəl/",
+    "example_en": "Eat more vegetables.",
+    "example_ka": "მეტი ბოსტნეული ჭამე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "fruit",
+    "georgian": "ხილი",
+    "pronunciation": "/fruːt/",
+    "example_en": "Fruit is a healthy snack.",
+    "example_ka": "ხილი ჯანსაღი საჭმელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "mushroom",
+    "georgian": "სოკო",
+    "pronunciation": "/ˈmʌʃruːm/",
+    "example_en": "I love mushroom soup.",
+    "example_ka": "სოკოს წვნიანი მიყვარს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "garlic",
+    "georgian": "ნიორი",
+    "pronunciation": "/ˈɡɑːrlɪk/",
+    "example_en": "Add some garlic to the sauce.",
+    "example_ka": "სოუსში ნიორი დაამატე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cucumber",
+    "georgian": "კიტრი",
+    "pronunciation": "/ˈkjuːkʌmbər/",
+    "example_en": "Cucumber salad is refreshing.",
+    "example_ka": "კიტრის სალათი გამაგრილებელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "carrot",
+    "georgian": "სტაფილო",
+    "pronunciation": "/ˈkærət/",
+    "example_en": "Carrots are good for your eyes.",
+    "example_ka": "სტაფილო თვალებისთვის კარგია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "lemon",
+    "georgian": "ლიმონი",
+    "pronunciation": "/ˈlɛmən/",
+    "example_en": "Add lemon to your tea.",
+    "example_ka": "ჩაიში ლიმონი დაამატე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "watermelon",
+    "georgian": "საზამთრო",
+    "pronunciation": "/ˈwɔːtərˌmɛlən/",
+    "example_en": "Watermelon is perfect in summer.",
+    "example_ka": "საზამთრო ზაფხულში შესანიშნავია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "peach",
+    "georgian": "ატამი",
+    "pronunciation": "/piːtʃ/",
+    "example_en": "Georgian peaches are very sweet.",
+    "example_ka": "ქართული ატამი ძალიან ტკბილია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "wine",
+    "georgian": "ღვინო",
+    "pronunciation": "/waɪn/",
+    "example_en": "Georgia is known for its wine.",
+    "example_ka": "საქართველო ღვინით არის ცნობილი.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "beer",
+    "georgian": "ლუდი",
+    "pronunciation": "/bɪr/",
+    "example_en": "Would you like a cold beer?",
+    "example_ka": "ცივ ლუდს ხომ არ ისურვებდი?",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pasta",
+    "georgian": "მაკარონი",
+    "pronunciation": "/ˈpɑːstə/",
+    "example_en": "I cooked pasta for dinner.",
+    "example_ka": "ვახშმად მაკარონი მოვამზადე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "honey",
+    "georgian": "თაფლი",
+    "pronunciation": "/ˈhʌni/",
+    "example_en": "I add honey to my tea.",
+    "example_ka": "ჩაიში თაფლს ვამატებ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "yogurt",
+    "georgian": "იოგურტი",
+    "pronunciation": "/ˈjoʊɡərt/",
+    "example_en": "Greek yogurt is very healthy.",
+    "example_ka": "ბერძნული იოგურტი ძალიან სასარგებლოა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cereal",
+    "georgian": "ცერეალი",
+    "pronunciation": "/ˈsɪriəl/",
+    "example_en": "I eat cereal for breakfast.",
+    "example_ka": "საუზმეზე ცერეალს ვჭამ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cookie",
+    "georgian": "ნამცხვარი",
+    "pronunciation": "/ˈkʊki/",
+    "example_en": "She baked chocolate cookies.",
+    "example_ka": "მან შოკოლადის ნამცხვრები გამოაცხო.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pizza",
+    "georgian": "პიცა",
+    "pronunciation": "/ˈpiːtsə/",
+    "example_en": "Let's order pizza for lunch.",
+    "example_ka": "სადილისთვის პიცა შევუკვეთოთ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "sandwich",
+    "georgian": "სენდვიჩი",
+    "pronunciation": "/ˈsænwɪtʃ/",
+    "example_en": "I made a sandwich for lunch.",
+    "example_ka": "სადილისთვის სენდვიჩი გავაკეთე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "hamburger",
+    "georgian": "ჰამბურგერი",
+    "pronunciation": "/ˈhæmbərɡər/",
+    "example_en": "He ordered a hamburger and fries.",
+    "example_ka": "მან ჰამბურგერი და კარტოფილი შეუკვეთა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "hotdog",
+    "georgian": "ჰოტდოგი",
+    "pronunciation": "/ˈhɒtdɒɡ/",
+    "example_en": "I bought a hotdog from the stand.",
+    "example_ka": "სადგურიდან ჰოტდოგი ვიყიდე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "sausage",
+    "georgian": "ძეხვი",
+    "pronunciation": "/ˈsɔːsɪdʒ/",
+    "example_en": "We grilled sausages for dinner.",
+    "example_ka": "ვახშმისთვის ძეხვები შევწვით.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "bacon",
+    "georgian": "ბეკონი",
+    "pronunciation": "/ˈbeɪkən/",
+    "example_en": "I like bacon with eggs.",
+    "example_ka": "ბეკონი კვერცხებთან მიყვარს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "ham",
+    "georgian": "ლორი",
+    "pronunciation": "/hæm/",
+    "example_en": "Put some ham on the sandwich.",
+    "example_ka": "სენდვიჩზე ლორი დადე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "beef",
+    "georgian": "ძროხის ხორცი",
+    "pronunciation": "/biːf/",
+    "example_en": "This beef is very tender.",
+    "example_ka": "ეს ძროხის ხორცი ძალიან ნაზია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pork",
+    "georgian": "ღორის ხორცი",
+    "pronunciation": "/pɔːrk/",
+    "example_en": "We don't eat pork.",
+    "example_ka": "ღორის ხორცს არ ვჭამთ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "lamb",
+    "georgian": "ცხვრის ხორცი",
+    "pronunciation": "/læm/",
+    "example_en": "Roasted lamb is delicious.",
+    "example_ka": "შემწვარი ცხვრის ხორცი გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "shrimp",
+    "georgian": "კრევეტი",
+    "pronunciation": "/ʃrɪmp/",
+    "example_en": "I ordered shrimp salad.",
+    "example_ka": "კრევეტის სალათი შევუკვეთე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "crab",
+    "georgian": "კიბორჩხალა",
+    "pronunciation": "/kræb/",
+    "example_en": "Crab is expensive but tasty.",
+    "example_ka": "კიბორჩხალა ძვირია, მაგრამ გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "salmon",
+    "georgian": "ლოსოსი",
+    "pronunciation": "/ˈsæmən/",
+    "example_en": "Grilled salmon is healthy.",
+    "example_ka": "შემწვარი ლოსოსი ჯანსაღია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "tuna",
+    "georgian": "ტუნა",
+    "pronunciation": "/ˈtuːnə/",
+    "example_en": "I made a tuna sandwich.",
+    "example_ka": "ტუნის სენდვიჩი გავაკეთე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "noodles",
+    "georgian": "ნუდლსი",
+    "pronunciation": "/ˈnuːdəlz/",
+    "example_en": "Chicken noodles are comfort food.",
+    "example_ka": "ქათმის ნუდლსი მშვიდობის საკვებია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "omelette",
+    "georgian": "ომლეტი",
+    "pronunciation": "/ˈɒmlət/",
+    "example_en": "I made a cheese omelette.",
+    "example_ka": "ყველის ომლეტი გავაკეთე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pancake",
+    "georgian": "ბლინი",
+    "pronunciation": "/ˈpænkeɪk/",
+    "example_en": "Sunday pancakes are a tradition.",
+    "example_ka": "კვირის ბლინები ტრადიციაა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "waffle",
+    "georgian": "ვაფლი",
+    "pronunciation": "/ˈwæfəl/",
+    "example_en": "Belgian waffles are the best.",
+    "example_ka": "ბელგიური ვაფლები საუკეთესოა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "toast",
+    "georgian": "ტოსტი",
+    "pronunciation": "/toʊst/",
+    "example_en": "I prefer wheat toast.",
+    "example_ka": "ხორბლის ტოსტს ვამჯობინებ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "jam",
+    "georgian": "მურაბა",
+    "pronunciation": "/dʒæm/",
+    "example_en": "Strawberry jam is my favorite.",
+    "example_ka": "მარწყვის მურაბა ჩემი საყვარელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "jelly",
+    "georgian": "ჟელე",
+    "pronunciation": "/ˈdʒeli/",
+    "example_en": "Grape jelly goes well with bread.",
+    "example_ka": "ყურძნის ჟელე პურთან კარგად მიდის.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "peanut",
+    "georgian": "არაქისი",
+    "pronunciation": "/ˈpiːnʌt/",
+    "example_en": "I'm allergic to peanuts.",
+    "example_ka": "არაქისზე ალერგია მაქვს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "walnut",
+    "georgian": "კაკალი",
+    "pronunciation": "/ˈwɔːlnʌt/",
+    "example_en": "Walnuts are good for the brain.",
+    "example_ka": "კაკალი ტვინისთვის კარგია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "almond",
+    "georgian": "ნუში",
+    "pronunciation": "/ˈɑːmənd/",
+    "example_en": "Almonds are a healthy snack.",
+    "example_ka": "ნუში ჯანსაღი საკვებია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "coconut",
+    "georgian": "ქოქოსი",
+    "pronunciation": "/ˈkoʊkənʌt/",
+    "example_en": "Coconut water is refreshing.",
+    "example_ka": "ქოქოსის წყალი გამაგრილებელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "strawberry",
+    "georgian": "მარწყვი",
+    "pronunciation": "/ˈstrɔːberi/",
+    "example_en": "Fresh strawberries are delicious.",
+    "example_ka": "ახალი მარწყვი გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "blueberry",
+    "georgian": "ლურჯი მოცხარი",
+    "pronunciation": "/ˈbluːberi/",
+    "example_en": "Blueberries are rich in vitamins.",
+    "example_ka": "ლურჯი მოცხარი ვიტამინებით მდიდარია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cherry",
+    "georgian": "ალუბალი",
+    "pronunciation": "/ˈtʃeri/",
+    "example_en": "Cherry pie is my favorite dessert.",
+    "example_ka": "ალუბლის ღვეზელი ჩემი საყვარელი დესერტია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pineapple",
+    "georgian": "ანანასი",
+    "pronunciation": "/ˈpaɪnæpəl/",
+    "example_en": "Pineapple juice is tropical.",
+    "example_ka": "ანანასის წვენი ტროპიკულია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "mango",
+    "georgian": "მანგო",
+    "pronunciation": "/ˈmæŋɡoʊ/",
+    "example_en": "Ripe mango is very sweet.",
+    "example_ka": "მწიფე მანგო ძალიან ტკბილია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "avocado",
+    "georgian": "ავოკადო",
+    "pronunciation": "/ˌævəˈkɑːdoʊ/",
+    "example_en": "Avocado toast is popular now.",
+    "example_ka": "ავოკადოს ტოსტი ახლა პოპულარულია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "kiwi",
+    "georgian": "კივი",
+    "pronunciation": "/ˈkiːwi/",
+    "example_en": "Kiwi fruit is full of vitamin C.",
+    "example_ka": "კივი ვიტამინ C-ით სავსეა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "spinach",
+    "georgian": "ისპანახი",
+    "pronunciation": "/ˈspɪnɪtʃ/",
+    "example_en": "Spinach is rich in iron.",
+    "example_ka": "ისპანახი რკინით მდიდარია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "lettuce",
+    "georgian": "სალათის ფოთოლი",
+    "pronunciation": "/ˈletɪs/",
+    "example_en": "Add lettuce to the burger.",
+    "example_ka": "ბურგერს სალათის ფოთოლი დაამატე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cabbage",
+    "georgian": "კომბოსტო",
+    "pronunciation": "/ˈkæbɪdʒ/",
+    "example_en": "Cabbage soup is healthy.",
+    "example_ka": "კომბოსტოს წვნიანი ჯანსაღია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "broccoli",
+    "georgian": "ბროკოლი",
+    "pronunciation": "/ˈbrɑːkəli/",
+    "example_en": "Children often dislike broccoli.",
+    "example_ka": "ბავშვებს ხშირად ბროკოლი არ მოსწონთ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cauliflower",
+    "georgian": "ყვითელი კომბოსტო",
+    "pronunciation": "/ˈkɔːlɪflaʊər/",
+    "example_en": "Roasted cauliflower is delicious.",
+    "example_ka": "შემწვარი ყვითელი კომბოსტო გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "eggplant",
+    "georgian": "ბადრიჯანი",
+    "pronunciation": "/ˈeɡplænt/",
+    "example_en": "Grilled eggplant is tasty.",
+    "example_ka": "შემწვარი ბადრიჯანი გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "corn",
+    "georgian": "სიმინდი",
+    "pronunciation": "/kɔːrn/",
+    "example_en": "Sweet corn is summer food.",
+    "example_ka": "ტკბილი სიმინდი ზაფხულის საკვებია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "peas",
+    "georgian": "ბარდა",
+    "pronunciation": "/piːz/",
+    "example_en": "Green peas are nutritious.",
+    "example_ka": "მწვანე ბარდა მაკვებელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "beans",
+    "georgian": "ლობიო",
+    "pronunciation": "/biːnz/",
+    "example_en": "Black beans are protein-rich.",
+    "example_ka": "შავი ლობიო ცილით მდიდარია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "radish",
+    "georgian": "ყიტი",
+    "pronunciation": "/ˈrædɪʃ/",
+    "example_en": "Radishes add crunch to salads.",
+    "example_ka": "ყიტი სალათებს ხრაშუნას ამატებს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "celery",
+    "georgian": "ნიახური",
+    "pronunciation": "/ˈseləri/",
+    "example_en": "Celery is low in calories.",
+    "example_ka": "ნიახური ნაკლებკალორიანია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "asparagus",
+    "georgian": "სპარჟა",
+    "pronunciation": "/əˈspærəɡəs/",
+    "example_en": "Asparagus pairs well with fish.",
+    "example_ka": "სპარჟა თევზთან კარგად მიდის.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "artichoke",
+    "georgian": "არტიშოკი",
+    "pronunciation": "/ˈɑːrtɪtʃoʊk/",
+    "example_en": "Artichoke hearts are tender.",
+    "example_ka": "არტიშოკის გულები ნაზია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "zucchini",
+    "georgian": "კაბაჩოკი",
+    "pronunciation": "/zuˈkiːni/",
+    "example_en": "Zucchini bread is surprisingly good.",
+    "example_ka": "კაბაჩოკის პური მოულოდნელად გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pumpkin",
+    "georgian": "გოგრა",
+    "pronunciation": "/ˈpʌmpkɪn/",
+    "example_en": "Pumpkin pie is autumn tradition.",
+    "example_ka": "გოგრის ღვეზელი შემოდგომის ტრადიციაა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "squash",
+    "georgian": "კაბაჩოკი",
+    "pronunciation": "/skwɑːʃ/",
+    "example_en": "Butternut squash makes good soup.",
+    "example_ka": "კაბაჩოკისგან კარგი წვნიანი მზადდება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "turnip",
+    "georgian": "ნაბათი",
+    "pronunciation": "/ˈtɜːrnɪp/",
+    "example_en": "Turnips are root vegetables.",
+    "example_ka": "ნაბათი ფესვის ბოსტნეულია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "parsley",
+    "georgian": "ოხრახუში",
+    "pronunciation": "/ˈpɑːrsli/",
+    "example_en": "Fresh parsley adds flavor.",
+    "example_ka": "ახალი ოხრახუში გემოს ამატებს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "basil",
+    "georgian": "ბასილიკი",
+    "pronunciation": "/ˈbeɪzəl/",
+    "example_en": "Basil is essential for pasta sauce.",
+    "example_ka": "ბასილიკი მაკარონის სოუსისთვის აუცილებელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "mint",
+    "georgian": "პიტნა",
+    "pronunciation": "/mɪnt/",
+    "example_en": "Mint tea is refreshing.",
+    "example_ka": "პიტნის ჩაი გამაგრილებელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "oregano",
+    "georgian": "ორეგანო",
+    "pronunciation": "/əˈreɡənoʊ/",
+    "example_en": "Oregano is great on pizza.",
+    "example_ka": "ორეგანო პიცაზე შესანიშნავია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "thyme",
+    "georgian": "ძიძილა",
+    "pronunciation": "/taɪm/",
+    "example_en": "Thyme adds earthy flavor.",
+    "example_ka": "ძიძილა მიწიერ გემოს ამატებს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "rosemary",
+    "georgian": "ძირღვია",
+    "pronunciation": "/ˈroʊzmeri/",
+    "example_en": "Rosemary goes well with lamb.",
+    "example_ka": "ძირღვია კარგად მიდის ცხვრის ხორცთან.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cinnamon",
+    "georgian": "დარიჩინი",
+    "pronunciation": "/ˈsɪnəmən/",
+    "example_en": "Cinnamon makes desserts aromatic.",
+    "example_ka": "დარიჩინი დესერტებს არომატულს ხდის.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "ginger",
+    "georgian": "ზანზილახა",
+    "pronunciation": "/ˈdʒɪndʒər/",
+    "example_en": "Ginger tea helps with nausea.",
+    "example_ka": "ზანზილახას ჩაი გულისრევის დროს ეხმარება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "vanilla",
+    "georgian": "ვანილი",
+    "pronunciation": "/vəˈnɪlə/",
+    "example_en": "Vanilla ice cream is classic.",
+    "example_ka": "ვანილის ნაყინი კლასიკურია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "mustard",
+    "georgian": "მდოგვი",
+    "pronunciation": "/ˈmʌstərd/",
+    "example_en": "Yellow mustard goes on hotdogs.",
+    "example_ka": "ყვითელი მდოგვი ჰოტდოგზე დაყრია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "ketchup",
+    "georgian": "კეტჩუპი",
+    "pronunciation": "/ˈketʃəp/",
+    "example_en": "French fries taste good with ketchup.",
+    "example_ka": "ფრანგული კარტოფილი კეტჩუპთან გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "mayonnaise",
+    "georgian": "მაიონეზი",
+    "pronunciation": "/ˈmeɪəneɪz/",
+    "example_en": "Mayonnaise makes sandwiches creamy.",
+    "example_ka": "მაიონეზი სენდვიჩებს კრემისფერს ხდის.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "vinegar",
+    "georgian": "ძმარი",
+    "pronunciation": "/ˈvɪnɪɡər/",
+    "example_en": "Vinegar is used in salad dressing.",
+    "example_ka": "ძმარი სალათის სოუსში გამოიყენება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "soy",
+    "georgian": "სოია",
+    "pronunciation": "/sɔɪ/",
+    "example_en": "Soy sauce is popular in Asia.",
+    "example_ka": "სოიას სოუსი აზიაში პოპულარულია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "flour",
+    "georgian": "ფქვილი",
+    "pronunciation": "/ˈflaʊər/",
+    "example_en": "Flour is needed for baking bread.",
+    "example_ka": "პურის გამოცხობისთვის ფქვილია საჭირო.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "oats",
+    "georgian": "შვრია",
+    "pronunciation": "/oʊts/",
+    "example_en": "Oats are healthy for breakfast.",
+    "example_ka": "შვრია საუზმისთვის ჯანსაღია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "barley",
+    "georgian": "ქერი",
+    "pronunciation": "/ˈbɑːrli/",
+    "example_en": "Barley soup is nutritious.",
+    "example_ka": "ქერის წვნიანი მკვებავია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "wheat",
+    "georgian": "ხორბალი",
+    "pronunciation": "/wiːt/",
+    "example_en": "Wheat is used to make bread.",
+    "example_ka": "ხორბალი პურის დასამზადებლად გამოიყენება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "quinoa",
+    "georgian": "კინოა",
+    "pronunciation": "/ˈkiːnoʊə/",
+    "example_en": "Quinoa is a superfood grain.",
+    "example_ka": "კინოა სუპერფუდის მარცვალია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "tofu",
+    "georgian": "ტოფუ",
+    "pronunciation": "/ˈtoʊfuː/",
+    "example_en": "Tofu is a good protein source.",
+    "example_ka": "ტოფუ კარგი ცილის წყაროა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "tempeh",
+    "georgian": "ტემპე",
+    "pronunciation": "/ˈtempeɪ/",
+    "example_en": "Tempeh is fermented soybean food.",
+    "example_ka": "ტემპე ფერმენტირებული სოიას საკვებია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "hummus",
+    "georgian": "ჰუმუსი",
+    "pronunciation": "/ˈhʊməs/",
+    "example_en": "Hummus is made from chickpeas.",
+    "example_ka": "ჰუმუსი მუხუდოსგან მზადდება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "chickpeas",
+    "georgian": "მუხუდო",
+    "pronunciation": "/ˈtʃɪkpiːz/",
+    "example_en": "Chickpeas are high in protein.",
+    "example_ka": "მუხუდო ცილით მდიდარია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "lentils",
+    "georgian": "ოსპი",
+    "pronunciation": "/ˈlentəlz/",
+    "example_en": "Red lentils cook quickly.",
+    "example_ka": "წითელი ოსპი სწრაფად იხარშება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "sprouts",
+    "georgian": "ნაშთები",
+    "pronunciation": "/spraʊts/",
+    "example_en": "Bean sprouts add crunch to stir-fry.",
+    "example_ka": "ლობიოს ნაშთები სტირფრაის ხრაშუნას ამატებს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "seaweed",
+    "georgian": "ზღვის მცენარე",
+    "pronunciation": "/ˈsiːwiːd/",
+    "example_en": "Seaweed is used in sushi.",
+    "example_ka": "ზღვის მცენარე სუშიში გამოიყენება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "olives",
+    "georgian": "ზეთისხილი",
+    "pronunciation": "/ˈɑːlɪvz/",
+    "example_en": "Greek olives are very flavorful.",
+    "example_ka": "ბერძნული ზეთისხილი ძალიან გემოვანია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pickles",
+    "georgian": "მჟავინჯი",
+    "pronunciation": "/ˈpɪkəlz/",
+    "example_en": "Dill pickles go well with burgers.",
+    "example_ka": "კამის მჟავინჯი ბურგერებთან კარგად მიდის.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "relish",
+    "georgian": "რელიში",
+    "pronunciation": "/ˈrelɪʃ/",
+    "example_en": "Sweet relish tops the hotdog.",
+    "example_ka": "ტკბილი რელიში ჰოტდოგზე იდება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "syrup",
+    "georgian": "სიროფი",
+    "pronunciation": "/ˈsɪrəp/",
+    "example_en": "Maple syrup goes on pancakes.",
+    "example_ka": "ნაძვის სიროფი ბლინებზე იყრება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "molasses",
+    "georgian": "მოლასა",
+    "pronunciation": "/məˈlæsəz/",
+    "example_en": "Molasses is used in baking.",
+    "example_ka": "მოლასა ცხობაში გამოიყენება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "caramel",
+    "georgian": "კარამელი",
+    "pronunciation": "/ˈkærəməl/",
+    "example_en": "Caramel sauce is sweet and sticky.",
+    "example_ka": "კარამელის სოუსი ტკბილი და წებოვანია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "marshmallow",
+    "georgian": "მარშმელოუ",
+    "pronunciation": "/ˈmɑːrʃmeloʊ/",
+    "example_en": "Roasted marshmallows are camping tradition.",
+    "example_ka": "შემწვარი მარშმელოუ კემპინგის ტრადიციაა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "gum",
+    "georgian": "რეზინი",
+    "pronunciation": "/ɡʌm/",
+    "example_en": "Chewing gum freshens breath.",
+    "example_ka": "რეზინი ამგზნები ამგზნები სუნთქვას.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "candy",
+    "georgian": "ნამცხვარი",
+    "pronunciation": "/ˈkændi/",
+    "example_en": "Too much candy is bad for teeth.",
+    "example_ka": "ძალიან ბევრი ნამცხვარი კბილებისთვის ვნებელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "popcorn",
+    "georgian": "პოპკორნი",
+    "pronunciation": "/ˈpɑːpkɔːrn/",
+    "example_en": "Popcorn is a popular movie snack.",
+    "example_ka": "პოპკორნი პოპულარული კინოსნაკია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pretzels",
+    "georgian": "პრეცელი",
+    "pronunciation": "/ˈpretsəlz/",
+    "example_en": "Soft pretzels taste great with mustard.",
+    "example_ka": "რბილი პრეცელი მდოგვთან გემრიელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "crackers",
+    "georgian": "კრაკერი",
+    "pronunciation": "/ˈkrækərz/",
+    "example_en": "Crackers go well with cheese.",
+    "example_ka": "კრაკერი ყველთან კარგად მიდის.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "chips",
+    "georgian": "ჩიფსი",
+    "pronunciation": "/tʃɪps/",
+    "example_en": "Potato chips are crispy and salty.",
+    "example_ka": "კარტოფილის ჩიფსი ხრაშუნა და მარილიანია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "nachos",
+    "georgian": "ნაჩოსი",
+    "pronunciation": "/ˈnætʃoʊz/",
+    "example_en": "Nachos are topped with melted cheese.",
+    "example_ka": "ნაჩოსი გამდნარი ყველით არის დაფარული.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "dip",
+    "georgian": "დიპი",
+    "pronunciation": "/dɪp/",
+    "example_en": "Ranch dip goes with vegetables.",
+    "example_ka": "რანჩ დიპი ბოსტნეულთან მიდის.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "gravy",
+    "georgian": "გრეივი",
+    "pronunciation": "/ˈɡreɪvi/",
+    "example_en": "Pour gravy over the mashed potatoes.",
+    "example_ka": "ხილტერს გრეივი გადაასხი.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "broth",
+    "georgian": "ბულიონი",
+    "pronunciation": "/brɔːθ/",
+    "example_en": "Chicken broth is comforting when sick.",
+    "example_ka": "ქათმის ბულიონი ავადობისას მშვიდობს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "stock",
+    "georgian": "ბულიონი",
+    "pronunciation": "/stɑːk/",
+    "example_en": "Vegetable stock adds flavor to rice.",
+    "example_ka": "ბოსტნეულის ბულიონი ბრინჯს გემოს ამატებს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "appetizer",
+    "georgian": "წინამღდევი",
+    "pronunciation": "/ˈæpɪtaɪzər/",
+    "example_en": "We ordered an appetizer first.",
+    "example_ka": "ჯერ წინამღდევი შევუკვეთეთ.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "beverage",
+    "georgian": "სასმელი",
+    "pronunciation": "/ˈbevərɪdʒ/",
+    "example_en": "What beverage would you like?",
+    "example_ka": "რა სასმელი გინდა?",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "biscuit",
+    "georgian": "ბისკვიტი",
+    "pronunciation": "/ˈbɪskɪt/",
+    "example_en": "She ate a biscuit with her tea.",
+    "example_ka": "ჩაისთან ბისკვიტი შეჭამა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "brownie",
+    "georgian": "ბრაუნი",
+    "pronunciation": "/ˈbraʊni/",
+    "example_en": "The chocolate brownie was delicious.",
+    "example_ka": "შოკოლადის ბრაუნი გემრიელი იყო.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "burrito",
+    "georgian": "ბურიტო",
+    "pronunciation": "/bʊˈriːtoʊ/",
+    "example_en": "I had a burrito for lunch.",
+    "example_ka": "სადილად ბურიტო ვჭამე.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "cashew",
+    "georgian": "კეშიუ",
+    "pronunciation": "/ˈkæʃuː/",
+    "example_en": "Cashew nuts are tasty.",
+    "example_ka": "კეშიუს თხილი გემრიელია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "clam",
+    "georgian": "მიდია",
+    "pronunciation": "/klæm/",
+    "example_en": "Clam chowder is popular.",
+    "example_ka": "მიდიის წვნიანი პოპულარულია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "cocoa",
+    "georgian": "კაკაო",
+    "pronunciation": "/ˈkoʊkoʊ/",
+    "example_en": "Hot cocoa warms you up.",
+    "example_ka": "ცხელი კაკაო გათბობს.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "cranberry",
+    "georgian": "ჟოლო",
+    "pronunciation": "/ˈkrænberi/",
+    "example_en": "Cranberry juice is tart.",
+    "example_ka": "ჟოლოს წვენი მჟავეა.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "croissant",
+    "georgian": "კრუასანი",
+    "pronunciation": "/krwɑːˈsɑːn/",
+    "example_en": "I had a croissant for breakfast.",
+    "example_ka": "საუზმეზე კრუასანი ვჭამე.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "custard",
+    "georgian": "კრემი",
+    "pronunciation": "/ˈkʌstərd/",
+    "example_en": "The custard was smooth and sweet.",
+    "example_ka": "კრემი გლუვი და ტკბილი იყო.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "doughnut",
+    "georgian": "დონატი",
+    "pronunciation": "/ˈdoʊnʌt/",
+    "example_en": "She bought a glazed doughnut.",
+    "example_ka": "მან მოჭიქული დონატი იყიდა.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "dumpling",
+    "georgian": "ხინკალი",
+    "pronunciation": "/ˈdʌmplɪŋ/",
+    "example_en": "Georgian dumplings are famous.",
+    "example_ka": "ქართული ხინკალი ცნობილია.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "espresso",
+    "georgian": "ესპრესო",
+    "pronunciation": "/eˈspresoʊ/",
+    "example_en": "I need a strong espresso.",
+    "example_ka": "ძლიერი ესპრესო მჭირდება.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "fig",
+    "georgian": "ლეღვი",
+    "pronunciation": "/fɪɡ/",
+    "example_en": "Figs are sweet and soft.",
+    "example_ka": "ლეღვი ტკბილი და რბილია.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "fillet",
+    "georgian": "ფილე",
+    "pronunciation": "/fɪˈleɪ/",
+    "example_en": "I ordered a salmon fillet.",
+    "example_ka": "ორაგულის ფილე შევუკვეთე.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "fondue",
+    "georgian": "ფონდიუ",
+    "pronunciation": "/fɒnˈduː/",
+    "example_en": "Cheese fondue is Swiss.",
+    "example_ka": "ყველის ფონდიუ შვეიცარულია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "frosting",
+    "georgian": "მინანქარი",
+    "pronunciation": "/ˈfrɒstɪŋ/",
+    "example_en": "The cake has pink frosting.",
+    "example_ka": "ტორტს ვარდისფერი მინანქარი აქვს.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "gluten",
+    "georgian": "გლუტენი",
+    "pronunciation": "/ˈɡluːtn/",
+    "example_en": "She avoids gluten.",
+    "example_ka": "ის გლუტენს ერიდება.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "granola",
+    "georgian": "გრანოლა",
+    "pronunciation": "/ɡrəˈnoʊlə/",
+    "example_en": "I eat granola for breakfast.",
+    "example_ka": "საუზმეზე გრანოლას ვჭამ.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "guacamole",
+    "georgian": "გუაკამოლე",
+    "pronunciation": "/ˌɡwɑːkəˈmoʊli/",
+    "example_en": "The guacamole is fresh.",
+    "example_ka": "გუაკამოლე ახალია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "hazelnut",
+    "georgian": "თხილი",
+    "pronunciation": "/ˈheɪzlnʌt/",
+    "example_en": "Hazelnut chocolate is my favorite.",
+    "example_ka": "თხილის შოკოლადი ჩემი საყვარელია.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "herb",
+    "georgian": "მწვანილი",
+    "pronunciation": "/hɜːrb/",
+    "example_en": "Fresh herbs add flavor.",
+    "example_ka": "ახალი მწვანილი გემოს მატებს.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "ingredient",
+    "georgian": "ინგრედიენტი",
+    "pronunciation": "/ɪnˈɡriːdiənt/",
+    "example_en": "List all the ingredients.",
+    "example_ka": "ყველა ინგრედიენტი ჩამოწერე.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "latte",
+    "georgian": "ლატე",
+    "pronunciation": "/ˈlɑːteɪ/",
+    "example_en": "I ordered a vanilla latte.",
+    "example_ka": "ვანილის ლატე შევუკვეთე.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "leftovers",
+    "georgian": "ნარჩენები",
+    "pronunciation": "/ˈleftˌoʊvərz/",
+    "example_en": "We ate leftovers for dinner.",
+    "example_ka": "სადილად ნარჩენები შევჭამეთ.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "lemonade",
+    "georgian": "ლიმონათი",
+    "pronunciation": "/ˌleməˈneɪd/",
+    "example_en": "Cold lemonade is refreshing.",
+    "example_ka": "ცივი ლიმონათი გამაგრილებელია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "lime",
+    "georgian": "ლაიმი",
+    "pronunciation": "/laɪm/",
+    "example_en": "Add lime to the drink.",
+    "example_ka": "სასმელს ლაიმი დაუმატე.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "lobster",
+    "georgian": "ლობსტერი",
+    "pronunciation": "/ˈlɒbstər/",
+    "example_en": "Lobster is expensive.",
+    "example_ka": "ლობსტერი ძვირია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "macaroni",
+    "georgian": "მაკარონი",
+    "pronunciation": "/ˌmækəˈroʊni/",
+    "example_en": "Kids love macaroni.",
+    "example_ka": "ბავშვებს მაკარონი უყვართ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "marinade",
+    "georgian": "მარინადი",
+    "pronunciation": "/ˌmærɪˈneɪd/",
+    "example_en": "The marinade adds flavor.",
+    "example_ka": "მარინადი გემოს მატებს.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "melon",
+    "georgian": "ნესვი",
+    "pronunciation": "/ˈmelən/",
+    "example_en": "Melon is sweet in summer.",
+    "example_ka": "ნესვი ზაფხულში ტკბილია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "muffin",
+    "georgian": "მაფინი",
+    "pronunciation": "/ˈmʌfɪn/",
+    "example_en": "She baked blueberry muffins.",
+    "example_ka": "მან მოცვის მაფინები გამოაცხო.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "mussel",
+    "georgian": "მიდია",
+    "pronunciation": "/ˈmʌsl/",
+    "example_en": "Mussels are a seafood delicacy.",
+    "example_ka": "მიდია ზღვის პროდუქტების დელიკატესია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "nutmeg",
+    "georgian": "ჯავზი",
+    "pronunciation": "/ˈnʌtmeɡ/",
+    "example_en": "Add a pinch of nutmeg.",
+    "example_ka": "ცოტა ჯავზი დაამატე.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "oyster",
+    "georgian": "ხამანწკა",
+    "pronunciation": "/ˈɔɪstər/",
+    "example_en": "Oysters are eaten raw.",
+    "example_ka": "ხამანწკა უმად იჭმება.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "paprika",
+    "georgian": "პაპრიკა",
+    "pronunciation": "/pəˈpriːkə/",
+    "example_en": "Sprinkle paprika on the dish.",
+    "example_ka": "კერძს პაპრიკა მოაყარე.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "parfait",
+    "georgian": "პარფე",
+    "pronunciation": "/pɑːrˈfeɪ/",
+    "example_en": "The yogurt parfait looks delicious.",
+    "example_ka": "იოგურტის პარფე გემრიელად გამოიყურება.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "pastry",
+    "georgian": "ცომეული",
+    "pronunciation": "/ˈpeɪstri/",
+    "example_en": "French pastries are famous.",
+    "example_ka": "ფრანგული ცომეული ცნობილია.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "pear",
+    "georgian": "მსხალი",
+    "pronunciation": "/peər/",
+    "example_en": "Pears are juicy and sweet.",
+    "example_ka": "მსხალი წვნიანი და ტკბილია.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pie",
+    "georgian": "ღვეზელი",
+    "pronunciation": "/paɪ/",
+    "example_en": "She baked an apple pie.",
+    "example_ka": "მან ვაშლის ღვეზელი გამოაცხო.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "plum",
+    "georgian": "ქლიავი",
+    "pronunciation": "/plʌm/",
+    "example_en": "Plums are ripe in autumn.",
+    "example_ka": "ქლიავი შემოდგომაზე მწიფდება.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "pomegranate",
+    "georgian": "ბროწეული",
+    "pronunciation": "/ˈpɒmɪɡrænɪt/",
+    "example_en": "Pomegranate seeds are healthy.",
+    "example_ka": "ბროწეულის მარცვლები ჯანსაღია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "porridge",
+    "georgian": "ფაფა",
+    "pronunciation": "/ˈpɒrɪdʒ/",
+    "example_en": "Porridge is a healthy breakfast.",
+    "example_ka": "ფაფა ჯანსაღი საუზმეა.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "pretzel",
+    "georgian": "პრეცელი",
+    "pronunciation": "/ˈpretsl/",
+    "example_en": "Soft pretzels are salty.",
+    "example_ka": "რბილი პრეცელები მარილიანია.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "pudding",
+    "georgian": "პუდინგი",
+    "pronunciation": "/ˈpʊdɪŋ/",
+    "example_en": "We had chocolate pudding.",
+    "example_ka": "შოკოლადის პუდინგი ვჭამეთ.",
+    "category": "food-drink",
+    "level": "A1"
+  },
+  {
+    "english": "raisin",
+    "georgian": "ქიშმიში",
+    "pronunciation": "/ˈreɪzn/",
+    "example_en": "Raisins are dried grapes.",
+    "example_ka": "ქიშმიში გამხმარი ყურძენია.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "raspberry",
+    "georgian": "ჟოლო",
+    "pronunciation": "/ˈræzberi/",
+    "example_en": "Raspberries are red and sweet.",
+    "example_ka": "ჟოლო წითელი და ტკბილია.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "risotto",
+    "georgian": "რიზოტო",
+    "pronunciation": "/rɪˈzɒtoʊ/",
+    "example_en": "The mushroom risotto was great.",
+    "example_ka": "სოკოს რიზოტო შესანიშნავი იყო.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "saffron",
+    "georgian": "ზაფრანა",
+    "pronunciation": "/ˈsæfrən/",
+    "example_en": "Saffron is the most expensive spice.",
+    "example_ka": "ზაფრანა ყველაზე ძვირი სანელებელია.",
+    "category": "food-drink",
+    "level": "B2"
+  },
+  {
+    "english": "smoothie",
+    "georgian": "სმუზი",
+    "pronunciation": "/ˈsmuːði/",
+    "example_en": "I made a banana smoothie.",
+    "example_ka": "ბანანის სმუზი გავაკეთე.",
+    "category": "food-drink",
+    "level": "A2"
+  },
+  {
+    "english": "sorbet",
+    "georgian": "სორბეტი",
+    "pronunciation": "/sɔːrˈbeɪ/",
+    "example_en": "Lemon sorbet is refreshing.",
+    "example_ka": "ლიმონის სორბეტი გამაგრილებელია.",
+    "category": "food-drink",
+    "level": "B1"
+  },
+  {
+    "english": "steak",
+    "georgian": "სტეიკი",
+    "pronunciation": "/steɪk/",
+    "example_en": "I like my steak medium.",
+    "example_ka": "სტეიკი საშუალოდ მომწვარი მიყვარს.",
+    "category": "food-drink",
+    "level": "A2"
+  }
 ]

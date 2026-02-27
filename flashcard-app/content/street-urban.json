@@ -1,27 +1,1802 @@
 [
-  {"english": "sidewalk", "georgian": "ტროტუარი", "pronunciation": "ˈsaɪdwɔːk", "example_en": "Walk on the sidewalk, not the road.", "example_ka": "ტროტუარზე იარე, არა გზაზე.", "category": "Street & Urban", "level": "A2"},
-  {"english": "crosswalk", "georgian": "საფეხმავლო გადასასვლელი", "pronunciation": "ˈkrɒswɔːk", "example_en": "Always use the crosswalk.", "example_ka": "ყოველთვის საფეხმავლო გადასასვლელი გამოიყენე.", "category": "Street & Urban", "level": "A2"},
-  {"english": "traffic jam", "georgian": "საცობი", "pronunciation": "ˈtræfɪk dʒæm", "example_en": "There's a huge traffic jam on the highway.", "example_ka": "ავტომაგისტრალზე უზარმაზარი საცობია.", "category": "Street & Urban", "level": "A2"},
-  {"english": "pedestrian", "georgian": "ფეხით მოსიარულე", "pronunciation": "pəˈdestriən", "example_en": "Pedestrians have the right of way.", "example_ka": "ფეხით მოსიარულეებს უპირატესობა აქვთ.", "category": "Street & Urban", "level": "B1"},
-  {"english": "intersection", "georgian": "გზაჯვარედინი", "pronunciation": "ˌɪntərˈsekʃn", "example_en": "Turn left at the intersection.", "example_ka": "გზაჯვარედინზე მარცხნივ მოუხვიე.", "category": "Street & Urban", "level": "B1"},
-  {"english": "graffiti", "georgian": "გრაფიტი", "pronunciation": "ɡrəˈfiːti", "example_en": "There's colorful graffiti on that wall.", "example_ka": "იმ კედელზე ფერადი გრაფიტია.", "category": "Street & Urban", "level": "A2"},
-  {"english": "bench", "georgian": "სკამი", "pronunciation": "bentʃ", "example_en": "Let's sit on that bench.", "example_ka": "იმ სკამზე დავსხდეთ.", "category": "Street & Urban", "level": "A1"},
-  {"english": "alley", "georgian": "შესახვევი", "pronunciation": "ˈæli", "example_en": "There's a shortcut through the alley.", "example_ka": "შესახვევში მალი გზა არის.", "category": "Street & Urban", "level": "B1"},
-  {"english": "downtown", "georgian": "ცენტრი (ქალაქის)", "pronunciation": "ˈdaʊntaʊn", "example_en": "Let's go downtown tonight.", "example_ka": "დღეს საღამოს ცენტრში წავიდეთ.", "category": "Street & Urban", "level": "A2"},
-  {"english": "suburb", "georgian": "გარეუბანი", "pronunciation": "ˈsʌbɜːrb", "example_en": "They live in the suburbs.", "example_ka": "ისინი გარეუბანში ცხოვრობენ.", "category": "Street & Urban", "level": "B1"},
-  {"english": "skyscraper", "georgian": "ცათამბჯენი", "pronunciation": "ˈskaɪskreɪpər", "example_en": "Tbilisi doesn't have many skyscrapers.", "example_ka": "თბილისში ბევრი ცათამბჯენი არ არის.", "category": "Street & Urban", "level": "A2"},
-  {"english": "construction", "georgian": "მშენებლობა", "pronunciation": "kənˈstrʌkʃn", "example_en": "There's construction everywhere in Tbilisi.", "example_ka": "თბილისში ყველგან მშენებლობაა.", "category": "Street & Urban", "level": "A2"},
-  {"english": "trash can", "georgian": "ნაგვის ურნა", "pronunciation": "træʃ kæn", "example_en": "Throw it in the trash can.", "example_ka": "ნაგვის ურნაში გადააგდე.", "category": "Street & Urban", "level": "A1"},
-  {"english": "streetlight", "georgian": "ქუჩის ფანარი", "pronunciation": "ˈstriːtlaɪt", "example_en": "The streetlight is broken on our road.", "example_ka": "ჩვენს ქუჩაზე ფანარი გატეხილია.", "category": "Street & Urban", "level": "A2"},
-  {"english": "rush hour", "georgian": "პიკის საათი", "pronunciation": "rʌʃ aʊər", "example_en": "Avoid driving during rush hour.", "example_ka": "პიკის საათებში მანქანით სიარულს მოერიდე.", "category": "Street & Urban", "level": "A2"},
-  {"english": "neighborhood", "georgian": "უბანი", "pronunciation": "ˈneɪbərhʊd", "example_en": "This is a quiet neighborhood.", "example_ka": "ეს მშვიდი უბანია.", "category": "Street & Urban", "level": "A2"},
-  {"english": "pothole", "georgian": "ორმო (გზაზე)", "pronunciation": "ˈpɒthoʊl", "example_en": "Be careful, there's a huge pothole!", "example_ka": "ფრთხილად, დიდი ორმოა!", "category": "Street & Urban", "level": "B1"},
-  {"english": "parking lot", "georgian": "პარკინგი", "pronunciation": "ˈpɑːrkɪŋ lɒt", "example_en": "The parking lot is full.", "example_ka": "პარკინგი სავსეა.", "category": "Street & Urban", "level": "A2"},
-  {"english": "block", "georgian": "კვარტალი", "pronunciation": "blɒk", "example_en": "The store is two blocks away.", "example_ka": "მაღაზია ორი კვარტალითაა.", "category": "Street & Urban", "level": "A2"},
-  {"english": "homeless", "georgian": "უსახლკარო", "pronunciation": "ˈhoʊmləs", "example_en": "There are homeless people in every city.", "example_ka": "ყველა ქალაქში უსახლკარო ხალხია.", "category": "Street & Urban", "level": "A2"},
-  {"english": "fountain", "georgian": "შადრევანი", "pronunciation": "ˈfaʊntɪn", "example_en": "There's a beautiful fountain in the square.", "example_ka": "მოედანზე ლამაზი შადრევანია.", "category": "Street & Urban", "level": "A2"},
-  {"english": "underpass", "georgian": "მიწისქვეშა გადასასვლელი", "pronunciation": "ˈʌndərpɑːs", "example_en": "Use the underpass to cross the road.", "example_ka": "გზის გადასაკვეთად მიწისქვეშა გადასასვლელი გამოიყენე.", "category": "Street & Urban", "level": "B1"},
-  {"english": "crowd", "georgian": "ხალხმრავლობა", "pronunciation": "kraʊd", "example_en": "There was a huge crowd at the concert.", "example_ka": "კონცერტზე დიდი ხალხმრავლობა იყო.", "category": "Street & Urban", "level": "A2"},
-  {"english": "jaywalking", "georgian": "არასწორი გადასვლა", "pronunciation": "ˈdʒeɪwɔːkɪŋ", "example_en": "Jaywalking is dangerous but everyone does it.", "example_ka": "არასწორი გადასვლა საშიშია, მაგრამ ყველა ასე აკეთებს.", "category": "Street & Urban", "level": "B1"},
-  {"english": "mural", "georgian": "კედლის მხატვრობა", "pronunciation": "ˈmjʊərəl", "example_en": "There's a new mural on Rustaveli Avenue.", "example_ka": "რუსთაველის გამზირზე ახალი კედლის მხატვრობაა.", "category": "Street & Urban", "level": "B1"}
+  {
+    "english": "sidewalk",
+    "georgian": "ტროტუარი",
+    "pronunciation": "ˈsaɪdwɔːk",
+    "example_en": "Walk on the sidewalk, not the road.",
+    "example_ka": "ტროტუარზე იარე, არა გზაზე.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "crosswalk",
+    "georgian": "საფეხმავლო გადასასვლელი",
+    "pronunciation": "ˈkrɒswɔːk",
+    "example_en": "Always use the crosswalk.",
+    "example_ka": "ყოველთვის საფეხმავლო გადასასვლელი გამოიყენე.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "pedestrian",
+    "georgian": "ფეხით მოსიარულე",
+    "pronunciation": "pəˈdestriən",
+    "example_en": "Pedestrians have the right of way.",
+    "example_ka": "ფეხით მოსიარულეებს უპირატესობა აქვთ.",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "intersection",
+    "georgian": "გზაჯვარედინი",
+    "pronunciation": "ˌɪntərˈsekʃn",
+    "example_en": "Turn left at the intersection.",
+    "example_ka": "გზაჯვარედინზე მარცხნივ მოუხვიე.",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "graffiti",
+    "georgian": "გრაფიტი",
+    "pronunciation": "ɡrəˈfiːti",
+    "example_en": "There's colorful graffiti on that wall.",
+    "example_ka": "იმ კედელზე ფერადი გრაფიტია.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "bench",
+    "georgian": "სკამი",
+    "pronunciation": "bentʃ",
+    "example_en": "Let's sit on that bench.",
+    "example_ka": "იმ სკამზე დავსხდეთ.",
+    "category": "Street & Urban",
+    "level": "A1"
+  },
+  {
+    "english": "alley",
+    "georgian": "შესახვევი",
+    "pronunciation": "ˈæli",
+    "example_en": "There's a shortcut through the alley.",
+    "example_ka": "შესახვევში მალი გზა არის.",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "downtown",
+    "georgian": "ცენტრი (ქალაქის)",
+    "pronunciation": "ˈdaʊntaʊn",
+    "example_en": "Let's go downtown tonight.",
+    "example_ka": "დღეს საღამოს ცენტრში წავიდეთ.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "suburb",
+    "georgian": "გარეუბანი",
+    "pronunciation": "ˈsʌbɜːrb",
+    "example_en": "They live in the suburbs.",
+    "example_ka": "ისინი გარეუბანში ცხოვრობენ.",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "skyscraper",
+    "georgian": "ცათამბჯენი",
+    "pronunciation": "ˈskaɪskreɪpər",
+    "example_en": "Tbilisi doesn't have many skyscrapers.",
+    "example_ka": "თბილისში ბევრი ცათამბჯენი არ არის.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "construction",
+    "georgian": "მშენებლობა",
+    "pronunciation": "kənˈstrʌkʃn",
+    "example_en": "There's construction everywhere in Tbilisi.",
+    "example_ka": "თბილისში ყველგან მშენებლობაა.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "streetlight",
+    "georgian": "ქუჩის ფანარი",
+    "pronunciation": "ˈstriːtlaɪt",
+    "example_en": "The streetlight is broken on our road.",
+    "example_ka": "ჩვენს ქუჩაზე ფანარი გატეხილია.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "neighborhood",
+    "georgian": "უბანი",
+    "pronunciation": "ˈneɪbərhʊd",
+    "example_en": "This is a quiet neighborhood.",
+    "example_ka": "ეს მშვიდი უბანია.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "pothole",
+    "georgian": "ორმო (გზაზე)",
+    "pronunciation": "ˈpɒthoʊl",
+    "example_en": "Be careful, there's a huge pothole!",
+    "example_ka": "ფრთხილად, დიდი ორმოა!",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "block",
+    "georgian": "კვარტალი",
+    "pronunciation": "blɒk",
+    "example_en": "The store is two blocks away.",
+    "example_ka": "მაღაზია ორი კვარტალითაა.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "homeless",
+    "georgian": "უსახლკარო",
+    "pronunciation": "ˈhoʊmləs",
+    "example_en": "There are homeless people in every city.",
+    "example_ka": "ყველა ქალაქში უსახლკარო ხალხია.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "fountain",
+    "georgian": "შადრევანი",
+    "pronunciation": "ˈfaʊntɪn",
+    "example_en": "There's a beautiful fountain in the square.",
+    "example_ka": "მოედანზე ლამაზი შადრევანია.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "underpass",
+    "georgian": "მიწისქვეშა გადასასვლელი",
+    "pronunciation": "ˈʌndərpɑːs",
+    "example_en": "Use the underpass to cross the road.",
+    "example_ka": "გზის გადასაკვეთად მიწისქვეშა გადასასვლელი გამოიყენე.",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "crowd",
+    "georgian": "ხალხმრავლობა",
+    "pronunciation": "kraʊd",
+    "example_en": "There was a huge crowd at the concert.",
+    "example_ka": "კონცერტზე დიდი ხალხმრავლობა იყო.",
+    "category": "Street & Urban",
+    "level": "A2"
+  },
+  {
+    "english": "jaywalking",
+    "georgian": "არასწორი გადასვლა",
+    "pronunciation": "ˈdʒeɪwɔːkɪŋ",
+    "example_en": "Jaywalking is dangerous but everyone does it.",
+    "example_ka": "არასწორი გადასვლა საშიშია, მაგრამ ყველა ასე აკეთებს.",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "mural",
+    "georgian": "კედლის მხატვრობა",
+    "pronunciation": "ˈmjʊərəl",
+    "example_en": "There's a new mural on Rustaveli Avenue.",
+    "example_ka": "რუსთაველის გამზირზე ახალი კედლის მხატვრობაა.",
+    "category": "Street & Urban",
+    "level": "B1"
+  },
+  {
+    "english": "curb",
+    "georgian": "მოპირკეთება",
+    "pronunciation": "/kɜːrb/",
+    "example_en": "Step off the curb.",
+    "example_ka": "ჩამოდი ბორდიურიდან.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "gutter",
+    "georgian": "არხი",
+    "pronunciation": "/ˈɡʌtər/",
+    "example_en": "Rain flows in the gutter.",
+    "example_ka": "წვიმა არხში მიედინება.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "lamppost",
+    "georgian": "ფანარი",
+    "pronunciation": "/ˈlæmppoʊst/",
+    "example_en": "The lamppost lit the street.",
+    "example_ka": "ფანარმა ქუჩა გაანათა.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "hydrant",
+    "georgian": "ჰიდრანტი",
+    "pronunciation": "/ˈhaɪdrənt/",
+    "example_en": "Don't park near the hydrant.",
+    "example_ka": "ჰიდრანტთან არ დააყენო მანქანა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "manhole",
+    "georgian": "კანალიზაციის ხვრელი",
+    "pronunciation": "/ˈmænhoʊl/",
+    "example_en": "The manhole cover was open.",
+    "example_ka": "კანალიზაციის ხვრელი ღია იყო.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "billboard",
+    "georgian": "რეკლამა",
+    "pronunciation": "/ˈbɪlbɔːrd/",
+    "example_en": "A big billboard stood there.",
+    "example_ka": "დიდი რეკლამა იდგა იქ.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "mailbox",
+    "georgian": "საფოსტო ყუთი",
+    "pronunciation": "/ˈmeɪlbɑːks/",
+    "example_en": "Put the letter in the mailbox.",
+    "example_ka": "წერილი საფოსტო ყუთში ჩააგდე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "dumpster",
+    "georgian": "ნაგვის ყუთი",
+    "pronunciation": "/ˈdʌmpstər/",
+    "example_en": "The dumpster was full.",
+    "example_ka": "ნაგვის ყუთი სავსე იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "awning",
+    "georgian": "ტენტი",
+    "pronunciation": "/ˈɔːnɪŋ/",
+    "example_en": "Stand under the awning.",
+    "example_ka": "ტენტის ქვეშ დადექი.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "scaffolding",
+    "georgian": "ხარაჩო",
+    "pronunciation": "/ˈskæfəldɪŋ/",
+    "example_en": "Workers climbed the scaffolding.",
+    "example_ka": "მუშები ხარაჩოზე ავიდნენ.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "overpass",
+    "georgian": "ხიდი",
+    "pronunciation": "/ˈoʊvərpæs/",
+    "example_en": "Drive under the overpass.",
+    "example_ka": "ხიდის ქვეშ გაიარე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "pavement",
+    "georgian": "ასფალტი",
+    "pronunciation": "/ˈpeɪvmənt/",
+    "example_en": "The pavement was wet.",
+    "example_ka": "ასფალტი სველი იყო.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "vendor",
+    "georgian": "გამყიდველი",
+    "pronunciation": "/ˈvendər/",
+    "example_en": "The vendor sold fruit.",
+    "example_ka": "გამყიდველი ხილს ყიდდა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "busker",
+    "georgian": "ქუჩის მუსიკოსი",
+    "pronunciation": "/ˈbʌskər/",
+    "example_en": "The busker played guitar.",
+    "example_ka": "ქუჩის მუსიკოსი გიტარაზე უკრავდა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "vagrant",
+    "georgian": "მაწანწალა",
+    "pronunciation": "/ˈveɪɡrənt/",
+    "example_en": "A vagrant slept on the bench.",
+    "example_ka": "მაწანწალა სკამზე ეძინა.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "boulevard",
+    "georgian": "ბულვარი",
+    "pronunciation": "/ˈbuːləvɑːrd/",
+    "example_en": "Walk down the boulevard.",
+    "example_ka": "ბულვარზე გაიარე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "avenue",
+    "georgian": "გამზირი",
+    "pronunciation": "/ˈævənjuː/",
+    "example_en": "They live on Fifth Avenue.",
+    "example_ka": "ისინი მეხუთე გამზირზე ცხოვრობენ.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "warehouse",
+    "georgian": "საწყობი",
+    "pronunciation": "/ˈwerhaʊs/",
+    "example_en": "Goods are stored in the warehouse.",
+    "example_ka": "საქონელი საწყობში ინახება.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "penthouse",
+    "georgian": "პენტჰაუსი",
+    "pronunciation": "/ˈpenthaʊs/",
+    "example_en": "The penthouse has a great view.",
+    "example_ka": "პენტჰაუსიდან კარგი ხედია.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "loft",
+    "georgian": "სხვენი",
+    "pronunciation": "/lɒft/",
+    "example_en": "They converted the loft.",
+    "example_ka": "მათ სხვენი გადააკეთეს.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "rooftop",
+    "georgian": "სახურავი",
+    "pronunciation": "/ˈruːftɒp/",
+    "example_en": "Party on the rooftop.",
+    "example_ka": "წვეულება სახურავზე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "balcony",
+    "georgian": "აივანი",
+    "pronunciation": "/ˈbælkəni/",
+    "example_en": "She stood on the balcony.",
+    "example_ka": "ის აივანზე იდგა.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "staircase",
+    "georgian": "კიბე",
+    "pronunciation": "/ˈsterkeɪs/",
+    "example_en": "Climb the staircase.",
+    "example_ka": "კიბეზე ავიდი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "elevator",
+    "georgian": "ლიფტი",
+    "pronunciation": "/ˈelɪveɪtər/",
+    "example_en": "Take the elevator.",
+    "example_ka": "ლიფტით ავიდი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "escalator",
+    "georgian": "ესკალატორი",
+    "pronunciation": "/ˈeskəleɪtər/",
+    "example_en": "Ride the escalator.",
+    "example_ka": "ესკალატორით ავიდი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "parking",
+    "georgian": "პარკინგი",
+    "pronunciation": "/ˈpɑːrkɪŋ/",
+    "example_en": "Find a parking spot.",
+    "example_ka": "პარკინგის ადგილი იპოვე.",
+    "category": "street-urban",
+    "level": "A1"
+  },
+  {
+    "english": "garage",
+    "georgian": "გარაჟი",
+    "pronunciation": "/ɡəˈrɑːʒ/",
+    "example_en": "Park in the garage.",
+    "example_ka": "გარაჟში დააყენე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "barrier",
+    "georgian": "ბარიერი",
+    "pronunciation": "/ˈbæriər/",
+    "example_en": "Don't cross the barrier.",
+    "example_ka": "ბარიერს არ გადაცდე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "railing",
+    "georgian": "მოაჯირი",
+    "pronunciation": "/ˈreɪlɪŋ/",
+    "example_en": "Hold the railing.",
+    "example_ka": "მოაჯირს მოეჭიდე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "canopy",
+    "georgian": "საფარი",
+    "pronunciation": "/ˈkænəpi/",
+    "example_en": "Stand under the canopy.",
+    "example_ka": "საფარის ქვეშ დადექი.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "kiosk",
+    "georgian": "კიოსკი",
+    "pronunciation": "/ˈkiːɒsk/",
+    "example_en": "Buy a newspaper at the kiosk.",
+    "example_ka": "კიოსკთან გაზეთი იყიდე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "stall",
+    "georgian": "სტენდი",
+    "pronunciation": "/stɔːl/",
+    "example_en": "The market stall sold fish.",
+    "example_ka": "ბაზრის სტენდზე თევზს ყიდდნენ.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "arcade",
+    "georgian": "პასაჟი",
+    "pronunciation": "/ɑːrˈkeɪd/",
+    "example_en": "Walk through the arcade.",
+    "example_ka": "პასაჟში გაიარე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "plaza",
+    "georgian": "მოედანი",
+    "pronunciation": "/ˈplɑːzə/",
+    "example_en": "Meet me at the plaza.",
+    "example_ka": "მოედანზე შემხვდი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "courtyard",
+    "georgian": "ეზო",
+    "pronunciation": "/ˈkɔːrtjɑːrd/",
+    "example_en": "The courtyard was quiet.",
+    "example_ka": "ეზო წყნარი იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "terrace",
+    "georgian": "ტერასა",
+    "pronunciation": "/ˈterəs/",
+    "example_en": "Eat on the terrace.",
+    "example_ka": "ტერასაზე ჭამე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "patio",
+    "georgian": "ვერანდა",
+    "pronunciation": "/ˈpætioʊ/",
+    "example_en": "Relax on the patio.",
+    "example_ka": "ვერანდაზე დაისვენე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "dome",
+    "georgian": "გუმბათი",
+    "pronunciation": "/doʊm/",
+    "example_en": "The dome shone in the sun.",
+    "example_ka": "გუმბათი მზეზე ბრწყინავდა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "tower",
+    "georgian": "კოშკი",
+    "pronunciation": "/ˈtaʊər/",
+    "example_en": "The tower was ancient.",
+    "example_ka": "კოშკი უძველესი იყო.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "monument",
+    "georgian": "ძეგლი",
+    "pronunciation": "/ˈmɒnjumənt/",
+    "example_en": "Visit the monument.",
+    "example_ka": "ძეგლი ნახე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "statue",
+    "georgian": "ქანდაკება",
+    "pronunciation": "/ˈstætʃuː/",
+    "example_en": "The statue was impressive.",
+    "example_ka": "ქანდაკება შთამბეჭდავი იყო.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "pillar",
+    "georgian": "სვეტი",
+    "pronunciation": "/ˈpɪlər/",
+    "example_en": "The pillar supported the roof.",
+    "example_ka": "სვეტი სახურავს აჭერდა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "arch",
+    "georgian": "თაღი",
+    "pronunciation": "/ɑːrtʃ/",
+    "example_en": "Walk through the arch.",
+    "example_ka": "თაღში გაიარე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "chimney",
+    "georgian": "საკვამური",
+    "pronunciation": "/ˈtʃɪmni/",
+    "example_en": "Smoke rose from the chimney.",
+    "example_ka": "კვამლი საკვამურიდან ამოდიოდა.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "antenna",
+    "georgian": "ანტენა",
+    "pronunciation": "/ænˈtenə/",
+    "example_en": "The antenna was on the roof.",
+    "example_ka": "ანტენა სახურავზე იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "drain",
+    "georgian": "კანალიზაცია",
+    "pronunciation": "/dreɪn/",
+    "example_en": "Water went down the drain.",
+    "example_ka": "წყალი კანალიზაციაში ჩავიდა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "sewer",
+    "georgian": "საკანალიზაციო",
+    "pronunciation": "/ˈsuːər/",
+    "example_en": "The sewer was blocked.",
+    "example_ka": "საკანალიზაციო მილი დაიხშო.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "driveway",
+    "georgian": "შესასვლელი",
+    "pronunciation": "/ˈdraɪvweɪ/",
+    "example_en": "Park in the driveway.",
+    "example_ka": "შესასვლელში დააყენე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "fence",
+    "georgian": "ღობე",
+    "pronunciation": "/fens/",
+    "example_en": "Jump over the fence.",
+    "example_ka": "ღობეს გადაახტი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "hedge",
+    "georgian": "ბუჩქოვანი ღობე",
+    "pronunciation": "/hedʒ/",
+    "example_en": "Trim the hedge.",
+    "example_ka": "ბუჩქოვანი ღობე შეჭერი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "traffic",
+    "georgian": "ტრაფიკი",
+    "pronunciation": "/ˈtræfɪk/",
+    "example_en": "Traffic was heavy.",
+    "example_ka": "ტრაფიკი მძიმე იყო.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "congestion",
+    "georgian": "საცობი",
+    "pronunciation": "/kənˈdʒestʃən/",
+    "example_en": "Avoid the congestion.",
+    "example_ka": "საცობს მოერიდე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "detour",
+    "georgian": "შემოვლითი გზა",
+    "pronunciation": "/ˈdiːtʊr/",
+    "example_en": "Take the detour.",
+    "example_ka": "შემოვლითი გზით წადი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "roadblock",
+    "georgian": "საგზაო ბარიერი",
+    "pronunciation": "/ˈroʊdblɑːk/",
+    "example_en": "Police set up a roadblock.",
+    "example_ka": "პოლიციამ საგზაო ბარიერი დადგა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "siren",
+    "georgian": "სირენა",
+    "pronunciation": "/ˈsaɪrən/",
+    "example_en": "I heard a siren.",
+    "example_ka": "სირენა გავიგონე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "horn",
+    "georgian": "სიგნალი",
+    "pronunciation": "/hɔːrn/",
+    "example_en": "Don't honk the horn.",
+    "example_ka": "სიგნალს ნუ აყენებ.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "exhaust",
+    "georgian": "გამონაბოლქვი",
+    "pronunciation": "/ɪɡˈzɔːst/",
+    "example_en": "Exhaust pollutes the air.",
+    "example_ka": "გამონაბოლქვი ჰაერს აბინძურებს.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "smog",
+    "georgian": "სმოგი",
+    "pronunciation": "/smɒɡ/",
+    "example_en": "Smog covered the city.",
+    "example_ka": "სმოგმა ქალაქი დაფარა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "litter",
+    "georgian": "ნაგავი",
+    "pronunciation": "/ˈlɪtər/",
+    "example_en": "Don't litter.",
+    "example_ka": "ნაგავს ნუ ყრი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "recycle",
+    "georgian": "გადამუშავება",
+    "pronunciation": "/riːˈsaɪkəl/",
+    "example_en": "Please recycle.",
+    "example_ka": "გთხოვ გადაამუშავე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "stroller",
+    "georgian": "ეტლი",
+    "pronunciation": "/ˈstroʊlər/",
+    "example_en": "Push the stroller.",
+    "example_ka": "ეტლი აწიე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "wheelchair",
+    "georgian": "ინვალიდის ეტლი",
+    "pronunciation": "/ˈwiːltʃer/",
+    "example_en": "The wheelchair ramp is there.",
+    "example_ka": "ინვალიდის ეტლის პანდუსი იქაა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "trolley",
+    "georgian": "ტროლეიბუსი",
+    "pronunciation": "/ˈtrɒli/",
+    "example_en": "Take the trolley.",
+    "example_ka": "ტროლეიბუსით წადი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "subway",
+    "georgian": "მეტრო",
+    "pronunciation": "/ˈsʌbweɪ/",
+    "example_en": "The subway is fast.",
+    "example_ka": "მეტრო სწრაფია.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "tunnel",
+    "georgian": "გვირაბი",
+    "pronunciation": "/ˈtʌnəl/",
+    "example_en": "Drive through the tunnel.",
+    "example_ka": "გვირაბში გაიარე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "bridge",
+    "georgian": "ხიდი",
+    "pronunciation": "/brɪdʒ/",
+    "example_en": "Cross the bridge.",
+    "example_ka": "ხიდზე გადაიარე.",
+    "category": "street-urban",
+    "level": "A1"
+  },
+  {
+    "english": "pier",
+    "georgian": "მისადგომი",
+    "pronunciation": "/pɪr/",
+    "example_en": "Walk along the pier.",
+    "example_ka": "მისადგომზე გაიარე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "harbor",
+    "georgian": "ნავსადგური",
+    "pronunciation": "/ˈhɑːrbər/",
+    "example_en": "Boats rest in the harbor.",
+    "example_ka": "ნავები ნავსადგურში დგანან.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "dock",
+    "georgian": "ნავმისადგომი",
+    "pronunciation": "/dɒk/",
+    "example_en": "The ship reached the dock.",
+    "example_ka": "გემი ნავმისადგომს მიადგა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "canal",
+    "georgian": "არხი",
+    "pronunciation": "/kəˈnæl/",
+    "example_en": "The canal runs through town.",
+    "example_ka": "არხი ქალაქში გადის.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "bank",
+    "georgian": "ნაპირი",
+    "pronunciation": "/bæŋk/",
+    "example_en": "Sit on the river bank.",
+    "example_ka": "მდინარის ნაპირზე დაჯექი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "slope",
+    "georgian": "ფერდობი",
+    "pronunciation": "/sloʊp/",
+    "example_en": "Walk up the slope.",
+    "example_ka": "ფერდობზე ავიდი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "trail",
+    "georgian": "ბილიკი",
+    "pronunciation": "/treɪl/",
+    "example_en": "Follow the trail.",
+    "example_ka": "ბილიკს გაჰყევი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "pathway",
+    "georgian": "ბილიკი",
+    "pronunciation": "/ˈpæθweɪ/",
+    "example_en": "The pathway was narrow.",
+    "example_ka": "ბილიკი ვიწრო იყო.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "lane",
+    "georgian": "ზოლი",
+    "pronunciation": "/leɪn/",
+    "example_en": "Stay in your lane.",
+    "example_ka": "შენს ზოლში იყავი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "highway",
+    "georgian": "მაგისტრალი",
+    "pronunciation": "/ˈhaɪweɪ/",
+    "example_en": "Drive on the highway.",
+    "example_ka": "მაგისტრალზე იარე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "freeway",
+    "georgian": "ავტობანი",
+    "pronunciation": "/ˈfriːweɪ/",
+    "example_en": "The freeway was busy.",
+    "example_ka": "ავტობანი დატვირთული იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "roundabout",
+    "georgian": "წრე",
+    "pronunciation": "/ˈraʊndəbaʊt/",
+    "example_en": "Turn at the roundabout.",
+    "example_ka": "წრეზე მოუხვიე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "junction",
+    "georgian": "კვანძი",
+    "pronunciation": "/ˈdʒʌŋkʃən/",
+    "example_en": "Wait at the junction.",
+    "example_ka": "კვანძთან დაელოდე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "ramp",
+    "georgian": "პანდუსი",
+    "pronunciation": "/ræmp/",
+    "example_en": "Use the ramp.",
+    "example_ka": "პანდუსი გამოიყენე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "median",
+    "georgian": "გამყოფი ზოლი",
+    "pronunciation": "/ˈmiːdiən/",
+    "example_en": "Don't cross the median.",
+    "example_ka": "გამყოფ ზოლს არ გადაცდე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "bump",
+    "georgian": "ბორცვი",
+    "pronunciation": "/bʌmp/",
+    "example_en": "Slow down at the bump.",
+    "example_ka": "ბორცვთან ნელა იარე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "pole",
+    "georgian": "ბოძი",
+    "pronunciation": "/poʊl/",
+    "example_en": "The pole fell down.",
+    "example_ka": "ბოძი დაეცა.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "wire",
+    "georgian": "მავთული",
+    "pronunciation": "/waɪər/",
+    "example_en": "Don't touch the wire.",
+    "example_ka": "მავთულს ნუ ეხები.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "cable",
+    "georgian": "კაბელი",
+    "pronunciation": "/ˈkeɪbəl/",
+    "example_en": "The cable was underground.",
+    "example_ka": "კაბელი მიწისქვეშ იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "satellite",
+    "georgian": "თანამგზავრი",
+    "pronunciation": "/ˈsætəlaɪt/",
+    "example_en": "The satellite dish was big.",
+    "example_ka": "თანამგზავრული ანტენა დიდი იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "neon",
+    "georgian": "ნეონი",
+    "pronunciation": "/ˈniːɒn/",
+    "example_en": "Neon signs glow at night.",
+    "example_ka": "ნეონის ნიშნები ღამით ანათებენ.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "marquee",
+    "georgian": "მარკიზა",
+    "pronunciation": "/mɑːrˈkiː/",
+    "example_en": "Read the marquee.",
+    "example_ka": "მარკიზა წაიკითხე.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "hustle",
+    "georgian": "აურზაური",
+    "pronunciation": "/ˈhʌsəl/",
+    "example_en": "City hustle never stops.",
+    "example_ka": "ქალაქის აურზაური არასდროს ჩერდება.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "bustle",
+    "georgian": "ხმაური",
+    "pronunciation": "/ˈbʌsəl/",
+    "example_en": "The bustle of the market.",
+    "example_ka": "ბაზრის ხმაური.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "commute",
+    "georgian": "მგზავრობა",
+    "pronunciation": "/kəˈmjuːt/",
+    "example_en": "My commute takes an hour.",
+    "example_ka": "ჩემი მგზავრობა ერთ საათს გრძელდება.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "rush",
+    "georgian": "აჩქარება",
+    "pronunciation": "/rʌʃ/",
+    "example_en": "Don't rush.",
+    "example_ka": "ნუ ჩქარობ.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "mob",
+    "georgian": "ბრბო",
+    "pronunciation": "/mɒb/",
+    "example_en": "The mob was angry.",
+    "example_ka": "ბრბო გაბრაზებული იყო.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "parade",
+    "georgian": "პარადი",
+    "pronunciation": "/pəˈreɪd/",
+    "example_en": "Watch the parade.",
+    "example_ka": "პარადი ნახე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "rally",
+    "georgian": "მიტინგი",
+    "pronunciation": "/ˈræli/",
+    "example_en": "They held a rally.",
+    "example_ka": "მათ მიტინგი გამართეს.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "protest",
+    "georgian": "პროტესტი",
+    "pronunciation": "/ˈproʊtest/",
+    "example_en": "The protest was peaceful.",
+    "example_ka": "პროტესტი მშვიდობიანი იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "curfew",
+    "georgian": "კომენდანტის საათი",
+    "pronunciation": "/ˈkɜːrfjuː/",
+    "example_en": "Curfew starts at midnight.",
+    "example_ka": "კომენდანტის საათი შუაღამეს იწყება.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "surveillance",
+    "georgian": "მეთვალყურეობა",
+    "pronunciation": "/sərˈveɪləns/",
+    "example_en": "Cameras for surveillance.",
+    "example_ka": "კამერები მეთვალყურეობისთვის.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "vandalism",
+    "georgian": "ვანდალიზმი",
+    "pronunciation": "/ˈvændəlɪzəm/",
+    "example_en": "Vandalism is a crime.",
+    "example_ka": "ვანდალიზმი დანაშაულია.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "loitering",
+    "georgian": "უმიზნო ხეტიალი",
+    "pronunciation": "/ˈlɔɪtərɪŋ/",
+    "example_en": "No loitering allowed.",
+    "example_ka": "უმიზნო ხეტიალი აკრძალულია.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "trespassing",
+    "georgian": "უნებართვო შესვლა",
+    "pronunciation": "/ˈtrespæsɪŋ/",
+    "example_en": "No trespassing.",
+    "example_ka": "უნებართვო შესვლა აკრძალულია.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "poverty",
+    "georgian": "სიღარიბე",
+    "pronunciation": "/ˈpɒvərti/",
+    "example_en": "Poverty is a big issue.",
+    "example_ka": "სიღარიბე დიდი პრობლემაა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "shelter",
+    "georgian": "თავშესაფარი",
+    "pronunciation": "/ˈʃeltər/",
+    "example_en": "Find shelter.",
+    "example_ka": "თავშესაფარი იპოვე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "charity",
+    "georgian": "საქველმოქმედო",
+    "pronunciation": "/ˈtʃærəti/",
+    "example_en": "Donate to charity.",
+    "example_ka": "საქველმოქმედო ორგანიზაციას შესწირე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "volunteer",
+    "georgian": "მოხალისე",
+    "pronunciation": "/ˌvɒlənˈtɪr/",
+    "example_en": "Be a volunteer.",
+    "example_ka": "მოხალისე იყავი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "resident",
+    "georgian": "მცხოვრები",
+    "pronunciation": "/ˈrezɪdənt/",
+    "example_en": "She is a resident.",
+    "example_ka": "ის მცხოვრებია.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "tenant",
+    "georgian": "მოიჯარე",
+    "pronunciation": "/ˈtenənt/",
+    "example_en": "The tenant pays rent.",
+    "example_ka": "მოიჯარე ქირას იხდის.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "landlord",
+    "georgian": "მეპატრონე",
+    "pronunciation": "/ˈlændlɔːrd/",
+    "example_en": "Call the landlord.",
+    "example_ka": "მეპატრონეს დაურეკე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "lease",
+    "georgian": "იჯარა",
+    "pronunciation": "/liːs/",
+    "example_en": "Sign the lease.",
+    "example_ka": "იჯარის ხელშეკრულება ხელი მოაწერე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "rent",
+    "georgian": "ქირა",
+    "pronunciation": "/rent/",
+    "example_en": "Pay the rent.",
+    "example_ka": "ქირა გადაიხადე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "mortgage",
+    "georgian": "იპოთეკა",
+    "pronunciation": "/ˈmɔːrɡɪdʒ/",
+    "example_en": "Get a mortgage.",
+    "example_ka": "იპოთეკა აიღე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "eviction",
+    "georgian": "გამოსახლება",
+    "pronunciation": "/ɪˈvɪkʃən/",
+    "example_en": "Face eviction.",
+    "example_ka": "გამოსახლების საფრთხე.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "renovation",
+    "georgian": "რემონტი",
+    "pronunciation": "/ˌrenəˈveɪʃən/",
+    "example_en": "The renovation took months.",
+    "example_ka": "რემონტი თვეები გაგრძელდა.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "demolition",
+    "georgian": "დემონტაჟი",
+    "pronunciation": "/ˌdeməˈlɪʃən/",
+    "example_en": "The demolition was loud.",
+    "example_ka": "დემონტაჟი ხმამაღალი იყო.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "crane",
+    "georgian": "ამწე",
+    "pronunciation": "/kreɪn/",
+    "example_en": "The crane lifted steel.",
+    "example_ka": "ამწემ ფოლადი აიღო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "scaffold",
+    "georgian": "ხარაჩო",
+    "pronunciation": "/ˈskæfəld/",
+    "example_en": "Workers on the scaffold.",
+    "example_ka": "მუშები ხარაჩოზე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "cement",
+    "georgian": "ცემენტი",
+    "pronunciation": "/sɪˈment/",
+    "example_en": "Mix the cement.",
+    "example_ka": "ცემენტი აურიე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "brick",
+    "georgian": "აგური",
+    "pronunciation": "/brɪk/",
+    "example_en": "Build with brick.",
+    "example_ka": "აგურით ააშენე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "concrete",
+    "georgian": "ბეტონი",
+    "pronunciation": "/ˈkɒŋkriːt/",
+    "example_en": "Pour the concrete.",
+    "example_ka": "ბეტონი ჩაასხი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "asphalt",
+    "georgian": "ასფალტი",
+    "pronunciation": "/ˈæsfɔːlt/",
+    "example_en": "Fresh asphalt on the road.",
+    "example_ka": "ახალი ასფალტი გზაზე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "gravel",
+    "georgian": "ხრეში",
+    "pronunciation": "/ˈɡrævəl/",
+    "example_en": "Walk on gravel.",
+    "example_ka": "ხრეშზე იარე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "cobblestone",
+    "georgian": "ქვაფენილი",
+    "pronunciation": "/ˈkɒbəlstoʊn/",
+    "example_en": "Old cobblestone streets.",
+    "example_ka": "ძველი ქვაფენილის ქუჩები.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "tile",
+    "georgian": "ფილა",
+    "pronunciation": "/taɪl/",
+    "example_en": "Lay the tile.",
+    "example_ka": "ფილა დააგე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "storefront",
+    "georgian": "ვიტრინა",
+    "pronunciation": "/ˈstɔːrfrʌnt/",
+    "example_en": "The storefront was decorated.",
+    "example_ka": "ვიტრინა მორთული იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "shutter",
+    "georgian": "ჟალუზი",
+    "pronunciation": "/ˈʃʌtər/",
+    "example_en": "Close the shutter.",
+    "example_ka": "ჟალუზი დახურე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "doorstep",
+    "georgian": "ზღურბლი",
+    "pronunciation": "/ˈdɔːrstep/",
+    "example_en": "Wait on the doorstep.",
+    "example_ka": "ზღურბლთან დაელოდე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "threshold",
+    "georgian": "ბარიერი",
+    "pronunciation": "/ˈθreʃhoʊld/",
+    "example_en": "Cross the threshold.",
+    "example_ka": "ზღურბლი გადაკვეთე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "lobby",
+    "georgian": "ლობი",
+    "pronunciation": "/ˈlɒbi/",
+    "example_en": "Wait in the lobby.",
+    "example_ka": "ლობიში დაელოდე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "hallway",
+    "georgian": "დერეფანი",
+    "pronunciation": "/ˈhɔːlweɪ/",
+    "example_en": "Walk down the hallway.",
+    "example_ka": "დერეფანში გაიარე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "corridor",
+    "georgian": "კორიდორი",
+    "pronunciation": "/ˈkɒrɪdɔːr/",
+    "example_en": "The corridor was long.",
+    "example_ka": "კორიდორი გრძელი იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "attic",
+    "georgian": "სხვენი",
+    "pronunciation": "/ˈætɪk/",
+    "example_en": "Check the attic.",
+    "example_ka": "სხვენი შეამოწმე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "basement",
+    "georgian": "სარდაფი",
+    "pronunciation": "/ˈbeɪsmənt/",
+    "example_en": "Go to the basement.",
+    "example_ka": "სარდაფში ჩადი.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "cellar",
+    "georgian": "მარანი",
+    "pronunciation": "/ˈselər/",
+    "example_en": "Wine in the cellar.",
+    "example_ka": "ღვინო მარანში.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "ledge",
+    "georgian": "კარნიზი",
+    "pronunciation": "/ledʒ/",
+    "example_en": "Don't stand on the ledge.",
+    "example_ka": "კარნიზზე არ დადგე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "drainpipe",
+    "georgian": "საწვიმარი მილი",
+    "pronunciation": "/ˈdreɪnpaɪp/",
+    "example_en": "The drainpipe was broken.",
+    "example_ka": "საწვიმარი მილი გატეხილი იყო.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "sprinkler",
+    "georgian": "სასხურებელი",
+    "pronunciation": "/ˈsprɪŋklər/",
+    "example_en": "Turn on the sprinkler.",
+    "example_ka": "სასხურებელი ჩართე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "meter",
+    "georgian": "მრიცხველი",
+    "pronunciation": "/ˈmiːtər/",
+    "example_en": "Check the meter.",
+    "example_ka": "მრიცხველი შეამოწმე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "generator",
+    "georgian": "გენერატორი",
+    "pronunciation": "/ˈdʒenəreɪtər/",
+    "example_en": "The generator provides power.",
+    "example_ka": "გენერატორი ენერგიას აწვდის.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "transformer",
+    "georgian": "ტრანსფორმატორი",
+    "pronunciation": "/trænsˈfɔːrmər/",
+    "example_en": "The transformer exploded.",
+    "example_ka": "ტრანსფორმატორი აფეთქდა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "outlet",
+    "georgian": "როზეტი",
+    "pronunciation": "/ˈaʊtlet/",
+    "example_en": "Plug into the outlet.",
+    "example_ka": "როზეტში ჩართე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "socket",
+    "georgian": "სოკეტი",
+    "pronunciation": "/ˈsɒkɪt/",
+    "example_en": "The socket was loose.",
+    "example_ka": "სოკეტი მოშვებული იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "fuse",
+    "georgian": "დამცავი",
+    "pronunciation": "/fjuːz/",
+    "example_en": "The fuse blew.",
+    "example_ka": "დამცავი გადაიწვა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "breaker",
+    "georgian": "ავტომატი",
+    "pronunciation": "/ˈbreɪkər/",
+    "example_en": "Flip the breaker.",
+    "example_ka": "ავტომატი გადართე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "wiring",
+    "georgian": "გაყვანილობა",
+    "pronunciation": "/ˈwaɪərɪŋ/",
+    "example_en": "Fix the wiring.",
+    "example_ka": "გაყვანილობა შეაკეთე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "plumbing",
+    "georgian": "სანტექნიკა",
+    "pronunciation": "/ˈplʌmɪŋ/",
+    "example_en": "Call for plumbing.",
+    "example_ka": "სანტექნიკა გამოიძახე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "sewage",
+    "georgian": "კანალიზაცია",
+    "pronunciation": "/ˈsuːɪdʒ/",
+    "example_en": "Sewage problem.",
+    "example_ka": "კანალიზაციის პრობლემა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "recycling",
+    "georgian": "გადამუშავება",
+    "pronunciation": "/riːˈsaɪklɪŋ/",
+    "example_en": "Put it in recycling.",
+    "example_ka": "გადამუშავებაში ჩააგდე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "compost",
+    "georgian": "კომპოსტი",
+    "pronunciation": "/ˈkɒmpɒst/",
+    "example_en": "Make compost.",
+    "example_ka": "კომპოსტი გააკეთე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "landfill",
+    "georgian": "ნაგავსაყრელი",
+    "pronunciation": "/ˈlændfɪl/",
+    "example_en": "Waste goes to the landfill.",
+    "example_ka": "ნარჩენები ნაგავსაყრელზე მიდის.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "pollution",
+    "georgian": "დაბინძურება",
+    "pronunciation": "/pəˈluːʃən/",
+    "example_en": "Reduce pollution.",
+    "example_ka": "დაბინძურება შეამცირე.",
+    "category": "street-urban",
+    "level": "A2"
+  },
+  {
+    "english": "emission",
+    "georgian": "გამოფრქვევა",
+    "pronunciation": "/ɪˈmɪʃən/",
+    "example_en": "Reduce carbon emissions.",
+    "example_ka": "ნახშირბადის გამოფრქვევა შეამცირე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "sustainability",
+    "georgian": "მდგრადობა",
+    "pronunciation": "/səˌsteɪnəˈbɪləti/",
+    "example_en": "Focus on sustainability.",
+    "example_ka": "მდგრადობაზე ფოკუსირება.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "urban",
+    "georgian": "ურბანული",
+    "pronunciation": "/ˈɜːrbən/",
+    "example_en": "Urban life is fast.",
+    "example_ka": "ურბანული ცხოვრება სწრაფია.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "rural",
+    "georgian": "სოფლის",
+    "pronunciation": "/ˈrʊrəl/",
+    "example_en": "Rural areas are quiet.",
+    "example_ka": "სოფლის რაიონები წყნარია.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "metropolitan",
+    "georgian": "მეტროპოლიტენური",
+    "pronunciation": "/ˌmetrəˈpɒlɪtən/",
+    "example_en": "A metropolitan area.",
+    "example_ka": "მეტროპოლიტენური არეალი.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "municipal",
+    "georgian": "მუნიციპალური",
+    "pronunciation": "/mjuːˈnɪsɪpəl/",
+    "example_en": "Municipal government.",
+    "example_ka": "მუნიციპალური მთავრობა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "zoning",
+    "georgian": "ზონირება",
+    "pronunciation": "/ˈzoʊnɪŋ/",
+    "example_en": "Check the zoning laws.",
+    "example_ka": "ზონირების კანონები შეამოწმე.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "infrastructure",
+    "georgian": "ინფრასტრუქტურა",
+    "pronunciation": "/ˈɪnfrəstrʌktʃər/",
+    "example_en": "Improve infrastructure.",
+    "example_ka": "ინფრასტრუქტურა გააუმჯობესე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "gentrification",
+    "georgian": "გენტრიფიკაცია",
+    "pronunciation": "/ˌdʒentrɪfɪˈkeɪʃən/",
+    "example_en": "Gentrification changes neighborhoods.",
+    "example_ka": "გენტრიფიკაცია უბნებს ცვლის.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "displacement",
+    "georgian": "გადაადგილება",
+    "pronunciation": "/dɪsˈpleɪsmənt/",
+    "example_en": "Displacement of residents.",
+    "example_ka": "მცხოვრებლების გადაადგილება.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "commuter",
+    "georgian": "მგზავრი",
+    "pronunciation": "/kəˈmjuːtər/",
+    "example_en": "Commuters fill the subway.",
+    "example_ka": "მგზავრები მეტროს ავსებენ.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "crossroads",
+    "georgian": "გადაკვეთა",
+    "pronunciation": "/ˈkrɒsroʊdz/",
+    "example_en": "We met at the crossroads.",
+    "example_ka": "გადაკვეთაზე შევხვდით.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "alleyway",
+    "georgian": "წვრილი შესახვევი",
+    "pronunciation": "/ˈæliweɪ/",
+    "example_en": "The alleyway was dark.",
+    "example_ka": "წვრილი შესახვევი ბნელი იყო.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "promenade",
+    "georgian": "სასეირნო",
+    "pronunciation": "/ˌprɒməˈnɑːd/",
+    "example_en": "Walk along the promenade.",
+    "example_ka": "სასეირნოზე გაიარე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "esplanade",
+    "georgian": "ესპლანადა",
+    "pronunciation": "/ˌesplɑˈnɑːd/",
+    "example_en": "The esplanade overlooks the sea.",
+    "example_ka": "ესპლანადიდან ზღვა ჩანს.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "causeway",
+    "georgian": "კაუზვეი",
+    "pronunciation": "/ˈkɔːzweɪ/",
+    "example_en": "Drive across the causeway.",
+    "example_ka": "კაუზვეით გაიარე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "thoroughfare",
+    "georgian": "მთავარი გზა",
+    "pronunciation": "/ˈθʌrəfer/",
+    "example_en": "This is a busy thoroughfare.",
+    "example_ka": "ეს ხმაურიანი მთავარი გზაა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "arterial",
+    "georgian": "მთავარი არტერია",
+    "pronunciation": "/ɑːrˈtɪriəl/",
+    "example_en": "The arterial road is congested.",
+    "example_ka": "მთავარი არტერია გადატვირთულია.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "bypass",
+    "georgian": "შემოვლითი",
+    "pronunciation": "/ˈbaɪpæs/",
+    "example_en": "Take the bypass.",
+    "example_ka": "შემოვლითი გზით წადი.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "culvert",
+    "georgian": "წყალსადენი მილი",
+    "pronunciation": "/ˈkʌlvərt/",
+    "example_en": "Water flows through the culvert.",
+    "example_ka": "წყალი წყალსადენ მილში მიედინება.",
+    "category": "street-urban",
+    "level": "C1"
+  },
+  {
+    "english": "cul-de-sac",
+    "georgian": "ღია ბოლო",
+    "pronunciation": "/ˈkʌldəsæk/",
+    "example_en": "They live in a cul-de-sac.",
+    "example_ka": "ისინი ღია ბოლოზე ცხოვრობენ.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "flagstone",
+    "georgian": "ქვაფილები",
+    "pronunciation": "/ˈflæɡstoʊn/",
+    "example_en": "The path is made of flagstone.",
+    "example_ka": "ბილიკი ქვაფილებისგან არის.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "embankment",
+    "georgian": "ნაპირი",
+    "pronunciation": "/ɪmˈbæŋkmənt/",
+    "example_en": "Walk along the embankment.",
+    "example_ka": "ნაპირზე გაიარე.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "wharf",
+    "georgian": "ნაბრძანევი",
+    "pronunciation": "/wɔːrf/",
+    "example_en": "Ships dock at the wharf.",
+    "example_ka": "გემები ნაბრძანევზე დგებიან.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "quay",
+    "georgian": "რიყე",
+    "pronunciation": "/kiː/",
+    "example_en": "Stand on the quay.",
+    "example_ka": "რიყეზე დადექი.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "jetty",
+    "georgian": "ნაპირსამაგრი",
+    "pronunciation": "/ˈdʒeti/",
+    "example_en": "Fish from the jetty.",
+    "example_ka": "ნაპირსამაგრიდან თევზაობა.",
+    "category": "street-urban",
+    "level": "B2"
+  },
+  {
+    "english": "boardwalk",
+    "georgian": "სასეირნო ხიდი",
+    "pronunciation": "/ˈbɔːrdwɔːk/",
+    "example_en": "Stroll on the boardwalk.",
+    "example_ka": "სასეირნო ხიდზე გაისეირნე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "curbside",
+    "georgian": "ზღურბლთან",
+    "pronunciation": "/ˈkɜːrbsaɪd/",
+    "example_en": "Park curbside.",
+    "example_ka": "ზღურბლთან დააყენე.",
+    "category": "street-urban",
+    "level": "B1"
+  },
+  {
+    "english": "precinct",
+    "georgian": "უბანი",
+    "pronunciation": "/ˈpriːsɪŋkt/",
+    "example_en": "This is a shopping precinct.",
+    "example_ka": "ეს სავაჭრო უბანია.",
+    "category": "street-urban",
+    "level": "B2"
+  }
 ]

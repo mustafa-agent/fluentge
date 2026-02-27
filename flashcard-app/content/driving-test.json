@@ -1,27 +1,1802 @@
 [
-  {"english":"license","georgian":"მართვის მოწმობა","pronunciation":"LY-sens","example_en":"I just got my driver's license.","example_ka":"ახლახან მივიღე მართვის მოწმობა.","category":"Driving Test","level":"A2"},
-  {"english":"theory test","georgian":"თეორიული გამოცდა","pronunciation":"THEE-ree test","example_en":"I passed the theory test first try.","example_ka":"თეორიული გამოცდა პირველი ცდით ჩავაბარე.","category":"Driving Test","level":"B1"},
-  {"english":"speed limit","georgian":"სიჩქარის ზღვარი","pronunciation":"speed LIM-it","example_en":"The speed limit here is 60 km/h.","example_ka":"აქ სიჩქარის ზღვარი 60 კმ/სთ-ია.","category":"Driving Test","level":"A2"},
-  {"english":"intersection","georgian":"გზაჯვარედინი","pronunciation":"in-ter-SEK-shun","example_en":"Be careful at the intersection.","example_ka":"გზაჯვარედინზე ფრთხილად იყავი.","category":"Driving Test","level":"B1"},
-  {"english":"roundabout","georgian":"წრიული მოძრაობა","pronunciation":"ROWND-ah-bowt","example_en":"Take the second exit at the roundabout.","example_ka":"წრიულ მოძრაობაზე მეორე გასასვლელით წადი.","category":"Driving Test","level":"B1"},
-  {"english":"pedestrian","georgian":"ქვეითი","pronunciation":"peh-DES-tree-un","example_en":"Always stop for pedestrians.","example_ka":"ყოველთვის გაუჩერდი ქვეითებს.","category":"Driving Test","level":"B1"},
-  {"english":"crosswalk","georgian":"საფეხმავლო გადასასვლელი","pronunciation":"KROS-wawk","example_en":"Use the crosswalk to cross the street.","example_ka":"ქუჩის გადასაკვეთად საფეხმავლო გადასასვლელი გამოიყენე.","category":"Driving Test","level":"A2"},
-  {"english":"traffic light","georgian":"შუქნიშანი","pronunciation":"TRAF-ik lyt","example_en":"Stop at the red traffic light.","example_ka":"წითელ შუქნიშანზე გაჩერდი.","category":"Driving Test","level":"A2"},
-  {"english":"lane","georgian":"ზოლი","pronunciation":"layn","example_en":"Stay in your lane.","example_ka":"შენს ზოლში დარჩი.","category":"Driving Test","level":"A2"},
-  {"english":"overtake","georgian":"გასწრება","pronunciation":"oh-ver-TAYK","example_en":"Don't overtake on a curve.","example_ka":"მოსახვევში არ გაუსწრო.","category":"Driving Test","level":"B1"},
-  {"english":"yield","georgian":"დაუთმე გზა","pronunciation":"yeeld","example_en":"Yield to traffic from the right.","example_ka":"მარჯვნიდან მომავალ ტრანსპორტს დაუთმე გზა.","category":"Driving Test","level":"B1"},
-  {"english":"parallel parking","georgian":"პარალელური პარკინგი","pronunciation":"PAR-ah-lel PAR-king","example_en":"Parallel parking is the hardest part.","example_ka":"პარალელური პარკინგი ყველაზე რთული ნაწილია.","category":"Driving Test","level":"B1"},
-  {"english":"blind spot","georgian":"ბრმა წერტილი","pronunciation":"blynd spot","example_en":"Always check your blind spot.","example_ka":"ყოველთვის შეამოწმე ბრმა წერტილი.","category":"Driving Test","level":"B1"},
-  {"english":"seat belt","georgian":"უსაფრთხოების ღვედი","pronunciation":"seet belt","example_en":"Fasten your seat belt before driving.","example_ka":"მართვამდე შეიკარი უსაფრთხოების ღვედი.","category":"Driving Test","level":"A2"},
-  {"english":"mirror","georgian":"სარკე","pronunciation":"MIR-er","example_en":"Check your mirrors regularly.","example_ka":"რეგულარულად შეამოწმე სარკეები.","category":"Driving Test","level":"A2"},
-  {"english":"indicator","georgian":"მაშუქი/მანიშნებელი","pronunciation":"IN-dih-kay-ter","example_en":"Use your indicator before turning.","example_ka":"მოხვევამდე მაშუქი ჩართე.","category":"Driving Test","level":"B1"},
-  {"english":"fine","georgian":"ჯარიმა","pronunciation":"fyn","example_en":"I got a fine for speeding.","example_ka":"სიჩქარის გადაჭარბებისთვის ჯარიმა მივიღე.","category":"Driving Test","level":"A2"},
-  {"english":"highway","georgian":"ავტობანი","pronunciation":"HY-way","example_en":"The highway connects Tbilisi and Batumi.","example_ka":"ავტობანი თბილისსა და ბათუმს აკავშირებს.","category":"Driving Test","level":"A2"},
-  {"english":"reverse","georgian":"უკუსვლა","pronunciation":"rih-VERS","example_en":"Put the car in reverse.","example_ka":"მანქანა უკუსვლაში ჩააგდე.","category":"Driving Test","level":"A2"},
-  {"english":"insurance","georgian":"დაზღვევა","pronunciation":"in-SHOOR-uns","example_en":"Car insurance is mandatory.","example_ka":"ავტოდაზღვევა სავალდებულოა.","category":"Driving Test","level":"B1"},
-  {"english":"registration","georgian":"რეგისტრაცია","pronunciation":"rej-ih-STRAY-shun","example_en":"Show me your car registration.","example_ka":"მაჩვენე მანქანის რეგისტრაცია.","category":"Driving Test","level":"B1"},
-  {"english":"DUI","georgian":"თრობის მდგომარეობაში მართვა","pronunciation":"dee-yoo-EYE","example_en":"DUI is a serious offense.","example_ka":"თრობის მდგომარეობაში მართვა სერიოზული დანაშაულია.","category":"Driving Test","level":"B2"},
-  {"english":"road sign","georgian":"საგზაო ნიშანი","pronunciation":"rohd syn","example_en":"Pay attention to road signs.","example_ka":"საგზაო ნიშნებს ყურადღება მიაქციე.","category":"Driving Test","level":"A2"},
-  {"english":"emergency brake","georgian":"ხელის მუხრუჭი","pronunciation":"ee-MER-jen-see brayk","example_en":"Pull the emergency brake on hills.","example_ka":"აღმართზე ხელის მუხრუჭი აიწიე.","category":"Driving Test","level":"B1"},
-  {"english":"horn","georgian":"სიგნალი","pronunciation":"horn","example_en":"Don't honk the horn unnecessarily.","example_ka":"უმიზეზოდ სიგნალი ნუ დაუკრავ.","category":"Driving Test","level":"A2"}
+  {
+    "english": "license",
+    "georgian": "მართვის მოწმობა",
+    "pronunciation": "LY-sens",
+    "example_en": "I just got my driver's license.",
+    "example_ka": "ახლახან მივიღე მართვის მოწმობა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "intersection",
+    "georgian": "გზაჯვარედინი",
+    "pronunciation": "in-ter-SEK-shun",
+    "example_en": "Be careful at the intersection.",
+    "example_ka": "გზაჯვარედინზე ფრთხილად იყავი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "roundabout",
+    "georgian": "წრიული მოძრაობა",
+    "pronunciation": "ROWND-ah-bowt",
+    "example_en": "Take the second exit at the roundabout.",
+    "example_ka": "წრიულ მოძრაობაზე მეორე გასასვლელით წადი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "pedestrian",
+    "georgian": "ქვეითი",
+    "pronunciation": "peh-DES-tree-un",
+    "example_en": "Always stop for pedestrians.",
+    "example_ka": "ყოველთვის გაუჩერდი ქვეითებს.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "crosswalk",
+    "georgian": "საფეხმავლო გადასასვლელი",
+    "pronunciation": "KROS-wawk",
+    "example_en": "Use the crosswalk to cross the street.",
+    "example_ka": "ქუჩის გადასაკვეთად საფეხმავლო გადასასვლელი გამოიყენე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "lane",
+    "georgian": "ზოლი",
+    "pronunciation": "layn",
+    "example_en": "Stay in your lane.",
+    "example_ka": "შენს ზოლში დარჩი.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "overtake",
+    "georgian": "გასწრება",
+    "pronunciation": "oh-ver-TAYK",
+    "example_en": "Don't overtake on a curve.",
+    "example_ka": "მოსახვევში არ გაუსწრო.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "yield",
+    "georgian": "დაუთმე გზა",
+    "pronunciation": "yeeld",
+    "example_en": "Yield to traffic from the right.",
+    "example_ka": "მარჯვნიდან მომავალ ტრანსპორტს დაუთმე გზა.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "mirror",
+    "georgian": "სარკე",
+    "pronunciation": "MIR-er",
+    "example_en": "Check your mirrors regularly.",
+    "example_ka": "რეგულარულად შეამოწმე სარკეები.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "indicator",
+    "georgian": "მაშუქი/მანიშნებელი",
+    "pronunciation": "IN-dih-kay-ter",
+    "example_en": "Use your indicator before turning.",
+    "example_ka": "მოხვევამდე მაშუქი ჩართე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "fine",
+    "georgian": "ჯარიმა",
+    "pronunciation": "fyn",
+    "example_en": "I got a fine for speeding.",
+    "example_ka": "სიჩქარის გადაჭარბებისთვის ჯარიმა მივიღე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "highway",
+    "georgian": "ავტობანი",
+    "pronunciation": "HY-way",
+    "example_en": "The highway connects Tbilisi and Batumi.",
+    "example_ka": "ავტობანი თბილისსა და ბათუმს აკავშირებს.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "reverse",
+    "georgian": "უკუსვლა",
+    "pronunciation": "rih-VERS",
+    "example_en": "Put the car in reverse.",
+    "example_ka": "მანქანა უკუსვლაში ჩააგდე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "in-SHOOR-uns",
+    "example_en": "Car insurance is mandatory.",
+    "example_ka": "ავტოდაზღვევა სავალდებულოა.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "registration",
+    "georgian": "რეგისტრაცია",
+    "pronunciation": "rej-ih-STRAY-shun",
+    "example_en": "Show me your car registration.",
+    "example_ka": "მაჩვენე მანქანის რეგისტრაცია.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "DUI",
+    "georgian": "თრობის მდგომარეობაში მართვა",
+    "pronunciation": "dee-yoo-EYE",
+    "example_en": "DUI is a serious offense.",
+    "example_ka": "თრობის მდგომარეობაში მართვა სერიოზული დანაშაულია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "horn",
+    "georgian": "სიგნალი",
+    "pronunciation": "horn",
+    "example_en": "Don't honk the horn unnecessarily.",
+    "example_ka": "უმიზეზოდ სიგნალი ნუ დაუკრავ.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "accelerate",
+    "georgian": "აჩქარება",
+    "pronunciation": "/əkˈsɛləreɪt/",
+    "example_en": "Accelerate slowly on wet roads.",
+    "example_ka": "სველ გზაზე ნელა აჩქარდი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "brake",
+    "georgian": "მუხრუჭი",
+    "pronunciation": "/breɪk/",
+    "example_en": "Press the brake gently.",
+    "example_ka": "მუხრუჭს ნაზად დააჭირე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "clutch",
+    "georgian": "კავშირის პედალი",
+    "pronunciation": "/klʌtʃ/",
+    "example_en": "Release the clutch slowly.",
+    "example_ka": "კავშირის პედალი ნელა აუშვი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "gear",
+    "georgian": "სიჩქარე",
+    "pronunciation": "/ɡɪr/",
+    "example_en": "Shift to second gear.",
+    "example_ka": "მეორე სიჩქარეზე გადართე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "engine",
+    "georgian": "ძრავა",
+    "pronunciation": "/ˈɛndʒɪn/",
+    "example_en": "Start the engine.",
+    "example_ka": "ძრავა ჩართე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "steering",
+    "georgian": "საჭე",
+    "pronunciation": "/ˈstɪrɪŋ/",
+    "example_en": "Hold the steering wheel with both hands.",
+    "example_ka": "საჭე ორივე ხელით დაიჭირე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "wheel",
+    "georgian": "ბორბალი",
+    "pronunciation": "/wiːl/",
+    "example_en": "Check all four wheels.",
+    "example_ka": "ოთხივე ბორბალი შეამოწმე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "tire",
+    "georgian": "საბურავი",
+    "pronunciation": "/taɪər/",
+    "example_en": "My tire is flat.",
+    "example_ka": "საბურავი გამიფუჭდა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "headlight",
+    "georgian": "ფარი",
+    "pronunciation": "/ˈhɛdlaɪt/",
+    "example_en": "Turn on your headlights.",
+    "example_ka": "ფარები ჩართე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "taillight",
+    "georgian": "უკანა ფარი",
+    "pronunciation": "/ˈteɪllaɪt/",
+    "example_en": "Your taillight is broken.",
+    "example_ka": "უკანა ფარი გატყდა.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "signal",
+    "georgian": "სიგნალი",
+    "pronunciation": "/ˈsɪɡnəl/",
+    "example_en": "Always signal before turning.",
+    "example_ka": "მოხვევამდე ყოველთვის სიგნალი მიეცი.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "speed",
+    "georgian": "სიჩქარე",
+    "pronunciation": "/spiːd/",
+    "example_en": "Watch your speed.",
+    "example_ka": "სიჩქარეს მიხედე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "limit",
+    "georgian": "ზღვარი",
+    "pronunciation": "/ˈlɪmɪt/",
+    "example_en": "The speed limit is 60.",
+    "example_ka": "სიჩქარის ზღვარი 60-ია.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "park",
+    "georgian": "გაჩერება",
+    "pronunciation": "/pɑːrk/",
+    "example_en": "Park the car here.",
+    "example_ka": "მანქანა აქ გააჩერე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "parking",
+    "georgian": "პარკინგი",
+    "pronunciation": "/ˈpɑːrkɪŋ/",
+    "example_en": "Is there a parking lot nearby?",
+    "example_ka": "ახლოს პარკინგია?",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "seatbelt",
+    "georgian": "უსაფრთხოების ღვედი",
+    "pronunciation": "/ˈsiːtbɛlt/",
+    "example_en": "Fasten your seatbelt.",
+    "example_ka": "უსაფრთხოების ღვედი შეიკარი.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "airbag",
+    "georgian": "აირბეგი",
+    "pronunciation": "/ˈɛrbæɡ/",
+    "example_en": "The airbag saved his life.",
+    "example_ka": "აირბეგმა სიცოცხლე უშველა.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "accident",
+    "georgian": "ავარია",
+    "pronunciation": "/ˈæksɪdənt/",
+    "example_en": "There was an accident on the road.",
+    "example_ka": "გზაზე ავარია მოხდა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "collision",
+    "georgian": "შეჯახება",
+    "pronunciation": "/kəˈlɪʒən/",
+    "example_en": "The collision was minor.",
+    "example_ka": "შეჯახება მცირე იყო.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "crash",
+    "georgian": "ავარია",
+    "pronunciation": "/kræʃ/",
+    "example_en": "He crashed into a tree.",
+    "example_ka": "ხეს დაეჯახა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "damage",
+    "georgian": "დაზიანება",
+    "pronunciation": "/ˈdæmɪdʒ/",
+    "example_en": "There is minor damage to the bumper.",
+    "example_ka": "ბამპერი ოდნავ დაზიანდა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "bumper",
+    "georgian": "ბამპერი",
+    "pronunciation": "/ˈbʌmpər/",
+    "example_en": "The bumper needs repair.",
+    "example_ka": "ბამპერის შეკეთებაა საჭირო.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "windshield",
+    "georgian": "საქარე მინა",
+    "pronunciation": "/ˈwɪndʃiːld/",
+    "example_en": "Clean the windshield.",
+    "example_ka": "საქარე მინა გაწმინდე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "wiper",
+    "georgian": "საწმენდი",
+    "pronunciation": "/ˈwaɪpər/",
+    "example_en": "Turn on the wipers.",
+    "example_ka": "საწმენდები ჩართე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "fuel",
+    "georgian": "საწვავი",
+    "pronunciation": "/fjuːəl/",
+    "example_en": "We are running low on fuel.",
+    "example_ka": "საწვავი გვილევს.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "gasoline",
+    "georgian": "ბენზინი",
+    "pronunciation": "/ˈɡæsəliːn/",
+    "example_en": "Fill it up with gasoline.",
+    "example_ka": "ბენზინით აავსე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "diesel",
+    "georgian": "დიზელი",
+    "pronunciation": "/ˈdiːzəl/",
+    "example_en": "This car runs on diesel.",
+    "example_ka": "ეს მანქანა დიზელზე მუშაობს.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "mileage",
+    "georgian": "გარბენი",
+    "pronunciation": "/ˈmaɪlɪdʒ/",
+    "example_en": "What is the mileage on this car?",
+    "example_ka": "ამ მანქანის გარბენი რამდენია?",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "odometer",
+    "georgian": "ოდომეტრი",
+    "pronunciation": "/oʊˈdɒmɪtər/",
+    "example_en": "Check the odometer reading.",
+    "example_ka": "ოდომეტრის მაჩვენებელი შეამოწმე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "speedometer",
+    "georgian": "სიჩქარის მრიცხველი",
+    "pronunciation": "/spɪˈdɒmɪtər/",
+    "example_en": "The speedometer shows 80.",
+    "example_ka": "სიჩქარის მრიცხველი 80-ს აჩვენებს.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "transmission",
+    "georgian": "გადაცემათა კოლოფი",
+    "pronunciation": "/trænzˈmɪʃən/",
+    "example_en": "Is it manual or automatic transmission?",
+    "example_ka": "მექანიკაა თუ ავტომატი?",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "automatic",
+    "georgian": "ავტომატური",
+    "pronunciation": "/ˌɔːtəˈmætɪk/",
+    "example_en": "I prefer automatic cars.",
+    "example_ka": "ავტომატურ მანქანებს ვამჯობინებ.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "manual",
+    "georgian": "მექანიკური",
+    "pronunciation": "/ˈmænjuəl/",
+    "example_en": "Can you drive manual?",
+    "example_ka": "მექანიკის ტარება შეგიძლია?",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "traffic",
+    "georgian": "საგზაო მოძრაობა",
+    "pronunciation": "/ˈtræfɪk/",
+    "example_en": "Traffic is heavy today.",
+    "example_ka": "დღეს მოძრაობა მძიმეა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "congestion",
+    "georgian": "საცობი",
+    "pronunciation": "/kənˈdʒɛstʃən/",
+    "example_en": "There is congestion on the highway.",
+    "example_ka": "ავტობანზე საცობია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "detour",
+    "georgian": "შემოვლითი გზა",
+    "pronunciation": "/ˈdiːtʊr/",
+    "example_en": "Take the detour.",
+    "example_ka": "შემოვლითი გზით წადი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "exit",
+    "georgian": "გასასვლელი",
+    "pronunciation": "/ˈɛɡzɪt/",
+    "example_en": "Take the next exit.",
+    "example_ka": "შემდეგ გასასვლელში გადი.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "ramp",
+    "georgian": "ესტაკადა",
+    "pronunciation": "/ræmp/",
+    "example_en": "Use the ramp to enter the highway.",
+    "example_ka": "ავტობანზე ესტაკადით შედი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "merge",
+    "georgian": "შერწყმა",
+    "pronunciation": "/mɜːrdʒ/",
+    "example_en": "Merge carefully into traffic.",
+    "example_ka": "ფრთხილად შეერწყი მოძრაობას.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "curve",
+    "georgian": "მოსახვევი",
+    "pronunciation": "/kɜːrv/",
+    "example_en": "Slow down before the curve.",
+    "example_ka": "მოსახვევამდე შეანელე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "slope",
+    "georgian": "ფერდობი",
+    "pronunciation": "/sloʊp/",
+    "example_en": "Be careful on this steep slope.",
+    "example_ka": "ამ ციცაბო ფერდობზე ფრთხილად.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "shoulder",
+    "georgian": "გზისპირა ზოლი",
+    "pronunciation": "/ˈʃoʊldər/",
+    "example_en": "Pull over to the shoulder.",
+    "example_ka": "გზისპირა ზოლზე გადაწიე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "median",
+    "georgian": "გამყოფი ზოლი",
+    "pronunciation": "/ˈmiːdiən/",
+    "example_en": "Do not cross the median.",
+    "example_ka": "გამყოფ ზოლზე არ გადახვიდე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "bridge",
+    "georgian": "ხიდი",
+    "pronunciation": "/brɪdʒ/",
+    "example_en": "Drive slowly on the bridge.",
+    "example_ka": "ხიდზე ნელა იარე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "tunnel",
+    "georgian": "გვირაბი",
+    "pronunciation": "/ˈtʌnəl/",
+    "example_en": "Turn on lights in the tunnel.",
+    "example_ka": "გვირაბში ფარები ჩართე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "toll",
+    "georgian": "საგზაო გადასახადი",
+    "pronunciation": "/toʊl/",
+    "example_en": "Pay the toll at the booth.",
+    "example_ka": "ჯიხურში საგზაო გადასახადი გადაიხადე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "booth",
+    "georgian": "ჯიხური",
+    "pronunciation": "/buːθ/",
+    "example_en": "Stop at the toll booth.",
+    "example_ka": "საგზაო გადასახადის ჯიხურთან გაჩერდი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "sign",
+    "georgian": "ნიშანი",
+    "pronunciation": "/saɪn/",
+    "example_en": "Follow the road signs.",
+    "example_ka": "საგზაო ნიშნებს მიჰყევი.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "stop",
+    "georgian": "გაჩერება",
+    "pronunciation": "/stɒp/",
+    "example_en": "Stop at the red light.",
+    "example_ka": "წითელ შუქზე გაჩერდი.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "slow",
+    "georgian": "ნელი",
+    "pronunciation": "/sloʊ/",
+    "example_en": "Slow down near schools.",
+    "example_ka": "სკოლებთან შეანელე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "fast",
+    "georgian": "სწრაფი",
+    "pronunciation": "/fæst/",
+    "example_en": "You are driving too fast.",
+    "example_ka": "ძალიან სწრაფად მიდიხარ.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "turn",
+    "georgian": "მოხვევა",
+    "pronunciation": "/tɜːrn/",
+    "example_en": "Turn left at the light.",
+    "example_ka": "შუქნიშანთან მარცხნივ მოუხვიე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "left",
+    "georgian": "მარცხნივ",
+    "pronunciation": "/lɛft/",
+    "example_en": "Take a left here.",
+    "example_ka": "აქ მარცხნივ მოუხვიე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "right",
+    "georgian": "მარჯვნივ",
+    "pronunciation": "/raɪt/",
+    "example_en": "Turn right at the corner.",
+    "example_ka": "კუთხეში მარჯვნივ მოუხვიე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "straight",
+    "georgian": "პირდაპირ",
+    "pronunciation": "/streɪt/",
+    "example_en": "Go straight for two blocks.",
+    "example_ka": "ორ კვარტალს პირდაპირ წადი.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "parallel",
+    "georgian": "პარალელური",
+    "pronunciation": "/ˈpærəlɛl/",
+    "example_en": "Practice parallel parking.",
+    "example_ka": "ივარჯიშე პარალელურ პარკირებაში.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "tow",
+    "georgian": "ბუქსირი",
+    "pronunciation": "/toʊ/",
+    "example_en": "My car was towed.",
+    "example_ka": "მანქანა ბუქსირით წაიყვანეს.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "impound",
+    "georgian": "დაყადაღება",
+    "pronunciation": "/ɪmˈpaʊnd/",
+    "example_en": "They impounded my vehicle.",
+    "example_ka": "მანქანა დამიყადაღეს.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "violation",
+    "georgian": "დარღვევა",
+    "pronunciation": "/ˌvaɪəˈleɪʃən/",
+    "example_en": "That is a traffic violation.",
+    "example_ka": "ეს საგზაო წესების დარღვევაა.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "penalty",
+    "georgian": "ჯარიმა",
+    "pronunciation": "/ˈpɛnəlti/",
+    "example_en": "The penalty for speeding is high.",
+    "example_ka": "სიჩქარის გადაჭარბების ჯარიმა მაღალია.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "suspend",
+    "georgian": "შეჩერება",
+    "pronunciation": "/səˈspɛnd/",
+    "example_en": "His license was suspended.",
+    "example_ka": "მართვის მოწმობა შეუჩერეს.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "revoke",
+    "georgian": "გაუქმება",
+    "pronunciation": "/rɪˈvoʊk/",
+    "example_en": "They revoked his license.",
+    "example_ka": "მართვის მოწმობა გაუუქმეს.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "exam",
+    "georgian": "გამოცდა",
+    "pronunciation": "/ɪɡˈzæm/",
+    "example_en": "I passed the driving exam.",
+    "example_ka": "სამართვმოწმობო გამოცდა ჩავაბარე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "test",
+    "georgian": "ტესტი",
+    "pronunciation": "/tɛst/",
+    "example_en": "The driving test was easy.",
+    "example_ka": "მართვის ტესტი ადვილი იყო.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "instructor",
+    "georgian": "ინსტრუქტორი",
+    "pronunciation": "/ɪnˈstrʌktər/",
+    "example_en": "My driving instructor is great.",
+    "example_ka": "ჩემი ინსტრუქტორი შესანიშნავია.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "practice",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈpræktɪs/",
+    "example_en": "Practice driving every day.",
+    "example_ka": "ყოველდღე ივარჯიშე მართვაში.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "permit",
+    "georgian": "ნებართვა",
+    "pronunciation": "/ˈpɜːrmɪt/",
+    "example_en": "I have a learner's permit.",
+    "example_ka": "მოსწავლის ნებართვა მაქვს.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "learner",
+    "georgian": "მოსწავლე",
+    "pronunciation": "/ˈlɜːrnər/",
+    "example_en": "Learner drivers must be supervised.",
+    "example_ka": "მოსწავლე მძღოლებს მეთვალყურე სჭირდებათ.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "passenger",
+    "georgian": "მგზავრი",
+    "pronunciation": "/ˈpæsɪndʒər/",
+    "example_en": "The passenger should wear a seatbelt.",
+    "example_ka": "მგზავრმა ღვედი უნდა შეიკრას.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "driver",
+    "georgian": "მძღოლი",
+    "pronunciation": "/ˈdraɪvər/",
+    "example_en": "The driver must be sober.",
+    "example_ka": "მძღოლი ფხიზელი უნდა იყოს.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "road",
+    "georgian": "გზა",
+    "pronunciation": "/roʊd/",
+    "example_en": "The road is slippery.",
+    "example_ka": "გზა მოსრიალეა.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "street",
+    "georgian": "ქუჩა",
+    "pronunciation": "/striːt/",
+    "example_en": "This is a one-way street.",
+    "example_ka": "ეს ცალმხრივი ქუჩაა.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "sidewalk",
+    "georgian": "ტროტუარი",
+    "pronunciation": "/ˈsaɪdwɔːk/",
+    "example_en": "Do not drive on the sidewalk.",
+    "example_ka": "ტროტუარზე ნუ ხვალ.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "curb",
+    "georgian": "საფეხურა",
+    "pronunciation": "/kɜːrb/",
+    "example_en": "Park close to the curb.",
+    "example_ka": "საფეხურასთან ახლოს გააჩერე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "pothole",
+    "georgian": "ორმო",
+    "pronunciation": "/ˈpɒthoʊl/",
+    "example_en": "Watch out for potholes.",
+    "example_ka": "ორმოებს ეფრთხილე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "pavement",
+    "georgian": "ფენილი",
+    "pronunciation": "/ˈpeɪvmənt/",
+    "example_en": "The pavement is wet.",
+    "example_ka": "ფენილი სველია.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "gravel",
+    "georgian": "ხრეში",
+    "pronunciation": "/ˈɡrævəl/",
+    "example_en": "Drive slowly on gravel roads.",
+    "example_ka": "ხრეშიან გზაზე ნელა იარე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "asphalt",
+    "georgian": "ასფალტი",
+    "pronunciation": "/ˈæsfælt/",
+    "example_en": "The asphalt needs repair.",
+    "example_ka": "ასფალტს შეკეთება სჭირდება.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "hood",
+    "georgian": "კაპოტი",
+    "pronunciation": "/hʊd/",
+    "example_en": "Open the hood to check the engine.",
+    "example_ka": "კაპოტი გახსენი ძრავის შესამოწმებლად.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "trunk",
+    "georgian": "საბარგული",
+    "pronunciation": "/trʌŋk/",
+    "example_en": "Put the bags in the trunk.",
+    "example_ka": "ჩანთები საბარგულში ჩადე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "dashboard",
+    "georgian": "დაფა",
+    "pronunciation": "/ˈdæʃbɔːrd/",
+    "example_en": "Check the dashboard lights.",
+    "example_ka": "დაფის ნათურები შეამოწმე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "ignition",
+    "georgian": "ანთება",
+    "pronunciation": "/ɪɡˈnɪʃən/",
+    "example_en": "Turn the ignition key.",
+    "example_ka": "ანთების გასაღები გადაატრიალე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "exhaust",
+    "georgian": "გამონაბოლქვი",
+    "pronunciation": "/ɪɡˈzɔːst/",
+    "example_en": "The exhaust is too loud.",
+    "example_ka": "გამონაბოლქვი ძალიან ხმამაღალია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "emission",
+    "georgian": "გამოფრქვევა",
+    "pronunciation": "/ɪˈmɪʃən/",
+    "example_en": "Check the emission levels.",
+    "example_ka": "გამოფრქვევის დონეები შეამოწმე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "radiator",
+    "georgian": "რადიატორი",
+    "pronunciation": "/ˈreɪdieɪtər/",
+    "example_en": "The radiator is overheating.",
+    "example_ka": "რადიატორი ხურდება.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "coolant",
+    "georgian": "გამაგრილებელი",
+    "pronunciation": "/ˈkuːlənt/",
+    "example_en": "Add more coolant.",
+    "example_ka": "გამაგრილებელი დაამატე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "battery",
+    "georgian": "აკუმულატორი",
+    "pronunciation": "/ˈbætəri/",
+    "example_en": "The battery is dead.",
+    "example_ka": "აკუმულატორი დაჯდა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "alternator",
+    "georgian": "გენერატორი",
+    "pronunciation": "/ˈɔːltərneɪtər/",
+    "example_en": "The alternator needs replacing.",
+    "example_ka": "გენერატორის შეცვლაა საჭირო.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "suspension",
+    "georgian": "ამორტიზაცია",
+    "pronunciation": "/səˈspɛnʃən/",
+    "example_en": "The suspension feels rough.",
+    "example_ka": "ამორტიზაცია ხისტია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "alignment",
+    "georgian": "გასწორება",
+    "pronunciation": "/əˈlaɪnmənt/",
+    "example_en": "The wheels need alignment.",
+    "example_ka": "ბორბლებს გასწორება სჭირდებათ.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "inspection",
+    "georgian": "ტექდათვალიერება",
+    "pronunciation": "/ɪnˈspɛkʃən/",
+    "example_en": "The car needs an annual inspection.",
+    "example_ka": "მანქანას წლიური ტექდათვალიერება სჭირდება.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "maintenance",
+    "georgian": "მოვლა",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "example_en": "Regular maintenance is important.",
+    "example_ka": "რეგულარული მოვლა მნიშვნელოვანია.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "mechanic",
+    "georgian": "მექანიკოსი",
+    "pronunciation": "/məˈkænɪk/",
+    "example_en": "Take it to a mechanic.",
+    "example_ka": "მექანიკოსთან წაიღე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "garage",
+    "georgian": "ავტოფარეხი",
+    "pronunciation": "/ɡəˈrɑːʒ/",
+    "example_en": "Park in the garage.",
+    "example_ka": "ავტოფარეხში გააჩერე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "oil",
+    "georgian": "ზეთი",
+    "pronunciation": "/ɔɪl/",
+    "example_en": "Change the oil regularly.",
+    "example_ka": "ზეთი რეგულარულად შეცვალე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Replace the air filter.",
+    "example_ka": "ჰაერის ფილტრი შეცვალე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "plug",
+    "georgian": "ანთების სანთელი",
+    "pronunciation": "/plʌɡ/",
+    "example_en": "The spark plug needs changing.",
+    "example_ka": "ანთების სანთლის შეცვლაა საჭირო.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "antifreeze",
+    "georgian": "ანტიფრიზი",
+    "pronunciation": "/ˈæntifriːz/",
+    "example_en": "Add antifreeze in winter.",
+    "example_ka": "ზამთარში ანტიფრიზი დაამატე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "jack",
+    "georgian": "დომკრატი",
+    "pronunciation": "/dʒæk/",
+    "example_en": "Use the jack to lift the car.",
+    "example_ka": "მანქანის ასაწევად დომკრატი გამოიყენე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "spare",
+    "georgian": "სათადარიგო",
+    "pronunciation": "/spɛr/",
+    "example_en": "Do you have a spare tire?",
+    "example_ka": "სათადარიგო საბურავი გაქვს?",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "navigate",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˈnævɪɡeɪt/",
+    "example_en": "Use GPS to navigate.",
+    "example_ka": "ნავიგაციისთვის GPS გამოიყენე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "route",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/ruːt/",
+    "example_en": "Choose the fastest route.",
+    "example_ka": "ყველაზე სწრაფი მარშრუტი აირჩიე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "destination",
+    "georgian": "დანიშნულების ადგილი",
+    "pronunciation": "/ˌdɛstɪˈneɪʃən/",
+    "example_en": "We arrived at our destination.",
+    "example_ka": "დანიშნულების ადგილზე მივედით.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "distance",
+    "georgian": "მანძილი",
+    "pronunciation": "/ˈdɪstəns/",
+    "example_en": "What is the distance to Batumi?",
+    "example_ka": "ბათუმამდე მანძილი რამდენია?",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "kilometer",
+    "georgian": "კილომეტრი",
+    "pronunciation": "/ˈkɪləmiːtər/",
+    "example_en": "It is 300 kilometers away.",
+    "example_ka": "300 კილომეტრის მოშორებითაა.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "mile",
+    "georgian": "მილი",
+    "pronunciation": "/maɪl/",
+    "example_en": "It is about two miles away.",
+    "example_ka": "დაახლოებით ორ მილშია.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "direction",
+    "georgian": "მიმართულება",
+    "pronunciation": "/dɪˈrɛkʃən/",
+    "example_en": "Which direction should I go?",
+    "example_ka": "რომელი მიმართულებით წავიდე?",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "north",
+    "georgian": "ჩრდილოეთი",
+    "pronunciation": "/nɔːrθ/",
+    "example_en": "Drive north for 10 minutes.",
+    "example_ka": "ჩრდილოეთით 10 წუთი იარე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "south",
+    "georgian": "სამხრეთი",
+    "pronunciation": "/saʊθ/",
+    "example_en": "Head south on this road.",
+    "example_ka": "ამ გზაზე სამხრეთისკენ წადი.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "east",
+    "georgian": "აღმოსავლეთი",
+    "pronunciation": "/iːst/",
+    "example_en": "Turn east at the junction.",
+    "example_ka": "შეერთებაზე აღმოსავლეთით მოუხვიე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "west",
+    "georgian": "დასავლეთი",
+    "pronunciation": "/wɛst/",
+    "example_en": "The sun sets in the west.",
+    "example_ka": "მზე დასავლეთით ჩადის.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "junction",
+    "georgian": "შეერთება",
+    "pronunciation": "/ˈdʒʌŋkʃən/",
+    "example_en": "Wait at the junction.",
+    "example_ka": "შეერთებაზე დაელოდე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "overpass",
+    "georgian": "ესტაკადა",
+    "pronunciation": "/ˈoʊvərpæs/",
+    "example_en": "Take the overpass.",
+    "example_ka": "ესტაკადით გადაიარე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "underpass",
+    "georgian": "გვირაბი",
+    "pronunciation": "/ˈʌndərpæs/",
+    "example_en": "Use the underpass.",
+    "example_ka": "მიწისქვეშა გადასასვლელი გამოიყენე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "patrol",
+    "georgian": "პატრული",
+    "pronunciation": "/pəˈtroʊl/",
+    "example_en": "A police patrol stopped me.",
+    "example_ka": "პოლიციის პატრულმა გამაჩერა.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "officer",
+    "georgian": "ოფიცერი",
+    "pronunciation": "/ˈɒfɪsər/",
+    "example_en": "The officer checked my license.",
+    "example_ka": "ოფიცერმა მოწმობა შემამოწმა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "siren",
+    "georgian": "სირენა",
+    "pronunciation": "/ˈsaɪrən/",
+    "example_en": "Pull over when you hear a siren.",
+    "example_ka": "სირენა რომ გაიგო, გზისპირზე გადაწიე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "emergency",
+    "georgian": "საგანგებო",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Call emergency services.",
+    "example_ka": "სასწრაფო დახმარება გამოიძახე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "ambulance",
+    "georgian": "სასწრაფო",
+    "pronunciation": "/ˈæmbjələns/",
+    "example_en": "Let the ambulance pass.",
+    "example_ka": "სასწრაფოს გაუარე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "traction",
+    "georgian": "წევა",
+    "pronunciation": "/ˈtrækʃən/",
+    "example_en": "Tires lose traction on ice.",
+    "example_ka": "ყინულზე საბურავებს წევა ეკარგებათ.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "skid",
+    "georgian": "გასრიალება",
+    "pronunciation": "/skɪd/",
+    "example_en": "The car started to skid.",
+    "example_ka": "მანქანა გასრიალდა.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "hydroplane",
+    "georgian": "აკვაპლანირება",
+    "pronunciation": "/ˈhaɪdroʊpleɪn/",
+    "example_en": "Cars can hydroplane in rain.",
+    "example_ka": "წვიმაში მანქანებს აკვაპლანირება შეუძლიათ.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "visibility",
+    "georgian": "ხილვადობა",
+    "pronunciation": "/ˌvɪzɪˈbɪlɪti/",
+    "example_en": "Visibility is low in fog.",
+    "example_ka": "ნისლში ხილვადობა დაბალია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "fog",
+    "georgian": "ნისლი",
+    "pronunciation": "/fɒɡ/",
+    "example_en": "Drive slowly in fog.",
+    "example_ka": "ნისლში ნელა იარე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "rain",
+    "georgian": "წვიმა",
+    "pronunciation": "/reɪn/",
+    "example_en": "Be careful driving in rain.",
+    "example_ka": "წვიმაში ფრთხილად იარე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "snow",
+    "georgian": "თოვლი",
+    "pronunciation": "/snoʊ/",
+    "example_en": "Snow makes roads dangerous.",
+    "example_ka": "თოვლი გზებს საშიშს ხდის.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "ice",
+    "georgian": "ყინული",
+    "pronunciation": "/aɪs/",
+    "example_en": "Watch out for ice on the road.",
+    "example_ka": "გზაზე ყინულს ეფრთხილე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "chain",
+    "georgian": "ჯაჭვი",
+    "pronunciation": "/tʃeɪn/",
+    "example_en": "Put chains on your tires.",
+    "example_ka": "საბურავებზე ჯაჭვები დაადე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "hazard",
+    "georgian": "საფრთხე",
+    "pronunciation": "/ˈhæzərd/",
+    "example_en": "Turn on your hazard lights.",
+    "example_ka": "ავარიული ფარები ჩართე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "caution",
+    "georgian": "სიფრთხილე",
+    "pronunciation": "/ˈkɔːʃən/",
+    "example_en": "Proceed with caution.",
+    "example_ka": "სიფრთხილით გააგრძელე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "blind",
+    "georgian": "ბრმა",
+    "pronunciation": "/blaɪnd/",
+    "example_en": "Check your blind spot.",
+    "example_ka": "ბრმა წერტილი შეამოწმე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "spot",
+    "georgian": "წერტილი",
+    "pronunciation": "/spɒt/",
+    "example_en": "This is a dangerous spot.",
+    "example_ka": "ეს საშიში ადგილია.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "zone",
+    "georgian": "ზონა",
+    "pronunciation": "/zoʊn/",
+    "example_en": "This is a school zone.",
+    "example_ka": "ეს სასკოლო ზონაა.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "restrict",
+    "georgian": "შეზღუდვა",
+    "pronunciation": "/rɪˈstrɪkt/",
+    "example_en": "Parking is restricted here.",
+    "example_ka": "აქ პარკირება შეზღუდულია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "prohibit",
+    "georgian": "აკრძალვა",
+    "pronunciation": "/prəˈhɪbɪt/",
+    "example_en": "Honking is prohibited here.",
+    "example_ka": "აქ სიგნალის მიცემა აკრძალულია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "allow",
+    "georgian": "ნებართვა",
+    "pronunciation": "/əˈlaʊ/",
+    "example_en": "Parking is not allowed here.",
+    "example_ka": "აქ გაჩერება ნებადართული არ არის.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "obey",
+    "georgian": "დამორჩილება",
+    "pronunciation": "/oʊˈbeɪ/",
+    "example_en": "Obey all traffic rules.",
+    "example_ka": "ყველა საგზაო წესს დაემორჩილე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "commute",
+    "georgian": "სამსახურში მგზავრობა",
+    "pronunciation": "/kəˈmjuːt/",
+    "example_en": "My commute takes 30 minutes.",
+    "example_ka": "სამსახურში მგზავრობა 30 წუთი მჭირდება.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "carpool",
+    "georgian": "თანამგზავრობა",
+    "pronunciation": "/ˈkɑːrpuːl/",
+    "example_en": "We carpool to save money.",
+    "example_ka": "ფულის დაზოგვისთვის ერთად ვმგზავრობთ.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "rental",
+    "georgian": "გაქირავება",
+    "pronunciation": "/ˈrɛntəl/",
+    "example_en": "We need a rental car.",
+    "example_ka": "გასაქირავებელი მანქანა გვჭირდება.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "convertible",
+    "georgian": "კაბრიოლეტი",
+    "pronunciation": "/kənˈvɜːrtɪbl/",
+    "example_en": "He drives a red convertible.",
+    "example_ka": "წითელი კაბრიოლეტით დადის.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "sedan",
+    "georgian": "სედანი",
+    "pronunciation": "/sɪˈdæn/",
+    "example_en": "A sedan is good for families.",
+    "example_ka": "სედანი ოჯახებისთვის კარგია.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "SUV",
+    "georgian": "ჯიპი",
+    "pronunciation": "/ˌɛsjuːˈviː/",
+    "example_en": "An SUV is better for mountains.",
+    "example_ka": "მთებისთვის ჯიპი უკეთესია.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "truck",
+    "georgian": "სატვირთო",
+    "pronunciation": "/trʌk/",
+    "example_en": "A truck is coming behind you.",
+    "example_ka": "უკნიდან სატვირთო მოდის.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "motorcycle",
+    "georgian": "მოტოციკლი",
+    "pronunciation": "/ˈmoʊtərsaɪkəl/",
+    "example_en": "Watch out for motorcycles.",
+    "example_ka": "მოტოციკლებს ეფრთხილე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "bicycle",
+    "georgian": "ველოსიპედი",
+    "pronunciation": "/ˈbaɪsɪkəl/",
+    "example_en": "Give bicycles enough space.",
+    "example_ka": "ველოსიპედებს საკმარისი ადგილი მიეცი.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "scooter",
+    "georgian": "სკუტერი",
+    "pronunciation": "/ˈskuːtər/",
+    "example_en": "Scooters are popular in the city.",
+    "example_ka": "სკუტერები ქალაქში პოპულარულია.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "van",
+    "georgian": "მიკროავტობუსი",
+    "pronunciation": "/væn/",
+    "example_en": "We rented a van for the trip.",
+    "example_ka": "მოგზაურობისთვის მიკროავტობუსი დავქირავეთ.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "taxi",
+    "georgian": "ტაქსი",
+    "pronunciation": "/ˈtæksi/",
+    "example_en": "Call a taxi.",
+    "example_ka": "ტაქსი გამოიძახე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "uber",
+    "georgian": "უბერი",
+    "pronunciation": "/ˈuːbər/",
+    "example_en": "I ordered an Uber.",
+    "example_ka": "უბერი გამოვიძახე.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "autopilot",
+    "georgian": "ავტოპილოტი",
+    "pronunciation": "/ˈɔːtoʊpaɪlət/",
+    "example_en": "The car has autopilot.",
+    "example_ka": "მანქანას ავტოპილოტი აქვს.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "sensor",
+    "georgian": "სენსორი",
+    "pronunciation": "/ˈsɛnsər/",
+    "example_en": "The parking sensor is beeping.",
+    "example_ka": "პარკირების სენსორი ჭყივის.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "camera",
+    "georgian": "კამერა",
+    "pronunciation": "/ˈkæmərə/",
+    "example_en": "Use the reverse camera.",
+    "example_ka": "უკუსვლის კამერა გამოიყენე.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "radar",
+    "georgian": "რადარი",
+    "pronunciation": "/ˈreɪdɑːr/",
+    "example_en": "The police use radar guns.",
+    "example_ka": "პოლიცია რადარს იყენებს.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "citation",
+    "georgian": "ჯარიმის ბარათი",
+    "pronunciation": "/saɪˈteɪʃən/",
+    "example_en": "I received a citation.",
+    "example_ka": "ჯარიმის ბარათი მივიღე.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "sobriety",
+    "georgian": "ფხიზელი მდგომარეობა",
+    "pronunciation": "/səˈbraɪəti/",
+    "example_en": "He failed the sobriety test.",
+    "example_ka": "ფხიზელობის ტესტი ვერ ჩააბარა.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "reckless",
+    "georgian": "უყურადღებო",
+    "pronunciation": "/ˈrɛkləs/",
+    "example_en": "Reckless driving is dangerous.",
+    "example_ka": "უყურადღებო მართვა საშიშია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "tailgate",
+    "georgian": "მიყოლა",
+    "pronunciation": "/ˈteɪlɡeɪt/",
+    "example_en": "Do not tailgate other cars.",
+    "example_ka": "სხვა მანქანებს ზედ ნუ მიუყვები.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "jaywalking",
+    "georgian": "უწესრიგო გადაკვეთა",
+    "pronunciation": "/ˈdʒeɪwɔːkɪŋ/",
+    "example_en": "Jaywalking is dangerous.",
+    "example_ka": "გზის უწესრიგოდ გადაკვეთა საშიშია.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "buckle",
+    "georgian": "შეკვრა",
+    "pronunciation": "/ˈbʌkəl/",
+    "example_en": "Buckle up before driving.",
+    "example_ka": "მართვამდე ღვედი შეიკარი.",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "tread",
+    "georgian": "პროტექტორი",
+    "pronunciation": "/trɛd/",
+    "example_en": "Check the tire tread.",
+    "example_ka": "საბურავის პროტექტორი შეამოწმე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "inflate",
+    "georgian": "გაბერვა",
+    "pronunciation": "/ɪnˈfleɪt/",
+    "example_en": "Inflate your tires properly.",
+    "example_ka": "საბურავები სწორად გაბერე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "deflate",
+    "georgian": "გამოშვება",
+    "pronunciation": "/dɪˈfleɪt/",
+    "example_en": "The tire started to deflate.",
+    "example_ka": "საბურავი გამოეშვა.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "jumpstart",
+    "georgian": "დამუხტვა",
+    "pronunciation": "/ˈdʒʌmpstɑːrt/",
+    "example_en": "Can you jumpstart my car?",
+    "example_ka": "მანქანის დამუხტვაში დამეხმარები?",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "stall",
+    "georgian": "ჩაქრობა",
+    "pronunciation": "/stɔːl/",
+    "example_en": "The engine stalled.",
+    "example_ka": "ძრავა ჩაქრა.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "overheat",
+    "georgian": "გადახურება",
+    "pronunciation": "/ˌoʊvərˈhiːt/",
+    "example_en": "The engine overheated.",
+    "example_ka": "ძრავა გადახურდა.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "leak",
+    "georgian": "გაჟონვა",
+    "pronunciation": "/liːk/",
+    "example_en": "There is an oil leak.",
+    "example_ka": "ზეთი ჟონავს.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "dent",
+    "georgian": "ჩაზნექილობა",
+    "pronunciation": "/dɛnt/",
+    "example_en": "There is a dent in the door.",
+    "example_ka": "კარზე ჩაზნექილობაა.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "scratch",
+    "georgian": "ნაკაწრი",
+    "pronunciation": "/skrætʃ/",
+    "example_en": "Who scratched my car?",
+    "example_ka": "ვინ გაკაწრა ჩემი მანქანა?",
+    "category": "driving-test",
+    "level": "A2"
+  },
+  {
+    "english": "rust",
+    "georgian": "ჟანგი",
+    "pronunciation": "/rʌst/",
+    "example_en": "Check for rust under the car.",
+    "example_ka": "მანქანის ქვეშ ჟანგი შეამოწმე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "polish",
+    "georgian": "გაპრიალება",
+    "pronunciation": "/ˈpɒlɪʃ/",
+    "example_en": "Polish the car after washing.",
+    "example_ka": "მანქანის დაბანის შემდეგ გააპრიალე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "wash",
+    "georgian": "რეცხვა",
+    "pronunciation": "/wɒʃ/",
+    "example_en": "I need to wash my car.",
+    "example_ka": "მანქანის დაბანა მჭირდება.",
+    "category": "driving-test",
+    "level": "A1"
+  },
+  {
+    "english": "wax",
+    "georgian": "ვაქსი",
+    "pronunciation": "/wæks/",
+    "example_en": "Wax the car for protection.",
+    "example_ka": "დაცვისთვის მანქანას ვაქსი წაუსვი.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "cruise",
+    "georgian": "კრუიზი",
+    "pronunciation": "/kruːz/",
+    "example_en": "Set the cruise control.",
+    "example_ka": "კრუიზ-კონტროლი ჩართე.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "maneuver",
+    "georgian": "მანევრი",
+    "pronunciation": "/məˈnuːvər/",
+    "example_en": "That was a difficult maneuver.",
+    "example_ka": "ეს რთული მანევრი იყო.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "terrain",
+    "georgian": "რელიეფი",
+    "pronunciation": "/təˈreɪn/",
+    "example_en": "This terrain is rough.",
+    "example_ka": "ეს რელიეფი უსწოროა.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "comply",
+    "georgian": "დამორჩილება",
+    "pronunciation": "/kəmˈplaɪ/",
+    "example_en": "Comply with traffic laws.",
+    "example_ka": "საგზაო კანონებს დაემორჩილე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "windscreen",
+    "georgian": "საქარე მინა",
+    "pronunciation": "/ˈwɪndskriːn/",
+    "example_en": "The windscreen is cracked.",
+    "example_ka": "საქარე მინა დაბზარულია.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "glare",
+    "georgian": "თვალისმომჭრელი სინათლე",
+    "pronunciation": "/ɡlɛr/",
+    "example_en": "The glare from the sun is blinding.",
+    "example_ka": "მზის თვალისმომჭრელი სინათლე აბრმავებს.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "hydroplaning",
+    "georgian": "აკვაპლანირება",
+    "pronunciation": "/ˈhaɪdroʊpleɪnɪŋ/",
+    "example_en": "Hydroplaning is scary.",
+    "example_ka": "აკვაპლანირება საშინელებაა.",
+    "category": "driving-test",
+    "level": "C1"
+  },
+  {
+    "english": "decelerate",
+    "georgian": "შენელება",
+    "pronunciation": "/diːˈsɛləreɪt/",
+    "example_en": "Decelerate before the turn.",
+    "example_ka": "მოხვევამდე შეანელე.",
+    "category": "driving-test",
+    "level": "B2"
+  },
+  {
+    "english": "acceleration",
+    "georgian": "აჩქარება",
+    "pronunciation": "/əkˌsɛləˈreɪʃən/",
+    "example_en": "The acceleration is smooth.",
+    "example_ka": "აჩქარება გლუვია.",
+    "category": "driving-test",
+    "level": "B1"
+  },
+  {
+    "english": "congested",
+    "georgian": "გადატვირთული",
+    "pronunciation": "/kənˈdʒɛstɪd/",
+    "example_en": "The road is congested.",
+    "example_ka": "გზა გადატვირთულია.",
+    "category": "driving-test",
+    "level": "B2"
+  }
 ]

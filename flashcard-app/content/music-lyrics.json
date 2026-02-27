@@ -1,27 +1,1802 @@
 [
-  {"english": "chorus", "georgian": "რეფრენი", "pronunciation": "ˈkɔːrəs", "example_en": "The chorus of this song is so catchy.", "example_ka": "ამ სიმღერის რეფრენი ძალიან დასამახსოვრებელია.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "verse", "georgian": "სტროფი", "pronunciation": "vɜːrs", "example_en": "The first verse tells a sad story.", "example_ka": "პირველი სტროფი სევდიან ისტორიას მოგვითხრობს.", "category": "Music & Lyrics", "level": "B1"},
-  {"english": "beat", "georgian": "რიტმი", "pronunciation": "biːt", "example_en": "This beat makes me want to dance.", "example_ka": "ეს რიტმი ცეკვის სურვილს მიჩენს.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "melody", "georgian": "მელოდია", "pronunciation": "ˈmelədi", "example_en": "The melody is beautiful and relaxing.", "example_ka": "მელოდია ლამაზი და დამამშვიდებელია.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "lyrics", "georgian": "ტექსტი (სიმღერის)", "pronunciation": "ˈlɪrɪks", "example_en": "I don't understand the lyrics of this song.", "example_ka": "ამ სიმღერის ტექსტს ვერ ვხვდები.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "tune", "georgian": "მოტივი", "pronunciation": "tjuːn", "example_en": "I can't get this tune out of my head.", "example_ka": "ეს მოტივი თავიდან ვერ მომაშორდება.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "hook", "georgian": "ჰუკი (სიმღერის)", "pronunciation": "hʊk", "example_en": "The hook is the most memorable part.", "example_ka": "ჰუკი ყველაზე დასამახსოვრებელი ნაწილია.", "category": "Music & Lyrics", "level": "B1"},
-  {"english": "drop", "georgian": "დროპი", "pronunciation": "drɒp", "example_en": "Wait for the drop — it's amazing!", "example_ka": "დროპს დაელოდე — საოცარია!", "category": "Music & Lyrics", "level": "B1"},
-  {"english": "remix", "georgian": "რემიქსი", "pronunciation": "ˈriːmɪks", "example_en": "The remix is better than the original.", "example_ka": "რემიქსი ორიგინალზე უკეთესია.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "album", "georgian": "ალბომი", "pronunciation": "ˈælbəm", "example_en": "His new album has 12 songs.", "example_ka": "მის ახალ ალბომში 12 სიმღერაა.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "single", "georgian": "სინგლი", "pronunciation": "ˈsɪŋɡl", "example_en": "She released a new single yesterday.", "example_ka": "მან გუშინ ახალი სინგლი გამოუშვა.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "playlist", "georgian": "პლეილისტი", "pronunciation": "ˈpleɪlɪst", "example_en": "I made a workout playlist.", "example_ka": "ვარჯიშის პლეილისტი შევქმენი.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "stream", "georgian": "სტრიმი / მოსმენა", "pronunciation": "striːm", "example_en": "This song has 1 billion streams on Spotify.", "example_ka": "ამ სიმღერას Spotify-ზე 1 მილიარდი მოსმენა აქვს.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "feature", "georgian": "ფიჩერინგი", "pronunciation": "ˈfiːtʃər", "example_en": "Drake has a feature on this track.", "example_ka": "Drake-ს ამ ტრეკზე ფიჩერინგი აქვს.", "category": "Music & Lyrics", "level": "B1"},
-  {"english": "autotune", "georgian": "ავტოთუნი", "pronunciation": "ˈɔːtoʊtjuːn", "example_en": "Many rappers use autotune in their songs.", "example_ka": "ბევრი რეპერი ავტოთუნს იყენებს სიმღერებში.", "category": "Music & Lyrics", "level": "B1"},
-  {"english": "concert", "georgian": "კონცერტი", "pronunciation": "ˈkɒnsərt", "example_en": "We're going to a concert tonight.", "example_ka": "დღეს საღამოს კონცერტზე მივდივართ.", "category": "Music & Lyrics", "level": "A1"},
-  {"english": "genre", "georgian": "ჟანრი", "pronunciation": "ˈʒɒnrə", "example_en": "What genre of music do you like?", "example_ka": "მუსიკის რომელი ჟანრი მოგწონს?", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "vibe", "georgian": "ვაიბი / განწყობა", "pronunciation": "vaɪb", "example_en": "This song has a chill vibe.", "example_ka": "ამ სიმღერას მშვიდი ვაიბი აქვს.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "banger", "georgian": "ბენგერი (მაგარი სიმღერა)", "pronunciation": "ˈbæŋər", "example_en": "This track is an absolute banger!", "example_ka": "ეს ტრეკი ნამდვილი ბენგერია!", "category": "Music & Lyrics", "level": "B1"},
-  {"english": "DJ", "georgian": "დიჯეი", "pronunciation": "ˌdiːˈdʒeɪ", "example_en": "The DJ played great music all night.", "example_ka": "დიჯეიმ მთელი ღამე მაგარი მუსიკა დაუკრა.", "category": "Music & Lyrics", "level": "A1"},
-  {"english": "bass", "georgian": "ბასი", "pronunciation": "beɪs", "example_en": "Turn up the bass — I love it heavy!", "example_ka": "ბასი გააძლიერე — მძიმე მიყვარს!", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "rapper", "georgian": "რეპერი", "pronunciation": "ˈræpər", "example_en": "He's the best rapper in the country.", "example_ka": "ის ქვეყანაში საუკეთესო რეპერია.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "freestyle", "georgian": "ფრისტაილი", "pronunciation": "ˈfriːstaɪl", "example_en": "He did a freestyle on the radio.", "example_ka": "მან რადიოში ფრისტაილი გააკეთა.", "category": "Music & Lyrics", "level": "B1"},
-  {"english": "track", "georgian": "ტრეკი", "pronunciation": "træk", "example_en": "My favorite track on the album is number 5.", "example_ka": "ალბომზე ჩემი საყვარელი ტრეკი მე-5 ნომერია.", "category": "Music & Lyrics", "level": "A2"},
-  {"english": "release", "georgian": "გამოშვება", "pronunciation": "rɪˈliːs", "example_en": "The new album release is on Friday.", "example_ka": "ახალი ალბომის გამოშვება პარასკევს არის.", "category": "Music & Lyrics", "level": "A2"}
+  {
+    "english": "chorus",
+    "georgian": "რეფრენი",
+    "pronunciation": "ˈkɔːrəs",
+    "example_en": "The chorus of this song is so catchy.",
+    "example_ka": "ამ სიმღერის რეფრენი ძალიან დასამახსოვრებელია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "verse",
+    "georgian": "სტროფი",
+    "pronunciation": "vɜːrs",
+    "example_en": "The first verse tells a sad story.",
+    "example_ka": "პირველი სტროფი სევდიან ისტორიას მოგვითხრობს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "beat",
+    "georgian": "რიტმი",
+    "pronunciation": "biːt",
+    "example_en": "This beat makes me want to dance.",
+    "example_ka": "ეს რიტმი ცეკვის სურვილს მიჩენს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "melody",
+    "georgian": "მელოდია",
+    "pronunciation": "ˈmelədi",
+    "example_en": "The melody is beautiful and relaxing.",
+    "example_ka": "მელოდია ლამაზი და დამამშვიდებელია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "lyrics",
+    "georgian": "ტექსტი (სიმღერის)",
+    "pronunciation": "ˈlɪrɪks",
+    "example_en": "I don't understand the lyrics of this song.",
+    "example_ka": "ამ სიმღერის ტექსტს ვერ ვხვდები.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "tune",
+    "georgian": "მოტივი",
+    "pronunciation": "tjuːn",
+    "example_en": "I can't get this tune out of my head.",
+    "example_ka": "ეს მოტივი თავიდან ვერ მომაშორდება.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "hook",
+    "georgian": "ჰუკი (სიმღერის)",
+    "pronunciation": "hʊk",
+    "example_en": "The hook is the most memorable part.",
+    "example_ka": "ჰუკი ყველაზე დასამახსოვრებელი ნაწილია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "drop",
+    "georgian": "დროპი",
+    "pronunciation": "drɒp",
+    "example_en": "Wait for the drop — it's amazing!",
+    "example_ka": "დროპს დაელოდე — საოცარია!",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "remix",
+    "georgian": "რემიქსი",
+    "pronunciation": "ˈriːmɪks",
+    "example_en": "The remix is better than the original.",
+    "example_ka": "რემიქსი ორიგინალზე უკეთესია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "album",
+    "georgian": "ალბომი",
+    "pronunciation": "ˈælbəm",
+    "example_en": "His new album has 12 songs.",
+    "example_ka": "მის ახალ ალბომში 12 სიმღერაა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "single",
+    "georgian": "სინგლი",
+    "pronunciation": "ˈsɪŋɡl",
+    "example_en": "She released a new single yesterday.",
+    "example_ka": "მან გუშინ ახალი სინგლი გამოუშვა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "playlist",
+    "georgian": "პლეილისტი",
+    "pronunciation": "ˈpleɪlɪst",
+    "example_en": "I made a workout playlist.",
+    "example_ka": "ვარჯიშის პლეილისტი შევქმენი.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "stream",
+    "georgian": "სტრიმი / მოსმენა",
+    "pronunciation": "striːm",
+    "example_en": "This song has 1 billion streams on Spotify.",
+    "example_ka": "ამ სიმღერას Spotify-ზე 1 მილიარდი მოსმენა აქვს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "feature",
+    "georgian": "ფიჩერინგი",
+    "pronunciation": "ˈfiːtʃər",
+    "example_en": "Drake has a feature on this track.",
+    "example_ka": "Drake-ს ამ ტრეკზე ფიჩერინგი აქვს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "autotune",
+    "georgian": "ავტოთუნი",
+    "pronunciation": "ˈɔːtoʊtjuːn",
+    "example_en": "Many rappers use autotune in their songs.",
+    "example_ka": "ბევრი რეპერი ავტოთუნს იყენებს სიმღერებში.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "concert",
+    "georgian": "კონცერტი",
+    "pronunciation": "ˈkɒnsərt",
+    "example_en": "We're going to a concert tonight.",
+    "example_ka": "დღეს საღამოს კონცერტზე მივდივართ.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "genre",
+    "georgian": "ჟანრი",
+    "pronunciation": "ˈʒɒnrə",
+    "example_en": "What genre of music do you like?",
+    "example_ka": "მუსიკის რომელი ჟანრი მოგწონს?",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "vibe",
+    "georgian": "ვაიბი / განწყობა",
+    "pronunciation": "vaɪb",
+    "example_en": "This song has a chill vibe.",
+    "example_ka": "ამ სიმღერას მშვიდი ვაიბი აქვს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "banger",
+    "georgian": "ბენგერი (მაგარი სიმღერა)",
+    "pronunciation": "ˈbæŋər",
+    "example_en": "This track is an absolute banger!",
+    "example_ka": "ეს ტრეკი ნამდვილი ბენგერია!",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "DJ",
+    "georgian": "დიჯეი",
+    "pronunciation": "ˌdiːˈdʒeɪ",
+    "example_en": "The DJ played great music all night.",
+    "example_ka": "დიჯეიმ მთელი ღამე მაგარი მუსიკა დაუკრა.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "bass",
+    "georgian": "ბასი",
+    "pronunciation": "beɪs",
+    "example_en": "Turn up the bass — I love it heavy!",
+    "example_ka": "ბასი გააძლიერე — მძიმე მიყვარს!",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "rapper",
+    "georgian": "რეპერი",
+    "pronunciation": "ˈræpər",
+    "example_en": "He's the best rapper in the country.",
+    "example_ka": "ის ქვეყანაში საუკეთესო რეპერია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "freestyle",
+    "georgian": "ფრისტაილი",
+    "pronunciation": "ˈfriːstaɪl",
+    "example_en": "He did a freestyle on the radio.",
+    "example_ka": "მან რადიოში ფრისტაილი გააკეთა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "track",
+    "georgian": "ტრეკი",
+    "pronunciation": "træk",
+    "example_en": "My favorite track on the album is number 5.",
+    "example_ka": "ალბომზე ჩემი საყვარელი ტრეკი მე-5 ნომერია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "release",
+    "georgian": "გამოშვება",
+    "pronunciation": "rɪˈliːs",
+    "example_en": "The new album release is on Friday.",
+    "example_ka": "ახალი ალბომის გამოშვება პარასკევს არის.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "song",
+    "georgian": "სიმღერა",
+    "pronunciation": "/sɒŋ/",
+    "example_en": "This is my favorite song.",
+    "example_ka": "ეს ჩემი საყვარელი სიმღერაა.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "sing",
+    "georgian": "სიმღერა",
+    "pronunciation": "/sɪŋ/",
+    "example_en": "She can sing beautifully.",
+    "example_ka": "ის ლამაზად მღერის.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "dance",
+    "georgian": "ცეკვა",
+    "pronunciation": "/dɑːns/",
+    "example_en": "Let's dance to this song.",
+    "example_ka": "მოდი ამ სიმღერაზე ვიცეკვოთ.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "music",
+    "georgian": "მუსიკა",
+    "pronunciation": "/ˈmjuːzɪk/",
+    "example_en": "I love listening to music.",
+    "example_ka": "მუსიკის მოსმენა მიყვარს.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "listen",
+    "georgian": "მოსმენა",
+    "pronunciation": "/ˈlɪsən/",
+    "example_en": "Listen to this new track.",
+    "example_ka": "ეს ახალი ტრეკი მოისმინე.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "loud",
+    "georgian": "ხმამაღალი",
+    "pronunciation": "/laʊd/",
+    "example_en": "The music is too loud.",
+    "example_ka": "მუსიკა ძალიან ხმამაღალია.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "quiet",
+    "georgian": "წყნარი",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "Play something quiet.",
+    "example_ka": "რაიმე წყნარი დაუკარი.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "rhythm",
+    "georgian": "რიტმი",
+    "pronunciation": "/ˈrɪðəm/",
+    "example_en": "I love the rhythm of this song.",
+    "example_ka": "ამ სიმღერის რიტმი მიყვარს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "tempo",
+    "georgian": "ტემპი",
+    "pronunciation": "/ˈtempoʊ/",
+    "example_en": "The tempo is very fast.",
+    "example_ka": "ტემპი ძალიან სწრაფია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "pitch",
+    "georgian": "სიმაღლე",
+    "pronunciation": "/pɪtʃ/",
+    "example_en": "Her pitch is perfect.",
+    "example_ka": "მისი ხმის სიმაღლე სრულყოფილია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "harmony",
+    "georgian": "ჰარმონია",
+    "pronunciation": "/ˈhɑːrməni/",
+    "example_en": "The harmony sounds beautiful.",
+    "example_ka": "ჰარმონია ლამაზად ჟღერს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "note",
+    "georgian": "ნოტი",
+    "pronunciation": "/noʊt/",
+    "example_en": "Play the right note.",
+    "example_ka": "სწორი ნოტი დაუკარი.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "chord",
+    "georgian": "აკორდი",
+    "pronunciation": "/kɔːrd/",
+    "example_en": "Learn the basic chords.",
+    "example_ka": "ძირითადი აკორდები ისწავლე.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "scale",
+    "georgian": "გამა",
+    "pronunciation": "/skeɪl/",
+    "example_en": "Practice the major scale.",
+    "example_ka": "მაჟორული გამა ივარჯიშე.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "key",
+    "georgian": "ტონალობა",
+    "pronunciation": "/kiː/",
+    "example_en": "The song is in the key of C.",
+    "example_ka": "სიმღერა C ტონალობაშია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "bridge",
+    "georgian": "ბრიჯი",
+    "pronunciation": "/brɪdʒ/",
+    "example_en": "The bridge connects the verse and chorus.",
+    "example_ka": "ბრიჯი კუპლეტსა და რეფრენს აკავშირებს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "intro",
+    "georgian": "ინტრო",
+    "pronunciation": "/ˈɪntroʊ/",
+    "example_en": "The intro is amazing.",
+    "example_ka": "ინტრო საოცარია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "outro",
+    "georgian": "აუტრო",
+    "pronunciation": "/ˈaʊtroʊ/",
+    "example_en": "The outro fades slowly.",
+    "example_ka": "აუტრო ნელა ქრება.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "solo",
+    "georgian": "სოლო",
+    "pronunciation": "/ˈsoʊloʊ/",
+    "example_en": "The guitar solo is epic.",
+    "example_ka": "გიტარის სოლო ეპიკურია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "duet",
+    "georgian": "დუეტი",
+    "pronunciation": "/djuːˈet/",
+    "example_en": "They sang a beautiful duet.",
+    "example_ka": "ლამაზი დუეტი იმღერეს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "acoustic",
+    "georgian": "აკუსტიკური",
+    "pronunciation": "/əˈkuːstɪk/",
+    "example_en": "I prefer the acoustic version.",
+    "example_ka": "აკუსტიკურ ვერსიას ვანიჭებ უპირატესობას.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "electric",
+    "georgian": "ელექტრო",
+    "pronunciation": "/ɪˈlektrɪk/",
+    "example_en": "He plays electric guitar.",
+    "example_ka": "ის ელექტრო გიტარაზე უკრავს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "guitar",
+    "georgian": "გიტარა",
+    "pronunciation": "/ɡɪˈtɑːr/",
+    "example_en": "I want to learn guitar.",
+    "example_ka": "გიტარის სწავლა მინდა.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "piano",
+    "georgian": "პიანინო",
+    "pronunciation": "/piˈænoʊ/",
+    "example_en": "She plays piano every day.",
+    "example_ka": "ის ყოველდღე პიანინოზე უკრავს.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "drum",
+    "georgian": "დრამი",
+    "pronunciation": "/drʌm/",
+    "example_en": "The drum beat is strong.",
+    "example_ka": "დრამის ბითი ძლიერია.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "violin",
+    "georgian": "ვიოლინო",
+    "pronunciation": "/ˌvaɪəˈlɪn/",
+    "example_en": "The violin sounds beautiful.",
+    "example_ka": "ვიოლინო ლამაზად ჟღერს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "flute",
+    "georgian": "ფლეიტა",
+    "pronunciation": "/fluːt/",
+    "example_en": "She plays the flute.",
+    "example_ka": "ის ფლეიტაზე უკრავს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "trumpet",
+    "georgian": "საყვირი",
+    "pronunciation": "/ˈtrʌmpɪt/",
+    "example_en": "The trumpet is loud.",
+    "example_ka": "საყვირი ხმამაღალია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "saxophone",
+    "georgian": "საქსოფონი",
+    "pronunciation": "/ˈsæksəfoʊn/",
+    "example_en": "Jazz uses saxophone a lot.",
+    "example_ka": "ჯაზში საქსოფონს ბევრს იყენებენ.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "microphone",
+    "georgian": "მიკროფონი",
+    "pronunciation": "/ˈmaɪkrəfoʊn/",
+    "example_en": "Speak into the microphone.",
+    "example_ka": "მიკროფონში ილაპარაკე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "speaker",
+    "georgian": "დინამიკი",
+    "pronunciation": "/ˈspiːkər/",
+    "example_en": "Turn up the speakers.",
+    "example_ka": "დინამიკები აუწიე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "headphone",
+    "georgian": "ყურსასმენი",
+    "pronunciation": "/ˈhedfəʊn/",
+    "example_en": "Put on your headphones.",
+    "example_ka": "ყურსასმენები დაიდე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "volume",
+    "georgian": "ხმა",
+    "pronunciation": "/ˈvɒljuːm/",
+    "example_en": "Turn down the volume.",
+    "example_ka": "ხმა ჩაწიე.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "recording",
+    "georgian": "ჩანაწერი",
+    "pronunciation": "/rɪˈkɔːrdɪŋ/",
+    "example_en": "The recording sounds great.",
+    "example_ka": "ჩანაწერი კარგად ჟღერს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "studio",
+    "georgian": "სტუდია",
+    "pronunciation": "/ˈstjuːdioʊ/",
+    "example_en": "They recorded in a studio.",
+    "example_ka": "სტუდიაში ჩაწერეს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "producer",
+    "georgian": "პროდიუსერი",
+    "pronunciation": "/prəˈdjuːsər/",
+    "example_en": "The producer made the beat.",
+    "example_ka": "პროდიუსერმა ბითი გააკეთა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "composer",
+    "georgian": "კომპოზიტორი",
+    "pronunciation": "/kəmˈpoʊzər/",
+    "example_en": "The composer wrote the symphony.",
+    "example_ka": "კომპოზიტორმა სიმფონია დაწერა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "songwriter",
+    "georgian": "ტექსტის ავტორი",
+    "pronunciation": "/ˈsɒŋraɪtər/",
+    "example_en": "She is a talented songwriter.",
+    "example_ka": "ის ნიჭიერი ტექსტის ავტორია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "singer",
+    "georgian": "მომღერალი",
+    "pronunciation": "/ˈsɪŋər/",
+    "example_en": "The singer has a great voice.",
+    "example_ka": "მომღერალს შესანიშნავი ხმა აქვს.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "band",
+    "georgian": "ჯგუფი",
+    "pronunciation": "/bænd/",
+    "example_en": "I'm in a rock band.",
+    "example_ka": "როკ ჯგუფში ვარ.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "orchestra",
+    "georgian": "ორკესტრი",
+    "pronunciation": "/ˈɔːrkɪstrə/",
+    "example_en": "The orchestra performed beautifully.",
+    "example_ka": "ორკესტრმა ლამაზად შეასრულა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "choir",
+    "georgian": "გუნდი",
+    "pronunciation": "/kwaɪər/",
+    "example_en": "She sings in the school choir.",
+    "example_ka": "ის სკოლის გუნდში მღერის.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "performance",
+    "georgian": "წარმოდგენა",
+    "pronunciation": "/pərˈfɔːrməns/",
+    "example_en": "The performance was amazing.",
+    "example_ka": "წარმოდგენა საოცარი იყო.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "stage",
+    "georgian": "სცენა",
+    "pronunciation": "/steɪdʒ/",
+    "example_en": "The band is on stage.",
+    "example_ka": "ჯგუფი სცენაზეა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "audience",
+    "georgian": "აუდიტორია",
+    "pronunciation": "/ˈɔːdiəns/",
+    "example_en": "The audience loved the show.",
+    "example_ka": "აუდიტორიას შოუ მოეწონა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "encore",
+    "georgian": "ბისი",
+    "pronunciation": "/ˈɒŋkɔːr/",
+    "example_en": "The crowd demanded an encore.",
+    "example_ka": "ხალხმა ბისი მოითხოვა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "festival",
+    "georgian": "ფესტივალი",
+    "pronunciation": "/ˈfestɪvəl/",
+    "example_en": "The music festival starts Friday.",
+    "example_ka": "მუსიკალური ფესტივალი პარასკევს იწყება.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "tour",
+    "georgian": "ტურნე",
+    "pronunciation": "/tʊr/",
+    "example_en": "The band is on tour.",
+    "example_ka": "ჯგუფი ტურნეზეა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "gig",
+    "georgian": "გიგი",
+    "pronunciation": "/ɡɪɡ/",
+    "example_en": "We have a gig tonight.",
+    "example_ka": "დღეს საღამოს გიგი გვაქვს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "rehearsal",
+    "georgian": "რეპეტიცია",
+    "pronunciation": "/rɪˈhɜːrsəl/",
+    "example_en": "Rehearsal is at five.",
+    "example_ka": "რეპეტიცია ხუთზეა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "setlist",
+    "georgian": "სეტლისტი",
+    "pronunciation": "/ˈsetlɪst/",
+    "example_en": "Check the setlist.",
+    "example_ka": "სეტლისტი ნახე.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "fan",
+    "georgian": "გულშემატკივარი",
+    "pronunciation": "/fæn/",
+    "example_en": "I'm a big fan of this artist.",
+    "example_ka": "ამ არტისტის დიდი გულშემატკივარი ვარ.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "hit",
+    "georgian": "ჰიტი",
+    "pronunciation": "/hɪt/",
+    "example_en": "This song is a huge hit.",
+    "example_ka": "ეს სიმღერა დიდი ჰიტია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "viral",
+    "georgian": "ვირუსული",
+    "pronunciation": "/ˈvaɪrəl/",
+    "example_en": "The song went viral.",
+    "example_ka": "სიმღერა ვირუსულად გავრცელდა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "chart",
+    "georgian": "ჩარტი",
+    "pronunciation": "/tʃɑːrt/",
+    "example_en": "The song topped the charts.",
+    "example_ka": "სიმღერამ ჩარტები დაიპყრო.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the song for free.",
+    "example_ka": "სიმღერა უფასოდ ჩამოტვირთე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ˈʌploʊd/",
+    "example_en": "Upload your song to the platform.",
+    "example_ka": "სიმღერა პლატფორმაზე ატვირთე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Subscribe to the music channel.",
+    "example_ka": "მუსიკის არხს გამოეწერე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "copyright",
+    "georgian": "საავტორო უფლება",
+    "pronunciation": "/ˈkɒpiraɪt/",
+    "example_en": "Respect the copyright.",
+    "example_ka": "საავტორო უფლება პატივი ეცი.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "royalty",
+    "georgian": "ჰონორარი",
+    "pronunciation": "/ˈrɔɪəlti/",
+    "example_en": "Artists earn royalties from streams.",
+    "example_ka": "არტისტები სტრიმებიდან ჰონორარს იღებენ.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "label",
+    "georgian": "ლეიბლი",
+    "pronunciation": "/ˈleɪbəl/",
+    "example_en": "She signed with a big label.",
+    "example_ka": "მან დიდ ლეიბლთან მოაწერა ხელი.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "indie",
+    "georgian": "ინდი",
+    "pronunciation": "/ˈɪndi/",
+    "example_en": "I prefer indie music.",
+    "example_ka": "ინდი მუსიკას ვანიჭებ უპირატესობას.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "mainstream",
+    "georgian": "მეინსტრიმი",
+    "pronunciation": "/ˈmeɪnstriːm/",
+    "example_en": "The song became mainstream.",
+    "example_ka": "სიმღერა მეინსტრიმი გახდა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "underground",
+    "georgian": "ანდერგრაუნდი",
+    "pronunciation": "/ˈʌndərɡraʊnd/",
+    "example_en": "He started in underground music.",
+    "example_ka": "მან ანდერგრაუნდ მუსიკაში დაიწყო.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "pop",
+    "georgian": "პოპი",
+    "pronunciation": "/pɒp/",
+    "example_en": "Pop music is popular.",
+    "example_ka": "პოპ მუსიკა პოპულარულია.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "rock",
+    "georgian": "როკი",
+    "pronunciation": "/rɒk/",
+    "example_en": "I love rock music.",
+    "example_ka": "როკ მუსიკა მიყვარს.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "jazz",
+    "georgian": "ჯაზი",
+    "pronunciation": "/dʒæz/",
+    "example_en": "Jazz is relaxing.",
+    "example_ka": "ჯაზი დამამშვიდებელია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "classical",
+    "georgian": "კლასიკური",
+    "pronunciation": "/ˈklæsɪkəl/",
+    "example_en": "Classical music is beautiful.",
+    "example_ka": "კლასიკური მუსიკა ლამაზია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "hip-hop",
+    "georgian": "ჰიპ-ჰოპი",
+    "pronunciation": "/ˈhɪp hɒp/",
+    "example_en": "Hip-hop originated in New York.",
+    "example_ka": "ჰიპ-ჰოპი ნიუ-იორკში დაიბადა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "rap",
+    "georgian": "რეპი",
+    "pronunciation": "/ræp/",
+    "example_en": "He can rap very fast.",
+    "example_ka": "ის ძალიან სწრაფად რეპავს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "country",
+    "georgian": "ქანთრი",
+    "pronunciation": "/ˈkʌntri/",
+    "example_en": "Country music tells stories.",
+    "example_ka": "ქანთრი მუსიკა ისტორიებს მოგვითხრობს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "blues",
+    "georgian": "ბლუზი",
+    "pronunciation": "/bluːz/",
+    "example_en": "The blues music is soulful.",
+    "example_ka": "ბლუზი სულიერია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "reggae",
+    "georgian": "რეგი",
+    "pronunciation": "/ˈreɡeɪ/",
+    "example_en": "Reggae music is from Jamaica.",
+    "example_ka": "რეგი მუსიკა იამაიკიდანაა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "electronic",
+    "georgian": "ელექტრონული",
+    "pronunciation": "/ɪˌlekˈtrɒnɪk/",
+    "example_en": "Electronic music is great for dancing.",
+    "example_ka": "ელექტრონული მუსიკა ცეკვისთვის შესანიშნავია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "folk",
+    "georgian": "ხალხური",
+    "pronunciation": "/foʊk/",
+    "example_en": "Georgian folk music is unique.",
+    "example_ka": "ქართული ხალხური მუსიკა უნიკალურია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "opera",
+    "georgian": "ოპერა",
+    "pronunciation": "/ˈɒpərə/",
+    "example_en": "We went to the opera.",
+    "example_ka": "ოპერაში წავედით.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "symphony",
+    "georgian": "სიმფონია",
+    "pronunciation": "/ˈsɪmfəni/",
+    "example_en": "Beethoven wrote nine symphonies.",
+    "example_ka": "ბეთჰოვენმა ცხრა სიმფონია დაწერა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "ballad",
+    "georgian": "ბალადა",
+    "pronunciation": "/ˈbæləd/",
+    "example_en": "The ballad made everyone cry.",
+    "example_ka": "ბალადამ ყველა აატირა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "anthem",
+    "georgian": "ჰიმნი",
+    "pronunciation": "/ˈænθəm/",
+    "example_en": "This song became an anthem.",
+    "example_ka": "ეს სიმღერა ჰიმნი გახდა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "lullaby",
+    "georgian": "იავნანა",
+    "pronunciation": "/ˈlʌləbaɪ/",
+    "example_en": "She sang a lullaby to the baby.",
+    "example_ka": "ბავშვს იავნანა უმღერა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "instrumental",
+    "georgian": "ინსტრუმენტალური",
+    "pronunciation": "/ˌɪnstrəˈmentəl/",
+    "example_en": "The instrumental version is calming.",
+    "example_ka": "ინსტრუმენტალური ვერსია დამამშვიდებელია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "acapella",
+    "georgian": "აკაპელა",
+    "pronunciation": "/ˌɑːkəˈpelə/",
+    "example_en": "They sang acapella.",
+    "example_ka": "აკაპელად იმღერეს.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "mashup",
+    "georgian": "მეშაპი",
+    "pronunciation": "/ˈmæʃʌp/",
+    "example_en": "This mashup sounds amazing.",
+    "example_ka": "ეს მეშაპი საოცრად ჟღერს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "sample",
+    "georgian": "სემპლი",
+    "pronunciation": "/ˈsæmpəl/",
+    "example_en": "The beat uses a jazz sample.",
+    "example_ka": "ბითი ჯაზის სემპლს იყენებს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "loop",
+    "georgian": "ლუპი",
+    "pronunciation": "/luːp/",
+    "example_en": "The drum loop is catchy.",
+    "example_ka": "დრამის ლუპი მიმზიდველია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "fade",
+    "georgian": "გაქრობა",
+    "pronunciation": "/feɪd/",
+    "example_en": "The song fades at the end.",
+    "example_ka": "სიმღერა ბოლოს ქრება.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "mix",
+    "georgian": "მიქსი",
+    "pronunciation": "/mɪks/",
+    "example_en": "The DJ played a great mix.",
+    "example_ka": "დიჯეიმ შესანიშნავი მიქსი დაუკრა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "master",
+    "georgian": "მასტერინგი",
+    "pronunciation": "/ˈmæstər/",
+    "example_en": "The track needs mastering.",
+    "example_ka": "ტრეკს მასტერინგი სჭირდება.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "amplifier",
+    "georgian": "გამაძლიერებელი",
+    "pronunciation": "/ˈæmplɪfaɪər/",
+    "example_en": "Turn up the amplifier.",
+    "example_ka": "გამაძლიერებელი აუწიე.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "distortion",
+    "georgian": "დისტორშენი",
+    "pronunciation": "/dɪˈstɔːrʃən/",
+    "example_en": "The guitar distortion sounds heavy.",
+    "example_ka": "გიტარის დისტორშენი მძიმედ ჟღერს.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "reverb",
+    "georgian": "რევერბი",
+    "pronunciation": "/ˈriːvɜːrb/",
+    "example_en": "Add some reverb to the vocals.",
+    "example_ka": "ვოკალს რევერბი დაუმატე.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "synthesizer",
+    "georgian": "სინთეზატორი",
+    "pronunciation": "/ˈsɪnθəsaɪzər/",
+    "example_en": "The synthesizer creates unique sounds.",
+    "example_ka": "სინთეზატორი უნიკალურ ხმებს ქმნის.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "strum",
+    "georgian": "დაკვრა",
+    "pronunciation": "/strʌm/",
+    "example_en": "Strum the guitar gently.",
+    "example_ka": "გიტარაზე ნაზად დაუკარი.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "pluck",
+    "georgian": "ამოკვრა",
+    "pronunciation": "/plʌk/",
+    "example_en": "Pluck the strings carefully.",
+    "example_ka": "სიმებს ფრთხილად ამოუკარი.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "bow",
+    "georgian": "სმერჩეკი",
+    "pronunciation": "/baʊ/",
+    "example_en": "Draw the bow across the strings.",
+    "example_ka": "სმერჩეკი სიმებზე გაატარე.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "improvise",
+    "georgian": "იმპროვიზაცია",
+    "pronunciation": "/ˈɪmprəvaɪz/",
+    "example_en": "Jazz musicians love to improvise.",
+    "example_ka": "ჯაზ მუსიკოსებს იმპროვიზაცია უყვართ.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "collaborate",
+    "georgian": "თანამშრომლობა",
+    "pronunciation": "/kəˈlæbəreɪt/",
+    "example_en": "They collaborated on a new song.",
+    "example_ka": "ახალ სიმღერაზე ითანამშრომლეს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "compose",
+    "georgian": "კომპოზიცია",
+    "pronunciation": "/kəmˈpoʊz/",
+    "example_en": "He composed the melody himself.",
+    "example_ka": "მელოდია თავად შეადგინა.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "arrange",
+    "georgian": "არანჟირება",
+    "pronunciation": "/əˈreɪndʒ/",
+    "example_en": "She arranged the song for the orchestra.",
+    "example_ka": "მან სიმღერა ორკესტრისთვის ააარანჟირა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "conduct",
+    "georgian": "დირიჟორობა",
+    "pronunciation": "/kənˈdʌkt/",
+    "example_en": "He conducts the symphony orchestra.",
+    "example_ka": "ის სიმფონიურ ორკესტრს უდირიჟორებს.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "dedicate",
+    "georgian": "მიძღვნა",
+    "pronunciation": "/ˈdedɪkeɪt/",
+    "example_en": "I dedicate this song to my mother.",
+    "example_ka": "ამ სიმღერას დედაჩემს ვუძღვნი.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "inspire",
+    "georgian": "შთაგონება",
+    "pronunciation": "/ɪnˈspaɪər/",
+    "example_en": "Music inspires people.",
+    "example_ka": "მუსიკა ადამიანებს შთააგონებს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "catchy",
+    "georgian": "მიმზიდველი",
+    "pronunciation": "/ˈkætʃi/",
+    "example_en": "The melody is so catchy.",
+    "example_ka": "მელოდია ძალიან მიმზიდველია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "soothing",
+    "georgian": "დამამშვიდებელი",
+    "pronunciation": "/ˈsuːðɪŋ/",
+    "example_en": "The music is soothing.",
+    "example_ka": "მუსიკა დამამშვიდებელია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "upbeat",
+    "georgian": "ენერგიული",
+    "pronunciation": "/ˈʌpbiːt/",
+    "example_en": "I like upbeat songs.",
+    "example_ka": "ენერგიული სიმღერები მომწონს.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "melancholic",
+    "georgian": "მელანქოლიური",
+    "pronunciation": "/ˌmelənˈkɒlɪk/",
+    "example_en": "The song has a melancholic tone.",
+    "example_ka": "სიმღერას მელანქოლიური ტონი აქვს.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "haunting",
+    "georgian": "შემაშფოთებელი",
+    "pronunciation": "/ˈhɔːntɪŋ/",
+    "example_en": "The melody is haunting.",
+    "example_ka": "მელოდია შემაშფოთებელია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "timeless",
+    "georgian": "დროის მიღმა",
+    "pronunciation": "/ˈtaɪmləs/",
+    "example_en": "This is a timeless classic.",
+    "example_ka": "ეს დროის მიღმა კლასიკაა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "iconic",
+    "georgian": "ხატოვანი",
+    "pronunciation": "/aɪˈkɒnɪk/",
+    "example_en": "It's an iconic album.",
+    "example_ka": "ეს ხატოვანი ალბომია.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "debut",
+    "georgian": "დებიუტი",
+    "pronunciation": "/deɪˈbjuː/",
+    "example_en": "Her debut album was a hit.",
+    "example_ka": "მისი სადებიუტო ალბომი ჰიტი იყო.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "platinum",
+    "georgian": "პლატინი",
+    "pronunciation": "/ˈplætɪnəm/",
+    "example_en": "The album went platinum.",
+    "example_ka": "ალბომი პლატინა გახდა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "award",
+    "georgian": "ჯილდო",
+    "pronunciation": "/əˈwɔːrd/",
+    "example_en": "She won a music award.",
+    "example_ka": "მან მუსიკალური ჯილდო მოიგო.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "nominee",
+    "georgian": "ნომინანტი",
+    "pronunciation": "/ˌnɒmɪˈniː/",
+    "example_en": "He is a Grammy nominee.",
+    "example_ka": "ის გრემის ნომინანტია.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "talent",
+    "georgian": "ნიჭი",
+    "pronunciation": "/ˈtælənt/",
+    "example_en": "She has incredible talent.",
+    "example_ka": "მას წარმოუდგენელი ნიჭი აქვს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "virtuoso",
+    "georgian": "ვირტუოზი",
+    "pronunciation": "/ˌvɜːrtʃuˈoʊsoʊ/",
+    "example_en": "He is a piano virtuoso.",
+    "example_ka": "ის პიანინოს ვირტუოზია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "prodigy",
+    "georgian": "გენიოსი",
+    "pronunciation": "/ˈprɒdɪdʒi/",
+    "example_en": "Mozart was a musical prodigy.",
+    "example_ka": "მოცარტი მუსიკალური გენიოსი იყო.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "repertoire",
+    "georgian": "რეპერტუარი",
+    "pronunciation": "/ˈrepərtwɑːr/",
+    "example_en": "The band has a wide repertoire.",
+    "example_ka": "ჯგუფს ფართო რეპერტუარი აქვს.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "crescendo",
+    "georgian": "კრესჩენდო",
+    "pronunciation": "/krəˈʃendoʊ/",
+    "example_en": "The music builds to a crescendo.",
+    "example_ka": "მუსიკა კრესჩენდომდე იზრდება.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "diminuendo",
+    "georgian": "დიმინუენდო",
+    "pronunciation": "/dɪˌmɪnjuˈendoʊ/",
+    "example_en": "The diminuendo creates a soft ending.",
+    "example_ka": "დიმინუენდო რბილ დასასრულს ქმნის.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "vibrato",
+    "georgian": "ვიბრატო",
+    "pronunciation": "/vɪˈbrɑːtoʊ/",
+    "example_en": "Her vibrato is beautiful.",
+    "example_ka": "მისი ვიბრატო ლამაზია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "staccato",
+    "georgian": "სტაკატო",
+    "pronunciation": "/stəˈkɑːtoʊ/",
+    "example_en": "Play the notes staccato.",
+    "example_ka": "ნოტები სტაკატოდ დაუკარი.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "legato",
+    "georgian": "ლეგატო",
+    "pronunciation": "/lɪˈɡɑːtoʊ/",
+    "example_en": "The legato passage is smooth.",
+    "example_ka": "ლეგატო პასაჟი გლუვია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "fortissimo",
+    "georgian": "ფორტისიმო",
+    "pronunciation": "/fɔːrˈtɪsɪmoʊ/",
+    "example_en": "Play fortissimo at the climax.",
+    "example_ka": "კულმინაციაზე ფორტისიმო დაუკარი.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "pianissimo",
+    "georgian": "პიანისიმო",
+    "pronunciation": "/piːˌænɪˈsiːmoʊ/",
+    "example_en": "Start pianissimo.",
+    "example_ka": "პიანისიმოდან დაიწყე.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "octave",
+    "georgian": "ოქტავა",
+    "pronunciation": "/ˈɒktɪv/",
+    "example_en": "Go up one octave.",
+    "example_ka": "ერთი ოქტავით აიწიე.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "tenor",
+    "georgian": "ტენორი",
+    "pronunciation": "/ˈtenər/",
+    "example_en": "He is a famous tenor.",
+    "example_ka": "ის ცნობილი ტენორია.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "soprano",
+    "georgian": "სოპრანო",
+    "pronunciation": "/səˈprɑːnoʊ/",
+    "example_en": "She sings soprano.",
+    "example_ka": "ის სოპრანოზე მღერის.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "baritone",
+    "georgian": "ბარიტონი",
+    "pronunciation": "/ˈbærɪtoʊn/",
+    "example_en": "His voice is a rich baritone.",
+    "example_ka": "მისი ხმა მდიდარი ბარიტონია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "alto",
+    "georgian": "ალტო",
+    "pronunciation": "/ˈæltoʊ/",
+    "example_en": "She is an alto singer.",
+    "example_ka": "ის ალტო მომღერალია.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "conductor",
+    "georgian": "დირიჟორი",
+    "pronunciation": "/kənˈdʌktər/",
+    "example_en": "The conductor raised his baton.",
+    "example_ka": "დირიჟორმა ბატონი აწია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "metronome",
+    "georgian": "მეტრონომი",
+    "pronunciation": "/ˈmetrənoʊm/",
+    "example_en": "Use a metronome to keep time.",
+    "example_ka": "დროის შესანარჩუნებლად მეტრონომი გამოიყენე.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "riff",
+    "georgian": "რიფი",
+    "pronunciation": "/rɪf/",
+    "example_en": "That guitar riff is legendary.",
+    "example_ka": "ეს გიტარის რიფი ლეგენდარულია.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "lyricist",
+    "georgian": "ტექსტის ავტორი",
+    "pronunciation": "/ˈlɪrɪsɪst/",
+    "example_en": "The lyricist writes beautiful words.",
+    "example_ka": "ტექსტის ავტორი ლამაზ სიტყვებს წერს.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "cover",
+    "georgian": "ქავერი",
+    "pronunciation": "/ˈkʌvər/",
+    "example_en": "She did a cover of the song.",
+    "example_ka": "მან სიმღერის ქავერი გააკეთა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "original",
+    "georgian": "ორიგინალი",
+    "pronunciation": "/əˈrɪdʒɪnəl/",
+    "example_en": "I prefer the original version.",
+    "example_ka": "ორიგინალ ვერსიას ვანიჭებ უპირატესობას.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "earworm",
+    "georgian": "ყურის ჭია",
+    "pronunciation": "/ˈɪrwɜːrm/",
+    "example_en": "This song is a total earworm.",
+    "example_ka": "ეს სიმღერა სრული ყურის ჭიაა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "rehearse",
+    "georgian": "რეპეტიცია",
+    "pronunciation": "/rɪˈhɜːrs/",
+    "example_en": "We need to rehearse more.",
+    "example_ka": "მეტი რეპეტიცია გვჭირდება.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "harmonize",
+    "georgian": "ჰარმონიზება",
+    "pronunciation": "/ˈhɑːrmənaɪz/",
+    "example_en": "Their voices harmonize perfectly.",
+    "example_ka": "მათი ხმები სრულყოფილად ჰარმონიზდება.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "transpose",
+    "georgian": "ტრანსპონირება",
+    "pronunciation": "/trænˈspoʊz/",
+    "example_en": "Transpose the song to a lower key.",
+    "example_ka": "სიმღერა დაბალ ტონალობაში გადაიტანე.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "syncopation",
+    "georgian": "სინკოპაცია",
+    "pronunciation": "/ˌsɪŋkəˈpeɪʃən/",
+    "example_en": "The syncopation gives it a funky feel.",
+    "example_ka": "სინკოპაცია ფანქი განწყობას ქმნის.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "modulation",
+    "georgian": "მოდულაცია",
+    "pronunciation": "/ˌmɒdjuˈleɪʃən/",
+    "example_en": "The key modulation is surprising.",
+    "example_ka": "ტონალობის მოდულაცია მოულოდნელია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "resonance",
+    "georgian": "რეზონანსი",
+    "pronunciation": "/ˈrezənəns/",
+    "example_en": "The resonance fills the room.",
+    "example_ka": "რეზონანსი ოთახს ავსებს.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "timbre",
+    "georgian": "ტემბრი",
+    "pronunciation": "/ˈtæmbər/",
+    "example_en": "Each instrument has a unique timbre.",
+    "example_ka": "თითოეულ ინსტრუმენტს უნიკალური ტემბრი აქვს.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "dissonance",
+    "georgian": "დისონანსი",
+    "pronunciation": "/ˈdɪsənəns/",
+    "example_en": "The dissonance creates tension.",
+    "example_ka": "დისონანსი დაძაბულობას ქმნის.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "consonance",
+    "georgian": "კონსონანსი",
+    "pronunciation": "/ˈkɒnsənəns/",
+    "example_en": "Consonance sounds pleasant.",
+    "example_ka": "კონსონანსი სასიამოვნოდ ჟღერს.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "arpeggio",
+    "georgian": "არპეჯიო",
+    "pronunciation": "/ɑːrˈpedʒioʊ/",
+    "example_en": "Play an arpeggio on the piano.",
+    "example_ka": "პიანინოზე არპეჯიო დაუკარი.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "cadence",
+    "georgian": "კადანსი",
+    "pronunciation": "/ˈkeɪdəns/",
+    "example_en": "The cadence resolves the phrase.",
+    "example_ka": "კადანსი ფრაზას წყვეტს.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "coda",
+    "georgian": "კოდა",
+    "pronunciation": "/ˈkoʊdə/",
+    "example_en": "The coda ends the piece.",
+    "example_ka": "კოდა ნაწარმოებს ასრულებს.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "polyphony",
+    "georgian": "პოლიფონია",
+    "pronunciation": "/pəˈlɪfəni/",
+    "example_en": "Georgian polyphony is world-famous.",
+    "example_ka": "ქართული პოლიფონია მსოფლიოში ცნობილია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "monophonic",
+    "georgian": "მონოფონიური",
+    "pronunciation": "/ˌmɒnəˈfɒnɪk/",
+    "example_en": "The melody is monophonic.",
+    "example_ka": "მელოდია მონოფონიურია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "pentatonic",
+    "georgian": "პენტატონიკური",
+    "pronunciation": "/ˌpentəˈtɒnɪk/",
+    "example_en": "Use the pentatonic scale.",
+    "example_ka": "პენტატონიკური გამა გამოიყენე.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "chromatic",
+    "georgian": "ქრომატული",
+    "pronunciation": "/krəˈmætɪk/",
+    "example_en": "Play a chromatic scale.",
+    "example_ka": "ქრომატული გამა დაუკარი.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "interlude",
+    "georgian": "ინტერლუდია",
+    "pronunciation": "/ˈɪntərluːd/",
+    "example_en": "The interlude is peaceful.",
+    "example_ka": "ინტერლუდია მშვიდია.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "prelude",
+    "georgian": "პრელუდია",
+    "pronunciation": "/ˈpreljuːd/",
+    "example_en": "The prelude sets the mood.",
+    "example_ka": "პრელუდია განწყობას ქმნის.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "overture",
+    "georgian": "უვერტიურა",
+    "pronunciation": "/ˈoʊvərtʃʊr/",
+    "example_en": "The overture was magnificent.",
+    "example_ka": "უვერტიურა ბრწყინვალე იყო.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "nocturne",
+    "georgian": "ნოქტიურნი",
+    "pronunciation": "/ˈnɒktɜːrn/",
+    "example_en": "Chopin wrote beautiful nocturnes.",
+    "example_ka": "შოპენმა ლამაზი ნოქტიურნები დაწერა.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "sonata",
+    "georgian": "სონატა",
+    "pronunciation": "/səˈnɑːtə/",
+    "example_en": "The piano sonata is complex.",
+    "example_ka": "საფორტეპიანო სონატა რთულია.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "concerto",
+    "georgian": "კონცერტო",
+    "pronunciation": "/kənˈtʃɜːrtoʊ/",
+    "example_en": "The violin concerto is stunning.",
+    "example_ka": "სავიოლინო კონცერტო განსაცვიფრებელია.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "fugue",
+    "georgian": "ფუგა",
+    "pronunciation": "/fjuːɡ/",
+    "example_en": "Bach composed many fugues.",
+    "example_ka": "ბახმა ბევრი ფუგა დაწერა.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "serenade",
+    "georgian": "სერენადა",
+    "pronunciation": "/ˌserəˈneɪd/",
+    "example_en": "He played a serenade.",
+    "example_ka": "მან სერენადა დაუკრა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "requiem",
+    "georgian": "რეკვიემი",
+    "pronunciation": "/ˈrekwiəm/",
+    "example_en": "Mozart's Requiem is famous.",
+    "example_ka": "მოცარტის რეკვიემი ცნობილია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "opus",
+    "georgian": "ოპუსი",
+    "pronunciation": "/ˈoʊpəs/",
+    "example_en": "This is opus number five.",
+    "example_ka": "ეს მეხუთე ოპუსია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "ensemble",
+    "georgian": "ანსამბლი",
+    "pronunciation": "/ɒnˈsɒmbəl/",
+    "example_en": "The ensemble performed perfectly.",
+    "example_ka": "ანსამბლმა სრულყოფილად შეასრულა.",
+    "category": "music-lyrics",
+    "level": "B2"
+  },
+  {
+    "english": "virtuosity",
+    "georgian": "ვირტუოზულობა",
+    "pronunciation": "/ˌvɜːrtʃuˈɒsɪti/",
+    "example_en": "His virtuosity is impressive.",
+    "example_ka": "მისი ვირტუოზულობა შთამბეჭდავია.",
+    "category": "music-lyrics",
+    "level": "C1"
+  },
+  {
+    "english": "synth",
+    "georgian": "სინთი",
+    "pronunciation": "/sɪnθ/",
+    "example_en": "Add more synth to the track.",
+    "example_ka": "ტრეკს მეტი სინთი დაუმატე.",
+    "category": "music-lyrics",
+    "level": "B1"
+  },
+  {
+    "english": "shuffle",
+    "georgian": "შერევა",
+    "pronunciation": "/ˈʃʌfəl/",
+    "example_en": "Put the songs on shuffle.",
+    "example_ka": "სიმღერები შერევაზე დააყენე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "repeat",
+    "georgian": "გამეორება",
+    "pronunciation": "/rɪˈpiːt/",
+    "example_en": "Put the song on repeat.",
+    "example_ka": "სიმღერა გამეორებაზე დააყენე.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "skip",
+    "georgian": "გამოტოვება",
+    "pronunciation": "/skɪp/",
+    "example_en": "Skip this song.",
+    "example_ka": "ეს სიმღერა გამოტოვე.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "mute",
+    "georgian": "ჩუმი",
+    "pronunciation": "/mjuːt/",
+    "example_en": "Mute the music.",
+    "example_ka": "მუსიკა გააჩუმე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "pause",
+    "georgian": "პაუზა",
+    "pronunciation": "/pɔːz/",
+    "example_en": "Pause the music.",
+    "example_ka": "მუსიკა შეაჩერე.",
+    "category": "music-lyrics",
+    "level": "A1"
+  },
+  {
+    "english": "rewind",
+    "georgian": "უკან გადახვევა",
+    "pronunciation": "/ˈriːwaɪnd/",
+    "example_en": "Rewind the song.",
+    "example_ka": "სიმღერა უკან გადაახვიე.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "lyric",
+    "georgian": "ტექსტი",
+    "pronunciation": "/ˈlɪrɪk/",
+    "example_en": "I love the lyrics.",
+    "example_ka": "ტექსტი მიყვარს.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "tone",
+    "georgian": "ტონი",
+    "pronunciation": "/toʊn/",
+    "example_en": "The tone is warm.",
+    "example_ka": "ტონი თბილია.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "hum",
+    "georgian": "გუგუნი",
+    "pronunciation": "/hʌm/",
+    "example_en": "She hummed the tune.",
+    "example_ka": "მან მოტივი ჩაიგუნა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  },
+  {
+    "english": "whistle",
+    "georgian": "სტვენა",
+    "pronunciation": "/ˈwɪsəl/",
+    "example_en": "He whistled the melody.",
+    "example_ka": "მან მელოდია დაასტვინა.",
+    "category": "music-lyrics",
+    "level": "A2"
+  }
 ]

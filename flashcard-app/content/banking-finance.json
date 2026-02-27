@@ -1,62 +1,1802 @@
 [
-  {"english":"Bank","georgian":"ბანკი","pronunciation":"/bæŋk/","example_en":"I need to go to the bank.","example_ka":"ბანკში წასვლა მჭირდება.","category":"banking","level":"A1"},
-  {"english":"Money","georgian":"ფული","pronunciation":"/ˈmʌni/","example_en":"How much money do you have?","example_ka":"რამდენი ფული გაქვს?","category":"banking","level":"A1"},
-  {"english":"Account","georgian":"ანგარიში","pronunciation":"/əˈkaʊnt/","example_en":"I opened a new bank account.","example_ka":"ახალი საბანკო ანგარიში გავხსენი.","category":"banking","level":"A1"},
-  {"english":"Savings","georgian":"დანაზოგი","pronunciation":"/ˈseɪvɪŋz/","example_en":"Put your savings in the bank.","example_ka":"დანაზოგი ბანკში შეინახე.","category":"banking","level":"A2"},
-  {"english":"Loan","georgian":"სესხი","pronunciation":"/loʊn/","example_en":"She took out a loan to buy a car.","example_ka":"მან მანქანის საყიდლად სესხი აიღო.","category":"banking","level":"A2"},
-  {"english":"Interest","georgian":"პროცენტი","pronunciation":"/ˈɪntrəst/","example_en":"The interest rate is 5%.","example_ka":"საპროცენტო განაკვეთი 5%-ია.","category":"banking","level":"A2"},
-  {"english":"Credit","georgian":"კრედიტი","pronunciation":"/ˈkrɛdɪt/","example_en":"He has good credit.","example_ka":"მას კარგი საკრედიტო ისტორია აქვს.","category":"banking","level":"A2"},
-  {"english":"Debit","georgian":"დებეტი","pronunciation":"/ˈdɛbɪt/","example_en":"Pay with your debit card.","example_ka":"სადებეტო ბარათით გადაიხადე.","category":"banking","level":"A2"},
-  {"english":"Deposit","georgian":"შენატანი","pronunciation":"/dɪˈpɒzɪt/","example_en":"I made a deposit of $500.","example_ka":"500 დოლარის შენატანი გავაკეთე.","category":"banking","level":"A2"},
-  {"english":"Withdrawal","georgian":"გამოტანა","pronunciation":"/wɪðˈdrɔːəl/","example_en":"The ATM has a daily withdrawal limit.","example_ka":"ბანკომატს ყოველდღიური გამოტანის ლიმიტი აქვს.","category":"banking","level":"B1"},
-  {"english":"ATM","georgian":"ბანკომატი","pronunciation":"/ˌeɪtiːˈɛm/","example_en":"Find the nearest ATM.","example_ka":"უახლოესი ბანკომატი იპოვე.","category":"banking","level":"A1"},
-  {"english":"Balance","georgian":"ბალანსი","pronunciation":"/ˈbæləns/","example_en":"Check your account balance.","example_ka":"ანგარიშის ბალანსი შეამოწმე.","category":"banking","level":"A2"},
-  {"english":"Transfer","georgian":"გადარიცხვა","pronunciation":"/ˈtrænsfɜːr/","example_en":"Transfer money to my account.","example_ka":"ჩემს ანგარიშზე ფული გადარიცხე.","category":"banking","level":"A2"},
-  {"english":"Currency","georgian":"ვალუტა","pronunciation":"/ˈkʌrənsi/","example_en":"What currency do they use?","example_ka":"რა ვალუტას იყენებენ?","category":"banking","level":"A2"},
-  {"english":"Exchange rate","georgian":"გაცვლითი კურსი","pronunciation":"/ɪksˈtʃeɪndʒ reɪt/","example_en":"The exchange rate changes daily.","example_ka":"გაცვლითი კურსი ყოველდღე იცვლება.","category":"banking","level":"B1"},
-  {"english":"Mortgage","georgian":"იპოთეკა","pronunciation":"/ˈmɔːrɡɪdʒ/","example_en":"They got a mortgage for the house.","example_ka":"მათ სახლისთვის იპოთეკა აიღეს.","category":"banking","level":"B1"},
-  {"english":"Debt","georgian":"ვალი","pronunciation":"/dɛt/","example_en":"He is in a lot of debt.","example_ka":"მას ბევრი ვალი აქვს.","category":"banking","level":"A2"},
-  {"english":"Budget","georgian":"ბიუჯეტი","pronunciation":"/ˈbʌdʒɪt/","example_en":"We need to stick to the budget.","example_ka":"ბიუჯეტს უნდა ვეტიოთ.","category":"banking","level":"A2"},
-  {"english":"Tax","georgian":"გადასახადი","pronunciation":"/tæks/","example_en":"You must pay your taxes on time.","example_ka":"გადასახადი დროულად უნდა გადაიხადო.","category":"banking","level":"A2"},
-  {"english":"Invoice","georgian":"ინვოისი","pronunciation":"/ˈɪnvɔɪs/","example_en":"Send the invoice to the client.","example_ka":"კლიენტს ინვოისი გაუგზავნე.","category":"banking","level":"B1"},
-  {"english":"Receipt","georgian":"ქვითარი","pronunciation":"/rɪˈsiːt/","example_en":"Keep the receipt for your records.","example_ka":"ქვითარი შეინახე ჩანაწერებისთვის.","category":"banking","level":"A2"},
-  {"english":"Investment","georgian":"ინვესტიცია","pronunciation":"/ɪnˈvɛstmənt/","example_en":"Real estate is a good investment.","example_ka":"უძრავი ქონება კარგი ინვესტიციაა.","category":"banking","level":"B1"},
-  {"english":"Stock","georgian":"აქცია","pronunciation":"/stɒk/","example_en":"He bought stocks in a tech company.","example_ka":"მან ტექნოლოგიური კომპანიის აქციები იყიდა.","category":"banking","level":"B1"},
-  {"english":"Bond","georgian":"ობლიგაცია","pronunciation":"/bɒnd/","example_en":"Government bonds are considered safe.","example_ka":"სახელმწიფო ობლიგაციები უსაფრთხოდ ითვლება.","category":"banking","level":"B2"},
-  {"english":"Dividend","georgian":"დივიდენდი","pronunciation":"/ˈdɪvɪdɛnd/","example_en":"The company pays a quarterly dividend.","example_ka":"კომპანია კვარტალურ დივიდენდს იხდის.","category":"banking","level":"B2"},
-  {"english":"Portfolio","georgian":"პორტფელი","pronunciation":"/pɔːrtˈfoʊlioʊ/","example_en":"Diversify your investment portfolio.","example_ka":"საინვესტიციო პორტფელი დივერსიფიცირე.","category":"banking","level":"B2"},
-  {"english":"Profit","georgian":"მოგება","pronunciation":"/ˈprɒfɪt/","example_en":"The company made a big profit.","example_ka":"კომპანიამ დიდი მოგება მიიღო.","category":"banking","level":"A2"},
-  {"english":"Loss","georgian":"ზარალი","pronunciation":"/lɒs/","example_en":"The business suffered a loss this year.","example_ka":"ბიზნესმა წელს ზარალი განიცადა.","category":"banking","level":"A2"},
-  {"english":"Income","georgian":"შემოსავალი","pronunciation":"/ˈɪnkʌm/","example_en":"His monthly income is $3000.","example_ka":"მისი ყოველთვიური შემოსავალი 3000 დოლარია.","category":"banking","level":"A2"},
-  {"english":"Expense","georgian":"ხარჯი","pronunciation":"/ɪkˈspɛns/","example_en":"Track your monthly expenses.","example_ka":"ყოველთვიური ხარჯები აღრიცხე.","category":"banking","level":"A2"},
-  {"english":"Insurance","georgian":"დაზღვევა","pronunciation":"/ɪnˈʃʊərəns/","example_en":"You need health insurance.","example_ka":"ჯანმრთელობის დაზღვევა გჭირდება.","category":"banking","level":"B1"},
-  {"english":"Premium","georgian":"პრემია","pronunciation":"/ˈpriːmiəm/","example_en":"The insurance premium went up.","example_ka":"სადაზღვევო პრემია გაიზარდა.","category":"banking","level":"B2"},
-  {"english":"Inflation","georgian":"ინფლაცია","pronunciation":"/ɪnˈfleɪʃən/","example_en":"Inflation is rising this year.","example_ka":"წელს ინფლაცია იზრდება.","category":"banking","level":"B1"},
-  {"english":"Recession","georgian":"რეცესია","pronunciation":"/rɪˈsɛʃən/","example_en":"The country entered a recession.","example_ka":"ქვეყანა რეცესიაში შევიდა.","category":"banking","level":"B2"},
-  {"english":"Bankrupt","georgian":"გაკოტრებული","pronunciation":"/ˈbæŋkrʌpt/","example_en":"The company went bankrupt.","example_ka":"კომპანია გაკოტრდა.","category":"banking","level":"B1"},
-  {"english":"Cashier","georgian":"მოლარე","pronunciation":"/kæˈʃɪər/","example_en":"The cashier counted the money.","example_ka":"მოლარემ ფული დათვალა.","category":"banking","level":"A2"},
-  {"english":"Check","georgian":"ჩეკი","pronunciation":"/tʃɛk/","example_en":"She wrote a check for $200.","example_ka":"მან 200 დოლარის ჩეკი გამოწერა.","category":"banking","level":"A2"},
-  {"english":"Wire transfer","georgian":"საბანკო გადარიცხვა","pronunciation":"/waɪər ˈtrænsfɜːr/","example_en":"Send the payment via wire transfer.","example_ka":"გადახდა საბანკო გადარიცხვით გაუგზავნე.","category":"banking","level":"B1"},
-  {"english":"PIN","georgian":"პინ-კოდი","pronunciation":"/pɪn/","example_en":"Enter your PIN at the ATM.","example_ka":"ბანკომატზე პინ-კოდი შეიყვანე.","category":"banking","level":"A1"},
-  {"english":"Online banking","georgian":"ინტერნეტ-ბანკინგი","pronunciation":"/ˈɒnlaɪn ˈbæŋkɪŋ/","example_en":"I pay bills through online banking.","example_ka":"გადასახადებს ინტერნეტ-ბანკინგით ვიხდი.","category":"banking","level":"A2"},
-  {"english":"Overdraft","georgian":"ოვერდრაფტი","pronunciation":"/ˈoʊvərˌdræft/","example_en":"Avoid overdraft fees.","example_ka":"ოვერდრაფტის საკომისიო თავიდან აირიდე.","category":"banking","level":"B2"},
-  {"english":"Collateral","georgian":"გირაო","pronunciation":"/kəˈlætərəl/","example_en":"The bank requires collateral for the loan.","example_ka":"ბანკი სესხისთვის გირაოს მოითხოვს.","category":"banking","level":"B2"},
-  {"english":"Installment","georgian":"განვადება","pronunciation":"/ɪnˈstɔːlmənt/","example_en":"Pay in monthly installments.","example_ka":"ყოველთვიური განვადებით გადაიხადე.","category":"banking","level":"B1"},
-  {"english":"Commission","georgian":"საკომისიო","pronunciation":"/kəˈmɪʃən/","example_en":"The bank charges a small commission.","example_ka":"ბანკი მცირე საკომისიოს იღებს.","category":"banking","level":"B1"},
-  {"english":"Fraud","georgian":"თაღლითობა","pronunciation":"/frɔːd/","example_en":"Report any suspicious fraud activity.","example_ka":"ნებისმიერი საეჭვო თაღლითობა შეატყობინე.","category":"banking","level":"B1"},
-  {"english":"Cryptocurrency","georgian":"კრიპტოვალუტა","pronunciation":"/ˈkrɪptoʊˌkʌrənsi/","example_en":"Bitcoin is the most popular cryptocurrency.","example_ka":"ბიტკოინი ყველაზე პოპულარული კრიპტოვალუტაა.","category":"banking","level":"B2"},
-  {"english":"Wallet","georgian":"საფულე","pronunciation":"/ˈwɒlɪt/","example_en":"I lost my wallet yesterday.","example_ka":"გუშინ საფულე დავკარგე.","category":"banking","level":"A1"},
-  {"english":"Cash","georgian":"ნაღდი ფული","pronunciation":"/kæʃ/","example_en":"Do you accept cash?","example_ka":"ნაღდ ფულს იღებთ?","category":"banking","level":"A1"},
-  {"english":"Coin","georgian":"მონეტა","pronunciation":"/kɔɪn/","example_en":"I found a coin on the street.","example_ka":"ქუჩაში მონეტა ვიპოვე.","category":"banking","level":"A1"},
-  {"english":"Banknote","georgian":"კუპიურა","pronunciation":"/ˈbæŋknoʊt/","example_en":"This is a $50 banknote.","example_ka":"ეს 50 დოლარიანი კუპიურაა.","category":"banking","level":"A2"},
-  {"english":"Paycheck","georgian":"ხელფასი","pronunciation":"/ˈpeɪtʃɛk/","example_en":"I get my paycheck on Friday.","example_ka":"ხელფასს პარასკევს ვიღებ.","category":"banking","level":"A2"},
-  {"english":"Refund","georgian":"თანხის დაბრუნება","pronunciation":"/ˈriːfʌnd/","example_en":"I requested a refund.","example_ka":"თანხის დაბრუნება მოვითხოვე.","category":"banking","level":"B1"},
-  {"english":"Penalty","georgian":"ჯარიმა","pronunciation":"/ˈpɛnəlti/","example_en":"There is a penalty for late payment.","example_ka":"დაგვიანებული გადახდისთვის ჯარიმაა.","category":"banking","level":"B1"},
-  {"english":"Asset","georgian":"აქტივი","pronunciation":"/ˈæsɛt/","example_en":"Real estate is a valuable asset.","example_ka":"უძრავი ქონება ღირებული აქტივია.","category":"banking","level":"B1"},
-  {"english":"Liability","georgian":"ვალდებულება","pronunciation":"/ˌlaɪəˈbɪləti/","example_en":"List all your liabilities.","example_ka":"ყველა ვალდებულება ჩამოწერე.","category":"banking","level":"B2"},
-  {"english":"Audit","georgian":"აუდიტი","pronunciation":"/ˈɔːdɪt/","example_en":"The company is under audit.","example_ka":"კომპანია აუდიტის ქვეშ არის.","category":"banking","level":"B2"},
-  {"english":"Shareholder","georgian":"აქციონერი","pronunciation":"/ˈʃɛərˌhoʊldər/","example_en":"Shareholders voted on the new CEO.","example_ka":"აქციონერებმა ახალ დირექტორს მისცეს ხმა.","category":"banking","level":"B2"},
-  {"english":"Revenue","georgian":"შემოსავალი","pronunciation":"/ˈrɛvənjuː/","example_en":"Annual revenue exceeded expectations.","example_ka":"წლიურმა შემოსავალმა მოლოდინს გადააჭარბა.","category":"banking","level":"B1"},
-  {"english":"Compound interest","georgian":"რთული პროცენტი","pronunciation":"/ˌkɒmpaʊnd ˈɪntrəst/","example_en":"Compound interest grows your savings faster.","example_ka":"რთული პროცენტი დანაზოგს უფრო სწრაფად ზრდის.","category":"banking","level":"B2"},
-  {"english":"Credit score","georgian":"საკრედიტო ქულა","pronunciation":"/ˈkrɛdɪt skɔːr/","example_en":"A high credit score helps you get loans.","example_ka":"მაღალი საკრედიტო ქულა სესხის მიღებაში გეხმარება.","category":"banking","level":"B1"}
+  {
+    "english": "Bank",
+    "georgian": "ბანკი",
+    "pronunciation": "/bæŋk/",
+    "example_en": "I need to go to the bank.",
+    "example_ka": "ბანკში წასვლა მჭირდება.",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Money",
+    "georgian": "ფული",
+    "pronunciation": "/ˈmʌni/",
+    "example_en": "How much money do you have?",
+    "example_ka": "რამდენი ფული გაქვს?",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Account",
+    "georgian": "ანგარიში",
+    "pronunciation": "/əˈkaʊnt/",
+    "example_en": "I opened a new bank account.",
+    "example_ka": "ახალი საბანკო ანგარიში გავხსენი.",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Savings",
+    "georgian": "დანაზოგი",
+    "pronunciation": "/ˈseɪvɪŋz/",
+    "example_en": "Put your savings in the bank.",
+    "example_ka": "დანაზოგი ბანკში შეინახე.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Loan",
+    "georgian": "სესხი",
+    "pronunciation": "/loʊn/",
+    "example_en": "She took out a loan to buy a car.",
+    "example_ka": "მან მანქანის საყიდლად სესხი აიღო.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Interest",
+    "georgian": "პროცენტი",
+    "pronunciation": "/ˈɪntrəst/",
+    "example_en": "The interest rate is 5%.",
+    "example_ka": "საპროცენტო განაკვეთი 5%-ია.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Credit",
+    "georgian": "კრედიტი",
+    "pronunciation": "/ˈkrɛdɪt/",
+    "example_en": "He has good credit.",
+    "example_ka": "მას კარგი საკრედიტო ისტორია აქვს.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Debit",
+    "georgian": "დებეტი",
+    "pronunciation": "/ˈdɛbɪt/",
+    "example_en": "Pay with your debit card.",
+    "example_ka": "სადებეტო ბარათით გადაიხადე.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Deposit",
+    "georgian": "შენატანი",
+    "pronunciation": "/dɪˈpɒzɪt/",
+    "example_en": "I made a deposit of $500.",
+    "example_ka": "500 დოლარის შენატანი გავაკეთე.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Withdrawal",
+    "georgian": "გამოტანა",
+    "pronunciation": "/wɪðˈdrɔːəl/",
+    "example_en": "The ATM has a daily withdrawal limit.",
+    "example_ka": "ბანკომატს ყოველდღიური გამოტანის ლიმიტი აქვს.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "ATM",
+    "georgian": "ბანკომატი",
+    "pronunciation": "/ˌeɪtiːˈɛm/",
+    "example_en": "Find the nearest ATM.",
+    "example_ka": "უახლოესი ბანკომატი იპოვე.",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Balance",
+    "georgian": "ბალანსი",
+    "pronunciation": "/ˈbæləns/",
+    "example_en": "Check your account balance.",
+    "example_ka": "ანგარიშის ბალანსი შეამოწმე.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Transfer",
+    "georgian": "გადარიცხვა",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "Transfer money to my account.",
+    "example_ka": "ჩემს ანგარიშზე ფული გადარიცხე.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Currency",
+    "georgian": "ვალუტა",
+    "pronunciation": "/ˈkʌrənsi/",
+    "example_en": "What currency do they use?",
+    "example_ka": "რა ვალუტას იყენებენ?",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Mortgage",
+    "georgian": "იპოთეკა",
+    "pronunciation": "/ˈmɔːrɡɪdʒ/",
+    "example_en": "They got a mortgage for the house.",
+    "example_ka": "მათ სახლისთვის იპოთეკა აიღეს.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Debt",
+    "georgian": "ვალი",
+    "pronunciation": "/dɛt/",
+    "example_en": "He is in a lot of debt.",
+    "example_ka": "მას ბევრი ვალი აქვს.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "We need to stick to the budget.",
+    "example_ka": "ბიუჯეტს უნდა ვეტიოთ.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Tax",
+    "georgian": "გადასახადი",
+    "pronunciation": "/tæks/",
+    "example_en": "You must pay your taxes on time.",
+    "example_ka": "გადასახადი დროულად უნდა გადაიხადო.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "Send the invoice to the client.",
+    "example_ka": "კლიენტს ინვოისი გაუგზავნე.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Keep the receipt for your records.",
+    "example_ka": "ქვითარი შეინახე ჩანაწერებისთვის.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Investment",
+    "georgian": "ინვესტიცია",
+    "pronunciation": "/ɪnˈvɛstmənt/",
+    "example_en": "Real estate is a good investment.",
+    "example_ka": "უძრავი ქონება კარგი ინვესტიციაა.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Stock",
+    "georgian": "აქცია",
+    "pronunciation": "/stɒk/",
+    "example_en": "He bought stocks in a tech company.",
+    "example_ka": "მან ტექნოლოგიური კომპანიის აქციები იყიდა.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Bond",
+    "georgian": "ობლიგაცია",
+    "pronunciation": "/bɒnd/",
+    "example_en": "Government bonds are considered safe.",
+    "example_ka": "სახელმწიფო ობლიგაციები უსაფრთხოდ ითვლება.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Dividend",
+    "georgian": "დივიდენდი",
+    "pronunciation": "/ˈdɪvɪdɛnd/",
+    "example_en": "The company pays a quarterly dividend.",
+    "example_ka": "კომპანია კვარტალურ დივიდენდს იხდის.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Portfolio",
+    "georgian": "პორტფელი",
+    "pronunciation": "/pɔːrtˈfoʊlioʊ/",
+    "example_en": "Diversify your investment portfolio.",
+    "example_ka": "საინვესტიციო პორტფელი დივერსიფიცირე.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Profit",
+    "georgian": "მოგება",
+    "pronunciation": "/ˈprɒfɪt/",
+    "example_en": "The company made a big profit.",
+    "example_ka": "კომპანიამ დიდი მოგება მიიღო.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Loss",
+    "georgian": "ზარალი",
+    "pronunciation": "/lɒs/",
+    "example_en": "The business suffered a loss this year.",
+    "example_ka": "ბიზნესმა წელს ზარალი განიცადა.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Income",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈɪnkʌm/",
+    "example_en": "His monthly income is $3000.",
+    "example_ka": "მისი ყოველთვიური შემოსავალი 3000 დოლარია.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Expense",
+    "georgian": "ხარჯი",
+    "pronunciation": "/ɪkˈspɛns/",
+    "example_en": "Track your monthly expenses.",
+    "example_ka": "ყოველთვიური ხარჯები აღრიცხე.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "/ɪnˈʃʊərəns/",
+    "example_en": "You need health insurance.",
+    "example_ka": "ჯანმრთელობის დაზღვევა გჭირდება.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Premium",
+    "georgian": "პრემია",
+    "pronunciation": "/ˈpriːmiəm/",
+    "example_en": "The insurance premium went up.",
+    "example_ka": "სადაზღვევო პრემია გაიზარდა.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Inflation",
+    "georgian": "ინფლაცია",
+    "pronunciation": "/ɪnˈfleɪʃən/",
+    "example_en": "Inflation is rising this year.",
+    "example_ka": "წელს ინფლაცია იზრდება.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Recession",
+    "georgian": "რეცესია",
+    "pronunciation": "/rɪˈsɛʃən/",
+    "example_en": "The country entered a recession.",
+    "example_ka": "ქვეყანა რეცესიაში შევიდა.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Bankrupt",
+    "georgian": "გაკოტრებული",
+    "pronunciation": "/ˈbæŋkrʌpt/",
+    "example_en": "The company went bankrupt.",
+    "example_ka": "კომპანია გაკოტრდა.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Cashier",
+    "georgian": "მოლარე",
+    "pronunciation": "/kæˈʃɪər/",
+    "example_en": "The cashier counted the money.",
+    "example_ka": "მოლარემ ფული დათვალა.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Check",
+    "georgian": "ჩეკი",
+    "pronunciation": "/tʃɛk/",
+    "example_en": "She wrote a check for $200.",
+    "example_ka": "მან 200 დოლარის ჩეკი გამოწერა.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "PIN",
+    "georgian": "პინ-კოდი",
+    "pronunciation": "/pɪn/",
+    "example_en": "Enter your PIN at the ATM.",
+    "example_ka": "ბანკომატზე პინ-კოდი შეიყვანე.",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Overdraft",
+    "georgian": "ოვერდრაფტი",
+    "pronunciation": "/ˈoʊvərˌdræft/",
+    "example_en": "Avoid overdraft fees.",
+    "example_ka": "ოვერდრაფტის საკომისიო თავიდან აირიდე.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Collateral",
+    "georgian": "გირაო",
+    "pronunciation": "/kəˈlætərəl/",
+    "example_en": "The bank requires collateral for the loan.",
+    "example_ka": "ბანკი სესხისთვის გირაოს მოითხოვს.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Installment",
+    "georgian": "განვადება",
+    "pronunciation": "/ɪnˈstɔːlmənt/",
+    "example_en": "Pay in monthly installments.",
+    "example_ka": "ყოველთვიური განვადებით გადაიხადე.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Commission",
+    "georgian": "საკომისიო",
+    "pronunciation": "/kəˈmɪʃən/",
+    "example_en": "The bank charges a small commission.",
+    "example_ka": "ბანკი მცირე საკომისიოს იღებს.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Fraud",
+    "georgian": "თაღლითობა",
+    "pronunciation": "/frɔːd/",
+    "example_en": "Report any suspicious fraud activity.",
+    "example_ka": "ნებისმიერი საეჭვო თაღლითობა შეატყობინე.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Cryptocurrency",
+    "georgian": "კრიპტოვალუტა",
+    "pronunciation": "/ˈkrɪptoʊˌkʌrənsi/",
+    "example_en": "Bitcoin is the most popular cryptocurrency.",
+    "example_ka": "ბიტკოინი ყველაზე პოპულარული კრიპტოვალუტაა.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Wallet",
+    "georgian": "საფულე",
+    "pronunciation": "/ˈwɒlɪt/",
+    "example_en": "I lost my wallet yesterday.",
+    "example_ka": "გუშინ საფულე დავკარგე.",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Cash",
+    "georgian": "ნაღდი ფული",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Do you accept cash?",
+    "example_ka": "ნაღდ ფულს იღებთ?",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Coin",
+    "georgian": "მონეტა",
+    "pronunciation": "/kɔɪn/",
+    "example_en": "I found a coin on the street.",
+    "example_ka": "ქუჩაში მონეტა ვიპოვე.",
+    "category": "banking-finance",
+    "level": "A1"
+  },
+  {
+    "english": "Banknote",
+    "georgian": "კუპიურა",
+    "pronunciation": "/ˈbæŋknoʊt/",
+    "example_en": "This is a $50 banknote.",
+    "example_ka": "ეს 50 დოლარიანი კუპიურაა.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Paycheck",
+    "georgian": "ხელფასი",
+    "pronunciation": "/ˈpeɪtʃɛk/",
+    "example_en": "I get my paycheck on Friday.",
+    "example_ka": "ხელფასს პარასკევს ვიღებ.",
+    "category": "banking-finance",
+    "level": "A2"
+  },
+  {
+    "english": "Refund",
+    "georgian": "თანხის დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "I requested a refund.",
+    "example_ka": "თანხის დაბრუნება მოვითხოვე.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Penalty",
+    "georgian": "ჯარიმა",
+    "pronunciation": "/ˈpɛnəlti/",
+    "example_en": "There is a penalty for late payment.",
+    "example_ka": "დაგვიანებული გადახდისთვის ჯარიმაა.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Asset",
+    "georgian": "აქტივი",
+    "pronunciation": "/ˈæsɛt/",
+    "example_en": "Real estate is a valuable asset.",
+    "example_ka": "უძრავი ქონება ღირებული აქტივია.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Liability",
+    "georgian": "ვალდებულება",
+    "pronunciation": "/ˌlaɪəˈbɪləti/",
+    "example_en": "List all your liabilities.",
+    "example_ka": "ყველა ვალდებულება ჩამოწერე.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Audit",
+    "georgian": "აუდიტი",
+    "pronunciation": "/ˈɔːdɪt/",
+    "example_en": "The company is under audit.",
+    "example_ka": "კომპანია აუდიტის ქვეშ არის.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Shareholder",
+    "georgian": "აქციონერი",
+    "pronunciation": "/ˈʃɛərˌhoʊldər/",
+    "example_en": "Shareholders voted on the new CEO.",
+    "example_ka": "აქციონერებმა ახალ დირექტორს მისცეს ხმა.",
+    "category": "banking-finance",
+    "level": "B2"
+  },
+  {
+    "english": "Revenue",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈrɛvənjuː/",
+    "example_en": "Annual revenue exceeded expectations.",
+    "example_ka": "წლიურმა შემოსავალმა მოლოდინს გადააჭარბა.",
+    "category": "banking-finance",
+    "level": "B1"
+  },
+  {
+    "english": "Withdraw",
+    "georgian": "გამოტანა",
+    "pronunciation": "/wɪðˈdrɔː/",
+    "example_en": "I need to withdraw some cash.",
+    "example_ka": "ცოტა ნაღდი ფულის გამოტანა მჭირდება.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Borrow",
+    "georgian": "სესხება",
+    "pronunciation": "/ˈbɒroʊ/",
+    "example_en": "Can I borrow some money?",
+    "example_ka": "შეიძლება ფული ვისესხო?",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Lend",
+    "georgian": "გასესხება",
+    "pronunciation": "/lend/",
+    "example_en": "Can you lend me $50?",
+    "example_ka": "შეგიძლია 50 დოლარი მასესხო?",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Owe",
+    "georgian": "ვალი",
+    "pronunciation": "/oʊ/",
+    "example_en": "I owe you $20.",
+    "example_ka": "20 დოლარს გევალები.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Repay",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈpeɪ/",
+    "example_en": "I will repay the loan.",
+    "example_ka": "სესხს დავაბრუნებ.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Invest",
+    "georgian": "ინვესტირება",
+    "pronunciation": "/ɪnˈvest/",
+    "example_en": "He decided to invest in gold.",
+    "example_ka": "მან გადაწყვიტა ოქროში ეინვესტირებინა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Earn",
+    "georgian": "გამომუშავება",
+    "pronunciation": "/ɜːrn/",
+    "example_en": "She earns a good salary.",
+    "example_ka": "ის კარგ ხელფასს გამოიმუშავებს.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Spend",
+    "georgian": "ხარჯვა",
+    "pronunciation": "/spend/",
+    "example_en": "Don't spend too much.",
+    "example_ka": "ბევრი არ დახარჯო.",
+    "level": "A1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Save",
+    "georgian": "დაზოგვა",
+    "pronunciation": "/seɪv/",
+    "example_en": "Save money for the future.",
+    "example_ka": "მომავლისთვის ფული დაიზოგე.",
+    "level": "A1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Afford",
+    "georgian": "ხელის მოწვდომა",
+    "pronunciation": "/əˈfɔːrd/",
+    "example_en": "I can't afford this car.",
+    "example_ka": "ამ მანქანის ყიდვა არ შემიძლია.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "This is really cheap.",
+    "example_ka": "ეს ნამდვილად იაფია.",
+    "level": "A1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspensɪv/",
+    "example_en": "That restaurant is expensive.",
+    "example_ka": "ის რესტორანი ძვირია.",
+    "level": "A1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "What's the price of this?",
+    "example_ka": "ამის ფასი რაა?",
+    "level": "A1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Cost",
+    "georgian": "ღირებულება",
+    "pronunciation": "/kɒst/",
+    "example_en": "How much does it cost?",
+    "example_ka": "რა ღირს?",
+    "level": "A1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Value",
+    "georgian": "ღირებულება",
+    "pronunciation": "/ˈvæljuː/",
+    "example_en": "The value of the house increased.",
+    "example_ka": "სახლის ღირებულება გაიზარდა.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Wage",
+    "georgian": "ხელფასი",
+    "pronunciation": "/weɪdʒ/",
+    "example_en": "The minimum wage went up.",
+    "example_ka": "მინიმალური ხელფასი გაიზარდა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Salary",
+    "georgian": "ხელფასი",
+    "pronunciation": "/ˈsæləri/",
+    "example_en": "Her salary is paid monthly.",
+    "example_ka": "მის ხელფასს ყოველთვე იხდიან.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Payment",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈpeɪmənt/",
+    "example_en": "The payment is due tomorrow.",
+    "example_ka": "გადახდის ვადა ხვალაა.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Bill",
+    "georgian": "გადასახადი",
+    "pronunciation": "/bɪl/",
+    "example_en": "Pay the electricity bill.",
+    "example_ka": "ელექტროენერგიის გადასახადი გადაიხადე.",
+    "level": "A1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Fee",
+    "georgian": "საკომისიო",
+    "pronunciation": "/fiː/",
+    "example_en": "There's a small fee for this service.",
+    "example_ka": "ამ სერვისისთვის მცირე საკომისიოა.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Fine",
+    "georgian": "ჯარიმა",
+    "pronunciation": "/faɪn/",
+    "example_en": "He got a parking fine.",
+    "example_ka": "მას პარკინგის ჯარიმა მისცეს.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Tip",
+    "georgian": "ჩაის ფული",
+    "pronunciation": "/tɪp/",
+    "example_en": "Leave a tip for the waiter.",
+    "example_ka": "ოფიციანტს ჩაის ფული დაუტოვე.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Can I get a discount?",
+    "example_ka": "შეიძლება ფასდაკლება?",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Bargain",
+    "georgian": "ხელსაყრელი შეთავაზება",
+    "pronunciation": "/ˈbɑːrɡɪn/",
+    "example_en": "That was a real bargain.",
+    "example_ka": "ეს ნამდვილი ხელსაყრელი შეთავაზება იყო.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɒn/",
+    "example_en": "Use this coupon for 10% off.",
+    "example_ka": "ეს კუპონი 10% ფასდაკლებისთვის გამოიყენე.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Voucher",
+    "georgian": "ვაუჩერი",
+    "pronunciation": "/ˈvaʊtʃər/",
+    "example_en": "I have a gift voucher.",
+    "example_ka": "საჩუქრის ვაუჩერი მაქვს.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Donate",
+    "georgian": "შეწირვა",
+    "pronunciation": "/doʊˈneɪt/",
+    "example_en": "She donates to charity.",
+    "example_ka": "ის საქველმოქმედო ორგანიზაციას სწირავს.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Donation",
+    "georgian": "შემოწირულობა",
+    "pronunciation": "/doʊˈneɪʃən/",
+    "example_en": "Thank you for your donation.",
+    "example_ka": "მადლობა შემოწირულობისთვის.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Charity",
+    "georgian": "საქველმოქმედო",
+    "pronunciation": "/ˈtʃærəti/",
+    "example_en": "He works for a charity.",
+    "example_ka": "ის საქველმოქმედო ორგანიზაციაში მუშაობს.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Fortune",
+    "georgian": "ბედი/სიმდიდრე",
+    "pronunciation": "/ˈfɔːrtʃən/",
+    "example_en": "He made a fortune in business.",
+    "example_ka": "მან ბიზნესში სიმდიდრე დააგროვა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Wealthy",
+    "georgian": "მდიდარი",
+    "pronunciation": "/ˈwelθi/",
+    "example_en": "She is very wealthy.",
+    "example_ka": "ის ძალიან მდიდარია.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Poverty",
+    "georgian": "სიღარიბე",
+    "pronunciation": "/ˈpɒvərti/",
+    "example_en": "Many people live in poverty.",
+    "example_ka": "ბევრი ადამიანი სიღარიბეში ცხოვრობს.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Prosperity",
+    "georgian": "კეთილდღეობა",
+    "pronunciation": "/prɒˈsperəti/",
+    "example_en": "The country enjoyed prosperity.",
+    "example_ka": "ქვეყანა კეთილდღეობით ტკბებოდა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Exchange",
+    "georgian": "გაცვლა",
+    "pronunciation": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "Where can I exchange money?",
+    "example_ka": "სად შემიძლია ფულის გაცვლა?",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Rate",
+    "georgian": "კურსი",
+    "pronunciation": "/reɪt/",
+    "example_en": "What's the exchange rate?",
+    "example_ka": "რა კურსია?",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Deflation",
+    "georgian": "დეფლაცია",
+    "pronunciation": "/dɪˈfleɪʃən/",
+    "example_en": "Deflation can hurt the economy.",
+    "example_ka": "დეფლაციამ ეკონომიკას შეიძლება ავნოს.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Equity",
+    "georgian": "კაპიტალი",
+    "pronunciation": "/ˈekwɪti/",
+    "example_en": "They have equity in the company.",
+    "example_ka": "მათ კომპანიაში კაპიტალი აქვთ.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Capital",
+    "georgian": "კაპიტალი",
+    "pronunciation": "/ˈkæpɪtəl/",
+    "example_en": "We need more capital to start.",
+    "example_ka": "დასაწყებად მეტი კაპიტალი გვჭირდება.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Commodity",
+    "georgian": "საქონელი",
+    "pronunciation": "/kəˈmɒdəti/",
+    "example_en": "Oil is a valuable commodity.",
+    "example_ka": "ნავთობი ღირებული საქონელია.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Speculation",
+    "georgian": "სპეკულაცია",
+    "pronunciation": "/ˌspekjʊˈleɪʃən/",
+    "example_en": "Stock speculation is risky.",
+    "example_ka": "აქციებით სპეკულაცია სარისკოა.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Broker",
+    "georgian": "ბროკერი",
+    "pronunciation": "/ˈbroʊkər/",
+    "example_en": "The broker handled the deal.",
+    "example_ka": "ბროკერმა გარიგება წარმართა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Trader",
+    "georgian": "ტრეიდერი",
+    "pronunciation": "/ˈtreɪdər/",
+    "example_en": "He's a stock trader.",
+    "example_ka": "ის აქციებით ტრეიდერია.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Hedge",
+    "georgian": "ჰეჯირება",
+    "pronunciation": "/hedʒ/",
+    "example_en": "They hedge against risk.",
+    "example_ka": "ისინი რისკისგან ჰეჯირდებიან.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Yield",
+    "georgian": "შემოსავლიანობა",
+    "pronunciation": "/jiːld/",
+    "example_en": "This bond has a 3% yield.",
+    "example_ka": "ამ ობლიგაციის შემოსავლიანობა 3%-ია.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Mature",
+    "georgian": "ვადიანი",
+    "pronunciation": "/məˈtʃʊr/",
+    "example_en": "The bond will mature next year.",
+    "example_ka": "ობლიგაციის ვადა მომავალ წელს იწურება.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Liquidate",
+    "georgian": "ლიკვიდაცია",
+    "pronunciation": "/ˈlɪkwɪdeɪt/",
+    "example_en": "They had to liquidate their assets.",
+    "example_ka": "მათ აქტივების ლიკვიდაცია მოუწიათ.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Solvent",
+    "georgian": "გადახდისუნარიანი",
+    "pronunciation": "/ˈsɒlvənt/",
+    "example_en": "The company is still solvent.",
+    "example_ka": "კომპანია ჯერ კიდევ გადახდისუნარიანია.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Insolvent",
+    "georgian": "გადახდისუუნარო",
+    "pronunciation": "/ɪnˈsɒlvənt/",
+    "example_en": "The firm became insolvent.",
+    "example_ka": "ფირმა გადახდისუუნარო გახდა.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Amortize",
+    "georgian": "ამორტიზაცია",
+    "pronunciation": "/ˈæmɔːrtaɪz/",
+    "example_en": "We amortize the loan over 20 years.",
+    "example_ka": "სესხს 20 წელიწადზე ვამორტიზებთ.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Accrue",
+    "georgian": "დაგროვება",
+    "pronunciation": "/əˈkruː/",
+    "example_en": "Interest accrues monthly.",
+    "example_ka": "პროცენტი ყოველთვიურად გროვდება.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Ledger",
+    "georgian": "რეესტრი",
+    "pronunciation": "/ˈledʒər/",
+    "example_en": "Record it in the ledger.",
+    "example_ka": "რეესტრში ჩაწერე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Teller",
+    "georgian": "ბანკის მოხელე",
+    "pronunciation": "/ˈtelər/",
+    "example_en": "Ask the teller for help.",
+    "example_ka": "ბანკის მოხელეს სთხოვე დახმარება.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Vault",
+    "georgian": "სეიფი",
+    "pronunciation": "/vɔːlt/",
+    "example_en": "The gold is in the vault.",
+    "example_ka": "ოქრო სეიფშია.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Safe",
+    "georgian": "სეიფი",
+    "pronunciation": "/seɪf/",
+    "example_en": "Keep documents in the safe.",
+    "example_ka": "დოკუმენტები სეიფში შეინახე.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Forge",
+    "georgian": "გაყალბება",
+    "pronunciation": "/fɔːrdʒ/",
+    "example_en": "He forged the signature.",
+    "example_ka": "მან ხელმოწერა გააყალბა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Counterfeit",
+    "georgian": "ყალბი",
+    "pronunciation": "/ˈkaʊntərfɪt/",
+    "example_en": "This is a counterfeit bill.",
+    "example_ka": "ეს ყალბი კუპიურაა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Embezzle",
+    "georgian": "მითვისება",
+    "pronunciation": "/ɪmˈbezəl/",
+    "example_en": "He embezzled company funds.",
+    "example_ka": "მან კომპანიის ფული მიითვისა.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Launder",
+    "georgian": "გათეთრება",
+    "pronunciation": "/ˈlɔːndər/",
+    "example_en": "They laundered illegal money.",
+    "example_ka": "მათ უკანონო ფული გაათეთრეს.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Subsidize",
+    "georgian": "სუბსიდირება",
+    "pronunciation": "/ˈsʌbsɪdaɪz/",
+    "example_en": "The government subsidizes farmers.",
+    "example_ka": "მთავრობა ფერმერებს ასუბსიდირებს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Subsidy",
+    "georgian": "სუბსიდია",
+    "pronunciation": "/ˈsʌbsɪdi/",
+    "example_en": "They received a government subsidy.",
+    "example_ka": "მათ სახელმწიფო სუბსიდია მიიღეს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Tariff",
+    "georgian": "ტარიფი",
+    "pronunciation": "/ˈtærɪf/",
+    "example_en": "New tariffs were imposed.",
+    "example_ka": "ახალი ტარიფები დაწესდა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Quota",
+    "georgian": "კვოტა",
+    "pronunciation": "/ˈkwoʊtə/",
+    "example_en": "The import quota was reached.",
+    "example_ka": "იმპორტის კვოტა ამოიწურა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Export",
+    "georgian": "ექსპორტი",
+    "pronunciation": "/ˈekspɔːrt/",
+    "example_en": "Georgia exports wine.",
+    "example_ka": "საქართველო ღვინოს ექსპორტს ახდენს.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Import",
+    "georgian": "იმპორტი",
+    "pronunciation": "/ˈɪmpɔːrt/",
+    "example_en": "We import electronics.",
+    "example_ka": "ჩვენ ელექტრონიკის იმპორტს ვახდენთ.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Trade",
+    "georgian": "ვაჭრობა",
+    "pronunciation": "/treɪd/",
+    "example_en": "International trade is growing.",
+    "example_ka": "საერთაშორისო ვაჭრობა იზრდება.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Fiscal",
+    "georgian": "ფისკალური",
+    "pronunciation": "/ˈfɪskəl/",
+    "example_en": "The fiscal year ends in December.",
+    "example_ka": "ფისკალური წელი დეკემბერში მთავრდება.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Monetary",
+    "georgian": "მონეტარული",
+    "pronunciation": "/ˈmʌnɪteri/",
+    "example_en": "The central bank sets monetary policy.",
+    "example_ka": "ცენტრალური ბანკი მონეტარულ პოლიტიკას ადგენს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Bailout",
+    "georgian": "ფინანსური გადარჩენა",
+    "pronunciation": "/ˈbeɪlaʊt/",
+    "example_en": "The bank received a bailout.",
+    "example_ka": "ბანკმა ფინანსური დახმარება მიიღო.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Devalue",
+    "georgian": "გაუფასურება",
+    "pronunciation": "/diːˈvæljuː/",
+    "example_en": "The currency was devalued.",
+    "example_ka": "ვალუტა გაუფასურდა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Appreciate",
+    "georgian": "გაძვირება",
+    "pronunciation": "/əˈpriːʃieɪt/",
+    "example_en": "The dollar appreciated.",
+    "example_ka": "დოლარი გაძვირდა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Depreciate",
+    "georgian": "გაიაფება",
+    "pronunciation": "/dɪˈpriːʃieɪt/",
+    "example_en": "Cars depreciate quickly.",
+    "example_ka": "მანქანები სწრაფად კარგავს ფასს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Fluctuate",
+    "georgian": "რყევა",
+    "pronunciation": "/ˈflʌktʃueɪt/",
+    "example_en": "Prices fluctuate daily.",
+    "example_ka": "ფასები ყოველდღიურად იცვლება.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Compound",
+    "georgian": "რთული პროცენტი",
+    "pronunciation": "/ˈkɒmpaʊnd/",
+    "example_en": "Compound interest grows faster.",
+    "example_ka": "რთული პროცენტი უფრო სწრაფად იზრდება.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Principal",
+    "georgian": "ძირითადი თანხა",
+    "pronunciation": "/ˈprɪnsəpəl/",
+    "example_en": "Pay off the principal first.",
+    "example_ka": "ჯერ ძირითადი თანხა გადაიხადე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Creditor",
+    "georgian": "კრედიტორი",
+    "pronunciation": "/ˈkredɪtər/",
+    "example_en": "The creditor demanded payment.",
+    "example_ka": "კრედიტორმა გადახდა მოითხოვა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Debtor",
+    "georgian": "მოვალე",
+    "pronunciation": "/ˈdetər/",
+    "example_en": "The debtor couldn't pay.",
+    "example_ka": "მოვალეს გადახდა არ შეეძლო.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Allocate",
+    "georgian": "განაწილება",
+    "pronunciation": "/ˈæləkeɪt/",
+    "example_en": "Allocate funds wisely.",
+    "example_ka": "სახსრები გონივრულად გაანაწილე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Reimburse",
+    "georgian": "ანაზღაურება",
+    "pronunciation": "/ˌriːɪmˈbɜːrs/",
+    "example_en": "The company will reimburse you.",
+    "example_ka": "კომპანია აგინაზღაურებს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Transaction",
+    "georgian": "ტრანზაქცია",
+    "pronunciation": "/trænˈzækʃən/",
+    "example_en": "The transaction was completed.",
+    "example_ka": "ტრანზაქცია დასრულდა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Statement",
+    "georgian": "ამონაწერი",
+    "pronunciation": "/ˈsteɪtmənt/",
+    "example_en": "Check your bank statement.",
+    "example_ka": "საბანკო ამონაწერი შეამოწმე.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Foreclosure",
+    "georgian": "იძულებითი გაყიდვა",
+    "pronunciation": "/fɔːrˈkloʊʒər/",
+    "example_en": "They faced foreclosure.",
+    "example_ka": "მათ იძულებითი გაყიდვა ემუქრებოდათ.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Annuity",
+    "georgian": "ანუიტეტი",
+    "pronunciation": "/əˈnjuːəti/",
+    "example_en": "She receives a monthly annuity.",
+    "example_ka": "ის ყოველთვიურ ანუიტეტს იღებს.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Pension",
+    "georgian": "პენსია",
+    "pronunciation": "/ˈpenʃən/",
+    "example_en": "He lives on his pension.",
+    "example_ka": "ის პენსიით ცხოვრობს.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Retire",
+    "georgian": "პენსიაზე გასვლა",
+    "pronunciation": "/rɪˈtaɪər/",
+    "example_en": "She plans to retire at 60.",
+    "example_ka": "ის 60 წლის ასაკში პენსიაზე გასვლას გეგმავს.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Bankroll",
+    "georgian": "დაფინანსება",
+    "pronunciation": "/ˈbæŋkroʊl/",
+    "example_en": "Who will bankroll the project?",
+    "example_ka": "ვინ დააფინანსებს პროექტს?",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Leverage",
+    "georgian": "ბერკეტი",
+    "pronunciation": "/ˈlevərɪdʒ/",
+    "example_en": "They used leverage to grow.",
+    "example_ka": "მათ ზრდისთვის ბერკეტი გამოიყენეს.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Diversify",
+    "georgian": "დივერსიფიკაცია",
+    "pronunciation": "/daɪˈvɜːrsɪfaɪ/",
+    "example_en": "Diversify your investments.",
+    "example_ka": "ინვესტიციები დივერსიფიცირე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Surplus",
+    "georgian": "ჭარბი",
+    "pronunciation": "/ˈsɜːrpləs/",
+    "example_en": "The budget has a surplus.",
+    "example_ka": "ბიუჯეტს ჭარბი აქვს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Deficit",
+    "georgian": "დეფიციტი",
+    "pronunciation": "/ˈdefɪsɪt/",
+    "example_en": "The country has a budget deficit.",
+    "example_ka": "ქვეყანას საბიუჯეტო დეფიციტი აქვს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Collate",
+    "georgian": "შედარება",
+    "pronunciation": "/kəˈleɪt/",
+    "example_en": "Collate the financial reports.",
+    "example_ka": "ფინანსური ანგარიშები შეადარე.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Remittance",
+    "georgian": "გადარიცხვა",
+    "pronunciation": "/rɪˈmɪtəns/",
+    "example_en": "He sent a remittance home.",
+    "example_ka": "მან სახლში გადარიცხვა გაგზავნა.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Escrow",
+    "georgian": "ესქროუ",
+    "pronunciation": "/ˈeskroʊ/",
+    "example_en": "The money is held in escrow.",
+    "example_ka": "ფული ესქროუზეა.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Fiduciary",
+    "georgian": "ფიდუციარული",
+    "pronunciation": "/fɪˈdjuːʃieri/",
+    "example_en": "A fiduciary manages your assets.",
+    "example_ka": "ფიდუციარი თქვენს აქტივებს მართავს.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Amend",
+    "georgian": "შესწორება",
+    "pronunciation": "/əˈmend/",
+    "example_en": "Amend the financial plan.",
+    "example_ka": "ფინანსური გეგმა შეასწორე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Consolidate",
+    "georgian": "კონსოლიდაცია",
+    "pronunciation": "/kənˈsɒlɪdeɪt/",
+    "example_en": "Consolidate your debts.",
+    "example_ka": "ვალები კონსოლიდირე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Incentive",
+    "georgian": "წახალისება",
+    "pronunciation": "/ɪnˈsentɪv/",
+    "example_en": "Tax incentives attract investors.",
+    "example_ka": "საგადასახადო წახალისება ინვესტორებს იზიდავს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Frugal",
+    "georgian": "მომჭირნე",
+    "pronunciation": "/ˈfruːɡəl/",
+    "example_en": "She is very frugal with money.",
+    "example_ka": "ის ფულთან ძალიან მომჭირნეა.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Thrifty",
+    "georgian": "მომჭირნე",
+    "pronunciation": "/ˈθrɪfti/",
+    "example_en": "Being thrifty helps you save.",
+    "example_ka": "მომჭირნეობა დაზოგვაში გეხმარება.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Extravagant",
+    "georgian": "ფუფუნებით",
+    "pronunciation": "/ɪkˈstrævəɡənt/",
+    "example_en": "That purchase was extravagant.",
+    "example_ka": "ეს შენაძენი ფუფუნებით იყო.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Lucrative",
+    "georgian": "მომგებიანი",
+    "pronunciation": "/ˈluːkrətɪv/",
+    "example_en": "It's a lucrative business.",
+    "example_ka": "ეს მომგებიანი ბიზნესია.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Solicit",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/səˈlɪsɪt/",
+    "example_en": "They solicit donations online.",
+    "example_ka": "ისინი ონლაინ შემოწირულობას ითხოვენ.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Underwrite",
+    "georgian": "გარანტირება",
+    "pronunciation": "/ˈʌndərraɪt/",
+    "example_en": "The bank underwrites the loan.",
+    "example_ka": "ბანკი სესხს უზრუნველყოფს.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Venture",
+    "georgian": "საწარმო",
+    "pronunciation": "/ˈventʃər/",
+    "example_en": "This is a risky venture.",
+    "example_ka": "ეს სარისკო საწარმოა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Bankbook",
+    "georgian": "საბანკო წიგნაკი",
+    "pronunciation": "/ˈbæŋkbʊk/",
+    "example_en": "Update your bankbook.",
+    "example_ka": "საბანკო წიგნაკი განაახლე.",
+    "level": "A2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Overdraw",
+    "georgian": "გადაჭარბება",
+    "pronunciation": "/ˌoʊvərˈdrɔː/",
+    "example_en": "Don't overdraw your account.",
+    "example_ka": "ანგარიშს ნუ გადააჭარბებ.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Authorize",
+    "georgian": "ავტორიზაცია",
+    "pronunciation": "/ˈɔːθəraɪz/",
+    "example_en": "Authorize the payment.",
+    "example_ka": "გადახდა ავტორიზე.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Verify",
+    "georgian": "გადამოწმება",
+    "pronunciation": "/ˈverɪfaɪ/",
+    "example_en": "Verify your identity.",
+    "example_ka": "პირადობა გადაამოწმე.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Benchmark",
+    "georgian": "საორიენტაციო",
+    "pronunciation": "/ˈbentʃmɑːrk/",
+    "example_en": "Use this as a benchmark.",
+    "example_ka": "ეს საორიენტაციოდ გამოიყენე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Volatile",
+    "georgian": "არამდგრადი",
+    "pronunciation": "/ˈvɒlətaɪl/",
+    "example_en": "The market is volatile.",
+    "example_ka": "ბაზარი არამდგრადია.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Index",
+    "georgian": "ინდექსი",
+    "pronunciation": "/ˈɪndeks/",
+    "example_en": "The stock index fell.",
+    "example_ka": "საფონდო ინდექსი დაეცა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Margin",
+    "georgian": "მარჟა",
+    "pronunciation": "/ˈmɑːrdʒɪn/",
+    "example_en": "The profit margin is thin.",
+    "example_ka": "მოგების მარჟა მცირეა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Regulate",
+    "georgian": "რეგულირება",
+    "pronunciation": "/ˈreɡjʊleɪt/",
+    "example_en": "The government regulates banks.",
+    "example_ka": "მთავრობა ბანკებს არეგულირებს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Compliance",
+    "georgian": "შესაბამისობა",
+    "pronunciation": "/kəmˈplaɪəns/",
+    "example_en": "Ensure compliance with regulations.",
+    "example_ka": "რეგულაციებთან შესაბამისობა უზრუნველყავი.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Turnover",
+    "georgian": "ბრუნვა",
+    "pronunciation": "/ˈtɜːrnoʊvər/",
+    "example_en": "The company's turnover increased.",
+    "example_ka": "კომპანიის ბრუნვა გაიზარდა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Overhead",
+    "georgian": "ზედნადები",
+    "pronunciation": "/ˈoʊvərhed/",
+    "example_en": "Reduce overhead costs.",
+    "example_ka": "ზედნადები ხარჯები შეამცირე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Gross",
+    "georgian": "მთლიანი",
+    "pronunciation": "/ɡroʊs/",
+    "example_en": "The gross income was high.",
+    "example_ka": "მთლიანი შემოსავალი მაღალი იყო.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Net",
+    "georgian": "წმინდა",
+    "pronunciation": "/net/",
+    "example_en": "The net profit was small.",
+    "example_ka": "წმინდა მოგება მცირე იყო.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Deduct",
+    "georgian": "გამოქვითვა",
+    "pronunciation": "/dɪˈdʌkt/",
+    "example_en": "Deduct tax from the total.",
+    "example_ka": "ჯამიდან გადასახადი გამოქვითე.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Exempt",
+    "georgian": "გათავისუფლებული",
+    "pronunciation": "/ɪɡˈzempt/",
+    "example_en": "Some goods are tax exempt.",
+    "example_ka": "ზოგი საქონელი გადასახადისგან გათავისუფლებულია.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Rebate",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈriːbeɪt/",
+    "example_en": "You'll get a tax rebate.",
+    "example_ka": "საგადასახადო ფასდაკლებას მიიღებ.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Redeem",
+    "georgian": "გამოსყიდვა",
+    "pronunciation": "/rɪˈdiːm/",
+    "example_en": "Redeem your reward points.",
+    "example_ka": "ბონუს ქულები გამოისყიდე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Forfeit",
+    "georgian": "ჩამორთმევა",
+    "pronunciation": "/ˈfɔːrfɪt/",
+    "example_en": "You may forfeit your deposit.",
+    "example_ka": "შენატანი შეიძლება ჩამოგერთვას.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Default",
+    "georgian": "გადაუხდელობა",
+    "pronunciation": "/dɪˈfɔːlt/",
+    "example_en": "He defaulted on his loan.",
+    "example_ka": "მან სესხი ვერ გადაიხადა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Pledge",
+    "georgian": "დაგირავება",
+    "pronunciation": "/pledʒ/",
+    "example_en": "She pledged her house as security.",
+    "example_ka": "მან სახლი უზრუნველყოფად დააგირავა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Inherit",
+    "georgian": "მემკვიდრეობა",
+    "pronunciation": "/ɪnˈherɪt/",
+    "example_en": "She inherited money from her aunt.",
+    "example_ka": "მან დეიდისგან ფული მიიღო მემკვიდრეობით.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Legacy",
+    "georgian": "მემკვიდრეობა",
+    "pronunciation": "/ˈleɡəsi/",
+    "example_en": "He left a financial legacy.",
+    "example_ka": "მან ფინანსური მემკვიდრეობა დატოვა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Trust",
+    "georgian": "ტრასტი",
+    "pronunciation": "/trʌst/",
+    "example_en": "She set up a trust fund.",
+    "example_ka": "მან სატრასტო ფონდი შექმნა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Guarantee",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˌɡærənˈtiː/",
+    "example_en": "The bank gives a guarantee.",
+    "example_ka": "ბანკი გარანტიას იძლევა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Endorse",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/ɪnˈdɔːrs/",
+    "example_en": "Endorse the check on the back.",
+    "example_ka": "ჩეკს უკანა მხარეს მოაწერე ხელი.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Disburse",
+    "georgian": "გაცემა",
+    "pronunciation": "/dɪsˈbɜːrs/",
+    "example_en": "Funds will be disbursed soon.",
+    "example_ka": "სახსრები მალე გაიცემა.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Procure",
+    "georgian": "შეძენა",
+    "pronunciation": "/prəˈkjʊr/",
+    "example_en": "Procure the necessary funds.",
+    "example_ka": "საჭირო სახსრები შეიძინე.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Quantify",
+    "georgian": "რაოდენობრივი",
+    "pronunciation": "/ˈkwɒntɪfaɪ/",
+    "example_en": "Quantify the losses.",
+    "example_ka": "ზარალი რაოდენობრივად შეაფასე.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Stakeholder",
+    "georgian": "დაინტერესებული",
+    "pronunciation": "/ˈsteɪkhoʊldər/",
+    "example_en": "All stakeholders were informed.",
+    "example_ka": "ყველა დაინტერესებული მხარე ინფორმირებულია.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Acquisition",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˌækwɪˈzɪʃən/",
+    "example_en": "The acquisition cost millions.",
+    "example_ka": "შეძენა მილიონები დაჯდა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Merger",
+    "georgian": "შერწყმა",
+    "pronunciation": "/ˈmɜːrdʒər/",
+    "example_en": "The merger created a bigger company.",
+    "example_ka": "შერწყმამ უფრო დიდი კომპანია შექმნა.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Monopoly",
+    "georgian": "მონოპოლია",
+    "pronunciation": "/məˈnɒpəli/",
+    "example_en": "They have a monopoly on the market.",
+    "example_ka": "მათ ბაზარზე მონოპოლია აქვთ.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Entrepreneur",
+    "georgian": "მეწარმე",
+    "pronunciation": "/ˌɒntrəprəˈnɜːr/",
+    "example_en": "She's a successful entrepreneur.",
+    "example_ka": "ის წარმატებული მეწარმეა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Startup",
+    "georgian": "სტარტაპი",
+    "pronunciation": "/ˈstɑːrtʌp/",
+    "example_en": "He launched a tech startup.",
+    "example_ka": "მან ტექნოლოგიური სტარტაპი გახსნა.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Crowdfund",
+    "georgian": "ქრაუდფანდინგი",
+    "pronunciation": "/ˈkraʊdfʌnd/",
+    "example_en": "They crowdfunded the project.",
+    "example_ka": "მათ პროექტი ქრაუდფანდინგით დააფინანსეს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Microloan",
+    "georgian": "მიკროსესხი",
+    "pronunciation": "/ˈmaɪkroʊloʊn/",
+    "example_en": "She got a microloan.",
+    "example_ka": "მან მიკროსესხი აიღო.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Fintech",
+    "georgian": "ფინტექი",
+    "pronunciation": "/ˈfɪntek/",
+    "example_en": "Fintech is transforming banking.",
+    "example_ka": "ფინტექი საბანკო სფეროს გარდაქმნის.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Blockchain",
+    "georgian": "ბლოკჩეინი",
+    "pronunciation": "/ˈblɒktʃeɪn/",
+    "example_en": "Blockchain ensures security.",
+    "example_ka": "ბლოკჩეინი უსაფრთხოებას უზრუნველყოფს.",
+    "level": "B2",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Solvency",
+    "georgian": "გადახდისუნარიანობა",
+    "pronunciation": "/ˈsɒlvənsi/",
+    "example_en": "Check the company's solvency.",
+    "example_ka": "კომპანიის გადახდისუნარიანობა შეამოწმე.",
+    "level": "C1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Payout",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈpeɪaʊt/",
+    "example_en": "The payout was generous.",
+    "example_ka": "გადახდა გულუხვი იყო.",
+    "level": "B1",
+    "category": "banking-finance"
+  },
+  {
+    "english": "Cashback",
+    "georgian": "ქეშბექი",
+    "pronunciation": "/ˈkæʃbæk/",
+    "example_en": "This card offers cashback.",
+    "example_ka": "ეს ბარათი ქეშბექს გთავაზობთ.",
+    "level": "A2",
+    "category": "banking-finance"
+  }
 ]

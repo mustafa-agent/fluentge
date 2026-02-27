@@ -1,52 +1,1802 @@
 [
-  {"english":"ocean","georgian":"ოკეანე","pronunciation":"/ˈoʊʃən/","example_en":"The Pacific Ocean is the largest.","example_ka":"წყნარი ოკეანე ყველაზე დიდია.","category":"ocean-marine","level":"beginner"},
-  {"english":"sea","georgian":"ზღვა","pronunciation":"/siː/","example_en":"The Black Sea borders Georgia.","example_ka":"შავი ზღვა საქართველოს ესაზღვრება.","category":"ocean-marine","level":"beginner"},
-  {"english":"wave","georgian":"ტალღა","pronunciation":"/weɪv/","example_en":"The waves were very high today.","example_ka":"დღეს ტალღები ძალიან მაღალი იყო.","category":"ocean-marine","level":"beginner"},
-  {"english":"tide","georgian":"მიქცევა-მოქცევა","pronunciation":"/taɪd/","example_en":"The tide comes in twice a day.","example_ka":"მიქცევა-მოქცევა დღეში ორჯერ ხდება.","category":"ocean-marine","level":"intermediate"},
-  {"english":"coral","georgian":"მარჯანი","pronunciation":"/ˈkɒrəl/","example_en":"Coral reefs are home to many species.","example_ka":"მარჯნის რიფები ბევრი სახეობის სახლია.","category":"ocean-marine","level":"intermediate"},
-  {"english":"reef","georgian":"რიფი","pronunciation":"/riːf/","example_en":"The Great Barrier Reef is in Australia.","example_ka":"დიდი ბარიერული რიფი ავსტრალიაშია.","category":"ocean-marine","level":"intermediate"},
-  {"english":"whale","georgian":"ვეშაპი","pronunciation":"/weɪl/","example_en":"Blue whales are the largest animals on Earth.","example_ka":"ცისფერი ვეშაპები დედამიწაზე ყველაზე დიდი ცხოველებია.","category":"ocean-marine","level":"beginner"},
-  {"english":"dolphin","georgian":"დელფინი","pronunciation":"/ˈdɒlfɪn/","example_en":"Dolphins are very intelligent creatures.","example_ka":"დელფინები ძალიან ჭკვიანი არსებები არიან.","category":"ocean-marine","level":"beginner"},
-  {"english":"shark","georgian":"ზვიგენი","pronunciation":"/ʃɑːrk/","example_en":"Sharks are apex predators.","example_ka":"ზვიგენები უმაღლესი მტაცებლები არიან.","category":"ocean-marine","level":"beginner"},
-  {"english":"jellyfish","georgian":"მედუზა","pronunciation":"/ˈdʒɛlifɪʃ/","example_en":"Be careful of jellyfish when swimming.","example_ka":"ცურვისას მედუზების მოფრთხილდით.","category":"ocean-marine","level":"beginner"},
-  {"english":"octopus","georgian":"რვაფეხა","pronunciation":"/ˈɒktəpəs/","example_en":"The octopus has eight arms.","example_ka":"რვაფეხას რვა მკლავი აქვს.","category":"ocean-marine","level":"beginner"},
-  {"english":"seahorse","georgian":"ზღვის ცხენი","pronunciation":"/ˈsiːhɔːrs/","example_en":"Seahorses are unique fish.","example_ka":"ზღვის ცხენები უნიკალური თევზებია.","category":"ocean-marine","level":"beginner"},
-  {"english":"starfish","georgian":"ზღვის ვარსკვლავი","pronunciation":"/ˈstɑːrfɪʃ/","example_en":"We found a starfish on the beach.","example_ka":"სანაპიროზე ზღვის ვარსკვლავი ვიპოვეთ.","category":"ocean-marine","level":"beginner"},
-  {"english":"turtle","georgian":"კუ","pronunciation":"/ˈtɜːrtəl/","example_en":"Sea turtles travel thousands of miles.","example_ka":"ზღვის კუები ათასობით მილს გადიან.","category":"ocean-marine","level":"beginner"},
-  {"english":"seaweed","georgian":"ზღვის წყალმცენარე","pronunciation":"/ˈsiːwiːd/","example_en":"Seaweed is used in many dishes.","example_ka":"ზღვის წყალმცენარეს ბევრ კერძში იყენებენ.","category":"ocean-marine","level":"intermediate"},
-  {"english":"plankton","georgian":"პლანქტონი","pronunciation":"/ˈplæŋktən/","example_en":"Plankton is the base of the ocean food chain.","example_ka":"პლანქტონი ოკეანის საკვები ჯაჭვის საფუძველია.","category":"ocean-marine","level":"intermediate"},
-  {"english":"submarine","georgian":"წყალქვეშა ნავი","pronunciation":"/ˈsʌbməriːn/","example_en":"The submarine explored the deep ocean.","example_ka":"წყალქვეშა ნავმა ოკეანის სიღრმეები შეისწავლა.","category":"ocean-marine","level":"intermediate"},
-  {"english":"anchor","georgian":"ღუზა","pronunciation":"/ˈæŋkər/","example_en":"Drop the anchor here.","example_ka":"ღუზა აქ ჩაუშვი.","category":"ocean-marine","level":"beginner"},
-  {"english":"harbor","georgian":"ნავსადგური","pronunciation":"/ˈhɑːrbər/","example_en":"The ship entered the harbor safely.","example_ka":"გემი ნავსადგურში უსაფრთხოდ შევიდა.","category":"ocean-marine","level":"intermediate"},
-  {"english":"lighthouse","georgian":"შუქურა","pronunciation":"/ˈlaɪthaʊs/","example_en":"The lighthouse guided ships at night.","example_ka":"შუქურა ღამით გემებს უძღოდა.","category":"ocean-marine","level":"intermediate"},
-  {"english":"iceberg","georgian":"აისბერგი","pronunciation":"/ˈaɪsbɜːrɡ/","example_en":"Only 10% of an iceberg is visible.","example_ka":"აისბერგის მხოლოდ 10% არის ხილული.","category":"ocean-marine","level":"intermediate"},
-  {"english":"trench","georgian":"ღრმული","pronunciation":"/trɛntʃ/","example_en":"The Mariana Trench is the deepest point.","example_ka":"მარიანას ღრმული ყველაზე ღრმა წერტილია.","category":"ocean-marine","level":"intermediate"},
-  {"english":"ecosystem","georgian":"ეკოსისტემა","pronunciation":"/ˈiːkoʊsɪstəm/","example_en":"The ocean ecosystem is fragile.","example_ka":"ოკეანის ეკოსისტემა მყიფეა.","category":"ocean-marine","level":"intermediate"},
-  {"english":"endangered","georgian":"გადაშენების საფრთხის ქვეშ","pronunciation":"/ɪnˈdeɪndʒərd/","example_en":"Many marine species are endangered.","example_ka":"ბევრი ზღვის სახეობა გადაშენების საფრთხის ქვეშაა.","category":"ocean-marine","level":"intermediate"},
-  {"english":"pollution","georgian":"დაბინძურება","pronunciation":"/pəˈluːʃən/","example_en":"Ocean pollution harms marine life.","example_ka":"ოკეანის დაბინძურება ზღვის ცხოველებს ვნებს.","category":"ocean-marine","level":"intermediate"},
-  {"english":"fisherman","georgian":"მეთევზე","pronunciation":"/ˈfɪʃərmən/","example_en":"The fisherman caught a big fish.","example_ka":"მეთევზემ დიდი თევზი დაიჭირა.","category":"ocean-marine","level":"beginner"},
-  {"english":"coast","georgian":"სანაპირო","pronunciation":"/koʊst/","example_en":"We drove along the coast.","example_ka":"სანაპიროს გასწვრივ ვიარეთ მანქანით.","category":"ocean-marine","level":"beginner"},
-  {"english":"bay","georgian":"ყურე","pronunciation":"/beɪ/","example_en":"The bay was calm and peaceful.","example_ka":"ყურე მშვიდი და წყნარი იყო.","category":"ocean-marine","level":"beginner"},
-  {"english":"island","georgian":"კუნძული","pronunciation":"/ˈaɪlənd/","example_en":"The island is surrounded by clear water.","example_ka":"კუნძული გამჭვირვალე წყლით არის გარშემორტყმული.","category":"ocean-marine","level":"beginner"},
-  {"english":"lobster","georgian":"ლობსტერი","pronunciation":"/ˈlɒbstər/","example_en":"Lobster is an expensive seafood.","example_ka":"ლობსტერი ძვირი ზღვის პროდუქტია.","category":"ocean-marine","level":"beginner"},
-  {"english":"crab","georgian":"კიბორჩხალა","pronunciation":"/kræb/","example_en":"The crab hid under the rock.","example_ka":"კიბორჩხალა ქვის ქვეშ დაიმალა.","category":"ocean-marine","level":"beginner"},
-  {"english":"shell","georgian":"ნიჟარა","pronunciation":"/ʃɛl/","example_en":"She collected shells on the beach.","example_ka":"მან სანაპიროზე ნიჟარები შეაგროვა.","category":"ocean-marine","level":"beginner"},
-  {"english":"sand","georgian":"ქვიშა","pronunciation":"/sænd/","example_en":"The children played in the sand.","example_ka":"ბავშვები ქვიშაში თამაშობდნენ.","category":"ocean-marine","level":"beginner"},
-  {"english":"current","georgian":"დინება","pronunciation":"/ˈkʌrənt/","example_en":"Ocean currents affect the climate.","example_ka":"ოკეანის დინებები კლიმატზე მოქმედებს.","category":"ocean-marine","level":"intermediate"},
-  {"english":"marine biologist","georgian":"ზღვის ბიოლოგი","pronunciation":"/məˈriːn baɪˈɒlədʒɪst/","example_en":"She works as a marine biologist.","example_ka":"ის ზღვის ბიოლოგად მუშაობს.","category":"ocean-marine","level":"intermediate"},
-  {"english":"aquarium","georgian":"აკვარიუმი","pronunciation":"/əˈkwɛəriəm/","example_en":"We visited the aquarium on Sunday.","example_ka":"კვირას აკვარიუმი მოვინახულეთ.","category":"ocean-marine","level":"beginner"},
-  {"english":"migration","georgian":"მიგრაცია","pronunciation":"/maɪˈɡreɪʃən/","example_en":"Whale migration is a spectacular sight.","example_ka":"ვეშაპების მიგრაცია თვალწარმტაცი სანახავია.","category":"ocean-marine","level":"intermediate"},
-  {"english":"predator","georgian":"მტაცებელი","pronunciation":"/ˈprɛdətər/","example_en":"Sharks are ocean predators.","example_ka":"ზვიგენები ოკეანის მტაცებლები არიან.","category":"ocean-marine","level":"intermediate"},
-  {"english":"depth","georgian":"სიღრმე","pronunciation":"/dɛpθ/","example_en":"The depth of the ocean is unknown in many places.","example_ka":"ოკეანის სიღრმე ბევრ ადგილას უცნობია.","category":"ocean-marine","level":"beginner"},
-  {"english":"shipwreck","georgian":"გემის ნარჩენები","pronunciation":"/ˈʃɪprɛk/","example_en":"Divers explored the old shipwreck.","example_ka":"მყვინთავებმა ძველი გემის ნარჩენები შეისწავლეს.","category":"ocean-marine","level":"intermediate"},
-  {"english":"sail","georgian":"აფრა","pronunciation":"/seɪl/","example_en":"The boat raised its sail.","example_ka":"ნავმა აფრა აღმართა.","category":"ocean-marine","level":"beginner"},
-  {"english":"pier","georgian":"ნავმისადგომი","pronunciation":"/pɪər/","example_en":"We walked along the pier.","example_ka":"ნავმისადგომის გასწვრივ გავისეირნეთ.","category":"ocean-marine","level":"intermediate"},
-  {"english":"mangrove","georgian":"მანგროვი","pronunciation":"/ˈmæŋɡroʊv/","example_en":"Mangrove forests protect coastlines.","example_ka":"მანგროვის ტყეები სანაპირო ხაზებს იცავს.","category":"ocean-marine","level":"advanced"},
-  {"english":"biodiversity","georgian":"ბიომრავალფეროვნება","pronunciation":"/ˌbaɪoʊdaɪˈvɜːrsɪti/","example_en":"Ocean biodiversity is crucial for the planet.","example_ka":"ოკეანის ბიომრავალფეროვნება პლანეტისთვის გადამწყვეტია.","category":"ocean-marine","level":"advanced"},
-  {"english":"conservation","georgian":"კონსერვაცია","pronunciation":"/ˌkɒnsərˈveɪʃən/","example_en":"Marine conservation efforts are increasing.","example_ka":"ზღვის კონსერვაციის მცდელობები იზრდება.","category":"ocean-marine","level":"intermediate"},
-  {"english":"orca","georgian":"ორკა","pronunciation":"/ˈɔːrkə/","example_en":"Orcas are also known as killer whales.","example_ka":"ორკებს მკვლელ ვეშაპებსაც ეძახიან.","category":"ocean-marine","level":"intermediate"},
-  {"english":"stingray","georgian":"სხივი","pronunciation":"/ˈstɪŋreɪ/","example_en":"We saw a stingray in the shallow water.","example_ka":"არაღრმა წყალში სხივი დავინახეთ.","category":"ocean-marine","level":"intermediate"},
-  {"english":"seagull","georgian":"თოლია","pronunciation":"/ˈsiːɡʌl/","example_en":"Seagulls flew over the beach.","example_ka":"თოლიები სანაპიროს ზემოთ დაფრინავდნენ.","category":"ocean-marine","level":"beginner"},
-  {"english":"tsunami","georgian":"ცუნამი","pronunciation":"/tsuːˈnɑːmi/","example_en":"The tsunami caused massive destruction.","example_ka":"ცუნამიმ მასშტაბური განადგურება გამოიწვია.","category":"ocean-marine","level":"intermediate"},
-  {"english":"algae","georgian":"წყალმცენარეები","pronunciation":"/ˈælɡiː/","example_en":"Algae produce most of Earth's oxygen.","example_ka":"წყალმცენარეები დედამიწის ჟანგბადის უმეტესობას აწარმოებენ.","category":"ocean-marine","level":"intermediate"}
+  {
+    "english": "abyss",
+    "georgian": "უფსკრული",
+    "pronunciation": "/əˈbɪs/",
+    "example_en": "The ocean abyss is largely unexplored.",
+    "example_ka": "ოკეანის უფსკრული ძირითადად შეუსწავლელია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "adaptation",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˌædæpˈteɪʃən/",
+    "example_en": "Marine animals show amazing adaptations.",
+    "example_ka": "ზღვის ცხოველები საოცარ ადაპტაციებს ავლენენ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "albatross",
+    "georgian": "ალბატროსი",
+    "pronunciation": "/ˈælbətrɔːs/",
+    "example_en": "Albatrosses have enormous wingspans.",
+    "example_ka": "ალბატროსებს უზარმაზარი ფრთების გაშლა აქვთ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "algae",
+    "georgian": "წყალმცენარეები",
+    "pronunciation": "/ˈælɡiː/",
+    "example_en": "Algae produce most of Earth's oxygen.",
+    "example_ka": "წყალმცენარეები დედამიწის ჟანგბადის უმეტესობას აწარმოებენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "anchor",
+    "georgian": "ღუზა",
+    "pronunciation": "/ˈæŋkər/",
+    "example_en": "Drop the anchor here.",
+    "example_ka": "ღუზა აქ ჩაუშვი.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "aquarium",
+    "georgian": "აკვარიუმი",
+    "pronunciation": "/əˈkwɛəriəm/",
+    "example_en": "We visited the aquarium on Sunday.",
+    "example_ka": "კვირას აკვარიუმი მოვინახულეთ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "atoll",
+    "georgian": "ატოლი",
+    "pronunciation": "/ˈætɔːl/",
+    "example_en": "The coral atoll formed a perfect circle.",
+    "example_ka": "მარჯნისმა ატოლმა სრული წრე შექმნა.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "bait",
+    "georgian": "სატყუარა",
+    "pronunciation": "/beɪt/",
+    "example_en": "Worms make good bait for fishing.",
+    "example_ka": "ჭიებს თევზაობისთვის კარგ სატყუარას შეადგენს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "bay",
+    "georgian": "ყურე",
+    "pronunciation": "/beɪ/",
+    "example_en": "The bay was calm and peaceful.",
+    "example_ka": "ყურე მშვიდი და წყნარი იყო.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "beach",
+    "georgian": "პლაჟი",
+    "pronunciation": "/biːtʃ/",
+    "example_en": "We spent the day at the beach.",
+    "example_ka": "დღე პლაჟზე გავატარეთ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "biodiversity",
+    "georgian": "ბიომრავალფეროვნება",
+    "pronunciation": "/ˌbaɪoʊdaɪˈvɜːrsɪti/",
+    "example_en": "Ocean biodiversity is crucial for the planet.",
+    "example_ka": "ოკეანის ბიომრავალფეროვნება პლანეტისთვის გადამწყვეტია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "biology",
+    "georgian": "ბიოლოგია",
+    "pronunciation": "/baɪˈɑːlədʒi/",
+    "example_en": "Ocean biology reveals nature's secrets.",
+    "example_ka": "ოკეანის ბიოლოგია ბუნების საიდუმლოებს ავლენს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "bioluminescent",
+    "georgian": "ბიოლუმინესცენტური",
+    "pronunciation": "/ˌbaɪoʊluːməˈnɛsənt/",
+    "example_en": "Deep sea creatures are often bioluminescent.",
+    "example_ka": "ღრმა ზღვის არსებები ხშირად ბიოლუმინესცენტური არიან.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "boat",
+    "georgian": "ნავი",
+    "pronunciation": "/boʊt/",
+    "example_en": "The fishing boat left at dawn.",
+    "example_ka": "სათევზაო ნავი გამთენისას გაემგზავრა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "bottom",
+    "georgian": "ფსკერი",
+    "pronunciation": "/ˈbɑːtəm/",
+    "example_en": "The treasure lies on the bottom.",
+    "example_ka": "განძი ფსკერზე დევს.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "bubble",
+    "georgian": "ბუშტი",
+    "pronunciation": "/ˈbʌbəl/",
+    "example_en": "Air bubbles rose to the surface.",
+    "example_ka": "ჰაერის ბუშტები ზედაპირზე ავიდნენ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "buoy",
+    "georgian": "პურუშა",
+    "pronunciation": "/ˈbuːi/",
+    "example_en": "The red buoy marked the channel.",
+    "example_ka": "წითელმა პურუშამ არხი აღნიშნა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "calm",
+    "georgian": "სიმშვიდე",
+    "pronunciation": "/kɑːm/",
+    "example_en": "The sea was unusually calm today.",
+    "example_ka": "დღეს ზღვა უჩვეულოდ მშვიდი იყო.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "camouflage",
+    "georgian": "ნიღაბი",
+    "pronunciation": "/ˈkæməflɑːʒ/",
+    "example_en": "Octopuses are masters of camouflage.",
+    "example_ka": "რვაფეხები ნიღბისის მასტერები არიან.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "cape",
+    "georgian": "ნიჯარა",
+    "pronunciation": "/keɪp/",
+    "example_en": "The ship rounded the rocky cape.",
+    "example_ka": "გემმა კლდოვანი ნიჯარა შემოავლო.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "captain",
+    "georgian": "კაპიტანი",
+    "pronunciation": "/ˈkæptən/",
+    "example_en": "The captain navigated through the storm.",
+    "example_ka": "კაპიტანმა ქარიშხალში გაიარა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "cave",
+    "georgian": "მღვიმე",
+    "pronunciation": "/keɪv/",
+    "example_en": "Sea caves are carved by waves.",
+    "example_ka": "ზღვის მღვიმეები ტალღებითაა ნაკვეთი.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "channel",
+    "georgian": "არხი",
+    "pronunciation": "/ˈtʃænəl/",
+    "example_en": "Ships use the shipping channel.",
+    "example_ka": "გემები საზღვაო არხს იყენებენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "chart",
+    "georgian": "ჩარტი",
+    "pronunciation": "/tʃɑːrt/",
+    "example_en": "Study the sea chart before sailing.",
+    "example_ka": "ზღვაში გასვლამდე ზღვის ჩარტი შეისწავლე.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "choppy",
+    "georgian": "ალღოიანი",
+    "pronunciation": "/ˈtʃɑːpi/",
+    "example_en": "The water was choppy near the shore.",
+    "example_ka": "ნაპირთან ახლოს წყალი ალღოიანი იყო.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "clam",
+    "georgian": "შხამი",
+    "pronunciation": "/klæm/",
+    "example_en": "Clams bury themselves in sand.",
+    "example_ka": "შხამები ქვიშაში იმალებიან.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "cliff",
+    "georgian": "კლდე",
+    "pronunciation": "/klɪf/",
+    "example_en": "Seabirds nest on the high cliffs.",
+    "example_ka": "ზღვის ფრინველები მაღალ კლდეებზე იზარდებიან.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "coast",
+    "georgian": "სანაპირო",
+    "pronunciation": "/koʊst/",
+    "example_en": "We drove along the coast.",
+    "example_ka": "სანაპიროს გასწვრივ ვიარეთ მანქანით.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "compass",
+    "georgian": "კომპასი",
+    "pronunciation": "/ˈkʌmpəs/",
+    "example_en": "The compass points north.",
+    "example_ka": "კომპასი ჩრდილოეთს მიუთითებს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "conch",
+    "georgian": "კონქი",
+    "pronunciation": "/kɑːŋk/",
+    "example_en": "The conch shell makes a deep sound.",
+    "example_ka": "კონქის ნიჟარა ღრმა ხმას გასცემს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "conservation",
+    "georgian": "კონსერვაცია",
+    "pronunciation": "/ˌkɒnsərˈveɪʃən/",
+    "example_en": "Marine conservation efforts are increasing.",
+    "example_ka": "ზღვის კონსერვაციის მცდელობები იზრდება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "coral",
+    "georgian": "მარჯანი",
+    "pronunciation": "/ˈkɒrəl/",
+    "example_en": "Coral reefs are home to many species.",
+    "example_ka": "მარჯნის რიფები ბევრი სახეობის სახლია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "crab",
+    "georgian": "კიბორჩხალა",
+    "pronunciation": "/kræb/",
+    "example_en": "The crab hid under the rock.",
+    "example_ka": "კიბორჩხალა ქვის ქვეშ დაიმალა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "crew",
+    "georgian": "ეკიპაჟი",
+    "pronunciation": "/kruː/",
+    "example_en": "The ship's crew worked all night.",
+    "example_ka": "გემის ეკიპაჟი მთელ ღამე მუშაობდა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "current",
+    "georgian": "დინება",
+    "pronunciation": "/ˈkʌrənt/",
+    "example_en": "Ocean currents affect the climate.",
+    "example_ka": "ოკეანის დინებები კლიმატზე მოქმედებს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "cyclone",
+    "georgian": "ციკლონი",
+    "pronunciation": "/ˈsaɪkloʊn/",
+    "example_en": "Tropical cyclones bring heavy rain.",
+    "example_ka": "ტროპიკული ციკლონები მძიმე წვიმას მოჰქონს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "delta",
+    "georgian": "დელტა",
+    "pronunciation": "/ˈdɛltə/",
+    "example_en": "The Nile Delta is very fertile.",
+    "example_ka": "ნილოსის დელტა ძალიან ნაყოფიერია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "depth",
+    "georgian": "სიღრმე",
+    "pronunciation": "/dɛpθ/",
+    "example_en": "The depth of the ocean is unknown in many places.",
+    "example_ka": "ოკეანის სიღრმე ბევრ ადგილას უცნობია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "discovery",
+    "georgian": "აღმოჩენა",
+    "pronunciation": "/dɪˈskʌvəri/",
+    "example_en": "New species discoveries happen regularly.",
+    "example_ka": "ახალი სახეობების აღმოჩენა რეგულარულად ხდება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "diver",
+    "georgian": "მყვინთავი",
+    "pronunciation": "/ˈdaɪvər/",
+    "example_en": "The diver explored the coral reef.",
+    "example_ka": "მყვინთავმა მარჯნის რიფი შეისწავლა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "diving",
+    "georgian": "წყალში ყვინთვა",
+    "pronunciation": "/ˈdaɪvɪŋ/",
+    "example_en": "Scuba diving lets you explore underwater.",
+    "example_ka": "სკუბა ყვინთვა წყლისქვეშა სამყაროს გაცნობის საშუალებას იძლევა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "dock",
+    "georgian": "დოკი",
+    "pronunciation": "/dɑːk/",
+    "example_en": "The boat returned to the dock.",
+    "example_ka": "ნავი დოკში დაბრუნდა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "dolphin",
+    "georgian": "დელფინი",
+    "pronunciation": "/ˈdɒlfɪn/",
+    "example_en": "Dolphins are very intelligent creatures.",
+    "example_ka": "დელფინები ძალიან ჭკვიანი არსებები არიან.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "driftwood",
+    "georgian": "მიტანილი ხე",
+    "pronunciation": "/ˈdrɪftwʊd/",
+    "example_en": "Driftwood washed up on the beach.",
+    "example_ka": "მიტანილი ხე პლაჟზე იქნა მიტანილი.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "ecosystem",
+    "georgian": "ეკოსისტემა",
+    "pronunciation": "/ˈiːkoʊsɪstəm/",
+    "example_en": "The ocean ecosystem is fragile.",
+    "example_ka": "ოკეანის ეკოსისტემა მყიფეა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "electric",
+    "georgian": "ელექტრული",
+    "pronunciation": "/ɪˈlɛktrɪk/",
+    "example_en": "Electric eels can generate powerful shocks.",
+    "example_ka": "ელექტრული თევზს ძლიერი დენის გამოყოფა შეუძლია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "endangered",
+    "georgian": "გადაშენების საფრთხის ქვეშ",
+    "pronunciation": "/ɪnˈdeɪndʒərd/",
+    "example_en": "Many marine species are endangered.",
+    "example_ka": "ბევრი ზღვის სახეობა გადაშენების საფრთხის ქვეშაა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "endless",
+    "georgian": "უსასრულო",
+    "pronunciation": "/ˈɛndləs/",
+    "example_en": "The ocean seems endless from the shore.",
+    "example_ka": "ნაპირიდან ოკეანე უსასრულოდ ჩანს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "erosion",
+    "georgian": "ეროზია",
+    "pronunciation": "/ɪˈroʊʒən/",
+    "example_en": "Coastal erosion changes shorelines.",
+    "example_ka": "სანაპირო ეროზია ნაპირის ხაზს იცვლის.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "estuary",
+    "georgian": "ღია ზღვი",
+    "pronunciation": "/ˈɛstʃuˌɛri/",
+    "example_en": "An estuary is where river meets sea.",
+    "example_ka": "ღია ზღვა ის ადგილია, სადაც მდინარე ზღვას ხვდება.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "evolution",
+    "georgian": "ევოლუცია",
+    "pronunciation": "/ˌɛvəˈluːʃən/",
+    "example_en": "Life evolved in the oceans.",
+    "example_ka": "სიცოცხლე ოკეანეებში განვითარდა.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "exploration",
+    "georgian": "კვლევა",
+    "pronunciation": "/ˌɛkspləˈreɪʃən/",
+    "example_en": "Ocean exploration continues to surprise us.",
+    "example_ka": "ოკეანის კვლევა გვაგრძელებს გაკვირვებას.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "fins",
+    "georgian": "ფარფლები",
+    "pronunciation": "/fɪnz/",
+    "example_en": "Fins help you swim faster underwater.",
+    "example_ka": "ფარფლები წყლისქვეშ უფრო სწრაფი ცურვის საშუალებას იძლევა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "Many colorful fish live in coral reefs.",
+    "example_ka": "მარჯნის რიფებში ბევრი ფერადი თევზი ცხოვრობს.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "fisherman",
+    "georgian": "მეთევზე",
+    "pronunciation": "/ˈfɪʃərmən/",
+    "example_en": "The fisherman caught a big fish.",
+    "example_ka": "მეთევზემ დიდი თევზი დაიჭირა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "fishing",
+    "georgian": "თევზაობა",
+    "pronunciation": "/ˈfɪʃɪŋ/",
+    "example_en": "Deep sea fishing is challenging.",
+    "example_ka": "ღრმა ზღვაში თევზაობა რთულია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "fjord",
+    "georgian": "ფიორდი",
+    "pronunciation": "/fjɔːrd/",
+    "example_en": "Norwegian fjords are breathtakingly beautiful.",
+    "example_ka": "ნორვეგიული ფიორდები სუნთქვისმომჭერი ლამაზია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "foam",
+    "georgian": "ქაფი",
+    "pronunciation": "/foʊm/",
+    "example_en": "White foam covered the rocks.",
+    "example_ka": "თეთრმა ქაფმა ქვები დაფარა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "fossil",
+    "georgian": "ნამარხი",
+    "pronunciation": "/ˈfɑːsəl/",
+    "example_en": "Marine fossils tell us about ancient oceans.",
+    "example_ka": "ზღვის ნამარხები ძველი ოკეანეების შესახებ გვყვება.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "freshwater",
+    "georgian": "მტკნარი წყალი",
+    "pronunciation": "/ˈfrɛʃwɔːtər/",
+    "example_en": "Rivers contain freshwater.",
+    "example_ka": "მდინარეები მტკნარ წყალს შეიცავს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "glow",
+    "georgian": "ნაზარდი",
+    "pronunciation": "/ɡloʊ/",
+    "example_en": "Some fish glow in the dark depths.",
+    "example_ka": "ზოგი თევზი ბნელ სიღრმეებში ანათებს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "gull",
+    "georgian": "თოვლისფერი",
+    "pronunciation": "/ɡʌl/",
+    "example_en": "Seagulls followed the fishing boat.",
+    "example_ka": "ზღვის ჩიტები თევზაობის ნავს მისდევდნენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "harbor",
+    "georgian": "ნავსადგური",
+    "pronunciation": "/ˈhɑːrbər/",
+    "example_en": "The ship entered the harbor safely.",
+    "example_ka": "გემი ნავსადგურში უსაფრთხოდ შევიდა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "hook",
+    "georgian": "კაუჭი",
+    "pronunciation": "/hʊk/",
+    "example_en": "Bait the hook before casting your line.",
+    "example_ka": "სნურის ყრამდე კაუჭი დაამაგრე.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "horizon",
+    "georgian": "ჰორიზონტი",
+    "pronunciation": "/həˈraɪzən/",
+    "example_en": "Ships disappear beyond the horizon.",
+    "example_ka": "გემები ჰორიზონტის იქით ქრებიან.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "hurricane",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/ˈhɜːrəkeɪn/",
+    "example_en": "Hurricanes form over warm oceans.",
+    "example_ka": "ქარიშხლები თბილ ოკეანეებზე წარმოიქმნება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "hydrothermal",
+    "georgian": "ჰიდროთერმული",
+    "pronunciation": "/ˌhaɪdroʊˈθɜːrməl/",
+    "example_en": "Hydrothermal vents support unique ecosystems.",
+    "example_ka": "ჰიდროთერმული ვენტები უნიკალურ ეკოსისტემებს იძლევა საშუალებას.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "iceberg",
+    "georgian": "აისბერგი",
+    "pronunciation": "/ˈaɪsbɜːrɡ/",
+    "example_en": "Only 10% of an iceberg is visible.",
+    "example_ka": "აისბერგის მხოლოდ 10% არის ხილული.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "ink",
+    "georgian": "მელანი",
+    "pronunciation": "/ɪŋk/",
+    "example_en": "Squid release ink when threatened.",
+    "example_ka": "ზღვის წია საფრთხის დროს მელანს გამოყოფს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "inlet",
+    "georgian": "შესასვლელი",
+    "pronunciation": "/ˈɪnlət/",
+    "example_en": "The small inlet was perfect for boats.",
+    "example_ka": "პატარა შესასვლელი ნავებისთვის სრულყოფილი იყო.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "island",
+    "georgian": "კუნძული",
+    "pronunciation": "/ˈaɪlənd/",
+    "example_en": "The island is surrounded by clear water.",
+    "example_ka": "კუნძული გამჭვირვალე წყლით არის გარშემორტყმული.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "jellyfish",
+    "georgian": "მედუზა",
+    "pronunciation": "/ˈdʒɛlifɪʃ/",
+    "example_en": "Be careful of jellyfish when swimming.",
+    "example_ka": "ცურვისას მედუზების მოფრთხილდით.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "jetty",
+    "georgian": "ღია კუნძული",
+    "pronunciation": "/ˈdʒɛti/",
+    "example_en": "The stone jetty protected the harbor.",
+    "example_ka": "ქვის ღია კუნძულმა ნავსადგური დაიცვა.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "kelp",
+    "georgian": "კელპი",
+    "pronunciation": "/kɛlp/",
+    "example_en": "Kelp forests provide shelter for fish.",
+    "example_ka": "კელპის ტყეები თევზებს თავშესაფარს აძლევს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "krill",
+    "georgian": "კრილი",
+    "pronunciation": "/krɪl/",
+    "example_en": "Krill are small marine creatures.",
+    "example_ka": "კრილი პატარა ზღვის ცოცხალი არსებებია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "lagoon",
+    "georgian": "ლაგუნა",
+    "pronunciation": "/ləˈɡuːn/",
+    "example_en": "The blue lagoon was crystal clear.",
+    "example_ka": "ლურჯი ლაგუნა ბროლისავით გამჭვირვალე იყო.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "lighthouse",
+    "georgian": "შუქურა",
+    "pronunciation": "/ˈlaɪthaʊs/",
+    "example_en": "The lighthouse guided ships at night.",
+    "example_ka": "შუქურა ღამით გემებს უძღოდა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "lobster",
+    "georgian": "ლობსტერი",
+    "pronunciation": "/ˈlɒbstər/",
+    "example_en": "Lobster is an expensive seafood.",
+    "example_ka": "ლობსტერი ძვირი ზღვის პროდუქტია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "mangrove",
+    "georgian": "მანგროვი",
+    "pronunciation": "/ˈmæŋɡroʊv/",
+    "example_en": "Mangrove forests protect coastlines.",
+    "example_ka": "მანგროვის ტყეები სანაპირო ხაზებს იცავს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "The nautical map shows water depths.",
+    "example_ka": "საზღვაო რუკა წყლის სიღრმეებს აჩვენებს.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "marina",
+    "georgian": "მარინა",
+    "pronunciation": "/məˈriːnə/",
+    "example_en": "Yachts were moored at the marina.",
+    "example_ka": "იახტები მარინაში იყო მიმაგრებული.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "marine",
+    "georgian": "ზღვის",
+    "pronunciation": "/məˈriːn/",
+    "example_en": "Marine biology studies ocean life.",
+    "example_ka": "ზღვის ბიოლოგია ოკეანის სიცოცხლეს სწავლობს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "mask",
+    "georgian": "ნიღაბი",
+    "pronunciation": "/mæsk/",
+    "example_en": "Don't forget your diving mask.",
+    "example_ka": "ყვინთვის ნიღაბი არ დაგავიწყდეს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "migration",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/maɪˈɡreɪʃən/",
+    "example_en": "Whale migration is a spectacular sight.",
+    "example_ka": "ვეშაპების მიგრაცია თვალწარმტაცი სანახავია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "mussel",
+    "georgian": "მიდია",
+    "pronunciation": "/ˈmʌsəl/",
+    "example_en": "Mussels attach to rocks.",
+    "example_ka": "მიდიები ქვებს ერწყმიან.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "mystery",
+    "georgian": "საიდუმლო",
+    "pronunciation": "/ˈmɪstəri/",
+    "example_en": "The deep ocean holds many mysteries.",
+    "example_ka": "ღრმა ოკეანე ბევრ საიდუმლოს მალავს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "navigate",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˈnævɪɡeɪt/",
+    "example_en": "Ships navigate using GPS and compass.",
+    "example_ka": "გემები GPS-ისა და კომპასის მეშვეობით მიმართება განისაზღვრავს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "net",
+    "georgian": "ბადე",
+    "pronunciation": "/nɛt/",
+    "example_en": "The fisherman cast his net into the water.",
+    "example_ka": "მეთევზემ წყალში ბადე ისროლა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "ocean",
+    "georgian": "ოკეანე",
+    "pronunciation": "/ˈoʊʃən/",
+    "example_en": "The Pacific Ocean is the largest.",
+    "example_ka": "წყნარი ოკეანე ყველაზე დიდია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "octopus",
+    "georgian": "რვაფეხა",
+    "pronunciation": "/ˈɒktəpəs/",
+    "example_en": "The octopus has eight arms.",
+    "example_ka": "რვაფეხას რვა მკლავი აქვს.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "orca",
+    "georgian": "ორკა",
+    "pronunciation": "/ˈɔːrkə/",
+    "example_en": "Orcas are also known as killer whales.",
+    "example_ka": "ორკებს მკვლელ ვეშაპებსაც ეძახიან.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "oxygen",
+    "georgian": "ჟანგბადი",
+    "pronunciation": "/ˈɑːksɪdʒən/",
+    "example_en": "Divers carry oxygen tanks.",
+    "example_ka": "მყვინთავები ჟანგბადის ბალონებს ატარებენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "oyster",
+    "georgian": "ისტრი",
+    "pronunciation": "/ˈɔɪstər/",
+    "example_en": "Fresh oysters are a delicacy.",
+    "example_ka": "ახალი ისტრები დელიკატესია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "peaceful",
+    "georgian": "მშვიდი",
+    "pronunciation": "/ˈpisəfəl/",
+    "example_en": "The ocean was peaceful at dawn.",
+    "example_ka": "ოკეანე გამთენისას მშვიდი იყო.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "pearl",
+    "georgian": "მარგალიტი",
+    "pronunciation": "/pɜːrl/",
+    "example_en": "Oysters can produce pearls.",
+    "example_ka": "ისტრებს მარგალიტების წარმოება შეუძლიათ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "pebble",
+    "georgian": "კენჭი",
+    "pronunciation": "/ˈpɛbəl/",
+    "example_en": "Children collect smooth pebbles on the beach.",
+    "example_ka": "ბავშვები პლაჟზე გლუვ კენჭებს აგროვებენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "pelican",
+    "georgian": "პელიკანი",
+    "pronunciation": "/ˈpɛlɪkən/",
+    "example_en": "Pelicans dive for fish.",
+    "example_ka": "პელიკანები თევზისთვის ღვრიან.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "penguin",
+    "georgian": "პინგვინი",
+    "pronunciation": "/ˈpɛŋɡwən/",
+    "example_en": "Penguins swim gracefully underwater.",
+    "example_ka": "პინგვინები ხისტად ცურავენ წყალქვეშ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "peninsula",
+    "georgian": "ნახევარკუნძული",
+    "pronunciation": "/pəˈnɪnsələ/",
+    "example_en": "Florida is a large peninsula.",
+    "example_ka": "ფლორიდა დიდი ნახევარკუნძულია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "pier",
+    "georgian": "ნავმისადგომი",
+    "pronunciation": "/pɪər/",
+    "example_en": "We walked along the pier.",
+    "example_ka": "ნავმისადგომის გასწვრივ გავისეირნეთ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "plankton",
+    "georgian": "პლანქტონი",
+    "pronunciation": "/ˈplæŋktən/",
+    "example_en": "Plankton is the base of the ocean food chain.",
+    "example_ka": "პლანქტონი ოკეანის საკვები ჯაჭვის საფუძველია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "poison",
+    "georgian": "შხამი",
+    "pronunciation": "/ˈpɔɪzən/",
+    "example_en": "Some jellyfish have deadly poison.",
+    "example_ka": "ზოგ მედუზას მომაკვდინებელი შხამი აქვს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "pollution",
+    "georgian": "დაბინძურება",
+    "pronunciation": "/pəˈluːʃən/",
+    "example_en": "Ocean pollution harms marine life.",
+    "example_ka": "ოკეანის დაბინძურება ზღვის ცხოველებს ვნებს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "powerful",
+    "georgian": "ძლიერი",
+    "pronunciation": "/ˈpaʊərfəl/",
+    "example_en": "Ocean storms are incredibly powerful.",
+    "example_ka": "ოკეანის ბურები წარმოუდგენლად ძლიერია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "predator",
+    "georgian": "მტაცებელი",
+    "pronunciation": "/ˈprɛdətər/",
+    "example_en": "Sharks are ocean predators.",
+    "example_ka": "ზვიგენები ოკეანის მტაცებლები არიან.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "pressure",
+    "georgian": "წნევა",
+    "pronunciation": "/ˈprɛʃər/",
+    "example_en": "Water pressure increases with depth.",
+    "example_ka": "წყლის წნევა სიღრმესთან ერთად იზრდება.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "reef",
+    "georgian": "რიფი",
+    "pronunciation": "/riːf/",
+    "example_en": "The Great Barrier Reef is in Australia.",
+    "example_ka": "დიდი ბარიერული რიფი ავსტრალიაშია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "reflection",
+    "georgian": "ასახვა",
+    "pronunciation": "/rɪˈflɛkʃən/",
+    "example_en": "The moon's reflection danced on the water.",
+    "example_ka": "მთვარის ასახვა წყალზე ცეკვავდა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "research",
+    "georgian": "კვლევა",
+    "pronunciation": "/rɪˈsɜːrtʃ/",
+    "example_en": "Ocean research requires special equipment.",
+    "example_ka": "ოკეანის კვლევა სპეციალურ აღჭურვილობას მოითხოვს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "ripple",
+    "georgian": "ძაბრი",
+    "pronunciation": "/ˈrɪpəl/",
+    "example_en": "Small ripples crossed the water.",
+    "example_ka": "პატარა ძაბრები წყალზე გადაიყვანა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "rock",
+    "georgian": "ქვა",
+    "pronunciation": "/rɑːk/",
+    "example_en": "Be careful of the sharp rocks.",
+    "example_ka": "მკვეთრი ქვებისგან ფრთხილად იყავი.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "rod",
+    "georgian": "ჯოხი",
+    "pronunciation": "/rɑːd/",
+    "example_en": "He bought a new fishing rod.",
+    "example_ka": "ახალი თევზაობის ჯოხი იყიდა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "rough",
+    "georgian": "მძვინვარე",
+    "pronunciation": "/rʌf/",
+    "example_en": "The rough seas made sailing difficult.",
+    "example_ka": "მძვინვარე ზღვამ ნავსაობა გაართულა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "sail",
+    "georgian": "აფრა",
+    "pronunciation": "/seɪl/",
+    "example_en": "The boat raised its sail.",
+    "example_ka": "ნავმა აფრა აღმართა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "sailor",
+    "georgian": "მეზღვაური",
+    "pronunciation": "/ˈseɪlər/",
+    "example_en": "The experienced sailor knew these waters well.",
+    "example_ka": "გამოცდილი მეზღვაური ამ წყლებს კარგად იცნობდა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "salt",
+    "georgian": "მარილი",
+    "pronunciation": "/sɔːlt/",
+    "example_en": "Ocean water contains salt.",
+    "example_ka": "ოკეანის წყალი მარილს შეიცავს.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "saltwater",
+    "georgian": "მარილიანი წყალი",
+    "pronunciation": "/ˈsɔːltwɔːtər/",
+    "example_en": "Saltwater fish cannot live in freshwater.",
+    "example_ka": "მარილიანი წყლის თევზებს მტკნარ წყალში ვერ ცხოვრება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "sand",
+    "georgian": "ქვიშა",
+    "pronunciation": "/sænd/",
+    "example_en": "The children played in the sand.",
+    "example_ka": "ბავშვები ქვიშაში თამაშობდნენ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "scallop",
+    "georgian": "სკალოპი",
+    "pronunciation": "/ˈskæləp/",
+    "example_en": "Scallops can swim by clapping their shells.",
+    "example_ka": "სკალოპებს ნიჟარების შეხლოპითი ცურვა შეუძლიათ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "scientist",
+    "georgian": "მეცნიერი",
+    "pronunciation": "/ˈsaɪəntɪst/",
+    "example_en": "Marine scientists study ocean ecosystems.",
+    "example_ka": "ზღვის მეცნიერები ოკეანის ეკოსისტემებს სწავლობენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "sea",
+    "georgian": "ზღვა",
+    "pronunciation": "/siː/",
+    "example_en": "The Black Sea borders Georgia.",
+    "example_ka": "შავი ზღვა საქართველოს ესაზღვრება.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "seafloor",
+    "georgian": "ზღვის ფსკერი",
+    "pronunciation": "/ˈsiːflɔːr/",
+    "example_en": "The seafloor is covered with sediment.",
+    "example_ka": "ზღვის ფსკერი ნალექითაა დაფარული.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "seagull",
+    "georgian": "თოლია",
+    "pronunciation": "/ˈsiːɡʌl/",
+    "example_en": "Seagulls flew over the beach.",
+    "example_ka": "თოლიები სანაპიროს ზემოთ დაფრინავდნენ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "seahorse",
+    "georgian": "ზღვის ცხენი",
+    "pronunciation": "/ˈsiːhɔːrs/",
+    "example_en": "Seahorses are unique fish.",
+    "example_ka": "ზღვის ცხენები უნიკალური თევზებია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "seal",
+    "georgian": "ბეჭედი",
+    "pronunciation": "/siːl/",
+    "example_en": "Seals rest on the beach.",
+    "example_ka": "ბეჭდები პლაჟზე ისვენებენ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "seashell",
+    "georgian": "ზღვის ნიჟარა",
+    "pronunciation": "/ˈsiːʃɛl/",
+    "example_en": "We found beautiful seashells.",
+    "example_ka": "ლამაზი ზღვის ნიჟარები ვიპოვეთ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "seaweed",
+    "georgian": "ზღვის წყალმცენარე",
+    "pronunciation": "/ˈsiːwiːd/",
+    "example_en": "Seaweed is used in many dishes.",
+    "example_ka": "ზღვის წყალმცენარეს ბევრ კერძში იყენებენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "sediment",
+    "georgian": "ნალექი",
+    "pronunciation": "/ˈsɛdəmənt/",
+    "example_en": "Rivers carry sediment to the ocean.",
+    "example_ka": "მდინარეები ნალექს ოკეანეში მიაქვს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "shark",
+    "georgian": "ზვიგენი",
+    "pronunciation": "/ʃɑːrk/",
+    "example_en": "Sharks are apex predators.",
+    "example_ka": "ზვიგენები უმაღლესი მტაცებლები არიან.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "shell",
+    "georgian": "ნიჟარა",
+    "pronunciation": "/ʃɛl/",
+    "example_en": "She collected shells on the beach.",
+    "example_ka": "მან სანაპიროზე ნიჟარები შეაგროვა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "ship",
+    "georgian": "გემი",
+    "pronunciation": "/ʃɪp/",
+    "example_en": "The large ship crossed the Atlantic.",
+    "example_ka": "დიდმა გემმა ატლანტიკის ოკეანე გადალახა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "shipwreck",
+    "georgian": "გემის ნარჩენები",
+    "pronunciation": "/ˈʃɪprɛk/",
+    "example_en": "Divers explored the old shipwreck.",
+    "example_ka": "მყვინთავებმა ძველი გემის ნარჩენები შეისწავლეს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "shock",
+    "georgian": "შოკი",
+    "pronunciation": "/ʃɑːk/",
+    "example_en": "The electric ray gave him a shock.",
+    "example_ka": "ელექტრულმა სხივმა შოკი მისცა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "shore",
+    "georgian": "ნაპირი",
+    "pronunciation": "/ʃɔːr/",
+    "example_en": "Waves crashed against the rocky shore.",
+    "example_ka": "ტალღები კლდოვან ნაპირს ეცემოდა.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "shrimp",
+    "georgian": "კრევეტი",
+    "pronunciation": "/ʃrɪmp/",
+    "example_en": "Shrimp are popular seafood.",
+    "example_ka": "კრევეტები პოპულარული ზღვის პროდუქტია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "snorkel",
+    "georgian": "სნორკელი",
+    "pronunciation": "/ˈsnɔːrkəl/",
+    "example_en": "We used snorkels to swim near the surface.",
+    "example_ka": "ზედაპირთან ახლოს საცურაოდ სნორკელებს ვიყენებდით.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "splash",
+    "georgian": "ზლუნჯა",
+    "pronunciation": "/splæʃ/",
+    "example_en": "The splash was refreshing.",
+    "example_ka": "ზლუნჯა განმაახლებელი იყო.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "spray",
+    "georgian": "ნაერთი",
+    "pronunciation": "/spreɪ/",
+    "example_en": "Sea spray hit our faces.",
+    "example_ka": "ზღვის ნაერთმა სახეებში მოგვხვდა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "squid",
+    "georgian": "ზღვის წია",
+    "pronunciation": "/skwɪd/",
+    "example_en": "Giant squid live in deep waters.",
+    "example_ka": "გიგანტური ზღვის წია ღრმა წყლებში ცხოვრობს.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "starfish",
+    "georgian": "ზღვის ვარსკვლავი",
+    "pronunciation": "/ˈstɑːrfɪʃ/",
+    "example_en": "We found a starfish on the beach.",
+    "example_ka": "სანაპიროზე ზღვის ვარსკვლავი ვიპოვეთ.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "stingray",
+    "georgian": "სხივი",
+    "pronunciation": "/ˈstɪŋreɪ/",
+    "example_en": "We saw a stingray in the shallow water.",
+    "example_ka": "არაღრმა წყალში სხივი დავინახეთ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "storm",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/stɔːrm/",
+    "example_en": "The ship weathered the fierce storm.",
+    "example_ka": "გემმა ძლიერ ქარიშხალს გაუძლო.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "strait",
+    "georgian": "სრუტე",
+    "pronunciation": "/streɪt/",
+    "example_en": "The strait connects two seas.",
+    "example_ka": "სრუტე ორ ზღვას აკავშირებს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "submarine",
+    "georgian": "წყალქვეშა ნავი",
+    "pronunciation": "/ˈsʌbməriːn/",
+    "example_en": "The submarine explored the deep ocean.",
+    "example_ka": "წყალქვეშა ნავმა ოკეანის სიღრმეები შეისწავლა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "sucker",
+    "georgian": "მწოვავი",
+    "pronunciation": "/ˈsʌkər/",
+    "example_en": "Octopus tentacles have powerful suckers.",
+    "example_ka": "რვაფეხას საცეცებს ძლიერი მწოვავები აქვთ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "sunrise",
+    "georgian": "მზისამოსვლა",
+    "pronunciation": "/ˈsʌnraɪz/",
+    "example_en": "We watched the sunrise over the ocean.",
+    "example_ka": "ოკეანეზე მზის ამოსვლას ვუცქერდით.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "sunset",
+    "georgian": "მზისჩასვლა",
+    "pronunciation": "/ˈsʌnsɛt/",
+    "example_en": "Ocean sunsets are breathtaking.",
+    "example_ka": "ოკეანის მზისჩასვლები სუნთქვისმომჭერია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "surface",
+    "georgian": "ზედაპირი",
+    "pronunciation": "/ˈsɜːrfəs/",
+    "example_en": "The diver came up to the surface.",
+    "example_ka": "მყვინთავი ზედაპირზე ავიდა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "survival",
+    "georgian": "გადარჩენა",
+    "pronunciation": "/sərˈvaɪvəl/",
+    "example_en": "Survival in the deep ocean is challenging.",
+    "example_ka": "ღრმა ოკეანეში გადარჩენა რთულია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "swell",
+    "georgian": "ალღა",
+    "pronunciation": "/swɛl/",
+    "example_en": "Long swells rolled toward the beach.",
+    "example_ka": "გრძელი ალღები პლაჟისკენ მოძრაობდა.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "tank",
+    "georgian": "ბალონი",
+    "pronunciation": "/tæŋk/",
+    "example_en": "Check the air tank before diving.",
+    "example_ka": "ყვინთვამდე ჰაერის ბალონი შეამოწმე.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "tentacle",
+    "georgian": "საცეცი",
+    "pronunciation": "/ˈtɛntəkəl/",
+    "example_en": "The octopus has eight tentacles.",
+    "example_ka": "რვაფეხას რვა საცეცი აქვს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "tide",
+    "georgian": "მიქცევა",
+    "pronunciation": "/taɪd/",
+    "example_en": "The tide comes in twice a day.",
+    "example_ka": "მიქცევა დღეში ორჯერ ხდება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "trench",
+    "georgian": "ღრმული",
+    "pronunciation": "/trɛntʃ/",
+    "example_en": "The Mariana Trench is the deepest point.",
+    "example_ka": "მარიანას ღრმული ყველაზე ღრმა წერტილია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "tsunami",
+    "georgian": "ცუნამი",
+    "pronunciation": "/tsuːˈnɑːmi/",
+    "example_en": "The tsunami caused massive destruction.",
+    "example_ka": "ცუნამიმ მასშტაბური განადგურება გამოიწვია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "turtle",
+    "georgian": "კუ",
+    "pronunciation": "/ˈtɜːrtəl/",
+    "example_en": "Sea turtles travel thousands of miles.",
+    "example_ka": "ზღვის კუები ათასობით მილს გადიან.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "typhoon",
+    "georgian": "ტაიფუნი",
+    "pronunciation": "/taɪˈfuːn/",
+    "example_en": "Typhoons are Pacific hurricanes.",
+    "example_ka": "ტაიფუნები წყნარი ოკეანის ქარიშხლებია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "underwater",
+    "georgian": "წყლისქვეშ",
+    "pronunciation": "/ˌʌndərˈwɔːtər/",
+    "example_en": "The underwater world is amazing.",
+    "example_ka": "წყლისქვეშა სამყარო საოცარია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "unknown",
+    "georgian": "უცნობი",
+    "pronunciation": "/ʌnˈnoʊn/",
+    "example_en": "Much of the ocean remains unknown.",
+    "example_ka": "ოკეანის დიდი ნაწილი უცნობად რჩება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "urchin",
+    "georgian": "ზღვის კაშტანი",
+    "pronunciation": "/ˈɜːrtʃən/",
+    "example_en": "Sea urchins have sharp spines.",
+    "example_ka": "ზღვის კაშტნებს ბასრი ეკლები აქვთ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "vast",
+    "georgian": "უზარმაზარი",
+    "pronunciation": "/væst/",
+    "example_en": "The ocean is vast and mysterious.",
+    "example_ka": "ოკეანე უზარმაზარი და საიდუმლომრავალია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "venom",
+    "georgian": "შხამი",
+    "pronunciation": "/ˈvɛnəm/",
+    "example_en": "Sea snake venom is very potent.",
+    "example_ka": "ზღვის გველის შხამი ძალიან ძლიერია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "vent",
+    "georgian": "ვენტი",
+    "pronunciation": "/vɛnt/",
+    "example_en": "Ocean floor vents release hot water.",
+    "example_ka": "ოკეანის ფსკერის ვენტები ცხელ წყალს გამოყოფენ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "volcanic",
+    "georgian": "ვულკანური",
+    "pronunciation": "/vɑːlˈkænɪk/",
+    "example_en": "Many islands are of volcanic origin.",
+    "example_ka": "ბევრი კუნძული ვულკანური წარმოშობისაა.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "walrus",
+    "georgian": "მორზა",
+    "pronunciation": "/ˈwɔːlrəs/",
+    "example_en": "Walruses have large tusks.",
+    "example_ka": "მორზებს დიდი ეკლები აქვთ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "wave",
+    "georgian": "ტალღა",
+    "pronunciation": "/weɪv/",
+    "example_en": "The waves were very high today.",
+    "example_ka": "დღეს ტალღები ძალიან მაღალი იყო.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "whale",
+    "georgian": "ვეშაპი",
+    "pronunciation": "/weɪl/",
+    "example_en": "Blue whales are the largest animals on Earth.",
+    "example_ka": "ცისფერი ვეშაპები დედამიწაზე ყველაზე დიდი ცხოველებია.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "wharf",
+    "georgian": "ნაბრძანები",
+    "pronunciation": "/wɔːrf/",
+    "example_en": "Workers unloaded cargo at the wharf.",
+    "example_ka": "მუშებმა ნაბრძანებში ტვირთი ჩამოტვირთეს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "wind",
+    "georgian": "ქარი",
+    "pronunciation": "/wɪnd/",
+    "example_en": "Ocean winds power sailing ships.",
+    "example_ka": "ოკეანის ქარები ნავსაობის გემებს ამოძრავებს.",
+    "category": "ocean-marine",
+    "level": "beginner"
+  },
+  {
+    "english": "yacht",
+    "georgian": "იახტა",
+    "pronunciation": "/jɑːt/",
+    "example_en": "The luxury yacht anchored in the bay.",
+    "example_ka": "ფუფუნების იახტა ყურეში დაღუზა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "barnacle",
+    "georgian": "ზღვის ხიმიური",
+    "pronunciation": "/ˈbɑːrnəkəl/",
+    "example_en": "Barnacles attached to the ship's hull.",
+    "example_ka": "ზღვის ხიმიური გემის კორპუსზე მიმაგრებული იყო.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "eel",
+    "georgian": "გველთევზა",
+    "pronunciation": "/iːl/",
+    "example_en": "Electric eels can shock their prey.",
+    "example_ka": "ელექტრო გველთევზებს შეუძლიათ მტრები დაშოკონ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "ray",
+    "georgian": "რამფისი",
+    "pronunciation": "/reɪ/",
+    "example_en": "Stingrays glide gracefully through water.",
+    "example_ka": "რამფისები ხისტად ცურავენ წყალში.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "anemone",
+    "georgian": "ზღვის ანემონი",
+    "pronunciation": "/əˈnɛməni/",
+    "example_en": "Clownfish live among sea anemones.",
+    "example_ka": "კლოუნთევზები ზღვის ანემონებს შორის ცხოვრობენ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "sponge",
+    "georgian": "ზღვის ღვინია",
+    "pronunciation": "/spʌndʒ/",
+    "example_en": "Natural sponges grow on the seafloor.",
+    "example_ka": "ბუნებრივი ღვინიები ზღვის ფსკერზე იზრდება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "seahorse",
+    "georgian": "ზღვის ცხენი",
+    "pronunciation": "/ˈsiːhɔːrs/",
+    "example_en": "Seahorses have unique body shapes.",
+    "example_ka": "ზღვის ცხენებს უნიკალური სხეულის ფორმა აქვთ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "pufferfish",
+    "georgian": "ბუშტუკათევზა",
+    "pronunciation": "/ˈpʌfərfɪʃ/",
+    "example_en": "Pufferfish inflate when threatened.",
+    "example_ka": "ბუშტუკათევზები საფრთხის დროს შედუღდება.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "barracuda",
+    "georgian": "ბარაკუდა",
+    "pronunciation": "/ˌbærəˈkuːdə/",
+    "example_en": "Barracuda are fierce predators.",
+    "example_ka": "ბარაკუდები სასტიკი მტაცებლები არიან.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "flounder",
+    "georgian": "კალკანი",
+    "pronunciation": "/ˈflaʊndər/",
+    "example_en": "Flounder are flatfish that live on the bottom.",
+    "example_ka": "კალკანები ბრტყელი თევზებია რომლებიც ფსკერზე ცხოვრობენ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "mackerel",
+    "georgian": "მაკრელი",
+    "pronunciation": "/ˈmækərəl/",
+    "example_en": "Mackerel swim in large schools.",
+    "example_ka": "მაკრელები დიდ მედლებში ცურავენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "sardine",
+    "georgian": "სარდინი",
+    "pronunciation": "/sɑːrˈdiːn/",
+    "example_en": "Sardines are small schooling fish.",
+    "example_ka": "სარდინები პატარა მედლებში მყოფი თევზებია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "anchovy",
+    "georgian": "აუნჩოუსი",
+    "pronunciation": "/ˈæntʃoʊvi/",
+    "example_en": "Anchovies are commonly used in pizza.",
+    "example_ka": "აუნჩოუსი ხშირად პიცაში იყენება.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "herring",
+    "georgian": "ნიზრები",
+    "pronunciation": "/ˈhɛrɪŋ/",
+    "example_en": "Herring migrate in huge numbers.",
+    "example_ka": "ნიზრები უზარმაზარი რაოდენობით მიგრირებენ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "cod",
+    "georgian": "ვერცხლისფერა",
+    "pronunciation": "/kɑːd/",
+    "example_en": "Cod is a popular white fish.",
+    "example_ka": "ვერცხლისფერა პოპულარული თეთრი თევზია.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "haddock",
+    "georgian": "ჰადოკი",
+    "pronunciation": "/ˈhædək/",
+    "example_en": "Haddock is often used in fish and chips.",
+    "example_ka": "ჰადოკი ხშირად თევზი და ჩიფსში გამოიყენება.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "halibut",
+    "georgian": "ჰალიბუტი",
+    "pronunciation": "/ˈhælɪbət/",
+    "example_en": "Halibut are large flatfish.",
+    "example_ka": "ჰალიბუტები დიდი ბრტყელი თევზებია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "sole",
+    "georgian": "ენოვანი",
+    "pronunciation": "/soʊl/",
+    "example_en": "Dover sole is a prized delicacy.",
+    "example_ka": "დოვერის ენოვანი ძვირფასი დელიკატესია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "grouper",
+    "georgian": "ზღვის ოკუნი",
+    "pronunciation": "/ˈɡruːpər/",
+    "example_en": "Grouper can grow to enormous sizes.",
+    "example_ka": "ზღვის ოკუნს უზარმაზარი ზომები შეუძლია მიაღწიოს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "snapper",
+    "georgian": "ლუტიანი",
+    "pronunciation": "/ˈsnæpər/",
+    "example_en": "Red snapper is a tasty fish.",
+    "example_ka": "წითელი ლუტიანი გემრიელი თევზია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "mahi",
+    "georgian": "მაჰი",
+    "pronunciation": "/ˈmɑːhi/",
+    "example_en": "Mahi mahi has bright golden colors.",
+    "example_ka": "მაჰი მაჰის ნათელი ოქროსფერი ფერები აქვს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "marlin",
+    "georgian": "მარლინი",
+    "pronunciation": "/ˈmɑːrlən/",
+    "example_en": "Blue marlin are prized by sport fishermen.",
+    "example_ka": "ლურჯი მარლინი სპორტული მეთევზეების ძვირფასი ნადირია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "swordfish",
+    "georgian": "ხმლისფერა",
+    "pronunciation": "/ˈsɔːrdfɪʃ/",
+    "example_en": "Swordfish have long pointed bills.",
+    "example_ka": "ხმლისფერებს გრძელი წაწვეტებული ცხვირი აქვთ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "sailfish",
+    "georgian": "აფრისფერა",
+    "pronunciation": "/ˈseɪlfɪʃ/",
+    "example_en": "Sailfish are among the fastest fish.",
+    "example_ka": "აფრისფერები ყველაზე სწრაფ თევზებს შორისაა.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "torpedo",
+    "georgian": "ტორპედო",
+    "pronunciation": "/tɔːrˈpiːdoʊ/",
+    "example_en": "The torpedo ray has electric organs.",
+    "example_ka": "ტორპედო რამფისს ელექტრო ორგანოები აქვს.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "hammerhead",
+    "georgian": "ჩაქუჩისფერი",
+    "pronunciation": "/ˈhæmərhed/",
+    "example_en": "Hammerhead sharks have distinctive heads.",
+    "example_ka": "ჩაქუჩისფერ ზვიგენებს გამორჩეული თავები აქვთ.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  },
+  {
+    "english": "nautilus",
+    "georgian": "ნავტილუსი",
+    "pronunciation": "/ˈnɔːtələs/",
+    "example_en": "Nautilus have beautiful spiral shells.",
+    "example_ka": "ნავტილუსებს ლამაზი სპირალური ნიჟარები აქვთ.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "cuttlefish",
+    "georgian": "კუტლფიში",
+    "pronunciation": "/ˈkʌtəlfɪʃ/",
+    "example_en": "Cuttlefish can change their skin color.",
+    "example_ka": "კუტლფიშებს შეუძლიათ კანის ფერის შეცვლა.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "conch",
+    "georgian": "კონქი",
+    "pronunciation": "/kɑːnk/",
+    "example_en": "Conch shells are often used as horns.",
+    "example_ka": "კონქის ნიჟარები ხშირად რქების სახით იყენება.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "abalone",
+    "georgian": "აბალონი",
+    "pronunciation": "/ˌæbəˈloʊni/",
+    "example_en": "Abalone shells are iridescent and beautiful.",
+    "example_ka": "აბალონის ნიჟარები ცისფერქმნილი და ლამაზია.",
+    "category": "ocean-marine",
+    "level": "advanced"
+  },
+  {
+    "english": "driftwood",
+    "georgian": "ნაოხარი",
+    "pronunciation": "/ˈdrɪftwʊd/",
+    "example_en": "Driftwood washed up on the beach.",
+    "example_ka": "ნაოხარი პლაჟზე მოიტანა ღვარმა.",
+    "category": "ocean-marine",
+    "level": "intermediate"
+  }
 ]

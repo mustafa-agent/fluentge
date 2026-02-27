@@ -1,27 +1,1802 @@
 [
-  {"english":"discipline","georgian":"დისციპლინა","pronunciation":"DIS-ih-plin","example_en":"Discipline is more important than motivation.","example_ka":"დისციპლინა მოტივაციაზე მნიშვნელოვანია.","category":"Self-Improvement","level":"B1"},
-  {"english":"habit","georgian":"ჩვევა","pronunciation":"HAB-it","example_en":"Good habits change your life.","example_ka":"კარგი ჩვევები ცვლის შენს ცხოვრებას.","category":"Self-Improvement","level":"A2"},
-  {"english":"mindset","georgian":"აზროვნება","pronunciation":"MYND-set","example_en":"A growth mindset helps you learn faster.","example_ka":"ზრდის აზროვნება უფრო სწრაფ სწავლაში გეხმარება.","category":"Self-Improvement","level":"B1"},
-  {"english":"goal","georgian":"მიზანი","pronunciation":"gohl","example_en":"Set clear goals and work toward them.","example_ka":"დაისახე მკაფიო მიზნები და იმუშავე მათკენ.","category":"Self-Improvement","level":"A2"},
-  {"english":"accountability","georgian":"პასუხისმგებლობა","pronunciation":"ah-KOWN-tah-BIL-ih-tee","example_en":"Find an accountability partner.","example_ka":"იპოვე პასუხისმგებლობის პარტნიორი.","category":"Self-Improvement","level":"B2"},
-  {"english":"procrastinate","georgian":"გადადება","pronunciation":"proh-KRAS-tih-nayt","example_en":"Stop procrastinating and start working.","example_ka":"შეწყვიტე გადადება და დაიწყე მუშაობა.","category":"Self-Improvement","level":"B1"},
-  {"english":"hustle","georgian":"შრომა/ბრძოლა","pronunciation":"HUS-ul","example_en":"Side hustle can become your main income.","example_ka":"დამატებითი შრომა შეიძლება მთავარ შემოსავლად იქცეს.","category":"Self-Improvement","level":"B1"},
-  {"english":"consistency","georgian":"თანმიმდევრულობა","pronunciation":"kun-SIS-ten-see","example_en":"Consistency beats talent every time.","example_ka":"თანმიმდევრულობა ყოველთვის ნიჭს ჯობნის.","category":"Self-Improvement","level":"B1"},
-  {"english":"resilience","georgian":"გამძლეობა","pronunciation":"rih-ZIL-yens","example_en":"Resilience means bouncing back from failure.","example_ka":"გამძლეობა ნიშნავს წარუმატებლობიდან აღდგომას.","category":"Self-Improvement","level":"B2"},
-  {"english":"focus","georgian":"ფოკუსი/კონცენტრაცია","pronunciation":"FOH-kus","example_en":"Focus on one thing at a time.","example_ka":"ერთ საქმეზე კონცენტრირდი.","category":"Self-Improvement","level":"A2"},
-  {"english":"sacrifice","georgian":"მსხვერპლი","pronunciation":"SAK-rih-fys","example_en":"Success requires sacrifice.","example_ka":"წარმატებას მსხვერპლი სჭირდება.","category":"Self-Improvement","level":"B1"},
-  {"english":"grind","georgian":"შრომა","pronunciation":"grynd","example_en":"Keep grinding, results will come.","example_ka":"განაგრძე შრომა, შედეგი მოვა.","category":"Self-Improvement","level":"B1"},
-  {"english":"comfort zone","georgian":"კომფორტის ზონა","pronunciation":"KUM-fort zohn","example_en":"Growth happens outside your comfort zone.","example_ka":"ზრდა კომფორტის ზონის გარეთ ხდება.","category":"Self-Improvement","level":"B1"},
-  {"english":"productive","georgian":"პროდუქტიული","pronunciation":"proh-DUK-tiv","example_en":"I feel most productive in the morning.","example_ka":"ყველაზე პროდუქტიული დილით ვარ.","category":"Self-Improvement","level":"B1"},
-  {"english":"failure","georgian":"წარუმატებლობა","pronunciation":"FAYL-yer","example_en":"Failure is a lesson, not the end.","example_ka":"წარუმატებლობა გაკვეთილია, არა დასასრული.","category":"Self-Improvement","level":"A2"},
-  {"english":"visualize","georgian":"წარმოიდგინე","pronunciation":"VIZH-oo-ah-lyz","example_en":"Visualize your success every morning.","example_ka":"ყოველ დილით წარმოიდგინე შენი წარმატება.","category":"Self-Improvement","level":"B1"},
-  {"english":"affirmation","georgian":"აფირმაცია","pronunciation":"af-er-MAY-shun","example_en":"Positive affirmations boost confidence.","example_ka":"დადებითი აფირმაციები თავდაჯერებულობას ზრდის.","category":"Self-Improvement","level":"B2"},
-  {"english":"network","georgian":"კავშირები","pronunciation":"NET-werk","example_en":"Your network is your net worth.","example_ka":"შენი კავშირები შენი ღირებულებაა.","category":"Self-Improvement","level":"B1"},
-  {"english":"mentor","georgian":"მენტორი","pronunciation":"MEN-tor","example_en":"Find a mentor who has done what you want.","example_ka":"იპოვე მენტორი, ვინც გააკეთა ის, რაც შენ გინდა.","category":"Self-Improvement","level":"B1"},
-  {"english":"grateful","georgian":"მადლიერი","pronunciation":"GRAYT-ful","example_en":"Be grateful for what you have.","example_ka":"იყავი მადლიერი იმის, რაც გაქვს.","category":"Self-Improvement","level":"A2"},
-  {"english":"patience","georgian":"მოთმინება","pronunciation":"PAY-shens","example_en":"Patience is key to long-term success.","example_ka":"მოთმინება გრძელვადიანი წარმატების გასაღებია.","category":"Self-Improvement","level":"A2"},
-  {"english":"level up","georgian":"დონის ამაღლება","pronunciation":"LEV-ul up","example_en":"It's time to level up your skills.","example_ka":"დროა ამაღლო შენი უნარები.","category":"Self-Improvement","level":"B1"},
-  {"english":"boundaries","georgian":"საზღვრები","pronunciation":"BOWN-dah-reez","example_en":"Set boundaries to protect your time.","example_ka":"დააწესე საზღვრები შენი დროის დასაცავად.","category":"Self-Improvement","level":"B1"},
-  {"english":"overthink","georgian":"ზედმეტი ფიქრი","pronunciation":"oh-ver-THINK","example_en":"Don't overthink it, just start.","example_ka":"ნუ იფიქრებ ზედმეტად, უბრალოდ დაიწყე.","category":"Self-Improvement","level":"B1"},
-  {"english":"growth","georgian":"ზრდა","pronunciation":"grohth","example_en":"Personal growth never stops.","example_ka":"პიროვნული ზრდა არასდროს ჩერდება.","category":"Self-Improvement","level":"A2"}
+  {
+    "english": "discipline",
+    "georgian": "დისციპლინა",
+    "pronunciation": "/ˈdɪsəplɪn/",
+    "example_en": "Discipline is more important than motivation.",
+    "example_ka": "დისციპლინა მოტივაციაზე მნიშვნელოვანია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "habit",
+    "georgian": "ჩვევა",
+    "pronunciation": "/ˈhæbɪt/",
+    "example_en": "Good habits change your life.",
+    "example_ka": "კარგი ჩვევები ცვლის შენს ცხოვრებას.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "mindset",
+    "georgian": "აზროვნება",
+    "pronunciation": "/ˈmaɪndset/",
+    "example_en": "A growth mindset helps you learn faster.",
+    "example_ka": "ზრდის აზროვნება უფრო სწრაფ სწავლაში გეხმარება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "goal",
+    "georgian": "მიზანი",
+    "pronunciation": "/ɡoʊl/",
+    "example_en": "Set clear goals and work toward them.",
+    "example_ka": "დაისახე მკაფიო მიზნები და იმუშავე მათკენ.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "accountability",
+    "georgian": "პასუხისმგებლობა",
+    "pronunciation": "/əˌkaʊntəˈbɪləti/",
+    "example_en": "Find an accountability partner.",
+    "example_ka": "იპოვე პასუხისმგებლობის პარტნიორი.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "procrastinate",
+    "georgian": "გადადება",
+    "pronunciation": "/proʊˈkræstəneɪt/",
+    "example_en": "Stop procrastinating and start working.",
+    "example_ka": "შეწყვიტე გადადება და დაიწყე მუშაობა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "hustle",
+    "georgian": "შრომა",
+    "pronunciation": "/ˈhʌsəl/",
+    "example_en": "Side hustle can become your main income.",
+    "example_ka": "დამატებითი შრომა შეიძლება მთავარ შემოსავლად იქცეს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "consistency",
+    "georgian": "თანმიმდევრულობა",
+    "pronunciation": "/kənˈsɪstənsi/",
+    "example_en": "Consistency beats talent every time.",
+    "example_ka": "თანმიმდევრულობა ყოველთვის ნიჭს ჯობნის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "resilience",
+    "georgian": "გამძლეობა",
+    "pronunciation": "/rɪˈzɪliəns/",
+    "example_en": "Resilience means bouncing back from failure.",
+    "example_ka": "გამძლეობა ნიშნავს წარუმატებლობიდან აღდგომას.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "focus",
+    "georgian": "ფოკუსი",
+    "pronunciation": "/ˈfoʊkəs/",
+    "example_en": "Focus on one thing at a time.",
+    "example_ka": "ერთ საქმეზე კონცენტრირდი.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "sacrifice",
+    "georgian": "მსხვერპლი",
+    "pronunciation": "/ˈsækrəfaɪs/",
+    "example_en": "Success requires sacrifice.",
+    "example_ka": "წარმატებას მსხვერპლი სჭირდება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "grind",
+    "georgian": "შრომა",
+    "pronunciation": "/ɡraɪnd/",
+    "example_en": "Keep grinding, results will come.",
+    "example_ka": "განაგრძე შრომა, შედეგი მოვა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "productive",
+    "georgian": "პროდუქტიული",
+    "pronunciation": "/prəˈdʌktɪv/",
+    "example_en": "I feel most productive in the morning.",
+    "example_ka": "ყველაზე პროდუქტიული დილით ვარ.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "failure",
+    "georgian": "წარუმატებლობა",
+    "pronunciation": "/ˈfeɪljər/",
+    "example_en": "Failure is a lesson, not the end.",
+    "example_ka": "წარუმატებლობა გაკვეთილია, არა დასასრული.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "visualize",
+    "georgian": "წარმოიდგინე",
+    "pronunciation": "/ˈvɪʒuəlaɪz/",
+    "example_en": "Visualize your success every morning.",
+    "example_ka": "ყოველ დილით წარმოიდგინე შენი წარმატება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "affirmation",
+    "georgian": "აფირმაცია",
+    "pronunciation": "/ˌæfərˈmeɪʃən/",
+    "example_en": "Positive affirmations boost confidence.",
+    "example_ka": "დადებითი აფირმაციები თავდაჯერებულობას ზრდის.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "network",
+    "georgian": "კავშირები",
+    "pronunciation": "/ˈnetˌwɜːrk/",
+    "example_en": "Your network is your net worth.",
+    "example_ka": "შენი კავშირები შენი ღირებულებაა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "mentor",
+    "georgian": "მენტორი",
+    "pronunciation": "/ˈmentɔːr/",
+    "example_en": "Find a mentor who has done what you want.",
+    "example_ka": "იპოვე მენტორი, ვინც გააკეთა ის, რაც შენ გინდა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "grateful",
+    "georgian": "მადლიერი",
+    "pronunciation": "/ˈɡreɪtfəl/",
+    "example_en": "Be grateful for what you have.",
+    "example_ka": "იყავი მადლიერი იმის, რაც გაქვს.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "patience",
+    "georgian": "მოთმინება",
+    "pronunciation": "/ˈpeɪʃəns/",
+    "example_en": "Patience is key to long-term success.",
+    "example_ka": "მოთმინება გრძელვადიანი წარმატების გასაღებია.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "boundaries",
+    "georgian": "საზღვრები",
+    "pronunciation": "/ˈbaʊndəriz/",
+    "example_en": "Set boundaries to protect your time.",
+    "example_ka": "დააწესე საზღვრები შენი დროის დასაცავად.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "overthink",
+    "georgian": "ზედმეტი ფიქრი",
+    "pronunciation": "/ˌoʊvərˈθɪŋk/",
+    "example_en": "Don't overthink it, just start.",
+    "example_ka": "ნუ იფიქრებ ზედმეტად, უბრალოდ დაიწყე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "growth",
+    "georgian": "ზრდა",
+    "pronunciation": "/ɡroʊθ/",
+    "example_en": "Personal growth never stops.",
+    "example_ka": "პიროვნული ზრდა არასდროს ჩერდება.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "confidence",
+    "georgian": "თავდაჯერებულობა",
+    "pronunciation": "/ˈkɒnfɪdəns/",
+    "example_en": "Confidence comes from taking action.",
+    "example_ka": "თავდაჯერებულობა მოქმედებიდან მოდის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "motivation",
+    "georgian": "მოტივაცია",
+    "pronunciation": "/ˌmoʊtəˈveɪʃən/",
+    "example_en": "Find your motivation to succeed.",
+    "example_ka": "იპოვე შენი მოტივაცია წარმატებისთვის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "ambition",
+    "georgian": "ამბიცია",
+    "pronunciation": "/æmˈbɪʃən/",
+    "example_en": "Ambition drives you toward your goals.",
+    "example_ka": "ამბიცია მიზნებისკენ გიყვანს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "determination",
+    "georgian": "დეტერმინაცია",
+    "pronunciation": "/dɪˌtɜːrmɪˈneɪʃən/",
+    "example_en": "Determination conquers all obstacles.",
+    "example_ka": "დეტერმინაცია ყველა დაბრკოლებას იძლევა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "perseverance",
+    "georgian": "მოთმინება",
+    "pronunciation": "/ˌpɜːrsəˈvɪrəns/",
+    "example_en": "Perseverance leads to success.",
+    "example_ka": "მოთმინება წარმატებისკენ მივყავართ.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "dedication",
+    "georgian": "ერთგულება",
+    "pronunciation": "/ˌdedɪˈkeɪʃən/",
+    "example_en": "Success requires dedication.",
+    "example_ka": "წარმატებას ერთგულება სჭირდება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "commitment",
+    "georgian": "ვალდებულება",
+    "pronunciation": "/kəˈmɪtmənt/",
+    "example_en": "Make a commitment to yourself.",
+    "example_ka": "საკუთარ თავთან ვალდებულება აიღო.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "passion",
+    "georgian": "ვნება",
+    "pronunciation": "/ˈpæʃən/",
+    "example_en": "Follow your passion in life.",
+    "example_ka": "მიჰყევი შენს ვნებას ცხოვრებაში.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "purpose",
+    "georgian": "მიზანი",
+    "pronunciation": "/ˈpɜːrpəs/",
+    "example_en": "Everyone needs a purpose in life.",
+    "example_ka": "ყველას სჭირდება მიზანი ცხოვრებაში.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "vision",
+    "georgian": "ხედვა",
+    "pronunciation": "/ˈvɪʒən/",
+    "example_en": "Create a vision for your future.",
+    "example_ka": "შექმენი ხედვა შენი მომავლისთვის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "inspiration",
+    "georgian": "შთაგონება",
+    "pronunciation": "/ˌɪnspəˈreɪʃən/",
+    "example_en": "Find inspiration in everyday life.",
+    "example_ka": "იპოვე შთაგონება ყოველდღიურ ცხოვრებაში.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "excellence",
+    "georgian": "ერთგვარობა",
+    "pronunciation": "/ˈeksələns/",
+    "example_en": "Strive for excellence in everything.",
+    "example_ka": "ყველაფერში სცადე ერთგვარობა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "achievement",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːvmənt/",
+    "example_en": "Celebrate every achievement.",
+    "example_ka": "აღნიშნე ყოველი მიღწევა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "success",
+    "georgian": "წარმატება",
+    "pronunciation": "/səkˈses/",
+    "example_en": "Success is a journey, not a destination.",
+    "example_ka": "წარმატება გზაა, არა დანიშნულების ადგილი.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "progress",
+    "georgian": "პროგრესი",
+    "pronunciation": "/ˈprɑːɡres/",
+    "example_en": "Small progress is still progress.",
+    "example_ka": "პატარა პროგრესიც კვლავ პროგრესია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "improvement",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/ɪmˈpruːvmənt/",
+    "example_en": "Continuous improvement is key.",
+    "example_ka": "უწყვეტი გაუმჯობესება მთავარია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "development",
+    "georgian": "განვითარება",
+    "pronunciation": "/dɪˈveləpmənt/",
+    "example_en": "Personal development never ends.",
+    "example_ka": "პიროვნული განვითარება არასდროს სრულდება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "skill",
+    "georgian": "უნარი",
+    "pronunciation": "/skɪl/",
+    "example_en": "Practice your skills daily.",
+    "example_ka": "ყოველდღიურად ივარჯიშე შენს უნარებში.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "talent",
+    "georgian": "ნიჭი",
+    "pronunciation": "/ˈtælənt/",
+    "example_en": "Talent without practice is wasted.",
+    "example_ka": "ნიჭი პრაქტიკის გარეშე ფუჭია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "practice",
+    "georgian": "პრაქტიკა",
+    "pronunciation": "/ˈpræktɪs/",
+    "example_en": "Practice makes perfect.",
+    "example_ka": "პრაქტიკა სრულყოფილებას ანიჭებს.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "learning",
+    "georgian": "სწავლა",
+    "pronunciation": "/ˈlɜːrnɪŋ/",
+    "example_en": "Learning never stops.",
+    "example_ka": "სწავლა არასდროს წყდება.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "knowledge",
+    "georgian": "ცოდნა",
+    "pronunciation": "/ˈnɑːlɪdʒ/",
+    "example_en": "Knowledge is power.",
+    "example_ka": "ცოდნა ძალაა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "wisdom",
+    "georgian": "სიბრძნე",
+    "pronunciation": "/ˈwɪzdəm/",
+    "example_en": "Wisdom comes from experience.",
+    "example_ka": "სიბრძნე გამოცდილებიდან მოდის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "experience",
+    "georgian": "გამოცდილება",
+    "pronunciation": "/ɪkˈspɪriəns/",
+    "example_en": "Experience is the best teacher.",
+    "example_ka": "გამოცდილება საუკეთესო მასწავლებელია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "challenge",
+    "georgian": "გამოწვევა",
+    "pronunciation": "/ˈtʃælɪndʒ/",
+    "example_en": "Every challenge makes you stronger.",
+    "example_ka": "ყოველი გამოწვევა გაძლიერებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "obstacle",
+    "georgian": "დაბრკოლება",
+    "pronunciation": "/ˈɑːbstəkəl/",
+    "example_en": "Obstacles are opportunities in disguise.",
+    "example_ka": "დაბრკოლებები შესაძლებლობებია ყაბებაში.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "opportunity",
+    "georgian": "შესაძლებლობა",
+    "pronunciation": "/ˌɑːpərˈtuːnəti/",
+    "example_en": "Opportunity knocks but once.",
+    "example_ka": "შესაძლებლობა ერთხელ იხმარება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "potential",
+    "georgian": "პოტენციალი",
+    "pronunciation": "/pəˈtenʃəl/",
+    "example_en": "Unlock your full potential.",
+    "example_ka": "გახსენი შენი სრული პოტენციალი.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "strength",
+    "georgian": "ძალა",
+    "pronunciation": "/streŋθ/",
+    "example_en": "Build on your strengths.",
+    "example_ka": "შენს ძლიერ მხარეებზე აშენე.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "weakness",
+    "georgian": "სისუსტე",
+    "pronunciation": "/ˈwiːknəs/",
+    "example_en": "Work on your weaknesses.",
+    "example_ka": "იმუშავე შენს სისუსტეებზე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "courage",
+    "georgian": "გამბედაობა",
+    "pronunciation": "/ˈkɜːrɪdʒ/",
+    "example_en": "Courage is not the absence of fear.",
+    "example_ka": "გამბედაობა შიშის არარსებობა არ არის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "bravery",
+    "georgian": "მამაცობა",
+    "pronunciation": "/ˈbreɪvəri/",
+    "example_en": "Bravery means facing your fears.",
+    "example_ka": "მამაცობა ნიშნავს შენს შიშებთან პირისპირ გახვედრას.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "fear",
+    "georgian": "შიში",
+    "pronunciation": "/fɪr/",
+    "example_en": "Fear is just in your mind.",
+    "example_ka": "შიში მხოლოდ შენს გონებაშია.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "anxiety",
+    "georgian": "შფოთვა",
+    "pronunciation": "/æŋˈzaɪəti/",
+    "example_en": "Learn to manage anxiety.",
+    "example_ka": "ისწავლე შფოთვის მართვა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "stress",
+    "georgian": "სტრესი",
+    "pronunciation": "/stres/",
+    "example_en": "Stress can be both good and bad.",
+    "example_ka": "სტრესი შეიძლება იყოს როგორც კარგი, ისე ცუდი.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "peace",
+    "georgian": "მშვიდობა",
+    "pronunciation": "/piːs/",
+    "example_en": "Find inner peace through meditation.",
+    "example_ka": "იპოვე შინაგანი მშვიდობა მედიტაციით.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "calm",
+    "georgian": "სიმშვიდე",
+    "pronunciation": "/kɑːm/",
+    "example_en": "Stay calm under pressure.",
+    "example_ka": "წნევის ქვეშაც შეინარჩუნე სიმშვიდე.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "meditation",
+    "georgian": "მედიტაცია",
+    "pronunciation": "/ˌmedɪˈteɪʃən/",
+    "example_en": "Meditation improves mental health.",
+    "example_ka": "მედიტაცია ფსიქიკურ ჯანმრთელობას აუმჯობესებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "mindfulness",
+    "georgian": "მოუხმარება",
+    "pronunciation": "/ˈmaɪndfəlnəs/",
+    "example_en": "Practice mindfulness daily.",
+    "example_ka": "ყოველდღიურად ივარჯიშე მოუხმარებაში.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "awareness",
+    "georgian": "ცნობიერება",
+    "pronunciation": "/əˈwernəs/",
+    "example_en": "Self-awareness is crucial for growth.",
+    "example_ka": "თვითცნობიერება ზრდისთვის გადამწყვეტია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "reflection",
+    "georgian": "ანარეკლი",
+    "pronunciation": "/rɪˈflekʃən/",
+    "example_en": "Daily reflection helps you grow.",
+    "example_ka": "ყოველდღიური ანარეკლი ზრდაში გეხმარება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "balance",
+    "georgian": "ბალანსი",
+    "pronunciation": "/ˈbæləns/",
+    "example_en": "Life is all about balance.",
+    "example_ka": "ცხოვრება ბალანსშია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "priority",
+    "georgian": "პრიორიტეტი",
+    "pronunciation": "/praɪˈɔːrəti/",
+    "example_en": "Set your priorities straight.",
+    "example_ka": "პრიორიტეტები სწორად დაალაგე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "efficiency",
+    "georgian": "ეფექტურობა",
+    "pronunciation": "/ɪˈfɪʃənsi/",
+    "example_en": "Efficiency is doing things right.",
+    "example_ka": "ეფექტურობა ნიშნავს საქმის სწორად კეთებას.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "effectiveness",
+    "georgian": "ეფექტიანობა",
+    "pronunciation": "/ɪˈfektɪvnəs/",
+    "example_en": "Effectiveness is doing the right things.",
+    "example_ka": "ეფექტიანობა ნიშნავს სწორი საქმის კეთებას.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "organization",
+    "georgian": "ორგანიზაცია",
+    "pronunciation": "/ˌɔːrɡənəˈzeɪʃən/",
+    "example_en": "Good organization saves time.",
+    "example_ka": "კარგი ორგანიზაცია დროს ზოგავს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "planning",
+    "georgian": "დაგეგმვა",
+    "pronunciation": "/ˈplænɪŋ/",
+    "example_en": "Proper planning prevents poor performance.",
+    "example_ka": "სწორი დაგეგმვა ცუდ შესრულებას აცილებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈskedʒuːl/",
+    "example_en": "Stick to your schedule.",
+    "example_ka": "შენს განრიგს მისდევი.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "routine",
+    "georgian": "რუტინა",
+    "pronunciation": "/ruːˈtiːn/",
+    "example_en": "Create a morning routine.",
+    "example_ka": "დღის რუტინა შექმენი.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "energy",
+    "georgian": "ენერგია",
+    "pronunciation": "/ˈenərdʒi/",
+    "example_en": "Protect your energy.",
+    "example_ka": "შენი ენერგია დაიცავი.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "vitality",
+    "georgian": "ვიტალურობა",
+    "pronunciation": "/vaɪˈtæləti/",
+    "example_en": "Exercise increases vitality.",
+    "example_ka": "ვარჯიში ვიტალურობას ზრდის.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "health",
+    "georgian": "ჯანმრთელობა",
+    "pronunciation": "/helθ/",
+    "example_en": "Health is your greatest wealth.",
+    "example_ka": "ჯანმრთელობა შენი უდიდესი სიმდიდრეა.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "fitness",
+    "georgian": "ფიტნეს",
+    "pronunciation": "/ˈfɪtnəs/",
+    "example_en": "Physical fitness affects mental health.",
+    "example_ka": "ფიზიკური ფიტნესი ფსიქიკურ ჯანმრთელობაზე მოქმედებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "exercise",
+    "georgian": "ვარჯიში",
+    "pronunciation": "/ˈeksərsaɪz/",
+    "example_en": "Exercise daily for better health.",
+    "example_ka": "ჯანმრთელობისთვის ყოველდღე ივარჯიშე.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "nutrition",
+    "georgian": "კვება",
+    "pronunciation": "/nuːˈtrɪʃən/",
+    "example_en": "Good nutrition fuels your body.",
+    "example_ka": "კარგი კვება შენს სხეულს ენერგიას აძლევს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "hydration",
+    "georgian": "ჰიდრატაცია",
+    "pronunciation": "/haɪˈdreɪʃən/",
+    "example_en": "Proper hydration is essential.",
+    "example_ka": "სწორი ჰიდრატაცია აუცილებელია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "sleep",
+    "georgian": "ძილი",
+    "pronunciation": "/sliːp/",
+    "example_en": "Good sleep improves performance.",
+    "example_ka": "კარგი ძილი შესრულებას აუმჯობესებს.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "rest",
+    "georgian": "დასვენება",
+    "pronunciation": "/rest/",
+    "example_en": "Rest is as important as work.",
+    "example_ka": "დასვენება მუშაობისებრ მნიშვნელოვანია.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "recovery",
+    "georgian": "გამოჯანმრთელება",
+    "pronunciation": "/rɪˈkʌvəri/",
+    "example_en": "Recovery is part of growth.",
+    "example_ka": "გამოჯანმრთელება ზრდის ნაწილია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "rejuvenation",
+    "georgian": "განახლება",
+    "pronunciation": "/rɪˌdʒuːvəˈneɪʃən/",
+    "example_en": "Vacation brings rejuvenation.",
+    "example_ka": "შვებულება განახლებას მოაქვს.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "creativity",
+    "georgian": "კრეატიულობა",
+    "pronunciation": "/ˌkriːeɪˈtɪvəti/",
+    "example_en": "Creativity solves problems.",
+    "example_ka": "კრეატიულობა პრობლემებს წყვეტს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "innovation",
+    "georgian": "ინოვაცია",
+    "pronunciation": "/ˌɪnəˈveɪʃən/",
+    "example_en": "Innovation drives progress.",
+    "example_ka": "ინოვაცია პროგრესს მართავს.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "curiosity",
+    "georgian": "ცნობისმოყვარეობა",
+    "pronunciation": "/ˌkjʊriˈɑːsəti/",
+    "example_en": "Curiosity fuels learning.",
+    "example_ka": "ცნობისმოყვარეობა სწავლას უზრუნველყოფს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "imagination",
+    "georgian": "წარმოსახვა",
+    "pronunciation": "/ɪˌmædʒəˈneɪʃən/",
+    "example_en": "Imagination creates possibilities.",
+    "example_ka": "წარმოსახვა შესაძლებლობებს ქმნის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "adaptability",
+    "georgian": "ადაპტირება",
+    "pronunciation": "/əˌdæptəˈbɪləti/",
+    "example_en": "Adaptability is crucial in life.",
+    "example_ka": "ადაპტირება ცხოვრებაში გადამწყვეტია.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "flexibility",
+    "georgian": "მოქნილობა",
+    "pronunciation": "/ˌfleksəˈbɪləti/",
+    "example_en": "Mental flexibility helps problem-solving.",
+    "example_ka": "ფსიქიკური მოქნილობა პრობლემების მოგვარებაში ეხმარება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "openness",
+    "georgian": "ღიაობა",
+    "pronunciation": "/ˈoʊpənnəs/",
+    "example_en": "Openness leads to new opportunities.",
+    "example_ka": "ღიაობა ახალ შესაძლებლობებს მოაქვს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "acceptance",
+    "georgian": "მიღება",
+    "pronunciation": "/ækˈseptəns/",
+    "example_en": "Acceptance brings peace.",
+    "example_ka": "მიღება მშვიდობას მოაქვს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "forgiveness",
+    "georgian": "პატიება",
+    "pronunciation": "/fərˈɡɪvnəs/",
+    "example_en": "Forgiveness frees your mind.",
+    "example_ka": "პატიება შენს გონებას ათავისუფლებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "compassion",
+    "georgian": "თანაგრძნობა",
+    "pronunciation": "/kəmˈpæʃən/",
+    "example_en": "Show compassion to yourself and others.",
+    "example_ka": "გამოიჩინე თანაგრძნობა საკუთარი თავისა და სხვების მიმართ.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "empathy",
+    "georgian": "ემპათია",
+    "pronunciation": "/ˈempəθi/",
+    "example_en": "Empathy builds stronger relationships.",
+    "example_ka": "ემპათია უფრო ძლიერ ურთიერთობებს აშენებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "kindness",
+    "georgian": "სიკეთე",
+    "pronunciation": "/ˈkaɪndnəs/",
+    "example_en": "Kindness costs nothing but means everything.",
+    "example_ka": "სიკეთე არაფერი ღირს, მაგრამ ყველაფერს ნიშნავს.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "generosity",
+    "georgian": "დიდსულოვნება",
+    "pronunciation": "/ˌdʒenəˈrɑːsəti/",
+    "example_en": "Generosity enriches both giver and receiver.",
+    "example_ka": "დიდსულოვნება როგორც მცემელს, ისე მიმღებს აჯიშნებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "gratitude",
+    "georgian": "მადლიერება",
+    "pronunciation": "/ˈɡrætətud/",
+    "example_en": "Gratitude transforms life.",
+    "example_ka": "მადლიერება ცხოვრებას ცვლის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "optimism",
+    "georgian": "ოპტიმიზმი",
+    "pronunciation": "/ˈɑːptəmɪzəm/",
+    "example_en": "Optimism creates positive outcomes.",
+    "example_ka": "ოპტიმიზმი დადებით შედეგებს ქმნის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "pessimism",
+    "georgian": "პესიმიზმი",
+    "pronunciation": "/ˈpesəmɪzəm/",
+    "example_en": "Avoid pessimism and negative thinking.",
+    "example_ka": "თავი აარიდე პესიმიზმს და უარყოფით ფიქრს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "positive",
+    "georgian": "დადებითი",
+    "pronunciation": "/ˈpɑːzətɪv/",
+    "example_en": "Stay positive in difficult times.",
+    "example_ka": "რთულ დროს დარჩი დადებითი.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "negative",
+    "georgian": "უარყოფითი",
+    "pronunciation": "/ˈneɡətɪv/",
+    "example_en": "Eliminate negative thoughts.",
+    "example_ka": "უარყოფითი ფიქრები აღმოფხვრე.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "attitude",
+    "georgian": "დამოკიდებულება",
+    "pronunciation": "/ˈætəˌtud/",
+    "example_en": "Your attitude determines your altitude.",
+    "example_ka": "შენი დამოკიდებულება განსაზღვრავს შენს სიმაღლეს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "perspective",
+    "georgian": "კუთხე",
+    "pronunciation": "/pərˈspektɪv/",
+    "example_en": "Change your perspective, change your life.",
+    "example_ka": "შეცვალე კუთხე, შეცვალე ცხოვრება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "belief",
+    "georgian": "რწმენა",
+    "pronunciation": "/bɪˈliːf/",
+    "example_en": "Belief in yourself is powerful.",
+    "example_ka": "საკუთარი თავის რწმენა ძლიერია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-esteem",
+    "georgian": "თვითშეფასება",
+    "pronunciation": "/ˌself əˈstiːm/",
+    "example_en": "Build healthy self-esteem.",
+    "example_ka": "ჯანსაღი თვითშეფასება ააშენე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-worth",
+    "georgian": "თვითღირსება",
+    "pronunciation": "/ˌself wɜːrθ/",
+    "example_en": "Know your self-worth.",
+    "example_ka": "იცოდე შენი თვითღირსება.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-respect",
+    "georgian": "თვითპატივისცემა",
+    "pronunciation": "/ˌself rɪˈspekt/",
+    "example_en": "Self-respect comes from within.",
+    "example_ka": "თვითპატივისცემა შიგნიდან მოდის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-love",
+    "georgian": "თვითსიყვარული",
+    "pronunciation": "/ˌself lʌv/",
+    "example_en": "Practice self-love daily.",
+    "example_ka": "ყოველდღე ივარჯიშე თვითსიყვარულში.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-care",
+    "georgian": "თვითზრუნვა",
+    "pronunciation": "/ˌself ker/",
+    "example_en": "Self-care is not selfish.",
+    "example_ka": "თვითზრუნვა ეგოიზმი არ არის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-discipline",
+    "georgian": "თვითდისციპლინა",
+    "pronunciation": "/ˌself ˈdɪsəplɪn/",
+    "example_en": "Self-discipline is freedom.",
+    "example_ka": "თვითდისციპლინა თავისუფლებაა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-control",
+    "georgian": "თვითკონტროლი",
+    "pronunciation": "/ˌself kənˈtroʊl/",
+    "example_en": "Master self-control to master life.",
+    "example_ka": "ცხოვრების ოსტატობისთვის თვითკონტროლი დაეუფლე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "self-improvement",
+    "georgian": "თვითგაუმჯობესება",
+    "pronunciation": "/ˌself ɪmˈpruːvmənt/",
+    "example_en": "Self-improvement is a lifelong journey.",
+    "example_ka": "თვითგაუმჯობესება მთელი სიცოცხლის მოგზაურობაა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "transformation",
+    "georgian": "ტრანსფორმაცია",
+    "pronunciation": "/ˌtrænsfərˈmeɪʃən/",
+    "example_en": "Personal transformation takes time.",
+    "example_ka": "პიროვნული ტრანსფორმაცია დროს სჭირდება.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "change",
+    "georgian": "ცვლილება",
+    "pronunciation": "/tʃeɪndʒ/",
+    "example_en": "Change is the only constant.",
+    "example_ka": "ცვლილება ერთადერთი მუდმივი რამაა.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "evolution",
+    "georgian": "ევოლუცია",
+    "pronunciation": "/ˌiːvəˈluːʃən/",
+    "example_en": "Personal evolution never stops.",
+    "example_ka": "პიროვნული ევოლუცია არასდროს ჩერდება.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "breakthrough",
+    "georgian": "გარღვევა",
+    "pronunciation": "/ˈbreɪkθruː/",
+    "example_en": "Every breakthrough starts with a breakdown.",
+    "example_ka": "ყოველი გარღვევა დაშლით იწყება.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "mastery",
+    "georgian": "ოსტატობა",
+    "pronunciation": "/ˈmæstəri/",
+    "example_en": "Mastery requires 10,000 hours of practice.",
+    "example_ka": "ოსტატობას 10,000 საათი პრაქტიკა სჭირდება.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "expertise",
+    "georgian": "ექსპერტობა",
+    "pronunciation": "/ˌekspərˈtiːz/",
+    "example_en": "Develop expertise in your field.",
+    "example_ka": "შენს სფეროში ექსპერტობა განავითარე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "competence",
+    "georgian": "კომპეტენცია",
+    "pronunciation": "/ˈkɑːmpətəns/",
+    "example_en": "Build competence through practice.",
+    "example_ka": "პრაქტიკით კომპეტენცია ააშენე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "performance",
+    "georgian": "შესრულება",
+    "pronunciation": "/pərˈfɔːrməns/",
+    "example_en": "Focus on performance, not perfection.",
+    "example_ka": "შესრულებაზე ფოკუსირდი, არა სრულყოფილებაზე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "productivity",
+    "georgian": "პროდუქტიულობა",
+    "pronunciation": "/ˌprɑːdʌkˈtɪvəti/",
+    "example_en": "Measure productivity by results, not hours.",
+    "example_ka": "პროდუქტიულობას შედეგებით შეაფასე, არა საათებით.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "communication",
+    "georgian": "კომუნიკაცია",
+    "pronunciation": "/kəˌmjuːnəˈkeɪʃən/",
+    "example_en": "Good communication builds trust.",
+    "example_ka": "კარგი კომუნიკაცია ნდობას აშენებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "listening",
+    "georgian": "მოსმენა",
+    "pronunciation": "/ˈlɪsənɪŋ/",
+    "example_en": "Listening is more important than talking.",
+    "example_ka": "მოსმენა ლაპარაკზე მნიშვნელოვანია.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "leadership",
+    "georgian": "ლიდერობა",
+    "pronunciation": "/ˈliːdərʃɪp/",
+    "example_en": "Leadership is influence, not authority.",
+    "example_ka": "ლიდერობა გავლენაა, არა ავტორიტეტი.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "influence",
+    "georgian": "გავლენა",
+    "pronunciation": "/ˈɪnfluəns/",
+    "example_en": "Your influence shapes your environment.",
+    "example_ka": "შენი გავლენა გარემოს ჩამოუყალიბებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "charisma",
+    "georgian": "ქარიზმა",
+    "pronunciation": "/kəˈrɪzmə/",
+    "example_en": "Charisma can be developed with practice.",
+    "example_ka": "ქარიზმა პრაქტიკით შეიძლება განვითარდეს.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "integrity",
+    "georgian": "კეთილსინდისიერება",
+    "pronunciation": "/ɪnˈteɡrəti/",
+    "example_en": "Integrity is doing the right thing when no one is watching.",
+    "example_ka": "კეთილსინდისიერება არის სწორი საქმის კეთება, როცა არავინ გყურებს.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "honesty",
+    "georgian": "პატიოსნება",
+    "pronunciation": "/ˈɑːnəsti/",
+    "example_en": "Honesty is the best policy.",
+    "example_ka": "პატიოსნება საუკეთესო პოლიტიკაა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "authenticity",
+    "georgian": "ავთენტიკობა",
+    "pronunciation": "/ˌɔːθenˈtɪsəti/",
+    "example_en": "Authenticity attracts the right people.",
+    "example_ka": "ავთენტიკობა სწორ ადამიანებს იზიდავს.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "vulnerability",
+    "georgian": "მოწყვლადობა",
+    "pronunciation": "/ˌvʌlnərəˈbɪləti/",
+    "example_en": "Vulnerability is strength, not weakness.",
+    "example_ka": "მოწყვლადობა ძალაა, არა სისუსტე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "humility",
+    "georgian": "თავმდაბლობა",
+    "pronunciation": "/hjuːˈmɪləti/",
+    "example_en": "Humility is the foundation of wisdom.",
+    "example_ka": "თავმდაბლობა სიბრძნის საფუძველია.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "pride",
+    "georgian": "სიამაყე",
+    "pronunciation": "/praɪd/",
+    "example_en": "Take pride in your accomplishments.",
+    "example_ka": "შენი მიღწევებით სიამაყე გაუღე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "ego",
+    "georgian": "ეგო",
+    "pronunciation": "/ˈiːɡoʊ/",
+    "example_en": "Don't let ego block your growth.",
+    "example_ka": "ნუ მისცემ ეგოს შენი ზრდის შეფერხებას.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "arrogance",
+    "georgian": "მედიდური",
+    "pronunciation": "/ˈærəɡəns/",
+    "example_en": "Arrogance repels success.",
+    "example_ka": "მედიდურობა წარმატებას აბრკოლებს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "modesty",
+    "georgian": "მოკრძალება",
+    "pronunciation": "/ˈmɑːdəsti/",
+    "example_en": "Modesty is an attractive quality.",
+    "example_ka": "მოკრძალება მიმზიდველი თვისებაა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "responsibility",
+    "georgian": "პასუხისმგებლობა",
+    "pronunciation": "/rɪˌspɑːnsəˈbɪləti/",
+    "example_en": "Take full responsibility for your life.",
+    "example_ka": "შენს ცხოვრებაზე სრული პასუხისმგებლობა აიღე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "ownership",
+    "georgian": "მფლობელობა",
+    "pronunciation": "/ˈoʊnərʃɪp/",
+    "example_en": "Take ownership of your mistakes.",
+    "example_ka": "შენს შეცდომებზე მფლობელობა აიღე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "initiative",
+    "georgian": "ინიციატივა",
+    "pronunciation": "/ɪˈnɪʃətɪv/",
+    "example_en": "Take initiative in your career.",
+    "example_ka": "კარიერაში ინიციატივა აიღე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "proactive",
+    "georgian": "პროაქტიული",
+    "pronunciation": "/proʊˈæktɪv/",
+    "example_en": "Be proactive, not reactive.",
+    "example_ka": "იყავი პროაქტიული, არა რეაქტიული.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "reactive",
+    "georgian": "რეაქტიული",
+    "pronunciation": "/riˈæktɪv/",
+    "example_en": "Don't be reactive to others' emotions.",
+    "example_ka": "სხვების ემოციებზე რეაქტიული ნუ იქნები.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "emotional",
+    "georgian": "ემოციონალური",
+    "pronunciation": "/ɪˈmoʊʃənəl/",
+    "example_en": "Develop emotional intelligence.",
+    "example_ka": "ემოციონალური ინტელექტი განავითარე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "intelligence",
+    "georgian": "ინტელექტი",
+    "pronunciation": "/ɪnˈtelədʒəns/",
+    "example_en": "Intelligence is the ability to adapt.",
+    "example_ka": "ინტელექტი ადაპტაციის უნარია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "wisdom",
+    "georgian": "სიბრძნე",
+    "pronunciation": "/ˈwɪzdəm/",
+    "example_en": "Wisdom comes from experience and reflection.",
+    "example_ka": "სიბრძნე გამოცდილებიდან და ანარეკლისგან მოდის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "maturity",
+    "georgian": "სიმწიფე",
+    "pronunciation": "/məˈtʊrəti/",
+    "example_en": "Maturity is emotional stability.",
+    "example_ka": "სიმწიფე ემოციონალური სტაბილურობაა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "stability",
+    "georgian": "სტაბილურობა",
+    "pronunciation": "/stəˈbɪləti/",
+    "example_en": "Mental stability comes from inner work.",
+    "example_ka": "ფსიქიკური სტაბილურობა შინაგანი მუშაობიდან მოდის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "consistency",
+    "georgian": "თანმიმდევრულობა",
+    "pronunciation": "/kənˈsɪstənsi/",
+    "example_en": "Consistency in small actions creates big results.",
+    "example_ka": "პატარა მოქმედებების თანმიმდევრულობა დიდ შედეგებს ქმნის.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "persistence",
+    "georgian": "დაჟინება",
+    "pronunciation": "/pərˈsɪstəns/",
+    "example_en": "Persistence overcomes resistance.",
+    "example_ka": "დაჟინება წინააღმდეგობას იძლევა.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "endurance",
+    "georgian": "გამძლეობა",
+    "pronunciation": "/ɪnˈdʊrəns/",
+    "example_en": "Mental endurance is as important as physical.",
+    "example_ka": "ფსიქიკური გამძლეობა ფიზიკურისებრ მნიშვნელოვანია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "stamina",
+    "georgian": "სტამინა",
+    "pronunciation": "/ˈstæmənə/",
+    "example_en": "Build mental stamina through challenges.",
+    "example_ka": "გამოწვევებით ფსიქიკური სტამინა ააშენე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "tenacity",
+    "georgian": "ერთგულება",
+    "pronunciation": "/təˈnæsəti/",
+    "example_en": "Tenacity is the key to breakthrough.",
+    "example_ka": "ერთგულება გარღვევის გასაღებია.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "legacy",
+    "georgian": "მემკვიდრეობა",
+    "pronunciation": "/ˈleɡəsi/",
+    "example_en": "Build a positive legacy.",
+    "example_ka": "დადებითი მემკვიდრეობა ააშენე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "impact",
+    "georgian": "გავლენა",
+    "pronunciation": "/ˈɪmpækt/",
+    "example_en": "Make a positive impact on others.",
+    "example_ka": "სხვებზე დადებითი გავლენა მოახდინე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "contribution",
+    "georgian": "წვლილი",
+    "pronunciation": "/ˌkɑːntrəˈbjuːʃən/",
+    "example_en": "Every contribution matters.",
+    "example_ka": "ყველა წვლილი მნიშვნელოვანია.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "service",
+    "georgian": "სერვისი",
+    "pronunciation": "/ˈsɜːrvəs/",
+    "example_en": "Find ways to be of service.",
+    "example_ka": "სერვისის გზები იპოვე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "altruism",
+    "georgian": "ალტრუიზმი",
+    "pronunciation": "/ˈæltruːɪzəm/",
+    "example_en": "Practice altruism daily.",
+    "example_ka": "ყოველდღე ალტრუიზმს ივარჯიშე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "gratitude",
+    "georgian": "მადლიერება",
+    "pronunciation": "/ˈɡrætətuːd/",
+    "example_en": "Express gratitude every day.",
+    "example_ka": "ყოველდღე მადლიერება გამოხატე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "appreciation",
+    "georgian": "შეფასება",
+    "pronunciation": "/əˌpriːʃiˈeɪʃən/",
+    "example_en": "Show appreciation for small things.",
+    "example_ka": "პატარა რამეებისთვისაც შეფასება გამოიჩინე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "blessing",
+    "georgian": "კურთხევა",
+    "pronunciation": "/ˈblesɪŋ/",
+    "example_en": "Count your blessings.",
+    "example_ka": "შენი კურთხევები ჩამოთვალე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "fulfillment",
+    "georgian": "შევსება",
+    "pronunciation": "/fʊlˈfɪlmənt/",
+    "example_en": "Seek personal fulfillment.",
+    "example_ka": "პიროვნული შევსება მოძებნე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "satisfaction",
+    "georgian": "კმაყოფილება",
+    "pronunciation": "/ˌsætəsˈfækʃən/",
+    "example_en": "Find satisfaction in your work.",
+    "example_ka": "შენს სამუშაოში კმაყოფილება იპოვე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "contentment",
+    "georgian": "კმაყოფილება",
+    "pronunciation": "/kənˈtentmənt/",
+    "example_en": "True contentment comes from within.",
+    "example_ka": "ნამდვილი კმაყოფილება შიგნიდან მოდის.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "happiness",
+    "georgian": "ბედნიერება",
+    "pronunciation": "/ˈhæpɪnəs/",
+    "example_en": "Happiness is a choice.",
+    "example_ka": "ბედნიერება არჩევანია.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "joy",
+    "georgian": "სიხარული",
+    "pronunciation": "/dʒɔɪ/",
+    "example_en": "Find joy in simple moments.",
+    "example_ka": "უბრალო მომენტებში სიხარული იპოვე.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "pleasure",
+    "georgian": "სიამოვნება",
+    "pronunciation": "/ˈpleʒər/",
+    "example_en": "Take pleasure in your achievements.",
+    "example_ka": "შენი მიღწევებით სიამოვნება იღე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "bliss",
+    "georgian": "ნეტარება",
+    "pronunciation": "/blɪs/",
+    "example_en": "Meditation can bring inner bliss.",
+    "example_ka": "მედიტაცია შინაგან ნეტარებას მოაქვს.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "serenity",
+    "georgian": "სიმშვიდე",
+    "pronunciation": "/səˈrenəti/",
+    "example_en": "Find serenity in nature.",
+    "example_ka": "ბუნებაში სიმშვიდე იპოვე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "tranquility",
+    "georgian": "სიწყნარე",
+    "pronunciation": "/træŋˈkwɪləti/",
+    "example_en": "Create tranquility in your home.",
+    "example_ka": "შენს სახლში სიწყნარე შექმენი.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "harmony",
+    "georgian": "ჰარმონია",
+    "pronunciation": "/ˈhɑːrməni/",
+    "example_en": "Live in harmony with others.",
+    "example_ka": "სხვებთან ჰარმონიაში იცხოვრე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "unity",
+    "georgian": "ერთობა",
+    "pronunciation": "/ˈjuːnəti/",
+    "example_en": "Unity brings strength.",
+    "example_ka": "ერთობა ძალას მოაქვს.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "synergy",
+    "georgian": "სინერგია",
+    "pronunciation": "/ˈsɪnərdʒi/",
+    "example_en": "Create synergy in your team.",
+    "example_ka": "შენს გუნდში სინერგია შექმენი.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "effectiveness",
+    "georgian": "ეფექტიანობა",
+    "pronunciation": "/ɪˈfektɪvnəs/",
+    "example_en": "Focus on effectiveness over efficiency.",
+    "example_ka": "ეფექტიანობაზე ფოკუსირდი ეფექტურობაზე კი არა.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "optimization",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˌɑːptəməˈzeɪʃən/",
+    "example_en": "Work on life optimization.",
+    "example_ka": "ცხოვრების ოპტიმიზაციაზე იმუშავე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "streamline",
+    "georgian": "გამარტივება",
+    "pronunciation": "/ˈstriːmlaɪn/",
+    "example_en": "Streamline your daily routine.",
+    "example_ka": "შენი ყოველდღიური რუტინა გაამარტივე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "simplify",
+    "georgian": "გამარტივება",
+    "pronunciation": "/ˈsɪmpləfaɪ/",
+    "example_en": "Simplify your life.",
+    "example_ka": "შენი ცხოვრება გაამარტივე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "minimize",
+    "georgian": "მინიმიზაცია",
+    "pronunciation": "/ˈmɪnəmaɪz/",
+    "example_en": "Minimize distractions.",
+    "example_ka": "ყურადღების გაფანტვები მინიმიზირე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "maximize",
+    "georgian": "მაქსიმიზაცია",
+    "pronunciation": "/ˈmæksəmaɪz/",
+    "example_en": "Maximize your potential.",
+    "example_ka": "შენი პოტენციალი მაქსიმიზირე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "leverage",
+    "georgian": "სარგებლობა",
+    "pronunciation": "/ˈlevərɪdʒ/",
+    "example_en": "Leverage your strengths.",
+    "example_ka": "შენი ძლიერი მხარეებით ისარგებლე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "capitalize",
+    "georgian": "გამოყენება",
+    "pronunciation": "/ˈkæpətəlaɪz/",
+    "example_en": "Capitalize on opportunities.",
+    "example_ka": "შესაძლებლობებით ისარგებლე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "utilize",
+    "georgian": "გამოყენება",
+    "pronunciation": "/ˈjuːtəlaɪz/",
+    "example_en": "Utilize your time wisely.",
+    "example_ka": "შენი დრო ბრძნულად გამოიყენე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "harness",
+    "georgian": "გამოყენება",
+    "pronunciation": "/ˈhɑːrnəs/",
+    "example_en": "Harness your inner power.",
+    "example_ka": "შენი შინაგანი ძალა გამოიყენე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "cultivate",
+    "georgian": "კულტივაცია",
+    "pronunciation": "/ˈkʌltəveɪt/",
+    "example_en": "Cultivate good relationships.",
+    "example_ka": "კარგი ურთიერთობები კულტივირე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "nurture",
+    "georgian": "მოვლა",
+    "pronunciation": "/ˈnɜːrtʃər/",
+    "example_en": "Nurture your talents.",
+    "example_ka": "შენი ნიჭები მოუვლიე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "foster",
+    "georgian": "ხელშეწყობა",
+    "pronunciation": "/ˈfɔːstər/",
+    "example_en": "Foster positive thinking.",
+    "example_ka": "დადებით ფიქრს ხელი შეუწყე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "develop",
+    "georgian": "განვითარება",
+    "pronunciation": "/dɪˈveləp/",
+    "example_en": "Develop new skills.",
+    "example_ka": "ახალი უნარები განავითარე.",
+    "category": "self-improvement",
+    "level": "beginner"
+  },
+  {
+    "english": "enhance",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/ɪnˈhæns/",
+    "example_en": "Enhance your abilities.",
+    "example_ka": "შენი შესაძლებლობები გააუმჯობესე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "refine",
+    "georgian": "დახვეწა",
+    "pronunciation": "/rɪˈfaɪn/",
+    "example_en": "Refine your approach.",
+    "example_ka": "შენი მიდგომა დახვეწე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "polish",
+    "georgian": "გაპრიალება",
+    "pronunciation": "/ˈpɑːlɪʃ/",
+    "example_en": "Polish your presentation skills.",
+    "example_ka": "პრეზენტაციის უნარები გაუპრიალე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "perfect",
+    "georgian": "სრულყოფა",
+    "pronunciation": "/ˈpɜːrfɪkt/",
+    "example_en": "Perfect your craft.",
+    "example_ka": "შენი ხელოვნება სრულყავი.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "master",
+    "georgian": "ოსტატობა",
+    "pronunciation": "/ˈmæstər/",
+    "example_en": "Master your emotions.",
+    "example_ka": "შენს ემოციებს დაეუფლე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "conquer",
+    "georgian": "დაპყრობა",
+    "pronunciation": "/ˈkɑːŋkər/",
+    "example_en": "Conquer your fears.",
+    "example_ka": "შენს შიშებს დაეუფლე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "overcome",
+    "georgian": "გადალახვა",
+    "pronunciation": "/ˌoʊvərˈkʌm/",
+    "example_en": "Overcome every obstacle.",
+    "example_ka": "ყველა დაბრკოლება გადალახე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "surpass",
+    "georgian": "გადაჭარბება",
+    "pronunciation": "/sərˈpæs/",
+    "example_en": "Surpass your own expectations.",
+    "example_ka": "საკუთარ მოლოდინებს გადააჭარბე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "exceed",
+    "georgian": "გადაჭარბება",
+    "pronunciation": "/ɪkˈsiːd/",
+    "example_en": "Exceed your limits.",
+    "example_ka": "შენს შეზღუდვებს გადააჭარბე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "transcend",
+    "georgian": "გადალახვა",
+    "pronunciation": "/trænˈsend/",
+    "example_en": "Transcend your current state.",
+    "example_ka": "შენი ამჟამინდელი მდგომარეობა გადალახე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "elevate",
+    "georgian": "ამაღლება",
+    "pronunciation": "/ˈeləveɪt/",
+    "example_en": "Elevate your thinking.",
+    "example_ka": "შენი ფიქრი აამაღლე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "upgrade",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpɡreɪd/",
+    "example_en": "Upgrade your mindset.",
+    "example_ka": "შენი აზროვნება განაახლე.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "evolve",
+    "georgian": "ევოლუცია",
+    "pronunciation": "/ɪˈvɑːlv/",
+    "example_en": "Continue to evolve.",
+    "example_ka": "ევოლუციას განაგრძე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "transform",
+    "georgian": "ტრანსფორმაცია",
+    "pronunciation": "/trænsˈfɔːrm/",
+    "example_en": "Transform your life completely.",
+    "example_ka": "შენი ცხოვრება სრულად გარდაქმენი.",
+    "category": "self-improvement",
+    "level": "intermediate"
+  },
+  {
+    "english": "revolutionize",
+    "georgian": "რევოლუცია",
+    "pronunciation": "/ˌrevəˈluːʃənaɪz/",
+    "example_en": "Revolutionize your approach.",
+    "example_ka": "შენი მიდგომა რევოლუციურად შეცვალე.",
+    "category": "self-improvement",
+    "level": "advanced"
+  },
+  {
+    "english": "reinvent",
+    "georgian": "ხელახალი გამოგონება",
+    "pronunciation": "/ˌriːɪnˈvent/",
+    "example_en": "Reinvent yourself constantly.",
+    "example_ka": "მუდმივად ხელახლა გამოიგონე თავი.",
+    "category": "self-improvement",
+    "level": "advanced"
+  }
 ]

@@ -1,27 +1,1802 @@
 [
-  {"english": "Camera", "georgian": "კამერა", "pronunciation": "/ˈkæmərə/", "example_en": "I bought a new camera for my trip.", "example_ka": "მოგზაურობისთვის ახალი კამერა ვიყიდე.", "category": "photography", "level": "A1"},
-  {"english": "Photo", "georgian": "ფოტო", "pronunciation": "/ˈfoʊtoʊ/", "example_en": "Can you take a photo of us?", "example_ka": "შეგიძლია ჩვენი ფოტო გადაიღო?", "category": "photography", "level": "A1"},
-  {"english": "Selfie", "georgian": "სელფი", "pronunciation": "/ˈsɛlfi/", "example_en": "Let's take a selfie together.", "example_ka": "ერთად სელფი გადავიღოთ.", "category": "photography", "level": "A1"},
-  {"english": "Flash", "georgian": "ფლეში", "pronunciation": "/flæʃ/", "example_en": "Turn off the flash, it's too bright.", "example_ka": "ფლეში გამორთე, ძალიან ანათებს.", "category": "photography", "level": "A2"},
-  {"english": "Lens", "georgian": "ლინზა / ობიექტივი", "pronunciation": "/lɛnz/", "example_en": "This lens is great for portraits.", "example_ka": "ეს ობიექტივი პორტრეტებისთვის შესანიშნავია.", "category": "photography", "level": "B1"},
-  {"english": "Focus", "georgian": "ფოკუსი", "pronunciation": "/ˈfoʊkəs/", "example_en": "The photo is out of focus.", "example_ka": "ფოტო ფოკუსიდან არის ამოსული.", "category": "photography", "level": "A2"},
-  {"english": "Zoom", "georgian": "ზუმი / მიახლოება", "pronunciation": "/zuːm/", "example_en": "Zoom in to see the details.", "example_ka": "დეტალების სანახავად მიაახლოვე.", "category": "photography", "level": "A2"},
-  {"english": "Filter", "georgian": "ფილტრი", "pronunciation": "/ˈfɪltər/", "example_en": "Which filter did you use on this photo?", "example_ka": "ამ ფოტოზე რომელი ფილტრი გამოიყენე?", "category": "photography", "level": "A2"},
-  {"english": "Edit", "georgian": "რედაქტირება", "pronunciation": "/ˈɛdɪt/", "example_en": "I need to edit this photo before posting.", "example_ka": "ეს ფოტო რედაქტირება სჭირდება გამოქვეყნებამდე.", "category": "photography", "level": "A2"},
-  {"english": "Blur", "georgian": "ბუნდოვანი / გაბუნდოვანება", "pronunciation": "/blɜːr/", "example_en": "The background blur looks professional.", "example_ka": "ფონის გაბუნდოვანება პროფესიონალურად გამოიყურება.", "category": "photography", "level": "B1"},
-  {"english": "Portrait", "georgian": "პორტრეტი", "pronunciation": "/ˈpɔːrtrɪt/", "example_en": "She takes amazing portrait photos.", "example_ka": "ის საოცარ პორტრეტულ ფოტოებს იღებს.", "category": "photography", "level": "A2"},
-  {"english": "Landscape", "georgian": "პეიზაჟი", "pronunciation": "/ˈlændskeɪp/", "example_en": "Georgia has beautiful landscapes to photograph.", "example_ka": "საქართველოში ფოტოგრაფირებისთვის ულამაზესი პეიზაჟებია.", "category": "photography", "level": "A2"},
-  {"english": "Tripod", "georgian": "შტატივი", "pronunciation": "/ˈtraɪpɒd/", "example_en": "Use a tripod for night photography.", "example_ka": "ღამის ფოტოგრაფიისთვის შტატივი გამოიყენე.", "category": "photography", "level": "B1"},
-  {"english": "Shutter", "georgian": "შატერი / ჩამკეტი", "pronunciation": "/ˈʃʌtər/", "example_en": "A fast shutter speed freezes motion.", "example_ka": "სწრაფი ჩამკეტის სიჩქარე მოძრაობას აფიქსირებს.", "category": "photography", "level": "B1"},
-  {"english": "Exposure", "georgian": "ექსპოზიცია", "pronunciation": "/ɪkˈspoʊʒər/", "example_en": "The exposure is too bright, lower it.", "example_ka": "ექსპოზიცია ძალიან ნათელია, შეამცირე.", "category": "photography", "level": "B1"},
-  {"english": "Resolution", "georgian": "გარჩევადობა", "pronunciation": "/ˌrɛzəˈluːʃən/", "example_en": "This photo has high resolution.", "example_ka": "ეს ფოტო მაღალი გარჩევადობისაა.", "category": "photography", "level": "B1"},
-  {"english": "Crop", "georgian": "ამოჭრა", "pronunciation": "/krɒp/", "example_en": "Crop the photo to remove the background.", "example_ka": "ფონის მოსაშორებლად ფოტო ამოჭერი.", "category": "photography", "level": "A2"},
-  {"english": "Angle", "georgian": "კუთხე", "pronunciation": "/ˈæŋɡəl/", "example_en": "Try shooting from a low angle.", "example_ka": "დაბალი კუთხიდან სცადე გადაღება.", "category": "photography", "level": "A2"},
-  {"english": "Lighting", "georgian": "განათება", "pronunciation": "/ˈlaɪtɪŋ/", "example_en": "Good lighting makes all the difference.", "example_ka": "კარგი განათება ყველაფერს ცვლის.", "category": "photography", "level": "A2"},
-  {"english": "Shoot", "georgian": "გადაღება", "pronunciation": "/ʃuːt/", "example_en": "Let's go shoot some photos downtown.", "example_ka": "წავიდეთ ცენტრში ფოტოები გადავიღოთ.", "category": "photography", "level": "A2"},
-  {"english": "Gallery", "georgian": "გალერეა", "pronunciation": "/ˈɡæləri/", "example_en": "Check my photo gallery on Instagram.", "example_ka": "ჩემი ფოტო გალერეა ინსტაგრამზე ნახე.", "category": "photography", "level": "A2"},
-  {"english": "Watermark", "georgian": "წყლის ნიშანი", "pronunciation": "/ˈwɔːtərmɑːrk/", "example_en": "Add a watermark to protect your photos.", "example_ka": "ფოტოების დასაცავად წყლის ნიშანი დაამატე.", "category": "photography", "level": "B1"},
-  {"english": "Background", "georgian": "ფონი", "pronunciation": "/ˈbækɡraʊnd/", "example_en": "Find a clean background for the photo.", "example_ka": "ფოტოსთვის სუფთა ფონი იპოვე.", "category": "photography", "level": "A2"},
-  {"english": "Snapshot", "georgian": "სნეპშოტი / სწრაფი ფოტო", "pronunciation": "/ˈsnæpʃɒt/", "example_en": "I took a quick snapshot of the sunset.", "example_ka": "მზის ჩასვლის სწრაფი ფოტო გადავიღე.", "category": "photography", "level": "A2"},
-  {"english": "Brightness", "georgian": "სიკაშკაშე", "pronunciation": "/ˈbraɪtnəs/", "example_en": "Increase the brightness a little.", "example_ka": "სიკაშკაშე ცოტა გაზარდე.", "category": "photography", "level": "A2"}
+  {
+    "english": "Camera",
+    "georgian": "კამერა",
+    "pronunciation": "/ˈkæmərə/",
+    "example_en": "I bought a new camera for my trip.",
+    "example_ka": "მოგზაურობისთვის ახალი კამერა ვიყიდე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "Photo",
+    "georgian": "ფოტო",
+    "pronunciation": "/ˈfoʊtoʊ/",
+    "example_en": "Can you take a photo of us?",
+    "example_ka": "შეგიძლია ჩვენი ფოტო გადაიღო?",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "Selfie",
+    "georgian": "სელფი",
+    "pronunciation": "/ˈsɛlfi/",
+    "example_en": "Let's take a selfie together.",
+    "example_ka": "ერთად სელფი გადავიღოთ.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "Flash",
+    "georgian": "ფლეში",
+    "pronunciation": "/flæʃ/",
+    "example_en": "Turn off the flash, it's too bright.",
+    "example_ka": "ფლეში გამორთე, ძალიან ანათებს.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Lens",
+    "georgian": "ლინზა / ობიექტივი",
+    "pronunciation": "/lɛnz/",
+    "example_en": "This lens is great for portraits.",
+    "example_ka": "ეს ობიექტივი პორტრეტებისთვის შესანიშნავია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "Focus",
+    "georgian": "ფოკუსი",
+    "pronunciation": "/ˈfoʊkəs/",
+    "example_en": "The photo is out of focus.",
+    "example_ka": "ფოტო ფოკუსიდან არის ამოსული.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Zoom",
+    "georgian": "ზუმი / მიახლოება",
+    "pronunciation": "/zuːm/",
+    "example_en": "Zoom in to see the details.",
+    "example_ka": "დეტალების სანახავად მიაახლოვე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Which filter did you use on this photo?",
+    "example_ka": "ამ ფოტოზე რომელი ფილტრი გამოიყენე?",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Edit",
+    "georgian": "რედაქტირება",
+    "pronunciation": "/ˈɛdɪt/",
+    "example_en": "I need to edit this photo before posting.",
+    "example_ka": "ეს ფოტო რედაქტირება სჭირდება გამოქვეყნებამდე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Blur",
+    "georgian": "ბუნდოვანი / გაბუნდოვანება",
+    "pronunciation": "/blɜːr/",
+    "example_en": "The background blur looks professional.",
+    "example_ka": "ფონის გაბუნდოვანება პროფესიონალურად გამოიყურება.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "Portrait",
+    "georgian": "პორტრეტი",
+    "pronunciation": "/ˈpɔːrtrɪt/",
+    "example_en": "She takes amazing portrait photos.",
+    "example_ka": "ის საოცარ პორტრეტულ ფოტოებს იღებს.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Landscape",
+    "georgian": "პეიზაჟი",
+    "pronunciation": "/ˈlændskeɪp/",
+    "example_en": "Georgia has beautiful landscapes to photograph.",
+    "example_ka": "საქართველოში ფოტოგრაფირებისთვის ულამაზესი პეიზაჟებია.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Tripod",
+    "georgian": "შტატივი",
+    "pronunciation": "/ˈtraɪpɒd/",
+    "example_en": "Use a tripod for night photography.",
+    "example_ka": "ღამის ფოტოგრაფიისთვის შტატივი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "Shutter",
+    "georgian": "შატერი / ჩამკეტი",
+    "pronunciation": "/ˈʃʌtər/",
+    "example_en": "A fast shutter speed freezes motion.",
+    "example_ka": "სწრაფი ჩამკეტის სიჩქარე მოძრაობას აფიქსირებს.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "Exposure",
+    "georgian": "ექსპოზიცია",
+    "pronunciation": "/ɪkˈspoʊʒər/",
+    "example_en": "The exposure is too bright, lower it.",
+    "example_ka": "ექსპოზიცია ძალიან ნათელია, შეამცირე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "Resolution",
+    "georgian": "გარჩევადობა",
+    "pronunciation": "/ˌrɛzəˈluːʃən/",
+    "example_en": "This photo has high resolution.",
+    "example_ka": "ეს ფოტო მაღალი გარჩევადობისაა.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "Crop",
+    "georgian": "ამოჭრა",
+    "pronunciation": "/krɒp/",
+    "example_en": "Crop the photo to remove the background.",
+    "example_ka": "ფონის მოსაშორებლად ფოტო ამოჭერი.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Angle",
+    "georgian": "კუთხე",
+    "pronunciation": "/ˈæŋɡəl/",
+    "example_en": "Try shooting from a low angle.",
+    "example_ka": "დაბალი კუთხიდან სცადე გადაღება.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Lighting",
+    "georgian": "განათება",
+    "pronunciation": "/ˈlaɪtɪŋ/",
+    "example_en": "Good lighting makes all the difference.",
+    "example_ka": "კარგი განათება ყველაფერს ცვლის.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Shoot",
+    "georgian": "გადაღება",
+    "pronunciation": "/ʃuːt/",
+    "example_en": "Let's go shoot some photos downtown.",
+    "example_ka": "წავიდეთ ცენტრში ფოტოები გადავიღოთ.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Gallery",
+    "georgian": "გალერეა",
+    "pronunciation": "/ˈɡæləri/",
+    "example_en": "Check my photo gallery on Instagram.",
+    "example_ka": "ჩემი ფოტო გალერეა ინსტაგრამზე ნახე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Watermark",
+    "georgian": "წყლის ნიშანი",
+    "pronunciation": "/ˈwɔːtərmɑːrk/",
+    "example_en": "Add a watermark to protect your photos.",
+    "example_ka": "ფოტოების დასაცავად წყლის ნიშანი დაამატე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "Background",
+    "georgian": "ფონი",
+    "pronunciation": "/ˈbækɡraʊnd/",
+    "example_en": "Find a clean background for the photo.",
+    "example_ka": "ფოტოსთვის სუფთა ფონი იპოვე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Snapshot",
+    "georgian": "სნეპშოტი / სწრაფი ფოტო",
+    "pronunciation": "/ˈsnæpʃɒt/",
+    "example_en": "I took a quick snapshot of the sunset.",
+    "example_ka": "მზის ჩასვლის სწრაფი ფოტო გადავიღე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "Brightness",
+    "georgian": "სიკაშკაშე",
+    "pronunciation": "/ˈbraɪtnəs/",
+    "example_en": "Increase the brightness a little.",
+    "example_ka": "სიკაშკაშე ცოტა გაზარდე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "image",
+    "georgian": "სურათი",
+    "pronunciation": "/ˈɪmɪdʒ/",
+    "example_en": "The image is clear.",
+    "example_ka": "სურათი ნათელია.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "picture",
+    "georgian": "სურათი",
+    "pronunciation": "/ˈpɪktʃər/",
+    "example_en": "Take a picture.",
+    "example_ka": "სურათი გადაიღე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "frame",
+    "georgian": "ჩარჩო",
+    "pronunciation": "/freɪm/",
+    "example_en": "Put the photo in a frame.",
+    "example_ka": "სურათი ჩარჩოში ჩადე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "digital",
+    "georgian": "ციფრული",
+    "pronunciation": "/ˈdɪdʒɪtəl/",
+    "example_en": "I use a digital camera.",
+    "example_ka": "ციფრულ კამერას ვიყენებ.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "analog",
+    "georgian": "ანალოგური",
+    "pronunciation": "/ˈænəlɒɡ/",
+    "example_en": "Analog cameras use film.",
+    "example_ka": "ანალოგური კამერები ფილმს იყენებენ.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "film",
+    "georgian": "ფილმი",
+    "pronunciation": "/fɪlm/",
+    "example_en": "Load the film carefully.",
+    "example_ka": "ფილმი ფრთხილად ჩადე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "negative",
+    "georgian": "ნეგატივი",
+    "pronunciation": "/ˈneɡətɪv/",
+    "example_en": "Keep the negatives safe.",
+    "example_ka": "ნეგატივები უსაფრთხოდ შეინახე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "print",
+    "georgian": "ბეჭდვა",
+    "pronunciation": "/prɪnt/",
+    "example_en": "Print the photo.",
+    "example_ka": "სურათი დაბეჭდე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "pixel",
+    "georgian": "პიქსელი",
+    "pronunciation": "/ˈpɪksəl/",
+    "example_en": "The image has millions of pixels.",
+    "example_ka": "სურათს მილიონობით პიქსელი აქვს.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "megapixel",
+    "georgian": "მეგაპიქსელი",
+    "pronunciation": "/ˈmeɡəpɪksəl/",
+    "example_en": "My camera is 50 megapixels.",
+    "example_ka": "ჩემი კამერა 50 მეგაპიქსელიანია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "aperture",
+    "georgian": "დიაფრაგმა",
+    "pronunciation": "/ˈæpərtʃər/",
+    "example_en": "Open the aperture wider.",
+    "example_ka": "დიაფრაგმა უფრო ფართოდ გახსენი.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "iso",
+    "georgian": "აისო",
+    "pronunciation": "/ˈaɪsoʊ/",
+    "example_en": "Increase the ISO in low light.",
+    "example_ka": "დაბალ შუქზე აისო გაზარდე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "depth",
+    "georgian": "სიღრმე",
+    "pronunciation": "/depθ/",
+    "example_en": "Adjust the depth of field.",
+    "example_ka": "სიღრმის ველი დაარეგულირე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "contrast",
+    "georgian": "კონტრასტი",
+    "pronunciation": "/ˈkɒntræst/",
+    "example_en": "Increase the contrast.",
+    "example_ka": "კონტრასტი გაზარდე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "saturation",
+    "georgian": "გაჯერება",
+    "pronunciation": "/ˌsætʃəˈreɪʃən/",
+    "example_en": "Lower the saturation.",
+    "example_ka": "გაჯერება შეამცირე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "hue",
+    "georgian": "ტონი",
+    "pronunciation": "/hjuː/",
+    "example_en": "Change the hue.",
+    "example_ka": "ტონი შეცვალე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "shadow",
+    "georgian": "ჩრდილი",
+    "pronunciation": "/ˈʃædoʊ/",
+    "example_en": "The shadow adds depth.",
+    "example_ka": "ჩრდილი სიღრმეს ამატებს.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "highlight",
+    "georgian": "ჰაილაითი",
+    "pronunciation": "/ˈhaɪlaɪt/",
+    "example_en": "Reduce the highlights.",
+    "example_ka": "ჰაილაითები შეამცირე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "overexposed",
+    "georgian": "გადანათებული",
+    "pronunciation": "/ˌoʊvərɪkˈspoʊzd/",
+    "example_en": "The photo is overexposed.",
+    "example_ka": "ფოტო გადანათებულია.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "underexposed",
+    "georgian": "არასაკმარისად განათებული",
+    "pronunciation": "/ˌʌndərɪkˈspoʊzd/",
+    "example_en": "This shot is underexposed.",
+    "example_ka": "ეს კადრი არასაკმარისად არის განათებული.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "vignette",
+    "georgian": "ვინიეტი",
+    "pronunciation": "/vɪnˈjet/",
+    "example_en": "Add a vignette effect.",
+    "example_ka": "ვინიეტის ეფექტი დაამატე.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "monochrome",
+    "georgian": "მონოქრომული",
+    "pronunciation": "/ˈmɒnəkroʊm/",
+    "example_en": "The monochrome photo looks classic.",
+    "example_ka": "მონოქრომული ფოტო კლასიკურად გამოიყურება.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "grayscale",
+    "georgian": "ნაცრისფერი",
+    "pronunciation": "/ˈɡreɪskeɪl/",
+    "example_en": "Convert to grayscale.",
+    "example_ka": "ნაცრისფერ გამაში გადაიყვანე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "sepia",
+    "georgian": "სეპია",
+    "pronunciation": "/ˈsiːpiə/",
+    "example_en": "The sepia tone looks vintage.",
+    "example_ka": "სეპიის ტონი ვინტაჟურად გამოიყურება.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "panorama",
+    "georgian": "პანორამა",
+    "pronunciation": "/ˌpænəˈræmə/",
+    "example_en": "Take a panorama of the mountains.",
+    "example_ka": "მთების პანორამა გადაიღე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "macro",
+    "georgian": "მაკრო",
+    "pronunciation": "/ˈmækroʊ/",
+    "example_en": "Use macro mode for close-ups.",
+    "example_ka": "ახლო კადრებისთვის მაკრო რეჟიმი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "wide",
+    "georgian": "ფართო",
+    "pronunciation": "/waɪd/",
+    "example_en": "Use a wide-angle lens.",
+    "example_ka": "ფართოკუთხა ლინზა გამოიყენე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "telephoto",
+    "georgian": "ტელეფოტო",
+    "pronunciation": "/ˌteləˈfoʊtoʊ/",
+    "example_en": "The telephoto lens is heavy.",
+    "example_ka": "ტელეფოტო ლინზა მძიმეა.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "fisheye",
+    "georgian": "თევზის თვალი",
+    "pronunciation": "/ˈfɪʃaɪ/",
+    "example_en": "The fisheye lens distorts the image.",
+    "example_ka": "თევზის თვალის ლინზა სურათს ამახინჯებს.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "prime",
+    "georgian": "პრაიმ",
+    "pronunciation": "/praɪm/",
+    "example_en": "I prefer prime lenses.",
+    "example_ka": "პრაიმ ლინზებს ვანიჭებ უპირატესობას.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "viewfinder",
+    "georgian": "ხედმეძიებელი",
+    "pronunciation": "/ˈvjuːfaɪndər/",
+    "example_en": "Look through the viewfinder.",
+    "example_ka": "ხედმეძიებელში ჩახედე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "sensor",
+    "georgian": "სენსორი",
+    "pronunciation": "/ˈsensər/",
+    "example_en": "The sensor captures light.",
+    "example_ka": "სენსორი შუქს იჭერს.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "stabilizer",
+    "georgian": "სტაბილიზატორი",
+    "pronunciation": "/ˈsteɪbəlaɪzər/",
+    "example_en": "Use the image stabilizer.",
+    "example_ka": "სურათის სტაბილიზატორი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "timer",
+    "georgian": "ტაიმერი",
+    "pronunciation": "/ˈtaɪmər/",
+    "example_en": "Set the timer for ten seconds.",
+    "example_ka": "ტაიმერი ათ წამზე დააყენე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "burst",
+    "georgian": "სერია",
+    "pronunciation": "/bɜːrst/",
+    "example_en": "Use burst mode for action shots.",
+    "example_ka": "მოქმედების კადრებისთვის სერიული რეჟიმი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "raw",
+    "georgian": "ნედლი",
+    "pronunciation": "/rɔː/",
+    "example_en": "Shoot in RAW format.",
+    "example_ka": "RAW ფორმატში გადაიღე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "jpeg",
+    "georgian": "ჯეიპეგი",
+    "pronunciation": "/ˈdʒeɪpeɡ/",
+    "example_en": "Save it as JPEG.",
+    "example_ka": "JPEG-ად შეინახე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "file",
+    "georgian": "ფაილი",
+    "pronunciation": "/faɪl/",
+    "example_en": "The file is too large.",
+    "example_ka": "ფაილი ძალიან დიდია.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ˈʌploʊd/",
+    "example_en": "Upload the photos.",
+    "example_ka": "ფოტოები ატვირთე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the images.",
+    "example_ka": "სურათები ჩამოტვირთე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "cloud",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/klaʊd/",
+    "example_en": "Store photos in the cloud.",
+    "example_ka": "ფოტოები ღრუბელში შეინახე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "storage",
+    "georgian": "მეხსიერება",
+    "pronunciation": "/ˈstɔːrɪdʒ/",
+    "example_en": "I'm running out of storage.",
+    "example_ka": "მეხსიერება მეწურება.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "memory",
+    "georgian": "მეხსიერება",
+    "pronunciation": "/ˈmeməri/",
+    "example_en": "Insert the memory card.",
+    "example_ka": "მეხსიერების ბარათი ჩადე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "battery",
+    "georgian": "ბატარეა",
+    "pronunciation": "/ˈbætəri/",
+    "example_en": "The battery is low.",
+    "example_ka": "ბატარეა დაბალია.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "charger",
+    "georgian": "დამტენი",
+    "pronunciation": "/ˈtʃɑːrdʒər/",
+    "example_en": "Bring the camera charger.",
+    "example_ka": "კამერის დამტენი წამოიღე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "strap",
+    "georgian": "თასმა",
+    "pronunciation": "/stræp/",
+    "example_en": "Put on the camera strap.",
+    "example_ka": "კამერის თასმა გადაიკიდე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "bag",
+    "georgian": "ჩანთა",
+    "pronunciation": "/bæɡ/",
+    "example_en": "Put the camera in the bag.",
+    "example_ka": "კამერა ჩანთაში ჩადე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "case",
+    "georgian": "ქეისი",
+    "pronunciation": "/keɪs/",
+    "example_en": "The lens case protects it.",
+    "example_ka": "ლინზის ქეისი იცავს მას.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "studio",
+    "georgian": "სტუდია",
+    "pronunciation": "/ˈstjuːdioʊ/",
+    "example_en": "We shot in a studio.",
+    "example_ka": "სტუდიაში გადავიღეთ.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "outdoor",
+    "georgian": "გარეთ",
+    "pronunciation": "/ˈaʊtdɔːr/",
+    "example_en": "I prefer outdoor photography.",
+    "example_ka": "გარეთ ფოტოგრაფიას ვანიჭებ უპირატესობას.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "indoor",
+    "georgian": "შიდა",
+    "pronunciation": "/ˈɪndɔːr/",
+    "example_en": "Indoor lighting is tricky.",
+    "example_ka": "შიდა განათება რთულია.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "natural",
+    "georgian": "ბუნებრივი",
+    "pronunciation": "/ˈnætʃərəl/",
+    "example_en": "Use natural light.",
+    "example_ka": "ბუნებრივი შუქი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "artificial",
+    "georgian": "ხელოვნური",
+    "pronunciation": "/ˌɑːrtɪˈfɪʃəl/",
+    "example_en": "Avoid artificial lighting.",
+    "example_ka": "ხელოვნურ განათებას მოერიდე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "reflector",
+    "georgian": "რეფლექტორი",
+    "pronunciation": "/rɪˈflektər/",
+    "example_en": "Hold the reflector there.",
+    "example_ka": "რეფლექტორი იქ დაიჭირე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "diffuser",
+    "georgian": "დიფუზორი",
+    "pronunciation": "/dɪˈfjuːzər/",
+    "example_en": "The diffuser softens the light.",
+    "example_ka": "დიფუზორი შუქს არბილებს.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "backdrop",
+    "georgian": "ფონი",
+    "pronunciation": "/ˈbækdrɒp/",
+    "example_en": "Set up the backdrop.",
+    "example_ka": "ფონი დააყენე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "props",
+    "georgian": "რეკვიზიტი",
+    "pronunciation": "/prɒps/",
+    "example_en": "We need some props for the shoot.",
+    "example_ka": "გადაღებისთვის რეკვიზიტი გვჭირდება.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "model",
+    "georgian": "მოდელი",
+    "pronunciation": "/ˈmɒdəl/",
+    "example_en": "The model posed beautifully.",
+    "example_ka": "მოდელმა ლამაზად იპოზა.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "pose",
+    "georgian": "პოზა",
+    "pronunciation": "/poʊz/",
+    "example_en": "Strike a pose.",
+    "example_ka": "პოზა მიიღე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "candid",
+    "georgian": "სპონტანური",
+    "pronunciation": "/ˈkændɪd/",
+    "example_en": "I love candid photos.",
+    "example_ka": "სპონტანური ფოტოები მიყვარს.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "composition",
+    "georgian": "კომპოზიცია",
+    "pronunciation": "/ˌkɒmpəˈzɪʃən/",
+    "example_en": "The composition is balanced.",
+    "example_ka": "კომპოზიცია დაბალანსებულია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "rule",
+    "georgian": "წესი",
+    "pronunciation": "/ruːl/",
+    "example_en": "Follow the rule of thirds.",
+    "example_ka": "მესამედების წესი დაიცავი.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "symmetry",
+    "georgian": "სიმეტრია",
+    "pronunciation": "/ˈsɪmətri/",
+    "example_en": "The symmetry is perfect.",
+    "example_ka": "სიმეტრია სრულყოფილია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "perspective",
+    "georgian": "პერსპექტივა",
+    "pronunciation": "/pərˈspektɪv/",
+    "example_en": "Change the perspective.",
+    "example_ka": "პერსპექტივა შეცვალე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "foreground",
+    "georgian": "წინა პლანი",
+    "pronunciation": "/ˈfɔːrɡraʊnd/",
+    "example_en": "Focus on the foreground.",
+    "example_ka": "წინა პლანზე ფოკუსირდი.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "bokeh",
+    "georgian": "ბოკე",
+    "pronunciation": "/ˈboʊkeɪ/",
+    "example_en": "The bokeh effect is beautiful.",
+    "example_ka": "ბოკეს ეფექტი ლამაზია.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "silhouette",
+    "georgian": "სილუეტი",
+    "pronunciation": "/ˌsɪluˈet/",
+    "example_en": "The silhouette looks dramatic.",
+    "example_ka": "სილუეტი დრამატულად გამოიყურება.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "reflection",
+    "georgian": "ანარეკლი",
+    "pronunciation": "/rɪˈflekʃən/",
+    "example_en": "Capture the reflection in the water.",
+    "example_ka": "წყალში ანარეკლი გადაიღე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "texture",
+    "georgian": "ტექსტურა",
+    "pronunciation": "/ˈtekstʃər/",
+    "example_en": "The texture is visible.",
+    "example_ka": "ტექსტურა ჩანს.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "pattern",
+    "georgian": "ნიმუში",
+    "pronunciation": "/ˈpætərn/",
+    "example_en": "The pattern repeats.",
+    "example_ka": "ნიმუში მეორდება.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "color",
+    "georgian": "ფერი",
+    "pronunciation": "/ˈkʌlər/",
+    "example_en": "The colors are vivid.",
+    "example_ka": "ფერები ნათელია.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "black",
+    "georgian": "შავი",
+    "pronunciation": "/blæk/",
+    "example_en": "The photo is in black and white.",
+    "example_ka": "ფოტო შავ-თეთრია.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "white",
+    "georgian": "თეთრი",
+    "pronunciation": "/waɪt/",
+    "example_en": "The white balance is off.",
+    "example_ka": "თეთრი ბალანსი გადახრილია.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "retouch",
+    "georgian": "რეტუში",
+    "pronunciation": "/riːˈtʌtʃ/",
+    "example_en": "Retouch the skin.",
+    "example_ka": "კანს რეტუში გაუკეთე.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "airbrush",
+    "georgian": "ეირბრაში",
+    "pronunciation": "/ˈerbrʌʃ/",
+    "example_en": "Don't airbrush too much.",
+    "example_ka": "ძალიან ბევრი ეირბრაში არ გააკეთო.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "enhance",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/ɪnˈhæns/",
+    "example_en": "Enhance the colors.",
+    "example_ka": "ფერები გააუმჯობესე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "sharpen",
+    "georgian": "სიმკვეთრე",
+    "pronunciation": "/ˈʃɑːrpən/",
+    "example_en": "Sharpen the image.",
+    "example_ka": "სურათს სიმკვეთრე გაუზარდე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "resize",
+    "georgian": "ზომის შეცვლა",
+    "pronunciation": "/riːˈsaɪz/",
+    "example_en": "Resize the image.",
+    "example_ka": "სურათის ზომა შეცვალე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "compress",
+    "georgian": "შეკუმშვა",
+    "pronunciation": "/kəmˈpres/",
+    "example_en": "Compress the file.",
+    "example_ka": "ფაილი შეკუმშე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "rotate",
+    "georgian": "ბრუნვა",
+    "pronunciation": "/roʊˈteɪt/",
+    "example_en": "Rotate the photo.",
+    "example_ka": "ფოტო დაატრიალე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "flip",
+    "georgian": "გადაბრუნება",
+    "pronunciation": "/flɪp/",
+    "example_en": "Flip the image horizontally.",
+    "example_ka": "სურათი ჰორიზონტალურად გადააბრუნე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "layer",
+    "georgian": "ფენა",
+    "pronunciation": "/ˈleɪər/",
+    "example_en": "Add a new layer.",
+    "example_ka": "ახალი ფენა დაამატე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "mask",
+    "georgian": "ნიღაბი",
+    "pronunciation": "/mæsk/",
+    "example_en": "Apply a mask to the layer.",
+    "example_ka": "ფენაზე ნიღაბი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "clone",
+    "georgian": "კლონირება",
+    "pronunciation": "/kloʊn/",
+    "example_en": "Clone out the blemish.",
+    "example_ka": "ნაკლი კლონირებით წაშალე.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "stitch",
+    "georgian": "შეკერვა",
+    "pronunciation": "/stɪtʃ/",
+    "example_en": "Stitch the panorama photos.",
+    "example_ka": "პანორამის ფოტოები შეაკერე.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "timelapse",
+    "georgian": "ტაიმლაფსი",
+    "pronunciation": "/ˈtaɪmlæps/",
+    "example_en": "I made a timelapse video.",
+    "example_ka": "ტაიმლაფსი ვიდეო გავაკეთე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "drone",
+    "georgian": "დრონი",
+    "pronunciation": "/droʊn/",
+    "example_en": "Drone photography is popular.",
+    "example_ka": "დრონით ფოტოგრაფია პოპულარულია.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "aerial",
+    "georgian": "საჰაერო",
+    "pronunciation": "/ˈeriəl/",
+    "example_en": "The aerial shot is amazing.",
+    "example_ka": "საჰაერო კადრი საოცარია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "underwater",
+    "georgian": "წყალქვეშა",
+    "pronunciation": "/ˌʌndərˈwɔːtər/",
+    "example_en": "Try underwater photography.",
+    "example_ka": "წყალქვეშა ფოტოგრაფია სცადე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "street",
+    "georgian": "ქუჩის",
+    "pronunciation": "/striːt/",
+    "example_en": "Street photography captures life.",
+    "example_ka": "ქუჩის ფოტოგრაფია ცხოვრებას იჭერს.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "wildlife",
+    "georgian": "ველური ბუნება",
+    "pronunciation": "/ˈwaɪldlaɪf/",
+    "example_en": "Wildlife photography needs patience.",
+    "example_ka": "ველური ბუნების ფოტოგრაფია მოთმინებას მოითხოვს.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "wedding",
+    "georgian": "ქორწილი",
+    "pronunciation": "/ˈwedɪŋ/",
+    "example_en": "Wedding photography is expensive.",
+    "example_ka": "საქორწილო ფოტოგრაფია ძვირია.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "event",
+    "georgian": "ღონისძიება",
+    "pronunciation": "/ɪˈvent/",
+    "example_en": "I shoot event photography.",
+    "example_ka": "ღონისძიებების ფოტოგრაფიას ვაკეთებ.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "commercial",
+    "georgian": "კომერციული",
+    "pronunciation": "/kəˈmɜːrʃəl/",
+    "example_en": "Commercial photography pays well.",
+    "example_ka": "კომერციული ფოტოგრაფია კარგად იხდის.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "fashion",
+    "georgian": "მოდა",
+    "pronunciation": "/ˈfæʃən/",
+    "example_en": "She does fashion photography.",
+    "example_ka": "ის მოდის ფოტოგრაფიას აკეთებს.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "documentary",
+    "georgian": "დოკუმენტური",
+    "pronunciation": "/ˌdɒkjuˈmentəri/",
+    "example_en": "Documentary photography tells stories.",
+    "example_ka": "დოკუმენტური ფოტოგრაფია ისტორიებს მოგვითხრობს.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "abstract",
+    "georgian": "აბსტრაქტული",
+    "pronunciation": "/ˈæbstrækt/",
+    "example_en": "Abstract photography is creative.",
+    "example_ka": "აბსტრაქტული ფოტოგრაფია შემოქმედებითია.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "minimalist",
+    "georgian": "მინიმალისტური",
+    "pronunciation": "/ˈmɪnɪməlɪst/",
+    "example_en": "I like minimalist photography.",
+    "example_ka": "მინიმალისტური ფოტოგრაფია მომწონს.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "vintage",
+    "georgian": "ვინტაჟური",
+    "pronunciation": "/ˈvɪntɪdʒ/",
+    "example_en": "The vintage style looks great.",
+    "example_ka": "ვინტაჟური სტილი შესანიშნავად გამოიყურება.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "retro",
+    "georgian": "რეტრო",
+    "pronunciation": "/ˈretroʊ/",
+    "example_en": "Apply a retro filter.",
+    "example_ka": "რეტრო ფილტრი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "professional",
+    "georgian": "პროფესიონალური",
+    "pronunciation": "/prəˈfeʃənəl/",
+    "example_en": "Use professional equipment.",
+    "example_ka": "პროფესიონალური აღჭურვილობა გამოიყენე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "amateur",
+    "georgian": "მოყვარული",
+    "pronunciation": "/ˈæmətər/",
+    "example_en": "I'm an amateur photographer.",
+    "example_ka": "მე მოყვარული ფოტოგრაფი ვარ.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "hobbyist",
+    "georgian": "ჰობისტი",
+    "pronunciation": "/ˈhɒbiɪst/",
+    "example_en": "Most photographers are hobbyists.",
+    "example_ka": "ფოტოგრაფების უმეტესობა ჰობისტებია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "exhibition",
+    "georgian": "გამოფენა",
+    "pronunciation": "/ˌeksɪˈbɪʃən/",
+    "example_en": "My photos are in an exhibition.",
+    "example_ka": "ჩემი ფოტოები გამოფენაზეა.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "portfolio",
+    "georgian": "პორტფოლიო",
+    "pronunciation": "/pɔːrtˈfoʊlioʊ/",
+    "example_en": "Build your portfolio.",
+    "example_ka": "პორტფოლიო შექმენი.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "copyright",
+    "georgian": "საავტორო უფლება",
+    "pronunciation": "/ˈkɒpiraɪt/",
+    "example_en": "Protect your copyright.",
+    "example_ka": "საავტორო უფლება დაიცავი.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "license",
+    "georgian": "ლიცენზია",
+    "pronunciation": "/ˈlaɪsəns/",
+    "example_en": "Buy the license for the image.",
+    "example_ka": "სურათის ლიცენზია იყიდე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "stock",
+    "georgian": "სტოკი",
+    "pronunciation": "/stɒk/",
+    "example_en": "Sell stock photos.",
+    "example_ka": "სტოკ ფოტოები გაყიდე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "freelance",
+    "georgian": "ფრილანსი",
+    "pronunciation": "/ˈfriːlæns/",
+    "example_en": "I work as a freelance photographer.",
+    "example_ka": "ფრილანს ფოტოგრაფად ვმუშაობ.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "client",
+    "georgian": "კლიენტი",
+    "pronunciation": "/ˈklaɪənt/",
+    "example_en": "The client loved the photos.",
+    "example_ka": "კლიენტს ფოტოები მოეწონა.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "session",
+    "georgian": "სესია",
+    "pronunciation": "/ˈseʃən/",
+    "example_en": "The photo session lasted two hours.",
+    "example_ka": "ფოტო სესია ორ საათს გაგრძელდა.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "retoucher",
+    "georgian": "რეტუშერი",
+    "pronunciation": "/riːˈtʌtʃər/",
+    "example_en": "The retoucher fixed the photos.",
+    "example_ka": "რეტუშერმა ფოტოები გაასწორა.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "develop",
+    "georgian": "დამუშავება",
+    "pronunciation": "/dɪˈveləp/",
+    "example_en": "Develop the film in the darkroom.",
+    "example_ka": "ფილმი ბნელ ოთახში დაამუშავე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "darkroom",
+    "georgian": "ბნელი ოთახი",
+    "pronunciation": "/ˈdɑːrkruːm/",
+    "example_en": "The darkroom is essential for film.",
+    "example_ka": "ფილმისთვის ბნელი ოთახი აუცილებელია.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "infrared",
+    "georgian": "ინფრაწითელი",
+    "pronunciation": "/ˌɪnfrəˈred/",
+    "example_en": "Infrared photography is unique.",
+    "example_ka": "ინფრაწითელი ფოტოგრაფია უნიკალურია.",
+    "category": "photography-camera",
+    "level": "C1"
+  },
+  {
+    "english": "hologram",
+    "georgian": "ჰოლოგრამა",
+    "pronunciation": "/ˈhɒləɡræm/",
+    "example_en": "Hologram photography is emerging.",
+    "example_ka": "ჰოლოგრამა ფოტოგრაფია ვითარდება.",
+    "category": "photography-camera",
+    "level": "C1"
+  },
+  {
+    "english": "photojournalism",
+    "georgian": "ფოტოჟურნალისტიკა",
+    "pronunciation": "/ˌfoʊtoʊˈdʒɜːrnəlɪzəm/",
+    "example_en": "Photojournalism captures reality.",
+    "example_ka": "ფოტოჟურნალისტიკა რეალობას იჭერს.",
+    "category": "photography-camera",
+    "level": "C1"
+  },
+  {
+    "english": "megabyte",
+    "georgian": "მეგაბაიტი",
+    "pronunciation": "/ˈmeɡəbaɪt/",
+    "example_en": "The file is 5 megabytes.",
+    "example_ka": "ფაილი 5 მეგაბაიტია.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "autofocus",
+    "georgian": "ავტოფოკუსი",
+    "pronunciation": "/ˈɔːtoʊfoʊkəs/",
+    "example_en": "The autofocus is fast.",
+    "example_ka": "ავტოფოკუსი სწრაფია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "manual",
+    "georgian": "მანუალური",
+    "pronunciation": "/ˈmænjuəl/",
+    "example_en": "Switch to manual mode.",
+    "example_ka": "მანუალურ რეჟიმზე გადართე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "automatic",
+    "georgian": "ავტომატური",
+    "pronunciation": "/ˌɔːtəˈmætɪk/",
+    "example_en": "Use automatic mode.",
+    "example_ka": "ავტომატური რეჟიმი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "adjust",
+    "georgian": "რეგულირება",
+    "pronunciation": "/əˈdʒʌst/",
+    "example_en": "Adjust the settings.",
+    "example_ka": "პარამეტრები დაარეგულირე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "capture",
+    "georgian": "გადაღება",
+    "pronunciation": "/ˈkæptʃər/",
+    "example_en": "Capture the moment.",
+    "example_ka": "მომენტი გადაიღე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "snap",
+    "georgian": "გადაღება",
+    "pronunciation": "/snæp/",
+    "example_en": "Snap a quick photo.",
+    "example_ka": "სწრაფად ფოტო გადაიღე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "click",
+    "georgian": "დაჭერა",
+    "pronunciation": "/klɪk/",
+    "example_en": "Click the shutter button.",
+    "example_ka": "შატერის ღილაკი დააჭირე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "preview",
+    "georgian": "წინასწარი ნახვა",
+    "pronunciation": "/ˈpriːvjuː/",
+    "example_en": "Preview the image.",
+    "example_ka": "სურათი წინასწარ ნახე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "delete",
+    "georgian": "წაშლა",
+    "pronunciation": "/dɪˈliːt/",
+    "example_en": "Delete the bad photos.",
+    "example_ka": "ცუდი ფოტოები წაშალე.",
+    "category": "photography-camera",
+    "level": "A1"
+  },
+  {
+    "english": "select",
+    "georgian": "არჩევა",
+    "pronunciation": "/sɪˈlekt/",
+    "example_en": "Select the best ones.",
+    "example_ka": "საუკეთესოები აირჩიე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "import",
+    "georgian": "იმპორტი",
+    "pronunciation": "/ˈɪmpɔːrt/",
+    "example_en": "Import photos from the camera.",
+    "example_ka": "კამერიდან ფოტოები იმპორტე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "export",
+    "georgian": "ექსპორტი",
+    "pronunciation": "/ˈekspɔːrt/",
+    "example_en": "Export in high quality.",
+    "example_ka": "მაღალი ხარისხით ექსპორტე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "backup",
+    "georgian": "სარეზერვო",
+    "pronunciation": "/ˈbækʌp/",
+    "example_en": "Always backup your photos.",
+    "example_ka": "ფოტოების სარეზერვო ასლი ყოველთვის გააკეთე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "monopod",
+    "georgian": "ერთფეხა",
+    "pronunciation": "/ˈmɒnəpɒd/",
+    "example_en": "A monopod is lighter.",
+    "example_ka": "ერთფეხა უფრო მსუბუქია.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "gimbal",
+    "georgian": "გიმბალი",
+    "pronunciation": "/ˈɡɪmbəl/",
+    "example_en": "The gimbal stabilizes video.",
+    "example_ka": "გიმბალი ვიდეოს ასტაბილურებს.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "groupshot",
+    "georgian": "ჯგუფური ფოტო",
+    "pronunciation": "/ˈɡruːpʃɒt/",
+    "example_en": "Let's take a group shot.",
+    "example_ka": "მოდი ჯგუფური ფოტო გადავიღოთ.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "headshot",
+    "georgian": "პორტრეტი",
+    "pronunciation": "/ˈhedʃɒt/",
+    "example_en": "I need a professional headshot.",
+    "example_ka": "პროფესიონალური პორტრეტი მჭირდება.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "still",
+    "georgian": "სტატიკური",
+    "pronunciation": "/stɪl/",
+    "example_en": "Still photography versus video.",
+    "example_ka": "სტატიკური ფოტოგრაფია ვიდეოს წინააღმდეგ.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "motion",
+    "georgian": "მოძრაობა",
+    "pronunciation": "/ˈmoʊʃən/",
+    "example_en": "Capture the motion.",
+    "example_ka": "მოძრაობა გადაიღე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "frozen",
+    "georgian": "გაყინული",
+    "pronunciation": "/ˈfroʊzən/",
+    "example_en": "The frozen action looks amazing.",
+    "example_ka": "გაყინული მოქმედება საოცრად გამოიყურება.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "long-exposure",
+    "georgian": "ხანგრძლივი ექსპოზიცია",
+    "pronunciation": "/lɒŋ ɪkˈspoʊʒər/",
+    "example_en": "Try long-exposure photography.",
+    "example_ka": "ხანგრძლივი ექსპოზიციის ფოტოგრაფია სცადე.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "hdr",
+    "georgian": "ჰდრ",
+    "pronunciation": "/eɪtʃ diː ɑːr/",
+    "example_en": "HDR combines multiple exposures.",
+    "example_ka": "HDR რამდენიმე ექსპოზიციას აერთიანებს.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "histogram",
+    "georgian": "ჰისტოგრამა",
+    "pronunciation": "/ˈhɪstəɡræm/",
+    "example_en": "Check the histogram.",
+    "example_ka": "ჰისტოგრამა შეამოწმე.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "white-balance",
+    "georgian": "თეთრი ბალანსი",
+    "pronunciation": "/waɪt ˈbæləns/",
+    "example_en": "Adjust the white balance.",
+    "example_ka": "თეთრი ბალანსი დაარეგულირე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "metering",
+    "georgian": "მეტრინგი",
+    "pronunciation": "/ˈmiːtərɪŋ/",
+    "example_en": "Use spot metering.",
+    "example_ka": "წერტილოვანი მეტრინგი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "B2"
+  },
+  {
+    "english": "tilt",
+    "georgian": "დახრა",
+    "pronunciation": "/tɪlt/",
+    "example_en": "Tilt the camera slightly.",
+    "example_ka": "კამერა ოდნავ დახარე.",
+    "category": "photography-camera",
+    "level": "A2"
+  },
+  {
+    "english": "panoramic",
+    "georgian": "პანორამული",
+    "pronunciation": "/ˌpænəˈræmɪk/",
+    "example_en": "Take a panoramic photo.",
+    "example_ka": "პანორამული ფოტო გადაიღე.",
+    "category": "photography-camera",
+    "level": "B1"
+  },
+  {
+    "english": "microphone",
+    "georgian": "მიკროფონი",
+    "pronunciation": "/ˈmaɪkrəfoʊn/",
+    "example_en": "Attach the external microphone.",
+    "example_ka": "გარე მიკროფონი მიამაგრე.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "video",
+    "georgian": "ვიდეო",
+    "pronunciation": "/ˈvɪdioʊ/",
+    "example_en": "Record a short video.",
+    "example_ka": "მოკლე ვიდეო ჩაიწერე.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "recording",
+    "georgian": "ჩაწერა",
+    "pronunciation": "/rɪˈkɔːrdɪŋ/",
+    "example_en": "Start recording now.",
+    "example_ka": "ახლა ჩაწერა დაიწყე.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "playback",
+    "georgian": "ჩაღება",
+    "pronunciation": "/ˈpleɪbæk/",
+    "example_en": "Watch the video playback.",
+    "example_ka": "ვიდეოს ჩაღება ნახე.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "slideshow",
+    "georgian": "სლაიდშოუ",
+    "pronunciation": "/ˈslaɪdʃoʊ/",
+    "example_en": "Create a photo slideshow.",
+    "example_ka": "ფოტოების სლაიდშოუ შექმენი.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "transition",
+    "georgian": "გადასვლა",
+    "pronunciation": "/trænˈzɪʃən/",
+    "example_en": "Add smooth transitions.",
+    "example_ka": "მუქნი გადასვლები დაამატე.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "montage",
+    "georgian": "მონტაჟი",
+    "pronunciation": "/mɑːnˈtɑːʒ/",
+    "example_en": "The photo montage is creative.",
+    "example_ka": "ფოტო მონტაჟი შემოქმედებითია.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "collage",
+    "georgian": "კოლაჟი",
+    "pronunciation": "/kəˈlɑːʒ/",
+    "example_en": "Make a collage of memories.",
+    "example_ka": "მოგონებების კოლაჟი გააკეთე.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "mosaic",
+    "georgian": "მოზაიკა",
+    "pronunciation": "/moʊˈzeɪɪk/",
+    "example_en": "Create a photo mosaic.",
+    "example_ka": "ფოტო მოზაიკა შექმენი.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "thumbnail",
+    "georgian": "მინიატურა",
+    "pronunciation": "/ˈθʌmneɪl/",
+    "example_en": "The thumbnail looks good.",
+    "example_ka": "მინიატურა კარგად გამოიყურება.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "metadata",
+    "georgian": "მეტადაცემები",
+    "pronunciation": "/ˈmetədeɪtə/",
+    "example_en": "Check the image metadata.",
+    "example_ka": "სურათის მეტადაცემები შეამოწმე.",
+    "category": "photography-camera",
+    "level": "advanced"
+  },
+  {
+    "english": "timestamp",
+    "georgian": "დროის ნიშნული",
+    "pronunciation": "/ˈtaɪmstæmp/",
+    "example_en": "The timestamp shows when it was taken.",
+    "example_ka": "დროის ნიშნული აჩვენებს როდის გადაიღეს.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "location",
+    "georgian": "მდებარეობა",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "Save the photo location.",
+    "example_ka": "ფოტოს მდებარეობა შეინახე.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "geotagging",
+    "georgian": "გეოტაგირება",
+    "pronunciation": "/ˈdʒioʊtæɡɪŋ/",
+    "example_en": "Enable geotagging for travel photos.",
+    "example_ka": "სამოგზაურო ფოტოებისთვის გეოტაგირება ჩართე.",
+    "category": "photography-camera",
+    "level": "advanced"
+  },
+  {
+    "english": "waterproof",
+    "georgian": "წყალგაუმტარი",
+    "pronunciation": "/ˈwɔːtərpruːf/",
+    "example_en": "Use a waterproof camera case.",
+    "example_ka": "წყალგაუმტარი კამერის ქეისი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "dustproof",
+    "georgian": "მტვერგაუმტარი",
+    "pronunciation": "/ˈdʌstpruːf/",
+    "example_en": "The lens is dustproof.",
+    "example_ka": "ლინზა მტვერგაუმტარია.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "rugged",
+    "georgian": "გამძლე",
+    "pronunciation": "/ˈrʌɡɪd/",
+    "example_en": "This camera is rugged.",
+    "example_ka": "ეს კამერა გამძლეა.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "compact",
+    "georgian": "კომპაქტური",
+    "pronunciation": "/kəmˈpækt/",
+    "example_en": "I prefer compact cameras.",
+    "example_ka": "კომპაქტურ კამერებს ვანიჭებ უპირატესობას.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "mirrorless",
+    "georgian": "უსარკეო",
+    "pronunciation": "/ˈmɪrərləs/",
+    "example_en": "Mirrorless cameras are popular.",
+    "example_ka": "უსარკეო კამერები პოპულარულია.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "dslr",
+    "georgian": "დსლრ",
+    "pronunciation": "/ˌdiː es el ˈɑːr/",
+    "example_en": "DSLR cameras have great quality.",
+    "example_ka": "DSLR კამერებს შესანიშნავი ხარისხი აქვთ.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "rangefinder",
+    "georgian": "რენჯფაინდერი",
+    "pronunciation": "/ˈreɪndʒfaɪndər/",
+    "example_en": "Rangefinder cameras are precise.",
+    "example_ka": "რენჯფაინდერ კამერები ზუსტია.",
+    "category": "photography-camera",
+    "level": "advanced"
+  },
+  {
+    "english": "instant",
+    "georgian": "მომენტალური",
+    "pronunciation": "/ˈɪnstənt/",
+    "example_en": "Instant cameras print immediately.",
+    "example_ka": "მომენტალური კამერები მაშინვე ბეჭდავს.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "polaroid",
+    "georgian": "პოლაროიდი",
+    "pronunciation": "/ˈpoʊləˌrɔɪd/",
+    "example_en": "Take a polaroid photo.",
+    "example_ka": "პოლაროიდი ფოტო გადაიღე.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "disposable",
+    "georgian": "ერთჯერადი",
+    "pronunciation": "/dɪˈspoʊzəbəl/",
+    "example_en": "Disposable cameras are fun.",
+    "example_ka": "ერთჯერადი კამერები სახალისოა.",
+    "category": "photography-camera",
+    "level": "beginner"
+  },
+  {
+    "english": "format",
+    "georgian": "ფორმატი",
+    "pronunciation": "/ˈfɔːrmæt/",
+    "example_en": "Choose the right file format.",
+    "example_ka": "სწორი ფაილის ფორმატი აირჩიე.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "tiff",
+    "georgian": "ტიფი",
+    "pronunciation": "/tɪf/",
+    "example_en": "TIFF files are lossless.",
+    "example_ka": "TIFF ფაილები დაკარგვების გარეშეა.",
+    "category": "photography-camera",
+    "level": "advanced"
+  },
+  {
+    "english": "png",
+    "georgian": "პნგ",
+    "pronunciation": "/piː en dʒiː/",
+    "example_en": "PNG supports transparency.",
+    "example_ka": "PNG გამჭირვალობას მხარს უჭერს.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  },
+  {
+    "english": "calibration",
+    "georgian": "კალიბრაცია",
+    "pronunciation": "/ˌkæləˈbreɪʃən/",
+    "example_en": "Monitor calibration is important.",
+    "example_ka": "მონიტორის კალიბრაცია მნიშვნელოვანია.",
+    "category": "photography-camera",
+    "level": "advanced"
+  },
+  {
+    "english": "profile",
+    "georgian": "პროფილი",
+    "pronunciation": "/ˈproʊfaɪl/",
+    "example_en": "Use the correct color profile.",
+    "example_ka": "სწორი ფერთა პროფილი გამოიყენე.",
+    "category": "photography-camera",
+    "level": "advanced"
+  },
+  {
+    "english": "workflow",
+    "georgian": "სამუშაო პროცესი",
+    "pronunciation": "/ˈwɜːrkfloʊ/",
+    "example_en": "Develop a good workflow.",
+    "example_ka": "კარგი სამუშაო პროცესი შეიმუშავე.",
+    "category": "photography-camera",
+    "level": "intermediate"
+  }
 ]

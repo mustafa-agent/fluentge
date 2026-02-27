@@ -1,52 +1,1802 @@
 [
-  {"english":"doctor","georgian":"ექიმი","pronunciation":"/ˈdɒktər/","example_en":"The doctor examined the patient.","example_ka":"ექიმამ პაციენტი გამოიკვლია.","category":"jobs-careers","level":"beginner"},
-  {"english":"nurse","georgian":"ექთანი","pronunciation":"/nɜːrs/","example_en":"The nurse gave me an injection.","example_ka":"ექთანმა ინექცია გამიკეთა.","category":"jobs-careers","level":"beginner"},
-  {"english":"teacher","georgian":"მასწავლებელი","pronunciation":"/ˈtiːtʃər/","example_en":"My teacher is very kind.","example_ka":"ჩემი მასწავლებელი ძალიან კეთილია.","category":"jobs-careers","level":"beginner"},
-  {"english":"engineer","georgian":"ინჟინერი","pronunciation":"/ˌendʒɪˈnɪər/","example_en":"He works as a software engineer.","example_ka":"ის პროგრამული ინჟინრის პოზიციაზე მუშაობს.","category":"jobs-careers","level":"beginner"},
-  {"english":"lawyer","georgian":"ადვოკატი","pronunciation":"/ˈlɔːjər/","example_en":"I need to consult a lawyer.","example_ka":"ადვოკატთან კონსულტაცია მჭირდება.","category":"jobs-careers","level":"intermediate"},
-  {"english":"accountant","georgian":"ბუღალტერი","pronunciation":"/əˈkaʊntənt/","example_en":"The accountant prepared the tax reports.","example_ka":"ბუღალტერმა საგადასახადო ანგარიშები მოამზადა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"architect","georgian":"არქიტექტორი","pronunciation":"/ˈɑːrkɪtekt/","example_en":"The architect designed a beautiful building.","example_ka":"არქიტექტორმა ლამაზი შენობა დააპროექტა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"chef","georgian":"მზარეული","pronunciation":"/ʃef/","example_en":"The chef prepared a delicious meal.","example_ka":"მზარეულმა გემრიელი საჭმელი მოამზადა.","category":"jobs-careers","level":"beginner"},
-  {"english":"farmer","georgian":"ფერმერი","pronunciation":"/ˈfɑːrmər/","example_en":"The farmer grows vegetables.","example_ka":"ფერმერი ბოსტნეულს მოჰყავს.","category":"jobs-careers","level":"beginner"},
-  {"english":"pilot","georgian":"პილოტი","pronunciation":"/ˈpaɪlət/","example_en":"The pilot landed the plane safely.","example_ka":"პილოტმა თვითმფრინავი უსაფრთხოდ დასვა.","category":"jobs-careers","level":"beginner"},
-  {"english":"firefighter","georgian":"მეხანძრე","pronunciation":"/ˈfaɪərfaɪtər/","example_en":"Firefighters saved the family from the fire.","example_ka":"მეხანძრეებმა ოჯახი ხანძრისგან გადაარჩინეს.","category":"jobs-careers","level":"beginner"},
-  {"english":"police officer","georgian":"პოლიციელი","pronunciation":"/pəˈliːs ˈɒfɪsər/","example_en":"The police officer directed traffic.","example_ka":"პოლიციელი მოძრაობას აწესრიგებდა.","category":"jobs-careers","level":"beginner"},
-  {"english":"dentist","georgian":"სტომატოლოგი","pronunciation":"/ˈdentɪst/","example_en":"I go to the dentist twice a year.","example_ka":"წელიწადში ორჯერ მივდივარ სტომატოლოგთან.","category":"jobs-careers","level":"beginner"},
-  {"english":"journalist","georgian":"ჟურნალისტი","pronunciation":"/ˈdʒɜːrnəlɪst/","example_en":"The journalist wrote an interesting article.","example_ka":"ჟურნალისტმა საინტერესო სტატია დაწერა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"programmer","georgian":"პროგრამისტი","pronunciation":"/ˈproʊɡræmər/","example_en":"The programmer fixed the bug.","example_ka":"პროგრამისტმა შეცდომა გაასწორა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"designer","georgian":"დიზაინერი","pronunciation":"/dɪˈzaɪnər/","example_en":"The designer created a new logo.","example_ka":"დიზაინერმა ახალი ლოგო შექმნა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"mechanic","georgian":"მექანიკოსი","pronunciation":"/mɪˈkænɪk/","example_en":"The mechanic repaired my car.","example_ka":"მექანიკოსმა მანქანა შემიკეთა.","category":"jobs-careers","level":"beginner"},
-  {"english":"electrician","georgian":"ელექტრიკოსი","pronunciation":"/ɪˌlekˈtrɪʃn/","example_en":"Call the electrician to fix the wiring.","example_ka":"გაყვანილობის შესაკეთებლად ელექტრიკოსს გამოიძახე.","category":"jobs-careers","level":"intermediate"},
-  {"english":"plumber","georgian":"სანტექნიკოსი","pronunciation":"/ˈplʌmər/","example_en":"The plumber fixed the broken pipe.","example_ka":"სანტექნიკოსმა გატეხილი მილი შეაკეთა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"driver","georgian":"მძღოლი","pronunciation":"/ˈdraɪvər/","example_en":"The bus driver was very friendly.","example_ka":"ავტობუსის მძღოლი ძალიან მეგობრული იყო.","category":"jobs-careers","level":"beginner"},
-  {"english":"waiter","georgian":"მიმტანი","pronunciation":"/ˈweɪtər/","example_en":"The waiter brought the menu.","example_ka":"მიმტანმა მენიუ მოიტანა.","category":"jobs-careers","level":"beginner"},
-  {"english":"baker","georgian":"მცხობელი","pronunciation":"/ˈbeɪkər/","example_en":"The baker makes fresh bread every morning.","example_ka":"მცხობელი ყოველ დილით ახალ პურს აცხობს.","category":"jobs-careers","level":"beginner"},
-  {"english":"barber","georgian":"პარიკმახერი","pronunciation":"/ˈbɑːrbər/","example_en":"I go to the barber once a month.","example_ka":"თვეში ერთხელ პარიკმახერთან მივდივარ.","category":"jobs-careers","level":"beginner"},
-  {"english":"photographer","georgian":"ფოტოგრაფი","pronunciation":"/fəˈtɒɡrəfər/","example_en":"The photographer took beautiful pictures.","example_ka":"ფოტოგრაფმა ლამაზი ფოტოები გადაიღო.","category":"jobs-careers","level":"intermediate"},
-  {"english":"salary","georgian":"ხელფასი","pronunciation":"/ˈsæləri/","example_en":"His salary increased this year.","example_ka":"წელს მისი ხელფასი გაიზარდა.","category":"jobs-careers","level":"beginner"},
-  {"english":"interview","georgian":"გასაუბრება","pronunciation":"/ˈɪntərvjuː/","example_en":"I have a job interview tomorrow.","example_ka":"ხვალ სამსახურის გასაუბრება მაქვს.","category":"jobs-careers","level":"beginner"},
-  {"english":"resume","georgian":"რეზიუმე","pronunciation":"/ˈrezjuːmeɪ/","example_en":"Send your resume to the company.","example_ka":"რეზიუმე კომპანიას გაუგზავნე.","category":"jobs-careers","level":"intermediate"},
-  {"english":"apply","georgian":"განაცხადის შეტანა","pronunciation":"/əˈplaɪ/","example_en":"I applied for three jobs.","example_ka":"სამ ვაკანსიაზე შევიტანე განაცხადი.","category":"jobs-careers","level":"intermediate"},
-  {"english":"hire","georgian":"დაქირავება","pronunciation":"/ˈhaɪər/","example_en":"The company hired ten new employees.","example_ka":"კომპანიამ ათი ახალი თანამშრომელი დაიქირავა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"fire","georgian":"გათავისუფლება","pronunciation":"/ˈfaɪər/","example_en":"He was fired from his job.","example_ka":"ის სამსახურიდან გაათავისუფლეს.","category":"jobs-careers","level":"intermediate"},
-  {"english":"retire","georgian":"პენსიაზე გასვლა","pronunciation":"/rɪˈtaɪər/","example_en":"She retired at 65.","example_ka":"ის 65 წლის ასაკში გავიდა პენსიაზე.","category":"jobs-careers","level":"intermediate"},
-  {"english":"promotion","georgian":"დაწინაურება","pronunciation":"/prəˈmoʊʃn/","example_en":"She got a promotion at work.","example_ka":"სამსახურში დაწინაურდა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"colleague","georgian":"კოლეგა","pronunciation":"/ˈkɒliːɡ/","example_en":"My colleague helped me with the project.","example_ka":"კოლეგამ პროექტში დამეხმარა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"boss","georgian":"უფროსი","pronunciation":"/bɒs/","example_en":"My boss approved my vacation.","example_ka":"უფროსმა შვებულება დამიმტკიცა.","category":"jobs-careers","level":"beginner"},
-  {"english":"manager","georgian":"მენეჯერი","pronunciation":"/ˈmænɪdʒər/","example_en":"The manager organized the meeting.","example_ka":"მენეჯერმა შეხვედრა მოაწყო.","category":"jobs-careers","level":"beginner"},
-  {"english":"employee","georgian":"თანამშრომელი","pronunciation":"/ɪmˈplɔɪiː/","example_en":"The company has 200 employees.","example_ka":"კომპანიას 200 თანამშრომელი ჰყავს.","category":"jobs-careers","level":"intermediate"},
-  {"english":"employer","georgian":"დამსაქმებელი","pronunciation":"/ɪmˈplɔɪər/","example_en":"The employer offers good benefits.","example_ka":"დამსაქმებელი კარგ ბენეფიტებს სთავაზობს.","category":"jobs-careers","level":"intermediate"},
-  {"english":"experience","georgian":"გამოცდილება","pronunciation":"/ɪkˈspɪəriəns/","example_en":"She has five years of experience.","example_ka":"მას ხუთწლიანი გამოცდილება აქვს.","category":"jobs-careers","level":"intermediate"},
-  {"english":"skill","georgian":"უნარი","pronunciation":"/skɪl/","example_en":"Communication is an important skill.","example_ka":"კომუნიკაცია მნიშვნელოვანი უნარია.","category":"jobs-careers","level":"intermediate"},
-  {"english":"career","georgian":"კარიერა","pronunciation":"/kəˈrɪər/","example_en":"She changed her career at 40.","example_ka":"მან 40 წლის ასაკში კარიერა შეიცვალა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"part-time","georgian":"ნახევარ განაკვეთზე","pronunciation":"/pɑːrt taɪm/","example_en":"She works part-time at the cafe.","example_ka":"ის კაფეში ნახევარ განაკვეთზე მუშაობს.","category":"jobs-careers","level":"beginner"},
-  {"english":"full-time","georgian":"სრულ განაკვეთზე","pronunciation":"/fʊl taɪm/","example_en":"I work full-time at the office.","example_ka":"ოფისში სრულ განაკვეთზე ვმუშაობ.","category":"jobs-careers","level":"beginner"},
-  {"english":"freelancer","georgian":"ფრილანსერი","pronunciation":"/ˈfriːlænsər/","example_en":"He works as a freelancer from home.","example_ka":"ის სახლიდან მუშაობს ფრილანსერად.","category":"jobs-careers","level":"intermediate"},
-  {"english":"intern","georgian":"სტაჟიორი","pronunciation":"/ˈɪntɜːrn/","example_en":"The intern is learning quickly.","example_ka":"სტაჟიორი სწრაფად სწავლობს.","category":"jobs-careers","level":"intermediate"},
-  {"english":"vacancy","georgian":"ვაკანსია","pronunciation":"/ˈveɪkənsi/","example_en":"There are two vacancies in our department.","example_ka":"ჩვენს განყოფილებაში ორი ვაკანსიაა.","category":"jobs-careers","level":"intermediate"},
-  {"english":"deadline","georgian":"ვადა","pronunciation":"/ˈdedlaɪn/","example_en":"The deadline is next Friday.","example_ka":"ვადა მომავალ პარასკევს იწურება.","category":"jobs-careers","level":"intermediate"},
-  {"english":"meeting","georgian":"შეხვედრა","pronunciation":"/ˈmiːtɪŋ/","example_en":"We have a meeting at 10 AM.","example_ka":"10 საათზე შეხვედრა გვაქვს.","category":"jobs-careers","level":"beginner"},
-  {"english":"project","georgian":"პროექტი","pronunciation":"/ˈprɒdʒekt/","example_en":"We finished the project on time.","example_ka":"პროექტი დროულად დავასრულეთ.","category":"jobs-careers","level":"beginner"},
-  {"english":"overtime","georgian":"ზეგანაკვეთური","pronunciation":"/ˈoʊvərtaɪm/","example_en":"I worked overtime yesterday.","example_ka":"გუშინ ზეგანაკვეთურად ვიმუშავე.","category":"jobs-careers","level":"intermediate"},
-  {"english":"contract","georgian":"ხელშეკრულება","pronunciation":"/ˈkɒntrækt/","example_en":"I signed a one-year contract.","example_ka":"ერთწლიანი ხელშეკრულება მოვაწერე.","category":"jobs-careers","level":"intermediate"}
+  {
+    "english": "doctor",
+    "georgian": "ექიმი",
+    "pronunciation": "/ˈdɒktər/",
+    "example_en": "The doctor examined the patient.",
+    "example_ka": "ექიმამ პაციენტი გამოიკვლია.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "nurse",
+    "georgian": "ექთანი",
+    "pronunciation": "/nɜːrs/",
+    "example_en": "The nurse gave me an injection.",
+    "example_ka": "ექთანმა ინექცია გამიკეთა.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "teacher",
+    "georgian": "მასწავლებელი",
+    "pronunciation": "/ˈtiːtʃər/",
+    "example_en": "My teacher is very kind.",
+    "example_ka": "ჩემი მასწავლებელი ძალიან კეთილია.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "engineer",
+    "georgian": "ინჟინერი",
+    "pronunciation": "/ˌendʒɪˈnɪər/",
+    "example_en": "He works as a software engineer.",
+    "example_ka": "ის პროგრამული ინჟინრის პოზიციაზე მუშაობს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "lawyer",
+    "georgian": "ადვოკატი",
+    "pronunciation": "/ˈlɔːjər/",
+    "example_en": "I need to consult a lawyer.",
+    "example_ka": "ადვოკატთან კონსულტაცია მჭირდება.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "accountant",
+    "georgian": "ბუღალტერი",
+    "pronunciation": "/əˈkaʊntənt/",
+    "example_en": "The accountant prepared the tax reports.",
+    "example_ka": "ბუღალტერმა საგადასახადო ანგარიშები მოამზადა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "architect",
+    "georgian": "არქიტექტორი",
+    "pronunciation": "/ˈɑːrkɪtekt/",
+    "example_en": "The architect designed a beautiful building.",
+    "example_ka": "არქიტექტორმა ლამაზი შენობა დააპროექტა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "chef",
+    "georgian": "მზარეული",
+    "pronunciation": "/ʃef/",
+    "example_en": "The chef prepared a delicious meal.",
+    "example_ka": "მზარეულმა გემრიელი საჭმელი მოამზადა.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "farmer",
+    "georgian": "ფერმერი",
+    "pronunciation": "/ˈfɑːrmər/",
+    "example_en": "The farmer grows vegetables.",
+    "example_ka": "ფერმერი ბოსტნეულს მოჰყავს.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "pilot",
+    "georgian": "პილოტი",
+    "pronunciation": "/ˈpaɪlət/",
+    "example_en": "The pilot landed the plane safely.",
+    "example_ka": "პილოტმა თვითმფრინავი უსაფრთხოდ დასვა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "firefighter",
+    "georgian": "მეხანძრე",
+    "pronunciation": "/ˈfaɪərfaɪtər/",
+    "example_en": "Firefighters saved the family from the fire.",
+    "example_ka": "მეხანძრეებმა ოჯახი ხანძრისგან გადაარჩინეს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "dentist",
+    "georgian": "სტომატოლოგი",
+    "pronunciation": "/ˈdentɪst/",
+    "example_en": "I go to the dentist twice a year.",
+    "example_ka": "წელიწადში ორჯერ მივდივარ სტომატოლოგთან.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "journalist",
+    "georgian": "ჟურნალისტი",
+    "pronunciation": "/ˈdʒɜːrnəlɪst/",
+    "example_en": "The journalist wrote an interesting article.",
+    "example_ka": "ჟურნალისტმა საინტერესო სტატია დაწერა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "programmer",
+    "georgian": "პროგრამისტი",
+    "pronunciation": "/ˈproʊɡræmər/",
+    "example_en": "The programmer fixed the bug.",
+    "example_ka": "პროგრამისტმა შეცდომა გაასწორა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "designer",
+    "georgian": "დიზაინერი",
+    "pronunciation": "/dɪˈzaɪnər/",
+    "example_en": "The designer created a new logo.",
+    "example_ka": "დიზაინერმა ახალი ლოგო შექმნა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "mechanic",
+    "georgian": "მექანიკოსი",
+    "pronunciation": "/mɪˈkænɪk/",
+    "example_en": "The mechanic repaired my car.",
+    "example_ka": "მექანიკოსმა მანქანა შემიკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "electrician",
+    "georgian": "ელექტრიკოსი",
+    "pronunciation": "/ɪˌlekˈtrɪʃn/",
+    "example_en": "Call the electrician to fix the wiring.",
+    "example_ka": "გაყვანილობის შესაკეთებლად ელექტრიკოსს გამოიძახე.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "plumber",
+    "georgian": "სანტექნიკოსი",
+    "pronunciation": "/ˈplʌmər/",
+    "example_en": "The plumber fixed the broken pipe.",
+    "example_ka": "სანტექნიკოსმა გატეხილი მილი შეაკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "driver",
+    "georgian": "მძღოლი",
+    "pronunciation": "/ˈdraɪvər/",
+    "example_en": "The bus driver was very friendly.",
+    "example_ka": "ავტობუსის მძღოლი ძალიან მეგობრული იყო.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "waiter",
+    "georgian": "მიმტანი",
+    "pronunciation": "/ˈweɪtər/",
+    "example_en": "The waiter brought the menu.",
+    "example_ka": "მიმტანმა მენიუ მოიტანა.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "baker",
+    "georgian": "მცხობელი",
+    "pronunciation": "/ˈbeɪkər/",
+    "example_en": "The baker makes fresh bread every morning.",
+    "example_ka": "მცხობელი ყოველ დილით ახალ პურს აცხობს.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "barber",
+    "georgian": "პარიკმახერი",
+    "pronunciation": "/ˈbɑːrbər/",
+    "example_en": "I go to the barber once a month.",
+    "example_ka": "თვეში ერთხელ პარიკმახერთან მივდივარ.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "photographer",
+    "georgian": "ფოტოგრაფი",
+    "pronunciation": "/fəˈtɒɡrəfər/",
+    "example_en": "The photographer took beautiful pictures.",
+    "example_ka": "ფოტოგრაფმა ლამაზი ფოტოები გადაიღო.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "salary",
+    "georgian": "ხელფასი",
+    "pronunciation": "/ˈsæləri/",
+    "example_en": "His salary increased this year.",
+    "example_ka": "წელს მისი ხელფასი გაიზარდა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "interview",
+    "georgian": "გასაუბრება",
+    "pronunciation": "/ˈɪntərvjuː/",
+    "example_en": "I have a job interview tomorrow.",
+    "example_ka": "ხვალ სამსახურის გასაუბრება მაქვს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "resume",
+    "georgian": "რეზიუმე",
+    "pronunciation": "/ˈrezjuːmeɪ/",
+    "example_en": "Send your resume to the company.",
+    "example_ka": "რეზიუმე კომპანიას გაუგზავნე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "apply",
+    "georgian": "განაცხადის შეტანა",
+    "pronunciation": "/əˈplaɪ/",
+    "example_en": "I applied for three jobs.",
+    "example_ka": "სამ ვაკანსიაზე შევიტანე განაცხადი.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "hire",
+    "georgian": "დაქირავება",
+    "pronunciation": "/ˈhaɪər/",
+    "example_en": "The company hired ten new employees.",
+    "example_ka": "კომპანიამ ათი ახალი თანამშრომელი დაიქირავა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "fire",
+    "georgian": "გათავისუფლება",
+    "pronunciation": "/ˈfaɪər/",
+    "example_en": "He was fired from his job.",
+    "example_ka": "ის სამსახურიდან გაათავისუფლეს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "retire",
+    "georgian": "პენსიაზე გასვლა",
+    "pronunciation": "/rɪˈtaɪər/",
+    "example_en": "She retired at 65.",
+    "example_ka": "ის 65 წლის ასაკში გავიდა პენსიაზე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "promotion",
+    "georgian": "დაწინაურება",
+    "pronunciation": "/prəˈmoʊʃn/",
+    "example_en": "She got a promotion at work.",
+    "example_ka": "სამსახურში დაწინაურდა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "colleague",
+    "georgian": "კოლეგა",
+    "pronunciation": "/ˈkɒliːɡ/",
+    "example_en": "My colleague helped me with the project.",
+    "example_ka": "კოლეგამ პროექტში დამეხმარა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "boss",
+    "georgian": "უფროსი",
+    "pronunciation": "/bɒs/",
+    "example_en": "My boss approved my vacation.",
+    "example_ka": "უფროსმა შვებულება დამიმტკიცა.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "manager",
+    "georgian": "მენეჯერი",
+    "pronunciation": "/ˈmænɪdʒər/",
+    "example_en": "The manager organized the meeting.",
+    "example_ka": "მენეჯერმა შეხვედრა მოაწყო.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "employee",
+    "georgian": "თანამშრომელი",
+    "pronunciation": "/ɪmˈplɔɪiː/",
+    "example_en": "The company has 200 employees.",
+    "example_ka": "კომპანიას 200 თანამშრომელი ჰყავს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "employer",
+    "georgian": "დამსაქმებელი",
+    "pronunciation": "/ɪmˈplɔɪər/",
+    "example_en": "The employer offers good benefits.",
+    "example_ka": "დამსაქმებელი კარგ ბენეფიტებს სთავაზობს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "experience",
+    "georgian": "გამოცდილება",
+    "pronunciation": "/ɪkˈspɪəriəns/",
+    "example_en": "She has five years of experience.",
+    "example_ka": "მას ხუთწლიანი გამოცდილება აქვს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "skill",
+    "georgian": "უნარი",
+    "pronunciation": "/skɪl/",
+    "example_en": "Communication is an important skill.",
+    "example_ka": "კომუნიკაცია მნიშვნელოვანი უნარია.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "career",
+    "georgian": "კარიერა",
+    "pronunciation": "/kəˈrɪər/",
+    "example_en": "She changed her career at 40.",
+    "example_ka": "მან 40 წლის ასაკში კარიერა შეიცვალა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "part-time",
+    "georgian": "ნახევარ განაკვეთზე",
+    "pronunciation": "/pɑːrt taɪm/",
+    "example_en": "She works part-time at the cafe.",
+    "example_ka": "ის კაფეში ნახევარ განაკვეთზე მუშაობს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "full-time",
+    "georgian": "სრულ განაკვეთზე",
+    "pronunciation": "/fʊl taɪm/",
+    "example_en": "I work full-time at the office.",
+    "example_ka": "ოფისში სრულ განაკვეთზე ვმუშაობ.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "freelancer",
+    "georgian": "ფრილანსერი",
+    "pronunciation": "/ˈfriːlænsər/",
+    "example_en": "He works as a freelancer from home.",
+    "example_ka": "ის სახლიდან მუშაობს ფრილანსერად.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "intern",
+    "georgian": "სტაჟიორი",
+    "pronunciation": "/ˈɪntɜːrn/",
+    "example_en": "The intern is learning quickly.",
+    "example_ka": "სტაჟიორი სწრაფად სწავლობს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "vacancy",
+    "georgian": "ვაკანსია",
+    "pronunciation": "/ˈveɪkənsi/",
+    "example_en": "There are two vacancies in our department.",
+    "example_ka": "ჩვენს განყოფილებაში ორი ვაკანსიაა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "deadline",
+    "georgian": "ვადა",
+    "pronunciation": "/ˈdedlaɪn/",
+    "example_en": "The deadline is next Friday.",
+    "example_ka": "ვადა მომავალ პარასკევს იწურება.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "meeting",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/ˈmiːtɪŋ/",
+    "example_en": "We have a meeting at 10 AM.",
+    "example_ka": "10 საათზე შეხვედრა გვაქვს.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "project",
+    "georgian": "პროექტი",
+    "pronunciation": "/ˈprɒdʒekt/",
+    "example_en": "We finished the project on time.",
+    "example_ka": "პროექტი დროულად დავასრულეთ.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "overtime",
+    "georgian": "ზეგანაკვეთური",
+    "pronunciation": "/ˈoʊvərtaɪm/",
+    "example_en": "I worked overtime yesterday.",
+    "example_ka": "გუშინ ზეგანაკვეთურად ვიმუშავე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "contract",
+    "georgian": "ხელშეკრულება",
+    "pronunciation": "/ˈkɒntrækt/",
+    "example_en": "I signed a one-year contract.",
+    "example_ka": "ერთწლიანი ხელშეკრულება მოვაწერე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "secretary",
+    "georgian": "მდივანი",
+    "pronunciation": "/ˈsekrətəri/",
+    "example_en": "The secretary scheduled the appointment.",
+    "example_ka": "მდივანმა შეხვედრა დაგეგმა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "receptionist",
+    "georgian": "მიმღები",
+    "pronunciation": "/rɪˈsepʃənɪst/",
+    "example_en": "The receptionist answered the phone.",
+    "example_ka": "მიმღებმა ტელეფონს უპასუხა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "cashier",
+    "georgian": "კასირი",
+    "pronunciation": "/kæˈʃɪər/",
+    "example_en": "The cashier counted the money.",
+    "example_ka": "კასირმა ფული დათვალა.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "salesperson",
+    "georgian": "გამყიდველი",
+    "pronunciation": "/ˈseɪlzpɜːrsən/",
+    "example_en": "The salesperson was very helpful.",
+    "example_ka": "გამყიდველი ძალიან დამხმარე იყო.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "consultant",
+    "georgian": "კონსულტანტი",
+    "pronunciation": "/kənˈsʌltənt/",
+    "example_en": "We hired a business consultant.",
+    "example_ka": "ბიზნეს კონსულტანტი დავქირავეთ.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "supervisor",
+    "georgian": "ზედამხედველი",
+    "pronunciation": "/ˈsuːpərvaɪzər/",
+    "example_en": "The supervisor checked our work.",
+    "example_ka": "ზედამხედველმა ჩვენი სამუშაო შეამოწმა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "director",
+    "georgian": "დირექტორი",
+    "pronunciation": "/dəˈrektər/",
+    "example_en": "The director made the final decision.",
+    "example_ka": "დირექტორმა საბოლოო გადაწყვეტილება მიიღო.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "executive",
+    "georgian": "აღმასრულებელი",
+    "pronunciation": "/ɪɡˈzekjətɪv/",
+    "example_en": "She's a senior executive at the company.",
+    "example_ka": "ის კომპანიაში უფროსი აღმასრულებელია.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "administrator",
+    "georgian": "ადმინისტრატორი",
+    "pronunciation": "/ədˈmɪnɪstreɪtər/",
+    "example_en": "The administrator handles all paperwork.",
+    "example_ka": "ადმინისტრატორი ყველა დოკუმენტს ამუშავებს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "coordinator",
+    "georgian": "კოორდინატორი",
+    "pronunciation": "/koʊˈɔːrdɪneɪtər/",
+    "example_en": "The project coordinator organized the team.",
+    "example_ka": "პროექტის კოორდინატორმა გუნდი მოაწესრიგა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "analyst",
+    "georgian": "ანალიტიკოსი",
+    "pronunciation": "/ˈænəlɪst/",
+    "example_en": "The financial analyst reviewed the reports.",
+    "example_ka": "ფინანსურმა ანალიტიკოსმა ანგარიშები განიხილა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "specialist",
+    "georgian": "სპეციალისტი",
+    "pronunciation": "/ˈspeʃəlɪst/",
+    "example_en": "We need a marketing specialist.",
+    "example_ka": "მარკეტინგის სპეციალისტი გვჭირდება.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "technician",
+    "georgian": "ტექნიკოსი",
+    "pronunciation": "/tekˈnɪʃən/",
+    "example_en": "The technician fixed the computer.",
+    "example_ka": "ტექნიკოსმა კომპიუტერი შეაკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "scientist",
+    "georgian": "მეცნიერი",
+    "pronunciation": "/ˈsaɪəntɪst/",
+    "example_en": "The scientist discovered a new element.",
+    "example_ka": "მეცნიერმა ახალი ელემენტი აღმოაჩინა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "researcher",
+    "georgian": "მკვლევარი",
+    "pronunciation": "/rɪˈsɜːrtʃər/",
+    "example_en": "The researcher published important findings.",
+    "example_ka": "მკვლევარმა მნიშვნელოვანი აღმოჩენები გამოაქვეყნა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "librarian",
+    "georgian": "ბიბლიოთეკარი",
+    "pronunciation": "/laɪˈbreriən/",
+    "example_en": "The librarian helped me find the book.",
+    "example_ka": "ბიბლიოთეკარმა წიგნის პოვნაში დამეხმარა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "counselor",
+    "georgian": "კონსულტანტი",
+    "pronunciation": "/ˈkaʊnsələr/",
+    "example_en": "The career counselor gave good advice.",
+    "example_ka": "კარიერის კონსულტანტმა კარგი რჩევა მისცა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "translator",
+    "georgian": "თარჯიმანი",
+    "pronunciation": "/trænsˈleɪtər/",
+    "example_en": "The translator speaks five languages.",
+    "example_ka": "თარჯიმანი ხუთ ენაზე ლაპარაკობს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "interpreter",
+    "georgian": "თარჯიმანი",
+    "pronunciation": "/ɪnˈtɜːrprətər/",
+    "example_en": "The interpreter helped during the meeting.",
+    "example_ka": "თარჯიმანმა შეხვედრისას დამეხმარა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "artist",
+    "georgian": "მხატვარი",
+    "pronunciation": "/ˈɑːrtɪst/",
+    "example_en": "The artist painted a beautiful landscape.",
+    "example_ka": "მხატვარმა ლამაზი პეიზაჟი დახატა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "musician",
+    "georgian": "მუსიკოსი",
+    "pronunciation": "/mjuˈzɪʃən/",
+    "example_en": "The musician played guitar beautifully.",
+    "example_ka": "მუსიკოსმა გიტარაზე ლამაზად დაუკრა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "actor",
+    "georgian": "მსახიობი",
+    "pronunciation": "/ˈæktər/",
+    "example_en": "The actor performed brilliantly.",
+    "example_ka": "მსახიობმა შესანიშნავად იმსახურა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "dancer",
+    "georgian": "მოცეკვავე",
+    "pronunciation": "/ˈdænsər/",
+    "example_en": "The dancer moved gracefully.",
+    "example_ka": "მოცეკვავე გრაციულად მოძრაობდა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "writer",
+    "georgian": "მწერალი",
+    "pronunciation": "/ˈraɪtər/",
+    "example_en": "The writer published a new novel.",
+    "example_ka": "მწერალმა ახალი რომანი გამოაქვეყნა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "editor",
+    "georgian": "რედაქტორი",
+    "pronunciation": "/ˈedɪtər/",
+    "example_en": "The editor reviewed the manuscript.",
+    "example_ka": "რედაქტორმა ხელნაწერი განიხილა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "producer",
+    "georgian": "პროდიუსერი",
+    "pronunciation": "/prəˈduːsər/",
+    "example_en": "The producer financed the movie.",
+    "example_ka": "პროდიუსერმა ფილმი დააფინანსა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "surgeon",
+    "georgian": "ქირურგი",
+    "pronunciation": "/ˈsɜːrdʒən/",
+    "example_en": "The surgeon performed a complex operation.",
+    "example_ka": "ქირურგმა რთული ოპერაცია ჩაატარა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "veterinarian",
+    "georgian": "ვეტერინარი",
+    "pronunciation": "/ˌvetərəˈneriən/",
+    "example_en": "The veterinarian examined my dog.",
+    "example_ka": "ვეტერინარმა ძაღლი გამოიკვლია.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "pharmacist",
+    "georgian": "ფარმაცევტი",
+    "pronunciation": "/ˈfɑːrməsɪst/",
+    "example_en": "The pharmacist prepared the medicine.",
+    "example_ka": "ფარმაცევტმა წამალი მოამზადა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "therapist",
+    "georgian": "თერაპევტი",
+    "pronunciation": "/ˈθerəpɪst/",
+    "example_en": "The therapist helped with my recovery.",
+    "example_ka": "თერაპევტმა გამოჯანმრთელებაში დამეხმარა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "psychologist",
+    "georgian": "ფსიქოლოგი",
+    "pronunciation": "/saɪˈkɑːlədʒɪst/",
+    "example_en": "The psychologist studied human behavior.",
+    "example_ka": "ფსიქოლოგმა ადამიანის ქცევა შეისწავლა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "sociologist",
+    "georgian": "სოციოლოგი",
+    "pronunciation": "/ˌsoʊsiˈɑːlədʒɪst/",
+    "example_en": "The sociologist researched social trends.",
+    "example_ka": "სოციოლოგმა სოციალური ტენდენციები შეისწავლა.",
+    "category": "jobs-careers",
+    "level": "C1"
+  },
+  {
+    "english": "anthropologist",
+    "georgian": "ანთროპოლოგი",
+    "pronunciation": "/ˌænθrəˈpɑːlədʒɪst/",
+    "example_en": "The anthropologist studied ancient cultures.",
+    "example_ka": "ანთროპოლოგმა უძველესი კულტურები შეისწავლა.",
+    "category": "jobs-careers",
+    "level": "C1"
+  },
+  {
+    "english": "economist",
+    "georgian": "ეკონომისტი",
+    "pronunciation": "/ɪˈkɑːnəmɪst/",
+    "example_en": "The economist predicted market changes.",
+    "example_ka": "ეკონომისტმა ბაზრის ცვლილებები წინასწარმეტყველა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "statistician",
+    "georgian": "სტატისტიკოსი",
+    "pronunciation": "/ˌstætɪˈstɪʃən/",
+    "example_en": "The statistician analyzed the data.",
+    "example_ka": "სტატისტიკოსმა მონაცემები გააანალიზა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "meteorologist",
+    "georgian": "მეტეოროლოგი",
+    "pronunciation": "/ˌmiːtiəˈrɑːlədʒɪst/",
+    "example_en": "The meteorologist forecasted rain.",
+    "example_ka": "მეტეოროლოგმა წვიმა იწინასწარმეტყველა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "geologist",
+    "georgian": "გეოლოგი",
+    "pronunciation": "/dʒiˈɑːlədʒɪst/",
+    "example_en": "The geologist studied rock formations.",
+    "example_ka": "გეოლოგმა კლდოვანი ფორმაციები შეისწავლა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "biologist",
+    "georgian": "ბიოლოგი",
+    "pronunciation": "/baɪˈɑːlədʒɪst/",
+    "example_en": "The biologist researched marine life.",
+    "example_ka": "ბიოლოგმა ზღვის ცხოველები შეისწავლა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "chemist",
+    "georgian": "ქიმიკოსი",
+    "pronunciation": "/ˈkemɪst/",
+    "example_en": "The chemist developed new materials.",
+    "example_ka": "ქიმიკოსმა ახალი მასალები შექმნა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "physicist",
+    "georgian": "ფიზიკოსი",
+    "pronunciation": "/ˈfɪzəsɪst/",
+    "example_en": "The physicist studied quantum mechanics.",
+    "example_ka": "ფიზიკოსმა კვანტური მექანიკა შეისწავლა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "astronomer",
+    "georgian": "ასტრონომი",
+    "pronunciation": "/əˈstrɑːnəmər/",
+    "example_en": "The astronomer discovered a new star.",
+    "example_ka": "ასტრონომმა ახალი ვარსკვლავი აღმოაჩინა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "astronaut",
+    "georgian": "ასტრონავტი",
+    "pronunciation": "/ˈæstrənɔːt/",
+    "example_en": "The astronaut traveled to space.",
+    "example_ka": "ასტრონავტი კოსმოსში გაფრინდა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "captain",
+    "georgian": "კაპიტანი",
+    "pronunciation": "/ˈkæptən/",
+    "example_en": "The ship captain navigated safely.",
+    "example_ka": "გემის კაპიტანმა უსაფრთხოდ იჰგზავნა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "sailor",
+    "georgian": "მეზღვაური",
+    "pronunciation": "/ˈseɪlər/",
+    "example_en": "The sailor worked on a cruise ship.",
+    "example_ka": "მეზღვაური საკრუიზო გემზე მუშაობდა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "soldier",
+    "georgian": "ჯარისკაცი",
+    "pronunciation": "/ˈsoʊldʒər/",
+    "example_en": "The soldier served his country.",
+    "example_ka": "ჯარისკაცმა ქვეყანას ემსახურა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "police",
+    "georgian": "პოლიციელი",
+    "pronunciation": "/pəˈliːs/",
+    "example_en": "The police officer helped the child.",
+    "example_ka": "პოლიციელმა ბავშვს დაეხმარა.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "judge",
+    "georgian": "მოსამართლე",
+    "pronunciation": "/dʒʌdʒ/",
+    "example_en": "The judge made a fair decision.",
+    "example_ka": "მოსამართლემ სამართლიანი გადაწყვეტილება მიიღო.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "prosecutor",
+    "georgian": "პროკურორი",
+    "pronunciation": "/ˈprɑːsɪkjuːtər/",
+    "example_en": "The prosecutor presented the evidence.",
+    "example_ka": "პროკურორმა მტკიცებულებები წარმოადგინა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "detective",
+    "georgian": "დეტექტივი",
+    "pronunciation": "/dɪˈtektɪv/",
+    "example_en": "The detective solved the mystery.",
+    "example_ka": "დეტექტივმა საიდუმლო გახსნა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "guard",
+    "georgian": "მცველი",
+    "pronunciation": "/ɡɑːrd/",
+    "example_en": "The security guard checked IDs.",
+    "example_ka": "უსაფრთხოების მცველმა პირადობები შეამოწმა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "paramedic",
+    "georgian": "ფელშერი",
+    "pronunciation": "/ˌpærəˈmedɪk/",
+    "example_en": "The paramedic provided first aid.",
+    "example_ka": "ფელშერმა პირველადი დახმარება გაუწია.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "construction",
+    "georgian": "მშენებლობა",
+    "pronunciation": "/kənˈstrʌkʃən/",
+    "example_en": "He works in construction.",
+    "example_ka": "ის მშენებლობაში მუშაობს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "carpenter",
+    "georgian": "მებეჭვი",
+    "pronunciation": "/ˈkɑːrpəntər/",
+    "example_en": "The carpenter built custom furniture.",
+    "example_ka": "მებეჭვმა სპეციალური ავეჯი გააკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "painter",
+    "georgian": "მალიარი",
+    "pronunciation": "/ˈpeɪntər/",
+    "example_en": "The painter finished the walls.",
+    "example_ka": "მალიარმა კედლები დაასრულა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "decorator",
+    "georgian": "დეკორატორი",
+    "pronunciation": "/ˈdekəreɪtər/",
+    "example_en": "The interior decorator redesigned the room.",
+    "example_ka": "ინტერიერის დეკორატორმა ოთახი ხელახლა დიზაინი გაუკეთა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "cleaner",
+    "georgian": "დამწმენდი",
+    "pronunciation": "/ˈkliːnər/",
+    "example_en": "The office cleaner works at night.",
+    "example_ka": "ოფისის დამწმენდი ღამით მუშაობს.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "janitor",
+    "georgian": "კარაული",
+    "pronunciation": "/ˈdʒænɪtər/",
+    "example_en": "The janitor maintains the building.",
+    "example_ka": "კარაული შენობას უვლის.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "gardener",
+    "georgian": "მებაღე",
+    "pronunciation": "/ˈɡɑːrdnər/",
+    "example_en": "The gardener planted new flowers.",
+    "example_ka": "მებაღემ ახალი ყვავილები დარგო.",
+    "category": "jobs-careers",
+    "level": "A1"
+  },
+  {
+    "english": "florist",
+    "georgian": "ყვავილების გამყიდველი",
+    "pronunciation": "/ˈflɔːrɪst/",
+    "example_en": "The florist arranged beautiful bouquets.",
+    "example_ka": "ყვავილების გამყიდველმა ლამაზი ბუკეტები მოაწყო.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "trainer",
+    "georgian": "ტრენერი",
+    "pronunciation": "/ˈtreɪnər/",
+    "example_en": "The fitness trainer helped me exercise.",
+    "example_ka": "ფიტნეს ტრენერმა ვარჯიშში დამეხმარა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "coach",
+    "georgian": "მწვრთნელი",
+    "pronunciation": "/koʊtʃ/",
+    "example_en": "The basketball coach trained the team.",
+    "example_ka": "კალათბურთის მწვრთნელმა გუნდი ივარჯიშა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "referee",
+    "georgian": "რეფერი",
+    "pronunciation": "/ˌrefəˈriː/",
+    "example_en": "The referee made fair decisions.",
+    "example_ka": "რეფერმა სამართლიანი გადაწყვეტილებები მიიღო.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "athlete",
+    "georgian": "სპორტსმენი",
+    "pronunciation": "/ˈæθliːt/",
+    "example_en": "The athlete won a gold medal.",
+    "example_ka": "სპორტსმენმა ოქროს მედალი მოიგო.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "hairdresser",
+    "georgian": "კაფეურის მუშაკი",
+    "pronunciation": "/ˈhɛrˌdresər/",
+    "example_en": "The hairdresser styled my hair beautifully.",
+    "example_ka": "კაფეურის მუშაკმა თმები ლამაზად მოუწყო.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "beautician",
+    "georgian": "კოსმეტოლოგი",
+    "pronunciation": "/bjuˈtɪʃən/",
+    "example_en": "The beautician gave me a facial treatment.",
+    "example_ka": "კოსმეტოლოგმა სახის პროცედურები გამიკეთა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "massage",
+    "georgian": "მასაჟისტი",
+    "pronunciation": "/məˈsɑːʒ/",
+    "example_en": "The massage therapist relaxed my muscles.",
+    "example_ka": "მასაჟისტმა ძვლები გამიშვა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "tailor",
+    "georgian": "მკერავი",
+    "pronunciation": "/ˈteɪlər/",
+    "example_en": "The tailor altered my suit perfectly.",
+    "example_ka": "მკერავმა კოსტიუმი სრულყოფილად შეასწორა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "jeweler",
+    "georgian": "საუბრეების მაღაზიის უფროსი",
+    "pronunciation": "/ˈdʒuːələr/",
+    "example_en": "The jeweler repaired my watch.",
+    "example_ka": "საუბრეების მაღაზიის უფროსმა საათი შემაკეთა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "optician",
+    "georgian": "ოპტიკოსი",
+    "pronunciation": "/ɑːpˈtɪʃən/",
+    "example_en": "The optician fitted new glasses.",
+    "example_ka": "ოპტიკოსმა ახალი სათვალე გამომირჩია.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "watchmaker",
+    "georgian": "საათის ოსტატი",
+    "pronunciation": "/ˈwɑːtʃmeɪkər/",
+    "example_en": "The watchmaker repaired antique clocks.",
+    "example_ka": "საათის ოსტატმა ანტიკური საათები შეაკეთა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "locksmith",
+    "georgian": "კეტძევი",
+    "pronunciation": "/ˈlɑːksmɪθ/",
+    "example_en": "The locksmith made duplicate keys.",
+    "example_ka": "კეტძევმა გასაღების ასლები გააკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "shoemaker",
+    "georgian": "ფეხსაცმლის შემკეთებელი",
+    "pronunciation": "/ˈʃuːmeɪkər/",
+    "example_en": "The shoemaker repaired my boots.",
+    "example_ka": "ფეხსაცმლის შემკეთებელმა ჩექმები შემაკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "upholsterer",
+    "georgian": "ავეჯის მბურველი",
+    "pronunciation": "/ʌpˈhoʊlstərər/",
+    "example_en": "The upholsterer reupholstered our sofa.",
+    "example_ka": "ავეჯის მბურველმა დივანი ხელახლა გააყო.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "blacksmith",
+    "georgian": "მჭედელი",
+    "pronunciation": "/ˈblæksmɪθ/",
+    "example_en": "The blacksmith forged iron tools.",
+    "example_ka": "მჭედელმა რკინის იარაღები გააკეთა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "welder",
+    "georgian": "შემდუღებელი",
+    "pronunciation": "/ˈweldər/",
+    "example_en": "The welder joined metal pieces together.",
+    "example_ka": "შემდუღებელმა ლითონის ნაწილები შეაერთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "mason",
+    "georgian": "ქვის მშენებელი",
+    "pronunciation": "/ˈmeɪsən/",
+    "example_en": "The mason built a stone wall.",
+    "example_ka": "ქვის მშენებელმა ქვის კედელი ააგო.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "roofer",
+    "georgian": "სახურავის ოსტატი",
+    "pronunciation": "/ˈruːfər/",
+    "example_en": "The roofer fixed the leak.",
+    "example_ka": "სახურავის ოსტატმა ნაპრალი შეაკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "glazier",
+    "georgian": "შუშის ოსტატი",
+    "pronunciation": "/ˈɡleɪziər/",
+    "example_en": "The glazier installed new windows.",
+    "example_ka": "შუშის ოსტატმა ახალი ფანჯრები ჩადგა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "installer",
+    "georgian": "ინსტალატორი",
+    "pronunciation": "/ɪnˈstɔːlər/",
+    "example_en": "The cable installer fixed our internet.",
+    "example_ka": "კაბელის ინსტალატორმა ინტერნეტი შეაკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "repairman",
+    "georgian": "შემკეთებელი",
+    "pronunciation": "/rɪˈpɛrmən/",
+    "example_en": "The repairman fixed our washing machine.",
+    "example_ka": "შემკეთებელმა სარეცხი მანქანა შეაკეთა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "handyman",
+    "georgian": "ყველაფერი მცოდნე",
+    "pronunciation": "/ˈhændimæn/",
+    "example_en": "The handyman can fix anything.",
+    "example_ka": "ყველაფერი მცოდნეს ყველაფრის შეკეთება შეუძლია.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "inspector",
+    "georgian": "ინსპექტორი",
+    "pronunciation": "/ɪnˈspektər/",
+    "example_en": "The building inspector checked the structure.",
+    "example_ka": "შენობის ინსპექტორმა სტრუქტურა შეამოწმა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "surveyor",
+    "georgian": "მიწათმცოდნე",
+    "pronunciation": "/sərˈveɪər/",
+    "example_en": "The land surveyor measured the property.",
+    "example_ka": "მიწათმცოდნემ ქონება გაზომა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "appraiser",
+    "georgian": "შემფასებელი",
+    "pronunciation": "/əˈpreɪzər/",
+    "example_en": "The appraiser valued the house.",
+    "example_ka": "შემფასებელმა სახლი შეაფასა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "auditor",
+    "georgian": "აუდიტორი",
+    "pronunciation": "/ˈɔːdɪtər/",
+    "example_en": "The auditor reviewed the financial records.",
+    "example_ka": "აუდიტორმა ფინანსური ჩანაწერები განიხილა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "broker",
+    "georgian": "ბროკერი",
+    "pronunciation": "/ˈbroʊkər/",
+    "example_en": "The stock broker advised on investments.",
+    "example_ka": "საფონდო ბროკერმა ინვესტიციების შესახებ რჩევა მისცა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "banker",
+    "georgian": "ბანკირი",
+    "pronunciation": "/ˈbæŋkər/",
+    "example_en": "The banker approved the loan.",
+    "example_ka": "ბანკირმა სესხი დაამტკიცა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "teller",
+    "georgian": "კასირი",
+    "pronunciation": "/ˈtelər/",
+    "example_en": "The bank teller processed my deposit.",
+    "example_ka": "ბანკის კასირმა ჩემი ანაბარი გაიტანა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "clerk",
+    "georgian": "კლერკი",
+    "pronunciation": "/klɜːrk/",
+    "example_en": "The store clerk helped me find items.",
+    "example_ka": "მაღაზიის კლერკმა ნივთების პოვნაში დამეხმარა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "vendor",
+    "georgian": "გამყიდველი",
+    "pronunciation": "/ˈvendər/",
+    "example_en": "The street vendor sold fresh fruit.",
+    "example_ka": "ქუჩის გამყიდველი ახალ ხილს ყიდდა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "merchant",
+    "georgian": "ვაჭარი",
+    "pronunciation": "/ˈmɜːrtʃənt/",
+    "example_en": "The merchant traded goods internationally.",
+    "example_ka": "ვაჭარი საერთაშორისოდ ვაჭრობდა საქონლით.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "entrepreneur",
+    "georgian": "მეწარმე",
+    "pronunciation": "/ˌɑːntrəprəˈnɜːr/",
+    "example_en": "The entrepreneur started three companies.",
+    "example_ka": "მეწარმემ სამი კომპანია დაარსა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "investor",
+    "georgian": "ინვესტორი",
+    "pronunciation": "/ɪnˈvestər/",
+    "example_en": "The investor funded the startup.",
+    "example_ka": "ინვესტორმა სტარტაპი დააფინანსა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "landlord",
+    "georgian": "მეპატრონე",
+    "pronunciation": "/ˈlændlɔːrd/",
+    "example_en": "The landlord rented the apartment.",
+    "example_ka": "მეპატრონემ ბინა გაქირავა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "tenant",
+    "georgian": "მოიჯარე",
+    "pronunciation": "/ˈtenənt/",
+    "example_en": "The tenant pays rent monthly.",
+    "example_ka": "მოიჯარე ყოველთვიურად იხდის ქირას.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "agent",
+    "georgian": "აგენტი",
+    "pronunciation": "/ˈeɪdʒənt/",
+    "example_en": "The real estate agent showed houses.",
+    "example_ka": "უძრავი ქონების აგენტმა სახლები აჩვენა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "representative",
+    "georgian": "წარმომადგენელი",
+    "pronunciation": "/ˌreprɪˈzentətɪv/",
+    "example_en": "The sales representative visited clients.",
+    "example_ka": "გაყიდვების წარმომადგენელმა კლიენტები მოინახულა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "ambassador",
+    "georgian": "ელჩი",
+    "pronunciation": "/æmˈbæsədər/",
+    "example_en": "The ambassador represented his country.",
+    "example_ka": "ელჩმა თავისი ქვეყანა წარმოადგინა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "diplomat",
+    "georgian": "დიპლომატი",
+    "pronunciation": "/ˈdɪpləmæt/",
+    "example_en": "The diplomat negotiated peace treaties.",
+    "example_ka": "დიპლომატმა მშვიდობის ხელშეკრულებები იმოლაპარაკა.",
+    "category": "jobs-careers",
+    "level": "C1"
+  },
+  {
+    "english": "politician",
+    "georgian": "პოლიტიკოსი",
+    "pronunciation": "/ˌpɑːləˈtɪʃən/",
+    "example_en": "The politician gave a speech.",
+    "example_ka": "პოლიტიკოსმა სიტყვა წარმოთქვა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "mayor",
+    "georgian": "მერი",
+    "pronunciation": "/ˈmeɪər/",
+    "example_en": "The mayor opened the new park.",
+    "example_ka": "მერმა ახალი პარკი გახსნა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "governor",
+    "georgian": "გუბერნატორი",
+    "pronunciation": "/ˈɡʌvərnər/",
+    "example_en": "The governor signed the new law.",
+    "example_ka": "გუბერნატორმა ახალ კანონზე ხელი მოაწერა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "president",
+    "georgian": "პრეზიდენტი",
+    "pronunciation": "/ˈprezɪdənt/",
+    "example_en": "The president addressed the nation.",
+    "example_ka": "პრეზიდენტმა ერს მიმართა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "minister",
+    "georgian": "მინისტრი",
+    "pronunciation": "/ˈmɪnɪstər/",
+    "example_en": "The minister announced new policies.",
+    "example_ka": "მინისტრმა ახალი პოლიტიკა გამოაცხადა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "senator",
+    "georgian": "სენატორი",
+    "pronunciation": "/ˈsenətər/",
+    "example_en": "The senator voted on the bill.",
+    "example_ka": "სენატორმა კანონპროექტზე ხმა მისცა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "congressman",
+    "georgian": "კონგრესმენი",
+    "pronunciation": "/ˈkɒŋɡrəsmən/",
+    "example_en": "The congressman represented his district.",
+    "example_ka": "კონგრესმენმა თავისი რაიონი წარმოადგინა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "chancellor",
+    "georgian": "კანცლერი",
+    "pronunciation": "/ˈtʃænsələr/",
+    "example_en": "The university chancellor welcomed students.",
+    "example_ka": "უნივერსიტეტის კანცლერმა სტუდენტები მიესალმა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "commissioner",
+    "georgian": "კომისარი",
+    "pronunciation": "/kəˈmɪʃənər/",
+    "example_en": "The police commissioner held a press conference.",
+    "example_ka": "პოლიციის კომისარმა პრესკონფერენცია გამართა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "advancement",
+    "georgian": "დაწინაურება",
+    "pronunciation": "/ədˈvænsmənt/",
+    "example_en": "Career advancement takes time.",
+    "example_ka": "კარიერული დაწინაურება დროს მოითხოვს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "apprentice",
+    "georgian": "შეგირდი",
+    "pronunciation": "/əˈprentɪs/",
+    "example_en": "He works as an apprentice.",
+    "example_ka": "ის შეგირდად მუშაობს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "aptitude",
+    "georgian": "უნარი",
+    "pronunciation": "/ˈæptɪtjuːd/",
+    "example_en": "She has an aptitude for math.",
+    "example_ka": "მათემატიკის უნარი აქვს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "aspiration",
+    "georgian": "მისწრაფება",
+    "pronunciation": "/ˌæspɪˈreɪʃn/",
+    "example_en": "What are your career aspirations?",
+    "example_ka": "რა კარიერული მისწრაფებები გაქვს?",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "burnout",
+    "georgian": "გამოფიტვა",
+    "pronunciation": "/ˈbɜːrnaʊt/",
+    "example_en": "He suffered from burnout.",
+    "example_ka": "გამოფიტვით დაავადდა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "certification",
+    "georgian": "სერტიფიკაცია",
+    "pronunciation": "/ˌsɜːrtɪfɪˈkeɪʃn/",
+    "example_en": "Get a professional certification.",
+    "example_ka": "პროფესიული სერტიფიკაცია მიიღე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "competence",
+    "georgian": "კომპეტენცია",
+    "pronunciation": "/ˈkɒmpɪtəns/",
+    "example_en": "Demonstrate your competence.",
+    "example_ka": "შენი კომპეტენცია წარმოაჩინე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "credential",
+    "georgian": "კვალიფიკაცია",
+    "pronunciation": "/krɪˈdenʃl/",
+    "example_en": "List your credentials.",
+    "example_ka": "კვალიფიკაციები ჩამოწერე.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "curriculum",
+    "georgian": "სასწავლო გეგმა",
+    "pronunciation": "/kəˈrɪkjʊləm/",
+    "example_en": "Update your curriculum vitae.",
+    "example_ka": "სასწავლო გეგმა განაახლე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "downsize",
+    "georgian": "შემცირება",
+    "pronunciation": "/ˈdaʊnsaɪz/",
+    "example_en": "The company downsized.",
+    "example_ka": "კომპანიამ შეამცირა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "expertise",
+    "georgian": "ექსპერტიზა",
+    "pronunciation": "/ˌekspɜːrˈtiːz/",
+    "example_en": "Her expertise is in marketing.",
+    "example_ka": "მისი ექსპერტიზა მარკეტინგშია.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "freelance",
+    "georgian": "ფრილანსი",
+    "pronunciation": "/ˈfriːlæns/",
+    "example_en": "He works as a freelancer.",
+    "example_ka": "ის ფრილანსერად მუშაობს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "headhunter",
+    "georgian": "ჰედჰანტერი",
+    "pronunciation": "/ˈhedˌhʌntər/",
+    "example_en": "A headhunter contacted me.",
+    "example_ka": "ჰედჰანტერმა დამიკავშირდა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "internship",
+    "georgian": "სტაჟირება",
+    "pronunciation": "/ˈɪntɜːrnʃɪp/",
+    "example_en": "She did a summer internship.",
+    "example_ka": "მან ზაფხულის სტაჟირება გაიარა.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "ladder",
+    "georgian": "კიბე",
+    "pronunciation": "/ˈlædər/",
+    "example_en": "Climb the career ladder.",
+    "example_ka": "კარიერის კიბეზე აიარე.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "livelihood",
+    "georgian": "საარსებო",
+    "pronunciation": "/ˈlaɪvlihʊd/",
+    "example_en": "Farming is their livelihood.",
+    "example_ka": "მეურნეობა მათი საარსებოა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "mentoring",
+    "georgian": "მენტორობა",
+    "pronunciation": "/ˈmentɔːrɪŋ/",
+    "example_en": "Mentoring helps young professionals.",
+    "example_ka": "მენტორობა ახალგაზრდა პროფესიონალებს ეხმარება.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "moonlight",
+    "georgian": "მეორე სამსახური",
+    "pronunciation": "/ˈmuːnlaɪt/",
+    "example_en": "She moonlights as a tutor.",
+    "example_ka": "ის მეორე სამსახურად რეპეტიტორობს.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "networking",
+    "georgian": "ნეთვორკინგი",
+    "pronunciation": "/ˈnetwɜːrkɪŋ/",
+    "example_en": "Networking opens doors.",
+    "example_ka": "ნეთვორკინგი კარებს ხსნის.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "outsource",
+    "georgian": "აუთსორსინგი",
+    "pronunciation": "/ˈaʊtsɔːrs/",
+    "example_en": "They outsourced the project.",
+    "example_ka": "პროექტი აუთსორსზე გაიტანეს.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "pension",
+    "georgian": "პენსია",
+    "pronunciation": "/ˈpenʃn/",
+    "example_en": "He receives a pension.",
+    "example_ka": "ის პენსიას იღებს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "portfolio",
+    "georgian": "პორტფოლიო",
+    "pronunciation": "/pɔːrtˈfoʊlioʊ/",
+    "example_en": "Show your portfolio.",
+    "example_ka": "პორტფოლიო აჩვენე.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "probation",
+    "georgian": "გამოსაცდელი ვადა",
+    "pronunciation": "/proʊˈbeɪʃn/",
+    "example_en": "She is on probation.",
+    "example_ka": "ის გამოსაცდელ ვადაზეა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "proficiency",
+    "georgian": "ოსტატობა",
+    "pronunciation": "/prəˈfɪʃnsi/",
+    "example_en": "Show language proficiency.",
+    "example_ka": "ენის ოსტატობა წარმოაჩინე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "prospect",
+    "georgian": "პერსპექტივა",
+    "pronunciation": "/ˈprɒspekt/",
+    "example_en": "Job prospects are good.",
+    "example_ka": "სამუშაო პერსპექტივები კარგია.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "recruit",
+    "georgian": "რეკრუტირება",
+    "pronunciation": "/rɪˈkruːt/",
+    "example_en": "They recruited new staff.",
+    "example_ka": "ახალი პერსონალი აიყვანეს.",
+    "category": "jobs-careers",
+    "level": "A2"
+  },
+  {
+    "english": "redundancy",
+    "georgian": "რედუნდანტურობა",
+    "pronunciation": "/rɪˈdʌndənsi/",
+    "example_en": "He was made redundant.",
+    "example_ka": "ის რედუნდანტური გახადეს.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "relocate",
+    "georgian": "გადატანა",
+    "pronunciation": "/ˌriːloʊˈkeɪt/",
+    "example_en": "She relocated for work.",
+    "example_ka": "სამსახურის გამო გადასახლდა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "resignation",
+    "georgian": "გადადგომა",
+    "pronunciation": "/ˌrezɪɡˈneɪʃn/",
+    "example_en": "He submitted his resignation.",
+    "example_ka": "მან გადადგომის განცხადება შეიტანა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "sabbatical",
+    "georgian": "საბატიკალი",
+    "pronunciation": "/səˈbætɪkl/",
+    "example_en": "She took a sabbatical year.",
+    "example_ka": "მან საბატიკალი წელი აიღო.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "severance",
+    "georgian": "კომპენსაცია",
+    "pronunciation": "/ˈsevərəns/",
+    "example_en": "He received severance pay.",
+    "example_ka": "მან კომპენსაცია მიიღო.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "tenure",
+    "georgian": "თანამდებობის ვადა",
+    "pronunciation": "/ˈtenjər/",
+    "example_en": "Her tenure lasted ten years.",
+    "example_ka": "მისი თანამდებობის ვადა ათ წელს გაგრძელდა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "vocation",
+    "georgian": "მოწოდება",
+    "pronunciation": "/voʊˈkeɪʃn/",
+    "example_en": "Teaching is her vocation.",
+    "example_ka": "სწავლება მისი მოწოდებაა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "whistleblower",
+    "georgian": "მამხილებელი",
+    "pronunciation": "/ˈwɪslbloʊər/",
+    "example_en": "The whistleblower exposed fraud.",
+    "example_ka": "მამხილებელმა თაღლითობა გამოამჟღავნა.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "workforce",
+    "georgian": "სამუშაო ძალა",
+    "pronunciation": "/ˈwɜːrkfɔːrs/",
+    "example_en": "The workforce is diverse.",
+    "example_ka": "სამუშაო ძალა მრავალფეროვანია.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "workaholic",
+    "georgian": "მუშაობის მანიაკი",
+    "pronunciation": "/ˌwɜːrkəˈhɒlɪk/",
+    "example_en": "He is a workaholic.",
+    "example_ka": "ის მუშაობის მანიაკია.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "headcount",
+    "georgian": "პერსონალის რაოდენობა",
+    "pronunciation": "/ˈhedkaʊnt/",
+    "example_en": "The headcount increased.",
+    "example_ka": "პერსონალის რაოდენობა გაიზარდა.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "benchmark",
+    "georgian": "ნიშნული",
+    "pronunciation": "/ˈbentʃmɑːrk/",
+    "example_en": "Set career benchmarks.",
+    "example_ka": "კარიერის ნიშნულები დააყენე.",
+    "category": "jobs-careers",
+    "level": "B1"
+  },
+  {
+    "english": "accolade",
+    "georgian": "ჯილდო",
+    "pronunciation": "/ˈækəleɪd/",
+    "example_en": "She received many accolades.",
+    "example_ka": "მან ბევრი ჯილდო მიიღო.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "attrition",
+    "georgian": "კადრების ბუნებრივი კლება",
+    "pronunciation": "/əˈtrɪʃn/",
+    "example_en": "Staff attrition is high.",
+    "example_ka": "კადრების ბუნებრივი კლება მაღალია.",
+    "category": "jobs-careers",
+    "level": "C1"
+  },
+  {
+    "english": "competency",
+    "georgian": "კომპეტენტურობა",
+    "pronunciation": "/ˈkɒmpɪtənsi/",
+    "example_en": "Core competencies are essential.",
+    "example_ka": "ძირითადი კომპეტენტურობები აუცილებელია.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "stipend",
+    "georgian": "სტიპენდია",
+    "pronunciation": "/ˈstaɪpend/",
+    "example_en": "The intern earned a small stipend.",
+    "example_ka": "სტაჟიორმა მცირე სტიპენდია მიიღო.",
+    "category": "jobs-careers",
+    "level": "B2"
+  },
+  {
+    "english": "furlough",
+    "georgian": "იძულებითი შვებულება",
+    "pronunciation": "/ˈfɜːrloʊ/",
+    "example_en": "Staff were put on furlough.",
+    "example_ka": "თანამშრომლები იძულებით შვებულებაში გაუშვეს.",
+    "category": "jobs-careers",
+    "level": "B2"
+  }
 ]

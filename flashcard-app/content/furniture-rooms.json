@@ -1,52 +1,1802 @@
 [
-  {"english": "Bedroom", "georgian": "საძინებელი", "pronunciation": "/ˈbɛdruːm/", "example_en": "My bedroom is upstairs.", "example_ka": "ჩემი საძინებელი ზემოთაა.", "category": "furniture", "level": "A1"},
-  {"english": "Bathroom", "georgian": "სააბაზანო", "pronunciation": "/ˈbæθruːm/", "example_en": "The bathroom is on the left.", "example_ka": "სააბაზანო მარცხნივაა.", "category": "furniture", "level": "A1"},
-  {"english": "Kitchen", "georgian": "სამზარეულო", "pronunciation": "/ˈkɪtʃɪn/", "example_en": "I'm in the kitchen cooking.", "example_ka": "სამზარეულოში ვამზადებ.", "category": "furniture", "level": "A1"},
-  {"english": "Living room", "georgian": "მისაღები ოთახი", "pronunciation": "/ˈlɪvɪŋ ruːm/", "example_en": "We watch TV in the living room.", "example_ka": "ტელევიზორს მისაღებ ოთახში ვუყურებთ.", "category": "furniture", "level": "A1"},
-  {"english": "Bed", "georgian": "საწოლი", "pronunciation": "/bɛd/", "example_en": "The bed is very comfortable.", "example_ka": "საწოლი ძალიან კომფორტულია.", "category": "furniture", "level": "A1"},
-  {"english": "Chair", "georgian": "სკამი", "pronunciation": "/tʃɛr/", "example_en": "Please sit on the chair.", "example_ka": "გთხოვთ, სკამზე დაბრძანდით.", "category": "furniture", "level": "A1"},
-  {"english": "Table", "georgian": "მაგიდა", "pronunciation": "/ˈteɪbəl/", "example_en": "Put the book on the table.", "example_ka": "წიგნი მაგიდაზე დადე.", "category": "furniture", "level": "A1"},
-  {"english": "Sofa", "georgian": "დივანი", "pronunciation": "/ˈsoʊfə/", "example_en": "I'm sitting on the sofa.", "example_ka": "დივანზე ვზივარ.", "category": "furniture", "level": "A1"},
-  {"english": "Desk", "georgian": "წერის მაგიდა", "pronunciation": "/dɛsk/", "example_en": "I study at my desk.", "example_ka": "მაგიდასთან ვსწავლობ.", "category": "furniture", "level": "A1"},
-  {"english": "Wardrobe", "georgian": "კარადა", "pronunciation": "/ˈwɔːrdroʊb/", "example_en": "My clothes are in the wardrobe.", "example_ka": "ჩემი ტანსაცმელი კარადაშია.", "category": "furniture", "level": "A2"},
-  {"english": "Shelf", "georgian": "თარო", "pronunciation": "/ʃɛlf/", "example_en": "Put the books on the shelf.", "example_ka": "წიგნები თაროზე დადე.", "category": "furniture", "level": "A1"},
-  {"english": "Mirror", "georgian": "სარკე", "pronunciation": "/ˈmɪrər/", "example_en": "Look at yourself in the mirror.", "example_ka": "სარკეში შეიხედე.", "category": "furniture", "level": "A1"},
-  {"english": "Window", "georgian": "ფანჯარა", "pronunciation": "/ˈwɪndoʊ/", "example_en": "Open the window, please.", "example_ka": "ფანჯარა გააღე, გთხოვთ.", "category": "furniture", "level": "A1"},
-  {"english": "Door", "georgian": "კარი", "pronunciation": "/dɔːr/", "example_en": "Close the door behind you.", "example_ka": "კარი დახურე.", "category": "furniture", "level": "A1"},
-  {"english": "Floor", "georgian": "იატაკი", "pronunciation": "/flɔːr/", "example_en": "The floor is clean.", "example_ka": "იატაკი სუფთაა.", "category": "furniture", "level": "A1"},
-  {"english": "Ceiling", "georgian": "ჭერი", "pronunciation": "/ˈsiːlɪŋ/", "example_en": "The ceiling is very high.", "example_ka": "ჭერი ძალიან მაღალია.", "category": "furniture", "level": "A2"},
-  {"english": "Wall", "georgian": "კედელი", "pronunciation": "/wɔːl/", "example_en": "Hang the picture on the wall.", "example_ka": "სურათი კედელზე ჩამოკიდე.", "category": "furniture", "level": "A1"},
-  {"english": "Lamp", "georgian": "ნათურა / ლამპა", "pronunciation": "/læmp/", "example_en": "Turn on the lamp.", "example_ka": "ლამპა ჩართე.", "category": "furniture", "level": "A1"},
-  {"english": "Carpet", "georgian": "ხალიჩა", "pronunciation": "/ˈkɑːrpɪt/", "example_en": "The carpet is soft.", "example_ka": "ხალიჩა რბილია.", "category": "furniture", "level": "A2"},
-  {"english": "Curtain", "georgian": "ფარდა", "pronunciation": "/ˈkɜːrtən/", "example_en": "Close the curtains.", "example_ka": "ფარდები დახურე.", "category": "furniture", "level": "A2"},
-  {"english": "Pillow", "georgian": "ბალიში", "pronunciation": "/ˈpɪloʊ/", "example_en": "I need two pillows to sleep.", "example_ka": "საძილე ორი ბალიში მჭირდება.", "category": "furniture", "level": "A1"},
-  {"english": "Blanket", "georgian": "საბანი", "pronunciation": "/ˈblæŋkɪt/", "example_en": "It's cold, bring a blanket.", "example_ka": "ცივა, საბანი მოიტანე.", "category": "furniture", "level": "A1"},
-  {"english": "Towel", "georgian": "პირსახოცი", "pronunciation": "/ˈtaʊəl/", "example_en": "Bring a towel to the pool.", "example_ka": "აუზში პირსახოცი წაიღე.", "category": "furniture", "level": "A1"},
-  {"english": "Soap", "georgian": "საპონი", "pronunciation": "/soʊp/", "example_en": "Wash your hands with soap.", "example_ka": "ხელები საპნით დაიბანე.", "category": "furniture", "level": "A1"},
-  {"english": "Shower", "georgian": "შხაპი", "pronunciation": "/ˈʃaʊər/", "example_en": "I take a shower every morning.", "example_ka": "ყოველ დილით შხაპს ვიღებ.", "category": "furniture", "level": "A1"},
-  {"english": "Sink", "georgian": "ნიჟარა", "pronunciation": "/sɪŋk/", "example_en": "Wash the dishes in the sink.", "example_ka": "ჭურჭელი ნიჟარაში დაბანე.", "category": "furniture", "level": "A2"},
-  {"english": "Toilet", "georgian": "ტუალეტი", "pronunciation": "/ˈtɔɪlɪt/", "example_en": "Where is the toilet?", "example_ka": "სად არის ტუალეტი?", "category": "furniture", "level": "A1"},
-  {"english": "Stairs", "georgian": "კიბეები", "pronunciation": "/stɛrz/", "example_en": "Walk up the stairs slowly.", "example_ka": "კიბეებზე ნელა ადი.", "category": "furniture", "level": "A1"},
-  {"english": "Balcony", "georgian": "აივანი", "pronunciation": "/ˈbælkəni/", "example_en": "Let's sit on the balcony.", "example_ka": "მოდი, აივანზე დავჯდეთ.", "category": "furniture", "level": "A2"},
-  {"english": "Garage", "georgian": "ავტოფარეხი", "pronunciation": "/ɡəˈrɑːʒ/", "example_en": "Park the car in the garage.", "example_ka": "მანქანა ავტოფარეხში დააყენე.", "category": "furniture", "level": "A2"},
-  {"english": "Garden", "georgian": "ბაღი", "pronunciation": "/ˈɡɑːrdən/", "example_en": "We grow tomatoes in the garden.", "example_ka": "ბაღში პომიდორს ვზრდით.", "category": "furniture", "level": "A1"},
-  {"english": "Roof", "georgian": "სახურავი", "pronunciation": "/ruːf/", "example_en": "The roof needs repair.", "example_ka": "სახურავს შეკეთება სჭირდება.", "category": "furniture", "level": "A2"},
-  {"english": "Key", "georgian": "გასაღები", "pronunciation": "/kiː/", "example_en": "Don't forget your keys.", "example_ka": "გასაღებები არ დაგავიწყდეს.", "category": "furniture", "level": "A1"},
-  {"english": "Lock", "georgian": "საკეტი / ჩაკეტვა", "pronunciation": "/lɒk/", "example_en": "Lock the door when you leave.", "example_ka": "კარი ჩაკეტე როცა წახვალ.", "category": "furniture", "level": "A2"},
-  {"english": "Light", "georgian": "შუქი", "pronunciation": "/laɪt/", "example_en": "Turn off the light.", "example_ka": "შუქი გამორთე.", "category": "furniture", "level": "A1"},
-  {"english": "Switch", "georgian": "გადამრთველი", "pronunciation": "/swɪtʃ/", "example_en": "The light switch is near the door.", "example_ka": "შუქის გადამრთველი კართან არის.", "category": "furniture", "level": "A2"},
-  {"english": "Drawer", "georgian": "უჯრა", "pronunciation": "/drɔːr/", "example_en": "The socks are in the drawer.", "example_ka": "წინდები უჯრაშია.", "category": "furniture", "level": "A2"},
-  {"english": "Couch", "georgian": "ტახტი", "pronunciation": "/kaʊtʃ/", "example_en": "I fell asleep on the couch.", "example_ka": "ტახტზე ჩამეძინა.", "category": "furniture", "level": "A2"},
-  {"english": "Closet", "georgian": "კარადა / ჩასაკეტი", "pronunciation": "/ˈklɒzɪt/", "example_en": "Hang your coat in the closet.", "example_ka": "პალტო კარადაში ჩამოკიდე.", "category": "furniture", "level": "A2"},
-  {"english": "Rent", "georgian": "ქირა / გაქირავება", "pronunciation": "/rɛnt/", "example_en": "How much is the rent?", "example_ka": "ქირა რა ჯდება?", "category": "furniture", "level": "A2"},
-  {"english": "Apartment", "georgian": "ბინა", "pronunciation": "/əˈpɑːrtmənt/", "example_en": "I live in a small apartment.", "example_ka": "პატარა ბინაში ვცხოვრობ.", "category": "furniture", "level": "A1"},
-  {"english": "Neighbor", "georgian": "მეზობელი", "pronunciation": "/ˈneɪbər/", "example_en": "Our neighbors are very friendly.", "example_ka": "ჩვენი მეზობლები ძალიან კეთილი არიან.", "category": "furniture", "level": "A2"},
-  {"english": "Move in", "georgian": "შესახლება", "pronunciation": "/muːv ɪn/", "example_en": "We moved in last month.", "example_ka": "გასულ თვეში შევსახლდით.", "category": "furniture", "level": "A2"},
-  {"english": "Furniture", "georgian": "ავეჯი", "pronunciation": "/ˈfɜːrnɪtʃər/", "example_en": "We need new furniture.", "example_ka": "ახალი ავეჯი გვჭირდება.", "category": "furniture", "level": "A2"},
-  {"english": "Vacuum", "georgian": "მტვერსასრუტი / მტვერი წოვა", "pronunciation": "/ˈvækjuːm/", "example_en": "Vacuum the carpet, please.", "example_ka": "ხალიჩა მტვერსასრუტით გაწმინდე, გთხოვთ.", "category": "furniture", "level": "A2"},
-  {"english": "Toothbrush", "georgian": "კბილის ჯაგრისი", "pronunciation": "/ˈtuːθbrʌʃ/", "example_en": "I need a new toothbrush.", "example_ka": "ახალი კბილის ჯაგრისი მჭირდება.", "category": "furniture", "level": "A1"},
-  {"english": "Shampoo", "georgian": "შამპუნი", "pronunciation": "/ʃæmˈpuː/", "example_en": "Pass me the shampoo.", "example_ka": "შამპუნი მომაწოდე.", "category": "furniture", "level": "A1"},
-  {"english": "Washing machine", "georgian": "სარეცხი მანქანა", "pronunciation": "/ˈwɒʃɪŋ məˈʃiːn/", "example_en": "Put clothes in the washing machine.", "example_ka": "ტანსაცმელი სარეცხ მანქანაში ჩადე.", "category": "furniture", "level": "A2"},
-  {"english": "Iron", "georgian": "უთო / უთოება", "pronunciation": "/ˈaɪərn/", "example_en": "Iron your shirt before the meeting.", "example_ka": "შეხვედრამდე პერანგი დაუთოე.", "category": "furniture", "level": "A2"},
-  {"english": "Trash", "georgian": "ნაგავი", "pronunciation": "/træʃ/", "example_en": "Take out the trash.", "example_ka": "ნაგავი გაიტანე.", "category": "furniture", "level": "A1"}
+  {
+    "english": "bedroom",
+    "georgian": "საძინებელი",
+    "pronunciation": "/ˈbɛdruːm/",
+    "example_en": "My bedroom is upstairs.",
+    "example_ka": "ჩემი საძინებელი ზემოთაა.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "bathroom",
+    "georgian": "სააბაზანო",
+    "pronunciation": "/ˈbæθruːm/",
+    "example_en": "The bathroom is on the left.",
+    "example_ka": "სააბაზანო მარცხნივაა.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "kitchen",
+    "georgian": "სამზარეულო",
+    "pronunciation": "/ˈkɪtʃɪn/",
+    "example_en": "I'm in the kitchen cooking.",
+    "example_ka": "სამზარეულოში ვამზადებ.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "bed",
+    "georgian": "საწოლი",
+    "pronunciation": "/bɛd/",
+    "example_en": "The bed is very comfortable.",
+    "example_ka": "საწოლი ძალიან კომფორტულია.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "chair",
+    "georgian": "სკამი",
+    "pronunciation": "/tʃɛr/",
+    "example_en": "Please sit on the chair.",
+    "example_ka": "გთხოვთ, სკამზე დაბრძანდით.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "table",
+    "georgian": "მაგიდა",
+    "pronunciation": "/ˈteɪbəl/",
+    "example_en": "Put the book on the table.",
+    "example_ka": "წიგნი მაგიდაზე დადე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "sofa",
+    "georgian": "დივანი",
+    "pronunciation": "/ˈsoʊfə/",
+    "example_en": "I'm sitting on the sofa.",
+    "example_ka": "დივანზე ვზივარ.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "desk",
+    "georgian": "წერის მაგიდა",
+    "pronunciation": "/dɛsk/",
+    "example_en": "I study at my desk.",
+    "example_ka": "მაგიდასთან ვსწავლობ.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "wardrobe",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈwɔːrdroʊb/",
+    "example_en": "My clothes are in the wardrobe.",
+    "example_ka": "ჩემი ტანსაცმელი კარადაშია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "shelf",
+    "georgian": "თარო",
+    "pronunciation": "/ʃɛlf/",
+    "example_en": "Put the books on the shelf.",
+    "example_ka": "წიგნები თაროზე დადე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "mirror",
+    "georgian": "სარკე",
+    "pronunciation": "/ˈmɪrər/",
+    "example_en": "Look at yourself in the mirror.",
+    "example_ka": "სარკეში შეიხედე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "Open the window, please.",
+    "example_ka": "ფანჯარა გააღე, გთხოვთ.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "door",
+    "georgian": "კარი",
+    "pronunciation": "/dɔːr/",
+    "example_en": "Close the door behind you.",
+    "example_ka": "კარი დახურე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "floor",
+    "georgian": "იატაკი",
+    "pronunciation": "/flɔːr/",
+    "example_en": "The floor is clean.",
+    "example_ka": "იატაკი სუფთაა.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "ceiling",
+    "georgian": "ჭერი",
+    "pronunciation": "/ˈsiːlɪŋ/",
+    "example_en": "The ceiling is very high.",
+    "example_ka": "ჭერი ძალიან მაღალია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "wall",
+    "georgian": "კედელი",
+    "pronunciation": "/wɔːl/",
+    "example_en": "Hang the picture on the wall.",
+    "example_ka": "სურათი კედელზე ჩამოკიდე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "lamp",
+    "georgian": "ლამპა",
+    "pronunciation": "/læmp/",
+    "example_en": "Turn on the lamp.",
+    "example_ka": "ლამპა ჩართე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "carpet",
+    "georgian": "ხალიჩა",
+    "pronunciation": "/ˈkɑːrpɪt/",
+    "example_en": "The carpet is soft.",
+    "example_ka": "ხალიჩა რბილია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "curtain",
+    "georgian": "ფარდა",
+    "pronunciation": "/ˈkɜːrtən/",
+    "example_en": "Close the curtains.",
+    "example_ka": "ფარდები დახურე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "pillow",
+    "georgian": "ბალიში",
+    "pronunciation": "/ˈpɪloʊ/",
+    "example_en": "I need two pillows to sleep.",
+    "example_ka": "საძილე ორი ბალიში მჭირდება.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "blanket",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈblæŋkɪt/",
+    "example_en": "It's cold, bring a blanket.",
+    "example_ka": "ცივა, საბანი მოიტანე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "towel",
+    "georgian": "პირსახოცი",
+    "pronunciation": "/ˈtaʊəl/",
+    "example_en": "Bring a towel to the pool.",
+    "example_ka": "აუზში პირსახოცი წაიღე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "soap",
+    "georgian": "საპონი",
+    "pronunciation": "/soʊp/",
+    "example_en": "Wash your hands with soap.",
+    "example_ka": "ხელები საპნით დაიბანე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "shower",
+    "georgian": "შხაპი",
+    "pronunciation": "/ˈʃaʊər/",
+    "example_en": "I take a shower every morning.",
+    "example_ka": "ყოველ დილით შხაპს ვიღებ.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "sink",
+    "georgian": "ნიჟარა",
+    "pronunciation": "/sɪŋk/",
+    "example_en": "Wash the dishes in the sink.",
+    "example_ka": "ჭურჭელი ნიჟარაში დაბანე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "toilet",
+    "georgian": "ტუალეტი",
+    "pronunciation": "/ˈtɔɪlɪt/",
+    "example_en": "Where is the toilet?",
+    "example_ka": "სად არის ტუალეტი?",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "stairs",
+    "georgian": "კიბეები",
+    "pronunciation": "/stɛrz/",
+    "example_en": "Walk up the stairs slowly.",
+    "example_ka": "კიბეებზე ნელა ადი.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "balcony",
+    "georgian": "აივანი",
+    "pronunciation": "/ˈbælkəni/",
+    "example_en": "Let's sit on the balcony.",
+    "example_ka": "მოდი, აივანზე დავჯდეთ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "garage",
+    "georgian": "ავტოფარეხი",
+    "pronunciation": "/ɡəˈrɑːʒ/",
+    "example_en": "Park the car in the garage.",
+    "example_ka": "მანქანა ავტოფარეხში დააყენე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "garden",
+    "georgian": "ბაღი",
+    "pronunciation": "/ˈɡɑːrdən/",
+    "example_en": "We grow tomatoes in the garden.",
+    "example_ka": "ბაღში პომიდორს ვზრდით.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "roof",
+    "georgian": "სახურავი",
+    "pronunciation": "/ruːf/",
+    "example_en": "The roof needs repair.",
+    "example_ka": "სახურავს შეკეთება სჭირდება.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "key",
+    "georgian": "გასაღები",
+    "pronunciation": "/kiː/",
+    "example_en": "Don't forget your keys.",
+    "example_ka": "გასაღებები არ დაგავიწყდეს.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "lock",
+    "georgian": "საკეტი",
+    "pronunciation": "/lɒk/",
+    "example_en": "Lock the door when you leave.",
+    "example_ka": "კარი ჩაკეტე როცა წახვალ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "light",
+    "georgian": "შუქი",
+    "pronunciation": "/laɪt/",
+    "example_en": "Turn off the light.",
+    "example_ka": "შუქი გამორთე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "switch",
+    "georgian": "გადამრთველი",
+    "pronunciation": "/swɪtʃ/",
+    "example_en": "The light switch is near the door.",
+    "example_ka": "შუქის გადამრთველი კართან არის.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "drawer",
+    "georgian": "უჯრა",
+    "pronunciation": "/drɔːr/",
+    "example_en": "The socks are in the drawer.",
+    "example_ka": "წინდები უჯრაშია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "couch",
+    "georgian": "ტახტი",
+    "pronunciation": "/kaʊtʃ/",
+    "example_en": "I fell asleep on the couch.",
+    "example_ka": "ტახტზე ჩამეძინა.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "closet",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈklɒzɪt/",
+    "example_en": "Hang your coat in the closet.",
+    "example_ka": "პალტო კარადაში ჩამოკიდე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "rent",
+    "georgian": "ქირა",
+    "pronunciation": "/rɛnt/",
+    "example_en": "How much is the rent?",
+    "example_ka": "ქირა რა ჯდება?",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "apartment",
+    "georgian": "ბინა",
+    "pronunciation": "/əˈpɑːrtmənt/",
+    "example_en": "I live in a small apartment.",
+    "example_ka": "პატარა ბინაში ვცხოვრობ.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "neighbor",
+    "georgian": "მეზობელი",
+    "pronunciation": "/ˈneɪbər/",
+    "example_en": "Our neighbors are very friendly.",
+    "example_ka": "ჩვენი მეზობლები ძალიან კეთილი არიან.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "furniture",
+    "georgian": "ავეჯი",
+    "pronunciation": "/ˈfɜːrnɪtʃər/",
+    "example_en": "We need new furniture.",
+    "example_ka": "ახალი ავეჯი გვჭირდება.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "vacuum",
+    "georgian": "მტვერსასრუტი",
+    "pronunciation": "/ˈvækjuːm/",
+    "example_en": "Vacuum the carpet, please.",
+    "example_ka": "ხალიჩა მტვერსასრუტით გაწმინდე, გთხოვთ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "toothbrush",
+    "georgian": "კბილის ჯაგრისი",
+    "pronunciation": "/ˈtuːθbrʌʃ/",
+    "example_en": "I need a new toothbrush.",
+    "example_ka": "ახალი კბილის ჯაგრისი მჭირდება.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "shampoo",
+    "georgian": "შამპუნი",
+    "pronunciation": "/ʃæmˈpuː/",
+    "example_en": "Pass me the shampoo.",
+    "example_ka": "შამპუნი მომაწოდე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "iron",
+    "georgian": "უთო",
+    "pronunciation": "/ˈaɪərn/",
+    "example_en": "Iron your shirt before the meeting.",
+    "example_ka": "შეხვედრამდე პერანგი დაუთოე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "trash",
+    "georgian": "ნაგავი",
+    "pronunciation": "/træʃ/",
+    "example_en": "Take out the trash.",
+    "example_ka": "ნაგავი გაიტანე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "refrigerator",
+    "georgian": "მაცივარი",
+    "pronunciation": "/rɪˈfrɪdʒəreɪtər/",
+    "example_en": "Put the milk in the refrigerator.",
+    "example_ka": "რძე მაცივარში ჩადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "stove",
+    "georgian": "ქურა",
+    "pronunciation": "/stoʊv/",
+    "example_en": "Turn off the stove after cooking.",
+    "example_ka": "საკვების მზადების შემდეგ ქურა გამორთე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "oven",
+    "georgian": "ღუმელი",
+    "pronunciation": "/ˈʌvən/",
+    "example_en": "Bake the bread in the oven.",
+    "example_ka": "პური ღუმელში აცხვე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "microwave",
+    "georgian": "მიკროტალღური",
+    "pronunciation": "/ˈmaɪkrəweɪv/",
+    "example_en": "Heat the food in the microwave.",
+    "example_ka": "საკვები მიკროტალღურში გაათბე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "dishwasher",
+    "georgian": "ჭურჭლის საბანი მანქანა",
+    "pronunciation": "/ˈdɪʃwɒʃər/",
+    "example_en": "Load the dishwasher with dirty dishes.",
+    "example_ka": "ჭურჭლის საბანი მანქანაში ბინძური ჭურჭელი ჩადე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "cabinet",
+    "georgian": "კაბინეტი",
+    "pronunciation": "/ˈkæbɪnət/",
+    "example_en": "The glasses are in the kitchen cabinet.",
+    "example_ka": "ჭიქები სამზარეულოს კაბინეტშია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "counter",
+    "georgian": "პრილავაკი",
+    "pronunciation": "/ˈkaʊntər/",
+    "example_en": "Put the groceries on the counter.",
+    "example_ka": "პროდუქტები პრილავაკზე დადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "pantry",
+    "georgian": "სპაჭობა",
+    "pronunciation": "/ˈpæntri/",
+    "example_en": "Store the canned food in the pantry.",
+    "example_ka": "კონსერვებული საკვები სპაჭობაში შეინახე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "freezer",
+    "georgian": "გამყინავი",
+    "pronunciation": "/ˈfriːzər/",
+    "example_en": "Ice cream is in the freezer.",
+    "example_ka": "ნაყინი გამყინავშია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "faucet",
+    "georgian": "ონკანი",
+    "pronunciation": "/ˈfɔːsət/",
+    "example_en": "Turn off the faucet to save water.",
+    "example_ka": "წყლის დაზოგვისთვის ონკანი დახურე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "drain",
+    "georgian": "ჩასაშვები",
+    "pronunciation": "/dreɪn/",
+    "example_en": "The drain is blocked.",
+    "example_ka": "ჩასაშვები ჩაიხშო.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "bathtub",
+    "georgian": "აბაზანა",
+    "pronunciation": "/ˈbæθtʌb/",
+    "example_en": "Fill the bathtub with warm water.",
+    "example_ka": "აბაზანა თბილი წყლით აავსე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "fridge",
+    "georgian": "მაცივარი",
+    "pronunciation": "/frɪdʒ/",
+    "example_en": "There's nothing in the fridge.",
+    "example_ka": "მაცივარში არაფერია.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "dishware",
+    "georgian": "ჭურჭელი",
+    "pronunciation": "/ˈdɪʃwer/",
+    "example_en": "Wash all the dishware after dinner.",
+    "example_ka": "ვახშმის შემდეგ ყველა ჭურჭელი დაიბანე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "cutlery",
+    "georgian": "ჭურჭლები",
+    "pronunciation": "/ˈkʌtləri/",
+    "example_en": "Set the cutlery on the table.",
+    "example_ka": "ჭურჭლები მაგიდაზე დადე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "armchair",
+    "georgian": "სავარძელი",
+    "pronunciation": "/ˈɑːrmtʃer/",
+    "example_en": "Sit in the comfortable armchair.",
+    "example_ka": "კომფორტულ სავარძელში დაჯექი.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "bookshelf",
+    "georgian": "წიგნის თარო",
+    "pronunciation": "/ˈbʊkʃelf/",
+    "example_en": "My books are on the bookshelf.",
+    "example_ka": "ჩემი წიგნები წიგნის თაროზეა.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "dresser",
+    "georgian": "კომოდი",
+    "pronunciation": "/ˈdresər/",
+    "example_en": "Put your clothes in the dresser.",
+    "example_ka": "ტანისამოსი კომოდში ჩადე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "nightstand",
+    "georgian": "ღამის მაგიდა",
+    "pronunciation": "/ˈnaɪtstænd/",
+    "example_en": "The clock is on the nightstand.",
+    "example_ka": "საათი ღამის მაგიდაზეა.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "mattress",
+    "georgian": "მატრასი",
+    "pronunciation": "/ˈmætrəs/",
+    "example_en": "This mattress is very comfortable.",
+    "example_ka": "ეს მატრასი ძალიან კომფორტულია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "sheets",
+    "georgian": "ზეწრები",
+    "pronunciation": "/ʃiːts/",
+    "example_en": "Change the sheets every week.",
+    "example_ka": "ყოველ კვირას ზეწრები შეცვალე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "comforter",
+    "georgian": "პლედი",
+    "pronunciation": "/ˈkʌmfərtər/",
+    "example_en": "Cover yourself with the comforter.",
+    "example_ka": "პლედით გადაიფარე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "headboard",
+    "georgian": "თავსაბალიშე",
+    "pronunciation": "/ˈhedbɔːrd/",
+    "example_en": "The headboard is made of wood.",
+    "example_ka": "თავსაბალიშე ხისგანაა გაკეთებული.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "footstool",
+    "georgian": "ფეხის ქვეშ დასადებელი",
+    "pronunciation": "/ˈfʊtstul/",
+    "example_en": "Rest your feet on the footstool.",
+    "example_ka": "ფეხები ფეხსაცმელზე დააბრძანე.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "recliner",
+    "georgian": "ჩამდგარი სკამი",
+    "pronunciation": "/rɪˈklaɪnər/",
+    "example_en": "Dad likes to watch TV in his recliner.",
+    "example_ka": "მამას უყვარს ჩამდგარ სკამში ტელევიზიის ყურება.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "coffee-table",
+    "georgian": "ყავის მაგიდა",
+    "pronunciation": "/ˈkɒfi teɪbəl/",
+    "example_en": "Put the magazines on the coffee table.",
+    "example_ka": "ჟურნალები ყავის მაგიდაზე დადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "dining-table",
+    "georgian": "სასადილო მაგიდა",
+    "pronunciation": "/ˈdaɪnɪŋ teɪbəl/",
+    "example_en": "We eat dinner at the dining table.",
+    "example_ka": "ვახშამს სასადილო მაგიდასთან ვჭამთ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "end-table",
+    "georgian": "გვერდითი მაგიდა",
+    "pronunciation": "/end teɪbəl/",
+    "example_en": "The lamp sits on the end table.",
+    "example_ka": "ლამპა გვერდით მაგიდაზე დგას.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "ottoman",
+    "georgian": "ოსმალური სკამი",
+    "pronunciation": "/ˈɒtəmən/",
+    "example_en": "Use the ottoman as a footrest.",
+    "example_ka": "ოსმალური სკამი ფეხსაცველად გამოიყენე.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "bench",
+    "georgian": "სკამი",
+    "pronunciation": "/bentʃ/",
+    "example_en": "Sit on the bench in the garden.",
+    "example_ka": "ბაღში სკამზე დაჯექი.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "stool",
+    "georgian": "ტაბურეტი",
+    "pronunciation": "/stuːl/",
+    "example_en": "Stand on the stool to reach the shelf.",
+    "example_ka": "თაროს მისაწვდომად ტაბურეტზე ადექი.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "bar-stool",
+    "georgian": "ბარის სკამი",
+    "pronunciation": "/bɑːr stuːl/",
+    "example_en": "Sit on the bar stool at the counter.",
+    "example_ka": "პრილავაკთან ბარის სკამზე დაჯექი.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "rocking-chair",
+    "georgian": "საქანელა",
+    "pronunciation": "/ˈrɒkɪŋ tʃer/",
+    "example_en": "Grandma sits in her rocking chair.",
+    "example_ka": "ბებია თავის საქანელაში ზის.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "chandelier",
+    "georgian": "ლუსტრა",
+    "pronunciation": "/ˌʃændəˈlɪr/",
+    "example_en": "The chandelier lights up the dining room.",
+    "example_ka": "ლუსტრა სასადილო ოთახს ანათებს.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "ceiling-fan",
+    "georgian": "ჭერის ვენტილატორი",
+    "pronunciation": "/ˈsiːlɪŋ fæn/",
+    "example_en": "Turn on the ceiling fan for air circulation.",
+    "example_ka": "ჰაერის ცირკულაციისთვის ჭერის ვენტილატორი ჩართე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "floor-lamp",
+    "georgian": "იატაკის ლამპა",
+    "pronunciation": "/flɔːr læmp/",
+    "example_en": "The floor lamp provides good reading light.",
+    "example_ka": "იატაკის ლამპა კარგ შუქს იძლევა კითხვისთვის.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "table-lamp",
+    "georgian": "მაგიდის ლამპა",
+    "pronunciation": "/ˈteɪbəl læmp/",
+    "example_en": "Turn on the table lamp to read.",
+    "example_ka": "კითხვისთვის მაგიდის ლამპა ჩართე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "sconce",
+    "georgian": "კედლის ლამპა",
+    "pronunciation": "/skɒns/",
+    "example_en": "The sconce lights the hallway.",
+    "example_ka": "კედლის ლამპა დერეფანს ანათებს.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "blinds",
+    "georgian": "ჟალუზი",
+    "pronunciation": "/blaɪndz/",
+    "example_en": "Close the blinds to block the sun.",
+    "example_ka": "მზის ჩასაკეტად ჟალუზი დახურე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "drapes",
+    "georgian": "ფარდები",
+    "pronunciation": "/dreɪps/",
+    "example_en": "The drapes match the sofa perfectly.",
+    "example_ka": "ფარდები დივანს შესანიშნავად ეკიდება.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "valance",
+    "georgian": "ფარდის ზედა ნაწილი",
+    "pronunciation": "/ˈvæləns/",
+    "example_en": "The valance adds style to the window.",
+    "example_ka": "ფარდის ზედა ნაწილი ფანჯარას სტილს ანიჭებს.",
+    "category": "furniture-rooms",
+    "level": "C1"
+  },
+  {
+    "english": "rug",
+    "georgian": "პატარა ხალიჩა",
+    "pronunciation": "/rʌɡ/",
+    "example_en": "Place the rug under the coffee table.",
+    "example_ka": "პატარა ხალიჩა ყავის მაგიდის ქვეშ დადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "mat",
+    "georgian": "ნაგვის",
+    "pronunciation": "/mæt/",
+    "example_en": "Wipe your feet on the mat.",
+    "example_ka": "ნაგვაზე ფეხები გაიწმინდე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "doormat",
+    "georgian": "კარის ნაგვასი",
+    "pronunciation": "/ˈdɔːrmæt/",
+    "example_en": "Clean your shoes on the doormat.",
+    "example_ka": "კარის ნაგვაზე ფეხსაცმელი გაწმინდე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "hardwood",
+    "georgian": "მყარი ხე",
+    "pronunciation": "/ˈhɑːrdwʊd/",
+    "example_en": "The hardwood floors are beautiful.",
+    "example_ka": "მყარი ხის იატაკები ლამაზია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "tile",
+    "georgian": "კაფელი",
+    "pronunciation": "/taɪl/",
+    "example_en": "The bathroom has white tile floors.",
+    "example_ka": "სააბაზანოში თეთრი კაფელის იატაკია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "linoleum",
+    "georgian": "ლინოლეუმი",
+    "pronunciation": "/lɪˈnoʊliəm/",
+    "example_en": "The kitchen has linoleum flooring.",
+    "example_ka": "სამზარეულოში ლინოლეუმის იატაკია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "marble",
+    "georgian": "მარმარილო",
+    "pronunciation": "/ˈmɑːrbəl/",
+    "example_en": "The marble countertops are expensive.",
+    "example_ka": "მარმარილოს პრილავაკები ძვირია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "granite",
+    "georgian": "გრანიტი",
+    "pronunciation": "/ˈɡrænət/",
+    "example_en": "We chose granite for the kitchen counters.",
+    "example_ka": "სამზარეულოს პრილავაკებისთვის გრანიტი ავირჩიეთ.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "wallpaper",
+    "georgian": "კედლის ქაღალდი",
+    "pronunciation": "/ˈwɔːlpeɪpər/",
+    "example_en": "The wallpaper has a floral pattern.",
+    "example_ka": "კედლის ქაღალდს ყვავილოვანი ნახატი აქვს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "paint",
+    "georgian": "საღებავი",
+    "pronunciation": "/peɪnt/",
+    "example_en": "We need to paint the bedroom walls.",
+    "example_ka": "საძინებლის კედლების შეღებვა გვჭირდება.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "frame",
+    "georgian": "ჩარჩო",
+    "pronunciation": "/freɪm/",
+    "example_en": "Put the photo in a nice frame.",
+    "example_ka": "სურათი ლამაზ ჩარჩოში ჩადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "artwork",
+    "georgian": "ნაწარმოები",
+    "pronunciation": "/ˈɑːrtwɜːrk/",
+    "example_en": "The artwork on the wall is beautiful.",
+    "example_ka": "კედელზე ნაწარმოები ლამაზია.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "vase",
+    "georgian": "ვაზონი",
+    "pronunciation": "/veɪs/",
+    "example_en": "Put fresh flowers in the vase.",
+    "example_ka": "ვაზონში ახალი ყვავილები ჩადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "candle",
+    "georgian": "სანთელი",
+    "pronunciation": "/ˈkændəl/",
+    "example_en": "Light the candles for dinner.",
+    "example_ka": "ვახშამისთვის სანთლები აანთე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "candlestick",
+    "georgian": "სანთლისმჭერი",
+    "pronunciation": "/ˈkændəlstɪk/",
+    "example_en": "The silver candlesticks are antiques.",
+    "example_ka": "ვერცხლის სანთლისმჭერები ანტიკურია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "clock",
+    "georgian": "საათი",
+    "pronunciation": "/klɒk/",
+    "example_en": "The clock shows the wrong time.",
+    "example_ka": "საათი არასწორ დროს აჩვენებს.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "decoration",
+    "georgian": "დეკორაცია",
+    "pronunciation": "/ˌdekəˈreɪʃən/",
+    "example_en": "Holiday decorations fill the house.",
+    "example_ka": "დღესასწაულის დეკორაციები სახლს ავსებს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "ornament",
+    "georgian": "ორნამენტი",
+    "pronunciation": "/ˈɔːrnəmənt/",
+    "example_en": "Christmas ornaments hang on the tree.",
+    "example_ka": "შობის ორნამენტები ხეზე ჰკიდია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "figurine",
+    "georgian": "ფიგურა",
+    "pronunciation": "/ˌfɪɡjəˈriːn/",
+    "example_en": "The ceramic figurine is delicate.",
+    "example_ka": "კერამიკული ფიგურა დელიკატურია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "basket",
+    "georgian": "კალათა",
+    "pronunciation": "/ˈbæskət/",
+    "example_en": "Put the laundry in the basket.",
+    "example_ka": "თეთრეული კალათაში ჩადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "hamper",
+    "georgian": "თეთრეულის კალათა",
+    "pronunciation": "/ˈhæmpər/",
+    "example_en": "Dirty clothes go in the hamper.",
+    "example_ka": "ბინძური ტანსაცმელი თეთრეულის კალათაში იდება.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "hanger",
+    "georgian": "საკიდი",
+    "pronunciation": "/ˈhæŋər/",
+    "example_en": "Hang your jacket on a hanger.",
+    "example_ka": "ქურთუკი საკიდზე ჩამოკიდე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "hooks",
+    "georgian": "კაუჭები",
+    "pronunciation": "/hʊks/",
+    "example_en": "Hang your keys on the hooks.",
+    "example_ka": "გასაღებები კაუჭებზე ჩამოკიდე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "doorknob",
+    "georgian": "კარის სახელური",
+    "pronunciation": "/ˈdɔːrnɒb/",
+    "example_en": "Turn the doorknob to open the door.",
+    "example_ka": "კარის გასაღებად სახელური შეაბრუნე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "handle",
+    "georgian": "სახელური",
+    "pronunciation": "/ˈhændəl/",
+    "example_en": "Pull the handle to open the drawer.",
+    "example_ka": "უჯრის გასაღებად სახელური გაწიე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "knob",
+    "georgian": "ღილი",
+    "pronunciation": "/nɒb/",
+    "example_en": "Turn the knob to adjust the volume.",
+    "example_ka": "ხმის რეგულირებისთვის ღილი შეაბრუნე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "hinge",
+    "georgian": "ბუღალტერი",
+    "pronunciation": "/hɪndʒ/",
+    "example_en": "The door hinge needs oil.",
+    "example_ka": "კარის ბუღალტერს ზეთი სჭირდება.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "threshold",
+    "georgian": "ზღურბლი",
+    "pronunciation": "/ˈθreʃoʊld/",
+    "example_en": "Don't trip on the threshold.",
+    "example_ka": "ზღურბლზე ნუ წავარდები.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "windowsill",
+    "georgian": "ფანჯრის რაფა",
+    "pronunciation": "/ˈwɪndoʊsɪl/",
+    "example_en": "The cat sits on the windowsill.",
+    "example_ka": "კატა ფანჯრის რაფაზე ზის.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "mantle",
+    "georgian": "ბუხარის თარო",
+    "pronunciation": "/ˈmæntəl/",
+    "example_en": "Family photos sit on the mantle.",
+    "example_ka": "ოჯახური სურათები ბუხარის თაროზე დგას.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "fireplace",
+    "georgian": "ბუხარი",
+    "pronunciation": "/ˈfaɪrpleɪs/",
+    "example_en": "We sit by the fireplace in winter.",
+    "example_ka": "ზამთარში ბუხართან ვზივართ.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "hearth",
+    "georgian": "ბუხრის კერა",
+    "pronunciation": "/hɑːrθ/",
+    "example_en": "The hearth keeps the room warm.",
+    "example_ka": "ბუხრის კერა ოთახს თბილს ინახავს.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "chimney",
+    "georgian": "კვამლსავალი",
+    "pronunciation": "/ˈtʃɪmni/",
+    "example_en": "Smoke comes out of the chimney.",
+    "example_ka": "კვამლსავალიდან კვამლი გამოდის.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "attic",
+    "georgian": "სხვენი",
+    "pronunciation": "/ˈætɪk/",
+    "example_en": "Old furniture is stored in the attic.",
+    "example_ka": "ძველი ავეჯი სხვენშია შენახული.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "basement",
+    "georgian": "სარდაფი",
+    "pronunciation": "/ˈbeɪsmənt/",
+    "example_en": "The washing machine is in the basement.",
+    "example_ka": "სარეცხი მანქანა სარდაფშია.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "cellar",
+    "georgian": "მარანი",
+    "pronunciation": "/ˈselər/",
+    "example_en": "Wine is stored in the cellar.",
+    "example_ka": "ღვინო მარანშია დაცული.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "laundry",
+    "georgian": "თეთრეული",
+    "pronunciation": "/ˈlɔːndri/",
+    "example_en": "I need to do the laundry today.",
+    "example_ka": "დღეს თეთრეულის რეცხვა მჭირდება.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "utility",
+    "georgian": "დამხმარე",
+    "pronunciation": "/juːˈtɪləti/",
+    "example_en": "The utility room has the water heater.",
+    "example_ka": "დამხმარე ოთახში წყლის გამათბობელია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "hallway",
+    "georgian": "დერეფანი",
+    "pronunciation": "/ˈhɔːlweɪ/",
+    "example_en": "Pictures line the hallway walls.",
+    "example_ka": "სურათები დერეფნის კედლებზეა შეკიდული.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "foyer",
+    "georgian": "შესასვლელი ჰოლი",
+    "pronunciation": "/ˈfɔɪər/",
+    "example_en": "Guests wait in the foyer.",
+    "example_ka": "სტუმრები შესასვლელ ჰოლში ელოდებიან.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "vestibule",
+    "georgian": "შესასვლელი ოთახი",
+    "pronunciation": "/ˈvestɪbjuːl/",
+    "example_en": "Leave your coat in the vestibule.",
+    "example_ka": "პალტო შესასვლელ ოთახში დატოვე.",
+    "category": "furniture-rooms",
+    "level": "C1"
+  },
+  {
+    "english": "porch",
+    "georgian": "ღია ვერანდა",
+    "pronunciation": "/pɔːrtʃ/",
+    "example_en": "We sit on the porch in the evening.",
+    "example_ka": "საღამოს ღია ვერანდაზე ვზივართ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "patio",
+    "georgian": "ღია ეზო",
+    "pronunciation": "/ˈpætiˌoʊ/",
+    "example_en": "We barbecue on the patio.",
+    "example_ka": "ღია ეზოში ბარბეკიუს ვაკეთებთ.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "deck",
+    "georgian": "ხის ტერასა",
+    "pronunciation": "/dek/",
+    "example_en": "The deck overlooks the garden.",
+    "example_ka": "ხის ტერასა ბაღს იშურებს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "terrace",
+    "georgian": "ტერასა",
+    "pronunciation": "/ˈterəs/",
+    "example_en": "The terrace has a beautiful view.",
+    "example_ka": "ტერასიდან ლამაზი ხედი იშურება.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "conservatory",
+    "georgian": "ოცნების ოთახი",
+    "pronunciation": "/kənˈsɜːrvəˌtɔːri/",
+    "example_en": "Plants grow in the conservatory.",
+    "example_ka": "ოცნების ოთახში მცენარეები იზრდება.",
+    "category": "furniture-rooms",
+    "level": "C1"
+  },
+  {
+    "english": "sunroom",
+    "georgian": "მზიანი ოთახი",
+    "pronunciation": "/ˈsʌnruːm/",
+    "example_en": "The sunroom is bright and warm.",
+    "example_ka": "მზიანი ოთახი ნათელი და თბილია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "study",
+    "georgian": "კაბინეტი",
+    "pronunciation": "/ˈstʌdi/",
+    "example_en": "He works quietly in his study.",
+    "example_ka": "ის თავის კაბინეტში ჩუმად მუშაობს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "office",
+    "georgian": "ოფისი",
+    "pronunciation": "/ˈɔːfɪs/",
+    "example_en": "She has a home office upstairs.",
+    "example_ka": "მას სახლში ოფისი ზემოთ აქვს.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "library",
+    "georgian": "ბიბლიოთეკა",
+    "pronunciation": "/ˈlaɪbreri/",
+    "example_en": "The home library has many books.",
+    "example_ka": "სახლის ბიბლიოთეკაში ბევრი წიგნია.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "den",
+    "georgian": "მისაღები ოთახი",
+    "pronunciation": "/den/",
+    "example_en": "The family watches TV in the den.",
+    "example_ka": "ოჯახი მისაღებ ოთახში ტელევიზიას უყურებს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "parlor",
+    "georgian": "მიმღები ოთახი",
+    "pronunciation": "/ˈpɑːrlər/",
+    "example_en": "The parlor is for formal guests.",
+    "example_ka": "მიმღები ოთახი ოფიციალური სტუმრებისთვისაა.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "loft",
+    "georgian": "ლოფტი",
+    "pronunciation": "/lɔːft/",
+    "example_en": "The artist lives in a loft apartment.",
+    "example_ka": "მხატვარი ლოფტ ბინაში ცხოვრობს.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "studio",
+    "georgian": "სტუდია",
+    "pronunciation": "/ˈstuːdioʊ/",
+    "example_en": "The studio apartment is small but cozy.",
+    "example_ka": "სტუდია ბინა პატარაა მაგრამ ყუდი.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "mantel",
+    "georgian": "ბუხრის რაფა",
+    "pronunciation": "/ˈmæntl/",
+    "example_en": "She placed a clock on the mantel.",
+    "example_ka": "ბუხრის რაფაზე საათი დადო.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "lintel",
+    "georgian": "ზღურბლი",
+    "pronunciation": "/ˈlɪntl/",
+    "example_en": "The stone lintel is above the door.",
+    "example_ka": "ქვის ზღურბლი კარის ზემოთაა.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "coaster",
+    "georgian": "სადგამი",
+    "pronunciation": "/ˈkoʊstər/",
+    "example_en": "Use a coaster under your glass.",
+    "example_ka": "ჭიქის ქვეშ სადგამი გამოიყენე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "cupboard",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈkʌbərd/",
+    "example_en": "Put the plates in the cupboard.",
+    "example_ka": "თეფშები კარადაში დადე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "duvet",
+    "georgian": "საბანი",
+    "pronunciation": "/ˈduːveɪ/",
+    "example_en": "The duvet keeps me warm.",
+    "example_ka": "საბანი მათბობს.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "radiator",
+    "georgian": "რადიატორი",
+    "pronunciation": "/ˈreɪdieɪtər/",
+    "example_en": "The radiator heats the room.",
+    "example_ka": "რადიატორი ოთახს ათბობს.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "thermostat",
+    "georgian": "თერმოსტატი",
+    "pronunciation": "/ˈθɜːrməstæt/",
+    "example_en": "Set the thermostat to 22.",
+    "example_ka": "თერმოსტატი 22-ზე დააყენე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "plumbing",
+    "georgian": "სანტექნიკა",
+    "pronunciation": "/ˈplʌmɪŋ/",
+    "example_en": "The plumbing needs repair.",
+    "example_ka": "სანტექნიკის შეკეთება სჭირდება.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "outlet",
+    "georgian": "როზეტი",
+    "pronunciation": "/ˈaʊtlet/",
+    "example_en": "Plug it into the outlet.",
+    "example_ka": "როზეტში შეაერთე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "plug",
+    "georgian": "შტეკერი",
+    "pronunciation": "/plʌɡ/",
+    "example_en": "The plug doesn't fit.",
+    "example_ka": "შტეკერი არ ჯდება.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "socket",
+    "georgian": "ბუდე",
+    "pronunciation": "/ˈsɒkɪt/",
+    "example_en": "There are two sockets here.",
+    "example_ka": "აქ ორი ბუდეა.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "bulb",
+    "georgian": "ნათურა",
+    "pronunciation": "/bʌlb/",
+    "example_en": "The bulb needs replacing.",
+    "example_ka": "ნათურის შეცვლა სჭირდება.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "heater",
+    "georgian": "გამათბობელი",
+    "pronunciation": "/ˈhiːtər/",
+    "example_en": "The heater is broken.",
+    "example_ka": "გამათბობელი გაფუჭებულია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "furnace",
+    "georgian": "ღუმელი",
+    "pronunciation": "/ˈfɜːrnɪs/",
+    "example_en": "The furnace keeps us warm.",
+    "example_ka": "ღუმელი გვათბობს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "insulation",
+    "georgian": "იზოლაცია",
+    "pronunciation": "/ˌɪnsəˈleɪʃn/",
+    "example_en": "Good insulation saves energy.",
+    "example_ka": "კარგი იზოლაცია ენერგიას ზოგავს.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "beam",
+    "georgian": "კოჭი",
+    "pronunciation": "/biːm/",
+    "example_en": "The wooden beams are old.",
+    "example_ka": "ხის კოჭები ძველია.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "pillar",
+    "georgian": "სვეტი",
+    "pronunciation": "/ˈpɪlər/",
+    "example_en": "The house has stone pillars.",
+    "example_ka": "სახლს ქვის სვეტები აქვს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "gutter",
+    "georgian": "ღარი",
+    "pronunciation": "/ˈɡʌtər/",
+    "example_en": "Clean the gutters.",
+    "example_ka": "ღარები გაწმინდე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "fence",
+    "georgian": "ღობე",
+    "pronunciation": "/fens/",
+    "example_en": "We painted the fence.",
+    "example_ka": "ღობე შევღებეთ.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "gate",
+    "georgian": "ჭიშკარი",
+    "pronunciation": "/ɡeɪt/",
+    "example_en": "Close the gate.",
+    "example_ka": "ჭიშკარი დახურე.",
+    "category": "furniture-rooms",
+    "level": "A1"
+  },
+  {
+    "english": "driveway",
+    "georgian": "შესასვლელი",
+    "pronunciation": "/ˈdraɪvweɪ/",
+    "example_en": "Park in the driveway.",
+    "example_ka": "შესასვლელში დააყენე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "shed",
+    "georgian": "ფარდული",
+    "pronunciation": "/ʃed/",
+    "example_en": "Tools are in the shed.",
+    "example_ka": "ხელსაწყოები ფარდულშია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "shutter",
+    "georgian": "ჟალუზი",
+    "pronunciation": "/ˈʃʌtər/",
+    "example_en": "Close the shutters.",
+    "example_ka": "ჟალუზები დახურე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "ledge",
+    "georgian": "რაფა",
+    "pronunciation": "/ledʒ/",
+    "example_en": "Flowers on the window ledge.",
+    "example_ka": "ფანჯრის რაფაზე ყვავილები.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "banister",
+    "georgian": "მოაჯირი",
+    "pronunciation": "/ˈbænɪstər/",
+    "example_en": "Hold the banister.",
+    "example_ka": "მოაჯირს დაეჭირე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "nook",
+    "georgian": "კუთხე",
+    "pronunciation": "/nʊk/",
+    "example_en": "I read in the nook.",
+    "example_ka": "კუთხეში ვკითხულობ.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "alcove",
+    "georgian": "ნიშა",
+    "pronunciation": "/ˈælkoʊv/",
+    "example_en": "The alcove has a desk.",
+    "example_ka": "ნიშაში მაგიდა დგას.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "sideboard",
+    "georgian": "სერვანტი",
+    "pronunciation": "/ˈsaɪdbɔːrd/",
+    "example_en": "Dishes are in the sideboard.",
+    "example_ka": "ჭურჭელი სერვანტშია.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "futon",
+    "georgian": "ფუტონი",
+    "pronunciation": "/ˈfuːtɒn/",
+    "example_en": "The futon is a bed.",
+    "example_ka": "ფუტონი საწოლია.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "hammock",
+    "georgian": "ჰამაკი",
+    "pronunciation": "/ˈhæmək/",
+    "example_en": "Relax in the hammock.",
+    "example_ka": "ჰამაკში დაისვენე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "crib",
+    "georgian": "აკვანი",
+    "pronunciation": "/krɪb/",
+    "example_en": "The baby sleeps in a crib.",
+    "example_ka": "ბავშვი აკვანში ძინავს.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "bunk",
+    "georgian": "ორსართულიანი საწოლი",
+    "pronunciation": "/bʌŋk/",
+    "example_en": "Kids love bunk beds.",
+    "example_ka": "ბავშვებს ორსართულიანი საწოლი უყვართ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "cushion",
+    "georgian": "ბალიში",
+    "pronunciation": "/ˈkʊʃn/",
+    "example_en": "Put a cushion behind you.",
+    "example_ka": "ბალიში უკან დადე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "oak",
+    "georgian": "მუხა",
+    "pronunciation": "/oʊk/",
+    "example_en": "The oak table is heavy.",
+    "example_ka": "მუხის მაგიდა მძიმეა.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "pine",
+    "georgian": "ფიჭვი",
+    "pronunciation": "/paɪn/",
+    "example_en": "Pine shelves are cheap.",
+    "example_ka": "ფიჭვის თაროები იაფია.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "corridor",
+    "georgian": "დერეფანი",
+    "pronunciation": "/ˈkɒrɪdɔːr/",
+    "example_en": "Walk down the corridor.",
+    "example_ka": "დერეფანში გაიარე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "nursery",
+    "georgian": "საბავშვო ოთახი",
+    "pronunciation": "/ˈnɜːrsəri/",
+    "example_en": "We painted the nursery.",
+    "example_ka": "საბავშვო ოთახი შევღებეთ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "veranda",
+    "georgian": "ვერანდა",
+    "pronunciation": "/vəˈrændə/",
+    "example_en": "We sit on the veranda.",
+    "example_ka": "ვერანდაზე ვსხედვართ.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "gazebo",
+    "georgian": "პავილიონი",
+    "pronunciation": "/ɡəˈziːboʊ/",
+    "example_en": "Rest in the gazebo.",
+    "example_ka": "პავილიონში დაისვენე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "latch",
+    "georgian": "ჩამკეტი",
+    "pronunciation": "/lætʃ/",
+    "example_en": "The latch is broken.",
+    "example_ka": "ჩამკეტი გატეხილია.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "parquet",
+    "georgian": "პარკეტი",
+    "pronunciation": "/pɑːrˈkeɪ/",
+    "example_en": "The parquet floor shines.",
+    "example_ka": "პარკეტის იატაკი ბრწყინავს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "railing",
+    "georgian": "მოაჯირი",
+    "pronunciation": "/ˈreɪlɪŋ/",
+    "example_en": "Hold onto the railing.",
+    "example_ka": "მოაჯირს დაეჭირე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "sill",
+    "georgian": "ფანჯრის რაფა",
+    "pronunciation": "/sɪl/",
+    "example_en": "A plant on the sill.",
+    "example_ka": "მცენარე ფანჯრის რაფაზე.",
+    "category": "furniture-rooms",
+    "level": "A2"
+  },
+  {
+    "english": "tapestry",
+    "georgian": "გობელენი",
+    "pronunciation": "/ˈtæpɪstri/",
+    "example_en": "The tapestry is medieval.",
+    "example_ka": "გობელენი შუასაუკუნეებისაა.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "cornice",
+    "georgian": "კარნიზი",
+    "pronunciation": "/ˈkɔːrnɪs/",
+    "example_en": "The cornice is ornate.",
+    "example_ka": "კარნიზი მორთულია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "loggia",
+    "georgian": "ლოჯია",
+    "pronunciation": "/ˈlɒdʒə/",
+    "example_en": "Dinner on the loggia.",
+    "example_ka": "სადილი ლოჯიაზე.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "portico",
+    "georgian": "პორტიკო",
+    "pronunciation": "/ˈpɔːrtɪkoʊ/",
+    "example_en": "The portico has columns.",
+    "example_ka": "პორტიკოს სვეტები აქვს.",
+    "category": "furniture-rooms",
+    "level": "C1"
+  },
+  {
+    "english": "annexe",
+    "georgian": "მინაშენი",
+    "pronunciation": "/ˈæneks/",
+    "example_en": "The annexe has two rooms.",
+    "example_ka": "მინაშენს ორი ოთახი აქვს.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "settee",
+    "georgian": "პატარა დივანი",
+    "pronunciation": "/seˈtiː/",
+    "example_en": "Sit on the settee.",
+    "example_ka": "პატარა დივანზე დაჯექი.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "daybed",
+    "georgian": "ტახტი",
+    "pronunciation": "/ˈdeɪbed/",
+    "example_en": "She naps on the daybed.",
+    "example_ka": "ტახტზე იძინებს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "console",
+    "georgian": "კონსოლი",
+    "pronunciation": "/ˈkɒnsoʊl/",
+    "example_en": "Keys on the console table.",
+    "example_ka": "გასაღებები კონსოლის მაგიდაზე.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "armoire",
+    "georgian": "გარდერობი",
+    "pronunciation": "/ɑːrmˈwɑːr/",
+    "example_en": "Clothes hang in the armoire.",
+    "example_ka": "ტანსაცმელი გარდერობში კიდია.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "chaise",
+    "georgian": "შეზლონგი",
+    "pronunciation": "/ʃeɪz/",
+    "example_en": "Relax on the chaise.",
+    "example_ka": "შეზლონგზე დაისვენე.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  },
+  {
+    "english": "bolster",
+    "georgian": "გრძელი ბალიში",
+    "pronunciation": "/ˈboʊlstər/",
+    "example_en": "Put the bolster under your neck.",
+    "example_ka": "გრძელი ბალიში კისრის ქვეშ.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "drapery",
+    "georgian": "ფარდა",
+    "pronunciation": "/ˈdreɪpəri/",
+    "example_en": "Heavy drapery blocks light.",
+    "example_ka": "მძიმე ფარდა შუქს ხელს უშლის.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "commode",
+    "georgian": "კომოდი",
+    "pronunciation": "/kəˈmoʊd/",
+    "example_en": "The commode is by the bed.",
+    "example_ka": "კომოდი საწოლთანაა.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "skylight",
+    "georgian": "ჭერის ფანჯარა",
+    "pronunciation": "/ˈskaɪlaɪt/",
+    "example_en": "The skylight lets in sun.",
+    "example_ka": "ჭერის ფანჯარა მზეს შემოუშვებს.",
+    "category": "furniture-rooms",
+    "level": "B1"
+  },
+  {
+    "english": "dormer",
+    "georgian": "სარკმელი",
+    "pronunciation": "/ˈdɔːrmər/",
+    "example_en": "Light from the dormer window.",
+    "example_ka": "სარკმელის ფანჯრიდან შუქი.",
+    "category": "furniture-rooms",
+    "level": "B2"
+  }
 ]

@@ -1,52 +1,1253 @@
 [
-  {"english":"news","georgian":"ახალი ამბები","pronunciation":"/njuːz/","example_en":"I watch the news every morning.","example_ka":"ყოველ დილით ახალ ამბებს ვუყურებ.","category":"journalism-news","level":"beginner"},
-  {"english":"journalist","georgian":"ჟურნალისტი","pronunciation":"/ˈdʒɜːrnəlɪst/","example_en":"The journalist investigated the story.","example_ka":"ჟურნალისტმა ამბავი გამოიძია.","category":"journalism-news","level":"beginner"},
-  {"english":"reporter","georgian":"რეპორტიორი","pronunciation":"/rɪˈpɔːrtər/","example_en":"The reporter was live from the scene.","example_ka":"რეპორტიორი ადგილიდან პირდაპირ გადმოსცემდა.","category":"journalism-news","level":"beginner"},
-  {"english":"headline","georgian":"სათაური","pronunciation":"/ˈhɛdlaɪn/","example_en":"The headline caught everyone's attention.","example_ka":"სათაურმა ყველას ყურადღება მიიპყრო.","category":"journalism-news","level":"intermediate"},
-  {"english":"article","georgian":"სტატია","pronunciation":"/ˈɑːrtɪkəl/","example_en":"She wrote an article about climate change.","example_ka":"მან კლიმატის ცვლილებაზე სტატია დაწერა.","category":"journalism-news","level":"beginner"},
-  {"english":"interview","georgian":"ინტერვიუ","pronunciation":"/ˈɪntərvjuː/","example_en":"The interview with the president was broadcast live.","example_ka":"პრეზიდენტის ინტერვიუ პირდაპირ ეთერში გავიდა.","category":"journalism-news","level":"beginner"},
-  {"english":"broadcast","georgian":"მაუწყებლობა","pronunciation":"/ˈbrɔːdkæst/","example_en":"The news broadcast starts at six.","example_ka":"საინფორმაციო მაუწყებლობა ექვსზე იწყება.","category":"journalism-news","level":"intermediate"},
-  {"english":"press","georgian":"პრესა","pronunciation":"/prɛs/","example_en":"The press covered the event extensively.","example_ka":"პრესამ ღონისძიება ვრცლად გააშუქა.","category":"journalism-news","level":"intermediate"},
-  {"english":"editor","georgian":"რედაქტორი","pronunciation":"/ˈɛdɪtər/","example_en":"The editor approved the final version.","example_ka":"რედაქტორმა საბოლოო ვერსია დაამტკიცა.","category":"journalism-news","level":"intermediate"},
-  {"english":"column","georgian":"სვეტი","pronunciation":"/ˈkɒləm/","example_en":"He writes a weekly column for the newspaper.","example_ka":"ის გაზეთისთვის ყოველკვირეულ სვეტს წერს.","category":"journalism-news","level":"intermediate"},
-  {"english":"editorial","georgian":"სარედაქციო","pronunciation":"/ˌɛdɪˈtɔːriəl/","example_en":"The editorial criticized the government.","example_ka":"სარედაქციო სტატიამ მთავრობა გააკრიტიკა.","category":"journalism-news","level":"advanced"},
-  {"english":"source","georgian":"წყარო","pronunciation":"/sɔːrs/","example_en":"A reliable source confirmed the story.","example_ka":"სანდო წყარომ ამბავი დაადასტურა.","category":"journalism-news","level":"intermediate"},
-  {"english":"investigation","georgian":"გამოძიება","pronunciation":"/ɪnˌvɛstɪˈɡeɪʃən/","example_en":"The investigation revealed corruption.","example_ka":"გამოძიებამ კორუფცია გამოავლინა.","category":"journalism-news","level":"intermediate"},
-  {"english":"censorship","georgian":"ცენზურა","pronunciation":"/ˈsɛnsərʃɪp/","example_en":"Censorship limits freedom of speech.","example_ka":"ცენზურა სიტყვის თავისუფლებას ზღუდავს.","category":"journalism-news","level":"advanced"},
-  {"english":"propaganda","georgian":"პროპაგანდა","pronunciation":"/ˌprɒpəˈɡændə/","example_en":"Propaganda spreads false information.","example_ka":"პროპაგანდა ყალბ ინფორმაციას ავრცელებს.","category":"journalism-news","level":"intermediate"},
-  {"english":"fake news","georgian":"ყალბი ამბები","pronunciation":"/feɪk njuːz/","example_en":"Fake news is a serious problem.","example_ka":"ყალბი ამბები სერიოზული პრობლემაა.","category":"journalism-news","level":"beginner"},
-  {"english":"breaking news","georgian":"სასწრაფო ახალი ამბები","pronunciation":"/ˈbreɪkɪŋ njuːz/","example_en":"Breaking news just came in.","example_ka":"სასწრაფო ახალი ამბები შემოვიდა.","category":"journalism-news","level":"beginner"},
-  {"english":"media","georgian":"მედია","pronunciation":"/ˈmiːdiə/","example_en":"The media plays an important role in society.","example_ka":"მედია საზოგადოებაში მნიშვნელოვან როლს თამაშობს.","category":"journalism-news","level":"beginner"},
-  {"english":"newspaper","georgian":"გაზეთი","pronunciation":"/ˈnjuːzpeɪpər/","example_en":"My grandfather reads the newspaper every day.","example_ka":"ჩემი ბაბუა ყოველდღე გაზეთს კითხულობს.","category":"journalism-news","level":"beginner"},
-  {"english":"magazine","georgian":"ჟურნალი","pronunciation":"/ˌmæɡəˈziːn/","example_en":"She subscribes to a fashion magazine.","example_ka":"ის მოდის ჟურნალს იწერს.","category":"journalism-news","level":"beginner"},
-  {"english":"correspondent","georgian":"კორესპონდენტი","pronunciation":"/ˌkɒrɪˈspɒndənt/","example_en":"Our foreign correspondent reports from London.","example_ka":"ჩვენი საზღვარგარეთის კორესპონდენტი ლონდონიდან აწვდის ინფორმაციას.","category":"journalism-news","level":"advanced"},
-  {"english":"deadline","georgian":"ვადა","pronunciation":"/ˈdɛdlaɪn/","example_en":"The deadline for the article is tomorrow.","example_ka":"სტატიის ვადა ხვალ იწურება.","category":"journalism-news","level":"intermediate"},
-  {"english":"coverage","georgian":"გაშუქება","pronunciation":"/ˈkʌvərɪdʒ/","example_en":"The TV coverage of the event was excellent.","example_ka":"ღონისძიების სატელევიზიო გაშუქება შესანიშნავი იყო.","category":"journalism-news","level":"intermediate"},
-  {"english":"exclusive","georgian":"ექსკლუზიური","pronunciation":"/ɪkˈskluːsɪv/","example_en":"The newspaper published an exclusive story.","example_ka":"გაზეთმა ექსკლუზიური ამბავი გამოაქვეყნა.","category":"journalism-news","level":"intermediate"},
-  {"english":"anchor","georgian":"წამყვანი","pronunciation":"/ˈæŋkər/","example_en":"The news anchor presented the evening news.","example_ka":"წამყვანმა საღამოს ახალი ამბები წარადგინა.","category":"journalism-news","level":"intermediate"},
-  {"english":"opinion","georgian":"მოსაზრება","pronunciation":"/əˈpɪnjən/","example_en":"Everyone has the right to their own opinion.","example_ka":"ყველას აქვს საკუთარი მოსაზრების უფლება.","category":"journalism-news","level":"beginner"},
-  {"english":"fact","georgian":"ფაქტი","pronunciation":"/fækt/","example_en":"Journalists must check their facts.","example_ka":"ჟურნალისტებმა ფაქტები უნდა შეამოწმონ.","category":"journalism-news","level":"beginner"},
-  {"english":"bias","georgian":"მიკერძოებულობა","pronunciation":"/ˈbaɪəs/","example_en":"Media bias can influence public opinion.","example_ka":"მედიის მიკერძოებულობამ შეიძლება საზოგადოებრივ აზრზე იმოქმედოს.","category":"journalism-news","level":"advanced"},
-  {"english":"scandal","georgian":"სკანდალი","pronunciation":"/ˈskændəl/","example_en":"The political scandal shocked the nation.","example_ka":"პოლიტიკურმა სკანდალმა ერი შეაძრწუნა.","category":"journalism-news","level":"intermediate"},
-  {"english":"press conference","georgian":"პრესკონფერენცია","pronunciation":"/prɛs ˈkɒnfərəns/","example_en":"The mayor held a press conference.","example_ka":"მერმა პრესკონფერენცია გამართა.","category":"journalism-news","level":"intermediate"},
-  {"english":"whistle-blower","georgian":"მამხილებელი","pronunciation":"/ˈwɪsəlˌbloʊər/","example_en":"The whistle-blower exposed the fraud.","example_ka":"მამხილებელმა თაღლითობა გამოაშკარავა.","category":"journalism-news","level":"advanced"},
-  {"english":"scoop","georgian":"სენსაცია","pronunciation":"/skuːp/","example_en":"The reporter got a major scoop.","example_ka":"რეპორტიორმა დიდი სენსაცია მოიპოვა.","category":"journalism-news","level":"advanced"},
-  {"english":"publish","georgian":"გამოქვეყნება","pronunciation":"/ˈpʌblɪʃ/","example_en":"The story was published online.","example_ka":"ამბავი ონლაინ გამოქვეყნდა.","category":"journalism-news","level":"intermediate"},
-  {"english":"subscribe","georgian":"გამოწერა","pronunciation":"/səbˈskraɪb/","example_en":"Subscribe to our newsletter.","example_ka":"გამოიწერეთ ჩვენი სიახლეები.","category":"journalism-news","level":"intermediate"},
-  {"english":"circulation","georgian":"ტირაჟი","pronunciation":"/ˌsɜːrkjʊˈleɪʃən/","example_en":"The newspaper has a large circulation.","example_ka":"გაზეთს დიდი ტირაჟი აქვს.","category":"journalism-news","level":"advanced"},
-  {"english":"tabloid","georgian":"ტაბლოიდი","pronunciation":"/ˈtæblɔɪd/","example_en":"Tabloids often exaggerate stories.","example_ka":"ტაბლოიდები ხშირად გაზვიადებენ ამბებს.","category":"journalism-news","level":"intermediate"},
-  {"english":"testimony","georgian":"ჩვენება","pronunciation":"/ˈtɛstɪmoʊni/","example_en":"The witness gave her testimony.","example_ka":"მოწმემ ჩვენება მისცა.","category":"journalism-news","level":"intermediate"},
-  {"english":"transparency","georgian":"გამჭვირვალობა","pronunciation":"/trænsˈpærənsi/","example_en":"Transparency in government is essential.","example_ka":"მთავრობის გამჭვირვალობა აუცილებელია.","category":"journalism-news","level":"advanced"},
-  {"english":"freelancer","georgian":"ფრილანსერი","pronunciation":"/ˈfriːlænsər/","example_en":"She works as a freelance journalist.","example_ka":"ის ფრილანსერ ჟურნალისტად მუშაობს.","category":"journalism-news","level":"intermediate"},
-  {"english":"podcast","georgian":"პოდკასტი","pronunciation":"/ˈpɒdkæst/","example_en":"I listen to news podcasts during my commute.","example_ka":"სამსახურში მგზავრობისას საინფორმაციო პოდკასტებს ვუსმენ.","category":"journalism-news","level":"beginner"},
-  {"english":"headline news","georgian":"მთავარი ამბები","pronunciation":"/ˈhɛdlaɪn njuːz/","example_en":"The headline news focused on the election.","example_ka":"მთავარი ამბები არჩევნებზე იყო ფოკუსირებული.","category":"journalism-news","level":"intermediate"},
-  {"english":"witness","georgian":"მოწმე","pronunciation":"/ˈwɪtnəs/","example_en":"The witness described what happened.","example_ka":"მოწმემ აღწერა რა მოხდა.","category":"journalism-news","level":"beginner"},
-  {"english":"quote","georgian":"ციტატა","pronunciation":"/kwoʊt/","example_en":"The article included a quote from the minister.","example_ka":"სტატიაში მინისტრის ციტატა იყო მოყვანილი.","category":"journalism-news","level":"intermediate"},
-  {"english":"anonymous","georgian":"ანონიმური","pronunciation":"/əˈnɒnɪməs/","example_en":"The source wished to remain anonymous.","example_ka":"წყარო ანონიმურობის შენარჩუნებას ისურვებდა.","category":"journalism-news","level":"intermediate"},
-  {"english":"verification","georgian":"გადამოწმება","pronunciation":"/ˌvɛrɪfɪˈkeɪʃən/","example_en":"Fact verification is crucial in journalism.","example_ka":"ფაქტების გადამოწმება ჟურნალისტიკაში გადამწყვეტია.","category":"journalism-news","level":"advanced"},
-  {"english":"press freedom","georgian":"პრესის თავისუფლება","pronunciation":"/prɛs ˈfriːdəm/","example_en":"Press freedom is a sign of democracy.","example_ka":"პრესის თავისუფლება დემოკრატიის ნიშანია.","category":"journalism-news","level":"intermediate"},
-  {"english":"correspondent","georgian":"კორესპონდენტი","pronunciation":"/ˌkɒrɪˈspɒndənt/","example_en":"The war correspondent reported from the front line.","example_ka":"სამხედრო კორესპონდენტი წინა ხაზიდან აწვდიდა ინფორმაციას.","category":"journalism-news","level":"advanced"},
-  {"english":"paparazzi","georgian":"პაპარაცი","pronunciation":"/ˌpæpəˈrætsi/","example_en":"The paparazzi followed the celebrity.","example_ka":"პაპარაცი ცნობილ ადამიანს მისდევდა.","category":"journalism-news","level":"intermediate"},
-  {"english":"photojournalism","georgian":"ფოტოჟურნალისტიკა","pronunciation":"/ˌfoʊtoʊˈdʒɜːrnəlɪzəm/","example_en":"Photojournalism captures powerful moments.","example_ka":"ფოტოჟურნალისტიკა ძლიერ მომენტებს იჭერს.","category":"journalism-news","level":"advanced"},
-  {"english":"editorial board","georgian":"სარედაქციო საბჭო","pronunciation":"/ˌɛdɪˈtɔːriəl bɔːrd/","example_en":"The editorial board decides what gets published.","example_ka":"სარედაქციო საბჭო წყვეტს რა გამოქვეყნდეს.","category":"journalism-news","level":"advanced"}
+  {
+    "english": "news",
+    "georgian": "ახალი ამბები",
+    "pronunciation": "/njuːz/",
+    "example_en": "I watch the news every morning.",
+    "example_ka": "ყოველ დილით ახალ ამბებს ვუყურებ.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "journalist",
+    "georgian": "ჟურნალისტი",
+    "pronunciation": "/ˈdʒɜːrnəlɪst/",
+    "example_en": "The journalist investigated the story.",
+    "example_ka": "ჟურნალისტმა ამბავი გამოიძია.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "reporter",
+    "georgian": "რეპორტიორი",
+    "pronunciation": "/rɪˈpɔːrtər/",
+    "example_en": "The reporter was live from the scene.",
+    "example_ka": "რეპორტიორი ადგილიდან პირდაპირ გადმოსცემდა.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "headline",
+    "georgian": "სათაური",
+    "pronunciation": "/ˈhɛdlaɪn/",
+    "example_en": "The headline caught everyone's attention.",
+    "example_ka": "სათაურმა ყველას ყურადღება მიიპყრო.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "article",
+    "georgian": "სტატია",
+    "pronunciation": "/ˈɑːrtɪkəl/",
+    "example_en": "She wrote an article about climate change.",
+    "example_ka": "მან კლიმატის ცვლილებაზე სტატია დაწერა.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "interview",
+    "georgian": "ინტერვიუ",
+    "pronunciation": "/ˈɪntərvjuː/",
+    "example_en": "The interview with the president was broadcast live.",
+    "example_ka": "პრეზიდენტის ინტერვიუ პირდაპირ ეთერში გავიდა.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "broadcast",
+    "georgian": "მაუწყებლობა",
+    "pronunciation": "/ˈbrɔːdkæst/",
+    "example_en": "The news broadcast starts at six.",
+    "example_ka": "საინფორმაციო მაუწყებლობა ექვსზე იწყება.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "press",
+    "georgian": "პრესა",
+    "pronunciation": "/prɛs/",
+    "example_en": "The press covered the event extensively.",
+    "example_ka": "პრესამ ღონისძიება ვრცლად გააშუქა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "editor",
+    "georgian": "რედაქტორი",
+    "pronunciation": "/ˈɛdɪtər/",
+    "example_en": "The editor approved the final version.",
+    "example_ka": "რედაქტორმა საბოლოო ვერსია დაამტკიცა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "column",
+    "georgian": "სვეტი",
+    "pronunciation": "/ˈkɒləm/",
+    "example_en": "He writes a weekly column for the newspaper.",
+    "example_ka": "ის გაზეთისთვის ყოველკვირეულ სვეტს წერს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "editorial",
+    "georgian": "სარედაქციო",
+    "pronunciation": "/ˌɛdɪˈtɔːriəl/",
+    "example_en": "The editorial criticized the government.",
+    "example_ka": "სარედაქციო სტატიამ მთავრობა გააკრიტიკა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "source",
+    "georgian": "წყარო",
+    "pronunciation": "/sɔːrs/",
+    "example_en": "A reliable source confirmed the story.",
+    "example_ka": "სანდო წყარომ ამბავი დაადასტურა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "investigation",
+    "georgian": "გამოძიება",
+    "pronunciation": "/ɪnˌvɛstɪˈɡeɪʃən/",
+    "example_en": "The investigation revealed corruption.",
+    "example_ka": "გამოძიებამ კორუფცია გამოავლინა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "censorship",
+    "georgian": "ცენზურა",
+    "pronunciation": "/ˈsɛnsərʃɪp/",
+    "example_en": "Censorship limits freedom of speech.",
+    "example_ka": "ცენზურა სიტყვის თავისუფლებას ზღუდავს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "propaganda",
+    "georgian": "პროპაგანდა",
+    "pronunciation": "/ˌprɒpəˈɡændə/",
+    "example_en": "Propaganda spreads false information.",
+    "example_ka": "პროპაგანდა ყალბ ინფორმაციას ავრცელებს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "media",
+    "georgian": "მედია",
+    "pronunciation": "/ˈmiːdiə/",
+    "example_en": "The media plays an important role in society.",
+    "example_ka": "მედია საზოგადოებაში მნიშვნელოვან როლს თამაშობს.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "newspaper",
+    "georgian": "გაზეთი",
+    "pronunciation": "/ˈnjuːzpeɪpər/",
+    "example_en": "My grandfather reads the newspaper every day.",
+    "example_ka": "ჩემი ბაბუა ყოველდღე გაზეთს კითხულობს.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "magazine",
+    "georgian": "ჟურნალი",
+    "pronunciation": "/ˌmæɡəˈziːn/",
+    "example_en": "She subscribes to a fashion magazine.",
+    "example_ka": "ის მოდის ჟურნალს იწერს.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "correspondent",
+    "georgian": "კორესპონდენტი",
+    "pronunciation": "/ˌkɒrɪˈspɒndənt/",
+    "example_en": "Our foreign correspondent reports from London.",
+    "example_ka": "ჩვენი საზღვარგარეთის კორესპონდენტი ლონდონიდან აწვდის ინფორმაციას.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "deadline",
+    "georgian": "ვადა",
+    "pronunciation": "/ˈdɛdlaɪn/",
+    "example_en": "The deadline for the article is tomorrow.",
+    "example_ka": "სტატიის ვადა ხვალ იწურება.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "coverage",
+    "georgian": "გაშუქება",
+    "pronunciation": "/ˈkʌvərɪdʒ/",
+    "example_en": "The TV coverage of the event was excellent.",
+    "example_ka": "ღონისძიების სატელევიზიო გაშუქება შესანიშნავი იყო.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "exclusive",
+    "georgian": "ექსკლუზიური",
+    "pronunciation": "/ɪkˈskluːsɪv/",
+    "example_en": "The newspaper published an exclusive story.",
+    "example_ka": "გაზეთმა ექსკლუზიური ამბავი გამოაქვეყნა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "anchor",
+    "georgian": "წამყვანი",
+    "pronunciation": "/ˈæŋkər/",
+    "example_en": "The news anchor presented the evening news.",
+    "example_ka": "წამყვანმა საღამოს ახალი ამბები წარადგინა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "opinion",
+    "georgian": "მოსაზრება",
+    "pronunciation": "/əˈpɪnjən/",
+    "example_en": "Everyone has the right to their own opinion.",
+    "example_ka": "ყველას აქვს საკუთარი მოსაზრების უფლება.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "fact",
+    "georgian": "ფაქტი",
+    "pronunciation": "/fækt/",
+    "example_en": "Journalists must check their facts.",
+    "example_ka": "ჟურნალისტებმა ფაქტები უნდა შეამოწმონ.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "bias",
+    "georgian": "მიკერძოებულობა",
+    "pronunciation": "/ˈbaɪəs/",
+    "example_en": "Media bias can influence public opinion.",
+    "example_ka": "მედიის მიკერძოებულობამ შეიძლება საზოგადოებრივ აზრზე იმოქმედოს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "scandal",
+    "georgian": "სკანდალი",
+    "pronunciation": "/ˈskændəl/",
+    "example_en": "The political scandal shocked the nation.",
+    "example_ka": "პოლიტიკურმა სკანდალმა ერი შეაძრწუნა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "scoop",
+    "georgian": "სენსაცია",
+    "pronunciation": "/skuːp/",
+    "example_en": "The reporter got a major scoop.",
+    "example_ka": "რეპორტიორმა დიდი სენსაცია მოიპოვა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "publish",
+    "georgian": "გამოქვეყნება",
+    "pronunciation": "/ˈpʌblɪʃ/",
+    "example_en": "The story was published online.",
+    "example_ka": "ამბავი ონლაინ გამოქვეყნდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Subscribe to our newsletter.",
+    "example_ka": "გამოიწერეთ ჩვენი სიახლეები.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "circulation",
+    "georgian": "ტირაჟი",
+    "pronunciation": "/ˌsɜːrkjʊˈleɪʃən/",
+    "example_en": "The newspaper has a large circulation.",
+    "example_ka": "გაზეთს დიდი ტირაჟი აქვს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "tabloid",
+    "georgian": "ტაბლოიდი",
+    "pronunciation": "/ˈtæblɔɪd/",
+    "example_en": "Tabloids often exaggerate stories.",
+    "example_ka": "ტაბლოიდები ხშირად გაზვიადებენ ამბებს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "testimony",
+    "georgian": "ჩვენება",
+    "pronunciation": "/ˈtɛstɪmoʊni/",
+    "example_en": "The witness gave her testimony.",
+    "example_ka": "მოწმემ ჩვენება მისცა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "transparency",
+    "georgian": "გამჭვირვალობა",
+    "pronunciation": "/trænsˈpærənsi/",
+    "example_en": "Transparency in government is essential.",
+    "example_ka": "მთავრობის გამჭვირვალობა აუცილებელია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "freelancer",
+    "georgian": "ფრილანსერი",
+    "pronunciation": "/ˈfriːlænsər/",
+    "example_en": "She works as a freelance journalist.",
+    "example_ka": "ის ფრილანსერ ჟურნალისტად მუშაობს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "podcast",
+    "georgian": "პოდკასტი",
+    "pronunciation": "/ˈpɒdkæst/",
+    "example_en": "I listen to news podcasts during my commute.",
+    "example_ka": "სამსახურში მგზავრობისას საინფორმაციო პოდკასტებს ვუსმენ.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "witness",
+    "georgian": "მოწმე",
+    "pronunciation": "/ˈwɪtnəs/",
+    "example_en": "The witness described what happened.",
+    "example_ka": "მოწმემ აღწერა რა მოხდა.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "quote",
+    "georgian": "ციტატა",
+    "pronunciation": "/kwoʊt/",
+    "example_en": "The article included a quote from the minister.",
+    "example_ka": "სტატიაში მინისტრის ციტატა იყო მოყვანილი.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "anonymous",
+    "georgian": "ანონიმური",
+    "pronunciation": "/əˈnɒnɪməs/",
+    "example_en": "The source wished to remain anonymous.",
+    "example_ka": "წყარო ანონიმურობის შენარჩუნებას ისურვებდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "verification",
+    "georgian": "გადამოწმება",
+    "pronunciation": "/ˌvɛrɪfɪˈkeɪʃən/",
+    "example_en": "Fact verification is crucial in journalism.",
+    "example_ka": "ფაქტების გადამოწმება ჟურნალისტიკაში გადამწყვეტია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "paparazzi",
+    "georgian": "პაპარაცი",
+    "pronunciation": "/ˌpæpəˈrætsi/",
+    "example_en": "The paparazzi followed the celebrity.",
+    "example_ka": "პაპარაცი ცნობილ ადამიანს მისდევდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "photojournalism",
+    "georgian": "ფოტოჟურნალისტიკა",
+    "pronunciation": "/ˌfoʊtoʊˈdʒɜːrnəlɪzəm/",
+    "example_en": "Photojournalism captures powerful moments.",
+    "example_ka": "ფოტოჟურనალისტიკა ძლიერ მომენტებს იჭერს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "breaking",
+    "georgian": "სწრაფი",
+    "pronunciation": "/ˈbreɪkɪŋ/",
+    "example_en": "This is breaking news from downtown.",
+    "example_ka": "ეს სწრაფი ამბავია ცენტრიდან.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "developing",
+    "georgian": "განვითარებადი",
+    "pronunciation": "/dɪˈveləpɪŋ/",
+    "example_en": "This is a developing story.",
+    "example_ka": "ეს განვითარებადი ამბავია.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "trending",
+    "georgian": "ტრენდული",
+    "pronunciation": "/ˈtrendɪŋ/",
+    "example_en": "The story is trending on social media.",
+    "example_ka": "ამბავი სოციალურ მედიაში ტრენდულია.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "viral",
+    "georgian": "ვირუსული",
+    "pronunciation": "/ˈvaɪrəl/",
+    "example_en": "The video went viral overnight.",
+    "example_ka": "ვიდეო ღამე-დღეში ვირუსული გახდა.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "caption",
+    "georgian": "წარწერა",
+    "pronunciation": "/ˈkæpʃən/",
+    "example_en": "The photo caption explains the scene.",
+    "example_ka": "ფოტოს წარწერა სცენას ახსნის.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "byline",
+    "georgian": "ავტორის სახელი",
+    "pronunciation": "/ˈbaɪlaɪn/",
+    "example_en": "Her byline appears on the front page.",
+    "example_ka": "მისი ავტორის სახელი პირველ გვერდზე ჩანს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "dateline",
+    "georgian": "თარიღი",
+    "pronunciation": "/ˈdeɪtlaɪn/",
+    "example_en": "The dateline shows where the story was filed.",
+    "example_ka": "თარიღი აჩვენებს სადიდან იყო ამბავი გაგზავნილი.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "masthead",
+    "georgian": "გაზეთის სათაური",
+    "pronunciation": "/ˈmæsthɛd/",
+    "example_en": "The newspaper's masthead is recognizable.",
+    "example_ka": "გაზეთის სათაური ამოსაცნობია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "newsroom",
+    "georgian": "სარედაქციო",
+    "pronunciation": "/ˈnjuːzruːm/",
+    "example_en": "The newsroom was busy on election night.",
+    "example_ka": "არჩევნების ღამეს სარედაქციო დაკავებული იყო.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "newscast",
+    "georgian": "საინფორმაციო გადაცემა",
+    "pronunciation": "/ˈnjuːzkæst/",
+    "example_en": "The evening newscast starts at seven.",
+    "example_ka": "საღამოს საინფორმაციო გადაცემა შვიდზე იწყება.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "newsprint",
+    "georgian": "გაზეთის ქაღალდი",
+    "pronunciation": "/ˈnjuːzprɪnt/",
+    "example_en": "Newsprint is cheaper than regular paper.",
+    "example_ka": "გაზეთის ქაღალდი ჩვეულებრივ ქაღალდზე იაფია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "newswire",
+    "georgian": "საინფორმაციო სააგენტო",
+    "pronunciation": "/ˈnjuːzwaɪər/",
+    "example_en": "The story came from a major newswire.",
+    "example_ka": "ამბავი დიდი საინფორმაციო სააგენტოდან მოვიდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "newsworthy",
+    "georgian": "საინფორმაციო ღირებულება",
+    "pronunciation": "/ˈnjuːzwɜːrði/",
+    "example_en": "The event was considered newsworthy.",
+    "example_ka": "ღონისძიება საინფორმაციო ღირებულებად ითვლებოდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "briefing",
+    "georgian": "ბრიფინგი",
+    "pronunciation": "/ˈbriːfɪŋ/",
+    "example_en": "The press briefing was held at noon.",
+    "example_ka": "პრესის ბრიფინგი შუადღეს ჩატარდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "conference",
+    "georgian": "კონფერენცია",
+    "pronunciation": "/ˈkɑːnfərəns/",
+    "example_en": "The press conference was broadcast live.",
+    "example_ka": "პრესკონფერენცია პირდაპირ ეთერში გავიდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "embargo",
+    "georgian": "ემბარგო",
+    "pronunciation": "/ɪmˈbɑːrɡoʊ/",
+    "example_en": "The news was under embargo until midnight.",
+    "example_ka": "ამბავს შუაღამემდე ემბარგო ედო.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "retraction",
+    "georgian": "უკუღება",
+    "pronunciation": "/rɪˈtrækʃən/",
+    "example_en": "The newspaper issued a retraction.",
+    "example_ka": "გაზეთმა უკუღება გამოაცხადა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "correction",
+    "georgian": "შესწორება",
+    "pronunciation": "/kəˈrekʃən/",
+    "example_en": "A correction was printed the next day.",
+    "example_ka": "შესწორება მეორე დღეს გამოქვეყნდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpdeɪt/",
+    "example_en": "We'll provide updates as they develop.",
+    "example_ka": "განვითარების მიხედვით განახლებებს მოვაწვდით.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "alert",
+    "georgian": "გაფრთხილება",
+    "pronunciation": "/əˈlɜːrt/",
+    "example_en": "A news alert was sent to subscribers.",
+    "example_ka": "გამომწერებს საინფორმაციო გაფრთხილება გაეგზავნათ.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "bulletin",
+    "georgian": "ბიულეტენი",
+    "pronunciation": "/ˈbʊlətɪn/",
+    "example_en": "We interrupt for a special news bulletin.",
+    "example_ka": "სპეციალური საინფორმაციო ბიულეტენისთვის ვწყვეტთ.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "flash",
+    "georgian": "სწრაფი ამბავი",
+    "pronunciation": "/flæʃ/",
+    "example_en": "This is a news flash from our studios.",
+    "example_ka": "ეს სწრაფი ამბავია ჩვენი სტუდიიდან.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "ticker",
+    "georgian": "სიახლეების გამავალი",
+    "pronunciation": "/ˈtɪkər/",
+    "example_en": "Breaking news appeared on the ticker.",
+    "example_ka": "სწრაფი ამბავი სიახლეების გამავალზე გამოჩნდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "feed",
+    "georgian": "არხი",
+    "pronunciation": "/fiːd/",
+    "example_en": "The satellite feed was interrupted.",
+    "example_ka": "თოვლიანის არხი შეწყდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "livestream",
+    "georgian": "პირდაპირი ეთერი",
+    "pronunciation": "/ˈlaɪvstriːm/",
+    "example_en": "The event was livestreamed online.",
+    "example_ka": "ღონისძიება ონლაინ პირდაპირ ეთერში გავიდა.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "webcast",
+    "georgian": "ვებ-გადაცემა",
+    "pronunciation": "/ˈwebkæst/",
+    "example_en": "The webcast reached millions of viewers.",
+    "example_ka": "ვებ-გადაცემას მილიონობით მაყურებელი ნახა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "simulcast",
+    "georgian": "ერთდროული გადაცემა",
+    "pronunciation": "/ˈsaɪməlkæst/",
+    "example_en": "The show was simulcast on radio and TV.",
+    "example_ka": "შოუ რადიოსა და ტელევიზიაზე ერთდროულად გადმოვიდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "teleprompter",
+    "georgian": "ტელეპრომპტერი",
+    "pronunciation": "/ˈteləprɑːmptər/",
+    "example_en": "The anchor read from the teleprompter.",
+    "example_ka": "წამყვანი ტელეპრომპტერიდან კითხულობდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "autocue",
+    "georgian": "ავტოკუი",
+    "pronunciation": "/ˈɔːtoʊkjuː/",
+    "example_en": "The autocue helped the presenter.",
+    "example_ka": "ავტოკუმ წამყვანს დაეხმარა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "soundbite",
+    "georgian": "ხმოვანი ციტატა",
+    "pronunciation": "/ˈsaʊndbaɪt/",
+    "example_en": "The politician's soundbite went viral.",
+    "example_ka": "პოლიტიკოსის ხმოვანი ციტატა ვირუსული გახდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "voiceover",
+    "georgian": "გახმოვანება",
+    "pronunciation": "/ˈvɔɪsoʊvər/",
+    "example_en": "The documentary used professional voiceover.",
+    "example_ka": "დოკუმენტურ ფილმში პროფესიონალური გახმოვანება იყო გამოყენებული.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "narration",
+    "georgian": "ნარაცია",
+    "pronunciation": "/nəˈreɪʃən/",
+    "example_en": "The news report included expert narration.",
+    "example_ka": "საინფორმაციო რეპორტაჟში ექსპერტის ნარაცია იყო.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "commentary",
+    "georgian": "კომენტარი",
+    "pronunciation": "/ˈkɑːmənteri/",
+    "example_en": "The sports commentary was exciting.",
+    "example_ka": "სპორტული კომენტარი საინტერესო იყო.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "analysis",
+    "georgian": "ანალიზი",
+    "pronunciation": "/əˈnæləsɪs/",
+    "example_en": "The political analysis was thorough.",
+    "example_ka": "პოლიტიკური ანალიზი ამომწურავი იყო.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "investigative",
+    "georgian": "გამომძიებელი",
+    "pronunciation": "/ɪnˈvestɪɡətɪv/",
+    "example_en": "Investigative journalism takes time.",
+    "example_ka": "გამომძიებელი ჟურნალისტიკა დროს მოითხოვს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "undercover",
+    "georgian": "ფარული",
+    "pronunciation": "/ˌʌndərˈkʌvər/",
+    "example_en": "The reporter went undercover to expose fraud.",
+    "example_ka": "რეპორტიორმა თაღლითობის გამოსაშკარავად ფარულად იმუშავა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "exposé",
+    "georgian": "გამოშიშვლება",
+    "pronunciation": "/ˌekspəˈzeɪ/",
+    "example_en": "The magazine published an exposé on corruption.",
+    "example_ka": "ჟურნალმა კორუფციის გამოშიშვლება გამოაქვეყნა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "muckraking",
+    "georgian": "მამხილებელი ჟურნალისტიკა",
+    "pronunciation": "/ˈmʌkreɪkɪŋ/",
+    "example_en": "Muckraking journalism revealed the scandal.",
+    "example_ka": "მამხილებელმა ჟურნალისტიკამ სკანდალი გამოაშკარავა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "watchdog",
+    "georgian": "ზედამხედველი",
+    "pronunciation": "/ˈwɑːtʃdɔːɡ/",
+    "example_en": "The press serves as a government watchdog.",
+    "example_ka": "პრესა მთავრობის ზედამხედველის როლს ასრულებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "objectivity",
+    "georgian": "ობიექტურობა",
+    "pronunciation": "/ˌɒbdʒekˈtɪvəti/",
+    "example_en": "Journalistic objectivity is essential.",
+    "example_ka": "ჟურნალისტური ობიექტურობა აუცილებელია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "impartiality",
+    "georgian": "მიუკერძოებლობა",
+    "pronunciation": "/ˌɪmpɑːrʃiˈæləti/",
+    "example_en": "News reports should maintain impartiality.",
+    "example_ka": "საინფორმაციო რეპორტაჟები მიუკერძოებლობას უნდა ინარჩუნებდეს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "sensationalism",
+    "georgian": "სენსაციურობა",
+    "pronunciation": "/senˈseɪʃənəlɪzəm/",
+    "example_en": "Sensationalism sells newspapers.",
+    "example_ka": "სენსაციურობა გაზეთებს ყიდის.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "clickbait",
+    "georgian": "კლიკბეითი",
+    "pronunciation": "/ˈklɪkbeɪt/",
+    "example_en": "Clickbait headlines mislead readers.",
+    "example_ka": "კლიკბეითის სათაურები მკითხველებს შეაცდენს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "hoax",
+    "georgian": "ჰოაქსი",
+    "pronunciation": "/hoʊks/",
+    "example_en": "The story turned out to be a hoax.",
+    "example_ka": "ამბავი ჰოაქსად აღმოჩნდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "misinformation",
+    "georgian": "ცრუ ინფორმაცია",
+    "pronunciation": "/ˌmɪsɪnfərˈmeɪʃən/",
+    "example_en": "Social media spreads misinformation quickly.",
+    "example_ka": "სოციალური მედია ცრუ ინფორმაციას სწრაფად ავრცელებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "disinformation",
+    "georgian": "დეზინფორმაცია",
+    "pronunciation": "/ˌdɪsɪnfərˈmeɪʃən/",
+    "example_en": "Foreign agents spread disinformation.",
+    "example_ka": "უცხოელი აგენტები დეზინფორმაციას ავრცელებენ.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "rumor",
+    "georgian": "ჭორი",
+    "pronunciation": "/ˈruːmər/",
+    "example_en": "Don't believe every rumor you hear.",
+    "example_ka": "ყოველი ჭორი არ უნდა დაიჯერო.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "leak",
+    "georgian": "გაჟონვა",
+    "pronunciation": "/liːk/",
+    "example_en": "A government leak revealed the documents.",
+    "example_ka": "მთავრობიდან გაჟონვამ დოკუმენტები გამოაშკარავა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "whistleblower",
+    "georgian": "მამხილებელი",
+    "pronunciation": "/ˈwɪsəlbloʊər/",
+    "example_en": "The whistleblower exposed the fraud.",
+    "example_ka": "მამხილებელმა თაღლითობა გამოაშკარავა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "confidential",
+    "georgian": "კონფიდენციალური",
+    "pronunciation": "/ˌkɑːnfɪˈdenʃəl/",
+    "example_en": "The documents were marked confidential.",
+    "example_ka": "დოკუმენტები კონფიდენციალურად იყო მონიშნული.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "classified",
+    "georgian": "კლასიფიცირებული",
+    "pronunciation": "/ˈklæsɪfaɪd/",
+    "example_en": "Classified information was leaked.",
+    "example_ka": "კლასიფიცირებული ინფორმაცია გაჟონდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "redacted",
+    "georgian": "შეცვლილი",
+    "pronunciation": "/rɪˈdæktɪd/",
+    "example_en": "Sensitive information was redacted.",
+    "example_ka": "მგრძნობიარე ინფორმაცია შეიცვალა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "declassified",
+    "georgian": "გამოთავისუფლებული",
+    "pronunciation": "/diːˈklæsɪfaɪd/",
+    "example_en": "The documents were recently declassified.",
+    "example_ka": "დოკუმენტები ცოტა ხნის წინ გამოთავისუფლდა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "embargo",
+    "georgian": "ემბარგო",
+    "pronunciation": "/ɪmˈbɑːrɡoʊ/",
+    "example_en": "The information was under embargo.",
+    "example_ka": "ინფორმაციას ემბარგო ედო.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "attribution",
+    "georgian": "წყაროს მითითება",
+    "pronunciation": "/ˌætrɪˈbjuːʃən/",
+    "example_en": "Proper attribution protects sources.",
+    "example_ka": "წყაროს სწორი მითითება წყაროებს იცავს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "disclaimer",
+    "georgian": "განაცხადი",
+    "pronunciation": "/dɪsˈkleɪmər/",
+    "example_en": "The article included a disclaimer.",
+    "example_ka": "სტატიას განაცხადი ერთვოდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "accuracy",
+    "georgian": "სიზუსტე",
+    "pronunciation": "/ˈækjərəsi/",
+    "example_en": "Accuracy is fundamental in journalism.",
+    "example_ka": "სიზუსტე ჟურნალისტიკაში ფუნდამენტურია.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "credibility",
+    "georgian": "სანდოობა",
+    "pronunciation": "/ˌkredəˈbɪləti/",
+    "example_en": "The reporter's credibility was questioned.",
+    "example_ka": "რეპორტიორის სანდოობა დაეჭვეს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "reliability",
+    "georgian": "საიმედოობა",
+    "pronunciation": "/rɪˌlaɪəˈbɪləti/",
+    "example_en": "News source reliability varies widely.",
+    "example_ka": "საინფორმაციო წყაროების საიმედოობა ძალიან განსხვავებულია.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "accountability",
+    "georgian": "ანგარიშვალდებულება",
+    "pronunciation": "/əˌkaʊntəˈbɪləti/",
+    "example_en": "Journalists must practice accountability.",
+    "example_ka": "ჟურნალისტები ანგარიშვალდებულებას უნდა ეცდნენ.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "ethics",
+    "georgian": "ეთიკა",
+    "pronunciation": "/ˈeθɪks/",
+    "example_en": "Journalism ethics guide professional conduct.",
+    "example_ka": "ჟურნალისტური ეთიკა პროფესიულ ქცევას მართავს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "integrity",
+    "georgian": "მთლიანობა",
+    "pronunciation": "/ɪnˈteɡrəti/",
+    "example_en": "Professional integrity is essential.",
+    "example_ka": "პროფესიული მთლიანობა აუცილებელია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "freedom",
+    "georgian": "თავისუფლება",
+    "pronunciation": "/ˈfriːdəm/",
+    "example_en": "Press freedom is vital for democracy.",
+    "example_ka": "პრესის თავისუფლება დემოკრატიისთვის მნიშვნელოვანია.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "democracy",
+    "georgian": "დემოკრატია",
+    "pronunciation": "/dɪˈmɑːkrəsi/",
+    "example_en": "Free press strengthens democracy.",
+    "example_ka": "თავისუფალი პრესა დემოკრატიას აძლიერებს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "amendment",
+    "georgian": "შესწორება",
+    "pronunciation": "/əˈmendmənt/",
+    "example_en": "The First Amendment protects free speech.",
+    "example_ka": "პირველი შესწორება თავისუფალ სიტყვას იცავს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "constitution",
+    "georgian": "კონსტიტუცია",
+    "pronunciation": "/ˌkɑːnstəˈtuːʃən/",
+    "example_en": "The constitution guarantees press freedom.",
+    "example_ka": "კონსტიტუცია პრესის თავისუფლებას გარანტიას აძლევს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "regulation",
+    "georgian": "რეგულაცია",
+    "pronunciation": "/ˌreɡjəˈleɪʃən/",
+    "example_en": "Media regulation varies by country.",
+    "example_ka": "მედიის რეგულაცია ქვეყნების მიხედვით განსხვავებულია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "licensing",
+    "georgian": "ლიცენზირება",
+    "pronunciation": "/ˈlaɪsənsɪŋ/",
+    "example_en": "Broadcast licensing is controlled by government.",
+    "example_ka": "მაუწყებლობის ლიცენზირებას მთავრობა აკონტროლებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "monopoly",
+    "georgian": "მონოპოლია",
+    "pronunciation": "/məˈnɑːpəli/",
+    "example_en": "Media monopolies limit diverse voices.",
+    "example_ka": "მედიის მონოპოლიები მრავალფეროვან ხმებს ზღუდავს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "conglomerate",
+    "georgian": "კონგლომერატი",
+    "pronunciation": "/kənˈɡlɑːmərət/",
+    "example_en": "Large media conglomerates own many outlets.",
+    "example_ka": "დიდი მედია კონგლომერატები ბევრ გამცემს ფლობენ.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "syndication",
+    "georgian": "სინდიკაცია",
+    "pronunciation": "/ˌsɪndɪˈkeɪʃən/",
+    "example_en": "Content syndication spreads stories widely.",
+    "example_ka": "კონტენტის სინდიკაცია ამბებს ფართოდ ავრცელებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "aggregation",
+    "georgian": "აგრეგაცია",
+    "pronunciation": "/ˌæɡrɪˈɡeɪʃən/",
+    "example_en": "News aggregation sites collect stories.",
+    "example_ka": "საინფორმაციო აგრეგაციის საიტები ამბებს აგროვებენ.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "curation",
+    "georgian": "კურაცია",
+    "pronunciation": "/kjʊˈreɪʃən/",
+    "example_en": "Content curation helps filter information.",
+    "example_ka": "კონტენტის კურაცია ინფორმაციის ფილტრაციაში ეხმარება.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "algorithm",
+    "georgian": "ალგორითმი",
+    "pronunciation": "/ˈælɡərɪðəm/",
+    "example_en": "Social media algorithms shape news consumption.",
+    "example_ka": "სოციალური მედიის ალგორითმები ახალი ამბების მოხმარებას აყალიბებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "artificial",
+    "georgian": "ხელოვნური",
+    "pronunciation": "/ˌɑːrtɪˈfɪʃəl/",
+    "example_en": "Artificial intelligence helps fact-checking.",
+    "example_ka": "ხელოვნური ინტელექტი ფაქტების შემოწმებაში ეხმარება.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "automation",
+    "georgian": "ავტომატიზაცია",
+    "pronunciation": "/ˌɔːtəməˈteɪʃən/",
+    "example_en": "News automation speeds up publishing.",
+    "example_ka": "ახალი ამბების ავტომატიზაცია გამოქვეყნებას აჩქარებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "digitization",
+    "georgian": "ციფრიზაცია",
+    "pronunciation": "/ˌdɪdʒɪtaɪˈzeɪʃən/",
+    "example_en": "Media digitization changed the industry.",
+    "example_ka": "მედიის ციფრიზაციამ ინდუსტრია შეცვალა.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "subscription",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskrɪpʃən/",
+    "example_en": "Digital subscriptions support journalism.",
+    "example_ka": "ციფრული გამოწერები ჟურნალისტიკას უჭერს მხარს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "paywall",
+    "georgian": "ფასიანი კედელი",
+    "pronunciation": "/ˈpeɪwɔːl/",
+    "example_en": "Many news sites use paywalls.",
+    "example_ka": "ბევრი საინფორმაციო საიტი ფასიან კედელს იყენებს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "monetization",
+    "georgian": "მონეტიზაცია",
+    "pronunciation": "/ˌmʌnətaɪˈzeɪʃən/",
+    "example_en": "Content monetization strategies vary.",
+    "example_ka": "კონტენტის მონეტიზაციის სტრატეგიები განსხვავებულია.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "analytics",
+    "georgian": "ანალიტიკა",
+    "pronunciation": "/ˌænəˈlɪtɪks/",
+    "example_en": "Web analytics track reader engagement.",
+    "example_ka": "ვებ-ანალიტიკა მკითხველთა ჩართულობას აკვალიფიცირებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "metrics",
+    "georgian": "მეტრიკა",
+    "pronunciation": "/ˈmetrɪks/",
+    "example_en": "Performance metrics guide editorial decisions.",
+    "example_ka": "შესრულების მეტრიკა სარედაქციო გადაწყვეტილებებს მართავს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "engagement",
+    "georgian": "ჩართულობა",
+    "pronunciation": "/ɪnˈɡeɪdʒmənt/",
+    "example_en": "Social media engagement measures audience interest.",
+    "example_ka": "სოციალური მედიის ჩართულობა აუდიტორიის ინტერესს ზომავს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "reach",
+    "georgian": "ფარვა",
+    "pronunciation": "/riːtʃ/",
+    "example_en": "The story's reach exceeded expectations.",
+    "example_ka": "ამბის ფარვამ მოლოდინს გადააჭარბა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "impression",
+    "georgian": "ნახვა",
+    "pronunciation": "/ɪmˈpreʃən/",
+    "example_en": "The article generated millions of impressions.",
+    "example_ka": "სტატიამ მილიონობით ნახვა მოიპოვა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "viewership",
+    "georgian": "მაყურებლობა",
+    "pronunciation": "/ˈvjuːərʃɪp/",
+    "example_en": "Television news viewership is declining.",
+    "example_ka": "სატელევიზიო ახალი ამბების მაყურებლობა იკლებს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "readership",
+    "georgian": "მკითხველობა",
+    "pronunciation": "/ˈriːdərʃɪp/",
+    "example_en": "Online readership continues to grow.",
+    "example_ka": "ონლაინ მკითხველობა გრძელდება ზრდა.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "audience",
+    "georgian": "აუდიტორია",
+    "pronunciation": "/ˈɔːdiəns/",
+    "example_en": "Understanding your audience is crucial.",
+    "example_ka": "შენი აუდიტორიის გაგება გადამწყვეტია.",
+    "category": "journalism-news",
+    "level": "beginner"
+  },
+  {
+    "english": "demographic",
+    "georgian": "დემოგრაფიული",
+    "pronunciation": "/ˌdeməˈɡræfɪk/",
+    "example_en": "The show targets a younger demographic.",
+    "example_ka": "შოუ უფრო ახალგაზრდა დემოგრაფიულ ჯგუფს სამიზნედ ისახავს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "target",
+    "georgian": "სამიზნე",
+    "pronunciation": "/ˈtɑːrɡət/",
+    "example_en": "The magazine has a specific target audience.",
+    "example_ka": "ჟურნალს კონკრეტული სამიზნე აუდიტორია აქვს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "niche",
+    "georgian": "ნიშა",
+    "pronunciation": "/niːʃ/",
+    "example_en": "The publication serves a niche market.",
+    "example_ka": "პუბლიკაცია ნიშის ბაზარს ემსახურება.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "mainstream",
+    "georgian": "მეინსტრიმი",
+    "pronunciation": "/ˈmeɪnstriːm/",
+    "example_en": "Mainstream media covers general interest stories.",
+    "example_ka": "მეინსტრიმი მედია ზოგადი ინტერესის ამბებს აშუქებს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "alternative",
+    "georgian": "ალტერნატიული",
+    "pronunciation": "/ɔːlˈtɜːrnətɪv/",
+    "example_en": "Alternative media offers different perspectives.",
+    "example_ka": "ალტერნატიული მედია განსხვავებულ პერსპექტივებს სთავაზობს.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "independent",
+    "georgian": "დამოუკიდებელი",
+    "pronunciation": "/ˌɪndɪˈpendənt/",
+    "example_en": "Independent journalism faces financial challenges.",
+    "example_ka": "დამოუკიდებელი ჟურნალისტიკა ფინანსურ გამოწვევებს აწყდება.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "corporate",
+    "georgian": "კორპორატიული",
+    "pronunciation": "/ˈkɔːrpərət/",
+    "example_en": "Corporate media ownership affects coverage.",
+    "example_ka": "კორპორატიული მედიის საკუთრება გაშუქებაზე მოქმედებს.",
+    "category": "journalism-news",
+    "level": "advanced"
+  },
+  {
+    "english": "public",
+    "georgian": "საჯარო",
+    "pronunciation": "/ˈpʌblɪk/",
+    "example_en": "Public broadcasting serves the community.",
+    "example_ka": "საჯარო მაუწყებლობა საზოგადოებას ემსახურება.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  },
+  {
+    "english": "commercial",
+    "georgian": "კომერციული",
+    "pronunciation": "/kəˈmɜːrʃəl/",
+    "example_en": "Commercial news relies on advertising revenue.",
+    "example_ka": "კომერციული ახალი ამბები სარეკლამო შემოსავალზეა დამოკიდებული.",
+    "category": "journalism-news",
+    "level": "intermediate"
+  }
 ]

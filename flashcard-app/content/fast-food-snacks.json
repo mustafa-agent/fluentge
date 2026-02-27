@@ -1,27 +1,1802 @@
 [
-  {"english":"burger","georgian":"ბურგერი","pronunciation":"BUR-ger","example_en":"I'll have a cheeseburger, please.","example_ka":"ჩიზბურგერს ავიღებ, გთხოვთ.","category":"Fast Food","level":"A1"},
-  {"english":"fries","georgian":"ფრი","pronunciation":"fryz","example_en":"Large fries with ketchup.","example_ka":"დიდი ფრი კეტჩუპით.","category":"Fast Food","level":"A1"},
-  {"english":"milkshake","georgian":"მილკშეიქი","pronunciation":"MILK-shayk","example_en":"I love chocolate milkshakes.","example_ka":"შოკოლადის მილკშეიქი მიყვარს.","category":"Fast Food","level":"A2"},
-  {"english":"drive-through","georgian":"დრაივ-თრუ","pronunciation":"DRYV-throo","example_en":"Let's go through the drive-through.","example_ka":"დრაივ-თრუში გავიაროთ.","category":"Fast Food","level":"A2"},
-  {"english":"takeaway","georgian":"წასაღები","pronunciation":"TAYK-ah-way","example_en":"Is this for here or takeaway?","example_ka":"აქ მიირთმევთ თუ წასაღებია?","category":"Fast Food","level":"A2"},
-  {"english":"combo","georgian":"კომბო","pronunciation":"KOM-boh","example_en":"The combo meal is cheaper.","example_ka":"კომბო კერძი უფრო იაფია.","category":"Fast Food","level":"A2"},
-  {"english":"snack","georgian":"სნექი/წასახემსებელი","pronunciation":"snak","example_en":"I need a quick snack.","example_ka":"სწრაფი სნექი მჭირდება.","category":"Fast Food","level":"A1"},
-  {"english":"chips","georgian":"ჩიფსი","pronunciation":"chips","example_en":"A bag of chips and a soda.","example_ka":"ერთი პაკეტი ჩიფსი და გაზიანი.","category":"Fast Food","level":"A1"},
-  {"english":"pizza","georgian":"პიცა","pronunciation":"PEET-suh","example_en":"Let's order pizza tonight.","example_ka":"დღეს საღამოს პიცა შევუკვეთოთ.","category":"Fast Food","level":"A1"},
-  {"english":"wrap","georgian":"რეპი/შეხვეული","pronunciation":"rap","example_en":"A chicken wrap is healthier.","example_ka":"ქათმის რეპი უფრო ჯანსაღია.","category":"Fast Food","level":"A2"},
-  {"english":"nuggets","georgian":"ნაგეტსი","pronunciation":"NUG-its","example_en":"20 chicken nuggets, please.","example_ka":"20 ქათმის ნაგეტსი, გთხოვთ.","category":"Fast Food","level":"A2"},
-  {"english":"dipping sauce","georgian":"სოუსი","pronunciation":"DIP-ing saws","example_en":"Which dipping sauce do you want?","example_ka":"რომელი სოუსი გინდა?","category":"Fast Food","level":"A2"},
-  {"english":"refill","georgian":"ხელახალი შევსება","pronunciation":"REE-fil","example_en":"Can I get a free refill?","example_ka":"უფასო შევსება შეიძლება?","category":"Fast Food","level":"A2"},
-  {"english":"delivery","georgian":"მიტანა","pronunciation":"deh-LIV-uh-ree","example_en":"Food delivery takes 30 minutes.","example_ka":"საკვების მიტანას 30 წუთი სჭირდება.","category":"Fast Food","level":"A2"},
-  {"english":"coupon","georgian":"კუპონი","pronunciation":"KOO-pon","example_en":"I have a discount coupon.","example_ka":"ფასდაკლების კუპონი მაქვს.","category":"Fast Food","level":"A2"},
-  {"english":"menu","georgian":"მენიუ","pronunciation":"MEN-yoo","example_en":"Can I see the menu?","example_ka":"შეიძლება მენიუ?","category":"Fast Food","level":"A1"},
-  {"english":"order","georgian":"შეკვეთა","pronunciation":"OR-der","example_en":"Are you ready to order?","example_ka":"მზად ხართ შეკვეთისთვის?","category":"Fast Food","level":"A1"},
-  {"english":"to go","georgian":"წასაღები","pronunciation":"tuh GOH","example_en":"One coffee to go, please.","example_ka":"ერთი ყავა წასაღებად, გთხოვთ.","category":"Fast Food","level":"A1"},
-  {"english":"straw","georgian":"ჩალა/საწრუპი","pronunciation":"straw","example_en":"Can I have a straw?","example_ka":"შეიძლება ჩალა?","category":"Fast Food","level":"A2"},
-  {"english":"napkin","georgian":"ხელსახოცი","pronunciation":"NAP-kin","example_en":"Pass me a napkin, please.","example_ka":"ხელსახოცი მომაწოდე, გთხოვთ.","category":"Fast Food","level":"A2"},
-  {"english":"spicy","georgian":"ცხარე","pronunciation":"SPY-see","example_en":"I like spicy food.","example_ka":"ცხარე საკვები მიყვარს.","category":"Fast Food","level":"A2"},
-  {"english":"crispy","georgian":"ხრაშუნა","pronunciation":"KRIS-pee","example_en":"These fries are so crispy.","example_ka":"ეს ფრი ძალიან ხრაშუნაა.","category":"Fast Food","level":"A2"},
-  {"english":"supersized","georgian":"გადიდებული","pronunciation":"SOO-per-syzd","example_en":"Do you want to supersize that?","example_ka":"გსურთ გადიდებული?","category":"Fast Food","level":"B1"},
-  {"english":"toppings","georgian":"დანამატები","pronunciation":"TOP-ingz","example_en":"What toppings do you want on your pizza?","example_ka":"რა დანამატები გინდა პიცაზე?","category":"Fast Food","level":"A2"},
-  {"english":"junk food","georgian":"ჯანქ ფუდი","pronunciation":"junk food","example_en":"Too much junk food is bad for health.","example_ka":"ბევრი ჯანქ ფუდი ჯანმრთელობისთვის ცუდია.","category":"Fast Food","level":"A2"}
+  {
+    "english": "burger",
+    "georgian": "ბურგერი",
+    "pronunciation": "/ˈbɜːrɡər/",
+    "example_en": "I'll have a cheeseburger, please.",
+    "example_ka": "ჩიზბურგერს ავიღებ, გთხოვთ.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "fries",
+    "georgian": "ფრი",
+    "pronunciation": "/fraɪz/",
+    "example_en": "Large fries with ketchup.",
+    "example_ka": "დიდი ფრი კეტჩუპით.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "milkshake",
+    "georgian": "მილკშეიქი",
+    "pronunciation": "/ˈmɪlkʃeɪk/",
+    "example_en": "I love chocolate milkshakes.",
+    "example_ka": "შოკოლადის მილკშეიქი მიყვარს.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pizza",
+    "georgian": "პიცა",
+    "pronunciation": "/ˈpiːtsə/",
+    "example_en": "Let's order pizza tonight.",
+    "example_ka": "დღეს საღამოს პიცა შევუკვეთოთ.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "hotdog",
+    "georgian": "ჰოტდოგი",
+    "pronunciation": "/ˈhɒtdɒɡ/",
+    "example_en": "A hotdog with mustard please.",
+    "example_ka": "ჰოტდოგი მუსტარდით, გთხოვთ.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "sandwich",
+    "georgian": "სენდვიჩი",
+    "pronunciation": "/ˈsænwɪdʒ/",
+    "example_en": "I made a ham sandwich.",
+    "example_ka": "ლორის სენდვიჩი გავაკეთე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "chips",
+    "georgian": "ჩიფსი",
+    "pronunciation": "/tʃɪps/",
+    "example_en": "A bag of chips and a soda.",
+    "example_ka": "ერთი პაკეტი ჩიფსი და გაზიანი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "cookies",
+    "georgian": "ნამცხვარი",
+    "pronunciation": "/ˈkʊkiz/",
+    "example_en": "These cookies are delicious.",
+    "example_ka": "ეს ნამცხვრები ძალიან გემრიელია.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "popcorn",
+    "georgian": "პოპკორნი",
+    "pronunciation": "/ˈpɒpkɔːrn/",
+    "example_en": "Movie theater popcorn is the best.",
+    "example_ka": "კინოთეატრის პოპკორნი ყველაზე კარგია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "nachos",
+    "georgian": "ნაჩოსი",
+    "pronunciation": "/ˈnætʃoʊz/",
+    "example_en": "Nachos with cheese sauce.",
+    "example_ka": "ნაჩოსი ყველის სოუსით.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pretzel",
+    "georgian": "პრეტცელი",
+    "pronunciation": "/ˈpretsəl/",
+    "example_en": "A soft pretzel with salt.",
+    "example_ka": "რბილი პრეტცელი მარილით.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "donut",
+    "georgian": "დონატი",
+    "pronunciation": "/ˈdoʊnʌt/",
+    "example_en": "Glazed donuts are my favorite.",
+    "example_ka": "გლაზირებული დონატები ყველაზე მომწონს.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "muffin",
+    "georgian": "მაფინი",
+    "pronunciation": "/ˈmʌfɪn/",
+    "example_en": "Blueberry muffins for breakfast.",
+    "example_ka": "ცისფერი მარცვლების მაფინი საუზმედ.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "bagel",
+    "georgian": "ბეიგელი",
+    "pronunciation": "/ˈbeɪɡəl/",
+    "example_en": "A bagel with cream cheese.",
+    "example_ka": "ბეიგელი კრემ ჩიზით.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "croissant",
+    "georgian": "კრუასანი",
+    "pronunciation": "/kwʌˈsɒ̃/",
+    "example_en": "Fresh croissants from the bakery.",
+    "example_ka": "საცხობიდან ახალი კრუასნები.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "taco",
+    "georgian": "ტაკო",
+    "pronunciation": "/ˈtækoʊ/",
+    "example_en": "Chicken tacos with salsa.",
+    "example_ka": "ქათმის ტაკო სალსით.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "burrito",
+    "georgian": "ბურიტო",
+    "pronunciation": "/bəˈriːtoʊ/",
+    "example_en": "A beef burrito with beans.",
+    "example_ka": "ხორცის ბურიტო ლობიოთი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "quesadilla",
+    "georgian": "კესადილია",
+    "pronunciation": "/ˌkeɪsəˈdiːjə/",
+    "example_en": "Cheese quesadilla cut in triangles.",
+    "example_ka": "ყველის კესადილია სამკუთხედებად დანაჭრილი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "wrap",
+    "georgian": "რეპი",
+    "pronunciation": "/ræp/",
+    "example_en": "A chicken wrap is healthier.",
+    "example_ka": "ქათმის რეპი უფრო ჯანსაღია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "nuggets",
+    "georgian": "ნაგეტსი",
+    "pronunciation": "/ˈnʌɡɪts/",
+    "example_en": "20 chicken nuggets, please.",
+    "example_ka": "20 ქათმის ნაგეტსი, გთხოვთ.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "wings",
+    "georgian": "ფრთები",
+    "pronunciation": "/wɪŋz/",
+    "example_en": "Spicy buffalo wings.",
+    "example_ka": "ცხარე ბუფალოს ფრთები.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "drumstick",
+    "georgian": "ბარძაყი",
+    "pronunciation": "/ˈdrʌmstɪk/",
+    "example_en": "Fried chicken drumsticks.",
+    "example_ka": "შემწვარი ქათმის ბარძაყები.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "soda",
+    "georgian": "გაზიანი",
+    "pronunciation": "/ˈsoʊdə/",
+    "example_en": "Large soda with ice.",
+    "example_ka": "დიდი გაზიანი ყინულით.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "cola",
+    "georgian": "კოლა",
+    "pronunciation": "/ˈkoʊlə/",
+    "example_en": "Diet cola with lemon.",
+    "example_ka": "დიეტური კოლა ლიმონით.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "juice",
+    "georgian": "წვენი",
+    "pronunciation": "/dʒuːs/",
+    "example_en": "Fresh orange juice.",
+    "example_ka": "ახალი ნარინჯის წვენი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "smoothie",
+    "georgian": "სმუზი",
+    "pronunciation": "/ˈsmuːði/",
+    "example_en": "Berry smoothie with yogurt.",
+    "example_ka": "კენკროვანი სმუზი იოგურტით.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "coffee",
+    "georgian": "ყავა",
+    "pronunciation": "/ˈkɔːfi/",
+    "example_en": "Black coffee to go.",
+    "example_ka": "შავი ყავა წასაღებად.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "tea",
+    "georgian": "ჩაი",
+    "pronunciation": "/tiː/",
+    "example_en": "Iced tea with sugar.",
+    "example_ka": "ყინულიანი ჩაი შაქრით.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "combo",
+    "georgian": "კომბო",
+    "pronunciation": "/ˈkɒmboʊ/",
+    "example_en": "The combo meal is cheaper.",
+    "example_ka": "კომბო კერძი უფრო იაფია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "meal",
+    "georgian": "კერძი",
+    "pronunciation": "/miːl/",
+    "example_en": "Happy meal for kids.",
+    "example_ka": "ბავშვებისთვის ბედნიერი კერძი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmenjuː/",
+    "example_en": "Can I see the menu?",
+    "example_ka": "შეიძლება მენიუ?",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "order",
+    "georgian": "შეკვეთა",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "Are you ready to order?",
+    "example_ka": "მზად ხართ შეკვეთისთვის?",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "takeaway",
+    "georgian": "წასაღები",
+    "pronunciation": "/ˈteɪkəweɪ/",
+    "example_en": "Is this for here or takeaway?",
+    "example_ka": "აქ მიირთმევთ თუ წასაღებია?",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "delivery",
+    "georgian": "მიტანა",
+    "pronunciation": "/dɪˈlɪvəri/",
+    "example_en": "Food delivery takes 30 minutes.",
+    "example_ka": "საკვების მიტანას 30 წუთი სჭირდება.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "cashier",
+    "georgian": "კასიერი",
+    "pronunciation": "/kæˈʃɪr/",
+    "example_en": "Pay at the cashier.",
+    "example_ka": "კასიერთან გადაიხადე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Keep your receipt.",
+    "example_ka": "ქვითარი შეინახე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "change",
+    "georgian": "ხურდა",
+    "pronunciation": "/tʃeɪndʒ/",
+    "example_en": "Here's your change.",
+    "example_ka": "აი შენი ხურდა.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "tip",
+    "georgian": "ტიპი",
+    "pronunciation": "/tɪp/",
+    "example_en": "Leave a tip for good service.",
+    "example_ka": "კარგი მომსახურებისთვის ტიპი დატოვე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɒn/",
+    "example_en": "I have a discount coupon.",
+    "example_ka": "ფასდაკლების კუპონი მაქვს.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Students get a 10% discount.",
+    "example_ka": "სტუდენტები 10% ფასდაკლებას იღებენ.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "refill",
+    "georgian": "შევსება",
+    "pronunciation": "/riːˈfɪl/",
+    "example_en": "Can I get a free refill?",
+    "example_ka": "უფასო შევსება შეიძლება?",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "large",
+    "georgian": "დიდი",
+    "pronunciation": "/lɑːrdʒ/",
+    "example_en": "Large fries and drink.",
+    "example_ka": "დიდი ფრი და სასმელი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "medium",
+    "georgian": "საშუალო",
+    "pronunciation": "/ˈmiːdiəm/",
+    "example_en": "Medium pizza for two people.",
+    "example_ka": "საშუალო პიცა ორი ადამიანისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "small",
+    "georgian": "პატარა",
+    "pronunciation": "/smɔːl/",
+    "example_en": "Small coffee to go.",
+    "example_ka": "პატარა ყავა წასაღებად.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "extra",
+    "georgian": "დამატებითი",
+    "pronunciation": "/ˈekstrə/",
+    "example_en": "Extra cheese on my burger.",
+    "example_ka": "ჩემს ბურგერზე დამატებითი ყველი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "side",
+    "georgian": "გვერდითი",
+    "pronunciation": "/saɪd/",
+    "example_en": "What sides come with that?",
+    "example_ka": "რა გვერდითი კერძები მოდის ამასთან?",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "sauce",
+    "georgian": "სოუსი",
+    "pronunciation": "/sɔːs/",
+    "example_en": "Barbecue sauce for my fries.",
+    "example_ka": "ბარბექიუს სოუსი ჩემი ფრისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "ketchup",
+    "georgian": "კეტჩუპი",
+    "pronunciation": "/ˈketʃəp/",
+    "example_en": "More ketchup packets please.",
+    "example_ka": "კიდევ კეტჩუპის პაკეტები, გთხოვთ.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "mustard",
+    "georgian": "მუსტარდი",
+    "pronunciation": "/ˈmʌstərd/",
+    "example_en": "Yellow mustard on my hotdog.",
+    "example_ka": "ყვითელი მუსტარდი ჩემს ჰოტდოგზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "mayonnaise",
+    "georgian": "მაიონეზი",
+    "pronunciation": "/ˌmeɪəˈneɪz/",
+    "example_en": "No mayonnaise on my sandwich.",
+    "example_ka": "მაიონეზი არ მინდა ჩემს სენდვიჩზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pickle",
+    "georgian": "მარინადი",
+    "pronunciation": "/ˈpɪkəl/",
+    "example_en": "Extra pickles on my burger.",
+    "example_ka": "დამატებითი მარინადი ბურგერზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "onion",
+    "georgian": "ხახვი",
+    "pronunciation": "/ˈʌnjən/",
+    "example_en": "No onions please.",
+    "example_ka": "ხახვი არ მინდა, გთხოვთ.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "lettuce",
+    "georgian": "სალათა",
+    "pronunciation": "/ˈletɪs/",
+    "example_en": "Fresh lettuce and tomato.",
+    "example_ka": "ახალი სალათა და ამატია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "tomato",
+    "georgian": "ამატია",
+    "pronunciation": "/təˈmeɪtoʊ/",
+    "example_en": "Slice the tomatoes thin.",
+    "example_ka": "ამატიები თხლად დანაჭერი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "cheese",
+    "georgian": "ყველი",
+    "pronunciation": "/tʃiːz/",
+    "example_en": "Melted cheese on top.",
+    "example_ka": "გამდნარი ყველი თავზე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "bacon",
+    "georgian": "ბეკონი",
+    "pronunciation": "/ˈbeɪkən/",
+    "example_en": "Crispy bacon strips.",
+    "example_ka": "ხრაშუნა ბეკონის ზოლები.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "ham",
+    "georgian": "ლორი",
+    "pronunciation": "/hæm/",
+    "example_en": "Ham and cheese sandwich.",
+    "example_ka": "ლორისა და ყველის სენდვიჩი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "turkey",
+    "georgian": "ინდაური",
+    "pronunciation": "/ˈtɜːrki/",
+    "example_en": "Sliced turkey breast.",
+    "example_ka": "დანაჭრილი ინდაურის მკერდი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "chicken",
+    "georgian": "ქათამი",
+    "pronunciation": "/ˈtʃɪkɪn/",
+    "example_en": "Grilled chicken breast.",
+    "example_ka": "გრილზე შემწვარი ქათმის მკერდი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "beef",
+    "georgian": "ძროხის ხორცი",
+    "pronunciation": "/biːf/",
+    "example_en": "Lean ground beef patty.",
+    "example_ka": "ღია ფქვილი ძროხის ხორცისგან.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pork",
+    "georgian": "ღორის ხორცი",
+    "pronunciation": "/pɔːrk/",
+    "example_en": "Pulled pork sandwich.",
+    "example_ka": "მოცლილი ღორის ხორცის სენდვიჩი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "Fish and chips special.",
+    "example_ka": "თევზისა და ჩიფსის სპეციალური.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "vegetarian",
+    "georgian": "ვეგეტარიანული",
+    "pronunciation": "/ˌvedʒɪˈteəriən/",
+    "example_en": "Vegetarian burger option.",
+    "example_ka": "ვეგეტარიანული ბურგერის ვარიანტი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "vegan",
+    "georgian": "ვეგანური",
+    "pronunciation": "/ˈviːɡən/",
+    "example_en": "Vegan cheese substitute.",
+    "example_ka": "ვეგანური ყველის შემცვლელი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "organic",
+    "georgian": "ორგანული",
+    "pronunciation": "/ɔːrˈɡænɪk/",
+    "example_en": "Organic ingredients only.",
+    "example_ka": "მხოლოდ ორგანული ინგრედიენტები.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "fresh",
+    "georgian": "ახალი",
+    "pronunciation": "/freʃ/",
+    "example_en": "Fresh ingredients daily.",
+    "example_ka": "ახალი ინგრედიენტები ყოველდღე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "frozen",
+    "georgian": "გაყინული",
+    "pronunciation": "/ˈfroʊzən/",
+    "example_en": "Frozen yogurt with toppings.",
+    "example_ka": "გაყინული იოგურტი დანამატებით.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "heated",
+    "georgian": "გახურებული",
+    "pronunciation": "/ˈhiːtɪd/",
+    "example_en": "Please keep it heated.",
+    "example_ka": "გთხოვთ, გახურებული შეინახეთ.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "cold",
+    "georgian": "ცივი",
+    "pronunciation": "/koʊld/",
+    "example_en": "Cold sandwiches available.",
+    "example_ka": "ცივი სენდვიჩები ხელმისაწვდომია.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "hot",
+    "georgian": "ცხელი",
+    "pronunciation": "/hɑːt/",
+    "example_en": "Hot fresh out of the oven.",
+    "example_ka": "ცხელი, ღუმელიდან ახლად გამოღებული.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "spicy",
+    "georgian": "ცხარე",
+    "pronunciation": "/ˈspaɪsi/",
+    "example_en": "I like spicy food.",
+    "example_ka": "ცხარე საკვები მიყვარს.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "mild",
+    "georgian": "არაცხარე",
+    "pronunciation": "/maɪld/",
+    "example_en": "Mild sauce for kids.",
+    "example_ka": "არაცხარე სოუსი ბავშვებისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "sweet",
+    "georgian": "ტკბილი",
+    "pronunciation": "/swiːt/",
+    "example_en": "Sweet and sour sauce.",
+    "example_ka": "ტკბილი და მჟავე სოუსი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "salty",
+    "georgian": "მარილიანი",
+    "pronunciation": "/ˈsɔːlti/",
+    "example_en": "These fries are too salty.",
+    "example_ka": "ეს ფრი ძალიან მარილიანია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "crispy",
+    "georgian": "ხრაშუნა",
+    "pronunciation": "/ˈkrɪspi/",
+    "example_en": "These fries are so crispy.",
+    "example_ka": "ეს ფრი ძალიან ხრაშუნაა.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "crunchy",
+    "georgian": "კვაკუნა",
+    "pronunciation": "/ˈkrʌntʃi/",
+    "example_en": "Crunchy peanut butter.",
+    "example_ka": "კვაკუნა არაქისის კარაქი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "soft",
+    "georgian": "რბილი",
+    "pronunciation": "/sɔːft/",
+    "example_en": "Soft serve ice cream.",
+    "example_ka": "რბილი ნაყინი.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "juicy",
+    "georgian": "წვნიანი",
+    "pronunciation": "/ˈdʒuːsi/",
+    "example_en": "Juicy burger patty.",
+    "example_ka": "წვნიანი ბურგერის კოვზი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "greasy",
+    "georgian": "ცხიმიანი",
+    "pronunciation": "/ˈɡriːsi/",
+    "example_en": "This pizza is too greasy.",
+    "example_ka": "ეს პიცა ძალიან ცხიმიანია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "healthy",
+    "georgian": "ჯანსაღი",
+    "pronunciation": "/ˈhelθi/",
+    "example_en": "Healthy salad option.",
+    "example_ka": "ჯანსაღი სალათის ვარიანტი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "unhealthy",
+    "georgian": "არაჯანსაღი",
+    "pronunciation": "/ʌnˈhelθi/",
+    "example_en": "Fast food is often unhealthy.",
+    "example_ka": "სწრაფი კვება ხშირად არაჯანსაღია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "calories",
+    "georgian": "კალორიები",
+    "pronunciation": "/ˈkæləriz/",
+    "example_en": "Count your daily calories.",
+    "example_ka": "ყოველდღიური კალორიები დაითვალე.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "fat",
+    "georgian": "ცხიმი",
+    "pronunciation": "/fæt/",
+    "example_en": "Low-fat menu options.",
+    "example_ka": "დაბალცხიმიანი მენიუს ვარიანტები.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "sugar",
+    "georgian": "შაქარი",
+    "pronunciation": "/ˈʃʊɡər/",
+    "example_en": "No sugar in my coffee.",
+    "example_ka": "შაქარი არ მინდა ყავაში.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "sodium",
+    "georgian": "ნატრიუმი",
+    "pronunciation": "/ˈsoʊdiəm/",
+    "example_en": "Watch your sodium intake.",
+    "example_ka": "ნატრიუმის მიღებას გაუთვალისწინე.",
+    "category": "fast-food-snacks",
+    "level": "C1"
+  },
+  {
+    "english": "protein",
+    "georgian": "პროტეინი",
+    "pronunciation": "/ˈproʊtiːn/",
+    "example_en": "High-protein snack bars.",
+    "example_ka": "მაღალპროტეინიანი სნეკის ბატონები.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "carbs",
+    "georgian": "ნახშირწყლები",
+    "pronunciation": "/kɑːrbz/",
+    "example_en": "Low-carb diet options.",
+    "example_ka": "დაბალნახშირწყლოვანი დიეტის ვარიანტები.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "fiber",
+    "georgian": "ბოჭკო",
+    "pronunciation": "/ˈfaɪbər/",
+    "example_en": "Whole grains have fiber.",
+    "example_ka": "მარცვლეულში ბოჭკოა.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "vitamins",
+    "georgian": "ვიტამინები",
+    "pronunciation": "/ˈvaɪtəmɪnz/",
+    "example_en": "Fresh fruits have vitamins.",
+    "example_ka": "ახალ ხილში ვიტამინებია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "minerals",
+    "georgian": "მინერალები",
+    "pronunciation": "/ˈmɪnərəlz/",
+    "example_en": "Essential minerals for health.",
+    "example_ka": "ჯანმრთელობისთვის აუცილებელი მინერალები.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "nutrition",
+    "georgian": "კვება",
+    "pronunciation": "/nuˈtrɪʃən/",
+    "example_en": "Read the nutrition label.",
+    "example_ka": "კვებითი ლეიბლი წაიკითხე.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "ingredients",
+    "georgian": "ინგრედიენტები",
+    "pronunciation": "/ɪnˈɡriːdiənts/",
+    "example_en": "Natural ingredients only.",
+    "example_ka": "მხოლოდ ბუნებრივი ინგრედიენტები.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "preservatives",
+    "georgian": "კონსერვანტები",
+    "pronunciation": "/prɪˈzɜːrvətɪvz/",
+    "example_en": "No artificial preservatives.",
+    "example_ka": "ხელოვნური კონსერვანტები არ არის.",
+    "category": "fast-food-snacks",
+    "level": "C1"
+  },
+  {
+    "english": "artificial",
+    "georgian": "ხელოვნური",
+    "pronunciation": "/ˌɑːrtɪˈfɪʃəl/",
+    "example_en": "Avoid artificial flavors.",
+    "example_ka": "ხელოვნური არომატები თავიდან აიცილე.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "natural",
+    "georgian": "ბუნებრივი",
+    "pronunciation": "/ˈnætʃərəl/",
+    "example_en": "All natural flavoring.",
+    "example_ka": "მთლიანად ბუნებრივი არომატი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "flavors",
+    "georgian": "არომატები",
+    "pronunciation": "/ˈfleɪvərz/",
+    "example_en": "Choose from many flavors.",
+    "example_ka": "ბევრი არომატიდან აირჩიე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "toppings",
+    "georgian": "დანამატები",
+    "pronunciation": "/ˈtɑːpɪŋz/",
+    "example_en": "What toppings do you want on your pizza?",
+    "example_ka": "რა დანამატები გინდა პიცაზე?",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "condiments",
+    "georgian": "კონდიმენტები",
+    "pronunciation": "/ˈkɑːndɪmənts/",
+    "example_en": "Extra condiments available.",
+    "example_ka": "დამატებითი კონდიმენტები ხელმისაწვდომია.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "seasoning",
+    "georgian": "სანელებელი",
+    "pronunciation": "/ˈsiːzənɪŋ/",
+    "example_en": "Special seasoning blend.",
+    "example_ka": "სპეციალური სანელებლების ნაზავი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "herbs",
+    "georgian": "მწვანილი",
+    "pronunciation": "/ɜːrbz/",
+    "example_en": "Fresh herbs and spices.",
+    "example_ka": "ახალი მწვანილი და სანელებელი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "spices",
+    "georgian": "სანელებლები",
+    "pronunciation": "/ˈspaɪsɪz/",
+    "example_en": "Exotic spices from India.",
+    "example_ka": "ინდოეთის ეგზოტიკური სანელებლები.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "allergies",
+    "georgian": "ალერგიები",
+    "pronunciation": "/ˈælərdʒiz/",
+    "example_en": "Please inform us of allergies.",
+    "example_ka": "გთხოვთ ალერგიების შესახებ გვამცნოთ.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "nuts",
+    "georgian": "კაკალი",
+    "pronunciation": "/nʌts/",
+    "example_en": "Contains tree nuts.",
+    "example_ka": "შეიცავს ხის კაკალს.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "dairy",
+    "georgian": "რძისეული",
+    "pronunciation": "/ˈdeəri/",
+    "example_en": "Dairy-free options available.",
+    "example_ka": "რძისეულის გარეშე ვარიანტები ხელმისაწვდომია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "eggs",
+    "georgian": "კვერცხები",
+    "pronunciation": "/eɡz/",
+    "example_en": "May contain eggs.",
+    "example_ka": "შეიძლება შეიცავდეს კვერცხებს.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "wheat",
+    "georgian": "ხორბალი",
+    "pronunciation": "/wiːt/",
+    "example_en": "Wheat-free bread available.",
+    "example_ka": "ხორბლის გარეშე პური ხელმისაწვდომია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "soy",
+    "georgian": "სოია",
+    "pronunciation": "/sɔɪ/",
+    "example_en": "Contains soy products.",
+    "example_ka": "შეიცავს სოიის პროდუქტებს.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "shellfish",
+    "georgian": "ღოლისებრნი",
+    "pronunciation": "/ˈʃelfɪʃ/",
+    "example_en": "Warning: may contain shellfish.",
+    "example_ka": "გაფრთხილება: შეიძლება შეიცავდეს ღოლისებრნებს.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "packaging",
+    "georgian": "შეფუთვა",
+    "pronunciation": "/ˈpækɪdʒɪŋ/",
+    "example_en": "Eco-friendly packaging.",
+    "example_ka": "ეკოლოგიურად სუფთა შეფუთვა.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "container",
+    "georgian": "კონტეინერი",
+    "pronunciation": "/kənˈteɪnər/",
+    "example_en": "Reusable food container.",
+    "example_ka": "მრავალჯერადი გამოყენების საკვების კონტეინერი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "wrapper",
+    "georgian": "შემახვევი",
+    "pronunciation": "/ˈræpər/",
+    "example_en": "Dispose of wrapper properly.",
+    "example_ka": "შემახვევი სწორად გადაგდე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "napkin",
+    "georgian": "ხელსახოცი",
+    "pronunciation": "/ˈnæpkɪn/",
+    "example_en": "Pass me a napkin, please.",
+    "example_ka": "ხელსახოცი მომაწოდე, გთხოვთ.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "straw",
+    "georgian": "ჩალა",
+    "pronunciation": "/strɔː/",
+    "example_en": "Can I have a straw?",
+    "example_ka": "შეიძლება ჩალა?",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "lid",
+    "georgian": "ხუდი",
+    "pronunciation": "/lɪd/",
+    "example_en": "Put the lid on tight.",
+    "example_ka": "ხუდი მტკიცედ დადე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "cup",
+    "georgian": "ჭიქა",
+    "pronunciation": "/kʌp/",
+    "example_en": "Large cup of coffee.",
+    "example_ka": "ყავის დიდი ჭიქა.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "plate",
+    "georgian": "თეფში",
+    "pronunciation": "/pleɪt/",
+    "example_en": "Serve on a clean plate.",
+    "example_ka": "სუფთა თეფშზე მიირთვით.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "tray",
+    "georgian": "თოვლი",
+    "pronunciation": "/treɪ/",
+    "example_en": "Carry your tray to the table.",
+    "example_ka": "თოვლი მაგიდასთან წაიღე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "utensils",
+    "georgian": "ჭურჭელი",
+    "pronunciation": "/juːˈtensəlz/",
+    "example_en": "Plastic utensils available.",
+    "example_ka": "პლასტმასის ჭურჭელი ხელმისაწვდომია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "fork",
+    "georgian": "ჩანგალი",
+    "pronunciation": "/fɔːrk/",
+    "example_en": "I need a clean fork.",
+    "example_ka": "სუფთა ჩანგალი მჭირდება.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "knife",
+    "georgian": "დანა",
+    "pronunciation": "/naɪf/",
+    "example_en": "Plastic knife for cutting.",
+    "example_ka": "პლასტმასის დანა დასაჭრელად.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "spoon",
+    "georgian": "კოვზი",
+    "pronunciation": "/spuːn/",
+    "example_en": "Soup comes with a spoon.",
+    "example_ka": "სუპი კოვზთან ერთად მოდის.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "table",
+    "georgian": "მაგიდა",
+    "pronunciation": "/ˈteɪbəl/",
+    "example_en": "Find an empty table.",
+    "example_ka": "ცარიელი მაგიდა იპოვე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "chair",
+    "georgian": "სკამი",
+    "pronunciation": "/tʃeər/",
+    "example_en": "Pull up a chair.",
+    "example_ka": "სკამი მიაწიე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "booth",
+    "georgian": "ბუთი",
+    "pronunciation": "/buːθ/",
+    "example_en": "Corner booth for four people.",
+    "example_ka": "კუთხის ბუთი ოთხი ადამიანისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "counter",
+    "georgian": "კაუნტერი",
+    "pronunciation": "/ˈkaʊntər/",
+    "example_en": "Order at the counter.",
+    "example_ka": "კაუნტერთან შეუკვეთე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "queue",
+    "georgian": "რიგი",
+    "pronunciation": "/kjuː/",
+    "example_en": "Stand in the queue here.",
+    "example_ka": "აქ რიგში დადექი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "line",
+    "georgian": "ხაზი",
+    "pronunciation": "/laɪn/",
+    "example_en": "The line is moving slowly.",
+    "example_ka": "ხაზი ნელა მოძრაობს.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "wait",
+    "georgian": "ლოდინი",
+    "pronunciation": "/weɪt/",
+    "example_en": "Please wait for your number.",
+    "example_ka": "გთხოვთ დაელოდოთ თქვენს ნომერს.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "ready",
+    "georgian": "მზადაა",
+    "pronunciation": "/ˈredi/",
+    "example_en": "Your order is ready!",
+    "example_ka": "თქვენი შეკვეთა მზადაა!",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "custom",
+    "georgian": "მორგებული",
+    "pronunciation": "/ˈkʌstəm/",
+    "example_en": "Custom sandwich made your way.",
+    "example_ka": "მორგებული სენდვიჩი თქვენი გემოვნების მიხედვით.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "special",
+    "georgian": "სპეციალური",
+    "pronunciation": "/ˈspeʃəl/",
+    "example_en": "Today's special is fish tacos.",
+    "example_ka": "დღევანდელი სპეციალურია თევზის ტაკო.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "promotion",
+    "georgian": "პრომოცია",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "Special promotion this week.",
+    "example_ka": "ამ კვირაში სპეციალური პრომოცია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "deal",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/diːl/",
+    "example_en": "Great deal on family meals.",
+    "example_ka": "შესანიშნავი შეთავაზება ოჯახური კერძებზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "value",
+    "georgian": "ღირებულება",
+    "pronunciation": "/ˈvæljuː/",
+    "example_en": "Great value for money.",
+    "example_ka": "შესანიშნავი ღირებულება ფულის რაოდენობისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspensɪv/",
+    "example_en": "This restaurant is expensive.",
+    "example_ka": "ეს რესტორანი ძვირია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "Fast food is usually cheap.",
+    "example_ka": "სწრაფი კვება ჩვეულებრივ იაფია.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "affordable",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrdəbəl/",
+    "example_en": "Affordable prices for students.",
+    "example_ka": "ხელმისაწვდომი ფასები სტუდენტებისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "Budget-friendly meal options.",
+    "example_ka": "ბიუჯეტზე შერიგებული კერძის ვარიანტები.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "crackers",
+    "georgian": "კრეკერი",
+    "pronunciation": "/ˈkrækərz/",
+    "example_en": "Cheese and crackers for snacking.",
+    "example_ka": "ყველი და კრეკერი სნეკად.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "nuts",
+    "georgian": "თხილეული",
+    "pronunciation": "/nʌts/",
+    "example_en": "Mixed nuts are healthy snacks.",
+    "example_ka": "შეზავებული თხილეული ჯანსაღი სნეკია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pretzels",
+    "georgian": "პრეტცელები",
+    "pronunciation": "/ˈpretsəlz/",
+    "example_en": "Salted pretzels with beer.",
+    "example_ka": "მარილიანი პრეტცელები ლუდთან.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "candy",
+    "georgian": "ნაჯინი",
+    "pronunciation": "/ˈkændi/",
+    "example_en": "Too much candy is unhealthy.",
+    "example_ka": "ძალიან ბევრი ნაჯინი არაჯანსაღია.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "chocolate",
+    "georgian": "შოკოლადი",
+    "pronunciation": "/ˈtʃɔːklət/",
+    "example_en": "Dark chocolate is my favorite.",
+    "example_ka": "მუქი შოკოლადი ყველაზე მიყვარს.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "gum",
+    "georgian": "რეზინი",
+    "pronunciation": "/ɡʌm/",
+    "example_en": "Chewing gum freshens breath.",
+    "example_ka": "ღეჭვის რეზინი სუნთქვას ანაცვლებს.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "mints",
+    "georgian": "მინტოები",
+    "pronunciation": "/mɪnts/",
+    "example_en": "After-dinner mints are refreshing.",
+    "example_ka": "ვახშმის შემდგომი მინტოები განმაცოცხლებელია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "lollipop",
+    "georgian": "ლოლიპოპი",
+    "pronunciation": "/ˈlɑːlipɑːp/",
+    "example_en": "Children love colorful lollipops.",
+    "example_ka": "ბავშვები ფერად ლოლიპოპებს უყვარდათ.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "marshmallows",
+    "georgian": "მარშმელოუ",
+    "pronunciation": "/ˈmɑːrʃmeloʊz/",
+    "example_en": "Toasted marshmallows around campfire.",
+    "example_ka": "შემწვარი მარშმელოუ ბანაკის ცეცხლის ირგვლივ.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "granola",
+    "georgian": "გრანოლა",
+    "pronunciation": "/ɡrəˈnoʊlə/",
+    "example_en": "Granola bars are nutritious snacks.",
+    "example_ka": "გრანოლა ბატონები კვებითი სნეკია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "yogurt",
+    "georgian": "იოგურტი",
+    "pronunciation": "/ˈjoʊɡərt/",
+    "example_en": "Greek yogurt with berries.",
+    "example_ka": "ბერძნული იოგურტი კენკროვნებით.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "jerky",
+    "georgian": "ჯერკი",
+    "pronunciation": "/ˈdʒɜːrki/",
+    "example_en": "Beef jerky is a protein snack.",
+    "example_ka": "საქონლის ჯერკი პროტეინული სნეკია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "trail",
+    "georgian": "ნაზავი",
+    "pronunciation": "/treɪl/",
+    "example_en": "Trail mix has nuts and dried fruit.",
+    "example_ka": "ნაზავში არის თხილეული და ჩამშრალი ხილი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "cereal",
+    "georgian": "მარცვლეული",
+    "pronunciation": "/ˈsɪriəl/",
+    "example_en": "Cereal bars make quick snacks.",
+    "example_ka": "მარცვლეულის ბატონები სწრაფი სნეკია.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "raisins",
+    "georgian": "ყურძნის გულა",
+    "pronunciation": "/ˈreɪzənz/",
+    "example_en": "Raisins are dried grapes.",
+    "example_ka": "ყურძნის გულა ჩამშრალი ყურძენია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "dates",
+    "georgian": "ხუურმა",
+    "pronunciation": "/deɪts/",
+    "example_en": "Dates are naturally sweet.",
+    "example_ka": "ხუურმა ბუნებრივად ტკბილია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "figs",
+    "georgian": "ლეღვი",
+    "pronunciation": "/fɪɡz/",
+    "example_en": "Dried figs make healthy snacks.",
+    "example_ka": "ჩამშრალი ლეღვი ჯანსაღი სნეკია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "apricots",
+    "georgian": "ზარდალი",
+    "pronunciation": "/ˈeɪprɪkɑːts/",
+    "example_en": "Dried apricots are chewy.",
+    "example_ka": "ჩამშრალი ზარდალი ღეჭადია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "almonds",
+    "georgian": "ნუში",
+    "pronunciation": "/ˈɑːməndz/",
+    "example_en": "Roasted almonds taste great.",
+    "example_ka": "შემწვარი ნუში კარგად გემოვნება.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "peanuts",
+    "georgian": "არაქისი",
+    "pronunciation": "/ˈpiːnʌts/",
+    "example_en": "Salted peanuts with drinks.",
+    "example_ka": "მარილიანი არაქისი სასმელებთან.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "cashews",
+    "georgian": "კეშიუ",
+    "pronunciation": "/ˈkæʃuːz/",
+    "example_en": "Cashews are expensive nuts.",
+    "example_ka": "კეშიუ ძვირი კაკალია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "walnuts",
+    "georgian": "კაკალი",
+    "pronunciation": "/ˈwɔːlnʌts/",
+    "example_en": "Walnuts are brain-shaped nuts.",
+    "example_ka": "კაკალი ტვინის ფორმის კაკალია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pistachios",
+    "georgian": "ფისტაშია",
+    "pronunciation": "/pɪˈstɑːʃioʊz/",
+    "example_en": "Pistachios have shells to crack.",
+    "example_ka": "ფისტაშიას აქვს გასატეხი ჩაქუჩი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "sunflower",
+    "georgian": "მზესუმზირა",
+    "pronunciation": "/ˈsʌnflaʊər/",
+    "example_en": "Sunflower seeds are popular snacks.",
+    "example_ka": "მზესუმზირის თესლი პოპულარული სნეკია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pumpkin",
+    "georgian": "გოგრა",
+    "pronunciation": "/ˈpʌmpkɪn/",
+    "example_en": "Pumpkin seeds are nutritious.",
+    "example_ka": "გოგრის თესლი კვებითია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "olives",
+    "georgian": "ზეთისხილი",
+    "pronunciation": "/ˈɑːlɪvz/",
+    "example_en": "Green olives on my salad.",
+    "example_ka": "მწვანე ზეთისხილი ჩემს სალათაში.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "pickles",
+    "georgian": "მჟავე კიტრი",
+    "pronunciation": "/ˈpɪkəlz/",
+    "example_en": "Dill pickles with my sandwich.",
+    "example_ka": "კამა მჟავე კიტრი ჩემს სენდვიჩთან.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "relish",
+    "georgian": "რელიში",
+    "pronunciation": "/ˈrelɪʃ/",
+    "example_en": "Sweet relish on hotdogs.",
+    "example_ka": "ტკბილი რელიში ჰოტდოგზე.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "salsa",
+    "georgian": "სალსა",
+    "pronunciation": "/ˈsɑːlsə/",
+    "example_en": "Spicy salsa with tortilla chips.",
+    "example_ka": "ცხარე სალსა ტორტილა ჩიფსთან.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "guacamole",
+    "georgian": "გუაკამოლე",
+    "pronunciation": "/ˌɡwɑːkəˈmoʊli/",
+    "example_en": "Fresh guacamole with avocados.",
+    "example_ka": "ახალი გუაკამოლე ავოკადოთი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "hummus",
+    "georgian": "ჰუმუსი",
+    "pronunciation": "/ˈhʊməs/",
+    "example_en": "Hummus dip with vegetables.",
+    "example_ka": "ჰუმუსი ბოსტნეულთან.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "dip",
+    "georgian": "დიპი",
+    "pronunciation": "/dɪp/",
+    "example_en": "Ranch dip for the vegetables.",
+    "example_ka": "რანჩ დიპი ბოსტნეულისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "spread",
+    "georgian": "მსხმარება",
+    "pronunciation": "/spred/",
+    "example_en": "Peanut butter spread on bread.",
+    "example_ka": "არაქისის კარაქის მსხმარება პურზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "jam",
+    "georgian": "ვარენე",
+    "pronunciation": "/dʒæm/",
+    "example_en": "Strawberry jam on toast.",
+    "example_ka": "მარწყვის ვარენე ტოსტზე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "jelly",
+    "georgian": "ჟელე",
+    "pronunciation": "/ˈdʒeli/",
+    "example_en": "Grape jelly sandwich.",
+    "example_ka": "ყურძნის ჟელეს სენდვიჩი.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "butter",
+    "georgian": "კარაქი",
+    "pronunciation": "/ˈbʌtər/",
+    "example_en": "Butter melting on hot bread.",
+    "example_ka": "კარაქი დნება ცხელ პურზე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "margarine",
+    "georgian": "მარგარინი",
+    "pronunciation": "/ˈmɑːrdʒərɪn/",
+    "example_en": "Margarine instead of butter.",
+    "example_ka": "მარგარინი კარაქის ნაცვლად.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "syrup",
+    "georgian": "სიროფი",
+    "pronunciation": "/ˈsɪrəp/",
+    "example_en": "Maple syrup on pancakes.",
+    "example_ka": "ნაცარი სიროფი ბლინებზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "honey",
+    "georgian": "თაფლი",
+    "pronunciation": "/ˈhʌni/",
+    "example_en": "Honey in my tea.",
+    "example_ka": "თაფლი ჩემს ჩაიში.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "cream",
+    "georgian": "კრემი",
+    "pronunciation": "/kriːm/",
+    "example_en": "Whipped cream on dessert.",
+    "example_ka": "ცემული კრემი დესერტზე.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "frosting",
+    "georgian": "ფროსტინგი",
+    "pronunciation": "/ˈfrɔːstɪŋ/",
+    "example_en": "Chocolate frosting on cake.",
+    "example_ka": "შოკოლადის ფროსტინგი ტორტზე.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "icing",
+    "georgian": "აისინგი",
+    "pronunciation": "/ˈaɪsɪŋ/",
+    "example_en": "Sugar icing on cookies.",
+    "example_ka": "შაქრის აისინგი ნამცხვრებზე.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "glaze",
+    "georgian": "ღლიარი",
+    "pronunciation": "/ɡleɪz/",
+    "example_en": "Donut glaze is sweet.",
+    "example_ka": "დონატის ღლიარი ტკბილია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "sprinkles",
+    "georgian": "სპრინკლები",
+    "pronunciation": "/ˈsprɪŋkəlz/",
+    "example_en": "Colorful sprinkles on ice cream.",
+    "example_ka": "ფერადი სპრინკლები ნაყინზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "caramel",
+    "georgian": "კარამელი",
+    "pronunciation": "/ˈkærəməl/",
+    "example_en": "Caramel sauce on apples.",
+    "example_ka": "კარამელის სოუსი ვაშლებზე.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "fudge",
+    "georgian": "ფაჯი",
+    "pronunciation": "/fʌdʒ/",
+    "example_en": "Rich chocolate fudge candy.",
+    "example_ka": "მდიდარი შოკოლადის ფაჯი ნაჯინი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "taffy",
+    "georgian": "ტეფი",
+    "pronunciation": "/ˈtæfi/",
+    "example_en": "Saltwater taffy is chewy.",
+    "example_ka": "მლაშე წყლის ტეფი ღეჭადია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "gummies",
+    "georgian": "ღუმური",
+    "pronunciation": "/ˈɡʌmiz/",
+    "example_en": "Fruit gummies taste great.",
+    "example_ka": "ხილის ღუმურები კარგად გემოვნება.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "licorice",
+    "georgian": "სოლოს ძირი",
+    "pronunciation": "/ˈlɪkərɪʃ/",
+    "example_en": "Black licorice has strong taste.",
+    "example_ka": "შავ სოლოს ძირს ძლიერი გემო აქვს.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "marzipan",
+    "georgian": "მარციპანი",
+    "pronunciation": "/ˈmɑːrzɪpæn/",
+    "example_en": "Marzipan is made from almonds.",
+    "example_ka": "მარციპანი ნუშისგან მზადდება.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "nougat",
+    "georgian": "ნუგა",
+    "pronunciation": "/ˈnuːɡət/",
+    "example_en": "Nougat candy with nuts.",
+    "example_ka": "ნუგა ნაჯინი კაკლით.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "brittle",
+    "georgian": "ბრიტლი",
+    "pronunciation": "/ˈbrɪtəl/",
+    "example_en": "Peanut brittle breaks easily.",
+    "example_ka": "არაქისის ბრიტლი ადვილად იტეხება.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "toffee",
+    "georgian": "ტოფი",
+    "pronunciation": "/ˈtɔːfi/",
+    "example_en": "English toffee is hard candy.",
+    "example_ka": "ინგლისური ტოფი მაგარი ნაჯინია.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "truffle",
+    "georgian": "ტრიუფელი",
+    "pronunciation": "/ˈtrʌfəl/",
+    "example_en": "Chocolate truffle is luxury candy.",
+    "example_ka": "შოკოლადის ტრიუფელი ლუქს ნაჯინია.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "bonbon",
+    "georgian": "ბონბონი",
+    "pronunciation": "/ˈbɑːnbɑːn/",
+    "example_en": "French bonbons are elegant.",
+    "example_ka": "ფრანგული ბონბონები ელეგანტურია.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "wafer",
+    "georgian": "ვაფლი",
+    "pronunciation": "/ˈweɪfər/",
+    "example_en": "Chocolate wafer cookies.",
+    "example_ka": "შოკოლადის ვაფლი ნამცხვრები.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "biscuit",
+    "georgian": "ღვეზელი",
+    "pronunciation": "/ˈbɪskɪt/",
+    "example_en": "Tea biscuits with afternoon tea.",
+    "example_ka": "ჩაის ღვეზელი შუადღის ჩაისთვის.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "scone",
+    "georgian": "სკონი",
+    "pronunciation": "/skoʊn/",
+    "example_en": "Fresh scones with jam.",
+    "example_ka": "ახალი სკონები ვარენეთი.",
+    "category": "fast-food-snacks",
+    "level": "B1"
+  },
+  {
+    "english": "crumpet",
+    "georgian": "კრამპეტი",
+    "pronunciation": "/ˈkrʌmpɪt/",
+    "example_en": "English crumpets for breakfast.",
+    "example_ka": "ინგლისური კრამპეტები საუზმედ.",
+    "category": "fast-food-snacks",
+    "level": "B2"
+  },
+  {
+    "english": "pancake",
+    "georgian": "ბლინი",
+    "pronunciation": "/ˈpænkeɪk/",
+    "example_en": "Fluffy pancakes with syrup.",
+    "example_ka": "ფუსფუსა ბლინები სიროფით.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  },
+  {
+    "english": "waffle",
+    "georgian": "ვაფლი",
+    "pronunciation": "/ˈwæfəl/",
+    "example_en": "Belgian waffles are thick.",
+    "example_ka": "ბელგიური ვაფლები სქელია.",
+    "category": "fast-food-snacks",
+    "level": "A2"
+  },
+  {
+    "english": "toast",
+    "georgian": "ტოსტი",
+    "pronunciation": "/toʊst/",
+    "example_en": "Buttered toast for breakfast.",
+    "example_ka": "კარაქიანი ტოსტი საუზმედ.",
+    "category": "fast-food-snacks",
+    "level": "A1"
+  }
 ]

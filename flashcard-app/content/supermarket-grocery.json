@@ -1,57 +1,1802 @@
 [
-  {"english": "Supermarket", "georgian": "სუპერმარკეტი", "pronunciation": "/ˈsuːpərˌmɑːrkɪt/", "example_en": "I go to the supermarket every week.", "example_ka": "ყოველ კვირა სუპერმარკეტში მივდივარ.", "category": "supermarket", "level": "A1"},
-  {"english": "Cart", "georgian": "ურიკა", "pronunciation": "/kɑːrt/", "example_en": "Please grab a cart at the entrance.", "example_ka": "გთხოვთ, შესასვლელთან აიღეთ ურიკა.", "category": "supermarket", "level": "A1"},
-  {"english": "Basket", "georgian": "კალათა", "pronunciation": "/ˈbæskɪt/", "example_en": "I only need a basket for a few items.", "example_ka": "რამდენიმე ნივთისთვის მხოლოდ კალათა მჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Aisle", "georgian": "შუალედი", "pronunciation": "/aɪl/", "example_en": "The bread is in aisle three.", "example_ka": "პური მესამე შუალედშია.", "category": "supermarket", "level": "A2"},
-  {"english": "Checkout", "georgian": "სალარო", "pronunciation": "/ˈtʃɛkaʊt/", "example_en": "There's a long line at the checkout.", "example_ka": "სალაროსთან გრძელი რიგია.", "category": "supermarket", "level": "A2"},
-  {"english": "Cashier", "georgian": "მოლარე", "pronunciation": "/kæˈʃɪr/", "example_en": "The cashier scanned all my items.", "example_ka": "მოლარემ ყველა ნივთი დაასკანერა.", "category": "supermarket", "level": "A2"},
-  {"english": "Receipt", "georgian": "ქვითარი", "pronunciation": "/rɪˈsiːt/", "example_en": "Don't forget to take your receipt.", "example_ka": "არ დაგავიწყდეთ ქვითარის აღება.", "category": "supermarket", "level": "A2"},
-  {"english": "Price", "georgian": "ფასი", "pronunciation": "/praɪs/", "example_en": "What is the price of this milk?", "example_ka": "რა ფასია ამ რძის?", "category": "supermarket", "level": "A1"},
-  {"english": "Discount", "georgian": "ფასდაკლება", "pronunciation": "/ˈdɪskaʊnt/", "example_en": "There's a 20% discount on vegetables today.", "example_ka": "დღეს ბოსტნეულზე 20% ფასდაკლებაა.", "category": "supermarket", "level": "A2"},
-  {"english": "Sale", "georgian": "გაყიდვა", "pronunciation": "/seɪl/", "example_en": "The store is having a big sale.", "example_ka": "მაღაზიაში დიდი გაყიდვაა.", "category": "supermarket", "level": "A2"},
-  {"english": "Bag", "georgian": "პარკი", "pronunciation": "/bæɡ/", "example_en": "Do you need a plastic bag?", "example_ka": "პლასტმასის პარკი გჭირდებათ?", "category": "supermarket", "level": "A1"},
-  {"english": "Apple", "georgian": "ვაშლი", "pronunciation": "/ˈæpəl/", "example_en": "I bought five red apples.", "example_ka": "ხუთი წითელი ვაშლი ვიყიდე.", "category": "supermarket", "level": "A1"},
-  {"english": "Banana", "georgian": "ბანანი", "pronunciation": "/bəˈnænə/", "example_en": "Bananas are on sale this week.", "example_ka": "ამ კვირაში ბანანები ფასდაკლებითაა.", "category": "supermarket", "level": "A1"},
-  {"english": "Orange", "georgian": "ფორთოხალი", "pronunciation": "/ˈɒrɪndʒ/", "example_en": "I need a kilogram of oranges.", "example_ka": "ერთი კილოგრამი ფორთოხალი მჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Grapes", "georgian": "ყურძენი", "pronunciation": "/ɡreɪps/", "example_en": "These grapes are very sweet.", "example_ka": "ეს ყურძენი ძალიან ტკბილია.", "category": "supermarket", "level": "A1"},
-  {"english": "Tomato", "georgian": "პამიდორი", "pronunciation": "/təˈmeɪtoʊ/", "example_en": "I need tomatoes for the salad.", "example_ka": "სალათისთვის პამიდორი მჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Potato", "georgian": "კარტოფილი", "pronunciation": "/pəˈteɪtoʊ/", "example_en": "Potatoes are in the vegetable section.", "example_ka": "კარტოფილი ბოსტნეულის განყოფილებაშია.", "category": "supermarket", "level": "A1"},
-  {"english": "Onion", "georgian": "ხახვი", "pronunciation": "/ˈʌnjən/", "example_en": "We need onions for the soup.", "example_ka": "წვნიანისთვის ხახვი გვჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Cucumber", "georgian": "კიტრი", "pronunciation": "/ˈkjuːkʌmbər/", "example_en": "Add cucumber to the salad.", "example_ka": "სალათში კიტრი დაამატე.", "category": "supermarket", "level": "A1"},
-  {"english": "Carrot", "georgian": "სტაფილო", "pronunciation": "/ˈkærət/", "example_en": "Carrots are good for your eyes.", "example_ka": "სტაფილო თვალებისთვის კარგია.", "category": "supermarket", "level": "A1"},
-  {"english": "Pepper", "georgian": "წიწაკა", "pronunciation": "/ˈpɛpər/", "example_en": "I like red peppers in my salad.", "example_ka": "წითელი წიწაკა მიყვარს სალათში.", "category": "supermarket", "level": "A1"},
-  {"english": "Lettuce", "georgian": "სალათის ფურცელი", "pronunciation": "/ˈlɛtɪs/", "example_en": "We need fresh lettuce for sandwiches.", "example_ka": "სენდვიჩებისთვის ახალი სალათის ფურცელი გვჭირდება.", "category": "supermarket", "level": "A2"},
-  {"english": "Milk", "georgian": "რძე", "pronunciation": "/mɪlk/", "example_en": "We're out of milk.", "example_ka": "რძე გავიდა.", "category": "supermarket", "level": "A1"},
-  {"english": "Cheese", "georgian": "ყველი", "pronunciation": "/tʃiːz/", "example_en": "I'd like a piece of cheese.", "example_ka": "ნაჭერი ყველი მინდა.", "category": "supermarket", "level": "A1"},
-  {"english": "Butter", "georgian": "კარაქი", "pronunciation": "/ˈbʌtər/", "example_en": "Pass me the butter, please.", "example_ka": "კარაქი გადმომეცი, გთხოვთ.", "category": "supermarket", "level": "A1"},
-  {"english": "Yogurt", "georgian": "იოგურტი", "pronunciation": "/ˈjoʊɡərt/", "example_en": "I eat yogurt for breakfast.", "example_ka": "საუზმეზე იოგურტს ვჭამ.", "category": "supermarket", "level": "A1"},
-  {"english": "Eggs", "georgian": "კვერცხი", "pronunciation": "/ɛɡz/", "example_en": "Buy a dozen eggs, please.", "example_ka": "თორმეტი კვერცხი იყიდე, გთხოვთ.", "category": "supermarket", "level": "A1"},
-  {"english": "Chicken", "georgian": "ქათამი", "pronunciation": "/ˈtʃɪkɪn/", "example_en": "I bought a whole chicken for dinner.", "example_ka": "სადილისთვის მთელი ქათამი ვიყიდე.", "category": "supermarket", "level": "A1"},
-  {"english": "Beef", "georgian": "საქონლის ხორცი", "pronunciation": "/biːf/", "example_en": "This beef is very fresh.", "example_ka": "ეს საქონლის ხორცი ძალიან ახალია.", "category": "supermarket", "level": "A2"},
-  {"english": "Pork", "georgian": "ღორის ხორცი", "pronunciation": "/pɔːrk/", "example_en": "I don't eat pork.", "example_ka": "ღორის ხორცს არ ვჭამ.", "category": "supermarket", "level": "A2"},
-  {"english": "Fish", "georgian": "თევზი", "pronunciation": "/fɪʃ/", "example_en": "The fish section is over there.", "example_ka": "თევზის განყოფილება იქაა.", "category": "supermarket", "level": "A1"},
-  {"english": "Bread", "georgian": "პური", "pronunciation": "/brɛd/", "example_en": "I need a loaf of bread.", "example_ka": "ერთი პური მჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Rice", "georgian": "ბრინჯი", "pronunciation": "/raɪs/", "example_en": "We need a bag of rice.", "example_ka": "ერთი პაკეტი ბრინჯი გვჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Pasta", "georgian": "მაკარონი", "pronunciation": "/ˈpæstə/", "example_en": "Which pasta do you prefer?", "example_ka": "რომელ მაკარონს ამჯობინებ?", "category": "supermarket", "level": "A1"},
-  {"english": "Sugar", "georgian": "შაქარი", "pronunciation": "/ˈʃʊɡər/", "example_en": "We ran out of sugar.", "example_ka": "შაქარი გავიდა.", "category": "supermarket", "level": "A1"},
-  {"english": "Salt", "georgian": "მარილი", "pronunciation": "/sɔːlt/", "example_en": "Don't add too much salt.", "example_ka": "ბევრი მარილი არ დაამატო.", "category": "supermarket", "level": "A1"},
-  {"english": "Oil", "georgian": "ზეთი", "pronunciation": "/ɔɪl/", "example_en": "I need cooking oil.", "example_ka": "სამზარეულო ზეთი მჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Flour", "georgian": "ფქვილი", "pronunciation": "/flaʊər/", "example_en": "Buy two kilograms of flour.", "example_ka": "ორი კილოგრამი ფქვილი იყიდე.", "category": "supermarket", "level": "A2"},
-  {"english": "Juice", "georgian": "წვენი", "pronunciation": "/dʒuːs/", "example_en": "I want a bottle of orange juice.", "example_ka": "ფორთოხლის წვენის ბოთლი მინდა.", "category": "supermarket", "level": "A1"},
-  {"english": "Water", "georgian": "წყალი", "pronunciation": "/ˈwɔːtər/", "example_en": "I need a bottle of water.", "example_ka": "წყლის ბოთლი მჭირდება.", "category": "supermarket", "level": "A1"},
-  {"english": "Frozen food", "georgian": "გაყინული საკვები", "pronunciation": "/ˈfroʊzən fuːd/", "example_en": "The frozen food section is at the back.", "example_ka": "გაყინული საკვების განყოფილება უკანაა.", "category": "supermarket", "level": "A2"},
-  {"english": "Shelf", "georgian": "თარო", "pronunciation": "/ʃɛlf/", "example_en": "The cereal is on the top shelf.", "example_ka": "ფაფა ზედა თაროზეა.", "category": "supermarket", "level": "A2"},
-  {"english": "Fresh", "georgian": "ახალი", "pronunciation": "/frɛʃ/", "example_en": "These vegetables are very fresh.", "example_ka": "ეს ბოსტნეული ძალიან ახალია.", "category": "supermarket", "level": "A1"},
-  {"english": "Expired", "georgian": "ვადაგასული", "pronunciation": "/ɪkˈspaɪərd/", "example_en": "This yogurt is expired.", "example_ka": "ეს იოგურტი ვადაგასულია.", "category": "supermarket", "level": "A2"},
-  {"english": "Organic", "georgian": "ორგანული", "pronunciation": "/ɔːrˈɡænɪk/", "example_en": "I prefer organic vegetables.", "example_ka": "ორგანულ ბოსტნეულს ვამჯობინებ.", "category": "supermarket", "level": "B1"},
-  {"english": "Label", "georgian": "ეტიკეტი", "pronunciation": "/ˈleɪbəl/", "example_en": "Read the label before buying.", "example_ka": "ყიდვამდე ეტიკეტი წაიკითხე.", "category": "supermarket", "level": "A2"},
-  {"english": "Weight", "georgian": "წონა", "pronunciation": "/weɪt/", "example_en": "What is the weight of this package?", "example_ka": "რა წონაა ამ პაკეტის?", "category": "supermarket", "level": "A2"},
-  {"english": "Scale", "georgian": "სასწორი", "pronunciation": "/skeɪl/", "example_en": "Put the fruits on the scale.", "example_ka": "ხილი სასწორზე დადეთ.", "category": "supermarket", "level": "A2"},
-  {"english": "Shopping list", "georgian": "სავაჭრო სია", "pronunciation": "/ˈʃɒpɪŋ lɪst/", "example_en": "I forgot my shopping list at home.", "example_ka": "სავაჭრო სია სახლში დამავიწყდა.", "category": "supermarket", "level": "A2"},
-  {"english": "Credit card", "georgian": "საკრედიტო ბარათი", "pronunciation": "/ˈkrɛdɪt kɑːrd/", "example_en": "Can I pay by credit card?", "example_ka": "საკრედიტო ბარათით შეიძლება გადახდა?", "category": "supermarket", "level": "A2"},
-  {"english": "Cash", "georgian": "ნაღდი ფული", "pronunciation": "/kæʃ/", "example_en": "I'll pay in cash.", "example_ka": "ნაღდი ფულით გადავიხდი.", "category": "supermarket", "level": "A2"},
-  {"english": "Change", "georgian": "ხურდა", "pronunciation": "/tʃeɪndʒ/", "example_en": "Here is your change.", "example_ka": "აი თქვენი ხურდა.", "category": "supermarket", "level": "A2"},
-  {"english": "Cereal", "georgian": "ფაფა", "pronunciation": "/ˈsɪriəl/", "example_en": "I eat cereal every morning.", "example_ka": "ყოველ დილით ფაფას ვჭამ.", "category": "supermarket", "level": "A2"},
-  {"english": "Snack", "georgian": "წასახემსებელი", "pronunciation": "/snæk/", "example_en": "I want a snack for later.", "example_ka": "მოგვიანებით წასახემსებელი მინდა.", "category": "supermarket", "level": "A2"},
-  {"english": "Canned food", "georgian": "კონსერვი", "pronunciation": "/kænd fuːd/", "example_en": "The canned food is in aisle five.", "example_ka": "კონსერვი მეხუთე შუალედშია.", "category": "supermarket", "level": "A2"}
+  {
+    "english": "Supermarket",
+    "georgian": "სუპერმარკეტი",
+    "pronunciation": "/ˈsuːpərˌmɑːrkɪt/",
+    "example_en": "I go to the supermarket every week.",
+    "example_ka": "ყოველ კვირა სუპერმარკეტში მივდივარ.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Cart",
+    "georgian": "ურიკა",
+    "pronunciation": "/kɑːrt/",
+    "example_en": "Please grab a cart at the entrance.",
+    "example_ka": "გთხოვთ, შესასვლელთან აიღეთ ურიკა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Basket",
+    "georgian": "კალათა",
+    "pronunciation": "/ˈbæskɪt/",
+    "example_en": "I only need a basket for a few items.",
+    "example_ka": "რამდენიმე ნივთისთვის მხოლოდ კალათა მჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Aisle",
+    "georgian": "შუალედი",
+    "pronunciation": "/aɪl/",
+    "example_en": "The bread is in aisle three.",
+    "example_ka": "პური მესამე შუალედშია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Checkout",
+    "georgian": "სალარო",
+    "pronunciation": "/ˈtʃɛkaʊt/",
+    "example_en": "There's a long line at the checkout.",
+    "example_ka": "სალაროსთან გრძელი რიგია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Cashier",
+    "georgian": "მოლარე",
+    "pronunciation": "/kæˈʃɪr/",
+    "example_en": "The cashier scanned all my items.",
+    "example_ka": "მოლარემ ყველა ნივთი დაასკანერა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Don't forget to take your receipt.",
+    "example_ka": "არ დაგავიწყდეთ ქვითარის აღება.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "What is the price of this milk?",
+    "example_ka": "რა ფასია ამ რძის?",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "There's a 20% discount on vegetables today.",
+    "example_ka": "დღეს ბოსტნეულზე 20% ფასდაკლებაა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Sale",
+    "georgian": "გაყიდვა",
+    "pronunciation": "/seɪl/",
+    "example_en": "The store is having a big sale.",
+    "example_ka": "მაღაზიაში დიდი გაყიდვაა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Bag",
+    "georgian": "პარკი",
+    "pronunciation": "/bæɡ/",
+    "example_en": "Do you need a plastic bag?",
+    "example_ka": "პლასტმასის პარკი გჭირდებათ?",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Apple",
+    "georgian": "ვაშლი",
+    "pronunciation": "/ˈæpəl/",
+    "example_en": "I bought five red apples.",
+    "example_ka": "ხუთი წითელი ვაშლი ვიყიდე.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Banana",
+    "georgian": "ბანანი",
+    "pronunciation": "/bəˈnænə/",
+    "example_en": "Bananas are on sale this week.",
+    "example_ka": "ამ კვირაში ბანანები ფასდაკლებითაა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Orange",
+    "georgian": "ფორთოხალი",
+    "pronunciation": "/ˈɒrɪndʒ/",
+    "example_en": "I need a kilogram of oranges.",
+    "example_ka": "ერთი კილოგრამი ფორთოხალი მჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Grapes",
+    "georgian": "ყურძენი",
+    "pronunciation": "/ɡreɪps/",
+    "example_en": "These grapes are very sweet.",
+    "example_ka": "ეს ყურძენი ძალიან ტკბილია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Tomato",
+    "georgian": "პამიდორი",
+    "pronunciation": "/təˈmeɪtoʊ/",
+    "example_en": "I need tomatoes for the salad.",
+    "example_ka": "სალათისთვის პამიდორი მჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Potato",
+    "georgian": "კარტოფილი",
+    "pronunciation": "/pəˈteɪtoʊ/",
+    "example_en": "Potatoes are in the vegetable section.",
+    "example_ka": "კარტოფილი ბოსტნეულის განყოფილებაშია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Onion",
+    "georgian": "ხახვი",
+    "pronunciation": "/ˈʌnjən/",
+    "example_en": "We need onions for the soup.",
+    "example_ka": "წვნიანისთვის ხახვი გვჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Cucumber",
+    "georgian": "კიტრი",
+    "pronunciation": "/ˈkjuːkʌmbər/",
+    "example_en": "Add cucumber to the salad.",
+    "example_ka": "სალათში კიტრი დაამატე.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Carrot",
+    "georgian": "სტაფილო",
+    "pronunciation": "/ˈkærət/",
+    "example_en": "Carrots are good for your eyes.",
+    "example_ka": "სტაფილო თვალებისთვის კარგია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Pepper",
+    "georgian": "წიწაკა",
+    "pronunciation": "/ˈpɛpər/",
+    "example_en": "I like red peppers in my salad.",
+    "example_ka": "წითელი წიწაკა მიყვარს სალათში.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Lettuce",
+    "georgian": "სალათის ფურცელი",
+    "pronunciation": "/ˈlɛtɪs/",
+    "example_en": "We need fresh lettuce for sandwiches.",
+    "example_ka": "სენდვიჩებისთვის ახალი სალათის ფურცელი გვჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Milk",
+    "georgian": "რძე",
+    "pronunciation": "/mɪlk/",
+    "example_en": "We're out of milk.",
+    "example_ka": "რძე გავიდა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Cheese",
+    "georgian": "ყველი",
+    "pronunciation": "/tʃiːz/",
+    "example_en": "I'd like a piece of cheese.",
+    "example_ka": "ნაჭერი ყველი მინდა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Butter",
+    "georgian": "კარაქი",
+    "pronunciation": "/ˈbʌtər/",
+    "example_en": "Pass me the butter, please.",
+    "example_ka": "კარაქი გადმომეცი, გთხოვთ.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Yogurt",
+    "georgian": "იოგურტი",
+    "pronunciation": "/ˈjoʊɡərt/",
+    "example_en": "I eat yogurt for breakfast.",
+    "example_ka": "საუზმეზე იოგურტს ვჭამ.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Eggs",
+    "georgian": "კვერცხი",
+    "pronunciation": "/ɛɡz/",
+    "example_en": "Buy a dozen eggs, please.",
+    "example_ka": "თორმეტი კვერცხი იყიდე, გთხოვთ.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Chicken",
+    "georgian": "ქათამი",
+    "pronunciation": "/ˈtʃɪkɪn/",
+    "example_en": "I bought a whole chicken for dinner.",
+    "example_ka": "სადილისთვის მთელი ქათამი ვიყიდე.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Beef",
+    "georgian": "საქონლის ხორცი",
+    "pronunciation": "/biːf/",
+    "example_en": "This beef is very fresh.",
+    "example_ka": "ეს საქონლის ხორცი ძალიან ახალია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Pork",
+    "georgian": "ღორის ხორცი",
+    "pronunciation": "/pɔːrk/",
+    "example_en": "I don't eat pork.",
+    "example_ka": "ღორის ხორცს არ ვჭამ.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Fish",
+    "georgian": "თევზი",
+    "pronunciation": "/fɪʃ/",
+    "example_en": "The fish section is over there.",
+    "example_ka": "თევზის განყოფილება იქაა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Bread",
+    "georgian": "პური",
+    "pronunciation": "/brɛd/",
+    "example_en": "I need a loaf of bread.",
+    "example_ka": "ერთი პური მჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Rice",
+    "georgian": "ბრინჯი",
+    "pronunciation": "/raɪs/",
+    "example_en": "We need a bag of rice.",
+    "example_ka": "ერთი პაკეტი ბრინჯი გვჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Pasta",
+    "georgian": "მაკარონი",
+    "pronunciation": "/ˈpæstə/",
+    "example_en": "Which pasta do you prefer?",
+    "example_ka": "რომელ მაკარონს ამჯობინებ?",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Sugar",
+    "georgian": "შაქარი",
+    "pronunciation": "/ˈʃʊɡər/",
+    "example_en": "We ran out of sugar.",
+    "example_ka": "შაქარი გავიდა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Salt",
+    "georgian": "მარილი",
+    "pronunciation": "/sɔːlt/",
+    "example_en": "Don't add too much salt.",
+    "example_ka": "ბევრი მარილი არ დაამატო.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Oil",
+    "georgian": "ზეთი",
+    "pronunciation": "/ɔɪl/",
+    "example_en": "I need cooking oil.",
+    "example_ka": "სამზარეულო ზეთი მჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Flour",
+    "georgian": "ფქვილი",
+    "pronunciation": "/flaʊər/",
+    "example_en": "Buy two kilograms of flour.",
+    "example_ka": "ორი კილოგრამი ფქვილი იყიდე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Juice",
+    "georgian": "წვენი",
+    "pronunciation": "/dʒuːs/",
+    "example_en": "I want a bottle of orange juice.",
+    "example_ka": "ფორთოხლის წვენის ბოთლი მინდა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "I need a bottle of water.",
+    "example_ka": "წყლის ბოთლი მჭირდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Shelf",
+    "georgian": "თარო",
+    "pronunciation": "/ʃɛlf/",
+    "example_en": "The cereal is on the top shelf.",
+    "example_ka": "ფაფა ზედა თაროზეა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Fresh",
+    "georgian": "ახალი",
+    "pronunciation": "/frɛʃ/",
+    "example_en": "These vegetables are very fresh.",
+    "example_ka": "ეს ბოსტნეული ძალიან ახალია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Expired",
+    "georgian": "ვადაგასული",
+    "pronunciation": "/ɪkˈspaɪərd/",
+    "example_en": "This yogurt is expired.",
+    "example_ka": "ეს იოგურტი ვადაგასულია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Organic",
+    "georgian": "ორგანული",
+    "pronunciation": "/ɔːrˈɡænɪk/",
+    "example_en": "I prefer organic vegetables.",
+    "example_ka": "ორგანულ ბოსტნეულს ვამჯობინებ.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "Label",
+    "georgian": "ეტიკეტი",
+    "pronunciation": "/ˈleɪbəl/",
+    "example_en": "Read the label before buying.",
+    "example_ka": "ყიდვამდე ეტიკეტი წაიკითხე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Weight",
+    "georgian": "წონა",
+    "pronunciation": "/weɪt/",
+    "example_en": "What is the weight of this package?",
+    "example_ka": "რა წონაა ამ პაკეტის?",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Scale",
+    "georgian": "სასწორი",
+    "pronunciation": "/skeɪl/",
+    "example_en": "Put the fruits on the scale.",
+    "example_ka": "ხილი სასწორზე დადეთ.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Cash",
+    "georgian": "ნაღდი ფული",
+    "pronunciation": "/kæʃ/",
+    "example_en": "I'll pay in cash.",
+    "example_ka": "ნაღდი ფულით გადავიხდი.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Change",
+    "georgian": "ხურდა",
+    "pronunciation": "/tʃeɪndʒ/",
+    "example_en": "Here is your change.",
+    "example_ka": "აი თქვენი ხურდა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Cereal",
+    "georgian": "ფაფა",
+    "pronunciation": "/ˈsɪriəl/",
+    "example_en": "I eat cereal every morning.",
+    "example_ka": "ყოველ დილით ფაფას ვჭამ.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Snack",
+    "georgian": "წასახემსებელი",
+    "pronunciation": "/snæk/",
+    "example_en": "I want a snack for later.",
+    "example_ka": "მოგვიანებით წასახემსებელი მინდა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Strawberry",
+    "georgian": "მარწყვი",
+    "pronunciation": "/ˈstrɔːberi/",
+    "example_en": "These strawberries smell delicious.",
+    "example_ka": "ეს მარწყვები ძალიან კარგი სუნს აცემენ.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Blueberry",
+    "georgian": "ლურჯი მოცვი",
+    "pronunciation": "/ˈbluːberi/",
+    "example_en": "Blueberries are rich in antioxidants.",
+    "example_ka": "ლურჯი მოცვი ანტიოქსიდანტებითაა მდიდარი.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Pineapple",
+    "georgian": "ანანასი",
+    "pronunciation": "/ˈpaɪnæpl/",
+    "example_en": "The pineapple is sweet and juicy.",
+    "example_ka": "ანანასი ტკბილი და წვნიანია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Watermelon",
+    "georgian": "საზამთრო",
+    "pronunciation": "/ˈwɔːtərmelən/",
+    "example_en": "Watermelon is perfect for summer.",
+    "example_ka": "საზამთრო ზაფხულისთვის იდეალურია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Peach",
+    "georgian": "ატამი",
+    "pronunciation": "/piːtʃ/",
+    "example_en": "These peaches are perfectly ripe.",
+    "example_ka": "ეს ატამები იდეალურად მოწიფულია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Pear",
+    "georgian": "მსხალი",
+    "pronunciation": "/per/",
+    "example_en": "The pear is soft and sweet.",
+    "example_ka": "მსხალი რბილი და ტკბილია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Mango",
+    "georgian": "მანგო",
+    "pronunciation": "/ˈmæŋɡoʊ/",
+    "example_en": "Mango is my favorite tropical fruit.",
+    "example_ka": "მანგო ჩემი საყვარელი ტროპიკული ხილია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Kiwi",
+    "georgian": "კივი",
+    "pronunciation": "/ˈkiːwiː/",
+    "example_en": "Kiwi fruit is rich in vitamin C.",
+    "example_ka": "კივი ვიტამინ C-თია მდიდარი.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Avocado",
+    "georgian": "ავოკადო",
+    "pronunciation": "/ævəˈkɑːdoʊ/",
+    "example_en": "Avocado is great for salads.",
+    "example_ka": "ავოკადო სალათებისთვის შესანიშნავია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Lemon",
+    "georgian": "ლიმონი",
+    "pronunciation": "/ˈlemən/",
+    "example_en": "Add lemon juice to the tea.",
+    "example_ka": "ჩაიში ლიმონის წვენი დაუმატე.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Lime",
+    "georgian": "ლაიმი",
+    "pronunciation": "/laɪm/",
+    "example_en": "Lime makes the drink refreshing.",
+    "example_ka": "ლაიმი სასმელს გამომაცოცხლებელს ხდის.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Cherry",
+    "georgian": "ალუბალი",
+    "pronunciation": "/ˈtʃeri/",
+    "example_en": "These cherries are very sweet.",
+    "example_ka": "ეს ალუბალი ძალიან ტკბილია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Plum",
+    "georgian": "ქლიავი",
+    "pronunciation": "/plʌm/",
+    "example_en": "The plums are ripe and juicy.",
+    "example_ka": "ქლიავი მოწიფული და წვნიანია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Apricot",
+    "georgian": "ზგვი",
+    "pronunciation": "/ˈeɪprɪkɒt/",
+    "example_en": "Dried apricots are healthy snacks.",
+    "example_ka": "გამხმარი ზგვი ჯანსაღი წასახემსებელია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Coconut",
+    "georgian": "ქოქოსი",
+    "pronunciation": "/ˈkoʊkənʌt/",
+    "example_en": "Coconut milk is used in many recipes.",
+    "example_ka": "ქოქოსის რძე მრავალ რეცეპტშია გამოყენებული.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Pomegranate",
+    "georgian": "ბროწეული",
+    "pronunciation": "/ˈpɑːmɪɡrænɪt/",
+    "example_en": "Pomegranate seeds are very healthy.",
+    "example_ka": "ბროწეულის მარცვლები ძალიან ჯანსაღია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Broccoli",
+    "georgian": "ბროკოლი",
+    "pronunciation": "/ˈbrɑːkəli/",
+    "example_en": "Broccoli is packed with vitamins.",
+    "example_ka": "ბროკოლი ვიტამინებითაა სავსე.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Cauliflower",
+    "georgian": "ყვითელი კაპუსტა",
+    "pronunciation": "/ˈkɔːliflaʊər/",
+    "example_en": "Cauliflower can be steamed or roasted.",
+    "example_ka": "ყვითელი კაპუსტა შეიძლება ორთქლზე ან ღუმელში გამოცხვათ.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Cabbage",
+    "georgian": "კაპუსტა",
+    "pronunciation": "/ˈkæbɪdʒ/",
+    "example_en": "Cabbage is used to make coleslaw.",
+    "example_ka": "კაპუსტისგან კოლსლოვს აკეთებენ.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Spinach",
+    "georgian": "ისპანახი",
+    "pronunciation": "/ˈspɪnɪtʃ/",
+    "example_en": "Spinach is rich in iron.",
+    "example_ka": "ისპანახი რკინითაა მდიდარი.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Celery",
+    "georgian": "ნოღი",
+    "pronunciation": "/ˈseləri/",
+    "example_en": "Celery adds crunch to salads.",
+    "example_ka": "ნოღი სალათებს ხრაშუნას აძლევს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Radish",
+    "georgian": "ლობიო",
+    "pronunciation": "/ˈrædɪʃ/",
+    "example_en": "Radishes have a sharp, spicy taste.",
+    "example_ka": "ლობიოს მკვეთრი, ცხარე გემო აქვს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Mushroom",
+    "georgian": "სოკო",
+    "pronunciation": "/ˈmʌʃrʊm/",
+    "example_en": "Mushrooms are great in pasta dishes.",
+    "example_ka": "სოკო მაკარონის კერძებში შესანიშნავია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Eggplant",
+    "georgian": "ნაცარი",
+    "pronunciation": "/ˈeɡplænt/",
+    "example_en": "Eggplant is purple and spongy.",
+    "example_ka": "ნაცარი იასამნისფერი და ღრუბლისებრია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Zucchini",
+    "georgian": "ცუკინი",
+    "pronunciation": "/zuˈkiːni/",
+    "example_en": "Zucchini can be grilled or baked.",
+    "example_ka": "ცუკინი შეიძლება გრილზე ან ღუმელში გამოიცხვას.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Corn",
+    "georgian": "სიმინდი",
+    "pronunciation": "/kɔːrn/",
+    "example_en": "Fresh corn is delicious grilled.",
+    "example_ka": "ახალი სიმინდი გრილზე გადაწვით ძალიან გემრიელია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Peas",
+    "georgian": "ბარდა",
+    "pronunciation": "/piːz/",
+    "example_en": "Green peas are sweet and tender.",
+    "example_ka": "მწვანე ბარდა ტკბილი და რბილია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Beans",
+    "georgian": "ლობიო",
+    "pronunciation": "/biːnz/",
+    "example_en": "Black beans are good for protein.",
+    "example_ka": "შავი ლობიო პროტეინისთვის კარგია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Garlic",
+    "georgian": "ნიორი",
+    "pronunciation": "/ˈɡɑːrlɪk/",
+    "example_en": "Garlic adds flavor to many dishes.",
+    "example_ka": "ნიორი მრავალ კერძს გემოს უმატებს.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Ginger",
+    "georgian": "ძინძრი",
+    "pronunciation": "/ˈdʒɪndʒər/",
+    "example_en": "Ginger is used in Asian cooking.",
+    "example_ka": "ძინძრი აზიური სამზარეულოში გამოიყენება.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Parsley",
+    "georgian": "ოხრახუში",
+    "pronunciation": "/ˈpɑːrsli/",
+    "example_en": "Fresh parsley makes a nice garnish.",
+    "example_ka": "ახალი ოხრახუში ლამაზ გარნირს აკეთებს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Salmon",
+    "georgian": "ორაგული",
+    "pronunciation": "/ˈsæmən/",
+    "example_en": "Grilled salmon is very healthy.",
+    "example_ka": "შემწვარი ორაგული ძალიან ჯანსაღია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Tuna",
+    "georgian": "ტუნა",
+    "pronunciation": "/ˈtuːnə/",
+    "example_en": "Tuna salad is a quick lunch option.",
+    "example_ka": "ტუნას სალათი სწრაფი ლანჩის ვარიანტია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Shrimp",
+    "georgian": "კრევეტი",
+    "pronunciation": "/ʃrɪmp/",
+    "example_en": "Shrimp are delicious when grilled.",
+    "example_ka": "კრევეტები გრილზე გადაწვით ძალიან გემრიელია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Crab",
+    "georgian": "კიბორჩხალა",
+    "pronunciation": "/kræb/",
+    "example_en": "Fresh crab is expensive but tasty.",
+    "example_ka": "ახალი კიბორჩხალა ძვირი, მაგრამ გემრიელია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Lobster",
+    "georgian": "ომარი",
+    "pronunciation": "/ˈlɑːbstər/",
+    "example_en": "Lobster is considered a luxury food.",
+    "example_ka": "ომარი ლუქს საკვებად ითვლება.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "Turkey",
+    "georgian": "ინდაური",
+    "pronunciation": "/ˈtɜːrki/",
+    "example_en": "Turkey is traditional at Thanksgiving.",
+    "example_ka": "ინდაური მადლობის დღის ტრადიციული კერძია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Duck",
+    "georgian": "იხვი",
+    "pronunciation": "/dʌk/",
+    "example_en": "Roasted duck is a gourmet dish.",
+    "example_ka": "შემწვარი იხვი გურმანული კერძია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Lamb",
+    "georgian": "ცხვრის ხორცი",
+    "pronunciation": "/læm/",
+    "example_en": "Lamb has a distinctive flavor.",
+    "example_ka": "ცხვრის ხორცს გამორჩეული გემო აქვს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Bacon",
+    "georgian": "ბეკონი",
+    "pronunciation": "/ˈbeɪkən/",
+    "example_en": "Bacon makes breakfast more delicious.",
+    "example_ka": "ბეკონი საუზმეს უფრო გემრიელს ხდის.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Sausage",
+    "georgian": "ძეხვი",
+    "pronunciation": "/ˈsɔːsɪdʒ/",
+    "example_en": "Italian sausage is spicy and flavorful.",
+    "example_ka": "იტალიური ძეხვი ცხარე და გემოვანია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Ham",
+    "georgian": "ლორი",
+    "pronunciation": "/hæm/",
+    "example_en": "Ham sandwiches are popular for lunch.",
+    "example_ka": "ლორის სენდვიჩები ლანჩისთვის პოპულარულია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Honey",
+    "georgian": "თაფლი",
+    "pronunciation": "/ˈhʌni/",
+    "example_en": "Honey is a natural sweetener.",
+    "example_ka": "თაფლი ბუნებრივი გამტკბარია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Jam",
+    "georgian": "მურაბა",
+    "pronunciation": "/dʒæm/",
+    "example_en": "Strawberry jam tastes great on toast.",
+    "example_ka": "მარწყვის მურაბა ტოსტზე შესანიშნავია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Peanut",
+    "georgian": "არაქისი",
+    "pronunciation": "/ˈpiːnʌt/",
+    "example_en": "Peanut butter is popular in America.",
+    "example_ka": "არაქისის კარაქი ამერიკაში პოპულარულია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Almond",
+    "georgian": "ნუში",
+    "pronunciation": "/ˈɑːmənd/",
+    "example_en": "Almonds are healthy snacks.",
+    "example_ka": "ნუში ჯანსაღი წასახემსებელია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Walnut",
+    "georgian": "კაკალი",
+    "pronunciation": "/ˈwɔːlnʌt/",
+    "example_en": "Walnuts are good for brain health.",
+    "example_ka": "კაკალი ტვინის ჯანმრთელობისთვის კარგია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Cashew",
+    "georgian": "კაშიუ",
+    "pronunciation": "/ˈkæʃuː/",
+    "example_en": "Cashews have a creamy texture.",
+    "example_ka": "კაშიუს კრემისებრი ტექსტურა აქვს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Pistachio",
+    "georgian": "ფისტა",
+    "pronunciation": "/pɪˈstæʃioʊ/",
+    "example_en": "Pistachios are often salted.",
+    "example_ka": "ფისტა ხშირად მარილიანია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Raisin",
+    "georgian": "ღვინის ყურძენი",
+    "pronunciation": "/ˈreɪzən/",
+    "example_en": "Raisins are dried grapes.",
+    "example_ka": "ღვინის ყურძენი გამხმარი ყურძენია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Oats",
+    "georgian": "შვრია",
+    "pronunciation": "/oʊts/",
+    "example_en": "Oats make a healthy breakfast.",
+    "example_ka": "შვრია ჯანსაღ საუზმეს აკეთებს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Quinoa",
+    "georgian": "კინოა",
+    "pronunciation": "/ˈkiːnoʊə/",
+    "example_en": "Quinoa is a superfood grain.",
+    "example_ka": "კინოა სუპერ საკვების მარცვალია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "Barley",
+    "georgian": "ქერი",
+    "pronunciation": "/ˈbɑːrli/",
+    "example_en": "Barley is used in soups and stews.",
+    "example_ka": "ქერი ცხელ კერძებსა და ჩანახებში გამოიყენება.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Lentil",
+    "georgian": "ოსპი",
+    "pronunciation": "/ˈlentəl/",
+    "example_en": "Lentils are rich in protein.",
+    "example_ka": "ოსპი პროტეინითაა მდიდარი.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Vinegar",
+    "georgian": "ძმარი",
+    "pronunciation": "/ˈvɪnɪɡər/",
+    "example_en": "Vinegar adds tang to salad dressing.",
+    "example_ka": "ძმარი სალათის გასახდელს მომჟავო გემოს აძლევს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Mustard",
+    "georgian": "მდოგვი",
+    "pronunciation": "/ˈmʌstərd/",
+    "example_en": "Yellow mustard goes well with hot dogs.",
+    "example_ka": "ყვითელი მდოგვი ჰოთ დოგებთან კარგად ეხდება.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Ketchup",
+    "georgian": "კეჩუპი",
+    "pronunciation": "/ˈketʃəp/",
+    "example_en": "Ketchup is popular with french fries.",
+    "example_ka": "კეჩუპი კარტოფილის ფრიზთან პოპულარულია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Mayonnaise",
+    "georgian": "მაიონეზი",
+    "pronunciation": "/ˈmeɪəneɪz/",
+    "example_en": "Mayonnaise is creamy and rich.",
+    "example_ka": "მაიონეზი კრემისებრი და მდიდარია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Soda",
+    "georgian": "გაზიანი სასმელი",
+    "pronunciation": "/ˈsoʊdə/",
+    "example_en": "Cola is a popular soda flavor.",
+    "example_ka": "კოლა გაზიანი სასმელის პოპულარული სახეობაა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Tea",
+    "georgian": "ჩაი",
+    "pronunciation": "/tiː/",
+    "example_en": "Green tea has many health benefits.",
+    "example_ka": "მწვანე ჩაის მრავალი სამკურნალო თვისება აქვს.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Coffee",
+    "georgian": "ყავა",
+    "pronunciation": "/ˈkɔːfi/",
+    "example_en": "Fresh ground coffee smells amazing.",
+    "example_ka": "ახლად დაფქვილი ყავა უღრმესი სუნი აქვს.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Beer",
+    "georgian": "ლუდი",
+    "pronunciation": "/bɪr/",
+    "example_en": "Cold beer is refreshing on hot days.",
+    "example_ka": "ცივი ლუდი ცხელ დღეებში გამომაცოცხლებელია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Wine",
+    "georgian": "ღვინო",
+    "pronunciation": "/waɪn/",
+    "example_en": "Red wine pairs well with steak.",
+    "example_ka": "წითელი ღვინო ბიფშტექსთან კარგად ეხდება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Candy",
+    "georgian": "ტკბილეული",
+    "pronunciation": "/ˈkændi/",
+    "example_en": "Children love colorful candy.",
+    "example_ka": "ბავშვებს ფერადი ტკბილეული უყვართ.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Chocolate",
+    "georgian": "შოკოლადი",
+    "pronunciation": "/ˈtʃɔːklət/",
+    "example_en": "Dark chocolate is healthier than milk chocolate.",
+    "example_ka": "მუქი შოკოლადი რძიანზე უფრო ჯანსაღია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Cookie",
+    "georgian": "ბისკვიტი",
+    "pronunciation": "/ˈkʊki/",
+    "example_en": "Chocolate chip cookies are very popular.",
+    "example_ka": "შოკოლადის ნაჭრების ბისკვიტი ძალიან პოპულარულია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Cake",
+    "georgian": "ტორტი",
+    "pronunciation": "/keɪk/",
+    "example_en": "Birthday cake is always special.",
+    "example_ka": "დაბადების დღის ტორტი ყოველთვის განსაკუთრებულია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Pie",
+    "georgian": "ღვეზელი",
+    "pronunciation": "/paɪ/",
+    "example_en": "Apple pie is a classic American dessert.",
+    "example_ka": "ვაშლის ღვეზელი კლასიკური ამერიკული დესერტია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Ice",
+    "georgian": "ყინული",
+    "pronunciation": "/aɪs/",
+    "example_en": "Add ice to keep drinks cold.",
+    "example_ka": "სასმელების გასაცივად ყინული დაამატე.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Cream",
+    "georgian": "ნაღები",
+    "pronunciation": "/kriːm/",
+    "example_en": "Heavy cream makes desserts rich.",
+    "example_ka": "მძიმე ნაღები დესერტებს მდიდარს ხდის.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Soup",
+    "georgian": "წვნიანი",
+    "pronunciation": "/suːp/",
+    "example_en": "Chicken soup is comforting when sick.",
+    "example_ka": "ქათმის წვნიანი ავადმყოფობისას სუსტავებია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Sauce",
+    "georgian": "სოუსი",
+    "pronunciation": "/sɔːs/",
+    "example_en": "Tomato sauce is essential for pasta.",
+    "example_ka": "პამიდვრის სოუსი მაკარონისთვის აუცილებელია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Spice",
+    "georgian": "სანელებელი",
+    "pronunciation": "/spaɪs/",
+    "example_en": "Spices make food more flavorful.",
+    "example_ka": "სანელებლები საკვებს უფრო გემოვანს ხდის.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Herb",
+    "georgian": "მცენარე",
+    "pronunciation": "/ɜːrb/",
+    "example_en": "Fresh herbs enhance the taste of dishes.",
+    "example_ka": "ახალი მცენარეები კერძების გემოს აუმჯობესებს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Cinnamon",
+    "georgian": "დარიჩინი",
+    "pronunciation": "/ˈsɪnəmən/",
+    "example_en": "Cinnamon makes apple pie delicious.",
+    "example_ka": "დარიჩინი ვაშლის ღვეზელს გემრიელს ხდის.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Vanilla",
+    "georgian": "ვანილი",
+    "pronunciation": "/vəˈnɪlə/",
+    "example_en": "Vanilla is a popular ice cream flavor.",
+    "example_ka": "ვანილი ნაყინის პოპულარული გემოა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Pickle",
+    "georgian": "მწვანი კიტრი",
+    "pronunciation": "/ˈpɪkəl/",
+    "example_en": "Pickles add crunch to sandwiches.",
+    "example_ka": "მწვანი კიტრი სენდვიჩებს ხრაშუნას აძლევს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Olive",
+    "georgian": "ზეთისხილი",
+    "pronunciation": "/ˈɑːlɪv/",
+    "example_en": "Green olives are tangy and salty.",
+    "example_ka": "მწვანე ზეთისხილი მჟავე და მარილიანია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Frozen",
+    "georgian": "გაყინული",
+    "pronunciation": "/ˈfroʊzən/",
+    "example_en": "Frozen vegetables last longer.",
+    "example_ka": "გაყინული ბოსტნეული უფრო დიდხანს ინახება.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Canned",
+    "georgian": "კონსერვებული",
+    "pronunciation": "/kænd/",
+    "example_en": "Canned tomatoes are convenient for cooking.",
+    "example_ka": "კონსერვებული პამიდორი სამზარეულოში მოსახერხებელია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Package",
+    "georgian": "პაკეტი",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "Each package contains six donuts.",
+    "example_ka": "ყველა პაკეტში ექვსი დონატია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Bottle",
+    "georgian": "ბოთლი",
+    "pronunciation": "/ˈbɑːtəl/",
+    "example_en": "Glass bottles are recyclable.",
+    "example_ka": "შუშის ბოთლები ხელმეორედ გამოსაყენებელია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Can",
+    "georgian": "ქილა",
+    "pronunciation": "/kæn/",
+    "example_en": "Open the can with a can opener.",
+    "example_ka": "ქილა კონსერვის გამღები დახსენი.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Jar",
+    "georgian": "ქილა",
+    "pronunciation": "/dʒɑːr/",
+    "example_en": "The jam comes in a glass jar.",
+    "example_ka": "მურაბა შუშის ქილაში მოდის.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Box",
+    "georgian": "ყუთი",
+    "pronunciation": "/bɑːks/",
+    "example_en": "Cereal comes in a cardboard box.",
+    "example_ka": "ფაფა მუყაოს ყუთში მოდის.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Container",
+    "georgian": "კონტეინერი",
+    "pronunciation": "/kənˈteɪnər/",
+    "example_en": "Store leftovers in a plastic container.",
+    "example_ka": "ნარჩენები პლასტიკურ კონტეინერში შეინახე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Wrapper",
+    "georgian": "შემოსასმელი",
+    "pronunciation": "/ˈræpər/",
+    "example_en": "Remove the wrapper before eating candy.",
+    "example_ka": "ტკბილეულის მიღებამდე შემოსასმელი მოაცილე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Barcode",
+    "georgian": "შტრიხკოდი",
+    "pronunciation": "/ˈbɑːrkoʊd/",
+    "example_en": "The cashier scans the barcode.",
+    "example_ka": "მოლარე შტრიხკოდს ასკანერებს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Counter",
+    "georgian": "პულტი",
+    "pronunciation": "/ˈkaʊntər/",
+    "example_en": "Place your items on the counter.",
+    "example_ka": "ნივთები პულტზე დადე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Scanner",
+    "georgian": "სკანერი",
+    "pronunciation": "/ˈskænər/",
+    "example_en": "The price scanner checks item costs.",
+    "example_ka": "ფასების სკანერი ნივთების ღირებულებას ამოწმებს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Customer",
+    "georgian": "მყიდველი",
+    "pronunciation": "/ˈkʌstəmər/",
+    "example_en": "The customer paid with a credit card.",
+    "example_ka": "მყიდველმა საკრედიტო ბარათით გადაიხადა.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Employee",
+    "georgian": "თანამშრომელი",
+    "pronunciation": "/ɪmˈplɔɪiː/",
+    "example_en": "The employee helped me find the milk.",
+    "example_ka": "თანამშრომელმა რძის ძებნაში დამეხმარა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Manager",
+    "georgian": "მენეჯერი",
+    "pronunciation": "/ˈmænɪdʒər/",
+    "example_en": "The manager resolved the complaint.",
+    "example_ka": "მენეჯერმა საჩივარი მოაგვარა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Queue",
+    "georgian": "რიგი",
+    "pronunciation": "/kjuː/",
+    "example_en": "Please wait in the queue to pay.",
+    "example_ka": "გადახდისთვის რიგში დაელოდეთ.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Line",
+    "georgian": "ხაზი",
+    "pronunciation": "/laɪn/",
+    "example_en": "The line at checkout was very long.",
+    "example_ka": "სალაროსთან ხაზი ძალიან გრძელი იყო.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Total",
+    "georgian": "ჯამი",
+    "pronunciation": "/ˈtoʊtəl/",
+    "example_en": "Your total comes to fifty dollars.",
+    "example_ka": "თქვენი ჯამი ორმოცდაათი დოლარია.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "Tax",
+    "georgian": "გადასახადი",
+    "pronunciation": "/tæks/",
+    "example_en": "Tax is added to the final price.",
+    "example_ka": "გადასახადი საბოლოო ფასს ემატება.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Credit",
+    "georgian": "საკრედიტო",
+    "pronunciation": "/ˈkredɪt/",
+    "example_en": "I paid with my credit card.",
+    "example_ka": "საკრედიტო ბარათით გადავიხადე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Debit",
+    "georgian": "საბანკო",
+    "pronunciation": "/ˈdebɪt/",
+    "example_en": "Debit cards take money directly from your account.",
+    "example_ka": "საბანკო ბარათები პირდაპირ ანგარიშიდან იღებს ფულს.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɑːn/",
+    "example_en": "Use this coupon for a dollar off.",
+    "example_ka": "ამ კუპონით ერთი დოლარი ისაზღვრება.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Loyalty",
+    "georgian": "ერთგულება",
+    "pronunciation": "/ˈlɔɪəlti/",
+    "example_en": "The loyalty card gives you points.",
+    "example_ka": "ერთგულების ბარათი ქულებს იძლევა.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "Refund",
+    "georgian": "უკან დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "I got a refund for the damaged item.",
+    "example_ka": "დაზიანებული ნივთისთვის ფული უკან მივიღე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Return",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "You can return items within 30 days.",
+    "example_ka": "ნივთების დაბრუნება 30 დღის განმავლობაშია შესაძლებელი.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Exchange",
+    "georgian": "გაცვლა",
+    "pronunciation": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "I want to exchange this for a larger size.",
+    "example_ka": "ამის უფრო დიდ ზომაზე გაცვლა მინდა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "Warranty",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˈwɔːrənti/",
+    "example_en": "This product comes with a one-year warranty.",
+    "example_ka": "ამ პროდუქტს ერთწლიანი გარანტია აქვს.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "bargain",
+    "georgian": "ხელსაყრელი გარიგება",
+    "pronunciation": "/ˈbɑːrɡɪn/",
+    "example_en": "That's a real bargain.",
+    "example_ka": "ეს ნამდვილი ხელსაყრელი გარიგებაა.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "brand",
+    "georgian": "ბრენდი",
+    "pronunciation": "/brænd/",
+    "example_en": "Which brand do you prefer?",
+    "example_ka": "რომელ ბრენდს ამჯობინებ?",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "bulk",
+    "georgian": "საბითუმო",
+    "pronunciation": "/bʌlk/",
+    "example_en": "Buy rice in bulk.",
+    "example_ka": "ბრინჯი საბითუმო იყიდე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "dairy",
+    "georgian": "რძის პროდუქტები",
+    "pronunciation": "/ˈdeəri/",
+    "example_en": "The dairy section is cold.",
+    "example_ka": "რძის პროდუქტების განყოფილება ცივია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "deli",
+    "georgian": "დელიკატესი",
+    "pronunciation": "/ˈdeli/",
+    "example_en": "Order sliced ham at the deli.",
+    "example_ka": "დელიკატესში დაჭრილი ლორი შეუკვეთე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "expiry",
+    "georgian": "ვადის გასვლა",
+    "pronunciation": "/ɪkˈspaɪəri/",
+    "example_en": "Check the expiry date.",
+    "example_ka": "ვარგისიანობის ვადა შეამოწმე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "generic",
+    "georgian": "უბრენდო",
+    "pronunciation": "/dʒəˈnerɪk/",
+    "example_en": "Generic brands are cheaper.",
+    "example_ka": "უბრენდო პროდუქტები იაფია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "grocer",
+    "georgian": "ბაკალეის მეპატრონე",
+    "pronunciation": "/ˈɡroʊsər/",
+    "example_en": "The grocer was friendly.",
+    "example_ka": "ბაკალეის მეპატრონე მეგობრული იყო.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "markdown",
+    "georgian": "ფასის შემცირება",
+    "pronunciation": "/ˈmɑːrkdaʊn/",
+    "example_en": "Items on markdown are cheap.",
+    "example_ka": "ფასშემცირებული ნივთები იაფია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "pantry",
+    "georgian": "საკუჭნაო",
+    "pronunciation": "/ˈpæntri/",
+    "example_en": "Stock the pantry.",
+    "example_ka": "საკუჭნაო შეავსე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "perishable",
+    "georgian": "მალფუჭებადი",
+    "pronunciation": "/ˈperɪʃəbl/",
+    "example_en": "Keep perishables cold.",
+    "example_ka": "მალფუჭებადი პროდუქტები ცივად შეინახე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "produce",
+    "georgian": "ბოსტნეული და ხილი",
+    "pronunciation": "/ˈprɒdjuːs/",
+    "example_en": "Fresh produce is healthy.",
+    "example_ka": "ახალი ბოსტნეული და ხილი ჯანსაღია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "restock",
+    "georgian": "შევსება",
+    "pronunciation": "/riːˈstɒk/",
+    "example_en": "They restocked the shelves.",
+    "example_ka": "თაროები შეავსეს.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "sample",
+    "georgian": "ნიმუში",
+    "pronunciation": "/ˈsæmpl/",
+    "example_en": "Try a free sample.",
+    "example_ka": "უფასო ნიმუში სცადე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "seasonal",
+    "georgian": "სეზონური",
+    "pronunciation": "/ˈsiːzənl/",
+    "example_en": "Buy seasonal fruits.",
+    "example_ka": "სეზონური ხილი იყიდე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "shopper",
+    "georgian": "მყიდველი",
+    "pronunciation": "/ˈʃɒpər/",
+    "example_en": "The store was full of shoppers.",
+    "example_ka": "მაღაზია მყიდველებით სავსე იყო.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "trolley",
+    "georgian": "ეტლი",
+    "pronunciation": "/ˈtrɒli/",
+    "example_en": "Push the trolley.",
+    "example_ka": "ეტლი უბიძგე.",
+    "category": "supermarket-grocery",
+    "level": "A1"
+  },
+  {
+    "english": "vendor",
+    "georgian": "გამყიდველი",
+    "pronunciation": "/ˈvendər/",
+    "example_en": "Buy from the street vendor.",
+    "example_ka": "ქუჩის გამყიდველისგან იყიდე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "wholesale",
+    "georgian": "საბითუმო",
+    "pronunciation": "/ˈhoʊlseɪl/",
+    "example_en": "They sell wholesale.",
+    "example_ka": "ისინი საბითუმო ყიდიან.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "clearance",
+    "georgian": "გასუფთავება",
+    "pronunciation": "/ˈklɪərəns/",
+    "example_en": "Check the clearance section.",
+    "example_ka": "გასუფთავების განყოფილება ნახე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "stockroom",
+    "georgian": "საწყობი",
+    "pronunciation": "/ˈstɒkruːm/",
+    "example_en": "Items are in the stockroom.",
+    "example_ka": "ნივთები საწყობშია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "inventory",
+    "georgian": "ინვენტარი",
+    "pronunciation": "/ˈɪnvəntɔːri/",
+    "example_en": "Check the inventory.",
+    "example_ka": "ინვენტარი შეამოწმე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "preservative",
+    "georgian": "კონსერვანტი",
+    "pronunciation": "/prɪˈzɜːrvətɪv/",
+    "example_en": "This food has no preservatives.",
+    "example_ka": "ამ საკვებში კონსერვანტები არ არის.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "additive",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈædɪtɪv/",
+    "example_en": "Avoid food additives.",
+    "example_ka": "საკვების დანამატებს მოერიდე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "allergen",
+    "georgian": "ალერგენი",
+    "pronunciation": "/ˈælərdʒən/",
+    "example_en": "Check for allergens.",
+    "example_ka": "ალერგენები შეამოწმე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "biodegradable",
+    "georgian": "ბიოდეგრადირებადი",
+    "pronunciation": "/ˌbaɪoʊdɪˈɡreɪdəbl/",
+    "example_en": "Use biodegradable bags.",
+    "example_ka": "ბიოდეგრადირებადი ჩანთები გამოიყენე.",
+    "category": "supermarket-grocery",
+    "level": "B2"
+  },
+  {
+    "english": "compostable",
+    "georgian": "კომპოსტირებადი",
+    "pronunciation": "/kɒmˈpɒstəbl/",
+    "example_en": "These bags are compostable.",
+    "example_ka": "ეს ჩანთები კომპოსტირებადია.",
+    "category": "supermarket-grocery",
+    "level": "B2"
+  },
+  {
+    "english": "recyclable",
+    "georgian": "გადამუშავებადი",
+    "pronunciation": "/riːˈsaɪkləbl/",
+    "example_en": "This package is recyclable.",
+    "example_ka": "ეს შეფუთვა გადამუშავებადია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "sustainable",
+    "georgian": "მდგრადი",
+    "pronunciation": "/səˈsteɪnəbl/",
+    "example_en": "Buy sustainable products.",
+    "example_ka": "მდგრადი პროდუქტები იყიდე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "reusable",
+    "georgian": "მრავალჯერადი",
+    "pronunciation": "/riːˈjuːzəbl/",
+    "example_en": "Bring a reusable bag.",
+    "example_ka": "მრავალჯერადი ჩანთა წაიღე.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "staple",
+    "georgian": "აუცილებელი",
+    "pronunciation": "/ˈsteɪpl/",
+    "example_en": "Rice is a kitchen staple.",
+    "example_ka": "ბრინჯი სამზარეულოს აუცილებელი პროდუქტია.",
+    "category": "supermarket-grocery",
+    "level": "A2"
+  },
+  {
+    "english": "condiment",
+    "georgian": "სანელებელი",
+    "pronunciation": "/ˈkɒndɪmənt/",
+    "example_en": "Add condiments to your food.",
+    "example_ka": "საკვებს სანელებელი დაუმატე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "delicatessen",
+    "georgian": "დელიკატესების მაღაზია",
+    "pronunciation": "/ˌdelɪkəˈtesn/",
+    "example_en": "Visit the delicatessen.",
+    "example_ka": "დელიკატესების მაღაზიას ეწვიე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "emulsifier",
+    "georgian": "ემულგატორი",
+    "pronunciation": "/ɪˈmʌlsɪfaɪər/",
+    "example_en": "This contains an emulsifier.",
+    "example_ka": "ეს ემულგატორს შეიცავს.",
+    "category": "supermarket-grocery",
+    "level": "B2"
+  },
+  {
+    "english": "fortified",
+    "georgian": "გამაგრებული",
+    "pronunciation": "/ˈfɔːrtɪfaɪd/",
+    "example_en": "Fortified milk has extra vitamins.",
+    "example_ka": "გამაგრებულ რძეში დამატებითი ვიტამინებია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "gluten",
+    "georgian": "გლუტენი",
+    "pronunciation": "/ˈɡluːtn/",
+    "example_en": "This bread is gluten-free.",
+    "example_ka": "ეს პური უგლუტენოა.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "hydrogenated",
+    "georgian": "ჰიდრირებული",
+    "pronunciation": "/haɪˈdrɒdʒəneɪtɪd/",
+    "example_en": "Avoid hydrogenated oils.",
+    "example_ka": "ჰიდრირებულ ზეთებს მოერიდე.",
+    "category": "supermarket-grocery",
+    "level": "C1"
+  },
+  {
+    "english": "impulse",
+    "georgian": "იმპულსური",
+    "pronunciation": "/ˈɪmpʌls/",
+    "example_en": "Avoid impulse buying.",
+    "example_ka": "იმპულსურ ყიდვას მოერიდე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "lactose",
+    "georgian": "ლაქტოზა",
+    "pronunciation": "/ˈlæktoʊs/",
+    "example_en": "She is lactose intolerant.",
+    "example_ka": "მას ლაქტოზის აუტანლობა აქვს.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "markup",
+    "georgian": "ფასის მატება",
+    "pronunciation": "/ˈmɑːrkʌp/",
+    "example_en": "The markup on goods is high.",
+    "example_ka": "საქონელზე ფასის მატება მაღალია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "nutrient",
+    "georgian": "საკვები ნივთიერება",
+    "pronunciation": "/ˈnjuːtriənt/",
+    "example_en": "This food is rich in nutrients.",
+    "example_ka": "ეს საკვები საკვებ ნივთიერებებით მდიდარია.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "pasteurized",
+    "georgian": "პასტერიზებული",
+    "pronunciation": "/ˈpæstʃəraɪzd/",
+    "example_en": "Buy pasteurized milk.",
+    "example_ka": "პასტერიზებული რძე იყიდე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "sachet",
+    "georgian": "პაკეტი",
+    "pronunciation": "/sæˈʃeɪ/",
+    "example_en": "Use one sachet per cup.",
+    "example_ka": "ჭიქაზე ერთი პაკეტი გამოიყენე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  },
+  {
+    "english": "sweetener",
+    "georgian": "დამტკბარი",
+    "pronunciation": "/ˈswiːtnər/",
+    "example_en": "Use a sugar sweetener.",
+    "example_ka": "შაქრის დამტკბარი გამოიყენე.",
+    "category": "supermarket-grocery",
+    "level": "B1"
+  }
 ]

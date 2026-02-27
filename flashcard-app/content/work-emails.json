@@ -1,52 +1,1802 @@
 [
-  {"english":"Dear Sir/Madam","georgian":"ბატონო/ქალბატონო","pronunciation":"/dɪər sɜːr ˈmædəm/","example_en":"Dear Sir/Madam, I am writing regarding your job posting.","example_ka":"ბატონო/ქალბატონო, ვწერ თქვენს სამუშაო განცხადებასთან დაკავშირებით.","category":"work-emails","level":"A2"},
-  {"english":"I am writing to inquire","georgian":"ვწერ ინფორმაციის მისაღებად","pronunciation":"/aɪ æm ˈraɪtɪŋ tə ɪnˈkwaɪər/","example_en":"I am writing to inquire about the available positions.","example_ka":"ვწერ ხელმისაწვდომი პოზიციების შესახებ ინფორმაციის მისაღებად.","category":"work-emails","level":"B1"},
-  {"english":"Please find attached","georgian":"გთხოვთ იხილოთ თანდართული","pronunciation":"/pliːz faɪnd əˈtætʃt/","example_en":"Please find attached my CV and cover letter.","example_ka":"გთხოვთ იხილოთ თანდართული ჩემი CV და სამოტივაციო წერილი.","category":"work-emails","level":"B1"},
-  {"english":"I look forward to hearing from you","georgian":"მოუთმენლად ველი თქვენს პასუხს","pronunciation":"/aɪ lʊk ˈfɔːrwərd tə ˈhɪərɪŋ frɒm juː/","example_en":"I look forward to hearing from you at your earliest convenience.","example_ka":"მოუთმენლად ველი თქვენს პასუხს, როცა მოგეხერხებათ.","category":"work-emails","level":"B1"},
-  {"english":"CC (carbon copy)","georgian":"ასლი / CC","pronunciation":"/siː siː/","example_en":"Please CC your manager on this email.","example_ka":"გთხოვთ ამ ელ-ფოსტაზე მენეჯერს CC-ში დაამატოთ.","category":"work-emails","level":"A2"},
-  {"english":"BCC (blind carbon copy)","georgian":"ფარული ასლი / BCC","pronunciation":"/biː siː siː/","example_en":"Use BCC when sending to a large group.","example_ka":"დიდ ჯგუფს როცა აგზავნით, BCC გამოიყენეთ.","category":"work-emails","level":"B1"},
-  {"english":"subject line","georgian":"საგნის ველი / თემის ხაზი","pronunciation":"/ˈsʌbdʒekt laɪn/","example_en":"Write a clear subject line so the recipient knows the topic.","example_ka":"მკაფიო საგნის ველი დაწერე, რომ მიმღებმა თემა იცოდეს.","category":"work-emails","level":"A2"},
-  {"english":"follow up","georgian":"გაგრძელების წერილი / ფოლოუ აფი","pronunciation":"/ˈfɒloʊ ʌp/","example_en":"I wanted to follow up on my previous email.","example_ka":"ჩემს წინა ელ-ფოსტაზე გაგრძელების წერილი მინდოდა.","category":"work-emails","level":"B1"},
-  {"english":"deadline","georgian":"ბოლო ვადა / დედლაინი","pronunciation":"/ˈdedlaɪn/","example_en":"The deadline for the report is Friday.","example_ka":"ანგარიშის ბოლო ვადა პარასკევია.","category":"work-emails","level":"A2"},
-  {"english":"ASAP","georgian":"რაც შეიძლება მალე","pronunciation":"/eɪ es eɪ piː/","example_en":"Please reply ASAP — this is urgent.","example_ka":"გთხოვთ რაც შეიძლება მალე უპასუხოთ — ეს სასწრაფოა.","category":"work-emails","level":"A2"},
-  {"english":"Kind regards","georgian":"პატივისცემით","pronunciation":"/kaɪnd rɪˈɡɑːrdz/","example_en":"Kind regards, Nino Kapanadze.","example_ka":"პატივისცემით, ნინო კაპანაძე.","category":"work-emails","level":"A2"},
-  {"english":"Best regards","georgian":"საუკეთესო სურვილებით","pronunciation":"/best rɪˈɡɑːrdz/","example_en":"Best regards, Giorgi Beridze.","example_ka":"საუკეთესო სურვილებით, გიორგი ბერიძე.","category":"work-emails","level":"A2"},
-  {"english":"Sincerely","georgian":"პატივისცემით / გულწრფელად","pronunciation":"/sɪnˈsɪrli/","example_en":"Sincerely, Luka Meladze.","example_ka":"პატივისცემით, ლუკა მელაძე.","category":"work-emails","level":"A2"},
-  {"english":"To whom it may concern","georgian":"ვისაც ეხება","pronunciation":"/tə huːm ɪt meɪ kənˈsɜːrn/","example_en":"To whom it may concern, I am requesting information about...","example_ka":"ვისაც ეხება, ვითხოვ ინფორმაციას...","category":"work-emails","level":"B1"},
-  {"english":"attachment","georgian":"თანდართული ფაილი","pronunciation":"/əˈtætʃmənt/","example_en":"I forgot to include the attachment — sorry!","example_ka":"თანდართული ფაილის დამატება დამავიწყდა — ბოდიში!","category":"work-emails","level":"A2"},
-  {"english":"reply all","georgian":"ყველას პასუხი","pronunciation":"/rɪˈplaɪ ɔːl/","example_en":"Don't reply all unless everyone needs to see your response.","example_ka":"ყველას ნუ უპასუხებ, თუ ყველას არ სჭირდება შენი პასუხის ნახვა.","category":"work-emails","level":"A2"},
-  {"english":"forward","georgian":"გადაგზავნა","pronunciation":"/ˈfɔːrwərd/","example_en":"Can you forward this email to the HR department?","example_ka":"შეგიძლია ეს ელ-ფოსტა HR განყოფილებას გადაუგზავნო?","category":"work-emails","level":"A2"},
-  {"english":"I apologize for the delay","georgian":"ბოდიშს ვიხდი შეფერხებისთვის","pronunciation":"/aɪ əˈpɒlədʒaɪz fɔːr ðə dɪˈleɪ/","example_en":"I apologize for the delay in responding to your email.","example_ka":"ბოდიშს ვიხდი ელ-ფოსტაზე პასუხის შეფერხებისთვის.","category":"work-emails","level":"B1"},
-  {"english":"as per our conversation","georgian":"როგორც ჩვენს საუბარში აღვნიშნეთ","pronunciation":"/æz pɜːr ˈaʊər ˌkɒnvərˈseɪʃən/","example_en":"As per our conversation, I'm sending the updated document.","example_ka":"როგორც ჩვენს საუბარში აღვნიშნეთ, განახლებულ დოკუმენტს ვაგზავნი.","category":"work-emails","level":"B1"},
-  {"english":"please be advised","georgian":"გთხოვთ გაითვალისწინოთ","pronunciation":"/pliːz biː ədˈvaɪzd/","example_en":"Please be advised that the meeting has been rescheduled.","example_ka":"გთხოვთ გაითვალისწინოთ, რომ შეხვედრა გადაიდო.","category":"work-emails","level":"B1"},
-  {"english":"at your earliest convenience","georgian":"როცა მოგეხერხებათ","pronunciation":"/æt jɔːr ˈɜːrliəst kənˈviːniəns/","example_en":"Please reply at your earliest convenience.","example_ka":"გთხოვთ უპასუხოთ, როცა მოგეხერხებათ.","category":"work-emails","level":"B1"},
-  {"english":"urgent","georgian":"სასწრაფო / გადაუდებელი","pronunciation":"/ˈɜːrdʒənt/","example_en":"This matter is urgent — please respond today.","example_ka":"ეს საკითხი სასწრაფოა — გთხოვთ დღეს უპასუხოთ.","category":"work-emails","level":"A2"},
-  {"english":"agenda","georgian":"დღის წესრიგი","pronunciation":"/əˈdʒendə/","example_en":"Please review the agenda before the meeting.","example_ka":"გთხოვთ შეხვედრამდე დღის წესრიგი გადახედოთ.","category":"work-emails","level":"B1"},
-  {"english":"minutes (of a meeting)","georgian":"შეხვედრის ოქმი","pronunciation":"/ˈmɪnɪts/","example_en":"I'll send the minutes after the meeting.","example_ka":"შეხვედრის ოქმს შეხვედრის შემდეგ გამოვაგზავნი.","category":"work-emails","level":"B1"},
-  {"english":"action items","georgian":"შესასრულებელი ამოცანები","pronunciation":"/ˈækʃən ˈaɪtəmz/","example_en":"Here are the action items from today's meeting.","example_ka":"აქ არის დღევანდელი შეხვედრის შესასრულებელი ამოცანები.","category":"work-emails","level":"B2"},
-  {"english":"out of office","georgian":"ოფისის გარეთ / შვებულებაში","pronunciation":"/aʊt əv ˈɒfɪs/","example_en":"I'll be out of office from March 1 to March 10.","example_ka":"1 მარტიდან 10 მარტამდე ოფისის გარეთ ვიქნები.","category":"work-emails","level":"A2"},
-  {"english":"auto-reply","georgian":"ავტომატური პასუხი","pronunciation":"/ˈɔːtoʊ rɪˈplaɪ/","example_en":"Set up an auto-reply when you're on vacation.","example_ka":"შვებულებაში რომ ხარ, ავტომატური პასუხი დააყენე.","category":"work-emails","level":"A2"},
-  {"english":"I would appreciate it if","georgian":"მადლობელი ვიქნებოდი, თუ","pronunciation":"/aɪ wʊd əˈpriːʃieɪt ɪt ɪf/","example_en":"I would appreciate it if you could send me the report.","example_ka":"მადლობელი ვიქნებოდი, თუ ანგარიშს გამომიგზავნიდით.","category":"work-emails","level":"B1"},
-  {"english":"Could you please","georgian":"შეგიძლიათ გთხოვთ","pronunciation":"/kʊd juː pliːz/","example_en":"Could you please confirm the meeting time?","example_ka":"შეგიძლიათ გთხოვთ შეხვედრის დრო დაადასტუროთ?","category":"work-emails","level":"A2"},
-  {"english":"Thank you for your prompt reply","georgian":"მადლობა სწრაფი პასუხისთვის","pronunciation":"/θæŋk juː fɔːr jɔːr prɒmpt rɪˈplaɪ/","example_en":"Thank you for your prompt reply — I really appreciate it.","example_ka":"მადლობა სწრაფი პასუხისთვის — ძალიან ვაფასებ.","category":"work-emails","level":"B1"},
-  {"english":"inbox","georgian":"შემოსულები","pronunciation":"/ˈɪnbɒks/","example_en":"Check your inbox — I sent the document.","example_ka":"შემოსულები შეამოწმე — დოკუმენტი გამოვაგზავნე.","category":"work-emails","level":"A2"},
-  {"english":"draft","georgian":"მონახაზი / დრაფტი","pronunciation":"/dræft/","example_en":"I saved the email as a draft — I'll finish it later.","example_ka":"ელ-ფოსტა მონახაზად შევინახე — მოგვიანებით დავასრულებ.","category":"work-emails","level":"A2"},
-  {"english":"spam","georgian":"სპამი / არასასურველი წერილი","pronunciation":"/spæm/","example_en":"Check your spam folder — my email might be there.","example_ka":"სპამის საქაღალდე შეამოწმე — ჩემი წერილი იქ შეიძლება იყოს.","category":"work-emails","level":"A2"},
-  {"english":"newsletter","georgian":"საინფორმაციო ბიულეტენი","pronunciation":"/ˈnjuːzletər/","example_en":"Subscribe to our newsletter for weekly updates.","example_ka":"გამოიწერეთ ჩვენი საინფორმაციო ბიულეტენი ყოველკვირეული სიახლეებისთვის.","category":"work-emails","level":"B1"},
-  {"english":"unsubscribe","georgian":"გამოწერის გაუქმება","pronunciation":"/ˌʌnsəbˈskraɪb/","example_en":"Click here to unsubscribe from this mailing list.","example_ka":"ამ საფოსტო სიიდან გამოწერის გასაუქმებლად აქ დააჭირეთ.","category":"work-emails","level":"B1"},
-  {"english":"I am reaching out to","georgian":"მოგმართავთ / ვწერ","pronunciation":"/aɪ æm ˈriːtʃɪŋ aʊt tə/","example_en":"I am reaching out to discuss a potential partnership.","example_ka":"მოგმართავთ შესაძლო პარტნიორობის განსახილველად.","category":"work-emails","level":"B1"},
-  {"english":"per your request","georgian":"თქვენი მოთხოვნის შესაბამისად","pronunciation":"/pɜːr jɔːr rɪˈkwest/","example_en":"Per your request, I am sending the updated files.","example_ka":"თქვენი მოთხოვნის შესაბამისად, განახლებულ ფაილებს ვაგზავნი.","category":"work-emails","level":"B1"},
-  {"english":"please do not hesitate to contact me","georgian":"ნუ მოგერიდებათ დამიკავშირდეთ","pronunciation":"/pliːz duː nɒt ˈhezɪteɪt tə ˈkɒntækt miː/","example_en":"Please do not hesitate to contact me if you have questions.","example_ka":"ნუ მოგერიდებათ დამიკავშირდეთ, თუ კითხვები გაქვთ.","category":"work-emails","level":"B1"},
-  {"english":"meeting request","georgian":"შეხვედრის მოთხოვნა","pronunciation":"/ˈmiːtɪŋ rɪˈkwest/","example_en":"I sent you a meeting request for 3 PM.","example_ka":"15:00 საათზე შეხვედრის მოთხოვნა გამოგიგზავნეთ.","category":"work-emails","level":"A2"},
-  {"english":"reschedule","georgian":"გადატანა / ხელახლა დანიშვნა","pronunciation":"/riːˈskedʒuːl/","example_en":"Can we reschedule the meeting to next week?","example_ka":"შეგვიძლია შეხვედრა შემდეგ კვირაზე გადავიტანოთ?","category":"work-emails","level":"B1"},
-  {"english":"signature","georgian":"ხელმოწერა","pronunciation":"/ˈsɪɡnətʃər/","example_en":"Don't forget to add your email signature.","example_ka":"ელ-ფოსტის ხელმოწერის დამატება არ დაგავიწყდეს.","category":"work-emails","level":"A2"},
-  {"english":"proofread","georgian":"გადამოწმება / კორექტურა","pronunciation":"/ˈpruːfriːd/","example_en":"Always proofread your emails before sending.","example_ka":"ყოველთვის გადაამოწმე ელ-ფოსტა გაგზავნამდე.","category":"work-emails","level":"B1"},
-  {"english":"typo","georgian":"შეცდომა აკრეფისას","pronunciation":"/ˈtaɪpoʊ/","example_en":"Sorry for the typo in my previous email.","example_ka":"ბოდიში წინა ელ-ფოსტაში აკრეფის შეცდომისთვის.","category":"work-emails","level":"A2"},
-  {"english":"FYI (for your information)","georgian":"თქვენი ინფორმაციისთვის","pronunciation":"/ef waɪ aɪ/","example_en":"FYI, the project deadline has been moved to Friday.","example_ka":"თქვენი ინფორმაციისთვის, პროექტის ვადა პარასკევზე გადაიდო.","category":"work-emails","level":"A2"},
-  {"english":"ETA (estimated time of arrival)","georgian":"სავარაუდო ჩამოსვლის დრო","pronunciation":"/iː tiː eɪ/","example_en":"What's the ETA for the delivery?","example_ka":"რა არის მიწოდების სავარაუდო დრო?","category":"work-emails","level":"B1"},
-  {"english":"touch base","georgian":"კონტაქტის დამყარება / შეხვედრა","pronunciation":"/tʌtʃ beɪs/","example_en":"Let's touch base next week about the project.","example_ka":"შემდეგ კვირას პროექტის თემაზე დავუკავშირდეთ ერთმანეთს.","category":"work-emails","level":"B2"},
-  {"english":"loop someone in","georgian":"ვიღაცის ჩართვა","pronunciation":"/luːp ˈsʌmwʌn ɪn/","example_en":"I'll loop in the marketing team on this email.","example_ka":"მარკეტინგის გუნდს ამ ელ-ფოსტაში ჩავრთავ.","category":"work-emails","level":"B2"},
-  {"english":"heads up","georgian":"წინასწარი გაფრთხილება","pronunciation":"/hedz ʌp/","example_en":"Just a heads up — the client meeting is at 2 PM, not 3.","example_ka":"წინასწარ გაფრთხილებთ — კლიენტის შეხვედრა 14:00-ზეა, და არა 15:00-ზე.","category":"work-emails","level":"B1"},
-  {"english":"noted","georgian":"გასაგებია / მიღებულია","pronunciation":"/ˈnoʊtɪd/","example_en":"Noted — I will make the changes today.","example_ka":"გასაგებია — ცვლილებებს დღეს შევიტან.","category":"work-emails","level":"A2"},
-  {"english":"Please acknowledge receipt","georgian":"გთხოვთ დაადასტუროთ მიღება","pronunciation":"/pliːz əkˈnɒlɪdʒ rɪˈsiːt/","example_en":"Please acknowledge receipt of this email.","example_ka":"გთხოვთ ამ ელ-ფოსტის მიღება დაადასტუროთ.","category":"work-emails","level":"B2"}
+  {
+    "english": "deadline",
+    "georgian": "ბოლო ვადა / დედლაინი",
+    "pronunciation": "/ˈdedlaɪn/",
+    "example_en": "The deadline for the report is Friday.",
+    "example_ka": "ანგარიშის ბოლო ვადა პარასკევია.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "ASAP",
+    "georgian": "რაც შეიძლება მალე",
+    "pronunciation": "/eɪ es eɪ piː/",
+    "example_en": "Please reply ASAP — this is urgent.",
+    "example_ka": "გთხოვთ რაც შეიძლება მალე უპასუხოთ — ეს სასწრაფოა.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "Sincerely",
+    "georgian": "პატივისცემით / გულწრფელად",
+    "pronunciation": "/sɪnˈsɪrli/",
+    "example_en": "Sincerely, Luka Meladze.",
+    "example_ka": "პატივისცემით, ლუკა მელაძე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "attachment",
+    "georgian": "თანდართული ფაილი",
+    "pronunciation": "/əˈtætʃmənt/",
+    "example_en": "I forgot to include the attachment — sorry!",
+    "example_ka": "თანდართული ფაილის დამატება დამავიწყდა — ბოდიში!",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "forward",
+    "georgian": "გადაგზავნა",
+    "pronunciation": "/ˈfɔːrwərd/",
+    "example_en": "Can you forward this email to the HR department?",
+    "example_ka": "შეგიძლია ეს ელ-ფოსტა HR განყოფილებას გადაუგზავნო?",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "urgent",
+    "georgian": "სასწრაფო / გადაუდებელი",
+    "pronunciation": "/ˈɜːrdʒənt/",
+    "example_en": "This matter is urgent — please respond today.",
+    "example_ka": "ეს საკითხი სასწრაფოა — გთხოვთ დღეს უპასუხოთ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "agenda",
+    "georgian": "დღის წესრიგი",
+    "pronunciation": "/əˈdʒendə/",
+    "example_en": "Please review the agenda before the meeting.",
+    "example_ka": "გთხოვთ შეხვედრამდე დღის წესრიგი გადახედოთ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "auto-reply",
+    "georgian": "ავტომატური პასუხი",
+    "pronunciation": "/ˈɔːtoʊ rɪˈplaɪ/",
+    "example_en": "Set up an auto-reply when you're on vacation.",
+    "example_ka": "შვებულებაში რომ ხარ, ავტომატური პასუხი დააყენე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "inbox",
+    "georgian": "შემოსულები",
+    "pronunciation": "/ˈɪnbɒks/",
+    "example_en": "Check your inbox — I sent the document.",
+    "example_ka": "შემოსულები შეამოწმე — დოკუმენტი გამოვაგზავნე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "draft",
+    "georgian": "მონახაზი / დრაფტი",
+    "pronunciation": "/dræft/",
+    "example_en": "I saved the email as a draft — I'll finish it later.",
+    "example_ka": "ელ-ფოსტა მონახაზად შევინახე — მოგვიანებით დავასრულებ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "spam",
+    "georgian": "სპამი / არასასურველი წერილი",
+    "pronunciation": "/spæm/",
+    "example_en": "Check your spam folder — my email might be there.",
+    "example_ka": "სპამის საქაღალდე შეამოწმე — ჩემი წერილი იქ შეიძლება იყოს.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "newsletter",
+    "georgian": "საინფორმაციო ბიულეტენი",
+    "pronunciation": "/ˈnjuːzletər/",
+    "example_en": "Subscribe to our newsletter for weekly updates.",
+    "example_ka": "გამოიწერეთ ჩვენი საინფორმაციო ბიულეტენი ყოველკვირეული სიახლეებისთვის.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "unsubscribe",
+    "georgian": "გამოწერის გაუქმება",
+    "pronunciation": "/ˌʌnsəbˈskraɪb/",
+    "example_en": "Click here to unsubscribe from this mailing list.",
+    "example_ka": "ამ საფოსტო სიიდან გამოწერის გასაუქმებლად აქ დააჭირეთ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "reschedule",
+    "georgian": "გადატანა / ხელახლა დანიშვნა",
+    "pronunciation": "/riːˈskedʒuːl/",
+    "example_en": "Can we reschedule the meeting to next week?",
+    "example_ka": "შეგვიძლია შეხვედრა შემდეგ კვირაზე გადავიტანოთ?",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "signature",
+    "georgian": "ხელმოწერა",
+    "pronunciation": "/ˈsɪɡnətʃər/",
+    "example_en": "Don't forget to add your email signature.",
+    "example_ka": "ელ-ფოსტის ხელმოწერის დამატება არ დაგავიწყდეს.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "proofread",
+    "georgian": "გადამოწმება / კორექტურა",
+    "pronunciation": "/ˈpruːfriːd/",
+    "example_en": "Always proofread your emails before sending.",
+    "example_ka": "ყოველთვის გადაამოწმე ელ-ფოსტა გაგზავნამდე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "typo",
+    "georgian": "შეცდომა აკრეფისას",
+    "pronunciation": "/ˈtaɪpoʊ/",
+    "example_en": "Sorry for the typo in my previous email.",
+    "example_ka": "ბოდიში წინა ელ-ფოსტაში აკრეფის შეცდომისთვის.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "noted",
+    "georgian": "გასაგებია / მიღებულია",
+    "pronunciation": "/ˈnoʊtɪd/",
+    "example_en": "Noted — I will make the changes today.",
+    "example_ka": "გასაგებია — ცვლილებებს დღეს შევიტან.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "subject",
+    "georgian": "სათაური",
+    "pronunciation": "/ˈsʌbdʒɪkt/",
+    "example_en": "Write a clear subject.",
+    "example_ka": "მკაფიო სათაური დაწერე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "reply",
+    "georgian": "პასუხი",
+    "pronunciation": "/rɪˈplaɪ/",
+    "example_en": "Reply soon.",
+    "example_ka": "მალე უპასუხე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "cc",
+    "georgian": "ასლი",
+    "pronunciation": "/siː siː/",
+    "example_en": "CC your manager.",
+    "example_ka": "მენეჯერს ასლი გაუგზავნე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "recipient",
+    "georgian": "მიმღები",
+    "pronunciation": "/rɪˈsɪpiənt/",
+    "example_en": "Add recipient.",
+    "example_ka": "მიმღები დაამატე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "sender",
+    "georgian": "გამგზავნი",
+    "pronunciation": "/ˈsɛndər/",
+    "example_en": "Unknown sender.",
+    "example_ka": "უცნობი გამგზავნი.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "priority",
+    "georgian": "პრიორიტეტი",
+    "pronunciation": "/praɪˈɒrɪti/",
+    "example_en": "High priority.",
+    "example_ka": "მაღალი პრიორიტეტი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "acknowledge",
+    "georgian": "დადასტურება",
+    "pronunciation": "/əkˈnɒlɪdʒ/",
+    "example_en": "Acknowledge this email.",
+    "example_ka": "ელფოსტა დაადასტურე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "clarify",
+    "georgian": "განმარტება",
+    "pronunciation": "/ˈklærɪfaɪ/",
+    "example_en": "Can you clarify?",
+    "example_ka": "განმარტავთ?",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "confirm",
+    "georgian": "დადასტურება",
+    "pronunciation": "/kənˈfɜːrm/",
+    "example_en": "Confirm receipt.",
+    "example_ka": "მიღება დაადასტურე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "postpone",
+    "georgian": "გადავადება",
+    "pronunciation": "/poʊstˈpoʊn/",
+    "example_en": "Postpone the meeting.",
+    "example_ka": "შეხვედრა გადაადე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "minutes",
+    "georgian": "ოქმი",
+    "pronunciation": "/ˈmɪnɪts/",
+    "example_en": "Meeting minutes.",
+    "example_ka": "შეხვედრის ოქმი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "proposal",
+    "georgian": "წინადადება",
+    "pronunciation": "/prəˈpoʊzəl/",
+    "example_en": "Review the proposal.",
+    "example_ka": "წინადადება გადახედე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "approve",
+    "georgian": "დამტკიცება",
+    "pronunciation": "/əˈpruːv/",
+    "example_en": "Please approve.",
+    "example_ka": "გთხოვთ, დაამტკიცეთ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "reject",
+    "georgian": "უარყოფა",
+    "pronunciation": "/rɪˈdʒɛkt/",
+    "example_en": "Proposal rejected.",
+    "example_ka": "წინადადება უარყოფილია.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "feedback",
+    "georgian": "გამოხმაურება",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "Your feedback.",
+    "example_ka": "თქვენი გამოხმაურება.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "Quick update.",
+    "example_ka": "მოკლე განახლება.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "progress",
+    "georgian": "პროგრესი",
+    "pronunciation": "/ˈprɒɡrɛs/",
+    "example_en": "Report progress.",
+    "example_ka": "პროგრესი მოახსენე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "status",
+    "georgian": "სტატუსი",
+    "pronunciation": "/ˈsteɪtəs/",
+    "example_en": "Project status.",
+    "example_ka": "პროექტის სტატუსი.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "assign",
+    "georgian": "დავალება",
+    "pronunciation": "/əˈsaɪn/",
+    "example_en": "Task assigned.",
+    "example_ka": "დავალება მინიჭებულია.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "delegate",
+    "georgian": "დელეგირება",
+    "pronunciation": "/ˈdɛlɪɡeɪt/",
+    "example_en": "Delegate this.",
+    "example_ka": "ეს გადაანდე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "collaborate",
+    "georgian": "თანამშრომლობა",
+    "pronunciation": "/kəˈlæbəreɪt/",
+    "example_en": "Let's collaborate.",
+    "example_ka": "ვითანამშრომლოთ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "coordinate",
+    "georgian": "კოორდინირება",
+    "pronunciation": "/koʊˈɔːrdɪneɪt/",
+    "example_en": "Coordinate with the team.",
+    "example_ka": "გუნდთან იკოორდინირე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "implement",
+    "georgian": "განხორციელება",
+    "pronunciation": "/ˈɪmplɪmɛnt/",
+    "example_en": "Implement changes.",
+    "example_ka": "ცვლილებები განახორციელე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "finalize",
+    "georgian": "დასრულება",
+    "pronunciation": "/ˈfaɪnəlaɪz/",
+    "example_en": "Finalize the report.",
+    "example_ka": "ანგარიში დაასრულე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "submit",
+    "georgian": "წარდგენა",
+    "pronunciation": "/səbˈmɪt/",
+    "example_en": "Submit by Friday.",
+    "example_ka": "პარასკევამდე წარადგინე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "review",
+    "georgian": "გადახედვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Review the document.",
+    "example_ka": "დოკუმენტს გადახედე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "revise",
+    "georgian": "შესწორება",
+    "pronunciation": "/rɪˈvaɪz/",
+    "example_en": "Revise the draft.",
+    "example_ka": "მონახაზი შეასწორე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "edit",
+    "georgian": "რედაქტირება",
+    "pronunciation": "/ˈɛdɪt/",
+    "example_en": "Edit this file.",
+    "example_ka": "ფაილი დაარედაქტირე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "format",
+    "georgian": "ფორმატი",
+    "pronunciation": "/ˈfɔːrmæt/",
+    "example_en": "Use correct format.",
+    "example_ka": "სწორი ფორმატი გამოიყენე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "template",
+    "georgian": "შაბლონი",
+    "pronunciation": "/ˈtɛmplɪt/",
+    "example_en": "Use the template.",
+    "example_ka": "შაბლონი გამოიყენე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "greeting",
+    "georgian": "მისალმება",
+    "pronunciation": "/ˈɡriːtɪŋ/",
+    "example_en": "Professional greeting.",
+    "example_ka": "პროფესიონალური მისალმება.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "regards",
+    "georgian": "პატივისცემით",
+    "pronunciation": "/rɪˈɡɑːrdz/",
+    "example_en": "Kind regards.",
+    "example_ka": "პატივისცემით.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "inquire",
+    "georgian": "შეკითხვა",
+    "pronunciation": "/ɪnˈkwaɪər/",
+    "example_en": "I am writing to inquire.",
+    "example_ka": "შეკითხვით მოგმართავთ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "request",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/rɪˈkwɛst/",
+    "example_en": "I request approval.",
+    "example_ka": "თანხმობას ვითხოვ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "respond",
+    "georgian": "პასუხი",
+    "pronunciation": "/rɪˈspɒnd/",
+    "example_en": "Respond promptly.",
+    "example_ka": "დროულად უპასუხე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "inform",
+    "georgian": "ინფორმირება",
+    "pronunciation": "/ɪnˈfɔːrm/",
+    "example_en": "I want to inform you.",
+    "example_ka": "გატყობინებთ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "advise",
+    "georgian": "რჩევა",
+    "pronunciation": "/ədˈvaɪz/",
+    "example_en": "Please advise.",
+    "example_ka": "გთხოვთ, მირჩიეთ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "suggest",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/səˈdʒɛst/",
+    "example_en": "I suggest we meet.",
+    "example_ka": "შეხვედრას ვთავაზობ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "recommend",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrɛkəˈmɛnd/",
+    "example_en": "I recommend this.",
+    "example_ka": "ამას ვურჩევ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "emphasize",
+    "georgian": "ხაზგასმა",
+    "pronunciation": "/ˈɛmfəsaɪz/",
+    "example_en": "I want to emphasize.",
+    "example_ka": "ხაზგასმა მსურს.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "highlight",
+    "georgian": "გამოკვეთა",
+    "pronunciation": "/ˈhaɪlaɪt/",
+    "example_en": "Highlight key issues.",
+    "example_ka": "მთავარი საკითხები გამოკვეთე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "outline",
+    "georgian": "მონახაზი",
+    "pronunciation": "/ˈaʊtlaɪn/",
+    "example_en": "Outline the plan.",
+    "example_ka": "გეგმის მონახაზი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "summarize",
+    "georgian": "შეჯამება",
+    "pronunciation": "/ˈsʌməraɪz/",
+    "example_en": "Let me summarize.",
+    "example_ka": "შევაჯამო.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "conclude",
+    "georgian": "დასკვნა",
+    "pronunciation": "/kənˈkluːd/",
+    "example_en": "To conclude.",
+    "example_ka": "დასასრულს.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "apologize",
+    "georgian": "ბოდიში",
+    "pronunciation": "/əˈpɒlədʒaɪz/",
+    "example_en": "I apologize for the delay.",
+    "example_ka": "დაგვიანებისთვის ვწუხვარ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "appreciate",
+    "georgian": "დაფასება",
+    "pronunciation": "/əˈpriːʃieɪt/",
+    "example_en": "I appreciate your help.",
+    "example_ka": "დახმარებას ვაფასებ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "grateful",
+    "georgian": "მადლიერი",
+    "pronunciation": "/ˈɡreɪtfəl/",
+    "example_en": "I am grateful.",
+    "example_ka": "მადლიერი ვარ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "convenient",
+    "georgian": "მოსახერხებელი",
+    "pronunciation": "/kənˈviːniənt/",
+    "example_en": "Convenient time.",
+    "example_ka": "მოსახერხებელი დრო.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈʃɛdjuːl/",
+    "example_en": "Schedule a call.",
+    "example_ka": "ზარი დანიშნე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "meeting",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/ˈmiːtɪŋ/",
+    "example_en": "Meeting at 3 PM.",
+    "example_ka": "შეხვედრა 3 საათზე.",
+    "category": "work-emails",
+    "level": "A1"
+  },
+  {
+    "english": "conference",
+    "georgian": "კონფერენცია",
+    "pronunciation": "/ˈkɒnfərəns/",
+    "example_en": "Conference call.",
+    "example_ka": "საკონფერენციო ზარი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "presentation",
+    "georgian": "პრეზენტაცია",
+    "pronunciation": "/ˌprɛzənˈteɪʃən/",
+    "example_en": "Prepare presentation.",
+    "example_ka": "პრეზენტაცია მოამზადე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "report",
+    "georgian": "ანგარიში",
+    "pronunciation": "/rɪˈpɔːrt/",
+    "example_en": "Report attached.",
+    "example_ka": "ანგარიში თანდართულია.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "document",
+    "georgian": "დოკუმენტი",
+    "pronunciation": "/ˈdɒkjʊmənt/",
+    "example_en": "Sign the document.",
+    "example_ka": "დოკუმენტზე ხელი მოაწერე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "spreadsheet",
+    "georgian": "ცხრილი",
+    "pronunciation": "/ˈsprɛdʃiːt/",
+    "example_en": "Update spreadsheet.",
+    "example_ka": "ცხრილი განაახლე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "data",
+    "georgian": "მონაცემები",
+    "pronunciation": "/ˈdeɪtə/",
+    "example_en": "Analyze data.",
+    "example_ka": "მონაცემები გააანალიზე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "Budget approved.",
+    "example_ka": "ბიუჯეტი დამტკიცდა.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "expense",
+    "georgian": "ხარჯი",
+    "pronunciation": "/ɪkˈspɛns/",
+    "example_en": "Submit expenses.",
+    "example_ka": "ხარჯები წარადგინე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "Send the invoice.",
+    "example_ka": "ინვოისი გაგზავნე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "quote",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/kwoʊt/",
+    "example_en": "Request a quote.",
+    "example_ka": "შეთავაზება მოითხოვე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "estimate",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈɛstɪmət/",
+    "example_en": "Provide estimate.",
+    "example_ka": "შეფასება მიაწოდე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "contract",
+    "georgian": "კონტრაქტი",
+    "pronunciation": "/ˈkɒntrækt/",
+    "example_en": "Review contract.",
+    "example_ka": "კონტრაქტი გადახედე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "terms",
+    "georgian": "პირობები",
+    "pronunciation": "/tɜːrmz/",
+    "example_en": "Agree to terms.",
+    "example_ka": "პირობებს დაეთანხმე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "stakeholder",
+    "georgian": "დაინტერესებული მხარე",
+    "pronunciation": "/ˈsteɪkhoʊldər/",
+    "example_en": "Inform stakeholders.",
+    "example_ka": "დაინტერესებულ მხარეებს აცნობე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "milestone",
+    "georgian": "ეტაპი",
+    "pronunciation": "/ˈmaɪlstoʊn/",
+    "example_en": "Reached a milestone.",
+    "example_ka": "ეტაპს მივაღწიეთ.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "compliance",
+    "georgian": "შესაბამისობა",
+    "pronunciation": "/kəmˈplaɪəns/",
+    "example_en": "Ensure compliance.",
+    "example_ka": "შესაბამისობა უზრუნველყავი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "protocol",
+    "georgian": "პროტოკოლი",
+    "pronunciation": "/ˈproʊtəkɒl/",
+    "example_en": "Follow protocol.",
+    "example_ka": "პროტოკოლს მიჰყევი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "procedure",
+    "georgian": "პროცედურა",
+    "pronunciation": "/prəˈsiːdʒər/",
+    "example_en": "Follow procedure.",
+    "example_ka": "პროცედურას მიჰყევი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "guidelines",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/ˈɡaɪdlaɪnz/",
+    "example_en": "Follow guidelines.",
+    "example_ka": "სახელმძღვანელოს მიჰყევი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "policy",
+    "georgian": "პოლიტიკა",
+    "pronunciation": "/ˈpɒlɪsi/",
+    "example_en": "Company policy.",
+    "example_ka": "კომპანიის პოლიტიკა.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "notice",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈnoʊtɪs/",
+    "example_en": "Please take notice.",
+    "example_ka": "გაითვალისწინეთ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "reminder",
+    "georgian": "შეხსენება",
+    "pronunciation": "/rɪˈmaɪndər/",
+    "example_en": "Gentle reminder.",
+    "example_ka": "მსუბუქი შეხსენება.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "note",
+    "georgian": "შენიშვნა",
+    "pronunciation": "/noʊt/",
+    "example_en": "Please note.",
+    "example_ka": "გაითვალისწინეთ.",
+    "category": "work-emails",
+    "level": "A1"
+  },
+  {
+    "english": "mention",
+    "georgian": "ხსენება",
+    "pronunciation": "/ˈmɛnʃən/",
+    "example_en": "As mentioned.",
+    "example_ka": "როგორც აღინიშნა.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "regarding",
+    "georgian": "შესახებ",
+    "pronunciation": "/rɪˈɡɑːrdɪŋ/",
+    "example_en": "Regarding your inquiry.",
+    "example_ka": "თქვენი შეკითხვის შესახებ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "concern",
+    "georgian": "შეშფოთება",
+    "pronunciation": "/kənˈsɜːrn/",
+    "example_en": "I have a concern.",
+    "example_ka": "შეშფოთება მაქვს.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "issue",
+    "georgian": "საკითხი",
+    "pronunciation": "/ˈɪʃuː/",
+    "example_en": "There is an issue.",
+    "example_ka": "საკითხია.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "resolve",
+    "georgian": "მოგვარება",
+    "pronunciation": "/rɪˈzɒlv/",
+    "example_en": "Resolve this.",
+    "example_ka": "მოაგვარე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "escalate",
+    "georgian": "ესკალაცია",
+    "pronunciation": "/ˈɛskəleɪt/",
+    "example_en": "I need to escalate.",
+    "example_ka": "ესკალაცია მჭირდება.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "professional",
+    "georgian": "პროფესიონალური",
+    "pronunciation": "/prəˈfɛʃənəl/",
+    "example_en": "Stay professional.",
+    "example_ka": "პროფესიონალური იყავი.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "formal",
+    "georgian": "ფორმალური",
+    "pronunciation": "/ˈfɔːrməl/",
+    "example_en": "Formal language.",
+    "example_ka": "ფორმალური ენა.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "concise",
+    "georgian": "ლაკონური",
+    "pronunciation": "/kənˈsaɪs/",
+    "example_en": "Be concise.",
+    "example_ka": "ლაკონური იყავი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "brief",
+    "georgian": "მოკლე",
+    "pronunciation": "/briːf/",
+    "example_en": "Keep it brief.",
+    "example_ka": "მოკლედ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "detailed",
+    "georgian": "დეტალური",
+    "pronunciation": "/ˈdiːteɪld/",
+    "example_en": "Detailed report.",
+    "example_ka": "დეტალური ანგარიში.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "thorough",
+    "georgian": "საფუძვლიანი",
+    "pronunciation": "/ˈθʌrə/",
+    "example_en": "Thorough analysis.",
+    "example_ka": "საფუძვლიანი ანალიზი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "accordingly",
+    "georgian": "შესაბამისად",
+    "pronunciation": "/əˈkɔːrdɪŋli/",
+    "example_en": "Act accordingly.",
+    "example_ka": "შესაბამისად იმოქმედე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "furthermore",
+    "georgian": "გარდა ამისა",
+    "pronunciation": "/ˈfɜːrðərmɔːr/",
+    "example_en": "Furthermore.",
+    "example_ka": "გარდა ამისა.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "however",
+    "georgian": "თუმცა",
+    "pronunciation": "/haʊˈɛvər/",
+    "example_en": "However.",
+    "example_ka": "თუმცა.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "therefore",
+    "georgian": "ამიტომ",
+    "pronunciation": "/ˈðɛrfɔːr/",
+    "example_en": "Therefore.",
+    "example_ka": "ამიტომ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "meanwhile",
+    "georgian": "ამავდროულად",
+    "pronunciation": "/ˈmiːnwaɪl/",
+    "example_en": "Meanwhile.",
+    "example_ka": "ამავდროულად.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "kindly",
+    "georgian": "გთხოვთ",
+    "pronunciation": "/ˈkaɪndli/",
+    "example_en": "Kindly send.",
+    "example_ka": "გთხოვთ, გამოგზავნეთ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "promptly",
+    "georgian": "დაუყოვნებლივ",
+    "pronunciation": "/ˈprɒmptli/",
+    "example_en": "Respond promptly.",
+    "example_ka": "დაუყოვნებლივ უპასუხე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "enclose",
+    "georgian": "თანდართვა",
+    "pronunciation": "/ɪnˈkloʊz/",
+    "example_en": "Enclosed please find.",
+    "example_ka": "თანდართულია.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "memo",
+    "georgian": "მემორანდუმი",
+    "pronunciation": "/ˈmɛmoʊ/",
+    "example_en": "Read the memo.",
+    "example_ka": "მემო წაიკითხე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "correspondence",
+    "georgian": "კორესპონდენცია",
+    "pronunciation": "/ˌkɒrɪˈspɒndəns/",
+    "example_en": "Keep correspondence.",
+    "example_ka": "კორესპონდენცია შეინახე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "distribute",
+    "georgian": "გავრცელება",
+    "pronunciation": "/dɪˈstrɪbjuːt/",
+    "example_en": "Distribute minutes.",
+    "example_ka": "ოქმი გაავრცელე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "amend",
+    "georgian": "შესწორება",
+    "pronunciation": "/əˈmɛnd/",
+    "example_en": "Amend the document.",
+    "example_ka": "დოკუმენტი შეასწორე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "reiterate",
+    "georgian": "გამეორება",
+    "pronunciation": "/riːˈɪtəreɪt/",
+    "example_en": "I want to reiterate.",
+    "example_ka": "გამეორება მსურს.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "liaise",
+    "georgian": "კავშირი",
+    "pronunciation": "/liˈeɪz/",
+    "example_en": "Liaise with client.",
+    "example_ka": "კლიენტთან კავშირი დაამყარე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "hereby",
+    "georgian": "ამით",
+    "pronunciation": "/hɪrˈbaɪ/",
+    "example_en": "I hereby confirm.",
+    "example_ka": "ამით ვადასტურებ.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "forthcoming",
+    "georgian": "მომავალი",
+    "pronunciation": "/ˈfɔːrθkʌmɪŋ/",
+    "example_en": "Forthcoming meeting.",
+    "example_ka": "მომავალი შეხვედრა.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "aforementioned",
+    "georgian": "ზემოხსენებული",
+    "pronunciation": "/əˈfɔːrmɛnʃənd/",
+    "example_en": "As aforementioned.",
+    "example_ka": "როგორც ზემოთ აღინიშნა.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "pertinent",
+    "georgian": "არსებითი",
+    "pronunciation": "/ˈpɜːrtɪnənt/",
+    "example_en": "Pertinent details.",
+    "example_ka": "არსებითი დეტალები.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "stipulate",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/ˈstɪpjʊleɪt/",
+    "example_en": "Contract stipulates.",
+    "example_ka": "კონტრაქტი მოითხოვს.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "feasibility",
+    "georgian": "მიზანშეწონილობა",
+    "pronunciation": "/ˌfiːzəˈbɪləti/",
+    "example_en": "Feasibility study.",
+    "example_ka": "მიზანშეწონილობის კვლევა.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "nonetheless",
+    "georgian": "მიუხედავად ამისა",
+    "pronunciation": "/ˌnʌnðəˈlɛs/",
+    "example_en": "Nonetheless.",
+    "example_ka": "მიუხედავად ამისა.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "whereas",
+    "georgian": "მაშინ როცა",
+    "pronunciation": "/wɛrˈæz/",
+    "example_en": "Whereas the budget.",
+    "example_ka": "მაშინ როცა ბიუჯეტი.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "disseminate",
+    "georgian": "გავრცელება",
+    "pronunciation": "/dɪˈsɛmɪneɪt/",
+    "example_en": "Disseminate info.",
+    "example_ka": "ინფორმაცია გაავრცელე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "circulate",
+    "georgian": "გავრცელება",
+    "pronunciation": "/ˈsɜːrkjʊleɪt/",
+    "example_en": "Circulate memo.",
+    "example_ka": "მემო გაავრცელე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "benchmark",
+    "georgian": "საეტალონო",
+    "pronunciation": "/ˈbɛntʃmɑːrk/",
+    "example_en": "Set benchmark.",
+    "example_ka": "საეტალონო დააწესე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "negotiate",
+    "georgian": "მოლაპარაკება",
+    "pronunciation": "/nɪˈɡoʊʃieɪt/",
+    "example_en": "Negotiate terms.",
+    "example_ka": "პირობებზე მოილაპარაკე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "deliverable",
+    "georgian": "შედეგი",
+    "pronunciation": "/dɪˈlɪvərəbl/",
+    "example_en": "List deliverables.",
+    "example_ka": "შედეგები ჩამოწერე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "regulation",
+    "georgian": "რეგულაცია",
+    "pronunciation": "/ˌrɛɡjʊˈleɪʃən/",
+    "example_en": "New regulations.",
+    "example_ka": "ახალი რეგულაციები.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "notify",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈnoʊtɪfaɪ/",
+    "example_en": "Notify me.",
+    "example_ka": "შემატყობინე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "chart",
+    "georgian": "დიაგრამა",
+    "pronunciation": "/tʃɑːrt/",
+    "example_en": "See attached chart.",
+    "example_ka": "თანდართული დიაგრამა.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "figure",
+    "georgian": "მაჩვენებელი",
+    "pronunciation": "/ˈfɪɡər/",
+    "example_en": "Check figures.",
+    "example_ka": "მაჩვენებლები შეამოწმე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "bcc",
+    "georgian": "ფარული ასლი",
+    "pronunciation": "/biː siː siː/",
+    "example_en": "Use BCC.",
+    "example_ka": "ფარული ასლი გამოიყენე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "outbox",
+    "georgian": "გასული",
+    "pronunciation": "/ˈaʊtbɒks/",
+    "example_en": "Check outbox.",
+    "example_ka": "გასულები შეამოწმე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "attach",
+    "georgian": "მიმაგრება",
+    "pronunciation": "/əˈtætʃ/",
+    "example_en": "Attach the file.",
+    "example_ka": "ფაილი მიამაგრე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ʌpˈloʊd/",
+    "example_en": "Upload here.",
+    "example_ka": "აქ ატვირთე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the file.",
+    "example_ka": "ფაილი ჩამოტვირთე.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "folder",
+    "georgian": "საქაღალდე",
+    "pronunciation": "/ˈfoʊldər/",
+    "example_en": "Create a folder.",
+    "example_ka": "საქაღალდე შექმენი.",
+    "category": "work-emails",
+    "level": "A1"
+  },
+  {
+    "english": "archive",
+    "georgian": "არქივი",
+    "pronunciation": "/ˈɑːrkaɪv/",
+    "example_en": "Archive old emails.",
+    "example_ka": "ძველი ელფოსტები არქივში გადაიტანე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "unread",
+    "georgian": "წაუკითხავი",
+    "pronunciation": "/ˌʌnˈrɛd/",
+    "example_en": "10 unread emails.",
+    "example_ka": "10 წაუკითხავი ელფოსტა.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "bounce",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/baʊns/",
+    "example_en": "The email bounced.",
+    "example_ka": "ელფოსტა დაბრუნდა.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "thread",
+    "georgian": "ნაკადი",
+    "pronunciation": "/θrɛd/",
+    "example_en": "Email thread.",
+    "example_ka": "ელფოსტის ნაკადი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "follow-up",
+    "georgian": "შემდგომი",
+    "pronunciation": "/ˈfɒloʊ ʌp/",
+    "example_en": "Follow-up email.",
+    "example_ka": "შემდგომი ელფოსტა.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "straightforward",
+    "georgian": "პირდაპირი",
+    "pronunciation": "/ˌstreɪtˈfɔːrwərd/",
+    "example_en": "Be straightforward.",
+    "example_ka": "პირდაპირი იყავი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "courteous",
+    "georgian": "თავაზიანი",
+    "pronunciation": "/ˈkɜːrtiəs/",
+    "example_en": "Be courteous.",
+    "example_ka": "თავაზიანი იყავი.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "informal",
+    "georgian": "არაფორმალური",
+    "pronunciation": "/ɪnˈfɔːrməl/",
+    "example_en": "Informal tone.",
+    "example_ka": "არაფორმალური ტონი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "synopsis",
+    "georgian": "მოკლე მიმოხილვა",
+    "pronunciation": "/sɪˈnɒpsɪs/",
+    "example_en": "Brief synopsis.",
+    "example_ka": "მოკლე მიმოხილვა.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "refer",
+    "georgian": "მიმართვა",
+    "pronunciation": "/rɪˈfɜːr/",
+    "example_en": "Refer to attachment.",
+    "example_ka": "დანართს მიმართეთ.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "paragraph",
+    "georgian": "აბზაცი",
+    "pronunciation": "/ˈpærəɡrɑːf/",
+    "example_en": "Keep paragraphs short.",
+    "example_ka": "აბზაცები მოკლედ.",
+    "category": "work-emails",
+    "level": "A2"
+  },
+  {
+    "english": "proactive",
+    "georgian": "პროაქტიული",
+    "pronunciation": "/proʊˈæktɪv/",
+    "example_en": "Be proactive.",
+    "example_ka": "პროაქტიული იყავი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "transparent",
+    "georgian": "გამჭვირვალე",
+    "pronunciation": "/trænˈspærənt/",
+    "example_en": "Be transparent.",
+    "example_ka": "გამჭვირვალე იყავი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "align",
+    "georgian": "შეთანხმება",
+    "pronunciation": "/əˈlaɪn/",
+    "example_en": "Align on goals.",
+    "example_ka": "მიზნებზე შეთანხმდი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "leverage",
+    "georgian": "გამოყენება",
+    "pronunciation": "/ˈlɛvərɪdʒ/",
+    "example_en": "Leverage resources.",
+    "example_ka": "რესურსები გამოიყენე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "synergy",
+    "georgian": "სინერგია",
+    "pronunciation": "/ˈsɪnərdʒi/",
+    "example_en": "Create synergy.",
+    "example_ka": "სინერგია შექმენი.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "streamline",
+    "georgian": "გამარტივება",
+    "pronunciation": "/ˈstriːmlaɪn/",
+    "example_en": "Streamline process.",
+    "example_ka": "პროცესი გაამარტივე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "optimize",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˈɒptɪmaɪz/",
+    "example_en": "Optimize workflow.",
+    "example_ka": "სამუშაო პროცესი ოპტიმიზირე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "prioritize",
+    "georgian": "პრიორიტეტიზაცია",
+    "pronunciation": "/praɪˈɒrɪtaɪz/",
+    "example_en": "Prioritize tasks.",
+    "example_ka": "დავალებები პრიორიტეტიზე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "recap",
+    "georgian": "შეჯამება",
+    "pronunciation": "/ˈriːkæp/",
+    "example_en": "Quick recap.",
+    "example_ka": "მოკლე შეჯამება.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "brainstorm",
+    "georgian": "გენერირება",
+    "pronunciation": "/ˈbreɪnstɔːrm/",
+    "example_en": "Let's brainstorm.",
+    "example_ka": "იდეები გენერირება.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "workflow",
+    "georgian": "სამუშაო პროცესი",
+    "pronunciation": "/ˈwɜːrkfloʊ/",
+    "example_en": "Improve workflow.",
+    "example_ka": "სამუშაო პროცესი გააუმჯობესე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "onboard",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˈɒnbɔːrd/",
+    "example_en": "Onboard new staff.",
+    "example_ka": "ახალი კადრები ადაპტირე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "outsource",
+    "georgian": "აუთსორსი",
+    "pronunciation": "/ˈaʊtsɔːrs/",
+    "example_en": "Outsource the task.",
+    "example_ka": "დავალება აუთსორსზე გაიტანე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "iterate",
+    "georgian": "გამეორება",
+    "pronunciation": "/ˈɪtəreɪt/",
+    "example_en": "Iterate on feedback.",
+    "example_ka": "გამოხმაურებით გაიმეორე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "actionable",
+    "georgian": "ქმედითი",
+    "pronunciation": "/ˈækʃənəbl/",
+    "example_en": "Actionable items.",
+    "example_ka": "ქმედითი საკითხები.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "scalable",
+    "georgian": "მასშტაბირებადი",
+    "pronunciation": "/ˈskeɪləbl/",
+    "example_en": "Scalable solution.",
+    "example_ka": "მასშტაბირებადი გადაწყვეტა.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "robust",
+    "georgian": "მყარი",
+    "pronunciation": "/roʊˈbʌst/",
+    "example_en": "Robust plan.",
+    "example_ka": "მყარი გეგმა.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "initiative",
+    "georgian": "ინიციატივა",
+    "pronunciation": "/ɪˈnɪʃətɪv/",
+    "example_en": "New initiative.",
+    "example_ka": "ახალი ინიციატივა.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "accountability",
+    "georgian": "ანგარიშვალდებულება",
+    "pronunciation": "/əˌkaʊntəˈbɪləti/",
+    "example_en": "Ensure accountability.",
+    "example_ka": "ანგარიშვალდებულება უზრუნველყავი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "consolidate",
+    "georgian": "კონსოლიდაცია",
+    "pronunciation": "/kənˈsɒlɪdeɪt/",
+    "example_en": "Consolidate reports.",
+    "example_ka": "ანგარიშები კონსოლიდირე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "supersede",
+    "georgian": "ჩანაცვლება",
+    "pronunciation": "/ˌsuːpərˈsiːd/",
+    "example_en": "This supersedes the old version.",
+    "example_ka": "ეს ძველ ვერსიას ანაცვლებს.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "carbon",
+    "georgian": "ასლი",
+    "pronunciation": "/ˈkɑːrbən/",
+    "example_en": "Carbon copy.",
+    "example_ka": "ასლი.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "digest",
+    "georgian": "შეჯამება",
+    "pronunciation": "/ˈdaɪdʒɛst/",
+    "example_en": "Weekly digest.",
+    "example_ka": "ყოველკვირეული შეჯამება.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "dispatch",
+    "georgian": "გაგზავნა",
+    "pronunciation": "/dɪˈspætʃ/",
+    "example_en": "Dispatch the report.",
+    "example_ka": "ანგარიში გააგზავნე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "disclose",
+    "georgian": "გამჟღავნება",
+    "pronunciation": "/dɪsˈkloʊz/",
+    "example_en": "Do not disclose.",
+    "example_ka": "არ გაამჟღავნო.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "endorse",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/ɪnˈdɔːrs/",
+    "example_en": "I endorse this plan.",
+    "example_ka": "ამ გეგმას ვუჭერ მხარს.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "expedite",
+    "georgian": "დაჩქარება",
+    "pronunciation": "/ˈɛkspɪdaɪt/",
+    "example_en": "Expedite the process.",
+    "example_ka": "პროცესი დააჩქარე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "facilitate",
+    "georgian": "ხელშეწყობა",
+    "pronunciation": "/fəˈsɪlɪteɪt/",
+    "example_en": "Facilitate discussion.",
+    "example_ka": "დისკუსია ხელი შეუწყვე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "incorporate",
+    "georgian": "ჩართვა",
+    "pronunciation": "/ɪnˈkɔːrpəreɪt/",
+    "example_en": "Incorporate feedback.",
+    "example_ka": "გამოხმაურება ჩართე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "mitigate",
+    "georgian": "შემცირება",
+    "pronunciation": "/ˈmɪtɪɡeɪt/",
+    "example_en": "Mitigate risks.",
+    "example_ka": "რისკები შეამცირე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "override",
+    "georgian": "გადაფარვა",
+    "pronunciation": "/ˌoʊvərˈraɪd/",
+    "example_en": "Override the decision.",
+    "example_ka": "გადაწყვეტილება გადააფარე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "preliminary",
+    "georgian": "წინასწარი",
+    "pronunciation": "/prɪˈlɪmɪnɛri/",
+    "example_en": "Preliminary results.",
+    "example_ka": "წინასწარი შედეგები.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "provisional",
+    "georgian": "დროებითი",
+    "pronunciation": "/prəˈvɪʒənəl/",
+    "example_en": "Provisional approval.",
+    "example_ka": "დროებითი დამტკიცება.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "ratify",
+    "georgian": "რატიფიცირება",
+    "pronunciation": "/ˈrætɪfaɪ/",
+    "example_en": "Ratify the agreement.",
+    "example_ka": "შეთანხმება რატიფიცირე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "scrutinize",
+    "georgian": "შემოწმება",
+    "pronunciation": "/ˈskruːtɪnaɪz/",
+    "example_en": "Scrutinize the data.",
+    "example_ka": "მონაცემები შეამოწმე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "substantiate",
+    "georgian": "დადასტურება",
+    "pronunciation": "/səbˈstænʃieɪt/",
+    "example_en": "Substantiate claims.",
+    "example_ka": "მოთხოვნები დაადასტურე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "waive",
+    "georgian": "უარის თქმა",
+    "pronunciation": "/weɪv/",
+    "example_en": "Waive the fee.",
+    "example_ka": "საკომისიოზე უარი თქვი.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "yield",
+    "georgian": "შედეგი",
+    "pronunciation": "/jiːld/",
+    "example_en": "Yield good results.",
+    "example_ka": "კარგი შედეგები მოიტანე.",
+    "category": "work-emails",
+    "level": "B1"
+  },
+  {
+    "english": "adjourn",
+    "georgian": "გადადება",
+    "pronunciation": "/əˈdʒɜːrn/",
+    "example_en": "Adjourn the meeting.",
+    "example_ka": "შეხვედრა გადადე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "convene",
+    "georgian": "მოწვევა",
+    "pronunciation": "/kənˈviːn/",
+    "example_en": "Convene a meeting.",
+    "example_ka": "შეხვედრა მოიწვიე.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "defer",
+    "georgian": "გადადება",
+    "pronunciation": "/dɪˈfɜːr/",
+    "example_en": "Defer the decision.",
+    "example_ka": "გადაწყვეტილება გადადე.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "elaborate",
+    "georgian": "დეტალურად",
+    "pronunciation": "/ɪˈlæbəreɪt/",
+    "example_en": "Please elaborate.",
+    "example_ka": "გთხოვთ, დეტალურად.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "entail",
+    "georgian": "მოიცავს",
+    "pronunciation": "/ɪnˈteɪl/",
+    "example_en": "What does this entail?",
+    "example_ka": "ეს რას მოიცავს?",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "foresee",
+    "georgian": "წინასწარ ხედვა",
+    "pronunciation": "/fɔːrˈsiː/",
+    "example_en": "I foresee problems.",
+    "example_ka": "პრობლემებს ვხედავ.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "henceforth",
+    "georgian": "ამიერიდან",
+    "pronunciation": "/hɛnsˈfɔːrθ/",
+    "example_en": "Henceforth we will.",
+    "example_ka": "ამიერიდან ჩვენ.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "mandate",
+    "georgian": "მანდატი",
+    "pronunciation": "/ˈmændeɪt/",
+    "example_en": "Company mandate.",
+    "example_ka": "კომპანიის მანდატი.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "pursuant",
+    "georgian": "შესაბამისად",
+    "pronunciation": "/pərˈsuːənt/",
+    "example_en": "Pursuant to policy.",
+    "example_ka": "პოლიტიკის შესაბამისად.",
+    "category": "work-emails",
+    "level": "C1"
+  },
+  {
+    "english": "contingency",
+    "georgian": "გაუთვალისწინებელი",
+    "pronunciation": "/kənˈtɪndʒənsi/",
+    "example_en": "Contingency plan.",
+    "example_ka": "გაუთვალისწინებელი გეგმა.",
+    "category": "work-emails",
+    "level": "B2"
+  },
+  {
+    "english": "requisition",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/ˌrɛkwɪˈzɪʃən/",
+    "example_en": "Submit requisition.",
+    "example_ka": "მოთხოვნა წარადგინე.",
+    "category": "work-emails",
+    "level": "C1"
+  }
 ]

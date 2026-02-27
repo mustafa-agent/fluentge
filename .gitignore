@@ -3,3 +3,10 @@ dist/
 .env
 .credentials/
 .DS_Store
+dist-*/
+website/dist/
+website/dist-*/
+flashcard-app/node_modules/
+website/node_modules/
+*.pyc
+__pycache__/

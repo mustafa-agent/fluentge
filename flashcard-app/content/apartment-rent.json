@@ -1,32 +1,1802 @@
 [
-  {"english":"apartment","georgian":"ბინა","pronunciation":"/əˈpɑːrtmənt/","example_en":"I'm looking for a new apartment.","example_ka":"ახალ ბინას ვეძებ.","category":"apartment-rent","level":"beginner"},
-  {"english":"rent","georgian":"ქირა","pronunciation":"/rent/","example_en":"How much is the rent per month?","example_ka":"თვეში რამდენია ქირა?","category":"apartment-rent","level":"beginner"},
-  {"english":"landlord","georgian":"მეპატრონე","pronunciation":"/ˈlændlɔːrd/","example_en":"The landlord is very friendly.","example_ka":"მეპატრონე ძალიან მეგობრულია.","category":"apartment-rent","level":"beginner"},
-  {"english":"tenant","georgian":"დამქირავებელი","pronunciation":"/ˈtenənt/","example_en":"The tenant pays rent on the first of each month.","example_ka":"დამქირავებელი ქირას ყოველი თვის პირველ რიცხვში იხდის.","category":"apartment-rent","level":"beginner"},
-  {"english":"lease","georgian":"იჯარა","pronunciation":"/liːs/","example_en":"I signed a one-year lease.","example_ka":"ერთწლიანი იჯარა ხელი მოვაწერე.","category":"apartment-rent","level":"intermediate"},
-  {"english":"deposit","georgian":"დეპოზიტი","pronunciation":"/dɪˈpɒzɪt/","example_en":"The deposit is two months' rent.","example_ka":"დეპოზიტი ორი თვის ქირაა.","category":"apartment-rent","level":"beginner"},
-  {"english":"utilities","georgian":"კომუნალურები","pronunciation":"/juːˈtɪlɪtiz/","example_en":"Utilities are not included in the rent.","example_ka":"კომუნალურები ქირაში არ შედის.","category":"apartment-rent","level":"beginner"},
-  {"english":"to move in","georgian":"შეყვანა","pronunciation":"/tə muːv ɪn/","example_en":"I'm moving in next week.","example_ka":"მომავალ კვირას შევდივარ.","category":"apartment-rent","level":"beginner"},
-  {"english":"to move out","georgian":"გამოსვლა","pronunciation":"/tə muːv aʊt/","example_en":"I need to move out by March.","example_ka":"მარტამდე უნდა გამოვიდე.","category":"apartment-rent","level":"beginner"},
-  {"english":"roommate","georgian":"თანამოქირავნე","pronunciation":"/ˈruːmmeɪt/","example_en":"I share the apartment with a roommate.","example_ka":"ბინას თანამოქირავნესთან ვინაწილებ.","category":"apartment-rent","level":"beginner"},
-  {"english":"furnished","georgian":"ავეჯით","pronunciation":"/ˈfɜːrnɪʃt/","example_en":"Is the apartment furnished?","example_ka":"ბინა ავეჯითაა?","category":"apartment-rent","level":"beginner"},
-  {"english":"unfurnished","georgian":"ავეჯის გარეშე","pronunciation":"/ʌnˈfɜːrnɪʃt/","example_en":"The rent is cheaper for unfurnished.","example_ka":"ავეჯის გარეშე ქირა უფრო იაფია.","category":"apartment-rent","level":"beginner"},
-  {"english":"floor","georgian":"სართული","pronunciation":"/flɔːr/","example_en":"I live on the fifth floor.","example_ka":"მეხუთე სართულზე ვცხოვრობ.","category":"apartment-rent","level":"beginner"},
-  {"english":"elevator","georgian":"ლიფტი","pronunciation":"/ˈelɪveɪtər/","example_en":"The building has an elevator.","example_ka":"შენობას ლიფტი აქვს.","category":"apartment-rent","level":"beginner"},
-  {"english":"balcony","georgian":"აივანი","pronunciation":"/ˈbælkəni/","example_en":"The apartment has a nice balcony.","example_ka":"ბინას ლამაზი აივანი აქვს.","category":"apartment-rent","level":"beginner"},
-  {"english":"heating","georgian":"გათბობა","pronunciation":"/ˈhiːtɪŋ/","example_en":"Does the apartment have central heating?","example_ka":"ბინას ცენტრალური გათბობა აქვს?","category":"apartment-rent","level":"beginner"},
-  {"english":"air conditioning","georgian":"კონდიციონერი","pronunciation":"/eər kənˈdɪʃənɪŋ/","example_en":"We need air conditioning in summer.","example_ka":"ზაფხულში კონდიციონერი გვჭირდება.","category":"apartment-rent","level":"beginner"},
-  {"english":"parking","georgian":"პარკინგი","pronunciation":"/ˈpɑːrkɪŋ/","example_en":"Is parking included?","example_ka":"პარკინგი შედის?","category":"apartment-rent","level":"beginner"},
-  {"english":"neighbor","georgian":"მეზობელი","pronunciation":"/ˈneɪbər/","example_en":"My neighbors are very noisy.","example_ka":"ჩემი მეზობლები ძალიან ხმაურიანები არიან.","category":"apartment-rent","level":"beginner"},
-  {"english":"maintenance","georgian":"ტექნიკური მომსახურება","pronunciation":"/ˈmeɪntənəns/","example_en":"Call maintenance if something breaks.","example_ka":"თუ რამე გაფუჭდა, ტექნიკურ მომსახურებას დაურეკე.","category":"apartment-rent","level":"intermediate"},
-  {"english":"to renovate","georgian":"რემონტი","pronunciation":"/tə ˈrenəveɪt/","example_en":"The landlord renovated the kitchen.","example_ka":"მეპატრონემ სამზარეულო გარემონტა.","category":"apartment-rent","level":"beginner"},
-  {"english":"studio apartment","georgian":"სტუდიო ბინა","pronunciation":"/ˈstjuːdioʊ əˈpɑːrtmənt/","example_en":"A studio is cheaper than a one-bedroom.","example_ka":"სტუდიო ერთოთახიანზე უფრო იაფია.","category":"apartment-rent","level":"beginner"},
-  {"english":"one-bedroom","georgian":"ერთოთახიანი","pronunciation":"/wʌn ˈbedruːm/","example_en":"I rented a one-bedroom apartment.","example_ka":"ერთოთახიანი ბინა დავქირავე.","category":"apartment-rent","level":"beginner"},
-  {"english":"quiet","georgian":"წყნარი","pronunciation":"/ˈkwaɪət/","example_en":"I want a quiet neighborhood.","example_ka":"წყნარი უბანი მინდა.","category":"apartment-rent","level":"beginner"},
-  {"english":"noisy","georgian":"ხმაურიანი","pronunciation":"/ˈnɔɪzi/","example_en":"The street is too noisy at night.","example_ka":"ქუჩა ღამით ძალიან ხმაურიანია.","category":"apartment-rent","level":"beginner"},
-  {"english":"pet-friendly","georgian":"ცხოველების ნებადართული","pronunciation":"/pet ˈfrendli/","example_en":"Is the apartment pet-friendly?","example_ka":"ბინაში ცხოველების ყოლა ნებადართულია?","category":"apartment-rent","level":"beginner"},
-  {"english":"contract","georgian":"კონტრაქტი","pronunciation":"/ˈkɒntrækt/","example_en":"Read the contract before signing.","example_ka":"ხელმოწერამდე კონტრაქტი წაიკითხე.","category":"apartment-rent","level":"beginner"},
-  {"english":"eviction","georgian":"გამოსახლება","pronunciation":"/ɪˈvɪkʃən/","example_en":"He received an eviction notice.","example_ka":"მან გამოსახლების შეტყობინება მიიღო.","category":"apartment-rent","level":"intermediate"},
-  {"english":"to share","georgian":"გაყოფა","pronunciation":"/tə ʃeər/","example_en":"Do you want to share an apartment?","example_ka":"გინდა ბინა გავიყოთ?","category":"apartment-rent","level":"beginner"},
-  {"english":"location","georgian":"მდებარეობა","pronunciation":"/loʊˈkeɪʃən/","example_en":"Location is the most important thing.","example_ka":"მდებარეობა ყველაზე მნიშვნელოვანია.","category":"apartment-rent","level":"beginner"}
+  {
+    "english": "apartment",
+    "georgian": "ბინა",
+    "pronunciation": "/əˈpɑːrtmənt/",
+    "example_en": "I'm looking for a new apartment.",
+    "example_ka": "ახალ ბინას ვეძებ.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "rent",
+    "georgian": "ქირა",
+    "pronunciation": "/rent/",
+    "example_en": "How much is the rent per month?",
+    "example_ka": "თვეში რამდენია ქირა?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "landlord",
+    "georgian": "მეპატრონე",
+    "pronunciation": "/ˈlændlɔːrd/",
+    "example_en": "The landlord is very friendly.",
+    "example_ka": "მეპატრონე ძალიან მეგობრულია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "tenant",
+    "georgian": "დამქირავებელი",
+    "pronunciation": "/ˈtenənt/",
+    "example_en": "The tenant pays rent on the first of each month.",
+    "example_ka": "დამქირავებელი ქირას ყოველი თვის პირველ რიცხვში იხდის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "lease",
+    "georgian": "იჯარა",
+    "pronunciation": "/liːs/",
+    "example_en": "I signed a one-year lease.",
+    "example_ka": "ერთწლიანი იჯარა ხელი მოვაწერე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "deposit",
+    "georgian": "დეპოზიტი",
+    "pronunciation": "/dɪˈpɒzɪt/",
+    "example_en": "The deposit is two months' rent.",
+    "example_ka": "დეპოზიტი ორი თვის ქირაა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "utilities",
+    "georgian": "კომუნალურები",
+    "pronunciation": "/juːˈtɪlɪtiz/",
+    "example_en": "Utilities are not included in the rent.",
+    "example_ka": "კომუნალურები ქირაში არ შედის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "roommate",
+    "georgian": "თანამოქირავნე",
+    "pronunciation": "/ˈruːmmeɪt/",
+    "example_en": "I share the apartment with a roommate.",
+    "example_ka": "ბინას თანამოქირავნესთან ვინაწილებ.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "furnished",
+    "georgian": "ავეჯით",
+    "pronunciation": "/ˈfɜːrnɪʃt/",
+    "example_en": "Is the apartment furnished?",
+    "example_ka": "ბინა ავეჯითაა?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "unfurnished",
+    "georgian": "ავეჯის გარეშე",
+    "pronunciation": "/ʌnˈfɜːrnɪʃt/",
+    "example_en": "The rent is cheaper for unfurnished.",
+    "example_ka": "ავეჯის გარეშე ქირა უფრო იაფია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "floor",
+    "georgian": "სართული",
+    "pronunciation": "/flɔːr/",
+    "example_en": "I live on the fifth floor.",
+    "example_ka": "მეხუთე სართულზე ვცხოვრობ.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "elevator",
+    "georgian": "ლიფტი",
+    "pronunciation": "/ˈelɪveɪtər/",
+    "example_en": "The building has an elevator.",
+    "example_ka": "შენობას ლიფტი აქვს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "balcony",
+    "georgian": "აივანი",
+    "pronunciation": "/ˈbælkəni/",
+    "example_en": "The apartment has a nice balcony.",
+    "example_ka": "ბინას ლამაზი აივანი აქვს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "heating",
+    "georgian": "გათბობა",
+    "pronunciation": "/ˈhiːtɪŋ/",
+    "example_en": "Does the apartment have central heating?",
+    "example_ka": "ბინას ცენტრალური გათბობა აქვს?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "parking",
+    "georgian": "პარკინგი",
+    "pronunciation": "/ˈpɑːrkɪŋ/",
+    "example_en": "Is parking included?",
+    "example_ka": "პარკინგი შედის?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "neighbor",
+    "georgian": "მეზობელი",
+    "pronunciation": "/ˈneɪbər/",
+    "example_en": "My neighbors are very noisy.",
+    "example_ka": "ჩემი მეზობლები ძალიან ხმაურიანები არიან.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "maintenance",
+    "georgian": "ტექნიკური მომსახურება",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "example_en": "Call maintenance if something breaks.",
+    "example_ka": "თუ რამე გაფუჭდა, ტექნიკურ მომსახურებას დაურეკე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "one-bedroom",
+    "georgian": "ერთოთახიანი",
+    "pronunciation": "/wʌn ˈbedruːm/",
+    "example_en": "I rented a one-bedroom apartment.",
+    "example_ka": "ერთოთახიანი ბინა დავქირავე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "quiet",
+    "georgian": "წყნარი",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "I want a quiet neighborhood.",
+    "example_ka": "წყნარი უბანი მინდა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "noisy",
+    "georgian": "ხმაურიანი",
+    "pronunciation": "/ˈnɔɪzi/",
+    "example_en": "The street is too noisy at night.",
+    "example_ka": "ქუჩა ღამით ძალიან ხმაურიანია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "pet-friendly",
+    "georgian": "ცხოველების ნებადართული",
+    "pronunciation": "/pet ˈfrendli/",
+    "example_en": "Is the apartment pet-friendly?",
+    "example_ka": "ბინაში ცხოველების ყოლა ნებადართულია?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "contract",
+    "georgian": "კონტრაქტი",
+    "pronunciation": "/ˈkɒntrækt/",
+    "example_en": "Read the contract before signing.",
+    "example_ka": "ხელმოწერამდე კონტრაქტი წაიკითხე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "eviction",
+    "georgian": "გამოსახლება",
+    "pronunciation": "/ɪˈvɪkʃən/",
+    "example_en": "He received an eviction notice.",
+    "example_ka": "მან გამოსახლების შეტყობინება მიიღო.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "location",
+    "georgian": "მდებარეობა",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "Location is the most important thing.",
+    "example_ka": "მდებარეობა ყველაზე მნიშვნელოვანია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "studio",
+    "georgian": "სტუდია",
+    "pronunciation": "/ˈstuːdioʊ/",
+    "example_en": "A studio apartment is perfect for one person.",
+    "example_ka": "სტუდია ბინა ერთი ადამიანისთვის შესანიშნავია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "basement",
+    "georgian": "სარდაფი",
+    "pronunciation": "/ˈbeɪsmənt/",
+    "example_en": "The basement apartment is cheaper.",
+    "example_ka": "სარდაფის ბინა უფრო იაფია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "attic",
+    "georgian": "ატიკი",
+    "pronunciation": "/ˈætɪk/",
+    "example_en": "The attic room has a slanted ceiling.",
+    "example_ka": "ატიკის ოთახს დახრილი ჭერი აქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "doorman",
+    "georgian": "კარისკაცი",
+    "pronunciation": "/ˈdɔːrmən/",
+    "example_en": "The building has a 24-hour doorman.",
+    "example_ka": "შენობას 24-საათიანი კარისკაცი ყავს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊrɪti/",
+    "example_en": "The building has good security.",
+    "example_ka": "შენობას კარგი უსაფრთხოება აქვს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "laundry",
+    "georgian": "თეთროსანები",
+    "pronunciation": "/ˈlɔːndri/",
+    "example_en": "Is there a laundry room in the building?",
+    "example_ka": "შენობაში თეთროსნების ოთახია?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "refrigerator",
+    "georgian": "მაცივარი",
+    "pronunciation": "/rɪˈfrɪdʒəreɪtər/",
+    "example_en": "The refrigerator is included.",
+    "example_ka": "მაცივარი შედის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "stove",
+    "georgian": "ღუმელი",
+    "pronunciation": "/stoʊv/",
+    "example_en": "The kitchen has a gas stove.",
+    "example_ka": "სამზარეულოში გაზის ღუმელია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "oven",
+    "georgian": "ღუმელი",
+    "pronunciation": "/ˈʌvən/",
+    "example_en": "I love baking in the oven.",
+    "example_ka": "მიყვარს ღუმელში ცხობა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "bathroom",
+    "georgian": "სააბაზანო",
+    "pronunciation": "/ˈbæθruːm/",
+    "example_en": "The apartment has two bathrooms.",
+    "example_ka": "ბინას ორი სააბაზანო ყავს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "bedroom",
+    "georgian": "საძინებელი",
+    "pronunciation": "/ˈbedruːm/",
+    "example_en": "The bedroom is very spacious.",
+    "example_ka": "საძინებელი ძალიან ფართოა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "kitchen",
+    "georgian": "სამზარეულო",
+    "pronunciation": "/ˈkɪtʃɪn/",
+    "example_en": "The kitchen is fully equipped.",
+    "example_ka": "სამზარეულო სრულად არის აღჭურვილი.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "closet",
+    "georgian": "კარადა",
+    "pronunciation": "/ˈklɒzɪt/",
+    "example_en": "Each bedroom has a walk-in closet.",
+    "example_ka": "ყველა საძინებელს დასადგამი კარადა აქვს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "The windows face the park.",
+    "example_ka": "ფანჯრები პარკისკენ არის მიქცეული.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "door",
+    "georgian": "კარი",
+    "pronunciation": "/dɔːr/",
+    "example_en": "The front door needs a new lock.",
+    "example_ka": "წინა კარს ახალი კეტი უნდა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "key",
+    "georgian": "გასაღები",
+    "pronunciation": "/kiː/",
+    "example_en": "Do you have an extra key?",
+    "example_ka": "დამატებითი გასაღები გაქვს?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "lock",
+    "georgian": "კეტი",
+    "pronunciation": "/lɒk/",
+    "example_en": "Make sure to lock the door.",
+    "example_ka": "დარწმუნდი რომ კარი ჩაკეტე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "inspection",
+    "georgian": "შემოწმება",
+    "pronunciation": "/ɪnˈspekʃən/",
+    "example_en": "The landlord will do an inspection.",
+    "example_ka": "მეპატრონე შემოწმებას ჩაატარებს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "repair",
+    "georgian": "შეკეთება",
+    "pronunciation": "/rɪˈper/",
+    "example_en": "The apartment needs some repairs.",
+    "example_ka": "ბინას რამდენიმე შეკეთება სჭირდება.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "damage",
+    "georgian": "დაზიანება",
+    "pronunciation": "/ˈdæmɪdʒ/",
+    "example_en": "Any damage will be deducted from the deposit.",
+    "example_ka": "ნებისმიერი დაზიანება დეპოზიტიდან ჩამოიხსნება.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "noise",
+    "georgian": "ხმაური",
+    "pronunciation": "/nɔɪz/",
+    "example_en": "Please keep noise to a minimum.",
+    "example_ka": "გთხოვთ ხმაური მინიმუმზე შეამცირეთ.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "complaint",
+    "georgian": "საჩივარი",
+    "pronunciation": "/kəmˈpleɪnt/",
+    "example_en": "I filed a noise complaint.",
+    "example_ka": "ხმაურის შესახებ საჩივარი შევიტანე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "application",
+    "georgian": "განაცხადი",
+    "pronunciation": "/ˌæplɪˈkeɪʃən/",
+    "example_en": "Fill out the rental application.",
+    "example_ka": "ქირავების განაცხადი შეავსე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "credit",
+    "georgian": "საკრედიტო",
+    "pronunciation": "/ˈkredɪt/",
+    "example_en": "They will check your credit score.",
+    "example_ka": "შენს საკრედიტო რეიტინგს შეამოწმებენ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "background",
+    "georgian": "ისტორია",
+    "pronunciation": "/ˈbækɡraʊnd/",
+    "example_en": "A background check is required.",
+    "example_ka": "ისტორიის შემოწმება აუცილებელია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "income",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈɪnkʌm/",
+    "example_en": "Proof of income is required.",
+    "example_ka": "შემოსავლის დასტური საჭიროა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "monthly",
+    "georgian": "ყოველთვიური",
+    "pronunciation": "/ˈmʌnθli/",
+    "example_en": "The monthly rent is $1200.",
+    "example_ka": "ყოველთვიური ქირა $1200-ია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "weekly",
+    "georgian": "ყოველკვირეული",
+    "pronunciation": "/ˈwiːkli/",
+    "example_en": "Some places offer weekly rentals.",
+    "example_ka": "ზოგიერთი ადგილი ყოველკვირეულ ქირას გთავაზობს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "sublet",
+    "georgian": "ქვეიჯარა",
+    "pronunciation": "/ˈsʌblet/",
+    "example_en": "I'm looking for someone to sublet.",
+    "example_ka": "ქვეიჯარაზე ვინმეს ვეძებ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "duplex",
+    "georgian": "დუპლექსი",
+    "pronunciation": "/ˈduːpleks/",
+    "example_en": "We live in a duplex apartment.",
+    "example_ka": "დუპლექს ბინაში ვცხოვრობთ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "condo",
+    "georgian": "კონდომინიუმი",
+    "pronunciation": "/ˈkɒndoʊ/",
+    "example_en": "This condo is for rent.",
+    "example_ka": "ეს კონდომინიუმი ქირავდება.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "townhouse",
+    "georgian": "ტაუნჰაუსი",
+    "pronunciation": "/ˈtaʊnhaʊs/",
+    "example_en": "The townhouse has a small garden.",
+    "example_ka": "ტაუნჰაუსს პატარა ბაღი აქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "penthouse",
+    "georgian": "პენტჰაუსი",
+    "pronunciation": "/ˈpenthaʊs/",
+    "example_en": "The penthouse has amazing views.",
+    "example_ka": "პენტჰაუსიდან შესანიშნავი ხედია.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "loft",
+    "georgian": "ლოფტი",
+    "pronunciation": "/lɔːft/",
+    "example_en": "I love the open space in this loft.",
+    "example_ka": "ამ ლოფტში ღია სივრცე მომწონს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "ceiling",
+    "georgian": "ჭერი",
+    "pronunciation": "/ˈsiːlɪŋ/",
+    "example_en": "The ceiling is very high.",
+    "example_ka": "ჭერი ძალიან მაღალია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "wall",
+    "georgian": "კედელი",
+    "pronunciation": "/wɔːl/",
+    "example_en": "Can I paint the walls?",
+    "example_ka": "კედლების ღებვა შეიძლება?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "carpet",
+    "georgian": "ხალიჩა",
+    "pronunciation": "/ˈkɑːrpɪt/",
+    "example_en": "The bedroom has new carpet.",
+    "example_ka": "საძინებელში ახალი ხალიჩაა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "hardwood",
+    "georgian": "მყარი ხე",
+    "pronunciation": "/ˈhɑːrdwʊd/",
+    "example_en": "I prefer hardwood floors.",
+    "example_ka": "მყარი ხის იატაკს ვანჯობებ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "tile",
+    "georgian": "კრამიტი",
+    "pronunciation": "/taɪl/",
+    "example_en": "The bathroom has ceramic tiles.",
+    "example_ka": "სააბაზანოში კერამიკული კრამიტია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "electricity",
+    "georgian": "ელექტროენერგია",
+    "pronunciation": "/ɪˌlekˈtrɪsɪti/",
+    "example_en": "Electricity is included in rent.",
+    "example_ka": "ელექტროენერგია ქირაში შედის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "water",
+    "georgian": "წყალი",
+    "pronunciation": "/ˈwɔːtər/",
+    "example_en": "Water bills are separate.",
+    "example_ka": "წყლის გადასახადები ცალკეა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "gas",
+    "georgian": "გაზი",
+    "pronunciation": "/ɡæs/",
+    "example_en": "Gas for heating is expensive.",
+    "example_ka": "გათბობის გაზი ძვირია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "internet",
+    "georgian": "ინტერნეტი",
+    "pronunciation": "/ˈɪntərnet/",
+    "example_en": "Does the apartment include internet?",
+    "example_ka": "ბინაში ინტერნეტი შედის?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "cable",
+    "georgian": "კაბელი",
+    "pronunciation": "/ˈkeɪbəl/",
+    "example_en": "Cable TV is available.",
+    "example_ka": "კაბელური ტელევიზია ხელმისაწვდომია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "furnished",
+    "georgian": "ავეჯით",
+    "pronunciation": "/ˈfɜːrnɪʃt/",
+    "example_en": "The apartment comes fully furnished.",
+    "example_ka": "ბინა სრულად ავეჯითაა უზრუნველყოფილი.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "appliances",
+    "georgian": "მოწყობილობები",
+    "pronunciation": "/əˈplaɪənsɪz/",
+    "example_en": "All appliances are included.",
+    "example_ka": "ყველა მოწყობილობა შედის.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "dishwasher",
+    "georgian": "ჭურჭლის რეცხვის მანქანა",
+    "pronunciation": "/ˈdɪʃwɒʃər/",
+    "example_en": "The kitchen has a dishwasher.",
+    "example_ka": "სამზარეულოში ჭურჭლის რეცხვის მანქანა არის.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "washer",
+    "georgian": "სარეცხი მანქანა",
+    "pronunciation": "/ˈwɒʃər/",
+    "example_en": "There's a washer and dryer unit.",
+    "example_ka": "სარეცხი და მშრალი მანქანის ბლოკი არის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "dryer",
+    "georgian": "გამშრალი",
+    "pronunciation": "/ˈdraɪər/",
+    "example_en": "The dryer is broken.",
+    "example_ka": "გამშრალი გაფუჭებულია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "microwave",
+    "georgian": "მიკროტალღური ღუმელი",
+    "pronunciation": "/ˈmaɪkrəweɪv/",
+    "example_en": "The microwave needs to be replaced.",
+    "example_ka": "მიკროტალღური ღუმელი შესაცვლელია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "conditioning",
+    "georgian": "კონდიციონირება",
+    "pronunciation": "/kənˈdɪʃənɪŋ/",
+    "example_en": "Air conditioning is essential in summer.",
+    "example_ka": "ზაფხულში ჰაერის კონდიციონირება აუცილებელია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "ventilation",
+    "georgian": "ვენტილაცია",
+    "pronunciation": "/ˌventɪˈleɪʃən/",
+    "example_en": "The apartment has poor ventilation.",
+    "example_ka": "ბინას ცუდი ვენტილაცია აქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "thermostat",
+    "georgian": "თერმოსტატი",
+    "pronunciation": "/ˈθɜːrməstæt/",
+    "example_en": "How do I adjust the thermostat?",
+    "example_ka": "როგორ მოვარეგულირო თერმოსტატი?",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "buzzer",
+    "georgian": "ზარი",
+    "pronunciation": "/ˈbʌzər/",
+    "example_en": "Press the buzzer to enter.",
+    "example_ka": "შესასვლელად ზარს დააჭირე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "intercom",
+    "georgian": "ინტერკომი",
+    "pronunciation": "/ˈɪntərkɒm/",
+    "example_en": "The intercom system is broken.",
+    "example_ka": "ინტერკომის სისტემა გაფუჭებულია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "mailbox",
+    "georgian": "საფოსტო ყუთი",
+    "pronunciation": "/ˈmeɪlbɒks/",
+    "example_en": "Where is my mailbox?",
+    "example_ka": "სად არის ჩემი საფოსტო ყუთი?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "storage",
+    "georgian": "საცავი",
+    "pronunciation": "/ˈstɔːrɪdʒ/",
+    "example_en": "Is there storage space available?",
+    "example_ka": "საცავი ადგილი ხელმისაწვდომია?",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "stairs",
+    "georgian": "კიბე",
+    "pronunciation": "/sterz/",
+    "example_en": "I live on the second floor, no stairs.",
+    "example_ka": "მეორე სართულზე ვცხოვრობ, კიბე არ არის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "hallway",
+    "georgian": "დერეფანი",
+    "pronunciation": "/ˈhɔːlweɪ/",
+    "example_en": "The hallway is well-lit.",
+    "example_ka": "დერეფანი კარგად არის განათებული.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "emergency",
+    "georgian": "საგანგებო",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Know the emergency exit routes.",
+    "example_ka": "იცოდე საგანგებო გასასვლელის გზები.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "fire",
+    "georgian": "ცეცხლი",
+    "pronunciation": "/ˈfaɪər/",
+    "example_en": "Check the fire alarm regularly.",
+    "example_ka": "ცეცხლის სიგნალიზაცია რეგულარულად შეამოწმე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "smoke",
+    "georgian": "კვამლი",
+    "pronunciation": "/smoʊk/",
+    "example_en": "Install smoke detectors in every room.",
+    "example_ka": "ყველა ოთახში კვამლის დეტექტორები დააყენე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "alarm",
+    "georgian": "სიგნალიზაცია",
+    "pronunciation": "/əˈlɑːrm/",
+    "example_en": "The alarm went off at midnight.",
+    "example_ka": "სიგნალიზაცია შუაღამეს ჩაირთო.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "/ɪnˈʃʊrəns/",
+    "example_en": "Do I need renter's insurance?",
+    "example_ka": "მქირავებლის დაზღვევა მჭირდება?",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "liability",
+    "georgian": "პასუხისმგებლობა",
+    "pronunciation": "/ˌlaɪəˈbɪlɪti/",
+    "example_en": "Check your liability coverage.",
+    "example_ka": "შენი პასუხისმგებლობის დაფარვა შეამოწმე.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "reference",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˈrefrəns/",
+    "example_en": "I need three references from previous landlords.",
+    "example_ka": "მჭირდება სამი რეკომენდაცია წინა მეპატრონეებისგან.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "guarantee",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˌɡerənˈtiː/",
+    "example_en": "Do I need a guarantor?",
+    "example_ka": "გარანტის გამრიცხველი მჭირდება?",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "cosigner",
+    "georgian": "თანაგარანტი",
+    "pronunciation": "/ˈkoʊsaɪnər/",
+    "example_en": "My parents will be my cosigners.",
+    "example_ka": "ჩემი მშობლები იქნებიან ჩემი თანაგარანტები.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "renewal",
+    "georgian": "განახლება",
+    "pronunciation": "/rɪˈnuːəl/",
+    "example_en": "The lease renewal is next month.",
+    "example_ka": "იჯარის განახლება შემდეგ თვეშია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "termination",
+    "georgian": "შეწყვეტა",
+    "pronunciation": "/ˌtɜːrmɪˈneɪʃən/",
+    "example_en": "Early termination requires a penalty.",
+    "example_ka": "ადრეული შეწყვეტა ჯარიმას მოითხოვს.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "penalty",
+    "georgian": "ჯარიმა",
+    "pronunciation": "/ˈpenəlti/",
+    "example_en": "There's a penalty for late rent payment.",
+    "example_ka": "ქირის გაჭიანურებისთვის ჯარიმა არის.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "notice",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈnoʊtɪs/",
+    "example_en": "Give 30 days notice before moving out.",
+    "example_ka": "გამოსვლამდე 30 დღის შეტყობინება მიეცით.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "violation",
+    "georgian": "დარღვევა",
+    "pronunciation": "/ˌvaɪəˈleɪʃən/",
+    "example_en": "Any lease violation will result in eviction.",
+    "example_ka": "ნებისმიერი იჯარის დარღვევა გამოსახლებას გამოიწვევს.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "property",
+    "georgian": "ქონება",
+    "pronunciation": "/ˈprɑːpərti/",
+    "example_en": "This is private property.",
+    "example_ka": "ეს კერძო ქონებაა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "management",
+    "georgian": "მენეჯმენტი",
+    "pronunciation": "/ˈmænɪdʒmənt/",
+    "example_en": "Contact property management for issues.",
+    "example_ka": "პრობლემების გამო ქონების მენეჯმენტს მიმართეთ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "superintendent",
+    "georgian": "ზედამხედველი",
+    "pronunciation": "/ˌsuːpərɪnˈtendənt/",
+    "example_en": "The superintendent lives in the building.",
+    "example_ka": "ზედამხედველი შენობაში ცხოვრობს.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "vacancy",
+    "georgian": "ცარიელი ბინა",
+    "pronunciation": "/ˈveɪkənsi/",
+    "example_en": "There's a vacancy on the third floor.",
+    "example_ka": "მესამე სართულზე ცარიელი ბინაა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "available",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈveɪləbəl/",
+    "example_en": "The apartment is available immediately.",
+    "example_ka": "ბინა დაუყოვნებლივ არის ხელმისაწვდომი.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "occupied",
+    "georgian": "დაკავებული",
+    "pronunciation": "/ˈɒkjupaɪd/",
+    "example_en": "The apartment is currently occupied.",
+    "example_ka": "ბინა ამჟამად დაკავებულია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "spacious",
+    "georgian": "ფართო",
+    "pronunciation": "/ˈspeɪʃəs/",
+    "example_en": "This apartment is very spacious.",
+    "example_ka": "ეს ბინა ძალიან ფართოა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "cramped",
+    "georgian": "ტანგიანი",
+    "pronunciation": "/kræmpt/",
+    "example_en": "The studio feels cramped.",
+    "example_ka": "სტუდია ტანგიანი ჩანს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "cozy",
+    "georgian": "მყუდრო",
+    "pronunciation": "/ˈkoʊzi/",
+    "example_en": "The apartment has a cozy atmosphere.",
+    "example_ka": "ბინას მყუდრო ატმოსფერო აქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "modern",
+    "georgian": "თანამედროვე",
+    "pronunciation": "/ˈmɑːdərn/",
+    "example_en": "I love the modern kitchen design.",
+    "example_ka": "თანამედროვე სამზარეულოს დიზაინი მომწონს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "vintage",
+    "georgian": "ვინტაჟური",
+    "pronunciation": "/ˈvɪntɪdʒ/",
+    "example_en": "The building has vintage charm.",
+    "example_ka": "შენობას ვინტაჟური ხიბლი აქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "renovated",
+    "georgian": "განახლებული",
+    "pronunciation": "/ˈrenəveɪtɪd/",
+    "example_en": "The apartment was recently renovated.",
+    "example_ka": "ბინა ბოლოს განახლდა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "updated",
+    "georgian": "განახლებული",
+    "pronunciation": "/ʌpˈdeɪtɪd/",
+    "example_en": "All appliances have been updated.",
+    "example_ka": "ყველა მოწყობილობა განახლდა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "affordable",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrdəbəl/",
+    "example_en": "We need affordable housing options.",
+    "example_ka": "ხელმისაწვდომი საცხოვრებელი ვარიანტები გვჭირდება.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspensɪv/",
+    "example_en": "Rent in this area is very expensive.",
+    "example_ka": "ამ რაიონში ქირა ძალიან ძვირია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "reasonable",
+    "georgian": "გონივრული",
+    "pronunciation": "/ˈriːzənəbəl/",
+    "example_en": "The rent price is reasonable.",
+    "example_ka": "ქირის ფასი გონივრულია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "negotiable",
+    "georgian": "მოლაპარაკებადი",
+    "pronunciation": "/nɪˈɡoʊʃiəbəl/",
+    "example_en": "The rent price is negotiable.",
+    "example_ka": "ქირის ფასი მოლაპარაკებადია.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "increase",
+    "georgian": "მომატება",
+    "pronunciation": "/ɪnˈkriːs/",
+    "example_en": "There will be a rent increase next year.",
+    "example_ka": "შემდეგ წელს ქირის მომატება იქნება.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "decrease",
+    "georgian": "შემცირება",
+    "pronunciation": "/dɪˈkriːs/",
+    "example_en": "I'm hoping for a rent decrease.",
+    "example_ka": "ქირის შემცირებას ველოდები.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "This apartment fits my budget.",
+    "example_ka": "ეს ბინა ჩემს ბიუჯეტს ერგება.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "viewable",
+    "georgian": "სანახავი",
+    "pronunciation": "/ˈvjuːəbəl/",
+    "example_en": "The apartment is viewable this weekend.",
+    "example_ka": "ბინა ამ შაბათ-კვირას სანახავია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "viewing",
+    "georgian": "დათვალიერება",
+    "pronunciation": "/ˈvjuːɪŋ/",
+    "example_en": "I have a viewing scheduled tomorrow.",
+    "example_ka": "ხვალ დათვალიერება მაქვს დანიშნული.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "appointment",
+    "georgian": "ვიზიტი",
+    "pronunciation": "/əˈpɔɪntmənt/",
+    "example_en": "Make an appointment to see the apartment.",
+    "example_ka": "ბინის საყურებლად ვიზიტი დანიშნე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "showing",
+    "georgian": "ჩვენება",
+    "pronunciation": "/ˈʃoʊɪŋ/",
+    "example_en": "There's a showing at 3 PM today.",
+    "example_ka": "დღეს 3 საათზე ჩვენება არის.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "broker",
+    "georgian": "ბროკერი",
+    "pronunciation": "/ˈbroʊkər/",
+    "example_en": "The broker showed us three apartments.",
+    "example_ka": "ბროკერმა სამი ბინა გვაჩვენა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "agent",
+    "georgian": "აგენტი",
+    "pronunciation": "/ˈeɪdʒənt/",
+    "example_en": "Call the real estate agent.",
+    "example_ka": "უძრავი ქონების აგენტს დაურეკე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "commission",
+    "georgian": "კომისია",
+    "pronunciation": "/kəˈmɪʃən/",
+    "example_en": "The broker charges a commission fee.",
+    "example_ka": "ბროკერი კომისიის საფასურს იღებს.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "finder",
+    "georgian": "მომძებნელი",
+    "pronunciation": "/ˈfaɪndər/",
+    "example_en": "I paid a finder's fee.",
+    "example_ka": "მომძებნელის საფასური გადავიხადე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "listing",
+    "georgian": "ჩამონათვალი",
+    "pronunciation": "/ˈlɪstɪŋ/",
+    "example_en": "Check the online listing.",
+    "example_ka": "ონლაინ ჩამონათვალი შეამოწმე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "advertisement",
+    "georgian": "რეკლამა",
+    "pronunciation": "/ˌædvərˈtaɪzmənt/",
+    "example_en": "I saw the advertisement online.",
+    "example_ka": "რეკლამა ონლაინ ვნახე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "classified",
+    "georgian": "კლასიფიცირებული",
+    "pronunciation": "/ˈklæsɪfaɪd/",
+    "example_en": "Look in the classified section.",
+    "example_ka": "კლასიფიცირებულ განყოფილებაში ნახე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "website",
+    "georgian": "ვებსაიტი",
+    "pronunciation": "/ˈwebsaɪt/",
+    "example_en": "Search apartment websites.",
+    "example_ka": "ბინების ვებსაიტებზე ძებნე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "online",
+    "georgian": "ონლაინ",
+    "pronunciation": "/ˈɔnˌlaɪn/",
+    "example_en": "Most searches are done online now.",
+    "example_ka": "ახლა ძებნების უმეტესობა ონლაინ ხდება.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "search",
+    "georgian": "ძებნა",
+    "pronunciation": "/sɜːrtʃ/",
+    "example_en": "My apartment search took two months.",
+    "example_ka": "ბინის ძებნა ორი თვე მისჭირდა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "criteria",
+    "georgian": "კრიტერიუმები",
+    "pronunciation": "/kraɪˈtɪriə/",
+    "example_en": "What are your search criteria?",
+    "example_ka": "რა არის შენი ძებნის კრიტერიუმები?",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "requirements",
+    "georgian": "მოთხოვნები",
+    "pronunciation": "/rɪˈkwaɪrməns/",
+    "example_en": "The income requirements are strict.",
+    "example_ka": "შემოსავლის მოთხოვნები მკაცრია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "qualifications",
+    "georgian": "კვალიფიკაცია",
+    "pronunciation": "/ˌkwɒlɪfɪˈkeɪʃənz/",
+    "example_en": "Do I meet the qualifications?",
+    "example_ka": "კვალიფიკაციას ვაკმაყოფილებ?",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "approved",
+    "georgian": "დამტკიცებული",
+    "pronunciation": "/əˈpruːvd/",
+    "example_en": "My application was approved.",
+    "example_ka": "ჩემი განაცხადი დამტკიცდა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "rejected",
+    "georgian": "უარყოფილი",
+    "pronunciation": "/rɪˈdʒektɪd/",
+    "example_en": "Unfortunately, I was rejected.",
+    "example_ka": "სამწუხაროდ, ვიყავი უარყოფილი.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "pending",
+    "georgian": "განხილვაში",
+    "pronunciation": "/ˈpendɪŋ/",
+    "example_en": "My application is still pending.",
+    "example_ka": "ჩემი განაცხადი ჯერ კიდევ განხილვაშია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "waiting",
+    "georgian": "ლოდინი",
+    "pronunciation": "/ˈweɪtɪŋ/",
+    "example_en": "I'm on the waiting list.",
+    "example_ka": "ლოდინის სიაში ვარ.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "list",
+    "georgian": "სია",
+    "pronunciation": "/lɪst/",
+    "example_en": "Add my name to the list.",
+    "example_ka": "ჩემი სახელი სიაში ჩაამატეთ.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "priority",
+    "georgian": "პრიორიტეტი",
+    "pronunciation": "/praɪˈɒrɪti/",
+    "example_en": "Students get priority for housing.",
+    "example_ka": "სტუდენტები საცხოვრებელზე პრიორიტეტს იღებენ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "preference",
+    "georgian": "უპირატესობა",
+    "pronunciation": "/ˈprefrəns/",
+    "example_en": "I have no preference for floor level.",
+    "example_ka": "სართულის დონეზე უპირატესობა არ მაქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "flexible",
+    "georgian": "მოქნილი",
+    "pronunciation": "/ˈfleksəbəl/",
+    "example_en": "I'm flexible with the move-in date.",
+    "example_ka": "შესახლების თარიღზე მოქნილი ვარ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "rigid",
+    "georgian": "მკაცრი",
+    "pronunciation": "/ˈrɪdʒɪd/",
+    "example_en": "The lease terms are very rigid.",
+    "example_ka": "იჯარის პირობები ძალიან მკაცრია.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "terms",
+    "georgian": "პირობები",
+    "pronunciation": "/tɜːrmz/",
+    "example_en": "Read all the terms carefully.",
+    "example_ka": "ყველა პირობა ყურადღებით წაიკითხე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "conditions",
+    "georgian": "პირობები",
+    "pronunciation": "/kənˈdɪʃənz/",
+    "example_en": "What are the rental conditions?",
+    "example_ka": "რა არის ქირავების პირობები?",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "clause",
+    "georgian": "პუნქტი",
+    "pronunciation": "/klɔːz/",
+    "example_en": "There's a pet clause in the lease.",
+    "example_ka": "იჯარაში ცხოველების პუნქტია.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "provision",
+    "georgian": "დათქმა",
+    "pronunciation": "/prəˈvɪʒən/",
+    "example_en": "Check the early termination provision.",
+    "example_ka": "ადრეული შეწყვეტის დათქმა შეამოწმე.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "agreement",
+    "georgian": "შეთანხმება",
+    "pronunciation": "/əˈɡriːmənt/",
+    "example_en": "Sign the rental agreement.",
+    "example_ka": "ქირავების შეთანხმება ხელი მოაწერე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "document",
+    "georgian": "დოკუმენტი",
+    "pronunciation": "/ˈdɑːkjumənt/",
+    "example_en": "Keep all rental documents safe.",
+    "example_ka": "ყველა ქირავების დოკუმენტი უსაფრთხოდ შეინახე.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "paperwork",
+    "georgian": "ქაღალდები",
+    "pronunciation": "/ˈpeɪpərwɜːrk/",
+    "example_en": "There's a lot of paperwork involved.",
+    "example_ka": "ბევრი ქაღალდია ჩართული.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "signature",
+    "georgian": "ხელმოწერა",
+    "pronunciation": "/ˈsɪɡnətʃər/",
+    "example_en": "Your signature is required here.",
+    "example_ka": "აქ შენი ხელმოწერა სჭირდება.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "witness",
+    "georgian": "მოწმე",
+    "pronunciation": "/ˈwɪtnəs/",
+    "example_en": "We need a witness for signing.",
+    "example_ka": "ხელმოწერისთვის მოწმე გვჭირდება.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "notarize",
+    "georgian": "ნოტარიზაცია",
+    "pronunciation": "/ˈnoʊtəraɪz/",
+    "example_en": "The lease must be notarized.",
+    "example_ka": "იჯარა ნოტარიზებული უნდა იყოს.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "legal",
+    "georgian": "იურიდიული",
+    "pronunciation": "/ˈliːɡəl/",
+    "example_en": "Seek legal advice before signing.",
+    "example_ka": "ხელმოწერამდე იურიდიული რჩევა მოიპოვე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "binding",
+    "georgian": "სავალდებულო",
+    "pronunciation": "/ˈbaɪndɪŋ/",
+    "example_en": "This contract is legally binding.",
+    "example_ka": "ეს კონტრაქტი იურიდიულად სავალდებულოა.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "enforceable",
+    "georgian": "აღსრულებადი",
+    "pronunciation": "/ɪnˈfɔːrsəbəl/",
+    "example_en": "All clauses are enforceable by law.",
+    "example_ka": "ყველა პუნქტი კანონით აღსრულებადია.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "dispute",
+    "georgian": "დავა",
+    "pronunciation": "/dɪˈspjuːt/",
+    "example_en": "We had a dispute over damages.",
+    "example_ka": "დაზიანების გამო დავა გვქონდა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "mediation",
+    "georgian": "შუამავლობა",
+    "pronunciation": "/ˌmiːdiˈeɪʃən/",
+    "example_en": "We'll try mediation first.",
+    "example_ka": "ჯერ შუამავლობას მივმართავთ.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "arbitration",
+    "georgian": "არბიტრაჟი",
+    "pronunciation": "/ˌɑːrbɪˈtreɪʃən/",
+    "example_en": "The dispute went to arbitration.",
+    "example_ka": "დავა არბიტრაჟში წავიდა.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "court",
+    "georgian": "სასამართლო",
+    "pronunciation": "/kɔːrt/",
+    "example_en": "We might have to go to court.",
+    "example_ka": "შესაძლოა სასამართლოში წავიდეთ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "lawsuit",
+    "georgian": "სარჩელი",
+    "pronunciation": "/ˈlɔːsuːt/",
+    "example_en": "He filed a lawsuit against the landlord.",
+    "example_ka": "მან მეპატრონის წინააღმდეგ სარჩელი შეიტანა.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "settlement",
+    "georgian": "ზავი",
+    "pronunciation": "/ˈsetəlmənt/",
+    "example_en": "We reached a settlement.",
+    "example_ka": "ზავს მივაღწიეთ.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "compensation",
+    "georgian": "კომპენსაცია",
+    "pronunciation": "/ˌkɑːmpənˈseɪʃən/",
+    "example_en": "I received compensation for damages.",
+    "example_ka": "დაზიანებისთვის კომპენსაცია მივიღე.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "refund",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "I'm requesting a security deposit refund.",
+    "example_ka": "უზრუნველყოფის დეპოზიტის დაბრუნებას ვითხოვ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "withhold",
+    "georgian": "შეჩერება",
+    "pronunciation": "/wɪðˈhoʊld/",
+    "example_en": "The landlord wants to withhold the deposit.",
+    "example_ka": "მეპატრონე დეპოზიტის შეჩერებას უნდა.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "deduction",
+    "georgian": "დაკლება",
+    "pronunciation": "/dɪˈdʌkʃən/",
+    "example_en": "There was a deduction for cleaning.",
+    "example_ka": "დასუფთავებისთვის დაკლება იყო.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "cleaning",
+    "georgian": "დასუფთავება",
+    "pronunciation": "/ˈkliːnɪŋ/",
+    "example_en": "Professional cleaning is required.",
+    "example_ka": "პროფესიონალური დასუფთავება საჭიროა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "professional",
+    "georgian": "პროფესიონალი",
+    "pronunciation": "/prəˈfeʃənəl/",
+    "example_en": "Hire a professional cleaning service.",
+    "example_ka": "პროფესიონალი დასუფთავების სერვისი დაიქირავე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "service",
+    "georgian": "სერვისი",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "The building offers concierge service.",
+    "example_ka": "შენობა კონსიერჟ სერვისს გთავაზობს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "concierge",
+    "georgian": "კონსიერჟი",
+    "pronunciation": "/ˌkɑːnsiˈerʒ/",
+    "example_en": "The concierge accepts packages.",
+    "example_ka": "კონსიერჟი ამანათებს იღებს.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "amenities",
+    "georgian": "კომფორტი",
+    "pronunciation": "/əˈmenɪtiz/",
+    "example_en": "The building has great amenities.",
+    "example_ka": "შენობას შესანიშნავი კომფორტი აქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "facilities",
+    "georgian": "ობიექტები",
+    "pronunciation": "/fəˈsɪlɪtiz/",
+    "example_en": "Check out the gym facilities.",
+    "example_ka": "სპორტული დარბაზის ობიექტები შეამოწმე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "gym",
+    "georgian": "სპორტდარბაზი",
+    "pronunciation": "/dʒɪm/",
+    "example_en": "The building has a gym.",
+    "example_ka": "შენობას სპორტდარბაზი აქვს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "pool",
+    "georgian": "აუზი",
+    "pronunciation": "/puːl/",
+    "example_en": "There's a rooftop pool.",
+    "example_ka": "სახურავზე აუზი არის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "rooftop",
+    "georgian": "სახურავი",
+    "pronunciation": "/ˈruːftɑːp/",
+    "example_en": "The rooftop terrace is beautiful.",
+    "example_ka": "სახურავის ტერასა ლამაზია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "terrace",
+    "georgian": "ტერასა",
+    "pronunciation": "/ˈterəs/",
+    "example_en": "I love sitting on the terrace.",
+    "example_ka": "ტერასაზე ჯდომა მიყვარს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "garden",
+    "georgian": "ბაღი",
+    "pronunciation": "/ˈɡɑːrdən/",
+    "example_en": "The apartment has a small garden.",
+    "example_ka": "ბინას პატარა ბაღი აქვს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "courtyard",
+    "georgian": "ეზო",
+    "pronunciation": "/ˈkɔːrtjɑːrd/",
+    "example_en": "Children play in the courtyard.",
+    "example_ka": "ბავშვები ეზოში ლაშქრობენ.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "playground",
+    "georgian": "სათამაშო მოედანი",
+    "pronunciation": "/ˈpleɪɡraʊnd/",
+    "example_en": "There's a playground for kids.",
+    "example_ka": "ბავშვებისთვის სათამაშო მოედანი არის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "community",
+    "georgian": "საზოგადოება",
+    "pronunciation": "/kəˈmjuːnəti/",
+    "example_en": "It's a friendly community.",
+    "example_ka": "ეს მეგობრული საზოგადოებაა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "neighborhood",
+    "georgian": "უბანი",
+    "pronunciation": "/ˈneɪbərhʊd/",
+    "example_en": "I love this neighborhood.",
+    "example_ka": "ეს უბანი მიყვარს.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "district",
+    "georgian": "უბანი",
+    "pronunciation": "/ˈdɪstrɪkt/",
+    "example_en": "This is a safe district.",
+    "example_ka": "ეს უსაფრთხო უბანია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "area",
+    "georgian": "რაიონი",
+    "pronunciation": "/ˈeriə/",
+    "example_en": "This area has good schools.",
+    "example_ka": "ამ რაიონში კარგი სკოლები არის.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "zone",
+    "georgian": "ზონა",
+    "pronunciation": "/zoʊn/",
+    "example_en": "This is a residential zone.",
+    "example_ka": "ეს საცხოვრებელი ზონაა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "residential",
+    "georgian": "საცხოვრებელი",
+    "pronunciation": "/ˌrezɪˈdenʃəl/",
+    "example_en": "It's a quiet residential area.",
+    "example_ka": "ეს წყნარი საცხოვრებელი რაიონია.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "commercial",
+    "georgian": "კომერციული",
+    "pronunciation": "/kəˈmɜːrʃəl/",
+    "example_en": "Avoid commercial areas if you want quiet.",
+    "example_ka": "წყნარი ძებნის მიზნით კომერციული რაიონები აარიდე.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "mixed-use",
+    "georgian": "შერეული დანიშნულება",
+    "pronunciation": "/mɪkst juːs/",
+    "example_en": "This is a mixed-use building.",
+    "example_ka": "ეს შერეული დანიშნულების შენობაა.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "zoning",
+    "georgian": "ზონირება",
+    "pronunciation": "/ˈzoʊnɪŋ/",
+    "example_en": "Check the zoning laws.",
+    "example_ka": "ზონირების კანონები შეამოწმე.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "regulations",
+    "georgian": "რეგულაციები",
+    "pronunciation": "/ˌreɡjəˈleɪʃənz/",
+    "example_en": "Follow all building regulations.",
+    "example_ka": "შენობის ყველა რეგულაცია დაიცავით.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "compliance",
+    "georgian": "შესაბამისობა",
+    "pronunciation": "/kəmˈplaɪəns/",
+    "example_en": "The building is in full compliance.",
+    "example_ka": "შენობა სრულ შესაბამისობაშია.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "inspection",
+    "georgian": "ინსპექცია",
+    "pronunciation": "/ɪnˈspekʃən/",
+    "example_en": "The annual safety inspection passed.",
+    "example_ka": "წლიური უსაფრთხოების ინსპექცია გაიარა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "certificate",
+    "georgian": "სერთიფიკატი",
+    "pronunciation": "/sərˈtɪfɪkət/",
+    "example_en": "The building has all required certificates.",
+    "example_ka": "შენობას ყველა საჭირო სერთიფიკატი აქვს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "permit",
+    "georgian": "ნებართვა",
+    "pronunciation": "/ˈpɜːrmɪt/",
+    "example_en": "Check if permits are current.",
+    "example_ka": "შეამოწმეთ არის თუ არა ნებართვები მოქმედი.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "violation",
+    "georgian": "დარღვევა",
+    "pronunciation": "/ˌvaɪəˈleɪʃən/",
+    "example_en": "Report any code violations.",
+    "example_ka": "კოდექსის ნებისმიერი დარღვევა შეატყობინეთ.",
+    "category": "apartment-rent",
+    "level": "advanced"
+  },
+  {
+    "english": "code",
+    "georgian": "კოდექსი",
+    "pronunciation": "/koʊd/",
+    "example_en": "The building meets all safety codes.",
+    "example_ka": "შენობა ყველა უსაფრთხოების კოდექსს აკმაყოფილებს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "standards",
+    "georgian": "სტანდარტები",
+    "pronunciation": "/ˈstændərdz/",
+    "example_en": "All apartments meet quality standards.",
+    "example_ka": "ყველა ბინა ხარისხის სტანდარტებს აკმაყოფილებს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɑːləti/",
+    "example_en": "The construction quality is excellent.",
+    "example_ka": "მშენებლობის ხარისხი შესანიშნავია.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "construction",
+    "georgian": "მშენებლობა",
+    "pronunciation": "/kənˈstrʌkʃən/",
+    "example_en": "New construction offers modern features.",
+    "example_ka": "ახალი მშენებლობა თანამედროვე ფუნქციებს გთავაზობს.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  },
+  {
+    "english": "building",
+    "georgian": "შენობა",
+    "pronunciation": "/ˈbɪldɪŋ/",
+    "example_en": "The building is 10 stories tall.",
+    "example_ka": "შენობა 10 სართულისაა.",
+    "category": "apartment-rent",
+    "level": "beginner"
+  },
+  {
+    "english": "structure",
+    "georgian": "სტრუქტურა",
+    "pronunciation": "/ˈstrʌktʃər/",
+    "example_en": "The building structure is very solid.",
+    "example_ka": "შენობის სტრუქტურა ძალიან მტკიცეა.",
+    "category": "apartment-rent",
+    "level": "intermediate"
+  }
 ]

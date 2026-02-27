@@ -1,32 +1,1802 @@
 [
-  {"english": "Passport control", "georgian": "პასპორტის კონტროლი", "pronunciation": "/ˈpɑːspɔːt kənˈtrəʊl/", "example_en": "Go to passport control after landing.", "example_ka": "დაჯდომის შემდეგ პასპორტის კონტროლზე მიდი.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Customs", "georgian": "საბაჟო", "pronunciation": "/ˈkʌstəmz/", "example_en": "Do you have anything to declare at customs?", "example_ka": "საბაჟოზე გაქვს რამე გასაცხადებელი?", "category": "travel-abroad", "level": "A2"},
-  {"english": "Currency exchange", "georgian": "ვალუტის გაცვლა", "pronunciation": "/ˈkʌrənsi ɪksˈtʃeɪndʒ/", "example_en": "Where is the nearest currency exchange?", "example_ka": "სად არის უახლოესი ვალუტის გაცვლის პუნქტი?", "category": "travel-abroad", "level": "A2"},
-  {"english": "Hostel", "georgian": "ჰოსტელი", "pronunciation": "/ˈhɒstəl/", "example_en": "Hostels are cheaper than hotels.", "example_ka": "ჰოსტელები სასტუმროებზე იაფია.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Layover", "georgian": "გადაჯდომა", "pronunciation": "/ˈleɪəʊvər/", "example_en": "We have a 4-hour layover in Istanbul.", "example_ka": "სტამბულში 4-საათიანი გადაჯდომა გვაქვს.", "category": "travel-abroad", "level": "B1"},
-  {"english": "Round trip", "georgian": "ორმხრივი ბილეთი", "pronunciation": "/raʊnd trɪp/", "example_en": "A round trip ticket is usually cheaper.", "example_ka": "ორმხრივი ბილეთი ჩვეულებრივ უფრო იაფია.", "category": "travel-abroad", "level": "A2"},
-  {"english": "One-way", "georgian": "ცალმხრივი", "pronunciation": "/wʌn weɪ/", "example_en": "I bought a one-way ticket to London.", "example_ka": "ლონდონში ცალმხრივი ბილეთი ვიყიდე.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Backpacking", "georgian": "ზურგჩანთით მოგზაურობა", "pronunciation": "/ˈbækpækɪŋ/", "example_en": "Backpacking through Europe is a great experience.", "example_ka": "ევროპაში ზურგჩანთით მოგზაურობა შესანიშნავი გამოცდილებაა.", "category": "travel-abroad", "level": "B1"},
-  {"english": "Jet lag", "georgian": "ჯეთ ლეგი", "pronunciation": "/dʒet læɡ/", "example_en": "I had terrible jet lag after flying to America.", "example_ka": "ამერიკაში ფრენის შემდეგ საშინელი ჯეთ ლეგი მქონდა.", "category": "travel-abroad", "level": "B1"},
-  {"english": "Sightseeing", "georgian": "ღირშესანიშნაობების ნახვა", "pronunciation": "/ˈsaɪtsiːɪŋ/", "example_en": "We spent the whole day sightseeing.", "example_ka": "მთელი დღე ღირშესანიშნაობების ნახვას მოვახმარეთ.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Tourist trap", "georgian": "ტურისტული ხაფანგი", "pronunciation": "/ˈtʊərɪst træp/", "example_en": "That restaurant is a tourist trap — too expensive!", "example_ka": "ის რესტორანი ტურისტული ხაფანგია — ძალიან ძვირია!", "category": "travel-abroad", "level": "B1"},
-  {"english": "Souvenir", "georgian": "სუვენირი", "pronunciation": "/ˌsuːvəˈnɪər/", "example_en": "I bought souvenirs for my family.", "example_ka": "ოჯახისთვის სუვენირები ვიყიდე.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Luggage", "georgian": "ბარგი", "pronunciation": "/ˈlʌɡɪdʒ/", "example_en": "My luggage was lost at the airport.", "example_ka": "აეროპორტში ბარგი დამიკარგდა.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Boarding pass", "georgian": "ჩასხდომის ბარათი", "pronunciation": "/ˈbɔːdɪŋ pɑːs/", "example_en": "Show your boarding pass at the gate.", "example_ka": "გეითზე ჩასხდომის ბარათი აჩვენე.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Delayed", "georgian": "დაგვიანებული", "pronunciation": "/dɪˈleɪd/", "example_en": "Our flight was delayed by 3 hours.", "example_ka": "ჩვენი რეისი 3 საათით დაგვიანდა.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Transfer", "georgian": "ტრანსფერი", "pronunciation": "/ˈtrænsfɜːr/", "example_en": "The hotel offers free airport transfer.", "example_ka": "სასტუმრო უფასო აეროპორტის ტრანსფერს გთავაზობთ.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Travel insurance", "georgian": "სამოგზაურო დაზღვევა", "pronunciation": "/ˈtrævəl ɪnˈʃʊərəns/", "example_en": "Always buy travel insurance before going abroad.", "example_ka": "საზღვარგარეთ გამგზავრებამდე ყოველთვის იყიდე სამოგზაურო დაზღვევა.", "category": "travel-abroad", "level": "B1"},
-  {"english": "Check in", "georgian": "რეგისტრაცია", "pronunciation": "/tʃek ɪn/", "example_en": "You can check in online 24 hours before your flight.", "example_ka": "ფრენამდე 24 საათით ადრე ონლაინ რეგისტრაცია შეგიძლია.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Aisle seat", "georgian": "გასასვლელის ადგილი", "pronunciation": "/aɪl siːt/", "example_en": "I prefer an aisle seat on long flights.", "example_ka": "გრძელ ფრენებზე გასასვლელის ადგილს ვამჯობინებ.", "category": "travel-abroad", "level": "B1"},
-  {"english": "Window seat", "georgian": "ფანჯრის ადგილი", "pronunciation": "/ˈwɪndəʊ siːt/", "example_en": "Can I have a window seat please?", "example_ka": "შეიძლება ფანჯრის ადგილი?", "category": "travel-abroad", "level": "A2"},
-  {"english": "Itinerary", "georgian": "მარშრუტი", "pronunciation": "/aɪˈtɪnərəri/", "example_en": "What's our itinerary for tomorrow?", "example_ka": "ხვალ რა მარშრუტი გვაქვს?", "category": "travel-abroad", "level": "B1"},
-  {"english": "All-inclusive", "georgian": "ყველაფერი ჩათვლით", "pronunciation": "/ɔːl ɪnˈkluːsɪv/", "example_en": "We booked an all-inclusive resort in Turkey.", "example_ka": "თურქეთში ყველაფერი ჩათვლით კურორტი დავჯავშნეთ.", "category": "travel-abroad", "level": "B1"},
-  {"english": "Book in advance", "georgian": "წინასწარ დაჯავშნა", "pronunciation": "/bʊk ɪn ədˈvɑːns/", "example_en": "Book your tickets in advance — they sell out fast.", "example_ka": "ბილეთები წინასწარ დაჯავშნე — სწრაფად იყიდება.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Departure", "georgian": "გამგზავრება", "pronunciation": "/dɪˈpɑːtʃər/", "example_en": "Check the departure time on the screen.", "example_ka": "გამგზავრების დრო ეკრანზე შეამოწმე.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Arrival", "georgian": "ჩამოსვლა", "pronunciation": "/əˈraɪvəl/", "example_en": "What time is your arrival?", "example_ka": "რამდენზეა შენი ჩამოსვლა?", "category": "travel-abroad", "level": "A2"},
-  {"english": "Guide", "georgian": "გიდი", "pronunciation": "/ɡaɪd/", "example_en": "We hired a local guide for the city tour.", "example_ka": "ქალაქის ტურისთვის ადგილობრივი გიდი დავიქირავეთ.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Tip", "georgian": "ჩაის ფული", "pronunciation": "/tɪp/", "example_en": "In America, you should always leave a tip.", "example_ka": "ამერიკაში ყოველთვის უნდა დატოვო ჩაის ფული.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Local", "georgian": "ადგილობრივი", "pronunciation": "/ˈləʊkəl/", "example_en": "Try the local food — it's always the best.", "example_ka": "ადგილობრივი საკვები სცადე — ყოველთვის საუკეთესოა.", "category": "travel-abroad", "level": "A2"},
-  {"english": "Budget trip", "georgian": "ბიუჯეტური მოგზაურობა", "pronunciation": "/ˈbʌdʒɪt trɪp/", "example_en": "You can visit Georgia on a budget trip.", "example_ka": "საქართველოში ბიუჯეტური მოგზაურობით შეგიძლია მოხვიდე.", "category": "travel-abroad", "level": "B1"},
-  {"english": "Landmark", "georgian": "ღირშესანიშნაობა", "pronunciation": "/ˈlændmɑːk/", "example_en": "The Eiffel Tower is the most famous landmark in Paris.", "example_ka": "ეიფელის კოშკი პარიზის ყველაზე ცნობილი ღირშესანიშნაობაა.", "category": "travel-abroad", "level": "B1"}
+  {
+    "english": "Customs",
+    "georgian": "საბაჟო",
+    "pronunciation": "/ˈkʌstəmz/",
+    "example_en": "Do you have anything to declare at customs?",
+    "example_ka": "საბაჟოზე გაქვს რამე გასაცხადებელი?",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Hostel",
+    "georgian": "ჰოსტელი",
+    "pronunciation": "/ˈhɒstəl/",
+    "example_en": "Hostels are cheaper than hotels.",
+    "example_ka": "ჰოსტელები სასტუმროებზე იაფია.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Layover",
+    "georgian": "გადაჯდომა",
+    "pronunciation": "/ˈleɪəʊvər/",
+    "example_en": "We have a 4-hour layover in Istanbul.",
+    "example_ka": "სტამბულში 4-საათიანი გადაჯდომა გვაქვს.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "One-way",
+    "georgian": "ცალმხრივი",
+    "pronunciation": "/wʌn weɪ/",
+    "example_en": "I bought a one-way ticket to London.",
+    "example_ka": "ლონდონში ცალმხრივი ბილეთი ვიყიდე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Backpacking",
+    "georgian": "ზურგჩანთით მოგზაურობა",
+    "pronunciation": "/ˈbækpækɪŋ/",
+    "example_en": "Backpacking through Europe is a great experience.",
+    "example_ka": "ევროპაში ზურგჩანთით მოგზაურობა შესანიშნავი გამოცდილებაა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "Sightseeing",
+    "georgian": "ღირშესანიშნაობების ნახვა",
+    "pronunciation": "/ˈsaɪtsiːɪŋ/",
+    "example_en": "We spent the whole day sightseeing.",
+    "example_ka": "მთელი დღე ღირშესანიშნაობების ნახვას მოვახმარეთ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Souvenir",
+    "georgian": "სუვენირი",
+    "pronunciation": "/ˌsuːvəˈnɪər/",
+    "example_en": "I bought souvenirs for my family.",
+    "example_ka": "ოჯახისთვის სუვენირები ვიყიდე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Luggage",
+    "georgian": "ბარგი",
+    "pronunciation": "/ˈlʌɡɪdʒ/",
+    "example_en": "My luggage was lost at the airport.",
+    "example_ka": "აეროპორტში ბარგი დამიკარგდა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Delayed",
+    "georgian": "დაგვიანებული",
+    "pronunciation": "/dɪˈleɪd/",
+    "example_en": "Our flight was delayed by 3 hours.",
+    "example_ka": "ჩვენი რეისი 3 საათით დაგვიანდა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Transfer",
+    "georgian": "ტრანსფერი",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "The hotel offers free airport transfer.",
+    "example_ka": "სასტუმრო უფასო აეროპორტის ტრანსფერს გთავაზობთ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Itinerary",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/aɪˈtɪnərəri/",
+    "example_en": "What's our itinerary for tomorrow?",
+    "example_ka": "ხვალ რა მარშრუტი გვაქვს?",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "All-inclusive",
+    "georgian": "ყველაფერი ჩათვლით",
+    "pronunciation": "/ɔːl ɪnˈkluːsɪv/",
+    "example_en": "We booked an all-inclusive resort in Turkey.",
+    "example_ka": "თურქეთში ყველაფერი ჩათვლით კურორტი დავჯავშნეთ.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "Departure",
+    "georgian": "გამგზავრება",
+    "pronunciation": "/dɪˈpɑːtʃər/",
+    "example_en": "Check the departure time on the screen.",
+    "example_ka": "გამგზავრების დრო ეკრანზე შეამოწმე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Arrival",
+    "georgian": "ჩამოსვლა",
+    "pronunciation": "/əˈraɪvəl/",
+    "example_en": "What time is your arrival?",
+    "example_ka": "რამდენზეა შენი ჩამოსვლა?",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Guide",
+    "georgian": "გიდი",
+    "pronunciation": "/ɡaɪd/",
+    "example_en": "We hired a local guide for the city tour.",
+    "example_ka": "ქალაქის ტურისთვის ადგილობრივი გიდი დავიქირავეთ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Tip",
+    "georgian": "ჩაის ფული",
+    "pronunciation": "/tɪp/",
+    "example_en": "In America, you should always leave a tip.",
+    "example_ka": "ამერიკაში ყოველთვის უნდა დატოვო ჩაის ფული.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Local",
+    "georgian": "ადგილობრივი",
+    "pronunciation": "/ˈləʊkəl/",
+    "example_en": "Try the local food — it's always the best.",
+    "example_ka": "ადგილობრივი საკვები სცადე — ყოველთვის საუკეთესოა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "Landmark",
+    "georgian": "ღირშესანიშნაობა",
+    "pronunciation": "/ˈlændmɑːk/",
+    "example_en": "The Eiffel Tower is the most famous landmark in Paris.",
+    "example_ka": "ეიფელის კოშკი პარიზის ყველაზე ცნობილი ღირშესანიშნაობაა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "passport",
+    "georgian": "პასპორტი",
+    "pronunciation": "/ˈpæspɔːrt/",
+    "example_en": "Don't forget your passport.",
+    "example_ka": "პასპორტი არ დაგავიწყდეს.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "visa",
+    "georgian": "ვიზა",
+    "pronunciation": "/ˈviːzə/",
+    "example_en": "Do I need a visa?",
+    "example_ka": "ვიზა მჭირდება?",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "flight",
+    "georgian": "ფრენა",
+    "pronunciation": "/flaɪt/",
+    "example_en": "My flight is at 8 AM.",
+    "example_ka": "ფრენა 8 საათზეა.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "boarding",
+    "georgian": "ჩასხდომა",
+    "pronunciation": "/ˈbɔːrdɪŋ/",
+    "example_en": "Boarding starts soon.",
+    "example_ka": "ჩასხდომა მალე იწყება.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "gate",
+    "georgian": "გეითი",
+    "pronunciation": "/ɡeɪt/",
+    "example_en": "Go to gate 5.",
+    "example_ka": "მეხუთე გეითზე წადი.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "suitcase",
+    "georgian": "ჩემოდანი",
+    "pronunciation": "/ˈsuːtkeɪs/",
+    "example_en": "Pack your suitcase.",
+    "example_ka": "ჩემოდანი ჩალაგე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "backpack",
+    "georgian": "ზურგჩანთა",
+    "pronunciation": "/ˈbækpæk/",
+    "example_en": "Take a backpack.",
+    "example_ka": "ზურგჩანთა აიღე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "ticket",
+    "georgian": "ბილეთი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "Book a ticket.",
+    "example_ka": "ბილეთი დაჯავშნე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "reservation",
+    "georgian": "ჯავშანი",
+    "pronunciation": "/ˌrɛzərˈveɪʃən/",
+    "example_en": "Hotel reservation.",
+    "example_ka": "სასტუმროს ჯავშანი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "hotel",
+    "georgian": "სასტუმრო",
+    "pronunciation": "/hoʊˈtɛl/",
+    "example_en": "The hotel is nice.",
+    "example_ka": "სასტუმრო კარგია.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "terminal",
+    "georgian": "ტერმინალი",
+    "pronunciation": "/ˈtɜːrmɪnəl/",
+    "example_en": "Go to terminal 2.",
+    "example_ka": "მეორე ტერმინალში წადი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "turbulence",
+    "georgian": "ტურბულენცია",
+    "pronunciation": "/ˈtɜːrbjʊləns/",
+    "example_en": "We hit turbulence.",
+    "example_ka": "ტურბულენცია მოხვდა.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "aisle",
+    "georgian": "გასასვლელი",
+    "pronunciation": "/aɪl/",
+    "example_en": "Aisle seat please.",
+    "example_ka": "გასასვლელთან ადგილი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "delay",
+    "georgian": "დაგვიანება",
+    "pronunciation": "/dɪˈleɪ/",
+    "example_en": "Flight delayed.",
+    "example_ka": "ფრენა დაგვიანდა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "cancel",
+    "georgian": "გაუქმება",
+    "pronunciation": "/ˈkænsəl/",
+    "example_en": "Flight cancelled.",
+    "example_ka": "ფრენა გაუქმდა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "connection",
+    "georgian": "კავშირი",
+    "pronunciation": "/kəˈnɛkʃən/",
+    "example_en": "Missed my connection.",
+    "example_ka": "კავშირი გამომრჩა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "immigration",
+    "georgian": "ემიგრაცია",
+    "pronunciation": "/ˌɪmɪˈɡreɪʃən/",
+    "example_en": "Go through immigration.",
+    "example_ka": "ემიგრაციის კონტროლი გაიარე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "declare",
+    "georgian": "დეკლარირება",
+    "pronunciation": "/dɪˈklɛr/",
+    "example_en": "Anything to declare?",
+    "example_ka": "დასადეკლარირებელი რამე?",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "currency",
+    "georgian": "ვალუტა",
+    "pronunciation": "/ˈkʌrənsi/",
+    "example_en": "Exchange currency.",
+    "example_ka": "ვალუტა გაცვალე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "exchange",
+    "georgian": "გაცვლა",
+    "pronunciation": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "Exchange office.",
+    "example_ka": "გადაცვლის ოფისი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "I need a map.",
+    "example_ka": "რუკა მჭირდება.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "tour",
+    "georgian": "ტური",
+    "pronunciation": "/tʊr/",
+    "example_en": "City tour.",
+    "example_ka": "ქალაქის ტური.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "excursion",
+    "georgian": "ექსკურსია",
+    "pronunciation": "/ɪkˈskɜːrʒən/",
+    "example_en": "Join the excursion.",
+    "example_ka": "ექსკურსიას შეუერთდი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "destination",
+    "georgian": "დანიშნულება",
+    "pronunciation": "/ˌdɛstɪˈneɪʃən/",
+    "example_en": "Popular destination.",
+    "example_ka": "პოპულარული დანიშნულება.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "accommodation",
+    "georgian": "საცხოვრებელი",
+    "pronunciation": "/əˌkɒməˈdeɪʃən/",
+    "example_en": "Book accommodation.",
+    "example_ka": "საცხოვრებელი დაჯავშნე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "resort",
+    "georgian": "კურორტი",
+    "pronunciation": "/rɪˈzɔːrt/",
+    "example_en": "Beach resort.",
+    "example_ka": "სანაპიროს კურორტი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "lobby",
+    "georgian": "ლობი",
+    "pronunciation": "/ˈlɒbi/",
+    "example_en": "Wait in the lobby.",
+    "example_ka": "ლობიში დაელოდე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "reception",
+    "georgian": "რეცეფცია",
+    "pronunciation": "/rɪˈsɛpʃən/",
+    "example_en": "Ask at reception.",
+    "example_ka": "რეცეფციაზე იკითხე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "pool",
+    "georgian": "აუზი",
+    "pronunciation": "/puːl/",
+    "example_en": "Hotel has a pool.",
+    "example_ka": "სასტუმროს აუზი აქვს.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "beach",
+    "georgian": "სანაპირო",
+    "pronunciation": "/biːtʃ/",
+    "example_en": "Beautiful beach.",
+    "example_ka": "ლამაზი სანაპირო.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "mountain",
+    "georgian": "მთა",
+    "pronunciation": "/ˈmaʊntɪn/",
+    "example_en": "We climbed the mountain.",
+    "example_ka": "მთაზე ავედით.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "island",
+    "georgian": "კუნძული",
+    "pronunciation": "/ˈaɪlənd/",
+    "example_en": "Small island.",
+    "example_ka": "პატარა კუნძული.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "museum",
+    "georgian": "მუზეუმი",
+    "pronunciation": "/mjuˈziːəm/",
+    "example_en": "Visit the museum.",
+    "example_ka": "მუზეუმს ეწვიე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "monument",
+    "georgian": "ძეგლი",
+    "pronunciation": "/ˈmɒnjʊmənt/",
+    "example_en": "Ancient monument.",
+    "example_ka": "უძველესი ძეგლი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "temple",
+    "georgian": "ტაძარი",
+    "pronunciation": "/ˈtɛmpəl/",
+    "example_en": "Ancient temple.",
+    "example_ka": "უძველესი ტაძარი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "castle",
+    "georgian": "ციხესიმაგრე",
+    "pronunciation": "/ˈkɑːsəl/",
+    "example_en": "Medieval castle.",
+    "example_ka": "შუა საუკუნეების ციხესიმაგრე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "palace",
+    "georgian": "სასახლე",
+    "pronunciation": "/ˈpælɪs/",
+    "example_en": "Royal palace.",
+    "example_ka": "სამეფო სასახლე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "scenery",
+    "georgian": "პეიზაჟი",
+    "pronunciation": "/ˈsiːnəri/",
+    "example_en": "Breathtaking scenery.",
+    "example_ka": "თვალწარმტაცი პეიზაჟი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "sunset",
+    "georgian": "მზის ჩასვლა",
+    "pronunciation": "/ˈsʌnsɛt/",
+    "example_en": "Watch the sunset.",
+    "example_ka": "მზის ჩასვლა ნახე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "sunrise",
+    "georgian": "მზის ამოსვლა",
+    "pronunciation": "/ˈsʌnraɪz/",
+    "example_en": "Wake up for sunrise.",
+    "example_ka": "მზის ამოსვლისთვის გაიღვიძე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "climate",
+    "georgian": "კლიმატი",
+    "pronunciation": "/ˈklaɪmət/",
+    "example_en": "Tropical climate.",
+    "example_ka": "ტროპიკული კლიმატი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "weather",
+    "georgian": "ამინდი",
+    "pronunciation": "/ˈwɛðər/",
+    "example_en": "What is the weather?",
+    "example_ka": "ამინდი როგორია?",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "humid",
+    "georgian": "ნოტიო",
+    "pronunciation": "/ˈhjuːmɪd/",
+    "example_en": "Very humid.",
+    "example_ka": "ძალიან ნოტიოა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "explore",
+    "georgian": "შესწავლა",
+    "pronunciation": "/ɪkˈsplɔːr/",
+    "example_en": "Explore the city.",
+    "example_ka": "ქალაქი შეისწავლე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "adventure",
+    "georgian": "თავგადასავალი",
+    "pronunciation": "/ədˈvɛntʃər/",
+    "example_en": "Great adventure.",
+    "example_ka": "შესანიშნავი თავგადასავალი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "cruise",
+    "georgian": "კრუიზი",
+    "pronunciation": "/kruːz/",
+    "example_en": "We went on a cruise.",
+    "example_ka": "კრუიზზე წავედით.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "ferry",
+    "georgian": "ბორანი",
+    "pronunciation": "/ˈfɛri/",
+    "example_en": "Take the ferry.",
+    "example_ka": "ბორანით წადი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "harbor",
+    "georgian": "ნავსადგური",
+    "pronunciation": "/ˈhɑːrbər/",
+    "example_en": "Crowded harbor.",
+    "example_ka": "ხალხმრავალი ნავსადგური.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "journey",
+    "georgian": "მგზავრობა",
+    "pronunciation": "/ˈdʒɜːrni/",
+    "example_en": "Long journey.",
+    "example_ka": "გრძელი მგზავრობა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "trip",
+    "georgian": "მოგზაურობა",
+    "pronunciation": "/trɪp/",
+    "example_en": "Nice trip.",
+    "example_ka": "კარგი მოგზაურობა.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "vacation",
+    "georgian": "შვებულება",
+    "pronunciation": "/veɪˈkeɪʃən/",
+    "example_en": "On vacation.",
+    "example_ka": "შვებულებაში.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "holiday",
+    "georgian": "არდადეგები",
+    "pronunciation": "/ˈhɒlɪdeɪ/",
+    "example_en": "Going on holiday.",
+    "example_ka": "არდადეგებზე მივდივარ.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "travel",
+    "georgian": "მოგზაურობა",
+    "pronunciation": "/ˈtrævəl/",
+    "example_en": "I love travel.",
+    "example_ka": "მოგზაურობა მიყვარს.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "abroad",
+    "georgian": "საზღვარგარეთ",
+    "pronunciation": "/əˈbrɔːd/",
+    "example_en": "Going abroad.",
+    "example_ka": "საზღვარგარეთ მივდივარ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "foreign",
+    "georgian": "უცხო",
+    "pronunciation": "/ˈfɒrɪn/",
+    "example_en": "Foreign country.",
+    "example_ka": "უცხო ქვეყანა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "cuisine",
+    "georgian": "სამზარეულო",
+    "pronunciation": "/kwɪˈziːn/",
+    "example_en": "Amazing cuisine.",
+    "example_ka": "საოცარი სამზარეულო.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "restaurant",
+    "georgian": "რესტორანი",
+    "pronunciation": "/ˈrɛstərɒnt/",
+    "example_en": "Good restaurant.",
+    "example_ka": "კარგი რესტორანი.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "menu",
+    "georgian": "მენიუ",
+    "pronunciation": "/ˈmɛnjuː/",
+    "example_en": "See the menu.",
+    "example_ka": "მენიუ ნახე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "bargain",
+    "georgian": "ვაჭრობა",
+    "pronunciation": "/ˈbɑːrɡɪn/",
+    "example_en": "Bargain at the market.",
+    "example_ka": "ბაზარში ივაჭრე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "taxi",
+    "georgian": "ტაქსი",
+    "pronunciation": "/ˈtæksi/",
+    "example_en": "Take a taxi.",
+    "example_ka": "ტაქსით წადი.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "bus",
+    "georgian": "ავტობუსი",
+    "pronunciation": "/bʌs/",
+    "example_en": "Take the bus.",
+    "example_ka": "ავტობუსით წადი.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "train",
+    "georgian": "მატარებელი",
+    "pronunciation": "/treɪn/",
+    "example_en": "Travel by train.",
+    "example_ka": "მატარებლით იმგზავრე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "subway",
+    "georgian": "მეტრო",
+    "pronunciation": "/ˈsʌbweɪ/",
+    "example_en": "Take the subway.",
+    "example_ka": "მეტროთი წადი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "rent",
+    "georgian": "გაქირავება",
+    "pronunciation": "/rɛnt/",
+    "example_en": "Rent a car.",
+    "example_ka": "მანქანა დაქირავე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "/ɪnˈʃʊrəns/",
+    "example_en": "Travel insurance.",
+    "example_ka": "სამოგზაურო დაზღვევა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "embassy",
+    "georgian": "საელჩო",
+    "pronunciation": "/ˈɛmbəsi/",
+    "example_en": "Contact the embassy.",
+    "example_ka": "საელჩოს დაუკავშირდი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "emergency",
+    "georgian": "საგანგებო",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Call emergency.",
+    "example_ka": "სასწრაფო გამოიძახე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "pharmacy",
+    "georgian": "აფთიაქი",
+    "pronunciation": "/ˈfɑːrməsi/",
+    "example_en": "Find a pharmacy.",
+    "example_ka": "აფთიაქი იპოვე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "hospital",
+    "georgian": "საავადმყოფო",
+    "pronunciation": "/ˈhɒspɪtəl/",
+    "example_en": "Where is the hospital?",
+    "example_ka": "საავადმყოფო სად არის?",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "sunscreen",
+    "georgian": "მზისგან დამცავი",
+    "pronunciation": "/ˈsʌnskriːn/",
+    "example_en": "Apply sunscreen.",
+    "example_ka": "მზისგან დამცავი წაისვი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "mosquito",
+    "georgian": "კოღო",
+    "pronunciation": "/məˈskiːtoʊ/",
+    "example_en": "Use repellent.",
+    "example_ka": "საწინააღმდეგო საშუალება გამოიყენე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "jetlag",
+    "georgian": "ჯეტლაგი",
+    "pronunciation": "/ˈdʒɛtlæɡ/",
+    "example_en": "Terrible jetlag.",
+    "example_ka": "საშინელი ჯეტლაგი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "adapt",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/əˈdæpt/",
+    "example_en": "Time to adapt.",
+    "example_ka": "ადაპტაციის დრო.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "culture",
+    "georgian": "კულტურა",
+    "pronunciation": "/ˈkʌltʃər/",
+    "example_en": "Respect the culture.",
+    "example_ka": "კულტურას პატივი ეცი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "tradition",
+    "georgian": "ტრადიცია",
+    "pronunciation": "/trəˈdɪʃən/",
+    "example_en": "Local traditions.",
+    "example_ka": "ადგილობრივი ტრადიციები.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "etiquette",
+    "georgian": "ეტიკეტი",
+    "pronunciation": "/ˈɛtɪkɛt/",
+    "example_en": "Learn etiquette.",
+    "example_ka": "ეტიკეტი ისწავლე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "phrase",
+    "georgian": "ფრაზა",
+    "pronunciation": "/freɪz/",
+    "example_en": "Learn basic phrases.",
+    "example_ka": "ძირითადი ფრაზები ისწავლე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "translate",
+    "georgian": "თარგმნა",
+    "pronunciation": "/trænsˈleɪt/",
+    "example_en": "Can you translate?",
+    "example_ka": "თარგმნა შეგიძლია?",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "direction",
+    "georgian": "მიმართულება",
+    "pronunciation": "/dɪˈrɛkʃən/",
+    "example_en": "Give me directions.",
+    "example_ka": "მიმართულება მითხარი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "lost",
+    "georgian": "დაკარგული",
+    "pronunciation": "/lɒst/",
+    "example_en": "I am lost.",
+    "example_ka": "დავიკარგე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "safe",
+    "georgian": "უსაფრთხო",
+    "pronunciation": "/seɪf/",
+    "example_en": "Is it safe?",
+    "example_ka": "უსაფრთხოა?",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "dangerous",
+    "georgian": "საშიში",
+    "pronunciation": "/ˈdeɪndʒərəs/",
+    "example_en": "Dangerous area.",
+    "example_ka": "საშიში ადგილი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "scam",
+    "georgian": "მოტყუება",
+    "pronunciation": "/skæm/",
+    "example_en": "Watch for scams.",
+    "example_ka": "მოტყუებას ეფრთხილე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "pickpocket",
+    "georgian": "ჯიბის ქურდი",
+    "pronunciation": "/ˈpɪkpɒkɪt/",
+    "example_en": "Beware of pickpockets.",
+    "example_ka": "ჯიბის ქურდებს ეფრთხილე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "hike",
+    "georgian": "ლაშქრობა",
+    "pronunciation": "/haɪk/",
+    "example_en": "We hiked.",
+    "example_ka": "ვილაშქრეთ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "camp",
+    "georgian": "ბანაკი",
+    "pronunciation": "/kæmp/",
+    "example_en": "We camped.",
+    "example_ka": "დავიბანაკეთ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "dive",
+    "georgian": "ყვინთვა",
+    "pronunciation": "/daɪv/",
+    "example_en": "I learned to dive.",
+    "example_ka": "ყვინთვა ვისწავლე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "surf",
+    "georgian": "სერფინგი",
+    "pronunciation": "/sɜːrf/",
+    "example_en": "Let's surf.",
+    "example_ka": "სერფინგზე წავიდეთ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "photograph",
+    "georgian": "ფოტო",
+    "pronunciation": "/ˈfoʊtəɡrɑːf/",
+    "example_en": "Take a photograph.",
+    "example_ka": "ფოტო გადაიღე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "memorable",
+    "georgian": "დასამახსოვრებელი",
+    "pronunciation": "/ˈmɛmərəbl/",
+    "example_en": "Memorable trip.",
+    "example_ka": "დასამახსოვრებელი მოგზაურობა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "breathtaking",
+    "georgian": "თვალწარმტაცი",
+    "pronunciation": "/ˈbrɛθteɪkɪŋ/",
+    "example_en": "Breathtaking view.",
+    "example_ka": "თვალწარმტაცი ხედი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "stunning",
+    "georgian": "განსაცვიფრებელი",
+    "pronunciation": "/ˈstʌnɪŋ/",
+    "example_en": "Stunning architecture.",
+    "example_ka": "განსაცვიფრებელი არქიტექტურა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "exotic",
+    "georgian": "ეგზოტიკური",
+    "pronunciation": "/ɪɡˈzɒtɪk/",
+    "example_en": "Exotic fruits.",
+    "example_ka": "ეგზოტიკური ხილი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "authentic",
+    "georgian": "ავთენტური",
+    "pronunciation": "/ɔːˈθɛntɪk/",
+    "example_en": "Authentic food.",
+    "example_ka": "ავთენტური საჭმელი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "vibrant",
+    "georgian": "ცოცხალი",
+    "pronunciation": "/ˈvaɪbrənt/",
+    "example_en": "Vibrant city.",
+    "example_ka": "ცოცხალი ქალაქი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "tranquil",
+    "georgian": "მშვიდი",
+    "pronunciation": "/ˈtræŋkwɪl/",
+    "example_en": "Tranquil beach.",
+    "example_ka": "მშვიდი სანაპირო.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "picturesque",
+    "georgian": "ფერწერული",
+    "pronunciation": "/ˌpɪktʃəˈrɛsk/",
+    "example_en": "Picturesque village.",
+    "example_ka": "ფერწერული სოფელი.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "majestic",
+    "georgian": "დიდებული",
+    "pronunciation": "/məˈdʒɛstɪk/",
+    "example_en": "Majestic mountains.",
+    "example_ka": "დიდებული მთები.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "immerse",
+    "georgian": "ჩაძირვა",
+    "pronunciation": "/ɪˈmɜːrs/",
+    "example_en": "Immerse in culture.",
+    "example_ka": "კულტურაში ჩაიძირე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "wander",
+    "georgian": "ხეტიალი",
+    "pronunciation": "/ˈwɒndər/",
+    "example_en": "Wander the streets.",
+    "example_ka": "ქუჩებში იხეტიალე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "stroll",
+    "georgian": "სეირნობა",
+    "pronunciation": "/stroʊl/",
+    "example_en": "Take a stroll.",
+    "example_ka": "ისეირნე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "roam",
+    "georgian": "მოხეტიალე",
+    "pronunciation": "/roʊm/",
+    "example_en": "Roam freely.",
+    "example_ka": "თავისუფლად იხეტიალე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "navigate",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˈnævɪɡeɪt/",
+    "example_en": "Navigate with GPS.",
+    "example_ka": "GPS-ით ინავიგაციე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "altitude",
+    "georgian": "სიმაღლე",
+    "pronunciation": "/ˈæltɪtjuːd/",
+    "example_en": "High altitude.",
+    "example_ka": "მაღალი სიმაღლე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "tropical",
+    "georgian": "ტროპიკული",
+    "pronunciation": "/ˈtrɒpɪkəl/",
+    "example_en": "Tropical paradise.",
+    "example_ka": "ტროპიკული სამოთხე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "safari",
+    "georgian": "საფარი",
+    "pronunciation": "/səˈfɑːri/",
+    "example_en": "African safari.",
+    "example_ka": "აფრიკული საფარი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "snorkel",
+    "georgian": "სნორკელინგი",
+    "pronunciation": "/ˈsnɔːrkəl/",
+    "example_en": "Snorkel in the reef.",
+    "example_ka": "რიფში სნორკელინგი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "postcard",
+    "georgian": "ღია ბარათი",
+    "pronunciation": "/ˈpoʊstkɑːrd/",
+    "example_en": "Send a postcard.",
+    "example_ka": "ღია ბარათი გაგზავნე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "selfie",
+    "georgian": "სელფი",
+    "pronunciation": "/ˈsɛlfi/",
+    "example_en": "Take a selfie.",
+    "example_ka": "სელფი გადაიღე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "unforgettable",
+    "georgian": "დაუვიწყარი",
+    "pronunciation": "/ˌʌnfərˈɡɛtəbl/",
+    "example_en": "Unforgettable experience.",
+    "example_ka": "დაუვიწყარი გამოცდილება.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "landscape",
+    "georgian": "ლანდშაფტი",
+    "pronunciation": "/ˈlændskeɪp/",
+    "example_en": "Beautiful landscape.",
+    "example_ka": "ლამაზი ლანდშაფტი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "dock",
+    "georgian": "ნავმისადგომი",
+    "pronunciation": "/dɒk/",
+    "example_en": "Ship docked.",
+    "example_ka": "გემი მიადგა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "voyage",
+    "georgian": "მოგზაურობა",
+    "pronunciation": "/ˈvɔɪɪdʒ/",
+    "example_en": "Long voyage.",
+    "example_ka": "გრძელი მოგზაურობა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "hitchhike",
+    "georgian": "ავტოსტოპი",
+    "pronunciation": "/ˈhɪtʃhaɪk/",
+    "example_en": "We hitchhiked.",
+    "example_ka": "ავტოსტოპით ვიმგზავრეთ.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "trek",
+    "georgian": "ლაშქრობა",
+    "pronunciation": "/trɛk/",
+    "example_en": "Mountain trek.",
+    "example_ka": "მთის ლაშქრობა.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "concierge",
+    "georgian": "კონსიერჟი",
+    "pronunciation": "/ˌkɒnsiˈɛrʒ/",
+    "example_en": "Ask the concierge.",
+    "example_ka": "კონსიერჟს ჰკითხე.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "amenity",
+    "georgian": "კეთილმოწყობა",
+    "pronunciation": "/əˈmɛnɪti/",
+    "example_en": "Great amenities.",
+    "example_ka": "შესანიშნავი კეთილმოწყობა.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "quarantine",
+    "georgian": "კარანტინი",
+    "pronunciation": "/ˈkwɒrəntiːn/",
+    "example_en": "Quarantine rules.",
+    "example_ka": "კარანტინის წესები.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "nomad",
+    "georgian": "მომთაბარე",
+    "pronunciation": "/ˈnoʊmæd/",
+    "example_en": "Digital nomad.",
+    "example_ka": "ციფრული მომთაბარე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "vaccination",
+    "georgian": "ვაქცინაცია",
+    "pronunciation": "/ˌvæksɪˈneɪʃən/",
+    "example_en": "Get vaccinated.",
+    "example_ka": "აიცერი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "theft",
+    "georgian": "ქურდობა",
+    "pronunciation": "/θɛft/",
+    "example_en": "Report theft.",
+    "example_ka": "ქურდობა აცნობე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "custom",
+    "georgian": "ჩვეულება",
+    "pronunciation": "/ˈkʌstəm/",
+    "example_en": "Local customs.",
+    "example_ka": "ადგილობრივი ჩვეულებები.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "interpreter",
+    "georgian": "თარჯიმანი",
+    "pronunciation": "/ɪnˈtɜːrprɪtər/",
+    "example_en": "Need an interpreter.",
+    "example_ka": "თარჯიმანი მჭირდება.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "bilingual",
+    "georgian": "ორენოვანი",
+    "pronunciation": "/baɪˈlɪŋɡwəl/",
+    "example_en": "She is bilingual.",
+    "example_ka": "ის ორენოვანია.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "fluent",
+    "georgian": "თავისუფლად",
+    "pronunciation": "/ˈfluːənt/",
+    "example_en": "Not fluent yet.",
+    "example_ka": "ჯერ თავისუფლად არა.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "gesture",
+    "georgian": "ჟესტი",
+    "pronunciation": "/ˈdʒɛstʃər/",
+    "example_en": "Use gestures.",
+    "example_ka": "ჟესტები გამოიყენე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "Window seat.",
+    "example_ka": "ფანჯარასთან ადგილი.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "runway",
+    "georgian": "ასაფრენი",
+    "pronunciation": "/ˈrʌnweɪ/",
+    "example_en": "On the runway.",
+    "example_ka": "ასაფრენ ბილიკზე.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "ruin",
+    "georgian": "ნანგრევი",
+    "pronunciation": "/ruːɪn/",
+    "example_en": "Ancient ruins.",
+    "example_ka": "უძველესი ნანგრევები.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "cathedral",
+    "georgian": "საკათედრო",
+    "pronunciation": "/kəˈθiːdrəl/",
+    "example_en": "Beautiful cathedral.",
+    "example_ka": "ლამაზი საკათედრო.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "motel",
+    "georgian": "მოტელი",
+    "pronunciation": "/moʊˈtɛl/",
+    "example_en": "Cheap motel.",
+    "example_ka": "იაფი მოტელი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Keep the receipt.",
+    "example_ka": "ქვითარი შეინახე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "haggle",
+    "georgian": "ვაჭრობა",
+    "pronunciation": "/ˈhæɡəl/",
+    "example_en": "Haggle for price.",
+    "example_ka": "ფასზე ივაჭრე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "communicate",
+    "georgian": "კომუნიკაცია",
+    "pronunciation": "/kəˈmjuːnɪkeɪt/",
+    "example_en": "Hard to communicate.",
+    "example_ka": "კომუნიკაცია რთულია.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "repatriation",
+    "georgian": "რეპატრიაცია",
+    "pronunciation": "/riːˌpætriˈeɪʃən/",
+    "example_en": "Emergency repatriation.",
+    "example_ka": "საგანგებო რეპატრიაცია.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "immunization",
+    "georgian": "იმუნიზაცია",
+    "pronunciation": "/ˌɪmjʊnaɪˈzeɪʃən/",
+    "example_en": "Check immunization.",
+    "example_ka": "იმუნიზაცია შეამოწმე.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "longitude",
+    "georgian": "გრძედი",
+    "pronunciation": "/ˈlɒndʒɪtjuːd/",
+    "example_en": "Check the longitude.",
+    "example_ka": "გრძედი შეამოწმე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "latitude",
+    "georgian": "განედი",
+    "pronunciation": "/ˈlætɪtjuːd/",
+    "example_en": "Check the latitude.",
+    "example_ka": "განედი შეამოწმე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "hemisphere",
+    "georgian": "ნახევარსფერო",
+    "pronunciation": "/ˈhɛmɪsfɪr/",
+    "example_en": "Southern hemisphere.",
+    "example_ka": "სამხრეთ ნახევარსფერო.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "equator",
+    "georgian": "ეკვატორი",
+    "pronunciation": "/ɪˈkweɪtər/",
+    "example_en": "Near the equator.",
+    "example_ka": "ეკვატორთან.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "continent",
+    "georgian": "კონტინენტი",
+    "pronunciation": "/ˈkɒntɪnənt/",
+    "example_en": "A new continent.",
+    "example_ka": "ახალი კონტინენტი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "border",
+    "georgian": "საზღვარი",
+    "pronunciation": "/ˈbɔːrdər/",
+    "example_en": "Cross the border.",
+    "example_ka": "საზღვარი გადაკვეთე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "checkpoint",
+    "georgian": "საგუშაგო",
+    "pronunciation": "/ˈtʃɛkpɔɪnt/",
+    "example_en": "Stop at checkpoint.",
+    "example_ka": "საგუშაგოზე გაჩერდი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "depart",
+    "georgian": "გამგზავრება",
+    "pronunciation": "/dɪˈpɑːrt/",
+    "example_en": "We depart at 6.",
+    "example_ka": "6 საათზე ვმგზავრდებით.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "arrive",
+    "georgian": "ჩამოსვლა",
+    "pronunciation": "/əˈraɪv/",
+    "example_en": "We arrived safely.",
+    "example_ka": "უსაფრთხოდ ჩავედით.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "book",
+    "georgian": "დაჯავშნა",
+    "pronunciation": "/bʊk/",
+    "example_en": "Book a room.",
+    "example_ka": "ოთახი დაჯავშნე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "confirm",
+    "georgian": "დადასტურება",
+    "pronunciation": "/kənˈfɜːrm/",
+    "example_en": "Confirm your booking.",
+    "example_ka": "ჯავშანი დაადასტურე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "pack",
+    "georgian": "ჩალაგება",
+    "pronunciation": "/pæk/",
+    "example_en": "Pack your bags.",
+    "example_ka": "ჩანთები ჩალაგე.",
+    "category": "travel-abroad",
+    "level": "A1"
+  },
+  {
+    "english": "unpack",
+    "georgian": "ამოლაგება",
+    "pronunciation": "/ʌnˈpæk/",
+    "example_en": "Time to unpack.",
+    "example_ka": "ამოლაგების დროა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "sightsee",
+    "georgian": "ღირშესანიშნაობების დათვალიერება",
+    "pronunciation": "/ˈsaɪtsiː/",
+    "example_en": "We went sightseeing.",
+    "example_ka": "ღირშესანიშნაობები დავათვალიერეთ.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "sojourn",
+    "georgian": "დროებითი ყოფნა",
+    "pronunciation": "/ˈsɒdʒɜːrn/",
+    "example_en": "A brief sojourn.",
+    "example_ka": "ხანმოკლე დროებითი ყოფნა.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "itinerant",
+    "georgian": "მოხეტიალე",
+    "pronunciation": "/aɪˈtɪnərənt/",
+    "example_en": "Itinerant traveler.",
+    "example_ka": "მოხეტიალე მოგზაური.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "wanderlust",
+    "georgian": "მოგზაურობის სურვილი",
+    "pronunciation": "/ˈwɒndərlʌst/",
+    "example_en": "Full of wanderlust.",
+    "example_ka": "მოგზაურობის სურვილით სავსე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "secluded",
+    "georgian": "განმარტოებული",
+    "pronunciation": "/sɪˈkluːdɪd/",
+    "example_en": "Secluded beach.",
+    "example_ka": "განმარტოებული სანაპირო.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "cosmopolitan",
+    "georgian": "კოსმოპოლიტური",
+    "pronunciation": "/ˌkɒzməˈpɒlɪtən/",
+    "example_en": "Cosmopolitan city.",
+    "example_ka": "კოსმოპოლიტური ქალაქი.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "hospitable",
+    "georgian": "სტუმართმოყვარე",
+    "pronunciation": "/hɒˈspɪtəbl/",
+    "example_en": "Very hospitable people.",
+    "example_ka": "ძალიან სტუმართმოყვარე ხალხი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "scenic",
+    "georgian": "ფერწერული",
+    "pronunciation": "/ˈsiːnɪk/",
+    "example_en": "Scenic route.",
+    "example_ka": "ფერწერული მარშრუტი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "remote",
+    "georgian": "შორეული",
+    "pronunciation": "/rɪˈmoʊt/",
+    "example_en": "Remote village.",
+    "example_ka": "შორეული სოფელი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "rustic",
+    "georgian": "სოფლური",
+    "pronunciation": "/ˈrʌstɪk/",
+    "example_en": "Rustic cabin.",
+    "example_ka": "სოფლური ქოხი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "quaint",
+    "georgian": "თავისებური",
+    "pronunciation": "/kweɪnt/",
+    "example_en": "Quaint little town.",
+    "example_ka": "თავისებური პატარა ქალაქი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "bustling",
+    "georgian": "ხმაურიანი",
+    "pronunciation": "/ˈbʌslɪŋ/",
+    "example_en": "Bustling market.",
+    "example_ka": "ხმაურიანი ბაზარი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "serene",
+    "georgian": "მშვიდი",
+    "pronunciation": "/sɪˈriːn/",
+    "example_en": "Serene lake.",
+    "example_ka": "მშვიდი ტბა.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "arid",
+    "georgian": "გვალვიანი",
+    "pronunciation": "/ˈærɪd/",
+    "example_en": "Arid desert.",
+    "example_ka": "გვალვიანი უდაბნო.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "lush",
+    "georgian": "ბუჩქოვანი",
+    "pronunciation": "/lʌʃ/",
+    "example_en": "Lush jungle.",
+    "example_ka": "ბუჩქოვანი ჯუნგლები.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "pristine",
+    "georgian": "უხელთეხელი",
+    "pronunciation": "/prɪˈstiːn/",
+    "example_en": "Pristine nature.",
+    "example_ka": "უხელთეხელი ბუნება.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "indigenous",
+    "georgian": "ძირძველი",
+    "pronunciation": "/ɪnˈdɪdʒɪnəs/",
+    "example_en": "Indigenous culture.",
+    "example_ka": "ძირძველი კულტურა.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "delicacy",
+    "georgian": "დელიკატესი",
+    "pronunciation": "/ˈdɛlɪkəsi/",
+    "example_en": "Local delicacy.",
+    "example_ka": "ადგილობრივი დელიკატესი.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "turbine",
+    "georgian": "ტურბინა",
+    "pronunciation": "/ˈtɜːrbaɪn/",
+    "example_en": "Jet turbine.",
+    "example_ka": "რეაქტიული ტურბინა.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "seaside",
+    "georgian": "ზღვისპირეთი",
+    "pronunciation": "/ˈsiːsaɪd/",
+    "example_en": "Seaside town.",
+    "example_ka": "ზღვისპირა ქალაqi.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "offshore",
+    "georgian": "ზღვისპირა",
+    "pronunciation": "/ˈɒfʃɔːr/",
+    "example_en": "Offshore island.",
+    "example_ka": "ზღვისპირა კუნძული.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "overnight",
+    "georgian": "ღამისთევა",
+    "pronunciation": "/ˌoʊvərˈnaɪt/",
+    "example_en": "Overnight stay.",
+    "example_ka": "ღამისთევა.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "backpacker",
+    "georgian": "ბექპეკერი",
+    "pronunciation": "/ˈbækpækər/",
+    "example_en": "I am a backpacker.",
+    "example_ka": "ბექპეკერი ვარ.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "pilgrim",
+    "georgian": "მლოცველი",
+    "pronunciation": "/ˈpɪlɡrɪm/",
+    "example_en": "A pilgrim's journey.",
+    "example_ka": "მლოცველის მგზავრობა.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "coastline",
+    "georgian": "სანაპირო ზოლი",
+    "pronunciation": "/ˈkoʊstlaɪn/",
+    "example_en": "Beautiful coastline.",
+    "example_ka": "ლამაზი სანაპირო ზოლი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "peninsula",
+    "georgian": "ნახევარკუნძული",
+    "pronunciation": "/pəˈnɪnsjʊlə/",
+    "example_en": "A small peninsula.",
+    "example_ka": "პატარა ნახევარკუნძული.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "archipelago",
+    "georgian": "არქიპელაგი",
+    "pronunciation": "/ˌɑːrkɪˈpɛləɡoʊ/",
+    "example_en": "Island archipelago.",
+    "example_ka": "კუნძულების არქიპელაგი.",
+    "category": "travel-abroad",
+    "level": "C1"
+  },
+  {
+    "english": "glacier",
+    "georgian": "მყინვარი",
+    "pronunciation": "/ˈɡlæsiər/",
+    "example_en": "Visit the glacier.",
+    "example_ka": "მყინვარს ეწვიე.",
+    "category": "travel-abroad",
+    "level": "B2"
+  },
+  {
+    "english": "canyon",
+    "georgian": "კანიონი",
+    "pronunciation": "/ˈkænjən/",
+    "example_en": "Deep canyon.",
+    "example_ka": "ღრმა კანიონი.",
+    "category": "travel-abroad",
+    "level": "B1"
+  },
+  {
+    "english": "waterfall",
+    "georgian": "ჩანჩქერი",
+    "pronunciation": "/ˈwɔːtərfɔːl/",
+    "example_en": "Beautiful waterfall.",
+    "example_ka": "ლამაზი ჩანჩქერი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "volcano",
+    "georgian": "ვულკანი",
+    "pronunciation": "/vɒlˈkeɪnoʊ/",
+    "example_en": "Active volcano.",
+    "example_ka": "აქტიური ვულკანი.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "desert",
+    "georgian": "უდაბნო",
+    "pronunciation": "/ˈdɛzərt/",
+    "example_en": "Cross the desert.",
+    "example_ka": "უდაბნო გადაკვეთე.",
+    "category": "travel-abroad",
+    "level": "A2"
+  },
+  {
+    "english": "jungle",
+    "georgian": "ჯუნგლები",
+    "pronunciation": "/ˈdʒʌŋɡəl/",
+    "example_en": "Dense jungle.",
+    "example_ka": "ხშირი ჯუნგლები.",
+    "category": "travel-abroad",
+    "level": "A2"
+  }
 ]

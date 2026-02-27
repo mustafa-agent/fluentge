@@ -1,42 +1,1955 @@
 [
-  {"english": "Appointment", "georgian": "ვიზიტი", "pronunciation": "/əˈpɔɪntmənt/", "example_en": "I have a doctor's appointment.", "example_ka": "ექიმთან ვიზიტი მაქვს.", "category": "doctor", "level": "A2"},
-  {"english": "Prescription", "georgian": "რეცეპტი", "pronunciation": "/prɪˈskrɪpʃən/", "example_en": "The doctor gave me a prescription.", "example_ka": "ექიმმა რეცეპტი მომცა.", "category": "doctor", "level": "B1"},
-  {"english": "Symptom", "georgian": "სიმპტომი", "pronunciation": "/ˈsɪmptəm/", "example_en": "What are your symptoms?", "example_ka": "რა სიმპტომები გაქვს?", "category": "doctor", "level": "B1"},
-  {"english": "Fever", "georgian": "ცხელება", "pronunciation": "/ˈfiːvər/", "example_en": "I have a high fever.", "example_ka": "მაღალი ცხელება მაქვს.", "category": "doctor", "level": "A2"},
-  {"english": "Headache", "georgian": "თავის ტკივილი", "pronunciation": "/ˈhɛdeɪk/", "example_en": "I have a terrible headache.", "example_ka": "საშინელი თავის ტკივილი მაქვს.", "category": "doctor", "level": "A1"},
-  {"english": "Cough", "georgian": "ხველა", "pronunciation": "/kɒf/", "example_en": "I've had a cough for a week.", "example_ka": "ერთი კვირაა ხველა მაქვს.", "category": "doctor", "level": "A2"},
-  {"english": "Sore throat", "georgian": "ყელის ტკივილი", "pronunciation": "/sɔːr θroʊt/", "example_en": "I have a sore throat.", "example_ka": "ყელი მტკივა.", "category": "doctor", "level": "A2"},
-  {"english": "Allergy", "georgian": "ალერგია", "pronunciation": "/ˈælərʤi/", "example_en": "I have an allergy to pollen.", "example_ka": "მტვრის ალერგია მაქვს.", "category": "doctor", "level": "A2"},
-  {"english": "Blood test", "georgian": "სისხლის ანალიზი", "pronunciation": "/blʌd tɛst/", "example_en": "You need a blood test.", "example_ka": "სისხლის ანალიზი გჭირდება.", "category": "doctor", "level": "A2"},
-  {"english": "X-ray", "georgian": "რენტგენი", "pronunciation": "/ˈɛksreɪ/", "example_en": "The doctor ordered an X-ray.", "example_ka": "ექიმმა რენტგენი დანიშნა.", "category": "doctor", "level": "A2"},
-  {"english": "Injection", "georgian": "ინექცია", "pronunciation": "/ɪnˈdʒɛkʃən/", "example_en": "I'm afraid of injections.", "example_ka": "ინექციის მეშინია.", "category": "doctor", "level": "A2"},
-  {"english": "Painkiller", "georgian": "ტკივილგამაყუჩებელი", "pronunciation": "/ˈpeɪnkɪlər/", "example_en": "Take a painkiller if it hurts.", "example_ka": "ტკივილგამაყუჩებელი მიიღე თუ გტკივა.", "category": "doctor", "level": "A2"},
-  {"english": "Antibiotic", "georgian": "ანტიბიოტიკი", "pronunciation": "/ˌæntɪbaɪˈɒtɪk/", "example_en": "The doctor prescribed antibiotics.", "example_ka": "ექიმმა ანტიბიოტიკი დანიშნა.", "category": "doctor", "level": "B1"},
-  {"english": "Pharmacy", "georgian": "აფთიაქი", "pronunciation": "/ˈfɑːrməsi/", "example_en": "Buy the medicine at the pharmacy.", "example_ka": "წამალი აფთიაქში იყიდე.", "category": "doctor", "level": "A2"},
-  {"english": "Diagnosis", "georgian": "დიაგნოზი", "pronunciation": "/ˌdaɪəɡˈnoʊsɪs/", "example_en": "The diagnosis was not serious.", "example_ka": "დიაგნოზი სერიოზული არ იყო.", "category": "doctor", "level": "B1"},
-  {"english": "Surgery", "georgian": "ოპერაცია", "pronunciation": "/ˈsɜːrdʒəri/", "example_en": "He needs surgery on his knee.", "example_ka": "მუხლის ოპერაცია სჭირდება.", "category": "doctor", "level": "B1"},
-  {"english": "Dizzy", "georgian": "თავბრუსხვევა", "pronunciation": "/ˈdɪzi/", "example_en": "I feel dizzy.", "example_ka": "თავი მბრუნავს.", "category": "doctor", "level": "A2"},
-  {"english": "Nausea", "georgian": "გულისრევა", "pronunciation": "/ˈnɔːziə/", "example_en": "I'm feeling nausea.", "example_ka": "გული მერევა.", "category": "doctor", "level": "B1"},
-  {"english": "Bandage", "georgian": "ბინტი", "pronunciation": "/ˈbændɪdʒ/", "example_en": "Put a bandage on the wound.", "example_ka": "ჭრილობაზე ბინტი დაადე.", "category": "doctor", "level": "A2"},
-  {"english": "Dentist", "georgian": "სტომატოლოგი", "pronunciation": "/ˈdɛntɪst/", "example_en": "I need to see a dentist.", "example_ka": "სტომატოლოგთან უნდა წავიდე.", "category": "doctor", "level": "A2"},
-  {"english": "Insurance", "georgian": "დაზღვევა", "pronunciation": "/ɪnˈʃʊrəns/", "example_en": "Do you have health insurance?", "example_ka": "ჯანმრთელობის დაზღვევა გაქვს?", "category": "doctor", "level": "B1"},
-  {"english": "Swollen", "georgian": "შესიებული", "pronunciation": "/ˈswoʊlən/", "example_en": "My ankle is swollen.", "example_ka": "ტერფი შემისიებდა.", "category": "doctor", "level": "B1"},
-  {"english": "Rash", "georgian": "გამონაყარი", "pronunciation": "/ræʃ/", "example_en": "I have a rash on my arm.", "example_ka": "ხელზე გამონაყარი მაქვს.", "category": "doctor", "level": "B1"},
-  {"english": "Bruise", "georgian": "სისხლჩაქცევა", "pronunciation": "/bruːz/", "example_en": "I got a bruise on my leg.", "example_ka": "ფეხზე სისხლჩაქცევა მაქვს.", "category": "doctor", "level": "A2"},
-  {"english": "Cast", "georgian": "თაბაშირი", "pronunciation": "/kæst/", "example_en": "He has a cast on his arm.", "example_ka": "ხელზე თაბაშირი აქვს.", "category": "doctor", "level": "A2"},
-  {"english": "Wheelchair", "georgian": "ინვალიდის ეტლი", "pronunciation": "/ˈwiːltʃɛr/", "example_en": "He needs a wheelchair.", "example_ka": "ინვალიდის ეტლი სჭირდება.", "category": "doctor", "level": "A2"},
-  {"english": "Recover", "georgian": "გამოჯანმრთელება", "pronunciation": "/rɪˈkʌvər/", "example_en": "I hope you recover quickly.", "example_ka": "იმედი მაქვს მალე გამოჯანმრთელდები.", "category": "doctor", "level": "A2"},
-  {"english": "Checkup", "georgian": "გასინჯვა", "pronunciation": "/ˈtʃɛkʌp/", "example_en": "I need a regular checkup.", "example_ka": "რეგულარული გასინჯვა მჭირდება.", "category": "doctor", "level": "A2"},
-  {"english": "Vaccine", "georgian": "ვაქცინა", "pronunciation": "/højˈsiːn/", "example_en": "Have you gotten the vaccine?", "example_ka": "ვაქცინა გაიკეთე?", "category": "doctor", "level": "A2"},
-  {"english": "Emergency room", "georgian": "სასწრაფო", "pronunciation": "/ɪˈmɜːrdʒənsi ruːm/", "example_en": "Go to the emergency room!", "example_ka": "სასწრაფოში წადი!", "category": "doctor", "level": "A2"},
-  {"english": "Wound", "georgian": "ჭრილობა", "pronunciation": "/wuːnd/", "example_en": "Clean the wound carefully.", "example_ka": "ჭრილობა ფრთხილად გაწმინდე.", "category": "doctor", "level": "A2"},
-  {"english": "Pill", "georgian": "აბი", "pronunciation": "/pɪl/", "example_en": "Take one pill three times a day.", "example_ka": "დღეში სამჯერ ერთი აბი მიიღე.", "category": "doctor", "level": "A1"},
-  {"english": "Side effect", "georgian": "გვერდითი ეფექტი", "pronunciation": "/saɪd ɪˈfɛkt/", "example_en": "This medicine has side effects.", "example_ka": "ამ წამალს გვერდითი ეფექტები აქვს.", "category": "doctor", "level": "B1"},
-  {"english": "Ambulance", "georgian": "სასწრაფო დახმარება", "pronunciation": "/ˈæmbjʊləns/", "example_en": "Call an ambulance!", "example_ka": "სასწრაფო დახმარება გამოიძახე!", "category": "doctor", "level": "A2"},
-  {"english": "Specialist", "georgian": "სპეციალისტი", "pronunciation": "/ˈspɛʃəlɪst/", "example_en": "You should see a specialist.", "example_ka": "სპეციალისტთან უნდა წახვიდე.", "category": "doctor", "level": "B1"},
-  {"english": "Contagious", "georgian": "გადამდები", "pronunciation": "/kənˈteɪdʒəs/", "example_en": "Is this disease contagious?", "example_ka": "ეს დაავადება გადამდებია?", "category": "doctor", "level": "B1"},
-  {"english": "Cure", "georgian": "განკურნება", "pronunciation": "/kjʊr/", "example_en": "There is no cure for the common cold.", "example_ka": "სურდოს განკურნება არ არსებობს.", "category": "doctor", "level": "B1"},
-  {"english": "Patient", "georgian": "პაციენტი", "pronunciation": "/ˈpeɪʃənt/", "example_en": "The patient is feeling better.", "example_ka": "პაციენტი უკეთ გრძნობს თავს.", "category": "doctor", "level": "A2"},
-  {"english": "Thermometer", "georgian": "თერმომეტრი", "pronunciation": "/θərˈmɒmɪtər/", "example_en": "Use a thermometer to check your temperature.", "example_ka": "თერმომეტრით შეამოწმე ტემპერატურა.", "category": "doctor", "level": "A2"},
-  {"english": "Stethoscope", "georgian": "სტეტოსკოპი", "pronunciation": "/ˈstɛθəskoʊp/", "example_en": "The doctor used a stethoscope.", "example_ka": "ექიმმა სტეტოსკოპი გამოიყენა.", "category": "doctor", "level": "B1"}
+  {
+    "english": "Appointment",
+    "georgian": "ვიზიტი",
+    "pronunciation": "/əˈpɔɪntmənt/",
+    "example_en": "I have a doctor's appointment.",
+    "example_ka": "ექიმთან ვიზიტი მაქვს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Prescription",
+    "georgian": "რეცეპტი",
+    "pronunciation": "/prɪˈskrɪpʃən/",
+    "example_en": "The doctor gave me a prescription.",
+    "example_ka": "ექიმმა რეცეპტი მომცა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Symptom",
+    "georgian": "სიმპტომი",
+    "pronunciation": "/ˈsɪmptəm/",
+    "example_en": "What are your symptoms?",
+    "example_ka": "რა სიმპტომები გაქვს?",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Fever",
+    "georgian": "ცხელება",
+    "pronunciation": "/ˈfiːvər/",
+    "example_en": "I have a high fever.",
+    "example_ka": "მაღალი ცხელება მაქვს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Headache",
+    "georgian": "თავის ტკივილი",
+    "pronunciation": "/ˈhɛdeɪk/",
+    "example_en": "I have a terrible headache.",
+    "example_ka": "საშინელი თავის ტკივილი მაქვს.",
+    "category": "doctor",
+    "level": "A1"
+  },
+  {
+    "english": "Cough",
+    "georgian": "ხველა",
+    "pronunciation": "/kɒf/",
+    "example_en": "I've had a cough for a week.",
+    "example_ka": "ერთი კვირაა ხველა მაქვს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Allergy",
+    "georgian": "ალერგია",
+    "pronunciation": "/ˈælərʤi/",
+    "example_en": "I have an allergy to pollen.",
+    "example_ka": "მტვრის ალერგია მაქვს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "X-ray",
+    "georgian": "რენტგენი",
+    "pronunciation": "/ˈɛksreɪ/",
+    "example_en": "The doctor ordered an X-ray.",
+    "example_ka": "ექიმმა რენტგენი დანიშნა.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Injection",
+    "georgian": "ინექცია",
+    "pronunciation": "/ɪnˈdʒɛkʃən/",
+    "example_en": "I'm afraid of injections.",
+    "example_ka": "ინექციის მეშინია.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Painkiller",
+    "georgian": "ტკივილგამაყუჩებელი",
+    "pronunciation": "/ˈpeɪnkɪlər/",
+    "example_en": "Take a painkiller if it hurts.",
+    "example_ka": "ტკივილგამაყუჩებელი მიიღე თუ გტკივა.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Antibiotic",
+    "georgian": "ანტიბიოტიკი",
+    "pronunciation": "/ˌæntɪbaɪˈɒtɪk/",
+    "example_en": "The doctor prescribed antibiotics.",
+    "example_ka": "ექიმმა ანტიბიოტიკი დანიშნა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Pharmacy",
+    "georgian": "აფთიაქი",
+    "pronunciation": "/ˈfɑːrməsi/",
+    "example_en": "Buy the medicine at the pharmacy.",
+    "example_ka": "წამალი აფთიაქში იყიდე.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Diagnosis",
+    "georgian": "დიაგნოზი",
+    "pronunciation": "/ˌdaɪəɡˈnoʊsɪs/",
+    "example_en": "The diagnosis was not serious.",
+    "example_ka": "დიაგნოზი სერიოზული არ იყო.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Surgery",
+    "georgian": "ოპერაცია",
+    "pronunciation": "/ˈsɜːrdʒəri/",
+    "example_en": "He needs surgery on his knee.",
+    "example_ka": "მუხლის ოპერაცია სჭირდება.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Dizzy",
+    "georgian": "თავბრუსხვევა",
+    "pronunciation": "/ˈdɪzi/",
+    "example_en": "I feel dizzy.",
+    "example_ka": "თავი მბრუნავს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Nausea",
+    "georgian": "გულისრევა",
+    "pronunciation": "/ˈnɔːziə/",
+    "example_en": "I'm feeling nausea.",
+    "example_ka": "გული მერევა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Bandage",
+    "georgian": "ბინტი",
+    "pronunciation": "/ˈbændɪdʒ/",
+    "example_en": "Put a bandage on the wound.",
+    "example_ka": "ჭრილობაზე ბინტი დაადე.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Dentist",
+    "georgian": "სტომატოლოგი",
+    "pronunciation": "/ˈdɛntɪst/",
+    "example_en": "I need to see a dentist.",
+    "example_ka": "სტომატოლოგთან უნდა წავიდე.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "/ɪnˈʃʊrəns/",
+    "example_en": "Do you have health insurance?",
+    "example_ka": "ჯანმრთელობის დაზღვევა გაქვს?",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Swollen",
+    "georgian": "შესიებული",
+    "pronunciation": "/ˈswoʊlən/",
+    "example_en": "My ankle is swollen.",
+    "example_ka": "ტერფი შემისიებდა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Rash",
+    "georgian": "გამონაყარი",
+    "pronunciation": "/ræʃ/",
+    "example_en": "I have a rash on my arm.",
+    "example_ka": "ხელზე გამონაყარი მაქვს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Bruise",
+    "georgian": "სისხლჩაქცევა",
+    "pronunciation": "/bruːz/",
+    "example_en": "I got a bruise on my leg.",
+    "example_ka": "ფეხზე სისხლჩაქცევა მაქვს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Cast",
+    "georgian": "თაბაშირი",
+    "pronunciation": "/kæst/",
+    "example_en": "He has a cast on his arm.",
+    "example_ka": "ხელზე თაბაშირი აქვს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Wheelchair",
+    "georgian": "ინვალიდის ეტლი",
+    "pronunciation": "/ˈwiːltʃɛr/",
+    "example_en": "He needs a wheelchair.",
+    "example_ka": "ინვალიდის ეტლი სჭირდება.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Recover",
+    "georgian": "გამოჯანმრთელება",
+    "pronunciation": "/rɪˈkʌvər/",
+    "example_en": "I hope you recover quickly.",
+    "example_ka": "იმედი მაქვს მალე გამოჯანმრთელდები.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Checkup",
+    "georgian": "გასინჯვა",
+    "pronunciation": "/ˈtʃɛkʌp/",
+    "example_en": "I need a regular checkup.",
+    "example_ka": "რეგულარული გასინჯვა მჭირდება.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Vaccine",
+    "georgian": "ვაქცინა",
+    "pronunciation": "/højˈsiːn/",
+    "example_en": "Have you gotten the vaccine?",
+    "example_ka": "ვაქცინა გაიკეთე?",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Wound",
+    "georgian": "ჭრილობა",
+    "pronunciation": "/wuːnd/",
+    "example_en": "Clean the wound carefully.",
+    "example_ka": "ჭრილობა ფრთხილად გაწმინდე.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Pill",
+    "georgian": "აბი",
+    "pronunciation": "/pɪl/",
+    "example_en": "Take one pill three times a day.",
+    "example_ka": "დღეში სამჯერ ერთი აბი მიიღე.",
+    "category": "doctor",
+    "level": "A1"
+  },
+  {
+    "english": "Ambulance",
+    "georgian": "სასწრაფო დახმარება",
+    "pronunciation": "/ˈæmbjʊləns/",
+    "example_en": "Call an ambulance!",
+    "example_ka": "სასწრაფო დახმარება გამოიძახე!",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Specialist",
+    "georgian": "სპეციალისტი",
+    "pronunciation": "/ˈspɛʃəlɪst/",
+    "example_en": "You should see a specialist.",
+    "example_ka": "სპეციალისტთან უნდა წახვიდე.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Contagious",
+    "georgian": "გადამდები",
+    "pronunciation": "/kənˈteɪdʒəs/",
+    "example_en": "Is this disease contagious?",
+    "example_ka": "ეს დაავადება გადამდებია?",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Cure",
+    "georgian": "განკურნება",
+    "pronunciation": "/kjʊr/",
+    "example_en": "There is no cure for the common cold.",
+    "example_ka": "სურდოს განკურნება არ არსებობს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Patient",
+    "georgian": "პაციენტი",
+    "pronunciation": "/ˈpeɪʃənt/",
+    "example_en": "The patient is feeling better.",
+    "example_ka": "პაციენტი უკეთ გრძნობს თავს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Thermometer",
+    "georgian": "თერმომეტრი",
+    "pronunciation": "/θərˈmɒmɪtər/",
+    "example_en": "Use a thermometer to check your temperature.",
+    "example_ka": "თერმომეტრით შეამოწმე ტემპერატურა.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Stethoscope",
+    "georgian": "სტეტოსკოპი",
+    "pronunciation": "/ˈstɛθəskoʊp/",
+    "example_en": "The doctor used a stethoscope.",
+    "example_ka": "ექიმმა სტეტოსკოპი გამოიყენა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Surgeon",
+    "georgian": "ქირურგი",
+    "pronunciation": "/ˈsɜːrdʒən/",
+    "example_en": "The surgeon performed the operation.",
+    "example_ka": "ქირურგმა ოპერაცია ჩაატარა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Nurse",
+    "georgian": "ექთანი",
+    "pronunciation": "/nɜːrs/",
+    "example_en": "The nurse took my blood pressure.",
+    "example_ka": "ექთანმა არტერიული წნევა გამომიზომა.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Clinic",
+    "georgian": "კლინიკა",
+    "pronunciation": "/ˈklɪnɪk/",
+    "example_en": "I went to the clinic for a checkup.",
+    "example_ka": "გასინჯვისთვის კლინიკაში წავედი.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Hospital",
+    "georgian": "საავადმყოფო",
+    "pronunciation": "/ˈhɒspɪtəl/",
+    "example_en": "He was admitted to the hospital.",
+    "example_ka": "ის საავადმყოფოში მოათავსეს.",
+    "category": "doctor",
+    "level": "A1"
+  },
+  {
+    "english": "Medicine",
+    "georgian": "წამალი",
+    "pronunciation": "/ˈmedɪsɪn/",
+    "example_en": "Take your medicine after meals.",
+    "example_ka": "წამალი ჭამის შემდეგ მიიღე.",
+    "category": "doctor",
+    "level": "A1"
+  },
+  {
+    "english": "Treatment",
+    "georgian": "მკურნალობა",
+    "pronunciation": "/ˈtriːtmənt/",
+    "example_en": "The treatment lasted three months.",
+    "example_ka": "მკურნალობა სამი თვე გაგრძელდა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Disease",
+    "georgian": "დაავადება",
+    "pronunciation": "/dɪˈziːz/",
+    "example_en": "Heart disease is very common.",
+    "example_ka": "გულის დაავადება ძალიან გავრცელებულია.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Infection",
+    "georgian": "ინფექცია",
+    "pronunciation": "/ɪnˈfekʃən/",
+    "example_en": "The wound got an infection.",
+    "example_ka": "ჭრილობას ინფექცია შეეყარა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Pain",
+    "georgian": "ტკივილი",
+    "pronunciation": "/peɪn/",
+    "example_en": "I feel a sharp pain in my chest.",
+    "example_ka": "მკვეთრი ტკივილი მაქვს გულმკერდში.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Blood",
+    "georgian": "სისხლი",
+    "pronunciation": "/blʌd/",
+    "example_en": "The doctor took a blood sample.",
+    "example_ka": "ექიმმა სისხლის ნიმუში აიღო.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Pulse",
+    "georgian": "პულსი",
+    "pronunciation": "/pʌls/",
+    "example_en": "The nurse checked my pulse.",
+    "example_ka": "ექთანმა პულსი შემიმოწმა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Pressure",
+    "georgian": "წნევა",
+    "pronunciation": "/ˈpreʃər/",
+    "example_en": "My blood pressure is high.",
+    "example_ka": "არტერიული წნევა მაღალი მაქვს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Breathing",
+    "georgian": "სუნთქვა",
+    "pronunciation": "/ˈbriːðɪŋ/",
+    "example_en": "He has difficulty breathing.",
+    "example_ka": "სუნთქვა უჭირს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Ointment",
+    "georgian": "მალამო",
+    "pronunciation": "/ˈɔɪntmənt/",
+    "example_en": "Apply the ointment twice a day.",
+    "example_ka": "მალამო დღეში ორჯერ წაისვით.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Syringe",
+    "georgian": "შპრიცი",
+    "pronunciation": "/sɪˈrɪndʒ/",
+    "example_en": "The nurse prepared the syringe.",
+    "example_ka": "ექთანმა შპრიცი მოამზადა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Tablet",
+    "georgian": "ტაბლეტი",
+    "pronunciation": "/ˈtæblɪt/",
+    "example_en": "Take two tablets before bedtime.",
+    "example_ka": "ძილის წინ ორი ტაბლეტი მიიღე.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Dosage",
+    "georgian": "დოზა",
+    "pronunciation": "/ˈdoʊsɪdʒ/",
+    "example_en": "Follow the recommended dosage.",
+    "example_ka": "რეკომენდებული დოზა დაიცავით.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Condition",
+    "georgian": "მდგომარეობა",
+    "pronunciation": "/kənˈdɪʃən/",
+    "example_en": "His condition is stable.",
+    "example_ka": "მისი მდგომარეობა სტაბილურია.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Emergency",
+    "georgian": "გადაუდებელი",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Go to the emergency room.",
+    "example_ka": "გადაუდებელი დახმარების განყოფილებაში წადი.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Examination",
+    "georgian": "გამოკვლევა",
+    "pronunciation": "/ɪɡˌzæmɪˈneɪʃən/",
+    "example_en": "The doctor performed a thorough examination.",
+    "example_ka": "ექიმმა საფუძვლიანი გამოკვლევა ჩაატარა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Referral",
+    "georgian": "მიმართვა",
+    "pronunciation": "/rɪˈfɜːrəl/",
+    "example_en": "I need a referral to see a specialist.",
+    "example_ka": "სპეციალისტთან მისასვლელად მიმართვა მჭირდება.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Ward",
+    "georgian": "პალატა",
+    "pronunciation": "/wɔːrd/",
+    "example_en": "The patient is in ward three.",
+    "example_ka": "პაციენტი მესამე პალატაშია.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Discharge",
+    "georgian": "გაწერა",
+    "pronunciation": "/dɪsˈtʃɑːrdʒ/",
+    "example_en": "He was discharged from the hospital.",
+    "example_ka": "ის საავადმყოფოდან გაწერეს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Chronic",
+    "georgian": "ქრონიკული",
+    "pronunciation": "/ˈkrɒnɪk/",
+    "example_en": "She has a chronic illness.",
+    "example_ka": "მას ქრონიკული დაავადება აქვს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Acute",
+    "georgian": "მწვავე",
+    "pronunciation": "/əˈkjuːt/",
+    "example_en": "He felt acute pain in his abdomen.",
+    "example_ka": "მუცელში მწვავე ტკივილი იგრძნო.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Inflammation",
+    "georgian": "ანთება",
+    "pronunciation": "/ˌɪnfləˈmeɪʃən/",
+    "example_en": "The inflammation caused swelling.",
+    "example_ka": "ანთებამ შეშუპება გამოიწვია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Fracture",
+    "georgian": "მოტეხილობა",
+    "pronunciation": "/ˈfræktʃər/",
+    "example_en": "The X-ray showed a fracture.",
+    "example_ka": "რენტგენმა მოტეხილობა აჩვენა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Sprain",
+    "georgian": "გაგლეჯა",
+    "pronunciation": "/spreɪn/",
+    "example_en": "I sprained my ankle.",
+    "example_ka": "ტერფი გავიგლიჯე.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Blister",
+    "georgian": "ბუშტი",
+    "pronunciation": "/ˈblɪstər/",
+    "example_en": "I got a blister from new shoes.",
+    "example_ka": "ახალი ფეხსაცმლისგან ბუშტი გამიჩნდა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Stitches",
+    "georgian": "ნაკერები",
+    "pronunciation": "/ˈstɪtʃɪz/",
+    "example_en": "The wound needed stitches.",
+    "example_ka": "ჭრილობას ნაკერები დასჭირდა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Scalpel",
+    "georgian": "სკალპელი",
+    "pronunciation": "/ˈskælpəl/",
+    "example_en": "The surgeon used a scalpel.",
+    "example_ka": "ქირურგმა სკალპელი გამოიყენა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Anesthesia",
+    "georgian": "ანესთეზია",
+    "pronunciation": "/ˌænɪsˈθiːziə/",
+    "example_en": "The surgery requires anesthesia.",
+    "example_ka": "ოპერაცია ანესთეზიას მოითხოვს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Biopsy",
+    "georgian": "ბიოფსია",
+    "pronunciation": "/ˈbaɪɒpsi/",
+    "example_en": "The doctor ordered a biopsy.",
+    "example_ka": "ექიმმა ბიოფსია დანიშნა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Ultrasound",
+    "georgian": "ულტრაბგერა",
+    "pronunciation": "/ˈʌltrəsaʊnd/",
+    "example_en": "She had an ultrasound during pregnancy.",
+    "example_ka": "ორსულობისას ულტრაბგერა გაიკეთა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Scan",
+    "georgian": "სკანირება",
+    "pronunciation": "/skæn/",
+    "example_en": "The CT scan showed nothing abnormal.",
+    "example_ka": "კომპიუტერულმა ტომოგრაფიამ არაფერი გამოავლინა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Transplant",
+    "georgian": "ტრანსპლანტაცია",
+    "pronunciation": "/ˈtrænsplænt/",
+    "example_en": "He needs a kidney transplant.",
+    "example_ka": "თირკმლის ტრანსპლანტაცია სჭირდება.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Donor",
+    "georgian": "დონორი",
+    "pronunciation": "/ˈdoʊnər/",
+    "example_en": "She is a blood donor.",
+    "example_ka": "ის სისხლის დონორია.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Therapy",
+    "georgian": "თერაპია",
+    "pronunciation": "/ˈθerəpi/",
+    "example_en": "Physical therapy helped his recovery.",
+    "example_ka": "ფიზიკურმა თერაპიამ გამოჯანმრთელებაში დაეხმარა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Rehabilitation",
+    "georgian": "რეაბილიტაცია",
+    "pronunciation": "/ˌriːəˌbɪlɪˈteɪʃən/",
+    "example_en": "He went through rehabilitation after surgery.",
+    "example_ka": "ოპერაციის შემდეგ რეაბილიტაცია გაიარა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Immunity",
+    "georgian": "იმუნიტეტი",
+    "pronunciation": "/ɪˈmjuːnɪti/",
+    "example_en": "Good nutrition boosts immunity.",
+    "example_ka": "კარგი კვება იმუნიტეტს აძლიერებს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Virus",
+    "georgian": "ვირუსი",
+    "pronunciation": "/ˈvaɪrəs/",
+    "example_en": "The virus spread quickly.",
+    "example_ka": "ვირუსი სწრაფად გავრცელდა.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Bacteria",
+    "georgian": "ბაქტერია",
+    "pronunciation": "/bækˈtɪriə/",
+    "example_en": "Bacteria can cause infections.",
+    "example_ka": "ბაქტერიებმა ინფექციები შეიძლება გამოიწვიოს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Parasite",
+    "georgian": "პარაზიტი",
+    "pronunciation": "/ˈpærəsaɪt/",
+    "example_en": "The test revealed a parasite.",
+    "example_ka": "ანალიზმა პარაზიტი გამოავლინა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Diabetes",
+    "georgian": "დიაბეტი",
+    "pronunciation": "/ˌdaɪəˈbiːtiːz/",
+    "example_en": "Diabetes requires careful management.",
+    "example_ka": "დიაბეტი ფრთხილ მართვას მოითხოვს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Asthma",
+    "georgian": "ასთმა",
+    "pronunciation": "/ˈæzmə/",
+    "example_en": "She uses an inhaler for asthma.",
+    "example_ka": "ასთმისთვის ინჰალატორს იყენებს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Arthritis",
+    "georgian": "ართრიტი",
+    "pronunciation": "/ɑːrˈθraɪtɪs/",
+    "example_en": "Arthritis causes joint pain.",
+    "example_ka": "ართრიტი სახსრების ტკივილს იწვევს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Pneumonia",
+    "georgian": "პნევმონია",
+    "pronunciation": "/njuːˈmoʊniə/",
+    "example_en": "He was hospitalized with pneumonia.",
+    "example_ka": "პნევმონიით საავადმყოფოში მოათავსეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Migraine",
+    "georgian": "შაკიკი",
+    "pronunciation": "/ˈmaɪɡreɪn/",
+    "example_en": "She suffers from migraines.",
+    "example_ka": "ის შაკიკით იტანჯება.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Insomnia",
+    "georgian": "უძილობა",
+    "pronunciation": "/ɪnˈsɒmniə/",
+    "example_en": "Stress can cause insomnia.",
+    "example_ka": "სტრესმა უძილობა შეიძლება გამოიწვიოს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Fatigue",
+    "georgian": "დაღლილობა",
+    "pronunciation": "/fəˈtiːɡ/",
+    "example_en": "Chronic fatigue affects daily life.",
+    "example_ka": "ქრონიკული დაღლილობა ყოველდღიურ ცხოვრებაზე მოქმედებს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Dehydration",
+    "georgian": "გაუწყლოება",
+    "pronunciation": "/ˌdiːhaɪˈdreɪʃən/",
+    "example_en": "Drink water to prevent dehydration.",
+    "example_ka": "გაუწყლოების თავიდან ასაცილებლად წყალი დალიეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Cholesterol",
+    "georgian": "ქოლესტერინი",
+    "pronunciation": "/kəˈlestərɒl/",
+    "example_en": "High cholesterol is dangerous.",
+    "example_ka": "მაღალი ქოლესტერინი საშიშია.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Heartbeat",
+    "georgian": "გულისცემა",
+    "pronunciation": "/ˈhɑːrtbiːt/",
+    "example_en": "The doctor listened to my heartbeat.",
+    "example_ka": "ექიმმა გულისცემა მომისმინა.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Oxygen",
+    "georgian": "ჟანგბადი",
+    "pronunciation": "/ˈɒksɪdʒən/",
+    "example_en": "The patient needs oxygen.",
+    "example_ka": "პაციენტს ჟანგბადი სჭირდება.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Anemia",
+    "georgian": "ანემია",
+    "pronunciation": "/əˈniːmiə/",
+    "example_en": "Iron deficiency can cause anemia.",
+    "example_ka": "რკინის დეფიციტმა ანემია შეიძლება გამოიწვიოს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Seizure",
+    "georgian": "კრუნჩხვა",
+    "pronunciation": "/ˈsiːʒər/",
+    "example_en": "He had a seizure and fell down.",
+    "example_ka": "კრუნჩხვა მოუვიდა და დაეცა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Stroke",
+    "georgian": "ინსულტი",
+    "pronunciation": "/stroʊk/",
+    "example_en": "Quick treatment is vital after a stroke.",
+    "example_ka": "ინსულტის შემდეგ სწრაფი მკურნალობა სასიცოცხლოა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Tumor",
+    "georgian": "სიმსივნე",
+    "pronunciation": "/ˈtjuːmər/",
+    "example_en": "The tumor was benign.",
+    "example_ka": "სიმსივნე კეთილთვისებიანი იყო.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Cancer",
+    "georgian": "კიბო",
+    "pronunciation": "/ˈkænsər/",
+    "example_en": "Early detection of cancer saves lives.",
+    "example_ka": "კიბოს ადრეული გამოვლენა სიცოცხლეს გადაარჩენს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Chemotherapy",
+    "georgian": "ქიმიოთერაპია",
+    "pronunciation": "/ˌkiːmoʊˈθerəpi/",
+    "example_en": "She is undergoing chemotherapy.",
+    "example_ka": "ის ქიმიოთერაპიას გადის.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Radiology",
+    "georgian": "რადიოლოგია",
+    "pronunciation": "/ˌreɪdiˈɒlədʒi/",
+    "example_en": "The radiology department is on the third floor.",
+    "example_ka": "რადიოლოგიის განყოფილება მესამე სართულზეა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Pediatrician",
+    "georgian": "პედიატრი",
+    "pronunciation": "/ˌpiːdiəˈtrɪʃən/",
+    "example_en": "Take the baby to the pediatrician.",
+    "example_ka": "ბავშვი პედიატრთან წაიყვანეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Cardiologist",
+    "georgian": "კარდიოლოგი",
+    "pronunciation": "/ˌkɑːrdiˈɒlədʒɪst/",
+    "example_en": "She was referred to a cardiologist.",
+    "example_ka": "ის კარდიოლოგთან გაგზავნეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Dermatologist",
+    "georgian": "დერმატოლოგი",
+    "pronunciation": "/ˌdɜːrməˈtɒlədʒɪst/",
+    "example_en": "See a dermatologist for skin problems.",
+    "example_ka": "კანის პრობლემების დროს დერმატოლოგთან მიდით.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Neurologist",
+    "georgian": "ნევროლოგი",
+    "pronunciation": "/njʊˈrɒlədʒɪst/",
+    "example_en": "The neurologist examined his reflexes.",
+    "example_ka": "ნევროლოგმა რეფლექსები შეუმოწმა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Ophthalmologist",
+    "georgian": "ოფთალმოლოგი",
+    "pronunciation": "/ˌɒfθælˈmɒlədʒɪst/",
+    "example_en": "The ophthalmologist tested my vision.",
+    "example_ka": "ოფთალმოლოგმა მხედველობა შემიმოწმა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Psychiatrist",
+    "georgian": "ფსიქიატრი",
+    "pronunciation": "/saɪˈkaɪətrɪst/",
+    "example_en": "He visits a psychiatrist regularly.",
+    "example_ka": "ის რეგულარულად დადის ფსიქიატრთან.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Pharmacist",
+    "georgian": "ფარმაცევტი",
+    "pronunciation": "/ˈfɑːrməsɪst/",
+    "example_en": "Ask the pharmacist for advice.",
+    "example_ka": "ფარმაცევტს რჩევა სთხოვეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Paramedic",
+    "georgian": "პარამედიკოსი",
+    "pronunciation": "/ˌpærəˈmedɪk/",
+    "example_en": "The paramedic arrived quickly.",
+    "example_ka": "პარამედიკოსი სწრაფად მოვიდა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Physiotherapist",
+    "georgian": "ფიზიოთერაპევტი",
+    "pronunciation": "/ˌfɪzioʊˈθerəpɪst/",
+    "example_en": "The physiotherapist helped with exercises.",
+    "example_ka": "ფიზიოთერაპევტმა ვარჯიშებში დაეხმარა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Gynecologist",
+    "georgian": "გინეკოლოგი",
+    "pronunciation": "/ˌɡaɪnɪˈkɒlədʒɪst/",
+    "example_en": "She visits the gynecologist annually.",
+    "example_ka": "ის ყოველწლიურად მიდის გინეკოლოგთან.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Urologist",
+    "georgian": "უროლოგი",
+    "pronunciation": "/jʊˈrɒlədʒɪst/",
+    "example_en": "He was referred to a urologist.",
+    "example_ka": "ის უროლოგთან გაგზავნეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Oncologist",
+    "georgian": "ონკოლოგი",
+    "pronunciation": "/ɒnˈkɒlədʒɪst/",
+    "example_en": "The oncologist discussed the treatment options.",
+    "example_ka": "ონკოლოგმა მკურნალობის ვარიანტები განიხილა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Allergist",
+    "georgian": "ალერგოლოგი",
+    "pronunciation": "/ˈælərdʒɪst/",
+    "example_en": "The allergist performed a skin test.",
+    "example_ka": "ალერგოლოგმა კანის ტესტი ჩაატარა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Orthopedist",
+    "georgian": "ორთოპედი",
+    "pronunciation": "/ˌɔːrθəˈpiːdɪst/",
+    "example_en": "The orthopedist examined my knee.",
+    "example_ka": "ორთოპედმა მუხლი შემიმოწმა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Stretcher",
+    "georgian": "საწოლი",
+    "pronunciation": "/ˈstretʃər/",
+    "example_en": "They carried him on a stretcher.",
+    "example_ka": "ის საწოლით გადაიტანეს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Crutches",
+    "georgian": "ყავარჯნები",
+    "pronunciation": "/ˈkrʌtʃɪz/",
+    "example_en": "He walks with crutches.",
+    "example_ka": "ის ყავარჯნებით დადის.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Splint",
+    "georgian": "შინა",
+    "pronunciation": "/splɪnt/",
+    "example_en": "The doctor put a splint on the finger.",
+    "example_ka": "ექიმმა თითზე შინა დაადო.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Gauze",
+    "georgian": "მარლა",
+    "pronunciation": "/ɡɔːz/",
+    "example_en": "Cover the wound with gauze.",
+    "example_ka": "ჭრილობა მარლით დაფარეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Antiseptic",
+    "georgian": "ანტისეპტიკი",
+    "pronunciation": "/ˌæntɪˈseptɪk/",
+    "example_en": "Apply antiseptic to the cut.",
+    "example_ka": "ჭრილობაზე ანტისეპტიკი წაისვით.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Sterilize",
+    "georgian": "სტერილიზაცია",
+    "pronunciation": "/ˈsterɪlaɪz/",
+    "example_en": "Sterilize the instruments before use.",
+    "example_ka": "ინსტრუმენტები გამოყენებამდე გაასტერილეთ.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Sedative",
+    "georgian": "დამამშვიდებელი",
+    "pronunciation": "/ˈsedətɪv/",
+    "example_en": "The doctor gave her a sedative.",
+    "example_ka": "ექიმმა დამამშვიდებელი მისცა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Stimulant",
+    "georgian": "სტიმულატორი",
+    "pronunciation": "/ˈstɪmjʊlənt/",
+    "example_en": "Caffeine is a common stimulant.",
+    "example_ka": "კოფეინი გავრცელებული სტიმულატორია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Inhaler",
+    "georgian": "ინჰალატორი",
+    "pronunciation": "/ɪnˈheɪlər/",
+    "example_en": "She always carries her inhaler.",
+    "example_ka": "ის ყოველთვის ატარებს ინჰალატორს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Catheter",
+    "georgian": "კათეტერი",
+    "pronunciation": "/ˈkæθɪtər/",
+    "example_en": "The nurse inserted a catheter.",
+    "example_ka": "ექთანმა კათეტერი ჩაუდგა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Dialysis",
+    "georgian": "დიალიზი",
+    "pronunciation": "/daɪˈælɪsɪs/",
+    "example_en": "He undergoes dialysis three times a week.",
+    "example_ka": "ის კვირაში სამჯერ გადის დიალიზს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Autopsy",
+    "georgian": "ავტოფსია",
+    "pronunciation": "/ˈɔːtɒpsi/",
+    "example_en": "An autopsy was performed.",
+    "example_ka": "ავტოფსია ჩატარდა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Prognosis",
+    "georgian": "პროგნოზი",
+    "pronunciation": "/prɒɡˈnoʊsɪs/",
+    "example_en": "The prognosis is good.",
+    "example_ka": "პროგნოზი კარგია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Relapse",
+    "georgian": "რეციდივი",
+    "pronunciation": "/rɪˈlæps/",
+    "example_en": "The patient had a relapse.",
+    "example_ka": "პაციენტს რეციდივი მოუვიდა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Remission",
+    "georgian": "რემისია",
+    "pronunciation": "/rɪˈmɪʃən/",
+    "example_en": "The cancer is in remission.",
+    "example_ka": "კიბო რემისიაშია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Overdose",
+    "georgian": "დოზის გადაჭარბება",
+    "pronunciation": "/ˈoʊvərdoʊs/",
+    "example_en": "An overdose can be fatal.",
+    "example_ka": "დოზის გადაჭარბება ფატალური შეიძლება იყოს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Vomiting",
+    "georgian": "ღებინება",
+    "pronunciation": "/ˈvɒmɪtɪŋ/",
+    "example_en": "The child has been vomiting all day.",
+    "example_ka": "ბავშვს მთელი დღე აქვს ღებინება.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Diarrhea",
+    "georgian": "დიარეა",
+    "pronunciation": "/ˌdaɪəˈriːə/",
+    "example_en": "Diarrhea can cause dehydration.",
+    "example_ka": "დიარეამ გაუწყლოება შეიძლება გამოიწვიოს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Constipation",
+    "georgian": "ყაბზობა",
+    "pronunciation": "/ˌkɒnstɪˈpeɪʃən/",
+    "example_en": "Drink more water to relieve constipation.",
+    "example_ka": "ყაბზობის შესამსუბუქებლად მეტი წყალი დალიეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Itching",
+    "georgian": "ქავილი",
+    "pronunciation": "/ˈɪtʃɪŋ/",
+    "example_en": "The itching won't stop.",
+    "example_ka": "ქავილი არ წყდება.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Numbness",
+    "georgian": "დაბუჟება",
+    "pronunciation": "/ˈnʌmnɪs/",
+    "example_en": "I feel numbness in my fingers.",
+    "example_ka": "თითებში დაბუჟებას ვგრძნობ.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Cramp",
+    "georgian": "კრუნჩხვა",
+    "pronunciation": "/kræmp/",
+    "example_en": "I got a cramp in my leg.",
+    "example_ka": "ფეხი დამეკრუნჩხა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Stiff",
+    "georgian": "გაშეშებული",
+    "pronunciation": "/stɪf/",
+    "example_en": "My neck is stiff.",
+    "example_ka": "კისერი გამეშეშდა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Sore",
+    "georgian": "მტკივნეული",
+    "pronunciation": "/sɔːr/",
+    "example_en": "I have a sore throat.",
+    "example_ka": "ყელი მტკივა.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Sneeze",
+    "georgian": "ცემინება",
+    "pronunciation": "/sniːz/",
+    "example_en": "I can't stop sneezing.",
+    "example_ka": "ცემინების შეჩერება არ შემიძლია.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Bleed",
+    "georgian": "სისხლდენა",
+    "pronunciation": "/bliːd/",
+    "example_en": "The cut won't stop bleeding.",
+    "example_ka": "ჭრილობიდან სისხლდენა არ ჩერდება.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Faint",
+    "georgian": "გულის წასვლა",
+    "pronunciation": "/feɪnt/",
+    "example_en": "She fainted from the heat.",
+    "example_ka": "სიცხისგან გული წაუვიდა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Unconscious",
+    "georgian": "უგონო",
+    "pronunciation": "/ʌnˈkɒnʃəs/",
+    "example_en": "The patient was unconscious.",
+    "example_ka": "პაციენტი უგონო მდგომარეობაში იყო.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Conscious",
+    "georgian": "ცნობიერი",
+    "pronunciation": "/ˈkɒnʃəs/",
+    "example_en": "The patient is conscious now.",
+    "example_ka": "პაციენტი ახლა ცნობიერებაშია.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Concussion",
+    "georgian": "ტვინის შერყევა",
+    "pronunciation": "/kənˈkʌʃən/",
+    "example_en": "He suffered a concussion.",
+    "example_ka": "მას ტვინის შერყევა მოუვიდა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Defibrillator",
+    "georgian": "დეფიბრილატორი",
+    "pronunciation": "/dɪˈfɪbrɪleɪtər/",
+    "example_en": "They used a defibrillator to save him.",
+    "example_ka": "მის გადასარჩენად დეფიბრილატორი გამოიყენეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Ventilator",
+    "georgian": "ვენტილატორი",
+    "pronunciation": "/ˈventɪleɪtər/",
+    "example_en": "The patient was put on a ventilator.",
+    "example_ka": "პაციენტი ვენტილატორზე შეაერთეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Scab",
+    "georgian": "ქერქი",
+    "pronunciation": "/skæb/",
+    "example_en": "Don't pick at the scab.",
+    "example_ka": "ქერქს ნუ აცლი.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Scar",
+    "georgian": "ნაწიბური",
+    "pronunciation": "/skɑːr/",
+    "example_en": "The surgery left a scar.",
+    "example_ka": "ოპერაციამ ნაწიბური დატოვა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Abscess",
+    "georgian": "აბსცესი",
+    "pronunciation": "/ˈæbses/",
+    "example_en": "The abscess needs to be drained.",
+    "example_ka": "აბსცესი უნდა გაიწმინდოს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Benign",
+    "georgian": "კეთილთვისებიანი",
+    "pronunciation": "/bɪˈnaɪn/",
+    "example_en": "The tumor is benign.",
+    "example_ka": "სიმსივნე კეთილთვისებიანია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Malignant",
+    "georgian": "ავთვისებიანი",
+    "pronunciation": "/məˈlɪɡnənt/",
+    "example_en": "The biopsy showed a malignant tumor.",
+    "example_ka": "ბიოფსიამ ავთვისებიანი სიმსივნე აჩვენა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Epidemic",
+    "georgian": "ეპიდემია",
+    "pronunciation": "/ˌepɪˈdemɪk/",
+    "example_en": "The flu epidemic affected thousands.",
+    "example_ka": "გრიპის ეპიდემიამ ათასობით ადამიანზე იმოქმედა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Pandemic",
+    "georgian": "პანდემია",
+    "pronunciation": "/pænˈdemɪk/",
+    "example_en": "The pandemic changed our lives.",
+    "example_ka": "პანდემიამ ჩვენი ცხოვრება შეცვალა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Quarantine",
+    "georgian": "კარანტინი",
+    "pronunciation": "/ˈkwɒrəntiːn/",
+    "example_en": "He was placed in quarantine.",
+    "example_ka": "ის კარანტინში მოათავსეს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Hygiene",
+    "georgian": "ჰიგიენა",
+    "pronunciation": "/ˈhaɪdʒiːn/",
+    "example_en": "Good hygiene prevents disease.",
+    "example_ka": "კარგი ჰიგიენა დაავადებას თავიდან აცილებს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Sterile",
+    "georgian": "სტერილური",
+    "pronunciation": "/ˈsterɪl/",
+    "example_en": "Use sterile gloves.",
+    "example_ka": "სტერილური ხელთათმანები გამოიყენეთ.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Congenital",
+    "georgian": "თანდაყოლილი",
+    "pronunciation": "/kənˈdʒenɪtəl/",
+    "example_en": "It is a congenital condition.",
+    "example_ka": "ეს თანდაყოლილი მდგომარეობაა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Hereditary",
+    "georgian": "მემკვიდრეობითი",
+    "pronunciation": "/hɪˈredɪtəri/",
+    "example_en": "The disease is hereditary.",
+    "example_ka": "დაავადება მემკვიდრეობითია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Immune",
+    "georgian": "იმუნური",
+    "pronunciation": "/ɪˈmjuːn/",
+    "example_en": "The immune system fights infection.",
+    "example_ka": "იმუნური სისტემა ინფექციას ებრძვის.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Organ",
+    "georgian": "ორგანო",
+    "pronunciation": "/ˈɔːrɡən/",
+    "example_en": "The heart is a vital organ.",
+    "example_ka": "გული სასიცოცხლო ორგანოა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Tissue",
+    "georgian": "ქსოვილი",
+    "pronunciation": "/ˈtɪʃuː/",
+    "example_en": "The damaged tissue needs time to heal.",
+    "example_ka": "დაზიანებულ ქსოვილს გამოჯანმრთელებისთვის დრო სჭირდება.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Vein",
+    "georgian": "ვენა",
+    "pronunciation": "/veɪn/",
+    "example_en": "The nurse found a vein for the IV.",
+    "example_ka": "ექთანმა საწვეთურისთვის ვენა იპოვა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Artery",
+    "georgian": "არტერია",
+    "pronunciation": "/ˈɑːrtəri/",
+    "example_en": "The artery was blocked.",
+    "example_ka": "არტერია დაბლოკილი იყო.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Spine",
+    "georgian": "ხერხემალი",
+    "pronunciation": "/spaɪn/",
+    "example_en": "He injured his spine.",
+    "example_ka": "მან ხერხემალი დაიზიანა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Joint",
+    "georgian": "სახსარი",
+    "pronunciation": "/dʒɔɪnt/",
+    "example_en": "My joints ache in cold weather.",
+    "example_ka": "ცივ ამინდში სახსრები მტკივა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Tendon",
+    "georgian": "მყესი",
+    "pronunciation": "/ˈtendən/",
+    "example_en": "He tore a tendon in his shoulder.",
+    "example_ka": "მხარში მყესი გაიწყვიტა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Ligament",
+    "georgian": "იოგი",
+    "pronunciation": "/ˈlɪɡəmənt/",
+    "example_en": "She tore a ligament in her knee.",
+    "example_ka": "მუხლში იოგი გაიწყვიტა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Cartilage",
+    "georgian": "ხრტილი",
+    "pronunciation": "/ˈkɑːrtɪlɪdʒ/",
+    "example_en": "The cartilage in his knee is worn.",
+    "example_ka": "მუხლის ხრტილი გაცვეთილია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Membrane",
+    "georgian": "გარსი",
+    "pronunciation": "/ˈmembreɪn/",
+    "example_en": "The membrane protects the organ.",
+    "example_ka": "გარსი ორგანოს იცავს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Gland",
+    "georgian": "ჯირკვალი",
+    "pronunciation": "/ɡlænd/",
+    "example_en": "The thyroid gland controls metabolism.",
+    "example_ka": "ფარისებრი ჯირკვალი მეტაბოლიზმს აკონტროლებს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Hormone",
+    "georgian": "ჰორმონი",
+    "pronunciation": "/ˈhɔːrmoʊn/",
+    "example_en": "Hormones affect your mood.",
+    "example_ka": "ჰორმონები განწყობაზე მოქმედებს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Metabolism",
+    "georgian": "მეტაბოლიზმი",
+    "pronunciation": "/məˈtæbəlɪzəm/",
+    "example_en": "Exercise boosts your metabolism.",
+    "example_ka": "ვარჯიში მეტაბოლიზმს აჩქარებს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Symptomatically",
+    "georgian": "სიმპტომატურად",
+    "pronunciation": "/ˌsɪmptəˈmætɪkli/",
+    "example_en": "The disease is treated symptomatically.",
+    "example_ka": "დაავადება სიმპტომატურად მკურნალობენ.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Capsule",
+    "georgian": "კაფსულა",
+    "pronunciation": "/ˈkæpsjuːl/",
+    "example_en": "Swallow the capsule with water.",
+    "example_ka": "კაფსულა წყლით ჩაყლაპეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Syrup",
+    "georgian": "სიროფი",
+    "pronunciation": "/ˈsɪrəp/",
+    "example_en": "Give the child cough syrup.",
+    "example_ka": "ბავშვს ხველის სიროფი მიეცით.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Drops",
+    "georgian": "წვეთები",
+    "pronunciation": "/drɒps/",
+    "example_en": "Use eye drops twice a day.",
+    "example_ka": "თვალის წვეთები დღეში ორჯერ გამოიყენეთ.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Supplement",
+    "georgian": "დანამატი",
+    "pronunciation": "/ˈsʌplɪmənt/",
+    "example_en": "Take vitamin supplements daily.",
+    "example_ka": "ვიტამინის დანამატები ყოველდღიურად მიიღეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Tonsils",
+    "georgian": "ნუშისებრი ჯირკვლები",
+    "pronunciation": "/ˈtɒnsɪlz/",
+    "example_en": "Her tonsils are inflamed.",
+    "example_ka": "ნუშისებრი ჯირკვლები აანთებული აქვს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Appendix",
+    "georgian": "ბრმანაწლავი",
+    "pronunciation": "/əˈpendɪks/",
+    "example_en": "His appendix was removed.",
+    "example_ka": "მას ბრმანაწლავი ამოუკვეთეს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Kidney",
+    "georgian": "თირკმელი",
+    "pronunciation": "/ˈkɪdni/",
+    "example_en": "She donated a kidney.",
+    "example_ka": "მან თირკმელი შესწირა.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Liver",
+    "georgian": "ღვიძლი",
+    "pronunciation": "/ˈlɪvər/",
+    "example_en": "Alcohol damages the liver.",
+    "example_ka": "ალკოჰოლი ღვიძლს აზიანებს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Lung",
+    "georgian": "ფილტვი",
+    "pronunciation": "/lʌŋ/",
+    "example_en": "Smoking harms the lungs.",
+    "example_ka": "მოწევა ფილტვებს აზიანებს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Intestine",
+    "georgian": "ნაწლავი",
+    "pronunciation": "/ɪnˈtestɪn/",
+    "example_en": "The small intestine absorbs nutrients.",
+    "example_ka": "წვრილი ნაწლავი საკვებ ნივთიერებებს შთანთქავს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Bladder",
+    "georgian": "შარდის ბუშტი",
+    "pronunciation": "/ˈblædər/",
+    "example_en": "A bladder infection is painful.",
+    "example_ka": "შარდის ბუშტის ინფექცია მტკივნეულია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Pancreas",
+    "georgian": "პანკრეასი",
+    "pronunciation": "/ˈpæŋkriəs/",
+    "example_en": "The pancreas produces insulin.",
+    "example_ka": "პანკრეასი ინსულინს გამოიმუშავებს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Gallbladder",
+    "georgian": "ნაღვლის ბუშტი",
+    "pronunciation": "/ˈɡɔːlblædər/",
+    "example_en": "She had her gallbladder removed.",
+    "example_ka": "მას ნაღვლის ბუშტი ამოუკვეთეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Colon",
+    "georgian": "მსხვილი ნაწლავი",
+    "pronunciation": "/ˈkoʊlən/",
+    "example_en": "A colonoscopy examines the colon.",
+    "example_ka": "კოლონოსკოპია მსხვილ ნაწლავს იკვლევს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Esophagus",
+    "georgian": "საყლაპავი",
+    "pronunciation": "/ɪˈsɒfəɡəs/",
+    "example_en": "Food passes through the esophagus.",
+    "example_ka": "საკვები საყლაპავით გადის.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Trachea",
+    "georgian": "ტრაქეა",
+    "pronunciation": "/trəˈkiːə/",
+    "example_en": "The trachea carries air to the lungs.",
+    "example_ka": "ტრაქეა ჰაერს ფილტვებში მიაწვდის.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Diaphragm",
+    "georgian": "დიაფრაგმა",
+    "pronunciation": "/ˈdaɪəfræm/",
+    "example_en": "The diaphragm helps with breathing.",
+    "example_ka": "დიაფრაგმა სუნთქვაში ეხმარება.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Marrow",
+    "georgian": "ძვლის ტვინი",
+    "pronunciation": "/ˈmæroʊ/",
+    "example_en": "Bone marrow produces blood cells.",
+    "example_ka": "ძვლის ტვინი სისხლის უჯრედებს გამოიმუშავებს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Platelet",
+    "georgian": "თრომბოციტი",
+    "pronunciation": "/ˈpleɪtlɪt/",
+    "example_en": "Platelets help blood clot.",
+    "example_ka": "თრომბოციტები სისხლის შედედებაში ეხმარება.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Plasma",
+    "georgian": "პლაზმა",
+    "pronunciation": "/ˈplæzmə/",
+    "example_en": "Blood plasma carries nutrients.",
+    "example_ka": "სისხლის პლაზმა საკვებ ნივთიერებებს ატარებს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Clot",
+    "georgian": "თრომბი",
+    "pronunciation": "/klɒt/",
+    "example_en": "A blood clot can be dangerous.",
+    "example_ka": "სისხლის თრომბი საშიში შეიძლება იყოს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Ulcer",
+    "georgian": "წყლული",
+    "pronunciation": "/ˈʌlsər/",
+    "example_en": "He has a stomach ulcer.",
+    "example_ka": "კუჭის წყლული აქვს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Hernia",
+    "georgian": "თიაქარი",
+    "pronunciation": "/ˈhɜːrniə/",
+    "example_en": "The hernia requires surgery.",
+    "example_ka": "თიაქარი ოპერაციას მოითხოვს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Cyst",
+    "georgian": "ცისტა",
+    "pronunciation": "/sɪst/",
+    "example_en": "The cyst was removed surgically.",
+    "example_ka": "ცისტა ქირურგიულად ამოკვეთეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Polyp",
+    "georgian": "პოლიპი",
+    "pronunciation": "/ˈpɒlɪp/",
+    "example_en": "Polyps were found during the exam.",
+    "example_ka": "გამოკვლევისას პოლიპები აღმოაჩინეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Eczema",
+    "georgian": "ეგზემა",
+    "pronunciation": "/ˈeksɪmə/",
+    "example_en": "Eczema causes dry, itchy skin.",
+    "example_ka": "ეგზემა კანის სიმშრალეს და ქავილს იწვევს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Psoriasis",
+    "georgian": "ფსორიაზი",
+    "pronunciation": "/sɔːˈraɪəsɪs/",
+    "example_en": "Psoriasis is a chronic skin condition.",
+    "example_ka": "ფსორიაზი კანის ქრონიკული დაავადებაა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Jaundice",
+    "georgian": "სიყვითლე",
+    "pronunciation": "/ˈdʒɔːndɪs/",
+    "example_en": "Jaundice causes yellowing of the skin.",
+    "example_ka": "სიყვითლე კანის გაყვითლებას იწვევს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Vertigo",
+    "georgian": "თავბრუსხვევა",
+    "pronunciation": "/ˈvɜːrtɪɡoʊ/",
+    "example_en": "She experiences vertigo when standing.",
+    "example_ka": "დგომისას თავბრუსხვევას განიცდის.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Tinnitus",
+    "georgian": "ყურში ზუზუნი",
+    "pronunciation": "/ˈtɪnɪtəs/",
+    "example_en": "Tinnitus causes ringing in the ears.",
+    "example_ka": "ტინიტუსი ყურში ზუზუნს იწვევს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Catheterize",
+    "georgian": "კათეტერიზაცია",
+    "pronunciation": "/ˈkæθɪtəraɪz/",
+    "example_en": "The nurse needs to catheterize the patient.",
+    "example_ka": "ექთანს პაციენტის კათეტერიზაცია სჭირდება.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Suture",
+    "georgian": "ნაკერი",
+    "pronunciation": "/ˈsuːtʃər/",
+    "example_en": "The surgeon closed the wound with sutures.",
+    "example_ka": "ქირურგმა ჭრილობა ნაკერებით დახურა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Tourniquet",
+    "georgian": "ტურნიკეტი",
+    "pronunciation": "/ˈtɜːrnɪkɪt/",
+    "example_en": "Apply a tourniquet to stop the bleeding.",
+    "example_ka": "სისხლდენის შესაჩერებლად ტურნიკეტი დაადეთ.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Ibuprofen",
+    "georgian": "იბუპროფენი",
+    "pronunciation": "/ˌaɪbjuːˈproʊfən/",
+    "example_en": "Take ibuprofen for the inflammation.",
+    "example_ka": "ანთების საწინააღმდეგოდ იბუპროფენი მიიღეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Aspirin",
+    "georgian": "ასპირინი",
+    "pronunciation": "/ˈæspɪrɪn/",
+    "example_en": "Aspirin can reduce fever.",
+    "example_ka": "ასპირინს ცხელება შეუძლია დაწიოს.",
+    "category": "doctor",
+    "level": "A2"
+  },
+  {
+    "english": "Insulin",
+    "georgian": "ინსულინი",
+    "pronunciation": "/ˈɪnsəlɪn/",
+    "example_en": "He injects insulin daily.",
+    "example_ka": "ის ყოველდღიურად იკეთებს ინსულინს.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Morphine",
+    "georgian": "მორფინი",
+    "pronunciation": "/ˈmɔːrfiːn/",
+    "example_en": "Morphine was given for severe pain.",
+    "example_ka": "ძლიერი ტკივილის გამო მორფინი მისცეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Antihistamine",
+    "georgian": "ანტიჰისტამინი",
+    "pronunciation": "/ˌæntiˈhɪstəmiːn/",
+    "example_en": "Take an antihistamine for allergies.",
+    "example_ka": "ალერგიისთვის ანტიჰისტამინი მიიღეთ.",
+    "category": "doctor",
+    "level": "B1"
+  },
+  {
+    "english": "Laxative",
+    "georgian": "საფაღარათო",
+    "pronunciation": "/ˈlæksətɪv/",
+    "example_en": "The doctor recommended a laxative.",
+    "example_ka": "ექიმმა საფაღარათო ურჩია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Antidote",
+    "georgian": "ანტიდოტი",
+    "pronunciation": "/ˈæntɪdoʊt/",
+    "example_en": "They gave the antidote quickly.",
+    "example_ka": "ანტიდოტი სწრაფად მისცეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Triage",
+    "georgian": "ტრიაჟი",
+    "pronunciation": "/triːˈɑːʒ/",
+    "example_en": "Triage determines treatment priority.",
+    "example_ka": "ტრიაჟი მკურნალობის პრიორიტეტს განსაზღვრავს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Resuscitate",
+    "georgian": "რეანიმაცია",
+    "pronunciation": "/rɪˈsʌsɪteɪt/",
+    "example_en": "They managed to resuscitate the patient.",
+    "example_ka": "პაციენტის რეანიმაცია მოახერხეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Intubate",
+    "georgian": "ინტუბაცია",
+    "pronunciation": "/ˈɪntjuːbeɪt/",
+    "example_en": "The doctor had to intubate the patient.",
+    "example_ka": "ექიმს პაციენტის ინტუბაცია მოუწია.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Amputation",
+    "georgian": "ამპუტაცია",
+    "pronunciation": "/ˌæmpjʊˈteɪʃən/",
+    "example_en": "The amputation saved his life.",
+    "example_ka": "ამპუტაციამ სიცოცხლე გადაურჩინა.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Prosthesis",
+    "georgian": "პროთეზი",
+    "pronunciation": "/prɒsˈθiːsɪs/",
+    "example_en": "He was fitted with a prosthesis.",
+    "example_ka": "მას პროთეზი დაუმაგრეს.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Pacemaker",
+    "georgian": "პეისმეიკერი",
+    "pronunciation": "/ˈpeɪsmeɪkər/",
+    "example_en": "He has a pacemaker implanted.",
+    "example_ka": "მას პეისმეიკერი აქვს ჩადგმული.",
+    "category": "doctor",
+    "level": "B2"
+  },
+  {
+    "english": "Stent",
+    "georgian": "სტენტი",
+    "pronunciation": "/stent/",
+    "example_en": "A stent was placed in his artery.",
+    "example_ka": "არტერიაში სტენტი ჩაუდგეს.",
+    "category": "doctor",
+    "level": "B2"
+  }
 ]

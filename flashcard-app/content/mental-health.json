@@ -1,27 +1,1055 @@
 [
-  {"english":"stress","georgian":"სტრესი","pronunciation":"/stres/","example_en":"Work is causing me a lot of stress.","example_ka":"სამსახური ბევრ სტრესს მიქმნის.","category":"mental-health","level":"beginner"},
-  {"english":"anxiety","georgian":"შფოთვა","pronunciation":"/æŋˈzaɪəti/","example_en":"I get anxiety before exams.","example_ka":"გამოცდების წინ შფოთვა მეუფლება.","category":"mental-health","level":"intermediate"},
-  {"english":"depression","georgian":"დეპრესია","pronunciation":"/dɪˈpreʃən/","example_en":"Depression is a serious condition.","example_ka":"დეპრესია სერიოზული მდგომარეობაა.","category":"mental-health","level":"intermediate"},
-  {"english":"therapy","georgian":"თერაპია","pronunciation":"/ˈθerəpi/","example_en":"Therapy helped me a lot.","example_ka":"თერაპიამ ძალიან დამეხმარა.","category":"mental-health","level":"beginner"},
-  {"english":"burnout","georgian":"გადაწვა","pronunciation":"/ˈbɜːrnaʊt/","example_en":"I'm experiencing burnout from overwork.","example_ka":"გადამეტებული მუშაობისგან გადაწვა მაქვს.","category":"mental-health","level":"intermediate"},
-  {"english":"self-care","georgian":"თვითზრუნვა","pronunciation":"/self keər/","example_en":"Self-care is not selfish.","example_ka":"თვითზრუნვა ეგოიზმი არ არის.","category":"mental-health","level":"beginner"},
-  {"english":"meditate","georgian":"მედიტაცია","pronunciation":"/ˈmedɪteɪt/","example_en":"I meditate for 10 minutes every morning.","example_ka":"ყოველ დილით 10 წუთი მედიტაციას ვაკეთებ.","category":"mental-health","level":"beginner"},
-  {"english":"overthink","georgian":"ზედმეტი ფიქრი","pronunciation":"/ˌoʊvərˈθɪŋk/","example_en":"Stop overthinking and just do it.","example_ka":"შეწყვიტე ზედმეტი ფიქრი და უბრალოდ გააკეთე.","category":"mental-health","level":"beginner"},
-  {"english":"boundary","georgian":"საზღვარი","pronunciation":"/ˈbaʊndəri/","example_en":"Setting boundaries is important.","example_ka":"საზღვრების დაწესება მნიშვნელოვანია.","category":"mental-health","level":"intermediate"},
-  {"english":"toxic","georgian":"ტოქსიკური","pronunciation":"/ˈtɒksɪk/","example_en":"Remove toxic people from your life.","example_ka":"ტოქსიკური ადამიანები ცხოვრებიდან ამოიშორე.","category":"mental-health","level":"beginner"},
-  {"english":"mindset","georgian":"აზროვნება","pronunciation":"/ˈmaɪndset/","example_en":"A positive mindset changes everything.","example_ka":"დადებითი აზროვნება ყველაფერს ცვლის.","category":"mental-health","level":"beginner"},
-  {"english":"mental health","georgian":"ფსიქიკური ჯანმრთელობა","pronunciation":"/ˈmentəl helθ/","example_en":"Mental health is just as important as physical health.","example_ka":"ფსიქიკური ჯანმრთელობა ფიზიკურის ტოლად მნიშვნელოვანია.","category":"mental-health","level":"beginner"},
-  {"english":"panic attack","georgian":"პანიკური შეტევა","pronunciation":"/ˈpænɪk əˈtæk/","example_en":"He had a panic attack at work.","example_ka":"სამსახურში პანიკური შეტევა მოუვიდა.","category":"mental-health","level":"intermediate"},
-  {"english":"cope","georgian":"გამკლავება","pronunciation":"/koʊp/","example_en":"How do you cope with stress?","example_ka":"სტრესს როგორ უმკლავდები?","category":"mental-health","level":"intermediate"},
-  {"english":"motivation","georgian":"მოტივაცია","pronunciation":"/ˌmoʊtɪˈveɪʃən/","example_en":"I lost my motivation to study.","example_ka":"სწავლის მოტივაცია დავკარგე.","category":"mental-health","level":"beginner"},
-  {"english":"procrastinate","georgian":"გადავადება","pronunciation":"/proʊˈkræstɪneɪt/","example_en":"Stop procrastinating and start working.","example_ka":"შეწყვიტე გადავადება და დაიწყე მუშაობა.","category":"mental-health","level":"intermediate"},
-  {"english":"insomnia","georgian":"უძილობა","pronunciation":"/ɪnˈsɒmniə/","example_en":"Stress can cause insomnia.","example_ka":"სტრესმა უძილობა შეიძლება გამოიწვიოს.","category":"mental-health","level":"intermediate"},
-  {"english":"grateful","georgian":"მადლიერი","pronunciation":"/ˈɡreɪtfəl/","example_en":"I'm grateful for my family.","example_ka":"ოჯახისთვის მადლიერი ვარ.","category":"mental-health","level":"beginner"},
-  {"english":"breathe","georgian":"სუნთქვა","pronunciation":"/briːð/","example_en":"Take a deep breath and relax.","example_ka":"ღრმად ჩაისუნთქე და მოიდუნე.","category":"mental-health","level":"beginner"},
-  {"english":"journal","georgian":"დღიური","pronunciation":"/ˈdʒɜːrnəl/","example_en":"Writing in a journal helps clear your mind.","example_ka":"დღიურში წერა აზრების გამწმენდს ეხმარება.","category":"mental-health","level":"beginner"},
-  {"english":"lonely","georgian":"მარტოსული","pronunciation":"/ˈloʊnli/","example_en":"Living alone can feel lonely sometimes.","example_ka":"მარტო ცხოვრება ზოგჯერ მარტოსულობის შეგრძნებას იწვევს.","category":"mental-health","level":"beginner"},
-  {"english":"overwhelmed","georgian":"გადატვირთული","pronunciation":"/ˌoʊvərˈwelmd/","example_en":"I feel overwhelmed with everything.","example_ka":"ყველაფრით გადატვირთული ვარ.","category":"mental-health","level":"intermediate"},
-  {"english":"confidence","georgian":"თავდაჯერებულობა","pronunciation":"/ˈkɒnfɪdəns/","example_en":"Build your confidence step by step.","example_ka":"თავდაჯერებულობა ნაბიჯ-ნაბიჯ ააშენე.","category":"mental-health","level":"beginner"},
-  {"english":"self-esteem","georgian":"თვითშეფასება","pronunciation":"/self ɪˈstiːm/","example_en":"Low self-esteem affects everything.","example_ka":"დაბალი თვითშეფასება ყველაფერზე მოქმედებს.","category":"mental-health","level":"intermediate"},
-  {"english":"relax","georgian":"მოდუნება","pronunciation":"/rɪˈlæks/","example_en":"You need to relax more.","example_ka":"მეტი მოდუნება გჭირდება.","category":"mental-health","level":"beginner"}
+  {
+    "english": "stress",
+    "georgian": "სტრესი",
+    "pronunciation": "/stres/",
+    "example_en": "Work is causing me a lot of stress.",
+    "example_ka": "სამსახური ბევრ სტრესს მიქმნის.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "anxiety",
+    "georgian": "შფოთვა",
+    "pronunciation": "/æŋˈzaɪəti/",
+    "example_en": "I get anxiety before exams.",
+    "example_ka": "გამოცდების წინ შფოთვა მეუფლება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "depression",
+    "georgian": "დეპრესია",
+    "pronunciation": "/dɪˈpreʃən/",
+    "example_en": "Depression is a serious condition.",
+    "example_ka": "დეპრესია სერიოზული მდგომარეობაა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "therapy",
+    "georgian": "თერაპია",
+    "pronunciation": "/ˈθerəpi/",
+    "example_en": "Therapy helped me a lot.",
+    "example_ka": "თერაპიამ ძალიან დამეხმარა.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "burnout",
+    "georgian": "გადაწვა",
+    "pronunciation": "/ˈbɜːrnaʊt/",
+    "example_en": "I'm experiencing burnout from overwork.",
+    "example_ka": "გადამეტებული მუშაობისგან გადაწვა მაქვს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "meditation",
+    "georgian": "მედიტაცია",
+    "pronunciation": "/ˌmedɪˈteɪʃən/",
+    "example_en": "I practice meditation every morning.",
+    "example_ka": "ყოველ დილით მედიტაციას ვაკეთებ.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "overthink",
+    "georgian": "ზედმეტად ფიქრი",
+    "pronunciation": "/ˌoʊvərˈθɪŋk/",
+    "example_en": "Stop overthinking and just do it.",
+    "example_ka": "შეწყვიტე ზედმეტად ფიქრი და უბრალოდ გააკეთე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "boundary",
+    "georgian": "საზღვარი",
+    "pronunciation": "/ˈbaʊndəri/",
+    "example_en": "Setting boundaries is important.",
+    "example_ka": "საზღვრების დაწესება მნიშვნელოვანია.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "toxic",
+    "georgian": "ტოქსიკური",
+    "pronunciation": "/ˈtɒksɪk/",
+    "example_en": "Remove toxic people from your life.",
+    "example_ka": "ტოქსიკური ადამიანები ცხოვრებიდან ამოიშორე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "mindset",
+    "georgian": "აზროვნება",
+    "pronunciation": "/ˈmaɪndset/",
+    "example_en": "A positive mindset changes everything.",
+    "example_ka": "დადებითი აზროვნება ყველაფერს ცვლის.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "cope",
+    "georgian": "გამკლავება",
+    "pronunciation": "/koʊp/",
+    "example_en": "How do you cope with stress?",
+    "example_ka": "სტრესს როგორ უმკლავდები?",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "motivation",
+    "georgian": "მოტივაცია",
+    "pronunciation": "/ˌmoʊtɪˈveɪʃən/",
+    "example_en": "I lost my motivation to study.",
+    "example_ka": "სწავლის მოტივაცია დავკარგე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "procrastinate",
+    "georgian": "გადავადება",
+    "pronunciation": "/proʊˈkræstɪneɪt/",
+    "example_en": "Stop procrastinating and start working.",
+    "example_ka": "შეწყვიტე გადავადება და დაიწყე მუშაობა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "insomnia",
+    "georgian": "უძილობა",
+    "pronunciation": "/ɪnˈsɒmniə/",
+    "example_en": "Stress can cause insomnia.",
+    "example_ka": "სტრესმა უძილობა შეიძლება გამოიწვიოს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "grateful",
+    "georgian": "მადლიერი",
+    "pronunciation": "/ˈɡreɪtfəl/",
+    "example_en": "I'm grateful for my family.",
+    "example_ka": "ოჯახისთვის მადლიერი ვარ.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "breathe",
+    "georgian": "სუნთქვა",
+    "pronunciation": "/briːð/",
+    "example_en": "Take a deep breath and relax.",
+    "example_ka": "ღრმად ჩაისუნთქე და მოიდუნე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "journal",
+    "georgian": "დღიური",
+    "pronunciation": "/ˈdʒɜːrnəl/",
+    "example_en": "Writing in a journal helps clear your mind.",
+    "example_ka": "დღიურში წერა აზრების გამწმენდს ეხმარება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "lonely",
+    "georgian": "მარტოსული",
+    "pronunciation": "/ˈloʊnli/",
+    "example_en": "Living alone can feel lonely sometimes.",
+    "example_ka": "მარტო ცხოვრება ზოგჯერ მარტოსულობის შეგრძნებას იწვევს.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "overwhelmed",
+    "georgian": "გადატვირთული",
+    "pronunciation": "/ˌoʊvərˈwelmd/",
+    "example_en": "I feel overwhelmed with everything.",
+    "example_ka": "ყველაფრით გადატვირთული ვარ.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "confidence",
+    "georgian": "თავდაჯერებულობა",
+    "pronunciation": "/ˈkɒnfɪdəns/",
+    "example_en": "Build your confidence step by step.",
+    "example_ka": "თავდაჯერებულობა ნაბიჯ-ნაბიჯ ააშენე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "relax",
+    "georgian": "მოდუნება",
+    "pronunciation": "/rɪˈlæks/",
+    "example_en": "You need to relax more.",
+    "example_ka": "მეტი მოდუნება გჭირდება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "panic",
+    "georgian": "პანიკა",
+    "pronunciation": "/ˈpænɪk/",
+    "example_en": "Don't panic, everything will be fine.",
+    "example_ka": "არ პანიკდე, ყველაფერი კარგ იქნება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "worry",
+    "georgian": "წუწუნი",
+    "pronunciation": "/ˈwɜːri/",
+    "example_en": "Try not to worry about small things.",
+    "example_ka": "არ იწუწუნო პატარა რაღაცებზე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "fear",
+    "georgian": "შიში",
+    "pronunciation": "/fɪr/",
+    "example_en": "Fear can hold you back from success.",
+    "example_ka": "შიშმა შეიძლება წარმატებისგან შეგაჩეროს.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "calm",
+    "georgian": "მშვიდი",
+    "pronunciation": "/kɑːm/",
+    "example_en": "Stay calm during difficult times.",
+    "example_ka": "რთულ დროს მშვიდი იყავი.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "peaceful",
+    "georgian": "მშვიდობიანი",
+    "pronunciation": "/ˈpiːsfəl/",
+    "example_en": "I need a peaceful environment to work.",
+    "example_ka": "სამუშაოდ მშვიდობიანი გარემო მჭირდება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "healing",
+    "georgian": "განკურნება",
+    "pronunciation": "/ˈhiːlɪŋ/",
+    "example_en": "Time helps with emotional healing.",
+    "example_ka": "დრო ემოციურ განკურნებას ეხმარება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "trauma",
+    "georgian": "ტრავმა",
+    "pronunciation": "/ˈtraʊmə/",
+    "example_en": "She is recovering from childhood trauma.",
+    "example_ka": "ის ბავშვობის ტრავმისგან განიკურნება.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "resilience",
+    "georgian": "მდგრადობა",
+    "pronunciation": "/rɪˈzɪliəns/",
+    "example_en": "Building resilience takes time and practice.",
+    "example_ka": "მდგრადობის გამომუშავება დროსა და ვარჯიშს ითხოვს.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "vulnerable",
+    "georgian": "მოწყვლადი",
+    "pronunciation": "/ˈvʌlnərəbl/",
+    "example_en": "Everyone feels vulnerable sometimes.",
+    "example_ka": "ყველა ზოგჯერ მოწყვლადად გრძნობს თავს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "exhausted",
+    "georgian": "გამოფიტული",
+    "pronunciation": "/ɪɡˈzɔːstɪd/",
+    "example_en": "I feel mentally exhausted today.",
+    "example_ka": "დღეს მენტალურად გამოფიტული ვარ.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "numb",
+    "georgian": "დაბუჟული",
+    "pronunciation": "/nʌm/",
+    "example_en": "After the loss, I felt emotionally numb.",
+    "example_ka": "დაკარგვის შემდეგ ემოციურად დაბუჟული ვიყავი.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "recover",
+    "georgian": "განკურნება",
+    "pronunciation": "/rɪˈkʌvər/",
+    "example_en": "It takes time to recover from depression.",
+    "example_ka": "დეპრესიისგან განკურნება დროს სჭირდება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "balance",
+    "georgian": "ბალანსი",
+    "pronunciation": "/ˈbæləns/",
+    "example_en": "Work-life balance is important for mental health.",
+    "example_ka": "სამუშაო-პირადი ცხოვრების ბალანსი მნიშვნელოვანია ფსიქიკური ჯანმრთელობისთვის.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "support",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/səˈpɔːrt/",
+    "example_en": "Everyone needs emotional support sometimes.",
+    "example_ka": "ყველას ზოგჯერ ემოციური მხარდაჭერა სჭირდება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "comfort",
+    "georgian": "კომფორტი",
+    "pronunciation": "/ˈkʌmfərt/",
+    "example_en": "Music brings me comfort when I'm sad.",
+    "example_ka": "მუსიკა მამცირებს, როცა მწუხარეა.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "hope",
+    "georgian": "იმედი",
+    "pronunciation": "/hoʊp/",
+    "example_en": "Never lose hope, things will get better.",
+    "example_ka": "იმედი არასოდეს დაკარგო, ყველაფერი გაუმჯობესდება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "happiness",
+    "georgian": "ბედნიერება",
+    "pronunciation": "/ˈhæpinəs/",
+    "example_en": "True happiness comes from within.",
+    "example_ka": "ნამდვილი ბედნიერება შინაგანიდან მოდის.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "sadness",
+    "georgian": "მწუხარება",
+    "pronunciation": "/ˈsædnəs/",
+    "example_en": "It's okay to feel sadness sometimes.",
+    "example_ka": "ზოგჯერ მწუხარების გრძნობა ნორმალურია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "anger",
+    "georgian": "გაბრაზება",
+    "pronunciation": "/ˈæŋɡər/",
+    "example_en": "Learn to manage your anger properly.",
+    "example_ka": "ისწავლე გაბრაზების სწორად მართვა.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "frustrated",
+    "georgian": "განაწყენებული",
+    "pronunciation": "/ˈfrʌstreɪtɪd/",
+    "example_en": "I feel frustrated when things don't go as planned.",
+    "example_ka": "განაწყენებული ვარ, როცა ყველაფერი გეგმის მიხედვით არ მიდის.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "irritated",
+    "georgian": "გაღიზიანებული",
+    "pronunciation": "/ˈɪrɪteɪtɪd/",
+    "example_en": "Lack of sleep makes me irritated.",
+    "example_ka": "ძილის ნაკლებობა მაღიზიანებს.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "mood",
+    "georgian": "განწყობა",
+    "pronunciation": "/muːd/",
+    "example_en": "My mood changes with the weather.",
+    "example_ka": "ჩემი განწყობა ამინდთან ერთად იცვლება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "emotion",
+    "georgian": "ემოცია",
+    "pronunciation": "/ɪˈmoʊʃən/",
+    "example_en": "It's healthy to express your emotions.",
+    "example_ka": "ემოციების გამოხატვა ჯანსაღია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "feelings",
+    "georgian": "გრძნობები",
+    "pronunciation": "/ˈfiːlɪŋz/",
+    "example_en": "Don't ignore your feelings.",
+    "example_ka": "შენს გრძნობებს არ უგულვებელყოფ.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "sensitive",
+    "georgian": "მგრძნობიარე",
+    "pronunciation": "/ˈsensətɪv/",
+    "example_en": "Some people are more sensitive than others.",
+    "example_ka": "ზოგი ადამიანი უფრო მგრძნობიარეა სხვებზე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "empathy",
+    "georgian": "ემპათია",
+    "pronunciation": "/ˈempəθi/",
+    "example_en": "Showing empathy helps others feel understood.",
+    "example_ka": "ემპათიის გამოხატვა სხვებს გაგების შეგრძნება აქვს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "compassion",
+    "georgian": "თანაგრძნობა",
+    "pronunciation": "/kəmˈpæʃən/",
+    "example_en": "Self-compassion is as important as compassion for others.",
+    "example_ka": "თვითთანაგრძნობა ისეთივე მნიშვნელოვანია, როგორც სხვებისადმი თანაგრძნობა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "patience",
+    "georgian": "მოთმინება",
+    "pronunciation": "/ˈpeɪʃəns/",
+    "example_en": "Healing requires patience with yourself.",
+    "example_ka": "განკურნება საკუთარი თავისადმი მოთმინებას მოითხოვს.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "acceptance",
+    "georgian": "მიღება",
+    "pronunciation": "/əkˈseptəns/",
+    "example_en": "Acceptance is the first step to change.",
+    "example_ka": "მიღება ცვლილების პირველი ნაბიჯია.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "forgiveness",
+    "georgian": "პატიება",
+    "pronunciation": "/fərˈɡɪvnəs/",
+    "example_en": "Forgiveness is a gift you give yourself.",
+    "example_ka": "პატიება საჩუქარია, რომელსაც საკუთარ თავს აძლევ.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "guilt",
+    "georgian": "დანაშაულის გრძნობა",
+    "pronunciation": "/ɡɪlt/",
+    "example_en": "Guilt can be destructive if you hold onto it.",
+    "example_ka": "დანაშაულის გრძნობა შეიძლება დესტრუქციული იყოს, თუ არ გაუშვებ.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "shame",
+    "georgian": "სირცხვილი",
+    "pronunciation": "/ʃeɪm/",
+    "example_en": "Shame prevents people from seeking help.",
+    "example_ka": "სირცხვილი ადამიანებს დახმარების ძიებაში უშლის ხელს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "embarrassed",
+    "georgian": "დარცხვენილი",
+    "pronunciation": "/ɪmˈbærəst/",
+    "example_en": "Don't be embarrassed to ask for help.",
+    "example_ka": "არ იყო დარცხვენილი დახმარების თხოვნისას.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "insecure",
+    "georgian": "ღელავაზე მყოფი",
+    "pronunciation": "/ˌɪnsɪˈkjʊr/",
+    "example_en": "Everyone feels insecure about something.",
+    "example_ka": "ყველა რაღაცის გამო ღელავაზეა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "confident",
+    "georgian": "თავდაჯერებული",
+    "pronunciation": "/ˈkɒnfɪdənt/",
+    "example_en": "Practice makes you more confident.",
+    "example_ka": "ვარჯიში უფრო თავდაჯერებულს გხდის.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "proud",
+    "georgian": "ამაყი",
+    "pronunciation": "/praʊd/",
+    "example_en": "Be proud of your small achievements too.",
+    "example_ka": "პატარა მიღწევებითაც იყავი ამაყი.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "jealous",
+    "georgian": "ღრწამისა",
+    "pronunciation": "/ˈdʒeləs/",
+    "example_en": "Jealousy is a sign of insecurity.",
+    "example_ka": "ღრწამისობა არაბრუნებულობის ნიშანია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "envy",
+    "georgian": "შური",
+    "pronunciation": "/ˈenvi/",
+    "example_en": "Envy only hurts yourself.",
+    "example_ka": "შური მხოლოდ შენს თავს აზიანებს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "bitter",
+    "georgian": "მწარე",
+    "pronunciation": "/ˈbɪtər/",
+    "example_en": "Don't let bad experiences make you bitter.",
+    "example_ka": "არ დაუშვა, რომ ცუდმა გამოცდილებამ მწარე გაგხადოს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "resentful",
+    "georgian": "გაბრაზებული",
+    "pronunciation": "/rɪˈzentfəl/",
+    "example_en": "Holding onto resentment only hurts you.",
+    "example_ka": "ბრაზის შენახვა მხოლოდ შენ გაზიანებს.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "optimistic",
+    "georgian": "ოპტიმისტური",
+    "pronunciation": "/ˌɒptɪˈmɪstɪk/",
+    "example_en": "Try to stay optimistic about the future.",
+    "example_ka": "ცადე მომავლის მიმართ ოპტიმისტური იყო.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "pessimistic",
+    "georgian": "პესიმისტური",
+    "pronunciation": "/ˌpesɪˈmɪstɪk/",
+    "example_en": "Don't be so pessimistic about everything.",
+    "example_ka": "ყველაფრის მიმართ ისე პესიმისტური არ იყო.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "mindful",
+    "georgian": "ფრთხილი",
+    "pronunciation": "/ˈmaɪndfəl/",
+    "example_en": "Be mindful of your thoughts and feelings.",
+    "example_ka": "შენს აზრებსა და გრძნობებზე ფრთხილი იყავი.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "aware",
+    "georgian": "ცნობიერი",
+    "pronunciation": "/əˈwer/",
+    "example_en": "Being self-aware helps personal growth.",
+    "example_ka": "თვითცნობიერება პიროვნულ ზრდას ეხმარება.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "introspective",
+    "georgian": "ინტროსპექტიული",
+    "pronunciation": "/ˌɪntrəˈspektɪv/",
+    "example_en": "Sometimes it's good to be introspective.",
+    "example_ka": "ზოგჯერ ინტროსპექტიული ყოფნა კარგია.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "reflection",
+    "georgian": "ასახვა",
+    "pronunciation": "/rɪˈflekʃən/",
+    "example_en": "Self-reflection leads to personal growth.",
+    "example_ka": "თვითასახვა პირად ზრდაზე მიდის.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "growth",
+    "georgian": "ზრდა",
+    "pronunciation": "/ɡroʊθ/",
+    "example_en": "Personal growth is a lifelong journey.",
+    "example_ka": "პირადი ზრდა მთელი ცხოვრების მოგზაურობაა.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "progress",
+    "georgian": "პროგრესი",
+    "pronunciation": "/ˈprɒɡres/",
+    "example_en": "Small progress is still progress.",
+    "example_ka": "პატარა პროგრესიც მაინც პროგრესია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "improvement",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/ɪmˈpruːvmənt/",
+    "example_en": "Any improvement is worth celebrating.",
+    "example_ka": "ყოველი გაუმჯობესება აღნიშვნის ღირსია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "achievement",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːvmənt/",
+    "example_en": "Celebrate every small achievement.",
+    "example_ka": "ყოველი პატარა მიღწევა აღნიშნე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "success",
+    "georgian": "წარმატება",
+    "pronunciation": "/səkˈses/",
+    "example_en": "Success means different things to different people.",
+    "example_ka": "წარმატება სხვადასხვა ადამიანისთვის სხვადასხვას ნიშნავს.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "failure",
+    "georgian": "წარუმატებლობა",
+    "pronunciation": "/ˈfeɪljər/",
+    "example_en": "Failure is part of the learning process.",
+    "example_ka": "წარუმატებლობა სწავლის პროცესის ნაწილია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "setback",
+    "georgian": "უკუქცევა",
+    "pronunciation": "/ˈsetbæk/",
+    "example_en": "A setback doesn't mean you should give up.",
+    "example_ka": "უკუქცევა არ ნიშნავს, რომ უნდა დანებდე.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "challenge",
+    "georgian": "გამოწვევა",
+    "pronunciation": "/ˈtʃælɪndʒ/",
+    "example_en": "Every challenge is an opportunity to grow.",
+    "example_ka": "ყოველი გამოწვევა ზრდის შესაძლებლობაა.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "obstacle",
+    "georgian": "დაბრკოლება",
+    "pronunciation": "/ˈɒbstəkl/",
+    "example_en": "Obstacles are temporary, but giving up lasts forever.",
+    "example_ka": "დაბრკოლებები დროებითია, მაგრამ დანებება სამუდამოა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "perseverance",
+    "georgian": "მუდმივობა",
+    "pronunciation": "/ˌpɜːrsəˈvɪrəns/",
+    "example_en": "Perseverance is key to overcoming difficulties.",
+    "example_ka": "მუდმივობა სირთულეების გადალახვის გასაღებია.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "determination",
+    "georgian": "მისწრაფება",
+    "pronunciation": "/dɪˌtɜːrmɪˈneɪʃən/",
+    "example_en": "Her determination helped her succeed.",
+    "example_ka": "მისმა მისწრაფებამ წარმატებას დაეხმარა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "willpower",
+    "georgian": "ნების ძალა",
+    "pronunciation": "/ˈwɪlpaʊər/",
+    "example_en": "Building willpower takes practice.",
+    "example_ka": "ნების ძალის გამომუშავება ვარჯიშს სჭირდება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "strength",
+    "georgian": "ძალა",
+    "pronunciation": "/streŋθ/",
+    "example_en": "You have more strength than you think.",
+    "example_ka": "უფრო მეტი ძალა გაქვს, ვიდრე ფიქრობ.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "weakness",
+    "georgian": "სისუსტე",
+    "pronunciation": "/ˈwiːknəs/",
+    "example_en": "Everyone has weaknesses, and that's okay.",
+    "example_ka": "ყველას აქვს სისუსტეები და ეს ნორმალურია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "courage",
+    "georgian": "გამბედაობა",
+    "pronunciation": "/ˈkɜːrɪdʒ/",
+    "example_en": "It takes courage to face your fears.",
+    "example_ka": "შიშების გადალახვას გამბედაობა სჭირდება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "brave",
+    "georgian": "მამაცი",
+    "pronunciation": "/breɪv/",
+    "example_en": "Be brave enough to ask for help.",
+    "example_ka": "იყავი საკმარისად მამაცი, რომ დახმარება ითხოვო.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "coward",
+    "georgian": "მშიშარა",
+    "pronunciation": "/ˈkaʊərd/",
+    "example_en": "Don't call yourself a coward for feeling scared.",
+    "example_ka": "შიშის განცდისას მშიშარად არ უწოდო საკუთარ თავს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "nervous",
+    "georgian": "ნერვიული",
+    "pronunciation": "/ˈnɜːrvəs/",
+    "example_en": "It's normal to feel nervous before important events.",
+    "example_ka": "მნიშვნელოვან მოვლენებამდე ნერვიულობა ნორმალურია.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "tense",
+    "georgian": "დაძაბული",
+    "pronunciation": "/tens/",
+    "example_en": "I feel tense when I have too much work.",
+    "example_ka": "დაძაბული ვარ, როცა ბევრი სამუშაო მაქვს.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "anxious",
+    "georgian": "შეშფოთებული",
+    "pronunciation": "/ˈæŋkʃəs/",
+    "example_en": "I feel anxious about the interview tomorrow.",
+    "example_ka": "ხვალინდელი ინტერვიუს გამო შეშფოთებული ვარ.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "restless",
+    "georgian": "უმშვიდო",
+    "pronunciation": "/ˈrestləs/",
+    "example_en": "I feel restless when I can't solve a problem.",
+    "example_ka": "უმშვიდო ვარ, როცა პრობლემას ვერ ვაგვარებ.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "agitated",
+    "georgian": "აღელვებული",
+    "pronunciation": "/ˈædʒɪteɪtɪd/",
+    "example_en": "He becomes agitated when stressed.",
+    "example_ka": "სტრესის დროს აღელვებული ხდება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "disturbed",
+    "georgian": "შეწუხებული",
+    "pronunciation": "/dɪˈstɜːrbd/",
+    "example_en": "I was disturbed by the news.",
+    "example_ka": "ამბების გამო შეწუხებული ვიყავი.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "troubled",
+    "georgian": "შეწუხებული",
+    "pronunciation": "/ˈtrʌbld/",
+    "example_en": "She looked troubled by something.",
+    "example_ka": "ის რაღაცის გამო შეწუხებული ჩანდა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "upset",
+    "georgian": "განაწყენებული",
+    "pronunciation": "/ʌpˈset/",
+    "example_en": "Don't get upset over small things.",
+    "example_ka": "პატარა რაღაცების გამო არ განაწყენდე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "disappointed",
+    "georgian": "იმედგაცრუებული",
+    "pronunciation": "/ˌdɪsəˈpɔɪntɪd/",
+    "example_en": "I was disappointed when I didn't get the job.",
+    "example_ka": "სამუშაო არ მივიღებ, იმედგაცრუებული ვიყავი.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "discouraged",
+    "georgian": "გუნმოკლებული",
+    "pronunciation": "/dɪsˈkɜːrɪdʒd/",
+    "example_en": "Don't feel discouraged by temporary setbacks.",
+    "example_ka": "დროებითი უკუქცევების გამო გუნმოკლებული არ იყო.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "hopeful",
+    "georgian": "იმედიანი",
+    "pronunciation": "/ˈhoʊpfəl/",
+    "example_en": "Stay hopeful even in difficult times.",
+    "example_ka": "რთულ დროსაც იმედიანი დარჩი.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "hopeless",
+    "georgian": "უიმედო",
+    "pronunciation": "/ˈhoʊpləs/",
+    "example_en": "Never think your situation is hopeless.",
+    "example_ka": "არასოდეს იფიქრო, რომ შენი მდგომარეობა უიმედოა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "despair",
+    "georgian": "სასოწარკვეთა",
+    "pronunciation": "/dɪˈsper/",
+    "example_en": "Don't let despair overcome you.",
+    "example_ka": "არ დაუშვა, რომ სასოწარკვეთამ დაგამარცხოს.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "desperation",
+    "georgian": "სასოწარკვეთა",
+    "pronunciation": "/ˌdespəˈreɪʃən/",
+    "example_en": "Desperation can lead to poor decisions.",
+    "example_ka": "სასოწარკვეთამ შეიძლება ცუდ გადაწყვეტილებებამდე მიგვიყვანოს.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "melancholy",
+    "georgian": "მელანქოლია",
+    "pronunciation": "/ˈmelənkɑːli/",
+    "example_en": "A feeling of melancholy came over her.",
+    "example_ka": "მელანქოლიის გრძნობა დაეწყო.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "nostalgia",
+    "georgian": "ნოსტალგია",
+    "pronunciation": "/nɑːˈstældʒə/",
+    "example_en": "Looking at old photos brings nostalgia.",
+    "example_ka": "ძველი ფოტოების ყურება ნოსტალგიას იწვევს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "euphoria",
+    "georgian": "ეიფორია",
+    "pronunciation": "/juːˈfɔːriə/",
+    "example_en": "Winning brought a feeling of euphoria.",
+    "example_ka": "გამარჯვებამ ეიფორიის გრძნობა მოიტანა.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "contentment",
+    "georgian": "კმაყოფილება",
+    "pronunciation": "/kənˈtentmənt/",
+    "example_en": "True contentment comes from inner peace.",
+    "example_ka": "ნამდვილი კმაყოფილება შინაგანი სიმშვიდისგან მოდის.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "serenity",
+    "georgian": "სიმშვიდე",
+    "pronunciation": "/səˈrenəti/",
+    "example_en": "She found serenity through meditation.",
+    "example_ka": "მედიტაციის გზით სიმშვიდე იპოვა.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "tranquility",
+    "georgian": "წყნარება",
+    "pronunciation": "/træŋˈkwɪləti/",
+    "example_en": "The garden brought a sense of tranquility.",
+    "example_ka": "ბაღმა წყნარების შეგრძნება მოიტანა.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "clarity",
+    "georgian": "სიმკვეთრე",
+    "pronunciation": "/ˈklærəti/",
+    "example_en": "Meditation helps bring mental clarity.",
+    "example_ka": "მედიტაცია ფსიქიკური სიმკვეთრის მოტანაში ეხმარება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "focus",
+    "georgian": "ფოკუსი",
+    "pronunciation": "/ˈfoʊkəs/",
+    "example_en": "I lost my focus during the presentation.",
+    "example_ka": "პრეზენტაციის დროს ფოკუსი დავკარგე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "concentration",
+    "georgian": "კონცენტრაცია",
+    "pronunciation": "/ˌkɑːnsənˈtreɪʃən/",
+    "example_en": "Good sleep improves concentration.",
+    "example_ka": "კარგი ძილი კონცენტრაციას აუმჯობესებს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "distraction",
+    "georgian": "ყურადღების გაფანტვა",
+    "pronunciation": "/dɪˈstrækʃən/",
+    "example_en": "Social media can be a major distraction.",
+    "example_ka": "სოციალური მედია შეიძლება დიდი გაფანტვა იყოს.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "attention",
+    "georgian": "ყურადღება",
+    "pronunciation": "/əˈtenʃən/",
+    "example_en": "Pay attention to your mental health.",
+    "example_ka": "ფსიქიკურ ჯანმრთელობას ყურადღება მიაქციე.",
+    "category": "mental-health",
+    "level": "beginner"
+  },
+  {
+    "english": "awareness",
+    "georgian": "ცნობიერება",
+    "pronunciation": "/əˈwernəs/",
+    "example_en": "Mental health awareness is increasing.",
+    "example_ka": "ფსიქიკური ჯანმრთელობის ცნობიერება იზრდება.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "consciousness",
+    "georgian": "შეცნობა",
+    "pronunciation": "/ˈkɑːnʃəsnəs/",
+    "example_en": "Higher consciousness leads to better mental health.",
+    "example_ka": "მაღალი შეცნობა უკეთეს ფსიქიკურ ჯანმრთელობაზე მიდის.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "subconscious",
+    "georgian": "ქვეცნობიერი",
+    "pronunciation": "/sʌbˈkɑːnʃəs/",
+    "example_en": "Our subconscious mind affects our behavior.",
+    "example_ka": "ჩვენი ქვეცნობიერი გონება ქცევაზე მოქმედებს.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "unconscious",
+    "georgian": "უცნობიერო",
+    "pronunciation": "/ʌnˈkɑːnʃəs/",
+    "example_en": "Many of our reactions are unconscious.",
+    "example_ka": "ბევრი ჩვენი რეაქცია უცნობიეროა.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "psyche",
+    "georgian": "ფსიქე",
+    "pronunciation": "/ˈsaɪki/",
+    "example_en": "Trauma can deeply affect the psyche.",
+    "example_ka": "ტრავმამ შეიძლება ღრმად იმოქმედოს ფსიქეზე.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "psychology",
+    "georgian": "ფსიქოლოგია",
+    "pronunciation": "/saɪˈkɑːlədʒi/",
+    "example_en": "I'm studying psychology to understand human behavior.",
+    "example_ka": "ადამიანის ქცევის გასაგებად ფსიქოლოგიას ვსწავლობ.",
+    "category": "mental-health",
+    "level": "intermediate"
+  },
+  {
+    "english": "psychiatry",
+    "georgian": "ფსიქიატრია",
+    "pronunciation": "/saɪˈkaɪətri/",
+    "example_en": "Psychiatry combines medicine and psychology.",
+    "example_ka": "ფსიქიატრია მედიცინას და ფსიქოლოგიას აერთიანებს.",
+    "category": "mental-health",
+    "level": "advanced"
+  },
+  {
+    "english": "counseling",
+    "georgian": "კონსულტირება",
+    "pronunciation": "/ˈkaʊnsəlɪŋ/",
+    "example_en": "Marriage counseling helped save their relationship.",
+    "example_ka": "ქორწინების კონსულტაციამ მათი ურთიერთობის გადარჩენაში დაეხმარა.",
+    "category": "mental-health",
+    "level": "intermediate"
+  }
 ]

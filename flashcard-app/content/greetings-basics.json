@@ -5,7 +5,7 @@
     "pronunciation": "/həˈloʊ/",
     "example_en": "Hello, how are you?",
     "example_ka": "გამარჯობა, როგორ ხარ?",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
@@ -14,16 +14,16 @@
     "pronunciation": "/ɡʊdˈbaɪ/",
     "example_en": "Goodbye, see you tomorrow!",
     "example_ka": "ნახვამდის, ხვალ შევხვდებით!",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "Thank you",
+    "english": "thanks",
     "georgian": "მადლობა",
-    "pronunciation": "/θæŋk juː/",
-    "example_en": "Thank you for your help.",
-    "example_ka": "მადლობა შენი დახმარებისთვის.",
-    "category": "greetings",
+    "pronunciation": "/θæŋks/",
+    "example_en": "Thanks for your help!",
+    "example_ka": "მადლობა შენი დახმარებისთვის!",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
@@ -32,7 +32,7 @@
     "pronunciation": "/pliːz/",
     "example_en": "Please sit down.",
     "example_ka": "გთხოვთ, დაბრძანდით.",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
@@ -41,7 +41,7 @@
     "pronunciation": "/jɛs/",
     "example_en": "Yes, I agree with you.",
     "example_ka": "დიახ, გეთანხმები.",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
@@ -50,16 +50,16 @@
     "pronunciation": "/noʊ/",
     "example_en": "No, I don't want that.",
     "example_ka": "არა, ეს არ მინდა.",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "Excuse me",
-    "georgian": "უკაცრავად",
-    "pronunciation": "/ɪkˈskjuːz miː/",
-    "example_en": "Excuse me, where is the station?",
-    "example_ka": "უკაცრავად, სადაა სადგური?",
-    "category": "greetings",
+    "english": "pardon",
+    "georgian": "ბოდიში",
+    "pronunciation": "/ˈpɑːdən/",
+    "example_en": "Pardon, I didn't hear you.",
+    "example_ka": "ბოდიში, ვერ გაგიგე.",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
@@ -68,97 +68,25 @@
     "pronunciation": "/ˈsɒri/",
     "example_en": "Sorry, I'm late.",
     "example_ka": "ბოდიში, დავაგვიანე.",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "Good morning",
-    "georgian": "დილა მშვიდობისა",
-    "pronunciation": "/ɡʊd ˈmɔːrnɪŋ/",
-    "example_en": "Good morning, did you sleep well?",
-    "example_ka": "დილა მშვიდობისა, კარგად გეძინა?",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "Good evening",
-    "georgian": "საღამო მშვიდობისა",
-    "pronunciation": "/ɡʊd ˈiːvnɪŋ/",
-    "example_en": "Good evening, welcome to the restaurant.",
-    "example_ka": "საღამო მშვიდობისა, მოგესალმებით რესტორანში.",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "Good night",
-    "georgian": "ღამე მშვიდობისა",
-    "pronunciation": "/ɡʊd naɪt/",
-    "example_en": "Good night, sweet dreams.",
-    "example_ka": "ღამე მშვიდობისა, ტკბილად გეძინოს.",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "How are you?",
-    "georgian": "როგორ ხარ?",
-    "pronunciation": "/haʊ ɑːr juː/",
-    "example_en": "Hi! How are you?",
-    "example_ka": "გამარჯობა! როგორ ხარ?",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "I'm fine",
-    "georgian": "კარგად ვარ",
-    "pronunciation": "/aɪm faɪn/",
-    "example_en": "I'm fine, thank you.",
-    "example_ka": "კარგად ვარ, მადლობა.",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "What is your name?",
-    "georgian": "რა გქვია?",
-    "pronunciation": "/wɒt ɪz jɔːr neɪm/",
-    "example_en": "What is your name?",
-    "example_ka": "რა გქვია?",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "My name is",
-    "georgian": "მე მქვია",
-    "pronunciation": "/maɪ neɪm ɪz/",
-    "example_en": "My name is Nino.",
-    "example_ka": "მე მქვია ნინო.",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "Nice to meet you",
-    "georgian": "სასიამოვნოა",
-    "pronunciation": "/naɪs tə miːt juː/",
-    "example_en": "Nice to meet you, I'm Giorgi.",
-    "example_ka": "სასიამოვნოა, მე ვარ გიორგი.",
-    "category": "greetings",
-    "level": "A1"
-  },
-  {
-    "english": "See you later",
-    "georgian": "მოგვიანებით შევხვდებით",
-    "pronunciation": "/siː juː ˈleɪtər/",
-    "example_en": "See you later at the café.",
-    "example_ka": "მოგვიანებით შევხვდებით კაფეში.",
-    "category": "greetings",
+    "english": "morning",
+    "georgian": "დილა",
+    "pronunciation": "/ˈmɔːnɪŋ/",
+    "example_en": "I wake up every morning at 7.",
+    "example_ka": "ყოველ დილით 7-ზე ვიღვიძებ.",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
     "english": "Welcome",
-    "georgian": "კეთილი იყოს თქვენი მობრძანება",
+    "georgian": "კეთილი იყოს მობრძანება",
     "pronunciation": "/ˈwɛlkəm/",
     "example_en": "Welcome to our home.",
     "example_ka": "კეთილი იყოს თქვენი მობრძანება ჩვენს სახლში.",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
@@ -167,61 +95,1708 @@
     "pronunciation": "/hɛlp/",
     "example_en": "Can you help me, please?",
     "example_ka": "შეგიძლია დამეხმარო, გთხოვთ?",
-    "category": "greetings",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "I don't understand",
-    "georgian": "არ მესმის",
-    "pronunciation": "/aɪ doʊnt ˌʌndərˈstænd/",
-    "example_en": "I don't understand this word.",
-    "example_ka": "ეს სიტყვა არ მესმის.",
-    "category": "greetings",
+    "english": "farewell",
+    "georgian": "დამშვიდობება",
+    "pronunciation": "/ˌfɛrˈwɛl/",
+    "example_en": "It was a sad farewell.",
+    "example_ka": "სამწუხარო დამშვიდობება იყო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "Hi",
+    "georgian": "ჰაი",
+    "pronunciation": "/haɪ/",
+    "example_en": "Hi there, how's it going?",
+    "example_ka": "ჰაი, როგორ მიდის საქმეები?",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "I understand",
-    "georgian": "მესმის",
-    "pronunciation": "/aɪ ˌʌndərˈstænd/",
-    "example_en": "I understand what you mean.",
-    "example_ka": "მესმის, რას გულისხმობ.",
-    "category": "greetings",
+    "english": "Bye",
+    "georgian": "ჩაო",
+    "pronunciation": "/baɪ/",
+    "example_en": "Bye, see you later!",
+    "example_ka": "ჩაო, მოგვიანებით შევხვდებით!",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "Do you speak English?",
-    "georgian": "ინგლისურად ლაპარაკობ?",
-    "pronunciation": "/duː juː spiːk ˈɪŋɡlɪʃ/",
-    "example_en": "Do you speak English?",
-    "example_ka": "ინგლისურად ლაპარაკობ?",
-    "category": "greetings",
+    "english": "greetings",
+    "georgian": "მისალმება",
+    "pronunciation": "/ˈɡriːtɪŋz/",
+    "example_en": "Greetings from Georgia!",
+    "example_ka": "მისალმება საქართველოდან!",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "afternoon",
+    "georgian": "ნაშუადღევი",
+    "pronunciation": "/ˌæftərˈnuːn/",
+    "example_en": "I work in the afternoon.",
+    "example_ka": "ნაშუადღევს ვმუშაობ.",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "I speak a little",
-    "georgian": "ცოტას ვლაპარაკობ",
-    "pronunciation": "/aɪ spiːk ə ˈlɪtl/",
-    "example_en": "I speak a little English.",
-    "example_ka": "ცოტას ვლაპარაკობ ინგლისურად.",
-    "category": "greetings",
+    "english": "evening",
+    "georgian": "საღამო",
+    "pronunciation": "/ˈiːvnɪŋ/",
+    "example_en": "Good evening, everyone!",
+    "example_ka": "კარგი საღამო, ყველას!",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "Where are you from?",
-    "georgian": "საიდან ხარ?",
-    "pronunciation": "/wɛr ɑːr juː frɒm/",
-    "example_en": "Where are you from?",
-    "example_ka": "საიდან ხარ?",
-    "category": "greetings",
+    "english": "night",
+    "georgian": "ღამე",
+    "pronunciation": "/naɪt/",
+    "example_en": "Good night, sleep well.",
+    "example_ka": "კარგი ღამე, კარგად იძინე.",
+    "category": "greetings-basics",
     "level": "A1"
   },
   {
-    "english": "I am from Georgia",
-    "georgian": "საქართველოდან ვარ",
-    "pronunciation": "/aɪ æm frɒm ˈdʒɔːrdʒə/",
-    "example_en": "I am from Georgia.",
-    "example_ka": "საქართველოდან ვარ.",
-    "category": "greetings",
+    "english": "howdy",
+    "georgian": "ჰაუდი",
+    "pronunciation": "/ˈhaʊdi/",
+    "example_en": "Howdy, partner!",
+    "example_ka": "ჰაუდი, პარტნიორო!",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "salutations",
+    "georgian": "მისალმებები",
+    "pronunciation": "/ˌsæljuˈteɪʃənz/",
+    "example_en": "Salutations to all!",
+    "example_ka": "მისალმებები ყველას!",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "adieu",
+    "georgian": "დამშვიდობება",
+    "pronunciation": "/əˈdjuː/",
+    "example_en": "I bid you adieu.",
+    "example_ka": "გიშვიდობებ.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "cheers",
+    "georgian": "გაუმარჯოს",
+    "pronunciation": "/tʃɪrz/",
+    "example_en": "Cheers for the help!",
+    "example_ka": "მადლობა დახმარებისთვის!",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "hey",
+    "georgian": "ჰეი",
+    "pronunciation": "/heɪ/",
+    "example_en": "Hey, what's up?",
+    "example_ka": "ჰეი, რა ხდება?",
+    "category": "greetings-basics",
     "level": "A1"
+  },
+  {
+    "english": "hiya",
+    "georgian": "ჰაია",
+    "pronunciation": "/ˈhaɪjə/",
+    "example_en": "Hiya, how are you doing?",
+    "example_ka": "ჰაია, როგორ ხარ?",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "excuse",
+    "georgian": "მაპატიე",
+    "pronunciation": "/ɪkˈskjuːz/",
+    "example_en": "Excuse me, where is the bathroom?",
+    "example_ka": "მაპატიეთ, სად არის ტუალეტი?",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "appreciate",
+    "georgian": "აფასებ",
+    "pronunciation": "/əˈpriːʃieɪt/",
+    "example_en": "I appreciate your kindness.",
+    "example_ka": "ვაფასებ შენს სიკეთეს.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "gratitude",
+    "georgian": "მადლიერება",
+    "pronunciation": "/ˈɡrætɪtuːd/",
+    "example_en": "I express my gratitude.",
+    "example_ka": "ვგამოვხატავ ჩემს მადლიერებას.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "kindness",
+    "georgian": "სიკეთე",
+    "pronunciation": "/ˈkaɪndnəs/",
+    "example_en": "Thank you for your kindness.",
+    "example_ka": "მადლობა თქვენი სიკეთისთვის.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "courtesy",
+    "georgian": "თავაზიანობა",
+    "pronunciation": "/ˈkɜːtəsi/",
+    "example_en": "Show courtesy to others.",
+    "example_ka": "გამოიჩინე თავაზიანობა სხვებისადმი.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "polite",
+    "georgian": "თავაზიანი",
+    "pronunciation": "/pəˈlaɪt/",
+    "example_en": "Be polite to everyone.",
+    "example_ka": "იყავი თავაზიანი ყველასთან.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "respect",
+    "georgian": "პატივისცემა",
+    "pronunciation": "/rɪˈspɛkt/",
+    "example_en": "I respect your opinion.",
+    "example_ka": "ვპატივისცემ შენს აზრს.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "honor",
+    "georgian": "პატივი",
+    "pronunciation": "/ˈɒnər/",
+    "example_en": "It's an honor to meet you.",
+    "example_ka": "პატივია შენთან შეხვედრა.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "pleasure",
+    "georgian": "სიამოვნება",
+    "pronunciation": "/ˈplɛʒər/",
+    "example_en": "It's a pleasure to meet you.",
+    "example_ka": "სიამოვნებაა შენთან შეხვედრა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "delighted",
+    "georgian": "ნაღდი",
+    "pronunciation": "/dɪˈlaɪtɪd/",
+    "example_en": "I'm delighted to see you.",
+    "example_ka": "ნაღდი ვარ, რომ ვხედავ.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "blessed",
+    "georgian": "კურთხეული",
+    "pronunciation": "/blɛst/",
+    "example_en": "Have a blessed day.",
+    "example_ka": "გქონდეს კურთხეული დღე.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "wonderful",
+    "georgian": "შესანიშნავი",
+    "pronunciation": "/ˈwʌndərfəl/",
+    "example_en": "Have a wonderful evening.",
+    "example_ka": "გქონდეს შესანიშნავი საღამო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "lovely",
+    "georgian": "ლამაზი",
+    "pronunciation": "/ˈlʌvli/",
+    "example_en": "Have a lovely day.",
+    "example_ka": "გქონდეს ლამაზი დღე.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "fantastic",
+    "georgian": "ფანტასტიკური",
+    "pronunciation": "/fænˈtæstɪk/",
+    "example_en": "Have a fantastic weekend.",
+    "example_ka": "გქონდეს ფანტასტიკური შაბათ-კვირა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "amazing",
+    "georgian": "გასაოცარი",
+    "pronunciation": "/əˈmeɪzɪŋ/",
+    "example_en": "You look amazing today.",
+    "example_ka": "დღეს გასაოცრად გამოიყურები.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "brilliant",
+    "georgian": "ბრწყინვალე",
+    "pronunciation": "/ˈbrɪljənt/",
+    "example_en": "Have a brilliant day.",
+    "example_ka": "გქონდეს ბრწყინვალე დღე.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "magnificent",
+    "georgian": "დიადი",
+    "pronunciation": "/mæɡˈnɪfɪsənt/",
+    "example_en": "You look magnificent.",
+    "example_ka": "დიად გამოიყურები.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "splendid",
+    "georgian": "ბრწყინვალე",
+    "pronunciation": "/ˈsplɛndɪd/",
+    "example_en": "Have a splendid time.",
+    "example_ka": "გაატარე ბრწყინვალე დრო.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "marvelous",
+    "georgian": "საოცარი",
+    "pronunciation": "/ˈmɑːvələs/",
+    "example_en": "Have a marvelous day.",
+    "example_ka": "გქონდეს საოცარი დღე.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "terrific",
+    "georgian": "შესანიშნავი",
+    "pronunciation": "/təˈrɪfɪk/",
+    "example_en": "You're doing terrific work.",
+    "example_ka": "შესანიშნავ სამსახურს აკეთებ.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "outstanding",
+    "georgian": "გამორჩეული",
+    "pronunciation": "/aʊtˈstændɪŋ/",
+    "example_en": "Your work is outstanding.",
+    "example_ka": "შენი მუშაობა გამორჩეულია.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "excellent",
+    "georgian": "შესანიშნავი",
+    "pronunciation": "/ˈɛksələnt/",
+    "example_en": "Excellent work, well done.",
+    "example_ka": "შესანიშნავი მუშაობა, კარგად გაკეთდა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "perfect",
+    "georgian": "სრულყოფილი",
+    "pronunciation": "/ˈpɜːfɪkt/",
+    "example_en": "Perfect, thank you very much.",
+    "example_ka": "სრულყოფილი, ძალიან მადლობა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "superb",
+    "georgian": "შესანიშნავი",
+    "pronunciation": "/suːˈpɜːb/",
+    "example_en": "Your presentation was superb.",
+    "example_ka": "შენი პრეზენტაცია შესანიშნავი იყო.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "fabulous",
+    "georgian": "ფანტასტიკური",
+    "pronunciation": "/ˈfæbjələs/",
+    "example_en": "You look fabulous today.",
+    "example_ka": "დღეს ფანტასტიკურად გამოიყურები.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "incredible",
+    "georgian": "წარმოუდგენელი",
+    "pronunciation": "/ɪnˈkrɛdəbəl/",
+    "example_en": "Your kindness is incredible.",
+    "example_ka": "შენი სიკეთე წარმოუდგენელია.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "spectacular",
+    "georgian": "ნანახევი",
+    "pronunciation": "/spɛkˈtækjələr/",
+    "example_en": "Have a spectacular evening.",
+    "example_ka": "გქონდეს ნანახევი საღამო.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "phenomenal",
+    "georgian": "ფენომენური",
+    "pronunciation": "/fəˈnɒmɪnəl/",
+    "example_en": "Your work is phenomenal.",
+    "example_ka": "შენი მუშაობა ფენომენურია.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "extraordinary",
+    "georgian": "არაჩვეულებრივი",
+    "pronunciation": "/ɪkˈstrɔːdnri/",
+    "example_en": "You're an extraordinary person.",
+    "example_ka": "არაჩვეულებრივი ადამიანი ხარ.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "remarkable",
+    "georgian": "გამორჩეული",
+    "pronunciation": "/rɪˈmɑːkəbəl/",
+    "example_en": "You've made remarkable progress.",
+    "example_ka": "გამორჩეული პროგრესი გაქვს.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "exceptional",
+    "georgian": "განსაკუთრებული",
+    "pronunciation": "/ɪkˈsɛpʃənəl/",
+    "example_en": "Your talent is exceptional.",
+    "example_ka": "შენი ნიჭი განსაკუთრებულია.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "admirable",
+    "georgian": "საღირსი",
+    "pronunciation": "/ˈædmərəbəl/",
+    "example_en": "Your effort is admirable.",
+    "example_ka": "შენი ძალისხმევა საღირსია.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "commendable",
+    "georgian": "დასაქებული",
+    "pronunciation": "/kəˈmɛndəbəl/",
+    "example_en": "Your dedication is commendable.",
+    "example_ka": "შენი ერთგულება დასაქებულია.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "praiseworthy",
+    "georgian": "დასაქებული",
+    "pronunciation": "/ˈpreɪzwɜːði/",
+    "example_en": "Your actions are praiseworthy.",
+    "example_ka": "შენი ქმედებები დასაქებულია.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "invited",
+    "georgian": "მიწვეული",
+    "pronunciation": "/ɪnˈvaɪtɪd/",
+    "example_en": "You're invited to join us.",
+    "example_ka": "მიწვეული ხარ, შემოგვიერთდე.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "honored",
+    "georgian": "პატივცემული",
+    "pronunciation": "/ˈɒnərd/",
+    "example_en": "I feel honored to meet you.",
+    "example_ka": "პატივცემული ვგრძნობ თავი შენთან შეხვედრისას.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "privileged",
+    "georgian": "პრივილეგირებული",
+    "pronunciation": "/ˈprɪvəlɪdʒd/",
+    "example_en": "I'm privileged to know you.",
+    "example_ka": "პრივილეგირებული ვარ, რომ მიცნობ.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "grateful",
+    "georgian": "მადლიერი",
+    "pronunciation": "/ˈɡreɪtfəl/",
+    "example_en": "I'm grateful for your help.",
+    "example_ka": "მადლიერი ვარ შენი დახმარებისთვის.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "thankful",
+    "georgian": "მადლიერი",
+    "pronunciation": "/ˈθæŋkfəl/",
+    "example_en": "I'm thankful for everything.",
+    "example_ka": "მადლიერი ვარ ყველაფრისთვის.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "fortunate",
+    "georgian": "ბედნიერი",
+    "pronunciation": "/ˈfɔːtʃənət/",
+    "example_en": "I'm fortunate to meet you.",
+    "example_ka": "ბედნიერი ვარ, რომ შევხვდი.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "lucky",
+    "georgian": "ბედნიერი",
+    "pronunciation": "/ˈlʌki/",
+    "example_en": "I'm lucky to know you.",
+    "example_ka": "ბედნიერი ვარ, რომ მიცნობ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "happy",
+    "georgian": "ბედნიერი",
+    "pronunciation": "/ˈhæpi/",
+    "example_en": "Happy to see you again.",
+    "example_ka": "ბედნიერი ვარ, კვლავ ვხედავ.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "joyful",
+    "georgian": "მხიარული",
+    "pronunciation": "/ˈdʒɔɪfəl/",
+    "example_en": "Have a joyful celebration.",
+    "example_ka": "გქონდეს მხიარული წვეულება.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "cheerful",
+    "georgian": "მხიარული",
+    "pronunciation": "/ˈtʃɪrfəl/",
+    "example_en": "Stay cheerful and positive.",
+    "example_ka": "იყავი მხიარული და პოზიტიური.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "glad",
+    "georgian": "მოხარული",
+    "pronunciation": "/ɡlæd/",
+    "example_en": "I'm glad you came.",
+    "example_ka": "მოხარული ვარ, რომ მოხვედი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "content",
+    "georgian": "კმაყოფილი",
+    "pronunciation": "/kənˈtɛnt/",
+    "example_en": "I'm content with this meeting.",
+    "example_ka": "კმაყოფილი ვარ ამ შეხვედრით.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "satisfied",
+    "georgian": "კმაყოფილი",
+    "pronunciation": "/ˈsætɪsfaɪd/",
+    "example_en": "I'm satisfied with the results.",
+    "example_ka": "კმაყოფილი ვარ შედეგებით.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "pleased",
+    "georgian": "კმაყოფილი",
+    "pronunciation": "/pliːzd/",
+    "example_en": "I'm pleased to meet you.",
+    "example_ka": "კმაყოფილი ვარ შენთან შეხვედრით.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "thrilled",
+    "georgian": "აღფრთოვანებული",
+    "pronunciation": "/θrɪld/",
+    "example_en": "I'm thrilled to see you.",
+    "example_ka": "აღფრთოვანებული ვარ, რომ ვხედავ.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "excited",
+    "georgian": "აღელვებული",
+    "pronunciation": "/ɪkˈsaɪtɪd/",
+    "example_en": "I'm excited about our meeting.",
+    "example_ka": "აღელვებული ვარ ჩვენი შეხვედრის გამო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "enthusiastic",
+    "georgian": "ენთუზიაზმით სავსე",
+    "pronunciation": "/ɪnˌθuːziˈæstɪk/",
+    "example_en": "I'm enthusiastic about this project.",
+    "example_ka": "ენთუზიაზმით სავსე ვარ ამ პროექტისადმი.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "eager",
+    "georgian": "ნადლით სავსე",
+    "pronunciation": "/ˈiːɡər/",
+    "example_en": "I'm eager to start working.",
+    "example_ka": "ნადლით სავსე ვარ მუშაობის დასაწყებად.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "optimistic",
+    "georgian": "ოპტიმისტი",
+    "pronunciation": "/ˌɒptɪˈmɪstɪk/",
+    "example_en": "Stay optimistic about the future.",
+    "example_ka": "იყავი ოპტიმისტი მომავლის მიმართ.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "positive",
+    "georgian": "პოზიტიური",
+    "pronunciation": "/ˈpɒzətɪv/",
+    "example_en": "Keep a positive attitude.",
+    "example_ka": "შეინარჩუნე პოზიტიური დამოკიდებულება.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "hopeful",
+    "georgian": "იმედით სავსე",
+    "pronunciation": "/ˈhoʊpfəl/",
+    "example_en": "I'm hopeful for good news.",
+    "example_ka": "იმედით სავსე ვარ კარგი ამბებისა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "confident",
+    "georgian": "თავდაჯერებული",
+    "pronunciation": "/ˈkɒnfɪdənt/",
+    "example_en": "I'm confident in your abilities.",
+    "example_ka": "თავდაჯერებული ვარ შენი შესაძლებლობებით.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "certain",
+    "georgian": "დარწმუნებული",
+    "pronunciation": "/ˈsɜːtən/",
+    "example_en": "I'm certain you'll succeed.",
+    "example_ka": "დარწმუნებული ვარ, რომ წარმატებას მიაღწევ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "sure",
+    "georgian": "დარწმუნებული",
+    "pronunciation": "/ʃʊr/",
+    "example_en": "I'm sure you'll do great.",
+    "example_ka": "დარწმუნებული ვარ, რომ შესანიშნავად გაკეთებ.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "absolutely",
+    "georgian": "აბსოლუტურად",
+    "pronunciation": "/ˈæbsəluːtli/",
+    "example_en": "Absolutely, I agree with you.",
+    "example_ka": "აბსოლუტურად, გეთანხმები.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "definitely",
+    "georgian": "ნამდვილად",
+    "pronunciation": "/ˈdɛfənətli/",
+    "example_en": "Definitely, count me in.",
+    "example_ka": "ნამდვილად, ჩამითვალე.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "certainly",
+    "georgian": "რასაკვირველია",
+    "pronunciation": "/ˈsɜːtənli/",
+    "example_en": "Certainly, I'll help you.",
+    "example_ka": "რასაკვირველია, დაგეხმარები.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "indeed",
+    "georgian": "მართლაც",
+    "pronunciation": "/ɪnˈdiːd/",
+    "example_en": "Indeed, that's a great idea.",
+    "example_ka": "მართლაც, ეს შესანიშნავი იდეაა.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "truly",
+    "georgian": "მართლაც",
+    "pronunciation": "/ˈtruːli/",
+    "example_en": "I'm truly happy to see you.",
+    "example_ka": "მართლაც ბედნიერი ვარ, რომ ვხედავ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "sincerely",
+    "georgian": "გულწრფელად",
+    "pronunciation": "/sɪnˈsɪrli/",
+    "example_en": "Sincerely, thank you for everything.",
+    "example_ka": "გულწრფელად, მადლობა ყველაფრისთვის.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "honestly",
+    "georgian": "პატიოსნად",
+    "pronunciation": "/ˈɒnəstli/",
+    "example_en": "Honestly, you're the best.",
+    "example_ka": "პატიოსნად, შენ ყველაზე კარგი ხარ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "frankly",
+    "georgian": "გულახდილად",
+    "pronunciation": "/ˈfræŋkli/",
+    "example_en": "Frankly, I'm impressed.",
+    "example_ka": "გულახდილად, შთაბეჭდილი ვარ.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "genuinely",
+    "georgian": "ნამდვილად",
+    "pronunciation": "/ˈdʒɛnjuɪnli/",
+    "example_en": "I'm genuinely happy for you.",
+    "example_ka": "ნამდვილად ბედნიერი ვარ შენთვის.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "warmly",
+    "georgian": "თბილად",
+    "pronunciation": "/ˈwɔːmli/",
+    "example_en": "I welcome you warmly.",
+    "example_ka": "თბილად გიმასპინძლდები.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "cordially",
+    "georgian": "გულისხმიერად",
+    "pronunciation": "/ˈkɔːdiəli/",
+    "example_en": "You're cordially invited.",
+    "example_ka": "გულისხმიერად ხარ მიწვეული.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "heartily",
+    "georgian": "გულისხმიერად",
+    "pronunciation": "/ˈhɑːtɪli/",
+    "example_en": "I heartily congratulate you.",
+    "example_ka": "გულისხმიერად გილოცავ.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "enthusiastically",
+    "georgian": "ენთუზიაზმით",
+    "pronunciation": "/ɪnˌθuːziˈæstɪkli/",
+    "example_en": "I enthusiastically support you.",
+    "example_ka": "ენთუზიაზმით მხარს გიჭერ.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "wholeheartedly",
+    "georgian": "მთელი გულით",
+    "pronunciation": "/ˌhoʊlˈhɑːtɪdli/",
+    "example_en": "I wholeheartedly agree.",
+    "example_ka": "მთელი გულით ვეთანხმები.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "graciously",
+    "georgian": "კეთილშობილურად",
+    "pronunciation": "/ˈɡreɪʃəsli/",
+    "example_en": "She graciously welcomed us.",
+    "example_ka": "კეთილშობილურად დაგვიმასპინძლა.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "kindly",
+    "georgian": "კეთილად",
+    "pronunciation": "/ˈkaɪndli/",
+    "example_en": "Kindly accept my greetings.",
+    "example_ka": "კეთილად მიიღე ჩემი მისალმება.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "politely",
+    "georgian": "თავაზიანად",
+    "pronunciation": "/pəˈlaɪtli/",
+    "example_en": "He politely introduced himself.",
+    "example_ka": "თავაზიანად გაეცნო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "respectfully",
+    "georgian": "პატივისცემით",
+    "pronunciation": "/rɪˈspɛktfəli/",
+    "example_en": "I respectfully greet you.",
+    "example_ka": "პატივისცემით გისალმები.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "humbly",
+    "georgian": "მოკრძალებულად",
+    "pronunciation": "/ˈhʌmbli/",
+    "example_en": "I humbly thank you.",
+    "example_ka": "მოკრძალებულად გმადლობ.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "modestly",
+    "georgian": "მოკრძალებულად",
+    "pronunciation": "/ˈmɒdɪstli/",
+    "example_en": "He modestly accepted praise.",
+    "example_ka": "მოკრძალებულად მიიღო შექება.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "gracefully",
+    "georgian": "მშვენივრად",
+    "pronunciation": "/ˈɡreɪsfəli/",
+    "example_en": "She gracefully accepted the compliment.",
+    "example_ka": "მშვენივრად მიიღო კომპლიმენტი.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "elegantly",
+    "georgian": "ელეგანტურად",
+    "pronunciation": "/ˈɛlɪɡəntli/",
+    "example_en": "She elegantly greeted everyone.",
+    "example_ka": "ელეგანტურად მისალმა ყველას.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "magnificently",
+    "georgian": "დიადურად",
+    "pronunciation": "/mæɡˈnɪfɪsəntli/",
+    "example_en": "You performed magnificently.",
+    "example_ka": "დიადურად შეასრულე.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "brilliantly",
+    "georgian": "ბრწყინვალედ",
+    "pronunciation": "/ˈbrɪljəntli/",
+    "example_en": "You handled that brilliantly.",
+    "example_ka": "ბრწყინვალედ გაართვი თავი.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "perfectly",
+    "georgian": "სრულყოფილად",
+    "pronunciation": "/ˈpɜːfɪktli/",
+    "example_en": "Everything went perfectly.",
+    "example_ka": "ყველაფერი სრულყოფილად წავიდა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "flawlessly",
+    "georgian": "უნაკლოდ",
+    "pronunciation": "/ˈflɔːləsli/",
+    "example_en": "You executed the plan flawlessly.",
+    "example_ka": "უნაკლოდ შეასრულე გეგმა.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "impeccably",
+    "georgian": "უშეცდომოდ",
+    "pronunciation": "/ɪmˈpɛkəbli/",
+    "example_en": "Your manners are impeccably polite.",
+    "example_ka": "შენი ქცევა უშეცდომოდ თავაზიანია.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "admirably",
+    "georgian": "საღირსად",
+    "pronunciation": "/ˈædmərəbli/",
+    "example_en": "You handled the situation admirably.",
+    "example_ka": "საღირსად გაართვი თავი სიტუაციას.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "wonderfully",
+    "georgian": "შესანიშნავად",
+    "pronunciation": "/ˈwʌndərfəli/",
+    "example_en": "Everything is going wonderfully.",
+    "example_ka": "ყველაფერი შესანიშნავად მიდის.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "beautifully",
+    "georgian": "ლამაზად",
+    "pronunciation": "/ˈbjuːtɪfəli/",
+    "example_en": "You expressed yourself beautifully.",
+    "example_ka": "ლამაზად გამოხატე თავი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "splendidly",
+    "georgian": "ბრწყინვალედ",
+    "pronunciation": "/ˈsplɛndɪdli/",
+    "example_en": "The event went splendidly.",
+    "example_ka": "ღონისძიება ბრწყინვალედ ჩატარდა.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "marvelously",
+    "georgian": "საოცრად",
+    "pronunciation": "/ˈmɑːvələsli/",
+    "example_en": "You sing marvelously.",
+    "example_ka": "საოცრად მღერი.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "fantastically",
+    "georgian": "ფანტასტიკურად",
+    "pronunciation": "/fænˈtæstɪkli/",
+    "example_en": "You're doing fantastically well.",
+    "example_ka": "ფანტასტიკურად კარგად გისწრია.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "amazingly",
+    "georgian": "გასაოცრად",
+    "pronunciation": "/əˈmeɪzɪŋli/",
+    "example_en": "You're amazingly talented.",
+    "example_ka": "გასაოცრად ნიჭიერი ხარ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "incredibly",
+    "georgian": "წარმოუდგენლად",
+    "pronunciation": "/ɪnˈkrɛdəbli/",
+    "example_en": "You're incredibly kind.",
+    "example_ka": "წარმოუდგენლად კეთილი ხარ.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "exceptionally",
+    "georgian": "განსაკუთრებულად",
+    "pronunciation": "/ɪkˈsɛpʃənəli/",
+    "example_en": "You're exceptionally gifted.",
+    "example_ka": "განსაკუთრებულად ნიჭიერი ხარ.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "extraordinarily",
+    "georgian": "არაჩვეულებრივად",
+    "pronunciation": "/ɪkˈstrɔːdnrəli/",
+    "example_en": "You're extraordinarily helpful.",
+    "example_ka": "არაჩვეულებრივად მეხმარებითი ხარ.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "remarkably",
+    "georgian": "გამორჩეულად",
+    "pronunciation": "/rɪˈmɑːkəbli/",
+    "example_en": "You've improved remarkably.",
+    "example_ka": "გამორჩეულად გაუმჯობესდი.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "outstandingly",
+    "georgian": "გამორჩეულად",
+    "pronunciation": "/aʊtˈstændɪŋli/",
+    "example_en": "You performed outstandingly.",
+    "example_ka": "გამორჩეულად შეასრულე.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "phenomenally",
+    "georgian": "ფენომენურად",
+    "pronunciation": "/fəˈnɒmɪnəli/",
+    "example_en": "You've grown phenomenally.",
+    "example_ka": "ფენომენურად გაიზარდე.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "spectacularly",
+    "georgian": "ნანახევად",
+    "pronunciation": "/spɛkˈtækjələrli/",
+    "example_en": "You succeeded spectacularly.",
+    "example_ka": "ნანახევად წარმატებული ხარ.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "tremendously",
+    "georgian": "უზომოდ",
+    "pronunciation": "/trəˈmɛndəsli/",
+    "example_en": "I appreciate you tremendously.",
+    "example_ka": "უზომოდ მაფასებ შენ.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "immensely",
+    "georgian": "უზომოდ",
+    "pronunciation": "/ɪˈmɛnsli/",
+    "example_en": "I enjoyed meeting you immensely.",
+    "example_ka": "უზომოდ მომეწონა შენთან შეხვედრა.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "enormously",
+    "georgian": "ძალიან დიდად",
+    "pronunciation": "/ɪˈnɔːməsli/",
+    "example_en": "I value your friendship enormously.",
+    "example_ka": "ძალიან დიდად ვაფასებ შენს მეგობრობას.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "greatly",
+    "georgian": "დიდად",
+    "pronunciation": "/ˈɡreɪtli/",
+    "example_en": "I appreciate your help greatly.",
+    "example_ka": "დიდად ვაფასებ შენს დახმარებას.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "deeply",
+    "georgian": "ღრმად",
+    "pronunciation": "/ˈdiːpli/",
+    "example_en": "I'm deeply grateful to you.",
+    "example_ka": "ღრმად მადლიერი ვარ შენი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "profoundly",
+    "georgian": "ღრმად",
+    "pronunciation": "/prəˈfaʊndli/",
+    "example_en": "I'm profoundly moved by your kindness.",
+    "example_ka": "ღრმად ვარ შეწუხებული შენი სიკეთით.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "intensely",
+    "georgian": "ინტენსიურად",
+    "pronunciation": "/ɪnˈtɛnsli/",
+    "example_en": "I felt intensely grateful.",
+    "example_ka": "ინტენსიურად მადლიერი ვიყავი.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "passionately",
+    "georgian": "ვნებიანად",
+    "pronunciation": "/ˈpæʃənətli/",
+    "example_en": "I believe passionately in your success.",
+    "example_ka": "ვნებიანად ვჯერ შენს წარმატებაში.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "devotedly",
+    "georgian": "ერთგულად",
+    "pronunciation": "/dɪˈvoʊtɪdli/",
+    "example_en": "I'll support you devotedly.",
+    "example_ka": "ერთგულად მხარს გაგიჭერ.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "greet",
+    "georgian": "მისალმება",
+    "pronunciation": "/ɡriːt/",
+    "example_en": "Always greet people politely.",
+    "example_ka": "ყოველთვის თავაზიანად მისალმე ადამიანებს.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "meet",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/miːt/",
+    "example_en": "Nice to meet you.",
+    "example_ka": "სასიამოვნოა შეხვედრა.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "introduce",
+    "georgian": "წარდგენა",
+    "pronunciation": "/ˌɪntrəˈdjuːs/",
+    "example_en": "Let me introduce myself.",
+    "example_ka": "თავი წარმოგიდგინოთ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "name",
+    "georgian": "სახელი",
+    "pronunciation": "/neɪm/",
+    "example_en": "What is your name?",
+    "example_ka": "რა სახელი გქვია?",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "friend",
+    "georgian": "მეგობარი",
+    "pronunciation": "/frɛnd/",
+    "example_en": "You are my best friend.",
+    "example_ka": "შენ ჩემი საუკეთესო მეგობარი ხარ.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "stranger",
+    "georgian": "უცნობი",
+    "pronunciation": "/ˈstreɪndʒər/",
+    "example_en": "Don't talk to strangers.",
+    "example_ka": "უცნობებთან ნუ საუბრობ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "visitor",
+    "georgian": "სტუმარი",
+    "pronunciation": "/ˈvɪzɪtər/",
+    "example_en": "We have a visitor today.",
+    "example_ka": "დღეს სტუმარი გვყავს.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "guest",
+    "georgian": "სტუმარი",
+    "pronunciation": "/ɡɛst/",
+    "example_en": "The guest arrived early.",
+    "example_ka": "სტუმარი ადრე მოვიდა.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "host",
+    "georgian": "მასპინძელი",
+    "pronunciation": "/hoʊst/",
+    "example_en": "The host welcomed everyone warmly.",
+    "example_ka": "მასპინძელმა ყველა თბილად მიიღო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "smile",
+    "georgian": "ღიმილი",
+    "pronunciation": "/smaɪl/",
+    "example_en": "A smile makes everyone happy.",
+    "example_ka": "ღიმილი ყველას ახარებს.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "wave",
+    "georgian": "ხელის ქნევა",
+    "pronunciation": "/weɪv/",
+    "example_en": "She gave me a friendly wave.",
+    "example_ka": "მეგობრულად ხელი მიქნია.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "handshake",
+    "georgian": "ხელის ჩამორთმევა",
+    "pronunciation": "/ˈhændʃeɪk/",
+    "example_en": "We sealed the deal with a handshake.",
+    "example_ka": "გარიგება ხელის ჩამორთმევით დავრწმუნეთ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "hug",
+    "georgian": "ჩახუტება",
+    "pronunciation": "/hʌɡ/",
+    "example_en": "Give me a warm hug.",
+    "example_ka": "თბილი ჩახუტება მომეცი.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "kiss",
+    "georgian": "კოცნა",
+    "pronunciation": "/kɪs/",
+    "example_en": "She gave him a goodbye kiss.",
+    "example_ka": "დამშვიდობების კოცნა მისცა.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "bow",
+    "georgian": "თაღლითება",
+    "pronunciation": "/baʊ/",
+    "example_en": "He gave a polite bow.",
+    "example_ka": "თავაზიანი თაღლითება გააკეთა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "nod",
+    "georgian": "თავის ქნევა",
+    "pronunciation": "/nɒd/",
+    "example_en": "She nodded in agreement.",
+    "example_ka": "დათანხმებით თავი გადაქნია.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "acknowledge",
+    "georgian": "აღიარება",
+    "pronunciation": "/əkˈnɒlɪdʒ/",
+    "example_en": "Please acknowledge my greeting.",
+    "example_ka": "გთხოვთ, ჩემი მისალმება აღიაროთ.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "recognize",
+    "georgian": "ამოცნობა",
+    "pronunciation": "/ˈrɛkəɡnaɪz/",
+    "example_en": "I didn't recognize you at first.",
+    "example_ka": "თავიდან ვერ გამოცანი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "familiar",
+    "georgian": "ნაცნობი",
+    "pronunciation": "/fəˈmɪljər/",
+    "example_en": "You look familiar to me.",
+    "example_ka": "ნაცნობი გამოხედავი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "acquaintance",
+    "georgian": "ნაცნობი",
+    "pronunciation": "/əˈkweɪntəns/",
+    "example_en": "He is just an acquaintance.",
+    "example_ka": "ის მხოლოდ ნაცნობია.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "neighbor",
+    "georgian": "მეზობელი",
+    "pronunciation": "/ˈneɪbər/",
+    "example_en": "My neighbor is very friendly.",
+    "example_ka": "ჩემი მეზობელი ძალიან მეგობრულია.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "relative",
+    "georgian": "ნათესავი",
+    "pronunciation": "/ˈrɛlətɪv/",
+    "example_en": "He is a distant relative.",
+    "example_ka": "ის შორეული ნათესავია.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "family",
+    "georgian": "ოჯახი",
+    "pronunciation": "/ˈfæməli/",
+    "example_en": "Family is very important.",
+    "example_ka": "ოჯახი ძალიან მნიშვნელოვანია.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "companion",
+    "georgian": "თანამგზავრი",
+    "pronunciation": "/kəmˈpænjən/",
+    "example_en": "She was my travel companion.",
+    "example_ka": "ის ჩემი მოგზაურობის თანამგზავრი იყო.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "buddy",
+    "georgian": "მეგობარი",
+    "pronunciation": "/ˈbʌdi/",
+    "example_en": "Hey buddy, how are you?",
+    "example_ka": "ჰეი მეგობარო, როგორ ხარ?",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "mate",
+    "georgian": "მეგობარი",
+    "pronunciation": "/meɪt/",
+    "example_en": "He's my best mate.",
+    "example_ka": "ის ჩემი საუკეთესო მეგობარია.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "pal",
+    "georgian": "მეგობარი",
+    "pronunciation": "/pæl/",
+    "example_en": "Thanks, pal!",
+    "example_ka": "მადლობა, მეგობარო!",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "partner",
+    "georgian": "პარტნიორი",
+    "pronunciation": "/ˈpɑːrtnər/",
+    "example_en": "She's my dance partner.",
+    "example_ka": "ის ჩემი საცეკვაო პარტნიორია.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "classmate",
+    "georgian": "თანაკლასელი",
+    "pronunciation": "/ˈklæsmeɪt/",
+    "example_en": "I met my old classmate.",
+    "example_ka": "ძველ თანაკლასელს შევხვდი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "roommate",
+    "georgian": "ოთახის მეტოკე",
+    "pronunciation": "/ˈruːmmeɪt/",
+    "example_en": "My roommate is very tidy.",
+    "example_ka": "ჩემი ოთახის მეტოკე ძალიან მოწყობილია.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "teammate",
+    "georgian": "გუნდელი",
+    "pronunciation": "/ˈtiːmmeɪt/",
+    "example_en": "My teammate scored a goal.",
+    "example_ka": "ჩემი გუნდელმა გოლი გაიტანა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "arrival",
+    "georgian": "ჩამოსვლა",
+    "pronunciation": "/əˈraɪvəl/",
+    "example_en": "Your arrival made me happy.",
+    "example_ka": "შენი ჩამოსვლამ გამახარა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "departure",
+    "georgian": "წასვლა",
+    "pronunciation": "/dɪˈpɑːrʧər/",
+    "example_en": "His departure was sad.",
+    "example_ka": "მისი წასვლა სამწუხარო იყო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "return",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "I await your return.",
+    "example_ka": "შენს დაბრუნებას ველოდები.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "reunion",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/riːˈjuːniən/",
+    "example_en": "Our class reunion was wonderful.",
+    "example_ka": "ჩვენი კლასის შეხვედრა მშვენიერი იყო.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "encounter",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/ɪnˈkaʊntər/",
+    "example_en": "What a pleasant encounter!",
+    "example_ka": "რა სასიამოვნო შეხვედრა!",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "introduction",
+    "georgian": "წარდგენა",
+    "pronunciation": "/ˌɪntrəˈdʌkʃən/",
+    "example_en": "Thank you for the introduction.",
+    "example_ka": "მადლობა წარდგენისთვის.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "presentation",
+    "georgian": "წარდგენა",
+    "pronunciation": "/ˌprezənˈteɪʃən/",
+    "example_en": "Allow me to make a presentation.",
+    "example_ka": "ნება მომეცით წარდგენა გავაკეთო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "announcement",
+    "georgian": "განცხადება",
+    "pronunciation": "/əˈnaʊnsmənt/",
+    "example_en": "I have an important announcement.",
+    "example_ka": "მნიშვნელოვანი განცხადება მაქვს.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "invitation",
+    "georgian": "მოწვევა",
+    "pronunciation": "/ˌɪnvɪˈteɪʃən/",
+    "example_en": "Thank you for the invitation.",
+    "example_ka": "მადლობა მოწვევისთვის.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "celebration",
+    "georgian": "ზეიმი",
+    "pronunciation": "/ˌsɛləˈbreɪʃən/",
+    "example_en": "Let's have a celebration!",
+    "example_ka": "ზეიმი მოვაწყოთ!",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "party",
+    "georgian": "წვეულება",
+    "pronunciation": "/ˈpɑːrti/",
+    "example_en": "Welcome to our party.",
+    "example_ka": "კეთილი იყოს თქვენი მობრძანება ჩვენს წვეულებაში.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "gathering",
+    "georgian": "შეკრება",
+    "pronunciation": "/ˈɡæðərɪŋ/",
+    "example_en": "It's a family gathering.",
+    "example_ka": "ოჯახური შეკრებაა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "assembly",
+    "georgian": "შეკრება",
+    "pronunciation": "/əˈsɛmbli/",
+    "example_en": "The school assembly begins now.",
+    "example_ka": "სკოლის შეკრება ახლა იწყება.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "ceremony",
+    "georgian": "ცერემონია",
+    "pronunciation": "/ˈsɛrəˌmoʊni/",
+    "example_en": "The opening ceremony was beautiful.",
+    "example_ka": "გახსნის ცერემონია მშვენიერი იყო.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "event",
+    "georgian": "ღონისძიება",
+    "pronunciation": "/ɪˈvɛnt/",
+    "example_en": "This is a special event.",
+    "example_ka": "ეს განსაკუთრებული ღონისძიებაა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "occasion",
+    "georgian": "შემთხვევა",
+    "pronunciation": "/əˈkeɪʒən/",
+    "example_en": "What's the occasion for celebration?",
+    "example_ka": "რა შემთხვევის გამო იზეიმება?",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "festivity",
+    "georgian": "ფესტივალი",
+    "pronunciation": "/fɛˈstɪvɪti/",
+    "example_en": "Join us for the festivity.",
+    "example_ka": "შემოუერთდი ფესტივალს.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "hospitality",
+    "georgian": "სტუმართმოყვარეობა",
+    "pronunciation": "/ˌhɒspɪˈtæləti/",
+    "example_en": "Georgian hospitality is famous.",
+    "example_ka": "ქართული სტუმართმოყვარეობა ცნობილია.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "warmth",
+    "georgian": "სითბო",
+    "pronunciation": "/wɔːrmθ/",
+    "example_en": "I felt the warmth of their welcome.",
+    "example_ka": "მათი მიღების სითბო ვიგრძენი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "friendliness",
+    "georgian": "მეგობრულობა",
+    "pronunciation": "/ˈfrɛndlinəs/",
+    "example_en": "Their friendliness impressed me.",
+    "example_ka": "მათი მეგობრულობამ გამაოცა.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "cordiality",
+    "georgian": "გულისხმიერობა",
+    "pronunciation": "/kɔːrdiˈæləti/",
+    "example_en": "He greeted us with great cordiality.",
+    "example_ka": "დიდი გულისხმიერობით მიგვიღო.",
+    "category": "greetings-basics",
+    "level": "C1"
+  },
+  {
+    "english": "affection",
+    "georgian": "სიყვარული",
+    "pronunciation": "/əˈfɛkʃən/",
+    "example_en": "She showed her affection clearly.",
+    "example_ka": "სიყვარული აშკარად გამოხატა.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "embrace",
+    "georgian": "ჩახუტება",
+    "pronunciation": "/ɪmˈbreɪs/",
+    "example_en": "They shared a warm embrace.",
+    "example_ka": "თბილი ჩახუტება მიუღეს ერთმანეთს.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "cuddle",
+    "georgian": "ალერსი",
+    "pronunciation": "/ˈkʌdəl/",
+    "example_en": "The baby likes to cuddle.",
+    "example_ka": "ბავშვი ალერსს უყვარს.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "snuggle",
+    "georgian": "ჩახუტება",
+    "pronunciation": "/ˈsnʌɡəl/",
+    "example_en": "Let's snuggle on the couch.",
+    "example_ka": "დივანზე ჩავეხუტოთ.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "caress",
+    "georgian": "ალერსი",
+    "pronunciation": "/kəˈrɛs/",
+    "example_en": "A gentle caress on the cheek.",
+    "example_ka": "ლმობიერი ალერსი ლოყაზე.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "touch",
+    "georgian": "შეხება",
+    "pronunciation": "/tʌʧ/",
+    "example_en": "A gentle touch says everything.",
+    "example_ka": "ნაზი შეხება ყველაფერს ამბობს.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "contact",
+    "georgian": "კონტაქტი",
+    "pronunciation": "/ˈkɒntækt/",
+    "example_en": "Eye contact is important.",
+    "example_ka": "თვალებით კონტაქტი მნიშვნელოვანია.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "connection",
+    "georgian": "კავშირი",
+    "pronunciation": "/kəˈnɛkʃən/",
+    "example_en": "I felt an instant connection.",
+    "example_ka": "მყისიერი კავშირი ვიგრძენი.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "bond",
+    "georgian": "კავშირი",
+    "pronunciation": "/bɒnd/",
+    "example_en": "We share a special bond.",
+    "example_ka": "განსაკუთრებული კავშირი გვაქვს.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "relationship",
+    "georgian": "ურთიერთობა",
+    "pronunciation": "/rɪˈleɪʃənʃɪp/",
+    "example_en": "Our relationship is strong.",
+    "example_ka": "ჩვენი ურთიერთობა ძლიერია.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "friendship",
+    "georgian": "მეგობრობა",
+    "pronunciation": "/ˈfrɛndʃɪp/",
+    "example_en": "True friendship lasts forever.",
+    "example_ka": "ნამდვილი მეგობრობა სამუდამოდ გრძელდება.",
+    "category": "greetings-basics",
+    "level": "A2"
+  },
+  {
+    "english": "companionship",
+    "georgian": "თანამგზავრობა",
+    "pronunciation": "/kəmˈpænjənʃɪp/",
+    "example_en": "I enjoy your companionship.",
+    "example_ka": "შენი თანამგზავრობა მომწონს.",
+    "category": "greetings-basics",
+    "level": "B2"
+  },
+  {
+    "english": "regards",
+    "georgian": "პატივისცემით",
+    "pronunciation": "/rɪˈɡɑːrdz/",
+    "example_en": "Best regards to your family.",
+    "example_ka": "საუკეთესო სურვილები თქვენს ოჯახს.",
+    "level": "A2",
+    "category": "greetings-basics"
+  },
+  {
+    "english": "greeting",
+    "georgian": "მისალმება",
+    "pronunciation": "/ˈɡriːtɪŋ/",
+    "example_en": "A warm greeting makes people happy.",
+    "example_ka": "თბილი მისალმება ხალხს ახარებს.",
+    "category": "greetings-basics",
+    "level": "A1"
+  },
+  {
+    "english": "salute",
+    "georgian": "მისალმება",
+    "pronunciation": "/səˈluːt/",
+    "example_en": "He saluted the officer.",
+    "example_ka": "ოფიცერს მიესალმა.",
+    "category": "greetings-basics",
+    "level": "B1"
+  },
+  {
+    "english": "curtsy",
+    "georgian": "კეთილი თამამი",
+    "pronunciation": "/ˈkɜːrtsi/",
+    "example_en": "She did a curtsy before the queen.",
+    "example_ka": "დედოფლის წინ თავი დახარა.",
+    "category": "greetings-basics",
+    "level": "B2"
   }
 ]

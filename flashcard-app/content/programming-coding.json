@@ -1,32 +1,1802 @@
 [
-  {"english":"code","georgian":"კოდი","pronunciation":"/koʊd/","example_en":"I wrote 200 lines of code today.","example_ka":"დღეს 200 ხაზი კოდი დავწერე.","category":"programming-coding","level":"beginner"},
-  {"english":"bug","georgian":"ბაგი","pronunciation":"/bʌɡ/","example_en":"I found a bug in the program.","example_ka":"პროგრამაში ბაგი ვიპოვე.","category":"programming-coding","level":"beginner"},
-  {"english":"to debug","georgian":"ბაგის გასწორება","pronunciation":"/tə diːˈbʌɡ/","example_en":"I spent three hours debugging.","example_ka":"ბაგის გასწორებას სამი საათი დავხარჯე.","category":"programming-coding","level":"beginner"},
-  {"english":"variable","georgian":"ცვლადი","pronunciation":"/ˈveəriəbl/","example_en":"Declare a variable to store the value.","example_ka":"მნიშვნელობის შესანახად ცვლადი გამოაცხადე.","category":"programming-coding","level":"beginner"},
-  {"english":"function","georgian":"ფუნქცია","pronunciation":"/ˈfʌŋkʃən/","example_en":"This function calculates the total.","example_ka":"ეს ფუნქცია ჯამს ითვლის.","category":"programming-coding","level":"beginner"},
-  {"english":"loop","georgian":"ციკლი","pronunciation":"/luːp/","example_en":"Use a loop to repeat the action.","example_ka":"მოქმედების გასამეორებლად ციკლი გამოიყენე.","category":"programming-coding","level":"beginner"},
-  {"english":"array","georgian":"მასივი","pronunciation":"/əˈreɪ/","example_en":"Store the names in an array.","example_ka":"სახელები მასივში შეინახე.","category":"programming-coding","level":"beginner"},
-  {"english":"string","georgian":"სტრინგი","pronunciation":"/strɪŋ/","example_en":"A string is a sequence of characters.","example_ka":"სტრინგი სიმბოლოების თანმიმდევრობაა.","category":"programming-coding","level":"beginner"},
-  {"english":"database","georgian":"ბაზა","pronunciation":"/ˈdeɪtəbeɪs/","example_en":"The data is stored in a database.","example_ka":"მონაცემები ბაზაშია შენახული.","category":"programming-coding","level":"beginner"},
-  {"english":"API","georgian":"API","pronunciation":"/eɪ piː aɪ/","example_en":"We use an API to get the data.","example_ka":"მონაცემების მისაღებად API-ს ვიყენებთ.","category":"programming-coding","level":"intermediate"},
-  {"english":"frontend","georgian":"ფრონტენდი","pronunciation":"/ˈfrʌntend/","example_en":"I work on the frontend with React.","example_ka":"ფრონტენდზე React-ით ვმუშაობ.","category":"programming-coding","level":"beginner"},
-  {"english":"backend","georgian":"ბექენდი","pronunciation":"/ˈbækend/","example_en":"The backend handles the logic.","example_ka":"ბექენდი ლოგიკას ამუშავებს.","category":"programming-coding","level":"beginner"},
-  {"english":"to deploy","georgian":"დეპლოი","pronunciation":"/tə dɪˈplɔɪ/","example_en":"We deployed the app to production.","example_ka":"აპლიკაცია პროდაქშენზე ავტვირთეთ.","category":"programming-coding","level":"intermediate"},
-  {"english":"repository","georgian":"რეპოზიტორი","pronunciation":"/rɪˈpɒzɪtɔːri/","example_en":"Push your code to the repository.","example_ka":"კოდი რეპოზიტორში ატვირთე.","category":"programming-coding","level":"intermediate"},
-  {"english":"commit","georgian":"კომიტი","pronunciation":"/kəˈmɪt/","example_en":"Make a commit with a clear message.","example_ka":"გასაგები მესიჯით კომიტი გააკეთე.","category":"programming-coding","level":"beginner"},
-  {"english":"pull request","georgian":"პულ რექვესტი","pronunciation":"/pʊl rɪˈkwest/","example_en":"I opened a pull request for review.","example_ka":"განსახილველად პულ რექვესტი გავხსენი.","category":"programming-coding","level":"intermediate"},
-  {"english":"framework","georgian":"ფრეიმვორკი","pronunciation":"/ˈfreɪmwɜːrk/","example_en":"React is a popular framework.","example_ka":"React პოპულარული ფრეიმვორკია.","category":"programming-coding","level":"beginner"},
-  {"english":"server","georgian":"სერვერი","pronunciation":"/ˈsɜːrvər/","example_en":"The server is down.","example_ka":"სერვერი გათიშულია.","category":"programming-coding","level":"beginner"},
-  {"english":"error","georgian":"შეცდომა","pronunciation":"/ˈerər/","example_en":"I got an error on line 42.","example_ka":"42-ე ხაზზე შეცდომა მივიღე.","category":"programming-coding","level":"beginner"},
-  {"english":"to compile","georgian":"კომპილაცია","pronunciation":"/tə kəmˈpaɪl/","example_en":"The code won't compile.","example_ka":"კოდი არ კომპილირდება.","category":"programming-coding","level":"intermediate"},
-  {"english":"algorithm","georgian":"ალგორითმი","pronunciation":"/ˈælɡərɪðəm/","example_en":"This algorithm sorts the numbers.","example_ka":"ეს ალგორითმი რიცხვებს ალაგებს.","category":"programming-coding","level":"intermediate"},
-  {"english":"terminal","georgian":"ტერმინალი","pronunciation":"/ˈtɜːrmɪnl/","example_en":"Run the command in the terminal.","example_ka":"ბრძანება ტერმინალში გაუშვი.","category":"programming-coding","level":"beginner"},
-  {"english":"IDE","georgian":"კოდის რედაქტორი","pronunciation":"/aɪ diː iː/","example_en":"VS Code is my favorite IDE.","example_ka":"VS Code ჩემი საყვარელი კოდის რედაქტორია.","category":"programming-coding","level":"beginner"},
-  {"english":"syntax","georgian":"სინტაქსი","pronunciation":"/ˈsɪntæks/","example_en":"Check the syntax of your code.","example_ka":"კოდის სინტაქსი შეამოწმე.","category":"programming-coding","level":"beginner"},
-  {"english":"object","georgian":"ობიექტი","pronunciation":"/ˈɒbdʒɪkt/","example_en":"An object stores key-value pairs.","example_ka":"ობიექტი გასაღები-მნიშვნელობის წყვილებს ინახავს.","category":"programming-coding","level":"beginner"},
-  {"english":"class","georgian":"კლასი","pronunciation":"/klæs/","example_en":"Create a new class for the user.","example_ka":"მომხმარებლისთვის ახალი კლასი შექმენი.","category":"programming-coding","level":"beginner"},
-  {"english":"responsive","georgian":"რესპონსიული","pronunciation":"/rɪˈspɒnsɪv/","example_en":"The website must be responsive.","example_ka":"ვებსაიტი რესპონსიული უნდა იყოს.","category":"programming-coding","level":"beginner"},
-  {"english":"to test","georgian":"ტესტირება","pronunciation":"/tə test/","example_en":"Always test your code before deploying.","example_ka":"დეპლოიმდე კოდი ყოველთვის დატესტე.","category":"programming-coding","level":"beginner"},
-  {"english":"open source","georgian":"ღია კოდი","pronunciation":"/ˌoʊpən sɔːrs/","example_en":"Linux is an open source operating system.","example_ka":"Linux ღია კოდის ოპერაციული სისტემაა.","category":"programming-coding","level":"beginner"},
-  {"english":"stack overflow","georgian":"სტეკ ოვერფლოუ","pronunciation":"/stæk ˈoʊvərfloʊ/","example_en":"I found the answer on Stack Overflow.","example_ka":"პასუხი Stack Overflow-ზე ვიპოვე.","category":"programming-coding","level":"beginner"}
+  {
+    "english": "code",
+    "georgian": "კოდი",
+    "pronunciation": "/koʊd/",
+    "example_en": "I wrote 200 lines of code today.",
+    "example_ka": "დღეს 200 ხაზი კოდი დავწერე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "bug",
+    "georgian": "ბაგი",
+    "pronunciation": "/bʌɡ/",
+    "example_en": "I found a bug in the program.",
+    "example_ka": "პროგრამაში ბაგი ვიპოვე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "variable",
+    "georgian": "ცვლადი",
+    "pronunciation": "/ˈveəriəbl/",
+    "example_en": "Declare a variable to store the value.",
+    "example_ka": "მნიშვნელობის შესანახად ცვლადი გამოაცხადე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "function",
+    "georgian": "ფუნქცია",
+    "pronunciation": "/ˈfʌŋkʃən/",
+    "example_en": "This function calculates the total.",
+    "example_ka": "ეს ფუნქცია ჯამს ითვლის.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "loop",
+    "georgian": "ციკლი",
+    "pronunciation": "/luːp/",
+    "example_en": "Use a loop to repeat the action.",
+    "example_ka": "მოქმედების გასამეორებლად ციკლი გამოიყენე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "array",
+    "georgian": "მასივი",
+    "pronunciation": "/əˈreɪ/",
+    "example_en": "Store the names in an array.",
+    "example_ka": "სახელები მასივში შეინახე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "string",
+    "georgian": "სტრინგი",
+    "pronunciation": "/strɪŋ/",
+    "example_en": "A string is a sequence of characters.",
+    "example_ka": "სტრინგი სიმბოლოების თანმიმდევრობაა.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "database",
+    "georgian": "ბაზა",
+    "pronunciation": "/ˈdeɪtəbeɪs/",
+    "example_en": "The data is stored in a database.",
+    "example_ka": "მონაცემები ბაზაშია შენახული.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "API",
+    "georgian": "API",
+    "pronunciation": "/eɪ piː aɪ/",
+    "example_en": "We use an API to get the data.",
+    "example_ka": "მონაცემების მისაღებად API-ს ვიყენებთ.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "frontend",
+    "georgian": "ფრონტენდი",
+    "pronunciation": "/ˈfrʌntend/",
+    "example_en": "I work on the frontend with React.",
+    "example_ka": "ფრონტენდზე React-ით ვმუშაობ.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "backend",
+    "georgian": "ბექენდი",
+    "pronunciation": "/ˈbækend/",
+    "example_en": "The backend handles the logic.",
+    "example_ka": "ბექენდი ლოგიკას ამუშავებს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "repository",
+    "georgian": "რეპოზიტორი",
+    "pronunciation": "/rɪˈpɒzɪtɔːri/",
+    "example_en": "Push your code to the repository.",
+    "example_ka": "კოდი რეპოზიტორში ატვირთე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "commit",
+    "georgian": "კომიტი",
+    "pronunciation": "/kəˈmɪt/",
+    "example_en": "Make a commit with a clear message.",
+    "example_ka": "გასაგები მესიჯით კომიტი გააკეთე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "framework",
+    "georgian": "ფრეიმვორკი",
+    "pronunciation": "/ˈfreɪmwɜːrk/",
+    "example_en": "React is a popular framework.",
+    "example_ka": "React პოპულარული ფრეიმვორკია.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "server",
+    "georgian": "სერვერი",
+    "pronunciation": "/ˈsɜːrvər/",
+    "example_en": "The server is down.",
+    "example_ka": "სერვერი გათიშულია.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "error",
+    "georgian": "შეცდომა",
+    "pronunciation": "/ˈerər/",
+    "example_en": "I got an error on line 42.",
+    "example_ka": "42-ე ხაზზე შეცდომა მივიღე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "algorithm",
+    "georgian": "ალგორითმი",
+    "pronunciation": "/ˈælɡərɪðəm/",
+    "example_en": "This algorithm sorts the numbers.",
+    "example_ka": "ეს ალგორითმი რიცხვებს ალაგებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "terminal",
+    "georgian": "ტერმინალი",
+    "pronunciation": "/ˈtɜːrmɪnl/",
+    "example_en": "Run the command in the terminal.",
+    "example_ka": "ბრძანება ტერმინალში გაუშვი.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "IDE",
+    "georgian": "კოდის რედაქტორი",
+    "pronunciation": "/aɪ diː iː/",
+    "example_en": "VS Code is my favorite IDE.",
+    "example_ka": "VS Code ჩემი საყვარელი კოდის რედაქტორია.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "syntax",
+    "georgian": "სინტაქსი",
+    "pronunciation": "/ˈsɪntæks/",
+    "example_en": "Check the syntax of your code.",
+    "example_ka": "კოდის სინტაქსი შეამოწმე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "object",
+    "georgian": "ობიექტი",
+    "pronunciation": "/ˈɒbdʒɪkt/",
+    "example_en": "An object stores key-value pairs.",
+    "example_ka": "ობიექტი გასაღები-მნიშვნელობის წყვილებს ინახავს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "class",
+    "georgian": "კლასი",
+    "pronunciation": "/klæs/",
+    "example_en": "Create a new class for the user.",
+    "example_ka": "მომხმარებლისთვის ახალი კლასი შექმენი.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "responsive",
+    "georgian": "რესპონსიული",
+    "pronunciation": "/rɪˈspɒnsɪv/",
+    "example_en": "The website must be responsive.",
+    "example_ka": "ვებსაიტი რესპონსიული უნდა იყოს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "debug",
+    "georgian": "გასწორება",
+    "pronunciation": "/diːˈbʌɡ/",
+    "example_en": "I need to debug this code.",
+    "example_ka": "ეს კოდი უნდა გავასწორო.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "compile",
+    "georgian": "კომპილირება",
+    "pronunciation": "/kəmˈpaɪl/",
+    "example_en": "The code won't compile.",
+    "example_ka": "კოდი არ კომპილირდება.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "deploy",
+    "georgian": "განთავსება",
+    "pronunciation": "/dɪˈplɔɪ/",
+    "example_en": "Deploy the application to production.",
+    "example_ka": "აპლიკაცია პროდუქციაში განათავსე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the latest version.",
+    "example_ka": "უახლესი ვერსია ჩამოტვირთე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ˈʌploʊd/",
+    "example_en": "Upload your files to the server.",
+    "example_ka": "ფაილები სერვერზე ატვირთე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "install",
+    "georgian": "ინსტალაცია",
+    "pronunciation": "/ɪnˈstɔːl/",
+    "example_en": "Install the required dependencies.",
+    "example_ka": "საჭირო დამოკიდებულებები დააინსტალირე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "Update the software regularly.",
+    "example_ka": "პროგრამული უზრუნველყოფა რეგულარულად განაახლე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "version",
+    "georgian": "ვერსია",
+    "pronunciation": "/ˈvɜːrʒən/",
+    "example_en": "Which version are you using?",
+    "example_ka": "რომელ ვერსიას იყენებ?",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "library",
+    "georgian": "ბიბლიოთეკა",
+    "pronunciation": "/ˈlaɪbreri/",
+    "example_en": "Import the math library.",
+    "example_ka": "მათემატიკური ბიბლიოთეკა იმპორტი გააკეთე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "module",
+    "georgian": "მოდული",
+    "pronunciation": "/ˈmɒdjuːl/",
+    "example_en": "This module handles user authentication.",
+    "example_ka": "ეს მოდული მომხმარებლის ავთენტიფიკაციას ამუშავებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "package",
+    "georgian": "პაკეტი",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "Install the package using npm.",
+    "example_ka": "პაკეტი npm-ის გამოყენებით დააინსტალირე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "import",
+    "georgian": "იმპორტი",
+    "pronunciation": "/ɪmˈpɔːrt/",
+    "example_en": "Import React from 'react'.",
+    "example_ka": "React 'react'-დან იმპორტი გააკეთე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "export",
+    "georgian": "ექსპორტი",
+    "pronunciation": "/ɪkˈspɔːrt/",
+    "example_en": "Export the function as default.",
+    "example_ka": "ფუნქცია სტანდარტულად ექსპორტი გააკეთე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "constant",
+    "georgian": "კონსტანტა",
+    "pronunciation": "/ˈkɒnstənt/",
+    "example_en": "Define a constant for the API URL.",
+    "example_ka": "API URL-ისთვის კონსტანტა განსაზღვრე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "parameter",
+    "georgian": "პარამეტრი",
+    "pronunciation": "/pəˈræmɪtər/",
+    "example_en": "Pass the ID as a parameter.",
+    "example_ka": "ID პარამეტრად გადაეცი.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "argument",
+    "georgian": "არგუმენტი",
+    "pronunciation": "/ˈɑːrɡjumənt/",
+    "example_en": "The function takes two arguments.",
+    "example_ka": "ფუნქცია ორ არგუმენტს იღებს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "return",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "Return the result of the calculation.",
+    "example_ka": "გამოთვლის შედეგი დააბრუნე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "condition",
+    "georgian": "პირობა",
+    "pronunciation": "/kənˈdɪʃən/",
+    "example_en": "Check the condition before proceeding.",
+    "example_ka": "გაგრძელებამდე პირობა შეამოწმე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "boolean",
+    "georgian": "ლოგიკური",
+    "pronunciation": "/ˈbuːliən/",
+    "example_en": "A boolean value is true or false.",
+    "example_ka": "ლოგიკური მნიშვნელობა true ან false არის.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "integer",
+    "georgian": "მთელი რიცხვი",
+    "pronunciation": "/ˈɪntɪdʒər/",
+    "example_en": "Store the age as an integer.",
+    "example_ka": "ასაკი მთელი რიცხვის სახით შეინახე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "float",
+    "georgian": "ათვლადი რიცხვი",
+    "pronunciation": "/floʊt/",
+    "example_en": "Use float for decimal numbers.",
+    "example_ka": "ათობითი რიცხვებისთვის float გამოიყენე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "null",
+    "georgian": "ცარიელი",
+    "pronunciation": "/nʌl/",
+    "example_en": "Check if the value is null.",
+    "example_ka": "შეამოწმე ცარიელია თუ არა მნიშვნელობა.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "undefined",
+    "georgian": "განუსაზღვრელი",
+    "pronunciation": "/ˌʌndɪˈfaɪnd/",
+    "example_en": "The variable is undefined.",
+    "example_ka": "ცვლადი განუსაზღვრელია.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "exception",
+    "georgian": "გამონაკლისი",
+    "pronunciation": "/ɪkˈsepʃən/",
+    "example_en": "Handle the exception properly.",
+    "example_ka": "გამონაკლისი სწორად მუშავდეს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "try",
+    "georgian": "სცადე",
+    "pronunciation": "/traɪ/",
+    "example_en": "Try to execute the code.",
+    "example_ka": "კოდის შესრულება სცადე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "catch",
+    "georgian": "დაჭერა",
+    "pronunciation": "/kætʃ/",
+    "example_en": "Catch the error and handle it.",
+    "example_ka": "შეცდომა დაიჭირე და მუშავდეს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "throw",
+    "georgian": "გადაგდება",
+    "pronunciation": "/θroʊ/",
+    "example_en": "Throw an error if invalid.",
+    "example_ka": "არასწორის შემთხვევაში შეცდომა გადაგდე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "callback",
+    "georgian": "უკან გამოძახება",
+    "pronunciation": "/ˈkælbæk/",
+    "example_en": "Pass a callback function.",
+    "example_ka": "უკანაგამოძახების ფუნქცია გადაეცი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "promise",
+    "georgian": "პრომისი",
+    "pronunciation": "/ˈprɒmɪs/",
+    "example_en": "The function returns a promise.",
+    "example_ka": "ფუნქცია პრომისს აბრუნებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "async",
+    "georgian": "ასინქრონული",
+    "pronunciation": "/eɪˈsɪŋk/",
+    "example_en": "Use async functions for better performance.",
+    "example_ka": "უკეთესი მუშაობისთვის ასინქრონული ფუნქციები გამოიყენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "await",
+    "pronunciation": "/əˈweɪt/",
+    "georgian": "მოლოდინი",
+    "example_en": "Await the API response.",
+    "example_ka": "API პასუხის მოლოდინი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "thread",
+    "georgian": "ნაკადი",
+    "pronunciation": "/θred/",
+    "example_en": "Run the task in a separate thread.",
+    "example_ka": "ამოცანა ცალკე ნაკადში გაუშვი.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "process",
+    "georgian": "პროცესი",
+    "pronunciation": "/ˈprɒses/",
+    "example_en": "Each process runs independently.",
+    "example_ka": "ყოველი პროცესი დამოუკიდებლად მუშაობს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "memory",
+    "georgian": "მეხსიერება",
+    "pronunciation": "/ˈmeməri/",
+    "example_en": "The program uses too much memory.",
+    "example_ka": "პროგრამა ძალიან ბევრ მეხსიერებას იყენებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "storage",
+    "georgian": "საცავი",
+    "pronunciation": "/ˈstɔːrɪdʒ/",
+    "example_en": "Store the data in local storage.",
+    "example_ka": "მონაცემები ლოკალურ საცავში შეინახე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "cache",
+    "georgian": "კეში",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Clear the browser cache.",
+    "example_ka": "ბრაუზერის კეში გაასუფთავე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "cookie",
+    "georgian": "ქუკი",
+    "pronunciation": "/ˈkʊki/",
+    "example_en": "Set a cookie to remember the user.",
+    "example_ka": "მომხმარებლის დასამახსოვრებლად ქუკი დააყენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "session",
+    "georgian": "სესია",
+    "pronunciation": "/ˈseʃən/",
+    "example_en": "The user session has expired.",
+    "example_ka": "მომხმარებლის სესიის ვადა ამოიწურა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "authentication",
+    "georgian": "ავთენტიფიკაცია",
+    "pronunciation": "/ɔːˌθentɪˈkeɪʃən/",
+    "example_en": "Implement user authentication.",
+    "example_ka": "მომხმარებლის ავთენტიფიკაცია განახორციელე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "authorization",
+    "georgian": "ავტორიზაცია",
+    "pronunciation": "/ˌɔːθəraɪˈzeɪʃən/",
+    "example_en": "Check user authorization before access.",
+    "example_ka": "წვდომამდე მომხმარებლის ავტორიზაცია შეამოწმე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "token",
+    "georgian": "ტოკენი",
+    "pronunciation": "/ˈtoʊkən/",
+    "example_en": "Generate a JWT token for the user.",
+    "example_ka": "მომხმარებლისთვის JWT ტოკენი გენერირება გააკეთე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "encryption",
+    "georgian": "დაშიფვრა",
+    "pronunciation": "/ɪnˈkrɪpʃən/",
+    "example_en": "Use encryption to protect sensitive data.",
+    "example_ka": "მგრძნობიარე მონაცემების დასაცავად დაშიფვრა გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "hash",
+    "georgian": "ჰეში",
+    "pronunciation": "/hæʃ/",
+    "example_en": "Hash the password before storing.",
+    "example_ka": "პაროლი შენახვამდე დააჰეშირე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "JSON",
+    "georgian": "ჯეიესონი",
+    "pronunciation": "/ˈdʒeɪsən/",
+    "example_en": "The API returns JSON data.",
+    "example_ka": "API JSON მონაცემებს აბრუნებს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "XML",
+    "georgian": "იქსემელი",
+    "pronunciation": "/ˌeksemˈel/",
+    "example_en": "Parse the XML document.",
+    "example_ka": "XML დოკუმენტი განაანალიზე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "HTML",
+    "georgian": "ჰტმლ",
+    "pronunciation": "/ˌeɪtʃtiːemˈel/",
+    "example_en": "Write semantic HTML.",
+    "example_ka": "სემანტიკური HTML დაწერე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "CSS",
+    "georgian": "ცსს",
+    "pronunciation": "/ˌsiːesˈes/",
+    "example_en": "Style the page with CSS.",
+    "example_ka": "გვერდი CSS-ით დააყოფე სტილის მიხედვით.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "JavaScript",
+    "georgian": "ჯავასკრიპტი",
+    "pronunciation": "/ˈdʒɑːvəˌskrɪpt/",
+    "example_en": "JavaScript makes websites interactive.",
+    "example_ka": "ჯავასკრიპტი ვებსაიტებს ინტერაქტიულს ხდის.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "Python",
+    "georgian": "პითონი",
+    "pronunciation": "/ˈpaɪθən/",
+    "example_en": "Python is great for beginners.",
+    "example_ka": "პითონი დამწყებთათვის შესანიშნავია.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "Java",
+    "georgian": "ჯავა",
+    "pronunciation": "/ˈdʒɑːvə/",
+    "example_en": "Java is used for enterprise applications.",
+    "example_ka": "ჯავა კორპორატიული აპლიკაციებისთვის გამოიყენება.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "React",
+    "georgian": "რეაქტი",
+    "pronunciation": "/riˈækt/",
+    "example_en": "Build the UI with React.",
+    "example_ka": "მომხმარებლის ინტერფეისი React-ით ააშენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "component",
+    "georgian": "კომპონენტი",
+    "pronunciation": "/kəmˈpoʊnənt/",
+    "example_en": "Create a reusable component.",
+    "example_ka": "მრავალჯერ გამოყენებადი კომპონენტი შექმენი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "props",
+    "georgian": "პროფსები",
+    "pronunciation": "/prɒps/",
+    "example_en": "Pass data through props.",
+    "example_ka": "მონაცემები პროფსების მეშვეობით გადაეცი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "state",
+    "georgian": "მდგომარეობა",
+    "pronunciation": "/steɪt/",
+    "example_en": "Manage component state.",
+    "example_ka": "კომპონენტის მდგომარეობა მართე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "hook",
+    "georgian": "ჰუკი",
+    "pronunciation": "/hʊk/",
+    "example_en": "Use React hooks for state management.",
+    "example_ka": "მდგომარეობის მართვისთვის React ჰუკები გამოიყენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "router",
+    "georgian": "როუტერი",
+    "pronunciation": "/ˈruːtər/",
+    "example_en": "Set up client-side routing.",
+    "example_ka": "კლიენტის მხრიდან როუტინგი დააყენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "endpoint",
+    "georgian": "ენდფოინტი",
+    "pronunciation": "/ˈendpɔɪnt/",
+    "example_en": "Test the API endpoint.",
+    "example_ka": "API ენდფოინტი გატესტე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "request",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/rɪˈkwest/",
+    "example_en": "Send a GET request to the server.",
+    "example_ka": "სერვერზე GET მოთხოვნა გაგზავნე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "response",
+    "georgian": "პასუხი",
+    "pronunciation": "/rɪˈspɒns/",
+    "example_en": "Handle the server response.",
+    "example_ka": "სერვერის პასუხი მუშავდეს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "status",
+    "georgian": "სტატუსი",
+    "pronunciation": "/ˈsteɪtəs/",
+    "example_en": "Check the HTTP status code.",
+    "example_ka": "HTTP სტატუს კოდი შეამოწმე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "header",
+    "georgian": "ჰედერი",
+    "pronunciation": "/ˈhedər/",
+    "example_en": "Set the authorization header.",
+    "example_ka": "ავტორიზაციის ჰედერი დააყენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "body",
+    "georgian": "ბოდი",
+    "pronunciation": "/ˈbɒdi/",
+    "example_en": "Include data in the request body.",
+    "example_ka": "მოთხოვნის ბოდიში მონაცემები ჩართე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "query",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/ˈkwɪri/",
+    "example_en": "Execute a database query.",
+    "example_ka": "ბაზის მოთხოვნა შეასრულე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "table",
+    "georgian": "ცხრილი",
+    "pronunciation": "/ˈteɪbəl/",
+    "example_en": "Create a users table.",
+    "example_ka": "მომხმარებლების ცხრილი შექმენი.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "schema",
+    "georgian": "სქემა",
+    "pronunciation": "/ˈskiːmə/",
+    "example_en": "Define the database schema.",
+    "example_ka": "მონაცემთა ბაზის სქემა განსაზღვრე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "migration",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/maɪˈɡreɪʃən/",
+    "example_en": "Run the database migration.",
+    "example_ka": "მონაცემთა ბაზის მიგრაცია გაუშვი.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "seed",
+    "georgian": "თესვა",
+    "pronunciation": "/siːd/",
+    "example_en": "Seed the database with test data.",
+    "example_ka": "ბაზა ტესტის მონაცემებით დათესე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "index",
+    "georgian": "ინდექსი",
+    "pronunciation": "/ˈɪndeks/",
+    "example_en": "Add an index to improve performance.",
+    "example_ka": "მუშაობის გასაუმჯობესებლად ინდექსი დაამატე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "join",
+    "georgian": "შეერთება",
+    "pronunciation": "/dʒɔɪn/",
+    "example_en": "Join two tables in the query.",
+    "example_ka": "მოთხოვნაში ორი ცხრილი შეაერთე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "relationship",
+    "georgian": "ურთიერთობა",
+    "pronunciation": "/rɪˈleɪʃənʃɪp/",
+    "example_en": "Define the table relationships.",
+    "example_ka": "ცხრილების ურთიერთობები განსაზღვრე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "primary",
+    "georgian": "მთავარი",
+    "pronunciation": "/ˈpraɪməri/",
+    "example_en": "Set the primary key.",
+    "example_ka": "მთავარი გასაღები დააყენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "foreign",
+    "georgian": "უცხო",
+    "pronunciation": "/ˈfɔːrən/",
+    "example_en": "Add a foreign key constraint.",
+    "example_ka": "უცხო გასაღების შეზღუდვა დაამატე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "key",
+    "georgian": "გასაღები",
+    "pronunciation": "/kiː/",
+    "example_en": "Every table needs a primary key.",
+    "example_ka": "ყველა ცხრილს მთავარი გასაღები უნდა ჰქონდეს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "field",
+    "georgian": "ველი",
+    "pronunciation": "/fiːld/",
+    "example_en": "Add a new field to the form.",
+    "example_ka": "ფორმაში ახალი ველი დაამატე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "record",
+    "georgian": "ჩანაწერი",
+    "pronunciation": "/ˈrekərd/",
+    "example_en": "Insert a new record.",
+    "example_ka": "ახალი ჩანაწერი ჩაამატე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "row",
+    "georgian": "რიგი",
+    "pronunciation": "/roʊ/",
+    "example_en": "Each row represents a user.",
+    "example_ka": "ყოველი რიგი მომხმარებელს წარმოადგენს.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "column",
+    "georgian": "სვეტი",
+    "pronunciation": "/ˈkɒləm/",
+    "example_en": "Add a new column to the table.",
+    "example_ka": "ცხრილში ახალი სვეტი დაამატე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "insert",
+    "georgian": "ჩამატება",
+    "pronunciation": "/ɪnˈsɜːrt/",
+    "example_en": "Insert data into the database.",
+    "example_ka": "მონაცემები ბაზაში ჩაამატე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "select",
+    "georgian": "არჩევა",
+    "pronunciation": "/sɪˈlekt/",
+    "example_en": "Select all users from the table.",
+    "example_ka": "ცხრილიდან ყველა მომხმარებელი აირჩიე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "Update the user's information.",
+    "example_ka": "მომხმარებლის ინფორმაცია განაახლე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "delete",
+    "georgian": "წაშლა",
+    "pronunciation": "/dɪˈliːt/",
+    "example_en": "Delete the old records.",
+    "example_ka": "ძველი ჩანაწერები წაშალე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "where",
+    "georgian": "სადაც",
+    "pronunciation": "/wer/",
+    "example_en": "Add a WHERE clause to filter results.",
+    "example_ka": "შედეგების გასაფილტრად WHERE კლაუზული დაამატე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "order",
+    "georgian": "რიგი",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "Order the results by date.",
+    "example_ka": "შედეგები თარიღის მიხედვით დალაგე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "limit",
+    "georgian": "ლიმიტი",
+    "pronunciation": "/ˈlɪmɪt/",
+    "example_en": "Limit the results to 10 items.",
+    "example_ka": "შედეგები 10 ელემენტით შეზღუდე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "group",
+    "georgian": "ჯგუფი",
+    "pronunciation": "/ɡruːp/",
+    "example_en": "Group the results by category.",
+    "example_ka": "შედეგები კატეგორიის მიხედვით დაჯგუფე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "having",
+    "georgian": "ქონა",
+    "pronunciation": "/ˈhævɪŋ/",
+    "example_en": "Use HAVING to filter grouped results.",
+    "example_ka": "დაჯგუფებული შედეგების გასაფილტრად HAVING გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "count",
+    "georgian": "დათვლა",
+    "pronunciation": "/kaʊnt/",
+    "example_en": "Count the number of users.",
+    "example_ka": "მომხმარებლების რაოდენობა დაითვალე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "sum",
+    "georgian": "ჯამი",
+    "pronunciation": "/sʌm/",
+    "example_en": "Calculate the sum of prices.",
+    "example_ka": "ფასების ჯამი გამოითვალე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "average",
+    "georgian": "საშუალო",
+    "pronunciation": "/ˈævərɪdʒ/",
+    "example_en": "Find the average score.",
+    "example_ka": "საშუალო ქულა იპოვე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "maximum",
+    "georgian": "მაქსიმუმი",
+    "pronunciation": "/ˈmæksɪməm/",
+    "example_en": "Get the maximum value.",
+    "example_ka": "მაქსიმალური მნიშვნელობა მიიღე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "minimum",
+    "georgian": "მინიმუმი",
+    "pronunciation": "/ˈmɪnɪməm/",
+    "example_en": "Find the minimum price.",
+    "example_ka": "მინიმალური ფასი იპოვე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "distinct",
+    "georgian": "უნიკალური",
+    "pronunciation": "/dɪˈstɪŋkt/",
+    "example_en": "Select distinct values only.",
+    "example_ka": "მხოლოდ უნიკალური მნიშვნელობები აირჩიე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "union",
+    "georgian": "გაერთიანება",
+    "pronunciation": "/ˈjuːnjən/",
+    "example_en": "Use UNION to combine results.",
+    "example_ka": "შედეგების გასაერთიანებლად UNION გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "subquery",
+    "georgian": "ქვემოთხოვნა",
+    "pronunciation": "/ˈsʌbkwɪri/",
+    "example_en": "Write a subquery for complex filtering.",
+    "example_ka": "რთული ფილტრაციისთვის ქვემოთხოვნა დაწერე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "trigger",
+    "georgian": "ტრიგერი",
+    "pronunciation": "/ˈtrɪɡər/",
+    "example_en": "Create a trigger to log changes.",
+    "example_ka": "ცვლილებების ლოგირებისთვის ტრიგერი შექმენი.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "procedure",
+    "georgian": "პროცედურა",
+    "pronunciation": "/prəˈsiːdʒər/",
+    "example_en": "Execute the stored procedure.",
+    "example_ka": "შენახული პროცედურა შეასრულე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "transaction",
+    "georgian": "ტრანზაქცია",
+    "pronunciation": "/trænˈzækʃən/",
+    "example_en": "Wrap the operations in a transaction.",
+    "example_ka": "ოპერაციები ტრანზაქციაში გახვიე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "commit",
+    "georgian": "დაფიქსირება",
+    "pronunciation": "/kəˈmɪt/",
+    "example_en": "Commit the transaction.",
+    "example_ka": "ტრანზაქცია დააფიქსირე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "rollback",
+    "georgian": "უკან დაბრუნება",
+    "pronunciation": "/ˈroʊlbæk/",
+    "example_en": "Rollback if there's an error.",
+    "example_ka": "შეცდომის შემთხვევაში უკან დააბრუნე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "backup",
+    "georgian": "სარეზერვო ასლი",
+    "pronunciation": "/ˈbækʌp/",
+    "example_en": "Create a backup of the database.",
+    "example_ka": "ბაზის სარეზერვო ასლი გააკეთე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "restore",
+    "georgian": "აღდგენა",
+    "pronunciation": "/rɪˈstɔːr/",
+    "example_en": "Restore from the backup.",
+    "example_ka": "სარეზერვო ასლიდან აღადგინე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "optimize",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˈɒptɪmaɪz/",
+    "example_en": "Optimize the query performance.",
+    "example_ka": "მოთხოვნის მუშაობა ოპტიმიზაცია გააკეთე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "performance",
+    "georgian": "მუშაობა",
+    "pronunciation": "/pərˈfɔːrməns/",
+    "example_en": "Monitor application performance.",
+    "example_ka": "აპლიკაციის მუშაობას დააკვირდი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "benchmark",
+    "georgian": "ბენჩმარკი",
+    "pronunciation": "/ˈbentʃmɑːrk/",
+    "example_en": "Run benchmarks to compare performance.",
+    "example_ka": "მუშაობის შესადარებლად ბენჩმარკები გაუშვი.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "profiling",
+    "georgian": "პროფაილირება",
+    "pronunciation": "/ˈproʊfaɪlɪŋ/",
+    "example_en": "Use profiling to find bottlenecks.",
+    "example_ka": "ბოტლნეკების მოსაძებნად პროფაილირება გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "refactor",
+    "georgian": "რეფაქტორინგი",
+    "pronunciation": "/riːˈfæktər/",
+    "example_en": "Refactor the code to improve readability.",
+    "example_ka": "კოდის წაკითხვადობის გასაუმჯობესებლად რეფაქტორინგი გააკეთე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "clean",
+    "georgian": "სუფთა",
+    "pronunciation": "/kliːn/",
+    "example_en": "Write clean, maintainable code.",
+    "example_ka": "სუფთა, მოსაშენებელი კოდი დაწერე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "legacy",
+    "georgian": "მოძველებული",
+    "pronunciation": "/ˈleɡəsi/",
+    "example_en": "We need to update this legacy system.",
+    "example_ka": "ეს მოძველებული სისტემა უნდა განვაახლოთ.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "scalability",
+    "georgian": "მასშტაბირება",
+    "pronunciation": "/ˌskeɪləˈbɪləti/",
+    "example_en": "Design for scalability from the start.",
+    "example_ka": "თავიდანვე მასშტაბირებისთვის დააპროექტე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "architecture",
+    "georgian": "არქიტექტურა",
+    "pronunciation": "/ˈɑːrkɪtektʃər/",
+    "example_en": "Plan the system architecture carefully.",
+    "example_ka": "სისტემის არქიტექტურა ყურადღებით დაგეგმე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "microservice",
+    "georgian": "მიკროსერვისი",
+    "pronunciation": "/ˈmaɪkroʊsɜːrvɪs/",
+    "example_en": "Break the app into microservices.",
+    "example_ka": "აპლიკაცია მიკროსერვისებად დანაწილე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "container",
+    "georgian": "კონტეინერი",
+    "pronunciation": "/kənˈteɪnər/",
+    "example_en": "Deploy the app in a Docker container.",
+    "example_ka": "აპლიკაცია Docker კონტეინერში განათავსე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "docker",
+    "georgian": "დოკერი",
+    "pronunciation": "/ˈdɒkər/",
+    "example_en": "Use Docker for containerization.",
+    "example_ka": "კონტეინერიზაციისთვის Docker გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "kubernetes",
+    "georgian": "კუბერნეტესი",
+    "pronunciation": "/ˌkuːbərˈnetɪs/",
+    "example_en": "Orchestrate containers with Kubernetes.",
+    "example_ka": "კონტეინერების ორკესტრაციისთვის Kubernetes გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "devops",
+    "georgian": "დევოფსი",
+    "pronunciation": "/ˈdevɒps/",
+    "example_en": "DevOps improves deployment processes.",
+    "example_ka": "DevOps განთავსების პროცესებს აუმჯობესებს.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "pipeline",
+    "georgian": "კონვეიერი",
+    "pronunciation": "/ˈpaɪplaɪn/",
+    "example_en": "Set up a CI/CD pipeline.",
+    "example_ka": "CI/CD კონვეიერი მოაწყვე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "integration",
+    "georgian": "ინტეგრაცია",
+    "pronunciation": "/ˌɪntɪˈɡreɪʃən/",
+    "example_en": "Test the API integration.",
+    "example_ka": "API ინტეგრაცია გატესტე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "testing",
+    "georgian": "ტესტირება",
+    "pronunciation": "/ˈtestɪŋ/",
+    "example_en": "Write unit tests for your functions.",
+    "example_ka": "ფუნქციებისთვის ერთეულის ტესტები დაწერე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "unit",
+    "georgian": "ერთეული",
+    "pronunciation": "/ˈjuːnɪt/",
+    "example_en": "Each unit test should test one thing.",
+    "example_ka": "ყოველი ერთეულის ტესტი ერთ რამეს უნდა ამოწმებდეს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "mock",
+    "georgian": "იმიტაცია",
+    "pronunciation": "/mɒk/",
+    "example_en": "Mock the API calls in tests.",
+    "example_ka": "ტესტებში API გამოძახებების იმიტაცია გააკეთე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "stub",
+    "georgian": "შტუბი",
+    "pronunciation": "/stʌb/",
+    "example_en": "Create a stub for the external service.",
+    "example_ka": "გარე სერვისისთვის შტუბი შექმენი.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "spy",
+    "georgian": "შპიონი",
+    "pronunciation": "/spaɪ/",
+    "example_en": "Use a spy to monitor function calls.",
+    "example_ka": "ფუნქციის გამოძახებების მონიტორინგისთვის შპიონი გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "assertion",
+    "georgian": "ამტკიცება",
+    "pronunciation": "/əˈsɜːrʃən/",
+    "example_en": "Add assertions to verify the result.",
+    "example_ka": "შედეგის გადასამოწმებლად ამტკიცებები დაამატე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "coverage",
+    "georgian": "გაფარვა",
+    "pronunciation": "/ˈkʌvərɪdʒ/",
+    "example_en": "Aim for high test coverage.",
+    "example_ka": "მაღალი ტესტ გაფარვისთვის ისწრაფე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "regression",
+    "georgian": "რეგრესია",
+    "pronunciation": "/rɪˈɡreʃən/",
+    "example_en": "Run regression tests before release.",
+    "example_ka": "გამოშვებამდე რეგრესიული ტესტები გაუშვი.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "fixture",
+    "georgian": "მოწყობილობა",
+    "pronunciation": "/ˈfɪkstʃər/",
+    "example_en": "Set up test fixtures for consistent data.",
+    "example_ka": "თანმიმდევრული მონაცემებისთვის ტესტ მოწყობილობები მოაწყვე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "scenario",
+    "georgian": "სცენარი",
+    "pronunciation": "/səˈnærioʊ/",
+    "example_en": "Test different user scenarios.",
+    "example_ka": "მომხმარებლის სხვადასხვა სცენარი გატესტე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "edge",
+    "georgian": "კიდე",
+    "pronunciation": "/edʒ/",
+    "example_en": "Don't forget to test edge cases.",
+    "example_ka": "კიდის შემთხვევების ტესტირება არ დაგავიწყდეს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "boundary",
+    "georgian": "საზღვარი",
+    "pronunciation": "/ˈbaʊndəri/",
+    "example_en": "Test boundary conditions thoroughly.",
+    "example_ka": "საზღვარი პირობები საფუძვლიანად გატესტე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "load",
+    "georgian": "ტვირთი",
+    "pronunciation": "/loʊd/",
+    "example_en": "Perform load testing on the server.",
+    "example_ka": "სერვერზე ტვირთის ტესტირება ჩაატარე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "stress",
+    "georgian": "სტრესი",
+    "pronunciation": "/stres/",
+    "example_en": "Stress test the application.",
+    "example_ka": "აპლიკაციის სტრეს ტესტირება ჩაატარე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "automation",
+    "georgian": "ავტომატიზაცია",
+    "pronunciation": "/ˌɔːtəməˈteɪʃən/",
+    "example_en": "Automation reduces manual work.",
+    "example_ka": "ავტომატიზაცია ხელით მუშაობას ამცირებს.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "script",
+    "georgian": "სკრიპტი",
+    "pronunciation": "/skrɪpt/",
+    "example_en": "Write a script to automate the task.",
+    "example_ka": "დავალების ავტომატიზაციისთვის სკრიპტი დაწერე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "batch",
+    "georgian": "პაკეტი",
+    "pronunciation": "/bætʃ/",
+    "example_en": "Process the files in batch mode.",
+    "example_ka": "ფაილების დამუშავება პაკეტურ რეჟიმში.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "cron",
+    "georgian": "კრონი",
+    "pronunciation": "/krɒn/",
+    "example_en": "Set up a cron job for regular tasks.",
+    "example_ka": "რეგულარული დავალებებისთვის კრონ სამუშაო დააყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "scheduled",
+    "georgian": "დაგეგმილი",
+    "pronunciation": "/ˈskedʒuːld/",
+    "example_en": "The backup runs on a scheduled basis.",
+    "example_ka": "სარეზერვო ასლი დაგეგმილად მუშაობს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "daemon",
+    "georgian": "დემონი",
+    "pronunciation": "/ˈdiːmən/",
+    "example_en": "The daemon runs in the background.",
+    "example_ka": "დემონი ფონურ რეჟიმში მუშაობს.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "service",
+    "georgian": "სერვისი",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "Start the database service.",
+    "example_ka": "მონაცემთა ბაზის სერვისი გაუშვი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "port",
+    "georgian": "პორტი",
+    "pronunciation": "/pɔːrt/",
+    "example_en": "The server runs on port 3000.",
+    "example_ka": "სერვერი 3000 პორტზე მუშაობს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "host",
+    "georgian": "ჰოსტი",
+    "pronunciation": "/hoʊst/",
+    "example_en": "Connect to the database host.",
+    "example_ka": "მონაცემთა ბაზის ჰოსტთან დაუკავშირდი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "localhost",
+    "georgian": "ლოკალჰოსტი",
+    "pronunciation": "/ˈloʊkəlhoʊst/",
+    "example_en": "Test the app on localhost first.",
+    "example_ka": "ჯერ აპლიკაცია ლოკალჰოსტზე გატესტე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "domain",
+    "georgian": "დომენი",
+    "pronunciation": "/doʊˈmeɪn/",
+    "example_en": "Purchase a domain for your website.",
+    "example_ka": "ვებსაიტისთვის დომენი იყიდე.",
+    "category": "programming-coding",
+    "level": "beginner"
+  },
+  {
+    "english": "subdomain",
+    "georgian": "ქვედომენი",
+    "pronunciation": "/ˈsʌbdoʊmeɪn/",
+    "example_en": "Create a subdomain for the API.",
+    "example_ka": "API-სთვის ქვედომენი შექმენი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "SSL",
+    "georgian": "SSL",
+    "pronunciation": "/ˌes es ˈel/",
+    "example_en": "Enable SSL for secure connections.",
+    "example_ka": "უსაფრთხო კავშირისთვის SSL ჩართე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "certificate",
+    "georgian": "სერტიფიკატი",
+    "pronunciation": "/sərˈtɪfɪkət/",
+    "example_en": "Install the SSL certificate.",
+    "example_ka": "SSL სერტიფიკატი დააინსტალირე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "protocol",
+    "georgian": "პროტოკოლი",
+    "pronunciation": "/ˈproʊtəkɔːl/",
+    "example_en": "HTTP is a common web protocol.",
+    "example_ka": "HTTP ჩვეულებრივი ვებ პროტოკოლია.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "firewall",
+    "georgian": "ფაირვოლი",
+    "pronunciation": "/ˈfaɪərwɔːl/",
+    "example_en": "Configure the firewall rules.",
+    "example_ka": "ფაირვოლის წესები მოაწყვე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "proxy",
+    "georgian": "პროქსი",
+    "pronunciation": "/ˈprɒksi/",
+    "example_en": "Set up a reverse proxy.",
+    "example_ka": "საკუთარი პროქსი მოაწყვე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "load-balancer",
+    "georgian": "ტვირთის გადანაწილებელი",
+    "pronunciation": "/loʊd ˈbælənsər/",
+    "example_en": "Use a load balancer to distribute traffic.",
+    "example_ka": "ტრაფიკის გადასანაწილებლად ტვირთის გადანაწილებელი გამოიყენე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "cluster",
+    "georgian": "კლასტერი",
+    "pronunciation": "/ˈklʌstər/",
+    "example_en": "Deploy the app to a server cluster.",
+    "example_ka": "აპლიკაცია სერვერების კლასტერში განათავსე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "monitoring",
+    "georgian": "მონიტორინგი",
+    "pronunciation": "/ˈmɒnɪtərɪŋ/",
+    "example_en": "Set up monitoring for the servers.",
+    "example_ka": "სერვერებისთვის მონიტორინგი მოაწყვე.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "logging",
+    "georgian": "ლოგირება",
+    "pronunciation": "/ˈlɒɡɪŋ/",
+    "example_en": "Add proper logging to your application.",
+    "example_ka": "აპლიკაციაში ხდა ლოგირება დაამატე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "analytics",
+    "georgian": "ანალიტიკა",
+    "pronunciation": "/ˌænəˈlɪtɪks/",
+    "example_en": "Use analytics to track user behavior.",
+    "example_ka": "მომხმარებლის ქცევის თვალყურისდევნებისთვის ანალიტიკა გამოიყენე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "metrics",
+    "georgian": "მეტრიკები",
+    "pronunciation": "/ˈmetrɪks/",
+    "example_en": "Monitor key performance metrics.",
+    "example_ka": "ძირითადი მუშაობის მეტრიკებს დააკვირდი.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "dashboard",
+    "georgian": "დაშბორდი",
+    "pronunciation": "/ˈdæʃbɔːrd/",
+    "example_en": "Create a dashboard to visualize data.",
+    "example_ka": "მონაცემების ვიზუალიზაციისთვის დაშბორდი შექმენი.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "framework",
+    "georgian": "ჩარჩო",
+    "pronunciation": "/ˈfreɪmwɜːrk/",
+    "example_en": "Choose the right framework for your project.",
+    "example_ka": "პროექტისთვის სწორი ჩარჩო აირჩიე.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "webpack",
+    "georgian": "ვებპაკი",
+    "pronunciation": "/ˈwebpæk/",
+    "example_en": "Webpack bundles your JavaScript files.",
+    "example_ka": "ვებპაკი JavaScript ფაილებს აერთიანებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "babel",
+    "georgian": "ბაბელი",
+    "pronunciation": "/ˈbeɪbəl/",
+    "example_en": "Babel transpiles modern JavaScript.",
+    "example_ka": "ბაბელი თანამედროვე JavaScript-ს გადაკეთებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "typescript",
+    "georgian": "ტაიპსკრიპტი",
+    "pronunciation": "/ˈtaɪpˌskrɪpt/",
+    "example_en": "TypeScript adds types to JavaScript.",
+    "example_ka": "ტაიპსკრიპტი JavaScript-ს ტიპებს ამატებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "nodejs",
+    "georgian": "ნოუდჯეიესი",
+    "pronunciation": "/noʊd ˈdʒeɪ es/",
+    "example_en": "Node.js runs JavaScript on the server.",
+    "example_ka": "Node.js სერვერზე JavaScript-ს უშვებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "express",
+    "georgian": "ექსპრესი",
+    "pronunciation": "/ɪkˈspres/",
+    "example_en": "Express is a Node.js web framework.",
+    "example_ka": "Express Node.js-ის ვებ ჩარჩოა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "mongodb",
+    "georgian": "მონგოდბ",
+    "pronunciation": "/ˈmɒŋɡoʊ di bi/",
+    "example_en": "MongoDB is a NoSQL database.",
+    "example_ka": "MongoDB NoSQL მონაცემთა ბაზაა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "redis",
+    "georgian": "რედისი",
+    "pronunciation": "/ˈredɪs/",
+    "example_en": "Redis is great for caching data.",
+    "example_ka": "რედისი მონაცემების კეშირებისთვის შესანიშნავია.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "nginx",
+    "georgian": "ენჯინექსი",
+    "pronunciation": "/ˈendʒɪneks/",
+    "example_en": "Nginx serves as a web server.",
+    "example_ka": "ენჯინექსი ვებ სერვერის როლს ასრულებს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "apache",
+    "georgian": "აპაჩი",
+    "pronunciation": "/əˈpætʃi/",
+    "example_en": "Apache is a popular web server.",
+    "example_ka": "აპაჩი პოპულარული ვებ სერვერია.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "django",
+    "georgian": "ჯანგო",
+    "pronunciation": "/ˈdʒæŋɡoʊ/",
+    "example_en": "Django is a Python web framework.",
+    "example_ka": "ჯანგო Python-ის ვებ ჩარჩოა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "flask",
+    "georgian": "ფლასკი",
+    "pronunciation": "/flæsk/",
+    "example_en": "Flask is a lightweight Python framework.",
+    "example_ka": "ფლასკი მსუბუქი Python ჩარჩოა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "laravel",
+    "georgian": "ლარაველი",
+    "pronunciation": "/ˈlærəvəl/",
+    "example_en": "Laravel is a PHP web framework.",
+    "example_ka": "ლარაველი PHP-ს ვებ ჩარჩოა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "symfony",
+    "georgian": "სიმფონი",
+    "pronunciation": "/ˈsɪmfəni/",
+    "example_en": "Symfony provides reusable PHP components.",
+    "example_ka": "სიმფონი ხელახლა გამოყენებადი PHP კომპონენტებს აწვდის.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "spring",
+    "georgian": "სპრინგი",
+    "pronunciation": "/sprɪŋ/",
+    "example_en": "Spring is a Java application framework.",
+    "example_ka": "სპრინგი Java აპლიკაციების ჩარჩოა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "angular",
+    "georgian": "ანგულარი",
+    "pronunciation": "/ˈæŋɡjələr/",
+    "example_en": "Angular is a TypeScript frontend framework.",
+    "example_ka": "ანგულარი TypeScript-ის ფრონტენდ ჩარჩოა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "vue",
+    "georgian": "ვიუ",
+    "pronunciation": "/vjuː/",
+    "example_en": "Vue.js is a progressive JavaScript framework.",
+    "example_ka": "Vue.js პროგრესული JavaScript ჩარჩოა.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "svelte",
+    "georgian": "სველტი",
+    "pronunciation": "/svelt/",
+    "example_en": "Svelte compiles components at build time.",
+    "example_ka": "სველტი კომპონენტებს ბილდის დროს აწყობს.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "nextjs",
+    "georgian": "ნექსტჯეიესი",
+    "pronunciation": "/nekst ˈdʒeɪ es/",
+    "example_en": "Next.js provides server-side rendering for React.",
+    "example_ka": "Next.js React-ისთვის სერვერის მხრიდან რენდერინგს აწვდის.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "nuxtjs",
+    "georgian": "ნაქსტჯეიესი",
+    "pronunciation": "/nʌkst ˈdʒeɪ es/",
+    "example_en": "Nuxt.js is the Vue.js equivalent of Next.js.",
+    "example_ka": "Nuxt.js Vue.js-ისთვის Next.js-ის ეკვივალენტია.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  },
+  {
+    "english": "graphql",
+    "georgian": "გრაფქეელი",
+    "pronunciation": "/ɡræf kjuː el/",
+    "example_en": "GraphQL provides a flexible API query language.",
+    "example_ka": "GraphQL API-ს მოქნილ მოთხოვნის ენას აწვდის.",
+    "category": "programming-coding",
+    "level": "advanced"
+  },
+  {
+    "english": "websocket",
+    "georgian": "ვებსოკეტი",
+    "pronunciation": "/ˈwebsɒkɪt/",
+    "example_en": "WebSockets enable real-time communication.",
+    "example_ka": "ვებსოკეტები რეალურ დროში კომუნიკაციას შესაძლებელს ხდის.",
+    "category": "programming-coding",
+    "level": "intermediate"
+  }
 ]

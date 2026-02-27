@@ -1,52 +1,1602 @@
 [
-  {"english": "Big", "georgian": "დიდი", "pronunciation": "/bɪɡ/", "example_en": "This is a big house.", "example_ka": "ეს დიდი სახლია.", "category": "adjectives", "level": "A1"},
-  {"english": "Small", "georgian": "პატარა", "pronunciation": "/smɔːl/", "example_en": "I have a small dog.", "example_ka": "პატარა ძაღლი მყავს.", "category": "adjectives", "level": "A1"},
-  {"english": "Good", "georgian": "კარგი", "pronunciation": "/ɡʊd/", "example_en": "This is a good idea.", "example_ka": "ეს კარგი იდეაა.", "category": "adjectives", "level": "A1"},
-  {"english": "Bad", "georgian": "ცუდი", "pronunciation": "/bæd/", "example_en": "The weather is bad today.", "example_ka": "დღეს ამინდი ცუდია.", "category": "adjectives", "level": "A1"},
-  {"english": "New", "georgian": "ახალი", "pronunciation": "/njuː/", "example_en": "I bought a new phone.", "example_ka": "ახალი ტელეფონი ვიყიდე.", "category": "adjectives", "level": "A1"},
-  {"english": "Old", "georgian": "ძველი", "pronunciation": "/oʊld/", "example_en": "This building is very old.", "example_ka": "ეს შენობა ძალიან ძველია.", "category": "adjectives", "level": "A1"},
-  {"english": "Fast", "georgian": "სწრაფი", "pronunciation": "/fæst/", "example_en": "This car is very fast.", "example_ka": "ეს მანქანა ძალიან სწრაფია.", "category": "adjectives", "level": "A1"},
-  {"english": "Slow", "georgian": "ნელი", "pronunciation": "/sloʊ/", "example_en": "The bus is slow today.", "example_ka": "ავტობუსი დღეს ნელია.", "category": "adjectives", "level": "A1"},
-  {"english": "Hot", "georgian": "ცხელი", "pronunciation": "/hɒt/", "example_en": "The coffee is too hot.", "example_ka": "ყავა ძალიან ცხელია.", "category": "adjectives", "level": "A1"},
-  {"english": "Cold", "georgian": "ცივი", "pronunciation": "/koʊld/", "example_en": "It's cold outside.", "example_ka": "გარეთ ცივა.", "category": "adjectives", "level": "A1"},
-  {"english": "Happy", "georgian": "ბედნიერი", "pronunciation": "/ˈhæpi/", "example_en": "I am very happy today.", "example_ka": "დღეს ძალიან ბედნიერი ვარ.", "category": "adjectives", "level": "A1"},
-  {"english": "Sad", "georgian": "სევდიანი", "pronunciation": "/sæd/", "example_en": "Why are you sad?", "example_ka": "რატომ ხარ სევდიანი?", "category": "adjectives", "level": "A1"},
-  {"english": "Easy", "georgian": "მარტივი", "pronunciation": "/ˈiːzi/", "example_en": "This test is easy.", "example_ka": "ეს ტესტი მარტივია.", "category": "adjectives", "level": "A1"},
-  {"english": "Hard", "georgian": "რთული / მაგარი", "pronunciation": "/hɑːrd/", "example_en": "This question is hard.", "example_ka": "ეს კითხვა რთულია.", "category": "adjectives", "level": "A1"},
-  {"english": "Cheap", "georgian": "იაფი", "pronunciation": "/tʃiːp/", "example_en": "This shirt is cheap.", "example_ka": "ეს მაისური იაფია.", "category": "adjectives", "level": "A1"},
-  {"english": "Expensive", "georgian": "ძვირი", "pronunciation": "/ɪkˈspɛnsɪv/", "example_en": "The restaurant is expensive.", "example_ka": "რესტორანი ძვირია.", "category": "adjectives", "level": "A1"},
-  {"english": "Beautiful", "georgian": "ლამაზი", "pronunciation": "/ˈbjuːtɪfəl/", "example_en": "Georgia is a beautiful country.", "example_ka": "საქართველო ლამაზი ქვეყანაა.", "category": "adjectives", "level": "A1"},
-  {"english": "Ugly", "georgian": "მახინჯი", "pronunciation": "/ˈʌɡli/", "example_en": "That painting is ugly.", "example_ka": "ეს ნახატი მახინჯია.", "category": "adjectives", "level": "A2"},
-  {"english": "Strong", "georgian": "ძლიერი", "pronunciation": "/strɒŋ/", "example_en": "He is very strong.", "example_ka": "ის ძალიან ძლიერია.", "category": "adjectives", "level": "A1"},
-  {"english": "Weak", "georgian": "სუსტი", "pronunciation": "/wiːk/", "example_en": "I feel weak today.", "example_ka": "დღეს თავს სუსტად ვგრძნობ.", "category": "adjectives", "level": "A2"},
-  {"english": "Tall", "georgian": "მაღალი", "pronunciation": "/tɔːl/", "example_en": "My brother is very tall.", "example_ka": "ჩემი ძმა ძალიან მაღალია.", "category": "adjectives", "level": "A1"},
-  {"english": "Short", "georgian": "დაბალი / მოკლე", "pronunciation": "/ʃɔːrt/", "example_en": "She has short hair.", "example_ka": "მას მოკლე თმა აქვს.", "category": "adjectives", "level": "A1"},
-  {"english": "Heavy", "georgian": "მძიმე", "pronunciation": "/ˈhɛvi/", "example_en": "This bag is heavy.", "example_ka": "ეს ჩანთა მძიმეა.", "category": "adjectives", "level": "A1"},
-  {"english": "Light", "georgian": "მსუბუქი", "pronunciation": "/laɪt/", "example_en": "The box is very light.", "example_ka": "ყუთი ძალიან მსუბუქია.", "category": "adjectives", "level": "A1"},
-  {"english": "Clean", "georgian": "სუფთა", "pronunciation": "/kliːn/", "example_en": "The room is very clean.", "example_ka": "ოთახი ძალიან სუფთაა.", "category": "adjectives", "level": "A1"},
-  {"english": "Dirty", "georgian": "ბინძური", "pronunciation": "/ˈdɜːrti/", "example_en": "Your shoes are dirty.", "example_ka": "შენი ფეხსაცმელი ბინძურია.", "category": "adjectives", "level": "A1"},
-  {"english": "Full", "georgian": "სავსე", "pronunciation": "/fʊl/", "example_en": "The glass is full.", "example_ka": "ჭიქა სავსეა.", "category": "adjectives", "level": "A1"},
-  {"english": "Empty", "georgian": "ცარიელი", "pronunciation": "/ˈɛmpti/", "example_en": "The fridge is empty.", "example_ka": "მაცივარი ცარიელია.", "category": "adjectives", "level": "A1"},
-  {"english": "Hungry", "georgian": "მშიერი", "pronunciation": "/ˈhʌŋɡri/", "example_en": "I am hungry, let's eat.", "example_ka": "მშია, მოდი ვჭამოთ.", "category": "adjectives", "level": "A1"},
-  {"english": "Thirsty", "georgian": "მწყურვალე", "pronunciation": "/ˈθɜːrsti/", "example_en": "I'm thirsty, give me water.", "example_ka": "მწყურია, წყალი მომეცი.", "category": "adjectives", "level": "A1"},
-  {"english": "Tired", "georgian": "დაღლილი", "pronunciation": "/ˈtaɪərd/", "example_en": "I'm tired after work.", "example_ka": "სამსახურის შემდეგ დაღლილი ვარ.", "category": "adjectives", "level": "A1"},
-  {"english": "Busy", "georgian": "დაკავებული", "pronunciation": "/ˈbɪzi/", "example_en": "Sorry, I'm busy right now.", "example_ka": "ბოდიში, ახლა დაკავებული ვარ.", "category": "adjectives", "level": "A1"},
-  {"english": "Free", "georgian": "თავისუფალი / უფასო", "pronunciation": "/friː/", "example_en": "Are you free tomorrow?", "example_ka": "ხვალ თავისუფალი ხარ?", "category": "adjectives", "level": "A1"},
-  {"english": "Dangerous", "georgian": "საშიში", "pronunciation": "/ˈdeɪndʒərəs/", "example_en": "Swimming here is dangerous.", "example_ka": "აქ ცურვა საშიშია.", "category": "adjectives", "level": "A2"},
-  {"english": "Safe", "georgian": "უსაფრთხო", "pronunciation": "/seɪf/", "example_en": "This neighborhood is safe.", "example_ka": "ეს უბანი უსაფრთხოა.", "category": "adjectives", "level": "A2"},
-  {"english": "Important", "georgian": "მნიშვნელოვანი", "pronunciation": "/ɪmˈpɔːrtənt/", "example_en": "This meeting is very important.", "example_ka": "ეს შეხვედრა ძალიან მნიშვნელოვანია.", "category": "adjectives", "level": "A2"},
-  {"english": "Interesting", "georgian": "საინტერესო", "pronunciation": "/ˈɪntrəstɪŋ/", "example_en": "The movie was interesting.", "example_ka": "ფილმი საინტერესო იყო.", "category": "adjectives", "level": "A1"},
-  {"english": "Boring", "georgian": "მოსაწყენი", "pronunciation": "/ˈbɔːrɪŋ/", "example_en": "The lesson was boring.", "example_ka": "გაკვეთილი მოსაწყენი იყო.", "category": "adjectives", "level": "A1"},
-  {"english": "Funny", "georgian": "სასაცილო", "pronunciation": "/ˈfʌni/", "example_en": "That joke was funny!", "example_ka": "ეს ხუმრობა სასაცილო იყო!", "category": "adjectives", "level": "A1"},
-  {"english": "Quiet", "georgian": "წყნარი", "pronunciation": "/ˈkwaɪət/", "example_en": "Please be quiet.", "example_ka": "გთხოვთ, წყნარად იყავი.", "category": "adjectives", "level": "A1"},
-  {"english": "Loud", "georgian": "ხმამაღალი", "pronunciation": "/laʊd/", "example_en": "The music is too loud.", "example_ka": "მუსიკა ძალიან ხმამაღალია.", "category": "adjectives", "level": "A1"},
-  {"english": "Rich", "georgian": "მდიდარი", "pronunciation": "/rɪtʃ/", "example_en": "He became rich from hard work.", "example_ka": "ის შრომით გამდიდრდა.", "category": "adjectives", "level": "A2"},
-  {"english": "Poor", "georgian": "ღარიბი", "pronunciation": "/pɔːr/", "example_en": "Many people are poor.", "example_ka": "ბევრი ადამიანი ღარიბია.", "category": "adjectives", "level": "A2"},
-  {"english": "Young", "georgian": "ახალგაზრდა", "pronunciation": "/jʌŋ/", "example_en": "She is young and talented.", "example_ka": "ის ახალგაზრდა და ნიჭიერია.", "category": "adjectives", "level": "A1"},
-  {"english": "Brave", "georgian": "მამაცი", "pronunciation": "/breɪv/", "example_en": "The firefighter was very brave.", "example_ka": "მეხანძრე ძალიან მამაცი იყო.", "category": "adjectives", "level": "A2"},
-  {"english": "Lazy", "georgian": "ზარმაცი", "pronunciation": "/ˈleɪzi/", "example_en": "Don't be lazy, get up!", "example_ka": "ნუ ზარმაცობ, ადექი!", "category": "adjectives", "level": "A1"},
-  {"english": "Smart", "georgian": "ჭკვიანი", "pronunciation": "/smɑːrt/", "example_en": "She is a very smart student.", "example_ka": "ის ძალიან ჭკვიანი სტუდენტია.", "category": "adjectives", "level": "A1"},
-  {"english": "Stupid", "georgian": "სულელი", "pronunciation": "/ˈstjuːpɪd/", "example_en": "That was a stupid mistake.", "example_ka": "ეს სულელური შეცდომა იყო.", "category": "adjectives", "level": "A2"},
-  {"english": "Kind", "georgian": "კეთილი", "pronunciation": "/kaɪnd/", "example_en": "She is very kind to everyone.", "example_ka": "ის ყველას მიმართ ძალიან კეთილია.", "category": "adjectives", "level": "A1"},
-  {"english": "Rude", "georgian": "უხეში", "pronunciation": "/ruːd/", "example_en": "Don't be rude to others.", "example_ka": "სხვების მიმართ უხეში ნუ იქნები.", "category": "adjectives", "level": "A2"}
+  {
+    "english": "Big",
+    "georgian": "დიდი",
+    "pronunciation": "/bɪɡ/",
+    "example_en": "This is a big house.",
+    "example_ka": "ეს დიდი სახლია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Small",
+    "georgian": "პატარა",
+    "pronunciation": "/smɔːl/",
+    "example_en": "I have a small dog.",
+    "example_ka": "პატარა ძაღლი მყავს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Tall",
+    "georgian": "მაღალი",
+    "pronunciation": "/tɔːl/",
+    "example_en": "My brother is very tall.",
+    "example_ka": "ჩემი ძმა ძალიან მაღალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Short",
+    "georgian": "მოკლე",
+    "pronunciation": "/ʃɔːrt/",
+    "example_en": "She has short hair.",
+    "example_ka": "მას მოკლე თმა აქვს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Long",
+    "georgian": "გრძელი",
+    "pronunciation": "/lɒŋ/",
+    "example_en": "The road is very long.",
+    "example_ka": "გზა ძალიან გრძელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Wide",
+    "georgian": "ფართო",
+    "pronunciation": "/waɪd/",
+    "example_en": "The river is wide here.",
+    "example_ka": "მდინარე აქ ფართოა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Narrow",
+    "georgian": "ვიწრო",
+    "pronunciation": "/ˈnæroʊ/",
+    "example_en": "The street is too narrow.",
+    "example_ka": "ქუჩა ძალიან ვიწროა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Thick",
+    "georgian": "სქელი",
+    "pronunciation": "/θɪk/",
+    "example_en": "The book is very thick.",
+    "example_ka": "წიგნი ძალიან სქელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Thin",
+    "georgian": "თხელი",
+    "pronunciation": "/θɪn/",
+    "example_en": "The ice is too thin.",
+    "example_ka": "ყინული ძალიან თხელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Heavy",
+    "georgian": "მძიმე",
+    "pronunciation": "/ˈhɛvi/",
+    "example_en": "This bag is heavy.",
+    "example_ka": "ეს ჩანთა მძიმეა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Light",
+    "georgian": "მსუბუქი",
+    "pronunciation": "/laɪt/",
+    "example_en": "The box is very light.",
+    "example_ka": "ყუთი ძალიან მსუბუქია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Fast",
+    "georgian": "სწრაფი",
+    "pronunciation": "/fæst/",
+    "example_en": "This car is very fast.",
+    "example_ka": "ეს მანქანა ძალიან სწრაფია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Slow",
+    "georgian": "ნელი",
+    "pronunciation": "/sloʊ/",
+    "example_en": "The bus is slow today.",
+    "example_ka": "ავტობუსი დღეს ნელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Hot",
+    "georgian": "ცხელი",
+    "pronunciation": "/hɒt/",
+    "example_en": "The coffee is too hot.",
+    "example_ka": "ყავა ძალიან ცხელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Cold",
+    "georgian": "ცივი",
+    "pronunciation": "/koʊld/",
+    "example_en": "It's cold outside.",
+    "example_ka": "გარეთ ცივა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Warm",
+    "georgian": "თბილი",
+    "pronunciation": "/wɔːrm/",
+    "example_en": "The water is warm.",
+    "example_ka": "წყალი თბილია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Cool",
+    "georgian": "გრილი",
+    "pronunciation": "/kuːl/",
+    "example_en": "The evening air is cool.",
+    "example_ka": "საღამოს ჰაერი გრილია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "New",
+    "georgian": "ახალი",
+    "pronunciation": "/njuː/",
+    "example_en": "I bought a new phone.",
+    "example_ka": "ახალი ტელეფონი ვიყიდე.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Old",
+    "georgian": "ძველი",
+    "pronunciation": "/oʊld/",
+    "example_en": "This building is very old.",
+    "example_ka": "ეს შენობა ძალიან ძველია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Young",
+    "georgian": "ახალგაზრდა",
+    "pronunciation": "/jʌŋ/",
+    "example_en": "She is young and talented.",
+    "example_ka": "ის ახალგაზრდა და ნიჭიერია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Good",
+    "georgian": "კარგი",
+    "pronunciation": "/ɡʊd/",
+    "example_en": "This is a good idea.",
+    "example_ka": "ეს კარგი იდეაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Bad",
+    "georgian": "ცუდი",
+    "pronunciation": "/bæd/",
+    "example_en": "The weather is bad today.",
+    "example_ka": "დღეს ამინდი ცუდია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Great",
+    "georgian": "შესანიშნავი",
+    "pronunciation": "/ɡreɪt/",
+    "example_en": "You did a great job!",
+    "example_ka": "შესანიშნავი საქმე გააკეთე!",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Poor",
+    "georgian": "ღარიბი",
+    "pronunciation": "/pɔːr/",
+    "example_en": "Many people are poor.",
+    "example_ka": "ბევრი ადამიანი ღარიბია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Rich",
+    "georgian": "მდიდარი",
+    "pronunciation": "/rɪtʃ/",
+    "example_en": "He became rich from hard work.",
+    "example_ka": "ის შრომით გამდიდრდა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "This shirt is cheap.",
+    "example_ka": "ეს მაისური იაფია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspɛnsɪv/",
+    "example_en": "The restaurant is expensive.",
+    "example_ka": "რესტორანი ძვირია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Free",
+    "georgian": "თავისუფალი",
+    "pronunciation": "/friː/",
+    "example_en": "Are you free tomorrow?",
+    "example_ka": "ხვალ თავისუფალი ხარ?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Busy",
+    "georgian": "დაკავებული",
+    "pronunciation": "/ˈbɪzi/",
+    "example_en": "Sorry, I'm busy right now.",
+    "example_ka": "ბოდიში, ახლა დაკავებული ვარ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Quiet",
+    "georgian": "წყნარი",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "Please be quiet.",
+    "example_ka": "გთხოვთ, წყნარად იყავი.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Loud",
+    "georgian": "ხმამაღალი",
+    "pronunciation": "/laʊd/",
+    "example_en": "The music is too loud.",
+    "example_ka": "მუსიკა ძალიან ხმამაღალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Soft",
+    "georgian": "რბილი",
+    "pronunciation": "/sɒft/",
+    "example_en": "The pillow is very soft.",
+    "example_ka": "ბალიში ძალიან რბილია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Hard",
+    "georgian": "მაგარი",
+    "pronunciation": "/hɑːrd/",
+    "example_en": "This rock is very hard.",
+    "example_ka": "ეს ქვა ძალიან მაგარია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Easy",
+    "georgian": "მარტივი",
+    "pronunciation": "/ˈiːzi/",
+    "example_en": "This test is easy.",
+    "example_ka": "ეს ტესტი მარტივია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Difficult",
+    "georgian": "რთული",
+    "pronunciation": "/ˈdɪfɪkəlt/",
+    "example_en": "The exam was very difficult.",
+    "example_ka": "გამოცდა ძალიან რთული იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Simple",
+    "georgian": "მარტივი",
+    "pronunciation": "/ˈsɪmpəl/",
+    "example_en": "The instructions are simple.",
+    "example_ka": "ინსტრუქციები მარტივია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Complex",
+    "georgian": "რთული",
+    "pronunciation": "/ˈkɒmplɛks/",
+    "example_en": "This is a complex problem.",
+    "example_ka": "ეს რთული პრობლემაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Clean",
+    "georgian": "სუფთა",
+    "pronunciation": "/kliːn/",
+    "example_en": "The room is very clean.",
+    "example_ka": "ოთახი ძალიან სუფთაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Dirty",
+    "georgian": "ბინძური",
+    "pronunciation": "/ˈdɜːrti/",
+    "example_en": "Your shoes are dirty.",
+    "example_ka": "შენი ფეხსაცმელი ბინძურია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Dry",
+    "georgian": "მშრალი",
+    "pronunciation": "/draɪ/",
+    "example_en": "The ground is very dry.",
+    "example_ka": "მიწა ძალიან მშრალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Wet",
+    "georgian": "სველი",
+    "pronunciation": "/wɛt/",
+    "example_en": "The grass is wet after rain.",
+    "example_ka": "ბალახი წვიმის შემდეგ სველია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Full",
+    "georgian": "სავსე",
+    "pronunciation": "/fʊl/",
+    "example_en": "The glass is full.",
+    "example_ka": "ჭიქა სავსეა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Empty",
+    "georgian": "ცარიელი",
+    "pronunciation": "/ˈɛmpti/",
+    "example_en": "The fridge is empty.",
+    "example_ka": "მაცივარი ცარიელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Open",
+    "georgian": "ღია",
+    "pronunciation": "/ˈoʊpən/",
+    "example_en": "The door is open.",
+    "example_ka": "კარი ღიაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Closed",
+    "georgian": "დახურული",
+    "pronunciation": "/kloʊzd/",
+    "example_en": "The shop is closed today.",
+    "example_ka": "მაღაზია დღეს დახურულია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Bright",
+    "georgian": "ნათელი",
+    "pronunciation": "/braɪt/",
+    "example_en": "The sun is very bright.",
+    "example_ka": "მზე ძალიან ნათელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Dark",
+    "georgian": "ბნელი",
+    "pronunciation": "/dɑːrk/",
+    "example_en": "The room is dark.",
+    "example_ka": "ოთახი ბნელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Deep",
+    "georgian": "ღრმა",
+    "pronunciation": "/diːp/",
+    "example_en": "The lake is very deep.",
+    "example_ka": "ტბა ძალიან ღრმაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Shallow",
+    "georgian": "არაღრმა",
+    "pronunciation": "/ˈʃæloʊ/",
+    "example_en": "The pool is shallow.",
+    "example_ka": "აუზი არაღრმაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "High",
+    "georgian": "მაღალი",
+    "pronunciation": "/haɪ/",
+    "example_en": "The mountain is very high.",
+    "example_ka": "მთა ძალიან მაღალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Low",
+    "georgian": "დაბალი",
+    "pronunciation": "/loʊ/",
+    "example_en": "The price is very low.",
+    "example_ka": "ფასი ძალიან დაბალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Flat",
+    "georgian": "ბრტყელი",
+    "pronunciation": "/flæt/",
+    "example_en": "The land is flat here.",
+    "example_ka": "მიწა აქ ბრტყელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Round",
+    "georgian": "მრგვალი",
+    "pronunciation": "/raʊnd/",
+    "example_en": "The Earth is round.",
+    "example_ka": "დედამიწა მრგვალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sharp",
+    "georgian": "ბასრი",
+    "pronunciation": "/ʃɑːrp/",
+    "example_en": "Be careful, the knife is sharp.",
+    "example_ka": "ფრთხილად, დანა ბასრია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Smooth",
+    "georgian": "გლუვი",
+    "pronunciation": "/smuːð/",
+    "example_en": "The surface is smooth.",
+    "example_ka": "ზედაპირი გლუვია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Rough",
+    "georgian": "უხეში",
+    "pronunciation": "/rʌf/",
+    "example_en": "The road is rough.",
+    "example_ka": "გზა უხეშია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sweet",
+    "georgian": "ტკბილი",
+    "pronunciation": "/swiːt/",
+    "example_en": "This cake is very sweet.",
+    "example_ka": "ეს ტორტი ძალიან ტკბილია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sour",
+    "georgian": "მჟავე",
+    "pronunciation": "/ˈsaʊər/",
+    "example_en": "The lemon is sour.",
+    "example_ka": "ლიმონი მჟავეა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Bitter",
+    "georgian": "მწარე",
+    "pronunciation": "/ˈbɪtər/",
+    "example_en": "This medicine is bitter.",
+    "example_ka": "ეს წამალი მწარეა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Salty",
+    "georgian": "მარილიანი",
+    "pronunciation": "/ˈsɔːlti/",
+    "example_en": "The soup is too salty.",
+    "example_ka": "წვნიანი ძალიან მარილიანია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Fresh",
+    "georgian": "ახალი",
+    "pronunciation": "/frɛʃ/",
+    "example_en": "The bread is fresh.",
+    "example_ka": "პური ახალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Strong",
+    "georgian": "ძლიერი",
+    "pronunciation": "/strɒŋ/",
+    "example_en": "He is very strong.",
+    "example_ka": "ის ძალიან ძლიერია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Weak",
+    "georgian": "სუსტი",
+    "pronunciation": "/wiːk/",
+    "example_en": "I feel weak today.",
+    "example_ka": "დღეს თავს სუსტად ვგრძნობ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Brave",
+    "georgian": "მამაცი",
+    "pronunciation": "/breɪv/",
+    "example_en": "The firefighter was very brave.",
+    "example_ka": "მეხანძრე ძალიან მამაცი იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Afraid",
+    "georgian": "შეშინებული",
+    "pronunciation": "/əˈfreɪd/",
+    "example_en": "The child is afraid of the dark.",
+    "example_ka": "ბავშვს სიბნელის ეშინია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Angry",
+    "georgian": "გაბრაზებული",
+    "pronunciation": "/ˈæŋɡri/",
+    "example_en": "Why are you so angry?",
+    "example_ka": "რატომ ხარ ასე გაბრაზებული?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Calm",
+    "georgian": "მშვიდი",
+    "pronunciation": "/kɑːm/",
+    "example_en": "Stay calm, everything is fine.",
+    "example_ka": "იყავი მშვიდი, ყველაფერი კარგადაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Happy",
+    "georgian": "ბედნიერი",
+    "pronunciation": "/ˈhæpi/",
+    "example_en": "I am very happy today.",
+    "example_ka": "დღეს ძალიან ბედნიერი ვარ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sad",
+    "georgian": "სევდიანი",
+    "pronunciation": "/sæd/",
+    "example_en": "Why are you sad?",
+    "example_ka": "რატომ ხარ სევდიანი?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Tired",
+    "georgian": "დაღლილი",
+    "pronunciation": "/ˈtaɪərd/",
+    "example_en": "I'm tired after work.",
+    "example_ka": "სამსახურის შემდეგ დაღლილი ვარ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Awake",
+    "georgian": "გამოფხიზლებული",
+    "pronunciation": "/əˈweɪk/",
+    "example_en": "Are you still awake?",
+    "example_ka": "ჯერ კიდევ გამოფხიზლებული ხარ?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Alive",
+    "georgian": "ცოცხალი",
+    "pronunciation": "/əˈlaɪv/",
+    "example_en": "The plant is still alive.",
+    "example_ka": "მცენარე ჯერ კიდევ ცოცხალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Dead",
+    "georgian": "მკვდარი",
+    "pronunciation": "/dɛd/",
+    "example_en": "The battery is dead.",
+    "example_ka": "ბატარეა მკვდარია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Healthy",
+    "georgian": "ჯანმრთელი",
+    "pronunciation": "/ˈhɛlθi/",
+    "example_en": "Eating vegetables is healthy.",
+    "example_ka": "ბოსტნეულის ჭამა ჯანმრთელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sick",
+    "georgian": "ავადმყოფი",
+    "pronunciation": "/sɪk/",
+    "example_en": "He is sick today.",
+    "example_ka": "ის დღეს ავადმყოფია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Safe",
+    "georgian": "უსაფრთხო",
+    "pronunciation": "/seɪf/",
+    "example_en": "This neighborhood is safe.",
+    "example_ka": "ეს უბანი უსაფრთხოა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Dangerous",
+    "georgian": "საშიში",
+    "pronunciation": "/ˈdeɪndʒərəs/",
+    "example_en": "Swimming here is dangerous.",
+    "example_ka": "აქ ცურვა საშიშია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Important",
+    "georgian": "მნიშვნელოვანი",
+    "pronunciation": "/ɪmˈpɔːrtənt/",
+    "example_en": "This meeting is very important.",
+    "example_ka": "ეს შეხვედრა ძალიან მნიშვნელოვანია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Famous",
+    "georgian": "ცნობილი",
+    "pronunciation": "/ˈfeɪməs/",
+    "example_en": "This actor is very famous.",
+    "example_ka": "ეს მსახიობი ძალიან ცნობილია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Popular",
+    "georgian": "პოპულარული",
+    "pronunciation": "/ˈpɒpjʊlər/",
+    "example_en": "This song is very popular.",
+    "example_ka": "ეს სიმღერა ძალიან პოპულარულია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Rare",
+    "georgian": "იშვიათი",
+    "pronunciation": "/rɛər/",
+    "example_en": "This flower is very rare.",
+    "example_ka": "ეს ყვავილი ძალიან იშვიათია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Common",
+    "georgian": "გავრცელებული",
+    "pronunciation": "/ˈkɒmən/",
+    "example_en": "This mistake is very common.",
+    "example_ka": "ეს შეცდომა ძალიან გავრცელებულია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Normal",
+    "georgian": "ნორმალური",
+    "pronunciation": "/ˈnɔːrməl/",
+    "example_en": "Everything is normal.",
+    "example_ka": "ყველაფერი ნორმალურია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Strange",
+    "georgian": "უცნაური",
+    "pronunciation": "/streɪndʒ/",
+    "example_en": "That was a strange noise.",
+    "example_ka": "ეს უცნაური ხმა იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Beautiful",
+    "georgian": "ლამაზი",
+    "pronunciation": "/ˈbjuːtɪfəl/",
+    "example_en": "Georgia is a beautiful country.",
+    "example_ka": "საქართველო ლამაზი ქვეყანაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Ugly",
+    "georgian": "მახინჯი",
+    "pronunciation": "/ˈʌɡli/",
+    "example_en": "That painting is ugly.",
+    "example_ka": "ეს ნახატი მახინჯია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Pretty",
+    "georgian": "ლამაზი",
+    "pronunciation": "/ˈprɪti/",
+    "example_en": "She is very pretty.",
+    "example_ka": "ის ძალიან ლამაზია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Handsome",
+    "georgian": "ლამაზი",
+    "pronunciation": "/ˈhændsəm/",
+    "example_en": "He is a handsome man.",
+    "example_ka": "ის ლამაზი კაცია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Cute",
+    "georgian": "საყვარელი",
+    "pronunciation": "/kjuːt/",
+    "example_en": "The kitten is so cute.",
+    "example_ka": "კნუტი ძალიან საყვარელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Elegant",
+    "georgian": "ელეგანტური",
+    "pronunciation": "/ˈɛlɪɡənt/",
+    "example_en": "She wore an elegant dress.",
+    "example_ka": "მან ელეგანტური კაბა ჩაიცვა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Plain",
+    "georgian": "უბრალო",
+    "pronunciation": "/pleɪn/",
+    "example_en": "I prefer plain food.",
+    "example_ka": "უბრალო საჭმელი მირჩევნია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Fancy",
+    "georgian": "მდიდრული",
+    "pronunciation": "/ˈfænsi/",
+    "example_en": "We went to a fancy restaurant.",
+    "example_ka": "მდიდრულ რესტორანში წავედით.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Modern",
+    "georgian": "თანამედროვე",
+    "pronunciation": "/ˈmɒdərn/",
+    "example_en": "This is a modern building.",
+    "example_ka": "ეს თანამედროვე შენობაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Ancient",
+    "georgian": "უძველესი",
+    "pronunciation": "/ˈeɪnʃənt/",
+    "example_en": "This is an ancient temple.",
+    "example_ka": "ეს უძველესი ტაძარია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Foreign",
+    "georgian": "უცხო",
+    "pronunciation": "/ˈfɒrɪn/",
+    "example_en": "He speaks a foreign language.",
+    "example_ka": "ის უცხო ენაზე ლაპარაკობს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Local",
+    "georgian": "ადგილობრივი",
+    "pronunciation": "/ˈloʊkəl/",
+    "example_en": "We buy local products.",
+    "example_ka": "ადგილობრივ პროდუქტებს ვყიდულობთ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Urban",
+    "georgian": "ქალაქური",
+    "pronunciation": "/ˈɜːrbən/",
+    "example_en": "Urban life is fast-paced.",
+    "example_ka": "ქალაქური ცხოვრება სწრაფია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Rural",
+    "georgian": "სოფლური",
+    "pronunciation": "/ˈrʊərəl/",
+    "example_en": "They live in a rural area.",
+    "example_ka": "ისინი სოფლურ ზონაში ცხოვრობენ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Public",
+    "georgian": "საჯარო",
+    "pronunciation": "/ˈpʌblɪk/",
+    "example_en": "This is a public park.",
+    "example_ka": "ეს საჯარო პარკია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Private",
+    "georgian": "კერძო",
+    "pronunciation": "/ˈpraɪvɪt/",
+    "example_en": "This is a private school.",
+    "example_ka": "ეს კერძო სკოლაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Basic",
+    "georgian": "ძირითადი",
+    "pronunciation": "/ˈbeɪsɪk/",
+    "example_en": "You need basic knowledge.",
+    "example_ka": "ძირითადი ცოდნა გჭირდება.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Advanced",
+    "georgian": "მოწინავე",
+    "pronunciation": "/ədˈvɑːnst/",
+    "example_en": "This is an advanced course.",
+    "example_ka": "ეს მოწინავე კურსია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Main",
+    "georgian": "მთავარი",
+    "pronunciation": "/meɪn/",
+    "example_en": "Where is the main entrance?",
+    "example_ka": "სად არის მთავარი შესასვლელი?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Special",
+    "georgian": "განსაკუთრებული",
+    "pronunciation": "/ˈspɛʃəl/",
+    "example_en": "Today is a special day.",
+    "example_ka": "დღეს განსაკუთრებული დღეა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "General",
+    "georgian": "ზოგადი",
+    "pronunciation": "/ˈdʒɛnərəl/",
+    "example_en": "This is general information.",
+    "example_ka": "ეს ზოგადი ინფორმაციაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Specific",
+    "georgian": "კონკრეტული",
+    "pronunciation": "/spəˈsɪfɪk/",
+    "example_en": "Give me a specific example.",
+    "example_ka": "კონკრეტული მაგალითი მომეცი.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Certain",
+    "georgian": "გარკვეული",
+    "pronunciation": "/ˈsɜːrtən/",
+    "example_en": "I am certain about this.",
+    "example_ka": "ამაში დარწმუნებული ვარ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Possible",
+    "georgian": "შესაძლებელი",
+    "pronunciation": "/ˈpɒsɪbəl/",
+    "example_en": "Everything is possible.",
+    "example_ka": "ყველაფერი შესაძლებელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Impossible",
+    "georgian": "შეუძლებელი",
+    "pronunciation": "/ɪmˈpɒsɪbəl/",
+    "example_en": "Nothing is impossible.",
+    "example_ka": "არაფერია შეუძლებელი.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Necessary",
+    "georgian": "აუცილებელი",
+    "pronunciation": "/ˈnɛsəsɛri/",
+    "example_en": "Water is necessary for life.",
+    "example_ka": "წყალი სიცოცხლისთვის აუცილებელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Available",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈveɪləbəl/",
+    "example_en": "Is this product available?",
+    "example_ka": "ეს პროდუქტი ხელმისაწვდომია?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Visible",
+    "georgian": "ხილული",
+    "pronunciation": "/ˈvɪzɪbəl/",
+    "example_en": "The mountain is visible from here.",
+    "example_ka": "მთა აქედან ხილულია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Hidden",
+    "georgian": "დამალული",
+    "pronunciation": "/ˈhɪdən/",
+    "example_en": "There is a hidden door.",
+    "example_ka": "დამალული კარი არის.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Obvious",
+    "georgian": "აშკარა",
+    "pronunciation": "/ˈɒbviəs/",
+    "example_en": "The answer is obvious.",
+    "example_ka": "პასუხი აშკარაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Real",
+    "georgian": "ნამდვილი",
+    "pronunciation": "/riːəl/",
+    "example_en": "Is this real gold?",
+    "example_ka": "ეს ნამდვილი ოქროა?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Fake",
+    "georgian": "ყალბი",
+    "pronunciation": "/feɪk/",
+    "example_en": "This painting is fake.",
+    "example_ka": "ეს ნახატი ყალბია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "True",
+    "georgian": "ჭეშმარიტი",
+    "pronunciation": "/truː/",
+    "example_en": "Is it true?",
+    "example_ka": "ეს მართალია?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "False",
+    "georgian": "მცდარი",
+    "pronunciation": "/fɔːls/",
+    "example_en": "That statement is false.",
+    "example_ka": "ეს განცხადება მცდარია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Correct",
+    "georgian": "სწორი",
+    "pronunciation": "/kəˈrɛkt/",
+    "example_en": "Your answer is correct.",
+    "example_ka": "შენი პასუხი სწორია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Wrong",
+    "georgian": "არასწორი",
+    "pronunciation": "/rɒŋ/",
+    "example_en": "You took the wrong road.",
+    "example_ka": "არასწორი გზა აირჩიე.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Exact",
+    "georgian": "ზუსტი",
+    "pronunciation": "/ɪɡˈzækt/",
+    "example_en": "What is the exact time?",
+    "example_ka": "რა არის ზუსტი დრო?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Whole",
+    "georgian": "მთელი",
+    "pronunciation": "/hoʊl/",
+    "example_en": "I ate the whole cake.",
+    "example_ka": "მთელი ტორტი შევჭამე.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Equal",
+    "georgian": "თანაბარი",
+    "pronunciation": "/ˈiːkwəl/",
+    "example_en": "All people are equal.",
+    "example_ka": "ყველა ადამიანი თანაბარია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Different",
+    "georgian": "განსხვავებული",
+    "pronunciation": "/ˈdɪfərənt/",
+    "example_en": "We have different opinions.",
+    "example_ka": "განსხვავებული მოსაზრებები გვაქვს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Similar",
+    "georgian": "მსგავსი",
+    "pronunciation": "/ˈsɪmɪlər/",
+    "example_en": "These two are very similar.",
+    "example_ka": "ეს ორი ძალიან მსგავსია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Same",
+    "georgian": "იგივე",
+    "pronunciation": "/seɪm/",
+    "example_en": "We live on the same street.",
+    "example_ka": "ერთ ქუჩაზე ვცხოვრობთ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Other",
+    "georgian": "სხვა",
+    "pronunciation": "/ˈʌðər/",
+    "example_en": "Give me the other book.",
+    "example_ka": "სხვა წიგნი მომეცი.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Next",
+    "georgian": "შემდეგი",
+    "pronunciation": "/nɛkst/",
+    "example_en": "See you next week.",
+    "example_ka": "შემდეგ კვირას გნახავ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Last",
+    "georgian": "ბოლო",
+    "pronunciation": "/lɑːst/",
+    "example_en": "This is the last chance.",
+    "example_ka": "ეს ბოლო შანსია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "First",
+    "georgian": "პირველი",
+    "pronunciation": "/fɜːrst/",
+    "example_en": "This is my first day.",
+    "example_ka": "ეს ჩემი პირველი დღეა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Final",
+    "georgian": "საბოლოო",
+    "pronunciation": "/ˈfaɪnəl/",
+    "example_en": "This is the final decision.",
+    "example_ka": "ეს საბოლოო გადაწყვეტილებაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Early",
+    "georgian": "ადრეული",
+    "pronunciation": "/ˈɜːrli/",
+    "example_en": "I wake up early.",
+    "example_ka": "ადრე ვდგები.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Late",
+    "georgian": "გვიანი",
+    "pronunciation": "/leɪt/",
+    "example_en": "Sorry, I'm late.",
+    "example_ka": "ბოდიში, დავაგვიანე.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Ready",
+    "georgian": "მზად",
+    "pronunciation": "/ˈrɛdi/",
+    "example_en": "Are you ready to go?",
+    "example_ka": "მზად ხარ წასასვლელად?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sorry",
+    "georgian": "ბოდიშს ვიხდი",
+    "pronunciation": "/ˈsɒri/",
+    "example_en": "I'm sorry for being late.",
+    "example_ka": "ბოდიშს ვიხდი დაგვიანებისთვის.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Glad",
+    "georgian": "მოხარული",
+    "pronunciation": "/ɡlæd/",
+    "example_en": "I'm glad to meet you.",
+    "example_ka": "მოხარული ვარ გაცნობით.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Proud",
+    "georgian": "ამაყი",
+    "pronunciation": "/praʊd/",
+    "example_en": "I am proud of you.",
+    "example_ka": "შენით ვამაყობ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Shy",
+    "georgian": "მორცხვი",
+    "pronunciation": "/ʃaɪ/",
+    "example_en": "She is very shy.",
+    "example_ka": "ის ძალიან მორცხვია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Polite",
+    "georgian": "თავაზიანი",
+    "pronunciation": "/pəˈlaɪt/",
+    "example_en": "He is always polite.",
+    "example_ka": "ის ყოველთვის თავაზიანია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Rude",
+    "georgian": "უხეში",
+    "pronunciation": "/ruːd/",
+    "example_en": "Don't be rude to others.",
+    "example_ka": "სხვების მიმართ უხეში ნუ იქნები.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Honest",
+    "georgian": "პატიოსანი",
+    "pronunciation": "/ˈɒnɪst/",
+    "example_en": "He is an honest man.",
+    "example_ka": "ის პატიოსანი კაცია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Lazy",
+    "georgian": "ზარმაცი",
+    "pronunciation": "/ˈleɪzi/",
+    "example_en": "Don't be lazy, get up!",
+    "example_ka": "ნუ ზარმაცობ, ადექი!",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Active",
+    "georgian": "აქტიური",
+    "pronunciation": "/ˈæktɪv/",
+    "example_en": "She leads an active lifestyle.",
+    "example_ka": "ის აქტიურ ცხოვრებას ეწევა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Creative",
+    "georgian": "შემოქმედებითი",
+    "pronunciation": "/kriˈeɪtɪv/",
+    "example_en": "She is a creative person.",
+    "example_ka": "ის შემოქმედებითი ადამიანია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Boring",
+    "georgian": "მოსაწყენი",
+    "pronunciation": "/ˈbɔːrɪŋ/",
+    "example_en": "The lesson was boring.",
+    "example_ka": "გაკვეთილი მოსაწყენი იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Funny",
+    "georgian": "სასაცილო",
+    "pronunciation": "/ˈfʌni/",
+    "example_en": "That joke was funny!",
+    "example_ka": "ეს ხუმრობა სასაცილო იყო!",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Serious",
+    "georgian": "სერიოზული",
+    "pronunciation": "/ˈsɪriəs/",
+    "example_en": "This is a serious matter.",
+    "example_ka": "ეს სერიოზული საქმეა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Wise",
+    "georgian": "ბრძენი",
+    "pronunciation": "/waɪz/",
+    "example_en": "My grandfather was a wise man.",
+    "example_ka": "ჩემი ბაბუა ბრძენი კაცი იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Lucky",
+    "georgian": "იღბლიანი",
+    "pronunciation": "/ˈlʌki/",
+    "example_en": "You are very lucky.",
+    "example_ka": "ძალიან იღბლიანი ხარ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Careful",
+    "georgian": "ფრთხილი",
+    "pronunciation": "/ˈkɛərfəl/",
+    "example_en": "Be careful on the road.",
+    "example_ka": "გზაზე ფრთხილად იყავი.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Useful",
+    "georgian": "სასარგებლო",
+    "pronunciation": "/ˈjuːsfəl/",
+    "example_en": "This tool is very useful.",
+    "example_ka": "ეს ინსტრუმენტი ძალიან სასარგებლოა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Valuable",
+    "georgian": "ძვირფასი",
+    "pronunciation": "/ˈvæljʊəbəl/",
+    "example_en": "Time is very valuable.",
+    "example_ka": "დრო ძალიან ძვირფასია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Comfortable",
+    "georgian": "კომფორტული",
+    "pronunciation": "/ˈkʌmfərtəbəl/",
+    "example_en": "This chair is comfortable.",
+    "example_ka": "ეს სკამი კომფორტულია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Familiar",
+    "georgian": "ნაცნობი",
+    "pronunciation": "/fəˈmɪliər/",
+    "example_en": "Your face looks familiar.",
+    "example_ka": "შენი სახე ნაცნობია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Curious",
+    "georgian": "ცნობისმოყვარე",
+    "pronunciation": "/ˈkjʊəriəs/",
+    "example_en": "Children are always curious.",
+    "example_ka": "ბავშვები ყოველთვის ცნობისმოყვარეები არიან.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Jealous",
+    "georgian": "ეჭვიანი",
+    "pronunciation": "/ˈdʒɛləs/",
+    "example_en": "Don't be jealous.",
+    "example_ka": "ნუ ეჭვიანობ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Grateful",
+    "georgian": "მადლიერი",
+    "pronunciation": "/ˈɡreɪtfəl/",
+    "example_en": "I am grateful for your help.",
+    "example_ka": "მადლიერი ვარ შენი დახმარებისთვის.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Guilty",
+    "georgian": "დამნაშავე",
+    "pronunciation": "/ˈɡɪlti/",
+    "example_en": "He feels guilty.",
+    "example_ka": "ის თავს დამნაშავედ გრძნობს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Innocent",
+    "georgian": "უდანაშაულო",
+    "pronunciation": "/ˈɪnəsənt/",
+    "example_en": "He is innocent.",
+    "example_ka": "ის უდანაშაულოა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Responsible",
+    "georgian": "პასუხისმგებელი",
+    "pronunciation": "/rɪˈspɒnsɪbəl/",
+    "example_en": "Who is responsible for this?",
+    "example_ka": "ვინ არის ამაზე პასუხისმგებელი?",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Independent",
+    "georgian": "დამოუკიდებელი",
+    "pronunciation": "/ˌɪndɪˈpɛndənt/",
+    "example_en": "She is very independent.",
+    "example_ka": "ის ძალიან დამოუკიდებელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Confident",
+    "georgian": "თავდაჯერებული",
+    "pronunciation": "/ˈkɒnfɪdənt/",
+    "example_en": "She is a confident speaker.",
+    "example_ka": "ის თავდაჯერებული მომხსენებელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Humble",
+    "georgian": "მოკრძალებული",
+    "pronunciation": "/ˈhʌmbəl/",
+    "example_en": "He remained humble after success.",
+    "example_ka": "წარმატების შემდეგაც მოკრძალებული დარჩა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Patient",
+    "georgian": "მოთმინე",
+    "pronunciation": "/ˈpeɪʃənt/",
+    "example_en": "Please be patient.",
+    "example_ka": "გთხოვთ, მოთმინება გამოიჩინე.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Anxious",
+    "georgian": "შეშფოთებული",
+    "pronunciation": "/ˈæŋkʃəs/",
+    "example_en": "She feels anxious before exams.",
+    "example_ka": "გამოცდების წინ შეშფოთებულია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Lonely",
+    "georgian": "მარტოხელა",
+    "pronunciation": "/ˈloʊnli/",
+    "example_en": "He feels lonely sometimes.",
+    "example_ka": "ზოგჯერ თავს მარტოსულად გრძნობს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Blind",
+    "georgian": "ბრმა",
+    "pronunciation": "/blaɪnd/",
+    "example_en": "The man is blind.",
+    "example_ka": "კაცი ბრმაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Deaf",
+    "georgian": "ყრუ",
+    "pronunciation": "/dɛf/",
+    "example_en": "She was born deaf.",
+    "example_ka": "ის ყრუ დაიბადა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Pregnant",
+    "georgian": "ორსული",
+    "pronunciation": "/ˈprɛɡnənt/",
+    "example_en": "She is pregnant.",
+    "example_ka": "ის ორსულადაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sober",
+    "georgian": "ფხიზელი",
+    "pronunciation": "/ˈsoʊbər/",
+    "example_en": "He is completely sober.",
+    "example_ka": "ის სრულიად ფხიზელია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Drunk",
+    "georgian": "მთვრალი",
+    "pronunciation": "/drʌŋk/",
+    "example_en": "He is drunk.",
+    "example_ka": "ის მთვრალია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Massive",
+    "georgian": "მასიური",
+    "pronunciation": "/ˈmæsɪv/",
+    "example_en": "They built a massive building.",
+    "example_ka": "მასიური შენობა ააშენეს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Tiny",
+    "georgian": "პაწაწინა",
+    "pronunciation": "/ˈtaɪni/",
+    "example_en": "The baby has tiny fingers.",
+    "example_ka": "ბავშვს პაწაწინა თითები აქვს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Enormous",
+    "georgian": "უზარმაზარი",
+    "pronunciation": "/ɪˈnɔːrməs/",
+    "example_en": "The elephant is enormous.",
+    "example_ka": "სპილო უზარმაზარია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Huge",
+    "georgian": "უზარმაზარი",
+    "pronunciation": "/hjuːdʒ/",
+    "example_en": "They have a huge garden.",
+    "example_ka": "უზარმაზარი ბაღი აქვთ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Brief",
+    "georgian": "მოკლე",
+    "pronunciation": "/briːf/",
+    "example_en": "I'll give a brief explanation.",
+    "example_ka": "მოკლე ახსნას მოგცემთ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Permanent",
+    "georgian": "მუდმივი",
+    "pronunciation": "/ˈpɜːrmənənt/",
+    "example_en": "This is a permanent job.",
+    "example_ka": "ეს მუდმივი სამუშაოა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Temporary",
+    "georgian": "დროებითი",
+    "pronunciation": "/ˈtɛmpərɛri/",
+    "example_en": "This is a temporary solution.",
+    "example_ka": "ეს დროებითი გადაწყვეტაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Constant",
+    "georgian": "მუდმივი",
+    "pronunciation": "/ˈkɒnstənt/",
+    "example_en": "There is constant noise here.",
+    "example_ka": "აქ მუდმივი ხმაურია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Frequent",
+    "georgian": "ხშირი",
+    "pronunciation": "/ˈfriːkwənt/",
+    "example_en": "Buses are frequent here.",
+    "example_ka": "აქ ავტობუსები ხშირია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Occasional",
+    "georgian": "შემთხვევითი",
+    "pronunciation": "/əˈkeɪʒənəl/",
+    "example_en": "We have occasional rain.",
+    "example_ka": "შემთხვევითი წვიმა გვაქვს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Annual",
+    "georgian": "ყოველწლიური",
+    "pronunciation": "/ˈænjʊəl/",
+    "example_en": "This is our annual meeting.",
+    "example_ka": "ეს ჩვენი ყოველწლიური შეხვედრაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Daily",
+    "georgian": "ყოველდღიური",
+    "pronunciation": "/ˈdeɪli/",
+    "example_en": "Exercise is part of my daily routine.",
+    "example_ka": "ვარჯიში ჩემი ყოველდღიური რუტინის ნაწილია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Weekly",
+    "georgian": "ყოველკვირეული",
+    "pronunciation": "/ˈwiːkli/",
+    "example_en": "We have a weekly meeting.",
+    "example_ka": "ყოველკვირეული შეხვედრა გვაქვს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Monthly",
+    "georgian": "ყოველთვიური",
+    "pronunciation": "/ˈmʌnθli/",
+    "example_en": "I pay monthly rent.",
+    "example_ka": "ყოველთვიურ ქირას ვიხდი.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Sudden",
+    "georgian": "მოულოდნელი",
+    "pronunciation": "/ˈsʌdən/",
+    "example_en": "There was a sudden change.",
+    "example_ka": "მოულოდნელი ცვლილება მოხდა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Gradual",
+    "georgian": "თანდათანობითი",
+    "pronunciation": "/ˈɡrædʒuəl/",
+    "example_en": "The change was gradual.",
+    "example_ka": "ცვლილება თანდათანობითი იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Rapid",
+    "georgian": "სწრაფი",
+    "pronunciation": "/ˈræpɪd/",
+    "example_en": "The city saw rapid growth.",
+    "example_ka": "ქალაქმა სწრაფი ზრდა განიცადა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Steady",
+    "georgian": "სტაბილური",
+    "pronunciation": "/ˈstɛdi/",
+    "example_en": "He has a steady income.",
+    "example_ka": "მას სტაბილური შემოსავალი აქვს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Intense",
+    "georgian": "ინტენსიური",
+    "pronunciation": "/ɪnˈtɛns/",
+    "example_en": "The heat is intense today.",
+    "example_ka": "დღეს სიცხე ინტენსიურია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Mild",
+    "georgian": "მსუბუქი",
+    "pronunciation": "/maɪld/",
+    "example_en": "The weather is mild today.",
+    "example_ka": "დღეს ამინდი მსუბუქია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Severe",
+    "georgian": "მძიმე",
+    "pronunciation": "/sɪˈvɪər/",
+    "example_en": "The damage was severe.",
+    "example_ka": "ზარალი მძიმე იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Slight",
+    "georgian": "მცირე",
+    "pronunciation": "/slaɪt/",
+    "example_en": "There is a slight problem.",
+    "example_ka": "მცირე პრობლემაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Absolute",
+    "georgian": "აბსოლუტური",
+    "pronunciation": "/ˈæbsəluːt/",
+    "example_en": "I have absolute trust in you.",
+    "example_ka": "აბსოლუტური ნდობა მაქვს შენს მიმართ.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Relative",
+    "georgian": "შედარებითი",
+    "pronunciation": "/ˈrɛlətɪv/",
+    "example_en": "Everything is relative.",
+    "example_ka": "ყველაფერი შედარებითია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Mutual",
+    "georgian": "ურთიერთ",
+    "pronunciation": "/ˈmjuːtʃuəl/",
+    "example_en": "We have mutual respect.",
+    "example_ka": "ურთიერთპატივისცემა გვაქვს.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Ultimate",
+    "georgian": "საბოლოო",
+    "pronunciation": "/ˈʌltɪmɪt/",
+    "example_en": "This is the ultimate goal.",
+    "example_ka": "ეს საბოლოო მიზანია.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Initial",
+    "georgian": "საწყისი",
+    "pronunciation": "/ɪˈnɪʃəl/",
+    "example_en": "The initial plan was different.",
+    "example_ka": "საწყისი გეგმა განსხვავებული იყო.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Primary",
+    "georgian": "პირველადი",
+    "pronunciation": "/ˈpraɪmɛri/",
+    "example_en": "Education is a primary need.",
+    "example_ka": "განათლება პირველადი საჭიროებაა.",
+    "category": "adjectives-common"
+  },
+  {
+    "english": "Secondary",
+    "georgian": "მეორეხარისხოვანი",
+    "pronunciation": "/ˈsɛkəndɛri/",
+    "example_en": "This is a secondary issue.",
+    "example_ka": "ეს მეორეხარისხოვანი საკითხია.",
+    "category": "adjectives-common"
+  }
 ]

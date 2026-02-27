@@ -1,27 +1,1802 @@
 [
-  {"english":"border","georgian":"საზღვარი","pronunciation":"BOR-der","example_en":"Georgia shares a border with Turkey.","example_ka":"საქართველოს თურქეთთან საზღვარი აქვს.","category":"Geography","level":"A2"},
-  {"english":"capital","georgian":"დედაქალაქი","pronunciation":"KAP-ih-tul","example_en":"Tbilisi is the capital of Georgia.","example_ka":"თბილისი საქართველოს დედაქალაქია.","category":"Geography","level":"A2"},
-  {"english":"continent","georgian":"კონტინენტი","pronunciation":"KON-tih-nent","example_en":"Europe is a continent.","example_ka":"ევროპა კონტინენტია.","category":"Geography","level":"A2"},
-  {"english":"population","georgian":"მოსახლეობა","pronunciation":"pop-yoo-LAY-shun","example_en":"The world population is over 8 billion.","example_ka":"მსოფლიო მოსახლეობა 8 მილიარდს აღემატება.","category":"Geography","level":"B1"},
-  {"english":"island","georgian":"კუნძული","pronunciation":"EYE-lund","example_en":"Hawaii is a beautiful island.","example_ka":"ჰავაი ლამაზი კუნძულია.","category":"Geography","level":"A2"},
-  {"english":"desert","georgian":"უდაბნო","pronunciation":"DEZ-ert","example_en":"The Sahara is the largest desert.","example_ka":"საჰარა ყველაზე დიდი უდაბნოა.","category":"Geography","level":"A2"},
-  {"english":"ocean","georgian":"ოკეანე","pronunciation":"OH-shun","example_en":"The Pacific Ocean is the biggest.","example_ka":"წყნარი ოკეანე ყველაზე დიდია.","category":"Geography","level":"A2"},
-  {"english":"mountain","georgian":"მთა","pronunciation":"MOWN-tin","example_en":"Mount Kazbegi is in Georgia.","example_ka":"ყაზბეგი საქართველოშია.","category":"Geography","level":"A1"},
-  {"english":"valley","georgian":"ხეობა","pronunciation":"VAL-ee","example_en":"The valley between the mountains is green.","example_ka":"მთებს შორის ხეობა მწვანეა.","category":"Geography","level":"A2"},
-  {"english":"coast","georgian":"სანაპირო","pronunciation":"kohst","example_en":"Batumi is on the Black Sea coast.","example_ka":"ბათუმი შავი ზღვის სანაპიროზეა.","category":"Geography","level":"A2"},
-  {"english":"climate","georgian":"კლიმატი","pronunciation":"KLY-mit","example_en":"Georgia has a diverse climate.","example_ka":"საქართველოს მრავალფეროვანი კლიმატი აქვს.","category":"Geography","level":"B1"},
-  {"english":"earthquake","georgian":"მიწისძვრა","pronunciation":"ERTH-kwayk","example_en":"Turkey had a big earthquake.","example_ka":"თურქეთში დიდი მიწისძვრა იყო.","category":"Geography","level":"B1"},
-  {"english":"river","georgian":"მდინარე","pronunciation":"RIV-er","example_en":"The Mtkvari river flows through Tbilisi.","example_ka":"მტკვარი თბილისში მიედინება.","category":"Geography","level":"A1"},
-  {"english":"lake","georgian":"ტბა","pronunciation":"layk","example_en":"Lake Ritsa is in Abkhazia.","example_ka":"რიწის ტბა აფხაზეთშია.","category":"Geography","level":"A1"},
-  {"english":"volcano","georgian":"ვულკანი","pronunciation":"vol-KAY-noh","example_en":"There are active volcanoes in Iceland.","example_ka":"ისლანდიაში აქტიური ვულკანებია.","category":"Geography","level":"B1"},
-  {"english":"hemisphere","georgian":"ნახევარსფერო","pronunciation":"HEM-ih-sfeer","example_en":"Georgia is in the northern hemisphere.","example_ka":"საქართველო ჩრდილოეთ ნახევარსფეროშია.","category":"Geography","level":"B2"},
-  {"english":"latitude","georgian":"განედი","pronunciation":"LAT-ih-tood","example_en":"Tbilisi is at 41 degrees latitude.","example_ka":"თბილისი 41 გრადუს განედზეა.","category":"Geography","level":"B2"},
-  {"english":"abroad","georgian":"საზღვარგარეთ","pronunciation":"ah-BRAWD","example_en":"Many Georgians work abroad.","example_ka":"ბევრი ქართველი საზღვარგარეთ მუშაობს.","category":"Geography","level":"A2"},
-  {"english":"region","georgian":"რეგიონი","pronunciation":"REE-jun","example_en":"Kakheti is a wine region.","example_ka":"კახეთი ღვინის რეგიონია.","category":"Geography","level":"A2"},
-  {"english":"rural","georgian":"სოფლის","pronunciation":"ROOR-ul","example_en":"Life in rural areas is quieter.","example_ka":"სოფლის ტერიტორიებზე ცხოვრება უფრო წყნარია.","category":"Geography","level":"B1"},
-  {"english":"urban","georgian":"ქალაქის","pronunciation":"UR-ban","example_en":"Tbilisi is the main urban center.","example_ka":"თბილისი მთავარი ქალაქის ცენტრია.","category":"Geography","level":"B1"},
-  {"english":"territory","georgian":"ტერიტორია","pronunciation":"TER-ih-tor-ee","example_en":"Georgia's territory is 69,700 square km.","example_ka":"საქართველოს ტერიტორია 69,700 კვ.კმ-ია.","category":"Geography","level":"B1"},
-  {"english":"waterfall","georgian":"ჩანჩქერი","pronunciation":"WAW-ter-fawl","example_en":"There are many waterfalls in Svaneti.","example_ka":"სვანეთში ბევრი ჩანჩქერია.","category":"Geography","level":"A2"},
-  {"english":"canyon","georgian":"კანიონი","pronunciation":"KAN-yun","example_en":"Okatse Canyon is amazing.","example_ka":"ოკაცეს კანიონი საოცარია.","category":"Geography","level":"B1"},
-  {"english":"glacier","georgian":"მყინვარი","pronunciation":"GLAY-sher","example_en":"Glaciers are melting because of climate change.","example_ka":"მყინვარები კლიმატის ცვლილების გამო დნება.","category":"Geography","level":"B2"}
+  {
+    "english": "border",
+    "georgian": "საზღვარი",
+    "pronunciation": "BOR-der",
+    "example_en": "Georgia shares a border with Turkey.",
+    "example_ka": "საქართველოს თურქეთთან საზღვარი აქვს.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "capital",
+    "georgian": "დედაქალაქი",
+    "pronunciation": "KAP-ih-tul",
+    "example_en": "Tbilisi is the capital of Georgia.",
+    "example_ka": "თბილისი საქართველოს დედაქალაქია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "continent",
+    "georgian": "კონტინენტი",
+    "pronunciation": "KON-tih-nent",
+    "example_en": "Europe is a continent.",
+    "example_ka": "ევროპა კონტინენტია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "population",
+    "georgian": "მოსახლეობა",
+    "pronunciation": "pop-yoo-LAY-shun",
+    "example_en": "The world population is over 8 billion.",
+    "example_ka": "მსოფლიო მოსახლეობა 8 მილიარდს აღემატება.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "island",
+    "georgian": "კუნძული",
+    "pronunciation": "EYE-lund",
+    "example_en": "Hawaii is a beautiful island.",
+    "example_ka": "ჰავაი ლამაზი კუნძულია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "desert",
+    "georgian": "უდაბნო",
+    "pronunciation": "DEZ-ert",
+    "example_en": "The Sahara is the largest desert.",
+    "example_ka": "საჰარა ყველაზე დიდი უდაბნოა.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "ocean",
+    "georgian": "ოკეანე",
+    "pronunciation": "OH-shun",
+    "example_en": "The Pacific Ocean is the biggest.",
+    "example_ka": "წყნარი ოკეანე ყველაზე დიდია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "mountain",
+    "georgian": "მთა",
+    "pronunciation": "MOWN-tin",
+    "example_en": "Mount Kazbegi is in Georgia.",
+    "example_ka": "ყაზბეგი საქართველოშია.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "valley",
+    "georgian": "ხეობა",
+    "pronunciation": "VAL-ee",
+    "example_en": "The valley between the mountains is green.",
+    "example_ka": "მთებს შორის ხეობა მწვანეა.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "coast",
+    "georgian": "სანაპირო",
+    "pronunciation": "kohst",
+    "example_en": "Batumi is on the Black Sea coast.",
+    "example_ka": "ბათუმი შავი ზღვის სანაპიროზეა.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "climate",
+    "georgian": "კლიმატი",
+    "pronunciation": "KLY-mit",
+    "example_en": "Georgia has a diverse climate.",
+    "example_ka": "საქართველოს მრავალფეროვანი კლიმატი აქვს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "earthquake",
+    "georgian": "მიწისძვრა",
+    "pronunciation": "ERTH-kwayk",
+    "example_en": "Turkey had a big earthquake.",
+    "example_ka": "თურქეთში დიდი მიწისძვრა იყო.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "river",
+    "georgian": "მდინარე",
+    "pronunciation": "RIV-er",
+    "example_en": "The Mtkvari river flows through Tbilisi.",
+    "example_ka": "მტკვარი თბილისში მიედინება.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "lake",
+    "georgian": "ტბა",
+    "pronunciation": "layk",
+    "example_en": "Lake Ritsa is in Abkhazia.",
+    "example_ka": "რიწის ტბა აფხაზეთშია.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "volcano",
+    "georgian": "ვულკანი",
+    "pronunciation": "vol-KAY-noh",
+    "example_en": "There are active volcanoes in Iceland.",
+    "example_ka": "ისლანდიაში აქტიური ვულკანებია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "hemisphere",
+    "georgian": "ნახევარსფერო",
+    "pronunciation": "HEM-ih-sfeer",
+    "example_en": "Georgia is in the northern hemisphere.",
+    "example_ka": "საქართველო ჩრდილოეთ ნახევარსფეროშია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "latitude",
+    "georgian": "განედი",
+    "pronunciation": "LAT-ih-tood",
+    "example_en": "Tbilisi is at 41 degrees latitude.",
+    "example_ka": "თბილისი 41 გრადუს განედზეა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "abroad",
+    "georgian": "საზღვარგარეთ",
+    "pronunciation": "ah-BRAWD",
+    "example_en": "Many Georgians work abroad.",
+    "example_ka": "ბევრი ქართველი საზღვარგარეთ მუშაობს.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "region",
+    "georgian": "რეგიონი",
+    "pronunciation": "REE-jun",
+    "example_en": "Kakheti is a wine region.",
+    "example_ka": "კახეთი ღვინის რეგიონია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "rural",
+    "georgian": "სოფლის",
+    "pronunciation": "ROOR-ul",
+    "example_en": "Life in rural areas is quieter.",
+    "example_ka": "სოფლის ტერიტორიებზე ცხოვრება უფრო წყნარია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "urban",
+    "georgian": "ქალაქის",
+    "pronunciation": "UR-ban",
+    "example_en": "Tbilisi is the main urban center.",
+    "example_ka": "თბილისი მთავარი ქალაქის ცენტრია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "territory",
+    "georgian": "ტერიტორია",
+    "pronunciation": "TER-ih-tor-ee",
+    "example_en": "Georgia's territory is 69,700 square km.",
+    "example_ka": "საქართველოს ტერიტორია 69,700 კვ.კმ-ია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "waterfall",
+    "georgian": "ჩანჩქერი",
+    "pronunciation": "WAW-ter-fawl",
+    "example_en": "There are many waterfalls in Svaneti.",
+    "example_ka": "სვანეთში ბევრი ჩანჩქერია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "canyon",
+    "georgian": "კანიონი",
+    "pronunciation": "KAN-yun",
+    "example_en": "Okatse Canyon is amazing.",
+    "example_ka": "ოკაცეს კანიონი საოცარია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "glacier",
+    "georgian": "მყინვარი",
+    "pronunciation": "GLAY-sher",
+    "example_en": "Glaciers are melting because of climate change.",
+    "example_ka": "მყინვარები კლიმატის ცვლილების გამო დნება.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "country",
+    "georgian": "ქვეყანა",
+    "pronunciation": "/ˈkʌntri/",
+    "example_en": "Which country are you from?",
+    "example_ka": "რომელი ქვეყნიდან ხარ?",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "city",
+    "georgian": "ქალაქი",
+    "pronunciation": "/ˈsɪti/",
+    "example_en": "Tbilisi is a big city.",
+    "example_ka": "თბილისი დიდი ქალაქია.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "village",
+    "georgian": "სოფელი",
+    "pronunciation": "/ˈvɪlɪdʒ/",
+    "example_en": "My grandmother lives in a village.",
+    "example_ka": "ჩემი ბებია სოფელში ცხოვრობს.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "town",
+    "georgian": "დაბა",
+    "pronunciation": "/taʊn/",
+    "example_en": "It's a small town.",
+    "example_ka": "ეს პატარა დაბაა.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "world",
+    "georgian": "მსოფლიო",
+    "pronunciation": "/wɜːrld/",
+    "example_en": "I want to travel the world.",
+    "example_ka": "მინდა მსოფლიო ვიმოგზაურო.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "north",
+    "georgian": "ჩრდილოეთი",
+    "pronunciation": "/nɔːrθ/",
+    "example_en": "Russia is to the north.",
+    "example_ka": "რუსეთი ჩრდილოეთით არის.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "south",
+    "georgian": "სამხრეთი",
+    "pronunciation": "/saʊθ/",
+    "example_en": "Turkey is to the south.",
+    "example_ka": "თურქეთი სამხრეთით არის.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "east",
+    "georgian": "აღმოსავლეთი",
+    "pronunciation": "/iːst/",
+    "example_en": "Azerbaijan is to the east.",
+    "example_ka": "აზერბაიჯანი აღმოსავლეთით არის.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "west",
+    "georgian": "დასავლეთი",
+    "pronunciation": "/west/",
+    "example_en": "The Black Sea is to the west.",
+    "example_ka": "შავი ზღვა დასავლეთით არის.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "sea",
+    "georgian": "ზღვა",
+    "pronunciation": "/siː/",
+    "example_en": "The Black Sea is warm in summer.",
+    "example_ka": "შავი ზღვა ზაფხულში თბილია.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "forest",
+    "georgian": "ტყე",
+    "pronunciation": "/ˈfɒrɪst/",
+    "example_en": "Georgia has beautiful forests.",
+    "example_ka": "საქართველოში ლამაზი ტყეებია.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "hill",
+    "georgian": "ბორცვი",
+    "pronunciation": "/hɪl/",
+    "example_en": "The house is on the hill.",
+    "example_ka": "სახლი ბორცვზეა.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "plain",
+    "georgian": "ვაკე",
+    "pronunciation": "/pleɪn/",
+    "example_en": "The eastern part has wide plains.",
+    "example_ka": "აღმოსავლეთ ნაწილში ფართო ვაკეებია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "peninsula",
+    "georgian": "ნახევარკუნძული",
+    "pronunciation": "/pəˈnɪnsjələ/",
+    "example_en": "Italy is a peninsula.",
+    "example_ka": "იტალია ნახევარკუნძულია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "bay",
+    "georgian": "ყურე",
+    "pronunciation": "/beɪ/",
+    "example_en": "The bay is beautiful at sunset.",
+    "example_ka": "ყურე მზის ჩასვლისას ლამაზია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "cliff",
+    "georgian": "კლდე",
+    "pronunciation": "/klɪf/",
+    "example_en": "Don't stand near the cliff.",
+    "example_ka": "კლდესთან ნუ დადგები.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "cave",
+    "georgian": "გამოქვაბული",
+    "pronunciation": "/keɪv/",
+    "example_en": "There are ancient caves in Georgia.",
+    "example_ka": "საქართველოში ძველი გამოქვაბულებია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "plateau",
+    "georgian": "პლატო",
+    "pronunciation": "/plæˈtoʊ/",
+    "example_en": "The plateau is very flat.",
+    "example_ka": "პლატო ძალიან ბრტყელია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "swamp",
+    "georgian": "ჭაობი",
+    "pronunciation": "/swɒmp/",
+    "example_en": "The swamp is dangerous.",
+    "example_ka": "ჭაობი საშიშია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "reef",
+    "georgian": "რიფი",
+    "pronunciation": "/riːf/",
+    "example_en": "The coral reef is colorful.",
+    "example_ka": "მარჯნის რიფი ფერადია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "tide",
+    "georgian": "მოქცევა",
+    "pronunciation": "/taɪd/",
+    "example_en": "The tide comes in at night.",
+    "example_ka": "მოქცევა ღამით მოდის.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "shore",
+    "georgian": "ნაპირი",
+    "pronunciation": "/ʃɔːr/",
+    "example_en": "We walked along the shore.",
+    "example_ka": "ნაპირზე გავისეირნეთ.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "harbor",
+    "georgian": "ნავსადგური",
+    "pronunciation": "/ˈhɑːrbər/",
+    "example_en": "The harbor is full of boats.",
+    "example_ka": "ნავსადგური ნავებით არის სავსე.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "strait",
+    "georgian": "სრუტე",
+    "pronunciation": "/streɪt/",
+    "example_en": "The Strait of Gibraltar is narrow.",
+    "example_ka": "გიბრალტარის სრუტე ვიწროა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "delta",
+    "georgian": "დელტა",
+    "pronunciation": "/ˈdeltə/",
+    "example_en": "The river delta is fertile.",
+    "example_ka": "მდინარის დელტა ნაყოფიერია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "tributary",
+    "georgian": "შენაკადი",
+    "pronunciation": "/ˈtrɪbjəteri/",
+    "example_en": "This river has many tributaries.",
+    "example_ka": "ამ მდინარეს ბევრი შენაკადი აქვს.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "basin",
+    "georgian": "აუზი",
+    "pronunciation": "/ˈbeɪsən/",
+    "example_en": "The river basin is large.",
+    "example_ka": "მდინარის აუზი დიდია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "altitude",
+    "georgian": "სიმაღლე",
+    "pronunciation": "/ˈæltɪtjuːd/",
+    "example_en": "The altitude here is 2000 meters.",
+    "example_ka": "აქ სიმაღლე 2000 მეტრია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "longitude",
+    "georgian": "გრძედი",
+    "pronunciation": "/ˈlɒndʒɪtjuːd/",
+    "example_en": "The longitude tells east-west position.",
+    "example_ka": "გრძედი აღმოსავლეთ-დასავლეთ პოზიციას გვეუბნება.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "equator",
+    "georgian": "ეკვატორი",
+    "pronunciation": "/ɪˈkweɪtər/",
+    "example_en": "The equator divides the Earth in half.",
+    "example_ka": "ეკვატორი დედამიწას შუაზე ყოფს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "tropic",
+    "georgian": "ტროპიკი",
+    "pronunciation": "/ˈtrɒpɪk/",
+    "example_en": "The tropics are very hot.",
+    "example_ka": "ტროპიკებში ძალიან ცხელა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "pole",
+    "georgian": "პოლუსი",
+    "pronunciation": "/poʊl/",
+    "example_en": "The North Pole is covered in ice.",
+    "example_ka": "ჩრდილოეთ პოლუსი ყინულით არის დაფარული.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "arctic",
+    "georgian": "არქტიკული",
+    "pronunciation": "/ˈɑːrktɪk/",
+    "example_en": "The Arctic is melting fast.",
+    "example_ka": "არქტიკა სწრაფად დნება.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "tropical",
+    "georgian": "ტროპიკული",
+    "pronunciation": "/ˈtrɒpɪkəl/",
+    "example_en": "Thailand has a tropical climate.",
+    "example_ka": "ტაილანდს ტროპიკული კლიმატი აქვს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "temperate",
+    "georgian": "ზომიერი",
+    "pronunciation": "/ˈtempərət/",
+    "example_en": "Georgia has a temperate climate.",
+    "example_ka": "საქართველოს ზომიერი კლიმატი აქვს.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "arid",
+    "georgian": "მშრალი",
+    "pronunciation": "/ˈærɪd/",
+    "example_en": "The arid region gets little rain.",
+    "example_ka": "მშრალ რეგიონში ცოტა წვიმს.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "humid",
+    "georgian": "ტენიანი",
+    "pronunciation": "/ˈhjuːmɪd/",
+    "example_en": "Batumi is very humid.",
+    "example_ka": "ბათუმი ძალიან ტენიანია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "drought",
+    "georgian": "გვალვა",
+    "pronunciation": "/draʊt/",
+    "example_en": "The drought destroyed the crops.",
+    "example_ka": "გვალვამ მოსავალი გაანადგურა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "flood",
+    "georgian": "წყალდიდობა",
+    "pronunciation": "/flʌd/",
+    "example_en": "The flood damaged many houses.",
+    "example_ka": "წყალდიდობამ ბევრი სახლი დააზიანა.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "erosion",
+    "georgian": "ეროზია",
+    "pronunciation": "/ɪˈroʊʒən/",
+    "example_en": "Soil erosion is a big problem.",
+    "example_ka": "ნიადაგის ეროზია დიდი პრობლემაა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "fertile",
+    "georgian": "ნაყოფიერი",
+    "pronunciation": "/ˈfɜːrtaɪl/",
+    "example_en": "The soil is very fertile.",
+    "example_ka": "ნიადაგი ძალიან ნაყოფიერია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "barren",
+    "georgian": "უნაყოფო",
+    "pronunciation": "/ˈbærən/",
+    "example_en": "The land is barren and dry.",
+    "example_ka": "მიწა უნაყოფო და მშრალია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "terrain",
+    "georgian": "რელიეფი",
+    "pronunciation": "/təˈreɪn/",
+    "example_en": "The terrain is very mountainous.",
+    "example_ka": "რელიეფი ძალიან მთიანია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "landscape",
+    "georgian": "ლანდშაფტი",
+    "pronunciation": "/ˈlændskeɪp/",
+    "example_en": "The landscape is breathtaking.",
+    "example_ka": "ლანდშაფტი თვალწარმტაცია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "horizon",
+    "georgian": "ჰორიზონტი",
+    "pronunciation": "/həˈraɪzən/",
+    "example_en": "The sun sets on the horizon.",
+    "example_ka": "მზე ჰორიზონტზე ჩადის.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "compass",
+    "georgian": "კომპასი",
+    "pronunciation": "/ˈkʌmpəs/",
+    "example_en": "Use a compass to find north.",
+    "example_ka": "ჩრდილოეთის საპოვნელად კომპასი გამოიყენე.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "atlas",
+    "georgian": "ატლასი",
+    "pronunciation": "/ˈætləs/",
+    "example_en": "Look it up in the atlas.",
+    "example_ka": "ატლასში ნახე.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "globe",
+    "georgian": "გლობუსი",
+    "pronunciation": "/ɡloʊb/",
+    "example_en": "Spin the globe and pick a country.",
+    "example_ka": "გლობუსი დაატრიალე და ქვეყანა აირჩიე.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "Show me on the map.",
+    "example_ka": "რუკაზე მაჩვენე.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "flag",
+    "georgian": "დროშა",
+    "pronunciation": "/flæɡ/",
+    "example_en": "Every country has a flag.",
+    "example_ka": "ყველა ქვეყანას დროშა აქვს.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "nationality",
+    "georgian": "ეროვნება",
+    "pronunciation": "/ˌnæʃəˈnæləti/",
+    "example_en": "What is your nationality?",
+    "example_ka": "რა ეროვნების ხარ?",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "citizen",
+    "georgian": "მოქალაქე",
+    "pronunciation": "/ˈsɪtɪzən/",
+    "example_en": "I am a Georgian citizen.",
+    "example_ka": "მე საქართველოს მოქალაქე ვარ.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "passport",
+    "georgian": "პასპორტი",
+    "pronunciation": "/ˈpæspɔːrt/",
+    "example_en": "Show me your passport.",
+    "example_ka": "პასპორტი მაჩვენე.",
+    "category": "geography-countries",
+    "level": "A1"
+  },
+  {
+    "english": "embassy",
+    "georgian": "საელჩო",
+    "pronunciation": "/ˈembəsi/",
+    "example_en": "Go to the embassy for a visa.",
+    "example_ka": "ვიზისთვის საელჩოში წადი.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "immigrant",
+    "georgian": "ემიგრანტი",
+    "pronunciation": "/ˈɪmɪɡrənt/",
+    "example_en": "Many immigrants live in the city.",
+    "example_ka": "ქალაქში ბევრი ემიგრანტი ცხოვრობს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "colony",
+    "georgian": "კოლონია",
+    "pronunciation": "/ˈkɒləni/",
+    "example_en": "India was a British colony.",
+    "example_ka": "ინდოეთი ბრიტანეთის კოლონია იყო.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "empire",
+    "georgian": "იმპერია",
+    "pronunciation": "/ˈempaɪər/",
+    "example_en": "The Ottoman Empire was powerful.",
+    "example_ka": "ოსმალეთის იმპერია ძლიერი იყო.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "kingdom",
+    "georgian": "სამეფო",
+    "pronunciation": "/ˈkɪŋdəm/",
+    "example_en": "The United Kingdom includes England.",
+    "example_ka": "გაერთიანებული სამეფო ინგლისს მოიცავს.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "republic",
+    "georgian": "რესპუბლიკა",
+    "pronunciation": "/rɪˈpʌblɪk/",
+    "example_en": "Georgia is a republic.",
+    "example_ka": "საქართველო რესპუბლიკაა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "province",
+    "georgian": "პროვინცია",
+    "pronunciation": "/ˈprɒvɪns/",
+    "example_en": "Canada has ten provinces.",
+    "example_ka": "კანადას ათი პროვინცია აქვს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "state",
+    "georgian": "შტატი",
+    "pronunciation": "/steɪt/",
+    "example_en": "Texas is the biggest state.",
+    "example_ka": "ტეხასი ყველაზე დიდი შტატია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "district",
+    "georgian": "რაიონი",
+    "pronunciation": "/ˈdɪstrɪkt/",
+    "example_en": "I live in Vake district.",
+    "example_ka": "ვაკის რაიონში ვცხოვრობ.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "suburb",
+    "georgian": "გარეუბანი",
+    "pronunciation": "/ˈsʌbɜːrb/",
+    "example_en": "They moved to the suburbs.",
+    "example_ka": "ისინი გარეუბანში გადავიდნენ.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "downtown",
+    "georgian": "ცენტრი",
+    "pronunciation": "/ˈdaʊntaʊn/",
+    "example_en": "Let's go downtown.",
+    "example_ka": "მოდი ცენტრში წავიდეთ.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "neighborhood",
+    "georgian": "სამეზობლო",
+    "pronunciation": "/ˈneɪbərhʊd/",
+    "example_en": "This neighborhood is quiet.",
+    "example_ka": "ეს სამეზობლო წყნარია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "landmark",
+    "georgian": "ღირშესანიშნაობა",
+    "pronunciation": "/ˈlændmɑːrk/",
+    "example_en": "The Eiffel Tower is a famous landmark.",
+    "example_ka": "ეიფელის კოშკი ცნობილი ღირშესანიშნაობაა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "monument",
+    "georgian": "ძეგლი",
+    "pronunciation": "/ˈmɒnjumənt/",
+    "example_en": "There's a monument in the square.",
+    "example_ka": "მოედანზე ძეგლია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "ruins",
+    "georgian": "ნანგრევები",
+    "pronunciation": "/ˈruːɪnz/",
+    "example_en": "We visited ancient ruins.",
+    "example_ka": "ძველ ნანგრევებს ვეწვიეთ.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "heritage",
+    "georgian": "მემკვიდრეობა",
+    "pronunciation": "/ˈherɪtɪdʒ/",
+    "example_en": "Georgia has a rich cultural heritage.",
+    "example_ka": "საქართველოს მდიდარი კულტურული მემკვიდრეობა აქვს.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "civilization",
+    "georgian": "ცივილიზაცია",
+    "pronunciation": "/ˌsɪvɪlaɪˈzeɪʃən/",
+    "example_en": "Ancient civilizations built pyramids.",
+    "example_ka": "ძველმა ცივილიზაციებმა პირამიდები ააშენეს.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "geography",
+    "georgian": "გეოგრაფია",
+    "pronunciation": "/dʒiˈɒɡrəfi/",
+    "example_en": "I love studying geography.",
+    "example_ka": "გეოგრაფიის სწავლა მიყვარს.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "topography",
+    "georgian": "ტოპოგრაფია",
+    "pronunciation": "/təˈpɒɡrəfi/",
+    "example_en": "The topography is complex.",
+    "example_ka": "ტოპოგრაფია რთულია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "cartography",
+    "georgian": "კარტოგრაფია",
+    "pronunciation": "/kɑːrˈtɒɡrəfi/",
+    "example_en": "Cartography is the art of making maps.",
+    "example_ka": "კარტოგრაფია რუკების შექმნის ხელოვნებაა.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "archipelago",
+    "georgian": "არქიპელაგი",
+    "pronunciation": "/ˌɑːrkɪˈpeləɡoʊ/",
+    "example_en": "Japan is an archipelago.",
+    "example_ka": "იაპონია არქიპელაგია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "tundra",
+    "georgian": "ტუნდრა",
+    "pronunciation": "/ˈtʌndrə/",
+    "example_en": "The tundra is very cold.",
+    "example_ka": "ტუნდრა ძალიან ცივია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "savanna",
+    "georgian": "სავანა",
+    "pronunciation": "/səˈvænə/",
+    "example_en": "Lions live in the savanna.",
+    "example_ka": "ლომები სავანაში ცხოვრობენ.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "jungle",
+    "georgian": "ჯუნგლები",
+    "pronunciation": "/ˈdʒʌŋɡəl/",
+    "example_en": "The Amazon jungle is enormous.",
+    "example_ka": "ამაზონის ჯუნგლები უზარმაზარია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "prairie",
+    "georgian": "პრერია",
+    "pronunciation": "/ˈpreri/",
+    "example_en": "The prairie stretches for miles.",
+    "example_ka": "პრერია მილობით გადაიშლება.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "steppe",
+    "georgian": "სტეპი",
+    "pronunciation": "/step/",
+    "example_en": "The steppe is flat and dry.",
+    "example_ka": "სტეპი ბრტყელი და მშრალია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "oasis",
+    "georgian": "ოაზისი",
+    "pronunciation": "/oʊˈeɪsɪs/",
+    "example_en": "We found an oasis in the desert.",
+    "example_ka": "უდაბნოში ოაზისი ვიპოვეთ.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "marsh",
+    "georgian": "ჭაობი",
+    "pronunciation": "/mɑːrʃ/",
+    "example_en": "The marsh is full of birds.",
+    "example_ka": "ჭაობი ფრინველებით არის სავსე.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "gorge",
+    "georgian": "ხეობა",
+    "pronunciation": "/ɡɔːrdʒ/",
+    "example_en": "The gorge is deep and narrow.",
+    "example_ka": "ხეობა ღრმა და ვიწროა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "peak",
+    "georgian": "მწვერვალი",
+    "pronunciation": "/piːk/",
+    "example_en": "We reached the peak at noon.",
+    "example_ka": "მწვერვალს შუადღისას მივაღწიეთ.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "summit",
+    "georgian": "მწვერვალი",
+    "pronunciation": "/ˈsʌmɪt/",
+    "example_en": "The summit was covered in snow.",
+    "example_ka": "მწვერვალი თოვლით იყო დაფარული.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "ridge",
+    "georgian": "ქედი",
+    "pronunciation": "/rɪdʒ/",
+    "example_en": "We walked along the mountain ridge.",
+    "example_ka": "მთის ქედზე გავიარეთ.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "slope",
+    "georgian": "ფერდობი",
+    "pronunciation": "/sloʊp/",
+    "example_en": "The slope was very steep.",
+    "example_ka": "ფერდობი ძალიან ციცაბო იყო.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "spring",
+    "georgian": "წყარო",
+    "pronunciation": "/sprɪŋ/",
+    "example_en": "The spring water is clean.",
+    "example_ka": "წყაროს წყალი სუფთაა.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "stream",
+    "georgian": "ნაკადი",
+    "pronunciation": "/striːm/",
+    "example_en": "A small stream runs through the garden.",
+    "example_ka": "პატარა ნაკადი ბაღში მიედინება.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "pond",
+    "georgian": "გუბე",
+    "pronunciation": "/pɒnd/",
+    "example_en": "There are fish in the pond.",
+    "example_ka": "გუბეში თევზებია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "reservoir",
+    "georgian": "წყალსაცავი",
+    "pronunciation": "/ˈrezərvwɑːr/",
+    "example_en": "The reservoir supplies the city.",
+    "example_ka": "წყალსაცავი ქალაქს ამარაგებს.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "dam",
+    "georgian": "კაშხალი",
+    "pronunciation": "/dæm/",
+    "example_en": "They built a dam on the river.",
+    "example_ka": "მდინარეზე კაშხალი ააშენეს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "canal",
+    "georgian": "არხი",
+    "pronunciation": "/kəˈnæl/",
+    "example_en": "The canal connects two seas.",
+    "example_ka": "არხი ორ ზღვას აკავშირებს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "port",
+    "georgian": "პორტი",
+    "pronunciation": "/pɔːrt/",
+    "example_en": "Batumi has a big port.",
+    "example_ka": "ბათუმს დიდი პორტი აქვს.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "cape",
+    "georgian": "კონცხი",
+    "pronunciation": "/keɪp/",
+    "example_en": "The Cape of Good Hope is in Africa.",
+    "example_ka": "კეთილი იმედის კონცხი აფრიკაშია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "lagoon",
+    "georgian": "ლაგუნა",
+    "pronunciation": "/ləˈɡuːn/",
+    "example_en": "The lagoon has clear blue water.",
+    "example_ka": "ლაგუნას გამჭვირვალე ცისფერი წყალი აქვs.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "isthmus",
+    "georgian": "ყელი",
+    "pronunciation": "/ˈɪsməs/",
+    "example_en": "Panama is on an isthmus.",
+    "example_ka": "პანამა ყელზეა.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "fjord",
+    "georgian": "ფიორდი",
+    "pronunciation": "/fjɔːrd/",
+    "example_en": "Norwegian fjords are stunning.",
+    "example_ka": "ნორვეგიის ფიორდები განსაცვიფრებელია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "crater",
+    "georgian": "კრატერი",
+    "pronunciation": "/ˈkreɪtər/",
+    "example_en": "The crater is very deep.",
+    "example_ka": "კრატერი ძალიან ღრმაა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "geyser",
+    "georgian": "გეიზერი",
+    "pronunciation": "/ˈɡaɪzər/",
+    "example_en": "The geyser erupts every hour.",
+    "example_ka": "გეიზერი ყოველ საათს ამოიფრქვევა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "mainland",
+    "georgian": "კონტინენტი",
+    "pronunciation": "/ˈmeɪnlænd/",
+    "example_en": "The mainland is bigger than the island.",
+    "example_ka": "კონტინენტი კუნძულზე დიდია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "offshore",
+    "georgian": "ნაპირგარეთ",
+    "pronunciation": "/ˌɒfˈʃɔːr/",
+    "example_en": "The offshore islands are remote.",
+    "example_ka": "ნაპირგარეთ კუნძულები შორეულია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "inland",
+    "georgian": "შიდა",
+    "pronunciation": "/ˈɪnlænd/",
+    "example_en": "The inland areas are drier.",
+    "example_ka": "შიდა ტერიტორიები უფრო მშრალია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "coastal",
+    "georgian": "სანაპირო",
+    "pronunciation": "/ˈkoʊstəl/",
+    "example_en": "Coastal cities are popular.",
+    "example_ka": "სანაპირო ქალაქები პოპულარულია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "maritime",
+    "georgian": "საზღვაო",
+    "pronunciation": "/ˈmærɪtaɪm/",
+    "example_en": "The country has a maritime tradition.",
+    "example_ka": "ქვეყანას საზღვაო ტრადიცია აქვს.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "landlocked",
+    "georgian": "ზღვაგაუსვლელი",
+    "pronunciation": "/ˈlændlɒkt/",
+    "example_en": "Armenia is a landlocked country.",
+    "example_ka": "სომხეთი ზღვაგაუსვლელი ქვეყანაა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "sovereign",
+    "georgian": "სუვერენული",
+    "pronunciation": "/ˈsɒvrɪn/",
+    "example_en": "Georgia is a sovereign state.",
+    "example_ka": "საქართველო სუვერენული სახელმწიფოა.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "autonomous",
+    "georgian": "ავტონომიური",
+    "pronunciation": "/ɔːˈtɒnəməs/",
+    "example_en": "Adjara is an autonomous region.",
+    "example_ka": "აჭარა ავტონომიური რეგიონია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "federation",
+    "georgian": "ფედერაცია",
+    "pronunciation": "/ˌfedəˈreɪʃən/",
+    "example_en": "Russia is a federation.",
+    "example_ka": "რუსეთი ფედერაციაა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "monarchy",
+    "georgian": "მონარქია",
+    "pronunciation": "/ˈmɒnərki/",
+    "example_en": "The UK is a constitutional monarchy.",
+    "example_ka": "გაერთიანებული სამეფო კონსტიტუციური მონარქიაა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "democracy",
+    "georgian": "დემოკრატია",
+    "pronunciation": "/dɪˈmɒkrəsi/",
+    "example_en": "Georgia is a democracy.",
+    "example_ka": "საქართველო დემოკრატიაა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "migration",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/maɪˈɡreɪʃən/",
+    "example_en": "Migration changes populations.",
+    "example_ka": "მიგრაცია მოსახლეობას ცვლის.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "census",
+    "georgian": "აღწერა",
+    "pronunciation": "/ˈsensəs/",
+    "example_en": "The census counts all people.",
+    "example_ka": "აღწერა ყველა ადამიანს ითვლის.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "density",
+    "georgian": "სიმჭიდროვე",
+    "pronunciation": "/ˈdensɪti/",
+    "example_en": "The population density is low.",
+    "example_ka": "მოსახლეობის სიმჭიდროვე დაბალია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "ethnicity",
+    "georgian": "ეთნიკურობა",
+    "pronunciation": "/eθˈnɪsɪti/",
+    "example_en": "Georgia has diverse ethnicities.",
+    "example_ka": "საქართველოში სხვადასხვა ეთნიკურობაა.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "indigenous",
+    "georgian": "მკვიდრი",
+    "pronunciation": "/ɪnˈdɪdʒɪnəs/",
+    "example_en": "The indigenous people protect the forest.",
+    "example_ka": "მკვიდრი მოსახლეობა ტყეს იცავს.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "dialect",
+    "georgian": "დიალექტი",
+    "pronunciation": "/ˈdaɪəlekt/",
+    "example_en": "Each region has its own dialect.",
+    "example_ka": "ყველა რეგიონს თავისი დიალექტი აქვს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "currency",
+    "georgian": "ვალუტა",
+    "pronunciation": "/ˈkɜːrənsi/",
+    "example_en": "The Georgian currency is the lari.",
+    "example_ka": "საქართველოს ვალუტა ლარია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "export",
+    "georgian": "ექსპორტი",
+    "pronunciation": "/ˈekspɔːrt/",
+    "example_en": "Georgia exports wine.",
+    "example_ka": "საქართველო ღვინოს ექსპორტს აკეთებს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "import",
+    "georgian": "იმპორტი",
+    "pronunciation": "/ˈɪmpɔːrt/",
+    "example_en": "We import many goods.",
+    "example_ka": "ბევრ საქონელს ვაიმპორტებთ.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "agriculture",
+    "georgian": "სოფლის მეურნეობა",
+    "pronunciation": "/ˈæɡrɪkʌltʃər/",
+    "example_en": "Agriculture is important in Kakheti.",
+    "example_ka": "სოფლის მეურნეობა კახეთში მნიშვნელოვანია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "industry",
+    "georgian": "მრეწველობა",
+    "pronunciation": "/ˈɪndəstri/",
+    "example_en": "The mining industry is growing.",
+    "example_ka": "სამთო მრეწველობა იზრდება.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "tourism",
+    "georgian": "ტურიზმი",
+    "pronunciation": "/ˈtʊrɪzəm/",
+    "example_en": "Tourism is important for Georgia.",
+    "example_ka": "ტურიზმი საქართველოსთვის მნიშვნელოვანია.",
+    "category": "geography-countries",
+    "level": "A2"
+  },
+  {
+    "english": "habitat",
+    "georgian": "ჰაბიტატი",
+    "pronunciation": "/ˈhæbɪtæt/",
+    "example_en": "The forest is a natural habitat.",
+    "example_ka": "ტყე ბუნებრივი ჰაბიტატია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "ecosystem",
+    "georgian": "ეკოსისტემა",
+    "pronunciation": "/ˈiːkoʊsɪstəm/",
+    "example_en": "The ecosystem is fragile.",
+    "example_ka": "ეკოსისტემა მყიფეა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "biodiversity",
+    "georgian": "ბიომრავალფეროვნება",
+    "pronunciation": "/ˌbaɪoʊdaɪˈvɜːrsɪti/",
+    "example_en": "Georgia has high biodiversity.",
+    "example_ka": "საქართველოში მაღალი ბიომრავალფეროვნებაა.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "wilderness",
+    "georgian": "ველური ბუნება",
+    "pronunciation": "/ˈwɪldərnəs/",
+    "example_en": "The wilderness is untouched.",
+    "example_ka": "ველური ბუნება ხელუხლებელია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "vegetation",
+    "georgian": "მცენარეულობა",
+    "pronunciation": "/ˌvedʒɪˈteɪʃən/",
+    "example_en": "The vegetation is lush and green.",
+    "example_ka": "მცენარეულობა უხვი და მწვანეა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "mineral",
+    "georgian": "მინერალი",
+    "pronunciation": "/ˈmɪnərəl/",
+    "example_en": "The region is rich in minerals.",
+    "example_ka": "რეგიონი მინერალებით მდიდარია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "resource",
+    "georgian": "რესურსი",
+    "pronunciation": "/rɪˈsɔːrs/",
+    "example_en": "Water is a valuable resource.",
+    "example_ka": "წყალი ღირებული რესურსია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "expedition",
+    "georgian": "ექსპედიცია",
+    "pronunciation": "/ˌekspɪˈdɪʃən/",
+    "example_en": "They went on an expedition.",
+    "example_ka": "ისინი ექსპედიციაში წავიდნენ.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "exploration",
+    "georgian": "კვლევა",
+    "pronunciation": "/ˌekspləˈreɪʃən/",
+    "example_en": "Space exploration is exciting.",
+    "example_ka": "კოსმოსის კვლევა საინტერესოა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "navigate",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˈnævɪɡeɪt/",
+    "example_en": "Navigate using the stars.",
+    "example_ka": "ვარსკვლავებით ნავიგაცია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "coordinate",
+    "georgian": "კოორდინატი",
+    "pronunciation": "/koʊˈɔːrdɪnət/",
+    "example_en": "Enter the GPS coordinates.",
+    "example_ka": "GPS კოორდინატები შეიყვანე.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "elevation",
+    "georgian": "სიმაღლე",
+    "pronunciation": "/ˌelɪˈveɪʃən/",
+    "example_en": "The elevation is 1500 meters.",
+    "example_ka": "სიმაღლე 1500 მეტრია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "seismic",
+    "georgian": "სეისმური",
+    "pronunciation": "/ˈsaɪzmɪk/",
+    "example_en": "The seismic activity is high.",
+    "example_ka": "სეისმური აქტივობა მაღალია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "volcanic",
+    "georgian": "ვულკანური",
+    "pronunciation": "/vɒlˈkænɪk/",
+    "example_en": "The volcanic soil is fertile.",
+    "example_ka": "ვულკანური ნიადაგი ნაყოფიერია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "continental",
+    "georgian": "კონტინენტური",
+    "pronunciation": "/ˌkɒntɪˈnentəl/",
+    "example_en": "The continental climate has cold winters.",
+    "example_ka": "კონტინენტურ კლიმატს ცივი ზამთარი აქვს.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "subtropical",
+    "georgian": "სუბტროპიკული",
+    "pronunciation": "/sʌbˈtrɒpɪkəl/",
+    "example_en": "Western Georgia is subtropical.",
+    "example_ka": "დასავლეთ საქართველო სუბტროპიკულია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "Mediterranean",
+    "georgian": "ხმელთაშუაზღვის",
+    "pronunciation": "/ˌmedɪtəˈreɪniən/",
+    "example_en": "The Mediterranean climate is mild.",
+    "example_ka": "ხმელთაშუაზღვის კლიმატი რბილია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "geographic",
+    "georgian": "გეოგრაფიული",
+    "pronunciation": "/ˌdʒiːəˈɡræfɪk/",
+    "example_en": "The geographic location is important.",
+    "example_ka": "გეოგრაფიული მდებარეობა მნიშვნელოვანია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "frontier",
+    "georgian": "საზღვარი",
+    "pronunciation": "/frʌnˈtɪr/",
+    "example_en": "The frontier was heavily guarded.",
+    "example_ka": "საზღვარი მძიმედ იყო დაცული.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "enclave",
+    "georgian": "ანკლავი",
+    "pronunciation": "/ˈenkleɪv/",
+    "example_en": "The city is an enclave.",
+    "example_ka": "ქალაქი ანკლავია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "topsoil",
+    "georgian": "ზედაფენა",
+    "pronunciation": "/ˈtɒpsɔɪl/",
+    "example_en": "The topsoil is thin here.",
+    "example_ka": "აქ ზედაფენა თხელია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "outcrop",
+    "georgian": "გამონაშვერი",
+    "pronunciation": "/ˈaʊtkrɒp/",
+    "example_en": "The rock outcrop is visible.",
+    "example_ka": "კლდის გამონაშვერი ჩანს.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "watershed",
+    "georgian": "წყალგამყოფი",
+    "pronunciation": "/ˈwɔːtərʃed/",
+    "example_en": "The mountain is a watershed.",
+    "example_ka": "მთა წყალგამყოფია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "landmass",
+    "georgian": "ხმელეთი",
+    "pronunciation": "/ˈlændmæs/",
+    "example_en": "Asia is the largest landmass.",
+    "example_ka": "აზია ყველაზე დიდი ხმელეთია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "atoll",
+    "georgian": "ატოლი",
+    "pronunciation": "/ˈætɒl/",
+    "example_en": "The atoll is made of coral.",
+    "example_ka": "ატოლი მარჯნისგან არის შექმნილი.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "iceberg",
+    "georgian": "აისბერგი",
+    "pronunciation": "/ˈaɪsbɜːrɡ/",
+    "example_en": "The iceberg broke off.",
+    "example_ka": "აისბერგი მოწყდა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "permafrost",
+    "georgian": "მარადმყინვარი",
+    "pronunciation": "/ˈpɜːrməfrɒst/",
+    "example_en": "Permafrost is melting in Siberia.",
+    "example_ka": "მარადმყინვარი სიბირში დნება.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "dune",
+    "georgian": "ქვიშის ბორცვი",
+    "pronunciation": "/djuːn/",
+    "example_en": "The sand dunes are beautiful.",
+    "example_ka": "ქვიშის ბორცვები ლამაზია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "ravine",
+    "georgian": "ხევი",
+    "pronunciation": "/rəˈviːn/",
+    "example_en": "The ravine is dangerous.",
+    "example_ka": "ხევი საშიშია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "meadow",
+    "georgian": "მდელო",
+    "pronunciation": "/ˈmedoʊ/",
+    "example_en": "The meadow is full of flowers.",
+    "example_ka": "მდელო ყვავილებით არის სავსე.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "estuary",
+    "georgian": "შესართავი",
+    "pronunciation": "/ˈestʃueri/",
+    "example_en": "The river estuary is wide.",
+    "example_ka": "მდინარის შესართავი ფართოა.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "rapids",
+    "georgian": "ზვირთები",
+    "pronunciation": "/ˈræpɪdz/",
+    "example_en": "The rapids are dangerous.",
+    "example_ka": "ზვირთები საშიშია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "tectonic",
+    "georgian": "ტექტონიკური",
+    "pronunciation": "/tekˈtɒnɪk/",
+    "example_en": "Tectonic plates cause earthquakes.",
+    "example_ka": "ტექტონიკური ფილები მიწისძვრებს იწვევს.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "sediment",
+    "georgian": "ნალექი",
+    "pronunciation": "/ˈsedɪmənt/",
+    "example_en": "Sediment builds up on the riverbed.",
+    "example_ka": "ნალექი მდინარის ფსკერზე გროვდება.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "mangrove",
+    "georgian": "მანგროვი",
+    "pronunciation": "/ˈmæŋɡroʊv/",
+    "example_en": "Mangroves protect the coastline.",
+    "example_ka": "მანგროვები სანაპიროს იცავს.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "limestone",
+    "georgian": "კირქვა",
+    "pronunciation": "/ˈlaɪmstoʊn/",
+    "example_en": "The cave is made of limestone.",
+    "example_ka": "გამოქვაბული კირქვისგან არის.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "granite",
+    "georgian": "გრანიტი",
+    "pronunciation": "/ˈɡrænɪt/",
+    "example_en": "The mountains are granite.",
+    "example_ka": "მთები გრანიტისაა.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "sandstone",
+    "georgian": "ქვიშაქვა",
+    "pronunciation": "/ˈsændstoʊn/",
+    "example_en": "The sandstone cliffs are red.",
+    "example_ka": "ქვიშაქვის კლდეები წითელია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "fossil",
+    "georgian": "ნაშრომი",
+    "pronunciation": "/ˈfɒsəl/",
+    "example_en": "They found a fossil in the rock.",
+    "example_ka": "კლდეში ნამარხი იპოვეს.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "migrate",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/maɪˈɡreɪt/",
+    "example_en": "Birds migrate south in winter.",
+    "example_ka": "ფრინველები ზამთარში სამხრეთით მიგრირებენ.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "coastline",
+    "georgian": "სანაპირო ზოლი",
+    "pronunciation": "/ˈkoʊstlaɪn/",
+    "example_en": "The coastline is beautiful.",
+    "example_ka": "სანაპირო ზოლი ლამაზია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "lowland",
+    "georgian": "დაბლობი",
+    "pronunciation": "/ˈloʊlænd/",
+    "example_en": "The lowland is good for farming.",
+    "example_ka": "დაბლობი მეურნეობისთვის კარგია.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "highland",
+    "georgian": "მაღალმთიანეთი",
+    "pronunciation": "/ˈhaɪlənd/",
+    "example_en": "The highlands are cold.",
+    "example_ka": "მაღალმთიანეთში ცივა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "upstream",
+    "georgian": "ზემოთ",
+    "pronunciation": "/ˈʌpstriːm/",
+    "example_en": "The village is upstream.",
+    "example_ka": "სოფელი ზემოთაა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "downstream",
+    "georgian": "ქვემოთ",
+    "pronunciation": "/ˈdaʊnstriːm/",
+    "example_en": "The city is downstream.",
+    "example_ka": "ქალაქი ქვემოთაა.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "subcontinent",
+    "georgian": "სუბკონტინენტი",
+    "pronunciation": "/sʌbˈkɒntɪnənt/",
+    "example_en": "India is a subcontinent.",
+    "example_ka": "ინდოეთი სუბკონტინენტია.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "landlord",
+    "georgian": "მიწათმესაკუთრე",
+    "pronunciation": "/ˈlændlɔːrd/",
+    "example_en": "The landlord owns much land.",
+    "example_ka": "მიწათმესაკუთრეს ბევრი მიწა ეკუთვნის.",
+    "category": "geography-countries",
+    "level": "B1"
+  },
+  {
+    "english": "nomad",
+    "georgian": "მომთაბარე",
+    "pronunciation": "/ˈnoʊmæd/",
+    "example_en": "Nomads travel from place to place.",
+    "example_ka": "მომთაბარეები ადგილიდან ადგილზე მოგზაურობენ.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "settler",
+    "georgian": "მოსახლე",
+    "pronunciation": "/ˈsetlər/",
+    "example_en": "The settlers built a new village.",
+    "example_ka": "მოსახლეებმა ახალი სოფელი ააშენეს.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "crust",
+    "georgian": "ქერქი",
+    "pronunciation": "/krʌst/",
+    "example_en": "The Earth's crust is thin.",
+    "example_ka": "დედამიწის ქერქი თხელია.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "mantle",
+    "georgian": "მანტია",
+    "pronunciation": "/ˈmæntəl/",
+    "example_en": "The mantle is below the crust.",
+    "example_ka": "მანტია ქერქის ქვემოთაა.",
+    "category": "geography-countries",
+    "level": "C1"
+  },
+  {
+    "english": "magma",
+    "georgian": "მაგმა",
+    "pronunciation": "/ˈmæɡmə/",
+    "example_en": "Magma rises through volcanoes.",
+    "example_ka": "მაგმა ვულკანებით ადის.",
+    "category": "geography-countries",
+    "level": "B2"
+  },
+  {
+    "english": "lava",
+    "georgian": "ლავა",
+    "pronunciation": "/ˈlɑːvə/",
+    "example_en": "The lava destroyed the village.",
+    "example_ka": "ლავამ სოფელი გაანადგურა.",
+    "category": "geography-countries",
+    "level": "A2"
+  }
 ]

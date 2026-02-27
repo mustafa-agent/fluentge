@@ -1,52 +1,1802 @@
 [
-  {"english":"adventure","georgian":"თავგადასავალი","pronunciation":"/ədˈvɛntʃər/","example_en":"Life is an adventure.","example_ka":"ცხოვრება თავგადასავალია.","category":"sports-extreme","level":"beginner"},
-  {"english":"surfing","georgian":"სერფინგი","pronunciation":"/ˈsɜːrfɪŋ/","example_en":"Surfing requires great balance.","example_ka":"სერფინგი კარგ წონასწორობას მოითხოვს.","category":"sports-extreme","level":"beginner"},
-  {"english":"skydiving","georgian":"თავისუფალი ვარდნა","pronunciation":"/ˈskaɪdaɪvɪŋ/","example_en":"Skydiving is an extreme experience.","example_ka":"თავისუფალი ვარდნა ექსტრემალური გამოცდილებაა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"bungee jumping","georgian":"ბანჯი ჯამპინგი","pronunciation":"/ˈbʌndʒi ˈdʒʌmpɪŋ/","example_en":"Have you ever tried bungee jumping?","example_ka":"ოდესმე სცადე ბანჯი ჯამპინგი?","category":"sports-extreme","level":"intermediate"},
-  {"english":"rock climbing","georgian":"ალპინიზმი","pronunciation":"/rɒk ˈklaɪmɪŋ/","example_en":"Rock climbing builds strength and courage.","example_ka":"ალპინიზმი ძალას და გამბედაობას აძლიერებს.","category":"sports-extreme","level":"intermediate"},
-  {"english":"paragliding","georgian":"პარაგლაიდინგი","pronunciation":"/ˈpærəɡlaɪdɪŋ/","example_en":"Paragliding over the mountains was incredible.","example_ka":"მთებზე პარაგლაიდინგი წარმოუდგენელი იყო.","category":"sports-extreme","level":"intermediate"},
-  {"english":"snowboarding","georgian":"სნოუბორდი","pronunciation":"/ˈsnoʊbɔːrdɪŋ/","example_en":"Snowboarding is popular in winter resorts.","example_ka":"სნოუბორდი ზამთრის კურორტებზე პოპულარულია.","category":"sports-extreme","level":"beginner"},
-  {"english":"skiing","georgian":"სათხილამურო","pronunciation":"/ˈskiːɪŋ/","example_en":"Skiing in Gudauri is fantastic.","example_ka":"გუდაურში სათხილამურო სპორტი ფანტასტიკურია.","category":"sports-extreme","level":"beginner"},
-  {"english":"rafting","georgian":"რაფტინგი","pronunciation":"/ˈræftɪŋ/","example_en":"White water rafting is thrilling.","example_ka":"მთის მდინარეზე რაფტინგი საოცარი განცდაა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"kayaking","georgian":"კაიაკინგი","pronunciation":"/ˈkaɪækɪŋ/","example_en":"We went kayaking on the river.","example_ka":"მდინარეზე კაიაკინგით წავედით.","category":"sports-extreme","level":"intermediate"},
-  {"english":"parachute","georgian":"პარაშუტი","pronunciation":"/ˈpærəʃuːt/","example_en":"He opened his parachute at 3000 meters.","example_ka":"მან პარაშუტი 3000 მეტრზე გახსნა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"harness","georgian":"აღკაზმულობა","pronunciation":"/ˈhɑːrnɪs/","example_en":"Always check your harness before climbing.","example_ka":"ცოცვის წინ ყოველთვის შეამოწმეთ აღკაზმულობა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"helmet","georgian":"ჩაფხუტი","pronunciation":"/ˈhɛlmɪt/","example_en":"Wearing a helmet is mandatory.","example_ka":"ჩაფხუტის ტარება სავალდებულოა.","category":"sports-extreme","level":"beginner"},
-  {"english":"adrenaline","georgian":"ადრენალინი","pronunciation":"/əˈdrɛnəlɪn/","example_en":"Extreme sports give you an adrenaline rush.","example_ka":"ექსტრემალური სპორტი ადრენალინს გაძლევს.","category":"sports-extreme","level":"intermediate"},
-  {"english":"cliff","georgian":"კლდე","pronunciation":"/klɪf/","example_en":"He jumped off the cliff into the water.","example_ka":"ის კლდიდან წყალში გადახტა.","category":"sports-extreme","level":"beginner"},
-  {"english":"waterfall","georgian":"ჩანჩქერი","pronunciation":"/ˈwɔːtərfɔːl/","example_en":"We hiked to a beautiful waterfall.","example_ka":"ლამაზ ჩანჩქერამდე ვილაშქრეთ.","category":"sports-extreme","level":"beginner"},
-  {"english":"trail","georgian":"ბილიკი","pronunciation":"/treɪl/","example_en":"The mountain trail was steep.","example_ka":"მთის ბილიკი ციცაბო იყო.","category":"sports-extreme","level":"beginner"},
-  {"english":"expedition","georgian":"ექსპედიცია","pronunciation":"/ˌɛkspɪˈdɪʃən/","example_en":"They organized an expedition to the summit.","example_ka":"მათ მწვერვალზე ექსპედიცია მოაწყვეს.","category":"sports-extreme","level":"intermediate"},
-  {"english":"summit","georgian":"მწვერვალი","pronunciation":"/ˈsʌmɪt/","example_en":"They reached the summit at dawn.","example_ka":"მათ მწვერვალს გამთენიისას მიაღწიეს.","category":"sports-extreme","level":"intermediate"},
-  {"english":"endurance","georgian":"გამძლეობა","pronunciation":"/ɪnˈdjʊərəns/","example_en":"Marathon running requires great endurance.","example_ka":"მარათონში სირბილი დიდ გამძლეობას მოითხოვს.","category":"sports-extreme","level":"intermediate"},
-  {"english":"safety gear","georgian":"უსაფრთხოების აღჭურვილობა","pronunciation":"/ˈseɪfti ɡɪər/","example_en":"Always wear proper safety gear.","example_ka":"ყოველთვის ატარეთ სათანადო უსაფრთხოების აღჭურვილობა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"zip line","georgian":"ზიპლაინი","pronunciation":"/zɪp laɪn/","example_en":"The zip line went over the canyon.","example_ka":"ზიპლაინი ხეობის ზემოთ გადიოდა.","category":"sports-extreme","level":"beginner"},
-  {"english":"mountain biking","georgian":"მთის ველოსპორტი","pronunciation":"/ˈmaʊntɪn ˈbaɪkɪŋ/","example_en":"Mountain biking is my favorite hobby.","example_ka":"მთის ველოსპორტი ჩემი საყვარელი ჰობია.","category":"sports-extreme","level":"intermediate"},
-  {"english":"scuba diving","georgian":"წყალქვეშ ყვინთვა","pronunciation":"/ˈskuːbə ˈdaɪvɪŋ/","example_en":"Scuba diving lets you explore underwater.","example_ka":"წყალქვეშ ყვინთვა წყალქვეშა სამყაროს შესწავლის საშუალებას გაძლევს.","category":"sports-extreme","level":"intermediate"},
-  {"english":"hang gliding","georgian":"დელტაპლანერიზმი","pronunciation":"/hæŋ ˈɡlaɪdɪŋ/","example_en":"Hang gliding gives you a bird's eye view.","example_ka":"დელტაპლანერიზმი ფრინველის თვალით ხედვას გაძლევს.","category":"sports-extreme","level":"advanced"},
-  {"english":"rappelling","georgian":"თოკით ჩამოსვლა","pronunciation":"/ræˈpɛlɪŋ/","example_en":"Rappelling down the cliff was scary.","example_ka":"კლდიდან თოკით ჩამოსვლა საშიში იყო.","category":"sports-extreme","level":"advanced"},
-  {"english":"wakeboarding","georgian":"ვეიკბორდინგი","pronunciation":"/ˈweɪkbɔːrdɪŋ/","example_en":"Wakeboarding is fun on the lake.","example_ka":"ტბაზე ვეიკბორდინგი სახალისოა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"sandboarding","georgian":"ქვიშაზე სრიალი","pronunciation":"/ˈsændbɔːrdɪŋ/","example_en":"Sandboarding down the dunes was exciting.","example_ka":"დიუნებზე ქვიშაზე სრიალი საინტერესო იყო.","category":"sports-extreme","level":"intermediate"},
-  {"english":"canyoning","georgian":"კანიონინგი","pronunciation":"/ˈkænjənɪŋ/","example_en":"Canyoning combines swimming, climbing and jumping.","example_ka":"კანიონინგი ცურვას, ცოცვას და ხტომას აერთიანებს.","category":"sports-extreme","level":"advanced"},
-  {"english":"BASE jumping","georgian":"ბეის ჯამპინგი","pronunciation":"/beɪs ˈdʒʌmpɪŋ/","example_en":"BASE jumping is one of the most dangerous sports.","example_ka":"ბეის ჯამპინგი ერთ-ერთი ყველაზე საშიში სპორტია.","category":"sports-extreme","level":"advanced"},
-  {"english":"altitude","georgian":"სიმაღლე","pronunciation":"/ˈæltɪtjuːd/","example_en":"The altitude made breathing difficult.","example_ka":"სიმაღლის გამო სუნთქვა გაძნელდა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"compass","georgian":"კომპასი","pronunciation":"/ˈkʌmpəs/","example_en":"Always carry a compass when hiking.","example_ka":"ლაშქრობისას ყოველთვის იქონიეთ კომპასი.","category":"sports-extreme","level":"beginner"},
-  {"english":"wilderness","georgian":"ველური ბუნება","pronunciation":"/ˈwɪldərnəs/","example_en":"Survival in the wilderness requires skills.","example_ka":"ველურ ბუნებაში გადარჩენა უნარებს მოითხოვს.","category":"sports-extreme","level":"intermediate"},
-  {"english":"freefall","georgian":"თავისუფალი ვარდნა","pronunciation":"/ˈfriːfɔːl/","example_en":"The freefall lasted 60 seconds.","example_ka":"თავისუფალი ვარდნა 60 წამი გაგრძელდა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"instructor","georgian":"ინსტრუქტორი","pronunciation":"/ɪnˈstrʌktər/","example_en":"The instructor taught us safety rules.","example_ka":"ინსტრუქტორმა უსაფრთხოების წესები გვასწავლა.","category":"sports-extreme","level":"beginner"},
-  {"english":"wetsuit","georgian":"ჰიდროკოსტიუმი","pronunciation":"/ˈwɛtsuːt/","example_en":"You need a wetsuit for cold water diving.","example_ka":"ცივ წყალში ყვინთვისთვის ჰიდროკოსტიუმი გჭირდება.","category":"sports-extreme","level":"intermediate"},
-  {"english":"terrain","georgian":"რელიეფი","pronunciation":"/təˈreɪn/","example_en":"The terrain was rough and challenging.","example_ka":"რელიეფი ხორკლიანი და რთული იყო.","category":"sports-extreme","level":"intermediate"},
-  {"english":"obstacle","georgian":"დაბრკოლება","pronunciation":"/ˈɒbstəkəl/","example_en":"The obstacle course tested our fitness.","example_ka":"დაბრკოლებების ბილიკმა ჩვენი ფიზიკური მომზადება შეამოწმა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"risk","georgian":"რისკი","pronunciation":"/rɪsk/","example_en":"Every extreme sport involves some risk.","example_ka":"ყველა ექსტრემალური სპორტი გარკვეულ რისკს მოიცავს.","category":"sports-extreme","level":"beginner"},
-  {"english":"thrill","georgian":"აღფრთოვანება","pronunciation":"/θrɪl/","example_en":"The thrill of the jump was unforgettable.","example_ka":"ხტომის აღფრთოვანება დაუვიწყარი იყო.","category":"sports-extreme","level":"intermediate"},
-  {"english":"rope","georgian":"თოკი","pronunciation":"/roʊp/","example_en":"Hold the rope tightly.","example_ka":"თოკი მაგრად დაიჭირე.","category":"sports-extreme","level":"beginner"},
-  {"english":"carabiner","georgian":"კარაბინი","pronunciation":"/ˌkærəˈbiːnər/","example_en":"Attach the carabiner to the harness.","example_ka":"კარაბინი აღკაზმულობაზე მიამაგრეთ.","category":"sports-extreme","level":"advanced"},
-  {"english":"peak","georgian":"მწვერვალი","pronunciation":"/piːk/","example_en":"We could see the peak from the base camp.","example_ka":"საბაზო ბანაკიდან მწვერვალი ჩანდა.","category":"sports-extreme","level":"beginner"},
-  {"english":"avalanche","georgian":"ზვავი","pronunciation":"/ˈævəlæntʃ/","example_en":"An avalanche blocked the road.","example_ka":"ზვავმა გზა გადაკეტა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"current","georgian":"დინება","pronunciation":"/ˈkʌrənt/","example_en":"The river current was very strong.","example_ka":"მდინარის დინება ძალიან ძლიერი იყო.","category":"sports-extreme","level":"beginner"},
-  {"english":"trekking","georgian":"ლაშქრობა","pronunciation":"/ˈtrɛkɪŋ/","example_en":"Trekking in the Caucasus is amazing.","example_ka":"კავკასიაში ლაშქრობა საოცარია.","category":"sports-extreme","level":"beginner"},
-  {"english":"glider","georgian":"გლაიდერი","pronunciation":"/ˈɡlaɪdər/","example_en":"The glider soared above the valley.","example_ka":"გლაიდერი ხეობის ზემოთ მიფრინავდა.","category":"sports-extreme","level":"intermediate"},
-  {"english":"survival","georgian":"გადარჩენა","pronunciation":"/sərˈvaɪvəl/","example_en":"Survival skills are essential in the wild.","example_ka":"ველურ ბუნებაში გადარჩენის უნარები აუცილებელია.","category":"sports-extreme","level":"intermediate"},
-  {"english":"courage","georgian":"გამბედაობა","pronunciation":"/ˈkʌrɪdʒ/","example_en":"It takes courage to try extreme sports.","example_ka":"ექსტრემალური სპორტის საცდელად გამბედაობა სჭირდება.","category":"sports-extreme","level":"beginner"},
-  {"english":"challenge","georgian":"გამოწვევა","pronunciation":"/ˈtʃælɪndʒ/","example_en":"Every climb is a new challenge.","example_ka":"ყველა ასვლა ახალი გამოწვევაა.","category":"sports-extreme","level":"beginner"}
+  {
+    "english": "adventure",
+    "georgian": "თავგადასავალი",
+    "pronunciation": "/ədˈvɛntʃər/",
+    "example_en": "Life is an adventure.",
+    "example_ka": "ცხოვრება თავგადასავალია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "surfing",
+    "georgian": "სერფინგი",
+    "pronunciation": "/ˈsɜːrfɪŋ/",
+    "example_en": "Surfing requires great balance.",
+    "example_ka": "სერფინგი კარგ წონასწორობას მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "skydiving",
+    "georgian": "თავისუფალი ვარდნა",
+    "pronunciation": "/ˈskaɪdaɪvɪŋ/",
+    "example_en": "Skydiving is an extreme experience.",
+    "example_ka": "თავისუფალი ვარდნა ექსტრემალური გამოცდილებაა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "paragliding",
+    "georgian": "პარაგლაიდინგი",
+    "pronunciation": "/ˈpærəɡlaɪdɪŋ/",
+    "example_en": "Paragliding over the mountains was incredible.",
+    "example_ka": "მთებზე პარაგლაიდინგი წარმოუდგენელი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "snowboarding",
+    "georgian": "სნოუბორდი",
+    "pronunciation": "/ˈsnoʊbɔːrdɪŋ/",
+    "example_en": "Snowboarding is popular in winter resorts.",
+    "example_ka": "სნოუბორდი ზამთრის კურორტებზე პოპულარულია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "skiing",
+    "georgian": "სათხილამურო",
+    "pronunciation": "/ˈskiːɪŋ/",
+    "example_en": "Skiing in Gudauri is fantastic.",
+    "example_ka": "გუდაურში სათხილამურო სპორტი ფანტასტიკურია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "rafting",
+    "georgian": "რაფტინგი",
+    "pronunciation": "/ˈræftɪŋ/",
+    "example_en": "White water rafting is thrilling.",
+    "example_ka": "მთის მდინარეზე რაფტინგი საოცარი განცდაა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "kayaking",
+    "georgian": "კაიაკინგი",
+    "pronunciation": "/ˈkaɪækɪŋ/",
+    "example_en": "We went kayaking on the river.",
+    "example_ka": "მდინარეზე კაიაკინგით წავედით.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "parachute",
+    "georgian": "პარაშუტი",
+    "pronunciation": "/ˈpærəʃuːt/",
+    "example_en": "He opened his parachute at 3000 meters.",
+    "example_ka": "მან პარაშუტი 3000 მეტრზე გახსნა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "harness",
+    "georgian": "აღკაზმულობა",
+    "pronunciation": "/ˈhɑːrnɪs/",
+    "example_en": "Always check your harness before climbing.",
+    "example_ka": "ცოცვის წინ ყოველთვის შეამოწმეთ აღკაზმულობა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "helmet",
+    "georgian": "ჩაფხუტი",
+    "pronunciation": "/ˈhɛlmɪt/",
+    "example_en": "Wearing a helmet is mandatory.",
+    "example_ka": "ჩაფხუტის ტარება სავალდებულოა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "adrenaline",
+    "georgian": "ადრენალინი",
+    "pronunciation": "/əˈdrɛnəlɪn/",
+    "example_en": "Extreme sports give you an adrenaline rush.",
+    "example_ka": "ექსტრემალური სპორტი ადრენალინს გაძლევს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "cliff",
+    "georgian": "კლდე",
+    "pronunciation": "/klɪf/",
+    "example_en": "He jumped off the cliff into the water.",
+    "example_ka": "ის კლდიდან წყალში გადახტა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "waterfall",
+    "georgian": "ჩანჩქერი",
+    "pronunciation": "/ˈwɔːtərfɔːl/",
+    "example_en": "We hiked to a beautiful waterfall.",
+    "example_ka": "ლამაზ ჩანჩქერამდე ვილაშქრეთ.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "trail",
+    "georgian": "ბილიკი",
+    "pronunciation": "/treɪl/",
+    "example_en": "The mountain trail was steep.",
+    "example_ka": "მთის ბილიკი ციცაბო იყო.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "expedition",
+    "georgian": "ექსპედიცია",
+    "pronunciation": "/ˌɛkspɪˈdɪʃən/",
+    "example_en": "They organized an expedition to the summit.",
+    "example_ka": "მათ მწვერვალზე ექსპედიცია მოაწყვეს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "summit",
+    "georgian": "მწვერვალი",
+    "pronunciation": "/ˈsʌmɪt/",
+    "example_en": "They reached the summit at dawn.",
+    "example_ka": "მათ მწვერვალს გამთენიისას მიაღწიეს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "endurance",
+    "georgian": "გამძლეობა",
+    "pronunciation": "/ɪnˈdjʊərəns/",
+    "example_en": "Marathon running requires great endurance.",
+    "example_ka": "მარათონში სირბილი დიდ გამძლეობას მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "rappelling",
+    "georgian": "თოკით ჩამოსვლა",
+    "pronunciation": "/ræˈpɛlɪŋ/",
+    "example_en": "Rappelling down the cliff was scary.",
+    "example_ka": "კლდიდან თოკით ჩამოსვლა საშიში იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "wakeboarding",
+    "georgian": "ვეიკბორდინგი",
+    "pronunciation": "/ˈweɪkbɔːrdɪŋ/",
+    "example_en": "Wakeboarding is fun on the lake.",
+    "example_ka": "ტბაზე ვეიკბორდინგი სახალისოა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "sandboarding",
+    "georgian": "ქვიშაზე სრიალი",
+    "pronunciation": "/ˈsændbɔːrdɪŋ/",
+    "example_en": "Sandboarding down the dunes was exciting.",
+    "example_ka": "დიუნებზე ქვიშაზე სრიალი საინტერესო იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "canyoning",
+    "georgian": "კანიონინგი",
+    "pronunciation": "/ˈkænjənɪŋ/",
+    "example_en": "Canyoning combines swimming, climbing and jumping.",
+    "example_ka": "კანიონინგი ცურვას, ცოცვას და ხტომას აერთიანებს.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "altitude",
+    "georgian": "სიმაღლე",
+    "pronunciation": "/ˈæltɪtjuːd/",
+    "example_en": "The altitude made breathing difficult.",
+    "example_ka": "სიმაღლის გამო სუნთქვა გაძნელდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "compass",
+    "georgian": "კომპასი",
+    "pronunciation": "/ˈkʌmpəs/",
+    "example_en": "Always carry a compass when hiking.",
+    "example_ka": "ლაშქრობისას ყოველთვის იქონიეთ კომპასი.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "wilderness",
+    "georgian": "ველური ბუნება",
+    "pronunciation": "/ˈwɪldərnəs/",
+    "example_en": "Survival in the wilderness requires skills.",
+    "example_ka": "ველურ ბუნებაში გადარჩენა უნარებს მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "freefall",
+    "georgian": "თავისუფალი ვარდნა",
+    "pronunciation": "/ˈfriːfɔːl/",
+    "example_en": "The freefall lasted 60 seconds.",
+    "example_ka": "თავისუფალი ვარდნა 60 წამი გაგრძელდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "instructor",
+    "georgian": "ინსტრუქტორი",
+    "pronunciation": "/ɪnˈstrʌktər/",
+    "example_en": "The instructor taught us safety rules.",
+    "example_ka": "ინსტრუქტორმა უსაფრთხოების წესები გვასწავლა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "wetsuit",
+    "georgian": "ჰიდროკოსტიუმი",
+    "pronunciation": "/ˈwɛtsuːt/",
+    "example_en": "You need a wetsuit for cold water diving.",
+    "example_ka": "ცივ წყალში ყვინთვისთვის ჰიდროკოსტიუმი გჭირდება.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "terrain",
+    "georgian": "რელიეფი",
+    "pronunciation": "/təˈreɪn/",
+    "example_en": "The terrain was rough and challenging.",
+    "example_ka": "რელიეფი ხორკლიანი და რთული იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "obstacle",
+    "georgian": "დაბრკოლება",
+    "pronunciation": "/ˈɒbstəkəl/",
+    "example_en": "The obstacle course tested our fitness.",
+    "example_ka": "დაბრკოლებების ბილიკმა ჩვენი ფიზიკური მომზადება შეამოწმა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "risk",
+    "georgian": "რისკი",
+    "pronunciation": "/rɪsk/",
+    "example_en": "Every extreme sport involves some risk.",
+    "example_ka": "ყველა ექსტრემალური სპორტი გარკვეულ რისკს მოიცავს.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "thrill",
+    "georgian": "აღფრთოვანება",
+    "pronunciation": "/θrɪl/",
+    "example_en": "The thrill of the jump was unforgettable.",
+    "example_ka": "ხტომის აღფრთოვანება დაუვიწყარი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "rope",
+    "georgian": "თოკი",
+    "pronunciation": "/roʊp/",
+    "example_en": "Hold the rope tightly.",
+    "example_ka": "თოკი მაგრად დაიჭირე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "carabiner",
+    "georgian": "კარაბინი",
+    "pronunciation": "/ˌkærəˈbiːnər/",
+    "example_en": "Attach the carabiner to the harness.",
+    "example_ka": "კარაბინი აღკაზმულობაზე მიამაგრეთ.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "peak",
+    "georgian": "მწვერვალი",
+    "pronunciation": "/piːk/",
+    "example_en": "We could see the peak from the base camp.",
+    "example_ka": "საბაზო ბანაკიდან მწვერვალი ჩანდა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "avalanche",
+    "georgian": "ზვავი",
+    "pronunciation": "/ˈævəlæntʃ/",
+    "example_en": "An avalanche blocked the road.",
+    "example_ka": "ზვავმა გზა გადაკეტა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "current",
+    "georgian": "დინება",
+    "pronunciation": "/ˈkʌrənt/",
+    "example_en": "The river current was very strong.",
+    "example_ka": "მდინარის დინება ძალიან ძლიერი იყო.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "trekking",
+    "georgian": "ლაშქრობა",
+    "pronunciation": "/ˈtrɛkɪŋ/",
+    "example_en": "Trekking in the Caucasus is amazing.",
+    "example_ka": "კავკასიაში ლაშქრობა საოცარია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "glider",
+    "georgian": "გლაიდერი",
+    "pronunciation": "/ˈɡlaɪdər/",
+    "example_en": "The glider soared above the valley.",
+    "example_ka": "გლაიდერი ხეობის ზემოთ მიფრინავდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "survival",
+    "georgian": "გადარჩენა",
+    "pronunciation": "/sərˈvaɪvəl/",
+    "example_en": "Survival skills are essential in the wild.",
+    "example_ka": "ველურ ბუნებაში გადარჩენის უნარები აუცილებელია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "courage",
+    "georgian": "გამბედაობა",
+    "pronunciation": "/ˈkʌrɪdʒ/",
+    "example_en": "It takes courage to try extreme sports.",
+    "example_ka": "ექსტრემალური სპორტის საცდელად გამბედაობა სჭირდება.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "challenge",
+    "georgian": "გამოწვევა",
+    "pronunciation": "/ˈtʃælɪndʒ/",
+    "example_en": "Every climb is a new challenge.",
+    "example_ka": "ყველა ასვლა ახალი გამოწვევაა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "extreme",
+    "georgian": "ექსტრემალური",
+    "pronunciation": "/ɪkˈstriːm/",
+    "example_en": "He loves extreme sports.",
+    "example_ka": "მას ექსტრემალური სპორტი უყვარს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "dangerous",
+    "georgian": "საშიში",
+    "pronunciation": "/ˈdeɪndʒərəs/",
+    "example_en": "This activity is dangerous.",
+    "example_ka": "ეს საქმიანობა საშიშია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "fearless",
+    "georgian": "შიშისგან თავისუფალი",
+    "pronunciation": "/ˈfɪrləs/",
+    "example_en": "The athlete is fearless.",
+    "example_ka": "სპორტსმენი შიშისგან თავისუფალია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "bold",
+    "georgian": "გამბედავი",
+    "pronunciation": "/boʊld/",
+    "example_en": "That was a bold move.",
+    "example_ka": "ეს გამბედავი ნაბიჯი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "daring",
+    "georgian": "გამბედავი",
+    "pronunciation": "/ˈderɪŋ/",
+    "example_en": "She made a daring jump.",
+    "example_ka": "მან გამბედავი ხტომა გააკეთა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "brave",
+    "georgian": "მამაცი",
+    "pronunciation": "/breɪv/",
+    "example_en": "You have to be brave to try this.",
+    "example_ka": "ამის საცდელად მამაცი უნდა იყო.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "risky",
+    "georgian": "რისკიანი",
+    "pronunciation": "/ˈrɪski/",
+    "example_en": "This is a risky sport.",
+    "example_ka": "ეს რისკიანი სპორტია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "hazardous",
+    "georgian": "საშიში",
+    "pronunciation": "/ˈhæzərdəs/",
+    "example_en": "Weather conditions are hazardous.",
+    "example_ka": "ამინდის პირობები საშიშია.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "perilous",
+    "georgian": "საშიში",
+    "pronunciation": "/ˈperələs/",
+    "example_en": "The journey was perilous.",
+    "example_ka": "მოგზაურობა საშიში იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "treacherous",
+    "georgian": "საშიში",
+    "pronunciation": "/ˈtretʃərəs/",
+    "example_en": "The mountain path is treacherous.",
+    "example_ka": "მთის ბილიკი საშიშია.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "precarious",
+    "georgian": "არასტაბილური",
+    "pronunciation": "/prɪˈkerɪəs/",
+    "example_en": "He was in a precarious position.",
+    "example_ka": "ის არასტაბილურ მდგომარეობაში იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "steep",
+    "georgian": "ციცაბო",
+    "pronunciation": "/stiːp/",
+    "example_en": "The slope is very steep.",
+    "example_ka": "ფერდობი ძალიან ციცაბოა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "vertical",
+    "georgian": "ვერტიკალური",
+    "pronunciation": "/ˈvɜːrtəkəl/",
+    "example_en": "The wall is almost vertical.",
+    "example_ka": "კედელი თითქმის ვერტიკალურია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "precipice",
+    "georgian": "უფსკრული",
+    "pronunciation": "/ˈpresəpəs/",
+    "example_en": "Don't go near the precipice.",
+    "example_ka": "უფსკრულს ნუ მიუახლოვდები.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "abyss",
+    "georgian": "ღრმული",
+    "pronunciation": "/əˈbɪs/",
+    "example_en": "The abyss below was frightening.",
+    "example_ka": "ქვემოთ ღრმული საშიში იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "ledge",
+    "georgian": "კიდე",
+    "pronunciation": "/ledʒ/",
+    "example_en": "He stood on a narrow ledge.",
+    "example_ka": "ის ვიწრო კიდეზე იდგა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "grip",
+    "georgian": "დაჭერა",
+    "pronunciation": "/ɡrɪp/",
+    "example_en": "Keep a strong grip on the rope.",
+    "example_ka": "თოკი მტკიცედ დაიჭირე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "hold",
+    "georgian": "საყრდენი",
+    "pronunciation": "/hoʊld/",
+    "example_en": "Find a good hold on the rock.",
+    "example_ka": "კლდეზე კარგი საყრდენი იპოვე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "anchor",
+    "georgian": "წამყვანი",
+    "pronunciation": "/ˈæŋkər/",
+    "example_en": "Set the anchor point securely.",
+    "example_ka": "წამყვანი წერტილი უსაფრთხოდ დააყენე.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "belay",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/bɪˈleɪ/",
+    "example_en": "He will belay while you climb.",
+    "example_ka": "ის უსაფრთხოებას უზრუნველყოფს შენი ცოცვისას.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "ascent",
+    "georgian": "ასვლა",
+    "pronunciation": "/əˈsent/",
+    "example_en": "The ascent took five hours.",
+    "example_ka": "ასვლას ხუთი საათი დასჭირდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "descent",
+    "georgian": "ჩამოსვლა",
+    "pronunciation": "/dɪˈsent/",
+    "example_en": "The descent was more difficult.",
+    "example_ka": "ჩამოსვლა უფრო რთული იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "base",
+    "georgian": "ბაზა",
+    "pronunciation": "/beɪs/",
+    "example_en": "We started from the base camp.",
+    "example_ka": "საბაზო ბანაკიდან დავიწყეთ.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "camp",
+    "georgian": "ბანაკი",
+    "pronunciation": "/kæmp/",
+    "example_en": "Set up camp before dark.",
+    "example_ka": "დაბნელებამდე ბანაკი გამოაშენე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "tent",
+    "georgian": "კარავი",
+    "pronunciation": "/tent/",
+    "example_en": "The tent protects from wind.",
+    "example_ka": "კარავი ქარისგან იცავს.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "shelter",
+    "georgian": "თავშესაფარი",
+    "pronunciation": "/ˈʃeltər/",
+    "example_en": "Find shelter from the storm.",
+    "example_ka": "ქარიშხლისგან თავშესაფარი იპოვე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "exposure",
+    "georgian": "ზემოქმედება",
+    "pronunciation": "/ɪkˈspoʊʒər/",
+    "example_en": "Avoid exposure to extreme cold.",
+    "example_ka": "ექსტრემალური სიცივის ზემოქმედებას თავი აარიდე.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "hypothermia",
+    "georgian": "ჰიპოთერმია",
+    "pronunciation": "/ˌhaɪpəˈθɜːrmiə/",
+    "example_en": "Hypothermia is a serious risk.",
+    "example_ka": "ჰიპოთერმია სერიოზული რისკია.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "frostbite",
+    "georgian": "ყინვისგან დაზიანება",
+    "pronunciation": "/ˈfrɔːstbaɪt/",
+    "example_en": "Protect your fingers from frostbite.",
+    "example_ka": "თითები ყინვისგან დაზიანებისგან დაიცავი.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "glacier",
+    "georgian": "მყინვარი",
+    "pronunciation": "/ˈɡleɪʃər/",
+    "example_en": "The glacier is slowly moving.",
+    "example_ka": "მყინვარი ნელა მოძრაობს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "crevasse",
+    "georgian": "ბზარი",
+    "pronunciation": "/krəˈvæs/",
+    "example_en": "Be careful of hidden crevasses.",
+    "example_ka": "დამალული ბზარებისგან ფრთხილად იყავი.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "iceberg",
+    "georgian": "აისბერგი",
+    "pronunciation": "/ˈaɪsbɜːrɡ/",
+    "example_en": "The iceberg was massive.",
+    "example_ka": "აისბერგი უზარმაზარი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "blizzard",
+    "georgian": "ბურანი",
+    "pronunciation": "/ˈblɪzərd/",
+    "example_en": "The blizzard made visibility zero.",
+    "example_ka": "ბურანმა ხილვადობა ნულამდე დაიყვანა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "whiteout",
+    "georgian": "ღია ღრუბელი",
+    "pronunciation": "/ˈwaɪtaʊt/",
+    "example_en": "The whiteout conditions were dangerous.",
+    "example_ka": "ღია ღრუბლის პირობები საშიში იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "storm",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/stɔːrm/",
+    "example_en": "The storm forced us to stop.",
+    "example_ka": "ქარიშხალმა შეჩერება აიძულა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "lightning",
+    "georgian": "ელვა",
+    "pronunciation": "/ˈlaɪtnɪŋ/",
+    "example_en": "Lightning struck nearby.",
+    "example_ka": "ელვამ ახლოს მოხვდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "thunder",
+    "georgian": "ქუხილი",
+    "pronunciation": "/ˈθʌndər/",
+    "example_en": "The thunder was deafening.",
+    "example_ka": "ქუხილი ყურისმომწყობი იყო.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "tornado",
+    "georgian": "ტორნადო",
+    "pronunciation": "/tɔːrˈneɪdoʊ/",
+    "example_en": "The tornado was approaching fast.",
+    "example_ka": "ტორნადო სწრაფად ახლოვდებოდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "hurricane",
+    "georgian": "ურაგანი",
+    "pronunciation": "/ˈhɜːrəkən/",
+    "example_en": "The hurricane caused massive damage.",
+    "example_ka": "ურაგანმა უზარმაზარი ზიანი მიაყენა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "typhoon",
+    "georgian": "ტაიფუნი",
+    "pronunciation": "/taɪˈfuːn/",
+    "example_en": "The typhoon hit the coast.",
+    "example_ka": "ტაიფუნმა სანაპირო დაარტყა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "wave",
+    "georgian": "ტალღა",
+    "pronunciation": "/weɪv/",
+    "example_en": "The wave was 20 feet high.",
+    "example_ka": "ტალღა 20 ფუტი მაღალი იყო.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "tsunami",
+    "georgian": "ცუნამი",
+    "pronunciation": "/tsuːˈnɑːmi/",
+    "example_en": "The tsunami destroyed everything.",
+    "example_ka": "ცუნამიმ ყველაფერი გაანადგურა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "rapids",
+    "georgian": "ძვრები",
+    "pronunciation": "/ˈræpədz/",
+    "example_en": "Navigate through the rapids carefully.",
+    "example_ka": "ძვრებში ფრთხილად გაიარე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "turbulence",
+    "georgian": "ტურბულენტობა",
+    "pronunciation": "/ˈtɜːrbjələns/",
+    "example_en": "The water turbulence was intense.",
+    "example_ka": "წყლის ტურბულენტობა ინტენსიური იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "eddy",
+    "georgian": "ვორვარი",
+    "pronunciation": "/ˈedi/",
+    "example_en": "The kayak got caught in an eddy.",
+    "example_ka": "კაიაკი ვორვარში ჩავარდა.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "upstream",
+    "georgian": "წყლის დინების საწინააღმდეგოდ",
+    "pronunciation": "/ˈʌpstriːm/",
+    "example_en": "We paddled upstream.",
+    "example_ka": "წყლის დინების საწინააღმდეგოდ ვნაოსნობდით.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "downstream",
+    "georgian": "წყლის დინების მიხედვით",
+    "pronunciation": "/ˈdaʊnstriːm/",
+    "example_en": "Floating downstream was easier.",
+    "example_ka": "წყლის დინების მიხედვით ცურვა ადვილი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "paddle",
+    "georgian": "ნიჩაბი",
+    "pronunciation": "/ˈpædəl/",
+    "example_en": "Use your paddle to steer.",
+    "example_ka": "მანკანისთვის ნიჩაბი გამოიყენე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "vest",
+    "georgian": "ჟილეტი",
+    "pronunciation": "/vest/",
+    "example_en": "The life vest will keep you afloat.",
+    "example_ka": "სიცოცხლის ჟილეტი წყალზე დაგიტოვებს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "gear",
+    "georgian": "აღჭურვილობა",
+    "pronunciation": "/ɡɪr/",
+    "example_en": "Check all your gear before starting.",
+    "example_ka": "დაწყებამდე მთელი აღჭურვილობა შეამოწმე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "equipment",
+    "georgian": "ტექნიკა",
+    "pronunciation": "/ɪˈkwɪpmənt/",
+    "example_en": "Proper equipment is essential.",
+    "example_ka": "სათანადო ტექნიკა აუცილებელია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "safety",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/ˈseɪfti/",
+    "example_en": "Safety should be your first priority.",
+    "example_ka": "უსაფრთხოება პირველი პრიორიტეტი უნდა იყოს.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "emergency",
+    "georgian": "გადაუდებელი",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "Have an emergency plan ready.",
+    "example_ka": "გადაუდებელი ვითარების გეგმა მოამზადე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "rescue",
+    "georgian": "გადარჩენა",
+    "pronunciation": "/ˈreskjuː/",
+    "example_en": "The rescue team arrived quickly.",
+    "example_ka": "გადამარჩენელი გუნდი სწრაფად მოვიდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "first",
+    "georgian": "პირველი",
+    "pronunciation": "/fɜːrst/",
+    "example_en": "Learn first aid techniques.",
+    "example_ka": "პირველადი დახმარების მეთოდები ისწავლე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "medical",
+    "georgian": "სამედიცინო",
+    "pronunciation": "/ˈmedəkəl/",
+    "example_en": "Bring a medical kit with you.",
+    "example_ka": "სამედიცინო ნაკრები თან აიღე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "injury",
+    "georgian": "ტრავმა",
+    "pronunciation": "/ˈɪndʒəri/",
+    "example_en": "He suffered a minor injury.",
+    "example_ka": "მან მცირე ტრავმა მიიღო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "fracture",
+    "georgian": "მოტეხილობა",
+    "pronunciation": "/ˈfræktʃər/",
+    "example_en": "The X-ray showed a fracture.",
+    "example_ka": "რენტგენმა მოტეხილობა აჩვენა.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "sprain",
+    "georgian": "დაჭიმვა",
+    "pronunciation": "/spreɪn/",
+    "example_en": "She sprained her ankle.",
+    "example_ka": "მან ტერფი დაიჭიმა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "bruise",
+    "georgian": "სისხლჩაქცევა",
+    "pronunciation": "/bruːz/",
+    "example_en": "The fall left a big bruise.",
+    "example_ka": "დაცემამ დიდი სისხლჩაქცევა დატოვა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "cut",
+    "georgian": "განაკვეთი",
+    "pronunciation": "/kʌt/",
+    "example_en": "The sharp rock caused a deep cut.",
+    "example_ka": "ბასრმა ქვამ ღრმა განაკვეთი გამოიწვია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "bleeding",
+    "georgian": "სისხლდენა",
+    "pronunciation": "/ˈbliːdɪŋ/",
+    "example_en": "Stop the bleeding immediately.",
+    "example_ka": "სისხლდენა ამთავითვე შეაჩერე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "bandage",
+    "georgian": "ბინტი",
+    "pronunciation": "/ˈbændɪdʒ/",
+    "example_en": "Apply a bandage to the wound.",
+    "example_ka": "ჭრილობაზე ბინტი მოახვიე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "stretcher",
+    "georgian": "ნაძვრები",
+    "pronunciation": "/ˈstretʃər/",
+    "example_en": "They carried him on a stretcher.",
+    "example_ka": "ნაძვრებზე გადაიყვანეს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "helicopter",
+    "georgian": "ვერტმფრენი",
+    "pronunciation": "/ˈhelɪkɑːptər/",
+    "example_en": "The helicopter evacuated the climber.",
+    "example_ka": "ვერტმფრენმა ცოცვა ევაკუაცია გაუკეთა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "evacuation",
+    "georgian": "ევაკუაცია",
+    "pronunciation": "/ɪˌvækjuˈeɪʃən/",
+    "example_en": "Emergency evacuation was necessary.",
+    "example_ka": "გადაუდებელი ევაკუაცია საჭირო იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "radio",
+    "georgian": "რადიო",
+    "pronunciation": "/ˈreɪdioʊ/",
+    "example_en": "Use the radio to call for help.",
+    "example_ka": "დახმარების გამოსაძახებლად რადიო გამოიყენე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "signal",
+    "georgian": "სიგნალი",
+    "pronunciation": "/ˈsɪɡnəl/",
+    "example_en": "Send a distress signal.",
+    "example_ka": "განგაშის სიგნალი გააგზავნე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "flare",
+    "georgian": "სიგნალური რაკეტა",
+    "pronunciation": "/fler/",
+    "example_en": "Fire a flare to signal for help.",
+    "example_ka": "დახმარების სიგნალისთვის რაკეტა ისროლე.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "whistle",
+    "georgian": "სასტვენი",
+    "pronunciation": "/ˈwɪsəl/",
+    "example_en": "Blow your whistle three times.",
+    "example_ka": "სასტვენი სამჯერ გამოიღე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "mirror",
+    "georgian": "სარკე",
+    "pronunciation": "/ˈmɪrər/",
+    "example_en": "Use a mirror to reflect sunlight.",
+    "example_ka": "მზის სინათლის ანაზნისთვის სარკე გამოიყენე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "GPS",
+    "georgian": "ჯიპიეს",
+    "pronunciation": "/ˌdʒiːpiːˈes/",
+    "example_en": "The GPS device shows our location.",
+    "example_ka": "ჯიპიეს მოწყობილობა ჩვენს ადგილმდებარეობას აჩვენებს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "coordinates",
+    "georgian": "კოორდინატები",
+    "pronunciation": "/koʊˈɔːrdəˌneɪts/",
+    "example_en": "Give them our exact coordinates.",
+    "example_ka": "ჩვენი ზუსტი კოორდინატები მიეცი.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "navigation",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˌnævəˈɡeɪʃən/",
+    "example_en": "Good navigation skills are essential.",
+    "example_ka": "კარგი ნავიგაციის უნარები აუცილებელია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "Study the map before you go.",
+    "example_ka": "წასვლამდე რუკა შეისწავლე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "route",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/ruːt/",
+    "example_en": "Plan your route carefully.",
+    "example_ka": "მარშრუტი ფრთხილად დაგეგმე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "path",
+    "georgian": "გზა",
+    "pronunciation": "/pæθ/",
+    "example_en": "The path was barely visible.",
+    "example_ka": "გზა ძლივს ჩანდა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "track",
+    "georgian": "ნაკვალევი",
+    "pronunciation": "/træk/",
+    "example_en": "Follow the animal tracks.",
+    "example_ka": "ცხოველის ნაკვალევებს მიჰყვი.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "footprint",
+    "georgian": "ნაფეხური",
+    "pronunciation": "/ˈfʊtprɪnt/",
+    "example_en": "We saw fresh footprints in the snow.",
+    "example_ka": "თოვლში ახალი ნაფეხურები ვნახეთ.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "landmark",
+    "georgian": "ღირსშესანიშნაობა",
+    "pronunciation": "/ˈlændmɑːrk/",
+    "example_en": "Use that mountain as a landmark.",
+    "example_ka": "ღირსშესანიშნაობისთვის იმ მთას გამოიყენე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "beacon",
+    "georgian": "მანუში",
+    "pronunciation": "/ˈbiːkən/",
+    "example_en": "The beacon helped guide us back.",
+    "example_ka": "მანუშმა დაბრუნებაში დაგვეხმარა.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "waypoint",
+    "georgian": "საკონტროლო წერტილი",
+    "pronunciation": "/ˈweɪpɔɪnt/",
+    "example_en": "Mark this waypoint on your GPS.",
+    "example_ka": "ეს საკონტროლო წერტილი ჯიპიეს-ზე აღნიშნე.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "checkpoint",
+    "georgian": "სანიმუშო პუნქტი",
+    "pronunciation": "/ˈtʃekpɔɪnt/",
+    "example_en": "Report to the checkpoint every hour.",
+    "example_ka": "ყოველ საათში სანიმუშო პუნქტზე მიმართე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "milestone",
+    "georgian": "ღირსშესანიშნაო მომენტი",
+    "pronunciation": "/ˈmaɪlstoʊn/",
+    "example_en": "Reaching the ridge was a milestone.",
+    "example_ka": "კორუსამდე მისვლა ღირსშესანიშნაო მომენტი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "ridge",
+    "georgian": "კორუსი",
+    "pronunciation": "/rɪdʒ/",
+    "example_en": "The ridge offered spectacular views.",
+    "example_ka": "კორუსიდან საოცარი ხედები იხილებოდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "valley",
+    "georgian": "ხეობა",
+    "pronunciation": "/ˈvæli/",
+    "example_en": "The valley was shrouded in mist.",
+    "example_ka": "ხეობა ნისლით იყო დაფარული.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "gorge",
+    "georgian": "ღრმული",
+    "pronunciation": "/ɡɔːrdʒ/",
+    "example_en": "The river cut a deep gorge.",
+    "example_ka": "მდინარემ ღრმა ღრმული გამოყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "canyon",
+    "georgian": "კანიონი",
+    "pronunciation": "/ˈkænjən/",
+    "example_en": "The canyon walls were vertical.",
+    "example_ka": "კანიონის კედლები ვერტიკალური იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "cave",
+    "georgian": "გამოქვაბული",
+    "pronunciation": "/keɪv/",
+    "example_en": "We took shelter in a cave.",
+    "example_ka": "გამოქვაბულში თავშესაფარი ვიპოვეთ.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "cavern",
+    "georgian": "დიდი გამოქვაბული",
+    "pronunciation": "/ˈkævərn/",
+    "example_en": "The cavern was enormous.",
+    "example_ka": "დიდი გამოქვაბული უზარმაზარი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "tunnel",
+    "georgian": "გვირაბი",
+    "pronunciation": "/ˈtʌnəl/",
+    "example_en": "We crawled through the narrow tunnel.",
+    "example_ka": "ვიწრო გვირაბში ვცოცავდით.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "underground",
+    "georgian": "მიწისქვეშა",
+    "pronunciation": "/ˌʌndərˈɡraʊnd/",
+    "example_en": "The underground river was ice cold.",
+    "example_ka": "მიწისქვეშა მდინარე ყინულივით ცივი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "spelunking",
+    "georgian": "გამოქვაბულების კვლევა",
+    "pronunciation": "/spəˈlʌŋkɪŋ/",
+    "example_en": "Spelunking requires special equipment.",
+    "example_ka": "გამოქვაბულების კვლევა სპეციალურ ტექნიკას მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "exploration",
+    "georgian": "კვლევა",
+    "pronunciation": "/ˌekspləˈreɪʃən/",
+    "example_en": "Cave exploration is dangerous but exciting.",
+    "example_ka": "გამოქვაბულის კვლევა საშიშია, მაგრამ საინტერესო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "discovery",
+    "georgian": "აღმოჩენა",
+    "pronunciation": "/dɪˈskʌvəri/",
+    "example_en": "The discovery of the new route was exciting.",
+    "example_ka": "ახალი მარშრუტის აღმოჩენა საინტერესო იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "pioneer",
+    "georgian": "პიონერი",
+    "pronunciation": "/ˌpaɪəˈnɪr/",
+    "example_en": "She was a pioneer in extreme sports.",
+    "example_ka": "ის ექსტრემალურ სპორტში პიონერი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "record",
+    "georgian": "რეკორდი",
+    "pronunciation": "/ˈrekərd/",
+    "example_en": "He set a new speed record.",
+    "example_ka": "მან ახალი სისწრაფის რეკორდი დაადგინა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "achievement",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːvmənt/",
+    "example_en": "Reaching the summit was a great achievement.",
+    "example_ka": "მწვერვალამდე მისვლა დიდი მიღწევა იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "accomplishment",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈkɑːmplɪʃmənt/",
+    "example_en": "This climb was his greatest accomplishment.",
+    "example_ka": "ეს ცოცვა მისი უდიდესი მიღწევა იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "triumph",
+    "georgian": "ტრიუმფი",
+    "pronunciation": "/ˈtraɪʌmf/",
+    "example_en": "The successful rescue was a triumph.",
+    "example_ka": "წარმატებული გადარჩენა ტრიუმფი იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "victory",
+    "georgian": "გამარჯვება",
+    "pronunciation": "/ˈvɪktəri/",
+    "example_en": "Victory over the mountain felt incredible.",
+    "example_ka": "მთაზე გამარჯვება წარმოუდგენელი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "conquest",
+    "georgian": "დამორჩილება",
+    "pronunciation": "/ˈkɑːŋkwest/",
+    "example_en": "The conquest of Everest was historic.",
+    "example_ka": "ევერესტის დამორჩილება ისტორიული იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "legend",
+    "georgian": "ლეგენდა",
+    "pronunciation": "/ˈledʒənd/",
+    "example_en": "He became a legend in extreme sports.",
+    "example_ka": "ის ექსტრემალურ სპორტში ლეგენდა გახდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "hero",
+    "georgian": "გმირი",
+    "pronunciation": "/ˈhɪroʊ/",
+    "example_en": "The rescue worker was a hero.",
+    "example_ka": "მაშველი გმირი იყო.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "champion",
+    "georgian": "ჩემპიონი",
+    "pronunciation": "/ˈtʃæmpiən/",
+    "example_en": "She is the world champion.",
+    "example_ka": "ის მსოფლიო ჩემპიონია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "bungee",
+    "georgian": "ბანჯი",
+    "pronunciation": "/ˈbʌndʒi/",
+    "example_en": "Bungee jumping is terrifying.",
+    "example_ka": "ბანჯი ჯამპინგი საშინელებაა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "dive",
+    "georgian": "ყვინთვა",
+    "pronunciation": "/daɪv/",
+    "example_en": "He will dive from the cliff.",
+    "example_ka": "ის კლდიდან გადახტება.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "wingsuit",
+    "georgian": "ფრთების კოსტუმი",
+    "pronunciation": "/ˈwɪŋsuːt/",
+    "example_en": "Wingsuit flying is incredibly dangerous.",
+    "example_ka": "ფრთების კოსტუმით ფრენა წარმოუდგენლად საშიშია.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "BASE",
+    "georgian": "ბეიზ",
+    "pronunciation": "/beɪs/",
+    "example_en": "BASE jumping requires expert skills.",
+    "example_ka": "ბეიზ ჯამპინგი ექსპერტ უნარებს მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "kite",
+    "georgian": "ფურცელი",
+    "pronunciation": "/kaɪt/",
+    "example_en": "The kite surfing was amazing.",
+    "example_ka": "ფურცლით სერფინგი საოცარი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "zip",
+    "georgian": "ღია",
+    "pronunciation": "/zɪp/",
+    "example_en": "The zip line crossed the canyon.",
+    "example_ka": "ღია ხაზი კანიონს კვეთდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "motocross",
+    "georgian": "მოტოკროსი",
+    "pronunciation": "/ˈmoʊtoʊkrɔːs/",
+    "example_en": "Motocross racing is exciting.",
+    "example_ka": "მოტოკროსის რბოლა საინტერესოა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "dirt",
+    "georgian": "ნიადაგი",
+    "pronunciation": "/dɜːrt/",
+    "example_en": "The dirt bike jumped high.",
+    "example_ka": "ნიადაგის ველოსიპედმა მაღლა გადახტა.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "freestyle",
+    "georgian": "თავისუფალი სტილი",
+    "pronunciation": "/ˈfriːstaɪl/",
+    "example_en": "Freestyle skiing requires creativity.",
+    "example_ka": "თავისუფალი სტილის სკი შემოქმედებითობას მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "halfpipe",
+    "georgian": "ნახევარ მილი",
+    "pronunciation": "/ˈhæfpaɪp/",
+    "example_en": "She performed tricks in the halfpipe.",
+    "example_ka": "მან ნახევარ მილში ტრიკები შეასრულა.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "ramp",
+    "georgian": "პანდუსი",
+    "pronunciation": "/ræmp/",
+    "example_en": "The skateboard ramp was steep.",
+    "example_ka": "სკეიტბორდის პანდუსი ციცაბო იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "trick",
+    "georgian": "ტრიკი",
+    "pronunciation": "/trɪk/",
+    "example_en": "That was an incredible trick.",
+    "example_ka": "ეს წარმოუდგენელი ტრიკი იყო.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "stunt",
+    "georgian": "ტრიუკი",
+    "pronunciation": "/stʌnt/",
+    "example_en": "The stunt was perfectly executed.",
+    "example_ka": "ტრიუკი სრულყოფილად შესრულდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "flip",
+    "georgian": "მობრუნება",
+    "pronunciation": "/flɪp/",
+    "example_en": "He did a perfect backflip.",
+    "example_ka": "მან იდეალური უკუღმა მობრუნება გააკეთა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "spin",
+    "georgian": "ტრიალი",
+    "pronunciation": "/spɪn/",
+    "example_en": "The spin was executed flawlessly.",
+    "example_ka": "ტრიალი უნაკლოდ შესრულდა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "aerial",
+    "georgian": "ჰაერში",
+    "pronunciation": "/ˈɛriəl/",
+    "example_en": "The aerial maneuver was amazing.",
+    "example_ka": "ჰაერში მანევრი საოცარი იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "maneuver",
+    "georgian": "მანევრი",
+    "pronunciation": "/məˈnuːvər/",
+    "example_en": "That maneuver requires great skill.",
+    "example_ka": "ეს მანევრი დიდ ოსტატობას მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "balance",
+    "georgian": "წონასწორობა",
+    "pronunciation": "/ˈbæləns/",
+    "example_en": "Good balance is essential.",
+    "example_ka": "კარგი წონასწორობა აუცილებელია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "precision",
+    "georgian": "სიზუსტე",
+    "pronunciation": "/prɪˈsɪʒən/",
+    "example_en": "The sport requires great precision.",
+    "example_ka": "სპორტი დიდ სიზუსტეს მოითხოვს.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "technique",
+    "georgian": "ტექნიკა",
+    "pronunciation": "/tɛkˈniːk/",
+    "example_en": "Perfect your technique first.",
+    "example_ka": "ჯერ ტექნიკა დახვეწე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "momentum",
+    "georgian": "იმპულსი",
+    "pronunciation": "/moʊˈmɛntəm/",
+    "example_en": "Use momentum to your advantage.",
+    "example_ka": "იმპულსი შენს სასარგებლოდ გამოიყენე.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "velocity",
+    "georgian": "სისწრაფე",
+    "pronunciation": "/vəˈlɑːsəti/",
+    "example_en": "The velocity was incredibly high.",
+    "example_ka": "სისწრაფე წარმოუდგენლად მაღალი იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "acceleration",
+    "georgian": "ჩქარება",
+    "pronunciation": "/ækˌsɛləˈreɪʃən/",
+    "example_en": "The acceleration was intense.",
+    "example_ka": "ჩქარება ინტენსიური იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "gravity",
+    "georgian": "მიზიდულობა",
+    "pronunciation": "/ˈɡrævəti/",
+    "example_en": "Gravity pulls you down fast.",
+    "example_ka": "მიზიდულობა სწრაფად გაქცევს ქვემოთ.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "impact",
+    "georgian": "დარტყმა",
+    "pronunciation": "/ˈɪmpækt/",
+    "example_en": "The impact was tremendous.",
+    "example_ka": "დარტყმა უზარმაზარი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "landing",
+    "georgian": "დასვლა",
+    "pronunciation": "/ˈlændɪŋ/",
+    "example_en": "The landing was perfect.",
+    "example_ka": "დასვლა სრულყოფილი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "takeoff",
+    "georgian": "აფრენა",
+    "pronunciation": "/ˈteɪkɔːf/",
+    "example_en": "The takeoff was smooth.",
+    "example_ka": "აფრენა გლუვი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "launch",
+    "georgian": "გაშვება",
+    "pronunciation": "/lɔːntʃ/",
+    "example_en": "The launch point was high.",
+    "example_ka": "გაშვების წერტილი მაღალი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "trajectory",
+    "georgian": "ტრაექტორია",
+    "pronunciation": "/trəˈdʒɛktəri/",
+    "example_en": "Calculate the trajectory carefully.",
+    "example_ka": "ტრაექტორია ფრთხილად გამოთვალე.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "slope",
+    "georgian": "ფერდობი",
+    "pronunciation": "/sloʊp/",
+    "example_en": "The slope was very steep.",
+    "example_ka": "ფერდობი ძალიან ციცაბო იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "incline",
+    "georgian": "მიდრეკილება",
+    "pronunciation": "/ɪnˈklaɪn/",
+    "example_en": "The incline made it challenging.",
+    "example_ka": "მიდრეკილებამ რთულად გადააქცია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "gradient",
+    "georgian": "გრადიენტი",
+    "pronunciation": "/ˈɡreɪdiənt/",
+    "example_en": "The gradient was 45 degrees.",
+    "example_ka": "გრადიენტი 45 გრადუსი იყო.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "angle",
+    "georgian": "კუთხე",
+    "pronunciation": "/ˈæŋɡəl/",
+    "example_en": "Adjust the angle of approach.",
+    "example_ka": "მიდგომის კუთხე შეასწორე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "elevation",
+    "georgian": "სიმაღლე",
+    "pronunciation": "/ˌɛləˈveɪʃən/",
+    "example_en": "The elevation affects breathing.",
+    "example_ka": "სიმაღლე სუნთქვაზე მოქმედებს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "pressure",
+    "georgian": "წნევა",
+    "pronunciation": "/ˈprɛʃər/",
+    "example_en": "The pressure changes with altitude.",
+    "example_ka": "წნევა სიმაღლესთან ერთად იცვლება.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "oxygen",
+    "georgian": "ჟანგბადი",
+    "pronunciation": "/ˈɑːksədʒən/",
+    "example_en": "Oxygen levels are low here.",
+    "example_ka": "ჟანგბადის დონე აქ დაბალია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "breathing",
+    "georgian": "სუნთქვა",
+    "pronunciation": "/ˈbriːðɪŋ/",
+    "example_en": "Control your breathing pattern.",
+    "example_ka": "სუნთქვის რეჟიმი აკონტროლე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "stamina",
+    "georgian": "გამძლეობა",
+    "pronunciation": "/ˈstæmənə/",
+    "example_en": "You need great stamina for this.",
+    "example_ka": "ამისთვის დიდი გამძლეობა გჭირდება.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "fitness",
+    "georgian": "ფიზიკური მომზადება",
+    "pronunciation": "/ˈfɪtnəs/",
+    "example_en": "Physical fitness is crucial.",
+    "example_ka": "ფიზიკური მომზადება მნიშვნელოვანია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "strength",
+    "georgian": "ძალა",
+    "pronunciation": "/streŋθ/",
+    "example_en": "Upper body strength is important.",
+    "example_ka": "ზედა კიდურების ძალა მნიშვნელოვანია.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "flexibility",
+    "georgian": "მოქნილობა",
+    "pronunciation": "/ˌflɛksəˈbɪləti/",
+    "example_en": "Flexibility prevents injuries.",
+    "example_ka": "მოქნილობა ტრავმებს თავიდან აცილებს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "agility",
+    "georgian": "მოქნილობა",
+    "pronunciation": "/əˈdʒɪləti/",
+    "example_en": "Mental agility is as important as physical.",
+    "example_ka": "გონებრივი მოქნილობა ისევე მნიშვნელოვანია როგორც ფიზიკური.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "reflexes",
+    "georgian": "რეფლექსები",
+    "pronunciation": "/ˈriːflɛksəz/",
+    "example_en": "Quick reflexes saved him.",
+    "example_ka": "სწრაფმა რეფლექსებმა გადაარჩინა.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "reaction",
+    "georgian": "რეაქცია",
+    "pronunciation": "/riˈækʃən/",
+    "example_en": "His reaction time was incredible.",
+    "example_ka": "მისი რეაქციის დრო წარმოუდგენელი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "coordination",
+    "georgian": "კოორდინაცია",
+    "pronunciation": "/koʊˌɔːrdəˈneɪʃən/",
+    "example_en": "Good coordination is essential.",
+    "example_ka": "კარგი კოორდინაცია აუცილებელია.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  },
+  {
+    "english": "timing",
+    "georgian": "დაწყება",
+    "pronunciation": "/ˈtaɪmɪŋ/",
+    "example_en": "Perfect timing is everything.",
+    "example_ka": "სრულყოფილი დაწყება ყველაფერია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "rhythm",
+    "georgian": "რიტმი",
+    "pronunciation": "/ˈrɪðəm/",
+    "example_en": "Find your natural rhythm.",
+    "example_ka": "შენი ბუნებრივი რიტმი იპოვე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "flow",
+    "georgian": "ნაკადი",
+    "pronunciation": "/floʊ/",
+    "example_en": "Maintain the flow of movement.",
+    "example_ka": "მოძრაობის ნაკადი შეინარჩუნე.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "concentration",
+    "georgian": "კონცენტრაცია",
+    "pronunciation": "/ˌkɑːnsənˈtreɪʃən/",
+    "example_en": "Full concentration is required.",
+    "example_ka": "სრული კონცენტრაცია აუცილებელია.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "focus",
+    "georgian": "ყურადღება",
+    "pronunciation": "/ˈfoʊkəs/",
+    "example_en": "Keep your focus on the target.",
+    "example_ka": "ყურადღება სამიზნეზე გაამახვილე.",
+    "category": "sports-extreme",
+    "level": "beginner"
+  },
+  {
+    "english": "determination",
+    "georgian": "გადაწყვეტილება",
+    "pronunciation": "/dɪˌtɜːrmɪˈneɪʃən/",
+    "example_en": "His determination was inspiring.",
+    "example_ka": "მისი გადაწყვეტილება შთამაგონებელი იყო.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "willpower",
+    "georgian": "ნების ძალა",
+    "pronunciation": "/ˈwɪlpaʊər/",
+    "example_en": "Strong willpower overcomes fear.",
+    "example_ka": "ძლიერი ნების ძალა შიშს ძლევს.",
+    "category": "sports-extreme",
+    "level": "intermediate"
+  },
+  {
+    "english": "perseverance",
+    "georgian": "მთქმელობა",
+    "pronunciation": "/ˌpɜːrsəˈvɪrəns/",
+    "example_en": "Perseverance leads to success.",
+    "example_ka": "მთქმელობა წარმატებისკენ მიგიყვანს.",
+    "category": "sports-extreme",
+    "level": "advanced"
+  }
 ]

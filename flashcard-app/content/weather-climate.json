@@ -1,52 +1,1807 @@
 [
-  {"english":"weather","georgian":"ამინდი","pronunciation":"/ˈwɛðər/","example_en":"What's the weather like today?","example_ka":"დღეს როგორი ამინდია?","category":"weather-climate","level":"beginner"},
-  {"english":"climate","georgian":"კლიმატი","pronunciation":"/ˈklaɪmət/","example_en":"The climate is changing rapidly.","example_ka":"კლიმატი სწრაფად იცვლება.","category":"weather-climate","level":"beginner"},
-  {"english":"temperature","georgian":"ტემპერატურა","pronunciation":"/ˈtɛmpərətʃər/","example_en":"The temperature dropped below zero.","example_ka":"ტემპერატურა ნულს ქვემოთ დაეცა.","category":"weather-climate","level":"beginner"},
-  {"english":"rain","georgian":"წვიმა","pronunciation":"/reɪn/","example_en":"It will rain tomorrow.","example_ka":"ხვალ წვიმა იქნება.","category":"weather-climate","level":"beginner"},
-  {"english":"snow","georgian":"თოვლი","pronunciation":"/snoʊ/","example_en":"Snow covered the mountains.","example_ka":"თოვლმა მთები დაფარა.","category":"weather-climate","level":"beginner"},
-  {"english":"storm","georgian":"ქარიშხალი","pronunciation":"/stɔːrm/","example_en":"A storm is approaching.","example_ka":"ქარიშხალი მოდის.","category":"weather-climate","level":"beginner"},
-  {"english":"thunder","georgian":"ქუხილი","pronunciation":"/ˈθʌndər/","example_en":"Thunder woke me up at night.","example_ka":"ქუხილმა ღამით გამაღვიძა.","category":"weather-climate","level":"beginner"},
-  {"english":"lightning","georgian":"ელვა","pronunciation":"/ˈlaɪtnɪŋ/","example_en":"Lightning struck the tree.","example_ka":"ელვამ ხეს დაარტყა.","category":"weather-climate","level":"beginner"},
-  {"english":"flood","georgian":"წყალდიდობა","pronunciation":"/flʌd/","example_en":"The flood destroyed several homes.","example_ka":"წყალდიდობამ რამდენიმე სახლი გაანადგურა.","category":"weather-climate","level":"beginner"},
-  {"english":"drought","georgian":"გვალვა","pronunciation":"/draʊt/","example_en":"The drought ruined the harvest.","example_ka":"გვალვამ მოსავალი გააფუჭა.","category":"weather-climate","level":"intermediate"},
-  {"english":"hurricane","georgian":"ქარიშხალი","pronunciation":"/ˈhʌrɪkeɪn/","example_en":"The hurricane caused widespread damage.","example_ka":"ქარიშხალმა ფართომასშტაბიანი ზიანი მიაყენა.","category":"weather-climate","level":"intermediate"},
-  {"english":"tornado","georgian":"ტორნადო","pronunciation":"/tɔːrˈneɪdoʊ/","example_en":"Tornadoes are common in the American Midwest.","example_ka":"ტორნადოები ამერიკის შუა დასავლეთში ხშირია.","category":"weather-climate","level":"intermediate"},
-  {"english":"fog","georgian":"ნისლი","pronunciation":"/fɒɡ/","example_en":"Dense fog made driving dangerous.","example_ka":"სქელმა ნისლმა მანქანის ტარება საშიში გახადა.","category":"weather-climate","level":"beginner"},
-  {"english":"hail","georgian":"სეტყვა","pronunciation":"/heɪl/","example_en":"Hail damaged the cars.","example_ka":"სეტყვამ მანქანები დააზიანა.","category":"weather-climate","level":"intermediate"},
-  {"english":"wind","georgian":"ქარი","pronunciation":"/wɪnd/","example_en":"The wind blew the leaves away.","example_ka":"ქარმა ფოთლები გაფანტა.","category":"weather-climate","level":"beginner"},
-  {"english":"sunshine","georgian":"მზის შუქი","pronunciation":"/ˈsʌnʃaɪn/","example_en":"We enjoyed the sunshine on the beach.","example_ka":"სანაპიროზე მზის შუქით ვტკბებოდით.","category":"weather-climate","level":"beginner"},
-  {"english":"cloud","georgian":"ღრუბელი","pronunciation":"/klaʊd/","example_en":"Dark clouds gathered in the sky.","example_ka":"ცაზე მუქი ღრუბლები შეიკრიბა.","category":"weather-climate","level":"beginner"},
-  {"english":"rainbow","georgian":"ცისარტყელა","pronunciation":"/ˈreɪnboʊ/","example_en":"A rainbow appeared after the rain.","example_ka":"წვიმის შემდეგ ცისარტყელა გამოჩნდა.","category":"weather-climate","level":"beginner"},
-  {"english":"humidity","georgian":"ტენიანობა","pronunciation":"/hjuːˈmɪdɪti/","example_en":"High humidity makes it feel hotter.","example_ka":"მაღალი ტენიანობა სიცხეს უფრო მძიმეს ხდის.","category":"weather-climate","level":"intermediate"},
-  {"english":"forecast","georgian":"პროგნოზი","pronunciation":"/ˈfɔːrkæst/","example_en":"The weather forecast predicts rain.","example_ka":"ამინდის პროგნოზი წვიმას ითვალისწინებს.","category":"weather-climate","level":"intermediate"},
-  {"english":"global warming","georgian":"გლობალური დათბობა","pronunciation":"/ˈɡloʊbəl ˈwɔːrmɪŋ/","example_en":"Global warming is a serious threat.","example_ka":"გლობალური დათბობა სერიოზული საფრთხეა.","category":"weather-climate","level":"intermediate"},
-  {"english":"greenhouse effect","georgian":"სათბურის ეფექტი","pronunciation":"/ˈɡriːnhaʊs ɪˈfɛkt/","example_en":"The greenhouse effect traps heat in the atmosphere.","example_ka":"სათბურის ეფექტი სითბოს ატმოსფეროში ინარჩუნებს.","category":"weather-climate","level":"intermediate"},
-  {"english":"carbon dioxide","georgian":"ნახშირორჟანგი","pronunciation":"/ˈkɑːrbən daɪˈɒksaɪd/","example_en":"Carbon dioxide levels are rising.","example_ka":"ნახშირორჟანგის დონე იზრდება.","category":"weather-climate","level":"intermediate"},
-  {"english":"emissions","georgian":"გამონაბოლქვი","pronunciation":"/ɪˈmɪʃənz/","example_en":"We must reduce carbon emissions.","example_ka":"ნახშირბადის გამონაბოლქვი უნდა შევამციროთ.","category":"weather-climate","level":"intermediate"},
-  {"english":"renewable energy","georgian":"განახლებადი ენერგია","pronunciation":"/rɪˈnjuːəbəl ˈɛnərdʒi/","example_en":"Renewable energy is the future.","example_ka":"განახლებადი ენერგია მომავალია.","category":"weather-climate","level":"intermediate"},
-  {"english":"solar power","georgian":"მზის ენერგია","pronunciation":"/ˈsoʊlər ˈpaʊər/","example_en":"Solar power is becoming cheaper.","example_ka":"მზის ენერგია იაფდება.","category":"weather-climate","level":"intermediate"},
-  {"english":"ice cap","georgian":"ყინულის საფარი","pronunciation":"/aɪs kæp/","example_en":"The polar ice caps are melting.","example_ka":"პოლარული ყინულის საფარი დნება.","category":"weather-climate","level":"intermediate"},
-  {"english":"glacier","georgian":"მყინვარი","pronunciation":"/ˈɡleɪʃər/","example_en":"The glacier has been retreating for decades.","example_ka":"მყინვარი ათწლეულების განმავლობაში უკან იხევს.","category":"weather-climate","level":"intermediate"},
-  {"english":"sea level","georgian":"ზღვის დონე","pronunciation":"/siː ˈlɛvəl/","example_en":"Sea levels are rising due to climate change.","example_ka":"კლიმატის ცვლილების გამო ზღვის დონე იწევს.","category":"weather-climate","level":"intermediate"},
-  {"english":"deforestation","georgian":"ტყეების გაჩეხვა","pronunciation":"/diːˌfɒrɪˈsteɪʃən/","example_en":"Deforestation contributes to climate change.","example_ka":"ტყეების გაჩეხვა კლიმატის ცვლილებას უწყობს ხელს.","category":"weather-climate","level":"advanced"},
-  {"english":"ozone layer","georgian":"ოზონის ფენა","pronunciation":"/ˈoʊzoʊn ˈleɪər/","example_en":"The ozone layer protects us from UV rays.","example_ka":"ოზონის ფენა ულტრაიისფერი სხივებისგან გვიცავს.","category":"weather-climate","level":"intermediate"},
-  {"english":"wildfire","georgian":"ტყის ხანძარი","pronunciation":"/ˈwaɪldfaɪər/","example_en":"Wildfires are increasing due to dry conditions.","example_ka":"გვალვიანი პირობების გამო ტყის ხანძრები იზრდება.","category":"weather-climate","level":"intermediate"},
-  {"english":"blizzard","georgian":"ქარბუქი","pronunciation":"/ˈblɪzərd/","example_en":"The blizzard closed all the roads.","example_ka":"ქარბუქმა ყველა გზა დახურა.","category":"weather-climate","level":"intermediate"},
-  {"english":"heatwave","georgian":"სიცხის ტალღა","pronunciation":"/ˈhiːtweɪv/","example_en":"The heatwave lasted for two weeks.","example_ka":"სიცხის ტალღა ორი კვირა გაგრძელდა.","category":"weather-climate","level":"intermediate"},
-  {"english":"frost","georgian":"ყინვა","pronunciation":"/frɒst/","example_en":"Frost covered the windows.","example_ka":"ყინვამ ფანჯრები დაფარა.","category":"weather-climate","level":"beginner"},
-  {"english":"breeze","georgian":"ნიავი","pronunciation":"/briːz/","example_en":"A gentle breeze blew from the sea.","example_ka":"ზღვიდან ნაზი ნიავი ქროდა.","category":"weather-climate","level":"beginner"},
-  {"english":"atmosphere","georgian":"ატმოსფერო","pronunciation":"/ˈætməsfɪər/","example_en":"The atmosphere protects life on Earth.","example_ka":"ატმოსფერო დედამიწაზე სიცოცხლეს იცავს.","category":"weather-climate","level":"intermediate"},
-  {"english":"precipitation","georgian":"ნალექი","pronunciation":"/prɪˌsɪpɪˈteɪʃən/","example_en":"Precipitation is expected this weekend.","example_ka":"ამ შაბათ-კვირას ნალექი მოსალოდნელია.","category":"weather-climate","level":"advanced"},
-  {"english":"monsoon","georgian":"მუსონი","pronunciation":"/mɒnˈsuːn/","example_en":"The monsoon season brings heavy rain.","example_ka":"მუსონის სეზონი ძლიერ წვიმას მოაქვს.","category":"weather-climate","level":"intermediate"},
-  {"english":"thermometer","georgian":"თერმომეტრი","pronunciation":"/θərˈmɒmɪtər/","example_en":"The thermometer shows 35 degrees.","example_ka":"თერმომეტრი 35 გრადუსს აჩვენებს.","category":"weather-climate","level":"beginner"},
-  {"english":"celsius","georgian":"ცელსიუსი","pronunciation":"/ˈsɛlsiəs/","example_en":"It's 30 degrees Celsius outside.","example_ka":"გარეთ 30 გრადუსი ცელსიუსია.","category":"weather-climate","level":"beginner"},
-  {"english":"erosion","georgian":"ეროზია","pronunciation":"/ɪˈroʊʒən/","example_en":"Coastal erosion is a growing problem.","example_ka":"სანაპიროს ეროზია მზარდი პრობლემაა.","category":"weather-climate","level":"advanced"},
-  {"english":"sustainability","georgian":"მდგრადობა","pronunciation":"/səˌsteɪnəˈbɪlɪti/","example_en":"Sustainability is key to our future.","example_ka":"მდგრადობა ჩვენი მომავლის გასაღებია.","category":"weather-climate","level":"advanced"},
-  {"english":"ecosystem","georgian":"ეკოსისტემა","pronunciation":"/ˈiːkoʊsɪstəm/","example_en":"Climate change threatens ecosystems worldwide.","example_ka":"კლიმატის ცვლილება მსოფლიოს ეკოსისტემებს ემუქრება.","category":"weather-climate","level":"intermediate"},
-  {"english":"carbon footprint","georgian":"ნახშირბადის კვალი","pronunciation":"/ˈkɑːrbən ˈfʊtprɪnt/","example_en":"Everyone should reduce their carbon footprint.","example_ka":"ყველამ უნდა შეამციროს თავისი ნახშირბადის კვალი.","category":"weather-climate","level":"intermediate"},
-  {"english":"recycling","georgian":"გადამუშავება","pronunciation":"/riːˈsaɪklɪŋ/","example_en":"Recycling helps protect the environment.","example_ka":"გადამუშავება გარემოს დაცვას ეხმარება.","category":"weather-climate","level":"beginner"},
-  {"english":"pollution","georgian":"დაბინძურება","pronunciation":"/pəˈluːʃən/","example_en":"Air pollution causes health problems.","example_ka":"ჰაერის დაბინძურება ჯანმრთელობის პრობლემებს იწვევს.","category":"weather-climate","level":"intermediate"},
-  {"english":"drought-resistant","georgian":"გვალვაგამძლე","pronunciation":"/draʊt rɪˈzɪstənt/","example_en":"Farmers plant drought-resistant crops.","example_ka":"ფერმერები გვალვაგამძლე კულტურებს რგავენ.","category":"weather-climate","level":"advanced"},
-  {"english":"meteorologist","georgian":"მეტეოროლოგი","pronunciation":"/ˌmiːtiəˈrɒlədʒɪst/","example_en":"The meteorologist predicted the storm.","example_ka":"მეტეოროლოგმა ქარიშხალი იწინასწარმეტყველა.","category":"weather-climate","level":"advanced"},
-  {"english":"overcast","georgian":"მოღრუბლული","pronunciation":"/ˌoʊvərˈkæst/","example_en":"The sky was overcast all day.","example_ka":"ცა მთელი დღე მოღრუბლული იყო.","category":"weather-climate","level":"intermediate"}
+  {
+    "english": "weather",
+    "georgian": "ამინდი",
+    "pronunciation": "/ˈwɛðər/",
+    "example_en": "What's the weather like today?",
+    "example_ka": "დღეს როგორი ამინდია?",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "climate",
+    "georgian": "კლიმატი",
+    "pronunciation": "/ˈklaɪmət/",
+    "example_en": "The climate is changing rapidly.",
+    "example_ka": "კლიმატი სწრაფად იცვლება.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "temperature",
+    "georgian": "ტემპერატურა",
+    "pronunciation": "/ˈtɛmpərətʃər/",
+    "example_en": "The temperature dropped below zero.",
+    "example_ka": "ტემპერატურა ნულს ქვემოთ დაეცა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "rain",
+    "georgian": "წვიმა",
+    "pronunciation": "/reɪn/",
+    "example_en": "It will rain tomorrow.",
+    "example_ka": "ხვალ წვიმა იქნება.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "snow",
+    "georgian": "თოვლი",
+    "pronunciation": "/snoʊ/",
+    "example_en": "Snow covered the mountains.",
+    "example_ka": "თოვლმა მთები დაფარა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "storm",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/stɔːrm/",
+    "example_en": "A storm is approaching.",
+    "example_ka": "ქარიშხალი მოდის.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "thunder",
+    "georgian": "ქუხილი",
+    "pronunciation": "/ˈθʌndər/",
+    "example_en": "Thunder woke me up at night.",
+    "example_ka": "ქუხილმა ღამით გამაღვიძა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "lightning",
+    "georgian": "ელვა",
+    "pronunciation": "/ˈlaɪtnɪŋ/",
+    "example_en": "Lightning struck the tree.",
+    "example_ka": "ელვამ ხეს დაარტყა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "flood",
+    "georgian": "წყალდიდობა",
+    "pronunciation": "/flʌd/",
+    "example_en": "The flood destroyed several homes.",
+    "example_ka": "წყალდიდობამ რამდენიმე სახლი გაანადგურა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "drought",
+    "georgian": "გვალვა",
+    "pronunciation": "/draʊt/",
+    "example_en": "The drought ruined the harvest.",
+    "example_ka": "გვალვამ მოსავალი გააფუჭა.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "hurricane",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/ˈhʌrɪkeɪn/",
+    "example_en": "The hurricane caused widespread damage.",
+    "example_ka": "ქარიშხალმა ფართომასშტაბიანი ზიანი მიაყენა.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "tornado",
+    "georgian": "ტორნადო",
+    "pronunciation": "/tɔːrˈneɪdoʊ/",
+    "example_en": "Tornadoes are common in the American Midwest.",
+    "example_ka": "ტორნადოები ამერიკის შუა დასავლეთში ხშირია.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "fog",
+    "georgian": "ნისლი",
+    "pronunciation": "/fɒɡ/",
+    "example_en": "Dense fog made driving dangerous.",
+    "example_ka": "სქელმა ნისლმა მანქანის ტარება საშიში გახადა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "hail",
+    "georgian": "სეტყვა",
+    "pronunciation": "/heɪl/",
+    "example_en": "Hail damaged the cars.",
+    "example_ka": "სეტყვამ მანქანები დააზიანა.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "wind",
+    "georgian": "ქარი",
+    "pronunciation": "/wɪnd/",
+    "example_en": "The wind blew the leaves away.",
+    "example_ka": "ქარმა ფოთლები გაფანტა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "sunshine",
+    "georgian": "მზის შუქი",
+    "pronunciation": "/ˈsʌnʃaɪn/",
+    "example_en": "We enjoyed the sunshine on the beach.",
+    "example_ka": "სანაპიროზე მზის შუქით ვტკბებოდით.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "cloud",
+    "georgian": "ღრუბელი",
+    "pronunciation": "/klaʊd/",
+    "example_en": "Dark clouds gathered in the sky.",
+    "example_ka": "ცაზე მუქი ღრუბლები შეიკრიბა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "rainbow",
+    "georgian": "ცისარტყელა",
+    "pronunciation": "/ˈreɪnboʊ/",
+    "example_en": "A rainbow appeared after the rain.",
+    "example_ka": "წვიმის შემდეგ ცისარტყელა გამოჩნდა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "humidity",
+    "georgian": "ტენიანობა",
+    "pronunciation": "/hjuːˈmɪdɪti/",
+    "example_en": "High humidity makes it feel hotter.",
+    "example_ka": "მაღალი ტენიანობა სიცხეს უფრო მძიმეს ხდის.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "forecast",
+    "georgian": "პროგნოზი",
+    "pronunciation": "/ˈfɔːrkæst/",
+    "example_en": "The weather forecast predicts rain.",
+    "example_ka": "ამინდის პროგნოზი წვიმას ითვალისწინებს.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "emissions",
+    "georgian": "გამონაბოლქვი",
+    "pronunciation": "/ɪˈmɪʃənz/",
+    "example_en": "We must reduce carbon emissions.",
+    "example_ka": "ნახშირბადის გამონაბოლქვი უნდა შევამციროთ.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "glacier",
+    "georgian": "მყინვარი",
+    "pronunciation": "/ˈɡleɪʃər/",
+    "example_en": "The glacier has been retreating for decades.",
+    "example_ka": "მყინვარი ათწლეულების განმავლობაში უკან იხევს.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "deforestation",
+    "georgian": "ტყეების გაჩეხვა",
+    "pronunciation": "/diːˌfɒrɪˈsteɪʃən/",
+    "example_en": "Deforestation contributes to climate change.",
+    "example_ka": "ტყეების გაჩეხვა კლიმატის ცვლილებას უწყობს ხელს.",
+    "category": "weather-climate",
+    "level": "advanced"
+  },
+  {
+    "english": "wildfire",
+    "georgian": "ტყის ხანძარი",
+    "pronunciation": "/ˈwaɪldfaɪər/",
+    "example_en": "Wildfires are increasing due to dry conditions.",
+    "example_ka": "გვალვიანი პირობების გამო ტყის ხანძრები იზრდება.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "blizzard",
+    "georgian": "ქარბუქი",
+    "pronunciation": "/ˈblɪzərd/",
+    "example_en": "The blizzard closed all the roads.",
+    "example_ka": "ქარბუქმა ყველა გზა დახურა.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "heatwave",
+    "georgian": "სიცხის ტალღა",
+    "pronunciation": "/ˈhiːtweɪv/",
+    "example_en": "The heatwave lasted for two weeks.",
+    "example_ka": "სიცხის ტალღა ორი კვირა გაგრძელდა.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "frost",
+    "georgian": "ყინვა",
+    "pronunciation": "/frɒst/",
+    "example_en": "Frost covered the windows.",
+    "example_ka": "ყინვამ ფანჯრები დაფარა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "breeze",
+    "georgian": "ნიავი",
+    "pronunciation": "/briːz/",
+    "example_en": "A gentle breeze blew from the sea.",
+    "example_ka": "ზღვიდან ნაზი ნიავი ქროდა.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "atmosphere",
+    "georgian": "ატმოსფერო",
+    "pronunciation": "/ˈætməsfɪər/",
+    "example_en": "The atmosphere protects life on Earth.",
+    "example_ka": "ატმოსფერო დედამიწაზე სიცოცხლეს იცავს.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "precipitation",
+    "georgian": "ნალექი",
+    "pronunciation": "/prɪˌsɪpɪˈteɪʃən/",
+    "example_en": "Precipitation is expected this weekend.",
+    "example_ka": "ამ შაბათ-კვირას ნალექი მოსალოდნელია.",
+    "category": "weather-climate",
+    "level": "advanced"
+  },
+  {
+    "english": "monsoon",
+    "georgian": "მუსონი",
+    "pronunciation": "/mɒnˈsuːn/",
+    "example_en": "The monsoon season brings heavy rain.",
+    "example_ka": "მუსონის სეზონი ძლიერ წვიმას მოაქვს.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "thermometer",
+    "georgian": "თერმომეტრი",
+    "pronunciation": "/θərˈmɒmɪtər/",
+    "example_en": "The thermometer shows 35 degrees.",
+    "example_ka": "თერმომეტრი 35 გრადუსს აჩვენებს.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "celsius",
+    "georgian": "ცელსიუსი",
+    "pronunciation": "/ˈsɛlsiəs/",
+    "example_en": "It's 30 degrees Celsius outside.",
+    "example_ka": "გარეთ 30 გრადუსი ცელსიუსია.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "erosion",
+    "georgian": "ეროზია",
+    "pronunciation": "/ɪˈroʊʒən/",
+    "example_en": "Coastal erosion is a growing problem.",
+    "example_ka": "სანაპიროს ეროზია მზარდი პრობლემაა.",
+    "category": "weather-climate",
+    "level": "advanced"
+  },
+  {
+    "english": "sustainability",
+    "georgian": "მდგრადობა",
+    "pronunciation": "/səˌsteɪnəˈbɪlɪti/",
+    "example_en": "Sustainability is key to our future.",
+    "example_ka": "მდგრადობა ჩვენი მომავლის გასაღებია.",
+    "category": "weather-climate",
+    "level": "advanced"
+  },
+  {
+    "english": "ecosystem",
+    "georgian": "ეკოსისტემა",
+    "pronunciation": "/ˈiːkoʊsɪstəm/",
+    "example_en": "Climate change threatens ecosystems worldwide.",
+    "example_ka": "კლიმატის ცვლილება მსოფლიოს ეკოსისტემებს ემუქრება.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "recycling",
+    "georgian": "გადამუშავება",
+    "pronunciation": "/riːˈsaɪklɪŋ/",
+    "example_en": "Recycling helps protect the environment.",
+    "example_ka": "გადამუშავება გარემოს დაცვას ეხმარება.",
+    "category": "weather-climate",
+    "level": "beginner"
+  },
+  {
+    "english": "pollution",
+    "georgian": "დაბინძურება",
+    "pronunciation": "/pəˈluːʃən/",
+    "example_en": "Air pollution causes health problems.",
+    "example_ka": "ჰაერის დაბინძურება ჯანმრთელობის პრობლემებს იწვევს.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "drought-resistant",
+    "georgian": "გვალვაგამძლე",
+    "pronunciation": "/draʊt rɪˈzɪstənt/",
+    "example_en": "Farmers plant drought-resistant crops.",
+    "example_ka": "ფერმერები გვალვაგამძლე კულტურებს რგავენ.",
+    "category": "weather-climate",
+    "level": "advanced"
+  },
+  {
+    "english": "meteorologist",
+    "georgian": "მეტეოროლოგი",
+    "pronunciation": "/ˌmiːtiəˈrɒlədʒɪst/",
+    "example_en": "The meteorologist predicted the storm.",
+    "example_ka": "მეტეოროლოგმა ქარიშხალი იწინასწარმეტყველა.",
+    "category": "weather-climate",
+    "level": "advanced"
+  },
+  {
+    "english": "overcast",
+    "georgian": "მოღრუბლული",
+    "pronunciation": "/ˌoʊvərˈkæst/",
+    "example_en": "The sky was overcast all day.",
+    "example_ka": "ცა მთელი დღე მოღრუბლული იყო.",
+    "category": "weather-climate",
+    "level": "intermediate"
+  },
+  {
+    "english": "Sun",
+    "georgian": "მზე",
+    "pronunciation": "/sʌn/",
+    "example_en": "The sun is shining.",
+    "example_ka": "მზე ანათებს.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Mist",
+    "georgian": "ბურუსი",
+    "pronunciation": "/mɪst/",
+    "example_en": "Morning mist covered the valley.",
+    "example_ka": "დილის ბურუსმა ხეობა დაფარა.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Sleet",
+    "georgian": "თოვლიანი წვიმა",
+    "pronunciation": "/sliːt/",
+    "example_en": "The sleet made roads icy.",
+    "example_ka": "თოვლიანმა წვიმმა გზები გაყინა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Drizzle",
+    "georgian": "წვრილი წვიმა",
+    "pronunciation": "/ˈdrɪzl/",
+    "example_en": "It is drizzling outside.",
+    "example_ka": "გარეთ წვრილად წვიმს.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Downpour",
+    "georgian": "ძლიერი წვიმა",
+    "pronunciation": "/ˈdaʊnpɔːr/",
+    "example_en": "We got caught in a downpour.",
+    "example_ka": "ძლიერ წვიმაში გავებით.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Typhoon",
+    "georgian": "ტაიფუნი",
+    "pronunciation": "/taɪˈfuːn/",
+    "example_en": "The typhoon hit the coast.",
+    "example_ka": "ტაიფუნმა სანაპიროს დაარტყა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Cyclone",
+    "georgian": "ციკლონი",
+    "pronunciation": "/ˈsaɪkloʊn/",
+    "example_en": "A cyclone formed over the ocean.",
+    "example_ka": "ოკეანეზე ციკლონი ჩამოყალიბდა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Gale",
+    "georgian": "ძლიერი ქარი",
+    "pronunciation": "/ɡeɪl/",
+    "example_en": "A gale warning was issued.",
+    "example_ka": "ძლიერი ქარის გაფრთხილება გაცემულია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Gust",
+    "georgian": "ქარის ტალღა",
+    "pronunciation": "/ɡʌst/",
+    "example_en": "A gust of wind blew my hat.",
+    "example_ka": "ქარის ტალღამ ქუდი გამიფრინა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Humid",
+    "georgian": "ნოტიო",
+    "pronunciation": "/ˈhjuːmɪd/",
+    "example_en": "It is very humid today.",
+    "example_ka": "დღეს ძალიან ნოტიოა.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Dry",
+    "georgian": "მშრალი",
+    "pronunciation": "/draɪ/",
+    "example_en": "The climate is dry.",
+    "example_ka": "კლიმატი მშრალია.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Damp",
+    "georgian": "ტენიანი",
+    "pronunciation": "/dæmp/",
+    "example_en": "The air feels damp.",
+    "example_ka": "ჰაერი ტენიანია.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Ice",
+    "georgian": "ყინული",
+    "pronunciation": "/aɪs/",
+    "example_en": "The roads are covered in ice.",
+    "example_ka": "გზები ყინულით არის დაფარული.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Icicle",
+    "georgian": "ყინულის ლოდი",
+    "pronunciation": "/ˈaɪsɪkl/",
+    "example_en": "Icicles hang from the roof.",
+    "example_ka": "ყინულის ლოდები სახურავიდან ეკიდება.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Thaw",
+    "georgian": "დადნობა",
+    "pronunciation": "/θɔː/",
+    "example_en": "The snow began to thaw.",
+    "example_ka": "თოვლმა დადნობა დაიწყო.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Melt",
+    "georgian": "დნობა",
+    "pronunciation": "/melt/",
+    "example_en": "The ice is melting.",
+    "example_ka": "ყინული დნება.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Freeze",
+    "georgian": "გაყინვა",
+    "pronunciation": "/friːz/",
+    "example_en": "The lake will freeze tonight.",
+    "example_ka": "ტბა ამაღამ გაიყინება.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Dew",
+    "georgian": "ნამი",
+    "pronunciation": "/djuː/",
+    "example_en": "Dew covered the grass.",
+    "example_ka": "ნამმა ბალახი დაფარა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Clear",
+    "georgian": "ნათელი",
+    "pronunciation": "/klɪr/",
+    "example_en": "The sky is clear.",
+    "example_ka": "ცა ნათელია.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Cloudy",
+    "georgian": "ღრუბლიანი",
+    "pronunciation": "/ˈklaʊdi/",
+    "example_en": "It is cloudy today.",
+    "example_ka": "დღეს ღრუბლიანია.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Sunny",
+    "georgian": "მზიანი",
+    "pronunciation": "/ˈsʌni/",
+    "example_en": "It is a sunny day.",
+    "example_ka": "მზიანი დღეა.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Warm",
+    "georgian": "თბილი",
+    "pronunciation": "/wɔːrm/",
+    "example_en": "It is warm outside.",
+    "example_ka": "გარეთ თბილა.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Hot",
+    "georgian": "ცხელი",
+    "pronunciation": "/hɒt/",
+    "example_en": "It is very hot.",
+    "example_ka": "ძალიან ცხელა.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Cold",
+    "georgian": "ცივი",
+    "pronunciation": "/koʊld/",
+    "example_en": "It is cold today.",
+    "example_ka": "დღეს ცივა.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Cool",
+    "georgian": "გრილი",
+    "pronunciation": "/kuːl/",
+    "example_en": "The evening is cool.",
+    "example_ka": "საღამო გრილია.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Chilly",
+    "georgian": "ციოტა",
+    "pronunciation": "/ˈtʃɪli/",
+    "example_en": "It is chilly outside.",
+    "example_ka": "გარეთ ციოტაა.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Freezing",
+    "georgian": "ყინვიანი",
+    "pronunciation": "/ˈfriːzɪŋ/",
+    "example_en": "It is freezing cold.",
+    "example_ka": "ყინვიანი სიცივეა.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Mild",
+    "georgian": "რბილი",
+    "pronunciation": "/maɪld/",
+    "example_en": "The weather is mild.",
+    "example_ka": "ამინდი რბილია.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Scorching",
+    "georgian": "მწველი",
+    "pronunciation": "/ˈskɔːrtʃɪŋ/",
+    "example_en": "It is scorching hot.",
+    "example_ka": "მწველად ცხელა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Sweltering",
+    "georgian": "სულისშემხუთავი",
+    "pronunciation": "/ˈsweltərɪŋ/",
+    "example_en": "The sweltering heat is unbearable.",
+    "example_ka": "სულისშემხუთავი სიცხე აუტანელია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Muggy",
+    "georgian": "მშრალი სიცხე",
+    "pronunciation": "/ˈmʌɡi/",
+    "example_en": "It is muggy today.",
+    "example_ka": "დღეს ტენიანი სიცხეა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Balmy",
+    "georgian": "ნაზი",
+    "pronunciation": "/ˈbɑːmi/",
+    "example_en": "A balmy evening.",
+    "example_ka": "ნაზი საღამო.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Breezy",
+    "georgian": "ქარიანი",
+    "pronunciation": "/ˈbriːzi/",
+    "example_en": "It is breezy today.",
+    "example_ka": "დღეს ქარიანია.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Windy",
+    "georgian": "ქარიანი",
+    "pronunciation": "/ˈwɪndi/",
+    "example_en": "It is very windy.",
+    "example_ka": "ძალიან ქარიანია.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Stormy",
+    "georgian": "მღელვარე",
+    "pronunciation": "/ˈstɔːrmi/",
+    "example_en": "Stormy weather is expected.",
+    "example_ka": "მღელვარე ამინდია მოსალოდნელი.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Rainy",
+    "georgian": "წვიმიანი",
+    "pronunciation": "/ˈreɪni/",
+    "example_en": "It has been a rainy week.",
+    "example_ka": "წვიმიანი კვირა იყო.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Snowy",
+    "georgian": "თოვლიანი",
+    "pronunciation": "/ˈsnoʊi/",
+    "example_en": "The mountains are snowy.",
+    "example_ka": "მთები თოვლიანია.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Icy",
+    "georgian": "ყინვიანი",
+    "pronunciation": "/ˈaɪsi/",
+    "example_en": "Be careful of icy roads.",
+    "example_ka": "ყინვიან გზებს ეფრთხილე.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Predict",
+    "georgian": "წინასწარმეტყველება",
+    "pronunciation": "/prɪˈdɪkt/",
+    "example_en": "Scientists predict storms.",
+    "example_ka": "მეცნიერები ქარიშხლებს წინასწარმეტყველებენ.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Barometer",
+    "georgian": "ბარომეტრი",
+    "pronunciation": "/bəˈrɒmɪtər/",
+    "example_en": "The barometer is falling.",
+    "example_ka": "ბარომეტრი ეცემა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Fahrenheit",
+    "georgian": "ფარენჰაიტი",
+    "pronunciation": "/ˈfærənhaɪt/",
+    "example_en": "It is seventy Fahrenheit.",
+    "example_ka": "სამოცდაათი ფარენჰაიტია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Degree",
+    "georgian": "გრადუსი",
+    "pronunciation": "/dɪˈɡriː/",
+    "example_en": "The temperature is thirty degrees.",
+    "example_ka": "ტემპერატურა ოცდაათი გრადუსია.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Pressure",
+    "georgian": "წნევა",
+    "pronunciation": "/ˈpreʃər/",
+    "example_en": "Atmospheric pressure is low.",
+    "example_ka": "ატმოსფერული წნევა დაბალია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Tropical",
+    "georgian": "ტროპიკული",
+    "pronunciation": "/ˈtrɒpɪkl/",
+    "example_en": "Tropical storms are common.",
+    "example_ka": "ტროპიკული ქარიშხლები ხშირია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Arctic",
+    "georgian": "არქტიკული",
+    "pronunciation": "/ˈɑːrktɪk/",
+    "example_en": "Arctic temperatures are extreme.",
+    "example_ka": "არქტიკული ტემპერატურები ექსტრემალურია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Arid",
+    "georgian": "მშრალი",
+    "pronunciation": "/ˈærɪd/",
+    "example_en": "The desert is arid.",
+    "example_ka": "უდაბნო მშრალია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Temperate",
+    "georgian": "ზომიერი",
+    "pronunciation": "/ˈtempərət/",
+    "example_en": "We live in a temperate zone.",
+    "example_ka": "ზომიერ ზონაში ვცხოვრობთ.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Continental",
+    "georgian": "კონტინენტური",
+    "pronunciation": "/ˌkɒntɪˈnentl/",
+    "example_en": "The climate is continental.",
+    "example_ka": "კლიმატი კონტინენტურია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Maritime",
+    "georgian": "საზღვაო",
+    "pronunciation": "/ˈmærɪtaɪm/",
+    "example_en": "Maritime climate is mild.",
+    "example_ka": "საზღვაო კლიმატი რბილია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Equatorial",
+    "georgian": "ეკვატორული",
+    "pronunciation": "/ˌekwəˈtɔːriəl/",
+    "example_en": "Equatorial regions are hot.",
+    "example_ka": "ეკვატორული რეგიონები ცხელია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Subtropical",
+    "georgian": "სუბტროპიკული",
+    "pronunciation": "/ˌsʌbˈtrɒpɪkl/",
+    "example_en": "The climate here is subtropical.",
+    "example_ka": "აქ კლიმატი სუბტროპიკულია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Polar",
+    "georgian": "პოლარული",
+    "pronunciation": "/ˈpoʊlər/",
+    "example_en": "Polar regions are cold.",
+    "example_ka": "პოლარული რეგიონები ცივია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Greenhouse",
+    "georgian": "სათბური",
+    "pronunciation": "/ˈɡriːnhaʊs/",
+    "example_en": "The greenhouse effect warms Earth.",
+    "example_ka": "სათბურის ეფექტი დედამიწას ათბობს.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Ozone",
+    "georgian": "ოზონი",
+    "pronunciation": "/ˈoʊzoʊn/",
+    "example_en": "The ozone layer protects us.",
+    "example_ka": "ოზონის ფენა გვიცავს.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Emission",
+    "georgian": "გამონაბოლქვი",
+    "pronunciation": "/ɪˈmɪʃən/",
+    "example_en": "Reduce carbon emissions.",
+    "example_ka": "შეამცირე ნახშირბადის გამონაბოლქვი.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Carbon",
+    "georgian": "ნახშირბადი",
+    "pronunciation": "/ˈkɑːrbən/",
+    "example_en": "Carbon dioxide is increasing.",
+    "example_ka": "ნახშირორჟანგი იზრდება.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Smog",
+    "georgian": "სმოგი",
+    "pronunciation": "/smɒɡ/",
+    "example_en": "Smog covers the city.",
+    "example_ka": "სმოგი ქალაქს ფარავს.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Avalanche",
+    "georgian": "ზვავი",
+    "pronunciation": "/ˈævəlæntʃ/",
+    "example_en": "An avalanche blocked the road.",
+    "example_ka": "ზვავმა გზა დაბლოკა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Earthquake",
+    "georgian": "მიწისძვრა",
+    "pronunciation": "/ˈɜːrθkweɪk/",
+    "example_en": "An earthquake hit the city.",
+    "example_ka": "მიწისძვრამ ქალაქს დაარტყა.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Tsunami",
+    "georgian": "ცუნამი",
+    "pronunciation": "/tsuːˈnɑːmi/",
+    "example_en": "A tsunami warning was issued.",
+    "example_ka": "ცუნამის გაფრთხილება გაიცა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Volcano",
+    "georgian": "ვულკანი",
+    "pronunciation": "/vɒlˈkeɪnoʊ/",
+    "example_en": "The volcano erupted.",
+    "example_ka": "ვულკანი ამოიფრქვა.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Eruption",
+    "georgian": "ამოფრქვევა",
+    "pronunciation": "/ɪˈrʌpʃən/",
+    "example_en": "The eruption was massive.",
+    "example_ka": "ამოფრქვევა მასშტაბური იყო.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Meteorology",
+    "georgian": "მეტეოროლოგია",
+    "pronunciation": "/ˌmiːtiəˈrɒlədʒi/",
+    "example_en": "She studies meteorology.",
+    "example_ka": "ის მეტეოროლოგიას სწავლობს.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Satellite",
+    "georgian": "თანამგზავრი",
+    "pronunciation": "/ˈsætəlaɪt/",
+    "example_en": "Satellites track weather.",
+    "example_ka": "თანამგზავრები ამინდს აკვირდებიან.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Radar",
+    "georgian": "რადარი",
+    "pronunciation": "/ˈreɪdɑːr/",
+    "example_en": "Weather radar shows rain.",
+    "example_ka": "ამინდის რადარი წვიმას აჩვენებს.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Doppler",
+    "georgian": "დოპლერი",
+    "pronunciation": "/ˈdɒplər/",
+    "example_en": "Doppler radar tracks storms.",
+    "example_ka": "დოპლერის რადარი ქარიშხლებს აკვირდება.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Isobar",
+    "georgian": "იზობარა",
+    "pronunciation": "/ˈaɪsəbɑːr/",
+    "example_en": "Isobars show pressure.",
+    "example_ka": "იზობარები წნევას აჩვენებენ.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Isotherm",
+    "georgian": "იზოთერმა",
+    "pronunciation": "/ˈaɪsəθɜːrm/",
+    "example_en": "Isotherms show temperature.",
+    "example_ka": "იზოთერმები ტემპერატურას აჩვენებენ.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Front",
+    "georgian": "ფრონტი",
+    "pronunciation": "/frʌnt/",
+    "example_en": "A cold front is approaching.",
+    "example_ka": "ცივი ფრონტი მოახლოებულია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Condensation",
+    "georgian": "კონდენსაცია",
+    "pronunciation": "/ˌkɒndenˈseɪʃən/",
+    "example_en": "Condensation forms on glass.",
+    "example_ka": "კონდენსაცია მინაზე წარმოიქმნება.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Evaporation",
+    "georgian": "აორთქლება",
+    "pronunciation": "/ɪˌvæpəˈreɪʃən/",
+    "example_en": "Evaporation causes clouds.",
+    "example_ka": "აორთქლება ღრუბლებს წარმოქმნის.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Convection",
+    "georgian": "კონვექცია",
+    "pronunciation": "/kənˈvekʃən/",
+    "example_en": "Convection creates wind.",
+    "example_ka": "კონვექცია ქარს ქმნის.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Stratosphere",
+    "georgian": "სტრატოსფერო",
+    "pronunciation": "/ˈstrætəsfɪr/",
+    "example_en": "The ozone is in the stratosphere.",
+    "example_ka": "ოზონი სტრატოსფეროშია.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Troposphere",
+    "georgian": "ტროპოსფერო",
+    "pronunciation": "/ˈtrɒpəsfɪr/",
+    "example_en": "Weather occurs in the troposphere.",
+    "example_ka": "ამინდი ტროპოსფეროში ხდება.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Cumulus",
+    "georgian": "კუმულუსი",
+    "pronunciation": "/ˈkjuːmjələs/",
+    "example_en": "Cumulus clouds look fluffy.",
+    "example_ka": "კუმულუსის ღრუბლები ფუმფულას ჰგავს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Stratus",
+    "georgian": "სტრატუსი",
+    "pronunciation": "/ˈstreɪtəs/",
+    "example_en": "Stratus clouds bring drizzle.",
+    "example_ka": "სტრატუსის ღრუბლები წვრილ წვიმას მოაქვს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Cirrus",
+    "georgian": "ცირუსი",
+    "pronunciation": "/ˈsɪrəs/",
+    "example_en": "Cirrus clouds are high.",
+    "example_ka": "ცირუსის ღრუბლები მაღლაა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Nimbus",
+    "georgian": "ნიმბუსი",
+    "pronunciation": "/ˈnɪmbəs/",
+    "example_en": "Nimbus clouds bring rain.",
+    "example_ka": "ნიმბუსის ღრუბლები წვიმას მოაქვს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Vortex",
+    "georgian": "გრიგალი",
+    "pronunciation": "/ˈvɔːrteks/",
+    "example_en": "A polar vortex brought cold.",
+    "example_ka": "პოლარულმა გრიგალმა სიცივე მოიტანა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Solstice",
+    "georgian": "ნაბუნიობა",
+    "pronunciation": "/ˈsɒlstɪs/",
+    "example_en": "The summer solstice is in June.",
+    "example_ka": "ზაფხულის ნაბუნიობა ივნისშია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Equinox",
+    "georgian": "ბუნიობა",
+    "pronunciation": "/ˈiːkwɪnɒks/",
+    "example_en": "The equinox marks equal day and night.",
+    "example_ka": "ბუნიობა თანაბარ დღესა და ღამეს აღნიშნავს.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Visibility",
+    "georgian": "ხილვადობა",
+    "pronunciation": "/ˌvɪzəˈbɪləti/",
+    "example_en": "Visibility is poor in fog.",
+    "example_ka": "ნისლში ხილვადობა ცუდია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Windchill",
+    "georgian": "ქარის სიცივე",
+    "pronunciation": "/ˈwɪndtʃɪl/",
+    "example_en": "Windchill makes it feel colder.",
+    "example_ka": "ქარის სიცივე უფრო ცივად აგრძნობინებს.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Coldsnap",
+    "georgian": "მკვეთრი სიცივე",
+    "pronunciation": "/ˈkoʊldsnæp/",
+    "example_en": "A cold snap hit the region.",
+    "example_ka": "მკვეთრმა სიცივემ რეგიონს დაარტყა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Squall",
+    "georgian": "შქერი",
+    "pronunciation": "/skwɔːl/",
+    "example_en": "A sudden squall hit us.",
+    "example_ka": "უეცარმა შქერმა დაგვარტყა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Whirlwind",
+    "georgian": "მოსხლეტა",
+    "pronunciation": "/ˈwɜːrlwɪnd/",
+    "example_en": "A whirlwind formed in the field.",
+    "example_ka": "მინდორში მოსხლეტა წარმოიქმნა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Deluge",
+    "georgian": "წყალდიდობა",
+    "pronunciation": "/ˈdeljuːdʒ/",
+    "example_en": "The deluge flooded the streets.",
+    "example_ka": "წყალდიდობამ ქუჩები დატბორა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Permafrost",
+    "georgian": "მარადყინული",
+    "pronunciation": "/ˈpɜːrməfrɒst/",
+    "example_en": "Permafrost is melting.",
+    "example_ka": "მარადყინული დნება.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Tundra",
+    "georgian": "ტუნდრა",
+    "pronunciation": "/ˈtʌndrə/",
+    "example_en": "The tundra is frozen.",
+    "example_ka": "ტუნდრა გაყინულია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Savanna",
+    "georgian": "სავანა",
+    "pronunciation": "/səˈvænə/",
+    "example_en": "The savanna is dry.",
+    "example_ka": "სავანა მშრალია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Microclimate",
+    "georgian": "მიკროკლიმატი",
+    "pronunciation": "/ˈmaɪkroʊˌklaɪmɪt/",
+    "example_en": "Cities have microclimates.",
+    "example_ka": "ქალაქებს მიკროკლიმატი აქვთ.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Albedo",
+    "georgian": "ალბედო",
+    "pronunciation": "/ælˈbiːdoʊ/",
+    "example_en": "Snow has high albedo.",
+    "example_ka": "თოვლს მაღალი ალბედო აქვს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "El Niño",
+    "georgian": "ელ ნინიო",
+    "pronunciation": "/ˌel ˈniːnjoʊ/",
+    "example_en": "El Niño affects global weather.",
+    "example_ka": "ელ ნინიო გლობალურ ამინდზე მოქმედებს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Jet",
+    "georgian": "ჯეტი",
+    "pronunciation": "/dʒet/",
+    "example_en": "The jet stream shifted.",
+    "example_ka": "ჯეტის ნაკადი გადაინაცვლა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Barometric",
+    "georgian": "ბარომეტრული",
+    "pronunciation": "/ˌbærəˈmetrɪk/",
+    "example_en": "Barometric pressure is dropping.",
+    "example_ka": "ბარომეტრული წნევა ეცემა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Inversion",
+    "georgian": "ინვერსია",
+    "pronunciation": "/ɪnˈvɜːrʃən/",
+    "example_en": "Temperature inversion traps smog.",
+    "example_ka": "ტემპერატურული ინვერსია სმოგს აჩერებს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Turbulence",
+    "georgian": "ტურბულენცია",
+    "pronunciation": "/ˈtɜːrbjələns/",
+    "example_en": "Air turbulence shook the plane.",
+    "example_ka": "ჰაერის ტურბულენციამ თვითმფრინავი შეარხია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Aftershock",
+    "georgian": "ქვემიწისძვრა",
+    "pronunciation": "/ˈæftərʃɒk/",
+    "example_en": "Aftershocks continued for days.",
+    "example_ka": "ქვემიწისძვრები დღეებით გრძელდებოდა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Landslide",
+    "georgian": "მეწყერი",
+    "pronunciation": "/ˈlændslaɪd/",
+    "example_en": "Heavy rain caused a landslide.",
+    "example_ka": "ძლიერმა წვიმმა მეწყერი გამოიწვია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Mudslide",
+    "georgian": "ტალახის ნაკადი",
+    "pronunciation": "/ˈmʌdslaɪd/",
+    "example_en": "A mudslide blocked the road.",
+    "example_ka": "ტალახის ნაკადმა გზა დაბლოკა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Sinkhole",
+    "georgian": "ჩაზნექვა",
+    "pronunciation": "/ˈsɪŋkhoʊl/",
+    "example_en": "A sinkhole appeared downtown.",
+    "example_ka": "ცენტრში ჩაზნექვა გაჩნდა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Famine",
+    "georgian": "შიმშილი",
+    "pronunciation": "/ˈfæmɪn/",
+    "example_en": "Drought can cause famine.",
+    "example_ka": "გვალვამ შიმშილი შეიძლება გამოიწვიოს.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Waterspout",
+    "georgian": "წყლის სვეტი",
+    "pronunciation": "/ˈwɔːtərspaʊt/",
+    "example_en": "A waterspout formed at sea.",
+    "example_ka": "ზღვაზე წყლის სვეტი წარმოიქმნა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Haboob",
+    "georgian": "ქვიშის ქარიშხალი",
+    "pronunciation": "/həˈbuːb/",
+    "example_en": "A haboob engulfed the city.",
+    "example_ka": "ქვიშის ქარიშხალმა ქალაქი მოიცვა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Windward",
+    "georgian": "ქარისპირა",
+    "pronunciation": "/ˈwɪndwərd/",
+    "example_en": "The windward side gets rain.",
+    "example_ka": "ქარისპირა მხარეს წვიმა მოდის.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Leeward",
+    "georgian": "ქარისუკანა",
+    "pronunciation": "/ˈliːwərd/",
+    "example_en": "The leeward side is dry.",
+    "example_ka": "ქარისუკანა მხარე მშრალია.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Barograph",
+    "georgian": "ბაროგრაფი",
+    "pronunciation": "/ˈbærəɡrɑːf/",
+    "example_en": "Read the barograph.",
+    "example_ka": "ბაროგრაფი წაიკითხე.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Anemometer",
+    "georgian": "ანემომეტრი",
+    "pronunciation": "/ˌænɪˈmɒmɪtər/",
+    "example_en": "The anemometer measures wind.",
+    "example_ka": "ანემომეტრი ქარს ზომავს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Hygrometer",
+    "georgian": "ჰიგრომეტრი",
+    "pronunciation": "/haɪˈɡrɒmɪtər/",
+    "example_en": "Check the hygrometer.",
+    "example_ka": "ჰიგრომეტრი შეამოწმე.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Cumulonimbus",
+    "georgian": "კუმულონიმბუსი",
+    "pronunciation": "/ˌkjuːmjələˈnɪmbəs/",
+    "example_en": "Cumulonimbus clouds bring storms.",
+    "example_ka": "კუმულონიმბუსის ღრუბლები ქარიშხალს მოაქვს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Supercell",
+    "georgian": "სუპერუჯრედი",
+    "pronunciation": "/ˈsuːpərsel/",
+    "example_en": "A supercell formed quickly.",
+    "example_ka": "სუპერუჯრედი სწრაფად ჩამოყალიბდა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Downdraft",
+    "georgian": "ქარქვეშა",
+    "pronunciation": "/ˈdaʊndræft/",
+    "example_en": "A strong downdraft hit.",
+    "example_ka": "ძლიერმა ქარქვეშამ დაარტყა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Updraft",
+    "georgian": "ქარზევა",
+    "pronunciation": "/ˈʌpdræft/",
+    "example_en": "Updrafts feed the storm.",
+    "example_ka": "ქარზევა ქარიშხალს კვებავს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Sublimation",
+    "georgian": "სუბლიმაცია",
+    "pronunciation": "/ˌsʌblɪˈmeɪʃən/",
+    "example_en": "Sublimation turns ice to vapor.",
+    "example_ka": "სუბლიმაცია ყინულს ორთქლად აქცევს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Deposition",
+    "georgian": "დაქანება",
+    "pronunciation": "/ˌdepəˈzɪʃən/",
+    "example_en": "Deposition forms frost.",
+    "example_ka": "დაქანება ყინვას ქმნის.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Orographic",
+    "georgian": "ოროგრაფიული",
+    "pronunciation": "/ˌɒrəˈɡræfɪk/",
+    "example_en": "Orographic lift causes rain.",
+    "example_ka": "ოროგრაფიული აწევა წვიმას იწვევს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Zenith",
+    "georgian": "ზენიტი",
+    "pronunciation": "/ˈzenɪθ/",
+    "example_en": "The sun is at its zenith.",
+    "example_ka": "მზე ზენიტშია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Twilight",
+    "georgian": "შებინდება",
+    "pronunciation": "/ˈtwaɪlaɪt/",
+    "example_en": "The sky was pink at twilight.",
+    "example_ka": "შებინდებისას ცა ვარდისფერი იყო.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Dawn",
+    "georgian": "გათენება",
+    "pronunciation": "/dɔːn/",
+    "example_en": "We woke at dawn.",
+    "example_ka": "გათენებისას გავიღვიძეთ.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Dusk",
+    "georgian": "შებინდება",
+    "pronunciation": "/dʌsk/",
+    "example_en": "The sky darkened at dusk.",
+    "example_ka": "შებინდებისას ცა ჩაბნელდა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Horizon",
+    "georgian": "ჰორიზონტი",
+    "pronunciation": "/həˈraɪzn/",
+    "example_en": "The sun set on the horizon.",
+    "example_ka": "მზე ჰორიზონტზე ჩაჯდა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Shade",
+    "georgian": "ჩრდილი",
+    "pronunciation": "/ʃeɪd/",
+    "example_en": "Sit in the shade.",
+    "example_ka": "ჩრდილში დაჯექი.",
+    "category": "weather-climate",
+    "level": "A1"
+  },
+  {
+    "english": "Shadow",
+    "georgian": "ჩრდილი",
+    "pronunciation": "/ˈʃædoʊ/",
+    "example_en": "Clouds cast shadows.",
+    "example_ka": "ღრუბლები ჩრდილს ქმნიან.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Ultraviolet",
+    "georgian": "ულტრაიისფერი",
+    "pronunciation": "/ˌʌltrəˈvaɪələt/",
+    "example_en": "Ultraviolet rays are harmful.",
+    "example_ka": "ულტრაიისფერი სხივები მავნეა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Infrared",
+    "georgian": "ინფრაწითელი",
+    "pronunciation": "/ˌɪnfrəˈred/",
+    "example_en": "Infrared radiation warms us.",
+    "example_ka": "ინფრაწითელი გამოსხივება გვათბობს.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Sirocco",
+    "georgian": "სიროკო",
+    "pronunciation": "/sɪˈrɒkoʊ/",
+    "example_en": "The sirocco blew from the desert.",
+    "example_ka": "სიროკო უდაბნოდან ქროდა.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Mistral",
+    "georgian": "მისტრალი",
+    "pronunciation": "/ˈmɪstrəl/",
+    "example_en": "The mistral is a cold wind.",
+    "example_ka": "მისტრალი ცივი ქარია.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Chinook",
+    "georgian": "ჩინუკი",
+    "pronunciation": "/ʃɪˈnʊk/",
+    "example_en": "A chinook wind warmed the area.",
+    "example_ka": "ჩინუკის ქარმა ტერიტორია გაათბო.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Foehn",
+    "georgian": "ფიონი",
+    "pronunciation": "/feɪn/",
+    "example_en": "The foehn wind melted snow.",
+    "example_ka": "ფიონის ქარმა თოვლი დაადნო.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Slush",
+    "georgian": "ტალახი",
+    "pronunciation": "/slʌʃ/",
+    "example_en": "The roads are full of slush.",
+    "example_ka": "გზები ტალახითაა სავსე.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Flurry",
+    "georgian": "თოვლის შხაპი",
+    "pronunciation": "/ˈflɜːri/",
+    "example_en": "Snow flurries are expected.",
+    "example_ka": "თოვლის შხაპია მოსალოდნელი.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Pollen",
+    "georgian": "მტვერი",
+    "pronunciation": "/ˈpɒlən/",
+    "example_en": "Pollen count is high.",
+    "example_ka": "მტვრის რაოდენობა მაღალია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Allergen",
+    "georgian": "ალერგენი",
+    "pronunciation": "/ˈælədʒən/",
+    "example_en": "Spring allergens cause sneezing.",
+    "example_ka": "საგაზაფხულო ალერგენები ცემინებას იწვევს.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Seasonal",
+    "georgian": "სეზონური",
+    "pronunciation": "/ˈsiːzənl/",
+    "example_en": "Seasonal changes affect mood.",
+    "example_ka": "სეზონური ცვლილებები განწყობაზე მოქმედებს.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Phenomenon",
+    "georgian": "ფენომენი",
+    "pronunciation": "/fɪˈnɒmɪnən/",
+    "example_en": "Weather is a natural phenomenon.",
+    "example_ka": "ამინდი ბუნებრივი ფენომენია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Parched",
+    "georgian": "გამომშრალი",
+    "pronunciation": "/pɑːrtʃt/",
+    "example_en": "The land is parched.",
+    "example_ka": "მიწა გამომშრალია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Calamity",
+    "georgian": "უბედურება",
+    "pronunciation": "/kəˈlæməti/",
+    "example_en": "Natural calamities are increasing.",
+    "example_ka": "ბუნებრივი უბედურებები იზრდება.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "example_ka": "ქარიშხალმა გაპარტახება გამოიწვია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Resilience",
+    "georgian": "მდგრადობა",
+    "pronunciation": "/rɪˈzɪliəns/",
+    "example_en": "Resilience to climate change matters.",
+    "example_ka": "კლიმატის ცვლილების მიმართ მდგრადობა მნიშვნელოვანია.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Sustainable",
+    "georgian": "მდგრადი",
+    "pronunciation": "/səˈsteɪnəbl/",
+    "example_en": "Use sustainable energy.",
+    "example_ka": "მდგრადი ენერგია გამოიყენე.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Renewable",
+    "georgian": "განახლებადი",
+    "pronunciation": "/rɪˈnjuːəbl/",
+    "example_en": "Renewable energy is the future.",
+    "example_ka": "განახლებადი ენერგია მომავალია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Solar",
+    "georgian": "მზის",
+    "pronunciation": "/ˈsoʊlər/",
+    "example_en": "Solar energy is clean.",
+    "example_ka": "მზის ენერგია სუფთაა.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Geothermal",
+    "georgian": "გეოთერმული",
+    "pronunciation": "/ˌdʒiːoʊˈθɜːrml/",
+    "example_en": "Geothermal energy is renewable.",
+    "example_ka": "გეოთერმული ენერგია განახლებადია.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Biodiversity",
+    "georgian": "ბიომრავალფეროვნება",
+    "pronunciation": "/ˌbaɪoʊdaɪˈvɜːrsəti/",
+    "example_en": "Climate affects biodiversity.",
+    "example_ka": "კლიმატი ბიომრავალფეროვნებაზე მოქმედებს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Desertification",
+    "georgian": "გაუდაბნოება",
+    "pronunciation": "/dɪˌzɜːrtɪfɪˈkeɪʃən/",
+    "example_en": "Desertification is spreading.",
+    "example_ka": "გაუდაბნოება ვრცელდება.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Adaptation",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˌædæpˈteɪʃən/",
+    "example_en": "Climate adaptation is essential.",
+    "example_ka": "კლიმატზე ადაპტაცია აუცილებელია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Mitigation",
+    "georgian": "შერბილება",
+    "pronunciation": "/ˌmɪtɪˈɡeɪʃən/",
+    "example_en": "Mitigation reduces harm.",
+    "example_ka": "შერბილება ზიანს ამცირებს.",
+    "category": "weather-climate",
+    "level": "C1"
+  },
+  {
+    "english": "Iceberg",
+    "georgian": "აისბერგი",
+    "pronunciation": "/ˈaɪsbɜːrɡ/",
+    "example_en": "An iceberg floated by.",
+    "example_ka": "აისბერგი ცურავდა.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Tidal",
+    "georgian": "მოქცევითი",
+    "pronunciation": "/ˈtaɪdl/",
+    "example_en": "Tidal waves are dangerous.",
+    "example_ka": "მოქცევითი ტალღები საშიშია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Current",
+    "georgian": "დინება",
+    "pronunciation": "/ˈkʌrənt/",
+    "example_en": "Ocean currents affect weather.",
+    "example_ka": "ოკეანის დინებები ამინდზე მოქმედებს.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Whirlpool",
+    "georgian": "ქარბუქული",
+    "pronunciation": "/ˈwɜːrlpuːl/",
+    "example_en": "A whirlpool formed in the river.",
+    "example_ka": "მდინარეში ქარბუქული წარმოიქმნა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Heatstroke",
+    "georgian": "სიცხის დარტყმა",
+    "pronunciation": "/ˈhiːtstroʊk/",
+    "example_en": "Heatstroke is dangerous in summer.",
+    "example_ka": "სიცხის დარტყმა ზაფხულში საშიშია.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Windstorm",
+    "georgian": "ქარიშხალი",
+    "pronunciation": "/ˈwɪndstɔːrm/",
+    "example_en": "The windstorm knocked down trees.",
+    "example_ka": "ქარიშხალმა ხეები მოამხო.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Snowdrift",
+    "georgian": "თოვლის გროვა",
+    "pronunciation": "/ˈsnoʊdrɪft/",
+    "example_en": "Snowdrifts blocked the road.",
+    "example_ka": "თოვლის გროვებმა გზა დააბლოკა.",
+    "category": "weather-climate",
+    "level": "B2"
+  },
+  {
+    "english": "Forecast",
+    "georgian": "პროგნოზი",
+    "pronunciation": "/ˈfɔːrkæst/",
+    "example_en": "The weather forecast is accurate.",
+    "example_ka": "ამინდის პროგნოზი ზუსტია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Drizzling",
+    "georgian": "წვრილი წვიმა",
+    "pronunciation": "/ˈdrɪzlɪŋ/",
+    "example_en": "It's drizzling outside.",
+    "example_ka": "გარეთ წვრილი წვიმა მოდის.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Overcast",
+    "georgian": "მოღრუბლული",
+    "pronunciation": "/ˌoʊvərˈkæst/",
+    "example_en": "The sky looks overcast today.",
+    "example_ka": "დღეს ცა მოღრუბლული ჩანს.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Misty",
+    "georgian": "ნისლიანი",
+    "pronunciation": "/ˈmɪsti/",
+    "example_en": "The morning was misty.",
+    "example_ka": "დილა ნისლიანი იყო.",
+    "category": "weather-climate",
+    "level": "A2"
+  },
+  {
+    "english": "Crisp",
+    "georgian": "მკვეთრი",
+    "pronunciation": "/krɪsp/",
+    "example_en": "The autumn air is crisp.",
+    "example_ka": "შემოდგომის ჰაერი მკვეთრია.",
+    "category": "weather-climate",
+    "level": "B1"
+  },
+  {
+    "english": "Climate",
+    "georgian": "კლიმატური",
+    "pronunciation": "/ˈklaɪmət/",
+    "example_en": "Climate patterns are changing.",
+    "example_ka": "კლიმატური ნიმუშები იცვლება.",
+    "category": "weather-climate",
+    "level": "B1"
+  }
 ]

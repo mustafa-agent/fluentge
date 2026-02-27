@@ -1,52 +1,1802 @@
 [
-  {"english": "Taxi", "georgian": "ტაქსი", "pronunciation": "/ˈtæksi/", "example_en": "Let's take a taxi to the airport.", "example_ka": "აეროპორტამდე ტაქსით წავიდეთ.", "category": "taxi", "level": "A1"},
-  {"english": "Driver", "georgian": "მძღოლი", "pronunciation": "/ˈdraɪvər/", "example_en": "The driver was very friendly.", "example_ka": "მძღოლი ძალიან მეგობრული იყო.", "category": "taxi", "level": "A1"},
-  {"english": "Passenger", "georgian": "მგზავრი", "pronunciation": "/ˈpæsɪndʒər/", "example_en": "The passenger sat in the back.", "example_ka": "მგზავრი უკანა სავარძელში დაჯდა.", "category": "taxi", "level": "A2"},
-  {"english": "Destination", "georgian": "დანიშნულების ადგილი", "pronunciation": "/ˌdɛstɪˈneɪʃən/", "example_en": "What is your destination?", "example_ka": "რა არის თქვენი დანიშნულების ადგილი?", "category": "taxi", "level": "A2"},
-  {"english": "Fare", "georgian": "ტარიფი", "pronunciation": "/fɛr/", "example_en": "How much is the fare to downtown?", "example_ka": "რა ტარიფია ცენტრამდე?", "category": "taxi", "level": "A2"},
-  {"english": "Tip", "georgian": "ჩაის ფული", "pronunciation": "/tɪp/", "example_en": "I always leave a tip for good service.", "example_ka": "კარგი მომსახურებისთვის ყოველთვის ჩაის ფულს ვტოვებ.", "category": "taxi", "level": "A2"},
-  {"english": "Pick up", "georgian": "ასვლა", "pronunciation": "/pɪk ʌp/", "example_en": "The driver will pick you up at 6 PM.", "example_ka": "მძღოლი საღამოს 6 საათზე წაგიყვანთ.", "category": "taxi", "level": "A2"},
-  {"english": "Drop off", "georgian": "ჩამოსვლა", "pronunciation": "/drɒp ɒf/", "example_en": "Please drop me off at the station.", "example_ka": "გთხოვთ, სადგურთან ჩამომსვით.", "category": "taxi", "level": "A2"},
-  {"english": "Meter", "georgian": "მრიცხველი", "pronunciation": "/ˈmiːtər/", "example_en": "Make sure the meter is running.", "example_ka": "დარწმუნდით, რომ მრიცხველი ჩართულია.", "category": "taxi", "level": "A2"},
-  {"english": "Traffic", "georgian": "საცობი", "pronunciation": "/ˈtræfɪk/", "example_en": "We're stuck in traffic.", "example_ka": "საცობში გავიჭედეთ.", "category": "taxi", "level": "A2"},
-  {"english": "Traffic jam", "georgian": "საგზაო საცობი", "pronunciation": "/ˈtræfɪk dʒæm/", "example_en": "There's a traffic jam on the highway.", "example_ka": "ავტომაგისტრალზე საგზაო საცობია.", "category": "taxi", "level": "A2"},
-  {"english": "Route", "georgian": "მარშრუტი", "pronunciation": "/ruːt/", "example_en": "Take the shortest route, please.", "example_ka": "გთხოვთ, ყველაზე მოკლე მარშრუტით წადით.", "category": "taxi", "level": "A2"},
-  {"english": "GPS", "georgian": "ნავიგაცია", "pronunciation": "/dʒiː piː ɛs/", "example_en": "The driver is using GPS.", "example_ka": "მძღოლი ნავიგაციას იყენებს.", "category": "taxi", "level": "A2"},
-  {"english": "Address", "georgian": "მისამართი", "pronunciation": "/əˈdrɛs/", "example_en": "What is the address?", "example_ka": "რა მისამართია?", "category": "taxi", "level": "A1"},
-  {"english": "Ride", "georgian": "მგზავრობა", "pronunciation": "/raɪd/", "example_en": "The ride took 30 minutes.", "example_ka": "მგზავრობა 30 წუთი გაგრძელდა.", "category": "taxi", "level": "A1"},
-  {"english": "Book a ride", "georgian": "მგზავრობის დაჯავშნა", "pronunciation": "/bʊk ə raɪd/", "example_en": "I booked a ride through the app.", "example_ka": "აპლიკაციით მგზავრობა დავჯავშნე.", "category": "taxi", "level": "A2"},
-  {"english": "Cancel", "georgian": "გაუქმება", "pronunciation": "/ˈkænsəl/", "example_en": "I need to cancel the ride.", "example_ka": "მგზავრობის გაუქმება მჭირდება.", "category": "taxi", "level": "A2"},
-  {"english": "Seat belt", "georgian": "უსაფრთხოების ღვედი", "pronunciation": "/siːt bɛlt/", "example_en": "Please fasten your seat belt.", "example_ka": "გთხოვთ, უსაფრთხოების ღვედი შეიკარით.", "category": "taxi", "level": "A2"},
-  {"english": "Turn left", "georgian": "მარცხნივ მოუხვიეთ", "pronunciation": "/tɜːrn lɛft/", "example_en": "Turn left at the next intersection.", "example_ka": "შემდეგ გზაჯვარედინზე მარცხნივ მოუხვიეთ.", "category": "taxi", "level": "A1"},
-  {"english": "Turn right", "georgian": "მარჯვნივ მოუხვიეთ", "pronunciation": "/tɜːrn raɪt/", "example_en": "Turn right after the bridge.", "example_ka": "ხიდის შემდეგ მარჯვნივ მოუხვიეთ.", "category": "taxi", "level": "A1"},
-  {"english": "Go straight", "georgian": "პირდაპირ წადით", "pronunciation": "/ɡoʊ streɪt/", "example_en": "Go straight for two blocks.", "example_ka": "ორი კვარტალი პირდაპირ წადით.", "category": "taxi", "level": "A1"},
-  {"english": "Stop here", "georgian": "აქ გაჩერდით", "pronunciation": "/stɒp hɪr/", "example_en": "Stop here, please.", "example_ka": "გთხოვთ, აქ გაჩერდით.", "category": "taxi", "level": "A1"},
-  {"english": "Wait", "georgian": "დაიცადეთ", "pronunciation": "/weɪt/", "example_en": "Can you wait for five minutes?", "example_ka": "ხუთ წუთს დაიცდით?", "category": "taxi", "level": "A1"},
-  {"english": "Hurry", "georgian": "იჩქარეთ", "pronunciation": "/ˈhʌri/", "example_en": "Please hurry, I'm late!", "example_ka": "გთხოვთ, იჩქარეთ, ვაგვიანებ!", "category": "taxi", "level": "A2"},
-  {"english": "Rideshare", "georgian": "თანამგზავრობა", "pronunciation": "/ˈraɪdʃɛr/", "example_en": "Rideshare apps are very popular.", "example_ka": "თანამგზავრობის აპლიკაციები ძალიან პოპულარულია.", "category": "taxi", "level": "A2"},
-  {"english": "Rating", "georgian": "შეფასება", "pronunciation": "/ˈreɪtɪŋ/", "example_en": "I gave the driver a five-star rating.", "example_ka": "მძღოლს ხუთვარსკვლავიანი შეფასება მივეცი.", "category": "taxi", "level": "A2"},
-  {"english": "Receipt", "georgian": "ქვითარი", "pronunciation": "/rɪˈsiːt/", "example_en": "Can I get a receipt, please?", "example_ka": "შეიძლება ქვითარი, გთხოვთ?", "category": "taxi", "level": "A2"},
-  {"english": "Luggage", "georgian": "ბარგი", "pronunciation": "/ˈlʌɡɪdʒ/", "example_en": "Can you put my luggage in the trunk?", "example_ka": "ბარგს საბარგულში ჩადებთ?", "category": "taxi", "level": "A2"},
-  {"english": "Trunk", "georgian": "საბარგული", "pronunciation": "/trʌŋk/", "example_en": "Open the trunk, please.", "example_ka": "გთხოვთ, საბარგული გააღეთ.", "category": "taxi", "level": "A2"},
-  {"english": "Highway", "georgian": "ავტომაგისტრალი", "pronunciation": "/ˈhaɪweɪ/", "example_en": "Take the highway, it's faster.", "example_ka": "ავტომაგისტრალით წადით, უფრო სწრაფია.", "category": "taxi", "level": "A2"},
-  {"english": "Shortcut", "georgian": "მალსახმობი", "pronunciation": "/ˈʃɔːrtkʌt/", "example_en": "I know a shortcut to avoid traffic.", "example_ka": "საცობის ასაცილებლად მალსახმობი ვიცი.", "category": "taxi", "level": "B1"},
-  {"english": "Speed limit", "georgian": "სიჩქარის ლიმიტი", "pronunciation": "/spiːd ˈlɪmɪt/", "example_en": "Don't exceed the speed limit.", "example_ka": "სიჩქარის ლიმიტს ნუ გადააჭარბებთ.", "category": "taxi", "level": "A2"},
-  {"english": "Red light", "georgian": "წითელი შუქი", "pronunciation": "/rɛd laɪt/", "example_en": "Stop at the red light.", "example_ka": "წითელ შუქზე გაჩერდით.", "category": "taxi", "level": "A1"},
-  {"english": "Intersection", "georgian": "გზაჯვარედინი", "pronunciation": "/ˌɪntərˈsɛkʃən/", "example_en": "Be careful at the intersection.", "example_ka": "გზაჯვარედინზე ფრთხილად იყავით.", "category": "taxi", "level": "A2"},
-  {"english": "U-turn", "georgian": "მობრუნება", "pronunciation": "/ˈjuː tɜːrn/", "example_en": "Make a U-turn at the next light.", "example_ka": "შემდეგ შუქნიშანთან მობრუნდით.", "category": "taxi", "level": "A2"},
-  {"english": "Arrive", "georgian": "ჩასვლა", "pronunciation": "/əˈraɪv/", "example_en": "We will arrive in ten minutes.", "example_ka": "ათ წუთში ჩავალთ.", "category": "taxi", "level": "A1"},
-  {"english": "Delay", "georgian": "დაგვიანება", "pronunciation": "/dɪˈleɪ/", "example_en": "There's a delay because of traffic.", "example_ka": "საცობის გამო დაგვიანებაა.", "category": "taxi", "level": "A2"},
-  {"english": "Estimated time", "georgian": "სავარაუდო დრო", "pronunciation": "/ˈɛstɪmeɪtɪd taɪm/", "example_en": "The estimated time of arrival is 3 PM.", "example_ka": "ჩასვლის სავარაუდო დრო 3 საათია.", "category": "taxi", "level": "A2"},
-  {"english": "Pickup point", "georgian": "ასაყვანი ადგილი", "pronunciation": "/ˈpɪkʌp pɔɪnt/", "example_en": "Wait at the pickup point.", "example_ka": "ასაყვან ადგილზე დაიცადეთ.", "category": "taxi", "level": "A2"},
-  {"english": "License plate", "georgian": "სანომრე ნიშანი", "pronunciation": "/ˈlaɪsəns pleɪt/", "example_en": "Check the license plate before getting in.", "example_ka": "ჩაჯდომამდე სანომრე ნიშანი შეამოწმეთ.", "category": "taxi", "level": "A2"},
-  {"english": "Air conditioning", "georgian": "კონდიციონერი", "pronunciation": "/ɛr kənˈdɪʃənɪŋ/", "example_en": "Can you turn on the air conditioning?", "example_ka": "კონდიციონერს ჩართავთ?", "category": "taxi", "level": "A2"},
-  {"english": "Window", "georgian": "ფანჯარა", "pronunciation": "/ˈwɪndoʊ/", "example_en": "Can I open the window?", "example_ka": "შეიძლება ფანჯარა გავაღო?", "category": "taxi", "level": "A1"},
-  {"english": "Map", "georgian": "რუკა", "pronunciation": "/mæp/", "example_en": "I'll show you on the map.", "example_ka": "რუკაზე გაჩვენებ.", "category": "taxi", "level": "A1"},
-  {"english": "Shared ride", "georgian": "გაზიარებული მგზავრობა", "pronunciation": "/ʃɛrd raɪd/", "example_en": "A shared ride is cheaper.", "example_ka": "გაზიარებული მგზავრობა უფრო იაფია.", "category": "taxi", "level": "A2"},
-  {"english": "Surge pricing", "georgian": "გაზრდილი ტარიფი", "pronunciation": "/sɜːrdʒ ˈpraɪsɪŋ/", "example_en": "Prices are higher due to surge pricing.", "example_ka": "გაზრდილი ტარიფის გამო ფასები მაღალია.", "category": "taxi", "level": "B1"},
-  {"english": "Comfortable", "georgian": "კომფორტული", "pronunciation": "/ˈkʌmfərtəbəl/", "example_en": "The car was very comfortable.", "example_ka": "მანქანა ძალიან კომფორტული იყო.", "category": "taxi", "level": "A2"},
-  {"english": "Safe", "georgian": "უსაფრთხო", "pronunciation": "/seɪf/", "example_en": "I feel safe with this driver.", "example_ka": "ამ მძღოლთან თავს უსაფრთხოდ ვგრძნობ.", "category": "taxi", "level": "A1"},
-  {"english": "Flat tire", "georgian": "გაფუჭებული საბურავი", "pronunciation": "/flæt ˈtaɪər/", "example_en": "The taxi had a flat tire.", "example_ka": "ტაქსის საბურავი გაუფუჭდა.", "category": "taxi", "level": "B1"},
-  {"english": "Payment", "georgian": "გადახდა", "pronunciation": "/ˈpeɪmənt/", "example_en": "Payment is accepted by card or cash.", "example_ka": "გადახდა ბარათით ან ნაღდით მიიღება.", "category": "taxi", "level": "A2"},
-  {"english": "Round trip", "georgian": "ორმხრივი მგზავრობა", "pronunciation": "/raʊnd trɪp/", "example_en": "How much is a round trip?", "example_ka": "ორმხრივი მგზავრობა რა ღირს?", "category": "taxi", "level": "A2"}
+  {
+    "english": "Taxi",
+    "georgian": "ტაქსი",
+    "pronunciation": "/ˈtæksi/",
+    "example_en": "Let's take a taxi to the airport.",
+    "example_ka": "აეროპორტამდე ტაქსით წავიდეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Driver",
+    "georgian": "მძღოლი",
+    "pronunciation": "/ˈdraɪvər/",
+    "example_en": "The driver was very friendly.",
+    "example_ka": "მძღოლი ძალიან მეგობრული იყო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Passenger",
+    "georgian": "მგზავრი",
+    "pronunciation": "/ˈpæsɪndʒər/",
+    "example_en": "The passenger sat in the back.",
+    "example_ka": "მგზავრი უკანა სავარძელში დაჯდა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Destination",
+    "georgian": "დანიშნულების ადგილი",
+    "pronunciation": "/ˌdɛstɪˈneɪʃən/",
+    "example_en": "What is your destination?",
+    "example_ka": "რა არის თქვენი დანიშნულების ადგილი?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Fare",
+    "georgian": "ტარიფი",
+    "pronunciation": "/fɛr/",
+    "example_en": "How much is the fare to downtown?",
+    "example_ka": "რა ტარიფია ცენტრამდე?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Tip",
+    "georgian": "ჩაის ფული",
+    "pronunciation": "/tɪp/",
+    "example_en": "I always leave a tip for good service.",
+    "example_ka": "კარგი მომსახურებისთვის ყოველთვის ჩაის ფულს ვტოვებ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Meter",
+    "georgian": "მრიცხველი",
+    "pronunciation": "/ˈmiːtər/",
+    "example_en": "Make sure the meter is running.",
+    "example_ka": "დარწმუნდით, რომ მრიცხველი ჩართულია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Traffic",
+    "georgian": "საცობი",
+    "pronunciation": "/ˈtræfɪk/",
+    "example_en": "We're stuck in traffic.",
+    "example_ka": "საცობში გავიჭედეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Route",
+    "georgian": "მარშრუტი",
+    "pronunciation": "/ruːt/",
+    "example_en": "Take the shortest route, please.",
+    "example_ka": "გთხოვთ, ყველაზე მოკლე მარშრუტით წადით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "GPS",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/dʒiː piː ɛs/",
+    "example_en": "The driver is using GPS.",
+    "example_ka": "მძღოლი ნავიგაციას იყენებს.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Address",
+    "georgian": "მისამართი",
+    "pronunciation": "/əˈdrɛs/",
+    "example_en": "What is the address?",
+    "example_ka": "რა მისამართია?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Ride",
+    "georgian": "მგზავრობა",
+    "pronunciation": "/raɪd/",
+    "example_en": "The ride took 30 minutes.",
+    "example_ka": "მგზავრობა 30 წუთი გაგრძელდა.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Cancel",
+    "georgian": "გაუქმება",
+    "pronunciation": "/ˈkænsəl/",
+    "example_en": "I need to cancel the ride.",
+    "example_ka": "მგზავრობის გაუქმება მჭირდება.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Wait",
+    "georgian": "დაიცადეთ",
+    "pronunciation": "/weɪt/",
+    "example_en": "Can you wait for five minutes?",
+    "example_ka": "ხუთ წუთს დაიცდით?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Hurry",
+    "georgian": "იჩქარეთ",
+    "pronunciation": "/ˈhʌri/",
+    "example_en": "Please hurry, I'm late!",
+    "example_ka": "გთხოვთ, იჩქარეთ, ვაგვიანებ!",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Rideshare",
+    "georgian": "თანამგზავრობა",
+    "pronunciation": "/ˈraɪdʃɛr/",
+    "example_en": "Rideshare apps are very popular.",
+    "example_ka": "თანამგზავრობის აპლიკაციები ძალიან პოპულარულია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Rating",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈreɪtɪŋ/",
+    "example_en": "I gave the driver a five-star rating.",
+    "example_ka": "მძღოლს ხუთვარსკვლავიანი შეფასება მივეცი.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Can I get a receipt, please?",
+    "example_ka": "შეიძლება ქვითარი, გთხოვთ?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Luggage",
+    "georgian": "ბარგი",
+    "pronunciation": "/ˈlʌɡɪdʒ/",
+    "example_en": "Can you put my luggage in the trunk?",
+    "example_ka": "ბარგს საბარგულში ჩადებთ?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Trunk",
+    "georgian": "საბარგული",
+    "pronunciation": "/trʌŋk/",
+    "example_en": "Open the trunk, please.",
+    "example_ka": "გთხოვთ, საბარგული გააღეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Highway",
+    "georgian": "ავტომაგისტრალი",
+    "pronunciation": "/ˈhaɪweɪ/",
+    "example_en": "Take the highway, it's faster.",
+    "example_ka": "ავტომაგისტრალით წადით, უფრო სწრაფია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Shortcut",
+    "georgian": "მალსახმობი",
+    "pronunciation": "/ˈʃɔːrtkʌt/",
+    "example_en": "I know a shortcut to avoid traffic.",
+    "example_ka": "საცობის ასაცილებლად მალსახმობი ვიცი.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Intersection",
+    "georgian": "გზაჯვარედინი",
+    "pronunciation": "/ˌɪntərˈsɛkʃən/",
+    "example_en": "Be careful at the intersection.",
+    "example_ka": "გზაჯვარედინზე ფრთხილად იყავით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "U-turn",
+    "georgian": "მობრუნება",
+    "pronunciation": "/ˈjuː tɜːrn/",
+    "example_en": "Make a U-turn at the next light.",
+    "example_ka": "შემდეგ შუქნიშანთან მობრუნდით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Arrive",
+    "georgian": "ჩასვლა",
+    "pronunciation": "/əˈraɪv/",
+    "example_en": "We will arrive in ten minutes.",
+    "example_ka": "ათ წუთში ჩავალთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Delay",
+    "georgian": "დაგვიანება",
+    "pronunciation": "/dɪˈleɪ/",
+    "example_en": "There's a delay because of traffic.",
+    "example_ka": "საცობის გამო დაგვიანებაა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Window",
+    "georgian": "ფანჯარა",
+    "pronunciation": "/ˈwɪndoʊ/",
+    "example_en": "Can I open the window?",
+    "example_ka": "შეიძლება ფანჯარა გავაღო?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Map",
+    "georgian": "რუკა",
+    "pronunciation": "/mæp/",
+    "example_en": "I'll show you on the map.",
+    "example_ka": "რუკაზე გაჩვენებ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Comfortable",
+    "georgian": "კომფორტული",
+    "pronunciation": "/ˈkʌmfərtəbəl/",
+    "example_en": "The car was very comfortable.",
+    "example_ka": "მანქანა ძალიან კომფორტული იყო.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Safe",
+    "georgian": "უსაფრთხო",
+    "pronunciation": "/seɪf/",
+    "example_en": "I feel safe with this driver.",
+    "example_ka": "ამ მძღოლთან თავს უსაფრთხოდ ვგრძნობ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Payment",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈpeɪmənt/",
+    "example_en": "Payment is accepted by card or cash.",
+    "example_ka": "გადახდა ბარათით ან ნაღდით მიიღება.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Cash",
+    "georgian": "ნაღდი ფული",
+    "pronunciation": "/kæʃ/",
+    "example_en": "I'll pay with cash.",
+    "example_ka": "ნაღდით გადავიხდი.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Card",
+    "georgian": "ბარათი",
+    "pronunciation": "/kɑːrd/",
+    "example_en": "Do you accept credit cards?",
+    "example_ka": "საკრედიტო ბარათებს იღებთ?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Phone",
+    "georgian": "ტელეფონი",
+    "pronunciation": "/foʊn/",
+    "example_en": "I called a taxi by phone.",
+    "example_ka": "ტაქსი ტელეფონით გამოვიძახე.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "App",
+    "georgian": "აპლიკაცია",
+    "pronunciation": "/æp/",
+    "example_en": "I use a taxi app on my phone.",
+    "example_ka": "ტელეფონში ტაქსის აპლიკაციას ვიყენებ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Order",
+    "georgian": "შეკვეთა",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "I want to order a taxi.",
+    "example_ka": "ტაქსის შეკვეთა მინდა.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Book",
+    "georgian": "დაჯავშნა",
+    "pronunciation": "/bʊk/",
+    "example_en": "Can I book a taxi for tomorrow?",
+    "example_ka": "ხვალისთვის ტაქსი შემიძლია დავჯავშნო?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈskɛdʒuːl/",
+    "example_en": "I scheduled a ride for 8 AM.",
+    "example_ka": "დილის 8 საათზე მგზავრობა დავრეგისტრირე.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Pickup",
+    "georgian": "აღება",
+    "pronunciation": "/ˈpɪkʌp/",
+    "example_en": "The pickup location is the hotel.",
+    "example_ka": "აღების ადგილი სასტუმროაა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Drop-off",
+    "georgian": "ჩაბარება",
+    "pronunciation": "/drɑːp ɔːf/",
+    "example_en": "The drop-off point is the airport.",
+    "example_ka": "ჩაბარების წერტილი აეროპორტია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Distance",
+    "georgian": "მანძილი",
+    "pronunciation": "/ˈdɪstəns/",
+    "example_en": "What's the distance to downtown?",
+    "example_ka": "რა მანძილია ცენტრამდე?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Time",
+    "georgian": "დრო",
+    "pronunciation": "/taɪm/",
+    "example_en": "How much time will it take?",
+    "example_ka": "რამდენი დრო დაჭირდება?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Fast",
+    "georgian": "სწრაფი",
+    "pronunciation": "/fæst/",
+    "example_en": "This is the fastest route.",
+    "example_ka": "ეს ყველაზე სწრაფი მარშრუტია.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Slow",
+    "georgian": "ნელი",
+    "pronunciation": "/sloʊ/",
+    "example_en": "Traffic is very slow today.",
+    "example_ka": "დღეს საცობი ძალიან ნელია.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Rush",
+    "georgian": "ჩქარობა",
+    "pronunciation": "/rʌʃ/",
+    "example_en": "I'm in a rush to catch my flight.",
+    "example_ka": "ვჩქარობ ფრენაზე მისაღწევად.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Stop",
+    "georgian": "გაჩერება",
+    "pronunciation": "/stɑːp/",
+    "example_en": "Please stop here.",
+    "example_ka": "გთხოვთ, აქ გაჩერდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Turn",
+    "georgian": "შეტრიალება",
+    "pronunciation": "/tɜːrn/",
+    "example_en": "Turn left at the corner.",
+    "example_ka": "კუთხეში მარცხნივ შეტრიალდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Left",
+    "georgian": "მარცხნივ",
+    "pronunciation": "/lɛft/",
+    "example_en": "Turn left here.",
+    "example_ka": "აქ მარცხნივ შეტრიალდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Right",
+    "georgian": "მარჯვნივ",
+    "pronunciation": "/raɪt/",
+    "example_en": "Turn right at the light.",
+    "example_ka": "შუქნიშანთან მარჯვნივ შეტრიალდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Straight",
+    "georgian": "პირდაპირ",
+    "pronunciation": "/streɪt/",
+    "example_en": "Go straight ahead.",
+    "example_ka": "პირდაპირ წადით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "License",
+    "georgian": "ლიცენზია",
+    "pronunciation": "/ˈlaɪsəns/",
+    "example_en": "The driver showed his license.",
+    "example_ka": "მძღოლმა ლიცენზია აჩვენა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Professional",
+    "georgian": "პროფესიონალი",
+    "pronunciation": "/prəˈfɛʃənəl/",
+    "example_en": "He is a professional driver.",
+    "example_ka": "ის პროფესიონალი მძღოლია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Experience",
+    "georgian": "გამოცდილება",
+    "pronunciation": "/ɪkˈspɪriəns/",
+    "example_en": "The driver has 10 years of experience.",
+    "example_ka": "მძღოლს 10 წლიანი გამოცდილება აქვს.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Service",
+    "georgian": "მომსახურება",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "The service was excellent.",
+    "example_ka": "მომსახურება შესანიშნავი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɑːlɪti/",
+    "example_en": "This company provides quality service.",
+    "example_ka": "ეს კომპანია მაღალხარისხიან მომსახურებას უზრუნველყოფს.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Company",
+    "georgian": "კომპანია",
+    "pronunciation": "/ˈkʌmpəni/",
+    "example_en": "Which taxi company do you prefer?",
+    "example_ka": "რომელ ტაქსი კომპანიას ანიჭებთ უპირატესობას?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Reliable",
+    "georgian": "სანდო",
+    "pronunciation": "/rɪˈlaɪəbəl/",
+    "example_en": "This taxi service is very reliable.",
+    "example_ka": "ეს ტაქსი მომსახურება ძალიან სანდოა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Quick",
+    "georgian": "სწრაფი",
+    "pronunciation": "/kwɪk/",
+    "example_en": "I need a quick ride to the station.",
+    "example_ka": "სადგურამდე სწრაფი მგზავრობა მჭირდება.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Convenient",
+    "georgian": "მოსახერხებელი",
+    "pronunciation": "/kənˈviːniənt/",
+    "example_en": "Taxi apps are very convenient.",
+    "example_ka": "ტაქსის აპლიკაციები ძალიან მოსახერხებელია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Available",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈveɪləbəl/",
+    "example_en": "Is there a taxi available now?",
+    "example_ka": "ახლა ტაქსი ხელმისაწვდომია?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Busy",
+    "georgian": "დაკავებული",
+    "pronunciation": "/ˈbɪzi/",
+    "example_en": "All taxis are busy right now.",
+    "example_ka": "ყველა ტაქსი ახლა დაკავებულია.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Free",
+    "georgian": "თავისუფალი",
+    "pronunciation": "/friː/",
+    "example_en": "Is this taxi free?",
+    "example_ka": "ეს ტაქსი თავისუფალია?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Occupied",
+    "georgian": "დაკავებული",
+    "pronunciation": "/ˈɑːkjəpaɪd/",
+    "example_en": "The taxi is occupied.",
+    "example_ka": "ტაქსი დაკავებულია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Empty",
+    "georgian": "ცარიელი",
+    "pronunciation": "/ˈɛmpti/",
+    "example_en": "Look for an empty taxi.",
+    "example_ka": "ცარიელი ტაქსი მოძებნეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Clean",
+    "georgian": "სუფთა",
+    "pronunciation": "/kliːn/",
+    "example_en": "The car was very clean.",
+    "example_ka": "მანქანა ძალიან სუფთა იყო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Dirty",
+    "georgian": "ბინძური",
+    "pronunciation": "/ˈdɜːrti/",
+    "example_en": "The taxi was dirty inside.",
+    "example_ka": "ტაქსი შიგნიდან ბინძური იყო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Air",
+    "georgian": "ჰაერი",
+    "pronunciation": "/ɛr/",
+    "example_en": "Can you turn on the air conditioning?",
+    "example_ka": "კონდიციონერი ჩართავთ?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Heat",
+    "georgian": "სითბო",
+    "pronunciation": "/hiːt/",
+    "example_en": "Please turn up the heat.",
+    "example_ka": "გთხოვთ, გათბობა გააძლიერეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Radio",
+    "georgian": "რადიო",
+    "pronunciation": "/ˈreɪdioʊ/",
+    "example_en": "Can you turn down the radio?",
+    "example_ka": "რადიო დააწყვეტინებთ?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Music",
+    "georgian": "მუსიკა",
+    "pronunciation": "/ˈmjuːzɪk/",
+    "example_en": "I like this music.",
+    "example_ka": "ეს მუსიკა მომწონს.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Volume",
+    "georgian": "ხმა",
+    "pronunciation": "/ˈvɑːljum/",
+    "example_en": "Please lower the volume.",
+    "example_ka": "გთხოვთ, ხმა დაწყვეტინეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Quiet",
+    "georgian": "წყნარი",
+    "pronunciation": "/ˈkwaɪət/",
+    "example_en": "I prefer a quiet ride.",
+    "example_ka": "წყნარ მგზავრობას ვანიჭებ უპირატესობას.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Loud",
+    "georgian": "ხმამაღალი",
+    "pronunciation": "/laʊd/",
+    "example_en": "The music is too loud.",
+    "example_ka": "მუსიკა ძალიან ხმამაღალია.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Polite",
+    "georgian": "თავაზიანი",
+    "pronunciation": "/pəˈlaɪt/",
+    "example_en": "The driver was very polite.",
+    "example_ka": "მძღოლი ძალიან თავაზიანი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Rude",
+    "georgian": "უხეში",
+    "pronunciation": "/ruːd/",
+    "example_en": "The driver was rude to me.",
+    "example_ka": "მძღოლი ჩემს მიმართ უხეში იყო.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Friendly",
+    "georgian": "მეგობრული",
+    "pronunciation": "/ˈfrɛndli/",
+    "example_en": "She was a friendly driver.",
+    "example_ka": "ის მეგობრული მძღოლი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Kind",
+    "georgian": "კეთილი",
+    "pronunciation": "/kaɪnd/",
+    "example_en": "The driver was very kind.",
+    "example_ka": "მძღოლი ძალიან კეთილი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Helpful",
+    "georgian": "თანადგომი",
+    "pronunciation": "/ˈhɛlpfəl/",
+    "example_en": "The driver was very helpful.",
+    "example_ka": "მძღოლი ძალიან თანადგომი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Patient",
+    "georgian": "მოთმინებიანი",
+    "pronunciation": "/ˈpeɪʃənt/",
+    "example_en": "Please be patient with the traffic.",
+    "example_ka": "გთხოვთ, საცობთან მოთმინებიანი იყავით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Careful",
+    "georgian": "ფრთხილი",
+    "pronunciation": "/ˈkɛrfəl/",
+    "example_en": "The driver was very careful.",
+    "example_ka": "მძღოლი ძალიან ფრთხილი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Speed",
+    "georgian": "სიჩქარე",
+    "pronunciation": "/spiːd/",
+    "example_en": "Please watch your speed.",
+    "example_ka": "გთხოვთ, სიჩქარეს აკვირდით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Limit",
+    "georgian": "ლიმიტი",
+    "pronunciation": "/ˈlɪmɪt/",
+    "example_en": "The speed limit here is 50.",
+    "example_ka": "სიჩქარის ლიმიტი აქ 50-ია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Signal",
+    "georgian": "სიგნალი",
+    "pronunciation": "/ˈsɪɡnəl/",
+    "example_en": "Use your turn signal.",
+    "example_ka": "შეტრიალების სიგნალი გამოიყენეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Horn",
+    "georgian": "ჰორნი",
+    "pronunciation": "/hɔːrn/",
+    "example_en": "The driver honked the horn.",
+    "example_ka": "მძღოლმა ჰორნი დაჟღერა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Brake",
+    "georgian": "მუხრუჭი",
+    "pronunciation": "/breɪk/",
+    "example_en": "He hit the brakes suddenly.",
+    "example_ka": "მან უეცრად მუხრუჭები დაჭირა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Accelerate",
+    "georgian": "გაჩქარება",
+    "pronunciation": "/əkˈsɛləreɪt/",
+    "example_en": "Please accelerate carefully.",
+    "example_ka": "გთხოვთ, ფრთხილად გაჩქარდით.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Reverse",
+    "georgian": "უკუსვლა",
+    "pronunciation": "/rɪˈvɜːrs/",
+    "example_en": "Put the car in reverse.",
+    "example_ka": "მანქანა უკუსვლაზე გადაიყვანეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Park",
+    "georgian": "პარკირება",
+    "pronunciation": "/pɑːrk/",
+    "example_en": "You can park here.",
+    "example_ka": "აქ შეგიძლიათ დაპარკოთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Corner",
+    "georgian": "კუთხე",
+    "pronunciation": "/ˈkɔːrnər/",
+    "example_en": "Stop at the corner, please.",
+    "example_ka": "გთხოვთ, კუთხეში გაჩერდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Block",
+    "georgian": "კვარტალი",
+    "pronunciation": "/blɑːk/",
+    "example_en": "It's just one block away.",
+    "example_ka": "ის მხოლოდ ერთი კვარტალით არის დაშორებული.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Building",
+    "georgian": "შენობა",
+    "pronunciation": "/ˈbɪldɪŋ/",
+    "example_en": "Stop in front of that building.",
+    "example_ka": "იმ შენობის წინ გაჩერდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Hotel",
+    "georgian": "სასტუმრო",
+    "pronunciation": "/hoʊˈtɛl/",
+    "example_en": "Please take me to the hotel.",
+    "example_ka": "გთხოვთ, სასტუმროში წამიყვანეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Airport",
+    "georgian": "აეროპორტი",
+    "pronunciation": "/ˈɛrpɔːrt/",
+    "example_en": "I need to get to the airport.",
+    "example_ka": "აეროპორტში მისვლა მჭირდება.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Station",
+    "georgian": "სადგური",
+    "pronunciation": "/ˈsteɪʃən/",
+    "example_en": "Drop me off at the train station.",
+    "example_ka": "რკინიგზის სადგურთან ჩამიყარეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Mall",
+    "georgian": "სავაჭრო ცენტრი",
+    "pronunciation": "/mɔːl/",
+    "example_en": "Let's go to the shopping mall.",
+    "example_ka": "სავაჭრო ცენტრში წავიდეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Hospital",
+    "georgian": "ჰოსპიტალი",
+    "pronunciation": "/ˈhɑːspɪtəl/",
+    "example_en": "Please hurry to the hospital.",
+    "example_ka": "გთხოვთ, ჰოსპიტალში იჩქარეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "School",
+    "georgian": "სკოლა",
+    "pronunciation": "/skuːl/",
+    "example_en": "Pick up my child from school.",
+    "example_ka": "ჩემი ბავშვი სკოლიდან წამოიყვანეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Office",
+    "georgian": "ოფისი",
+    "pronunciation": "/ˈɔːfɪs/",
+    "example_en": "I work in that office building.",
+    "example_ka": "მე იმ საოფისე შენობაში ვმუშაობ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Restaurant",
+    "georgian": "რესტორანი",
+    "pronunciation": "/ˈrɛstərɑːnt/",
+    "example_en": "Take me to a good restaurant.",
+    "example_ka": "კარგ რესტორანში წამიყვანეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Bank",
+    "georgian": "ბანკი",
+    "pronunciation": "/bæŋk/",
+    "example_en": "I need to go to the bank.",
+    "example_ka": "ბანკში წასვლა მჭირდება.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Store",
+    "georgian": "მაღაზია",
+    "pronunciation": "/stɔːr/",
+    "example_en": "Stop at the grocery store.",
+    "example_ka": "სასურსათო მაღაზიაში გაჩერდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Market",
+    "georgian": "ბაზარი",
+    "pronunciation": "/ˈmɑːrkɪt/",
+    "example_en": "Let's go to the farmers market.",
+    "example_ka": "ფერმერთა ბაზარში წავიდეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Park",
+    "georgian": "პარკი",
+    "pronunciation": "/pɑːrk/",
+    "example_en": "I want to visit the central park.",
+    "example_ka": "ცენტრალურ პარკში სიარული მინდა.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Beach",
+    "georgian": "პლაჟი",
+    "pronunciation": "/biːtʃ/",
+    "example_en": "Can you take me to the beach?",
+    "example_ka": "პლაჟზე წამიყვანთ?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Bridge",
+    "georgian": "ხიდი",
+    "pronunciation": "/brɪdʒ/",
+    "example_en": "Cross the bridge and turn right.",
+    "example_ka": "ხიდი გადაიარეთ და მარჯვნივ შეტრიალდით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "River",
+    "georgian": "მდინარე",
+    "pronunciation": "/ˈrɪvər/",
+    "example_en": "The hotel is near the river.",
+    "example_ka": "სასტუმრო მდინარის ახლოსაა.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Mountain",
+    "georgian": "მთა",
+    "pronunciation": "/ˈmaʊntən/",
+    "example_en": "I want to see the mountain view.",
+    "example_ka": "მთის ხედი მინდა ვნახო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Downtown",
+    "georgian": "ცენტრი",
+    "pronunciation": "/ˌdaʊnˈtaʊn/",
+    "example_en": "Take me downtown, please.",
+    "example_ka": "გთხოვთ, ცენტრში წამიყვანეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Suburb",
+    "georgian": "გარეუბანი",
+    "pronunciation": "/ˈsʌbɜːrb/",
+    "example_en": "I live in the suburbs.",
+    "example_ka": "გარეუბანში ვცხოვრობ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Neighborhood",
+    "georgian": "უბანი",
+    "pronunciation": "/ˈneɪbərhʊd/",
+    "example_en": "This is a safe neighborhood.",
+    "example_ka": "ეს უსაფრთხო უბანია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Street",
+    "georgian": "ქუჩა",
+    "pronunciation": "/striːt/",
+    "example_en": "What street are we on?",
+    "example_ka": "რომელ ქუჩაზე ვართ?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Avenue",
+    "georgian": "ავენიუ",
+    "pronunciation": "/ˈævənjuː/",
+    "example_en": "Turn left on Fifth Avenue.",
+    "example_ka": "მეხუთე ავენიუზე მარცხნივ შეტრიალდით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Road",
+    "georgian": "გზა",
+    "pronunciation": "/roʊd/",
+    "example_en": "This road leads to the airport.",
+    "example_ka": "ეს გზა აეროპორტისკენ მიდის.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Lane",
+    "georgian": "ზოლი",
+    "pronunciation": "/leɪn/",
+    "example_en": "Stay in the right lane.",
+    "example_ka": "მარჯვენა ზოლში დარჩით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Exit",
+    "georgian": "გასვლა",
+    "pronunciation": "/ˈɛɡzɪt/",
+    "example_en": "Take the next exit.",
+    "example_ka": "შემდეგი გასასვლელი აიღეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Enter",
+    "georgian": "შესვლა",
+    "pronunciation": "/ˈɛntər/",
+    "example_en": "Enter the highway here.",
+    "example_ka": "აქ ავტომაგისტრალზე შედით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Merge",
+    "georgian": "შერწყმა",
+    "pronunciation": "/mɜːrdʒ/",
+    "example_en": "Merge carefully with traffic.",
+    "example_ka": "საცობთან ფრთხილად შეერწყით.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Lane",
+    "georgian": "ზოლი",
+    "pronunciation": "/leɪn/",
+    "example_en": "Change to the left lane.",
+    "example_ka": "მარცხენა ზოლზე გადაინაცვლეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Toll",
+    "georgian": "გზის გადასახადი",
+    "pronunciation": "/toʊl/",
+    "example_en": "There's a toll on this road.",
+    "example_ka": "ამ გზაზე გზის გადასახადია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Bridge",
+    "georgian": "ხიდი",
+    "pronunciation": "/brɪdʒ/",
+    "example_en": "The bridge has heavy traffic.",
+    "example_ka": "ხიდზე მძიმე საცობია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Tunnel",
+    "georgian": "ტუნელი",
+    "pronunciation": "/ˈtʌnəl/",
+    "example_en": "Drive through the tunnel.",
+    "example_ka": "ტუნელის გავლით ჩაიარეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Construction",
+    "georgian": "მშენებლობა",
+    "pronunciation": "/kənˈstrʌkʃən/",
+    "example_en": "There's construction on Main Street.",
+    "example_ka": "მეინ სტრიტზე მშენებლობაა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Detour",
+    "georgian": "გვერდის გავლა",
+    "pronunciation": "/ˈdiːtʊr/",
+    "example_en": "We have to take a detour.",
+    "example_ka": "გვერდის გავლა მოგვიწევს.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Accident",
+    "georgian": "ავარია",
+    "pronunciation": "/ˈæksɪdənt/",
+    "example_en": "There's been an accident ahead.",
+    "example_ka": "წინ ავარია მოხდა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Emergency",
+    "georgian": "სასწრაფო",
+    "pronunciation": "/ɪˈmɜːrdʒənsi/",
+    "example_en": "This is an emergency!",
+    "example_ka": "ეს სასწრაფო შემთხვევაა!",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Police",
+    "georgian": "პოლიცია",
+    "pronunciation": "/pəˈliːs/",
+    "example_en": "The police stopped traffic.",
+    "example_ka": "პოლიციამ მოძრაობა შეაჩერა.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Ambulance",
+    "georgian": "სასწრაფო დახმარება",
+    "pronunciation": "/ˈæmbjələns/",
+    "example_en": "An ambulance is coming through.",
+    "example_ka": "სასწრაფო დახმარება გადის.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Fire",
+    "georgian": "ცეცხლი",
+    "pronunciation": "/ˈfaɪər/",
+    "example_en": "The fire truck has sirens on.",
+    "example_ka": "სახანძრო მანქანას სირენები ჩართული აქვს.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Siren",
+    "georgian": "სირენა",
+    "pronunciation": "/ˈsaɪrən/",
+    "example_en": "I hear a siren behind us.",
+    "example_ka": "ჩვენ უკან სირენა ისმის.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Light",
+    "georgian": "შუქნიშანი",
+    "pronunciation": "/laɪt/",
+    "example_en": "Stop at the red light.",
+    "example_ka": "წითელ შუქნიშანზე გაჩერდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Green",
+    "georgian": "მწვანე",
+    "pronunciation": "/ɡriːn/",
+    "example_en": "The light turned green.",
+    "example_ka": "შუქნიშანი მწვანე გახდა.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Red",
+    "georgian": "წითელი",
+    "pronunciation": "/rɛd/",
+    "example_en": "Wait for the red light.",
+    "example_ka": "წითელი შუქნიშნის მოლოდინი.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Yellow",
+    "georgian": "ყვითელი",
+    "pronunciation": "/ˈjɛloʊ/",
+    "example_en": "Slow down at yellow lights.",
+    "example_ka": "ყვითელ შუქნიშანზე შენელდით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Sign",
+    "georgian": "ნიშანი",
+    "pronunciation": "/saɪn/",
+    "example_en": "Follow the street signs.",
+    "example_ka": "ქუჩის ნიშნებს მიყევით.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Stop",
+    "georgian": "სტოპ",
+    "pronunciation": "/stɑːp/",
+    "example_en": "There's a stop sign ahead.",
+    "example_ka": "წინ სტოპის ნიშანია.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Yield",
+    "georgian": "გზის მიცემა",
+    "pronunciation": "/jiːld/",
+    "example_en": "You must yield to pedestrians.",
+    "example_ka": "ფეხით მოსიარულეებს გზა უნდა მისცეთ.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Pedestrian",
+    "georgian": "ფეხით მოსიარულე",
+    "pronunciation": "/pəˈdɛstriən/",
+    "example_en": "Watch out for pedestrians.",
+    "example_ka": "ფეხით მოსიარულეებს გაუფრთხილდით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Crosswalk",
+    "georgian": "გადასასვლელი",
+    "pronunciation": "/ˈkrɔːswɔːk/",
+    "example_en": "Use the crosswalk to cross the street.",
+    "example_ka": "ქუჩის გადასაკვეთად გადასასვლელი გამოიყენეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Sidewalk",
+    "georgian": "ტროტუარი",
+    "pronunciation": "/ˈsaɪdwɔːk/",
+    "example_en": "The taxi stopped near the sidewalk.",
+    "example_ka": "ტაქსი ტროტუარის მახლობლად გაჩერდა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Parking",
+    "georgian": "პარკინგი",
+    "pronunciation": "/ˈpɑːrkɪŋ/",
+    "example_en": "Is there parking available?",
+    "example_ka": "პარკინგი ხელმისაწვდომია?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Garage",
+    "georgian": "გარაჟი",
+    "pronunciation": "/ɡəˈrɑːʒ/",
+    "example_en": "Park in the underground garage.",
+    "example_ka": "მიწისქვეშა გარაჟში დაპარკეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Lot",
+    "georgian": "პარკინგი",
+    "pronunciation": "/lɑːt/",
+    "example_en": "There's a parking lot nearby.",
+    "example_ka": "ახლოს პარკინგია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Valet",
+    "georgian": "პარკინგის მომსახურე",
+    "pronunciation": "/væˈleɪ/",
+    "example_en": "The hotel offers valet parking.",
+    "example_ka": "სასტუმრო ვალეტ პარკინგს სთავაზობს.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Meter",
+    "georgian": "საათობრივი",
+    "pronunciation": "/ˈmiːtər/",
+    "example_en": "Pay the parking meter.",
+    "example_ka": "პარკინგის საათობრივი გადაიხადეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Ticket",
+    "georgian": "ქაღალდი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "I got a parking ticket.",
+    "example_ka": "პარკინგის ღირებულების ქაღალდი მივიღე.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Fine",
+    "georgian": "ჯარიმა",
+    "pronunciation": "/faɪn/",
+    "example_en": "The parking fine was expensive.",
+    "example_ka": "პარკინგის ჯარიმა ძვირი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Zone",
+    "georgian": "ზონა",
+    "pronunciation": "/zoʊn/",
+    "example_en": "This is a no-parking zone.",
+    "example_ka": "ეს პარკინგის აკრძალული ზონაა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Reserved",
+    "georgian": "დაჯავშნილი",
+    "pronunciation": "/rɪˈzɜːrvd/",
+    "example_en": "This spot is reserved.",
+    "example_ka": "ეს ადგილი დაჯავშნილია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Handicap",
+    "georgian": "შეზღუდული შესაძლებლობის",
+    "pronunciation": "/ˈhændɪkæp/",
+    "example_en": "That's a handicap parking space.",
+    "example_ka": "ეს შეზღუდული შესაძლებლობის პირთა პარკინგია.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Loading",
+    "georgian": "ჩატვირთვა",
+    "pronunciation": "/ˈloʊdɪŋ/",
+    "example_en": "This is a loading zone.",
+    "example_ka": "ეს ჩატვირთვის ზონაა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Pick-up",
+    "georgian": "აღების ზონა",
+    "pronunciation": "/ˈpɪkʌp/",
+    "example_en": "Wait in the pick-up zone.",
+    "example_ka": "აღების ზონაში დაელოდეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Drop",
+    "georgian": "ჩაყრა",
+    "pronunciation": "/drɑːp/",
+    "example_en": "Drop me off at the corner.",
+    "example_ka": "კუთხეში ჩამიყარეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspɛnsɪv/",
+    "example_en": "The ride was expensive.",
+    "example_ka": "მგზავრობა ძვირი იყო.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "This taxi is very cheap.",
+    "example_ka": "ეს ტაქსი ძალიან იაფია.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Price",
+    "georgian": "ღირებულება",
+    "pronunciation": "/praɪs/",
+    "example_en": "What's the price to downtown?",
+    "example_ka": "ცენტრამდე რა ღირებულებაა?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Cost",
+    "georgian": "ღირებულება",
+    "pronunciation": "/kɔːst/",
+    "example_en": "How much will it cost?",
+    "example_ka": "რამდენი დაუჯდება?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Estimate",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈɛstəmeɪt/",
+    "example_en": "Can you give me a fare estimate?",
+    "example_ka": "ტარიფის შეფასებას მომცემთ?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Is there a student discount?",
+    "example_ka": "სტუდენტური ფასდაკლება არის?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Promotion",
+    "georgian": "აქცია",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "There's a promotion this week.",
+    "example_ka": "ამ კვირას აქციაა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɑːn/",
+    "example_en": "I have a discount coupon.",
+    "example_ka": "ფასდაკლების კუპონი მაქვს.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Loyalty",
+    "georgian": "ერთგულება",
+    "pronunciation": "/ˈlɔɪəlti/",
+    "example_en": "Join our loyalty program.",
+    "example_ka": "ჩვენს ლოიალურობის პროგრამაში შემოუერთდით.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Membership",
+    "georgian": "წევრობა",
+    "pronunciation": "/ˈmɛmbərʃɪp/",
+    "example_en": "Premium membership has benefits.",
+    "example_ka": "პრემიუმ წევრობას უპირატესობები აქვს.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Points",
+    "georgian": "ქულები",
+    "pronunciation": "/pɔɪnts/",
+    "example_en": "You earned 50 points today.",
+    "example_ka": "დღეს 50 ქულა დააგროვეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Reward",
+    "georgian": "ჯილდო",
+    "pronunciation": "/rɪˈwɔːrd/",
+    "example_en": "You can claim your reward now.",
+    "example_ka": "ახლა შეგიძლიათ თქვენი ჯილდო აიღოთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Credit",
+    "georgian": "კრედიტი",
+    "pronunciation": "/ˈkrɛdɪt/",
+    "example_en": "I have ride credits available.",
+    "example_ka": "მაქვს ხელმისაწვდომი კრედიტები.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Account",
+    "georgian": "ანგარიში",
+    "pronunciation": "/əˈkaʊnt/",
+    "example_en": "Log into your account.",
+    "example_ka": "თქვენს ანგარიშში შედით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Profile",
+    "georgian": "პროფილი",
+    "pronunciation": "/ˈproʊfaɪl/",
+    "example_en": "Update your profile information.",
+    "example_ka": "თქვენი პროფილის ინფორმაცია განაახლეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Settings",
+    "georgian": "პარამეტრები",
+    "pronunciation": "/ˈsɛtɪŋz/",
+    "example_en": "Check your app settings.",
+    "example_ka": "აპლიკაციის პარამეტრები შეამოწმეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtəfəˈkeɪʃən/",
+    "example_en": "You'll get a notification when the driver arrives.",
+    "example_ka": "მძღოლი ჩასვლისას შეტყობინებას მიიღებთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Message",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈmɛsɪdʒ/",
+    "example_en": "Send a message to the driver.",
+    "example_ka": "მძღოლს შეტყობინება გაუგზავნეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Call",
+    "georgian": "ზარი",
+    "pronunciation": "/kɔːl/",
+    "example_en": "Call the driver if you're late.",
+    "example_ka": "თუ ვაგვიანებთ, მძღოლს დარეკეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Text",
+    "georgian": "ტექსტი",
+    "pronunciation": "/tɛkst/",
+    "example_en": "Send a text message.",
+    "example_ka": "ტექსტური შეტყობინება გაგზავნეთ.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Contact",
+    "georgian": "კონტაქტი",
+    "pronunciation": "/ˈkɑːntækt/",
+    "example_en": "Contact the driver directly.",
+    "example_ka": "მძღოლს პირდაპირ დაუკავშირდით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Share",
+    "georgian": "გაზიარება",
+    "pronunciation": "/ʃɛr/",
+    "example_en": "Share your trip with family.",
+    "example_ka": "თქვენი მგზავრობა ოჯახს გაუზიარეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Track",
+    "georgian": "თვალყურის დევნება",
+    "pronunciation": "/træk/",
+    "example_en": "Track your ride in real time.",
+    "example_ka": "თქვენი მგზავრობას რეალურ დროში თვალი ადევნეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Location",
+    "georgian": "მდებარეობა",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "Share your location with the driver.",
+    "example_ka": "მძღოლს თქვენი მდებარეობა გაუზიარეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "ETA",
+    "georgian": "მისვლის დრო",
+    "pronunciation": "/iː tiː eɪ/",
+    "example_en": "The ETA is 10 minutes.",
+    "example_ka": "მისვლის დრო 10 წუთია.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Real-time",
+    "georgian": "რეალურ დროში",
+    "pronunciation": "/riːl taɪm/",
+    "example_en": "Get real-time updates.",
+    "example_ka": "რეალურ დროში განახლებები მიიღეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Update",
+    "georgian": "განახლება",
+    "pronunciation": "/ˈʌpdeɪt/",
+    "example_en": "I'll send you an update.",
+    "example_ka": "განახლებას გამოგიგზავნით.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Status",
+    "georgian": "სტატუსი",
+    "pronunciation": "/ˈsteɪtəs/",
+    "example_en": "Check your ride status.",
+    "example_ka": "მგზავრობის სტატუსი შეამოწმეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Progress",
+    "georgian": "პროგრესი",
+    "pronunciation": "/ˈprɑːɡrəs/",
+    "example_en": "Monitor the trip progress.",
+    "example_ka": "მგზავრობის პროგრესს თვალი ადევნეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Confirm",
+    "georgian": "დადასტურება",
+    "pronunciation": "/kənˈfɜːrm/",
+    "example_en": "Please confirm your pickup location.",
+    "example_ka": "გთხოვთ, დაადასტუროთ აღების მდებარეობა.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Verify",
+    "georgian": "გადამოწმება",
+    "pronunciation": "/ˈvɛrəfaɪ/",
+    "example_en": "Verify the driver's identity.",
+    "example_ka": "მძღოლის ვინაობა გადაამოწმეთ.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Identity",
+    "georgian": "ვინაობა",
+    "pronunciation": "/aɪˈdɛntəti/",
+    "example_en": "Check the driver's identity card.",
+    "example_ka": "მძღოლის პიროვნების მოწმობა შეამოწმეთ.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Badge",
+    "georgian": "ნიშანი",
+    "pronunciation": "/bædʒ/",
+    "example_en": "The driver should display a badge.",
+    "example_ka": "მძღოლმა ნიშანი უნდა აჩვენოს.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Plate",
+    "georgian": "ნომერი",
+    "pronunciation": "/pleɪt/",
+    "example_en": "Check the license plate number.",
+    "example_ka": "სახელმწიფო ნომრის ნომერი შეამოწმეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Model",
+    "georgian": "მოდელი",
+    "pronunciation": "/ˈmɑːdəl/",
+    "example_en": "What model car is it?",
+    "example_ka": "რა მოდელის მანქანაა?",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Color",
+    "georgian": "ფერი",
+    "pronunciation": "/ˈkʌlər/",
+    "example_en": "The car is blue color.",
+    "example_ka": "მანქანა ლურჯი ფერისაა.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Make",
+    "georgian": "მარკა",
+    "pronunciation": "/meɪk/",
+    "example_en": "What make is the car?",
+    "example_ka": "რა მარკის მანქანაა?",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Year",
+    "georgian": "წელი",
+    "pronunciation": "/jɪr/",
+    "example_en": "It's a 2020 model year.",
+    "example_ka": "ეს 2020 წლის მოდელია.",
+    "category": "taxi-rideshare",
+    "level": "A1"
+  },
+  {
+    "english": "Vehicle",
+    "georgian": "სატრანსპორტო საშუალება",
+    "pronunciation": "/ˈviːəkəl/",
+    "example_en": "This vehicle is very comfortable.",
+    "example_ka": "ეს სატრანსპორტო საშუალება ძალიან კომფორტულია.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Sedan",
+    "georgian": "სედანი",
+    "pronunciation": "/sɪˈdæn/",
+    "example_en": "I prefer a sedan over an SUV.",
+    "example_ka": "ჯიპის ნაცვლად სედანს ვანიჭებ უპირატესობას.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "SUV",
+    "georgian": "ჯიპი",
+    "pronunciation": "/ɛs juː viː/",
+    "example_en": "We need an SUV for our luggage.",
+    "example_ka": "ჩვენ ბარგისთვის ჯიპი გვჭირდება.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Van",
+    "georgian": "ფურგონი",
+    "pronunciation": "/væn/",
+    "example_en": "Order a van for the group.",
+    "example_ka": "ჯგუფისთვის ფურგონი შეუკვეთეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Luxury",
+    "georgian": "ლუქსი",
+    "pronunciation": "/ˈlʌkʃəri/",
+    "example_en": "Book a luxury ride for the event.",
+    "example_ka": "ღონისძიებისთვის ლუქს მგზავრობა დაჯავშნეთ.",
+    "category": "taxi-rideshare",
+    "level": "B1"
+  },
+  {
+    "english": "Economy",
+    "georgian": "ეკონომიური",
+    "pronunciation": "/ɪˈkɑːnəmi/",
+    "example_en": "Choose the economy option to save money.",
+    "example_ka": "ფულის დასაზოგად ეკონომიური ვარიანტი აირჩიეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Standard",
+    "georgian": "სტანდარტული",
+    "pronunciation": "/ˈstændərd/",
+    "example_en": "A standard taxi will be fine.",
+    "example_ka": "სტანდარტული ტაქსი კარგი იქნება.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Premium",
+    "georgian": "პრემიუმი",
+    "pronunciation": "/ˈpriːmiəm/",
+    "example_en": "Try our premium service.",
+    "example_ka": "ჩვენი პრემიუმ მომსახურება ცადეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Pool",
+    "georgian": "პული",
+    "pronunciation": "/puːl/",
+    "example_en": "Share a ride with pool service.",
+    "example_ka": "პულის მომსახურებით მგზავრობა გაზიარეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  },
+  {
+    "english": "Express",
+    "georgian": "ექსპრესი",
+    "pronunciation": "/ɪkˈsprɛs/",
+    "example_en": "Take the express route.",
+    "example_ka": "ექსპრეს მარშრუტი აიღეთ.",
+    "category": "taxi-rideshare",
+    "level": "A2"
+  }
 ]

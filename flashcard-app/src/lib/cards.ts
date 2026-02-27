@@ -47,9 +47,7 @@ import natureData from '../../content/nature-weather.json';
 import emotionsData from '../../content/emotions-personality.json';
 import educationData from '../../content/education.json';
 import entertainmentData from '../../content/entertainment.json';
-import idiomsData from '../../content/idioms-phrases.json';
 import politicsData from '../../content/politics-society.json';
-import conversationsData from '../../content/daily-conversations.json';
 import sportsData from '../../content/sports-fitness.json';
 import musicData from '../../content/music-art.json';
 import animalsData from '../../content/animals.json';
@@ -106,7 +104,6 @@ import barbershopGroomingData from '../../content/barbershop-grooming.json';
 import drivingTestData from '../../content/driving-test.json';
 import phoneAppsData from '../../content/phone-apps.json';
 import fastFoodSnacksData from '../../content/fast-food-snacks.json';
-import phrasalVerbsData from '../../content/phrasal-verbs.json';
 import academicEnglishData from '../../content/academic-english.json';
 import motivationSuccessData from '../../content/motivation-success.json';
 import beautyCosmeticsData from '../../content/beauty-cosmetics.json';
@@ -117,10 +114,7 @@ import petsVetData from '../../content/pets-vet.json';
 import newsMediaData from '../../content/news-media.json';
 import streetUrbanData from '../../content/street-urban.json';
 import emailFormalData from '../../content/email-formal-writing.json';
-import opinionsDebateData from '../../content/opinions-debate.json';
-import smallTalkData from '../../content/small-talk.json';
 import customerServiceData from '../../content/customer-service.json';
-import everydayProblemsData from '../../content/everyday-problems.json';
 import supermarketGroceryData from '../../content/supermarket-grocery.json';
 import householdChoresData from '../../content/household-chores.json';
 import officeWorkplaceData from '../../content/office-workplace.json';
@@ -132,7 +126,7 @@ import realEstatePropertyData from '../../content/real-estate-property.json';
 import workAbroadData from '../../content/work-abroad.json';
 import englishForGamersData from '../../content/english-for-gamers.json';
 import workEmailsData from '../../content/work-emails.json';
-import top5000WordsData from '../../content/top-5000-words.json';
+import top2000WordsData from '../../content/top-2000-words.json';
 import historyWarData from '../../content/history-war.json';
 import moviesCinemaData from '../../content/movies-cinema.json';
 import musicGenresData from '../../content/music-genres.json';
@@ -146,12 +140,12 @@ import friendshipSocialData from '../../content/friendship-social.json';
 
 export const decks: Deck[] = [
   {
-    id: 'top-5000',
-    name: 'Top 5000 English Words',
-    nameKa: 'ტოპ 5000 ინგლისური სიტყვა',
+    id: 'top-2000',
+    name: 'Top 2000 English Words',
+    nameKa: 'ტოპ 2000 ინგლისური სიტყვა',
     icon: '⭐',
     image: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&q=80',
-    cards: top5000WordsData as FlashCard[],
+    cards: top2000WordsData as FlashCard[],
   },
   {
     id: 'greetings',
@@ -271,29 +265,12 @@ export const decks: Deck[] = [
     cards: entertainmentData as FlashCard[],
   },
   {
-    id: 'idioms',
-    name: 'Idioms & Phrases',
-    nameKa: 'იდიომები და ფრაზები',
-    icon: '📖',
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&q=80',
-    cards: idiomsData as FlashCard[],
-  },
-  {
     id: 'politics',
     name: 'Politics & Society',
     nameKa: 'პოლიტიკა და საზოგადოება',
     icon: '🏛️',
     image: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=80',
     cards: politicsData as FlashCard[],
-  },
-  // MERGED: Daily Conversations + Small Talk
-  {
-    id: 'conversations',
-    name: 'Daily Conversations',
-    nameKa: 'ყოველდღიური საუბრები',
-    icon: '🗣️',
-    image: 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=400&q=80',
-    cards: mergeCards(conversationsData as FlashCard[], smallTalkData as FlashCard[]),
   },
   // MERGED: Sports & Fitness + Gym & Fitness + MMA & Fighting + Extreme Sports & Adventure
   {
@@ -634,14 +611,6 @@ export const decks: Deck[] = [
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=80',
     cards: phoneAppsData as FlashCard[],
   },
-  {
-    id: 'phrasal-verbs',
-    name: 'Phrasal Verbs',
-    nameKa: 'ფრაზული ზმნები',
-    icon: '🔄',
-    image: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&q=80',
-    cards: phrasalVerbsData as FlashCard[],
-  },
   // MERGED: Academic English + IELTS & TOEFL Vocabulary
   {
     id: 'academic-english',
@@ -710,28 +679,12 @@ export const decks: Deck[] = [
     cards: mergeCards(emailFormalData as FlashCard[], workEmailsData as FlashCard[]),
   },
   {
-    id: 'opinions-debate',
-    name: 'Opinions & Debate',
-    nameKa: 'მოსაზრებები და დებატები',
-    icon: '💭',
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80',
-    cards: opinionsDebateData as FlashCard[],
-  },
-  {
     id: 'customer-service',
     name: 'Customer Service',
     nameKa: 'მომხმარებელთა მომსახურება',
     icon: '🛎️',
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80',
     cards: customerServiceData as FlashCard[],
-  },
-  {
-    id: 'everyday-problems',
-    name: 'Everyday Problems',
-    nameKa: 'ყოველდღიური პრობლემები',
-    icon: '🔧',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&q=80',
-    cards: everydayProblemsData as FlashCard[],
   },
   {
     id: 'household-chores',

@@ -1,27 +1,1802 @@
 [
-  {"english": "How can I help you?", "georgian": "რით შემიძლია დაგეხმაროთ?", "pronunciation": "/haʊ kæn aɪ hɛlp juː/", "example_en": "Welcome! How can I help you today?", "example_ka": "მოგესალმებით! რით შემიძლია დაგეხმაროთ დღეს?", "category": "customer-service", "level": "A1"},
-  {"english": "I would like to return", "georgian": "დაბრუნება მსურს", "pronunciation": "/aɪ wʊd laɪk tuː rɪˈtɜːrn/", "example_en": "I would like to return this shirt.", "example_ka": "ამ პერანგის დაბრუნება მსურს.", "category": "customer-service", "level": "A2"},
-  {"english": "refund", "georgian": "თანხის დაბრუნება", "pronunciation": "/ˈriːfʌnd/", "example_en": "Can I get a refund for this?", "example_ka": "შეიძლება ამაზე თანხის დაბრუნება?", "category": "customer-service", "level": "A2"},
-  {"english": "receipt", "georgian": "ჩეკი", "pronunciation": "/rɪˈsiːt/", "example_en": "Do you have the receipt?", "example_ka": "ჩეკი გაქვს?", "category": "customer-service", "level": "A2"},
-  {"english": "complaint", "georgian": "საჩივარი", "pronunciation": "/kəmˈpleɪnt/", "example_en": "I would like to make a complaint.", "example_ka": "საჩივრის შეტანა მსურს.", "category": "customer-service", "level": "A2"},
-  {"english": "exchange", "georgian": "გაცვლა", "pronunciation": "/ɪksˈtʃeɪndʒ/", "example_en": "Can I exchange this for a different size?", "example_ka": "შეიძლება ეს სხვა ზომაზე გავცვალო?", "category": "customer-service", "level": "A2"},
-  {"english": "out of stock", "georgian": "ამოწურულია", "pronunciation": "/aʊt ɒv stɒk/", "example_en": "Sorry, that item is out of stock.", "example_ka": "ბოდიში, ეს ნივთი ამოწურულია.", "category": "customer-service", "level": "A2"},
-  {"english": "warranty", "georgian": "გარანტია", "pronunciation": "/ˈwɒrənti/", "example_en": "Is this still under warranty?", "example_ka": "ამას ჯერ კიდევ გარანტია აქვს?", "category": "customer-service", "level": "B1"},
-  {"english": "defective", "georgian": "გაფუჭებული / დეფექტური", "pronunciation": "/dɪˈfɛktɪv/", "example_en": "This product is defective.", "example_ka": "ეს პროდუქტი დეფექტურია.", "category": "customer-service", "level": "B1"},
-  {"english": "I'd like to speak to the manager", "georgian": "მენეჯერთან საუბარი მსურს", "pronunciation": "/aɪd laɪk tuː spiːk tuː ðə ˈmænɪdʒər/", "example_en": "I'd like to speak to the manager, please.", "example_ka": "მენეჯერთან საუბარი მსურს, გთხოვთ.", "category": "customer-service", "level": "A2"},
-  {"english": "discount", "georgian": "ფასდაკლება", "pronunciation": "/ˈdɪskaʊnt/", "example_en": "Is there a discount on this item?", "example_ka": "ამ ნივთზე ფასდაკლებაა?", "category": "customer-service", "level": "A2"},
-  {"english": "delivery", "georgian": "მიტანა", "pronunciation": "/dɪˈlɪvəri/", "example_en": "How long does delivery take?", "example_ka": "მიტანას რამდენი ხანი სჭირდება?", "category": "customer-service", "level": "A2"},
-  {"english": "shipping", "georgian": "გადაზიდვა", "pronunciation": "/ˈʃɪpɪŋ/", "example_en": "Is shipping free?", "example_ka": "გადაზიდვა უფასოა?", "category": "customer-service", "level": "A2"},
-  {"english": "tracking number", "georgian": "თვალყურის დევნის ნომერი", "pronunciation": "/ˈtrækɪŋ ˈnʌmbər/", "example_en": "Can I have the tracking number?", "example_ka": "შეიძლება თვალყურის დევნის ნომერი?", "category": "customer-service", "level": "B1"},
-  {"english": "customer support", "georgian": "მომხმარებელთა მხარდაჭერა", "pronunciation": "/ˈkʌstəmər səˈpɔːrt/", "example_en": "Please contact customer support.", "example_ka": "გთხოვთ დაუკავშირდეთ მომხმარებელთა მხარდაჭერას.", "category": "customer-service", "level": "A2"},
-  {"english": "I'm not satisfied", "georgian": "კმაყოფილი არ ვარ", "pronunciation": "/aɪm nɒt ˈsætɪsfaɪd/", "example_en": "I'm not satisfied with the service.", "example_ka": "მომსახურებით კმაყოფილი არ ვარ.", "category": "customer-service", "level": "A2"},
-  {"english": "order", "georgian": "შეკვეთა", "pronunciation": "/ˈɔːrdər/", "example_en": "I'd like to place an order.", "example_ka": "შეკვეთის გაფორმება მსურს.", "category": "customer-service", "level": "A1"},
-  {"english": "cancel", "georgian": "გაუქმება", "pronunciation": "/ˈkænsəl/", "example_en": "I need to cancel my order.", "example_ka": "შეკვეთის გაუქმება მჭირდება.", "category": "customer-service", "level": "A2"},
-  {"english": "available", "georgian": "ხელმისაწვდომი", "pronunciation": "/əˈveɪləbl/", "example_en": "Is this item available in blue?", "example_ka": "ეს ნივთი ლურჯ ფერში ხელმისაწვდომია?", "category": "customer-service", "level": "A2"},
-  {"english": "price", "georgian": "ფასი", "pronunciation": "/praɪs/", "example_en": "What is the price of this?", "example_ka": "ამის ფასი რა არის?", "category": "customer-service", "level": "A1"},
-  {"english": "on sale", "georgian": "ფასდაკლებით", "pronunciation": "/ɒn seɪl/", "example_en": "These shoes are on sale today.", "example_ka": "ეს ფეხსაცმელები დღეს ფასდაკლებითაა.", "category": "customer-service", "level": "A2"},
-  {"english": "Could you check", "georgian": "შეგიძლია შეამოწმო", "pronunciation": "/kʊd juː tʃɛk/", "example_en": "Could you check if you have this in my size?", "example_ka": "შეგიძლია შეამოწმო, ჩემს ზომაში გაქვთ?", "category": "customer-service", "level": "A2"},
-  {"english": "I've been waiting", "georgian": "ვიცდი", "pronunciation": "/aɪv biːn ˈweɪtɪŋ/", "example_en": "I've been waiting for 30 minutes.", "example_ka": "30 წუთია ვიცდი.", "category": "customer-service", "level": "A2"},
-  {"english": "apology", "georgian": "ბოდიში", "pronunciation": "/əˈpɒlədʒi/", "example_en": "I accept your apology.", "example_ka": "ბოდიშს ვიღებ.", "category": "customer-service", "level": "B1"},
-  {"english": "Can I try this on?", "georgian": "შემიძლია მოვიზომო?", "pronunciation": "/kæn aɪ traɪ ðɪs ɒn/", "example_en": "Can I try this on? Where's the fitting room?", "example_ka": "შემიძლია მოვიზომო? სად არის გასახდელი?", "category": "customer-service", "level": "A2"}
+  {
+    "english": "refund",
+    "georgian": "თანხის დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "Can I get a refund for this?",
+    "example_ka": "შეიძლება ამაზე თანხის დაბრუნება?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ჩეკი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Do you have the receipt?",
+    "example_ka": "ჩეკი გაქვს?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "complaint",
+    "georgian": "საჩივარი",
+    "pronunciation": "/kəmˈpleɪnt/",
+    "example_en": "I would like to make a complaint.",
+    "example_ka": "საჩივრის შეტანა მსურს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "exchange",
+    "georgian": "გაცვლა",
+    "pronunciation": "/ɪksˈtʃeɪndʒ/",
+    "example_en": "Can I exchange this for a different size?",
+    "example_ka": "შეიძლება ეს სხვა ზომაზე გავცვალო?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "warranty",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˈwɒrənti/",
+    "example_en": "Is this still under warranty?",
+    "example_ka": "ამას ჯერ კიდევ გარანტია აქვს?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "defective",
+    "georgian": "გაფუჭებული / დეფექტური",
+    "pronunciation": "/dɪˈfɛktɪv/",
+    "example_en": "This product is defective.",
+    "example_ka": "ეს პროდუქტი დეფექტურია.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "Is there a discount on this item?",
+    "example_ka": "ამ ნივთზე ფასდაკლებაა?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "delivery",
+    "georgian": "მიტანა",
+    "pronunciation": "/dɪˈlɪvəri/",
+    "example_en": "How long does delivery take?",
+    "example_ka": "მიტანას რამდენი ხანი სჭირდება?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "shipping",
+    "georgian": "გადაზიდვა",
+    "pronunciation": "/ˈʃɪpɪŋ/",
+    "example_en": "Is shipping free?",
+    "example_ka": "გადაზიდვა უფასოა?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "order",
+    "georgian": "შეკვეთა",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "I'd like to place an order.",
+    "example_ka": "შეკვეთის გაფორმება მსურს.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "cancel",
+    "georgian": "გაუქმება",
+    "pronunciation": "/ˈkænsəl/",
+    "example_en": "I need to cancel my order.",
+    "example_ka": "შეკვეთის გაუქმება მჭირდება.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "available",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈveɪləbl/",
+    "example_en": "Is this item available in blue?",
+    "example_ka": "ეს ნივთი ლურჯ ფერში ხელმისაწვდომია?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "What is the price of this?",
+    "example_ka": "ამის ფასი რა არის?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "apology",
+    "georgian": "ბოდიში",
+    "pronunciation": "/əˈpɒlədʒi/",
+    "example_en": "I accept your apology.",
+    "example_ka": "ბოდიშს ვიღებ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "assist",
+    "georgian": "დახმარება",
+    "pronunciation": "/əˈsɪst/",
+    "example_en": "How can I assist you today?",
+    "example_ka": "როგორ შემიძლია დღეს დაგეხმაროთ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "support",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/səˈpɔːrt/",
+    "example_en": "Please contact customer support.",
+    "example_ka": "გთხოვთ, დაუკავშირდეთ მხარდაჭერას.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "service",
+    "georgian": "მომსახურება",
+    "pronunciation": "/ˈsɜːrvɪs/",
+    "example_en": "The service here is excellent.",
+    "example_ka": "მომსახურება აქ შესანიშნავია.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "help",
+    "georgian": "დახმარება",
+    "pronunciation": "/hɛlp/",
+    "example_en": "Can you help me with this?",
+    "example_ka": "შეგიძლია ამაში დამეხმარო?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "manager",
+    "georgian": "მენეჯერი",
+    "pronunciation": "/ˈmænɪdʒər/",
+    "example_en": "I'd like to speak to the manager.",
+    "example_ka": "მენეჯერთან საუბარი მსურს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "issue",
+    "georgian": "პრობლემა",
+    "pronunciation": "/ˈɪʃuː/",
+    "example_en": "I have an issue with my account.",
+    "example_ka": "ჩემს ანგარიშთან პრობლემა მაქვს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "problem",
+    "georgian": "პრობლემა",
+    "pronunciation": "/ˈprɒbləm/",
+    "example_en": "There is a problem with my order.",
+    "example_ka": "ჩემს შეკვეთასთან პრობლემაა.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "solve",
+    "georgian": "გადაჭრა",
+    "pronunciation": "/sɒlv/",
+    "example_en": "We will solve this quickly.",
+    "example_ka": "ამას სწრაფად გადავჭრით.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "wait",
+    "georgian": "ლოდინი",
+    "pronunciation": "/weɪt/",
+    "example_en": "Please wait a moment.",
+    "example_ka": "გთხოვთ, მოიცადეთ ცოტა.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "queue",
+    "georgian": "რიგი",
+    "pronunciation": "/kjuː/",
+    "example_en": "You are next in the queue.",
+    "example_ka": "თქვენ რიგში მომდევნო ხართ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "hold",
+    "georgian": "შეჩერება",
+    "pronunciation": "/hoʊld/",
+    "example_en": "Please hold the line.",
+    "example_ka": "გთხოვთ, ხაზზე დარჩით.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "transfer",
+    "georgian": "გადარიცხვა",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "I will transfer you to another department.",
+    "example_ka": "სხვა განყოფილებაში გადაგრიცხავთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "department",
+    "georgian": "განყოფილება",
+    "pronunciation": "/dɪˈpɑːrtmənt/",
+    "example_en": "Which department do you need?",
+    "example_ka": "რომელი განყოფილება გჭირდებათ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "policy",
+    "georgian": "პოლიტიკა",
+    "pronunciation": "/ˈpɒlɪsi/",
+    "example_en": "It is against our policy.",
+    "example_ka": "ეს ჩვენი პოლიტიკის საწინააღმდეგოა.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "charge",
+    "georgian": "გადასახადი",
+    "pronunciation": "/tʃɑːrdʒ/",
+    "example_en": "There is an extra charge for this.",
+    "example_ka": "ამისთვის დამატებითი გადასახადია.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "fee",
+    "georgian": "საკომისიო",
+    "pronunciation": "/fiː/",
+    "example_en": "Is there a fee for returns?",
+    "example_ka": "დაბრუნებისთვის საკომისიოა?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "bill",
+    "georgian": "ანგარიში",
+    "pronunciation": "/bɪl/",
+    "example_en": "Can I see the bill please?",
+    "example_ka": "შეიძლება ანგარიში ვნახო?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "I need an invoice for this purchase.",
+    "example_ka": "ამ შესყიდვისთვის ინვოისი მჭირდება.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "purchase",
+    "georgian": "შესყიდვა",
+    "pronunciation": "/ˈpɜːrtʃəs/",
+    "example_en": "Thank you for your purchase.",
+    "example_ka": "მადლობა შესყიდვისთვის.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "return",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "I want to return this item.",
+    "example_ka": "ამ ნივთის დაბრუნება მსურს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "replace",
+    "georgian": "შეცვლა",
+    "pronunciation": "/rɪˈpleɪs/",
+    "example_en": "Can you replace this product?",
+    "example_ka": "შეგიძლიათ ეს პროდუქტი შეცვალოთ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "broken",
+    "georgian": "გატეხილი",
+    "pronunciation": "/ˈbroʊkən/",
+    "example_en": "This arrived broken.",
+    "example_ka": "ეს გატეხილი მოვიდა.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "damaged",
+    "georgian": "დაზიანებული",
+    "pronunciation": "/ˈdæmɪdʒd/",
+    "example_en": "The package was damaged.",
+    "example_ka": "შეფუთვა დაზიანებული იყო.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "missing",
+    "georgian": "დაკარგული",
+    "pronunciation": "/ˈmɪsɪŋ/",
+    "example_en": "One item is missing from my order.",
+    "example_ka": "ჩემი შეკვეთიდან ერთი ნივთი აკლია.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "wrong",
+    "georgian": "არასწორი",
+    "pronunciation": "/rɒŋ/",
+    "example_en": "You sent the wrong item.",
+    "example_ka": "არასწორი ნივთი გამომიგზავნეთ.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "correct",
+    "georgian": "სწორი",
+    "pronunciation": "/kəˈrɛkt/",
+    "example_en": "Is this the correct amount?",
+    "example_ka": "ეს სწორი თანხაა?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "confirm",
+    "georgian": "დადასტურება",
+    "pronunciation": "/kənˈfɜːrm/",
+    "example_en": "Can you confirm my booking?",
+    "example_ka": "შეგიძლიათ ჩემი დაჯავშნა დაადასტუროთ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "booking",
+    "georgian": "დაჯავშნა",
+    "pronunciation": "/ˈbʊkɪŋ/",
+    "example_en": "I made a booking online.",
+    "example_ka": "ონლაინ დავჯავშნე.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "reservation",
+    "georgian": "ჯავშანი",
+    "pronunciation": "/ˌrɛzərˈveɪʃən/",
+    "example_en": "I have a reservation for two.",
+    "example_ka": "ორზე ჯავშანი მაქვს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "account",
+    "georgian": "ანგარიში",
+    "pronunciation": "/əˈkaʊnt/",
+    "example_en": "I cannot access my account.",
+    "example_ka": "ჩემ ანგარიშზე ვერ შევდივარ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswɜːrd/",
+    "example_en": "I forgot my password.",
+    "example_ka": "პაროლი დამავიწყდა.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "email",
+    "georgian": "ელფოსტა",
+    "pronunciation": "/ˈiːmeɪl/",
+    "example_en": "I will send you an email.",
+    "example_ka": "ელფოსტას გამოგიგზავნით.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "phone",
+    "georgian": "ტელეფონი",
+    "pronunciation": "/foʊn/",
+    "example_en": "Call us by phone.",
+    "example_ka": "ტელეფონით დაგვირეკეთ.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "callback",
+    "georgian": "გადარეკვა",
+    "pronunciation": "/ˈkɔːlbæk/",
+    "example_en": "Can I request a callback?",
+    "example_ka": "შეიძლება გადარეკვა მოვითხოვო?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "respond",
+    "georgian": "პასუხის გაცემა",
+    "pronunciation": "/rɪˈspɒnd/",
+    "example_en": "We will respond within 24 hours.",
+    "example_ka": "24 საათში გიპასუხებთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "resolve",
+    "georgian": "მოგვარება",
+    "pronunciation": "/rɪˈzɒlv/",
+    "example_en": "We need to resolve this issue.",
+    "example_ka": "ეს საკითხი უნდა მოვაგვაროთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "apologize",
+    "georgian": "ბოდიშის მოხდა",
+    "pronunciation": "/əˈpɒlədʒaɪz/",
+    "example_en": "We apologize for the inconvenience.",
+    "example_ka": "ბოდიშს გიხდით შეუსაბამობისთვის.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "inconvenience",
+    "georgian": "შეუსაბამობა",
+    "pronunciation": "/ˌɪnkənˈviːniəns/",
+    "example_en": "Sorry for the inconvenience.",
+    "example_ka": "ბოდიშს ვიხდით შეუსაბამობისთვის.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "compensation",
+    "georgian": "კომპენსაცია",
+    "pronunciation": "/ˌkɒmpɛnˈseɪʃən/",
+    "example_en": "I would like compensation.",
+    "example_ka": "კომპენსაცია მსურს.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "escalate",
+    "georgian": "ესკალაცია",
+    "pronunciation": "/ˈɛskəleɪt/",
+    "example_en": "I need to escalate this complaint.",
+    "example_ka": "ეს საჩივარი ზემდგომს უნდა გადავუგზავნო.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "feedback",
+    "georgian": "გამოხმაურება",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "We appreciate your feedback.",
+    "example_ka": "თქვენს გამოხმაურებას ვაფასებთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "review",
+    "georgian": "მიმოხილვა",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Please leave a review.",
+    "example_ka": "გთხოვთ, დატოვეთ მიმოხილვა.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "rating",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈreɪtɪŋ/",
+    "example_en": "How would you rate our service?",
+    "example_ka": "როგორ შეაფასებდით ჩვენს მომსახურებას?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "satisfaction",
+    "georgian": "კმაყოფილება",
+    "pronunciation": "/ˌsætɪsˈfækʃən/",
+    "example_en": "Customer satisfaction is our priority.",
+    "example_ka": "მომხმარებლის კმაყოფილება ჩვენი პრიორიტეტია.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "representative",
+    "georgian": "წარმომადგენელი",
+    "pronunciation": "/ˌrɛprɪˈzɛntətɪv/",
+    "example_en": "Please wait for a representative.",
+    "example_ka": "გთხოვთ, დაელოდეთ წარმომადგენელს.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "agent",
+    "georgian": "აგენტი",
+    "pronunciation": "/ˈeɪdʒənt/",
+    "example_en": "An agent will be with you shortly.",
+    "example_ka": "აგენტი მალე მოგვემსახურებათ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "operator",
+    "georgian": "ოპერატორი",
+    "pronunciation": "/ˈɒpəreɪtər/",
+    "example_en": "Press zero for an operator.",
+    "example_ka": "ოპერატორისთვის დააჭირეთ ნულს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "inquiry",
+    "georgian": "შეკითხვა",
+    "pronunciation": "/ɪnˈkwaɪəri/",
+    "example_en": "I have an inquiry about my order.",
+    "example_ka": "ჩემს შეკვეთაზე შეკითხვა მაქვს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "request",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/rɪˈkwɛst/",
+    "example_en": "Your request has been received.",
+    "example_ka": "თქვენი მოთხოვნა მიღებულია.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "process",
+    "georgian": "დამუშავება",
+    "pronunciation": "/ˈprɒsɛs/",
+    "example_en": "We are processing your request.",
+    "example_ka": "თქვენს მოთხოვნას ვამუშავებთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "delay",
+    "georgian": "დაყოვნება",
+    "pronunciation": "/dɪˈleɪ/",
+    "example_en": "Sorry for the delay.",
+    "example_ka": "ბოდიშს ვიხდით დაყოვნებისთვის.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "urgent",
+    "georgian": "სასწრაფო",
+    "pronunciation": "/ˈɜːrdʒənt/",
+    "example_en": "This is an urgent matter.",
+    "example_ka": "ეს სასწრაფო საქმეა.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "priority",
+    "georgian": "პრიორიტეტი",
+    "pronunciation": "/praɪˈɒrɪti/",
+    "example_en": "This is a high priority case.",
+    "example_ka": "ეს მაღალი პრიორიტეტის შემთხვევაა.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "ticket",
+    "georgian": "ბილეთი",
+    "pronunciation": "/ˈtɪkɪt/",
+    "example_en": "I opened a support ticket.",
+    "example_ka": "მხარდაჭერის ბილეთი გავხსენი.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "case",
+    "georgian": "შემთხვევა",
+    "pronunciation": "/keɪs/",
+    "example_en": "Your case number is 12345.",
+    "example_ka": "თქვენი შემთხვევის ნომერია 12345.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "number",
+    "georgian": "ნომერი",
+    "pronunciation": "/ˈnʌmbər/",
+    "example_en": "What is your order number?",
+    "example_ka": "თქვენი შეკვეთის ნომერი რა არის?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "track",
+    "georgian": "თვალყურის დევნა",
+    "pronunciation": "/træk/",
+    "example_en": "You can track your package online.",
+    "example_ka": "ამანათს ონლაინ შეგიძლიათ თვალი ადევნოთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "package",
+    "georgian": "ამანათი",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "My package has not arrived.",
+    "example_ka": "ჩემი ამანათი არ მოსულა.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "parcel",
+    "georgian": "ამანათი",
+    "pronunciation": "/ˈpɑːrsəl/",
+    "example_en": "The parcel was left at the door.",
+    "example_ka": "ამანათი კარზე დატოვეს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "dispatch",
+    "georgian": "გაგზავნა",
+    "pronunciation": "/dɪˈspætʃ/",
+    "example_en": "Your order has been dispatched.",
+    "example_ka": "თქვენი შეკვეთა გაიგზავნა.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "stock",
+    "georgian": "მარაგი",
+    "pronunciation": "/stɒk/",
+    "example_en": "This item is out of stock.",
+    "example_ka": "ეს ნივთი მარაგში არ არის.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "item",
+    "georgian": "ნივთი",
+    "pronunciation": "/ˈaɪtəm/",
+    "example_en": "Which item would you like?",
+    "example_ka": "რომელი ნივთი გსურთ?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "product",
+    "georgian": "პროდუქტი",
+    "pronunciation": "/ˈprɒdʌkt/",
+    "example_en": "This product has great reviews.",
+    "example_ka": "ამ პროდუქტს შესანიშნავი მიმოხილვები აქვს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "quality",
+    "georgian": "ხარისხი",
+    "pronunciation": "/ˈkwɒlɪti/",
+    "example_en": "The quality is very poor.",
+    "example_ka": "ხარისხი ძალიან დაბალია.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɒn/",
+    "example_en": "Do you have a coupon code?",
+    "example_ka": "კუპონის კოდი გაქვთ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "voucher",
+    "georgian": "ვაუჩერი",
+    "pronunciation": "/ˈvaʊtʃər/",
+    "example_en": "I received a voucher as compensation.",
+    "example_ka": "კომპენსაციად ვაუჩერი მივიღე.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "credit",
+    "georgian": "კრედიტი",
+    "pronunciation": "/ˈkrɛdɪt/",
+    "example_en": "We will add credit to your account.",
+    "example_ka": "ანგარიშზე კრედიტს დაგირიცხავთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "payment",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈpeɪmənt/",
+    "example_en": "Your payment was successful.",
+    "example_ka": "თქვენი გადახდა წარმატებით შესრულდა.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "refundable",
+    "georgian": "დასაბრუნებელი",
+    "pronunciation": "/rɪˈfʌndəbl/",
+    "example_en": "Is this ticket refundable?",
+    "example_ka": "ეს ბილეთი დასაბრუნებელია?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "nonrefundable",
+    "georgian": "დაუბრუნებელი",
+    "pronunciation": "/ˌnɒnrɪˈfʌndəbl/",
+    "example_en": "This purchase is nonrefundable.",
+    "example_ka": "ეს შესყიდვა დაუბრუნებელია.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "overcharge",
+    "georgian": "ზედმეტად გადახდა",
+    "pronunciation": "/ˌoʊvərˈtʃɑːrdʒ/",
+    "example_en": "I was overcharged on my bill.",
+    "example_ka": "ანგარიშში ზედმეტი გადამახდევინეს.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "reimburse",
+    "georgian": "ანაზღაურება",
+    "pronunciation": "/ˌriːɪmˈbɜːrs/",
+    "example_en": "We will reimburse you fully.",
+    "example_ka": "სრულად აგინაზღაურებთ.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Would you like to subscribe?",
+    "example_ka": "გსურთ გამოწერა?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "unsubscribe",
+    "georgian": "გამოწერის გაუქმება",
+    "pronunciation": "/ˌʌnsəbˈskraɪb/",
+    "example_en": "How do I unsubscribe?",
+    "example_ka": "როგორ გავაუქმო გამოწერა?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "membership",
+    "georgian": "წევრობა",
+    "pronunciation": "/ˈmɛmbərʃɪp/",
+    "example_en": "My membership expires next month.",
+    "example_ka": "ჩემი წევრობა მომავალ თვეში იწურება.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "renew",
+    "georgian": "განახლება",
+    "pronunciation": "/rɪˈnjuː/",
+    "example_en": "I want to renew my subscription.",
+    "example_ka": "გამოწერის განახლება მსურს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "expire",
+    "georgian": "ვადის გასვლა",
+    "pronunciation": "/ɪkˈspaɪər/",
+    "example_en": "When does my warranty expire?",
+    "example_ka": "როდის ეწურება ჩემს გარანტიას ვადა?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "valid",
+    "georgian": "მოქმედი",
+    "pronunciation": "/ˈvælɪd/",
+    "example_en": "Is this coupon still valid?",
+    "example_ka": "ეს კუპონი ჯერ კიდევ მოქმედია?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "invalid",
+    "georgian": "არამოქმედი",
+    "pronunciation": "/ɪnˈvælɪd/",
+    "example_en": "The code you entered is invalid.",
+    "example_ka": "თქვენ მიერ შეყვანილი კოდი არამოქმედია.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "terms",
+    "georgian": "პირობები",
+    "pronunciation": "/tɜːrmz/",
+    "example_en": "Please read the terms carefully.",
+    "example_ka": "გთხოვთ, ყურადღებით წაიკითხეთ პირობები.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "conditions",
+    "georgian": "პირობები",
+    "pronunciation": "/kənˈdɪʃənz/",
+    "example_en": "The conditions apply to all customers.",
+    "example_ka": "პირობები ყველა მომხმარებელზე ვრცელდება.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "guarantee",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˌɡærənˈtiː/",
+    "example_en": "We guarantee your satisfaction.",
+    "example_ka": "თქვენს კმაყოფილებას ვგარანტირებთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "eligible",
+    "georgian": "უფლებამოსილი",
+    "pronunciation": "/ˈɛlɪdʒəbl/",
+    "example_en": "You are eligible for a discount.",
+    "example_ka": "ფასდაკლების უფლება გაქვთ.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "apply",
+    "georgian": "მიმართვა",
+    "pronunciation": "/əˈplaɪ/",
+    "example_en": "This discount does not apply here.",
+    "example_ka": "ეს ფასდაკლება აქ არ მოქმედებს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "offer",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/ˈɒfər/",
+    "example_en": "We have a special offer today.",
+    "example_ka": "დღეს სპეციალური შეთავაზება გვაქვს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "promotion",
+    "georgian": "აქცია",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "Is there a promotion going on?",
+    "example_ka": "რაიმე აქცია მიმდინარეობს?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "sale",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/seɪl/",
+    "example_en": "Everything is on sale this week.",
+    "example_ka": "ამ კვირაში ყველაფერი ფასდაკლებითაა.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "bargain",
+    "georgian": "ხელსაყრელი შეთავაზება",
+    "pronunciation": "/ˈbɑːrɡɪn/",
+    "example_en": "That was a real bargain.",
+    "example_ka": "ეს მართლა ხელსაყრელი შეთავაზება იყო.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "expensive",
+    "georgian": "ძვირი",
+    "pronunciation": "/ɪkˈspɛnsɪv/",
+    "example_en": "This is too expensive.",
+    "example_ka": "ეს ძალიან ძვირია.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "cheap",
+    "georgian": "იაფი",
+    "pronunciation": "/tʃiːp/",
+    "example_en": "Do you have anything cheaper?",
+    "example_ka": "რაიმე უფრო იაფი გაქვთ?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "affordable",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈfɔːrdəbl/",
+    "example_en": "We offer affordable plans.",
+    "example_ka": "ხელმისაწვდომ გეგმებს ვთავაზობთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "cost",
+    "georgian": "ღირებულება",
+    "pronunciation": "/kɒst/",
+    "example_en": "How much does it cost?",
+    "example_ka": "რა ღირს?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "free",
+    "georgian": "უფასო",
+    "pronunciation": "/friː/",
+    "example_en": "Is this service free?",
+    "example_ka": "ეს მომსახურება უფასოა?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "pay",
+    "georgian": "გადახდა",
+    "pronunciation": "/peɪ/",
+    "example_en": "How would you like to pay?",
+    "example_ka": "როგორ გსურთ გადახდა?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "cash",
+    "georgian": "ნაღდი",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Can I pay in cash?",
+    "example_ka": "ნაღდით შეიძლება?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "change",
+    "georgian": "ხურდა",
+    "pronunciation": "/tʃeɪndʒ/",
+    "example_en": "Do you have change?",
+    "example_ka": "ხურდა გაქვთ?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "swipe",
+    "georgian": "გადაფურცვლა",
+    "pronunciation": "/swaɪp/",
+    "example_en": "Please swipe your card.",
+    "example_ka": "გთხოვთ, ბარათი გადაფურცლეთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "tap",
+    "georgian": "მიტანება",
+    "pronunciation": "/tæp/",
+    "example_en": "Just tap your card here.",
+    "example_ka": "უბრალოდ ბარათი აქ მიიტანეთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "scan",
+    "georgian": "სკანირება",
+    "pronunciation": "/skæn/",
+    "example_en": "Please scan the barcode.",
+    "example_ka": "გთხოვთ, შტრიხკოდი დაასკანერეთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "register",
+    "georgian": "რეგისტრაცია",
+    "pronunciation": "/ˈrɛdʒɪstər/",
+    "example_en": "You need to register first.",
+    "example_ka": "ჯერ რეგისტრაცია გჭირდებათ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "login",
+    "georgian": "შესვლა",
+    "pronunciation": "/ˈlɒɡɪn/",
+    "example_en": "Please login to your account.",
+    "example_ka": "გთხოვთ, ანგარიშზე შედით.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "logout",
+    "georgian": "გამოსვლა",
+    "pronunciation": "/ˈlɒɡaʊt/",
+    "example_en": "Don't forget to logout.",
+    "example_ka": "გამოსვლა არ დაგავიწყდეთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "verify",
+    "georgian": "შემოწმება",
+    "pronunciation": "/ˈvɛrɪfaɪ/",
+    "example_en": "We need to verify your identity.",
+    "example_ka": "თქვენი ვინაობის შემოწმებაა საჭირო.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "identity",
+    "georgian": "ვინაობა",
+    "pronunciation": "/aɪˈdɛntɪti/",
+    "example_en": "Please show your identity.",
+    "example_ka": "გთხოვთ, წარმოადგინეთ პირადობა.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "address",
+    "georgian": "მისამართი",
+    "pronunciation": "/ˈædrɛs/",
+    "example_en": "What is your delivery address?",
+    "example_ka": "მიტანის მისამართი რა არის?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "details",
+    "georgian": "დეტალები",
+    "pronunciation": "/ˈdiːteɪlz/",
+    "example_en": "Please provide your details.",
+    "example_ka": "გთხოვთ, მიუთითეთ თქვენი მონაცემები.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "update",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈdeɪt/",
+    "example_en": "I need to update my address.",
+    "example_ka": "მისამართის განახლება მჭირდება.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "notify",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈnoʊtɪfaɪ/",
+    "example_en": "We will notify you by email.",
+    "example_ka": "ელფოსტით შეგატყობინებთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/",
+    "example_en": "You will receive a notification.",
+    "example_ka": "შეტყობინებას მიიღებთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "chat",
+    "georgian": "ჩატი",
+    "pronunciation": "/tʃæt/",
+    "example_en": "You can reach us via live chat.",
+    "example_ka": "ცოცხალი ჩატით შეგიძლიათ დაგვიკავშირდეთ.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "message",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˈmɛsɪdʒ/",
+    "example_en": "Please leave a message.",
+    "example_ka": "გთხოვთ, დატოვეთ შეტყობინება.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "automated",
+    "georgian": "ავტომატიზირებული",
+    "pronunciation": "/ˈɔːtəmeɪtɪd/",
+    "example_en": "This is an automated response.",
+    "example_ka": "ეს ავტომატური პასუხია.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "manual",
+    "georgian": "ხელით",
+    "pronunciation": "/ˈmænjuəl/",
+    "example_en": "Check the user manual.",
+    "example_ka": "მომხმარებლის სახელმძღვანელო შეამოწმეთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "instructions",
+    "georgian": "ინსტრუქციები",
+    "pronunciation": "/ɪnˈstrʌkʃənz/",
+    "example_en": "Follow the instructions carefully.",
+    "example_ka": "ყურადღებით მიჰყევით ინსტრუქციებს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "guide",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/ɡaɪd/",
+    "example_en": "Here is a quick start guide.",
+    "example_ka": "აი, სწრაფი დაწყების სახელმძღვანელო.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "form",
+    "georgian": "ფორმა",
+    "pronunciation": "/fɔːrm/",
+    "example_en": "Please fill out this form.",
+    "example_ka": "გთხოვთ, შეავსეთ ეს ფორმა.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "submit",
+    "georgian": "გაგზავნა",
+    "pronunciation": "/səbˈmɪt/",
+    "example_en": "Click submit when you are done.",
+    "example_ka": "დასრულებისას დააჭირეთ გაგზავნას.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "attach",
+    "georgian": "მიმაგრება",
+    "pronunciation": "/əˈtætʃ/",
+    "example_en": "Please attach a photo of the damage.",
+    "example_ka": "გთხოვთ, მიამაგრეთ დაზიანების ფოტო.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "upload",
+    "georgian": "ატვირთვა",
+    "pronunciation": "/ʌpˈloʊd/",
+    "example_en": "Upload your receipt here.",
+    "example_ka": "ჩეკი აქ ატვირთეთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "download",
+    "georgian": "ჩამოტვირთვა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the app for updates.",
+    "example_ka": "ჩამოტვირთეთ აპი სიახლეებისთვის.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "status",
+    "georgian": "სტატუსი",
+    "pronunciation": "/ˈsteɪtəs/",
+    "example_en": "What is the status of my order?",
+    "example_ka": "ჩემი შეკვეთის სტატუსი რა არის?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "pending",
+    "georgian": "მომლოდინე",
+    "pronunciation": "/ˈpɛndɪŋ/",
+    "example_en": "Your refund is pending.",
+    "example_ka": "თქვენი თანხის დაბრუნება მომლოდინეა.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "approved",
+    "georgian": "დამტკიცებული",
+    "pronunciation": "/əˈpruːvd/",
+    "example_en": "Your request has been approved.",
+    "example_ka": "თქვენი მოთხოვნა დამტკიცდა.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "denied",
+    "georgian": "უარყოფილი",
+    "pronunciation": "/dɪˈnaɪd/",
+    "example_en": "Your claim was denied.",
+    "example_ka": "თქვენი მოთხოვნა უარყოფილია.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "claim",
+    "georgian": "მოთხოვნა",
+    "pronunciation": "/kleɪm/",
+    "example_en": "I want to file a claim.",
+    "example_ka": "მოთხოვნის შეტანა მსურს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "file",
+    "georgian": "შეტანა",
+    "pronunciation": "/faɪl/",
+    "example_en": "How do I file a complaint?",
+    "example_ka": "როგორ შევიტანო საჩივარი?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "deadline",
+    "georgian": "ვადა",
+    "pronunciation": "/ˈdɛdlaɪn/",
+    "example_en": "What is the deadline for returns?",
+    "example_ka": "დაბრუნების ვადა რა არის?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "extend",
+    "georgian": "გაგრძელება",
+    "pronunciation": "/ɪkˈstɛnd/",
+    "example_en": "Can you extend the deadline?",
+    "example_ka": "შეგიძლიათ ვადა გააგრძელოთ?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "option",
+    "georgian": "ვარიანტი",
+    "pronunciation": "/ˈɒpʃən/",
+    "example_en": "What options do I have?",
+    "example_ka": "რა ვარიანტები მაქვს?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "alternative",
+    "georgian": "ალტერნატივა",
+    "pronunciation": "/ɔːlˈtɜːrnətɪv/",
+    "example_en": "Is there an alternative solution?",
+    "example_ka": "ალტერნატიული გადაწყვეტა არსებობს?",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "solution",
+    "georgian": "გადაწყვეტა",
+    "pronunciation": "/səˈluːʃən/",
+    "example_en": "We found a solution for you.",
+    "example_ka": "გადაწყვეტა მოგიძებნეთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "negotiate",
+    "georgian": "მოლაპარაკება",
+    "pronunciation": "/nɪˈɡoʊʃieɪt/",
+    "example_en": "Can we negotiate the price?",
+    "example_ka": "ფასზე მოლაპარაკება შეიძლება?",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "arrange",
+    "georgian": "მოწყობა",
+    "pronunciation": "/əˈreɪndʒ/",
+    "example_en": "We will arrange a pickup.",
+    "example_ka": "გატანას მოვაწყობთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "pickup",
+    "georgian": "გატანა",
+    "pronunciation": "/ˈpɪkʌp/",
+    "example_en": "Schedule a pickup time.",
+    "example_ka": "გატანის დრო დანიშნეთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈʃɛdjuːl/",
+    "example_en": "Can we schedule a call?",
+    "example_ka": "ზარი დავნიშნოთ?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "appointment",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/əˈpɔɪntmənt/",
+    "example_en": "I need to make an appointment.",
+    "example_ka": "შეხვედრის დანიშვნა მჭირდება.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "busy",
+    "georgian": "დაკავებული",
+    "pronunciation": "/ˈbɪzi/",
+    "example_en": "All agents are busy right now.",
+    "example_ka": "ყველა აგენტი ამჟამად დაკავებულია.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "open",
+    "georgian": "ღია",
+    "pronunciation": "/ˈoʊpən/",
+    "example_en": "What time do you open?",
+    "example_ka": "რომელ საათზე იღებთ?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "close",
+    "georgian": "დახურვა",
+    "pronunciation": "/kloʊz/",
+    "example_en": "What time do you close?",
+    "example_ka": "რომელ საათზე იკეტებით?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "hours",
+    "georgian": "საათები",
+    "pronunciation": "/aʊərz/",
+    "example_en": "What are your business hours?",
+    "example_ka": "სამუშაო საათები რა არის?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "weekend",
+    "georgian": "შაბათ-კვირა",
+    "pronunciation": "/ˈwiːkɛnd/",
+    "example_en": "Are you open on weekends?",
+    "example_ka": "შაბათ-კვირას ღიაა?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "holiday",
+    "georgian": "დღესასწაული",
+    "pronunciation": "/ˈhɒlɪdeɪ/",
+    "example_en": "We are closed on holidays.",
+    "example_ka": "დღესასწაულებზე დახურულია.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "location",
+    "georgian": "მდებარეობა",
+    "pronunciation": "/loʊˈkeɪʃən/",
+    "example_en": "Where is your nearest location?",
+    "example_ka": "თქვენი უახლოესი ფილიალი სად არის?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "branch",
+    "georgian": "ფილიალი",
+    "pronunciation": "/brɑːntʃ/",
+    "example_en": "Visit your nearest branch.",
+    "example_ka": "ეწვიეთ უახლოეს ფილიალს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "store",
+    "georgian": "მაღაზია",
+    "pronunciation": "/stɔːr/",
+    "example_en": "Is this available in store?",
+    "example_ka": "მაღაზიაში ეს ხელმისაწვდომია?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "online",
+    "georgian": "ონლაინ",
+    "pronunciation": "/ˈɒnlaɪn/",
+    "example_en": "You can order online.",
+    "example_ka": "ონლაინ შეგიძლიათ შეკვეთა.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "website",
+    "georgian": "ვებგვერდი",
+    "pronunciation": "/ˈwɛbsaɪt/",
+    "example_en": "Check our website for details.",
+    "example_ka": "დეტალებისთვის ვებგვერდი შეამოწმეთ.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "app",
+    "georgian": "აპლიკაცია",
+    "pronunciation": "/æp/",
+    "example_en": "Download our app.",
+    "example_ka": "ჩამოტვირთეთ ჩვენი აპლიკაცია.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "install",
+    "georgian": "დაყენება",
+    "pronunciation": "/ɪnˈstɔːl/",
+    "example_en": "Install the latest version.",
+    "example_ka": "უახლესი ვერსია დააყენეთ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "upgrade",
+    "georgian": "განახლება",
+    "pronunciation": "/ʌpˈɡreɪd/",
+    "example_en": "Would you like to upgrade your plan?",
+    "example_ka": "გსურთ თქვენი გეგმის განახლება?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "downgrade",
+    "georgian": "დაქვეითება",
+    "pronunciation": "/ˈdaʊnɡreɪd/",
+    "example_en": "I want to downgrade my plan.",
+    "example_ka": "გეგმის დაქვეითება მსურს.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "trial",
+    "georgian": "საცდელი",
+    "pronunciation": "/ˈtraɪəl/",
+    "example_en": "Start your free trial today.",
+    "example_ka": "დღესვე დაიწყეთ უფასო საცდელი პერიოდი.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "premium",
+    "georgian": "პრემიუმ",
+    "pronunciation": "/ˈpriːmiəm/",
+    "example_en": "Upgrade to our premium plan.",
+    "example_ka": "გადავიდეთ პრემიუმ გეგმაზე.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "basic",
+    "georgian": "ძირითადი",
+    "pronunciation": "/ˈbeɪsɪk/",
+    "example_en": "The basic plan is free.",
+    "example_ka": "ძირითადი გეგმა უფასოა.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "feature",
+    "georgian": "ფუნქცია",
+    "pronunciation": "/ˈfiːtʃər/",
+    "example_en": "This feature is only for premium users.",
+    "example_ka": "ეს ფუნქცია მხოლოდ პრემიუმ მომხმარებლებისთვისაა.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "access",
+    "georgian": "წვდომა",
+    "pronunciation": "/ˈæksɛs/",
+    "example_en": "I cannot access my account.",
+    "example_ka": "ჩემ ანგარიშზე წვდომა არ მაქვს.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "permission",
+    "georgian": "ნებართვა",
+    "pronunciation": "/pərˈmɪʃən/",
+    "example_en": "You need permission to do this.",
+    "example_ka": "ამისთვის ნებართვა გჭირდებათ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "privacy",
+    "georgian": "კონფიდენციალურობა",
+    "pronunciation": "/ˈprɪvəsi/",
+    "example_en": "We respect your privacy.",
+    "example_ka": "თქვენს კონფიდენციალურობას ვპატივცემთ.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "secure",
+    "georgian": "უსაფრთხო",
+    "pronunciation": "/sɪˈkjʊr/",
+    "example_en": "Your data is secure with us.",
+    "example_ka": "თქვენი მონაცემები ჩვენთან უსაფრთხოა.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "data",
+    "georgian": "მონაცემები",
+    "pronunciation": "/ˈdeɪtə/",
+    "example_en": "How do you use my data?",
+    "example_ka": "როგორ იყენებთ ჩემს მონაცემებს?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "suspicious",
+    "georgian": "საეჭვო",
+    "pronunciation": "/səˈspɪʃəs/",
+    "example_en": "I noticed suspicious activity.",
+    "example_ka": "საეჭვო აქტივობა შევამჩნიე.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "fraud",
+    "georgian": "თაღლითობა",
+    "pronunciation": "/frɔːd/",
+    "example_en": "I think this is fraud.",
+    "example_ka": "ვფიქრობ, ეს თაღლითობაა.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "scam",
+    "georgian": "მოტყუება",
+    "pronunciation": "/skæm/",
+    "example_en": "Be careful of online scams.",
+    "example_ka": "ონლაინ მოტყუებას ეფრთხილეთ.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "report",
+    "georgian": "მოხსენება",
+    "pronunciation": "/rɪˈpɔːrt/",
+    "example_en": "I want to report a problem.",
+    "example_ka": "პრობლემის მოხსენება მსურს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "complain",
+    "georgian": "ჩივილი",
+    "pronunciation": "/kəmˈpleɪn/",
+    "example_en": "I want to complain about this.",
+    "example_ka": "ამაზე ჩივილი მსურს.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "suggest",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/səˈdʒɛst/",
+    "example_en": "Can you suggest an alternative?",
+    "example_ka": "ალტერნატივას შემთავაზებთ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "recommend",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrɛkəˈmɛnd/",
+    "example_en": "What do you recommend?",
+    "example_ka": "რას გირჩევთ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "prefer",
+    "georgian": "უპირატესობის მინიჭება",
+    "pronunciation": "/prɪˈfɜːr/",
+    "example_en": "I prefer email communication.",
+    "example_ka": "ელფოსტით კომუნიკაციას ვამჯობინებ.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "choose",
+    "georgian": "არჩევა",
+    "pronunciation": "/tʃuːz/",
+    "example_en": "You can choose any color.",
+    "example_ka": "ნებისმიერი ფერის არჩევა შეგიძლიათ.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "select",
+    "georgian": "შერჩევა",
+    "pronunciation": "/sɪˈlɛkt/",
+    "example_en": "Please select your preferred option.",
+    "example_ka": "გთხოვთ, აირჩიეთ სასურველი ვარიანტი.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "compare",
+    "georgian": "შედარება",
+    "pronunciation": "/kəmˈpɛr/",
+    "example_en": "Let me compare these two products.",
+    "example_ka": "ეს ორი პროდუქტი შევადარო.",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "match",
+    "georgian": "შესაბამისობა",
+    "pronunciation": "/mætʃ/",
+    "example_en": "This does not match my order.",
+    "example_ka": "ეს ჩემს შეკვეთას არ ემთხვევა.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "size",
+    "georgian": "ზომა",
+    "pronunciation": "/saɪz/",
+    "example_en": "What size do you need?",
+    "example_ka": "რა ზომა გჭირდებათ?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "color",
+    "georgian": "ფერი",
+    "pronunciation": "/ˈkʌlər/",
+    "example_en": "Do you have this in another color?",
+    "example_ka": "ეს სხვა ფერში გაქვთ?",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "model",
+    "georgian": "მოდელი",
+    "pronunciation": "/ˈmɒdəl/",
+    "example_en": "Which model do you prefer?",
+    "example_ka": "რომელ მოდელს ანიჭებთ უპირატესობას?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "version",
+    "georgian": "ვერსია",
+    "pronunciation": "/ˈvɜːrʒən/",
+    "example_en": "Is there a newer version?",
+    "example_ka": "უფრო ახალი ვერსია არსებობს?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "original",
+    "georgian": "ორიგინალი",
+    "pronunciation": "/əˈrɪdʒɪnəl/",
+    "example_en": "Is this the original product?",
+    "example_ka": "ეს ორიგინალი პროდუქტია?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "genuine",
+    "georgian": "ნამდვილი",
+    "pronunciation": "/ˈdʒɛnjuɪn/",
+    "example_en": "We only sell genuine products.",
+    "example_ka": "მხოლოდ ნამდვილ პროდუქტებს ვყიდით.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "fake",
+    "georgian": "ყალბი",
+    "pronunciation": "/feɪk/",
+    "example_en": "I think this product is fake.",
+    "example_ka": "ვფიქრობ, ეს პროდუქტი ყალბია.",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "inspect",
+    "georgian": "შემოწმება",
+    "pronunciation": "/ɪnˈspɛkt/",
+    "example_en": "Let me inspect the damage.",
+    "example_ka": "ნება მიბოძეთ, დაზიანება შევამოწმო.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "examine",
+    "georgian": "გამოკვლევა",
+    "pronunciation": "/ɪɡˈzæmɪn/",
+    "example_en": "We will examine the product.",
+    "example_ka": "პროდუქტს გამოვიკვლევთ.",
+    "category": "customer-service",
+    "level": "B2"
+  },
+  {
+    "english": "test",
+    "georgian": "ტესტი",
+    "pronunciation": "/tɛst/",
+    "example_en": "We need to test it first.",
+    "example_ka": "ჯერ ტესტირება გვჭირდება.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "repair",
+    "georgian": "შეკეთება",
+    "pronunciation": "/rɪˈpɛr/",
+    "example_en": "Can you repair this?",
+    "example_ka": "ამის შეკეთება შეგიძლიათ?",
+    "category": "customer-service",
+    "level": "A2"
+  },
+  {
+    "english": "fix",
+    "georgian": "გასწორება",
+    "pronunciation": "/fɪks/",
+    "example_en": "Please fix this issue.",
+    "example_ka": "გთხოვთ, ეს პრობლემა გაასწორეთ.",
+    "category": "customer-service",
+    "level": "A1"
+  },
+  {
+    "english": "maintain",
+    "georgian": "შენარჩუნება",
+    "pronunciation": "/meɪnˈteɪn/",
+    "example_en": "How do I maintain this device?",
+    "example_ka": "როგორ მოვუაროთ ამ მოწყობილობას?",
+    "category": "customer-service",
+    "level": "B1"
+  },
+  {
+    "english": "loyal",
+    "georgian": "ერთგული",
+    "pronunciation": "/ˈlɔɪəl/",
+    "example_en": "We value loyal customers.",
+    "example_ka": "ერთგულ მომხმარებლებს ვაფასებთ.",
+    "category": "customer-service",
+    "level": "B1"
+  }
 ]

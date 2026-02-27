@@ -1,37 +1,1316 @@
 [
-  {"english": "Add to cart", "georgian": "კალათაში დამატება", "pronunciation": "/æd tə kɑːrt/", "example_en": "Add to cart and continue shopping.", "example_ka": "კალათაში დაამატე და განაგრძე შოპინგი.", "category": "online-shopping", "level": "A2"},
-  {"english": "Checkout", "georgian": "გადახდა", "pronunciation": "/ˈtʃɛkaʊt/", "example_en": "Proceed to checkout.", "example_ka": "გადახდაზე გადასვლა.", "category": "online-shopping", "level": "A2"},
-  {"english": "Shipping", "georgian": "მიტანა", "pronunciation": "/ˈʃɪpɪŋ/", "example_en": "Free shipping on orders over $50.", "example_ka": "უფასო მიტანა 50 დოლარზე ზევით შეკვეთებზე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Delivery", "georgian": "მიწოდება", "pronunciation": "/dɪˈlɪvəri/", "example_en": "Delivery takes 3-5 business days.", "example_ka": "მიწოდება 3-5 სამუშაო დღე სჭირდება.", "category": "online-shopping", "level": "A2"},
-  {"english": "Discount", "georgian": "ფასდაკლება", "pronunciation": "/ˈdɪskaʊnt/", "example_en": "There's a 20% discount today.", "example_ka": "დღეს 20% ფასდაკლებაა.", "category": "online-shopping", "level": "A2"},
-  {"english": "Coupon code", "georgian": "კუპონის კოდი", "pronunciation": "/ˈkuːpɒn koʊd/", "example_en": "Enter the coupon code at checkout.", "example_ka": "გადახდისას კუპონის კოდი შეიყვანე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Out of stock", "georgian": "ამოწურულია", "pronunciation": "/aʊt əv stɒk/", "example_en": "Sorry, this item is out of stock.", "example_ka": "ბოდიში, ეს ნივთი ამოწურულია.", "category": "online-shopping", "level": "A2"},
-  {"english": "Refund", "georgian": "თანხის დაბრუნება", "pronunciation": "/ˈriːfʌnd/", "example_en": "I want a full refund.", "example_ka": "სრული თანხის დაბრუნება მინდა.", "category": "online-shopping", "level": "B1"},
-  {"english": "Return", "georgian": "დაბრუნება", "pronunciation": "/rɪˈtɜːrn/", "example_en": "You can return it within 30 days.", "example_ka": "30 დღეში შეგიძლია დააბრუნო.", "category": "online-shopping", "level": "A2"},
-  {"english": "Review", "georgian": "შეფასება", "pronunciation": "/rɪˈvjuː/", "example_en": "Read the reviews before buying.", "example_ka": "ყიდვამდე შეფასებები წაიკითხე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Wishlist", "georgian": "სასურველების სია", "pronunciation": "/ˈwɪʃlɪst/", "example_en": "Save it to your wishlist.", "example_ka": "სასურველების სიაში შეინახე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Payment method", "georgian": "გადახდის მეთოდი", "pronunciation": "/ˈpeɪmənt ˈmɛθəd/", "example_en": "Choose your payment method.", "example_ka": "აირჩიე გადახდის მეთოდი.", "category": "online-shopping", "level": "A2"},
-  {"english": "Credit card", "georgian": "საკრედიტო ბარათი", "pronunciation": "/ˈkrɛdɪt kɑːrd/", "example_en": "Pay with your credit card.", "example_ka": "საკრედიტო ბარათით გადაიხადე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Tracking number", "georgian": "თრექინგის ნომერი", "pronunciation": "/ˈtrækɪŋ ˈnʌmbər/", "example_en": "Here is your tracking number.", "example_ka": "აი შენი თრექინგის ნომერი.", "category": "online-shopping", "level": "A2"},
-  {"english": "Order", "georgian": "შეკვეთა", "pronunciation": "/ˈɔːrdər/", "example_en": "Your order has been shipped.", "example_ka": "შენი შეკვეთა გაიგზავნა.", "category": "online-shopping", "level": "A2"},
-  {"english": "Size chart", "georgian": "ზომების ცხრილი", "pronunciation": "/saɪz tʃɑːrt/", "example_en": "Check the size chart before ordering.", "example_ka": "შეკვეთამდე ზომების ცხრილი ნახე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Best seller", "georgian": "ბესტსელერი", "pronunciation": "/bɛst ˈsɛlər/", "example_en": "This is our best seller.", "example_ka": "ეს ჩვენი ბესტსელერია.", "category": "online-shopping", "level": "A2"},
-  {"english": "Flash sale", "georgian": "სწრაფი ფასდაკლება", "pronunciation": "/flæʃ seɪl/", "example_en": "The flash sale ends in 2 hours.", "example_ka": "სწრაფი ფასდაკლება 2 საათში მთავრდება.", "category": "online-shopping", "level": "B1"},
-  {"english": "Subscribe", "georgian": "გამოწერა", "pronunciation": "/səbˈskraɪb/", "example_en": "Subscribe for updates.", "example_ka": "გამოიწერე სიახლეები.", "category": "online-shopping", "level": "A2"},
-  {"english": "Unsubscribe", "georgian": "გამოწერის გაუქმება", "pronunciation": "/ˌʌnsəbˈskraɪb/", "example_en": "Click here to unsubscribe.", "example_ka": "გამოწერის გასაუქმებლად აქ დააჭირე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Invoice", "georgian": "ინვოისი", "pronunciation": "/ˈɪnvɔɪs/", "example_en": "The invoice is in your email.", "example_ka": "ინვოისი ელფოსტაშია.", "category": "online-shopping", "level": "B1"},
-  {"english": "Warranty", "georgian": "გარანტია", "pronunciation": "/ˈwɒrənti/", "example_en": "This product has a 2-year warranty.", "example_ka": "ამ პროდუქტს 2 წლიანი გარანტია აქვს.", "category": "online-shopping", "level": "B1"},
-  {"english": "Compare", "georgian": "შედარება", "pronunciation": "/kəmˈpɛr/", "example_en": "Compare prices before you buy.", "example_ka": "ყიდვამდე ფასები შეადარე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Notification", "georgian": "შეტყობინება", "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/", "example_en": "You'll get a notification when it ships.", "example_ka": "გაგზავნისას შეტყობინება მიიღებ.", "category": "online-shopping", "level": "A2"},
-  {"english": "Account", "georgian": "ანგარიში", "pronunciation": "/əˈkaʊnt/", "example_en": "Create an account to save your info.", "example_ka": "ანგარიში შექმენი ინფორმაციის შესანახად.", "category": "online-shopping", "level": "A2"},
-  {"english": "Password", "georgian": "პაროლი", "pronunciation": "/ˈpæswɜːrd/", "example_en": "Choose a strong password.", "example_ka": "ძლიერი პაროლი აირჩიე.", "category": "online-shopping", "level": "A1"},
-  {"english": "Authentic", "georgian": "ორიგინალი", "pronunciation": "/ɔːˈθɛntɪk/", "example_en": "Make sure the product is authentic.", "example_ka": "დარწმუნდი რომ პროდუქტი ორიგინალია.", "category": "online-shopping", "level": "B1"},
-  {"english": "Counterfeit", "georgian": "ყალბი", "pronunciation": "/ˈkaʊntərfɪt/", "example_en": "Be careful of counterfeit products.", "example_ka": "ყალბი პროდუქტებისგან ფრთხილად.", "category": "online-shopping", "level": "B1"},
-  {"english": "Quantity", "georgian": "რაოდენობა", "pronunciation": "/ˈkwɒntəti/", "example_en": "Select the quantity you want.", "example_ka": "აირჩიე სასურველი რაოდენობა.", "category": "online-shopping", "level": "A2"},
-  {"english": "Promo code", "georgian": "პრომო კოდი", "pronunciation": "/ˈproʊmoʊ koʊd/", "example_en": "Use my promo code for 30% off.", "example_ka": "გამოიყენე ჩემი პრომო კოდი 30% ფასდაკლებისთვის.", "category": "online-shopping", "level": "A2"},
-  {"english": "Digital wallet", "georgian": "ციფრული საფულე", "pronunciation": "/ˈdɪdʒɪtl ˈwɒlɪt/", "example_en": "Pay with your digital wallet.", "example_ka": "ციფრული საფულით გადაიხადე.", "category": "online-shopping", "level": "B1"},
-  {"english": "Cashback", "georgian": "ქეშბეკი", "pronunciation": "/ˈkæʃbæk/", "example_en": "Get 5% cashback on this purchase.", "example_ka": "ამ შეძენაზე 5% ქეშბეკი მიიღე.", "category": "online-shopping", "level": "B1"},
-  {"english": "Seller", "georgian": "გამყიდველი", "pronunciation": "/ˈsɛlər/", "example_en": "Check the seller's rating.", "example_ka": "გამყიდველის რეიტინგი შეამოწმე.", "category": "online-shopping", "level": "A2"},
-  {"english": "Buyer", "georgian": "მყიდველი", "pronunciation": "/ˈbaɪər/", "example_en": "The buyer left a positive review.", "example_ka": "მყიდველმა დადებითი შეფასება დატოვა.", "category": "online-shopping", "level": "A2"},
-  {"english": "Shipping fee", "georgian": "მიტანის საფასური", "pronunciation": "/ˈʃɪpɪŋ fiː/", "example_en": "The shipping fee is $5.", "example_ka": "მიტანის საფასურია 5 დოლარი.", "category": "online-shopping", "level": "A2"}
+  {
+    "english": "checkout",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈtʃɛkaʊt/",
+    "example_en": "Proceed to checkout.",
+    "example_ka": "გადახდაზე გადასვლა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "shipping",
+    "georgian": "მიტანა",
+    "pronunciation": "/ˈʃɪpɪŋ/",
+    "example_en": "Free shipping on orders over $50.",
+    "example_ka": "უფასო მიტანა 50 დოლარზე ზევით შეკვეთებზე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "delivery",
+    "georgian": "მიწოდება",
+    "pronunciation": "/dɪˈlɪvəri/",
+    "example_en": "Delivery takes 3-5 business days.",
+    "example_ka": "მიწოდება 3-5 სამუშაო დღე სჭირდება.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "discount",
+    "georgian": "ფასდაკლება",
+    "pronunciation": "/ˈdɪskaʊnt/",
+    "example_en": "There's a 20% discount today.",
+    "example_ka": "დღეს 20% ფასდაკლებაა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "refund",
+    "georgian": "თანხის დაბრუნება",
+    "pronunciation": "/ˈriːfʌnd/",
+    "example_en": "I want a full refund.",
+    "example_ka": "სრული თანხის დაბრუნება მინდა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "return",
+    "georgian": "დაბრუნება",
+    "pronunciation": "/rɪˈtɜːrn/",
+    "example_en": "You can return it within 30 days.",
+    "example_ka": "30 დღეში შეგიძლია დააბრუნო.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "review",
+    "georgian": "შეფასება",
+    "pronunciation": "/rɪˈvjuː/",
+    "example_en": "Read the reviews before buying.",
+    "example_ka": "ყიდვამდე შეფასებები წაიკითხე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "wishlist",
+    "georgian": "სასურველების სია",
+    "pronunciation": "/ˈwɪʃlɪst/",
+    "example_en": "Save it to your wishlist.",
+    "example_ka": "სასურველების სიაში შეინახე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "order",
+    "georgian": "შეკვეთა",
+    "pronunciation": "/ˈɔːrdər/",
+    "example_en": "Your order has been shipped.",
+    "example_ka": "შენი შეკვეთა გაიგზავნა.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "subscribe",
+    "georgian": "გამოწერა",
+    "pronunciation": "/səbˈskraɪb/",
+    "example_en": "Subscribe for updates.",
+    "example_ka": "გამოიწერე სიახლეები.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "unsubscribe",
+    "georgian": "გამოწერის გაუქმება",
+    "pronunciation": "/ˌʌnsəbˈskraɪb/",
+    "example_en": "Click here to unsubscribe.",
+    "example_ka": "გამოწერის გასაუქმებლად აქ დააჭირე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "invoice",
+    "georgian": "ინვოისი",
+    "pronunciation": "/ˈɪnvɔɪs/",
+    "example_en": "The invoice is in your email.",
+    "example_ka": "ინვოისი ელფოსტაშია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "warranty",
+    "georgian": "გარანტია",
+    "pronunciation": "/ˈwɒrənti/",
+    "example_en": "This product has a 2-year warranty.",
+    "example_ka": "ამ პროდუქტს 2 წლიანი გარანტია აქვს.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "compare",
+    "georgian": "შედარება",
+    "pronunciation": "/kəmˈpɛr/",
+    "example_en": "Compare prices before you buy.",
+    "example_ka": "ყიდვამდე ფასები შეადარე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "notification",
+    "georgian": "შეტყობინება",
+    "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/",
+    "example_en": "You'll get a notification when it ships.",
+    "example_ka": "გაგზავნისას შეტყობინება მიიღებ.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "account",
+    "georgian": "ანგარიში",
+    "pronunciation": "/əˈkaʊnt/",
+    "example_en": "Create an account to save your info.",
+    "example_ka": "ანგარიში შექმენი ინფორმაციის შესანახად.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "password",
+    "georgian": "პაროლი",
+    "pronunciation": "/ˈpæswɜːrd/",
+    "example_en": "Choose a strong password.",
+    "example_ka": "ძლიერი პაროლი აირჩიე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "authentic",
+    "georgian": "ორიგინალი",
+    "pronunciation": "/ɔːˈθɛntɪk/",
+    "example_en": "Make sure the product is authentic.",
+    "example_ka": "დარწმუნდი რომ პროდუქტი ორიგინალია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "counterfeit",
+    "georgian": "ყალბი",
+    "pronunciation": "/ˈkaʊntərfɪt/",
+    "example_en": "Be careful of counterfeit products.",
+    "example_ka": "ყალბი პროდუქტებისგან ფრთხილად.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "quantity",
+    "georgian": "რაოდენობა",
+    "pronunciation": "/ˈkwɒntəti/",
+    "example_en": "Select the quantity you want.",
+    "example_ka": "აირჩიე სასურველი რაოდენობა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "cashback",
+    "georgian": "ქეშბეკი",
+    "pronunciation": "/ˈkæʃbæk/",
+    "example_en": "Get 5% cashback on this purchase.",
+    "example_ka": "ამ შეძენაზე 5% ქეშბეკი მიიღე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "seller",
+    "georgian": "გამყიდველი",
+    "pronunciation": "/ˈsɛlər/",
+    "example_en": "Check the seller's rating.",
+    "example_ka": "გამყიდველის რეიტინგი შეამოწმე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "buyer",
+    "georgian": "მყიდველი",
+    "pronunciation": "/ˈbaɪər/",
+    "example_en": "The buyer left a positive review.",
+    "example_ka": "მყიდველმა დადებითი შეფასება დატოვა.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "cart",
+    "georgian": "კალათა",
+    "pronunciation": "/kɑːrt/",
+    "example_en": "Add the item to your cart.",
+    "example_ka": "ნივთი კალათაში ჩაამატე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "basket",
+    "georgian": "კალათა",
+    "pronunciation": "/ˈbæskɪt/",
+    "example_en": "Your basket is empty.",
+    "example_ka": "შენი კალათა ცარიელია.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "item",
+    "georgian": "ნივთი",
+    "pronunciation": "/ˈaɪtəm/",
+    "example_en": "This item is out of stock.",
+    "example_ka": "ეს ნივთი არ არის მარაგში.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "product",
+    "georgian": "პროდუქტი",
+    "pronunciation": "/ˈprɑːdʌkt/",
+    "example_en": "This product has good reviews.",
+    "example_ka": "ამ პროდუქტს კარგი შეფასებები აქვს.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "price",
+    "georgian": "ფასი",
+    "pronunciation": "/praɪs/",
+    "example_en": "What's the price of this item?",
+    "example_ka": "ამ ნივთის ფასი რამდენია?",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "cost",
+    "georgian": "ღირებულება",
+    "pronunciation": "/kɔːst/",
+    "example_en": "The total cost is $50.",
+    "example_ka": "მთლიანი ღირებულება 50 დოლარია.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "total",
+    "georgian": "სულ",
+    "pronunciation": "/ˈtoʊtəl/",
+    "example_en": "The total amount is $75.",
+    "example_ka": "სრული თანხა 75 დოლარია.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "subtotal",
+    "georgian": "ქვესურული",
+    "pronunciation": "/ˈsʌbtoʊtəl/",
+    "example_en": "The subtotal before tax is $40.",
+    "example_ka": "გადასახადის გარეშე ქვესურული 40 დოლარია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "tax",
+    "georgian": "გადასახადი",
+    "pronunciation": "/tæks/",
+    "example_en": "Tax is included in the price.",
+    "example_ka": "გადასახადი ფასშია ჩართული.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "fee",
+    "georgian": "სადენი",
+    "pronunciation": "/fiː/",
+    "example_en": "There's a small processing fee.",
+    "example_ka": "პატარა დამუშავების საფასურია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "coupon",
+    "georgian": "კუპონი",
+    "pronunciation": "/ˈkuːpɑːn/",
+    "example_en": "Do you have a coupon code?",
+    "example_ka": "კუპონის კოდი გაქვს?",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "code",
+    "georgian": "კოდი",
+    "pronunciation": "/koʊd/",
+    "example_en": "Enter the promo code here.",
+    "example_ka": "პრომო კოდი აქ შეიყვანე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "voucher",
+    "georgian": "ვაუჩერი",
+    "pronunciation": "/ˈvaʊtʃər/",
+    "example_en": "I have a gift voucher to use.",
+    "example_ka": "გამოსაყენებელი საჩუქრის ვაუჩერი მაქვს.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "sale",
+    "georgian": "აქცია",
+    "pronunciation": "/seɪl/",
+    "example_en": "There's a big sale this weekend.",
+    "example_ka": "ამ შაბათ-კვირას დიდი აქციაა.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "clearance",
+    "georgian": "გასაყიდი",
+    "pronunciation": "/ˈklɪrəns/",
+    "example_en": "Check the clearance section for deals.",
+    "example_ka": "გარიგებისთვის გასაყიდ განყოფილებას გადახედე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "deal",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/diːl/",
+    "example_en": "That's a great deal!",
+    "example_ka": "ეს შესანიშნავი შეთავაზებაა!",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "offer",
+    "georgian": "შეთავაზება",
+    "pronunciation": "/ˈɔːfər/",
+    "example_en": "This is a limited-time offer.",
+    "example_ka": "ეს შეზღუდული დროის შეთავაზებაა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "promotion",
+    "georgian": "პრომოცია",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "The promotion ends tomorrow.",
+    "example_ka": "პრომოცია ხვალ მთავრდება.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "special",
+    "georgian": "სპეციალური",
+    "pronunciation": "/ˈspɛʃəl/",
+    "example_en": "Today's special offer is 30% off.",
+    "example_ka": "დღევანდელი სპეციალური შეთავაზება 30% ფასდაკლებაა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "bundle",
+    "georgian": "ბანდლი",
+    "pronunciation": "/ˈbʌndəl/",
+    "example_en": "Buy the bundle to save money.",
+    "example_ka": "ფულის დაზოგვისთვის ბანდლი იყიდე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "package",
+    "georgian": "პაკეტი",
+    "pronunciation": "/ˈpækɪdʒ/",
+    "example_en": "The package arrived on time.",
+    "example_ka": "პაკეტი დროზე მივიდა.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "box",
+    "georgian": "ყუთი",
+    "pronunciation": "/bɑːks/",
+    "example_en": "The box was damaged during shipping.",
+    "example_ka": "ყუთი მიტანისას დაზიანდა.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "envelope",
+    "georgian": "კონვერტი",
+    "pronunciation": "/ˈɛnvəloʊp/",
+    "example_en": "The document came in an envelope.",
+    "example_ka": "დოკუმენტი კონვერტით მოვიდა.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "tracking",
+    "georgian": "თვალთვალი",
+    "pronunciation": "/ˈtrækɪŋ/",
+    "example_en": "Here's your tracking number.",
+    "example_ka": "აი შენი თვალყურისდევნების ნომერი.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "number",
+    "georgian": "ნომერი",
+    "pronunciation": "/ˈnʌmbər/",
+    "example_en": "What's your order number?",
+    "example_ka": "შენი შეკვეთის ნომერი რაა?",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "status",
+    "georgian": "სტატუსი",
+    "pronunciation": "/ˈsteɪtəs/",
+    "example_en": "Check your order status online.",
+    "example_ka": "შენი შეკვეთის სტატუსი ონლაინ შეამოწმე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "shipped",
+    "georgian": "გაგზავნილი",
+    "pronunciation": "/ʃɪpt/",
+    "example_en": "Your order has been shipped.",
+    "example_ka": "შენი შეკვეთა გაგზავნილია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "delivered",
+    "georgian": "მიტანილი",
+    "pronunciation": "/dɪˈlɪvərd/",
+    "example_en": "The package was delivered today.",
+    "example_ka": "პაკეტი დღეს მიტანილი იქნა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "processing",
+    "georgian": "დამუშავება",
+    "pronunciation": "/ˈprɑːsɛsɪŋ/",
+    "example_en": "Your order is currently processing.",
+    "example_ka": "შენი შეკვეთა ამჟამად მუშავდება.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "pending",
+    "georgian": "მოლოდინში",
+    "pronunciation": "/ˈpɛndɪŋ/",
+    "example_en": "Payment is still pending.",
+    "example_ka": "გადახდა ჯერ კიდევ მოლოდინშია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "confirmed",
+    "georgian": "დადასტურებული",
+    "pronunciation": "/kənˈfɜːrmd/",
+    "example_en": "Your order is confirmed.",
+    "example_ka": "შენი შეკვეთა დადასტურებულია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "cancelled",
+    "georgian": "გაუქმებული",
+    "pronunciation": "/ˈkænsəld/",
+    "example_en": "The order was cancelled.",
+    "example_ka": "შეკვეთა გაუქმდა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "payment",
+    "georgian": "გადახდა",
+    "pronunciation": "/ˈpeɪmənt/",
+    "example_en": "Choose your payment method.",
+    "example_ka": "აირჩიე გადახდის მეთოდი.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "method",
+    "georgian": "მეთოდი",
+    "pronunciation": "/ˈmɛθəd/",
+    "example_en": "What payment method do you prefer?",
+    "example_ka": "რომელი გადახდის მეთოდი გირჩევნია?",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "credit",
+    "georgian": "საკრედიტო",
+    "pronunciation": "/ˈkrɛdɪt/",
+    "example_en": "I'll pay with my credit card.",
+    "example_ka": "საკრედიტო ბარათით გადავიხდი.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "debit",
+    "georgian": "სადებეტო",
+    "pronunciation": "/ˈdɛbɪt/",
+    "example_en": "Use your debit card for payment.",
+    "example_ka": "გადახდისთვის სადებეტო ბარათი გამოიყენე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "card",
+    "georgian": "ბარათი",
+    "pronunciation": "/kɑːrd/",
+    "example_en": "Please enter your card details.",
+    "example_ka": "გთხოვთ, ბარათის დეტალები შეიყვანოთ.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "paypal",
+    "georgian": "პეიპალი",
+    "pronunciation": "/ˈpeɪpæl/",
+    "example_en": "You can also pay with PayPal.",
+    "example_ka": "ასევე შეგიძლია პეიპალით გადაიხადო.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "wallet",
+    "georgian": "საფულე",
+    "pronunciation": "/ˈwɑːlət/",
+    "example_en": "Add money to your digital wallet.",
+    "example_ka": "ციფრულ საფულეში ფული შემატე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "transfer",
+    "georgian": "გადარიცხვა",
+    "pronunciation": "/trænsˈfɜːr/",
+    "example_en": "Bank transfer takes 2-3 days.",
+    "example_ka": "ბანკის გადარიცხვას 2-3 დღე სჭირდება.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "cash",
+    "georgian": "ნაღდი",
+    "pronunciation": "/kæʃ/",
+    "example_en": "Cash on delivery is available.",
+    "example_ka": "ნაღდი გადახდა მიტანისას ხელმისაწვდომია.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "installment",
+    "georgian": "განაწილება",
+    "pronunciation": "/ɪnˈstɔːlmənt/",
+    "example_en": "Pay in monthly installments.",
+    "example_ka": "ყოველთვიური განაწილებით გადაიხადე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "receipt",
+    "georgian": "ქვითარი",
+    "pronunciation": "/rɪˈsiːt/",
+    "example_en": "Keep your receipt for returns.",
+    "example_ka": "დაბრუნებისთვის ქვითარი შეინახე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "confirmation",
+    "georgian": "დადასტურება",
+    "pronunciation": "/ˌkɑːnfərˈmeɪʃən/",
+    "example_en": "You'll receive a confirmation email.",
+    "example_ka": "დადასტურების ელფოსტას მიიღებ.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "email",
+    "georgian": "ელფოსტა",
+    "pronunciation": "/ˈiːmeɪl/",
+    "example_en": "Check your email for updates.",
+    "example_ka": "განახლებისთვის ელფოსტა შეამოწმე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "address",
+    "georgian": "მისამართი",
+    "pronunciation": "/ˈædrəs/",
+    "example_en": "Enter your shipping address.",
+    "example_ka": "მიტანის მისამართი შეიყვანე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "billing",
+    "georgian": "ბილინგი",
+    "pronunciation": "/ˈbɪlɪŋ/",
+    "example_en": "Is your billing address different?",
+    "example_ka": "შენი ბილინგის მისამართი განსხვავებულია?",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "contact",
+    "georgian": "კონტაქტი",
+    "pronunciation": "/ˈkɑːntækt/",
+    "example_en": "Provide your contact information.",
+    "example_ka": "შენი საკონტაქტო ინფორმაცია მიაწოდე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "phone",
+    "georgian": "ტელეფონი",
+    "pronunciation": "/foʊn/",
+    "example_en": "Enter your phone number.",
+    "example_ka": "ტელეფონის ნომერი შეიყვანე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "size",
+    "georgian": "ზომა",
+    "pronunciation": "/saɪz/",
+    "example_en": "What size do you need?",
+    "example_ka": "რა ზომა გჭირდება?",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "color",
+    "georgian": "ფერი",
+    "pronunciation": "/ˈkʌlər/",
+    "example_en": "This comes in three colors.",
+    "example_ka": "ეს სამ ფერშია ხელმისაწვდომი.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "style",
+    "georgian": "სტილი",
+    "pronunciation": "/staɪl/",
+    "example_en": "Choose your preferred style.",
+    "example_ka": "სასურველი სტილი აირჩიე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "model",
+    "georgian": "მოდელი",
+    "pronunciation": "/ˈmɑːdəl/",
+    "example_en": "Which model do you want?",
+    "example_ka": "რომელი მოდელი გინდა?",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "brand",
+    "georgian": "ბრენდი",
+    "pronunciation": "/brænd/",
+    "example_en": "This brand is very popular.",
+    "example_ka": "ეს ბრენდი ძალიან პოპულარულია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "manufacturer",
+    "georgian": "მწარმოებელი",
+    "pronunciation": "/ˌmænjəˈfæktʃərər/",
+    "example_en": "Contact the manufacturer for support.",
+    "example_ka": "მხარდაჭერისთვის მწარმოებელს დაუკავშირდი.",
+    "category": "online-shopping",
+    "level": "advanced"
+  },
+  {
+    "english": "category",
+    "georgian": "კატეგორია",
+    "pronunciation": "/ˈkætəɡɔːri/",
+    "example_en": "Browse by category.",
+    "example_ka": "კატეგორიის მიხედვით გადახედე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "filter",
+    "georgian": "ფილტრი",
+    "pronunciation": "/ˈfɪltər/",
+    "example_en": "Use filters to narrow your search.",
+    "example_ka": "ძებნის შესაზღუდავად ფილტრები გამოიყენე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "search",
+    "georgian": "ძებნა",
+    "pronunciation": "/sɜːrtʃ/",
+    "example_en": "Search for what you need.",
+    "example_ka": "საჭიროს მოძებნე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "results",
+    "georgian": "შედეგები",
+    "pronunciation": "/rɪˈzʌlts/",
+    "example_en": "Your search returned 50 results.",
+    "example_ka": "შენმა ძებნამ 50 შედეგი დააბრუნა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "browse",
+    "georgian": "დათვალიერება",
+    "pronunciation": "/braʊz/",
+    "example_en": "Browse our latest collection.",
+    "example_ka": "ჩვენი უახლესი კოლექცია დაათვალიერე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "catalog",
+    "georgian": "კატალოგი",
+    "pronunciation": "/ˈkætəlɔːɡ/",
+    "example_en": "Download our product catalog.",
+    "example_ka": "ჩვენი პროდუქტის კატალოგი გადმოწერე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "homepage",
+    "georgian": "მთავარი გვერდი",
+    "pronunciation": "/ˈhoʊmpeɪdʒ/",
+    "example_en": "Return to the homepage.",
+    "example_ka": "მთავარ გვერდზე დაბრუნდი.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "website",
+    "georgian": "ვებსაიტი",
+    "pronunciation": "/ˈwɛbsaɪt/",
+    "example_en": "Visit our website for more info.",
+    "example_ka": "მეტი ინფორმაციისთვის ჩვენს ვებსაიტს ეწვიე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "platform",
+    "georgian": "პლატფორმა",
+    "pronunciation": "/ˈplætfɔːrm/",
+    "example_en": "This platform is secure.",
+    "example_ka": "ეს პლატფორმა უსაფრთხოა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "marketplace",
+    "georgian": "ბაზრობა",
+    "pronunciation": "/ˈmɑːrkətpleɪs/",
+    "example_en": "It's a popular online marketplace.",
+    "example_ka": "ეს პოპულარული ონლაინ ბაზრობაა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "store",
+    "georgian": "მაღაზია",
+    "pronunciation": "/stɔːr/",
+    "example_en": "Welcome to our online store.",
+    "example_ka": "ჩვენს ონლაინ მაღაზიაში კეთილი იყოს თქვენი მობრძანება.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "shop",
+    "georgian": "მაღაზია",
+    "pronunciation": "/ʃɑːp/",
+    "example_en": "Shop now for great deals.",
+    "example_ka": "ახლავე იყიდე შესანიშნავი შეთავაზებები.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "purchase",
+    "georgian": "შეძენა",
+    "pronunciation": "/ˈpɜːrtʃəs/",
+    "example_en": "Complete your purchase now.",
+    "example_ka": "ახლავე დაასრულე შეძენა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "buy",
+    "georgian": "ყიდვა",
+    "pronunciation": "/baɪ/",
+    "example_en": "Buy now with one click.",
+    "example_ka": "ერთი კლიკით ახლავე იყიდე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "click",
+    "georgian": "კლიკი",
+    "pronunciation": "/klɪk/",
+    "example_en": "Click here to continue.",
+    "example_ka": "გასაგრძელებლად აქ დაკლიკე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "button",
+    "georgian": "ღილაკი",
+    "pronunciation": "/ˈbʌtən/",
+    "example_en": "Press the buy button.",
+    "example_ka": "ყიდვის ღილაკს დააწექი.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "link",
+    "georgian": "ბმული",
+    "pronunciation": "/lɪŋk/",
+    "example_en": "Click on this link.",
+    "example_ka": "ამ ბმულზე დაკლიკე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "download",
+    "georgian": "გადმოწერა",
+    "pronunciation": "/ˈdaʊnloʊd/",
+    "example_en": "Download the mobile app.",
+    "example_ka": "მობილური აპლიკაცია გადმოწერე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "app",
+    "georgian": "აპლიკაცია",
+    "pronunciation": "/æp/",
+    "example_en": "Use our mobile app for easier shopping.",
+    "example_ka": "მარტივი შოპინგისთვის ჩვენი მობილური აპლიკაცია გამოიყენე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "mobile",
+    "georgian": "მობილური",
+    "pronunciation": "/ˈmoʊbaɪl/",
+    "example_en": "The mobile version is user-friendly.",
+    "example_ka": "მობილური ვერსია მომხმარებლისთვის მეგობრულია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "tablet",
+    "georgian": "ტაბლეტი",
+    "pronunciation": "/ˈtæblət/",
+    "example_en": "Shop on your tablet or phone.",
+    "example_ka": "ტაბლეტზე ან ტელეფონზე იყიდე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "desktop",
+    "georgian": "დესკტოპი",
+    "pronunciation": "/ˈdɛsktɑːp/",
+    "example_en": "The desktop version has more features.",
+    "example_ka": "დესკტოპ ვერსიას მეტი ფუნქცია აქვს.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "browser",
+    "georgian": "ბრაუზერი",
+    "pronunciation": "/ˈbraʊzər/",
+    "example_en": "Use a modern browser for best experience.",
+    "example_ka": "საუკეთესო გამოცდილებისთვის თანამეედროვე ბრაუზერი გამოიყენე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "internet",
+    "georgian": "ინტერნეტი",
+    "pronunciation": "/ˈɪntərnet/",
+    "example_en": "You need internet to shop online.",
+    "example_ka": "ონლაინ შოპინგისთვის ინტერნეტი გჭირდება.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "connection",
+    "georgian": "კავშირი",
+    "pronunciation": "/kəˈnɛkʃən/",
+    "example_en": "Check your internet connection.",
+    "example_ka": "ინტერნეტ კავშირი შეამოწმე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "security",
+    "georgian": "უსაფრთხოება",
+    "pronunciation": "/sɪˈkjʊrəti/",
+    "example_en": "We take security seriously.",
+    "example_ka": "ჩვენ უსაფრთხოებას სერიოზულად ვუყურებთ.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "secure",
+    "georgian": "უსაფრთხო",
+    "pronunciation": "/sɪˈkjʊr/",
+    "example_en": "This is a secure payment.",
+    "example_ka": "ეს უსაფრთხო გადახდაა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "encryption",
+    "georgian": "დაშიფვრა",
+    "pronunciation": "/ɪnˈkrɪpʃən/",
+    "example_en": "We use 256-bit encryption.",
+    "example_ka": "ჩვენ 256-ბიტ დაშიფვრას ვიყენებთ.",
+    "category": "online-shopping",
+    "level": "advanced"
+  },
+  {
+    "english": "privacy",
+    "georgian": "კონფიდენციალურობა",
+    "pronunciation": "/ˈpraɪvəsi/",
+    "example_en": "Read our privacy policy.",
+    "example_ka": "ჩვენი კონფიდენციალურობის პოლიტიკა წაიკითხე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "policy",
+    "georgian": "პოლიტიკა",
+    "pronunciation": "/ˈpɑːləsi/",
+    "example_en": "Check our return policy.",
+    "example_ka": "ჩვენი დაბრუნების პოლიტიკა შეამოწმე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "terms",
+    "georgian": "პირობები",
+    "pronunciation": "/tɜːrmz/",
+    "example_en": "Agree to the terms and conditions.",
+    "example_ka": "წესებსა და პირობებს დაეთანხმე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "conditions",
+    "georgian": "პირობები",
+    "pronunciation": "/kənˈdɪʃənz/",
+    "example_en": "Read the terms and conditions.",
+    "example_ka": "წესები და პირობები წაიკითხე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "agreement",
+    "georgian": "შეთანხმება",
+    "pronunciation": "/əˈɡriːmənt/",
+    "example_en": "Sign the user agreement.",
+    "example_ka": "მომხმარებლის შეთანხმებას მოაწერე ხელი.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "copyright",
+    "georgian": "საავტორო",
+    "pronunciation": "/ˈkɑːpiraɪt/",
+    "example_en": "All images are copyrighted.",
+    "example_ka": "ყველა სურათი საავტორო უფლებებითაა დაცული.",
+    "category": "online-shopping",
+    "level": "advanced"
+  },
+  {
+    "english": "trademark",
+    "georgian": "სავაჭრო ნიშანი",
+    "pronunciation": "/ˈtreɪdmɑːrk/",
+    "example_en": "This logo is a registered trademark.",
+    "example_ka": "ეს ლოგო რეგისტრირებული სავაჭრო ნიშანია.",
+    "category": "online-shopping",
+    "level": "advanced"
+  },
+  {
+    "english": "customer",
+    "georgian": "მყიდველი",
+    "pronunciation": "/ˈkʌstəmər/",
+    "example_en": "Customer service is available 24/7.",
+    "example_ka": "მყიდველთა მომსახურება 24/7 ხელმისაწვდომია.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "service",
+    "georgian": "მომსახურება",
+    "pronunciation": "/ˈsɜːrvəs/",
+    "example_en": "Our service is excellent.",
+    "example_ka": "ჩვენი მომსახურება შესანიშნავია.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "support",
+    "georgian": "მხარდაჭერა",
+    "pronunciation": "/səˈpɔːrt/",
+    "example_en": "Contact support if you need help.",
+    "example_ka": "დახმარების საჭიროების შემთხვევაში მხარდაჭერას დაუკავშირდი.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "help",
+    "georgian": "დახმარება",
+    "pronunciation": "/hɛlp/",
+    "example_en": "Do you need help with your order?",
+    "example_ka": "შეკვეთასთან დაკავშირებით დახმარება გჭირდება?",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "FAQ",
+    "georgian": "ხშირი კითხვები",
+    "pronunciation": "/ɛfˈeɪˈkju/",
+    "example_en": "Check the FAQ section first.",
+    "example_ka": "ჯერ ხშირი კითხვების განყოფილება შეამოწმე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "question",
+    "georgian": "კითხვა",
+    "pronunciation": "/ˈkwɛstʃən/",
+    "example_en": "Do you have any questions?",
+    "example_ka": "რამე კითხვა გაქვს?",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "answer",
+    "georgian": "პასუხი",
+    "pronunciation": "/ˈænsər/",
+    "example_en": "Here's the answer to your question.",
+    "example_ka": "აი შენი კითხვის პასუხი.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "feedback",
+    "georgian": "უკუკავშირი",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "We value your feedback.",
+    "example_ka": "ჩვენ შენს უკუკავშირს ვაფასებთ.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "rating",
+    "georgian": "შეფასება",
+    "pronunciation": "/ˈreɪtɪŋ/",
+    "example_en": "This seller has a 5-star rating.",
+    "example_ka": "ამ გამყიდველს 5 ვარსკვლავიანი შეფასება აქვს.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "star",
+    "georgian": "ვარსკვლავი",
+    "pronunciation": "/stɑːr/",
+    "example_en": "Give us a 5-star review!",
+    "example_ka": "5 ვარსკვლავიანი შეფასება მოგვეცი!",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "comment",
+    "georgian": "კომენტარი",
+    "pronunciation": "/ˈkɑːment/",
+    "example_en": "Leave a comment about the product.",
+    "example_ka": "პროდუქტზე კომენტარი დატოვე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "recommendation",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrekəmənˈdeɪʃən/",
+    "example_en": "Here are our recommendations.",
+    "example_ka": "აი ჩვენი რეკომენდაციები.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "suggestion",
+    "georgian": "წინადადება",
+    "pronunciation": "/səˈdʒɛstʃən/",
+    "example_en": "Do you have any suggestions?",
+    "example_ka": "რამე წინადადება გაქვს?",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "popular",
+    "georgian": "პოპულარული",
+    "pronunciation": "/ˈpɑːpjələr/",
+    "example_en": "This is our most popular item.",
+    "example_ka": "ეს ჩვენი ყველაზე პოპულარული ნივთია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "trending",
+    "georgian": "ტრენდული",
+    "pronunciation": "/ˈtrɛndɪŋ/",
+    "example_en": "Check out trending products.",
+    "example_ka": "ტრენდულ პროდუქტებს გადახედე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "bestseller",
+    "georgian": "ბესტსელერი",
+    "pronunciation": "/ˈbɛstˈsɛlər/",
+    "example_en": "This book is a bestseller.",
+    "example_ka": "ეს წიგნი ბესტსელერია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "featured",
+    "georgian": "რჩეული",
+    "pronunciation": "/ˈfiːtʃərd/",
+    "example_en": "See our featured products.",
+    "example_ka": "ჩვენი რჩეული პროდუქტები ნახე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "new",
+    "georgian": "ახალი",
+    "pronunciation": "/nuː/",
+    "example_en": "Check out our new arrivals.",
+    "example_ka": "ჩვენი ახალი მოსვლები გადახედე.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "arrival",
+    "georgian": "მოსვლა",
+    "pronunciation": "/əˈraɪvəl/",
+    "example_en": "New arrivals every week.",
+    "example_ka": "ყოველ კვირას ახალი მოსვლები.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "fresh",
+    "georgian": "ახალი",
+    "pronunciation": "/frɛʃ/",
+    "example_en": "Fresh stock just arrived.",
+    "example_ka": "ახალი მარაგი ახლახან მოვიდა.",
+    "category": "online-shopping",
+    "level": "beginner"
+  },
+  {
+    "english": "stock",
+    "georgian": "მარაგი",
+    "pronunciation": "/stɑːk/",
+    "example_en": "This item is out of stock.",
+    "example_ka": "ეს ნივთი მარაგში არ არის.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "available",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈveɪləbəl/",
+    "example_en": "This product is available now.",
+    "example_ka": "ეს პროდუქტი ახლა ხელმისაწვდომია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "unavailable",
+    "georgian": "მიუწვდომელი",
+    "pronunciation": "/ˌʌnəˈveɪləbəl/",
+    "example_en": "This item is currently unavailable.",
+    "example_ka": "ეს ნივთი ამჟამად მიუწვდომელია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "backorder",
+    "georgian": "შეკვეთა მარაგის გარეშე",
+    "pronunciation": "/ˈbækɔːrdər/",
+    "example_en": "This item is on backorder.",
+    "example_ka": "ეს ნივთი მარაგის გარეშე შეკვეთაშია.",
+    "category": "online-shopping",
+    "level": "advanced"
+  },
+  {
+    "english": "preorder",
+    "georgian": "წინასწარი შეკვეთა",
+    "pronunciation": "/ˈpriːɔːrdər/",
+    "example_en": "You can preorder this item.",
+    "example_ka": "ამ ნივთის წინასწარი შეკვეთა შეგიძლია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "exclusive",
+    "georgian": "ექსკლუზივი",
+    "pronunciation": "/ɪkˈskluːsɪv/",
+    "example_en": "This is an exclusive offer.",
+    "example_ka": "ეს ექსკლუზივი შეთავაზებაა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "limited",
+    "georgian": "შეზღუდული",
+    "pronunciation": "/ˈlɪmətəd/",
+    "example_en": "Limited time offer.",
+    "example_ka": "შეზღუდული დროის შეთავაზება.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "edition",
+    "georgian": "გამოცემა",
+    "pronunciation": "/ɪˈdɪʃən/",
+    "example_en": "This is a limited edition.",
+    "example_ka": "ეს შეზღუდული გამოცემაა.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "collection",
+    "georgian": "კოლექცია",
+    "pronunciation": "/kəˈlɛkʃən/",
+    "example_en": "Browse our summer collection.",
+    "example_ka": "ჩვენი ზაფხულის კოლექცია დაათვალიერე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "season",
+    "georgian": "სეზონი",
+    "pronunciation": "/ˈsiːzən/",
+    "example_en": "New season, new styles.",
+    "example_ka": "ახალი სეზონი, ახალი სტილები.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "trend",
+    "georgian": "ტრენდი",
+    "pronunciation": "/trɛnd/",
+    "example_en": "This is the latest trend.",
+    "example_ka": "ეს უახლესი ტრენდია.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "fashion",
+    "georgian": "მოდა",
+    "pronunciation": "/ˈfæʃən/",
+    "example_en": "Stay on top of fashion trends.",
+    "example_ka": "მოდის ტრენდების თავზე იყავი.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  },
+  {
+    "english": "lifestyle",
+    "georgian": "ცხოვრების წესი",
+    "pronunciation": "/ˈlaɪfstaɪl/",
+    "example_en": "Choose products that fit your lifestyle.",
+    "example_ka": "შენს ცხოვრების წეს შეყავს პროდუქტები აირჩიე.",
+    "category": "online-shopping",
+    "level": "intermediate"
+  }
 ]

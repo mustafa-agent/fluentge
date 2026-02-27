@@ -1,41 +1,44 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+// Import all category JSONs to build a deck manifest
+const categoryFiles = import.meta.glob('/../../flashcard-app/content/*.json', { eager: true });
 ---
 
-<Layout title="ნასწავლი სიტყვები — FluentGe">
+<Layout title="დასრულებული კატეგორიები — FluentGe">
   <section class="max-w-2xl mx-auto px-4 py-12">
     <a href="/dashboard/" class="text-[#6B6B65] hover:text-[#C8C8C0] text-sm mb-4 inline-block">← დეშბორდი</a>
-    <h1 class="font-['Playfair_Display',serif] text-2xl font-bold mb-2">📝 ნასწავლი სიტყვები</h1>
-    <p class="text-[#A0A09A] text-sm mb-6">სიტყვები რომლებიც იცი ფლეშქარდებიდან</p>
+    <h1 class="font-['Playfair_Display',serif] text-2xl font-bold mb-2">🏆 დასრულებული კატეგორიები</h1>
+    <p class="text-[#A0A09A] text-sm mb-6">კატეგორიები სადაც ყველა სიტყვა ისწავლე</p>
     
     <!-- Stats -->
     <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-8">
       <div class="flex items-center justify-between">
         <div>
-          <p class="text-4xl font-bold text-[#5B7F5E]" id="word-count">0</p>
-          <p class="text-sm text-[#6B6B65]">ნასწავლი სიტყვა</p>
+          <p class="text-4xl font-bold text-[#5B7F5E]" id="completed-count">0</p>
+          <p class="text-sm text-[#6B6B65]">დასრულებული კატეგორია</p>
         </div>
         <div class="flex items-center gap-3">
-          <a href="/dashboard/cards/?clear=1" id="clear-btn" class="bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-400 text-xs font-semibold px-3 py-2 rounded-xl transition-colors inline-block cursor-pointer no-underline">🗑️ გასუფთავება</a>
-          <div class="text-5xl">📚</div>
+          <a href="/dashboard/cards/?clear=1" class="bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-400 text-xs font-semibold px-3 py-2 rounded-xl transition-colors inline-block cursor-pointer no-underline">🗑️ გასუფთავება</a>
+          <div class="text-5xl">🏆</div>
         </div>
       </div>
     </div>
 
-    <!-- Search -->
-    <div class="mb-6">
-      <input type="text" id="search-input" placeholder="🔍 მოძებნე სიტყვა..." 
-        class="w-full bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 text-sm text-[#F5F5F0] placeholder:text-[#6B6B65] focus:outline-none focus:border-[#5B7F5E]" />
-    </div>
+    <!-- Category list -->
+    <div id="category-list" class="space-y-3"></div>
 
-    <!-- Word list -->
-    <div id="word-list" class="space-y-2"></div>
+    <!-- In progress section -->
+    <div id="progress-section" class="mt-8 hidden">
+      <h2 class="text-lg font-semibold mb-3 text-[#A0A09A]">📊 მიმდინარე</h2>
+      <div id="progress-list" class="space-y-3"></div>
+    </div>
 
     <!-- Empty state -->
     <div id="empty-state" class="hidden text-center py-16">
       <p class="text-6xl mb-4">📝</p>
-      <p class="text-[#6B6B65] mb-2">ჯერ არ გაქვს ნასწავლი სიტყვები</p>
-      <p class="text-[#6B6B65] text-sm mb-4">ფლეშქარდებში დააჭირე "ვიცი" ღილაკს სიტყვის დასამატებლად</p>
+      <p class="text-[#6B6B65] mb-2">ჯერ არ გაქვს დასრულებული კატეგორია</p>
+      <p class="text-[#6B6B65] text-sm mb-4">ისწავლე ყველა სიტყვა კატეგორიაში სამივე მიმართულებით</p>
       <a href="/flashcards/" class="inline-block bg-[#5B7F5E] text-white px-6 py-2 rounded-xl text-sm font-semibold hover:bg-[#4a6b4d]">ფლეშქარდების გვერდზე →</a>
     </div>
   </section>
@@ -44,69 +47,216 @@ import Layout from '../../layouts/Layout.astro';
     (function() {
       // Clear data if ?clear=1
       if (window.location.search.indexOf('clear=1') > -1) {
+        // Clear all card progress
         localStorage.removeItem('knownCards');
+        // Clear all fluentge-card-progress
+        var keys = Object.keys(localStorage);
+        keys.forEach(function(k) {
+          if (k.indexOf('fluentge-card-progress') > -1 || k.indexOf('fluentge-srs-') > -1 || k.indexOf('fluentge-session-') > -1) {
+            localStorage.removeItem(k);
+          }
+        });
         window.location.href = '/dashboard/cards/';
         return;
       }
-      // Deduplicate old data
-      var raw = JSON.parse(localStorage.getItem('knownCards') || '[]');
-      var seen = {};
-      var known = [];
-      raw.forEach(function(k) {
-        if (!seen[k.word]) {
-          seen[k.word] = true;
-          known.push(k);
-        }
-      });
-      if (known.length !== raw.length) {
-        localStorage.setItem('knownCards', JSON.stringify(known));
-      }
-      const countEl = document.getElementById('word-count');
-      const listEl = document.getElementById('word-list');
-      const emptyEl = document.getElementById('empty-state');
-      const searchEl = document.getElementById('search-input');
-      
-      countEl.textContent = known.length;
-      
-      function renderWords(filter) {
-        listEl.innerHTML = '';
-        const filtered = filter 
-          ? known.filter(k => k.word.toLowerCase().includes(filter) || k.georgian.toLowerCase().includes(filter))
-          : known;
+
+      // Load card progress from localStorage
+      var progressData = {};
+      try {
+        progressData = JSON.parse(localStorage.getItem('fluentge-card-progress') || '{}');
+      } catch(e) {}
+
+      // Deck definitions — we need category, name, icon, card count
+      // This is injected from build
+      var decks = [
+        { id: 'greetings-basics', name: 'მისალმება', icon: '👋' },
+        { id: 'family-people', name: 'ოჯახი', icon: '👨‍👩‍👧' },
+        { id: 'food-drink', name: 'საჭმელი', icon: '🍽️' },
+        { id: 'colors-shapes', name: 'ფერები', icon: '🎨' },
+        { id: 'numbers-time', name: 'რიცხვები', icon: '🔢' },
+        { id: 'animals', name: 'ცხოველები', icon: '🐾' },
+        { id: 'body-parts', name: 'სხეულის ნაწილები', icon: '🦴' },
+        { id: 'clothes-fashion', name: 'ტანსაცმელი', icon: '👗' },
+        { id: 'home-housing', name: 'სახლი', icon: '🏠' },
+        { id: 'weather-seasons', name: 'ამინდი', icon: '🌤️' },
+        { id: 'travel-transport', name: 'მოგზაურობა', icon: '✈️' },
+        { id: 'health-body', name: 'ჯანმრთელობა', icon: '🏥' },
+        { id: 'work-business', name: 'სამსახური', icon: '💼' },
+        { id: 'education', name: 'განათლება', icon: '📚' },
+        { id: 'entertainment', name: 'გართობა', icon: '🎬' },
+        { id: 'nature-weather', name: 'ბუნება', icon: '🌿' },
+        { id: 'sports-fitness', name: 'სპორტი', icon: '⚽' },
+        { id: 'technology', name: 'ტექნოლოგია', icon: '💻' },
+        { id: 'emotions-personality', name: 'ემოციები', icon: '😊' },
+        { id: 'shopping-money', name: 'შოპინგი', icon: '🛍️' },
+        { id: 'jobs-professions', name: 'პროფესიები', icon: '👨‍⚕️' },
+        { id: 'music-arts', name: 'მუსიკა', icon: '🎵' },
+        { id: 'social-media', name: 'სოციალური მედია', icon: '📱' },
+        { id: 'movies-tv', name: 'ფილმები', icon: '🎬' },
+        { id: 'sports-games', name: 'თამაშები', icon: '🎮' },
+        { id: 'restaurant-cafe', name: 'რესტორანი', icon: '☕' },
+        { id: 'hotel-accommodation', name: 'სასტუმრო', icon: '🏨' },
+        { id: 'doctor-medical', name: 'ექიმი', icon: '👨‍⚕️' },
+        { id: 'airport-flying', name: 'აეროპორტი', icon: '✈️' },
+        { id: 'banking-finance', name: 'ბანკი', icon: '🏦' },
+        { id: 'relationships-dating', name: 'ურთიერთობები', icon: '❤️' },
+        { id: 'academic-english', name: 'აკადემიური', icon: '🏆' },
+        { id: 'law-crime', name: 'სამართალი', icon: '⚖️' },
+        { id: 'politics-society', name: 'პოლიტიკა', icon: '🏛️' },
+        { id: 'science-math', name: 'მეცნიერება', icon: '🔬' },
+        { id: 'geography-countries', name: 'გეოგრაფია', icon: '🌍' },
+        { id: 'religion-culture', name: 'კულტურა', icon: '⛪' },
+        { id: 'history-war', name: 'ისტორია', icon: '⚔️' },
+        { id: 'immigration-visa', name: 'იმიგრაცია', icon: '🛂' },
+        { id: 'verbs-common', name: 'ზმნები', icon: '🏃' },
+        { id: 'adjectives-common', name: 'ზედსართავები', icon: '✨' },
+        { id: 'slang-informal', name: 'სლენგი', icon: '🗣️' },
+        { id: 'modern-slang-2026', name: 'სლენგი 2026', icon: '🔥' },
+        { id: 'mma-fighting', name: 'MMA', icon: '🥊' },
+        { id: 'gym-fitness', name: 'სპორტ დარბაზი', icon: '💪' },
+        { id: 'gaming-esports', name: 'გეიმინგი', icon: '🎮' },
+        { id: 'crypto-investing', name: 'კრიპტო', icon: '₿' },
+        { id: 'startup-business', name: 'სტარტაპი', icon: '🚀' },
+        { id: 'programming-coding', name: 'პროგრამირება', icon: '👨‍💻' },
+        { id: 'dating-romance', name: 'შეხვედრები', icon: '💕' },
+        { id: 'car-driving', name: 'მანქანა', icon: '🚗' },
+        { id: 'public-transport', name: 'ტრანსპორტი', icon: '🚌' },
+        { id: 'cooking-kitchen', name: 'სამზარეულო', icon: '👨‍🍳' },
+        { id: 'gardening-plants', name: 'ბაღი', icon: '🌱' },
+        { id: 'ocean-marine', name: 'ოკეანე', icon: '🌊' },
+        { id: 'emergency-safety', name: 'საგანგებო', icon: '🚨' },
+        { id: 'household-chores', name: 'საყოფაცხოვრებო', icon: '🧹' },
+        { id: 'top-2000', name: 'ტოპ 2000', icon: '⭐' },
+      ];
+
+      // For each deck, check if all 3 directions are completed
+      // A card is "learned" in a direction if repetitions >= 1
+      function checkDeckCompletion(deckId) {
+        var suffixes = ['enka', 'kaen', 'mixed'];
+        var results = {};
         
-        if (filtered.length === 0 && known.length === 0) {
-          emptyEl.classList.remove('hidden');
-          return;
-        }
-        emptyEl.classList.add('hidden');
+        // Count cards per direction
+        var allKeys = Object.keys(progressData);
+        var deckPrefix = deckId + '_';
         
-        if (filtered.length === 0) {
-          listEl.innerHTML = '<p class="text-center text-[#6B6B65] py-8">ვერ მოიძებნა</p>';
-          return;
-        }
-        
-        filtered.forEach(function(item) {
-          const div = document.createElement('div');
-          div.className = 'flex items-center justify-between bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 hover:bg-[#2A2A2C] transition-colors';
-          div.innerHTML = '<div><p class="font-medium text-[#C8C8C0]">' + item.word + '</p><p class="text-sm text-[#6B6B65]">' + item.georgian + '</p></div><span class="text-green-400 text-sm">✅</span>';
-          listEl.appendChild(div);
+        suffixes.forEach(function(suf) {
+          var learned = 0;
+          var total = 0;
+          allKeys.forEach(function(key) {
+            // Match keys like "deckId_word_suffix"
+            if (key.endsWith('_' + suf)) {
+              var base = key.slice(0, -(suf.length + 1));
+              if (base.indexOf(deckPrefix) === 0 || progressData[key].category === deckId) {
+                total++;
+                if (progressData[key] && progressData[key].repetitions >= 1) {
+                  learned++;
+                }
+              }
+            }
+          });
+          results[suf] = { learned: learned, total: total };
         });
+        
+        return results;
       }
-      
-      renderWords('');
-      
-      searchEl.addEventListener('input', function() {
-        renderWords(this.value.toLowerCase().trim());
+
+      // Also check cards by category field in progress
+      function getCardsByCategory(deckId) {
+        var count = 0;
+        var keys = Object.keys(progressData);
+        // Cards matching this deck pattern (without direction suffix)
+        var seen = {};
+        keys.forEach(function(key) {
+          // Strip direction suffix to get base card
+          var base = key.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
+          if (base.indexOf(deckId + '_') === 0 && !seen[base]) {
+            seen[base] = true;
+            count++;
+          }
+        });
+        return count;
+      }
+
+      function getDirProgress(deckId, suffix) {
+        var count = 0;
+        var keys = Object.keys(progressData);
+        keys.forEach(function(key) {
+          if (key.endsWith('_' + suffix) && key.indexOf(deckId + '_') === 0) {
+            var p = progressData[key];
+            if (p && p.repetitions >= 1) count++;
+          }
+        });
+        return count;
+      }
+
+      var completedList = document.getElementById('category-list');
+      var progressSection = document.getElementById('progress-section');
+      var progressList = document.getElementById('progress-list');
+      var emptyState = document.getElementById('empty-state');
+      var completedCount = 0;
+      var inProgressItems = [];
+
+      decks.forEach(function(deck) {
+        var totalCards = getCardsByCategory(deck.id);
+        if (totalCards === 0) return; // No progress at all
+
+        var enka = getDirProgress(deck.id, 'enka');
+        var kaen = getDirProgress(deck.id, 'kaen');
+        var mixed = getDirProgress(deck.id, 'mixed');
+        var minLearned = Math.min(enka, kaen, mixed);
+        var isComplete = totalCards > 0 && minLearned >= totalCards;
+
+        if (isComplete) {
+          completedCount++;
+          var div = document.createElement('div');
+          div.className = 'flex items-center gap-4 bg-[#1a2e1a] border border-[#5B7F5E]/30 rounded-2xl px-5 py-4';
+          div.innerHTML = '<span class="text-3xl">' + deck.icon + '</span>' +
+            '<div class="flex-1"><p class="font-semibold text-[#C8C8C0]">' + deck.name + '</p>' +
+            '<p class="text-xs text-[#5B7F5E]">' + totalCards + ' სიტყვა · სამივე მიმართულება ✅</p></div>' +
+            '<span class="text-2xl">🏆</span>';
+          completedList.appendChild(div);
+        } else if (enka > 0 || kaen > 0 || mixed > 0) {
+          // In progress
+          var avgPct = totalCards > 0 ? Math.round(((enka + kaen + mixed) / (totalCards * 3)) * 100) : 0;
+          inProgressItems.push({
+            deck: deck,
+            total: totalCards,
+            enka: enka,
+            kaen: kaen,
+            mixed: mixed,
+            avgPct: avgPct
+          });
+        }
       });
 
-      document.getElementById('clear-btn').addEventListener('click', function() {
-        if (confirm('ნამდვილად გინდა ყველა ნასწავლი სიტყვის გასუფთავება?')) {
-          localStorage.removeItem('knownCards');
-          countEl.textContent = '0';
-          listEl.innerHTML = '';
-          emptyEl.classList.remove('hidden');
-        }
-      });
+      document.getElementById('completed-count').textContent = completedCount;
+
+      if (completedCount === 0 && inProgressItems.length === 0) {
+        emptyState.classList.remove('hidden');
+      }
+
+      // Show in-progress categories
+      if (inProgressItems.length > 0) {
+        progressSection.classList.remove('hidden');
+        inProgressItems.sort(function(a, b) { return b.avgPct - a.avgPct; });
+        inProgressItems.forEach(function(item) {
+          var div = document.createElement('div');
+          div.className = 'bg-[#242426] border border-[#2E2E30] rounded-2xl px-5 py-4';
+          var enPct = item.total > 0 ? Math.round((item.enka / item.total) * 100) : 0;
+          var kaPct = item.total > 0 ? Math.round((item.kaen / item.total) * 100) : 0;
+          var mixPct = item.total > 0 ? Math.round((item.mixed / item.total) * 100) : 0;
+          div.innerHTML = '<div class="flex items-center gap-3 mb-3">' +
+            '<span class="text-2xl">' + item.deck.icon + '</span>' +
+            '<p class="font-semibold text-[#C8C8C0] flex-1">' + item.deck.name + '</p>' +
+            '<span class="text-xs text-[#6B6B65]">' + item.avgPct + '%</span></div>' +
+            '<div class="space-y-1.5">' +
+            '<div class="flex items-center gap-2"><span class="text-[10px] text-[#6B6B65] w-16">EN→KA</span><div class="flex-1 h-1.5 bg-[#1C1C1E] rounded-full overflow-hidden"><div class="h-full bg-[#5B7F5E] rounded-full" style="width:' + enPct + '%"></div></div><span class="text-[10px] text-[#6B6B65]">' + enPct + '%</span></div>' +
+            '<div class="flex items-center gap-2"><span class="text-[10px] text-[#6B6B65] w-16">KA→EN</span><div class="flex-1 h-1.5 bg-[#1C1C1E] rounded-full overflow-hidden"><div class="h-full bg-blue-500 rounded-full" style="width:' + kaPct + '%"></div></div><span class="text-[10px] text-[#6B6B65]">' + kaPct + '%</span></div>' +
+            '<div class="flex items-center gap-2"><span class="text-[10px] text-[#6B6B65] w-16">შერეული</span><div class="flex-1 h-1.5 bg-[#1C1C1E] rounded-full overflow-hidden"><div class="h-full bg-purple-500 rounded-full" style="width:' + mixPct + '%"></div></div><span class="text-[10px] text-[#6B6B65]">' + mixPct + '%</span></div>' +
+            '</div>';
+          progressList.appendChild(div);
+        });
+      }
     })();
   </script>
 </Layout>

@@ -1,42 +1,1802 @@
 [
-  {"english": "Resume", "georgian": "რეზიუმე", "pronunciation": "/ˈrɛzjuːmeɪ/", "example_en": "Please send your resume.", "example_ka": "გთხოვთ გამოაგზავნოთ რეზიუმე.", "category": "job-interview", "level": "B1"},
-  {"english": "Cover letter", "georgian": "სამოტივაციო წერილი", "pronunciation": "/ˈkʌvər ˈlɛtər/", "example_en": "Write a cover letter for the job.", "example_ka": "სამოტივაციო წერილი დაწერე სამუშაოსთვის.", "category": "job-interview", "level": "B1"},
-  {"english": "Apply", "georgian": "განაცხადის გაკეთება", "pronunciation": "/əˈplaɪ/", "example_en": "I want to apply for this position.", "example_ka": "მინდა ამ პოზიციაზე განაცხადი გავაკეთო.", "category": "job-interview", "level": "A2"},
-  {"english": "Hire", "georgian": "აყვანა", "pronunciation": "/ˈhaɪər/", "example_en": "They decided to hire me.", "example_ka": "გადაწყვიტეს რომ ამიყვანეს.", "category": "job-interview", "level": "A2"},
-  {"english": "Salary", "georgian": "ხელფასი", "pronunciation": "/ˈsæləri/", "example_en": "What is the starting salary?", "example_ka": "რა არის საწყისი ხელფასი?", "category": "job-interview", "level": "A2"},
-  {"english": "Experience", "georgian": "გამოცდილება", "pronunciation": "/ɪkˈspɪriəns/", "example_en": "Do you have any experience?", "example_ka": "გაქვს რაიმე გამოცდილება?", "category": "job-interview", "level": "A2"},
-  {"english": "Qualifications", "georgian": "კვალიფიკაცია", "pronunciation": "/ˌkwɒlɪfɪˈkeɪʃənz/", "example_en": "What are your qualifications?", "example_ka": "რა კვალიფიკაცია გაქვს?", "category": "job-interview", "level": "B1"},
-  {"english": "Strengths", "georgian": "ძლიერი მხარეები", "pronunciation": "/strɛŋθs/", "example_en": "Tell me about your strengths.", "example_ka": "მომიყევი შენს ძლიერ მხარეებზე.", "category": "job-interview", "level": "B1"},
-  {"english": "Weaknesses", "georgian": "სუსტი მხარეები", "pronunciation": "/ˈwiːknəsɪz/", "example_en": "What are your weaknesses?", "example_ka": "რა არის შენი სუსტი მხარეები?", "category": "job-interview", "level": "B1"},
-  {"english": "Teamwork", "georgian": "გუნდური მუშაობა", "pronunciation": "/ˈtiːmwɜːrk/", "example_en": "I am good at teamwork.", "example_ka": "გუნდური მუშაობა კარგად გამომდის.", "category": "job-interview", "level": "A2"},
-  {"english": "Full-time", "georgian": "სრული განაკვეთი", "pronunciation": "/fʊl taɪm/", "example_en": "Is this a full-time position?", "example_ka": "ეს სრული განაკვეთის პოზიციაა?", "category": "job-interview", "level": "A2"},
-  {"english": "Part-time", "georgian": "ნახევარი განაკვეთი", "pronunciation": "/pɑːrt taɪm/", "example_en": "I'm looking for part-time work.", "example_ka": "ნახევარი განაკვეთის სამუშაოს ვეძებ.", "category": "job-interview", "level": "A2"},
-  {"english": "Internship", "georgian": "სტაჟირება", "pronunciation": "/ˈɪntɜːrnʃɪp/", "example_en": "I completed an internship last summer.", "example_ka": "გასულ ზაფხულს სტაჟირება გავიარე.", "category": "job-interview", "level": "B1"},
-  {"english": "Deadline", "georgian": "ვადა", "pronunciation": "/ˈdɛdlaɪn/", "example_en": "I always meet deadlines.", "example_ka": "ყოველთვის ვიცავ ვადებს.", "category": "job-interview", "level": "A2"},
-  {"english": "Promotion", "georgian": "დაწინაურება", "pronunciation": "/prəˈmoʊʃən/", "example_en": "She got a promotion.", "example_ka": "დაწინაურება მიიღო.", "category": "job-interview", "level": "B1"},
-  {"english": "Reference", "georgian": "რეკომენდაცია", "pronunciation": "/ˈrɛfərəns/", "example_en": "Can you provide references?", "example_ka": "შეგიძლია რეკომენდაციები მოგაწოდო?", "category": "job-interview", "level": "B1"},
-  {"english": "Contract", "georgian": "კონტრაქტი", "pronunciation": "/ˈkɒntrækt/", "example_en": "Please sign the contract.", "example_ka": "გთხოვთ ხელი მოაწეროთ კონტრაქტს.", "category": "job-interview", "level": "A2"},
-  {"english": "Benefits", "georgian": "სარგებელი", "pronunciation": "/ˈbɛnɪfɪts/", "example_en": "The job has great benefits.", "example_ka": "სამუშაოს კარგი სარგებელი აქვს.", "category": "job-interview", "level": "B1"},
-  {"english": "Skills", "georgian": "უნარები", "pronunciation": "/skɪlz/", "example_en": "What skills do you have?", "example_ka": "რა უნარები გაქვს?", "category": "job-interview", "level": "A2"},
-  {"english": "Motivated", "georgian": "მოტივირებული", "pronunciation": "/ˈmoʊtɪveɪtɪd/", "example_en": "I am highly motivated.", "example_ka": "ძალიან მოტივირებული ვარ.", "category": "job-interview", "level": "B1"},
-  {"english": "Available", "georgian": "ხელმისაწვდომი", "pronunciation": "/əˈveɪləbl/", "example_en": "When are you available to start?", "example_ka": "როდის შეძლებ დაწყებას?", "category": "job-interview", "level": "A2"},
-  {"english": "Position", "georgian": "პოზიცია", "pronunciation": "/pəˈzɪʃən/", "example_en": "I'm interested in this position.", "example_ka": "ეს პოზიცია მაინტერესებს.", "category": "job-interview", "level": "A2"},
-  {"english": "Colleague", "georgian": "კოლეგა", "pronunciation": "/ˈkɒliːɡ/", "example_en": "My colleagues are very friendly.", "example_ka": "ჩემი კოლეგები ძალიან მეგობრულები არიან.", "category": "job-interview", "level": "A2"},
-  {"english": "Overtime", "georgian": "ზეგანაკვეთური", "pronunciation": "/ˈoʊvərtaɪm/", "example_en": "Do I have to work overtime?", "example_ka": "ზეგანაკვეთურად მომიწევს მუშაობა?", "category": "job-interview", "level": "B1"},
-  {"english": "Training", "georgian": "ტრენინგი", "pronunciation": "/ˈtreɪnɪŋ/", "example_en": "The company provides training.", "example_ka": "კომპანია ტრენინგს უზრუნველყოფს.", "category": "job-interview", "level": "A2"},
-  {"english": "Remote work", "georgian": "დისტანციური მუშაობა", "pronunciation": "/rɪˈmoʊt wɜːrk/", "example_en": "Can I work remotely?", "example_ka": "შემიძლია დისტანციურად ვიმუშაო?", "category": "job-interview", "level": "B1"},
-  {"english": "Flexible hours", "georgian": "მოქნილი გრაფიკი", "pronunciation": "/ˈflɛksɪbl aʊərz/", "example_en": "This job offers flexible hours.", "example_ka": "ეს სამუშაო მოქნილ გრაფიკს გთავაზობთ.", "category": "job-interview", "level": "B1"},
-  {"english": "Feedback", "georgian": "უკუკავშირი", "pronunciation": "/ˈfiːdbæk/", "example_en": "I welcome constructive feedback.", "example_ka": "კონსტრუქციულ უკუკავშირს მივესალმები.", "category": "job-interview", "level": "B1"},
-  {"english": "Ambitious", "georgian": "ამბიციური", "pronunciation": "/æmˈbɪʃəs/", "example_en": "I am an ambitious person.", "example_ka": "ამბიციური ადამიანი ვარ.", "category": "job-interview", "level": "B1"},
-  {"english": "Reliable", "georgian": "სანდო", "pronunciation": "/rɪˈlaɪəbl/", "example_en": "I'm a very reliable worker.", "example_ka": "ძალიან სანდო მუშაკი ვარ.", "category": "job-interview", "level": "B1"},
-  {"english": "Resign", "georgian": "გადადგომა", "pronunciation": "/rɪˈzaɪn/", "example_en": "He decided to resign.", "example_ka": "გადაწყვიტა გადადგომა.", "category": "job-interview", "level": "B1"},
-  {"english": "Entrepreneur", "georgian": "მეწარმე", "pronunciation": "/ˌɒntrəprəˈnɜːr/", "example_en": "She is a successful entrepreneur.", "example_ka": "ის წარმატებული მეწარმეა.", "category": "job-interview", "level": "B1"},
-  {"english": "Freelance", "georgian": "ფრილანსი", "pronunciation": "/ˈfriːlæns/", "example_en": "I work as a freelance designer.", "example_ka": "ფრილანსერ დიზაინერად ვმუშაობ.", "category": "job-interview", "level": "B1"},
-  {"english": "Networking", "georgian": "ნეთვორქინგი", "pronunciation": "/ˈnɛtwɜːrkɪŋ/", "example_en": "Networking is important for your career.", "example_ka": "ნეთვორქინგი მნიშვნელოვანია კარიერისთვის.", "category": "job-interview", "level": "B1"},
-  {"english": "Achievement", "georgian": "მიღწევა", "pronunciation": "/əˈtʃiːvmənt/", "example_en": "What is your biggest achievement?", "example_ka": "რა არის შენი უდიდესი მიღწევა?", "category": "job-interview", "level": "B1"},
-  {"english": "Vacancy", "georgian": "ვაკანსია", "pronunciation": "/ˈveɪkənsi/", "example_en": "There is a vacancy in the marketing team.", "example_ka": "მარკეტინგის გუნდში ვაკანსიაა.", "category": "job-interview", "level": "B1"},
-  {"english": "Probation", "georgian": "გამოსაცდელი ვადა", "pronunciation": "/proʊˈbeɪʃən/", "example_en": "The probation period is three months.", "example_ka": "გამოსაცდელი ვადა სამი თვეა.", "category": "job-interview", "level": "B1"},
-  {"english": "Candidate", "georgian": "კანდიდატი", "pronunciation": "/ˈkændɪdeɪt/", "example_en": "You are a strong candidate.", "example_ka": "ძლიერი კანდიდატი ხარ.", "category": "job-interview", "level": "B1"},
-  {"english": "Portfolio", "georgian": "პორტფოლიო", "pronunciation": "/pɔːrtˈfoʊlioʊ/", "example_en": "Can I see your portfolio?", "example_ka": "შემიძლია ნახო შენი პორტფოლიო?", "category": "job-interview", "level": "B1"},
-  {"english": "Interview", "georgian": "გასაუბრება", "pronunciation": "/ˈɪntərvjuː/", "example_en": "My interview is on Monday.", "example_ka": "გასაუბრება ორშაბათს მაქვს.", "category": "job-interview", "level": "A2"}
+  {
+    "english": "Resume",
+    "georgian": "რეზიუმე",
+    "pronunciation": "/ˈrɛzjuːmeɪ/",
+    "example_en": "Please send your resume.",
+    "example_ka": "გთხოვთ გამოაგზავნოთ რეზიუმე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Apply",
+    "georgian": "განაცხადის გაკეთება",
+    "pronunciation": "/əˈplaɪ/",
+    "example_en": "I want to apply for this position.",
+    "example_ka": "მინდა ამ პოზიციაზე განაცხადი გავაკეთო.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Hire",
+    "georgian": "აყვანა",
+    "pronunciation": "/ˈhaɪər/",
+    "example_en": "They decided to hire me.",
+    "example_ka": "გადაწყვიტეს რომ ამიყვანეს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Salary",
+    "georgian": "ხელფასი",
+    "pronunciation": "/ˈsæləri/",
+    "example_en": "What is the starting salary?",
+    "example_ka": "რა არის საწყისი ხელფასი?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Experience",
+    "georgian": "გამოცდილება",
+    "pronunciation": "/ɪkˈspɪriəns/",
+    "example_en": "Do you have any experience?",
+    "example_ka": "გაქვს რაიმე გამოცდილება?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Qualifications",
+    "georgian": "კვალიფიკაცია",
+    "pronunciation": "/ˌkwɒlɪfɪˈkeɪʃənz/",
+    "example_en": "What are your qualifications?",
+    "example_ka": "რა კვალიფიკაცია გაქვს?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Strengths",
+    "georgian": "ძლიერი მხარეები",
+    "pronunciation": "/strɛŋθs/",
+    "example_en": "Tell me about your strengths.",
+    "example_ka": "მომიყევი შენს ძლიერ მხარეებზე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Weaknesses",
+    "georgian": "სუსტი მხარეები",
+    "pronunciation": "/ˈwiːknəsɪz/",
+    "example_en": "What are your weaknesses?",
+    "example_ka": "რა არის შენი სუსტი მხარეები?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Teamwork",
+    "georgian": "გუნდური მუშაობა",
+    "pronunciation": "/ˈtiːmwɜːrk/",
+    "example_en": "I am good at teamwork.",
+    "example_ka": "გუნდური მუშაობა კარგად გამომდის.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Full-time",
+    "georgian": "სრული განაკვეთი",
+    "pronunciation": "/fʊl taɪm/",
+    "example_en": "Is this a full-time position?",
+    "example_ka": "ეს სრული განაკვეთის პოზიციაა?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Part-time",
+    "georgian": "ნახევარი განაკვეთი",
+    "pronunciation": "/pɑːrt taɪm/",
+    "example_en": "I'm looking for part-time work.",
+    "example_ka": "ნახევარი განაკვეთის სამუშაოს ვეძებ.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Internship",
+    "georgian": "სტაჟირება",
+    "pronunciation": "/ˈɪntɜːrnʃɪp/",
+    "example_en": "I completed an internship last summer.",
+    "example_ka": "გასულ ზაფხულს სტაჟირება გავიარე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Deadline",
+    "georgian": "ვადა",
+    "pronunciation": "/ˈdɛdlaɪn/",
+    "example_en": "I always meet deadlines.",
+    "example_ka": "ყოველთვის ვიცავ ვადებს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Promotion",
+    "georgian": "დაწინაურება",
+    "pronunciation": "/prəˈmoʊʃən/",
+    "example_en": "She got a promotion.",
+    "example_ka": "დაწინაურება მიიღო.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Reference",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˈrɛfərəns/",
+    "example_en": "Can you provide references?",
+    "example_ka": "შეგიძლია რეკომენდაციები მოგაწოდო?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Contract",
+    "georgian": "კონტრაქტი",
+    "pronunciation": "/ˈkɒntrækt/",
+    "example_en": "Please sign the contract.",
+    "example_ka": "გთხოვთ ხელი მოაწეროთ კონტრაქტს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Benefits",
+    "georgian": "სარგებელი",
+    "pronunciation": "/ˈbɛnɪfɪts/",
+    "example_en": "The job has great benefits.",
+    "example_ka": "სამუშაოს კარგი სარგებელი აქვს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Skills",
+    "georgian": "უნარები",
+    "pronunciation": "/skɪlz/",
+    "example_en": "What skills do you have?",
+    "example_ka": "რა უნარები გაქვს?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Motivated",
+    "georgian": "მოტივირებული",
+    "pronunciation": "/ˈmoʊtɪveɪtɪd/",
+    "example_en": "I am highly motivated.",
+    "example_ka": "ძალიან მოტივირებული ვარ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Available",
+    "georgian": "ხელმისაწვდომი",
+    "pronunciation": "/əˈveɪləbl/",
+    "example_en": "When are you available to start?",
+    "example_ka": "როდის შეძლებ დაწყებას?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Position",
+    "georgian": "პოზიცია",
+    "pronunciation": "/pəˈzɪʃən/",
+    "example_en": "I'm interested in this position.",
+    "example_ka": "ეს პოზიცია მაინტერესებს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Colleague",
+    "georgian": "კოლეგა",
+    "pronunciation": "/ˈkɒliːɡ/",
+    "example_en": "My colleagues are very friendly.",
+    "example_ka": "ჩემი კოლეგები ძალიან მეგობრულები არიან.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Overtime",
+    "georgian": "ზეგანაკვეთური",
+    "pronunciation": "/ˈoʊvərtaɪm/",
+    "example_en": "Do I have to work overtime?",
+    "example_ka": "ზეგანაკვეთურად მომიწევს მუშაობა?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Training",
+    "georgian": "ტრენინგი",
+    "pronunciation": "/ˈtreɪnɪŋ/",
+    "example_en": "The company provides training.",
+    "example_ka": "კომპანია ტრენინგს უზრუნველყოფს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Feedback",
+    "georgian": "უკუკავშირი",
+    "pronunciation": "/ˈfiːdbæk/",
+    "example_en": "I welcome constructive feedback.",
+    "example_ka": "კონსტრუქციულ უკუკავშირს მივესალმები.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Ambitious",
+    "georgian": "ამბიციური",
+    "pronunciation": "/æmˈbɪʃəs/",
+    "example_en": "I am an ambitious person.",
+    "example_ka": "ამბიციური ადამიანი ვარ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Reliable",
+    "georgian": "სანდო",
+    "pronunciation": "/rɪˈlaɪəbl/",
+    "example_en": "I'm a very reliable worker.",
+    "example_ka": "ძალიან სანდო მუშაკი ვარ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Resign",
+    "georgian": "გადადგომა",
+    "pronunciation": "/rɪˈzaɪn/",
+    "example_en": "He decided to resign.",
+    "example_ka": "გადაწყვიტა გადადგომა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Entrepreneur",
+    "georgian": "მეწარმე",
+    "pronunciation": "/ˌɒntrəprəˈnɜːr/",
+    "example_en": "She is a successful entrepreneur.",
+    "example_ka": "ის წარმატებული მეწარმეა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Freelance",
+    "georgian": "ფრილანსი",
+    "pronunciation": "/ˈfriːlæns/",
+    "example_en": "I work as a freelance designer.",
+    "example_ka": "ფრილანსერ დიზაინერად ვმუშაობ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Networking",
+    "georgian": "ნეთვორქინგი",
+    "pronunciation": "/ˈnɛtwɜːrkɪŋ/",
+    "example_en": "Networking is important for your career.",
+    "example_ka": "ნეთვორქინგი მნიშვნელოვანია კარიერისთვის.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Achievement",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːvmənt/",
+    "example_en": "What is your biggest achievement?",
+    "example_ka": "რა არის შენი უდიდესი მიღწევა?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Vacancy",
+    "georgian": "ვაკანსია",
+    "pronunciation": "/ˈveɪkənsi/",
+    "example_en": "There is a vacancy in the marketing team.",
+    "example_ka": "მარკეტინგის გუნდში ვაკანსიაა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Probation",
+    "georgian": "გამოსაცდელი ვადა",
+    "pronunciation": "/proʊˈbeɪʃən/",
+    "example_en": "The probation period is three months.",
+    "example_ka": "გამოსაცდელი ვადა სამი თვეა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Candidate",
+    "georgian": "კანდიდატი",
+    "pronunciation": "/ˈkændɪdeɪt/",
+    "example_en": "You are a strong candidate.",
+    "example_ka": "ძლიერი კანდიდატი ხარ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Portfolio",
+    "georgian": "პორტფოლიო",
+    "pronunciation": "/pɔːrtˈfoʊlioʊ/",
+    "example_en": "Can I see your portfolio?",
+    "example_ka": "შემიძლია ნახო შენი პორტფოლიო?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Interview",
+    "georgian": "გასაუბრება",
+    "pronunciation": "/ˈɪntərvjuː/",
+    "example_en": "My interview is on Monday.",
+    "example_ka": "გასაუბრება ორშაბათს მაქვს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Employer",
+    "georgian": "დამსაქმებელი",
+    "pronunciation": "/ɪmˈplɔɪər/",
+    "example_en": "The employer offered me the job.",
+    "example_ka": "დამსაქმებელმა სამუშაო შემომთავაზა.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Employee",
+    "georgian": "თანამშრომელი",
+    "pronunciation": "/ɪmˈplɔɪiː/",
+    "example_en": "Every employee gets a badge.",
+    "example_ka": "ყველა თანამშრომელი იღებს სამკერდე ნიშანს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Career",
+    "georgian": "კარიერა",
+    "pronunciation": "/kəˈrɪər/",
+    "example_en": "I want to build a career in IT.",
+    "example_ka": "მინდა IT-ში კარიერის აშენება.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Department",
+    "georgian": "დეპარტამენტი",
+    "pronunciation": "/dɪˈpɑːrtmənt/",
+    "example_en": "Which department do you work in?",
+    "example_ka": "რომელ დეპარტამენტში მუშაობ?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Manager",
+    "georgian": "მენეჯერი",
+    "pronunciation": "/ˈmænɪdʒər/",
+    "example_en": "I spoke with the manager.",
+    "example_ka": "მენეჯერს ვესაუბრე.",
+    "category": "job-interview",
+    "level": "A1"
+  },
+  {
+    "english": "Supervisor",
+    "georgian": "ხელმძღვანელი",
+    "pronunciation": "/ˈsuːpərvaɪzər/",
+    "example_en": "My supervisor is very helpful.",
+    "example_ka": "ჩემი ხელმძღვანელი ძალიან დამხმარეა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Company",
+    "georgian": "კომპანია",
+    "pronunciation": "/ˈkʌmpəni/",
+    "example_en": "I want to work for this company.",
+    "example_ka": "ამ კომპანიაში მინდა მუშაობა.",
+    "category": "job-interview",
+    "level": "A1"
+  },
+  {
+    "english": "Office",
+    "georgian": "ოფისი",
+    "pronunciation": "/ˈɒfɪs/",
+    "example_en": "The office is downtown.",
+    "example_ka": "ოფისი ცენტრშია.",
+    "category": "job-interview",
+    "level": "A1"
+  },
+  {
+    "english": "Task",
+    "georgian": "დავალება",
+    "pronunciation": "/tæsk/",
+    "example_en": "I finished the task on time.",
+    "example_ka": "დავალება დროულად დავასრულე.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Responsibility",
+    "georgian": "პასუხისმგებლობა",
+    "pronunciation": "/rɪˌspɒnsəˈbɪləti/",
+    "example_en": "What are the main responsibilities?",
+    "example_ka": "რა არის ძირითადი პასუხისმგებლობები?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Goal",
+    "georgian": "მიზანი",
+    "pronunciation": "/ɡoʊl/",
+    "example_en": "What are your career goals?",
+    "example_ka": "რა არის შენი კარიერული მიზნები?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Project",
+    "georgian": "პროექტი",
+    "pronunciation": "/ˈprɒdʒekt/",
+    "example_en": "I managed a big project.",
+    "example_ka": "დიდი პროექტი ვმართე.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Performance",
+    "georgian": "შესრულება",
+    "pronunciation": "/pərˈfɔːrməns/",
+    "example_en": "Your performance is excellent.",
+    "example_ka": "შენი შესრულება შესანიშნავია.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Evaluate",
+    "georgian": "შეფასება",
+    "pronunciation": "/ɪˈvæljueɪt/",
+    "example_en": "We evaluate employees yearly.",
+    "example_ka": "თანამშრომლებს ყოველწლიურად ვაფასებთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Dismiss",
+    "georgian": "გათავისუფლება",
+    "pronunciation": "/dɪsˈmɪs/",
+    "example_en": "He was dismissed from work.",
+    "example_ka": "სამუშაოდან გაათავისუფლეს.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Recruit",
+    "georgian": "დაქირავება",
+    "pronunciation": "/rɪˈkruːt/",
+    "example_en": "We recruit talented graduates.",
+    "example_ka": "ნიჭიერ კურსდამთავრებულებს ვიქირავებთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Commute",
+    "georgian": "მგზავრობა",
+    "pronunciation": "/kəˈmjuːt/",
+    "example_en": "My commute takes thirty minutes.",
+    "example_ka": "მგზავრობა ოცდაათ წუთს მჭირდება.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Flexible",
+    "georgian": "მოქნილი",
+    "pronunciation": "/ˈfleksəbl/",
+    "example_en": "We have flexible working hours.",
+    "example_ka": "მოქნილი სამუშაო საათები გვაქვს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Remote",
+    "georgian": "დისტანციური",
+    "pronunciation": "/rɪˈmoʊt/",
+    "example_en": "I prefer remote work.",
+    "example_ka": "დისტანციური მუშაობა მირჩევნია.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Punctual",
+    "georgian": "პუნქტუალური",
+    "pronunciation": "/ˈpʌŋktʃuəl/",
+    "example_en": "I am always punctual.",
+    "example_ka": "ყოველთვის პუნქტუალური ვარ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Professional",
+    "georgian": "პროფესიონალი",
+    "pronunciation": "/prəˈfeʃənl/",
+    "example_en": "She is very professional.",
+    "example_ka": "ის ძალიან პროფესიონალია.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Creative",
+    "georgian": "შემოქმედებითი",
+    "pronunciation": "/kriˈeɪtɪv/",
+    "example_en": "We need creative thinkers.",
+    "example_ka": "შემოქმედებითი მოაზროვნეები გვჭირდება.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Organized",
+    "georgian": "ორგანიზებული",
+    "pronunciation": "/ˈɔːrɡənaɪzd/",
+    "example_en": "I am very organized.",
+    "example_ka": "ძალიან ორგანიზებული ვარ.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Efficient",
+    "georgian": "ეფექტური",
+    "pronunciation": "/ɪˈfɪʃənt/",
+    "example_en": "She is an efficient worker.",
+    "example_ka": "ის ეფექტური მუშაკია.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Dedicated",
+    "georgian": "ერთგული",
+    "pronunciation": "/ˈdedɪkeɪtɪd/",
+    "example_en": "I am dedicated to my work.",
+    "example_ka": "ჩემი სამუშაოს ერთგული ვარ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Leadership",
+    "georgian": "ლიდერობა",
+    "pronunciation": "/ˈliːdərʃɪp/",
+    "example_en": "He has great leadership skills.",
+    "example_ka": "მას ლიდერობის შესანიშნავი უნარი აქვს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Communicate",
+    "georgian": "კომუნიკაცია",
+    "pronunciation": "/kəˈmjuːnɪkeɪt/",
+    "example_en": "I communicate well with others.",
+    "example_ka": "სხვებთან კარგად ვახერხებ კომუნიკაციას.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Negotiate",
+    "georgian": "მოლაპარაკება",
+    "pronunciation": "/nɪˈɡoʊʃieɪt/",
+    "example_en": "Can we negotiate the salary?",
+    "example_ka": "შეგვიძლია ხელფასზე მოლაპარაკება?",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Delegate",
+    "georgian": "დელეგირება",
+    "pronunciation": "/ˈdelɪɡeɪt/",
+    "example_en": "A good leader can delegate tasks.",
+    "example_ka": "კარგ ლიდერს შეუძლია დავალებების დელეგირება.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Collaborate",
+    "georgian": "თანამშრომლობა",
+    "pronunciation": "/kəˈlæbəreɪt/",
+    "example_en": "We collaborate with other teams.",
+    "example_ka": "სხვა გუნდებთან ვთანამშრომლობთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Contribute",
+    "georgian": "წვლილის შეტანა",
+    "pronunciation": "/kənˈtrɪbjuːt/",
+    "example_en": "How can I contribute to the team?",
+    "example_ka": "როგორ შემიძლია გუნდში წვლილის შეტანა?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Innovate",
+    "georgian": "ინოვაცია",
+    "pronunciation": "/ˈɪnəveɪt/",
+    "example_en": "We need to innovate constantly.",
+    "example_ka": "მუდმივი ინოვაცია გვჭირდება.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Implement",
+    "georgian": "განხორციელება",
+    "pronunciation": "/ˈɪmplɪment/",
+    "example_en": "We will implement the new system.",
+    "example_ka": "ახალ სისტემას განვახორციელებთ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Analyze",
+    "georgian": "ანალიზი",
+    "pronunciation": "/ˈænəlaɪz/",
+    "example_en": "I can analyze data quickly.",
+    "example_ka": "მონაცემების სწრაფად ანალიზი შემიძლია.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Prioritize",
+    "georgian": "პრიორიტეტიზაცია",
+    "pronunciation": "/praɪˈɒrɪtaɪz/",
+    "example_en": "I prioritize important tasks.",
+    "example_ka": "მნიშვნელოვან დავალებებს ვაპრიორიტეტებ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Multitask",
+    "georgian": "მულტიდავალება",
+    "pronunciation": "/ˈmʌltiˌtæsk/",
+    "example_en": "I can multitask effectively.",
+    "example_ka": "ეფექტურად ვახერხებ მრავალ დავალებაზე მუშაობას.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Adapt",
+    "georgian": "ადაპტირება",
+    "pronunciation": "/əˈdæpt/",
+    "example_en": "I adapt quickly to changes.",
+    "example_ka": "ცვლილებებს სწრაფად ვეგუები.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Initiative",
+    "georgian": "ინიციატივა",
+    "pronunciation": "/ɪˈnɪʃətɪv/",
+    "example_en": "I always take initiative.",
+    "example_ka": "ყოველთვის ვიჩენ ინიციატივას.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Mentor",
+    "georgian": "მენტორი",
+    "pronunciation": "/ˈmentɔːr/",
+    "example_en": "My mentor helped me a lot.",
+    "example_ka": "ჩემმა მენტორმა ძალიან დამეხმარა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Workshop",
+    "georgian": "ვორქშოპი",
+    "pronunciation": "/ˈwɜːrkʃɒp/",
+    "example_en": "I attended a workshop yesterday.",
+    "example_ka": "გუშინ ვორქშოპზე ვიყავი.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Certificate",
+    "georgian": "სერტიფიკატი",
+    "pronunciation": "/sərˈtɪfɪkət/",
+    "example_en": "I have a certificate in marketing.",
+    "example_ka": "მარკეტინგის სერტიფიკატი მაქვს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Degree",
+    "georgian": "ხარისხი",
+    "pronunciation": "/dɪˈɡriː/",
+    "example_en": "I have a degree in business.",
+    "example_ka": "ბიზნესის ხარისხი მაქვს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Graduate",
+    "georgian": "კურსდამთავრებული",
+    "pronunciation": "/ˈɡrædʒuət/",
+    "example_en": "I graduated last year.",
+    "example_ka": "გასულ წელს დავამთავრე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Specialize",
+    "georgian": "სპეციალიზაცია",
+    "pronunciation": "/ˈspeʃəlaɪz/",
+    "example_en": "I specialize in web design.",
+    "example_ka": "ვებ-დიზაინში ვსპეციალიზდები.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Proficient",
+    "georgian": "კვალიფიციური",
+    "pronunciation": "/prəˈfɪʃənt/",
+    "example_en": "I am proficient in Excel.",
+    "example_ka": "Excel-ში კვალიფიციური ვარ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Competent",
+    "georgian": "კომპეტენტური",
+    "pronunciation": "/ˈkɒmpɪtənt/",
+    "example_en": "She is a competent professional.",
+    "example_ka": "ის კომპეტენტური პროფესიონალია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Diligent",
+    "georgian": "შრომისმოყვარე",
+    "pronunciation": "/ˈdɪlɪdʒənt/",
+    "example_en": "He is a diligent worker.",
+    "example_ka": "ის შრომისმოყვარე მუშაკია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Proactive",
+    "georgian": "პროაქტიული",
+    "pronunciation": "/proʊˈæktɪv/",
+    "example_en": "Be proactive in meetings.",
+    "example_ka": "იყავი პროაქტიული შეხვედრებზე.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Schedule",
+    "georgian": "განრიგი",
+    "pronunciation": "/ˈʃedjuːl/",
+    "example_en": "What is your schedule?",
+    "example_ka": "რა არის შენი განრიგი?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Shift",
+    "georgian": "ცვლა",
+    "pronunciation": "/ʃɪft/",
+    "example_en": "I work the morning shift.",
+    "example_ka": "დილის ცვლაში ვმუშაობ.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Wage",
+    "georgian": "ხელფასი",
+    "pronunciation": "/weɪdʒ/",
+    "example_en": "The minimum wage is low.",
+    "example_ka": "მინიმალური ხელფასი დაბალია.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Bonus",
+    "georgian": "პრემია",
+    "pronunciation": "/ˈboʊnəs/",
+    "example_en": "I received a bonus this month.",
+    "example_ka": "ამ თვეში პრემია მივიღე.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Pension",
+    "georgian": "პენსია",
+    "pronunciation": "/ˈpenʃən/",
+    "example_en": "The company offers a pension plan.",
+    "example_ka": "კომპანია საპენსიო გეგმას გთავაზობთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Insurance",
+    "georgian": "დაზღვევა",
+    "pronunciation": "/ɪnˈʃʊrəns/",
+    "example_en": "Does the job include insurance?",
+    "example_ka": "სამუშაო დაზღვევას მოიცავს?",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Vacation",
+    "georgian": "შვებულება",
+    "pronunciation": "/veɪˈkeɪʃən/",
+    "example_en": "How many vacation days do I get?",
+    "example_ka": "რამდენი შვებულების დღე მაქვს?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Absence",
+    "georgian": "გაცდენა",
+    "pronunciation": "/ˈæbsəns/",
+    "example_en": "Please report any absence.",
+    "example_ka": "გთხოვთ შეატყობინოთ ნებისმიერი გაცდენა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Attendance",
+    "georgian": "დასწრება",
+    "pronunciation": "/əˈtendəns/",
+    "example_en": "Attendance is mandatory.",
+    "example_ka": "დასწრება სავალდებულოა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Workplace",
+    "georgian": "სამუშაო ადგილი",
+    "pronunciation": "/ˈwɜːrkpleɪs/",
+    "example_en": "Our workplace is modern.",
+    "example_ka": "ჩვენი სამუშაო ადგილი თანამედროვეა.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Applicant",
+    "georgian": "განმცხადებელი",
+    "pronunciation": "/ˈæplɪkənt/",
+    "example_en": "We received many applicants.",
+    "example_ka": "ბევრი განმცხადებელი მივიღეთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Appointment",
+    "georgian": "შეხვედრა",
+    "pronunciation": "/əˈpɔɪntmənt/",
+    "example_en": "I have an appointment at two.",
+    "example_ka": "ორ საათზე შეხვედრა მაქვს.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Recommendation",
+    "georgian": "რეკომენდაცია",
+    "pronunciation": "/ˌrekəmenˈdeɪʃən/",
+    "example_en": "I need a recommendation letter.",
+    "example_ka": "რეკომენდაციის წერილი მჭირდება.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Qualification",
+    "georgian": "კვალიფიკაცია",
+    "pronunciation": "/ˌkwɒlɪfɪˈkeɪʃən/",
+    "example_en": "This qualification is required.",
+    "example_ka": "ეს კვალიფიკაცია აუცილებელია.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Confident",
+    "georgian": "თავდაჯერებული",
+    "pronunciation": "/ˈkɒnfɪdənt/",
+    "example_en": "Be confident in the interview.",
+    "example_ka": "იყავი თავდაჯერებული გასაუბრებაზე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Enthusiastic",
+    "georgian": "ენთუზიასტური",
+    "pronunciation": "/ɪnˌθjuːziˈæstɪk/",
+    "example_en": "She is enthusiastic about the role.",
+    "example_ka": "ის ენთუზიასტურად არის განწყობილი ამ როლის მიმართ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Passionate",
+    "georgian": "გატაცებული",
+    "pronunciation": "/ˈpæʃənət/",
+    "example_en": "I am passionate about teaching.",
+    "example_ka": "სწავლებით ვარ გატაცებული.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Determined",
+    "georgian": "მიზანდასახული",
+    "pronunciation": "/dɪˈtɜːrmɪnd/",
+    "example_en": "I am determined to succeed.",
+    "example_ka": "მიზანდასახული ვარ წარმატებისკენ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Persistent",
+    "georgian": "დაჟინებული",
+    "pronunciation": "/pərˈsɪstənt/",
+    "example_en": "Be persistent in your job search.",
+    "example_ka": "იყავი დაჟინებული სამუშაოს ძიებაში.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Versatile",
+    "georgian": "მრავალმხრივი",
+    "pronunciation": "/ˈvɜːrsətaɪl/",
+    "example_en": "I am a versatile employee.",
+    "example_ka": "მრავალმხრივი თანამშრომელი ვარ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Resourceful",
+    "georgian": "მარჯვე",
+    "pronunciation": "/rɪˈsɔːrsfəl/",
+    "example_en": "She is very resourceful.",
+    "example_ka": "ის ძალიან მარჯვეა.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Detail",
+    "georgian": "დეტალი",
+    "pronunciation": "/ˈdiːteɪl/",
+    "example_en": "I pay attention to detail.",
+    "example_ka": "დეტალებს ყურადღებას ვაქცევ.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Accuracy",
+    "georgian": "სიზუსტე",
+    "pronunciation": "/ˈækjərəsi/",
+    "example_en": "Accuracy is important in this job.",
+    "example_ka": "სიზუსტე მნიშვნელოვანია ამ სამუშაოში.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Productive",
+    "georgian": "პროდუქტიული",
+    "pronunciation": "/prəˈdʌktɪv/",
+    "example_en": "I had a productive day.",
+    "example_ka": "პროდუქტიული დღე მქონდა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Stress",
+    "georgian": "სტრესი",
+    "pronunciation": "/stres/",
+    "example_en": "How do you handle stress?",
+    "example_ka": "როგორ უმკლავდები სტრესს?",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Pressure",
+    "georgian": "ზეწოლა",
+    "pronunciation": "/ˈpreʃər/",
+    "example_en": "I work well under pressure.",
+    "example_ka": "ზეწოლის ქვეშ კარგად ვმუშაობ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Challenge",
+    "georgian": "გამოწვევა",
+    "pronunciation": "/ˈtʃælɪndʒ/",
+    "example_en": "I enjoy new challenges.",
+    "example_ka": "ახალი გამოწვევები მომწონს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Opportunity",
+    "georgian": "შესაძლებლობა",
+    "pronunciation": "/ˌɒpərˈtjuːnəti/",
+    "example_en": "This is a great opportunity.",
+    "example_ka": "ეს შესანიშნავი შესაძლებლობაა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Industry",
+    "georgian": "ინდუსტრია",
+    "pronunciation": "/ˈɪndəstri/",
+    "example_en": "The tech industry is growing.",
+    "example_ka": "ტექნოლოგიური ინდუსტრია იზრდება.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Sector",
+    "georgian": "სექტორი",
+    "pronunciation": "/ˈsektər/",
+    "example_en": "I work in the private sector.",
+    "example_ka": "კერძო სექტორში ვმუშაობ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Corporate",
+    "georgian": "კორპორატიული",
+    "pronunciation": "/ˈkɔːrpərət/",
+    "example_en": "I prefer the corporate environment.",
+    "example_ka": "კორპორატიული გარემო მირჩევნია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Startup",
+    "georgian": "სტარტაპი",
+    "pronunciation": "/ˈstɑːrtʌp/",
+    "example_en": "I joined a startup.",
+    "example_ka": "სტარტაპს შევუერთდი.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Subordinate",
+    "georgian": "ქვეშევრდომი",
+    "pronunciation": "/səˈbɔːrdɪnət/",
+    "example_en": "He manages five subordinates.",
+    "example_ka": "ის ხუთ ქვეშევრდომს მართავს.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Executive",
+    "georgian": "აღმასრულებელი",
+    "pronunciation": "/ɪɡˈzekjətɪv/",
+    "example_en": "She is a senior executive.",
+    "example_ka": "ის უფროსი აღმასრულებელია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Director",
+    "georgian": "დირექტორი",
+    "pronunciation": "/dɪˈrektər/",
+    "example_en": "The director approved the plan.",
+    "example_ka": "დირექტორმა გეგმა დაამტკიცა.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Assistant",
+    "georgian": "ასისტენტი",
+    "pronunciation": "/əˈsɪstənt/",
+    "example_en": "I was an assistant before.",
+    "example_ka": "ადრე ასისტენტი ვიყავი.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Intern",
+    "georgian": "სტაჟიორი",
+    "pronunciation": "/ˈɪntɜːrn/",
+    "example_en": "We have a new intern.",
+    "example_ka": "ახალი სტაჟიორი გვყავს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Headhunter",
+    "georgian": "ჰედჰანტერი",
+    "pronunciation": "/ˈhedˌhʌntər/",
+    "example_en": "A headhunter contacted me.",
+    "example_ka": "ჰედჰანტერმა დამიკავშირდა.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Outsource",
+    "georgian": "აუთსორსინგი",
+    "pronunciation": "/ˈaʊtsɔːrs/",
+    "example_en": "We outsource some tasks.",
+    "example_ka": "ზოგიერთ დავალებას ვაუთსორსებთ.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Downsize",
+    "georgian": "შემცირება",
+    "pronunciation": "/ˈdaʊnsaɪz/",
+    "example_en": "The company had to downsize.",
+    "example_ka": "კომპანიას შემცირება მოუწია.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Layoff",
+    "georgian": "გათავისუფლება",
+    "pronunciation": "/ˈleɪɒf/",
+    "example_en": "There were massive layoffs.",
+    "example_ka": "მასობრივი გათავისუფლება მოხდა.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Terminate",
+    "georgian": "შეწყვეტა",
+    "pronunciation": "/ˈtɜːrmɪneɪt/",
+    "example_en": "His contract was terminated.",
+    "example_ka": "მისი კონტრაქტი შეწყდა.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Compensate",
+    "georgian": "კომპენსაცია",
+    "pronunciation": "/ˈkɒmpenseɪt/",
+    "example_en": "They compensate employees well.",
+    "example_ka": "თანამშრომლებს კარგად აკომპენსირებენ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Reimburse",
+    "georgian": "ანაზღაურება",
+    "pronunciation": "/ˌriːɪmˈbɜːrs/",
+    "example_en": "They will reimburse travel costs.",
+    "example_ka": "მგზავრობის ხარჯებს აგინაზღაურებენ.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Appraisal",
+    "georgian": "შეფასება",
+    "pronunciation": "/əˈpreɪzəl/",
+    "example_en": "I have my appraisal next week.",
+    "example_ka": "მომავალ კვირას შეფასება მაქვს.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Criterion",
+    "georgian": "კრიტერიუმი",
+    "pronunciation": "/kraɪˈtɪriən/",
+    "example_en": "What is the main criterion?",
+    "example_ka": "რა არის მთავარი კრიტერიუმი?",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Competency",
+    "georgian": "კომპეტენცია",
+    "pronunciation": "/ˈkɒmpɪtənsi/",
+    "example_en": "Core competencies are listed here.",
+    "example_ka": "ძირითადი კომპეტენციები აქ არის ჩამოთვლილი.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Tenure",
+    "georgian": "თანამდებობა",
+    "pronunciation": "/ˈtenjər/",
+    "example_en": "She has a long tenure here.",
+    "example_ka": "მას აქ ხანგრძლივი თანამდებობა აქვს.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Demote",
+    "georgian": "ჩამოქვეითება",
+    "pronunciation": "/dɪˈmoʊt/",
+    "example_en": "He was demoted to a lower role.",
+    "example_ka": "ქვედა პოზიციაზე ჩამოაქვეითეს.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Relocate",
+    "georgian": "გადატანა",
+    "pronunciation": "/ˌriːloʊˈkeɪt/",
+    "example_en": "Would you relocate for this job?",
+    "example_ka": "გადახვალთ ამ სამუშაოს გამო?",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Retire",
+    "georgian": "პენსიაზე გასვლა",
+    "pronunciation": "/rɪˈtaɪər/",
+    "example_en": "He will retire next year.",
+    "example_ka": "ის მომავალ წელს გავა პენსიაზე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Assess",
+    "georgian": "შეფასება",
+    "pronunciation": "/əˈses/",
+    "example_en": "We assess candidates carefully.",
+    "example_ka": "კანდიდატებს ფრთხილად ვაფასებთ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Shortlist",
+    "georgian": "შერჩევა",
+    "pronunciation": "/ˈʃɔːrtlɪst/",
+    "example_en": "You have been shortlisted.",
+    "example_ka": "თქვენ შერჩეული ხართ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Onboard",
+    "georgian": "ადაპტაცია",
+    "pronunciation": "/ˈɒnbɔːrd/",
+    "example_en": "We onboard new employees quickly.",
+    "example_ka": "ახალ თანამშრომლებს სწრაფად ვარგუნებთ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Assign",
+    "georgian": "დანიშვნა",
+    "pronunciation": "/əˈsaɪn/",
+    "example_en": "I was assigned a new project.",
+    "example_ka": "ახალი პროექტი დამინიშნეს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Achieve",
+    "georgian": "მიღწევა",
+    "pronunciation": "/əˈtʃiːv/",
+    "example_en": "I achieved all my targets.",
+    "example_ka": "ყველა მიზანი მივაღწიე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Succeed",
+    "georgian": "წარმატება",
+    "pronunciation": "/səkˈsiːd/",
+    "example_en": "I want to succeed in my career.",
+    "example_ka": "კარიერაში წარმატება მინდა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Improve",
+    "georgian": "გაუმჯობესება",
+    "pronunciation": "/ɪmˈpruːv/",
+    "example_en": "I always try to improve.",
+    "example_ka": "ყოველთვის ვცდილობ გავუმჯობესდე.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Develop",
+    "georgian": "განვითარება",
+    "pronunciation": "/dɪˈveləp/",
+    "example_en": "I want to develop new skills.",
+    "example_ka": "ახალი უნარების განვითარება მინდა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Manage",
+    "georgian": "მართვა",
+    "pronunciation": "/ˈmænɪdʒ/",
+    "example_en": "I manage a team of ten.",
+    "example_ka": "ათკაციან გუნდს ვმართავ.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Supervise",
+    "georgian": "ზედამხედველობა",
+    "pronunciation": "/ˈsuːpərvaɪz/",
+    "example_en": "I supervise the interns.",
+    "example_ka": "სტაჟიორებზე ზედამხედველობას ვახორციელებ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Coordinate",
+    "georgian": "კოორდინაცია",
+    "pronunciation": "/koʊˈɔːrdɪneɪt/",
+    "example_en": "I coordinate between departments.",
+    "example_ka": "დეპარტამენტებს შორის კოორდინაციას ვახდენ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Organize",
+    "georgian": "ორგანიზება",
+    "pronunciation": "/ˈɔːrɡənaɪz/",
+    "example_en": "I organize weekly meetings.",
+    "example_ka": "ყოველკვირეულ შეხვედრებს ვაორგანიზებ.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Present",
+    "georgian": "წარდგენა",
+    "pronunciation": "/prɪˈzent/",
+    "example_en": "I will present the results.",
+    "example_ka": "შედეგებს წარვადგენ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Report",
+    "georgian": "ანგარიში",
+    "pronunciation": "/rɪˈpɔːrt/",
+    "example_en": "Please submit your report.",
+    "example_ka": "გთხოვთ წარადგინოთ ანგარიში.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Proposal",
+    "georgian": "წინადადება",
+    "pronunciation": "/prəˈpoʊzəl/",
+    "example_en": "I wrote a business proposal.",
+    "example_ka": "ბიზნეს წინადადება დავწერე.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Budget",
+    "georgian": "ბიუჯეტი",
+    "pronunciation": "/ˈbʌdʒɪt/",
+    "example_en": "We are within the budget.",
+    "example_ka": "ბიუჯეტში ვართ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Revenue",
+    "georgian": "შემოსავალი",
+    "pronunciation": "/ˈrevənjuː/",
+    "example_en": "Revenue increased this quarter.",
+    "example_ka": "შემოსავალი ამ კვარტალში გაიზარდა.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Profit",
+    "georgian": "მოგება",
+    "pronunciation": "/ˈprɒfɪt/",
+    "example_en": "The company made a profit.",
+    "example_ka": "კომპანიამ მოგება მიიღო.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Loss",
+    "georgian": "ზარალი",
+    "pronunciation": "/lɒs/",
+    "example_en": "We reported a loss this year.",
+    "example_ka": "წელს ზარალი დავაფიქსირეთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Invest",
+    "georgian": "ინვესტირება",
+    "pronunciation": "/ɪnˈvest/",
+    "example_en": "We invest in employee training.",
+    "example_ka": "თანამშრომელთა ტრენინგში ვინვესტირებთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Strategy",
+    "georgian": "სტრატეგია",
+    "pronunciation": "/ˈstrætədʒi/",
+    "example_en": "What is our growth strategy?",
+    "example_ka": "რა არის ჩვენი ზრდის სტრატეგია?",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Policy",
+    "georgian": "პოლიტიკა",
+    "pronunciation": "/ˈpɒləsi/",
+    "example_en": "Please read the company policy.",
+    "example_ka": "გთხოვთ წაიკითხოთ კომპანიის პოლიტიკა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Comply",
+    "georgian": "შესაბამისობა",
+    "pronunciation": "/kəmˈplaɪ/",
+    "example_en": "We must comply with regulations.",
+    "example_ka": "რეგულაციებთან შესაბამისობა უნდა დავიცვათ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Audit",
+    "georgian": "აუდიტი",
+    "pronunciation": "/ˈɔːdɪt/",
+    "example_en": "We had an audit last month.",
+    "example_ka": "გასულ თვეში აუდიტი გვქონდა.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Benchmark",
+    "georgian": "ეტალონი",
+    "pronunciation": "/ˈbentʃmɑːrk/",
+    "example_en": "We use industry benchmarks.",
+    "example_ka": "ინდუსტრიის ეტალონებს ვიყენებთ.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Stakeholder",
+    "georgian": "დაინტერესებული",
+    "pronunciation": "/ˈsteɪkˌhoʊldər/",
+    "example_en": "We must inform all stakeholders.",
+    "example_ka": "ყველა დაინტერესებულ მხარეს უნდა ვაცნობოთ.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Synergy",
+    "georgian": "სინერგია",
+    "pronunciation": "/ˈsɪnərdʒi/",
+    "example_en": "There is great synergy in our team.",
+    "example_ka": "ჩვენს გუნდში დიდი სინერგიაა.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Leverage",
+    "georgian": "ბერკეტი",
+    "pronunciation": "/ˈlevərɪdʒ/",
+    "example_en": "We can leverage our experience.",
+    "example_ka": "ჩვენს გამოცდილებას ბერკეტად გამოვიყენებთ.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Streamline",
+    "georgian": "გამარტივება",
+    "pronunciation": "/ˈstriːmlaɪn/",
+    "example_en": "We need to streamline the process.",
+    "example_ka": "პროცესის გამარტივება გვჭირდება.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Facilitate",
+    "georgian": "ხელშეწყობა",
+    "pronunciation": "/fəˈsɪlɪteɪt/",
+    "example_en": "I facilitate team meetings.",
+    "example_ka": "გუნდურ შეხვედრებს ვუწყობ ხელს.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Optimize",
+    "georgian": "ოპტიმიზაცია",
+    "pronunciation": "/ˈɒptɪmaɪz/",
+    "example_en": "We optimize our workflow.",
+    "example_ka": "სამუშაო პროცესს ვაოპტიმიზირებთ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Empower",
+    "georgian": "გაძლიერება",
+    "pronunciation": "/ɪmˈpaʊər/",
+    "example_en": "We empower our employees.",
+    "example_ka": "ჩვენს თანამშრომლებს ვაძლიერებთ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Motivate",
+    "georgian": "მოტივირება",
+    "pronunciation": "/ˈmoʊtɪveɪt/",
+    "example_en": "Good leaders motivate their teams.",
+    "example_ka": "კარგი ლიდერები თავიანთ გუნდებს ამოტივირებენ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Résumé",
+    "georgian": "რეზიუმე",
+    "pronunciation": "/ˈrezjuːmeɪ/",
+    "example_en": "Update your résumé regularly.",
+    "example_ka": "რეზიუმე რეგულარულად განაახლე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Competence",
+    "georgian": "კომპეტენცია",
+    "pronunciation": "/ˈkɒmpɪtəns/",
+    "example_en": "Demonstrate your competence.",
+    "example_ka": "აჩვენე შენი კომპეტენცია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Aptitude",
+    "georgian": "უნარი",
+    "pronunciation": "/ˈæptɪtjuːd/",
+    "example_en": "She has an aptitude for sales.",
+    "example_ka": "მას გაყიდვების უნარი აქვს.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Expertise",
+    "georgian": "ექსპერტიზა",
+    "pronunciation": "/ˌekspɜːrˈtiːz/",
+    "example_en": "His expertise is in finance.",
+    "example_ka": "მისი ექსპერტიზა ფინანსებშია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Credential",
+    "georgian": "რწმუნებათა",
+    "pronunciation": "/krɪˈdenʃəl/",
+    "example_en": "Check his credentials.",
+    "example_ka": "შეამოწმე მისი რწმუნებათა სიგელები.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Probationary",
+    "georgian": "გამოსაცდელი",
+    "pronunciation": "/proʊˈbeɪʃəneri/",
+    "example_en": "This is a probationary period.",
+    "example_ka": "ეს გამოსაცდელი პერიოდია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Orientation",
+    "georgian": "ორიენტაცია",
+    "pronunciation": "/ˌɔːriənˈteɪʃən/",
+    "example_en": "New employee orientation is Monday.",
+    "example_ka": "ახალი თანამშრომლის ორიენტაცია ორშაბათსაა.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Handbook",
+    "georgian": "სახელმძღვანელო",
+    "pronunciation": "/ˈhændbʊk/",
+    "example_en": "Read the employee handbook.",
+    "example_ka": "წაიკითხე თანამშრომლის სახელმძღვანელო.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Transfer",
+    "georgian": "გადაყვანა",
+    "pronunciation": "/ˈtrænsfɜːr/",
+    "example_en": "I requested a transfer.",
+    "example_ka": "გადაყვანა მოვითხოვე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Commend",
+    "georgian": "შექება",
+    "pronunciation": "/kəˈmend/",
+    "example_en": "I commend your hard work.",
+    "example_ka": "შენს შრომას ვაფასებ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Reprimand",
+    "georgian": "საყვედური",
+    "pronunciation": "/ˈreprɪmænd/",
+    "example_en": "He received a reprimand.",
+    "example_ka": "საყვედური მიიღო.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Misconduct",
+    "georgian": "გადაცდომა",
+    "pronunciation": "/ˌmɪsˈkɒndʌkt/",
+    "example_en": "Misconduct will not be tolerated.",
+    "example_ka": "გადაცდომა არ იქნება შეწყნარებული.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Grievance",
+    "georgian": "საჩივარი",
+    "pronunciation": "/ˈɡriːvəns/",
+    "example_en": "You can file a grievance.",
+    "example_ka": "შეგიძლია საჩივარი შეიტანო.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Arbitration",
+    "georgian": "არბიტრაჟი",
+    "pronunciation": "/ˌɑːrbɪˈtreɪʃən/",
+    "example_en": "The case went to arbitration.",
+    "example_ka": "საქმე არბიტრაჟში წავიდა.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Seniority",
+    "georgian": "სტაჟი",
+    "pronunciation": "/ˌsiːniˈɒrəti/",
+    "example_en": "Promotion is based on seniority.",
+    "example_ka": "დაწინაურება სტაჟზეა დამოკიდებული.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Attrition",
+    "georgian": "კადრების დენადობა",
+    "pronunciation": "/əˈtrɪʃən/",
+    "example_en": "Staff attrition is high.",
+    "example_ka": "კადრების დენადობა მაღალია.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Remuneration",
+    "georgian": "ანაზღაურება",
+    "pronunciation": "/rɪˌmjuːnəˈreɪʃən/",
+    "example_en": "The remuneration package is attractive.",
+    "example_ka": "ანაზღაურების პაკეტი მიმზიდველია.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Stipend",
+    "georgian": "სტიპენდია",
+    "pronunciation": "/ˈstaɪpend/",
+    "example_en": "Interns receive a monthly stipend.",
+    "example_ka": "სტაჟიორები ყოველთვიურ სტიპენდიას იღებენ.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Redundancy",
+    "georgian": "სიჭარბე",
+    "pronunciation": "/rɪˈdʌndənsi/",
+    "example_en": "He was made redundant.",
+    "example_ka": "ის ზედმეტად გამოაცხადეს.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Freelancer",
+    "georgian": "ფრილანსერი",
+    "pronunciation": "/ˈfriːlænsər/",
+    "example_en": "We hired a freelancer.",
+    "example_ka": "ფრილანსერი დავიქირავეთ.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Contractor",
+    "georgian": "კონტრაქტორი",
+    "pronunciation": "/ˈkɒntræktər/",
+    "example_en": "The contractor starts Monday.",
+    "example_ka": "კონტრაქტორი ორშაბათს იწყებს.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Temporary",
+    "georgian": "დროებითი",
+    "pronunciation": "/ˈtempərəri/",
+    "example_en": "This is a temporary position.",
+    "example_ka": "ეს დროებითი პოზიციაა.",
+    "category": "job-interview",
+    "level": "A2"
+  },
+  {
+    "english": "Permanent",
+    "georgian": "მუდმივი",
+    "pronunciation": "/ˈpɜːrmənənt/",
+    "example_en": "I got a permanent contract.",
+    "example_ka": "მუდმივი კონტრაქტი მივიღე.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Eligible",
+    "georgian": "უფლებამოსილი",
+    "pronunciation": "/ˈelɪdʒəbl/",
+    "example_en": "Are you eligible for this role?",
+    "example_ka": "ხართ თუ არა უფლებამოსილი ამ როლისთვის?",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Submit",
+    "georgian": "წარდგენა",
+    "pronunciation": "/səbˈmɪt/",
+    "example_en": "Submit your application today.",
+    "example_ka": "დღესვე წარადგინე განაცხადი.",
+    "category": "job-interview",
+    "level": "B1"
+  },
+  {
+    "english": "Acknowledge",
+    "georgian": "აღიარება",
+    "pronunciation": "/əkˈnɒlɪdʒ/",
+    "example_en": "I acknowledge your contribution.",
+    "example_ka": "ვაღიარებ შენს წვლილს.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Welfare",
+    "georgian": "კეთილდღეობა",
+    "pronunciation": "/ˈwelfer/",
+    "example_en": "Employee welfare matters.",
+    "example_ka": "თანამშრომლის კეთილდღეობა მნიშვნელოვანია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Morale",
+    "georgian": "მორალი",
+    "pronunciation": "/məˈræl/",
+    "example_en": "Team morale is high.",
+    "example_ka": "გუნდის მორალი მაღალია.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Turnover",
+    "georgian": "ბრუნვა",
+    "pronunciation": "/ˈtɜːrnoʊvər/",
+    "example_en": "Staff turnover is a problem.",
+    "example_ka": "კადრების ბრუნვა პრობლემაა.",
+    "category": "job-interview",
+    "level": "B2"
+  },
+  {
+    "english": "Retention",
+    "georgian": "შენარჩუნება",
+    "pronunciation": "/rɪˈtenʃən/",
+    "example_en": "We focus on employee retention.",
+    "example_ka": "თანამშრომელთა შენარჩუნებაზე ვფოკუსირდებით.",
+    "category": "job-interview",
+    "level": "C1"
+  },
+  {
+    "english": "Headcount",
+    "georgian": "რაოდენობა",
+    "pronunciation": "/ˈhedkaʊnt/",
+    "example_en": "We need to increase headcount.",
+    "example_ka": "თანამშრომელთა რაოდენობა უნდა გავზარდოთ.",
+    "category": "job-interview",
+    "level": "B2"
+  }
 ]
