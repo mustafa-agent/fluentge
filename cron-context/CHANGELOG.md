@@ -7,6 +7,32 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-02-28
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **Light mode audit — ALL pages verified ✅:**
+  - Grammar: cards, badges, premium CTA — all readable
+  - Games: game cards, overlay, modals, back button — all fixed
+  - Phrases: search input, level filters, category blocks, premium modal — all fixed
+  - Premium: removed inline `style="color:#C8C8C0"` on headings (was invisible in light mode), pricing cards verified
+  - About: text colors properly overridden
+  - Podcast: hero gradient and containers fixed
+- **Comprehensive CSS additions (~200 lines):**
+  - Game overlay (`#game-overlay`) gets light bg
+  - Game cards (`.game-card`) get white bg + proper borders
+  - Game internal UI (`#gc` children) all overridden
+  - Category blocks, phrase items, search input, level filters
+  - Premium modal, phrases modal
+  - Misc: `bg-white/10`, `bg-white/20`, `divide-white/5`, gradient via colors
+- **Streak/XP/Daily Goal CSS pre-built for Cron 3:**
+  - `.streak-badge` (active/inactive variants) with fire pulse animation
+  - `.xp-badge` with gold color scheme + `.xp-counter` animate class
+  - `.daily-goal-bar` with green gradient fill + complete state
+  - `.daily-goal-card` with green tint
+  - `.xp-float` popup animation (floats up and fades)
+  - All components have light mode variants
+- Deployed to Cloudflare Pages ✅
+- Verified via browser screenshots (grammar, games, phrases, premium — all clean)
+- Git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM, Day Run)
 - **Sprint review:** Last night's "First Impressions & Core Loop" sprint completed successfully
   - Session summary ✅, Onboarding CTA ✅, Homepage redesign ✅, Dashboard continue card ✅, Grammar interconnection ✅

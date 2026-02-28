@@ -29,3 +29,19 @@ body {
 }
 
 a, button, [role="button"], input[type="submit"] { cursor: pointer !important; }
+
+/* XP Float Animation */
+@keyframes xpFloat {
+  0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-80px); }
+}
+
+/* Streak/XP/Goal badge styles */
+.streak-badge { background: var(--color-bg-card, #242426); }
+.streak-badge.active { background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(234,88,12,0.1)); border: 1px solid rgba(249,115,22,0.3); }
+.streak-badge.inactive { background: var(--color-bg-card, #242426); border: 1px solid transparent; }
+
+.xp-badge { background: linear-gradient(135deg, rgba(250,204,21,0.1), rgba(245,158,11,0.08)); border: 1px solid rgba(250,204,21,0.2); }
+
+.daily-goal-card { background: var(--color-bg-card, #242426); }
+.daily-goal-card.complete { background: linear-gradient(135deg, rgba(34,197,94,0.1), rgba(16,185,129,0.08)); border: 1px solid rgba(34,197,94,0.3); }

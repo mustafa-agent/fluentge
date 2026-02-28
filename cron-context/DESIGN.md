@@ -60,7 +60,7 @@
 - [x] Extract hardcoded words from homepage to JSON (365 words → words-of-day.json)
 - [x] Homepage vibrant redesign (gradient text, 3D buttons, colorful badges)
 - [x] Add light mode CSS for new color classes
-- [ ] Audit ALL other pages for light mode visibility (grammar, games, podcast, phrases, premium, about)
+- [x] Audit ALL other pages for light mode visibility (grammar, games, podcast, phrases, premium, about) ✅ Feb 28
 - [ ] Replace flat buttons with 3D buttons on other pages (grammar, games)
 - [ ] Ensure flashcard app matches website design
 - [ ] Add micro-animations for engagement

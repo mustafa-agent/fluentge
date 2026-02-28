@@ -3,6 +3,7 @@ import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { sm2 } from '../lib/sm2';
 import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
+import { addXP, addStudyTime, updateStreak, XP_REWARDS } from '../lib/gamification';
 
 function sanitizeForAudio(word: string): string {
   return word.trim().toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
@@ -88,6 +89,15 @@ interface Props {
   onBack: () => void;
 }
 
+function showFloatingXP(amount: number) {
+  const el = document.createElement('div');
+  el.className = 'xp-float';
+  el.textContent = `+${amount} XP`;
+  el.style.cssText = 'position:fixed;top:20%;left:50%;transform:translateX(-50%);font-weight:bold;font-size:1.25rem;color:#facc15;z-index:9999;pointer-events:none;animation:xpFloat 1.2s ease-out forwards;';
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 1300);
+}
+
 export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props) {
   const storageSuffix: StorageSuffix = direction === 'mixed' ? 'mixed' : dirToSuffix(direction);
   
@@ -149,7 +159,17 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     const isCorrect = possibleAnswers.some(ans => ans === userAnswer || userAnswer.includes(ans) || ans.includes(userAnswer));
     setGuessResult(isCorrect ? 'correct' : 'wrong');
     setFlipped(true);
-    if (isCorrect) playCorrect(); else playWrong();
+    if (isCorrect) {
+      playCorrect();
+      // Award XP for correct answer
+      const xpResult = addXP(XP_REWARDS.REVIEW_CARD + XP_REWARDS.CORRECT_ANSWER);
+      // Show floating XP
+      showFloatingXP(XP_REWARDS.REVIEW_CARD + XP_REWARDS.CORRECT_ANSWER);
+    } else {
+      playWrong();
+      // Still award base XP for attempting
+      addXP(XP_REWARDS.REVIEW_CARD);
+    }
 
     // SRS update
     const quality = isCorrect ? 5 : 1;
@@ -247,6 +267,19 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     setGuessResult(null);
   }
 
+  // Update streak & study time on session done
+  const sessionEndHandled = useRef(false);
+  useEffect(() => {
+    if (sessionDone && !sessionEndHandled.current) {
+      sessionEndHandled.current = true;
+      // Update streak
+      updateStreak(true);
+      // Track study time
+      const elapsedMin = (Date.now() - sessionStartTime.current) / 60000;
+      addStudyTime(Math.max(1, Math.round(elapsedMin)));
+    }
+  }, [sessionDone]);
+
   if (sessionDone) {
     const elapsedMs = Date.now() - sessionStartTime.current;
     const minutes = Math.floor(elapsedMs / 60000);
@@ -255,6 +288,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     const accuracy = totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : 100;
     const isPerfect = wrongCount === 0;
     const wordsPerMin = minutes > 0 ? Math.round(totalCards / minutes) : totalCards;
+    const sessionXP = correctCount * (XP_REWARDS.REVIEW_CARD + XP_REWARDS.CORRECT_ANSWER) + wrongCount * XP_REWARDS.REVIEW_CARD;
 
     // Performance rating
     let emoji = '🎉';
@@ -327,6 +361,12 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
             </div>
           </div>
         )}
+
+        {/* XP Earned */}
+        <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-2xl p-4 mb-6 text-center">
+          <div className="text-3xl font-bold text-yellow-400 mb-1">+{sessionXP} XP</div>
+          <div className="text-sm text-[var(--color-text-muted)]">⭐ მიღებული ქულები ამ სესიაში</div>
+        </div>
 
         {/* Speed stat */}
         {minutes > 0 && (

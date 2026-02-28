@@ -68,7 +68,8 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Streak + XP + Daily Goal system (Sprint Feb 28 night)
+- 🔄 **StatsBar Gamification Upgrade** — Streak fire + XP + daily goal in StatsBar (Cron 3, Feb 28 afternoon)
+- 🔄 **XP Integration in StudyScreen & SRSStudy** — Award XP in all study modes (Cron 3, Feb 28 afternoon)
 
 ## Notes
 - Each feature cron picks 2 items from HIGH priority

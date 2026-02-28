@@ -1,5 +1,6 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import type { FlashCard } from '../lib/cards';
+import { addXP, addStudyTime, updateStreak, XP_REWARDS } from '../lib/gamification';
 
 interface SRSData {
   interval: number;
@@ -138,6 +139,25 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
   const [flipped, setFlipped] = useState(false);
   const [reviewed, setReviewed] = useState(0);
   const [correct, setCorrect] = useState(0);
+  const [sessionXP, setSessionXP] = useState(0);
+  const sessionStart = useRef(Date.now());
+  const streakUpdated = useRef(false);
+
+  // Update streak on first review
+  useEffect(() => {
+    if (reviewed > 0 && !streakUpdated.current) {
+      streakUpdated.current = true;
+      updateStreak(true);
+    }
+  }, [reviewed]);
+
+  // Track study time when leaving
+  useEffect(() => {
+    return () => {
+      const mins = Math.max(1, Math.round((Date.now() - sessionStart.current) / 60000));
+      if (reviewed > 0) addStudyTime(mins);
+    };
+  }, [reviewed]);
   
   const learned = getLearnedCount(store);
   
@@ -148,10 +168,22 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
     setStore(newStore);
     saveSRSStore(deckId, newStore);
     
+    // Award XP
+    let xpGain = XP_REWARDS.REVIEW_CARD;
     if (rating === 'know') {
+      xpGain += XP_REWARDS.CORRECT_ANSWER;
       addToKnownCards(currentCard.english, currentCard.georgian);
       setCorrect(c => c + 1);
     }
+    addXP(xpGain);
+    setSessionXP(x => x + xpGain);
+    
+    // Show floating XP
+    const el = document.createElement('div');
+    el.textContent = `+${xpGain} XP`;
+    el.style.cssText = 'position:fixed;top:20%;left:50%;transform:translateX(-50%);font-weight:bold;font-size:1.25rem;color:#facc15;z-index:9999;pointer-events:none;animation:xpFloat 1.2s ease-out forwards;';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 1300);
     
     setReviewed(r => r + 1);
     setFlipped(false);
@@ -174,6 +206,7 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
           </button>
           <div className="flex items-center gap-4 text-xs text-[#6B6B65]">
             <span>📊 {reviewed} გამეორებული</span>
+            <span className="text-yellow-400">⭐ +{sessionXP}</span>
             <span>✅ {learned}/{cards.length} ნასწავლი</span>
           </div>
         </div>
