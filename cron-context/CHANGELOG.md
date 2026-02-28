@@ -7,6 +7,26 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-02-28
 
+### Cron 3B — Features (3:30 PM, Day Run)
+- **StatsBar Gamification Upgrade:**
+  - Replaced basic 3-stat bar with full gamification dashboard
+  - Streak 🔥 badge with active/inactive states and pulse animation
+  - XP ⭐ badge with gold color scheme
+  - Level display (Lv.X) with purple accent
+  - XP progress bar to next level (yellow-amber gradient)
+  - Daily goal progress bar with completion state (green glow)
+  - Auto-refreshes every 2 seconds to catch live updates
+  - CSS: streak-badge, xp-badge, daily-goal-card classes with light/dark support
+- **XP Integration in StudyScreen & SRSStudy:**
+  - StudyScreen: +15 XP per correct answer (+10 review + 5 correct), +10 XP per wrong attempt
+  - SRSStudy: Same XP scheme, plus session XP counter in header
+  - Floating "+X XP" animation (yellow, floats up and fades) via @keyframes xpFloat
+  - Session summary now shows total XP earned in gold gradient card
+  - Streak auto-updated on first card review
+  - Study time tracked on session end → feeds daily goal progress
+- Deployed to Cloudflare Pages ✅
+- Git committed & pushed
+
 ### Cron 2B — Design (1:30 PM, Day Run)
 - **Light mode audit — ALL pages verified ✅:**
   - Grammar: cards, badges, premium CTA — all readable

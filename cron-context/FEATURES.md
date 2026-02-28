@@ -64,12 +64,13 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **StatsBar Gamification Upgrade** — Streak 🔥 with fire animation, XP ⭐ with level display, daily goal progress bar, XP-to-next-level bar. Auto-refreshes every 2s. (Cron 3, Feb 28 afternoon)
+- ✅ **XP Integration in StudyScreen & SRSStudy** — All study modes now award XP (+10 base, +5 for correct). Floating +XP animation. Session summary shows total XP earned. Streak updated on practice. Study time tracked for daily goal. (Cron 3, Feb 28 afternoon)
 - ✅ **Session summary after flashcard practice** — Rich summary with accuracy %, time elapsed, correct/wrong bar, hardest words list, speed stat (Cron 3, Feb 28)
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- 🔄 **StatsBar Gamification Upgrade** — Streak fire + XP + daily goal in StatsBar (Cron 3, Feb 28 afternoon)
-- 🔄 **XP Integration in StudyScreen & SRSStudy** — Award XP in all study modes (Cron 3, Feb 28 afternoon)
+- Streak + XP + Daily Goal system (Sprint Feb 28 night)
 
 ## Notes
 - Each feature cron picks 2 items from HIGH priority

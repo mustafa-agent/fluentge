@@ -353,6 +353,92 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           </div>
         </div>
 
+        {/* Learning Path Roadmap */}
+        <div className="bg-[var(--color-card)] rounded-xl p-4">
+          <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+            🗺️ სასწავლო გზა
+          </h2>
+          <p className="text-sm text-[var(--color-text-muted)] mb-4">
+            ნაბიჯ-ნაბიჯ ისწავლე ინგლისური — დამწყებიდან საშუალომდე
+          </p>
+          <div className="relative">
+            {/* Vertical connector line */}
+            <div className="absolute left-5 top-6 bottom-6 w-0.5 bg-white/10" />
+            
+            {[
+              { step: 1, icon: '👋', title: 'მისალმებები', desc: 'ძირითადი მისალმებები და გაცნობა', link: 'greetings', type: 'flashcard' as const, grammar: null },
+              { step: 2, icon: '✏️', title: 'To Be ზმნა', desc: 'am, is, are — ყველაზე მნიშვნელოვანი ზმნა', link: '/grammar/to-be/', type: 'grammar' as const, grammar: 'to-be' },
+              { step: 3, icon: '🔢', title: 'რიცხვები', desc: '1-100 და მეტი', link: 'numbers', type: 'flashcard' as const, grammar: null },
+              { step: 4, icon: '📖', title: 'Articles', desc: 'a, an, the — როდის ვიყენებთ', link: '/grammar/articles/', type: 'grammar' as const, grammar: 'articles' },
+              { step: 5, icon: '👨‍👩‍👧', title: 'ოჯახი', desc: 'ოჯახის წევრები', link: 'family', type: 'flashcard' as const, grammar: null },
+              { step: 6, icon: '🍎', title: 'საჭმელი', desc: 'საკვები და სასმელი', link: 'food-drinks', type: 'flashcard' as const, grammar: null },
+              { step: 7, icon: '📝', title: 'Plural Nouns', desc: 'მრავლობითი რიცხვი', link: '/grammar/plural-nouns/', type: 'grammar' as const, grammar: 'plural-nouns' },
+              { step: 8, icon: '🏠', title: 'ყოველდღიურობა', desc: 'ყოველდღიური რუტინა', link: 'daily-routines', type: 'flashcard' as const, grammar: null },
+              { step: 9, icon: '🎮', title: 'თამაშები', desc: 'გაიმეორე ნასწავლი თამაშებით!', link: '/games/', type: 'external' as const, grammar: null },
+              { step: 10, icon: '🏆', title: 'კვიზი', desc: 'შეამოწმე რა ისწავლე!', link: 'quiz-all', type: 'quiz' as const, grammar: null },
+            ].map((item) => {
+              // Check completion
+              const isCompleted = item.type === 'flashcard' 
+                ? activeDecks.find(d => d.id === item.link)?.progress?.mastered > 0
+                : item.type === 'grammar' && item.grammar
+                ? (() => { try { const g = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]'); return g.includes(item.grammar); } catch { return false; } })()
+                : false;
+
+              return (
+                <div key={item.step} className="relative flex items-start gap-4 mb-4 last:mb-0">
+                  {/* Step circle */}
+                  <div className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center text-lg flex-shrink-0 ${
+                    isCompleted 
+                      ? 'bg-green-500 text-white' 
+                      : 'bg-[var(--color-bg)] border-2 border-white/20'
+                  }`}>
+                    {isCompleted ? '✅' : item.icon}
+                  </div>
+                  
+                  {/* Content */}
+                  <div 
+                    className={`flex-1 p-3 rounded-lg cursor-pointer transition-all ${
+                      isCompleted 
+                        ? 'bg-green-500/10 border border-green-500/20' 
+                        : 'bg-white/5 hover:bg-white/10 border border-transparent'
+                    }`}
+                    onClick={() => {
+                      if (item.type === 'flashcard') {
+                        const deck = decks.find(d => d.id === item.link);
+                        if (deck) onNavigate('enhanced-study', deck);
+                      } else if (item.type === 'grammar' || item.type === 'external') {
+                        window.location.href = item.link;
+                      } else if (item.type === 'quiz') {
+                        onNavigate('quiz');
+                      }
+                    }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className="font-semibold text-sm">
+                          <span className="text-[var(--color-text-muted)] mr-1">#{item.step}</span>
+                          {item.title}
+                        </div>
+                        <div className="text-xs text-[var(--color-text-muted)] mt-0.5">{item.desc}</div>
+                      </div>
+                      <span className={`text-xs px-2 py-0.5 rounded-full ${
+                        item.type === 'grammar' ? 'bg-sky-500/20 text-sky-400' :
+                        item.type === 'flashcard' ? 'bg-green-500/20 text-green-400' :
+                        item.type === 'quiz' ? 'bg-orange-500/20 text-orange-400' :
+                        'bg-purple-500/20 text-purple-400'
+                      }`}>
+                        {item.type === 'grammar' ? 'გრამატიკა' : 
+                         item.type === 'flashcard' ? 'სიტყვები' :
+                         item.type === 'quiz' ? 'კვიზი' : 'თამაშები'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Activity Chart */}
         <div className="bg-[var(--color-card)] rounded-xl p-4">
           <h2 className="text-lg font-bold mb-4 flex items-center gap-2">

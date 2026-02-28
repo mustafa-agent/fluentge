@@ -91,6 +91,15 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">პრემიუმი</a>
         </div>
         <div class="flex items-center gap-2">
+          <!-- Streak & XP badges (hidden until JS populates) -->
+          <div id="nav-gamification" class="hidden items-center gap-2 mr-1">
+            <a href="/flashcards/#dashboard" class="flex items-center gap-1 bg-orange-500/10 border border-orange-500/20 text-orange-400 px-2.5 py-1 rounded-full text-xs font-bold hover:bg-orange-500/20 transition-colors" title="სტრიქი">
+              🔥 <span id="nav-streak">0</span>
+            </a>
+            <a href="/flashcards/#dashboard" class="flex items-center gap-1 bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 px-2.5 py-1 rounded-full text-xs font-bold hover:bg-yellow-500/20 transition-colors" title="XP ქულები">
+              ⭐ <span id="nav-xp">0</span>
+            </a>
+          </div>
           <button id="theme-toggle" class="text-lg hover:scale-110 transition-transform p-1" title="თემის შეცვლა" aria-label="თემის შეცვლა">
             ☀️
           </button>
@@ -118,12 +127,34 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           <a href="/blog/" class="hover:text-white py-1">ბლოგი</a>
           <a href="/about/" class="hover:text-white py-1">შესახებ</a>
           <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>
+          <div id="nav-gamification-mobile" class="hidden items-center gap-3 py-1">
+            <a href="/flashcards/#dashboard" class="flex items-center gap-1 text-orange-400 font-bold text-sm">🔥 <span id="nav-streak-mobile">0</span> სტრიქი</a>
+            <a href="/flashcards/#dashboard" class="flex items-center gap-1 text-yellow-400 font-bold text-sm">⭐ <span id="nav-xp-mobile">0</span> XP</a>
+          </div>
           <a href="/login/" id="nav-login-mobile" class="hover:text-white py-1">შესვლა</a>
           <a href="/account/" id="nav-account-mobile" class="hidden hover:text-white py-1">ანგარიში</a>
         </div>
       </div>
     </nav>
     <script>document.getElementById('menu-toggle')?.addEventListener('click',()=>{document.getElementById('mobile-menu')?.classList.toggle('hidden');});</script>
+    <script>
+      // Gamification badges in navbar
+      (function() {
+        var streak = parseInt(localStorage.getItem('currentStreak') || '0', 10);
+        var xp = parseInt(localStorage.getItem('totalXP') || '0', 10);
+        if (streak > 0 || xp > 0) {
+          var xpStr = xp >= 1000 ? (xp/1000).toFixed(1) + 'k' : xp.toString();
+          ['', '-mobile'].forEach(function(suffix) {
+            var el = document.getElementById('nav-gamification' + suffix);
+            if (el) { el.classList.remove('hidden'); el.classList.add('flex'); }
+            var sEl = document.getElementById('nav-streak' + suffix);
+            if (sEl) sEl.textContent = streak.toString();
+            var xEl = document.getElementById('nav-xp' + suffix);
+            if (xEl) xEl.textContent = xpStr;
+          });
+        }
+      })();
+    </script>
     
     <script>
       // Theme toggle - uses .light class on <html>
