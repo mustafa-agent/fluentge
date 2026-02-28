@@ -110,70 +110,15 @@ export default function DeckSelect({ onSelect }: Props) {
     );
   }
 
-  // Separate Top 2000 from other decks
-  const top2000 = decks.find(d => d.id === 'top-2000');
-  const otherFreeDecks = freeDecks.filter(d => d.id !== 'top-2000');
-  
-  // SRS progress for Top 2000
-  const srsLearned = (() => {
-    try {
-      const data = JSON.parse(localStorage.getItem('fluentge-srs-data') || '{}');
-      return Object.values(data).filter((d: any) => d.repetitions >= 2).length;
-    } catch { return 0; }
-  })();
-  const srsTotal = top2000?.cards.length || 2000;
-  const srsPct = Math.round(srsLearned / srsTotal * 100);
-
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
-      {/* Featured: Top 2000 */}
-      {top2000 && (
-        <button
-          onClick={() => setSelectedDeck(top2000)}
-          className="w-full mb-8 relative overflow-hidden rounded-2xl text-left transition-all hover:scale-[1.01] group"
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#5B7F5E] via-[#3D5940] to-[#1C3A2E]"></div>
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&q=80')] bg-cover bg-center opacity-15 group-hover:opacity-20 transition-opacity"></div>
-          <div className="relative p-6">
-            <div className="flex items-start justify-between mb-3">
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-3xl">⭐</span>
-                  <span className="text-xs font-bold bg-white/20 px-2.5 py-1 rounded-full text-white uppercase tracking-wider">თავისუფალი</span>
-                </div>
-                <h2 className="text-2xl font-bold text-white mt-2">ტოპ 2000 სიტყვა</h2>
-                <p className="text-white/60 text-sm mt-1">Top 2000 English Words · თავისუფალი ბარათები</p>
-              </div>
-              <div className="text-right">
-                <p className="text-3xl font-bold text-white">{srsTotal.toLocaleString()}</p>
-                <p className="text-white/50 text-xs">სიტყვა</p>
-              </div>
-            </div>
-            
-            <div className="mt-4">
-              <div className="flex items-center justify-between text-sm mb-1.5">
-                <span className="text-white/70">{srsLearned} ნასწავლი</span>
-                <span className="text-white/70">{srsPct}%</span>
-              </div>
-              <div className="w-full bg-white/20 rounded-full h-2.5">
-                <div className="bg-white h-2.5 rounded-full transition-all" style={{ width: `${srsPct}%` }}></div>
-              </div>
-            </div>
-            
-            <div className="mt-4 bg-white/15 hover:bg-white/25 rounded-xl py-3 text-center transition-colors">
-              <span className="text-white font-bold text-sm">🧠 დაიწყე სწავლა →</span>
-            </div>
-          </div>
-        </button>
-      )}
-
       {/* Free decks */}
       <div className="flex items-center gap-2 mb-3">
         <span className="text-xs font-semibold text-green-400 bg-green-500/20 px-2 py-0.5 rounded-full">უფასო</span>
         <div className="h-px flex-1 bg-white/10"></div>
       </div>
       <div className="grid grid-cols-3 gap-3 mb-8">
-        {otherFreeDecks.map(deck => {
+        {freeDecks.map(deck => {
           // Card is fully learned only when all 3 directions are learned
           const lEnka = getDeckProgress(deck, 'enka');
           const lKaen = getDeckProgress(deck, 'kaen');

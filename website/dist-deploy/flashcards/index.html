@@ -12,12 +12,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    <title>FluentGe — ფლეშბარათები</title>
-    <script type="module" crossorigin src="/flashcards/assets/index-sgVxpID2.js"></script>
-    <link rel="stylesheet" crossorigin href="/flashcards/assets/index-Bbzr4P-1.css">
+    <title>FluentGe — ისწავლე ინგლისური ქართულად | უფასო აპლიკაცია</title>
+    <meta name="description" content="ისწავლე ინგლისური ენა ქართულად — 3000+ სიტყვა, 65 გრამატიკის გაკვეთილი, პოდკასტები, თამაშები და ტესტები. სრულიად უფასო!" />
+    <meta name="keywords" content="ინგლისური, ქართულად, ისწავლე ინგლისური, FluentGe, ფლეშბარათები, გრამატიკა, ვოქაბულარი, English for Georgians" />
+    <meta property="og:title" content="FluentGe — ისწავლე ინგლისური ქართულად" />
+    <meta property="og:description" content="3000+ სიტყვა, 65 გრამატიკის გაკვეთილი, პოდკასტები და თამაშები. უფასო!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fluentge.surge.sh" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FluentGe — ისწავლე ინგლისური ქართულად" />
+    <meta name="twitter:description" content="3000+ სიტყვა, 65 გაკვეთილი, პოდკასტები. უფასო!" />
+    <link rel="canonical" href="https://fluentge.surge.sh" />
+    <script type="module" crossorigin src="/flashcards/assets/index-0Nvg1VdU.js"></script>
+    <link rel="stylesheet" crossorigin href="/flashcards/assets/index-OF8UaCZZ.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Theme toggle - persisted in localStorage
+      (function() {
+        var t = localStorage.getItem('fluentge-theme');
+        if (t === 'light') document.documentElement.classList.add('light');
+        var btn = document.createElement('button');
+        btn.id = 'theme-toggle';
+        btn.textContent = t === 'light' ? '🌙' : '☀️';
+        btn.style.cssText = 'position:fixed;bottom:20px;right:20px;z-index:9999;width:48px;height:48px;border-radius:50%;border:none;font-size:22px;cursor:pointer;background:rgba(100,100,100,0.3);backdrop-filter:blur(8px);box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+        btn.onclick = function() {
+          document.documentElement.classList.toggle('light');
+          var isLight = document.documentElement.classList.contains('light');
+          localStorage.setItem('fluentge-theme', isLight ? 'light' : 'dark');
+          btn.textContent = isLight ? '🌙' : '☀️';
+        };
+        document.body.appendChild(btn);
+      })();
+    </script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

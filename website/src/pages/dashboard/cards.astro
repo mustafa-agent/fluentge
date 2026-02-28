@@ -47,12 +47,11 @@ const categoryFiles = import.meta.glob('/../../flashcard-app/content/*.json', { 
     (function() {
       // Clear data if ?clear=1
       if (window.location.search.indexOf('clear=1') > -1) {
-        // Clear all card progress
+        // Clear all card progress and all fluentge data
         localStorage.removeItem('knownCards');
-        // Clear all fluentge-card-progress
         var keys = Object.keys(localStorage);
         keys.forEach(function(k) {
-          if (k.indexOf('fluentge-card-progress') > -1 || k.indexOf('fluentge-srs-') > -1 || k.indexOf('fluentge-session-') > -1) {
+          if (k.indexOf('fluentge-') > -1) {
             localStorage.removeItem(k);
           }
         });

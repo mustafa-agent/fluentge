@@ -1,43 +1,47 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-02-28 (9:00 AM)
+- **Date:** 2026-02-28 (7:30 PM)
 - **Status:** ✅ ALL PASS
 - **Issues Found:** 0
 
-## What Was Tested (Feb 28)
+## What Was Tested (Feb 28, Evening)
 
 ### HTTP Health Checks — ✅ All 200
 - `/` — 200
 - `/flashcards/` — 200
 - `/grammar/` — 200
-- `/podcast/` — 200
 - `/games/` — 200
+- `/podcast/` — 200
+- `/phrases/` — 200
+- `/premium/` — 200
+- `/about/` — 200
 
 ### TypeScript Check — ✅ Clean
 - `npx tsc --noEmit` — no errors
 
 ### Website Build — ✅ Clean
-- 109 pages built in 4.40s, no errors
+- 109 pages built in 4.32s, no errors
 
 ### Browser Screenshots — ✅ All Rendering
 - **Homepage:** Gradient hero, colorful badges, onboarding CTA, Word of Day, feature cards — all look great
-- **Flashcards:** All decks visible, challenge banner, categories load
-- **Dashboard:** Quick Start card for new users with 3 action buttons, stat cards showing 0s (correct for no progress)
-- **Grammar (to-be):** Full lesson content, practice quiz, "Related Flashcard Decks" section, prev/next navigation
+- **Flashcards Dashboard:** StatsBar with streak/XP/level, Quick Start card, Learning Path Roadmap (10 steps visible), deck grid — all rendering correctly
+- **Games:** Free/premium split, all 27+ game cards visible, proper layout
 
-### Tonight's Changes Verified (Feb 28 Crons 1-4)
-- [x] Homepage words extracted to JSON (365 words, all valid, correct field names `en`/`ka`)
-- [x] Homepage redesign — gradient text, 3D buttons, colorful badges
-- [x] Onboarding CTA section renders between hero and Word of Day
-- [x] Dashboard "Continue where you left off" / Quick Start card works
-- [x] Grammar → Flashcard interconnection (Related Decks section visible)
-- [x] Previous/Next lesson navigation on grammar pages
-- [x] Session summary feature (in flashcard React app, TypeScript compiles clean)
-- [x] Light mode CSS additions (verified in build, no errors)
+### Today's Day Cron Changes Verified (Crons 1B-4B)
+- [x] StatsBar gamification (streak badge, XP badge, level, progress bars) — code present in StatsBar.tsx, compiles clean
+- [x] XP integration in StudyScreen & SRSStudy — +15/+10 XP, floating animation, session XP counter
+- [x] Light mode audit — CSS additions for grammar, games, phrases, premium, about, podcast pages
+- [x] Streak/XP/Daily Goal CSS classes — all present in styles
+- [x] Learning Path Roadmap — 10-step path in Dashboard.tsx with completion tracking
+- [x] Navbar streak/XP badges — reads from localStorage, links to dashboard
+- [x] `xpFloat` keyframe animation for floating XP popups
 
-### Data Integrity
-- `words-of-day.json`: 365 entries, all have `en`, `ka`, `pron`, `example`, `exampleKa`, `level`
+### Source Code Review
+- Dashboard.tsx: Learning path array (10 items), completion logic checks localStorage + grammar completion
+- StatsBar.tsx: Reads totalXP/currentStreak from localStorage, calculates level
+- StudyScreen.tsx & SRSStudy.tsx: XP award logic (+15 correct, +10 wrong), floating animation via DOM injection
+- No undefined variables, no missing imports, all functions referenced exist
 
 ## Known Issues (Non-Critical)
 - Grammar: only 3 free lessons (to-be, articles, plural-nouns), rest redirect to /premium/ — by design

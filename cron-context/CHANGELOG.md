@@ -7,6 +7,24 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-02-28
 
+### Cron 4B — Improvements (5:30 PM, Day Run)
+- **Navbar Streak + XP Badges:**
+  - 🔥 streak and ⭐ XP badges appear in website navbar (desktop + mobile)
+  - Reads from localStorage (`currentStreak`, `totalXP`) — same keys as flashcard app
+  - Only shows when user has progress (streak > 0 or XP > 0)
+  - XP shows "1.2k" format for large numbers
+  - Badges link to /flashcards/#dashboard
+  - Orange/yellow color-coded pill badges matching gamification theme
+- **Learning Path Roadmap on Dashboard:**
+  - 10-step structured beginner path: Greetings → To Be → Numbers → Articles → Family → Food → Plurals → Daily Routines → Games → Quiz
+  - Visual timeline with vertical connector line and step circles
+  - Completion tracking: green checkmark for mastered flashcard decks and completed grammar
+  - Color-coded type badges (სიტყვები/გრამატიკა/თამაშები/კვიზი)
+  - Clickable — navigates to appropriate study screen, grammar page, or games
+  - Placed between Quick Actions and Activity Chart on dashboard
+- Deployed to Cloudflare Pages ✅
+- Git committed & pushed
+
 ### Cron 3B — Features (3:30 PM, Day Run)
 - **StatsBar Gamification Upgrade:**
   - Replaced basic 3-stat bar with full gamification dashboard

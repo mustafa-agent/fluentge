@@ -2539,5 +2539,1046 @@
         ]
       }
     ]
+  },
+  {
+    "id": 33,
+    "level": "A1",
+    "title": "At the Supermarket",
+    "titleGe": "სუპერმარკეტში",
+    "icon": "🛒",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Can I help you find something?",
+        "textGe": "შემიძლია რაიმეს პოვნაში დაგეხმაროთ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Yes, where is the milk?",
+            "textGe": "დიახ, სად არის რძე?",
+            "correct": true
+          },
+          {
+            "text": "I want to buy a car.",
+            "textGe": "მანქანის ყიდვა მინდა.",
+            "correct": false,
+            "hint": "ეს სუპერმარკეტია, არა ავტოსალონი!"
+          },
+          {
+            "text": "No, I work here.",
+            "textGe": "არა, მე აქ ვმუშაობ.",
+            "correct": false,
+            "hint": "შენ მომხმარებელი ხარ, არა თანამშრომელი."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "The milk is in aisle 3, next to the cheese.",
+        "textGe": "რძე მე-3 რიგშია, ყველის გვერდით."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Thank you! And where are the eggs?",
+            "textGe": "გმადლობთ! და სად არის კვერცხი?",
+            "correct": true
+          },
+          {
+            "text": "I don't like cheese.",
+            "textGe": "ყველი არ მომწონს.",
+            "correct": false,
+            "hint": "კარგი, მაგრამ ახლა კვერცხის პოვნა გვჭირდება."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Eggs are right next to the milk. Aisle 3 as well.",
+        "textGe": "კვერცხი რძის გვერდითაა. ისიც მე-3 რიგში."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Perfect, thank you for your help!",
+            "textGe": "შესანიშნავი, გმადლობთ დახმარებისთვის!",
+            "correct": true
+          },
+          {
+            "text": "Where is the airport?",
+            "textGe": "სად არის აეროპორტი?",
+            "correct": false,
+            "hint": "ჯერ საყიდლები დაასრულე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "level": "A1",
+    "title": "Talking About Hobbies",
+    "titleGe": "ჰობებზე საუბარი",
+    "icon": "🎨",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "What do you like to do in your free time?",
+        "textGe": "თავისუფალ დროს რას აკეთებ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "I like reading and playing football.",
+            "textGe": "კითხვა და ფეხბურთი მომწონს.",
+            "correct": true
+          },
+          {
+            "text": "I go to work every day.",
+            "textGe": "ყოველდღე სამსახურში მივდივარ.",
+            "correct": false,
+            "hint": "კითხვა თავისუფალ დროზეა, არა სამსახურზე."
+          },
+          {
+            "text": "I am 20 years old.",
+            "textGe": "20 წლის ვარ.",
+            "correct": false,
+            "hint": "კითხვა ჰობებზეა, არა ასაკზე."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "That's cool! Do you play football often?",
+        "textGe": "მაგარია! ხშირად თამაშობ ფეხბურთს?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Yes, I play every weekend with my friends.",
+            "textGe": "დიახ, ყოველ შაბათ-კვირას ვთამაშობ მეგობრებთან.",
+            "correct": true
+          },
+          {
+            "text": "No, I don't like sports.",
+            "textGe": "არა, სპორტი არ მომწონს.",
+            "correct": false,
+            "hint": "ახლახან თქვი რომ ფეხბურთი მოგწონს!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "level": "A1",
+    "title": "Describing Your Home",
+    "titleGe": "შენი სახლის აღწერა",
+    "icon": "🏠",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Where do you live?",
+        "textGe": "სად ცხოვრობ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "I live in an apartment in the city center.",
+            "textGe": "ქალაქის ცენტრში ბინაში ვცხოვრობ.",
+            "correct": true
+          },
+          {
+            "text": "I live in Georgia the country.",
+            "textGe": "საქართველოში ვცხოვრობ.",
+            "correct": false,
+            "hint": "უფრო კონკრეტულად უპასუხე — სახლის ტიპი და ლოკაცია."
+          },
+          {
+            "text": "I don't live anywhere.",
+            "textGe": "არსად ვცხოვრობ.",
+            "correct": false,
+            "hint": "ცადე რეალური პასუხი!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Nice! How many rooms does your apartment have?",
+        "textGe": "მაგარია! რამდენი ოთახი აქვს შენს ბინას?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "It has two bedrooms, a kitchen, and a living room.",
+            "textGe": "ორი საძინებელი, სამზარეულო და მისაღები აქვს.",
+            "correct": true
+          },
+          {
+            "text": "It has a swimming pool.",
+            "textGe": "საცურაო აუზი აქვს.",
+            "correct": false,
+            "hint": "ბინაში? ჯერ ოთახებზე ისაუბრე."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "level": "A2",
+    "title": "Booking a Taxi",
+    "titleGe": "ტაქსის დაჯავშნა",
+    "icon": "🚕",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Hello, where would you like to go?",
+        "textGe": "გამარჯობა, სად გინდათ წასვლა?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "To the train station, please. How much will it cost?",
+            "textGe": "სარკინიგზო სადგურთან, გეთაყვა. რა ღირს?",
+            "correct": true
+          },
+          {
+            "text": "I want to fly to Paris.",
+            "textGe": "პარიზში ფრენა მინდა.",
+            "correct": false,
+            "hint": "ეს ტაქსია, არა თვითმფრინავი!"
+          },
+          {
+            "text": "Take me somewhere nice.",
+            "textGe": "სადმე კარგ ადგილას წამიყვანე.",
+            "correct": false,
+            "hint": "ტაქსის მძღოლს კონკრეტული მისამართი უთხარი."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "About 15 lari. It will take 20 minutes.",
+        "textGe": "დაახლოებით 15 ლარი. 20 წუთი გასტანს."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "That's fine. Can you hurry? My train leaves at 3.",
+            "textGe": "კარგი. შეგიძლიათ იჩქაროთ? მატარებელი 3-ზე მიდის.",
+            "correct": true
+          },
+          {
+            "text": "That's too expensive. I'll walk.",
+            "textGe": "ძალიან ძვირია. ფეხით წავალ.",
+            "correct": false,
+            "hint": "სარკინიგზო სადგურამდე ფეხით?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "level": "A2",
+    "title": "At the Gym",
+    "titleGe": "სპორტდარბაზში",
+    "icon": "💪",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Hi! Are you new here? Would you like a tour of the gym?",
+        "textGe": "გამარჯობა! ახალი ხარ? გინდა დარბაზის ტური?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Yes, please! I just signed up today.",
+            "textGe": "დიახ, გეთაყვა! დღეს დავრეგისტრირდი.",
+            "correct": true
+          },
+          {
+            "text": "No, I've been coming here for 10 years.",
+            "textGe": "არა, 10 წელია დავდივარ.",
+            "correct": false,
+            "hint": "შენ ახალი წევრი ხარ!"
+          },
+          {
+            "text": "Where is the swimming pool?",
+            "textGe": "სად არის აუზი?",
+            "correct": false,
+            "hint": "ჯერ ტური მიიღე, მერე შეკითხვები."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Great! Here are the weights, and over there are the cardio machines.",
+        "textGe": "შესანიშნავი! აქ არის წონები, იქ კი კარდიო მანქანები."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Do you have a personal trainer available?",
+            "textGe": "პირადი მწვრთნელი გყავთ?",
+            "correct": true
+          },
+          {
+            "text": "I only want to use the sauna.",
+            "textGe": "მხოლოდ საუნის გამოყენება მინდა.",
+            "correct": false,
+            "hint": "ვარჯიშზეც იფიქრე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "level": "A2",
+    "title": "Birthday Party",
+    "titleGe": "დაბადების დღის წვეულება",
+    "icon": "🎂",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Hey! Are you coming to my birthday party on Saturday?",
+        "textGe": "ჰეი! შაბათს ჩემს დაბადების დღეზე მოხვალ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Of course! What time does it start?",
+            "textGe": "რა თქმა უნდა! რომელ საათზე იწყება?",
+            "correct": true
+          },
+          {
+            "text": "When is your birthday?",
+            "textGe": "როდის არის შენი დაბადების დღე?",
+            "correct": false,
+            "hint": "უკვე გითხრეს — შაბათს!"
+          },
+          {
+            "text": "I don't like parties.",
+            "textGe": "წვეულებები არ მომწონს.",
+            "correct": false,
+            "hint": "ცადე უფრო მეგობრული პასუხი!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "It starts at 7 PM. Should I save you a seat?",
+        "textGe": "7 საათზე იწყება. ადგილი დაგიტოვო?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Yes, please! Should I bring anything?",
+            "textGe": "დიახ, გეთაყვა! რაიმე მოვიტანო?",
+            "correct": true
+          },
+          {
+            "text": "No, I'll stand the whole time.",
+            "textGe": "არა, მთელ დროს ფეხზე ვიდგები.",
+            "correct": false,
+            "hint": "ადგილი მიიღე და რაიმეს მოტანა შესთავაზე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "level": "B1",
+    "title": "Returning a Product",
+    "titleGe": "პროდუქტის დაბრუნება",
+    "icon": "📦",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Hello, how can I help you today?",
+        "textGe": "გამარჯობა, რით შემიძლია დაგეხმაროთ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "I'd like to return this jacket. It doesn't fit properly.",
+            "textGe": "ამ ქურთუკის დაბრუნება მინდა. სწორად არ მეტევა.",
+            "correct": true
+          },
+          {
+            "text": "I want my money back for everything I've ever bought here.",
+            "textGe": "ფული მინდა ყველაფრისთვის რაც აქ მიყიდია.",
+            "correct": false,
+            "hint": "მხოლოდ ამ ქურთუკზეა საუბარი."
+          },
+          {
+            "text": "This store is terrible.",
+            "textGe": "ეს მაღაზია საშინელია.",
+            "correct": false,
+            "hint": "თავაზიანად ისაუბრე — უკეთეს მომსახურებას მიიღებ."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "I see. Do you have the receipt? We can offer an exchange or refund.",
+        "textGe": "გასაგებია. ჩეკი გაქვთ? გაცვლას ან თანხის დაბრუნებას შემოგთავაზებთ."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Yes, here's the receipt. I'd prefer a refund, please.",
+            "textGe": "დიახ, აი ჩეკი. თანხის დაბრუნებას ვამჯობინებ, გეთაყვა.",
+            "correct": true
+          },
+          {
+            "text": "No, I lost it. Can you still help?",
+            "textGe": "არა, დავკარგე. მაინც შეგიძლიათ დახმარება?",
+            "correct": false,
+            "hint": "ჩეკი გაქვს — უკეთესი პასუხია!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "level": "B1",
+    "title": "Planning a Trip",
+    "titleGe": "მოგზაურობის დაგეგმვა",
+    "icon": "✈️",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "So, where should we go for vacation this summer?",
+        "textGe": "ამ ზაფხულს შვებულებაში სად წავიდეთ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "How about Turkey? It's close and affordable.",
+            "textGe": "თურქეთი როგორ? ახლოსაა და ხელმისაწვდომი.",
+            "correct": true
+          },
+          {
+            "text": "Let's go to Mars.",
+            "textGe": "მარსზე წავიდეთ.",
+            "correct": false,
+            "hint": "რეალური ადგილი შეარჩიე!"
+          },
+          {
+            "text": "I don't want to go anywhere.",
+            "textGe": "არსად მინდა წასვლა.",
+            "correct": false,
+            "hint": "ცადე მოგზაურობაზე თანხმობა!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Turkey sounds great! Should we book a hotel or an Airbnb?",
+        "textGe": "თურქეთი კარგი აზრია! სასტუმრო დავჯავშნოთ თუ Airbnb?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "An Airbnb would be cheaper and we'd have a kitchen.",
+            "textGe": "Airbnb უფრო იაფი იქნება და სამზარეულოც გვექნება.",
+            "correct": true
+          },
+          {
+            "text": "Let's sleep on the beach.",
+            "textGe": "სანაპიროზე დავიძინოთ.",
+            "correct": false,
+            "hint": "კომფორტული ვარიანტი აირჩიე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "level": "B1",
+    "title": "Discussing Movies",
+    "titleGe": "ფილმებზე საუბარი",
+    "icon": "🎬",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Have you seen any good movies lately?",
+        "textGe": "ბოლო დროს კარგი ფილმი ნახე?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Yes! I watched an amazing thriller last weekend.",
+            "textGe": "დიახ! გასულ შაბათ-კვირას საოცარი თრილერი ვნახე.",
+            "correct": true
+          },
+          {
+            "text": "I never watch movies.",
+            "textGe": "ფილმებს არასოდეს ვუყურებ.",
+            "correct": false,
+            "hint": "საუბარი ფილმებზეა — ცადე მონაწილეობა!"
+          },
+          {
+            "text": "Movies are boring.",
+            "textGe": "ფილმები მოსაწყენია.",
+            "correct": false,
+            "hint": "უფრო საინტერესო პასუხი გასცე!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "What was it about? I love thrillers!",
+        "textGe": "რაზე იყო? თრილერები მიყვარს!"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "It's about a detective solving a mystery in a small town. The ending was unexpected!",
+            "textGe": "დეტექტივზეა რომელიც პატარა ქალაქში საიდუმლოებას ხსნის. დასასრული მოულოდნელი იყო!",
+            "correct": true
+          },
+          {
+            "text": "I don't remember.",
+            "textGe": "არ მახსოვს.",
+            "correct": false,
+            "hint": "ახლახან ნახე — აღწერე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "level": "A2",
+    "title": "Visiting a Friend",
+    "titleGe": "მეგობართან სტუმრად",
+    "icon": "🏡",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Come in! Make yourself at home. Would you like tea or coffee?",
+        "textGe": "შემოდი! თავი ისე იგრძენი როგორც შინ. ჩაი გინდა თუ ყავა?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Coffee, please. Your apartment looks great!",
+            "textGe": "ყავა, გეთაყვა. შენი ბინა მაგრად გამოიყურება!",
+            "correct": true
+          },
+          {
+            "text": "I want a five-course meal.",
+            "textGe": "ხუთკერძიანი სადილი მინდა.",
+            "correct": false,
+            "hint": "ჩაი ან ყავა შეარჩიე — ხუთკერძიანი სადილი ზედმეტია!"
+          },
+          {
+            "text": "No thanks, I'm leaving now.",
+            "textGe": "არა, მადლობა, მივდივარ.",
+            "correct": false,
+            "hint": "ახლა მოხვედი — დარჩი!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Thanks! I just moved in last month. Sugar in your coffee?",
+        "textGe": "მადლობა! გასულ თვეში გადმოვედი. შაქარი ყავაში?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Just a little, please. How do you like the new neighborhood?",
+            "textGe": "ცოტა, გეთაყვა. ახალი უბანი როგორ მოგწონს?",
+            "correct": true
+          },
+          {
+            "text": "Give me the whole bag of sugar.",
+            "textGe": "მთელი პაკეტი შაქარი მომეცი.",
+            "correct": false,
+            "hint": "ცოტა ზომიერება!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "level": "B1",
+    "title": "At the Post Office",
+    "titleGe": "ფოსტაზე",
+    "icon": "📮",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Next, please! How can I help you?",
+        "textGe": "შემდეგი, გეთაყვა! რით შემიძლია დაგეხმაროთ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "I need to send this package to Germany. What are my options?",
+            "textGe": "ეს ამანათი გერმანიაში უნდა გავაგზავნო. რა ვარიანტები მაქვს?",
+            "correct": true
+          },
+          {
+            "text": "I want to buy stamps for my collection.",
+            "textGe": "კოლექციისთვის მარკები მინდა ვიყიდო.",
+            "correct": false,
+            "hint": "ამანათის გაგზავნაზე ისაუბრე."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "You can send it by standard mail (2 weeks) or express (3-5 days). Express costs more.",
+        "textGe": "ჩვეულებრივი ფოსტით (2 კვირა) ან ექსპრესით (3-5 დღე). ექსპრესი უფრო ძვირია."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "I'll go with express. It's a birthday gift so it needs to arrive on time.",
+            "textGe": "ექსპრესს ავირჩევ. დაბადების დღის საჩუქარია და დროულად უნდა მივიდეს.",
+            "correct": true
+          },
+          {
+            "text": "Can you deliver it yourself?",
+            "textGe": "თავად ხომ ვერ მიიტანთ?",
+            "correct": false,
+            "hint": "ფოსტის თანამშრომელი ვერ წავა გერმანიაში!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "level": "B2",
+    "title": "Salary Negotiation",
+    "titleGe": "ხელფასზე მოლაპარაკება",
+    "icon": "💰",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "We'd like to offer you the position. The starting salary is $45,000.",
+        "textGe": "გვინდა შემოგთავაზოთ ეს პოზიცია. საწყისი ხელფასი $45,000-ია."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Thank you for the offer! Based on my experience and market rates, I was hoping for something closer to $55,000.",
+            "textGe": "მადლობა შეთავაზებისთვის! ჩემი გამოცდილებიდან და ბაზრის ფასებიდან გამომდინარე, $55,000-ზე ვიმედოვნებდი.",
+            "correct": true
+          },
+          {
+            "text": "That's too low. I want double.",
+            "textGe": "ძალიან ცოტაა. ორმაგი მინდა.",
+            "correct": false,
+            "hint": "მოლაპარაკება უფრო დიპლომატიურად წარმართე."
+          },
+          {
+            "text": "I'll take it!",
+            "textGe": "ვიღებ!",
+            "correct": false,
+            "hint": "მოლაპარაკება ისწავლე — პირველ შეთავაზებაზე ნუ დათანხმდები."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "I understand. We might be able to meet in the middle. Would $50,000 work?",
+        "textGe": "გასაგებია. შუაში შეიძლება შევხვდეთ. $50,000 გამოდგება?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "That works for me, especially if the benefits package is strong. Could you tell me about health insurance and vacation days?",
+            "textGe": "მიხდება, განსაკუთრებით თუ ბენეფიტების პაკეტი კარგია. ჯანმრთელობის დაზღვევასა და შვებულებაზე მიამბობთ?",
+            "correct": true
+          },
+          {
+            "text": "Fine, but I want a corner office too.",
+            "textGe": "კარგი, მაგრამ კუთხის ოფისიც მინდა.",
+            "correct": false,
+            "hint": "ჯერ ბენეფიტებზე ისაუბრე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "level": "B2",
+    "title": "Environmental Discussion",
+    "titleGe": "გარემოს დაცვაზე საუბარი",
+    "icon": "🌍",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "What do you think about climate change? Is enough being done?",
+        "textGe": "რას ფიქრობ კლიმატის ცვლილებაზე? საკმარისი კეთდება?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Honestly, I think we need much more urgent action. Governments and corporations need to take responsibility.",
+            "textGe": "გულწრფელად, ვფიქრობ ბევრად უფრო სასწრაფო ქმედებები გვჭირდება. მთავრობებმა და კორპორაციებმა პასუხისმგებლობა უნდა აიღონ.",
+            "correct": true
+          },
+          {
+            "text": "I don't believe in climate change.",
+            "textGe": "კლიმატის ცვლილების არ მჯერა.",
+            "correct": false,
+            "hint": "მეცნიერული ფაქტები გაითვალისწინე."
+          },
+          {
+            "text": "It's not my problem.",
+            "textGe": "ეს ჩემი პრობლემა არ არის.",
+            "correct": false,
+            "hint": "გარემო ყველას საზრუნავია!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "I agree. What can individuals do to make a difference?",
+        "textGe": "ვეთანხმები. რა შეუძლიათ ადამიანებს ცვლილებისთვის?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Small changes add up — reducing waste, using public transport, and supporting sustainable businesses.",
+            "textGe": "პატარა ცვლილებები გროვდება — ნარჩენების შემცირება, საზოგადოებრივი ტრანსპორტის გამოყენება და მდგრადი ბიზნესების მხარდაჭერა.",
+            "correct": true
+          },
+          {
+            "text": "Nothing, it's all up to governments.",
+            "textGe": "არაფერი, ყველაფერი მთავრობებზეა.",
+            "correct": false,
+            "hint": "ინდივიდუალურ ქმედებებსაც აქვს მნიშვნელობა!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "level": "B2",
+    "title": "Discussing Technology",
+    "titleGe": "ტექნოლოგიებზე საუბარი",
+    "icon": "🤖",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Do you think AI will replace most jobs in the future?",
+        "textGe": "ფიქრობ ხელოვნური ინტელექტი უმეტეს სამუშაოებს ჩაანაცვლებს მომავალში?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "I think AI will change many jobs rather than replace them entirely. People will need to adapt and learn new skills.",
+            "textGe": "ვფიქრობ AI ბევრ სამუშაოს შეცვლის და არა მთლიანად ჩაანაცვლებს. ხალხს ადაპტაცია და ახალი უნარების სწავლა მოუწევს.",
+            "correct": true
+          },
+          {
+            "text": "Yes, robots will take over everything.",
+            "textGe": "დიახ, რობოტები ყველაფერს დაიპყრობენ.",
+            "correct": false,
+            "hint": "უფრო ნიუანსური პასუხი გასცე."
+          },
+          {
+            "text": "No, AI is just a trend.",
+            "textGe": "არა, AI უბრალოდ ტრენდია.",
+            "correct": false,
+            "hint": "AI უკვე ბევრ ინდუსტრიას ცვლის."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Good point. Which industries do you think will be most affected?",
+        "textGe": "კარგი აზრია. რომელ ინდუსტრიებზე იქნება ყველაზე დიდი გავლენა?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Customer service, data entry, and basic accounting are already being automated. But creative and empathetic roles are harder to replace.",
+            "textGe": "მომხმარებელთა მომსახურება, მონაცემთა შეყვანა და ბუღალტერია უკვე ავტომატიზდება. მაგრამ შემოქმედებითი და ემპათიური როლები რთულია ჩასანაცვლებელი.",
+            "correct": true
+          },
+          {
+            "text": "All of them, within five years.",
+            "textGe": "ყველა, ხუთ წელიწადში.",
+            "correct": false,
+            "hint": "ცვლილება თანდათანობით ხდება."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "level": "A1",
+    "title": "Colors and Clothes",
+    "titleGe": "ფერები და ტანსაცმელი",
+    "icon": "👕",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "What color is your favorite shirt?",
+        "textGe": "შენი საყვარელი პერანგი რა ფერისაა?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "My favorite shirt is blue. I like blue very much.",
+            "textGe": "ჩემი საყვარელი პერანგი ლურჯია. ლურჯი ძალიან მომწონს.",
+            "correct": true
+          },
+          {
+            "text": "I don't wear shirts.",
+            "textGe": "პერანგებს არ ვიცვამ.",
+            "correct": false,
+            "hint": "საყვარელ ფერზე უპასუხე!"
+          },
+          {
+            "text": "Shirts are expensive.",
+            "textGe": "პერანგები ძვირია.",
+            "correct": false,
+            "hint": "კითხვა ფერზეა, არა ფასზე."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Blue is nice! Are you wearing blue now?",
+        "textGe": "ლურჯი მაგარია! ახლა ლურჯს იცვამ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "No, today I'm wearing a red T-shirt and black jeans.",
+            "textGe": "არა, დღეს წითელ მაისურს და შავ ჯინსს ვიცვამ.",
+            "correct": true
+          },
+          {
+            "text": "I don't know what I'm wearing.",
+            "textGe": "არ ვიცი რას ვიცვამ.",
+            "correct": false,
+            "hint": "შენი ტანსაცმელი აღწერე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "level": "B1",
+    "title": "Health and Fitness",
+    "titleGe": "ჯანმრთელობა და ფიტნესი",
+    "icon": "🏃",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Do you exercise regularly? I've been trying to get in shape.",
+        "textGe": "რეგულარულად ვარჯიშობ? ფორმაში მოსვლას ვცდილობ."
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Yes, I go to the gym three times a week and I also do MMA training.",
+            "textGe": "დიახ, კვირაში სამჯერ დარბაზში დავდივარ და MMA-ც ვვარჯიშობ.",
+            "correct": true
+          },
+          {
+            "text": "No, exercise is overrated.",
+            "textGe": "არა, ვარჯიში გადაჭარბებულად ფასდება.",
+            "correct": false,
+            "hint": "ფიტნესზე პოზიტიურად ისაუბრე!"
+          },
+          {
+            "text": "I eat healthy food.",
+            "textGe": "ჯანსაღ საკვებს ვჭამ.",
+            "correct": false,
+            "hint": "კითხვა ვარჯიშზეა — პირდაპირ უპასუხე."
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "MMA? That's impressive! What got you into it?",
+        "textGe": "MMA? შთამბეჭდავია! რამ მიგიყვანა?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "I wanted to learn self-defense and it's also a great full-body workout.",
+            "textGe": "თავდაცვის სწავლა მინდოდა და ასევე შესანიშნავი სრული სხეულის ვარჯიშია.",
+            "correct": true
+          },
+          {
+            "text": "I saw it on TV once.",
+            "textGe": "ერთხელ ტელევიზორში ვნახე.",
+            "correct": false,
+            "hint": "უფრო დეტალური მიზეზი მოიყვანე!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "level": "B2",
+    "title": "Freelancing Discussion",
+    "titleGe": "ფრილანსინგზე საუბარი",
+    "icon": "💻",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "I've been thinking about quitting my job and going freelance. What do you think?",
+        "textGe": "ვფიქრობ სამსახური დავტოვო და ფრილანსერი გავხდე. რას ფიქრობ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "It can be great, but make sure you have savings first and a few clients lined up before you quit.",
+            "textGe": "შეიძლება მაგარი იყოს, მაგრამ ჯერ დანაზოგი და რამდენიმე კლიენტი უნდა გქონდეს სანამ დატოვებ.",
+            "correct": true
+          },
+          {
+            "text": "Just quit tomorrow!",
+            "textGe": "ხვალვე დატოვე!",
+            "correct": false,
+            "hint": "უფრო გააზრებული რჩევა მიეცი."
+          },
+          {
+            "text": "Freelancing never works.",
+            "textGe": "ფრილანსინგი არასოდეს მუშაობს.",
+            "correct": false,
+            "hint": "ბევრი წარმატებული ფრილანსერი არსებობს!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "That makes sense. How do I find my first clients?",
+        "textGe": "ლოგიკურია. როგორ ვიპოვო პირველი კლიენტები?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Start with platforms like Upwork, build a portfolio, and network on LinkedIn. Word of mouth is also powerful.",
+            "textGe": "დაიწყე Upwork-ის მსგავსი პლატფორმებით, პორტფოლიო შექმენი და LinkedIn-ზე გააფართოვე ქსელი. რეკომენდაციებიც ძალიან ძლიერია.",
+            "correct": true
+          },
+          {
+            "text": "Just wait for clients to find you.",
+            "textGe": "დაელოდე კლიენტები თავად მოგიპოვონ.",
+            "correct": false,
+            "hint": "აქტიური ძიება გჭირდება!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "level": "A2",
+    "title": "Cooking Together",
+    "titleGe": "ერთად სამზარეულოში",
+    "icon": "🍳",
+    "turns": [
+      {
+        "speaker": "other",
+        "text": "Let's cook dinner together! What should we make?",
+        "textGe": "ერთად მოვამზადოთ სადილი! რა მოვამზადოთ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "How about pasta? It's easy and delicious.",
+            "textGe": "პასტა როგორ? მარტივი და გემრიელია.",
+            "correct": true
+          },
+          {
+            "text": "Let's order pizza instead.",
+            "textGe": "სჯობს პიცა შევუკვეთოთ.",
+            "correct": false,
+            "hint": "ერთად მომზადებაა მიზანი, არა შეკვეთა!"
+          },
+          {
+            "text": "I can't cook anything.",
+            "textGe": "ვერაფერს ვამზადებ.",
+            "correct": false,
+            "hint": "ცადე! პასტა მარტივია!"
+          }
+        ]
+      },
+      {
+        "speaker": "other",
+        "text": "Great idea! Can you chop the onions while I boil the water?",
+        "textGe": "კარგი აზრია! ხახვს დაჭრი სანამ წყალს ვადუღებ?"
+      },
+      {
+        "speaker": "user",
+        "options": [
+          {
+            "text": "Sure! Where is the cutting board? And do we need garlic too?",
+            "textGe": "რა თქმა უნდა! სად არის საჭრელი დაფა? და ნიორიც გვჭირდება?",
+            "correct": true
+          },
+          {
+            "text": "No, onions make me cry.",
+            "textGe": "არა, ხახვი მატირებს.",
+            "correct": false,
+            "hint": "ეს ნორმალურია — მაინც დაჭერი!"
+          }
+        ]
+      }
+    ]
   }
 ]

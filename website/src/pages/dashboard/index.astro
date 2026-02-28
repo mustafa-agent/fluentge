@@ -55,7 +55,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
       <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
         <p class="text-3xl font-bold" id="stat-cards">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი კატეგორიები</p>
+        <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი სიტყვები</p>
       </div>
     </div>
 
@@ -111,11 +111,19 @@ import Layout from '../../layouts/Layout.astro';
       const phrases = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
       const grammar = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
       const podcasts = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
-      const cards = JSON.parse(localStorage.getItem('knownCards') || '[]');
+      // Count unique base words from card progress
+      var cardProgress = {};
+      try { cardProgress = JSON.parse(localStorage.getItem('fluentge-card-progress') || '{}'); } catch(e) {}
+      var baseWords = {};
+      Object.keys(cardProgress).forEach(function(key) {
+        var base = key.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
+        baseWords[base] = true;
+      });
+      var wordCount = Object.keys(baseWords).length;
       document.getElementById('stat-phrases').textContent = phrases.length;
       document.getElementById('stat-grammar').textContent = grammar.length;
       document.getElementById('stat-podcasts').textContent = podcasts.length;
-      document.getElementById('stat-cards').textContent = cards.length;
+      document.getElementById('stat-cards').textContent = wordCount;
 
       // Continue where you left off logic
       var totalProgress = phrases.length + grammar.length + podcasts.length + cards.length;
