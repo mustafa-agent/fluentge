@@ -7,6 +7,24 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-02-28
 
+### Cron 3 — Features (5:00 AM)
+- **Session Summary after flashcard practice:**
+  - Tracks correct/wrong counts and session duration in real-time
+  - Shows 4-stat grid: total words, accuracy %, time, correct/total
+  - Green/red accuracy bar visualization
+  - "Hardest words" section showing top 5 most-missed words with attempt counts
+  - Words-per-minute speed stat
+  - Performance rating with emoji (🏆/👍/💪/📚) based on accuracy
+  - 3D Duolingo-style restart button
+- **Onboarding CTA on homepage:**
+  - New section between hero and Word of Day
+  - Gradient background with 👋 emoji
+  - "ახალი ხარ? დაიწყე აქედან!" heading
+  - 3 action buttons: Flashcards, Grammar A1, Games
+  - Responsive layout (stacks on mobile)
+- Deployed to Cloudflare Pages ✅
+- Git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **Extracted 365 hardcoded words** from index.astro → `public/data/words-of-day.json`
   - Homepage went from 472 lines to ~100 lines

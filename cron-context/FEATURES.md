@@ -3,8 +3,8 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Feb 28 night)
-- [🔄] **Session summary after flashcard practice** (words learned, accuracy, time) ← Cron 3 IN PROGRESS
-- [🔄] **Onboarding CTA on homepage** — "New here? Start with basics" button → A1 deck ← Cron 3 IN PROGRESS
+- [✅] **Session summary after flashcard practice** (words learned, accuracy, time) ← Cron 3 DONE
+- [✅] **Onboarding CTA on homepage** — "New here? Start with basics" button → A1 deck ← Cron 3 DONE
 - [ ] **Extract Word of Day to JSON** — remove 75+ hardcoded words from index.astro ← Cron 2
 - [ ] **Dashboard: streak counter + "continue learning" button** ← Cron 4
 - [ ] **Section links:** grammar lesson → related deck, flashcard session → related game ← Cron 4
@@ -64,7 +64,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
-(Crons update this section)
+- ✅ **Session summary after flashcard practice** — Rich summary with accuracy %, time elapsed, correct/wrong bar, hardest words list, speed stat (Cron 3, Feb 28)
+- ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
 (Crons update this section)

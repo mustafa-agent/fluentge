@@ -5,16 +5,75 @@ import path from 'node:path';
 
 export function getStaticPaths() {
   const grammarDir = path.resolve('..', 'content', 'grammar');
-  const files = fs.readdirSync(grammarDir).filter(f => f.endsWith('.json'));
-  return files.map(f => {
-    const lesson = JSON.parse(fs.readFileSync(path.join(grammarDir, f), 'utf-8'));
-    return { params: { slug: lesson.slug }, props: { lesson } };
+  const files = fs.readdirSync(grammarDir).filter(f => f.endsWith('.json')).sort();
+  const allLessons = files.map(f => JSON.parse(fs.readFileSync(path.join(grammarDir, f), 'utf-8')));
+  return allLessons.map((lesson, i) => {
+    const nextLesson = i < allLessons.length - 1 ? { slug: allLessons[i+1].slug, title_ka: allLessons[i+1].title_ka, level: allLessons[i+1].level } : null;
+    const prevLesson = i > 0 ? { slug: allLessons[i-1].slug, title_ka: allLessons[i-1].title_ka, level: allLessons[i-1].level } : null;
+    return { params: { slug: lesson.slug }, props: { lesson, nextLesson, prevLesson } };
   });
 }
 
-const { lesson } = Astro.props;
+const { lesson, nextLesson, prevLesson } = Astro.props;
 const FREE_GRAMMAR_SLUGS = ['to-be', 'articles', 'plural-nouns'];
 const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
+
+// Grammar → Flashcard deck mapping for interconnection
+const grammarToDecks: Record<string, {deck: string, label: string, emoji: string}[]> = {
+  'to-be': [
+    {deck: 'greetings-basics', label: 'მისალმებები', emoji: '👋'},
+    {deck: 'family-people', label: 'ოჯახი და ხალხი', emoji: '👨‍👩‍👧'},
+    {deck: 'jobs-professions', label: 'პროფესიები', emoji: '💼'},
+  ],
+  'articles': [
+    {deck: 'daily-routines', label: 'ყოველდღიური რუტინა', emoji: '☀️'},
+    {deck: 'food-drink', label: 'საჭმელი და სასმელი', emoji: '🍕'},
+    {deck: 'furniture-rooms', label: 'ავეჯი და ოთახები', emoji: '🏠'},
+  ],
+  'plural-nouns': [
+    {deck: 'animals', label: 'ცხოველები', emoji: '🐾'},
+    {deck: 'body-parts', label: 'სხეულის ნაწილები', emoji: '🦴'},
+    {deck: 'clothes-fashion', label: 'ტანსაცმელი', emoji: '👕'},
+  ],
+  'present-simple': [
+    {deck: 'daily-routines', label: 'ყოველდღიური რუტინა', emoji: '☀️'},
+    {deck: 'verbs-common', label: 'ხშირი ზმნები', emoji: '🏃'},
+    {deck: 'hobbies-free-time', label: 'ჰობი', emoji: '🎨'},
+  ],
+  'present-continuous': [
+    {deck: 'verbs-common', label: 'ხშირი ზმნები', emoji: '🏃'},
+    {deck: 'sports-fitness', label: 'სპორტი', emoji: '⚽'},
+    {deck: 'daily-routines', label: 'ყოველდღიური რუტინა', emoji: '☀️'},
+  ],
+  'subject-pronouns': [
+    {deck: 'greetings-basics', label: 'მისალმებები', emoji: '👋'},
+    {deck: 'family-people', label: 'ოჯახი', emoji: '👨‍👩‍👧'},
+  ],
+  'possessive-adjectives': [
+    {deck: 'family-people', label: 'ოჯახი', emoji: '👨‍👩‍👧'},
+    {deck: 'body-parts', label: 'სხეულის ნაწილები', emoji: '🦴'},
+    {deck: 'home-housing', label: 'სახლი', emoji: '🏠'},
+  ],
+  'prepositions-of-place': [
+    {deck: 'furniture-rooms', label: 'ავეჯი და ოთახები', emoji: '🏠'},
+    {deck: 'directions-places', label: 'მიმართულებები', emoji: '🧭'},
+    {deck: 'prepositions-conjunctions', label: 'წინდებულები', emoji: '📍'},
+  ],
+  'there-is-are': [
+    {deck: 'furniture-rooms', label: 'ავეჯი და ოთახები', emoji: '🏠'},
+    {deck: 'home-housing', label: 'სახლი', emoji: '🏡'},
+    {deck: 'colors-shapes', label: 'ფერები და ფორმები', emoji: '🎨'},
+  ],
+  'can-cant': [
+    {deck: 'sports-fitness', label: 'სპორტი', emoji: '⚽'},
+    {deck: 'hobbies-free-time', label: 'ჰობი', emoji: '🎨'},
+    {deck: 'verbs-common', label: 'ხშირი ზმნები', emoji: '🏃'},
+  ],
+};
+const relatedDecks = grammarToDecks[lesson.slug] || [
+  {deck: 'top-2000-words', label: 'ტოპ 2000 სიტყვა', emoji: '📚'},
+  {deck: 'verbs-common', label: 'ხშირი ზმნები', emoji: '🏃'},
+];
 ---
 
 <Layout title={`${lesson.title_ka} — FluentGe`}>
@@ -79,6 +138,54 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
       </div>
     </div>
 
+    <!-- Related Flashcard Decks -->
+    <div id="related-decks-section" class={isFree ? 'mt-8' : 'hidden mt-8'}>
+      <div class="bg-gradient-to-r from-sky-500/5 to-indigo-500/5 border border-sky-500/15 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xl">📝</span>
+          <h2 class="text-lg font-bold">დაკავშირებული ფლეშქარდები</h2>
+        </div>
+        <p class="text-[#6B6B65] text-sm mb-4">ისწავლე ლექსიკა, რომელიც ამ გაკვეთილთან არის დაკავშირებული:</p>
+        <div class="grid gap-2 sm:grid-cols-{relatedDecks.length > 2 ? '3' : '2'}">
+          {relatedDecks.map(d => (
+            <a href={`/flashcards/?deck=${d.deck}`} class="flex items-center gap-3 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:scale-[1.02] hover:border-sky-500/30">
+              <span class="text-lg">{d.emoji}</span>
+              <span class="text-sm font-medium">{d.label}</span>
+              <span class="text-[#6B6B65] ml-auto text-xs">→</span>
+            </a>
+          ))}
+        </div>
+        <div class="mt-4 pt-3 border-t border-white/5 flex items-center justify-between">
+          <span class="text-xs text-[#6B6B65]">🎮 სიტყვები + გრამატიკა = სწრაფი სწავლა!</span>
+          <a href="/flashcards/" class="text-xs text-sky-400 hover:text-sky-300 transition-colors">ყველა კატეგორია →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next/Previous Lesson Navigation -->
+    <div id="next-lesson-section" class={isFree ? 'mt-4' : 'hidden mt-4'}>
+      <div class="flex gap-3">
+        {prevLesson && (
+          <a href={`/grammar/${prevLesson.slug}/`} class="flex-1 flex items-center gap-3 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:scale-[1.02]">
+            <span class="text-[#6B6B65]">←</span>
+            <div class="min-w-0">
+              <p class="text-xs text-[#6B6B65]">წინა გაკვეთილი</p>
+              <p class="text-sm font-medium truncate">{prevLesson.title_ka}</p>
+            </div>
+          </a>
+        )}
+        {nextLesson && (
+          <a href={`/grammar/${nextLesson.slug}/`} class="flex-1 flex items-center justify-end gap-3 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:scale-[1.02] text-right">
+            <div class="min-w-0">
+              <p class="text-xs text-[#6B6B65]">შემდეგი გაკვეთილი</p>
+              <p class="text-sm font-medium truncate">{nextLesson.title_ka}</p>
+            </div>
+            <span class="text-[#6B6B65]">→</span>
+          </a>
+        )}
+      </div>
+    </div>
+
     <!-- Mark as learned -->
     <div id="mark-section" class={isFree ? 'mt-8 text-center' : 'hidden mt-8 text-center'}>
       <button id="mark-grammar-btn" data-title={lesson.title_en} class="inline-flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] border-2 border-[#6B6B65] rounded-xl px-6 py-3 font-semibold transition-colors">
@@ -98,6 +205,10 @@ const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
         if (pl) pl.classList.add('hidden');
         var ms = document.getElementById('mark-section');
         if (ms) ms.classList.remove('hidden');
+        var rd = document.getElementById('related-decks-section');
+        if (rd) rd.classList.remove('hidden');
+        var nl = document.getElementById('next-lesson-section');
+        if (nl) nl.classList.remove('hidden');
       }
       const btn = document.getElementById('mark-grammar-btn');
       if (!btn) return;

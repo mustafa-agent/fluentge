@@ -7,6 +7,39 @@ import Layout from '../../layouts/Layout.astro';
     <h1 class="font-['Playfair_Display',serif] text-3xl font-bold mb-2 text-center">📊 დეშბორდი</h1>
     <p class="text-[#A0A09A] text-center mb-10">შენი სწავლის სტატისტიკა</p>
 
+    <!-- Continue Where You Left Off -->
+    <div id="continue-card" class="hidden mb-8">
+      <div class="bg-gradient-to-r from-sky-500/10 to-indigo-500/10 border border-sky-500/20 rounded-2xl p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🚀</span>
+          <h2 class="font-bold text-lg">გააგრძელე სწავლა</h2>
+        </div>
+        <div id="continue-suggestions" class="space-y-2"></div>
+      </div>
+    </div>
+
+    <!-- Quick Start (shown when no progress yet) -->
+    <div id="quick-start" class="hidden mb-8">
+      <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">👋</span>
+          <h2 class="font-bold text-lg">დაიწყე სწავლა!</h2>
+        </div>
+        <p class="text-[#A0A09A] text-sm mb-3">აირჩიე სადან გინდა დაწყება:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <a href="/flashcards/" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-colors">
+            <span>📝</span><span class="text-sm font-medium">ფლეშქარდები</span>
+          </a>
+          <a href="/grammar/to-be/" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-colors">
+            <span>📖</span><span class="text-sm font-medium">გრამატიკა A1</span>
+          </a>
+          <a href="/games" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-colors">
+            <span>🎮</span><span class="text-sm font-medium">თამაშები</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div class="grid grid-cols-2 gap-4 mb-8">
       <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
         <p class="text-3xl font-bold" id="stat-phrases">0</p>
@@ -83,6 +116,81 @@ import Layout from '../../layouts/Layout.astro';
       document.getElementById('stat-grammar').textContent = grammar.length;
       document.getElementById('stat-podcasts').textContent = podcasts.length;
       document.getElementById('stat-cards').textContent = cards.length;
+
+      // Continue where you left off logic
+      var totalProgress = phrases.length + grammar.length + podcasts.length + cards.length;
+      var suggestions = [];
+
+      // Grammar progression: suggest next unlearned lesson
+      var grammarOrder = [
+        {slug:'to-be', title:'ზმნა "to be"'},
+        {slug:'articles', title:'არტიკლები (a/an/the)'},
+        {slug:'plural-nouns', title:'მრავლობითი რიცხვი'}
+      ];
+      var nextGrammar = grammarOrder.find(function(g) {
+        return !grammar.some(function(learned) { return learned.toLowerCase().includes(g.slug.replace('-',' ')); });
+      });
+      if (nextGrammar) {
+        suggestions.push({
+          icon: '📖',
+          text: 'გრამატიკა: ' + nextGrammar.title,
+          href: '/grammar/' + nextGrammar.slug + '/',
+          color: 'green'
+        });
+      }
+
+      // Flashcards: always a good suggestion
+      if (cards.length > 0) {
+        suggestions.push({
+          icon: '📝',
+          text: 'გააგრძელე ფლეშქარდები — ' + cards.length + ' სიტყვა ნასწავლი',
+          href: '/flashcards/',
+          color: 'sky'
+        });
+      } else {
+        suggestions.push({
+          icon: '📝',
+          text: 'დაიწყე ფლეშქარდები — ისწავლე ახალი სიტყვები',
+          href: '/flashcards/',
+          color: 'sky'
+        });
+      }
+
+      // Phrases: suggest if not many learned
+      if (phrases.length < 50) {
+        suggestions.push({
+          icon: '💬',
+          text: 'ისწავლე ყოველდღიური ფრაზები',
+          href: '/phrases/',
+          color: 'indigo'
+        });
+      }
+
+      // Games: suggest for variety
+      suggestions.push({
+        icon: '🎮',
+        text: 'ითამაშე და ისწავლე ინგლისური',
+        href: '/games',
+        color: 'amber'
+      });
+
+      // Show max 3 suggestions
+      suggestions = suggestions.slice(0, 3);
+
+      if (totalProgress === 0) {
+        document.getElementById('quick-start').classList.remove('hidden');
+      } else {
+        var card = document.getElementById('continue-card');
+        var container = document.getElementById('continue-suggestions');
+        card.classList.remove('hidden');
+        suggestions.forEach(function(s) {
+          var a = document.createElement('a');
+          a.href = s.href;
+          a.className = 'flex items-center gap-3 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:translate-x-1';
+          a.innerHTML = '<span class="text-lg">' + s.icon + '</span><span class="text-sm font-medium flex-1">' + s.text + '</span><span class="text-[#6B6B65]">→</span>';
+          container.appendChild(a);
+        });
+      }
     })();
   </script>
 </Layout>
