@@ -5,6 +5,24 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-01
+
+### Cron 1 — Strategy (1:00 AM)
+- **Sprint review:** "Retention & Habit Formation" sprint completed successfully
+  - Streak system ✅, XP system ✅, Daily goal ✅, Learning path ✅, Navbar gamification ✅, Light mode audit ✅
+- **New sprint set:** "Active Learning & Depth"
+  - #1: Quiz Mode — multiple-choice quiz for flashcard decks (active recall > passive flipping)
+  - #2: Typing Mode — type the translation, hardest mode, deepest learning
+  - #3: Expand free grammar from 3→8 lessons (full A1 free — hook users before paywall)
+  - #4: Achievements system — milestone badges for dashboard
+  - #5: Audio autoplay toggle
+- **Strategic insight:** We have the habit loop (streaks/XP). Now the learning itself needs to be active. Duolingo never shows you the answer first — they make you produce it (type, pick, arrange). Our flip-only flashcards are passive. Quiz + Typing modes fix this and dramatically improve retention.
+- **Free tier analysis:** 3 free grammar lessons is too restrictive. Users hit the paywall at lesson 4 before they're hooked. Expanding to 8 (full A1) gives users enough value to form habits before we ask them to pay. Duolingo's free tier is massive — that's how they get 500M users.
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md with tonight's assignments
+- Assigned: Cron 2 → design quiz/typing/achievements UI, Cron 3 → build quiz+typing modes, Cron 4 → free grammar expansion + achievements, Cron 5 → QA
+
+---
+
 ## 2026-02-28
 
 ### Cron 4B — Improvements (5:30 PM, Day Run)

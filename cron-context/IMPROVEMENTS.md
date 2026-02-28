@@ -55,11 +55,12 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Feb 28 night) — "Retention & Habit Formation"
-- [ ] **Light mode audit on ALL pages** (grammar, games, podcast, phrases, premium, about) ← Cron 2
-- [ ] **Design streak/XP visual components** (🔥 badge, XP counter, progress bar) ← Cron 2
-- [x] **Navbar streak + XP display** ← Cron 4 ✅
-- [x] **Learning path roadmap on dashboard** ← Cron 4 ✅
+## 🎯 THIS SPRINT (Mar 1 night) — "Active Learning & Depth"
+- [ ] **Design quiz mode UI** (multiple choice cards, correct/wrong states, results) ← Cron 2
+- [ ] **Design typing mode UI** (input field, validation feedback) ← Cron 2
+- [ ] **Design achievement badges** (icons, colors, unlock animations) ← Cron 2
+- [ ] **Expand free grammar** (3→8 free A1 lessons) ← Cron 4
+- [ ] **Achievements system on dashboard** ← Cron 4
 
 ## Recently Improved ✅
 - [x] Navbar streak 🔥 + XP ⭐ badges — shows in desktop & mobile nav when user has progress (Cron 4B, Feb 28)
@@ -68,8 +69,14 @@
 - [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-- Light mode audit (carried over from last sprint)
-- Streak/XP visual design
+- Quiz/Typing mode design (Sprint Mar 1 night)
+- Achievements design (Sprint Mar 1 night)
+
+## Previously Completed ✅ (Feb 28)
+- ✅ Light mode audit — all pages verified
+- ✅ Streak/XP/Daily Goal CSS and visual design
+- ✅ Navbar streak + XP display
+- ✅ Learning path roadmap on dashboard
 
 ## Notes
 - Each improvement cron picks 2 items

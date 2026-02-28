@@ -3,7 +3,7 @@ import { decks, Deck, isDeckFree } from '../lib/cards';
 import { getAllProgress } from '../lib/storage';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'srs' | 'reverse' | 'mixed') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed') => void;
 }
 
 const modes = [
@@ -11,7 +11,8 @@ const modes = [
   { id: 'reverse' as const, label: 'KA → EN', icon: '🔄', desc: 'ქართულიდან ინგლისურზე' },
   { id: 'mixed' as const, label: 'შერეული', icon: '🔀', desc: 'ორივე მიმართულება' },
   { id: 'srs' as const, label: 'თავისუფალი', icon: '🃏', desc: 'გადააბრუნე და შეაფასე' },
-  { id: 'quiz' as const, label: 'ქვიზი', icon: '⚡', desc: 'შეამოწმე ცოდნა' },
+  { id: 'quiz' as const, label: 'ქვიზი', icon: '⚡', desc: 'აირჩიე 4-დან სწორი' },
+  { id: 'typing' as const, label: 'წერა', icon: '✍️', desc: 'ჩაწერე თარგმანი · +25 XP' },
 ];
 
 export default function DeckSelect({ onSelect }: Props) {

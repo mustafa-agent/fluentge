@@ -7,6 +7,7 @@ interface Badge {
   icon: string;
   title: string;
   description: string;
+  gradient: string;
   check: () => boolean;
 }
 
@@ -34,52 +35,80 @@ function getBadges(): Badge[] {
     {
       id: 'words10',
       icon: '📖',
-      title: 'პირველი 10 სიტყვა',
+      title: 'პირველი ნაბიჯები',
       description: '10 სიტყვა ისწავლე',
+      gradient: 'from-sky-400 to-blue-500',
       check: () => stats.wordsLearned >= 10,
     },
     {
       id: 'words50',
       icon: '📚',
-      title: '50 სიტყვა',
+      title: 'სიტყვების შემგროვებელი',
       description: '50 სიტყვა ისწავლე',
+      gradient: 'from-green-400 to-emerald-500',
       check: () => stats.wordsLearned >= 50,
     },
     {
       id: 'words100',
       icon: '🎓',
-      title: '100 სიტყვა',
+      title: 'სიტყვების ოსტატი',
       description: '100 სიტყვა ისწავლე',
+      gradient: 'from-purple-400 to-indigo-500',
       check: () => stats.wordsLearned >= 100,
+    },
+    {
+      id: 'words500',
+      icon: '🧠',
+      title: 'ლექსიკონი',
+      description: '500 სიტყვა ისწავლე',
+      gradient: 'from-amber-400 to-orange-500',
+      check: () => stats.wordsLearned >= 500,
+    },
+    {
+      id: 'streak3',
+      icon: '🔥',
+      title: '3-დღიანი სტრიქი',
+      description: '3 დღე ზედიზედ ისწავლე',
+      gradient: 'from-orange-400 to-red-500',
+      check: () => stats.streak >= 3,
     },
     {
       id: 'streak7',
       icon: '🔥',
-      title: '7-დღიანი სტრიქი',
+      title: 'კვირის მეომარი',
       description: '7 დღე ზედიზედ ისწავლე',
+      gradient: 'from-red-400 to-rose-600',
       check: () => stats.streak >= 7,
     },
     {
-      id: 'speed_demon',
-      icon: '⚡',
-      title: 'სიჩქარის დემონი',
-      description: 'Speed Round-ში 10 სწორი პასუხი',
-      check: () => {
-        try {
-          const sr = JSON.parse(localStorage.getItem('fluentge_speed_best') || '0');
-          return sr >= 10;
-        } catch { return false; }
-      },
+      id: 'streak30',
+      icon: '💎',
+      title: 'თვის ჩემპიონი',
+      description: '30 დღე ზედიზედ ისწავლე',
+      gradient: 'from-cyan-400 to-blue-600',
+      check: () => stats.streak >= 30,
     },
     {
       id: 'perfect_quiz',
       icon: '💯',
       title: 'სრულყოფილი ქვიზი',
       description: 'ქვიზში 10/10 სწორი პასუხი',
+      gradient: 'from-yellow-400 to-amber-500',
       check: () => {
         try {
-          const pq = JSON.parse(localStorage.getItem('fluentge_perfect_quiz') || 'false');
-          return pq === true;
+          return JSON.parse(localStorage.getItem('fluentge_perfect_quiz') || 'false') === true;
+        } catch { return false; }
+      },
+    },
+    {
+      id: 'speed_demon',
+      icon: '⚡',
+      title: 'სიჩქარის დემონი',
+      description: 'Speed Round-ში 10 სწორი პასუხი',
+      gradient: 'from-yellow-300 to-yellow-500',
+      check: () => {
+        try {
+          return JSON.parse(localStorage.getItem('fluentge_speed_best') || '0') >= 10;
         } catch { return false; }
       },
     },
@@ -88,12 +117,12 @@ function getBadges(): Badge[] {
       icon: '🌟',
       title: 'ყველა კოლოდა',
       description: 'ყველა კოლოდა დაიწყე',
+      gradient: 'from-pink-400 to-rose-500',
       check: () => startedDecks.size >= decks.length,
     },
   ];
 }
 
-// Call this from other components to check for new achievements
 export function checkAchievements() {
   const badges = getBadges();
   const earned = getEarnedIds();
@@ -108,7 +137,6 @@ export function checkAchievements() {
   if (newEarned.length > 0) {
     const allEarned = [...earned, ...newEarned];
     saveEarnedIds(allEarned);
-    // Store toast for display
     const badge = badges.find(b => b.id === newEarned[0]);
     if (badge) {
       localStorage.setItem(TOAST_KEY, JSON.stringify({ icon: badge.icon, title: badge.title }));
@@ -133,7 +161,6 @@ export default function Achievements({ onBack }: Props) {
     }));
     setBadges(allBadges);
 
-    // Check for toast
     try {
       const t = localStorage.getItem(TOAST_KEY);
       if (t) {
@@ -148,48 +175,56 @@ export default function Achievements({ onBack }: Props) {
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
-      {/* Toast */}
+      {/* Achievement unlock toast */}
       {toast && (
-        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-[var(--color-primary)] text-white px-5 py-3 rounded-xl shadow-lg animate-bounce flex items-center gap-2">
-          <span className="text-2xl">{toast.icon}</span>
-          <span className="font-semibold">ახალი მიღწევა: {toast.title}!</span>
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-gradient-to-r from-amber-500 to-yellow-400 text-white px-6 py-3 rounded-2xl shadow-2xl animate-bounce flex items-center gap-3 border-b-4 border-amber-600">
+          <span className="text-3xl">{toast.icon}</span>
+          <div>
+            <div className="text-xs font-bold uppercase tracking-wider opacity-80">ახალი მიღწევა!</div>
+            <div className="font-extrabold">{toast.title}</div>
+          </div>
         </div>
       )}
 
-      <div className="flex justify-between items-center mb-6">
-        <button onClick={onBack} className="text-[var(--color-text-muted)] hover:text-white transition-colors">
-          ← უკან
+      {/* Header */}
+      <div className="flex items-center gap-3 mb-6">
+        <button onClick={onBack} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors text-xl">
+          ✕
         </button>
-        <span className="text-sm text-[var(--color-text-muted)]">
-          {earnedCount}/{badges.length} მიღწეული
+        <div className="flex-1" />
+        <span className="text-sm font-semibold text-[var(--color-text-muted)]">
+          {earnedCount}/{badges.length}
         </span>
       </div>
 
+      {/* Title + progress */}
       <div className="text-center mb-8">
-        <div className="text-4xl mb-2">🏆</div>
-        <h2 className="text-2xl font-bold">მიღწევები</h2>
-        <p className="text-sm text-[var(--color-text-muted)] mt-1">შეაგროვე ყველა ბეჯი!</p>
+        <div className="text-5xl mb-3">🏆</div>
+        <h2 className="text-3xl font-extrabold mb-2">მიღწევები</h2>
+        <p className="text-sm text-[var(--color-text-muted)]">შეაგროვე ყველა ბეჯი!</p>
+        <div className="mt-4 max-w-xs mx-auto quiz-progress-track">
+          <div className="h-full rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 transition-all duration-500" style={{ width: `${badges.length > 0 ? (earnedCount / badges.length) * 100 : 0}%` }} />
+        </div>
       </div>
 
+      {/* Badge grid */}
       <div className="grid gap-3">
         {badges.map(badge => (
           <div
             key={badge.id}
-            className={`flex items-center gap-4 p-4 rounded-xl border transition-all ${
-              badge.earned
-                ? 'bg-[var(--color-bg-card)] border-[var(--color-primary)]/30'
-                : 'bg-[var(--color-bg-card)] border-transparent opacity-50 grayscale'
-            }`}
+            className={`badge-card ${badge.earned ? 'earned' : 'locked'}`}
           >
-            <div className="text-3xl">{badge.icon}</div>
-            <div className="flex-1">
-              <div className="font-semibold">{badge.title}</div>
+            <div className={`badge-icon ${badge.earned ? `bg-gradient-to-br ${badge.gradient}` : ''}`}>
+              {badge.icon}
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="font-bold text-[var(--color-text)]">{badge.title}</div>
               <div className="text-sm text-[var(--color-text-muted)]">{badge.description}</div>
             </div>
             {badge.earned ? (
-              <div className="text-green-400 text-xl">✅</div>
+              <span className="text-green-400 text-xl flex-shrink-0">✅</span>
             ) : (
-              <div className="text-xl">🔒</div>
+              <span className="text-xl flex-shrink-0">🔒</span>
             )}
           </div>
         ))}

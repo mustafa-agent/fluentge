@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Feb 28 night) — "Retention & Habit Formation"
-- [ ] **🔥 Streak System** — Track daily streaks in localStorage, show on dashboard + navbar ← Cron 3
-- [ ] **⭐ XP System** — Earn XP for flashcards (+20), grammar (+50), games (+15), phrases (+10) ← Cron 3
-- [ ] **🎯 Daily Goal** — Set target (10/20/50 words), show progress bar on dashboard ← Cron 3
-- [ ] **🗺️ Learning Path** — Structured beginner roadmap on dashboard (Week 1-4) ← Cron 4
-- [ ] **🔥 Streak + XP in navbar** — Show streak fire + XP count in top nav ← Cron 4
+### 🎯 THIS SPRINT (Mar 1 night) — "Active Learning & Depth"
+- [ ] **❓ Quiz Mode** — Multiple-choice quiz for flashcard decks (pick correct translation from 4 options) ← Cron 3
+- [ ] **⌨️ Typing Mode** — Type the English translation, check answer. Hard mode = deep learning. +25 XP ← Cron 3
+- [ ] **🔓 Expand Free Grammar** — 3→8 free lessons (full A1 unlocked) ← Cron 4
+- [ ] **🏆 Achievements System** — Milestone badges on dashboard ← Cron 4
+- [ ] **🔊 Audio Autoplay** — Option to auto-play pronunciation on card appear ← Cron 4
 
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
@@ -70,7 +70,15 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Streak + XP + Daily Goal system (Sprint Feb 28 night)
+- Quiz Mode + Typing Mode (Sprint Mar 1 night)
+- Achievements system (Sprint Mar 1 night)
+
+## Previously Completed ✅ (Feb 28 Night Sprint)
+- ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar
+- ✅ XP System — earn XP for all activities, levels, floating animations
+- ✅ Daily Goal — progress tracking with visual bar
+- ✅ Learning Path — 10-step beginner roadmap on dashboard
+- ✅ Navbar gamification — streak 🔥 + XP ⭐ badges
 
 ## Notes
 - Each feature cron picks 2 items from HIGH priority

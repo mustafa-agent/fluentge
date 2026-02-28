@@ -3,13 +3,14 @@ import DeckSelect from './components/DeckSelect';
 import StudyScreen from './components/StudyScreen';
 import SRSStudy from './components/SRSStudy';
 import QuizScreen from './components/QuizScreen';
+import TypingScreen from './components/TypingScreen';
 import StatsBar from './components/StatsBar';
 import ChallengeFriend from './components/ChallengeFriend';
 import { Deck, decks } from './lib/cards';
 import SpacedRepetition from './components/SpacedRepetition';
 import { loadFromCloud, syncToCloud } from './lib/firebase-sync';
 
-type Screen = 'home' | 'study' | 'quiz' | 'challenge' | 'srs-dashboard';
+type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'challenge' | 'srs-dashboard';
 type StudyMode = 'classic' | 'srs' | 'reverse' | 'mixed';
 
 export default function App() {
@@ -35,10 +36,12 @@ export default function App() {
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
 
-  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'srs' | 'reverse' | 'mixed' = 'study') {
+  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' = 'study') {
     setActiveDeck(deck);
     if (mode === 'quiz') {
       setScreen('quiz');
+    } else if (mode === 'typing') {
+      setScreen('typing');
     } else if (mode === 'srs') {
       setStudyMode('srs');
       setScreen('study');
@@ -149,6 +152,10 @@ export default function App() {
                   <h4 className="font-bold text-[var(--color-text)] mb-1">⚡ ქვიზი</h4>
                   <p>შეამოწმე რამდენად კარგად იცი სიტყვები. 4 პასუხიდან აირჩიე სწორი!</p>
                 </div>
+                <div>
+                  <h4 className="font-bold text-[var(--color-text)] mb-1">✍️ წერა</h4>
+                  <p>ყველაზე რთული რეჟიმი! ნახე ქართული სიტყვა და ჩაწერე ინგლისური თარგმანი. +25 XP ყოველ სწორ პასუხზე!</p>
+                </div>
               </div>
             </details>
           </div>
@@ -167,6 +174,7 @@ export default function App() {
           : <StudyScreen key={activeDeck.id + '-' + studyMode} deck={activeDeck} direction={studyMode === 'reverse' ? 'ka-en' : studyMode === 'mixed' ? 'mixed' : 'en-ka'} onBack={handleBack} />
       )}
       {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={decks.flatMap(d => d.cards)} onBack={handleBack} />}
+      {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
       {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
       {screen === 'srs-dashboard' && <SpacedRepetition onBack={handleBack} />}
     </div>

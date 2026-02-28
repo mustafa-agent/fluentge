@@ -60,7 +60,15 @@
 - [x] Extract hardcoded words from homepage to JSON (365 words → words-of-day.json)
 - [x] Homepage vibrant redesign (gradient text, 3D buttons, colorful badges)
 - [x] Add light mode CSS for new color classes
-- [x] Audit ALL other pages for light mode visibility (grammar, games, podcast, phrases, premium, about) ✅ Feb 28
+- [x] Audit ALL other pages for light mode visibility ✅ Feb 28
+- [x] Design streak/XP/daily goal components ✅ Feb 28
+
+### THIS SPRINT (Mar 1 night) — Cron 2 Tasks:
+- [ ] **Quiz Mode UI** — Multiple choice cards (4 options), correct (green pulse) / wrong (red shake) states, score screen at end, Duolingo-style progress bar at top
+- [ ] **Typing Mode UI** — Clean input field, submit button, correct/wrong feedback with correct answer shown, streak counter for consecutive correct
+- [ ] **Achievement Badges** — Design 6-8 badge icons using emoji + gradient backgrounds. Locked (gray) vs unlocked (colorful) states. Unlock animation (scale + glow).
+
+### Backlog:
 - [ ] Replace flat buttons with 3D buttons on other pages (grammar, games)
 - [ ] Ensure flashcard app matches website design
 - [ ] Add micro-animations for engagement
