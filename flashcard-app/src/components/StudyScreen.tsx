@@ -91,6 +91,13 @@ interface Props {
 export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props) {
   const storageSuffix: StorageSuffix = direction === 'mixed' ? 'mixed' : dirToSuffix(direction);
   
+  // Session tracking
+  const sessionStartTime = useRef(Date.now());
+  const [correctCount, setCorrectCount] = useState(0);
+  const [wrongCount, setWrongCount] = useState(0);
+  const [hardestWords, setHardestWords] = useState<Array<{en: string, ka: string, attempts: number}>>([]);
+  const wrongCountMap = useRef<Map<string, number>>(new Map());
+  
   // Queue of card indices remaining
   const [queue, setQueue] = useState<FlashCard[]>(() => {
     // Try to restore saved session
@@ -170,6 +177,15 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     if (!card) return;
     const wasCorrect = guessResult === 'correct';
     
+    // Track stats
+    if (wasCorrect) {
+      setCorrectCount(c => c + 1);
+    } else {
+      setWrongCount(c => c + 1);
+      const key = card.english;
+      wrongCountMap.current.set(key, (wrongCountMap.current.get(key) || 0) + 1);
+    }
+    
     setFlipped(false);
     setGuess('');
     setGuessResult(null);
@@ -177,20 +193,23 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     setQueue(prev => {
       const rest = prev.slice(1);
       if (wasCorrect) {
-        // Card removed — guessed correctly
         if (rest.length === 0) {
-          // All done!
           clearSessionProgress(deck.id, storageSuffix);
+          // Build hardest words list
+          const sorted = [...wrongCountMap.current.entries()]
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 5)
+            .map(([en, attempts]) => {
+              const c = deck.cards.find(c => c.english === en);
+              return { en, ka: c?.georgian || '', attempts };
+            });
+          setHardestWords(sorted);
           setSessionDone(true);
           return [];
         }
         return rest;
       } else {
-        // Wrong — move to bottom
-        if (rest.length === 0) {
-          // Only this card left, keep it
-          return [prev[0]];
-        }
+        if (rest.length === 0) return [prev[0]];
         return [...rest, prev[0]];
       }
     });
@@ -207,7 +226,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     if (!flipped && card) {
       setFlipped(true);
       if (!guess.trim() && !guessResult) {
-        // Tapped without guessing = wrong
+        // Tapped without guessing = skipped (counted as wrong)
         const id = getCardId(card, storageSuffix);
         const progress = getCardProgress(id);
         const updated = sm2(progress, 1);
@@ -229,22 +248,100 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
   }
 
   if (sessionDone) {
+    const elapsedMs = Date.now() - sessionStartTime.current;
+    const minutes = Math.floor(elapsedMs / 60000);
+    const seconds = Math.floor((elapsedMs % 60000) / 1000);
+    const totalAttempts = correctCount + wrongCount;
+    const accuracy = totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : 100;
+    const isPerfect = wrongCount === 0;
+    const wordsPerMin = minutes > 0 ? Math.round(totalCards / minutes) : totalCards;
+
+    // Performance rating
+    let emoji = '🎉';
+    let ratingText = 'შესანიშნავი!';
+    let ratingColor = 'text-green-400';
+    if (accuracy >= 90) { emoji = '🏆'; ratingText = 'შესანიშნავი!'; ratingColor = 'text-green-400'; }
+    else if (accuracy >= 70) { emoji = '👍'; ratingText = 'კარგი შედეგი!'; ratingColor = 'text-yellow-400'; }
+    else if (accuracy >= 50) { emoji = '💪'; ratingText = 'გააგრძელე ვარჯიში!'; ratingColor = 'text-orange-400'; }
+    else { emoji = '📚'; ratingText = 'მეტი ვარჯიში სჭირდება'; ratingColor = 'text-red-400'; }
+
     return (
-      <div className="px-4 py-12 max-w-lg mx-auto text-center">
-        <div className="text-6xl mb-4">🎉</div>
-        <h2 className="text-2xl font-bold mb-2">ყველა სიტყვა გამოიცანი!</h2>
-        <p className="text-[var(--color-text-muted)] mb-2">
-          {totalCards} სიტყვა ისწავლე ამ კატეგორიაში
-        </p>
-        <p className="text-[var(--color-text-muted)] mb-6 text-sm">
-          🏆 შესანიშნავი შედეგი!
-        </p>
+      <div className="px-4 py-8 max-w-lg mx-auto">
+        {/* Header */}
+        <div className="text-center mb-6">
+          <div className="text-6xl mb-3">{emoji}</div>
+          <h2 className="text-2xl font-bold mb-1">სესია დასრულდა!</h2>
+          <p className={`text-lg font-semibold ${ratingColor}`}>{ratingText}</p>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 gap-3 mb-6">
+          <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 text-center border border-white/5">
+            <div className="text-3xl font-bold text-[var(--color-text)]">{totalCards}</div>
+            <div className="text-xs text-[var(--color-text-muted)] mt-1">📝 სიტყვა</div>
+          </div>
+          <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 text-center border border-white/5">
+            <div className={`text-3xl font-bold ${accuracy >= 70 ? 'text-green-400' : accuracy >= 50 ? 'text-yellow-400' : 'text-red-400'}`}>{accuracy}%</div>
+            <div className="text-xs text-[var(--color-text-muted)] mt-1">🎯 სიზუსტე</div>
+          </div>
+          <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 text-center border border-white/5">
+            <div className="text-3xl font-bold text-[var(--color-text)]">{minutes > 0 ? `${minutes}:${seconds.toString().padStart(2, '0')}` : `${seconds}წმ`}</div>
+            <div className="text-xs text-[var(--color-text-muted)] mt-1">⏱️ დრო</div>
+          </div>
+          <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 text-center border border-white/5">
+            <div className="text-3xl font-bold text-[var(--color-text)]">{isPerfect ? '🔥' : `${correctCount}/${totalAttempts}`}</div>
+            <div className="text-xs text-[var(--color-text-muted)] mt-1">{isPerfect ? 'პერფექტული!' : '✅ სწორი / სულ'}</div>
+          </div>
+        </div>
+
+        {/* Accuracy Bar */}
+        <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 mb-6 border border-white/5">
+          <div className="flex justify-between text-sm mb-2">
+            <span className="text-green-400">✅ სწორი: {correctCount}</span>
+            <span className="text-red-400">❌ არასწორი: {wrongCount}</span>
+          </div>
+          <div className="h-3 bg-white/10 rounded-full overflow-hidden flex">
+            {correctCount > 0 && (
+              <div className="h-full bg-green-400 rounded-l-full transition-all" style={{ width: `${(correctCount / totalAttempts) * 100}%` }} />
+            )}
+            {wrongCount > 0 && (
+              <div className="h-full bg-red-400 rounded-r-full transition-all" style={{ width: `${(wrongCount / totalAttempts) * 100}%` }} />
+            )}
+          </div>
+        </div>
+
+        {/* Hardest Words */}
+        {hardestWords.length > 0 && (
+          <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 mb-6 border border-white/5">
+            <h3 className="font-semibold text-sm mb-3 text-[var(--color-text-muted)]">🔴 ყველაზე რთული სიტყვები</h3>
+            <div className="space-y-2">
+              {hardestWords.map(w => (
+                <div key={w.en} className="flex items-center justify-between text-sm">
+                  <div>
+                    <span className="font-medium">{w.en}</span>
+                    <span className="text-[var(--color-text-muted)] ml-2">— {w.ka}</span>
+                  </div>
+                  <span className="text-red-400 text-xs">{w.attempts}x არასწორი</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Speed stat */}
+        {minutes > 0 && (
+          <div className="text-center text-sm text-[var(--color-text-muted)] mb-6">
+            ⚡ სიჩქარე: ~{wordsPerMin} სიტყვა/წუთში
+          </div>
+        )}
+
+        {/* Actions */}
         <div className="flex flex-col gap-3">
-          <button onClick={restartSession} className="bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold px-6 py-3 rounded-xl transition-colors">
+          <button onClick={restartSession} className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors border-b-4 border-green-700 active:border-b-0 active:mt-1">
             თავიდან დაწყება 🔄
           </button>
-          <button onClick={onBack} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] text-[var(--color-text)] font-semibold px-6 py-3 rounded-xl transition-colors">
-            უკან დაბრუნება
+          <button onClick={onBack} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] text-[var(--color-text)] font-semibold px-6 py-3 rounded-xl transition-colors border border-white/5">
+            სხვა კატეგორია 📝
           </button>
         </div>
       </div>

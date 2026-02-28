@@ -57,8 +57,16 @@
 - **Badges:** rounded-full, small, colorful
 
 ## TODO (Design Cron)
-- [ ] Audit all pages for light mode visibility
-- [ ] Create vibrant accent color palette
+- [x] Extract hardcoded words from homepage to JSON (365 words → words-of-day.json)
+- [x] Homepage vibrant redesign (gradient text, 3D buttons, colorful badges)
+- [x] Add light mode CSS for new color classes
+- [ ] Audit ALL other pages for light mode visibility (grammar, games, podcast, phrases, premium, about)
+- [ ] Replace flat buttons with 3D buttons on other pages (grammar, games)
 - [ ] Ensure flashcard app matches website design
 - [ ] Add micro-animations for engagement
-- [ ] Standardize card/button components
+- [ ] Standardize card/button components across all pages
+- [ ] Dark mode: consider richer navy bg instead of flat #1C1C1E
+
+## Deploy Note
+⚠️ Must remove `dist/flashcards/audio/words/` before deploying (16k duplicate files hit 20k limit).
+Add to build script or do manually after build.

@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-02-28
 
+### Cron 2 — Design (3:00 AM)
+- **Extracted 365 hardcoded words** from index.astro → `public/data/words-of-day.json`
+  - Homepage went from 472 lines to ~100 lines
+- **Homepage redesign — vibrant & engaging:**
+  - Gradient text hero (sky→green) replacing plain muted text
+  - "#1 platform" badge with green accent
+  - 3D Duolingo-style green CTA buttons (border-b-4 press effect)
+  - Colorful stat badges (sky, indigo, amber, rose) replacing white/10
+  - Word of the Day: gradient top bar, sky-300 translation color
+  - Feature cards: icon overlays, hover lift (-translate-y-1)
+  - CTA section: gradient bg, accent bar, "უფასოდ" in green
+- **Light mode CSS** additions for new color classes (green-500, sky-400, gradients)
+- **Fixed Cloudflare deploy** — removed duplicate `flashcards/audio/words/` (16k files) to stay under 20k limit
+- Deployed & verified via screenshot ✅
+- Git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - Reviewed live site: homepage, grammar, flashcards, competitor (lingwing.com)
 - Set sprint theme: "First Impressions & Core Loop"

@@ -3,8 +3,8 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Feb 28 night)
-- [ ] **Session summary after flashcard practice** (words learned, accuracy, time) ← Cron 3
-- [ ] **Onboarding CTA on homepage** — "New here? Start with basics" button → A1 deck ← Cron 3
+- [🔄] **Session summary after flashcard practice** (words learned, accuracy, time) ← Cron 3 IN PROGRESS
+- [🔄] **Onboarding CTA on homepage** — "New here? Start with basics" button → A1 deck ← Cron 3 IN PROGRESS
 - [ ] **Extract Word of Day to JSON** — remove 75+ hardcoded words from index.astro ← Cron 2
 - [ ] **Dashboard: streak counter + "continue learning" button** ← Cron 4
 - [ ] **Section links:** grammar lesson → related deck, flashcard session → related game ← Cron 4
