@@ -26,12 +26,15 @@ FluentGe is THE English learning platform for Georgians. Professional quality th
 - 61 game/flashcard components
 - Grammar lessons (A1 free: to-be, articles, plural-nouns; rest premium-gated)
 - Podcast section with audio
-- Dashboard with progress tracking
+- Dashboard with progress tracking + "continue where you left off"
 - Firebase auth (Google SSO + email)
 - Light/dark mode
 - PWA support
 - Premium/free tier system
 - Phrases page (1,695 phrases, 40 categories)
+- Session summary after flashcard practice ✅
+- Onboarding CTA on homepage ✅
+- Grammar ↔ Flashcard interconnection ✅
 
 ## Architecture
 - **Website:** Astro (SSG) at `/` — landing, grammar, podcasts, dashboard, blog
@@ -74,31 +77,32 @@ See DESIGN.md for current design rules and standards.
 
 ## 🎯 Current Sprint (Feb 28 Night Cycle)
 
-### Theme: "First Impressions & Core Loop"
-A new user should: Land → Understand value → Start learning → Feel progress → Come back.
+### Theme: "Retention & Habit Formation"
+Last sprint built first impressions. Now we build the habit loop: come back → learn → feel progress → earn rewards → come back again.
 
 ### Sprint Goals (ordered by priority)
 
-1. **🔴 Onboarding Flow** — When a new user visits, guide them to START learning immediately. Currently there's no "where do I begin?" path. Add a clear learning path suggestion or placement test.
+1. **🔴 Streak System** — Track daily learning streaks in localStorage. Show streak count on dashboard + navbar. This is THE #1 retention lever. Duolingo proved streaks = retention. Show 🔥 streak badge. Streak breaks after 24h of no activity. Even a simple implementation is huge.
 
-2. **🔴 Flashcard Session Summary** — After a practice session, show words learned, accuracy, time. This is the core dopamine loop (Duolingo does this perfectly).
+2. **🔴 XP System** — Earn XP for every action: complete a flashcard session (+20 XP), finish grammar lesson (+50 XP), play a game (+15 XP), learn phrases (+10 XP). Show daily XP on dashboard. This gives every action a tangible reward. Store in localStorage.
 
-3. **🔴 Homepage "Word of the Day" fix** — Currently hardcoded 75+ words in index.astro (472 lines!). Extract to a JSON file, pick truly random daily word. Keep homepage clean.
+3. **🔴 Daily Goal** — Let users set a daily target (10, 20, or 50 words). Show progress bar toward daily goal on dashboard. Simple but powerful — "I'm 15/20 today, let me do 5 more."
 
-4. **🟡 Dashboard Motivation** — Add streak counter, XP earned today, and "continue where you left off" to dashboard. Even if basic, it creates return visits.
+4. **🟡 Light Mode Audit** — Carried over from last sprint. Check ALL pages (grammar, games, podcast, phrases, premium, about) in light mode. Fix any unreadable text or invisible elements.
 
-5. **🟡 Section Interconnection** — After grammar lesson, suggest flashcard deck. After flashcard session, suggest a game. This keeps users in the learning loop.
+5. **🟡 Learning Path** — Add a structured beginner path: "Week 1: Greetings + To Be → Week 2: Family + Articles → Week 3: Food + Plural Nouns". Show on dashboard as a roadmap. Guides new users instead of letting them wander.
 
-6. **🟢 Design Consistency Audit** — Ensure all pages look cohesive in both light/dark mode.
+6. **🟢 Performance** — The flashcard app bundle is 6.4MB. Investigate lazy loading, code splitting. Even basic improvements help mobile users in Georgia (slow connections).
 
 ### For Each Cron Tonight:
-- **Cron 2 (Design, 3AM):** Focus on homepage cleanup, "word of day" extraction, light/dark mode audit
-- **Cron 3 (Features, 5AM):** Build flashcard session summary + basic onboarding CTA
-- **Cron 4 (Improvements, 7AM):** Section interconnection + dashboard motivation
-- **Cron 5 (QA, 9AM):** Full test of all pages, verify builds, check mobile
+- **Cron 2 (Design, 3AM):** Light mode audit on ALL pages. Fix issues. Also: design the streak/XP visual components (🔥 badge, XP counter, daily goal progress bar) so they're ready for Cron 3.
+- **Cron 3 (Features, 5AM):** Build streak system + XP system + daily goal. These are the core retention features. Implement in both flashcard app (React) and website pages (Astro). Store in localStorage.
+- **Cron 4 (Improvements, 7AM):** Learning path on dashboard. Show streak + XP in navbar. Polish the habit loop.
+- **Cron 5 (QA, 9AM):** Full test of all pages, verify streak/XP work, check mobile, light mode, verify builds.
 
 ## Notes for Crons
 - Always build AND deploy after changes
 - Always test that changes don't break existing features
 - Commit to git after successful deploy
 - Update this file and other context files as needed
+- ⚠️ Remove `dist/flashcards/audio/words/` before deploying (16k files hit 20k limit)

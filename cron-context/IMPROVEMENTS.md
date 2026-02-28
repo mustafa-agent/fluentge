@@ -55,17 +55,19 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Feb 28 night)
-- [ ] Homepage index.astro cleanup — extract word list, reduce from 472 lines ← Cron 2
-- [ ] Light/dark mode audit on all pages ← Cron 2
-- [ ] Dashboard: "continue where you left off" card ← Cron 4
-- [ ] Grammar → flashcards interconnection links ← Cron 4
+## 🎯 THIS SPRINT (Feb 28 night) — "Retention & Habit Formation"
+- [ ] **Light mode audit on ALL pages** (grammar, games, podcast, phrases, premium, about) ← Cron 2
+- [ ] **Design streak/XP visual components** (🔥 badge, XP counter, progress bar) ← Cron 2
+- [ ] **Navbar streak + XP display** ← Cron 4
+- [ ] **Learning path roadmap on dashboard** ← Cron 4
 
 ## Recently Improved ✅
-(Crons update this section)
+- [x] Dashboard "continue where you left off" — smart card with personalized suggestions based on progress (Cron 4, Feb 28)
+- [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-(Crons update this section)
+- Light mode audit (carried over from last sprint)
+- Streak/XP visual design
 
 ## Notes
 - Each improvement cron picks 2 items

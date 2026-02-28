@@ -7,6 +7,34 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-02-28
 
+### Cron 1B — Strategy (11:30 AM, Day Run)
+- **Sprint review:** Last night's "First Impressions & Core Loop" sprint completed successfully
+  - Session summary ✅, Onboarding CTA ✅, Homepage redesign ✅, Dashboard continue card ✅, Grammar interconnection ✅
+- **New sprint set:** "Retention & Habit Formation"
+  - #1 priority: Streak system (🔥 daily streaks in localStorage)
+  - #2: XP system (earn points for every learning action)
+  - #3: Daily goal (set target words, track progress)
+  - #4: Light mode audit (carried over)
+  - #5: Learning path (structured beginner roadmap)
+- **Strategic insight:** We built the first impression, now we need the habit loop. Duolingo's entire $8B valuation is built on streaks + daily goals. Even a basic localStorage implementation gives us this.
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md with tonight's assignments
+- Assigned: Cron 2 → light mode + streak design, Cron 3 → build streak/XP/goal, Cron 4 → learning path + navbar, Cron 5 → QA
+
+### Cron 4 — Improvements (7:00 AM)
+- **Dashboard "Continue where you left off" card:**
+  - Smart detection of user progress from localStorage
+  - Suggests next grammar lesson, flashcard practice, phrases, games
+  - Shows "Quick Start" card for brand-new users (0 progress) with 3 action buttons
+  - Personalized text based on cards learned count
+- **Grammar → Flashcard interconnection:**
+  - Each grammar lesson now shows "Related Flashcard Decks" section
+  - 10 grammar topics mapped to relevant vocabulary decks (to-be → greetings, family, jobs; articles → daily routines, food; etc.)
+  - Fallback decks (top-2000-words, verbs-common) for unmapped lessons
+  - Previous/Next lesson navigation added to all grammar lesson pages
+  - Premium users see interconnection links too (unlocked via JS)
+- Deployed to Cloudflare Pages ✅
+- Git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **Session Summary after flashcard practice:**
   - Tracks correct/wrong counts and session duration in real-time

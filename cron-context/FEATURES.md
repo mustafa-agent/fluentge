@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Feb 28 night)
-- [✅] **Session summary after flashcard practice** (words learned, accuracy, time) ← Cron 3 DONE
-- [✅] **Onboarding CTA on homepage** — "New here? Start with basics" button → A1 deck ← Cron 3 DONE
-- [ ] **Extract Word of Day to JSON** — remove 75+ hardcoded words from index.astro ← Cron 2
-- [ ] **Dashboard: streak counter + "continue learning" button** ← Cron 4
-- [ ] **Section links:** grammar lesson → related deck, flashcard session → related game ← Cron 4
+### 🎯 THIS SPRINT (Feb 28 night) — "Retention & Habit Formation"
+- [ ] **🔥 Streak System** — Track daily streaks in localStorage, show on dashboard + navbar ← Cron 3
+- [ ] **⭐ XP System** — Earn XP for flashcards (+20), grammar (+50), games (+15), phrases (+10) ← Cron 3
+- [ ] **🎯 Daily Goal** — Set target (10/20/50 words), show progress bar on dashboard ← Cron 3
+- [ ] **🗺️ Learning Path** — Structured beginner roadmap on dashboard (Week 1-4) ← Cron 4
+- [ ] **🔥 Streak + XP in navbar** — Show streak fire + XP count in top nav ← Cron 4
 
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
@@ -68,7 +68,7 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-(Crons update this section)
+- Streak + XP + Daily Goal system (Sprint Feb 28 night)
 
 ## Notes
 - Each feature cron picks 2 items from HIGH priority

@@ -159,6 +159,347 @@ html.light .rounded-3xl {
   box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
 }
 
+/* ========== GAME OVERLAY & MODAL ========== */
+html.light #game-overlay {
+  background-color: #F5F5F0 !important;
+}
+
+html.light #sub-modal > div {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+html.light #sub-modal .text-\[\#F5F5F0\] {
+  color: #1A1A2E !important;
+}
+
+/* Game card backgrounds in light mode */
+html.light .game-card {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+html.light .game-card:hover {
+  border-color: #D1D5DB !important;
+}
+
+html.light .game-card .from-\[\#242426\] {
+  --tw-gradient-from: #FFFFFF !important;
+}
+
+html.light .game-card .via-\[\#242426\]\/40 {
+  --tw-gradient-via: rgba(255,255,255,0.4) !important;
+}
+
+html.light .game-card h3 {
+  color: #1A1A2E !important;
+}
+
+/* Game internal UI */
+html.light #gc .bg-\[\#242426\] {
+  background-color: #FFFFFF !important;
+}
+
+html.light #gc .border-\[\#2E2E30\] {
+  border-color: #E5E7EB !important;
+}
+
+html.light #gc .text-\[\#F5F5F0\] {
+  color: #1A1A2E !important;
+}
+
+html.light #gc button.bg-\[\#242426\] {
+  background-color: #F0F0EC !important;
+  color: #1A1A2E !important;
+}
+
+html.light #gc button.hover\:bg-\[\#2E2E30\]:hover {
+  background-color: #E5E7EB !important;
+}
+
+html.light #gc .bg-\[\#1C1C1E\] {
+  background-color: #E5E7EB !important;
+}
+
+html.light #gc .bg-\[\#C8C8C0\]\/10 {
+  background-color: rgba(74, 74, 68, 0.1) !important;
+}
+
+html.light #gc .border-\[\#C8C8C0\]\/20 {
+  border-color: rgba(74, 74, 68, 0.2) !important;
+}
+
+html.light #gc .bg-\[\#C8C8C0\]\/15 {
+  background-color: rgba(74, 74, 68, 0.15) !important;
+}
+
+/* Game wrap container */
+html.light #game-container .bg-\[\#242426\] {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+/* ========== PHRASES PAGE ========== */
+html.light .category-block {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+html.light .category-block button {
+  border-color: #E5E7EB !important;
+}
+
+html.light .category-block button:hover {
+  background-color: #F5F5F0 !important;
+}
+
+html.light .phrase-item:hover {
+  background-color: #F5F5F0 !important;
+}
+
+html.light .text-\[\#C8C8C0\] {
+  color: #4A4A44 !important;
+}
+
+html.light .text-\[\#8B8B85\] {
+  color: #6B7280 !important;
+}
+
+html.light .text-\[\#5B5B55\] {
+  color: #9CA3AF !important;
+}
+
+html.light .text-\[\#8A8480\] {
+  color: #6B7280 !important;
+}
+
+html.light .text-\[\#6B6560\] {
+  color: #6B7280 !important;
+}
+
+/* Phrases search input */
+html.light #searchInput {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  color: #1A1A2E !important;
+}
+
+/* Level filter buttons */
+html.light .level-btn {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  color: #4A4A44 !important;
+}
+
+html.light .level-btn.active {
+  background-color: #D4A853 !important;
+  color: #000 !important;
+}
+
+/* Phrases premium modal */
+html.light #premiumModal > div {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+}
+
+html.light #premiumModal .bg-\[\#1C1C1E\] {
+  background-color: #F5F5F0 !important;
+}
+
+/* ========== ABOUT PAGE ========== */
+html.light .text-\[\#A0A09A\] {
+  color: #6B7280 !important;
+}
+
+/* ========== PREMIUM PAGE ========== */
+/* Premium page uses white bg cards — already good. Fix section bg */
+html.light .bg-\[\#F5F0E8\] {
+  background-color: #F5F0E8 !important;
+}
+
+/* Premium headings visibility fix */
+html.light .text-\[\#2D2A26\] {
+  color: #2D2A26 !important;
+}
+
+/* ========== PODCAST PAGE ========== */
+html.light .bg-\[\#D4A853\]\/20 {
+  background-color: rgba(212, 168, 83, 0.2) !important;
+}
+
+/* ========== GRAMMAR PAGE ========== */
+/* Grammar CTA gradient */
+html.light .from-amber-500\/10 {
+  --tw-gradient-from: rgba(245, 158, 11, 0.1) !important;
+}
+
+html.light .to-orange-500\/10 {
+  --tw-gradient-to: rgba(249, 115, 22, 0.1) !important;
+}
+
+/* Grammar premium CTA button */
+html.light a[href="/premium/"].bg-\[var\(--color-primary\)\] {
+  background-color: #1A1A2E !important;
+  color: #FFFFFF !important;
+}
+
+/* ========== HERO GRADIENTS (all pages) ========== */
+html.light .from-\[\#1C1C1E\]\/60 {
+  --tw-gradient-from: rgba(245, 245, 240, 0.6) !important;
+}
+
+/* ========== MISC LIGHT MODE ========== */
+/* White/10 backgrounds */
+html.light .bg-white\/10 {
+  background-color: rgba(26, 26, 46, 0.08) !important;
+}
+
+html.light .bg-white\/20 {
+  background-color: rgba(26, 26, 46, 0.12) !important;
+}
+
+/* Dividers */
+html.light .divide-white\/5 > * + * {
+  border-color: #E5E7EB !important;
+}
+
+html.light .via-white\/10 {
+  --tw-gradient-via: rgba(26, 26, 46, 0.1) !important;
+}
+
+/* Animate pulse dot — keep green */
+
+/* Sub btn color */
+html.light #sub-btn {
+  background-color: #1A1A2E !important;
+  color: #FFFFFF !important;
+}
+
+/* Back button in game overlay */
+html.light #back-btn {
+  color: #6B7280 !important;
+}
+
+html.light #back-btn:hover {
+  color: #1A1A2E !important;
+}
+
+/* ========== STREAK / XP / DAILY GOAL COMPONENTS ========== */
+/* These classes will be used by Cron 3 when building the streak/XP system */
+
+.streak-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.streak-badge--active {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.streak-badge--inactive {
+  background: rgba(107, 114, 128, 0.1);
+  color: #6b7280;
+  border: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+html.light .streak-badge--active {
+  background: rgba(249, 115, 22, 0.1);
+  color: #ea580c;
+}
+
+.xp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+html.light .xp-badge {
+  background: rgba(202, 138, 4, 0.1);
+  color: #a16207;
+}
+
+.xp-counter {
+  font-variant-numeric: tabular-nums;
+  transition: all 0.3s ease;
+}
+
+.xp-counter.xp-animate {
+  transform: scale(1.2);
+  color: #eab308;
+}
+
+/* Daily goal progress bar */
+.daily-goal-bar {
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: rgba(107, 114, 128, 0.15);
+  overflow: hidden;
+}
+
+.daily-goal-bar__fill {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.daily-goal-bar__fill--complete {
+  background: linear-gradient(90deg, #eab308, #f59e0b);
+}
+
+/* Daily goal card */
+.daily-goal-card {
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+html.light .daily-goal-card {
+  background: rgba(34, 197, 94, 0.05);
+  border-color: rgba(34, 197, 94, 0.15);
+}
+
+/* Streak fire animation */
+@keyframes streakPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.streak-fire {
+  animation: streakPulse 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* XP gain popup */
+@keyframes xpFloat {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-30px); }
+}
+
+.xp-float {
+  animation: xpFloat 1.2s ease-out forwards;
+  position: absolute;
+  font-weight: 700;
+  color: #eab308;
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+
 /* Scrollbar */
 html.light ::-webkit-scrollbar-track {
   background: #F5F5F0;
