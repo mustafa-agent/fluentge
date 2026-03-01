@@ -63,10 +63,10 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 1 night) — Cron 2 Tasks:
-- [x] **Premium Page Design** ✅ Mar 1 — 3 pricing cards (Free/Yearly/Monthly), "most popular" badge, gradient hero, stats bar, feature comparison table, 3 testimonial cards, FAQ accordion with toggle, final CTA section. Full light+dark mode. 3D button press effects.
-- [x] **Profile Page Design** ✅ Mar 1 — Stats grid (words/XP/streak/days), emoji avatar picker (20 options), 10 achievement badges with earned/locked states, recent activity section, action buttons (dashboard/premium/logout). Full light+dark mode.
-- [ ] **Loading/Skeleton States** — Skeleton screen component for lazy-loaded game/quiz/typing screens. Pulse animation. Matches dark/light mode.
+### THIS SPRINT (Mar 2 night) — Cron 2 Tasks:
+- [ ] **Dashboard Game Stats Cards** — Design cards for: games played (today/total), game XP earned, current level with progress bar, recent game activity list. Use game-themed colors (purple/indigo). Match existing dashboard style.
+- [ ] **Deck Loading States** — When dynamic deck loading is implemented, design a smooth loading state for deck content (skeleton cards, progress indicator). Should feel instant even on slow connections.
+- [ ] **Audio Autoplay Toggle UI** — Settings gear icon in flashcard header. Toggle switch with label. Persist preference.
 
 ### Backlog:
 - [ ] Replace flat buttons with 3D buttons on other pages (grammar, games)

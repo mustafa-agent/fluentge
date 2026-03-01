@@ -11,7 +11,7 @@
 
 ### Flashcard UX
 - [ ] Swipe gestures on mobile
-- [ ] Keyboard shortcuts (space to flip, 1/2/3 for rating)
+- [x] Keyboard shortcuts (Space=flip/next, S=audio, 1=focus input) ✅ Cron 4B, Mar 1
 - [ ] Better progress bar during session
 - [ ] Card count "12/50" clearly visible
 - [ ] Sound auto-play option
@@ -55,13 +55,11 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 1 night) — "Performance & Conversion"
-- [ ] **Design premium page** (feature comparison, pricing cards, testimonials, FAQ) ← Cron 2
-- [ ] **Design profile page** (stats dashboard, avatar picker, achievement showcase) ← Cron 2
-- [ ] **Design loading/skeleton states** (for lazy-loaded components) ← Cron 2
-- [ ] **Premium page implementation** ← Cron 4
-- [ ] **Profile page implementation** ← Cron 4
-- [ ] **Homepage social proof section** ← Cron 4
+## 🎯 THIS SPRINT (Mar 2 night) — "Dashboard Game Stats & Dynamic Loading"
+- [ ] **Dashboard game stats section** — games played, XP, level, recent activity ← Cron 4
+- [ ] **Dynamic deck loading UX** — loading spinner per deck, smooth transition ← Cron 3/4
+- [ ] **Audio autoplay toggle** — settings UI + persistence ← Cron 4
+- [ ] **Mobile swipe gestures** — swipe left/right on flashcards ← Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
@@ -72,9 +70,8 @@
 - [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-- Premium page design (Sprint Mar 1 night)
-- Profile page design (Sprint Mar 1 night)
-- Loading states design (Sprint Mar 1 night)
+- Dashboard game stats (Sprint Mar 2 night)
+- Dynamic deck loading (Sprint Mar 2 night)
 
 ## Previously Completed ✅ (Feb 28)
 - ✅ Light mode audit — all pages verified

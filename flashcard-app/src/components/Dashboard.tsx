@@ -188,6 +188,24 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
 
   const earnedCount = achievements.filter(a => a.check()).length;
 
+  // Game stats from localStorage
+  const getGameStats = () => {
+    const gamesPlayed = parseInt(getLocalStorageValue('gamesPlayed', '0'), 10);
+    const todayStr = new Date().toDateString();
+    let todayGamesCount = 0;
+    let todayGameXP = 0;
+    try {
+      const tg = JSON.parse(getLocalStorageValue('todayGames', '{}'));
+      if (tg.date === todayStr) {
+        todayGamesCount = tg.count || 0;
+        todayGameXP = tg.xp || 0;
+      }
+    } catch {}
+    const gameLevel = calculateLevel(userStats.totalXP);
+    return { gamesPlayed, todayGamesCount, todayGameXP, gameLevel };
+  };
+  const gameStats = getGameStats();
+
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] pb-20">
       {/* Header */}
@@ -284,6 +302,59 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
               />
             </div>
           </div>
+        </div>
+
+        {/* Game Stats */}
+        <div className="bg-[var(--color-card)] rounded-xl p-4">
+          <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+            🎮 თამაშების სტატისტიკა
+          </h2>
+          
+          <div className="grid grid-cols-2 gap-3 mb-4">
+            <div className="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-xl p-3 text-center">
+              <div className="text-2xl font-bold text-indigo-400">
+                {gameStats.todayGamesCount}
+              </div>
+              <div className="text-xs text-[var(--color-text-muted)]">
+                დღეს ნათამაშები
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-xl p-3 text-center">
+              <div className="text-2xl font-bold text-purple-400">
+                {gameStats.gamesPlayed}
+              </div>
+              <div className="text-xs text-[var(--color-text-muted)]">
+                სულ ნათამაშები
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-xl p-3 text-center">
+              <div className="text-2xl font-bold text-yellow-400">
+                +{gameStats.todayGameXP}
+              </div>
+              <div className="text-xs text-[var(--color-text-muted)]">
+                დღეს XP თამაშებიდან
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-xl p-3 text-center">
+              <div className="text-2xl font-bold text-emerald-400">
+                Lv.{gameStats.gameLevel}
+              </div>
+              <div className="text-xs text-[var(--color-text-muted)]">
+                მიმდინარე დონე
+              </div>
+            </div>
+          </div>
+
+          {/* Play Games CTA */}
+          <a
+            href="/games/"
+            className="block w-full text-center py-3 bg-indigo-600 hover:bg-indigo-700 border-b-4 border-indigo-700 active:border-b-0 rounded-xl font-bold text-white transition-all text-sm"
+          >
+            🎮 თამაშების გვერდზე გადასვლა
+          </a>
         </div>
 
         {/* Achievements */}

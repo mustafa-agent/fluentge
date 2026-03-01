@@ -2,13 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 1 night) — "Performance & Conversion"
-- [x] **⚡ Code-Split Flashcard App** — ✅ Done (8 components split, React vendor chunk). Main bundle still large due to card data — needs dynamic deck loading for <2MB target.
-- [ ] **💎 Premium Page Redesign** — Feature comparison, pricing, testimonials, FAQ ← Cron 4
-- [ ] **👤 User Profile Page** — Stats, avatar, achievements, history on dashboard ← Cron 4
-- [ ] **📊 Homepage Social Proof** — User counter, testimonials, "Why FluentGe?" ← Cron 4
+### 🎯 THIS SPRINT (Mar 2 night) — "Dashboard Game Stats & Dynamic Loading"
+- [ ] **📊 Dashboard Game Stats** — Show games played, XP from games, level, recent game activity on dashboard ← Cron 4
+- [ ] **⚡ Dynamic Deck Loading** — Refactor cards.ts: 104 static imports → dynamic import(). Main bundle <1MB ← Cron 3
 - [ ] **🔊 Audio Autoplay** — Toggle to auto-play pronunciation on card appear ← Cron 4
-- [x] **⏳ Loading States** — ✅ Done (LoadingSkeleton component, Suspense fallback)
+- [ ] **👆 Swipe Gestures** — Mobile swipe left/right for wrong/correct on flashcards ← Cron 4
+- [ ] **🎓 Better Onboarding** — First-time user guided tour ← backlog
 
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
@@ -75,8 +74,8 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Premium page redesign (Sprint Mar 1 night)
-- User profile page (Sprint Mar 1 night)
+- Dashboard game stats section (Sprint Mar 2 night)
+- Dynamic deck loading (Sprint Mar 2 night)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

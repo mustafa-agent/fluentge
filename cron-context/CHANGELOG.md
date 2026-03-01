@@ -5,7 +5,42 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-02
+
+### Cron 1 — Strategy (1:00 AM)
+- **Sprint review:** "Gamification & Engagement" sprint (Mar 1) completed Games XP/Level engine ✅, code splitting (partial) ✅, premium page ✅, profile page ✅, homepage social proof ✅, keyboard shortcuts ✅
+- **Gap identified:** Dashboard STILL doesn't show game stats — Tornike's #2 priority from Mar 1 is incomplete
+- **New sprint set:** "Dashboard Game Stats & Dynamic Loading"
+  - #1: Dashboard game stats section — show games played, XP, level, recent activity (COMPLETES Tornike's request)
+  - #2: Dynamic deck loading — refactor 104 static JSON imports to dynamic import(). Target main bundle <1MB (currently 6.5MB)
+  - #3: Audio autoplay toggle (carried over 3 sprints)
+  - #4: Mobile swipe gestures for flashcards
+  - #5: Better onboarding flow (backlog)
+- **Technical spec written:** Detailed plan for dynamic deck loading — deck-index.ts (lightweight metadata), loadDeck() async function, Vite auto-splits each JSON into separate chunk, in-memory cache
+- **Technical spec written:** Dashboard game stats — which localStorage keys to read, what to display, where to place it
+- **Strategic insight:** We've been building features for 3 nights straight. FluentGe now has more features than Lingwing.com. The #1 technical debt is the 6.5MB bundle — 104 static JSON imports of deck data. Dynamic loading would cut this to ~500KB main + on-demand deck loads. This is the difference between a 2-second load and a 15-second load on Georgian mobile. Meanwhile, Tornike explicitly asked for dashboard game stats and it's still not done — that's tonight's guaranteed delivery.
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with tonight's assignments
+- Assigned: Cron 2 → design game stats cards + deck loading states, Cron 3 → build dynamic deck loading, Cron 4 → build dashboard game stats + audio autoplay, Cron 5 → QA
+
+---
+
 ## 2026-03-01
+
+### Cron 4B — Improvements (9:02 PM, Evening Run)
+- **⌨️ Keyboard Shortcuts for Flashcard StudyScreen:**
+  - Space/Enter = flip card (when not typing) or advance to next card
+  - S = play pronunciation audio
+  - 1 = focus the text input to start typing answer
+  - Keyboard hints shown on desktop (hidden on mobile via `hidden sm:block`)
+  - Hints appear below card ("Space = გადაბრუნება · S = მოსმენა · 1 = ჩაწერა") and below Next button
+  - Smart: shortcuts disabled when user is focused on input field
+- **🗣️ Homepage Social Proof Section:**
+  - 3 testimonial cards with Georgian names, avatars, star ratings, quotes
+  - Gradient avatar circles, hover effects on cards
+  - "Why FluentGe" section: 4 value props (ქართულად, უფასო, სახალისო, ნებისმიერ მოწყობილობაზე)
+  - 2-column grid layout, responsive
+  - Placed between Features and final CTA sections
+- Deployed ✅, git committed & pushed
 
 ### Cron 3B — Features (8:54 PM, Evening Run)
 - **🎮 Games XP/Level Engine:**

@@ -59,6 +59,42 @@ import Layout from '../../layouts/Layout.astro';
       </div>
     </div>
 
+    <!-- Game Stats Section -->
+    <div class="mb-8">
+      <h2 class="font-bold text-lg mb-4 flex items-center gap-2">🎮 თამაშების სტატისტიკა</h2>
+      <div class="grid grid-cols-2 gap-3 mb-4">
+        <div class="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-2xl p-4 text-center">
+          <p class="text-2xl font-bold text-indigo-400" id="game-today">0</p>
+          <p class="text-[#6B6B65] text-xs mt-1">დღეს ნათამაშები</p>
+        </div>
+        <div class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-2xl p-4 text-center">
+          <p class="text-2xl font-bold text-purple-400" id="game-total">0</p>
+          <p class="text-[#6B6B65] text-xs mt-1">სულ ნათამაშები</p>
+        </div>
+        <div class="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-2xl p-4 text-center">
+          <p class="text-2xl font-bold text-yellow-400" id="game-xp">+0</p>
+          <p class="text-[#6B6B65] text-xs mt-1">დღეს XP თამაშებიდან</p>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-2xl p-4 text-center">
+          <p class="text-2xl font-bold text-emerald-400" id="game-level">Lv.1</p>
+          <p class="text-[#6B6B65] text-xs mt-1">მიმდინარე დონე</p>
+        </div>
+      </div>
+      <!-- XP Progress Bar -->
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-4 mb-3">
+        <div class="flex justify-between text-sm mb-2">
+          <span id="game-level-label" class="text-[#A0A09A]">დონე 1</span>
+          <span id="game-xp-progress-text" class="text-[#A0A09A]">0/200 XP</span>
+        </div>
+        <div class="w-full bg-[#1C1C1E] rounded-full h-3">
+          <div id="game-xp-bar" class="bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full transition-all" style="width:0%"></div>
+        </div>
+      </div>
+      <a href="/games/" class="block w-full text-center py-3 bg-indigo-600 hover:bg-indigo-700 border-b-4 border-indigo-700 active:border-b-0 rounded-xl font-bold text-white transition-all text-sm">
+        🎮 თამაშების გვერდზე გადასვლა
+      </a>
+    </div>
+
     <div class="space-y-3">
       <a href="/dashboard/phrases/" class="flex items-center justify-between bg-[#242426] border border-[#2E2E30] rounded-xl p-4 hover:bg-[#2E2E30] transition-colors">
         <div class="flex items-center gap-3">
@@ -125,8 +161,27 @@ import Layout from '../../layouts/Layout.astro';
       document.getElementById('stat-podcasts').textContent = podcasts.length;
       document.getElementById('stat-cards').textContent = wordCount;
 
+      // Game stats
+      var gamesPlayed = parseInt(localStorage.getItem('gamesPlayed') || '0', 10);
+      var totalXP = parseInt(localStorage.getItem('totalXP') || '0', 10);
+      var todayStr = new Date().toDateString();
+      var todayGamesCount = 0, todayGameXP = 0;
+      try {
+        var tg = JSON.parse(localStorage.getItem('todayGames') || '{}');
+        if (tg.date === todayStr) { todayGamesCount = tg.count || 0; todayGameXP = tg.xp || 0; }
+      } catch(e) {}
+      var gameLevel = Math.floor(totalXP / 200) + 1;
+      var xpInLevel = totalXP - (gameLevel - 1) * 200;
+      document.getElementById('game-today').textContent = todayGamesCount;
+      document.getElementById('game-total').textContent = gamesPlayed;
+      document.getElementById('game-xp').textContent = '+' + todayGameXP;
+      document.getElementById('game-level').textContent = 'Lv.' + gameLevel;
+      document.getElementById('game-level-label').textContent = 'დონე ' + gameLevel;
+      document.getElementById('game-xp-progress-text').textContent = xpInLevel + '/200 XP';
+      document.getElementById('game-xp-bar').style.width = Math.min(100, (xpInLevel / 200) * 100) + '%';
+
       // Continue where you left off logic
-      var totalProgress = phrases.length + grammar.length + podcasts.length + cards.length;
+      var totalProgress = phrases.length + grammar.length + podcasts.length + wordCount;
       var suggestions = [];
 
       // Grammar progression: suggest next unlearned lesson
@@ -148,10 +203,10 @@ import Layout from '../../layouts/Layout.astro';
       }
 
       // Flashcards: always a good suggestion
-      if (cards.length > 0) {
+      if (wordCount > 0) {
         suggestions.push({
           icon: '📝',
-          text: 'გააგრძელე ფლეშქარდები — ' + cards.length + ' სიტყვა ნასწავლი',
+          text: 'გააგრძელე ფლეშქარდები — ' + wordCount + ' სიტყვა ნასწავლი',
           href: '/flashcards/',
           color: 'sky'
         });
