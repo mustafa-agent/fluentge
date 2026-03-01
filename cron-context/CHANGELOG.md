@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-01
 
+### Cron 3 — Features (5:00 AM)
+- **😤 Difficult Words Practice:**
+  - New `difficult-words.ts` lib: tracks wrong/right answers per word across all modes
+  - `DifficultWordsScreen.tsx`: list view (sorted by error count) + flashcard practice mode
+  - Integrated `recordWrong`/`recordRight` into QuizScreen and TypingScreen
+  - +20 XP per correct answer in difficult practice
+  - Words auto-removed from difficult list after 3+ net correct answers
+  - Gradient banner on flashcard home screen
+- **🔍 Word Search:**
+  - `WordSearch.tsx`: full-screen search overlay across all 142 decks
+  - Searches English, Georgian, and example sentences
+  - Highlighted matches, expandable cards with pronunciation/examples
+  - 🔊 button on each result, "learn this deck" navigation
+  - 🔍 button added to flashcard app header
+- Deployed ✅, git committed
+
 ### Cron 2 — Design (3:00 AM)
 - **Quiz Mode UI — Duolingo-style upgrade:**
   - 3D option buttons with `quiz-option` class (border-b-4, active press effect)

@@ -15,7 +15,7 @@ export function getStaticPaths() {
 }
 
 const { lesson, nextLesson, prevLesson } = Astro.props;
-const FREE_GRAMMAR_SLUGS = ['to-be', 'articles', 'plural-nouns'];
+const FREE_GRAMMAR_SLUGS = ['to-be', 'articles', 'plural-nouns', 'present-simple', 'present-continuous', 'subject-pronouns', 'possessive-adjectives', 'prepositions-of-place'];
 const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
 
 // Grammar → Flashcard deck mapping for interconnection

@@ -172,6 +172,22 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
   const dailyGoalProgress = Math.min(100, (userStats.todayStudyTime / userStats.dailyGoalMinutes) * 100);
   const xpProgress = getXPProgress(userStats.totalXP);
 
+  // Achievements system
+  const achievements = [
+    { id: 'first-card', icon: '🎯', title: 'პირველი ნაბიჯი', desc: 'ისწავლე პირველი სიტყვა', gradient: 'from-sky-500 to-blue-600', check: () => getTotalWordsLearned() >= 1 },
+    { id: 'ten-words', icon: '📚', title: '10 სიტყვა', desc: 'ისწავლე 10 სიტყვა', gradient: 'from-green-500 to-emerald-600', check: () => getTotalWordsLearned() >= 10 },
+    { id: 'fifty-words', icon: '🧠', title: '50 სიტყვა', desc: 'ისწავლე 50 სიტყვა', gradient: 'from-purple-500 to-violet-600', check: () => getTotalWordsLearned() >= 50 },
+    { id: 'hundred-words', icon: '💯', title: '100 სიტყვა', desc: 'ისწავლე 100 სიტყვა', gradient: 'from-amber-500 to-orange-600', check: () => getTotalWordsLearned() >= 100 },
+    { id: 'streak-3', icon: '🔥', title: '3 დღე ზედიზედ', desc: 'იმეცადინე 3 დღე ზედიზედ', gradient: 'from-orange-500 to-red-600', check: () => userStats.currentStreak >= 3 },
+    { id: 'streak-7', icon: '⚡', title: 'კვირის ჩემპიონი', desc: '7 დღიანი რიგითობა', gradient: 'from-red-500 to-pink-600', check: () => userStats.currentStreak >= 7 },
+    { id: 'xp-100', icon: '⭐', title: 'XP შემგროვებელი', desc: 'დააგროვე 100 XP', gradient: 'from-yellow-500 to-amber-600', check: () => userStats.totalXP >= 100 },
+    { id: 'xp-500', icon: '🌟', title: 'XP ვარსკვლავი', desc: 'დააგროვე 500 XP', gradient: 'from-cyan-500 to-teal-600', check: () => userStats.totalXP >= 500 },
+    { id: 'grammar-1', icon: '✏️', title: 'გრამატიკოსი', desc: 'დაასრულე 1 გრამატიკის გაკვეთილი', gradient: 'from-indigo-500 to-blue-600', check: () => { try { return JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]').length >= 1; } catch { return false; } } },
+    { id: 'level-5', icon: '🏆', title: 'დონე 5', desc: 'მიაღწიე მე-5 დონეს', gradient: 'from-pink-500 to-rose-600', check: () => userStats.level >= 5 },
+  ];
+
+  const earnedCount = achievements.filter(a => a.check()).length;
+
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] pb-20">
       {/* Header */}
@@ -267,6 +283,40 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
                 style={{ width: `${xpProgress.progress}%` }}
               />
             </div>
+          </div>
+        </div>
+
+        {/* Achievements */}
+        <div className="bg-[var(--color-card)] rounded-xl p-4">
+          <h2 className="text-lg font-bold mb-1 flex items-center gap-2">
+            🏅 მიღწევები
+          </h2>
+          <p className="text-sm text-[var(--color-text-muted)] mb-4">
+            {earnedCount}/{achievements.length} მოპოვებული
+          </p>
+          
+          <div className="grid grid-cols-2 gap-3">
+            {achievements.map(badge => {
+              const earned = badge.check();
+              return (
+                <div
+                  key={badge.id}
+                  className={`badge-card ${earned ? 'earned' : 'locked'} rounded-xl p-3 text-center transition-all`}
+                >
+                  <div className={`badge-icon w-12 h-12 rounded-full mx-auto mb-2 flex items-center justify-center text-2xl ${
+                    earned ? `bg-gradient-to-br ${badge.gradient} shadow-lg` : ''
+                  }`}>
+                    {earned ? badge.icon : '🔒'}
+                  </div>
+                  <div className={`text-sm font-semibold ${earned ? '' : 'text-[var(--color-text-muted)]'}`}>
+                    {badge.title}
+                  </div>
+                  <div className="text-xs text-[var(--color-text-muted)] mt-0.5">
+                    {badge.desc}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
