@@ -3,12 +3,12 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 1 night) — "Performance & Conversion"
-- [ ] **⚡ Code-Split Flashcard App** — React.lazy for games/quiz/typing/search. Target <2MB main bundle ← Cron 3
+- [x] **⚡ Code-Split Flashcard App** — ✅ Done (8 components split, React vendor chunk). Main bundle still large due to card data — needs dynamic deck loading for <2MB target.
 - [ ] **💎 Premium Page Redesign** — Feature comparison, pricing, testimonials, FAQ ← Cron 4
 - [ ] **👤 User Profile Page** — Stats, avatar, achievements, history on dashboard ← Cron 4
 - [ ] **📊 Homepage Social Proof** — User counter, testimonials, "Why FluentGe?" ← Cron 4
 - [ ] **🔊 Audio Autoplay** — Toggle to auto-play pronunciation on card appear ← Cron 4
-- [ ] **⏳ Loading States** — Skeleton screens for lazy-loaded components ← Cron 3
+- [x] **⏳ Loading States** — ✅ Done (LoadingSkeleton component, Suspense fallback)
 
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
@@ -65,6 +65,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🎮 Games XP/Level Engine** — All 30 games now award +10 XP per correct answer. Stats bar on games page (XP, level, games played, streak). Floating +XP animations. Level-up popup. Tracks games played count, updates streak and daily goal. Uses same localStorage keys as flashcard gamification. (Cron 3, Mar 1 evening)
+- ✅ **⚡ Code-Split Flashcard App** — React.lazy + Suspense for 8 heavy components (StudyScreen, SRSStudy, QuizScreen, TypingScreen, DifficultWordsScreen, WordSearch, ChallengeFriend, SpacedRepetition). Loading skeleton component. React vendor chunk split. Main bundle still ~6.5MB due to 142 deck JSON files (card data refactor needed for further reduction). (Cron 3, Mar 1 evening)
 - ✅ **😤 Difficult Words Practice** — Tracks wrong answers from quiz/typing modes. Shows list of hardest words sorted by error count. Focused review mode with flashcard practice (+20 XP). Words auto-removed after 3+ net correct. (Cron 3, Mar 1)
 - ✅ **🔍 Word Search** — Full-text search across all 142 decks (~3000+ words). Search by English or Georgian. Expandable results show pronunciation, examples, deck info. Navigate directly to deck from results. Accessible via 🔍 in header. (Cron 3, Mar 1)
 - ✅ **StatsBar Gamification Upgrade** — Streak 🔥 with fire animation, XP ⭐ with level display, daily goal progress bar, XP-to-next-level bar. Auto-refreshes every 2s. (Cron 3, Feb 28 afternoon)
@@ -73,8 +75,6 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- 🔄 Code-split flashcard app (Cron 3, Mar 1 evening)
-- 🔄 Games XP/Level Engine (Cron 3, Mar 1 evening)
 - Premium page redesign (Sprint Mar 1 night)
 - User profile page (Sprint Mar 1 night)
 

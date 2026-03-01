@@ -267,6 +267,36 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     setGuessResult(null);
   }
 
+  // Keyboard shortcuts
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      // Don't trigger shortcuts when typing in input
+      if (document.activeElement === inputRef.current) {
+        return;
+      }
+      if (sessionDone) return;
+      
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        if (flipped) {
+          handleNext();
+        } else if (!flipped && card) {
+          // Space without input = reveal card
+          handleCardTap();
+        }
+      } else if (e.key === '1' && !flipped && card) {
+        // Focus the input
+        e.preventDefault();
+        inputRef.current?.focus();
+      } else if (e.key === 's' && card) {
+        e.preventDefault();
+        speak(card.english);
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [flipped, card, sessionDone, guess]);
+
   // Update streak & study time on session done
   const sessionEndHandled = useRef(false);
   useEffect(() => {
@@ -458,6 +488,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
         {!flipped && !guessResult && (
           <div className="text-[var(--color-text-muted)] text-sm mt-6 animate-pulse">
             ჩაწერე თარგმანი ქვემოთ ან შეეხე ბარათს 👇
+            <div className="hidden sm:block text-xs mt-1 opacity-60">⌨️ Space = გადაბრუნება · S = მოსმენა · 1 = ჩაწერა</div>
           </div>
         )}
 
@@ -532,6 +563,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
           >
             {guessResult === 'correct' ? 'შემდეგი →' : 'შემდეგი (სიტყვა ბოლოში გადავა) →'}
           </button>
+          <div className="hidden sm:block text-center text-xs text-[var(--color-text-muted)] mt-2 opacity-60">⌨️ Space ან Enter = შემდეგი</div>
         </div>
       )}
     </div>

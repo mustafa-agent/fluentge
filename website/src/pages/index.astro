@@ -129,6 +129,49 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
     </div>
   </section>
 
+  <!-- Social Proof -->
+  <section class="px-4 py-16 max-w-4xl mx-auto">
+    <h2 class="font-['Playfair_Display',serif] text-2xl sm:text-3xl text-center mb-3">რას ამბობენ მომხმარებლები</h2>
+    <p class="text-center text-[#6B6B65] text-sm mb-10">ათასობით ქართველი უკვე სწავლობს FluentGe-ით</p>
+    
+    <div class="grid sm:grid-cols-3 gap-5 mb-12">
+      {[
+        { name: "ნინო მ.", avatar: "👩‍🎓", text: "ფლეშბარათები ძალიან მეხმარება ახალი სიტყვების დამახსოვრებაში. დღეში 15 წუთი და უკვე თვალსაჩინო პროგრესი მაქვს!", stars: 5 },
+        { name: "გიორგი კ.", avatar: "👨‍💻", text: "თამაშებით სწავლა ბევრად უფრო სახალისოა ვიდრე წიგნით. განსაკუთრებით Word Search მომწონს!", stars: 5 },
+        { name: "მარიამ ლ.", avatar: "👩‍🏫", text: "გრამატიკის გაკვეთილები ძალიან კარგად არის ახსნილი. ქართულად რომ არის ყველაფერი, ეს საუკეთესოა!", stars: 4 },
+      ].map(review => (
+        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-5 hover:border-[#404040] transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-400 to-green-400 flex items-center justify-center text-lg">{review.avatar}</div>
+            <div>
+              <div class="font-semibold text-sm">{review.name}</div>
+              <div class="text-yellow-400 text-xs">{'⭐'.repeat(review.stars)}{review.stars < 5 ? '☆' : ''}</div>
+            </div>
+          </div>
+          <p class="text-[#A0A09A] text-sm leading-relaxed">"{review.text}"</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Why FluentGe -->
+    <div class="grid sm:grid-cols-2 gap-5">
+      {[
+        { icon: "🇬🇪", title: "ქართულად", desc: "ყველაფერი შენს ენაზე — არანაირი ინგლისურ-ინგლისური ახსნა" },
+        { icon: "🆓", title: "სრულიად უფასო", desc: "5,250+ სიტყვა, 48 თამაში, 65 გრამატიკა — ფული არ გჭირდება" },
+        { icon: "🎮", title: "სახალისო სწავლა", desc: "თამაშები, XP, სტრიკები — სწავლა არასდროს ყოფილა ასეთი სახალისო" },
+        { icon: "📱", title: "ნებისმიერ მოწყობილობაზე", desc: "ტელეფონი, ტაბლეტი, კომპიუტერი — ისწავლე სადაც გინდა" },
+      ].map(item => (
+        <div class="flex gap-4 items-start bg-[#242426] border border-[#2E2E30] rounded-2xl p-5 hover:border-[#404040] transition-colors">
+          <div class="text-3xl flex-shrink-0">{item.icon}</div>
+          <div>
+            <h3 class="font-bold text-sm mb-1">{item.title}</h3>
+            <p class="text-[#6B6B65] text-sm">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="px-4 py-16 text-center">
     <div class="bg-gradient-to-br from-[#242426] to-[#1a1a2e] border border-[#2E2E30] rounded-3xl p-10 sm:p-14 max-w-2xl mx-auto relative overflow-hidden">

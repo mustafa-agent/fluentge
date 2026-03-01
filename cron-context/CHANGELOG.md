@@ -7,6 +7,24 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-01
 
+### Cron 3B — Features (8:54 PM, Evening Run)
+- **🎮 Games XP/Level Engine:**
+  - All 30 games now award +10 XP per correct answer via wrapped `snd()` function
+  - Stats bar on games page: XP total, level, XP progress bar, games played count, streak
+  - Floating "+X XP" animation on every correct answer (yellow, floats up)
+  - Level-up popup with purple gradient, confetti emoji, Georgian text
+  - Tracks: `totalXP`, `gamesPlayed`, `todayGames` (count + XP), `currentStreak`, `dailyStudyTime`
+  - Uses same localStorage keys as flashcard app — XP/streak/level unified across all features
+  - Stats bar auto-refreshes every 2 seconds
+- **⚡ Code-Split Flashcard App:**
+  - React.lazy + Suspense for 8 components: StudyScreen, SRSStudy, QuizScreen, TypingScreen, DifficultWordsScreen, WordSearch, ChallengeFriend, SpacedRepetition
+  - New `LoadingSkeleton.tsx` — animated pulse skeleton for loading states
+  - React vendor chunk split out (11KB separate)
+  - 8 lazy chunks total (~84KB split from main bundle)
+  - Main bundle still ~6.5MB due to 142 deck JSON files in cards.ts (needs dynamic deck loading for further reduction)
+  - Vite config updated with `manualChunks` for React
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM, Day Run)
 - **Premium Page — Full Redesign:**
   - Gradient hero with indigo/purple tones, stats bar (5,250+ words, 65 grammar, 30 games, 6 modes)
