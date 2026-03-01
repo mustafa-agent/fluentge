@@ -2,12 +2,13 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 1 night) — "Active Learning & Depth"
-- [ ] **❓ Quiz Mode** — Multiple-choice quiz for flashcard decks (pick correct translation from 4 options) ← Cron 3
-- [ ] **⌨️ Typing Mode** — Type the English translation, check answer. Hard mode = deep learning. +25 XP ← Cron 3
-- [ ] **🔓 Expand Free Grammar** — 3→8 free lessons (full A1 unlocked) ← Cron 4
-- [ ] **🏆 Achievements System** — Milestone badges on dashboard ← Cron 4
-- [ ] **🔊 Audio Autoplay** — Option to auto-play pronunciation on card appear ← Cron 4
+### 🎯 THIS SPRINT (Mar 1 night) — "Performance & Conversion"
+- [ ] **⚡ Code-Split Flashcard App** — React.lazy for games/quiz/typing/search. Target <2MB main bundle ← Cron 3
+- [ ] **💎 Premium Page Redesign** — Feature comparison, pricing, testimonials, FAQ ← Cron 4
+- [ ] **👤 User Profile Page** — Stats, avatar, achievements, history on dashboard ← Cron 4
+- [ ] **📊 Homepage Social Proof** — User counter, testimonials, "Why FluentGe?" ← Cron 4
+- [ ] **🔊 Audio Autoplay** — Toggle to auto-play pronunciation on card appear ← Cron 4
+- [ ] **⏳ Loading States** — Skeleton screens for lazy-loaded components ← Cron 3
 
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
@@ -72,10 +73,9 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Quiz Mode + Typing Mode (Sprint Mar 1 night) — ✅ Built by Cron 2+3
-- Achievements system (Sprint Mar 1 night)
-- ✅ Difficult Words Practice — track wrong answers, focused review mode (Cron 3, Mar 1)
-- ✅ Word Search — search across all decks (Cron 3, Mar 1)
+- Code-split flashcard app (Sprint Mar 1 night)
+- Premium page redesign (Sprint Mar 1 night)
+- User profile page (Sprint Mar 1 night)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

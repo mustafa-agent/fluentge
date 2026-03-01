@@ -1,0 +1,312 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="პროფილი — FluentGe">
+  <style>
+    .profile-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+      padding: 3rem 1rem 5rem;
+      text-align: center;
+      position: relative;
+    }
+    .avatar-ring {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #818cf8, #c084fc, #f472b6);
+      padding: 3px;
+      margin: 0 auto 1rem;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .avatar-ring:hover { transform: scale(1.05); }
+    .avatar-inner {
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      background: #1e1e22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    @media (min-width: 640px) { .stat-grid { grid-template-columns: repeat(4, 1fr); } }
+    .stat-card {
+      background: #1e1e22;
+      border: 1px solid #2e2e32;
+      border-radius: 1rem;
+      padding: 1.25rem;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .stat-card:hover { border-color: #4a4a50; transform: translateY(-1px); }
+    .stat-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .stat-value { font-size: 1.5rem; font-weight: 800; color: white; }
+    .stat-label { font-size: 0.75rem; color: #a0a0a0; margin-top: 2px; }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #e0e0e0;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    @media (min-width: 640px) { .achievement-grid { grid-template-columns: repeat(5, 1fr); } }
+    .badge-card {
+      background: #1e1e22;
+      border: 1px solid #2e2e32;
+      border-radius: 1rem;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .badge-card.earned {
+      border-color: #818cf8;
+      background: linear-gradient(180deg, rgba(99,102,241,0.1) 0%, #1e1e22 100%);
+    }
+    .badge-card.earned:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(99,102,241,0.2); }
+    .badge-card.locked { opacity: 0.4; filter: grayscale(1); }
+    .badge-emoji { font-size: 2rem; margin-bottom: 0.5rem; }
+    .badge-name { font-size: 0.7rem; font-weight: 600; color: #c0c0c0; }
+
+    .emoji-picker {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e1e22;
+      border: 1px solid #2e2e32;
+      border-radius: 1rem;
+      padding: 1rem;
+      z-index: 50;
+      display: none;
+    }
+    .emoji-picker.show { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+    .emoji-opt {
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 8px;
+      transition: background 0.15s;
+      border: none;
+      background: none;
+    }
+    .emoji-opt:hover { background: #2e2e32; }
+
+    .activity-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #2e2e32;
+    }
+    .activity-item:last-child { border-bottom: none; }
+    .activity-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Light mode */
+    :global(.light) .profile-hero { background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #eef2ff 100%); }
+    :global(.light) .avatar-inner { background: white; }
+    :global(.light) .stat-card { background: white; border-color: #e5e7eb; }
+    :global(.light) .stat-value { color: #1a1a2e; }
+    :global(.light) .stat-label { color: #6b7280; }
+    :global(.light) .section-title { color: #374151; }
+    :global(.light) .badge-card { background: white; border-color: #e5e7eb; }
+    :global(.light) .badge-card.earned { background: linear-gradient(180deg, rgba(99,102,241,0.05) 0%, white 100%); border-color: #818cf8; }
+    :global(.light) .badge-name { color: #374151; }
+    :global(.light) .activity-item { border-bottom-color: #e5e7eb; }
+    :global(.light) #user-display-name { color: #1a1a2e; }
+    :global(.light) #user-display-email { color: #6b7280; }
+  </style>
+
+  <!-- Hero with avatar -->
+  <section class="profile-hero">
+    <div class="relative inline-block">
+      <div class="avatar-ring" id="avatar-trigger" title="აირჩიე ავატარი">
+        <div class="avatar-inner" id="avatar-display">😊</div>
+      </div>
+      <div class="emoji-picker" id="emoji-picker"></div>
+    </div>
+    <h1 class="text-xl font-bold text-white mb-1" id="user-display-name">მომხმარებელი</h1>
+    <p class="text-sm text-[#a0a0aa]" id="user-display-email"></p>
+  </section>
+
+  <!-- Stats Grid -->
+  <section class="max-w-3xl mx-auto px-4 -mt-8 relative z-10 mb-8">
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📚</div>
+        <div class="stat-value" id="stat-words">0</div>
+        <div class="stat-label">ნასწავლი სიტყვა</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-value" id="stat-xp">0</div>
+        <div class="stat-label">XP</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🔥</div>
+        <div class="stat-value" id="stat-streak">0</div>
+        <div class="stat-label">სტრიქი</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📅</div>
+        <div class="stat-value" id="stat-days">0</div>
+        <div class="stat-label">აქტიური დღე</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="max-w-3xl mx-auto px-4 mb-8">
+    <div class="section-title">🏆 მიღწევები <span class="text-xs text-[#6b7280] font-normal" id="badge-count">0/10</span></div>
+    <div class="achievement-grid" id="achievement-grid"></div>
+  </section>
+
+  <!-- Recent Activity -->
+  <section class="max-w-3xl mx-auto px-4 mb-8">
+    <div class="section-title">📊 ბოლო აქტივობა</div>
+    <div class="stat-card" style="padding: 0.75rem 1.25rem;">
+      <div id="activity-list">
+        <p class="text-sm text-[#6b7280] py-4 text-center">ჯერ არ არის აქტივობა. დაიწყე სწავლა!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Actions -->
+  <section class="max-w-3xl mx-auto px-4 pb-16">
+    <div class="flex flex-wrap gap-3">
+      <a href="/dashboard/" class="cta-btn-sm" style="background:#818cf8;color:white;border-bottom:3px solid #6366f1;">📊 დეშბორდი</a>
+      <a href="/premium/" class="cta-btn-sm" style="background:linear-gradient(135deg,#818cf8,#c084fc);color:white;border-bottom:3px solid #6366f1;">⭐ პრემიუმი</a>
+      <button id="logout-btn" class="cta-btn-sm" style="background:#2e2e32;color:#e0e0e0;border-bottom:3px solid #1a1a1e;">🚪 გასვლა</button>
+    </div>
+  </section>
+
+  <style>
+    .cta-btn-sm {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+      text-decoration: none;
+    }
+    .cta-btn-sm:hover { opacity: 0.9; transform: translateY(-1px); }
+    .cta-btn-sm:active { transform: translateY(1px); }
+    :global(.light) .cta-btn-sm[style*="2e2e32"] { background: #f3f4f6 !important; color: #374151 !important; border-bottom-color: #d1d5db !important; }
+  </style>
+
+  <script is:inline>
+    (function() {
+      // Avatars
+      var avatars = ['😊','😎','🤓','🧠','🦊','🐱','🐶','🦁','🐼','🦄','🚀','⚡','🔥','💎','🌟','👑','🎯','🎮','📚','🎓'];
+      var savedAvatar = localStorage.getItem('fluentge-avatar') || '😊';
+      document.getElementById('avatar-display').textContent = savedAvatar;
+
+      // Emoji picker
+      var picker = document.getElementById('emoji-picker');
+      avatars.forEach(function(e) {
+        var btn = document.createElement('button');
+        btn.className = 'emoji-opt';
+        btn.textContent = e;
+        btn.onclick = function() {
+          localStorage.setItem('fluentge-avatar', e);
+          document.getElementById('avatar-display').textContent = e;
+          picker.classList.remove('show');
+        };
+        picker.appendChild(btn);
+      });
+      document.getElementById('avatar-trigger').onclick = function(ev) {
+        ev.stopPropagation();
+        picker.classList.toggle('show');
+      };
+      document.addEventListener('click', function() { picker.classList.remove('show'); });
+
+      // User info
+      var u = localStorage.getItem('fluentge-user');
+      if (u) {
+        try {
+          var data = JSON.parse(u);
+          document.getElementById('user-display-name').textContent = data.name || 'მომხმარებელი';
+          document.getElementById('user-display-email').textContent = data.email || '';
+        } catch(e) {}
+      }
+
+      // Stats from localStorage
+      var xp = parseInt(localStorage.getItem('fluentge-xp') || '0');
+      var streak = parseInt(localStorage.getItem('fluentge-streak') || '0');
+      document.getElementById('stat-xp').textContent = xp;
+      document.getElementById('stat-streak').textContent = streak;
+
+      // Count learned words (from flashcard progress)
+      var totalWords = 0;
+      for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        if (key && key.startsWith('fluentge-progress-')) {
+          try {
+            var prog = JSON.parse(localStorage.getItem(key));
+            if (prog && prog.learned) totalWords += prog.learned;
+          } catch(e) {}
+        }
+      }
+      document.getElementById('stat-words').textContent = totalWords;
+
+      // Active days
+      var history = [];
+      try { history = JSON.parse(localStorage.getItem('fluentge-streak-history') || '[]'); } catch(e) {}
+      document.getElementById('stat-days').textContent = history.length;
+
+      // Achievements
+      var badges = [
+        { emoji: '🌱', name: 'პირველი ნაბიჯი', check: function() { return totalWords >= 1; } },
+        { emoji: '📚', name: '50 სიტყვა', check: function() { return totalWords >= 50; } },
+        { emoji: '🎓', name: '200 სიტყვა', check: function() { return totalWords >= 200; } },
+        { emoji: '🔥', name: '3-დღე სტრიქი', check: function() { return streak >= 3; } },
+        { emoji: '💪', name: '7-დღე სტრიქი', check: function() { return streak >= 7; } },
+        { emoji: '⚡', name: '100 XP', check: function() { return xp >= 100; } },
+        { emoji: '🚀', name: '500 XP', check: function() { return xp >= 500; } },
+        { emoji: '💎', name: '1000 XP', check: function() { return xp >= 1000; } },
+        { emoji: '👑', name: '30-დღე სტრიქი', check: function() { return streak >= 30; } },
+        { emoji: '🏆', name: '1000 სიტყვა', check: function() { return totalWords >= 1000; } },
+      ];
+
+      var grid = document.getElementById('achievement-grid');
+      var earned = 0;
+      badges.forEach(function(b) {
+        var isEarned = b.check();
+        if (isEarned) earned++;
+        var div = document.createElement('div');
+        div.className = 'badge-card ' + (isEarned ? 'earned' : 'locked');
+        div.innerHTML = '<div class="badge-emoji">' + b.emoji + '</div><div class="badge-name">' + b.name + '</div>';
+        grid.appendChild(div);
+      });
+      document.getElementById('badge-count').textContent = earned + '/10 მოპოვებული';
+
+      // Logout
+      document.getElementById('logout-btn').onclick = function() {
+        localStorage.removeItem('fluentge-user');
+        localStorage.removeItem('fluentge-premium');
+        window.location.href = '/login/';
+      };
+    })();
+  </script>
+</Layout>

@@ -55,22 +55,26 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 1 night) — "Active Learning & Depth"
-- [ ] **Design quiz mode UI** (multiple choice cards, correct/wrong states, results) ← Cron 2
-- [ ] **Design typing mode UI** (input field, validation feedback) ← Cron 2
-- [ ] **Design achievement badges** (icons, colors, unlock animations) ← Cron 2
-- [ ] **Expand free grammar** (3→8 free A1 lessons) ← Cron 4
-- [ ] **Achievements system on dashboard** ← Cron 4
+## 🎯 THIS SPRINT (Mar 1 night) — "Performance & Conversion"
+- [ ] **Design premium page** (feature comparison, pricing cards, testimonials, FAQ) ← Cron 2
+- [ ] **Design profile page** (stats dashboard, avatar picker, achievement showcase) ← Cron 2
+- [ ] **Design loading/skeleton states** (for lazy-loaded components) ← Cron 2
+- [ ] **Premium page implementation** ← Cron 4
+- [ ] **Profile page implementation** ← Cron 4
+- [ ] **Homepage social proof section** ← Cron 4
 
 ## Recently Improved ✅
+- [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
+- [x] Achievements system — 10 badges on dashboard with earned/locked states, gradient icons, progress counter (Cron 4, Mar 1)
 - [x] Navbar streak 🔥 + XP ⭐ badges — shows in desktop & mobile nav when user has progress (Cron 4B, Feb 28)
 - [x] Learning path roadmap — 10-step beginner path on Dashboard with completion tracking (Cron 4B, Feb 28)
 - [x] Dashboard "continue where you left off" — smart card with personalized suggestions based on progress (Cron 4, Feb 28)
 - [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-- Quiz/Typing mode design (Sprint Mar 1 night)
-- Achievements design (Sprint Mar 1 night)
+- Premium page design (Sprint Mar 1 night)
+- Profile page design (Sprint Mar 1 night)
+- Loading states design (Sprint Mar 1 night)
 
 ## Previously Completed ✅ (Feb 28)
 - ✅ Light mode audit — all pages verified

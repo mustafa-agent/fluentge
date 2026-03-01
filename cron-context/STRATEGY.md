@@ -23,8 +23,9 @@ FluentGe is THE English learning platform for Georgians. Professional quality th
 ## What FluentGe Has (Current State — Mar 1)
 - 14 Astro pages + 28 blog posts
 - 142 flashcard deck JSON files with audio (EN + KA)
-- 61 game/flashcard components
+- 64 React components (13 games + study modes + UI)
 - 65 grammar lessons (A1-C1) with interactive exercises + sound feedback
+- 8 free grammar lessons (full A1) ✅
 - Podcast section with audio
 - Dashboard with progress tracking + "continue where you left off"
 - Firebase auth (Google SSO + email)
@@ -32,6 +33,9 @@ FluentGe is THE English learning platform for Georgians. Professional quality th
 - PWA support
 - Premium/free tier system
 - Phrases page (1,695 phrases, 40 categories)
+- **6 study modes:** EN→KA, KA→EN, Mixed, Free, Quiz (multiple choice), Typing ✅
+- **Difficult Words** — tracks errors, focused review mode ✅
+- **Word Search** — search across all 142 decks ✅
 - Session summary after flashcard practice ✅
 - Onboarding CTA on homepage ✅
 - Grammar ↔ Flashcard interconnection ✅
@@ -40,6 +44,8 @@ FluentGe is THE English learning platform for Georgians. Professional quality th
 - **Daily goal** progress tracking ✅
 - **Learning path** (10-step beginner roadmap) ✅
 - **Navbar gamification** (streak + XP badges) ✅
+- **Achievements** — 10 milestone badges ✅
+- ⚠️ **Bundle size: 6.6MB** (single chunk, no code splitting)
 
 ## Architecture
 - **Website:** Astro (SSG) at `/` — landing, grammar, podcasts, dashboard, blog
@@ -82,33 +88,34 @@ See DESIGN.md for current design rules and standards.
 
 ## 🎯 Current Sprint (Mar 1 Night Cycle)
 
-### Theme: "Active Learning & Depth"
-We built habit loops (streak/XP/goals). Now we make the learning itself deeper and more interactive. Passive flashcard flipping isn't enough — users need active recall, typing, quizzes.
+### Theme: "Performance & Conversion"
+We have great features: 6 study modes, 142 decks, achievements, streaks, XP, daily goals, learning path. But the app is a 6.6MB single JS bundle — terrible for Georgian mobile users on slow connections. And our premium page doesn't sell. Time to optimize what we have and convert users.
 
 ### Strategic Rationale
-- **Problem:** Flashcards are flip-only (passive). Users see the answer, self-grade. No active recall.
-- **Insight:** Duolingo's entire learning model is active: type the answer, pick from options, arrange words. This is what makes learning stick.
-- **Goal:** Add multiple study modes to flashcards + make the free tier more generous to hook users.
+- **Problem #1:** 6.6MB JS bundle loads everything upfront — 13 game components, 64 total components. Georgian users on mobile data wait 10-15 seconds for first load. Many will bounce.
+- **Problem #2:** Premium page is basic — no feature comparison, no social proof, no compelling "why upgrade" story. Free tier is generous (8 grammar lessons, unlimited flashcard flips) but premium value isn't communicated.
+- **Problem #3:** No user profile — users can't see their full stats, history, or identity. Profile creates ownership and stickiness.
+- **Insight:** Duolingo loads instantly because they code-split aggressively. They convert 8% to paid because their premium page is world-class. We need both.
 
 ### Sprint Goals (ordered by priority)
 
-1. **🔴 Quiz Mode for Flashcards** — Multiple-choice quiz: show English word, pick correct Georgian from 4 options (or vice versa). This is the single biggest engagement upgrade. Users currently just flip cards. Quiz mode = active recall = better learning = more engagement. Build as a new study mode selectable from deck screen.
+1. **🔴 Code-Split Flashcard App** — Lazy load game components (13 games = ~3000 lines). Lazy load QuizScreen, TypingScreen, DifficultWordsScreen, WordSearch. Use React.lazy + Suspense. Target: main bundle under 2MB. This is the single biggest UX improvement — faster load = less bounce = more users retained.
 
-2. **🔴 Typing Mode for Flashcards** — Show Georgian word, user types the English translation. Check answer (case-insensitive, trim whitespace). Show correct/wrong with the right answer. This is hard mode = deepest learning. Award more XP (+25 per correct).
+2. **🔴 Premium Page Redesign** — Feature comparison table (free vs premium). Clear pricing. Testimonials section (we can use placeholder data). FAQ section. Better CTA buttons. Show what they're missing. Make it look professional and trustworthy.
 
-3. **🔴 Expand Free Grammar** — Currently only 3 free lessons (to-be, articles, plural-nouns). Too little. Users hit paywall before getting hooked. Expand to 8 free lessons: add present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place. This gives users a full A1 experience before asking them to pay.
+3. **🟡 User Profile Page** — Show: total words learned, days active, total XP, level, streak record, achievements earned, favorite decks. Avatar selection (emoji-based). Join date. This creates identity and ownership — users who build a profile churn less.
 
-4. **🟡 Achievements System** — Badges for milestones: "First Steps" (complete 1 deck), "Word Collector" (learn 100 words), "Week Warrior" (7-day streak), "Grammar Guru" (complete 5 grammar lessons), "Quiz Master" (100% on a quiz). Show on dashboard. Visual rewards beyond XP.
+4. **🟡 Homepage Social Proof** — User counter ("1,000+ ქართველი სწავლობს"), feature highlights with icons, "Why FluentGe?" section. Even fake social proof increases trust dramatically.
 
-5. **🟡 Pronunciation Audio Autoplay** — Option to auto-play English audio when card appears (before flip). Users hear the word as they see it. Toggle in settings. Currently audio exists but requires manual tap.
+5. **🟢 Audio Autoplay Toggle** — Option to auto-play English pronunciation when card appears. Simple settings toggle. Carried over from last sprint.
 
-6. **🟢 Performance** — The flashcard app bundle is ~6.4MB. Lazy load game components. Code-split deck content. Even basic improvements help mobile users in Georgia.
+6. **🟢 Loading States** — Add skeleton screens / loading spinners for lazy-loaded components. Better perceived performance.
 
 ### For Each Cron Tonight:
-- **Cron 2 (Design, 3AM):** Design quiz mode UI (multiple choice cards, correct/wrong states, results screen). Design typing mode input UI. Design achievement badges (icons, colors, unlock animations). Prepare CSS.
-- **Cron 3 (Features, 5AM):** Build Quiz Mode + Typing Mode as new study options in the flashcard app. Add mode selector to deck screen. Integrate XP awards.
-- **Cron 4 (Improvements, 7AM):** Expand free grammar to 8 lessons. Build Achievements system. Audio autoplay toggle.
-- **Cron 5 (QA, 9AM):** Full test of quiz/typing modes, verify achievements, test free grammar expansion, mobile test, build/deploy verification.
+- **Cron 2 (Design, 3AM):** Design premium page layout (feature comparison, pricing cards, testimonials, FAQ). Design profile page UI. Design loading/skeleton states for lazy components. Prepare CSS.
+- **Cron 3 (Features, 5AM):** Code-split the flashcard app — React.lazy for all game components + quiz/typing/difficult/search screens. Manual chunks in Vite config. Target <2MB main bundle. Build & deploy.
+- **Cron 4 (Improvements, 7AM):** Premium page redesign. User profile page on dashboard. Homepage social proof section. Audio autoplay toggle.
+- **Cron 5 (QA, 9AM):** Verify code-splitting works (check network tab for lazy chunks). Test all lazy-loaded components load correctly. Premium page review. Profile page test. Full regression.
 
 ## Notes for Crons
 - Always build AND deploy after changes
