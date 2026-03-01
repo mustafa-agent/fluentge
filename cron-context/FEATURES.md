@@ -73,7 +73,8 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Code-split flashcard app (Sprint Mar 1 night)
+- 🔄 Code-split flashcard app (Cron 3, Mar 1 evening)
+- 🔄 Games XP/Level Engine (Cron 3, Mar 1 evening)
 - Premium page redesign (Sprint Mar 1 night)
 - User profile page (Sprint Mar 1 night)
 

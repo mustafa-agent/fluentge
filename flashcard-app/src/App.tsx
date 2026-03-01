@@ -1,16 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import DeckSelect from './components/DeckSelect';
-import StudyScreen from './components/StudyScreen';
-import SRSStudy from './components/SRSStudy';
-import QuizScreen from './components/QuizScreen';
-import TypingScreen from './components/TypingScreen';
-import DifficultWordsScreen from './components/DifficultWordsScreen';
-import WordSearch from './components/WordSearch';
 import StatsBar from './components/StatsBar';
-import ChallengeFriend from './components/ChallengeFriend';
 import { Deck, decks } from './lib/cards';
-import SpacedRepetition from './components/SpacedRepetition';
 import { loadFromCloud, syncToCloud } from './lib/firebase-sync';
+
+// Lazy-loaded heavy components
+const StudyScreen = lazy(() => import('./components/StudyScreen'));
+const SRSStudy = lazy(() => import('./components/SRSStudy'));
+const QuizScreen = lazy(() => import('./components/QuizScreen'));
+const TypingScreen = lazy(() => import('./components/TypingScreen'));
+const DifficultWordsScreen = lazy(() => import('./components/DifficultWordsScreen'));
+const WordSearch = lazy(() => import('./components/WordSearch'));
+const ChallengeFriend = lazy(() => import('./components/ChallengeFriend'));
+const SpacedRepetition = lazy(() => import('./components/SpacedRepetition'));
+import LoadingSkeleton from './components/LoadingSkeleton';
 
 type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'challenge' | 'srs-dashboard' | 'difficult';
 type StudyMode = 'classic' | 'srs' | 'reverse' | 'mixed';
@@ -195,22 +198,24 @@ export default function App() {
         </>
       )}
 
-      {screen === 'study' && activeDeck && (
-        studyMode === 'srs'
-          ? <SRSStudy cards={activeDeck.cards} deckId={activeDeck.id} onBack={handleBack} />
-          : <StudyScreen key={activeDeck.id + '-' + studyMode} deck={activeDeck} direction={studyMode === 'reverse' ? 'ka-en' : studyMode === 'mixed' ? 'mixed' : 'en-ka'} onBack={handleBack} />
-      )}
-      {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={decks.flatMap(d => d.cards)} onBack={handleBack} />}
-      {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
-      {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
-      {screen === 'difficult' && <DifficultWordsScreen onBack={handleBack} />}
-      {showSearch && (
-        <WordSearch
-          onClose={() => setShowSearch(false)}
-          onSelectDeck={(deck) => { setShowSearch(false); handleSelectDeck(deck); }}
-        />
-      )}
-      {screen === 'srs-dashboard' && <SpacedRepetition onBack={handleBack} />}
+      <Suspense fallback={<LoadingSkeleton />}>
+        {screen === 'study' && activeDeck && (
+          studyMode === 'srs'
+            ? <SRSStudy cards={activeDeck.cards} deckId={activeDeck.id} onBack={handleBack} />
+            : <StudyScreen key={activeDeck.id + '-' + studyMode} deck={activeDeck} direction={studyMode === 'reverse' ? 'ka-en' : studyMode === 'mixed' ? 'mixed' : 'en-ka'} onBack={handleBack} />
+        )}
+        {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={decks.flatMap(d => d.cards)} onBack={handleBack} />}
+        {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
+        {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
+        {screen === 'difficult' && <DifficultWordsScreen onBack={handleBack} />}
+        {showSearch && (
+          <WordSearch
+            onClose={() => setShowSearch(false)}
+            onSelectDeck={(deck) => { setShowSearch(false); handleSelectDeck(deck); }}
+          />
+        )}
+        {screen === 'srs-dashboard' && <SpacedRepetition onBack={handleBack} />}
+      </Suspense>
     </div>
   );
 }

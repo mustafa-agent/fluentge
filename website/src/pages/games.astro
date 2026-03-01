@@ -21,8 +21,34 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Games Stats Bar -->
+  <section class="max-w-5xl mx-auto px-4 pt-8">
+    <div id="games-stats" class="flex items-center justify-center gap-4 sm:gap-6 bg-[#242426] border border-[#2E2E30] rounded-2xl px-4 py-3">
+      <div class="flex items-center gap-1.5">
+        <span class="text-yellow-400 text-lg">⭐</span>
+        <span class="text-sm font-bold text-[#F5F5F0]" id="gs-xp">0</span>
+        <span class="text-xs text-[#6B6B65]">XP</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span class="text-purple-400 text-lg">🏆</span>
+        <span class="text-sm font-bold text-[#F5F5F0]">Lv.<span id="gs-level">1</span></span>
+      </div>
+      <div class="w-20 sm:w-28 h-2.5 bg-white/10 rounded-full overflow-hidden">
+        <div id="gs-bar" class="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all duration-500" style="width:0%"></div>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span class="text-green-400 text-lg">🎮</span>
+        <span class="text-sm font-bold text-[#F5F5F0]" id="gs-played">0</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span class="text-orange-400 text-lg">🔥</span>
+        <span class="text-sm font-bold text-[#F5F5F0]" id="gs-streak">0</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Game Grid -->
-  <section class="max-w-5xl mx-auto px-4 py-16">
+  <section class="max-w-5xl mx-auto px-4 py-8">
     <!-- Free Games Section -->
     <div class="mb-12">
       <div class="flex items-center gap-3 mb-6">
@@ -82,6 +108,29 @@ import Layout from '../layouts/Layout.astro';
       to { opacity: 1; transform: translateY(0); }
     }
     .game-card { animation: fadeIn 0.4s ease-out backwards; }
+    @keyframes xpFloatUp {
+      0% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-60px); }
+    }
+    .xp-float-anim {
+      color: #facc15; font-weight: 800; font-size: 18px; z-index: 9999;
+      pointer-events: none; animation: xpFloatUp 1.2s ease-out forwards;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    }
+    .level-up-popup {
+      position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+      animation: fadeIn 0.3s ease-out;
+    }
+    .level-up-inner {
+      background: linear-gradient(135deg, #7c3aed, #a855f7); padding: 2rem 3rem;
+      border-radius: 1.5rem; text-align: center; color: white;
+      animation: levelPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    @keyframes levelPop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
   </style>
 
   <script>
@@ -171,6 +220,102 @@ import Layout from '../layouts/Layout.astro';
     function snd(ok){try{if(!actx)actx=new(window.AudioContext||window.webkitAudioContext)();if(actx.state==='suspended')actx.resume();const o=actx.createOscillator(),g=actx.createGain();o.connect(g);g.connect(actx.destination);g.gain.setValueAtTime(0.13,actx.currentTime);o.type='sine';if(ok){o.frequency.setValueAtTime(523,actx.currentTime);o.frequency.setValueAtTime(659,actx.currentTime+0.1);}else{o.frequency.setValueAtTime(330,actx.currentTime);o.frequency.setValueAtTime(262,actx.currentTime+0.15);}g.gain.exponentialRampToValueAtTime(0.001,actx.currentTime+0.3);o.start(actx.currentTime);o.stop(actx.currentTime+0.35);}catch(e){}}
     function h(tag,cls='',html=''){const e=document.createElement(tag);e.className=cls;e.innerHTML=html;return e;}
 
+    // ============ GAMES XP SYSTEM ============
+    const GAME_XP = { CORRECT: 10, STREAK_BONUS: 5, COMPLETION: 50 };
+    function getGamesTotalXP(){ return parseInt(localStorage.getItem('totalXP')||'0',10); }
+    function getGamesLevel(xp){ return Math.floor(xp/200)+1; }
+    function addGameXP(amount){
+      const cur=getGamesTotalXP(); const curLv=getGamesLevel(cur);
+      const nw=cur+amount; const nwLv=getGamesLevel(nw);
+      localStorage.setItem('totalXP',nw.toString());
+      // Update streak
+      const today=new Date().toDateString();
+      const lastDate=localStorage.getItem('lastPracticeDate');
+      if(lastDate!==today){
+        const yesterday=new Date(Date.now()-86400000).toDateString();
+        const streak=parseInt(localStorage.getItem('currentStreak')||'0',10);
+        if(lastDate===yesterday||!lastDate){localStorage.setItem('currentStreak',(streak+1).toString());}
+        else{localStorage.setItem('currentStreak','1');}
+        localStorage.setItem('lastPracticeDate',today);
+      }
+      // Track study time
+      try{const st=JSON.parse(localStorage.getItem('dailyStudyTime')||'{}');
+        if(st.date===today){st.minutes=(st.minutes||0)+0.5;}else{st.date=today;st.minutes=0.5;}
+        localStorage.setItem('dailyStudyTime',JSON.stringify(st));
+      }catch(e){}
+      // Track games played
+      const gp=parseInt(localStorage.getItem('gamesPlayed')||'0',10);
+      localStorage.setItem('gamesPlayed',(gp+1).toString());
+      // Track today's games
+      try{const tg=JSON.parse(localStorage.getItem('todayGames')||'{}');
+        if(tg.date===today){tg.count=(tg.count||0)+1;tg.xp=(tg.xp||0)+amount;}
+        else{tg.date=today;tg.count=1;tg.xp=amount;}
+        localStorage.setItem('todayGames',JSON.stringify(tg));
+      }catch(e){}
+      return {newTotal:nw,levelUp:nwLv>curLv,newLevel:nwLv};
+    }
+    // Floating +XP animation
+    function showXPFloat(el,amount){
+      const f=document.createElement('div');
+      f.className='xp-float-anim';
+      f.textContent='+'+amount+' XP';
+      if(el){const r=el.getBoundingClientRect();const p=el.closest('#game-container')||el.parentElement;
+        f.style.position='fixed';f.style.left=(r.left+r.width/2-30)+'px';f.style.top=(r.top-10)+'px';
+      }else{f.style.position='fixed';f.style.top='40%';f.style.left='50%';f.style.transform='translateX(-50%)';}
+      document.body.appendChild(f);
+      setTimeout(()=>f.remove(),1200);
+    }
+    // Level-up popup
+    function showLevelUp(level){
+      const d=document.createElement('div');
+      d.className='level-up-popup';
+      d.innerHTML=`<div class="level-up-inner"><span class="text-4xl">🎉</span><p class="text-xl font-bold mt-2">Level ${level}!</p><p class="text-sm text-[#A0A09A]">ახალ დონეზე გადახვედი!</p></div>`;
+      document.body.appendChild(d);
+      setTimeout(()=>d.remove(),2500);
+    }
+    // XP header for game overlay
+    function updateGameXPHeader(){
+      let hdr=document.getElementById('game-xp-header');
+      if(!hdr){
+        hdr=document.createElement('div');hdr.id='game-xp-header';
+        hdr.className='flex items-center justify-center gap-4 mb-4 text-sm';
+        const gc=document.getElementById('game-container');
+        if(gc)gc.parentElement.insertBefore(hdr,gc);
+      }
+      const xp=getGamesTotalXP();const lv=getGamesLevel(xp);
+      const xpInLevel=xp-((lv-1)*200);const pct=Math.min(100,(xpInLevel/200)*100);
+      hdr.innerHTML=`<span class="text-yellow-400 font-bold">⭐ ${xp} XP</span><span class="text-purple-400 font-bold">Lv.${lv}</span><div class="w-24 h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all" style="width:${pct}%"></div></div>`;
+    }
+    // Award XP on correct answer in any game
+    function awardGameXP(el,amount){
+      amount=amount||GAME_XP.CORRECT;
+      const result=addGameXP(amount);
+      showXPFloat(el,amount);
+      updateGameXPHeader();
+      if(result.levelUp)setTimeout(()=>showLevelUp(result.newLevel),400);
+    }
+    // Populate stats bar
+    function refreshStatsBar(){
+      const xp=getGamesTotalXP();const lv=getGamesLevel(xp);
+      const xpInLv=xp-((lv-1)*200);const pct=Math.min(100,(xpInLv/200)*100);
+      const el=id=>document.getElementById(id);
+      if(el('gs-xp'))el('gs-xp').textContent=xp>=1000?(xp/1000).toFixed(1)+'k':xp;
+      if(el('gs-level'))el('gs-level').textContent=lv;
+      if(el('gs-bar'))el('gs-bar').style.width=pct+'%';
+      if(el('gs-played'))el('gs-played').textContent=localStorage.getItem('gamesPlayed')||'0';
+      if(el('gs-streak'))el('gs-streak').textContent=localStorage.getItem('currentStreak')||'0';
+    }
+    refreshStatsBar();
+    setInterval(refreshStatsBar,2000);
+
+    // Wrap snd to auto-award XP on correct answers
+    const _origSnd=snd;
+    let _gameActive=false;
+    snd=function(ok){
+      _origSnd(ok);
+      if(ok&&_gameActive)awardGameXP(null,GAME_XP.CORRECT);
+    };
+
     // ============ BUILD GRID ============
     const freeGrid=document.getElementById('free-games');
     const premGrid=document.getElementById('premium-games');
@@ -241,12 +386,15 @@ import Layout from '../layouts/Layout.astro';
 
     document.getElementById('sub-btn').onclick=()=>alert('მალე დაემატება! Coming soon!');
     document.getElementById('sub-close').onclick=()=>modal.classList.add('hidden');
-    document.getElementById('back-btn').onclick=()=>{overlay.classList.add('hidden');cont.innerHTML='';document.body.style.overflow='';};
+    document.getElementById('back-btn').onclick=()=>{_gameActive=false;overlay.classList.add('hidden');cont.innerHTML='';document.body.style.overflow='';const xh=document.getElementById('game-xp-header');if(xh)xh.remove();};
 
     function openGame(id){
       overlay.classList.remove('hidden');
       document.body.style.overflow='hidden';
       cont.innerHTML='';
+      _gameActive=true;
+      // Show XP header
+      setTimeout(updateGameXPHeader,100);
       const b={match:buildMatch,speed:buildSpeed,truefalse:buildTF,scramble:buildScramble,hangman:buildHangman,fillblank:buildFB,emojiquiz:buildEQ,memory:buildMem,typing:buildType,listening:buildListen,opposites:buildOpp,numbers:buildNum,daysmonths:buildDM,countries:buildCountry,foodquiz:buildFood,clothesquiz:buildClothes,rooms:buildRoom,emotionsquiz:buildEmo,family:buildFamily,travel:buildTravel,phrasesquiz:buildPhrases,movies:buildMovies,math:buildMath,routine:buildRoutine,spelling:buildSpelling,wordrace:buildWordRace,colorsquiz:buildColors,timequiz:buildTime,categories:buildCat,wordcatch:buildCatch};
       if(b[id])b[id]();
     }

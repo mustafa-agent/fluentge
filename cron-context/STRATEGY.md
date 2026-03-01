@@ -86,9 +86,16 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 1 Night Cycle)
+## 🎯 Current Sprint (Mar 1-2 Night Cycle)
 
-### Theme: "Performance & Conversion"
+### Theme: "Gamification & Engagement"
+**Tornike's Priority (Mar 1):** Games page needs a real XP/level progression system so users feel motivated to play. Dashboard needs to properly show game results and progress. Take time, do it right.
+
+### TOP PRIORITY from Tornike:
+1. **Games XP/Level System** — Real progression: XP per game, levels, maybe ranks/titles. Users need incentive to keep playing. Think Duolingo's system.
+2. **Dashboard Game Results** — Show game stats prominently: games played, XP earned, level, win rates, best scores, recent activity. Make it feel alive.
+
+### Also Continue:
 We have great features: 6 study modes, 142 decks, achievements, streaks, XP, daily goals, learning path. But the app is a 6.6MB single JS bundle — terrible for Georgian mobile users on slow connections. And our premium page doesn't sell. Time to optimize what we have and convert users.
 
 ### Strategic Rationale
@@ -112,10 +119,11 @@ We have great features: 6 study modes, 142 decks, achievements, streaks, XP, dai
 6. **🟢 Loading States** — Add skeleton screens / loading spinners for lazy-loaded components. Better perceived performance.
 
 ### For Each Cron Tonight:
-- **Cron 2 (Design, 3AM):** Design premium page layout (feature comparison, pricing cards, testimonials, FAQ). Design profile page UI. Design loading/skeleton states for lazy components. Prepare CSS.
-- **Cron 3 (Features, 5AM):** Code-split the flashcard app — React.lazy for all game components + quiz/typing/difficult/search screens. Manual chunks in Vite config. Target <2MB main bundle. Build & deploy.
-- **Cron 4 (Improvements, 7AM):** Premium page redesign. User profile page on dashboard. Homepage social proof section. Audio autoplay toggle.
-- **Cron 5 (QA, 9AM):** Verify code-splitting works (check network tab for lazy chunks). Test all lazy-loaded components load correctly. Premium page review. Profile page test. Full regression.
+- **Cron 1 (Strategy, 1AM):** Design the XP/level system for games. How XP is earned per game, level thresholds, titles/ranks. Plan dashboard layout for game stats. Write specs.
+- **Cron 2 (Design, 3AM):** Design game results UI (XP animations, level-up effects, progress bars). Design dashboard game stats cards. Prepare CSS for new components.
+- **Cron 3 (Features, 5AM):** Build the XP/level engine for games. Implement XP tracking in localStorage/Firebase. Level calculations. Game completion rewards. Build & deploy.
+- **Cron 4 (Improvements, 7AM):** Dashboard game results section — show XP, level, games played, recent activity, best scores. Also code-split if time allows.
+- **Cron 5 (QA, 9AM):** Test all games award XP correctly. Test level-ups. Test dashboard reflects game progress. Full regression.
 
 ## Notes for Crons
 - Always build AND deploy after changes

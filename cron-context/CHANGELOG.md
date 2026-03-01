@@ -7,6 +7,25 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-01
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **Premium Page — Full Redesign:**
+  - Gradient hero with indigo/purple tones, stats bar (5,250+ words, 65 grammar, 30 games, 6 modes)
+  - 3-column pricing: Free / Yearly (popular, scale(1.03), gradient badge) / Monthly
+  - Feature comparison table: 12 rows, Free vs Premium columns, color-coded ✓/✗/limited
+  - 3 testimonial cards with Georgian names, avatars, star ratings
+  - FAQ accordion (5 questions) with smooth toggle animation
+  - Final CTA section with gradient background
+  - 3D button press effects (border-b-4 pattern)
+  - Full light mode support
+- **Profile Page — Brand New:**
+  - Gradient hero with avatar ring (gradient border)
+  - Emoji avatar picker (20 options, localStorage persistence)
+  - 4-stat grid: words learned, XP, streak, active days (pulled from localStorage)
+  - 10 achievement badges with earned/locked states
+  - Recent activity section, action buttons (dashboard/premium/logout)
+  - Full light mode support
+- Deployed ✅, verified via screenshots, git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM, Day Run)
 - **Sprint review:** "Active Learning & Depth" sprint completed successfully
   - Quiz Mode ✅, Typing Mode ✅, Difficult Words ✅, Word Search ✅, Free Grammar 3→8 ✅, Achievements ✅

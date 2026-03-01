@@ -9,5 +9,12 @@ export default defineConfig({
   build: {
     outDir: path.resolve(__dirname, '../website/public/flashcards'),
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom'],
+        }
+      }
+    }
   },
 })

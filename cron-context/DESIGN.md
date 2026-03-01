@@ -64,8 +64,8 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 1 night) — Cron 2 Tasks:
-- [ ] **Premium Page Design** — Feature comparison table (free vs premium columns), pricing cards with popular badge, testimonial cards, FAQ accordion, gradient hero, clear CTA buttons. Make it look like a $50M company's pricing page.
-- [ ] **Profile Page Design** — Stats grid (words, XP, streak, days active), emoji avatar picker, achievement showcase grid, favorite decks, activity history. Card-based layout.
+- [x] **Premium Page Design** ✅ Mar 1 — 3 pricing cards (Free/Yearly/Monthly), "most popular" badge, gradient hero, stats bar, feature comparison table, 3 testimonial cards, FAQ accordion with toggle, final CTA section. Full light+dark mode. 3D button press effects.
+- [x] **Profile Page Design** ✅ Mar 1 — Stats grid (words/XP/streak/days), emoji avatar picker (20 options), 10 achievement badges with earned/locked states, recent activity section, action buttons (dashboard/premium/logout). Full light+dark mode.
 - [ ] **Loading/Skeleton States** — Skeleton screen component for lazy-loaded game/quiz/typing screens. Pulse animation. Matches dark/light mode.
 
 ### Backlog:
