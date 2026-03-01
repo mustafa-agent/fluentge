@@ -3,6 +3,7 @@ import { Deck, FlashCard } from '../lib/cards';
 import { updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { checkAchievements } from './Achievements';
+import { recordWrong, recordRight } from '../lib/difficult-words';
 import ShareResult from './ShareResult';
 
 interface Props {
@@ -81,9 +82,11 @@ export default function TypingScreen({ deck, onBack }: Props) {
       awardXP(xp);
       playCorrect();
       incrementWordsLearned();
+      recordRight(card.english);
     } else {
       setStreak(0);
       playWrong();
+      recordWrong(card.english, card.georgian, card.category || 'typing', card.pronunciation);
     }
     updateStats(wasCorrect);
   }

@@ -4,13 +4,15 @@ import StudyScreen from './components/StudyScreen';
 import SRSStudy from './components/SRSStudy';
 import QuizScreen from './components/QuizScreen';
 import TypingScreen from './components/TypingScreen';
+import DifficultWordsScreen from './components/DifficultWordsScreen';
+import WordSearch from './components/WordSearch';
 import StatsBar from './components/StatsBar';
 import ChallengeFriend from './components/ChallengeFriend';
 import { Deck, decks } from './lib/cards';
 import SpacedRepetition from './components/SpacedRepetition';
 import { loadFromCloud, syncToCloud } from './lib/firebase-sync';
 
-type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'challenge' | 'srs-dashboard';
+type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'challenge' | 'srs-dashboard' | 'difficult';
 type StudyMode = 'classic' | 'srs' | 'reverse' | 'mixed';
 
 export default function App() {
@@ -20,6 +22,7 @@ export default function App() {
   });
   const [activeDeck, setActiveDeck] = useState<Deck | null>(null);
   const [studyMode, setStudyMode] = useState<StudyMode>('classic');
+  const [showSearch, setShowSearch] = useState(false);
 
   useEffect(() => {
     loadFromCloud().catch(() => {});
@@ -86,11 +89,20 @@ export default function App() {
             <span className="text-[var(--color-primary)]">Fluent</span>Ge
             <span className="text-sm ml-2">📝</span>
           </h1>
-          {screen === 'home' && (
-            <a href="/" className="text-sm text-[var(--color-text-muted)] hover:text-white transition-colors">
-              მთავარი
-            </a>
-          )}
+          <div className="flex items-center gap-3">
+            {screen === 'home' && (
+              <button
+                onClick={() => setShowSearch(true)}
+                className="text-[var(--color-text-muted)] hover:text-white transition-colors text-lg"
+                title="ძიება"
+              >🔍</button>
+            )}
+            {screen === 'home' && (
+              <a href="/" className="text-sm text-[var(--color-text-muted)] hover:text-white transition-colors">
+                მთავარი
+              </a>
+            )}
+          </div>
         </div>
       </header>
 
@@ -115,7 +127,22 @@ export default function App() {
             </button>
           </div>
 
-          {/* Anki mode is inside each deck - no separate banner needed */}
+          {/* Difficult Words Banner */}
+          <div className="px-4 pt-3 max-w-lg mx-auto">
+            <button
+              onClick={() => setScreen('difficult')}
+              className="w-full p-4 rounded-2xl bg-gradient-to-r from-red-600/30 to-amber-500/30 border border-red-500/30 hover:border-red-500/50 transition-all text-left group"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-3xl">😤</span>
+                <div>
+                  <div className="font-bold text-lg">რთული სიტყვები</div>
+                  <div className="text-sm text-[var(--color-text-muted)]">იმუშავე შენს სუსტ მხარეებზე · +20 XP</div>
+                </div>
+                <span className="ml-auto text-[var(--color-text-muted)] group-hover:text-white transition-colors">→</span>
+              </div>
+            </button>
+          </div>
 
           {/* How it works */}
           <div className="px-4 pt-6 max-w-lg mx-auto">
@@ -176,6 +203,13 @@ export default function App() {
       {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={decks.flatMap(d => d.cards)} onBack={handleBack} />}
       {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
       {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
+      {screen === 'difficult' && <DifficultWordsScreen onBack={handleBack} />}
+      {showSearch && (
+        <WordSearch
+          onClose={() => setShowSearch(false)}
+          onSelectDeck={(deck) => { setShowSearch(false); handleSelectDeck(deck); }}
+        />
+      )}
       {screen === 'srs-dashboard' && <SpacedRepetition onBack={handleBack} />}
     </div>
   );

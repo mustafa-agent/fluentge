@@ -70,8 +70,10 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Quiz Mode + Typing Mode (Sprint Mar 1 night)
+- Quiz Mode + Typing Mode (Sprint Mar 1 night) — ✅ Built by Cron 2+3
 - Achievements system (Sprint Mar 1 night)
+- 🔄 Difficult Words Practice — track wrong answers, focused review mode (Cron 3)
+- 🔄 Word Search — search across all decks (Cron 3)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

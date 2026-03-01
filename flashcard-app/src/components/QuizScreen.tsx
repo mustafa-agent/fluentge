@@ -3,6 +3,7 @@ import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { checkAchievements } from './Achievements';
+import { recordWrong, recordRight } from '../lib/difficult-words';
 import ShareResult from './ShareResult';
 
 interface Props {
@@ -76,9 +77,11 @@ export default function QuizScreen({ deck, allCards, onBack }: Props) {
       awardXP(xp);
       playCorrect();
       incrementWordsLearned();
+      recordRight(q.card.english);
     } else {
       setStreak(0);
       playWrong();
+      recordWrong(q.card.english, q.card.georgian, q.card.category || 'quiz', q.card.pronunciation);
     }
     updateStats(wasCorrect);
   }

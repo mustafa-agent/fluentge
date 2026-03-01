@@ -7,6 +7,24 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-01
 
+### Cron 2 — Design (3:00 AM)
+- **Quiz Mode UI — Duolingo-style upgrade:**
+  - 3D option buttons with `quiz-option` class (border-b-4, active press effect)
+  - Green/red bottom feedback bar (`.quiz-feedback`) sliding up with correct answer shown
+  - `correctPulse` and `wrongShake` CSS animations
+  - Chunky green progress bar, streak counter, +15 XP per correct
+  - Result screen: stats grid with `result-pop` animation, replay button
+- **Typing Mode — Brand new component:**
+  - `TypingScreen.tsx`: Show Georgian word, user types English translation
+  - 3D input field with focus/correct/wrong states, 3D submit button
+  - Bottom feedback bar, +25 XP per correct (harder = more reward)
+  - Best streak tracking, added to DeckSelect as 6th mode (✍️ წერა)
+- **Achievements — Visual upgrade:**
+  - 10 badges with unique gradients, `badgeGlow` and `badgeUnlock` animations
+  - `.badge-card` with 3D bottom border, progress bar, better toast
+- **~120 lines of new CSS** for quiz/typing/badge animations + light mode overrides
+- Deployed ✅, verified via screenshots, git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Retention & Habit Formation" sprint completed successfully
   - Streak system ✅, XP system ✅, Daily goal ✅, Learning path ✅, Navbar gamification ✅, Light mode audit ✅

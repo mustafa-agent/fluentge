@@ -64,9 +64,9 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 1 night) — Cron 2 Tasks:
-- [ ] **Quiz Mode UI** — Multiple choice cards (4 options), correct (green pulse) / wrong (red shake) states, score screen at end, Duolingo-style progress bar at top
-- [ ] **Typing Mode UI** — Clean input field, submit button, correct/wrong feedback with correct answer shown, streak counter for consecutive correct
-- [ ] **Achievement Badges** — Design 6-8 badge icons using emoji + gradient backgrounds. Locked (gray) vs unlocked (colorful) states. Unlock animation (scale + glow).
+- [x] **Quiz Mode UI** — Duolingo-style 3D option buttons (border-b-4), green/red bottom feedback bars (slide up), correctPulse/wrongShake animations, chunky progress bar, streak counter, XP awards (+15/correct), result screen with stats grid + pop animation ✅ Mar 1
+- [x] **Typing Mode UI** — New TypingScreen component: Georgian→English, 3D submit button, correct/wrong input states, bottom feedback bar, +25 XP per correct, best streak tracking, result screen ✅ Mar 1
+- [x] **Achievement Badges** — 10 badges with gradient backgrounds (sky, green, purple, amber, orange, red, cyan, yellow, pink), glow animation on earned, badgeUnlock scale animation, progress bar, better toast ✅ Mar 1
 
 ### Backlog:
 - [ ] Replace flat buttons with 3D buttons on other pages (grammar, games)
