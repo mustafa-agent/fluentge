@@ -84,7 +84,29 @@ function pickNextCard(allCards: FlashCard[], store: SRSStore, lastWord?: string)
   return pool[pool.length - 1].card;
 }
 
-type Rating = 'know' | 'hard' | 'again';
+type Rating = 'again' | 'hard' | 'good' | 'easy';
+
+function getNextInterval(data: SRSData, rating: Rating): string {
+  const DAY = 86400000;
+  switch (rating) {
+    case 'again': return '1წთ';
+    case 'hard': {
+      const d = Math.max(1, Math.round((data.interval || 1) * 0.5));
+      return d === 1 ? '1დ' : `${d}დ`;
+    }
+    case 'good': {
+      const r = data.repetitions || 0;
+      if (r <= 0) return '1დ';
+      if (r === 1) return '3დ';
+      return `${Math.round((data.interval || 1) * data.easeFactor)}დ`;
+    }
+    case 'easy': {
+      const r = data.repetitions || 0;
+      if (r <= 0) return '3დ';
+      return `${Math.round((data.interval || 1) * data.easeFactor * 1.3)}დ`;
+    }
+  }
+}
 
 function rateCard(store: SRSStore, word: string, rating: Rating): SRSStore {
   const data = store[word] || {
@@ -98,7 +120,14 @@ function rateCard(store: SRSStore, word: string, rating: Rating): SRSStore {
   const DAY = 86400000;
   
   switch (rating) {
-    case 'know':
+    case 'easy':
+      data.repetitions++;
+      if (data.repetitions === 1) data.interval = 3;
+      else data.interval = Math.round(data.interval * data.easeFactor * 1.3);
+      data.easeFactor = Math.min(3.0, data.easeFactor + 0.15);
+      data.nextReview = now + data.interval * DAY;
+      break;
+    case 'good':
       data.repetitions++;
       if (data.repetitions === 1) data.interval = 1;
       else if (data.repetitions === 2) data.interval = 3;
@@ -209,8 +238,9 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
     
     // Award XP
     let xpGain = XP_REWARDS.REVIEW_CARD;
-    if (rating === 'know') {
+    if (rating === 'good' || rating === 'easy') {
       xpGain += XP_REWARDS.CORRECT_ANSWER;
+      if (rating === 'easy') xpGain += 5; // bonus for easy
       addToKnownCards(currentCard.english, currentCard.georgian);
       setCorrect(c => c + 1);
     }
@@ -312,25 +342,39 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
                 </div>
               </div>
 
-              {/* Rating buttons — right below the card */}
-              <div className="flex gap-3 mt-4">
+              {/* SM-2 Rating buttons — 4 options with 3D press effect */}
+              <div className="grid grid-cols-4 gap-2 mt-4">
                 <button
                   onClick={() => handleRate('again')}
-                  className="flex-1 bg-red-500/20 hover:bg-red-500/30 border border-red-500/30 text-red-400 font-bold py-4 rounded-xl transition-colors text-sm"
+                  className="bg-rose-500 border-b-4 border-rose-700 active:border-b-0 active:mt-1 text-white font-bold py-3 rounded-xl transition-all text-xs"
                 >
-                  არ ვიცი ❌
+                  <span className="block text-base mb-0.5">❌</span>
+                  თავიდან
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'again')}</span>
                 </button>
                 <button
                   onClick={() => handleRate('hard')}
-                  className="flex-1 bg-yellow-500/20 hover:bg-yellow-500/30 border border-yellow-500/30 text-yellow-400 font-bold py-4 rounded-xl transition-colors text-sm"
+                  className="bg-orange-500 border-b-4 border-orange-700 active:border-b-0 active:mt-1 text-white font-bold py-3 rounded-xl transition-all text-xs"
                 >
-                  რთულია 🤔
+                  <span className="block text-base mb-0.5">🤔</span>
+                  რთული
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'hard')}</span>
                 </button>
                 <button
-                  onClick={() => handleRate('know')}
-                  className="flex-1 bg-green-500/20 hover:bg-green-500/30 border border-green-500/30 text-green-400 font-bold py-4 rounded-xl transition-colors text-sm"
+                  onClick={() => handleRate('good')}
+                  className="bg-green-500 border-b-4 border-green-700 active:border-b-0 active:mt-1 text-white font-bold py-3 rounded-xl transition-all text-xs"
                 >
-                  ვიცი ✅
+                  <span className="block text-base mb-0.5">👍</span>
+                  კარგი
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'good')}</span>
+                </button>
+                <button
+                  onClick={() => handleRate('easy')}
+                  className="bg-sky-500 border-b-4 border-sky-700 active:border-b-0 active:mt-1 text-white font-bold py-3 rounded-xl transition-all text-xs"
+                >
+                  <span className="block text-base mb-0.5">🎯</span>
+                  ადვილი
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'easy')}</span>
                 </button>
               </div>
             </>

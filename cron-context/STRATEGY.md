@@ -86,105 +86,132 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 2 Day Cycle)
+## 🎯 Current Sprint (Mar 3 Night Cycle)
 
-### Theme: "Top 2000 Spotlight & Polish"
+### Theme: "Onboarding & Retention Engine"
 
-### CONTEXT: Tornike's priorities (Mar 2) — status:
-1. ⚠️ **Top 2000 Words — special category** — NOT DONE. Must look special, distinct from other decks.
-2. ⚠️ **Design improvements** — Ongoing. Keep polishing.
-3. ⚠️ **Georgian translation review** — NOT DONE. Check ALL Georgian text for accuracy.
-4. ⚠️ **Bug hunting** — Test everything, find and fix.
-5. ✅ **Games XP/Level system** — DONE
-6. ✅ **Dashboard game results** — DONE
-7. ✅ **Dark mode contrast fix** — DONE
+### CONTEXT: ALL Tornike's Mar 2 priorities are DONE ✅
+1. ✅ **Top 2000 Words — special category** — Hero card, free, visually distinct
+2. ✅ **Design improvements** — 3D buttons, consistent styling, premium page redesign
+3. ✅ **Georgian translation review** — Full audit completed, natural Georgian
+4. ✅ **Bug hunting** — Critical blank page bug found & fixed, deploy script hardened
+5. ✅ **Games XP/Level system** — All 30 games award XP, stats bar, level-up popup
+6. ✅ **Dashboard game results** — 4 gradient stat cards, XP progress bar
+7. ✅ **Dark mode contrast fix** — Full light/dark mode audit
 
-### Strategic State:
-FluentGe is feature-rich and performant (236KB main bundle!). All major features work. The remaining work is Tornike's explicit requests: making Top 2000 special, Georgian quality, and polish.
+### Strategic State (Mar 3):
+FluentGe is **feature-complete for MVP**. 65 components, 73 decks, 65 grammar lessons, 30 games, 6 study modes, XP/streaks/achievements, 236KB bundle. We beat Lingwing.com on features.
 
-**Competitive position:** We now have MORE features than Lingwing.com (6 study modes, 30 games, XP/streaks, achievements, 73 decks, 65 grammar lessons). Our bundle is fast (236KB). The gap is now content quality and polish — not features.
+**The gaps are now USER JOURNEY gaps:**
+- A new user lands → sees deck list → no guidance → bounces
+- A returning user has no reason to come back daily (no smart review scheduling)
+- Card content quality unchecked — 5000+ cards, are translations correct?
+
+**What Duolingo does that we don't:**
+1. **30-second onboarding** — pick level, set goal, start lesson immediately
+2. **Smart review** — SM-2 algorithm schedules reviews at optimal intervals
+3. **Sentence exercises** — not just vocabulary, but sentence construction
+4. **Push to return** — streak freeze, notifications, friend challenges
 
 ### Sprint Goals (ordered by priority)
 
-1. **🔴 Top 2000 Words — Special Treatment** — This is Tornike's #1 ask. The Top 2000 deck has 2000 words and should be THE flagship deck. Currently it's just another card in a 3-column grid. Make it:
-   - A full-width hero card at the TOP of the deck list (before the grid)
-   - Gradient background (gold/amber), large icon, progress bar
-   - Show word count prominently ("2,000 სიტყვა")
-   - "ყველაზე მნიშვნელოვანი სიტყვები" (most important words) tagline
-   - Separate visual section — users should see this FIRST
-   - Make it free (move to FREE_DECK_IDS) — this is the hook that keeps users
+1. **🔴 Onboarding Flow** — New user experience in <30 seconds:
+   - Detect first visit (no localStorage data)
+   - Welcome modal: "გამარჯობა! 👋 როგორ გინდა დაიწყო?"
+   - 3 paths: "📚 ისწავლე სიტყვები" → Top 2000, "📖 გრამატიკა A1" → grammar, "🎮 თამაშები" → games
+   - Set daily goal during onboarding (5/10/15 min)
+   - Skip option for returning users
+   - Store `onboarded: true` in localStorage
 
-2. **🔴 Georgian Translation Review** — Audit ALL user-facing Georgian text:
-   - Flashcard UI strings (buttons, labels, tooltips)
-   - Grammar page titles and descriptions
-   - Games page text
-   - Dashboard, homepage, navbar
-   - Check for Google Translate artifacts, awkward phrasing
-   - Fix to natural Georgian
+2. **🔴 True Spaced Repetition (SM-2)** — Replace basic flip-and-rate with real algorithm:
+   - Track per-card: interval, ease factor, next review date
+   - Rating: Again (0) / Hard (3) / Good (4) / Easy (5)
+   - Intervals: 1min → 10min → 1d → 3d → 7d → 15d → 30d+
+   - "Due cards" count shown on deck cards and dashboard
+   - Daily review queue: cards due today shown first
+   - This makes FluentGe ACTUALLY effective at teaching vocabulary
 
-3. **🟡 Design Polish** — Consistent styling across all pages:
-   - 3D buttons on grammar and games pages (currently only homepage/premium have them)
-   - Consistent card styling
-   - Better loading states
-   - Smooth transitions everywhere
+3. **🟡 Content Quality Audit** — Verify card data integrity:
+   - Script to check all 142 JSON files for: missing fields, empty strings, duplicate cards
+   - Sample check of Georgian translations for accuracy
+   - Flag any cards with placeholder or low-quality translations
+   - Report findings for manual review
 
-4. **🟡 Onboarding Flow** — First-time user guided experience:
-   - Detect new user (no localStorage data)
-   - Show welcome screen with 3 paths: "Learn Words" → Top 2000, "Learn Grammar" → A1, "Play Games"
-   - Tooltip highlights on first visit
+4. **🟡 Homepage → Flashcard Flow** — Reduce friction:
+   - Homepage "დაიწყე სწავლა" button → goes directly to Top 2000 (not generic /flashcards/)
+   - Add "Continue Learning" banner on homepage for returning users
+   - Clearer value proposition on homepage
 
-5. **🟢 True Spaced Repetition** — Anki-style intervals (1d → 3d → 7d → 15d → 30d) instead of simple flip-and-rate.
+5. **🟢 Review Reminders** — localStorage-based notification banner:
+   - "You have 15 cards due for review!" banner on flashcard home
+   - "Your streak is at risk! 🔥" if no activity today
+   - These banners drive daily return visits
 
-### For Each Cron Today:
-- **Cron 1 (Strategy, 11:30AM):** ← THIS RUN. Review state, set priorities, write specs. Update all context files.
-- **Cron 2 (Design, 3PM):** Design the Top 2000 hero card. Design improvements for grammar/games pages. Prepare CSS.
-- **Cron 3 (Features, 5PM):** Build Top 2000 special section in DeckSelect. Make it free. Build hero card component.
-- **Cron 4 (Improvements, 7PM):** Georgian translation audit. Fix all UI strings. Polish design across pages.
-- **Cron 5 (QA, 9PM):** Full QA. Test Top 2000 hero card. Verify Georgian text quality. Screenshot all pages.
+### For Each Cron Tonight:
+- **Cron 1 (Strategy, 1:00AM):** ← THIS RUN. Set sprint, write specs, update context files.
+- **Cron 2 (Design, 3:00AM):** Design onboarding modal + review due cards UI. Prepare CSS/animations.
+- **Cron 3 (Features, 5:00AM):** Build onboarding flow + SM-2 spaced repetition engine.
+- **Cron 4 (Improvements, 7:00AM):** Content quality audit script + homepage flow improvements + review reminders.
+- **Cron 5 (QA, 9:00AM):** Full QA. Test onboarding for new users. Test SM-2 intervals. Screenshot everything.
 
 ## Technical Specs
 
-### Top 2000 Special Hero Card (Cron 3)
-**Current state:** Top 2000 is deck id `top-2000` in deck-index.ts with 2000 cards, sources: `['top-2000-words']`. It appears in the premium grid like any other deck.
+### Onboarding Flow (Cron 3)
+**Location:** New component `Onboarding.tsx` in flashcard-app, rendered in DeckSelect when `!localStorage.getItem('fluentge-onboarded')`.
 
-**Changes needed:**
-1. Add `top-2000` to `FREE_DECK_IDS` in deck-index.ts — this deck should be free (it's the best hook)
-2. In DeckSelect.tsx, render Top 2000 as a special hero card BEFORE the grid:
-   ```tsx
-   // Before the free decks grid
-   const top2000 = deckIndex.find(d => d.id === 'top-2000');
-   
-   {top2000 && (
-     <div className="mb-8 relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 p-6 cursor-pointer hover:scale-[1.01] transition-all"
-       onClick={() => setSelectedMeta(top2000)}>
-       <div className="flex items-center gap-4">
-         <span className="text-5xl">⭐</span>
-         <div>
-           <h2 className="text-xl font-bold">ტოპ 2000 სიტყვა</h2>
-           <p className="text-amber-400/80 text-sm">ყველაზე მნიშვნელოვანი ინგლისური სიტყვები</p>
-           <p className="text-[var(--color-text-muted)] text-xs mt-1">2,000 ბარათი · ისწავლე ყველა და ინგლისური გეცოდინება!</p>
-         </div>
-       </div>
-       {/* Progress bar */}
-     </div>
-   )}
-   ```
-3. Remove `top-2000` from the regular grid (filter it out from freeDecks/premiumDecks)
+```tsx
+// Onboarding.tsx — Full-screen modal overlay
+// Step 1: Welcome ("გამარჯობა! 👋")
+// Step 2: Choose path (3 big cards: Words / Grammar / Games)
+// Step 3: Set daily goal (3 options: 5წთ/10წთ/15წთ)
+// Step 4: Start! → navigates to chosen section
+// On complete: localStorage.setItem('fluentge-onboarded', 'true')
+```
 
-### Georgian Translation Audit (Cron 4)
-**Files to check:**
-- `flashcard-app/src/components/*.tsx` — all UI strings
-- `website/src/pages/*.astro` — all page text
-- `website/src/components/*.astro` — component text
-- Games page inline text
-- Dashboard labels
-- Homepage sections
+**Design:** Full-screen overlay with dark backdrop, centered card, smooth step transitions. Use existing 3D button style. Georgian text only.
 
-**Common issues to look for:**
-- "სწავლა" vs "ისწავლე" (infinitive vs imperative — use imperative for buttons)
-- Awkward word order
-- Missing Georgian characters
-- Mixed English/Georgian unnecessarily
+### SM-2 Spaced Repetition (Cron 3)
+**Location:** New `src/lib/srs-engine.ts`
+
+```typescript
+interface CardSRS {
+  interval: number;      // days
+  ease: number;          // 2.5 default
+  repetitions: number;
+  nextReview: number;    // timestamp
+  lastReview: number;    // timestamp
+}
+
+// SM-2 algorithm
+function reviewCard(card: CardSRS, rating: 0|1|2|3|4|5): CardSRS {
+  if (rating < 3) {
+    // Failed — reset
+    return { ...card, repetitions: 0, interval: 1, nextReview: now + 1min };
+  }
+  // Success — increase interval
+  const newEase = Math.max(1.3, card.ease + (0.1 - (5 - rating) * (0.08 + (5 - rating) * 0.02)));
+  const newInterval = card.repetitions === 0 ? 1 
+    : card.repetitions === 1 ? 6 
+    : Math.round(card.interval * newEase);
+  return { interval: newInterval, ease: newEase, repetitions: card.repetitions + 1, nextReview: now + newInterval * DAY };
+}
+
+// getDueCards(deckId) — returns cards where nextReview <= now
+// Storage: localStorage key `srs_${deckId}_${cardId}`
+```
+
+**UI changes:**
+- SRSStudy.tsx: Replace simple "know/don't know" with 4 SM-2 buttons (Again/Hard/Good/Easy)
+- DeckSelect: Show "📋 X ბარათი გადასახედია" badge on decks with due cards
+- Dashboard: "Due for Review" section
+
+### Content Quality Audit (Cron 4)
+**Script:** `scripts/audit-cards.js` — Node script that:
+1. Reads all 142 JSON files in `flashcard-app/content/`
+2. Checks each card for: `english`, `georgian`, `pronunciation` fields present and non-empty
+3. Flags duplicates (same english word in same deck)
+4. Checks Georgian text for obvious issues (Latin characters mixed in, etc.)
+5. Outputs report to `cron-context/CONTENT-AUDIT.md`
 
 ## Notes for Crons
 - Always build AND deploy after changes

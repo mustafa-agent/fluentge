@@ -158,6 +158,21 @@ export default function DeckSelect({ onSelect }: Props) {
   const top2000 = deckIndex.find(d => d.id === 'top-2000')!;
   const freeDecksFiltered = freeDecks.filter(d => d.id !== 'top-2000');
 
+  // Count due SRS cards across all decks
+  const totalDueCards = (() => {
+    let due = 0;
+    const now = Date.now();
+    for (const meta of deckIndex) {
+      try {
+        const store = JSON.parse(localStorage.getItem(`fluentge-srs-${meta.id}`) || '{}');
+        for (const data of Object.values(store) as any[]) {
+          if (data.nextReview && data.nextReview <= now && data.repetitions > 0) due++;
+        }
+      } catch {}
+    }
+    return due;
+  })();
+
   // Words I Know counter
   const totalMastered = Object.values(progress).filter(p => p.repetitions >= 1).length;
   const totalXP = getTotalXP();
@@ -246,6 +261,33 @@ export default function DeckSelect({ onSelect }: Props) {
             >
               დახურვა
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* 🔔 Review Reminder Banner */}
+      {totalDueCards > 0 && (
+        <div className="mb-5 relative overflow-hidden rounded-xl border border-amber-500/30"
+          style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.15), rgba(239,68,68,0.1))' }}
+        >
+          <div className="absolute top-0 right-0 w-20 h-20 bg-amber-400/10 rounded-full blur-xl -translate-y-4 translate-x-4" />
+          <div className="relative p-4 flex items-center gap-3">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center text-lg">
+              🧠
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="font-bold text-sm text-amber-400">
+                {totalDueCards} ბარათი გადასახედია!
+              </div>
+              <div className="text-xs text-[var(--color-text-muted)] mt-0.5">
+                {streak > 0
+                  ? `🔥 ${streak}-დღიანი სერია — არ დაკარგო!`
+                  : 'გადახედე სიტყვებს რომ არ დაგავიწყდეს'}
+              </div>
+            </div>
+            <div className="flex-shrink-0 bg-amber-500 text-white font-extrabold text-lg w-10 h-10 rounded-full flex items-center justify-center border-b-2 border-amber-700">
+              {totalDueCards > 99 ? '99+' : totalDueCards}
+            </div>
           </div>
         </div>
       )}

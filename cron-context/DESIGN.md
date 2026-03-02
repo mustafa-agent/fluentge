@@ -63,14 +63,13 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 2 day) — Cron 2 Tasks:
-- [x] **⭐ Top 2000 Hero Card Design** — Full-width amber gradient card with ⭐ icon, "უფასო" + "#1 პოპულარული" badges, 80% coverage stat, arrow CTA. Placed above free decks grid in DeckSelect. ✅ Mar 2
-- [x] **3D Buttons on Grammar & Games** — Grammar lesson cards now have border-b-4 + active press effect. Game cards have border-bottom-width:4px with dark shadow. Premium CTA button upgraded to amber 3D. Light mode overrides added. ✅ Mar 2
-- [x] **Top 2000 made FREE** — Added to FREE_DECK_IDS. Strategic: 2000 most common words = ~80% of daily English. Free hook → premium upsell for specialized decks. ✅ Mar 2
-- [ ] **Consistent Card Borders** — Standardize border-white/5 (dark) and shadow-sm (light) across all card components.
+### THIS SPRINT (Mar 3 night) — Cron 2 Tasks:
+- [ ] **🎓 Onboarding Modal Design** — Full-screen overlay, dark backdrop, centered card with steps. Step 1: Welcome with 👋. Step 2: 3 path cards (Words/Grammar/Games) with icons. Step 3: Daily goal picker. Smooth step transitions. Use existing 3D button style.
+- [ ] **🧠 SM-2 Review UI** — 4 rating buttons (Again/Hard/Good/Easy) with color coding (red/orange/green/blue). Due cards badge on deck cards. "Due for Review" section on dashboard.
+- [ ] **🔔 Review Reminder Banner** — Gradient banner at top of DeckSelect showing due card count + streak warning.
 
 ### Backlog:
-- [ ] Replace flat buttons with 3D buttons on other pages (grammar, games)
+- [ ] Consistent card borders across all components
 - [ ] Ensure flashcard app matches website design
 - [ ] Add micro-animations for engagement
 - [ ] Standardize card/button components across all pages

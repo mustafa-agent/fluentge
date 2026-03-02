@@ -2,14 +2,14 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 2 day) — "Top 2000 Spotlight & Polish"
-- [ ] **⭐ Top 2000 Special Hero Card** — Full-width hero card at top of deck list, gradient design, make deck FREE ← Cron 3
-- [ ] **🇬🇪 Georgian Translation Audit** — Review ALL Georgian UI text for accuracy and naturalness ← Cron 4
-- [ ] **🎨 Design Polish** — 3D buttons on grammar/games, consistent cards, transitions ← Cron 2/4
-- [ ] **🎓 Better Onboarding** — First-time user welcome flow ← backlog
+### 🎯 THIS SPRINT (Mar 3 night) — "Onboarding & Retention Engine"
+- [ ] **🎓 Onboarding Flow** — Full-screen welcome for new users, choose path + set daily goal ← Cron 3
+- [ ] **🧠 SM-2 Spaced Repetition** — Real Anki-style algorithm with intervals, due cards, review queue ← Cron 3
+- [ ] **📊 Content Quality Audit** — Script to check all 142 deck JSONs for data issues ← Cron 4
+- [ ] **🏠 Homepage → Flashcard Flow** — Reduce friction, direct CTA to Top 2000 ← Cron 4
+- [ ] **🔔 Review Reminders** — "X cards due" + "streak at risk" banners ← Cron 4
 
 ### Flashcard Improvements
-- [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
 - [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
 - [ ] Better card flip animation
 
@@ -72,8 +72,8 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Top 2000 special hero card (Sprint Mar 2 day)
-- Georgian translation audit (Sprint Mar 2 day)
+- Onboarding flow (Sprint Mar 3 night)
+- SM-2 spaced repetition (Sprint Mar 3 night)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

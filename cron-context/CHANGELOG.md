@@ -5,7 +5,55 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-03
+
+### Cron 1 — Strategy (1:00 AM)
+- **Sprint review:** "Top 2000 Spotlight & Polish" sprint (Mar 2) — ALL items completed ✅
+  - Top 2000 hero card ✅ (amber gradient, free, hero position)
+  - Georgian translation audit ✅ (სტრიქი→სერია, proper cases, natural phrasing)
+  - 3D buttons on grammar/games ✅
+  - Stats banner + daily goal UI ✅
+  - Chunky progress bar ✅
+  - All Tornike Mar 2 priorities: 7/7 DONE
+- **Strategic assessment:** FluentGe is feature-complete for MVP. 65 components, 73 decks, 65 grammar lessons, 30 games, 6 study modes, XP/streaks/achievements, 236KB bundle. We beat Lingwing.com on features.
+- **Gap analysis:** The biggest gaps are now USER JOURNEY gaps:
+  1. No onboarding — new users see a wall of decks with no guidance
+  2. No real spaced repetition — our SRS is basic flip-and-rate, not SM-2
+  3. Content quality unchecked — 5000+ cards never audited for accuracy
+- **New sprint set:** "Onboarding & Retention Engine"
+  - #1: Onboarding flow — welcome modal, choose path, set daily goal (<30 seconds to first lesson)
+  - #2: SM-2 spaced repetition — real Anki algorithm with intervals and due dates
+  - #3: Content quality audit — script to check all 142 deck JSONs
+  - #4: Homepage → Top 2000 direct flow
+  - #5: Review reminder banners ("X cards due", "streak at risk")
+- **Technical specs written:** Onboarding.tsx component, srs-engine.ts SM-2 algorithm, audit-cards.js script
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with tonight's sprint
+- Assigned: Cron 2 → design onboarding + SM-2 UI, Cron 3 → build onboarding + SM-2 engine, Cron 4 → content audit + homepage flow + reminders, Cron 5 → QA
+
+---
+
 ## 2026-03-02
+
+### Cron 4B — Improvements (5:30 PM, Day Run)
+- **📊 Chunky Duolingo-style Progress Bar in StudyScreen:**
+  - Replaced thin h-2 bar with h-4 chunky bar + sheen overlay effect
+  - Indigo gradient fill (switches to green on completion)
+  - Clear "12/50" card counter next to bar (tabular-nums for stable width)
+  - Removed split "გამოცნობილი"/"დარჩენილი" labels — cleaner, more Duolingo-like
+- **🇬🇪 Georgian Text Audit (across all components):**
+  - "სტრიქი" → "სერია" everywhere (profile, premium, achievements, typing results) — სტრიქი is a transliteration, სერია is natural Georgian
+  - "თავისუფალი" → "გადახედვა" for SRS mode label — old label meant "free", not "review"
+  - Mode descriptions: "ინგლისურზე" → "ინგლისურად", "ქართულზე" → "ქართულად" (proper Georgian case)
+  - "ორივე მიმართულება" → "ორივე მიმართულებით" (instrumental case)
+  - "აირჩიე 4-დან სწორი" → "აირჩიე სწორი 4-დან" (natural word order)
+  - "ჩაწერე თარგმანი ქვემოთ" → "ჩაწერე პასუხი ქვემოთ" (simpler)
+  - "ჩაწერა" → "აკრეფა" for keyboard shortcut hint
+  - "სიტყვა ვიცი" → "ნასწავლი" in stats banner (more concise)
+  - Next button: shortened "სიტყვა ბოლოში გადავა" → "ისევ გამეორდება" (clearer)
+  - Fixed "წთ" abbreviation consistency in daily goal display
+  - "3-დღე სტრიქი" → "3-დღიანი სერია" (proper adjective form)
+  - "გამეორებული" → "გადახედილი" in SRS header
+- Deployed ✅, git committed & pushed
 
 ### Cron 3B — Features (3:30 PM, Day Run)
 - **📊 "Words I Know" Stats Banner on DeckSelect:**

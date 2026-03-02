@@ -12,8 +12,8 @@
 ### Flashcard UX
 - [x] Swipe gestures on mobile ✅ Cron 4, Mar 2
 - [x] Keyboard shortcuts (Space=flip/next, S=audio, 1=focus input) ✅ Cron 4B, Mar 1
-- [ ] Better progress bar during session
-- [ ] Card count "12/50" clearly visible
+- [x] Better progress bar during session ✅ Cron 4B, Mar 2
+- [x] Card count "12/50" clearly visible ✅ Cron 4B, Mar 2
 - [ ] Sound auto-play option
 - [x] Confetti/celebration on milestones (every 10 cards, deck completion) ✅ Cron 4, Mar 2
 
@@ -55,11 +55,12 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 2 day) — "Top 2000 Spotlight & Polish"
-- [ ] **⭐ Top 2000 hero card** — Special full-width card at top of flashcard deck list ← Cron 3
-- [ ] **🇬🇪 Georgian text quality** — Audit and fix all Georgian UI strings ← Cron 4
-- [ ] **🎨 3D buttons on grammar/games** — Extend homepage button style to other pages ← Cron 2/4
-- [ ] **Consistent card styling** — Unify card look across all sections ← Cron 2
+## 🎯 THIS SPRINT (Mar 3 night) — "Onboarding & Retention Engine"
+- [ ] **🎓 Onboarding modal** — New user welcome flow ← Cron 3
+- [ ] **🧠 SM-2 algorithm** — Real spaced repetition with due dates ← Cron 3
+- [ ] **📊 Content audit** — Check all deck JSON files for quality ← Cron 4
+- [ ] **🏠 Homepage CTA** — Direct flow to Top 2000 for new users ← Cron 4
+- [ ] **🔔 Due cards banner** — Show review reminders on flashcard home ← Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
@@ -70,8 +71,15 @@
 - [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-- Top 2000 hero card (Sprint Mar 2 day)
-- Georgian translation audit (Sprint Mar 2 day)
+- Onboarding flow (Sprint Mar 3 night)
+- SM-2 spaced repetition (Sprint Mar 3 night)
+
+## Completed Last Sprint ✅ (Mar 2 — "Top 2000 Spotlight & Polish")
+- Top 2000 hero card ✅ Cron 2B, Mar 2
+- Georgian translation audit ✅ Cron 4B, Mar 2
+- Better progress bar + card count ✅ Cron 4B, Mar 2
+- 3D buttons on grammar/games ✅ Cron 2B, Mar 2
+- Stats banner + daily goal UI ✅ Cron 3B, Mar 2
 
 ## Previously Completed ✅ (Feb 28)
 - ✅ Light mode audit — all pages verified

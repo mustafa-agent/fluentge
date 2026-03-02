@@ -1,6 +1,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import DeckSelect from './components/DeckSelect';
 import StatsBar from './components/StatsBar';
+import OnboardingModal from './components/OnboardingModal';
 import { type Deck, loadDeck, loadAllCards } from './lib/deck-loader';
 import { deckIndex } from './lib/deck-index';
 import { loadFromCloud, syncToCloud } from './lib/firebase-sync';
@@ -28,6 +29,7 @@ export default function App() {
   const [studyMode, setStudyMode] = useState<StudyMode>('classic');
   const [showSearch, setShowSearch] = useState(false);
   const [quizAllCards, setQuizAllCards] = useState<any[]>([]);
+  const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('fluentge-onboarded'));
 
   useEffect(() => {
     loadFromCloud().catch(() => {});
@@ -93,6 +95,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
+      {/* Onboarding Modal for new users */}
+      {showOnboarding && <OnboardingModal onComplete={() => setShowOnboarding(false)} />}
       {/* Header */}
       <header className="px-4 py-4 border-b border-white/10">
         <div className="max-w-lg mx-auto flex items-center justify-between gap-6">
