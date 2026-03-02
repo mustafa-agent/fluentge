@@ -7,6 +7,19 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-02
 
+### Cron 4 — Improvements (7:00 AM)
+- **📱 Mobile Swipe Gestures on Flashcards:**
+  - Custom `useSwipe` hook with touch tracking and dampened visual feedback
+  - Swipe left = reveal card (unflipped) or advance to next (flipped)
+  - Swipe right (unflipped) = back to deck select
+  - Card physically moves and rotates with finger
+  - Mobile-only swipe hint with animation
+- **🎉 Confetti Celebrations on Milestones:**
+  - Every 10 cards: 30-piece confetti burst + purple milestone toast
+  - Deck completion: 60-piece confetti burst
+  - 6 vibrant colors, randomized sizes, physics-based fall animation
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **⚡ Dynamic Deck Loading — 6.5MB → 236KB (96% reduction!):**
   - Created `deck-index.ts` — lightweight metadata array for all 73 decks (~5KB).

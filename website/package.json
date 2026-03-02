@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && rm -rf dist/flashcards/audio",
+    "deploy": "npm run build && CLOUDFLARE_API_TOKEN=\"Zy2r0INGkmVkFmz7BoQcu89I-HhvXjH9u8IdVeLI\" npx wrangler pages deploy dist/ --project-name=fluentge --commit-dirty=true",
     "preview": "astro preview",
     "astro": "astro"
   },

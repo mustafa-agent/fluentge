@@ -10,12 +10,12 @@
 - [ ] Better 404 page
 
 ### Flashcard UX
-- [ ] Swipe gestures on mobile
+- [x] Swipe gestures on mobile ✅ Cron 4, Mar 2
 - [x] Keyboard shortcuts (Space=flip/next, S=audio, 1=focus input) ✅ Cron 4B, Mar 1
 - [ ] Better progress bar during session
 - [ ] Card count "12/50" clearly visible
 - [ ] Sound auto-play option
-- [ ] Confetti/celebration on milestones (every 10 cards, deck completion)
+- [x] Confetti/celebration on milestones (every 10 cards, deck completion) ✅ Cron 4, Mar 2
 
 ### Grammar Section
 - [ ] Interactive exercises within lessons (not just reading)
@@ -59,7 +59,7 @@
 - [ ] **Dashboard game stats section** — games played, XP, level, recent activity ← Cron 4
 - [ ] **Dynamic deck loading UX** — loading spinner per deck, smooth transition ← Cron 3/4
 - [ ] **Audio autoplay toggle** — settings UI + persistence ← Cron 4
-- [ ] **Mobile swipe gestures** — swipe left/right on flashcards ← Cron 4
+- [x] **Mobile swipe gestures** — swipe left/right on flashcards ✅ Cron 4, Mar 2
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
