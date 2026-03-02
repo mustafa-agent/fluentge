@@ -567,22 +567,32 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
         </div>
       </div>
 
-      {/* Progress info */}
-      <div className="flex items-center justify-between mb-2">
-        <span className="text-sm text-[var(--color-text-muted)]">
-          ✅ {guessedCount} გამოცნობილი
-        </span>
-        <span className="text-sm font-semibold text-[var(--color-primary)]">
-          📦 {remaining} დარჩენილი
-        </span>
-      </div>
-
-      {/* Progress bar */}
-      <div className="h-2 bg-[var(--color-bg-card)] rounded-full mb-6 overflow-hidden">
-        <div
-          className="h-full bg-[var(--color-primary)] rounded-full transition-all duration-500"
-          style={{ width: `${(guessedCount / totalCards) * 100}%` }}
-        />
+      {/* Progress bar — Duolingo-style chunky */}
+      <div className="mb-6">
+        <div className="flex items-center gap-3 mb-1.5">
+          <div className="flex-1 h-4 bg-[var(--color-bg-card)] rounded-full overflow-hidden border border-white/5 relative">
+            <div
+              className="h-full rounded-full transition-all duration-500 ease-out"
+              style={{
+                width: `${Math.max((guessedCount / totalCards) * 100, 2)}%`,
+                background: guessedCount === totalCards
+                  ? 'linear-gradient(90deg, #22c55e, #4ade80)'
+                  : 'linear-gradient(90deg, #6366f1, #818cf8)',
+              }}
+            />
+            {/* Sheen effect */}
+            <div
+              className="absolute inset-0 rounded-full opacity-20"
+              style={{
+                background: 'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, transparent 60%)',
+                width: `${Math.max((guessedCount / totalCards) * 100, 2)}%`,
+              }}
+            />
+          </div>
+          <span className="text-sm font-bold text-[var(--color-text)] tabular-nums whitespace-nowrap min-w-[3.5rem] text-right">
+            {guessedCount}/{totalCards}
+          </span>
+        </div>
       </div>
 
       {/* Card */}
@@ -616,8 +626,8 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
 
         {!flipped && !guessResult && (
           <div className="text-[var(--color-text-muted)] text-sm mt-6 animate-pulse">
-            ჩაწერე თარგმანი ქვემოთ ან შეეხე ბარათს 👇
-            <div className="hidden sm:block text-xs mt-1 opacity-60">⌨️ Space = გადაბრუნება · S = მოსმენა · 1 = ჩაწერა</div>
+            ჩაწერე პასუხი ქვემოთ ან შეეხე ბარათს 👇
+            <div className="hidden sm:block text-xs mt-1 opacity-60">⌨️ Space = გადაბრუნება · S = მოსმენა · 1 = აკრეფა</div>
           </div>
         )}
 
@@ -697,7 +707,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
             onClick={handleNext}
             className="w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold py-3 rounded-xl transition-colors"
           >
-            {guessResult === 'correct' ? 'შემდეგი →' : 'შემდეგი (სიტყვა ბოლოში გადავა) →'}
+            {guessResult === 'correct' ? 'შემდეგი →' : 'შემდეგი → (ისევ გამეორდება)'}
           </button>
           <div className="hidden sm:block text-center text-xs text-[var(--color-text-muted)] mt-2 opacity-60">⌨️ Space ან Enter = შემდეგი</div>
         </div>

@@ -10,17 +10,12 @@
 
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
-- [ ] "Words I Know" counter — show total mastered vocabulary
 - [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
-- [ ] Written input mode: type the answer instead of self-grading
 - [ ] Better card flip animation
 
 ### Dashboard
-- [ ] XP system — earn XP for every activity
-- [ ] Achievements/badges system
 - [ ] Overall vocabulary size tracker
 - [ ] Leaderboard (top learners this week)
-- [ ] Daily goal setting (e.g., "Learn 20 words today")
 - [ ] Progress visualization — chart of words learned over time
 
 ### Section Interconnection
@@ -63,6 +58,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **📊 "Words I Know" Stats Banner** — 4-card gradient stats grid on DeckSelect: mastered words count, XP, streak days, level. Color-coded (green/yellow/orange/sky). Shows at top of flashcard home so users always see their progress. (Cron 3, Mar 2 afternoon)
+- ✅ **🎯 Daily Goal Setting UI** — Tappable daily goal progress bar on DeckSelect. Modal with 5 preset options (5/10/15/20/30 min) using 3D Duolingo-style buttons. Currently selected goal highlighted in green. Progress bar shows completion %. Persists via localStorage. (Cron 3, Mar 2 afternoon)
 - ✅ **🔊 Audio Autoplay Toggle** — 🔊/🔇 button in StudyScreen + SRSStudy header. Auto-plays English pronunciation when new card appears (300ms delay). Persisted in localStorage. Also added audio button + speak function to SRSStudy (was missing audio entirely). (Cron 3, Mar 2)
 - ✅ **⚡ Dynamic Deck Loading** — Refactored cards.ts from 104 static JSON imports to dynamic import(). Created deck-index.ts (lightweight metadata, ~5KB), deck-loader.ts (async loading with cache), useDecks.ts (React hooks). Main bundle: 6.5MB → 236KB (96% reduction!). Each deck JSON now a separate chunk (~60KB), loaded on demand. Updated all consumers: DeckSelect, App, 6 game components, WordSearch, SpacedRepetition, Dashboard, Achievements. Georgian mobile users go from 15s to 2s load time. (Cron 3, Mar 2)
 - ✅ **🎮 Games XP/Level Engine** — All 30 games now award +10 XP per correct answer. Stats bar on games page (XP, level, games played, streak). Floating +XP animations. Level-up popup. Tracks games played count, updates streak and daily goal. Uses same localStorage keys as flashcard gamification. (Cron 3, Mar 1 evening)

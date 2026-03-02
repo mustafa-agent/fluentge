@@ -133,7 +133,7 @@ export default function TypingScreen({ deck, onBack }: Props) {
           </div>
           <div className="bg-[var(--color-bg-card)] rounded-xl p-4 border-b-4 border-orange-500/30">
             <div className="text-2xl font-extrabold text-orange-400">🔥 {bestStreak}</div>
-            <div className="text-xs text-[var(--color-text-muted)]">საუკეთესო სტრიქი</div>
+            <div className="text-xs text-[var(--color-text-muted)]">საუკეთესო სერია</div>
           </div>
         </div>
 

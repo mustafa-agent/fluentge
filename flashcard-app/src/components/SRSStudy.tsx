@@ -251,7 +251,7 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
               }`}
               title={autoplay ? 'ავტო-მოსმენა ჩართულია' : 'ავტო-მოსმენა გამორთულია'}
             >{autoplay ? '🔊' : '🔇'}</button>
-            <span>📊 {reviewed} გამეორებული</span>
+            <span>📊 {reviewed} გადახედილი</span>
             <span className="text-yellow-400">⭐ +{sessionXP}</span>
             <span>✅ {learned}/{cards.length} ნასწავლი</span>
           </div>

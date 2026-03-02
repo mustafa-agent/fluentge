@@ -7,6 +7,17 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-02
 
+### Cron 3B — Features (3:30 PM, Day Run)
+- **📊 "Words I Know" Stats Banner on DeckSelect:**
+  - 4-card gradient grid at top of flashcard home: mastered words (green), XP (yellow), streak (orange), level (sky)
+  - Counts all cards with `repetitions >= 1` from localStorage progress
+  - Each card has gradient bg + colored border + bold number
+- **🎯 Daily Goal Setting UI:**
+  - Tappable progress bar below stats showing `{todayMinutes}/{dailyGoal} წთ` with completion %
+  - Modal with 5 preset options (5/10/15/20/30 min), 3D buttons, green highlight for current
+  - Uses `setDailyGoal()` from gamification.ts (existed but had no UI)
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM, Day Run)
 - **⭐ Top 2000 Hero Card:**
   - Full-width amber/gold gradient card at top of DeckSelect (above free decks grid)

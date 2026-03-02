@@ -163,7 +163,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="stat-card">
         <div class="stat-icon">🔥</div>
         <div class="stat-value" id="stat-streak">0</div>
-        <div class="stat-label">სტრიქი</div>
+        <div class="stat-label">სერია</div>
       </div>
       <div class="stat-card">
         <div class="stat-icon">📅</div>
@@ -280,12 +280,12 @@ import Layout from '../layouts/Layout.astro';
         { emoji: '🌱', name: 'პირველი ნაბიჯი', check: function() { return totalWords >= 1; } },
         { emoji: '📚', name: '50 სიტყვა', check: function() { return totalWords >= 50; } },
         { emoji: '🎓', name: '200 სიტყვა', check: function() { return totalWords >= 200; } },
-        { emoji: '🔥', name: '3-დღე სტრიქი', check: function() { return streak >= 3; } },
-        { emoji: '💪', name: '7-დღე სტრიქი', check: function() { return streak >= 7; } },
+        { emoji: '🔥', name: '3-დღიანი სერია', check: function() { return streak >= 3; } },
+        { emoji: '💪', name: '7-დღიანი სერია', check: function() { return streak >= 7; } },
         { emoji: '⚡', name: '100 XP', check: function() { return xp >= 100; } },
         { emoji: '🚀', name: '500 XP', check: function() { return xp >= 500; } },
         { emoji: '💎', name: '1000 XP', check: function() { return xp >= 1000; } },
-        { emoji: '👑', name: '30-დღე სტრიქი', check: function() { return streak >= 30; } },
+        { emoji: '👑', name: '30-დღიანი სერია', check: function() { return streak >= 30; } },
         { emoji: '🏆', name: '1000 სიტყვა', check: function() { return totalWords >= 1000; } },
       ];
 

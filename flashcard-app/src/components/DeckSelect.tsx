@@ -9,11 +9,11 @@ interface Props {
 }
 
 const modes = [
-  { id: 'study' as const, label: 'EN → KA', icon: '📝', desc: 'ინგლისურიდან ქართულზე' },
-  { id: 'reverse' as const, label: 'KA → EN', icon: '🔄', desc: 'ქართულიდან ინგლისურზე' },
-  { id: 'mixed' as const, label: 'შერეული', icon: '🔀', desc: 'ორივე მიმართულება' },
-  { id: 'srs' as const, label: 'თავისუფალი', icon: '🃏', desc: 'გადააბრუნე და შეაფასე' },
-  { id: 'quiz' as const, label: 'ქვიზი', icon: '⚡', desc: 'აირჩიე 4-დან სწორი' },
+  { id: 'study' as const, label: 'EN → KA', icon: '📝', desc: 'ინგლისურიდან ქართულად' },
+  { id: 'reverse' as const, label: 'KA → EN', icon: '🔄', desc: 'ქართულიდან ინგლისურად' },
+  { id: 'mixed' as const, label: 'შერეული', icon: '🔀', desc: 'ორივე მიმართულებით' },
+  { id: 'srs' as const, label: 'გადახედვა', icon: '🃏', desc: 'გადააბრუნე და შეაფასე' },
+  { id: 'quiz' as const, label: 'ქვიზი', icon: '⚡', desc: 'აირჩიე სწორი 4-დან' },
   { id: 'typing' as const, label: 'წერა', icon: '✍️', desc: 'ჩაწერე თარგმანი · +25 XP' },
 ];
 
@@ -177,7 +177,7 @@ export default function DeckSelect({ onSelect }: Props) {
       <div className="mb-5 grid grid-cols-4 gap-2">
         <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl p-3 text-center">
           <div className="text-xl font-extrabold text-green-400">{totalMastered}</div>
-          <div className="text-[10px] text-green-400/70 font-medium mt-0.5">სიტყვა ვიცი</div>
+          <div className="text-[10px] text-green-400/70 font-medium mt-0.5">ნასწავლი</div>
         </div>
         <div className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-xl p-3 text-center">
           <div className="text-xl font-extrabold text-yellow-400">{totalXP}</div>
@@ -202,9 +202,9 @@ export default function DeckSelect({ onSelect }: Props) {
         className="w-full mb-5 bg-[var(--color-bg-card)] rounded-xl p-3 border border-white/5 hover:border-white/10 transition-colors text-left"
       >
         <div className="flex items-center justify-between text-xs mb-1.5">
-          <span className="text-[var(--color-text-muted)]">🎯 დღის მიზანი · {dailyGoal} წუთი</span>
+          <span className="text-[var(--color-text-muted)]">🎯 დღის მიზანი · {dailyGoal} წთ</span>
           <span className={`font-bold ${dailyPct >= 100 ? 'text-green-400' : 'text-[var(--color-text-muted)]'}`}>
-            {dailyPct >= 100 ? '✅ შესრულდა!' : `${Math.round(todayMinutes)}/${dailyGoal} წთ`}
+            {dailyPct >= 100 ? '✅ შესრულდა!' : `${Math.round(todayMinutes)}/${dailyGoal} წუთი`}
           </span>
         </div>
         <div className="h-2 bg-white/10 rounded-full overflow-hidden">

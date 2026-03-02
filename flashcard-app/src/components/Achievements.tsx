@@ -67,7 +67,7 @@ function getBadges(): Badge[] {
     {
       id: 'streak3',
       icon: '🔥',
-      title: '3-დღიანი სტრიქი',
+      title: '3-დღიანი სერია',
       description: '3 დღე ზედიზედ ისწავლე',
       gradient: 'from-orange-400 to-red-500',
       check: () => stats.streak >= 3,
