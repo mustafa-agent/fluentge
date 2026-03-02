@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { decks } from '../lib/cards';
+import { useAllCards } from '../lib/useDecks';
 
 interface Puzzle {
   grid: string[][];
@@ -7,8 +7,8 @@ interface Puzzle {
   size: number;
 }
 
-function generatePuzzle(): Puzzle {
-  const allCards = decks.flatMap(d => d.cards).filter(c => c.english.length >= 3 && c.english.length <= 7 && /^[a-zA-Z]+$/.test(c.english));
+function generatePuzzle(allCardsRaw: any[]): Puzzle {
+  const allCards = allCardsRaw.filter(c => c.english.length >= 3 && c.english.length <= 7 && /^[a-zA-Z]+$/.test(c.english));
   const shuffled = allCards.sort(() => Math.random() - 0.5);
 
   // Simple crossword: place 5-6 words
@@ -96,20 +96,22 @@ function generatePuzzle(): Puzzle {
 }
 
 export default function MiniCrossword({ onBack }: { onBack: () => void }) {
+  const { cards, loading } = useAllCards();
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [userGrid, setUserGrid] = useState<string[][]>([]);
   const [solved, setSolved] = useState(false);
   const [selectedCell, setSelectedCell] = useState<[number, number] | null>(null);
 
   const newPuzzle = useCallback(() => {
-    const p = generatePuzzle();
+    if (cards.length === 0) return;
+    const p = generatePuzzle(cards);
     setPuzzle(p);
     setUserGrid(p.grid.map(row => row.map(cell => cell ? '' : '')));
     setSolved(false);
     setSelectedCell(null);
-  }, []);
+  }, [cards]);
 
-  useEffect(() => { newPuzzle(); }, [newPuzzle]);
+  useEffect(() => { if (cards.length > 0) newPuzzle(); }, [cards.length]);
 
   function handleInput(r: number, c: number, val: string) {
     if (!puzzle || !puzzle.grid[r][c]) return;

@@ -1,11 +1,9 @@
-import { useState, useEffect, useCallback } from 'react';
-import { decks } from '../lib/cards';
+import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useAllCards } from '../lib/useDecks';
 
 interface Props {
   onBack: () => void;
 }
-
-const allWords = decks.flatMap(d => d.cards).filter(c => c.english.length >= 3 && !c.english.includes(' '));
 
 const HANGMAN_PARTS = ['head', 'body', 'leftArm', 'rightArm', 'leftLeg', 'rightLeg'];
 const MAX_WRONG = HANGMAN_PARTS.length;
@@ -35,15 +33,28 @@ function HangmanSvg({ wrongCount }: { wrongCount: number }) {
 }
 
 export default function HangmanGame({ onBack }: Props) {
-  const [wordData, setWordData] = useState(() => allWords[Math.floor(Math.random() * allWords.length)]);
+  const { cards, loading } = useAllCards();
+  const allWords = useMemo(() => cards.filter(c => c.english.length >= 3 && !c.english.includes(' ')), [cards]);
+  const [wordData, setWordData] = useState<any>(null);
   const [guessed, setGuessed] = useState<Set<string>>(new Set());
   const [score, setScore] = useState(0);
   const [round, setRound] = useState(1);
 
+  // Initialize word when cards load
+  useEffect(() => {
+    if (allWords.length > 0 && !wordData) {
+      setWordData(allWords[Math.floor(Math.random() * allWords.length)]);
+    }
+  }, [allWords]);
+
+  if (loading || !wordData) {
+    return <div className="p-8 text-center"><div className="animate-pulse text-2xl">🎮</div><p className="text-[var(--color-text-muted)] mt-2">იტვირთება...</p></div>;
+  }
+
   const word = wordData.english.toUpperCase();
-  const wrongGuesses = [...guessed].filter(l => !word.includes(l));
+  const wrongGuesses = [...guessed].filter((l: string) => !word.includes(l));
   const wrongCount = wrongGuesses.length;
-  const isWon = word.split('').every(l => guessed.has(l));
+  const isWon = word.split('').every((l: string) => guessed.has(l));
   const isLost = wrongCount >= MAX_WRONG;
   const isOver = isWon || isLost;
 
@@ -91,7 +102,7 @@ export default function HangmanGame({ onBack }: Props) {
 
       {/* Word display */}
       <div className="flex justify-center gap-2 my-4 flex-wrap">
-        {word.split('').map((letter, i) => (
+        {word.split('').map((letter: string, i: number) => (
           <div key={i} className="w-8 h-10 border-b-2 border-[var(--color-primary)] flex items-center justify-center text-xl font-bold">
             {guessed.has(letter) || isLost ? (
               <span className={isLost && !guessed.has(letter) ? 'text-red-400' : ''}>{letter}</span>

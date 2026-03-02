@@ -1,14 +1,9 @@
-import { useState, useCallback } from 'react';
-import { decks } from '../lib/cards';
-
-// Get words that fit nicely in a grid (3-8 letters)
-const allWords = decks.flatMap(d => d.cards)
-  .filter(c => c.english.length >= 3 && c.english.length <= 8 && /^[a-z]+$/i.test(c.english))
-  .map(c => ({ en: c.english.toUpperCase(), ka: c.georgian }));
+import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useAllCards } from '../lib/useDecks';
 
 type Cell = { letter: string; row: number; col: number; partOfWord: boolean; selected: boolean; found: boolean };
 
-function generateGrid(size: number): { grid: Cell[][]; words: { en: string; ka: string; cells: [number, number][] }[] } {
+function generateGrid(size: number, allWords: { en: string; ka: string }[] = []): { grid: Cell[][]; words: { en: string; ka: string; cells: [number, number][] }[] } {
   const grid: Cell[][] = Array.from({ length: size }, (_, r) =>
     Array.from({ length: size }, (_, c) => ({
       letter: '', row: r, col: c, partOfWord: false, selected: false, found: false,
@@ -81,8 +76,22 @@ function generateGrid(size: number): { grid: Cell[][]; words: { en: string; ka: 
 }
 
 export default function WordSnake({ onBack }: { onBack: () => void }) {
+  const { cards, loading } = useAllCards();
+  const allWords = useMemo(() => cards
+    .filter(c => c.english.length >= 3 && c.english.length <= 8 && /^[a-z]+$/i.test(c.english))
+    .map(c => ({ en: c.english.toUpperCase(), ka: c.georgian })), [cards]);
   const [gridSize] = useState(8);
-  const [{ grid, words }, setData] = useState(() => generateGrid(8));
+  const [{ grid, words }, setData] = useState<{ grid: Cell[][]; words: { en: string; ka: string; cells: [number, number][] }[] }>({ grid: [], words: [] });
+
+  useEffect(() => {
+    if (allWords.length > 0 && grid.length === 0) {
+      setData(generateGrid(8, allWords));
+    }
+  }, [allWords]);
+
+  if (loading || grid.length === 0) {
+    return <div className="p-8 text-center"><div className="animate-pulse text-2xl">🐍</div><p className="text-[var(--color-text-muted)] mt-2">იტვირთება...</p></div>;
+  }
   const [selected, setSelected] = useState<[number, number][]>([]);
   const [found, setFound] = useState<Set<string>>(new Set());
   const [message, setMessage] = useState('');
@@ -123,7 +132,7 @@ export default function WordSnake({ onBack }: { onBack: () => void }) {
   };
 
   const newGame = () => {
-    setData(generateGrid(gridSize));
+    setData(generateGrid(gridSize, allWords));
     setSelected([]);
     setFound(new Set());
     setMessage('');

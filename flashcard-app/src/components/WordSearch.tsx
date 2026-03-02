@@ -1,5 +1,7 @@
-import { useState, useMemo, useRef, useCallback } from 'react';
-import { decks, FlashCard, Deck } from '../lib/cards';
+import { useState, useMemo, useRef, useCallback, useEffect } from 'react';
+import type { FlashCard, Deck } from '../lib/deck-loader';
+import { loadAllDecks } from '../lib/deck-loader';
+import { deckIndex } from '../lib/deck-index';
 
 interface Props {
   onClose: () => void;
@@ -21,17 +23,23 @@ function speak(text: string) {
   window.speechSynthesis.speak(u);
 }
 
-// Build flat index once
-const allCards: { card: FlashCard; deck: Deck }[] = decks.flatMap(deck =>
-  deck.cards.map(card => ({ card, deck }))
-);
-
-const totalWords = allCards.length;
-
 export default function WordSearch({ onClose, onSelectDeck }: Props) {
   const [query, setQuery] = useState('');
   const [expanded, setExpanded] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const [allCards, setAllCards] = useState<{ card: FlashCard; deck: Deck }[]>([]);
+  const [loadedDecks, setLoadedDecks] = useState<Deck[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    loadAllDecks().then(decks => {
+      setLoadedDecks(decks);
+      setAllCards(decks.flatMap(deck => deck.cards.map(card => ({ card, deck }))));
+      setIsLoading(false);
+    });
+  }, []);
+
+  const totalWords = allCards.length;
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -101,7 +109,7 @@ export default function WordSearch({ onClose, onSelectDeck }: Props) {
           <div className="text-xs text-[var(--color-text-muted)] mt-2">
             {query.length >= 2
               ? `${results.length} შედეგი ${totalWords.toLocaleString()} სიტყვიდან`
-              : `${totalWords.toLocaleString()} სიტყვა ${decks.length} თემაში`}
+              : isLoading ? 'იტვირთება...' : `${totalWords.toLocaleString()} სიტყვა ${deckIndex.length} თემაში`}
           </div>
         </div>
       </div>

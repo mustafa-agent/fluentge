@@ -64,7 +64,7 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 2 night) — Cron 2 Tasks:
-- [ ] **Dashboard Game Stats Cards** — Design cards for: games played (today/total), game XP earned, current level with progress bar, recent game activity list. Use game-themed colors (purple/indigo). Match existing dashboard style.
+- [x] **Dashboard Game Stats Cards** — ✅ Mar 2. 4 gradient cards (indigo/purple/yellow/emerald), XP progress bar, 3D CTA button. Both Astro dashboard + React Dashboard.tsx.
 - [ ] **Deck Loading States** — When dynamic deck loading is implemented, design a smooth loading state for deck content (skeleton cards, progress indicator). Should feel instant even on slow connections.
 - [ ] **Audio Autoplay Toggle UI** — Settings gear icon in flashcard header. Toggle switch with label. Persist preference.
 

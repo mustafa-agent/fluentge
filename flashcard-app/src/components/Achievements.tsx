@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getStats, getAllProgress } from '../lib/storage';
-import { decks } from '../lib/cards';
+import { deckIndex } from '../lib/deck-index';
 
 interface Badge {
   id: string;
@@ -118,7 +118,7 @@ function getBadges(): Badge[] {
       title: 'ყველა კოლოდა',
       description: 'ყველა კოლოდა დაიწყე',
       gradient: 'from-pink-400 to-rose-500',
-      check: () => startedDecks.size >= decks.length,
+      check: () => startedDecks.size >= deckIndex.length,
     },
   ];
 }

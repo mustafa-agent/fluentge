@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { UserStats, getCurrentStreak, getTotalXP, calculateLevel, getXPProgress, getTodayStudyTime } from '../lib/gamification';
-import { decks, isDeckFree } from '../lib/cards';
+import { isDeckFree, deckIndex } from '../lib/deck-index';
+import { useAllDecks } from '../lib/useDecks';
 import { getCardProgress, getCardsInState } from '../lib/spaced-repetition';
 import { getLocalStorageValue } from '../lib/storage';
 
@@ -25,6 +26,7 @@ interface LeaderboardEntry {
 }
 
 export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
+  const { decks, loading: decksLoading } = useAllDecks();
   const { currentUser, userProfile } = useAuth();
   const [userStats, setUserStats] = useState<UserStats>({
     totalXP: 0,

@@ -1,11 +1,10 @@
-import { useState, useRef } from 'react';
-import { decks } from '../lib/cards';
+import { useState, useRef, useMemo, useEffect } from 'react';
+import { useAllCards } from '../lib/useDecks';
 
 interface Props {
   onBack: () => void;
 }
 
-const allWords = decks.flatMap(d => d.cards).filter(c => c.english.length >= 2 && !c.english.includes(' '));
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -17,7 +16,19 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function ListeningPractice({ onBack }: Props) {
-  const [words] = useState(() => shuffle(allWords).slice(0, 20));
+  const { cards, loading } = useAllCards();
+  const allWords = useMemo(() => cards.filter(c => c.english.length >= 2 && !c.english.includes(' ')), [cards]);
+  const [words, setWords] = useState<any[]>([]);
+
+  useEffect(() => {
+    if (allWords.length > 0 && words.length === 0) {
+      setWords(shuffle(allWords).slice(0, 20));
+    }
+  }, [allWords]);
+
+  if (loading || words.length === 0) {
+    return <div className="p-8 text-center"><div className="animate-pulse text-2xl">🎧</div><p className="text-[var(--color-text-muted)] mt-2">იტვირთება...</p></div>;
+  }
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState('');
   const [result, setResult] = useState<'correct' | 'wrong' | null>(null);

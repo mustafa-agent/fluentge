@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { decks } from '../lib/cards';
-
-const allCards = decks.flatMap(d => d.cards);
+import { useAllCards } from '../lib/useDecks';
 
 function getDayOfYear(): number {
   const now = new Date();
@@ -22,7 +20,10 @@ function getStreak(): number {
 }
 
 export default function DailyWord() {
+  const { cards: allCards, loading } = useAllCards();
   const [revealed, setRevealed] = useState(false);
+
+  if (loading || allCards.length === 0) return null;
 
   const dayIndex = getDayOfYear() % allCards.length;
   const card = allCards[dayIndex];

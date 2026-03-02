@@ -1,7 +1,8 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import DeckSelect from './components/DeckSelect';
 import StatsBar from './components/StatsBar';
-import { Deck, decks } from './lib/cards';
+import { type Deck, loadDeck, loadAllCards } from './lib/deck-loader';
+import { deckIndex } from './lib/deck-index';
 import { loadFromCloud, syncToCloud } from './lib/firebase-sync';
 
 // Lazy-loaded heavy components
@@ -26,6 +27,7 @@ export default function App() {
   const [activeDeck, setActiveDeck] = useState<Deck | null>(null);
   const [studyMode, setStudyMode] = useState<StudyMode>('classic');
   const [showSearch, setShowSearch] = useState(false);
+  const [quizAllCards, setQuizAllCards] = useState<any[]>([]);
 
   useEffect(() => {
     loadFromCloud().catch(() => {});
@@ -41,6 +43,13 @@ export default function App() {
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
+
+  // Preload all cards when quiz mode is entered
+  useEffect(() => {
+    if (screen === 'quiz' && quizAllCards.length === 0) {
+      loadAllCards().then(setQuizAllCards);
+    }
+  }, [screen]);
 
   function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' = 'study') {
     setActiveDeck(deck);
@@ -69,18 +78,17 @@ export default function App() {
     setStudyMode('classic');
   }
 
-  function getNextDeck(): Deck | null {
-    if (!activeDeck) return null;
-    const idx = decks.findIndex(d => d.id === activeDeck.id);
-    if (idx === -1 || idx + 1 >= decks.length) return null;
-    return decks[idx + 1];
-  }
-
   function handleNextDeck() {
-    const next = getNextDeck();
-    if (!next) return;
-    setActiveDeck(next);
-    setScreen('study');
+    if (!activeDeck) return;
+    const idx = deckIndex.findIndex(d => d.id === activeDeck.id);
+    if (idx === -1 || idx + 1 >= deckIndex.length) return;
+    const nextMeta = deckIndex[idx + 1];
+    loadDeck(nextMeta.id).then(deck => {
+      if (deck) {
+        setActiveDeck(deck);
+        setScreen('study');
+      }
+    });
   }
 
   return (
@@ -204,7 +212,7 @@ export default function App() {
             ? <SRSStudy cards={activeDeck.cards} deckId={activeDeck.id} onBack={handleBack} />
             : <StudyScreen key={activeDeck.id + '-' + studyMode} deck={activeDeck} direction={studyMode === 'reverse' ? 'ka-en' : studyMode === 'mixed' ? 'mixed' : 'en-ka'} onBack={handleBack} />
         )}
-        {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={decks.flatMap(d => d.cards)} onBack={handleBack} />}
+        {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={quizAllCards.length > 0 ? quizAllCards : activeDeck.cards} onBack={handleBack} />}
         {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
         {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
         {screen === 'difficult' && <DifficultWordsScreen onBack={handleBack} />}

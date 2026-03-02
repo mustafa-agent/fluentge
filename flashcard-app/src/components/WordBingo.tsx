@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { decks } from '../lib/cards';
+import { useAllCards } from '../lib/useDecks';
 
 interface BingoCell {
   english: string;
@@ -21,6 +21,7 @@ const SIZE = 4; // 4x4 bingo
 const TOTAL = SIZE * SIZE;
 
 export default function WordBingo({ onBack }: { onBack: () => void }) {
+  const { cards, loading } = useAllCards();
   const [grid, setGrid] = useState<BingoCell[]>([]);
   const [callQueue, setCallQueue] = useState<{ english: string; georgian: string }[]>([]);
   const [currentCall, setCurrentCall] = useState<{ english: string; georgian: string } | null>(null);
@@ -30,7 +31,7 @@ export default function WordBingo({ onBack }: { onBack: () => void }) {
   const [score, setScore] = useState(0);
 
   const initGame = useCallback(() => {
-    const allCards = decks.flatMap(d => d.cards).map(c => ({ english: c.english, georgian: c.georgian }));
+    const allCards = cards.map(c => ({ english: c.english, georgian: c.georgian }));
     const shuffled = shuffle(allCards);
     const boardWords = shuffled.slice(0, TOTAL);
     const extraWords = shuffled.slice(TOTAL, TOTAL + 8); // extra distractors for call queue
@@ -54,7 +55,7 @@ export default function WordBingo({ onBack }: { onBack: () => void }) {
     setScore(0);
   }, []);
 
-  useEffect(() => { initGame(); }, [initGame]);
+  useEffect(() => { if (cards.length > 0) initGame(); }, [cards.length]);
 
   function nextCall() {
     const next = callIdx + 1;

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { decks, FlashCard } from '../lib/cards';
+import type { FlashCard, Deck } from '../lib/deck-loader';
+import { useAllDecks } from '../lib/useDecks';
 
 interface CategoryRound {
   categories: string[];
@@ -7,9 +8,8 @@ interface CategoryRound {
   words: { word: string; correctCategory: number }[];
 }
 
-function generateRound(): CategoryRound {
-  // Pick 3 random decks that have enough cards
-  const validDecks = decks.filter(d => d.cards.length >= 4);
+function generateRound(allDecks: Deck[]): CategoryRound {
+  const validDecks = allDecks.filter(d => d.cards.length >= 4);
   const shuffled = [...validDecks].sort(() => Math.random() - 0.5);
   const picked = shuffled.slice(0, 3);
 
@@ -29,7 +29,20 @@ function generateRound(): CategoryRound {
 }
 
 export default function WordCategories({ onBack }: { onBack: () => void }) {
-  const [round, setRound] = useState<CategoryRound>(generateRound);
+  const { decks: allDecks, loading } = useAllDecks();
+  const [round, setRound] = useState<CategoryRound | null>(null);
+
+  useEffect(() => {
+    if (allDecks.length > 0 && !round) {
+      setRound(generateRound(allDecks));
+    }
+  }, [allDecks]);
+
+  if (loading || !round) {
+    return <div className="p-8 text-center"><div className="animate-pulse text-2xl">🗂️</div><p className="text-[var(--color-text-muted)] mt-2">იტვირთება...</p></div>;
+  }
+
+  const currentRound = round!;
   const [placements, setPlacements] = useState<Map<number, number>>(new Map()); // wordIdx -> categoryIdx
   const [currentWord, setCurrentWord] = useState(0);
   const [showResults, setShowResults] = useState(false);
@@ -38,6 +51,7 @@ export default function WordCategories({ onBack }: { onBack: () => void }) {
   const [totalCorrect, setTotalCorrect] = useState(0);
 
   function handleCategoryClick(catIdx: number) {
+    if (!round) return;
     if (showResults) return;
 
     const newPlacements = new Map(placements);
@@ -60,7 +74,7 @@ export default function WordCategories({ onBack }: { onBack: () => void }) {
   }
 
   function handleNextRound() {
-    setRound(generateRound());
+    setRound(generateRound(allDecks));
     setPlacements(new Map());
     setCurrentWord(0);
     setShowResults(false);

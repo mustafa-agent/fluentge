@@ -7,6 +7,20 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-02
 
+### Cron 2 — Design (3:00 AM)
+- **Dashboard Game Stats Section:**
+  - 4 gradient stat cards: today's games played, total games played, today's game XP, current level
+  - Color-coded: indigo/purple, purple/pink, yellow/amber, emerald/teal
+  - XP progress bar with level indicator (indigo→purple gradient)
+  - 3D "Go to Games" CTA button (border-b-4 pattern)
+  - Reads from localStorage: `gamesPlayed`, `todayGames`, `totalXP`
+  - Level calculation: floor(totalXP/200) + 1
+  - Placed between basic stats grid and navigation links
+  - Light mode verified via screenshot ✅
+- **Bug fix:** Dashboard `cards.length` → `wordCount` (was causing undefined error in continue-where-you-left-off logic)
+- **Flashcard Dashboard.tsx:** Also added game stats section (same design) — though this component isn't currently routed in App.tsx
+- Deployed ✅, git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Gamification & Engagement" sprint (Mar 1) completed Games XP/Level engine ✅, code splitting (partial) ✅, premium page ✅, profile page ✅, homepage social proof ✅, keyboard shortcuts ✅
 - **Gap identified:** Dashboard STILL doesn't show game stats — Tornike's #2 priority from Mar 1 is incomplete

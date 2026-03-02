@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { decks, type Deck, type FlashCard } from '../lib/cards';
+import type { Deck, FlashCard } from '../lib/deck-loader';
+import { useAllDecks } from '../lib/useDecks';
 
 /* ───── SM-2 types & helpers ───── */
 interface CardSRS {
@@ -67,6 +68,7 @@ function sm2(prev: CardSRS, q: number): CardSRS {
 type View = 'dashboard' | 'study';
 
 export default function SpacedRepetition({ onBack }: { onBack: () => void }) {
+  const { decks, loading: decksLoading } = useAllDecks();
   const [srs, setSrs] = useState<SRSState>(loadSRS);
   const [view, setView] = useState<View>('dashboard');
   const [selectedDeck, setSelectedDeck] = useState<Deck | null>(null);

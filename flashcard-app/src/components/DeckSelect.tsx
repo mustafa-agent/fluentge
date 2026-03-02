@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { decks, Deck, isDeckFree } from '../lib/cards';
+import { useState, useEffect } from 'react';
+import { deckIndex, isDeckFree, type DeckMeta } from '../lib/deck-index';
+import { loadDeck, type Deck } from '../lib/deck-loader';
 import { getAllProgress } from '../lib/storage';
 
 interface Props {
@@ -17,41 +18,83 @@ const modes = [
 
 export default function DeckSelect({ onSelect }: Props) {
   const progress = getAllProgress();
-  const [selectedDeck, setSelectedDeck] = useState<Deck | null>(null);
+  const [selectedMeta, setSelectedMeta] = useState<DeckMeta | null>(null);
+  const [loadedDeck, setLoadedDeck] = useState<Deck | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
+  const freeDecks = isPremiumUser ? deckIndex : deckIndex.filter(d => isDeckFree(d.id));
+  const premiumDecks = isPremiumUser ? [] : deckIndex.filter(d => !isDeckFree(d.id));
+
+  // Load deck cards when a deck is selected for mode chooser
+  useEffect(() => {
+    if (!selectedMeta) { setLoadedDeck(null); return; }
+    setLoading(true);
+    loadDeck(selectedMeta.id).then(deck => {
+      setLoadedDeck(deck);
+      setLoading(false);
+    });
+  }, [selectedMeta]);
 
   function getDeckProgress(deck: Deck, suffix?: string) {
-    const learned = deck.cards.filter(c => {
+    return deck.cards.filter(c => {
       const base = `${c.category}_${c.english.toLowerCase().replace(/\s+/g, '_')}`;
       const id = suffix ? `${base}_${suffix}` : base;
       const p = progress[id];
       if (p && p.repetitions >= 1) return true;
-      // Also check old IDs without suffix (backwards compat)
       if (suffix) {
         const oldP = progress[base];
         return oldP && oldP.repetitions >= 1;
       }
       return false;
     }).length;
-    return learned;
   }
 
-  const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
-  const freeDecks = isPremiumUser ? decks : decks.filter(d => isDeckFree(d.id));
-  const premiumDecks = isPremiumUser ? [] : decks.filter(d => !isDeckFree(d.id));
+  // Estimate progress from localStorage without card data (for grid view)
+  function getEstimatedProgress(deckId: string): number {
+    // Count progress keys that match this deck's categories
+    const keys = Object.keys(progress);
+    let count = 0;
+    for (const key of keys) {
+      const p = progress[key];
+      if (p && p.repetitions >= 1) count++;
+    }
+    // Simple heuristic: we can't easily map without card data, show 0 for now
+    // Full progress shown when deck is selected
+    return 0;
+  }
 
   // Mode selection overlay
-  if (selectedDeck) {
-    const learnedEnka = getDeckProgress(selectedDeck, 'enka');
-    const learnedKaen = getDeckProgress(selectedDeck, 'kaen');
-    const learnedMixed = getDeckProgress(selectedDeck, 'mixed');
-    const total = selectedDeck.cards.length;
+  if (selectedMeta) {
+    if (loading || !loadedDeck) {
+      return (
+        <div className="px-4 py-6 max-w-lg mx-auto text-center">
+          <div className="animate-pulse space-y-4">
+            <div className="text-5xl">{selectedMeta.icon}</div>
+            <div className="h-6 bg-[var(--color-bg-card)] rounded w-48 mx-auto"></div>
+            <div className="h-4 bg-[var(--color-bg-card)] rounded w-32 mx-auto"></div>
+            <div className="grid grid-cols-3 gap-2 mt-6">
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="h-24 bg-[var(--color-bg-card)] rounded-xl"></div>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const learnedEnka = getDeckProgress(loadedDeck, 'enka');
+    const learnedKaen = getDeckProgress(loadedDeck, 'kaen');
+    const learnedMixed = getDeckProgress(loadedDeck, 'mixed');
+    const total = loadedDeck.cards.length;
     const pctEnka = total > 0 ? Math.round((learnedEnka / total) * 100) : 0;
     const pctKaen = total > 0 ? Math.round((learnedKaen / total) * 100) : 0;
     const pctMixed = total > 0 ? Math.round((learnedMixed / total) * 100) : 0;
+
     return (
       <div className="px-4 py-6 max-w-lg mx-auto">
         <button
-          onClick={() => setSelectedDeck(null)}
+          onClick={() => setSelectedMeta(null)}
           className="flex items-center gap-2 text-[var(--color-text-muted)] hover:text-[var(--color-text)] text-sm mb-5 transition-colors"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
@@ -59,9 +102,9 @@ export default function DeckSelect({ onSelect }: Props) {
         </button>
 
         <div className="text-center mb-6">
-          <span className="text-5xl block mb-3">{selectedDeck.icon}</span>
-          <h2 className="text-xl font-bold">{selectedDeck.nameKa}</h2>
-          <p className="text-[var(--color-text-muted)] text-sm">{selectedDeck.name} · {total} ბარათი</p>
+          <span className="text-5xl block mb-3">{loadedDeck.icon}</span>
+          <h2 className="text-xl font-bold">{loadedDeck.nameKa}</h2>
+          <p className="text-[var(--color-text-muted)] text-sm">{loadedDeck.name} · {total} ბარათი</p>
           <div className="mt-3 max-w-xs mx-auto space-y-2">
             <div>
               <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1">
@@ -98,7 +141,7 @@ export default function DeckSelect({ onSelect }: Props) {
           {modes.map(m => (
             <button
               key={m.id}
-              onClick={() => onSelect(selectedDeck, m.id)}
+              onClick={() => onSelect(loadedDeck, m.id)}
               className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-4 text-center transition-colors border border-white/5 hover:border-white/10"
             >
               <span className="text-2xl block mb-1">{m.icon}</span>
@@ -119,33 +162,21 @@ export default function DeckSelect({ onSelect }: Props) {
         <div className="h-px flex-1 bg-white/10"></div>
       </div>
       <div className="grid grid-cols-3 gap-3 mb-8">
-        {freeDecks.map(deck => {
-          // Card is fully learned only when all 3 directions are learned
-          const lEnka = getDeckProgress(deck, 'enka');
-          const lKaen = getDeckProgress(deck, 'kaen');
-          const lMixed = getDeckProgress(deck, 'mixed');
-          const learned = Math.min(lEnka, lKaen, lMixed);
-          const total = deck.cards.length;
-          const pct = total > 0 ? Math.round((learned / total) * 100) : 0;
-          return (
-            <button
-              key={deck.id}
-              onClick={() => setSelectedDeck(deck)}
-              className="relative overflow-hidden rounded-xl text-center transition-all hover:scale-[1.02] group"
-            >
-              <img src={deck.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20"></div>
-              <div className="relative p-3 overflow-hidden">
-                <span className="text-2xl block mb-1">{deck.icon}</span>
-                <p className="text-[11px] font-semibold leading-tight mb-1 text-white line-clamp-2 break-words">{deck.nameKa}</p>
-                <p className="text-[10px] text-white/60">{total} ბარათი</p>
-                <div className="mt-2 h-1.5 bg-white/20 rounded-full overflow-hidden">
-                  <div className="h-full bg-[var(--color-primary)] rounded-full" style={{ width: `${pct}%` }} />
-                </div>
-              </div>
-            </button>
-          );
-        })}
+        {freeDecks.map(meta => (
+          <button
+            key={meta.id}
+            onClick={() => setSelectedMeta(meta)}
+            className="relative overflow-hidden rounded-xl text-center transition-all hover:scale-[1.02] group"
+          >
+            <img src={meta.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20"></div>
+            <div className="relative p-3 overflow-hidden">
+              <span className="text-2xl block mb-1">{meta.icon}</span>
+              <p className="text-[11px] font-semibold leading-tight mb-1 text-white line-clamp-2 break-words">{meta.nameKa}</p>
+              <p className="text-[10px] text-white/60">{meta.cardCount} ბარათი</p>
+            </div>
+          </button>
+        ))}
       </div>
 
       {/* Premium decks */}
@@ -154,18 +185,18 @@ export default function DeckSelect({ onSelect }: Props) {
         <div className="h-px flex-1 bg-white/10"></div>
       </div>
       <div className="grid grid-cols-3 gap-3">
-        {premiumDecks.map(deck => (
+        {premiumDecks.map(meta => (
           <a
-            key={deck.id}
+            key={meta.id}
             href="/premium/"
             className="relative overflow-hidden rounded-xl text-center opacity-60 hover:opacity-80 transition-opacity"
           >
-            <img src={deck.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" />
+            <img src={meta.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
             <div className="relative p-3 overflow-hidden">
-              <span className="text-2xl block mb-1">{deck.icon}</span>
-              <p className="text-[11px] font-semibold leading-tight mb-1 text-white line-clamp-2 break-words">{deck.nameKa}</p>
-              <p className="text-[10px] text-white/60">{deck.cards.length} ბარათი</p>
+              <span className="text-2xl block mb-1">{meta.icon}</span>
+              <p className="text-[11px] font-semibold leading-tight mb-1 text-white line-clamp-2 break-words">{meta.nameKa}</p>
+              <p className="text-[10px] text-white/60">{meta.cardCount} ბარათი</p>
               <div className="mt-2">
                 <span className="text-amber-400 text-[10px]">🔒</span>
               </div>
