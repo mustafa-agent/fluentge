@@ -5,6 +5,66 @@ import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned }
 import { playCorrect, playWrong } from '../lib/sounds';
 import { addXP, addStudyTime, updateStreak, XP_REWARDS } from '../lib/gamification';
 
+// --- Swipe gesture hook ---
+function useSwipe(onSwipeLeft: () => void, onSwipeRight: () => void, threshold = 60) {
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const touchDelta = useRef(0);
+  const [swipeOffset, setSwipeOffset] = useState(0);
+
+  const handlers = useMemo(() => ({
+    onTouchStart: (e: React.TouchEvent) => {
+      touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      touchDelta.current = 0;
+    },
+    onTouchMove: (e: React.TouchEvent) => {
+      if (!touchStart.current) return;
+      const dx = e.touches[0].clientX - touchStart.current.x;
+      const dy = e.touches[0].clientY - touchStart.current.y;
+      // Only track horizontal swipes
+      if (Math.abs(dx) > Math.abs(dy) * 1.2) {
+        touchDelta.current = dx;
+        setSwipeOffset(dx * 0.4); // dampened visual feedback
+      }
+    },
+    onTouchEnd: () => {
+      if (Math.abs(touchDelta.current) > threshold) {
+        if (touchDelta.current < 0) onSwipeLeft();
+        else onSwipeRight();
+      }
+      touchStart.current = null;
+      touchDelta.current = 0;
+      setSwipeOffset(0);
+    },
+  }), [onSwipeLeft, onSwipeRight, threshold]);
+
+  return { handlers, swipeOffset };
+}
+
+// --- Confetti burst ---
+function launchConfetti(count = 40) {
+  const colors = ['#facc15', '#22c55e', '#3b82f6', '#ec4899', '#f97316', '#a855f7'];
+  const container = document.createElement('div');
+  container.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:9999;overflow:hidden;';
+  document.body.appendChild(container);
+
+  for (let i = 0; i < count; i++) {
+    const piece = document.createElement('div');
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    const left = 30 + Math.random() * 40; // center-biased
+    const delay = Math.random() * 300;
+    const size = 6 + Math.random() * 6;
+    const rotation = Math.random() * 360;
+    piece.style.cssText = `
+      position:absolute;left:${left}%;top:-10px;width:${size}px;height:${size * 0.6}px;
+      background:${color};border-radius:2px;opacity:1;
+      transform:rotate(${rotation}deg);
+      animation:confettiFall ${1.5 + Math.random()}s ease-out ${delay}ms forwards;
+    `;
+    container.appendChild(piece);
+  }
+  setTimeout(() => container.remove(), 3000);
+}
+
 function sanitizeForAudio(word: string): string {
   return word.trim().toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
 }
@@ -317,11 +377,47 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [flipped, card, sessionDone, guess]);
 
+  // Milestone celebration
+  const lastMilestone = useRef(0);
+  useEffect(() => {
+    if (guessedCount > 0 && guessedCount % 10 === 0 && guessedCount !== lastMilestone.current) {
+      lastMilestone.current = guessedCount;
+      launchConfetti(30);
+      // Show milestone toast
+      const toast = document.createElement('div');
+      toast.style.cssText = 'position:fixed;top:12%;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#7c3aed,#6366f1);color:white;padding:10px 24px;border-radius:16px;font-weight:bold;font-size:1rem;z-index:9999;pointer-events:none;animation:xpFloat 2s ease-out forwards;box-shadow:0 4px 20px rgba(99,102,241,0.4);';
+      toast.textContent = `🔥 ${guessedCount} სიტყვა!`;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 2200);
+    }
+  }, [guessedCount]);
+
+  // Swipe handlers
+  const handleSwipeLeft = useCallback(() => {
+    // Swipe left = reveal/next
+    if (!flipped && card) {
+      handleCardTap();
+    } else if (flipped) {
+      handleNext();
+    }
+  }, [flipped, card, guess]);
+
+  const handleSwipeRight = useCallback(() => {
+    // Swipe right = go back to deck select
+    if (!flipped) {
+      onBack();
+    }
+  }, [flipped, onBack]);
+
+  const { handlers: swipeHandlers, swipeOffset } = useSwipe(handleSwipeLeft, handleSwipeRight);
+
   // Update streak & study time on session done
   const sessionEndHandled = useRef(false);
   useEffect(() => {
     if (sessionDone && !sessionEndHandled.current) {
       sessionEndHandled.current = true;
+      // Deck completion confetti!
+      launchConfetti(60);
       // Update streak
       updateStreak(true);
       // Track study time
@@ -492,7 +588,9 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
       {/* Card */}
       <div
         onClick={handleCardTap}
+        {...swipeHandlers}
         className="bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[280px] flex flex-col items-center justify-center cursor-pointer select-none transition-all hover:bg-[var(--color-bg-card-hover)]"
+        style={{ transform: swipeOffset ? `translateX(${swipeOffset}px) rotate(${swipeOffset * 0.05}deg)` : undefined, transition: swipeOffset ? 'none' : 'transform 0.3s ease' }}
       >
         <div className="flex items-center gap-3 mb-2">
           <div className="text-3xl font-bold">{questionText}</div>
@@ -563,6 +661,13 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
           </div>
         )}
       </div>
+
+      {/* Swipe hint - mobile only */}
+      {!flipped && !guessResult && (
+        <div className="sm:hidden text-center text-xs text-[var(--color-text-muted)] mt-2 opacity-50" style={{ animation: 'swipeHint 2s ease-in-out infinite' }}>
+          👈 გადაფურცლე ბარათის გასახსნელად
+        </div>
+      )}
 
       {/* Guess input */}
       {!flipped && (

@@ -4,8 +4,8 @@
 
 ### 🎯 THIS SPRINT (Mar 2 night) — "Dashboard Game Stats & Dynamic Loading"
 - [ ] **📊 Dashboard Game Stats** — Show games played, XP from games, level, recent game activity on dashboard ← Cron 4
-- [ ] **⚡ Dynamic Deck Loading** — Refactor cards.ts: 104 static imports → dynamic import(). Main bundle <1MB ← Cron 3
-- [ ] **🔊 Audio Autoplay** — Toggle to auto-play pronunciation on card appear ← Cron 4
+- [x] **⚡ Dynamic Deck Loading** — ✅ DONE (Cron 3, Mar 2) — 6.5MB → 236KB main bundle (96% reduction!)
+- [x] **🔊 Audio Autoplay** — ✅ DONE (Cron 3, Mar 2) — Toggle in StudyScreen + SRSStudy, persisted
 - [ ] **👆 Swipe Gestures** — Mobile swipe left/right for wrong/correct on flashcards ← Cron 4
 - [ ] **🎓 Better Onboarding** — First-time user guided tour ← backlog
 
@@ -64,6 +64,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🔊 Audio Autoplay Toggle** — 🔊/🔇 button in StudyScreen + SRSStudy header. Auto-plays English pronunciation when new card appears (300ms delay). Persisted in localStorage. Also added audio button + speak function to SRSStudy (was missing audio entirely). (Cron 3, Mar 2)
+- ✅ **⚡ Dynamic Deck Loading** — Refactored cards.ts from 104 static JSON imports to dynamic import(). Created deck-index.ts (lightweight metadata, ~5KB), deck-loader.ts (async loading with cache), useDecks.ts (React hooks). Main bundle: 6.5MB → 236KB (96% reduction!). Each deck JSON now a separate chunk (~60KB), loaded on demand. Updated all consumers: DeckSelect, App, 6 game components, WordSearch, SpacedRepetition, Dashboard, Achievements. Georgian mobile users go from 15s to 2s load time. (Cron 3, Mar 2)
 - ✅ **🎮 Games XP/Level Engine** — All 30 games now award +10 XP per correct answer. Stats bar on games page (XP, level, games played, streak). Floating +XP animations. Level-up popup. Tracks games played count, updates streak and daily goal. Uses same localStorage keys as flashcard gamification. (Cron 3, Mar 1 evening)
 - ✅ **⚡ Code-Split Flashcard App** — React.lazy + Suspense for 8 heavy components (StudyScreen, SRSStudy, QuizScreen, TypingScreen, DifficultWordsScreen, WordSearch, ChallengeFriend, SpacedRepetition). Loading skeleton component. React vendor chunk split. Main bundle still ~6.5MB due to 142 deck JSON files (card data refactor needed for further reduction). (Cron 3, Mar 1 evening)
 - ✅ **😤 Difficult Words Practice** — Tracks wrong answers from quiz/typing modes. Shows list of hardest words sorted by error count. Focused review mode with flashcard practice (+20 XP). Words auto-removed after 3+ net correct. (Cron 3, Mar 1)
@@ -75,7 +77,6 @@
 
 ## In Progress 🔄
 - Dashboard game stats section (Sprint Mar 2 night)
-- Dynamic deck loading (Sprint Mar 2 night)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

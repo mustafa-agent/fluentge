@@ -7,6 +7,20 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-02
 
+### Cron 3 — Features (5:00 AM)
+- **⚡ Dynamic Deck Loading — 6.5MB → 236KB (96% reduction!):**
+  - Created `deck-index.ts` — lightweight metadata array for all 73 decks (~5KB).
+  - Created `deck-loader.ts` — dynamic import() map for 100+ content JSONs. Each becomes its own Vite chunk (~60KB). In-memory cache.
+  - Created `useDecks.ts` — `useAllDecks()` and `useAllCards()` React hooks with shared cache.
+  - Refactored `cards.ts` to thin re-export layer.
+  - Updated DeckSelect (uses deckIndex for instant listing, loads cards async on click), App.tsx, 6 game components, WordSearch, SpacedRepetition, Dashboard, Achievements, DailyWord.
+  - **Main bundle: 235.80 KB** (gzip 72 KB). Each deck ~60KB loaded on demand.
+- **🔊 Audio Autoplay Toggle:**
+  - 🔊/🔇 toggle in StudyScreen + SRSStudy header. Persisted in localStorage.
+  - Auto-plays pronunciation 300ms after card appears.
+  - Added speakWord() + 🔊 button to SRSStudy (previously had no audio!).
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **Dashboard Game Stats Section:**
   - 4 gradient stat cards: today's games played, total games played, today's game XP, current level
