@@ -101,6 +101,9 @@ function showFloatingXP(amount: number) {
 export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props) {
   const storageSuffix: StorageSuffix = direction === 'mixed' ? 'mixed' : dirToSuffix(direction);
   
+  // Audio autoplay toggle
+  const [autoplay, setAutoplay] = useState(() => localStorage.getItem('fluentge-autoplay') === 'true');
+  
   // Session tracking
   const sessionStartTime = useRef(Date.now());
   const [correctCount, setCorrectCount] = useState(0);
@@ -151,6 +154,23 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
       saveSessionProgress(deck.id, storageSuffix, queue.map(c => c.english));
     }
   }, [queue, deck.id, storageSuffix]);
+
+  // Auto-play pronunciation when card changes
+  useEffect(() => {
+    if (autoplay && card && !flipped && !sessionDone) {
+      // Small delay so user sees the card first
+      const timer = setTimeout(() => {
+        speak(card.english);
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [card?.english, autoplay, sessionDone]);
+
+  function toggleAutoplay() {
+    const next = !autoplay;
+    setAutoplay(next);
+    localStorage.setItem('fluentge-autoplay', next ? 'true' : 'false');
+  }
 
   function handleGuess() {
     if (!card || !guess.trim() || !answerText) return;
@@ -433,7 +453,18 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
         <button onClick={onBack} className="text-[var(--color-text-muted)] hover:text-white transition-colors">
           ← უკან
         </button>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
+          <button
+            onClick={toggleAutoplay}
+            className={`text-xs px-2 py-1 rounded-lg transition-colors ${
+              autoplay 
+                ? 'bg-sky-500/20 text-sky-400 border border-sky-500/30' 
+                : 'bg-[var(--color-bg-card)] text-[var(--color-text-muted)] border border-white/5'
+            }`}
+            title={autoplay ? 'ავტო-მოსმენა ჩართულია' : 'ავტო-მოსმენა გამორთულია'}
+          >
+            {autoplay ? '🔊' : '🔇'}
+          </button>
           <span className="text-xs px-2 py-1 rounded-lg bg-[var(--color-bg-card)] text-[var(--color-text-muted)]">
             {isReverse ? 'KA → EN' : 'EN → KA'}
           </span>

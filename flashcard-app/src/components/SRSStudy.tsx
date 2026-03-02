@@ -133,10 +133,35 @@ interface Props {
   onBack: () => void;
 }
 
+function sanitizeForAudio(word: string): string {
+  return word.trim().toLowerCase().replace(/[^a-z0-9]/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+}
+
+let currentAudio: HTMLAudioElement | null = null;
+
+function speakWord(text: string) {
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  const filename = sanitizeForAudio(text);
+  if (filename) {
+    const audio = new Audio(`/flashcards/audio/words/${filename}_en.mp3`);
+    currentAudio = audio;
+    audio.play().catch(() => {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'en-US'; u.rate = 0.9;
+        window.speechSynthesis.speak(u);
+      }
+    });
+    return;
+  }
+}
+
 export default function SRSStudy({ cards, deckId, onBack }: Props) {
   const [store, setStore] = useState<SRSStore>(() => getSRSStore(deckId));
   const [currentCard, setCurrentCard] = useState<FlashCard>(() => pickNextCard(cards, getSRSStore(deckId)));
   const [flipped, setFlipped] = useState(false);
+  const [autoplay, setAutoplay] = useState(() => localStorage.getItem('fluentge-autoplay') === 'true');
   const [reviewed, setReviewed] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [sessionXP, setSessionXP] = useState(0);
@@ -150,6 +175,20 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
       updateStreak(true);
     }
   }, [reviewed]);
+
+  // Auto-play pronunciation when card changes
+  useEffect(() => {
+    if (autoplay && currentCard && !flipped) {
+      const timer = setTimeout(() => speakWord(currentCard.english), 300);
+      return () => clearTimeout(timer);
+    }
+  }, [currentCard?.english, autoplay]);
+
+  function toggleAutoplay() {
+    const next = !autoplay;
+    setAutoplay(next);
+    localStorage.setItem('fluentge-autoplay', next ? 'true' : 'false');
+  }
 
   // Track study time when leaving
   useEffect(() => {
@@ -204,7 +243,14 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
             უკან
           </button>
-          <div className="flex items-center gap-4 text-xs text-[#6B6B65]">
+          <div className="flex items-center gap-3 text-xs text-[#6B6B65]">
+            <button
+              onClick={toggleAutoplay}
+              className={`px-2 py-1 rounded-lg transition-colors ${
+                autoplay ? 'bg-sky-500/20 text-sky-400 border border-sky-500/30' : 'bg-[#2E2E30] text-[#6B6B65] border border-[#2E2E30]'
+              }`}
+              title={autoplay ? 'ავტო-მოსმენა ჩართულია' : 'ავტო-მოსმენა გამორთულია'}
+            >{autoplay ? '🔊' : '🔇'}</button>
             <span>📊 {reviewed} გამეორებული</span>
             <span className="text-yellow-400">⭐ +{sessionXP}</span>
             <span>✅ {learned}/{cards.length} ნასწავლი</span>
@@ -230,9 +276,16 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
               <div className="text-xs text-[#6B6B65] mb-4 uppercase tracking-wider">
                 {currentCard.level}
               </div>
-              <h1 className="text-4xl font-bold text-[#F5F5F0] mb-4 text-center break-words">
-                {currentCard.english}
-              </h1>
+              <div className="flex items-center gap-3 mb-4">
+                <h1 className="text-4xl font-bold text-[#F5F5F0] text-center break-words">
+                  {currentCard.english}
+                </h1>
+                <button
+                  onClick={(e) => { e.stopPropagation(); speakWord(currentCard.english); }}
+                  className="text-2xl hover:scale-110 transition-transform active:scale-95"
+                  title="მოისმინე გამოთქმა"
+                >🔊</button>
+              </div>
               <p className="text-sm text-[#6B6B65] mt-4 animate-pulse">შეეხე გადასაბრუნებლად 👆</p>
             </div>
           ) : (
