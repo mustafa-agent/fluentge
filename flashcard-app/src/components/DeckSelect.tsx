@@ -154,15 +154,46 @@ export default function DeckSelect({ onSelect }: Props) {
     );
   }
 
+  const top2000 = deckIndex.find(d => d.id === 'top-2000')!;
+  const freeDecksFiltered = freeDecks.filter(d => d.id !== 'top-2000');
+
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
+      {/* ⭐ Top 2000 Hero Card */}
+      {top2000 && (
+        <button
+          onClick={() => setSelectedMeta(top2000)}
+          className="w-full mb-6 relative overflow-hidden rounded-2xl text-left transition-all hover:scale-[1.01] active:scale-[0.99] group"
+          style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706, #b45309)' }}
+        >
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&q=60')] bg-cover bg-center opacity-15 group-hover:opacity-20 transition-opacity" />
+          <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-300/20 rounded-full blur-2xl -translate-y-8 translate-x-8" />
+          <div className="absolute bottom-0 left-0 w-24 h-24 bg-amber-300/15 rounded-full blur-xl translate-y-6 -translate-x-6" />
+          <div className="relative p-5 flex items-center gap-4">
+            <div className="text-5xl flex-shrink-0 drop-shadow-lg">⭐</div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">უფასო</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">🔥 #1 პოპულარული</span>
+              </div>
+              <h2 className="text-lg font-extrabold text-white leading-tight">ტოპ 2000 სიტყვა</h2>
+              <p className="text-white/80 text-xs mt-0.5">ყველაზე მნიშვნელოვანი ინგლისური სიტყვები · 2000 ბარათი</p>
+              <p className="text-white/60 text-[10px] mt-1">📊 ფარავს ინგლისური საუბრის ~80%-ს</p>
+            </div>
+            <div className="flex-shrink-0 bg-white/20 rounded-xl p-2.5 border-b-4 border-white/10 group-hover:bg-white/30 transition-colors">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </button>
+      )}
+
       {/* Free decks */}
       <div className="flex items-center gap-2 mb-3">
         <span className="text-xs font-semibold text-green-400 bg-green-500/20 px-2 py-0.5 rounded-full">უფასო</span>
         <div className="h-px flex-1 bg-white/10"></div>
       </div>
       <div className="grid grid-cols-3 gap-3 mb-8">
-        {freeDecks.map(meta => (
+        {freeDecksFiltered.map(meta => (
           <button
             key={meta.id}
             onClick={() => setSelectedMeta(meta)}

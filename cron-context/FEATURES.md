@@ -2,12 +2,11 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 2 night) — "Dashboard Game Stats & Dynamic Loading"
-- [ ] **📊 Dashboard Game Stats** — Show games played, XP from games, level, recent game activity on dashboard ← Cron 4
-- [x] **⚡ Dynamic Deck Loading** — ✅ DONE (Cron 3, Mar 2) — 6.5MB → 236KB main bundle (96% reduction!)
-- [x] **🔊 Audio Autoplay** — ✅ DONE (Cron 3, Mar 2) — Toggle in StudyScreen + SRSStudy, persisted
-- [ ] **👆 Swipe Gestures** — Mobile swipe left/right for wrong/correct on flashcards ← Cron 4
-- [ ] **🎓 Better Onboarding** — First-time user guided tour ← backlog
+### 🎯 THIS SPRINT (Mar 2 day) — "Top 2000 Spotlight & Polish"
+- [ ] **⭐ Top 2000 Special Hero Card** — Full-width hero card at top of deck list, gradient design, make deck FREE ← Cron 3
+- [ ] **🇬🇪 Georgian Translation Audit** — Review ALL Georgian UI text for accuracy and naturalness ← Cron 4
+- [ ] **🎨 Design Polish** — 3D buttons on grammar/games, consistent cards, transitions ← Cron 2/4
+- [ ] **🎓 Better Onboarding** — First-time user welcome flow ← backlog
 
 ### Flashcard Improvements
 - [ ] True Anki-style spaced repetition with intervals (1d → 3d → 7d → 15d → 30d)
@@ -76,7 +75,8 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Dashboard game stats section (Sprint Mar 2 night)
+- Top 2000 special hero card (Sprint Mar 2 day)
+- Georgian translation audit (Sprint Mar 2 day)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

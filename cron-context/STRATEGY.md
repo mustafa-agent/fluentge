@@ -86,96 +86,109 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 2 Night Cycle)
+## 🎯 Current Sprint (Mar 2 Day Cycle)
 
-### Theme: "Dashboard Game Stats & Dynamic Loading"
+### Theme: "Top 2000 Spotlight & Polish"
 
-### CONTEXT: Tornike's Mar 1 priorities status:
-1. ✅ **Games XP/Level System** — DONE. All 30 games award XP, stats bar, level-ups, floating animations.
-2. ⚠️ **Dashboard Game Results** — NOT DONE YET. Dashboard still doesn't show game stats. This is TONIGHT'S #1 PRIORITY.
+### CONTEXT: Tornike's priorities (Mar 2) — status:
+1. ⚠️ **Top 2000 Words — special category** — NOT DONE. Must look special, distinct from other decks.
+2. ⚠️ **Design improvements** — Ongoing. Keep polishing.
+3. ⚠️ **Georgian translation review** — NOT DONE. Check ALL Georgian text for accuracy.
+4. ⚠️ **Bug hunting** — Test everything, find and fix.
+5. ✅ **Games XP/Level system** — DONE
+6. ✅ **Dashboard game results** — DONE
+7. ✅ **Dark mode contrast fix** — DONE
 
 ### Strategic State:
-FluentGe is feature-rich (6 study modes, 142 decks, 65 grammar lessons, 30 games, XP/streaks/achievements). The two critical problems now:
-- **Dashboard doesn't show game progress** — Tornike asked for this explicitly. Games track XP/gamesPlayed/todayGames in localStorage but dashboard ignores it.
-- **6.5MB main bundle** — 104 static JSON imports in cards.ts bundle ALL deck data upfront. Georgian mobile users wait 10-15s. Dynamic deck loading would cut main bundle to ~500KB.
+FluentGe is feature-rich and performant (236KB main bundle!). All major features work. The remaining work is Tornike's explicit requests: making Top 2000 special, Georgian quality, and polish.
+
+**Competitive position:** We now have MORE features than Lingwing.com (6 study modes, 30 games, XP/streaks, achievements, 73 decks, 65 grammar lessons). Our bundle is fast (236KB). The gap is now content quality and polish — not features.
 
 ### Sprint Goals (ordered by priority)
 
-1. **🔴 Dashboard Game Stats Section** — Show: games played today/total, XP from games, level, recent game activity, favorite games. Make it prominent on dashboard. Use localStorage keys: `gamesPlayed`, `todayGames`, `totalXP`. Add game-specific stats cards with icons. THIS COMPLETES TORNIKE'S REQUEST.
+1. **🔴 Top 2000 Words — Special Treatment** — This is Tornike's #1 ask. The Top 2000 deck has 2000 words and should be THE flagship deck. Currently it's just another card in a 3-column grid. Make it:
+   - A full-width hero card at the TOP of the deck list (before the grid)
+   - Gradient background (gold/amber), large icon, progress bar
+   - Show word count prominently ("2,000 სიტყვა")
+   - "ყველაზე მნიშვნელოვანი სიტყვები" (most important words) tagline
+   - Separate visual section — users should see this FIRST
+   - Make it free (move to FREE_DECK_IDS) — this is the hook that keeps users
 
-2. **🔴 Dynamic Deck Loading** — Refactor cards.ts to lazy-load deck JSON files. Instead of 104 static imports, use dynamic `import()` to load deck data only when user opens that deck. This is THE fix for the 6.5MB bundle. Target: main bundle <1MB. Keep a lightweight deck index (id, name, nameKa, icon, cardCount) for the listing page.
+2. **🔴 Georgian Translation Review** — Audit ALL user-facing Georgian text:
+   - Flashcard UI strings (buttons, labels, tooltips)
+   - Grammar page titles and descriptions
+   - Games page text
+   - Dashboard, homepage, navbar
+   - Check for Google Translate artifacts, awkward phrasing
+   - Fix to natural Georgian
 
-3. **🟡 Audio Autoplay Toggle** — Settings toggle to auto-play English pronunciation when flashcard appears. Simple but highly requested UX improvement. Carried over 3 sprints.
+3. **🟡 Design Polish** — Consistent styling across all pages:
+   - 3D buttons on grammar and games pages (currently only homepage/premium have them)
+   - Consistent card styling
+   - Better loading states
+   - Smooth transitions everywhere
 
-4. **🟡 Swipe Gestures on Mobile** — Mobile flashcard users should swipe left/right for wrong/correct. Natural touch interaction. Increases mobile engagement.
+4. **🟡 Onboarding Flow** — First-time user guided experience:
+   - Detect new user (no localStorage data)
+   - Show welcome screen with 3 paths: "Learn Words" → Top 2000, "Learn Grammar" → A1, "Play Games"
+   - Tooltip highlights on first visit
 
-5. **🟢 Better Onboarding Flow** — First-time user detection → guided tour highlighting key features (flashcards, grammar, games). Reduces confusion, increases activation rate.
+5. **🟢 True Spaced Repetition** — Anki-style intervals (1d → 3d → 7d → 15d → 30d) instead of simple flip-and-rate.
 
-### For Each Cron Tonight:
-- **Cron 1 (Strategy, 1AM):** Review state, set sprint priorities, write specs for dashboard game stats and dynamic deck loading. Update all context files.
-- **Cron 2 (Design, 3AM):** Design dashboard game stats cards (layout, colors, animations). Design loading states for dynamic deck loading. Prepare CSS.
-- **Cron 3 (Features, 5AM):** Build dynamic deck loading in cards.ts. Refactor from 104 static imports to dynamic import(). Build deck index. Build & deploy.
-- **Cron 4 (Improvements, 7AM):** Build dashboard game stats section. Show games played, XP earned, level, recent activity. Also add audio autoplay toggle if time allows.
-- **Cron 5 (QA, 9AM):** Test dynamic deck loading (all decks load correctly on demand). Test dashboard game stats. Full regression on all pages.
+### For Each Cron Today:
+- **Cron 1 (Strategy, 11:30AM):** ← THIS RUN. Review state, set priorities, write specs. Update all context files.
+- **Cron 2 (Design, 3PM):** Design the Top 2000 hero card. Design improvements for grammar/games pages. Prepare CSS.
+- **Cron 3 (Features, 5PM):** Build Top 2000 special section in DeckSelect. Make it free. Build hero card component.
+- **Cron 4 (Improvements, 7PM):** Georgian translation audit. Fix all UI strings. Polish design across pages.
+- **Cron 5 (QA, 9PM):** Full QA. Test Top 2000 hero card. Verify Georgian text quality. Screenshot all pages.
 
 ## Technical Specs
 
-### Dynamic Deck Loading (Cron 3)
-**Problem:** cards.ts has 104 `import X from '../../content/Y.json'` statements. Vite bundles ALL JSON into the main chunk = 6.5MB.
+### Top 2000 Special Hero Card (Cron 3)
+**Current state:** Top 2000 is deck id `top-2000` in deck-index.ts with 2000 cards, sources: `['top-2000-words']`. It appears in the premium grid like any other deck.
 
-**Solution:**
-1. Create `deck-index.ts` — lightweight array of deck metadata (id, name, nameKa, icon, image, cardCount, level, category). NO card data. ~5KB.
-2. Refactor cards.ts — replace static imports with a `loadDeck(id: string)` async function that uses `import()` to dynamically load the JSON file.
-3. Vite will automatically code-split each JSON into its own chunk, loaded on demand.
-4. DeckSelect screen uses deck-index for the listing (instant load).
-5. StudyScreen/QuizScreen/TypingScreen call `loadDeck(id)` when user picks a deck.
-6. Cache loaded decks in memory (Map) so reopening is instant.
+**Changes needed:**
+1. Add `top-2000` to `FREE_DECK_IDS` in deck-index.ts — this deck should be free (it's the best hook)
+2. In DeckSelect.tsx, render Top 2000 as a special hero card BEFORE the grid:
+   ```tsx
+   // Before the free decks grid
+   const top2000 = deckIndex.find(d => d.id === 'top-2000');
+   
+   {top2000 && (
+     <div className="mb-8 relative overflow-hidden rounded-2xl bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 p-6 cursor-pointer hover:scale-[1.01] transition-all"
+       onClick={() => setSelectedMeta(top2000)}>
+       <div className="flex items-center gap-4">
+         <span className="text-5xl">⭐</span>
+         <div>
+           <h2 className="text-xl font-bold">ტოპ 2000 სიტყვა</h2>
+           <p className="text-amber-400/80 text-sm">ყველაზე მნიშვნელოვანი ინგლისური სიტყვები</p>
+           <p className="text-[var(--color-text-muted)] text-xs mt-1">2,000 ბარათი · ისწავლე ყველა და ინგლისური გეცოდინება!</p>
+         </div>
+       </div>
+       {/* Progress bar */}
+     </div>
+   )}
+   ```
+3. Remove `top-2000` from the regular grid (filter it out from freeDecks/premiumDecks)
 
-**Key pattern:**
-```typescript
-// deck-index.ts
-export const deckIndex: DeckMeta[] = [
-  { id: 'greetings-basics', name: 'Greetings', nameKa: 'მისალმებები', icon: '👋', cardCount: 30, level: 'A1' },
-  // ... 100+ entries, NO card arrays
-];
+### Georgian Translation Audit (Cron 4)
+**Files to check:**
+- `flashcard-app/src/components/*.tsx` — all UI strings
+- `website/src/pages/*.astro` — all page text
+- `website/src/components/*.astro` — component text
+- Games page inline text
+- Dashboard labels
+- Homepage sections
 
-// cards.ts
-const deckCache = new Map<string, Deck>();
-const deckLoaders: Record<string, () => Promise<any>> = {
-  'greetings-basics': () => import('../../content/greetings-basics.json'),
-  // ... generated for all decks
-};
-
-export async function loadDeck(id: string): Promise<Deck> {
-  if (deckCache.has(id)) return deckCache.get(id)!;
-  const data = await deckLoaders[id]();
-  const deck = processDeckData(id, data.default);
-  deckCache.set(id, deck);
-  return deck;
-}
-```
-
-**Expected result:** Main bundle drops from 6.5MB to ~500KB-1MB. Each deck loads ~20-80KB on demand.
-
-### Dashboard Game Stats (Cron 4)
-**localStorage keys to read:**
-- `gamesPlayed` — total games completed (number)
-- `todayGames` — `{ count: N, xp: N, date: "YYYY-MM-DD" }` 
-- `totalXP` — total XP across all activities
-- `currentStreak` — current day streak
-
-**Dashboard section should show:**
-- 🎮 Games Played (today / total)
-- ⭐ Game XP Earned (today / total — derive from todayGames.xp)
-- 📊 Level + XP progress bar to next level
-- 🔥 Game Streak
-- Recent activity summary
-
-Place this section prominently on the dashboard, between "My Stats" and the learning path.
+**Common issues to look for:**
+- "სწავლა" vs "ისწავლე" (infinitive vs imperative — use imperative for buttons)
+- Awkward word order
+- Missing Georgian characters
+- Mixed English/Georgian unnecessarily
 
 ## Notes for Crons
 - Always build AND deploy after changes
 - Always test that changes don't break existing features
 - Commit to git after successful deploy
 - Update this file and other context files as needed
-- ⚠️ Remove `dist/flashcards/audio/words/` before deploying (16k files hit 20k limit)
+- ⚠️ Build script now auto-removes audio from dist (`npm run deploy`)

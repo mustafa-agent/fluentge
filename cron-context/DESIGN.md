@@ -63,10 +63,10 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 2 night) — Cron 2 Tasks:
-- [x] **Dashboard Game Stats Cards** — ✅ Mar 2. 4 gradient cards (indigo/purple/yellow/emerald), XP progress bar, 3D CTA button. Both Astro dashboard + React Dashboard.tsx.
-- [ ] **Deck Loading States** — When dynamic deck loading is implemented, design a smooth loading state for deck content (skeleton cards, progress indicator). Should feel instant even on slow connections.
-- [ ] **Audio Autoplay Toggle UI** — Settings gear icon in flashcard header. Toggle switch with label. Persist preference.
+### THIS SPRINT (Mar 2 day) — Cron 2 Tasks:
+- [ ] **⭐ Top 2000 Hero Card Design** — Full-width gradient card (gold/amber), large star icon, progress bar, "most important words" tagline. Should immediately grab attention at top of deck list. Both light and dark mode.
+- [ ] **3D Buttons on Grammar & Games** — Extend the border-b-4 3D button pattern from homepage to grammar lesson cards and game cards. More clickable, more fun.
+- [ ] **Consistent Card Borders** — Standardize border-white/5 (dark) and shadow-sm (light) across all card components.
 
 ### Backlog:
 - [ ] Replace flat buttons with 3D buttons on other pages (grammar, games)

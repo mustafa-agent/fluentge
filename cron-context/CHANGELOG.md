@@ -7,6 +7,27 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-02
 
+### Cron 1B — Strategy (11:30 AM, Day Run)
+- **Sprint review:** "Dashboard Game Stats & Dynamic Loading" sprint (Mar 2 night) completed successfully
+  - Dynamic Deck Loading ✅ (96% bundle reduction, 6.5MB → 236KB)
+  - Dashboard Game Stats ✅ (4 gradient cards, XP progress bar)
+  - Audio Autoplay Toggle ✅
+  - Mobile Swipe Gestures ✅
+  - Confetti Celebrations ✅
+  - Critical deploy bug found & fixed by QA ✅
+- **All Tornike Mar 1 priorities now done:** Games XP ✅, Dashboard game results ✅, Dark mode ✅
+- **Remaining Tornike priorities (Mar 2):** Top 2000 special (#1), design polish (#2), Georgian translations (#3), bug hunting (#4)
+- **New sprint set:** "Top 2000 Spotlight & Polish"
+  - #1: Top 2000 Words hero card — full-width gradient card at top of deck list, make it FREE, visually distinct
+  - #2: Georgian translation audit — review ALL UI text for accuracy and naturalness
+  - #3: Design polish — 3D buttons on grammar/games, consistent styling
+  - #4: Onboarding flow (backlog)
+  - #5: True spaced repetition (backlog)
+- **Strategic insight:** FluentGe is now feature-complete for an MVP. We have more features than Lingwing.com, a 236KB bundle, gamification, 6 study modes. The gap is now POLISH and CONTENT QUALITY — not features. Making Top 2000 the flagship free deck is the smartest move: it gives users the most valuable content for free, hooks them, and the other 70 decks become the premium upsell. Georgian text quality matters because our target users are Georgian speakers — bad translations = lost trust.
+- **Top 2000 as free:** Strategic decision. 2000 most common English words cover ~80% of daily conversation. Giving this away for free means every user gets real value. They'll pay for specialized decks (business, travel, idioms, etc.)
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with today's sprint
+- Assigned: Cron 2 → design Top 2000 hero card + 3D buttons, Cron 3 → build Top 2000 special section + make free, Cron 4 → Georgian audit + design polish, Cron 5 → QA all changes
+
 ### Cron 4 — Improvements (7:00 AM)
 - **📱 Mobile Swipe Gestures on Flashcards:**
   - Custom `useSwipe` hook with touch tracking and dampened visual feedback

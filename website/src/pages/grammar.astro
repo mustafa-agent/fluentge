@@ -46,7 +46,7 @@ function isLessonFree(slug: string) {
           {grouped[level].map(lesson => {
             const free = isLessonFree(lesson.slug);
             return free ? (
-              <a href={`/grammar/${lesson.slug}/`} class="block bg-[#242426] hover:bg-[#242426] border border-[#2E2E30] rounded-xl p-5 transition-all hover:scale-[1.02]">
+              <a href={`/grammar/${lesson.slug}/`} class="block bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] border-b-4 border-b-[#1a1a1c] rounded-xl p-5 transition-all hover:scale-[1.02] active:border-b-2 active:mt-[2px]">
                 <div class="flex items-start justify-between mb-2">
                   <h3 class="font-semibold text-lg">{lesson.title_ka}</h3>
                   <div class="flex items-center gap-1">
@@ -79,7 +79,7 @@ function isLessonFree(slug: string) {
     <div class="mt-8 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
       <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა გაკვეთილი</h3>
       <p class="text-[#6B6B65] mb-6">65 გრამატიკის გაკვეთილი, A1-დან C1-მდე, ყველა კატეგორია</p>
-      <a href="/premium/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
+      <a href="/premium/" class="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors border-b-4 border-amber-700 active:border-b-2 active:mt-[2px]">
         დაიწყე პრემიუმი
       </a>
     </div>

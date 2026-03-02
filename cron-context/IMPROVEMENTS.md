@@ -55,11 +55,11 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 2 night) — "Dashboard Game Stats & Dynamic Loading"
-- [ ] **Dashboard game stats section** — games played, XP, level, recent activity ← Cron 4
-- [ ] **Dynamic deck loading UX** — loading spinner per deck, smooth transition ← Cron 3/4
-- [ ] **Audio autoplay toggle** — settings UI + persistence ← Cron 4
-- [x] **Mobile swipe gestures** — swipe left/right on flashcards ✅ Cron 4, Mar 2
+## 🎯 THIS SPRINT (Mar 2 day) — "Top 2000 Spotlight & Polish"
+- [ ] **⭐ Top 2000 hero card** — Special full-width card at top of flashcard deck list ← Cron 3
+- [ ] **🇬🇪 Georgian text quality** — Audit and fix all Georgian UI strings ← Cron 4
+- [ ] **🎨 3D buttons on grammar/games** — Extend homepage button style to other pages ← Cron 2/4
+- [ ] **Consistent card styling** — Unify card look across all sections ← Cron 2
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
@@ -70,8 +70,8 @@
 - [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-- Dashboard game stats (Sprint Mar 2 night)
-- Dynamic deck loading (Sprint Mar 2 night)
+- Top 2000 hero card (Sprint Mar 2 day)
+- Georgian translation audit (Sprint Mar 2 day)
 
 ## Previously Completed ✅ (Feb 28)
 - ✅ Light mode audit — all pages verified

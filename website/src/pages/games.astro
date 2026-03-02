@@ -97,9 +97,15 @@ import Layout from '../layouts/Layout.astro';
   <style>
     .game-card {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-bottom-width: 4px;
+      border-bottom-color: rgba(0,0,0,0.3);
     }
     .game-card:hover {
       transform: translateY(-3px);
+    }
+    .game-card:active {
+      border-bottom-width: 2px;
+      transform: translateY(0px);
     }
     .game-card:hover img { opacity: 0.9 !important; transform: scale(1.05); }
     .game-card img { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }

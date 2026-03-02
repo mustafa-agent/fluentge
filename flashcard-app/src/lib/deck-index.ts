@@ -91,7 +91,7 @@ export const deckIndex: DeckMeta[] = [
 ];
 
 // Free tier: only these decks are accessible without premium
-export const FREE_DECK_IDS = ['greetings', 'numbers', 'food'];
+export const FREE_DECK_IDS = ['greetings', 'numbers', 'food', 'top-2000'];
 
 export function isDeckFree(deckId: string): boolean {
   return FREE_DECK_IDS.includes(deckId);
