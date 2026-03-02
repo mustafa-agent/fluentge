@@ -64,8 +64,9 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 2 day) — Cron 2 Tasks:
-- [ ] **⭐ Top 2000 Hero Card Design** — Full-width gradient card (gold/amber), large star icon, progress bar, "most important words" tagline. Should immediately grab attention at top of deck list. Both light and dark mode.
-- [ ] **3D Buttons on Grammar & Games** — Extend the border-b-4 3D button pattern from homepage to grammar lesson cards and game cards. More clickable, more fun.
+- [x] **⭐ Top 2000 Hero Card Design** — Full-width amber gradient card with ⭐ icon, "უფასო" + "#1 პოპულარული" badges, 80% coverage stat, arrow CTA. Placed above free decks grid in DeckSelect. ✅ Mar 2
+- [x] **3D Buttons on Grammar & Games** — Grammar lesson cards now have border-b-4 + active press effect. Game cards have border-bottom-width:4px with dark shadow. Premium CTA button upgraded to amber 3D. Light mode overrides added. ✅ Mar 2
+- [x] **Top 2000 made FREE** — Added to FREE_DECK_IDS. Strategic: 2000 most common words = ~80% of daily English. Free hook → premium upsell for specialized decks. ✅ Mar 2
 - [ ] **Consistent Card Borders** — Standardize border-white/5 (dark) and shadow-sm (light) across all card components.
 
 ### Backlog:

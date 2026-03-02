@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { deckIndex, isDeckFree, type DeckMeta } from '../lib/deck-index';
 import { loadDeck, type Deck } from '../lib/deck-loader';
 import { getAllProgress } from '../lib/storage';
+import { getTotalXP, calculateLevel, getCurrentStreak, getDailyGoal, setDailyGoal, getTodayStudyTime } from '../lib/gamification';
 
 interface Props {
   onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed') => void;
@@ -157,8 +158,98 @@ export default function DeckSelect({ onSelect }: Props) {
   const top2000 = deckIndex.find(d => d.id === 'top-2000')!;
   const freeDecksFiltered = freeDecks.filter(d => d.id !== 'top-2000');
 
+  // Words I Know counter
+  const totalMastered = Object.values(progress).filter(p => p.repetitions >= 1).length;
+  const totalXP = getTotalXP();
+  const level = calculateLevel(totalXP);
+  const streak = getCurrentStreak();
+  const dailyGoal = getDailyGoal();
+  const todayMinutes = getTodayStudyTime();
+  const dailyPct = Math.min(100, Math.round((todayMinutes / dailyGoal) * 100));
+
+  // Daily goal setting
+  const [showGoalModal, setShowGoalModal] = useState(false);
+  const goalOptions = [5, 10, 15, 20, 30];
+
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
+      {/* 📊 Words I Know Stats Banner */}
+      <div className="mb-5 grid grid-cols-4 gap-2">
+        <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl p-3 text-center">
+          <div className="text-xl font-extrabold text-green-400">{totalMastered}</div>
+          <div className="text-[10px] text-green-400/70 font-medium mt-0.5">სიტყვა ვიცი</div>
+        </div>
+        <div className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-xl p-3 text-center">
+          <div className="text-xl font-extrabold text-yellow-400">{totalXP}</div>
+          <div className="text-[10px] text-yellow-400/70 font-medium mt-0.5">XP ⭐</div>
+        </div>
+        <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-xl p-3 text-center">
+          <div className="text-xl font-extrabold text-orange-400">{streak}</div>
+          <div className="text-[10px] text-orange-400/70 font-medium mt-0.5">დღე 🔥</div>
+        </div>
+        <button
+          onClick={() => setShowGoalModal(true)}
+          className="bg-gradient-to-br from-sky-500/20 to-blue-500/20 border border-sky-500/30 rounded-xl p-3 text-center hover:scale-[1.03] active:scale-[0.97] transition-transform"
+        >
+          <div className="text-xl font-extrabold text-sky-400">Lv.{level}</div>
+          <div className="text-[10px] text-sky-400/70 font-medium mt-0.5">დონე</div>
+        </button>
+      </div>
+
+      {/* Daily Goal Progress Bar */}
+      <button
+        onClick={() => setShowGoalModal(true)}
+        className="w-full mb-5 bg-[var(--color-bg-card)] rounded-xl p-3 border border-white/5 hover:border-white/10 transition-colors text-left"
+      >
+        <div className="flex items-center justify-between text-xs mb-1.5">
+          <span className="text-[var(--color-text-muted)]">🎯 დღის მიზანი · {dailyGoal} წუთი</span>
+          <span className={`font-bold ${dailyPct >= 100 ? 'text-green-400' : 'text-[var(--color-text-muted)]'}`}>
+            {dailyPct >= 100 ? '✅ შესრულდა!' : `${Math.round(todayMinutes)}/${dailyGoal} წთ`}
+          </span>
+        </div>
+        <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+          <div
+            className={`h-full rounded-full transition-all ${dailyPct >= 100 ? 'bg-green-500' : 'bg-gradient-to-r from-sky-500 to-blue-500'}`}
+            style={{ width: `${dailyPct}%` }}
+          />
+        </div>
+      </button>
+
+      {/* Daily Goal Setting Modal */}
+      {showGoalModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60" onClick={() => setShowGoalModal(false)}>
+          <div className="bg-[var(--color-bg-card)] rounded-2xl p-6 max-w-sm w-full border border-white/10 shadow-xl" onClick={e => e.stopPropagation()}>
+            <h3 className="text-lg font-bold text-center mb-1">🎯 დღის მიზანი</h3>
+            <p className="text-sm text-[var(--color-text-muted)] text-center mb-5">რამდენი წუთი გინდა ისწავლო ყოველ დღე?</p>
+            <div className="grid grid-cols-5 gap-2 mb-5">
+              {goalOptions.map(mins => (
+                <button
+                  key={mins}
+                  onClick={() => {
+                    setDailyGoal(mins);
+                    setShowGoalModal(false);
+                  }}
+                  className={`py-3 rounded-xl font-bold text-sm transition-all border-b-4 active:border-b-0 active:mt-1 ${
+                    mins === dailyGoal
+                      ? 'bg-green-500 border-green-700 text-white'
+                      : 'bg-white/10 border-white/5 text-[var(--color-text)] hover:bg-white/20'
+                  }`}
+                >
+                  {mins}
+                  <span className="block text-[10px] font-normal opacity-70">წთ</span>
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => setShowGoalModal(false)}
+              className="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-sm font-medium transition-colors"
+            >
+              დახურვა
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* ⭐ Top 2000 Hero Card */}
       {top2000 && (
         <button

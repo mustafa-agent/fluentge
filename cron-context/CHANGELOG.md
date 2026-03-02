@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-02
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **⭐ Top 2000 Hero Card:**
+  - Full-width amber/gold gradient card at top of DeckSelect (above free decks grid)
+  - Badges: "უფასო" + "🔥 #1 პოპულარული", 80% coverage stat line
+  - Background image overlay, glow orbs, 3D arrow CTA button
+  - `top-2000` added to FREE_DECK_IDS (strategic: free hook for premium upsell)
+  - Filtered out of regular free grid to avoid duplication
+- **3D Buttons on Grammar:**
+  - Grammar lesson cards: `border-b-4 border-b-[#1a1a1c]` + `active:border-b-2 active:mt-[2px]`
+  - Premium CTA: amber 3D button (bg-amber-500, border-b-4 border-amber-700)
+  - Light mode override for border-b-[#1a1a1c] → #D1D5DB
+- **3D Buttons on Games:**
+  - `.game-card` CSS: border-bottom-width:4px + active press effect
+  - Light mode override for game-card borders
+- Deployed ✅, verified via screenshots (dark mode), git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM, Day Run)
 - **Sprint review:** "Dashboard Game Stats & Dynamic Loading" sprint (Mar 2 night) completed successfully
   - Dynamic Deck Loading ✅ (96% bundle reduction, 6.5MB → 236KB)
