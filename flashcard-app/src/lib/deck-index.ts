@@ -15,7 +15,7 @@ export interface DeckMeta {
 }
 
 export const deckIndex: DeckMeta[] = [
-  { id: 'top-2000', name: 'Top 2000 English Words', nameKa: 'ტოპ 2000 ინგლისური სიტყვა', icon: '⭐', image: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&q=80', cardCount: 2000, sources: ['top-2000-words'] },
+  { id: 'top-2000', name: 'Top 2000 English Words', nameKa: 'ტოპ 2000 ინგლისური სიტყვა', icon: '⭐', image: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&q=80', cardCount: 1870, sources: ['top-2000-words'] },
   { id: 'greetings', name: 'Greetings & Basics', nameKa: 'მისალმებები და საფუძვლები', icon: '👋', image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80', cardCount: 200, sources: ['greetings-basics'] },
   { id: 'numbers', name: 'Numbers & Time', nameKa: 'რიცხვები და დრო', icon: '🔢', image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&q=80', cardCount: 200, sources: ['numbers-time'] },
   { id: 'family', name: 'Family & People', nameKa: 'ოჯახი და ხალხი', icon: '👨‍👩‍👧‍👦', image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400&q=80', cardCount: 200, sources: ['family-people'] },

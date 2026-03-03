@@ -7,6 +7,20 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-03
 
+### Cron 3 — Features (5:00 AM)
+- **🧠 SM-2 Engine Extraction (`srs-engine.ts`):**
+  - New reusable module with full SM-2 algorithm, extracted from SRSStudy.tsx
+  - Exports: rateCard, getNextInterval, getDueCount, getTotalDueCards, getDecksWithDueCards, getSRSStore, saveSRSStore, getLearnedCount
+  - SRSStudy refactored to import from engine (zero code duplication)
+- **🎓 Onboarding Path Navigation:**
+  - OnboardingModal.onComplete now receives selected path
+  - App.tsx routes: words → Top 2000 SRS mode, grammar → /grammar/, games → /games/
+- **📋 Per-Deck Due Card Badges:**
+  - Amber circle badge on each free deck card showing SRS due count
+  - Top 2000 hero shows "🧠 X ბარათი გადასახედია" when due cards exist
+  - Uses getDueCount() from srs-engine
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **🎓 Onboarding Modal (`OnboardingModal.tsx`):**
   - 3-step flow: Welcome (👋) → Choose Path (Words/Grammar/Games) → Daily Goal (5-30 min)

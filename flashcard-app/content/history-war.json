@@ -1,203 +1,1667 @@
 [
-  {"english":"war","georgian":"ომი","pronunciation":"/wɔːr/","example_en":"The war lasted for four years.","example_ka":"ომი ოთხი წელი გაგრძელდა.","category":"history","level":"A1"},
-  {"english":"battle","georgian":"ბრძოლა","pronunciation":"/ˈbætəl/","example_en":"The battle took place near the river.","example_ka":"ბრძოლა მდინარესთან მოხდა.","category":"history","level":"A1"},
-  {"english":"soldier","georgian":"ჯარისკაცი","pronunciation":"/ˈsoʊldʒər/","example_en":"The soldier returned home safely.","example_ka":"ჯარისკაცი უსაფრთხოდ დაბრუნდა სახლში.","category":"history","level":"A1"},
-  {"english":"army","georgian":"არმია","pronunciation":"/ˈɑːrmi/","example_en":"The army marched through the valley.","example_ka":"არმია ხეობაში გაემართა.","category":"history","level":"A1"},
-  {"english":"peace","georgian":"მშვიდობა","pronunciation":"/piːs/","example_en":"They signed a peace treaty.","example_ka":"მათ სამშვიდობო ხელშეკრულება გააფორმეს.","category":"history","level":"A1"},
-  {"english":"king","georgian":"მეფე","pronunciation":"/kɪŋ/","example_en":"The king ruled for thirty years.","example_ka":"მეფე ოცდაათი წელი მართავდა.","category":"history","level":"A1"},
-  {"english":"queen","georgian":"დედოფალი","pronunciation":"/kwiːn/","example_en":"The queen was known for her wisdom.","example_ka":"დედოფალი სიბრძნით იყო ცნობილი.","category":"history","level":"A1"},
-  {"english":"empire","georgian":"იმპერია","pronunciation":"/ˈɛmpaɪər/","example_en":"The Roman Empire was vast.","example_ka":"რომის იმპერია უზარმაზარი იყო.","category":"history","level":"A2"},
-  {"english":"revolution","georgian":"რევოლუცია","pronunciation":"/ˌrɛvəˈluːʃən/","example_en":"The revolution changed the country forever.","example_ka":"რევოლუციამ ქვეყანა სამუდამოდ შეცვალა.","category":"history","level":"A2"},
-  {"english":"colony","georgian":"კოლონია","pronunciation":"/ˈkɒləni/","example_en":"The colony declared independence.","example_ka":"კოლონიამ დამოუკიდებლობა გამოაცხადა.","category":"history","level":"A2"},
-  {"english":"invasion","georgian":"შეჭრა","pronunciation":"/ɪnˈveɪʒən/","example_en":"The invasion began at dawn.","example_ka":"შეჭრა გამთენიისას დაიწყო.","category":"history","level":"A2"},
-  {"english":"weapon","georgian":"იარაღი","pronunciation":"/ˈwɛpən/","example_en":"They found ancient weapons in the cave.","example_ka":"გამოქვაბულში უძველესი იარაღი იპოვეს.","category":"history","level":"A1"},
-  {"english":"shield","georgian":"ფარი","pronunciation":"/ʃiːld/","example_en":"The warrior raised his shield.","example_ka":"მეომარმა ფარი აიტანა.","category":"history","level":"A2"},
-  {"english":"sword","georgian":"ხმალი","pronunciation":"/sɔːrd/","example_en":"The knight drew his sword.","example_ka":"რაინდმა ხმალი იშიშვლა.","category":"history","level":"A2"},
-  {"english":"castle","georgian":"ციხესიმაგრე","pronunciation":"/ˈkæsəl/","example_en":"The castle was built in the 12th century.","example_ka":"ციხესიმაგრე მე-12 საუკუნეში აშენდა.","category":"history","level":"A1"},
-  {"english":"conquer","georgian":"დაპყრობა","pronunciation":"/ˈkɒŋkər/","example_en":"Alexander the Great conquered many lands.","example_ka":"ალექსანდრე მაკედონელმა ბევრი მიწა დაიპყრო.","category":"history","level":"A2"},
-  {"english":"defeat","georgian":"მარცხი","pronunciation":"/dɪˈfiːt/","example_en":"The defeat was devastating for the nation.","example_ka":"მარცხი ერისთვის გამანადგურებელი იყო.","category":"history","level":"A2"},
-  {"english":"victory","georgian":"გამარჯვება","pronunciation":"/ˈvɪktəri/","example_en":"They celebrated their victory.","example_ka":"მათ გამარჯვება აღნიშნეს.","category":"history","level":"A1"},
-  {"english":"treaty","georgian":"ხელშეკრულება","pronunciation":"/ˈtriːti/","example_en":"The peace treaty ended the conflict.","example_ka":"სამშვიდობო ხელშეკრულებამ კონფლიქტი დაასრულა.","category":"history","level":"A2"},
-  {"english":"alliance","georgian":"ალიანსი","pronunciation":"/əˈlaɪəns/","example_en":"The two countries formed an alliance.","example_ka":"ორმა ქვეყანამ ალიანსი შექმნა.","category":"history","level":"A2"},
-  {"english":"surrender","georgian":"კაპიტულაცია","pronunciation":"/səˈrɛndər/","example_en":"The enemy was forced to surrender.","example_ka":"მტერი კაპიტულაციისკენ აიძულეს.","category":"history","level":"A2"},
-  {"english":"siege","georgian":"ალყა","pronunciation":"/siːdʒ/","example_en":"The siege of the city lasted months.","example_ka":"ქალაქის ალყა თვეები გაგრძელდა.","category":"history","level":"B1"},
-  {"english":"trench","georgian":"სანგარი","pronunciation":"/trɛntʃ/","example_en":"Soldiers lived in trenches during World War I.","example_ka":"ჯარისკაცები პირველ მსოფლიო ომში სანგრებში ცხოვრობდნენ.","category":"history","level":"B1"},
-  {"english":"cavalry","georgian":"კავალერია","pronunciation":"/ˈkævəlri/","example_en":"The cavalry charged across the field.","example_ka":"კავალერია მინდორში გაიჭრა.","category":"history","level":"B1"},
-  {"english":"infantry","georgian":"ქვეითი ჯარი","pronunciation":"/ˈɪnfəntri/","example_en":"The infantry advanced slowly.","example_ka":"ქვეითი ჯარი ნელა მიიწევდა წინ.","category":"history","level":"B1"},
-  {"english":"general","georgian":"გენერალი","pronunciation":"/ˈdʒɛnərəl/","example_en":"The general commanded the troops.","example_ka":"გენერალი ჯარს მართავდა.","category":"history","level":"A1"},
-  {"english":"cannon","georgian":"ზარბაზანი","pronunciation":"/ˈkænən/","example_en":"The cannon fired at the enemy walls.","example_ka":"ზარბაზანმა მტრის კედლებს ესროლა.","category":"history","level":"A2"},
-  {"english":"ammunition","georgian":"საბრძოლო მასალა","pronunciation":"/ˌæmjʊˈnɪʃən/","example_en":"They were running out of ammunition.","example_ka":"საბრძოლო მასალა ელოდებოდათ.","category":"history","level":"B1"},
-  {"english":"treason","georgian":"ღალატი","pronunciation":"/ˈtriːzən/","example_en":"He was accused of treason.","example_ka":"მას ღალატში დასდეს ბრალი.","category":"history","level":"B1"},
-  {"english":"dynasty","georgian":"დინასტია","pronunciation":"/ˈdaɪnəsti/","example_en":"The dynasty ruled for centuries.","example_ka":"დინასტია საუკუნეების განმავლობაში მართავდა.","category":"history","level":"A2"},
-  {"english":"throne","georgian":"ტახტი","pronunciation":"/θroʊn/","example_en":"The prince inherited the throne.","example_ka":"უფლისწულმა ტახტი მიიღო მემკვიდრეობით.","category":"history","level":"A2"},
-  {"english":"rebellion","georgian":"აჯანყება","pronunciation":"/rɪˈbɛljən/","example_en":"The rebellion was crushed quickly.","example_ka":"აჯანყება სწრაფად ჩაახშეს.","category":"history","level":"A2"},
-  {"english":"diplomat","georgian":"დიპლომატი","pronunciation":"/ˈdɪpləmæt/","example_en":"The diplomat negotiated peace terms.","example_ka":"დიპლომატი სამშვიდობო პირობებზე მოლაპარაკებას აწარმოებდა.","category":"history","level":"A2"},
-  {"english":"territory","georgian":"ტერიტორია","pronunciation":"/ˈtɛrɪtɔːri/","example_en":"They fought over disputed territory.","example_ka":"ისინი სადავო ტერიტორიისთვის იბრძოდნენ.","category":"history","level":"A2"},
-  {"english":"medieval","georgian":"შუასაუკუნეების","pronunciation":"/ˌmɛdiˈiːvəl/","example_en":"Medieval castles are popular tourist sites.","example_ka":"შუასაუკუნეების ციხესიმაგრეები პოპულარული ტურისტული ადგილებია.","category":"history","level":"A2"},
-  {"english":"ancient","georgian":"უძველესი","pronunciation":"/ˈeɪnʃənt/","example_en":"Ancient civilizations built impressive structures.","example_ka":"უძველესმა ცივილიზაციებმა შთამბეჭდავი ნაგებობები ააშენეს.","category":"history","level":"A1"},
-  {"english":"emperor","georgian":"იმპერატორი","pronunciation":"/ˈɛmpərər/","example_en":"The emperor expanded the borders.","example_ka":"იმპერატორმა საზღვრები გააფართოვა.","category":"history","level":"A2"},
-  {"english":"conquest","georgian":"დაპყრობა","pronunciation":"/ˈkɒŋkwɛst/","example_en":"The conquest of new lands was brutal.","example_ka":"ახალი მიწების დაპყრობა სასტიკი იყო.","category":"history","level":"B1"},
-  {"english":"fortress","georgian":"ციხესიმაგრე","pronunciation":"/ˈfɔːrtrəs/","example_en":"The fortress stood on top of the hill.","example_ka":"ციხესიმაგრე გორაკის თავზე იდგა.","category":"history","level":"A2"},
-  {"english":"refugee","georgian":"ლტოლვილი","pronunciation":"/ˌrɛfjʊˈdʒiː/","example_en":"Millions became refugees during the war.","example_ka":"ომის დროს მილიონობით ადამიანი გახდა ლტოლვილი.","category":"history","level":"A2"},
-  {"english":"ceasefire","georgian":"ცეცხლის შეწყვეტა","pronunciation":"/ˈsiːsfaɪər/","example_en":"Both sides agreed to a ceasefire.","example_ka":"ორივე მხარე ცეცხლის შეწყვეტაზე შეთანხმდა.","category":"history","level":"B1"},
-  {"english":"occupation","georgian":"ოკუპაცია","pronunciation":"/ˌɒkjʊˈpeɪʃən/","example_en":"The occupation lasted for decades.","example_ka":"ოკუპაცია ათწლეულების განმავლობაში გაგრძელდა.","category":"history","level":"A2"},
-  {"english":"independence","georgian":"დამოუკიდებლობა","pronunciation":"/ˌɪndɪˈpɛndəns/","example_en":"Georgia declared independence in 1991.","example_ka":"საქართველომ დამოუკიდებლობა 1991 წელს გამოაცხადა.","category":"history","level":"A2"},
-  {"english":"patriot","georgian":"პატრიოტი","pronunciation":"/ˈpeɪtriət/","example_en":"He was a true patriot of his country.","example_ka":"ის თავისი ქვეყნის ნამდვილი პატრიოტი იყო.","category":"history","level":"A2"},
-  {"english":"hero","georgian":"გმირი","pronunciation":"/ˈhɪəroʊ/","example_en":"The hero saved many lives.","example_ka":"გმირმა ბევრი სიცოცხლე გადაარჩინა.","category":"history","level":"A1"},
-  {"english":"monument","georgian":"ძეგლი","pronunciation":"/ˈmɒnjʊmənt/","example_en":"They built a monument to honor the fallen.","example_ka":"დაღუპულთა პატივსაცემად ძეგლი აღმართეს.","category":"history","level":"A2"},
-  {"english":"archive","georgian":"არქივი","pronunciation":"/ˈɑːrkaɪv/","example_en":"The documents are kept in the national archive.","example_ka":"დოკუმენტები ეროვნულ არქივში ინახება.","category":"history","level":"A2"},
-  {"english":"civilization","georgian":"ცივილიზაცია","pronunciation":"/ˌsɪvɪlaɪˈzeɪʃən/","example_en":"Greek civilization influenced the whole world.","example_ka":"ბერძნულმა ცივილიზაციამ მთელ მსოფლიოზე მოახდინა გავლენა.","category":"history","level":"A2"},
-  {"english":"archaeology","georgian":"არქეოლოგია","pronunciation":"/ˌɑːrkiˈɒlədʒi/","example_en":"Archaeology helps us understand the past.","example_ka":"არქეოლოგია წარსულის გაგებაში გვეხმარება.","category":"history","level":"B1"},
-  {"english":"armor","georgian":"ჯავშანი","pronunciation":"/ˈɑːrmər/","example_en":"Knights wore heavy armor in battle.","example_ka":"რაინდები ბრძოლაში მძიმე ჯავშანს ატარებდნენ.","category":"history","level":"A2"},
-  {"english":"crusade","georgian":"ჯვაროსნული ლაშქრობა","pronunciation":"/kruːˈseɪd/","example_en":"The crusades lasted for centuries.","example_ka":"ჯვაროსნული ლაშქრობები საუკუნეების განმავლობაში გრძელდებოდა.","category":"history","level":"B1"},
-  {"english":"holocaust","georgian":"ჰოლოკოსტი","pronunciation":"/ˈhɑːləkɔːst/","example_en":"The holocaust was a tragedy.","example_ka":"ჰოლოკოსტი ტრაგედია იყო.","category":"history","level":"B1"},
-  {"english":"genocide","georgian":"გენოციდი","pronunciation":"/ˈdʒɛnəsaɪd/","example_en":"Genocide is a crime against humanity.","example_ka":"გენოციდი კაცობრიობის წინააღმდეგ ჩადენილი დანაშაულია.","category":"history","level":"B2"},
-  {"english":"dictator","georgian":"დიქტატორი","pronunciation":"/ˈdɪkteɪtər/","example_en":"The dictator ruled with an iron fist.","example_ka":"დიქტატორი რკინის მუშტით მართავდა.","category":"history","level":"A2"},
-  {"english":"democracy","georgian":"დემოკრატია","pronunciation":"/dɪˈmɑːkrəsi/","example_en":"Democracy gives people the right to vote.","example_ka":"დემოკრატია ხალხს ხმის მიცემის უფლებას აძლევს.","category":"history","level":"A2"},
-  {"english":"republic","georgian":"რესპუბლიკა","pronunciation":"/rɪˈpʌblɪk/","example_en":"France became a republic after the revolution.","example_ka":"საფრანგეთი რევოლუციის შემდეგ რესპუბლიკა გახდა.","category":"history","level":"A2"},
-  {"english":"monarchy","georgian":"მონარქია","pronunciation":"/ˈmɑːnərki/","example_en":"Britain is a constitutional monarchy.","example_ka":"ბრიტანეთი საკონსტიტუციო მონარქიაა.","category":"history","level":"B1"},
-  {"english":"renaissance","georgian":"რენესანსი","pronunciation":"/rɪˈneɪsəns/","example_en":"The Renaissance was a period of great art.","example_ka":"რენესანსი დიდი ხელოვნების პერიოდი იყო.","category":"history","level":"B1"},
-  {"english":"reformation","georgian":"რეფორმაცია","pronunciation":"/ˌrɛfərˈmeɪʃən/","example_en":"The Protestant Reformation changed Europe.","example_ka":"პროტესტანტულმა რეფორმაციამ ევროპა შეცვალა.","category":"history","level":"B2"},
-  {"english":"enlightenment","georgian":"განმანათლებლობა","pronunciation":"/ɪnˈlaɪtənmənt/","example_en":"The Enlightenment promoted reason and science.","example_ka":"განმანათლებლობამ გონება და მეცნიერება შეაფასა.","category":"history","level":"B2"},
-  {"english":"feudalism","georgian":"ფეოდალიზმი","pronunciation":"/ˈfjuːdəlɪzəm/","example_en":"Feudalism dominated medieval Europe.","example_ka":"ფეოდალიზმი შუასაუკუნეებს ევროპაში დომინირებდა.","category":"history","level":"B2"},
-  {"english":"capitalism","georgian":"კაპიტალიზმი","pronunciation":"/ˈkæpɪtəlɪzəm/","example_en":"Capitalism emerged in the modern era.","example_ka":"კაპიტალიზმი თანამედროვე ეპოქაში წარმოიშვა.","category":"history","level":"B2"},
-  {"english":"communism","georgian":"კომუნიზმი","pronunciation":"/ˈkɑːmjʊnɪzəm/","example_en":"Communism was the ideology of the Soviet Union.","example_ka":"კომუნიზმი საბჭოთა კავშირის იდეოლოგია იყო.","category":"history","level":"B1"},
-  {"english":"fascism","georgian":"ფაშიზმი","pronunciation":"/ˈfæʃɪzəm/","example_en":"Fascism was defeated in World War II.","example_ka":"ფაშიზმი მეორე მსოფლიო ომში დამარცხდა.","category":"history","level":"B2"},
-  {"english":"imperialism","georgian":"იმპერიალიზმი","pronunciation":"/ɪmˈpɪriəlɪzəm/","example_en":"Imperialism led to the colonization of many countries.","example_ka":"იმპერიალიზმმა ბევრი ქვეყნის კოლონიზაციამდე მიყვანა.","category":"history","level":"B2"},
-  {"english":"nationalism","georgian":"ნაციონალიზმი","pronunciation":"/ˈnæʃənəlɪzəm/","example_en":"Nationalism grew stronger in the 19th century.","example_ka":"ნაციონალიზმი მე-19 საუკუნეში უფრო გაძლიერდა.","category":"history","level":"B2"},
-  {"english":"socialism","georgian":"სოციალიზმი","pronunciation":"/ˈsoʊʃəlɪzəm/","example_en":"Socialism advocates for social equality.","example_ka":"სოციალიზმი სოციალურ თანასწორობას უჭერს მხარს.","category":"history","level":"B2"},
-  {"english":"constitution","georgian":"კონსტიტუცია","pronunciation":"/ˌkɑːnstɪˈtuːʃən/","example_en":"The constitution guarantees our rights.","example_ka":"კონსტიტუცია ჩვენს უფლებებს იცავს.","category":"history","level":"A2"},
-  {"english":"parliament","georgian":"პარლამენტი","pronunciation":"/ˈpɑːrləmənt/","example_en":"Parliament makes the laws.","example_ka":"პარლამენტი კანონებს ქმნის.","category":"history","level":"A2"},
-  {"english":"senate","georgian":"სენატი","pronunciation":"/ˈsɛnət/","example_en":"The Roman Senate was very powerful.","example_ka":"რომის სენატი ძალიან ძლიერი იყო.","category":"history","level":"A2"},
-  {"english":"congress","georgian":"კონგრესი","pronunciation":"/ˈkɑːŋɡrəs/","example_en":"Congress voted on the new law.","example_ka":"კონგრესმა ახალ კანონზე იხმო.","category":"history","level":"A2"},
-  {"english":"legion","georgian":"ლეგიონი","pronunciation":"/ˈliːdʒən/","example_en":"Roman legions conquered vast territories.","example_ka":"რომაულმა ლეგიონებმა უზარმაზარი ტერიტორიები დაიპყრეს.","category":"history","level":"B1"},
-  {"english":"gladiator","georgian":"გლადიატორი","pronunciation":"/ˈɡlædiˌeɪtər/","example_en":"Gladiators fought in the Colosseum.","example_ka":"გლადიატორები კოლიზეუმში იბრძოდნენ.","category":"history","level":"A2"},
-  {"english":"pharaoh","georgian":"ფარაონი","pronunciation":"/ˈfɛroʊ/","example_en":"The pharaoh was buried in a pyramid.","example_ka":"ფარაონი პირამიდაში დაკრძალეს.","category":"history","level":"A2"},
-  {"english":"pyramid","georgian":"პირამიდა","pronunciation":"/ˈpɪrəmɪd/","example_en":"The Great Pyramid is in Egypt.","example_ka":"დიდი პირამიდა ეგვიპტეშია.","category":"history","level":"A1"},
-  {"english":"mummy","georgian":"მუმია","pronunciation":"/ˈmʌmi/","example_en":"They discovered an ancient mummy.","example_ka":"უძველესი მუმია აღმოაჩინეს.","category":"history","level":"A2"},
-  {"english":"tomb","georgian":"საფლავი","pronunciation":"/tuːm/","example_en":"The king's tomb was filled with treasure.","example_ka":"მეფის საფლავი განძეულით იყო სავსე.","category":"history","level":"A2"},
-  {"english":"inscription","georgian":"წარწერა","pronunciation":"/ɪnˈskrɪpʃən/","example_en":"The inscription was written in Latin.","example_ka":"წარწერა ლათინურად იყო დაწერილი.","category":"history","level":"B1"},
-  {"english":"manuscript","georgian":"ხელნაწერი","pronunciation":"/ˈmænjʊskrɪpt/","example_en":"Medieval manuscripts were beautifully decorated.","example_ka":"შუასაუკუნეების ხელნაწერები ლამაზად იყო შემკული.","category":"history","level":"B1"},
-  {"english":"chronicle","georgian":"ქრონიკა","pronunciation":"/ˈkrɑːnɪkəl/","example_en":"The chronicle recorded important events.","example_ka":"ქრონიკა მნიშვნელოვან მოვლენებს აღწერდა.","category":"history","level":"B2"},
-  {"english":"artifact","georgian":"არტეფაქტი","pronunciation":"/ˈɑːrtɪfækt/","example_en":"The museum displays ancient artifacts.","example_ka":"მუზეუმი უძველეს არტეფაქტებს აჩვენებს.","category":"history","level":"B1"},
-  {"english":"excavation","georgian":"გათხრა","pronunciation":"/ˌɛkskəˈveɪʃən/","example_en":"The excavation revealed a Roman villa.","example_ka":"გათხრამ რომაული ვილა გამოავლინა.","category":"history","level":"B1"},
-  {"english":"dynasty","georgian":"დინასტია","pronunciation":"/ˈdaɪnəsti/","example_en":"The Ming Dynasty ruled China.","example_ka":"მინის დინასტია ჩინეთს მართავდა.","category":"history","level":"A2"},
-  {"english":"succession","georgian":"მემკვიდრეობა","pronunciation":"/səkˈsɛʃən/","example_en":"The succession was disputed.","example_ka":"მემკვიდრეობა სადავო იყო.","category":"history","level":"B1"},
-  {"english":"abdication","georgian":"უარყოფა","pronunciation":"/ˌæbdɪˈkeɪʃən/","example_en":"The king's abdication shocked the nation.","example_ka":"მეფის უარყოფამ ერი გაოცა.","category":"history","level":"B2"},
-  {"english":"coronation","georgian":"კორონაცია","pronunciation":"/ˌkɔːrəˈneɪʃən/","example_en":"The coronation was a grand ceremony.","example_ka":"კორონაცია ბრწყინვალე ცერემონია იყო.","category":"history","level":"B1"},
-  {"english":"exile","georgian":"გადასახლება","pronunciation":"/ˈɛɡzaɪl/","example_en":"Napoleon was sent into exile.","example_ka":"ნაპოლეონი გადასახლებაში გაუშვეს.","category":"history","level":"B1"},
-  {"english":"assassination","georgian":"მკვლელობა","pronunciation":"/əˌsæsəˈneɪʃən/","example_en":"The assassination changed history.","example_ka":"მკვლელობამ ისტორია შეცვალა.","category":"history","level":"B1"},
-  {"english":"conspiracy","georgian":"შეთქმულება","pronunciation":"/kənˈspɪrəsi/","example_en":"They uncovered a conspiracy against the king.","example_ka":"მეფის წინააღმდეგ შეთქმულება გამოავლინეს.","category":"history","level":"B2"},
-  {"english":"espionage","georgian":"ჯაშუშობა","pronunciation":"/ˈɛspiənɑːʒ/","example_en":"Espionage played a role in the war.","example_ka":"ჯაშუშობამ ომში როლი ითამაშა.","category":"history","level":"B2"},
-  {"english":"propaganda","georgian":"პროპაგანდა","pronunciation":"/ˌprɑːpəˈɡændə/","example_en":"The government used propaganda.","example_ka":"მთავრობა პროპაგანდას იყენებდა.","category":"history","level":"B1"},
-  {"english":"censorship","georgian":"ცენზურა","pronunciation":"/ˈsɛnsərʃɪp/","example_en":"Censorship limited free speech.","example_ka":"ცენზურამ სიტყვის თავისუფლება შეზღუდა.","category":"history","level":"B2"},
-  {"english":"reformation","georgian":"რეფორმაცია","pronunciation":"/ˌrɛfərˈmeɪʃən/","example_en":"The reformation split the church.","example_ka":"რეფორმაციამ ეკლესია გაყო.","category":"history","level":"B2"},
-  {"english":"inquisition","georgian":"ინკვიზიცია","pronunciation":"/ˌɪnkwɪˈzɪʃən/","example_en":"The Inquisition persecuted heretics.","example_ka":"ინკვიზიცია მწვალებლებს ავნებდა.","category":"history","level":"B2"},
-  {"english":"heresy","georgian":"მწვალებლობა","pronunciation":"/ˈhɛrəsi/","example_en":"He was accused of heresy.","example_ka":"მას მწვალებლობა დაედო ბრალი.","category":"history","level":"B2"},
-  {"english":"martyrdom","georgian":"მოწამებრივი სიკვდილი","pronunciation":"/ˈmɑːrtərdəm/","example_en":"He chose martyrdom over betrayal.","example_ka":"მან ღალატის ნაცვლად მოწამებრივი სიკვდილი ამირჩია.","category":"history","level":"B2"},
-  {"english":"pilgrimage","georgian":"მლოცველობა","pronunciation":"/ˈpɪlɡrəmɪdʒ/","example_en":"They went on a pilgrimage to Jerusalem.","example_ka":"იერუსალიმში მლოცველობას წავიდნენ.","category":"history","level":"B1"},
-  {"english":"monastery","georgian":"მონასტერი","pronunciation":"/ˈmɑːnəstɛri/","example_en":"Monks lived in the monastery.","example_ka":"ბერები მონასტერში ცხოვრობდნენ.","category":"history","level":"A2"},
-  {"english":"cathedral","georgian":"ტაძარი","pronunciation":"/kəˈθiːdrəl/","example_en":"The cathedral was built in Gothic style.","example_ka":"ტაძარი გოთური სტილით აშენდა.","category":"history","level":"A2"},
-  {"english":"viking","georgian":"ვიკინგი","pronunciation":"/ˈvaɪkɪŋ/","example_en":"Vikings sailed across the ocean.","example_ka":"ვიკინგები ოკეანეს გადაცურავდნენ.","category":"history","level":"A2"},
-  {"english":"barbarian","georgian":"ბარბაროსი","pronunciation":"/bɑːrˈbɛriən/","example_en":"Romans called them barbarians.","example_ka":"რომაელები მათ ბარბაროსებს ეძახდნენ.","category":"history","level":"B1"},
-  {"english":"nomad","georgian":"მომთაბარე","pronunciation":"/ˈnoʊmæd/","example_en":"Nomads moved with their herds.","example_ka":"მომთაბარეები თავიანთ ნახირებთან ერთად მოძრაობდნენ.","category":"history","level":"B1"},
-  {"english":"migration","georgian":"მიგრაცია","pronunciation":"/maɪˈɡreɪʃən/","example_en":"The great migration changed Europe.","example_ka":"დიდმა მიგრაციამ ევროპა შეცვალა.","category":"history","level":"B1"},
-  {"english":"settlement","georgian":"დასახლება","pronunciation":"/ˈsɛtəlmənt/","example_en":"They established a new settlement.","example_ka":"ახალი დასახლება დააარსეს.","category":"history","level":"A2"},
-  {"english":"explorer","georgian":"მკვლევარი","pronunciation":"/ɪkˈsplɔːrər/","example_en":"The explorer discovered new lands.","example_ka":"მკვლევარმა ახალი მიწები აღმოაჩინა.","category":"history","level":"A2"},
-  {"english":"expedition","georgian":"ექსპედიცია","pronunciation":"/ˌɛkspəˈdɪʃən/","example_en":"The expedition lasted two years.","example_ka":"ექსპედიცია ორი წელი გაგრძელდა.","category":"history","level":"A2"},
-  {"english":"discovery","georgian":"აღმოჩენა","pronunciation":"/dɪˈskʌvəri/","example_en":"The discovery of America changed the world.","example_ka":"ამერიკის აღმოჩენამ მსოფლიო შეცვალა.","category":"history","level":"A2"},
-  {"english":"navigation","georgian":"ნავიგაცია","pronunciation":"/ˌnævɪˈɡeɪʃən/","example_en":"Navigation improved with the compass.","example_ka":"ნავიგაცია კომპასით გაუმჯობესდა.","category":"history","level":"B1"},
-  {"english":"cartography","georgian":"რუკების შედგენა","pronunciation":"/kɑːrˈtɑːɡrəfi/","example_en":"Cartography advanced during the Renaissance.","example_ka":"რუკების შედგენა რენესანსის დროს წინ წავიდა.","category":"history","level":"B2"},
-  {"english":"merchant","georgian":"ვაჭარი","pronunciation":"/ˈmɜːrtʃənt/","example_en":"Merchants traded along the Silk Road.","example_ka":"ვაჭრები აბრეშუმის გზაზე ივაჭრებდნენ.","category":"history","level":"A2"},
-  {"english":"guild","georgian":"გილდია","pronunciation":"/ɡɪld/","example_en":"Craftsmen formed guilds.","example_ka":"ხელოსნები გილდიებს ქმნიდნენ.","category":"history","level":"B1"},
-  {"english":"apprentice","georgian":"მოწაფე","pronunciation":"/əˈprɛntəs/","example_en":"The apprentice learned from the master.","example_ka":"მოწაფე ოსტატისგან სწავლობდა.","category":"history","level":"B1"},
-  {"english":"peasant","georgian":"გლეხი","pronunciation":"/ˈpɛzənt/","example_en":"Peasants worked the land.","example_ka":"გლეხები მიწას მუშაობდნენ.","category":"history","level":"A2"},
-  {"english":"serf","georgian":"ბატონყმა","pronunciation":"/sɜːrf/","example_en":"Serfs were bound to the land.","example_ka":"ბატონყმები მიწას იყვნენ მიბმული.","category":"history","level":"B1"},
-  {"english":"nobility","georgian":"კეთილშობილობა","pronunciation":"/noʊˈbɪləti/","example_en":"The nobility lived in luxury.","example_ka":"კეთილშობილობა ფუფუნებაში ცხოვრობდა.","category":"history","level":"B1"},
-  {"english":"aristocracy","georgian":"არისტოკრატია","pronunciation":"/ˌærɪˈstɑːkrəsi/","example_en":"The aristocracy held political power.","example_ka":"არისტოკრატია პოლიტიკურ ძალაუფლებას ფლობდა.","category":"history","level":"B2"},
-  {"english":"bourgeoisie","georgian":"ბურჟუაზია","pronunciation":"/ˌbʊrʒwɑːˈziː/","example_en":"The bourgeoisie emerged in cities.","example_ka":"ბურჟუაზია ქალაქებში გაჩნდა.","category":"history","level":"B2"},
-  {"english":"proletariat","georgian":"პროლეტარიატი","pronunciation":"/ˌproʊləˈtɛriət/","example_en":"Marx wrote about the proletariat.","example_ka":"მარქსი პროლეტარიატზე წერდა.","category":"history","level":"B2"},
-  {"english":"slavery","georgian":"მონობა","pronunciation":"/ˈsleɪvəri/","example_en":"Slavery was abolished in the 19th century.","example_ka":"მონობა მე-19 საუკუნეში გაუქმდა.","category":"history","level":"A2"},
-  {"english":"emancipation","georgian":"გათავისუფლება","pronunciation":"/ɪˌmænsəˈpeɪʃən/","example_en":"Emancipation freed the slaves.","example_ka":"გათავისუფლებამ მონები გაათავისუფლა.","category":"history","level":"B2"},
-  {"english":"suffrage","georgian":"ხმის მიცემის უფლება","pronunciation":"/ˈsʌfrɪdʒ/","example_en":"Women fought for suffrage.","example_ka":"ქალები ხმის მიცემის უფლებისთვის იბრძოდნენ.","category":"history","level":"B2"},
-  {"english":"referendum","georgian":"რეფერენდუმი","pronunciation":"/ˌrɛfəˈrɛndəm/","example_en":"The referendum decided the issue.","example_ka":"რეფერენდუმმა საკითხი გადაწყვიტა.","category":"history","level":"B1"},
-  {"english":"plebiscite","georgian":"პლებისციტი","pronunciation":"/ˈplɛbɪsaɪt/","example_en":"A plebiscite was held.","example_ka":"პლებისციტი ჩატარდა.","category":"history","level":"C1"},
-  {"english":"manifesto","georgian":"მანიფესტი","pronunciation":"/ˌmænəˈfɛstoʊ/","example_en":"They published a political manifesto.","example_ka":"პოლიტიკური მანიფესტი გამოაქვეყნეს.","category":"history","level":"B2"},
-  {"english":"proclamation","georgian":"პროკლამაცია","pronunciation":"/ˌprɒkləˈmeɪʃən/","example_en":"The proclamation announced independence.","example_ka":"პროკლამაციამ დამოუკიდებლობა გამოაცხადა.","category":"history","level":"B2"},
-  {"english":"declaration","georgian":"დეკლარაცია","pronunciation":"/ˌdɛkləˈreɪʃən/","example_en":"The Declaration of Independence was signed.","example_ka":"დამოუკიდებლობის დეკლარაცია გაფორმდა.","category":"history","level":"A2"},
-  {"english":"ratification","georgian":"რატიფიცირება","pronunciation":"/ˌrætəfəˈkeɪʃən/","example_en":"The treaty needed ratification.","example_ka":"ხელშეკრულება რატიფიცირებას საჭიროებდა.","category":"history","level":"B2"},
-  {"english":"amendment","georgian":"შესწორება","pronunciation":"/əˈmɛndmənt/","example_en":"The First Amendment protects speech.","example_ka":"პირველი შესწორება სიტყვის თავისუფლებას იცავს.","category":"history","level":"B1"},
-  {"english":"veto","georgian":"ვეტო","pronunciation":"/ˈviːtoʊ/","example_en":"The president used his veto power.","example_ka":"პრეზიდენტმა ვეტოს უფლება გამოიყენა.","category":"history","level":"B1"},
-  {"english":"impeachment","georgian":"იმპიჩმენტი","pronunciation":"/ɪmˈpiːtʃmənt/","example_en":"The president faced impeachment.","example_ka":"პრეზიდენტს იმპიჩმენტი ემუქრებოდა.","category":"history","level":"B2"},
-  {"english":"abdication","georgian":"ტახტის უარყოფა","pronunciation":"/ˌæbdɪˈkeɪʃən/","example_en":"The king's abdication surprised everyone.","example_ka":"მეფის ტახტის უარყოფამ ყველა გაოცა.","category":"history","level":"B2"},
-  {"english":"regency","georgian":"რეგენტობა","pronunciation":"/ˈriːdʒənsi/","example_en":"A regency was established for the young king.","example_ka":"ახალგაზრდა მეფისთვის რეგენტობა დაარსდა.","category":"history","level":"B2"},
-  {"english":"insurgency","georgian":"ამბოხი","pronunciation":"/ɪnˈsɜːrdʒənsi/","example_en":"The insurgency lasted for years.","example_ka":"ამბოხი წლების განმავლობაში გრძელდებოდა.","category":"history","level":"B2"},
-  {"english":"guerrilla","georgian":"პარტიზანი","pronunciation":"/ɡəˈrɪlə/","example_en":"Guerrilla warfare was effective.","example_ka":"პარტიზანული ომი ეფექტური იყო.","category":"history","level":"B1"},
-  {"english":"mercenary","georgian":"დაქირავებული ჯარისკაცი","pronunciation":"/ˈmɜːrsənɛri/","example_en":"Mercenaries fought for money.","example_ka":"დაქირავებული ჯარისკაცები ფულისთვის იბრძოდნენ.","category":"history","level":"B2"},
-  {"english":"conscription","georgian":"სავალდებულო სამხედრო სამსახური","pronunciation":"/kənˈskrɪpʃən/","example_en":"Conscription was introduced during the war.","example_ka":"ომის დროს სავალდებულო სამხედრო სამსახური შემოვიდა.","category":"history","level":"B2"},
-  {"english":"veteran","georgian":"ვეტერანი","pronunciation":"/ˈvɛtərən/","example_en":"The veteran fought in three wars.","example_ka":"ვეტერანი სამ ომში იბრძოდა.","category":"history","level":"A2"},
-  {"english":"casualty","georgian":"მსხვერპლი","pronunciation":"/ˈkæʒuəlti/","example_en":"The war had many casualties.","example_ka":"ომს ბევრი მსხვერპლი ჰყავდა.","category":"history","level":"A2"},
-  {"english":"prisoner","georgian":"ტყვე","pronunciation":"/ˈprɪzənər/","example_en":"Prisoners of war were exchanged.","example_ka":"ომის ტყვეები გაცვლილი იქნენ.","category":"history","level":"A1"},
-  {"english":"ransom","georgian":"გამოსყიდვა","pronunciation":"/ˈrænsəm/","example_en":"They demanded ransom for the prisoners.","example_ka":"ტყვეების გამოსყიდვა მოითხოვეს.","category":"history","level":"B1"},
-  {"english":"hostage","georgian":"მძევალი","pronunciation":"/ˈhɑːstɪdʒ/","example_en":"The diplomats were taken hostage.","example_ka":"დიპლომატები მძევლად ჩაიტაცეს.","category":"history","level":"A2"},
-  {"english":"captivity","georgian":"ტყვეობა","pronunciation":"/kæpˈtɪvəti/","example_en":"He spent years in captivity.","example_ka":"წლები ტყვეობაში გაატარა.","category":"history","level":"B1"},
-  {"english":"liberation","georgian":"განთავისუფლება","pronunciation":"/ˌlɪbəˈreɪʃən/","example_en":"The liberation came in spring.","example_ka":"განთავისუფლება გაზაფხულზე მოვიდა.","category":"history","level":"B1"},
-  {"english":"reconstruction","georgian":"აღდგენა","pronunciation":"/ˌriːkənˈstrʌkʃən/","example_en":"Reconstruction began after the war.","example_ka":"აღდგენა ომის შემდეგ დაიწყო.","category":"history","level":"B1"},
-  {"english":"reparations","georgian":"რეპარაციები","pronunciation":"/ˌrɛpəˈreɪʃənz/","example_en":"Germany paid war reparations.","example_ka":"გერმანიამ ომის რეპარაციები გადაიხადა.","category":"history","level":"B2"},
-  {"english":"armistice","georgian":"ზავი","pronunciation":"/ˈɑːrmɪstəs/","example_en":"An armistice ended the fighting.","example_ka":"ზავმა ბრძოლები შეწყვიტა.","category":"history","level":"B2"},
-  {"english":"neutrality","georgian":"ნეიტრალიტეტი","pronunciation":"/nuːˈtræləti/","example_en":"Switzerland maintained neutrality.","example_ka":"შვეიცარიამ ნეიტრალიტეტი შეინარჩუნა.","category":"history","level":"B2"},
-  {"english":"blockade","georgian":"ბლოკადა","pronunciation":"/blɑːˈkeɪd/","example_en":"The naval blockade was effective.","example_ka":"საზღვაო ბლოკადა ეფექტური იყო.","category":"history","level":"B2"},
-  {"english":"embargo","georgian":"ემბარგო","pronunciation":"/ɪmˈbɑːrɡoʊ/","example_en":"They imposed a trade embargo.","example_ka":"სავაჭრო ემბარგო დააწესეს.","category":"history","level":"B2"},
-  {"english":"sanctions","georgian":"სანქციები","pronunciation":"/ˈsæŋkʃənz/","example_en":"Economic sanctions were imposed.","example_ka":"ეკონომიკური სანქციები დაწესდა.","category":"history","level":"B1"},
-  {"english":"ultimatum","georgian":"ულტიმატუმი","pronunciation":"/ˌʌltəˈmeɪtəm/","example_en":"The government issued an ultimatum.","example_ka":"მთავრობამ ულტიმატუმი გასცა.","category":"history","level":"B2"},
-  {"english":"cavalry","georgian":"ცხენოსნები","pronunciation":"/ˈkævəlri/","example_en":"The cavalry charged across the field.","example_ka":"ცხენოსნები ველზე შეტევას შეუდგნენ.","category":"history","level":"B1"},
-  {"english":"infantry","georgian":"ქვეითები","pronunciation":"/ˈɪnfəntri/","example_en":"Infantry units advanced on foot.","example_ka":"ქვეითი ნაწილები ფეხით წინ წავიდნენ.","category":"history","level":"B1"},
-  {"english":"artillery","georgian":"არტილერია","pronunciation":"/ɑːrˈtɪləri/","example_en":"Artillery bombarded the fortress.","example_ka":"არტილერიამ ციხესიმაგრე დაბომბა.","category":"history","level":"B1"},
-  {"english":"siege","georgian":"ალყა","pronunciation":"/siːdʒ/","example_en":"The siege lasted three months.","example_ka":"ალყა სამ თვე გრძელდებოდა.","category":"history","level":"B2"},
-  {"english":"fortress","georgian":"ციხესიმაგრე","pronunciation":"/ˈfɔːrtrəs/","example_en":"The fortress withstood the attack.","example_ka":"ციხესიმაგრემ შეტევა გაუძლო.","category":"history","level":"B1"},
-  {"english":"castle","georgian":"ციხე","pronunciation":"/ˈkæsəl/","example_en":"Medieval castles were defensive structures.","example_ka":"შუასაუკუნეო ციხეები დამცავი ნაგებობები იყო.","category":"history","level":"A1"},
-  {"english":"rampart","georgian":"ღობე","pronunciation":"/ˈræmpɑːrt/","example_en":"Soldiers defended from the ramparts.","example_ka":"ჯარისკაცები ღობეებიდან იცავდნენ.","category":"history","level":"C1"},
-  {"english":"moat","georgian":"თოვლისმიმი","pronunciation":"/moʊt/","example_en":"A moat surrounded the castle.","example_ka":"თოვლისმიმი ციხეს ირგვლივ ეხვია.","category":"history","level":"B2"},
-  {"english":"drawbridge","georgian":"მაწეული ხიდი","pronunciation":"/ˈdrɔːbrɪdʒ/","example_en":"The drawbridge was raised at night.","example_ka":"მაწეული ხიდი ღამით იწეოდა.","category":"history","level":"B2"},
-  {"english":"gate","georgian":"კარიბჭე","pronunciation":"/ɡeɪt/","example_en":"The city gate was heavily guarded.","example_ka":"ქალაქის კარიბჭე მძიმედ იყო დაცული.","category":"history","level":"A1"},
-  {"english":"wall","georgian":"კედელი","pronunciation":"/wɔːl/","example_en":"The city walls protected citizens.","example_ka":"ქალაქის კედლები მოქალაქეებს იცავდა.","category":"history","level":"A1"},
-  {"english":"tower","georgian":"კოშკი","pronunciation":"/ˈtaʊər/","example_en":"Guards watched from the tower.","example_ka":"მცველები კოშკიდან უყურებდნენ.","category":"history","level":"A1"},
-  {"english":"dungeon","georgian":"ციხის ქვეშეთი","pronunciation":"/ˈdʌndʒən/","example_en":"Prisoners were held in the dungeon.","example_ka":"ტყვეები ციხის ქვეშეთში იჯდნენ.","category":"history","level":"B1"},
-  {"english":"catapult","georgian":"კატაპულტი","pronunciation":"/ˈkætəpʌlt/","example_en":"They used catapults to breach walls.","example_ka":"კედლების გასარღვევად კატაპულტებს იყენებდნენ.","category":"history","level":"B1"},
-  {"english":"battering","georgian":"დარტყმითი","pronunciation":"/ˈbætərɪŋ/","example_en":"The battering ram broke the gate.","example_ka":"დარტყმითმა ძვირმა კარიბჭე გატეხა.","category":"history","level":"B2"},
-  {"english":"cannon","georgian":"ღია","pronunciation":"/ˈkænən/","example_en":"Cannons fired at the enemy ships.","example_ka":"ღიებმა მტრის გემებზე გაისროლეს.","category":"history","level":"A2"},
-  {"english":"musket","georgian":"მუშკეტი","pronunciation":"/ˈmʌskət/","example_en":"Soldiers carried muskets into battle.","example_ka":"ჯარისკაცები ბრძოლაში მუშკეტებს ატარებდნენ.","category":"history","level":"B1"},
-  {"english":"bayonet","georgian":"შტიკი","pronunciation":"/ˈbeɪənət/","example_en":"They attached bayonets to their rifles.","example_ka":"თოვლისცემლებს შტიკები მიამაგრეს.","category":"history","level":"B1"},
-  {"english":"sword","georgian":"ხმალი","pronunciation":"/sɔːrd/","example_en":"Knights fought with swords and shields.","example_ka":"ვაჟისკაცები ხმლებითა და ფარებით იბრძოდნენ.","category":"history","level":"A1"},
-  {"english":"shield","georgian":"ფარი","pronunciation":"/ʃiːld/","example_en":"The warrior raised his shield.","example_ka":"მებრძოლმა ფარი ასწია.","category":"history","level":"A1"},
-  {"english":"spear","georgian":"შუბი","pronunciation":"/spɪr/","example_en":"Ancient warriors used spears in combat.","example_ka":"ძველი მებრძოლები ბრძოლაში შუბებს იყენებდნენ.","category":"history","level":"A2"},
-  {"english":"bow","georgian":"მშვილდი","pronunciation":"/boʊ/","example_en":"Archers drew their bows.","example_ka":"მშვილდოსნებმა მშვილდები დაიჭირეს.","category":"history","level":"A1"},
-  {"english":"arrow","georgian":"ისარი","pronunciation":"/ˈæroʊ/","example_en":"The arrow hit its target.","example_ka":"ისარმა სამიზნე გაბრალა.","category":"history","level":"A1"},
-  {"english":"crossbow","georgian":"ძირხვალჩანგალი","pronunciation":"/ˈkrɔːsboʊ/","example_en":"Crossbows were powerful weapons.","example_ka":"ძირხვალჩანგლები ძლიერი იარაღი იყო.","category":"history","level":"B1"},
-  {"english":"armor","georgian":"შარვალი","pronunciation":"/ˈɑːrmər/","example_en":"Knights wore heavy armor.","example_ka":"ვაჟისკაცები მძიმე შარვალს ატარებდნენ.","category":"history","level":"A2"},
-  {"english":"helmet","georgian":"მუზარადი","pronunciation":"/ˈhelmət/","example_en":"The warrior's helmet was dented.","example_ka":"მებრძოლის მუზარადი ჩაშრეტილი იყო.","category":"history","level":"A1"},
-  {"english":"gauntlet","georgian":"ხელთათი","pronunciation":"/ˈɡɔːntlət/","example_en":"He wore iron gauntlets.","example_ka":"რკინის ხელთათები ეცვა.","category":"history","level":"B2"},
-  {"english":"banner","georgian":"ნიშანი","pronunciation":"/ˈbænər/","example_en":"The army marched under their banner.","example_ka":"ჯარი თავისი ნიშნის ქვეშ მავლდა.","category":"history","level":"B1"},
-  {"english":"flag","georgian":"დროშა","pronunciation":"/flæɡ/","example_en":"They planted the flag on the hill.","example_ka":"ბორცვზე დროშა დაარგეს.","category":"history","level":"A1"},
-  {"english":"standard","georgian":"სტანდარტი","pronunciation":"/ˈstændərd/","example_en":"The royal standard flew above the palace.","example_ka":"სამეფო სტანდარტი სასახლის ზემოთ ფრიალებდა.","category":"history","level":"B2"},
-  {"english":"emblem","georgian":"ემბლემა","pronunciation":"/ˈembləm/","example_en":"The eagle was their national emblem.","example_ka":"არწივი მათი ეროვნული ემბლემა იყო.","category":"history","level":"B1"},
-  {"english":"insignia","georgian":"ნიშანი","pronunciation":"/ɪnˈsɪɡniə/","example_en":"Officers wore military insignia.","example_ka":"ოფიცრები სამხედრო ნიშნებს ატარებდნენ.","category":"history","level":"B2"},
-  {"english":"medal","georgian":"მედალი","pronunciation":"/ˈmedəl/","example_en":"He received a medal for bravery.","example_ka":"სიმამაცისთვის მედალი მიიღო.","category":"history","level":"A2"},
-  {"english":"decoration","georgian":"ორდენი","pronunciation":"/ˌdekəˈreɪʃən/","example_en":"Military decorations honor service.","example_ka":"სამხედრო ორდენები სამსახურს პატივს სცემს.","category":"history","level":"B2"},
-  {"english":"honor","georgian":"საპატიო","pronunciation":"/ˈɑːnər/","example_en":"They fought for honor and country.","example_ka":"საპატიოსა და ქვეყნისთვის იბრძოდნენ.","category":"history","level":"A2"},
-  {"english":"glory","georgian":"დიდება","pronunciation":"/ˈɡlɔːri/","example_en":"Soldiers sought glory in battle.","example_ka":"ჯარისკაცები ბრძოლაში დიდებას ეძებდნენ.","category":"history","level":"B1"},
-  {"english":"valor","georgian":"მამაცობა","pronunciation":"/ˈvælər/","example_en":"His valor was legendary.","example_ka":"მისი მამაცობა ლეგენდარული იყო.","category":"history","level":"B2"},
-  {"english":"courage","georgian":"გულადობა","pronunciation":"/ˈkɜːrɪdʒ/","example_en":"It took courage to lead the charge.","example_ka":"შეტევის ხელმძღვანელობა გულადობას მოითხოვდა.","category":"history","level":"A2"},
-  {"english":"bravery","georgian":"სიმამაცე","pronunciation":"/ˈbreɪvəri/","example_en":"Her bravery saved many lives.","example_ka":"მისმა სიმამაცემ ბევრი სიცოცხლე გადაარჩინა.","category":"history","level":"A2"},
-  {"english":"heroism","georgian":"გმირობა","pronunciation":"/ˈhɪroʊɪzəm/","example_en":"Acts of heroism inspired others.","example_ka":"გმირული ქმედებები სხვებს შთააგონებდა.","category":"history","level":"B1"},
-  {"english":"sacrifice","georgian":"მსხვერპლი","pronunciation":"/ˈsækrəfaɪs/","example_en":"They made the ultimate sacrifice.","example_ka":"მათ უდიდესი მსხვერპლი შეწირეს.","category":"history","level":"A2"},
-  {"english":"martyrdom","georgian":"მოწამეობა","pronunciation":"/ˈmɑːrtərdəm/","example_en":"His martyrdom inspired a revolution.","example_ka":"მისმა მოწამეობამ რევოლუცია შთააგონა.","category":"history","level":"C1"},
-  {"english":"patriotism","georgian":"პატრიოტიზმი","pronunciation":"/ˈpeɪtriətɪzəm/","example_en":"Patriotism motivated the soldiers.","example_ka":"პატრიოტიზმი ჯარისკაცებს მოტივაციას აძლევდა.","category":"history","level":"B2"},
-  {"english":"nationalism","georgian":"ნაციონალიზმი","pronunciation":"/ˈnæʃənəlɪzəm/","example_en":"Nationalism fueled the conflict.","example_ka":"ნაციონალიზმმა კონფლიქტი წააქეზა.","category":"history","level":"B2"},
-  {"english":"propaganda","georgian":"პროპაგანდა","pronunciation":"/ˌprɑːpəˈɡændə/","example_en":"War propaganda influenced public opinion.","example_ka":"ომის პროპაგანდა საზოგადოებრივ აზრზე ზემოქმედებდა.","category":"history","level":"B2"},
-  {"english":"recruitment","georgian":"მობილიზება","pronunciation":"/rɪˈkruːtmənt/","example_en":"Military recruitment increased during wartime.","example_ka":"სამხედრო მობილიზება ომის დროს გაიზარდა.","category":"history","level":"B2"},
-  {"english":"conscription","georgian":"იძულებითი სამხედრო სამსახური","pronunciation":"/kənˈskrɪpʃən/","example_en":"Conscription was mandatory for young men.","example_ka":"იძულებითი სამხედრო სამსახური ახალგაზრდებისთვის სავალდებულო იყო.","category":"history","level":"C1"},
-  {"english":"draft","georgian":"მობილიზება","pronunciation":"/dræft/","example_en":"Many avoided the military draft.","example_ka":"ბევრმა სამხედრო მობილიზება აიცილა.","category":"history","level":"B1"},
-  {"english":"desertion","georgian":"დაშრატა","pronunciation":"/dɪˈzɜːrʃən/","example_en":"Desertion was punishable by death.","example_ka":"დაშრატა სიკვდილით ისჯებოდა.","category":"history","level":"B2"},
-  {"english":"mutiny","georgian":"ამბოხი","pronunciation":"/ˈmjuːtəni/","example_en":"The soldiers staged a mutiny.","example_ka":"ჯარისკაცებმა ამბოხი გაართვეს.","category":"history","level":"B2"}
+  {
+    "english": "war",
+    "georgian": "ომი",
+    "pronunciation": "/wɔːr/",
+    "example_en": "The war lasted for four years.",
+    "example_ka": "ომი ოთხი წელი გაგრძელდა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "battle",
+    "georgian": "ბრძოლა",
+    "pronunciation": "/ˈbætəl/",
+    "example_en": "The battle took place near the river.",
+    "example_ka": "ბრძოლა მდინარესთან მოხდა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "soldier",
+    "georgian": "ჯარისკაცი",
+    "pronunciation": "/ˈsoʊldʒər/",
+    "example_en": "The soldier returned home safely.",
+    "example_ka": "ჯარისკაცი უსაფრთხოდ დაბრუნდა სახლში.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "army",
+    "georgian": "არმია",
+    "pronunciation": "/ˈɑːrmi/",
+    "example_en": "The army marched through the valley.",
+    "example_ka": "არმია ხეობაში გაემართა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "peace",
+    "georgian": "მშვიდობა",
+    "pronunciation": "/piːs/",
+    "example_en": "They signed a peace treaty.",
+    "example_ka": "მათ სამშვიდობო ხელშეკრულება გააფორმეს.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "king",
+    "georgian": "მეფე",
+    "pronunciation": "/kɪŋ/",
+    "example_en": "The king ruled for thirty years.",
+    "example_ka": "მეფე ოცდაათი წელი მართავდა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "queen",
+    "georgian": "დედოფალი",
+    "pronunciation": "/kwiːn/",
+    "example_en": "The queen was known for her wisdom.",
+    "example_ka": "დედოფალი სიბრძნით იყო ცნობილი.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "empire",
+    "georgian": "იმპერია",
+    "pronunciation": "/ˈɛmpaɪər/",
+    "example_en": "The Roman Empire was vast.",
+    "example_ka": "რომის იმპერია უზარმაზარი იყო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "revolution",
+    "georgian": "რევოლუცია",
+    "pronunciation": "/ˌrɛvəˈluːʃən/",
+    "example_en": "The revolution changed the country forever.",
+    "example_ka": "რევოლუციამ ქვეყანა სამუდამოდ შეცვალა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "colony",
+    "georgian": "კოლონია",
+    "pronunciation": "/ˈkɒləni/",
+    "example_en": "The colony declared independence.",
+    "example_ka": "კოლონიამ დამოუკიდებლობა გამოაცხადა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "invasion",
+    "georgian": "შეჭრა",
+    "pronunciation": "/ɪnˈveɪʒən/",
+    "example_en": "The invasion began at dawn.",
+    "example_ka": "შეჭრა გამთენიისას დაიწყო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "weapon",
+    "georgian": "იარაღი",
+    "pronunciation": "/ˈwɛpən/",
+    "example_en": "They found ancient weapons in the cave.",
+    "example_ka": "გამოქვაბულში უძველესი იარაღი იპოვეს.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "shield",
+    "georgian": "ფარი",
+    "pronunciation": "/ʃiːld/",
+    "example_en": "The warrior raised his shield.",
+    "example_ka": "მეომარმა ფარი აიტანა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "sword",
+    "georgian": "ხმალი",
+    "pronunciation": "/sɔːrd/",
+    "example_en": "The knight drew his sword.",
+    "example_ka": "რაინდმა ხმალი იშიშვლა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "castle",
+    "georgian": "ციხესიმაგრე",
+    "pronunciation": "/ˈkæsəl/",
+    "example_en": "The castle was built in the 12th century.",
+    "example_ka": "ციხესიმაგრე მე-12 საუკუნეში აშენდა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "conquer",
+    "georgian": "დაპყრობა",
+    "pronunciation": "/ˈkɒŋkər/",
+    "example_en": "Alexander the Great conquered many lands.",
+    "example_ka": "ალექსანდრე მაკედონელმა ბევრი მიწა დაიპყრო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "defeat",
+    "georgian": "მარცხი",
+    "pronunciation": "/dɪˈfiːt/",
+    "example_en": "The defeat was devastating for the nation.",
+    "example_ka": "მარცხი ერისთვის გამანადგურებელი იყო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "victory",
+    "georgian": "გამარჯვება",
+    "pronunciation": "/ˈvɪktəri/",
+    "example_en": "They celebrated their victory.",
+    "example_ka": "მათ გამარჯვება აღნიშნეს.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "treaty",
+    "georgian": "ხელშეკრულება",
+    "pronunciation": "/ˈtriːti/",
+    "example_en": "The peace treaty ended the conflict.",
+    "example_ka": "სამშვიდობო ხელშეკრულებამ კონფლიქტი დაასრულა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "alliance",
+    "georgian": "ალიანსი",
+    "pronunciation": "/əˈlaɪəns/",
+    "example_en": "The two countries formed an alliance.",
+    "example_ka": "ორმა ქვეყანამ ალიანსი შექმნა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "surrender",
+    "georgian": "კაპიტულაცია",
+    "pronunciation": "/səˈrɛndər/",
+    "example_en": "The enemy was forced to surrender.",
+    "example_ka": "მტერი კაპიტულაციისკენ აიძულეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "siege",
+    "georgian": "ალყა",
+    "pronunciation": "/siːdʒ/",
+    "example_en": "The siege of the city lasted months.",
+    "example_ka": "ქალაქის ალყა თვეები გაგრძელდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "trench",
+    "georgian": "სანგარი",
+    "pronunciation": "/trɛntʃ/",
+    "example_en": "Soldiers lived in trenches during World War I.",
+    "example_ka": "ჯარისკაცები პირველ მსოფლიო ომში სანგრებში ცხოვრობდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "cavalry",
+    "georgian": "კავალერია",
+    "pronunciation": "/ˈkævəlri/",
+    "example_en": "The cavalry charged across the field.",
+    "example_ka": "კავალერია მინდორში გაიჭრა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "infantry",
+    "georgian": "ქვეითი ჯარი",
+    "pronunciation": "/ˈɪnfəntri/",
+    "example_en": "The infantry advanced slowly.",
+    "example_ka": "ქვეითი ჯარი ნელა მიიწევდა წინ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "general",
+    "georgian": "გენერალი",
+    "pronunciation": "/ˈdʒɛnərəl/",
+    "example_en": "The general commanded the troops.",
+    "example_ka": "გენერალი ჯარს მართავდა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "cannon",
+    "georgian": "ზარბაზანი",
+    "pronunciation": "/ˈkænən/",
+    "example_en": "The cannon fired at the enemy walls.",
+    "example_ka": "ზარბაზანმა მტრის კედლებს ესროლა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "ammunition",
+    "georgian": "საბრძოლო მასალა",
+    "pronunciation": "/ˌæmjʊˈnɪʃən/",
+    "example_en": "They were running out of ammunition.",
+    "example_ka": "საბრძოლო მასალა ელოდებოდათ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "treason",
+    "georgian": "ღალატი",
+    "pronunciation": "/ˈtriːzən/",
+    "example_en": "He was accused of treason.",
+    "example_ka": "მას ღალატში დასდეს ბრალი.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "dynasty",
+    "georgian": "დინასტია",
+    "pronunciation": "/ˈdaɪnəsti/",
+    "example_en": "The dynasty ruled for centuries.",
+    "example_ka": "დინასტია საუკუნეების განმავლობაში მართავდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "throne",
+    "georgian": "ტახტი",
+    "pronunciation": "/θroʊn/",
+    "example_en": "The prince inherited the throne.",
+    "example_ka": "უფლისწულმა ტახტი მიიღო მემკვიდრეობით.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "rebellion",
+    "georgian": "აჯანყება",
+    "pronunciation": "/rɪˈbɛljən/",
+    "example_en": "The rebellion was crushed quickly.",
+    "example_ka": "აჯანყება სწრაფად ჩაახშეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "diplomat",
+    "georgian": "დიპლომატი",
+    "pronunciation": "/ˈdɪpləmæt/",
+    "example_en": "The diplomat negotiated peace terms.",
+    "example_ka": "დიპლომატი სამშვიდობო პირობებზე მოლაპარაკებას აწარმოებდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "territory",
+    "georgian": "ტერიტორია",
+    "pronunciation": "/ˈtɛrɪtɔːri/",
+    "example_en": "They fought over disputed territory.",
+    "example_ka": "ისინი სადავო ტერიტორიისთვის იბრძოდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "medieval",
+    "georgian": "შუასაუკუნეების",
+    "pronunciation": "/ˌmɛdiˈiːvəl/",
+    "example_en": "Medieval castles are popular tourist sites.",
+    "example_ka": "შუასაუკუნეების ციხესიმაგრეები პოპულარული ტურისტული ადგილებია.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "ancient",
+    "georgian": "უძველესი",
+    "pronunciation": "/ˈeɪnʃənt/",
+    "example_en": "Ancient civilizations built impressive structures.",
+    "example_ka": "უძველესმა ცივილიზაციებმა შთამბეჭდავი ნაგებობები ააშენეს.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "emperor",
+    "georgian": "იმპერატორი",
+    "pronunciation": "/ˈɛmpərər/",
+    "example_en": "The emperor expanded the borders.",
+    "example_ka": "იმპერატორმა საზღვრები გააფართოვა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "conquest",
+    "georgian": "დაპყრობა",
+    "pronunciation": "/ˈkɒŋkwɛst/",
+    "example_en": "The conquest of new lands was brutal.",
+    "example_ka": "ახალი მიწების დაპყრობა სასტიკი იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "fortress",
+    "georgian": "ციხესიმაგრე",
+    "pronunciation": "/ˈfɔːrtrəs/",
+    "example_en": "The fortress stood on top of the hill.",
+    "example_ka": "ციხესიმაგრე გორაკის თავზე იდგა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "refugee",
+    "georgian": "ლტოლვილი",
+    "pronunciation": "/ˌrɛfjʊˈdʒiː/",
+    "example_en": "Millions became refugees during the war.",
+    "example_ka": "ომის დროს მილიონობით ადამიანი გახდა ლტოლვილი.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "ceasefire",
+    "georgian": "ცეცხლის შეწყვეტა",
+    "pronunciation": "/ˈsiːsfaɪər/",
+    "example_en": "Both sides agreed to a ceasefire.",
+    "example_ka": "ორივე მხარე ცეცხლის შეწყვეტაზე შეთანხმდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "occupation",
+    "georgian": "ოკუპაცია",
+    "pronunciation": "/ˌɒkjʊˈpeɪʃən/",
+    "example_en": "The occupation lasted for decades.",
+    "example_ka": "ოკუპაცია ათწლეულების განმავლობაში გაგრძელდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "independence",
+    "georgian": "დამოუკიდებლობა",
+    "pronunciation": "/ˌɪndɪˈpɛndəns/",
+    "example_en": "Georgia declared independence in 1991.",
+    "example_ka": "საქართველომ დამოუკიდებლობა 1991 წელს გამოაცხადა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "patriot",
+    "georgian": "პატრიოტი",
+    "pronunciation": "/ˈpeɪtriət/",
+    "example_en": "He was a true patriot of his country.",
+    "example_ka": "ის თავისი ქვეყნის ნამდვილი პატრიოტი იყო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "hero",
+    "georgian": "გმირი",
+    "pronunciation": "/ˈhɪəroʊ/",
+    "example_en": "The hero saved many lives.",
+    "example_ka": "გმირმა ბევრი სიცოცხლე გადაარჩინა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "monument",
+    "georgian": "ძეგლი",
+    "pronunciation": "/ˈmɒnjʊmənt/",
+    "example_en": "They built a monument to honor the fallen.",
+    "example_ka": "დაღუპულთა პატივსაცემად ძეგლი აღმართეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "archive",
+    "georgian": "არქივი",
+    "pronunciation": "/ˈɑːrkaɪv/",
+    "example_en": "The documents are kept in the national archive.",
+    "example_ka": "დოკუმენტები ეროვნულ არქივში ინახება.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "civilization",
+    "georgian": "ცივილიზაცია",
+    "pronunciation": "/ˌsɪvɪlaɪˈzeɪʃən/",
+    "example_en": "Greek civilization influenced the whole world.",
+    "example_ka": "ბერძნულმა ცივილიზაციამ მთელ მსოფლიოზე მოახდინა გავლენა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "archaeology",
+    "georgian": "არქეოლოგია",
+    "pronunciation": "/ˌɑːrkiˈɒlədʒi/",
+    "example_en": "Archaeology helps us understand the past.",
+    "example_ka": "არქეოლოგია წარსულის გაგებაში გვეხმარება.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "armor",
+    "georgian": "ჯავშანი",
+    "pronunciation": "/ˈɑːrmər/",
+    "example_en": "Knights wore heavy armor in battle.",
+    "example_ka": "რაინდები ბრძოლაში მძიმე ჯავშანს ატარებდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "crusade",
+    "georgian": "ჯვაროსნული ლაშქრობა",
+    "pronunciation": "/kruːˈseɪd/",
+    "example_en": "The crusades lasted for centuries.",
+    "example_ka": "ჯვაროსნული ლაშქრობები საუკუნეების განმავლობაში გრძელდებოდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "holocaust",
+    "georgian": "ჰოლოკოსტი",
+    "pronunciation": "/ˈhɑːləkɔːst/",
+    "example_en": "The holocaust was a tragedy.",
+    "example_ka": "ჰოლოკოსტი ტრაგედია იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "genocide",
+    "georgian": "გენოციდი",
+    "pronunciation": "/ˈdʒɛnəsaɪd/",
+    "example_en": "Genocide is a crime against humanity.",
+    "example_ka": "გენოციდი კაცობრიობის წინააღმდეგ ჩადენილი დანაშაულია.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "dictator",
+    "georgian": "დიქტატორი",
+    "pronunciation": "/ˈdɪkteɪtər/",
+    "example_en": "The dictator ruled with an iron fist.",
+    "example_ka": "დიქტატორი რკინის მუშტით მართავდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "democracy",
+    "georgian": "დემოკრატია",
+    "pronunciation": "/dɪˈmɑːkrəsi/",
+    "example_en": "Democracy gives people the right to vote.",
+    "example_ka": "დემოკრატია ხალხს ხმის მიცემის უფლებას აძლევს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "republic",
+    "georgian": "რესპუბლიკა",
+    "pronunciation": "/rɪˈpʌblɪk/",
+    "example_en": "France became a republic after the revolution.",
+    "example_ka": "საფრანგეთი რევოლუციის შემდეგ რესპუბლიკა გახდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "monarchy",
+    "georgian": "მონარქია",
+    "pronunciation": "/ˈmɑːnərki/",
+    "example_en": "Britain is a constitutional monarchy.",
+    "example_ka": "ბრიტანეთი საკონსტიტუციო მონარქიაა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "renaissance",
+    "georgian": "რენესანსი",
+    "pronunciation": "/rɪˈneɪsəns/",
+    "example_en": "The Renaissance was a period of great art.",
+    "example_ka": "რენესანსი დიდი ხელოვნების პერიოდი იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "reformation",
+    "georgian": "რეფორმაცია",
+    "pronunciation": "/ˌrɛfərˈmeɪʃən/",
+    "example_en": "The Protestant Reformation changed Europe.",
+    "example_ka": "პროტესტანტულმა რეფორმაციამ ევროპა შეცვალა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "enlightenment",
+    "georgian": "განმანათლებლობა",
+    "pronunciation": "/ɪnˈlaɪtənmənt/",
+    "example_en": "The Enlightenment promoted reason and science.",
+    "example_ka": "განმანათლებლობამ გონება და მეცნიერება შეაფასა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "feudalism",
+    "georgian": "ფეოდალიზმი",
+    "pronunciation": "/ˈfjuːdəlɪzəm/",
+    "example_en": "Feudalism dominated medieval Europe.",
+    "example_ka": "ფეოდალიზმი შუასაუკუნეებს ევროპაში დომინირებდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "capitalism",
+    "georgian": "კაპიტალიზმი",
+    "pronunciation": "/ˈkæpɪtəlɪzəm/",
+    "example_en": "Capitalism emerged in the modern era.",
+    "example_ka": "კაპიტალიზმი თანამედროვე ეპოქაში წარმოიშვა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "communism",
+    "georgian": "კომუნიზმი",
+    "pronunciation": "/ˈkɑːmjʊnɪzəm/",
+    "example_en": "Communism was the ideology of the Soviet Union.",
+    "example_ka": "კომუნიზმი საბჭოთა კავშირის იდეოლოგია იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "fascism",
+    "georgian": "ფაშიზმი",
+    "pronunciation": "/ˈfæʃɪzəm/",
+    "example_en": "Fascism was defeated in World War II.",
+    "example_ka": "ფაშიზმი მეორე მსოფლიო ომში დამარცხდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "imperialism",
+    "georgian": "იმპერიალიზმი",
+    "pronunciation": "/ɪmˈpɪriəlɪzəm/",
+    "example_en": "Imperialism led to the colonization of many countries.",
+    "example_ka": "იმპერიალიზმმა ბევრი ქვეყნის კოლონიზაციამდე მიყვანა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "nationalism",
+    "georgian": "ნაციონალიზმი",
+    "pronunciation": "/ˈnæʃənəlɪzəm/",
+    "example_en": "Nationalism grew stronger in the 19th century.",
+    "example_ka": "ნაციონალიზმი მე-19 საუკუნეში უფრო გაძლიერდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "socialism",
+    "georgian": "სოციალიზმი",
+    "pronunciation": "/ˈsoʊʃəlɪzəm/",
+    "example_en": "Socialism advocates for social equality.",
+    "example_ka": "სოციალიზმი სოციალურ თანასწორობას უჭერს მხარს.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "constitution",
+    "georgian": "კონსტიტუცია",
+    "pronunciation": "/ˌkɑːnstɪˈtuːʃən/",
+    "example_en": "The constitution guarantees our rights.",
+    "example_ka": "კონსტიტუცია ჩვენს უფლებებს იცავს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "parliament",
+    "georgian": "პარლამენტი",
+    "pronunciation": "/ˈpɑːrləmənt/",
+    "example_en": "Parliament makes the laws.",
+    "example_ka": "პარლამენტი კანონებს ქმნის.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "senate",
+    "georgian": "სენატი",
+    "pronunciation": "/ˈsɛnət/",
+    "example_en": "The Roman Senate was very powerful.",
+    "example_ka": "რომის სენატი ძალიან ძლიერი იყო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "congress",
+    "georgian": "კონგრესი",
+    "pronunciation": "/ˈkɑːŋɡrəs/",
+    "example_en": "Congress voted on the new law.",
+    "example_ka": "კონგრესმა ახალ კანონზე იხმო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "legion",
+    "georgian": "ლეგიონი",
+    "pronunciation": "/ˈliːdʒən/",
+    "example_en": "Roman legions conquered vast territories.",
+    "example_ka": "რომაულმა ლეგიონებმა უზარმაზარი ტერიტორიები დაიპყრეს.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "gladiator",
+    "georgian": "გლადიატორი",
+    "pronunciation": "/ˈɡlædiˌeɪtər/",
+    "example_en": "Gladiators fought in the Colosseum.",
+    "example_ka": "გლადიატორები კოლიზეუმში იბრძოდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "pharaoh",
+    "georgian": "ფარაონი",
+    "pronunciation": "/ˈfɛroʊ/",
+    "example_en": "The pharaoh was buried in a pyramid.",
+    "example_ka": "ფარაონი პირამიდაში დაკრძალეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "pyramid",
+    "georgian": "პირამიდა",
+    "pronunciation": "/ˈpɪrəmɪd/",
+    "example_en": "The Great Pyramid is in Egypt.",
+    "example_ka": "დიდი პირამიდა ეგვიპტეშია.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "mummy",
+    "georgian": "მუმია",
+    "pronunciation": "/ˈmʌmi/",
+    "example_en": "They discovered an ancient mummy.",
+    "example_ka": "უძველესი მუმია აღმოაჩინეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "tomb",
+    "georgian": "საფლავი",
+    "pronunciation": "/tuːm/",
+    "example_en": "The king's tomb was filled with treasure.",
+    "example_ka": "მეფის საფლავი განძეულით იყო სავსე.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "inscription",
+    "georgian": "წარწერა",
+    "pronunciation": "/ɪnˈskrɪpʃən/",
+    "example_en": "The inscription was written in Latin.",
+    "example_ka": "წარწერა ლათინურად იყო დაწერილი.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "manuscript",
+    "georgian": "ხელნაწერი",
+    "pronunciation": "/ˈmænjʊskrɪpt/",
+    "example_en": "Medieval manuscripts were beautifully decorated.",
+    "example_ka": "შუასაუკუნეების ხელნაწერები ლამაზად იყო შემკული.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "chronicle",
+    "georgian": "ქრონიკა",
+    "pronunciation": "/ˈkrɑːnɪkəl/",
+    "example_en": "The chronicle recorded important events.",
+    "example_ka": "ქრონიკა მნიშვნელოვან მოვლენებს აღწერდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "artifact",
+    "georgian": "არტეფაქტი",
+    "pronunciation": "/ˈɑːrtɪfækt/",
+    "example_en": "The museum displays ancient artifacts.",
+    "example_ka": "მუზეუმი უძველეს არტეფაქტებს აჩვენებს.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "excavation",
+    "georgian": "გათხრა",
+    "pronunciation": "/ˌɛkskəˈveɪʃən/",
+    "example_en": "The excavation revealed a Roman villa.",
+    "example_ka": "გათხრამ რომაული ვილა გამოავლინა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "succession",
+    "georgian": "მემკვიდრეობა",
+    "pronunciation": "/səkˈsɛʃən/",
+    "example_en": "The succession was disputed.",
+    "example_ka": "მემკვიდრეობა სადავო იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "abdication",
+    "georgian": "უარყოფა",
+    "pronunciation": "/ˌæbdɪˈkeɪʃən/",
+    "example_en": "The king's abdication shocked the nation.",
+    "example_ka": "მეფის უარყოფამ ერი გაოცა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "coronation",
+    "georgian": "კორონაცია",
+    "pronunciation": "/ˌkɔːrəˈneɪʃən/",
+    "example_en": "The coronation was a grand ceremony.",
+    "example_ka": "კორონაცია ბრწყინვალე ცერემონია იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "exile",
+    "georgian": "გადასახლება",
+    "pronunciation": "/ˈɛɡzaɪl/",
+    "example_en": "Napoleon was sent into exile.",
+    "example_ka": "ნაპოლეონი გადასახლებაში გაუშვეს.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "assassination",
+    "georgian": "მკვლელობა",
+    "pronunciation": "/əˌsæsəˈneɪʃən/",
+    "example_en": "The assassination changed history.",
+    "example_ka": "მკვლელობამ ისტორია შეცვალა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "conspiracy",
+    "georgian": "შეთქმულება",
+    "pronunciation": "/kənˈspɪrəsi/",
+    "example_en": "They uncovered a conspiracy against the king.",
+    "example_ka": "მეფის წინააღმდეგ შეთქმულება გამოავლინეს.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "espionage",
+    "georgian": "ჯაშუშობა",
+    "pronunciation": "/ˈɛspiənɑːʒ/",
+    "example_en": "Espionage played a role in the war.",
+    "example_ka": "ჯაშუშობამ ომში როლი ითამაშა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "propaganda",
+    "georgian": "პროპაგანდა",
+    "pronunciation": "/ˌprɑːpəˈɡændə/",
+    "example_en": "The government used propaganda.",
+    "example_ka": "მთავრობა პროპაგანდას იყენებდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "censorship",
+    "georgian": "ცენზურა",
+    "pronunciation": "/ˈsɛnsərʃɪp/",
+    "example_en": "Censorship limited free speech.",
+    "example_ka": "ცენზურამ სიტყვის თავისუფლება შეზღუდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "inquisition",
+    "georgian": "ინკვიზიცია",
+    "pronunciation": "/ˌɪnkwɪˈzɪʃən/",
+    "example_en": "The Inquisition persecuted heretics.",
+    "example_ka": "ინკვიზიცია მწვალებლებს ავნებდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "heresy",
+    "georgian": "მწვალებლობა",
+    "pronunciation": "/ˈhɛrəsi/",
+    "example_en": "He was accused of heresy.",
+    "example_ka": "მას მწვალებლობა დაედო ბრალი.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "martyrdom",
+    "georgian": "მოწამებრივი სიკვდილი",
+    "pronunciation": "/ˈmɑːrtərdəm/",
+    "example_en": "He chose martyrdom over betrayal.",
+    "example_ka": "მან ღალატის ნაცვლად მოწამებრივი სიკვდილი ამირჩია.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "pilgrimage",
+    "georgian": "მლოცველობა",
+    "pronunciation": "/ˈpɪlɡrəmɪdʒ/",
+    "example_en": "They went on a pilgrimage to Jerusalem.",
+    "example_ka": "იერუსალიმში მლოცველობას წავიდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "monastery",
+    "georgian": "მონასტერი",
+    "pronunciation": "/ˈmɑːnəstɛri/",
+    "example_en": "Monks lived in the monastery.",
+    "example_ka": "ბერები მონასტერში ცხოვრობდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "cathedral",
+    "georgian": "ტაძარი",
+    "pronunciation": "/kəˈθiːdrəl/",
+    "example_en": "The cathedral was built in Gothic style.",
+    "example_ka": "ტაძარი გოთური სტილით აშენდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "viking",
+    "georgian": "ვიკინგი",
+    "pronunciation": "/ˈvaɪkɪŋ/",
+    "example_en": "Vikings sailed across the ocean.",
+    "example_ka": "ვიკინგები ოკეანეს გადაცურავდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "barbarian",
+    "georgian": "ბარბაროსი",
+    "pronunciation": "/bɑːrˈbɛriən/",
+    "example_en": "Romans called them barbarians.",
+    "example_ka": "რომაელები მათ ბარბაროსებს ეძახდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "nomad",
+    "georgian": "მომთაბარე",
+    "pronunciation": "/ˈnoʊmæd/",
+    "example_en": "Nomads moved with their herds.",
+    "example_ka": "მომთაბარეები თავიანთ ნახირებთან ერთად მოძრაობდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "migration",
+    "georgian": "მიგრაცია",
+    "pronunciation": "/maɪˈɡreɪʃən/",
+    "example_en": "The great migration changed Europe.",
+    "example_ka": "დიდმა მიგრაციამ ევროპა შეცვალა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "settlement",
+    "georgian": "დასახლება",
+    "pronunciation": "/ˈsɛtəlmənt/",
+    "example_en": "They established a new settlement.",
+    "example_ka": "ახალი დასახლება დააარსეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "explorer",
+    "georgian": "მკვლევარი",
+    "pronunciation": "/ɪkˈsplɔːrər/",
+    "example_en": "The explorer discovered new lands.",
+    "example_ka": "მკვლევარმა ახალი მიწები აღმოაჩინა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "expedition",
+    "georgian": "ექსპედიცია",
+    "pronunciation": "/ˌɛkspəˈdɪʃən/",
+    "example_en": "The expedition lasted two years.",
+    "example_ka": "ექსპედიცია ორი წელი გაგრძელდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "discovery",
+    "georgian": "აღმოჩენა",
+    "pronunciation": "/dɪˈskʌvəri/",
+    "example_en": "The discovery of America changed the world.",
+    "example_ka": "ამერიკის აღმოჩენამ მსოფლიო შეცვალა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "navigation",
+    "georgian": "ნავიგაცია",
+    "pronunciation": "/ˌnævɪˈɡeɪʃən/",
+    "example_en": "Navigation improved with the compass.",
+    "example_ka": "ნავიგაცია კომპასით გაუმჯობესდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "cartography",
+    "georgian": "რუკების შედგენა",
+    "pronunciation": "/kɑːrˈtɑːɡrəfi/",
+    "example_en": "Cartography advanced during the Renaissance.",
+    "example_ka": "რუკების შედგენა რენესანსის დროს წინ წავიდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "merchant",
+    "georgian": "ვაჭარი",
+    "pronunciation": "/ˈmɜːrtʃənt/",
+    "example_en": "Merchants traded along the Silk Road.",
+    "example_ka": "ვაჭრები აბრეშუმის გზაზე ივაჭრებდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "guild",
+    "georgian": "გილდია",
+    "pronunciation": "/ɡɪld/",
+    "example_en": "Craftsmen formed guilds.",
+    "example_ka": "ხელოსნები გილდიებს ქმნიდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "apprentice",
+    "georgian": "მოწაფე",
+    "pronunciation": "/əˈprɛntəs/",
+    "example_en": "The apprentice learned from the master.",
+    "example_ka": "მოწაფე ოსტატისგან სწავლობდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "peasant",
+    "georgian": "გლეხი",
+    "pronunciation": "/ˈpɛzənt/",
+    "example_en": "Peasants worked the land.",
+    "example_ka": "გლეხები მიწას მუშაობდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "serf",
+    "georgian": "ბატონყმა",
+    "pronunciation": "/sɜːrf/",
+    "example_en": "Serfs were bound to the land.",
+    "example_ka": "ბატონყმები მიწას იყვნენ მიბმული.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "nobility",
+    "georgian": "კეთილშობილობა",
+    "pronunciation": "/noʊˈbɪləti/",
+    "example_en": "The nobility lived in luxury.",
+    "example_ka": "კეთილშობილობა ფუფუნებაში ცხოვრობდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "aristocracy",
+    "georgian": "არისტოკრატია",
+    "pronunciation": "/ˌærɪˈstɑːkrəsi/",
+    "example_en": "The aristocracy held political power.",
+    "example_ka": "არისტოკრატია პოლიტიკურ ძალაუფლებას ფლობდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "bourgeoisie",
+    "georgian": "ბურჟუაზია",
+    "pronunciation": "/ˌbʊrʒwɑːˈziː/",
+    "example_en": "The bourgeoisie emerged in cities.",
+    "example_ka": "ბურჟუაზია ქალაქებში გაჩნდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "proletariat",
+    "georgian": "პროლეტარიატი",
+    "pronunciation": "/ˌproʊləˈtɛriət/",
+    "example_en": "Marx wrote about the proletariat.",
+    "example_ka": "მარქსი პროლეტარიატზე წერდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "slavery",
+    "georgian": "მონობა",
+    "pronunciation": "/ˈsleɪvəri/",
+    "example_en": "Slavery was abolished in the 19th century.",
+    "example_ka": "მონობა მე-19 საუკუნეში გაუქმდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "emancipation",
+    "georgian": "გათავისუფლება",
+    "pronunciation": "/ɪˌmænsəˈpeɪʃən/",
+    "example_en": "Emancipation freed the slaves.",
+    "example_ka": "გათავისუფლებამ მონები გაათავისუფლა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "suffrage",
+    "georgian": "ხმის მიცემის უფლება",
+    "pronunciation": "/ˈsʌfrɪdʒ/",
+    "example_en": "Women fought for suffrage.",
+    "example_ka": "ქალები ხმის მიცემის უფლებისთვის იბრძოდნენ.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "referendum",
+    "georgian": "რეფერენდუმი",
+    "pronunciation": "/ˌrɛfəˈrɛndəm/",
+    "example_en": "The referendum decided the issue.",
+    "example_ka": "რეფერენდუმმა საკითხი გადაწყვიტა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "plebiscite",
+    "georgian": "პლებისციტი",
+    "pronunciation": "/ˈplɛbɪsaɪt/",
+    "example_en": "A plebiscite was held.",
+    "example_ka": "პლებისციტი ჩატარდა.",
+    "category": "history",
+    "level": "C1"
+  },
+  {
+    "english": "manifesto",
+    "georgian": "მანიფესტი",
+    "pronunciation": "/ˌmænəˈfɛstoʊ/",
+    "example_en": "They published a political manifesto.",
+    "example_ka": "პოლიტიკური მანიფესტი გამოაქვეყნეს.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "proclamation",
+    "georgian": "პროკლამაცია",
+    "pronunciation": "/ˌprɒkləˈmeɪʃən/",
+    "example_en": "The proclamation announced independence.",
+    "example_ka": "პროკლამაციამ დამოუკიდებლობა გამოაცხადა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "declaration",
+    "georgian": "დეკლარაცია",
+    "pronunciation": "/ˌdɛkləˈreɪʃən/",
+    "example_en": "The Declaration of Independence was signed.",
+    "example_ka": "დამოუკიდებლობის დეკლარაცია გაფორმდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "ratification",
+    "georgian": "რატიფიცირება",
+    "pronunciation": "/ˌrætəfəˈkeɪʃən/",
+    "example_en": "The treaty needed ratification.",
+    "example_ka": "ხელშეკრულება რატიფიცირებას საჭიროებდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "amendment",
+    "georgian": "შესწორება",
+    "pronunciation": "/əˈmɛndmənt/",
+    "example_en": "The First Amendment protects speech.",
+    "example_ka": "პირველი შესწორება სიტყვის თავისუფლებას იცავს.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "veto",
+    "georgian": "ვეტო",
+    "pronunciation": "/ˈviːtoʊ/",
+    "example_en": "The president used his veto power.",
+    "example_ka": "პრეზიდენტმა ვეტოს უფლება გამოიყენა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "impeachment",
+    "georgian": "იმპიჩმენტი",
+    "pronunciation": "/ɪmˈpiːtʃmənt/",
+    "example_en": "The president faced impeachment.",
+    "example_ka": "პრეზიდენტს იმპიჩმენტი ემუქრებოდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "regency",
+    "georgian": "რეგენტობა",
+    "pronunciation": "/ˈriːdʒənsi/",
+    "example_en": "A regency was established for the young king.",
+    "example_ka": "ახალგაზრდა მეფისთვის რეგენტობა დაარსდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "insurgency",
+    "georgian": "ამბოხი",
+    "pronunciation": "/ɪnˈsɜːrdʒənsi/",
+    "example_en": "The insurgency lasted for years.",
+    "example_ka": "ამბოხი წლების განმავლობაში გრძელდებოდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "guerrilla",
+    "georgian": "პარტიზანი",
+    "pronunciation": "/ɡəˈrɪlə/",
+    "example_en": "Guerrilla warfare was effective.",
+    "example_ka": "პარტიზანული ომი ეფექტური იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "mercenary",
+    "georgian": "დაქირავებული ჯარისკაცი",
+    "pronunciation": "/ˈmɜːrsənɛri/",
+    "example_en": "Mercenaries fought for money.",
+    "example_ka": "დაქირავებული ჯარისკაცები ფულისთვის იბრძოდნენ.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "conscription",
+    "georgian": "სავალდებულო სამხედრო სამსახური",
+    "pronunciation": "/kənˈskrɪpʃən/",
+    "example_en": "Conscription was introduced during the war.",
+    "example_ka": "ომის დროს სავალდებულო სამხედრო სამსახური შემოვიდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "veteran",
+    "georgian": "ვეტერანი",
+    "pronunciation": "/ˈvɛtərən/",
+    "example_en": "The veteran fought in three wars.",
+    "example_ka": "ვეტერანი სამ ომში იბრძოდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "casualty",
+    "georgian": "მსხვერპლი",
+    "pronunciation": "/ˈkæʒuəlti/",
+    "example_en": "The war had many casualties.",
+    "example_ka": "ომს ბევრი მსხვერპლი ჰყავდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "prisoner",
+    "georgian": "ტყვე",
+    "pronunciation": "/ˈprɪzənər/",
+    "example_en": "Prisoners of war were exchanged.",
+    "example_ka": "ომის ტყვეები გაცვლილი იქნენ.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "ransom",
+    "georgian": "გამოსყიდვა",
+    "pronunciation": "/ˈrænsəm/",
+    "example_en": "They demanded ransom for the prisoners.",
+    "example_ka": "ტყვეების გამოსყიდვა მოითხოვეს.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "hostage",
+    "georgian": "მძევალი",
+    "pronunciation": "/ˈhɑːstɪdʒ/",
+    "example_en": "The diplomats were taken hostage.",
+    "example_ka": "დიპლომატები მძევლად ჩაიტაცეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "captivity",
+    "georgian": "ტყვეობა",
+    "pronunciation": "/kæpˈtɪvəti/",
+    "example_en": "He spent years in captivity.",
+    "example_ka": "წლები ტყვეობაში გაატარა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "liberation",
+    "georgian": "განთავისუფლება",
+    "pronunciation": "/ˌlɪbəˈreɪʃən/",
+    "example_en": "The liberation came in spring.",
+    "example_ka": "განთავისუფლება გაზაფხულზე მოვიდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "reconstruction",
+    "georgian": "აღდგენა",
+    "pronunciation": "/ˌriːkənˈstrʌkʃən/",
+    "example_en": "Reconstruction began after the war.",
+    "example_ka": "აღდგენა ომის შემდეგ დაიწყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "reparations",
+    "georgian": "რეპარაციები",
+    "pronunciation": "/ˌrɛpəˈreɪʃənz/",
+    "example_en": "Germany paid war reparations.",
+    "example_ka": "გერმანიამ ომის რეპარაციები გადაიხადა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "armistice",
+    "georgian": "ზავი",
+    "pronunciation": "/ˈɑːrmɪstəs/",
+    "example_en": "An armistice ended the fighting.",
+    "example_ka": "ზავმა ბრძოლები შეწყვიტა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "neutrality",
+    "georgian": "ნეიტრალიტეტი",
+    "pronunciation": "/nuːˈtræləti/",
+    "example_en": "Switzerland maintained neutrality.",
+    "example_ka": "შვეიცარიამ ნეიტრალიტეტი შეინარჩუნა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "blockade",
+    "georgian": "ბლოკადა",
+    "pronunciation": "/blɑːˈkeɪd/",
+    "example_en": "The naval blockade was effective.",
+    "example_ka": "საზღვაო ბლოკადა ეფექტური იყო.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "embargo",
+    "georgian": "ემბარგო",
+    "pronunciation": "/ɪmˈbɑːrɡoʊ/",
+    "example_en": "They imposed a trade embargo.",
+    "example_ka": "სავაჭრო ემბარგო დააწესეს.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "sanctions",
+    "georgian": "სანქციები",
+    "pronunciation": "/ˈsæŋkʃənz/",
+    "example_en": "Economic sanctions were imposed.",
+    "example_ka": "ეკონომიკური სანქციები დაწესდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "ultimatum",
+    "georgian": "ულტიმატუმი",
+    "pronunciation": "/ˌʌltəˈmeɪtəm/",
+    "example_en": "The government issued an ultimatum.",
+    "example_ka": "მთავრობამ ულტიმატუმი გასცა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "artillery",
+    "georgian": "არტილერია",
+    "pronunciation": "/ɑːrˈtɪləri/",
+    "example_en": "Artillery bombarded the fortress.",
+    "example_ka": "არტილერიამ ციხესიმაგრე დაბომბა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "rampart",
+    "georgian": "ღობე",
+    "pronunciation": "/ˈræmpɑːrt/",
+    "example_en": "Soldiers defended from the ramparts.",
+    "example_ka": "ჯარისკაცები ღობეებიდან იცავდნენ.",
+    "category": "history",
+    "level": "C1"
+  },
+  {
+    "english": "moat",
+    "georgian": "თოვლისმიმი",
+    "pronunciation": "/moʊt/",
+    "example_en": "A moat surrounded the castle.",
+    "example_ka": "თოვლისმიმი ციხეს ირგვლივ ეხვია.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "drawbridge",
+    "georgian": "მაწეული ხიდი",
+    "pronunciation": "/ˈdrɔːbrɪdʒ/",
+    "example_en": "The drawbridge was raised at night.",
+    "example_ka": "მაწეული ხიდი ღამით იწეოდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "gate",
+    "georgian": "კარიბჭე",
+    "pronunciation": "/ɡeɪt/",
+    "example_en": "The city gate was heavily guarded.",
+    "example_ka": "ქალაქის კარიბჭე მძიმედ იყო დაცული.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "wall",
+    "georgian": "კედელი",
+    "pronunciation": "/wɔːl/",
+    "example_en": "The city walls protected citizens.",
+    "example_ka": "ქალაქის კედლები მოქალაქეებს იცავდა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "tower",
+    "georgian": "კოშკი",
+    "pronunciation": "/ˈtaʊər/",
+    "example_en": "Guards watched from the tower.",
+    "example_ka": "მცველები კოშკიდან უყურებდნენ.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "dungeon",
+    "georgian": "ციხის ქვეშეთი",
+    "pronunciation": "/ˈdʌndʒən/",
+    "example_en": "Prisoners were held in the dungeon.",
+    "example_ka": "ტყვეები ციხის ქვეშეთში იჯდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "catapult",
+    "georgian": "კატაპულტი",
+    "pronunciation": "/ˈkætəpʌlt/",
+    "example_en": "They used catapults to breach walls.",
+    "example_ka": "კედლების გასარღვევად კატაპულტებს იყენებდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "battering",
+    "georgian": "დარტყმითი",
+    "pronunciation": "/ˈbætərɪŋ/",
+    "example_en": "The battering ram broke the gate.",
+    "example_ka": "დარტყმითმა ძვირმა კარიბჭე გატეხა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "musket",
+    "georgian": "მუშკეტი",
+    "pronunciation": "/ˈmʌskət/",
+    "example_en": "Soldiers carried muskets into battle.",
+    "example_ka": "ჯარისკაცები ბრძოლაში მუშკეტებს ატარებდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "bayonet",
+    "georgian": "შტიკი",
+    "pronunciation": "/ˈbeɪənət/",
+    "example_en": "They attached bayonets to their rifles.",
+    "example_ka": "თოვლისცემლებს შტიკები მიამაგრეს.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "spear",
+    "georgian": "შუბი",
+    "pronunciation": "/spɪr/",
+    "example_en": "Ancient warriors used spears in combat.",
+    "example_ka": "ძველი მებრძოლები ბრძოლაში შუბებს იყენებდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "bow",
+    "georgian": "მშვილდი",
+    "pronunciation": "/boʊ/",
+    "example_en": "Archers drew their bows.",
+    "example_ka": "მშვილდოსნებმა მშვილდები დაიჭირეს.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "arrow",
+    "georgian": "ისარი",
+    "pronunciation": "/ˈæroʊ/",
+    "example_en": "The arrow hit its target.",
+    "example_ka": "ისარმა სამიზნე გაბრალა.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "crossbow",
+    "georgian": "ძირხვალჩანგალი",
+    "pronunciation": "/ˈkrɔːsboʊ/",
+    "example_en": "Crossbows were powerful weapons.",
+    "example_ka": "ძირხვალჩანგლები ძლიერი იარაღი იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "helmet",
+    "georgian": "მუზარადი",
+    "pronunciation": "/ˈhelmət/",
+    "example_en": "The warrior's helmet was dented.",
+    "example_ka": "მებრძოლის მუზარადი ჩაშრეტილი იყო.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "gauntlet",
+    "georgian": "ხელთათი",
+    "pronunciation": "/ˈɡɔːntlət/",
+    "example_en": "He wore iron gauntlets.",
+    "example_ka": "რკინის ხელთათები ეცვა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "banner",
+    "georgian": "ნიშანი",
+    "pronunciation": "/ˈbænər/",
+    "example_en": "The army marched under their banner.",
+    "example_ka": "ჯარი თავისი ნიშნის ქვეშ მავლდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "flag",
+    "georgian": "დროშა",
+    "pronunciation": "/flæɡ/",
+    "example_en": "They planted the flag on the hill.",
+    "example_ka": "ბორცვზე დროშა დაარგეს.",
+    "category": "history",
+    "level": "A1"
+  },
+  {
+    "english": "standard",
+    "georgian": "სტანდარტი",
+    "pronunciation": "/ˈstændərd/",
+    "example_en": "The royal standard flew above the palace.",
+    "example_ka": "სამეფო სტანდარტი სასახლის ზემოთ ფრიალებდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "emblem",
+    "georgian": "ემბლემა",
+    "pronunciation": "/ˈembləm/",
+    "example_en": "The eagle was their national emblem.",
+    "example_ka": "არწივი მათი ეროვნული ემბლემა იყო.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "insignia",
+    "georgian": "ნიშანი",
+    "pronunciation": "/ɪnˈsɪɡniə/",
+    "example_en": "Officers wore military insignia.",
+    "example_ka": "ოფიცრები სამხედრო ნიშნებს ატარებდნენ.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "medal",
+    "georgian": "მედალი",
+    "pronunciation": "/ˈmedəl/",
+    "example_en": "He received a medal for bravery.",
+    "example_ka": "სიმამაცისთვის მედალი მიიღო.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "decoration",
+    "georgian": "ორდენი",
+    "pronunciation": "/ˌdekəˈreɪʃən/",
+    "example_en": "Military decorations honor service.",
+    "example_ka": "სამხედრო ორდენები სამსახურს პატივს სცემს.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "honor",
+    "georgian": "საპატიო",
+    "pronunciation": "/ˈɑːnər/",
+    "example_en": "They fought for honor and country.",
+    "example_ka": "საპატიოსა და ქვეყნისთვის იბრძოდნენ.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "glory",
+    "georgian": "დიდება",
+    "pronunciation": "/ˈɡlɔːri/",
+    "example_en": "Soldiers sought glory in battle.",
+    "example_ka": "ჯარისკაცები ბრძოლაში დიდებას ეძებდნენ.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "valor",
+    "georgian": "მამაცობა",
+    "pronunciation": "/ˈvælər/",
+    "example_en": "His valor was legendary.",
+    "example_ka": "მისი მამაცობა ლეგენდარული იყო.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "courage",
+    "georgian": "გულადობა",
+    "pronunciation": "/ˈkɜːrɪdʒ/",
+    "example_en": "It took courage to lead the charge.",
+    "example_ka": "შეტევის ხელმძღვანელობა გულადობას მოითხოვდა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "bravery",
+    "georgian": "სიმამაცე",
+    "pronunciation": "/ˈbreɪvəri/",
+    "example_en": "Her bravery saved many lives.",
+    "example_ka": "მისმა სიმამაცემ ბევრი სიცოცხლე გადაარჩინა.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "heroism",
+    "georgian": "გმირობა",
+    "pronunciation": "/ˈhɪroʊɪzəm/",
+    "example_en": "Acts of heroism inspired others.",
+    "example_ka": "გმირული ქმედებები სხვებს შთააგონებდა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "sacrifice",
+    "georgian": "მსხვერპლი",
+    "pronunciation": "/ˈsækrəfaɪs/",
+    "example_en": "They made the ultimate sacrifice.",
+    "example_ka": "მათ უდიდესი მსხვერპლი შეწირეს.",
+    "category": "history",
+    "level": "A2"
+  },
+  {
+    "english": "patriotism",
+    "georgian": "პატრიოტიზმი",
+    "pronunciation": "/ˈpeɪtriətɪzəm/",
+    "example_en": "Patriotism motivated the soldiers.",
+    "example_ka": "პატრიოტიზმი ჯარისკაცებს მოტივაციას აძლევდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "recruitment",
+    "georgian": "მობილიზება",
+    "pronunciation": "/rɪˈkruːtmənt/",
+    "example_en": "Military recruitment increased during wartime.",
+    "example_ka": "სამხედრო მობილიზება ომის დროს გაიზარდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "draft",
+    "georgian": "მობილიზება",
+    "pronunciation": "/dræft/",
+    "example_en": "Many avoided the military draft.",
+    "example_ka": "ბევრმა სამხედრო მობილიზება აიცილა.",
+    "category": "history",
+    "level": "B1"
+  },
+  {
+    "english": "desertion",
+    "georgian": "დაშრატა",
+    "pronunciation": "/dɪˈzɜːrʃən/",
+    "example_en": "Desertion was punishable by death.",
+    "example_ka": "დაშრატა სიკვდილით ისჯებოდა.",
+    "category": "history",
+    "level": "B2"
+  },
+  {
+    "english": "mutiny",
+    "georgian": "ამბოხი",
+    "pronunciation": "/ˈmjuːtəni/",
+    "example_en": "The soldiers staged a mutiny.",
+    "example_ka": "ჯარისკაცებმა ამბოხი გაართვეს.",
+    "category": "history",
+    "level": "B2"
+  }
 ]

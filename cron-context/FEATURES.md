@@ -3,8 +3,8 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 3 night) — "Onboarding & Retention Engine"
-- [ ] **🎓 Onboarding Flow** — Full-screen welcome for new users, choose path + set daily goal ← Cron 3
-- [ ] **🧠 SM-2 Spaced Repetition** — Real Anki-style algorithm with intervals, due cards, review queue ← Cron 3
+- [x] **🎓 Onboarding Flow** — Full-screen welcome for new users, choose path + set daily goal ✅ Cron 2+3
+- [x] **🧠 SM-2 Spaced Repetition** — Real Anki-style algorithm with intervals, due cards, review queue ✅ Cron 2+3
 - [ ] **📊 Content Quality Audit** — Script to check all 142 deck JSONs for data issues ← Cron 4
 - [ ] **🏠 Homepage → Flashcard Flow** — Reduce friction, direct CTA to Top 2000 ← Cron 4
 - [ ] **🔔 Review Reminders** — "X cards due" + "streak at risk" banners ← Cron 4
@@ -58,6 +58,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🧠 SM-2 Engine + Per-Deck Due Badges** — Extracted SM-2 algorithm to `srs-engine.ts` reusable module. Per-deck due card count badges (amber circles) on free deck grid. Top 2000 hero shows due card reminder. Engine exports: rateCard, getNextInterval, getDueCount, getTotalDueCards, getDecksWithDueCards. (Cron 3, Mar 3)
+- ✅ **🎓 Onboarding Path Navigation** — Onboarding modal now navigates to chosen path after completion: words→Top 2000 SRS mode, grammar→/grammar/, games→/games/. Previously just closed the modal with no action. (Cron 3, Mar 3)
 - ✅ **📊 "Words I Know" Stats Banner** — 4-card gradient stats grid on DeckSelect: mastered words count, XP, streak days, level. Color-coded (green/yellow/orange/sky). Shows at top of flashcard home so users always see their progress. (Cron 3, Mar 2 afternoon)
 - ✅ **🎯 Daily Goal Setting UI** — Tappable daily goal progress bar on DeckSelect. Modal with 5 preset options (5/10/15/20/30 min) using 3D Duolingo-style buttons. Currently selected goal highlighted in green. Progress bar shows completion %. Persists via localStorage. (Cron 3, Mar 2 afternoon)
 - ✅ **🔊 Audio Autoplay Toggle** — 🔊/🔇 button in StudyScreen + SRSStudy header. Auto-plays English pronunciation when new card appears (300ms delay). Persisted in localStorage. Also added audio button + speak function to SRSStudy (was missing audio entirely). (Cron 3, Mar 2)
@@ -72,8 +74,7 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- Onboarding flow (Sprint Mar 3 night)
-- SM-2 spaced repetition (Sprint Mar 3 night)
+(none)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar
