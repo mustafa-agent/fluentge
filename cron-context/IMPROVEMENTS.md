@@ -58,8 +58,8 @@
 ## 🎯 THIS SPRINT (Mar 3 night) — "Onboarding & Retention Engine"
 - [ ] **🎓 Onboarding modal** — New user welcome flow ← Cron 3
 - [ ] **🧠 SM-2 algorithm** — Real spaced repetition with due dates ← Cron 3
-- [ ] **📊 Content audit** — Check all deck JSON files for quality ← Cron 4
-- [ ] **🏠 Homepage CTA** — Direct flow to Top 2000 for new users ← Cron 4
+- [x] **📊 Content audit** — 473 duplicates removed across 60 decks ✅ Cron 4, Mar 3
+- [x] **🏠 Homepage CTA** — Top 2000 hero CTA with direct SRS link ✅ Cron 4, Mar 3
 - [ ] **🔔 Due cards banner** — Show review reminders on flashcard home ← Cron 4
 
 ## Recently Improved ✅

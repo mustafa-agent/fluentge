@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-03
 
+### Cron 4 — Improvements (7:00 AM)
+- **📊 Content Audit — 473 duplicate cards removed across 60 decks:**
+  - Automated deduplication script across all 127 JSON deck files
+  - Worst offenders: top-2000-words (130 dupes), feelings-moods (47), seasons-holidays (24), science-math (22), family-people (21)
+  - Updated deck-index.ts cardCount for top-2000 (2000→1870)
+  - 13 "false positive" issues (eng==geo) are all valid acronyms (GPS, API, HTML, etc.)
+  - No missing english/georgian fields, no invalid JSON, no placeholder text
+  - Total cards after cleanup: ~26,595
+- **🏠 Homepage CTA — Direct flow to Top 2000:**
+  - Replaced generic 3-button onboarding CTA with Top 2000 hero CTA
+  - Amber/gold gradient card with ⭐ icon, "უფასო" + "🔥 #1 პოპულარული" badges
+  - Direct link to `/flashcards/#study/top-2000/srs` (SRS mode)
+  - Secondary buttons for Grammar A1, Games, All Categories
+  - Clear value prop: "ეს 2000 სიტყვა ყოველდღიური ინგლისურის 80%-ს ფარავს"
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **🧠 SM-2 Engine Extraction (`srs-engine.ts`):**
   - New reusable module with full SM-2 algorithm, extracted from SRSStudy.tsx
