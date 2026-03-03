@@ -15,9 +15,11 @@ const DifficultWordsScreen = lazy(() => import('./components/DifficultWordsScree
 const WordSearch = lazy(() => import('./components/WordSearch'));
 const ChallengeFriend = lazy(() => import('./components/ChallengeFriend'));
 const SpacedRepetition = lazy(() => import('./components/SpacedRepetition'));
+const SentenceBuilder = lazy(() => import('./components/SentenceBuilder'));
+const ListeningExercise = lazy(() => import('./components/ListeningExercise'));
 import LoadingSkeleton from './components/LoadingSkeleton';
 
-type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'challenge' | 'srs-dashboard' | 'difficult';
+type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'sentence' | 'listening' | 'challenge' | 'srs-dashboard' | 'difficult';
 type StudyMode = 'classic' | 'srs' | 'reverse' | 'mixed';
 
 export default function App() {
@@ -53,12 +55,16 @@ export default function App() {
     }
   }, [screen]);
 
-  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' = 'study') {
+  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' = 'study') {
     setActiveDeck(deck);
     if (mode === 'quiz') {
       setScreen('quiz');
     } else if (mode === 'typing') {
       setScreen('typing');
+    } else if (mode === 'sentence') {
+      setScreen('sentence');
+    } else if (mode === 'listening') {
+      setScreen('listening');
     } else if (mode === 'srs') {
       setStudyMode('srs');
       setScreen('study');
@@ -93,8 +99,10 @@ export default function App() {
     });
   }
 
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';
+
   return (
-    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
+    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] has-bottom-nav">
       {/* Onboarding Modal for new users */}
       {showOnboarding && <OnboardingModal onComplete={(path) => {
         setShowOnboarding(false);
@@ -237,6 +245,8 @@ export default function App() {
         )}
         {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={quizAllCards.length > 0 ? quizAllCards : activeDeck.cards} onBack={handleBack} />}
         {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
+        {screen === 'sentence' && activeDeck && <SentenceBuilder deck={activeDeck} onBack={handleBack} />}
+        {screen === 'listening' && activeDeck && <ListeningExercise deck={activeDeck} onBack={handleBack} />}
         {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
         {screen === 'difficult' && <DifficultWordsScreen onBack={handleBack} />}
         {showSearch && (
@@ -247,6 +257,32 @@ export default function App() {
         )}
         {screen === 'srs-dashboard' && <SpacedRepetition onBack={handleBack} />}
       </Suspense>
+
+      {/* Mobile Bottom Navigation */}
+      <nav className="mobile-bottom-nav">
+        <div className="mobile-bottom-nav-inner">
+          <a href="/" className={currentPath === '/' ? 'active' : ''}>
+            <span className="nav-icon">🏠</span>
+            <span>მთავარი</span>
+          </a>
+          <a href="/flashcards/" className="active">
+            <span className="nav-icon">📚</span>
+            <span>სიტყვები</span>
+          </a>
+          <a href="/grammar/">
+            <span className="nav-icon">📖</span>
+            <span>გრამატიკა</span>
+          </a>
+          <a href="/games/">
+            <span className="nav-icon">🎮</span>
+            <span>თამაშები</span>
+          </a>
+          <a href="/dashboard/">
+            <span className="nav-icon">👤</span>
+            <span>პროფილი</span>
+          </a>
+        </div>
+      </nav>
     </div>
   );
 }

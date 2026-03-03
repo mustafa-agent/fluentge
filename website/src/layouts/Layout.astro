@@ -106,9 +106,9 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           <button id="menu-toggle" class="lg:hidden text-white p-1" aria-label="მენიუ">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
           </button>
-          <a href="/login/" id="nav-login" class="text-sm border border-[#2E2E30] px-4 py-1.5 rounded-lg hover:bg-[#242426] transition-colors flex items-center gap-1.5">
+          <a href="/login/" id="nav-login" class="text-sm border border-[#2E2E30] px-4 py-1.5 rounded-lg hover:bg-[#242426] transition-colors flex items-center gap-1.5" title="შესვლა">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            შესვლა
+            <span class="hidden sm:inline">შესვლა</span>
           </a>
           <a href="/account/" id="nav-account" class="hidden text-sm border border-[#2E2E30] px-4 py-1.5 rounded-lg hover:bg-[#242426] transition-colors flex items-center gap-1.5" title="ანგარიში">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -273,7 +273,43 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
       });
       window.__fluentgeSync = { save: () => uid && saveCloud(uid), load: () => uid && loadCloud(uid) };
     </script>
-    <main class="pt-14"><slot /></main>
+    <main class="pt-14 mobile-body-pad"><slot /></main>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav" id="mobileNav">
+      <div class="mobile-bottom-nav-inner">
+        <a href="/" class="mobile-nav-item" data-path="/">
+          <span class="nav-icon">🏠</span>
+          <span>მთავარი</span>
+        </a>
+        <a href="/flashcards/" class="mobile-nav-item" data-path="/flashcards">
+          <span class="nav-icon">📚</span>
+          <span>სიტყვები</span>
+        </a>
+        <a href="/grammar/" class="mobile-nav-item" data-path="/grammar">
+          <span class="nav-icon">📖</span>
+          <span>გრამატიკა</span>
+        </a>
+        <a href="/games/" class="mobile-nav-item" data-path="/games">
+          <span class="nav-icon">🎮</span>
+          <span>თამაშები</span>
+        </a>
+        <a href="/dashboard/" class="mobile-nav-item" data-path="/dashboard">
+          <span class="nav-icon">👤</span>
+          <span>პროფილი</span>
+        </a>
+      </div>
+    </nav>
+    <script>
+      // Highlight active nav item
+      const path = window.location.pathname;
+      document.querySelectorAll('.mobile-nav-item').forEach(el => {
+        const dp = el.getAttribute('data-path') || '';
+        if (path === dp || path === dp + '/' || (dp !== '/' && path.startsWith(dp))) {
+          el.classList.add('active');
+        }
+      });
+    </script>
 
     <footer class="border-t border-[#2E2E30] mt-20 bg-[#161618]">
       <div class="max-w-5xl mx-auto px-4 py-12">

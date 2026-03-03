@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 3 night) — "Onboarding & Retention Engine"
-- [x] **🎓 Onboarding Flow** — Full-screen welcome for new users, choose path + set daily goal ✅ Cron 2+3
-- [x] **🧠 SM-2 Spaced Repetition** — Real Anki-style algorithm with intervals, due cards, review queue ✅ Cron 2+3
-- [ ] **📊 Content Quality Audit** — Script to check all 142 deck JSONs for data issues ← Cron 4
-- [ ] **🏠 Homepage → Flashcard Flow** — Reduce friction, direct CTA to Top 2000 ← Cron 4
-- [ ] **🔔 Review Reminders** — "X cards due" + "streak at risk" banners ← Cron 4
+### 🎯 THIS SPRINT (Mar 4 night) — "Sentence Exercises & Mobile Polish"
+- [ ] **📝 Sentence Builder** — Arrange English word tiles to form sentences from Georgian prompt ← Cron 3
+- [ ] **🎧 Listening Exercise** — Hear English audio, pick correct Georgian translation ← Cron 3
+- [ ] **📱 Mobile Bottom Navigation** — Fixed bottom bar with 5 tabs on mobile ← Cron 4
+- [ ] **📲 PWA Install Banner** — Prompt mobile users to add to home screen ← Cron 4
+- [ ] **📈 Progress Chart** — 7-day words-learned chart on dashboard ← Cron 4
 
 ### Flashcard Improvements
 - [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
@@ -74,7 +74,8 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-(none)
+- 🔄 **📝 Sentence Builder** — Word-tile sentence ordering exercise (Cron 3, Mar 4)
+- 🔄 **🎧 Listening Exercise** — Audio-based multiple choice (Cron 3, Mar 4)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

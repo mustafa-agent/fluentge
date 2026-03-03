@@ -6,7 +6,7 @@ import { getTotalXP, calculateLevel, getCurrentStreak, getDailyGoal, setDailyGoa
 import { getDueCount, getTotalDueCards } from '../lib/srs-engine';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening') => void;
 }
 
 const modes = [
@@ -16,6 +16,8 @@ const modes = [
   { id: 'srs' as const, label: 'გადახედვა', icon: '🃏', desc: 'გადააბრუნე და შეაფასე' },
   { id: 'quiz' as const, label: 'ქვიზი', icon: '⚡', desc: 'აირჩიე სწორი 4-დან' },
   { id: 'typing' as const, label: 'წერა', icon: '✍️', desc: 'ჩაწერე თარგმანი · +25 XP' },
+  { id: 'sentence' as const, label: 'წინადადება', icon: '🔤', desc: 'დაალაგე სიტყვები · +15 XP' },
+  { id: 'listening' as const, label: 'მოსმენა', icon: '🎧', desc: 'მოისმინე და აირჩიე · +10 XP' },
 ];
 
 export default function DeckSelect({ onSelect }: Props) {
@@ -144,7 +146,7 @@ export default function DeckSelect({ onSelect }: Props) {
             <button
               key={m.id}
               onClick={() => onSelect(loadedDeck, m.id)}
-              className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-4 text-center transition-colors border border-white/5 hover:border-white/10"
+              className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-4 text-center transition-all border-2 border-white/10 border-b-4 border-b-white/15 active:border-b-2 active:mt-[2px] hover:scale-[1.03]"
             >
               <span className="text-2xl block mb-1">{m.icon}</span>
               <span className="text-sm font-medium">{m.label}</span>

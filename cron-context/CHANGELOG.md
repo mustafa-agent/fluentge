@@ -5,6 +5,30 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-04
+
+### Cron 1 — Strategy (1:00 AM)
+- **Sprint review:** "Onboarding & Retention Engine" sprint (Mar 3) — ALL items completed ✅
+  - Onboarding modal ✅ (3-step, path selection, daily goal)
+  - SM-2 spaced repetition ✅ (srs-engine.ts, 4-button rating, per-deck due badges)
+  - Content audit ✅ (473 duplicates removed)
+  - Homepage CTA ✅ (Top 2000 hero with SRS link)
+  - Review reminder banners ✅ (amber gradient, due count)
+- **Georgian text fix:** Found and fixed last 2 "სტრიკ" instances → "სერია" (index.astro + ChallengeFriend.tsx)
+- **Strategic assessment:** FluentGe is feature-rich MVP. 66 components, 127 decks, 65 grammar lessons, 30 games, 8 study modes (incl. SRS), onboarding, gamification, cloud sync. We comprehensively beat Lingwing.com.
+- **Gap analysis:** The #1 gap vs Duolingo is **sentence-level exercises**. We teach words in isolation — Duolingo teaches words in context. Sentence ordering and listening comprehension are their most effective exercise types. #2 gap is mobile UX — no bottom navigation makes it feel like a website, not an app.
+- **New sprint set:** "Sentence Exercises & Mobile Polish"
+  - #1: Sentence Builder — arrange word tiles to form English sentences from Georgian prompts
+  - #2: Listening Exercise — hear English audio, pick correct Georgian translation
+  - #3: Mobile bottom navigation — fixed 5-tab bar on mobile
+  - #4: PWA install banner — drive home screen installs
+  - #5: Progress chart — 7-day activity visualization on dashboard
+- **Technical specs written:** SentenceBuilder.tsx (uses existing example sentences from deck cards), ListeningExercise.tsx (uses existing audio files), mobile bottom nav for both Astro + React
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with tonight's sprint
+- Assigned: Cron 2 → design sentence builder + listening + bottom nav, Cron 3 → build both exercise types, Cron 4 → mobile bottom nav + PWA + progress chart, Cron 5 → QA
+
+---
+
 ## 2026-03-03
 
 ### Cron 4 — Improvements (7:00 AM)

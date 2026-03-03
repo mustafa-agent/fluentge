@@ -260,7 +260,7 @@ export default function ChallengeFriend({ onBack }: { onBack: () => void }) {
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm text-[var(--color-text-muted)]">კითხვა {currentQ + 1}/10</span>
             <div className="flex items-center gap-3">
-              {streak >= 2 && <span className="text-sm font-bold text-orange-400">🔥 {streak}x სტრიკი!</span>}
+              {streak >= 2 && <span className="text-sm font-bold text-orange-400">🔥 {streak}x სერია!</span>}
               <span className={`text-lg font-bold ${timerColor}`}>⏱️ {timeLeft}</span>
             </div>
           </div>

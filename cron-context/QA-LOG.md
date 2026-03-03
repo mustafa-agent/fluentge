@@ -1,9 +1,22 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-03 (9:00 AM)
-- **Status:** 🔴 CRITICAL BUG FOUND & FIXED (again!)
-- **Issues Found:** 1 critical, 0 minor
+- **Date:** 2026-03-03 (7:30 PM — Evening Pass)
+- **Status:** ✅ ALL CLEAR
+- **Issues Found:** 0
+
+## Evening QA Run (Mar 3, 7:30 PM)
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Browser Screenshots — ✅ All Rendering
+- **Homepage:** Hero, Top 2000 CTA, Word of Day, testimonials, feature cards — all clean
+- **Flashcards:** Stats bar, onboarding banners, Top 2000 hero, 73 decks, free/premium — all correct
+- **Games:** Stats bar, 30 game cards, free/premium labels, footer — all rendering
+
+### Verdict
+No new changes since morning QA. Site stable. No regressions.
 
 ## What Was Tested (Mar 3, Morning — 9:00 AM)
 

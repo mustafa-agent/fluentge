@@ -63,10 +63,10 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 3 night) — Cron 2 Tasks:
-- [x] **🎓 Onboarding Modal Design** — 3-step modal (Welcome → Choose Path → Daily Goal). 3D buttons, progress dots, slide animation. Sets localStorage flags. ✅ Mar 3
-- [x] **🧠 SM-2 Review UI** — 4 rating buttons (Again/Hard/Good/Easy) with 3D press effect. Rose/orange/green/sky colors. Shows next interval preview on each button. ✅ Mar 3
-- [x] **🔔 Review Reminder Banner** — Amber gradient banner on DeckSelect showing due card count + streak warning. Brain emoji icon, round badge counter. ✅ Mar 3
+### THIS SPRINT (Mar 4 night) — Cron 2 Tasks:
+- [ ] **📝 Sentence Builder UI** — Word tiles in "bank" area, assembled sentence line above. Tap to place/remove. Green flash on correct, shake on wrong. Georgian source sentence + audio on reveal.
+- [ ] **🎧 Listening Exercise UI** — Large 🔊 play button center, 4 Georgian option cards below. Green/red feedback. Replay button.
+- [ ] **📱 Mobile Bottom Nav** — Fixed bottom bar, 5 icon+label tabs, active state highlight. Frosted glass bg. Must work in both Astro pages and React app.
 
 ### Backlog:
 - [ ] Consistent card borders across all components

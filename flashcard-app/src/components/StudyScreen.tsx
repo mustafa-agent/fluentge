@@ -599,7 +599,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
       <div
         onClick={handleCardTap}
         {...swipeHandlers}
-        className="bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[280px] flex flex-col items-center justify-center cursor-pointer select-none transition-all hover:bg-[var(--color-bg-card-hover)]"
+        className="bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[280px] flex flex-col items-center justify-center cursor-pointer select-none transition-all hover:bg-[var(--color-bg-card-hover)] border-2 border-white/10 border-b-4 border-b-white/15 shadow-lg"
         style={{ transform: swipeOffset ? `translateX(${swipeOffset}px) rotate(${swipeOffset * 0.05}deg)` : undefined, transition: swipeOffset ? 'none' : 'transform 0.3s ease' }}
       >
         <div className="flex items-center gap-3 mb-2">
@@ -689,11 +689,11 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
             onChange={(e) => setGuess(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleGuess()}
             placeholder={placeholderText}
-            className="flex-1 bg-[var(--color-bg-card)] border border-white/10 rounded-xl px-4 py-3 text-[var(--color-text)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-primary)] transition-colors"
+            className="typing-input flex-1"
           />
           <button
             onClick={handleGuess}
-            className="bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold px-5 py-3 rounded-xl transition-colors"
+            className="bg-sky-500 hover:bg-sky-600 text-white font-bold px-5 py-3 rounded-xl transition-all border-b-4 border-sky-700 active:border-b-0 active:mt-1 uppercase tracking-wide text-sm"
           >
             შემოწმება
           </button>
@@ -705,7 +705,11 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
         <div className="mt-6">
           <button
             onClick={handleNext}
-            className="w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold py-3 rounded-xl transition-colors"
+            className={`w-full font-bold py-3 rounded-xl transition-all border-b-4 active:border-b-0 active:mt-1 uppercase tracking-wide ${
+              guessResult === 'correct'
+                ? 'bg-green-500 hover:bg-green-600 border-green-700 text-white'
+                : 'bg-rose-500 hover:bg-rose-600 border-rose-700 text-white'
+            }`}
           >
             {guessResult === 'correct' ? 'შემდეგი →' : 'შემდეგი → (ისევ გამეორდება)'}
           </button>

@@ -55,12 +55,11 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 3 night) — "Onboarding & Retention Engine"
-- [ ] **🎓 Onboarding modal** — New user welcome flow ← Cron 3
-- [ ] **🧠 SM-2 algorithm** — Real spaced repetition with due dates ← Cron 3
-- [x] **📊 Content audit** — 473 duplicates removed across 60 decks ✅ Cron 4, Mar 3
-- [x] **🏠 Homepage CTA** — Top 2000 hero CTA with direct SRS link ✅ Cron 4, Mar 3
-- [ ] **🔔 Due cards banner** — Show review reminders on flashcard home ← Cron 4
+## 🎯 THIS SPRINT (Mar 4 night) — "Sentence Exercises & Mobile Polish"
+- [ ] **📱 Mobile Bottom Navigation** — Fixed bottom bar on mobile ← Cron 4
+- [ ] **📲 PWA Install Banner** — "Add to Home Screen" prompt ← Cron 4
+- [ ] **📈 Progress Chart** — 7-day activity chart on dashboard ← Cron 4
+- [ ] **🇬🇪 Fix remaining "სტრიკ"** — ✅ Fixed in homepage + ChallengeFriend (Cron 1, Mar 4)
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
@@ -71,8 +70,8 @@
 - [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-- Onboarding flow (Sprint Mar 3 night)
-- SM-2 spaced repetition (Sprint Mar 3 night)
+- Mobile bottom navigation (Sprint Mar 4 night)
+- PWA install banner (Sprint Mar 4 night)
 
 ## Completed Last Sprint ✅ (Mar 2 — "Top 2000 Spotlight & Polish")
 - Top 2000 hero card ✅ Cron 2B, Mar 2
