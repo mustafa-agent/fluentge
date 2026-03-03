@@ -1,30 +1,10 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import type { FlashCard } from '../lib/cards';
 import { addXP, addStudyTime, updateStreak, XP_REWARDS } from '../lib/gamification';
-
-interface SRSData {
-  interval: number;
-  easeFactor: number;
-  nextReview: number;
-  repetitions: number;
-  lastSeen: number;
-}
-
-interface SRSStore {
-  [word: string]: SRSData;
-}
-
-const SRS_KEY_PREFIX = 'fluentge-srs-';
-
-function getSRSStore(deckId: string): SRSStore {
-  try {
-    return JSON.parse(localStorage.getItem(SRS_KEY_PREFIX + deckId) || '{}');
-  } catch { return {}; }
-}
-
-function saveSRSStore(deckId: string, store: SRSStore) {
-  localStorage.setItem(SRS_KEY_PREFIX + deckId, JSON.stringify(store));
-}
+import {
+  type SRSStore, type Rating, type CardSRS,
+  getSRSStore, saveSRSStore, rateCard, getNextInterval, getLearnedCount,
+} from '../lib/srs-engine';
 
 function addToKnownCards(word: string, georgian: string) {
   try {
@@ -40,39 +20,27 @@ function addToKnownCards(word: string, georgian: string) {
 function pickNextCard(allCards: FlashCard[], store: SRSStore, lastWord?: string): FlashCard {
   const now = Date.now();
   
-  // Calculate weight for each card
   const weighted = allCards.map(card => {
     const data = store[card.english];
     let weight: number;
     
-    if (!data) {
-      // Never seen — medium-high weight
-      weight = 5;
-    } else if (data.repetitions === 0) {
-      // Seen but not learned — highest weight
-      weight = 10;
-    } else if (data.nextReview <= now) {
-      // Due for review — high weight
-      weight = 8;
-    } else {
-      // Known — low weight based on how well known
-      // More repetitions = lower weight
+    if (!data) { weight = 5; }
+    else if (data.repetitions === 0) { weight = 10; }
+    else if (data.nextReview <= now) { weight = 8; }
+    else {
       weight = Math.max(0.5, 3 - data.repetitions * 0.5);
-      // Lower ease factor = higher weight (harder words)
       weight *= Math.max(0.5, 3 - data.easeFactor);
     }
     
     return { card, weight };
   });
   
-  // Filter out last shown word to avoid immediate repeat
   const filtered = lastWord 
     ? weighted.filter(w => w.card.english !== lastWord)
     : weighted;
   
   const pool = filtered.length > 0 ? filtered : weighted;
   
-  // Weighted random selection
   const totalWeight = pool.reduce((sum, w) => sum + w.weight, 0);
   let random = Math.random() * totalWeight;
   
@@ -82,78 +50,6 @@ function pickNextCard(allCards: FlashCard[], store: SRSStore, lastWord?: string)
   }
   
   return pool[pool.length - 1].card;
-}
-
-type Rating = 'again' | 'hard' | 'good' | 'easy';
-
-function getNextInterval(data: SRSData, rating: Rating): string {
-  const DAY = 86400000;
-  switch (rating) {
-    case 'again': return '1წთ';
-    case 'hard': {
-      const d = Math.max(1, Math.round((data.interval || 1) * 0.5));
-      return d === 1 ? '1დ' : `${d}დ`;
-    }
-    case 'good': {
-      const r = data.repetitions || 0;
-      if (r <= 0) return '1დ';
-      if (r === 1) return '3დ';
-      return `${Math.round((data.interval || 1) * data.easeFactor)}დ`;
-    }
-    case 'easy': {
-      const r = data.repetitions || 0;
-      if (r <= 0) return '3დ';
-      return `${Math.round((data.interval || 1) * data.easeFactor * 1.3)}დ`;
-    }
-  }
-}
-
-function rateCard(store: SRSStore, word: string, rating: Rating): SRSStore {
-  const data = store[word] || {
-    interval: 0,
-    easeFactor: 2.5,
-    nextReview: 0,
-    repetitions: 0,
-    lastSeen: 0,
-  };
-  const now = Date.now();
-  const DAY = 86400000;
-  
-  switch (rating) {
-    case 'easy':
-      data.repetitions++;
-      if (data.repetitions === 1) data.interval = 3;
-      else data.interval = Math.round(data.interval * data.easeFactor * 1.3);
-      data.easeFactor = Math.min(3.0, data.easeFactor + 0.15);
-      data.nextReview = now + data.interval * DAY;
-      break;
-    case 'good':
-      data.repetitions++;
-      if (data.repetitions === 1) data.interval = 1;
-      else if (data.repetitions === 2) data.interval = 3;
-      else data.interval = Math.round(data.interval * data.easeFactor);
-      data.easeFactor = Math.min(3.0, data.easeFactor + 0.1);
-      data.nextReview = now + data.interval * DAY;
-      break;
-    case 'hard':
-      data.interval = Math.max(1, Math.round(data.interval * 0.5));
-      data.easeFactor = Math.max(1.3, data.easeFactor - 0.15);
-      data.nextReview = now + data.interval * DAY;
-      break;
-    case 'again':
-      data.repetitions = 0;
-      data.interval = 0;
-      data.easeFactor = Math.max(1.3, data.easeFactor - 0.2);
-      data.nextReview = now + 60000;
-      break;
-  }
-  
-  data.lastSeen = now;
-  return { ...store, [word]: data };
-}
-
-function getLearnedCount(store: SRSStore): number {
-  return Object.values(store).filter(d => d.repetitions >= 2).length;
 }
 
 interface Props {
@@ -350,7 +246,7 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
                 >
                   <span className="block text-base mb-0.5">❌</span>
                   თავიდან
-                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'again')}</span>
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english], 'again')}</span>
                 </button>
                 <button
                   onClick={() => handleRate('hard')}
@@ -358,7 +254,7 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
                 >
                   <span className="block text-base mb-0.5">🤔</span>
                   რთული
-                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'hard')}</span>
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english], 'hard')}</span>
                 </button>
                 <button
                   onClick={() => handleRate('good')}
@@ -366,7 +262,7 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
                 >
                   <span className="block text-base mb-0.5">👍</span>
                   კარგი
-                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'good')}</span>
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english], 'good')}</span>
                 </button>
                 <button
                   onClick={() => handleRate('easy')}
@@ -374,7 +270,7 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
                 >
                   <span className="block text-base mb-0.5">🎯</span>
                   ადვილი
-                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english] || { interval: 0, easeFactor: 2.5, nextReview: 0, repetitions: 0, lastSeen: 0 }, 'easy')}</span>
+                  <span className="block text-[10px] font-normal opacity-70 mt-0.5">{getNextInterval(store[currentCard.english], 'easy')}</span>
                 </button>
               </div>
             </>

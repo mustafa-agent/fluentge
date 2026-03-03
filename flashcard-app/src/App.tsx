@@ -96,7 +96,26 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
       {/* Onboarding Modal for new users */}
-      {showOnboarding && <OnboardingModal onComplete={() => setShowOnboarding(false)} />}
+      {showOnboarding && <OnboardingModal onComplete={(path) => {
+        setShowOnboarding(false);
+        if (path === 'grammar') {
+          window.location.href = '/grammar/';
+        } else if (path === 'games') {
+          window.location.href = '/games/';
+        } else if (path === 'words') {
+          // Auto-select Top 2000 deck
+          const top2000Meta = deckIndex.find(d => d.id === 'top-2000');
+          if (top2000Meta) {
+            loadDeck(top2000Meta.id).then(deck => {
+              if (deck) {
+                setActiveDeck(deck);
+                setStudyMode('srs');
+                setScreen('study');
+              }
+            });
+          }
+        }
+      }} />}
       {/* Header */}
       <header className="px-4 py-4 border-b border-white/10">
         <div className="max-w-lg mx-auto flex items-center justify-between gap-6">

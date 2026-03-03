@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { deckIndex, isDeckFree, type DeckMeta } from '../lib/deck-index';
 import { loadDeck, type Deck } from '../lib/deck-loader';
 import { getAllProgress } from '../lib/storage';
 import { getTotalXP, calculateLevel, getCurrentStreak, getDailyGoal, setDailyGoal, getTodayStudyTime } from '../lib/gamification';
+import { getDueCount, getTotalDueCards } from '../lib/srs-engine';
 
 interface Props {
   onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed') => void;
@@ -159,19 +160,17 @@ export default function DeckSelect({ onSelect }: Props) {
   const freeDecksFiltered = freeDecks.filter(d => d.id !== 'top-2000');
 
   // Count due SRS cards across all decks
-  const totalDueCards = (() => {
-    let due = 0;
-    const now = Date.now();
+  const totalDueCards = getTotalDueCards();
+
+  // Per-deck due counts (memoized for grid badges)
+  const deckDueCounts = useMemo(() => {
+    const map: Record<string, number> = {};
     for (const meta of deckIndex) {
-      try {
-        const store = JSON.parse(localStorage.getItem(`fluentge-srs-${meta.id}`) || '{}');
-        for (const data of Object.values(store) as any[]) {
-          if (data.nextReview && data.nextReview <= now && data.repetitions > 0) due++;
-        }
-      } catch {}
+      const c = getDueCount(meta.id);
+      if (c > 0) map[meta.id] = c;
     }
-    return due;
-  })();
+    return map;
+  }, []);
 
   // Words I Know counter
   const totalMastered = Object.values(progress).filter(p => p.repetitions >= 1).length;
@@ -312,6 +311,9 @@ export default function DeckSelect({ onSelect }: Props) {
               <h2 className="text-lg font-extrabold text-white leading-tight">ტოპ 2000 სიტყვა</h2>
               <p className="text-white/80 text-xs mt-0.5">ყველაზე მნიშვნელოვანი ინგლისური სიტყვები · 2000 ბარათი</p>
               <p className="text-white/60 text-[10px] mt-1">📊 ფარავს ინგლისური საუბრის ~80%-ს</p>
+              {deckDueCounts['top-2000'] && (
+                <p className="text-yellow-200 text-[10px] mt-1 font-semibold">🧠 {deckDueCounts['top-2000']} ბარათი გადასახედია</p>
+              )}
             </div>
             <div className="flex-shrink-0 bg-white/20 rounded-xl p-2.5 border-b-4 border-white/10 group-hover:bg-white/30 transition-colors">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
@@ -334,6 +336,11 @@ export default function DeckSelect({ onSelect }: Props) {
           >
             <img src={meta.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20"></div>
+            {deckDueCounts[meta.id] && (
+              <div className="absolute top-1.5 right-1.5 z-10 bg-amber-500 text-white text-[9px] font-bold min-w-[18px] h-[18px] rounded-full flex items-center justify-center px-1 shadow-lg">
+                {deckDueCounts[meta.id]}
+              </div>
+            )}
             <div className="relative p-3 overflow-hidden">
               <span className="text-2xl block mb-1">{meta.icon}</span>
               <p className="text-[11px] font-semibold leading-tight mb-1 text-white line-clamp-2 break-words">{meta.nameKa}</p>

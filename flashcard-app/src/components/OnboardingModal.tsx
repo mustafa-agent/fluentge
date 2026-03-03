@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { setDailyGoal } from '../lib/gamification';
 
 interface Props {
-  onComplete: () => void;
+  onComplete: (path: string | null) => void;
 }
 
 export default function OnboardingModal({ onComplete }: Props) {
@@ -30,7 +30,7 @@ export default function OnboardingModal({ onComplete }: Props) {
     if (selectedPath) {
       localStorage.setItem('fluentge-path', selectedPath);
     }
-    onComplete();
+    onComplete(selectedPath);
   }
 
   return (

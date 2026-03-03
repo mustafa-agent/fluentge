@@ -64,9 +64,9 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 3 night) — Cron 2 Tasks:
-- [ ] **🎓 Onboarding Modal Design** — Full-screen overlay, dark backdrop, centered card with steps. Step 1: Welcome with 👋. Step 2: 3 path cards (Words/Grammar/Games) with icons. Step 3: Daily goal picker. Smooth step transitions. Use existing 3D button style.
-- [ ] **🧠 SM-2 Review UI** — 4 rating buttons (Again/Hard/Good/Easy) with color coding (red/orange/green/blue). Due cards badge on deck cards. "Due for Review" section on dashboard.
-- [ ] **🔔 Review Reminder Banner** — Gradient banner at top of DeckSelect showing due card count + streak warning.
+- [x] **🎓 Onboarding Modal Design** — 3-step modal (Welcome → Choose Path → Daily Goal). 3D buttons, progress dots, slide animation. Sets localStorage flags. ✅ Mar 3
+- [x] **🧠 SM-2 Review UI** — 4 rating buttons (Again/Hard/Good/Easy) with 3D press effect. Rose/orange/green/sky colors. Shows next interval preview on each button. ✅ Mar 3
+- [x] **🔔 Review Reminder Banner** — Amber gradient banner on DeckSelect showing due card count + streak warning. Brain emoji icon, round badge counter. ✅ Mar 3
 
 ### Backlog:
 - [ ] Consistent card borders across all components

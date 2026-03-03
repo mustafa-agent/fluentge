@@ -7,6 +7,28 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-03
 
+### Cron 2 — Design (3:00 AM)
+- **🎓 Onboarding Modal (`OnboardingModal.tsx`):**
+  - 3-step flow: Welcome (👋) → Choose Path (Words/Grammar/Games) → Daily Goal (5-30 min)
+  - Progress dots at top, slide animation between steps
+  - 3D Duolingo-style buttons throughout (border-b-4 press effect)
+  - Badge pills: უფასო, ქართულად, სახალისო
+  - Sets `fluentge-onboarded` + `fluentge-path` in localStorage
+  - Integrated into App.tsx — shows only for new users
+- **🧠 SM-2 4-Button Review UI (SRSStudy.tsx):**
+  - Upgraded from 3 buttons (again/hard/know) to 4 SM-2 buttons (Again/Hard/Good/Easy)
+  - 3D press effect with vibrant colors: rose-500, orange-500, green-500, sky-500
+  - Each button shows next interval preview (1წთ, 1დ, 3დ, etc.)
+  - New `getNextInterval()` function calculates preview based on current card state
+  - "Easy" gives bonus interval (1.3x multiplier) + 5 extra XP
+- **🔔 Review Reminder Banner (DeckSelect.tsx):**
+  - Amber gradient banner appears when due SRS cards exist
+  - Scans all deck SRS stores in localStorage for overdue cards
+  - Shows 🧠 icon, due count in round badge, streak warning text
+  - Placed between daily goal bar and Top 2000 hero card
+- **CSS additions:** Onboarding slide-up animation, step fade, light mode overrides
+- Deployed ✅, verified via screenshot (deployment URL), git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Top 2000 Spotlight & Polish" sprint (Mar 2) — ALL items completed ✅
   - Top 2000 hero card ✅ (amber gradient, free, hero position)
