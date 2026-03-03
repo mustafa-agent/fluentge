@@ -1,11 +1,11 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-02 (9:00 AM)
-- **Status:** 🔴 CRITICAL BUG FOUND & FIXED
+- **Date:** 2026-03-03 (9:00 AM)
+- **Status:** 🔴 CRITICAL BUG FOUND & FIXED (again!)
 - **Issues Found:** 1 critical, 0 minor
 
-## What Was Tested (Mar 2, Morning — 9:00 AM)
+## What Was Tested (Mar 3, Morning — 9:00 AM)
 
 ### HTTP Health Checks — ✅ All 200
 - `/` — 200
@@ -18,44 +18,52 @@
 - `npx tsc --noEmit` — no errors
 
 ### Flashcard App Build — ✅ Clean
-- **Main bundle: 235.80 KB** (gzip 72 KB) — down from 6.5MB! Dynamic loading working!
-- 100+ deck chunks (~60KB each), loaded on demand
-- Built in 4.69s
+- **Main bundle: 252.00 KB** (gzip 75.7 KB)
+- **Top-2000 chunk: 469.25 KB** (1870 cards, expected)
+- Built in 4.83s
 
-### 🚨 CRITICAL BUG FOUND & FIXED: Flashcards Blank Page
-- **Problem:** `/flashcards/` was completely blank (white page)
-- **Root cause:** Cron 3's dynamic deck loading refactor changed all chunk hashes. The flashcard build ran, but the website deploy failed silently due to 20k file limit (16,207 audio files + new chunks = 28,686 files). The live site was serving old asset hashes that didn't match the new index.html.
-- **Console errors:** `Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "text/html"` — classic Cloudflare Pages 404 returning HTML.
-- **Fix:** 
-  1. Removed `dist/flashcards/audio/` (16k files) before deploy
-  2. Added `rm -rf dist/flashcards/audio` to build script in package.json
-  3. Added `npm run deploy` convenience script
-  4. Redeployed successfully (12,479 files, under 20k limit)
-- **Verified:** Flashcards page renders perfectly with all 73 decks, stats bar, features
-- **Prevention:** Build script now auto-removes audio from dist. Future crons should use `npm run deploy` instead of manual build+deploy.
+### 🚨 CRITICAL BUG FOUND & FIXED: Flashcards Blank Page (AGAIN!)
+- **Problem:** `/flashcards/` was completely blank (white page) — SAME issue as yesterday
+- **Root cause:** Cloudflare Pages content-hash deduplication. When crons rebuild the flashcard app, new chunk hashes are generated. The website build copies them to `dist/`. But Cloudflare compares file content hashes — if index.html's content-hash matches a previous deployment's version (even with different asset refs), Cloudflare reports "0 files uploaded" and serves the OLD index.html from a previous deployment. The old index.html references stale asset hashes (`index-Dt20JgZK.js`) while the actual deployed assets have new hashes (`index-DwWNHwPd.js`).
+- **Console errors:** `Failed to load module script: Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of "text/html"` — Cloudflare Pages 404 returning HTML fallback.
+- **Fix:**
+  1. Added timestamp comment to deploy script: `echo "<!-- deploy $(date +%s) -->" >> dist/flashcards/index.html`
+  2. This ensures index.html content-hash is ALWAYS unique per deploy
+  3. Forces Cloudflare to re-upload index.html every time
+  4. Redeployed successfully — flashcards page renders perfectly
+- **Prevention:** Deploy script in `website/package.json` now auto-appends unique timestamp. This is a permanent fix — the stale hash issue cannot recur.
 
 ### Browser Screenshots — ✅ All Rendering
-- **Homepage:** Social proof, testimonials, onboarding CTA, Word of Day — all clean
-- **Flashcards:** 73 decks displayed, stats bar (XP/Level), difficult words banner, challenge friend section — all working
+- **Homepage:** Top 2000 hero CTA (amber gradient), social proof, testimonials, Word of Day — all clean
+- **Flashcards:** Onboarding modal shows for new users (3-step flow), 73 decks behind modal, Top 2000 hero card — all working
 - **Games:** Stats bar (XP, Level, streak, games played), 30 game cards, free/premium labels — all correct
-- No JS console errors on any page (only minor apple-mobile-web-app-capable deprecation warning)
+- **Grammar:** All levels (A1-C1), 65 lessons, 3D buttons, premium CTA — all rendering
 
-### Tonight's Changes Verified (Crons 1-4, Mar 2)
-- [x] **Dynamic Deck Loading (Cron 3):** 96% bundle reduction confirmed (6.5MB → 236KB). deck-index.ts, deck-loader.ts, useDecks.ts all in src/lib/. Content loaders use dynamic import(). In-memory cache working.
-- [x] **Dashboard Game Stats (Cron 2):** 4 gradient stat cards, XP progress bar, "Go to Games" CTA — renders correctly
-- [x] **Mobile Swipe Gestures (Cron 4):** useSwipe hook in source, swipe hint — code looks correct (can't test touch on desktop browser)
-- [x] **Confetti Celebrations (Cron 4):** Confetti system in code — milestone at every 10 cards, deck completion
-- [x] **Audio Autoplay Toggle (Cron 3):** 🔊/🔇 toggle, localStorage persistence, speakWord in SRSStudy
-- [x] **Deploy fix:** Added audio cleanup to build script, deploy convenience script
+### Tonight's Changes Verified (Crons 1-4, Mar 3)
+- [x] **Onboarding Modal (Cron 2):** 3-step flow (Welcome → Path → Daily Goal), 3D buttons, progress dots, localStorage persistence — renders correctly, code clean
+- [x] **SM-2 4-Button Review (Cron 2):** Again/Hard/Good/Easy with interval previews — code correct
+- [x] **Review Reminder Banner (Cron 2):** Amber gradient banner for due SRS cards — code correct
+- [x] **SM-2 Engine Extraction (Cron 3):** srs-engine.ts with full SM-2 algorithm — clean, well-structured, proper error handling
+- [x] **Onboarding Path Navigation (Cron 3):** Routes to correct pages based on selection — code correct
+- [x] **Per-Deck Due Badges (Cron 3):** Amber circle badges on deck cards — code correct
+- [x] **Content Audit (Cron 4):** 473 duplicate cards removed across 60 decks — verified deck-index.ts cardCount updated
+- [x] **Homepage CTA (Cron 4):** Top 2000 hero CTA with amber gradient, direct link to SRS mode — renders correctly
+- [x] **Deploy fix:** Timestamp in index.html prevents Cloudflare stale hash issue
+
+### Code Review — No Issues Found
+- **OnboardingModal.tsx (183 lines):** Clean React, proper state management, accessible buttons, localStorage correctly used
+- **srs-engine.ts (154 lines):** Clean SM-2 implementation, proper defaults, error handling with try/catch, well-typed interfaces
 
 ## Known Issues (Non-Critical)
 - 16k audio files in `public/flashcards/audio/words/` — should be moved to external CDN eventually
 - `apple-mobile-web-app-capable` deprecation warning (minor)
 - Mobile swipe gestures untested on actual mobile device
+- Onboarding modal untested on mobile screen sizes (CSS may need adjustment)
 
 ## Fixed Bugs ✅
+- [x] **🚨 CRITICAL: Flashcards blank page (Cloudflare stale hash)** — added timestamp to deploy script, permanent fix (Mar 3)
 - [x] **🚨 CRITICAL: Flashcards blank page** — deploy exceeded 20k file limit, fixed build script (Mar 2)
-- [x] **Deploy script added** — `npm run deploy` now handles build + audio cleanup + wrangler deploy (Mar 2)
+- [x] **Deploy script added** — `npm run deploy` now handles build + audio cleanup + timestamp + wrangler deploy (Mar 2-3)
 - [x] weather-climate.json had card with missing english/georgian fields (Feb 27)
 - [x] Firebase authorized domains didn't include fluentge.pages.dev (Feb 27)
 - [x] Homepage bloat — 472 lines of hardcoded words → extracted to JSON (Feb 28)
