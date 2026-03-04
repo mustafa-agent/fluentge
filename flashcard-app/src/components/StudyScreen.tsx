@@ -3,7 +3,7 @@ import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { sm2 } from '../lib/sm2';
 import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
-import { addXP, addStudyTime, updateStreak, XP_REWARDS } from '../lib/gamification';
+import { addXP, addStudyTime, updateStreak, XP_REWARDS, recordDailyActivity } from '../lib/gamification';
 
 // --- Swipe gesture hook ---
 function useSwipe(onSwipeLeft: () => void, onSwipeRight: () => void, threshold = 60) {
@@ -435,6 +435,9 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     const isPerfect = wrongCount === 0;
     const wordsPerMin = minutes > 0 ? Math.round(totalCards / minutes) : totalCards;
     const sessionXP = correctCount * (XP_REWARDS.REVIEW_CARD + XP_REWARDS.CORRECT_ANSWER) + wrongCount * XP_REWARDS.REVIEW_CARD;
+
+    // Track cards in daily history
+    recordDailyActivity(0, totalAttempts);
 
     // Performance rating
     let emoji = '🎉';

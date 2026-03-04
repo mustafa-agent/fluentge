@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { UserStats, getCurrentStreak, getTotalXP, calculateLevel, getXPProgress, getTodayStudyTime } from '../lib/gamification';
+import { UserStats, getCurrentStreak, getTotalXP, calculateLevel, getXPProgress, getTodayStudyTime, getDailyHistory, type DailyActivity } from '../lib/gamification';
 import { isDeckFree, deckIndex } from '../lib/deck-index';
 import { useAllDecks } from '../lib/useDecks';
 import { getCardProgress, getCardsInState } from '../lib/spaced-repetition';
@@ -11,10 +11,7 @@ interface DashboardProps {
   onBack: () => void;
 }
 
-interface ActivityData {
-  date: string;
-  reviews: number;
-}
+type ActivityData = DailyActivity;
 
 interface LeaderboardEntry {
   rank: number;
@@ -64,24 +61,7 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
   };
 
   const loadActivityData = () => {
-    const data: ActivityData[] = [];
-    const today = new Date();
-    
-    for (let i = 6; i >= 0; i--) {
-      const date = new Date(today);
-      date.setDate(date.getDate() - i);
-      const dateStr = date.toDateString();
-      
-      // Get reviews from localStorage for this date
-      const reviews = parseInt(getLocalStorageValue(`reviews_${dateStr}`, '0'), 10);
-      
-      data.push({
-        date: dateStr,
-        reviews
-      });
-    }
-    
-    setActivityData(data);
+    setActivityData(getDailyHistory(7));
   };
 
   const loadLeaderboard = () => {
@@ -562,38 +542,73 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           </div>
         </div>
 
-        {/* Activity Chart */}
+        {/* 7-Day Activity Chart */}
         <div className="bg-[var(--color-card)] rounded-xl p-4">
-          <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+          <h2 className="text-lg font-bold mb-2 flex items-center gap-2">
             📈 ბოლო 7 დღის აქტივობა
           </h2>
-          
-          <div className="flex items-end justify-between h-20 gap-1">
+
+          {/* Summary row */}
+          <div className="flex items-center gap-4 mb-4 text-xs">
+            <span className="flex items-center gap-1">
+              <span className="w-2.5 h-2.5 rounded-full bg-green-500 inline-block" /> XP
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="w-2.5 h-2.5 rounded-full bg-sky-500 inline-block" /> წუთი
+            </span>
+            <span className="ml-auto text-[var(--color-text-muted)]">
+              ჯამი: {activityData.reduce((s, d) => s + d.xp, 0)} XP · {activityData.reduce((s, d) => s + d.cards, 0)} ბარათი
+            </span>
+          </div>
+
+          {/* Bar chart */}
+          <div className="flex items-end justify-between gap-2" style={{ height: '120px' }}>
             {activityData.map((day, index) => {
-              const maxReviews = Math.max(...activityData.map(d => d.reviews), 1);
-              const height = (day.reviews / maxReviews) * 100;
+              const maxXP = Math.max(...activityData.map(d => d.xp), 1);
+              const maxMin = Math.max(...activityData.map(d => d.minutes), 1);
+              const xpH = (day.xp / maxXP) * 100;
+              const minH = (day.minutes / maxMin) * 100;
               const date = new Date(day.date);
               const dayName = date.toLocaleDateString('ka-GE', { weekday: 'short' });
-              
+              const isToday = date.toDateString() === new Date().toDateString();
+              const hasActivity = day.xp > 0 || day.minutes > 0;
+
               return (
-                <div key={index} className="flex flex-col items-center flex-1">
-                  <div
-                    className="w-full bg-[var(--color-primary)] rounded-t transition-all"
-                    style={{ height: `${Math.max(height, 5)}%`, minHeight: '4px' }}
-                    title={`${day.reviews} განმეორება`}
-                  />
-                  <div className="text-xs text-[var(--color-text-muted)] mt-1">
-                    {dayName}
+                <div key={index} className="flex flex-col items-center flex-1 h-full justify-end">
+                  {/* XP value on top */}
+                  {day.xp > 0 && (
+                    <div className="text-[10px] font-bold text-green-400 mb-1">{day.xp}</div>
+                  )}
+                  {/* Stacked bars */}
+                  <div className="w-full flex gap-0.5 items-end" style={{ height: '80%' }}>
+                    <div
+                      className="flex-1 rounded-t-md transition-all duration-500"
+                      style={{
+                        height: `${Math.max(hasActivity ? xpH : 0, hasActivity ? 8 : 3)}%`,
+                        minHeight: '3px',
+                        background: hasActivity ? 'linear-gradient(to top, #22c55e, #4ade80)' : 'rgba(255,255,255,0.05)',
+                      }}
+                      title={`${day.xp} XP`}
+                    />
+                    <div
+                      className="flex-1 rounded-t-md transition-all duration-500"
+                      style={{
+                        height: `${Math.max(hasActivity ? minH : 0, hasActivity ? 8 : 3)}%`,
+                        minHeight: '3px',
+                        background: hasActivity ? 'linear-gradient(to top, #0ea5e9, #38bdf8)' : 'rgba(255,255,255,0.05)',
+                      }}
+                      title={`${day.minutes} წუთი`}
+                    />
+                  </div>
+                  {/* Day label */}
+                  <div className={`text-[11px] mt-1.5 font-medium ${
+                    isToday ? 'text-green-400' : 'text-[var(--color-text-muted)]'
+                  }`}>
+                    {isToday ? 'დღეს' : dayName}
                   </div>
                 </div>
               );
             })}
-          </div>
-          
-          <div className="text-center mt-2">
-            <div className="text-xs text-[var(--color-text-muted)]">
-              ჯამური განმეორებები: {activityData.reduce((sum, day) => sum + day.reviews, 0)}
-            </div>
           </div>
         </div>
 

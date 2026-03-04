@@ -37,6 +37,9 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
     <meta name="author" content="FluentGe" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#1C1C1E" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -309,6 +312,67 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
           el.classList.add('active');
         }
       });
+    </script>
+
+    <!-- PWA Install Banner -->
+    <div id="pwa-install-banner" class="pwa-install-banner" style="display:none;">
+      <div class="pwa-install-inner">
+        <div class="pwa-install-text">
+          <span class="pwa-install-icon">📲</span>
+          <div>
+            <strong>FluentGe აპის დამატება</strong>
+            <span class="pwa-install-sub">დააინსტალირე მთავარ ეკრანზე</span>
+          </div>
+        </div>
+        <div class="pwa-install-actions">
+          <button id="pwa-install-btn" class="pwa-install-yes">დამატება</button>
+          <button id="pwa-dismiss-btn" class="pwa-install-no">არა</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Service Worker + PWA Install Prompt
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(() => {});
+      }
+      (function() {
+        let deferredPrompt = null;
+        const banner = document.getElementById('pwa-install-banner');
+        const installBtn = document.getElementById('pwa-install-btn');
+        const dismissBtn = document.getElementById('pwa-dismiss-btn');
+        if (!banner || localStorage.getItem('fluentge-pwa-dismissed')) return;
+        
+        window.addEventListener('beforeinstallprompt', function(e) {
+          e.preventDefault();
+          deferredPrompt = e;
+          banner.style.display = 'block';
+        });
+        
+        installBtn?.addEventListener('click', function() {
+          if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(function() { banner.style.display = 'none'; });
+            deferredPrompt = null;
+          }
+        });
+        
+        dismissBtn?.addEventListener('click', function() {
+          banner.style.display = 'none';
+          localStorage.setItem('fluentge-pwa-dismissed', '1');
+        });
+
+        // iOS: show manual instructions
+        if (/iPhone|iPad/.test(navigator.userAgent) && !navigator.standalone) {
+          banner.style.display = 'block';
+          installBtn.textContent = 'გასაგებია';
+          var sub = banner.querySelector('.pwa-install-sub');
+          if (sub) sub.textContent = 'Safari → Share → Add to Home Screen';
+          installBtn.addEventListener('click', function() {
+            banner.style.display = 'none';
+            localStorage.setItem('fluentge-pwa-dismissed', '1');
+          });
+        }
+      })();
     </script>
 
     <footer class="border-t border-[#2E2E30] mt-20 bg-[#161618]">

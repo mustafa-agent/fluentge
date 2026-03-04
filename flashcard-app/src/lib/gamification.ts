@@ -131,6 +131,9 @@ export function addStudyTime(minutes: number): number {
     minutes: newTime
   }));
   
+  // Sync to daily history
+  recordDailyActivity(0, 0);
+  
   return newTime;
 }
 
@@ -151,6 +154,9 @@ export function addXP(amount: number): { newTotal: number; levelUp: boolean; new
   
   localStorage.setItem('totalXP', newTotal.toString());
   
+  // Auto-track daily activity (XP only; cards tracked separately)
+  recordDailyActivity(amount, 0);
+  
   return {
     newTotal,
     levelUp: newLevel > currentLevel,
@@ -170,6 +176,52 @@ export function getUserStats(): UserStats {
     todayStudyTime: getTodayStudyTime(),
     level: calculateLevel(totalXP)
   };
+}
+
+// Daily Activity History (for 7-day chart)
+export interface DailyActivity {
+  date: string; // toDateString()
+  xp: number;
+  minutes: number;
+  cards: number;
+}
+
+export function getDailyHistory(days: number = 7): DailyActivity[] {
+  const stored = localStorage.getItem('fluentge-daily-history');
+  let history: Record<string, DailyActivity> = {};
+  try { history = stored ? JSON.parse(stored) : {}; } catch { history = {}; }
+  
+  const result: DailyActivity[] = [];
+  const today = new Date();
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const key = d.toDateString();
+    result.push(history[key] || { date: key, xp: 0, minutes: 0, cards: 0 });
+  }
+  return result;
+}
+
+export function recordDailyActivity(xpEarned: number, cardsReviewed: number): void {
+  const today = new Date().toDateString();
+  const stored = localStorage.getItem('fluentge-daily-history');
+  let history: Record<string, DailyActivity> = {};
+  try { history = stored ? JSON.parse(stored) : {}; } catch { history = {}; }
+  
+  const entry = history[today] || { date: today, xp: 0, minutes: 0, cards: 0 };
+  entry.xp += xpEarned;
+  entry.cards += cardsReviewed;
+  entry.minutes = getTodayStudyTime();
+  history[today] = entry;
+  
+  // Keep only last 30 days
+  const keys = Object.keys(history);
+  if (keys.length > 30) {
+    keys.sort((a, b) => new Date(a).getTime() - new Date(b).getTime());
+    for (let i = 0; i < keys.length - 30; i++) delete history[keys[i]];
+  }
+  
+  localStorage.setItem('fluentge-daily-history', JSON.stringify(history));
 }
 
 // Levenshtein distance for typo tolerance
