@@ -14,12 +14,10 @@
 - [ ] Better card flip animation
 
 ### Dashboard
-- [ ] Overall vocabulary size tracker
 - [ ] Leaderboard (top learners this week)
 - [ ] Progress visualization — chart of words learned over time
 
 ### Section Interconnection
-- [ ] "Recommended for you" section on dashboard
 - [ ] Learning paths (beginner → intermediate → advanced)
 
 ## Priority: MEDIUM 🟡
@@ -58,6 +56,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **📊 Vocabulary Size Tracker** — SVG progress ring on dashboard showing mastered/learning/new words out of 26,595 total. Animated ring with green (mastered) + amber (learning) segments. Reads from both SRS stores and classic progress. (Cron 3, Mar 4)
+- ✅ **🎯 Recommended For You** — Smart dashboard section with 3 recommendations: SRS due reviews (🔔), partially-studied decks (📈), unstudied beginner decks (🆕). Gradient-colored cards with direct links to study modes. (Cron 3, Mar 4)
 - ✅ **🧠 SM-2 Engine + Per-Deck Due Badges** — Extracted SM-2 algorithm to `srs-engine.ts` reusable module. Per-deck due card count badges (amber circles) on free deck grid. Top 2000 hero shows due card reminder. Engine exports: rateCard, getNextInterval, getDueCount, getTotalDueCards, getDecksWithDueCards. (Cron 3, Mar 3)
 - ✅ **🎓 Onboarding Path Navigation** — Onboarding modal now navigates to chosen path after completion: words→Top 2000 SRS mode, grammar→/grammar/, games→/games/. Previously just closed the modal with no action. (Cron 3, Mar 3)
 - ✅ **📊 "Words I Know" Stats Banner** — 4-card gradient stats grid on DeckSelect: mastered words count, XP, streak days, level. Color-coded (green/yellow/orange/sky). Shows at top of flashcard home so users always see their progress. (Cron 3, Mar 2 afternoon)
@@ -74,8 +74,8 @@
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
 ## In Progress 🔄
-- 🔄 **📊 Vocabulary Size Tracker** — Dashboard total words mastered/learning/seen counts (Cron 3, Mar 4)
-- 🔄 **🎯 Recommended For You** — Smart study suggestions on dashboard (Cron 3, Mar 4)
+(none)
+
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

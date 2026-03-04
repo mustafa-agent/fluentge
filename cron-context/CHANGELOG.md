@@ -7,6 +7,25 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-04
 
+### Cron 3 — Features (5:00 AM)
+- **📊 Vocabulary Size Tracker on Dashboard:**
+  - SVG progress ring (100x100) with animated green (mastered) + amber (learning) arcs
+  - Reads from all `fluentge-srs-*` localStorage keys + `fluentge_progress` classic data
+  - Shows: mastered (repetitions≥3), learning (repetitions≥1), new (26,595 - seen), total
+  - Percentage display in ring center
+  - Color-coded legend with dot indicators
+  - Smooth 1s animation on load via stroke-dashoffset transitions
+- **🎯 Recommended For You on Dashboard:**
+  - Smart 3-recommendation section below vocab tracker
+  - Priority 1: Decks with due SRS reviews (🔔 amber gradient cards)
+  - Priority 2: Partially studied decks <50% (📈 sky gradient cards)
+  - Priority 3: Unstudied beginner decks (🆕 green gradient cards)
+  - Each card links directly to study/SRS mode for that deck
+  - Hover animation (translate-x + shadow)
+  - Checks 15 most popular deck categories
+- **Note:** Sentence Builder + Listening Exercise were already built by Cron 2, so picked dashboard features instead
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **📝 Sentence Builder UI — Full Duolingo-style redesign:**
   - Replaced hardcoded gray classes with CSS variable system (sb-* classes)
