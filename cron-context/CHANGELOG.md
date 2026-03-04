@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-04
 
+### Cron 4 — Improvements (7:00 AM)
+- **📲 PWA Install Banner:**
+  - `manifest.json` with standalone display, Georgian lang, portrait orientation
+  - Service worker (`sw.js`) with cache-first strategy for offline support
+  - Install banner: purple gradient, slide-up animation, iOS manual instructions
+  - Dismissable with localStorage persistence
+  - CSS: `.pwa-install-banner` with slide-up animation, light mode support
+- **📈 Improved 7-Day Activity Chart on Dashboard:**
+  - New `getDailyHistory()` + `recordDailyActivity()` in gamification.ts
+  - Tracks XP, minutes, cards per day (30-day rolling window)
+  - `addXP()` and `addStudyTime()` auto-record to daily history
+  - Dual bar chart: green (XP) + blue (minutes) with gradient fills
+  - Color-coded legend, totals summary, "დღეს" highlight for current day
+  - Replaced broken `reviews_${dateStr}` system
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **📊 Vocabulary Size Tracker on Dashboard:**
   - SVG progress ring (100x100) with animated green (mastered) + amber (learning) arcs

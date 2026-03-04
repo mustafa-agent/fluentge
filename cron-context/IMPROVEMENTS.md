@@ -56,10 +56,10 @@
 - [ ] Bottom navigation for mobile?
 
 ## 🎯 THIS SPRINT (Mar 4 night) — "Sentence Exercises & Mobile Polish"
-- [ ] **📱 Mobile Bottom Navigation** — Fixed bottom bar on mobile ← Cron 4
-- [ ] **📲 PWA Install Banner** — "Add to Home Screen" prompt ← Cron 4
-- [ ] **📈 Progress Chart** — 7-day activity chart on dashboard ← Cron 4
-- [ ] **🇬🇪 Fix remaining "სტრიკ"** — ✅ Fixed in homepage + ChallengeFriend (Cron 1, Mar 4)
+- [x] **📱 Mobile Bottom Navigation** — Fixed bottom bar on mobile ✅ Cron 2, Mar 4
+- [x] **📲 PWA Install Banner** — "Add to Home Screen" prompt ✅ Cron 4, Mar 4
+- [x] **📈 Progress Chart** — 7-day activity chart on dashboard ✅ Cron 4, Mar 4
+- [x] **🇬🇪 Fix remaining "სტრიკ"** — ✅ Fixed in homepage + ChallengeFriend (Cron 1, Mar 4)
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
@@ -70,8 +70,7 @@
 - [x] Grammar → Flashcard interconnection — related decks shown after each grammar lesson + prev/next navigation (Cron 4, Feb 28)
 
 ## In Progress 🔄
-- Mobile bottom navigation (Sprint Mar 4 night)
-- PWA install banner (Sprint Mar 4 night)
+(none)
 
 ## Completed Last Sprint ✅ (Mar 2 — "Top 2000 Spotlight & Polish")
 - Top 2000 hero card ✅ Cron 2B, Mar 2
