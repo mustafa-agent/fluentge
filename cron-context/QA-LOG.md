@@ -1,9 +1,45 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-03 (7:30 PM — Evening Pass)
-- **Status:** ✅ ALL CLEAR
-- **Issues Found:** 0
+- **Date:** 2026-03-04 (9:00 AM)
+- **Status:** 🚨 1 CRITICAL BUG FOUND & FIXED
+- **Issues Found:** 1
+
+## Morning QA Run (Mar 4, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/podcast/` — 200, `/games/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Flashcard App Build — ✅ Clean
+- **Main bundle: 254.17 KB** (gzip 76.25 KB)
+- **Top-2000 chunk: 469.25 KB**
+- Built in 4.63s
+
+### 🚨 CRITICAL BUG FOUND & FIXED: Flashcards Blank Page (3rd time!)
+- **Problem:** `/flashcards/` completely blank — same Cloudflare stale hash issue
+- **Console errors:** `index-CDzXB99c.css` and `index-DGl6xK2l.js` 404 (stale hashes from previous deploy)
+- **Live assets:** `index-Bln5K2YN.css` and `index-CHMsUinm.js` (different hashes)
+- **Root cause:** Cloudflare content-hash dedup — even with timestamp comment, if the timestamp from cron 4's deploy matched content hash of a prior deployment, Cloudflare skipped index.html upload
+- **Fix:** Updated timestamp and redeployed. Wrangler confirmed "1 file uploaded" (the index.html)
+- **Result:** Flashcards page renders perfectly after redeploy
+- **⚠️ RECURRING ISSUE:** This is the 3rd time this has happened. The timestamp approach helps but isn't 100% reliable if deploys happen in quick succession. May need a more robust solution (e.g., random UUID instead of timestamp, or purge Cloudflare cache after deploy).
+
+### Tonight's Changes Verified (Crons 1-4, Mar 4)
+- [x] **Sentence Builder (Cron 2):** 281-line component, clean imports, proper state management, XP awards, sound effects — code review clean
+- [x] **Listening Exercise (Cron 2):** 230-line component, speechSynthesis API, 4-option quiz, slow playback, XP — code review clean
+- [x] **Mobile Bottom Nav (Cron 2):** Integrated in both Layout.astro and App.tsx, 5 tabs, path-based active detection — code verified
+- [x] **Vocab Size Tracker (Cron 3):** SVG progress ring, reads SRS localStorage, animated arcs — code clean
+- [x] **Recommended For You (Cron 3):** Smart 3-recommendation section, priority-based — code clean
+- [x] **PWA Install Banner (Cron 4):** manifest.json + sw.js + install banner with iOS instructions — files present
+- [x] **7-Day Activity Chart (Cron 4):** getDailyHistory/recordDailyActivity in gamification.ts, dual bar chart — code clean
+- [x] **Georgian text fix (Cron 1):** "სტრიკ" → "სერია" in last 2 instances
+
+### Browser Screenshots — ✅ All Rendering
+- **Homepage:** Hero, Top 2000 CTA, Word of Day, testimonials, features — all clean
+- **Flashcards:** Stats bar, onboarding banners, Top 2000 hero, all deck cards, mobile bottom nav — all rendering after fix
 
 ## Evening QA Run (Mar 3, 7:30 PM)
 
