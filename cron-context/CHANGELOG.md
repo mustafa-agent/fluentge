@@ -7,6 +7,36 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-04
 
+### Cron 2 — Design (3:00 AM)
+- **📝 Sentence Builder UI — Full Duolingo-style redesign:**
+  - Replaced hardcoded gray classes with CSS variable system (sb-* classes)
+  - 3D word tiles: border-b-4 press effect, sky-blue placed tiles, green/red feedback states
+  - Drop zone with active/correct/wrong visual states (dashed → solid border)
+  - Georgian prompt card with sky-blue accent border
+  - Chunky quiz-progress-bar reuse, XP float animation (+15 per correct)
+  - Bottom feedback bar (reuses quiz-feedback) with slide-up animation
+  - Result screen with stat cards (score, accuracy, XP) using 3D border pattern
+  - Filters cards with 3+ word example sentences
+- **🎧 Listening Exercise — Brand new component:**
+  - `ListeningExercise.tsx`: hear English audio → pick correct Georgian from 4 options
+  - Purple gradient audio card with 80px play button (gradient indigo→purple)
+  - 🐢 slow playback button (0.5x rate)
+  - 4 option cards with A/B/C/D letter badges, 3D press effect
+  - Green/red feedback + correctPulse/wrongShake animations (reused from quiz)
+  - Auto-plays audio on new question, reveals word after answer
+  - +10 XP per correct, result screen with stat cards
+- **📱 Mobile Bottom Navigation — Both platforms:**
+  - Frosted glass fixed bar (`backdrop-filter: blur(20px)`)
+  - 5 tabs: 🏠 მთავარი, 📚 სიტყვები, 📖 გრამატიკა, 🎮 თამაშები, 👤 პროფილი
+  - Active tab highlighted in sky-500
+  - Website: Layout.astro with path-based active detection script
+  - React: App.tsx with hardcoded flashcards active state
+  - `env(safe-area-inset-bottom)` for iPhone notch
+  - Hidden on desktop (≥768px), body padding on mobile to prevent overlap
+- **New modes integrated:** DeckSelect now shows 8 modes (added 🔤 წინადადება + 🎧 მოსმენა)
+- **~200 lines new CSS:** sb-*, le-*, mobile-bottom-nav classes + full light mode overrides
+- Deployed ✅, git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Onboarding & Retention Engine" sprint (Mar 3) — ALL items completed ✅
   - Onboarding modal ✅ (3-step, path selection, daily goal)

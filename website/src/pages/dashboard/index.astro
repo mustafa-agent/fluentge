@@ -40,6 +40,61 @@ import Layout from '../../layouts/Layout.astro';
       </div>
     </div>
 
+    <!-- Vocabulary Size Tracker -->
+    <div id="vocab-tracker" class="mb-8">
+      <h2 class="font-bold text-lg mb-4 flex items-center gap-2">📖 ჩემი ლექსიკა</h2>
+      <div class="bg-gradient-to-br from-emerald-500/10 to-sky-500/10 border border-emerald-500/20 rounded-2xl p-5">
+        <div class="flex items-center gap-6">
+          <!-- SVG Progress Ring -->
+          <div class="relative flex-shrink-0">
+            <svg width="100" height="100" viewBox="0 0 100 100" class="transform -rotate-90">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="8" class="text-[#2E2E30]" />
+              <circle id="vocab-ring-mastered" cx="50" cy="50" r="42" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264" class="transition-all duration-1000" />
+              <circle id="vocab-ring-learning" cx="50" cy="50" r="42" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264" class="transition-all duration-1000" />
+            </svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+              <span id="vocab-pct" class="text-xl font-extrabold text-[var(--color-text)]">0%</span>
+              <span class="text-[9px] text-[var(--color-text-muted)]">ნასწავლი</span>
+            </div>
+          </div>
+          <!-- Stats -->
+          <div class="flex-1 space-y-2">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+                <span class="text-sm text-[var(--color-text-muted)]">ათვისებული</span>
+              </div>
+              <span id="vocab-mastered" class="text-sm font-bold text-green-400">0</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                <span class="text-sm text-[var(--color-text-muted)]">სწავლაში</span>
+              </div>
+              <span id="vocab-learning" class="text-sm font-bold text-amber-400">0</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-[#3E3E40] inline-block"></span>
+                <span class="text-sm text-[var(--color-text-muted)]">ახალი</span>
+              </div>
+              <span id="vocab-new" class="text-sm font-bold text-[var(--color-text-muted)]">0</span>
+            </div>
+            <div class="pt-1 border-t border-white/5 flex items-center justify-between">
+              <span class="text-xs text-[var(--color-text-muted)]">სულ სიტყვები</span>
+              <span id="vocab-total" class="text-xs font-bold text-[var(--color-text)]">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended For You -->
+    <div id="recommended-section" class="mb-8 hidden">
+      <h2 class="font-bold text-lg mb-4 flex items-center gap-2">🎯 რეკომენდაცია შენთვის</h2>
+      <div id="recommended-list" class="space-y-2"></div>
+    </div>
+
     <div class="grid grid-cols-2 gap-4 mb-8">
       <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
         <p class="text-3xl font-bold" id="stat-phrases">0</p>
@@ -144,6 +199,167 @@ import Layout from '../../layouts/Layout.astro';
 
   <script is:inline>
     (function() {
+      var TOTAL_WORDS = 26595;
+      var SRS_KEY_PREFIX = 'fluentge-srs-';
+
+      // --- Vocabulary Size Tracker ---
+      var mastered = 0, learning = 0;
+      var allSRSWords = new Set();
+      var keys = Object.keys(localStorage);
+      for (var k = 0; k < keys.length; k++) {
+        var key = keys[k];
+        if (key.indexOf(SRS_KEY_PREFIX) !== 0) continue;
+        try {
+          var store = JSON.parse(localStorage.getItem(key) || '{}');
+          var words = Object.keys(store);
+          for (var w = 0; w < words.length; w++) {
+            var d = store[words[w]];
+            allSRSWords.add(words[w]);
+            if (d.repetitions >= 3) mastered++;
+            else if (d.repetitions >= 1) learning++;
+          }
+        } catch(e) {}
+      }
+      // Also count from fluentge_progress (classic study mode)
+      var classicProgress = {};
+      try { classicProgress = JSON.parse(localStorage.getItem('fluentge_progress') || '{}'); } catch(e) {}
+      var classicKeys = Object.keys(classicProgress);
+      for (var c = 0; c < classicKeys.length; c++) {
+        var ck = classicKeys[c];
+        var base = ck.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
+        if (!allSRSWords.has(base)) {
+          allSRSWords.add(base);
+          var cp = classicProgress[ck];
+          if (cp && cp.repetitions >= 3) mastered++;
+          else if (cp && cp.repetitions >= 1) learning++;
+        }
+      }
+      var totalSeen = allSRSWords.size;
+      var newWords = TOTAL_WORDS - totalSeen;
+      var pct = TOTAL_WORDS > 0 ? Math.round((mastered / TOTAL_WORDS) * 100) : 0;
+
+      document.getElementById('vocab-mastered').textContent = mastered;
+      document.getElementById('vocab-learning').textContent = learning;
+      document.getElementById('vocab-new').textContent = newWords > 0 ? newWords : 0;
+      document.getElementById('vocab-total').textContent = TOTAL_WORDS;
+      document.getElementById('vocab-pct').textContent = pct + '%';
+
+      // Animate SVG rings (circumference = 2*PI*42 ≈ 264)
+      var circ = 264;
+      var masteredPct = mastered / TOTAL_WORDS;
+      var learningPct = learning / TOTAL_WORDS;
+      setTimeout(function() {
+        document.getElementById('vocab-ring-mastered').setAttribute('stroke-dashoffset', String(circ - (circ * masteredPct)));
+        var learningRing = document.getElementById('vocab-ring-learning');
+        // Learning ring starts where mastered ends
+        learningRing.setAttribute('stroke-dashoffset', String(circ - (circ * learningPct)));
+        learningRing.setAttribute('stroke-dasharray', circ * learningPct + ' ' + circ);
+        // Rotate learning ring to start after mastered
+        learningRing.style.transform = 'rotate(' + (masteredPct * 360) + 'deg)';
+        learningRing.style.transformOrigin = '50px 50px';
+      }, 100);
+
+      // --- Recommended For You ---
+      var deckMeta = [
+        {id:'top-2000',name:'ტოპ 2000 სიტყვა',icon:'⭐',cards:1870},
+        {id:'greetings',name:'მისალმებები',icon:'👋',cards:200},
+        {id:'numbers',name:'რიცხვები და დრო',icon:'🔢',cards:200},
+        {id:'family',name:'ოჯახი და ხალხი',icon:'👨‍👩‍👧‍👦',cards:200},
+        {id:'food',name:'საკვები და კულინარია',icon:'🍳',cards:50},
+        {id:'home',name:'სახლი',icon:'🏠',cards:200},
+        {id:'travel',name:'მოგზაურობა',icon:'✈️',cards:50},
+        {id:'work',name:'სამუშაო და ბიზნესი',icon:'💼',cards:50},
+        {id:'health',name:'ჯანმრთელობა',icon:'🏥',cards:200},
+        {id:'technology',name:'ტექნოლოგია',icon:'💻',cards:200},
+        {id:'emotions',name:'ემოციები',icon:'😊',cards:200},
+        {id:'education',name:'განათლება',icon:'📚',cards:200},
+        {id:'verbs',name:'ხშირი ზმნები',icon:'🏃',cards:200},
+        {id:'animals',name:'ცხოველები',icon:'🐾',cards:200},
+        {id:'sports',name:'სპორტი',icon:'⚽',cards:50}
+      ];
+      var recs = [];
+      var now = Date.now();
+
+      // 1. Decks with due SRS reviews (highest priority)
+      for (var i = 0; i < deckMeta.length && recs.length < 2; i++) {
+        var dm = deckMeta[i];
+        try {
+          var srsStore = JSON.parse(localStorage.getItem(SRS_KEY_PREFIX + dm.id) || '{}');
+          var due = 0;
+          var srsWords = Object.values(srsStore);
+          for (var j = 0; j < srsWords.length; j++) {
+            if (srsWords[j].nextReview <= now && srsWords[j].repetitions > 0) due++;
+          }
+          if (due > 0) {
+            recs.push({
+              icon: '🔔',
+              text: dm.icon + ' ' + dm.name + ' — ' + due + ' სიტყვა გადასახედია',
+              href: '/flashcards/#study/' + dm.id + '/srs',
+              color: 'amber',
+              priority: 1
+            });
+          }
+        } catch(e) {}
+      }
+
+      // 2. Partially studied decks (started but <50% done)
+      for (var i = 0; i < deckMeta.length && recs.length < 4; i++) {
+        var dm = deckMeta[i];
+        try {
+          var srsStore = JSON.parse(localStorage.getItem(SRS_KEY_PREFIX + dm.id) || '{}');
+          var studied = Object.keys(srsStore).length;
+          if (studied > 0 && studied < dm.cards * 0.5) {
+            var pctDone = Math.round((studied / dm.cards) * 100);
+            // Don't duplicate if already in recs
+            if (!recs.some(function(r) { return r.href.indexOf(dm.id) > -1; })) {
+              recs.push({
+                icon: '📈',
+                text: dm.icon + ' ' + dm.name + ' — ' + pctDone + '% გავლილი, გააგრძელე!',
+                href: '/flashcards/#study/' + dm.id + '/srs',
+                color: 'sky',
+                priority: 2
+              });
+            }
+          }
+        } catch(e) {}
+      }
+
+      // 3. Suggest unstudied beginner decks
+      var beginnerDecks = ['greetings','numbers','family','food','home'];
+      for (var i = 0; i < beginnerDecks.length && recs.length < 5; i++) {
+        var bid = beginnerDecks[i];
+        var srsData = localStorage.getItem(SRS_KEY_PREFIX + bid);
+        if (!srsData || Object.keys(JSON.parse(srsData || '{}')).length === 0) {
+          var meta = deckMeta.find(function(d) { return d.id === bid; });
+          if (meta && !recs.some(function(r) { return r.href.indexOf(bid) > -1; })) {
+            recs.push({
+              icon: '🆕',
+              text: meta.icon + ' ' + meta.name + ' — დაიწყე ახალი თემა!',
+              href: '/flashcards/#deck/' + bid,
+              color: 'green',
+              priority: 3
+            });
+          }
+        }
+      }
+
+      // Show max 3 recommendations
+      recs = recs.slice(0, 3);
+      if (recs.length > 0) {
+        var section = document.getElementById('recommended-section');
+        var list = document.getElementById('recommended-list');
+        section.classList.remove('hidden');
+        var colorMap = {amber:'from-amber-500/10 to-yellow-500/10 border-amber-500/20', sky:'from-sky-500/10 to-blue-500/10 border-sky-500/20', green:'from-green-500/10 to-emerald-500/10 border-green-500/20'};
+        recs.forEach(function(r) {
+          var a = document.createElement('a');
+          a.href = r.href;
+          var cls = colorMap[r.color] || colorMap.sky;
+          a.className = 'flex items-center gap-3 bg-gradient-to-r ' + cls + ' border rounded-xl px-4 py-3 transition-all hover:translate-x-1 hover:shadow-lg';
+          a.innerHTML = '<span class="text-lg">' + r.icon + '</span><span class="text-sm font-medium flex-1">' + r.text + '</span><span class="text-[var(--color-text-muted)]">→</span>';
+          list.appendChild(a);
+        });
+      }
+
       const phrases = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
       const grammar = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
       const podcasts = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
@@ -155,7 +371,7 @@ import Layout from '../../layouts/Layout.astro';
         var base = key.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
         baseWords[base] = true;
       });
-      var wordCount = Object.keys(baseWords).length;
+      var wordCount = totalSeen || Object.keys(baseWords).length;
       document.getElementById('stat-phrases').textContent = phrases.length;
       document.getElementById('stat-grammar').textContent = grammar.length;
       document.getElementById('stat-podcasts').textContent = podcasts.length;

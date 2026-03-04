@@ -64,9 +64,9 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 4 night) — Cron 2 Tasks:
-- [ ] **📝 Sentence Builder UI** — Word tiles in "bank" area, assembled sentence line above. Tap to place/remove. Green flash on correct, shake on wrong. Georgian source sentence + audio on reveal.
-- [ ] **🎧 Listening Exercise UI** — Large 🔊 play button center, 4 Georgian option cards below. Green/red feedback. Replay button.
-- [ ] **📱 Mobile Bottom Nav** — Fixed bottom bar, 5 icon+label tabs, active state highlight. Frosted glass bg. Must work in both Astro pages and React app.
+- [x] **📝 Sentence Builder UI** — 3D word tiles (sb-word-tile), drop zone with active/correct/wrong states, chunky progress bar, XP float, bottom feedback bar. ✅ Mar 4
+- [x] **🎧 Listening Exercise UI** — Purple gradient audio card, 80px play button, 🐢 slow button, 4 Georgian options (le-option) with A/B/C/D letters, 3D press effect. ✅ Mar 4
+- [x] **📱 Mobile Bottom Nav** — Frosted glass fixed bar, 5 tabs (🏠📚📖🎮👤), active highlight, safe-area-inset, both Astro Layout + React App. ✅ Mar 4
 
 ### Backlog:
 - [ ] Consistent card borders across all components
