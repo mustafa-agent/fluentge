@@ -5,6 +5,7 @@ import { isDeckFree, deckIndex } from '../lib/deck-index';
 import { useAllDecks } from '../lib/useDecks';
 import { getCardProgress, getCardsInState } from '../lib/spaced-repetition';
 import { getLocalStorageValue } from '../lib/storage';
+import Leaderboard from './Leaderboard';
 
 interface DashboardProps {
   onNavigate: (screen: any, deck?: any) => void;
@@ -612,91 +613,8 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           </div>
         </div>
 
-        {/* Leaderboard — Redesigned with medals & avatars */}
-        <div className="leaderboard-section bg-[var(--color-card)] rounded-xl p-4">
-          <div className="flex items-center justify-between mb-1">
-            <h2 className="text-lg font-bold flex items-center gap-2">
-              🏆 კვირის ლიდერბორდი
-            </h2>
-            <span className="text-[10px] font-semibold text-[var(--color-text-muted)] bg-white/5 px-2 py-0.5 rounded-full">
-              განახლდება ორშაბათს
-            </span>
-          </div>
-          <p className="text-xs text-[var(--color-text-muted)] mb-4">ვინ ისწავლა ყველაზე მეტი ამ კვირაში?</p>
-          
-          <div className="space-y-1.5">
-            {leaderboard.map(entry => {
-              const medal = entry.rank === 1 ? '🥇' : entry.rank === 2 ? '🥈' : entry.rank === 3 ? '🥉' : null;
-              const initials = entry.username.split(' ').map(n => n[0]).join('').slice(0, 2);
-              const avatarColors = [
-                'from-yellow-400 to-amber-500',   // 1st
-                'from-gray-300 to-gray-400',       // 2nd
-                'from-orange-400 to-orange-600',   // 3rd
-                'from-sky-400 to-blue-500',
-                'from-green-400 to-emerald-500',
-                'from-purple-400 to-violet-500',
-                'from-pink-400 to-rose-500',
-                'from-cyan-400 to-teal-500',
-                'from-indigo-400 to-blue-600',
-                'from-red-400 to-rose-600',
-                'from-lime-400 to-green-500',
-              ];
-              const avatarGradient = avatarColors[entry.rank - 1] || avatarColors[3];
-
-              return (
-                <div
-                  key={entry.rank}
-                  className={`flex items-center gap-3 p-2.5 rounded-xl transition-all ${
-                    entry.isCurrentUser 
-                      ? 'leaderboard-current bg-gradient-to-r from-green-500/12 to-emerald-500/8 border border-green-500/30' 
-                      : entry.rank <= 3
-                        ? 'bg-white/[0.03]'
-                        : ''
-                  }`}
-                >
-                  {/* Rank */}
-                  <div className="w-7 text-center flex-shrink-0">
-                    {medal ? (
-                      <span className="text-lg">{medal}</span>
-                    ) : (
-                      <span className="text-sm font-bold text-[var(--color-text-muted)]">{entry.rank}</span>
-                    )}
-                  </div>
-
-                  {/* Avatar */}
-                  <div className={`w-9 h-9 rounded-full bg-gradient-to-br ${avatarGradient} flex items-center justify-center flex-shrink-0 text-white text-xs font-bold shadow-sm`}>
-                    {initials}
-                  </div>
-
-                  {/* Name + Level */}
-                  <div className="flex-1 min-w-0">
-                    <div className="font-semibold text-sm truncate">
-                      {entry.username}
-                      {entry.isCurrentUser && (
-                        <span className="text-[10px] text-green-400 ml-1.5 font-bold">(შენ)</span>
-                      )}
-                    </div>
-                    <div className="text-[11px] text-[var(--color-text-muted)] flex items-center gap-2">
-                      <span>Lv.{entry.level}</span>
-                      {entry.streak > 0 && <span className="text-orange-400">🔥 {entry.streak}</span>}
-                    </div>
-                  </div>
-
-                  {/* XP */}
-                  <div className={`text-right flex-shrink-0 font-bold text-sm tabular-nums ${
-                    entry.rank === 1 ? 'text-yellow-400' :
-                    entry.rank === 2 ? 'text-gray-300' :
-                    entry.rank === 3 ? 'text-orange-400' :
-                    entry.isCurrentUser ? 'text-green-400' :
-                    'text-[var(--color-text)]'
-                  }`}>
-                    {entry.xp.toLocaleString()} <span className="text-xs font-normal opacity-60">XP</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        {/* Leaderboard */}
+        <Leaderboard />
       </div>
     </div>
   );

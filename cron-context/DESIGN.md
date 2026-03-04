@@ -64,9 +64,9 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 4 day) — Cron 2 Tasks:
-- [ ] **📅 Daily Lesson UI** — Full-width gradient CTA card ("დღის გაკვეთილი"), mixed session screen with round-type icons (📚🧠🔤🎧), smooth slide transitions between rounds, progress bar (1/10), session summary reuse
-- [ ] **🏆 Leaderboard UI** — Ranked list with 🥇🥈🥉 medals, current user highlighted row (green glow), avatar circles with initials, weekly reset indicator, placed on Dashboard
-- [ ] **📝 Fill-in-Blank UI** — Sentence with highlighted blank, 4 option buttons (reuse quiz-option style), hint showing Georgian translation
+- [x] **📅 Daily Lesson UI** — Green gradient CTA card on DeckSelect with 🎯 icon, play button, badges (ყოველდღიური, ~5 წთ), content preview. Session CSS: dl-round-icon types (vocab/review/sentence/listening/fillin), dl-slide-in animation ✅ Mar 4
+- [x] **🏆 Leaderboard UI** — Medals (🥇🥈🥉), gradient avatar circles with initials, green glow for current user (leaderboard-current + leaderGlow animation), weekly reset indicator badge, XP color-coded by rank ✅ Mar 4
+- [x] **📝 Fill-in-Blank UI** — Full CSS: fib-sentence, fib-blank (underline style with correct/wrong/empty states), fib-hint (purple accent), fib-options (2-col grid, 3D buttons), fib-option with correct/wrong/dimmed states ✅ Mar 4
 
 ### Backlog:
 - [ ] Consistent card borders across all components

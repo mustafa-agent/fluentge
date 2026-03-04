@@ -6,7 +6,7 @@ import { getTotalXP, calculateLevel, getCurrentStreak, getDailyGoal, setDailyGoa
 import { getDueCount, getTotalDueCards } from '../lib/srs-engine';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'daily') => void;
 }
 
 const modes = [
@@ -192,9 +192,10 @@ export default function DeckSelect({ onSelect }: Props) {
       {/* 📅 Daily Lesson CTA */}
       <button
         onClick={() => {
-          // Navigate to daily lesson — Cron 3 will build DailyLesson.tsx
-          // For now, start a mixed session with top-2000
-          if (top2000) setSelectedMeta(top2000);
+          // Launch Daily Lesson
+          loadDeck('top-2000-words').then(deck => {
+            if (deck) onSelect(deck, 'daily');
+          });
         }}
         className="daily-lesson-cta w-full mb-5 relative overflow-hidden rounded-2xl text-left transition-all hover:scale-[1.01] active:scale-[0.99] group"
       >

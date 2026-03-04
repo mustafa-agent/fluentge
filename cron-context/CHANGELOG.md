@@ -7,6 +7,37 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-04
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **📅 Daily Lesson CTA Card on DeckSelect:**
+  - Full-width green gradient card (green→emerald→teal) placed ABOVE stats banner
+  - 🎯 icon in 3D rounded square, ▶ play button on right
+  - Badges: "ყოველდღიური" + "~5 წთ"
+  - Dynamic content preview: shows SRS due count if available
+  - Subtle glow shadow, hover/active scale effects
+  - Temporary action: opens Top 2000 (Cron 3 will build DailyLesson.tsx)
+  - CSS: `.daily-lesson-cta` with shadow + hover glow, `dailyBounce` animation
+- **🏆 Leaderboard UI Redesign on Dashboard:**
+  - Medals: 🥇🥈🥉 for top 3 instead of "#1/#2/#3"
+  - Gradient avatar circles with user initials (11 color gradients)
+  - Current user row: green glow border + `leaderGlow` pulsing animation
+  - "განახლდება ორშაბათს" (resets Monday) indicator badge
+  - Subtitle: "ვინ ისწავლა ყველაზე მეტი ამ კვირაში?"
+  - XP text color-coded by rank (gold/silver/bronze/green for self)
+  - Streak shown inline with level
+- **📝 Fill-in-the-Blank CSS (for Cron 4):**
+  - `.fib-sentence` — large centered text with generous line-height
+  - `.fib-blank` — inline underline with sky-blue color, correct/wrong/empty states
+  - `.fib-hint` — purple accent for Georgian translation hint
+  - `.fib-options` — 2-column grid of 3D option buttons
+  - `.fib-option` — reuses quiz-option pattern (border-b-4, correct/wrong/dimmed)
+- **📅 Daily Lesson Session CSS (for Cron 3):**
+  - `.dl-round-indicator` — centered flex row for round type display
+  - `.dl-round-icon` — 5 color-coded types: vocab (sky), review (purple), sentence (amber), listening (pink), fillin (green)
+  - `.dl-slide-in` — slide-from-right transition between rounds
+- **Light mode:** Full overrides for all new components
+- ~100 lines new CSS added to index.css
+- Deployed ✅, git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM, Day Run)
 - **Sprint review:** "Sentence Exercises & Mobile Polish" sprint (Mar 4 night) — ALL items completed ✅
   - Sentence Builder ✅ (281 lines, word tile ordering, +15 XP)

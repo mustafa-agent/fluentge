@@ -1,10 +1,53 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense, Component, type ReactNode, type ErrorInfo } from 'react';
 import DeckSelect from './components/DeckSelect';
 import StatsBar from './components/StatsBar';
 import OnboardingModal from './components/OnboardingModal';
 import { type Deck, loadDeck, loadAllCards } from './lib/deck-loader';
 import { deckIndex } from './lib/deck-index';
 import { loadFromCloud, syncToCloud } from './lib/firebase-sync';
+
+// Error Boundary to catch lazy-load failures and runtime crashes
+class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean; error?: Error }> {
+  constructor(props: { children: ReactNode }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError(error: Error) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error: Error, info: ErrorInfo) {
+    console.error('FluentGe ErrorBoundary:', error, info);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '60vh', padding: '2rem', textAlign: 'center' }}>
+          <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>😔</div>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '0.5rem', color: 'var(--color-text, #fff)' }}>
+            რაღაც შეცდომა მოხდა
+          </h2>
+          <p style={{ color: 'var(--color-text-muted, #999)', marginBottom: '1.5rem', fontSize: '0.875rem' }}>
+            გვერდი ვერ ჩაიტვირთა. სცადე თავიდან.
+          </p>
+          <button
+            onClick={() => {
+              // Clear SW caches and reload
+              if (typeof caches !== 'undefined') {
+                caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k)))).finally(() => location.reload());
+              } else {
+                location.reload();
+              }
+            }}
+            style={{ padding: '0.75rem 2rem', borderRadius: '1rem', background: '#5B7F5E', color: '#fff', fontWeight: 'bold', border: 'none', cursor: 'pointer', fontSize: '1rem' }}
+          >
+            🔄 თავიდან ცდა
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 // Lazy-loaded heavy components
 const StudyScreen = lazy(() => import('./components/StudyScreen'));
@@ -17,9 +60,10 @@ const ChallengeFriend = lazy(() => import('./components/ChallengeFriend'));
 const SpacedRepetition = lazy(() => import('./components/SpacedRepetition'));
 const SentenceBuilder = lazy(() => import('./components/SentenceBuilder'));
 const ListeningExercise = lazy(() => import('./components/ListeningExercise'));
+const DailyLesson = lazy(() => import('./components/DailyLesson'));
 import LoadingSkeleton from './components/LoadingSkeleton';
 
-type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'sentence' | 'listening' | 'challenge' | 'srs-dashboard' | 'difficult';
+type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'sentence' | 'listening' | 'challenge' | 'srs-dashboard' | 'difficult' | 'daily-lesson';
 type StudyMode = 'classic' | 'srs' | 'reverse' | 'mixed';
 
 export default function App() {
@@ -55,9 +99,12 @@ export default function App() {
     }
   }, [screen]);
 
-  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' = 'study') {
+  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'daily' = 'study') {
     setActiveDeck(deck);
-    if (mode === 'quiz') {
+    if (mode === 'daily') {
+      setScreen('daily-lesson');
+      return;
+    } else if (mode === 'quiz') {
       setScreen('quiz');
     } else if (mode === 'typing') {
       setScreen('typing');
@@ -237,7 +284,7 @@ export default function App() {
         </>
       )}
 
-      <Suspense fallback={<LoadingSkeleton />}>
+      <ErrorBoundary><Suspense fallback={<LoadingSkeleton />}>
         {screen === 'study' && activeDeck && (
           studyMode === 'srs'
             ? <SRSStudy cards={activeDeck.cards} deckId={activeDeck.id} onBack={handleBack} />
@@ -245,6 +292,7 @@ export default function App() {
         )}
         {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={quizAllCards.length > 0 ? quizAllCards : activeDeck.cards} onBack={handleBack} />}
         {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
+        {screen === 'daily-lesson' && <DailyLesson onBack={handleBack} />}
         {screen === 'sentence' && activeDeck && <SentenceBuilder deck={activeDeck} onBack={handleBack} />}
         {screen === 'listening' && activeDeck && <ListeningExercise deck={activeDeck} onBack={handleBack} />}
         {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
@@ -256,7 +304,7 @@ export default function App() {
           />
         )}
         {screen === 'srs-dashboard' && <SpacedRepetition onBack={handleBack} />}
-      </Suspense>
+      </Suspense></ErrorBoundary>
 
       {/* Mobile Bottom Navigation */}
       <nav className="mobile-bottom-nav">
