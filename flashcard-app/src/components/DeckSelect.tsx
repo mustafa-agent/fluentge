@@ -6,7 +6,7 @@ import { getTotalXP, calculateLevel, getCurrentStreak, getDailyGoal, setDailyGoa
 import { getDueCount, getTotalDueCards } from '../lib/srs-engine';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'daily') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'fillin' | 'daily') => void;
 }
 
 const modes = [
@@ -18,6 +18,7 @@ const modes = [
   { id: 'typing' as const, label: 'წერა', icon: '✍️', desc: 'ჩაწერე თარგმანი · +25 XP' },
   { id: 'sentence' as const, label: 'წინადადება', icon: '🔤', desc: 'დაალაგე სიტყვები · +15 XP' },
   { id: 'listening' as const, label: 'მოსმენა', icon: '🎧', desc: 'მოისმინე და აირჩიე · +10 XP' },
+  { id: 'fillin' as const, label: 'შევსება', icon: '📝', desc: 'შეავსე გამოტოვებული · +10 XP' },
 ];
 
 export default function DeckSelect({ onSelect }: Props) {

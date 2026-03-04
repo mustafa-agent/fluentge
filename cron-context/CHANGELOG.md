@@ -7,6 +7,36 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-04
 
+### Cron 3B — Features (3:30 PM, Day Run)
+- **📅 Daily Lesson (DailyLesson.tsx):**
+  - 10-round mixed practice session generator
+  - Round types: vocab (3), SRS review (3), sentence builder (2), listening (2)
+  - Loads Top 2000 deck, separates unseen vs due cards automatically
+  - Vocab rounds: flashcard flip with know/don't-know → SM-2 rating
+  - Review rounds: 4-option quiz with SRS cards
+  - Sentence rounds: word tile ordering (reuses SentenceBuilder logic)
+  - Listening rounds: speechSynthesis + 4 Georgian options
+  - Progress bar + round type indicator (colored icons per type)
+  - Slide animation between rounds
+  - Session summary: score, accuracy %, XP earned, time
+  - XP awards: +10 vocab, +10 quiz, +15 sentence, +10 listening
+  - Updates streak, tracks study time, records completion date
+  - DeckSelect CTA now launches DailyLesson instead of Top 2000 deck
+  - New screen type 'daily-lesson' in App.tsx with lazy loading
+- **🏆 Weekly Leaderboard (Leaderboard.tsx):**
+  - Standalone reusable component (replaces inline Dashboard leaderboard)
+  - 9 simulated Georgian users: ნიკა, მარიამი, გიორგი, ანა, დავითი, თამარი, ლუკა, ნინო, ალექსი
+  - Simulated users start at 50-400 XP, gain 5-30 XP per day
+  - Current user shows real weekly XP (tracked via `fluentge-weekly-xp-{weekKey}`)
+  - Weekly XP tracking integrated into DailyLesson XP awards
+  - Medals for top 3 (🥇🥈🥉), gradient avatar circles with initials
+  - Current user: green highlight with border-left accent
+  - XP color-coded by rank (gold/silver/bronze/green)
+  - Auto-resets every Monday via weekStart check
+  - "განახლდება ორშაბათს" badge
+  - Imported into Dashboard.tsx, replacing 80+ lines of inline code
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM, Day Run)
 - **📅 Daily Lesson CTA Card on DeckSelect:**
   - Full-width green gradient card (green→emerald→teal) placed ABOVE stats banner

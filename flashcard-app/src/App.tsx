@@ -60,10 +60,11 @@ const ChallengeFriend = lazy(() => import('./components/ChallengeFriend'));
 const SpacedRepetition = lazy(() => import('./components/SpacedRepetition'));
 const SentenceBuilder = lazy(() => import('./components/SentenceBuilder'));
 const ListeningExercise = lazy(() => import('./components/ListeningExercise'));
+const FillBlankExercise = lazy(() => import('./components/FillBlankExercise'));
 const DailyLesson = lazy(() => import('./components/DailyLesson'));
 import LoadingSkeleton from './components/LoadingSkeleton';
 
-type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'sentence' | 'listening' | 'challenge' | 'srs-dashboard' | 'difficult' | 'daily-lesson';
+type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'sentence' | 'listening' | 'fillin' | 'challenge' | 'srs-dashboard' | 'difficult' | 'daily-lesson';
 type StudyMode = 'classic' | 'srs' | 'reverse' | 'mixed';
 
 export default function App() {
@@ -99,7 +100,7 @@ export default function App() {
     }
   }, [screen]);
 
-  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'daily' = 'study') {
+  function handleSelectDeck(deck: Deck, mode: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'fillin' | 'daily' = 'study') {
     setActiveDeck(deck);
     if (mode === 'daily') {
       setScreen('daily-lesson');
@@ -112,6 +113,8 @@ export default function App() {
       setScreen('sentence');
     } else if (mode === 'listening') {
       setScreen('listening');
+    } else if (mode === 'fillin') {
+      setScreen('fillin');
     } else if (mode === 'srs') {
       setStudyMode('srs');
       setScreen('study');
@@ -295,6 +298,7 @@ export default function App() {
         {screen === 'daily-lesson' && <DailyLesson onBack={handleBack} />}
         {screen === 'sentence' && activeDeck && <SentenceBuilder deck={activeDeck} onBack={handleBack} />}
         {screen === 'listening' && activeDeck && <ListeningExercise deck={activeDeck} onBack={handleBack} />}
+        {screen === 'fillin' && activeDeck && <FillBlankExercise deck={activeDeck} onBack={handleBack} />}
         {screen === 'challenge' && <ChallengeFriend onBack={handleBack} />}
         {screen === 'difficult' && <DifficultWordsScreen onBack={handleBack} />}
         {showSearch && (

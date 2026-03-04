@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && rm -rf dist/flashcards/audio",
-    "deploy": "npm run build && echo \"<!-- deploy $(date +%s) -->\" >> dist/flashcards/index.html && CLOUDFLARE_API_TOKEN=\"Zy2r0INGkmVkFmz7BoQcu89I-HhvXjH9u8IdVeLI\" npx wrangler pages deploy dist/ --project-name=fluentge --commit-dirty=true",
+    "deploy": "npm run build && echo \"<!-- deploy $(uuidgen) -->\" >> dist/flashcards/index.html && CLOUDFLARE_API_TOKEN=\"Zy2r0INGkmVkFmz7BoQcu89I-HhvXjH9u8IdVeLI\" npx wrangler pages deploy dist/ --project-name=fluentge --commit-dirty=true",
     "preview": "astro preview",
     "astro": "astro"
   },

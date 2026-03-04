@@ -3,8 +3,8 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 4 day) — "Daily Lessons & Social Motivation"
-- [ ] **📅 Daily Lesson** — Auto-generated 10-round mixed session (vocab + SRS + sentence + listening) ← Cron 3
-- [ ] **🏆 Weekly Leaderboard** — Top 10 ranking with simulated + real users ← Cron 3
+- [x] **📅 Daily Lesson** — Auto-generated 10-round mixed session (vocab + SRS + sentence + listening) ✅ Cron 3, Mar 4
+- [x] **🏆 Weekly Leaderboard** — Top 10 ranking with simulated + real users ✅ Cron 3, Mar 4
 - [ ] **📝 Fill-in-the-Blank Exercise** — Blank word in sentence, pick from 4 options (9th study mode) ← Cron 4
 - [ ] **🔗 Grammar-Flashcard XP Bridge** — Grammar exercises award XP + update streak ← Cron 4
 - [ ] **🔧 UUID Deploy Fix** — Replace timestamp with UUID for Cloudflare cache busting ← Cron 4
@@ -56,6 +56,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **📅 Daily Lesson** — DailyLesson.tsx: 10-round mixed session (3 new vocab + 3 SRS review + 2 sentence builder + 2 listening). Uses Top 2000 deck. Auto-generates from unseen cards + due SRS cards. Awards XP per round type (10/15), updates streak, tracks study time. Green CTA on DeckSelect now launches it. Session summary at end. (Cron 3, Mar 4 afternoon)
+- ✅ **🏆 Weekly Leaderboard** — Standalone Leaderboard.tsx component. 9 simulated Georgian users with realistic XP (gain 5-30 XP/day). Current user shows real weekly XP. Sorted ranking with medals (🥇🥈🥉), gradient avatars, green highlight for current user. Resets weekly (Monday). Replaces old inline Dashboard leaderboard. Weekly XP tracking via localStorage. (Cron 3, Mar 4 afternoon)
 - ✅ **📊 Vocabulary Size Tracker** — SVG progress ring on dashboard showing mastered/learning/new words out of 26,595 total. Animated ring with green (mastered) + amber (learning) segments. Reads from both SRS stores and classic progress. (Cron 3, Mar 4)
 - ✅ **🎯 Recommended For You** — Smart dashboard section with 3 recommendations: SRS due reviews (🔔), partially-studied decks (📈), unstudied beginner decks (🆕). Gradient-colored cards with direct links to study modes. (Cron 3, Mar 4)
 - ✅ **🧠 SM-2 Engine + Per-Deck Due Badges** — Extracted SM-2 algorithm to `srs-engine.ts` reusable module. Per-deck due card count badges (amber circles) on free deck grid. Top 2000 hero shows due card reminder. Engine exports: rateCard, getNextInterval, getDueCount, getTotalDueCards, getDecksWithDueCards. (Cron 3, Mar 3)
