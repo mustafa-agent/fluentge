@@ -27,8 +27,18 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
     ]
   })} />
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
+  <!-- SRS Reminder Banner (cross-page, shown by JS when due cards exist) -->
+  <div id="srs-reminder-banner" class="srs-reminder-banner" style="display:none;">
+    <div class="srs-reminder-inner">
+      <span class="srs-reminder-icon">🧠</span>
+      <span class="srs-reminder-text"><strong id="srs-due-count">0</strong> ბარათი გადასახედია</span>
+      <a href="/flashcards/#srs" class="srs-reminder-link">გადახედე →</a>
+      <button id="srs-reminder-close" class="srs-reminder-close" aria-label="დახურვა">✕</button>
+    </div>
+  </div>
+
+  <!-- Hero: New Users -->
+  <section id="hero-new" class="relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-20"/>
       <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/95 to-[#1C1C1E]"></div>
@@ -56,6 +66,132 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
       </div>
     </div>
   </section>
+
+  <!-- Hero: Returning Users (hidden by default, shown by JS) -->
+  <section id="hero-returning" class="relative overflow-hidden" style="display:none;">
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-gradient-to-br from-sky-900/30 via-[#1C1C1E] to-green-900/20"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto px-4 pt-28 pb-16 sm:pt-36 sm:pb-20 text-center">
+      <h1 class="font-['Playfair_Display',serif] text-2xl sm:text-4xl mb-2 leading-tight">
+        გამარჯობა! 👋
+      </h1>
+      <p class="text-[#A0A09A] text-sm sm:text-base mb-6">მზად ხარ დღევანდელი გაკვეთილისთვის?</p>
+
+      <!-- Stats Pills -->
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <div class="returning-stat-pill bg-orange-500/10 border border-orange-500/20">
+          <span class="streak-fire">🔥</span>
+          <span class="text-orange-400 font-bold" id="ret-streak">0</span>
+          <span class="text-orange-400/70 text-xs">სერია</span>
+        </div>
+        <div class="returning-stat-pill bg-yellow-500/10 border border-yellow-500/20">
+          <span>⭐</span>
+          <span class="text-yellow-400 font-bold" id="ret-xp">0</span>
+          <span class="text-yellow-400/70 text-xs">XP</span>
+        </div>
+        <div class="returning-stat-pill bg-green-500/10 border border-green-500/20">
+          <span>📚</span>
+          <span class="text-green-400 font-bold" id="ret-words">0</span>
+          <span class="text-green-400/70 text-xs">სიტყვა</span>
+        </div>
+        <div class="returning-stat-pill bg-sky-500/10 border border-sky-500/20">
+          <span>🏆</span>
+          <span class="text-sky-400 font-bold" id="ret-level">1</span>
+          <span class="text-sky-400/70 text-xs">დონე</span>
+        </div>
+      </div>
+
+      <!-- Daily Lesson CTA -->
+      <a href="/flashcards/#daily-lesson" class="daily-lesson-hero-cta group">
+        <div class="daily-lesson-hero-icon">🎯</div>
+        <div class="flex-1 text-left">
+          <div class="font-bold text-base sm:text-lg">დღის გაკვეთილი</div>
+          <div class="text-green-200/70 text-xs sm:text-sm">~5 წთ · ვოკაბულარი, გრამატიკა, მოსმენა</div>
+        </div>
+        <div class="text-2xl group-hover:translate-x-1 transition-transform">▶</div>
+      </a>
+
+      <!-- SRS Due reminder inside returning hero -->
+      <div id="ret-srs-due" class="mt-4 text-sm text-amber-400/80" style="display:none;">
+        🧠 <span id="ret-srs-count">0</span> ბარათი გადასახედია — <a href="/flashcards/#srs" class="underline hover:text-amber-300">გადახედე</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homepage Personalization Script -->
+  <script is:inline>
+    (function() {
+      var xp = parseInt(localStorage.getItem('totalXP') || '0', 10);
+      var streak = parseInt(localStorage.getItem('currentStreak') || '0', 10);
+      // Show returning hero if user has any progress
+      if (xp > 0 || streak > 0) {
+        var heroNew = document.getElementById('hero-new');
+        var heroRet = document.getElementById('hero-returning');
+        if (heroNew) heroNew.style.display = 'none';
+        if (heroRet) heroRet.style.display = 'block';
+        // Populate stats
+        var xpStr = xp >= 1000 ? (xp/1000).toFixed(1) + 'k' : xp.toString();
+        var el;
+        el = document.getElementById('ret-streak'); if(el) el.textContent = streak;
+        el = document.getElementById('ret-xp'); if(el) el.textContent = xpStr;
+        // Count learned words from SRS stores
+        var words = 0;
+        for (var i = 0; i < localStorage.length; i++) {
+          var k = localStorage.key(i);
+          if (k && k.startsWith('fluentge-srs-')) {
+            try {
+              var store = JSON.parse(localStorage.getItem(k));
+              words += Object.keys(store || {}).length;
+            } catch(e) {}
+          }
+        }
+        el = document.getElementById('ret-words'); if(el) el.textContent = words;
+        var level = Math.floor(xp / 200) + 1;
+        el = document.getElementById('ret-level'); if(el) el.textContent = level;
+      }
+      // SRS due count (for both banners)
+      var totalDue = 0;
+      var now = Date.now();
+      for (var j = 0; j < localStorage.length; j++) {
+        var key = localStorage.key(j);
+        if (key && key.startsWith('fluentge-srs-')) {
+          try {
+            var srs = JSON.parse(localStorage.getItem(key));
+            for (var cardId in srs) {
+              if (srs[cardId] && srs[cardId].nextReview && srs[cardId].nextReview <= now) totalDue++;
+            }
+          } catch(e) {}
+        }
+      }
+      if (totalDue > 0) {
+        // Show SRS line in returning hero
+        var retSrs = document.getElementById('ret-srs-due');
+        if (retSrs) { retSrs.style.display = 'block'; }
+        var retSrsCount = document.getElementById('ret-srs-count');
+        if (retSrsCount) retSrsCount.textContent = totalDue;
+        // Show cross-page SRS banner (only on non-flashcard pages)
+        if (window.location.pathname.indexOf('/flashcards') === -1) {
+          var dismissed = sessionStorage.getItem('srs-banner-dismissed');
+          if (!dismissed) {
+            var banner = document.getElementById('srs-reminder-banner');
+            if (banner) banner.style.display = 'block';
+            var dueEl = document.getElementById('srs-due-count');
+            if (dueEl) dueEl.textContent = totalDue;
+          }
+        }
+      }
+      // SRS banner close
+      var closeBtn = document.getElementById('srs-reminder-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          var b = document.getElementById('srs-reminder-banner');
+          if (b) b.style.display = 'none';
+          sessionStorage.setItem('srs-banner-dismissed', '1');
+        });
+      }
+    })();
+  </script>
 
   <!-- Onboarding CTA — Direct to Top 2000 -->
   <section class="px-4 pt-10 pb-2 max-w-2xl mx-auto" id="onboarding-cta">

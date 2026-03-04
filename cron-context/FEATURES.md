@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 4 day) — "Daily Lessons & Social Motivation"
-- [x] **📅 Daily Lesson** — Auto-generated 10-round mixed session (vocab + SRS + sentence + listening) ✅ Cron 3, Mar 4
-- [x] **🏆 Weekly Leaderboard** — Top 10 ranking with simulated + real users ✅ Cron 3, Mar 4
-- [ ] **📝 Fill-in-the-Blank Exercise** — Blank word in sentence, pick from 4 options (9th study mode) ← Cron 4
-- [ ] **🔗 Grammar-Flashcard XP Bridge** — Grammar exercises award XP + update streak ← Cron 4
-- [ ] **🔧 UUID Deploy Fix** — Replace timestamp with UUID for Cloudflare cache busting ← Cron 4
+### 🎯 THIS SPRINT (Mar 5 night) — "Platform Unity & Persistence"
+- [ ] **🔗 Grammar XP Bridge** — Grammar exercises award XP + update streak (CARRIED OVER ×2) ← Cron 3
+- [ ] **☁️ Cloud Sync (Firestore)** — Save/load progress to Firestore, offline-first ← Cron 3
+- [ ] **🏠 Homepage Personalization** — Returning users see personalized CTA + stats ← Cron 4
+- [ ] **🔔 Cross-Page SRS Reminders** — Due card banners on ALL pages ← Cron 4
+- [ ] **📖 Reading Comprehension Mode** — 10th study mode, paragraphs + questions ← Cron 4
 
 ### Flashcard Improvements
 - [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
@@ -74,6 +74,12 @@
 - ✅ **XP Integration in StudyScreen & SRSStudy** — All study modes now award XP (+10 base, +5 for correct). Floating +XP animation. Session summary shows total XP earned. Streak updated on practice. Study time tracked for daily goal. (Cron 3, Feb 28 afternoon)
 - ✅ **Session summary after flashcard practice** — Rich summary with accuracy %, time elapsed, correct/wrong bar, hardest words list, speed stat (Cron 3, Feb 28)
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
+
+### Flashcard Improvements
+- [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
+
+### Dashboard
+- [ ] Progress visualization — chart of words learned over time
 
 ## In Progress 🔄
 (none)

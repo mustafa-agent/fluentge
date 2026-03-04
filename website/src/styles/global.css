@@ -628,3 +628,172 @@ html.light .mobile-nav-item.active { color: #0ea5e9; }
 html.light .pwa-install-inner {
   box-shadow: 0 8px 32px rgba(99,102,241,0.2);
 }
+
+/* ========== SRS REMINDER BANNER (Cross-Page) ========== */
+.srs-reminder-banner {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  z-index: 45;
+  animation: srs-slide-down 0.3s ease-out;
+}
+@keyframes srs-slide-down {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.srs-reminder-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, rgba(245,158,11,0.12), rgba(251,191,36,0.08));
+  border: 1px solid rgba(245,158,11,0.25);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  backdrop-filter: blur(12px);
+}
+.srs-reminder-icon { font-size: 1.1rem; }
+.srs-reminder-text { color: #fbbf24; flex: 1; }
+.srs-reminder-text strong { color: #f59e0b; font-size: 1rem; }
+.srs-reminder-link {
+  color: #f59e0b;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-decoration: none;
+  padding: 4px 10px;
+  background: rgba(245,158,11,0.15);
+  border-radius: 8px;
+  white-space: nowrap;
+}
+.srs-reminder-link:hover { background: rgba(245,158,11,0.25); }
+.srs-reminder-close {
+  background: none;
+  border: none;
+  color: #fbbf24;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  padding: 4px;
+}
+.srs-reminder-close:hover { opacity: 1; }
+
+html.light .srs-reminder-inner {
+  background: linear-gradient(90deg, rgba(245,158,11,0.08), rgba(251,191,36,0.05));
+  border-color: rgba(245,158,11,0.2);
+}
+html.light .srs-reminder-text { color: #92400e; }
+html.light .srs-reminder-text strong { color: #b45309; }
+html.light .srs-reminder-link { color: #b45309; background: rgba(245,158,11,0.1); }
+html.light .srs-reminder-close { color: #92400e; }
+
+/* ========== RETURNING USER HERO ========== */
+.returning-stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+}
+.daily-lesson-hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #22c55e, #059669);
+  border-radius: 16px;
+  border-bottom: 4px solid #047857;
+  color: white;
+  text-decoration: none;
+  transition: all 0.15s;
+  box-shadow: 0 4px 24px rgba(34,197,94,0.25);
+}
+.daily-lesson-hero-cta:hover {
+  background: linear-gradient(135deg, #4ade80, #10b981);
+  box-shadow: 0 6px 32px rgba(34,197,94,0.35);
+}
+.daily-lesson-hero-cta:active {
+  border-bottom-width: 2px;
+  margin-top: 2px;
+}
+.daily-lesson-hero-icon {
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ========== SYNC TOAST ========== */
+.sync-toast {
+  position: fixed;
+  bottom: 100px;
+  right: 16px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(28, 28, 30, 0.95);
+  border: 1px solid rgba(34,197,94,0.3);
+  color: #4ade80;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(12px);
+  animation: sync-toast-in 0.3s ease-out;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+@keyframes sync-toast-in {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+html.light .sync-toast {
+  background: rgba(255,255,255,0.95);
+  border-color: rgba(34,197,94,0.2);
+  color: #16a34a;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* ========== GRAMMAR XP FEEDBACK ========== */
+@keyframes grammarXpFloat {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  50% { opacity: 1; transform: translateY(-20px) scale(1.1); }
+  100% { opacity: 0; transform: translateY(-40px) scale(0.9); }
+}
+.grammar-xp-float {
+  position: fixed;
+  z-index: 300;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #eab308;
+  text-shadow: 0 2px 8px rgba(234,179,8,0.4);
+  pointer-events: none;
+  animation: grammarXpFloat 1.2s ease-out forwards;
+}
+.grammar-xp-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(234,179,8,0.12);
+  border: 1px solid rgba(234,179,8,0.25);
+  color: #eab308;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+html.light .grammar-xp-counter {
+  background: rgba(202,138,4,0.08);
+  border-color: rgba(202,138,4,0.2);
+  color: #a16207;
+}

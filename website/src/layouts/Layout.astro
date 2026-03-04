@@ -270,12 +270,62 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
         if (user) {
           uid = user.uid;
           await loadCloud(uid);
+          // Show sync toast
+          const toast = document.getElementById('sync-toast');
+          if (toast) { toast.style.display = 'flex'; setTimeout(() => { toast.style.display = 'none'; }, 3000); }
           iv = setInterval(() => saveCloud(uid), 30000);
           window.addEventListener('beforeunload', () => saveCloud(uid));
         } else { uid = null; }
       });
       window.__fluentgeSync = { save: () => uid && saveCloud(uid), load: () => uid && loadCloud(uid) };
     </script>
+    <!-- SRS Reminder Banner (cross-page) -->
+    <div id="srs-reminder-banner" class="srs-reminder-banner" style="display:none;">
+      <div class="srs-reminder-inner">
+        <span class="srs-reminder-icon">🧠</span>
+        <span class="srs-reminder-text"><strong id="srs-due-count">0</strong> ბარათი გადასახედია</span>
+        <a href="/flashcards/#srs" class="srs-reminder-link">გადახედე →</a>
+        <button id="srs-reminder-close" class="srs-reminder-close" aria-label="დახურვა">✕</button>
+      </div>
+    </div>
+    <script is:inline>
+      (function() {
+        // Skip on flashcards page (has its own SRS UI) and homepage (has its own banner)
+        var p = window.location.pathname;
+        if (p.indexOf('/flashcards') !== -1 || p === '/' || p === '') return;
+        var totalDue = 0, now = Date.now();
+        for (var i = 0; i < localStorage.length; i++) {
+          var k = localStorage.key(i);
+          if (k && k.startsWith('fluentge-srs-')) {
+            try {
+              var srs = JSON.parse(localStorage.getItem(k));
+              for (var id in srs) {
+                if (srs[id] && srs[id].nextReview && srs[id].nextReview <= now) totalDue++;
+              }
+            } catch(e) {}
+          }
+        }
+        if (totalDue > 0 && !sessionStorage.getItem('srs-banner-dismissed')) {
+          var b = document.getElementById('srs-reminder-banner');
+          if (b) b.style.display = 'block';
+          var c = document.getElementById('srs-due-count');
+          if (c) c.textContent = totalDue;
+        }
+        var cl = document.getElementById('srs-reminder-close');
+        if (cl) cl.addEventListener('click', function() {
+          var b = document.getElementById('srs-reminder-banner');
+          if (b) b.style.display = 'none';
+          sessionStorage.setItem('srs-banner-dismissed', '1');
+        });
+      })();
+    </script>
+
+    <!-- Sync Status Toast -->
+    <div id="sync-toast" class="sync-toast" style="display:none;">
+      <span id="sync-toast-icon">✅</span>
+      <span id="sync-toast-text">სინქრონიზაცია დასრულდა</span>
+    </div>
+
     <main class="pt-14 mobile-body-pad"><slot /></main>
 
     <!-- Mobile Bottom Navigation -->

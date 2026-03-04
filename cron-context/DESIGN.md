@@ -63,10 +63,11 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 4 day) — Cron 2 Tasks:
-- [x] **📅 Daily Lesson UI** — Green gradient CTA card on DeckSelect with 🎯 icon, play button, badges (ყოველდღიური, ~5 წთ), content preview. Session CSS: dl-round-icon types (vocab/review/sentence/listening/fillin), dl-slide-in animation ✅ Mar 4
-- [x] **🏆 Leaderboard UI** — Medals (🥇🥈🥉), gradient avatar circles with initials, green glow for current user (leaderboard-current + leaderGlow animation), weekly reset indicator badge, XP color-coded by rank ✅ Mar 4
-- [x] **📝 Fill-in-Blank UI** — Full CSS: fib-sentence, fib-blank (underline style with correct/wrong/empty states), fib-hint (purple accent), fib-options (2-col grid, 3D buttons), fib-option with correct/wrong/dimmed states ✅ Mar 4
+### THIS SPRINT (Mar 5 night) — Cron 2 Tasks:
+- [ ] **🏠 Personalized Homepage** — Two hero states: new user (current) vs returning user (greeting + stats + Daily Lesson CTA). Returning hero: gradient bg, streak fire, XP badge, "Continue" button. Stats row with 3-4 colored pills.
+- [ ] **🔗 Grammar XP Feedback** — Floating "+10 XP" animation for grammar pages. Small XP counter in grammar header. Lesson completion celebration (confetti or green flash).
+- [ ] **☁️ Sync UI States** — "Syncing..." indicator (small spinner near user menu). "✅ Synced" toast on successful save. "⚠️ Offline — changes saved locally" banner if no connection.
+- [ ] **🔔 SRS Reminder Banner** — Slim amber/orange banner at top of non-flashcard pages. "🧠 X ბარათი გადასახედია" + link. Dismissable per session.
 
 ### Backlog:
 - [ ] Consistent card borders across all components

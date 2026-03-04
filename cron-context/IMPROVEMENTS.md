@@ -55,10 +55,11 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 4 day) — "Daily Lessons & Social Motivation"
-- [ ] **🔗 Grammar XP Bridge** — Grammar exercises in Astro pages award XP + update streak via shared localStorage ← Cron 4
-- [ ] **🔧 UUID Deploy Fix** — crypto.randomUUID() + Cloudflare cache purge after deploy ← Cron 4
-- [ ] **📝 Fill-in-the-Blank** — 9th study mode, contextual vocab exercise ← Cron 4
+## 🎯 THIS SPRINT (Mar 5 night) — "Platform Unity & Persistence"
+- [ ] **🔗 Grammar XP Bridge** — gamification-bridge.js for Astro pages ← Cron 3
+- [ ] **☁️ Cloud Sync** — Firestore save/load with offline-first ← Cron 3
+- [ ] **🏠 Homepage Personalization** — returning user experience ← Cron 4
+- [ ] **🔔 Cross-Page SRS Reminders** — due card banners everywhere ← Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)

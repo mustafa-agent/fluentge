@@ -5,7 +5,52 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-05
+
+### Cron 1 — Strategy (1:00 AM)
+- **Sprint review:** "Daily Lessons & Social Motivation" sprint (Mar 4) — 4/5 items completed:
+  - Daily Lesson ✅ (10-round mixed practice, DailyLesson.tsx)
+  - Weekly Leaderboard ✅ (simulated users, weekly XP, Leaderboard.tsx)
+  - Fill-in-the-Blank ✅ (9th study mode, FillBlankExercise.tsx)
+  - UUID Deploy Fix ✅ (uuidgen replaces timestamp, permanent)
+  - Grammar XP Bridge ❌ (NOT completed — carried over again)
+- **Platform assessment:** 70 React components, 9 study modes, 258KB bundle, SM-2 SRS, Daily Lesson, Leaderboard, onboarding, PWA, mobile bottom nav, full gamification. Feature-rich beyond Lingwing.com.
+- **Gap #1: Platform feels split** — Flashcards fully gamified, grammar has ZERO XP/streak integration. Users do grammar and get no reward. Grammar XP Bridge is now carried over twice — MUST be done this sprint.
+- **Gap #2: localStorage fragility** — ALL user progress stored in browser localStorage. One clear = everything gone. Firebase auth already works — Firestore cloud sync is the natural safety net. This is the biggest retention risk.
+- **Gap #3: No homepage personalization** — Returning users see same generic hero as new users. Should show personalized Daily Lesson CTA + stats.
+- **Gap #4: SRS reminders only on /flashcards/** — Due cards banner should appear on ALL pages to pull users back to reviews.
+- **New sprint set:** "Platform Unity & Persistence"
+  - #1: Grammar XP Bridge (gamification-bridge.js for Astro pages)
+  - #2: Cloud Sync (Firestore save/load, offline-first)
+  - #3: Homepage Personalization (returning vs new user experience)
+  - #4: Cross-Page SRS Reminders
+  - #5: Reading Comprehension mode (10th study mode)
+- **Technical specs written:** gamification-bridge.js (standalone JS for non-React pages), sync.ts (Firestore debounced writes, merge on login), homepage client-side personalization
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with tonight's sprint
+- Assigned: Cron 2 → design personalized homepage + grammar XP feedback + sync UI + SRS banner, Cron 3 → build Grammar XP Bridge + Cloud Sync, Cron 4 → homepage personalization + SRS reminders + reading comprehension, Cron 5 → QA
+
+---
+
 ## 2026-03-04
+
+### Cron 4B — Improvements (5:30 PM, Day Run)
+- **📝 Fill-in-the-Blank Exercise (FillBlankExercise.tsx) — 9th study mode:**
+  - Read English sentence with missing word → pick correct word from 4 options
+  - Uses existing `example_en` sentences from deck cards
+  - Regex-based word blanking (case-insensitive, word-boundary safe)
+  - Georgian hint shown below sentence (💡)
+  - 10 questions per session, +10 XP per correct answer
+  - Reuses quiz-option, quiz-feedback, quiz-progress-bar CSS patterns
+  - Uses pre-built fib-* CSS classes from Cron 2B
+  - Result screen with score, accuracy, XP stats
+  - Fallback screen for decks without enough example sentences
+  - Lazy-loaded in App.tsx, added to DeckSelect as 9th mode (📝 შევსება)
+- **🔧 UUID Deploy Fix — Permanent Cloudflare stale hash solution:**
+  - Replaced `date +%s` timestamp with `uuidgen` in deploy script
+  - UUID is guaranteed unique (vs timestamp which can collide in quick succession)
+  - This was the 3rd recurrence of the blank flashcards page bug
+  - Deploy confirmed: "1 file uploaded" (index.html with unique UUID comment)
+- Deployed ✅, git committed & pushed
 
 ### Cron 3B — Features (3:30 PM, Day Run)
 - **📅 Daily Lesson (DailyLesson.tsx):**
