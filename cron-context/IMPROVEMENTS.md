@@ -55,11 +55,10 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 4 night) — "Sentence Exercises & Mobile Polish"
-- [x] **📱 Mobile Bottom Navigation** — Fixed bottom bar on mobile ✅ Cron 2, Mar 4
-- [x] **📲 PWA Install Banner** — "Add to Home Screen" prompt ✅ Cron 4, Mar 4
-- [x] **📈 Progress Chart** — 7-day activity chart on dashboard ✅ Cron 4, Mar 4
-- [x] **🇬🇪 Fix remaining "სტრიკ"** — ✅ Fixed in homepage + ChallengeFriend (Cron 1, Mar 4)
+## 🎯 THIS SPRINT (Mar 4 day) — "Daily Lessons & Social Motivation"
+- [ ] **🔗 Grammar XP Bridge** — Grammar exercises in Astro pages award XP + update streak via shared localStorage ← Cron 4
+- [ ] **🔧 UUID Deploy Fix** — crypto.randomUUID() + Cloudflare cache purge after deploy ← Cron 4
+- [ ] **📝 Fill-in-the-Blank** — 9th study mode, contextual vocab exercise ← Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)

@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 4 night) — "Sentence Exercises & Mobile Polish"
-- [x] **📝 Sentence Builder** — Arrange English word tiles to form sentences from Georgian prompt ✅ Cron 2
-- [x] **🎧 Listening Exercise** — Hear English audio, pick correct Georgian translation ✅ Cron 2
-- [ ] **📱 Mobile Bottom Navigation** — Fixed bottom bar with 5 tabs on mobile ← Cron 4
-- [ ] **📲 PWA Install Banner** — Prompt mobile users to add to home screen ← Cron 4
-- [ ] **📈 Progress Chart** — 7-day words-learned chart on dashboard ← Cron 4
+### 🎯 THIS SPRINT (Mar 4 day) — "Daily Lessons & Social Motivation"
+- [ ] **📅 Daily Lesson** — Auto-generated 10-round mixed session (vocab + SRS + sentence + listening) ← Cron 3
+- [ ] **🏆 Weekly Leaderboard** — Top 10 ranking with simulated + real users ← Cron 3
+- [ ] **📝 Fill-in-the-Blank Exercise** — Blank word in sentence, pick from 4 options (9th study mode) ← Cron 4
+- [ ] **🔗 Grammar-Flashcard XP Bridge** — Grammar exercises award XP + update streak ← Cron 4
+- [ ] **🔧 UUID Deploy Fix** — Replace timestamp with UUID for Cloudflare cache busting ← Cron 4
 
 ### Flashcard Improvements
 - [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio

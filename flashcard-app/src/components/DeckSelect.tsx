@@ -189,6 +189,40 @@ export default function DeckSelect({ onSelect }: Props) {
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
+      {/* 📅 Daily Lesson CTA */}
+      <button
+        onClick={() => {
+          // Navigate to daily lesson — Cron 3 will build DailyLesson.tsx
+          // For now, start a mixed session with top-2000
+          if (top2000) setSelectedMeta(top2000);
+        }}
+        className="daily-lesson-cta w-full mb-5 relative overflow-hidden rounded-2xl text-left transition-all hover:scale-[1.01] active:scale-[0.99] group"
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 opacity-90" />
+        <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl -translate-y-12 translate-x-12" />
+        <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full blur-2xl translate-y-8 -translate-x-8" />
+        <div className="relative p-5 flex items-center gap-4">
+          <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center text-3xl border-b-4 border-white/10 group-hover:bg-white/25 transition-colors">
+            🎯
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 mb-0.5">
+              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">ყოველდღიური</span>
+              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">~5 წთ</span>
+            </div>
+            <h2 className="text-lg font-extrabold text-white leading-tight">დღის გაკვეთილი</h2>
+            <p className="text-white/70 text-xs mt-0.5">
+              {totalDueCards > 0 
+                ? `📚 3 ახალი + 🧠 ${Math.min(totalDueCards, 3)} გადახედვა + 🔤 წინადადება + 🎧 მოსმენა`
+                : '📚 ახალი სიტყვები + 🔤 წინადადებები + 🎧 მოსმენა'}
+            </p>
+          </div>
+          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-b-4 border-white/10 group-hover:bg-white/30 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+        </div>
+      </button>
+
       {/* 📊 Words I Know Stats Banner */}
       <div className="mb-5 grid grid-cols-4 gap-2">
         <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl p-3 text-center">

@@ -7,6 +7,38 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-04
 
+### Cron 1B — Strategy (11:30 AM, Day Run)
+- **Sprint review:** "Sentence Exercises & Mobile Polish" sprint (Mar 4 night) — ALL items completed ✅
+  - Sentence Builder ✅ (281 lines, word tile ordering, +15 XP)
+  - Listening Exercise ✅ (230 lines, speechSynthesis, 4 options, +10 XP)
+  - Mobile Bottom Nav ✅ (frosted glass, 5 tabs, both Astro + React)
+  - PWA Install Banner ✅ (manifest + service worker + install prompt)
+  - 7-Day Activity Chart ✅ (dual bar chart, daily history tracking)
+  - Vocabulary Size Tracker ✅ (SVG progress ring on dashboard)
+  - Recommended For You ✅ (smart 3-card recommendations)
+- **Data audit:** ALL 26,595 cards have `example_en` + `example_ka` fields — sentence builder has full content coverage
+- **Strategic assessment:** FluentGe now has 67 components, 8 study modes, mobile bottom nav, PWA support, SM-2 SRS, onboarding, full gamification. Technically feature-rich. BUT still feels like a "tool" not an "app" because:
+  - Users must choose what to study (decision fatigue → dropout)
+  - No social motivation (learning alone is boring)
+  - Grammar and flashcard gamification are separate systems
+- **Gap analysis — #1: No Daily Lesson.**
+  - Duolingo's magic: open → one button → app decides what you learn → done in 5 min
+  - Our flow: open → 70+ decks → choose deck → choose mode → start. Too many steps.
+  - A "Daily Lesson" that auto-generates a 10-round mixed session (3 new vocab + 3 SRS reviews + 2 sentence builders + 2 listening) would be THE highest-impact feature. This is what separates tools from habit-forming apps.
+- **Gap analysis — #2: No social motivation.**
+  - Leaderboards drive 30%+ engagement at Duolingo. Even simulated weekly XP rankings with Georgian names would create competitive drive.
+- **Gap analysis — #3: Cloudflare stale hash bug (3rd occurrence).**
+  - Timestamp fix not bulletproof. Need UUID + cache purge.
+- **New sprint set:** "Daily Lessons & Social Motivation"
+  - #1: Daily Lesson (DailyLesson.tsx) — auto-generated mixed practice session
+  - #2: Weekly Leaderboard (Leaderboard.tsx) — top 10 ranking with simulated users
+  - #3: Fill-in-the-Blank exercise (9th study mode)
+  - #4: Grammar-Flashcard XP bridge
+  - #5: UUID deploy fix
+- **Technical specs written:** DailyLesson.tsx (10-round mixed session), Leaderboard.tsx (weekly ranking with simulated Georgian names), FillBlankExercise.tsx (contextual vocab)
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with today's sprint
+- Assigned: Cron 2 → design daily lesson + leaderboard UI, Cron 3 → build DailyLesson + Leaderboard, Cron 4 → fill-in-blank + grammar XP + deploy fix, Cron 5 → QA
+
 ### Cron 4 — Improvements (7:00 AM)
 - **📲 PWA Install Banner:**
   - `manifest.json` with standalone display, Georgian lang, portrait orientation

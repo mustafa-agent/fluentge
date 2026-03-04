@@ -63,10 +63,10 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 4 night) — Cron 2 Tasks:
-- [x] **📝 Sentence Builder UI** — 3D word tiles (sb-word-tile), drop zone with active/correct/wrong states, chunky progress bar, XP float, bottom feedback bar. ✅ Mar 4
-- [x] **🎧 Listening Exercise UI** — Purple gradient audio card, 80px play button, 🐢 slow button, 4 Georgian options (le-option) with A/B/C/D letters, 3D press effect. ✅ Mar 4
-- [x] **📱 Mobile Bottom Nav** — Frosted glass fixed bar, 5 tabs (🏠📚📖🎮👤), active highlight, safe-area-inset, both Astro Layout + React App. ✅ Mar 4
+### THIS SPRINT (Mar 4 day) — Cron 2 Tasks:
+- [ ] **📅 Daily Lesson UI** — Full-width gradient CTA card ("დღის გაკვეთილი"), mixed session screen with round-type icons (📚🧠🔤🎧), smooth slide transitions between rounds, progress bar (1/10), session summary reuse
+- [ ] **🏆 Leaderboard UI** — Ranked list with 🥇🥈🥉 medals, current user highlighted row (green glow), avatar circles with initials, weekly reset indicator, placed on Dashboard
+- [ ] **📝 Fill-in-Blank UI** — Sentence with highlighted blank, 4 option buttons (reuse quiz-option style), hint showing Georgian translation
 
 ### Backlog:
 - [ ] Consistent card borders across all components

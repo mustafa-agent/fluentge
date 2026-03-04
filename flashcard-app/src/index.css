@@ -492,6 +492,141 @@ html.light .onboarding-modal { background: white; border-color: #e5e7eb; }
   .has-bottom-nav { padding-bottom: 80px !important; }
 }
 
+/* ========================================
+   DAILY LESSON CTA
+   ======================================== */
+
+.daily-lesson-cta {
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.2);
+}
+.daily-lesson-cta:hover {
+  box-shadow: 0 8px 30px rgba(34, 197, 94, 0.3);
+}
+
+/* Bouncing play icon animation */
+@keyframes dailyBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+.daily-lesson-cta .group-hover\:bg-white\/30 {
+  animation: dailyBounce 2s ease infinite;
+}
+
+/* ========================================
+   LEADERBOARD — Medals & Avatars
+   ======================================== */
+
+.leaderboard-current {
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.1);
+}
+@keyframes leaderGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(34, 197, 94, 0.08); }
+  50% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.15); }
+}
+.leaderboard-current { animation: leaderGlow 3s ease infinite; }
+
+/* ========================================
+   FILL-IN-THE-BLANK EXERCISE
+   ======================================== */
+
+.fib-sentence {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+.fib-blank {
+  display: inline-block;
+  min-width: 100px;
+  border-bottom: 3px solid #0ea5e9;
+  margin: 0 0.25rem;
+  padding: 0.125rem 0.5rem;
+  text-align: center;
+  color: #0ea5e9;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.fib-blank.correct { border-color: #22c55e; color: #22c55e; }
+.fib-blank.wrong { border-color: #ef4444; color: #ef4444; }
+.fib-blank.empty { color: transparent; }
+
+.fib-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.fib-hint span { color: #a855f7; font-weight: 600; }
+
+.fib-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.fib-option {
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-bg-card-hover);
+  border-bottom-width: 4px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: center;
+}
+.fib-option:hover { background: var(--color-bg-card-hover); transform: translateY(-1px); }
+.fib-option:active { border-bottom-width: 2px; transform: translateY(2px); }
+.fib-option.correct {
+  background: rgba(34,197,94,0.15);
+  border-color: #22c55e;
+  color: #22c55e;
+  animation: correctPulse 0.4s ease;
+}
+.fib-option.wrong {
+  background: rgba(239,68,68,0.15);
+  border-color: #ef4444;
+  color: #ef4444;
+  animation: wrongShake 0.5s ease;
+}
+.fib-option.dimmed { opacity: 0.4; pointer-events: none; }
+
+/* ========================================
+   DAILY LESSON SESSION SCREEN
+   ======================================== */
+
+.dl-round-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.dl-round-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.dl-round-icon.vocab { background: rgba(14, 165, 233, 0.15); }
+.dl-round-icon.review { background: rgba(168, 85, 247, 0.15); }
+.dl-round-icon.sentence { background: rgba(234, 179, 8, 0.15); }
+.dl-round-icon.listening { background: rgba(236, 72, 153, 0.15); }
+.dl-round-icon.fillin { background: rgba(34, 197, 94, 0.15); }
+
+@keyframes dlSlideIn {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.dl-slide-in { animation: dlSlideIn 0.35s ease-out; }
+
 /* Light mode overrides for new components */
 html.light .sb-prompt-card { border-color: rgba(14, 165, 233, 0.2); }
 html.light .sb-drop-zone { border-color: #d1d5db; background: #f9fafb; }
@@ -507,3 +642,14 @@ html.light .le-option-letter { background: #f3f4f6; }
 html.light .le-slow-btn { background: #f3f4f6; border-color: #e5e7eb; color: #6b7280; }
 html.light .mobile-bottom-nav { background: rgba(255,255,255,0.92); border-top-color: #e5e7eb; }
 html.light .sb-correct-reveal { background: rgba(234,179,8,0.06); border-color: rgba(234,179,8,0.2); }
+
+/* Light mode: Fill-in-Blank */
+html.light .fib-option { border-color: #e5e7eb; }
+html.light .fib-option:hover { background: #f3f4f6; }
+html.light .fib-blank { border-color: #0284c7; color: #0284c7; }
+
+/* Light mode: Leaderboard */
+html.light .leaderboard-current { background: linear-gradient(to right, rgba(34,197,94,0.08), rgba(16,185,129,0.05)); border-color: rgba(34,197,94,0.2); }
+
+/* Light mode: Daily Lesson CTA */
+html.light .daily-lesson-cta { box-shadow: 0 4px 20px rgba(34, 197, 94, 0.15); }
