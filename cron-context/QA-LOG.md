@@ -1,9 +1,48 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-04 (7:30 PM)
+- **Date:** 2026-03-05 (9:00 AM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Morning QA Run (Mar 5, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Flashcard App Build — ✅ Clean
+- **Main bundle: 260.58 KB** (gzip 77.88 KB)
+- **Top-2000 chunk: 469.25 KB**
+- Built in 4.70s
+
+### Tonight's Changes Verified (Crons 1-4, Mar 5)
+- [x] **Reading Comprehension (Cron 4):** 409-line component, 5-7 sentence passages, 5 question types (meaning/fill/true-false), Georgian translation toggle, key word pills, collapsible passage, +15 XP, fallback for small decks — code review clean
+- [x] **Screen transition animations (Cron 4):** fade-in + slide-up via CSS keyframes, key={screen+deckId} — code clean
+- [x] **Grammar XP Bridge (Cron 3):** `gamification-bridge.js` (229 lines), standalone JS at `/js/`, same localStorage keys as React, +10 XP per correct, +25/50 bonus, streak/study time tracking — code clean, wired into [slug].astro line 198
+- [x] **Cloud Sync expanded (Cron 3):** firebase-sync.ts + Layout.astro now sync full gamification data — verified
+- [x] **Personalized Homepage (Cron 2):** Two hero states (new vs returning user), 4 stat pills, Daily Lesson CTA, SRS due reminder — verified via screenshot
+- [x] **SRS Reminder Banner (Cron 2):** Cross-page amber banner on all non-flashcard pages, dismissable, slide-down animation — code in Layout.astro + index.astro
+- [x] **Sync Toast (Cron 2):** Green toast after Firestore load, auto-dismiss 3s
+- [x] **Reading Comprehension in DeckSelect:** 10th mode (📖 კითხვა), lazy-loaded in App.tsx
+
+### Browser Screenshots — ✅ All Rendering
+- **Homepage:** Personalized hero with stats, Top 2000 CTA, Word of Day, testimonials, features, footer — all clean
+- **Flashcards:** Stats bar, Daily Lesson CTA, review reminder, Top 2000 hero, all deck cards — all rendering
+- **Grammar (to-be):** Lesson content, exercises, XP counter (top-right), related flashcard decks, prev/next nav — all clean
+
+### Console — ✅ No Critical Errors
+- Only `apple-mobile-web-app-capable` deprecation warning (known, non-critical)
+- Stale CSS error from previous browser session cache (not a real issue — current deploy has correct hash)
+
+### Deployed ✅
+- Rebuilt website + redeployed (1 file uploaded — index.html with unique UUID)
+- Git committed & pushed
+
+### Verdict
+No bugs found. All 8 new features from tonight's "Platform Unity & Persistence" sprint verified via code review + browser screenshots. Grammar XP Bridge finally shipped (was carried over 2 sprints). Site stable.
 
 ## Evening QA Run (Mar 4, 7:30 PM)
 
