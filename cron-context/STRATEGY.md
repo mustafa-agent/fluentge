@@ -93,165 +93,183 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 5 Night Cycle)
+## 🎯 Current Sprint (Mar 5 Day Cycle)
 
-### Theme: "Platform Unity & Persistence"
+### Theme: "Guided Learning & Content Depth"
 
-### CONTEXT: Previous Sprint Results (Mar 4)
-- ✅ Daily Lesson — 10-round mixed practice (vocab + SRS + sentence + listening)
-- ✅ Weekly Leaderboard — simulated Georgian users + real XP ranking
-- ✅ Fill-in-the-Blank — 9th study mode, contextual vocabulary
-- ✅ UUID Deploy Fix — permanent Cloudflare cache busting with uuidgen
-- ❌ Grammar XP Bridge — NOT completed (carried over)
+### CONTEXT: Previous Sprint Results (Mar 5 Night — "Platform Unity & Persistence")
+- ✅ Grammar XP Bridge — gamification-bridge.js, +10 XP per correct, streak/study time tracking
+- ✅ Cloud Sync (Firestore) — full gamification data synced, smart merge, offline-first
+- ✅ Homepage Personalization — returning users see stats + Daily Lesson CTA
+- ✅ Cross-Page SRS Reminders — amber banner on all non-flashcard pages
+- ✅ Reading Comprehension — 10th study mode, passages + questions + Georgian toggle
 
-### Strategic State (Mar 5, 1:00 AM):
-FluentGe has **70 React components, 9 study modes, Daily Lesson, Weekly Leaderboard, SM-2 SRS, onboarding, PWA, mobile bottom nav, full gamification**. 258KB main bundle. We comprehensively beat Lingwing.com on features and are competitive with Duolingo in breadth.
+### Strategic State (Mar 5, 11:30 AM):
+FluentGe has **70+ React components, 10 study modes, Daily Lesson, Weekly Leaderboard, SM-2 SRS, onboarding, PWA, mobile bottom nav, full unified gamification, cloud sync, personalized homepage**. 260KB main bundle. Platform is UNIFIED — grammar and flashcards share same XP/streak system. Progress persists in Firestore.
 
-**The #1 gap: PLATFORM FEELS SPLIT.**
-- Flashcard app = fully gamified (XP, streaks, levels, achievements, leaderboard)
-- Grammar = static Astro pages with NO XP, NO streak updates, NO progression
-- Users do grammar and get NOTHING. No reward. No motivation to continue.
-- Fix: Grammar XP Bridge — make grammar exercises award XP + update streak
+**We've built the engine. Now we need to guide users through it.**
 
-**The #2 gap: ALL PROGRESS IN localStorage = FRAGILE.**
-- One browser clear / device switch = ALL progress GONE forever
-- Firebase auth already works — Firestore sync is the natural next step
-- Users who lose weeks of progress never come back
-- This is the single biggest retention risk
+The platform is feature-rich but the USER JOURNEY is still "here's a bunch of tools, figure it out." Duolingo's magic is that users never have to THINK about what to do next — the app decides. FluentGe needs that same guided experience.
 
-**The #3 gap: HOMEPAGE NOT PERSONALIZED FOR RETURNING USERS.**
-- New and returning users see identical generic hero
-- Should show: "Welcome back! Continue daily lesson" + stats + SRS due count
-- Duolingo's homepage IS the daily lesson for returning users
+**The #1 gap: NO LEVEL ASSESSMENT.**
+- New users start at zero with no idea of their level
+- A 15-question placement test → auto-assigns A1/A2/B1/B2
+- Personalizes entire experience: recommended decks, grammar level, difficulty
+- Every serious language app has this (Duolingo, Lingwing, Memrise)
 
-**The #4 gap: SRS REMINDERS ONLY ON /flashcards/.**
-- Due card banners don't appear on homepage, grammar, or games pages
-- Should pull users back to reviews from ANYWHERE on the site
+**The #2 gap: PODCAST SECTION IS UNDERDEVELOPED.**
+- Only short 2-min dialogues with basic player
+- No transcript highlighting, no speed control, no comprehension questions
+- Podcasts are a PILLAR but feel like an afterthought
+- Users should be able to listen, read along, answer questions, learn vocab
+
+**The #3 gap: NO STRUCTURED CURRICULUM.**
+- Learning Path exists (10-step roadmap) but it's a flat list
+- Need proper course UNITS that bundle: vocab deck + grammar lesson + podcast + quiz
+- Unit 1: Basics (greetings + to-be + airport podcast)
+- Unit 2: Daily Life (food + present simple + restaurant podcast)
+- This is how Duolingo organizes content — units with multiple lesson types
+
+**The #4 gap: GRAMMAR EXERCISES ARE STILL PASSIVE.**
+- Grammar pages have basic check exercises but they're simple show/hide
+- Need interactive quiz-style exercises: multiple choice, fill-in, sentence reorder
+- With XP bridge now working, better exercises = more engagement + XP
 
 ### Sprint Goals (ordered by priority)
 
-1. **🔴 Grammar XP Bridge** — Unify platform gamification (CARRIED OVER × 2):
-   - Grammar exercises (Astro pages) award XP to same localStorage keys
-   - Grammar completion updates streak + daily goal study time
-   - Show floating "+10 XP" on correct answer
-   - Mark lessons completed, show on Dashboard
-   - Extract gamification functions to standalone `public/js/gamification-bridge.js`
-   - This file reads/writes SAME localStorage keys as React app
+1. **🔴 Placement Test** — Assess user level in 2 minutes:
+   - 15 multiple-choice questions, progressive difficulty (A1→B2)
+   - Question types: vocab meaning, grammar fill-in, sentence completion
+   - Auto-scoring: <5 correct = A1, 5-8 = A2, 9-12 = B1, 13-15 = B2
+   - Saves level to localStorage + Firestore
+   - Shown after onboarding OR accessible from profile
+   - Result personalizes: recommended decks, grammar starting point, daily lesson difficulty
+   - **File:** `PlacementTest.tsx` in flashcard-app
 
-2. **🔴 Cloud Sync (Firestore)** — Persist user progress forever:
-   - New `sync.ts` module in flashcard-app/src/lib/
-   - Save progress to Firestore: `users/{uid}/data`
-   - Debounced writes (every 30s or on page unload)
-   - Load + merge on login (keep newer timestamps)
-   - Keys: fluentge_progress, fluentge-srs-*, totalXP, currentStreak, etc.
-   - Offline-first: localStorage = source of truth, Firestore = backup
+2. **🔴 Podcast Player Upgrade** — Make podcasts a real learning tool:
+   - Transcript with word-by-word highlighting synced to audio
+   - Speed control (0.5x, 0.75x, 1x, 1.25x)
+   - Comprehension quiz after each episode (3-5 questions)
+   - Vocabulary list with audio for each episode's key words
+   - +20 XP for completing an episode + quiz
+   - Georgian/English transcript toggle
+   - **File:** Upgrade `podcast.astro` + new `podcast-player.js`
 
-3. **🟡 Homepage Personalization** — Different UX for returning users:
-   - Logged in + has progress → personalized greeting + Daily Lesson CTA + stats
-   - SRS due cards → amber reminder banner
-   - "Continue where you left off" replaces generic hero
-   - New users → keep current hero (it's good)
+3. **🟡 Course Units** — Structured learning paths:
+   - 6 units: Basics, Daily Life, Travel, Work, Social, Advanced
+   - Each unit = 3-5 lessons, each lesson = vocab deck + grammar + practice
+   - Progress bar per unit, unlock next unit at 80% completion
+   - Unit overview page showing all lessons with completion status
+   - **File:** New `website/src/pages/courses.astro` + `course-data.json`
 
-4. **🟡 Cross-Page SRS Reminders** — Pull users to reviews from anywhere:
-   - Small amber banner on ALL pages (homepage, grammar, games) when SRS cards due
-   - Shows count + direct link to SRS mode
-   - Non-intrusive but visible
+4. **🟡 Interactive Grammar Exercises** — Upgrade from passive to active:
+   - Replace show/hide exercises with quiz-style interactive ones
+   - Types: multiple choice, fill-in-blank, sentence reorder, error correction
+   - Timer optional, immediate feedback, +10 XP per correct
+   - Grammar XP bridge already handles XP — just need better exercise UI
+   - **File:** New `public/js/grammar-exercises.js`
 
-5. **🟢 Reading Comprehension Mode** — 10th study mode:
-   - Short English paragraphs using deck vocabulary
-   - Comprehension questions with multiple choice
-   - +15 XP per correct
-   - Deeper learning than single-word exercises
+5. **🟢 Practice Stats Email/Notification** — Weekly progress summary:
+   - PWA notification when SRS cards are due (if permission granted)
+   - Weekly stats summary on dashboard: words learned, time spent, streak
+   - Motivational message based on progress
 
-### For Each Cron Tonight:
-- **Cron 1 (Strategy, 1:00AM):** ← THIS RUN. Sprint planning, specs, context file updates.
-- **Cron 2 (Design, 3:00AM):** Design personalized homepage states. Grammar XP feedback animations. Sync loading/saving UI states. Cross-page SRS banner.
-- **Cron 3 (Features, 5:00AM):** Build Grammar XP Bridge (gamification-bridge.js) + Cloud Sync (sync.ts + Firestore).
-- **Cron 4 (Improvements, 7:00AM):** Homepage personalization + Cross-page SRS banners + Reading Comprehension mode.
-- **Cron 5 (QA, 9:00AM):** Full QA. Test grammar XP, cloud sync, personalized homepage.
+### For Each Cron Today:
+- **Cron 1 (Strategy, 11:30AM):** ← THIS RUN. Sprint planning, specs, context file updates.
+- **Cron 2 (Design, 1:30PM):** Design placement test UI (question cards, progress, result screen). Podcast player redesign (transcript highlighting, controls). Course units page layout.
+- **Cron 3 (Features, 3:30PM):** Build Placement Test (PlacementTest.tsx) + Podcast Player upgrade (podcast-player.js).
+- **Cron 4 (Improvements, 5:30PM):** Course Units page + Interactive Grammar Exercises + weekly stats.
+- **Cron 5 (QA, 7:30PM):** Full QA. Test placement test, podcast player, courses page.
 
 ## Technical Specs
 
-### Grammar XP Bridge (Cron 3)
-**Approach:** Grammar pages are Astro (server-rendered). They need client-side JS to interact with localStorage gamification.
+### Placement Test (Cron 3)
+**File:** `flashcard-app/src/components/PlacementTest.tsx`
 
-**File:** `website/public/js/gamification-bridge.js` — standalone, no bundler needed
+```tsx
+// PlacementTest.tsx — 15-question level assessment
+//
+// Question bank: 15 questions, 4 per level (A1, A2, B1, B2) — last 3 are B2
+// Question types:
+//   - vocab: "What does 'X' mean?" → 4 Georgian options
+//   - grammar: "She ___ to school every day." → goes/go/going/gone
+//   - sentence: "Which sentence is correct?" → 4 options
+//
+// Flow:
+//   1. Welcome screen: "Let's find your level! 15 questions, ~2 minutes"
+//   2. Question cards with A/B/C/D options (reuse quiz-option CSS)
+//   3. Progress bar (chunky, like study mode)
+//   4. No immediate feedback (assessment, not practice)
+//   5. Result: level badge (A1/A2/B1/B2) + description + personalized recommendations
+//   6. Save: localStorage 'fluentge-level' + Firestore sync
+//
+// Integration:
+//   - OnboardingModal step 2 can offer "Take placement test" option
+//   - Profile page shows current level with "Retake test" button
+//   - Dashboard recommendations use level for deck suggestions
+//
+// Screen type: 'placement-test' in App.tsx
+```
+
+### Podcast Player Upgrade (Cron 3)
+**File:** `website/public/js/podcast-player.js`
 
 ```js
-// gamification-bridge.js — Lightweight gamification for non-React pages
-// 
-// Functions (mirror flashcard-app gamification.ts logic):
-//   addXP(amount) — adds XP, checks level-up, records daily history
-//   updateStreak() — updates streak if not already today
-//   addStudyTime(minutes) — adds to daily goal progress
-//   markGrammarComplete(slug) — stores in 'fluentge-grammar-completed'
-//   showXPFloat(element, amount) — creates floating +XP animation
-//   getStats() — returns { totalXP, currentStreak, level, dailyMinutes }
+// podcast-player.js — Enhanced podcast experience
 //
-// Reads/writes SAME localStorage keys as React app:
-//   totalXP, currentStreak, streakLastDate, dailyStudyTime, etc.
+// Features:
+//   1. Audio player with custom controls (play/pause, seek bar, time display)
+//   2. Speed control: 0.5x, 0.75x, 1.0x, 1.25x buttons
+//   3. Transcript display: each line is a <p> with data-start/data-end timestamps
+//   4. Auto-scroll + highlight current line during playback
+//   5. Click any transcript line to jump to that point
+//   6. Georgian/English toggle for transcript
+//   7. Vocabulary section: episode words with 🔊 audio buttons
 //
-// Usage in grammar [slug].astro:
-//   <script src="/js/gamification-bridge.js"></script>
-//   <script>
-//     document.querySelectorAll('.exercise-check').forEach(btn => {
-//       btn.addEventListener('click', () => {
-//         if (isCorrect) { FluentGe.addXP(10); FluentGe.showXPFloat(btn, 10); }
-//       });
-//     });
-//     // On lesson complete:
-//     FluentGe.markGrammarComplete('present-simple');
-//     FluentGe.addXP(50); // bonus
-//   </script>
+// Quiz (after episode):
+//   - 3-5 comprehension questions per episode
+//   - Multiple choice, based on transcript content
+//   - +20 XP via FluentGe.addXP() (gamification-bridge.js)
+//
+// Data: episode objects in podcast.astro already have transcript arrays
+// Need to add: timestamps to transcript entries, quiz questions per episode
 ```
 
-### Cloud Sync — Firestore (Cron 3)
-**Location:** New `sync.ts` in flashcard-app/src/lib/
+### Course Units (Cron 4)
+**File:** `website/src/pages/courses.astro` + `website/public/data/course-units.json`
 
-```ts
-// sync.ts — Firestore progress sync
-//
-// SAVE (debounced, every 30s + on beforeunload):
-//   1. Collect all fluentge-* localStorage keys
-//   2. Write to Firestore: users/{uid}/data { ...allKeys, lastSync: timestamp }
-//   3. Use setDoc with merge:true to avoid overwriting
-//
-// LOAD (on Firebase auth state change — login detected):
-//   1. Fetch users/{uid}/data from Firestore
-//   2. For each key: compare timestamps, keep newer
-//   3. Write merged result back to localStorage
-//   4. Show "✅ სინქრონიზაცია დასრულდა" toast
-//
-// KEYS TO SYNC:
-//   fluentge_progress, fluentge-srs-*, totalXP, currentStreak, 
-//   streakLastDate, dailyGoal, dailyStudyTime, gamesPlayed,
-//   fluentge-grammar-completed, fluentge-achievements,
-//   fluentge-leaderboard, fluentge-weekly-xp-*
-//
-// Firebase config already in firebase.ts — add Firestore import:
-//   import { getFirestore, doc, setDoc, getDoc } from 'firebase/firestore'
-```
-
-### Homepage Personalization (Cron 4)
-**Location:** Modify `website/src/pages/index.astro`
-
-```html
-<!-- Add client-side script at bottom of page -->
-<script>
-  // Check if user has progress
-  const xp = parseInt(localStorage.getItem('totalXP') || '0');
-  const streak = parseInt(localStorage.getItem('currentStreak') || '0');
-  if (xp > 0) {
-    // Hide generic hero, show personalized section
-    document.getElementById('hero-new').style.display = 'none';
-    document.getElementById('hero-returning').style.display = 'block';
-    // Populate stats
-    document.getElementById('user-xp').textContent = xp;
-    document.getElementById('user-streak').textContent = streak;
+```json
+// course-units.json structure:
+[
+  {
+    "id": "basics",
+    "title": "საფუძვლები",
+    "titleEn": "Basics",
+    "icon": "🌱",
+    "lessons": [
+      {
+        "type": "vocab",
+        "deckId": "greetings-introductions",
+        "title": "მისალმებები"
+      },
+      {
+        "type": "grammar",
+        "slug": "to-be",
+        "title": "ზმნა To Be"
+      },
+      {
+        "type": "podcast",
+        "episodeId": 1,
+        "title": "აეროპორტში"
+      },
+      {
+        "type": "quiz",
+        "title": "ტესტი: საფუძვლები"
+      }
+    ]
   }
-  // Check SRS due cards
-  // Show reminder banner if any
-</script>
+  // ... 5 more units
+]
 ```
 
 ## Notes for Crons

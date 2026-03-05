@@ -55,11 +55,11 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 5 night) — "Platform Unity & Persistence"
-- [ ] **🔗 Grammar XP Bridge** — gamification-bridge.js for Astro pages ← Cron 3
-- [ ] **☁️ Cloud Sync** — Firestore save/load with offline-first ← Cron 3
-- [ ] **🏠 Homepage Personalization** — returning user experience ← Cron 4
-- [ ] **🔔 Cross-Page SRS Reminders** — due card banners everywhere ← Cron 4
+## 🎯 THIS SPRINT (Mar 5 day) — "Guided Learning & Content Depth"
+- [ ] **📝 Placement Test** — Level assessment for new users ← Cron 3
+- [ ] **🎧 Podcast Player** — Transcript sync, speed control, quiz ← Cron 3
+- [ ] **📚 Course Units** — Structured curriculum page ← Cron 4
+- [ ] **📝 Grammar Exercises** — Interactive quiz-style upgrades ← Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)

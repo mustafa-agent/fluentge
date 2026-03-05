@@ -566,34 +566,54 @@ const episodes = [
             </div>
 
             <div class={ep.free ? '' : 'podcast-premium-content hidden'}>
-                <audio controls class="w-full mb-4" preload="metadata">
-                  <source src={ep.file} type="audio/mpeg" />
-                </audio>
-                <button class="mark-podcast-btn mb-4 inline-flex items-center gap-2 border-2 border-[#6B6B65] rounded-lg px-4 py-2 text-sm text-[#6B6B65] hover:border-green-400 hover:text-green-400 transition-colors" data-podcast={ep.title}>
-                  ✓ მოსმენილია
-                </button>
-                
+                <!-- Custom Audio Player -->
+                <div class="podcast-player bg-[#1C1C1E] rounded-xl p-4 mb-4" data-ep={ep.id}>
+                  <audio class="podcast-audio hidden" preload="metadata" data-ep-id={ep.id}>
+                    <source src={ep.file} type="audio/mpeg" />
+                  </audio>
+                  <div class="flex items-center gap-3 mb-3">
+                    <button class="pp-play w-12 h-12 rounded-full bg-sky-400 hover:bg-sky-500 border-b-4 border-sky-500 active:border-b-0 flex items-center justify-center text-white text-xl transition-all shrink-0" data-ep-id={ep.id}>▶</button>
+                    <div class="flex-1">
+                      <div class="pp-seek-wrap w-full h-2 bg-[#2E2E30] rounded-full cursor-pointer relative" data-ep-id={ep.id}>
+                        <div class="pp-seek-fill h-full bg-gradient-to-r from-sky-400 to-emerald-400 rounded-full transition-all" style="width:0%"></div>
+                      </div>
+                      <div class="flex justify-between text-[10px] text-[#6B6B65] mt-1">
+                        <span class="pp-time-current">0:00</span>
+                        <span class="pp-time-total">{ep.duration}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Speed controls -->
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span class="text-[10px] text-[#6B6B65] uppercase font-bold">სიჩქარე:</span>
+                    {['0.5x', '0.75x', '1x', '1.25x', '1.5x'].map(spd => (
+                      <button class={`pp-speed text-xs px-2.5 py-1 rounded-lg font-medium transition-all ${spd === '1x' ? 'bg-sky-400/20 text-sky-400 border border-sky-400/30' : 'bg-[#2E2E30] text-[#6B6B65] hover:text-[#C8C8C0]'}`} data-speed={parseFloat(spd)} data-ep-id={ep.id}>{spd}</button>
+                    ))}
+                    <div class="ml-auto flex items-center gap-2">
+                      <button class="pp-lang-toggle text-xs px-2.5 py-1 rounded-lg bg-[#2E2E30] text-[#6B6B65] hover:text-emerald-400 transition-all" data-ep-id={ep.id} data-lang="both" title="ტექსტის ენა">🇬🇧+🇬🇪</button>
+                      <button class="mark-podcast-btn inline-flex items-center gap-1 border border-[#6B6B65] rounded-lg px-3 py-1 text-xs text-[#6B6B65] hover:border-green-400 hover:text-green-400 transition-colors" data-podcast={ep.title}>✓ მოსმენილია</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Transcript (always visible) -->
                 {ep.transcript && (
-                  <details class="mt-4">
-                    <summary class="cursor-pointer text-sm text-[#C8C8C0] hover:underline font-medium">
-                      📝 დიალოგის ტექსტი (ქართული თარგმანით)
-                    </summary>
-                    <div class="mt-3 space-y-3 bg-[#242426] rounded-xl p-4">
-                      {ep.transcript.map((line) => (
-                        <div class="border-b border-white/5 pb-2 last:border-0">
-                          <div class="flex items-start gap-2">
-                            <span class={`text-xs px-1.5 py-0.5 rounded font-medium ${line.speaker === ep.transcript[0].speaker ? 'bg-purple-500/20 text-purple-400' : 'bg-emerald-500/20 text-emerald-400'}`}>
-                              {line.speaker}
-                            </span>
-                            <div>
-                              <p class="text-sm font-medium">{line.en}</p>
-                              <p class="text-xs text-[#6B6B65] mt-0.5">{line.ka}</p>
-                            </div>
+                  <div class="podcast-transcript bg-[#1C1C1E] rounded-xl p-4 space-y-2" data-ep-id={ep.id}>
+                    <p class="text-xs text-[#6B6B65] font-bold uppercase tracking-wider mb-2">📝 დიალოგი</p>
+                    {ep.transcript.map((line, lineIdx) => (
+                      <div class={`transcript-line rounded-lg px-3 py-2 transition-all duration-300 border-l-2 ${line.speaker === ep.transcript[0].speaker ? 'border-purple-500/40' : 'border-emerald-500/40'}`} data-line={lineIdx}>
+                        <div class="flex items-start gap-2">
+                          <span class={`text-[10px] px-1.5 py-0.5 rounded font-bold shrink-0 mt-0.5 ${line.speaker === ep.transcript[0].speaker ? 'bg-purple-500/20 text-purple-400' : 'bg-emerald-500/20 text-emerald-400'}`}>
+                            {line.speaker}
+                          </span>
+                          <div>
+                            <p class="text-sm font-medium transcript-en">{line.en}</p>
+                            <p class="text-xs text-[#6B6B65] mt-0.5 transcript-ka">{line.ka}</p>
                           </div>
                         </div>
-                      ))}
-                    </div>
-                  </details>
+                      </div>
+                    ))}
+                  </div>
                 )}
             </div>
             {!ep.free && (
@@ -623,7 +643,6 @@ const episodes = [
       if (localStorage.getItem('fluentge-premium') === 'true') {
         document.querySelectorAll('.podcast-premium-content').forEach(el => el.classList.remove('hidden'));
         document.querySelectorAll('.podcast-lock-overlay').forEach(el => el.remove());
-        // Fix premium badges
         document.querySelectorAll('.text-amber-400').forEach(el => {
           if (el.textContent.trim() === '🔒 პრემიუმი') {
             el.textContent = '⭐ პრემიუმ';
@@ -632,13 +651,15 @@ const episodes = [
           }
         });
       }
+
+      // Learned podcasts
       const learned = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
       document.querySelectorAll('.mark-podcast-btn').forEach(btn => {
         const title = btn.dataset.podcast;
         if (learned.includes(title)) {
           btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
           btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
-          btn.textContent = '✓ მოსმენილია ✅';
+          btn.innerHTML = '✓ ✅';
         }
         btn.addEventListener('click', function() {
           const stored = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
@@ -646,14 +667,111 @@ const episodes = [
             stored.splice(stored.indexOf(title), 1);
             btn.classList.remove('border-green-400', 'text-green-400', 'bg-green-400/10');
             btn.classList.add('border-[#6B6B65]', 'text-[#6B6B65]');
-            btn.textContent = '✓ მოსმენილია';
+            btn.innerHTML = '✓ მოსმენილია';
           } else {
             stored.push(title);
             btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
             btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
-            btn.textContent = '✓ მოსმენილია ✅';
+            btn.innerHTML = '✓ ✅';
           }
           localStorage.setItem('fluentge-learned-podcasts', JSON.stringify(stored));
+        });
+      });
+
+      // Custom audio player logic
+      function fmt(s) { const m = Math.floor(s/60); return m + ':' + String(Math.floor(s%60)).padStart(2,'0'); }
+
+      document.querySelectorAll('.podcast-player').forEach(player => {
+        const epId = player.dataset.ep;
+        const audio = player.querySelector('.podcast-audio');
+        const playBtn = player.querySelector('.pp-play');
+        const seekWrap = player.querySelector('.pp-seek-wrap');
+        const seekFill = player.querySelector('.pp-seek-fill');
+        const timeCur = player.querySelector('.pp-time-current');
+        const timeTotal = player.querySelector('.pp-time-total');
+
+        // Play/pause
+        playBtn.addEventListener('click', () => {
+          // Pause all others
+          document.querySelectorAll('.podcast-audio').forEach(a => { if (a !== audio && !a.paused) a.pause(); });
+          document.querySelectorAll('.pp-play').forEach(b => { b.textContent = '▶'; });
+          if (audio.paused) { audio.play(); playBtn.textContent = '⏸'; }
+          else { audio.pause(); playBtn.textContent = '▶'; }
+        });
+
+        audio.addEventListener('loadedmetadata', () => { timeTotal.textContent = fmt(audio.duration); });
+        audio.addEventListener('timeupdate', () => {
+          if (!audio.duration) return;
+          const pct = (audio.currentTime / audio.duration) * 100;
+          seekFill.style.width = pct + '%';
+          timeCur.textContent = fmt(audio.currentTime);
+
+          // Highlight transcript line based on time
+          const transcript = document.querySelector(`.podcast-transcript[data-ep-id="${epId}"]`);
+          if (transcript) {
+            const lines = transcript.querySelectorAll('.transcript-line');
+            const totalLines = lines.length;
+            if (totalLines > 0 && audio.duration) {
+              const segLen = audio.duration / totalLines;
+              const activeIdx = Math.min(Math.floor(audio.currentTime / segLen), totalLines - 1);
+              lines.forEach((line, i) => {
+                if (i === activeIdx) {
+                  line.classList.add('bg-sky-500/10');
+                  line.style.borderLeftColor = 'rgb(56, 189, 248)';
+                } else {
+                  line.classList.remove('bg-sky-500/10');
+                  line.style.borderLeftColor = '';
+                }
+              });
+            }
+          }
+        });
+        audio.addEventListener('ended', () => { playBtn.textContent = '▶'; });
+
+        // Seek
+        seekWrap.addEventListener('click', (e) => {
+          if (!audio.duration) return;
+          const rect = seekWrap.getBoundingClientRect();
+          audio.currentTime = ((e.clientX - rect.left) / rect.width) * audio.duration;
+        });
+
+        // Speed buttons
+        player.querySelectorAll('.pp-speed').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const speed = parseFloat(btn.dataset.speed);
+            audio.playbackRate = speed;
+            player.querySelectorAll('.pp-speed').forEach(b => {
+              b.className = 'pp-speed text-xs px-2.5 py-1 rounded-lg font-medium transition-all bg-[#2E2E30] text-[#6B6B65] hover:text-[#C8C8C0]';
+            });
+            btn.className = 'pp-speed text-xs px-2.5 py-1 rounded-lg font-medium transition-all bg-sky-400/20 text-sky-400 border border-sky-400/30';
+          });
+        });
+      });
+
+      // Language toggle for transcripts
+      document.querySelectorAll('.pp-lang-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const epId = btn.dataset.epId;
+          const transcript = document.querySelector(`.podcast-transcript[data-ep-id="${epId}"]`);
+          if (!transcript) return;
+          const lang = btn.dataset.lang;
+          const enEls = transcript.querySelectorAll('.transcript-en');
+          const kaEls = transcript.querySelectorAll('.transcript-ka');
+          if (lang === 'both') {
+            kaEls.forEach(el => el.classList.add('hidden'));
+            btn.dataset.lang = 'en';
+            btn.textContent = '🇬🇧';
+          } else if (lang === 'en') {
+            enEls.forEach(el => el.classList.add('hidden'));
+            kaEls.forEach(el => el.classList.remove('hidden'));
+            btn.dataset.lang = 'ka';
+            btn.textContent = '🇬🇪';
+          } else {
+            enEls.forEach(el => el.classList.remove('hidden'));
+            kaEls.forEach(el => el.classList.remove('hidden'));
+            btn.dataset.lang = 'both';
+            btn.textContent = '🇬🇧+🇬🇪';
+          }
         });
       });
     })();

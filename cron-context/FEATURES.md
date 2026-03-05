@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 5 night) — "Platform Unity & Persistence"
-- [x] **🔗 Grammar XP Bridge** — Grammar exercises award XP + update streak ✅ (Cron 3, Mar 5)
-- [x] **☁️ Cloud Sync (Firestore)** — Gamification data now synced to Firestore ✅ (Cron 3, Mar 5)
-- [ ] **🏠 Homepage Personalization** — Returning users see personalized CTA + stats ← Cron 4
-- [ ] **🔔 Cross-Page SRS Reminders** — Due card banners on ALL pages ← Cron 4
-- [ ] **📖 Reading Comprehension Mode** — 10th study mode, paragraphs + questions ← Cron 4
+### 🎯 THIS SPRINT (Mar 5 day) — "Guided Learning & Content Depth"
+- [ ] **📝 Placement Test** — 15-question level assessment (A1→B2) ← Cron 3
+- [ ] **🎧 Podcast Player Upgrade** — Transcript highlighting, speed control, quiz ← Cron 3
+- [ ] **📚 Course Units** — Structured learning paths (6 units) ← Cron 4
+- [ ] **📝 Interactive Grammar Exercises** — Quiz-style exercises replacing show/hide ← Cron 4
+- [ ] **📊 Weekly Practice Stats** — Dashboard summary + PWA notifications ← Cron 4
 
 ### Flashcard Improvements
 - [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
@@ -82,6 +82,13 @@
 
 ### Dashboard
 - [ ] Progress visualization — chart of words learned over time
+
+## Previously Completed ✅ (Mar 5 Night — "Platform Unity & Persistence")
+- ✅ **🔗 Grammar XP Bridge** — gamification-bridge.js, unified XP across platform
+- ✅ **☁️ Cloud Sync (Firestore)** — full gamification data synced
+- ✅ **🏠 Homepage Personalization** — returning users see stats + Daily Lesson CTA
+- ✅ **🔔 Cross-Page SRS Reminders** — amber banner on all pages
+- ✅ **📖 Reading Comprehension** — 10th study mode
 
 ## In Progress 🔄
 (none)

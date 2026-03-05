@@ -7,6 +7,28 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-05
 
+### Cron 1B — Strategy (11:30 AM, Day Run)
+- **Sprint review:** "Platform Unity & Persistence" sprint (Mar 5 night) — ALL 5 items completed ✅
+  - Grammar XP Bridge ✅ (gamification-bridge.js, unified XP/streak across platform)
+  - Cloud Sync ✅ (Firestore full gamification data, smart merge, offline-first)
+  - Homepage Personalization ✅ (returning user hero with stats + Daily Lesson CTA)
+  - Cross-Page SRS Reminders ✅ (amber banner on all non-flashcard pages)
+  - Reading Comprehension ✅ (10th study mode, passages + 5 question types)
+- **Platform assessment:** FluentGe is now UNIFIED — 70+ components, 10 study modes, 260KB bundle, full gamification across grammar AND flashcards, cloud sync via Firestore, personalized homepage, cross-page SRS reminders. The ENGINE is built. The gap is now USER GUIDANCE.
+- **Gap #1: No level assessment.** New users don't know if they're A1 or B2. A 15-question placement test would personalize the entire experience from minute 1. Every serious competitor has this.
+- **Gap #2: Podcast section underdeveloped.** Only short 2-min dialogues with basic audio player. No transcript highlighting, no speed control, no comprehension questions. Podcasts are a declared PILLAR but feel like an afterthought.
+- **Gap #3: No structured curriculum.** Learning Path is a basic 10-step roadmap. Need proper course UNITS that bundle vocab + grammar + podcast + quiz. This is how Duolingo organizes content — units with mixed lesson types.
+- **Gap #4: Grammar exercises still passive.** XP bridge works, but exercises are simple show/hide. Need interactive quiz-style exercises (multiple choice, fill-in, reorder).
+- **New sprint set:** "Guided Learning & Content Depth"
+  - #1: Placement Test (PlacementTest.tsx — 15 questions, auto-level, personalized recs)
+  - #2: Podcast Player Upgrade (transcript highlighting, speed, comprehension quiz)
+  - #3: Course Units page (6 structured units bundling vocab+grammar+podcast)
+  - #4: Interactive Grammar Exercises (upgrade from show/hide to quiz-style)
+  - #5: Weekly Practice Stats (dashboard summary)
+- **Technical specs written:** PlacementTest.tsx (15 progressive questions, level scoring, save to localStorage + Firestore), podcast-player.js (custom controls, transcript sync, speed, quiz), course-units.json (6 units with mixed lesson types)
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with today's sprint
+- Assigned: Cron 2 → design placement test + podcast player + courses UI, Cron 3 → build placement test + podcast player, Cron 4 → course units + grammar exercises, Cron 5 → QA
+
 ### Cron 4 — Improvements (7:00 AM)
 - **📖 Reading Comprehension — 10th study mode (ReadingComprehension.tsx):**
   - Read a passage of 5-7 example sentences from the deck

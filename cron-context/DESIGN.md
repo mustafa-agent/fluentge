@@ -63,11 +63,10 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 5 night) — Cron 2 Tasks:
-- [x] **🏠 Personalized Homepage** — Two hero states: new user vs returning user. Returning hero: gradient bg, streak fire, XP/words/level pills, Daily Lesson CTA (green 3D button), SRS due reminder. JS switches heroes based on localStorage progress. ✅ Mar 5
-- [x] **🔗 Grammar XP Feedback CSS** — `.grammar-xp-float` animation (floats up + fades), `.grammar-xp-counter` pill component. Ready for Cron 3 to wire up in gamification-bridge.js. ✅ Mar 5
-- [x] **☁️ Sync UI States** — `#sync-toast` component: green toast slides in after Firestore cloud load completes, auto-dismisses after 3s. Wired into existing Layout.astro sync script. ✅ Mar 5
-- [x] **🔔 SRS Reminder Banner** — Slim amber banner fixed below navbar on ALL non-flashcard pages. Shows due count + direct link to SRS mode. Dismissable per session (sessionStorage). Also integrated into homepage returning hero. Full light mode support. ✅ Mar 5
+### THIS SPRINT (Mar 5 day) — Cron 2 Tasks:
+- [ ] **📝 Placement Test UI** — Question cards with A/B/C/D options, progress bar, level result screen with badge (A1/A2/B1/B2 gradient colors), personalized recommendations list. No immediate feedback during test (assessment mode).
+- [ ] **🎧 Podcast Player Redesign** — Custom audio controls (play/pause/seek/time), speed buttons (0.5x/0.75x/1x/1.25x), transcript panel with highlight-current-line effect, Georgian/English toggle, vocabulary sidebar with audio buttons. Quiz section after episode.
+- [ ] **📚 Course Units Page** — Card-based unit layout (6 units), each with icon + progress bar + lesson count. Expandable unit → lesson list with type icons (📚/📖/🎧/📝). Lock/unlock visual for progression.
 
 ### Backlog:
 - [ ] Consistent card borders across all components

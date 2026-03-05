@@ -1,0 +1,265 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const questions = [
+  // A1 (1-3)
+  { q: "What ___ your name?", opts: ["is", "are", "am", "do"], ans: 0, level: "A1" },
+  { q: "She ___ a teacher.", opts: ["am", "is", "are", "be"], ans: 1, level: "A1" },
+  { q: "I have ___ apple.", opts: ["a", "an", "the", "—"], ans: 1, level: "A1" },
+  // A2 (4-6)
+  { q: "He ___ to work every day.", opts: ["go", "goes", "going", "gone"], ans: 1, level: "A2" },
+  { q: "I ___ TV when she called.", opts: ["watch", "watched", "was watching", "have watched"], ans: 2, level: "A2" },
+  { q: "There aren't ___ eggs in the fridge.", opts: ["some", "any", "no", "much"], ans: 1, level: "A2" },
+  // B1 (7-9)
+  { q: "If it rains, I ___ stay home.", opts: ["would", "will", "can", "may"], ans: 1, level: "B1" },
+  { q: "She has lived here ___ 2015.", opts: ["for", "since", "from", "during"], ans: 1, level: "B1" },
+  { q: "The book ___ by millions.", opts: ["has read", "has been read", "was reading", "is reading"], ans: 1, level: "B1" },
+  // B2 (10-12)
+  { q: "I wish I ___ more time.", opts: ["have", "had", "would have", "has"], ans: 1, level: "B2" },
+  { q: "Not only ___ he late, but he also forgot the files.", opts: ["was", "did", "is", "has"], ans: 0, level: "B2" },
+  { q: "She denied ___ the window.", opts: ["to break", "breaking", "break", "broke"], ans: 1, level: "B2" },
+  // C1 (13-15)
+  { q: "Seldom ___ such a talented musician.", opts: ["I have seen", "have I seen", "I saw", "did I see"], ans: 1, level: "C1" },
+  { q: "Had I known, I ___ differently.", opts: ["would act", "would have acted", "acted", "had acted"], ans: 1, level: "C1" },
+  { q: "The results are ___ with previous findings.", opts: ["consistent", "persistent", "resistant", "insistent"], ans: 0, level: "C1" },
+];
+
+const levels = [
+  { code: "A1", label: "Beginner", labelKa: "დამწყები", color: "from-green-400 to-emerald-500", icon: "🌱", min: 0 },
+  { code: "A2", label: "Elementary", labelKa: "საწყისი", color: "from-sky-400 to-blue-500", icon: "📗", min: 4 },
+  { code: "B1", label: "Intermediate", labelKa: "საშუალო", color: "from-violet-400 to-purple-500", icon: "📘", min: 7 },
+  { code: "B2", label: "Upper-Intermediate", labelKa: "საშუალოზე მაღალი", color: "from-orange-400 to-amber-500", icon: "📙", min: 10 },
+  { code: "C1", label: "Advanced", labelKa: "მაღალი", color: "from-rose-400 to-pink-500", icon: "🏆", min: 13 },
+];
+---
+
+<Layout title="დონის ტესტი — FluentGe">
+  <section class="min-h-screen flex items-center justify-center px-4 py-20">
+    <div class="w-full max-w-2xl">
+
+      <!-- Intro Screen -->
+      <div id="pt-intro" class="text-center">
+        <div class="text-6xl mb-6">🎯</div>
+        <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold mb-4">რა დონეზე ხარ?</h1>
+        <p class="text-[#A0A09A] text-lg mb-2">უპასუხე 15 კითხვას და გაიგე შენი ინგლისურის დონე</p>
+        <p class="text-[#6B6B65] text-sm mb-8">A1 → C1 | დაახლოებით 3 წუთი</p>
+        <button id="pt-start" class="bg-sky-400 hover:bg-sky-500 text-white font-bold uppercase tracking-wide border-b-4 border-sky-500 active:border-b-0 rounded-xl px-10 py-4 text-lg transition-all">
+          🚀 დაწყება
+        </button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="pt-quiz" class="hidden">
+        <!-- Progress bar -->
+        <div class="mb-8">
+          <div class="flex items-center justify-between text-sm mb-2">
+            <span class="text-[#6B6B65]">კითხვა <span id="pt-num">1</span>/15</span>
+            <span id="pt-level-badge" class="text-xs font-bold px-2 py-0.5 rounded-full bg-green-500/20 text-green-400">A1</span>
+          </div>
+          <div class="w-full h-3 bg-[#242426] rounded-full overflow-hidden">
+            <div id="pt-progress" class="h-full bg-gradient-to-r from-sky-400 to-emerald-400 rounded-full transition-all duration-500" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Question card -->
+        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 mb-6">
+          <p class="text-xs text-[#6B6B65] uppercase tracking-wider mb-3">შეავსე ცარიელი ადგილი</p>
+          <h2 id="pt-question" class="text-xl sm:text-2xl font-bold leading-relaxed"></h2>
+        </div>
+
+        <!-- Answer options -->
+        <div id="pt-options" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+          <!-- filled by JS -->
+        </div>
+
+        <!-- Next button (hidden until answer) -->
+        <div id="pt-next-wrap" class="hidden text-center">
+          <button id="pt-next" class="bg-[#2E2E30] hover:bg-[#3E3E40] text-[#F5F5F0] font-bold border-b-4 border-[#1C1C1E] active:border-b-0 rounded-xl px-8 py-3 transition-all">
+            შემდეგი →
+          </button>
+        </div>
+      </div>
+
+      <!-- Result Screen -->
+      <div id="pt-result" class="hidden text-center">
+        <div id="pt-result-icon" class="text-7xl mb-4"></div>
+        <div id="pt-result-badge" class="inline-block text-4xl font-black bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent mb-2"></div>
+        <p id="pt-result-label" class="text-lg text-[#A0A09A] mb-1"></p>
+        <p id="pt-result-score" class="text-sm text-[#6B6B65] mb-8"></p>
+
+        <!-- Level bar -->
+        <div class="flex items-center gap-1 justify-center mb-8">
+          <span class="text-xs font-bold w-8 text-center text-green-400">A1</span>
+          <span class="text-xs font-bold w-8 text-center text-sky-400">A2</span>
+          <span class="text-xs font-bold w-8 text-center text-violet-400">B1</span>
+          <span class="text-xs font-bold w-8 text-center text-orange-400">B2</span>
+          <span class="text-xs font-bold w-8 text-center text-rose-400">C1</span>
+        </div>
+        <div class="flex items-center gap-0.5 justify-center mb-8">
+          {[0,1,2,3,4].map(i => (
+            <div class={`h-3 w-16 rounded-full ${i === 0 ? 'rounded-l-full' : ''} ${i === 4 ? 'rounded-r-full' : ''} bg-[#2E2E30]`} data-level-bar={i}></div>
+          ))}
+        </div>
+
+        <!-- Recommendations -->
+        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-left mb-6">
+          <h3 class="font-bold text-lg mb-4">📋 რეკომენდაციები</h3>
+          <div id="pt-recs" class="space-y-3">
+            <!-- filled by JS -->
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="/flashcards/" class="bg-green-500 hover:bg-green-600 text-white font-bold uppercase tracking-wide border-b-4 border-green-600 active:border-b-0 rounded-xl px-8 py-3 transition-all">
+            📚 სწავლის დაწყება
+          </a>
+          <button id="pt-retry" class="bg-[#2E2E30] hover:bg-[#3E3E40] text-[#F5F5F0] font-bold border-b-4 border-[#1C1C1E] active:border-b-0 rounded-xl px-8 py-3 transition-all">
+            🔄 თავიდან
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script is:inline define:vars={{ questions, levels }}>
+    (function() {
+      let current = 0, score = 0, answered = false;
+
+      const $ = s => document.querySelector(s);
+      const show = el => el.classList.remove('hidden');
+      const hide = el => el.classList.add('hidden');
+
+      function renderQ() {
+        const q = questions[current];
+        $('#pt-num').textContent = current + 1;
+        $('#pt-progress').style.width = ((current) / questions.length * 100) + '%';
+        $('#pt-question').innerHTML = q.q.replace('___', '<span class="inline-block border-b-2 border-sky-400 px-2 mx-1 min-w-[60px]">___</span>');
+        $('#pt-level-badge').textContent = q.level;
+
+        const colors = { A1: 'bg-green-500/20 text-green-400', A2: 'bg-sky-500/20 text-sky-400', B1: 'bg-violet-500/20 text-violet-400', B2: 'bg-orange-500/20 text-orange-400', C1: 'bg-rose-500/20 text-rose-400' };
+        $('#pt-level-badge').className = 'text-xs font-bold px-2 py-0.5 rounded-full ' + (colors[q.level] || '');
+
+        const optsDiv = $('#pt-options');
+        optsDiv.innerHTML = '';
+        const letters = ['A', 'B', 'C', 'D'];
+        q.opts.forEach((opt, i) => {
+          const btn = document.createElement('button');
+          btn.className = 'pt-opt flex items-center gap-3 bg-[#242426] border-2 border-[#2E2E30] hover:border-sky-400/50 rounded-xl px-5 py-4 text-left transition-all font-medium';
+          btn.innerHTML = `<span class="w-8 h-8 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#6B6B65]">${letters[i]}</span><span>${opt}</span>`;
+          btn.onclick = () => selectAnswer(i);
+          optsDiv.appendChild(btn);
+        });
+        answered = false;
+        hide($('#pt-next-wrap'));
+      }
+
+      function selectAnswer(i) {
+        if (answered) return;
+        answered = true;
+        const q = questions[current];
+        const btns = document.querySelectorAll('.pt-opt');
+        btns.forEach((btn, j) => {
+          btn.classList.remove('hover:border-sky-400/50');
+          if (j === q.ans) {
+            btn.classList.add('border-green-400', 'bg-green-500/10');
+            btn.querySelector('span:first-child').classList.add('bg-green-500', 'text-white');
+            btn.querySelector('span:first-child').classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]');
+          }
+          if (j === i && i !== q.ans) {
+            btn.classList.add('border-rose-400', 'bg-rose-500/10');
+            btn.querySelector('span:first-child').classList.add('bg-rose-500', 'text-white');
+            btn.querySelector('span:first-child').classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]');
+          }
+        });
+        if (i === q.ans) score++;
+        // No immediate feedback text — assessment mode (just color)
+        show($('#pt-next-wrap'));
+      }
+
+      function showResult() {
+        hide($('#pt-quiz'));
+        show($('#pt-result'));
+
+        // Determine level
+        let lvl = levels[0];
+        for (let i = levels.length - 1; i >= 0; i--) {
+          if (score >= levels[i].min) { lvl = levels[i]; break; }
+        }
+
+        $('#pt-result-icon').textContent = lvl.icon;
+        $('#pt-result-badge').textContent = lvl.code;
+        $('#pt-result-badge').className = `inline-block text-4xl font-black bg-gradient-to-r ${lvl.color} bg-clip-text text-transparent mb-2`;
+        $('#pt-result-label').textContent = `${lvl.label} — ${lvl.labelKa}`;
+        $('#pt-result-score').textContent = `${score}/15 სწორი პასუხი`;
+
+        // Color the level bars
+        const lvlIdx = levels.indexOf(lvl);
+        document.querySelectorAll('[data-level-bar]').forEach(bar => {
+          const idx = parseInt(bar.dataset.levelBar);
+          if (idx <= lvlIdx) {
+            const gradients = ['bg-green-400', 'bg-sky-400', 'bg-violet-400', 'bg-orange-400', 'bg-rose-400'];
+            bar.classList.remove('bg-[#2E2E30]');
+            bar.classList.add(gradients[idx]);
+          }
+        });
+
+        // Recommendations
+        const recs = {
+          A1: [
+            { icon: '📚', text: 'დაიწყე Top 2000 სიტყვების სწავლა', link: '/flashcards/' },
+            { icon: '📖', text: 'A1 გრამატიკის გაკვეთილები', link: '/grammar/' },
+            { icon: '🎧', text: 'აეროპორტის პოდკასტი (მარტივი)', link: '/podcast/' },
+          ],
+          A2: [
+            { icon: '📚', text: 'აირჩიე თემატური დეკები (ემოციები, საკვები...)', link: '/flashcards/' },
+            { icon: '📖', text: 'A2 გრამატიკა — წარსული დრო', link: '/grammar/' },
+            { icon: '🎮', text: 'სიტყვების თამაშები', link: '/games/' },
+          ],
+          B1: [
+            { icon: '📚', text: 'Intermediate დეკები (ბიზნესი, მეცნიერება)', link: '/flashcards/' },
+            { icon: '📖', text: 'B1 გრამატიკა — პირობითი წინადადებები', link: '/grammar/' },
+            { icon: '🎧', text: 'პოდკასტები — დიალოგები', link: '/podcast/' },
+          ],
+          B2: [
+            { icon: '📚', text: 'Advanced ლექსიკა', link: '/flashcards/' },
+            { icon: '📖', text: 'B2 გრამატიკა — ვნებითი გვარი', link: '/grammar/' },
+            { icon: '💬', text: 'ფრაზების პრაქტიკა', link: '/phrases/' },
+          ],
+          C1: [
+            { icon: '📚', text: 'C1 აკადემიური ლექსიკა', link: '/flashcards/' },
+            { icon: '📖', text: 'C1 გრამატიკა — ინვერსია', link: '/grammar/' },
+            { icon: '🏆', text: 'ყველა თამაში გაიარე!', link: '/games/' },
+          ],
+        };
+
+        const recsDiv = $('#pt-recs');
+        recsDiv.innerHTML = '';
+        (recs[lvl.code] || recs.A1).forEach(r => {
+          recsDiv.innerHTML += `<a href="${r.link}" class="flex items-center gap-3 bg-[#1C1C1E] rounded-xl px-4 py-3 hover:bg-[#2E2E30] transition-colors">
+            <span class="text-2xl">${r.icon}</span>
+            <span class="text-sm font-medium">${r.text}</span>
+            <span class="ml-auto text-[#6B6B65]">→</span>
+          </a>`;
+        });
+
+        // Save result
+        localStorage.setItem('fluentge-placement-level', lvl.code);
+        localStorage.setItem('fluentge-placement-score', score);
+        $('#pt-progress').style.width = '100%';
+      }
+
+      // Events
+      $('#pt-start').onclick = () => { hide($('#pt-intro')); show($('#pt-quiz')); renderQ(); };
+      $('#pt-next').onclick = () => {
+        current++;
+        if (current >= questions.length) showResult();
+        else renderQ();
+      };
+      $('#pt-retry').onclick = () => {
+        current = 0; score = 0;
+        hide($('#pt-result')); show($('#pt-intro'));
+      };
+    })();
+  </script>
+</Layout>
