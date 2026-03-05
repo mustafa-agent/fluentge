@@ -7,6 +7,20 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-05
 
+### Cron 3 — Features (5:00 AM)
+- **🔗 Grammar XP Bridge (`gamification-bridge.js`):**
+  - Standalone JS at `/js/gamification-bridge.js`, exposes `window.FluentGe` API
+  - Functions: addXP, updateStreak, addStudyTime, markGrammarComplete, showXPFloat, showLevelUp, createXPCounter, getStats, startTimer/stopTimer
+  - Uses SAME localStorage keys as React app — platform gamification fully unified
+  - Wired into grammar `[slug].astro`: +10 XP per correct, +25/50 bonus on completion
+  - Streak updated, study time tracked, grammar completion recorded
+  - Gold XP counter pill (top-right), floating +XP animation, level-up popup
+- **☁️ Cloud Sync — Full Gamification Data:**
+  - Both `firebase-sync.ts` and `Layout.astro` now sync: totalXP, currentStreak, lastPracticeDate, dailyGoalMinutes, gamesPlayed, dailyHistory, achievements, grammarCompleted, difficultWords, onboarding state
+  - Smart merge: keep higher XP/streak/games, merge arrays, keep newer dates
+  - Users can switch devices without losing progress
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **🏠 Personalized Homepage — Two hero states:**
   - New users: existing hero (unchanged)

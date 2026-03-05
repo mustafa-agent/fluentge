@@ -3,8 +3,8 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 5 night) — "Platform Unity & Persistence"
-- [ ] **🔗 Grammar XP Bridge** — Grammar exercises award XP + update streak (CARRIED OVER ×2) ← Cron 3
-- [ ] **☁️ Cloud Sync (Firestore)** — Save/load progress to Firestore, offline-first ← Cron 3
+- [x] **🔗 Grammar XP Bridge** — Grammar exercises award XP + update streak ✅ (Cron 3, Mar 5)
+- [x] **☁️ Cloud Sync (Firestore)** — Gamification data now synced to Firestore ✅ (Cron 3, Mar 5)
 - [ ] **🏠 Homepage Personalization** — Returning users see personalized CTA + stats ← Cron 4
 - [ ] **🔔 Cross-Page SRS Reminders** — Due card banners on ALL pages ← Cron 4
 - [ ] **📖 Reading Comprehension Mode** — 10th study mode, paragraphs + questions ← Cron 4
@@ -56,6 +56,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🔗 Grammar XP Bridge** — `gamification-bridge.js` standalone JS for Astro grammar pages. +10 XP per correct exercise answer, +25/50 bonus on lesson completion (50%/80%+ score). Updates streak, tracks study time, marks grammar as completed. Floating +XP animation, XP counter pill, level-up popup. Uses SAME localStorage keys as React app. (Cron 3, Mar 5)
+- ✅ **☁️ Cloud Sync — Full Gamification** — Both `firebase-sync.ts` (React) and `Layout.astro` (website) now gather and sync ALL gamification data to Firestore: totalXP, currentStreak, lastPracticeDate, dailyGoalMinutes, gamesPlayed, dailyHistory, achievements, grammarCompleted, difficultWords, onboarding state. Merge strategy: keep higher values for numeric fields, merge arrays for achievements/grammar. (Cron 3, Mar 5)
 - ✅ **📅 Daily Lesson** — DailyLesson.tsx: 10-round mixed session (3 new vocab + 3 SRS review + 2 sentence builder + 2 listening). Uses Top 2000 deck. Auto-generates from unseen cards + due SRS cards. Awards XP per round type (10/15), updates streak, tracks study time. Green CTA on DeckSelect now launches it. Session summary at end. (Cron 3, Mar 4 afternoon)
 - ✅ **🏆 Weekly Leaderboard** — Standalone Leaderboard.tsx component. 9 simulated Georgian users with realistic XP (gain 5-30 XP/day). Current user shows real weekly XP. Sorted ranking with medals (🥇🥈🥉), gradient avatars, green highlight for current user. Resets weekly (Monday). Replaces old inline Dashboard leaderboard. Weekly XP tracking via localStorage. (Cron 3, Mar 4 afternoon)
 - ✅ **📊 Vocabulary Size Tracker** — SVG progress ring on dashboard showing mastered/learning/new words out of 26,595 total. Animated ring with green (mastered) + amber (learning) segments. Reads from both SRS stores and classic progress. (Cron 3, Mar 4)
@@ -82,8 +84,7 @@
 - [ ] Progress visualization — chart of words learned over time
 
 ## In Progress 🔄
-- 🔄 **🔗 Grammar XP Bridge** — gamification-bridge.js (Cron 3, Mar 5)
-- 🔄 **☁️ Cloud Sync Enhancement** — sync gamification data to Firestore (Cron 3, Mar 5)
+(none)
 
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
