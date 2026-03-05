@@ -52,6 +52,20 @@ a, button, [role="button"], input[type="submit"] { cursor: pointer !important; }
   100% { opacity: 0; transform: translateY(100vh) rotate(720deg); }
 }
 
+/* Card flip animation */
+@keyframes cardFlipIn {
+  0% { transform: rotateY(90deg) scale(0.95); opacity: 0.5; }
+  100% { transform: rotateY(0deg) scale(1); opacity: 1; }
+}
+
+.card-flipped {
+  animation: cardFlipIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.card-unflipped {
+  animation: cardFlipIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 /* Swipe hint for mobile */
 @keyframes swipeHint {
   0%, 100% { transform: translateX(0); opacity: 0.4; }

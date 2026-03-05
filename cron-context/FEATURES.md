@@ -91,7 +91,8 @@
 - ✅ **📖 Reading Comprehension** — 10th study mode
 
 ## In Progress 🔄
-(none)
+- 🔄 **🔄 Reverse Mode** — Georgian first → reveal English + auto-play audio ← Cron 3
+- 🔄 **📊 Progress Visualization** — Chart of words learned over time ← Cron 3
 
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)

@@ -7,6 +7,13 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-05
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **📝 Placement Test (placement.astro):** 15-question A1→C1 assessment with A/B/C/D option cards, progress bar, level badge display, gradient level bars, personalized recommendation links. Saves result to localStorage. Assessment mode (color-only feedback, no text).
+- **📚 Course Units (courses.astro):** 6 structured learning units (First Steps → Advanced), each with gradient icon, expandable lesson list (5 lessons each), type badges (ლექსიკა/გრამატიკა/პოდკასტი/ტესტი), lock icons for units 3-6. Links to placement test CTA.
+- **🎧 Podcast Player Redesign:** Replaced native `<audio controls>` with custom player — round play/pause 3D button, gradient seek bar, time display, speed controls (0.5x/0.75x/1x/1.25x/1.5x), language toggle (🇬🇧+🇬🇪/🇬🇧/🇬🇪), transcript always visible with time-based line highlighting.
+- **🧭 Navigation:** Added "კურსები" link to navbar (desktop + mobile menu)
+- Deployed ✅, git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM, Day Run)
 - **Sprint review:** "Platform Unity & Persistence" sprint (Mar 5 night) — ALL 5 items completed ✅
   - Grammar XP Bridge ✅ (gamification-bridge.js, unified XP/streak across platform)

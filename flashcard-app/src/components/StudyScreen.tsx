@@ -215,16 +215,29 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     }
   }, [queue, deck.id, storageSuffix]);
 
-  // Auto-play pronunciation when card changes
+  // Auto-play pronunciation when card changes (EN→KA: play English on show; KA→EN: play Georgian on show)
   useEffect(() => {
     if (autoplay && card && !flipped && !sessionDone) {
-      // Small delay so user sees the card first
       const timer = setTimeout(() => {
-        speak(card.english);
+        if (isReverse) {
+          speak(card.georgian, 'ka-GE');
+        } else {
+          speak(card.english);
+        }
       }, 300);
       return () => clearTimeout(timer);
     }
-  }, [card?.english, autoplay, sessionDone]);
+  }, [card?.english, autoplay, sessionDone, isReverse]);
+
+  // Auto-play English pronunciation when card flips in reverse mode (revealing the answer)
+  useEffect(() => {
+    if (autoplay && card && flipped && isReverse && !sessionDone) {
+      const timer = setTimeout(() => {
+        speak(card.english);
+      }, 400);
+      return () => clearTimeout(timer);
+    }
+  }, [flipped, card?.english, autoplay, isReverse, sessionDone]);
 
   function toggleAutoplay() {
     const next = !autoplay;
@@ -598,12 +611,20 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
         </div>
       </div>
 
-      {/* Card */}
+      {/* Card with 3D flip */}
       <div
         onClick={handleCardTap}
         {...swipeHandlers}
-        className="bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[280px] flex flex-col items-center justify-center cursor-pointer select-none transition-all hover:bg-[var(--color-bg-card-hover)] border-2 border-white/10 border-b-4 border-b-white/15 shadow-lg"
-        style={{ transform: swipeOffset ? `translateX(${swipeOffset}px) rotate(${swipeOffset * 0.05}deg)` : undefined, transition: swipeOffset ? 'none' : 'transform 0.3s ease' }}
+        className={`bg-[var(--color-bg-card)] rounded-3xl p-8 min-h-[280px] flex flex-col items-center justify-center cursor-pointer select-none hover:bg-[var(--color-bg-card-hover)] border-2 border-b-4 shadow-lg ${
+          flipped 
+            ? 'border-white/15 border-b-white/20' 
+            : 'border-white/10 border-b-white/15'
+        } ${flipped ? 'card-flipped' : 'card-unflipped'}`}
+        style={{ 
+          transform: swipeOffset ? `translateX(${swipeOffset}px) rotate(${swipeOffset * 0.05}deg)` : undefined, 
+          transition: swipeOffset ? 'none' : 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+          perspective: '1000px',
+        }}
       >
         <div className="flex items-center gap-3 mb-2">
           <div className="text-3xl font-bold">{questionText}</div>

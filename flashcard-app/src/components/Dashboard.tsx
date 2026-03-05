@@ -6,6 +6,7 @@ import { useAllDecks } from '../lib/useDecks';
 import { getCardProgress, getCardsInState } from '../lib/spaced-repetition';
 import { getLocalStorageValue } from '../lib/storage';
 import Leaderboard from './Leaderboard';
+import ProgressChart from './ProgressChart';
 
 interface DashboardProps {
   onNavigate: (screen: any, deck?: any) => void;
@@ -542,6 +543,9 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
             })}
           </div>
         </div>
+
+        {/* Progress Visualization Chart */}
+        <ProgressChart />
 
         {/* 7-Day Activity Chart */}
         <div className="bg-[var(--color-card)] rounded-xl p-4">

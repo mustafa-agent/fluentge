@@ -64,9 +64,9 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 5 day) — Cron 2 Tasks:
-- [ ] **📝 Placement Test UI** — Question cards with A/B/C/D options, progress bar, level result screen with badge (A1/A2/B1/B2 gradient colors), personalized recommendations list. No immediate feedback during test (assessment mode).
-- [ ] **🎧 Podcast Player Redesign** — Custom audio controls (play/pause/seek/time), speed buttons (0.5x/0.75x/1x/1.25x), transcript panel with highlight-current-line effect, Georgian/English toggle, vocabulary sidebar with audio buttons. Quiz section after episode.
-- [ ] **📚 Course Units Page** — Card-based unit layout (6 units), each with icon + progress bar + lesson count. Expandable unit → lesson list with type icons (📚/📖/🎧/📝). Lock/unlock visual for progression.
+- [x] **📝 Placement Test UI** — 15-question A/B/C/D quiz, progress bar, level badges (A1-C1 gradients), result screen with recommendations. Assessment mode (no immediate text feedback). Saves level to localStorage. ✅ Mar 5
+- [x] **🎧 Podcast Player Redesign** — Custom audio controls (play/pause/seek), speed buttons (0.5x-1.5x), language toggle (EN/KA/both), transcript always visible with time-based line highlighting. ✅ Mar 5
+- [x] **📚 Course Units Page** — 6 units with gradient icons, expandable lesson lists, type badges (ლექსიკა/გრამატიკა/პოდკასტი/ტესტი), lock icons for premium units 3+. CTA to placement test. ✅ Mar 5
 
 ### Backlog:
 - [ ] Consistent card borders across all components
