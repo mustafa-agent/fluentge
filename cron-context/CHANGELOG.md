@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-05
 
+### Cron 2 — Design (3:00 AM)
+- **🏠 Personalized Homepage — Two hero states:**
+  - New users: existing hero (unchanged)
+  - Returning users (XP > 0 or streak > 0): personalized greeting + 4 stat pills (streak, XP, words, level) + Daily Lesson green 3D CTA + SRS due reminder
+  - JS in index.astro switches between `#hero-new` and `#hero-returning` based on localStorage
+  - Word count calculated from all `fluentge-srs-*` stores
+- **🔔 SRS Reminder Banner — Cross-page:**
+  - Fixed amber banner below navbar on ALL non-flashcard pages
+  - "🧠 X ბარათი გადასახედია" + direct link to SRS mode
+  - Dismissable per session (sessionStorage), slide-down animation
+  - Added to Layout.astro + index.astro
+- **☁️ Sync Toast:** Green toast after Firestore cloud load, auto-dismiss 3s
+- **🔗 Grammar XP Feedback CSS:** `.grammar-xp-float` animation + `.grammar-xp-counter` pill (ready for Cron 3)
+- ~120 lines new CSS, full light mode support for all components
+- Deployed ✅, git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Daily Lessons & Social Motivation" sprint (Mar 4) — 4/5 items completed:
   - Daily Lesson ✅ (10-round mixed practice, DailyLesson.tsx)

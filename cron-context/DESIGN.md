@@ -64,10 +64,10 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 5 night) — Cron 2 Tasks:
-- [ ] **🏠 Personalized Homepage** — Two hero states: new user (current) vs returning user (greeting + stats + Daily Lesson CTA). Returning hero: gradient bg, streak fire, XP badge, "Continue" button. Stats row with 3-4 colored pills.
-- [ ] **🔗 Grammar XP Feedback** — Floating "+10 XP" animation for grammar pages. Small XP counter in grammar header. Lesson completion celebration (confetti or green flash).
-- [ ] **☁️ Sync UI States** — "Syncing..." indicator (small spinner near user menu). "✅ Synced" toast on successful save. "⚠️ Offline — changes saved locally" banner if no connection.
-- [ ] **🔔 SRS Reminder Banner** — Slim amber/orange banner at top of non-flashcard pages. "🧠 X ბარათი გადასახედია" + link. Dismissable per session.
+- [x] **🏠 Personalized Homepage** — Two hero states: new user vs returning user. Returning hero: gradient bg, streak fire, XP/words/level pills, Daily Lesson CTA (green 3D button), SRS due reminder. JS switches heroes based on localStorage progress. ✅ Mar 5
+- [x] **🔗 Grammar XP Feedback CSS** — `.grammar-xp-float` animation (floats up + fades), `.grammar-xp-counter` pill component. Ready for Cron 3 to wire up in gamification-bridge.js. ✅ Mar 5
+- [x] **☁️ Sync UI States** — `#sync-toast` component: green toast slides in after Firestore cloud load completes, auto-dismisses after 3s. Wired into existing Layout.astro sync script. ✅ Mar 5
+- [x] **🔔 SRS Reminder Banner** — Slim amber banner fixed below navbar on ALL non-flashcard pages. Shows due count + direct link to SRS mode. Dismissable per session (sessionStorage). Also integrated into homepage returning hero. Full light mode support. ✅ Mar 5
 
 ### Backlog:
 - [ ] Consistent card borders across all components

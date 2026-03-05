@@ -228,6 +228,20 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
         }
         d.flashcardProgress = jp(localStorage.getItem('fluentge_progress'), {});
         d.flashcardStats = jp(localStorage.getItem('fluentge_stats'), {});
+        // Gamification
+        d.totalXP = parseInt(localStorage.getItem('totalXP') || '0', 10);
+        d.currentStreak = parseInt(localStorage.getItem('currentStreak') || '0', 10);
+        d.lastPracticeDate = localStorage.getItem('lastPracticeDate') || '';
+        d.streakLastDate = localStorage.getItem('streakLastDate') || '';
+        d.dailyGoalMinutes = parseInt(localStorage.getItem('dailyGoalMinutes') || '10', 10);
+        d.dailyStudyTime = jp(localStorage.getItem('dailyStudyTime'), {});
+        d.gamesPlayed = parseInt(localStorage.getItem('gamesPlayed') || '0', 10);
+        d.dailyHistory = jp(localStorage.getItem('fluentge-daily-history'), {});
+        d.achievements = jp(localStorage.getItem('fluentge-achievements'), []);
+        d.grammarCompleted = jp(localStorage.getItem('fluentge-grammar-completed'), []);
+        d.difficultWords = jp(localStorage.getItem('fluentge-difficult-words'), {});
+        d.onboarded = localStorage.getItem('fluentge-onboarded') === 'true';
+        d.path = localStorage.getItem('fluentge-path') || '';
         return d;
       }
 
@@ -246,6 +260,23 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
         for (const k of new Set([...Object.keys(local.cardProgress||{}), ...Object.keys(cloud.cardProgress||{})])) {
           localStorage.setItem(k, JSON.stringify(mergeObj(local.cardProgress?.[k], cloud.cardProgress?.[k])));
         }
+        // Gamification: keep higher values
+        const mxp = Math.max(local.totalXP||0, cloud.totalXP||0);
+        if (mxp > 0) localStorage.setItem('totalXP', mxp.toString());
+        const mst = Math.max(local.currentStreak||0, cloud.currentStreak||0);
+        if (mst > 0) localStorage.setItem('currentStreak', mst.toString());
+        const mgp = Math.max(local.gamesPlayed||0, cloud.gamesPlayed||0);
+        if (mgp > 0) localStorage.setItem('gamesPlayed', mgp.toString());
+        if (cloud.dailyGoalMinutes) localStorage.setItem('dailyGoalMinutes', cloud.dailyGoalMinutes.toString());
+        const lp1 = local.lastPracticeDate||'', lp2 = cloud.lastPracticeDate||'';
+        const newer = lp1&&lp2 ? (new Date(lp1)>new Date(lp2)?lp1:lp2) : lp1||lp2;
+        if (newer) { localStorage.setItem('lastPracticeDate', newer); localStorage.setItem('streakLastDate', newer); }
+        localStorage.setItem('fluentge-daily-history', JSON.stringify(mergeObj(local.dailyHistory, cloud.dailyHistory)));
+        localStorage.setItem('fluentge-achievements', JSON.stringify(mergeArr(local.achievements||[], cloud.achievements||[])));
+        localStorage.setItem('fluentge-grammar-completed', JSON.stringify(mergeArr(local.grammarCompleted||[], cloud.grammarCompleted||[])));
+        if (local.difficultWords||cloud.difficultWords) localStorage.setItem('fluentge-difficult-words', JSON.stringify(mergeObj(local.difficultWords, cloud.difficultWords)));
+        if (cloud.onboarded) localStorage.setItem('fluentge-onboarded', 'true');
+        if (cloud.path) localStorage.setItem('fluentge-path', cloud.path);
       }
 
       async function loadCloud(uid) {

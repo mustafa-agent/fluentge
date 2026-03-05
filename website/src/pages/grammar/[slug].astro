@@ -195,6 +195,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     </div>
   </section>
 
+  <script is:inline src="/js/gamification-bridge.js"></script>
   <script is:inline>
     (function() {
       // Unlock premium grammar for premium users
@@ -283,17 +284,42 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     let current = 0;
     let score = 0;
     let answered = false;
+    let sessionXP = 0;
 
     const container = document.getElementById('exercise-container');
     const scoreContainer = document.getElementById('score-container');
+
+    // Initialize gamification
+    if (window.FluentGe) {
+      FluentGe.createXPCounter();
+      FluentGe.updateXPCounter(FluentGe.getTotalXP());
+      FluentGe.startTimer();
+    }
 
     function render() {
       if (current >= exercises.length) {
         container.classList.add('hidden');
         scoreContainer.classList.remove('hidden');
         const pct = Math.round((score / exercises.length) * 100);
+        // Bonus XP for completing lesson + streak + study time
+        if (window.FluentGe) {
+          if (pct >= 50) {
+            var bonus = pct >= 80 ? 50 : 25;
+            var br = FluentGe.addXP(bonus);
+            sessionXP += bonus;
+            FluentGe.updateXPCounter(br.newTotal);
+            if (br.levelUp) FluentGe.showLevelUp(br.newLevel);
+          }
+          FluentGe.updateStreak();
+          var mins = FluentGe.stopTimer();
+          FluentGe.addStudyTime(mins);
+          // Extract slug from URL
+          var slug = window.location.pathname.split('/grammar/')[1];
+          if (slug) FluentGe.markGrammarComplete(slug.replace(/\/$/, ''));
+        }
         document.getElementById('score-text').textContent = `${score}/${exercises.length} (${pct}%)`;
-        document.getElementById('score-msg').textContent = pct >= 80 ? '🎉 შესანიშნავი!' : pct >= 50 ? '👍 კარგი შედეგი!' : '💪 კიდევ სცადე!';
+        var xpMsg = sessionXP > 0 ? ` | +${sessionXP} XP ⭐` : '';
+        document.getElementById('score-msg').textContent = (pct >= 80 ? '🎉 შესანიშნავი!' : pct >= 50 ? '👍 კარგი შედეგი!' : '💪 კიდევ სცადე!') + xpMsg;
         return;
       }
       answered = false;
@@ -327,7 +353,17 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       const val = btn.dataset.val;
       const ex = exercises[current];
       const correct = val === ex.answer;
-      if (correct) { score++; playCorrectSound(); } else { playWrongSound(); }
+      if (correct) {
+        score++;
+        playCorrectSound();
+        if (window.FluentGe) {
+          var result = FluentGe.addXP(10);
+          sessionXP += 10;
+          FluentGe.showXPFloat(btn, 10);
+          FluentGe.updateXPCounter(result.newTotal);
+          if (result.levelUp) FluentGe.showLevelUp(result.newLevel);
+        }
+      } else { playWrongSound(); }
 
       container.querySelectorAll('.opt-btn').forEach(b => {
         if (b.dataset.val === ex.answer) {
@@ -348,7 +384,8 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     }
 
     document.getElementById('retry-btn').addEventListener('click', () => {
-      current = 0; score = 0;
+      current = 0; score = 0; sessionXP = 0;
+      if (window.FluentGe) FluentGe.startTimer();
       scoreContainer.classList.add('hidden');
       container.classList.remove('hidden');
       render();

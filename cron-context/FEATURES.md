@@ -82,7 +82,8 @@
 - [ ] Progress visualization — chart of words learned over time
 
 ## In Progress 🔄
-(none)
+- 🔄 **🔗 Grammar XP Bridge** — gamification-bridge.js (Cron 3, Mar 5)
+- 🔄 **☁️ Cloud Sync Enhancement** — sync gamification data to Firestore (Cron 3, Mar 5)
 
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
