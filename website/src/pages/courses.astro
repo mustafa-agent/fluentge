@@ -169,6 +169,91 @@ const units = [
       if (isPremium) {
         document.querySelectorAll('[class*="🔒"]').forEach(el => el.remove());
       }
+
+      // Completion tracking from localStorage
+      var learnedGrammar = [];
+      try { learnedGrammar = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]'); } catch(e) {}
+      var progress = {};
+      try { progress = JSON.parse(localStorage.getItem('fluentge_progress') || '{}'); } catch(e) {}
+
+      // Map grammar slugs to check completion
+      var grammarSlugs = ['to-be','present-simple','past-simple','present-perfect','modal-verbs','conditionals'];
+      var completedGrammar = new Set();
+      grammarSlugs.forEach(function(s) {
+        // Check both slug and title formats
+        var stored = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}');
+        if (stored[s] || learnedGrammar.some(function(t) { return t.toLowerCase().replace(/\s+/g,'-') === s; })) {
+          completedGrammar.add(s);
+        }
+      });
+
+      // Check flashcard deck progress
+      function isDeckStudied(deckId) {
+        try {
+          var srsKey = 'fluentge-srs-' + deckId;
+          var srsData = localStorage.getItem(srsKey);
+          if (srsData) {
+            var parsed = JSON.parse(srsData);
+            return Object.keys(parsed).length > 5;
+          }
+        } catch(e) {}
+        return false;
+      }
+
+      // Mark completed lessons
+      var totalCompleted = 0;
+      document.querySelectorAll('[data-lesson]').forEach(function(el) {
+        var parts = el.dataset.lesson.split('-');
+        var unitId = parseInt(parts[0]);
+        var lessonIdx = parseInt(parts[1]);
+        var href = el.getAttribute('href') || '';
+        var completed = false;
+
+        // Check grammar
+        if (href.includes('/grammar/')) {
+          var slug = href.split('/grammar/')[1];
+          if (slug) slug = slug.replace(/\/$/, '');
+          if (completedGrammar.has(slug)) completed = true;
+        }
+
+        // Check vocab decks
+        if (href.includes('deck=')) {
+          var deck = href.split('deck=')[1];
+          if (isDeckStudied(deck)) completed = true;
+        }
+
+        if (completed) {
+          totalCompleted++;
+          var check = el.querySelector('.lesson-check');
+          if (check) {
+            check.textContent = '✅';
+            check.classList.remove('text-[#6B6B65]');
+            check.classList.add('text-green-400');
+          }
+          // Add subtle green tint
+          el.classList.add('bg-green-500/5');
+        }
+      });
+
+      // Update header counters
+      var completedEl = document.getElementById('cu-completed');
+      if (completedEl) completedEl.textContent = totalCompleted;
+
+      // Update unit percentages
+      for (var u = 1; u <= 6; u++) {
+        var unitLessons = document.querySelectorAll('[data-lesson^="' + u + '-"]');
+        var done = 0;
+        unitLessons.forEach(function(el) {
+          if (el.querySelector('.lesson-check.text-green-400')) done++;
+        });
+        var pctEl = document.querySelector('[data-unit-pct="' + u + '"]');
+        if (pctEl && unitLessons.length > 0) {
+          var pct = Math.round((done / unitLessons.length) * 100);
+          pctEl.textContent = pct + '%';
+          if (pct > 0) pctEl.classList.add('text-green-400');
+          if (pct === 100) pctEl.textContent = '✅';
+        }
+      }
     })();
   </script>
 </Layout>

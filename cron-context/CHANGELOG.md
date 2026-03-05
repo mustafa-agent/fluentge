@@ -7,6 +7,11 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-05
 
+### Cron 3B — Features (3:30 PM, Day Run)
+- **🔄 Reverse Mode Enhancement:** Fixed autoplay (plays Georgian on show, English on flip in KA→EN mode). Added 3D card flip animation (CSS rotateY).
+- **📊 Progress Visualization Chart (ProgressChart.tsx):** SVG line chart with XP/cards/minutes metrics, 7/14/30 day toggle, summary stats, color-coded area fill. Added to Dashboard.
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM, Day Run)
 - **📝 Placement Test (placement.astro):** 15-question A1→C1 assessment with A/B/C/D option cards, progress bar, level badge display, gradient level bars, personalized recommendation links. Saves result to localStorage. Assessment mode (color-only feedback, no text).
 - **📚 Course Units (courses.astro):** 6 structured learning units (First Steps → Advanced), each with gradient icon, expandable lesson list (5 lessons each), type badges (ლექსიკა/გრამატიკა/პოდკასტი/ტესტი), lock icons for units 3-6. Links to placement test CTA.

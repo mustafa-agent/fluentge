@@ -10,12 +10,8 @@
 - [ ] **📊 Weekly Practice Stats** — Dashboard summary + PWA notifications ← Cron 4
 
 ### Flashcard Improvements
-- [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
-- [ ] Better card flip animation
-
 ### Dashboard
 - [ ] Leaderboard (top learners this week)
-- [ ] Progress visualization — chart of words learned over time
 
 ### Section Interconnection
 - [ ] Learning paths (beginner → intermediate → advanced)
@@ -56,6 +52,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🔄 Reverse Mode Enhancement** — Fixed autoplay: plays Georgian on card show, English on flip reveal. Added 3D card flip animation (CSS rotateY). (Cron 3, Mar 5 afternoon)
+- ✅ **📊 Progress Visualization Chart** — ProgressChart.tsx: SVG line chart showing XP/cards/minutes over 7/14/30 days. Toggle between metrics, summary stats (total/avg/active days), color-coded with area fill. Added to Dashboard. (Cron 3, Mar 5 afternoon)
 - ✅ **🔗 Grammar XP Bridge** — `gamification-bridge.js` standalone JS for Astro grammar pages. +10 XP per correct exercise answer, +25/50 bonus on lesson completion (50%/80%+ score). Updates streak, tracks study time, marks grammar as completed. Floating +XP animation, XP counter pill, level-up popup. Uses SAME localStorage keys as React app. (Cron 3, Mar 5)
 - ✅ **☁️ Cloud Sync — Full Gamification** — Both `firebase-sync.ts` (React) and `Layout.astro` (website) now gather and sync ALL gamification data to Firestore: totalXP, currentStreak, lastPracticeDate, dailyGoalMinutes, gamesPlayed, dailyHistory, achievements, grammarCompleted, difficultWords, onboarding state. Merge strategy: keep higher values for numeric fields, merge arrays for achievements/grammar. (Cron 3, Mar 5)
 - ✅ **📅 Daily Lesson** — DailyLesson.tsx: 10-round mixed session (3 new vocab + 3 SRS review + 2 sentence builder + 2 listening). Uses Top 2000 deck. Auto-generates from unseen cards + due SRS cards. Awards XP per round type (10/15), updates streak, tracks study time. Green CTA on DeckSelect now launches it. Session summary at end. (Cron 3, Mar 4 afternoon)
@@ -77,12 +75,6 @@
 - ✅ **Session summary after flashcard practice** — Rich summary with accuracy %, time elapsed, correct/wrong bar, hardest words list, speed stat (Cron 3, Feb 28)
 - ✅ **Onboarding CTA on homepage** — "New here?" section with links to flashcards, grammar A1, games (Cron 3, Feb 28)
 
-### Flashcard Improvements
-- [ ] Reverse mode: Georgian first → user says English → flip to reveal + auto-play audio
-
-### Dashboard
-- [ ] Progress visualization — chart of words learned over time
-
 ## Previously Completed ✅ (Mar 5 Night — "Platform Unity & Persistence")
 - ✅ **🔗 Grammar XP Bridge** — gamification-bridge.js, unified XP across platform
 - ✅ **☁️ Cloud Sync (Firestore)** — full gamification data synced
@@ -91,8 +83,7 @@
 - ✅ **📖 Reading Comprehension** — 10th study mode
 
 ## In Progress 🔄
-- 🔄 **🔄 Reverse Mode** — Georgian first → reveal English + auto-play audio ← Cron 3
-- 🔄 **📊 Progress Visualization** — Chart of words learned over time ← Cron 3
+(none)
 
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
