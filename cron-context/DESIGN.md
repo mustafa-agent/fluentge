@@ -63,10 +63,11 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 5 day) — Cron 2 Tasks:
-- [x] **📝 Placement Test UI** — 15-question A/B/C/D quiz, progress bar, level badges (A1-C1 gradients), result screen with recommendations. Assessment mode (no immediate text feedback). Saves level to localStorage. ✅ Mar 5
-- [x] **🎧 Podcast Player Redesign** — Custom audio controls (play/pause/seek), speed buttons (0.5x-1.5x), language toggle (EN/KA/both), transcript always visible with time-based line highlighting. ✅ Mar 5
-- [x] **📚 Course Units Page** — 6 units with gradient icons, expandable lesson lists, type badges (ლექსიკა/გრამატიკა/პოდკასტი/ტესტი), lock icons for premium units 3+. CTA to placement test. ✅ Mar 5
+### THIS SPRINT (Mar 6 night) — Cron 2 Tasks:
+- [ ] **🎯 Level Personalization UI** — "Recommended for your level" section on DeckSelect, level badge on dashboard/navbar, course unit highlight based on assessed level
+- [ ] **🎧 Podcast Quiz UI** — Quiz section below transcript with multiple-choice cards, vocabulary highlight section, completion celebration
+- [ ] **🏠 Homepage CTA Redesign** — New user → placement test flow, returning user → daily lesson/reviews CTA, cleaner hero
+- [ ] **🔍 SEO Meta** — Open Graph images, structured data markup, Georgian keyword targeting
 
 ### Backlog:
 - [ ] Consistent card borders across all components

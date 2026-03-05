@@ -206,6 +206,33 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
       </div>
 
       <div className="max-w-lg mx-auto px-4 py-6 space-y-6">
+        {/* Level Badge */}
+        {(() => {
+          const pl = localStorage.getItem('fluentge-placement-level');
+          if (!pl) return null;
+          const lc: Record<string, {label: string; labelKa: string; gradient: string}> = {
+            'A1': { label: 'A1', labelKa: 'დამწყები', gradient: 'from-green-500 to-emerald-500' },
+            'A2': { label: 'A2', labelKa: 'ელემენტარული', gradient: 'from-sky-500 to-blue-500' },
+            'B1': { label: 'B1', labelKa: 'საშუალო', gradient: 'from-indigo-500 to-purple-500' },
+            'B2': { label: 'B2', labelKa: 'მაღალი', gradient: 'from-purple-500 to-pink-500' },
+            'C1': { label: 'C1', labelKa: 'მაღალი+', gradient: 'from-rose-500 to-red-500' },
+          };
+          const info = lc[pl];
+          if (!info) return null;
+          return (
+            <div className={`bg-gradient-to-r ${info.gradient} rounded-xl p-3 flex items-center justify-between`}>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl font-black text-white/90">{info.label}</span>
+                <div>
+                  <div className="text-sm font-bold text-white">შენი დონე: {info.labelKa}</div>
+                  <div className="text-[10px] text-white/70">პლეისმენთ ტესტის შედეგი</div>
+                </div>
+              </div>
+              <a href="/placement/" className="text-[10px] text-white/60 hover:text-white/90 transition-colors underline">ხელახლა</a>
+            </div>
+          );
+        })()}
+
         {/* Today's Summary */}
         <div className="bg-[var(--color-card)] rounded-xl p-4">
           <h2 className="text-lg font-bold mb-4 flex items-center gap-2">

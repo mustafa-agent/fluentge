@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 5 day) — "Guided Learning & Content Depth"
-- [ ] **📝 Placement Test** — 15-question level assessment (A1→B2) ← Cron 3
-- [ ] **🎧 Podcast Player Upgrade** — Transcript highlighting, speed control, quiz ← Cron 3
-- [ ] **📚 Course Units** — Structured learning paths (6 units) ← Cron 4
-- [ ] **📝 Interactive Grammar Exercises** — Quiz-style exercises replacing show/hide ← Cron 4
-- [ ] **📊 Weekly Practice Stats** — Dashboard summary + PWA notifications ← Cron 4
+### 🎯 THIS SPRINT (Mar 6 night) — "Content Quality & User Journey Polish"
+- [ ] **🎯 Level-Based Personalization** — Placement test results affect deck recs, daily lesson difficulty, course unit highlighting ← Cron 3
+- [ ] **🎧 Podcast Comprehension Data** — Real quiz questions + vocabulary + timestamps per episode ← Cron 3
+- [ ] **🏠 Homepage → Placement Flow** — New user CTA → placement test → personalized start ← Cron 4
+- [ ] **🔍 SEO Optimization** — Meta tags, structured data, Georgian keywords, sitemap ← Cron 4
+- [ ] **🎮 Game Verification** — Test all 30+ games, fix broken ones ← Cron 4
 
 ### Flashcard Improvements
 ### Dashboard
@@ -82,9 +82,16 @@
 - ✅ **🔔 Cross-Page SRS Reminders** — amber banner on all pages
 - ✅ **📖 Reading Comprehension** — 10th study mode
 
+## Previously Completed ✅ (Mar 5 Day — "Guided Learning & Content Depth")
+- ✅ **📝 Placement Test** — 15-question A1→C1 assessment, saves level
+- ✅ **🎧 Podcast Player Upgrade** — Custom player, speed control, transcript, language toggle
+- ✅ **📚 Course Units** — 6 structured units with completion tracking
+- ✅ **📝 Interactive Grammar Exercises** — Duolingo-style 3D buttons, feedback bar
+- ✅ **🔄 Reverse Mode Enhancement** — 3D flip, correct autoplay
+- ✅ **📊 Progress Chart** — SVG line chart on dashboard
+
 ## In Progress 🔄
 (none)
-
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

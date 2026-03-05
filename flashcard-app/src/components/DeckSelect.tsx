@@ -163,6 +163,17 @@ export default function DeckSelect({ onSelect }: Props) {
   const top2000 = deckIndex.find(d => d.id === 'top-2000')!;
   const freeDecksFiltered = freeDecks.filter(d => d.id !== 'top-2000');
 
+  // Level-based personalization
+  const placementLevel = localStorage.getItem('fluentge-placement-level');
+  const levelConfig: Record<string, { label: string; labelKa: string; color: string; border: string; bg: string; deckIds: string[] }> = {
+    'A1': { label: 'A1', labelKa: 'დამწყები', color: 'text-green-400', border: 'border-green-500/30', bg: 'from-green-500/15 to-emerald-500/10', deckIds: ['greetings', 'numbers-counting', 'colors', 'family-people', 'food-cooking', 'animals-nature'] },
+    'A2': { label: 'A2', labelKa: 'ელემენტარული', color: 'text-sky-400', border: 'border-sky-500/30', bg: 'from-sky-500/15 to-blue-500/10', deckIds: ['daily-life', 'shopping-money', 'travel-transport', 'feelings-moods', 'weather-seasons'] },
+    'B1': { label: 'B1', labelKa: 'საშუალო', color: 'text-indigo-400', border: 'border-indigo-500/30', bg: 'from-indigo-500/15 to-purple-500/10', deckIds: ['business-work', 'technology', 'health-body', 'education', 'culture-art'] },
+    'B2': { label: 'B2', labelKa: 'მაღალი', color: 'text-purple-400', border: 'border-purple-500/30', bg: 'from-purple-500/15 to-pink-500/10', deckIds: ['academic', 'idioms-expressions', 'phrasal-verbs', 'science-math'] },
+  };
+  const levelInfo = placementLevel ? levelConfig[placementLevel] : null;
+  const recommendedDecks = levelInfo ? deckIndex.filter(d => levelInfo.deckIds.includes(d.id)) : [];
+
   // Count due SRS cards across all decks
   const totalDueCards = getTotalDueCards();
 
@@ -325,6 +336,44 @@ export default function DeckSelect({ onSelect }: Props) {
             </div>
             <div className="flex-shrink-0 bg-amber-500 text-white font-extrabold text-lg w-10 h-10 rounded-full flex items-center justify-center border-b-2 border-amber-700">
               {totalDueCards > 99 ? '99+' : totalDueCards}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 🎯 Recommended for Your Level */}
+      {levelInfo && recommendedDecks.length > 0 && (
+        <div className={`mb-5 rounded-2xl border ${levelInfo.border} overflow-hidden`}>
+          <div className={`bg-gradient-to-r ${levelInfo.bg} p-4`}>
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <span className={`text-xs font-bold uppercase tracking-wider ${levelInfo.color} bg-white/10 px-2.5 py-1 rounded-full border-b-2 border-white/5`}>
+                  {levelInfo.label}
+                </span>
+                <span className="text-sm font-bold">შენი დონისთვის რეკომენდებული</span>
+              </div>
+              <a href="/placement/" className="text-[10px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors underline">შეცვალე</a>
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {recommendedDecks.slice(0, 6).map(meta => (
+                <button
+                  key={meta.id}
+                  onClick={() => setSelectedMeta(meta)}
+                  className="relative overflow-hidden rounded-xl text-center transition-all hover:scale-[1.03] active:scale-[0.97] group bg-black/20 backdrop-blur-sm"
+                >
+                  <img src={meta.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-25 group-hover:opacity-35 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  {deckDueCounts[meta.id] && (
+                    <div className="absolute top-1.5 right-1.5 z-10 bg-amber-500 text-white text-[9px] font-bold min-w-[18px] h-[18px] rounded-full flex items-center justify-center px-1 shadow-lg">
+                      {deckDueCounts[meta.id]}
+                    </div>
+                  )}
+                  <div className="relative p-2.5">
+                    <span className="text-xl block mb-0.5">{meta.icon}</span>
+                    <p className="text-[10px] font-semibold text-white leading-tight line-clamp-2">{meta.nameKa}</p>
+                  </div>
+                </button>
+              ))}
             </div>
           </div>
         </div>

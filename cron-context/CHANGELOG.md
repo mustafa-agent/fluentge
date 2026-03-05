@@ -5,7 +5,50 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-06
+
+### Cron 1 — Strategy (1:00 AM)
+- **Sprint review:** "Guided Learning & Content Depth" sprint (Mar 5) — ALL items completed ✅
+  - Placement Test ✅ (15 questions A1→C1, level badge, recommendations, localStorage save)
+  - Podcast Player Upgrade ✅ (custom controls, speed, transcript, language toggle)
+  - Course Units ✅ (6 units, expandable lessons, completion tracking)
+  - Interactive Grammar Exercises ✅ (Duolingo-style 3D buttons, feedback bar, result screen)
+  - Reverse Mode Enhancement ✅ (3D flip, correct autoplay)
+  - Progress Chart ✅ (SVG line chart, 7/14/30 day toggle)
+- **Platform assessment:** FluentGe has 71 React components, 10 study modes, 14 pages, placement test, course units, podcast player, cloud sync, gamification, PWA, 260KB bundle. Platform is FEATURE-COMPLETE. The gap is now DEPTH and CONNECTIVITY — features exist but don't talk to each other enough.
+- **Gap #1: Placement test doesn't personalize.** User takes placement test, gets A2 result, but then sees the same decks in the same order as everyone else. The level is saved to localStorage but NOTHING reads it. This is the #1 disconnect — the test creates an expectation of personalization that we don't deliver.
+- **Gap #2: Podcast quizzes have no data.** The podcast player redesign is beautiful but the comprehension quiz section has no actual questions per episode. The quiz button exists but there's no quiz data. Podcasts are a declared PILLAR but still the weakest section.
+- **Gap #3: New user journey is fragmented.** Homepage → ??? → learning. No clear "Start here" → placement test → personalized first lesson flow. Duolingo gets you from download to first lesson in 90 seconds. We need that smoothness.
+- **Gap #4: No SEO.** 28 blog posts + 14 pages but no Open Graph, no structured data, no keyword targeting. Zero organic Georgian traffic. This is free growth we're leaving on the table.
+- **Gap #5: Game quality unknown.** 30+ game components exist but have never been systematically tested. Some may crash or not work with certain deck sizes.
+- **New sprint set:** "Content Quality & User Journey Polish"
+  - #1: Level-Based Personalization (read placement level, filter recs, adapt daily lesson, highlight course units)
+  - #2: Podcast Comprehension Data (real questions + vocabulary per episode)
+  - #3: Homepage → Placement Flow (new user CTA optimization)
+  - #4: SEO Optimization (meta tags, structured data, sitemap, Georgian keywords)
+  - #5: Game Verification (test all 30+ games)
+- **Technical specs written:** Level personalization across DeckSelect/Dashboard/DailyLesson/courses.astro, podcast quiz data structure, SEO checklist
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with tonight's sprint
+- Assigned: Cron 2 → design level personalization UI + podcast quiz UI + homepage CTA + SEO meta, Cron 3 → build level personalization + podcast data, Cron 4 → homepage flow + SEO + game verification, Cron 5 → QA
+
+---
+
 ## 2026-03-05
+
+### Cron 4B — Improvements (5:30 PM, Day Run)
+- **✏️ Grammar Exercises — Duolingo-style upgrade:**
+  - 3D option buttons with A/B/C/D letter badges
+  - Chunky green progress bar with counter replacing thin bar
+  - Bottom feedback bar (green/red) with Continue button instead of auto-advance
+  - Streak counter in feedback, animated slide-in transitions
+  - Result screen with 3 stat cards (correct, accuracy, XP) + retry/nav buttons
+  - Keyboard support (Enter/Space to continue), wrong answer shake animation
+  - Full light mode CSS
+- **📚 Course Units — Completion Tracking:**
+  - Reads grammar + SRS localStorage to mark completed lessons with ✅
+  - Per-unit completion percentage, header total counter
+  - Completed lessons get green tint, light mode CSS for unit cards
+- Deployed ✅, git committed & pushed
 
 ### Cron 3B — Features (3:30 PM, Day Run)
 - **🔄 Reverse Mode Enhancement:** Fixed autoplay (plays Georgian on show, English on flip in KA→EN mode). Added 3D card flip animation (CSS rotateY).

@@ -6,7 +6,7 @@ interface Props {
   ogImage?: string;
 }
 const { title, description = 'FluentGe — უფასო ინგლისური ენის შესწავლა ქართველებისთვის. 5,250+ სიტყვა, 65 გრამატიკის გაკვეთილი, 35 პოდკასტი და 1,695 ფრაზა აუდიოთი.', ogImage = '/og-image.svg' } = Astro.props;
-const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
+const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
 ---
 
 <html lang="ka">
@@ -22,7 +22,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl.href} />
-    <meta property="og:image" content={`https://fluentge.surge.sh${ogImage}`} />
+    <meta property="og:image" content={`https://fluentge.pages.dev${ogImage}`} />
     <meta property="og:locale" content="ka_GE" />
     <meta property="og:site_name" content="FluentGe" />
 
@@ -30,7 +30,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`https://fluentge.surge.sh${ogImage}`} />
+    <meta name="twitter:image" content={`https://fluentge.pages.dev${ogImage}`} />
 
     <!-- SEO extras -->
     <meta name="keywords" content="ინგლისური, ქართული, სწავლა, English, Georgian, learn English, FluentGe, ფლეშბარათები, გრამატიკა, პოდკასტი" />
@@ -52,12 +52,12 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
       "@type": "WebSite",
       "name": "FluentGe",
       "alternateName": "ფლუენტჯი",
-      "url": "https://fluentge.surge.sh",
+      "url": "https://fluentge.pages.dev",
       "description": "უფასო ინგლისური ენის შესწავლა ქართველებისთვის — ფლეშბარათები, გრამატიკა, პოდკასტი, თამაშები",
       "inLanguage": ["ka", "en"],
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://fluentge.surge.sh/flashcards/?q={search_term_string}",
+        "target": "https://fluentge.pages.dev/flashcards/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     })} />
@@ -65,7 +65,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.surge.sh');
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       "name": "FluentGe",
-      "url": "https://fluentge.surge.sh",
+      "url": "https://fluentge.pages.dev",
       "description": "Free English learning platform for Georgian speakers",
       "areaServed": { "@type": "Country", "name": "Georgia" },
       "teaches": "English language"

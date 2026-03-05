@@ -18,9 +18,9 @@
 - [x] Confetti/celebration on milestones (every 10 cards, deck completion) ✅ Cron 4, Mar 2
 
 ### Grammar Section
-- [ ] Interactive exercises within lessons (not just reading)
+- [x] Interactive exercises within lessons ✅ Cron 4B, Mar 5 (Duolingo-style 3D buttons, feedback bar, continue button)
 - [ ] Progress indicator per lesson
-- [ ] "Mark as complete" functionality
+- [x] "Mark as complete" functionality ✅ (already existed)
 - [ ] Related vocabulary sidebar
 
 ### Homepage
@@ -55,11 +55,12 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 5 day) — "Guided Learning & Content Depth"
-- [ ] **📝 Placement Test** — Level assessment for new users ← Cron 3
-- [ ] **🎧 Podcast Player** — Transcript sync, speed control, quiz ← Cron 3
-- [ ] **📚 Course Units** — Structured curriculum page ← Cron 4
-- [ ] **📝 Grammar Exercises** — Interactive quiz-style upgrades ← Cron 4
+## 🎯 THIS SPRINT (Mar 6 night) — "Content Quality & User Journey Polish"
+- [ ] **🎯 Level personalization** — Placement results affect all recommendations ← Cron 3
+- [ ] **🎧 Podcast quiz data** — Real comprehension questions per episode ← Cron 3
+- [ ] **🏠 Homepage→Placement flow** — Optimize new user journey ← Cron 4
+- [ ] **🔍 SEO audit** — Meta tags, structured data, Georgian keywords ← Cron 4
+- [ ] **🎮 Game verification** — Test all 30+ games ← Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
@@ -71,6 +72,10 @@
 
 ## In Progress 🔄
 (none)
+
+## Completed This Sprint ✅ (Mar 5 day)
+- Grammar exercises Duolingo-style upgrade ✅ Cron 4B, Mar 5 (3D buttons, feedback bar, continue button, streak, stat cards)
+- Course units completion tracking ✅ Cron 4B, Mar 5 (localStorage progress, per-unit %, green checkmarks, light mode)
 
 ## Completed Last Sprint ✅ (Mar 2 — "Top 2000 Spotlight & Polish")
 - Top 2000 hero card ✅ Cron 2B, Mar 2

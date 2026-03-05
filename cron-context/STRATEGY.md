@@ -20,20 +20,20 @@ FluentGe is THE English learning platform for Georgians. Professional quality th
 - **Lingwing.com:** Our closest competitor for Georgian market — playful tone, practice-focused, no grammar drilling
 - **Anki:** Best spaced repetition algorithm
 
-## What FluentGe Has (Current State — Mar 5)
+## What FluentGe Has (Current State — Mar 6)
 - 14 Astro pages + 28 blog posts
 - 142 flashcard deck JSON files with audio (EN + KA)
-- **70 React components** (30+ games + 9 study modes + UI)
-- 65 grammar lessons (A1-C1) with interactive exercises + sound feedback
+- **71 React components** (30+ games + 10 study modes + UI)
+- 65 grammar lessons (A1-C1) with Duolingo-style interactive exercises + sound feedback
 - 8 free grammar lessons (full A1) ✅
-- Podcast section with audio
+- Podcast section with custom player (speed control, transcript, language toggle)
 - Dashboard with progress tracking + "continue where you left off"
 - Firebase auth (Google SSO + email)
 - Light/dark mode (audited ✅)
 - PWA support (manifest + service worker + install banner)
 - Premium/free tier system
 - Phrases page (1,695 phrases, 40 categories)
-- **9 study modes:** EN→KA, KA→EN, Mixed, SRS, Quiz, Typing, Sentence Builder, Listening, Fill-in-Blank ✅
+- **10 study modes:** EN→KA, KA→EN, Mixed, SRS, Quiz, Typing, Sentence Builder, Listening, Fill-in-Blank, Reading Comprehension ✅
 - **Daily Lesson** — auto-generated 10-round mixed practice ✅
 - **Weekly Leaderboard** — simulated + real users ✅
 - **Difficult Words** — tracks errors, focused review mode ✅
@@ -52,7 +52,13 @@ FluentGe is THE English learning platform for Georgians. Professional quality th
 - **Vocabulary Size Tracker** — SVG progress ring ✅
 - **Recommended For You** — smart dashboard cards ✅
 - **7-Day Activity Chart** — dual bar chart ✅
-- **Bundle size: 258KB** (96% reduction from 6.5MB via dynamic loading) ✅
+- **Placement Test** — 15-question A1→C1 level assessment ✅
+- **Course Units** — 6 structured units with completion tracking ✅
+- **Podcast Player** — custom controls, speed, transcript, language toggle ✅
+- **Grammar XP Bridge** — unified XP across platform ✅
+- **Cloud Sync** — Firestore gamification data ✅
+- **Progress Chart** — SVG line chart (7/14/30 day) ✅
+- **Bundle size: 260KB** (96% reduction from 6.5MB via dynamic loading) ✅
 
 ## Architecture
 - **Website:** Astro (SSG) at `/` — landing, grammar, podcasts, dashboard, blog
@@ -70,7 +76,7 @@ english-app/
 │   ├── src/styles/    # global.css
 │   └── public/        # Static assets (audio, icons)
 ├── flashcard-app/     # React Vite app
-│   ├── src/components/ # 70 components
+│   ├── src/components/ # 71 components
 │   ├── src/lib/       # cards.ts, firebase, srs-engine, gamification, storage
 │   └── content/       # 142 JSON deck files
 └── cron-context/      # This directory — cron coordination files
@@ -93,183 +99,154 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 5 Day Cycle)
+## 🎯 Current Sprint (Mar 6 Night Cycle)
 
-### Theme: "Guided Learning & Content Depth"
+### Theme: "Content Quality & User Journey Polish"
 
-### CONTEXT: Previous Sprint Results (Mar 5 Night — "Platform Unity & Persistence")
-- ✅ Grammar XP Bridge — gamification-bridge.js, +10 XP per correct, streak/study time tracking
-- ✅ Cloud Sync (Firestore) — full gamification data synced, smart merge, offline-first
-- ✅ Homepage Personalization — returning users see stats + Daily Lesson CTA
-- ✅ Cross-Page SRS Reminders — amber banner on all non-flashcard pages
-- ✅ Reading Comprehension — 10th study mode, passages + questions + Georgian toggle
+### CONTEXT: Previous Sprint Results (Mar 5 — "Guided Learning & Content Depth")
+- ✅ Placement Test — 15 questions A1→C1, saves level, recommendations
+- ✅ Podcast Player Upgrade — custom player, speed control, transcript, language toggle
+- ✅ Course Units — 6 units with completion tracking, expandable lessons
+- ✅ Interactive Grammar Exercises — Duolingo-style 3D buttons, feedback bar, result screen
+- ✅ Reverse Mode Enhancement — 3D flip animation, correct autoplay
+- ✅ Progress Chart — SVG line chart on dashboard
 
-### Strategic State (Mar 5, 11:30 AM):
-FluentGe has **70+ React components, 10 study modes, Daily Lesson, Weekly Leaderboard, SM-2 SRS, onboarding, PWA, mobile bottom nav, full unified gamification, cloud sync, personalized homepage**. 260KB main bundle. Platform is UNIFIED — grammar and flashcards share same XP/streak system. Progress persists in Firestore.
+### Strategic State (Mar 6, 1:00 AM):
+FluentGe has **71 React components, 10 study modes, 14 pages, placement test, course units, enhanced podcast player, cloud sync, full gamification, PWA, 260KB bundle**. 
 
-**We've built the engine. Now we need to guide users through it.**
+**We've built the features AND the guided journey. Now we need to DEEPEN and POLISH.**
 
-The platform is feature-rich but the USER JOURNEY is still "here's a bunch of tools, figure it out." Duolingo's magic is that users never have to THINK about what to do next — the app decides. FluentGe needs that same guided experience.
+The platform is wide but some areas are shallow. The course units link to pages but there's no actual UNIT QUIZ that tests cross-skill knowledge. The podcast episodes have a player but the comprehension quiz data isn't populated. The placement test works but doesn't actually personalize the experience yet (no deck filtering by level). 
 
-**The #1 gap: NO LEVEL ASSESSMENT.**
-- New users start at zero with no idea of their level
-- A 15-question placement test → auto-assigns A1/A2/B1/B2
-- Personalizes entire experience: recommended decks, grammar level, difficulty
-- Every serious language app has this (Duolingo, Lingwing, Memrise)
+**The #1 priority: CONNECT THE DOTS.**
+- Placement test saves a level but nothing changes based on it
+- Course unit "quiz" links go to generic /games/ — need actual unit-specific quizzes
+- Podcast comprehension quizzes need real question data per episode
+- Recommended decks should filter by user's assessed level
 
-**The #2 gap: PODCAST SECTION IS UNDERDEVELOPED.**
-- Only short 2-min dialogues with basic player
-- No transcript highlighting, no speed control, no comprehension questions
-- Podcasts are a PILLAR but feel like an afterthought
-- Users should be able to listen, read along, answer questions, learn vocab
+**The #2 priority: CONTENT DEPTH FOR PODCASTS.**
+- Podcast player is beautiful but episodes are short basic dialogues
+- Need real comprehension questions per episode
+- Need vocabulary highlights per episode
+- This turns podcasts from a nice-to-have into a real learning pillar
 
-**The #3 gap: NO STRUCTURED CURRICULUM.**
-- Learning Path exists (10-step roadmap) but it's a flat list
-- Need proper course UNITS that bundle: vocab deck + grammar lesson + podcast + quiz
-- Unit 1: Basics (greetings + to-be + airport podcast)
-- Unit 2: Daily Life (food + present simple + restaurant podcast)
-- This is how Duolingo organizes content — units with multiple lesson types
+**The #3 priority: HOMEPAGE & CONVERSION OPTIMIZATION.**
+- Homepage is decent but doesn't convert well
+- Need clear "Start Learning" flow that goes: Homepage → Placement Test → Personalized Dashboard
+- Premium page needs social proof tied to real usage stats
+- Better mobile experience on landing page
 
-**The #4 gap: GRAMMAR EXERCISES ARE STILL PASSIVE.**
-- Grammar pages have basic check exercises but they're simple show/hide
-- Need interactive quiz-style exercises: multiple choice, fill-in, sentence reorder
-- With XP bridge now working, better exercises = more engagement + XP
+**The #4 priority: SEO & DISCOVERABILITY.**
+- 28 blog posts exist but are they optimized?
+- Need Georgian-language SEO targeting ("ინგლისური ონლაინ", "ინგლისურის სწავლა")
+- Meta tags, Open Graph, structured data
+- Blog should drive organic traffic
+
+**The #5 priority: BUG HUNTING & EDGE CASES.**
+- 71 components = lots of places for edge cases
+- Are all 30+ games actually working?
+- What happens with empty decks? Decks with <5 cards?
+- Error states for Firebase auth failures?
 
 ### Sprint Goals (ordered by priority)
 
-1. **🔴 Placement Test** — Assess user level in 2 minutes:
-   - 15 multiple-choice questions, progressive difficulty (A1→B2)
-   - Question types: vocab meaning, grammar fill-in, sentence completion
-   - Auto-scoring: <5 correct = A1, 5-8 = A2, 9-12 = B1, 13-15 = B2
-   - Saves level to localStorage + Firestore
-   - Shown after onboarding OR accessible from profile
-   - Result personalizes: recommended decks, grammar starting point, daily lesson difficulty
-   - **File:** `PlacementTest.tsx` in flashcard-app
+1. **🔴 Level-Based Personalization** — Make placement test results MATTER:
+   - Filter recommended decks by assessed level
+   - Course units: highlight user's suggested starting unit
+   - Dashboard greeting adapts to level ("beginner" vs "intermediate")
+   - Daily Lesson difficulty matches level (easier words for A1, harder for B2)
+   - Grammar page: highlight recommended starting lesson
+   - **Files:** Multiple — DeckSelect, Dashboard, DailyLesson, courses.astro
 
-2. **🔴 Podcast Player Upgrade** — Make podcasts a real learning tool:
-   - Transcript with word-by-word highlighting synced to audio
-   - Speed control (0.5x, 0.75x, 1x, 1.25x)
-   - Comprehension quiz after each episode (3-5 questions)
-   - Vocabulary list with audio for each episode's key words
-   - +20 XP for completing an episode + quiz
-   - Georgian/English transcript toggle
-   - **File:** Upgrade `podcast.astro` + new `podcast-player.js`
+2. **🔴 Podcast Comprehension Data** — Make podcast quizzes real:
+   - Add 3-5 comprehension questions per episode (in podcast.astro data)
+   - Add vocabulary list per episode (key words with Georgian translations)
+   - Add timestamps to transcript lines for real sync
+   - Wire quiz completion to XP system via gamification bridge
+   - **File:** `website/src/pages/podcast.astro`
 
-3. **🟡 Course Units** — Structured learning paths:
-   - 6 units: Basics, Daily Life, Travel, Work, Social, Advanced
-   - Each unit = 3-5 lessons, each lesson = vocab deck + grammar + practice
-   - Progress bar per unit, unlock next unit at 80% completion
-   - Unit overview page showing all lessons with completion status
-   - **File:** New `website/src/pages/courses.astro` + `course-data.json`
+3. **🟡 Homepage → Placement Flow** — Optimize new user journey:
+   - Main CTA "დაიწყე სწავლა" → goes to /placement/ for new users
+   - After placement → redirect to /flashcards/ with personalized recommendations
+   - Returning users CTA → Daily Lesson or due reviews
+   - Add "already know your level?" skip option
+   - **File:** `website/src/pages/index.astro`, `website/src/pages/placement.astro`
 
-4. **🟡 Interactive Grammar Exercises** — Upgrade from passive to active:
-   - Replace show/hide exercises with quiz-style interactive ones
-   - Types: multiple choice, fill-in-blank, sentence reorder, error correction
-   - Timer optional, immediate feedback, +10 XP per correct
-   - Grammar XP bridge already handles XP — just need better exercise UI
-   - **File:** New `public/js/grammar-exercises.js`
+4. **🟡 SEO Optimization** — Drive organic Georgian traffic:
+   - Audit all page meta tags and Open Graph data
+   - Add structured data (EducationalOrganization, Course)
+   - Optimize blog post titles/descriptions for Georgian search terms
+   - Add sitemap.xml if missing
+   - Verify robots.txt
+   - **File:** Layout.astro, blog posts
 
-5. **🟢 Practice Stats Email/Notification** — Weekly progress summary:
-   - PWA notification when SRS cards are due (if permission granted)
-   - Weekly stats summary on dashboard: words learned, time spent, streak
-   - Motivational message based on progress
+5. **🟢 Game Verification** — Ensure all games work:
+   - Test each of the 30+ game components for basic functionality
+   - Check for crash scenarios (empty data, missing cards)
+   - Fix any broken games
+   - **File:** Various game components
 
-### For Each Cron Today:
-- **Cron 1 (Strategy, 11:30AM):** ← THIS RUN. Sprint planning, specs, context file updates.
-- **Cron 2 (Design, 1:30PM):** Design placement test UI (question cards, progress, result screen). Podcast player redesign (transcript highlighting, controls). Course units page layout.
-- **Cron 3 (Features, 3:30PM):** Build Placement Test (PlacementTest.tsx) + Podcast Player upgrade (podcast-player.js).
-- **Cron 4 (Improvements, 5:30PM):** Course Units page + Interactive Grammar Exercises + weekly stats.
-- **Cron 5 (QA, 7:30PM):** Full QA. Test placement test, podcast player, courses page.
+### For Each Cron Tonight:
+- **Cron 1 (Strategy, 1:00AM):** ← THIS RUN. Sprint planning, strategic specs, context updates.
+- **Cron 2 (Design, 3:00AM):** Design level-personalization UI changes. Podcast quiz UI. Homepage CTA flow. SEO meta tags.
+- **Cron 3 (Features, 5:00AM):** Build level-based personalization across all components. Podcast comprehension data + quiz wiring.
+- **Cron 4 (Improvements, 7:00AM):** Homepage→Placement flow. SEO audit & fixes. Game verification.
+- **Cron 5 (QA, 9:00AM):** Full QA. Test placement→personalization flow. Podcast quizzes. All games.
 
 ## Technical Specs
 
-### Placement Test (Cron 3)
-**File:** `flashcard-app/src/components/PlacementTest.tsx`
-
-```tsx
-// PlacementTest.tsx — 15-question level assessment
+### Level-Based Personalization (Cron 3)
+```
+// Read level from localStorage: 'fluentge-level' (set by placement test)
+// Possible values: 'A1', 'A2', 'B1', 'B2', null (not assessed)
 //
-// Question bank: 15 questions, 4 per level (A1, A2, B1, B2) — last 3 are B2
-// Question types:
-//   - vocab: "What does 'X' mean?" → 4 Georgian options
-//   - grammar: "She ___ to school every day." → goes/go/going/gone
-//   - sentence: "Which sentence is correct?" → 4 options
+// DeckSelect.tsx changes:
+//   - If level exists, show "Recommended for your level" section above all decks
+//   - A1: greetings, numbers, colors, family, food, animals
+//   - A2: daily-life, shopping, travel, emotions, weather
+//   - B1: business, technology, health, education, culture
+//   - B2: academic, idioms, advanced-grammar, abstract-concepts
+//   - "Change level" link → /placement/
 //
-// Flow:
-//   1. Welcome screen: "Let's find your level! 15 questions, ~2 minutes"
-//   2. Question cards with A/B/C/D options (reuse quiz-option CSS)
-//   3. Progress bar (chunky, like study mode)
-//   4. No immediate feedback (assessment, not practice)
-//   5. Result: level badge (A1/A2/B1/B2) + description + personalized recommendations
-//   6. Save: localStorage 'fluentge-level' + Firestore sync
+// DailyLesson.tsx changes:
+//   - A1/A2: use simpler decks (greetings, food, family, numbers)
+//   - B1/B2: use harder decks (business, academic, idioms)
+//   - Currently uses only top-2000 — expand deck selection by level
 //
-// Integration:
-//   - OnboardingModal step 2 can offer "Take placement test" option
-//   - Profile page shows current level with "Retake test" button
-//   - Dashboard recommendations use level for deck suggestions
+// Dashboard greeting:
+//   - "დონე: A1 — დამწყები" / "დონე: B2 — მაღალი" etc.
+//   - Shows in stats area
 //
-// Screen type: 'placement-test' in App.tsx
+// courses.astro:
+//   - Highlight suggested starting unit based on level
+//   - A1 → Unit 1, A2 → Unit 2, B1 → Unit 3-4, B2 → Unit 5-6
 ```
 
-### Podcast Player Upgrade (Cron 3)
-**File:** `website/public/js/podcast-player.js`
-
-```js
-// podcast-player.js — Enhanced podcast experience
+### Podcast Comprehension Data (Cron 3)
+```
+// Each episode in podcast.astro needs:
+// 1. quiz: array of {question, options: [4], correct: 0-3, explanation}
+// 2. vocabulary: array of {word, georgian, pronunciation}
+// 3. transcript timestamps: each line gets {start, end} in seconds
 //
-// Features:
-//   1. Audio player with custom controls (play/pause, seek bar, time display)
-//   2. Speed control: 0.5x, 0.75x, 1.0x, 1.25x buttons
-//   3. Transcript display: each line is a <p> with data-start/data-end timestamps
-//   4. Auto-scroll + highlight current line during playback
-//   5. Click any transcript line to jump to that point
-//   6. Georgian/English toggle for transcript
-//   7. Vocabulary section: episode words with 🔊 audio buttons
-//
-// Quiz (after episode):
-//   - 3-5 comprehension questions per episode
-//   - Multiple choice, based on transcript content
-//   - +20 XP via FluentGe.addXP() (gamification-bridge.js)
-//
-// Data: episode objects in podcast.astro already have transcript arrays
-// Need to add: timestamps to transcript entries, quiz questions per episode
+// Quiz completion: call FluentGe.addXP(20) via gamification bridge
+// Show quiz after user reaches end of episode or clicks "Quiz" button
+// Vocabulary section below transcript — clickable words play audio
 ```
 
-### Course Units (Cron 4)
-**File:** `website/src/pages/courses.astro` + `website/public/data/course-units.json`
-
-```json
-// course-units.json structure:
-[
-  {
-    "id": "basics",
-    "title": "საფუძვლები",
-    "titleEn": "Basics",
-    "icon": "🌱",
-    "lessons": [
-      {
-        "type": "vocab",
-        "deckId": "greetings-introductions",
-        "title": "მისალმებები"
-      },
-      {
-        "type": "grammar",
-        "slug": "to-be",
-        "title": "ზმნა To Be"
-      },
-      {
-        "type": "podcast",
-        "episodeId": 1,
-        "title": "აეროპორტში"
-      },
-      {
-        "type": "quiz",
-        "title": "ტესტი: საფუძვლები"
-      }
-    ]
-  }
-  // ... 5 more units
-]
+### SEO (Cron 4)
+```
+// Layout.astro:
+//   - Ensure og:title, og:description, og:image on every page
+//   - Add EducationalOrganization structured data
+//   - Georgian hreflang tag
+//
+// Target keywords:
+//   - "ინგლისურის სწავლა" (learn English)
+//   - "ინგლისური ონლაინ" (English online)
+//   - "ინგლისური ქართულად" (English in Georgian)
+//   - "უფასოდ ინგლისური" (free English)
+//   - "ფლეშბარათები" (flashcards)
 ```
 
 ## Notes for Crons

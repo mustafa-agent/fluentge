@@ -5,6 +5,11 @@ const episodes = [
 { id: 1, title: "At the Airport", titleKa: "აეროპორტში", icon: "✈️", duration: "2:00", file: "/podcast/episode1-at-the-airport.mp3", free: true,
     vocab: ["Boarding pass", "Gate", "Luggage", "Passport", "Check in", "Departure", "Arrival", "Delay"],
     vocabKa: ["ჩასხდომის ბარათი", "კარიბჭე", "ბარგი", "პასპორტი", "რეგისტრაცია", "გამგზავრება", "ჩამოსვლა", "დაგვიანება"],
+    quiz: [
+      { q: "რა სთხოვა აგენტმა მგზავრს პირველად?", options: ["ბარგის ჩაბარებას", "პასპორტს და ჩასხდომის ბარათს", "ადგილის არჩევას", "ბილეთის ყიდვას"], correct: 1 },
+      { q: "რამდენი კილოგრამი იყო ჩემოდანი?", options: ["20 კგ", "22 კგ", "25 კგ", "18 კგ"], correct: 1 },
+      { q: "რომელი ადგილი აირჩია მგზავრმა?", options: ["შუა ადგილი", "ბილიკთან", "ფანჯარასთან", "ბიზნეს კლასი"], correct: 2 },
+    ],
     descriptionKa: "ისწავლე ჩეკინი, კარიბჭეებზე კითხვა და აეროპორტის თანამშრომლებთან საუბარი.",
     transcript: [
       { speaker: "Agent", en: "Good morning. Can I see your passport and boarding pass, please?", ka: "დილა მშვიდობისა. შეიძლება პასპორტი და ჩასხდომის ბარათი?" },
@@ -19,6 +24,11 @@ const episodes = [
   { id: 2, title: "At the Restaurant", titleKa: "რესტორანში", icon: "🍽️", duration: "1:43", file: "/podcast/episode2-restaurant.mp3", free: true,
     vocab: ["Menu", "Appetizer", "Main course", "Dessert", "Bill", "Tip", "Reservation", "Waiter"],
     vocabKa: ["მენიუ", "წინაკერძი", "მთავარი კერძი", "დესერტი", "ანგარიში", "ჩაი ფული", "ჯავშანი", "მიმტანი"],
+    quiz: [
+      { q: "რისთვის მოითხოვა მომხმარებელმა მენიუ?", options: ["ქართულ ენაზე", "ინგლისურ ენაზე", "რუსულ ენაზე", "ფრანგულ ენაზე"], correct: 1 },
+      { q: "რა იყო პოპულარული მთავარი კერძი?", options: ["სტეიკი", "თევზი", "გრილზე შემწვარი ქათამი", "პასტა"], correct: 2 },
+      { q: "რა დესერტი შესთავაზა მიმტანმა?", options: ["ხილი", "ნაყინი", "შოკოლადის ნამცხვარი", "ტირამისუ"], correct: 2 },
+    ],
     descriptionKa: "შეუკვეთე საკვები, იკითხე კერძებზე და გადაიხადე ანგარიში.",
     transcript: [
       { speaker: "Waiter", en: "Good evening. Welcome to our restaurant. Table for two?", ka: "საღამო მშვიდობისა. კეთილი იყოს თქვენი მობრძანება ჩვენს რესტორანში. მაგიდა ორისთვის?" },
@@ -615,6 +625,39 @@ const episodes = [
                     ))}
                   </div>
                 )}
+
+                <!-- Comprehension Quiz -->
+                {ep.quiz && ep.quiz.length > 0 && (
+                  <div class="podcast-quiz bg-[#1C1C1E] rounded-xl p-4 mt-4" data-ep-id={ep.id}>
+                    <p class="text-xs text-[#6B6B65] font-bold uppercase tracking-wider mb-3">🧠 გაგების ტესტი</p>
+                    <div class="space-y-4">
+                      {ep.quiz.map((item, qi) => (
+                        <div class="pq-question" data-ep={ep.id} data-qi={qi} data-correct={item.correct}>
+                          <p class="text-sm font-semibold mb-2">{qi + 1}. {item.q}</p>
+                          <div class="grid grid-cols-1 gap-2">
+                            {item.options.map((opt, oi) => (
+                              <button
+                                class="pq-opt text-left w-full text-sm px-4 py-2.5 rounded-xl bg-[#242426] border border-white/10 border-b-4 border-b-white/5 hover:bg-[#2E2E30] active:border-b-2 active:mt-[2px] transition-all font-medium"
+                                data-ep={ep.id}
+                                data-qi={qi}
+                                data-oi={oi}
+                              >
+                                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10 text-[10px] font-bold mr-2">{String.fromCharCode(65 + oi)}</span>
+                                {opt}
+                              </button>
+                            ))}
+                          </div>
+                          <div class="pq-feedback hidden mt-2 text-sm font-medium px-3 py-2 rounded-lg"></div>
+                        </div>
+                      ))}
+                      <div class="pq-result hidden text-center py-3" data-ep={ep.id}>
+                        <div class="text-2xl mb-1">🎉</div>
+                        <p class="font-bold text-green-400">ტესტი დასრულებულია!</p>
+                        <p class="text-xs text-[#6B6B65] mt-1 pq-score"></p>
+                      </div>
+                    </div>
+                  </div>
+                )}
             </div>
             {!ep.free && (
               <a href="/premium/" class="podcast-lock-overlay block bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-4 text-center hover:border-amber-500/40 transition-all">
@@ -745,6 +788,59 @@ const episodes = [
             });
             btn.className = 'pp-speed text-xs px-2.5 py-1 rounded-lg font-medium transition-all bg-sky-400/20 text-sky-400 border border-sky-400/30';
           });
+        });
+      });
+
+      // Podcast quiz logic
+      document.querySelectorAll('.pq-opt').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const ep = this.dataset.ep;
+          const qi = this.dataset.qi;
+          const oi = parseInt(this.dataset.oi);
+          const questionEl = document.querySelector(`.pq-question[data-ep="${ep}"][data-qi="${qi}"]`);
+          if (!questionEl || questionEl.classList.contains('pq-answered')) return;
+          questionEl.classList.add('pq-answered');
+          const correct = parseInt(questionEl.dataset.correct);
+          const feedback = questionEl.querySelector('.pq-feedback');
+          
+          // Highlight options
+          questionEl.querySelectorAll('.pq-opt').forEach((opt, i) => {
+            opt.style.pointerEvents = 'none';
+            if (i === correct) {
+              opt.classList.remove('bg-[#242426]', 'border-white/10', 'border-b-white/5');
+              opt.classList.add('bg-green-500/20', 'border-green-500/30', 'text-green-400');
+            } else if (i === oi && oi !== correct) {
+              opt.classList.remove('bg-[#242426]', 'border-white/10', 'border-b-white/5');
+              opt.classList.add('bg-red-500/20', 'border-red-500/30', 'text-red-400');
+            }
+          });
+          
+          feedback.classList.remove('hidden');
+          if (oi === correct) {
+            feedback.textContent = '✅ სწორია!';
+            feedback.className = 'pq-feedback mt-2 text-sm font-medium px-3 py-2 rounded-lg bg-green-500/10 text-green-400';
+            // Award XP
+            if (window.FluentGe && window.FluentGe.addXP) window.FluentGe.addXP(10);
+          } else {
+            feedback.textContent = '❌ არასწორია';
+            feedback.className = 'pq-feedback mt-2 text-sm font-medium px-3 py-2 rounded-lg bg-red-500/10 text-red-400';
+          }
+          
+          // Check if all questions answered
+          const allQs = document.querySelectorAll(`.pq-question[data-ep="${ep}"]`);
+          const answeredQs = document.querySelectorAll(`.pq-question[data-ep="${ep}"].pq-answered`);
+          if (allQs.length === answeredQs.length) {
+            const correctCount = Array.from(answeredQs).filter(q => {
+              const c = parseInt(q.dataset.correct);
+              const chosen = q.querySelector('.pq-opt.bg-green-500\\/20, .pq-opt.bg-red-500\\/20');
+              return chosen && parseInt(chosen.dataset.oi) === c;
+            }).length;
+            const resultEl = document.querySelector(`.pq-result[data-ep="${ep}"]`);
+            if (resultEl) {
+              resultEl.classList.remove('hidden');
+              resultEl.querySelector('.pq-score').textContent = correctCount + '/' + allQs.length + ' სწორი პასუხი';
+            }
+          }
         });
       });
 
