@@ -6,7 +6,7 @@
 - [ ] Better navbar — clear sections, active state, mobile hamburger
 - [ ] Breadcrumbs on deep pages
 - [ ] "Back to..." buttons that make sense contextually
-- [ ] Smoother page transitions
+- [x] Smoother page transitions ✅ Cron 4, Mar 5 (screen fade-in animation)
 - [ ] Better 404 page
 
 ### Flashcard UX

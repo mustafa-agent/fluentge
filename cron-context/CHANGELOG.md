@@ -7,6 +7,24 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-05
 
+### Cron 4 — Improvements (7:00 AM)
+- **📖 Reading Comprehension — 10th study mode (ReadingComprehension.tsx):**
+  - Read a passage of 5-7 example sentences from the deck
+  - Answer 5 comprehension questions: meaning, fill-in-blank, true/false
+  - Georgian translation toggle for the passage
+  - Key words display with color-coded pills
+  - Collapsible passage reference during question phase
+  - +15 XP per correct answer, result screen with score/accuracy/XP
+  - Fallback screen for decks with <5 eligible sentences
+  - Added to DeckSelect as 10th mode (📖 კითხვა)
+  - Lazy-loaded in App.tsx
+- **✨ Screen transition animations:**
+  - All screen changes now have a subtle fade-in + slide-up animation (0.25s)
+  - Uses key={screen+deckId} for proper React re-render triggers
+  - CSS `screenFadeIn` keyframes, `.screen-enter` class
+- **CSS:** Reading comprehension styles (`.rc-keyword-pill`, `.rc-passage-sentence`) + light mode
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **🔗 Grammar XP Bridge (`gamification-bridge.js`):**
   - Standalone JS at `/js/gamification-bridge.js`, exposes `window.FluentGe` API
