@@ -63,14 +63,17 @@ const ListeningExercise = lazy(() => import('./components/ListeningExercise'));
 const FillBlankExercise = lazy(() => import('./components/FillBlankExercise'));
 const ReadingComprehension = lazy(() => import('./components/ReadingComprehension'));
 const DailyLesson = lazy(() => import('./components/DailyLesson'));
+const UnitQuiz = lazy(() => import('./components/UnitQuiz'));
 import LoadingSkeleton from './components/LoadingSkeleton';
 
-type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'sentence' | 'listening' | 'fillin' | 'reading' | 'challenge' | 'srs-dashboard' | 'difficult' | 'daily-lesson';
+type Screen = 'home' | 'study' | 'quiz' | 'typing' | 'sentence' | 'listening' | 'fillin' | 'reading' | 'challenge' | 'srs-dashboard' | 'difficult' | 'daily-lesson' | 'unit-quiz';
 type StudyMode = 'classic' | 'srs' | 'reverse' | 'mixed';
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>(() => {
-    if (window.location.hash.startsWith('#challenge=')) return 'challenge';
+    const hash = window.location.hash;
+    if (hash.startsWith('#challenge=')) return 'challenge';
+    if (hash.startsWith('#unit-quiz/')) return 'unit-quiz';
     return 'home';
   });
   const [activeDeck, setActiveDeck] = useState<Deck | null>(null);
@@ -78,6 +81,7 @@ export default function App() {
   const [showSearch, setShowSearch] = useState(false);
   const [quizAllCards, setQuizAllCards] = useState<any[]>([]);
   const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('fluentge-onboarded'));
+  const [unitQuizId, setUnitQuizId] = useState<number>(1);
 
   useEffect(() => {
     loadFromCloud().catch(() => {});
@@ -86,9 +90,24 @@ export default function App() {
     return () => clearInterval(syncIv);
   }, []);
 
+  // Parse unit-quiz ID from hash on mount
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash.startsWith('#unit-quiz/')) {
+      const id = parseInt(hash.split('/')[1]) || 1;
+      setUnitQuizId(id);
+    }
+  }, []);
+
   useEffect(() => {
     function onHash() {
-      if (window.location.hash.startsWith('#challenge=')) setScreen('challenge');
+      const hash = window.location.hash;
+      if (hash.startsWith('#challenge=')) setScreen('challenge');
+      if (hash.startsWith('#unit-quiz/')) {
+        const id = parseInt(hash.split('/')[1]) || 1;
+        setUnitQuizId(id);
+        setScreen('unit-quiz');
+      }
     }
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
@@ -203,7 +222,7 @@ export default function App() {
 
       {screen === 'home' && (
         <>
-          <StatsBar />
+          <ErrorBoundary><StatsBar /></ErrorBoundary>
 
           {/* Challenge Friend Banner */}
           <div className="px-4 pt-4 max-w-lg mx-auto">
@@ -286,7 +305,7 @@ export default function App() {
           <div className="px-4 pb-2 max-w-lg mx-auto">
             <h3 className="text-sm font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-1">📝 ფლეშქარდები</h3>
           </div>
-          <DeckSelect onSelect={handleSelectDeck} />
+          <ErrorBoundary><DeckSelect onSelect={handleSelectDeck} /></ErrorBoundary>
         </>
       )}
 
@@ -300,6 +319,7 @@ export default function App() {
         {screen === 'quiz' && activeDeck && <QuizScreen deck={activeDeck} allCards={quizAllCards.length > 0 ? quizAllCards : activeDeck.cards} onBack={handleBack} />}
         {screen === 'typing' && activeDeck && <TypingScreen deck={activeDeck} onBack={handleBack} />}
         {screen === 'daily-lesson' && <DailyLesson onBack={handleBack} />}
+        {screen === 'unit-quiz' && <UnitQuiz unitId={unitQuizId} onBack={handleBack} />}
         {screen === 'sentence' && activeDeck && <SentenceBuilder deck={activeDeck} onBack={handleBack} />}
         {screen === 'listening' && activeDeck && <ListeningExercise deck={activeDeck} onBack={handleBack} />}
         {screen === 'fillin' && activeDeck && <FillBlankExercise deck={activeDeck} onBack={handleBack} />}

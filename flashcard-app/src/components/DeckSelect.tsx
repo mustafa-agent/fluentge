@@ -23,7 +23,12 @@ const modes = [
 ];
 
 export default function DeckSelect({ onSelect }: Props) {
-  const progress = getAllProgress();
+  let progress: Record<string, any> = {};
+  try {
+    progress = getAllProgress();
+  } catch (e) {
+    console.error('DeckSelect: getAllProgress failed:', e);
+  }
   const [selectedMeta, setSelectedMeta] = useState<DeckMeta | null>(null);
   const [loadedDeck, setLoadedDeck] = useState<Deck | null>(null);
   const [loading, setLoading] = useState(false);
@@ -76,7 +81,7 @@ export default function DeckSelect({ onSelect }: Props) {
       return (
         <div className="px-4 py-6 max-w-lg mx-auto text-center">
           <div className="animate-pulse space-y-4">
-            <div className="text-5xl">{selectedMeta.icon}</div>
+            <div className="text-5xl">{String(selectedMeta.icon || '📚')}</div>
             <div className="h-6 bg-[var(--color-bg-card)] rounded w-48 mx-auto"></div>
             <div className="h-4 bg-[var(--color-bg-card)] rounded w-32 mx-auto"></div>
             <div className="grid grid-cols-3 gap-2 mt-6">

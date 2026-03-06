@@ -7,6 +7,29 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-06
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **📝 Unit Quiz UI (CSS + routing):**
+  - Full `uq-*` CSS class system: unit badges (6 colors), question type badges (vocab/grammar/listening), 3D option buttons with letter badges, result screen with pass/fail badges, stat grid
+  - Courses.astro: all 6 "ერთეულის ტესტი" links updated from `/games/` to `/flashcards/#unit-quiz/N` — ready for Cron 3 to build UnitQuiz.tsx
+- **🔄 Grammar Review CTA on /grammar/:**
+  - Purple gradient card with 🔄 icon at top of grammar page
+  - Reads `fluentge-grammar-completed` from localStorage, shows when ≥3 lessons done
+  - Count badge shows number of completed lessons
+  - Click picks random completed lesson and navigates with `?review=1` param
+- **🎧 Podcast Vocabulary Upgrade:**
+  - Replaced plain `<span>` vocab tags with interactive `pv-pill` buttons
+  - Click-to-speak: each word plays via speechSynthesis (EN, 0.85 rate)
+  - Georgian translation appears as tooltip on hover
+  - Sky-blue colored pills with 🔊 icon, hover effects
+- **👤 Profile Page Enhancement:**
+  - Study calendar heatmap: 91-day grid (13 columns), 4 intensity levels (green), GitHub-style
+  - Reads from `fluentge-daily-history` + `fluentge-streak-history`
+  - Extended stats section: grammar lessons completed, games played, total study time (minutes), level
+  - Hover tooltips on heatmap cells, legend bar
+- **Light mode CSS:** Full overrides for all new components (heatmap, pills, grammar CTA, unit quiz)
+- ~200 lines new CSS in flashcard index.css + profile.astro styles
+- Deployed ✅, git committed & pushed
+
 ### Cron 4 — Improvements (7:00 AM)
 - **🎯 Placement→Personalized First Lesson Flow:**
   - After placement test, result screen now shows a big gradient CTA personalized to user's assessed level

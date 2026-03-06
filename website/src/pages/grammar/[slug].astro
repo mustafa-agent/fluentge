@@ -80,6 +80,17 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
   <section class="max-w-3xl mx-auto px-4 py-16">
     <!-- Header -->
     <a href="/grammar/" class="text-[#C8C8C0] hover:underline text-sm mb-6 inline-block">← გრამატიკა</a>
+
+    <!-- Review Mode Banner -->
+    <div id="review-banner" class="hidden mb-6 p-4 rounded-xl bg-gradient-to-r from-purple-600/20 to-indigo-600/20 border border-purple-500/30">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🔄</span>
+        <div>
+          <div class="font-bold text-purple-300">გამეორების რეჟიმი</div>
+          <div class="text-sm text-purple-300/70">ადრე გავლილი გაკვეთილის გამეორება</div>
+        </div>
+      </div>
+    </div>
     <div class="flex items-center gap-3 mb-2">
       <span class={`px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : lesson.level === 'A2' ? 'bg-blue-500/20 text-blue-400' : lesson.level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : lesson.level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{lesson.level}</span>
       <span class="text-[#6B6B65] text-sm">გაკვეთილი #{lesson.id}</span>
@@ -284,7 +295,37 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     })();
   </script>
 
-  <script define:vars={{ exercises: lesson.exercises, isFree }}>
+  <script define:vars={{ exercises: lesson.exercises, isFree, lessonSlug: lesson.slug }}>
+    // Review mode detection
+    var isReviewMode = window.location.search.includes('review=1');
+    if (isReviewMode) {
+      // Show review banner
+      var banner = document.getElementById('review-banner');
+      if (banner) banner.classList.remove('hidden');
+      // Unhide lesson content for review
+      var lc = document.getElementById('lesson-content');
+      if (lc) lc.classList.remove('hidden');
+      // Allow exercises even for premium in review mode (they already completed it)
+      // Track review date
+      try {
+        var reviewDates = JSON.parse(localStorage.getItem('fluentge-grammar-reviews') || '{}');
+        reviewDates[lessonSlug] = new Date().toISOString();
+        localStorage.setItem('fluentge-grammar-reviews', JSON.stringify(reviewDates));
+      } catch(e) {}
+      // Shuffle exercises
+      for (var i = exercises.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = exercises[i];
+        exercises[i] = exercises[j];
+        exercises[j] = temp;
+      }
+      // Auto-scroll to exercises
+      setTimeout(function() {
+        var exSection = document.getElementById('exercises-section');
+        if (exSection) exSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 500);
+    }
+
     // Sound feedback — resume AudioContext on first user click (required by browsers)
     let audioCtx = null;
     function getCtx() {
@@ -325,7 +366,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       } catch(e) { console.log('sound error', e); }
     }
 
-    if (!isFree) { /* skip exercises for premium lessons */ }
+    if (!isFree && !isReviewMode) { /* skip exercises for premium lessons */ }
     else {
     let current = 0;
     let score = 0;

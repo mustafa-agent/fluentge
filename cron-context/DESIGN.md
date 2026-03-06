@@ -64,10 +64,10 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 6 day) — Cron 2 Tasks:
-- [ ] **📝 Unit Quiz UI** — 10-question mixed quiz (vocab MC + grammar fill-in + listening). Progress bar, question cards with A/B/C/D options, score screen with pass/fail badge, unit completion celebration. Reuse quiz-option 3D button pattern.
-- [ ] **🔄 Grammar Review UI** — "გრამატიკის გამეორება" section at top of /grammar/ page. Gradient CTA card when user has ≥3 completed lessons. Review mode indicator in lesson header.
-- [ ] **🎧 Podcast Vocabulary UI** — Colored word pills between transcript and quiz. Click-to-speak interaction. Georgian translation on hover/tap.
-- [ ] **👤 Profile Enhancement UI** — Study calendar heatmap (GitHub-style green squares, 90 days). Richer stat cards. Grammar/podcast progress sections.
+- [x] **📝 Unit Quiz UI** — Full CSS: uq-* classes (unit badges per color, question type badges, 3D option buttons, result screen with pass/fail badges, stat grid). Courses.astro quiz links updated to /flashcards/#unit-quiz/N.
+- [x] **🔄 Grammar Review UI** — Purple gradient CTA card at top of /grammar/ page. Shows when ≥3 lessons completed. Count badge. Click picks random completed lesson with ?review=1 param.
+- [x] **🎧 Podcast Vocabulary UI** — Upgraded from plain spans to pv-pill buttons. Click-to-speak via speechSynthesis. Georgian tooltip on hover. Sky-blue colored pills with 🔊 icon.
+- [x] **👤 Profile Enhancement UI** — Study calendar heatmap (91 days, 13-column grid, 4 intensity levels). Extended stats section (grammar count, games played, study time, level). Full light mode CSS.
 
 ### Backlog:
 - [ ] Consistent card borders across all components

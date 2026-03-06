@@ -110,10 +110,19 @@ function isLessonFree(slug: string) {
           if (cta) {
             cta.classList.remove('hidden');
             count.textContent = slugs.length;
-            // Pick a random completed lesson to review
+            // Pick lesson that needs review most (SRS-like: least recently reviewed first)
             cta.addEventListener('click', function() {
-              var randomSlug = slugs[Math.floor(Math.random() * slugs.length)];
-              window.location.href = '/grammar/' + randomSlug + '/?review=1';
+              var reviews = {};
+              try { reviews = JSON.parse(localStorage.getItem('fluentge-grammar-reviews') || '{}'); } catch(e) {}
+              // Sort: never reviewed first, then oldest review date
+              var sorted = slugs.slice().sort(function(a, b) {
+                var da = reviews[a] ? new Date(reviews[a]).getTime() : 0;
+                var db = reviews[b] ? new Date(reviews[b]).getTime() : 0;
+                return da - db;
+              });
+              // Pick from top 3 least-reviewed (some randomness)
+              var pick = sorted[Math.floor(Math.random() * Math.min(3, sorted.length))];
+              window.location.href = '/grammar/' + pick + '/?review=1';
             });
           }
         }
