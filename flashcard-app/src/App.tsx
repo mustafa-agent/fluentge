@@ -4,7 +4,7 @@ import StatsBar from './components/StatsBar';
 import OnboardingModal from './components/OnboardingModal';
 import { type Deck, loadDeck, loadAllCards } from './lib/deck-loader';
 import { deckIndex } from './lib/deck-index';
-import { loadFromCloud, syncToCloud } from './lib/firebase-sync';
+import { loadFromCloud, syncToCloud, syncNow } from './lib/firebase-sync';
 
 // Error Boundary to catch lazy-load failures and runtime crashes
 class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean; error?: Error }> {
@@ -83,11 +83,63 @@ export default function App() {
   const [showOnboarding, setShowOnboarding] = useState(() => !localStorage.getItem('fluentge-onboarded'));
   const [unitQuizId, setUnitQuizId] = useState<number>(1);
 
+  // Deep-link: auto-open a deck from ?deck= query param
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const deckParam = params.get('deck');
+    if (deckParam) {
+      // Match by deck ID first, then by source file name
+      const meta = deckIndex.find(d => d.id === deckParam) || deckIndex.find(d => d.sources.includes(deckParam));
+      if (meta) {
+        loadDeck(meta.id).then(deck => {
+          if (deck) {
+            setActiveDeck(deck);
+            setStudyMode('classic');
+            setScreen('study');
+          }
+        });
+      }
+    }
+  }, []);
+
   useEffect(() => {
     loadFromCloud().catch(() => {});
     const syncIv = setInterval(() => syncToCloud().catch(() => {}), 30000);
-    window.addEventListener('beforeunload', () => syncToCloud().catch(() => {}));
-    return () => clearInterval(syncIv);
+    const onBeforeUnload = () => syncToCloud().catch(() => {});
+    window.addEventListener('beforeunload', onBeforeUnload);
+
+    // Sync on visibility change (catches mobile tab switch / browser close)
+    const onVisChange = () => {
+      if (document.visibilityState === 'hidden') syncToCloud().catch(() => {});
+      if (document.visibilityState === 'visible') loadFromCloud().catch(() => {});
+    };
+    document.addEventListener('visibilitychange', onVisChange);
+
+    // Watch for login: when fluentge-user changes in storage, reload from cloud
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === 'fluentge-user' && e.newValue) loadFromCloud().catch(() => {});
+    };
+    window.addEventListener('storage', onStorage);
+
+    // Also poll for login (same-tab storage changes don't fire StorageEvent)
+    let lastUid = (() => { try { return JSON.parse(localStorage.getItem('fluentge-user') || 'null')?.uid; } catch { return null; } })();
+    const loginPoll = setInterval(() => {
+      try {
+        const uid = JSON.parse(localStorage.getItem('fluentge-user') || 'null')?.uid;
+        if (uid && uid !== lastUid) {
+          lastUid = uid;
+          loadFromCloud().catch(() => {});
+        }
+      } catch {}
+    }, 2000);
+
+    return () => {
+      clearInterval(syncIv);
+      clearInterval(loginPoll);
+      window.removeEventListener('beforeunload', onBeforeUnload);
+      document.removeEventListener('visibilitychange', onVisChange);
+      window.removeEventListener('storage', onStorage);
+    };
   }, []);
 
   // Parse unit-quiz ID from hash on mount
@@ -153,6 +205,7 @@ export default function App() {
   }
 
   function handleBack() {
+    syncNow(); // Sync progress when leaving a study session
     setScreen('home');
     setActiveDeck(null);
     setStudyMode('classic');

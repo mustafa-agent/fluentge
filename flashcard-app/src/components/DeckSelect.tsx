@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { deckIndex, isDeckFree, type DeckMeta } from '../lib/deck-index';
 import { loadDeck, type Deck } from '../lib/deck-loader';
 import { getAllProgress } from '../lib/storage';
-import { getTotalXP, calculateLevel, getCurrentStreak, getDailyGoal, setDailyGoal, getTodayStudyTime } from '../lib/gamification';
+import { getTotalXP, calculateLevel, getCurrentStreak, getDailyCardGoal, setDailyCardGoal, getTodayCardsReviewed } from '../lib/gamification';
 import { getDueCount, getTotalDueCards } from '../lib/srs-engine';
 
 interface Props {
@@ -101,13 +101,13 @@ export default function DeckSelect({ onSelect }: Props) {
   const totalXP = getTotalXP();
   const level = calculateLevel(totalXP);
   const streak = getCurrentStreak();
-  const dailyGoal = getDailyGoal();
-  const todayMinutes = getTodayStudyTime();
-  const dailyPct = Math.min(100, Math.round((todayMinutes / dailyGoal) * 100));
+  const dailyGoal = getDailyCardGoal();
+  const todayCards = getTodayCardsReviewed();
+  const dailyPct = Math.min(100, Math.round((todayCards / dailyGoal) * 100));
 
   // Daily goal setting — MUST be before any early return
   const [showGoalModal, setShowGoalModal] = useState(false);
-  const goalOptions = [5, 10, 15, 20, 30];
+  const goalOptions = [20, 50, 100, 150, 200];
 
   // Mode selection overlay
   if (selectedMeta) {
@@ -147,9 +147,9 @@ export default function DeckSelect({ onSelect }: Props) {
         </button>
 
         <div className="text-center mb-6">
-          <span className="text-5xl block mb-3">{loadedDeck.icon}</span>
-          <h2 className="text-xl font-bold">{loadedDeck.nameKa}</h2>
-          <p className="text-[var(--color-text-muted)] text-sm">{loadedDeck.name} · {total} ბარათი</p>
+          <span className="text-5xl block mb-3">{String(loadedDeck.icon || '📚')}</span>
+          <h2 className="text-xl font-bold">{String(loadedDeck.nameKa || '')}</h2>
+          <p className="text-[var(--color-text-muted)] text-sm">{String(loadedDeck.name || '')} · {total} ბარათი</p>
           <div className="mt-3 max-w-xs mx-auto space-y-2">
             <div>
               <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1">
@@ -224,7 +224,7 @@ export default function DeckSelect({ onSelect }: Props) {
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-0.5">
               <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">ყოველდღიური</span>
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">~5 წთ</span>
+              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">10 ბარათი</span>
             </div>
             <h2 className="text-lg font-extrabold text-white leading-tight">დღის გაკვეთილი</h2>
             <p className="text-white/70 text-xs mt-0.5">
@@ -268,9 +268,9 @@ export default function DeckSelect({ onSelect }: Props) {
         className="w-full mb-5 bg-[var(--color-bg-card)] rounded-xl p-3 border border-white/5 hover:border-white/10 transition-colors text-left"
       >
         <div className="flex items-center justify-between text-xs mb-1.5">
-          <span className="text-[var(--color-text-muted)]">🎯 დღის მიზანი · {dailyGoal} წთ</span>
+          <span className="text-[var(--color-text-muted)]">🎯 დღის მიზანი · {dailyGoal} ბარათი</span>
           <span className={`font-bold ${dailyPct >= 100 ? 'text-green-400' : 'text-[var(--color-text-muted)]'}`}>
-            {dailyPct >= 100 ? '✅ შესრულდა!' : `${Math.round(todayMinutes)}/${dailyGoal} წუთი`}
+            {dailyPct >= 100 ? '✅ შესრულდა!' : `${todayCards}/${dailyGoal} ბარათი`}
           </span>
         </div>
         <div className="h-2 bg-white/10 rounded-full overflow-hidden">
@@ -286,23 +286,23 @@ export default function DeckSelect({ onSelect }: Props) {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60" onClick={() => setShowGoalModal(false)}>
           <div className="bg-[var(--color-bg-card)] rounded-2xl p-6 max-w-sm w-full border border-white/10 shadow-xl" onClick={e => e.stopPropagation()}>
             <h3 className="text-lg font-bold text-center mb-1">🎯 დღის მიზანი</h3>
-            <p className="text-sm text-[var(--color-text-muted)] text-center mb-5">რამდენი წუთი გინდა ისწავლო ყოველ დღე?</p>
+            <p className="text-sm text-[var(--color-text-muted)] text-center mb-5">რამდენი ბარათი გინდა გაიმეორო ყოველ დღე?</p>
             <div className="grid grid-cols-5 gap-2 mb-5">
-              {goalOptions.map(mins => (
+              {goalOptions.map(num => (
                 <button
-                  key={mins}
+                  key={num}
                   onClick={() => {
-                    setDailyGoal(mins);
+                    setDailyCardGoal(num);
                     setShowGoalModal(false);
                   }}
                   className={`py-3 rounded-xl font-bold text-sm transition-all border-b-4 active:border-b-0 active:mt-1 ${
-                    mins === dailyGoal
+                    num === dailyGoal
                       ? 'bg-green-500 border-green-700 text-white'
                       : 'bg-white/10 border-white/5 text-[var(--color-text)] hover:bg-white/20'
                   }`}
                 >
-                  {mins}
-                  <span className="block text-[10px] font-normal opacity-70">წთ</span>
+                  {num}
+                  <span className="block text-[10px] font-normal opacity-70">ბარათი</span>
                 </button>
               ))}
             </div>

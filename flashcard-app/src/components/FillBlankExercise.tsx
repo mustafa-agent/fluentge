@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import { Deck, FlashCard } from '../lib/cards';
 import { playCorrect, playWrong } from '../lib/sounds';
+import { addCardReview } from '../lib/gamification';
 
 function awardXP(amount: number) {
   try {
@@ -81,6 +82,7 @@ export default function FillBlankExercise({ deck, onBack }: Props) {
     if (answered) return;
     setSelected(option);
     setAnswered(true);
+    addCardReview();
 
     const isCorrect = option.toLowerCase() === q.answer.toLowerCase();
     if (isCorrect) {

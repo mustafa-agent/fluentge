@@ -55,12 +55,14 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 6 day) — "Unit Quizzes, Grammar Review & Conversion"
-- [ ] **📝 Unit quiz UI** — 10-question test with mixed formats, score screen ← Cron 2
-- [ ] **🔄 Grammar review section** — CTA on grammar page for reviewing completed lessons ← Cron 2
-- [ ] **🎧 Podcast vocab UI** — Word pills with click-to-speak ← Cron 2
-- [x] **👤 Profile enhancement** — Heatmap CSS fix, hover tooltips, SRS word count ✅ Cron 4B
-- [x] **💳 Premium payment prep** — Payment modal with card/BOG options ✅ Cron 4B
+## 🎯 THIS SPRINT (Mar 7 night) — "Tornike's 8 Priorities"
+- [ ] **🎯 Daily Goal** — Remove "~5 წთ", verify card presets work ← Cron 2
+- [ ] **🔗 Deep Links** — Test courses→flashcards, add podcast→flashcard links ← Cron 2
+- [ ] **🗑️ Mark-as-Done Removal** — Grammar [slug].astro + phrases.astro cleanup ← Cron 3
+- [ ] **📊 Dashboard Redesign** — Auto-tracked metrics instead of manual marks ← Cron 3
+- [ ] **🔒 Grammar Sequential Lock** — Unlock-by-completion system ← Cron 4
+- [ ] **🎮 Games Page** — Category grouping, visual redesign ← Cron 4
+- [ ] **🔍 Site Audit** — Full QA ← Cron 5
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)

@@ -69,7 +69,9 @@ function gather() {
   d.lastPracticeDate = localStorage.getItem('lastPracticeDate') || '';
   d.streakLastDate = localStorage.getItem('streakLastDate') || '';
   d.dailyGoalMinutes = parseInt(localStorage.getItem('dailyGoalMinutes') || '10', 10);
+  d.dailyCardGoal = parseInt(localStorage.getItem('dailyCardGoal') || '50', 10);
   d.dailyStudyTime = jp(localStorage.getItem('dailyStudyTime'), {});
+  d.dailyCardsReviewed = jp(localStorage.getItem('dailyCardsReviewed'), {});
   d.gamesPlayed = parseInt(localStorage.getItem('gamesPlayed') || '0', 10);
   d.dailyHistory = jp(localStorage.getItem('fluentge-daily-history'), {});
   d.achievements = jp(localStorage.getItem('fluentge-achievements'), []);
@@ -97,11 +99,6 @@ function apply(local: any, cloud: any) {
     localStorage.setItem(k, JSON.stringify(mergeObj(local.cardProgress?.[k], cloud.cardProgress?.[k])));
   }
 
-  // Gamification: keep the higher value (more progress = more real)
-  const maxNum = (key: string, a: any, b: any) => {
-    const val = Math.max(a[key] || 0, b[key] || 0);
-    if (val > 0) localStorage.setItem(key === 'totalXP' ? 'totalXP' : key === 'currentStreak' ? 'currentStreak' : key === 'gamesPlayed' ? 'gamesPlayed' : key === 'dailyGoalMinutes' ? 'dailyGoalMinutes' : key, val.toString());
-  };
   // XP: keep higher
   const mergedXP = Math.max(local.totalXP || 0, cloud.totalXP || 0);
   if (mergedXP > 0) localStorage.setItem('totalXP', mergedXP.toString());
@@ -113,6 +110,21 @@ function apply(local: any, cloud: any) {
   if (mergedGames > 0) localStorage.setItem('gamesPlayed', mergedGames.toString());
   // Daily goal: keep cloud if set
   if (cloud.dailyGoalMinutes) localStorage.setItem('dailyGoalMinutes', cloud.dailyGoalMinutes.toString());
+  if (cloud.dailyCardGoal) localStorage.setItem('dailyCardGoal', cloud.dailyCardGoal.toString());
+  // Daily cards reviewed: merge by keeping max per date
+  {
+    const localCards = local.dailyCardsReviewed || {};
+    const cloudCards = cloud.dailyCardsReviewed || {};
+    const merged: Record<string, number> = { ...localCards, ...cloudCards };
+    for (const date of Object.keys(merged)) {
+      merged[date] = Math.max(localCards[date] || 0, cloudCards[date] || 0);
+    }
+    localStorage.setItem('dailyCardsReviewed', JSON.stringify(merged));
+  }
+  // Daily study time: merge
+  if (cloud.dailyStudyTime) {
+    localStorage.setItem('dailyStudyTime', JSON.stringify(mergeObj(local.dailyStudyTime, cloud.dailyStudyTime)));
+  }
   // Last practice date: keep more recent
   const lpLocal = local.lastPracticeDate || '';
   const lpCloud = cloud.lastPracticeDate || '';
@@ -158,6 +170,13 @@ export async function loadFromCloud(): Promise<void> {
   } catch (e: any) {
     console.warn('[FluentGe Sync] Load failed:', e.message);
   }
+}
+
+// Debounced convenience: call after any important action (batches within 500ms)
+let _syncTimer: ReturnType<typeof setTimeout> | null = null;
+export function syncNow(): void {
+  if (_syncTimer) clearTimeout(_syncTimer);
+  _syncTimer = setTimeout(() => { syncToCloud().catch(() => {}); }, 500);
 }
 
 export async function syncToCloud(): Promise<void> {

@@ -63,11 +63,11 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 6 day) — Cron 2 Tasks:
-- [x] **📝 Unit Quiz UI** — Full CSS: uq-* classes (unit badges per color, question type badges, 3D option buttons, result screen with pass/fail badges, stat grid). Courses.astro quiz links updated to /flashcards/#unit-quiz/N.
-- [x] **🔄 Grammar Review UI** — Purple gradient CTA card at top of /grammar/ page. Shows when ≥3 lessons completed. Count badge. Click picks random completed lesson with ?review=1 param.
-- [x] **🎧 Podcast Vocabulary UI** — Upgraded from plain spans to pv-pill buttons. Click-to-speak via speechSynthesis. Georgian tooltip on hover. Sky-blue colored pills with 🔊 icon.
-- [x] **👤 Profile Enhancement UI** — Study calendar heatmap (91 days, 13-column grid, 4 intensity levels). Extended stats section (grammar count, games played, study time, level). Full light mode CSS.
+### THIS SPRINT (Mar 7 night) — Cron 2 Tasks:
+- [ ] **🎯 Daily Goal Cleanup** — Remove "~5 წთ" from DailyLesson CTA. Verify card-based goal modal presets. Ensure all UI shows "ბარათი" not "წთ".
+- [ ] **🔗 Deep Link Verification** — Test all 30 course→flashcard links. Add vocabulary pill links from podcast episodes to specific flashcard decks.
+- [ ] **🔒 Grammar Lock UI** — Design locked/unlocked/completed states for lesson cards. 🔒 overlay for locked, ✅ for completed, ▶ for current.
+- [ ] **🎮 Games Page Redesign** — Category headers, improved card design, "Game of the Day" spotlight, stats row.
 
 ### Backlog:
 - [ ] Consistent card borders across all components

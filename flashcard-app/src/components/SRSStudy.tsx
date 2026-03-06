@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import type { FlashCard } from '../lib/cards';
-import { addXP, addStudyTime, updateStreak, XP_REWARDS } from '../lib/gamification';
+import { addXP, addStudyTime, updateStreak, XP_REWARDS, addCardReview } from '../lib/gamification';
 import {
   type SRSStore, type Rating, type CardSRS,
   getSRSStore, saveSRSStore, rateCard, getNextInterval, getLearnedCount,
@@ -140,6 +140,7 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
       recordRight(currentCard.english);
     }
 
+    addCardReview();
     // Award XP
     let xpGain = XP_REWARDS.REVIEW_CARD;
     if (rating === 'good' || rating === 'easy') {

@@ -5,6 +5,33 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-07
+
+### Cron 1 — Strategy (1:00 AM)
+- **⚠️ CRITICAL REALIGNMENT: Tornike's 8 priorities from Mar 6 were NOT being worked on!**
+  - Previous sprints did strategic work (unit quizzes, grammar review, etc.) while ignoring the boss's direct requests
+  - This violates MEMORY.md lesson #0: tasks from Tornike = top priority
+- **Sprint review:** "Unit Quizzes, Grammar Review & Conversion" sprint (Mar 6 day) — 3/5 completed:
+  - Unit-Specific Quizzes ✅ (UnitQuiz.tsx, 10 mixed questions, pass/fail)
+  - Grammar Review System ✅ (?review=1 param, SRS-like selection)
+  - Profile Heatmap + Payment Modal ✅
+  - Podcast Vocabulary Lists — partially (UI pills done, not all data)
+  - Premium Payment — modal UI only, no real integration
+- **Tornike's 8 priorities assessment:**
+  1. Daily Goal → Card-Based: ✅ Already done in gamification.ts! Just needs "~5 წთ" cleanup
+  2. Replace Old TTS Voices: Needs audio file audit
+  3. Fix Deep Links: ✅ Mostly working! courses.astro + grammar already deep-link. Podcast needs links added
+  4. Remove Mark-as-Done: Grammar + phrases have manual buttons to remove
+  5. New Dashboard Tracking: Need auto-tracked metrics replacing manual marks
+  6. Grammar Lock/Unlock: Need sequential progression system
+  7. Games Page Redesign: Need category grouping + polish
+  8. Full Site Audit: QA cron will handle
+- **New sprint:** "Tornike's 8 Priorities" — ALL crons tonight focused on his requests
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with Tornike's priorities
+- Assigned: Cron 2 → daily goal cleanup + deep links + design for lock/games, Cron 3 → remove mark-as-done + new dashboard + TTS audit, Cron 4 → grammar lock system + games redesign, Cron 5 → full site audit
+
+---
+
 ## 2026-03-06
 
 ### Cron 4B — Improvements (5:30 PM, Day Run)

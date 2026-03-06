@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { UserStats, getCurrentStreak, getTotalXP, calculateLevel, getXPProgress, getTodayStudyTime, getDailyHistory, type DailyActivity } from '../lib/gamification';
+import { UserStats, getCurrentStreak, getTotalXP, calculateLevel, getXPProgress, getTodayCardsReviewed, getDailyCardGoal, getDailyHistory, type DailyActivity } from '../lib/gamification';
 import { isDeckFree, deckIndex } from '../lib/deck-index';
 import { useAllDecks } from '../lib/useDecks';
 import { getCardProgress, getCardsInState } from '../lib/spaced-repetition';
@@ -49,15 +49,15 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
   const loadUserStats = () => {
     const totalXP = getTotalXP();
     const currentStreak = getCurrentStreak();
-    const todayStudyTime = getTodayStudyTime();
-    const dailyGoalMinutes = parseInt(getLocalStorageValue('dailyGoalMinutes', '10'), 10);
+    const todayCards = getTodayCardsReviewed();
+    const dailyCardGoal = getDailyCardGoal();
     
     setUserStats({
       totalXP,
       currentStreak,
       lastPracticeDate: getLocalStorageValue('lastPracticeDate', ''),
-      dailyGoalMinutes,
-      todayStudyTime,
+      dailyGoalMinutes: dailyCardGoal,
+      todayStudyTime: todayCards,
       level: calculateLevel(totalXP)
     });
   };
@@ -262,7 +262,7 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           {/* Daily Goal Progress */}
           <div className="mb-2">
             <div className="flex justify-between text-sm mb-1">
-              <span>დღეს მიზანი ({userStats.dailyGoalMinutes} წუთი)</span>
+              <span>დღეს მიზანი ({userStats.dailyGoalMinutes} ბარათი)</span>
               <span>{Math.floor(dailyGoalProgress)}%</span>
             </div>
             <div className="w-full bg-white/10 rounded-full h-2">

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { loadDeck, type FlashCard } from '../lib/deck-loader';
-import { addXP, updateStreak, addStudyTime } from '../lib/gamification';
+import { addXP, updateStreak, addStudyTime, addCardReview } from '../lib/gamification';
 
 // Unit → deck mapping (matches courses.astro)
 const UNIT_CONFIG: Record<number, { title: string; titleEn: string; icon: string; decks: string[]; grammar: string; color: string }> = {
@@ -184,6 +184,7 @@ export default function UnitQuiz({ unitId, onBack }: { unitId: number; onBack: (
   function handleAnswer(idx: number) {
     if (selected !== null) return;
     setSelected(idx);
+    addCardReview();
     const q = questions[current];
     const isCorrect = idx === q.correctIndex;
     if (isCorrect) {

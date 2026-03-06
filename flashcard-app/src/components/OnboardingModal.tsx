@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { setDailyGoal } from '../lib/gamification';
+import { setDailyCardGoal } from '../lib/gamification';
 
 interface Props {
   onComplete: (path: string | null) => void;
@@ -8,7 +8,7 @@ interface Props {
 export default function OnboardingModal({ onComplete }: Props) {
   const [step, setStep] = useState(0);
   const [selectedPath, setSelectedPath] = useState<string | null>(null);
-  const [selectedGoal, setSelectedGoal] = useState(10);
+  const [selectedGoal, setSelectedGoal] = useState(50);
 
   const paths = [
     { id: 'words', icon: '📚', label: 'სიტყვები', desc: 'ისწავლე ახალი სიტყვები ბარათებით', color: 'sky' },
@@ -17,15 +17,15 @@ export default function OnboardingModal({ onComplete }: Props) {
   ];
 
   const goals = [
-    { mins: 5, label: 'მსუბუქი', emoji: '🌱', desc: '5 წუთი/დღე' },
-    { mins: 10, label: 'ჩვეული', emoji: '📖', desc: '10 წუთი/დღე' },
-    { mins: 15, label: 'სერიოზული', emoji: '🔥', desc: '15 წუთი/დღე' },
-    { mins: 20, label: 'ინტენსიური', emoji: '💪', desc: '20 წუთი/დღე' },
-    { mins: 30, label: 'ჩემპიონი', emoji: '🏆', desc: '30 წუთი/დღე' },
+    { mins: 20, label: 'მსუბუქი', emoji: '🌱', desc: '20 ბარათი/დღე' },
+    { mins: 50, label: 'ჩვეული', emoji: '📖', desc: '50 ბარათი/დღე' },
+    { mins: 100, label: 'სერიოზული', emoji: '🔥', desc: '100 ბარათი/დღე' },
+    { mins: 150, label: 'ინტენსიური', emoji: '💪', desc: '150 ბარათი/დღე' },
+    { mins: 200, label: 'ჩემპიონი', emoji: '🏆', desc: '200 ბარათი/დღე' },
   ];
 
   function handleFinish() {
-    setDailyGoal(selectedGoal);
+    setDailyCardGoal(selectedGoal);
     localStorage.setItem('fluentge-onboarded', 'true');
     if (selectedPath) {
       localStorage.setItem('fluentge-path', selectedPath);

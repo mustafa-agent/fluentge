@@ -4,6 +4,7 @@ import { updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { checkAchievements } from './Achievements';
 import { recordWrong, recordRight } from '../lib/difficult-words';
+import { addCardReview } from '../lib/gamification';
 import ShareResult from './ShareResult';
 
 interface Props {
@@ -68,6 +69,7 @@ export default function QuizScreen({ deck, allCards, onBack }: Props) {
     const wasCorrect = q.options[idx].correct;
     setIsCorrect(wasCorrect);
     setShowFeedback(true);
+    addCardReview();
 
     if (wasCorrect) {
       setCorrect(c => c + 1);

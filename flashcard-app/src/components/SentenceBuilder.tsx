@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Deck, FlashCard } from '../lib/cards';
 import { playCorrect, playWrong } from '../lib/sounds';
+import { addCardReview } from '../lib/gamification';
 
 function playTap() {
   try {
@@ -96,6 +97,7 @@ export default function SentenceBuilder({ deck, onBack }: Props) {
     setIsCorrect(result);
     setChecked(true);
     setTotal(prev => prev + 1);
+    addCardReview();
     if (result) {
       setScore(prev => prev + 1);
       awardXP(15);

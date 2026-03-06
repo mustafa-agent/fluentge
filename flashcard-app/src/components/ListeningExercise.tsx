@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Deck, FlashCard } from '../lib/cards';
 import { playCorrect, playWrong } from '../lib/sounds';
+import { addCardReview } from '../lib/gamification';
 
 function awardXP(amount: number) {
   try {
@@ -93,6 +94,7 @@ export default function ListeningExercise({ deck, onBack }: Props) {
     setSelected(optIndex);
     const correct = question.options[optIndex].correct;
     setIsCorrect(correct);
+    addCardReview();
     if (correct) {
       setScore(prev => prev + 1);
       awardXP(10);

@@ -5,8 +5,8 @@ import {
   getTotalXP, 
   calculateLevel, 
   getXPProgress, 
-  getTodayStudyTime, 
-  getDailyGoal,
+  getTodayCardsReviewed, 
+  getDailyCardGoal,
   isDailyGoalMet 
 } from '../lib/gamification';
 
@@ -14,8 +14,8 @@ export default function StatsBar() {
   const [stats, setStats] = useState(() => getStats());
   const [streak, setStreak] = useState(() => getCurrentStreak());
   const [totalXP, setTotalXP] = useState(() => getTotalXP());
-  const [studyTime, setStudyTime] = useState(() => getTodayStudyTime());
-  const [dailyGoal, setDailyGoal] = useState(() => getDailyGoal());
+  const [studyTime, setStudyTime] = useState(() => getTodayCardsReviewed());
+  const [dailyGoal, setDailyGoal] = useState(() => getDailyCardGoal());
 
   // Refresh stats periodically (every 2s) to catch updates from study sessions
   useEffect(() => {
@@ -23,8 +23,8 @@ export default function StatsBar() {
       setStats(getStats());
       setStreak(getCurrentStreak());
       setTotalXP(getTotalXP());
-      setStudyTime(getTodayStudyTime());
-      setDailyGoal(getDailyGoal());
+      setStudyTime(getTodayCardsReviewed());
+      setDailyGoal(getDailyCardGoal());
     }, 2000);
     return () => clearInterval(interval);
   }, []);
@@ -89,7 +89,7 @@ export default function StatsBar() {
             {goalMet && <span className="text-green-400 text-xs ml-1">✅ შესრულდა!</span>}
           </span>
           <span className="text-xs text-[var(--color-text-muted)]">
-            {Math.floor(studyTime)}/{dailyGoal} წუთი
+            {studyTime}/{dailyGoal} ბარათი
           </span>
         </div>
         <div className="daily-goal-bar w-full bg-white/10 rounded-full h-3">

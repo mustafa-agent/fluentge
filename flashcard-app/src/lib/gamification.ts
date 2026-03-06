@@ -1,3 +1,5 @@
+import { syncNow } from './firebase-sync';
+
 // Gamification utilities for FluentGe V2
 
 export interface UserStats {
@@ -81,15 +83,15 @@ export function updateStreak(practiced: boolean): number {
   const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toDateString();
   
   if (lastPracticeDate === yesterday || !lastPracticeDate) {
-    // Continue or start streak
     const newStreak = currentStreak + 1;
     localStorage.setItem('currentStreak', newStreak.toString());
     localStorage.setItem('lastPracticeDate', today);
+    syncNow();
     return newStreak;
   } else {
-    // Streak broken, reset
     localStorage.setItem('currentStreak', '1');
     localStorage.setItem('lastPracticeDate', today);
+    syncNow();
     return 1;
   }
 }
@@ -98,13 +100,13 @@ export function getCurrentStreak(): number {
   return parseInt(localStorage.getItem('currentStreak') || '0', 10);
 }
 
-// Daily Goal System
+// Daily Goal System (legacy time-based — kept for backward compat)
 export function getDailyGoal(): number {
-  return parseInt(localStorage.getItem('dailyGoalMinutes') || '10', 10);
+  return getDailyCardGoal();
 }
 
-export function setDailyGoal(minutes: number): void {
-  localStorage.setItem('dailyGoalMinutes', minutes.toString());
+export function setDailyGoal(cards: number): void {
+  setDailyCardGoal(cards);
 }
 
 export function getTodayStudyTime(): number {
@@ -138,7 +140,67 @@ export function addStudyTime(minutes: number): number {
 }
 
 export function isDailyGoalMet(): boolean {
-  return getTodayStudyTime() >= getDailyGoal();
+  return getTodayCardsReviewed() >= getDailyCardGoal();
+}
+
+// Card-based Daily Goal System
+const DAILY_CARDS_KEY = 'dailyCardsReviewed';
+const DAILY_CARD_GOAL_KEY = 'dailyCardGoal';
+
+function getTodayKey(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+export function getDailyCardGoal(): number {
+  return parseInt(localStorage.getItem(DAILY_CARD_GOAL_KEY) || '50', 10);
+}
+
+export function setDailyCardGoal(cards: number): void {
+  localStorage.setItem(DAILY_CARD_GOAL_KEY, cards.toString());
+  syncNow();
+}
+
+export function getTodayCardsReviewed(): number {
+  try {
+    const data = JSON.parse(localStorage.getItem(DAILY_CARDS_KEY) || '{}');
+    return data[getTodayKey()] || 0;
+  } catch {
+    return 0;
+  }
+}
+
+export function addCardReview(count: number = 1): number {
+  const key = getTodayKey();
+  let data: Record<string, number> = {};
+  try {
+    data = JSON.parse(localStorage.getItem(DAILY_CARDS_KEY) || '{}');
+  } catch { data = {}; }
+  
+  data[key] = (data[key] || 0) + count;
+  
+  // Clean entries older than 30 days
+  const keys = Object.keys(data);
+  if (keys.length > 35) {
+    keys.sort();
+    for (let i = 0; i < keys.length - 30; i++) delete data[keys[i]];
+  }
+  
+  localStorage.setItem(DAILY_CARDS_KEY, JSON.stringify(data));
+  
+  // Sync to daily history
+  recordDailyActivity(0, 0);
+  syncNow();
+  
+  return data[key];
+}
+
+export function getDailyCardsData(): Record<string, number> {
+  try {
+    return JSON.parse(localStorage.getItem(DAILY_CARDS_KEY) || '{}');
+  } catch {
+    return {};
+  }
 }
 
 // XP Management
@@ -156,6 +218,7 @@ export function addXP(amount: number): { newTotal: number; levelUp: boolean; new
   
   // Auto-track daily activity (XP only; cards tracked separately)
   recordDailyActivity(amount, 0);
+  syncNow();
   
   return {
     newTotal,

@@ -47,26 +47,66 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Game of the Day Spotlight -->
+  <section class="max-w-5xl mx-auto px-4 pt-8">
+    <div id="game-of-day" class="relative overflow-hidden bg-gradient-to-r from-indigo-600/20 via-purple-600/20 to-pink-600/20 border border-indigo-500/20 rounded-2xl p-6 sm:p-8 cursor-pointer hover:border-indigo-400/40 transition-all group">
+      <div class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-widest bg-indigo-500/30 text-indigo-300 px-3 py-1 rounded-full">⭐ დღის თამაში</div>
+      <div class="flex items-center gap-5">
+        <div id="god-icon" class="w-16 h-16 rounded-2xl bg-indigo-500/20 flex items-center justify-center text-3xl shrink-0 border-b-4 border-indigo-500/30"></div>
+        <div class="flex-1">
+          <h3 id="god-name" class="text-xl font-bold mb-1"></h3>
+          <p id="god-desc" class="text-[#A0A09A] text-sm"></p>
+        </div>
+        <div class="text-2xl group-hover:translate-x-1 transition-transform text-indigo-300">▶</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Game Grid -->
   <section class="max-w-5xl mx-auto px-4 py-8">
     <!-- Free Games Section -->
-    <div class="mb-12">
+    <div class="mb-10">
       <div class="flex items-center gap-3 mb-6">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-[#C8C8C0]">უფასო თამაშები</h2>
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-green-500/20 to-transparent"></div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-green-400">🆓 უფასო თამაშები</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-green-500/20 to-transparent"></div>
       </div>
       <div id="free-games" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
     </div>
 
-    <!-- Premium Games Section -->
-    <div id="premium-section">
+    <!-- Category: Vocabulary Games -->
+    <div class="mb-10" id="cat-vocab">
       <div class="flex items-center gap-3 mb-6">
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-        <h2 class="text-sm font-bold uppercase tracking-widest text-[#C8C8C0]">პრემიუმ თამაშები</h2>
-        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-500/20 to-transparent"></div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-sky-400">📚 ლექსიკის თამაშები</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-500/20 to-transparent"></div>
       </div>
-      <div id="premium-games" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4"></div>
+      <div id="vocab-games" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4"></div>
+    </div>
+
+    <!-- Category: Grammar & Skills -->
+    <div class="mb-10" id="cat-grammar">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-violet-500/20 to-transparent"></div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-violet-400">📝 გრამატიკა & უნარები</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-violet-500/20 to-transparent"></div>
+      </div>
+      <div id="grammar-games" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4"></div>
+    </div>
+
+    <!-- Category: Fun & Challenge -->
+    <div class="mb-10" id="cat-fun">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-amber-500/20 to-transparent"></div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-amber-400">🎯 გართობა & გამოწვევა</h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-amber-500/20 to-transparent"></div>
+      </div>
+      <div id="fun-games" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4"></div>
+    </div>
+
+    <!-- Legacy containers (hidden, used by JS fallback) -->
+    <div id="premium-section" style="display:none">
+      <div id="premium-games"></div>
     </div>
   </section>
 
@@ -363,31 +403,72 @@ import Layout from '../layouts/Layout.astro';
       wordcatch: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&q=60',
     };
 
-    GAMES.forEach((g,i)=>{
+    // Game categories
+    const GAME_CATEGORIES = {
+      vocab: ['match','scramble','emojiquiz','memory','opposites','foodquiz','clothesquiz','rooms','emotionsquiz','family','travel','colorsquiz','countries','phrasesquiz'],
+      grammar: ['fillblank','typing','listening','spelling','numbers','daysmonths','timequiz','math'],
+      fun: ['speed','truefalse','hangman','wordrace','movies','routine','categories','wordcatch']
+    };
+    const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
+
+    // Game of the Day — deterministic based on date
+    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(),0,0).getTime()) / 86400000);
+    const godGame = GAMES[dayOfYear % GAMES.length];
+    const godEl = document.getElementById('game-of-day');
+    document.getElementById('god-icon').innerHTML = `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="${godGame.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${godGame.icon}</svg>`;
+    document.getElementById('god-name').textContent = godGame.name;
+    document.getElementById('god-desc').textContent = godGame.desc;
+    godEl.onclick = () => { if(!godGame.free && !isPremiumUser){window.location.href='/premium';return;} openGame(godGame.id); };
+
+    function createGameCard(g, i) {
       const card=document.createElement('div');
-      card.className=`game-card bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden cursor-pointer hover:border-[#C8C8C0]/30 ${g.free?'':'opacity-75 hover:opacity-100'}`;
-      card.style.animationDelay=`${i*0.05}s`;
+      card.className=`game-card bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden cursor-pointer hover:border-[#C8C8C0]/30 ${g.free || isPremiumUser ?'':'opacity-75 hover:opacity-100'}`;
+      card.style.animationDelay=`${i*0.03}s`;
       const bgImg = GAME_IMAGES[g.id] || '';
+      const rec = getGameRecord(g.id);
       card.innerHTML=`
-        <div class="relative h-32 sm:h-36 flex items-center justify-center overflow-hidden">
-          ${bgImg ? `<img src="${bgImg}" alt="" class="absolute inset-0 w-full h-full object-cover opacity-25" loading="lazy" onerror="this.style.display='none'"/>` : ''}
-          <div class="absolute inset-0 bg-gradient-to-t from-[#242426] via-[#242426]/40 to-transparent"></div>
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 opacity-80">${g.icon}</svg>
-          ${g.free?'<div class="absolute top-2 right-2 bg-green-500/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm z-10">FREE</div>':(localStorage.getItem('fluentge-premium')==='true'?'':'<div class="absolute top-2 right-2 bg-white/10 backdrop-blur-sm rounded-lg px-2 py-1 z-10"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A09A" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>')}
+        <div class="relative h-28 sm:h-32 flex items-center justify-center overflow-hidden">
+          ${bgImg ? `<img src="${bgImg}" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" onerror="this.style.display='none'"/>` : ''}
+          <div class="absolute inset-0 bg-gradient-to-t from-[#242426] via-[#242426]/50 to-transparent"></div>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 opacity-80">${g.icon}</svg>
+          ${g.free?'<div class="absolute top-2 right-2 bg-green-500/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm z-10">FREE</div>':(isPremiumUser?'':'<div class="absolute top-2 right-2 bg-white/10 backdrop-blur-sm rounded-lg px-2 py-1 z-10"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A09A" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>')}
+          ${rec > 0 ? `<div class="absolute top-2 left-2 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2 py-0.5 rounded-full z-10">🏆 ${rec}</div>` : ''}
         </div>
-        <div class="p-3 sm:p-4">
-          <h3 class="font-semibold text-sm sm:text-base text-[#F5F5F0]" style="font-family: 'Playfair Display', serif;">${g.name}</h3>
-          <p class="text-[#6B6B65] text-xs mt-0.5">${g.desc}</p>
+        <div class="p-3">
+          <h3 class="font-semibold text-sm text-[#F5F5F0]">${g.name}</h3>
+          <p class="text-[#6B6B65] text-[11px] mt-0.5 line-clamp-1">${g.desc}</p>
         </div>
       `;
-      const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
       card.onclick=()=>{if(!g.free && !isPremiumUser){window.location.href='/premium';return;}openGame(g.id);};
-      if(isPremiumUser){freeGrid.appendChild(card);}else{(g.free?freeGrid:premGrid).appendChild(card);}
+      return card;
+    }
+
+    // Populate categorized grids
+    const vocabGrid = document.getElementById('vocab-games');
+    const grammarGrid = document.getElementById('grammar-games');
+    const funGrid = document.getElementById('fun-games');
+
+    let cardIdx = 0;
+    GAMES.forEach((g) => {
+      if (g.free) {
+        freeGrid.appendChild(createGameCard(g, cardIdx++));
+        return;
+      }
+      if (GAME_CATEGORIES.vocab.includes(g.id)) {
+        vocabGrid.appendChild(createGameCard(g, cardIdx++));
+      } else if (GAME_CATEGORIES.grammar.includes(g.id)) {
+        grammarGrid.appendChild(createGameCard(g, cardIdx++));
+      } else if (GAME_CATEGORIES.fun.includes(g.id)) {
+        funGrid.appendChild(createGameCard(g, cardIdx++));
+      } else {
+        funGrid.appendChild(createGameCard(g, cardIdx++));
+      }
     });
-    // Hide premium section + fix grid for premium users
-    if(localStorage.getItem('fluentge-premium')==='true'){
-      const ps=document.getElementById('premium-section');if(ps)ps.style.display='none';
-      freeGrid.className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4';
+
+    // If premium, show all in categories (move free games into categories too)
+    if (isPremiumUser) {
+      // Hide the free section header and merge into categories
+      // Actually keep free section visible for premium users too — it's a nice visual
     }
 
     document.getElementById('sub-btn').onclick=()=>alert('მალე დაემატება! Coming soon!');

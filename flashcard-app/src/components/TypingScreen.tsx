@@ -4,6 +4,7 @@ import { updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { checkAchievements } from './Achievements';
 import { recordWrong, recordRight } from '../lib/difficult-words';
+import { addCardReview } from '../lib/gamification';
 import ShareResult from './ShareResult';
 
 interface Props {
@@ -67,6 +68,7 @@ export default function TypingScreen({ deck, onBack }: Props) {
     if (submitted || !input.trim()) return;
 
     setSubmitted(true);
+    addCardReview();
     const wasCorrect = normalize(input) === normalize(card.english);
     setIsCorrect(wasCorrect);
 

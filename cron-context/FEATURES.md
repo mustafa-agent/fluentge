@@ -2,12 +2,15 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 6 day) — "Unit Quizzes, Grammar Review & Conversion"
-- [x] **📝 Unit-Specific Quizzes** — Real 10-question tests per course unit (vocab+grammar+listening) ✅ Cron 3
-- [x] **🔄 Grammar Review System** — Spaced review of completed grammar lessons ✅ Cron 3
-- [ ] **🎧 Podcast Vocabulary Lists** — 5-8 key words per episode with Georgian translations ← Cron 3
-- [ ] **💳 Premium Payment Integration** — Stripe/PayPal checkout on premium page ← Cron 4
-- [ ] **👤 Profile Page Enhancement** — Deeper stats, study calendar heatmap ← Cron 4
+### 🎯 THIS SPRINT (Mar 7 night) — "Tornike's 8 Priorities"
+- [ ] **🎯 Daily Goal Cleanup** — Remove time references, verify card-based tracking ← Cron 2
+- [ ] **🔊 TTS Voice Audit** — Check audio quality, identify robotic voices ← Cron 3
+- [ ] **🔗 Deep Link Fixes** — Verify course links, add podcast→flashcard links ← Cron 2
+- [ ] **🗑️ Remove Mark-as-Done** — Delete manual marking system from grammar+phrases+dashboard ← Cron 3
+- [ ] **📊 New Dashboard Tracking** — Automatic progress metrics replacing manual marks ← Cron 3
+- [ ] **🔒 Grammar Lock/Unlock** — Sequential lessons with test-to-unlock ← Cron 4
+- [ ] **🎮 Games Page Redesign** — Categories, polish, professional look ← Cron 4
+- [ ] **🔍 Full Site Audit** — Every page tested ← Cron 5
 
 ### Flashcard Improvements
 ### Dashboard

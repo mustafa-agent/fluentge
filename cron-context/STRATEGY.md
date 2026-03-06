@@ -99,11 +99,14 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 6 Night Cycle)
+## 🎯 Current Sprint (Mar 7 Night Cycle)
 
-### Theme: "Unit Quizzes, Grammar Review & Conversion"
+### Theme: "Tornike's 8 Priorities — User-Requested Fixes"
 
-### CONTEXT: Previous Sprint Results (Mar 6 Day — "Content Quality & User Journey Polish")
+### ⚠️ CRITICAL CONTEXT
+Tornike gave 8 explicit priorities on Mar 6. The previous sprint (Mar 6 day) worked on unit quizzes/grammar review instead. **These are the BOSS's direct requests — they override our strategic backlog.** MEMORY.md lesson #0: "Write tasks down IMMEDIATELY."
+
+### CONTEXT: Previous Sprint Results (Mar 6 Day — "Unit Quizzes, Grammar Review & Conversion")
 - ✅ Level-Based Personalization — DailyLesson, DeckSelect, Dashboard, courses.astro all read placement level
 - ✅ Podcast Comprehension Data — 105 quiz questions across all 35 episodes
 - ✅ Homepage → Placement Flow — New user CTA → placement test, personalized result CTAs
@@ -130,102 +133,135 @@ Podcast quizzes are done (105 questions), but there's no vocabulary list per epi
 **Gap #5: Profile page is shallow.**
 Profile exists but doesn't show much useful data. Should show: total words learned, grammar lessons completed, podcast episodes listened, games played, total study time, join date. Make users feel proud of their progress.
 
-### Sprint Goals (ordered by priority)
+### Tornike's 8 Priorities (Mar 6) — STATUS:
 
-1. **🔴 Unit-Specific Quizzes** — Real tests for each course unit:
-   - Each unit quiz tests vocabulary from that unit's decks + grammar from that unit's lesson
-   - 10-question mixed format: 5 vocab (EN→KA multiple choice) + 3 grammar (fill-in/choose) + 2 listening
-   - Pull actual cards from the unit's specific decks (greetings for Unit 1, food for Unit 2, etc.)
-   - Score screen with unit completion badge, XP award (+50 for passing)
-   - Update course unit completion tracking when quiz is passed (≥70%)
-   - **Files:** New `UnitQuiz.tsx` component, `courses.astro` (update quiz links)
+1. **🔴 Daily Goal → Card-Based (not time-based)**
+   - STATUS: ✅ ALREADY DONE in gamification.ts! Goal is already card-based (default 50 cards)
+   - But DeckSelect still shows "~5 წთ" on DailyLesson CTA — needs cleanup
+   - Daily goal modal shows card presets (10/25/50/75/100) — needs verification
+   - Persistence works via localStorage — resets by date key, cumulative across sessions
+   - **Fix needed:** Remove any remaining "წთ" (minutes) references, verify card tracking
 
-2. **🔴 Grammar Review System** — Spaced review of completed grammar:
-   - Track which grammar lessons are completed (already in localStorage via gamification bridge)
-   - "Grammar Review" button on grammar page — picks 1-3 completed lessons, shows their exercises
-   - SRS-like spacing: recently completed lessons reviewed more often, older ones less
-   - Awards XP for review (+10 per correct)
-   - **Files:** `grammar/[slug].astro` (review mode), or new section on `/grammar/`
+2. **🔴 Replace ALL Old Robotic TTS Voices**
+   - Current: speechSynthesis API (browser built-in) for listening exercises + podcast vocab
+   - The audio files in `/flashcards/audio/words/` are pre-generated — need to check quality
+   - All 142 decks have audio files — these are the main TTS used
+   - **Action:** Audit all audio sources. If using old voices, regenerate with better TTS
 
-3. **🟡 Podcast Vocabulary Lists** — Key words per episode:
-   - Add `vocabulary: [{word, georgian, pronunciation}]` data to each podcast episode
-   - Display vocabulary section below transcript (before quiz)
-   - Clickable words play pronunciation via speechSynthesis
-   - 5-8 words per episode, selected from transcript content
-   - **File:** `podcast.astro`
+3. **🔴 Fix Deep Links: Courses → Specific Flashcard Decks**
+   - STATUS: ✅ courses.astro already deep-links to `/flashcards/?deck=greetings` etc.
+   - App.tsx has `?deck=` handler that auto-opens the deck
+   - Grammar pages already deep-link correctly (`/flashcards/?deck=${d.deck}`)
+   - Podcast page has NO flashcard links at all — needs adding
+   - **Fix needed:** Verify all course links work, add flashcard links to podcast page
 
-4. **🟡 Premium Payment Integration** — Make the buy button work:
-   - Add Stripe Checkout or PayPal button to premium page
-   - Simple flow: click "Buy" → redirect to payment → return to /premium/ with success
-   - Store premium status in Firebase user profile
-   - Check premium status on page load, unlock premium decks/features
-   - **File:** `premium.astro`, Firebase auth
+4. **🟡 Remove "Mark as Done" System**
+   - Grammar `[slug].astro` has "მონიშნე ნასწავლად" button (line 250)
+   - Phrases page has mark-phrase-btn buttons
+   - Dashboard may show completed counters
+   - **Action:** Remove mark-as-done buttons, remove related counters from dashboard
 
-5. **🟢 Profile Page Enhancement** — Deeper progress stats:
-   - Total words mastered (from SRS data)
-   - Grammar lessons completed count
-   - Total study time (from dailyHistory)
-   - Achievement count
-   - Join date (from Firebase or first activity)
-   - Study calendar heatmap (GitHub-style green squares)
-   - **File:** `profile.astro`
+5. **🟡 Build NEW Dashboard Tracking System**
+   - Replace manual "mark as done" with automatic progress tracking
+   - Track: cards reviewed (already have this), grammar exercises completed (have via gamification bridge), podcasts listened (need to track), games played (have this)
+   - Dashboard should show REAL engagement metrics, not manual checkboxes
+   - **Action:** Redesign dashboard stats section with automatic tracking
+
+6. **🟡 Grammar Page: Lock/Unlock System**
+   - Currently all lessons accessible (premium ones locked by tier, not by progress)
+   - Need: sequential unlocking — must complete lesson N before accessing N+1
+   - Need: test at end of each lesson (grammar exercises already exist!)
+   - Passing test = lesson "learned" + next lesson unlocked
+   - **Action:** Add lock logic to grammar.astro, require exercise completion for unlock
+
+7. **🟢 Redesign Games Page**
+   - Current: grid of 30 game cards with basic styling
+   - Needs: polished, professional design
+   - **Action:** Redesign games.astro with better layout, categories, visual appeal
+
+8. **🟢 Full Site Audit**
+   - Check every page for bugs, visual issues, broken links
+   - **Action:** QA cron handles this
+
+### Sprint Goals (ordered by priority — Tornike's requests FIRST)
+
+1. **🔴 #1+#3: Daily Goal Cleanup + Deep Link Verification** (Cron 2)
+   - Remove "~5 წთ" from DailyLesson CTA, verify card-based goal works
+   - Test all course → flashcard deep links
+   - Add flashcard links to podcast episodes
+
+2. **🔴 #2: TTS Voice Audit** (Cron 3)
+   - Check audio file quality in flashcard decks
+   - Identify robotic voices, plan replacement
+
+3. **🔴 #4+#5: Remove Mark-as-Done + New Dashboard Tracking** (Cron 3)
+   - Remove all "mark as done" buttons from grammar and phrases
+   - Remove related dashboard counters
+   - Build new automatic progress tracking on dashboard
+
+4. **🟡 #6: Grammar Lock/Unlock System** (Cron 4)
+   - Sequential lesson unlocking on grammar.astro
+   - Exercise completion = lesson passed → auto-unlocks next
+   - Visual locked/unlocked states
+
+5. **🟡 #7: Games Page Redesign** (Cron 4)
+   - Better layout, categories, polish
 
 ### For Each Cron Tonight:
-- **Cron 1 (Strategy, 11:30AM):** ← THIS RUN. Sprint planning, specs, context updates.
-- **Cron 2 (Design, 3:00AM):** Design UnitQuiz UI, grammar review section UI, podcast vocabulary UI, profile enhancements.
-- **Cron 3 (Features, 5:00AM):** Build UnitQuiz.tsx + grammar review system + podcast vocabulary data.
-- **Cron 4 (Improvements, 7:00AM):** Profile page enhancement + premium page prep + polish.
-- **Cron 5 (QA, 9:00AM):** Full QA — test unit quizzes, grammar review, all pages.
+- **Cron 1 (Strategy, 1:00AM):** ← THIS RUN. Sprint planning around Tornike's 8 priorities.
+- **Cron 2 (Design, 3:00AM):** Daily goal cleanup, deep link fixes, games page redesign CSS, grammar lock UI.
+- **Cron 3 (Features, 5:00AM):** Remove mark-as-done, build new dashboard tracking, TTS audit, podcast flashcard links.
+- **Cron 4 (Improvements, 7:00AM):** Grammar lock/unlock system, games page redesign implementation.
+- **Cron 5 (QA, 9:00AM):** Full site audit (Tornike's #8) — every page, every link, every component.
 
 ## Technical Specs
 
-### Unit Quiz (Cron 2+3)
+### Remove Mark-as-Done (Cron 3)
 ```
-// UnitQuiz.tsx — new React component
-// Props: unitId (1-6), onComplete callback
-//
-// Data structure per unit (in courses.astro or passed as props):
-// Unit 1: decks=['greetings', 'numbers'], grammar='to-be'
-// Unit 2: decks=['food', 'emotions'], grammar='present-simple'
-// Unit 3: decks=['travel', 'shopping'], grammar='prepositions-of-place'
-// Unit 4: decks=['business', 'technology'], grammar='past-simple'
-// Unit 5: decks=['health', 'education'], grammar='present-perfect'
-// Unit 6: decks=['idioms', 'academic'], grammar='conditionals'
-//
-// Quiz format: 10 questions
-//   Q1-5: Vocab — show English word, pick correct Georgian from 4 options
-//          (load cards from unit's decks, pick 5 random, generate 3 wrong options from other cards)
-//   Q6-8: Grammar — fill-in-blank or multiple choice based on unit's grammar topic
-//          (hardcoded per unit, 3-5 questions pool, pick 3 random)
-//   Q9-10: Listening — hear English word, pick correct Georgian
-//          (use speechSynthesis, same as ListeningExercise pattern)
-//
-// Scoring: ≥7/10 = pass → unit marked complete, +50 XP, badge
-//          <7/10 = "try again" with review suggestions
-//
-// Integration with courses.astro:
-//   - Quiz link changes from /games/ to launching UnitQuiz in flashcard app
-//   - URL pattern: /flashcards/#unit-quiz/1 (unit number)
-//   - App.tsx: new screen 'unit-quiz' that renders UnitQuiz
+// 1. grammar/[slug].astro line ~250: Remove "მონიშნე ნასწავლად" button + its JS
+// 2. phrases.astro: Remove mark-phrase-btn buttons
+// 3. Dashboard: Remove any "Phrases/Grammar/Podcasts/Flashcards completed" counters
+//    that relied on manual marking
+// 4. Clean up localStorage keys related to manual marking
 ```
 
-### Grammar Review (Cron 3)
+### New Dashboard Tracking (Cron 3)
 ```
-// On /grammar/ page, add "გრამატიკის გამეორება" section at top
-// Reads localStorage 'fluentge-grammar-completed' array
-// If user has completed ≥3 lessons, show review CTA
-// Click → opens a completed lesson's exercises in "review mode"
-// Review mode: same exercises but shuffled, different feedback text
-// Awards +10 XP per correct (same as regular, via gamification bridge)
-// Tracks review date per lesson in localStorage
+// Replace manual counters with AUTOMATIC stats:
+// - Cards reviewed today / this week (from dailyCardsReviewed)
+// - Grammar lessons completed (from fluentge-grammar-completed)
+// - Games played (from gamesPlayed in gamification)
+// - Study time today (from daily history)
+// - Streak + XP (already shown)
+// These all already exist in localStorage — just need to display them
+// properly on Dashboard.tsx instead of manual "mark as done" counts
 ```
 
-### Podcast Vocabulary (Cron 3)
+### Grammar Lock/Unlock (Cron 4)
 ```
-// Each episode gets vocabulary: [{word: "airport", georgian: "აეროპორტი", pronunciation: "ˈeərpɔːrt"}]
-// Display: colored word pills below transcript, above quiz
-// Click word → speechSynthesis speaks it
-// 5-8 words per episode
+// grammar.astro: 
+// - Define lesson ORDER (A1 lessons first, then A2, etc.)
+// - Check localStorage 'fluentge-grammar-completed' array
+// - Lesson N is unlocked only if lesson N-1 is in completed array
+// - First lesson always unlocked
+// - Locked lessons: gray out, show 🔒 icon, click shows "complete previous lesson first"
+// - Completed lessons: show ✅ green badge
+// - Current lesson (first unlocked incomplete): show "▶ start" badge
+//
+// grammar/[slug].astro:
+// - Exercise completion (80%+ score) → auto-marks lesson as completed
+// - This ALREADY happens via gamification-bridge.js markGrammarComplete()
+// - Just need to verify the threshold and ensure it writes to the array
+```
+
+### Games Page Redesign (Cron 4)
+```
+// games.astro:
+// - Group games into categories (Vocabulary, Grammar, Listening, Fun)
+// - Card redesign: bigger icons, better colors, difficulty badges
+// - "Game of the Day" spotlight at top
+// - Stats row (games played, total score, streak)
+// - Search/filter functionality
 ```
 
 ## Notes for Crons

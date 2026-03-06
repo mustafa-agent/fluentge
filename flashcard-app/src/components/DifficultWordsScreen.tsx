@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { getTopDifficult, DifficultWord, recordRight, recordWrong } from '../lib/difficult-words';
 import { playCorrect, playWrong } from '../lib/sounds';
-import { addXP, XP_REWARDS } from '../lib/gamification';
+import { addXP, XP_REWARDS, addCardReview } from '../lib/gamification';
 import ShareResult from './ShareResult';
 
 interface Props {
@@ -62,6 +62,7 @@ export default function DifficultWordsScreen({ onBack }: Props) {
       playWrong();
     }
     
+    addCardReview();
     setReviewed(r => r + 1);
     
     if (current + 1 >= cards.length) {

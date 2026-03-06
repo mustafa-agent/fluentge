@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getUserStats, getDailyGoal, setDailyGoal } from '../lib/gamification';
+import { getUserStats, getDailyCardGoal, setDailyCardGoal, getTodayCardsReviewed } from '../lib/gamification';
 
 interface Props {
   onBack?: () => void;
@@ -8,25 +8,26 @@ interface Props {
 export default function GameStats({ onBack }: Props) {
   const [stats, setStats] = useState(() => getUserStats());
   const [showGoalSettings, setShowGoalSettings] = useState(false);
-  const [newGoal, setNewGoal] = useState(stats.dailyGoalMinutes);
+  const [newGoal, setNewGoal] = useState(getDailyCardGoal());
+  const [todayCards, setTodayCards] = useState(getTodayCardsReviewed());
 
   useEffect(() => {
-    // Update stats every minute to keep them fresh
     const interval = setInterval(() => {
       setStats(getUserStats());
-    }, 60000);
-
+      setTodayCards(getTodayCardsReviewed());
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
-  const dailyGoalProgress = Math.min(100, (stats.todayStudyTime / stats.dailyGoalMinutes) * 100);
+  const cardGoal = getDailyCardGoal();
+  const dailyGoalProgress = Math.min(100, (todayCards / cardGoal) * 100);
   const levelProgress = ((stats.totalXP % 200) / 200) * 100;
   const nextLevelXP = stats.level * 200;
   const currentLevelXP = stats.totalXP - ((stats.level - 1) * 200);
 
-  function handleGoalChange(minutes: number) {
-    setDailyGoal(minutes);
-    setNewGoal(minutes);
+  function handleGoalChange(cards: number) {
+    setDailyCardGoal(cards);
+    setNewGoal(cards);
     setStats(getUserStats());
     setShowGoalSettings(false);
   }
@@ -91,7 +92,7 @@ export default function GameStats({ onBack }: Props) {
             <div>
               <div className="font-bold">დღიური მიზანი</div>
               <div className="text-sm text-[#C8C8C0]">
-                {stats.todayStudyTime}/{stats.dailyGoalMinutes} წუთი
+                {todayCards}/{cardGoal} ბარათი
               </div>
             </div>
           </div>
@@ -126,18 +127,18 @@ export default function GameStats({ onBack }: Props) {
         {showGoalSettings && (
           <div className="mt-4 p-3 bg-[#1C1C1E] rounded-lg">
             <div className="text-sm font-medium mb-3">აირჩიეთ დღიური მიზანი:</div>
-            <div className="grid grid-cols-4 gap-2">
-              {[5, 10, 15, 20].map(minutes => (
+            <div className="grid grid-cols-5 gap-2">
+              {[20, 50, 100, 150, 200].map(num => (
                 <button
-                  key={minutes}
-                  onClick={() => handleGoalChange(minutes)}
+                  key={num}
+                  onClick={() => handleGoalChange(num)}
                   className={`p-2 rounded-lg text-sm transition-colors ${
-                    stats.dailyGoalMinutes === minutes
+                    cardGoal === num
                       ? 'bg-[#007AFF] text-white'
                       : 'bg-[#242426] text-[#C8C8C0] hover:bg-[#2A2A2C]'
                   }`}
                 >
-                  {minutes}წთ
+                  {num}
                 </button>
               ))}
             </div>
@@ -180,7 +181,7 @@ export default function GameStats({ onBack }: Props) {
             <span>🏆 შესანიშნავია! 7+ დღიანი სერია!</span>
           ) : stats.currentStreak >= 3 ? (
             <span>🔥 კარგად გქონიათ! გააგრძელეთ!</span>
-          ) : stats.todayStudyTime > 0 ? (
+          ) : todayCards > 0 ? (
             <span>💪 კარგი დაწყება! გაანახვარეთ!</span>
           ) : (
             <span>🚀 დაიწყეთ სწავლა და შექმენით სერია!</span>

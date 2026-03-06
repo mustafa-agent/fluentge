@@ -3,7 +3,7 @@ import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { sm2 } from '../lib/sm2';
 import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
-import { addXP, addStudyTime, updateStreak, XP_REWARDS, recordDailyActivity } from '../lib/gamification';
+import { addXP, addStudyTime, updateStreak, XP_REWARDS, recordDailyActivity, addCardReview } from '../lib/gamification';
 import { recordWrong as trackDifficult, recordRight as trackCorrect } from '../lib/difficult-words';
 
 // --- Swipe gesture hook ---
@@ -253,6 +253,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     const isCorrect = possibleAnswers.some(ans => ans === userAnswer || userAnswer.includes(ans) || ans.includes(userAnswer));
     setGuessResult(isCorrect ? 'correct' : 'wrong');
     setFlipped(true);
+    addCardReview();
     if (isCorrect) {
       playCorrect();
       // Award XP for correct answer

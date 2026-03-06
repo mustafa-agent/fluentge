@@ -11,7 +11,8 @@ import {
   isDailyGoalMet, 
   XP_REWARDS, 
   isAnswerCorrect,
-  getUserStats
+  getUserStats,
+  addCardReview
 } from '../lib/gamification';
 import { 
   triggerCorrectAnswerConfetti,
@@ -165,6 +166,7 @@ export default function EnhancedStudyScreen({ deck, onBack }: Props) {
       incrementWordsLearned();
     }
 
+    addCardReview();
     // Calculate XP reward
     let xpGained = XP_REWARDS.REVIEW_CARD;
     if (isCorrect) {
