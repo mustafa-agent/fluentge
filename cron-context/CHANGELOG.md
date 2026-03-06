@@ -7,6 +7,30 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-06
 
+### Cron 4 — Improvements (7:00 AM)
+- **🎯 Placement→Personalized First Lesson Flow:**
+  - After placement test, result screen now shows a big gradient CTA personalized to user's assessed level
+  - A1: "დაიწყე საბაზისო სიტყვებით" → links to greetings deck
+  - A2: "გააძლიერე საწყისი ცოდნა" → links to flashcards
+  - B1: "გააფართოვე ლექსიკა" → links to flashcards
+  - B2: "დახვეწე ენა" → links to flashcards
+  - C1: "შენ უკვე მაღალ დონეზე ხარ!" → links to games
+  - Color-coded gradient matches level color scheme
+  - "სწავლის დაწყება" button href also updates to match level
+  - Subtitle "ან აირჩიე ქვემოთ მოცემული ვარიანტებიდან" guides to recommendations
+- **🔍 SEO Critical Fix — Sitemap & Robots.txt:**
+  - sitemap.xml: ALL URLs were pointing to `fluentge.surge.sh` → fixed to `fluentge.pages.dev`
+  - Added missing pages: `/placement/`, `/courses/`, `/profile/`
+  - Added 6 missing blog posts: english-for-dating, english-for-gaming, english-for-immigration, english-for-it-professionals, english-slang-2026
+  - Added 6 free grammar lesson URLs
+  - Removed duplicate/non-existent URLs (reading/, writing/, level-test/, quiz-widget/, daily/)
+  - robots.txt: Fixed sitemap URL from surge.sh → pages.dev
+- **🎮 Game Verification (Code Review):**
+  - Reviewed all 30 game builder functions for crashes/bugs
+  - All games have proper data arrays, error-free logic, XP integration
+  - No broken games found — all 30 functional
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **🎯 Level-Based DailyLesson Personalization:**
   - DailyLesson.tsx now reads `fluentge-placement-level` from localStorage

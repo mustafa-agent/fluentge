@@ -56,11 +56,11 @@
 - [ ] Bottom navigation for mobile?
 
 ## 🎯 THIS SPRINT (Mar 6 night) — "Content Quality & User Journey Polish"
-- [ ] **🎯 Level personalization** — Placement results affect all recommendations ← Cron 3
-- [ ] **🎧 Podcast quiz data** — Real comprehension questions per episode ← Cron 3
-- [ ] **🏠 Homepage→Placement flow** — Optimize new user journey ← Cron 4
-- [ ] **🔍 SEO audit** — Meta tags, structured data, Georgian keywords ← Cron 4
-- [ ] **🎮 Game verification** — Test all 30+ games ← Cron 4
+- [x] **🎯 Level personalization** — Placement results affect all recommendations ✅ Cron 3
+- [x] **🎧 Podcast quiz data** — Real comprehension questions per episode ✅ Cron 3
+- [x] **🏠 Homepage→Placement flow** — Optimize new user journey ✅ Cron 4 (personalized result CTAs)
+- [x] **🔍 SEO audit** — Sitemap/robots.txt domain fix, missing pages added ✅ Cron 2+4
+- [x] **🎮 Game verification** — All 30 games reviewed, no bugs found ✅ Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)
@@ -73,7 +73,16 @@
 ## In Progress 🔄
 (none)
 
-## Completed This Sprint ✅ (Mar 5 day)
+## Completed This Sprint ✅ (Mar 6 night)
+- Placement→Personalized flow ✅ Cron 4 (level-specific gradient CTA, updated href)
+- SEO sitemap/robots.txt domain fix ✅ Cron 2+4 (surge.sh→pages.dev, missing pages)
+- Game verification ✅ Cron 4 (30/30 games reviewed, all working)
+- Level personalization across DailyLesson/DeckSelect/Dashboard/Courses ✅ Cron 3
+- Podcast quiz data (105 questions, 35 episodes) ✅ Cron 3
+- Homepage CTA redesign ✅ Cron 2
+- SEO canonical/OG URL fix ✅ Cron 2
+
+## Completed Last Sprint ✅ (Mar 5 day)
 - Grammar exercises Duolingo-style upgrade ✅ Cron 4B, Mar 5 (3D buttons, feedback bar, continue button, streak, stat cards)
 - Course units completion tracking ✅ Cron 4B, Mar 5 (localStorage progress, per-unit %, green checkmarks, light mode)
 

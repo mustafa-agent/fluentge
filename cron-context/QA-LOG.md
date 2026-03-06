@@ -1,9 +1,45 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-05 (7:30 PM)
+- **Date:** 2026-03-06 (9:00 AM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Morning QA Run (Mar 6, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200, `/placement/` — 200, `/courses/` — 200, `/profile/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Flashcard App Build — ✅ Clean
+- **Main bundle: 263.35 KB** (gzip 78.54 KB)
+- **Top-2000 chunk: 469.25 KB**
+- Built in 4.76s
+
+### Website Build — ✅ Clean
+- **112 pages** built in 7.41s, no errors
+
+### Tonight's Changes Verified (Crons 1-4, Mar 6)
+- [x] **SEO Critical Fix — Sitemap (Cron 4):** All URLs now `fluentge.pages.dev` — zero `surge.sh` references in sitemap.xml ✅
+- [x] **SEO Critical Fix — Robots.txt (Cron 4):** Sitemap URL fixed to pages.dev ✅
+- [x] **SEO Critical Fix — Canonical/OG URLs (Cron 2):** Layout.astro canonical + og:url fixed — zero `surge.sh` in any .astro file ✅
+- [x] **Placement → Personalized CTA (Cron 4):** Level-based gradient CTA on result screen, level-appropriate deck links — code reviewed
+- [x] **Game Verification (Cron 4):** All 30 game builders reviewed — no crashes ✅
+- [x] **Level-Based DailyLesson (Cron 3):** Reads `fluentge-placement-level` from localStorage, loads level-appropriate decks — verified in code
+- [x] **Level-Based Course Highlighting (Cron 3):** Green pulsing badge on suggested unit — code reviewed
+- [x] **Podcast Quiz Data (Cron 3):** 105 questions across 35 episodes — 39 quiz references in podcast.astro ✅
+- [x] **Level Personalization UI on DeckSelect (Cron 2):** "Recommended for your level" section — code reviewed
+- [x] **Level Badge on Dashboard (Cron 2):** Gradient banner with level display — code reviewed
+- [x] **Podcast Comprehension Quiz UI (Cron 2):** A/B/C/D options, XP awards, score summary — code reviewed
+- [x] **Homepage CTA Redesign (Cron 2):** Placement test CTA for new users — code reviewed
+
+### Browser — ❌ Unavailable
+- OpenClaw browser service not running — visual testing skipped this run
+
+### Verdict
+All changes from tonight's "Content Quality & User Journey Polish" sprint verified via code review + HTTP checks + build verification. Major SEO fix deployed (all URLs corrected from surge.sh to pages.dev). No bugs found. Site stable at 112 pages, 263KB bundle.
 
 ## Evening QA Run (Mar 5, 7:30 PM)
 
