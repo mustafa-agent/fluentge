@@ -63,17 +63,51 @@ export default function DeckSelect({ onSelect }: Props) {
 
   // Estimate progress from localStorage without card data (for grid view)
   function getEstimatedProgress(deckId: string): number {
-    // Count progress keys that match this deck's categories
     const keys = Object.keys(progress);
     let count = 0;
     for (const key of keys) {
       const p = progress[key];
       if (p && p.repetitions >= 1) count++;
     }
-    // Simple heuristic: we can't easily map without card data, show 0 for now
-    // Full progress shown when deck is selected
     return 0;
   }
+
+  // Level-based personalization
+  const placementLevel = localStorage.getItem('fluentge-placement-level');
+  const levelConfig: Record<string, { label: string; labelKa: string; color: string; border: string; bg: string; deckIds: string[] }> = {
+    'A1': { label: 'A1', labelKa: 'დამწყები', color: 'text-green-400', border: 'border-green-500/30', bg: 'from-green-500/15 to-emerald-500/10', deckIds: ['greetings', 'numbers-counting', 'colors', 'family-people', 'food-cooking', 'animals-nature'] },
+    'A2': { label: 'A2', labelKa: 'ელემენტარული', color: 'text-sky-400', border: 'border-sky-500/30', bg: 'from-sky-500/15 to-blue-500/10', deckIds: ['daily-life', 'shopping-money', 'travel-transport', 'feelings-moods', 'weather-seasons'] },
+    'B1': { label: 'B1', labelKa: 'საშუალო', color: 'text-indigo-400', border: 'border-indigo-500/30', bg: 'from-indigo-500/15 to-purple-500/10', deckIds: ['business-work', 'technology', 'health-body', 'education', 'culture-art'] },
+    'B2': { label: 'B2', labelKa: 'მაღალი', color: 'text-purple-400', border: 'border-purple-500/30', bg: 'from-purple-500/15 to-pink-500/10', deckIds: ['academic', 'idioms-expressions', 'phrasal-verbs', 'science-math'] },
+  };
+  const levelInfo = placementLevel ? levelConfig[placementLevel] : null;
+  const recommendedDecks = levelInfo ? deckIndex.filter(d => levelInfo.deckIds.includes(d.id)) : [];
+
+  // Count due SRS cards across all decks
+  const totalDueCards = getTotalDueCards();
+
+  // Per-deck due counts (memoized for grid badges) — MUST be before any early return
+  const deckDueCounts = useMemo(() => {
+    const map: Record<string, number> = {};
+    for (const meta of deckIndex) {
+      const c = getDueCount(meta.id);
+      if (c > 0) map[meta.id] = c;
+    }
+    return map;
+  }, []);
+
+  // Words I Know counter
+  const totalMastered = Object.values(progress).filter((p: any) => p.repetitions >= 1).length;
+  const totalXP = getTotalXP();
+  const level = calculateLevel(totalXP);
+  const streak = getCurrentStreak();
+  const dailyGoal = getDailyGoal();
+  const todayMinutes = getTodayStudyTime();
+  const dailyPct = Math.min(100, Math.round((todayMinutes / dailyGoal) * 100));
+
+  // Daily goal setting — MUST be before any early return
+  const [showGoalModal, setShowGoalModal] = useState(false);
+  const goalOptions = [5, 10, 15, 20, 30];
 
   // Mode selection overlay
   if (selectedMeta) {
@@ -167,43 +201,6 @@ export default function DeckSelect({ onSelect }: Props) {
 
   const top2000 = deckIndex.find(d => d.id === 'top-2000')!;
   const freeDecksFiltered = freeDecks.filter(d => d.id !== 'top-2000');
-
-  // Level-based personalization
-  const placementLevel = localStorage.getItem('fluentge-placement-level');
-  const levelConfig: Record<string, { label: string; labelKa: string; color: string; border: string; bg: string; deckIds: string[] }> = {
-    'A1': { label: 'A1', labelKa: 'დამწყები', color: 'text-green-400', border: 'border-green-500/30', bg: 'from-green-500/15 to-emerald-500/10', deckIds: ['greetings', 'numbers-counting', 'colors', 'family-people', 'food-cooking', 'animals-nature'] },
-    'A2': { label: 'A2', labelKa: 'ელემენტარული', color: 'text-sky-400', border: 'border-sky-500/30', bg: 'from-sky-500/15 to-blue-500/10', deckIds: ['daily-life', 'shopping-money', 'travel-transport', 'feelings-moods', 'weather-seasons'] },
-    'B1': { label: 'B1', labelKa: 'საშუალო', color: 'text-indigo-400', border: 'border-indigo-500/30', bg: 'from-indigo-500/15 to-purple-500/10', deckIds: ['business-work', 'technology', 'health-body', 'education', 'culture-art'] },
-    'B2': { label: 'B2', labelKa: 'მაღალი', color: 'text-purple-400', border: 'border-purple-500/30', bg: 'from-purple-500/15 to-pink-500/10', deckIds: ['academic', 'idioms-expressions', 'phrasal-verbs', 'science-math'] },
-  };
-  const levelInfo = placementLevel ? levelConfig[placementLevel] : null;
-  const recommendedDecks = levelInfo ? deckIndex.filter(d => levelInfo.deckIds.includes(d.id)) : [];
-
-  // Count due SRS cards across all decks
-  const totalDueCards = getTotalDueCards();
-
-  // Per-deck due counts (memoized for grid badges)
-  const deckDueCounts = useMemo(() => {
-    const map: Record<string, number> = {};
-    for (const meta of deckIndex) {
-      const c = getDueCount(meta.id);
-      if (c > 0) map[meta.id] = c;
-    }
-    return map;
-  }, []);
-
-  // Words I Know counter
-  const totalMastered = Object.values(progress).filter(p => p.repetitions >= 1).length;
-  const totalXP = getTotalXP();
-  const level = calculateLevel(totalXP);
-  const streak = getCurrentStreak();
-  const dailyGoal = getDailyGoal();
-  const todayMinutes = getTodayStudyTime();
-  const dailyPct = Math.min(100, Math.round((todayMinutes / dailyGoal) * 100));
-
-  // Daily goal setting
-  const [showGoalModal, setShowGoalModal] = useState(false);
-  const goalOptions = [5, 10, 15, 20, 30];
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">

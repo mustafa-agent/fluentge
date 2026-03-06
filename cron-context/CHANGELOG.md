@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-06
 
+### Cron 3B — Features (3:30 PM, Day Run)
+- **📝 Unit-Specific Quizzes (UnitQuiz.tsx):**
+  - New React component: 10-question mixed test per course unit
+  - 5 vocab questions: load cards from unit's decks, EN→KA multiple choice with 3 wrong options
+  - 3 grammar questions: hardcoded per unit (to-be, present-simple, past-simple, present-perfect, modals, conditionals)
+  - 2 listening questions: speechSynthesis plays English, pick correct Georgian
+  - Pass ≥7/10: +50 XP bonus, completion saved to `fluentge-unit-quiz-completed`
+  - Hash routing: `#unit-quiz/N`, lazy-loaded in App.tsx
+  - Uses uq-* CSS classes from Cron 2B
+- **🔄 Grammar Review System:**
+  - `?review=1` URL param: shuffles exercises, shows purple review banner
+  - SRS-like selection on /grammar/ CTA: picks least-recently-reviewed lessons
+  - Review dates tracked in `fluentge-grammar-reviews` localStorage
+  - Auto-scrolls to exercises in review mode
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM, Day Run)
 - **📝 Unit Quiz UI (CSS + routing):**
   - Full `uq-*` CSS class system: unit badges (6 colors), question type badges (vocab/grammar/listening), 3D option buttons with letter badges, result screen with pass/fail badges, stat grid

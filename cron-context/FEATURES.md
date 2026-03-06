@@ -3,8 +3,8 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 6 day) — "Unit Quizzes, Grammar Review & Conversion"
-- [ ] **📝 Unit-Specific Quizzes** — Real 10-question tests per course unit (vocab+grammar+listening) ← Cron 3
-- [ ] **🔄 Grammar Review System** — Spaced review of completed grammar lessons ← Cron 3
+- [x] **📝 Unit-Specific Quizzes** — Real 10-question tests per course unit (vocab+grammar+listening) ✅ Cron 3
+- [x] **🔄 Grammar Review System** — Spaced review of completed grammar lessons ✅ Cron 3
 - [ ] **🎧 Podcast Vocabulary Lists** — 5-8 key words per episode with Georgian translations ← Cron 3
 - [ ] **💳 Premium Payment Integration** — Stripe/PayPal checkout on premium page ← Cron 4
 - [ ] **👤 Profile Page Enhancement** — Deeper stats, study calendar heatmap ← Cron 4
@@ -52,6 +52,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **📝 Unit-Specific Quizzes (UnitQuiz.tsx)** — 10-question mixed tests per course unit: 5 vocab (EN→KA multiple choice from unit decks), 3 grammar (fill-in-blank per unit topic), 2 listening (speechSynthesis + pick Georgian). Pass ≥7/10 for completion badge + 50 XP bonus. Routed via `#unit-quiz/N` hash. Uses uq-* CSS classes from Cron 2. Unit completion saved to localStorage. (Cron 3, Mar 6 afternoon)
+- ✅ **🔄 Grammar Review System** — `?review=1` param on grammar lessons: shuffles exercises, shows purple review banner, unhides content for premium lessons in review. SRS-like lesson selection on /grammar/ CTA — picks least-recently-reviewed lessons first (tracks review dates in `fluentge-grammar-reviews` localStorage). Auto-scrolls to exercises. (Cron 3, Mar 6 afternoon)
 - ✅ **🎯 Level-Based Personalization** — DailyLesson loads level-appropriate decks (A1: greetings/numbers/colors, A2: daily/food/shopping, B1: business/tech, B2: politics/science) based on placement test result. courses.astro highlights recommended starting unit with green badge + auto-expand. (Cron 3, Mar 6)
 - ✅ **🎧 Podcast Comprehension Data** — Added 3 quiz questions each to ALL 35 podcast episodes (previously only eps 1-2 had quizzes). Questions are in Georgian, based on transcript content, with 4 options each. Wired to XP via gamification bridge. (Cron 3, Mar 6)
 - ✅ **🔄 Reverse Mode Enhancement** — Fixed autoplay: plays Georgian on card show, English on flip reveal. Added 3D card flip animation (CSS rotateY). (Cron 3, Mar 5 afternoon)
