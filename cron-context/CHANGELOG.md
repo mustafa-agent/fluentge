@@ -76,6 +76,29 @@ Each cron logs what it did here. Most recent first.
   - Guides new users through placement test first for personalized experience
 - Deployed ✅, git committed & pushed
 
+### Cron 1B — Strategy (11:30 AM, Day Run)
+- **Sprint review:** "Content Quality & User Journey Polish" sprint (Mar 6 night) — ALL 5 items completed ✅
+  - Level-Based Personalization ✅ (DailyLesson, DeckSelect, Dashboard, courses.astro all read placement level)
+  - Podcast Comprehension Data ✅ (105 quiz questions across 35 episodes)
+  - Homepage → Placement Flow ✅ (level-specific gradient CTAs on result screen)
+  - SEO Fixes ✅ (all URLs corrected surge.sh → pages.dev, sitemap/robots.txt fixed)
+  - Game Verification ✅ (30/30 games reviewed, all working)
+- **Platform assessment:** FluentGe has 71 React components, 10 study modes, 14 pages, 112 total pages, 263KB bundle. ALL Tornike priorities from Mar 2 are DONE. Platform is MATURE. The engine works. Now filling STRUCTURAL GAPS.
+- **Gap #1: Course unit quizzes are fake.** The "ერთეულის ტესტი" links go to /games/ — a generic page. Users complete vocab+grammar+podcast in a unit and the "test" is a lie. Need REAL unit-specific quizzes that test the actual content from each unit. This is the #1 broken promise in the guided learning path.
+- **Gap #2: Grammar is one-and-done.** Users complete a lesson, get XP, and never review. No spaced review for grammar concepts. Duolingo resurfaces old lessons. We need a grammar review feature with SRS-like spacing.
+- **Gap #3: Premium has no payment.** The buy button doesn't actually work. Need Stripe/PayPal integration before we can make money.
+- **Gap #4: No vocabulary lists per podcast episode.** Quiz questions exist but no vocab highlights. Each episode should show 5-8 key words with Georgian translations for active vocabulary acquisition.
+- **Gap #5: Profile page is shallow.** Doesn't show enough progress data to make users feel proud.
+- **New sprint set:** "Unit Quizzes, Grammar Review & Conversion"
+  - #1: Unit-Specific Quizzes (UnitQuiz.tsx — 10 mixed questions per unit, pass/fail, XP)
+  - #2: Grammar Review System (spaced review of completed grammar lessons)
+  - #3: Podcast Vocabulary Lists (5-8 key words per episode)
+  - #4: Premium Payment Integration (Stripe/PayPal checkout)
+  - #5: Profile Page Enhancement (study heatmap, deeper stats)
+- **Technical specs written:** UnitQuiz.tsx (unit→deck mapping, 10 questions: 5 vocab + 3 grammar + 2 listening, pass ≥7/10), Grammar review (CTA on /grammar/, picks completed lessons, review mode), Podcast vocabulary data structure
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with today's sprint
+- Assigned: Cron 2 → design unit quiz UI + grammar review UI + podcast vocab UI + profile UI, Cron 3 → build UnitQuiz + grammar review + podcast vocab data, Cron 4 → profile enhancement + premium payment prep + polish, Cron 5 → QA
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Guided Learning & Content Depth" sprint (Mar 5) — ALL items completed ✅
   - Placement Test ✅ (15 questions A1→C1, level badge, recommendations, localStorage save)

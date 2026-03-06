@@ -101,152 +101,131 @@ See DESIGN.md for current design rules and standards.
 
 ## 🎯 Current Sprint (Mar 6 Night Cycle)
 
-### Theme: "Content Quality & User Journey Polish"
+### Theme: "Unit Quizzes, Grammar Review & Conversion"
 
-### CONTEXT: Previous Sprint Results (Mar 5 — "Guided Learning & Content Depth")
-- ✅ Placement Test — 15 questions A1→C1, saves level, recommendations
-- ✅ Podcast Player Upgrade — custom player, speed control, transcript, language toggle
-- ✅ Course Units — 6 units with completion tracking, expandable lessons
-- ✅ Interactive Grammar Exercises — Duolingo-style 3D buttons, feedback bar, result screen
-- ✅ Reverse Mode Enhancement — 3D flip animation, correct autoplay
-- ✅ Progress Chart — SVG line chart on dashboard
+### CONTEXT: Previous Sprint Results (Mar 6 Day — "Content Quality & User Journey Polish")
+- ✅ Level-Based Personalization — DailyLesson, DeckSelect, Dashboard, courses.astro all read placement level
+- ✅ Podcast Comprehension Data — 105 quiz questions across all 35 episodes
+- ✅ Homepage → Placement Flow — New user CTA → placement test, personalized result CTAs
+- ✅ SEO Fixes — All URLs corrected from surge.sh → pages.dev, sitemap/robots.txt fixed
+- ✅ Game Verification — All 30 games reviewed, no bugs
 
-### Strategic State (Mar 6, 1:00 AM):
-FluentGe has **71 React components, 10 study modes, 14 pages, placement test, course units, enhanced podcast player, cloud sync, full gamification, PWA, 260KB bundle**. 
+### Strategic State (Mar 6, 11:30 AM):
+FluentGe has **71 React components, 10 study modes, 14 pages, 112 total pages, placement test, level personalization, course units, podcast quizzes, cloud sync, full gamification, PWA, 263KB bundle**.
 
-**We've built the features AND the guided journey. Now we need to DEEPEN and POLISH.**
+**The platform is MATURE. Every Tornike priority from Mar 2 is DONE.** We beat Lingwing.com on features. The engine works. Now we need to fill the remaining STRUCTURAL GAPS that separate us from a truly professional learning app.
 
-The platform is wide but some areas are shallow. The course units link to pages but there's no actual UNIT QUIZ that tests cross-skill knowledge. The podcast episodes have a player but the comprehension quiz data isn't populated. The placement test works but doesn't actually personalize the experience yet (no deck filtering by level). 
+**Gap #1: Course Unit Quizzes are fake.**
+Course units have a "ერთეულის ტესტი" (unit quiz) link that goes to generic /games/. This is a broken promise. Users complete a unit's vocab + grammar + podcast and then the "test" just dumps them at a random games page. We need REAL unit quizzes that test the specific vocabulary and grammar from that unit. This is the #1 disconnect in the guided learning path.
 
-**The #1 priority: CONNECT THE DOTS.**
-- Placement test saves a level but nothing changes based on it
-- Course unit "quiz" links go to generic /games/ — need actual unit-specific quizzes
-- Podcast comprehension quizzes need real question data per episode
-- Recommended decks should filter by user's assessed level
+**Gap #2: Grammar is one-and-done.**
+Users complete a grammar lesson, get XP, and never review it. There's no spaced review for grammar concepts. Duolingo brings back old lessons periodically. We should add a "Grammar Review" feature — randomly resurface completed grammar exercises for review, with SRS-like spacing.
 
-**The #2 priority: CONTENT DEPTH FOR PODCASTS.**
-- Podcast player is beautiful but episodes are short basic dialogues
-- Need real comprehension questions per episode
-- Need vocabulary highlights per episode
-- This turns podcasts from a nice-to-have into a real learning pillar
+**Gap #3: Premium conversion flow is weak.**
+Premium page exists with pricing and FAQs, but there's no actual payment integration. The "buy" buttons don't work. Before we can make money, we need at least a Stripe checkout or a simple PayPal button. This is the revenue bottleneck.
 
-**The #3 priority: HOMEPAGE & CONVERSION OPTIMIZATION.**
-- Homepage is decent but doesn't convert well
-- Need clear "Start Learning" flow that goes: Homepage → Placement Test → Personalized Dashboard
-- Premium page needs social proof tied to real usage stats
-- Better mobile experience on landing page
+**Gap #4: No vocabulary per podcast episode.**
+Podcast quizzes are done (105 questions), but there's no vocabulary list per episode. Each episode should highlight 5-8 key words with Georgian translations. This turns podcasts from passive listening into active vocabulary acquisition.
 
-**The #4 priority: SEO & DISCOVERABILITY.**
-- 28 blog posts exist but are they optimized?
-- Need Georgian-language SEO targeting ("ინგლისური ონლაინ", "ინგლისურის სწავლა")
-- Meta tags, Open Graph, structured data
-- Blog should drive organic traffic
-
-**The #5 priority: BUG HUNTING & EDGE CASES.**
-- 71 components = lots of places for edge cases
-- Are all 30+ games actually working?
-- What happens with empty decks? Decks with <5 cards?
-- Error states for Firebase auth failures?
+**Gap #5: Profile page is shallow.**
+Profile exists but doesn't show much useful data. Should show: total words learned, grammar lessons completed, podcast episodes listened, games played, total study time, join date. Make users feel proud of their progress.
 
 ### Sprint Goals (ordered by priority)
 
-1. **🔴 Level-Based Personalization** — Make placement test results MATTER:
-   - Filter recommended decks by assessed level
-   - Course units: highlight user's suggested starting unit
-   - Dashboard greeting adapts to level ("beginner" vs "intermediate")
-   - Daily Lesson difficulty matches level (easier words for A1, harder for B2)
-   - Grammar page: highlight recommended starting lesson
-   - **Files:** Multiple — DeckSelect, Dashboard, DailyLesson, courses.astro
+1. **🔴 Unit-Specific Quizzes** — Real tests for each course unit:
+   - Each unit quiz tests vocabulary from that unit's decks + grammar from that unit's lesson
+   - 10-question mixed format: 5 vocab (EN→KA multiple choice) + 3 grammar (fill-in/choose) + 2 listening
+   - Pull actual cards from the unit's specific decks (greetings for Unit 1, food for Unit 2, etc.)
+   - Score screen with unit completion badge, XP award (+50 for passing)
+   - Update course unit completion tracking when quiz is passed (≥70%)
+   - **Files:** New `UnitQuiz.tsx` component, `courses.astro` (update quiz links)
 
-2. **🔴 Podcast Comprehension Data** — Make podcast quizzes real:
-   - Add 3-5 comprehension questions per episode (in podcast.astro data)
-   - Add vocabulary list per episode (key words with Georgian translations)
-   - Add timestamps to transcript lines for real sync
-   - Wire quiz completion to XP system via gamification bridge
-   - **File:** `website/src/pages/podcast.astro`
+2. **🔴 Grammar Review System** — Spaced review of completed grammar:
+   - Track which grammar lessons are completed (already in localStorage via gamification bridge)
+   - "Grammar Review" button on grammar page — picks 1-3 completed lessons, shows their exercises
+   - SRS-like spacing: recently completed lessons reviewed more often, older ones less
+   - Awards XP for review (+10 per correct)
+   - **Files:** `grammar/[slug].astro` (review mode), or new section on `/grammar/`
 
-3. **🟡 Homepage → Placement Flow** — Optimize new user journey:
-   - Main CTA "დაიწყე სწავლა" → goes to /placement/ for new users
-   - After placement → redirect to /flashcards/ with personalized recommendations
-   - Returning users CTA → Daily Lesson or due reviews
-   - Add "already know your level?" skip option
-   - **File:** `website/src/pages/index.astro`, `website/src/pages/placement.astro`
+3. **🟡 Podcast Vocabulary Lists** — Key words per episode:
+   - Add `vocabulary: [{word, georgian, pronunciation}]` data to each podcast episode
+   - Display vocabulary section below transcript (before quiz)
+   - Clickable words play pronunciation via speechSynthesis
+   - 5-8 words per episode, selected from transcript content
+   - **File:** `podcast.astro`
 
-4. **🟡 SEO Optimization** — Drive organic Georgian traffic:
-   - Audit all page meta tags and Open Graph data
-   - Add structured data (EducationalOrganization, Course)
-   - Optimize blog post titles/descriptions for Georgian search terms
-   - Add sitemap.xml if missing
-   - Verify robots.txt
-   - **File:** Layout.astro, blog posts
+4. **🟡 Premium Payment Integration** — Make the buy button work:
+   - Add Stripe Checkout or PayPal button to premium page
+   - Simple flow: click "Buy" → redirect to payment → return to /premium/ with success
+   - Store premium status in Firebase user profile
+   - Check premium status on page load, unlock premium decks/features
+   - **File:** `premium.astro`, Firebase auth
 
-5. **🟢 Game Verification** — Ensure all games work:
-   - Test each of the 30+ game components for basic functionality
-   - Check for crash scenarios (empty data, missing cards)
-   - Fix any broken games
-   - **File:** Various game components
+5. **🟢 Profile Page Enhancement** — Deeper progress stats:
+   - Total words mastered (from SRS data)
+   - Grammar lessons completed count
+   - Total study time (from dailyHistory)
+   - Achievement count
+   - Join date (from Firebase or first activity)
+   - Study calendar heatmap (GitHub-style green squares)
+   - **File:** `profile.astro`
 
 ### For Each Cron Tonight:
-- **Cron 1 (Strategy, 1:00AM):** ← THIS RUN. Sprint planning, strategic specs, context updates.
-- **Cron 2 (Design, 3:00AM):** Design level-personalization UI changes. Podcast quiz UI. Homepage CTA flow. SEO meta tags.
-- **Cron 3 (Features, 5:00AM):** Build level-based personalization across all components. Podcast comprehension data + quiz wiring.
-- **Cron 4 (Improvements, 7:00AM):** Homepage→Placement flow. SEO audit & fixes. Game verification.
-- **Cron 5 (QA, 9:00AM):** Full QA. Test placement→personalization flow. Podcast quizzes. All games.
+- **Cron 1 (Strategy, 11:30AM):** ← THIS RUN. Sprint planning, specs, context updates.
+- **Cron 2 (Design, 3:00AM):** Design UnitQuiz UI, grammar review section UI, podcast vocabulary UI, profile enhancements.
+- **Cron 3 (Features, 5:00AM):** Build UnitQuiz.tsx + grammar review system + podcast vocabulary data.
+- **Cron 4 (Improvements, 7:00AM):** Profile page enhancement + premium page prep + polish.
+- **Cron 5 (QA, 9:00AM):** Full QA — test unit quizzes, grammar review, all pages.
 
 ## Technical Specs
 
-### Level-Based Personalization (Cron 3)
+### Unit Quiz (Cron 2+3)
 ```
-// Read level from localStorage: 'fluentge-level' (set by placement test)
-// Possible values: 'A1', 'A2', 'B1', 'B2', null (not assessed)
+// UnitQuiz.tsx — new React component
+// Props: unitId (1-6), onComplete callback
 //
-// DeckSelect.tsx changes:
-//   - If level exists, show "Recommended for your level" section above all decks
-//   - A1: greetings, numbers, colors, family, food, animals
-//   - A2: daily-life, shopping, travel, emotions, weather
-//   - B1: business, technology, health, education, culture
-//   - B2: academic, idioms, advanced-grammar, abstract-concepts
-//   - "Change level" link → /placement/
+// Data structure per unit (in courses.astro or passed as props):
+// Unit 1: decks=['greetings', 'numbers'], grammar='to-be'
+// Unit 2: decks=['food', 'emotions'], grammar='present-simple'
+// Unit 3: decks=['travel', 'shopping'], grammar='prepositions-of-place'
+// Unit 4: decks=['business', 'technology'], grammar='past-simple'
+// Unit 5: decks=['health', 'education'], grammar='present-perfect'
+// Unit 6: decks=['idioms', 'academic'], grammar='conditionals'
 //
-// DailyLesson.tsx changes:
-//   - A1/A2: use simpler decks (greetings, food, family, numbers)
-//   - B1/B2: use harder decks (business, academic, idioms)
-//   - Currently uses only top-2000 — expand deck selection by level
+// Quiz format: 10 questions
+//   Q1-5: Vocab — show English word, pick correct Georgian from 4 options
+//          (load cards from unit's decks, pick 5 random, generate 3 wrong options from other cards)
+//   Q6-8: Grammar — fill-in-blank or multiple choice based on unit's grammar topic
+//          (hardcoded per unit, 3-5 questions pool, pick 3 random)
+//   Q9-10: Listening — hear English word, pick correct Georgian
+//          (use speechSynthesis, same as ListeningExercise pattern)
 //
-// Dashboard greeting:
-//   - "დონე: A1 — დამწყები" / "დონე: B2 — მაღალი" etc.
-//   - Shows in stats area
+// Scoring: ≥7/10 = pass → unit marked complete, +50 XP, badge
+//          <7/10 = "try again" with review suggestions
 //
-// courses.astro:
-//   - Highlight suggested starting unit based on level
-//   - A1 → Unit 1, A2 → Unit 2, B1 → Unit 3-4, B2 → Unit 5-6
-```
-
-### Podcast Comprehension Data (Cron 3)
-```
-// Each episode in podcast.astro needs:
-// 1. quiz: array of {question, options: [4], correct: 0-3, explanation}
-// 2. vocabulary: array of {word, georgian, pronunciation}
-// 3. transcript timestamps: each line gets {start, end} in seconds
-//
-// Quiz completion: call FluentGe.addXP(20) via gamification bridge
-// Show quiz after user reaches end of episode or clicks "Quiz" button
-// Vocabulary section below transcript — clickable words play audio
+// Integration with courses.astro:
+//   - Quiz link changes from /games/ to launching UnitQuiz in flashcard app
+//   - URL pattern: /flashcards/#unit-quiz/1 (unit number)
+//   - App.tsx: new screen 'unit-quiz' that renders UnitQuiz
 ```
 
-### SEO (Cron 4)
+### Grammar Review (Cron 3)
 ```
-// Layout.astro:
-//   - Ensure og:title, og:description, og:image on every page
-//   - Add EducationalOrganization structured data
-//   - Georgian hreflang tag
-//
-// Target keywords:
-//   - "ინგლისურის სწავლა" (learn English)
-//   - "ინგლისური ონლაინ" (English online)
-//   - "ინგლისური ქართულად" (English in Georgian)
-//   - "უფასოდ ინგლისური" (free English)
-//   - "ფლეშბარათები" (flashcards)
+// On /grammar/ page, add "გრამატიკის გამეორება" section at top
+// Reads localStorage 'fluentge-grammar-completed' array
+// If user has completed ≥3 lessons, show review CTA
+// Click → opens a completed lesson's exercises in "review mode"
+// Review mode: same exercises but shuffled, different feedback text
+// Awards +10 XP per correct (same as regular, via gamification bridge)
+// Tracks review date per lesson in localStorage
+```
+
+### Podcast Vocabulary (Cron 3)
+```
+// Each episode gets vocabulary: [{word: "airport", georgian: "აეროპორტი", pronunciation: "ˈeərpɔːrt"}]
+// Display: colored word pills below transcript, above quiz
+// Click word → speechSynthesis speaks it
+// 5-8 words per episode
 ```
 
 ## Notes for Crons

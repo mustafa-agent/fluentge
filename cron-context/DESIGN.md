@@ -63,11 +63,11 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 6 night) — Cron 2 Tasks:
-- [x] **🎯 Level Personalization UI** — "Recommended for your level" section on DeckSelect (reads fluentge-placement-level, shows 6 level-appropriate decks), level badge on Dashboard (gradient banner with level + retake link)
-- [x] **🎧 Podcast Quiz UI** — Comprehension quiz section below transcript for episodes 1-2 (3 questions each), A/B/C/D 3D option buttons, green/red feedback, score summary, +10 XP per correct via gamification bridge
-- [x] **🏠 Homepage CTA Redesign** — New user hero CTA → "🎯 გაიგე შენი დონე" (placement test) + "📚 პირდაპირ სწავლა" (flashcards)
-- [x] **🔍 SEO URL Fix** — Fixed ALL canonical/OG URLs from fluentge.surge.sh → fluentge.pages.dev (was broken across entire site!)
+### THIS SPRINT (Mar 6 day) — Cron 2 Tasks:
+- [ ] **📝 Unit Quiz UI** — 10-question mixed quiz (vocab MC + grammar fill-in + listening). Progress bar, question cards with A/B/C/D options, score screen with pass/fail badge, unit completion celebration. Reuse quiz-option 3D button pattern.
+- [ ] **🔄 Grammar Review UI** — "გრამატიკის გამეორება" section at top of /grammar/ page. Gradient CTA card when user has ≥3 completed lessons. Review mode indicator in lesson header.
+- [ ] **🎧 Podcast Vocabulary UI** — Colored word pills between transcript and quiz. Click-to-speak interaction. Georgian translation on hover/tap.
+- [ ] **👤 Profile Enhancement UI** — Study calendar heatmap (GitHub-style green squares, 90 days). Richer stat cards. Grammar/podcast progress sections.
 
 ### Backlog:
 - [ ] Consistent card borders across all components

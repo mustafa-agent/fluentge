@@ -2,12 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 6 night) — "Content Quality & User Journey Polish"
-- [x] **🎯 Level-Based Personalization** — Placement test results affect deck recs, daily lesson difficulty, course unit highlighting ← Cron 3
-- [x] **🎧 Podcast Comprehension Data** — Real quiz questions + vocabulary + timestamps per episode ← Cron 3
-- [ ] **🏠 Homepage → Placement Flow** — New user CTA → placement test → personalized start ← Cron 4
-- [ ] **🔍 SEO Optimization** — Meta tags, structured data, Georgian keywords, sitemap ← Cron 4
-- [ ] **🎮 Game Verification** — Test all 30+ games, fix broken ones ← Cron 4
+### 🎯 THIS SPRINT (Mar 6 day) — "Unit Quizzes, Grammar Review & Conversion"
+- [ ] **📝 Unit-Specific Quizzes** — Real 10-question tests per course unit (vocab+grammar+listening) ← Cron 3
+- [ ] **🔄 Grammar Review System** — Spaced review of completed grammar lessons ← Cron 3
+- [ ] **🎧 Podcast Vocabulary Lists** — 5-8 key words per episode with Georgian translations ← Cron 3
+- [ ] **💳 Premium Payment Integration** — Stripe/PayPal checkout on premium page ← Cron 4
+- [ ] **👤 Profile Page Enhancement** — Deeper stats, study calendar heatmap ← Cron 4
 
 ### Flashcard Improvements
 ### Dashboard
@@ -91,6 +91,12 @@
 - ✅ **📝 Interactive Grammar Exercises** — Duolingo-style 3D buttons, feedback bar
 - ✅ **🔄 Reverse Mode Enhancement** — 3D flip, correct autoplay
 - ✅ **📊 Progress Chart** — SVG line chart on dashboard
+
+### Backlog — HIGH
+- [ ] **Speaking practice** — Record and compare pronunciation (Web Speech API)
+- [ ] **Writing exercises** — Free-form writing prompts with AI feedback
+- [ ] **Longer podcast episodes** — 10-20 min episodes for commute listening
+- [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
 (none)

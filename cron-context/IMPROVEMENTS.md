@@ -55,12 +55,12 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 6 night) — "Content Quality & User Journey Polish"
-- [x] **🎯 Level personalization** — Placement results affect all recommendations ✅ Cron 3
-- [x] **🎧 Podcast quiz data** — Real comprehension questions per episode ✅ Cron 3
-- [x] **🏠 Homepage→Placement flow** — Optimize new user journey ✅ Cron 4 (personalized result CTAs)
-- [x] **🔍 SEO audit** — Sitemap/robots.txt domain fix, missing pages added ✅ Cron 2+4
-- [x] **🎮 Game verification** — All 30 games reviewed, no bugs found ✅ Cron 4
+## 🎯 THIS SPRINT (Mar 6 day) — "Unit Quizzes, Grammar Review & Conversion"
+- [ ] **📝 Unit quiz UI** — 10-question test with mixed formats, score screen ← Cron 2
+- [ ] **🔄 Grammar review section** — CTA on grammar page for reviewing completed lessons ← Cron 2
+- [ ] **🎧 Podcast vocab UI** — Word pills with click-to-speak ← Cron 2
+- [ ] **👤 Profile enhancement** — Study calendar heatmap, deeper stats ← Cron 4
+- [ ] **💳 Premium payment prep** — Payment button UI ← Cron 4
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)

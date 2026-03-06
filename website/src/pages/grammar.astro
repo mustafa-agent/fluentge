@@ -36,6 +36,19 @@ function isLessonFree(slug: string) {
 
   <section class="max-w-4xl mx-auto px-4 py-16">
 
+    <!-- Grammar Review CTA (shown when user has completed lessons) -->
+    <div id="grammar-review-cta" class="grammar-review-cta hidden" style="cursor:pointer;">
+      <div class="grammar-review-icon">🔄</div>
+      <div class="flex-1">
+        <div class="flex items-center gap-2 mb-0.5">
+          <span class="font-bold text-lg">გრამატიკის გამეორება</span>
+          <span class="grammar-review-count" id="grammar-review-count">0</span>
+        </div>
+        <p class="text-sm text-[#A0A09A]">გაიმეორე გავლილი გაკვეთილები — განამტკიცე ცოდნა</p>
+      </div>
+      <span class="text-2xl">→</span>
+    </div>
+
     {levels.map(level => (
       <div class="mb-12">
         <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
@@ -86,6 +99,27 @@ function isLessonFree(slug: string) {
   </section>
 
   <script>
+    // Grammar Review CTA
+    (function() {
+      try {
+        var completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}');
+        var slugs = Object.keys(completed);
+        if (slugs.length >= 3) {
+          var cta = document.getElementById('grammar-review-cta');
+          var count = document.getElementById('grammar-review-count');
+          if (cta) {
+            cta.classList.remove('hidden');
+            count.textContent = slugs.length;
+            // Pick a random completed lesson to review
+            cta.addEventListener('click', function() {
+              var randomSlug = slugs[Math.floor(Math.random() * slugs.length)];
+              window.location.href = '/grammar/' + randomSlug + '/?review=1';
+            });
+          }
+        }
+      } catch(e) {}
+    })();
+
     if (localStorage.getItem('fluentge-premium') === 'true') {
       document.querySelectorAll('.premium-grammar-card').forEach(card => {
         const url = card.getAttribute('data-lesson-url');

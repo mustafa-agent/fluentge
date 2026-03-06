@@ -133,6 +133,11 @@ import Layout from '../layouts/Layout.astro';
     :global(.light) .activity-item { border-bottom-color: #e5e7eb; }
     :global(.light) #user-display-name { color: #1a1a2e; }
     :global(.light) #user-display-email { color: #6b7280; }
+    :global(.light) .heatmap-cell { background: #e5e7eb; }
+    :global(.light) .heatmap-cell.l1 { background: rgba(34,197,94,0.15); }
+    :global(.light) .heatmap-cell.l2 { background: rgba(34,197,94,0.3); }
+    :global(.light) .heatmap-cell.l3 { background: rgba(34,197,94,0.5); }
+    :global(.light) .heatmap-cell.l4 { background: #22c55e; }
   </style>
 
   <!-- Hero with avatar -->
@@ -179,9 +184,53 @@ import Layout from '../layouts/Layout.astro';
     <div class="achievement-grid" id="achievement-grid"></div>
   </section>
 
+  <!-- Study Calendar Heatmap -->
+  <section class="max-w-3xl mx-auto px-4 mb-8">
+    <div class="section-title">📅 სწავლის კალენდარი <span class="text-xs text-[#6b7280] font-normal" id="heatmap-days-label">ბოლო 91 დღე</span></div>
+    <div class="stat-card" style="padding: 1rem 1.25rem;">
+      <div class="heatmap-grid" id="heatmap-grid"></div>
+      <div class="heatmap-legend">
+        <span>ნაკლები</span>
+        <div class="heatmap-legend-cell" style="background:#2e2e32;"></div>
+        <div class="heatmap-legend-cell heatmap-cell l1"></div>
+        <div class="heatmap-legend-cell heatmap-cell l2"></div>
+        <div class="heatmap-legend-cell heatmap-cell l3"></div>
+        <div class="heatmap-legend-cell heatmap-cell l4"></div>
+        <span>მეტი</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extended Stats -->
+  <section class="max-w-3xl mx-auto px-4 mb-8">
+    <div class="section-title">📊 დეტალური სტატისტიკა</div>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📖</div>
+        <div class="stat-value" id="stat-grammar">0</div>
+        <div class="stat-label">გრამატიკა</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🎮</div>
+        <div class="stat-value" id="stat-games">0</div>
+        <div class="stat-label">თამაშები</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⏱️</div>
+        <div class="stat-value" id="stat-time">0</div>
+        <div class="stat-label">წუთი</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🎯</div>
+        <div class="stat-value" id="stat-level">1</div>
+        <div class="stat-label">დონე</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Recent Activity -->
   <section class="max-w-3xl mx-auto px-4 mb-8">
-    <div class="section-title">📊 ბოლო აქტივობა</div>
+    <div class="section-title">🕒 ბოლო აქტივობა</div>
     <div class="stat-card" style="padding: 0.75rem 1.25rem;">
       <div id="activity-list">
         <p class="text-sm text-[#6b7280] py-4 text-center">ჯერ არ არის აქტივობა. დაიწყე სწავლა!</p>
@@ -274,6 +323,47 @@ import Layout from '../layouts/Layout.astro';
       var history = [];
       try { history = JSON.parse(localStorage.getItem('fluentge-streak-history') || '[]'); } catch(e) {}
       document.getElementById('stat-days').textContent = history.length;
+
+      // Extended stats
+      var grammarCompleted = {};
+      try { grammarCompleted = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
+      document.getElementById('stat-grammar').textContent = Object.keys(grammarCompleted).length;
+
+      var gamesPlayed = parseInt(localStorage.getItem('fluentge-games-played') || localStorage.getItem('gamesPlayed') || '0');
+      document.getElementById('stat-games').textContent = gamesPlayed;
+
+      var studyTime = parseInt(localStorage.getItem('fluentge-study-time') || '0');
+      document.getElementById('stat-time').textContent = Math.round(studyTime / 60);
+
+      var level = Math.floor(xp / 200) + 1;
+      document.getElementById('stat-level').textContent = level;
+
+      // Study Calendar Heatmap (last 91 days = 7 rows x 13 cols)
+      var dailyHistory = {};
+      try { dailyHistory = JSON.parse(localStorage.getItem('fluentge-daily-history') || '{}'); } catch(e) {}
+      var heatmapGrid = document.getElementById('heatmap-grid');
+      var today = new Date();
+      for (var d = 90; d >= 0; d--) {
+        var date = new Date(today);
+        date.setDate(today.getDate() - d);
+        var key = date.toISOString().slice(0,10);
+        var cell = document.createElement('div');
+        cell.className = 'heatmap-cell';
+        cell.title = key;
+        var dayData = dailyHistory[key];
+        if (dayData) {
+          var dayXP = typeof dayData === 'object' ? (dayData.xp || 0) : dayData;
+          if (dayXP >= 200) cell.classList.add('l4');
+          else if (dayXP >= 100) cell.classList.add('l3');
+          else if (dayXP >= 30) cell.classList.add('l2');
+          else if (dayXP > 0) cell.classList.add('l1');
+        }
+        // Also check streak history
+        if (history.includes(key) && !cell.classList.contains('l1') && !cell.classList.contains('l2') && !cell.classList.contains('l3') && !cell.classList.contains('l4')) {
+          cell.classList.add('l1');
+        }
+        heatmapGrid.appendChild(cell);
+      }
 
       // Achievements
       var badges = [
