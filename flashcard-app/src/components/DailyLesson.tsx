@@ -134,13 +134,55 @@ export default function DailyLesson({ onBack }: Props) {
     generateSession();
   }, []);
 
+  // Level-appropriate deck sources for each CEFR level
+  const LEVEL_DECKS: Record<string, string[]> = {
+    'A1': ['greetings-basics', 'numbers-time', 'colors-shapes', 'family-people', 'animals', 'body-parts'],
+    'A2': ['daily-routines', 'food-drink', 'shopping-money', 'travel-transport', 'emotions-personality', 'clothing-fashion'],
+    'B1': ['work-business', 'technology', 'health-body', 'education', 'entertainment', 'nature-weather'],
+    'B2': ['politics-society', 'science-math', 'law-crime', 'environment-ecology', 'finance-banking', 'slang-informal'],
+  };
+
   async function generateSession() {
     setLoading(true);
-    // Load top-2000 deck
-    const deck = await loadDeck('top-2000-words');
-    if (!deck) { setLoading(false); return; }
 
-    const cards = deck.cards;
+    // Determine user level and pick appropriate decks
+    const userLevel = localStorage.getItem('fluentge-placement-level') || '';
+    const levelSources = LEVEL_DECKS[userLevel];
+
+    // Load cards from level-appropriate decks + always include top-2000
+    let allLoadedCards: FlashCard[] = [];
+    let primaryDeckId = 'top-2000-words';
+
+    if (levelSources && levelSources.length > 0) {
+      // Pick 2 random level-appropriate decks to mix in
+      const picked = shuffleArray(levelSources).slice(0, 2);
+      const deckPromises = picked.map(s => loadDeck(s));
+      const decks = await Promise.all(deckPromises);
+      for (const d of decks) {
+        if (d) allLoadedCards.push(...d.cards);
+      }
+      // Also load top-2000 for SRS reviews
+      const top2000 = await loadDeck('top-2000-words');
+      if (top2000) allLoadedCards.push(...top2000.cards);
+      primaryDeckId = picked[0] || 'top-2000-words';
+    } else {
+      // No level set — use top-2000 only (default behavior)
+      const deck = await loadDeck('top-2000-words');
+      if (!deck) { setLoading(false); return; }
+      allLoadedCards = deck.cards;
+    }
+
+    if (allLoadedCards.length === 0) { setLoading(false); return; }
+
+    // Deduplicate by english word
+    const seen = new Set<string>();
+    const cards = allLoadedCards.filter(c => {
+      const key = c.english.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
     setAllCards(cards);
     const srsStore = getSRSStore('top-2000-words');
     const now = Date.now();
@@ -164,7 +206,7 @@ export default function DailyLesson({ onBack }: Props) {
     // Build 10 rounds: 3 vocab, 3 review (or vocab if no due), 2 sentence, 2 listening
     const sessionCards: Round[] = [];
 
-    // Rounds 1-3: New vocab
+    // Rounds 1-3: New vocab (prefer level-appropriate cards)
     for (let i = 0; i < 3; i++) {
       const card = shuffledNew[i] || shuffleArray(cards)[i];
       if (card) sessionCards.push({ type: 'vocab', card });

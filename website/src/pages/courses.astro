@@ -170,6 +170,39 @@ const units = [
         document.querySelectorAll('[class*="🔒"]').forEach(el => el.remove());
       }
 
+      // Level-based unit highlighting
+      var userLevel = localStorage.getItem('fluentge-placement-level');
+      if (userLevel) {
+        // Map level to suggested starting unit
+        var levelUnitMap = { 'A1': 1, 'A2': 2, 'B1': 3, 'B2': 5, 'C1': 6 };
+        var suggestedUnit = levelUnitMap[userLevel] || 1;
+        var unitCard = document.querySelector('[data-unit="' + suggestedUnit + '"]');
+        if (unitCard) {
+          // Add recommended badge
+          var header = unitCard.querySelector('.unit-toggle');
+          if (header) {
+            var badge = document.createElement('span');
+            badge.className = 'text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 border border-green-500/30 animate-pulse';
+            badge.textContent = '👈 შენი დონე — ' + userLevel;
+            var titleDiv = header.querySelector('.flex-1');
+            if (titleDiv) {
+              var nameRow = titleDiv.querySelector('.flex.items-center');
+              if (nameRow) nameRow.appendChild(badge);
+            }
+          }
+          // Add green border highlight
+          unitCard.style.borderColor = 'rgba(74, 222, 128, 0.4)';
+          unitCard.style.boxShadow = '0 0 20px rgba(74, 222, 128, 0.1)';
+          // Auto-expand this unit
+          var lessons = unitCard.querySelector('.unit-lessons');
+          var chevron = unitCard.querySelector('.unit-chevron');
+          if (lessons && lessons.classList.contains('hidden')) {
+            lessons.classList.remove('hidden');
+            if (chevron) chevron.style.transform = 'rotate(180deg)';
+          }
+        }
+      }
+
       // Completion tracking from localStorage
       var learnedGrammar = [];
       try { learnedGrammar = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]'); } catch(e) {}

@@ -91,7 +91,8 @@
 - ✅ **📊 Progress Chart** — SVG line chart on dashboard
 
 ## In Progress 🔄
-(none)
+- 🔄 **🎯 Level-Based Personalization** — DailyLesson uses level-appropriate decks + courses.astro highlights starting unit ← Cron 3
+- 🔄 **🎧 Podcast Comprehension Data** — Quiz questions for all 12 episodes ← Cron 3
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

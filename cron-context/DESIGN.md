@@ -64,10 +64,10 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 6 night) — Cron 2 Tasks:
-- [ ] **🎯 Level Personalization UI** — "Recommended for your level" section on DeckSelect, level badge on dashboard/navbar, course unit highlight based on assessed level
-- [ ] **🎧 Podcast Quiz UI** — Quiz section below transcript with multiple-choice cards, vocabulary highlight section, completion celebration
-- [ ] **🏠 Homepage CTA Redesign** — New user → placement test flow, returning user → daily lesson/reviews CTA, cleaner hero
-- [ ] **🔍 SEO Meta** — Open Graph images, structured data markup, Georgian keyword targeting
+- [x] **🎯 Level Personalization UI** — "Recommended for your level" section on DeckSelect (reads fluentge-placement-level, shows 6 level-appropriate decks), level badge on Dashboard (gradient banner with level + retake link)
+- [x] **🎧 Podcast Quiz UI** — Comprehension quiz section below transcript for episodes 1-2 (3 questions each), A/B/C/D 3D option buttons, green/red feedback, score summary, +10 XP per correct via gamification bridge
+- [x] **🏠 Homepage CTA Redesign** — New user hero CTA → "🎯 გაიგე შენი დონე" (placement test) + "📚 პირდაპირ სწავლა" (flashcards)
+- [x] **🔍 SEO URL Fix** — Fixed ALL canonical/OG URLs from fluentge.surge.sh → fluentge.pages.dev (was broken across entire site!)
 
 ### Backlog:
 - [ ] Consistent card borders across all components

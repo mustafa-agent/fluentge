@@ -44,6 +44,11 @@ const episodes = [
   { id: 3, title: "Job Interview", titleKa: "გასაუბრება სამსახურში", icon: "💼", duration: "1:48", file: "/podcast/episode3-job-interview.mp3", free: true,
     vocab: ["Resume", "Experience", "Salary", "Position", "Skills", "Hire", "Interview", "Qualifications"],
     vocabKa: ["რეზიუმე", "გამოცდილება", "ხელფასი", "პოზიცია", "უნარები", "დაქირავება", "გასაუბრება", "კვალიფიკაცია"],
+    quiz: [
+      { q: "რამდენი წლის გამოცდილება ჰქონდა კანდიდატს?", options: ["სამი წელი", "ხუთი წელი", "შვიდი წელი", "ათი წელი"], correct: 1 },
+      { q: "რა პოზიციაზე სურდა კანდიდატს მუშაობა?", options: ["დეველოპერი", "დიზაინერი", "მარკეტინგის მენეჯერი", "ბუღალტერი"], correct: 2 },
+      { q: "რა უნარი ახსენა კანდიდატმა?", options: ["მხატვრობა", "კომპიუტერებთან მუშაობა", "მძღოლობა", "მზარეულობა"], correct: 1 },
+    ],
     descriptionKa: "უპასუხე გავრცელებულ კითხვებს და ისაუბრე გამოცდილებაზე.",
     transcript: [
       { speaker: "Interviewer", en: "Good morning. Please have a seat. Tell me about yourself.", ka: "დილა მშვიდობისა. გთხოვთ დაჯდეთ. მიამბეთ თქვენს შესახებ." },
@@ -59,6 +64,11 @@ const episodes = [
   { id: 4, title: "At the Hotel", titleKa: "სასტუმროში", icon: "🏨", duration: "1:45", file: "/podcast/episode4-hotel.mp3", free: false,
     vocab: ["Reception", "Room key", "Check-out", "Single room", "Double room", "Breakfast", "Elevator", "Lobby"],
     vocabKa: ["რეცეფცია", "ოთახის გასაღები", "გასვლა", "ერთადგილიანი", "ორადგილიანი", "საუზმე", "ლიფტი", "ლობი"],
+    quiz: [
+      { q: "რამდენი ღამით სურდა სტუმარს ოთახი?", options: ["ერთი ღამე", "ორი ღამე", "სამი ღამე", "ხუთი ღამე"], correct: 2 },
+      { q: "რა დროს იმართებოდა საუზმე?", options: ["6-დან 9-მდე", "7-დან 10-მდე", "8-დან 11-მდე", "9-დან 12-მდე"], correct: 1 },
+      { q: "რომელ ოთახში იყო სტუმარი?", options: ["201", "304", "412", "505"], correct: 1 },
+    ],
     descriptionKa: "გაიარე რეგისტრაცია, იკითხე ოთახზე და მოითხოვე მომსახურება.",
     transcript: [
       { speaker: "Receptionist", en: "Welcome to Grand Hotel. How can I help you today?", ka: "კეთილი იყოს თქვენი მობრძანება გრანდ ჰოტელში. როგორ შემიძლია დაგეხმაროთ დღეს?" },
@@ -74,6 +84,11 @@ const episodes = [
   { id: 5, title: "Shopping", titleKa: "შოპინგი", icon: "🛍️", duration: "1:47", file: "/podcast/episode5-shopping.mp3", free: false,
     vocab: ["Discount", "Receipt", "Fitting room", "Size", "Cash", "Credit card", "Refund", "Exchange"],
     vocabKa: ["ფასდაკლება", "ქვითარი", "სამოსახადი", "ზომა", "ნაღდი", "საკრედიტო ბარათი", "თანხის დაბრუნება", "გაცვლა"],
+    quiz: [
+      { q: "რა ფასდაკლება იყო ნივთზე?", options: ["10%", "20%", "30%", "50%"], correct: 2 },
+      { q: "რამდენი დღე ჰქონდა მყიდველს გაცვლისთვის?", options: ["სამი დღე", "ხუთი დღე", "შვიდი დღე", "ათი დღე"], correct: 2 },
+      { q: "რა ზომა ეძებდა მყიდველი?", options: ["პატარა", "საშუალო", "დიდი", "ძალიან დიდი"], correct: 1 },
+    ],
     descriptionKa: "იყიდე ტანსაცმელი, იკითხე ზომებზე და გადაიხადე.",
     transcript: [
       { speaker: "Customer", en: "Excuse me, I'm looking for a blue dress, size medium.", ka: "ბოდიში, ვეძებ ლურჯ კაბას, საშუალო ზომის." },
@@ -89,6 +104,11 @@ const episodes = [
   { id: 6, title: "At the Doctor", titleKa: "ექიმთან", icon: "🏥", duration: "1:46", file: "/podcast/episode6-doctor.mp3", free: false,
     vocab: ["Appointment", "Symptoms", "Prescription", "Fever", "Headache", "Allergic", "Medicine", "Pharmacy"],
     vocabKa: ["ვიზიტი", "სიმპტომები", "რეცეპტი", "ცხელება", "თავის ტკივილი", "ალერგიული", "წამალი", "აფთიაქი"],
+    quiz: [
+      { q: "რა სიმპტომები ჰქონდა პაციენტს?", options: ["ხველა და სურდო", "თავის ტკივილი და ცხელება", "კუჭის ტკივილი", "ზურგის ტკივილი"], correct: 1 },
+      { q: "რამდენი დღის განმავლობაში ჰქონდა სიმპტომები?", options: ["ერთი დღე", "ორი დღე", "სამი დღე", "კვირა"], correct: 2 },
+      { q: "დღეში რამდენჯერ უნდა მიეღო წამალი?", options: ["ერთხელ", "ორჯერ", "სამჯერ", "ოთხჯერ"], correct: 1 },
+    ],
     descriptionKa: "აღწერე სიმპტომები, გაიგე რჩევები და მიიღე რეცეპტი.",
     transcript: [
       { speaker: "Doctor", en: "Good morning. What brings you here today?", ka: "დილა მშვიდობისა. რა მოგიყვანთ დღეს აქ?" },
@@ -104,6 +124,11 @@ const episodes = [
   { id: 7, title: "At the Airport", titleKa: "აეროპორტში (2)", icon: "🛫", duration: "1:45", file: "/podcast/episode7-airport.mp3", free: false,
     vocab: ["Boarding pass", "Gate", "Luggage", "Customs", "Departure", "Arrival", "Passport control", "Turbulence"],
     vocabKa: ["ჩასხდომის ბარათი", "კარიბჭე", "ბარგი", "საბაჟო", "გამგზავრება", "ჩამოსვლა", "პასპორტის კონტროლი", "ტურბულენცია"],
+    quiz: [
+      { q: "სად მიფრინავდა მგზავრი?", options: ["პარიზში", "ლონდონში", "ბერლინში", "რომში"], correct: 1 },
+      { q: "რა უნდა გაევლო კარიბჭემდე?", options: ["მხოლოდ უსაფრთხოება", "პასპორტის კონტროლი", "უსაფრთხოება და პასპორტის კონტროლი", "საბაჟო"], correct: 2 },
+      { q: "რა ჰკითხა მგზავრმა ფრენის შესახებ?", options: ["ფასის შესახებ", "ტურბულენციის შესახებ", "საკვების შესახებ", "ბარგის შესახებ"], correct: 1 },
+    ],
     descriptionKa: "ჩეკინი, უსაფრთხოების გავლა და ფრენის პროცედურები.",
     transcript: [
       { speaker: "Agent", en: "Hello. I'd like to check in for my flight to London, please.", ka: "გამარჯობა. მინდა ჩავრეგისტრირდე ლონდონის ფრენაზე, გთხოვთ." },
@@ -119,6 +144,11 @@ const episodes = [
   { id: 8, title: "Making Friends", titleKa: "მეგობრობა", icon: "🤝", duration: "1:45", file: "/podcast/episode8-making-friends.mp3", free: false,
     vocab: ["Introduce", "Hobby", "Personality", "Hang out", "Invite", "Nickname", "Similar", "Trust"],
     vocabKa: ["გაცნობა", "ჰობი", "პიროვნება", "გატარება", "მოწვევა", "მეტსახელი", "მსგავსი", "ნდობა"],
+    quiz: [
+      { q: "რა ჰობი ჰქონდა დავითს?", options: ["ფეხბურთი", "ლაშქრობა და კითხვა", "მუსიკა", "ხატვა"], correct: 1 },
+      { q: "რა მეტსახელი ჰქონდა სარას?", options: ["სალი", "სარი", "სარუ", "სესი"], correct: 1 },
+      { q: "სად მოიწვია დავითმა სარა?", options: ["კინოში", "ყავაზე", "პარკში", "სახლში"], correct: 1 },
+    ],
     descriptionKa: "გაიცანი ახალი ადამიანი და გაცვალეთ კონტაქტები.",
     transcript: [
       { speaker: "Sarah", en: "Hi! I'm Sarah. Let me introduce myself. I just moved here.", ka: "გამარჯობა! მე სარა ვარ. მოდით გავიცნოთ. ახლა გადმოვედი აქ." },
@@ -134,6 +164,11 @@ const episodes = [
   { id: 9, title: "Asking for Directions", titleKa: "მიმართულების კითხვა", icon: "🗺️", duration: "1:45", file: "/podcast/episode9-directions.mp3", free: false,
     vocab: ["Intersection", "Straight ahead", "Turn left", "Crosswalk", "Block", "Corner", "Opposite", "Landmark"],
     vocabKa: ["გზაჯვარედინი", "პირდაპირ", "მარცხნივ მოუხვიე", "საფეხმავლო გადასასვლელი", "კვარტალი", "კუთხე", "პირდაპირ", "ორიენტირი"],
+    quiz: [
+      { q: "რამდენი კვარტალი უნდა ევლო პირდაპირ?", options: ["ერთი", "ორი", "სამი", "ოთხი"], correct: 1 },
+      { q: "რა ორიენტირის პირდაპირ იყო მუზეუმი?", options: ["პარკი", "ეკლესია", "სკოლა", "ბიბლიოთეკა"], correct: 1 },
+      { q: "რამდენი წუთის სავალი იყო კუთხიდან?", options: ["სამი წუთი", "ხუთი წუთი", "ათი წუთი", "თხუთმეტი წუთი"], correct: 1 },
+    ],
     descriptionKa: "იკითხე და მიეცი მიმართულებები მუზეუმამდე.",
     transcript: [
       { speaker: "Tourist", en: "Excuse me. Can you tell me how to get to the city museum?", ka: "ბოდიში. შეგიძლიათ მითხრათ როგორ მივიდე ქალაქის მუზეუმში?" },
@@ -149,6 +184,11 @@ const episodes = [
   { id: 10, title: "Phone Conversations", titleKa: "სატელეფონო საუბარი", icon: "📞", duration: "1:45", file: "/podcast/episode10-phone.mp3", free: false,
     vocab: ["Voicemail", "Dial", "Hang up", "Signal", "Text message", "Missed call", "Speaker", "Ringtone"],
     vocabKa: ["ხმოვანი ფოსტა", "დარეკვა", "გათიშვა", "სიგნალი", "ტექსტური შეტყობინება", "გამოტოვებული ზარი", "დინამიკი", "ზარის მელოდია"],
+    quiz: [
+      { q: "რატომ ვერ დაუკავშირდა მრეკავი ოფისს?", options: ["ნომერი არასწორი იყო", "სიგნალი ცუდი იყო", "ტელეფონი გამორთული იყო", "დაკავებული იყო"], correct: 1 },
+      { q: "რა დღეს დანიშნა ვიზიტი?", options: ["ორშაბათი", "სამშაბათი", "ოთხშაბათი", "პარასკევი"], correct: 1 },
+      { q: "როგორ დაადასტურებდნენ ვიზიტს?", options: ["ელ-ფოსტით", "ტექსტური შეტყობინებით", "ტელეფონით", "წერილით"], correct: 1 },
+    ],
     descriptionKa: "დარეკე და დანიშნე შეხვედრა ტელეფონით.",
     transcript: [
       { speaker: "Receptionist", en: "Hello, Doctor Brown's office. How can I help you?", ka: "გამარჯობა, ექიმი ბრაუნის ოფისი. როგორ შემიძლია დაგეხმაროთ?" },
@@ -164,6 +204,11 @@ const episodes = [
   { id: 11, title: "At the Bank", titleKa: "ბანკში", icon: "🏦", duration: "1:45", file: "/podcast/episode11-bank.mp3", free: false,
     vocab: ["Account", "Deposit", "Withdrawal", "Transfer", "Balance", "Loan", "Interest", "Statement"],
     vocabKa: ["ანგარიში", "შენატანი", "გატანა", "გადარიცხვა", "ბალანსი", "სესხი", "პროცენტი", "ამონაწერი"],
+    quiz: [
+      { q: "რა ტიპის ანგარიშის გახსნა სურდა კლიენტს?", options: ["მიმდინარე", "შემნახველი", "სადეპოზიტო", "ბიზნეს"], correct: 1 },
+      { q: "რა იყო საპროცენტო განაკვეთი?", options: ["1.5%", "2.0%", "2.5%", "3.0%"], correct: 2 },
+      { q: "რა იყო მინიმალური შენატანი?", options: ["$20", "$30", "$50", "$100"], correct: 2 },
+    ],
     descriptionKa: "გახსენი საბანკო ანგარიში და ისწავლე საბანკო ტერმინები.",
     transcript: [
       { speaker: "Customer", en: "Good morning. I'd like to open a new bank account, please.", ka: "დილა მშვიდობისა. მინდა ახალი საბანკო ანგარიში გავხსნა, გთხოვთ." },
@@ -179,6 +224,11 @@ const episodes = [
   { id: 12, title: "Renting an Apartment", titleKa: "ბინის დაქირავება", icon: "🏠", duration: "1:45", file: "/podcast/episode12-apartment.mp3", free: false,
     vocab: ["Lease", "Tenant", "Landlord", "Deposit", "Utilities", "Furnished", "Spacious", "Neighborhood"],
     vocabKa: ["იჯარა", "მოიჯარე", "მეპატრონე", "გირაო", "კომუნალური", "გარემონტებული", "ფართო", "სამეზობლო"],
+    quiz: [
+      { q: "იყო თუ არა ბინა გარემონტებული?", options: ["არა", "ნაწილობრივ", "დიახ, სრულად", "მხოლოდ სამზარეულო"], correct: 2 },
+      { q: "რა იყო გირაოს ოდენობა?", options: ["ნახევარი თვის ქირა", "ერთი თვის ქირა", "ორი თვის ქირა", "სამი თვის ქირა"], correct: 1 },
+      { q: "რამდენი თვით იყო იჯარის ვადა?", options: ["ექვსი", "თორმეტი", "ოცოთხი", "ოცდაექვსი"], correct: 1 },
+    ],
     descriptionKa: "ნახე ბინა და მოილაპარაკე ქირაზე.",
     transcript: [
       { speaker: "Tenant", en: "Hi, I'm here to see the apartment. Are you the landlord?", ka: "გამარჯობა, ბინის სანახავად მოვედი. თქვენ ხართ მეპატრონე?" },
@@ -194,6 +244,11 @@ const episodes = [
   { id: 13, title: "At the Gym", titleKa: "სპორტდარბაზში", icon: "💪", duration: "1:45", file: "/podcast/episode13-gym.mp3", free: false,
     vocab: ["Treadmill", "Weights", "Stretch", "Membership", "Trainer", "Workout", "Warm up", "Cool down"],
     vocabKa: ["სარბენი ბილიკი", "საწონები", "გაწელვა", "აბონემენტი", "მწვრთნელი", "ვარჯიში", "გახურება", "გაგრილება"],
+    quiz: [
+      { q: "რამდენ წუთს ხურდებოდნენ სარბენ ბილიკზე?", options: ["ხუთი წუთი", "ათი წუთი", "თხუთმეტი წუთი", "ოცი წუთი"], correct: 1 },
+      { q: "რამდენი იყო თვიური აბონემენტი?", options: ["$20", "$30", "$40", "$50"], correct: 2 },
+      { q: "რა შედიოდა აბონემენტში უფასოდ?", options: ["საუზმე", "ერთი სესია მწვრთნელთან", "აუზზე წვდომა", "საუნა"], correct: 1 },
+    ],
     descriptionKa: "დარეგისტრირდი სპორტდარბაზში და ისწავლე სავარჯიშო ტერმინები.",
     transcript: [
       { speaker: "Customer", en: "Hi, I'd like to sign up for a gym membership.", ka: "გამარჯობა, მინდა სპორტდარბაზის აბონემენტზე გავრეგისტრირდე." },
@@ -209,6 +264,11 @@ const episodes = [
   { id: 14, title: "Emergency Situations", titleKa: "გადაუდებელი სიტუაციები", icon: "🚨", duration: "1:45", file: "/podcast/episode14-emergency.mp3", free: false,
     vocab: ["Ambulance", "Fire truck", "Accident", "Injury", "First aid", "Emergency room", "Bandage", "911"],
     vocabKa: ["სასწრაფო", "სახანძრო", "ავარია", "დაზიანება", "პირველადი დახმარება", "გადაუდებელი", "ბინტი", "911"],
+    quiz: [
+      { q: "რა მოხდა მთავარ ქუჩაზე?", options: ["ხანძარი", "მანქანის ავარია", "ქურდობა", "წყალდიდობა"], correct: 1 },
+      { q: "რა პირველადი დახმარება გაუწია მრეკავმა?", options: ["მოტეხილი ფეხის ფიქსაცია", "ბინტი დაადო", "ხელოვნური სუნთქვა", "წყალი მისცა"], correct: 1 },
+      { q: "ვინ გადაწყვეტდა საავადმყოფოში წაყვანას?", options: ["მრეკავი", "ოპერატორი", "ფელდშრები", "პოლიცია"], correct: 2 },
+    ],
     descriptionKa: "დარეკე დახმარებისთვის ავარიის შემდეგ.",
     transcript: [
       { speaker: "Operator", en: "911, what's your emergency?", ka: "911, რა არის თქვენი გადაუდებელი სიტუაცია?" },
@@ -224,6 +284,11 @@ const episodes = [
   { id: 15, title: "At the Supermarket", titleKa: "სუპერმარკეტში", icon: "🛒", duration: "1:45", file: "/podcast/episode15-supermarket.mp3", free: false,
     vocab: ["Aisle", "Checkout", "Basket", "Organic", "Frozen", "Canned", "Expiration date", "Coupon"],
     vocabKa: ["რიგი", "სალარო", "კალათა", "ორგანული", "გაყინული", "კონსერვი", "ვარგისიანობა", "კუპონი"],
+    quiz: [
+      { q: "რომელ რიგში იყო გაყინული საკვები?", options: ["მეხუთე", "მეექვსე", "მეშვიდე", "მერვე"], correct: 2 },
+      { q: "რა არ იყო ხილზე?", options: ["ფასი", "ვარგისიანობის თარიღი", "კუპონი", "ეტიკეტი"], correct: 1 },
+      { q: "სად იხდიდა მყიდველი?", options: ["ონლაინ", "თვითმომსახურების სალაროსთან", "სალაროსთან", "აპლიკაციით"], correct: 2 },
+    ],
     descriptionKa: "იპოვე პროდუქტები და გადაიხადე სალაროსთან.",
     transcript: [
       { speaker: "Customer", en: "Excuse me, where can I find the frozen food aisle?", ka: "ბოდიში, სად შემიძლია გაყინული საკვების რიგის პოვნა?" },
@@ -239,6 +304,11 @@ const episodes = [
   { id: 16, title: "Making Plans", titleKa: "გეგმების შედგენა", icon: "📅", duration: "1:45", file: "/podcast/episode16-plans.mp3", free: false,
     vocab: ["Schedule", "Available", "Cancel", "Postpone", "Confirm", "Flexible", "Suggest", "Definitely"],
     vocabKa: ["განრიგი", "ხელმისაწვდომი", "გაუქმება", "გადავადება", "დადასტურება", "მოქნილი", "შეთავაზება", "აუცილებლად"],
+    quiz: [
+      { q: "რა აქტივობა შესთავაზა მეგობარმა?", options: ["ცურვა", "ლაშქრობა", "კინოში წასვლა", "საკონცერტო"], correct: 1 },
+      { q: "რა დროს უნდა დაეწყოთ?", options: ["7 საათზე", "8 საათზე", "9 საათზე", "10 საათზე"], correct: 1 },
+      { q: "როდის დაადასტურებდა გეგმებს?", options: ["ხვალ", "პარასკევს", "შაბათს", "კვირას"], correct: 1 },
+    ],
     descriptionKa: "დაგეგმე შაბათ-კვირის მოგზაურობა მეგობართან.",
     transcript: [
       { speaker: "Friend A", en: "Are you available this weekend? I want to make some plans.", ka: "ამ შაბათკვირას ხელმისაწვდომი ხარ? მინდა რამდენიმე გეგმა შევადგინო." },
@@ -254,6 +324,11 @@ const episodes = [
   { id: 17, title: "At School", titleKa: "სკოლაში", icon: "🎓", duration: "1:45", file: "/podcast/episode17-school.mp3", free: false,
     vocab: ["Semester", "Lecture", "Assignment", "Grade", "Professor", "Deadline", "Scholarship", "Campus"],
     vocabKa: ["სემესტრი", "ლექცია", "დავალება", "ნიშანი", "პროფესორი", "ვადა", "სტიპენდია", "კამპუსი"],
+    quiz: [
+      { q: "რა იყო ჩაბარების ვადა?", options: ["ამ ორშაბათს", "შემდეგი პარასკევი", "ამ კვირაში", "ორი კვირის შემდეგ"], correct: 1 },
+      { q: "რა ნიშანი სჭირდებოდა სტიპენდიისთვის?", options: ["B+", "A-", "A", "A+"], correct: 1 },
+      { q: "სურდა თუ არა სტუდენტს კამპუსში დარჩენა?", options: ["არა", "არ იცოდა", "დიახ, აუცილებლად", "მხოლოდ ერთი წლით"], correct: 2 },
+    ],
     descriptionKa: "ისაუბრე გაკვეთილებზე და საშინაო დავალებაზე.",
     transcript: [
       { speaker: "Student", en: "Professor, I have questions about this semester's assignments.", ka: "პროფესორო, მაქვს კითხვები ამ სემესტრის დავალებების შესახებ." },
@@ -269,6 +344,11 @@ const episodes = [
   { id: 18, title: "Cooking Together", titleKa: "ერთად საჭმლის მომზადება", icon: "👩‍🍳", duration: "1:45", file: "/podcast/episode18-cooking.mp3", free: false,
     vocab: ["Recipe", "Ingredient", "Stir", "Chop", "Boil", "Oven", "Tablespoon", "Seasoning"],
     vocabKa: ["რეცეპტი", "ინგრედიენტი", "მორევა", "დაჭრა", "დუღილი", "ღუმელი", "სუფრის კოვზი", "სანელებელი"],
+    quiz: [
+      { q: "რა კერძს ამზადებდნენ?", options: ["სუპს", "მაკარონს", "სტეიკს", "სალათს"], correct: 1 },
+      { q: "რა ტემპერატურაზე გააცხელეს ღუმელი?", options: ["300°", "325°", "350°", "375°"], correct: 2 },
+      { q: "რამდენი წუთი უნდა მომზადებულიყო ღუმელში?", options: ["10 წუთი", "15 წუთი", "20 წუთი", "30 წუთი"], correct: 2 },
+    ],
     descriptionKa: "მიჰყევი რეცეპტს და მოამზადე კერძი.",
     transcript: [
       { speaker: "Cook A", en: "Let's cook together! Do you have the recipe for pasta?", ka: "მოდით ერთად მოვამზადოთ საჭმელი! გაქვთ მაკარონის რეცეპტი?" },
@@ -284,6 +364,11 @@ const episodes = [
   { id: 19, title: "At the Mechanic", titleKa: "ავტომექანიკოსთან", icon: "🔧", duration: "1:45", file: "/podcast/episode19-mechanic.mp3", free: false,
     vocab: ["Engine", "Brake", "Tire", "Oil change", "Inspection", "Repair", "Estimate", "Warranty"],
     vocabKa: ["ძრავა", "მუხრუჭი", "საბურავი", "ზეთის შეცვლა", "შემოწმება", "შეკეთება", "შეფასება", "გარანტია"],
+    quiz: [
+      { q: "რა პრობლემა ჰქონდა მანქანას?", options: ["არ ინთებოდა", "უცნაური ხმაური", "ფარები არ მუშაობდა", "მუხრუჭი ჭრიალებდა"], correct: 1 },
+      { q: "ბოლოს როდის შეუცვალეს ზეთი?", options: ["3 თვის წინ", "6 თვის წინ", "1 წლის წინ", "არასოდეს"], correct: 1 },
+      { q: "რამდენ ხანს გასტანდა შეკეთება?", options: ["1 საათი", "2 საათი", "3 საათი", "ნახევარი დღე"], correct: 1 },
+    ],
     descriptionKa: "შეამოწმე და შეაკეთე მანქანა.",
     transcript: [
       { speaker: "Customer", en: "Hi, my car is making a strange noise. Can you take a look?", ka: "გამარჯობა, ჩემი მანქანა უცნაური ხმაურს გამოსცემს. შეგიძლიათ შეხედოთ?" },
@@ -299,6 +384,11 @@ const episodes = [
   { id: 20, title: "Birthday Party", titleKa: "დაბადების დღის წვეულება", icon: "🎂", duration: "1:45", file: "/podcast/episode20-birthday.mp3", free: false,
     vocab: ["Celebrate", "Surprise", "Candle", "Wish", "Gift", "Decoration", "Invitation", "Toast"],
     vocabKa: ["აღნიშვნა", "სიურპრიზი", "სანთელი", "სურვილი", "საჩუქარი", "დეკორაცია", "მოწვევა", "სადღეგრძელო"],
+    quiz: [
+      { q: "ვისი დაბადების დღე იყო?", options: ["ლიზას", "ტომის", "სარას", "დავითის"], correct: 2 },
+      { q: "რა იყო საჩუქარი?", options: ["ყვავილები", "სიურპრიზი", "წიგნი", "ტანსაცმელი"], correct: 1 },
+      { q: "რა უნდა გაეკეთებინათ ნამცხვარზე?", options: ["ჩაეწერათ სახელი", "სანთლები აენთოთ", "დაეხატათ", "მოერთოთ"], correct: 1 },
+    ],
     descriptionKa: "დაგეგმე და მონაწილეობა მიიღე დაბადების დღის წვეულებაში.",
     transcript: [
       { speaker: "Friend A", en: "Hey! Are you coming to Sarah's birthday party tonight?", ka: "ეი! მოდიხარ სარას დაბადების დღის წვეულებაზე ღამით?" },
@@ -314,6 +404,11 @@ const episodes = [
   { id: 21, title: "Travel Stories", titleKa: "მოგზაურობის ამბები", icon: "🌍", duration: "1:45", file: "/podcast/episode21-travel.mp3", free: false,
     vocab: ["Adventure", "Souvenir", "Backpack", "Culture", "Tourist", "Guide", "Itinerary", "Memorable"],
     vocabKa: ["თავგადასავალი", "სუვენირი", "ზურგჩანთა", "კულტურა", "ტურისტი", "გიდი", "მარშრუტი", "დასამახსოვრებელი"],
+    quiz: [
+      { q: "სად იმოგზაურა?", options: ["ჩინეთში", "იაპონიაში", "ტაილანდში", "კორეაში"], correct: 1 },
+      { q: "რა ავავსო ზურგჩანთა?", options: ["წიგნებით", "საჩუქრებით", "საკვებით", "ტანსაცმლით"], correct: 1 },
+      { q: "რა მოეწონა ყველაზე მეტად?", options: ["სასტუმრო", "საკვები და ტაძრები", "ამინდი", "ხალხი"], correct: 1 },
+    ],
     descriptionKa: "გაუზიარე სხვებს მოგზაურობის გამოცდილება.",
     transcript: [
       { speaker: "Traveler A", en: "I just came back from an amazing adventure in Japan.", ka: "იაპონიაში საოცარი თავგადასავლიდან ჩამომივედი." },
@@ -329,6 +424,11 @@ const episodes = [
   { id: 22, title: "At the Pharmacy", titleKa: "აფთიაქში", icon: "💊", duration: "1:45", file: "/podcast/episode22-at-the-pharmacy.mp3", free: false,
     vocab: ["Prescription", "Medicine", "Tablets", "Side effects", "Instructions", "Dosage", "Pharmacist", "Over-the-counter"],
     vocabKa: ["რეცეპტი", "წამალი", "აბები", "გვერდითი მოვლენები", "ინსტრუქცია", "დოზა", "ფარმაცევტი", "უფასო გაცემა"],
+    quiz: [
+      { q: "რამდენი აბი უნდა მიეღო დღეში?", options: ["ერთი ორჯერ", "ორი ორჯერ", "ერთი სამჯერ", "ორი სამჯერ"], correct: 1 },
+      { q: "რა გვერდითი მოვლენა შეიძლებოდა ჰქონოდა?", options: ["თავის ტკივილი", "ძილიანობა", "გულისრევა", "ალერგია"], correct: 1 },
+      { q: "რა არ უნდა გაეკეთებინა წამლის მიღების შემდეგ?", options: ["ჭამა", "მანქანის ტარება", "სარბენ ბილიკზე ვარჯიში", "წყლის დალევა"], correct: 1 },
+    ],
     descriptionKa: "იყიდე წამალი, იკითხე დოზის შესახებ და მიჰყევი ინსტრუქციას.",
     transcript: [
       { speaker: "Customer", en: "Good morning. I have a prescription from my doctor. Can you fill it?", ka: "დილა მშვიდობისა. მაქვს რეცეპტი ექიმისგან. შეგიძლიათ შეავსოთ?" },
@@ -344,6 +444,11 @@ const episodes = [
   { id: 23, title: "First Day at Work", titleKa: "პირველი სამუშაო დღე", icon: "👔", duration: "1:45", file: "/podcast/episode23-first-day-work.mp3", free: false,
     vocab: ["Orientation", "Colleague", "Supervisor", "Responsibilities", "Training", "Workplace", "Schedule", "Tasks"],
     vocabKa: ["ორიენტაცია", "კოლეგა", "ზედამხედველი", "პასუხისმგებლობები", "ტრენინგი", "სამუშაო ადგილი", "განრიგი", "ამოცანები"],
+    quiz: [
+      { q: "რა ერქვა ზედამხედველს?", options: ["ტომი", "ჯონი", "დევიდი", "მარკი"], correct: 1 },
+      { q: "რა დროს იწყებდა სამუშაო დღეს?", options: ["8 საათზე", "9 საათზე", "10 საათზე", "11 საათზე"], correct: 1 },
+      { q: "რამდენი ხანი გაგრძელდებოდა ტრენინგი?", options: ["ერთი კვირა", "ორი კვირა", "ერთი თვე", "სამი დღე"], correct: 1 },
+    ],
     descriptionKa: "ისწავლე სამუშაო მოვალეობები, გაიცანი კოლეგები და მიიღე ინსტრუქციები.",
     transcript: [
       { speaker: "Supervisor", en: "Welcome to your first day! I'm John, your supervisor. Let's start the orientation.", ka: "კეთილი იყოს თქვენი მობრძანება პირველ დღეს! მე ჯონი ვარ, თქვენი ზედამხედველი. დავიწყოთ ორიენტაცია." },
@@ -359,6 +464,11 @@ const episodes = [
   { id: 24, title: "At the Post Office", titleKa: "ფოსტაზე", icon: "📮", duration: "1:45", file: "/podcast/episode24-post-office.mp3", free: false,
     vocab: ["Package", "Envelope", "Postage", "Delivery", "Address", "Stamp", "Tracking", "Express"],
     vocabKa: ["ამანათი", "კონვერტი", "საფოსტო მოსაკრებელი", "მიწოდება", "მისამართი", "მარკა", "თვალთვალი", "სწრაფი"],
+    quiz: [
+      { q: "სად აგზავნიდა ამანათს?", options: ["ინგლისში", "საფრანგეთში", "გერმანიაში", "იტალიაში"], correct: 2 },
+      { q: "რამდენი ღირდა ჩვეულებრივი ფოსტა?", options: ["$8", "$10", "$12", "$15"], correct: 2 },
+      { q: "რამდენი ექსტრა ღირდა თვალთვალი?", options: ["$2", "$3", "$4", "$5"], correct: 1 },
+    ],
     descriptionKa: "გაგზავნე ამანათი, იყიდე მარკები და იკითხე მიწოდების შესახებ.",
     transcript: [
       { speaker: "Customer", en: "I need to send this package to Germany. What's the postage cost?", ka: "ამ ამანათის გერმანიაში გაგზავნა მჭირდება. რა არის საფოსტო მოსაკრებელი?" },
@@ -374,6 +484,11 @@ const episodes = [
   { id: 25, title: "Car Rental", titleKa: "მანქანის დაქირავება", icon: "🚗", duration: "1:45", file: "/podcast/episode25-car-rental.mp3", free: false,
     vocab: ["Rental", "License", "Insurance", "Mileage", "Fuel", "Automatic", "Manual", "Deposit"],
     vocabKa: ["დაქირავება", "მართვის მოწმობა", "დაზღვევა", "გარბენი", "საწვავი", "ავტომატი", "მექანიკური", "დეპოზიტი"],
+    quiz: [
+      { q: "რამდენი დღით ქირავდებოდა მანქანა?", options: ["ორი", "სამი", "ოთხი", "ხუთი"], correct: 1 },
+      { q: "რა იყო დეპოზიტი?", options: ["$100", "$150", "$200", "$250"], correct: 2 },
+      { q: "რა არ შედიოდა ფასში?", options: ["დაზღვევა", "გარბენი", "საწვავი", "გასაღები"], correct: 2 },
+    ],
     descriptionKa: "იქირავე მანქანა, შეამოწმე დაზღვევა და ისწავლე პირობები.",
     transcript: [
       { speaker: "Customer", en: "I'd like to rent a car for three days. Do you have automatic cars?", ka: "მინდა მანქანა სამი დღით ვიქირავო. გაქვთ ავტომატური მანქანები?" },
@@ -389,6 +504,11 @@ const episodes = [
   { id: 26, title: "Meeting Neighbors", titleKa: "მეზობლებთან გაცნობა", icon: "🏘️", duration: "1:45", file: "/podcast/episode26-meeting-neighbors.mp3", free: false,
     vocab: ["Neighbor", "Introduce", "Community", "Friendly", "Apartment", "Building", "Welcome", "Helpful"],
     vocabKa: ["მეზობელი", "გაცნობა", "თემი", "მეგობრული", "ბინა", "შენობა", "კეთილი იყოს მობრძანება", "მსახური"],
+    quiz: [
+      { q: "რომელ ბინაში გადავიდა ახალი მეზობელი?", options: ["2A", "3A", "3B", "4B"], correct: 2 },
+      { q: "რა ჯგუფი ჰქონდათ შენობის მცხოვრებლებს?", options: ["Facebook", "WhatsApp", "Telegram", "Viber"], correct: 1 },
+      { q: "რა ერქვა ახალ მეზობელს?", options: ["სარა", "ლიზა", "ანა", "მარია"], correct: 1 },
+    ],
     descriptionKa: "გაიცანი ახალი მეზობლები, ისაუბრე საბინაო თემზე და დაამყარე ურთიერთობები.",
     transcript: [
       { speaker: "New Resident", en: "Hello! I just moved into apartment 3B. I'm Lisa, your new neighbor.", ka: "გამარჯობა! ახლა გადმოვედი 3B ბინაში. მე ლიზა ვარ, თქვენი ახალი მეზობელი." },
@@ -404,6 +524,11 @@ const episodes = [
   { id: 27, title: "At the Dentist", titleKa: "სტომატოლოგთან", icon: "🦷", duration: "7:08", file: "/podcast/episode27-at-the-dentist.mp3", free: false,
     vocab: ["Appointment", "Toothache", "Filling", "Cleaning", "Check-up", "X-ray", "Cavity", "Treatment"],
     vocabKa: ["ვიზიტი", "კბილის ტკივილი", "პლომბა", "გაწმენდა", "შემოწმება", "რენტგენი", "ღრუ", "მკურნალობა"],
+    quiz: [
+      { q: "როდის დაიწყო კბილის ტკივილი?", options: ["გუშინ", "ორი დღის წინ", "სამი დღის წინ", "კვირის წინ"], correct: 2 },
+      { q: "რა პრობლემა აღმოაჩინა სტომატოლოგმა?", options: ["ბზარი", "ღრუ", "ღრძილის ანთება", "არაფერი"], correct: 1 },
+      { q: "რა მკურნალობა სჭირდებოდა?", options: ["მხოლოდ გაწმენდა", "პლომბა და რენტგენი", "კბილის ამოღება", "ანტიბიოტიკი"], correct: 1 },
+    ],
     descriptionKa: "განიკურნე კბილები, გაიწმინდე და მიიღე რჩევები სტომატოლოგისგან.",
     transcript: [
       { speaker: "Patient", en: "Good morning. I have a terrible toothache. Can you help me?", ka: "დილა მშვიდობისა. მაქვს საშინელი კბილის ტკივილი. შეგიძლიათ დამეხმაროთ?" },
@@ -419,6 +544,11 @@ const episodes = [
   { id: 28, title: "Public Transport", titleKa: "საზოგადოებრივი ტრანსპორტი", icon: "🚌", duration: "7:28", file: "/podcast/episode28-public-transport.mp3", free: false,
     vocab: ["Bus", "Subway", "Ticket", "Transfer", "Schedule", "Route", "Platform", "Conductor"],
     vocabKa: ["ავტობუსი", "მეტრო", "ბილეთი", "გადასვლა", "განრიგი", "მარშრუტი", "პლატფორმა", "კონდუქტორი"],
+    quiz: [
+      { q: "რომელი ავტობუსი მიდიოდა ცენტრში?", options: ["10 ან 12", "15 ან 22", "20 ან 25", "30 ან 35"], correct: 1 },
+      { q: "ყოველ რამდენ წუთში მიდიოდა მატარებელი?", options: ["5 წუთი", "10 წუთი", "15 წუთი", "20 წუთი"], correct: 1 },
+      { q: "რომელი პლატფორმა სჭირდებოდა აეროპორტისთვის?", options: ["A", "B", "C", "D"], correct: 1 },
+    ],
     descriptionKa: "იყიდე ბილეთი, იპოვე სწორი მარშრუტი და გამოიყენე საზოგადოებრივი ტრანსპორტი.",
     transcript: [
       { speaker: "Tourist", en: "Excuse me, which bus goes to downtown? I need to buy a ticket.", ka: "ბოდიში, რომელი ავტობუსი მიდის ცენტრში? ბილეთის ყიდვა მჭირდება." },
@@ -434,6 +564,11 @@ const episodes = [
   { id: 29, title: "Ordering Online", titleKa: "ონლაინ შეკვეთა", icon: "💻", duration: "8:44", file: "/podcast/episode29-ordering-online.mp3", free: false,
     vocab: ["Website", "Cart", "Checkout", "Payment", "Shipping", "Delivery", "Order", "Confirmation"],
     vocabKa: ["ვებსაიტი", "კალათა", "გადახდა", "გადასახდელი", "მიწოდება", "მიყვანა", "შეკვეთა", "დადასტურება"],
+    quiz: [
+      { q: "რამდენ დღეში მოდიოდა სწრაფი მიწოდება?", options: ["ერთი დღე", "ორი დღე", "სამი დღე", "ოთხი დღე"], correct: 1 },
+      { q: "როგორ მიიღებდა შეკვეთის დადასტურებას?", options: ["ტელეფონით", "იმეილით", "SMS-ით", "აპლიკაციით"], correct: 1 },
+      { q: "რა აირჩია მომხმარებელმა მიწოდებისთვის?", options: ["სწრაფი", "სტანდარტული", "თავად წაიღო", "უფასო"], correct: 1 },
+    ],
     descriptionKa: "გააკეთე ონლაინ შეკვეთა, გადაიხადე და იპოვე მიწოდების ვარიანტები.",
     transcript: [
       { speaker: "Customer", en: "I'm trying to order something online, but the website is confusing.", ka: "ვცდილობ რაღაც ონლაინ შევუკვეთო, მაგრამ ვებსაიტი დამაბნეველია." },
@@ -449,6 +584,11 @@ const episodes = [
   { id: 30, title: "At the Embassy", titleKa: "საელჩოში", icon: "🏛️", duration: "10:22", file: "/podcast/episode30-embassy.mp3", free: false,
     vocab: ["Embassy", "Visa", "Interview", "Documents", "Purpose", "Stay", "Passport", "Application"],
     vocabKa: ["საელჩო", "ვიზა", "გასაუბრება", "დოკუმენტები", "მიზანი", "ყოფნა", "პასპორტი", "განცხადება"],
+    quiz: [
+      { q: "რა ტიპის ვიზას ითხოვდა?", options: ["ბიზნეს", "ტურისტული", "სტუდენტური", "სამუშაო"], correct: 1 },
+      { q: "რამდენი ხნით სურდა ვიზიტი?", options: ["ერთი კვირა", "ორი კვირა", "ერთი თვე", "სამი თვე"], correct: 1 },
+      { q: "რამდენ ხანს გასტანდა საელჩოში?", options: ["15 წუთი", "30 წუთი", "1 საათი", "2 საათი"], correct: 1 },
+    ],
     descriptionKa: "ჩაბარე ვიზის განცხადება, გაიარე გასაუბრება და მიაწოდე საჭირო დოკუმენტები.",
     transcript: [
       { speaker: "Applicant", en: "Good morning. I'm here for my visa interview. I have all my documents.", ka: "დილა მშვიდობისა. ვიზის გასაუბრებაზე მოვედი. ყველა ჩემი დოკუმენტი მაქვს." },
@@ -465,6 +605,11 @@ const episodes = [
   { id: 31, title: "🎓 Tenses Masterclass", titleKa: "დროების მასტერკლასი", icon: "📚", duration: "8:00", file: "/podcast/episode31-tenses-masterclass.mp3", free: true,
     vocab: ["Present Simple", "Present Continuous", "Past Simple", "Present Perfect", "Future (will)", "Future (going to)", "Habit", "Routine"],
     vocabKa: ["აწმყო მარტივი", "აწმყო მიმდინარე", "წარსული მარტივი", "აწმყო სრული", "მომავალი (will)", "მომავალი (going to)", "ჩვევა", "რუტინა"],
+    quiz: [
+      { q: "რისთვის გამოიყენება Present Simple?", options: ["ახლა მიმდინარე მოქმედებისთვის", "ჩვევებისა და ფაქტებისთვის", "წარსული მოქმედებისთვის", "მომავალი გეგმებისთვის"], correct: 1 },
+      { q: "რომელი დრო აკავშირებს წარსულს აწმყოსთან?", options: ["Past Simple", "Present Continuous", "Present Perfect", "Future Simple"], correct: 2 },
+      { q: "'I am studying right now' — რომელი დროა?", options: ["Present Simple", "Present Continuous", "Past Simple", "Present Perfect"], correct: 1 },
+    ],
     descriptionKa: "გრძელი გაკვეთილი: ისწავლე 5 მთავარი ინგლისური დრო მაგალითებით და პრაქტიკით.",
     transcript: [
       { speaker: "Teacher", en: "Welcome to FluentGe Long Episode: English Tenses Masterclass. Today we will learn the most important English tenses.", ka: "კეთილი იყოს მობრძანება FluentGe-ს გრძელ ეპიზოდში: ინგლისური დროების მასტერკლასი." },
@@ -478,6 +623,11 @@ const episodes = [
   { id: 32, title: "🎓 50 Essential Phrases", titleKa: "50 აუცილებელი ფრაზა", icon: "💬", duration: "7:00", file: "/podcast/episode32-essential-phrases.mp3", free: true,
     vocab: ["How are you doing?", "Nice to meet you", "How much does this cost?", "Can I pay by card?", "I need help", "In my opinion", "No worries", "Have a wonderful day"],
     vocabKa: ["როგორ ხარ?", "სასიამოვნოა გაცნობა", "რა ღირს ეს?", "შეიძლება ბარათით?", "დახმარება მჭირდება", "ჩემი აზრით", "არაფერია", "მშვენიერ დღეს გისურვებთ"],
+    quiz: [
+      { q: "როგორ ითარგმნება 'No worries'?", options: ["გამარჯობა", "არაფერია", "ნახვამდის", "ბოდიში"], correct: 1 },
+      { q: "როგორ ჰკითხავ ფასს ინგლისურად?", options: ["What is it?", "How much does this cost?", "Can I have this?", "Where is the price?"], correct: 1 },
+      { q: "რამდენი ფრაზა ასწავლეს ამ ეპიზოდში?", options: ["25", "30", "40", "50"], correct: 3 },
+    ],
     descriptionKa: "გრძელი გაკვეთილი: 50 ყოველდღიური ფრაზა ქართული თარგმანით — მისალმებები, მაღაზია, რესტორანი, სამსახური, გადაუდებელი.",
     transcript: [
       { speaker: "Teacher", en: "Today I will teach you fifty phrases that English speakers use every single day.", ka: "დღეს 50 ფრაზას გასწავლით რომლებსაც ინგლისურენოვნები ყოველდღე იყენებენ." },
@@ -490,6 +640,11 @@ const episodes = [
   { id: 33, title: "🎓 Common Mistakes Georgians Make", titleKa: "ქართველების ხშირი შეცდომები", icon: "⚠️", duration: "9:00", file: "/podcast/episode33-common-mistakes.mp3", free: true,
     vocab: ["Articles (a/an/the)", "Word Order", "Tense Confusion", "TH Sound", "He/She Mix-up", "Prepositions", "Double Negatives", "Verb To Be"],
     vocabKa: ["არტიკლები", "სიტყვების თანმიმდევრობა", "დროების აღრევა", "TH ბგერა", "He/She აღრევა", "წინდებულები", "ორმაგი უარყოფა", "ზმნა To Be"],
+    quiz: [
+      { q: "რატომ ავიწყდებათ ქართველებს არტიკლები?", options: ["რთულია", "ქართულში არ არსებობს", "ზედმეტია", "არ ასწავლიან"], correct: 1 },
+      { q: "რა სწორი ფორმაა: 'I need ___'?", options: ["computer", "a computer", "the computers", "some computer"], correct: 1 },
+      { q: "TH ბგერის დროს ენა სად უნდა იყოს?", options: ["ზემოთ", "ქვემოთ", "კბილებს შორის", "გვერდზე"], correct: 2 },
+    ],
     descriptionKa: "გრძელი გაკვეთილი: 8 ყველაზე ხშირი შეცდომა რომლებსაც ქართველები ინგლისურში უშვებენ და როგორ გამოვასწოროთ.",
     transcript: [
       { speaker: "Teacher", en: "Georgian language has no articles. So Georgians often forget to use a, an, and the.", ka: "ქართულ ენაში არტიკლები არ არსებობს. ამიტომ ქართველები ხშირად ავიწყდებათ a, an და the-ს გამოყენება." },
@@ -501,6 +656,11 @@ const episodes = [
   { id: 34, title: "🎓 Job Interview Preparation", titleKa: "გასაუბრებისთვის მომზადება", icon: "💼", duration: "9:00", file: "/podcast/episode34-job-interview-prep.mp3", free: false,
     vocab: ["Tell me about yourself", "Strengths", "Weaknesses", "Salary", "Experience", "Qualifications", "Why should we hire you?", "Where do you see yourself?"],
     vocabKa: ["მიამბეთ თქვენს შესახებ", "ძლიერი მხარეები", "სუსტი მხარეები", "ხელფასი", "გამოცდილება", "კვალიფიკაცია", "რატომ უნდა დაგიქირაოთ?", "სად ხედავთ თავს?"],
+    quiz: [
+      { q: "'Tell me about yourself' — რა სტრუქტურით უნდა უპასუხო?", options: ["წარსული, აწმყო, მომავალი", "აწმყო, წარსული, მომავალი", "მომავალი, აწმყო, წარსული", "ნებისმიერი"], correct: 1 },
+      { q: "რატომ უნდა მოამზადო კითხვები ინტერვიუერისთვის?", options: ["აუცილებელია", "აჩვენებ დაინტერესებას", "ფულის მისაღებად", "ვალდებულებაა"], correct: 1 },
+      { q: "რამდენი ძლიერი მხარე უნდა ახსენო?", options: ["ერთი", "ორი-სამი", "ხუთი", "რაც შეიძლება ბევრი"], correct: 1 },
+    ],
     descriptionKa: "გრძელი გაკვეთილი: მომზადდი სამსახურის გასაუბრებისთვის — 6 ყველაზე ხშირი კითხვა და იდეალური პასუხები.",
     transcript: [
       { speaker: "Teacher", en: "This lesson will teach you how to ace a job interview in English.", ka: "ეს გაკვეთილი გასწავლით როგორ წარმატებით გაიაროთ სამსახურის გასაუბრება ინგლისურად." },
@@ -512,6 +672,11 @@ const episodes = [
   { id: 35, title: "🎓 English for Traveling", titleKa: "ინგლისური მოგზაურობისთვის", icon: "🌍", duration: "10:00", file: "/podcast/episode35-travel-english.mp3", free: false,
     vocab: ["Check-in", "Boarding", "Immigration", "Customs", "Hotel reservation", "Taxi", "Sightseeing", "Emergency"],
     vocabKa: ["რეგისტრაცია", "ჩასხდომა", "იმიგრაცია", "საბაჟო", "სასტუმროს ჯავშანი", "ტაქსი", "ღირსშესანიშნაობები", "გადაუდებელი"],
+    quiz: [
+      { q: "იმიგრაციაზე რას გეკითხებიან?", options: ["სახელს", "ვიზიტის მიზანს", "პროფესიას", "ხელფასს"], correct: 1 },
+      { q: "სასტუმროში ჯავშნის დროს რას ამბობ?", options: ["I want a room", "I have a reservation", "Give me a key", "Where is the room?"], correct: 1 },
+      { q: "გადაუდებელ სიტუაციაში რას ამბობ?", options: ["Help me!", "I need a doctor", "Call the police", "ყველა სწორია"], correct: 3 },
+    ],
     descriptionKa: "გრძელი გაკვეთილი: აეროპორტი, სასტუმრო, ტრანსპორტი, ტურიზმი და გადაუდებელი სიტუაციები — ყველაფერი რაც მოგზაურობისთვის გჭირდება.",
     transcript: [
       { speaker: "Teacher", en: "Planning a trip? This lesson covers everything you need to travel confidently in English.", ka: "მოგზაურობას გეგმავთ? ეს გაკვეთილი მოიცავს ყველაფერს რაც ინგლისურად მოგზაურობისთვის გჭირდებათ." },

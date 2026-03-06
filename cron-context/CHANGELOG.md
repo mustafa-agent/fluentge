@@ -7,6 +7,31 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-06
 
+### Cron 2 — Design (3:00 AM)
+- **🔍 SEO Critical Fix:** All canonical URLs and Open Graph meta across entire site were pointing to `fluentge.surge.sh` instead of `fluentge.pages.dev`. Fixed in Layout.astro — affects all 14 pages + 28 blog posts.
+- **🎯 Level Personalization UI on DeckSelect:**
+  - New "Recommended for your level" section appears when `fluentge-placement-level` exists in localStorage
+  - Shows 6 level-appropriate deck cards in a 3-column grid with gradient background matching level color
+  - A1=green (greetings, numbers, colors, family, food, animals), A2=sky (daily-life, shopping, travel, feelings, weather), B1=indigo (business, tech, health, education, culture), B2=purple (academic, idioms, phrasal-verbs, science)
+  - Level badge pill + "შეცვალე" link to retake placement test
+  - Cards have image backgrounds, hover effects, SRS due badges
+- **🎯 Level Badge on Dashboard:**
+  - Gradient banner at top of Dashboard showing assessed level (A1-C1)
+  - Color-coded gradient per level, shows level code + Georgian label + "retake" link
+  - Only visible when user has taken placement test
+- **🎧 Podcast Comprehension Quiz UI:**
+  - New quiz section below transcript for episodes with quiz data
+  - Added quiz data for Episode 1 (Airport) and Episode 2 (Restaurant) — 3 questions each
+  - A/B/C/D letter badges on 3D option buttons (border-b-4 press effect)
+  - Green/red highlight on correct/wrong answers, feedback messages
+  - Score summary when all questions answered
+  - Awards +10 XP per correct answer via gamification bridge
+  - Interactive JS: click-to-answer, disable after answering, auto-detect completion
+- **🏠 Homepage CTA Redesign:**
+  - New user hero: "🎯 გაიგე შენი დონე" (green 3D button → /placement/) + "📚 პირდაპირ სწავლა" (ghost button → /flashcards/)
+  - Guides new users through placement test first for personalized experience
+- Deployed ✅, git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Guided Learning & Content Depth" sprint (Mar 5) — ALL items completed ✅
   - Placement Test ✅ (15 questions A1→C1, level badge, recommendations, localStorage save)
