@@ -3,8 +3,8 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 6 night) — "Content Quality & User Journey Polish"
-- [ ] **🎯 Level-Based Personalization** — Placement test results affect deck recs, daily lesson difficulty, course unit highlighting ← Cron 3
-- [ ] **🎧 Podcast Comprehension Data** — Real quiz questions + vocabulary + timestamps per episode ← Cron 3
+- [x] **🎯 Level-Based Personalization** — Placement test results affect deck recs, daily lesson difficulty, course unit highlighting ← Cron 3
+- [x] **🎧 Podcast Comprehension Data** — Real quiz questions + vocabulary + timestamps per episode ← Cron 3
 - [ ] **🏠 Homepage → Placement Flow** — New user CTA → placement test → personalized start ← Cron 4
 - [ ] **🔍 SEO Optimization** — Meta tags, structured data, Georgian keywords, sitemap ← Cron 4
 - [ ] **🎮 Game Verification** — Test all 30+ games, fix broken ones ← Cron 4
@@ -52,6 +52,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🎯 Level-Based Personalization** — DailyLesson loads level-appropriate decks (A1: greetings/numbers/colors, A2: daily/food/shopping, B1: business/tech, B2: politics/science) based on placement test result. courses.astro highlights recommended starting unit with green badge + auto-expand. (Cron 3, Mar 6)
+- ✅ **🎧 Podcast Comprehension Data** — Added 3 quiz questions each to ALL 35 podcast episodes (previously only eps 1-2 had quizzes). Questions are in Georgian, based on transcript content, with 4 options each. Wired to XP via gamification bridge. (Cron 3, Mar 6)
 - ✅ **🔄 Reverse Mode Enhancement** — Fixed autoplay: plays Georgian on card show, English on flip reveal. Added 3D card flip animation (CSS rotateY). (Cron 3, Mar 5 afternoon)
 - ✅ **📊 Progress Visualization Chart** — ProgressChart.tsx: SVG line chart showing XP/cards/minutes over 7/14/30 days. Toggle between metrics, summary stats (total/avg/active days), color-coded with area fill. Added to Dashboard. (Cron 3, Mar 5 afternoon)
 - ✅ **🔗 Grammar XP Bridge** — `gamification-bridge.js` standalone JS for Astro grammar pages. +10 XP per correct exercise answer, +25/50 bonus on lesson completion (50%/80%+ score). Updates streak, tracks study time, marks grammar as completed. Floating +XP animation, XP counter pill, level-up popup. Uses SAME localStorage keys as React app. (Cron 3, Mar 5)
@@ -91,8 +93,7 @@
 - ✅ **📊 Progress Chart** — SVG line chart on dashboard
 
 ## In Progress 🔄
-- 🔄 **🎯 Level-Based Personalization** — DailyLesson uses level-appropriate decks + courses.astro highlights starting unit ← Cron 3
-- 🔄 **🎧 Podcast Comprehension Data** — Quiz questions for all 12 episodes ← Cron 3
+(none)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

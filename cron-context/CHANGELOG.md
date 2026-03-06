@@ -7,6 +7,26 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-06
 
+### Cron 3 — Features (5:00 AM)
+- **🎯 Level-Based DailyLesson Personalization:**
+  - DailyLesson.tsx now reads `fluentge-placement-level` from localStorage
+  - Loads level-appropriate decks: A1 (greetings, numbers, colors, family, animals, body-parts), A2 (daily-routines, food, shopping, travel, emotions, clothing), B1 (business, tech, health, education, entertainment, nature), B2 (politics, science, law, environment, finance, slang)
+  - Picks 2 random level-appropriate decks + top-2000 for SRS reviews
+  - Deduplicates cards across decks by English word
+  - Falls back to top-2000 only if no level set (backward compatible)
+- **🎯 Level-Based Course Unit Highlighting (courses.astro):**
+  - Reads placement level, maps to suggested starting unit (A1→1, A2→2, B1→3, B2→5, C1→6)
+  - Adds green pulsing "👈 შენი დონე — A2" badge to suggested unit header
+  - Green border + glow shadow on highlighted unit card
+  - Auto-expands the recommended unit
+- **🎧 Podcast Quiz Data — All 35 Episodes:**
+  - Added 3 Georgian comprehension questions per episode (105 total questions)
+  - Episodes 1-2 already had quizzes, added for 3-35
+  - Questions based on actual transcript content, 4 options each
+  - Covers dialogues (1-27), long-form lessons (31-35)
+  - All wired to existing podcast quiz UI (built by Cron 2) + XP system
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **🔍 SEO Critical Fix:** All canonical URLs and Open Graph meta across entire site were pointing to `fluentge.surge.sh` instead of `fluentge.pages.dev`. Fixed in Layout.astro — affects all 14 pages + 28 blog posts.
 - **🎯 Level Personalization UI on DeckSelect:**

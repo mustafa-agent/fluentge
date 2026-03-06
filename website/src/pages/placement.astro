@@ -101,6 +101,11 @@ const levels = [
           ))}
         </div>
 
+        <!-- Personalized Next Step -->
+        <div id="pt-next-step" class="mb-6">
+          <!-- filled by JS: a big personalized CTA based on level -->
+        </div>
+
         <!-- Recommendations -->
         <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-left mb-6">
           <h3 class="font-bold text-lg mb-4">📋 რეკომენდაციები</h3>
@@ -110,7 +115,7 @@ const levels = [
         </div>
 
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="/flashcards/" class="bg-green-500 hover:bg-green-600 text-white font-bold uppercase tracking-wide border-b-4 border-green-600 active:border-b-0 rounded-xl px-8 py-3 transition-all">
+          <a id="pt-start-learning" href="/flashcards/" class="bg-green-500 hover:bg-green-600 text-white font-bold uppercase tracking-wide border-b-4 border-green-600 active:border-b-0 rounded-xl px-8 py-3 transition-all">
             📚 სწავლის დაწყება
           </a>
           <button id="pt-retry" class="bg-[#2E2E30] hover:bg-[#3E3E40] text-[#F5F5F0] font-bold border-b-4 border-[#1C1C1E] active:border-b-0 rounded-xl px-8 py-3 transition-all">
@@ -246,6 +251,35 @@ const levels = [
         // Save result
         localStorage.setItem('fluentge-placement-level', lvl.code);
         localStorage.setItem('fluentge-placement-score', score);
+
+        // Personalized next step CTA
+        const nextSteps = {
+          A1: { emoji: '🌱', title: 'დაიწყე საბაზისო სიტყვებით', desc: 'მისალმებები, რიცხვები, ფერები — ყოველდღიური სიტყვები რომლებიც პირველ რიგში გჭირდება', btnText: '🚀 დაიწყე A1 დეკებით', link: '/flashcards/#study/greetings-farewells/classic', course: 1 },
+          A2: { emoji: '📗', title: 'გააძლიერე საწყისი ცოდნა', desc: 'ყოველდღიური ფრაზები, საკვები, მოგზაურობა — სიტყვები რომლებიც საუბარში დაგჭირდება', btnText: '🚀 გააგრძელე A2 დეკებით', link: '/flashcards/', course: 2 },
+          B1: { emoji: '📘', title: 'გააფართოვე ლექსიკა', desc: 'ბიზნესი, ტექნოლოგიები, ჯანმრთელობა — პროფესიული ლექსიკა', btnText: '🚀 გადადი B1 დეკებზე', link: '/flashcards/', course: 3 },
+          B2: { emoji: '📙', title: 'დახვეწე ენა', desc: 'იდიომები, ფრაზული ზმნები, აკადემიური ლექსიკა — თავისუფალი მეტყველება', btnText: '🚀 B2 ლექსიკა', link: '/flashcards/', course: 5 },
+          C1: { emoji: '🏆', title: 'შენ უკვე მაღალ დონეზე ხარ!', desc: 'გამოიყენე თამაშები, პოდკასტები და გრამატიკა ცოდნის შესანარჩუნებლად', btnText: '🎮 თამაშები და პოდკასტი', link: '/games/', course: 6 },
+        };
+        const ns = nextSteps[lvl.code] || nextSteps.A1;
+        const nsDiv = $('#pt-next-step');
+        nsDiv.innerHTML = `
+          <div class="bg-gradient-to-br ${lvl.color.replace('from-', 'from-').replace('to-', 'to-')} rounded-2xl p-6 text-center text-white mb-4 relative overflow-hidden">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="relative">
+              <div class="text-4xl mb-3">${ns.emoji}</div>
+              <h3 class="text-xl font-bold mb-2">${ns.title}</h3>
+              <p class="text-white/80 text-sm mb-5">${ns.desc}</p>
+              <a href="${ns.link}" class="inline-block bg-white text-gray-900 font-bold px-8 py-3.5 rounded-xl text-base border-b-4 border-gray-300 hover:bg-gray-100 active:border-b-0 active:mt-1 transition-all">
+                ${ns.btnText}
+              </a>
+            </div>
+          </div>
+          <p class="text-center text-xs text-[#6B6B65]">ან აირჩიე ქვემოთ მოცემული ვარიანტებიდან</p>
+        `;
+
+        // Update the main CTA link based on level
+        const startBtn = $('#pt-start-learning');
+        if (startBtn) startBtn.href = ns.link;
         $('#pt-progress').style.width = '100%';
       }
 
