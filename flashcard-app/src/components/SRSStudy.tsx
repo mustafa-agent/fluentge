@@ -5,6 +5,7 @@ import {
   type SRSStore, type Rating, type CardSRS,
   getSRSStore, saveSRSStore, rateCard, getNextInterval, getLearnedCount,
 } from '../lib/srs-engine';
+import { recordWrong, recordRight } from '../lib/difficult-words';
 
 function addToKnownCards(word: string, georgian: string) {
   try {
@@ -132,6 +133,13 @@ export default function SRSStudy({ cards, deckId, onBack }: Props) {
     setStore(newStore);
     saveSRSStore(deckId, newStore);
     
+    // Track difficult words
+    if (rating === 'again' || rating === 'hard') {
+      recordWrong(currentCard.english, currentCard.georgian, currentCard.category, currentCard.pronunciation);
+    } else if (rating === 'good' || rating === 'easy') {
+      recordRight(currentCard.english);
+    }
+
     // Award XP
     let xpGain = XP_REWARDS.REVIEW_CARD;
     if (rating === 'good' || rating === 'easy') {

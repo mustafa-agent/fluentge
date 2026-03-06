@@ -59,8 +59,8 @@
 - [ ] **📝 Unit quiz UI** — 10-question test with mixed formats, score screen ← Cron 2
 - [ ] **🔄 Grammar review section** — CTA on grammar page for reviewing completed lessons ← Cron 2
 - [ ] **🎧 Podcast vocab UI** — Word pills with click-to-speak ← Cron 2
-- [ ] **👤 Profile enhancement** — Study calendar heatmap, deeper stats ← Cron 4
-- [ ] **💳 Premium payment prep** — Payment button UI ← Cron 4
+- [x] **👤 Profile enhancement** — Heatmap CSS fix, hover tooltips, SRS word count ✅ Cron 4B
+- [x] **💳 Premium payment prep** — Payment modal with card/BOG options ✅ Cron 4B
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)

@@ -1,9 +1,47 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-06 (9:00 AM)
+- **Date:** 2026-03-06 (7:30 PM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Evening QA Run (Mar 6, 7:30 PM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200, `/placement/` — 200, `/courses/` — 200, `/profile/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Flashcard App Build — ✅ Clean
+- **Main bundle: 263.97 KB** (gzip 78.70 KB)
+- **Top-2000 chunk: 469.25 KB**
+- Built in 4.80s
+
+### Website Build — ✅ Clean
+- **112 pages** built in 7.40s, no errors
+
+### Today's Day Cron Changes Verified (Crons 2B-4B, Mar 6)
+- [x] **Unit Quiz CSS (Cron 2B):** uq-* class system, courses.astro quiz links → /flashcards/#unit-quiz/N ✅
+- [x] **Grammar Review CTA (Cron 2B):** Purple gradient card on /grammar/ — visible in screenshot ✅
+- [x] **Podcast Vocabulary Pills (Cron 2B):** Click-to-speak pv-pill buttons — code reviewed ✅
+- [x] **Profile Heatmap (Cron 2B + 4B):** 91-day calendar grid on /profile/ — visible in screenshot, base CSS added to profile.astro ✅
+- [x] **Extended Profile Stats (Cron 2B):** Grammar, games, time, level stats — visible in screenshot ✅
+- [x] **UnitQuiz.tsx (Cron 3B):** 10-question mixed quiz (5 vocab, 3 grammar, 2 listening), pass ≥7/10 +50 XP — code reviewed, grammar questions verified correct ✅
+- [x] **Grammar Review System (Cron 3B):** ?review=1 param, SRS-like selection, review dates tracked — code reviewed ✅
+- [x] **Premium Payment Modal (Cron 4B):** Replaced alert() with proper modal UI, 2 payment options, toast notification — code reviewed ✅
+- [x] **Profile Heatmap Fix (Cron 4B):** Base CSS duplicated into profile.astro, hover tooltips with Georgian days ✅
+
+### Browser Screenshots — ✅ All Rendering
+- **Flashcards:** Dashboard stats, Daily Lesson CTA, SRS reminder, Top 2000 hero, all deck cards ✅
+- **Profile:** Avatar, stats (83 words), achievements, heatmap calendar, detailed stats, activity log ✅
+- **Grammar:** All lessons with completion badges, 4 sections (basics, intermediate, advanced, bonus) ✅
+- **Courses:** 6 units, Unit 1 expanded with 5 lessons, lock icons on 3-6, colored action buttons ✅
+
+### Verdict
+All 9 changes from today's day crons verified. No bugs found. Bundle size stable (+0.6 KB). Site rendering correctly across all pages.
+
+---
 
 ## Morning QA Run (Mar 6, 9:00 AM)
 

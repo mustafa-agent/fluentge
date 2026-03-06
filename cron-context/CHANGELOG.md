@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-06
 
+### Cron 4B — Improvements (5:30 PM, Day Run)
+- **👤 Profile Heatmap Fix + Polish:**
+  - Added missing base CSS for heatmap to profile.astro (was only in flashcard index.css — didn't apply on /profile/)
+  - Grid layout: 13 columns, 91 days, 4 intensity levels (green), hover scale
+  - Hover tooltips on each cell: shows date (with Georgian day name) + XP earned
+  - Improved word count logic: now counts SRS-learned words (repetitions≥1) in addition to progress data, uses whichever is higher
+- **💳 Premium Payment Modal:**
+  - Replaced all 3 `alert('მალე დაემატება!')` with proper payment modal UI
+  - Modal: backdrop blur overlay, slide-up animation, plan badge (yearly/monthly)
+  - Two payment options: 💳 ბარათით გადახდა (Stripe-ready) + 🏦 BOG/TBC (Georgian banks)
+  - 3D press-effect buttons, SSL secure note, close on Escape/overlay click
+  - After clicking payment: shows styled indigo toast with contact email (auto-dismiss 6s)
+  - Updated FAQ answer about payment methods
+  - Full light mode support for modal
+- Deployed ✅, git committed & pushed
+
 ### Cron 3B — Features (3:30 PM, Day Run)
 - **📝 Unit-Specific Quizzes (UnitQuiz.tsx):**
   - New React component: 10-question mixed test per course unit

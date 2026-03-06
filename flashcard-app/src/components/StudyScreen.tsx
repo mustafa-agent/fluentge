@@ -4,6 +4,7 @@ import { sm2 } from '../lib/sm2';
 import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { addXP, addStudyTime, updateStreak, XP_REWARDS, recordDailyActivity } from '../lib/gamification';
+import { recordWrong as trackDifficult, recordRight as trackCorrect } from '../lib/difficult-words';
 
 // --- Swipe gesture hook ---
 function useSwipe(onSwipeLeft: () => void, onSwipeRight: () => void, threshold = 60) {
@@ -290,13 +291,15 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     if (!card) return;
     const wasCorrect = guessResult === 'correct';
     
-    // Track stats
+    // Track stats + difficult words
     if (wasCorrect) {
       setCorrectCount(c => c + 1);
+      trackCorrect(card.english);
     } else {
       setWrongCount(c => c + 1);
       const key = card.english;
       wrongCountMap.current.set(key, (wrongCountMap.current.get(key) || 0) + 1);
+      trackDifficult(card.english, card.georgian, card.category, card.pronunciation);
     }
     
     setFlipped(false);
