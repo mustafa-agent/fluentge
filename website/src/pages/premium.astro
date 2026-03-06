@@ -234,7 +234,7 @@ import Layout from '../layouts/Layout.astro';
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 35 პოდკასტი</li>
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 6 სასწავლო რეჟიმი</li>
         </ul>
-        <button onclick="alert('მალე დაემატება! Coming soon!')" class="cta-btn primary">აირჩიე წლიური ⚡</button>
+        <button onclick="openPaymentModal('yearly')" class="cta-btn primary">აირჩიე წლიური ⚡</button>
       </div>
 
       <!-- Monthly -->
@@ -250,7 +250,7 @@ import Layout from '../layouts/Layout.astro';
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 35 პოდკასტი</li>
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 6 სასწავლო რეჟიმი</li>
         </ul>
-        <button onclick="alert('მალე დაემატება! Coming soon!')" class="cta-btn secondary">აირჩიე თვიური</button>
+        <button onclick="openPaymentModal('monthly')" class="cta-btn secondary">აირჩიე თვიური</button>
       </div>
     </div>
   </section>
@@ -347,7 +347,7 @@ import Layout from '../layouts/Layout.astro';
           <span>რომელი გადახდის მეთოდები მუშაობს?</span>
           <span class="faq-arrow">▾</span>
         </button>
-        <div class="faq-a">მალე დაემატება გადახდის სისტემა. პრემიუმი ამჟამად ტესტ რეჟიმშია.</div>
+        <div class="faq-a">მალე დაემატება ბარათით გადახდა (Visa/Mastercard) და ქართული ბანკით გადახდა (BOG/TBC). ამჟამად შეგიძლია დაგვიკავშირდე tokakhozre@gmail.com მეილზე.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">
@@ -364,19 +364,97 @@ import Layout from '../layouts/Layout.astro';
     <div class="relative max-w-2xl mx-auto px-4 py-16 text-center">
       <h2 class="text-2xl sm:text-3xl font-bold mb-4 gradient-text">მზად ხარ?</h2>
       <p class="text-[#a0a0aa] mb-8">შეუერთდი ასობით ქართველს, რომლებიც ინგლისურს FluentGe-ით სწავლობენ</p>
-      <button onclick="alert('მალე დაემატება! Coming soon!')" class="cta-btn primary" style="max-width: 320px; margin: 0 auto;">
+      <button onclick="openPaymentModal('yearly')" class="cta-btn primary" style="max-width: 320px; margin: 0 auto;">
         დაიწყე პრემიუმით ⚡
       </button>
       <p class="text-xs text-[#6b7280] mt-4">გაუქმება ნებისმიერ დროს · უსაფრთხო გადახდა</p>
     </div>
   </section>
 
-  <!-- Light mode overrides for comparison table container -->
+  <!-- Payment Modal -->
+  <div class="payment-overlay" id="payment-overlay">
+    <div class="payment-modal">
+      <div class="plan-badge" id="modal-plan-badge">წლიური — $79.99/წელი</div>
+      <h3>აირჩიე გადახდის მეთოდი</h3>
+      <p>გადახდა უსაფრთხო და დაცულია. აირჩიე შენთვის მოსახერხებელი მეთოდი.</p>
+      <div class="payment-options">
+        <button class="pay-btn stripe" onclick="handlePayment('stripe')">
+          💳 ბარათით გადახდა
+        </button>
+        <button class="pay-btn bog" onclick="handlePayment('bog')">
+          🏦 BOG / TBC (ქართული ბანკი)
+        </button>
+      </div>
+      <div class="secure-note">🔒 SSL დაცული · გაუქმება ნებისმიერ დროს</div>
+      <button class="payment-close" onclick="closePaymentModal()">გაუქმება</button>
+    </div>
+  </div>
+
+  <!-- Light mode overrides -->
   <style>
     :global(.light) .compare-table { background: white; }
     :global(.light) div[style*="background: #1e1e22"] { background: white !important; border-color: #e5e7eb !important; }
     :global(.light) .testimonial-card p.text-white, :global(.light) .testimonial-card .text-white { color: #1a1a2e !important; }
     :global(.light) .faq-a { color: #6b7280; }
+
+    /* Payment modal */
+    .payment-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .payment-overlay.show { display: flex; }
+    .payment-modal {
+      background: #1e1e22;
+      border: 1px solid #2e2e32;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      animation: payModalIn 0.3s ease;
+    }
+    @keyframes payModalIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .payment-modal h3 { font-size: 1.25rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
+    .payment-modal p { color: #a0a0aa; font-size: 0.85rem; margin-bottom: 1.5rem; line-height: 1.5; }
+    .payment-options { display: flex; flex-direction: column; gap: 12px; margin-bottom: 1.5rem; }
+    .pay-btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 14px 20px; border-radius: 0.75rem; font-weight: 700; font-size: 0.9rem;
+      cursor: pointer; border: none; border-bottom: 4px solid transparent;
+      transition: all 0.2s; width: 100%;
+    }
+    .pay-btn:active { border-bottom-width: 2px; transform: translateY(2px); }
+    .pay-btn.stripe { background: #635bff; color: white; border-bottom-color: #4f46e5; }
+    .pay-btn.stripe:hover { background: #5046e5; }
+    .pay-btn.bog { background: #00a651; color: white; border-bottom-color: #008c44; }
+    .pay-btn.bog:hover { background: #009147; }
+    .plan-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #818cf8, #c084fc);
+      color: white; font-size: 0.75rem; font-weight: 700;
+      padding: 4px 14px; border-radius: 9999px; margin-bottom: 1rem;
+    }
+    .secure-note {
+      display: flex; align-items: center; justify-content: center;
+      gap: 6px; color: #6b7280; font-size: 0.7rem; margin-top: 0.5rem;
+    }
+    .payment-close {
+      background: none; border: none; color: #6b7280;
+      font-size: 0.85rem; cursor: pointer; padding: 8px 16px; margin-top: 0.75rem;
+    }
+    .payment-close:hover { color: #a0a0a0; }
+    :global(.light) .payment-modal { background: white; border-color: #e5e7eb; }
+    :global(.light) .payment-modal h3 { color: #1a1a2e; }
+    :global(.light) .payment-modal p { color: #6b7280; }
   </style>
 
   <script is:inline>
@@ -391,6 +469,35 @@ import Layout from '../layouts/Layout.astro';
           }
         } catch(e) {}
       }
+
+      var selectedPlan = 'yearly';
+      window.openPaymentModal = function(plan) {
+        selectedPlan = plan;
+        var badge = document.getElementById('modal-plan-badge');
+        badge.textContent = plan === 'yearly' ? 'წლიური — $79.99/წელი' : 'თვიური — $9.99/თვე';
+        document.getElementById('payment-overlay').classList.add('show');
+      };
+      window.closePaymentModal = function() {
+        document.getElementById('payment-overlay').classList.remove('show');
+      };
+      document.getElementById('payment-overlay').addEventListener('click', function(e) {
+        if (e.target === this) closePaymentModal();
+      });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePaymentModal(); });
+
+      window.handlePayment = function(method) {
+        closePaymentModal();
+        var plan = selectedPlan === 'yearly' ? '$79.99/წელი' : '$9.99/თვე';
+        var msg = method === 'stripe'
+          ? '💳 ბარათით გადახდა მალე ჩაირთვება!<br><br>ამჟამად დაგვიკავშირდი:<br>📧 <strong>tokakhozre@gmail.com</strong>'
+          : '🏦 ქართული ბანკით გადახდა მალე ჩაირთვება!<br><br>ამჟამად დაგვიკავშირდი:<br>📧 <strong>tokakhozre@gmail.com</strong>';
+        var toast = document.createElement('div');
+        toast.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#818cf8,#6366f1);color:white;padding:1.25rem 1.5rem;border-radius:1rem;font-size:0.85rem;z-index:200;max-width:90%;text-align:center;line-height:1.6;box-shadow:0 8px 32px rgba(99,102,241,0.3);animation:payModalIn 0.3s ease;';
+        toast.innerHTML = msg;
+        document.body.appendChild(toast);
+        setTimeout(function() { toast.style.opacity = '0'; toast.style.transition = 'opacity 0.5s'; }, 6000);
+        setTimeout(function() { toast.remove(); }, 6500);
+      };
     })();
   </script>
 </Layout>

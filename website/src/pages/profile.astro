@@ -120,6 +120,58 @@ import Layout from '../layouts/Layout.astro';
       flex-shrink: 0;
     }
 
+    /* Heatmap */
+    .heatmap-grid {
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      gap: 3px;
+    }
+    @media (min-width: 640px) { .heatmap-grid { gap: 4px; } }
+    .heatmap-cell {
+      aspect-ratio: 1;
+      border-radius: 3px;
+      background: #2e2e32;
+      transition: transform 0.15s;
+      cursor: default;
+      position: relative;
+    }
+    .heatmap-cell:hover { transform: scale(1.3); z-index: 1; position: relative; }
+    .heatmap-cell.l1 { background: rgba(34,197,94,0.2); }
+    .heatmap-cell.l2 { background: rgba(34,197,94,0.4); }
+    .heatmap-cell.l3 { background: rgba(34,197,94,0.6); }
+    .heatmap-cell.l4 { background: #22c55e; }
+    .heatmap-legend {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      margin-top: 8px;
+      font-size: 0.65rem;
+      color: #6b7280;
+    }
+    .heatmap-legend-cell {
+      width: 12px; height: 12px;
+      border-radius: 2px;
+    }
+
+    /* Tooltip for heatmap */
+    .heatmap-cell[data-tip]:hover::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1a1a1e;
+      color: #e0e0e0;
+      font-size: 0.65rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 10;
+      border: 1px solid #3a3a3e;
+    }
+
     /* Light mode */
     :global(.light) .profile-hero { background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #eef2ff 100%); }
     :global(.light) .avatar-inner { background: white; }
@@ -306,8 +358,9 @@ import Layout from '../layouts/Layout.astro';
       document.getElementById('stat-xp').textContent = xp;
       document.getElementById('stat-streak').textContent = streak;
 
-      // Count learned words (from flashcard progress)
+      // Count learned words (from flashcard progress + SRS data)
       var totalWords = 0;
+      var srsWords = new Set();
       for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
         if (key && key.startsWith('fluentge-progress-')) {
@@ -316,7 +369,18 @@ import Layout from '../layouts/Layout.astro';
             if (prog && prog.learned) totalWords += prog.learned;
           } catch(e) {}
         }
+        if (key && key.startsWith('fluentge-srs-')) {
+          try {
+            var srsData = JSON.parse(localStorage.getItem(key));
+            if (srsData && typeof srsData === 'object') {
+              Object.keys(srsData).forEach(function(word) {
+                if (srsData[word] && srsData[word].repetitions >= 1) srsWords.add(word);
+              });
+            }
+          } catch(e) {}
+        }
       }
+      totalWords = Math.max(totalWords, srsWords.size);
       document.getElementById('stat-words').textContent = totalWords;
 
       // Active days
@@ -349,10 +413,10 @@ import Layout from '../layouts/Layout.astro';
         var key = date.toISOString().slice(0,10);
         var cell = document.createElement('div');
         cell.className = 'heatmap-cell';
-        cell.title = key;
         var dayData = dailyHistory[key];
+        var dayXP = 0;
         if (dayData) {
-          var dayXP = typeof dayData === 'object' ? (dayData.xp || 0) : dayData;
+          dayXP = typeof dayData === 'object' ? (dayData.xp || 0) : dayData;
           if (dayXP >= 200) cell.classList.add('l4');
           else if (dayXP >= 100) cell.classList.add('l3');
           else if (dayXP >= 30) cell.classList.add('l2');
@@ -362,6 +426,13 @@ import Layout from '../layouts/Layout.astro';
         if (history.includes(key) && !cell.classList.contains('l1') && !cell.classList.contains('l2') && !cell.classList.contains('l3') && !cell.classList.contains('l4')) {
           cell.classList.add('l1');
         }
+        // Tooltip with date and XP
+        var dateObj = new Date(key);
+        var dayNames = ['კვი','ორშ','სამ','ოთხ','ხუთ','პარ','შაბ'];
+        var tipText = key + ' (' + dayNames[dateObj.getDay()] + ')';
+        if (dayXP > 0) tipText += ' — ' + dayXP + ' XP';
+        else if (history.includes(key)) tipText += ' — აქტიური';
+        cell.setAttribute('data-tip', tipText);
         heatmapGrid.appendChild(cell);
       }
 
