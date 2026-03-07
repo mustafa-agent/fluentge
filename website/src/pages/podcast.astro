@@ -797,7 +797,7 @@ const episodes = [
 
             <div class={ep.free ? '' : 'podcast-premium-content hidden'}>
                 <!-- Custom Audio Player -->
-                <div class="podcast-player bg-[#1C1C1E] rounded-xl p-4 mb-4" data-ep={ep.id}>
+                <div class="podcast-player bg-[#242426] border border-[#2E2E30] rounded-xl p-4 mb-4" data-ep={ep.id}>
                   <audio class="podcast-audio hidden" preload="metadata" data-ep-id={ep.id}>
                     <source src={ep.file} type="audio/mpeg" />
                   </audio>
@@ -828,7 +828,7 @@ const episodes = [
 
                 <!-- Transcript (always visible) -->
                 {ep.transcript && (
-                  <div class="podcast-transcript bg-[#1C1C1E] rounded-xl p-4 space-y-2" data-ep-id={ep.id}>
+                  <div class="podcast-transcript bg-[#242426] border border-[#2E2E30] rounded-xl p-4 space-y-2" data-ep-id={ep.id}>
                     <p class="text-xs text-[#6B6B65] font-bold uppercase tracking-wider mb-2">📝 დიალოგი</p>
                     {ep.transcript.map((line, lineIdx) => (
                       <div class={`transcript-line rounded-lg px-3 py-2 transition-all duration-300 border-l-2 ${line.speaker === ep.transcript[0].speaker ? 'border-purple-500/40' : 'border-emerald-500/40'}`} data-line={lineIdx}>
@@ -848,7 +848,7 @@ const episodes = [
 
                 <!-- Comprehension Quiz -->
                 {ep.quiz && ep.quiz.length > 0 && (
-                  <div class="podcast-quiz bg-[#1C1C1E] rounded-xl p-4 mt-4" data-ep-id={ep.id}>
+                  <div class="podcast-quiz bg-[#242426] border border-[#2E2E30] rounded-xl p-4 mt-4" data-ep-id={ep.id}>
                     <p class="text-xs text-[#6B6B65] font-bold uppercase tracking-wider mb-3">🧠 გაგების ტესტი</p>
                     <div class="space-y-4">
                       {ep.quiz.map((item, qi) => (

@@ -2,15 +2,21 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 7 night) — "Tornike's 8 Priorities"
-- [ ] **🎯 Daily Goal Cleanup** — Remove time references, verify card-based tracking ← Cron 2
-- [ ] **🔊 TTS Voice Audit** — Check audio quality, identify robotic voices ← Cron 3
-- [ ] **🔗 Deep Link Fixes** — Verify course links, add podcast→flashcard links ← Cron 2
-- ✅ **🗑️ Remove Mark-as-Done** — Deleted manual marking from grammar+phrases+dashboard ← Cron 3 (Mar 7)
-- ✅ **📊 New Dashboard Tracking** — Automatic progress metrics replacing manual marks ← Cron 3 (Mar 7)
-- [ ] **🔒 Grammar Lock/Unlock** — Sequential lessons with test-to-unlock ← Cron 4
-- [ ] **🎮 Games Page Redesign** — Categories, polish, professional look ← Cron 4
-- [ ] **🔍 Full Site Audit** — Every page tested ← Cron 5
+### 🎯 THIS SPRINT (Mar 7 night) — "Polish, TTS & Launch Readiness"
+- [ ] **🔊 TTS Voice Assessment** — Listen to sample audio files, decide if regeneration needed ← Cron 3
+- [ ] **🔗 Deep Link E2E Testing** — Browser-test all course/podcast → flashcard links ← Cron 2+5
+- [ ] **📱 Mobile Responsiveness Audit** — Test all pages at 375px/414px viewport ← Cron 2
+- [ ] **⚡ Performance Audit** — Lighthouse scores, load time optimization ← Cron 4
+- [ ] **📸 Marketing Assets** — Screenshots + Georgian descriptions for sharing ← Cron 4
+
+### ✅ COMPLETED — Tornike's 8 Priorities (Mar 7 night sprint)
+- ✅ Daily Goal → Card-Based (Cron 2)
+- ✅ Deep Links added (Cron 4)
+- ✅ Remove Mark-as-Done (Cron 3)
+- ✅ New Dashboard Tracking (Cron 3)
+- ✅ Grammar Lock/Unlock with ≥70% pass gate (Cron 2+4)
+- ✅ Games Page Redesign (Cron 2)
+- ✅ Full Site Audit — 0 issues (Cron 5)
 
 ### Flashcard Improvements
 ### Dashboard

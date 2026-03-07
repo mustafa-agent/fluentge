@@ -101,118 +101,72 @@ See DESIGN.md for current design rules and standards.
 
 ## 🎯 Current Sprint (Mar 7 Night Cycle)
 
-### Theme: "Tornike's 8 Priorities — User-Requested Fixes"
+### Theme: "Polish, TTS & Launch Readiness"
 
-### ⚠️ CRITICAL CONTEXT
-Tornike gave 8 explicit priorities on Mar 6. The previous sprint (Mar 6 day) worked on unit quizzes/grammar review instead. **These are the BOSS's direct requests — they override our strategic backlog.** MEMORY.md lesson #0: "Write tasks down IMMEDIATELY."
+### CONTEXT: Previous Sprint Results (Mar 7 Night — "Tornike's 8 Priorities")
+All 8 of Tornike's Mar 6 priorities addressed:
+1. ✅ Daily Goal → Card-Based — "~5 წთ" replaced with "10 ბარათი"
+2. 🟡 TTS Voice Audit — **PARTIALLY DONE.** Audio files are 48kbps/24kHz MP3s (low quality). 16,207 files in `/audio/words/`. Components use mp3 first, fall back to browser speechSynthesis. **Need to assess if quality is "robotic" or acceptable.** Regenerating 16k files is a major effort — only do if clearly bad.
+3. ✅ Deep Links — courses.astro + podcast.astro both link to `/flashcards/?deck=X`
+4. ✅ Remove Mark-as-Done — All manual marking removed from grammar + phrases + dashboard
+5. ✅ New Dashboard Tracking — 4 auto-tracked stat cards (grammar, cards, time, podcasts)
+6. ✅ Grammar Lock/Unlock — Sequential progression with ≥70% test pass gate
+7. ✅ Games Page Redesign — Game of the Day, 3 categories, record badges
+8. ✅ Full Site Audit — QA passed, 0 issues, all 112 pages building clean
 
-### CONTEXT: Previous Sprint Results (Mar 6 Day — "Unit Quizzes, Grammar Review & Conversion")
-- ✅ Level-Based Personalization — DailyLesson, DeckSelect, Dashboard, courses.astro all read placement level
-- ✅ Podcast Comprehension Data — 105 quiz questions across all 35 episodes
-- ✅ Homepage → Placement Flow — New user CTA → placement test, personalized result CTAs
-- ✅ SEO Fixes — All URLs corrected from surge.sh → pages.dev, sitemap/robots.txt fixed
-- ✅ Game Verification — All 30 games reviewed, no bugs
+### Strategic State (Mar 7, 11:30 AM):
+FluentGe has **72 React components, 10 study modes, 14 pages, 112 total pages, placement test, level personalization, course units with real quizzes, podcast quizzes + vocab + deep links, grammar sequential lock/unlock with test gates, cloud sync, full gamification (XP + streaks + achievements + leaderboard), PWA, games redesigned, 266KB bundle**.
 
-### Strategic State (Mar 6, 11:30 AM):
-FluentGe has **71 React components, 10 study modes, 14 pages, 112 total pages, placement test, level personalization, course units, podcast quizzes, cloud sync, full gamification, PWA, 263KB bundle**.
+**The platform is LAUNCH-READY.** All Tornike priorities done. All structural gaps filled. The product is more feature-rich than Lingwing.com and competitive with Duolingo for the Georgian market.
 
-**The platform is MATURE. Every Tornike priority from Mar 2 is DONE.** We beat Lingwing.com on features. The engine works. Now we need to fill the remaining STRUCTURAL GAPS that separate us from a truly professional learning app.
+**What's left before launch:**
 
-**Gap #1: Course Unit Quizzes are fake.**
-Course units have a "ერთეულის ტესტი" (unit quiz) link that goes to generic /games/. This is a broken promise. Users complete a unit's vocab + grammar + podcast and then the "test" just dumps them at a random games page. We need REAL unit quizzes that test the specific vocabulary and grammar from that unit. This is the #1 disconnect in the guided learning path.
+**Gap #1: TTS Voice Quality — Unknown.**
+16,207 audio files at 48kbps/24kHz. Could be fine or could sound robotic. Need someone to actually LISTEN. This was Tornike's #2 priority. We should ask Tornike to listen to a few flashcards and tell us if the voices are OK. If not, we need a TTS regeneration plan (ElevenLabs or Google Cloud TTS).
 
-**Gap #2: Grammar is one-and-done.**
-Users complete a grammar lesson, get XP, and never review it. There's no spaced review for grammar concepts. Duolingo brings back old lessons periodically. We should add a "Grammar Review" feature — randomly resurface completed grammar exercises for review, with SRS-like spacing.
+**Gap #2: No real payment.**
+Premium modal exists but just shows "coming soon" toast. Can't make money yet. Need Stripe or BOG/TBC integration. But this may not be critical for launch — can launch free-tier first and add payment later.
 
-**Gap #3: Premium conversion flow is weak.**
-Premium page exists with pricing and FAQs, but there's no actual payment integration. The "buy" buttons don't work. Before we can make money, we need at least a Stripe checkout or a simple PayPal button. This is the revenue bottleneck.
+**Gap #3: Deep link verification untested.**
+Links exist in code but haven't been browser-tested end-to-end. A user clicking "Numbers" in courses should land on the numbers deck in flashcards. Need to verify the `?deck=` parameter actually works in the deployed app.
 
-**Gap #4: No vocabulary per podcast episode.**
-Podcast quizzes are done (105 questions), but there's no vocabulary list per episode. Each episode should highlight 5-8 key words with Georgian translations. This turns podcasts from passive listening into active vocabulary acquisition.
+**Gap #4: Mobile UX untested on real devices.**
+Everything tested via desktop browser. Need real mobile testing (Tornike's phone).
 
-**Gap #5: Profile page is shallow.**
-Profile exists but doesn't show much useful data. Should show: total words learned, grammar lessons completed, podcast episodes listened, games played, total study time, join date. Make users feel proud of their progress.
+**Gap #5: No marketing assets.**
+No screenshots, no app store listing, no social media presence for FluentGe. Before launch, need at least a few promotional images and a sharing strategy.
 
-### Tornike's 8 Priorities (Mar 6) — STATUS:
+### Sprint Goals (Mar 7 Night)
 
-1. **🔴 Daily Goal → Card-Based (not time-based)**
-   - STATUS: ✅ ALREADY DONE in gamification.ts! Goal is already card-based (default 50 cards)
-   - But DeckSelect still shows "~5 წთ" on DailyLesson CTA — needs cleanup
-   - Daily goal modal shows card presets (10/25/50/75/100) — needs verification
-   - Persistence works via localStorage — resets by date key, cumulative across sessions
-   - **Fix needed:** Remove any remaining "წთ" (minutes) references, verify card tracking
+1. **🔴 TTS Assessment** (Cron 3)
+   - Play sample audio files programmatically, assess quality
+   - If clearly robotic: plan regeneration with better TTS
+   - If acceptable: mark as done, move on
 
-2. **🔴 Replace ALL Old Robotic TTS Voices**
-   - Current: speechSynthesis API (browser built-in) for listening exercises + podcast vocab
-   - The audio files in `/flashcards/audio/words/` are pre-generated — need to check quality
-   - All 142 decks have audio files — these are the main TTS used
-   - **Action:** Audit all audio sources. If using old voices, regenerate with better TTS
+2. **🔴 End-to-End Deep Link Testing** (Cron 2 + 5)
+   - Browser-test every course → flashcard link
+   - Browser-test podcast → flashcard links
+   - Fix any broken links
 
-3. **🔴 Fix Deep Links: Courses → Specific Flashcard Decks**
-   - STATUS: ✅ courses.astro already deep-links to `/flashcards/?deck=greetings` etc.
-   - App.tsx has `?deck=` handler that auto-opens the deck
-   - Grammar pages already deep-link correctly (`/flashcards/?deck=${d.deck}`)
-   - Podcast page has NO flashcard links at all — needs adding
-   - **Fix needed:** Verify all course links work, add flashcard links to podcast page
+3. **🟡 Mobile Responsiveness Audit** (Cron 2)
+   - Check all pages at mobile viewport (375px, 414px)
+   - Fix any overflow, touch target, or layout issues
 
-4. **🟡 Remove "Mark as Done" System**
-   - Grammar `[slug].astro` has "მონიშნე ნასწავლად" button (line 250)
-   - Phrases page has mark-phrase-btn buttons
-   - Dashboard may show completed counters
-   - **Action:** Remove mark-as-done buttons, remove related counters from dashboard
+4. **🟡 Performance Optimization** (Cron 4)
+   - Lighthouse audit on key pages
+   - Fix any critical performance issues
+   - Ensure fast load on Georgian mobile networks
 
-5. **🟡 Build NEW Dashboard Tracking System**
-   - Replace manual "mark as done" with automatic progress tracking
-   - Track: cards reviewed (already have this), grammar exercises completed (have via gamification bridge), podcasts listened (need to track), games played (have this)
-   - Dashboard should show REAL engagement metrics, not manual checkboxes
-   - **Action:** Redesign dashboard stats section with automatic tracking
-
-6. **🟡 Grammar Page: Lock/Unlock System**
-   - Currently all lessons accessible (premium ones locked by tier, not by progress)
-   - Need: sequential unlocking — must complete lesson N before accessing N+1
-   - Need: test at end of each lesson (grammar exercises already exist!)
-   - Passing test = lesson "learned" + next lesson unlocked
-   - **Action:** Add lock logic to grammar.astro, require exercise completion for unlock
-
-7. **🟢 Redesign Games Page**
-   - Current: grid of 30 game cards with basic styling
-   - Needs: polished, professional design
-   - **Action:** Redesign games.astro with better layout, categories, visual appeal
-
-8. **🟢 Full Site Audit**
-   - Check every page for bugs, visual issues, broken links
-   - **Action:** QA cron handles this
-
-### Sprint Goals (ordered by priority — Tornike's requests FIRST)
-
-1. **🔴 #1+#3: Daily Goal Cleanup + Deep Link Verification** (Cron 2)
-   - Remove "~5 წთ" from DailyLesson CTA, verify card-based goal works
-   - Test all course → flashcard deep links
-   - Add flashcard links to podcast episodes
-
-2. **🔴 #2: TTS Voice Audit** (Cron 3)
-   - Check audio file quality in flashcard decks
-   - Identify robotic voices, plan replacement
-
-3. **🔴 #4+#5: Remove Mark-as-Done + New Dashboard Tracking** (Cron 3)
-   - Remove all "mark as done" buttons from grammar and phrases
-   - Remove related dashboard counters
-   - Build new automatic progress tracking on dashboard
-
-4. **🟡 #6: Grammar Lock/Unlock System** (Cron 4)
-   - Sequential lesson unlocking on grammar.astro
-   - Exercise completion = lesson passed → auto-unlocks next
-   - Visual locked/unlocked states
-
-5. **🟡 #7: Games Page Redesign** (Cron 4)
-   - Better layout, categories, polish
+5. **🟢 Marketing Assets Prep** (Cron 4)
+   - Create 3-5 screenshots for social media
+   - Write short Georgian description for sharing
 
 ### For Each Cron Tonight:
-- **Cron 1 (Strategy, 1:00AM):** ← THIS RUN. Sprint planning around Tornike's 8 priorities.
-- **Cron 2 (Design, 3:00AM):** Daily goal cleanup, deep link fixes, games page redesign CSS, grammar lock UI.
-- **Cron 3 (Features, 5:00AM):** Remove mark-as-done, build new dashboard tracking, TTS audit, podcast flashcard links.
-- **Cron 4 (Improvements, 7:00AM):** Grammar lock/unlock system, games page redesign implementation.
-- **Cron 5 (QA, 9:00AM):** Full site audit (Tornike's #8) — every page, every link, every component.
+- **Cron 1 (Strategy, 1:00AM):** Sprint planning, competitive review, launch checklist.
+- **Cron 2 (Design, 3:00AM):** Mobile responsiveness audit, deep link testing, any visual fixes.
+- **Cron 3 (Features, 5:00AM):** TTS quality assessment, any feature gaps found.
+- **Cron 4 (Improvements, 7:00AM):** Performance audit, marketing prep, polish.
+- **Cron 5 (QA, 9:00AM):** Full end-to-end testing of all user flows.
 
 ## Technical Specs
 

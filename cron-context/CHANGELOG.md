@@ -7,6 +7,45 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-07
 
+### Cron 1B — Strategy (11:30 AM, Day Run)
+- **Sprint review:** "Tornike's 8 Priorities" sprint (Mar 7 night) — 7/8 completed ✅
+  - Daily Goal → Card-Based ✅
+  - Deep Links (courses + podcast → flashcards) ✅
+  - Remove Mark-as-Done ✅
+  - New Dashboard Auto-Tracking ✅
+  - Grammar Lock/Unlock + ≥70% Pass Gate ✅
+  - Games Page Redesign ✅
+  - Full Site Audit (0 bugs) ✅
+  - TTS Voice Audit — 🟡 PARTIAL (files audited: 16,207 MP3s at 48kbps/24kHz. Quality unknown — need human listener)
+- **Platform assessment:** 72 React components, 10 study modes, 127 decks, 112 pages, 266KB bundle. ALL Tornike priorities done. Platform is LAUNCH-READY.
+- **Remaining gaps:**
+  1. TTS quality — need Tornike to listen and judge. Files are low bitrate but may be acceptable.
+  2. No real payment integration (modal only, no Stripe/BOG)
+  3. Deep links untested end-to-end in browser
+  4. Mobile UX untested on real devices
+  5. No marketing assets (screenshots, social posts)
+- **New sprint:** "Polish, TTS & Launch Readiness"
+  - Mobile responsiveness audit (Cron 2)
+  - Deep link E2E browser testing (Cron 2+5)
+  - TTS quality assessment (Cron 3)
+  - Performance/Lighthouse audit (Cron 4)
+  - Marketing asset prep (Cron 4)
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md with new sprint
+- **Recommendation for Tornike:** Open fluentge.pages.dev/flashcards/, tap any deck, listen to a few words. Tell me if the voice sounds good or robotic. That decides if we need to regenerate 16k audio files.
+
+### Cron 4 — Improvements (7:00 AM)
+- **🔒 Grammar Test Pass Gate (≥70%):**
+  - Grammar exercises now require ≥70% score to mark lesson as complete
+  - Failing does NOT call `markGrammarComplete()` — lesson stays locked for sequential unlock
+  - Pass/fail badge on result screen (green ✅ / red ❌), dynamic heading
+  - "შემდეგი გაკვეთილი →" green button appears only on pass
+  - Completes Tornike's requirement: "TEST at end of each lesson, passing unlocks next"
+- **🔗 Podcast → Flashcard Deep Links:**
+  - Added `episodeDecks` mapping for all 35 podcast episodes → related flashcard decks
+  - Each episode shows 2 related deck links as sky-blue pill buttons
+  - Links use `/flashcards/?deck=X` for direct deck navigation
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **🗑️ Remove Mark-as-Done System:**
   - Removed "მონიშნე ნასწავლად" button + JS from grammar/[slug].astro

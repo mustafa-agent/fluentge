@@ -55,14 +55,20 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 7 night) — "Tornike's 8 Priorities"
-- [ ] **🎯 Daily Goal** — Remove "~5 წთ", verify card presets work ← Cron 2
-- [ ] **🔗 Deep Links** — Test courses→flashcards, add podcast→flashcard links ← Cron 2
-- [ ] **🗑️ Mark-as-Done Removal** — Grammar [slug].astro + phrases.astro cleanup ← Cron 3
-- [ ] **📊 Dashboard Redesign** — Auto-tracked metrics instead of manual marks ← Cron 3
-- [ ] **🔒 Grammar Sequential Lock** — Unlock-by-completion system ← Cron 4
-- [ ] **🎮 Games Page** — Category grouping, visual redesign ← Cron 4
-- [ ] **🔍 Site Audit** — Full QA ← Cron 5
+## 🎯 THIS SPRINT (Mar 7 night) — "Polish, TTS & Launch Readiness"
+- [ ] **📱 Mobile Responsiveness** — Test all pages at mobile viewports, fix issues ← Cron 2
+- [ ] **⚡ Performance** — Lighthouse audit, optimize critical rendering path ← Cron 4
+- [ ] **🔗 Deep Link E2E** — Browser-verify all cross-section links work ← Cron 2+5
+- [ ] **🔊 TTS Quality** — Assess audio files, plan regeneration if needed ← Cron 3
+
+## ✅ COMPLETED — Tornike's 8 Priorities (Mar 7)
+- ✅ Daily Goal → Card-Based (removed "წთ", card presets verified)
+- ✅ Deep Links added (courses + podcast → flashcards)
+- ✅ Mark-as-Done removed (grammar + phrases + dashboard)
+- ✅ Dashboard auto-tracking (4 gradient stat cards)
+- ✅ Grammar Sequential Lock (3 states + ≥70% pass gate)
+- ✅ Games Page Redesign (spotlight + categories + records)
+- ✅ Full Site Audit (0 bugs found)
 
 ## Recently Improved ✅
 - [x] Free grammar expanded 3→8 A1 lessons (present-simple, present-continuous, subject-pronouns, possessive-adjectives, prepositions-of-place) (Cron 4, Mar 1)

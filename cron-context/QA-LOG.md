@@ -1,9 +1,46 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-06 (7:30 PM)
+- **Date:** 2026-03-07 (9:00 AM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Morning QA Run (Mar 7, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Flashcard App Build — ✅ Clean
+- **Main bundle: 266.26 KB** (gzip 79.23 KB)
+- **Top-2000 chunk: 469.25 KB**
+- Built in 4.72s
+
+### Website Build — ✅ Clean
+- **112 pages** built in 7.57s, no errors
+
+### Tonight's "Tornike's 8 Priorities" Sprint Verified (Crons 1-4, Mar 7)
+- [x] **Daily Goal → Card-Based (Cron 2):** "~5 წთ" replaced with "10 ბარათი" on DeckSelect CTA + homepage ✅
+- [x] **Grammar Lock/Unlock Sequential System (Cron 2):** 3 states (✅ completed, ▶️ current pulse, 🔒 locked greyed) — verified via screenshot, data attributes present ✅
+- [x] **Games Page Redesign (Cron 2):** "⭐ დღის თამაში" spotlight, 3 category sections (📚 ლექსიკა 14, 📝 გრამატიკა 8, 🎯 გართობა 8), personal record badges — verified via screenshot ✅
+- [x] **Remove Mark-as-Done (Cron 3):** Zero "მონიშნე ნასწავლად" or "mark-phrase-btn" in grammar/[slug].astro or phrases.astro — grep confirmed ✅
+- [x] **New Auto Dashboard Tracking (Cron 3):** 4 gradient stat cards (grammar, cards reviewed, study time, podcasts) — code reviewed ✅
+- [x] **Dashboard uses fluentge-grammar-completed (Cron 3):** Both dashboard/index.astro and dashboard/grammar.astro read auto-tracked key — grep confirmed ✅
+- [x] **Grammar Test Pass Gate ≥70% (Cron 4):** `pct >= 70` check, pass/fail badge, "შემდეგი გაკვეთილი →" only on pass, fail message "მინიმუმ 70%" — code verified ✅
+- [x] **Podcast → Flashcard Deep Links (Cron 4):** episodeDecks mapping + `/flashcards/?deck=X` links — grep confirmed 4 references ✅
+
+### Browser Screenshots — ✅ All Rendering
+- **Flashcards:** Stats bar, Daily Lesson CTA, SRS reminder, Top 2000 hero, all deck cards ✅
+- **Grammar:** Sequential lock/unlock (to-be = current, rest locked), 5 levels, review CTA, premium CTA ✅
+- **Games:** Day's game spotlight, 3 category sections, game cards with badges ✅
+- **Courses:** 6 units, expandable lessons, lock icons, 0% progress, placement test CTA ✅
+
+### Verdict
+All 8 Tornike priority items from Mar 6 now addressed by tonight's crons. Mark-as-done fully removed. Grammar sequential unlock with test gate working. Games redesigned. No bugs found. Bundle size +2.3 KB (266 KB). Site stable at 112 pages.
+
+---
 
 ## Evening QA Run (Mar 6, 7:30 PM)
 

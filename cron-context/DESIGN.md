@@ -64,10 +64,14 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 7 night) — Cron 2 Tasks:
-- [x] **🎯 Daily Goal Cleanup** — Replaced "~5 წთ" with "10 ბარათი" on DeckSelect CTA + homepage ✅
-- [ ] **🔗 Deep Link Verification** — Deferred to next run (lower priority vs design tasks)
-- [x] **🔒 Grammar Lock UI** — Sequential lock/unlock: ✅ completed (green border), ▶️ current (blue glow + pulse), 🔒 locked (greyed, no click). Uses fluentge-grammar-completed localStorage. ✅
-- [x] **🎮 Games Page Redesign** — Game of the Day spotlight (deterministic by date), 3 category sections (📚 Vocab, 📝 Grammar, 🎯 Fun), record badges on cards. ✅
+- [ ] **📱 Mobile Responsiveness Audit** — Test all pages at 375px/414px, fix overflow/touch issues
+- [ ] **🔗 Deep Link E2E Verification** — Browser-test course/podcast → flashcard navigation
+- [ ] **🎨 Visual Polish** — Fix any inconsistencies found during mobile audit
+
+### ✅ COMPLETED (Mar 7 sprint):
+- ✅ Daily Goal Cleanup — "~5 წთ" → "10 ბარათი"
+- ✅ Grammar Lock UI — 3 visual states (completed/current/locked)
+- ✅ Games Page Redesign — Spotlight + categories + records
 
 ### Backlog:
 - [ ] Consistent card borders across all components
