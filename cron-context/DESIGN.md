@@ -64,10 +64,10 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 7 night) — Cron 2 Tasks:
-- [ ] **🎯 Daily Goal Cleanup** — Remove "~5 წთ" from DailyLesson CTA. Verify card-based goal modal presets. Ensure all UI shows "ბარათი" not "წთ".
-- [ ] **🔗 Deep Link Verification** — Test all 30 course→flashcard links. Add vocabulary pill links from podcast episodes to specific flashcard decks.
-- [ ] **🔒 Grammar Lock UI** — Design locked/unlocked/completed states for lesson cards. 🔒 overlay for locked, ✅ for completed, ▶ for current.
-- [ ] **🎮 Games Page Redesign** — Category headers, improved card design, "Game of the Day" spotlight, stats row.
+- [x] **🎯 Daily Goal Cleanup** — Replaced "~5 წთ" with "10 ბარათი" on DeckSelect CTA + homepage ✅
+- [ ] **🔗 Deep Link Verification** — Deferred to next run (lower priority vs design tasks)
+- [x] **🔒 Grammar Lock UI** — Sequential lock/unlock: ✅ completed (green border), ▶️ current (blue glow + pulse), 🔒 locked (greyed, no click). Uses fluentge-grammar-completed localStorage. ✅
+- [x] **🎮 Games Page Redesign** — Game of the Day spotlight (deterministic by date), 3 category sections (📚 Vocab, 📝 Grammar, 🎯 Fun), record badges on cards. ✅
 
 ### Backlog:
 - [ ] Consistent card borders across all components

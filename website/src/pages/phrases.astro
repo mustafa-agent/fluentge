@@ -146,9 +146,7 @@ const FREE_CATEGORIES = 5;
                         <p class="text-[#C8C8C0] font-medium text-lg">{phrase.english}</p>
                         <p class="text-[#8B8B85] mt-1">{phrase.georgian}</p>
                       </div>
-                      <button class="mark-phrase-btn flex-shrink-0 w-8 h-8 rounded-full border-2 border-[#6B6B65] flex items-center justify-center text-[#6B6B65] hover:border-green-400 hover:text-green-400 transition-colors" data-phrase={phrase.english} title="მონიშნე ნასწავლად">
-                        ✓
-                      </button>
+<!-- mark-as-done removed -->
                     </div>
                     {phrase.literal && <p class="text-xs text-[#5B5B55] mt-1 italic">პირდაპირი: {phrase.literal}</p>}
                     <div class="flex items-center gap-2 mt-2">
@@ -311,27 +309,5 @@ const FREE_CATEGORIES = 5;
     });
   });
 
-  // Mark phrases as learned
-  const learned = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
-  document.querySelectorAll('.mark-phrase-btn').forEach(btn => {
-    const phrase = (btn as HTMLElement).dataset.phrase || '';
-    if (learned.includes(phrase)) {
-      btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
-      btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
-    }
-    btn.addEventListener('click', () => {
-      const stored = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
-      if (stored.includes(phrase)) {
-        const idx = stored.indexOf(phrase);
-        stored.splice(idx, 1);
-        btn.classList.remove('border-green-400', 'text-green-400', 'bg-green-400/10');
-        btn.classList.add('border-[#6B6B65]', 'text-[#6B6B65]');
-      } else {
-        stored.push(phrase);
-        btn.classList.add('border-green-400', 'text-green-400', 'bg-green-400/10');
-        btn.classList.remove('border-[#6B6B65]', 'text-[#6B6B65]');
-      }
-      localStorage.setItem('fluentge-learned-phrases', JSON.stringify(stored));
-    });
-  });
+  // Mark-as-done system removed — progress tracked automatically
 </script>

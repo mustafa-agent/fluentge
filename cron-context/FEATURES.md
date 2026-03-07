@@ -6,8 +6,8 @@
 - [ ] **🎯 Daily Goal Cleanup** — Remove time references, verify card-based tracking ← Cron 2
 - [ ] **🔊 TTS Voice Audit** — Check audio quality, identify robotic voices ← Cron 3
 - [ ] **🔗 Deep Link Fixes** — Verify course links, add podcast→flashcard links ← Cron 2
-- [ ] **🗑️ Remove Mark-as-Done** — Delete manual marking system from grammar+phrases+dashboard ← Cron 3
-- [ ] **📊 New Dashboard Tracking** — Automatic progress metrics replacing manual marks ← Cron 3
+- 🔄 **🗑️ Remove Mark-as-Done** — Delete manual marking system from grammar+phrases+dashboard ← Cron 3
+- 🔄 **📊 New Dashboard Tracking** — Automatic progress metrics replacing manual marks ← Cron 3
 - [ ] **🔒 Grammar Lock/Unlock** — Sequential lessons with test-to-unlock ← Cron 4
 - [ ] **🎮 Games Page Redesign** — Categories, polish, professional look ← Cron 4
 - [ ] **🔍 Full Site Audit** — Every page tested ← Cron 5

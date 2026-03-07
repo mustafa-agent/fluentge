@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { UserStats, getCurrentStreak, getTotalXP, calculateLevel, getXPProgress, getTodayCardsReviewed, getDailyCardGoal, getDailyHistory, type DailyActivity } from '../lib/gamification';
+import { UserStats, getCurrentStreak, getTotalXP, calculateLevel, getXPProgress, getTodayCardsReviewed, getDailyCardGoal, getDailyHistory, getTodayStudyTime, type DailyActivity } from '../lib/gamification';
 import { isDeckFree, deckIndex } from '../lib/deck-index';
 import { useAllDecks } from '../lib/useDecks';
 import { getCardProgress, getCardsInState } from '../lib/spaced-repetition';
@@ -166,7 +166,7 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
     { id: 'streak-7', icon: '⚡', title: 'კვირის ჩემპიონი', desc: '7 დღიანი რიგითობა', gradient: 'from-red-500 to-pink-600', check: () => userStats.currentStreak >= 7 },
     { id: 'xp-100', icon: '⭐', title: 'XP შემგროვებელი', desc: 'დააგროვე 100 XP', gradient: 'from-yellow-500 to-amber-600', check: () => userStats.totalXP >= 100 },
     { id: 'xp-500', icon: '🌟', title: 'XP ვარსკვლავი', desc: 'დააგროვე 500 XP', gradient: 'from-cyan-500 to-teal-600', check: () => userStats.totalXP >= 500 },
-    { id: 'grammar-1', icon: '✏️', title: 'გრამატიკოსი', desc: 'დაასრულე 1 გრამატიკის გაკვეთილი', gradient: 'from-indigo-500 to-blue-600', check: () => { try { return JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]').length >= 1; } catch { return false; } } },
+    { id: 'grammar-1', icon: '✏️', title: 'გრამატიკოსი', desc: 'დაასრულე 1 გრამატიკის გაკვეთილი', gradient: 'from-indigo-500 to-blue-600', check: () => { try { return JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]').length >= 1; } catch { return false; } } },
     { id: 'level-5', icon: '🏆', title: 'დონე 5', desc: 'მიაღწიე მე-5 დონეს', gradient: 'from-pink-500 to-rose-600', check: () => userStats.level >= 5 },
   ];
 
@@ -313,6 +313,45 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
               />
             </div>
           </div>
+        </div>
+
+        {/* Automatic Learning Progress */}
+        <div className="bg-[var(--color-card)] rounded-xl p-4">
+          <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
+            📊 სწავლის პროგრესი
+          </h2>
+          <p className="text-xs text-[var(--color-text-muted)] mb-4">
+            ავტომატურად აღირიცხება შენი აქტივობის მიხედვით
+          </p>
+          
+          {(() => {
+            const grammarCompleted = (() => { try { return JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]').length; } catch { return 0; } })();
+            const studyTimeToday = getTodayStudyTime();
+            const totalStudyMinutes = (() => { const hist = getDailyHistory(30); return hist.reduce((s, d) => s + d.minutes, 0); })();
+            const totalCardsEver = (() => { const hist = getDailyHistory(30); return hist.reduce((s, d) => s + d.cards, 0); })();
+            const podcastsListened = (() => { try { return JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]').length; } catch { return 0; } })();
+            
+            return (
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl p-3 text-center">
+                  <div className="text-2xl font-bold text-green-400">{grammarCompleted}</div>
+                  <div className="text-xs text-[var(--color-text-muted)]">გრამატიკა დასრულებული</div>
+                </div>
+                <div className="bg-gradient-to-br from-sky-500/20 to-blue-500/20 border border-sky-500/30 rounded-xl p-3 text-center">
+                  <div className="text-2xl font-bold text-sky-400">{totalCardsEver}</div>
+                  <div className="text-xs text-[var(--color-text-muted)]">ბარათი გადახედილი (30 დღე)</div>
+                </div>
+                <div className="bg-gradient-to-br from-amber-500/20 to-orange-500/20 border border-amber-500/30 rounded-xl p-3 text-center">
+                  <div className="text-2xl font-bold text-amber-400">{totalStudyMinutes}<span className="text-sm"> წთ</span></div>
+                  <div className="text-xs text-[var(--color-text-muted)]">სულ სწავლის დრო</div>
+                </div>
+                <div className="bg-gradient-to-br from-purple-500/20 to-violet-500/20 border border-purple-500/30 rounded-xl p-3 text-center">
+                  <div className="text-2xl font-bold text-purple-400">{podcastsListened}</div>
+                  <div className="text-xs text-[var(--color-text-muted)]">პოდკასტი მოსმენილი</div>
+                </div>
+              </div>
+            );
+          })()}
         </div>
 
         {/* Game Stats */}
@@ -513,7 +552,7 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
               const isCompleted = item.type === 'flashcard' 
                 ? activeDecks.find(d => d.id === item.link)?.progress?.mastered > 0
                 : item.type === 'grammar' && item.grammar
-                ? (() => { try { const g = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]'); return g.includes(item.grammar); } catch { return false; } })()
+                ? (() => { try { const g = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]'); return g.includes(item.grammar); } catch { return false; } })()
                 : false;
 
               return (

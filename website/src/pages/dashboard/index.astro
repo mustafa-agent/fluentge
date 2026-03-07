@@ -97,20 +97,20 @@ import Layout from '../../layouts/Layout.astro';
 
     <div class="grid grid-cols-2 gap-4 mb-8">
       <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold" id="stat-phrases">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი ფრაზები</p>
+        <p class="text-3xl font-bold text-green-400" id="stat-grammar">0</p>
+        <p class="text-[#6B6B65] text-sm mt-1">გრამატიკა დასრულებული</p>
       </div>
       <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold" id="stat-grammar">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი გაკვეთილები</p>
-      </div>
-      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold" id="stat-podcasts">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">მოსმენილი პოდკასტები</p>
-      </div>
-      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold" id="stat-cards">0</p>
+        <p class="text-3xl font-bold text-sky-400" id="stat-cards">0</p>
         <p class="text-[#6B6B65] text-sm mt-1">ნასწავლი სიტყვები</p>
+      </div>
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
+        <p class="text-3xl font-bold text-amber-400" id="stat-studytime">0</p>
+        <p class="text-[#6B6B65] text-sm mt-1">სწავლის დრო (წთ)</p>
+      </div>
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
+        <p class="text-3xl font-bold text-purple-400" id="stat-podcasts">0</p>
+        <p class="text-[#6B6B65] text-sm mt-1">მოსმენილი პოდკასტები</p>
       </div>
     </div>
 
@@ -361,7 +361,7 @@ import Layout from '../../layouts/Layout.astro';
       }
 
       const phrases = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
-      const grammar = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
+      const grammar = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]');
       const podcasts = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
       // Count unique base words from card progress
       var cardProgress = {};
@@ -372,10 +372,16 @@ import Layout from '../../layouts/Layout.astro';
         baseWords[base] = true;
       });
       var wordCount = totalSeen || Object.keys(baseWords).length;
-      document.getElementById('stat-phrases').textContent = phrases.length;
       document.getElementById('stat-grammar').textContent = grammar.length;
       document.getElementById('stat-podcasts').textContent = podcasts.length;
       document.getElementById('stat-cards').textContent = wordCount;
+      // Study time from daily history
+      var totalStudyMin = 0;
+      try {
+        var dh = JSON.parse(localStorage.getItem('fluentge-daily-history') || '{}');
+        Object.values(dh).forEach(function(d) { totalStudyMin += (d && d.minutes) || 0; });
+      } catch(e) {}
+      document.getElementById('stat-studytime').textContent = totalStudyMin;
 
       // Game stats
       var gamesPlayed = parseInt(localStorage.getItem('gamesPlayed') || '0', 10);

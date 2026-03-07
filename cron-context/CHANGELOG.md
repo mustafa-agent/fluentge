@@ -7,6 +7,19 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-07
 
+### Cron 2 — Design (3:00 AM)
+- **🎯 Daily Goal Cleanup:**
+  - Replaced "~5 წთ" badge with "10 ბარათი" on DeckSelect Daily Lesson CTA + homepage
+- **🔒 Grammar Lock/Unlock UI — Sequential Progression:**
+  - Rewrote grammar.astro lesson cards with data attributes for sequential unlock
+  - 3 states: ✅ completed (green border, "გავლილი"), ▶️ current (sky glow, "📍 მიმდინარე" pulse), 🔒 locked (greyed, no click)
+  - Premium users bypass sequential locks
+- **🎮 Games Page Redesign:**
+  - "⭐ დღის თამაში" spotlight (deterministic by day-of-year, gradient indigo/purple card)
+  - 3 category sections: 📚 ლექსიკა (14), 📝 გრამატიკა (8), 🎯 გართობა (8)
+  - 🏆 personal record badges on game cards
+- Deployed ✅, git committed & pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **⚠️ CRITICAL REALIGNMENT: Tornike's 8 priorities from Mar 6 were NOT being worked on!**
   - Previous sprints did strategic work (unit quizzes, grammar review, etc.) while ignoring the boss's direct requests

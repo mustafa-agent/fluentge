@@ -205,7 +205,7 @@ const units = [
 
       // Completion tracking from localStorage
       var learnedGrammar = [];
-      try { learnedGrammar = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]'); } catch(e) {}
+      try { learnedGrammar = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]'); } catch(e) {}
       var progress = {};
       try { progress = JSON.parse(localStorage.getItem('fluentge_progress') || '{}'); } catch(e) {}
 
