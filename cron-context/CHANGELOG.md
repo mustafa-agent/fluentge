@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-07
 
+### Cron 3 — Features (5:00 AM)
+- **🗑️ Remove Mark-as-Done System:**
+  - Removed "მონიშნე ნასწავლად" button + JS from grammar/[slug].astro
+  - Removed mark-phrase-btn buttons + JS from phrases.astro
+  - Switched ALL references from `fluentge-learned-grammar` (manual) to `fluentge-grammar-completed` (automatic via gamification bridge)
+  - Updated: Dashboard.tsx achievements, learning path, courses.astro, dashboard/index.astro
+  - Rewrote dashboard/grammar.astro to show auto-tracked completed lessons (with links)
+  - Simplified dashboard/phrases.astro (no more manual tracking)
+- **📊 New Automatic Dashboard Tracking:**
+  - Added "📊 სწავლის პროგრესი" section to React Dashboard.tsx
+  - 4 gradient stat cards: grammar completed, cards reviewed (30 days), total study time (minutes), podcasts listened
+  - All data sourced from automatic localStorage tracking (no manual clicks needed)
+  - Updated Astro dashboard: replaced "ნასწავლი ფრაზები" stat with "სწავლის დრო (წთ)"
+  - Stats now color-coded (green/sky/amber/purple) for visual clarity
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **🎯 Daily Goal Cleanup:**
   - Replaced "~5 წთ" badge with "10 ბარათი" on DeckSelect Daily Lesson CTA + homepage

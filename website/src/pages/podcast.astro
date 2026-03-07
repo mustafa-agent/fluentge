@@ -1,6 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+// Episode → related flashcard decks mapping
+const episodeDecks: Record<number, {deck: string, label: string, emoji: string}[]> = {
+  1: [{deck: 'travel', label: 'მოგზაურობა', emoji: '✈️'}, {deck: 'greetings', label: 'მისალმებები', emoji: '👋'}],
+  2: [{deck: 'food', label: 'საკვები', emoji: '🍕'}, {deck: 'greetings', label: 'მისალმებები', emoji: '👋'}],
+  3: [{deck: 'work', label: 'სამუშაო', emoji: '💼'}, {deck: 'jobs', label: 'პროფესიები', emoji: '👨‍⚕️'}],
+  4: [{deck: 'travel', label: 'მოგზაურობა', emoji: '✈️'}, {deck: 'home', label: 'სახლი', emoji: '🏠'}],
+  5: [{deck: 'health', label: 'ჯანმრთელობა', emoji: '🏥'}, {deck: 'bodyparts', label: 'სხეულის ნაწილები', emoji: '🦴'}],
+  6: [{deck: 'health', label: 'ჯანმრთელობა', emoji: '🏥'}, {deck: 'bodyparts', label: 'სხეულის ნაწილები', emoji: '🦴'}],
+  7: [{deck: 'shopping', label: 'შოპინგი', emoji: '🛒'}, {deck: 'clothing', label: 'ტანსაცმელი', emoji: '👗'}],
+  8: [{deck: 'directions', label: 'მიმართულებები', emoji: '🧭'}, {deck: 'travel', label: 'მოგზაურობა', emoji: '✈️'}],
+  9: [{deck: 'education', label: 'განათლება', emoji: '📚'}, {deck: 'dailyroutines', label: 'რუტინა', emoji: '🌅'}],
+  10: [{deck: 'finance', label: 'ფინანსები', emoji: '💰'}, {deck: 'shopping', label: 'შოპინგი', emoji: '🛒'}],
+  11: [{deck: 'finance', label: 'ფინანსები', emoji: '💰'}, {deck: 'shopping', label: 'შოპინგი', emoji: '🛒'}],
+  12: [{deck: 'home', label: 'სახლი', emoji: '🏠'}, {deck: 'shopping', label: 'შოპინგი', emoji: '🛒'}],
+  13: [{deck: 'sports', label: 'სპორტი', emoji: '⚽'}, {deck: 'health', label: 'ჯანმრთელობა', emoji: '🏥'}],
+  14: [{deck: 'nature', label: 'ბუნება', emoji: '🌿'}, {deck: 'travel', label: 'მოგზაურობა', emoji: '✈️'}],
+  15: [{deck: 'food', label: 'საკვები', emoji: '🍕'}, {deck: 'dailyroutines', label: 'რუტინა', emoji: '🌅'}],
+  16: [{deck: 'technology', label: 'ტექნოლოგია', emoji: '💻'}, {deck: 'computers', label: 'პროგრამირება', emoji: '👨‍💻'}],
+  17: [{deck: 'travel', label: 'მოგზაურობა', emoji: '✈️'}, {deck: 'nature', label: 'ბუნება', emoji: '🌿'}],
+  18: [{deck: 'movies', label: 'ფილმები', emoji: '🎬'}, {deck: 'entertainment', label: 'გართობა', emoji: '🎭'}],
+  19: [{deck: 'relationships-social', label: 'ურთიერთობები', emoji: '🤝'}, {deck: 'greetings', label: 'მისალმებები', emoji: '👋'}],
+  20: [{deck: 'emergency', label: 'გადაუდებელი', emoji: '🚨'}, {deck: 'health', label: 'ჯანმრთელობა', emoji: '🏥'}],
+  21: [{deck: 'education', label: 'განათლება', emoji: '📚'}, {deck: 'work', label: 'სამუშაო', emoji: '💼'}],
+  22: [{deck: 'music', label: 'მუსიკა', emoji: '🎵'}, {deck: 'entertainment', label: 'გართობა', emoji: '🎭'}],
+  23: [{deck: 'food', label: 'საკვები', emoji: '🍕'}, {deck: 'health', label: 'ჯანმრთელობა', emoji: '🏥'}],
+  24: [{deck: 'nature', label: 'ბუნება', emoji: '🌿'}, {deck: 'animals', label: 'ცხოველები', emoji: '🐾'}],
+  25: [{deck: 'socialmedia', label: 'სოცმედია', emoji: '📱'}, {deck: 'technology', label: 'ტექნოლოგია', emoji: '💻'}],
+  26: [{deck: 'holidays', label: 'დღესასწაულები', emoji: '🎉'}, {deck: 'family', label: 'ოჯახი', emoji: '👨‍👩‍👧‍👦'}],
+  27: [{deck: 'environment', label: 'გარემო', emoji: '🌍'}, {deck: 'nature', label: 'ბუნება', emoji: '🌿'}],
+  28: [{deck: 'travel', label: 'მოგზაურობა', emoji: '✈️'}, {deck: 'food', label: 'საკვები', emoji: '🍕'}],
+  29: [{deck: 'work', label: 'სამუშაო', emoji: '💼'}, {deck: 'technology', label: 'ტექნოლოგია', emoji: '💻'}],
+  30: [{deck: 'relationships-social', label: 'ურთიერთობები', emoji: '🤝'}, {deck: 'emotions', label: 'ემოციები', emoji: '😊'}],
+  31: [{deck: 'greetings', label: 'მისალმებები', emoji: '👋'}, {deck: 'verbs', label: 'ზმნები', emoji: '🏃'}],
+  32: [{deck: 'dailyroutines', label: 'რუტინა', emoji: '🌅'}, {deck: 'verbs', label: 'ზმნები', emoji: '🏃'}],
+  33: [{deck: 'food', label: 'საკვები', emoji: '🍕'}, {deck: 'numbers', label: 'რიცხვები', emoji: '🔢'}],
+  34: [{deck: 'travel', label: 'მოგზაურობა', emoji: '✈️'}, {deck: 'directions', label: 'მიმართულებები', emoji: '🧭'}],
+  35: [{deck: 'work', label: 'სამუშაო', emoji: '💼'}, {deck: 'education', label: 'განათლება', emoji: '📚'}],
+};
+
 const episodes = [
 { id: 1, title: "At the Airport", titleKa: "აეროპორტში", icon: "✈️", duration: "2:00", file: "/podcast/episode1-at-the-airport.mp3", free: true,
     vocab: ["Boarding pass", "Gate", "Luggage", "Passport", "Check in", "Departure", "Arrival", "Delay"],
@@ -741,6 +780,20 @@ const episodes = [
                 ))}
               </div>
             </div>
+
+            {/* Related Flashcard Decks */}
+            {episodeDecks[ep.id] && (
+              <div class="mb-4 flex items-center gap-2 flex-wrap">
+                <span class="text-xs text-[#6B6B65] font-medium">📝 ფლეშქარდები:</span>
+                {episodeDecks[ep.id].map(d => (
+                  <a href={`/flashcards/?deck=${d.deck}`} class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-sky-500/10 text-sky-400 border border-sky-500/20 hover:bg-sky-500/20 hover:border-sky-500/40 transition-all">
+                    <span>{d.emoji}</span>
+                    <span>{d.label}</span>
+                    <span class="text-[10px]">→</span>
+                  </a>
+                ))}
+              </div>
+            )}
 
             <div class={ep.free ? '' : 'podcast-premium-content hidden'}>
                 <!-- Custom Audio Player -->
