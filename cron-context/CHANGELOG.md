@@ -7,6 +7,23 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-07
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **📱 Mobile Responsiveness Audit:**
+  - Tested all major pages at 375px (iPhone SE): homepage, grammar, games, courses, flashcards, podcast
+  - No horizontal overflow on any page ✅
+  - Mobile bottom nav working on all pages ✅
+  - Game cards grid properly at 2 columns on mobile ✅
+- **🔗 Deep Link E2E Verification:**
+  - Courses → Flashcards: `/flashcards/?deck=greetings` works ✅ (opens deck directly)
+  - Courses → Grammar: `/grammar/to-be/` works ✅
+  - Courses → Podcast: `/podcast/#ep-1` works ✅
+  - Podcast → Flashcards: sky-blue pill links present and functional ✅
+- **🎨 Visual Polish:**
+  - Podcast page: player/transcript/quiz sections upgraded from `bg-[#1C1C1E]` to `bg-[#242426]` with borders for better card separation from page background
+  - Added `pv-pill` CSS for podcast vocab buttons: sky-blue themed, 36px min-height touch targets, hover/active states, light mode support
+  - Both light and dark mode verified on games, courses, grammar pages
+- Deployed ✅, git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM, Day Run)
 - **Sprint review:** "Tornike's 8 Priorities" sprint (Mar 7 night) — 7/8 completed ✅
   - Daily Goal → Card-Based ✅

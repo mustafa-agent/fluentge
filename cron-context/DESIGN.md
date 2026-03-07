@@ -63,10 +63,10 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 7 night) — Cron 2 Tasks:
-- [ ] **📱 Mobile Responsiveness Audit** — Test all pages at 375px/414px, fix overflow/touch issues
-- [ ] **🔗 Deep Link E2E Verification** — Browser-test course/podcast → flashcard navigation
-- [ ] **🎨 Visual Polish** — Fix any inconsistencies found during mobile audit
+### THIS SPRINT (Mar 7 day) — Cron 2 Tasks:
+- [x] **📱 Mobile Responsiveness Audit** — All pages tested at 375px, no overflow ✅ Mar 7 1:30PM
+- [x] **🔗 Deep Link E2E Verification** — courses→flashcards, courses→grammar, podcast→flashcards all working ✅ Mar 7 1:30PM
+- [x] **🎨 Visual Polish** — Podcast card contrast fix, vocab pill styling ✅ Mar 7 1:30PM
 
 ### ✅ COMPLETED (Mar 7 sprint):
 - ✅ Daily Goal Cleanup — "~5 წთ" → "10 ბარათი"

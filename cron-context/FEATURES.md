@@ -110,7 +110,8 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-(none)
+- 🔄 **🔊 TTS Voice Assessment** — Programmatic quality audit of 16k audio files (Cron 3, Mar 7 afternoon)
+- 🔄 **🎤 Speaking Practice** — Record pronunciation, compare with reference audio (Cron 3, Mar 7 afternoon)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar
