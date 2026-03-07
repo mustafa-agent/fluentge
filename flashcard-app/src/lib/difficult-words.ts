@@ -1,6 +1,7 @@
 // Difficult Words Tracker — tracks words users get wrong across all modes
+// Uses keyed object (by english word) for proper Firebase merge across devices
 
-const DIFFICULT_KEY = 'fluentge_difficult_words';
+const DIFFICULT_KEY = 'fluentge-difficult-words';
 
 export interface DifficultWord {
   english: string;
@@ -13,14 +14,43 @@ export interface DifficultWord {
   lastRight: number; // timestamp
 }
 
-export function getDifficultWords(): DifficultWord[] {
+// Internal: stored as object keyed by lowercase english word for merge compatibility
+interface DifficultWordsMap {
+  [key: string]: DifficultWord;
+}
+
+function getMap(): DifficultWordsMap {
   try {
-    return JSON.parse(localStorage.getItem(DIFFICULT_KEY) || '[]');
-  } catch { return []; }
+    const raw = localStorage.getItem(DIFFICULT_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    // Migration: if old format was array, convert to map
+    if (Array.isArray(parsed)) {
+      const map: DifficultWordsMap = {};
+      for (const w of parsed) {
+        map[w.english.toLowerCase()] = w;
+      }
+      localStorage.setItem(DIFFICULT_KEY, JSON.stringify(map));
+      return map;
+    }
+    return parsed;
+  } catch { return {}; }
+}
+
+export function getDifficultWords(): DifficultWord[] {
+  return Object.values(getMap());
 }
 
 function saveDifficultWords(words: DifficultWord[]) {
-  localStorage.setItem(DIFFICULT_KEY, JSON.stringify(words));
+  const map: DifficultWordsMap = {};
+  for (const w of words) {
+    map[w.english.toLowerCase()] = w;
+  }
+  localStorage.setItem(DIFFICULT_KEY, JSON.stringify(map));
+  // Trigger cloud sync
+  try {
+    import('./firebase-sync').then(m => m.syncNow());
+  } catch {}
 }
 
 /**

@@ -2,12 +2,15 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 7 night) — "Polish, TTS & Launch Readiness"
-- [x] **🔊 TTS Voice Assessment** — ✅ Assessed: ChristopherNeural (neural, NOT robotic), 98.7% EN coverage, 63 broken 0-byte files
-- [ ] **🔗 Deep Link E2E Testing** — Browser-test all course/podcast → flashcard links ← Cron 2+5
-- [ ] **📱 Mobile Responsiveness Audit** — Test all pages at 375px/414px viewport ← Cron 2
-- [ ] **⚡ Performance Audit** — Lighthouse scores, load time optimization ← Cron 4
-- [ ] **📸 Marketing Assets** — Screenshots + Georgian descriptions for sharing ← Cron 4
+### 🎯 THIS SPRINT (Mar 8 night) — "Tornike's Bug Fixes & Launch Polish"
+- [ ] **🐛 Word Count Consistency** — Unify homepage vs dashboard word counting ← Cron 3
+- [ ] **🐛 Dashboard Grammar Count** — Fix "0 გრამატიკა დასრულებული" tracking ← Cron 3
+- [ ] **🐛 Podcast Premium Display** — Verify "3 უფასო" hidden for premium users ← Cron 2
+- [ ] **🐛 Nav Premium Button** — Verify hidden for premium users ← Cron 2
+- [ ] **🎨 Light Mode Contrast** — Fix text visibility on cream background ← Cron 2
+- [ ] **🎨 Grammar Lock Icons** — Stronger visual differentiation ← Cron 2
+- [ ] **🇬🇪 Georgian Translations** — Apply audit fixes from georgian-audit-log.txt ← Cron 3
+- [ ] **⚡ Performance Audit** — Lighthouse scores ← Cron 4
 
 ### ✅ COMPLETED — Tornike's 8 Priorities (Mar 7 night sprint)
 - ✅ Daily Goal → Card-Based (Cron 2)

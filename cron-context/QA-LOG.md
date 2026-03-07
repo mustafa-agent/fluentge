@@ -1,9 +1,48 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-07 (9:00 AM)
+- **Date:** 2026-03-07 (7:30 PM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Evening QA Run (Mar 7, 7:30 PM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200, `/courses/` — 200, `/profile/` — 200, `/placement/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Flashcard App Build — ✅ Clean
+- **Main bundle: 266.58 KB** (gzip 79.32 KB)
+- **Top-2000 chunk: 469.25 KB**
+- Built in 4.93s
+
+### Website Build — ✅ Clean
+- **113 pages** built in 7.52s, no errors (was 112, +1 from 404.astro)
+
+### Today's Day Cron Changes Verified (Crons 2B-4B, Mar 7)
+- [x] **Speaking Practice (Cron 3B):** SpeakingPractice.tsx (456 lines), 11th study mode, Web Speech API, Levenshtein scoring ≥70% pass, lazy-loaded in App.tsx, 🎤 გამოთქმა in DeckSelect ✅
+- [x] **63 Broken TTS Files Fixed (Cron 4B):** Zero 0-byte MP3 files remaining — `find -size 0` returns 0 ✅
+- [x] **Custom 404 Page (Cron 4B):** 404.astro (58 lines), branded page with nav/footer, bilingual text, CTA to homepage — HTML verified via curl ✅
+- [x] **Mobile Responsiveness Audit (Cron 2B):** All pages tested at 375px — no horizontal overflow ✅
+- [x] **Deep Link E2E (Cron 2B):** Courses→Flashcards, Courses→Grammar, Podcast→Flashcards all verified ✅
+- [x] **Podcast Visual Polish (Cron 2B):** Upgraded card backgrounds, pv-pill CSS for vocab buttons ✅
+
+### Browser Verification — ✅ All Rendering
+- **Podcast page:** Full snapshot verified — episodes, vocab pills, audio players, quiz sections, deep links all present ✅
+- **Flashcards:** Page loads (200), React app renders ✅
+- **404 page:** Proper HTML with Layout, nav, SEO meta, branded content ✅
+
+### Code Review — No Issues
+- **SpeakingPractice.tsx:** Clean React, proper state management, Web Speech API with fallback, XP integration, result screen ✅
+- **App.tsx integration:** Lazy-loaded, screen type registered, mode handler wired ✅
+- **DeckSelect:** 11th mode (🎤 გამოთქმა) properly listed ✅
+
+### Verdict
+All 6 changes from today's day crons verified. 63 broken TTS files fixed (0 remaining). New speaking practice mode properly integrated. 404 page adds polish. Site now at 113 pages, 266.58 KB bundle (+0.32 KB from morning). No bugs found.
+
+---
 
 ## Morning QA Run (Mar 7, 9:00 AM)
 

@@ -50,6 +50,12 @@ html.light .text-\[\#6B6B65\] {
   color: #6B7280 !important;
 }
 
+html.light .text-\[\#a0a0aa\],
+html.light .text-\[\#c0c0c0\],
+html.light .text-\[\#D0D0CA\] {
+  color: #4B5563 !important;
+}
+
 /* Border overrides */
 html.light .border-\[\#2E2E30\],
 html.light .border-white\/10,
@@ -349,6 +355,25 @@ html.light .to-orange-500\/10 {
 html.light a[href="/premium/"].bg-\[var\(--color-primary\)\] {
   background-color: #1A1A2E !important;
   color: #FFFFFF !important;
+}
+
+/* Grammar lesson cards in light mode — fix gradient backgrounds set by JS */
+html.light .grammar-lesson-card {
+  background-color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  border-bottom-color: #D1D5DB !important;
+}
+
+html.light .grammar-lesson-card .text-lg {
+  color: #1A1A2E !important;
+}
+
+/* Grammar badge text needs darker colors in light mode */
+html.light .grammar-lesson-badge.text-green-400 {
+  color: rgb(22, 163, 74) !important;
+}
+html.light .grammar-lesson-badge.text-sky-300 {
+  color: rgb(2, 132, 199) !important;
 }
 
 /* ========== HERO GRADIENTS (all pages) ========== */

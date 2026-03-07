@@ -92,7 +92,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           <a href="/courses/" class="hover:text-white transition-colors">კურსები</a>
           <a href="/blog/" class="hover:text-white transition-colors">ბლოგი</a>
           <a href="/about/" class="hover:text-white transition-colors">შესახებ</a>
-          <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">პრემიუმი</a>
+          <a href="/premium/" id="nav-premium-btn" class="bg-[#C8C8C0] text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">პრემიუმი</a>
         </div>
         <div class="flex items-center gap-2">
           <!-- Streak & XP badges (hidden until JS populates) -->
@@ -131,7 +131,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           <a href="/courses/" class="hover:text-white py-1">კურსები</a>
           <a href="/blog/" class="hover:text-white py-1">ბლოგი</a>
           <a href="/about/" class="hover:text-white py-1">შესახებ</a>
-          <a href="/premium/" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>
+          <a href="/premium/" id="nav-premium-btn-mobile" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>
           <div id="nav-gamification-mobile" class="hidden items-center gap-3 py-1">
             <a href="/flashcards/#dashboard" class="flex items-center gap-1 text-orange-400 font-bold text-sm">🔥 <span id="nav-streak-mobile">0</span> სტრიქი</a>
             <a href="/flashcards/#dashboard" class="flex items-center gap-1 text-yellow-400 font-bold text-sm">⭐ <span id="nav-xp-mobile">0</span> XP</a>
@@ -192,6 +192,11 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           el = document.getElementById('nav-account'); if(el) el.classList.remove('hidden');
           el = document.getElementById('nav-account-name'); if(el) el.textContent = data.name || data.email.split('@')[0];
           el = document.getElementById('nav-account-mobile'); if(el) el.classList.remove('hidden');
+          // Hide premium button for premium users
+          if (localStorage.getItem('fluentge-premium') === 'true') {
+            el = document.getElementById('nav-premium-btn'); if(el) el.style.display = 'none';
+            el = document.getElementById('nav-premium-btn-mobile'); if(el) el.style.display = 'none';
+          }
         }
       })();
     </script>

@@ -470,6 +470,27 @@ import Layout from '../layouts/Layout.astro';
         } catch(e) {}
       }
 
+      // If user already has premium, show confirmation instead of purchase page
+      if (localStorage.getItem('fluentge-premium') === 'true') {
+        var main = document.querySelector('section.premium-hero');
+        if (main) {
+          var container = main.querySelector('.relative');
+          if (container) {
+            container.innerHTML = '<div style="padding:4rem 1rem;text-align:center;">' +
+              '<div style="font-size:4rem;margin-bottom:1rem;">✅</div>' +
+              '<h1 class="font-[\'Playfair_Display\',serif] text-3xl sm:text-4xl mb-4"><span class="gradient-text">შენ უკვე პრემიუმი ხარ!</span></h1>' +
+              '<p style="color:#a0a0aa;font-size:1.1rem;max-width:400px;margin:0 auto 2rem;">ყველა ფუნქცია განბლოკილია. ისწავლე და ისიამოვნე! 🎉</p>' +
+              '<a href="/flashcards/" style="display:inline-block;background:linear-gradient(135deg,#818cf8,#6366f1);color:white;padding:14px 32px;border-radius:12px;font-weight:700;text-decoration:none;font-size:1rem;">📝 გააგრძელე სწავლა</a>' +
+              '</div>';
+          }
+          // Hide all other sections (pricing, comparison, FAQ, final CTA)
+          var sections = document.querySelectorAll('section');
+          for (var i = 1; i < sections.length; i++) {
+            sections[i].style.display = 'none';
+          }
+        }
+      }
+
       var selectedPlan = 'yearly';
       window.openPaymentModal = function(plan) {
         selectedPlan = plan;

@@ -63,14 +63,18 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 7 day) — Cron 2 Tasks:
-- [x] **📱 Mobile Responsiveness Audit** — All pages tested at 375px, no overflow ✅ Mar 7 1:30PM
-- [x] **🔗 Deep Link E2E Verification** — courses→flashcards, courses→grammar, podcast→flashcards all working ✅ Mar 7 1:30PM
-- [x] **🎨 Visual Polish** — Podcast card contrast fix, vocab pill styling ✅ Mar 7 1:30PM
+### THIS SPRINT (Mar 8 night) — Cron 2 Tasks:
+- [ ] **🎨 Light Mode Contrast Fix** — Audit all pages for low-contrast text on cream/white backgrounds. Fix with darker text colors or background adjustments.
+- [ ] **🔒 Grammar Lock Visual Upgrade** — Completed lessons: green bg + ✅. Current: sky blue pulse + ▶. Locked: gray + smaller 🔒 + reduced opacity. Make states UNMISTAKABLE.
+- [ ] **🐛 Podcast Premium Display** — Verify "3 უფასო" text updates for premium users. Check JS execution timing.
+- [ ] **🐛 Nav Premium Button** — Verify hide logic fires after localStorage is available.
 
 ### ✅ COMPLETED (Mar 7 sprint):
+- ✅ Mobile Responsiveness — All pages tested at 375px ✅
+- ✅ Deep Link E2E — All verified ✅
+- ✅ Visual Polish — Podcast cards, vocab pills ✅
 - ✅ Daily Goal Cleanup — "~5 წთ" → "10 ბარათი"
-- ✅ Grammar Lock UI — 3 visual states (completed/current/locked)
+- ✅ Grammar Lock UI — 3 visual states
 - ✅ Games Page Redesign — Spotlight + categories + records
 
 ### Backlog:

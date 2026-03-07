@@ -99,74 +99,50 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 7 Night Cycle)
+## 🎯 Current Sprint (Mar 8 Night Cycle)
 
-### Theme: "Polish, TTS & Launch Readiness"
+### Theme: "Tornike's Bug Fixes & Launch Polish"
 
-### CONTEXT: Previous Sprint Results (Mar 7 Night — "Tornike's 8 Priorities")
-All 8 of Tornike's Mar 6 priorities addressed:
-1. ✅ Daily Goal → Card-Based — "~5 წთ" replaced with "10 ბარათი"
-2. 🟡 TTS Voice Audit — **PARTIALLY DONE.** Audio files are 48kbps/24kHz MP3s (low quality). 16,207 files in `/audio/words/`. Components use mp3 first, fall back to browser speechSynthesis. **Need to assess if quality is "robotic" or acceptable.** Regenerating 16k files is a major effort — only do if clearly bad.
-3. ✅ Deep Links — courses.astro + podcast.astro both link to `/flashcards/?deck=X`
-4. ✅ Remove Mark-as-Done — All manual marking removed from grammar + phrases + dashboard
-5. ✅ New Dashboard Tracking — 4 auto-tracked stat cards (grammar, cards, time, podcasts)
-6. ✅ Grammar Lock/Unlock — Sequential progression with ≥70% test pass gate
-7. ✅ Games Page Redesign — Game of the Day, 3 categories, record badges
-8. ✅ Full Site Audit — QA passed, 0 issues, all 112 pages building clean
+### CONTEXT: Previous Sprint Results (Mar 7 — "Polish, TTS & Launch Readiness")
+- ✅ TTS Voice Assessment — ChristopherNeural, 98.7% coverage, 63 broken files fixed, quality GOOD
+- ✅ Speaking Practice — 11th study mode (SpeakingPractice.tsx)
+- ✅ Mobile Responsiveness — All pages tested at 375px, no overflow
+- ✅ Deep Link E2E — Courses→Flashcards, Courses→Grammar, Podcast→Flashcards all verified
+- ✅ Custom 404 Page — Branded bilingual page
+- ✅ Podcast Visual Polish — Card contrast, vocab pill styling
 
-### Strategic State (Mar 7, 11:30 AM):
-FluentGe has **72 React components, 10 study modes, 14 pages, 112 total pages, placement test, level personalization, course units with real quizzes, podcast quizzes + vocab + deep links, grammar sequential lock/unlock with test gates, cloud sync, full gamification (XP + streaks + achievements + leaderboard), PWA, games redesigned, 266KB bundle**.
+### Strategic State (Mar 8, 1:00 AM):
+FluentGe has **72+ React components, 11 study modes, 113 pages, 266KB bundle**, placement test, level personalization, course units with real quizzes, podcast quizzes + vocab + deep links, grammar sequential lock/unlock with test gates, cloud sync, full gamification, PWA, games redesigned.
 
-**The platform is LAUNCH-READY.** All Tornike priorities done. All structural gaps filled. The product is more feature-rich than Lingwing.com and competitive with Duolingo for the Georgian market.
+**The platform is FEATURE-COMPLETE and LAUNCH-READY.** Now we fix the bugs Tornike found during his audit.
 
-**What's left before launch:**
+### Known Bugs (from Tornike's Mar 7 audit in HEARTBEAT.md):
+1. ✅ Premium page shows purchase to premium users — FIXED
+2. ✅ Difficult Words not syncing across browsers — FIXED
+3. ✅ Dashboard 4 sections removed — FIXED
+4. **🔴 Homepage word count inconsistent with dashboard** — Homepage shows dynamic SRS count, dashboard shows different number. Need to unify the counting logic.
+5. **🔴 Podcast "3 უფასო" shown to premium users** — Code exists to fix this (`countEl.textContent = '35 ეპიზოდი · ყველა განბლოკილი ⭐'`) but may not run if localStorage timing issue. Need to verify.
+6. **🔴 Dashboard "0 გრამატიკა დასრულებული"** — Grammar completion tracking may not be reading `fluentge-grammar-completed` correctly.
+7. **🟡 Nav "პრემიუმი" button visible to premium users** — Code hides it (line 196-198 Layout.astro) but may have timing/race condition. Need to verify.
+8. **🟡 Light mode contrast issues** — Text too light on cream background in some areas.
+9. **🟡 Grammar lock icons look similar** — Hard to tell completed (✅) vs locked (🔒) at a glance. Need stronger visual differentiation (colors, size, opacity).
+10. **🟡 Georgian translations** — Audit ran (georgian-audit-log.txt), found ~15 fixes in greetings-basics.json and academic-english.json. Need to apply and deploy.
 
-**Gap #1: TTS Voice Quality — Unknown.**
-16,207 audio files at 48kbps/24kHz. Could be fine or could sound robotic. Need someone to actually LISTEN. This was Tornike's #2 priority. We should ask Tornike to listen to a few flashcards and tell us if the voices are OK. If not, we need a TTS regeneration plan (ElevenLabs or Google Cloud TTS).
+### Sprint Goals (Mar 8 Night)
 
-**Gap #2: No real payment.**
-Premium modal exists but just shows "coming soon" toast. Can't make money yet. Need Stripe or BOG/TBC integration. But this may not be critical for launch — can launch free-tier first and add payment later.
-
-**Gap #3: Deep link verification untested.**
-Links exist in code but haven't been browser-tested end-to-end. A user clicking "Numbers" in courses should land on the numbers deck in flashcards. Need to verify the `?deck=` parameter actually works in the deployed app.
-
-**Gap #4: Mobile UX untested on real devices.**
-Everything tested via desktop browser. Need real mobile testing (Tornike's phone).
-
-**Gap #5: No marketing assets.**
-No screenshots, no app store listing, no social media presence for FluentGe. Before launch, need at least a few promotional images and a sharing strategy.
-
-### Sprint Goals (Mar 7 Night)
-
-1. **🔴 TTS Assessment** (Cron 3)
-   - Play sample audio files programmatically, assess quality
-   - If clearly robotic: plan regeneration with better TTS
-   - If acceptable: mark as done, move on
-
-2. **🔴 End-to-End Deep Link Testing** (Cron 2 + 5)
-   - Browser-test every course → flashcard link
-   - Browser-test podcast → flashcard links
-   - Fix any broken links
-
-3. **🟡 Mobile Responsiveness Audit** (Cron 2)
-   - Check all pages at mobile viewport (375px, 414px)
-   - Fix any overflow, touch target, or layout issues
-
-4. **🟡 Performance Optimization** (Cron 4)
-   - Lighthouse audit on key pages
-   - Fix any critical performance issues
-   - Ensure fast load on Georgian mobile networks
-
-5. **🟢 Marketing Assets Prep** (Cron 4)
-   - Create 3-5 screenshots for social media
-   - Write short Georgian description for sharing
+1. **🔴 Fix all user-facing bugs** (#4-7 above) — Cron 2 + 3
+2. **🟡 Light mode contrast audit & fix** — Cron 2
+3. **🟡 Grammar lock visual differentiation** — Cron 2
+4. **🟡 Apply Georgian translation fixes** — Cron 3
+5. **🟢 Performance/Lighthouse audit** — Cron 4
+6. **🟢 Launch checklist verification** — Cron 5
 
 ### For Each Cron Tonight:
-- **Cron 1 (Strategy, 1:00AM):** Sprint planning, competitive review, launch checklist.
-- **Cron 2 (Design, 3:00AM):** Mobile responsiveness audit, deep link testing, any visual fixes.
-- **Cron 3 (Features, 5:00AM):** TTS quality assessment, any feature gaps found.
-- **Cron 4 (Improvements, 7:00AM):** Performance audit, marketing prep, polish.
-- **Cron 5 (QA, 9:00AM):** Full end-to-end testing of all user flows.
+- **Cron 1 (Strategy, 1:00AM):** Sprint planning, bug triage, launch checklist. ← YOU ARE HERE
+- **Cron 2 (Design, 3:00AM):** Light mode contrast fix, grammar lock visual upgrade, bug fixes #5/#7.
+- **Cron 3 (Features, 5:00AM):** Bug fixes #4/#6, apply Georgian translation fixes, verify word counts.
+- **Cron 4 (Improvements, 7:00AM):** Performance/Lighthouse audit, any remaining polish.
+- **Cron 5 (QA, 9:00AM):** Full E2E testing of all bugs fixed + regression check.
 
 ## Technical Specs
 

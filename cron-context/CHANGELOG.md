@@ -5,7 +5,51 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-08
+
+### Cron 1 — Strategy (1:00 AM)
+- **Sprint review:** "Polish, TTS & Launch Readiness" (Mar 7) — ALL items completed ✅
+  - TTS Assessment ✅ (ChristopherNeural, quality GOOD, 63 broken files fixed)
+  - Deep Link E2E ✅ (all verified working)
+  - Mobile Responsiveness ✅ (all pages clean at 375px)
+  - Speaking Practice ✅ (11th study mode)
+  - Custom 404 Page ✅
+  - Podcast Visual Polish ✅
+- **Platform state:** 72+ components, 11 study modes, 113 pages, 266KB bundle. FEATURE-COMPLETE.
+- **Bug triage from Tornike's HEARTBEAT.md audit (Mar 7):**
+  - Bugs #1-3: Already fixed ✅
+  - Bug #4 (word count inconsistency): Homepage counts SRS words dynamically, dashboard may use different logic. Need to unify.
+  - Bug #5 (podcast "3 უფასო" for premium): Code exists to fix (line 917 podcast.astro) but may be timing issue — JS runs after DOM paint.
+  - Bug #6 (dashboard "0 გრამატიკა"): Grammar completion may not read `fluentge-grammar-completed` correctly.
+  - Bug #7 (nav premium button): Code hides it (Layout.astro:196-198) but may race with localStorage.
+  - Bug #8 (light mode contrast): Needs visual audit across all pages.
+  - Bug #9 (grammar lock icons): Completed/locked look too similar. Need stronger visual states.
+  - Bug #10 (Georgian translations): Audit found ~15 fixes. Need to apply from georgian-audit-log.txt.
+- **New sprint:** "Tornike's Bug Fixes & Launch Polish"
+  - Cron 2 → Light mode contrast, grammar lock visual upgrade, bugs #5/#7
+  - Cron 3 → Bugs #4/#6, Georgian translation fixes, word count unification
+  - Cron 4 → Performance/Lighthouse audit, remaining polish
+  - Cron 5 → Full E2E QA of all fixes
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md
+
+---
+
 ## 2026-03-07
+
+### Cron 4B — Improvements (5:30 PM, Day Run)
+- **🔊 63 Broken TTS Audio Files Regenerated:**
+  - Found 63 zero-byte MP3 files (mostly English l-words + some Georgian)
+  - Regenerated all using Edge TTS: en-US-ChristopherNeural (EN) + ka-GE-GiorgiNeural (KA)
+  - 63/63 fixed, 0 failures. Zero broken audio files remaining.
+  - Words include common ones: like, live, law, lead, lesson, limit, line, etc.
+- **📄 Custom 404 Page:**
+  - Created `website/src/pages/404.astro` — branded error page
+  - Shows 🤔 emoji, bilingual "Page not found / გვერდი ვერ მოიძებნა"
+  - 3D green CTA to homepage + quick links to flashcards/grammar/games
+  - Fun English learning tip: "I'm lost = დავიკარგე"
+  - Uses Layout component for consistent nav/footer
+  - Site now builds 113 pages (was 112)
+- Deployed ✅, git committed & pushed
 
 ### Cron 3B — Features (3:30 PM, Day Run)
 - **🔊 TTS Voice Assessment (Programmatic Audit):**

@@ -742,7 +742,7 @@ const episodes = [
 
   <section class="max-w-4xl mx-auto px-4 py-16">
     <div class="text-center mb-12">
-      <p class="text-[#6B6B65] text-sm">{episodes.length} ეპიზოდი · 3 უფასო</p>
+      <p class="text-[#6B6B65] text-sm" id="podcast-count">{episodes.length} ეპიზოდი · 3 უფასო</p>
     </div>
 
     <div class="space-y-6">
@@ -902,6 +902,10 @@ const episodes = [
 
   <script is:inline>
     (function() {
+      // Check premium status (also check user email as fallback)
+      var PREMIUM_EMAILS = ['tokakhozre@gmail.com'];
+      var u = localStorage.getItem('fluentge-user');
+      if (u) { try { var d = JSON.parse(u); if (PREMIUM_EMAILS.indexOf(d.email) !== -1) localStorage.setItem('fluentge-premium', 'true'); } catch(e){} }
       // Unlock premium podcasts
       if (localStorage.getItem('fluentge-premium') === 'true') {
         document.querySelectorAll('.podcast-premium-content').forEach(el => el.classList.remove('hidden'));
@@ -911,6 +915,16 @@ const episodes = [
             el.textContent = '⭐ პრემიუმ';
             el.classList.remove('bg-amber-500/20', 'text-amber-400');
             el.classList.add('bg-green-500/20', 'text-green-400');
+          }
+        });
+        // Update count text for premium users
+        var countEl = document.getElementById('podcast-count');
+        if (countEl) countEl.textContent = '35 ეპიზოდი · ყველა განბლოკილი ⭐';
+        // Hide "Start Premium" CTA at bottom
+        var ctaLinks = document.querySelectorAll('a[href="/premium/"]');
+        ctaLinks.forEach(function(a) {
+          if (a.closest('section') && a.textContent.includes('პრემიუმი')) {
+            a.closest('section').style.display = 'none';
           }
         });
       }

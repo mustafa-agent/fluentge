@@ -139,9 +139,29 @@ function apply(local: any, cloud: any) {
   localStorage.setItem('fluentge-achievements', JSON.stringify(mergeArr(local.achievements || [], cloud.achievements || [])));
   // Grammar completed: merge arrays
   localStorage.setItem('fluentge-grammar-completed', JSON.stringify(mergeArr(local.grammarCompleted || [], cloud.grammarCompleted || [])));
-  // Difficult words: merge objects
+  // Difficult words: merge by word key, keep higher wrongCount per word
   if (local.difficultWords || cloud.difficultWords) {
-    localStorage.setItem('fluentge-difficult-words', JSON.stringify(mergeObj(local.difficultWords, cloud.difficultWords)));
+    const localDW = local.difficultWords || {};
+    const cloudDW = cloud.difficultWords || {};
+    const merged: Record<string, any> = {};
+    for (const key of new Set([...Object.keys(localDW), ...Object.keys(cloudDW)])) {
+      const l = localDW[key];
+      const c = cloudDW[key];
+      if (l && c) {
+        // Keep the one with more wrong answers, merge counts
+        merged[key] = {
+          ...l,
+          ...c,
+          wrongCount: Math.max(l.wrongCount || 0, c.wrongCount || 0),
+          rightCount: Math.max(l.rightCount || 0, c.rightCount || 0),
+          lastWrong: Math.max(l.lastWrong || 0, c.lastWrong || 0),
+          lastRight: Math.max(l.lastRight || 0, c.lastRight || 0),
+        };
+      } else {
+        merged[key] = l || c;
+      }
+    }
+    localStorage.setItem('fluentge-difficult-words', JSON.stringify(merged));
   }
   // Onboarding
   if (cloud.onboarded) localStorage.setItem('fluentge-onboarded', 'true');

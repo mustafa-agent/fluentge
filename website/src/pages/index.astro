@@ -135,17 +135,22 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         var el;
         el = document.getElementById('ret-streak'); if(el) el.textContent = streak;
         el = document.getElementById('ret-xp'); if(el) el.textContent = xpStr;
-        // Count learned words from SRS stores
-        var words = 0;
+        // Count learned words from SRS stores + knownCards (same logic as dashboard)
+        var allWords = new Set();
         for (var i = 0; i < localStorage.length; i++) {
           var k = localStorage.key(i);
           if (k && k.startsWith('fluentge-srs-')) {
             try {
               var store = JSON.parse(localStorage.getItem(k));
-              words += Object.keys(store || {}).length;
+              Object.keys(store || {}).forEach(function(w) { allWords.add(w); });
             } catch(e) {}
           }
         }
+        try {
+          var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
+          kc.forEach(function(w) { allWords.add(w); });
+        } catch(e) {}
+        var words = allWords.size;
         el = document.getElementById('ret-words'); if(el) el.textContent = words;
         var level = Math.floor(xp / 200) + 1;
         el = document.getElementById('ret-level'); if(el) el.textContent = level;

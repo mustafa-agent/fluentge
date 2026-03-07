@@ -7,7 +7,7 @@
 - [ ] Breadcrumbs on deep pages
 - [ ] "Back to..." buttons that make sense contextually
 - [x] Smoother page transitions ✅ Cron 4, Mar 5 (screen fade-in animation)
-- [ ] Better 404 page
+- [x] Better 404 page ✅ Cron 4B, Mar 7 (branded page with bilingual text + navigation links)
 
 ### Flashcard UX
 - [x] Swipe gestures on mobile ✅ Cron 4, Mar 2
@@ -55,11 +55,11 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 7 night) — "Polish, TTS & Launch Readiness"
-- [ ] **📱 Mobile Responsiveness** — Test all pages at mobile viewports, fix issues ← Cron 2
-- [ ] **⚡ Performance** — Lighthouse audit, optimize critical rendering path ← Cron 4
-- [ ] **🔗 Deep Link E2E** — Browser-verify all cross-section links work ← Cron 2+5
-- [ ] **🔊 TTS Quality** — Assess audio files, plan regeneration if needed ← Cron 3
+## 🎯 THIS SPRINT (Mar 8 night) — "Tornike's Bug Fixes & Launch Polish"
+- [ ] **🎨 Light Mode Contrast** — Audit all pages, fix low-contrast text ← Cron 2
+- [ ] **🔒 Grammar Lock Visual Upgrade** — Color-coded states, bigger icons ← Cron 2
+- [ ] **⚡ Performance/Lighthouse** — Audit key pages, optimize ← Cron 4
+- [ ] **🐛 Bug fixes** — Word count, grammar tracking, premium display ← Cron 2+3
 
 ## ✅ COMPLETED — Tornike's 8 Priorities (Mar 7)
 - ✅ Daily Goal → Card-Based (removed "წთ", card presets verified)
