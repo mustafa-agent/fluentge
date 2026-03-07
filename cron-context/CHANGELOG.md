@@ -7,6 +7,22 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-07
 
+### Cron 3B — Features (3:30 PM, Day Run)
+- **🔊 TTS Voice Assessment (Programmatic Audit):**
+  - 16,207 MP3 files (10,542 EN + 5,665 KA), ChristopherNeural (neural, NOT robotic)
+  - 48kbps/24kHz/Mono, avg 9.8 KB/file — good for mobile
+  - EN coverage: 98.7% (10,324/10,465 deck words). 63 broken 0-byte files.
+  - **Verdict: Quality is GOOD. Only regenerate 63 broken files.**
+- **🎤 Speaking Practice (SpeakingPractice.tsx) — 11th study mode:**
+  - Web Speech API pronunciation practice. 10-word sessions per deck.
+  - Levenshtein similarity scoring: ≥70% pass, ≥95% excellent
+  - 3 recognition alternatives checked. XP: +15 excellent, +10 pass
+  - Browser fallback for unsupported (shows amber warning)
+  - 3D green mic button, recording pulse, color-coded feedback
+  - Result screen with stats. sp-* CSS + light mode.
+  - Added as 🎤 გამოთქმა in DeckSelect. Lazy-loaded.
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM, Day Run)
 - **📱 Mobile Responsiveness Audit:**
   - Tested all major pages at 375px (iPhone SE): homepage, grammar, games, courses, flashcards, podcast

@@ -3,7 +3,7 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 7 night) — "Polish, TTS & Launch Readiness"
-- [ ] **🔊 TTS Voice Assessment** — Listen to sample audio files, decide if regeneration needed ← Cron 3
+- [x] **🔊 TTS Voice Assessment** — ✅ Assessed: ChristopherNeural (neural, NOT robotic), 98.7% EN coverage, 63 broken 0-byte files
 - [ ] **🔗 Deep Link E2E Testing** — Browser-test all course/podcast → flashcard links ← Cron 2+5
 - [ ] **📱 Mobile Responsiveness Audit** — Test all pages at 375px/414px viewport ← Cron 2
 - [ ] **⚡ Performance Audit** — Lighthouse scores, load time optimization ← Cron 4
@@ -61,6 +61,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🔊 TTS Voice Assessment** — Programmatic audit: ChristopherNeural (neural), 98.7% EN coverage, 63 broken files. Quality is GOOD. (Cron 3, Mar 7 afternoon)
+- ✅ **🎤 Speaking Practice (SpeakingPractice.tsx)** — 11th study mode. Web Speech API pronunciation practice: 10-word sessions, Levenshtein scoring, 3D mic button, XP awards, browser fallback. (Cron 3, Mar 7 afternoon)
 - ✅ **📝 Unit-Specific Quizzes (UnitQuiz.tsx)** — 10-question mixed tests per course unit: 5 vocab (EN→KA multiple choice from unit decks), 3 grammar (fill-in-blank per unit topic), 2 listening (speechSynthesis + pick Georgian). Pass ≥7/10 for completion badge + 50 XP bonus. Routed via `#unit-quiz/N` hash. Uses uq-* CSS classes from Cron 2. Unit completion saved to localStorage. (Cron 3, Mar 6 afternoon)
 - ✅ **🔄 Grammar Review System** — `?review=1` param on grammar lessons: shuffles exercises, shows purple review banner, unhides content for premium lessons in review. SRS-like lesson selection on /grammar/ CTA — picks least-recently-reviewed lessons first (tracks review dates in `fluentge-grammar-reviews` localStorage). Auto-scrolls to exercises. (Cron 3, Mar 6 afternoon)
 - ✅ **🎯 Level-Based Personalization** — DailyLesson loads level-appropriate decks (A1: greetings/numbers/colors, A2: daily/food/shopping, B1: business/tech, B2: politics/science) based on placement test result. courses.astro highlights recommended starting unit with green badge + auto-expand. (Cron 3, Mar 6)
@@ -104,14 +106,13 @@
 - ✅ **📊 Progress Chart** — SVG line chart on dashboard
 
 ### Backlog — HIGH
-- [ ] **Speaking practice** — Record and compare pronunciation (Web Speech API)
+- [x] **Speaking practice** — ✅ SpeakingPractice.tsx (11th study mode, Web Speech API)
 - [ ] **Writing exercises** — Free-form writing prompts with AI feedback
 - [ ] **Longer podcast episodes** — 10-20 min episodes for commute listening
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-- 🔄 **🔊 TTS Voice Assessment** — Programmatic quality audit of 16k audio files (Cron 3, Mar 7 afternoon)
-- 🔄 **🎤 Speaking Practice** — Record pronunciation, compare with reference audio (Cron 3, Mar 7 afternoon)
+(none)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

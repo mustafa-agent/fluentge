@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 — გვერდი ვერ მოიძებნა | FluentGe">
+  <section style="min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+    <div style="max-width: 480px;">
+      <div style="font-size: 6rem; margin-bottom: 1rem;">🤔</div>
+      <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem;">
+        404
+      </h1>
+      <p style="font-size: 1.25rem; color: var(--text-muted, #6B6B65); margin-bottom: 0.5rem;">
+        Page not found
+      </p>
+      <p style="font-size: 1.1rem; color: var(--text-muted, #6B6B65); margin-bottom: 2rem;">
+        გვერდი ვერ მოიძებნა
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; align-items: center;">
+        <a href="/" style="
+          display: inline-flex; align-items: center; gap: 0.5rem;
+          padding: 0.875rem 2rem; border-radius: 1rem;
+          background: linear-gradient(135deg, #22c55e, #10b981);
+          color: white; font-weight: 700; font-size: 1.1rem;
+          text-decoration: none; border-bottom: 4px solid #15803d;
+          transition: transform 0.15s;
+        ">
+          🏠 მთავარი გვერდი
+        </a>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;">
+          <a href="/flashcards/" style="
+            padding: 0.625rem 1.25rem; border-radius: 0.75rem;
+            background: rgba(56, 189, 248, 0.15); color: #38bdf8;
+            text-decoration: none; font-weight: 600; font-size: 0.95rem;
+            transition: background 0.15s;
+          ">📚 სიტყვები</a>
+          <a href="/grammar/" style="
+            padding: 0.625rem 1.25rem; border-radius: 0.75rem;
+            background: rgba(168, 85, 247, 0.15); color: #a855f7;
+            text-decoration: none; font-weight: 600; font-size: 0.95rem;
+            transition: background 0.15s;
+          ">📖 გრამატიკა</a>
+          <a href="/games/" style="
+            padding: 0.625rem 1.25rem; border-radius: 0.75rem;
+            background: rgba(251, 191, 36, 0.15); color: #fbbf24;
+            text-decoration: none; font-weight: 600; font-size: 0.95rem;
+            transition: background 0.15s;
+          ">🎮 თამაშები</a>
+        </div>
+      </div>
+
+      <p style="margin-top: 2.5rem; font-size: 0.85rem; color: var(--text-muted, #6B6B65);">
+        💡 <strong>Tip:</strong> "I'm lost" = "დავიკარგე" 😄
+      </p>
+    </div>
+  </section>
+</Layout>
