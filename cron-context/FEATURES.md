@@ -3,13 +3,13 @@
 ## Priority: HIGH 🔴
 
 ### 🎯 THIS SPRINT (Mar 8 night) — "Tornike's Bug Fixes & Launch Polish"
-- [ ] **🐛 Word Count Consistency** — Unify homepage vs dashboard word counting ← Cron 3
-- [ ] **🐛 Dashboard Grammar Count** — Fix "0 გრამატიკა დასრულებული" tracking ← Cron 3
+- [x] **🐛 Word Count Consistency** — ✅ Unified across all 4 locations ← Cron 3
+- [x] **🐛 Dashboard Grammar Count** — ✅ Merges both grammar keys ← Cron 3
 - [ ] **🐛 Podcast Premium Display** — Verify "3 უფასო" hidden for premium users ← Cron 2
 - [ ] **🐛 Nav Premium Button** — Verify hidden for premium users ← Cron 2
 - [ ] **🎨 Light Mode Contrast** — Fix text visibility on cream background ← Cron 2
 - [ ] **🎨 Grammar Lock Icons** — Stronger visual differentiation ← Cron 2
-- [ ] **🇬🇪 Georgian Translations** — Apply audit fixes from georgian-audit-log.txt ← Cron 3
+- [x] **🇬🇪 Georgian Translations** — ✅ Applied 15 fixes (greetings + academic) ← Cron 3
 - [ ] **⚡ Performance Audit** — Lighthouse scores ← Cron 4
 
 ### ✅ COMPLETED — Tornike's 8 Priorities (Mar 7 night sprint)
@@ -115,8 +115,7 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-- 🔄 **🐛 Word Count Consistency** — Cron 3 (Mar 8, 5:00 AM)
-- 🔄 **🐛 Dashboard Grammar Count** — Cron 3 (Mar 8, 5:00 AM)
+(none)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

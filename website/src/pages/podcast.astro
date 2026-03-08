@@ -749,7 +749,7 @@ const episodes = [
       {episodes.map((ep) => (
         <div class={`bg-[#242426] border rounded-2xl overflow-hidden transition-all ${ep.free ? 'border-green-500/30' : 'border-[#2E2E30]'}`}>
           <div class="p-6">
-            <div class="flex items-start justify-between mb-3">
+            <div class="ep-header flex items-start justify-between mb-3 cursor-pointer select-none" data-ep-toggle={ep.id} role="button" tabindex="0" aria-expanded="false">
               <div>
                 <div class="flex items-center gap-2 mb-1">
                   <span class="text-sm text-[#6B6B65]">ეპიზოდი {ep.id}</span>
@@ -763,11 +763,15 @@ const episodes = [
                 <h2 class="text-xl font-bold">{ep.title}</h2>
                 <p class="text-[#6B6B65] text-sm">{ep.titleKa}</p>
               </div>
-              <div class="text-4xl">{ep.icon}</div>
+              <div class="flex items-center gap-3">
+                <div class="text-4xl">{ep.icon}</div>
+                <span class="ep-chevron text-[#6B6B65] text-xl transition-transform duration-300">▼</span>
+              </div>
             </div>
             
             <p class="text-sm text-[#6B6B65] mb-4">{ep.descriptionKa}</p>
 
+            <div class="ep-content hidden" data-ep-content={ep.id}>
             <div class="mb-4">
               <p class="text-xs text-[#6B6B65] mb-2 font-medium">📚 სიტყვები ამ ეპიზოდში <span class="text-[#4a4a50]">· დააჭირე მოსასმენად</span></p>
               <div class="pv-pills">
@@ -886,6 +890,7 @@ const episodes = [
                 <p class="text-xs text-[#6B6B65] mt-1">თვეში 9.99 ₾</p>
               </a>
             )}
+            </div>{/* end ep-content */}
           </div>
         </div>
       ))}
@@ -900,8 +905,43 @@ const episodes = [
     </div>
   </section>
 
+  <style>
+    .ep-chevron { display: inline-block; }
+    .ep-chevron.ep-open { transform: rotate(180deg); }
+    .ep-content { overflow: hidden; }
+    .ep-content.ep-visible { display: block; animation: epSlideDown 0.3s ease-out; }
+    @keyframes epSlideDown { from { opacity: 0; max-height: 0; } to { opacity: 1; max-height: 2000px; } }
+    .ep-header:hover { opacity: 0.85; }
+  </style>
+
   <script is:inline>
     (function() {
+      // Episode expand/collapse
+      document.querySelectorAll('[data-ep-toggle]').forEach(function(header) {
+        header.addEventListener('click', function() {
+          var epId = this.dataset.epToggle;
+          var content = document.querySelector('[data-ep-content="' + epId + '"]');
+          var chevron = this.querySelector('.ep-chevron');
+          if (!content) return;
+          var isOpen = content.classList.contains('ep-visible');
+          if (isOpen) {
+            content.classList.remove('ep-visible');
+            content.classList.add('hidden');
+            chevron.classList.remove('ep-open');
+            this.setAttribute('aria-expanded', 'false');
+          } else {
+            content.classList.remove('hidden');
+            content.classList.add('ep-visible');
+            chevron.classList.add('ep-open');
+            this.setAttribute('aria-expanded', 'true');
+          }
+        });
+        // Keyboard support
+        header.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+        });
+      });
+
       // Check premium status (also check user email as fallback)
       var PREMIUM_EMAILS = ['tokakhozre@gmail.com'];
       var u = localStorage.getItem('fluentge-user');

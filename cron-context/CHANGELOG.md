@@ -7,6 +7,17 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-08
 
+### Cron 3 — Features (5:00 AM)
+- **🐛 Word Count Consistency Fix (Bug #4):**
+  - ROOT CAUSE: 3 different storage systems counted differently. Homepage (SRS+knownCards), React Dashboard (card_progress mastered only), DeckSelect (classic progress only).
+  - FIX: Unified ALL 4 locations to count unique words from ALL storage systems (SRS, card_progress, classic, knownCards). Same number everywhere now.
+- **🐛 Dashboard Grammar Count Fix (Bug #6):**
+  - React Dashboard now merges `fluentge-grammar-completed` + `fluentge-learned-grammar` with Set deduplication.
+- **🇬🇪 Georgian Translation Fixes:**
+  - Applied 15 fixes from audit to greetings-basics.json + academic-english.json
+  - Key: "admirable" → აღსანიშნავი, "Elaborate" → დეტალურად განმარტე, "Examine" → შეისწავლე, etc.
+- Deployed ✅, git pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **🔒 Grammar Lock Visual Upgrade:** 4 distinct states — completed (green gradient+border+✅), current (blue glow+pulse+▶️), premium-locked (👑 amber 55% opacity), sequential-locked (🔒 gray+grayscale 40% opacity). Light-mode aware JS.
 - **🎨 Light Mode Contrast Fix:** Added missing overrides for `#a0a0aa`, `#c0c0c0`, `#D0D0CA` text. Grammar badge colors darker in light mode.
