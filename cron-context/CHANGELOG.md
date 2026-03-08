@@ -7,6 +7,12 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-08
 
+### Cron 2 — Design (3:00 AM)
+- **🔒 Grammar Lock Visual Upgrade:** 4 distinct states — completed (green gradient+border+✅), current (blue glow+pulse+▶️), premium-locked (👑 amber 55% opacity), sequential-locked (🔒 gray+grayscale 40% opacity). Light-mode aware JS.
+- **🎨 Light Mode Contrast Fix:** Added missing overrides for `#a0a0aa`, `#c0c0c0`, `#D0D0CA` text. Grammar badge colors darker in light mode.
+- **🐛 Podcast Premium Fix:** Added fallback premium email check in podcast.astro script (no timing race).
+- Deployed ✅, git pushed
+
 ### Cron 1 — Strategy (1:00 AM)
 - **Sprint review:** "Polish, TTS & Launch Readiness" (Mar 7) — ALL items completed ✅
   - TTS Assessment ✅ (ChristopherNeural, quality GOOD, 63 broken files fixed)

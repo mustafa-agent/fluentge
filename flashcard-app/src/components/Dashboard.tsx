@@ -148,9 +148,48 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
   };
 
   const getTotalWordsLearned = () => {
-    return activeDecks.reduce((total, deck) => {
-      return total + deck.progress.mastered;
-    }, 0);
+    // Unified word count: count unique words from ALL storage systems
+    const allWords = new Set<string>();
+    
+    // 1. SRS stores (fluentge-srs-*)
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith('fluentge-srs-')) {
+        try {
+          const store = JSON.parse(localStorage.getItem(key) || '{}');
+          Object.keys(store).forEach(w => allWords.add(w));
+        } catch {}
+      }
+    }
+    
+    // 2. Card progress (card_progress_*)
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith('card_progress_')) {
+        // Extract word from key: card_progress_{deckId}_{word}
+        const parts = key.split('_');
+        if (parts.length >= 4) {
+          allWords.add(parts.slice(3).join('_'));
+        }
+      }
+    }
+    
+    // 3. Classic progress (fluentge_progress)
+    try {
+      const classic = JSON.parse(localStorage.getItem('fluentge_progress') || '{}');
+      Object.keys(classic).forEach(k => {
+        const base = k.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
+        allWords.add(base);
+      });
+    } catch {}
+    
+    // 4. Known cards
+    try {
+      const known = JSON.parse(localStorage.getItem('knownCards') || '[]');
+      known.forEach((w: string) => allWords.add(w));
+    } catch {}
+    
+    return allWords.size;
   };
 
   const dailyGoalProgress = Math.min(100, (userStats.todayStudyTime / userStats.dailyGoalMinutes) * 100);
@@ -325,7 +364,11 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           </p>
           
           {(() => {
-            const grammarCompleted = (() => { try { return JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]').length; } catch { return 0; } })();
+            const grammarCompleted = (() => { try {
+              const a = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]');
+              const b = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
+              return new Set([...a, ...b]).size;
+            } catch { return 0; } })();
             const studyTimeToday = getTodayStudyTime();
             const totalStudyMinutes = (() => { const hist = getDailyHistory(30); return hist.reduce((s, d) => s + d.minutes, 0); })();
             const totalCardsEver = (() => { const hist = getDailyHistory(30); return hist.reduce((s, d) => s + d.cards, 0); })();

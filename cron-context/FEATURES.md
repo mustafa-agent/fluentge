@@ -115,7 +115,8 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-(none)
+- 🔄 **🐛 Word Count Consistency** — Cron 3 (Mar 8, 5:00 AM)
+- 🔄 **🐛 Dashboard Grammar Count** — Cron 3 (Mar 8, 5:00 AM)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

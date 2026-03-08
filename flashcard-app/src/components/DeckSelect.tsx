@@ -97,8 +97,39 @@ export default function DeckSelect({ onSelect }: Props) {
     return map;
   }, []);
 
-  // Words I Know counter
-  const totalMastered = Object.values(progress).filter((p: any) => p.repetitions >= 1).length;
+  // Words I Know counter — unified across all storage systems
+  const totalMastered = useMemo(() => {
+    const allWords = new Set<string>();
+    // SRS stores
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith('fluentge-srs-')) {
+        try {
+          const store = JSON.parse(localStorage.getItem(key) || '{}');
+          Object.keys(store).forEach(w => allWords.add(w));
+        } catch {}
+      }
+    }
+    // Classic progress
+    Object.keys(progress).forEach(k => {
+      const base = k.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
+      allWords.add(base);
+    });
+    // Card progress keys
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith('card_progress_')) {
+        const parts = key.split('_');
+        if (parts.length >= 4) allWords.add(parts.slice(3).join('_'));
+      }
+    }
+    // Known cards
+    try {
+      const known = JSON.parse(localStorage.getItem('knownCards') || '[]');
+      known.forEach((w: string) => allWords.add(w));
+    } catch {}
+    return allWords.size;
+  }, [progress]);
   const totalXP = getTotalXP();
   const level = calculateLevel(totalXP);
   const streak = getCurrentStreak();

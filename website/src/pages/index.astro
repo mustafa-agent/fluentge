@@ -135,7 +135,7 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         var el;
         el = document.getElementById('ret-streak'); if(el) el.textContent = streak;
         el = document.getElementById('ret-xp'); if(el) el.textContent = xpStr;
-        // Count learned words from SRS stores + knownCards (same logic as dashboard)
+        // Count learned words — unified across ALL storage systems (matches dashboard)
         var allWords = new Set();
         for (var i = 0; i < localStorage.length; i++) {
           var k = localStorage.key(i);
@@ -145,10 +145,20 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
               Object.keys(store || {}).forEach(function(w) { allWords.add(w); });
             } catch(e) {}
           }
+          if (k && k.startsWith('card_progress_')) {
+            var parts = k.split('_');
+            if (parts.length >= 4) allWords.add(parts.slice(3).join('_'));
+          }
         }
         try {
           var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
           kc.forEach(function(w) { allWords.add(w); });
+        } catch(e) {}
+        try {
+          var cp = JSON.parse(localStorage.getItem('fluentge_progress') || '{}');
+          Object.keys(cp).forEach(function(k) {
+            allWords.add(k.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, ''));
+          });
         } catch(e) {}
         var words = allWords.size;
         el = document.getElementById('ret-words'); if(el) el.textContent = words;

@@ -64,10 +64,10 @@
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
 ### THIS SPRINT (Mar 8 night) — Cron 2 Tasks:
-- [ ] **🎨 Light Mode Contrast Fix** — Audit all pages for low-contrast text on cream/white backgrounds. Fix with darker text colors or background adjustments.
-- [ ] **🔒 Grammar Lock Visual Upgrade** — Completed lessons: green bg + ✅. Current: sky blue pulse + ▶. Locked: gray + smaller 🔒 + reduced opacity. Make states UNMISTAKABLE.
-- [ ] **🐛 Podcast Premium Display** — Verify "3 უფასო" text updates for premium users. Check JS execution timing.
-- [ ] **🐛 Nav Premium Button** — Verify hide logic fires after localStorage is available.
+- [x] **🎨 Light Mode Contrast Fix** — Added overrides for `#a0a0aa`, `#c0c0c0`, `#D0D0CA` text colors. Grammar cards get light-aware gradients. ✅ Mar 8
+- [x] **🔒 Grammar Lock Visual Upgrade** — 4 distinct states: ✅ green gradient+border (completed), ▶️ blue glow+pulse (current), 👑 amber (premium locked), 🔒 gray+grayscale (sequential locked). UNMISTAKABLE. ✅ Mar 8
+- [x] **🐛 Podcast Premium Display** — Added fallback premium email check directly in podcast script. No more timing race. ✅ Mar 8
+- [x] **🐛 Nav Premium Button** — Layout.astro already handles this correctly (inline script). Podcast also got same fallback. ✅ Mar 8
 
 ### ✅ COMPLETED (Mar 7 sprint):
 - ✅ Mobile Responsiveness — All pages tested at 375px ✅
