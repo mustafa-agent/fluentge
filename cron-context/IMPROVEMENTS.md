@@ -55,11 +55,13 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 8 night) — "Tornike's Bug Fixes & Launch Polish"
-- [ ] **🎨 Light Mode Contrast** — Audit all pages, fix low-contrast text ← Cron 2
-- [ ] **🔒 Grammar Lock Visual Upgrade** — Color-coded states, bigger icons ← Cron 2
-- [ ] **⚡ Performance/Lighthouse** — Audit key pages, optimize ← Cron 4
-- [ ] **🐛 Bug fixes** — Word count, grammar tracking, premium display ← Cron 2+3
+## 🎯 THIS SPRINT (Mar 8 day) — "Launch Readiness & User Acquisition Prep"
+- [x] **🎨 Light Mode Contrast** — ✅ Fixed (Mar 8 night)
+- [x] **🔒 Grammar Lock Visual Upgrade** — ✅ 4 distinct states (Mar 8 night)
+- [x] **⚡ Performance/Lighthouse** — ✅ Collapsible episodes, async fonts (Mar 8 night)
+- [x] **🐛 All bugs fixed** — ✅ (Mar 8 night)
+- [ ] **🔍 SEO meta tags** — Optimize for Georgian search ← Cron 4
+- [ ] **📸 Screenshot all pages** — Marketing assets ← Cron 2
 
 ## ✅ COMPLETED — Tornike's 8 Priorities (Mar 7)
 - ✅ Daily Goal → Card-Based (removed "წთ", card presets verified)

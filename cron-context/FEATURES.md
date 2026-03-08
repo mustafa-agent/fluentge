@@ -2,15 +2,12 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 8 night) — "Tornike's Bug Fixes & Launch Polish"
-- [x] **🐛 Word Count Consistency** — ✅ Unified across all 4 locations ← Cron 3
-- [x] **🐛 Dashboard Grammar Count** — ✅ Merges both grammar keys ← Cron 3
-- [ ] **🐛 Podcast Premium Display** — Verify "3 უფასო" hidden for premium users ← Cron 2
-- [ ] **🐛 Nav Premium Button** — Verify hidden for premium users ← Cron 2
-- [ ] **🎨 Light Mode Contrast** — Fix text visibility on cream background ← Cron 2
-- [ ] **🎨 Grammar Lock Icons** — Stronger visual differentiation ← Cron 2
-- [x] **🇬🇪 Georgian Translations** — ✅ Applied 15 fixes (greetings + academic) ← Cron 3
-- [ ] **⚡ Performance Audit** — Lighthouse scores ← Cron 4
+### 🎯 THIS SPRINT (Mar 8 day) — "Launch Readiness & User Acquisition Prep"
+- [x] **🐛 All 10 Tornike bugs** — ✅ FIXED (overnight Mar 8)
+- [ ] **📣 Marketing brief** — What Tornike needs for launch ← Cron 1
+- [ ] **🔍 SEO meta optimization** — Georgian search queries ← Cron 4
+- [ ] **📸 Marketing screenshots** — All pages for social media ← Cron 2
+- [ ] **🔎 Content quality pass** — Final review ← Cron 3
 
 ### ✅ COMPLETED — Tornike's 8 Priorities (Mar 7 night sprint)
 - ✅ Daily Goal → Card-Based (Cron 2)

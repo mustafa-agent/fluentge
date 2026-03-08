@@ -99,50 +99,58 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 8 Night Cycle)
+## 🎯 Current Sprint (Mar 8 Day Cycle)
 
-### Theme: "Tornike's Bug Fixes & Launch Polish"
+### Theme: "Launch Readiness & User Acquisition Prep"
 
-### CONTEXT: Previous Sprint Results (Mar 7 — "Polish, TTS & Launch Readiness")
-- ✅ TTS Voice Assessment — ChristopherNeural, 98.7% coverage, 63 broken files fixed, quality GOOD
-- ✅ Speaking Practice — 11th study mode (SpeakingPractice.tsx)
-- ✅ Mobile Responsiveness — All pages tested at 375px, no overflow
-- ✅ Deep Link E2E — Courses→Flashcards, Courses→Grammar, Podcast→Flashcards all verified
-- ✅ Custom 404 Page — Branded bilingual page
-- ✅ Podcast Visual Polish — Card contrast, vocab pill styling
+### CONTEXT: Previous Sprint Results (Mar 8 Night — "Tornike's Bug Fixes & Launch Polish")
+- ✅ ALL 10 bugs from Tornike's audit FIXED
+- ✅ Word count unified across 4 locations (Bug #4)
+- ✅ Dashboard grammar count merges both keys (Bug #6)
+- ✅ Podcast premium display fixed with fallback (Bug #5)
+- ✅ Nav premium button timing fixed (Bug #7)
+- ✅ Light mode contrast improved (Bug #8)
+- ✅ Grammar lock: 4 distinct visual states (Bug #9)
+- ✅ 15 Georgian translation fixes applied (Bug #10)
+- ✅ Podcast collapsible episodes for performance
+- ✅ Async font loading, dns-prefetch
+- ✅ QA: 0 issues, all pages 200, clean TypeScript, 267KB bundle
 
-### Strategic State (Mar 8, 1:00 AM):
-FluentGe has **72+ React components, 11 study modes, 113 pages, 266KB bundle**, placement test, level personalization, course units with real quizzes, podcast quizzes + vocab + deep links, grammar sequential lock/unlock with test gates, cloud sync, full gamification, PWA, games redesigned.
+### Strategic State (Mar 8, 11:30 AM):
+FluentGe has **72+ React components, 11 study modes, 113 pages, 267KB bundle**. ALL bugs fixed. Platform is **STABLE, POLISHED, and LAUNCH-READY.**
 
-**The platform is FEATURE-COMPLETE and LAUNCH-READY.** Now we fix the bugs Tornike found during his audit.
+**Now the question: What maximizes impact before Tornike returns?**
 
-### Known Bugs (from Tornike's Mar 7 audit in HEARTBEAT.md):
-1. ✅ Premium page shows purchase to premium users — FIXED
-2. ✅ Difficult Words not syncing across browsers — FIXED
-3. ✅ Dashboard 4 sections removed — FIXED
-4. **🔴 Homepage word count inconsistent with dashboard** — Homepage shows dynamic SRS count, dashboard shows different number. Need to unify the counting logic.
-5. **🔴 Podcast "3 უფასო" shown to premium users** — Code exists to fix this (`countEl.textContent = '35 ეპიზოდი · ყველა განბლოკილი ⭐'`) but may not run if localStorage timing issue. Need to verify.
-6. **🔴 Dashboard "0 გრამატიკა დასრულებული"** — Grammar completion tracking may not be reading `fluentge-grammar-completed` correctly.
-7. **🟡 Nav "პრემიუმი" button visible to premium users** — Code hides it (line 196-198 Layout.astro) but may have timing/race condition. Need to verify.
-8. **🟡 Light mode contrast issues** — Text too light on cream background in some areas.
-9. **🟡 Grammar lock icons look similar** — Hard to tell completed (✅) vs locked (🔒) at a glance. Need stronger visual differentiation (colors, size, opacity).
-10. **🟡 Georgian translations** — Audit ran (georgian-audit-log.txt), found ~15 fixes in greetings-basics.json and academic-english.json. Need to apply and deploy.
+### Strategic Assessment:
+The platform is technically superior to Lingwing.com (our main competitor). We have:
+- More study modes (11 vs ~3)
+- Better gamification (XP, streaks, achievements, leaderboard)
+- Better SRS (SM-2 algorithm vs basic flashcards)
+- Better content (142 decks, 65 grammar lessons, 35 podcasts, 30 games)
+- Better design (dark/light mode, mobile responsive, PWA)
 
-### Sprint Goals (Mar 8 Night)
+**But we have ZERO users.** The product doesn't matter if nobody knows about it.
 
-1. **🔴 Fix all user-facing bugs** (#4-7 above) — Cron 2 + 3
-2. **🟡 Light mode contrast audit & fix** — Cron 2
-3. **🟡 Grammar lock visual differentiation** — Cron 2
-4. **🟡 Apply Georgian translation fixes** — Cron 3
-5. **🟢 Performance/Lighthouse audit** — Cron 4
-6. **🟢 Launch checklist verification** — Cron 5
+### Remaining Gaps (prioritized by business impact):
+1. **🔴 No marketing presence** — No social media, no SEO content, no Georgian language forums. We built a Ferrari but it's in the garage.
+2. **🔴 No real payment** — Premium modal is UI-only. Can't make money until Stripe/BOG is integrated. But this needs Tornike's bank details.
+3. **🟡 HEARTBEAT.md is stale** — Still references bugs that are all fixed. Needs update.
+4. **🟡 Homepage SEO** — Meta descriptions could be better for Georgian search queries.
+5. **🟢 Content depth** — Could always add more decks, grammar lessons, podcast episodes.
 
-### For Each Cron Tonight:
-- **Cron 1 (Strategy, 1:00AM):** Sprint planning, bug triage, launch checklist. ← YOU ARE HERE
-- **Cron 2 (Design, 3:00AM):** Light mode contrast fix, grammar lock visual upgrade, bug fixes #5/#7.
-- **Cron 3 (Features, 5:00AM):** Bug fixes #4/#6, apply Georgian translation fixes, verify word counts.
-- **Cron 4 (Improvements, 7:00AM):** Performance/Lighthouse audit, any remaining polish.
-- **Cron 5 (QA, 9:00AM):** Full E2E testing of all bugs fixed + regression check.
+### Sprint Goals (Mar 8 Day)
+
+1. **Update HEARTBEAT.md** — Remove fixed bugs, set new focus
+2. **SEO & Meta optimization** — Improve Georgian-language meta tags for organic search
+3. **Content quality pass** — Review a few pages for any remaining rough edges
+4. **Prepare marketing brief** — What Tornike needs to do to launch (social media, Georgian forums, etc.)
+
+### For Each Cron Today:
+- **Cron 1 (Strategy, 11:30AM):** Sprint planning, HEARTBEAT update, marketing strategy. ← YOU ARE HERE
+- **Cron 2 (Design, 1:30PM):** Final visual polish pass, screenshot all pages for marketing assets.
+- **Cron 3 (Features, 3:30PM):** Content review, any remaining small improvements.
+- **Cron 4 (Improvements, 5:30PM):** SEO meta optimization, performance verification.
+- **Cron 5 (QA, 7:30PM):** Final comprehensive QA + launch readiness checklist.
 
 ## Technical Specs
 

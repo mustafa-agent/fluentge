@@ -1,9 +1,50 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-07 (7:30 PM)
+- **Date:** 2026-03-08 (9:00 AM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Morning QA Run (Mar 8, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200, `/courses/` — 200, `/profile/` — 200, `/placement/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Flashcard App Build — ✅ Clean
+- **Main bundle: 267.65 KB** (gzip 79.65 KB)
+- **Top-2000 chunk: 469.25 KB**
+- Built in 2.72s
+
+### Website Build — ✅ Clean
+- **113 pages** built in 4.46s, no errors
+
+### Tonight's "Tornike's Bug Fixes & Launch Polish" Sprint Verified (Crons 1-4, Mar 8)
+- [x] **Word Count Consistency Fix (Cron 3, Bug #4):** Unified ALL 4 locations (homepage, React Dashboard, DeckSelect, SRS) to count unique words from ALL storage systems. Same number everywhere now. ✅
+- [x] **Dashboard Grammar Count Fix (Cron 3, Bug #6):** Merges `fluentge-grammar-completed` + `fluentge-learned-grammar` with Set deduplication ✅
+- [x] **Georgian Translation Fixes (Cron 3):** 15 fixes applied from audit (admirable, elaborate, examine, etc.) ✅
+- [x] **Grammar Lock Visual Upgrade (Cron 2):** 4 distinct states — completed (green gradient+✅), current (blue glow+pulse+▶️), premium-locked (👑 amber 55%), sequential-locked (🔒 gray+grayscale 40%). Verified via screenshot ✅
+- [x] **Light Mode Contrast Fix (Cron 2, Bug #8):** Missing overrides for `#a0a0aa`, `#c0c0c0`, `#D0D0CA` text added ✅
+- [x] **Podcast Premium Fix (Cron 2, Bug #5):** Fallback premium email check added ✅
+- [x] **Podcast Collapsible Episodes (Cron 4):** 35 episodes collapsed by default, click to expand, chevron animation, aria-expanded, keyboard accessible ✅
+- [x] **Font Loading Optimization (Cron 4):** Google Fonts async via preload+onload, dns-prefetch for gstatic.com ✅
+
+### Browser Screenshots — ✅ All Rendering
+- **Homepage:** Returning user hero with stats (1 streak, 400 XP, 117 words, 3 level), Daily Lesson CTA, Top 2000 hero, Word of Day, features, testimonials, footer ✅
+- **Flashcards:** Stats (539 words, 400 XP, Lv.3), Daily Lesson CTA, SRS reminder (89 cards due), all deck cards ✅
+- **Grammar:** Sequential lock system visible (to-be = current with blue glow, 4 visual states), review CTA, 5 levels, premium CTA ✅
+- **Games:** Day's game spotlight, 3 category sections (ლექსიკა/გრამატიკა/გართობა), all 30 game cards ✅
+- **Podcast:** Collapsible episodes working, compact initial view ✅
+
+### Console — ✅ No Errors
+- Zero console errors on flashcards page
+
+### Verdict
+All 8 changes from tonight's "Bug Fixes & Launch Polish" sprint verified. Bugs #4, #5, #6, #8, #9 from Tornike's audit addressed. Georgian translations improved. Podcast performance optimized with collapsible episodes. Font loading non-blocking. Bundle size +1 KB (267.65 KB). Site stable at 113 pages.
+
+---
 
 ## Evening QA Run (Mar 7, 7:30 PM)
 

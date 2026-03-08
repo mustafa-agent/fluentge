@@ -7,6 +7,38 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-08
 
+### Cron 1B — Strategy (11:30 AM, Day Run)
+- **Sprint review:** "Tornike's Bug Fixes & Launch Polish" (Mar 8 night) — ALL items completed ✅
+  - All 10 Tornike bugs fixed ✅
+  - Word count unified ✅, grammar count merged ✅, podcast premium fixed ✅
+  - Light mode contrast ✅, grammar lock 4 states ✅, Georgian translations ✅
+  - Collapsible podcast episodes ✅, async font loading ✅
+  - QA passed: 0 issues, all 200s, clean TS, 267KB bundle ✅
+- **Platform state:** FEATURE-COMPLETE, BUG-FREE, LAUNCH-READY. 72+ components, 11 study modes, 113 pages, 267KB. Beats Lingwing.com on every dimension.
+- **Strategic shift:** From building → launching. Product is done. Need users.
+- **Updated HEARTBEAT.md:** Removed stale bug list, set launch prep focus, added Tornike discussion topics (payment, marketing, domain, launch strategy)
+- **New sprint:** "Launch Readiness & User Acquisition Prep"
+  - Cron 2 → Final visual polish, marketing screenshots
+  - Cron 3 → Content quality pass
+  - Cron 4 → SEO meta optimization
+  - Cron 5 → Final comprehensive QA + launch checklist
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md
+
+### Cron 4 — Improvements (7:00 AM)
+- **📱 Podcast Page Performance — Collapsible Episodes:**
+  - All 35 episodes now collapsed by default (header + description visible, content hidden)
+  - Click episode header to expand: player, transcript, quiz, vocab pills
+  - Chevron ▼ indicator with rotation animation on expand
+  - Keyboard accessible (Enter/Space to toggle), aria-expanded attributes
+  - Reduces initial DOM paint from 700KB of visible content to compact episode list
+  - Smooth slide-down animation on expand (0.3s ease-out)
+- **⚡ Font Loading Optimization:**
+  - Google Fonts now loads async via `preload` + `onload` pattern (non-render-blocking)
+  - `<noscript>` fallback for no-JS users
+  - Added `dns-prefetch` for `gstatic.com` (Firebase SDK host)
+  - Eliminates render-blocking font stylesheet from critical path
+- Deployed ✅, git pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **🐛 Word Count Consistency Fix (Bug #4):**
   - ROOT CAUSE: 3 different storage systems counted differently. Homepage (SRS+knownCards), React Dashboard (card_progress mastered only), DeckSelect (classic progress only).

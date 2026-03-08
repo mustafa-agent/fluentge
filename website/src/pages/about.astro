@@ -3,33 +3,244 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="ჩვენ შესახებ — FluentGe">
+  <!-- Hero -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=60" alt="" class="w-full h-full object-cover opacity-20"/>
       <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/80 to-[#1C1C1E]"></div>
     </div>
-    <div class="relative max-w-3xl mx-auto px-4 pt-24 pb-12 text-center">
-      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl mb-4">ჩვენ შესახებ</h1>
-      <p class="text-[#6B6B65] text-base">რატომ შევქმენით FluentGe და ვისთვის</p>
+    <div class="relative max-w-3xl mx-auto px-4 pt-24 pb-16 text-center">
+      <div class="inline-block bg-sky-500/10 border border-sky-500/20 rounded-full px-4 py-1 text-sky-400 text-xs font-bold uppercase tracking-wider mb-6">🇬🇪 Made in Georgia</div>
+      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-5xl mb-4 font-bold">ჩვენი მისია</h1>
+      <p class="text-[#A0A09A] text-base sm:text-lg max-w-xl mx-auto leading-relaxed">ინგლისურის სწავლა ყველა ქართველისთვის ხელმისაწვდომი, სახალისო და ეფექტური გავხადოთ.</p>
     </div>
   </section>
 
-  <section class="px-4 py-12 max-w-2xl mx-auto">
-    <div class="space-y-5 text-[#A0A09A] leading-relaxed text-sm sm:text-base">
-      <p><span class="font-bold text-white"><span class="text-[#C8C8C0]">Fluent</span>Ge</span> — პირველი ინგლისური ენის სასწავლო პლატფორმა ქართველებისთვის.</p>
-      <p>Duolingo-ს არ აქვს ქართული. სახელმძღვანელოები მოძველებულია. FluentGe ამ პრობლემას წყვეტს.</p>
-      <p>ჩვენ ვქმნით თანამედროვე, მობილურზე ოპტიმიზირებულ სასწავლო გარემოს, სადაც ყველაფერი ქართულ ენაზეა ახსნილი.</p>
+  <!-- Stats Bar -->
+  <section class="about-stats-bar">
+    <div class="max-w-4xl mx-auto px-4 py-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-2xl sm:text-3xl font-bold text-green-400">5,250+</div>
+        <div class="text-xs text-[#6B6B65] mt-1">სიტყვა</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-bold text-sky-400">65</div>
+        <div class="text-xs text-[#6B6B65] mt-1">გრამატიკის გაკვეთილი</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-bold text-purple-400">35</div>
+        <div class="text-xs text-[#6B6B65] mt-1">პოდკასტი</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-bold text-amber-400">11</div>
+        <div class="text-xs text-[#6B6B65] mt-1">სწავლის რეჟიმი</div>
+      </div>
     </div>
-    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mt-10">
-      <h2 class="font-bold text-lg mb-4">რას გთავაზობთ</h2>
-      <ul class="space-y-3 text-sm text-[#A0A09A]">
-        <li class="flex gap-3"><span class="text-[#C8C8C0]">&check;</span> ფლეშბარათები SM-2 ალგორითმით</li>
-        <li class="flex gap-3"><span class="text-[#C8C8C0]">&check;</span> 38 გრამატიკის გაკვეთილი</li>
-        <li class="flex gap-3"><span class="text-[#C8C8C0]">&check;</span> 21 პოდკასტ-ეპიზოდი</li>
-        <li class="flex gap-3"><span class="text-[#C8C8C0]">&check;</span> 30 ინტერაქტიული თამაში</li>
-        <li class="flex gap-3"><span class="text-[#C8C8C0]">&check;</span> 100% უფასო საბაზისო ფუნქციები</li>
-      </ul>
-    </div>
-    <p class="text-center text-[#6B6B65] mt-10 text-sm">FluentGe შექმნილია საქართველოში, ქართველებისთვის.</p>
   </section>
+
+  <!-- Problem / Solution -->
+  <section class="px-4 py-16 max-w-3xl mx-auto">
+    <div class="grid sm:grid-cols-2 gap-8">
+      <!-- Problem -->
+      <div class="about-card about-card-problem">
+        <div class="text-3xl mb-4">😞</div>
+        <h3 class="font-bold text-lg mb-3 text-rose-400">პრობლემა</h3>
+        <ul class="space-y-2 text-sm text-[#A0A09A] leading-relaxed">
+          <li>❌ Duolingo-ს არ აქვს ქართული</li>
+          <li>❌ სახელმძღვანელოები მოძველებულია</li>
+          <li>❌ კერძო მასწავლებელი ძვირია</li>
+          <li>❌ არსებული აპები ინგლისურადაა</li>
+        </ul>
+      </div>
+      <!-- Solution -->
+      <div class="about-card about-card-solution">
+        <div class="text-3xl mb-4">🚀</div>
+        <h3 class="font-bold text-lg mb-3 text-green-400">გადაწყვეტა</h3>
+        <ul class="space-y-2 text-sm text-[#A0A09A] leading-relaxed">
+          <li>✅ 100% ქართულ ენაზე</li>
+          <li>✅ თანამედროვე, სახალისო მეთოდები</li>
+          <li>✅ უფასო საბაზისო ფუნქციები</li>
+          <li>✅ მობილურზე ოპტიმიზირებული</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer -->
+  <section class="px-4 py-16 max-w-4xl mx-auto">
+    <h2 class="text-center font-['Playfair_Display',serif] text-2xl sm:text-3xl font-bold mb-3">რას გთავაზობთ</h2>
+    <p class="text-center text-[#6B6B65] text-sm mb-12">ყველაფერი რაც გჭირდება ინგლისურის სასწავლად</p>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="about-feature-card">
+        <div class="about-feature-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a);">📚</div>
+        <h3 class="font-bold mb-1">ფლეშბარათები</h3>
+        <p class="text-xs text-[#6B6B65]">5,250+ სიტყვა SM-2 ალგორითმით. 142 თემატური ნაკრები.</p>
+      </div>
+      <div class="about-feature-card">
+        <div class="about-feature-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">📖</div>
+        <h3 class="font-bold mb-1">გრამატიკა</h3>
+        <p class="text-xs text-[#6B6B65]">65 ინტერაქტიული გაკვეთილი A1-დან C1-მდე. ტესტებით.</p>
+      </div>
+      <div class="about-feature-card">
+        <div class="about-feature-icon" style="background: linear-gradient(135deg, #a855f7, #7c3aed);">🎧</div>
+        <h3 class="font-bold mb-1">პოდკასტი</h3>
+        <p class="text-xs text-[#6B6B65]">35 ეპიზოდი. ტრანსკრიპტი, ქვიზი, ლექსიკა.</p>
+      </div>
+      <div class="about-feature-card">
+        <div class="about-feature-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">🎮</div>
+        <h3 class="font-bold mb-1">თამაშები</h3>
+        <p class="text-xs text-[#6B6B65]">48 ინტერაქტიული თამაში. სწავლა გართობით.</p>
+      </div>
+      <div class="about-feature-card">
+        <div class="about-feature-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">🔊</div>
+        <h3 class="font-bold mb-1">აუდიო გამოთქმა</h3>
+        <p class="text-xs text-[#6B6B65]">16,000+ აუდიო ფაილი. ისმინე და გაიმეორე.</p>
+      </div>
+      <div class="about-feature-card">
+        <div class="about-feature-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">🏆</div>
+        <h3 class="font-bold mb-1">გეიმიფიკაცია</h3>
+        <p class="text-xs text-[#6B6B65]">XP, სტრიქები, ლიდერბორდი, მიღწევები.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="px-4 py-16">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-center font-['Playfair_Display',serif] text-2xl sm:text-3xl font-bold mb-12">როგორ მუშაობს</h2>
+      <div class="about-steps">
+        <div class="about-step">
+          <div class="about-step-num">1</div>
+          <div>
+            <h3 class="font-bold mb-1">გაიარე ტესტი</h3>
+            <p class="text-xs text-[#6B6B65]">15 კითხვიანი ტესტი განსაზღვრავს შენს დონეს (A1–C1).</p>
+          </div>
+        </div>
+        <div class="about-step">
+          <div class="about-step-num">2</div>
+          <div>
+            <h3 class="font-bold mb-1">ისწავლე ყოველდღე</h3>
+            <p class="text-xs text-[#6B6B65]">10-წუთიანი ყოველდღიური გაკვეთილი — ლექსიკა, გრამატიკა, მოსმენა.</p>
+          </div>
+        </div>
+        <div class="about-step">
+          <div class="about-step-num">3</div>
+          <div>
+            <h3 class="font-bold mb-1">გაიმეორე ჭკვიანურად</h3>
+            <p class="text-xs text-[#6B6B65]">SM-2 ალგორითმი გახსენებს სიტყვებს სწორ დროს.</p>
+          </div>
+        </div>
+        <div class="about-step">
+          <div class="about-step-num">4</div>
+          <div>
+            <h3 class="font-bold mb-1">აკონტროლე პროგრესი</h3>
+            <p class="text-xs text-[#6B6B65]">XP, სტრიქები, დაშბორდი — ხედავ რამდენს ისწავლე.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="px-4 py-16">
+    <div class="max-w-xl mx-auto text-center about-cta-card">
+      <div class="text-4xl mb-4">🇬🇪</div>
+      <h2 class="font-['Playfair_Display',serif] text-2xl font-bold mb-3">შექმნილია საქართველოში</h2>
+      <p class="text-[#6B6B65] text-sm mb-6">ქართველებისთვის, ქართველების მიერ.</p>
+      <a href="/flashcards/" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl px-8 py-3 border-b-4 border-green-600 active:border-b-2 transition-all text-sm uppercase tracking-wide">
+        დაიწყე სწავლა →
+      </a>
+    </div>
+  </section>
+
+  <style is:global>
+    .about-stats-bar {
+      background: linear-gradient(180deg, rgba(36,36,38,0.8), rgba(28,28,30,0.5));
+      border-top: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .about-card {
+      background: #242426;
+      border: 1px solid #2E2E30;
+      border-radius: 1rem;
+      padding: 1.5rem;
+    }
+    .about-card-problem { border-left: 3px solid #f43f5e; }
+    .about-card-solution { border-left: 3px solid #22c55e; }
+    .about-feature-card {
+      background: #242426;
+      border: 1px solid #2E2E30;
+      border-radius: 1rem;
+      padding: 1.25rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .about-feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .about-feature-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .about-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .about-step {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: #242426;
+      border: 1px solid #2E2E30;
+      border-radius: 1rem;
+      padding: 1.25rem;
+    }
+    .about-step-num {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: white;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+    .about-cta-card {
+      background: linear-gradient(135deg, rgba(34,197,94,0.08), rgba(14,165,233,0.08));
+      border: 1px solid rgba(34,197,94,0.15);
+      border-radius: 1.5rem;
+      padding: 2.5rem 2rem;
+    }
+
+    /* Light mode */
+    .light .about-stats-bar {
+      background: linear-gradient(180deg, rgba(240,242,245,0.9), rgba(255,255,255,0.5));
+      border-color: rgba(0,0,0,0.06);
+    }
+    .light .about-card, .light .about-feature-card, .light .about-step {
+      background: #fff;
+      border-color: #e5e7eb;
+    }
+    .light .about-feature-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .light .about-card h3, .light .about-step h3, .light .about-feature-card h3 { color: #1a1a2e; }
+    .light .about-card li, .light .about-step p, .light .about-feature-card p { color: #6b7280; }
+    .light .about-stats-bar .text-xs { color: #6b7280; }
+    .light .about-cta-card {
+      background: linear-gradient(135deg, rgba(34,197,94,0.06), rgba(14,165,233,0.06));
+      border-color: rgba(34,197,94,0.12);
+    }
+    .light .about-cta-card h2 { color: #1a1a2e; }
+    .light .about-cta-card p { color: #6b7280; }
+  </style>
 </Layout>
