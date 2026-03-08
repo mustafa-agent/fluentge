@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="პრემიუმი — FluentGe">
+<Layout title="პრემიუმი — განბლოკე ყველა ფუნქცია | FluentGe" description="FluentGe პრემიუმი: 5,250+ სიტყვა, 65 გრამატიკის გაკვეთილი, 30 თამაში, 35 პოდკასტი, 11 სასწავლო რეჟიმი. თვეში $6.67-დან.">
   <style>
     .premium-hero {
       background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
@@ -184,7 +184,7 @@ import Layout from '../layouts/Layout.astro';
         <span class="gradient-text">გახდი ფლუენტი</span>
       </h1>
       <p class="text-base sm:text-lg text-[#a0a0aa] max-w-xl mx-auto mb-10">
-        განბლოკე ყველა ფუნქცია — 5,250+ სიტყვა, 65 გრამატიკის გაკვეთილი, 30 თამაში, 6 სასწავლო რეჟიმი და ბევრი სხვა
+        განბლოკე ყველა ფუნქცია — 5,250+ სიტყვა, 65 გრამატიკის გაკვეთილი, 30 თამაში, 11 სასწავლო რეჟიმი და ბევრი სხვა
       </p>
 
       <!-- Stats bar -->
@@ -192,7 +192,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="stat-item"><div class="stat-num">5,250+</div><div class="stat-label">სიტყვა</div></div>
         <div class="stat-item"><div class="stat-num">65</div><div class="stat-label">გრამატიკა</div></div>
         <div class="stat-item"><div class="stat-num">30</div><div class="stat-label">თამაში</div></div>
-        <div class="stat-item"><div class="stat-num">6</div><div class="stat-label">რეჟიმი</div></div>
+        <div class="stat-item"><div class="stat-num">11</div><div class="stat-label">რეჟიმი</div></div>
       </div>
     </div>
   </section>
@@ -232,7 +232,7 @@ import Layout from '../layouts/Layout.astro';
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 65 გრამატიკის გაკვეთილი</li>
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 30 თამაში</li>
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 35 პოდკასტი</li>
-          <li class="flex items-center gap-2"><span class="check-icon">✓</span> 6 სასწავლო რეჟიმი</li>
+          <li class="flex items-center gap-2"><span class="check-icon">✓</span> 11 სასწავლო რეჟიმი</li>
         </ul>
         <button onclick="openPaymentModal('yearly')" class="cta-btn primary">აირჩიე წლიური ⚡</button>
       </div>
@@ -248,7 +248,7 @@ import Layout from '../layouts/Layout.astro';
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 65 გრამატიკის გაკვეთილი</li>
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 30 თამაში</li>
           <li class="flex items-center gap-2"><span class="check-icon">✓</span> 35 პოდკასტი</li>
-          <li class="flex items-center gap-2"><span class="check-icon">✓</span> 6 სასწავლო რეჟიმი</li>
+          <li class="flex items-center gap-2"><span class="check-icon">✓</span> 11 სასწავლო რეჟიმი</li>
         </ul>
         <button onclick="openPaymentModal('monthly')" class="cta-btn secondary">აირჩიე თვიური</button>
       </div>
@@ -274,11 +274,16 @@ import Layout from '../layouts/Layout.astro';
           <tr><td>პოდკასტები</td><td><span class="cross-icon">✗</span></td><td><span class="check-icon">✓</span> 35 ეპიზოდი</td></tr>
           <tr><td>ქვიზ რეჟიმი</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
           <tr><td>აკრეფის რეჟიმი</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>წინადადების აგება</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>მოსმენის სავარჯიშო</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>კითხვის გაგება</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>გამოთქმის პრაქტიკა</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>შევსების სავარჯიშო</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
           <tr><td>რთული სიტყვები</td><td><span class="cross-icon">✗</span></td><td><span class="check-icon">✓</span></td></tr>
-          <tr><td>სიტყვების ძიება</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>SRS ინტერვალური გამეორება</td><td><span class="cross-icon">✗</span></td><td><span class="check-icon">✓</span></td></tr>
           <tr><td>სერია & XP</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
-          <tr><td>მიღწევები</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
-          <tr><td>ყოველდღიური სიტყვა</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>ღრუბლოვანი სინქრონიზაცია</td><td><span class="cross-icon">✗</span></td><td><span class="check-icon">✓</span></td></tr>
+          <tr><td>ყოველდღიური გაკვეთილი</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
           <tr><td>აუდიო გამოთქმა</td><td><span class="check-icon">✓</span></td><td><span class="check-icon">✓</span></td></tr>
         </tbody>
       </table>

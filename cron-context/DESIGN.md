@@ -63,7 +63,10 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 8 night) — Cron 2 Tasks:
+### THIS SPRINT (Mar 8 day) — Cron 2 Tasks:
+- [x] **🎨 About Page Redesign** — Full sales page: hero, stats, problem/solution, 6 feature cards, 4-step flow, CTA. Light+dark mode. ✅ Mar 8
+
+### COMPLETED (Mar 8 night) — Cron 2 Tasks:
 - [x] **🎨 Light Mode Contrast Fix** — Added overrides for `#a0a0aa`, `#c0c0c0`, `#D0D0CA` text colors. Grammar cards get light-aware gradients. ✅ Mar 8
 - [x] **🔒 Grammar Lock Visual Upgrade** — 4 distinct states: ✅ green gradient+border (completed), ▶️ blue glow+pulse (current), 👑 amber (premium locked), 🔒 gray+grayscale (sequential locked). UNMISTAKABLE. ✅ Mar 8
 - [x] **🐛 Podcast Premium Display** — Added fallback premium email check directly in podcast script. No more timing race. ✅ Mar 8

@@ -7,6 +7,21 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-08
 
+### Cron 2B — Design (1:30 PM, Day Run)
+- **🎨 About Page Full Redesign:**
+  - Was: plain text + single feature list card. Looked unfinished.
+  - Now: Full sales page with 6 sections:
+    1. Hero: "ჩვენი მისია" + "Made in Georgia" badge + mission statement
+    2. Stats bar: 5,250+ words, 65 grammar, 35 podcasts, 11 study modes
+    3. Problem/Solution: two cards with red ❌ / green ✅ lists, colored left borders
+    4. Features: 6 cards with gradient emoji icons (flashcards, grammar, podcasts, games, audio, gamification)
+    5. "How it works": 4-step flow with numbered blue circles
+    6. CTA: Georgian flag + "დაიწყე სწავლა" green 3D button
+  - Full light mode support (white cards, proper contrast, readable text)
+  - Hover effects on feature cards (translateY + shadow)
+  - `is:global` style for light mode `.light` class compatibility
+- Deployed ✅, git pushed
+
 ### Cron 1B — Strategy (11:30 AM, Day Run)
 - **Sprint review:** "Tornike's Bug Fixes & Launch Polish" (Mar 8 night) — ALL items completed ✅
   - All 10 Tornike bugs fixed ✅
