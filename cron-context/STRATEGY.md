@@ -99,58 +99,44 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 8 Day Cycle)
+## 🎯 Current Sprint (Mar 9 Night Cycle)
 
-### Theme: "Launch Readiness & User Acquisition Prep"
+### Theme: "Stability Hold — Wait for Tornike"
 
-### CONTEXT: Previous Sprint Results (Mar 8 Night — "Tornike's Bug Fixes & Launch Polish")
-- ✅ ALL 10 bugs from Tornike's audit FIXED
-- ✅ Word count unified across 4 locations (Bug #4)
-- ✅ Dashboard grammar count merges both keys (Bug #6)
-- ✅ Podcast premium display fixed with fallback (Bug #5)
-- ✅ Nav premium button timing fixed (Bug #7)
-- ✅ Light mode contrast improved (Bug #8)
-- ✅ Grammar lock: 4 distinct visual states (Bug #9)
-- ✅ 15 Georgian translation fixes applied (Bug #10)
-- ✅ Podcast collapsible episodes for performance
-- ✅ Async font loading, dns-prefetch
-- ✅ QA: 0 issues, all pages 200, clean TypeScript, 267KB bundle
+### CONTEXT: Previous Sprint Results (Mar 8 Day — "Launch Readiness & User Acquisition Prep")
+- ✅ About page full redesign (professional sales page)
+- ✅ SEO unique meta descriptions for all 8 pages
+- ✅ Premium page updated to 11 study modes
+- ✅ Final QA: 0 issues, all 200s, clean TS, 267KB bundle
 
-### Strategic State (Mar 8, 11:30 AM):
-FluentGe has **72+ React components, 11 study modes, 113 pages, 267KB bundle**. ALL bugs fixed. Platform is **STABLE, POLISHED, and LAUNCH-READY.**
+### Strategic State (Mar 9, 1:00 AM):
+FluentGe has **72+ React components, 11 study modes, 113 pages, 267KB bundle**. ALL bugs fixed. About page redesigned. SEO meta tags done. Platform is **STABLE, POLISHED, and LAUNCH-READY.**
 
-**Now the question: What maximizes impact before Tornike returns?**
+**⚠️ CRITICAL DECISION: DO NOT MAKE MAJOR CHANGES.**
 
-### Strategic Assessment:
-The platform is technically superior to Lingwing.com (our main competitor). We have:
-- More study modes (11 vs ~3)
-- Better gamification (XP, streaks, achievements, leaderboard)
-- Better SRS (SM-2 algorithm vs basic flashcards)
-- Better content (142 decks, 65 grammar lessons, 35 podcasts, 30 games)
-- Better design (dark/light mode, mobile responsive, PWA)
+The platform has been stable for 24+ hours. Every change risks introducing regressions. Tornike is away. There is NO business reason to touch working code right now.
 
-**But we have ZERO users.** The product doesn't matter if nobody knows about it.
+### What's Blocking Launch (needs Tornike):
+1. **💳 Payment integration** — Need his bank details for BOG/TBC or Stripe
+2. **📣 Marketing plan** — Georgian Facebook groups, forums, TikTok, Instagram
+3. **🌐 Domain** — Consider buying fluentge.ge or fluentge.com
+4. **🚀 Launch strategy** — Soft launch to friends/family first?
 
-### Remaining Gaps (prioritized by business impact):
-1. **🔴 No marketing presence** — No social media, no SEO content, no Georgian language forums. We built a Ferrari but it's in the garage.
-2. **🔴 No real payment** — Premium modal is UI-only. Can't make money until Stripe/BOG is integrated. But this needs Tornike's bank details.
-3. **🟡 HEARTBEAT.md is stale** — Still references bugs that are all fixed. Needs update.
-4. **🟡 Homepage SEO** — Meta descriptions could be better for Georgian search queries.
-5. **🟢 Content depth** — Could always add more decks, grammar lessons, podcast episodes.
+### Sprint Goals (Mar 9 Night) — CONSERVATIVE
 
-### Sprint Goals (Mar 8 Day)
+The crons tonight should do **light, non-destructive work only**:
 
-1. **Update HEARTBEAT.md** — Remove fixed bugs, set new focus
-2. **SEO & Meta optimization** — Improve Georgian-language meta tags for organic search
-3. **Content quality pass** — Review a few pages for any remaining rough edges
-4. **Prepare marketing brief** — What Tornike needs to do to launch (social media, Georgian forums, etc.)
+1. **Cron 2 (Design, 3AM):** Light audit — check a few pages visually, no code changes unless critical
+2. **Cron 3 (Features, 5AM):** Content review only — check grammar lesson quality, deck data accuracy. NO new features.
+3. **Cron 4 (Improvements, 7AM):** Verify site health, check Lighthouse scores. NO code changes unless critical.
+4. **Cron 5 (QA, 9AM):** Standard QA run — health checks, build verification, screenshot key pages.
 
-### For Each Cron Today:
-- **Cron 1 (Strategy, 11:30AM):** Sprint planning, HEARTBEAT update, marketing strategy. ← YOU ARE HERE
-- **Cron 2 (Design, 1:30PM):** Final visual polish pass, screenshot all pages for marketing assets.
-- **Cron 3 (Features, 3:30PM):** Content review, any remaining small improvements.
-- **Cron 4 (Improvements, 5:30PM):** SEO meta optimization, performance verification.
-- **Cron 5 (QA, 7:30PM):** Final comprehensive QA + launch readiness checklist.
+### For Each Cron Tonight:
+- **Cron 1 (Strategy, 1:00AM):** Sprint planning, set conservative direction. ← YOU ARE HERE
+- **Cron 2 (Design, 3:00AM):** Visual spot-check. Only fix if something is broken.
+- **Cron 3 (Features, 5:00AM):** Content quality review. No new features.
+- **Cron 4 (Improvements, 7:00AM):** Health check + performance verification only.
+- **Cron 5 (QA, 9:00AM):** Full QA pass. Confirm everything still works.
 
 ## Technical Specs
 

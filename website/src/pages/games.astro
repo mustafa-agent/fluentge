@@ -112,11 +112,56 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Active Game Area -->
   <div id="game-overlay" class="hidden fixed inset-0 z-40 bg-[#1C1C1E] overflow-y-auto">
-    <div class="max-w-xl mx-auto px-4 pt-16 pb-6 min-h-screen">
-      <button id="back-btn" class="flex items-center gap-2 text-[#6B6B65] hover:text-[#F5F5F0] transition-colors text-sm mb-6">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
-        უკან
-      </button>
+    <div class="max-w-xl mx-auto px-4 pt-8 pb-6 min-h-screen">
+      <!-- Game Header Bar -->
+      <div class="mb-6">
+        <div class="flex items-center justify-between mb-4">
+          <button id="back-btn" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-2.5 text-[#A0A09A] hover:text-[#F5F5F0] transition-all duration-200">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+            <span class="font-medium">უკან</span>
+          </button>
+          <div id="game-xp-display" class="flex items-center gap-3 bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-2.5">
+            <div class="flex items-center gap-1.5">
+              <span class="text-yellow-400 text-base">⭐</span>
+              <span class="text-sm font-bold text-[#F5F5F0]" id="gx-xp">0</span>
+              <span class="text-xs text-[#6B6B65]">XP</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-purple-400 text-base">🏆</span>
+              <span class="text-sm font-bold text-[#F5F5F0]">Lv.<span id="gx-level">1</span></span>
+            </div>
+          </div>
+        </div>
+        <!-- Individual Game Header -->
+        <div id="game-header" class="bg-gradient-to-r from-[#242426] via-[#2E2E30] to-[#242426] border border-[#2E2E30] rounded-2xl p-4">
+          <div class="flex items-center gap-4">
+            <div id="gh-icon" class="w-12 h-12 bg-[#C8C8C0]/10 rounded-xl flex items-center justify-center border-b-2 border-[#C8C8C0]/30">
+              🎮
+            </div>
+            <div class="flex-1">
+              <h2 id="gh-title" class="text-lg font-bold text-[#F5F5F0] mb-1">თამაში</h2>
+              <p id="gh-desc" class="text-xs text-[#A0A09A]">აღწერა</p>
+            </div>
+            <div id="gh-stats" class="flex flex-col items-end gap-1">
+              <div id="gh-score" class="bg-[#C8C8C0]/10 border border-[#C8C8C0]/20 rounded-lg px-3 py-1">
+                <span class="text-xs text-[#C8C8C0] font-bold">ქულა: <span id="gh-score-value">0</span></span>
+              </div>
+              <div id="gh-timer" class="bg-[#DC2626]/10 border border-[#DC2626]/20 rounded-lg px-3 py-1 hidden">
+                <span class="text-xs text-[#DC2626] font-bold">⏱ <span id="gh-timer-value">0</span>წმ</span>
+              </div>
+            </div>
+          </div>
+          <div id="gh-progress" class="mt-4 hidden">
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-xs text-[#A0A09A]">პროგრესი</span>
+              <span class="text-xs text-[#C8C8C0] font-bold"><span id="gh-progress-current">0</span>/<span id="gh-progress-total">10</span></span>
+            </div>
+            <div class="w-full h-2 bg-[#1C1C1E] rounded-full overflow-hidden">
+              <div id="gh-progress-bar" class="h-full bg-gradient-to-r from-[#C8C8C0] to-[#B8B8B0] rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="game-container"></div>
     </div>
   </div>
@@ -176,6 +221,258 @@ import Layout from '../layouts/Layout.astro';
     @keyframes levelPop {
       0% { transform: scale(0.5); opacity: 0; }
       100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Game Player UI Enhancements */
+    .game-container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Game Content Area */
+    .game-content {
+      background: linear-gradient(135deg, #242426 0%, #2E2E30 100%);
+      border: 1px solid #2E2E30;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Game Controls Bar */
+    .game-controls {
+      background: linear-gradient(135deg, #1C1C1E 0%, #242426 100%);
+      border: 1px solid #2E2E30;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Unified Game Button Styles */
+    .game-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid transparent;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .game-btn-primary {
+      background: linear-gradient(135deg, #C8C8C0 0%, #B8B8B0 100%);
+      color: #1C1C1E;
+      border-color: #C8C8C0;
+    }
+    .game-btn-primary:hover {
+      background: linear-gradient(135deg, #B8B8B0 0%, #A8A8A0 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(200, 200, 192, 0.3);
+    }
+
+    .game-btn-secondary {
+      background: linear-gradient(135deg, #242426 0%, #2E2E30 100%);
+      color: #F5F5F0;
+      border-color: #2E2E30;
+    }
+    .game-btn-secondary:hover {
+      background: linear-gradient(135deg, #2E2E30 0%, #3E3E40 100%);
+      border-color: #C8C8C0;
+      color: #C8C8C0;
+      transform: translateY(-1px);
+    }
+
+    .game-btn-danger {
+      background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+      color: #FFF;
+      border-color: #DC2626;
+    }
+    .game-btn-danger:hover {
+      background: linear-gradient(135deg, #B91C1C 0%, #991B1B 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+    }
+
+    .game-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    /* Answer Feedback Animations */
+    @keyframes correctAnswer {
+      0% { background-color: #C8C8C0; transform: scale(1); }
+      50% { background-color: #10B981; transform: scale(1.05); }
+      100% { background-color: rgba(16, 185, 129, 0.1); transform: scale(1); }
+    }
+    
+    @keyframes wrongAnswer {
+      0% { background-color: #EF4444; transform: scale(1); }
+      25% { transform: translateX(-5px) scale(1.02); }
+      50% { transform: translateX(5px) scale(1.02); }
+      75% { transform: translateX(-3px) scale(1.01); }
+      100% { background-color: rgba(239, 68, 68, 0.1); transform: translateX(0) scale(1); }
+    }
+
+    .answer-correct {
+      animation: correctAnswer 0.6s ease-out;
+      border-color: #10B981 !important;
+    }
+
+    .answer-wrong {
+      animation: wrongAnswer 0.6s ease-out;
+      border-color: #EF4444 !important;
+    }
+
+    /* Game Option Buttons */
+    .game-option {
+      background: linear-gradient(135deg, #242426 0%, #2E2E30 100%);
+      border: 1px solid #2E2E30;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      color: #F5F5F0;
+      font-weight: 500;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .game-option:hover {
+      background: linear-gradient(135deg, #2E2E30 0%, #3E3E40 100%);
+      border-color: #C8C8C0;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(200, 200, 192, 0.15);
+    }
+
+    .game-option:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(200, 200, 192, 0.1);
+    }
+
+    /* Game Completion Modal */
+    .game-completion {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(28, 28, 30, 0.9);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    .game-completion-card {
+      background: linear-gradient(135deg, #242426 0%, #2E2E30 100%);
+      border: 1px solid #C8C8C0;
+      border-radius: 2rem;
+      padding: 3rem 2rem;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      animation: completionPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    @keyframes completionPop {
+      0% { transform: scale(0.7) translateY(20px); opacity: 0; }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
+    }
+
+    /* Progress indicators */
+    .progress-ring {
+      width: 60px;
+      height: 60px;
+      transform: rotate(-90deg);
+    }
+    .progress-ring-circle {
+      fill: transparent;
+      stroke: #2E2E30;
+      stroke-width: 4;
+    }
+    .progress-ring-progress {
+      fill: transparent;
+      stroke: #C8C8C0;
+      stroke-width: 4;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.5s ease;
+    }
+
+    /* Game input styling */
+    .game-input {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border-radius: 0.75rem;
+      background: linear-gradient(135deg, #242426 0%, #2E2E30 100%);
+      border: 1px solid #2E2E30;
+      color: #F5F5F0;
+      font-size: 1rem;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+    .game-input:focus {
+      outline: none;
+      border-color: #C8C8C0;
+      box-shadow: 0 0 0 3px rgba(200, 200, 192, 0.1);
+    }
+    .game-input::placeholder {
+      color: #6B6B65;
+    }
+
+    /* Game feedback messages */
+    .game-feedback {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 1rem 0;
+      animation: slideIn 0.3s ease-out;
+    }
+    .game-feedback-success {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #10B981;
+    }
+    .game-feedback-error {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #EF4444;
+    }
+    .game-feedback-warning {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #F59E0B;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      .game-content {
+        padding: 1.5rem;
+      }
+      .game-controls {
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+      .game-btn {
+        font-size: 0.8rem;
+        padding: 0.625rem 1.25rem;
+      }
     }
   </style>
 
@@ -266,6 +563,194 @@ import Layout from '../layouts/Layout.astro';
     function snd(ok){try{if(!actx)actx=new(window.AudioContext||window.webkitAudioContext)();if(actx.state==='suspended')actx.resume();const o=actx.createOscillator(),g=actx.createGain();o.connect(g);g.connect(actx.destination);g.gain.setValueAtTime(0.13,actx.currentTime);o.type='sine';if(ok){o.frequency.setValueAtTime(523,actx.currentTime);o.frequency.setValueAtTime(659,actx.currentTime+0.1);}else{o.frequency.setValueAtTime(330,actx.currentTime);o.frequency.setValueAtTime(262,actx.currentTime+0.15);}g.gain.exponentialRampToValueAtTime(0.001,actx.currentTime+0.3);o.start(actx.currentTime);o.stop(actx.currentTime+0.35);}catch(e){}}
     function h(tag,cls='',html=''){const e=document.createElement(tag);e.className=cls;e.innerHTML=html;return e;}
 
+    // ============ GAME UI UTILITIES ============
+    function setGameHeader(game) {
+      const icon = document.getElementById('gh-icon');
+      const title = document.getElementById('gh-title');
+      const desc = document.getElementById('gh-desc');
+      const score = document.getElementById('gh-score-value');
+      const timer = document.getElementById('gh-timer');
+      const timerValue = document.getElementById('gh-timer-value');
+      const progress = document.getElementById('gh-progress');
+
+      if (icon) {
+        if (game.iconSvg) {
+          icon.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${game.color || '#C8C8C0'}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${game.iconSvg}</svg>`;
+        } else {
+          icon.textContent = game.iconEmoji || '🎮';
+        }
+        icon.style.borderColor = (game.color || '#C8C8C0') + '30';
+      }
+      if (title) title.textContent = game.name || 'თამაში';
+      if (desc) desc.textContent = game.description || '';
+      if (score) score.textContent = '0';
+      if (timer && game.hasTimer) {
+        timer.classList.remove('hidden');
+        if (timerValue) timerValue.textContent = '0';
+      } else if (timer) {
+        timer.classList.add('hidden');
+      }
+      if (progress && game.hasProgress) {
+        progress.classList.remove('hidden');
+        updateGameProgress(0, game.totalQuestions || 10);
+      } else if (progress) {
+        progress.classList.add('hidden');
+      }
+
+      // Update XP display
+      updateGameXPDisplay();
+    }
+
+    function updateGameXPDisplay() {
+      const xp = getGamesTotalXP();
+      const level = getGamesLevel(xp);
+      const xpEl = document.getElementById('gx-xp');
+      const levelEl = document.getElementById('gx-level');
+      if (xpEl) xpEl.textContent = xp >= 1000 ? (xp/1000).toFixed(1)+'k' : xp;
+      if (levelEl) levelEl.textContent = level;
+    }
+
+    function updateGameScore(newScore) {
+      const scoreEl = document.getElementById('gh-score-value');
+      if (scoreEl) {
+        scoreEl.textContent = newScore;
+        scoreEl.parentElement.style.animation = 'none';
+        scoreEl.parentElement.offsetHeight; // Trigger reflow
+        scoreEl.parentElement.style.animation = 'correctAnswer 0.6s ease-out';
+      }
+    }
+
+    function updateGameTimer(seconds) {
+      const timerEl = document.getElementById('gh-timer-value');
+      if (timerEl) {
+        timerEl.textContent = seconds;
+        if (seconds <= 10) {
+          timerEl.parentElement.style.background = 'rgba(220, 38, 38, 0.2)';
+          timerEl.parentElement.style.borderColor = 'rgba(220, 38, 38, 0.4)';
+        }
+      }
+    }
+
+    function updateGameProgress(current, total) {
+      const currentEl = document.getElementById('gh-progress-current');
+      const totalEl = document.getElementById('gh-progress-total');
+      const barEl = document.getElementById('gh-progress-bar');
+      
+      if (currentEl) currentEl.textContent = current;
+      if (totalEl) totalEl.textContent = total;
+      if (barEl) {
+        const percentage = Math.min(100, (current / total) * 100);
+        barEl.style.width = percentage + '%';
+      }
+    }
+
+    function showAnswerFeedback(element, isCorrect, correctAnswer = '') {
+      if (!element) return;
+      
+      element.classList.remove('answer-correct', 'answer-wrong');
+      
+      if (isCorrect) {
+        element.classList.add('answer-correct');
+        setTimeout(() => element.classList.remove('answer-correct'), 600);
+      } else {
+        element.classList.add('answer-wrong');
+        setTimeout(() => element.classList.remove('answer-wrong'), 600);
+        if (correctAnswer) {
+          const feedback = document.createElement('div');
+          feedback.className = 'game-feedback game-feedback-error';
+          feedback.textContent = correctAnswer;
+          element.parentElement.insertBefore(feedback, element.nextSibling);
+          setTimeout(() => feedback.remove(), 2000);
+        }
+      }
+    }
+
+    function showGameCompletion(gameData) {
+      const modal = document.createElement('div');
+      modal.className = 'game-completion';
+      
+      const statsHtml = [];
+      if (gameData.score !== undefined) statsHtml.push(`<div class="text-2xl font-bold text-[#C8C8C0] mb-2">${gameData.score} ქულა</div>`);
+      if (gameData.time) statsHtml.push(`<div class="text-sm text-[#A0A09A] mb-1">დრო: ${gameData.time}</div>`);
+      if (gameData.accuracy) statsHtml.push(`<div class="text-sm text-[#A0A09A] mb-1">სისწორე: ${gameData.accuracy}%</div>`);
+      if (gameData.streak) statsHtml.push(`<div class="text-sm text-[#A0A09A] mb-1">სერია: ${gameData.streak}</div>`);
+      
+      const xpEarned = gameData.xpEarned || GAME_XP.COMPLETION;
+      const message = gameData.isNewRecord ? '🏆 ახალი რეკორდი!' : 
+                     gameData.score >= (gameData.target || 10) ? '🎉 შესანიშნავი!' : 
+                     '💪 კარგი მცდელობა!';
+
+      modal.innerHTML = `
+        <div class="game-completion-card">
+          <div class="text-6xl mb-4">${gameData.isNewRecord ? '🏆' : gameData.score >= (gameData.target || 10) ? '🎉' : '💪'}</div>
+          <div class="text-xl font-bold text-[#F5F5F0] mb-4">${message}</div>
+          ${statsHtml.join('')}
+          <div class="bg-[#C8C8C0]/10 border border-[#C8C8C0]/20 rounded-xl p-4 my-4">
+            <div class="text-yellow-400 text-lg mb-1">+${xpEarned} XP</div>
+            <div class="text-xs text-[#A0A09A]">მიღებული ქულები</div>
+          </div>
+          <div class="flex gap-3 mt-6">
+            <button onclick="this.closest('.game-completion').remove(); location.reload();" class="game-btn game-btn-secondary flex-1">
+              თავიდან
+            </button>
+            <button onclick="this.closest('.game-completion').remove(); document.getElementById('back-btn').click();" class="game-btn game-btn-primary flex-1">
+              უკან
+            </button>
+          </div>
+        </div>
+      `;
+      
+      document.body.appendChild(modal);
+      
+      // Award XP
+      if (xpEarned > 0) {
+        setTimeout(() => awardGameXP(null, xpEarned), 500);
+      }
+    }
+
+    function createGameLayout(title, description, gameId, options = {}) {
+      const gameInfo = GAMES.find(g => g.id === gameId) || {name: title, desc: description, color: '#C8C8C0'};
+      
+      setGameHeader({
+        name: gameInfo.name,
+        description: gameInfo.desc,
+        color: gameInfo.color,
+        iconSvg: gameInfo.icon,
+        hasTimer: options.hasTimer || false,
+        hasProgress: options.hasProgress || false,
+        totalQuestions: options.totalQuestions || 10
+      });
+
+      const record = gameId ? getGameRecord(gameId) : 0;
+      const recordHtml = gameId && record > 0 ? 
+        `<div class="bg-[#C8C8C0]/10 border border-[#C8C8C0]/20 rounded-xl px-4 py-2 mb-4">
+          <div class="flex items-center justify-center gap-2">
+            <span class="text-yellow-400">🏆</span>
+            <span class="text-sm font-bold text-[#C8C8C0]">რეკორდი: ${record}</span>
+          </div>
+        </div>` : '';
+
+      cont.innerHTML = `
+        <div class="game-container">
+          ${recordHtml}
+          <div class="game-content">
+            <div id="game-main-content">
+              <!-- Game-specific content will be inserted here -->
+            </div>
+          </div>
+          <div class="game-controls" id="game-controls">
+            <!-- Game controls will be inserted here -->
+          </div>
+        </div>
+      `;
+      
+      updateGameXPDisplay();
+      return {
+        content: document.getElementById('game-main-content'),
+        controls: document.getElementById('game-controls')
+      };
+    }
+
     // ============ GAMES XP SYSTEM ============
     const GAME_XP = { CORRECT: 10, STREAK_BONUS: 5, COMPLETION: 50 };
     function getGamesTotalXP(){ return parseInt(localStorage.getItem('totalXP')||'0',10); }
@@ -319,25 +804,13 @@ import Layout from '../layouts/Layout.astro';
       document.body.appendChild(d);
       setTimeout(()=>d.remove(),2500);
     }
-    // XP header for game overlay
-    function updateGameXPHeader(){
-      let hdr=document.getElementById('game-xp-header');
-      if(!hdr){
-        hdr=document.createElement('div');hdr.id='game-xp-header';
-        hdr.className='flex items-center justify-center gap-4 mb-4 text-sm';
-        const gc=document.getElementById('game-container');
-        if(gc)gc.parentElement.insertBefore(hdr,gc);
-      }
-      const xp=getGamesTotalXP();const lv=getGamesLevel(xp);
-      const xpInLevel=xp-((lv-1)*200);const pct=Math.min(100,(xpInLevel/200)*100);
-      hdr.innerHTML=`<span class="text-yellow-400 font-bold">⭐ ${xp} XP</span><span class="text-purple-400 font-bold">Lv.${lv}</span><div class="w-24 h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all" style="width:${pct}%"></div></div>`;
-    }
+    // Remove old XP header function - replaced by updateGameXPDisplay
     // Award XP on correct answer in any game
     function awardGameXP(el,amount){
       amount=amount||GAME_XP.CORRECT;
       const result=addGameXP(amount);
       showXPFloat(el,amount);
-      updateGameXPHeader();
+      updateGameXPDisplay();
       if(result.levelUp)setTimeout(()=>showLevelUp(result.newLevel),400);
     }
     // Populate stats bar
@@ -473,15 +946,21 @@ import Layout from '../layouts/Layout.astro';
 
     document.getElementById('sub-btn').onclick=()=>alert('მალე დაემატება! Coming soon!');
     document.getElementById('sub-close').onclick=()=>modal.classList.add('hidden');
-    document.getElementById('back-btn').onclick=()=>{_gameActive=false;overlay.classList.add('hidden');cont.innerHTML='';document.body.style.overflow='';const xh=document.getElementById('game-xp-header');if(xh)xh.remove();};
+    document.getElementById('back-btn').onclick=()=>{
+      _gameActive=false;
+      overlay.classList.add('hidden');
+      cont.innerHTML='';
+      document.body.style.overflow='';
+      // Remove any completion modals
+      document.querySelectorAll('.game-completion').forEach(modal => modal.remove());
+    };
 
     function openGame(id){
       overlay.classList.remove('hidden');
       document.body.style.overflow='hidden';
       cont.innerHTML='';
       _gameActive=true;
-      // Show XP header
-      setTimeout(updateGameXPHeader,100);
+      
       const b={match:buildMatch,speed:buildSpeed,truefalse:buildTF,scramble:buildScramble,hangman:buildHangman,fillblank:buildFB,emojiquiz:buildEQ,memory:buildMem,typing:buildType,listening:buildListen,opposites:buildOpp,numbers:buildNum,daysmonths:buildDM,countries:buildCountry,foodquiz:buildFood,clothesquiz:buildClothes,rooms:buildRoom,emotionsquiz:buildEmo,family:buildFamily,travel:buildTravel,phrasesquiz:buildPhrases,movies:buildMovies,math:buildMath,routine:buildRoutine,spelling:buildSpelling,wordrace:buildWordRace,colorsquiz:buildColors,timequiz:buildTime,categories:buildCat,wordcatch:buildCatch};
       if(b[id])b[id]();
     }
@@ -513,48 +992,295 @@ import Layout from '../layouts/Layout.astro';
       return isNew;
     }
 
-    function gameWrap(title,desc,gameId){
-      const rec=getGameRecord(gameId||'');
-      const recHtml=gameId?`<div class="flex items-center gap-2 mb-4"><span class="text-xs bg-[#C8C8C0]/10 border border-[#C8C8C0]/20 rounded-full px-3 py-1 text-[#C8C8C0]">🏆 რეკორდი: <span id="game-record">${rec}</span></span></div>`:'';
-      cont.innerHTML=`<div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-5 sm:p-8"><h2 class="text-xl sm:text-2xl font-bold mb-1 text-[#F5F5F0]">${title}</h2><p class="text-[#6B6B65] text-sm mb-4">${desc}</p>${recHtml}<div id="gc"></div></div>`;
-      return document.getElementById('gc');
-    }
+    // gameWrap function removed - replaced by createGameLayout
 
     function checkRecord(gameId,score){
       const isNew=saveGameRecord(gameId,score);
-      const el=document.getElementById('game-record');
-      if(el&&isNew){el.textContent=score;el.closest('span').classList.add('!text-yellow-400','!border-yellow-400/40');}
+      // Record display is now handled by the completion screen
       return isNew;
     }
 
     function buildMatch(){
-      const gc=gameWrap('დაკავშირება','დააკავშირე ინგლისური სიტყვა ქართულ თარგმანთან','match');
+      const layout = createGameLayout('დაკავშირება', 'დააკავშირე ინგლისური სიტყვა ქართულ თარგმანთან', 'match', {hasTimer: true, hasProgress: true, totalQuestions: 6});
       let score=0,timer=0,int,selE=null,selK=null,cnt=0;
-      gc.innerHTML=`<div class="text-center mb-3 text-sm"><span class="text-[#C8C8C0] font-bold">ქულა: <span id="ms">0</span></span> <span class="text-[#6B6B65] ml-3">დრო: <span id="mt">0</span>წმ</span></div><div class="grid grid-cols-2 gap-3"><div id="ec" class="space-y-2"></div><div id="kc" class="space-y-2"></div></div><div id="mr" class="hidden mt-4 text-center"></div><button id="mn" class="mt-4 w-full bg-[#C8C8C0] hover:bg-[#B8B8B0] text-[#1C1C1E] font-semibold py-3 rounded-xl text-sm">ახალი რაუნდი</button>`;
-      function start(){score=0;timer=0;cnt=0;selE=null;selK=null;document.getElementById('ms').textContent='0';document.getElementById('mt').textContent='0';document.getElementById('mr').classList.add('hidden');if(int)clearInterval(int);int=setInterval(()=>{timer++;document.getElementById('mt').textContent=timer;},1000);const r=sh(W).slice(0,6),es=sh(r),ks=sh(r);const ec=document.getElementById('ec'),kc=document.getElementById('kc');ec.innerHTML='';kc.innerHTML='';
-      es.forEach(w=>{const b=h('button','w-full text-left px-3 py-2.5 rounded-lg border border-[#2E2E30] bg-[#242426] hover:bg-[#2E2E30] text-[#F5F5F0] transition-colors text-xs sm:text-sm font-medium',w.en);b.onclick=()=>{ec.querySelectorAll('button').forEach(x=>x.classList.remove('ring-2','ring-[#C8C8C0]'));b.classList.add('ring-2','ring-[#C8C8C0]');selE={b,w:w.en};chk();};ec.appendChild(b);});
-      ks.forEach(w=>{const b=h('button','w-full text-left px-3 py-2.5 rounded-lg border border-[#2E2E30] bg-[#242426] hover:bg-[#2E2E30] text-[#F5F5F0] transition-colors text-xs sm:text-sm font-medium',w.ka);b.onclick=()=>{kc.querySelectorAll('button').forEach(x=>x.classList.remove('ring-2','ring-[#C8C8C0]'));b.classList.add('ring-2','ring-[#C8C8C0]');selK={b,w:w.en};chk();};kc.appendChild(b);});}
-      function chk(){if(!selE||!selK)return;if(selE.w===selK.w){snd(1);score++;cnt++;document.getElementById('ms').textContent=score;selE.b.classList.add('bg-[#C8C8C0]/15','opacity-50','pointer-events-none');selK.b.classList.add('bg-[#C8C8C0]/15','opacity-50','pointer-events-none');if(cnt>=6){clearInterval(int);document.getElementById('mr').classList.remove('hidden');document.getElementById('mr').innerHTML=`<p class="text-xl font-bold text-[#C8C8C0]">${timer} წამში დაასრულე!</p>`;checkRecord('match',score);}}else{snd(0);const e=selE,k=selK;e.b.classList.add('bg-[#ef4444]/15');k.b.classList.add('bg-[#ef4444]/15');setTimeout(()=>{e.b.classList.remove('bg-[#ef4444]/15','ring-2','ring-[#C8C8C0]');k.b.classList.remove('bg-[#ef4444]/15','ring-2','ring-[#C8C8C0]');},500);}selE=null;selK=null;}
+      
+      layout.content.innerHTML = `
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <h3 class="text-sm font-bold text-[#C8C8C0] mb-3 text-center">ინგლისური</h3>
+            <div id="ec" class="space-y-2"></div>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-[#C8C8C0] mb-3 text-center">ქართული</h3>
+            <div id="kc" class="space-y-2"></div>
+          </div>
+        </div>
+        <div id="mr" class="game-feedback game-feedback-success mt-4 hidden"></div>
+      `;
+
+      layout.controls.innerHTML = `
+        <button id="mn" class="game-btn game-btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+          ახალი რაუნდი
+        </button>
+        <button class="game-btn game-btn-secondary" onclick="document.getElementById('back-btn').click()">
+          დასრულება
+        </button>
+      `;
+      function start(){
+        score=0;timer=0;cnt=0;selE=null;selK=null;
+        updateGameScore(0);
+        updateGameTimer(0);
+        updateGameProgress(0, 6);
+        document.getElementById('mr').classList.add('hidden');
+        
+        if(int)clearInterval(int);
+        int=setInterval(()=>{timer++;updateGameTimer(timer);},1000);
+        
+        const r=sh(W).slice(0,6),es=sh(r),ks=sh(r);
+        const ec=document.getElementById('ec'),kc=document.getElementById('kc');
+        ec.innerHTML='';kc.innerHTML='';
+        
+        es.forEach(w=>{
+          const b=h('button','game-option',w.en);
+          b.onclick=()=>{
+            ec.querySelectorAll('button').forEach(x=>x.classList.remove('ring-2','ring-[#C8C8C0]'));
+            b.classList.add('ring-2','ring-[#C8C8C0]');
+            selE={b,w:w.en};
+            chk();
+          };
+          ec.appendChild(b);
+        });
+        
+        ks.forEach(w=>{
+          const b=h('button','game-option',w.ka);
+          b.onclick=()=>{
+            kc.querySelectorAll('button').forEach(x=>x.classList.remove('ring-2','ring-[#C8C8C0]'));
+            b.classList.add('ring-2','ring-[#C8C8C0]');
+            selK={b,w:w.en};
+            chk();
+          };
+          kc.appendChild(b);
+        });
+      }
+      
+      function chk(){
+        if(!selE||!selK)return;
+        if(selE.w===selK.w){
+          snd(1);
+          score++;
+          cnt++;
+          updateGameScore(score);
+          updateGameProgress(cnt, 6);
+          
+          showAnswerFeedback(selE.b, true);
+          showAnswerFeedback(selK.b, true);
+          selE.b.classList.add('opacity-50','pointer-events-none');
+          selK.b.classList.add('opacity-50','pointer-events-none');
+          
+          if(cnt>=6){
+            clearInterval(int);
+            const isNewRecord = checkRecord('match',score);
+            setTimeout(() => {
+              showGameCompletion({
+                score: score,
+                time: timer + 'წმ',
+                isNewRecord: isNewRecord,
+                xpEarned: GAME_XP.COMPLETION + (score * GAME_XP.CORRECT)
+              });
+            }, 800);
+          }
+        }else{
+          snd(0);
+          const e=selE,k=selK;
+          showAnswerFeedback(e.b, false);
+          showAnswerFeedback(k.b, false);
+          setTimeout(()=>{
+            e.b.classList.remove('ring-2','ring-[#C8C8C0]');
+            k.b.classList.remove('ring-2','ring-[#C8C8C0]');
+          },600);
+        }
+        selE=null;selK=null;
+      }
+      
       document.getElementById('mn').onclick=start;start();
     }
 
     function buildSpeed(){
-      const gc=gameWrap('სიჩქარის ქვიზი','30 წამი გაქვს — რამდენ სიტყვას დაიმახსოვრებ?','speed');
-      gc.innerHTML=`<div id="ss" class="text-center"><button id="sg" class="bg-[#C8C8C0] hover:bg-[#B8B8B0] text-[#1C1C1E] font-bold py-4 px-10 rounded-xl text-base">დაიწყე</button></div><div id="sp" class="hidden"><div class="flex justify-between mb-4"><span class="text-[#C8C8C0] font-bold">ქულა: <span id="ssc">0</span></span><span class="text-[#ef4444] font-bold text-xl"><span id="st">30</span>წმ</span></div><p id="sw" class="text-2xl sm:text-3xl font-bold text-center mb-6"></p><div id="so" class="grid grid-cols-2 gap-3"></div></div><div id="sr" class="hidden text-center"><p class="text-2xl font-bold mb-2">შედეგი: <span id="sf" class="text-[#C8C8C0]"></span></p><p id="sm" class="text-[#6B6B65] mb-4"></p><button id="sy" class="bg-[#C8C8C0] hover:bg-[#B8B8B0] text-[#1C1C1E] font-bold py-3 px-8 rounded-xl text-sm">თავიდან</button></div>`;
-      let sc=0,tl=30,si=null;
-      function go(){sc=0;tl=30;document.getElementById('ssc').textContent='0';document.getElementById('st').textContent='30';document.getElementById('ss').classList.add('hidden');document.getElementById('sr').classList.add('hidden');document.getElementById('sp').classList.remove('hidden');if(si)clearInterval(si);si=setInterval(()=>{tl--;document.getElementById('st').textContent=tl;if(tl<=0){clearInterval(si);end();}},1000);nxt();}
-      function nxt(){const c=rw(),wr=sh(W.filter(w=>w.en!==c.en)).slice(0,3),opts=sh([c,...wr]);document.getElementById('sw').textContent=c.en;const d=document.getElementById('so');d.innerHTML='';opts.forEach(o=>{const b=h('button','px-3 py-3 rounded-lg border border-[#2E2E30] bg-[#242426] hover:bg-[#2E2E30] text-[#F5F5F0] transition-colors font-medium text-xs sm:text-sm',o.ka);b.onclick=()=>{if(o.en===c.en){snd(1);sc++;document.getElementById('ssc').textContent=sc;}else snd(0);nxt();};d.appendChild(b);});}
-      function end(){document.getElementById('sp').classList.add('hidden');document.getElementById('sr').classList.remove('hidden');document.getElementById('sf').textContent=sc+' სიტყვა';const isNew=checkRecord('speed',sc);document.getElementById('sm').textContent=isNew?'🏆 ახალი რეკორდი!':sc>=15?'ჩემპიონი!':sc>=10?'შესანიშნავი!':sc>=5?'კარგია!':'ივარჯიშე!';}
-      document.getElementById('sg').onclick=go;document.getElementById('sy').onclick=go;
+      const layout = createGameLayout('სიჩქარის ქვიზი', '30 წამი გაქვს — რამდენ სიტყვას დაიმახსოვრებ?', 'speed', {hasTimer: true});
+      let sc=0,tl=30,si=null,gameStarted=false;
+      
+      layout.content.innerHTML = `
+        <div id="ss" class="text-center py-8">
+          <div class="text-6xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold text-[#F5F5F0] mb-2">მზად ხარ?</h3>
+          <p class="text-[#A0A09A] text-sm mb-6">30 წამში მაქსიმალურად ბევრი სიტყვის თარგმნა</p>
+        </div>
+        <div id="sp" class="hidden">
+          <p id="sw" class="text-2xl sm:text-3xl font-bold text-center mb-6 text-[#F5F5F0]"></p>
+          <div id="so" class="grid grid-cols-2 gap-3"></div>
+        </div>
+      `;
+
+      layout.controls.innerHTML = `
+        <button id="sg" class="game-btn game-btn-primary" style="min-width: 140px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5l8 8-8 8"/></svg>
+          დაიწყე
+        </button>
+        <button class="game-btn game-btn-secondary" onclick="document.getElementById('back-btn').click()">
+          უკან
+        </button>
+      `;
+      
+      function go(){
+        sc=0;tl=30;gameStarted=true;
+        updateGameScore(0);
+        updateGameTimer(30);
+        document.getElementById('ss').classList.add('hidden');
+        document.getElementById('sp').classList.remove('hidden');
+        document.getElementById('sg').style.display = 'none';
+        
+        if(si)clearInterval(si);
+        si=setInterval(()=>{
+          tl--;
+          updateGameTimer(tl);
+          if(tl<=0){
+            clearInterval(si);
+            end();
+          }
+        },1000);
+        nxt();
+      }
+      
+      function nxt(){
+        if(!gameStarted) return;
+        const c=rw(),wr=sh(W.filter(w=>w.en!==c.en)).slice(0,3),opts=sh([c,...wr]);
+        document.getElementById('sw').textContent=c.en;
+        const d=document.getElementById('so');
+        d.innerHTML='';
+        opts.forEach(o=>{
+          const b=h('button','game-option',o.ka);
+          b.onclick=()=>{
+            if(o.en===c.en){
+              snd(1);
+              sc++;
+              updateGameScore(sc);
+              showAnswerFeedback(b, true);
+            }else{
+              snd(0);
+              showAnswerFeedback(b, false, c.ka);
+            }
+            setTimeout(nxt, 300);
+          };
+          d.appendChild(b);
+        });
+      }
+      
+      function end(){
+        gameStarted = false;
+        const isNew = checkRecord('speed',sc);
+        const message = sc>=15?'ჩემპიონი!':sc>=10?'შესანიშნავი!':sc>=5?'კარგია!':'ივარჯიშე!';
+        
+        setTimeout(() => {
+          showGameCompletion({
+            score: sc,
+            time: '30წმ',
+            isNewRecord: isNew,
+            target: 10,
+            xpEarned: GAME_XP.COMPLETION + (sc * GAME_XP.CORRECT)
+          });
+        }, 500);
+      }
+      
+      document.getElementById('sg').onclick=go;
     }
 
     function buildTF(){
-      const gc=gameWrap('სიმართლე / ტყუილი','ეს თარგმანი სწორია?','truefalse');
-      gc.innerHTML=`<div class="text-center mb-6"><p id="te" class="text-2xl sm:text-3xl font-bold mb-2"></p><p class="text-[#6B6B65]">=</p><p id="tk" class="text-xl sm:text-2xl font-bold text-[#C8C8C0] mt-2"></p></div><div class="flex gap-3 justify-center mb-4"><button id="tt" class="flex-1 max-w-[180px] bg-green-500/10 hover:bg-[#C8C8C0]/15 border border-[#C8C8C0]/20 text-[#C8C8C0] font-bold py-3 rounded-xl text-sm">სიმართლე</button><button id="tf" class="flex-1 max-w-[180px] bg-red-500/10 hover:bg-[#ef4444]/15 border border-red-500/20 text-[#ef4444] font-bold py-3 rounded-xl text-sm">ტყუილი</button></div><div id="tb" class="text-center font-bold mb-2"></div><div class="text-center text-sm"><span class="text-[#C8C8C0] font-bold"><span id="ts">0</span>/<span id="to">0</span></span></div>`;
-      let sc=0,tot=0,correct,word;
-      function nxt(){word=rw();const isT=Math.random()>0.4;if(isT){document.getElementById('tk').textContent=word.ka;correct=true;}else{const wr=W.filter(w=>w.en!==word.en);document.getElementById('tk').textContent=wr[Math.floor(Math.random()*wr.length)].ka;correct=false;}document.getElementById('te').textContent=word.en;document.getElementById('tb').innerHTML='';}
-      function ans(p){tot++;document.getElementById('to').textContent=tot;if(p===correct){snd(1);sc++;document.getElementById('ts').textContent=sc;checkRecord('truefalse',sc);document.getElementById('tb').innerHTML='<p class="text-[#C8C8C0] text-sm">სწორია!</p>';}else{snd(0);document.getElementById('tb').innerHTML=`<p class="text-[#ef4444] text-sm">${word.en} = ${word.ka}</p>`;}setTimeout(nxt,1200);}
-      document.getElementById('tt').onclick=()=>ans(true);document.getElementById('tf').onclick=()=>ans(false);nxt();
+      const layout = createGameLayout('სიმართლე / ტყუილი', 'ეს თარგმანი სწორია?', 'truefalse');
+      let sc=0,tot=0,correct,word,answered=false;
+      
+      layout.content.innerHTML = `
+        <div class="text-center mb-8">
+          <p id="te" class="text-2xl sm:text-3xl font-bold mb-4 text-[#F5F5F0]"></p>
+          <div class="text-[#6B6B65] text-lg mb-4">=</div>
+          <p id="tk" class="text-xl sm:text-2xl font-bold text-[#C8C8C0]"></p>
+        </div>
+        <div id="tb" class="mb-4 min-h-[40px] flex items-center justify-center"></div>
+        <div class="text-center text-sm">
+          <span class="bg-[#C8C8C0]/10 border border-[#C8C8C0]/20 rounded-lg px-4 py-2 text-[#C8C8C0] font-bold">
+            სწორი პასუხები: <span id="ts">0</span>/<span id="to">0</span>
+          </span>
+        </div>
+      `;
+
+      layout.controls.innerHTML = `
+        <button id="tt" class="game-btn game-btn-primary" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); border-color: #10B981;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+          სიმართლე
+        </button>
+        <button id="tf" class="game-btn game-btn-danger">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          ტყუილი
+        </button>
+        <button class="game-btn game-btn-secondary" onclick="document.getElementById('back-btn').click()">
+          დასრულება
+        </button>
+      `;
+      
+      function nxt(){
+        if(answered) return;
+        word=rw();
+        const isT=Math.random()>0.4;
+        if(isT){
+          document.getElementById('tk').textContent=word.ka;
+          correct=true;
+        }else{
+          const wr=W.filter(w=>w.en!==word.en);
+          document.getElementById('tk').textContent=wr[Math.floor(Math.random()*wr.length)].ka;
+          correct=false;
+        }
+        document.getElementById('te').textContent=word.en;
+        document.getElementById('tb').innerHTML='';
+        answered = false;
+        
+        // Enable buttons
+        document.getElementById('tt').disabled = false;
+        document.getElementById('tf').disabled = false;
+      }
+      
+      function ans(p){
+        if(answered) return;
+        answered = true;
+        
+        tot++;
+        document.getElementById('to').textContent=tot;
+        
+        const trueBtn = document.getElementById('tt');
+        const falseBtn = document.getElementById('tf');
+        trueBtn.disabled = true;
+        falseBtn.disabled = true;
+        
+        if(p===correct){
+          snd(1);
+          sc++;
+          updateGameScore(sc);
+          checkRecord('truefalse',sc);
+          const btn = p ? trueBtn : falseBtn;
+          showAnswerFeedback(btn, true);
+          document.getElementById('tb').innerHTML='<div class="game-feedback game-feedback-success">სწორია! 🎉</div>';
+        }else{
+          snd(0);
+          const btn = p ? trueBtn : falseBtn;
+          showAnswerFeedback(btn, false);
+          document.getElementById('tb').innerHTML=`<div class="game-feedback game-feedback-error">არასწორია! ${word.en} = ${word.ka}</div>`;
+        }
+        
+        setTimeout(nxt,1500);
+      }
+      
+      document.getElementById('tt').onclick=()=>ans(true);
+      document.getElementById('tf').onclick=()=>ans(false);
+      nxt();
     }
 
     // Generic quiz builder for list-based games

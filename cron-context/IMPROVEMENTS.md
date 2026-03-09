@@ -55,13 +55,19 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 8 day) — "Launch Readiness & User Acquisition Prep"
-- [x] **🎨 Light Mode Contrast** — ✅ Fixed (Mar 8 night)
-- [x] **🔒 Grammar Lock Visual Upgrade** — ✅ 4 distinct states (Mar 8 night)
-- [x] **⚡ Performance/Lighthouse** — ✅ Collapsible episodes, async fonts (Mar 8 night)
-- [x] **🐛 All bugs fixed** — ✅ (Mar 8 night)
-- [ ] **🔍 SEO meta tags** — Optimize for Georgian search ← Cron 4
-- [ ] **📸 Screenshot all pages** — Marketing assets ← Cron 2
+## 🎯 THIS SPRINT (Mar 9 night) — "Stability Hold — Wait for Tornike"
+- **⚠️ NO CODE CHANGES unless something is broken.**
+- [ ] Visual spot-check (Cron 2)
+- [ ] Health + Lighthouse check (Cron 4)
+- [ ] Full QA (Cron 5)
+
+### ✅ COMPLETED — Mar 8 (Launch Readiness)
+- [x] Light Mode Contrast ✅
+- [x] Grammar Lock 4 states ✅
+- [x] Collapsible episodes + async fonts ✅
+- [x] All bugs fixed ✅
+- [x] SEO meta tags for all pages ✅
+- [x] About page redesign ✅
 
 ## ✅ COMPLETED — Tornike's 8 Priorities (Mar 7)
 - ✅ Daily Goal → Card-Based (removed "წთ", card presets verified)
