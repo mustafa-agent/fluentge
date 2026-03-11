@@ -33,7 +33,7 @@ FluentGe is THE English learning platform for Georgians. Professional quality th
 - PWA support (manifest + service worker + install banner)
 - Premium/free tier system
 - Phrases page (1,695 phrases, 40 categories)
-- **10 study modes:** EN→KA, KA→EN, Mixed, SRS, Quiz, Typing, Sentence Builder, Listening, Fill-in-Blank, Reading Comprehension ✅
+- **12 study modes:** EN→KA, KA→EN, Mixed, SRS, Quiz, Typing, Sentence Builder, Listening, Fill-in-Blank, Reading Comprehension, Speaking, Writing ✅
 - **Daily Lesson** — auto-generated 10-round mixed practice ✅
 - **Weekly Leaderboard** — simulated + real users ✅
 - **Difficult Words** — tracks errors, focused review mode ✅

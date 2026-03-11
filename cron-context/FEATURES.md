@@ -5,10 +5,10 @@
 ### 🎯 THIS SPRINT (Mar 11) — "Polish & Grow"
 - **Tornike said KEEP WORKING. Build, improve, polish!**
 - [ ] Profile page with avatar, stats, join date
-- [ ] Writing exercises — free-form prompts
+- [x] Writing exercises — free-form prompts ✅ (Cron 3, Mar 11)
 - [ ] Better homepage hero section + social proof
 - [ ] Premium page — FAQ, comparison table, testimonials
-- [ ] Game difficulty levels
+- [x] Game difficulty levels ✅ (Cron 3, Mar 11)
 - [ ] Notification system for SRS reviews
 
 ### ✅ COMPLETED — Mar 8 Day Sprint (Launch Readiness)
@@ -45,7 +45,7 @@
 
 ### Games
 - [ ] Ensure all 60+ games actually work
-- [ ] Add difficulty levels to games
+- [x] Add difficulty levels to games ✅ (Cron 3, Mar 11)
 - [ ] Track game scores in dashboard
 - [ ] "Game of the Day" feature
 
@@ -70,6 +70,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **✏️ Writing Exercise (WritingExercise.tsx)** — 12th study mode. 3 prompt types: translate (write English from Georgian), complete (finish a sentence), describe (use word in sentence). Levenshtein similarity scoring for translations. 8 questions per session. XP: +5/10/15 per answer quality (0-3 stars). Full CSS (we-* classes), light+dark mode. Lazy-loaded in App.tsx. Added as ✏️ თარგმნა in DeckSelect. (Cron 3, Mar 11)
+- ✅ **🎮 Game Difficulty Levels** — Easy/Medium/Hard selector shown before every game. Easy: fewer items (0.6x), more time (1.5x), 0.8x XP. Medium: default. Hard: more items (1.5x), less time (0.65x), 1.5x XP. Saves preference to localStorage. Match game uses diffItems(6), speed quiz uses diffTime(30). Styled diff-btn CSS with color-coded borders. Light mode support. (Cron 3, Mar 11)
 - ✅ **🔊 TTS Voice Assessment** — Programmatic audit: ChristopherNeural (neural), 98.7% EN coverage, 63 broken files. Quality is GOOD. (Cron 3, Mar 7 afternoon)
 - ✅ **🎤 Speaking Practice (SpeakingPractice.tsx)** — 11th study mode. Web Speech API pronunciation practice: 10-word sessions, Levenshtein scoring, 3D mic button, XP awards, browser fallback. (Cron 3, Mar 7 afternoon)
 - ✅ **📝 Unit-Specific Quizzes (UnitQuiz.tsx)** — 10-question mixed tests per course unit: 5 vocab (EN→KA multiple choice from unit decks), 3 grammar (fill-in-blank per unit topic), 2 listening (speechSynthesis + pick Georgian). Pass ≥7/10 for completion badge + 50 XP bonus. Routed via `#unit-quiz/N` hash. Uses uq-* CSS classes from Cron 2. Unit completion saved to localStorage. (Cron 3, Mar 6 afternoon)
@@ -121,8 +123,7 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-- 🔄 **Writing exercises** — Free-form writing prompts (Cron 3, Mar 11)
-- 🔄 **Game difficulty levels** — Easy/Medium/Hard for all games (Cron 3, Mar 11)
+(none)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

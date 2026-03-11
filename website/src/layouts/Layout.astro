@@ -85,15 +85,15 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           <span class="text-[#C8C8C0]">Fluent</span><span class="text-white">Ge</span>
         </a>
         <div class="hidden lg:flex items-center gap-5 text-sm text-[#A0A09A]">
-          <a href="/" class="hover:text-white transition-colors">მთავარი</a>
-          <a href="/flashcards/" class="hover:text-white transition-colors">ბარათები</a>
-          <a href="/grammar/" class="hover:text-white transition-colors">გრამატიკა</a>
-          <a href="/phrases/" class="hover:text-white transition-colors">ფრაზები</a>
-          <a href="/games/" class="hover:text-white transition-colors">თამაშები</a>
-          <a href="/podcast/" class="hover:text-white transition-colors">პოდკასტი</a>
-          <a href="/courses/" class="hover:text-white transition-colors">კურსები</a>
-          <a href="/blog/" class="hover:text-white transition-colors">ბლოგი</a>
-          <a href="/about/" class="hover:text-white transition-colors">შესახებ</a>
+          <a href="/" class="nav-link hover:text-white transition-colors" data-path="/">მთავარი</a>
+          <a href="/flashcards/" class="nav-link hover:text-white transition-colors" data-path="/flashcards/">ბარათები</a>
+          <a href="/grammar/" class="nav-link hover:text-white transition-colors" data-path="/grammar/">გრამატიკა</a>
+          <a href="/phrases/" class="nav-link hover:text-white transition-colors" data-path="/phrases/">ფრაზები</a>
+          <a href="/games/" class="nav-link hover:text-white transition-colors" data-path="/games/">თამაშები</a>
+          <a href="/podcast/" class="nav-link hover:text-white transition-colors" data-path="/podcast/">პოდკასტი</a>
+          <a href="/courses/" class="nav-link hover:text-white transition-colors" data-path="/courses/">კურსები</a>
+          <a href="/blog/" class="nav-link hover:text-white transition-colors" data-path="/blog/">ბლოგი</a>
+          <a href="/about/" class="nav-link hover:text-white transition-colors" data-path="/about/">შესახებ</a>
           <a href="/premium/" id="nav-premium-btn" class="bg-[#C8C8C0] text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">პრემიუმი</a>
         </div>
         <div class="flex items-center gap-2">
@@ -124,15 +124,15 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
       </div>
       <div id="mobile-menu" class="hidden lg:hidden border-t border-[#2E2E30] bg-[#1C1C1E]/98">
         <div class="flex flex-col px-4 py-3 gap-3 text-sm text-[#A0A09A]">
-          <a href="/" class="hover:text-white py-2.5">მთავარი</a>
-          <a href="/flashcards/" class="hover:text-white py-2.5">ბარათები</a>
-          <a href="/grammar/" class="hover:text-white py-2.5">გრამატიკა</a>
-          <a href="/phrases/" class="hover:text-white py-2.5">ფრაზები</a>
-          <a href="/games/" class="hover:text-white py-2.5">თამაშები</a>
-          <a href="/podcast/" class="hover:text-white py-2.5">პოდკასტი</a>
-          <a href="/courses/" class="hover:text-white py-2.5">კურსები</a>
-          <a href="/blog/" class="hover:text-white py-2.5">ბლოგი</a>
-          <a href="/about/" class="hover:text-white py-2.5">შესახებ</a>
+          <a href="/" class="nav-link-mobile hover:text-white py-2.5" data-path="/">მთავარი</a>
+          <a href="/flashcards/" class="nav-link-mobile hover:text-white py-2.5" data-path="/flashcards/">ბარათები</a>
+          <a href="/grammar/" class="nav-link-mobile hover:text-white py-2.5" data-path="/grammar/">გრამატიკა</a>
+          <a href="/phrases/" class="nav-link-mobile hover:text-white py-2.5" data-path="/phrases/">ფრაზები</a>
+          <a href="/games/" class="nav-link-mobile hover:text-white py-2.5" data-path="/games/">თამაშები</a>
+          <a href="/podcast/" class="nav-link-mobile hover:text-white py-2.5" data-path="/podcast/">პოდკასტი</a>
+          <a href="/courses/" class="nav-link-mobile hover:text-white py-2.5" data-path="/courses/">კურსები</a>
+          <a href="/blog/" class="nav-link-mobile hover:text-white py-2.5" data-path="/blog/">ბლოგი</a>
+          <a href="/about/" class="nav-link-mobile hover:text-white py-2.5" data-path="/about/">შესახებ</a>
           <a href="/premium/" id="nav-premium-btn-mobile" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>
           <div id="nav-gamification-mobile" class="hidden items-center gap-3 py-1">
             <a href="/flashcards/#dashboard" class="flex items-center gap-1 text-orange-400 font-bold text-sm">🔥 <span id="nav-streak-mobile">0</span> სტრიქი</a>
@@ -144,6 +144,34 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
       </div>
     </nav>
     <script>document.getElementById('menu-toggle')?.addEventListener('click',()=>{document.getElementById('mobile-menu')?.classList.toggle('hidden');});</script>
+    <script>
+      // Navbar active state
+      (function() {
+        var path = window.location.pathname;
+        // Desktop nav
+        document.querySelectorAll('.nav-link').forEach(function(a) {
+          var dp = a.getAttribute('data-path');
+          var isActive = dp === '/' ? path === '/' : path.startsWith(dp);
+          if (isActive) {
+            a.style.color = 'white';
+            a.style.borderBottom = '2px solid #60a5fa';
+            a.style.paddingBottom = '2px';
+            a.style.fontWeight = '600';
+          }
+        });
+        // Mobile nav
+        document.querySelectorAll('.nav-link-mobile').forEach(function(a) {
+          var dp = a.getAttribute('data-path');
+          var isActive = dp === '/' ? path === '/' : path.startsWith(dp);
+          if (isActive) {
+            a.style.color = 'white';
+            a.style.borderLeft = '3px solid #60a5fa';
+            a.style.paddingLeft = '12px';
+            a.style.fontWeight = '600';
+          }
+        });
+      })();
+    </script>
     <script>
       // Gamification badges in navbar
       (function() {

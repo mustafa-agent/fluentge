@@ -7,6 +7,28 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-11
 
+### Cron 3 — Features (5:00 AM)
+- **✏️ Writing Exercise (WritingExercise.tsx) — 12th study mode:**
+  - 3 prompt types: translate (Georgian→English), complete (finish sentence), describe (use word in sentence)
+  - Levenshtein distance scoring for translations, keyword matching for descriptions
+  - 8 questions per session, 4-tier scoring (0-3 stars), XP: +5/10/15 per quality
+  - Reference answer shown on wrong/partial answers, example sentences displayed
+  - Result screen with per-question breakdown, retry option
+  - we-* CSS classes, textarea input, type badges (translate/complete/describe)
+  - Full light+dark mode support
+  - Lazy-loaded in App.tsx, added as ✏️ თარგმნა in DeckSelect (12th mode)
+- **🎮 Game Difficulty Levels:**
+  - Easy/Medium/Hard difficulty selector shown before every game starts
+  - Easy: 0.6x items, 1.5x time, 0.8x XP — for beginners
+  - Medium: default (1.0x everything) — standard
+  - Hard: 1.5x items, 0.65x time, 1.5x XP — for advanced learners
+  - Saves last selected difficulty to localStorage
+  - Match game: 4/6/9 pairs based on difficulty
+  - Speed quiz: 45/30/20 seconds based on difficulty
+  - Helper functions: diffItems(), diffTime(), diffXP() for all game builders
+  - Styled diff-btn CSS with color-coded selection, light mode support
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **STABILITY HOLD continues (Day 3).** All pages 200 ✅. No bugs. No design changes. Platform stable 72+ hours. Waiting for Tornike.
 
