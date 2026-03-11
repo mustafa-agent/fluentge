@@ -104,18 +104,25 @@
 
   // --- Grammar Completion ---
   function markGrammarComplete(slug) {
-    var completed = [];
-    try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]'); } catch(e) {}
-    if (completed.indexOf(slug) === -1) {
-      completed.push(slug);
+    var completed = {};
+    try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
+    // Migrate old array format to object
+    if (Array.isArray(completed)) {
+      var obj = {};
+      completed.forEach(function(s) { obj[s] = true; });
+      completed = obj;
+    }
+    if (!completed[slug]) {
+      completed[slug] = true;
       localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
     }
   }
 
   function isGrammarComplete(slug) {
     try {
-      var completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]');
-      return completed.indexOf(slug) !== -1;
+      var completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}');
+      if (Array.isArray(completed)) return completed.indexOf(slug) !== -1;
+      return !!completed[slug];
     } catch(e) { return false; }
   }
 

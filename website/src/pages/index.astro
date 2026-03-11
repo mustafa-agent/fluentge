@@ -27,15 +27,7 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
     ]
   })} />
 
-  <!-- SRS Reminder Banner (cross-page, shown by JS when due cards exist) -->
-  <div id="srs-reminder-banner" class="srs-reminder-banner" style="display:none;">
-    <div class="srs-reminder-inner">
-      <span class="srs-reminder-icon">🧠</span>
-      <span class="srs-reminder-text"><strong id="srs-due-count">0</strong> ბარათი გადასახედია</span>
-      <a href="/flashcards/#srs" class="srs-reminder-link">გადახედე →</a>
-      <button id="srs-reminder-close" class="srs-reminder-close" aria-label="დახურვა">✕</button>
-    </div>
-  </div>
+  <!-- SRS Reminder Banner removed -->
 
   <!-- Hero: New Users -->
   <section id="hero-new" class="relative overflow-hidden">
@@ -102,20 +94,9 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         </div>
       </div>
 
-      <!-- Daily Lesson CTA -->
-      <a href="/flashcards/#daily-lesson" class="daily-lesson-hero-cta group">
-        <div class="daily-lesson-hero-icon">🎯</div>
-        <div class="flex-1 text-left">
-          <div class="font-bold text-base sm:text-lg">დღის გაკვეთილი</div>
-          <div class="text-green-200/70 text-xs sm:text-sm">10 ბარათი · ვოკაბულარი, გრამატიკა, მოსმენა</div>
-        </div>
-        <div class="text-2xl group-hover:translate-x-1 transition-transform">▶</div>
-      </a>
+      <!-- Daily Lesson CTA removed -->
 
-      <!-- SRS Due reminder inside returning hero -->
-      <div id="ret-srs-due" class="mt-4 text-sm text-amber-400/80" style="display:none;">
-        🧠 <span id="ret-srs-count">0</span> ბარათი გადასახედია — <a href="/flashcards/#srs" class="underline hover:text-amber-300">გადახედე</a>
-      </div>
+      <!-- SRS Due reminder removed -->
     </div>
   </section>
 
@@ -135,30 +116,24 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         var el;
         el = document.getElementById('ret-streak'); if(el) el.textContent = streak;
         el = document.getElementById('ret-xp'); if(el) el.textContent = xpStr;
-        // Count learned words — unified across ALL storage systems (matches dashboard)
+        // Count learned words — only words with real progress (answered correctly at least once)
         var allWords = new Set();
         for (var i = 0; i < localStorage.length; i++) {
           var k = localStorage.key(i);
           if (k && k.startsWith('fluentge-srs-')) {
             try {
               var store = JSON.parse(localStorage.getItem(k));
-              Object.keys(store || {}).forEach(function(w) { allWords.add(w); });
+              Object.keys(store || {}).forEach(function(w) {
+                // Only count words with at least 1 successful repetition
+                if (store[w] && store[w].repetitions >= 1) allWords.add(w);
+              });
             } catch(e) {}
           }
-          if (k && k.startsWith('card_progress_')) {
-            var parts = k.split('_');
-            if (parts.length >= 4) allWords.add(parts.slice(3).join('_'));
-          }
         }
+        // knownCards = explicitly marked as known
         try {
           var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
           kc.forEach(function(w) { allWords.add(w); });
-        } catch(e) {}
-        try {
-          var cp = JSON.parse(localStorage.getItem('fluentge_progress') || '{}');
-          Object.keys(cp).forEach(function(k) {
-            allWords.add(k.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, ''));
-          });
         } catch(e) {}
         var words = allWords.size;
         el = document.getElementById('ret-words'); if(el) el.textContent = words;

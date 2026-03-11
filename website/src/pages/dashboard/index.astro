@@ -159,6 +159,7 @@ import Layout from '../../layouts/Layout.astro';
       var SRS_KEY_PREFIX = 'fluentge-srs-';
 
       // --- Vocabulary Size Tracker ---
+      // UNIFIED counting: only words with repetitions >= 1 (actually answered correctly)
       var mastered = 0, learning = 0;
       var allSRSWords = new Set();
       var keys = Object.keys(localStorage);
@@ -170,26 +171,25 @@ import Layout from '../../layouts/Layout.astro';
           var words = Object.keys(store);
           for (var w = 0; w < words.length; w++) {
             var d = store[words[w]];
-            allSRSWords.add(words[w]);
-            if (d.repetitions >= 3) mastered++;
-            else if (d.repetitions >= 1) learning++;
+            // Only count words with at least 1 correct answer
+            if (d && d.repetitions >= 1) {
+              allSRSWords.add(words[w]);
+              if (d.repetitions >= 3) mastered++;
+              else learning++;
+            }
           }
         } catch(e) {}
       }
-      // Also count from fluentge_progress (classic study mode)
-      var classicProgress = {};
-      try { classicProgress = JSON.parse(localStorage.getItem('fluentge_progress') || '{}'); } catch(e) {}
-      var classicKeys = Object.keys(classicProgress);
-      for (var c = 0; c < classicKeys.length; c++) {
-        var ck = classicKeys[c];
-        var base = ck.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
-        if (!allSRSWords.has(base)) {
-          allSRSWords.add(base);
-          var cp = classicProgress[ck];
-          if (cp && cp.repetitions >= 3) mastered++;
-          else if (cp && cp.repetitions >= 1) learning++;
+      // Also count explicitly known cards
+      try {
+        var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
+        for (var ki = 0; ki < kc.length; ki++) {
+          if (!allSRSWords.has(kc[ki])) {
+            allSRSWords.add(kc[ki]);
+            mastered++;
+          }
         }
-      }
+      } catch(e) {}
       var totalSeen = allSRSWords.size;
       var newWords = TOTAL_WORDS - totalSeen;
       var pct = TOTAL_WORDS > 0 ? Math.round((mastered / TOTAL_WORDS) * 100) : 0;
@@ -329,7 +329,7 @@ import Layout from '../../layouts/Layout.astro';
         var base = key.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
         baseWords[base] = true;
       });
-      var wordCount = totalSeen || Object.keys(baseWords).length;
+      var wordCount = totalSeen;
       document.getElementById('stat-grammar').textContent = grammar.length;
       document.getElementById('stat-podcasts').textContent = podcasts.length;
       document.getElementById('stat-cards').textContent = wordCount;

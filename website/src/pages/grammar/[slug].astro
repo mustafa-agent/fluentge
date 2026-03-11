@@ -177,11 +177,10 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
           </div>
         </div>
         <div class="flex gap-3 justify-center flex-wrap" id="score-buttons">
-          <button id="retry-btn" class="bg-[#2E2E30] hover:bg-[#3E3E40] text-white px-6 py-3 rounded-xl font-bold border-b-4 border-[#1C1C1E] active:border-b-0 active:mt-[4px] transition-all">🔄 თავიდან</button>
+          <button id="retry-btn" class="hidden bg-[#2E2E30] hover:bg-[#3E3E40] text-white px-6 py-3 rounded-xl font-bold border-b-4 border-[#1C1C1E] active:border-b-0 active:mt-[4px] transition-all">🔄 თავიდან</button>
           {nextLesson && (
-            <a id="next-lesson-btn" href={`/grammar/${nextLesson.slug}/`} class="hidden bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 text-white px-6 py-3 rounded-xl font-bold border-b-4 border-green-600 active:border-b-0 active:mt-[4px] transition-all inline-block">შემდეგი გაკვეთილი →</a>
+            <a id="next-lesson-btn" href={`/grammar/${nextLesson.slug}/`} class="hidden bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 text-white px-6 py-3 rounded-xl font-bold border-b-4 border-green-600 active:border-b-0 active:mt-[4px] transition-all inline-block">შემდეგი გაკვეთილის გახსნა →</a>
           )}
-          <a href="/grammar/" class="bg-gradient-to-r from-sky-400 to-sky-500 hover:from-sky-500 hover:to-sky-600 text-white px-6 py-3 rounded-xl font-bold border-b-4 border-sky-600 active:border-b-0 active:mt-[4px] transition-all inline-block">📚 გრამატიკა</a>
         </div>
       </div>
     </div>
@@ -199,55 +198,9 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       </div>
     </div>
 
-    <!-- Related Flashcard Decks -->
-    <div id="related-decks-section" class={isFree ? 'mt-8' : 'hidden mt-8'}>
-      <div class="bg-gradient-to-r from-sky-500/5 to-indigo-500/5 border border-sky-500/15 rounded-2xl p-6">
-        <div class="flex items-center gap-2 mb-4">
-          <span class="text-xl">📝</span>
-          <h2 class="text-lg font-bold">დაკავშირებული ფლეშქარდები</h2>
-        </div>
-        <p class="text-[#6B6B65] text-sm mb-4">ისწავლე ლექსიკა, რომელიც ამ გაკვეთილთან არის დაკავშირებული:</p>
-        <div class="grid gap-2 sm:grid-cols-{relatedDecks.length > 2 ? '3' : '2'}">
-          {relatedDecks.map(d => (
-            <a href={`/flashcards/?deck=${d.deck}`} class="flex items-center gap-3 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:scale-[1.02] hover:border-sky-500/30">
-              <span class="text-lg">{d.emoji}</span>
-              <span class="text-sm font-medium">{d.label}</span>
-              <span class="text-[#6B6B65] ml-auto text-xs">→</span>
-            </a>
-          ))}
-        </div>
-        <div class="mt-4 pt-3 border-t border-white/5 flex items-center justify-between">
-          <span class="text-xs text-[#6B6B65]">🎮 სიტყვები + გრამატიკა = სწრაფი სწავლა!</span>
-          <a href="/flashcards/" class="text-xs text-sky-400 hover:text-sky-300 transition-colors">ყველა კატეგორია →</a>
-        </div>
-      </div>
-    </div>
+    <!-- Related flashcards removed -->
 
-    <!-- Next/Previous Lesson Navigation -->
-    <div id="next-lesson-section" class={isFree ? 'mt-4' : 'hidden mt-4'}>
-      <div class="flex gap-3">
-        {prevLesson && (
-          <a href={`/grammar/${prevLesson.slug}/`} class="flex-1 flex items-center gap-3 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:scale-[1.02]">
-            <span class="text-[#6B6B65]">←</span>
-            <div class="min-w-0">
-              <p class="text-xs text-[#6B6B65]">წინა გაკვეთილი</p>
-              <p class="text-sm font-medium truncate">{prevLesson.title_ka}</p>
-            </div>
-          </a>
-        )}
-        {nextLesson && (
-          <a href={`/grammar/${nextLesson.slug}/`} class="flex-1 flex items-center justify-end gap-3 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:scale-[1.02] text-right">
-            <div class="min-w-0">
-              <p class="text-xs text-[#6B6B65]">შემდეგი გაკვეთილი</p>
-              <p class="text-sm font-medium truncate">{nextLesson.title_ka}</p>
-            </div>
-            <span class="text-[#6B6B65]">→</span>
-          </a>
-        )}
-      </div>
-    </div>
-
-    <!-- Mark as learned removed — progress is now tracked automatically via gamification bridge -->
+    <!-- Navigation removed — next lesson only via test results -->
   </section>
 
   <script is:inline src="/js/gamification-bridge.js"></script>
@@ -259,10 +212,8 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         if (lc) lc.classList.remove('hidden');
         var pl = document.getElementById('premium-lock');
         if (pl) pl.classList.add('hidden');
-        var rd = document.getElementById('related-decks-section');
-        if (rd) rd.classList.remove('hidden');
-        var nl = document.getElementById('next-lesson-section');
-        if (nl) nl.classList.remove('hidden');
+        // related-decks removed
+        // next-lesson-section removed
       }
     })();
   </script>
@@ -426,7 +377,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         progressBar.classList.add('from-amber-400', 'to-yellow-500');
         counterEl.textContent = exercises.length + '/' + exercises.length;
         // Bonus XP
-        var passed = pct >= 70;
+        var passed = score === exercises.length; // Must get ALL correct to pass
         if (window.FluentGe) {
           if (pct >= 50) {
             var bonus = pct >= 80 ? 50 : 25;
@@ -438,13 +389,13 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
           FluentGe.updateStreak();
           var mins = FluentGe.stopTimer();
           FluentGe.addStudyTime(mins);
-          // Only mark complete if passed (≥70%) — this gates sequential unlock
+          // Only mark complete and unlock next lesson if passed (≥70%)
           if (passed) {
             var slug = window.location.pathname.split('/grammar/')[1];
             if (slug) FluentGe.markGrammarComplete(slug.replace(/\/$/, ''));
           }
         }
-        document.getElementById('score-emoji').textContent = passed ? (pct >= 80 ? '🏆' : '👏') : '💪';
+        document.getElementById('score-emoji').textContent = passed ? '🏆' : '💪';
         document.getElementById('score-correct').textContent = score + '/' + exercises.length;
         document.getElementById('score-pct').textContent = pct + '%';
         document.getElementById('score-xp').textContent = '+' + sessionXP;
@@ -461,14 +412,19 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
           }
         }
         var heading = document.getElementById('score-heading');
-        if (heading) heading.textContent = passed ? 'გაკვეთილი ჩაბარებულია!' : 'ტესტი ვერ ჩააბარე';
-        // Show next lesson button only on pass
+        if (heading) heading.textContent = passed ? 'ტესტი წარმატებით ჩააბარე!' : 'ტესტი ვერ ჩააბარე';
+        // Pass: show next lesson button only. Fail: show retry button only.
         var nextBtn = document.getElementById('next-lesson-btn');
-        if (nextBtn && passed) nextBtn.classList.remove('hidden');
+        var retryBtn = document.getElementById('retry-btn');
+        if (passed && nextBtn) {
+          nextBtn.classList.remove('hidden');
+        } else if (retryBtn) {
+          retryBtn.classList.remove('hidden');
+        }
         if (passed) {
-          document.getElementById('score-msg').textContent = pct >= 80 ? 'შესანიშნავი შედეგი! შემდეგი გაკვეთილი გახსნილია! 🎉' : 'კარგი მუშაობა! შემდეგი გაკვეთილი გახსნილია! ✅';
+          document.getElementById('score-msg').textContent = 'შესანიშნავი! შემდეგი გაკვეთილი გახსნილია! 🎉';
         } else {
-          document.getElementById('score-msg').textContent = 'ჩასაბარებლად საჭიროა მინიმუმ 70%. სცადე თავიდან!';
+          document.getElementById('score-msg').textContent = 'ყველა კითხვას სწორად უნდა უპასუხო. სცადე თავიდან!';
         }
         return;
       }

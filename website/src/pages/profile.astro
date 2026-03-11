@@ -359,29 +359,26 @@ import Layout from '../layouts/Layout.astro';
       document.getElementById('stat-xp').textContent = xp;
       document.getElementById('stat-streak').textContent = streak;
 
-      // Count learned words (from flashcard progress + SRS data)
-      var totalWords = 0;
-      var srsWords = new Set();
+      // Count learned words — only words answered correctly at least once (SRS) + explicitly known
+      var learnedWords = new Set();
       for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
-        if (key && key.startsWith('fluentge-progress-')) {
-          try {
-            var prog = JSON.parse(localStorage.getItem(key));
-            if (prog && prog.learned) totalWords += prog.learned;
-          } catch(e) {}
-        }
         if (key && key.startsWith('fluentge-srs-')) {
           try {
             var srsData = JSON.parse(localStorage.getItem(key));
             if (srsData && typeof srsData === 'object') {
               Object.keys(srsData).forEach(function(word) {
-                if (srsData[word] && srsData[word].repetitions >= 1) srsWords.add(word);
+                if (srsData[word] && srsData[word].repetitions >= 1) learnedWords.add(word);
               });
             }
           } catch(e) {}
         }
       }
-      totalWords = Math.max(totalWords, srsWords.size);
+      try {
+        var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
+        kc.forEach(function(w) { learnedWords.add(w); });
+      } catch(e) {}
+      var totalWords = learnedWords.size;
       document.getElementById('stat-words').textContent = totalWords;
 
       // Active days

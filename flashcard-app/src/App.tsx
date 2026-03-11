@@ -285,22 +285,7 @@ export default function App() {
         <>
           <ErrorBoundary><StatsBar /></ErrorBoundary>
 
-          {/* Challenge Friend Banner */}
-          <div className="px-4 pt-4 max-w-lg mx-auto">
-            <button
-              onClick={() => setScreen('challenge')}
-              className="w-full p-4 rounded-2xl bg-gradient-to-r from-purple-600/30 to-orange-500/30 border border-purple-500/30 hover:border-purple-500/50 transition-all text-left group"
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">⚔️</span>
-                <div>
-                  <div className="font-bold text-lg">გამოუწვიე მეგობარი!</div>
-                  <div className="text-sm text-[var(--color-text-muted)]">ინგლისურის ქვიზი — ვინ იცის უკეთ? 🔥</div>
-                </div>
-                <span className="ml-auto text-[var(--color-text-muted)] group-hover:text-white transition-colors">→</span>
-              </div>
-            </button>
-          </div>
+          {/* Challenge Friend Banner — removed */}
 
           {/* Difficult Words Banner */}
           <div className="px-4 pt-3 max-w-lg mx-auto">

@@ -149,42 +149,23 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
   };
 
   const getTotalWordsLearned = () => {
-    // Unified word count: count unique words from ALL storage systems
+    // UNIFIED: only words with repetitions >= 1 (answered correctly at least once) + knownCards
     const allWords = new Set<string>();
     
-    // 1. SRS stores (fluentge-srs-*)
+    // SRS stores — only words with at least 1 correct answer
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
       if (key?.startsWith('fluentge-srs-')) {
         try {
           const store = JSON.parse(localStorage.getItem(key) || '{}');
-          Object.keys(store).forEach(w => allWords.add(w));
+          Object.keys(store).forEach(w => {
+            if (store[w] && store[w].repetitions >= 1) allWords.add(w);
+          });
         } catch {}
       }
     }
     
-    // 2. Card progress (card_progress_*)
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key?.startsWith('card_progress_')) {
-        // Extract word from key: card_progress_{deckId}_{word}
-        const parts = key.split('_');
-        if (parts.length >= 4) {
-          allWords.add(parts.slice(3).join('_'));
-        }
-      }
-    }
-    
-    // 3. Classic progress (fluentge_progress)
-    try {
-      const classic = JSON.parse(localStorage.getItem('fluentge_progress') || '{}');
-      Object.keys(classic).forEach(k => {
-        const base = k.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
-        allWords.add(base);
-      });
-    } catch {}
-    
-    // 4. Known cards
+    // Known cards — explicitly marked as known
     try {
       const known = JSON.parse(localStorage.getItem('knownCards') || '[]');
       known.forEach((w: string) => allWords.add(w));
@@ -441,6 +422,47 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
               </div>
             </div>
           </div>
+
+          {/* Game High Scores */}
+          {(() => {
+            const GAME_NAMES: Record<string, string> = {
+              match:'დაკავშირება', speed:'სიჩქარის ქვიზი', truefalse:'სიმართლე/ტყუილი',
+              scramble:'შერეული ასოები', hangman:'ჰენგმენი', fillblank:'შეავსე გამოტოვებული',
+              emojiquiz:'სურათის ქვიზი', memory:'მეხსიერება', typing:'აკრეფის რბოლა',
+              listening:'მოსმენა', opposites:'საპირისპიროები', numbers:'რიცხვები',
+              daysmonths:'დღეები/თვეები', countries:'ქვეყნები', foodquiz:'საკვები',
+              clothesquiz:'ტანსაცმელი', rooms:'ოთახის ნივთები', emotionsquiz:'ემოციები',
+              family:'ოჯახი', travel:'მოგზაურობა', phrasesquiz:'ფრაზები',
+              movies:'ფილმები', math:'მათემატიკა', routine:'რუტინა',
+              spelling:'მართლწერა', wordrace:'სიტყვის რბოლა', colorsquiz:'ფერები',
+              timequiz:'რომელი საათია', categories:'კატეგორიები', wordcatch:'სიტყვის დაჭერა'
+            };
+            let records: Record<string, number> = {};
+            try { records = JSON.parse(localStorage.getItem('fluentge-game-records') || '{}'); } catch {}
+            const entries = Object.entries(records)
+              .filter(([, v]) => typeof v === 'number' && v > 0)
+              .sort((a, b) => b[1] - a[1])
+              .slice(0, 5);
+            if (entries.length === 0) return null;
+            return (
+              <div className="mb-4">
+                <h3 className="text-sm font-semibold text-[var(--color-text-muted)] mb-2">🏆 საუკეთესო შედეგები</h3>
+                <div className="space-y-2">
+                  {entries.map(([id, score], i) => (
+                    <div key={id} className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/5 border border-white/5">
+                      <div className="flex items-center gap-2">
+                        <span className={`text-xs font-bold w-5 text-center ${i === 0 ? 'text-yellow-400' : i === 1 ? 'text-gray-300' : i === 2 ? 'text-amber-600' : 'text-[var(--color-text-muted)]'}`}>
+                          {i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i+1}`}
+                        </span>
+                        <span className="text-sm">{GAME_NAMES[id] || id}</span>
+                      </div>
+                      <span className="text-sm font-bold text-indigo-400">{score}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Play Games CTA */}
           <a

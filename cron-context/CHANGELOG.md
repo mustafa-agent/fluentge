@@ -7,6 +7,21 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-11
 
+### Cron 3B — Features (3:30 PM)
+- **🔔 Push Notification System (notifications.ts + NotificationSettings.tsx):**
+  - Browser Notification API for SRS review reminders and streak reminders
+  - notifications.ts: permission management, sendNotification(), checkSRSReminder(), checkStreakReminder(), initNotifications()
+  - SRS reminders: configurable interval (2/4/6/8 hours), fires when due cards > 0
+  - Streak reminders: configurable evening hour (18-21), fires if user hasn't practiced today
+  - NotificationSettings.tsx: Dashboard component with enable/disable, toggle switches for SRS/streak, interval/hour selectors
+  - Auto-initializes on app load, checks every 30 minutes
+  - Light mode CSS support
+- **📋 IELTS/TOEFL Prep Decks — 3 New Content Decks:**
+  - ielts-reading-vocab.json (50 words B2-C1), ielts-writing-vocab.json (50 words B2-C1), toefl-speaking-vocab.json (40 phrases B1-C1)
+  - Dedicated "📋 IELTS / TOEFL" section in DeckSelect with indigo gradient theme + info banner
+  - Groups 4 decks: ielts-reading, ielts-writing, toefl-speaking, academic-english
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM)
 - **🏠 Homepage: Animated Social Proof Counter Bar:**
   - 4-stat counter bar below hero: 5,250+ words, 65 grammar, 35 podcasts, 12 study modes

@@ -108,8 +108,23 @@ import Layout from '../layouts/Layout.astro';
       }
 
       try {
-        const known = JSON.parse(localStorage.getItem('knownCards') || '[]');
-        document.getElementById('stat-words').textContent = known.length;
+        var learnedWords = new Set();
+        for (var i = 0; i < localStorage.length; i++) {
+          var key = localStorage.key(i);
+          if (key && key.startsWith('fluentge-srs-')) {
+            try {
+              var srsData = JSON.parse(localStorage.getItem(key) || '{}');
+              Object.keys(srsData).forEach(function(word) {
+                if (srsData[word] && srsData[word].repetitions >= 1) learnedWords.add(word);
+              });
+            } catch(e2) {}
+          }
+        }
+        try {
+          var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
+          kc.forEach(function(w) { learnedWords.add(w); });
+        } catch(e3) {}
+        document.getElementById('stat-words').textContent = learnedWords.size;
       } catch(e) {}
     });
 

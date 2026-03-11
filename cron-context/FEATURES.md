@@ -6,9 +6,9 @@
 - **Focus: Make users STAY and PAY**
 - [ ] 🏠 Homepage hero redesign — social proof counters, testimonial carousel, clear CTA
 - [ ] 💎 Premium page overhaul — pricing table, FAQ accordion, feature comparison
-- [ ] 🔔 Push notifications — browser notifications for SRS reviews + streak reminders
+- [x] 🔔 Push notifications — browser notifications for SRS reviews + streak reminders ✅ (Cron 3, Mar 11)
 - [ ] 📊 Game score tracking — persistent high scores visible on dashboard
-- [ ] 🎯 IELTS/TOEFL prep decks — new content category
+- [x] 🎯 IELTS/TOEFL prep decks — new content category ✅ (Cron 3, Mar 11)
 
 ### ✅ COMPLETED — Mar 11 Day Sprint (Polish & Grow)
 - [x] Writing exercises — 12th study mode ✅ (Cron 3, Mar 11)
@@ -75,6 +75,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🔔 Push Notification System** — Browser Notification API for SRS review reminders (configurable 2/4/6/8hr intervals) + streak reminders (configurable evening hour 18-21). NotificationSettings.tsx component on Dashboard with toggle switches, interval selectors. notifications.ts utility with permission management, auto-check every 30min. Light mode CSS. (Cron 3, Mar 11)
+- ✅ **📋 IELTS/TOEFL Prep Decks** — 3 new specialized decks: IELTS Reading Vocab (50 B2-C1 academic words), IELTS Writing Vocab (50 essay/linking words), TOEFL Speaking Phrases (40 discourse markers & opinion phrases). Dedicated indigo-themed "📋 IELTS / TOEFL" section in DeckSelect with info banner. Added to deck-index.ts. (Cron 3, Mar 11)
 - ✅ **✏️ Writing Exercise (WritingExercise.tsx)** — 12th study mode. 3 prompt types: translate (write English from Georgian), complete (finish a sentence), describe (use word in sentence). Levenshtein similarity scoring for translations. 8 questions per session. XP: +5/10/15 per answer quality (0-3 stars). Full CSS (we-* classes), light+dark mode. Lazy-loaded in App.tsx. Added as ✏️ თარგმნა in DeckSelect. (Cron 3, Mar 11)
 - ✅ **🎮 Game Difficulty Levels** — Easy/Medium/Hard selector shown before every game. Easy: fewer items (0.6x), more time (1.5x), 0.8x XP. Medium: default. Hard: more items (1.5x), less time (0.65x), 1.5x XP. Saves preference to localStorage. Match game uses diffItems(6), speed quiz uses diffTime(30). Styled diff-btn CSS with color-coded borders. Light mode support. (Cron 3, Mar 11)
 - ✅ **🔊 TTS Voice Assessment** — Programmatic audit: ChristopherNeural (neural), 98.7% EN coverage, 63 broken files. Quality is GOOD. (Cron 3, Mar 7 afternoon)
@@ -128,8 +130,7 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-- 🔄 🔔 Push notifications — browser notifications for SRS reviews + streak reminders (Cron 3, Mar 11)
-- 🔄 🎯 IELTS/TOEFL prep decks — new content category (Cron 3, Mar 11)
+(none)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

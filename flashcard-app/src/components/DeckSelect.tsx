@@ -101,30 +101,19 @@ export default function DeckSelect({ onSelect }: Props) {
   // Words I Know counter — unified across all storage systems
   const totalMastered = useMemo(() => {
     const allWords = new Set<string>();
-    // SRS stores
+    // SRS stores — only count words with at least 1 successful repetition
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
       if (key?.startsWith('fluentge-srs-')) {
         try {
           const store = JSON.parse(localStorage.getItem(key) || '{}');
-          Object.keys(store).forEach(w => allWords.add(w));
+          Object.keys(store).forEach(w => {
+            if (store[w] && store[w].repetitions >= 1) allWords.add(w);
+          });
         } catch {}
       }
     }
-    // Classic progress
-    Object.keys(progress).forEach(k => {
-      const base = k.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
-      allWords.add(base);
-    });
-    // Card progress keys
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key?.startsWith('card_progress_')) {
-        const parts = key.split('_');
-        if (parts.length >= 4) allWords.add(parts.slice(3).join('_'));
-      }
-    }
-    // Known cards
+    // Known cards — explicitly marked as known
     try {
       const known = JSON.parse(localStorage.getItem('knownCards') || '[]');
       known.forEach((w: string) => allWords.add(w));
@@ -237,40 +226,7 @@ export default function DeckSelect({ onSelect }: Props) {
 
   return (
     <div className="px-4 py-6 max-w-lg mx-auto">
-      {/* 📅 Daily Lesson CTA */}
-      <button
-        onClick={() => {
-          // Launch Daily Lesson
-          loadDeck('top-2000').then(deck => {
-            if (deck) onSelect(deck, 'daily');
-          });
-        }}
-        className="daily-lesson-cta w-full mb-5 relative overflow-hidden rounded-2xl text-left transition-all hover:scale-[1.01] active:scale-[0.99] group"
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 opacity-90" />
-        <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl -translate-y-12 translate-x-12" />
-        <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full blur-2xl translate-y-8 -translate-x-8" />
-        <div className="relative p-5 flex items-center gap-4">
-          <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center text-3xl border-b-4 border-white/10 group-hover:bg-white/25 transition-colors">
-            🎯
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-0.5">
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">ყოველდღიური</span>
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">10 ბარათი</span>
-            </div>
-            <h2 className="text-lg font-extrabold text-white leading-tight">დღის გაკვეთილი</h2>
-            <p className="text-white/70 text-xs mt-0.5">
-              {totalDueCards > 0 
-                ? `📚 3 ახალი + 🧠 ${Math.min(totalDueCards, 3)} გადახედვა + 🔤 წინადადება + 🎧 მოსმენა`
-                : '📚 ახალი სიტყვები + 🔤 წინადადებები + 🎧 მოსმენა'}
-            </p>
-          </div>
-          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-b-4 border-white/10 group-hover:bg-white/30 transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          </div>
-        </div>
-      </button>
+      {/* Daily lesson CTA removed — not working well */}
 
       {/* 📊 Words I Know Stats Banner */}
       <div className="mb-5 grid grid-cols-4 gap-2">
@@ -286,13 +242,10 @@ export default function DeckSelect({ onSelect }: Props) {
           <div className="text-xl font-extrabold text-orange-400">{streak}</div>
           <div className="text-[10px] text-orange-400/70 font-medium mt-0.5">დღე 🔥</div>
         </div>
-        <button
-          onClick={() => setShowGoalModal(true)}
-          className="bg-gradient-to-br from-sky-500/20 to-blue-500/20 border border-sky-500/30 rounded-xl p-3 text-center hover:scale-[1.03] active:scale-[0.97] transition-transform"
-        >
+        <div className="bg-gradient-to-br from-sky-500/20 to-blue-500/20 border border-sky-500/30 rounded-xl p-3 text-center">
           <div className="text-xl font-extrabold text-sky-400">Lv.{level}</div>
           <div className="text-[10px] text-sky-400/70 font-medium mt-0.5">დონე</div>
-        </button>
+        </div>
       </div>
 
       {/* Daily Goal Progress Bar */}
@@ -349,32 +302,7 @@ export default function DeckSelect({ onSelect }: Props) {
         </div>
       )}
 
-      {/* 🔔 Review Reminder Banner */}
-      {totalDueCards > 0 && (
-        <div className="mb-5 relative overflow-hidden rounded-xl border border-amber-500/30"
-          style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.15), rgba(239,68,68,0.1))' }}
-        >
-          <div className="absolute top-0 right-0 w-20 h-20 bg-amber-400/10 rounded-full blur-xl -translate-y-4 translate-x-4" />
-          <div className="relative p-4 flex items-center gap-3">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center text-lg">
-              🧠
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="font-bold text-sm text-amber-400">
-                {totalDueCards} ბარათი გადასახედია!
-              </div>
-              <div className="text-xs text-[var(--color-text-muted)] mt-0.5">
-                {streak > 0
-                  ? `🔥 ${streak}-დღიანი სერია — არ დაკარგო!`
-                  : 'გადახედე სიტყვებს რომ არ დაგავიწყდეს'}
-              </div>
-            </div>
-            <div className="flex-shrink-0 bg-amber-500 text-white font-extrabold text-lg w-10 h-10 rounded-full flex items-center justify-center border-b-2 border-amber-700">
-              {totalDueCards > 99 ? '99+' : totalDueCards}
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Review Reminder Banner — removed by request */}
 
       {/* 🎯 Recommended for Your Level */}
       {levelInfo && recommendedDecks.length > 0 && (
@@ -434,9 +362,7 @@ export default function DeckSelect({ onSelect }: Props) {
               <h2 className="text-lg font-extrabold text-white leading-tight">ტოპ 2000 სიტყვა</h2>
               <p className="text-white/80 text-xs mt-0.5">ყველაზე მნიშვნელოვანი ინგლისური სიტყვები · 2000 ბარათი</p>
               <p className="text-white/60 text-[10px] mt-1">📊 ფარავს ინგლისური საუბრის ~80%-ს</p>
-              {deckDueCounts['top-2000'] && (
-                <p className="text-yellow-200 text-[10px] mt-1 font-semibold">🧠 {deckDueCounts['top-2000']} ბარათი გადასახედია</p>
-              )}
+              {/* due count removed */}
             </div>
             <div className="flex-shrink-0 bg-white/20 rounded-xl p-2.5 border-b-4 border-white/10 group-hover:bg-white/30 transition-colors">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
