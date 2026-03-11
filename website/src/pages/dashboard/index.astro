@@ -317,7 +317,8 @@ import Layout from '../../layouts/Layout.astro';
       }
 
       const phrases = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
-      const grammarA = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '[]');
+      var grammarRaw = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}');
+      var grammarA = Array.isArray(grammarRaw) ? grammarRaw : Object.keys(grammarRaw);
       const grammarB = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
       const grammar = [...new Set([...grammarA, ...grammarB])];
       const podcasts = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');

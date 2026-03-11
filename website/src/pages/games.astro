@@ -10,6 +10,10 @@ import Layout from '../layouts/Layout.astro';
       <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/60 to-[#1C1C1E]"></div>
     </div>
     <div class="relative max-w-4xl mx-auto px-4 pt-16 sm:pt-24 pb-8 sm:pb-16 text-center">
+      <a href="/" class="absolute top-4 left-4 sm:top-8 sm:left-4 flex items-center gap-2 text-[#A0A09A] hover:text-white transition-colors bg-[#242426]/80 backdrop-blur-sm border border-[#2E2E30] rounded-xl px-3 py-2">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        <span class="text-sm font-medium">უკან</span>
+      </a>
       <h1 class="font-['Playfair_Display',serif] text-2xl sm:text-4xl md:text-5xl mb-2 sm:mb-4 leading-tight">სიტყვების თამაშები</h1>
       <p class="text-sm sm:text-lg text-[#A0A09A] max-w-xl mx-auto mb-4 sm:mb-6">ისწავლე ინგლისური სახალისო და ინტერაქტიული თამაშებით</p>
       <div class="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-5 py-2">
@@ -111,13 +115,14 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Active Game Area -->
-  <div id="game-overlay" class="hidden fixed inset-0 z-40 bg-[#1C1C1E] overflow-y-auto">
+  <div id="game-overlay" class="hidden fixed inset-0 z-[60] bg-[#1C1C1E] overflow-y-auto">
     <div class="max-w-xl mx-auto px-3 sm:px-4 pt-4 sm:pt-8 pb-6 min-h-screen">
       <!-- Game Header Bar — back arrow top-left like flashcards -->
       <div style="margin-bottom:12px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <button id="back-btn" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:#242426;border:1px solid #333;color:#A0A09A;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:all 0.15s;flex-shrink:0;" onmouseover="this.style.background='#2E2E30';this.style.color='#F5F5F0'" onmouseout="this.style.background='#242426';this.style.color='#A0A09A'">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+          <button id="back-btn" style="display:flex;align-items:center;justify-content:center;gap:6px;min-width:52px;height:48px;padding:0 14px;border-radius:12px;background:#242426;border:2px solid #444;color:#F5F5F0;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:all 0.15s;flex-shrink:0;font-weight:700;font-size:14px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+            <span>უკან</span>
           </button>
           <div style="flex:1;"></div>
           <div id="game-xp-display" style="display:flex;align-items:center;gap:8px;background:#242426;border:1px solid #333;border-radius:10px;padding:6px 12px;">
@@ -1099,6 +1104,9 @@ import Layout from '../layouts/Layout.astro';
       overlay.classList.add('hidden');
       cont.innerHTML='';
       document.body.style.overflow='';
+      // Restore top nav
+      var topNav = document.querySelector('nav.fixed');
+      if (topNav) topNav.style.display = '';
       // Remove any completion modals
       document.querySelectorAll('.game-completion').forEach(modal => modal.remove());
     }
@@ -1214,6 +1222,9 @@ import Layout from '../layouts/Layout.astro';
     function openGame(id){
       overlay.classList.remove('hidden');
       document.body.style.overflow='hidden';
+      // Hide top nav so it doesn't cover game
+      var topNav = document.querySelector('nav.fixed');
+      if (topNav) topNav.style.display = 'none';
       cont.innerHTML='';
       _gameActive=true;
       
@@ -1342,9 +1353,9 @@ import Layout from '../layouts/Layout.astro';
           updateGameScore(score);
           updateGameProgress(cnt, matchCount);
           
-          selE.b.style.borderColor='#10B981';selE.b.style.background='#10B98130';selE.b.style.boxShadow='0 0 12px rgba(16,185,129,0.4)';
-          selK.b.style.borderColor='#10B981';selK.b.style.background='#10B98130';selK.b.style.boxShadow='0 0 12px rgba(16,185,129,0.4)';
-          setTimeout(()=>{selE.b.style.opacity='0';selE.b.style.transform='scale(0.8)';selE.b.style.pointerEvents='none';selK.b.style.opacity='0';selK.b.style.transform='scale(0.8)';selK.b.style.pointerEvents='none';},400);
+          selE.b.style.borderColor='#10B981';selE.b.style.background='#10B98130';selE.b.style.boxShadow='0 0 12px rgba(16,185,129,0.4)';selE.b.style.pointerEvents='none';
+          selK.b.style.borderColor='#10B981';selK.b.style.background='#10B98130';selK.b.style.boxShadow='0 0 12px rgba(16,185,129,0.4)';selK.b.style.pointerEvents='none';
+          setTimeout(()=>{selE.b.style.opacity='0';selE.b.style.transform='scale(0.8)';selK.b.style.opacity='0';selK.b.style.transform='scale(0.8)';},400);
           
           if(cnt>=matchCount){
             clearInterval(int);
@@ -1364,8 +1375,8 @@ import Layout from '../layouts/Layout.astro';
           showAnswerFeedback(e.b, false);
           showAnswerFeedback(k.b, false);
           setTimeout(()=>{
-            e.b.classList.remove('ring-2','ring-[#C8C8C0]');
-            k.b.classList.remove('ring-2','ring-[#C8C8C0]');
+            e.b.style.borderColor='#3A3A40';e.b.style.boxShadow='none';e.b.style.background='#2A2A2E';
+            k.b.style.borderColor='#3A3A40';k.b.style.boxShadow='none';k.b.style.background='#2A2A2E';
           },600);
         }
         selE=null;selK=null;

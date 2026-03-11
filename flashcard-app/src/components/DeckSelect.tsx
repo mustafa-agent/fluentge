@@ -10,18 +10,9 @@ interface Props {
 }
 
 const modes = [
-  { id: 'study' as const, label: 'EN → KA', icon: '📝', desc: 'ინგლისურიდან ქართულად' },
-  { id: 'reverse' as const, label: 'KA → EN', icon: '🔄', desc: 'ქართულიდან ინგლისურად' },
+  { id: 'study' as const, label: 'EN → GE', icon: '📝', desc: 'ინგლისურიდან ქართულად' },
+  { id: 'reverse' as const, label: 'GE → EN', icon: '🔄', desc: 'ქართულიდან ინგლისურად' },
   { id: 'mixed' as const, label: 'შერეული', icon: '🔀', desc: 'ორივე მიმართულებით' },
-  { id: 'srs' as const, label: 'გადახედვა', icon: '🃏', desc: 'გადააბრუნე და შეაფასე' },
-  { id: 'quiz' as const, label: 'ქვიზი', icon: '⚡', desc: 'აირჩიე სწორი 4-დან' },
-  { id: 'typing' as const, label: 'წერა', icon: '✍️', desc: 'ჩაწერე თარგმანი · +25 XP' },
-  { id: 'sentence' as const, label: 'წინადადება', icon: '🔤', desc: 'დაალაგე სიტყვები · +15 XP' },
-  { id: 'listening' as const, label: 'მოსმენა', icon: '🎧', desc: 'მოისმინე და აირჩიე · +10 XP' },
-  { id: 'fillin' as const, label: 'შევსება', icon: '📝', desc: 'შეავსე გამოტოვებული · +10 XP' },
-  { id: 'reading' as const, label: 'კითხვა', icon: '📖', desc: 'წაიკითხე და უპასუხე · +15 XP' },
-  { id: 'speaking' as const, label: 'გამოთქმა', icon: '🎤', desc: 'თქვი სიტყვა · +10 XP' },
-  { id: 'writing' as const, label: 'თარგმნა', icon: '✏️', desc: 'დაწერე ინგლისურად · +15 XP' },
 ];
 
 export default function DeckSelect({ onSelect }: Props) {
@@ -175,7 +166,7 @@ export default function DeckSelect({ onSelect }: Props) {
           <div className="mt-3 max-w-xs mx-auto space-y-2">
             <div>
               <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1">
-                <span>EN → KA</span>
+                <span>EN → GE</span>
                 <span>{learnedEnka}/{total} ({pctEnka}%)</span>
               </div>
               <div className="h-2 bg-[var(--color-bg)] rounded-full overflow-hidden">
@@ -184,7 +175,7 @@ export default function DeckSelect({ onSelect }: Props) {
             </div>
             <div>
               <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1">
-                <span>KA → EN</span>
+                <span>GE → EN</span>
                 <span>{learnedKaen}/{total} ({pctKaen}%)</span>
               </div>
               <div className="h-2 bg-[var(--color-bg)] rounded-full overflow-hidden">
@@ -248,59 +239,7 @@ export default function DeckSelect({ onSelect }: Props) {
         </div>
       </div>
 
-      {/* Daily Goal Progress Bar */}
-      <button
-        onClick={() => setShowGoalModal(true)}
-        className="w-full mb-5 bg-[var(--color-bg-card)] rounded-xl p-3 border border-white/5 hover:border-white/10 transition-colors text-left"
-      >
-        <div className="flex items-center justify-between text-xs mb-1.5">
-          <span className="text-[var(--color-text-muted)]">🎯 დღის მიზანი · {dailyGoal} ბარათი</span>
-          <span className={`font-bold ${dailyPct >= 100 ? 'text-green-400' : 'text-[var(--color-text-muted)]'}`}>
-            {dailyPct >= 100 ? '✅ შესრულდა!' : `${todayCards}/${dailyGoal} ბარათი`}
-          </span>
-        </div>
-        <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-          <div
-            className={`h-full rounded-full transition-all ${dailyPct >= 100 ? 'bg-green-500' : 'bg-gradient-to-r from-sky-500 to-blue-500'}`}
-            style={{ width: `${dailyPct}%` }}
-          />
-        </div>
-      </button>
-
-      {/* Daily Goal Setting Modal */}
-      {showGoalModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60" onClick={() => setShowGoalModal(false)}>
-          <div className="bg-[var(--color-bg-card)] rounded-2xl p-6 max-w-sm w-full border border-white/10 shadow-xl" onClick={e => e.stopPropagation()}>
-            <h3 className="text-lg font-bold text-center mb-1">🎯 დღის მიზანი</h3>
-            <p className="text-sm text-[var(--color-text-muted)] text-center mb-5">რამდენი ბარათი გინდა გაიმეორო ყოველ დღე?</p>
-            <div className="grid grid-cols-5 gap-2 mb-5">
-              {goalOptions.map(num => (
-                <button
-                  key={num}
-                  onClick={() => {
-                    setDailyCardGoal(num);
-                    setShowGoalModal(false);
-                  }}
-                  className={`py-3 rounded-xl font-bold text-sm transition-all border-b-4 active:border-b-0 active:mt-1 ${
-                    num === dailyGoal
-                      ? 'bg-green-500 border-green-700 text-white'
-                      : 'bg-white/10 border-white/5 text-[var(--color-text)] hover:bg-white/20'
-                  }`}
-                >
-                  {num}
-                  <span className="block text-[10px] font-normal opacity-70">ბარათი</span>
-                </button>
-              ))}
-            </div>
-            <button
-              onClick={() => setShowGoalModal(false)}
-              className="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-sm font-medium transition-colors"
-            >
-              დახურვა
-            </button>
-          </div>
-        </div>
-      )}
+      {/* Daily Goal removed */}
 
       {/* Review Reminder Banner — removed by request */}
 

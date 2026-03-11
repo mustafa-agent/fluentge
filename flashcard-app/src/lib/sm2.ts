@@ -22,30 +22,46 @@ export function initCardProgress(cardId: string): CardProgress {
 export function sm2(card: CardProgress, quality: number): CardProgress {
   const q = Math.max(0, Math.min(5, quality));
   let { easeFactor, interval, repetitions } = card;
+  const now = Date.now();
 
   if (q < 3) {
+    // Wrong answer
     repetitions = 0;
     interval = 0;
+    // Review again in 10 minutes
+    const nextReview = now + 10 * 60 * 1000;
+
+    easeFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+    if (easeFactor < 1.3) easeFactor = 1.3;
+
+    return {
+      ...card,
+      easeFactor,
+      interval,
+      repetitions,
+      nextReview,
+      lastReview: now,
+    };
   } else {
-    if (repetitions === 0) {
+    // Correct answer
+    repetitions += 1;
+    if (repetitions === 1) {
+      // Was 0 before increment
       interval = 1;
-    } else if (repetitions === 1) {
-      interval = 6;
     } else {
       interval = Math.round(interval * easeFactor);
     }
-    repetitions++;
+
+    easeFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+    if (easeFactor < 1.3) easeFactor = 1.3;
+
+    return {
+      ...card,
+      easeFactor,
+      interval,
+      repetitions,
+      nextReview: now + interval * 24 * 60 * 60 * 1000,
+      lastReview: now,
+    };
   }
-
-  easeFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
-  if (easeFactor < 1.3) easeFactor = 1.3;
-
-  return {
-    ...card,
-    easeFactor,
-    interval,
-    repetitions,
-    nextReview: Date.now() + interval * 24 * 60 * 60 * 1000,
-    lastReview: Date.now(),
-  };
 }

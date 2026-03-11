@@ -59,8 +59,8 @@
 - **Focus: Homepage sells, premium converts, users come back**
 - [ ] Homepage hero — social proof counters (users, words, lessons), testimonial carousel
 - [ ] Premium page — pricing table, FAQ accordion, free vs premium comparison
-- [ ] Game high scores on dashboard — persistent tracking
-- [ ] Premium FAQ accordion — answer common objections
+- [x] Game high scores on dashboard — persistent tracking ✅ Cron 4B, Mar 11
+- [x] Premium FAQ expansion — 3 new objection-handling questions ✅ Cron 4B, Mar 11
 - [x] Better navbar — active states ✅ Cron 4, Mar 11
 
 ### ✅ COMPLETED — Mar 8 (Launch Readiness)

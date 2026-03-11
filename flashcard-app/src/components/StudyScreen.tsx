@@ -1,7 +1,7 @@
 import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { Deck, FlashCard, getCardId } from '../lib/cards';
 import { sm2 } from '../lib/sm2';
-import { getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
+import { getAllProgress, getCardProgress, saveCardProgress, updateStats, incrementWordsLearned } from '../lib/storage';
 import { playCorrect, playWrong } from '../lib/sounds';
 import { addXP, addStudyTime, updateStreak, XP_REWARDS, recordDailyActivity, addCardReview } from '../lib/gamification';
 import { recordWrong as trackDifficult, recordRight as trackCorrect } from '../lib/difficult-words';
@@ -172,23 +172,47 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
   const [hardestWords, setHardestWords] = useState<Array<{en: string, ka: string, attempts: number}>>([]);
   const wrongCountMap = useRef<Map<string, number>>(new Map());
   
-  // Queue of card indices remaining
+  // SRS-driven card selection
+  const [srsInfo, setSrsInfo] = useState({ reviewCount: 0, newCount: 0 });
   const [queue, setQueue] = useState<FlashCard[]>(() => {
-    // Try to restore saved session
-    const saved = loadSessionProgress(deck.id, storageSuffix);
-    if (saved && saved.length > 0) {
-      // Restore cards in saved order
-      const cardMap = new Map(deck.cards.map(c => [c.english, c]));
-      const restored = saved.map(id => cardMap.get(id)).filter(Boolean) as FlashCard[];
-      if (restored.length > 0) return restored;
+    const now = Date.now();
+    const allProgress = getAllProgress();
+
+    // Build card IDs for this deck+direction
+    const dueCards: { card: FlashCard; nextReview: number }[] = [];
+    const newCards: FlashCard[] = [];
+
+    for (const card of deck.cards) {
+      const id = getCardId(card, storageSuffix);
+      const progress = allProgress[id];
+      if (!progress) {
+        newCards.push(card);
+      } else if (progress.nextReview <= now) {
+        dueCards.push({ card, nextReview: progress.nextReview });
+      }
     }
-    // Fresh session: all cards shuffled
-    return [...deck.cards].sort(() => Math.random() - 0.5);
+
+    // Sort due cards by nextReview ASC, take max 50
+    dueCards.sort((a, b) => a.nextReview - b.nextReview);
+    const reviewCards = dueCards.slice(0, 50).map(d => d.card);
+
+    // If < 10 review cards, add new cards up to 10
+    const newToAdd = Math.min(10, Math.max(0, 10 - reviewCards.length), newCards.length);
+    const selectedNew = newCards.slice(0, newToAdd);
+
+    // Review first, then new
+    const sessionCards = [...reviewCards, ...selectedNew];
+
+    // Store counts for display
+    setTimeout(() => setSrsInfo({ reviewCount: reviewCards.length, newCount: selectedNew.length }), 0);
+
+    return sessionCards;
   });
 
-  const totalCards = deck.cards.length;
+  const totalCards = queue.length || 1;
+  const [initialTotal] = useState(queue.length);
   const remaining = queue.length;
-  const guessedCount = totalCards - remaining;
+  const guessedCount = initialTotal - remaining;
 
   const [flipped, setFlipped] = useState(false);
   const [sessionDone, setSessionDone] = useState(false);
@@ -357,11 +381,8 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
 
   function restartSession() {
     clearSessionProgress(deck.id, storageSuffix);
-    setQueue([...deck.cards].sort(() => Math.random() - 0.5));
-    setFlipped(false);
-    setSessionDone(false);
-    setGuess('');
-    setGuessResult(null);
+    // Reload with SRS logic
+    window.location.reload();
   }
 
   // Keyboard shortcuts
@@ -450,7 +471,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     const totalAttempts = correctCount + wrongCount;
     const accuracy = totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : 100;
     const isPerfect = wrongCount === 0;
-    const wordsPerMin = minutes > 0 ? Math.round(totalCards / minutes) : totalCards;
+    const wordsPerMin = minutes > 0 ? Math.round(initialTotal / minutes) : initialTotal;
     const sessionXP = correctCount * (XP_REWARDS.REVIEW_CARD + XP_REWARDS.CORRECT_ANSWER) + wrongCount * XP_REWARDS.REVIEW_CARD;
 
     // Track cards in daily history
@@ -477,7 +498,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
         {/* Stats Grid */}
         <div className="grid grid-cols-2 gap-3 mb-6">
           <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 text-center border border-white/5">
-            <div className="text-3xl font-bold text-[var(--color-text)]">{totalCards}</div>
+            <div className="text-3xl font-bold text-[var(--color-text)]">{initialTotal}</div>
             <div className="text-xs text-[var(--color-text-muted)] mt-1">📝 სიტყვა</div>
           </div>
           <div className="bg-[var(--color-bg-card)] rounded-2xl p-4 text-center border border-white/5">
@@ -554,11 +575,15 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
     );
   }
 
-  if (!card) {
+  if (!card && !sessionDone) {
     return (
       <div className="px-4 py-12 max-w-lg mx-auto text-center">
-        <p>ბარათები არ მოიძებნა</p>
-        <button onClick={onBack} className="mt-4 text-[var(--color-primary)]">← უკან</button>
+        <div className="text-5xl mb-4">🎉</div>
+        <p className="text-lg font-semibold mb-2">სესია დასრულდა!</p>
+        <p className="text-[var(--color-text-muted)] mb-6">მეტი ბარათი გამოჩნდება როცა გადახედვის დრო მოვა.</p>
+        <button onClick={onBack} className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] text-[var(--color-text)] font-semibold px-6 py-3 rounded-xl transition-colors border border-white/5">
+          ← უკან
+        </button>
       </div>
     );
   }
@@ -582,7 +607,7 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
             {autoplay ? '🔊' : '🔇'}
           </button>
           <span className="text-xs px-2 py-1 rounded-lg bg-[var(--color-bg-card)] text-[var(--color-text-muted)]">
-            {isReverse ? 'KA → EN' : 'EN → KA'}
+            {isReverse ? 'GE → EN' : 'EN → GE'}
           </span>
         </div>
       </div>
@@ -594,8 +619,8 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
             <div
               className="h-full rounded-full transition-all duration-500 ease-out"
               style={{
-                width: `${Math.max((guessedCount / totalCards) * 100, 2)}%`,
-                background: guessedCount === totalCards
+                width: `${Math.max((guessedCount / initialTotal) * 100, 2)}%`,
+                background: guessedCount === initialTotal
                   ? 'linear-gradient(90deg, #22c55e, #4ade80)'
                   : 'linear-gradient(90deg, #6366f1, #818cf8)',
               }}
@@ -605,14 +630,19 @@ export default function StudyScreen({ deck, direction = 'en-ka', onBack }: Props
               className="absolute inset-0 rounded-full opacity-20"
               style={{
                 background: 'linear-gradient(180deg, rgba(255,255,255,0.3) 0%, transparent 60%)',
-                width: `${Math.max((guessedCount / totalCards) * 100, 2)}%`,
+                width: `${Math.max((guessedCount / initialTotal) * 100, 2)}%`,
               }}
             />
           </div>
           <span className="text-sm font-bold text-[var(--color-text)] tabular-nums whitespace-nowrap min-w-[3.5rem] text-right">
-            {guessedCount}/{totalCards}
+            {guessedCount}/{initialTotal}
           </span>
         </div>
+      </div>
+
+      {/* SRS Info */}
+      <div className="text-center text-xs text-[var(--color-text-muted)] mb-4">
+        📋 გადასახედი: {srsInfo.reviewCount} | ახალი: {srsInfo.newCount}
       </div>
 
       {/* Card with 3D flip */}

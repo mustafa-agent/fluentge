@@ -81,28 +81,7 @@ export default function StatsBar() {
         </div>
       </div>
 
-      {/* Daily Goal */}
-      <div className={`daily-goal-card rounded-xl px-4 py-3 ${goalMet ? 'complete' : ''}`}>
-        <div className="flex justify-between items-center mb-1">
-          <span className="text-sm font-semibold flex items-center gap-1">
-            🎯 დღის მიზანი
-            {goalMet && <span className="text-green-400 text-xs ml-1">✅ შესრულდა!</span>}
-          </span>
-          <span className="text-xs text-[var(--color-text-muted)]">
-            {studyTime}/{dailyGoal} ბარათი
-          </span>
-        </div>
-        <div className="daily-goal-bar w-full bg-white/10 rounded-full h-3">
-          <div
-            className={`h-3 rounded-full transition-all duration-700 ${
-              goalMet 
-                ? 'bg-gradient-to-r from-green-400 to-emerald-500' 
-                : 'bg-gradient-to-r from-green-500 to-green-400'
-            }`}
-            style={{ width: `${goalProgress}%` }}
-          />
-        </div>
-      </div>
+      {/* Daily Goal removed */}
     </div>
   );
 }

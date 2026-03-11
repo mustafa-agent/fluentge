@@ -318,7 +318,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     // Close button
     document.getElementById('exercise-close-btn').addEventListener('click', function() {
       if (confirm('ნამდვილად გსურს გაკვეთილის დატოვება?')) {
-        document.getElementById('exercises-section').scrollIntoView({behavior:'smooth', block:'start'});
+        window.location.href = '/grammar/';
       }
     });
 
@@ -389,10 +389,11 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
           FluentGe.updateStreak();
           var mins = FluentGe.stopTimer();
           FluentGe.addStudyTime(mins);
-          // Only mark complete and unlock next lesson if passed (≥70%)
+          // Mark complete and unlock next lesson if passed
           if (passed) {
-            var slug = window.location.pathname.split('/grammar/')[1];
-            if (slug) FluentGe.markGrammarComplete(slug.replace(/\/$/, ''));
+            console.log('GRAMMAR PASS — marking complete:', lessonSlug);
+            FluentGe.markGrammarComplete(lessonSlug);
+            console.log('Saved:', localStorage.getItem('fluentge-grammar-completed'));
           }
         }
         document.getElementById('score-emoji').textContent = passed ? '🏆' : '💪';
@@ -413,13 +414,15 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         }
         var heading = document.getElementById('score-heading');
         if (heading) heading.textContent = passed ? 'ტესტი წარმატებით ჩააბარე!' : 'ტესტი ვერ ჩააბარე';
-        // Pass: show next lesson button only. Fail: show retry button only.
+        // Pass: show ONLY next lesson button. Fail: show ONLY retry button.
         var nextBtn = document.getElementById('next-lesson-btn');
         var retryBtn = document.getElementById('retry-btn');
-        if (passed && nextBtn) {
-          nextBtn.classList.remove('hidden');
-        } else if (retryBtn) {
-          retryBtn.classList.remove('hidden');
+        if (passed) {
+          if (nextBtn) { nextBtn.classList.remove('hidden'); nextBtn.style.display = ''; }
+          if (retryBtn) { retryBtn.classList.add('hidden'); retryBtn.style.display = 'none'; }
+        } else {
+          if (retryBtn) { retryBtn.classList.remove('hidden'); retryBtn.style.display = ''; }
+          if (nextBtn) { nextBtn.classList.add('hidden'); nextBtn.style.display = 'none'; }
         }
         if (passed) {
           document.getElementById('score-msg').textContent = 'შესანიშნავი! შემდეგი გაკვეთილი გახსნილია! 🎉';
@@ -505,6 +508,11 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       if (window.FluentGe) FluentGe.startTimer();
       scoreContainer.classList.add('hidden');
       container.classList.remove('hidden');
+      // Re-hide both buttons for fresh attempt
+      var nb = document.getElementById('next-lesson-btn');
+      var rb = document.getElementById('retry-btn');
+      if (nb) { nb.classList.add('hidden'); nb.style.display = 'none'; }
+      if (rb) { rb.classList.add('hidden'); rb.style.display = 'none'; }
       progressBar.classList.add('from-green-400', 'to-emerald-500');
       progressBar.classList.remove('from-amber-400', 'to-yellow-500');
       render();

@@ -3,13 +3,70 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="შესვლა — FluentGe">
+  <style>
+    .login-card {
+      background: #1e1e22;
+      border: 1px solid #2e2e32;
+      border-radius: 1.5rem;
+      padding: 2.5rem 2rem;
+      animation: loginFadeUp 0.5s ease;
+    }
+    @keyframes loginFadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .login-btn {
+      border-bottom: 4px solid #9a9a92;
+      transition: all 0.2s;
+    }
+    .login-btn:active {
+      border-bottom-width: 2px;
+      transform: translateY(2px);
+    }
+    .login-btn:hover {
+      background: #E8E8E0;
+    }
+    .google-btn {
+      border-bottom: 4px solid #1a1a1e;
+      transition: all 0.2s;
+    }
+    .google-btn:active {
+      border-bottom-width: 2px;
+      transform: translateY(2px);
+    }
+    .tab-active {
+      background: #2E2E30;
+      color: white;
+      border-bottom: 3px solid #818cf8;
+    }
+    :global(.light) .login-card {
+      background: white;
+      border-color: #e5e7eb;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    :global(.light) .login-btn {
+      border-bottom-color: #8a8a82;
+    }
+    :global(.light) .google-btn {
+      background: #f3f4f6 !important;
+      border-color: #e5e7eb !important;
+      border-bottom-color: #d1d5db !important;
+      color: #374151 !important;
+    }
+    :global(.light) .google-btn:hover {
+      background: #e5e7eb !important;
+    }
+  </style>
+
   <div class="min-h-[80vh] flex items-center justify-center px-4 py-12">
-    <div class="w-full max-w-md">
+    <div class="w-full max-w-md login-card">
       
       <div class="text-center mb-8">
+        <div class="text-4xl mb-3">📚</div>
         <h1 class="font-['Playfair_Display',serif] text-3xl mb-2">
           <span class="text-[#C8C8C0]">Fluent</span>Ge
         </h1>
+        <p class="text-sm text-[#6B6B65]">ისწავლე ინგლისური სახალისოდ 🇬🇪</p>
       </div>
 
       <!-- Tab switcher -->
@@ -32,7 +89,7 @@ import Layout from '../layouts/Layout.astro';
               class="w-full bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 text-sm focus:border-[#C8C8C0] focus:outline-none transition-colors placeholder-[#6B6B65]">
           </div>
         </div>
-        <button id="login-btn" onclick="handleLogin()" class="w-full bg-[#C8C8C0] text-[#1C1C1E] font-semibold py-3.5 rounded-xl text-sm hover:bg-[#E8E8E0] transition-colors">
+        <button id="login-btn" onclick="handleLogin()" class="w-full bg-[#C8C8C0] text-[#1C1C1E] font-bold py-3.5 rounded-xl text-sm login-btn uppercase tracking-wide">
           შესვლა
         </button>
         <div class="mt-2 text-right">
@@ -64,7 +121,7 @@ import Layout from '../layouts/Layout.astro';
               class="w-full bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 text-sm focus:border-[#C8C8C0] focus:outline-none transition-colors placeholder-[#6B6B65]">
           </div>
         </div>
-        <button id="reg-btn" onclick="handleRegister()" class="w-full bg-[#C8C8C0] text-[#1C1C1E] font-semibold py-3.5 rounded-xl text-sm hover:bg-[#E8E8E0] transition-colors">
+        <button id="reg-btn" onclick="handleRegister()" class="w-full bg-[#C8C8C0] text-[#1C1C1E] font-bold py-3.5 rounded-xl text-sm login-btn uppercase tracking-wide">
           რეგისტრაცია
         </button>
       </div>
@@ -77,7 +134,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Google Sign In -->
-      <button id="google-btn" onclick="handleGoogle()" class="w-full bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] font-semibold py-3.5 rounded-xl text-sm transition-colors flex items-center justify-center gap-3">
+      <button id="google-btn" onclick="handleGoogle()" class="w-full bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-3 google-btn">
         <svg width="20" height="20" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
         Google-ით შესვლა
       </button>

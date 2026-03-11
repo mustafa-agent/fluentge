@@ -142,6 +142,14 @@ function isLessonFree(slug: string) {
       var isLight = document.documentElement.classList.contains('light');
       var completed = {};
       try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
+      // Migrate old array format
+      if (Array.isArray(completed)) {
+        var obj = {};
+        completed.forEach(function(s) { obj[s] = true; });
+        completed = obj;
+        localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
+      }
+      console.log('Grammar completed:', JSON.stringify(completed));
       
       // Get all lesson slugs in order
       var allSlugs = [];
@@ -149,14 +157,16 @@ function isLessonFree(slug: string) {
         allSlugs.push(card.dataset.slug);
       });
       
-      // Determine each lesson's state: completed, current (unlocked), or locked
-      var foundFirstIncomplete = false;
+      // Determine each lesson's state: completed, current (next after a completed one), or locked
+      // A lesson is unlocked if: it's the first lesson, OR the previous lesson in order is completed, OR it itself is completed
+      var prevCompleted = true; // first lesson is always unlocked
       
       document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
         var slug = card.dataset.slug;
         var idx = parseInt(card.dataset.idx);
         var isFree = card.dataset.free === 'true';
         var isCompleted = !!completed[slug];
+        var isUnlocked = prevCompleted || isCompleted;
         var statusEl = card.querySelector('.grammar-lesson-status');
         var badgeEl = card.querySelector('.grammar-lesson-badge');
         var footerEl = card.querySelector('.grammar-lesson-footer');
@@ -175,9 +185,8 @@ function isLessonFree(slug: string) {
           card.setAttribute('href', '/grammar/' + slug + '/');
           var exCount = footerEl.textContent.match(/\d+/)?.[0] || '';
           footerEl.innerHTML = '<span style="color:rgb(74,222,128)">✅ გავლილი</span> · 📝 ' + exCount + ' სავარჯიშო';
-        } else if (!foundFirstIncomplete && (isFree || isPremium)) {
+        } else if (isUnlocked && (isFree || isPremium)) {
           // ▶ Current lesson — BLUE glow, pulsing, call-to-action
-          foundFirstIncomplete = true;
           statusEl.textContent = '▶️';
           statusEl.style.fontSize = '1.5rem';
           badgeEl.textContent = '📍 მიმდინარე';
@@ -195,7 +204,6 @@ function isLessonFree(slug: string) {
           footerEl.classList.add('text-sky-400', 'font-medium');
         } else if (!isCompleted && !isPremium && !isFree) {
           // 🔒 Locked (premium required) — AMBER, clearly premium-gated
-          foundFirstIncomplete = true;
           statusEl.textContent = '👑';
           statusEl.style.fontSize = '1.25rem';
           statusEl.style.opacity = '0.6';
@@ -207,7 +215,6 @@ function isLessonFree(slug: string) {
           footerEl.classList.add('text-amber-400/70');
         } else if (!isCompleted) {
           // 🔒 Locked (sequential) — GRAY, faded, clearly not available
-          foundFirstIncomplete = true;
           statusEl.textContent = '🔒';
           statusEl.style.fontSize = '1rem';
           statusEl.style.opacity = '0.4';
@@ -221,6 +228,7 @@ function isLessonFree(slug: string) {
           footerEl.classList.remove('text-[#6B6B65]');
           footerEl.classList.add('text-neutral-500');
         }
+        prevCompleted = isCompleted;
       });
     })();
     

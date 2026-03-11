@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+/* ========== GLOBAL ENTRANCE ANIMATIONS ========== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animate main content sections on page load */
+main > section,
+main > div,
+main > .max-w-4xl,
+main > .max-w-3xl,
+main > .max-w-2xl {
+  animation: fadeUp 0.4s ease both;
+}
+
+main > *:nth-child(2) { animation-delay: 0.08s; }
+main > *:nth-child(3) { animation-delay: 0.16s; }
+main > *:nth-child(4) { animation-delay: 0.24s; }
+main > *:nth-child(5) { animation-delay: 0.32s; }
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  main > section,
+  main > div,
+  main > .max-w-4xl,
+  main > .max-w-3xl,
+  main > .max-w-2xl {
+    animation: none;
+  }
+}
+
 /* ========== GLOBAL MOBILE FIXES ========== */
 /* Prevent horizontal overflow on mobile */
 html, body {

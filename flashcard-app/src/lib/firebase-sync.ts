@@ -31,10 +31,16 @@ function jp(val: string | null, fallback: any): any {
   try { return val ? JSON.parse(val) : fallback; } catch { return fallback; }
 }
 
-function mergeArr(a: any[], b: any[]): any[] {
+function toArr(v: any): any[] {
+  if (Array.isArray(v)) return v;
+  if (v && typeof v === 'object') return Object.values(v);
+  return [];
+}
+
+function mergeArr(a: any, b: any): any[] {
   const s = new Set();
   const r: any[] = [];
-  for (const i of [...(b || []), ...(a || [])]) {
+  for (const i of [...toArr(b), ...toArr(a)]) {
     const k = typeof i === 'object' ? JSON.stringify(i) : i;
     if (!s.has(k)) { s.add(k); r.push(i); }
   }
@@ -75,10 +81,16 @@ function gather() {
   d.gamesPlayed = parseInt(localStorage.getItem('gamesPlayed') || '0', 10);
   d.dailyHistory = jp(localStorage.getItem('fluentge-daily-history'), {});
   d.achievements = jp(localStorage.getItem('fluentge-achievements'), []);
-  d.grammarCompleted = jp(localStorage.getItem('fluentge-grammar-completed'), []);
+  d.grammarCompleted = jp(localStorage.getItem('fluentge-grammar-completed'), {});
   d.difficultWords = jp(localStorage.getItem('fluentge-difficult-words'), {});
   d.onboarded = localStorage.getItem('fluentge-onboarded') === 'true';
   d.path = localStorage.getItem('fluentge-path') || '';
+
+  // New SRS v2 system
+  d.srsV2 = jp(localStorage.getItem('fluentge_srs_v2'), {});
+  d.studyDecks = jp(localStorage.getItem('fluentge_study_decks'), []);
+  d.dailyLimit = parseInt(localStorage.getItem('fluentge_daily_limit') || '20', 10);
+  d.dailyNew = jp(localStorage.getItem('fluentge_daily_new'), {});
 
   return d;
 }
@@ -138,7 +150,18 @@ function apply(local: any, cloud: any) {
   // Achievements: merge arrays
   localStorage.setItem('fluentge-achievements', JSON.stringify(mergeArr(local.achievements || [], cloud.achievements || [])));
   // Grammar completed: merge arrays
-  localStorage.setItem('fluentge-grammar-completed', JSON.stringify(mergeArr(local.grammarCompleted || [], cloud.grammarCompleted || [])));
+  // grammarCompleted is object {slug: true} — merge as object
+  {
+    const localGC = local.grammarCompleted || {};
+    const cloudGC = cloud.grammarCompleted || {};
+    // Handle old array format from cloud
+    const toObj = (v: any) => {
+      if (Array.isArray(v)) { const o: any = {}; v.forEach((s: string) => { if (typeof s === 'string') o[s] = true; }); return o; }
+      return (v && typeof v === 'object') ? v : {};
+    };
+    const merged = { ...toObj(localGC), ...toObj(cloudGC) };
+    localStorage.setItem('fluentge-grammar-completed', JSON.stringify(merged));
+  }
   // Difficult words: merge by word key, keep higher wrongCount per word
   if (local.difficultWords || cloud.difficultWords) {
     const localDW = local.difficultWords || {};
@@ -166,6 +189,40 @@ function apply(local: any, cloud: any) {
   // Onboarding
   if (cloud.onboarded) localStorage.setItem('fluentge-onboarded', 'true');
   if (cloud.path) localStorage.setItem('fluentge-path', cloud.path);
+
+  // New SRS v2: merge card-by-card, keep the one with more repetitions or later lastReview
+  if (local.srsV2 || cloud.srsV2) {
+    const localSRS = local.srsV2 || {};
+    const cloudSRS = cloud.srsV2 || {};
+    const merged: Record<string, any> = {};
+    for (const key of new Set([...Object.keys(localSRS), ...Object.keys(cloudSRS)])) {
+      const l = localSRS[key];
+      const c = cloudSRS[key];
+      if (l && c) {
+        // Keep the one with later lastReview
+        merged[key] = (l.lastReview || 0) >= (c.lastReview || 0) ? l : c;
+      } else {
+        merged[key] = l || c;
+      }
+    }
+    localStorage.setItem('fluentge_srs_v2', JSON.stringify(merged));
+  }
+  // Study decks: merge by deckId+mode
+  if (local.studyDecks || cloud.studyDecks) {
+    const localD = local.studyDecks || [];
+    const cloudD = cloud.studyDecks || [];
+    const seen = new Set<string>();
+    const merged: any[] = [];
+    for (const d of [...localD, ...cloudD]) {
+      const k = `${d.deckId}_${d.mode}`;
+      if (!seen.has(k)) { seen.add(k); merged.push(d); }
+    }
+    localStorage.setItem('fluentge_study_decks', JSON.stringify(merged));
+  }
+  // Daily limit: keep cloud
+  if (cloud.dailyLimit) localStorage.setItem('fluentge_daily_limit', cloud.dailyLimit.toString());
+  // Daily new: merge
+  if (cloud.dailyNew) localStorage.setItem('fluentge_daily_new', JSON.stringify(mergeObj(local.dailyNew, cloud.dailyNew)));
 }
 
 function getUid(): string | null {
@@ -173,6 +230,10 @@ function getUid(): string | null {
     const user = jp(localStorage.getItem('fluentge-user'), null);
     return user?.uid || null;
   } catch { return null; }
+}
+
+export function isLoggedIn(): boolean {
+  return getUid() !== null;
 }
 
 export async function loadFromCloud(): Promise<void> {

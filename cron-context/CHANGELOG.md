@@ -7,6 +7,20 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-11
 
+### Cron 4B — Improvements (5:30 PM)
+- **🏆 Dashboard Game High Scores:**
+  - New "საუკეთესო შედეგები" section in Dashboard game stats area
+  - Reads `fluentge-game-records` localStorage, shows top 5 scores
+  - Medal emojis (🥇🥈🥉) for top 3, Georgian game names mapped for all 30 games
+  - Color-coded rank indicators, sorted by score descending
+  - Only appears when user has played at least one game (no empty state clutter)
+- **💎 Premium FAQ Expansion — 3 New Questions:**
+  - "რით განსხვავდება FluentGe სხვა აპებისგან?" — unique selling points, Georgian-first
+  - "რამდენი ხანი სჭირდება შედეგის დანახვას?" — sets expectations, promotes SRS
+  - "შემიძლია სხვა მოწყობილობიდან გავაგრძელო?" — cloud sync feature highlight
+  - Total FAQ: 5 → 8 questions, addressing key conversion objections
+- Deployed ✅, git committed & pushed
+
 ### Cron 3B — Features (3:30 PM)
 - **🔔 Push Notification System (notifications.ts + NotificationSettings.tsx):**
   - Browser Notification API for SRS review reminders and streak reminders
