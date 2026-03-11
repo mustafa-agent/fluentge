@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+/* ========== GLOBAL MOBILE FIXES ========== */
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Ensure all images stay within container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Minimum touch target for interactive elements on mobile */
+@media (max-width: 767px) {
+  button, a[role="button"], [role="button"] {
+    min-height: 44px;
+  }
+  /* Fix long Georgian text overflow */
+  h1, h2, h3, h4, p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+
 /* ========== LIGHT MODE OVERRIDES ========== */
 html.light {
   --color-bg: #F5F5F0;

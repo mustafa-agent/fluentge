@@ -749,9 +749,10 @@ const episodes = [
       {episodes.map((ep) => (
         <div class={`bg-[#242426] border rounded-2xl overflow-hidden transition-all ${ep.free ? 'border-green-500/30' : 'border-[#2E2E30]'}`}>
           <div class="p-6">
-            <div class="ep-header flex items-start justify-between mb-3 cursor-pointer select-none" data-ep-toggle={ep.id} role="button" tabindex="0" aria-expanded="false">
-              <div>
-                <div class="flex items-center gap-2 mb-1">
+            <div class="ep-header flex items-start gap-3 mb-3 cursor-pointer select-none" data-ep-toggle={ep.id} role="button" tabindex="0" aria-expanded="false">
+              <div class="text-3xl sm:text-4xl flex-shrink-0 mt-1">{ep.icon}</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
                   <span class="text-sm text-[#6B6B65]">ეპიზოდი {ep.id}</span>
                   <span class="text-sm text-[#6B6B65]">· {ep.duration}</span>
                   {ep.free ? (
@@ -760,13 +761,10 @@ const episodes = [
                     <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-medium">🔒 პრემიუმი</span>
                   )}
                 </div>
-                <h2 class="text-xl font-bold">{ep.title}</h2>
-                <p class="text-[#6B6B65] text-sm">{ep.titleKa}</p>
+                <h2 class="text-lg sm:text-xl font-bold break-words">{ep.title}</h2>
+                <p class="text-[#6B6B65] text-sm break-words">{ep.titleKa}</p>
               </div>
-              <div class="flex items-center gap-3">
-                <div class="text-4xl">{ep.icon}</div>
-                <span class="ep-chevron text-[#6B6B65] text-xl transition-transform duration-300">▼</span>
-              </div>
+              <span class="ep-chevron text-[#6B6B65] text-xl transition-transform duration-300 flex-shrink-0 mt-1">▼</span>
             </div>
             
             <p class="text-sm text-[#6B6B65] mb-4">{ep.descriptionKa}</p>
@@ -818,15 +816,15 @@ const episodes = [
                     </div>
                   </div>
                   <!-- Speed controls -->
-                  <div class="flex items-center gap-2 flex-wrap">
+                  <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                     <span class="text-[10px] text-[#6B6B65] uppercase font-bold">სიჩქარე:</span>
                     {['0.5x', '0.75x', '1x', '1.25x', '1.5x'].map(spd => (
-                      <button class={`pp-speed text-xs px-2.5 py-1 rounded-lg font-medium transition-all ${spd === '1x' ? 'bg-sky-400/20 text-sky-400 border border-sky-400/30' : 'bg-[#2E2E30] text-[#6B6B65] hover:text-[#C8C8C0]'}`} data-speed={parseFloat(spd)} data-ep-id={ep.id}>{spd}</button>
+                      <button class={`pp-speed text-xs px-2 sm:px-2.5 py-1.5 rounded-lg font-medium transition-all min-h-[36px] ${spd === '1x' ? 'bg-sky-400/20 text-sky-400 border border-sky-400/30' : 'bg-[#2E2E30] text-[#6B6B65] hover:text-[#C8C8C0]'}`} data-speed={parseFloat(spd)} data-ep-id={ep.id}>{spd}</button>
                     ))}
-                    <div class="ml-auto flex items-center gap-2">
-                      <button class="pp-lang-toggle text-xs px-2.5 py-1 rounded-lg bg-[#2E2E30] text-[#6B6B65] hover:text-emerald-400 transition-all" data-ep-id={ep.id} data-lang="both" title="ტექსტის ენა">🇬🇧+🇬🇪</button>
-                      <button class="mark-podcast-btn inline-flex items-center gap-1 border border-[#6B6B65] rounded-lg px-3 py-1 text-xs text-[#6B6B65] hover:border-green-400 hover:text-green-400 transition-colors" data-podcast={ep.title}>✓ მოსმენილია</button>
-                    </div>
+                  </div>
+                  <div class="flex items-center gap-2 mt-2">
+                    <button class="pp-lang-toggle text-xs px-2.5 py-1.5 rounded-lg bg-[#2E2E30] text-[#6B6B65] hover:text-emerald-400 transition-all min-h-[36px]" data-ep-id={ep.id} data-lang="both" title="ტექსტის ენა">🇬🇧+🇬🇪</button>
+                    <button class="mark-podcast-btn inline-flex items-center gap-1 border border-[#6B6B65] rounded-lg px-3 py-1.5 text-xs text-[#6B6B65] hover:border-green-400 hover:text-green-400 transition-colors min-h-[36px]" data-podcast={ep.title}>✓ მოსმენილია</button>
                   </div>
                 </div>
 
@@ -861,7 +859,7 @@ const episodes = [
                           <div class="grid grid-cols-1 gap-2">
                             {item.options.map((opt, oi) => (
                               <button
-                                class="pq-opt text-left w-full text-sm px-4 py-2.5 rounded-xl bg-[#242426] border border-white/10 border-b-4 border-b-white/5 hover:bg-[#2E2E30] active:border-b-2 active:mt-[2px] transition-all font-medium"
+                                class="pq-opt text-left w-full text-sm px-4 py-3 rounded-xl bg-[#242426] border border-white/10 border-b-4 border-b-white/5 hover:bg-[#2E2E30] active:border-b-2 active:mt-[2px] transition-all font-medium min-h-[48px]"
                                 data-ep={ep.id}
                                 data-qi={qi}
                                 data-oi={oi}

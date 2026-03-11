@@ -63,6 +63,7 @@ import Layout from '../layouts/Layout.astro';
       grid-template-columns: repeat(2, 1fr);
       gap: 12px;
     }
+    @media (min-width: 480px) { .achievement-grid { grid-template-columns: repeat(3, 1fr); } }
     @media (min-width: 640px) { .achievement-grid { grid-template-columns: repeat(5, 1fr); } }
     .badge-card {
       background: #1e1e22;
@@ -123,10 +124,10 @@ import Layout from '../layouts/Layout.astro';
     /* Heatmap */
     .heatmap-grid {
       display: grid;
-      grid-template-columns: repeat(13, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       gap: 3px;
     }
-    @media (min-width: 640px) { .heatmap-grid { gap: 4px; } }
+    @media (min-width: 640px) { .heatmap-grid { grid-template-columns: repeat(13, 1fr); gap: 4px; } }
     .heatmap-cell {
       aspect-ratio: 1;
       border-radius: 3px;

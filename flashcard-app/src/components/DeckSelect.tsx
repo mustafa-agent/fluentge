@@ -6,7 +6,7 @@ import { getTotalXP, calculateLevel, getCurrentStreak, getDailyCardGoal, setDail
 import { getDueCount, getTotalDueCards } from '../lib/srs-engine';
 
 interface Props {
-  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'fillin' | 'reading' | 'speaking' | 'daily') => void;
+  onSelect: (deck: Deck, mode?: 'study' | 'quiz' | 'typing' | 'srs' | 'reverse' | 'mixed' | 'sentence' | 'listening' | 'fillin' | 'reading' | 'speaking' | 'writing' | 'daily') => void;
 }
 
 const modes = [
@@ -21,6 +21,7 @@ const modes = [
   { id: 'fillin' as const, label: 'შევსება', icon: '📝', desc: 'შეავსე გამოტოვებული · +10 XP' },
   { id: 'reading' as const, label: 'კითხვა', icon: '📖', desc: 'წაიკითხე და უპასუხე · +15 XP' },
   { id: 'speaking' as const, label: 'გამოთქმა', icon: '🎤', desc: 'თქვი სიტყვა · +10 XP' },
+  { id: 'writing' as const, label: 'თარგმნა', icon: '✏️', desc: 'დაწერე ინგლისურად · +15 XP' },
 ];
 
 export default function DeckSelect({ onSelect }: Props) {
@@ -240,7 +241,7 @@ export default function DeckSelect({ onSelect }: Props) {
       <button
         onClick={() => {
           // Launch Daily Lesson
-          loadDeck('top-2000-words').then(deck => {
+          loadDeck('top-2000').then(deck => {
             if (deck) onSelect(deck, 'daily');
           });
         }}

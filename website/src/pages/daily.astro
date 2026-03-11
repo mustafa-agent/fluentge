@@ -405,7 +405,7 @@ import Layout from '../layouts/Layout.astro';
       optsDiv.innerHTML = '';
       q.opts.forEach((opt, i) => {
         const btn = document.createElement('button');
-        btn.className = 'w-full text-left px-5 py-3.5 rounded-xl bg-[#1C1C1E] border border-[#2E2E30] hover:border-[#505050] transition-all text-sm font-medium';
+        btn.className = 'w-full text-left px-5 py-3.5 rounded-xl bg-[#1C1C1E] border border-[#2E2E30] hover:border-[#505050] transition-all text-sm font-medium min-h-[48px]';
         btn.textContent = opt;
         btn.onclick = () => selectAnswer(i);
         optsDiv.appendChild(btn);

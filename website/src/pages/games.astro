@@ -71,7 +71,7 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="text-sm font-bold uppercase tracking-widest text-green-400">🆓 უფასო თამაშები</h2>
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-green-500/20 to-transparent"></div>
       </div>
-      <div id="free-games" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
+      <div id="free-games" class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4"></div>
     </div>
 
     <!-- Category: Vocabulary Games -->
@@ -112,23 +112,23 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Active Game Area -->
   <div id="game-overlay" class="hidden fixed inset-0 z-40 bg-[#1C1C1E] overflow-y-auto">
-    <div class="max-w-xl mx-auto px-4 pt-8 pb-6 min-h-screen">
+    <div class="max-w-xl mx-auto px-3 sm:px-4 pt-4 sm:pt-8 pb-6 min-h-screen">
       <!-- Game Header Bar -->
-      <div class="mb-6">
-        <div class="flex items-center justify-between mb-4">
-          <button id="back-btn" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-4 py-2.5 text-[#A0A09A] hover:text-[#F5F5F0] transition-all duration-200">
+      <div class="mb-4 sm:mb-6">
+        <div class="flex items-center justify-between mb-3 sm:mb-4 gap-2">
+          <button id="back-btn" class="flex items-center gap-1.5 sm:gap-2 bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] rounded-xl px-3 sm:px-4 py-2.5 text-[#A0A09A] hover:text-[#F5F5F0] transition-all duration-200 min-h-[44px] shrink-0">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
-            <span class="font-medium">უკან</span>
+            <span class="font-medium text-sm">უკან</span>
           </button>
-          <div id="game-xp-display" class="flex items-center gap-3 bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-2.5">
-            <div class="flex items-center gap-1.5">
-              <span class="text-yellow-400 text-base">⭐</span>
-              <span class="text-sm font-bold text-[#F5F5F0]" id="gx-xp">0</span>
-              <span class="text-xs text-[#6B6B65]">XP</span>
+          <div id="game-xp-display" class="flex items-center gap-2 sm:gap-3 bg-[#242426] border border-[#2E2E30] rounded-xl px-3 sm:px-4 py-2 sm:py-2.5">
+            <div class="flex items-center gap-1">
+              <span class="text-yellow-400 text-sm sm:text-base">⭐</span>
+              <span class="text-xs sm:text-sm font-bold text-[#F5F5F0]" id="gx-xp">0</span>
+              <span class="text-[10px] sm:text-xs text-[#6B6B65]">XP</span>
             </div>
-            <div class="flex items-center gap-1.5">
-              <span class="text-purple-400 text-base">🏆</span>
-              <span class="text-sm font-bold text-[#F5F5F0]">Lv.<span id="gx-level">1</span></span>
+            <div class="flex items-center gap-1">
+              <span class="text-purple-400 text-sm sm:text-base">🏆</span>
+              <span class="text-xs sm:text-sm font-bold text-[#F5F5F0]">Lv.<span id="gx-level">1</span></span>
             </div>
           </div>
         </div>
@@ -180,6 +180,28 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <style>
+    /* Difficulty selection buttons */
+    .diff-btn {
+      background: #242426;
+      border: 2px solid #2E2E30;
+      border-radius: 1rem;
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .diff-btn:hover {
+      border-color: var(--diff-color, #C8C8C0);
+      background: #2E2E30;
+    }
+    .diff-btn-selected {
+      border-color: var(--diff-color, #C8C8C0);
+      background: color-mix(in srgb, var(--diff-color, #C8C8C0) 10%, #242426);
+      box-shadow: 0 0 12px color-mix(in srgb, var(--diff-color, #C8C8C0) 20%, transparent);
+    }
+    html.light .diff-btn { background: #fff; border-color: rgba(0,0,0,0.1); }
+    html.light .diff-btn:hover { background: #f5f5f5; }
+    html.light .diff-btn-selected { background: color-mix(in srgb, var(--diff-color) 8%, #fff); }
+
     .game-card {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       border-bottom-width: 4px;
@@ -463,15 +485,109 @@ import Layout from '../layouts/Layout.astro';
     /* Responsive adjustments */
     @media (max-width: 640px) {
       .game-content {
-        padding: 1.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
       }
       .game-controls {
-        padding: 1rem;
+        padding: 0.75rem;
         flex-wrap: wrap;
+        gap: 0.5rem;
+        border-radius: 1rem;
       }
       .game-btn {
         font-size: 0.8rem;
-        padding: 0.625rem 1.25rem;
+        padding: 0.75rem 1rem;
+        min-height: 44px;
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      .game-option {
+        padding: 0.875rem 0.75rem;
+        font-size: 0.875rem;
+        min-height: 48px;
+        word-break: break-word;
+      }
+      .game-container {
+        padding: 0;
+      }
+      #game-overlay .max-w-xl {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 1rem;
+      }
+      #game-overlay #back-btn {
+        min-height: 44px;
+        min-width: 44px;
+      }
+      #game-overlay .grid.grid-cols-2 {
+        gap: 0.5rem;
+      }
+      /* Fix game header on mobile */
+      #game-header {
+        padding: 0.75rem;
+        border-radius: 1rem;
+      }
+      #game-header .flex.items-center.gap-4 {
+        gap: 0.75rem;
+      }
+      #gh-title {
+        font-size: 1rem;
+      }
+      /* Stats bar mobile */
+      #games-stats {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+      }
+      /* Game of day mobile */
+      #game-of-day {
+        padding: 1rem;
+      }
+      #game-of-day .flex.items-center.gap-5 {
+        gap: 0.75rem;
+      }
+      #game-of-day #god-icon {
+        width: 3rem;
+        height: 3rem;
+      }
+      #game-of-day #god-name {
+        font-size: 1rem;
+      }
+      /* Game card mobile */
+      .game-card .p-3 h3 {
+        font-size: 0.8rem;
+      }
+      .game-card .relative.h-28 {
+        height: 5.5rem;
+      }
+      /* Fix input fields on mobile */
+      .game-input, 
+      input[type="text"] {
+        font-size: 16px !important; /* prevents zoom on iOS */
+      }
+      /* Fix keyboard buttons (hangman) */
+      #hk button, .w-8.h-8 {
+        min-width: 28px;
+        min-height: 32px;
+      }
+      /* Fix scramble letter buttons */
+      .w-9.h-9 {
+        min-width: 36px;
+        min-height: 36px;
+      }
+    }
+    
+    @media (max-width: 374px) {
+      .game-btn {
+        font-size: 0.75rem;
+        padding: 0.625rem 0.75rem;
+      }
+      .game-option {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem;
+      }
+      #games-stats {
+        font-size: 0.75rem;
       }
     }
   </style>
@@ -955,6 +1071,80 @@ import Layout from '../layouts/Layout.astro';
       document.querySelectorAll('.game-completion').forEach(modal => modal.remove());
     };
 
+    // ============ DIFFICULTY SYSTEM ============
+    let gameDifficulty = 'medium'; // 'easy' | 'medium' | 'hard'
+    function getDifficultyConfig() {
+      return {
+        easy:   { label: 'მარტივი',  emoji: '🟢', items: 0.6, time: 1.5,  xpMult: 0.8, color: '#22c55e', desc: 'ნაკლები სიტყვა, მეტი დრო' },
+        medium: { label: 'საშუალო', emoji: '🟡', items: 1.0, time: 1.0,  xpMult: 1.0, color: '#eab308', desc: 'სტანდარტული სირთულე' },
+        hard:   { label: 'რთული',   emoji: '🔴', items: 1.5, time: 0.65, xpMult: 1.5, color: '#ef4444', desc: 'მეტი სიტყვა, ნაკლები დრო' },
+      };
+    }
+    // Get item count adjusted by difficulty
+    function diffItems(base) {
+      const cfg = getDifficultyConfig()[gameDifficulty];
+      return Math.max(3, Math.round(base * cfg.items));
+    }
+    // Get time adjusted by difficulty
+    function diffTime(base) {
+      const cfg = getDifficultyConfig()[gameDifficulty];
+      return Math.max(5, Math.round(base * cfg.time));
+    }
+    // Get XP adjusted by difficulty
+    function diffXP(base) {
+      const cfg = getDifficultyConfig()[gameDifficulty];
+      return Math.round(base * cfg.xpMult);
+    }
+
+    function showDifficultySelect(id, callback) {
+      const gameInfo = GAMES.find(g => g.id === id) || { name: 'თამაში', color: '#C8C8C0' };
+      const cfg = getDifficultyConfig();
+      const saved = localStorage.getItem('fluentge-game-difficulty') || 'medium';
+      
+      cont.innerHTML = `
+        <div class="max-w-sm mx-auto py-6 text-center">
+          <div class="text-4xl mb-3">🎮</div>
+          <h2 class="text-xl font-bold mb-1 text-[#F5F5F0]">${gameInfo.name}</h2>
+          <p class="text-sm text-[#A0A09A] mb-6">აირჩიე სირთულის დონე</p>
+          <div class="flex flex-col gap-3 mb-6" id="diff-options">
+            ${Object.entries(cfg).map(([key, c]) => `
+              <button data-diff="${key}" class="diff-btn ${key === saved ? 'diff-btn-selected' : ''}" style="--diff-color: ${c.color}">
+                <div class="flex items-center gap-3">
+                  <span class="text-2xl">${c.emoji}</span>
+                  <div class="text-left flex-1">
+                    <div class="font-bold text-[#F5F5F0]">${c.label}</div>
+                    <div class="text-xs text-[#A0A09A]">${c.desc}</div>
+                  </div>
+                  ${key === saved ? '<span class="text-xs bg-white/10 px-2 py-0.5 rounded-full text-[#C8C8C0]">ბოლო</span>' : ''}
+                </div>
+              </button>
+            `).join('')}
+          </div>
+          <button id="diff-start" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-green-600 to-emerald-500 border-b-4 border-green-700 font-bold text-white text-lg hover:brightness-110 transition-all active:border-b-2 active:translate-y-[2px]">
+            ▶ დაწყება
+          </button>
+        </div>
+      `;
+
+      // Selection logic
+      let selected = saved;
+      const btns = cont.querySelectorAll('.diff-btn');
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('diff-btn-selected'));
+          btn.classList.add('diff-btn-selected');
+          selected = btn.dataset.diff;
+        });
+      });
+
+      document.getElementById('diff-start').onclick = () => {
+        gameDifficulty = selected;
+        localStorage.setItem('fluentge-game-difficulty', selected);
+        cont.innerHTML = '';
+        callback();
+      };
+    }
+
     function openGame(id){
       overlay.classList.remove('hidden');
       document.body.style.overflow='hidden';
@@ -962,7 +1152,7 @@ import Layout from '../layouts/Layout.astro';
       _gameActive=true;
       
       const b={match:buildMatch,speed:buildSpeed,truefalse:buildTF,scramble:buildScramble,hangman:buildHangman,fillblank:buildFB,emojiquiz:buildEQ,memory:buildMem,typing:buildType,listening:buildListen,opposites:buildOpp,numbers:buildNum,daysmonths:buildDM,countries:buildCountry,foodquiz:buildFood,clothesquiz:buildClothes,rooms:buildRoom,emotionsquiz:buildEmo,family:buildFamily,travel:buildTravel,phrasesquiz:buildPhrases,movies:buildMovies,math:buildMath,routine:buildRoutine,spelling:buildSpelling,wordrace:buildWordRace,colorsquiz:buildColors,timequiz:buildTime,categories:buildCat,wordcatch:buildCatch};
-      if(b[id])b[id]();
+      if(b[id]) showDifficultySelect(id, () => b[id]());
     }
 
     // ============ GAME BUILDERS ============
@@ -992,7 +1182,21 @@ import Layout from '../layouts/Layout.astro';
       return isNew;
     }
 
-    // gameWrap function removed - replaced by createGameLayout
+    // gameWrap: simple wrapper used by most game builders
+    function gameWrap(title, desc, gameId) {
+      const gameInfo = GAMES.find(g => g.id === gameId) || {name: title, desc: desc, color: '#C8C8C0', icon: ''};
+      setGameHeader({
+        name: gameInfo.name || title,
+        description: gameInfo.desc || desc,
+        color: gameInfo.color || '#C8C8C0',
+        iconSvg: gameInfo.icon,
+        hasTimer: false,
+        hasProgress: false
+      });
+      const record = gameId ? getGameRecord(gameId) : 0;
+      cont.innerHTML = `<div class="game-container"><div class="game-content"><div id="game-wrap-content"></div></div></div>`;
+      return document.getElementById('game-wrap-content');
+    }
 
     function checkRecord(gameId,score){
       const isNew=saveGameRecord(gameId,score);
@@ -1001,7 +1205,8 @@ import Layout from '../layouts/Layout.astro';
     }
 
     function buildMatch(){
-      const layout = createGameLayout('დაკავშირება', 'დააკავშირე ინგლისური სიტყვა ქართულ თარგმანთან', 'match', {hasTimer: true, hasProgress: true, totalQuestions: 6});
+      const matchCount = diffItems(6);
+      const layout = createGameLayout('დაკავშირება', 'დააკავშირე ინგლისური სიტყვა ქართულ თარგმანთან', 'match', {hasTimer: true, hasProgress: true, totalQuestions: matchCount});
       let score=0,timer=0,int,selE=null,selK=null,cnt=0;
       
       layout.content.innerHTML = `
@@ -1031,13 +1236,13 @@ import Layout from '../layouts/Layout.astro';
         score=0;timer=0;cnt=0;selE=null;selK=null;
         updateGameScore(0);
         updateGameTimer(0);
-        updateGameProgress(0, 6);
+        updateGameProgress(0, matchCount);
         document.getElementById('mr').classList.add('hidden');
         
         if(int)clearInterval(int);
         int=setInterval(()=>{timer++;updateGameTimer(timer);},1000);
         
-        const r=sh(W).slice(0,6),es=sh(r),ks=sh(r);
+        const r=sh(W).slice(0,matchCount),es=sh(r),ks=sh(r);
         const ec=document.getElementById('ec'),kc=document.getElementById('kc');
         ec.innerHTML='';kc.innerHTML='';
         
@@ -1071,14 +1276,14 @@ import Layout from '../layouts/Layout.astro';
           score++;
           cnt++;
           updateGameScore(score);
-          updateGameProgress(cnt, 6);
+          updateGameProgress(cnt, matchCount);
           
           showAnswerFeedback(selE.b, true);
           showAnswerFeedback(selK.b, true);
           selE.b.classList.add('opacity-50','pointer-events-none');
           selK.b.classList.add('opacity-50','pointer-events-none');
           
-          if(cnt>=6){
+          if(cnt>=matchCount){
             clearInterval(int);
             const isNewRecord = checkRecord('match',score);
             setTimeout(() => {
@@ -1108,7 +1313,8 @@ import Layout from '../layouts/Layout.astro';
 
     function buildSpeed(){
       const layout = createGameLayout('სიჩქარის ქვიზი', '30 წამი გაქვს — რამდენ სიტყვას დაიმახსოვრებ?', 'speed', {hasTimer: true});
-      let sc=0,tl=30,si=null,gameStarted=false;
+      const speedTime = diffTime(30);
+      let sc=0,tl=speedTime,si=null,gameStarted=false;
       
       layout.content.innerHTML = `
         <div id="ss" class="text-center py-8">
@@ -1133,9 +1339,9 @@ import Layout from '../layouts/Layout.astro';
       `;
       
       function go(){
-        sc=0;tl=30;gameStarted=true;
+        sc=0;tl=speedTime;gameStarted=true;
         updateGameScore(0);
-        updateGameTimer(30);
+        updateGameTimer(speedTime);
         document.getElementById('ss').classList.add('hidden');
         document.getElementById('sp').classList.remove('hidden');
         document.getElementById('sg').style.display = 'none';

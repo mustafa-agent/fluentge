@@ -136,10 +136,10 @@ export default function DailyLesson({ onBack }: Props) {
 
   // Level-appropriate deck sources for each CEFR level
   const LEVEL_DECKS: Record<string, string[]> = {
-    'A1': ['greetings-basics', 'numbers-time', 'colors-shapes', 'family-people', 'animals', 'body-parts'],
-    'A2': ['daily-routines', 'food-drink', 'shopping-money', 'travel-transport', 'emotions-personality', 'clothing-fashion'],
-    'B1': ['work-business', 'technology', 'health-body', 'education', 'entertainment', 'nature-weather'],
-    'B2': ['politics-society', 'science-math', 'law-crime', 'environment-ecology', 'finance-banking', 'slang-informal'],
+    'A1': ['greetings', 'numbers', 'colors', 'family', 'animals', 'bodyparts'],
+    'A2': ['dailyroutines', 'food', 'shopping', 'travel', 'emotions', 'clothing'],
+    'B1': ['work', 'technology', 'health', 'education', 'entertainment', 'nature'],
+    'B2': ['politics', 'science', 'law', 'environment', 'finance', 'slang'],
   };
 
   async function generateSession() {
@@ -151,7 +151,7 @@ export default function DailyLesson({ onBack }: Props) {
 
     // Load cards from level-appropriate decks + always include top-2000
     let allLoadedCards: FlashCard[] = [];
-    let primaryDeckId = 'top-2000-words';
+    let primaryDeckId = 'top-2000';
 
     if (levelSources && levelSources.length > 0) {
       // Pick 2 random level-appropriate decks to mix in
@@ -162,12 +162,12 @@ export default function DailyLesson({ onBack }: Props) {
         if (d) allLoadedCards.push(...d.cards);
       }
       // Also load top-2000 for SRS reviews
-      const top2000 = await loadDeck('top-2000-words');
+      const top2000 = await loadDeck('top-2000');
       if (top2000) allLoadedCards.push(...top2000.cards);
-      primaryDeckId = picked[0] || 'top-2000-words';
+      primaryDeckId = picked[0] || 'top-2000';
     } else {
       // No level set — use top-2000 only (default behavior)
-      const deck = await loadDeck('top-2000-words');
+      const deck = await loadDeck('top-2000');
       if (!deck) { setLoading(false); return; }
       allLoadedCards = deck.cards;
     }
@@ -184,7 +184,7 @@ export default function DailyLesson({ onBack }: Props) {
     });
 
     setAllCards(cards);
-    const srsStore = getSRSStore('top-2000-words');
+    const srsStore = getSRSStore('top-2000');
     const now = Date.now();
 
     // Split cards into new (unseen) and due (SRS review)
@@ -326,7 +326,7 @@ export default function DailyLesson({ onBack }: Props) {
 
   function handleVocabRate(rating: Rating) {
     const round = rounds[currentRound];
-    const deckId = 'top-2000-words';
+    const deckId = 'top-2000';
     const store = getSRSStore(deckId);
     const key = round.card.english.toLowerCase();
     const updated = rateCard(store, key, rating);

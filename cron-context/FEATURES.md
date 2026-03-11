@@ -2,12 +2,14 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 9 night) — "Stability Hold — Wait for Tornike"
-- **⚠️ NO NEW FEATURES. Platform is launch-ready. Wait for Tornike.**
-- [ ] Light visual audit (Cron 2)
-- [ ] Content quality review (Cron 3)
-- [ ] Health + performance check (Cron 4)
-- [ ] Full QA pass (Cron 5)
+### 🎯 THIS SPRINT (Mar 11) — "Polish & Grow"
+- **Tornike said KEEP WORKING. Build, improve, polish!**
+- [ ] Profile page with avatar, stats, join date
+- [ ] Writing exercises — free-form prompts
+- [ ] Better homepage hero section + social proof
+- [ ] Premium page — FAQ, comparison table, testimonials
+- [ ] Game difficulty levels
+- [ ] Notification system for SRS reviews
 
 ### ✅ COMPLETED — Mar 8 Day Sprint (Launch Readiness)
 - [x] **🐛 All 10 Tornike bugs** — ✅ FIXED
@@ -119,7 +121,8 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-(none)
+- 🔄 **Writing exercises** — Free-form writing prompts (Cron 3, Mar 11)
+- 🔄 **Game difficulty levels** — Easy/Medium/Hard for all games (Cron 3, Mar 11)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

@@ -150,7 +150,7 @@ const levels = [
         const letters = ['A', 'B', 'C', 'D'];
         q.opts.forEach((opt, i) => {
           const btn = document.createElement('button');
-          btn.className = 'pt-opt flex items-center gap-3 bg-[#242426] border-2 border-[#2E2E30] hover:border-sky-400/50 rounded-xl px-5 py-4 text-left transition-all font-medium';
+          btn.className = 'pt-opt flex items-center gap-3 bg-[#242426] border-2 border-[#2E2E30] hover:border-sky-400/50 rounded-xl px-5 py-4 text-left transition-all font-medium min-h-[52px]';
           btn.innerHTML = `<span class="w-8 h-8 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#6B6B65]">${letters[i]}</span><span>${opt}</span>`;
           btn.onclick = () => selectAnswer(i);
           optsDiv.appendChild(btn);

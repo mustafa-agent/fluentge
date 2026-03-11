@@ -99,44 +99,34 @@ See DESIGN.md for current design rules and standards.
 
 ---
 
-## 🎯 Current Sprint (Mar 9 Night Cycle)
+## 🎯 Current Sprint (Mar 11 Night Cycle)
 
-### Theme: "Stability Hold — Wait for Tornike"
+### Theme: "Polish & Grow" — Tornike said KEEP WORKING!
 
-### CONTEXT: Previous Sprint Results (Mar 8 Day — "Launch Readiness & User Acquisition Prep")
-- ✅ About page full redesign (professional sales page)
-- ✅ SEO unique meta descriptions for all 8 pages
-- ✅ Premium page updated to 11 study modes
-- ✅ Final QA: 0 issues, all 200s, clean TS, 267KB bundle
+### Strategic State (Mar 11):
+FluentGe has **72+ React components, 11 study modes, 113 pages, 267KB bundle**. Platform is stable. Now IMPROVE it while we wait for payment/domain decisions.
 
-### Strategic State (Mar 9, 1:00 AM):
-FluentGe has **72+ React components, 11 study modes, 113 pages, 267KB bundle**. ALL bugs fixed. About page redesigned. SEO meta tags done. Platform is **STABLE, POLISHED, and LAUNCH-READY.**
+**✅ STABILITY HOLD ENDED. Tornike said "Keep working." Build, improve, polish!**
 
-**⚠️ CRITICAL DECISION: DO NOT MAKE MAJOR CHANGES.**
+### Still Needs Tornike (but don't block on it):
+1. **💳 Payment integration** — Need his bank details
+2. **🌐 Domain** — fluentge.ge or fluentge.com
+3. **🚀 Launch strategy** — Soft launch plan ready
 
-The platform has been stable for 24+ hours. Every change risks introducing regressions. Tornike is away. There is NO business reason to touch working code right now.
-
-### What's Blocking Launch (needs Tornike):
-1. **💳 Payment integration** — Need his bank details for BOG/TBC or Stripe
-2. **📣 Marketing plan** — Georgian Facebook groups, forums, TikTok, Instagram
-3. **🌐 Domain** — Consider buying fluentge.ge or fluentge.com
-4. **🚀 Launch strategy** — Soft launch to friends/family first?
-
-### Sprint Goals (Mar 9 Night) — CONSERVATIVE
-
-The crons tonight should do **light, non-destructive work only**:
-
-1. **Cron 2 (Design, 3AM):** Light audit — check a few pages visually, no code changes unless critical
-2. **Cron 3 (Features, 5AM):** Content review only — check grammar lesson quality, deck data accuracy. NO new features.
-3. **Cron 4 (Improvements, 7AM):** Verify site health, check Lighthouse scores. NO code changes unless critical.
-4. **Cron 5 (QA, 9AM):** Standard QA run — health checks, build verification, screenshot key pages.
+### Sprint Priorities:
+1. **Better homepage** — hero section, social proof, clear CTA
+2. **Premium page polish** — pricing presentation, FAQ, comparison
+3. **Profile page** — user stats, avatar, settings
+4. **Writing exercises** — new study mode
+5. **Game improvements** — difficulty levels, score tracking
+6. **Content expansion** — more decks, IELTS prep
 
 ### For Each Cron Tonight:
-- **Cron 1 (Strategy, 1:00AM):** Sprint planning, set conservative direction. ← YOU ARE HERE
-- **Cron 2 (Design, 3:00AM):** Visual spot-check. Only fix if something is broken.
-- **Cron 3 (Features, 5:00AM):** Content quality review. No new features.
-- **Cron 4 (Improvements, 7:00AM):** Health check + performance verification only.
-- **Cron 5 (QA, 9:00AM):** Full QA pass. Confirm everything still works.
+- **Cron 1 (Strategy, 1:00AM):** Sprint planning, competitive analysis
+- **Cron 2 (Design, 3:00AM):** Homepage hero redesign, premium page polish
+- **Cron 3 (Features, 5:00AM):** Build 2 new features from backlog
+- **Cron 4 (Improvements, 7:00AM):** Pick 2 UX improvements
+- **Cron 5 (QA, 9:00AM):** Test everything, fix any bugs
 
 ## Technical Specs
 

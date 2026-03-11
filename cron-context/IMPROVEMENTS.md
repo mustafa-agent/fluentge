@@ -55,11 +55,14 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 9 night) — "Stability Hold — Wait for Tornike"
-- **⚠️ NO CODE CHANGES unless something is broken.**
-- [ ] Visual spot-check (Cron 2)
-- [ ] Health + Lighthouse check (Cron 4)
-- [ ] Full QA (Cron 5)
+## 🎯 THIS SPRINT (Mar 11) — "Polish & Grow"
+- **Tornike said KEEP WORKING. Improve everything!**
+- [ ] Homepage hero — clear value prop, social proof, CTA
+- [ ] Premium page — better pricing, FAQ, feature comparison
+- [ ] Better navbar — clearer sections, active states
+- [ ] Related vocabulary sidebar on grammar pages
+- [ ] Optimize images (WebP conversion)
+- [ ] Accessibility audit (ARIA labels, keyboard nav)
 
 ### ✅ COMPLETED — Mar 8 (Launch Readiness)
 - [x] Light Mode Contrast ✅
