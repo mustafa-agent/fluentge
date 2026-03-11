@@ -128,7 +128,8 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-(none)
+- 🔄 🔔 Push notifications — browser notifications for SRS reviews + streak reminders (Cron 3, Mar 11)
+- 🔄 🎯 IELTS/TOEFL prep decks — new content category (Cron 3, Mar 11)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

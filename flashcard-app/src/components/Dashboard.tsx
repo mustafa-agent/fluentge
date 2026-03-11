@@ -6,6 +6,7 @@ import { useAllDecks } from '../lib/useDecks';
 import { getCardProgress, getCardsInState } from '../lib/spaced-repetition';
 import { getLocalStorageValue } from '../lib/storage';
 import Leaderboard from './Leaderboard';
+import NotificationSettings from './NotificationSettings';
 import ProgressChart from './ProgressChart';
 
 interface DashboardProps {
@@ -725,6 +726,9 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
             })}
           </div>
         </div>
+
+        {/* Notifications */}
+        <NotificationSettings />
 
         {/* Leaderboard */}
         <Leaderboard />

@@ -7,6 +7,23 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-11
 
+### Cron 2B — Design (1:30 PM)
+- **🏠 Homepage: Animated Social Proof Counter Bar:**
+  - 4-stat counter bar below hero: 5,250+ words, 65 grammar, 35 podcasts, 12 study modes
+  - Counters animate up on scroll (IntersectionObserver + requestAnimationFrame + cubic ease-out)
+  - Light mode support (dark text, adjusted bg gradient)
+- **🏠 Homepage: "How It Works" 3-Step Section:**
+  - 3 colorful 3D numbered circles (sky/green/amber with border-b-4)
+  - Steps: გაიგე დონე → ისწავლე ყოველდღე → გახდი ფლუენტი
+  - Placed before final CTA for better conversion flow
+- **💎 Premium Page: 11→12 Study Modes Updated:**
+  - Updated ALL references: title, description, hero stats, pricing cards, FAQ, comparison table
+  - Added "თარგმნის სავარჯიშო" (writing exercise) row to comparison table
+- **💎 Premium Page: Trust Badges:**
+  - 3 trust badges below pricing cards: 7-day guarantee, SSL secure, instant access
+  - Green/sky/amber color-coded pills
+- Deployed ✅, git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM)
 - **Sprint review:** "Polish & Grow" (Mar 11 morning) — 4 items shipped:
   - Writing Exercise (12th study mode) ✅

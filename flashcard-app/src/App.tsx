@@ -5,6 +5,7 @@ import OnboardingModal from './components/OnboardingModal';
 import { type Deck, loadDeck, loadAllCards } from './lib/deck-loader';
 import { deckIndex } from './lib/deck-index';
 import { loadFromCloud, syncToCloud, syncNow } from './lib/firebase-sync';
+import { initNotifications } from './lib/notifications';
 
 // Error Boundary to catch lazy-load failures and runtime crashes
 class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean; error?: Error }> {
@@ -106,6 +107,7 @@ export default function App() {
 
   useEffect(() => {
     loadFromCloud().catch(() => {});
+    initNotifications();
     const syncIv = setInterval(() => syncToCloud().catch(() => {}), 30000);
     const onBeforeUnload = () => syncToCloud().catch(() => {});
     window.addEventListener('beforeunload', onBeforeUnload);

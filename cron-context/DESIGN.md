@@ -63,7 +63,13 @@
 - [x] Audit ALL other pages for light mode visibility ✅ Feb 28
 - [x] Design streak/XP/daily goal components ✅ Feb 28
 
-### THIS SPRINT (Mar 8 day) — Cron 2 Tasks:
+### THIS SPRINT (Mar 11 day) — Cron 2 Tasks:
+- [x] **🏠 Homepage Counter Bar** — Animated 4-stat counter (5250+ words, 65 grammar, 35 podcasts, 12 modes). IntersectionObserver + eased animation. Light mode. ✅ Mar 11
+- [x] **🏠 Homepage "How It Works"** — 3-step flow with 3D numbered circles. Conversion section before CTA. ✅ Mar 11
+- [x] **💎 Premium 12 Modes** — Updated all 11→12 references + added writing exercise to comparison table. ✅ Mar 11
+- [x] **💎 Premium Trust Badges** — 7-day guarantee, SSL, instant access pills below pricing. ✅ Mar 11
+
+### COMPLETED (Mar 8 day) — Cron 2 Tasks:
 - [x] **🎨 About Page Redesign** — Full sales page: hero, stats, problem/solution, 6 feature cards, 4-step flow, CTA. Light+dark mode. ✅ Mar 8
 
 ### COMPLETED (Mar 8 night) — Cron 2 Tasks:

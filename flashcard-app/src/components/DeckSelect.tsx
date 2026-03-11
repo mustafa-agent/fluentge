@@ -445,6 +445,41 @@ export default function DeckSelect({ onSelect }: Props) {
         </button>
       )}
 
+      {/* IELTS/TOEFL Prep Section */}
+      <div className="mb-8">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-xs font-semibold text-indigo-400 bg-indigo-500/20 px-2 py-0.5 rounded-full">📋 IELTS / TOEFL</span>
+          <div className="h-px flex-1 bg-white/10"></div>
+        </div>
+        <div className="rounded-2xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 p-3 mb-3">
+          <p className="text-[12px] text-white/70 leading-relaxed">
+            <span className="text-indigo-400 font-bold">🎯 გამოცდისთვის მომზადება</span> — IELTS და TOEFL-ისთვის საჭირო ლექსიკა და ფრაზები
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-3">
+          {deckIndex.filter(d => ['ielts-reading', 'ielts-writing', 'toefl-speaking', 'academic-english'].includes(d.id)).map(meta => (
+            <button
+              key={meta.id}
+              onClick={() => setSelectedMeta(meta)}
+              className="relative overflow-hidden rounded-xl text-center transition-all hover:scale-[1.02] group"
+            >
+              <img src={meta.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-indigo-900/30"></div>
+              {deckDueCounts[meta.id] && (
+                <div className="absolute top-1.5 right-1.5 z-10 bg-amber-500 text-white text-[9px] font-bold min-w-[18px] h-[18px] rounded-full flex items-center justify-center px-1 shadow-lg">
+                  {deckDueCounts[meta.id]}
+                </div>
+              )}
+              <div className="relative p-3 overflow-hidden">
+                <span className="text-2xl block mb-1">{meta.icon}</span>
+                <p className="text-[11px] font-semibold leading-tight mb-1 text-white line-clamp-2 break-words">{meta.nameKa}</p>
+                <p className="text-[10px] text-indigo-300/80">{meta.cardCount} ბარათი</p>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Free decks */}
       <div className="flex items-center gap-2 mb-3">
         <span className="text-xs font-semibold text-green-400 bg-green-500/20 px-2 py-0.5 rounded-full">უფასო</span>

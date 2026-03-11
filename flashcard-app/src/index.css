@@ -1255,3 +1255,16 @@ html.light .we-feedback-good { background: rgba(34,197,94,0.06); color: #166534;
 html.light .we-feedback-ok { background: rgba(245,158,11,0.06); color: #92400e; }
 html.light .we-feedback-bad { background: rgba(239,68,68,0.06); color: #991b1b; }
 html.light .we-stat-card { background: #fff; border-color: rgba(0,0,0,0.06); }
+
+
+/* Notification Settings — Light Mode */
+html.light .notif-panel { background: #fff; border-color: rgba(0,0,0,0.08); }
+html.light .notif-panel h3 { color: #1a1a2e; }
+html.light .notif-panel p { color: #4a4a5a; }
+html.light .notif-panel .text-white\/80 { color: #1a1a2e; }
+html.light .notif-panel .text-white\/60 { color: #4a4a5a; }
+html.light .notif-panel .text-white\/50 { color: #6b7280; }
+html.light .notif-panel .text-white\/40 { color: #9ca3af; }
+html.light .notif-panel .text-white\/30 { color: #d1d5db; }
+html.light .notif-panel .bg-white\/10 { background: rgba(0,0,0,0.06); }
+html.light .notif-panel .bg-white\/20 { background: rgba(0,0,0,0.12); }
