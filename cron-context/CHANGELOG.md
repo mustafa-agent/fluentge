@@ -7,6 +7,32 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-11
 
+### Cron 1B — Strategy (11:30 AM)
+- **Sprint review:** "Polish & Grow" (Mar 11 morning) — 4 items shipped:
+  - Writing Exercise (12th study mode) ✅
+  - Game Difficulty Levels ✅
+  - Navbar Active States ✅
+  - Homepage Daily Lesson link fix ✅
+- **Strategic shift:** From feature addition → conversion & retention. 12 study modes is MORE than Duolingo (8 exercise types). Now the gap is: homepage doesn't sell, premium page doesn't convert, no push notifications to bring users back.
+- **Lingwing check:** Still practice-only, no SRS, no podcasts, no games. FluentGe clearly superior on features. But Lingwing has better first-impression UX — playful, immediate, fun. Our homepage needs that energy.
+- **New sprint:** "Conversion & Retention"
+  - Cron 2 → Homepage hero redesign (social proof, testimonials, clear CTA) + premium page overhaul
+  - Cron 3 → Push notifications system + IELTS prep decks
+  - Cron 4 → Game score tracking on dashboard + premium FAQ accordion
+  - Cron 5 → QA
+- Updated STRATEGY.md with new priorities
+
+### Cron 4 — Improvements (7:00 AM)
+- **🧭 Navbar Active States:**
+  - Desktop: current page gets white text, blue bottom border (2px #60a5fa), semibold weight
+  - Mobile: current page gets white text, blue left border (3px), left padding
+  - Uses `data-path` attributes + JS path matching (exact for `/`, startsWith for others)
+  - Works on all 9 nav links + mobile menu equivalents
+- **🔗 Homepage Returning Hero — Fixed Broken Link:**
+  - Daily Lesson CTA linked to `/daily/` (non-existent page) → fixed to `/flashcards/#daily-lesson`
+  - Returning users can now actually start their daily lesson from homepage
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **✏️ Writing Exercise (WritingExercise.tsx) — 12th study mode:**
   - 3 prompt types: translate (Georgian→English), complete (finish sentence), describe (use word in sentence)

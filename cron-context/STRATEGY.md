@@ -101,10 +101,10 @@ See DESIGN.md for current design rules and standards.
 
 ## 🎯 Current Sprint (Mar 11 Night Cycle)
 
-### Theme: "Polish & Grow" — Tornike said KEEP WORKING!
+### Theme: "Conversion & Retention" — Make users STAY and PAY
 
 ### Strategic State (Mar 11):
-FluentGe has **72+ React components, 11 study modes, 113 pages, 267KB bundle**. Platform is stable. Now IMPROVE it while we wait for payment/domain decisions.
+FluentGe has **72+ React components, 12 study modes, 113 pages, 267KB bundle**. Writing exercises and game difficulty added today. Platform is feature-rich. Now focus on CONVERSION (homepage → signup → premium) and RETENTION (notifications, streaks, social).
 
 **✅ STABILITY HOLD ENDED. Tornike said "Keep working." Build, improve, polish!**
 
@@ -113,19 +113,23 @@ FluentGe has **72+ React components, 11 study modes, 113 pages, 267KB bundle**. 
 2. **🌐 Domain** — fluentge.ge or fluentge.com
 3. **🚀 Launch strategy** — Soft launch plan ready
 
+### Competitive Edge vs Lingwing:
+- Lingwing: playful tone, practice-focused, NO SRS, NO podcasts, NO games, NO grammar drills
+- FluentGe: 12 study modes, SRS, 65 grammar lessons, 35 podcasts, 30 games, placement test, cloud sync
+- **We win on DEPTH. Now win on FIRST IMPRESSION (homepage) and STICKINESS (notifications, social proof).**
+
 ### Sprint Priorities:
-1. **Better homepage** — hero section, social proof, clear CTA
-2. **Premium page polish** — pricing presentation, FAQ, comparison
-3. **Profile page** — user stats, avatar, settings
-4. **Writing exercises** — new study mode
-5. **Game improvements** — difficulty levels, score tracking
-6. **Content expansion** — more decks, IELTS prep
+1. **🏠 Homepage hero redesign** — Social proof counters, clear value prop, testimonial carousel
+2. **💎 Premium page overhaul** — Pricing table, FAQ accordion, feature comparison, trust badges
+3. **🔔 SRS notification system** — Browser push notifications for review reminders
+4. **📊 Game score tracking** — Persistent high scores on dashboard
+5. **🎯 IELTS/TOEFL prep content** — New deck category for test prep
 
 ### For Each Cron Tonight:
 - **Cron 1 (Strategy, 1:00AM):** Sprint planning, competitive analysis
-- **Cron 2 (Design, 3:00AM):** Homepage hero redesign, premium page polish
-- **Cron 3 (Features, 5:00AM):** Build 2 new features from backlog
-- **Cron 4 (Improvements, 7:00AM):** Pick 2 UX improvements
+- **Cron 2 (Design, 3:00AM):** Homepage hero redesign + premium page overhaul
+- **Cron 3 (Features, 5:00AM):** Push notifications system + IELTS prep decks
+- **Cron 4 (Improvements, 7:00AM):** Game score tracking on dashboard + premium page FAQ
 - **Cron 5 (QA, 9:00AM):** Test everything, fix any bugs
 
 ## Technical Specs

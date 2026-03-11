@@ -208,6 +208,68 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
     })();
   </script>
 
+  <style is:global>
+    .light .counter { color: #1a1a2e !important; }
+    .light .counter-bar { background: linear-gradient(to right, rgba(14,165,233,0.08), rgba(34,197,94,0.08), rgba(245,158,11,0.08)); border-color: #e5e7eb !important; }
+    .light .hiw-step-num { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  </style>
+
+  <!-- Animated Social Proof Counter Bar -->
+  <section class="px-4 py-6 max-w-4xl mx-auto">
+    <div class="counter-bar bg-gradient-to-r from-sky-500/5 via-green-500/5 to-amber-500/5 border border-white/5 rounded-2xl px-6 py-5">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white counter" data-target="5250">0</div>
+          <div class="text-[10px] sm:text-xs text-[#6B6B65] font-medium mt-1 uppercase tracking-wider">სიტყვა</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white counter" data-target="65">0</div>
+          <div class="text-[10px] sm:text-xs text-[#6B6B65] font-medium mt-1 uppercase tracking-wider">გრამატიკა</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white counter" data-target="35">0</div>
+          <div class="text-[10px] sm:text-xs text-[#6B6B65] font-medium mt-1 uppercase tracking-wider">პოდკასტი</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white counter" data-target="12">0</div>
+          <div class="text-[10px] sm:text-xs text-[#6B6B65] font-medium mt-1 uppercase tracking-wider">სასწავლო რეჟიმი</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    // Animated counter
+    (function() {
+      var counters = document.querySelectorAll('.counter');
+      var animated = false;
+      function animateCounters() {
+        if (animated) return;
+        animated = true;
+        counters.forEach(function(el) {
+          var target = parseInt(el.getAttribute('data-target'), 10);
+          var duration = 1500;
+          var start = performance.now();
+          function tick(now) {
+            var elapsed = now - start;
+            var progress = Math.min(elapsed / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = Math.floor(eased * target);
+            el.textContent = current >= 1000 ? current.toLocaleString() + '+' : current.toString() + (target >= 100 ? '+' : '');
+            if (progress < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        });
+      }
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) { animateCounters(); observer.disconnect(); }
+        });
+      }, { threshold: 0.3 });
+      if (counters.length > 0) observer.observe(counters[0].parentElement.parentElement);
+    })();
+  </script>
+
   <!-- Onboarding CTA — Direct to Top 2000 -->
   <section class="px-4 pt-10 pb-2 max-w-2xl mx-auto" id="onboarding-cta">
     <!-- Primary: Top 2000 Hero CTA -->
@@ -332,6 +394,29 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
           </div>
         </div>
       ))}
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="px-4 py-16 max-w-4xl mx-auto">
+    <h2 class="font-['Playfair_Display',serif] text-2xl sm:text-3xl text-center mb-3">როგორ მუშაობს</h2>
+    <p class="text-center text-[#6B6B65] text-sm mb-12">3 ნაბიჯი ინგლისურის სწავლისკენ</p>
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="w-14 h-14 rounded-full bg-sky-500 text-white text-xl font-extrabold flex items-center justify-center mx-auto mb-4 border-b-4 border-sky-600">1</div>
+        <h3 class="font-bold text-base mb-2">გაიგე დონე</h3>
+        <p class="text-[#6B6B65] text-sm">გაიარე 2-წუთიანი ტესტი და გაიგე შენი ინგლისურის დონე — A1-დან C1-მდე.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-14 h-14 rounded-full bg-green-500 text-white text-xl font-extrabold flex items-center justify-center mx-auto mb-4 border-b-4 border-green-600">2</div>
+        <h3 class="font-bold text-base mb-2">ისწავლე ყოველდღე</h3>
+        <p class="text-[#6B6B65] text-sm">10 წუთი დღეში — ფლეშბარათები, თამაშები, გრამატიკა და პოდკასტი.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-14 h-14 rounded-full bg-amber-500 text-white text-xl font-extrabold flex items-center justify-center mx-auto mb-4 border-b-4 border-amber-600">3</div>
+        <h3 class="font-bold text-base mb-2">გახდი ფლუენტი</h3>
+        <p class="text-[#6B6B65] text-sm">SRS სისტემა უზრუნველყოფს, რომ ნასწავლ სიტყვებს ვერასდროს დაივიწყებ.</p>
+      </div>
     </div>
   </section>
 

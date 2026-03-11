@@ -3,7 +3,7 @@
 ## UX Improvements 🎯
 
 ### Navigation & Flow
-- [ ] Better navbar — clear sections, active state, mobile hamburger
+- [x] Better navbar — active state highlighting (desktop blue underline, mobile blue left border) ✅ Cron 4, Mar 11
 - [ ] Breadcrumbs on deep pages
 - [ ] "Back to..." buttons that make sense contextually
 - [x] Smoother page transitions ✅ Cron 4, Mar 5 (screen fade-in animation)
@@ -55,14 +55,13 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 11) — "Polish & Grow"
-- **Tornike said KEEP WORKING. Improve everything!**
-- [ ] Homepage hero — clear value prop, social proof, CTA
-- [ ] Premium page — better pricing, FAQ, feature comparison
-- [ ] Better navbar — clearer sections, active states
-- [ ] Related vocabulary sidebar on grammar pages
-- [ ] Optimize images (WebP conversion)
-- [ ] Accessibility audit (ARIA labels, keyboard nav)
+## 🎯 THIS SPRINT (Mar 11 Night) — "Conversion & Retention"
+- **Focus: Homepage sells, premium converts, users come back**
+- [ ] Homepage hero — social proof counters (users, words, lessons), testimonial carousel
+- [ ] Premium page — pricing table, FAQ accordion, free vs premium comparison
+- [ ] Game high scores on dashboard — persistent tracking
+- [ ] Premium FAQ accordion — answer common objections
+- [x] Better navbar — active states ✅ Cron 4, Mar 11
 
 ### ✅ COMPLETED — Mar 8 (Launch Readiness)
 - [x] Light Mode Contrast ✅

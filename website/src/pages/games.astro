@@ -9,9 +9,9 @@ import Layout from '../layouts/Layout.astro';
       <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-25"/>
       <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/60 to-[#1C1C1E]"></div>
     </div>
-    <div class="relative max-w-4xl mx-auto px-4 pt-24 pb-16 text-center">
-      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">სიტყვების თამაშები</h1>
-      <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto mb-6">ისწავლე ინგლისური სახალისო და ინტერაქტიული თამაშებით</p>
+    <div class="relative max-w-4xl mx-auto px-4 pt-16 sm:pt-24 pb-8 sm:pb-16 text-center">
+      <h1 class="font-['Playfair_Display',serif] text-2xl sm:text-4xl md:text-5xl mb-2 sm:mb-4 leading-tight">სიტყვების თამაშები</h1>
+      <p class="text-sm sm:text-lg text-[#A0A09A] max-w-xl mx-auto mb-4 sm:mb-6">ისწავლე ინგლისური სახალისო და ინტერაქტიული თამაშებით</p>
       <div class="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-5 py-2">
         <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
         <span class="text-sm text-[#C8C8C0]">3 უფასო თამაში</span>
@@ -22,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Games Stats Bar -->
-  <section class="max-w-5xl mx-auto px-4 pt-8">
+  <section class="max-w-5xl mx-auto px-4 pt-4 sm:pt-8">
     <div id="games-stats" class="flex items-center justify-center gap-4 sm:gap-6 bg-[#242426] border border-[#2E2E30] rounded-2xl px-4 py-3">
       <div class="flex items-center gap-1.5">
         <span class="text-yellow-400 text-lg">⭐</span>
@@ -48,7 +48,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Game of the Day Spotlight -->
-  <section class="max-w-5xl mx-auto px-4 pt-8">
+  <section class="max-w-5xl mx-auto px-4 pt-4 sm:pt-8">
     <div id="game-of-day" class="relative overflow-hidden bg-gradient-to-r from-indigo-600/20 via-purple-600/20 to-pink-600/20 border border-indigo-500/20 rounded-2xl p-6 sm:p-8 cursor-pointer hover:border-indigo-400/40 transition-all group">
       <div class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-widest bg-indigo-500/30 text-indigo-300 px-3 py-1 rounded-full">⭐ დღის თამაში</div>
       <div class="flex items-center gap-5">
@@ -63,10 +63,10 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Game Grid -->
-  <section class="max-w-5xl mx-auto px-4 py-8">
+  <section class="max-w-5xl mx-auto px-4 py-4 sm:py-8">
     <!-- Free Games Section -->
-    <div class="mb-10">
-      <div class="flex items-center gap-3 mb-6">
+    <div class="mb-6 sm:mb-10">
+      <div class="flex items-center gap-3 mb-4 sm:mb-6">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-green-500/20 to-transparent"></div>
         <h2 class="text-sm font-bold uppercase tracking-widest text-green-400">🆓 უფასო თამაშები</h2>
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-green-500/20 to-transparent"></div>
@@ -75,8 +75,8 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <!-- Category: Vocabulary Games -->
-    <div class="mb-10" id="cat-vocab">
-      <div class="flex items-center gap-3 mb-6">
+    <div class="mb-6 sm:mb-10" id="cat-vocab">
+      <div class="flex items-center gap-3 mb-4 sm:mb-6">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-500/20 to-transparent"></div>
         <h2 class="text-sm font-bold uppercase tracking-widest text-sky-400">📚 ლექსიკის თამაშები</h2>
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-sky-500/20 to-transparent"></div>
@@ -85,8 +85,8 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <!-- Category: Grammar & Skills -->
-    <div class="mb-10" id="cat-grammar">
-      <div class="flex items-center gap-3 mb-6">
+    <div class="mb-6 sm:mb-10" id="cat-grammar">
+      <div class="flex items-center gap-3 mb-4 sm:mb-6">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-violet-500/20 to-transparent"></div>
         <h2 class="text-sm font-bold uppercase tracking-widest text-violet-400">📝 გრამატიკა & უნარები</h2>
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-violet-500/20 to-transparent"></div>
@@ -95,8 +95,8 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <!-- Category: Fun & Challenge -->
-    <div class="mb-10" id="cat-fun">
-      <div class="flex items-center gap-3 mb-6">
+    <div class="mb-6 sm:mb-10" id="cat-fun">
+      <div class="flex items-center gap-3 mb-4 sm:mb-6">
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-amber-500/20 to-transparent"></div>
         <h2 class="text-sm font-bold uppercase tracking-widest text-amber-400">🎯 გართობა & გამოწვევა</h2>
         <div class="h-px flex-1 bg-gradient-to-r from-transparent via-amber-500/20 to-transparent"></div>
@@ -184,8 +184,8 @@ import Layout from '../layouts/Layout.astro';
     .diff-btn {
       background: #242426;
       border: 2px solid #2E2E30;
-      border-radius: 1rem;
-      padding: 1rem 1.25rem;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
       cursor: pointer;
       transition: all 0.2s;
     }
@@ -485,14 +485,15 @@ import Layout from '../layouts/Layout.astro';
     /* Responsive adjustments */
     @media (max-width: 640px) {
       .game-content {
-        padding: 1rem;
-        border-radius: 1rem;
+        padding: 0.75rem;
+        border-radius: 0.75rem;
+        margin-bottom: 0.75rem;
       }
       .game-controls {
-        padding: 0.75rem;
+        padding: 0.5rem;
         flex-wrap: wrap;
         gap: 0.5rem;
-        border-radius: 1rem;
+        border-radius: 0.75rem;
       }
       .game-btn {
         font-size: 0.8rem;
@@ -554,11 +555,21 @@ import Layout from '../layouts/Layout.astro';
         font-size: 1rem;
       }
       /* Game card mobile */
-      .game-card .p-3 h3 {
-        font-size: 0.8rem;
+      .game-card .p-3 {
+        padding: 0.5rem 0.75rem;
       }
-      .game-card .relative.h-28 {
-        height: 5.5rem;
+      .game-card .p-3 h3 {
+        font-size: 0.75rem;
+      }
+      .game-card .p-3 p {
+        font-size: 0.625rem;
+        margin-top: 0.125rem;
+      }
+      .game-card .relative.h-20 {
+        height: 4.5rem;
+      }
+      .game-card {
+        border-radius: 0.75rem;
       }
       /* Fix input fields on mobile */
       .game-input, 
@@ -1016,7 +1027,7 @@ import Layout from '../layouts/Layout.astro';
       const bgImg = GAME_IMAGES[g.id] || '';
       const rec = getGameRecord(g.id);
       card.innerHTML=`
-        <div class="relative h-28 sm:h-32 flex items-center justify-center overflow-hidden">
+        <div class="relative h-20 sm:h-32 flex items-center justify-center overflow-hidden">
           ${bgImg ? `<img src="${bgImg}" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" onerror="this.style.display='none'"/>` : ''}
           <div class="absolute inset-0 bg-gradient-to-t from-[#242426] via-[#242426]/50 to-transparent"></div>
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 opacity-80">${g.icon}</svg>
@@ -1102,11 +1113,11 @@ import Layout from '../layouts/Layout.astro';
       const saved = localStorage.getItem('fluentge-game-difficulty') || 'medium';
       
       cont.innerHTML = `
-        <div class="max-w-sm mx-auto py-6 text-center">
-          <div class="text-4xl mb-3">🎮</div>
-          <h2 class="text-xl font-bold mb-1 text-[#F5F5F0]">${gameInfo.name}</h2>
-          <p class="text-sm text-[#A0A09A] mb-6">აირჩიე სირთულის დონე</p>
-          <div class="flex flex-col gap-3 mb-6" id="diff-options">
+        <div class="max-w-sm mx-auto py-3 text-center">
+          <div class="text-3xl mb-2">🎮</div>
+          <h2 class="text-lg font-bold mb-1 text-[#F5F5F0]">${gameInfo.name}</h2>
+          <p class="text-sm text-[#A0A09A] mb-3">აირჩიე სირთულის დონე</p>
+          <div class="flex flex-col gap-2 mb-4" id="diff-options">
             ${Object.entries(cfg).map(([key, c]) => `
               <button data-diff="${key}" class="diff-btn ${key === saved ? 'diff-btn-selected' : ''}" style="--diff-color: ${c.color}">
                 <div class="flex items-center gap-3">
@@ -1317,10 +1328,10 @@ import Layout from '../layouts/Layout.astro';
       let sc=0,tl=speedTime,si=null,gameStarted=false;
       
       layout.content.innerHTML = `
-        <div id="ss" class="text-center py-8">
-          <div class="text-6xl mb-4">⚡</div>
-          <h3 class="text-xl font-bold text-[#F5F5F0] mb-2">მზად ხარ?</h3>
-          <p class="text-[#A0A09A] text-sm mb-6">30 წამში მაქსიმალურად ბევრი სიტყვის თარგმნა</p>
+        <div id="ss" class="text-center py-4">
+          <div class="text-4xl mb-2">⚡</div>
+          <h3 class="text-lg font-bold text-[#F5F5F0] mb-1">მზად ხარ?</h3>
+          <p class="text-[#A0A09A] text-sm mb-4">30 წამში მაქსიმალურად ბევრი სიტყვის თარგმნა</p>
         </div>
         <div id="sp" class="hidden">
           <p id="sw" class="text-2xl sm:text-3xl font-bold text-center mb-6 text-[#F5F5F0]"></p>
@@ -1406,12 +1417,12 @@ import Layout from '../layouts/Layout.astro';
       let sc=0,tot=0,correct,word,answered=false;
       
       layout.content.innerHTML = `
-        <div class="text-center mb-8">
-          <p id="te" class="text-2xl sm:text-3xl font-bold mb-4 text-[#F5F5F0]"></p>
-          <div class="text-[#6B6B65] text-lg mb-4">=</div>
-          <p id="tk" class="text-xl sm:text-2xl font-bold text-[#C8C8C0]"></p>
+        <div class="text-center mb-4">
+          <p id="te" class="text-xl sm:text-3xl font-bold mb-2 text-[#F5F5F0]"></p>
+          <div class="text-[#6B6B65] text-base mb-2">=</div>
+          <p id="tk" class="text-lg sm:text-2xl font-bold text-[#C8C8C0]"></p>
         </div>
-        <div id="tb" class="mb-4 min-h-[40px] flex items-center justify-center"></div>
+        <div id="tb" class="mb-3 min-h-[36px] flex items-center justify-center"></div>
         <div class="text-center text-sm">
           <span class="bg-[#C8C8C0]/10 border border-[#C8C8C0]/20 rounded-lg px-4 py-2 text-[#C8C8C0] font-bold">
             სწორი პასუხები: <span id="ts">0</span>/<span id="to">0</span>

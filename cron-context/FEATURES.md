@@ -2,14 +2,19 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 11) — "Polish & Grow"
-- **Tornike said KEEP WORKING. Build, improve, polish!**
-- [ ] Profile page with avatar, stats, join date
-- [x] Writing exercises — free-form prompts ✅ (Cron 3, Mar 11)
-- [ ] Better homepage hero section + social proof
-- [ ] Premium page — FAQ, comparison table, testimonials
+### 🎯 THIS SPRINT (Mar 11 Night) — "Conversion & Retention"
+- **Focus: Make users STAY and PAY**
+- [ ] 🏠 Homepage hero redesign — social proof counters, testimonial carousel, clear CTA
+- [ ] 💎 Premium page overhaul — pricing table, FAQ accordion, feature comparison
+- [ ] 🔔 Push notifications — browser notifications for SRS reviews + streak reminders
+- [ ] 📊 Game score tracking — persistent high scores visible on dashboard
+- [ ] 🎯 IELTS/TOEFL prep decks — new content category
+
+### ✅ COMPLETED — Mar 11 Day Sprint (Polish & Grow)
+- [x] Writing exercises — 12th study mode ✅ (Cron 3, Mar 11)
 - [x] Game difficulty levels ✅ (Cron 3, Mar 11)
-- [ ] Notification system for SRS reviews
+- [x] Navbar active states ✅ (Cron 4, Mar 11)
+- [x] Homepage daily lesson link fix ✅ (Cron 4, Mar 11)
 
 ### ✅ COMPLETED — Mar 8 Day Sprint (Launch Readiness)
 - [x] **🐛 All 10 Tornike bugs** — ✅ FIXED
