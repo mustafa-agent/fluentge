@@ -67,9 +67,9 @@
 - [x] **🔐 Login Page Visual Upgrade** — ✅ Mar 12
 - [x] **✨ Global Entrance Animations** — ✅ Mar 12
 
-### THIS SPRINT (Mar 12 night) — Cron 2 Tasks:
-- [ ] **🏠 Homepage Testimonial Carousel** — Auto-rotating testimonials (3-4 fake Georgian users), dot indicators, swipe on mobile, pause on hover. Social proof is the #1 missing conversion element.
-- [ ] **📧 Newsletter Signup Section** — Email capture below features section. Simple input + button. "მიიღე სასწავლო რჩევები ყოველ კვირას" (Get learning tips every week). Store emails in Firestore collection.
+### COMPLETED (Mar 12 night) — Cron 2 Tasks:
+- [x] **🏠 Homepage Testimonial Carousel** — ✅ Mar 12
+- [x] **📧 Newsletter Signup Section** — ✅ Mar 12
 
 ### COMPLETED (Mar 11 day) — Cron 2 Tasks:
 - [x] **🏠 Homepage Counter Bar** — Animated 4-stat counter (5250+ words, 65 grammar, 35 podcasts, 12 modes). IntersectionObserver + eased animation. Light mode. ✅ Mar 11

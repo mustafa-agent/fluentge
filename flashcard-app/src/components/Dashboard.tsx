@@ -473,6 +473,52 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           </a>
         </div>
 
+        {/* What's New */}
+        <div className="bg-[var(--color-card)] rounded-xl p-4">
+          <h2 className="text-lg font-bold mb-3 flex items-center gap-2">
+            🆕 რა არის ახალი
+          </h2>
+          <div className="space-y-3">
+            {[
+              { icon: '🗺️', title: 'სასწავლო გზები', desc: '3 სტრუქტურირებული გზა — დამწყებიდან მაღალ დონემდე', link: '/paths/', gradient: 'from-emerald-500 to-green-600', tag: 'ახალი' },
+              { icon: '📋', title: 'IELTS / TOEFL', desc: 'საგამოცდო ლექსიკა — 140 აკადემიური სიტყვა', link: '/flashcards/#ielts', gradient: 'from-indigo-500 to-blue-600', tag: 'ახალი' },
+              { icon: '🔔', title: 'შეხსენებები', desc: 'ჩართე push შეხსენებები SRS-ისთვის და რიგითობისთვის', link: null, gradient: 'from-amber-500 to-orange-600', tag: 'სცადე', scrollTo: 'notifications' },
+              { icon: '🏆', title: 'ლიდერბორდი', desc: 'შეჯიბრე სხვებთან — ყოველკვირეული რეიტინგი', link: null, gradient: 'from-purple-500 to-pink-600', tag: 'სცადე', scrollTo: 'leaderboard' },
+            ].filter(item => {
+              // Hide "What's New" items the user has dismissed
+              try {
+                const dismissed = JSON.parse(localStorage.getItem('fluentge-whats-new-dismissed') || '[]');
+                return !dismissed.includes(item.title);
+              } catch { return true; }
+            }).slice(0, 3).map(item => (
+              <div
+                key={item.title}
+                className="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-all group"
+                onClick={() => {
+                  if (item.link) {
+                    window.location.href = item.link;
+                  } else if (item.scrollTo) {
+                    const el = document.querySelector(`[data-section="${item.scrollTo}"]`);
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center text-xl flex-shrink-0 shadow-lg`}>
+                  {item.icon}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="font-semibold text-sm">{item.title}</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-green-500/20 text-green-400 font-bold uppercase">{item.tag}</span>
+                  </div>
+                  <div className="text-xs text-[var(--color-text-muted)] mt-0.5 truncate">{item.desc}</div>
+                </div>
+                <span className="text-[var(--color-text-muted)] group-hover:text-white transition-colors text-lg">→</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Achievements */}
         <div className="bg-[var(--color-card)] rounded-xl p-4">
           <h2 className="text-lg font-bold mb-1 flex items-center gap-2">
@@ -488,7 +534,7 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
               return (
                 <div
                   key={badge.id}
-                  className={`badge-card ${earned ? 'earned' : 'locked'} rounded-xl p-3 text-center transition-all`}
+                  className={`badge-card ${earned ? 'earned' : 'locked'} rounded-xl p-3 text-center transition-all relative`}
                 >
                   <div className={`badge-icon w-12 h-12 rounded-full mx-auto mb-2 flex items-center justify-center text-2xl ${
                     earned ? `bg-gradient-to-br ${badge.gradient} shadow-lg` : ''
@@ -501,6 +547,26 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
                   <div className="text-xs text-[var(--color-text-muted)] mt-0.5">
                     {badge.desc}
                   </div>
+                  {earned && (
+                    <button
+                      className="mt-2 text-[10px] px-2.5 py-1 rounded-full bg-sky-500/20 text-sky-400 hover:bg-sky-500/30 transition-colors font-bold"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const shareText = `🏅 FluentGe-ზე მივიღე "${badge.title}" მიღწევა! ${badge.desc} 🎉\n\nისწავლე ინგლისური: https://fluentge.pages.dev`;
+                        if (navigator.share) {
+                          navigator.share({ title: `FluentGe — ${badge.title}`, text: shareText, url: 'https://fluentge.pages.dev' }).catch(() => {});
+                        } else {
+                          navigator.clipboard.writeText(shareText).then(() => {
+                            const btn = e.currentTarget;
+                            btn.textContent = '✅ დაკოპირდა!';
+                            setTimeout(() => { btn.textContent = '📤 გაზიარება'; }, 2000);
+                          }).catch(() => {});
+                        }
+                      }}
+                    >
+                      📤 გაზიარება
+                    </button>
+                  )}
                 </div>
               );
             })}
@@ -750,10 +816,14 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
         </div>
 
         {/* Notifications */}
-        <NotificationSettings />
+        <div data-section="notifications">
+          <NotificationSettings />
+        </div>
 
         {/* Leaderboard */}
-        <Leaderboard />
+        <div data-section="leaderboard">
+          <Leaderboard />
+        </div>
       </div>
     </div>
   );

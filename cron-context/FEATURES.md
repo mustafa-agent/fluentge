@@ -17,10 +17,10 @@
 
 ### 🎯 THIS SPRINT (Mar 12 Night) — "Social & Shareability"
 - **Focus: Make users SHARE and come BACK daily**
-- [ ] 🔗 Achievement sharing — share badges/milestones to social media
-- [ ] 📧 Newsletter signup — email capture section on homepage
-- [ ] 🏠 Homepage testimonial carousel — auto-rotating testimonials
-- [ ] 📱 Dashboard "What's New" cards — surface paths, notifications, IELTS
+- [x] 🔗 Achievement sharing — share badges/milestones to social media ✅ (Cron 3, Mar 12)
+- [x] 📧 Newsletter signup — email capture section on homepage ✅ (Cron 2B, Mar 12)
+- [x] 🏠 Homepage testimonial carousel — auto-rotating testimonials ✅ (Cron 2B, Mar 12)
+- 🔄 📱 Dashboard "What's New" cards — surface paths, notifications, IELTS (Cron 3, Mar 12)
 - [ ] 🎨 Micro-interactions — consistent button feedback, celebrations across Astro pages
 
 ### ✅ COMPLETED — Mar 11 Day Sprint (Polish & Grow)

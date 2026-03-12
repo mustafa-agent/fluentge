@@ -7,6 +7,20 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-12
 
+### Cron 2B — Design (1:30 PM)
+- **🏠 Homepage Testimonial Carousel:**
+  - Replaced static 3-card grid with auto-rotating carousel (4 slides)
+  - 4 Georgian user testimonials with avatars, star ratings, names + cities
+  - Auto-rotates every 4 seconds, pauses on hover
+  - Touch swipe support for mobile (>50px threshold)
+  - Dot indicators with active state (blue, scaled up)
+  - Light mode CSS
+- **📧 Newsletter Signup Section:**
+  - Email capture between Features and How It Works sections
+  - Saves to Firestore `newsletter` collection (with localStorage fallback)
+  - 3D sky-blue submit button, success message, light mode CSS
+- Deployed ✅, git committed & pushed
+
 ### Cron 1B — Strategy (11:30 AM)
 - **Sprint review:** "Conversion & Retention" (Mar 11-12) — HIGHLY PRODUCTIVE ✅
   - Homepage: counter bar, "How It Works", returning user CTAs ✅
