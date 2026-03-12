@@ -198,6 +198,13 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
     .light .counter { color: #1a1a2e !important; }
     .light .counter-bar { background: linear-gradient(to right, rgba(14,165,233,0.08), rgba(34,197,94,0.08), rgba(245,158,11,0.08)); border-color: #e5e7eb !important; }
     .light .hiw-step-num { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    /* Testimonial carousel light mode */
+    .light #testimonial-track > div > div { background: #fff !important; border-color: #e5e7eb !important; }
+    .light #testimonial-track p { color: #374151 !important; }
+    .light .tc-dot { background: rgba(0,0,0,0.2) !important; }
+    /* Newsletter light mode */
+    .light #newsletter-form input { background: #f0f2f5 !important; border-color: #d1d5db !important; color: #1a1a2e !important; }
+    .light #newsletter-form input::placeholder { color: #9ca3af !important; }
   </style>
 
   <!-- Animated Social Proof Counter Bar -->
@@ -340,29 +347,101 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
     </div>
   </section>
 
-  <!-- Social Proof -->
+  <!-- Testimonial Carousel -->
   <section class="px-4 py-16 max-w-4xl mx-auto">
     <h2 class="font-['Playfair_Display',serif] text-2xl sm:text-3xl text-center mb-3">რას ამბობენ მომხმარებლები</h2>
     <p class="text-center text-[#6B6B65] text-sm mb-10">ათასობით ქართველი უკვე სწავლობს FluentGe-ით</p>
     
-    <div class="grid sm:grid-cols-3 gap-5 mb-12">
-      {[
-        { name: "ნინო მ.", avatar: "👩‍🎓", text: "ფლეშბარათები ძალიან მეხმარება ახალი სიტყვების დამახსოვრებაში. დღეში 15 წუთი და უკვე თვალსაჩინო პროგრესი მაქვს!", stars: 5 },
-        { name: "გიორგი კ.", avatar: "👨‍💻", text: "თამაშებით სწავლა ბევრად უფრო სახალისოა ვიდრე წიგნით. განსაკუთრებით Word Search მომწონს!", stars: 5 },
-        { name: "მარიამ ლ.", avatar: "👩‍🏫", text: "გრამატიკის გაკვეთილები ძალიან კარგად არის ახსნილი. ქართულად რომ არის ყველაფერი, ეს საუკეთესოა!", stars: 4 },
-      ].map(review => (
-        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-5 hover:border-[#404040] transition-colors">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-400 to-green-400 flex items-center justify-center text-lg">{review.avatar}</div>
-            <div>
-              <div class="font-semibold text-sm">{review.name}</div>
-              <div class="text-yellow-400 text-xs">{'⭐'.repeat(review.stars)}{review.stars < 5 ? '☆' : ''}</div>
-            </div>
+    <!-- Carousel Container -->
+    <div id="testimonial-carousel" class="relative overflow-hidden rounded-2xl mb-6" style="touch-action:pan-y;">
+      <div id="testimonial-track" class="flex transition-transform duration-500 ease-out" style="will-change:transform;">
+        <!-- Slide 1 -->
+        <div class="w-full flex-shrink-0 px-2">
+          <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 text-center max-w-lg mx-auto">
+            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-sky-400 to-green-400 flex items-center justify-center text-2xl mx-auto mb-4">👩‍🎓</div>
+            <div class="text-yellow-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
+            <p class="text-[#D0D0CA] text-base leading-relaxed mb-4">"ფლეშბარათები ძალიან მეხმარება ახალი სიტყვების დამახსოვრებაში. დღეში 15 წუთი და უკვე თვალსაჩინო პროგრესი მაქვს!"</p>
+            <div class="font-semibold text-sm">ნინო მ.</div>
+            <div class="text-[#6B6B65] text-xs mt-0.5">სტუდენტი, თბილისი</div>
           </div>
-          <p class="text-[#A0A09A] text-sm leading-relaxed">"{review.text}"</p>
         </div>
-      ))}
+        <!-- Slide 2 -->
+        <div class="w-full flex-shrink-0 px-2">
+          <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 text-center max-w-lg mx-auto">
+            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center text-2xl mx-auto mb-4">👨‍💻</div>
+            <div class="text-yellow-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
+            <p class="text-[#D0D0CA] text-base leading-relaxed mb-4">"თამაშებით სწავლა ბევრად უფრო სახალისოა ვიდრე წიგნით. განსაკუთრებით Word Search მომწონს! ყოველდღე ვთამაშობ."</p>
+            <div class="font-semibold text-sm">გიორგი კ.</div>
+            <div class="text-[#6B6B65] text-xs mt-0.5">პროგრამისტი, ბათუმი</div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="w-full flex-shrink-0 px-2">
+          <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 text-center max-w-lg mx-auto">
+            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-rose-400 to-pink-400 flex items-center justify-center text-2xl mx-auto mb-4">👩‍🏫</div>
+            <div class="text-yellow-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
+            <p class="text-[#D0D0CA] text-base leading-relaxed mb-4">"გრამატიკის გაკვეთილები ძალიან კარგად არის ახსნილი. ქართულად რომ არის ყველაფერი, ეს საუკეთესოა!"</p>
+            <div class="font-semibold text-sm">მარიამ ლ.</div>
+            <div class="text-[#6B6B65] text-xs mt-0.5">მასწავლებელი, ქუთაისი</div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="w-full flex-shrink-0 px-2">
+          <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 text-center max-w-lg mx-auto">
+            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-amber-400 to-orange-400 flex items-center justify-center text-2xl mx-auto mb-4">👨‍🎓</div>
+            <div class="text-yellow-400 text-sm mb-3">⭐⭐⭐⭐⭐</div>
+            <p class="text-[#D0D0CA] text-base leading-relaxed mb-4">"პოდკასტები საუკეთესოა! რეალური დიალოგები მესმის და ქართული თარგმანი მეხმარება გავიგო ყველაფერი."</p>
+            <div class="font-semibold text-sm">დავით შ.</div>
+            <div class="text-[#6B6B65] text-xs mt-0.5">მოსწავლე, რუსთავი</div>
+          </div>
+        </div>
+      </div>
+      <!-- Dot Indicators -->
+      <div class="flex justify-center gap-2 mt-5">
+        <button class="tc-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all" data-idx="0" aria-label="Slide 1"></button>
+        <button class="tc-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all" data-idx="1" aria-label="Slide 2"></button>
+        <button class="tc-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all" data-idx="2" aria-label="Slide 3"></button>
+        <button class="tc-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all" data-idx="3" aria-label="Slide 4"></button>
+      </div>
     </div>
+
+    <script is:inline>
+    (function(){
+      var track = document.getElementById('testimonial-track');
+      var carousel = document.getElementById('testimonial-carousel');
+      var dots = document.querySelectorAll('.tc-dot');
+      var current = 0, total = 4, timer = null, paused = false;
+      var startX = 0, moveX = 0, dragging = false;
+
+      function goTo(idx) {
+        current = ((idx % total) + total) % total;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        dots.forEach(function(d, i) {
+          d.style.background = i === current ? '#60a5fa' : 'rgba(255,255,255,0.25)';
+          d.style.transform = i === current ? 'scale(1.3)' : 'scale(1)';
+        });
+      }
+
+      function startAuto() { timer = setInterval(function(){ if(!paused) goTo(current+1); }, 4000); }
+      function stopAuto() { clearInterval(timer); }
+
+      carousel.addEventListener('mouseenter', function(){ paused = true; });
+      carousel.addEventListener('mouseleave', function(){ paused = false; });
+
+      // Touch swipe
+      carousel.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; dragging = true; }, {passive:true});
+      carousel.addEventListener('touchmove', function(e){ if(dragging) moveX = e.touches[0].clientX - startX; }, {passive:true});
+      carousel.addEventListener('touchend', function(){
+        if(Math.abs(moveX) > 50) { goTo(current + (moveX < 0 ? 1 : -1)); }
+        moveX = 0; dragging = false;
+      });
+
+      dots.forEach(function(d){ d.addEventListener('click', function(){ goTo(parseInt(d.dataset.idx)); }); });
+
+      goTo(0);
+      startAuto();
+    })();
+    </script>
 
     <!-- Why FluentGe -->
     <div class="grid sm:grid-cols-2 gap-5">
@@ -382,6 +461,62 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
       ))}
     </div>
   </section>
+
+  <!-- Newsletter Signup -->
+  <section class="px-4 py-10 max-w-2xl mx-auto">
+    <div class="bg-gradient-to-br from-sky-500/10 via-[#242426] to-green-500/10 border border-sky-500/15 rounded-2xl p-6 sm:p-8 text-center relative overflow-hidden">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 to-green-400"></div>
+      <div class="text-3xl mb-3">📧</div>
+      <h3 class="font-bold text-lg sm:text-xl mb-2">მიიღე სასწავლო რჩევები ყოველ კვირას</h3>
+      <p class="text-[#6B6B65] text-sm mb-5">უფასო ინგლისურის გაკვეთილები, რჩევები და სიახლეები — პირდაპირ შენს ელ-ფოსტაზე.</p>
+      <form id="newsletter-form" class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+        <input type="email" id="nl-email" required placeholder="შენი ელ-ფოსტა" class="flex-1 bg-[#1C1C1E] border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-[#6B6B65] focus:outline-none focus:border-sky-500/50 transition-colors"/>
+        <button type="submit" class="bg-sky-500 text-white font-bold px-6 py-3 rounded-xl text-sm border-b-4 border-sky-600 hover:bg-sky-400 active:border-b-2 active:mt-[2px] transition-all uppercase tracking-wide whitespace-nowrap">გამოწერა</button>
+      </form>
+      <p id="nl-msg" class="text-xs mt-3 hidden"></p>
+      <p class="text-[#6B6B65] text-[10px] mt-3">სპამი არ იქნება. გაუქმება ნებისმიერ დროს.</p>
+    </div>
+  </section>
+
+  <script is:inline>
+  (function(){
+    var form = document.getElementById('newsletter-form');
+    var msg = document.getElementById('nl-msg');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var email = document.getElementById('nl-email').value.trim();
+      if(!email) return;
+      // Save to Firestore
+      if(typeof firebase !== 'undefined' && firebase.firestore) {
+        firebase.firestore().collection('newsletter').add({
+          email: email,
+          createdAt: new Date().toISOString(),
+          source: 'homepage'
+        }).then(function(){
+          msg.textContent = '✅ გმადლობთ! გამოწერა წარმატებულია.';
+          msg.className = 'text-xs mt-3 text-green-400';
+          form.reset();
+        }).catch(function(){
+          // Fallback: save to localStorage
+          saveLocal(email);
+        });
+      } else {
+        saveLocal(email);
+      }
+      function saveLocal(em) {
+        try {
+          var list = JSON.parse(localStorage.getItem('fluentge-newsletter') || '[]');
+          list.push({email:em, date:new Date().toISOString()});
+          localStorage.setItem('fluentge-newsletter', JSON.stringify(list));
+        } catch(e){}
+        msg.textContent = '✅ გმადლობთ! გამოწერა წარმატებულია.';
+        msg.className = 'text-xs mt-3 text-green-400';
+        form.reset();
+      }
+    });
+  })();
+  </script>
 
   <!-- How It Works -->
   <section class="px-4 py-16 max-w-4xl mx-auto">

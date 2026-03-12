@@ -55,13 +55,25 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 11 Night) — "Conversion & Retention"
-- **Focus: Homepage sells, premium converts, users come back**
-- [ ] Homepage hero — social proof counters (users, words, lessons), testimonial carousel
-- [ ] Premium page — pricing table, FAQ accordion, free vs premium comparison
-- [x] Game high scores on dashboard — persistent tracking ✅ Cron 4B, Mar 11
-- [x] Premium FAQ expansion — 3 new objection-handling questions ✅ Cron 4B, Mar 11
-- [x] Better navbar — active states ✅ Cron 4, Mar 11
+## 🎯 THIS SPRINT (Mar 12 Night) — "Social & Shareability"
+- **Focus: Sharing, daily engagement loops, Astro page polish**
+- [ ] Homepage testimonial carousel (auto-rotating with dots/arrows)
+- [ ] Newsletter/email capture section on homepage
+- [ ] Achievement sharing buttons (copy link / share to social)
+- [ ] Dashboard "What's New" discovery cards
+- [ ] Micro-interaction audit across all Astro pages (button press, success states)
+
+### ✅ COMPLETED — Mar 11-12 Sprint (Conversion & Retention)
+- [x] Homepage counter bar + "How It Works" ✅ Cron 2B, Mar 11
+- [x] Premium trust badges + FAQ ✅ Cron 2B+4B, Mar 11
+- [x] Game high scores ✅ Cron 4B, Mar 11
+- [x] Active navbar states ✅ Cron 4, Mar 11
+- [x] Learning Paths page ✅ Cron 3, Mar 12
+- [x] Weekly Leaderboard ✅ Cron 3, Mar 12
+- [x] Login visual upgrade ✅ Cron 2, Mar 12
+- [x] Global entrance animations ✅ Cron 2, Mar 12
+- [x] Grammar level progress bars ✅ Cron 4, Mar 12
+- [x] Homepage returning user CTAs ✅ Cron 4, Mar 12
 
 ### ✅ COMPLETED — Mar 8 (Launch Readiness)
 - [x] Light Mode Contrast ✅
@@ -90,6 +102,10 @@
 
 ## In Progress 🔄
 (none)
+
+## ✅ COMPLETED — Mar 12 (Cron 4, 7:00 AM)
+- [x] Homepage returning user CTAs — Daily Lesson + SRS Review buttons (was empty after removals) ✅
+- [x] Grammar level progress bars — per-level completion counter + animated progress bar, light mode ✅
 
 ## Completed This Sprint ✅ (Mar 6 night)
 - Placement→Personalized flow ✅ Cron 4 (level-specific gradient CTA, updated href)

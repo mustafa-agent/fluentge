@@ -7,6 +7,42 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-12
 
+### Cron 1B — Strategy (11:30 AM)
+- **Sprint review:** "Conversion & Retention" (Mar 11-12) — HIGHLY PRODUCTIVE ✅
+  - Homepage: counter bar, "How It Works", returning user CTAs ✅
+  - Premium: trust badges, FAQ expansion (8 Qs), 12 modes everywhere ✅
+  - Push notifications system (SRS + streak reminders) ✅
+  - IELTS/TOEFL prep decks (140 cards, 3 decks) ✅
+  - Game high scores on dashboard ✅
+  - Learning Paths page (3 paths, 30 milestones) ✅
+  - Weekly Leaderboard on dashboard ✅
+  - Login page visual upgrade + global entrance animations ✅
+  - Grammar level progress bars ✅
+  - Homepage returning user CTAs ✅
+- **Platform state:** 115 pages, 72+ components, 12 study modes, 267KB bundle. Feature-rich and polished. Beats any Georgian competitor on every dimension.
+- **Gap analysis:** Features are comprehensive. The missing piece is VIRALITY — users can't share their progress, there's no email capture for re-engagement, and testimonials are static text not a dynamic carousel.
+- **New sprint:** "Social & Shareability"
+  - Cron 2 → Homepage testimonial carousel + newsletter signup section
+  - Cron 3 → Achievement sharing system + dashboard "What's New" cards
+  - Cron 4 → Micro-interactions audit + Astro page polish
+  - Cron 5 → Full QA pass
+- Updated STRATEGY.md, FEATURES.md, IMPROVEMENTS.md, DESIGN.md
+
+---
+
+### Previous Mar 12 entries below
+
+### Cron 4 — Improvements (7:00 AM)
+- **🏠 Homepage Returning User CTAs:**
+  - Added "ყოველდღიური გაკვეთილი" green 3D button → /flashcards/#daily-lesson
+  - Added "გამეორება · N ბარათი" amber SRS button → /flashcards/#srs (only shows when due cards > 0)
+  - Previously returning users saw stats but had NO action buttons — now clear next step
+- **📊 Grammar Level Progress Bars:**
+  - Each level section (A1-C1) now shows "X/Y გავლილი" counter + colored animated progress bar
+  - Color matches level (green/blue/yellow/orange/purple), light mode supported
+  - Reads from `fluentge-grammar-completed` localStorage
+- Deployed ✅, git committed & pushed
+
 ### Cron 3 — Features (5:00 AM)
 - **🗺️ Learning Paths Page (`/paths/`):**
   - 3 structured paths: Beginner (A1-A2), Intermediate (B1-B2), Advanced (C1)

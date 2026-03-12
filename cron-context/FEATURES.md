@@ -2,13 +2,26 @@
 
 ## Priority: HIGH 🔴
 
-### 🎯 THIS SPRINT (Mar 11 Night) — "Conversion & Retention"
-- **Focus: Make users STAY and PAY**
-- [ ] 🏠 Homepage hero redesign — social proof counters, testimonial carousel, clear CTA
-- [ ] 💎 Premium page overhaul — pricing table, FAQ accordion, feature comparison
-- [x] 🔔 Push notifications — browser notifications for SRS reviews + streak reminders ✅ (Cron 3, Mar 11)
-- [ ] 📊 Game score tracking — persistent high scores visible on dashboard
-- [x] 🎯 IELTS/TOEFL prep decks — new content category ✅ (Cron 3, Mar 11)
+### ✅ COMPLETED — Mar 11-12 Sprint (Conversion & Retention)
+- [x] 🏠 Homepage counter bar + "How It Works" ✅
+- [x] 💎 Premium trust badges + FAQ expansion + 12 modes ✅
+- [x] 🔔 Push notifications ✅ (Cron 3, Mar 11)
+- [x] 📊 Game high scores on dashboard ✅ (Cron 4B, Mar 11)
+- [x] 🎯 IELTS/TOEFL prep decks ✅ (Cron 3, Mar 11)
+- [x] 🗺️ Learning Paths page ✅ (Cron 3, Mar 12)
+- [x] 🏆 Weekly Leaderboard ✅ (Cron 3, Mar 12)
+- [x] 🔐 Login visual upgrade ✅ (Cron 2, Mar 12)
+- [x] ✨ Global entrance animations ✅ (Cron 2, Mar 12)
+- [x] 📊 Grammar level progress bars ✅ (Cron 4, Mar 12)
+- [x] 🏠 Homepage returning user CTAs ✅ (Cron 4, Mar 12)
+
+### 🎯 THIS SPRINT (Mar 12 Night) — "Social & Shareability"
+- **Focus: Make users SHARE and come BACK daily**
+- [ ] 🔗 Achievement sharing — share badges/milestones to social media
+- [ ] 📧 Newsletter signup — email capture section on homepage
+- [ ] 🏠 Homepage testimonial carousel — auto-rotating testimonials
+- [ ] 📱 Dashboard "What's New" cards — surface paths, notifications, IELTS
+- [ ] 🎨 Micro-interactions — consistent button feedback, celebrations across Astro pages
 
 ### ✅ COMPLETED — Mar 11 Day Sprint (Polish & Grow)
 - [x] Writing exercises — 12th study mode ✅ (Cron 3, Mar 11)
