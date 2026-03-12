@@ -5,6 +5,17 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-13
+
+### Cron 1 — Strategy (1:00 AM)
+- **⚠️ CRITICAL RULE enforced:** NO NEW FEATURES. Removed "Social & Shareability" sprint from IMPROVEMENTS.md.
+- **QA audit (code-level):** All 9 pages return 200 ✅. TS clean ✅. 114 pages build clean ✅.
+- **BUG FOUND:** podcast.astro has ZERO `.light` mode CSS overrides — will look broken in light mode. Logged to QA-LOG.md.
+- **IMPROVEMENTS.md updated:** Sprint focus changed to "Bug Fixes & Design Polish ONLY"
+- **No code changes, no deploys.** Strategy-only run.
+
+---
+
 ## 2026-03-12
 
 ### Cron 3B — Features (3:30 PM)

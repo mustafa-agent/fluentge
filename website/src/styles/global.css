@@ -243,6 +243,45 @@ html.light #sub-modal .text-\[\#F5F5F0\] {
   color: #1A1A2E !important;
 }
 
+/* Override inline color:#F5F5F0 in game overlay */
+html.light #game-overlay,
+html.light #game-overlay * {
+  color: #1A1A2E;
+}
+/* Keep white text on colored backgrounds in games */
+html.light #game-overlay .bg-green-500,
+html.light #game-overlay .bg-red-500,
+html.light #game-overlay [style*="background:#22c55e"],
+html.light #game-overlay [style*="background:#ef4444"],
+html.light #game-overlay [style*="background:#16a34a"],
+html.light #game-overlay [style*="background:linear-gradient"] {
+  color: #FFFFFF !important;
+}
+/* Game header buttons */
+html.light #game-overlay #back-btn {
+  background: #FFFFFF !important;
+  border-color: #D1D5DB !important;
+  color: #1A1A2E !important;
+}
+/* Game overlay background */
+html.light #game-overlay {
+  background-color: #F5F5F0 !important;
+}
+/* Game option buttons with inline styles */
+html.light #gc button[style*="background:#2A2A2E"],
+html.light #gc button[style*="background:#242426"] {
+  background: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  color: #1A1A2E !important;
+}
+/* Category buttons in games */
+html.light #gc [style*="color:#F5F5F0"] {
+  color: #1A1A2E !important;
+}
+html.light #gc [style*="color:#A0A09A"] {
+  color: #6B7280 !important;
+}
+
 /* Game card backgrounds in light mode */
 html.light .game-card {
   background-color: #FFFFFF !important;
@@ -379,6 +418,26 @@ html.light #premiumModal .bg-\[\#1C1C1E\] {
 /* ========== ABOUT PAGE ========== */
 html.light .text-\[\#A0A09A\] {
   color: #6B7280 !important;
+}
+
+/* Help page gray text */
+html.light .text-\[\#a0a0a0\] {
+  color: #6B7280 !important;
+}
+
+/* Grammar explanation text */
+html.light .text-\[\#cbd5e1\] {
+  color: #374151 !important;
+}
+
+/* Gold accent — darken for light bg contrast */
+html.light .text-\[\#D4A853\] {
+  color: #92400e !important;
+}
+
+/* Indigo links — darken slightly */
+html.light .text-\[\#818cf8\] {
+  color: #6366f1 !important;
 }
 
 /* ========== PREMIUM PAGE ========== */

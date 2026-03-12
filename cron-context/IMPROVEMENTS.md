@@ -55,13 +55,12 @@
 - [ ] Touch-friendly button sizes (min 44px)
 - [ ] Bottom navigation for mobile?
 
-## 🎯 THIS SPRINT (Mar 12 Night) — "Social & Shareability"
-- **Focus: Sharing, daily engagement loops, Astro page polish**
-- [ ] Homepage testimonial carousel (auto-rotating with dots/arrows)
-- [ ] Newsletter/email capture section on homepage
-- [ ] Achievement sharing buttons (copy link / share to social)
-- [ ] Dashboard "What's New" discovery cards
-- [ ] Micro-interaction audit across all Astro pages (button press, success states)
+## 🎯 CURRENT FOCUS (Mar 13+) — "Bug Fixes & Design Polish ONLY"
+- **⚠️ NO NEW FEATURES per Tornike's order (Mar 12)**
+- [ ] Light mode audit — check all pages for contrast issues
+- [ ] Mobile layout review — check for overflow/spacing issues
+- [ ] Button/text readability check across all pages
+- [ ] Console error cleanup
 
 ### ✅ COMPLETED — Mar 11-12 Sprint (Conversion & Retention)
 - [x] Homepage counter bar + "How It Works" ✅ Cron 2B, Mar 11

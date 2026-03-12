@@ -1,9 +1,59 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-12 (9:00 AM)
-- **Status:** ✅ ALL CLEAR
-- **Issues Found:** 0
+- **Date:** 2026-03-13 (1:00 AM)
+- **Status:** ⚠️ 1 ISSUE FOUND
+- **Issues Found:** 1
+
+## Night QA Run (Mar 13, 1:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200, `/premium/` — 200, `/dashboard/` — 200, `/paths/` — 200, `/login/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 7.95s, no errors
+
+### Code Audit — Light Mode Coverage
+- Checked `.light` CSS override counts across all pages:
+  - index.astro: 8 ✅, games.astro: 27 ✅, premium.astro: 22 ✅, grammar.astro: 2 ✅
+  - flashcard index.css: 129 ✅
+  - **podcast.astro: 0 ❌** — NO light mode overrides at all
+- **BUG: Podcast page has zero light mode CSS.** Dark backgrounds, light text will be unreadable on white background.
+
+### Browser — ❌ Unavailable
+- No browser session available for visual testing
+
+### Verdict
+1 design bug found: podcast.astro missing all light mode CSS. All pages healthy (200), TS clean, build clean. **NO NEW FEATURES per critical rule (Mar 12).**
+
+## Evening QA Run (Mar 12, 7:30 PM)
+
+### HTTP Health Checks — ✅ All 200
+- `/` — 200, `/flashcards/` — 200, `/grammar/` — 200, `/games/` — 200, `/podcast/` — 200, `/premium/` — 200, `/dashboard/` — 200, `/paths/` — 200, `/login/` — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Homepage (light mode):** Hero, stats (5,250+), Top 2000 CTA, Word of Day, testimonials, How It Works, footer — all rendering ✅
+- **Flashcards (light mode):** 5 deck cards with background images, daily limit selector, progress bars, new/review buttons — all clean ✅
+- **Flashcards (dark mode):** Toggled via 🌙 button — dark background, cards readable, buttons visible — all clean ✅
+- **Grammar (dark mode):** All 5 levels (basics through bonus), sequential lock system, review CTA, premium CTA, footer — all rendering ✅
+- **Games (dark mode):** Stats bar, 3 category sections (ლექსიკა/გრამატიკა/გართობა), 30 game cards, recommendations — all clean ✅
+
+### Console — ✅ No Active Errors
+- One stale CSS error from earlier browser session (games.-WGRDv6W.css) — verified live site serves correct hash (games.xtEob4yI.css). Not a real issue.
+
+### Website Build — ✅ Clean
+- **114 pages** built in 7.67s, no errors
+
+### Verdict
+Evening QA Day 4. No code changes since morning. All pages 200, TS clean, browser visual tests pass in both light and dark mode. No bugs found. Platform remains LAUNCH-READY. ⚡
+
+---
 
 ## Morning QA Run (Mar 12, 9:00 AM)
 
