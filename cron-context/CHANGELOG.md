@@ -7,6 +7,23 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-12
 
+### Cron 3B — Features (3:30 PM)
+- **🔗 Achievement Sharing System:**
+  - Each earned badge gets a "📤 გაზიარება" share button
+  - Web Share API on mobile → native share sheet (Facebook, WhatsApp, Telegram, etc.)
+  - Clipboard fallback on desktop with "✅ დაკოპირდა!" confirmation
+  - Share text: Georgian message with badge name + description + FluentGe URL
+  - Free viral marketing — users share their progress to social media
+- **📱 Dashboard "What's New" Cards:**
+  - New section after level badge surfacing 4 recent features
+  - Learning Paths (→ /paths/), IELTS/TOEFL (→ /flashcards/#ielts), Push Notifications (scroll), Leaderboard (scroll)
+  - Gradient icon cards with "ახალი"/"სცადე" tag badges
+  - Click navigates to feature page or smooth-scrolls to dashboard section
+  - data-section attributes on Notifications + Leaderboard for scroll targeting
+  - Dismissible via localStorage (fluentge-whats-new-dismissed), max 3 shown
+  - Light mode compatible (uses CSS variables + Tailwind utilities)
+- Deployed ✅, git committed & pushed
+
 ### Cron 2B — Design (1:30 PM)
 - **🏠 Homepage Testimonial Carousel:**
   - Replaced static 3-card grid with auto-rotating carousel (4 slides)

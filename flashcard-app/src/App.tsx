@@ -666,11 +666,11 @@ export default function App() {
                         className={`rounded-xl p-4 text-center transition-all ${
                           counts.newCards > 0
                             ? 'bg-sky-500/30 border-2 border-sky-400/50 hover:bg-sky-500/40 cursor-pointer fc-btn-3d'
-                            : 'bg-white/5 border border-white/10 cursor-not-allowed opacity-50'
+                            : 'bg-white/5 border border-white/10 cursor-not-allowed'
                         }`}
                       >
-                        <div className={`text-3xl font-bold ${counts.newCards > 0 ? 'text-sky-300' : 'text-white/40'}`}>{counts.newCards}</div>
-                        <div className={`text-sm mt-1 font-semibold ${counts.newCards > 0 ? 'text-sky-200' : 'text-white/40'}`}>ახალი</div>
+                        <div className={`text-3xl font-bold ${counts.newCards > 0 ? 'text-sky-300' : 'text-white/70'}`}>{counts.newCards}</div>
+                        <div className={`text-sm mt-1 font-semibold ${counts.newCards > 0 ? 'text-sky-200' : 'text-white/70'}`}>ახალი</div>
                         {counts.newCards === 0 && (
                           <div className="text-[9px] text-amber-400/70 mt-1">
                             ⏰ <ResetCountdown now={now} />
@@ -685,11 +685,11 @@ export default function App() {
                         className={`rounded-xl p-4 text-center transition-all ${
                           counts.reviewCards > 0
                             ? 'bg-emerald-500 border-2 border-emerald-400 hover:bg-emerald-400 cursor-pointer fc-btn-3d'
-                            : 'bg-white/5 border border-white/10 cursor-not-allowed opacity-50'
+                            : 'bg-white/5 border border-white/10 cursor-not-allowed'
                         }`}
                       >
-                        <div className={`text-3xl font-bold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/40'}`}>{counts.reviewCards}</div>
-                        <div className={`text-sm mt-1 font-semibold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/40'}`}>გადასახედი</div>
+                        <div className={`text-3xl font-bold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/70'}`}>{counts.reviewCards}</div>
+                        <div className={`text-sm mt-1 font-semibold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/70'}`}>გადასახედი</div>
                         {counts.reviewCards === 0 && counts.nextReviewAt && counts.nextReviewAt > now && (
                           <div className="text-[9px] text-amber-400/70 mt-1">
                             ⏰ <Countdown target={counts.nextReviewAt} now={now} onDone={refreshCounts} />
@@ -974,8 +974,8 @@ export default function App() {
       {confirmDelete && (() => {
         const meta = deckIndex.find(d => d.id === confirmDelete.deckId);
         return (
-          <div className="fixed inset-0 bg-black/60 z-[999] px-4 flex items-center justify-center" style={{ top: 0, bottom: 0, paddingBottom: 0 }} onClick={() => setConfirmDelete(null)}>
-            <div className="bg-[var(--color-bg)] border border-white/10 rounded-2xl p-5 max-w-sm w-full shadow-2xl" style={{ marginBottom: '10vh' }} onClick={e => e.stopPropagation()}>
+          <div className="fixed inset-0 bg-black/60 z-[999] px-4 flex items-center justify-center" onClick={() => setConfirmDelete(null)}>
+            <div className="bg-[var(--color-bg)] border border-white/10 rounded-2xl p-5 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
               <div className="text-center mb-4">
                 <div className="text-4xl mb-2">⚠️</div>
                 <h3 className="font-bold text-lg mb-1">კატეგორიის წაშლა</h3>

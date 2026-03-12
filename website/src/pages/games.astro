@@ -115,7 +115,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Active Game Area -->
-  <div id="game-overlay" class="hidden fixed inset-0 z-[60] bg-[#1C1C1E] overflow-y-auto">
+  <div id="game-overlay" class="hidden fixed inset-0 z-[60] bg-[#1C1C1E] light:bg-[#f5f5f0] overflow-y-auto">
     <div class="max-w-xl mx-auto px-3 sm:px-4 pt-4 sm:pt-8 pb-6 min-h-screen">
       <!-- Game Header Bar — back arrow top-left like flashcards -->
       <div style="margin-bottom:12px;">
@@ -626,6 +626,97 @@ import Layout from '../layouts/Layout.astro';
       #games-stats {
         font-size: 0.75rem;
       }
+    }
+
+  </style>
+
+  <style is:global>
+    /* ===== GAMES LIGHT MODE (global — affects JS-generated elements) ===== */
+    html.light #game-overlay {
+      background: #f5f5f0 !important;
+    }
+    html.light #back-btn {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.12) !important;
+      color: #333 !important;
+    }
+    html.light #game-xp-display {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.1) !important;
+    }
+    html.light #game-xp-display span {
+      color: #333 !important;
+    }
+    html.light #game-header {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.1) !important;
+    }
+    html.light #gh-title {
+      color: #1a1a1a !important;
+    }
+    html.light #gh-score span,
+    html.light #gh-timer span {
+      color: #555 !important;
+    }
+    html.light .game-content {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.1) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+    }
+    html.light .game-option {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.12) !important;
+      color: #1a1a1a !important;
+    }
+    html.light .game-option:hover {
+      background: #f0f0ec !important;
+      border-color: #58A6FF !important;
+    }
+    html.light .game-btn-secondary {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.12) !important;
+      color: #333 !important;
+    }
+    html.light .game-completion {
+      background: rgba(245,245,240,0.95) !important;
+    }
+    html.light .game-completion-card {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.15) !important;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1) !important;
+    }
+    html.light #sub-modal > div:last-child {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.1) !important;
+    }
+    html.light #sub-modal h2 {
+      color: #1a1a1a !important;
+    }
+    html.light #sub-modal p {
+      color: #666 !important;
+    }
+    /* All buttons inside game container — light theme */
+    html.light #game-container button {
+      background: #fff !important;
+      color: #1a1a1a !important;
+      border-color: rgba(0,0,0,0.15) !important;
+    }
+    /* Preserve green start/action buttons */
+    html.light #game-container button.gm-start {
+      background: linear-gradient(135deg,#16a34a,#059669) !important;
+      color: white !important;
+      border-color: #15803d !important;
+    }
+    /* Text inside game container */
+    html.light #game-container div,
+    html.light #game-container span,
+    html.light #game-container p,
+    html.light #game-container h2 {
+      color: #1a1a1a !important;
+    }
+    /* Muted text */
+    html.light #game-container .gm-muted {
+      color: #666 !important;
     }
   </style>
 
@@ -1197,6 +1288,7 @@ import Layout from '../layouts/Layout.astro';
 
       const startBtn = document.createElement('button');
       startBtn.type = 'button';
+      startBtn.className = 'gm-start';
       startBtn.style.cssText = 'width:100%;padding:14px;border-radius:12px;background:linear-gradient(135deg,#16a34a,#059669);border:none;border-bottom:4px solid #15803d;font-weight:700;color:white;font-size:1.1rem;cursor:pointer;min-height:52px;-webkit-tap-highlight-color:transparent;touch-action:manipulation;';
       startBtn.textContent = '▶ დაწყება';
       startBtn.addEventListener('touchstart', function(e) {

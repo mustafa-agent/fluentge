@@ -480,7 +480,6 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           </h2>
           <div className="space-y-3">
             {[
-              { icon: '🗺️', title: 'სასწავლო გზები', desc: '3 სტრუქტურირებული გზა — დამწყებიდან მაღალ დონემდე', link: '/paths/', gradient: 'from-emerald-500 to-green-600', tag: 'ახალი' },
               { icon: '📋', title: 'IELTS / TOEFL', desc: 'საგამოცდო ლექსიკა — 140 აკადემიური სიტყვა', link: '/flashcards/#ielts', gradient: 'from-indigo-500 to-blue-600', tag: 'ახალი' },
               { icon: '🔔', title: 'შეხსენებები', desc: 'ჩართე push შეხსენებები SRS-ისთვის და რიგითობისთვის', link: null, gradient: 'from-amber-500 to-orange-600', tag: 'სცადე', scrollTo: 'notifications' },
               { icon: '🏆', title: 'ლიდერბორდი', desc: 'შეჯიბრე სხვებთან — ყოველკვირეული რეიტინგი', link: null, gradient: 'from-purple-500 to-pink-600', tag: 'სცადე', scrollTo: 'leaderboard' },

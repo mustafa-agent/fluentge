@@ -79,6 +79,16 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
     </style>
   </head>
   <body class="bg-[#1C1C1E] text-[#F5F5F0] font-[Inter,system-ui,sans-serif] min-h-screen">
+    <!-- Decorative background elements -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+      <!-- Gradient blobs -->
+      <div style="position:absolute;top:-10%;left:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(56,189,248,0.06) 0%,transparent 70%);"></div>
+      <div style="position:absolute;bottom:-10%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(74,222,128,0.05) 0%,transparent 70%);"></div>
+      <div style="position:absolute;top:40%;right:10%;width:500px;height:500px;background:radial-gradient(circle,rgba(251,191,36,0.04) 0%,transparent 70%);"></div>
+      <div style="position:absolute;bottom:20%;left:5%;width:400px;height:400px;background:radial-gradient(circle,rgba(56,189,248,0.03) 0%,transparent 70%);"></div>
+      <!-- Dot grid pattern -->
+      <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(200,200,192,0.03) 1px,transparent 1px);background-size:32px 32px;"></div>
+    </div>
     <nav class="fixed top-0 w-full z-50 bg-[#1C1C1E]/95 backdrop-blur-md border-b border-[#2E2E30]">
       <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-6">
         <a href="/" class="font-['Playfair_Display',serif] text-xl sm:text-2xl tracking-tight flex-shrink-0">
@@ -92,7 +102,6 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           <a href="/games/" class="nav-link hover:text-white transition-colors" data-path="/games/">თამაშები</a>
           <a href="/podcast/" class="nav-link hover:text-white transition-colors" data-path="/podcast/">პოდკასტი</a>
           <a href="/courses/" class="nav-link hover:text-white transition-colors" data-path="/courses/">კურსები</a>
-          <a href="/paths/" class="nav-link hover:text-white transition-colors" data-path="/paths/">გზები</a>
           <a href="/blog/" class="nav-link hover:text-white transition-colors" data-path="/blog/">ბლოგი</a>
           <a href="/about/" class="nav-link hover:text-white transition-colors" data-path="/about/">შესახებ</a>
           <a href="/premium/" id="nav-premium-btn" class="bg-[#C8C8C0] text-[#1C1C1E] px-5 py-2 rounded-lg font-semibold hover:bg-[#E8E8E0] transition-colors">პრემიუმი</a>
@@ -132,7 +141,6 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           <a href="/games/" class="nav-link-mobile hover:text-white py-2.5" data-path="/games/">თამაშები</a>
           <a href="/podcast/" class="nav-link-mobile hover:text-white py-2.5" data-path="/podcast/">პოდკასტი</a>
           <a href="/courses/" class="nav-link-mobile hover:text-white py-2.5" data-path="/courses/">კურსები</a>
-          <a href="/paths/" class="nav-link-mobile hover:text-white py-2.5" data-path="/paths/">გზები</a>
           <a href="/blog/" class="nav-link-mobile hover:text-white py-2.5" data-path="/blog/">ბლოგი</a>
           <a href="/about/" class="nav-link-mobile hover:text-white py-2.5" data-path="/about/">შესახებ</a>
           <a href="/premium/" id="nav-premium-btn-mobile" class="bg-[#C8C8C0] text-[#1C1C1E] px-4 py-2.5 rounded-lg font-semibold text-center hover:bg-[#E8E8E0]">პრემიუმი</a>

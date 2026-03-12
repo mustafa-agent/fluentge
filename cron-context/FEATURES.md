@@ -20,7 +20,7 @@
 - [x] 🔗 Achievement sharing — share badges/milestones to social media ✅ (Cron 3, Mar 12)
 - [x] 📧 Newsletter signup — email capture section on homepage ✅ (Cron 2B, Mar 12)
 - [x] 🏠 Homepage testimonial carousel — auto-rotating testimonials ✅ (Cron 2B, Mar 12)
-- 🔄 📱 Dashboard "What's New" cards — surface paths, notifications, IELTS (Cron 3, Mar 12)
+- [x] 📱 Dashboard "What's New" cards — surface paths, notifications, IELTS ✅ (Cron 3, Mar 12)
 - [ ] 🎨 Micro-interactions — consistent button feedback, celebrations across Astro pages
 
 ### ✅ COMPLETED — Mar 11 Day Sprint (Polish & Grow)
@@ -146,6 +146,10 @@
 
 ## In Progress 🔄
 (none)
+
+## Recently Completed ✅ (Mar 12 Night — "Social & Shareability")
+- ✅ **🔗 Achievement Sharing** — Each earned badge gets a "📤 გაზიარება" button. Uses Web Share API on mobile (native share sheet) with clipboard fallback on desktop. Share text includes badge name, description, and FluentGe URL. Confirmation feedback on copy. (Cron 3, Mar 12)
+- ✅ **📱 Dashboard "What's New" Cards** — New section at top of dashboard surfacing 4 recent features: Learning Paths, IELTS/TOEFL decks, Push Notifications, Weekly Leaderboard. Gradient icon cards with tag badges ("ახალი"/"სცადე"). Click navigates to feature or scrolls to section. Dismissible via localStorage. Max 3 shown. (Cron 3, Mar 12)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar
