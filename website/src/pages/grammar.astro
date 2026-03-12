@@ -29,6 +29,10 @@ function isLessonFree(slug: string) {
 ---
 
 <Layout title="ინგლისური გრამატიკა ქართულად | FluentGe" description="65 ინტერაქტიული გრამატიკის გაკვეთილი ქართულ ენაზე — A1-დან C1-მდე. ტესტები, სავარჯიშოები და XP სისტემა. 8 გაკვეთილი უფასოა!">
+  <style is:global>
+    .light .grammar-level-bar { background: #e5e7eb !important; }
+    .light .grammar-level-counter { color: #6b7280 !important; }
+  </style>
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-30"/>
@@ -57,10 +61,18 @@ function isLessonFree(slug: string) {
 
     {levels.map(level => (
       <div class="mb-12">
-        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
-          <span class={`px-3 py-1 rounded-full text-sm font-bold ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
-          <span>{level === 'A1' ? 'დამწყები' : level === 'A2' ? 'ელემენტარული' : level === 'B1' ? 'საშუალო' : level === 'B2' ? 'საშუალო+' : level === 'C1' ? 'მოწინავე' : level}</span>
-        </h2>
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-2xl font-bold flex items-center gap-3">
+            <span class={`px-3 py-1 rounded-full text-sm font-bold ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
+            <span>{level === 'A1' ? 'დამწყები' : level === 'A2' ? 'ელემენტარული' : level === 'B1' ? 'საშუალო' : level === 'B2' ? 'საშუალო+' : level === 'C1' ? 'მოწინავე' : level}</span>
+          </h2>
+          <span class="text-xs text-[#6B6B65] font-medium grammar-level-counter" data-level={level} data-total={grouped[level].length}>
+            0/{grouped[level].length} გავლილი
+          </span>
+        </div>
+        <div class="w-full h-2 bg-[#2E2E30] rounded-full mb-5 overflow-hidden grammar-level-bar" data-bar-level={level}>
+          <div class={`h-full rounded-full transition-all duration-700 ${level === 'A1' ? 'bg-green-500' : level === 'A2' ? 'bg-blue-500' : level === 'B1' ? 'bg-yellow-500' : level === 'B2' ? 'bg-orange-500' : 'bg-purple-500'}`} style="width: 0%" data-bar-fill={level}></div>
+        </div>
         <div class="grid gap-4 sm:grid-cols-2">
           {grouped[level].map(lesson => {
             const free = isLessonFree(lesson.slug);
@@ -134,6 +146,42 @@ function isLessonFree(slug: string) {
           }
         }
       } catch(e) {}
+    })();
+
+    // Grammar level progress bars
+    (function() {
+      var completed = {};
+      try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
+      if (Array.isArray(completed)) { var obj = {}; completed.forEach(function(s) { obj[s] = true; }); completed = obj; }
+      // Count per level
+      var levelCounts = {};
+      document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
+        // Find parent level section
+        var section = card.closest('.mb-12');
+        if (!section) return;
+        var bar = section.querySelector('[data-bar-level]');
+        if (!bar) return;
+        var level = bar.dataset.barLevel;
+        if (!levelCounts[level]) levelCounts[level] = 0;
+        if (completed[card.dataset.slug]) levelCounts[level]++;
+      });
+      // Update UI
+      document.querySelectorAll('.grammar-level-counter').forEach(function(el) {
+        var level = el.dataset.level;
+        var total = parseInt(el.dataset.total, 10);
+        var done = levelCounts[level] || 0;
+        el.textContent = done + '/' + total + ' გავლილი';
+      });
+      document.querySelectorAll('[data-bar-fill]').forEach(function(el) {
+        var level = el.dataset.barFill;
+        var barContainer = el.closest('.grammar-level-bar');
+        var total = 0;
+        var counter = document.querySelector('.grammar-level-counter[data-level="' + level + '"]');
+        if (counter) total = parseInt(counter.dataset.total, 10);
+        var done = levelCounts[level] || 0;
+        var pct = total > 0 ? Math.round((done / total) * 100) : 0;
+        setTimeout(function() { el.style.width = pct + '%'; }, 200);
+      });
     })();
 
     // Sequential Lock/Unlock System

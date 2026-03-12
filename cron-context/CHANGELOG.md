@@ -7,6 +7,29 @@ Each cron logs what it did here. Most recent first.
 
 ## 2026-03-12
 
+### Cron 3 — Features (5:00 AM)
+- **🗺️ Learning Paths Page (`/paths/`):**
+  - 3 structured paths: Beginner (A1-A2), Intermediate (B1-B2), Advanced (C1)
+  - Each path has 10 milestones: vocab decks, grammar lessons, podcasts, quizzes, word-count milestones
+  - SVG progress rings showing completion % per path
+  - Expand/collapse accordion with auto-expand based on placement level
+  - Milestone completion tracked from localStorage (SRS repetitions + grammar completed)
+  - Green ✓ checkmarks on completed milestones with connected progress line
+  - Type badges (vocab/grammar/podcast/quiz/game/writing/milestone) color-coded
+  - CTA to placement test for users who don't know their level
+  - Added "გზები" nav link in both desktop and mobile navigation
+  - Full light mode CSS support
+- **🏆 Weekly Leaderboard on Astro Dashboard:**
+  - 9 simulated Georgian users with realistic names and weekly XP variation
+  - Current user integrated with real weekly XP from `fluentge-daily-history`
+  - Seeded random XP variation per week (rankings shift naturally each week)
+  - Medal emojis (🥇🥈🥉) for top 3, gradient avatar circles by rank
+  - Green highlight + border for current user row
+  - "ამ კვირის რეიტინგი" header with Monday reset label
+  - Sorted by weekly XP descending
+- Site now builds **115 pages** (was 113)
+- Deployed ✅, git committed & pushed
+
 ### Cron 2 — Design (3:00 AM)
 - **🔐 Login Page Visual Upgrade:**
   - Wrapped form in styled card container (bg #1e1e22, border, rounded-1.5rem)

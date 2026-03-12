@@ -94,9 +94,15 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         </div>
       </div>
 
-      <!-- Daily Lesson CTA removed -->
-
-      <!-- SRS Due reminder removed -->
+      <!-- Quick Actions for Returning Users -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-lg mx-auto mt-4">
+        <a href="/flashcards/#daily-lesson" class="flex-1 bg-green-500 text-white font-bold px-6 py-3.5 rounded-xl text-sm border-b-4 border-green-600 hover:bg-green-400 active:border-b-2 active:mt-[2px] transition-all text-center uppercase tracking-wide">
+          📚 ყოველდღიური გაკვეთილი
+        </a>
+        <a href="/flashcards/#srs" class="flex-1 bg-amber-500/15 border border-amber-500/30 text-amber-400 font-bold px-6 py-3.5 rounded-xl text-sm hover:bg-amber-500/25 transition-all text-center" id="ret-srs-btn" style="display:none;">
+          🔄 გამეორება · <span id="ret-srs-count2">0</span> ბარათი
+        </a>
+      </div>
     </div>
   </section>
 
@@ -160,6 +166,11 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         if (retSrs) { retSrs.style.display = 'block'; }
         var retSrsCount = document.getElementById('ret-srs-count');
         if (retSrsCount) retSrsCount.textContent = totalDue;
+        // Show SRS review button in returning hero
+        var retSrsBtn = document.getElementById('ret-srs-btn');
+        if (retSrsBtn) retSrsBtn.style.display = '';
+        var retSrsCount2 = document.getElementById('ret-srs-count2');
+        if (retSrsCount2) retSrsCount2.textContent = totalDue;
         // Show cross-page SRS banner (only on non-flashcard pages)
         if (window.location.pathname.indexOf('/flashcards') === -1) {
           var dismissed = sessionStorage.getItem('srs-banner-dismissed');

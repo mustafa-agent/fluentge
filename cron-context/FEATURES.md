@@ -34,10 +34,10 @@
 
 ### Flashcard Improvements
 ### Dashboard
-- [ ] Leaderboard (top learners this week)
+- [x] Leaderboard (top learners this week) ✅ (Cron 3, Mar 12)
 
 ### Section Interconnection
-- [ ] Learning paths (beginner → intermediate → advanced)
+- [x] Learning paths (beginner → intermediate → advanced) ✅ (Cron 3, Mar 12)
 
 ## Priority: MEDIUM 🟡
 
@@ -75,6 +75,8 @@
 - [ ] Multi-language support (Russian for Georgian market)
 
 ## Recently Completed ✅
+- ✅ **🗺️ Learning Paths Page** — New `/paths/` page with 3 structured paths (Beginner A1-A2, Intermediate B1-B2, Advanced C1). Each path has 10 milestones mixing vocab, grammar, podcast, quiz, and word-count milestones. SVG progress rings per path. Auto-expands based on placement level. Milestone completion tracked from localStorage (SRS data + grammar completed). Green checkmarks on completed milestones. Nav link added. (Cron 3, Mar 12)
+- ✅ **🏆 Weekly Leaderboard on Dashboard** — Competitive leaderboard with 9 simulated Georgian users + current user. Weekly XP tracking from daily history. Seeded random variation per week so rankings shift. Medal emojis (🥇🥈🥉) for top 3. Green highlight for current user. Gradient avatar circles. Resets weekly (Monday). (Cron 3, Mar 12)
 - ✅ **🔔 Push Notification System** — Browser Notification API for SRS review reminders (configurable 2/4/6/8hr intervals) + streak reminders (configurable evening hour 18-21). NotificationSettings.tsx component on Dashboard with toggle switches, interval selectors. notifications.ts utility with permission management, auto-check every 30min. Light mode CSS. (Cron 3, Mar 11)
 - ✅ **📋 IELTS/TOEFL Prep Decks** — 3 new specialized decks: IELTS Reading Vocab (50 B2-C1 academic words), IELTS Writing Vocab (50 essay/linking words), TOEFL Speaking Phrases (40 discourse markers & opinion phrases). Dedicated indigo-themed "📋 IELTS / TOEFL" section in DeckSelect with info banner. Added to deck-index.ts. (Cron 3, Mar 11)
 - ✅ **✏️ Writing Exercise (WritingExercise.tsx)** — 12th study mode. 3 prompt types: translate (write English from Georgian), complete (finish a sentence), describe (use word in sentence). Levenshtein similarity scoring for translations. 8 questions per session. XP: +5/10/15 per answer quality (0-3 stars). Full CSS (we-* classes), light+dark mode. Lazy-loaded in App.tsx. Added as ✏️ თარგმნა in DeckSelect. (Cron 3, Mar 11)
@@ -130,8 +132,7 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-- 🔄 **Learning Paths Page** — `/paths/` with 3 structured paths (Beginner/Intermediate/Advanced), milestones, progress tracking (Cron 3, Mar 12)
-- 🔄 **Weekly Leaderboard on Dashboard** — Competitive leaderboard with simulated Georgian users on Astro dashboard page (Cron 3, Mar 12)
+(none)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar
