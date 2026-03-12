@@ -150,6 +150,18 @@ import Layout from '../../layouts/Layout.astro';
       </a>
     </div>
 
+    <!-- Weekly Leaderboard -->
+    <div class="mb-8">
+      <h2 class="font-bold text-lg mb-4 flex items-center gap-2">🏆 კვირის ლიდერბორდი</h2>
+      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden">
+        <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 px-4 py-3 border-b border-[#2E2E30] flex items-center justify-between">
+          <span class="text-xs text-amber-400 font-semibold" id="lb-week-label">ამ კვირის რეიტინგი</span>
+          <span class="text-xs text-[var(--color-text-muted)]" id="lb-reset-label">ორშაბათს ახლდება</span>
+        </div>
+        <div id="leaderboard-list" class="divide-y divide-[#2E2E30]"></div>
+      </div>
+    </div>
+
     <!-- Removed: phrases, grammar, podcasts, flashcards detail links -->
   </section>
 
@@ -420,6 +432,73 @@ import Layout from '../../layouts/Layout.astro';
 
       // Show max 3 suggestions
       suggestions = suggestions.slice(0, 3);
+
+      // --- Weekly Leaderboard ---
+      var simulatedUsers = [
+        { name: 'ნიკა მ.', avatar: '🧑‍💻', baseXP: 180 },
+        { name: 'მარიამი თ.', avatar: '👩‍🎓', baseXP: 155 },
+        { name: 'გიორგი კ.', avatar: '🧠', baseXP: 140 },
+        { name: 'ანა ბ.', avatar: '💪', baseXP: 120 },
+        { name: 'დავითი ჯ.', avatar: '🔥', baseXP: 100 },
+        { name: 'ელენე ს.', avatar: '⭐', baseXP: 85 },
+        { name: 'ლუკა ხ.', avatar: '🚀', baseXP: 70 },
+        { name: 'თეკლე გ.', avatar: '📚', baseXP: 55 },
+        { name: 'ირაკლი პ.', avatar: '🎯', baseXP: 40 },
+      ];
+      // Seed weekly XP variation based on week number
+      var weekNum = Math.floor((Date.now() - new Date(2026, 0, 5).getTime()) / (7 * 24 * 60 * 60 * 1000));
+      function seededRandom(seed) { var x = Math.sin(seed) * 10000; return x - Math.floor(x); }
+      simulatedUsers.forEach(function(u, i) {
+        var variation = seededRandom(weekNum * 100 + i) * 60 - 20;
+        u.weeklyXP = Math.max(10, Math.round(u.baseXP + variation));
+      });
+
+      // Get user's weekly XP
+      var userWeeklyXP = 0;
+      try {
+        var dailyHist = JSON.parse(localStorage.getItem('fluentge-daily-history') || '{}');
+        var today2 = new Date();
+        var dayOfWeek = today2.getDay() === 0 ? 7 : today2.getDay(); // Mon=1 ... Sun=7
+        for (var d = 0; d < dayOfWeek; d++) {
+          var dateObj = new Date(today2);
+          dateObj.setDate(today2.getDate() - d);
+          var dateKey = dateObj.toISOString().slice(0, 10);
+          var dayData2 = dailyHist[dateKey];
+          if (dayData2) userWeeklyXP += typeof dayData2 === 'object' ? (dayData2.xp || 0) : dayData2;
+        }
+      } catch(e) {}
+
+      // Build leaderboard
+      var allPlayers = simulatedUsers.map(function(u) {
+        return { name: u.name, avatar: u.avatar, xp: u.weeklyXP, isUser: false };
+      });
+      var userName = 'შენ';
+      try {
+        var ud = JSON.parse(localStorage.getItem('fluentge-user') || '{}');
+        if (ud.name) userName = ud.name;
+      } catch(e) {}
+      var savedAvatar = localStorage.getItem('fluentge-avatar') || '😊';
+      allPlayers.push({ name: userName, avatar: savedAvatar, xp: userWeeklyXP, isUser: true });
+      allPlayers.sort(function(a, b) { return b.xp - a.xp; });
+
+      var lbList = document.getElementById('leaderboard-list');
+      allPlayers.slice(0, 10).forEach(function(p, idx) {
+        var rank = idx + 1;
+        var medals = ['', '🥇', '🥈', '🥉'];
+        var medal = medals[rank] || '';
+        var row = document.createElement('div');
+        row.className = 'flex items-center gap-3 px-4 py-3' + (p.isUser ? ' bg-green-500/10 border-l-3 border-green-500' : '');
+        row.innerHTML =
+          '<span class="w-6 text-center text-sm font-bold ' + (rank <= 3 ? 'text-amber-400' : 'text-[var(--color-text-muted)]') + '">' + (medal || rank) + '</span>' +
+          '<div class="w-9 h-9 rounded-full bg-gradient-to-br ' +
+            (rank === 1 ? 'from-amber-400 to-yellow-500' : rank === 2 ? 'from-gray-300 to-gray-400' : rank === 3 ? 'from-amber-600 to-amber-700' : 'from-[#3a3a3e] to-[#2a2a2e]') +
+            ' flex items-center justify-center text-lg flex-shrink-0">' + p.avatar + '</div>' +
+          '<div class="flex-1 min-w-0">' +
+            '<span class="text-sm font-semibold ' + (p.isUser ? 'text-green-400' : '') + '">' + p.name + (p.isUser ? ' (შენ)' : '') + '</span>' +
+          '</div>' +
+          '<span class="text-sm font-bold ' + (rank <= 3 ? 'text-amber-400' : 'text-[var(--color-text-muted)]') + '">' + p.xp + ' XP</span>';
+        lbList.appendChild(row);
+      });
 
       if (totalProgress === 0) {
         document.getElementById('quick-start').classList.remove('hidden');

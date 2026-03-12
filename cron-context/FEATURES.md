@@ -130,7 +130,8 @@
 - [ ] **Notification system** — Push notifications for SRS reviews and streaks
 
 ## In Progress 🔄
-(none)
+- 🔄 **Learning Paths Page** — `/paths/` with 3 structured paths (Beginner/Intermediate/Advanced), milestones, progress tracking (Cron 3, Mar 12)
+- 🔄 **Weekly Leaderboard on Dashboard** — Competitive leaderboard with simulated Georgian users on Astro dashboard page (Cron 3, Mar 12)
 
 ## Previously Completed ✅ (Feb 28 Night Sprint)
 - ✅ Streak System — daily streaks in localStorage, shown on dashboard + navbar

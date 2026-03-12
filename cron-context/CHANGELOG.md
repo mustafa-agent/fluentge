@@ -5,6 +5,27 @@ Each cron logs what it did here. Most recent first.
 
 ---
 
+## 2026-03-12
+
+### Cron 2 — Design (3:00 AM)
+- **🔐 Login Page Visual Upgrade:**
+  - Wrapped form in styled card container (bg #1e1e22, border, rounded-1.5rem)
+  - Added 📚 book emoji + Georgian subtitle "ისწავლე ინგლისური სახალისოდ 🇬🇪"
+  - 3D press-effect buttons: login/register get border-b-4 + active:border-b-2 + translateY(2px)
+  - Google button also gets 3D press effect
+  - Font-bold + uppercase + tracking-wide for button text (Duolingo style)
+  - Login card fade-up entrance animation (0.5s ease)
+  - Full light mode support (white card, shadow, adjusted button colors)
+- **✨ Global Entrance Animations:**
+  - Added fadeUp @keyframes to global.css (opacity 0→1, translateY 16px→0)
+  - All `main > section/div` children animate in with 0.4s ease
+  - Staggered delays: 2nd child +0.08s, 3rd +0.16s, 4th +0.24s, 5th +0.32s
+  - Respects `prefers-reduced-motion: reduce` (animation: none)
+  - All pages now have subtle, professional entrance animations
+- Deployed ✅, git committed & pushed
+
+---
+
 ## 2026-03-11
 
 ### Cron 4B — Improvements (5:30 PM)
