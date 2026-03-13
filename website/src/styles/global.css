@@ -246,7 +246,7 @@ html.light #sub-modal .text-\[\#F5F5F0\] {
 /* Override inline color:#F5F5F0 in game overlay */
 html.light #game-overlay,
 html.light #game-overlay * {
-  color: #1A1A2E;
+  color: #1A1A2E !important;
 }
 /* Keep white text on colored backgrounds in games */
 html.light #game-overlay .bg-green-500,
@@ -271,8 +271,27 @@ html.light #game-overlay {
 html.light #game-container button[style*="background:#2A2A2E"],
 html.light #game-container button[style*="background:#242426"] {
   background: #FFFFFF !important;
-  border-color: #E5E7EB !important;
+  border-color: #D1D5DB !important;
   color: #1A1A2E !important;
+}
+/* Game category/difficulty select buttons */
+html.light #game-overlay button[style*="background:#2A2A2E"],
+html.light #game-overlay button[style*="background:#242426"] {
+  background: #FFFFFF !important;
+  border-color: #D1D5DB !important;
+}
+/* Speed timer ring in light mode */
+html.light #speed-timer-ring {
+  border-color: #D1D5DB !important;
+}
+/* Game heading text with inline color */
+html.light #game-overlay h2[style*="color:#F5F5F0"],
+html.light #game-overlay h3[style*="color:#F5F5F0"] {
+  color: #1A1A2E !important;
+}
+/* Game sub-text with inline muted color */
+html.light #game-overlay [style*="color:#A0A09A"] {
+  color: #6B7280 !important;
 }
 /* Category buttons in games */
 html.light #game-container [style*="color:#F5F5F0"] {
