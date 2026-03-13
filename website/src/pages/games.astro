@@ -718,6 +718,51 @@ import Layout from '../layouts/Layout.astro';
     html.light #game-container .gm-muted {
       color: #666 !important;
     }
+    /* ===== GAME CARD GRID — LIGHT MODE ===== */
+    /* Card backgrounds */
+    html.light .game-card {
+      background-color: #FFFFFF !important;
+      border-color: #E5E7EB !important;
+      border-bottom-color: rgba(0,0,0,0.1) !important;
+    }
+    html.light .game-card:hover {
+      border-color: #D1D5DB !important;
+    }
+    /* Card image overlay gradient — light version */
+    html.light .game-card .from-\[\#242426\] {
+      --tw-gradient-from: #FFFFFF !important;
+    }
+    html.light .game-card .via-\[\#242426\]\/50 {
+      --tw-gradient-via: rgba(255,255,255,0.5) !important;
+    }
+    /* Boost card background images in light mode */
+    html.light .game-card img.opacity-20 {
+      opacity: 0.12 !important;
+    }
+    /* Card title text */
+    html.light .game-card h3 {
+      color: #1A1A2E !important;
+    }
+    /* Card description text */
+    html.light .game-card p {
+      color: #6B7280 !important;
+    }
+    /* Category section headers */
+    html.light .text-\[\#D4A853\] {
+      color: #92400e !important;
+    }
+    /* Game stats bar */
+    html.light #games-stats {
+      background: #FFFFFF !important;
+      border-color: #E5E7EB !important;
+    }
+    html.light #games-stats span {
+      color: #374151 !important;
+    }
+    /* Game of the day card */
+    html.light #game-of-day {
+      border-color: #E5E7EB !important;
+    }
   </style>
 
   <script>
