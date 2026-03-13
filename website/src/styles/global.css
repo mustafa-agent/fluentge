@@ -268,17 +268,17 @@ html.light #game-overlay {
   background-color: #F5F5F0 !important;
 }
 /* Game option buttons with inline styles */
-html.light #gc button[style*="background:#2A2A2E"],
-html.light #gc button[style*="background:#242426"] {
+html.light #game-container button[style*="background:#2A2A2E"],
+html.light #game-container button[style*="background:#242426"] {
   background: #FFFFFF !important;
   border-color: #E5E7EB !important;
   color: #1A1A2E !important;
 }
 /* Category buttons in games */
-html.light #gc [style*="color:#F5F5F0"] {
+html.light #game-container [style*="color:#F5F5F0"] {
   color: #1A1A2E !important;
 }
-html.light #gc [style*="color:#A0A09A"] {
+html.light #game-container [style*="color:#A0A09A"] {
   color: #6B7280 !important;
 }
 
@@ -305,40 +305,40 @@ html.light .game-card h3 {
 }
 
 /* Game internal UI */
-html.light #gc .bg-\[\#242426\] {
+html.light #game-container .bg-\[\#242426\] {
   background-color: #FFFFFF !important;
 }
 
-html.light #gc .border-\[\#2E2E30\] {
+html.light #game-container .border-\[\#2E2E30\] {
   border-color: #E5E7EB !important;
 }
 
-html.light #gc .text-\[\#F5F5F0\] {
+html.light #game-container .text-\[\#F5F5F0\] {
   color: #1A1A2E !important;
 }
 
-html.light #gc button.bg-\[\#242426\] {
+html.light #game-container button.bg-\[\#242426\] {
   background-color: #F0F0EC !important;
   color: #1A1A2E !important;
 }
 
-html.light #gc button.hover\:bg-\[\#2E2E30\]:hover {
+html.light #game-container button.hover\:bg-\[\#2E2E30\]:hover {
   background-color: #E5E7EB !important;
 }
 
-html.light #gc .bg-\[\#1C1C1E\] {
+html.light #game-container .bg-\[\#1C1C1E\] {
   background-color: #E5E7EB !important;
 }
 
-html.light #gc .bg-\[\#C8C8C0\]\/10 {
+html.light #game-container .bg-\[\#C8C8C0\]\/10 {
   background-color: rgba(74, 74, 68, 0.1) !important;
 }
 
-html.light #gc .border-\[\#C8C8C0\]\/20 {
+html.light #game-container .border-\[\#C8C8C0\]\/20 {
   border-color: rgba(74, 74, 68, 0.2) !important;
 }
 
-html.light #gc .bg-\[\#C8C8C0\]\/15 {
+html.light #game-container .bg-\[\#C8C8C0\]\/15 {
   background-color: rgba(74, 74, 68, 0.15) !important;
 }
 

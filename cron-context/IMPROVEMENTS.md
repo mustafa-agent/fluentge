@@ -57,10 +57,14 @@
 
 ## 🎯 CURRENT FOCUS (Mar 13+) — "Bug Fixes & Design Polish ONLY"
 - **⚠️ NO NEW FEATURES per Tornike's order (Mar 12)**
-- [ ] Light mode audit — check all pages for contrast issues
+- [x] Light mode audit — check all pages for contrast issues ✅ Cron 4, Mar 13
 - [ ] Mobile layout review — check for overflow/spacing issues
 - [ ] Button/text readability check across all pages
-- [ ] Console error cleanup
+- [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
+
+## ✅ COMPLETED — Mar 13 (Cron 4, 7:00 AM)
+- [x] **CRITICAL BUG FIX: Podcast page completely empty** — Premium CTA hide script was hiding entire episode section (`a.closest('section').style.display='none'`) instead of just the CTA div. Fixed to target `.mt-12` wrapper only. ✅
+- [x] Games page light mode polish — added global CSS for game card backgrounds, borders, text colors, gradient overlays, stats bar, and game-of-day card in light mode ✅
 
 ### ✅ COMPLETED — Mar 11-12 Sprint (Conversion & Retention)
 - [x] Homepage counter bar + "How It Works" ✅ Cron 2B, Mar 11

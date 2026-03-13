@@ -1,9 +1,59 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-13 (1:00 AM)
-- **Status:** ⚠️ 1 ISSUE FOUND
-- **Issues Found:** 1
+- **Date:** 2026-03-13 (11:30 AM)
+- **Status:** ✅ ALL CLEAR
+- **Issues Found:** 0
+
+## Midday QA Run (Mar 13, 11:30 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 9 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/paths/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 7.90s, no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Homepage (dark mode):** Hero, stats, Top 2000 CTA, Word of Day, testimonials, How It Works, CTA — all clean ✅
+- **Homepage (light mode):** White bg, readable text, clean cards, good contrast ✅
+- **Grammar (light mode):** White cards, dark text, all 5 levels, lesson items readable ✅
+- **Games (light mode):** White cards, colorful icons, 3 categories, stats bar, game-of-day — all clean ✅
+- **Flashcards:** React app renders, deck cards with images, buttons visible ✅
+
+### Console — ✅ No Errors
+- Zero console errors on games page
+
+### Verdict
+Full visual + health check pass. No bugs found. All pages healthy, both light and dark modes look good. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
+
+## Morning QA Run (Mar 13, 9:00 AM)
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 7.81s, no errors
+
+### Bug Fix: Podcast Light Mode CSS
+- **Fixed:** podcast.astro had 0 light mode overrides (found in 1:00 AM run)
+- **Added:** 60+ light mode CSS rules covering episode cards, text colors, player controls, quiz options, transcript, vocab pills, seek bar, buttons
+- **Verified:** Browser screenshots in both light and dark mode — all readable ✅
+- **Deployed:** 1 file uploaded, live at fluentge.pages.dev
+
+### Browser Visual Testing — ✅ All Good
+- **Podcast (light mode):** Hero, 35 episodes, expanded episode with player/transcript/quiz — all white cards, dark text, readable ✅
+- **Podcast (dark mode):** Dark cards, light text, proper contrast ✅
+- **Expanded episode (light mode):** Vocab pills, speed buttons, transcript, quiz options — all properly themed ✅
+
+### Verdict
+Fixed the podcast light mode bug from last run. Deployed. All visual tests pass. TS clean, build clean. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Night QA Run (Mar 13, 1:00 AM)
 

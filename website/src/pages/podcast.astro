@@ -910,6 +910,107 @@ const episodes = [
     .ep-content.ep-visible { display: block; animation: epSlideDown 0.3s ease-out; }
     @keyframes epSlideDown { from { opacity: 0; max-height: 0; } to { opacity: 1; max-height: 2000px; } }
     .ep-header:hover { opacity: 0.85; }
+
+    /* ===== LIGHT MODE ===== */
+    html.light .relative.overflow-hidden .bg-gradient-to-b {
+      background: linear-gradient(to bottom, rgba(245,245,240,0.6), #f5f5f0) !important;
+    }
+    /* Episode cards */
+    html.light .bg-\[\#242426\] {
+      background: #fff !important;
+    }
+    html.light .border-\[\#2E2E30\] {
+      border-color: rgba(0,0,0,0.1) !important;
+    }
+    html.light .border-green-500\/30 {
+      border-color: rgba(22,163,74,0.3) !important;
+    }
+    /* Text colors */
+    html.light .text-\[\#A0A09A\] {
+      color: #555 !important;
+    }
+    html.light .text-\[\#6B6B65\] {
+      color: #666 !important;
+    }
+    html.light .text-\[\#4a4a50\] {
+      color: #888 !important;
+    }
+    html.light .text-\[\#C8C8C0\] {
+      color: #1a1a1a !important;
+    }
+    /* Speed & control buttons */
+    html.light .pp-speed.bg-\[\#2E2E30\] {
+      background: #f0f0ec !important;
+      color: #555 !important;
+    }
+    html.light .pp-speed:hover {
+      color: #1a1a1a !important;
+    }
+    html.light .pp-lang-toggle {
+      background: #f0f0ec !important;
+      color: #555 !important;
+    }
+    html.light .pp-lang-toggle:hover {
+      color: #059669 !important;
+    }
+    html.light .mark-podcast-btn {
+      border-color: #aaa !important;
+      color: #666 !important;
+    }
+    html.light .mark-podcast-btn:hover {
+      border-color: #16a34a !important;
+      color: #16a34a !important;
+    }
+    /* Seek bar */
+    html.light .pp-seek-wrap,
+    html.light .bg-\[\#2E2E30\] {
+      background: #e5e5e0 !important;
+    }
+    /* Quiz options */
+    html.light .pq-opt {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.12) !important;
+      color: #1a1a1a !important;
+    }
+    html.light .pq-opt:hover {
+      background: #f5f5f0 !important;
+    }
+    /* Vocab pills */
+    html.light .pv-pill {
+      background: #f0f0ec !important;
+      color: #333 !important;
+      border-color: rgba(0,0,0,0.1) !important;
+    }
+    /* Transcript text */
+    html.light .podcast-transcript p,
+    html.light .podcast-transcript span {
+      color: #333 !important;
+    }
+    html.light .transcript-ka {
+      color: #666 !important;
+    }
+    /* Headings & general text in podcast */
+    html.light section h1,
+    html.light section h2,
+    html.light section h3 {
+      color: #1a1a1a !important;
+    }
+    html.light section p {
+      color: #333 !important;
+    }
+    /* Premium CTA section at bottom */
+    html.light .text-center.py-16 p {
+      color: #555 !important;
+    }
+    /* Episode count badge */
+    html.light #podcast-count {
+      color: #666 !important;
+    }
+    /* Flashcard deck links */
+    html.light .pv-deck-link {
+      background: #f0f0ec !important;
+      color: #333 !important;
+    }
   </style>
 
   <script is:inline>
