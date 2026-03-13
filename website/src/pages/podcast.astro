@@ -958,11 +958,12 @@ const episodes = [
         // Update count text for premium users
         var countEl = document.getElementById('podcast-count');
         if (countEl) countEl.textContent = '35 ეპიზოდი · ყველა განბლოკილი ⭐';
-        // Hide "Start Premium" CTA at bottom
+        // Hide "Start Premium" CTA div at bottom (not the whole section!)
         var ctaLinks = document.querySelectorAll('a[href="/premium/"]');
         ctaLinks.forEach(function(a) {
-          if (a.closest('section') && a.textContent.includes('პრემიუმი')) {
-            a.closest('section').style.display = 'none';
+          var ctaDiv = a.closest('.mt-12');
+          if (ctaDiv && a.textContent.includes('პრემიუმი')) {
+            ctaDiv.style.display = 'none';
           }
         });
       }
