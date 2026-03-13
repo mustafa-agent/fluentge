@@ -158,12 +158,14 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
       // Navbar active state
       (function() {
         var path = window.location.pathname;
+        var isLight = document.documentElement.classList.contains('light');
+        var activeColor = isLight ? '#1a1a2e' : 'white';
         // Desktop nav
         document.querySelectorAll('.nav-link').forEach(function(a) {
           var dp = a.getAttribute('data-path');
           var isActive = dp === '/' ? path === '/' : path.startsWith(dp);
           if (isActive) {
-            a.style.color = 'white';
+            a.style.color = activeColor;
             a.style.borderBottom = '2px solid #60a5fa';
             a.style.paddingBottom = '2px';
             a.style.fontWeight = '600';
@@ -174,7 +176,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           var dp = a.getAttribute('data-path');
           var isActive = dp === '/' ? path === '/' : path.startsWith(dp);
           if (isActive) {
-            a.style.color = 'white';
+            a.style.color = activeColor;
             a.style.borderLeft = '3px solid #60a5fa';
             a.style.paddingLeft = '12px';
             a.style.fontWeight = '600';

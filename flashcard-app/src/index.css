@@ -215,6 +215,48 @@ a, button, [role="button"], input[type="submit"] { cursor: pointer !important; }
 .badge-card.earned .badge-icon { background: linear-gradient(135deg, rgba(250,204,21,0.2), rgba(245,158,11,0.1)); }
 .badge-card.locked .badge-icon { background: var(--color-bg-card-hover); }
 
+/* Light mode: hardcoded dark-mode color overrides */
+html.light .bg-\[\#1C1C1E\],
+html.light .bg-\[\#161618\] {
+  background-color: var(--color-bg) !important;
+}
+html.light .bg-\[\#242426\],
+html.light .bg-\[\#2E2E30\],
+html.light .bg-\[\#2A2A2C\] {
+  background-color: var(--color-bg-card) !important;
+}
+html.light .hover\:bg-\[\#2A2A2C\]:hover,
+html.light .hover\:bg-\[\#2E2E30\]:hover {
+  background-color: var(--color-bg-card-hover) !important;
+}
+html.light .text-\[\#F5F5F0\] {
+  color: var(--color-text) !important;
+}
+html.light .text-\[\#C8C8C0\] {
+  color: var(--color-primary) !important;
+}
+html.light .text-\[\#A0A09A\],
+html.light .text-\[\#6B6B65\] {
+  color: var(--color-text-muted) !important;
+}
+html.light .border-\[\#2E2E30\],
+html.light .border-\[\#242426\] {
+  border-color: #e5e7eb !important;
+}
+html.light .min-h-screen.bg-\[\#1C1C1E\] {
+  background-color: var(--color-bg) !important;
+}
+html.light .min-h-screen.text-white {
+  color: var(--color-text) !important;
+}
+/* (removed risky general text-white override) */
+html.light .placeholder-\[\#C8C8C0\]\/50::placeholder {
+  color: var(--color-text-muted) !important;
+}
+html.light .bg-\[\#242426\]\/50 {
+  background-color: rgba(255,255,255,0.7) !important;
+}
+
 /* Light mode overrides */
 html.light .quiz-option { border-color: #e5e7eb; }
 html.light .quiz-option:hover { background: #f3f4f6; }
@@ -1098,7 +1140,7 @@ html.light .fc-app-bg::before {
   position: fixed;
   inset: 0;
   background: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200&q=40') center/cover no-repeat;
-  opacity: 0.12;
+  opacity: 0.3;
   pointer-events: none;
   z-index: 0;
 }
@@ -1106,7 +1148,7 @@ html.light .fc-app-bg::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.45);
   pointer-events: none;
   z-index: 0;
 }

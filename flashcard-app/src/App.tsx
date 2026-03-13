@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { type Deck, type FlashCard, loadDeck } from './lib/deck-loader';
 import { deckIndex, type DeckMeta } from './lib/deck-index';
-import { loadFromCloud, syncToCloud, syncNow, isLoggedIn } from './lib/firebase-sync';
+import { loadFromCloud, syncToCloud, syncNow, isLoggedIn, startRealtimeSync, stopRealtimeSync, setOnSyncCallback } from './lib/firebase-sync';
 
 /* ═══════════════════════════════════════════════════════════ */
 /*                     CLICK SOUND                             */
@@ -47,25 +47,35 @@ function gradeSRS(card: CardSRS, grade: 'again' | 'hard' | 'good' | 'easy'): Car
   let { interval, easeFactor, repetitions } = card;
 
   if (grade === 'again') {
-    // Same day, 10 minutes
+    // 1 minute
     repetitions = 0;
     interval = 0;
     easeFactor = Math.max(1.3, easeFactor - 0.2);
-    return { interval, easeFactor, nextReview: now + 10 * 60 * 1000, lastReview: now, repetitions, type: 'learning' };
+    return { interval, easeFactor, nextReview: now + 1 * 60 * 1000, lastReview: now, repetitions, type: 'learning' };
+  }
+
+  if (grade === 'hard') {
+    // First time: 10 minutes, then grows ×1.5
+    if (repetitions === 0) {
+      repetitions++;
+      interval = 0;
+      easeFactor = Math.max(1.3, easeFactor - 0.15);
+      return { interval, easeFactor, nextReview: now + 10 * 60 * 1000, lastReview: now, repetitions, type: 'learning' };
+    }
+    repetitions++;
+    interval = Math.max(1, Math.round(interval * 1.5));
+    easeFactor = Math.max(1.3, easeFactor - 0.15);
+    return { interval, easeFactor, nextReview: now + interval * 24 * 60 * 60 * 1000, lastReview: now, repetitions, type: 'review' };
   }
 
   repetitions++;
 
-  if (grade === 'hard') {
-    if (repetitions <= 1) interval = 1;
-    else interval = Math.max(1, Math.round(interval * 1.2));
-    easeFactor = Math.max(1.3, easeFactor - 0.15);
-  } else if (grade === 'good') {
+  if (grade === 'good') {
     if (repetitions <= 1) interval = 1;
     else if (repetitions === 2) interval = 3;
     else interval = Math.round(interval * easeFactor);
   } else if (grade === 'easy') {
-    if (repetitions <= 1) interval = 4;
+    if (repetitions <= 1) interval = 3;
     else interval = Math.round(interval * easeFactor * 1.3);
     easeFactor = Math.max(1.3, easeFactor + 0.15);
   }
@@ -84,7 +94,7 @@ function gradeSRS(card: CardSRS, grade: 'again' | 'hard' | 'good' | 'easy'): Car
 function getIntervalHint(card: CardSRS | undefined, grade: 'again' | 'hard' | 'good' | 'easy'): string {
   const c = card || initSRS();
   const result = gradeSRS({ ...c }, grade);
-  if (grade === 'again') return '10 წთ';
+  if (grade === 'again') return '1 წთ';
   if (result.interval === 0) return '10 წთ';
   if (result.interval === 1) return '1 დღე';
   if (result.interval < 30) return `${result.interval} დღე`;
@@ -104,6 +114,7 @@ const DAILY_NEW_KEY = 'fluentge_daily_new'; // tracks new cards shown today per 
 interface StudyDeckEntry {
   deckId: string;
   mode: 'ka-en' | 'en-ka' | 'mixed';
+  studyStyle: 'anki' | 'free';
   addedAt: number;
 }
 
@@ -127,6 +138,7 @@ function loadStudyDecks(): StudyDeckEntry[] {
 
 function saveStudyDecks(decks: StudyDeckEntry[]) {
   localStorage.setItem(STUDY_DECKS_KEY, JSON.stringify(decks));
+  localStorage.setItem('fluentge_study_decks_ts', Date.now().toString());
 }
 
 function getDailyLimit(): number {
@@ -135,6 +147,7 @@ function getDailyLimit(): number {
 
 function setDailyLimit(n: number) {
   localStorage.setItem(DAILY_LIMIT_KEY, String(n));
+  localStorage.setItem('fluentge_daily_limit_ts', String(Date.now()));
 }
 
 // Get today's "study day" — resets at 10:00 AM local time
@@ -185,6 +198,22 @@ function addDailyNewCount(deckId: string, mode: string, count: number) {
   } catch {}
 }
 
+// Free mode progress functions
+function getFreeProgress(deckId: string, mode: string): string[] {
+  try {
+    const key = `fluentge_free_progress_${deckId}_${mode}`;
+    return JSON.parse(localStorage.getItem(key) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+function saveFreeProgress(deckId: string, mode: string, completedCards: string[]) {
+  const key = `fluentge_free_progress_${deckId}_${mode}`;
+  localStorage.setItem(key, JSON.stringify(completedCards));
+  localStorage.setItem('fluentge_free_progress_ts', String(Date.now()));
+}
+
 /* ═══════════════════════════════════════════════════════════ */
 /*                     AUDIO                                   */
 /* ═══════════════════════════════════════════════════════════ */
@@ -224,6 +253,10 @@ type Mode = 'ka-en' | 'en-ka' | 'mixed';
 type Screen = 'study-page' | 'categories' | 'session' | 'complete';
 
 const MODE_LABELS: Record<Mode, string> = { 'ka-en': '🇬🇪→🇬🇧', 'en-ka': '🇬🇧→🇬🇪', 'mixed': '🔀 შერეული' };
+const STYLE_LABELS: Record<'anki' | 'free', string> = { 
+  'anki': 'ანკი რეჟიმი', 
+  'free': 'თავისუფალი რეჟიმი' 
+};
 
 /* ═══════════════════════════════════════════════════════════ */
 /*                     MAIN APP                                */
@@ -236,9 +269,14 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [dailyLimit, setDailyLimitState] = useState(getDailyLimit());
 
+  // Style selection state
+  const [showStyleModal, setShowStyleModal] = useState<{ meta: DeckMeta; mode: Mode } | null>(null);
+  const [showModeHelp, setShowModeHelp] = useState(false);
+
   // Session state
   const [sessionDeckId, setSessionDeckId] = useState('');
   const [sessionMode, setSessionMode] = useState<Mode>('mixed');
+  const [sessionStyle, setSessionStyle] = useState<'anki' | 'free'>('anki');
   const [queue, setQueue] = useState<FlashCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -248,6 +286,10 @@ export default function App() {
   const [sessionStats, setSessionStats] = useState({ total: 0, again: 0, hard: 0, good: 0, easy: 0 });
   const [newInSession, setNewInSession] = useState(0);
   const [reviewInSession, setReviewInSession] = useState(0);
+  
+  // Free mode state
+  const [freeQueue, setFreeQueue] = useState<FlashCard[]>([]);
+  const [freeCompleted, setFreeCompleted] = useState<string[]>([]);
 
   // Deck counts cache (for study page)
   const COMPLETION_THRESHOLD = 14; // days — category complete when all cards have interval >= this
@@ -271,11 +313,19 @@ export default function App() {
     return () => clearInterval(iv);
   }, [deckCounts]);
 
-  // Firebase sync on load + periodic
+  // Firebase sync on load + real-time listener
   useEffect(() => {
-    loadFromCloud().then(() => {
-      // Reload study decks from localStorage after cloud merge
+    // Set callback for real-time updates from other devices
+    setOnSyncCallback(() => {
       setStudyDecks(loadStudyDecks());
+      setDailyLimitState(getDailyLimit());
+      refreshCounts();
+    });
+    
+    loadFromCloud().then(() => {
+      setStudyDecks(loadStudyDecks());
+      // Start real-time listener after initial load
+      startRealtimeSync().catch(() => {});
     }).catch(() => {});
     const syncIv = setInterval(() => syncToCloud().catch(() => {}), 30000);
     const onUnload = () => syncToCloud().catch(() => {});
@@ -287,7 +337,7 @@ export default function App() {
       }
     };
     document.addEventListener('visibilitychange', onVis);
-    return () => { clearInterval(syncIv); window.removeEventListener('beforeunload', onUnload); document.removeEventListener('visibilitychange', onVis); };
+    return () => { clearInterval(syncIv); window.removeEventListener('beforeunload', onUnload); document.removeEventListener('visibilitychange', onVis); stopRealtimeSync(); };
   }, []);
 
   // Refresh counts
@@ -305,59 +355,98 @@ export default function App() {
       const deck = await loadDeck(entry.deckId);
       if (!deck) continue;
       const mKey = entry.mode === 'mixed' ? 'mixed' : entry.mode === 'ka-en' ? 'kaen' : 'enka';
+      const style = entry.studyStyle || 'anki'; // Backward compatibility
       let newCards = 0, reviewCards = 0;
       let nextReviewAt: number | null = null;
       let masteredCount = 0;
       const dailyUsed = getDailyNewCount(entry.deckId, mKey);
       const totalCards = deck.cards.length;
 
-      for (const card of deck.cards) {
-        const key = getCardKey(card, mKey);
-        const srs = allSRS[key];
-        if (!srs) {
-          newCards++;
-        } else if (srs.nextReview <= currentTime) {
-          reviewCards++;
-          if (srs.interval >= COMPLETION_THRESHOLD) masteredCount++;
-        } else {
-          if (srs.interval >= COMPLETION_THRESHOLD) masteredCount++;
-          if (nextReviewAt === null || srs.nextReview < nextReviewAt) {
-            nextReviewAt = srs.nextReview;
+      if (style === 'free') {
+        // Free mode: get completed cards count
+        const completed = getFreeProgress(entry.deckId, mKey);
+        masteredCount = completed.length;
+        newCards = 0;
+        reviewCards = totalCards - completed.length;
+      } else {
+        // Anki mode: existing logic
+        for (const card of deck.cards) {
+          const key = getCardKey(card, mKey);
+          const srs = allSRS[key];
+          if (!srs) {
+            newCards++;
+          } else if (srs.nextReview <= currentTime) {
+            reviewCards++;
+            if (srs.interval >= COMPLETION_THRESHOLD) masteredCount++;
+          } else {
+            if (srs.interval >= COMPLETION_THRESHOLD) masteredCount++;
+            if (nextReviewAt === null || srs.nextReview < nextReviewAt) {
+              nextReviewAt = srs.nextReview;
+            }
           }
         }
+        newCards = Math.max(0, Math.min(newCards, limit - dailyUsed));
       }
 
-      const availableNew = Math.max(0, Math.min(newCards, limit - dailyUsed));
-      const completed = totalCards > 0 && newCards === 0 && masteredCount === totalCards;
+      const completed = totalCards > 0 && (style === 'free' ? masteredCount === totalCards : (newCards === 0 && masteredCount === totalCards));
       const progress = totalCards > 0 ? Math.round((masteredCount / totalCards) * 100) : 0;
 
-      counts[`${entry.deckId}_${entry.mode}`] = { newCards: availableNew, reviewCards, nextReviewAt, completed, progress };
+      counts[`${entry.deckId}_${entry.mode}_${style}`] = { newCards, reviewCards, nextReviewAt, completed, progress };
     }
     setDeckCounts(counts);
   }
 
   /* ─── Add deck to study page ─── */
-  function addStudyDeck(deckId: string, mode: Mode) {
-    const exists = studyDecks.some(d => d.deckId === deckId && d.mode === mode);
+  function addStudyDeck(deckId: string, mode: Mode, studyStyle: 'anki' | 'free' = 'anki') {
+    const exists = studyDecks.some(d => d.deckId === deckId && d.mode === mode && d.studyStyle === studyStyle);
     if (exists) {
       setScreen('study-page');
       return;
     }
-    const newDecks = [...studyDecks, { deckId, mode, addedAt: Date.now() }];
+    // Clear any old progress when adding fresh
+    const mKey = mode === 'mixed' ? 'mixed' : mode === 'ka-en' ? 'kaen' : 'enka';
+    if (studyStyle === 'free') {
+      localStorage.setItem(`fluentge_free_progress_${deckId}_${mKey}`, '[]');
+      localStorage.setItem('fluentge_free_progress_ts', String(Date.now()));
+    }
+    const newDecks = [...studyDecks, { deckId, mode, studyStyle, addedAt: Date.now() }];
     setStudyDecks(newDecks);
     saveStudyDecks(newDecks);
     syncNow();
     setScreen('study-page');
   }
 
-  const [confirmDelete, setConfirmDelete] = useState<{ deckId: string; mode: Mode } | null>(null);
+  const [confirmDelete, setConfirmDelete] = useState<{ deckId: string; mode: Mode; studyStyle: 'anki' | 'free' } | null>(null);
 
-  function removeStudyDeck(deckId: string, mode: Mode) {
+  function removeStudyDeck(deckId: string, mode: Mode, studyStyle: 'anki' | 'free') {
+    const mKey = mode === 'mixed' ? 'mixed' : mode === 'ka-en' ? 'kaen' : 'enka';
+    
+    // 1. Remove from UI immediately
     const newDecks = studyDecks.filter(d => !(d.deckId === deckId && d.mode === mode));
     setStudyDecks(newDecks);
     saveStudyDecks(newDecks);
-    syncNow();
     setConfirmDelete(null);
+    
+    // 2. Clear ALL progress for this deck (both free and SRS)
+    localStorage.setItem(`fluentge_free_progress_${deckId}_${mKey}`, '[]');
+    localStorage.setItem('fluentge_free_progress_ts', String(Date.now()));
+    
+    // SRS cleanup async (doesn't block UI)
+    loadDeck(deckId).then(deck => {
+      if (deck) {
+        const allSRS = loadAllSRS();
+        for (const card of deck.cards) {
+          delete allSRS[getCardKey(card, mKey)];
+        }
+        localStorage.setItem(SRS_KEY, JSON.stringify(allSRS));
+      }
+      // Force sync immediately so cloud also gets cleared progress
+      syncToCloud().catch(() => {});
+      refreshCounts();
+    }).catch(() => {
+      syncToCloud().catch(() => {});
+      refreshCounts();
+    });
   }
 
   /* ─── Start session ─── */
@@ -366,67 +455,99 @@ export default function App() {
     const deck = await loadDeck(entry.deckId);
     if (!deck) { setLoading(false); return; }
 
-    const allSRS = loadAllSRS();
-    const currentTime = Date.now();
     const mKey = entry.mode === 'mixed' ? 'mixed' : entry.mode === 'ka-en' ? 'kaen' : 'enka';
-    const limit = getDailyLimit();
-    const dailyUsed = getDailyNewCount(entry.deckId, mKey);
-
-    const dueCards: FlashCard[] = [];
-    const newCards: FlashCard[] = [];
-
-    for (const card of deck.cards) {
-      const key = getCardKey(card, mKey);
-      const srs = allSRS[key];
-      if (!srs) {
-        newCards.push(card);
-      } else if (srs.nextReview <= currentTime) {
-        dueCards.push(card);
-      }
-    }
-
-    // Sort due by most overdue
-    dueCards.sort((a, b) => {
-      const sa = allSRS[getCardKey(a, mKey)]?.nextReview || 0;
-      const sb = allSRS[getCardKey(b, mKey)]?.nextReview || 0;
-      return sa - sb;
-    });
-
-    let combined: FlashCard[] = [];
-
-    if (sessionType === 'new') {
-      const availableNew = Math.max(0, limit - dailyUsed);
-      const newSlice = newCards.slice(0, availableNew);
-      combined = newSlice;
-      setNewInSession(newSlice.length);
-      setReviewInSession(0);
-      // Don't count new cards as used here — count them one by one when graded
-    } else {
-      combined = dueCards;
-      setNewInSession(0);
-      setReviewInSession(dueCards.length);
-    }
-
-    // Shuffle
-    for (let i = combined.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [combined[i], combined[j]] = [combined[j], combined[i]];
-    }
+    const style = entry.studyStyle || 'anki';
 
     setSessionDeckId(entry.deckId);
     setSessionMode(entry.mode);
+    setSessionStyle(style);
 
-    if (combined.length === 0) {
-      setQueue([]);
-      setScreen('complete');
+    if (style === 'free') {
+      // Free mode: load all remaining cards
+      const completedCards = getFreeProgress(entry.deckId, mKey);
+      const remaining = deck.cards.filter(card => !completedCards.includes(getCardKey(card, mKey)));
+      
+      // Shuffle remaining cards so order is different each session
+      for (let i = remaining.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
+      }
+      
+      setFreeCompleted(completedCards);
+      setFreeQueue(remaining);
+      
+      if (remaining.length === 0) {
+        setQueue([]);
+        setScreen('complete');
+      } else {
+        setQueue(remaining);
+        setCurrentIndex(0);
+        setFlipped(false);
+        setGuess('');
+        setTypedCorrect(null);
+        setSessionStats({ total: 0, again: 0, hard: 0, good: 0, easy: 0 });
+        setScreen('session');
+      }
     } else {
-      setQueue(combined);
-      setCurrentIndex(0);
-      setFlipped(false);
-      setGuess('');
-      setTypedCorrect(null);
-      setSessionStats({ total: 0, again: 0, hard: 0, good: 0, easy: 0 });
-      setScreen('session');
+      // Anki mode: existing logic
+      const allSRS = loadAllSRS();
+      const currentTime = Date.now();
+      const limit = getDailyLimit();
+      const dailyUsed = getDailyNewCount(entry.deckId, mKey);
+
+      const dueCards: FlashCard[] = [];
+      const newCards: FlashCard[] = [];
+
+      for (const card of deck.cards) {
+        const key = getCardKey(card, mKey);
+        const srs = allSRS[key];
+        if (!srs) {
+          newCards.push(card);
+        } else if (srs.nextReview <= currentTime) {
+          dueCards.push(card);
+        }
+      }
+
+      // Sort due by most overdue
+      dueCards.sort((a, b) => {
+        const sa = allSRS[getCardKey(a, mKey)]?.nextReview || 0;
+        const sb = allSRS[getCardKey(b, mKey)]?.nextReview || 0;
+        return sa - sb;
+      });
+
+      let combined: FlashCard[] = [];
+
+      if (sessionType === 'new') {
+        const availableNew = Math.max(0, limit - dailyUsed);
+        const newSlice = newCards.slice(0, availableNew);
+        combined = newSlice;
+        setNewInSession(newSlice.length);
+        setReviewInSession(0);
+        // Don't count new cards as used here — count them one by one when graded
+      } else {
+        combined = dueCards;
+        setNewInSession(0);
+        setReviewInSession(dueCards.length);
+      }
+
+      // Shuffle
+      for (let i = combined.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [combined[i], combined[j]] = [combined[j], combined[i]];
+      }
+
+      if (combined.length === 0) {
+        setQueue([]);
+        setScreen('complete');
+      } else {
+        setQueue(combined);
+        setCurrentIndex(0);
+        setFlipped(false);
+        setGuess('');
+        setTypedCorrect(null);
+        setSessionStats({ total: 0, again: 0, hard: 0, good: 0, easy: 0 });
+        setScreen('session');
+      }
     }
     setLoading(false);
   }
@@ -471,45 +592,97 @@ export default function App() {
   function handleGrade(grade: 'again' | 'hard' | 'good' | 'easy') {
     if (!currentCard) return;
     const key = getCardKey(currentCard, modeKey);
-    const allSRS = loadAllSRS();
-    const current = allSRS[key] || initSRS();
-    const updated = gradeSRS(current, grade);
-    saveSRS(key, updated);
-    syncNow();
 
-    // Count new card as used only when actually graded (not when session starts)
-    if (current.repetitions === 0 && current.type === 'new') {
-      addDailyNewCount(sessionDeckId, modeKey, 1);
-    }
-
-    // Track learned words
-    if (grade !== 'again' && current.repetitions === 0) {
-      try {
-        const known: Array<{word: string, georgian: string}> = JSON.parse(localStorage.getItem('knownCards') || '[]');
-        if (!known.some(k => k.word === currentCard.english)) {
-          known.push({ word: currentCard.english, georgian: currentCard.georgian });
-          localStorage.setItem('knownCards', JSON.stringify(known));
+    if (sessionStyle === 'free') {
+      // Free mode grading
+      if (grade === 'good' || grade === 'easy') {
+        // Correct - mark as completed
+        const newCompleted = [...freeCompleted, key];
+        setFreeCompleted(newCompleted);
+        saveFreeProgress(sessionDeckId, modeKey, newCompleted);
+        
+        // Remove from queue
+        const newQueue = queue.filter((_, i) => i !== currentIndex);
+        setQueue(newQueue);
+        
+        if (newQueue.length === 0) {
+          // All done!
+          setScreen('complete');
+          refreshCounts();
+          return;
         }
-      } catch {}
-    }
-
-    setSessionStats(prev => ({
-      total: prev.total + 1,
-      again: prev.again + (grade === 'again' ? 1 : 0),
-      hard: prev.hard + (grade === 'hard' ? 1 : 0),
-      good: prev.good + (grade === 'good' ? 1 : 0),
-      easy: prev.easy + (grade === 'easy' ? 1 : 0),
-    }));
-
-    if (currentIndex + 1 < queue.length) {
-      setCurrentIndex(currentIndex + 1);
+        
+        // Stay at same index if not last card, otherwise go to previous
+        if (currentIndex >= newQueue.length) {
+          setCurrentIndex(Math.max(0, newQueue.length - 1));
+        }
+      } else {
+        // Wrong - move to end of queue
+        const newQueue = [...queue];
+        const wrongCard = newQueue.splice(currentIndex, 1)[0];
+        newQueue.push(wrongCard);
+        setQueue(newQueue);
+        
+        // Stay at same index if not last card, otherwise go to previous
+        if (currentIndex >= newQueue.length) {
+          setCurrentIndex(Math.max(0, newQueue.length - 1));
+        }
+      }
+      
+      setSessionStats(prev => ({
+        total: prev.total + 1,
+        again: prev.again + (grade === 'again' ? 1 : 0),
+        hard: prev.hard + (grade === 'hard' ? 1 : 0),
+        good: prev.good + (grade === 'good' ? 1 : 0),
+        easy: prev.easy + (grade === 'easy' ? 1 : 0),
+      }));
+      
       setFlipped(false);
       setGuess('');
       setTypedCorrect(null);
       setTimeout(() => inputRef.current?.focus(), 100);
     } else {
-      setScreen('complete');
-      refreshCounts();
+      // Anki mode grading
+      const allSRS = loadAllSRS();
+      const current = allSRS[key] || initSRS();
+      const updated = gradeSRS(current, grade);
+      saveSRS(key, updated);
+      syncNow();
+
+      // Count new card as used only when actually graded (not when session starts)
+      if (current.repetitions === 0 && current.type === 'new') {
+        addDailyNewCount(sessionDeckId, modeKey, 1);
+      }
+
+      // Track learned words
+      if (grade !== 'again' && current.repetitions === 0) {
+        try {
+          const known: Array<{word: string, georgian: string}> = JSON.parse(localStorage.getItem('knownCards') || '[]');
+          if (!known.some(k => k.word === currentCard.english)) {
+            known.push({ word: currentCard.english, georgian: currentCard.georgian });
+            localStorage.setItem('knownCards', JSON.stringify(known));
+          }
+        } catch {}
+      }
+
+      setSessionStats(prev => ({
+        total: prev.total + 1,
+        again: prev.again + (grade === 'again' ? 1 : 0),
+        hard: prev.hard + (grade === 'hard' ? 1 : 0),
+        good: prev.good + (grade === 'good' ? 1 : 0),
+        easy: prev.easy + (grade === 'easy' ? 1 : 0),
+      }));
+
+      if (currentIndex + 1 < queue.length) {
+        setCurrentIndex(currentIndex + 1);
+        setFlipped(false);
+        setGuess('');
+        setTypedCorrect(null);
+        setTimeout(() => inputRef.current?.focus(), 100);
+      } else {
+        setScreen('complete');
+        refreshCounts();
+      }
     }
   }
 
@@ -580,14 +753,22 @@ export default function App() {
             </a>
           )}
 
-          <h2 className="text-2xl fc-heading mb-4">📖 სასწავლო ბარათები</h2>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl fc-heading">📖 სასწავლო ბარათები</h2>
+            <button
+              onClick={() => setShowModeHelp(true)}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-[var(--color-text-muted)] hover:text-blue-400 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition"
+            >
+              ❓ რეჟიმები
+            </button>
+          </div>
 
           {/* Daily limit setting */}
           <div className="flex items-center gap-3 mb-4 p-3 bg-white/5 rounded-xl border border-white/10">
             <span className="text-sm text-[var(--color-text-muted)]">დღიური ლიმიტი:</span>
             <select
               value={dailyLimit}
-              onChange={e => { const v = parseInt(e.target.value); setDailyLimitState(v); setDailyLimit(v); refreshCounts(); }}
+              onChange={e => { const v = parseInt(e.target.value); setDailyLimitState(v); setDailyLimit(v); refreshCounts(); syncNow(); }}
               className="bg-white/10 border border-white/10 rounded-lg px-2 py-1 text-sm text-[var(--color-text)] focus:outline-none"
             >
               {[5, 10, 15, 20, 30, 50].map(n => (
@@ -613,10 +794,11 @@ export default function App() {
               {studyDecks.map(entry => {
                 const meta = deckIndex.find(d => d.id === entry.deckId);
                 if (!meta) return null;
-                const counts = deckCounts[`${entry.deckId}_${entry.mode}`] || { newCards: 0, reviewCards: 0, completed: false, progress: 0 };
+                const style = entry.studyStyle || 'anki'; // Backward compatibility
+                const counts = deckCounts[`${entry.deckId}_${entry.mode}_${style}`] || { newCards: 0, reviewCards: 0, completed: false, progress: 0 };
 
                 return (
-                  <div key={`${entry.deckId}_${entry.mode}`} className={`fc-deck-card border p-4 transition fc-fadeInUp ${
+                  <div key={`${entry.deckId}_${entry.mode}_${style}`} className={`fc-deck-card border p-4 transition fc-fadeInUp ${
                     counts.completed
                       ? 'border-emerald-500/30'
                       : 'border-white/10'
@@ -628,11 +810,13 @@ export default function App() {
                         <span className="text-2xl">{meta.icon}</span>
                         <div>
                           <div className="fc-semibold text-sm text-white">{meta.nameKa}</div>
-                          <div className="text-xs text-white/70">{MODE_LABELS[entry.mode]} · {meta.cardCount} ბარათი</div>
+                          <div className="text-xs text-white/70">
+                            {MODE_LABELS[entry.mode]} · {STYLE_LABELS[style]} · {meta.cardCount} ბარათი
+                          </div>
                         </div>
                       </div>
                       <button
-                        onClick={() => setConfirmDelete({ deckId: entry.deckId, mode: entry.mode })}
+                        onClick={() => setConfirmDelete({ deckId: entry.deckId, mode: entry.mode, studyStyle: style })}
                         className="text-xs text-rose-400/60 hover:text-rose-400 transition px-2 py-1"
                       >✕</button>
                     </div>
@@ -645,7 +829,12 @@ export default function App() {
                           style={{ width: `${counts.progress}%` }}
                         />
                       </div>
-                      <span className="text-xs text-white/80 tabular-nums fc-semibold">{counts.progress}%</span>
+                      <span className="text-xs text-white/80 tabular-nums fc-semibold">
+                        {style === 'free' 
+                          ? `გავლილი ${Math.round(meta.cardCount * counts.progress / 100)} / ${meta.cardCount}`
+                          : `${counts.progress}%`
+                        }
+                      </span>
                     </div>
 
                     {/* Completion banner */}
@@ -657,46 +846,67 @@ export default function App() {
                       </div>
                     )}
 
-                    {/* New / Review as clickable buttons */}
-                    <div className="grid grid-cols-2 gap-2">
-                      {/* New Cards Button */}
-                      <button
-                        onClick={() => { if (counts.newCards > 0) { playClick(); startSession(entry, 'new'); } }}
-                        disabled={counts.newCards === 0}
-                        className={`rounded-xl p-4 text-center transition-all ${
-                          counts.newCards > 0
-                            ? 'bg-sky-500/30 border-2 border-sky-400/50 hover:bg-sky-500/40 cursor-pointer fc-btn-3d'
-                            : 'bg-white/5 border border-white/10 cursor-not-allowed'
-                        }`}
-                      >
-                        <div className={`text-3xl font-bold ${counts.newCards > 0 ? 'text-sky-300' : 'text-white/70'}`}>{counts.newCards}</div>
-                        <div className={`text-sm mt-1 font-semibold ${counts.newCards > 0 ? 'text-sky-200' : 'text-white/70'}`}>ახალი</div>
-                        {counts.newCards === 0 && (
-                          <div className="text-[9px] text-amber-400/70 mt-1">
-                            ⏰ <ResetCountdown now={now} />
-                          </div>
-                        )}
-                      </button>
-
-                      {/* Review Cards Button */}
+                    {style === 'free' ? (
+                      /* Free Mode - Single Button */
                       <button
                         onClick={() => { if (counts.reviewCards > 0) { playClick(); startSession(entry, 'review'); } }}
                         disabled={counts.reviewCards === 0}
-                        className={`rounded-xl p-4 text-center transition-all ${
+                        className={`w-full rounded-xl p-4 text-center transition-all ${
                           counts.reviewCards > 0
-                            ? 'bg-emerald-500 border-2 border-emerald-400 hover:bg-emerald-400 cursor-pointer fc-btn-3d'
+                            ? 'bg-gradient-to-br from-purple-500/80 to-blue-500/80 border-2 border-purple-400/50 hover:from-purple-500 hover:to-blue-500 cursor-pointer fc-btn-3d'
                             : 'bg-white/5 border border-white/10 cursor-not-allowed'
                         }`}
                       >
-                        <div className={`text-3xl font-bold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/70'}`}>{counts.reviewCards}</div>
-                        <div className={`text-sm mt-1 font-semibold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/70'}`}>გადასახედი</div>
-                        {counts.reviewCards === 0 && counts.nextReviewAt && counts.nextReviewAt > now && (
-                          <div className="text-[9px] text-amber-400/70 mt-1">
-                            ⏰ <Countdown target={counts.nextReviewAt} now={now} onDone={refreshCounts} />
-                          </div>
-                        )}
+                        <div className="text-lg">📋</div>
+                        <div className={`text-lg font-bold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/70'}`}>
+                          {counts.reviewCards > 0 ? 'გაგრძელება' : 'დასრულებულია'}
+                        </div>
+                        <div className={`text-sm mt-1 ${counts.reviewCards > 0 ? 'text-purple-200' : 'text-white/70'}`}>
+                          {counts.reviewCards > 0 ? `${counts.reviewCards} სიტყვა დარჩა` : 'ყველა სიტყვა შესწავლილია'}
+                        </div>
                       </button>
-                    </div>
+                    ) : (
+                      /* Anki Mode - Two Buttons */
+                      <div className="grid grid-cols-2 gap-2">
+                        {/* New Cards Button */}
+                        <button
+                          onClick={() => { if (counts.newCards > 0) { playClick(); startSession(entry, 'new'); } }}
+                          disabled={counts.newCards === 0}
+                          className={`rounded-xl p-4 text-center transition-all ${
+                            counts.newCards > 0
+                              ? 'bg-sky-500/30 border-2 border-sky-400/50 hover:bg-sky-500/40 cursor-pointer fc-btn-3d'
+                              : 'bg-white/5 border border-white/10 cursor-not-allowed'
+                          }`}
+                        >
+                          <div className={`text-3xl font-bold ${counts.newCards > 0 ? 'text-sky-300' : 'text-white/70'}`}>{counts.newCards}</div>
+                          <div className={`text-sm mt-1 font-semibold ${counts.newCards > 0 ? 'text-sky-200' : 'text-white/70'}`}>ახალი</div>
+                          {counts.newCards === 0 && (
+                            <div className="text-[9px] text-amber-400/70 mt-1">
+                              ⏰ <ResetCountdown now={now} />
+                            </div>
+                          )}
+                        </button>
+
+                        {/* Review Cards Button */}
+                        <button
+                          onClick={() => { if (counts.reviewCards > 0) { playClick(); startSession(entry, 'review'); } }}
+                          disabled={counts.reviewCards === 0}
+                          className={`rounded-xl p-4 text-center transition-all ${
+                            counts.reviewCards > 0
+                              ? 'bg-emerald-500 border-2 border-emerald-400 hover:bg-emerald-400 cursor-pointer fc-btn-3d'
+                              : 'bg-white/5 border border-white/10 cursor-not-allowed'
+                          }`}
+                        >
+                          <div className={`text-3xl font-bold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/70'}`}>{counts.reviewCards}</div>
+                          <div className={`text-sm mt-1 font-semibold ${counts.reviewCards > 0 ? 'text-white' : 'text-white/70'}`}>გადასახედი</div>
+                          {counts.reviewCards === 0 && counts.nextReviewAt && counts.nextReviewAt > now && (
+                            <div className="text-[9px] text-amber-400/70 mt-1">
+                              ⏰ <Countdown target={counts.nextReviewAt} now={now} onDone={refreshCounts} />
+                            </div>
+                          )}
+                        </button>
+                      </div>
+                    )}
                     </div>{/* end fc-deck-card-content */}
                   </div>
                 );
@@ -740,7 +950,7 @@ export default function App() {
                 <CategoryCard
                   meta={top2000}
                   isAdded={(mode: Mode) => studyDecks.some(d => d.deckId === top2000.id && d.mode === mode)}
-                  onSelect={(m, mode) => addStudyDeck(m.id, mode)}
+                  onSelect={(m, mode) => setShowStyleModal({ meta: m, mode })}
                   featured
                 />
               </div>
@@ -756,7 +966,7 @@ export default function App() {
                 key={meta.id}
                 meta={meta}
                 isAdded={(mode: Mode) => studyDecks.some(d => d.deckId === meta.id && d.mode === mode)}
-                onSelect={(m, mode) => addStudyDeck(m.id, mode)}
+                onSelect={(m, mode) => setShowStyleModal({ meta: m, mode })}
               />
             ))}
           </div>
@@ -778,8 +988,13 @@ export default function App() {
         <div className="max-w-lg mx-auto px-4 py-4 pb-28 fc-session-bg relative z-10">
           {/* Info */}
           <div className="flex items-center justify-between mb-2 text-xs text-[var(--color-text-muted)]">
-            <span>📋 ახალი: {newInSession} | გადასახედი: {reviewInSession}</span>
-            <span>{currentIndex + 1} / {queue.length}</span>
+            <span>
+              {sessionStyle === 'free' 
+                ? `📋 ${STYLE_LABELS[sessionStyle]} | დარჩა: ${queue.length}`
+                : `📋 ახალი: ${newInSession} | გადასახედი: ${reviewInSession}`
+              }
+            </span>
+            {sessionStyle !== 'free' && <span>{currentIndex + 1} / {queue.length}</span>}
           </div>
 
           {/* Progress bar */}
@@ -881,7 +1096,7 @@ export default function App() {
             </div>
           )}
 
-          {/* Wrong — show grade buttons (no "easy") */}
+          {/* Wrong — show grade buttons */}
           {flipped && typedCorrect === false && (
             <div className="mt-5">
               {guess.trim() && (
@@ -889,32 +1104,55 @@ export default function App() {
                   ❌ შენი პასუხი: <span className="font-semibold">{guess}</span>
                 </div>
               )}
-              <div className="grid grid-cols-3 gap-2">
-                <button
-                  onClick={() => { playClick(); handleGrade('again'); }}
-                  className="py-3 rounded-2xl bg-gradient-to-b from-red-500/80 to-red-600/80 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all border border-red-400/20 fc-grade-btn"
-                >
-                  <div className="text-base">🔄</div>
-                  <div className="text-xs">ისევ</div>
-                  <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'again')}</div>
-                </button>
-                <button
-                  onClick={() => { playClick(); handleGrade('hard'); }}
-                  className="py-3 rounded-2xl bg-gradient-to-b from-orange-500/80 to-orange-600/80 hover:from-orange-500 hover:to-orange-600 text-white font-bold transition-all border border-orange-400/20 fc-grade-btn"
-                >
-                  <div className="text-base">😓</div>
-                  <div className="text-xs">რთული</div>
-                  <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'hard')}</div>
-                </button>
-                <button
-                  onClick={() => { playClick(); handleGrade('good'); }}
-                  className="py-3 rounded-2xl bg-gradient-to-b from-sky-500/80 to-sky-600/80 hover:from-sky-500 hover:to-sky-600 text-white font-bold transition-all border border-sky-400/20 fc-grade-btn"
-                >
-                  <div className="text-base">👍</div>
-                  <div className="text-xs">კარგი</div>
-                  <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'good')}</div>
-                </button>
-              </div>
+              {sessionStyle === 'free' ? (
+                /* Free Mode - Only 2 buttons */
+                <div className="grid grid-cols-2 gap-3">
+                  <button
+                    onClick={() => { playClick(); handleGrade('again'); }}
+                    className="py-4 rounded-2xl bg-gradient-to-b from-red-500/80 to-red-600/80 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all border border-red-400/20 fc-grade-btn"
+                  >
+                    <div className="text-lg">❌</div>
+                    <div className="text-sm">არ ვიცი</div>
+                    <div className="text-xs opacity-60 mt-1">ბოლოში წავა</div>
+                  </button>
+                  <button
+                    onClick={() => { playClick(); handleGrade('good'); }}
+                    className="py-4 rounded-2xl bg-gradient-to-b from-emerald-500/80 to-emerald-600/80 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold transition-all border border-emerald-400/20 fc-grade-btn"
+                  >
+                    <div className="text-lg">✅</div>
+                    <div className="text-sm">ვიცი</div>
+                    <div className="text-xs opacity-60 mt-1">გავლილია</div>
+                  </button>
+                </div>
+              ) : (
+                /* Anki Mode - 3 buttons */
+                <div className="grid grid-cols-3 gap-2">
+                  <button
+                    onClick={() => { playClick(); handleGrade('again'); }}
+                    className="py-3 rounded-2xl bg-gradient-to-b from-red-500/80 to-red-600/80 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all border border-red-400/20 fc-grade-btn"
+                  >
+                    <div className="text-base">🔄</div>
+                    <div className="text-xs">ისევ</div>
+                    <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'again')}</div>
+                  </button>
+                  <button
+                    onClick={() => { playClick(); handleGrade('hard'); }}
+                    className="py-3 rounded-2xl bg-gradient-to-b from-orange-500/80 to-orange-600/80 hover:from-orange-500 hover:to-orange-600 text-white font-bold transition-all border border-orange-400/20 fc-grade-btn"
+                  >
+                    <div className="text-base">😓</div>
+                    <div className="text-xs">რთული</div>
+                    <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'hard')}</div>
+                  </button>
+                  <button
+                    onClick={() => { playClick(); handleGrade('good'); }}
+                    className="py-3 rounded-2xl bg-gradient-to-b from-sky-500/80 to-sky-600/80 hover:from-sky-500 hover:to-sky-600 text-white font-bold transition-all border border-sky-400/20 fc-grade-btn"
+                  >
+                    <div className="text-base">👍</div>
+                    <div className="text-xs">კარგი</div>
+                    <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'good')}</div>
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
@@ -970,17 +1208,132 @@ export default function App() {
         </div>
       )}
 
+      {/* Style Selection Modal */}
+      {showStyleModal && (
+        <div className="fixed inset-0 bg-black/60 z-[9999]" onClick={() => setShowStyleModal(null)}>
+          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--color-bg)] border border-white/10 rounded-2xl p-6 max-w-sm w-[calc(100%-2rem)] shadow-2xl z-[10000]" onClick={e => e.stopPropagation()}>
+            <div className="text-center mb-6">
+              <div className="text-3xl mb-3">📚</div>
+              <h3 className="font-bold text-lg mb-2">სასწავლო რეჟიმი</h3>
+              <p className="text-sm text-[var(--color-text-muted)]">
+                აირჩიე სასწავლო სტილი <strong>{showStyleModal.meta.nameKa}</strong> კატეგორიისთვის
+              </p>
+            </div>
+            
+            <div className="space-y-3">
+              <button
+                onClick={() => {
+                  playClick();
+                  addStudyDeck(showStyleModal.meta.id, showStyleModal.mode, 'anki');
+                  setShowStyleModal(null);
+                }}
+                className="w-full text-left p-4 rounded-xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 hover:bg-blue-500/15 transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl">🔄</div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-blue-400">ანკი რეჟიმი</div>
+                    <div className="text-xs text-[var(--color-text-muted)] mt-1">
+                      ინტერვალური გამეორება - სიტყვები ბრუნდება ოპტიმალურ დროს
+                    </div>
+                  </div>
+                </div>
+              </button>
+              
+              <button
+                onClick={() => {
+                  playClick();
+                  addStudyDeck(showStyleModal.meta.id, showStyleModal.mode, 'free');
+                  setShowStyleModal(null);
+                }}
+                className="w-full text-left p-4 rounded-xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 hover:bg-purple-500/15 transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl">📋</div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-purple-400">თავისუფალი რეჟიმი</div>
+                    <div className="text-xs text-[var(--color-text-muted)] mt-1">
+                      გაიარე ყველა სიტყვა - სწორი = გავლილი, არასწორი = ბოლოში
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            
+            <div className="flex items-center justify-between mt-4">
+              <button
+                onClick={() => setShowModeHelp(true)}
+                className="flex items-center gap-1.5 text-sm text-[var(--color-text-muted)] hover:text-blue-400 transition"
+              >
+                <span>❓</span> როგორ მუშაობს?
+              </button>
+              <button
+                onClick={() => setShowStyleModal(null)}
+                className="text-sm text-[var(--color-text-muted)] hover:text-white transition"
+              >
+                გაუქმება
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Mode Help Modal */}
+      {showModeHelp && (
+        <div className="fixed inset-0 bg-black/70 z-[10001]" onClick={() => setShowModeHelp(false)}>
+          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--color-bg)] border border-white/10 rounded-2xl p-6 max-w-md w-[calc(100%-2rem)] shadow-2xl z-[10002] max-h-[80vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+            <h3 className="font-bold text-lg text-center mb-5">📖 რეჟიმების ახსნა</h3>
+            
+            <div className="mb-5 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-xl">🔄</span>
+                <span className="font-bold text-blue-400">ანკი რეჟიმი</span>
+              </div>
+              <div className="text-sm text-[var(--color-text-muted)] space-y-2">
+                <p>სიტყვები ბრუნდება <strong>ოპტიმალურ დროს</strong> — ჯერ ხშირად, მერე უფრო იშვიათად.</p>
+                <p>პასუხის შემდეგ <strong>3 ღილაკი</strong> გაქვს:</p>
+                <p>❌ <strong>არ ვიცი</strong> — სიტყვა 1 წუთში დაბრუნდება</p>
+                <p>👍 <strong>ვიცი</strong> — სიტყვა მოგვიანებით დაბრუნდება (10 წთ, 1 დღე, 3 დღე...)</p>
+                <p>⚡ <strong>ადვილია</strong> — სიტყვა გრძელ ინტერვალში გადადის</p>
+                <p className="mt-2">✅ <strong>დღიური ლიმიტი</strong> აკონტროლებს რამდენ ახალ სიტყვას ნახავ დღეში.</p>
+              </div>
+            </div>
+            
+            <div className="mb-5 p-4 rounded-xl bg-purple-500/10 border border-purple-500/20">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-xl">📋</span>
+                <span className="font-bold text-purple-400">თავისუფალი რეჟიმი</span>
+              </div>
+              <div className="text-sm text-[var(--color-text-muted)] space-y-2">
+                <p>ყველა სიტყვა ერთად იტვირთება, <strong>ლიმიტის გარეშე</strong>.</p>
+                <p>პასუხის შემდეგ <strong>2 ღილაკი</strong> გაქვს:</p>
+                <p>✅ <strong>ვიცი</strong> — სიტყვა სიიდან წაიშლება (გავლილია)</p>
+                <p>❌ <strong>არ ვიცი</strong> — სიტყვა სიის ბოლოში წავა, ისევ გამოჩნდება</p>
+                <p className="mt-2">🎯 <strong>მიზანი:</strong> გაიარე ყველა სიტყვა სანამ სია ცარიელი არ გახდება.</p>
+              </div>
+            </div>
+            
+            <button
+              onClick={() => setShowModeHelp(false)}
+              className="w-full py-3 rounded-xl bg-white/10 hover:bg-white/15 text-sm font-medium transition"
+            >
+              გასაგებია ✅
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Delete Confirmation Modal */}
       {confirmDelete && (() => {
         const meta = deckIndex.find(d => d.id === confirmDelete.deckId);
         return (
-          <div className="fixed inset-0 bg-black/60 z-[999] px-4 flex items-center justify-center" onClick={() => setConfirmDelete(null)}>
-            <div className="bg-[var(--color-bg)] border border-white/10 rounded-2xl p-5 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
+          <div className="fixed inset-0 bg-black/60 z-[9999]" onClick={() => setConfirmDelete(null)}>
+            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--color-bg)] border border-white/10 rounded-2xl p-5 max-w-sm w-[calc(100%-2rem)] shadow-2xl z-[10000]" onClick={e => e.stopPropagation()}>
               <div className="text-center mb-4">
                 <div className="text-4xl mb-2">⚠️</div>
                 <h3 className="font-bold text-lg mb-1">კატეგორიის წაშლა</h3>
                 <p className="text-sm text-[var(--color-text-muted)]">
-                  ნამდვილად გსურს <strong>{meta?.nameKa}</strong> ({MODE_LABELS[confirmDelete.mode]}) წაშლა?
+                  ნამდვილად გსურს <strong>{meta?.nameKa}</strong> ({MODE_LABELS[confirmDelete.mode]}, {STYLE_LABELS[confirmDelete.studyStyle]}) წაშლა?
                 </p>
               </div>
               <div className="flex gap-3">
@@ -991,7 +1344,7 @@ export default function App() {
                   გაუქმება
                 </button>
                 <button
-                  onClick={() => removeStudyDeck(confirmDelete.deckId, confirmDelete.mode)}
+                  onClick={() => removeStudyDeck(confirmDelete.deckId, confirmDelete.mode, confirmDelete.studyStyle)}
                   className="flex-1 py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-semibold transition"
                 >
                   წაშლა

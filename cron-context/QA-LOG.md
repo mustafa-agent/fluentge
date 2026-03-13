@@ -1,9 +1,36 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-13 (11:30 AM)
+- **Date:** 2026-03-13 (7:30 PM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Evening QA Run (Mar 13, 7:30 PM)
+
+### HTTP Health Checks — ✅ All 200
+- All 9 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/paths/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 4.58s, no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Homepage (light mode):** Hero, stats, returning user CTAs, Top 2000, Word of Day, testimonials, How It Works, CTA — all clean ✅
+- **Homepage (dark mode):** Dark bg, readable text, proper contrast ✅
+- **Flashcards (dark mode):** Deck cards with images, new/review buttons, stats bar — all clean ✅
+- **Podcast (dark mode):** 35 episodes, collapsible cards, proper contrast ✅
+- **Podcast (light mode):** White cards, dark text, all readable ✅
+- **Games (light mode):** Hero image, stats bar, 3 categories, all game cards readable ✅
+
+### Console — ✅ No Critical Errors
+- Only `favicon.svg` 404 on flashcards (minor, non-functional)
+
+### Verdict
+Evening QA pass. No code changes since midday. All pages 200, TS clean, build clean, browser visual tests pass in both light and dark mode. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Midday QA Run (Mar 13, 11:30 AM)
 

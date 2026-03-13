@@ -89,8 +89,20 @@ function gather() {
   // New SRS v2 system
   d.srsV2 = jp(localStorage.getItem('fluentge_srs_v2'), {});
   d.studyDecks = jp(localStorage.getItem('fluentge_study_decks'), []);
+  d.studyDecksTs = parseInt(localStorage.getItem('fluentge_study_decks_ts') || '0', 10);
   d.dailyLimit = parseInt(localStorage.getItem('fluentge_daily_limit') || '20', 10);
+  d.dailyLimitTs = parseInt(localStorage.getItem('fluentge_daily_limit_ts') || '0', 10);
   d.dailyNew = jp(localStorage.getItem('fluentge_daily_new'), {});
+
+  // Free mode progress
+  d.freeProgress = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k?.startsWith('fluentge_free_progress_') && !k.endsWith('_ts')) {
+      d.freeProgress[k] = jp(localStorage.getItem(k), []);
+    }
+  }
+  d.freeProgressTs = parseInt(localStorage.getItem('fluentge_free_progress_ts') || '0', 10);
 
   return d;
 }
@@ -207,22 +219,46 @@ function apply(local: any, cloud: any) {
     }
     localStorage.setItem('fluentge_srs_v2', JSON.stringify(merged));
   }
-  // Study decks: merge by deckId+mode
+  // Study decks: last-write-wins based on timestamp
   if (local.studyDecks || cloud.studyDecks) {
-    const localD = local.studyDecks || [];
-    const cloudD = cloud.studyDecks || [];
-    const seen = new Set<string>();
-    const merged: any[] = [];
-    for (const d of [...localD, ...cloudD]) {
-      const k = `${d.deckId}_${d.mode}`;
-      if (!seen.has(k)) { seen.add(k); merged.push(d); }
+    const localTs = parseInt(localStorage.getItem('fluentge_study_decks_ts') || '0', 10);
+    const cloudTs = cloud.studyDecksTs || 0;
+    // Whoever modified last wins — this correctly handles deletions
+    if (cloudTs > localTs) {
+      localStorage.setItem('fluentge_study_decks', JSON.stringify(cloud.studyDecks || []));
+      localStorage.setItem('fluentge_study_decks_ts', cloudTs.toString());
     }
-    localStorage.setItem('fluentge_study_decks', JSON.stringify(merged));
+    // If local is newer, keep local (will be pushed on next syncToCloud)
   }
   // Daily limit: keep cloud
-  if (cloud.dailyLimit) localStorage.setItem('fluentge_daily_limit', cloud.dailyLimit.toString());
+  // dailyLimit: last-write-wins
+  const localDLTs = local.dailyLimitTs || 0;
+  const cloudDLTs = cloud.dailyLimitTs || 0;
+  if (cloudDLTs > localDLTs && cloud.dailyLimit) {
+    localStorage.setItem('fluentge_daily_limit', cloud.dailyLimit.toString());
+    localStorage.setItem('fluentge_daily_limit_ts', String(cloudDLTs));
+  }
   // Daily new: merge
   if (cloud.dailyNew) localStorage.setItem('fluentge_daily_new', JSON.stringify(mergeObj(local.dailyNew, cloud.dailyNew)));
+
+  // Free mode progress: merge arrays per key
+  if (cloud.freeProgress) {
+    // Use timestamp to decide which freeProgress wins (last-write-wins)
+    const localFreeTs = parseInt(localStorage.getItem('fluentge_free_progress_ts') || '0', 10);
+    const cloudFreeTs = cloud.freeProgressTs || 0;
+    
+    for (const key of new Set([...Object.keys(local.freeProgress || {}), ...Object.keys(cloud.freeProgress || {})])) {
+      if (localFreeTs >= cloudFreeTs) {
+        // Local is newer — keep local (could be a reset)
+        const localVal = local.freeProgress?.[key] || [];
+        localStorage.setItem(key, JSON.stringify(localVal));
+      } else {
+        // Cloud is newer — use cloud
+        const cloudVal = cloud.freeProgress?.[key] || [];
+        localStorage.setItem(key, JSON.stringify(cloudVal));
+      }
+    }
+  }
 }
 
 function getUid(): string | null {
@@ -260,18 +296,58 @@ export function syncNow(): void {
   _syncTimer = setTimeout(() => { syncToCloud().catch(() => {}); }, 500);
 }
 
+// Flag to prevent applying our own writes back
+let _isSaving = false;
+
 export async function syncToCloud(): Promise<void> {
   const uid = getUid();
   if (!uid) return;
   await initFirebase();
   if (!db) return;
   try {
+    _isSaving = true;
     const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js" as any);
     const d = gather();
     d.lastSync = new Date().toISOString();
     await setDoc(doc(db, 'users', uid), { progress: d }, { merge: true });
     console.log('[FluentGe Sync] Saved to cloud');
+    setTimeout(() => { _isSaving = false; }, 1000);
   } catch (e: any) {
+    _isSaving = false;
     console.warn('[FluentGe Sync] Save failed:', e.message);
   }
+}
+
+// Real-time listener — fires when another device updates Firestore
+let _unsubscribe: (() => void) | null = null;
+let _onSyncCallback: (() => void) | null = null;
+
+export function setOnSyncCallback(cb: () => void) {
+  _onSyncCallback = cb;
+}
+
+export async function startRealtimeSync(): Promise<void> {
+  const uid = getUid();
+  if (!uid) return;
+  await initFirebase();
+  if (!db) return;
+  if (_unsubscribe) return; // already listening
+  try {
+    const { doc, onSnapshot } = await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js" as any);
+    _unsubscribe = onSnapshot(doc(db, 'users', uid), (snap: any) => {
+      if (_isSaving) return; // ignore our own writes
+      if (!snap.exists()) return;
+      const cloud = snap.data().progress || {};
+      console.log('[FluentGe Sync] Real-time update received');
+      apply(gather(), cloud);
+      if (_onSyncCallback) _onSyncCallback();
+    });
+    console.log('[FluentGe Sync] Real-time listener started');
+  } catch (e: any) {
+    console.warn('[FluentGe Sync] Real-time listener failed:', e.message);
+  }
+}
+
+export function stopRealtimeSync() {
+  if (_unsubscribe) { _unsubscribe(); _unsubscribe = null; }
 }

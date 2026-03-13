@@ -2,47 +2,75 @@
 import Layout from '../layouts/Layout.astro';
 
 const questions = [
-  // A1 (1-3)
+  // A1 (1-6)
   { q: "What ___ your name?", opts: ["is", "are", "am", "do"], ans: 0, level: "A1" },
   { q: "She ___ a teacher.", opts: ["am", "is", "are", "be"], ans: 1, level: "A1" },
   { q: "I have ___ apple.", opts: ["a", "an", "the", "—"], ans: 1, level: "A1" },
-  // A2 (4-6)
+  { q: "They ___ from Georgia.", opts: ["is", "am", "are", "be"], ans: 2, level: "A1" },
+  { q: "This is ___ book.", opts: ["I", "me", "my", "mine"], ans: 2, level: "A1" },
+  { q: "The cat is ___ the table.", opts: ["in", "on", "at", "to"], ans: 1, level: "A1" },
+  // A2 (7-12)
   { q: "He ___ to work every day.", opts: ["go", "goes", "going", "gone"], ans: 1, level: "A2" },
   { q: "I ___ TV when she called.", opts: ["watch", "watched", "was watching", "have watched"], ans: 2, level: "A2" },
   { q: "There aren't ___ eggs in the fridge.", opts: ["some", "any", "no", "much"], ans: 1, level: "A2" },
-  // B1 (7-9)
+  { q: "She ___ play the piano when she was young.", opts: ["can", "could", "may", "will"], ans: 1, level: "A2" },
+  { q: "I went to the store ___ I bought some bread.", opts: ["but", "and", "so", "because"], ans: 1, level: "A2" },
+  { q: "My brother is ___ than me.", opts: ["tall", "taller", "tallest", "more tall"], ans: 1, level: "A2" },
+  // B1 (13-18)
   { q: "If it rains, I ___ stay home.", opts: ["would", "will", "can", "may"], ans: 1, level: "B1" },
   { q: "She has lived here ___ 2015.", opts: ["for", "since", "from", "during"], ans: 1, level: "B1" },
   { q: "The book ___ by millions.", opts: ["has read", "has been read", "was reading", "is reading"], ans: 1, level: "B1" },
-  // B2 (10-12)
+  { q: "If I were rich, I ___ travel the world.", opts: ["will", "would", "can", "shall"], ans: 1, level: "B1" },
+  { q: "He told me that he ___ busy.", opts: ["is", "was", "will be", "has been"], ans: 1, level: "B1" },
+  { q: "The woman ___ lives next door is a doctor.", opts: ["which", "who", "what", "whose"], ans: 1, level: "B1" },
+  // B2 (19-24)
   { q: "I wish I ___ more time.", opts: ["have", "had", "would have", "has"], ans: 1, level: "B2" },
   { q: "Not only ___ he late, but he also forgot the files.", opts: ["was", "did", "is", "has"], ans: 0, level: "B2" },
   { q: "She denied ___ the window.", opts: ["to break", "breaking", "break", "broke"], ans: 1, level: "B2" },
-  // C1 (13-15)
+  { q: "If I had studied harder, I ___ the exam.", opts: ["passed", "would pass", "would have passed", "had passed"], ans: 2, level: "B2" },
+  { q: "He ___ have left already; his car is gone.", opts: ["can", "must", "should", "would"], ans: 1, level: "B2" },
+  { q: "I'm not used to ___ up so early.", opts: ["get", "getting", "got", "gets"], ans: 1, level: "B2" },
+  // C1 (25-30)
   { q: "Seldom ___ such a talented musician.", opts: ["I have seen", "have I seen", "I saw", "did I see"], ans: 1, level: "C1" },
   { q: "Had I known, I ___ differently.", opts: ["would act", "would have acted", "acted", "had acted"], ans: 1, level: "C1" },
   { q: "The results are ___ with previous findings.", opts: ["consistent", "persistent", "resistant", "insistent"], ans: 0, level: "C1" },
+  { q: "Under no circumstances ___ leave the building.", opts: ["you should", "should you", "you must", "must you"], ans: 1, level: "C1" },
+  { q: "It is essential that he ___ on time.", opts: ["arrives", "arrive", "arrived", "arriving"], ans: 1, level: "C1" },
+  { q: "The report, ___ was published yesterday, caused controversy.", opts: ["that", "which", "what", "it"], ans: 1, level: "C1" },
 ];
 
 const levels = [
   { code: "A1", label: "Beginner", labelKa: "დამწყები", color: "from-green-400 to-emerald-500", icon: "🌱", min: 0 },
-  { code: "A2", label: "Elementary", labelKa: "საწყისი", color: "from-sky-400 to-blue-500", icon: "📗", min: 4 },
-  { code: "B1", label: "Intermediate", labelKa: "საშუალო", color: "from-violet-400 to-purple-500", icon: "📘", min: 7 },
-  { code: "B2", label: "Upper-Intermediate", labelKa: "საშუალოზე მაღალი", color: "from-orange-400 to-amber-500", icon: "📙", min: 10 },
-  { code: "C1", label: "Advanced", labelKa: "მაღალი", color: "from-rose-400 to-pink-500", icon: "🏆", min: 13 },
+  { code: "A2", label: "Elementary", labelKa: "საწყისი", color: "from-sky-400 to-blue-500", icon: "📗", min: 7 },
+  { code: "B1", label: "Intermediate", labelKa: "საშუალო", color: "from-violet-400 to-purple-500", icon: "📘", min: 13 },
+  { code: "B2", label: "Upper-Intermediate", labelKa: "საშუალოზე მაღალი", color: "from-orange-400 to-amber-500", icon: "📙", min: 19 },
+  { code: "C1", label: "Advanced", labelKa: "მაღალი", color: "from-rose-400 to-pink-500", icon: "🏆", min: 25 },
 ];
 ---
 
-<Layout title="ინგლისურის დონის ტესტი — გაიგე შენი დონე | FluentGe" description="უფასო ინგლისურის დონის შეფასება 15 შეკითხვით. გაიგე A1-დან C1-მდე რა დონეზე ხარ და მიიღე პერსონალიზებული რეკომენდაციები.">
-  <section class="min-h-screen flex items-center justify-center px-4 py-20">
+<Layout title="ინგლისურის დონის ტესტი — გაიგე შენი დონე | FluentGe" description="უფასო ინგლისურის დონის შეფასება 30 შეკითხვით. გაიგე A1-დან C1-მდე რა დონეზე ხარ და მიიღე პერსონალიზებული რეკომენდაციები.">
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-25"/>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/70 to-[#1C1C1E]"></div>
+    </div>
+    <div class="relative pt-28 pb-8 text-center px-4">
+      <div class="inline-block mb-4 bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">
+        🎯 დონის შეფასება
+      </div>
+    </div>
+  </section>
+
+  <section class="flex items-center justify-center px-4 pb-20 pt-4">
     <div class="w-full max-w-2xl">
 
       <!-- Intro Screen -->
       <div id="pt-intro" class="text-center">
         <div class="text-6xl mb-6">🎯</div>
         <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold mb-4">რა დონეზე ხარ?</h1>
-        <p class="text-[#A0A09A] text-lg mb-2">უპასუხე 15 კითხვას და გაიგე შენი ინგლისურის დონე</p>
-        <p class="text-[#6B6B65] text-sm mb-8">A1 → C1 | დაახლოებით 3 წუთი</p>
+        <p class="text-[#A0A09A] text-lg mb-2">უპასუხე 30 კითხვას და გაიგე შენი ინგლისურის დონე</p>
+        <p class="text-[#6B6B65] text-sm mb-8">A1 → C1 | დაახლოებით 5 წუთი</p>
         <button id="pt-start" class="bg-sky-400 hover:bg-sky-500 text-white font-bold uppercase tracking-wide border-b-4 border-sky-500 active:border-b-0 rounded-xl px-10 py-4 text-lg transition-all">
           🚀 დაწყება
         </button>
@@ -53,7 +81,7 @@ const levels = [
         <!-- Progress bar -->
         <div class="mb-8">
           <div class="flex items-center justify-between text-sm mb-2">
-            <span class="text-[#6B6B65]">კითხვა <span id="pt-num">1</span>/15</span>
+            <span class="text-[#6B6B65]">კითხვა <span id="pt-num">1</span>/30</span>
             <span id="pt-level-badge" class="text-xs font-bold px-2 py-0.5 rounded-full bg-green-500/20 text-green-400">A1</span>
           </div>
           <div class="w-full h-3 bg-[#242426] rounded-full overflow-hidden">
@@ -196,7 +224,7 @@ const levels = [
         $('#pt-result-badge').textContent = lvl.code;
         $('#pt-result-badge').className = `inline-block text-4xl font-black bg-gradient-to-r ${lvl.color} bg-clip-text text-transparent mb-2`;
         $('#pt-result-label').textContent = `${lvl.label} — ${lvl.labelKa}`;
-        $('#pt-result-score').textContent = `${score}/15 სწორი პასუხი`;
+        $('#pt-result-score').textContent = `${score}/30 სწორი პასუხი`;
 
         // Color the level bars
         const lvlIdx = levels.indexOf(lvl);

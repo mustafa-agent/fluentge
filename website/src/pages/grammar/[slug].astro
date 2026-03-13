@@ -15,8 +15,10 @@ export function getStaticPaths() {
 }
 
 const { lesson, nextLesson, prevLesson } = Astro.props;
-const FREE_GRAMMAR_SLUGS = ['to-be', 'articles', 'plural-nouns', 'present-simple', 'present-continuous', 'subject-pronouns', 'possessive-adjectives', 'prepositions-of-place'];
-const isFree = FREE_GRAMMAR_SLUGS.includes(lesson.slug);
+// All lessons are unlockable via placement test or premium
+// A1 lessons are always free; others unlock based on placement level
+const ALWAYS_FREE_LEVELS = ['A1'];
+const isFree = ALWAYS_FREE_LEVELS.includes(lesson.level);
 
 // Grammar → Flashcard deck mapping for interconnection
 const grammarToDecks: Record<string, {deck: string, label: string, emoji: string}[]> = {
@@ -190,10 +192,10 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     <div id="premium-lock" class={isFree ? 'hidden' : 'mt-8 text-center'}>
       <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-12">
         <div class="text-6xl mb-4">🔒</div>
-        <h2 class="text-2xl font-bold mb-3">ეს გაკვეთილი პრემიუმია</h2>
-        <p class="text-[#6B6B65] mb-6 max-w-md mx-auto">გახსენი ყველა გრამატიკის გაკვეთილი პრემიუმ გეგმით.</p>
-        <a href="/premium/" class="inline-block bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
-          🚀 დაიწყე პრემიუმი
+        <h2 class="text-2xl font-bold mb-3">ეს გაკვეთილი ჯერ ჩაკეტილია</h2>
+        <p class="text-[#6B6B65] mb-6 max-w-md mx-auto">გაიარე დონის ტესტი რომ გახსნა შენი დონის გაკვეთილები.</p>
+        <a href="/placement/" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
+          🎯 დონის ტესტი
         </a>
       </div>
     </div>
@@ -204,16 +206,28 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
   </section>
 
   <script is:inline src="/js/gamification-bridge.js"></script>
-  <script is:inline>
+  <script is:inline define:vars={{ lessonLevel: lesson.level }}>
     (function() {
-      // Unlock premium grammar for premium users
-      if (localStorage.getItem('fluentge-premium') === 'true') {
+      var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
+      var placementLevel = localStorage.getItem('fluentge-placement-level');
+      var isPremium = localStorage.getItem('fluentge-premium') === 'true';
+      
+      // Unlock if: premium, or lesson level <= placement level
+      var shouldUnlock = isPremium;
+      if (placementLevel) {
+        var placementIdx = LEVEL_ORDER.indexOf(placementLevel);
+        var lessonIdx = LEVEL_ORDER.indexOf(lessonLevel);
+        // Unlock all levels up to AND INCLUDING the placement level
+        if (lessonIdx >= 0 && placementIdx >= 0 && lessonIdx <= placementIdx) {
+          shouldUnlock = true;
+        }
+      }
+      
+      if (shouldUnlock) {
         var lc = document.getElementById('lesson-content');
         if (lc) lc.classList.remove('hidden');
         var pl = document.getElementById('premium-lock');
         if (pl) pl.classList.add('hidden');
-        // related-decks removed
-        // next-lesson-section removed
       }
     })();
   </script>

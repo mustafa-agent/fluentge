@@ -21,10 +21,10 @@ for (const level of levels) {
   allLessonsOrdered.push(...grouped[level]);
 }
 
-// Free grammar: first 3 A1 lessons only
-const FREE_GRAMMAR_SLUGS = ['to-be', 'articles', 'plural-nouns', 'present-simple', 'present-continuous', 'subject-pronouns', 'possessive-adjectives', 'prepositions-of-place'];
+// A1 lessons are always free; other levels unlock via placement test
 function isLessonFree(slug: string) {
-  return FREE_GRAMMAR_SLUGS.includes(slug);
+  const lesson = allLessonsOrdered.find(l => l.slug === slug);
+  return lesson?.level === 'A1';
 }
 ---
 
@@ -78,11 +78,12 @@ function isLessonFree(slug: string) {
             const free = isLessonFree(lesson.slug);
             const globalIdx = allLessonsOrdered.indexOf(lesson);
             return (
-              <a href={free ? `/grammar/${lesson.slug}/` : '/premium/'} 
-                 class={`grammar-lesson-card block border border-b-4 rounded-xl p-5 transition-all ${free ? 'bg-[#242426] hover:bg-[#2E2E30] border-[#2E2E30] border-b-[#1a1a1c] hover:scale-[1.02] active:border-b-2 active:mt-[2px]' : 'bg-[#242426] border-white/5 border-b-[#1a1a1c] opacity-60 hover:opacity-80 hover:border-amber-500/30'}`}
+              <a href={free ? `/grammar/${lesson.slug}/` : '/placement/'} 
+                 class={`grammar-lesson-card block border border-b-4 rounded-xl p-5 transition-all ${free ? 'bg-[#242426] hover:bg-[#2E2E30] border-[#2E2E30] border-b-[#1a1a1c] hover:scale-[1.02] active:border-b-2 active:mt-[2px]' : 'bg-[#242426] border-white/5 border-b-[#1a1a1c] opacity-60 hover:opacity-80 hover:border-sky-500/30'}`}
                  data-slug={lesson.slug}
                  data-idx={globalIdx}
                  data-free={free ? 'true' : 'false'}
+                 data-level={lesson.level}
                  data-lesson-url={`/grammar/${lesson.slug}/`}>
                 <div class="flex items-start justify-between gap-2 mb-2">
                   <div class="flex items-center gap-2 min-w-0">
@@ -107,12 +108,12 @@ function isLessonFree(slug: string) {
       </div>
     ))}
 
-    <!-- Premium CTA -->
-    <div class="mt-8 bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-8 text-center">
-      <h3 class="text-2xl font-bold mb-2">🔓 გახსენი ყველა გაკვეთილი</h3>
-      <p class="text-[#6B6B65] mb-6">65 გრამატიკის გაკვეთილი, A1-დან C1-მდე, ყველა კატეგორია</p>
-      <a href="/premium/" class="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors border-b-4 border-amber-700 active:border-b-2 active:mt-[2px]">
-        დაიწყე პრემიუმი
+    <!-- Placement Test CTA -->
+    <div id="placement-cta" class="mt-8 bg-gradient-to-r from-sky-500/10 to-green-500/10 border border-sky-500/20 rounded-2xl p-8 text-center">
+      <h3 class="text-2xl font-bold mb-2">🎯 გახსენი შენი დონის გაკვეთილები</h3>
+      <p class="text-[#6B6B65] mb-6">გაიარე დონის ტესტი და გაიხსნება შენი დონის ყველა გრამატიკის გაკვეთილი</p>
+      <a href="/placement/" class="inline-block bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors border-b-4 border-sky-600 active:border-b-2 active:mt-[2px]">
+        🎯 დონის ტესტი
       </a>
     </div>
   </section>
@@ -186,7 +187,10 @@ function isLessonFree(slug: string) {
 
     // Sequential Lock/Unlock System
     (function() {
+      var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
       var isPremium = localStorage.getItem('fluentge-premium') === 'true';
+      var placementLevel = localStorage.getItem('fluentge-placement-level');
+      var placementIdx = placementLevel ? LEVEL_ORDER.indexOf(placementLevel) : -1;
       var isLight = document.documentElement.classList.contains('light');
       var completed = {};
       try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
@@ -197,7 +201,6 @@ function isLessonFree(slug: string) {
         completed = obj;
         localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
       }
-      console.log('Grammar completed:', JSON.stringify(completed));
       
       // Get all lesson slugs in order
       var allSlugs = [];
@@ -205,16 +208,25 @@ function isLessonFree(slug: string) {
         allSlugs.push(card.dataset.slug);
       });
       
-      // Determine each lesson's state: completed, current (next after a completed one), or locked
-      // A lesson is unlocked if: it's the first lesson, OR the previous lesson in order is completed, OR it itself is completed
-      var prevCompleted = true; // first lesson is always unlocked
+      // A lesson is unlocked if:
+      // 1. It's A1 (always free)
+      // 2. Its level <= placement test level
+      // 3. Premium user
+      // 4. Sequential: previous lesson completed
+      var prevCompleted = true;
       
       document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
         var slug = card.dataset.slug;
         var idx = parseInt(card.dataset.idx);
         var isFree = card.dataset.free === 'true';
         var isCompleted = !!completed[slug];
-        var isUnlocked = prevCompleted || isCompleted;
+        
+        // Check if lesson's level is unlocked by placement test
+        var lessonLevel = card.dataset.level;
+        var lessonLevelIdx = lessonLevel ? LEVEL_ORDER.indexOf(lessonLevel) : -1;
+        var unlockedByPlacement = placementIdx >= 0 && lessonLevelIdx >= 0 && lessonLevelIdx <= placementIdx;
+        
+        var isUnlocked = prevCompleted || isCompleted || unlockedByPlacement;
         var statusEl = card.querySelector('.grammar-lesson-status');
         var badgeEl = card.querySelector('.grammar-lesson-badge');
         var footerEl = card.querySelector('.grammar-lesson-footer');
@@ -233,7 +245,7 @@ function isLessonFree(slug: string) {
           card.setAttribute('href', '/grammar/' + slug + '/');
           var exCount = footerEl.textContent.match(/\d+/)?.[0] || '';
           footerEl.innerHTML = '<span style="color:rgb(74,222,128)">✅ გავლილი</span> · 📝 ' + exCount + ' სავარჯიშო';
-        } else if (isUnlocked && (isFree || isPremium)) {
+        } else if (isUnlocked && (isFree || isPremium || unlockedByPlacement)) {
           // ▶ Current lesson — BLUE glow, pulsing, call-to-action
           statusEl.textContent = '▶️';
           statusEl.style.fontSize = '1.5rem';
@@ -250,15 +262,16 @@ function isLessonFree(slug: string) {
           footerEl.innerHTML = '▶️ <strong style="color:rgb(125,211,252)">დაიწყე ახლა</strong>';
           footerEl.classList.remove('text-[#6B6B65]');
           footerEl.classList.add('text-sky-400', 'font-medium');
-        } else if (!isCompleted && !isPremium && !isFree) {
-          // 🔒 Locked (premium required) — AMBER, clearly premium-gated
+        } else if (!isCompleted && !isPremium && !isFree && !unlockedByPlacement) {
+          // 🔒 Locked — needs placement test or premium
           statusEl.textContent = '👑';
           statusEl.style.fontSize = '1.25rem';
           statusEl.style.opacity = '0.6';
-          badgeEl.textContent = 'პრემიუმი';
+          badgeEl.textContent = '🔒 ჩაკეტილი';
           badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-bold bg-amber-500/15 text-amber-400/80 border border-amber-500/20';
           card.style.opacity = '0.55';
-          footerEl.innerHTML = '👑 გახსნა → პრემიუმი';
+          card.setAttribute('href', '/placement/');
+          footerEl.innerHTML = '🎯 გაიარე დონის ტესტი გასახსნელად';
           footerEl.classList.remove('text-[#6B6B65]');
           footerEl.classList.add('text-amber-400/70');
         } else if (!isCompleted) {

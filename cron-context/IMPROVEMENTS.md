@@ -59,6 +59,7 @@
 - **⚠️ NO NEW FEATURES per Tornike's order (Mar 12)**
 - [x] Light mode audit — check all pages for contrast issues ✅ Cron 4, Mar 13
 - [ ] Mobile layout review — check for overflow/spacing issues
+- [x] Game overlay light mode fix — `!important` on text color overrides, button bg/border overrides for inline-styled elements ✅ Cron 4B, Mar 13
 - [ ] Button/text readability check across all pages
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
