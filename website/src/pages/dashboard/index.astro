@@ -5,149 +5,40 @@ import Layout from '../../layouts/Layout.astro';
 <Layout title="დეშბორდი — FluentGe">
   <section class="max-w-2xl mx-auto px-4 py-12">
     <h1 class="font-['Playfair_Display',serif] text-3xl font-bold mb-2 text-center">📊 დეშბორდი</h1>
-    <p class="text-[#A0A09A] text-center mb-10">შენი სწავლის სტატისტიკა</p>
+    <p class="text-[#A0A09A] text-center mb-10">შენი XP და რეიტინგი</p>
 
-    <!-- Continue Where You Left Off -->
-    <div id="continue-card" class="hidden mb-8">
-      <div class="bg-gradient-to-r from-sky-500/10 to-indigo-500/10 border border-sky-500/20 rounded-2xl p-5">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="text-xl">🚀</span>
-          <h2 class="font-bold text-lg">გააგრძელე სწავლა</h2>
-        </div>
-        <div id="continue-suggestions" class="space-y-2"></div>
-      </div>
-    </div>
-
-    <!-- Quick Start (shown when no progress yet) -->
-    <div id="quick-start" class="hidden mb-8">
-      <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-5">
-        <div class="flex items-center gap-2 mb-3">
-          <span class="text-xl">👋</span>
-          <h2 class="font-bold text-lg">დაიწყე სწავლა!</h2>
-        </div>
-        <p class="text-[#A0A09A] text-sm mb-3">აირჩიე სადან გინდა დაწყება:</p>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-          <a href="/flashcards/" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-colors">
-            <span>📝</span><span class="text-sm font-medium">ფლეშქარდები</span>
-          </a>
-          <a href="/grammar/to-be/" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-colors">
-            <span>📖</span><span class="text-sm font-medium">გრამატიკა A1</span>
-          </a>
-          <a href="/games" class="flex items-center gap-2 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-colors">
-            <span>🎮</span><span class="text-sm font-medium">თამაშები</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Vocabulary Size Tracker -->
-    <div id="vocab-tracker" class="mb-8">
-      <h2 class="font-bold text-lg mb-4 flex items-center gap-2">📖 ჩემი ლექსიკა</h2>
-      <div class="bg-gradient-to-br from-emerald-500/10 to-sky-500/10 border border-emerald-500/20 rounded-2xl p-5">
-        <div class="flex items-center gap-6">
-          <!-- SVG Progress Ring -->
-          <div class="relative flex-shrink-0">
-            <svg width="100" height="100" viewBox="0 0 100 100" class="transform -rotate-90">
-              <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="8" class="text-[#2E2E30]" />
-              <circle id="vocab-ring-mastered" cx="50" cy="50" r="42" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264" class="transition-all duration-1000" />
-              <circle id="vocab-ring-learning" cx="50" cy="50" r="42" fill="none" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264" class="transition-all duration-1000" />
-            </svg>
-            <div class="absolute inset-0 flex flex-col items-center justify-center">
-              <span id="vocab-pct" class="text-xl font-extrabold text-[var(--color-text)]">0%</span>
-              <span class="text-[9px] text-[var(--color-text-muted)]">ნასწავლი</span>
-            </div>
-          </div>
-          <!-- Stats -->
-          <div class="flex-1 space-y-2">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
-                <span class="text-sm text-[var(--color-text-muted)]">ათვისებული</span>
-              </div>
-              <span id="vocab-mastered" class="text-sm font-bold text-green-400">0</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
-                <span class="text-sm text-[var(--color-text-muted)]">სწავლაში</span>
-              </div>
-              <span id="vocab-learning" class="text-sm font-bold text-amber-400">0</span>
-            </div>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-[#3E3E40] inline-block"></span>
-                <span class="text-sm text-[var(--color-text-muted)]">ახალი</span>
-              </div>
-              <span id="vocab-new" class="text-sm font-bold text-[var(--color-text-muted)]">0</span>
-            </div>
-            <div class="pt-1 border-t border-white/5 flex items-center justify-between">
-              <span class="text-xs text-[var(--color-text-muted)]">სულ სიტყვები</span>
-              <span id="vocab-total" class="text-xs font-bold text-[var(--color-text)]">0</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Recommended For You -->
-    <div id="recommended-section" class="mb-8 hidden">
-      <h2 class="font-bold text-lg mb-4 flex items-center gap-2">🎯 რეკომენდაცია შენთვის</h2>
-      <div id="recommended-list" class="space-y-2"></div>
-    </div>
-
-    <div class="grid grid-cols-2 gap-4 mb-8">
-      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold text-green-400" id="stat-grammar">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">გრამატიკა დასრულებული</p>
-      </div>
-      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold text-sky-400" id="stat-cards">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">გავლილი კატეგორია</p>
-      </div>
-      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold text-amber-400" id="stat-studytime">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">სწავლის დრო (წთ)</p>
-      </div>
-      <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-center">
-        <p class="text-3xl font-bold text-purple-400" id="stat-podcasts">0</p>
-        <p class="text-[#6B6B65] text-sm mt-1">მოსმენილი პოდკასტები</p>
-      </div>
-    </div>
-
-    <!-- Game Stats Section -->
+    <!-- XP Stats -->
     <div class="mb-8">
-      <h2 class="font-bold text-lg mb-4 flex items-center gap-2">🎮 თამაშების სტატისტიკა</h2>
-      <div class="grid grid-cols-2 gap-3 mb-4">
-        <div class="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-2xl p-4 text-center">
-          <p class="text-2xl font-bold text-indigo-400" id="game-today">0</p>
-          <p class="text-[#6B6B65] text-xs mt-1">დღეს ნათამაშები</p>
+      <div class="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-2xl p-6">
+        <div class="grid grid-cols-2 gap-4 mb-5">
+          <div class="text-center">
+            <p class="text-3xl font-bold text-indigo-400" id="total-xp">0</p>
+            <p class="text-[#6B6B65] text-xs mt-1">სულ XP</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold text-amber-400" id="current-level">Lv.1</p>
+            <p class="text-[#6B6B65] text-xs mt-1">დონე</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold text-green-400" id="today-xp">+0</p>
+            <p class="text-[#6B6B65] text-xs mt-1">დღეს მოგროვებული</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold text-orange-400" id="streak-count">0</p>
+            <p class="text-[#6B6B65] text-xs mt-1">🔥 სერია</p>
+          </div>
         </div>
-        <div class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-2xl p-4 text-center">
-          <p class="text-2xl font-bold text-purple-400" id="game-total">0</p>
-          <p class="text-[#6B6B65] text-xs mt-1">სულ ნათამაშები</p>
-        </div>
-        <div class="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-2xl p-4 text-center">
-          <p class="text-2xl font-bold text-yellow-400" id="game-xp">+0</p>
-          <p class="text-[#6B6B65] text-xs mt-1">დღეს XP თამაშებიდან</p>
-        </div>
-        <div class="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 rounded-2xl p-4 text-center">
-          <p class="text-2xl font-bold text-emerald-400" id="game-level">Lv.1</p>
-          <p class="text-[#6B6B65] text-xs mt-1">მიმდინარე დონე</p>
+        <!-- XP Progress Bar -->
+        <div>
+          <div class="flex justify-between text-sm mb-2">
+            <span id="level-label" class="text-[#A0A09A]">დონე 1</span>
+            <span id="xp-progress-text" class="text-[#A0A09A]">0/200 XP</span>
+          </div>
+          <div class="w-full bg-[#1C1C1E] rounded-full h-3">
+            <div id="xp-bar" class="bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full transition-all" style="width:0%"></div>
+          </div>
         </div>
       </div>
-      <!-- XP Progress Bar -->
-      <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-4 mb-3">
-        <div class="flex justify-between text-sm mb-2">
-          <span id="game-level-label" class="text-[#A0A09A]">დონე 1</span>
-          <span id="game-xp-progress-text" class="text-[#A0A09A]">0/200 XP</span>
-        </div>
-        <div class="w-full bg-[#1C1C1E] rounded-full h-3">
-          <div id="game-xp-bar" class="bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full transition-all" style="width:0%"></div>
-        </div>
-      </div>
-      <a href="/games/" class="block w-full text-center py-3 bg-indigo-600 hover:bg-indigo-700 border-b-4 border-indigo-700 active:border-b-0 rounded-xl font-bold text-white transition-all text-sm">
-        🎮 თამაშების გვერდზე გადასვლა
-      </a>
     </div>
 
     <!-- Weekly Leaderboard -->
@@ -155,285 +46,53 @@ import Layout from '../../layouts/Layout.astro';
       <h2 class="font-bold text-lg mb-4 flex items-center gap-2">🏆 კვირის ლიდერბორდი</h2>
       <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden">
         <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 px-4 py-3 border-b border-[#2E2E30] flex items-center justify-between">
-          <span class="text-xs text-amber-400 font-semibold" id="lb-week-label">ამ კვირის რეიტინგი</span>
-          <span class="text-xs text-[var(--color-text-muted)]" id="lb-reset-label">ორშაბათს ახლდება</span>
+          <span class="text-xs text-amber-400 font-semibold">ამ კვირის რეიტინგი</span>
+          <span class="text-xs text-[var(--color-text-muted)]">ორშაბათს ახლდება</span>
         </div>
         <div id="leaderboard-list" class="divide-y divide-[#2E2E30]"></div>
       </div>
     </div>
-
-    <!-- Removed: phrases, grammar, podcasts, flashcards detail links -->
   </section>
 
   <script is:inline>
     (function() {
-      var TOTAL_WORDS = 26595;
-      var SRS_KEY_PREFIX = 'fluentge-srs-';
-
-      // --- Vocabulary Size Tracker ---
-      // UNIFIED counting: only words with repetitions >= 1 (actually answered correctly)
-      var mastered = 0, learning = 0;
-      var allSRSWords = new Set();
-      var keys = Object.keys(localStorage);
-      for (var k = 0; k < keys.length; k++) {
-        var key = keys[k];
-        if (key.indexOf(SRS_KEY_PREFIX) !== 0) continue;
-        try {
-          var store = JSON.parse(localStorage.getItem(key) || '{}');
-          var words = Object.keys(store);
-          for (var w = 0; w < words.length; w++) {
-            var d = store[words[w]];
-            // Only count words with at least 1 correct answer
-            if (d && d.repetitions >= 1) {
-              allSRSWords.add(words[w]);
-              if (d.repetitions >= 3) mastered++;
-              else learning++;
-            }
-          }
-        } catch(e) {}
-      }
-      // Also count explicitly known cards
-      try {
-        var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
-        for (var ki = 0; ki < kc.length; ki++) {
-          if (!allSRSWords.has(kc[ki])) {
-            allSRSWords.add(kc[ki]);
-            mastered++;
-          }
-        }
-      } catch(e) {}
-      var totalSeen = allSRSWords.size;
-      var newWords = TOTAL_WORDS - totalSeen;
-      var pct = TOTAL_WORDS > 0 ? Math.round((mastered / TOTAL_WORDS) * 100) : 0;
-
-      document.getElementById('vocab-mastered').textContent = mastered;
-      document.getElementById('vocab-learning').textContent = learning;
-      document.getElementById('vocab-new').textContent = newWords > 0 ? newWords : 0;
-      document.getElementById('vocab-total').textContent = TOTAL_WORDS;
-      document.getElementById('vocab-pct').textContent = pct + '%';
-
-      // Animate SVG rings (circumference = 2*PI*42 ≈ 264)
-      var circ = 264;
-      var masteredPct = mastered / TOTAL_WORDS;
-      var learningPct = learning / TOTAL_WORDS;
-      setTimeout(function() {
-        document.getElementById('vocab-ring-mastered').setAttribute('stroke-dashoffset', String(circ - (circ * masteredPct)));
-        var learningRing = document.getElementById('vocab-ring-learning');
-        // Learning ring starts where mastered ends
-        learningRing.setAttribute('stroke-dashoffset', String(circ - (circ * learningPct)));
-        learningRing.setAttribute('stroke-dasharray', circ * learningPct + ' ' + circ);
-        // Rotate learning ring to start after mastered
-        learningRing.style.transform = 'rotate(' + (masteredPct * 360) + 'deg)';
-        learningRing.style.transformOrigin = '50px 50px';
-      }, 100);
-
-      // --- Recommended For You ---
-      var deckMeta = [
-        {id:'top-2000',name:'ტოპ 2000 სიტყვა',icon:'⭐',cards:1870},
-        {id:'greetings',name:'მისალმებები',icon:'👋',cards:200},
-        {id:'numbers',name:'რიცხვები და დრო',icon:'🔢',cards:200},
-        {id:'family',name:'ოჯახი და ხალხი',icon:'👨‍👩‍👧‍👦',cards:200},
-        {id:'food',name:'საკვები და კულინარია',icon:'🍳',cards:50},
-        {id:'home',name:'სახლი',icon:'🏠',cards:200},
-        {id:'travel',name:'მოგზაურობა',icon:'✈️',cards:50},
-        {id:'work',name:'სამუშაო და ბიზნესი',icon:'💼',cards:50},
-        {id:'health',name:'ჯანმრთელობა',icon:'🏥',cards:200},
-        {id:'technology',name:'ტექნოლოგია',icon:'💻',cards:200},
-        {id:'emotions',name:'ემოციები',icon:'😊',cards:200},
-        {id:'education',name:'განათლება',icon:'📚',cards:200},
-        {id:'verbs',name:'ხშირი ზმნები',icon:'🏃',cards:200},
-        {id:'animals',name:'ცხოველები',icon:'🐾',cards:200},
-        {id:'sports',name:'სპორტი',icon:'⚽',cards:50}
-      ];
-      var recs = [];
-      var now = Date.now();
-
-      // 1. Decks with due SRS reviews (highest priority)
-      for (var i = 0; i < deckMeta.length && recs.length < 2; i++) {
-        var dm = deckMeta[i];
-        try {
-          var srsStore = JSON.parse(localStorage.getItem(SRS_KEY_PREFIX + dm.id) || '{}');
-          var due = 0;
-          var srsWords = Object.values(srsStore);
-          for (var j = 0; j < srsWords.length; j++) {
-            if (srsWords[j].nextReview <= now && srsWords[j].repetitions > 0) due++;
-          }
-          if (due > 0) {
-            recs.push({
-              icon: '🔔',
-              text: dm.icon + ' ' + dm.name + ' — ' + due + ' სიტყვა გადასახედია',
-              href: '/flashcards/#study/' + dm.id + '/srs',
-              color: 'amber',
-              priority: 1
-            });
-          }
-        } catch(e) {}
-      }
-
-      // 2. Partially studied decks (started but <50% done)
-      for (var i = 0; i < deckMeta.length && recs.length < 4; i++) {
-        var dm = deckMeta[i];
-        try {
-          var srsStore = JSON.parse(localStorage.getItem(SRS_KEY_PREFIX + dm.id) || '{}');
-          var studied = Object.keys(srsStore).length;
-          if (studied > 0 && studied < dm.cards * 0.5) {
-            var pctDone = Math.round((studied / dm.cards) * 100);
-            // Don't duplicate if already in recs
-            if (!recs.some(function(r) { return r.href.indexOf(dm.id) > -1; })) {
-              recs.push({
-                icon: '📈',
-                text: dm.icon + ' ' + dm.name + ' — ' + pctDone + '% გავლილი, გააგრძელე!',
-                href: '/flashcards/#study/' + dm.id + '/srs',
-                color: 'sky',
-                priority: 2
-              });
-            }
-          }
-        } catch(e) {}
-      }
-
-      // 3. Suggest unstudied beginner decks
-      var beginnerDecks = ['greetings','numbers','family','food','home'];
-      for (var i = 0; i < beginnerDecks.length && recs.length < 5; i++) {
-        var bid = beginnerDecks[i];
-        var srsData = localStorage.getItem(SRS_KEY_PREFIX + bid);
-        if (!srsData || Object.keys(JSON.parse(srsData || '{}')).length === 0) {
-          var meta = deckMeta.find(function(d) { return d.id === bid; });
-          if (meta && !recs.some(function(r) { return r.href.indexOf(bid) > -1; })) {
-            recs.push({
-              icon: '🆕',
-              text: meta.icon + ' ' + meta.name + ' — დაიწყე ახალი თემა!',
-              href: '/flashcards/#deck/' + bid,
-              color: 'green',
-              priority: 3
-            });
-          }
-        }
-      }
-
-      // Show max 3 recommendations
-      recs = recs.slice(0, 3);
-      if (recs.length > 0) {
-        var section = document.getElementById('recommended-section');
-        var list = document.getElementById('recommended-list');
-        section.classList.remove('hidden');
-        var colorMap = {amber:'from-amber-500/10 to-yellow-500/10 border-amber-500/20', sky:'from-sky-500/10 to-blue-500/10 border-sky-500/20', green:'from-green-500/10 to-emerald-500/10 border-green-500/20'};
-        recs.forEach(function(r) {
-          var a = document.createElement('a');
-          a.href = r.href;
-          var cls = colorMap[r.color] || colorMap.sky;
-          a.className = 'flex items-center gap-3 bg-gradient-to-r ' + cls + ' border rounded-xl px-4 py-3 transition-all hover:translate-x-1 hover:shadow-lg';
-          a.innerHTML = '<span class="text-lg">' + r.icon + '</span><span class="text-sm font-medium flex-1">' + r.text + '</span><span class="text-[var(--color-text-muted)]">→</span>';
-          list.appendChild(a);
-        });
-      }
-
-      const phrases = JSON.parse(localStorage.getItem('fluentge-learned-phrases') || '[]');
-      var grammarRaw = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}');
-      var grammarA = Array.isArray(grammarRaw) ? grammarRaw : Object.keys(grammarRaw);
-      const grammarB = JSON.parse(localStorage.getItem('fluentge-learned-grammar') || '[]');
-      const grammar = [...new Set([...grammarA, ...grammarB])];
-      const podcasts = JSON.parse(localStorage.getItem('fluentge-learned-podcasts') || '[]');
-      // Count unique base words from card progress
-      var cardProgress = {};
-      try { cardProgress = JSON.parse(localStorage.getItem('fluentge-card-progress') || '{}'); } catch(e) {}
-      var baseWords = {};
-      Object.keys(cardProgress).forEach(function(key) {
-        var base = key.replace(/_enka$/, '').replace(/_kaen$/, '').replace(/_mixed$/, '');
-        baseWords[base] = true;
-      });
-      var wordCount = totalSeen;
-      document.getElementById('stat-grammar').textContent = grammar.length;
-      document.getElementById('stat-podcasts').textContent = podcasts.length;
-      // Completed categories — stored by React flashcard Dashboard
-      var completedCats = parseInt(localStorage.getItem('fluentge_completed_categories') || '0', 10);
-      document.getElementById('stat-cards').textContent = completedCats;
-      // Study time from daily history
-      var totalStudyMin = 0;
-      try {
-        var dh = JSON.parse(localStorage.getItem('fluentge-daily-history') || '{}');
-        Object.values(dh).forEach(function(d) { totalStudyMin += (d && d.minutes) || 0; });
-      } catch(e) {}
-      document.getElementById('stat-studytime').textContent = totalStudyMin;
-
-      // Game stats
-      var gamesPlayed = parseInt(localStorage.getItem('gamesPlayed') || '0', 10);
+      // XP Stats
       var totalXP = parseInt(localStorage.getItem('totalXP') || '0', 10);
+      var level = Math.floor(totalXP / 200) + 1;
+      var xpInLevel = totalXP - (level - 1) * 200;
+
+      // Today's XP
+      var todayXP = 0;
       var todayStr = new Date().toDateString();
-      var todayGamesCount = 0, todayGameXP = 0;
       try {
         var tg = JSON.parse(localStorage.getItem('todayGames') || '{}');
-        if (tg.date === todayStr) { todayGamesCount = tg.count || 0; todayGameXP = tg.xp || 0; }
+        if (tg.date === todayStr) todayXP += (tg.xp || 0);
       } catch(e) {}
-      var gameLevel = Math.floor(totalXP / 200) + 1;
-      var xpInLevel = totalXP - (gameLevel - 1) * 200;
-      document.getElementById('game-today').textContent = todayGamesCount;
-      document.getElementById('game-total').textContent = gamesPlayed;
-      document.getElementById('game-xp').textContent = '+' + todayGameXP;
-      document.getElementById('game-level').textContent = 'Lv.' + gameLevel;
-      document.getElementById('game-level-label').textContent = 'დონე ' + gameLevel;
-      document.getElementById('game-xp-progress-text').textContent = xpInLevel + '/200 XP';
-      document.getElementById('game-xp-bar').style.width = Math.min(100, (xpInLevel / 200) * 100) + '%';
+      try {
+        var dh = JSON.parse(localStorage.getItem('fluentge-daily-history') || '{}');
+        var todayKey = new Date().toISOString().slice(0, 10);
+        if (dh[todayKey]) todayXP += (typeof dh[todayKey] === 'object' ? (dh[todayKey].xp || 0) : 0);
+      } catch(e) {}
 
-      // Continue where you left off logic
-      var totalProgress = phrases.length + grammar.length + podcasts.length + wordCount;
-      var suggestions = [];
+      // Streak
+      var streak = 0;
+      try {
+        var hist = JSON.parse(localStorage.getItem('fluentge-daily-history') || '{}');
+        var d = new Date();
+        while (true) {
+          var key = d.toISOString().slice(0, 10);
+          if (hist[key]) { streak++; d.setDate(d.getDate() - 1); }
+          else break;
+        }
+      } catch(e) {}
 
-      // Grammar progression: suggest next unlearned lesson
-      var grammarOrder = [
-        {slug:'to-be', title:'ზმნა "to be"'},
-        {slug:'articles', title:'არტიკლები (a/an/the)'},
-        {slug:'plural-nouns', title:'მრავლობითი რიცხვი'}
-      ];
-      var nextGrammar = grammarOrder.find(function(g) {
-        return !grammar.some(function(learned) { return learned.toLowerCase().includes(g.slug.replace('-',' ')); });
-      });
-      if (nextGrammar) {
-        suggestions.push({
-          icon: '📖',
-          text: 'გრამატიკა: ' + nextGrammar.title,
-          href: '/grammar/' + nextGrammar.slug + '/',
-          color: 'green'
-        });
-      }
-
-      // Flashcards: always a good suggestion
-      if (wordCount > 0) {
-        suggestions.push({
-          icon: '📝',
-          text: 'გააგრძელე ფლეშქარდები — ' + completedCats + ' კატეგორია გავლილი',
-          href: '/flashcards/',
-          color: 'sky'
-        });
-      } else {
-        suggestions.push({
-          icon: '📝',
-          text: 'დაიწყე ფლეშქარდები — ისწავლე ახალი სიტყვები',
-          href: '/flashcards/',
-          color: 'sky'
-        });
-      }
-
-      // Phrases: suggest if not many learned
-      if (phrases.length < 50) {
-        suggestions.push({
-          icon: '💬',
-          text: 'ისწავლე ყოველდღიური ფრაზები',
-          href: '/phrases/',
-          color: 'indigo'
-        });
-      }
-
-      // Games: suggest for variety
-      suggestions.push({
-        icon: '🎮',
-        text: 'ითამაშე და ისწავლე ინგლისური',
-        href: '/games',
-        color: 'amber'
-      });
-
-      // Show max 3 suggestions
-      suggestions = suggestions.slice(0, 3);
+      document.getElementById('total-xp').textContent = totalXP;
+      document.getElementById('current-level').textContent = 'Lv.' + level;
+      document.getElementById('today-xp').textContent = '+' + todayXP;
+      document.getElementById('streak-count').textContent = streak;
+      document.getElementById('level-label').textContent = 'დონე ' + level;
+      document.getElementById('xp-progress-text').textContent = xpInLevel + '/200 XP';
+      document.getElementById('xp-bar').style.width = Math.min(100, (xpInLevel / 200) * 100) + '%';
 
       // --- Weekly Leaderboard ---
       var simulatedUsers = [
@@ -447,7 +106,6 @@ import Layout from '../../layouts/Layout.astro';
         { name: 'თეკლე გ.', avatar: '📚', baseXP: 55 },
         { name: 'ირაკლი პ.', avatar: '🎯', baseXP: 40 },
       ];
-      // Seed weekly XP variation based on week number
       var weekNum = Math.floor((Date.now() - new Date(2026, 0, 5).getTime()) / (7 * 24 * 60 * 60 * 1000));
       function seededRandom(seed) { var x = Math.sin(seed) * 10000; return x - Math.floor(x); }
       simulatedUsers.forEach(function(u, i) {
@@ -455,22 +113,21 @@ import Layout from '../../layouts/Layout.astro';
         u.weeklyXP = Math.max(10, Math.round(u.baseXP + variation));
       });
 
-      // Get user's weekly XP
+      // User's weekly XP
       var userWeeklyXP = 0;
       try {
         var dailyHist = JSON.parse(localStorage.getItem('fluentge-daily-history') || '{}');
         var today2 = new Date();
-        var dayOfWeek = today2.getDay() === 0 ? 7 : today2.getDay(); // Mon=1 ... Sun=7
-        for (var d = 0; d < dayOfWeek; d++) {
+        var dayOfWeek = today2.getDay() === 0 ? 7 : today2.getDay();
+        for (var d2 = 0; d2 < dayOfWeek; d2++) {
           var dateObj = new Date(today2);
-          dateObj.setDate(today2.getDate() - d);
+          dateObj.setDate(today2.getDate() - d2);
           var dateKey = dateObj.toISOString().slice(0, 10);
-          var dayData2 = dailyHist[dateKey];
-          if (dayData2) userWeeklyXP += typeof dayData2 === 'object' ? (dayData2.xp || 0) : dayData2;
+          var dayData = dailyHist[dateKey];
+          if (dayData) userWeeklyXP += typeof dayData === 'object' ? (dayData.xp || 0) : dayData;
         }
       } catch(e) {}
 
-      // Build leaderboard
       var allPlayers = simulatedUsers.map(function(u) {
         return { name: u.name, avatar: u.avatar, xp: u.weeklyXP, isUser: false };
       });
@@ -501,21 +158,6 @@ import Layout from '../../layouts/Layout.astro';
           '<span class="text-sm font-bold ' + (rank <= 3 ? 'text-amber-400' : 'text-[var(--color-text-muted)]') + '">' + p.xp + ' XP</span>';
         lbList.appendChild(row);
       });
-
-      if (totalProgress === 0) {
-        document.getElementById('quick-start').classList.remove('hidden');
-      } else {
-        var card = document.getElementById('continue-card');
-        var container = document.getElementById('continue-suggestions');
-        card.classList.remove('hidden');
-        suggestions.forEach(function(s) {
-          var a = document.createElement('a');
-          a.href = s.href;
-          a.className = 'flex items-center gap-3 bg-[#242426] hover:bg-[#2E2E30] rounded-xl px-4 py-3 transition-all hover:translate-x-1';
-          a.innerHTML = '<span class="text-lg">' + s.icon + '</span><span class="text-sm font-medium flex-1">' + s.text + '</span><span class="text-[#6B6B65]">→</span>';
-          container.appendChild(a);
-        });
-      }
     })();
   </script>
 </Layout>
