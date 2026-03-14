@@ -63,6 +63,11 @@
 - [ ] Button/text readability check across all pages
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 14 (Cron 4, 7:00 AM)
+- [x] **Daily challenge light mode** — Quiz option buttons, stat cards, feedback messages, results card, progress bar all properly themed for light mode ✅
+- [x] **Login page light mode inputs** — Input fields get light background, proper placeholder colors, focus border color, tab switcher styled ✅
+- [x] **Register page light mode** — Form inputs, placeholder text, submit button all get proper light theme ✅
+
 ## ✅ COMPLETED — Mar 13 (Cron 4, 7:00 AM)
 - [x] **CRITICAL BUG FIX: Podcast page completely empty** — Premium CTA hide script was hiding entire episode section (`a.closest('section').style.display='none'`) instead of just the CTA div. Fixed to target `.mt-12` wrapper only. ✅
 - [x] Games page light mode polish — added global CSS for game card backgrounds, borders, text colors, gradient overlays, stats bar, and game-of-day card in light mode ✅

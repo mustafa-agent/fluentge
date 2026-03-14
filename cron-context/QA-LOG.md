@@ -1,9 +1,37 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-13 (7:30 PM)
+- **Date:** 2026-03-14 (9:00 AM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Morning QA Run (Mar 14, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 9 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/paths/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 7.59s, no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Homepage (dark mode):** Hero, stats (5,250+), returning user CTAs, Top 2000, Word of Day, testimonials, How It Works, CTA — all clean ✅
+- **Homepage (light mode):** White bg, readable text, clean cards, good contrast ✅
+- **Flashcards (light mode):** Deck cards with images, progress bars, new/review buttons — all clean ✅
+- **Podcast (light mode):** 35 episodes, white cards, dark text, all readable ✅
+- **Games (light mode):** Stats bar, 3 categories, all game cards readable, colorful icons ✅
+
+### Console — ⚠️ Minor Only
+- Firestore `resource-exhausted` errors from long-running QA browser session (not user-facing)
+- `episode24-post-office.mp3` 404 (minor — missing audio file)
+- No critical page-breaking errors
+
+### Verdict
+Morning QA pass. No code changes since yesterday evening. All pages 200, TS clean, build clean, browser visual tests pass in both light and dark mode. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Evening QA Run (Mar 13, 7:30 PM)
 
