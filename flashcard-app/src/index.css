@@ -1132,8 +1132,15 @@ html:not(.light) .fc-app-bg::after {
 html:not(.light) .fc-app-bg > * { position: relative; z-index: 1; }
 
 html.light .fc-app-bg {
-  background: #F0F2F5 !important;
+  background: linear-gradient(135deg, #E8F0FE 0%, #F0F2F5 25%, #FEF3E8 50%, #F0F2F5 75%, #E8F5E9 100%) !important;
+  background-size: 400% 400% !important;
+  animation: fc-light-gradient 20s ease infinite !important;
   position: relative;
+}
+@keyframes fc-light-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 html.light .fc-app-bg::before {
   display: none;
