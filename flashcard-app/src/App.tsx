@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { type Deck, type FlashCard, loadDeck } from './lib/deck-loader';
 import { deckIndex, type DeckMeta } from './lib/deck-index';
 import { loadFromCloud, syncToCloud, syncNow, isLoggedIn, startRealtimeSync, stopRealtimeSync, setOnSyncCallback } from './lib/firebase-sync';
+import { addXP, recordDailyActivity } from './lib/gamification';
 
 /* ═══════════════════════════════════════════════════════════ */
 /*                     CLICK SOUND                             */
@@ -596,7 +597,8 @@ export default function App() {
     if (sessionStyle === 'free') {
       // Free mode grading
       if (grade === 'good' || grade === 'easy') {
-        // Correct - mark as completed
+        // Correct - mark as completed + award XP
+        addXP(2);
         const newCompleted = [...freeCompleted, key];
         setFreeCompleted(newCompleted);
         saveFreeProgress(sessionDeckId, modeKey, newCompleted);
@@ -648,6 +650,10 @@ export default function App() {
       const updated = gradeSRS(current, grade);
       saveSRS(key, updated);
       syncNow();
+
+      // Award XP: კარგი = +1, ადვილი = +2, others = 0
+      if (grade === 'good') addXP(1);
+      else if (grade === 'easy') addXP(2);
 
       // Count new card as used only when actually graded (not when session starts)
       if (current.repetitions === 0 && current.type === 'new') {
