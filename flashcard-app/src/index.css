@@ -1136,21 +1136,10 @@ html.light .fc-app-bg {
   position: relative;
 }
 html.light .fc-app-bg::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200&q=40') center/cover no-repeat;
-  opacity: 0.3;
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 html.light .fc-app-bg::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(255,255,255,0.45);
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 @keyframes fc-bg-fade-light {
   from { opacity: 0; }
@@ -1200,7 +1189,7 @@ html.light .fc-header-gradient {
   background: linear-gradient(135deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.65) 100%);
 }
 html.light .fc-deck-card-bg::after {
-  background: linear-gradient(135deg, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0.82) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.92) 100%);
 }
 html.light .fc-deck-card { box-shadow: 0 4px 15px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); }
 html.light .fc-deck-card:hover { box-shadow: 0 12px 30px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06); }
@@ -1254,7 +1243,7 @@ html.light .fc-deck-card button .text-white { color: #1a1a2e !important; }
   background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.85) 100%);
 }
 html.light .fc-cat-card-bg::after {
-  background: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.9) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.95) 100%);
 }
 html.light .fc-cat-card { box-shadow: 0 3px 10px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.06); }
 html.light .fc-cat-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
