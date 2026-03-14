@@ -696,10 +696,15 @@ export default function App() {
         e.preventDefault();
         if (!flipped) handleShowAnswer();
       }
-      if (flipped && typedCorrect === false) {
+      if (flipped && sessionStyle === 'anki') {
         if (e.key === '1') handleGrade('again');
         if (e.key === '2') handleGrade('hard');
         if (e.key === '3') handleGrade('good');
+        if (e.key === '4') handleGrade('easy');
+      }
+      if (flipped && typedCorrect === false && sessionStyle === 'free') {
+        if (e.key === '1') handleGrade('again');
+        if (e.key === '2') handleGrade('good');
       }
     }
     window.addEventListener('keydown', onKey);
@@ -1029,9 +1034,14 @@ export default function App() {
               <div className="text-sm text-[var(--color-text-muted)]">{currentCard.pronunciation}</div>
             )}
 
-            {!flipped && (
+            {!flipped && sessionStyle === 'free' && (
               <div className="mt-6 text-sm text-[var(--color-text-muted)] animate-pulse">
                 ჩაწერე პასუხი ქვემოთ ✍️
+              </div>
+            )}
+            {!flipped && sessionStyle === 'anki' && (
+              <div className="mt-6 text-sm text-[var(--color-text-muted)] animate-pulse">
+                შეეხე ბარათს შემოსატრიალებლად 👆
               </div>
             )}
 
@@ -1054,8 +1064,8 @@ export default function App() {
             )}
           </div>
 
-          {/* Typing input */}
-          {!flipped && (
+          {/* Typing input — FREE MODE ONLY */}
+          {!flipped && sessionStyle === 'free' && (
             <div className="mt-5">
               <div className="flex gap-2">
                 <input
@@ -1085,80 +1095,101 @@ export default function App() {
             </div>
           )}
 
-          {/* Correct — auto-graded as easy */}
-          {flipped && typedCorrect === true && (
+          {/* Flip button — ANKI MODE ONLY */}
+          {!flipped && sessionStyle === 'anki' && (
+            <div className="mt-5">
+              <button
+                onClick={() => { playClick(); handleShowAnswer(); }}
+                className="w-full py-4 rounded-2xl bg-gradient-to-b from-indigo-500/80 to-indigo-600/80 hover:from-indigo-500 hover:to-indigo-600 text-white font-bold transition-all border border-indigo-400/20 text-lg"
+              >
+                🔄 შემოატრიალე
+              </button>
+            </div>
+          )}
+
+          {/* Free mode: Correct — auto-graded */}
+          {flipped && typedCorrect === true && sessionStyle === 'free' && (
             <div className="mt-5 text-center">
               <div className="bg-emerald-500/15 border border-emerald-500/30 rounded-2xl p-4">
                 <div className="text-2xl mb-1">✅</div>
                 <div className="font-bold text-emerald-400">სწორია!</div>
-                <div className="text-xs text-[var(--color-text-muted)] mt-1">ავტომატურად: ადვილი 😎</div>
+                <div className="text-xs text-[var(--color-text-muted)] mt-1">გავლილია</div>
               </div>
             </div>
           )}
 
-          {/* Wrong — show grade buttons */}
-          {flipped && typedCorrect === false && (
+          {/* Anki Mode — 4 grade buttons after flip */}
+          {flipped && sessionStyle === 'anki' && (
+            <div className="mt-5">
+              <div className="grid grid-cols-4 gap-2">
+                <button
+                  onClick={() => { playClick(); handleGrade('again'); }}
+                  className="py-3 rounded-2xl bg-gradient-to-b from-red-500/80 to-red-600/80 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all border border-red-400/20 fc-grade-btn"
+                >
+                  <div className="text-base">🔄</div>
+                  <div className="text-xs">ისევ</div>
+                  <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'again')}</div>
+                </button>
+                <button
+                  onClick={() => { playClick(); handleGrade('hard'); }}
+                  className="py-3 rounded-2xl bg-gradient-to-b from-orange-500/80 to-orange-600/80 hover:from-orange-500 hover:to-orange-600 text-white font-bold transition-all border border-orange-400/20 fc-grade-btn"
+                >
+                  <div className="text-base">😓</div>
+                  <div className="text-xs">რთული</div>
+                  <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'hard')}</div>
+                </button>
+                <button
+                  onClick={() => { playClick(); handleGrade('good'); }}
+                  className="py-3 rounded-2xl bg-gradient-to-b from-sky-500/80 to-sky-600/80 hover:from-sky-500 hover:to-sky-600 text-white font-bold transition-all border border-sky-400/20 fc-grade-btn"
+                >
+                  <div className="text-base">👍</div>
+                  <div className="text-xs">კარგი</div>
+                  <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'good')}</div>
+                </button>
+                <button
+                  onClick={() => { playClick(); handleGrade('easy'); }}
+                  className="py-3 rounded-2xl bg-gradient-to-b from-emerald-500/80 to-emerald-600/80 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold transition-all border border-emerald-400/20 fc-grade-btn"
+                >
+                  <div className="text-base">⚡</div>
+                  <div className="text-xs">ადვილი</div>
+                  <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'easy')}</div>
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Free mode: Wrong — show 2 buttons */}
+          {flipped && typedCorrect === false && sessionStyle === 'free' && (
             <div className="mt-5">
               {guess.trim() && (
                 <div className="text-center text-sm text-rose-400 mb-3">
                   ❌ შენი პასუხი: <span className="font-semibold">{guess}</span>
                 </div>
               )}
-              {sessionStyle === 'free' ? (
-                /* Free Mode - Only 2 buttons */
-                <div className="grid grid-cols-2 gap-3">
-                  <button
-                    onClick={() => { playClick(); handleGrade('again'); }}
-                    className="py-4 rounded-2xl bg-gradient-to-b from-red-500/80 to-red-600/80 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all border border-red-400/20 fc-grade-btn"
-                  >
-                    <div className="text-lg">❌</div>
-                    <div className="text-sm">არ ვიცი</div>
-                    <div className="text-xs opacity-60 mt-1">ბოლოში წავა</div>
-                  </button>
-                  <button
-                    onClick={() => { playClick(); handleGrade('good'); }}
-                    className="py-4 rounded-2xl bg-gradient-to-b from-emerald-500/80 to-emerald-600/80 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold transition-all border border-emerald-400/20 fc-grade-btn"
-                  >
-                    <div className="text-lg">✅</div>
-                    <div className="text-sm">ვიცი</div>
-                    <div className="text-xs opacity-60 mt-1">გავლილია</div>
-                  </button>
-                </div>
-              ) : (
-                /* Anki Mode - 3 buttons */
-                <div className="grid grid-cols-3 gap-2">
-                  <button
-                    onClick={() => { playClick(); handleGrade('again'); }}
-                    className="py-3 rounded-2xl bg-gradient-to-b from-red-500/80 to-red-600/80 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all border border-red-400/20 fc-grade-btn"
-                  >
-                    <div className="text-base">🔄</div>
-                    <div className="text-xs">ისევ</div>
-                    <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'again')}</div>
-                  </button>
-                  <button
-                    onClick={() => { playClick(); handleGrade('hard'); }}
-                    className="py-3 rounded-2xl bg-gradient-to-b from-orange-500/80 to-orange-600/80 hover:from-orange-500 hover:to-orange-600 text-white font-bold transition-all border border-orange-400/20 fc-grade-btn"
-                  >
-                    <div className="text-base">😓</div>
-                    <div className="text-xs">რთული</div>
-                    <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'hard')}</div>
-                  </button>
-                  <button
-                    onClick={() => { playClick(); handleGrade('good'); }}
-                    className="py-3 rounded-2xl bg-gradient-to-b from-sky-500/80 to-sky-600/80 hover:from-sky-500 hover:to-sky-600 text-white font-bold transition-all border border-sky-400/20 fc-grade-btn"
-                  >
-                    <div className="text-base">👍</div>
-                    <div className="text-xs">კარგი</div>
-                    <div className="text-[9px] opacity-60">{getIntervalHint(currentSRS, 'good')}</div>
-                  </button>
-                </div>
-              )}
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  onClick={() => { playClick(); handleGrade('again'); }}
+                  className="py-4 rounded-2xl bg-gradient-to-b from-red-500/80 to-red-600/80 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all border border-red-400/20 fc-grade-btn"
+                >
+                  <div className="text-lg">❌</div>
+                  <div className="text-sm">არ ვიცი</div>
+                  <div className="text-xs opacity-60 mt-1">ბოლოში წავა</div>
+                </button>
+                <button
+                  onClick={() => { playClick(); handleGrade('good'); }}
+                  className="py-4 rounded-2xl bg-gradient-to-b from-emerald-500/80 to-emerald-600/80 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold transition-all border border-emerald-400/20 fc-grade-btn"
+                >
+                  <div className="text-lg">✅</div>
+                  <div className="text-sm">ვიცი</div>
+                  <div className="text-xs opacity-60 mt-1">გავლილია</div>
+                </button>
+              </div>
             </div>
           )}
 
           {/* Keyboard hints */}
           <div className="hidden sm:block text-center text-xs text-[var(--color-text-muted)] mt-3 opacity-50">
-            {flipped && typedCorrect === false ? '⌨️ 1=ისევ · 2=რთული · 3=კარგი' : !flipped ? '⌨️ Enter = შემოწმება' : ''}
+            {flipped && sessionStyle === 'anki' ? '⌨️ 1=ისევ · 2=რთული · 3=კარგი · 4=ადვილი' : flipped && typedCorrect === false ? '⌨️ 1=არ ვიცი · 2=ვიცი' : !flipped && sessionStyle === 'free' ? '⌨️ Enter = შემოწმება' : !flipped ? '⌨️ Space = შემოატრიალე' : ''}
           </div>
         </div>
       )}
@@ -1291,11 +1322,11 @@ export default function App() {
               </div>
               <div className="text-sm text-[var(--color-text-muted)] space-y-2">
                 <p>სიტყვები ბრუნდება <strong>ოპტიმალურ დროს</strong> — ჯერ ხშირად, მერე უფრო იშვიათად.</p>
-                <p>პასუხის შემდეგ <strong>4 მაჩვენებელი</strong> გაქვს:</p>
-                <p>✍️ <strong>სიტყვის გამოცნობა</strong> — სწორად ჩაწერე სიტყვა</p>
+                <p>ბარათის შემოტრიალების შემდეგ <strong>4 ღილაკი</strong> გაქვს:</p>
                 <p>🔄 <strong>ისევ</strong> — სიტყვა 1 წუთში დაბრუნდება</p>
                 <p>😓 <strong>რთული</strong> — სიტყვა 10 წუთში დაბრუნდება</p>
                 <p>👍 <strong>კარგი</strong> — სიტყვა მოგვიანებით დაბრუნდება (1 დღე, 3 დღე...)</p>
+                <p>⚡ <strong>ადვილი</strong> — სიტყვა გრძელ ინტერვალში გადადის</p>
                 <p className="mt-2">✅ <strong>დღიური ლიმიტი</strong> აკონტროლებს რამდენ ახალ სიტყვას ნახავ დღეში.</p>
               </div>
             </div>
