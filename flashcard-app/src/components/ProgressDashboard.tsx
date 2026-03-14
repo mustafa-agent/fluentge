@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getStats, getAllProgress } from '../lib/storage';
+import { getCardsInState } from '../lib/spaced-repetition';
+import { useAllDecks } from '../lib/useDecks';
 
 interface Props {
   onBack: () => void;
@@ -24,6 +26,7 @@ function getWeeklyData(): number[] {
 }
 
 export default function ProgressDashboard({ onBack }: Props) {
+  const { decks } = useAllDecks();
   const [stats, setStats] = useState(getStats());
   const [weeklyData, setWeeklyData] = useState<number[]>([0, 0, 0, 0]);
   const [totalCards, setTotalCards] = useState(0);
@@ -34,6 +37,26 @@ export default function ProgressDashboard({ onBack }: Props) {
     const progress = getAllProgress();
     setTotalCards(Object.keys(progress).length);
   }, []);
+
+  const getCompletedCategories = () => {
+    let count = 0;
+    const countedDecks = new Set<string>();
+    for (const deck of decks) {
+      if (countedDecks.has(deck.id)) continue;
+      const cardCount = deck.cards.length;
+      if (cardCount === 0) continue;
+      const masteredCards = getCardsInState(deck.id, 'mastered').length;
+      if (masteredCards >= cardCount) { count++; countedDecks.add(deck.id); continue; }
+      const modes = ['kaen', 'enka', 'mixed'];
+      for (const mode of modes) {
+        try {
+          const progress = JSON.parse(localStorage.getItem(`fluentge_free_progress_${deck.id}_${mode}`) || '[]');
+          if (progress.length >= cardCount) { count++; countedDecks.add(deck.id); break; }
+        } catch {}
+      }
+    }
+    return count;
+  };
 
   const accuracy = stats.totalReviews > 0
     ? Math.round((stats.correctReviews / stats.totalReviews) * 100)
@@ -58,8 +81,8 @@ export default function ProgressDashboard({ onBack }: Props) {
       {/* Stats Grid */}
       <div className="grid grid-cols-2 gap-3 mb-8">
         <div className="bg-[var(--color-bg-card)] rounded-xl p-4 text-center">
-          <div className="text-3xl font-bold text-[var(--color-primary)]">{stats.wordsLearned}</div>
-          <div className="text-sm text-[var(--color-text-muted)] mt-1">ნასწავლი სიტყვები</div>
+          <div className="text-3xl font-bold text-[var(--color-primary)]">{getCompletedCategories()}</div>
+          <div className="text-sm text-[var(--color-text-muted)] mt-1">გავლილი კატეგორია</div>
         </div>
         <div className="bg-[var(--color-bg-card)] rounded-xl p-4 text-center">
           <div className="text-3xl font-bold text-orange-400">{stats.streak}</div>
@@ -109,3 +132,4 @@ export default function ProgressDashboard({ onBack }: Props) {
     </div>
   );
 }
+// v1773525336

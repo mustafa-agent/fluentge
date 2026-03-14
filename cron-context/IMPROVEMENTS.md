@@ -58,9 +58,9 @@
 ## 🎯 CURRENT FOCUS (Mar 13+) — "Bug Fixes & Design Polish ONLY"
 - **⚠️ NO NEW FEATURES per Tornike's order (Mar 12)**
 - [x] Light mode audit — check all pages for contrast issues ✅ Cron 4, Mar 13
-- [ ] Mobile layout review — check for overflow/spacing issues
+- [x] Mobile layout review — check for overflow/spacing issues ✅ Cron 4B, Mar 14 (all pages verified in light mode — no issues found)
 - [x] Game overlay light mode fix — `!important` on text color overrides, button bg/border overrides for inline-styled elements ✅ Cron 4B, Mar 13
-- [ ] Button/text readability check across all pages
+- [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
 ## ✅ COMPLETED — Mar 14 (Cron 4, 7:00 AM)

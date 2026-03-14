@@ -83,11 +83,6 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
           <span class="text-yellow-400 font-bold" id="ret-xp">0</span>
           <span class="text-yellow-400/70 text-xs">XP</span>
         </div>
-        <div class="returning-stat-pill bg-green-500/10 border border-green-500/20">
-          <span>📚</span>
-          <span class="text-green-400 font-bold" id="ret-words">0</span>
-          <span class="text-green-400/70 text-xs">სიტყვა</span>
-        </div>
         <div class="returning-stat-pill bg-sky-500/10 border border-sky-500/20">
           <span>🏆</span>
           <span class="text-sky-400 font-bold" id="ret-level">1</span>
@@ -123,26 +118,8 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         var el;
         el = document.getElementById('ret-streak'); if(el) el.textContent = streak;
         el = document.getElementById('ret-xp'); if(el) el.textContent = xpStr;
-        // Count learned words — only words with real progress (answered correctly at least once)
-        var allWords = new Set();
-        for (var i = 0; i < localStorage.length; i++) {
-          var k = localStorage.key(i);
-          if (k && k.startsWith('fluentge-srs-')) {
-            try {
-              var store = JSON.parse(localStorage.getItem(k));
-              Object.keys(store || {}).forEach(function(w) {
-                // Only count words with at least 1 successful repetition
-                if (store[w] && store[w].repetitions >= 1) allWords.add(w);
-              });
-            } catch(e) {}
-          }
-        }
-        // knownCards = explicitly marked as known
-        try {
-          var kc = JSON.parse(localStorage.getItem('knownCards') || '[]');
-          kc.forEach(function(w) { allWords.add(w); });
-        } catch(e) {}
-        var words = allWords.size;
+        // Count learned words — from completed categories (stored by dashboard/flashcard app)
+        var words = parseInt(localStorage.getItem('fluentge_words_learned') || '0', 10);
         el = document.getElementById('ret-words'); if(el) el.textContent = words;
         var level = Math.floor(xp / 200) + 1;
         el = document.getElementById('ret-level'); if(el) el.textContent = level;

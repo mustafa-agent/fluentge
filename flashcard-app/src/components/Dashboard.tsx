@@ -148,30 +148,44 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
     }, 0);
   };
 
-  const getTotalWordsLearned = () => {
-    // UNIFIED: only words with repetitions >= 1 (answered correctly at least once) + knownCards
-    const allWords = new Set<string>();
+  const getCompletedCategories = () => {
+    // Count COMPLETED categories
+    // A category is "completed" when ALL cards are mastered (SRS) OR free mode fully done
+    // Each category counted only once, even if both modes completed
+    let count = 0;
+    const countedDecks = new Set<string>();
     
-    // SRS stores — only words with at least 1 correct answer
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key?.startsWith('fluentge-srs-')) {
+    for (const deck of decks) {
+      if (countedDecks.has(deck.id)) continue;
+      const cardCount = deck.cards.length;
+      if (cardCount === 0) continue;
+      
+      // Check SRS completion: all cards mastered
+      const masteredCards = getCardsInState(deck.id, 'mastered').length;
+      if (masteredCards >= cardCount) {
+        count++;
+        countedDecks.add(deck.id);
+        continue;
+      }
+      
+      // Check free mode completion (any language mode)
+      const modes = ['kaen', 'enka', 'mixed'];
+      for (const mode of modes) {
         try {
-          const store = JSON.parse(localStorage.getItem(key) || '{}');
-          Object.keys(store).forEach(w => {
-            if (store[w] && store[w].repetitions >= 1) allWords.add(w);
-          });
+          const progress = JSON.parse(localStorage.getItem(`fluentge_free_progress_${deck.id}_${mode}`) || '[]');
+          if (progress.length >= cardCount) {
+            count++;
+            countedDecks.add(deck.id);
+            break;
+          }
         } catch {}
       }
     }
     
-    // Known cards — explicitly marked as known
-    try {
-      const known = JSON.parse(localStorage.getItem('knownCards') || '[]');
-      known.forEach((w: string) => allWords.add(w));
-    } catch {}
+    // Store for Astro dashboard to read
+    localStorage.setItem('fluentge_completed_categories', String(count));
     
-    return allWords.size;
+    return count;
   };
 
   const dailyGoalProgress = Math.min(100, (userStats.todayStudyTime / userStats.dailyGoalMinutes) * 100);
@@ -179,10 +193,10 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
 
   // Achievements system
   const achievements = [
-    { id: 'first-card', icon: '🎯', title: 'პირველი ნაბიჯი', desc: 'ისწავლე პირველი სიტყვა', gradient: 'from-sky-500 to-blue-600', check: () => getTotalWordsLearned() >= 1 },
-    { id: 'ten-words', icon: '📚', title: '10 სიტყვა', desc: 'ისწავლე 10 სიტყვა', gradient: 'from-green-500 to-emerald-600', check: () => getTotalWordsLearned() >= 10 },
-    { id: 'fifty-words', icon: '🧠', title: '50 სიტყვა', desc: 'ისწავლე 50 სიტყვა', gradient: 'from-purple-500 to-violet-600', check: () => getTotalWordsLearned() >= 50 },
-    { id: 'hundred-words', icon: '💯', title: '100 სიტყვა', desc: 'ისწავლე 100 სიტყვა', gradient: 'from-amber-500 to-orange-600', check: () => getTotalWordsLearned() >= 100 },
+    { id: 'first-category', icon: '🎯', title: 'პირველი კატეგორია', desc: 'გაიარე 1 კატეგორია', gradient: 'from-sky-500 to-blue-600', check: () => getCompletedCategories() >= 1 },
+    { id: 'three-categories', icon: '📚', title: '3 კატეგორია', desc: 'გაიარე 3 კატეგორია', gradient: 'from-green-500 to-emerald-600', check: () => getCompletedCategories() >= 3 },
+    { id: 'five-categories', icon: '🧠', title: '5 კატეგორია', desc: 'გაიარე 5 კატეგორია', gradient: 'from-purple-500 to-violet-600', check: () => getCompletedCategories() >= 5 },
+    { id: 'ten-categories', icon: '💯', title: '10 კატეგორია', desc: 'გაიარე 10 კატეგორია', gradient: 'from-amber-500 to-orange-600', check: () => getCompletedCategories() >= 10 },
     { id: 'streak-3', icon: '🔥', title: '3 დღე ზედიზედ', desc: 'იმეცადინე 3 დღე ზედიზედ', gradient: 'from-orange-500 to-red-600', check: () => userStats.currentStreak >= 3 },
     { id: 'streak-7', icon: '⚡', title: 'კვირის ჩემპიონი', desc: '7 დღიანი რიგითობა', gradient: 'from-red-500 to-pink-600', check: () => userStats.currentStreak >= 7 },
     { id: 'xp-100', icon: '⭐', title: 'XP შემგროვებელი', desc: 'დააგროვე 100 XP', gradient: 'from-yellow-500 to-amber-600', check: () => userStats.totalXP >= 100 },
@@ -304,10 +318,10 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div className="text-center">
               <div className="text-2xl font-bold text-green-500">
-                {getTotalWordsLearned()}
+                {getCompletedCategories()}
               </div>
               <div className="text-sm text-[var(--color-text-muted)]">
-                სიტყვები ნასწავლი
+                გავლილი კატეგორია
               </div>
             </div>
             
@@ -826,4 +840,4 @@ export default function Dashboard({ onNavigate, onBack }: DashboardProps) {
       </div>
     </div>
   );
-}
+}// v1773525332
