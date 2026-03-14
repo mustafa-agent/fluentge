@@ -281,6 +281,7 @@ export default function App() {
   const [queue, setQueue] = useState<FlashCard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [xpPopup, setXpPopup] = useState<number | null>(null);
   const [guess, setGuess] = useState('');
   const [typedCorrect, setTypedCorrect] = useState<boolean | null>(null); // null = not submitted yet
   const inputRef = useRef<HTMLInputElement>(null);
@@ -599,6 +600,7 @@ export default function App() {
       if (grade === 'good' || grade === 'easy') {
         // Correct - mark as completed + award XP
         addXP(2);
+        setXpPopup(2); setTimeout(() => setXpPopup(null), 1200);
         const newCompleted = [...freeCompleted, key];
         setFreeCompleted(newCompleted);
         saveFreeProgress(sessionDeckId, modeKey, newCompleted);
@@ -652,8 +654,8 @@ export default function App() {
       syncNow();
 
       // Award XP: კარგი = +1, ადვილი = +2, others = 0
-      if (grade === 'good') addXP(1);
-      else if (grade === 'easy') addXP(2);
+      if (grade === 'good') { addXP(1); setXpPopup(1); setTimeout(() => setXpPopup(null), 1200); }
+      else if (grade === 'easy') { addXP(2); setXpPopup(2); setTimeout(() => setXpPopup(null), 1200); }
 
       // Count new card as used only when actually graded (not when session starts)
       if (current.repetitions === 0 && current.type === 'new') {
@@ -997,6 +999,12 @@ export default function App() {
       {/* ═══ STUDY SESSION ═══ */}
       {screen === 'session' && currentCard && !loading && (
         <div className="max-w-lg mx-auto px-4 py-4 pb-28 fc-session-bg relative z-10">
+          {/* XP popup */}
+          {xpPopup !== null && (
+            <div className="fixed top-20 left-1/2 z-50 pointer-events-none" style={{ animation: 'xpFloat 1.2s ease-out forwards' }}>
+              <span className="text-2xl font-bold text-yellow-400 drop-shadow-lg">+{xpPopup} XP ⚡</span>
+            </div>
+          )}
           {/* Info */}
           <div className="flex items-center justify-between mb-2 text-xs text-[var(--color-text-muted)]">
             <span>

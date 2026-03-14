@@ -52,6 +52,12 @@ import Layout from '../../layouts/Layout.astro';
         <div id="leaderboard-list" class="divide-y divide-[#2E2E30]"></div>
       </div>
     </div>
+    <!-- Reset XP -->
+    <div class="mt-8 text-center">
+      <button id="reset-xp-btn" class="text-xs text-red-400/60 hover:text-red-400 transition-colors" onclick="if(confirm('ნამდვილად გსურს XP-ის განულება?')){localStorage.setItem('totalXP','0');localStorage.removeItem('fluentge-daily-history');localStorage.removeItem('currentStreak');localStorage.removeItem('lastPracticeDate');location.reload();}">
+        🔄 XP-ის განულება
+      </button>
+    </div>
   </section>
 
   <script is:inline>

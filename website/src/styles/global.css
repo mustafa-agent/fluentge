@@ -667,6 +667,93 @@ html.light .daily-goal-card {
   pointer-events: none;
 }
 
+/* ========== MISSING LIGHT MODE OVERRIDES ========== */
+
+/* Dark hover backgrounds */
+html.light .bg-\[\#3E3E40\],
+html.light .hover\:bg-\[\#3E3E40\]:hover {
+  background-color: #E5E7EB !important;
+}
+
+html.light .bg-\[\#2A2A2C\] {
+  background-color: #F5F5F0 !important;
+}
+
+/* Dark text colors that need light mode treatment */
+html.light .text-\[\#4a4a50\] {
+  color: #6B7280 !important;
+}
+
+/* Border overrides for darker borders */
+html.light .border-\[\#505050\],
+html.light .hover\:border-\[\#505050\]:hover {
+  border-color: #D1D5DB !important;
+}
+
+html.light .border-\[\#6B6B65\] {
+  border-color: #D1D5DB !important;
+}
+
+html.light .border-\[\#D4A853\] {
+  border-color: #D4A853 !important;
+}
+
+/* B8B8B0 button hover (used in games for check buttons) */
+html.light .bg-\[\#B8B8B0\],
+html.light .hover\:bg-\[\#B8B8B0\]:hover {
+  background-color: #D1D5DB !important;
+}
+
+/* Focus border for inputs */
+html.light .focus\:border-\[\#C8C8C0\]:focus {
+  border-color: #6B7280 !important;
+}
+
+/* Placeholder text */
+html.light .placeholder-\[\#6B6B65\]::placeholder {
+  color: #9CA3AF !important;
+}
+
+/* C8C8C0 bg buttons — invert for light mode */
+html.light .bg-\[\#C8C8C0\] {
+  background-color: #1A1A2E !important;
+  color: #FFFFFF !important;
+}
+
+/* border-white/20 in light mode */
+html.light .border-white\/20 {
+  border-color: #D1D5DB !important;
+}
+
+/* Games: inline style buttons — strengthen wildcard overrides */
+html.light #game-container button[style*="background:#242426"],
+html.light #game-container button[style*="background: #242426"] {
+  background: #FFFFFF !important;
+  border-color: #D1D5DB !important;
+  color: #1A1A2E !important;
+}
+
+/* Memory game card backgrounds */
+html.light #game-container button[style*="background:linear-gradient(135deg,#9333EA"] {
+  background: linear-gradient(135deg, rgba(147,51,234,0.08), rgba(124,58,237,0.08)) !important;
+  border-color: rgba(147,51,234,0.3) !important;
+  color: #1A1A2E !important;
+}
+
+/* Game score/stat badges with dark bg */
+html.light #game-container span[style*="background:#242426"] {
+  background: #F0F0EC !important;
+  border-color: #D1D5DB !important;
+}
+
+/* Reorder game new button */
+html.light .bg-\[\#2E2E30\].hover\:bg-\[\#3E3E40\] {
+  background-color: #E5E7EB !important;
+}
+html.light .bg-\[\#2E2E30\].hover\:bg-\[\#3E3E40\]:hover {
+  background-color: #D1D5DB !important;
+}
+
 /* Scrollbar */
 html.light ::-webkit-scrollbar-track {
   background: #F5F5F0;

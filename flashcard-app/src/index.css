@@ -1604,3 +1604,9 @@ html.light .notif-panel .text-white\/40 { color: #9ca3af; }
 html.light .notif-panel .text-white\/30 { color: #d1d5db; }
 html.light .notif-panel .bg-white\/10 { background: rgba(0,0,0,0.06); }
 html.light .notif-panel .bg-white\/20 { background: rgba(0,0,0,0.12); }
+
+/* ========== ADDITIONAL LIGHT MODE OVERRIDES ========== */
+html.light .bg-\[\#2A2A2C\] { background-color: #F0F0EC !important; }
+html.light .border-\[\#3A3A3C\] { border-color: #D1D5DB !important; }
+html.light .text-\[\#666\] { color: #6B7280 !important; }
+html.light .text-\[\#8B8B85\] { color: #6B7280 !important; }
