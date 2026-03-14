@@ -76,20 +76,40 @@ export function processCardReview(
  */
 function processNewCard(card: CardProgress, rating: Rating): CardProgress {
   if (rating === 1) {
-    // Again - stay as new, review in 1 minute
-    return {
-      ...card,
-      state: 'learning',
-      interval: 1, // 1 minute
-      nextReview: addMinutes(new Date(), 1),
-    };
-  } else {
-    // Any other rating moves to learning
+    // Again - review in 1 minute
     return {
       ...card,
       state: 'learning',
       interval: 1,
       nextReview: addMinutes(new Date(), 1),
+    };
+  } else if (rating === 4) {
+    // Easy - skip learning, go straight to review in 4 days
+    return {
+      ...card,
+      state: 'review',
+      interval: 4,
+      nextReview: addDays(new Date(), 4),
+      ease: adjustEase(card.ease, rating),
+      reviewCount: 1,
+    };
+  } else if (rating === 3) {
+    // Good - skip learning, go to review in 1 day
+    return {
+      ...card,
+      state: 'review',
+      interval: 1,
+      nextReview: addDays(new Date(), 1),
+      ease: adjustEase(card.ease, rating),
+      reviewCount: 1,
+    };
+  } else {
+    // Hard - learning step, 10 minutes
+    return {
+      ...card,
+      state: 'learning',
+      interval: 10,
+      nextReview: addMinutes(new Date(), 10),
     };
   }
 }
@@ -106,12 +126,30 @@ function processLearningCard(card: CardProgress, rating: Rating): CardProgress {
       interval: 1,
       nextReview: addMinutes(new Date(), 1),
     };
-  } else if (rating >= 2) {
-    // Check if this is first or second learning step
+  } else if (rating === 4) {
+    // Easy - graduate immediately, 4 days
+    return {
+      ...card,
+      state: 'review',
+      interval: 4,
+      nextReview: addDays(new Date(), 4),
+      ease: adjustEase(card.ease, rating),
+      reviewCount: 1,
+    };
+  } else if (rating === 3) {
+    // Good - graduate immediately, 1 day
+    return {
+      ...card,
+      state: 'review',
+      interval: 1,
+      nextReview: addDays(new Date(), 1),
+      ease: adjustEase(card.ease, rating),
+      reviewCount: 1,
+    };
+  } else {
+    // Hard - move to next learning step or graduate
     const currentStep = card.interval === 1 ? 0 : 1;
-    
     if (currentStep === 0) {
-      // Move to second learning step (10 minutes)
       return {
         ...card,
         state: 'learning',
@@ -119,7 +157,6 @@ function processLearningCard(card: CardProgress, rating: Rating): CardProgress {
         nextReview: addMinutes(new Date(), 10),
       };
     } else {
-      // Graduate to review with 1 day interval
       return {
         ...card,
         state: 'review',
