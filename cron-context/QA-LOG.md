@@ -1,9 +1,37 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-14 (7:30 PM)
-- **Status:** ✅ ALL CLEAR
-- **Issues Found:** 0
+- **Date:** 2026-03-15 (9:00 AM)
+- **Status:** ✅ 1 BUG FIXED & DEPLOYED
+- **Issues Found:** 1 (fixed)
+
+## Morning QA Run (Mar 15, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 9 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/paths/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 7.04s, no errors
+
+### Bug Fix: Nav Active Link Invisible in Light Mode
+- **Found:** Active nav link color set once on page load (`white` for dark mode). When user toggles to light mode, the active link stays `white` → invisible on white background.
+- **Fixed:** Added nav active color update inside theme toggle click handler. Now updates active links to `#1a1a2e` (dark) in light mode and `white` in dark mode on every toggle.
+- **File:** `layouts/Layout.astro` (3 lines added to theme toggle handler)
+- **Deployed:** 114 files uploaded, live at fluentge.pages.dev
+
+### Browser Visual Testing — ✅ All Good
+- **Dashboard (dark mode):** Stats, leaderboard, XP, level — all clean ✅
+- **Dashboard (light mode):** White cards, readable text, proper contrast ✅
+- **Paths (dark mode):** 3 learning paths, milestones, progress rings — all clean ✅
+- **Paths (light mode):** Readable text, proper cards (tested via theme toggle) ✅
+
+### Verdict
+1 bug found and fixed: nav active link invisible after theme toggle to light mode. Deployed. TS clean, build clean, all pages 200. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Evening QA Run (Mar 14, 7:30 PM)
 

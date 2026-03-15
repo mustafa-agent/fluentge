@@ -186,9 +186,19 @@ html.light .bg-white.text-\[\#1C1C1E\] {
   color: #FFFFFF !important;
 }
 
-/* Green 3D buttons keep their color in light mode */
+/* Colored buttons keep white text in light mode */
 html.light .bg-green-500 {
   background-color: rgb(34 197 94) !important;
+  color: #FFFFFF !important;
+}
+html.light .bg-amber-500 {
+  color: #FFFFFF !important;
+}
+html.light .bg-sky-500,
+html.light .bg-indigo-500,
+html.light .bg-purple-500,
+html.light .bg-red-500,
+html.light .bg-rose-500 {
   color: #FFFFFF !important;
 }
 
@@ -550,6 +560,11 @@ html.light .bg-white\/10 {
 html.light .bg-white\/20 {
   background-color: rgba(26, 26, 46, 0.12) !important;
 }
+
+/* Semi-transparent white text — darken for light bg */
+html.light .text-white\/70 { color: rgba(26,26,46,0.5) !important; }
+html.light .text-white\/80 { color: rgba(26,26,46,0.65) !important; }
+html.light .text-white\/60 { color: rgba(26,26,46,0.4) !important; }
 
 /* Dividers */
 html.light .divide-white\/5 > * + * {

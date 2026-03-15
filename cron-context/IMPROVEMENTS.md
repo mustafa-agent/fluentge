@@ -63,6 +63,9 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 15 (Cron 4, 7:00 AM)
+- [x] **Grammar cards light mode fix** — Cards had dark gradient backgrounds (rgb(36,36,38)) in light mode because JS set inline `background` styles before theme class was applied. Refactored to use CSS classes (`grammar-state-completed`, `grammar-state-current`) with proper light/dark mode overrides via `!important`. ✅
+
 ## ✅ COMPLETED — Mar 14 (Cron 4, 7:00 AM)
 - [x] **Daily challenge light mode** — Quiz option buttons, stat cards, feedback messages, results card, progress bar all properly themed for light mode ✅
 - [x] **Login page light mode inputs** — Input fields get light background, proper placeholder colors, focus border color, tab switcher styled ✅

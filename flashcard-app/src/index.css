@@ -289,6 +289,11 @@ html.light .fc-btn-3d:active { box-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 2px 5px r
 html.light .fc-grade-btn { box-shadow: 0 4px 0 rgba(0,0,0,0.15), 0 6px 20px rgba(0,0,0,0.1) !important; }
 html.light .fc-grade-btn:active { box-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.05) !important; }
 
+/* Light mode: fix semi-transparent white text on light backgrounds */
+html.light .text-white\/70 { color: rgba(26,26,46,0.5) !important; }
+html.light .text-white\/80 { color: rgba(26,26,46,0.6) !important; }
+html.light .text-white\/60 { color: rgba(26,26,46,0.4) !important; }
+
 /* Onboarding modal */
 .onboarding-modal { animation: onboardSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
 @keyframes onboardSlideUp {

@@ -216,6 +216,11 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           var isLight = document.documentElement.classList.contains('light');
           localStorage.setItem('fluentge-theme', isLight ? 'light' : 'dark');
           btn.textContent = isLight ? '🌙' : '☀️';
+          // Update active nav link colors for new theme
+          var activeColor = isLight ? '#1a1a2e' : 'white';
+          document.querySelectorAll('.nav-link, .nav-link-mobile').forEach(function(a) {
+            if (a.style.fontWeight === '600') a.style.color = activeColor;
+          });
         });
       })();
       // Auth nav toggle + premium check
