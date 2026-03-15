@@ -493,9 +493,35 @@ html.light a[href="/premium/"].bg-\[var\(--color-primary\)\] {
 
 /* Grammar lesson cards in light mode — fix gradient backgrounds set by JS */
 html.light .grammar-lesson-card {
-  background-color: #FFFFFF !important;
+  background: #FFFFFF !important;
   border-color: #E5E7EB !important;
   border-bottom-color: #D1D5DB !important;
+}
+
+/* Grammar card states — dark mode */
+.grammar-state-completed {
+  background: linear-gradient(135deg, rgba(34,197,94,0.08) 0%, rgba(36,36,38,1) 100%) !important;
+}
+.grammar-state-current {
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  border-width: 2px !important;
+  border-bottom-width: 4px !important;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15), inset 0 0 30px rgba(56, 189, 248, 0.03) !important;
+  background: linear-gradient(135deg, rgba(56,189,248,0.08) 0%, rgba(36,36,38,1) 100%) !important;
+}
+
+/* Grammar card states — light mode */
+html.light .grammar-state-completed {
+  background: linear-gradient(135deg, rgba(34,197,94,0.06) 0%, rgba(255,255,255,1) 100%) !important;
+  border-color: #E5E7EB !important;
+  border-left-color: rgb(34, 197, 94) !important;
+  border-bottom-color: #D1D5DB !important;
+}
+html.light .grammar-state-current {
+  background: linear-gradient(135deg, rgba(56,189,248,0.06) 0%, rgba(255,255,255,1) 100%) !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+  border-bottom-color: rgba(56, 189, 248, 0.5) !important;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.1) !important;
 }
 
 html.light .grammar-lesson-card .text-lg {

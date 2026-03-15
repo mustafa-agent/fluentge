@@ -54,9 +54,69 @@ import Layout from '../../layouts/Layout.astro';
     </div>
     <!-- Reset XP -->
     <div class="mt-8 text-center">
-      <button id="reset-xp-btn" class="text-xs text-red-400/60 hover:text-red-400 transition-colors" onclick="if(confirm('ნამდვილად გსურს XP-ის განულება?')){localStorage.setItem('totalXP','0');localStorage.removeItem('fluentge-daily-history');localStorage.removeItem('currentStreak');localStorage.removeItem('lastPracticeDate');location.reload();}">
+      <button id="reset-xp-btn" class="text-xs text-red-400/60 hover:text-red-400 transition-colors">
         🔄 XP-ის განულება
       </button>
+      <!-- Reset confirm modal -->
+      <div id="reset-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center hidden">
+        <div class="bg-[#1C1C1E] border border-[#2E2E30] rounded-2xl p-6 mx-4 max-w-sm w-full text-center">
+          <p class="text-white font-bold text-lg mb-2">⚠️ XP-ის განულება</p>
+          <p class="text-[#A0A09A] text-sm mb-6">ნამდვილად გსურს XP-ის განულება? ეს ვერ დაბრუნდება.</p>
+          <div class="flex gap-3">
+            <button id="reset-cancel" class="flex-1 py-2.5 rounded-xl bg-[#2E2E30] text-white text-sm font-medium">გაუქმება</button>
+            <button id="reset-confirm" class="flex-1 py-2.5 rounded-xl bg-red-500 text-white text-sm font-medium">განულება</button>
+          </div>
+        </div>
+      </div>
+      <script is:inline>
+        document.getElementById('reset-xp-btn').addEventListener('click', function() {
+          document.getElementById('reset-modal').classList.remove('hidden');
+        });
+        document.getElementById('reset-cancel').addEventListener('click', function() {
+          document.getElementById('reset-modal').classList.add('hidden');
+        });
+        document.getElementById('reset-confirm').addEventListener('click', async function() {
+          var btn = document.getElementById('reset-confirm');
+          btn.textContent = '⏳ მიმდინარეობს...';
+          btn.disabled = true;
+          
+          // Reset localStorage
+          localStorage.setItem('totalXP', '0');
+          localStorage.setItem('currentStreak', '0');
+          localStorage.removeItem('lastPracticeDate');
+          localStorage.removeItem('fluentge-daily-history');
+          
+          // Sync to Firebase directly
+          try {
+            var { initializeApp, getApps } = await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js");
+            var { getAuth, onAuthStateChanged } = await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js");
+            var { getFirestore, doc, setDoc } = await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js");
+            
+            var app = getApps().length ? getApps()[0] : initializeApp({
+              apiKey: "AIzaSyBkkidqxa8Wnt89Gvp9zb5F0USz3D9VKKY",
+              authDomain: "fluentge.firebaseapp.com",
+              projectId: "fluentge",
+              storageBucket: "fluentge.firebasestorage.app",
+              messagingSenderId: "310749638702",
+              appId: "1:310749638702:web:af06277b9f26fcaab93c48"
+            });
+            var auth = getAuth(app);
+            
+            // Wait for auth state
+            await new Promise(function(resolve) {
+              onAuthStateChanged(auth, async function(user) {
+                if (user) {
+                  var db = getFirestore(app);
+                  await setDoc(doc(db, 'users', user.uid), { totalXP: 0, currentStreak: 0, lastPracticeDate: '' }, { merge: true });
+                }
+                resolve();
+              });
+            });
+          } catch(e) { console.log('sync error', e); }
+          
+          location.reload();
+        });
+      </script>
     </div>
   </section>
 

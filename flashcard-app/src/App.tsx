@@ -317,6 +317,22 @@ export default function App() {
 
   // Firebase sync on load + real-time listener
   useEffect(() => {
+    // Handle XP reset from dashboard
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('resetxp') === '1') {
+      localStorage.setItem('totalXP', '0');
+      localStorage.setItem('currentStreak', '0');
+      localStorage.removeItem('lastPracticeDate');
+      localStorage.removeItem('fluentge-daily-history');
+      syncToCloud().then(() => {
+        window.history.replaceState({}, '', window.location.pathname);
+        window.location.href = '/dashboard/';
+      }).catch(() => {
+        window.location.href = '/dashboard/';
+      });
+      return;
+    }
+
     // Set callback for real-time updates from other devices
     setOnSyncCallback(() => {
       setStudyDecks(loadStudyDecks());
