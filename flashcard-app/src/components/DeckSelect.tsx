@@ -160,7 +160,7 @@ export default function DeckSelect({ onSelect }: Props) {
         </button>
 
         <div className="text-center mb-8">
-          <div className="inline-block rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 px-8 py-5 mb-1">
+          <div className="fc-deck-detail-header inline-block rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 px-8 py-5 mb-1">
             <span className="text-6xl block mb-2 drop-shadow-lg">{String(loadedDeck.icon || '📚')}</span>
             <h2 className="text-2xl font-extrabold tracking-tight">{String(loadedDeck.nameKa || '')}</h2>
             <p className="text-[var(--color-text-muted)] text-sm mt-1">{String(loadedDeck.name || '')} · {total} ბარათი</p>
@@ -240,7 +240,7 @@ export default function DeckSelect({ onSelect }: Props) {
       {/* Daily lesson CTA removed — not working well */}
 
       {/* 📊 Words I Know Stats Banner */}
-      <div className="mb-5 grid grid-cols-4 gap-2">
+      <div className="fc-stat-banner mb-5 grid grid-cols-4 gap-2">
         <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl p-3 text-center">
           <div className="text-xl font-extrabold text-green-400">{totalMastered}</div>
           <div className="text-[10px] text-green-400/70 font-medium mt-0.5">ნასწავლი</div>
@@ -337,7 +337,7 @@ export default function DeckSelect({ onSelect }: Props) {
           <div className="h-px flex-1 bg-white/10"></div>
         </div>
         <div className="rounded-2xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 p-3 mb-3">
-          <p className="text-[12px] text-white/70 leading-relaxed">
+          <p className="fc-ielts-desc text-[12px] text-white/70 leading-relaxed">
             <span className="text-indigo-400 font-bold">🎯 გამოცდისთვის მომზადება</span> — IELTS და TOEFL-ისთვის საჭირო ლექსიკა და ფრაზები
           </p>
         </div>
