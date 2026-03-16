@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { type Deck, type FlashCard, loadDeck } from './lib/deck-loader';
 import { deckIndex, type DeckMeta } from './lib/deck-index';
 import { loadFromCloud, syncToCloud, syncNow, isLoggedIn, startRealtimeSync, stopRealtimeSync, setOnSyncCallback } from './lib/firebase-sync';
@@ -1270,9 +1271,9 @@ export default function App() {
       )}
 
       {/* Style Selection Modal */}
-      {showStyleModal && (
-        <div className="fixed inset-0 bg-black/60 z-[9999]" onClick={() => setShowStyleModal(null)}>
-          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--color-bg)] border border-white/10 rounded-2xl p-6 max-w-sm w-[calc(100%-2rem)] shadow-2xl z-[10000]" onClick={e => e.stopPropagation()}>
+      {showStyleModal && createPortal(
+        <div style={{position:'fixed',inset:0,zIndex:9999,display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(0,0,0,0.6)'}} onClick={() => setShowStyleModal(null)}>
+          <div className="bg-[var(--color-bg)] border border-white/10 rounded-2xl p-6 max-w-sm w-[calc(100%-2rem)] shadow-2xl" onClick={e => e.stopPropagation()}>
             <div className="text-center mb-6">
               <div className="text-3xl mb-3">📚</div>
               <h3 className="font-bold text-lg mb-2">სასწავლო რეჟიმი</h3>
@@ -1336,84 +1337,92 @@ export default function App() {
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Mode Help Modal */}
-      {showModeHelp && (
-        <div className="fixed inset-0 bg-black/70 z-[10001]" onClick={() => setShowModeHelp(false)}>
-          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--color-bg)] border border-white/10 rounded-2xl p-6 max-w-md w-[calc(100%-2rem)] shadow-2xl z-[10002] max-h-[80vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
-            <h3 className="font-bold text-lg text-center mb-5">📖 რეჟიმების ახსნა</h3>
+      {showModeHelp && createPortal(
+        <div style={{position:'fixed',inset:0,zIndex:10001,display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(0,0,0,0.7)',backdropFilter:'blur(4px)'}} onClick={() => setShowModeHelp(false)}>
+          <div className="rounded-2xl p-6 max-w-md w-[calc(100%-2rem)] max-h-[80vh] overflow-y-auto border shadow-2xl bg-[var(--color-bg)]" style={{borderColor: 'var(--color-bg-card-hover)'}} onClick={e => e.stopPropagation()}>
+            <h3 className="font-extrabold text-xl text-center mb-5 text-[var(--color-text)]">📖 რეჟიმების ახსნა</h3>
             
-            <div className="mb-5 p-4 rounded-xl bg-blue-500/10 border border-blue-500/20">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-xl">🔄</span>
-                <span className="font-bold text-blue-400">ანკი რეჟიმი</span>
+            <div className="mb-5 p-4 rounded-xl border-b-4 border-blue-500 shadow-lg relative overflow-hidden" style={{background: 'var(--color-bg-card)'}}>
+              <div className="absolute inset-0 rounded-xl" style={{background: 'linear-gradient(135deg, rgba(59,130,246,0.08) 0%, rgba(37,99,235,0.12) 100%)', pointerEvents: 'none'}}></div>
+              <div className="flex items-center gap-2 mb-3 relative">
+                <span className="text-3xl">🔄</span>
+                <span className="font-extrabold text-lg text-blue-600">ანკი რეჟიმი</span>
               </div>
-              <div className="text-sm text-[var(--color-text-muted)] space-y-2">
-                <p>სიტყვები ბრუნდება <strong>ოპტიმალურ დროს</strong> — ჯერ ხშირად, მერე უფრო იშვიათად.</p>
-                <p>ბარათის შემოტრიალების შემდეგ <strong>4 ღილაკი</strong> გაქვს:</p>
-                <p>🔄 <strong>ისევ</strong> — სიტყვა 1 წუთში დაბრუნდება</p>
-                <p>😓 <strong>რთული</strong> — სიტყვა 10 წუთში დაბრუნდება</p>
-                <p>👍 <strong>კარგი</strong> — სიტყვა მოგვიანებით დაბრუნდება (1 დღე, 3 დღე...)</p>
-                <p>⚡ <strong>ადვილი</strong> — სიტყვა გრძელ ინტერვალში გადადის</p>
-                <p className="mt-2">✅ <strong>დღიური ლიმიტი</strong> აკონტროლებს რამდენ ახალ სიტყვას ნახავ დღეში.</p>
+              <div className="text-sm text-[var(--color-text-muted)] space-y-2 relative">
+                <p>სიტყვები ბრუნდება <strong className="text-[var(--color-text)]">ოპტიმალურ დროს</strong> — ჯერ ხშირად, მერე უფრო იშვიათად.</p>
+                <p>ბარათის შემოტრიალების შემდეგ <strong className="text-[var(--color-text)]">4 ღილაკი</strong> გაქვს:</p>
+                <p>🔄 <strong className="text-[var(--color-text)]">ისევ</strong> — სიტყვა 1 წუთში დაბრუნდება</p>
+                <p>😓 <strong className="text-[var(--color-text)]">რთული</strong> — სიტყვა 10 წუთში დაბრუნდება</p>
+                <p>👍 <strong className="text-[var(--color-text)]">კარგი</strong> — სიტყვა მოგვიანებით დაბრუნდება (1 დღე, 3 დღე...)</p>
+                <p>⚡ <strong className="text-[var(--color-text)]">ადვილი</strong> — სიტყვა გრძელ ინტერვალში გადადის</p>
+                <p className="mt-2">✅ <strong className="text-[var(--color-text)]">დღიური ლიმიტი</strong> აკონტროლებს რამდენ ახალ სიტყვას ნახავ დღეში.</p>
               </div>
             </div>
             
-            <div className="mb-5 p-4 rounded-xl bg-purple-500/10 border border-purple-500/20">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-xl">📋</span>
-                <span className="font-bold text-purple-400">თავისუფალი რეჟიმი</span>
+            <div className="mb-5 p-4 rounded-xl border-b-4 border-purple-500 shadow-lg relative overflow-hidden" style={{background: 'var(--color-bg-card)'}}>
+              <div className="absolute inset-0 rounded-xl" style={{background: 'linear-gradient(135deg, rgba(147,51,234,0.08) 0%, rgba(126,34,206,0.12) 100%)', pointerEvents: 'none'}}></div>
+              <div className="flex items-center gap-2 mb-3 relative">
+                <span className="text-3xl">📋</span>
+                <span className="font-extrabold text-lg text-purple-600">თავისუფალი რეჟიმი</span>
               </div>
-              <div className="text-sm text-[var(--color-text-muted)] space-y-2">
-                <p>ყველა სიტყვა ერთად იტვირთება, <strong>ლიმიტის გარეშე</strong>.</p>
-                <p>პასუხის შემდეგ <strong>2 ღილაკი</strong> გაქვს:</p>
-                <p>✅ <strong>ვიცი</strong> — სიტყვა სიიდან წაიშლება (გავლილია)</p>
-                <p>❌ <strong>არ ვიცი</strong> — სიტყვა სიის ბოლოში წავა, ისევ გამოჩნდება</p>
-                <p className="mt-2">🎯 <strong>მიზანი:</strong> გაიარე ყველა სიტყვა სანამ სია ცარიელი არ გახდება.</p>
+              <div className="text-sm text-[var(--color-text-muted)] space-y-2 relative">
+                <p>ყველა სიტყვა ერთად იტვირთება, <strong className="text-[var(--color-text)]">ლიმიტის გარეშე</strong>.</p>
+                <p>პასუხის შემდეგ <strong className="text-[var(--color-text)]">2 ღილაკი</strong> გაქვს:</p>
+                <p>✅ <strong className="text-[var(--color-text)]">ვიცი</strong> — სიტყვა სიიდან წაიშლება (გავლილია)</p>
+                <p>❌ <strong className="text-[var(--color-text)]">არ ვიცი</strong> — სიტყვა სიის ბოლოში წავა, ისევ გამოჩნდება</p>
+                <p className="mt-2">🎯 <strong className="text-[var(--color-text)]">მიზანი:</strong> გაიარე ყველა სიტყვა სანამ სია ცარიელი არ გახდება.</p>
               </div>
             </div>
             
             <button
               onClick={() => setShowModeHelp(false)}
-              className="w-full py-3 rounded-xl bg-white/10 hover:bg-white/15 text-sm font-medium transition"
+              className="w-full py-3 rounded-xl font-bold text-base transition-all duration-150 active:translate-y-1 border-b-4 border-emerald-700 hover:brightness-110"
+              style={{background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', boxShadow: '0 6px 20px rgba(16,185,129,0.4), inset 0 1px 0 rgba(255,255,255,0.2)'}}
             >
               გასაგებია ✅
             </button>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Delete Confirmation Modal */}
       {confirmDelete && (() => {
         const meta = deckIndex.find(d => d.id === confirmDelete.deckId);
-        return (
-          <div className="fixed inset-0 bg-black/60 z-[9999]" onClick={() => setConfirmDelete(null)}>
-            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[var(--color-bg)] border border-white/10 rounded-2xl p-5 max-w-sm w-[calc(100%-2rem)] shadow-2xl z-[10000]" onClick={e => e.stopPropagation()}>
+        return createPortal(
+          <div style={{position:'fixed',inset:0,zIndex:9999,display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(0,0,0,0.6)',backdropFilter:'blur(4px)'}} onClick={() => setConfirmDelete(null)}>
+            <div className="rounded-2xl p-5 max-w-sm w-[calc(100%-2rem)] border border-[var(--color-border,rgba(255,255,255,0.2))] bg-[var(--color-bg)] shadow-2xl" onClick={e => e.stopPropagation()}>
               <div className="text-center mb-4">
-                <div className="text-4xl mb-2">⚠️</div>
-                <h3 className="font-bold text-lg mb-1">კატეგორიის წაშლა</h3>
+                <div className="text-5xl mb-2">⚠️</div>
+                <h3 className="font-extrabold text-xl mb-1 text-[var(--color-text)]">კატეგორიის წაშლა</h3>
                 <p className="text-sm text-[var(--color-text-muted)]">
-                  ნამდვილად გსურს <strong>{meta?.nameKa}</strong> ({MODE_LABELS[confirmDelete.mode]}, {STYLE_LABELS[confirmDelete.studyStyle]}) წაშლა?
+                  ნამდვილად გსურს <strong className="text-[var(--color-text)]">{meta?.nameKa}</strong> ({MODE_LABELS[confirmDelete.mode]}, {STYLE_LABELS[confirmDelete.studyStyle]}) წაშლა?
                 </p>
               </div>
               <div className="flex gap-3">
                 <button
                   onClick={() => setConfirmDelete(null)}
-                  className="flex-1 py-2.5 rounded-xl bg-white/10 border border-white/10 text-[var(--color-text)] font-semibold hover:bg-white/15 transition"
+                  className="flex-1 py-2.5 rounded-xl text-[var(--color-text)] font-semibold transition-all duration-150 active:translate-y-1 hover:opacity-80"
+                  style={{background: 'var(--color-bg-card)', border: '1px solid var(--color-bg-card-hover)'}}
                 >
                   გაუქმება
                 </button>
                 <button
                   onClick={() => removeStudyDeck(confirmDelete.deckId, confirmDelete.mode, confirmDelete.studyStyle)}
-                  className="flex-1 py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-semibold transition"
+                  className="flex-1 py-2.5 rounded-xl text-white font-semibold transition-all duration-150 active:translate-y-1 border-b-4 border-red-800 hover:brightness-110"
+                  style={{background: 'linear-gradient(135deg, #f43f5e 0%, #dc2626 100%)', boxShadow: '0 6px 20px rgba(244,63,94,0.4), inset 0 1px 0 rgba(255,255,255,0.2)'}}
                 >
                   წაშლა
                 </button>
               </div>
             </div>
-          </div>
+          </div>,
+          document.body
         );
       })()}
 
@@ -1472,19 +1481,27 @@ function CategoryCard({ meta, isAdded, onSelect, featured }: {
       </button>
 
       {expanded && (
-        <div className="mt-1.5 rounded-xl bg-[var(--color-bg)] border border-white/10 p-2 shadow-xl fc-slideDown space-y-1.5 z-10 relative">
+        <div className="mt-1.5 rounded-2xl border border-white/15 p-2.5 shadow-2xl fc-slideDown space-y-2 z-10 relative" style={{background: 'linear-gradient(135deg, rgba(30,30,32,0.98) 0%, rgba(40,40,50,0.98) 100%)', boxShadow: '0 15px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.08)'}}>
           {([['ka-en', '🇬🇪→🇬🇧', 'ქართული → ინგლისური'], ['en-ka', '🇬🇧→🇬🇪', 'ინგლისური → ქართული'], ['mixed', '🔀', 'შერეული']] as [Mode, string, string][]).map(([m, icon, label]) => {
             const added = isAdded(m);
-            const modeClass = m === 'ka-en' ? 'fc-mode-kaen' : m === 'en-ka' ? 'fc-mode-enka' : 'fc-mode-mixed';
+            const gradients: Record<string, string> = {
+              'ka-en': 'linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)',
+              'en-ka': 'linear-gradient(135deg, #10b981 0%, #14b8a6 100%)',
+              'mixed': 'linear-gradient(135deg, #a855f7 0%, #7c3aed 100%)',
+            };
             return (
               <button
                 key={m}
                 onClick={() => { playClick(); setExpanded(false); onSelect(meta, m); }}
-                className={`w-full text-left px-3 py-2.5 rounded-lg transition-all duration-200 text-sm flex items-center gap-2 border ${
-                  added ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : `${modeClass}`
+                className={`w-full text-left px-4 py-3 rounded-xl transition-all duration-200 text-sm flex items-center gap-3 font-semibold text-white border-b-[4px] active:border-b-[1px] active:translate-y-[3px] hover:brightness-110 ${
+                  added ? 'border-b-emerald-700' : 'border-b-black/30'
                 }`}
+                style={{
+                  background: added ? 'linear-gradient(135deg, rgba(16,185,129,0.2) 0%, rgba(16,185,129,0.1) 100%)' : gradients[m],
+                  boxShadow: added ? '0 4px 12px rgba(16,185,129,0.2)' : '0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.15)',
+                }}
               >
-                <span>{icon}</span>
+                <span className="text-lg">{icon}</span>
                 <span className="flex-1">{label}</span>
                 {added && <span className="text-xs">✅</span>}
               </button>

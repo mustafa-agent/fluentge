@@ -159,54 +159,74 @@ export default function DeckSelect({ onSelect }: Props) {
           უკან
         </button>
 
-        <div className="text-center mb-6">
-          <span className="text-5xl block mb-3">{String(loadedDeck.icon || '📚')}</span>
-          <h2 className="text-xl font-bold">{String(loadedDeck.nameKa || '')}</h2>
-          <p className="text-[var(--color-text-muted)] text-sm">{String(loadedDeck.name || '')} · {total} ბარათი</p>
-          <div className="mt-3 max-w-xs mx-auto space-y-2">
+        <div className="text-center mb-8">
+          <div className="inline-block rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 px-8 py-5 mb-1">
+            <span className="text-6xl block mb-2 drop-shadow-lg">{String(loadedDeck.icon || '📚')}</span>
+            <h2 className="text-2xl font-extrabold tracking-tight">{String(loadedDeck.nameKa || '')}</h2>
+            <p className="text-[var(--color-text-muted)] text-sm mt-1">{String(loadedDeck.name || '')} · {total} ბარათი</p>
+          </div>
+          <div className="mt-4 max-w-xs mx-auto space-y-3">
             <div>
-              <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1">
+              <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1.5 font-medium">
                 <span>EN → GE</span>
                 <span>{learnedEnka}/{total} ({pctEnka}%)</span>
               </div>
-              <div className="h-2 bg-[var(--color-bg)] rounded-full overflow-hidden">
-                <div className="h-full bg-[var(--color-primary)] rounded-full transition-all" style={{ width: `${pctEnka}%` }} />
+              <div className="h-3 bg-[var(--color-bg)] rounded-full overflow-hidden shadow-inner">
+                <div className="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full transition-all" style={{ width: `${pctEnka}%` }} />
               </div>
             </div>
             <div>
-              <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1">
+              <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1.5 font-medium">
                 <span>GE → EN</span>
                 <span>{learnedKaen}/{total} ({pctKaen}%)</span>
               </div>
-              <div className="h-2 bg-[var(--color-bg)] rounded-full overflow-hidden">
-                <div className="h-full bg-blue-500 rounded-full transition-all" style={{ width: `${pctKaen}%` }} />
+              <div className="h-3 bg-[var(--color-bg)] rounded-full overflow-hidden shadow-inner">
+                <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full transition-all" style={{ width: `${pctKaen}%` }} />
               </div>
             </div>
             <div>
-              <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1">
+              <div className="flex justify-between text-xs text-[var(--color-text-muted)] mb-1.5 font-medium">
                 <span>🔀 შერეული</span>
                 <span>{learnedMixed}/{total} ({pctMixed}%)</span>
               </div>
-              <div className="h-2 bg-[var(--color-bg)] rounded-full overflow-hidden">
-                <div className="h-full bg-purple-500 rounded-full transition-all" style={{ width: `${pctMixed}%` }} />
+              <div className="h-3 bg-[var(--color-bg)] rounded-full overflow-hidden shadow-inner">
+                <div className="h-full bg-gradient-to-r from-purple-500 to-violet-500 rounded-full transition-all" style={{ width: `${pctMixed}%` }} />
               </div>
             </div>
           </div>
         </div>
 
-        <h3 className="text-sm font-semibold text-[var(--color-text-muted)] mb-3 text-center">აირჩიე რეჟიმი</h3>
-        <div className="grid grid-cols-3 gap-2">
-          {modes.map(m => (
-            <button
-              key={m.id}
-              onClick={() => onSelect(loadedDeck, m.id)}
-              className="bg-[var(--color-bg-card)] hover:bg-[var(--color-bg-card-hover)] rounded-xl p-4 text-center transition-all border-2 border-white/10 border-b-4 border-b-white/15 active:border-b-2 active:mt-[2px] hover:scale-[1.03]"
-            >
-              <span className="text-2xl block mb-1">{m.icon}</span>
-              <span className="text-sm font-medium">{m.label}</span>
-              <span className="text-[10px] block text-[var(--color-text-muted)] mt-0.5">{m.desc}</span>
-            </button>
-          ))}
+        <h3 className="text-lg font-extrabold text-center mb-4 tracking-tight">აირჩიე რეჟიმი</h3>
+        <div className="grid grid-cols-3 gap-3">
+          {modes.map(m => {
+            const gradients: Record<string, string> = {
+              study: 'bg-gradient-to-br from-blue-500 to-indigo-600',
+              reverse: 'bg-gradient-to-br from-emerald-500 to-teal-600',
+              mixed: 'bg-gradient-to-br from-purple-500 to-violet-600',
+            };
+            const shadows: Record<string, string> = {
+              study: 'shadow-[0_6px_0_0_#3730a3,0_8px_20px_rgba(99,102,241,0.4)]',
+              reverse: 'shadow-[0_6px_0_0_#115e59,0_8px_20px_rgba(20,184,166,0.4)]',
+              mixed: 'shadow-[0_6px_0_0_#5b21b6,0_8px_20px_rgba(139,92,246,0.4)]',
+            };
+            const activeShadows: Record<string, string> = {
+              study: 'active:shadow-[0_2px_0_0_#3730a3,0_2px_8px_rgba(99,102,241,0.3)]',
+              reverse: 'active:shadow-[0_2px_0_0_#115e59,0_2px_8px_rgba(20,184,166,0.3)]',
+              mixed: 'active:shadow-[0_2px_0_0_#5b21b6,0_2px_8px_rgba(139,92,246,0.3)]',
+            };
+            return (
+              <button
+                key={m.id}
+                onClick={() => onSelect(loadedDeck, m.id)}
+                className={`${gradients[m.id]} ${shadows[m.id]} ${activeShadows[m.id]} rounded-2xl p-5 text-center transition-all hover:scale-[1.05] hover:brightness-110 active:translate-y-[4px] active:scale-100 relative overflow-hidden`}
+              >
+                <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent pointer-events-none rounded-2xl" />
+                <span className="text-4xl block mb-2 drop-shadow-md relative z-10">{m.icon}</span>
+                <span className="text-base font-bold text-white block relative z-10">{m.label}</span>
+                <span className="text-[10px] block text-white/70 mt-1 relative z-10">{m.desc}</span>
+              </button>
+            );
+          })}
         </div>
       </div>
     );

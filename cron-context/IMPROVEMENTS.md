@@ -63,6 +63,9 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 15 (Cron 4B, 5:30 PM)
+- [x] **CRITICAL: Entire site CSS broken on live deployment** — CDN was serving stale HTML references pointing to `about.BWfgMbL6.css` (old hash) which returned 404/HTML. Redeployed to fix. All pages (dashboard, grammar, etc.) were completely unstyled. ✅
+
 ## ✅ COMPLETED — Mar 15 (Cron 4, 7:00 AM)
 - [x] **Grammar cards light mode fix** — Cards had dark gradient backgrounds (rgb(36,36,38)) in light mode because JS set inline `background` styles before theme class was applied. Refactored to use CSS classes (`grammar-state-completed`, `grammar-state-current`) with proper light/dark mode overrides via `!important`. ✅
 

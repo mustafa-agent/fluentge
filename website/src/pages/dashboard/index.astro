@@ -82,9 +82,12 @@ import Layout from '../../layouts/Layout.astro';
           
           // Reset localStorage
           localStorage.setItem('totalXP', '0');
+          localStorage.setItem('fluentge-xp', '0');
           localStorage.setItem('currentStreak', '0');
           localStorage.removeItem('lastPracticeDate');
+          localStorage.removeItem('streakLastDate');
           localStorage.removeItem('fluentge-daily-history');
+          localStorage.setItem('xp-just-reset', '1');
           
           // Sync to Firebase directly
           try {
@@ -107,7 +110,7 @@ import Layout from '../../layouts/Layout.astro';
               onAuthStateChanged(auth, async function(user) {
                 if (user) {
                   var db = getFirestore(app);
-                  await setDoc(doc(db, 'users', user.uid), { totalXP: 0, currentStreak: 0, lastPracticeDate: '' }, { merge: true });
+                  await setDoc(doc(db, 'users', user.uid), { totalXP: 0, currentStreak: 0, lastPracticeDate: '', dailyHistory: {}, gamesPlayed: 0 }, { merge: true });
                 }
                 resolve();
               });

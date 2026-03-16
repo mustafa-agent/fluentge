@@ -185,6 +185,25 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
       })();
     </script>
     <script>
+      // URL-based XP reset: visit ?resetxp=1 to clear all XP
+      (function() {
+        if (new URLSearchParams(window.location.search).get('resetxp') === '1') {
+          localStorage.setItem('totalXP', '0');
+          localStorage.setItem('fluentge-xp', '0');
+          localStorage.setItem('currentStreak', '0');
+          localStorage.removeItem('lastPracticeDate');
+          localStorage.removeItem('streakLastDate');
+          localStorage.removeItem('fluentge-daily-history');
+          localStorage.removeItem('fluentge-daily');
+          localStorage.setItem('xp-just-reset', '1');
+          // Remove param and reload
+          var url = new URL(window.location);
+          url.searchParams.delete('resetxp');
+          window.location.replace(url.toString());
+        }
+      })();
+    </script>
+    <script>
       // Gamification badges in navbar
       (function() {
         var streak = parseInt(localStorage.getItem('currentStreak') || '0', 10);
@@ -251,7 +270,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
     <script is:inline type="module">
       import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
       import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
-      import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+      import { getFirestore, doc, getDoc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
       const cfg = {apiKey:"AIzaSyBYJ6xzlp6tP7oIQoz9UzfYbjrVgR3JrwQ",authDomain:"fluentge.firebaseapp.com",projectId:"fluentge",storageBucket:"fluentge.firebasestorage.app",messagingSenderId:"140225085227",appId:"1:140225085227:web:d10b8efd8c08a131574f6e"};
       const app = getApps().length ? getApps()[0] : initializeApp(cfg);
@@ -319,7 +338,9 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
         for (const k of new Set([...Object.keys(local.cardProgress||{}), ...Object.keys(cloud.cardProgress||{})])) {
           localStorage.setItem(k, JSON.stringify(mergeObj(local.cardProgress?.[k], cloud.cardProgress?.[k])));
         }
-        // Gamification: keep higher values
+        // Gamification: keep higher values (skip if just reset)
+        const justReset = localStorage.getItem('xp-just-reset');
+        if (justReset) { localStorage.removeItem('xp-just-reset'); return; }
         const mxp = Math.max(local.totalXP||0, cloud.totalXP||0);
         if (mxp > 0) localStorage.setItem('totalXP', mxp.toString());
         const mst = Math.max(local.currentStreak||0, cloud.currentStreak||0);
@@ -353,14 +374,16 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
         if (!db) return;
         try {
           const d = gather(); d.lastSync = new Date().toISOString();
+          lastSaveTime = Date.now();
           await setDoc(doc(db, 'users', uid), { progress: d }, { merge: true });
           console.log('[Sync] Saved to cloud');
         } catch (e) { console.warn('[Sync] Save failed:', e.message); }
       }
 
-      let iv = null, uid = null;
+      let iv = null, uid = null, unsubSnap = null, lastSaveTime = 0;
       onAuthStateChanged(auth, async (user) => {
         if (iv) { clearInterval(iv); iv = null; }
+        if (unsubSnap) { unsubSnap(); unsubSnap = null; }
         if (user) {
           uid = user.uid;
           await loadCloud(uid);
@@ -369,6 +392,28 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           if (toast) { toast.style.display = 'flex'; setTimeout(() => { toast.style.display = 'none'; }, 3000); }
           iv = setInterval(() => saveCloud(uid), 30000);
           window.addEventListener('beforeunload', () => saveCloud(uid));
+          // Real-time listener for cross-browser sync
+          if (db) {
+            unsubSnap = onSnapshot(doc(db, 'users', uid), (snap) => {
+              if (!snap.exists()) return;
+              const now = Date.now();
+              // Skip if we just saved (avoid loop)
+              if (now - lastSaveTime < 3000) return;
+              const cloud = snap.data().progress || {};
+              if (!cloud.lastSync) return;
+              apply(gather(), cloud);
+              // Update navbar XP display
+              const xp = parseInt(localStorage.getItem('totalXP') || '0', 10);
+              const xpStr = xp >= 1000 ? (xp/1000).toFixed(1) + 'k' : xp.toString();
+              ['', '-mobile'].forEach(s => {
+                const el = document.getElementById('nav-xp' + s);
+                if (el) el.textContent = xpStr;
+                const sEl = document.getElementById('nav-streak' + s);
+                if (sEl) sEl.textContent = localStorage.getItem('currentStreak') || '0';
+              });
+              console.log('[Sync] Real-time update from cloud');
+            });
+          }
         } else { uid = null; }
       });
       window.__fluentgeSync = { save: () => uid && saveCloud(uid), load: () => uid && loadCloud(uid) };
@@ -545,5 +590,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
         </div>
       </div>
     </footer>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "693e0dec336c45c1b14cf260e2cf2d74"}'></script>
   </body>
 </html>

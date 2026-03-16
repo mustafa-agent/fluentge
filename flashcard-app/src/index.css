@@ -267,10 +267,16 @@ html.light .badge-card.locked { border-color: #e5e7eb; }
 /* Light mode: card & mode button borders */
 html.light .border-white\/10 { border-color: #e5e7eb !important; }
 html.light .border-white\/15 { border-color: #d1d5db !important; }
+html.light .border-white\/20 { border-color: #d1d5db !important; }
+html.light .border-white\/30 { border-color: #c5c7cb !important; }
 html.light .border-b-white\/15 { border-bottom-color: #d1d5db !important; }
 html.light .bg-white\/5 { background: rgba(0,0,0,0.04) !important; }
 html.light .bg-white\/10 { background: rgba(0,0,0,0.06) !important; }
+html.light .bg-white\/15 { background: rgba(0,0,0,0.08) !important; }
+html.light .bg-white\/20 { background: rgba(0,0,0,0.10) !important; }
+html.light .bg-white\/30 { background: rgba(0,0,0,0.14) !important; }
 html.light .hover\:bg-white\/10:hover { background: rgba(0,0,0,0.08) !important; }
+html.light .hover\:bg-white\/20:hover { background: rgba(0,0,0,0.12) !important; }
 html.light .hover\:bg-white\/8:hover { background: rgba(0,0,0,0.06) !important; }
 html.light .border-white\/5 { border-color: #e5e7eb !important; }
 html.light .border-dashed.border-white\/15 { border-color: #d1d5db !important; }
@@ -290,9 +296,12 @@ html.light .fc-grade-btn { box-shadow: 0 4px 0 rgba(0,0,0,0.15), 0 6px 20px rgba
 html.light .fc-grade-btn:active { box-shadow: 0 1px 0 rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.05) !important; }
 
 /* Light mode: fix semi-transparent white text on light backgrounds */
+html.light .text-white\/40 { color: rgba(26,26,46,0.3) !important; }
+html.light .text-white\/50 { color: rgba(26,26,46,0.4) !important; }
+html.light .text-white\/60 { color: rgba(26,26,46,0.4) !important; }
 html.light .text-white\/70 { color: rgba(26,26,46,0.5) !important; }
 html.light .text-white\/80 { color: rgba(26,26,46,0.6) !important; }
-html.light .text-white\/60 { color: rgba(26,26,46,0.4) !important; }
+html.light .text-white\/90 { color: rgba(26,26,46,0.8) !important; }
 
 /* Onboarding modal */
 .onboarding-modal { animation: onboardSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
@@ -1615,3 +1624,31 @@ html.light .bg-\[\#2A2A2C\] { background-color: #F0F0EC !important; }
 html.light .border-\[\#3A3A3C\] { border-color: #D1D5DB !important; }
 html.light .text-\[\#666\] { color: #6B7280 !important; }
 html.light .text-\[\#8B8B85\] { color: #6B7280 !important; }
+
+/* Light mode: deck card progress bar track */
+html.light .fc-deck-card .bg-black\/30 { background: rgba(0,0,0,0.08) !important; }
+
+/* Light mode: session progress bar track */
+html.light .bg-white\/10 { background: rgba(0,0,0,0.08) !important; }
+
+/* Light mode: flashcard border visibility */
+html.light .fc-flashcard-3d {
+  border-color: rgba(0,0,0,0.1) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04) !important;
+}
+html.light .fc-flashcard-3d:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06) !important;
+}
+
+/* Light mode: category expanded dropdown */
+html.light .fc-slideDown {
+  background: white !important;
+  border-color: #e5e7eb !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05) !important;
+}
+html.light .fc-slideDown button {
+  color: white !important;
+}
+html.light .fc-slideDown button[style*="rgba(16,185,129,0.2)"] {
+  color: #065f46 !important;
+}

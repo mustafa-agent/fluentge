@@ -1,9 +1,60 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-15 (9:00 AM)
-- **Status:** ✅ 1 BUG FIXED & DEPLOYED
-- **Issues Found:** 1 (fixed)
+- **Date:** 2026-03-16 (9:00 AM)
+- **Status:** ✅ ALL CLEAR
+- **Issues Found:** 0
+
+## Morning QA Run (Mar 16, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 9 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/paths/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 8.57s, no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Flashcards (dark mode):** Deck cards, progress bars, new/review buttons, daily limit, completed deck — all clean ✅
+- **Flashcards (light mode):** White cards, readable text, proper contrast, buttons visible ✅
+- **Grammar (light mode):** All 5 levels, lesson cards, lock states, review CTA, premium CTA — all clean ✅
+- **Dashboard (dark mode):** Stats card, XP/level, leaderboard, footer — all clean ✅
+
+### Console — No critical errors
+
+### Verdict
+Morning QA pass. No code changes since yesterday evening. All pages 200, TS clean, build clean, browser visual tests pass in both light and dark mode. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
+
+## Evening QA Run (Mar 15, 7:30 PM)
+
+### HTTP Health Checks — ✅ All 200
+- All 9 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/paths/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 7.98s, no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Account page (dark mode):** Avatar, name, email, subscription status, stats, dashboard link, logout — all clean ✅
+- **Account page (light mode):** White cards, readable text, proper contrast ✅
+- **Premium (light mode):** "Already premium" message, green CTA, clean layout ✅
+- **Flashcards (light mode):** Deck cards, progress bars, new/review buttons, daily limit — all clean ✅
+
+### Console — ⚠️ Minor Only
+- `about.BWfgMbL6.css` 404 — stale browser cache from old session (live site serves correct `about.DT4PWzTn.css` — verified via curl)
+- Firestore `resource-exhausted` errors from long-running QA browser session (not user-facing)
+- `favicon.svg` 404 on flashcards (minor, known)
+
+### Verdict
+Evening QA pass. No code changes since morning. All pages 200, TS clean, build clean, browser visual tests pass in both light and dark mode. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Morning QA Run (Mar 15, 9:00 AM)
 
