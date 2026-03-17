@@ -558,7 +558,10 @@ html.light .grammar-lesson-badge.text-sky-300 {
 
 /* ========== HERO GRADIENTS (all pages) ========== */
 html.light .from-\[\#1C1C1E\]\/60 {
-  --tw-gradient-from: rgba(245, 245, 240, 0.6) !important;
+  --tw-gradient-from: rgba(240, 242, 245, 0.6) !important;
+}
+html.light .from-\[\#1C1C1E\]\/70 {
+  --tw-gradient-from: rgba(240, 242, 245, 0.7) !important;
 }
 
 /* ========== MISC LIGHT MODE ========== */
