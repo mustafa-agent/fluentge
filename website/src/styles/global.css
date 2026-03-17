@@ -798,9 +798,14 @@ html.light #game-container button[style*="background:linear-gradient(135deg,#933
 }
 
 /* Game score/stat badges with dark bg */
-html.light #game-container span[style*="background:#242426"] {
+html.light #game-container span[style*="background:#242426"],
+html.light #game-container div[style*="background:#242426"],
+html.light #game-xp-display {
   background: #F0F0EC !important;
   border-color: #D1D5DB !important;
+}
+html.light #game-xp-display * {
+  color: #1A1A2E !important;
 }
 
 /* Reorder game new button */
