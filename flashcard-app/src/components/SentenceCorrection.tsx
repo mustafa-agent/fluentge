@@ -73,38 +73,38 @@ export default function SentenceCorrection({ onBack }: { onBack: () => void }) {
 
   if (isFinished) {
     return (
-      <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f172a, #1e293b)', color: '#f1f5f9', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 24, fontFamily: 'system-ui' }}>
-        <div style={{ fontSize: 48, marginBottom: 16 }}>🎉</div>
-        <h2 style={{ color: '#22c55e', fontSize: 28, marginBottom: 8 }}>დასრულდა!</h2>
-        <p style={{ fontSize: 20, marginBottom: 24 }}>{score}/{challenges.length} სწორი</p>
-        <div style={{ display: 'flex', gap: 12 }}>
-          <button onClick={() => { setIdx(0); setScore(0); setAnswered(0); setShowResult(false); setInput(''); }} style={{ padding: '12px 24px', background: '#22c55e', color: '#0f172a', border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>🔄 თავიდან</button>
-          <button onClick={onBack} style={{ padding: '12px 24px', background: '#334155', color: '#f1f5f9', border: 'none', borderRadius: 12, fontSize: 16, cursor: 'pointer' }}>🏠 მენიუ</button>
+      <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] flex flex-col items-center justify-center p-6 font-sans">
+        <div className="text-5xl mb-4">🎉</div>
+        <h2 className="text-green-500 text-3xl font-bold mb-2">დასრულდა!</h2>
+        <p className="text-xl mb-6">{score}/{challenges.length} სწორი</p>
+        <div className="flex gap-3">
+          <button onClick={() => { setIdx(0); setScore(0); setAnswered(0); setShowResult(false); setInput(''); }} className="px-6 py-3 bg-green-500 text-white font-bold rounded-xl border-b-4 border-green-600 active:border-b-2 active:mt-0.5 text-base">🔄 თავიდან</button>
+          <button onClick={onBack} className="px-6 py-3 bg-[var(--color-bg-card)] text-[var(--color-text)] border border-[var(--color-border,rgba(255,255,255,0.1))] rounded-xl text-base">🏠 მენიუ</button>
         </div>
       </div>
     );
   }
 
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f172a, #1e293b)', color: '#f1f5f9', padding: 16, fontFamily: 'system-ui' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-        <button onClick={onBack} style={{ background: '#334155', color: '#94a3b8', border: 'none', borderRadius: 8, padding: '8px 16px', cursor: 'pointer' }}>← უკან</button>
-        <span style={{ color: '#94a3b8', fontSize: 14 }}>{idx + 1}/{challenges.length} | ✅ {score}</span>
+    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] p-4 font-sans">
+      <div className="flex justify-between items-center mb-4">
+        <button onClick={onBack} className="bg-[var(--color-bg-card)] text-[var(--color-text-muted)] border-none rounded-lg px-4 py-2 cursor-pointer">← უკან</button>
+        <span className="text-[var(--color-text-muted)] text-sm">{idx + 1}/{challenges.length} | ✅ {score}</span>
       </div>
 
-      <h2 style={{ textAlign: 'center', color: '#f59e0b', fontSize: 22, margin: '12px 0' }}>✏️ გაასწორე წინადადება</h2>
-      <p style={{ textAlign: 'center', color: '#94a3b8', fontSize: 13, margin: '0 0 20px' }}>იპოვე შეცდომა და ჩაწერე სწორი ვარიანტი</p>
+      <h2 className="text-center text-amber-500 text-xl font-bold my-3">✏️ გაასწორე წინადადება</h2>
+      <p className="text-center text-[var(--color-text-muted)] text-sm mb-5">იპოვე შეცდომა და ჩაწერე სწორი ვარიანტი</p>
 
-      <div style={{ background: '#1e293b', border: '2px solid #f59e0b', borderRadius: 16, padding: 20, marginBottom: 16, textAlign: 'center' }}>
-        <p style={{ fontSize: 20, fontWeight: 600, lineHeight: 1.6 }}>"{ch.wrong}"</p>
+      <div className="bg-[var(--color-bg-card)] border-2 border-amber-500 rounded-2xl p-5 mb-4 text-center">
+        <p className="text-xl font-semibold leading-relaxed">"{ch.wrong}"</p>
       </div>
 
       {!showHint && !showResult && (
-        <button onClick={() => setShowHint(true)} style={{ display: 'block', margin: '0 auto 16px', background: 'transparent', color: '#f59e0b', border: '1px solid #f59e0b', borderRadius: 8, padding: '6px 16px', cursor: 'pointer', fontSize: 13 }}>💡 მინიშნება</button>
+        <button onClick={() => setShowHint(true)} className="block mx-auto mb-4 bg-transparent text-amber-500 border border-amber-500 rounded-lg px-4 py-1.5 cursor-pointer text-sm">💡 მინიშნება</button>
       )}
 
       {showHint && !showResult && (
-        <p style={{ textAlign: 'center', color: '#f59e0b', fontSize: 14, marginBottom: 16 }}>💡 {ch.hintKa}</p>
+        <p className="text-center text-amber-500 text-sm mb-4">💡 {ch.hintKa}</p>
       )}
 
       {!showResult ? (
@@ -115,27 +115,27 @@ export default function SentenceCorrection({ onBack }: { onBack: () => void }) {
             onChange={e => setInput(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && check()}
             placeholder="ჩაწერე სწორი წინადადება..."
-            style={{ width: '100%', padding: 14, fontSize: 16, background: '#0f172a', color: '#f1f5f9', border: '2px solid #334155', borderRadius: 12, marginBottom: 12, boxSizing: 'border-box' }}
+            className="w-full p-3.5 text-base bg-[var(--color-bg)] text-[var(--color-text)] border-2 border-[var(--color-border,rgba(255,255,255,0.1))] rounded-xl mb-3 box-border focus:border-amber-500 focus:outline-none transition-colors"
             autoFocus
           />
-          <button onClick={check} style={{ width: '100%', padding: 14, background: '#22c55e', color: '#0f172a', border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>შეამოწმე ✓</button>
+          <button onClick={check} className="w-full p-3.5 bg-green-500 text-white border-none border-b-4 border-green-600 rounded-xl text-base font-bold cursor-pointer active:border-b-2 active:mt-0.5">შეამოწმე ✓</button>
         </div>
       ) : (
-        <div style={{ background: isCorrect ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)', border: `2px solid ${isCorrect ? '#22c55e' : '#ef4444'}`, borderRadius: 16, padding: 20, marginBottom: 16 }}>
-          <p style={{ fontSize: 24, textAlign: 'center', marginBottom: 8 }}>{isCorrect ? '✅ სწორია!' : '❌ არასწორია'}</p>
+        <div className={`rounded-2xl p-5 mb-4 border-2 ${isCorrect ? 'bg-green-500/10 border-green-500' : 'bg-red-500/10 border-red-500'}`}>
+          <p className="text-2xl text-center mb-2">{isCorrect ? '✅ სწორია!' : '❌ არასწორია'}</p>
           {!isCorrect && (
-            <div style={{ marginBottom: 12 }}>
-              <p style={{ color: '#94a3b8', fontSize: 13, marginBottom: 4 }}>შენი პასუხი:</p>
-              <p style={{ color: '#ef4444', fontSize: 16 }}>"{input}"</p>
-              <p style={{ color: '#94a3b8', fontSize: 13, marginBottom: 4, marginTop: 8 }}>სწორი პასუხი:</p>
-              <p style={{ color: '#22c55e', fontSize: 16 }}>"{ch.correct}"</p>
+            <div className="mb-3">
+              <p className="text-[var(--color-text-muted)] text-sm mb-1">შენი პასუხი:</p>
+              <p className="text-red-400 text-base">"{input}"</p>
+              <p className="text-[var(--color-text-muted)] text-sm mb-1 mt-2">სწორი პასუხი:</p>
+              <p className="text-green-400 text-base">"{ch.correct}"</p>
             </div>
           )}
-          <div style={{ background: '#0f172a', borderRadius: 8, padding: 12, marginTop: 8 }}>
-            <p style={{ color: '#f59e0b', fontSize: 14, fontWeight: 600, marginBottom: 4 }}>📖 წესი:</p>
-            <p style={{ color: '#94a3b8', fontSize: 14 }}>{ch.ruleKa}</p>
+          <div className="bg-[var(--color-bg)] rounded-lg p-3 mt-2">
+            <p className="text-amber-500 text-sm font-semibold mb-1">📖 წესი:</p>
+            <p className="text-[var(--color-text-muted)] text-sm">{ch.ruleKa}</p>
           </div>
-          <button onClick={next} style={{ width: '100%', marginTop: 16, padding: 14, background: '#3b82f6', color: 'white', border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>შემდეგი →</button>
+          <button onClick={next} className="w-full mt-4 p-3.5 bg-blue-500 text-white border-none border-b-4 border-blue-600 rounded-xl text-base font-bold cursor-pointer active:border-b-2 active:mt-0.5">შემდეგი →</button>
         </div>
       )}
     </div>
