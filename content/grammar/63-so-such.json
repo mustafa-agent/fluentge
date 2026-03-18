@@ -6,18 +6,211 @@
   "level": "B1",
   "explanation_ka": "\"So\" და \"such\" გამოიყენება ხაზგასასმელად — \"ძალიან, იმდენად\".\n\nSo + adjective/adverb:\nSo beautiful — ძალიან ლამაზი\nSo quickly — ძალიან სწრაფად\n\nSuch + (a/an) + noun:\nSuch a nice day — ასეთი კარგი დღე\nSuch beautiful weather — ასეთი ლამაზი ამინდი\n\nSo + adjective + that:\nIt was so cold that we stayed home.\nიმდენად ცივი იყო, რომ სახლში დავრჩით.\n\nSuch + noun + that:\nIt was such a good movie that I watched it twice.\nიმდენად კარგი ფილმი იყო, რომ ორჯერ ვნახე.",
   "examples": [
-    {"en": "She is so kind.", "ka": "ის ძალიან კეთილია."},
-    {"en": "It was such a long day.", "ka": "ასეთი გრძელი დღე იყო."},
-    {"en": "He drives so fast.", "ka": "ის ძალიან სწრაფად მართავს."},
-    {"en": "They are such nice people.", "ka": "ისინი ასეთი კარგი ხალხია."},
-    {"en": "It's so hot that I can't sleep.", "ka": "იმდენად ცხელია, რომ ვერ მეძინება."}
+    {
+      "en": "She is so kind.",
+      "ka": "ის ძალიან კეთილია."
+    },
+    {
+      "en": "It was such a long day.",
+      "ka": "ასეთი გრძელი დღე იყო."
+    },
+    {
+      "en": "He drives so fast.",
+      "ka": "ის ძალიან სწრაფად მართავს."
+    },
+    {
+      "en": "They are such nice people.",
+      "ka": "ისინი ასეთი კარგი ხალხია."
+    },
+    {
+      "en": "It's so hot that I can't sleep.",
+      "ka": "იმდენად ცხელია, რომ ვერ მეძინება."
+    }
   ],
   "common_mistakes_ka": "ხშირი შეცდომაა \"so\" + noun ან \"such\" + adjective alone. არასწორი: \"so nice day\" — სწორი: \"such a nice day\". არასწორი: \"such beautiful\" — სწორი: \"so beautiful\". დაიმახსოვრეთ: so + adjective, such + noun.",
   "exercises": [
-    {"type": "fill-blank", "question": "She is ___ smart!", "answer": "so", "options": ["so", "such", "such a"]},
-    {"type": "fill-blank", "question": "It was ___ good movie.", "answer": "such a", "options": ["so", "such", "such a"]},
-    {"type": "fill-blank", "question": "They are ___ nice people.", "answer": "such", "options": ["so", "such", "such a"]},
-    {"type": "fill-blank", "question": "He runs ___ fast.", "answer": "so", "options": ["so", "such", "such a"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["It was so good day.", "It was such a good day.", "It was such good day."], "answer": "It was such a good day."}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "She is ___ smart!",
+      "answer": "so",
+      "options": [
+        "so",
+        "such",
+        "such a"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "It was ___ good movie.",
+      "answer": "such a",
+      "options": [
+        "so",
+        "such",
+        "such a"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "They are ___ nice people.",
+      "answer": "such",
+      "options": [
+        "so",
+        "such",
+        "such a"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "He runs ___ fast.",
+      "answer": "so",
+      "options": [
+        "so",
+        "such",
+        "such a"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "It was so good day.",
+        "It was such a good day.",
+        "It was such good day."
+      ],
+      "answer": "It was such a good day."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The weather is ___ beautiful today!",
+      "options": [
+        "so",
+        "such",
+        "such a",
+        "such an"
+      ],
+      "answer": "so"
+    },
+    {
+      "type": "multiple-choice", 
+      "question": "It was ___ expensive restaurant.",
+      "options": [
+        "such an",
+        "so",
+        "such",
+        "such a"
+      ],
+      "answer": "such an"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She speaks ___ quietly that I can't hear her.",
+      "options": [
+        "so",
+        "such",
+        "such a",
+        "such an"
+      ],
+      "answer": "so"
+    },
+    {
+      "type": "fill-blank",
+      "question": "They have _____ a big house that 20 people can stay there.",
+      "options": [
+        "such",
+        "so",
+        "such a",
+        "such an"
+      ],
+      "answer": "such"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The exam was ___ difficult that many students failed.",
+      "options": [
+        "so",
+        "such",
+        "such a",
+        "such an"
+      ],
+      "answer": "so"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "He has ___ amazing talent for music.",
+      "options": [
+        "such an",
+        "so",
+        "such",
+        "such a"
+      ],
+      "answer": "such an"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The movie was _____ boring that I fell asleep.",
+      "options": [
+        "so",
+        "such",
+        "such a",
+        "such an"
+      ],
+      "answer": "so"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "They are ___ helpful neighbors.",
+      "options": [
+        "such",
+        "so",
+        "such a",
+        "such an"
+      ],
+      "answer": "such"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The coffee is ___ hot that I burned my tongue.",
+      "options": [
+        "so",
+        "such",
+        "such a",
+        "such an"
+      ],
+      "answer": "so"
+    },
+    {
+      "type": "fill-blank",
+      "question": "It was _____ long journey that we got very tired.",
+      "options": [
+        "such a",
+        "so",
+        "such",
+        "such an"
+      ],
+      "answer": "such a"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "The baby is such cute!",
+        "The baby is so cute!",
+        "The baby is such a cute!",
+        "The baby is so a cute!"
+      ],
+      "answer": "The baby is so cute!"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "It was so a wonderful experience.",
+        "It was such wonderful experience.",
+        "It was such a wonderful experience.",
+        "It was so wonderful experience."
+      ],
+      "answer": "It was such a wonderful experience."
+    }
+  ],
+  "passThreshold": 0.7
 }

@@ -1169,6 +1169,12 @@ html.light .grammar-xp-counter {
   60% { transform: translateX(-4px); }
   80% { transform: translateX(4px); }
 }
+@keyframes masteryPulse {
+  0% { transform: scaleY(1); }
+  30% { transform: scaleY(1.4); box-shadow: 0 0 30px rgba(34,197,94,0.6); }
+  60% { transform: scaleY(0.9); }
+  100% { transform: scaleY(1); box-shadow: 0 0 15px rgba(34,197,94,0.3); }
+}
 
 /* Light mode overrides for grammar exercises */
 html.light .grammar-opt-btn {

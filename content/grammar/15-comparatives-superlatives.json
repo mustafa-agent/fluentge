@@ -4,24 +4,231 @@
   "title_en": "Comparatives & Superlatives",
   "title_ka": "შედარებითი და აღმატებითი ხარისხი",
   "level": "A2",
-  "explanation_ka": "შედარებითი ხარისხი (Comparative) გამოიყენება ორი რაღაცის შესადარებლად, ხოლო აღმატებითი ხარისხი (Superlative) — საუკეთესოს/უარესის გამოსახატად ჯგუფში.\n\nმოკლე ზედსართავები (1-2 მარცვალი):\n- Comparative: + -er → tall → taller\n- Superlative: + -est → tall → the tallest\n\nგრძელი ზედსართავები (3+ მარცვალი):\n- Comparative: more + adjective → more beautiful\n- Superlative: the most + adjective → the most beautiful\n\nგანსაკუთრებული წესები:\n- -e-ზე დამთავრებული: + -r/-st → nice → nicer → the nicest\n- თანხმოვანი + y: y → ier/iest → happy → happier → the happiest\n- ორმაგდება: big → bigger → the biggest\n\nარარეგულარული:\ngood → better → the best\nbad → worse → the worst\nfar → farther → the farthest",
+  "passThreshold": 0.7,
+  "explanation_ka": "შედარებითი და აღმატებითი ხარისხი ზედსართავების შესადარებლად.\n\n**შედარებითი (Comparative) = ორის შედარება**\n**აღმატებითი (Superlative) = ყველაზე**\n\n**მოკლე ზედსართავები (1-2 მარცვალი):**\n• Comparative: +er + than\n  tall → taller than (უფრო მაღალი)\n• Superlative: the + est\n  tall → the tallest (ყველაზე მაღალი)\n\n**გრძელი ზედსართავები (3+ მარცვალი):**\n• Comparative: more + ზედსართავი + than\n  beautiful → more beautiful than\n• Superlative: the most + ზედსართავი\n  beautiful → the most beautiful\n\n**სპეციალური წესები:**\n• e-ით დაბოლოება: nice → nicer → the nicest\n• თანხმოვანი + y: happy → happier → the happiest\n• ორმაგდება: big → bigger → the biggest\n\n**არარეგულარული ფორმები:**\n• good → better → the best\n• bad → worse → the worst\n\n**მთავარი წესები:**\n• ✅ She is taller / She is the tallest\n• ❌ more taller (ორი ერთად არა!)\n• ❌ She is tallest (the-ს გარეშე არა!)",
   "examples": [
-    {"en": "She is taller than me.", "ka": "ის ჩემზე მაღალია."},
-    {"en": "This book is more interesting than that one.", "ka": "ეს წიგნი იმაზე საინტერესოა."},
-    {"en": "He is the fastest runner in school.", "ka": "ის სკოლაში ყველაზე სწრაფი მორბენალია."},
-    {"en": "This is the most expensive restaurant.", "ka": "ეს ყველაზე ძვირი რესტორანია."},
-    {"en": "My English is better than before.", "ka": "ჩემი ინგლისური უკეთესია ვიდრე ადრე."}
+    {
+      "en": "She is taller than me.",
+      "ka": "ის ჩემზე მაღალია."
+    },
+    {
+      "en": "This book is more interesting than that one.",
+      "ka": "ეს წიგნი იმაზე საინტერესოა."
+    },
+    {
+      "en": "He is the fastest runner in school.",
+      "ka": "ის სკოლაში ყველაზე სწრაფი მორბენალია."
+    },
+    {
+      "en": "This is the most expensive restaurant.",
+      "ka": "ეს ყველაზე ძვირი რესტორანია."
+    },
+    {
+      "en": "My English is better than before.",
+      "ka": "ჩემი ინგლისური უკეთესია ვიდრე ადრე."
+    }
   ],
   "common_mistakes_ka": "ქართველები ხშირად ურევენ -er და more ფორმებს: \"more taller\" — არასწორია! გამოიყენეთ ან -er ან more, არასოდეს ორივე ერთად. ასევე, superlative-ში \"the\" არ უნდა დაგავიწყდეთ: \"She is tallest\" ❌ → \"She is the tallest\" ✅.",
   "exercises": [
-    {"type": "fill-blank", "question": "She is ___ (tall) than her brother.", "answer": "taller", "options": ["taller", "more tall", "tallest"]},
-    {"type": "fill-blank", "question": "This is the ___ (good) pizza I've ever had.", "answer": "best", "options": ["goodest", "best", "better"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He is more faster than me.", "He is faster than me.", "He is most fast than me."], "answer": "He is faster than me."},
-    {"type": "fill-blank", "question": "English is ___ (easy) than Chinese.", "answer": "easier", "options": ["more easy", "easier", "easiest"]},
-    {"type": "fill-blank", "question": "This is the ___ (expensive) hotel in town.", "answer": "most expensive", "options": ["expensivest", "more expensive", "most expensive"]},
-    {"type": "multiple-choice", "question": "What is the comparative of 'bad'?", "options": ["badder", "worse", "more bad"], "answer": "worse"},
-    {"type": "fill-blank", "question": "Summer is ___ (hot) than spring.", "answer": "hotter", "options": ["hoter", "hotter", "more hot"]},
-    {"type": "fill-blank", "question": "She is the ___ (beautiful) woman I know.", "answer": "most beautiful", "options": ["beautifulest", "more beautiful", "most beautiful"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["This is the most good movie.", "This is the best movie.", "This is the goodest movie."], "answer": "This is the best movie."}
+    {
+      "type": "fill-blank",
+      "question": "She is ___ (tall) than her brother.",
+      "answer": "taller",
+      "options": [
+        "taller",
+        "more tall",
+        "tallest"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "This is the ___ (good) pizza I've ever had.",
+      "answer": "best",
+      "options": [
+        "goodest",
+        "best",
+        "better"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "He is more faster than me.",
+        "He is faster than me.",
+        "He is most fast than me."
+      ],
+      "answer": "He is faster than me."
+    },
+    {
+      "type": "fill-blank",
+      "question": "English is ___ (easy) than Chinese.",
+      "answer": "easier",
+      "options": [
+        "more easy",
+        "easier",
+        "easiest"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "This is the ___ (expensive) hotel in town.",
+      "answer": "most expensive",
+      "options": [
+        "expensivest",
+        "more expensive",
+        "most expensive"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the comparative of 'bad'?",
+      "options": [
+        "badder",
+        "worse",
+        "more bad"
+      ],
+      "answer": "worse"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Summer is ___ (hot) than spring.",
+      "answer": "hotter",
+      "options": [
+        "hoter",
+        "hotter",
+        "more hot"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She is the ___ (beautiful) woman I know.",
+      "answer": "most beautiful",
+      "options": [
+        "beautifulest",
+        "more beautiful",
+        "most beautiful"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "This is the most good movie.",
+        "This is the best movie.",
+        "This is the goodest movie."
+      ],
+      "answer": "This is the best movie."
+    },
+    {
+      "type": "fill-blank",
+      "question": "My car is ___ (big) than yours.",
+      "answer": "bigger",
+      "options": [
+        "biger",
+        "bigger",
+        "more big"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "She is the most tall girl.",
+        "She is the tallest girl.",
+        "She is the most tallest girl."
+      ],
+      "answer": "She is the tallest girl."
+    },
+    {
+      "type": "fill-blank",
+      "question": "This exercise is ___ (difficult) than the previous one.",
+      "answer": "more difficult",
+      "options": [
+        "difficulter",
+        "more difficult",
+        "most difficult"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Mount Everest is the ___ (high) mountain in the world.",
+      "answer": "highest",
+      "options": [
+        "highest",
+        "higher",
+        "most high"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the superlative of 'far'?",
+      "options": [
+        "farest",
+        "farthest",
+        "most far"
+      ],
+      "answer": "farthest"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Today is ___ (cold) than yesterday.",
+      "answer": "colder",
+      "options": [
+        "colder",
+        "more cold",
+        "coldest"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "This is worser than that.",
+        "This is worse than that.",
+        "This is more bad than that."
+      ],
+      "answer": "This is worse than that."
+    },
+    {
+      "type": "fill-blank",
+      "question": "She is the ___ (happy) person I know.",
+      "answer": "happiest",
+      "options": [
+        "happyest",
+        "happiest",
+        "most happy"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Learning grammar is ___ (boring) than speaking.",
+      "answer": "more boring",
+      "options": [
+        "boringer",
+        "more boring",
+        "most boring"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Your house is more bigger than mine.",
+        "Your house is bigger than mine.",
+        "Your house is most big than mine."
+      ],
+      "answer": "Your house is bigger than mine."
+    },
+    {
+      "type": "fill-blank",
+      "question": "This is the ___ (bad) weather we've had all year.",
+      "answer": "worst",
+      "options": [
+        "baddest",
+        "worst",
+        "worse"
+      ]
+    }
   ]
 }

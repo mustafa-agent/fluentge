@@ -2,22 +2,220 @@
   "id": 65,
   "slug": "despite-although",
   "title_en": "Although / Despite / In spite of",
-  "title_ka": "Although / Despite / In spite of (მიუხედავად)",
+  "title_ka": "Although / Despite / In spite of",
   "level": "B2",
   "explanation_ka": "ეს სიტყვები გამოიყენება კონტრასტის გამოსახატად — \"მიუხედავად იმისა, რომ...\"\n\nAlthough / Even though + subject + verb:\nAlthough it was raining, we went out.\nმიუხედავად იმისა, რომ წვიმდა, გავედით.\n\nDespite / In spite of + noun / -ing:\nDespite the rain, we went out.\nIn spite of being tired, she kept working.\n\n⚠️ Despite-ის შემდეგ ᲐᲠᲐᲡᲓᲠᲝᲡ \"that\" ან subject+verb!\nარასწორი: Despite that it rained...\nსწორი: Despite the rain... / Although it rained...",
   "examples": [
-    {"en": "Although she was tired, she went to the gym.", "ka": "მიუხედავად იმისა, რომ დაღლილი იყო, სპორტდარბაზში წავიდა."},
-    {"en": "Despite the cold, they went swimming.", "ka": "სიცივის მიუხედავად, საცურაოდ წავიდნენ."},
-    {"en": "Even though I studied hard, I failed.", "ka": "მიუხედავად იმისა, რომ ბევრი ვისწავლე, ჩავჭერი."},
-    {"en": "In spite of being late, he wasn't worried.", "ka": "მიუხედავად დაგვიანებისა, არ ნერვიულობდა."},
-    {"en": "Although it's expensive, it's worth it.", "ka": "თუმცა ძვირია, ღირს."}
+    {
+      "en": "Although she was tired, she went to the gym.",
+      "ka": "მიუხედავად იმისა, რომ დაღლილი იყო, სპორტდარბაზში წავიდა."
+    },
+    {
+      "en": "Despite the cold, they went swimming.",
+      "ka": "სიცივის მიუხედავად, საცურაოდ წავიდნენ."
+    },
+    {
+      "en": "Even though I studied hard, I failed.",
+      "ka": "მიუხედავად იმისა, რომ ბევრი ვისწავლე, ჩავჭერი."
+    },
+    {
+      "en": "In spite of being late, he wasn't worried.",
+      "ka": "მიუხედავად დაგვიანებისა, არ ნერვიულობდა."
+    },
+    {
+      "en": "Although it's expensive, it's worth it.",
+      "ka": "თუმცა ძვირია, ღირს."
+    }
   ],
   "common_mistakes_ka": "ყველაზე ხშირი შეცდომა: \"Despite that he was tired\" — არასწორია! Despite-ის შემდეგ noun ან -ing უნდა: \"Despite being tired\" ან \"Despite his tiredness\". თუ გინდათ subject+verb, გამოიყენეთ although.",
   "exercises": [
-    {"type": "fill-blank", "question": "___ the bad weather, we had fun.", "answer": "Despite", "options": ["Despite", "Although", "Even"]},
-    {"type": "fill-blank", "question": "___ she was nervous, she gave a great speech.", "answer": "Although", "options": ["Despite", "Although", "In spite of"]},
-    {"type": "fill-blank", "question": "In spite of ___ sick, he came to work.", "answer": "being", "options": ["being", "was", "he was"]},
-    {"type": "multiple-choice", "question": "Which is WRONG?", "options": ["Despite the rain...", "Despite raining...", "Despite that it rained..."], "answer": "Despite that it rained..."},
-    {"type": "fill-blank", "question": "___ though it was late, she kept studying.", "answer": "Even", "options": ["Even", "Despite", "In spite"]}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "___ the bad weather, we had fun.",
+      "options": [
+        "Despite",
+        "Although",
+        "Even though",
+        "Because of"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ she was nervous, she gave a great speech.",
+      "options": [
+        "Although",
+        "Despite",
+        "In spite of",
+        "Because"
+      ],
+      "answer": "Although"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In spite of ___ sick, he came to work.",
+      "options": [
+        "being",
+        "was",
+        "he was",
+        "that he was"
+      ],
+      "answer": "being"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is WRONG?",
+      "options": [
+        "Despite that it rained...",
+        "Despite the rain...",
+        "Despite raining...",
+        "Although it rained..."
+      ],
+      "answer": "Despite that it rained..."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ though it was late, she kept studying.",
+      "options": [
+        "Even",
+        "Despite",
+        "In spite",
+        "Because"
+      ],
+      "answer": "Even"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Despite being tired, he went out.",
+        "Despite that he was tired, he went out.",
+        "Despite he was tired, he went out.",
+        "Despite was tired, he went out."
+      ],
+      "answer": "Despite being tired, he went out."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Change: Although it was expensive, I bought it. (Use despite)",
+      "options": [
+        "Despite being expensive, I bought it.",
+        "Despite it was expensive, I bought it.",
+        "Despite that it was expensive, I bought it.",
+        "Despite expensive, I bought it."
+      ],
+      "answer": "Despite being expensive, I bought it."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ spite of the noise, I slept well.",
+      "options": [
+        "In",
+        "On",
+        "At",
+        "Of"
+      ],
+      "answer": "In"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ it was difficult, we finished the project.",
+      "options": [
+        "Although",
+        "Despite",
+        "In spite",
+        "Because of"
+      ],
+      "answer": "Although"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'Despite' is followed by:",
+      "options": [
+        "noun or -ing",
+        "subject + verb",
+        "that + clause",
+        "infinitive"
+      ],
+      "answer": "noun or -ing"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Change: Despite the fact that it was cold, we went swimming. (Use although)",
+      "options": [
+        "Although it was cold, we went swimming.",
+        "Despite being cold, we went swimming.",
+        "Although being cold, we went swimming.",
+        "Despite it was cold, we went swimming."
+      ],
+      "answer": "Although it was cold, we went swimming."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ working all night, he didn't finish.",
+      "options": [
+        "Despite",
+        "Although",
+        "Even though",
+        "Because"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ his wealth, he lives simply.",
+      "options": [
+        "Despite",
+        "Although",
+        "Even though",
+        "Because of"
+      ],
+      "answer": "Despite"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ the traffic was heavy, we arrived on time.",
+      "options": [
+        "Although",
+        "Despite",
+        "In spite",
+        "Because of"
+      ],
+      "answer": "Although"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In spite of ___ a lot, she failed the test.",
+      "options": [
+        "studying",
+        "she studied",
+        "study",
+        "that she studied"
+      ],
+      "answer": "studying"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence shows contrast correctly?",
+      "options": [
+        "Although the movie was long, it was interesting.",
+        "Despite the movie was long, it was interesting.",
+        "Although being long, the movie was interesting.",
+        "Despite that the movie was long, it was interesting."
+      ],
+      "answer": "Although the movie was long, it was interesting."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ all our efforts, we lost the game.",
+      "options": [
+        "Despite",
+        "Although",
+        "Even though",
+        "Because"
+      ],
+      "answer": "Despite"
+    }
+  ],
+  "passThreshold": 0.7
 }

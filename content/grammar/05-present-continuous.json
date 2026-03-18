@@ -2,27 +2,233 @@
   "id": 5,
   "slug": "present-continuous",
   "title_en": "Present Continuous",
-  "title_ka": "აწმყო განგრძობითი დრო (Present Continuous)",
+  "title_ka": "აწმყო განგრძობითი დრო",
   "level": "A1",
-  "explanation_ka": "Present Continuous გამოიყენება იმ მოქმედებებისთვის, რომლებიც სწორედ ახლა, ამ მომენტში მიმდინარეობს.\n\nსტრუქტურა: Subject + am/is/are + ზმნა + \"-ing\"\n\nმაგალითად:\n- I am reading a book. (მე წიგნს ვკითხულობ ახლა.)\n- She is cooking dinner. (ის სადილს ამზადებს.)\n- They are playing football. (ისინი ფეხბურთს თამაშობენ.)\n\nროდის ვიყენებთ:\n1. მოქმედება ხდება სწორედ ახლა, ამ მომენტში: Look! It is raining.\n2. დროებითი სიტუაციები: I am staying with my friend this week.\n3. მომავალი გეგმები (უკვე დაგეგმილი): We are meeting tomorrow.\n\n\"-ing\" დამატების წესები:\n- უმეტეს ზმნებს უბრალოდ ემატება: read → reading, play → playing.\n- თუ ზმნა \"e\"-ზე მთავრდება, \"e\" იშლება: make → making, write → writing.\n- თუ ზმნა მოკლე ხმოვანი + თანხმოვანით მთავრდება, თანხმოვანი ორმაგდება: run → running, sit → sitting, swim → swimming.\n\nPresent Simple vs Present Continuous:\n- I drink coffee every morning. (ჩვევა — Present Simple)\n- I am drinking coffee now. (ახლა ხდება — Present Continuous)\n\nქართულში ეს განსხვავება ხშირად კონტექსტიდან ჩანს, მაგრამ ინგლისურში აუცილებლად სხვადასხვა დროის ფორმა უნდა გამოიყენოთ.",
+  "passThreshold": 0.7,
+  "explanation_ka": "Present Continuous ნიშნავს რაც ახლა, ამ მომენტში ხდება.\n\n**სტრუქტურა:** am/is/are + ზმნა + ing\n• I am reading (ახლა ვკითხულობ)\n• She is cooking (ის ამზადებს)\n• They are playing (ისინი თამაშობენ)\n\n**ing წესები:**\n• ჩვეულებრივი: read → reading\n• თუ ბოლოს e არის: make → making\n• მოკლე ხმოვანი + თანხმოვანი: run → running\n\n**მთავარი წესები:**\n• ✅ She is cooking now (am/is/are აუცილებელია!)\n• ❌ She cooking now\n• ✅ He is making (e იშლება!)\n• ❌ He is makeing",
   "examples": [
-    {"en": "I am reading a book.", "ka": "მე წიგნს ვკითხულობ."},
-    {"en": "She is cooking dinner.", "ka": "ის სადილს ამზადებს."},
-    {"en": "They are playing in the park.", "ka": "ისინი პარკში თამაშობენ."},
-    {"en": "It is raining outside.", "ka": "გარეთ წვიმს."},
-    {"en": "We are not watching TV.", "ka": "ჩვენ ტელევიზორს არ ვუყურებთ."}
+    {
+      "en": "I am reading a book.",
+      "ka": "მე წიგნს ვკითხულობ."
+    },
+    {
+      "en": "She is cooking dinner.",
+      "ka": "ის სადილს ამზადებს."
+    },
+    {
+      "en": "They are playing in the park.",
+      "ka": "ისინი პარკში თამაშობენ."
+    },
+    {
+      "en": "It is raining outside.",
+      "ka": "გარეთ წვიმს."
+    },
+    {
+      "en": "We are not watching TV.",
+      "ka": "ჩვენ ტელევიზორს არ ვუყურებთ."
+    }
   ],
-  "common_mistakes_ka": "ქართველები ხშირად ურევენ Present Simple-სა და Present Continuous-ს. მაგალითად, \"I read now\" ნაცვლად \"I am reading now\"-ისა. ასევე ხშირად ავიწყდებათ am/is/are: წერენ \"She reading\" ნაცვლად \"She is reading\"-ისა. დაიმახსოვრეთ: Present Continuous-ში ყოველთვის საჭიროა am/is/are + ზმნა-ing!",
+  "common_mistakes_ka": "• ❌ She reading now. → ✅ She is reading now. (is აუცილებელია!)\n• ❌ I read now. → ✅ I am reading now. (ახლა = Present Continuous!)\n• ❌ He is runing. → ✅ He is running. (ორმაგი n!)\n• ❌ She is makeing. → ✅ She is making. (e იშლება!)",
   "exercises": [
-    {"type": "fill-blank", "question": "I ___ reading a book right now.", "answer": "am", "options": ["am", "is", "are"]},
-    {"type": "fill-blank", "question": "She ___ cooking dinner.", "answer": "is", "options": ["am", "is", "are"]},
-    {"type": "fill-blank", "question": "They ___ playing football.", "answer": "are", "options": ["am", "is", "are"]},
-    {"type": "fill-blank", "question": "He is ___ (run) in the park.", "answer": "running", "options": ["runing", "running", "runing"]},
-    {"type": "fill-blank", "question": "We are ___ (make) a cake.", "answer": "making", "options": ["makeing", "making", "makking"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She cooking now.", "She is cooking now.", "She are cooking now."], "answer": "She is cooking now."},
-    {"type": "multiple-choice", "question": "Which sentence is Present Continuous?", "options": ["I drink coffee.", "I am drinking coffee.", "I drank coffee."], "answer": "I am drinking coffee."},
-    {"type": "fill-blank", "question": "Look! It ___ snowing!", "answer": "is", "options": ["am", "is", "are"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["They are writeing a letter.", "They are writing a letter.", "They are writting a letter."], "answer": "They are writing a letter."},
-    {"type": "fill-blank", "question": "I am ___ (sit) on the chair.", "answer": "sitting", "options": ["siting", "sitting", "sitting"]}
+    {
+      "type": "fill-blank",
+      "question": "I ___ reading a book right now.",
+      "answer": "am",
+      "options": [
+        "am",
+        "is",
+        "are"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ cooking dinner.",
+      "answer": "is",
+      "options": [
+        "am",
+        "is",
+        "are"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ playing football.",
+      "answer": "are",
+      "options": [
+        "am",
+        "is",
+        "are"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He is ___ (run) in the park.",
+      "answer": "running",
+      "options": [
+        "runing",
+        "running",
+        "runing"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We are ___ (make) a cake.",
+      "answer": "making",
+      "options": [
+        "makeing",
+        "making",
+        "makking"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She cooking now.",
+        "She is cooking now.",
+        "She are cooking now."
+      ],
+      "answer": "She is cooking now."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence is Present Continuous?",
+      "options": [
+        "I drink coffee.",
+        "I am drinking coffee.",
+        "I drank coffee."
+      ],
+      "answer": "I am drinking coffee."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Look! It ___ snowing!",
+      "answer": "is",
+      "options": [
+        "am",
+        "is",
+        "are"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "They are writeing a letter.",
+        "They are writing a letter.",
+        "They are writting a letter."
+      ],
+      "answer": "They are writing a letter."
+    },
+    {
+      "type": "fill-blank",
+      "question": "I am ___ (sit) on the chair.",
+      "answer": "sitting",
+      "options": [
+        "siting",
+        "sitting",
+        "seting"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "We not are watching TV.",
+        "We are not watching TV.",
+        "We not watching TV."
+      ],
+      "answer": "We are not watching TV."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ you listening to music?",
+      "answer": "Are",
+      "options": [
+        "Am",
+        "Is",
+        "Are"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She is ___ (swim) in the pool.",
+      "answer": "swimming",
+      "options": [
+        "swiming",
+        "swimming",
+        "swming"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The baby ___ sleeping.",
+      "answer": "is",
+      "options": [
+        "am",
+        "is",
+        "are"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We are ___ (have) lunch.",
+      "answer": "having",
+      "options": [
+        "haveing",
+        "having",
+        "havving"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "Is he working today?",
+        "Does he working today?",
+        "Are he working today?"
+      ],
+      "answer": "Is he working today?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The children are ___ (dance).",
+      "answer": "dancing",
+      "options": [
+        "danceing",
+        "dancing",
+        "dansing"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct for NOW?",
+      "options": [
+        "I eat breakfast.",
+        "I am eating breakfast.",
+        "I ate breakfast."
+      ],
+      "answer": "I am eating breakfast."
+    },
+    {
+      "type": "fill-blank",
+      "question": "She is ___ (shop) for clothes.",
+      "answer": "shopping",
+      "options": [
+        "shoping",
+        "shopping",
+        "shooping"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I am not ___ (watch) this movie.",
+      "answer": "watching",
+      "options": [
+        "watchhing",
+        "watching",
+        "watcing"
+      ]
+    }
   ]
 }

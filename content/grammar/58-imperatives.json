@@ -6,18 +6,216 @@
   "level": "A1",
   "explanation_ka": "ბრძანებითი წინადადებები გამოიყენება როცა გინდათ ვინმეს უთხრათ რაიმე გააკეთოს. ინგლისურში ძალიან მარტივია — უბრალოდ იწყებთ ზმნით, \"you\"-ს გარეშე.\n\nმაგალითად:\nSit down. — დაჯექი.\nOpen the door. — გააღე კარი.\nListen! — მოუსმინე!\n\nუარყოფითი ბრძანება: Don't + ზმნა\nDon't touch! — არ შეეხო!\nDon't run! — ნუ გარბიხარ!\n\nთავაზიანი ბრძანება: Please + ზმნა\nPlease sit down. — გთხოვ დაჯექი.\nPlease be quiet. — გთხოვ გაჩუმდი.",
   "examples": [
-    {"en": "Sit down.", "ka": "დაჯექი."},
-    {"en": "Don't run!", "ka": "ნუ გარბიხარ!"},
-    {"en": "Please close the window.", "ka": "გთხოვ დახურე ფანჯარა."},
-    {"en": "Be careful!", "ka": "ფრთხილად იყავი!"},
-    {"en": "Don't forget your keys.", "ka": "არ დაგავიწყდეს გასაღებები."}
+    {
+      "en": "Sit down.",
+      "ka": "დაჯექი."
+    },
+    {
+      "en": "Don't run!",
+      "ka": "ნუ გარბიხარ!"
+    },
+    {
+      "en": "Please close the window.",
+      "ka": "გთხოვ დახურე ფანჯარა."
+    },
+    {
+      "en": "Be careful!",
+      "ka": "ფრთხილად იყავი!"
+    },
+    {
+      "en": "Don't forget your keys.",
+      "ka": "არ დაგავიწყდეს გასაღებები."
+    }
   ],
   "common_mistakes_ka": "ხშირი შეცდომაა \"You sit down\"-ის თქმა ბრძანებისას. ინგლისურში ბრძანებითი წინადადება იწყება პირდაპირ ზმნით — \"Sit down\", არა \"You sit down\". ასევე ნუ დაივიწყებთ \"Don't\"-ს უარყოფითი ბრძანებისას.",
   "exercises": [
-    {"type": "fill-blank", "question": "___ the door, please.", "answer": "Open", "options": ["Open", "Opens", "Opening"]},
-    {"type": "fill-blank", "question": "___ run in the hallway!", "answer": "Don't", "options": ["Don't", "Doesn't", "Not"]},
-    {"type": "multiple-choice", "question": "Which is a correct command?", "options": ["You sit down.", "Sit down.", "Sitting down."], "answer": "Sit down."},
-    {"type": "fill-blank", "question": "Please ___ quiet.", "answer": "be", "options": ["be", "is", "are"]},
-    {"type": "multiple-choice", "question": "Which is the negative command?", "options": ["Not touch!", "Don't touch!", "No touch!"], "answer": "Don't touch!"}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "___ the door, please.",
+      "options": [
+        "Open",
+        "Opens",
+        "Opening",
+        "To open"
+      ],
+      "answer": "Open"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ run in the hallway!",
+      "options": [
+        "Don't",
+        "Not",
+        "Never",
+        "No"
+      ],
+      "answer": "Don't"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is a correct command?",
+      "options": [
+        "Sit down.",
+        "You sit down.",
+        "Sitting down.",
+        "To sit down."
+      ],
+      "answer": "Sit down."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Please ___ quiet.",
+      "options": [
+        "be",
+        "are",
+        "is",
+        "being"
+      ],
+      "answer": "be"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is wrong?",
+      "options": [
+        "You close the book.",
+        "Close the book.",
+        "Please close the book.",
+        "Don't close the book."
+      ],
+      "answer": "You close the book."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Make negative: Listen to me!",
+      "options": [
+        "Don't listen to me!",
+        "Not listen to me!",
+        "You don't listen to me!",
+        "No listen to me!"
+      ],
+      "answer": "Don't listen to me!"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ careful when you drive.",
+      "options": [
+        "Be",
+        "Are",
+        "Is",
+        "Being"
+      ],
+      "answer": "Be"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'Don't touch!' is what type of command?",
+      "options": [
+        "negative",
+        "positive",
+        "question",
+        "statement"
+      ],
+      "answer": "negative"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ me your homework tomorrow.",
+      "options": [
+        "Bring",
+        "Brings",
+        "Bringing",
+        "To bring"
+      ],
+      "answer": "Bring"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Make polite: Stop talking!",
+      "options": [
+        "Please stop talking.",
+        "You stop talking.",
+        "Stop talking please.",
+        "Could you stop talking."
+      ],
+      "answer": "Please stop talking."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ walk on the grass.",
+      "options": [
+        "Don't",
+        "Not",
+        "Never",
+        "No"
+      ],
+      "answer": "Don't"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'Turn off the lights' - this is:",
+      "options": [
+        "a command",
+        "a question",
+        "a statement",
+        "an exclamation"
+      ],
+      "answer": "a command"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ the window. It's cold.",
+      "options": [
+        "Close",
+        "Closes",
+        "Closing",
+        "To close"
+      ],
+      "answer": "Close"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ forget your passport!",
+      "options": [
+        "Don't",
+        "Not",
+        "Never",
+        "No"
+      ],
+      "answer": "Don't"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which command is polite?",
+      "options": [
+        "Please help me.",
+        "Help me.",
+        "You help me.",
+        "Help me now."
+      ],
+      "answer": "Please help me."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ here, please.",
+      "options": [
+        "Wait",
+        "Waits",
+        "Waiting",
+        "To wait"
+      ],
+      "answer": "Wait"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "How do we make negative commands?",
+      "options": [
+        "Don't + verb",
+        "Not + verb",
+        "Never + verb",
+        "No + verb"
+      ],
+      "answer": "Don't + verb"
+    }
+  ],
+  "passThreshold": 0.7
 }

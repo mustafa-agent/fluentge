@@ -2,27 +2,233 @@
   "id": 4,
   "slug": "present-simple",
   "title_en": "Present Simple",
-  "title_ka": "მარტივი აწმყო დრო (Present Simple)",
+  "title_ka": "მარტივი აწმყო დრო",
   "level": "A1",
-  "explanation_ka": "Present Simple (მარტივი აწმყო) გამოიყენება ჩვეულებრივი, განმეორებადი მოქმედებებისთვის, ფაქტებისა და ჩვევებისთვის.\n\nროდის ვიყენებთ:\n- ყოველდღიური ჩვევები: I drink coffee every morning. (ყოველ დილით ყავას ვსვამ.)\n- ფაქტები და ჭეშმარიტებები: The sun rises in the east. (მზე აღმოსავლეთით ამოდის.)\n- განმეორებადი მოქმედებები: She goes to school every day. (ის ყოველ დღე სკოლაში მიდის.)\n\nწესები:\n1. I/you/we/they + ზმნის ძირითადი ფორმა: I work, they play.\n2. He/she/it + ზმნა + \"-s\" ან \"-es\": He works, she plays, it rains.\n   - ზმნები -s, -sh, -ch, -x, -o-ზე: + \"-es\": goes, watches, washes.\n   - თანხმოვანი + y: y → ies: study → studies, carry → carries.\n3. უარყოფა: I/you/we/they + don't + ზმნა: I don't like fish.\n   He/she/it + doesn't + ზმნა (\"s\" აღარ ემატება!): She doesn't like fish.\n4. კითხვა: Do + I/you/we/they + ზმნა?: Do you speak English?\n   Does + he/she/it + ზმნა?: Does she speak English?\n\nქართულში აწმყო დროს არ აქვს ამდენი წესი — ინგლისურში კი მესამე პირში \"-s\"-ის დამატება აუცილებელია!",
+  "passThreshold": 0.7,
+  "explanation_ka": "Present Simple ნიშნავს ჩვეულებრივ, განმეორებად მოქმედებებს.\n\n**დადებითი:**\n• I/you/we/they + ზმნა: I work, They play\n• he/she/it + ზმნა + s: She works, He goes\n\n**უარყოფითი:**\n• I/you/we/they + don't + ზმნა: I don't like coffee\n• he/she/it + doesn't + ზმნა: She doesn't eat meat\n\n**კითხვითი:**\n• Do + I/you/we/they + ზმნა? Do you speak English?\n• Does + he/she/it + ზმნა? Does he live here?\n\n**მთავარი წესები:**\n• ✅ She speaks English (he/she/it → -s!)\n• ❌ She speak English\n• ✅ Does she speak? (does-ის შემდეგ -s არა!)\n• ❌ Does she speaks?",
   "examples": [
-    {"en": "I work every day.", "ka": "მე ყოველ დღე ვმუშაობ."},
-    {"en": "She speaks English.", "ka": "ის ინგლისურად ლაპარაკობს."},
-    {"en": "They don't eat meat.", "ka": "ისინი ხორცს არ ჭამენ."},
-    {"en": "Does he play football?", "ka": "ის ფეხბურთს თამაშობს?"},
-    {"en": "We live in Tbilisi.", "ka": "ჩვენ თბილისში ვცხოვრობთ."}
+    {
+      "en": "I work every day.",
+      "ka": "მე ყოველ დღე ვმუშაობ."
+    },
+    {
+      "en": "She speaks English.",
+      "ka": "ის ინგლისურად ლაპარაკობს."
+    },
+    {
+      "en": "They don't eat meat.",
+      "ka": "ისინი ხორცს არ ჭამენ."
+    },
+    {
+      "en": "Does he play football?",
+      "ka": "ის ფეხბურთს თამაშობს?"
+    },
+    {
+      "en": "We live in Tbilisi.",
+      "ka": "ჩვენ თბილისში ვცხოვრობთ."
+    }
   ],
-  "common_mistakes_ka": "ყველაზე გავრცელებული შეცდომა: მესამე პირში \"-s\"-ის დავიწყება. ქართველები ხშირად წერენ \"She speak\" ნაცვლად \"She speaks\"-ისა. ასევე ხშირი შეცდომაა does-თან \"-s\"-ის დატოვება: \"Does she speaks?\" — არასწორია! სწორია: \"Does she speak?\" რადგან does უკვე მიუთითებს მესამე პირზე.",
+  "common_mistakes_ka": "• ❌ She speak English. → ✅ She speaks English. (he/she/it → -s!)\n• ❌ Does she speaks? → ✅ Does she speak? (does-ის შემდეგ -s არა!)\n• ❌ He don't like. → ✅ He doesn't like. (he/she/it → doesn't!)",
   "exercises": [
-    {"type": "fill-blank", "question": "She ___ to school every day.", "answer": "goes", "options": ["go", "goes", "going"]},
-    {"type": "fill-blank", "question": "I ___ coffee in the morning.", "answer": "drink", "options": ["drink", "drinks", "drinking"]},
-    {"type": "fill-blank", "question": "He ___ English very well.", "answer": "speaks", "options": ["speak", "speaks", "speaking"]},
-    {"type": "fill-blank", "question": "They ___ like fish.", "answer": "don't", "options": ["don't", "doesn't", "isn't"]},
-    {"type": "fill-blank", "question": "___ she work here?", "answer": "Does", "options": ["Do", "Does", "Is"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He don't like milk.", "He doesn't like milk.", "He doesn't likes milk."], "answer": "He doesn't like milk."},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She studys hard.", "She studies hard.", "She study hard."], "answer": "She studies hard."},
-    {"type": "fill-blank", "question": "We ___ in Georgia.", "answer": "live", "options": ["live", "lives", "living"]},
-    {"type": "fill-blank", "question": "My father ___ a car.", "answer": "has", "options": ["have", "has", "having"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Do you likes pizza?", "Does you like pizza?", "Do you like pizza?"], "answer": "Do you like pizza?"}
+    {
+      "type": "fill-blank",
+      "question": "She ___ to school every day.",
+      "answer": "goes",
+      "options": [
+        "go",
+        "goes",
+        "going"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I ___ coffee in the morning.",
+      "answer": "drink",
+      "options": [
+        "drink",
+        "drinks",
+        "drinking"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He ___ English very well.",
+      "answer": "speaks",
+      "options": [
+        "speak",
+        "speaks",
+        "speaking"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ like fish.",
+      "answer": "don't",
+      "options": [
+        "don't",
+        "doesn't",
+        "isn't"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ she work here?",
+      "answer": "Does",
+      "options": [
+        "Do",
+        "Does",
+        "Is"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "He don't like milk.",
+        "He doesn't like milk.",
+        "He doesn't likes milk."
+      ],
+      "answer": "He doesn't like milk."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She studys hard.",
+        "She studies hard.",
+        "She study hard."
+      ],
+      "answer": "She studies hard."
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ in Georgia.",
+      "answer": "live",
+      "options": [
+        "live",
+        "lives",
+        "living"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "My father ___ a car.",
+      "answer": "has",
+      "options": [
+        "have",
+        "has",
+        "having"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Do you likes pizza?",
+        "Does you like pizza?",
+        "Do you like pizza?"
+      ],
+      "answer": "Do you like pizza?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ TV every evening.",
+      "answer": "watches",
+      "options": [
+        "watch",
+        "watches",
+        "watching"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I doesn't speak French.",
+        "I don't speak French.",
+        "I not speak French."
+      ],
+      "answer": "I don't speak French."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ they play tennis?",
+      "answer": "Do",
+      "options": [
+        "Do",
+        "Does",
+        "Are"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He ___ early every morning.",
+      "answer": "wakes",
+      "options": [
+        "wake",
+        "wakes",
+        "waking"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She doesn't knows the answer.",
+        "She doesn't know the answer.",
+        "She don't know the answer."
+      ],
+      "answer": "She doesn't know the answer."
+    },
+    {
+      "type": "fill-blank",
+      "question": "My mother ___ delicious food.",
+      "answer": "cooks",
+      "options": [
+        "cook",
+        "cooks",
+        "cooking"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "Does he works here?",
+        "Do he work here?",
+        "Does he work here?"
+      ],
+      "answer": "Does he work here?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ football on weekends.",
+      "answer": "play",
+      "options": [
+        "play",
+        "plays",
+        "playing"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "It ___ in winter.",
+      "answer": "snows",
+      "options": [
+        "snow",
+        "snows",
+        "snowing"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She goes to bed early.",
+        "She go to bed early.",
+        "She going to bed early."
+      ],
+      "answer": "She goes to bed early."
+    }
   ]
 }

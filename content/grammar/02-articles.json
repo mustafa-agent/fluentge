@@ -2,27 +2,233 @@
   "id": 2,
   "slug": "articles",
   "title_en": "Articles (a/an/the)",
-  "title_ka": "არტიკლები (a/an/the)",
+  "title_ka": "არტიკლები",
   "level": "A1",
-  "explanation_ka": "ინგლისურში არსებობს სამი არტიკლი: a, an და the. ქართულ ენაში არტიკლები საერთოდ არ არსებობს, ამიტომ ეს ქართველებისთვის ერთ-ერთი ყველაზე რთული თემაა.\n\n\"a\" და \"an\" — განუსაზღვრელი არტიკლებია. გამოიყენება, როცა რაიმეზე პირველად საუბრობთ ან როცა კონკრეტული საგანი არ იგულისხმება.\n- \"a\" გამოიყენება თანხმოვნის ხმის წინ: a book, a cat, a university (\"იუ\" ხმა).\n- \"an\" გამოიყენება ხმოვნის ხმის წინ: an apple, an egg, an hour (\"h\" არ ისმის).\n\n\"the\" — განსაზღვრული არტიკლია. გამოიყენება, როცა ორივე მოსაუბრემ იცის რომელ საგანზეა საუბარი, ან როცა საგანი უკვე ნახსენებია.\n\nმაგალითად:\nI have a dog. The dog is big. — მე ძაღლი მყავს. ეს ძაღლი დიდია.\n\nმნიშვნელოვანი: არტიკლი მხოლოდ არსებით სახელთან გამოიყენება. მრავლობით რიცხვში \"a/an\" არ გამოიყენება.",
+  "passThreshold": 0.7,
+  "explanation_ka": "არტიკლები არსებითი სახელის წინ დგება. ქართულში ამათი შესატყვისი არ არის.\n\n**a - ვიყენებთ თანხმოვანი ხმის წინ:**\n• a book, a car, a dog\n• a university (იუ-ხმა!)\n\n**an - ვიყენებთ ხმოვნის ხმის წინ:**\n• an apple, an egg\n• an hour (ჰ არ ისმის!)\n\n**the - ვიყენებთ როცა ვიცით რაზე ვლაპარაკობთ:**\n• the sun (მზე)\n• the door (კონკრეტული კარი)\n\n**მთავარი წესი:**\n• ✅ I am a student\n• ❌ I am student\nმნიშვნელოვანია ხმა, არა ასო!",
   "examples": [
-    {"en": "I have a cat.", "ka": "მე კატა მყავს."},
-    {"en": "She is eating an apple.", "ka": "ის ვაშლს ჭამს."},
-    {"en": "The book is on the table.", "ka": "წიგნი მაგიდაზეა."},
-    {"en": "He is a teacher.", "ka": "ის მასწავლებელია."},
-    {"en": "Can you open the door?", "ka": "შეგიძლია კარი გააღო?"}
+    {
+      "en": "I have a cat.",
+      "ka": "მე კატა მყავს."
+    },
+    {
+      "en": "She is eating an apple.",
+      "ka": "ის ვაშლს ჭამს."
+    },
+    {
+      "en": "The book is on the table.",
+      "ka": "წიგნი მაგიდაზეა."
+    },
+    {
+      "en": "He is a teacher.",
+      "ka": "ის მასწავლებელია."
+    },
+    {
+      "en": "Can you open the door?",
+      "ka": "შეგიძლია კარი გააღო?"
+    }
   ],
-  "common_mistakes_ka": "ქართველები ხშირად ავიწყდებათ არტიკლის გამოყენება, რადგან ქართულში არტიკლები არ არსებობს. მაგალითად, ვამბობთ \"მე სტუდენტი ვარ\" და წერენ \"I am student\" ნაცვლად \"I am a student\"-ისა. ასევე ხშირი შეცდომაა \"a\" და \"an\" აღრევა — დაიმახსოვრეთ: მნიშვნელოვანია ხმა, არა ასო! \"A university\" (იუ-ხმა), მაგრამ \"an hour\" (ჰ-არ ისმის).",
+  "common_mistakes_ka": "• ❌ I am student. → ✅ I am a student. (არტიკლი არ გამოტოვო!)\n• ❌ a umbrella → ✅ an umbrella (ხმოვნის ხმა!)\n• ❌ an university → ✅ a university (იუ-ხმა = თანხმოვანი!)\n• ❌ a hour → ✅ an hour (ჰ არ ისმის!)",
   "exercises": [
-    {"type": "fill-blank", "question": "I have ___ dog.", "answer": "a", "options": ["a", "an", "the"]},
-    {"type": "fill-blank", "question": "She is eating ___ orange.", "answer": "an", "options": ["a", "an", "the"]},
-    {"type": "fill-blank", "question": "___ sun is very hot today.", "answer": "The", "options": ["A", "An", "The"]},
-    {"type": "fill-blank", "question": "He is ___ engineer.", "answer": "an", "options": ["a", "an", "the"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I need a umbrella.", "I need an umbrella.", "I need umbrella."], "answer": "I need an umbrella."},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She is teacher.", "She is a teacher.", "She is an teacher."], "answer": "She is a teacher."},
-    {"type": "fill-blank", "question": "Can you pass me ___ salt?", "answer": "the", "options": ["a", "an", "the"]},
-    {"type": "fill-blank", "question": "I saw ___ interesting movie.", "answer": "an", "options": ["a", "an", "the"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He has a honest face.", "He has an honest face.", "He has the honest face."], "answer": "He has an honest face."},
-    {"type": "fill-blank", "question": "There is ___ cat in the garden.", "answer": "a", "options": ["a", "an", "the"]}
+    {
+      "type": "fill-blank",
+      "question": "I have ___ dog.",
+      "answer": "a",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She is eating ___ orange.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ sun is very hot today.",
+      "answer": "The",
+      "options": [
+        "A",
+        "An",
+        "The"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He is ___ engineer.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I need a umbrella.",
+        "I need an umbrella.",
+        "I need umbrella."
+      ],
+      "answer": "I need an umbrella."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She is teacher.",
+        "She is a teacher.",
+        "She is an teacher."
+      ],
+      "answer": "She is a teacher."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Can you pass me ___ salt?",
+      "answer": "the",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I saw ___ interesting movie.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "He has a honest face.",
+        "He has an honest face.",
+        "He has the honest face."
+      ],
+      "answer": "He has an honest face."
+    },
+    {
+      "type": "fill-blank",
+      "question": "There is ___ cat in the garden.",
+      "answer": "a",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I am a student.",
+        "I am an student.",
+        "I am student."
+      ],
+      "answer": "I am a student."
+    },
+    {
+      "type": "fill-blank",
+      "question": "This is ___ university building.",
+      "answer": "a",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Wait for ___ hour, please.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Close a door.",
+        "Close an door.",
+        "Close the door."
+      ],
+      "answer": "Close the door."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Look at ___ sky! It's beautiful.",
+      "answer": "the",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She works in ___ office.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Moon is bright tonight.",
+        "A moon is bright tonight.",
+        "The moon is bright tonight."
+      ],
+      "answer": "The moon is bright tonight."
+    },
+    {
+      "type": "fill-blank",
+      "question": "I need ___ new phone.",
+      "answer": "a",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "He is honest person.",
+        "He is a honest person.",
+        "He is an honest person."
+      ],
+      "answer": "He is an honest person."
+    },
+    {
+      "type": "fill-blank",
+      "question": "She has ___ idea.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    }
   ]
 }

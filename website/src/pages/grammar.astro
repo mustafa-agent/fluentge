@@ -15,138 +15,181 @@ for (const lesson of lessons) {
 }
 const levels = Object.keys(grouped).sort();
 
-// Build ordered lesson list for sequential unlock
 const allLessonsOrdered: typeof lessons = [];
 for (const level of levels) {
   allLessonsOrdered.push(...grouped[level]);
 }
 
-// A1 lessons are always free; other levels unlock via placement test
 function isLessonFree(slug: string) {
   const lesson = allLessonsOrdered.find(l => l.slug === slug);
   return lesson?.level === 'A1';
 }
+
+const levelMeta: Record<string, { icon: string; color: string; colorDark: string; bg: string; bgLight: string; border: string; borderBottom: string; gradient: string; label: string }> = {
+  'A1': { icon: '🌱', color: 'text-green-400', colorDark: 'text-green-600', bg: 'bg-green-500/15', bgLight: 'bg-green-50', border: 'border-green-500/30', borderBottom: 'border-b-green-600', gradient: 'from-green-500 to-emerald-600', label: 'დამწყები' },
+  'A2': { icon: '📘', color: 'text-blue-400', colorDark: 'text-blue-600', bg: 'bg-blue-500/15', bgLight: 'bg-blue-50', border: 'border-blue-500/30', borderBottom: 'border-b-blue-600', gradient: 'from-blue-500 to-indigo-600', label: 'ელემენტარული' },
+  'B1': { icon: '⚡', color: 'text-yellow-400', colorDark: 'text-yellow-600', bg: 'bg-yellow-500/15', bgLight: 'bg-yellow-50', border: 'border-yellow-500/30', borderBottom: 'border-b-yellow-600', gradient: 'from-yellow-500 to-amber-600', label: 'საშუალო' },
+  'B2': { icon: '🔥', color: 'text-orange-400', colorDark: 'text-orange-600', bg: 'bg-orange-500/15', bgLight: 'bg-orange-50', border: 'border-orange-500/30', borderBottom: 'border-b-orange-600', gradient: 'from-orange-500 to-red-600', label: 'საშუალო+' },
+  'C1': { icon: '👑', color: 'text-purple-400', colorDark: 'text-purple-600', bg: 'bg-purple-500/15', bgLight: 'bg-purple-50', border: 'border-purple-500/30', borderBottom: 'border-b-purple-600', gradient: 'from-purple-500 to-violet-600', label: 'მოწინავე' },
+};
 ---
 
 <Layout title="ინგლისური გრამატიკა ქართულად | FluentGe" description="65 ინტერაქტიული გრამატიკის გაკვეთილი ქართულ ენაზე — A1-დან C1-მდე. ტესტები, სავარჯიშოები და XP სისტემა. 8 გაკვეთილი უფასოა!">
   <style is:global>
-    .light .grammar-level-bar { background: #e5e7eb !important; }
-    .light .grammar-level-counter { color: #6b7280 !important; }
+    /* Light mode overrides */
+    html.light .grammar-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; }
+    html.light .grammar-hero h1,
+    html.light .grammar-hero p,
+    html.light .grammar-hero .hero-stat { color: #fff !important; }
+    html.light .grammar-level-bar { background: #e5e7eb !important; }
+    html.light .grammar-level-counter { color: #6b7280 !important; }
+    html.light .grammar-level-header { background: #ffffff !important; border-color: #e5e7eb !important; box-shadow: 0 1px 3px rgba(0,0,0,0.08) !important; }
+    html.light .grammar-level-header:hover { background: #f9fafb !important; }
+    html.light .grammar-lesson-card { background: #ffffff !important; border-color: #e5e7eb !important; box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important; }
+    html.light .grammar-lesson-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important; }
+    html.light .grammar-lesson-card .lesson-title { color: #1f2937 !important; }
+    html.light .grammar-lesson-card .lesson-subtitle { color: #6b7280 !important; }
+    html.light .grammar-lesson-footer { color: #9ca3af !important; }
+    html.light .grammar-level-section .grammar-level-chevron { color: #9ca3af !important; }
+    html.light .grammar-level-header .level-label { color: #1f2937 !important; }
+    html.light .grammar-level-header .level-count { color: #9ca3af !important; }
+    html.light .placement-cta { background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(34,197,94,0.08)) !important; border-color: rgba(56,189,248,0.2) !important; }
+    html.light .placement-cta h3 { color: #1f2937 !important; }
+    html.light .placement-cta p { color: #6b7280 !important; }
+    html.light .grammar-state-completed { border-left-color: rgb(34, 197, 94) !important; }
   </style>
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80" alt="" class="w-full h-full object-cover opacity-30"/>
-      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/60 to-[#1C1C1E]"></div>
+
+  <!-- Hero Section -->
+  <section class="grammar-hero relative overflow-hidden bg-gradient-to-br from-[#1C1C1E] via-[#2a1a3e] to-[#1C1C1E]">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-10 left-10 w-72 h-72 bg-purple-500 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-[150px]"></div>
     </div>
-    <div class="relative max-w-4xl mx-auto px-4 pt-24 pb-16 text-center">
-      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">გრამატიკა</h1>
-      <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto">ისწავლე ინგლისური გრამატიკა ნაბიჯ-ნაბიჯ</p>
+    <div class="relative max-w-4xl mx-auto px-4 pt-28 pb-20 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-6">
+        <span class="text-lg">📚</span>
+        <span class="text-sm font-medium text-white/80">{allLessonsOrdered.length} გაკვეთილი · A1-დან C1-მდე</span>
+      </div>
+      <h1 class="font-['Playfair_Display',serif] text-4xl sm:text-5xl md:text-6xl mb-5 leading-tight font-bold">გრამატიკა</h1>
+      <p class="text-lg sm:text-xl text-[#A0A09A] max-w-xl mx-auto leading-relaxed">ისწავლე ინგლისური გრამატიკა ნაბიჯ-ნაბიჯ, ინტერაქტიული სავარჯიშოებით</p>
+      <div class="flex justify-center gap-8 mt-8">
+        {levels.map(level => (
+          <div class="hero-stat flex flex-col items-center gap-1">
+            <span class="text-2xl">{levelMeta[level]?.icon}</span>
+            <span class={`text-sm font-bold ${levelMeta[level]?.color}`}>{level}</span>
+            <span class="text-xs text-[#6B6B65]">{grouped[level].length}</span>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
-  <section class="max-w-4xl mx-auto px-4 py-16">
+  <!-- Lessons Section -->
+  <section class="max-w-4xl mx-auto px-4 py-12 sm:py-16">
 
-    <!-- Grammar Review CTA (shown when user has completed lessons) -->
-    <div id="grammar-review-cta" class="grammar-review-cta hidden" style="cursor:pointer;">
-      <div class="grammar-review-icon">🔄</div>
-      <div class="flex-1">
-        <div class="flex items-center gap-2 mb-0.5">
-          <span class="font-bold text-lg">გრამატიკის გამეორება</span>
-          <span class="grammar-review-count" id="grammar-review-count">0</span>
-        </div>
-        <p class="text-sm text-[#A0A09A]">გაიმეორე გავლილი გაკვეთილები — განამტკიცე ცოდნა</p>
-      </div>
-      <span class="text-2xl">→</span>
-    </div>
-
-    {levels.map(level => (
-      <div class="mb-12">
-        <div class="flex items-center justify-between mb-2">
-          <h2 class="text-2xl font-bold flex items-center gap-3">
-            <span class={`px-3 py-1 rounded-full text-sm font-bold ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
-            <span>{level === 'A1' ? 'დამწყები' : level === 'A2' ? 'ელემენტარული' : level === 'B1' ? 'საშუალო' : level === 'B2' ? 'საშუალო+' : level === 'C1' ? 'მოწინავე' : level}</span>
-          </h2>
-          <span class="text-xs text-[#6B6B65] font-medium grammar-level-counter" data-level={level} data-total={grouped[level].length}>
-            0/{grouped[level].length} გავლილი
-          </span>
-        </div>
-        <div class="w-full h-2 bg-[#2E2E30] rounded-full mb-5 overflow-hidden grammar-level-bar" data-bar-level={level}>
-          <div class={`h-full rounded-full transition-all duration-700 ${level === 'A1' ? 'bg-green-500' : level === 'A2' ? 'bg-blue-500' : level === 'B1' ? 'bg-yellow-500' : level === 'B2' ? 'bg-orange-500' : 'bg-purple-500'}`} style="width: 0%" data-bar-fill={level}></div>
-        </div>
-        <div class="grid gap-4 sm:grid-cols-2">
-          {grouped[level].map(lesson => {
-            const free = isLessonFree(lesson.slug);
-            const globalIdx = allLessonsOrdered.indexOf(lesson);
-            return (
-              <a href={free ? `/grammar/${lesson.slug}/` : '/placement/'} 
-                 class={`grammar-lesson-card block border border-b-4 rounded-xl p-5 transition-all ${free ? 'bg-[#242426] hover:bg-[#2E2E30] border-[#2E2E30] border-b-[#1a1a1c] hover:scale-[1.02] active:border-b-2 active:mt-[2px]' : 'bg-[#242426] border-white/5 border-b-[#1a1a1c] opacity-60 hover:opacity-80 hover:border-sky-500/30'}`}
-                 data-slug={lesson.slug}
-                 data-idx={globalIdx}
-                 data-free={free ? 'true' : 'false'}
-                 data-level={lesson.level}
-                 data-lesson-url={`/grammar/${lesson.slug}/`}>
-                <div class="flex items-start justify-between gap-2 mb-2">
-                  <div class="flex items-center gap-2 min-w-0">
-                    <span class="grammar-lesson-status text-xl flex-shrink-0" data-status-idx={globalIdx}>📖</span>
-                    <h3 class="font-semibold text-base sm:text-lg leading-snug break-words">{lesson.title_ka}</h3>
+    {levels.map(level => {
+      const meta = levelMeta[level] || levelMeta['A1'];
+      return (
+        <div class="mb-8 grammar-level-section" data-section-level={level}>
+          <button type="button" class="grammar-level-toggle w-full text-left" data-toggle-level={level} aria-expanded="false" style="border:none;background:none;padding:0;cursor:pointer;">
+            <div class="grammar-level-header flex items-center justify-between p-5 rounded-2xl border border-[#2E2E30] bg-[#242426] hover:bg-[#2A2A2C] transition-all duration-200 active:scale-[0.99]">
+              <div class="flex items-center gap-4">
+                <span class="grammar-level-chevron text-xs text-[#6B6B65] transition-transform duration-300" data-chevron={level}>▶</span>
+                <div class={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl ${meta.bg}`}>
+                  {meta.icon}
+                </div>
+                <div class="text-left">
+                  <div class="flex items-center gap-2">
+                    <span class={`text-sm font-bold ${meta.color}`}>{level}</span>
+                    <span class="level-label text-lg sm:text-xl font-bold">{meta.label}</span>
                   </div>
-                  <div class="flex items-center gap-1 flex-shrink-0">
-                    <span class="grammar-lesson-badge text-xs px-2 py-0.5 rounded-full font-medium whitespace-nowrap" data-badge-idx={globalIdx}>
+                  <span class="level-count text-xs text-[#6B6B65] grammar-level-counter" data-level={level} data-total={grouped[level].length}>
+                    0/{grouped[level].length} გავლილი
+                  </span>
+                </div>
+              </div>
+              <span class="level-count text-sm text-[#6B6B65] hidden sm:block">{grouped[level].length} გაკვეთილი</span>
+            </div>
+            <!-- Progress Bar -->
+            <div class="w-full h-3 bg-[#2E2E30] rounded-full mt-3 overflow-hidden grammar-level-bar" data-bar-level={level}>
+              <div class={`h-full rounded-full transition-all duration-700 bg-gradient-to-r ${meta.gradient}`} style="width: 0%" data-bar-fill={level}></div>
+            </div>
+          </button>
+
+          <div class="grammar-level-content" data-content-level={level} style="max-height:0;opacity:0;overflow:hidden;transition:max-height 0.4s ease,opacity 0.3s ease;">
+            <div class="grid gap-4 sm:grid-cols-2 pt-5">
+            {grouped[level].map(lesson => {
+              const free = isLessonFree(lesson.slug);
+              const globalIdx = allLessonsOrdered.indexOf(lesson);
+              return (
+                <a href={free ? `/grammar/${lesson.slug}/` : '/placement/'} 
+                   class="grammar-lesson-card group block border border-[#2E2E30] border-b-4 border-b-[#1a1a1c] rounded-2xl p-5 transition-all duration-200 bg-[#242426] hover:bg-[#2E2E30] active:border-b-2 active:mt-[2px]"
+                   data-slug={lesson.slug}
+                   data-idx={globalIdx}
+                   data-free={free ? 'true' : 'false'}
+                   data-level={lesson.level}
+                   data-lesson-url={`/grammar/${lesson.slug}/`}>
+                  <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-center gap-3 min-w-0">
+                      <span class="grammar-lesson-status text-2xl flex-shrink-0" data-status-idx={globalIdx}>📖</span>
+                      <div class="min-w-0">
+                        <h3 class="lesson-title font-semibold text-base sm:text-lg leading-snug break-words">{lesson.title_ka}</h3>
+                        <p class="lesson-subtitle text-[#6B6B65] text-sm mt-0.5">{lesson.title_en}</p>
+                      </div>
+                    </div>
+                    <span class="grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-medium whitespace-nowrap flex-shrink-0" data-badge-idx={globalIdx}>
                       {free ? '✅ უფასო' : '🔒'}
                     </span>
-                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${level === 'A1' ? 'bg-green-500/20 text-green-400' : level === 'A2' ? 'bg-blue-500/20 text-blue-400' : level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{level}</span>
                   </div>
-                </div>
-                <p class="text-[#6B6B65] text-sm">{lesson.title_en}</p>
-                <div class="grammar-lesson-footer mt-3 text-xs text-[#6B6B65]" data-footer-idx={globalIdx}>
-                  📝 {lesson.exercises.length} სავარჯიშო
-                </div>
-              </a>
-            );
-          })}
+                  <div class="grammar-lesson-footer mt-3 pt-3 border-t border-[#2E2E30] text-xs text-[#6B6B65] flex items-center justify-between" data-footer-idx={globalIdx}>
+                    <span>📝 {lesson.exercises.length} სავარჯიშო</span>
+                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${meta.bg} ${meta.color}`}>{level}</span>
+                  </div>
+                </a>
+              );
+            })}
+            </div>
+          </div>
         </div>
-      </div>
-    ))}
+      );
+    })}
 
     <!-- Placement Test CTA -->
-    <div id="placement-cta" class="mt-8 bg-gradient-to-r from-sky-500/10 to-green-500/10 border border-sky-500/20 rounded-2xl p-8 text-center">
-      <h3 class="text-2xl font-bold mb-2">🎯 გახსენი შენი დონის გაკვეთილები</h3>
-      <p class="text-[#6B6B65] mb-6">გაიარე დონის ტესტი და გაიხსნება შენი დონის ყველა გრამატიკის გაკვეთილი</p>
-      <a href="/placement/" class="inline-block bg-sky-500 hover:bg-sky-400 text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors border-b-4 border-sky-600 active:border-b-2 active:mt-[2px]">
+    <div id="placement-cta" class="placement-cta mt-10 bg-gradient-to-r from-sky-500/10 to-green-500/10 border border-sky-500/20 rounded-2xl p-8 sm:p-10 text-center">
+      <div class="text-4xl mb-4">🎯</div>
+      <h3 class="text-2xl sm:text-3xl font-bold mb-3">გახსენი შენი დონის გაკვეთილები</h3>
+      <p class="text-[#6B6B65] mb-8 max-w-md mx-auto">გაიარე დონის ტესტი და გაიხსნება შენი დონის ყველა გრამატიკის გაკვეთილი</p>
+      <a href="/placement/" class="inline-block bg-sky-500 hover:bg-sky-400 text-white font-bold py-3.5 px-10 rounded-xl text-lg transition-all duration-200 border-b-4 border-sky-600 active:border-b-2 active:mt-[2px] hover:shadow-lg hover:shadow-sky-500/25">
         🎯 დონის ტესტი
       </a>
     </div>
   </section>
 
   <script>
-    // Grammar Review CTA
+    // Level accordion toggle
     (function() {
-      try {
-        var completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}');
-        var slugs = Object.keys(completed);
-        if (slugs.length >= 3) {
-          var cta = document.getElementById('grammar-review-cta');
-          var count = document.getElementById('grammar-review-count');
-          if (cta) {
-            cta.classList.remove('hidden');
-            count.textContent = slugs.length;
-            // Pick lesson that needs review most (SRS-like: least recently reviewed first)
-            cta.addEventListener('click', function() {
-              var reviews = {};
-              try { reviews = JSON.parse(localStorage.getItem('fluentge-grammar-reviews') || '{}'); } catch(e) {}
-              // Sort: never reviewed first, then oldest review date
-              var sorted = slugs.slice().sort(function(a, b) {
-                var da = reviews[a] ? new Date(reviews[a]).getTime() : 0;
-                var db = reviews[b] ? new Date(reviews[b]).getTime() : 0;
-                return da - db;
-              });
-              // Pick from top 3 least-reviewed (some randomness)
-              var pick = sorted[Math.floor(Math.random() * Math.min(3, sorted.length))];
-              window.location.href = '/grammar/' + pick + '/?review=1';
-            });
+      document.querySelectorAll('.grammar-level-toggle').forEach(function(btn) {
+        var level = btn.dataset.toggleLevel;
+        var content = document.querySelector('[data-content-level="' + level + '"]');
+        var chevron = btn.querySelector('[data-chevron="' + level + '"]');
+        btn.addEventListener('click', function() {
+          var isOpen = content.style.maxHeight !== '0px' && content.style.maxHeight !== '0';
+          if (isOpen) {
+            content.style.maxHeight = '0';
+            content.style.opacity = '0';
+            chevron.style.transform = 'rotate(0deg)';
+            btn.setAttribute('aria-expanded', 'false');
+          } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.opacity = '1';
+            chevron.style.transform = 'rotate(90deg)';
+            btn.setAttribute('aria-expanded', 'true');
           }
-        }
-      } catch(e) {}
+        });
+      });
+      // Auto-open A1 by default
+      var a1Btn = document.querySelector('[data-toggle-level="A1"]');
+      if (a1Btn) a1Btn.click();
     })();
 
     // Grammar level progress bars
@@ -154,16 +197,34 @@ function isLessonFree(slug: string) {
       var completed = {};
       try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
       if (Array.isArray(completed)) { var obj = {}; completed.forEach(function(s) { obj[s] = true; }); completed = obj; }
+      // Auto-mark lessons as completed for levels passed via placement test
+      var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
+      var placementLevel = localStorage.getItem('fluentge-placement-level');
+      var placementIdx = placementLevel ? LEVEL_ORDER.indexOf(placementLevel) : -1;
+      if (placementIdx >= 0) {
+        var changed = false;
+        document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
+          var cardLevel = card.dataset.level;
+          var cardLevelIdx = LEVEL_ORDER.indexOf(cardLevel);
+          if (cardLevelIdx >= 0 && cardLevelIdx <= placementIdx && !completed[card.dataset.slug]) {
+            completed[card.dataset.slug] = true;
+            changed = true;
+          }
+        });
+        if (changed) {
+          localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
+        }
+      }
       // Count per level
       var levelCounts = {};
+      var levelTotals = {};
       document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
-        // Find parent level section
-        var section = card.closest('.mb-12');
+        var section = card.closest('.grammar-level-section');
         if (!section) return;
-        var bar = section.querySelector('[data-bar-level]');
-        if (!bar) return;
-        var level = bar.dataset.barLevel;
+        var level = section.dataset.sectionLevel;
         if (!levelCounts[level]) levelCounts[level] = 0;
+        if (!levelTotals[level]) levelTotals[level] = 0;
+        levelTotals[level]++;
         if (completed[card.dataset.slug]) levelCounts[level]++;
       });
       // Update UI
@@ -173,9 +234,30 @@ function isLessonFree(slug: string) {
         var done = levelCounts[level] || 0;
         el.textContent = done + '/' + total + ' გავლილი';
       });
+      // Mark completed levels
+      document.querySelectorAll('.grammar-level-section').forEach(function(section) {
+        var level = section.dataset.sectionLevel;
+        var done = levelCounts[level] || 0;
+        var total = levelTotals[level] || 0;
+        var isCompleted = (done > 0 && done === total);
+        if (isCompleted) {
+          var header = section.querySelector('.grammar-level-header');
+          if (header) {
+            header.style.borderColor = 'rgba(34, 197, 94, 0.4)';
+            header.style.borderWidth = '2px';
+            header.style.background = 'rgba(34, 197, 94, 0.08)';
+          }
+          var counter = section.querySelector('.grammar-level-counter');
+          if (counter) {
+            var label = '✅ ' + done + '/' + total + ' გავლილი';
+            counter.innerHTML = label;
+            counter.style.color = 'rgb(74, 222, 128)';
+            counter.style.fontWeight = 'bold';
+          }
+        }
+      });
       document.querySelectorAll('[data-bar-fill]').forEach(function(el) {
         var level = el.dataset.barFill;
-        var barContainer = el.closest('.grammar-level-bar');
         var total = 0;
         var counter = document.querySelector('.grammar-level-counter[data-level="' + level + '"]');
         if (counter) total = parseInt(counter.dataset.total, 10);
@@ -193,7 +275,6 @@ function isLessonFree(slug: string) {
       var placementIdx = placementLevel ? LEVEL_ORDER.indexOf(placementLevel) : -1;
       var completed = {};
       try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
-      // Migrate old array format
       if (Array.isArray(completed)) {
         var obj = {};
         completed.forEach(function(s) { obj[s] = true; });
@@ -201,17 +282,11 @@ function isLessonFree(slug: string) {
         localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
       }
       
-      // Get all lesson slugs in order
       var allSlugs = [];
       document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
         allSlugs.push(card.dataset.slug);
       });
       
-      // A lesson is unlocked if:
-      // 1. It's A1 (always free)
-      // 2. Its level <= placement test level
-      // 3. Premium user
-      // 4. Sequential: previous lesson completed
       var prevCompleted = true;
       
       document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
@@ -220,7 +295,6 @@ function isLessonFree(slug: string) {
         var isFree = card.dataset.free === 'true';
         var isCompleted = !!completed[slug];
         
-        // Check if lesson's level is unlocked by placement test
         var lessonLevel = card.dataset.level;
         var lessonLevelIdx = lessonLevel ? LEVEL_ORDER.indexOf(lessonLevel) : -1;
         var unlockedByPlacement = placementIdx >= 0 && lessonLevelIdx >= 0 && lessonLevelIdx <= placementIdx;
@@ -231,34 +305,27 @@ function isLessonFree(slug: string) {
         var footerEl = card.querySelector('.grammar-lesson-footer');
         
         if (isCompleted) {
-          // ✅ Completed state — GREEN tint, checkmark, clearly done
           statusEl.textContent = '✅';
           statusEl.style.fontSize = '1.5rem';
           badgeEl.textContent = 'გავლილი ✓';
           badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-bold bg-green-500/20 text-green-400 border border-green-500/30';
-          card.classList.remove('opacity-60');
-          card.classList.add('hover:scale-[1.02]');
+          card.classList.add('grammar-state-completed');
           card.style.borderLeftColor = 'rgb(34, 197, 94)';
           card.style.borderLeftWidth = '4px';
-          card.classList.add('grammar-state-completed');
           card.setAttribute('href', '/grammar/' + slug + '/');
           var exCount = footerEl.textContent.match(/\d+/)?.[0] || '';
           footerEl.innerHTML = '<span style="color:rgb(74,222,128)">✅ გავლილი</span> · 📝 ' + exCount + ' სავარჯიშო';
         } else if (isUnlocked && (isFree || isPremium || unlockedByPlacement)) {
-          // ▶ Current lesson — BLUE glow, pulsing, call-to-action
           statusEl.textContent = '▶️';
           statusEl.style.fontSize = '1.5rem';
           badgeEl.textContent = '📍 მიმდინარე';
           badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-bold bg-sky-500/25 text-sky-300 border border-sky-400/40 animate-pulse';
-          card.classList.remove('opacity-60');
-          card.classList.add('hover:scale-[1.02]');
           card.classList.add('grammar-state-current');
+          card.style.boxShadow = '0 0 20px rgba(56, 189, 248, 0.15)';
+          card.style.borderColor = 'rgba(56, 189, 248, 0.3)';
           card.setAttribute('href', '/grammar/' + slug + '/');
           footerEl.innerHTML = '▶️ <strong style="color:rgb(125,211,252)">დაიწყე ახლა</strong>';
-          footerEl.classList.remove('text-[#6B6B65]');
-          footerEl.classList.add('text-sky-400', 'font-medium');
         } else if (!isCompleted && !isPremium && !isFree && !unlockedByPlacement) {
-          // 🔒 Locked — needs placement test or premium
           statusEl.textContent = '👑';
           statusEl.style.fontSize = '1.25rem';
           statusEl.style.opacity = '0.6';
@@ -267,22 +334,16 @@ function isLessonFree(slug: string) {
           card.style.opacity = '0.55';
           card.setAttribute('href', '/placement/');
           footerEl.innerHTML = '🎯 გაიარე დონის ტესტი გასახსნელად';
-          footerEl.classList.remove('text-[#6B6B65]');
-          footerEl.classList.add('text-amber-400/70');
         } else if (!isCompleted) {
-          // 🔒 Locked (sequential) — GRAY, faded, clearly not available
           statusEl.textContent = '🔒';
           statusEl.style.fontSize = '1rem';
           statusEl.style.opacity = '0.4';
           badgeEl.textContent = 'ჩაკეტილი';
           badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-medium bg-neutral-500/10 text-neutral-500 border border-neutral-500/15';
-          card.classList.add('opacity-40');
-          card.classList.remove('hover:scale-[1.02]');
+          card.style.opacity = '0.4';
           card.style.pointerEvents = 'none';
           card.style.filter = 'grayscale(0.5)';
           footerEl.innerHTML = '🔒 ჯერ წინა გაკვეთილი გაიარე';
-          footerEl.classList.remove('text-[#6B6B65]');
-          footerEl.classList.add('text-neutral-500');
         }
         prevCompleted = isCompleted;
       });

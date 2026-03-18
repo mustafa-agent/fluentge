@@ -4,24 +4,231 @@
   "title_en": "Some / Any / Much / Many",
   "title_ka": "Some / Any / Much / Many — რაოდენობის გამოხატვა",
   "level": "A2",
-  "explanation_ka": "ეს სიტყვები რაოდენობის გამოსახატავად გამოიყენება:\n\nSome — \"რამდენიმე\", \"ცოტა\"\n- დადებით წინადადებებში: I have some friends.\n- თავაზიან კითხვებში: Would you like some tea?\n\nAny — \"რამე\", \"რაიმე\"\n- უარყოფით წინადადებებში: I don't have any money.\n- კითხვით წინადადებებში: Do you have any questions?\n\nMuch — \"ბევრი\" (უთვლადი)\n- უარყოფითში/კითხვაში: I don't have much time. / Do you have much experience?\n\nMany — \"ბევრი\" (თვლადი)\n- ყველა წინადადებაში: I have many friends. / Do you have many books?\n\nA lot of — \"ბევრი\" (ორივესთვის, განსაკუთრებით დადებითში)\n- I have a lot of friends. / I have a lot of money.",
+  "passThreshold": 0.7,
+  "explanation_ka": "## რაოდენობის გამოხატვა\n\n**Some** = ცოტა, რამდენიმე\n• დადებით წინადადებებში\n• I have some friends\n• Would you like some tea? (თავაზიანი კითხვა)\n\n**Any** = რაიმე\n• უარყოფითში და კითხვებში\n• I don't have any money\n• Do you have any questions?\n\n**Much** = ბევრი (უთვლადისთვის)\n• much water, much time\n• How much money?\n• I don't have much sugar\n\n**Many** = ბევრი (თვლადისთვის)\n• many books, many people\n• How many children?\n• I have many friends\n\n**A lot of** = ბევრი (ყველაფერი)\n• I have a lot of work\n• A lot of people came",
   "examples": [
-    {"en": "I have some questions.", "ka": "რამდენიმე კითხვა მაქვს."},
-    {"en": "I don't have any money.", "ka": "ფული არ მაქვს."},
-    {"en": "There isn't much water left.", "ka": "ბევრი წყალი აღარ დარჩა."},
-    {"en": "How many students are in your class?", "ka": "რამდენი სტუდენტია შენს კლასში?"},
-    {"en": "She has a lot of experience.", "ka": "მას ბევრი გამოცდილება აქვს."}
+    {
+      "en": "I have some questions.",
+      "ka": "რამდენიმე კითხვა მაქვს."
+    },
+    {
+      "en": "I don't have any money.",
+      "ka": "ფული არ მაქვს."
+    },
+    {
+      "en": "There isn't much water left.",
+      "ka": "ბევრი წყალი აღარ დარჩა."
+    },
+    {
+      "en": "How many students are in your class?",
+      "ka": "რამდენი სტუდენტია შენს კლასში?"
+    },
+    {
+      "en": "She has a lot of experience.",
+      "ka": "მას ბევრი გამოცდილება აქვს."
+    }
   ],
   "common_mistakes_ka": "ქართველები ხშირად ურევენ much და many: \"much friends\" ❌ → \"many friends\" ✅ (თვლადი). \"many water\" ❌ → \"much water\" ✅ (უთვლადი). ასევე, some-ის ნაცვლად any უარყოფითში: \"I don't have some money\" ❌ → \"I don't have any money\" ✅.",
   "exercises": [
-    {"type": "fill-blank", "question": "I don't have ___ friends here.", "answer": "any", "options": ["some", "any", "much"]},
-    {"type": "fill-blank", "question": "Would you like ___ coffee?", "answer": "some", "options": ["some", "any", "many"]},
-    {"type": "fill-blank", "question": "How ___ books do you have?", "answer": "many", "options": ["much", "many", "some"]},
-    {"type": "fill-blank", "question": "I don't have ___ time today.", "answer": "much", "options": ["many", "much", "some"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I have much friends.", "I have many friends.", "I have any friends."], "answer": "I have many friends."},
-    {"type": "fill-blank", "question": "There are ___ apples on the table.", "answer": "some", "options": ["some", "any", "much"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Do you have some questions?", "Do you have any questions?", "Do you have much questions?"], "answer": "Do you have any questions?"},
-    {"type": "fill-blank", "question": "She doesn't eat ___ sugar.", "answer": "much", "options": ["many", "much", "some"]},
-    {"type": "fill-blank", "question": "We have ___ of work to do.", "answer": "a lot", "options": ["a lot", "much", "many"]}
+    {
+      "type": "fill-blank",
+      "question": "I don't have ___ friends here.",
+      "answer": "any",
+      "options": [
+        "some",
+        "any",
+        "much"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Would you like ___ coffee?",
+      "answer": "some",
+      "options": [
+        "some",
+        "any",
+        "many"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "How ___ books do you have?",
+      "answer": "many",
+      "options": [
+        "much",
+        "many",
+        "some"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I don't have ___ time today.",
+      "answer": "much",
+      "options": [
+        "many",
+        "much",
+        "some"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I have much friends.",
+        "I have many friends.",
+        "I have any friends."
+      ],
+      "answer": "I have many friends."
+    },
+    {
+      "type": "fill-blank",
+      "question": "There are ___ apples on the table.",
+      "answer": "some",
+      "options": [
+        "some",
+        "any",
+        "much"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Do you have some questions?",
+        "Do you have any questions?",
+        "Do you have much questions?"
+      ],
+      "answer": "Do you have any questions?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "She doesn't eat ___ sugar.",
+      "answer": "much",
+      "options": [
+        "many",
+        "much",
+        "some"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We have ___ of work to do.",
+      "answer": "a lot",
+      "options": [
+        "a lot",
+        "much",
+        "many"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Are there ___ parks in your city?",
+      "answer": "any",
+      "options": [
+        "some",
+        "any",
+        "much"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I don't have some milk.",
+        "I don't have any milk.",
+        "I don't have many milk."
+      ],
+      "answer": "I don't have any milk."
+    },
+    {
+      "type": "fill-blank",
+      "question": "How ___ water do you drink daily?",
+      "answer": "much",
+      "options": [
+        "many",
+        "much",
+        "some"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "There isn't ___ furniture in the room.",
+      "answer": "much",
+      "options": [
+        "many",
+        "much",
+        "some"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Can I have any water?",
+        "Can I have some water?",
+        "Can I have many water?"
+      ],
+      "answer": "Can I have some water?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I see ___ students in the library.",
+      "answer": "some",
+      "options": [
+        "some",
+        "any",
+        "much"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "She has many money.",
+        "She has much money.",
+        "She has any money."
+      ],
+      "answer": "She has much money."
+    },
+    {
+      "type": "fill-blank",
+      "question": "We don't have ___ chairs for everyone.",
+      "answer": "enough",
+      "options": [
+        "some",
+        "any",
+        "enough"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "How ___ children do they have?",
+      "answer": "many",
+      "options": [
+        "much",
+        "many",
+        "some"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct for positive sentences?",
+      "options": [
+        "I have any problems.",
+        "I have some problems.",
+        "I have much problems."
+      ],
+      "answer": "I have some problems."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Is there ___ news about the weather?",
+      "answer": "any",
+      "options": [
+        "some",
+        "any",
+        "many"
+      ]
+    }
   ]
 }

@@ -4,24 +4,231 @@
   "title_en": "Future with 'will'",
   "title_ka": "მომავალი დრო — \"will\"",
   "level": "A2",
-  "explanation_ka": "\"Will\" გამოიყენება მომავალი დროის გამოსახატავად. ეს არის უნივერსალური გზა მომავალზე სასაუბროდ.\n\nსტრუქტურა: პირი + will + ზმნის საწყისი ფორმა\nI will go. (წავალ)\nShe will help. (დაეხმარება)\n\nშემოკლება: I'll, you'll, he'll, she'll, we'll, they'll\nI'll call you later. (მოგვიანებით დაგირეკავ)\n\nუარყოფითი: will not = won't\nI won't be late. (არ დავაგვიანებ)\n\nკითხვითი: Will + პირი + ზმნა?\nWill you come tomorrow? (ხვალ მოხვალ?)\n\n\"Will\" გამოიყენება:\n1. სპონტანური გადაწყვეტილებებისთვის: I'll have coffee. (ყავას დავლევ)\n2. წინასწარმეტყველებისთვის: It will rain tomorrow. (ხვალ იწვიმებს)\n3. დაპირებებისთვის: I will help you. (დაგეხმარები)",
+  "passThreshold": 0.7,
+  "explanation_ka": "Will არის მთავარი გზა მომავალზე სასაუბროდ.\n\n**სტრუქტურა: პირი + will + ძირითადი ზმნა**\n• I will go (წავალ)\n• She will help (დაეხმარება)\n• They will come (მოვლენ)\n\n**შემოკლება:**\n• I will = I'll\n• you will = you'll\n• he will = he'll\n• we will = we'll\n\n**უარყოფითი: will not = won't**\n• I won't be late (არ დავაგვიანებ)\n• She won't forget (არ დაივიწყებს)\n\n**კითხვითი: Will + პირი + ძირითადი ზმნა?**\n• Will you come? (მოხვალ?)\n• Will she help? (დაეხმარება?)\n\n**როდის ვიყენებთ will:**\n• სპონტანური გადაწყვეტილება: I'll have coffee\n• წინასწარმეტყველება: It will rain\n• დაპირება: I will help you\n\n**მთავარი წესი:**\nwill-ის შემდეგ ყოველთვის ძირითადი ფორმა!\n• ✅ I will go\n• ❌ I will to go\n• ❌ She will goes",
   "examples": [
-    {"en": "I will call you tomorrow.", "ka": "ხვალ დაგირეკავ."},
-    {"en": "She'll be 20 next month.", "ka": "მომავალ თვეში 20 წლის გახდება."},
-    {"en": "We won't forget this.", "ka": "ჩვენ ამას არ დავივიწყებთ."},
-    {"en": "Will they come to the party?", "ka": "ისინი მოვლენ წვეულებაზე?"},
-    {"en": "It will be sunny tomorrow.", "ka": "ხვალ მზიანი ამინდი იქნება."}
+    {
+      "en": "I will call you tomorrow.",
+      "ka": "ხვალ დაგირეკავ."
+    },
+    {
+      "en": "She'll be 20 next month.",
+      "ka": "მომავალ თვეში 20 წლის გახდება."
+    },
+    {
+      "en": "We won't forget this.",
+      "ka": "ჩვენ ამას არ დავივიწყებთ."
+    },
+    {
+      "en": "Will they come to the party?",
+      "ka": "ისინი მოვლენ წვეულებაზე?"
+    },
+    {
+      "en": "It will be sunny tomorrow.",
+      "ka": "ხვალ მზიანი ამინდი იქნება."
+    }
   ],
   "common_mistakes_ka": "ქართველები ხშირად ამბობენ \"I will to go\" — to არ გამოიყენება will-ის შემდეგ! სწორია: \"I will go\". ასევე ხშირი შეცდომაა will-ის შემდეგ ზმნის მესამე პირის ფორმის გამოყენება: \"She will goes\" — არასწორია! ყოველთვის საწყისი ფორმა: \"She will go\".",
   "exercises": [
-    {"type": "fill-blank", "question": "I ___ help you with that.", "answer": "will", "options": ["will", "am", "do"]},
-    {"type": "fill-blank", "question": "She ___ (not come) to the meeting.", "answer": "won't come", "options": ["won't come", "will not comes", "don't come"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I will to go home.", "I will go home.", "I will goes home."], "answer": "I will go home."},
-    {"type": "fill-blank", "question": "___ you ___ me tomorrow?", "answer": "Will ... call", "options": ["Will ... call", "Will ... calls", "Do ... will call"]},
-    {"type": "fill-blank", "question": "They ___ be here at 5.", "answer": "will", "options": ["will", "are", "do"]},
-    {"type": "multiple-choice", "question": "What is the short form of 'I will'?", "options": ["I'will", "I'll", "I'am"], "answer": "I'll"},
-    {"type": "fill-blank", "question": "It ___ rain today.", "answer": "won't", "options": ["won't", "don't", "isn't"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He will helps us.", "He will help us.", "He wills help us."], "answer": "He will help us."},
-    {"type": "fill-blank", "question": "We ___ travel to Paris next year.", "answer": "will", "options": ["will", "are", "going"]}
+    {
+      "type": "fill-blank",
+      "question": "I ___ help you with that.",
+      "answer": "will",
+      "options": [
+        "will",
+        "am",
+        "do"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (not come) to the meeting.",
+      "answer": "won't come",
+      "options": [
+        "won't come",
+        "will not comes",
+        "don't come"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I will to go home.",
+        "I will go home.",
+        "I will goes home."
+      ],
+      "answer": "I will go home."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ you ___ me tomorrow?",
+      "answer": "Will ... call",
+      "options": [
+        "Will ... call",
+        "Will ... calls",
+        "Do ... will call"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ be here at 5.",
+      "answer": "will",
+      "options": [
+        "will",
+        "are",
+        "do"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the short form of 'I will'?",
+      "options": [
+        "I'will",
+        "I'll",
+        "I'am"
+      ],
+      "answer": "I'll"
+    },
+    {
+      "type": "fill-blank",
+      "question": "It ___ rain today.",
+      "answer": "won't",
+      "options": [
+        "won't",
+        "don't",
+        "isn't"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "He will helps us.",
+        "He will help us.",
+        "He wills help us."
+      ],
+      "answer": "He will help us."
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ travel to Paris next year.",
+      "answer": "will",
+      "options": [
+        "will",
+        "are",
+        "going"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I'll to see you tomorrow.",
+        "I'll see you tomorrow.",
+        "I'll sees you tomorrow."
+      ],
+      "answer": "I'll see you tomorrow."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The weather ___ be nice this weekend.",
+      "answer": "will",
+      "options": [
+        "will",
+        "is",
+        "are"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ she ___ early tomorrow?",
+      "answer": "Will ... wake",
+      "options": [
+        "Will ... wake",
+        "Will ... wakes",
+        "Does ... will wake"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is the negative of 'will'?",
+      "options": [
+        "willn't",
+        "won't",
+        "will not"
+      ],
+      "answer": "won't"
+    },
+    {
+      "type": "fill-blank",
+      "question": "My parents ___ visit us next month.",
+      "answer": "will",
+      "options": [
+        "will",
+        "are",
+        "do"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "They won't comes to dinner.",
+        "They won't come to dinner.",
+        "They will not comes to dinner."
+      ],
+      "answer": "They won't come to dinner."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Don't worry! I ___ (not forget) your birthday.",
+      "answer": "won't forget",
+      "options": [
+        "won't forget",
+        "will not forgets",
+        "don't forget"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The movie ___ start at 7 PM.",
+      "answer": "will",
+      "options": [
+        "will",
+        "is",
+        "does"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct for a promise?",
+      "options": [
+        "I promise I help you.",
+        "I promise I will help you.",
+        "I promise I'll helps you."
+      ],
+      "answer": "I promise I will help you."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ it be cold tonight?",
+      "answer": "Will",
+      "options": [
+        "Will",
+        "Is",
+        "Does"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი მომავალ წელზე?",
+      "options": [
+        "Next year I'll be 25.",
+        "Next year I'll am 25.",
+        "Next year I'll have 25."
+      ],
+      "answer": "Next year I'll be 25."
+    }
   ]
 }

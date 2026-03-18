@@ -2,22 +2,215 @@
   "id": 64,
   "slug": "have-to-must",
   "title_en": "Have to vs Must",
-  "title_ka": "Have to vs Must (უნდა/აუცილებელია)",
+  "title_ka": "Have to vs Must",
   "level": "B1",
   "explanation_ka": "ორივე \"must\" და \"have to\" ნიშნავს \"უნდა\", მაგრამ განსხვავებით:\n\nMust = პირადი ვალდებულება, თქვენი გადაწყვეტილება\nI must study harder. — უნდა მეტი ვისწავლო (ჩემი გადაწყვეტილება).\n\nHave to = გარე ვალდებულება, წესები\nI have to wear a uniform. — უნიფორმის ტარება მევალება (წესია).\n\nუარყოფითი:\nMustn't = აკრძალულია!\nYou mustn't smoke here. — აქ მოწევა აკრძალულია!\n\nDon't have to = არ არის საჭირო\nYou don't have to come. — არ არის საჭირო მოხვიდე (მაგრამ შეგიძლია).\n\n⚠️ ეს არის #1 შეცდომა: mustn't ≠ don't have to!",
   "examples": [
-    {"en": "I must finish this today.", "ka": "დღეს უნდა დავამთავრო ეს."},
-    {"en": "She has to work on Saturdays.", "ka": "შაბათობით მუშაობა უწევს."},
-    {"en": "You mustn't park here.", "ka": "აქ პარკირება აკრძალულია."},
-    {"en": "We don't have to hurry.", "ka": "ჩქარობა არ გვიწევს."},
-    {"en": "Do I have to pay?", "ka": "გადახდა მიწევს?"}
+    {
+      "en": "I must finish this today.",
+      "ka": "დღეს უნდა დავამთავრო ეს."
+    },
+    {
+      "en": "She has to work on Saturdays.",
+      "ka": "შაბათობით მუშაობა უწევს."
+    },
+    {
+      "en": "You mustn't park here.",
+      "ka": "აქ პარკირება აკრძალულია."
+    },
+    {
+      "en": "We don't have to hurry.",
+      "ka": "ჩქარობა არ გვიწევს."
+    },
+    {
+      "en": "Do I have to pay?",
+      "ka": "გადახდა მიწევს?"
+    }
   ],
   "common_mistakes_ka": "ყველაზე დიდი შეცდომა: mustn't და don't have to-ს არევა! Mustn't = აკრძალულია (You mustn't steal). Don't have to = არ არის საჭირო (You don't have to come). ეს სრულიად განსხვავებულია! ასევე: must-ს არ აქვს წარსული — წარსულში გამოიყენეთ \"had to\".",
   "exercises": [
-    {"type": "fill-blank", "question": "You ___ smoke in the hospital.", "answer": "mustn't", "options": ["mustn't", "don't have to", "must"]},
-    {"type": "fill-blank", "question": "You ___ bring food — there's a restaurant.", "answer": "don't have to", "options": ["mustn't", "don't have to", "must"]},
-    {"type": "fill-blank", "question": "She ___ to wake up early for school.", "answer": "has", "options": ["has", "must", "have"]},
-    {"type": "multiple-choice", "question": "\"You mustn't run here\" means:", "options": ["You don't need to run.", "Running is forbidden.", "You should run."], "answer": "Running is forbidden."},
-    {"type": "multiple-choice", "question": "\"You don't have to wait\" means:", "options": ["Don't wait!", "Waiting is forbidden.", "It's not necessary to wait."], "answer": "It's not necessary to wait."}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "You ___ smoke in the hospital.",
+      "answer": "mustn't",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "must"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "You ___ bring food — there's a restaurant.",
+      "answer": "don't have to",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "must"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She ___ to wake up early for school.",
+      "answer": "has",
+      "options": [
+        "has",
+        "must",
+        "have"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "\"You mustn't run here\" means:",
+      "options": [
+        "You don't need to run.",
+        "Running is forbidden.",
+        "You should run."
+      ],
+      "answer": "Running is forbidden."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "\"You don't have to wait\" means:",
+      "options": [
+        "Don't wait!",
+        "Waiting is forbidden.",
+        "It's not necessary to wait."
+      ],
+      "answer": "It's not necessary to wait."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "I ___ get up at 6 AM every day for work.",
+      "options": [
+        "have to",
+        "must",
+        "mustn't",
+        "don't have to"
+      ],
+      "answer": "have to"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "You ___ tell anyone about this secret.",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "have to",
+        "must"
+      ],
+      "answer": "mustn't"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Students ___ wear uniforms at this school.",
+      "options": [
+        "have to",
+        "must",
+        "mustn't",
+        "don't have to"
+      ],
+      "answer": "have to"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "I ___ exercise more. My doctor said so.",
+      "options": [
+        "must",
+        "have to",
+        "mustn't",
+        "don't have to"
+      ],
+      "answer": "must"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "You ___ cook tonight. We can order pizza.",
+      "options": [
+        "don't have to",
+        "mustn't",
+        "have to",
+        "must"
+      ],
+      "answer": "don't have to"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Children ___ play with matches.",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "have to",
+        "must"
+      ],
+      "answer": "mustn't"
+    },
+    {
+      "type": "fill-blank",
+      "question": "You _____ to show your passport at the airport.",
+      "options": [
+        "have",
+        "must",
+        "mustn't",
+        "don't have"
+      ],
+      "answer": "have"
+    },
+    {
+      "type": "fill-blank",
+      "question": "We _____ forget mom's birthday tomorrow!",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "have to",
+        "must"
+      ],
+      "answer": "mustn't"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence means 'it's not necessary'?",
+      "options": [
+        "You don't have to come.",
+        "You mustn't come.",
+        "You have to come.",
+        "You must come."
+      ],
+      "answer": "You don't have to come."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence means 'it's forbidden'?",
+      "options": [
+        "You mustn't enter.",
+        "You don't have to enter.",
+        "You have to enter.",
+        "You must enter."
+      ],
+      "answer": "You mustn't enter."
+    },
+    {
+      "type": "fill-blank",
+      "question": "I _____ work overtime today. The boss asked me to.",
+      "options": [
+        "have to",
+        "must",
+        "mustn't",
+        "don't have to"
+      ],
+      "answer": "have to"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "You ___ use your phone during the exam.",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "have to",
+        "must"
+      ],
+      "answer": "mustn't"
+    }
+  ],
+  "passThreshold": 0.7
 }

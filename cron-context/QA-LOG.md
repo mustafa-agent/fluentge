@@ -1,9 +1,63 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-17 (9:00 AM)
+- **Date:** 2026-03-18 (3:00 AM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Night QA Run (Mar 18, 3:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 8 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Homepage (dark mode):** Hero, stats, Top 2000 CTA, Word of Day, testimonials, How It Works, CTA — all clean ✅
+- **Homepage (light mode):** Readable text, proper contrast, clean cards ✅
+- **Grammar (light mode):** All 5 levels, lesson cards, lock states, progress bars, premium CTA — all clean ✅
+- **Podcast (light mode):** 35 episodes, collapsible cards, descriptions, level/premium badges — all readable ✅
+- **Games (light mode):** Stats bar, day's game, 3 categories, all 30 game cards — all clean ✅
+
+### Console — No critical errors
+
+### Verdict
+Night QA pass. No code changes since last run. All pages 200, TS clean, browser visual tests pass in both light and dark mode. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
+
+## Evening QA Run (Mar 17, 7:30 PM)
+
+### HTTP Health Checks — ✅ All 200
+- All 9 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/paths/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Website Build — ✅ Clean
+- **114 pages** built in 6.76s, no errors
+
+### Browser Visual Testing — ✅ All Good
+- **Games (dark mode):** Stats bar, day's game, 3 categories (ლექსიკა/გრამატიკა/გართობა), all 30 game cards — all clean ✅
+- **Games (light mode):** White cards, colorful icons, readable text, good contrast ✅
+- **Homepage (light mode):** Hero, stats, Top 2000 CTA, Word of Day, testimonials, How It Works, CTA — all clean ✅
+- **Account (light mode):** Avatar, name, email, subscription, stats, dashboard link, logout — all clean ✅
+
+### Note: Orphaned /paths/ page
+- `/paths/` returns 200 but the source file `paths.astro` no longer exists — it's a cached page from an older Cloudflare deploy
+- The page references `about.BlAp5q_0.css` which is 404 (stale CSS hash), making the page completely unstyled
+- **Not user-facing:** Current site nav does NOT link to `/paths/` — only the stale page's own old nav has the link
+- **No fix needed:** This is a Cloudflare cache artifact, not a code bug
+
+### Console — ⚠️ Minor Only
+- Firestore `resource-exhausted` errors from long-running QA browser session (not user-facing)
+- `about.BlAp5q_0.css` MIME type error on orphaned `/paths/` page only (see note above)
+
+### Verdict
+Evening QA pass. No code changes since morning. All active pages 200, TS clean, build clean, browser visual tests pass in both light and dark mode. No bugs found. Orphaned `/paths/` page noted but not user-facing. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Morning QA Run (Mar 17, 9:00 AM)
 

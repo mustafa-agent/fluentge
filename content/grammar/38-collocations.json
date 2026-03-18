@@ -2,27 +2,231 @@
   "id": 38,
   "slug": "collocations",
   "title_en": "Collocations",
-  "title_ka": "კოლოკაციები (Collocations)",
+  "title_ka": "კოლოკაციები",
   "level": "B1",
-  "explanation_ka": "კოლოკაციები არის სიტყვების კომბინაციები, რომლებიც ბუნებრივად გამოიყენება ერთად ინგლისურში. მაგალითად, ინგლისურად ვამბობთ 'make a decision' (გადაწყვეტილების მიღება) და არა 'do a decision'. კოლოკაციების ცოდნა ენას ბუნებრივსა და გამართულს ხდის. ძირითადი ტიპები: 1) ზმნა + არსებითი: make a mistake, take a photo, do homework, have a shower. 2) ზედსართავი + არსებითი: heavy rain, strong wind, fast food. 3) ზმნა + ზმნიზედა: speak fluently, sleep soundly. 4) არსებითი + არსებითი: traffic jam, bus stop. ყველაზე ხშირი აღრევა make და do-ს შორისაა: make — შექმნა/წარმოება (make breakfast, make money); do — შესრულება/მოქმედება (do exercise, do the dishes).",
+  "passThreshold": 0.7,
+  "explanation_ka": "კოლოკაციები არის სიტყვები, რომლებიც ყოველთვის ერთად გამოიყენება ინგლისურში.\n\n**მაგალითები:**\n• make a mistake (შეცდომის დაშვება)\n• take a photo (ფოტოს გადაღება)\n• heavy rain (ძლიერი წვიმა)\n• do homework (დავალების გაკეთება)\n\n**MAKE vs DO:**\n**MAKE:** შექმნა\n• make breakfast (საუზმის მომზადება)\n• make money (ფულის შოვნა)\n• make a decision (გადაწყვეტილების მიღება)\n\n**DO:** მოქმედების შესრულება\n• do homework (დავალების გაკეთება)\n• do exercise (ვარჯიშის გაკეთება)\n• do the dishes (ჭურჭლის რეცხვა)\n\n**რატომ არის მნიშვნელოვანი:** კოლოკაციების ცოდნა თქვენს ენას ბუნებრივს ხდის.",
   "examples": [
-    {"en": "She made a terrible mistake.", "ka": "მან საშინელი შეცდომა დაუშვა."},
-    {"en": "Can I take a photo here?", "ka": "შეიძლება აქ ფოტო გადავიღო?"},
-    {"en": "There was heavy rain all night.", "ka": "მთელი ღამე ძლიერი წვიმა იყო."},
-    {"en": "I need to do my homework.", "ka": "დავალების გაკეთება მჭირდება."},
-    {"en": "He paid close attention to the details.", "ka": "მან დეტალებს დიდი ყურადღება მიაქცია."}
+    {
+      "en": "She made a terrible mistake.",
+      "ka": "მან საშინელი შეცდომა დაუშვა."
+    },
+    {
+      "en": "Can I take a photo here?",
+      "ka": "შეიძლება აქ ფოტო გადავიღო?"
+    },
+    {
+      "en": "There was heavy rain all night.",
+      "ka": "მთელი ღამე ძლიერი წვიმა იყო."
+    },
+    {
+      "en": "I need to do my homework.",
+      "ka": "დავალების გაკეთება მჭირდება."
+    },
+    {
+      "en": "He paid close attention to the details.",
+      "ka": "მან დეტალებს დიდი ყურადღება მიაქცია."
+    }
   ],
-  "common_mistakes_ka": "ხშირი შეცდომები: 1) make და do-ს აღრევა — 'do a mistake' არასწორია, სწორია 'make a mistake'. 'make homework' არასწორია, სწორია 'do homework'. 2) პირდაპირი თარგმანი ქართულიდან — ქართულად ვამბობთ 'გადავიღე ფოტო', მაგრამ ინგლისურად 'take a photo' (და არა 'make a photo'). 3) ზედსართავების არასწორი შეთანხმება — 'strong rain' ნაცვლად 'heavy rain', 'big wind' ნაცვლად 'strong wind'.",
+  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ do a mistake → ✅ make a mistake\n❌ make homework → ✅ do homework\n❌ make a photo → ✅ take a photo\n❌ strong rain → ✅ heavy rain\n❌ big wind → ✅ strong wind\n\n**დაიმახსოვრე:**\n• MAKE = შექმნა, წარმოება\n• DO = შესრულება, მოქმედება\n• TAKE = აღება (take a photo, take a break)",
   "exercises": [
-    {"type": "fill-blank", "question": "She ___ a big mistake on the test.", "options": ["made", "did", "took"], "answer": "made"},
-    {"type": "fill-blank", "question": "Can you ___ me a favor?", "options": ["do", "make", "give"], "answer": "do"},
-    {"type": "fill-blank", "question": "Let me ___ a photo of you.", "options": ["take", "make", "do"], "answer": "take"},
-    {"type": "multiple-choice", "question": "Which collocation is correct?", "options": ["strong rain", "heavy rain", "big rain"], "answer": "heavy rain"},
-    {"type": "fill-blank", "question": "I need to ___ the dishes after dinner.", "options": ["do", "make", "wash"], "answer": "do"},
-    {"type": "fill-blank", "question": "He ___ a deep breath before speaking.", "options": ["took", "made", "did"], "answer": "took"},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["make homework", "do homework", "take homework"], "answer": "do homework"},
-    {"type": "fill-blank", "question": "We need to ___ a decision soon.", "options": ["make", "do", "take"], "answer": "make"},
-    {"type": "fill-blank", "question": "She ___ her best to win the competition.", "options": ["did", "made", "took"], "answer": "did"},
-    {"type": "multiple-choice", "question": "Which collocation is natural?", "options": ["fast food", "quick food", "speedy food"], "answer": "fast food"}
+    {
+      "type": "multiple-choice",
+      "question": "She ___ a big mistake on the test.",
+      "options": [
+        "made",
+        "did",
+        "took",
+        "had"
+      ],
+      "answer": "made"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Can you ___ me a favor?",
+      "options": [
+        "do",
+        "make",
+        "take",
+        "give"
+      ],
+      "answer": "do"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Let me take a photo of you.",
+        "Let me make a photo of you.",
+        "Let me do a photo of you.",
+        "Let me have a photo of you."
+      ],
+      "answer": "Let me take a photo of you."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: There was ___ rain all night.",
+      "options": [
+        "heavy",
+        "strong",
+        "big",
+        "high"
+      ],
+      "answer": "heavy"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I need to ___ my homework before dinner.",
+      "options": [
+        "do",
+        "make",
+        "take",
+        "have"
+      ],
+      "answer": "do"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "He always ___ his best in every game.",
+      "options": [
+        "does",
+        "makes",
+        "takes",
+        "has"
+      ],
+      "answer": "does"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "We need to ___ a decision about our vacation.",
+      "options": [
+        "make",
+        "do",
+        "take",
+        "have"
+      ],
+      "answer": "make"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I need to ___ breakfast before work.",
+      "options": [
+        "make",
+        "do",
+        "take",
+        "have"
+      ],
+      "answer": "make"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: take ___",
+      "options": [
+        "a photo",
+        "homework",
+        "breakfast",
+        "a mistake"
+      ],
+      "answer": "a photo"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Pay ___ to these collocations!",
+      "options": [
+        "attention",
+        "money",
+        "time",
+        "effort"
+      ],
+      "answer": "attention"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "He ___ a lot of money working overtime.",
+      "options": [
+        "makes",
+        "does",
+        "takes",
+        "has"
+      ],
+      "answer": "makes"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Please ___ a break. You've been working too hard.",
+      "options": [
+        "take",
+        "make",
+        "do",
+        "have"
+      ],
+      "answer": "take"
+    },
+    {
+      "type": "fill-blank",
+      "question": "We should ___ exercise every day.",
+      "options": [
+        "do",
+        "make",
+        "take",
+        "have"
+      ],
+      "answer": "do"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "There was a ___ wind that knocked down trees.",
+      "options": [
+        "strong",
+        "heavy",
+        "big",
+        "high"
+      ],
+      "answer": "strong"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She ___ progress in learning English.",
+      "options": [
+        "makes",
+        "does",
+        "takes",
+        "has"
+      ],
+      "answer": "makes"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I need to ___ the dishes after dinner.",
+      "options": [
+        "do",
+        "make",
+        "take",
+        "wash"
+      ],
+      "answer": "do"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I did my homework last night.",
+        "I made my homework last night.",
+        "I took my homework last night.",
+        "I had my homework last night."
+      ],
+      "answer": "I did my homework last night."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Let me ___ you some advice.",
+      "options": [
+        "give",
+        "make",
+        "do",
+        "take"
+      ],
+      "answer": "give"
+    }
   ]
 }

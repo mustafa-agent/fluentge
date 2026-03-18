@@ -1,5 +1,5 @@
 // FluentGe Service Worker — lightweight cache-first for static assets
-const CACHE = 'fluentge-v2';
+const CACHE = 'fluentge-v4';
 const PRECACHE = ['/', '/flashcards/', '/grammar/', '/games/'];
 
 self.addEventListener('install', e => {

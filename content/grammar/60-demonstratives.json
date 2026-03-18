@@ -6,18 +6,216 @@
   "level": "A1",
   "explanation_ka": "ჩვენებითი ნაცვალსახელები გამოიყენება საგნებზე მისათითებლად.\n\nახლოს:\nthis — ეს (ერთი საგანი)\nthese — ეს (რამდენიმე საგანი)\n\nშორს:\nthat — ის (ერთი საგანი)\nthose — ის (რამდენიმე საგანი)\n\nმაგალითად:\nThis is my phone. — ეს ჩემი ტელეფონია.\nThose are expensive. — ისინი ძვირია.\n\nThis/that + მხოლობითი\nThese/those + მრავლობითი",
   "examples": [
-    {"en": "This is my book.", "ka": "ეს ჩემი წიგნია."},
-    {"en": "That is a good idea.", "ka": "ის კარგი იდეაა."},
-    {"en": "These shoes are nice.", "ka": "ეს ფეხსაცმელები ლამაზია."},
-    {"en": "Those people are friendly.", "ka": "ის ხალხი მეგობრულია."},
-    {"en": "What is this?", "ka": "რა არის ეს?"}
+    {
+      "en": "This is my book.",
+      "ka": "ეს ჩემი წიგნია."
+    },
+    {
+      "en": "That is a good idea.",
+      "ka": "ის კარგი იდეაა."
+    },
+    {
+      "en": "These shoes are nice.",
+      "ka": "ეს ფეხსაცმელები ლამაზია."
+    },
+    {
+      "en": "Those people are friendly.",
+      "ka": "ის ხალხი მეგობრულია."
+    },
+    {
+      "en": "What is this?",
+      "ka": "რა არის ეს?"
+    }
   ],
   "common_mistakes_ka": "ხშირი შეცდომაა \"this\" მრავლობით რიცხვთან გამოყენება. \"This books\" არასწორია — სწორია \"These books\". ასევე \"that\" + მრავლობითი არასწორია — გამოიყენეთ \"those\".",
   "exercises": [
-    {"type": "fill-blank", "question": "___ is my car. (ახლოს)", "answer": "This", "options": ["This", "That", "These"]},
-    {"type": "fill-blank", "question": "___ are my friends. (ახლოს)", "answer": "These", "options": ["This", "These", "Those"]},
-    {"type": "fill-blank", "question": "___ building is very old. (შორს)", "answer": "That", "options": ["This", "That", "Those"]},
-    {"type": "fill-blank", "question": "___ mountains are beautiful. (შორს)", "answer": "Those", "options": ["These", "That", "Those"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["This books are mine.", "These books are mine.", "That books are mine."], "answer": "These books are mine."}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "___ is my car. (close to me)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "answer": "This"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ are my friends. (close to me)",
+      "options": [
+        "This",
+        "These",
+        "Those",
+        "That"
+      ],
+      "answer": "These"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ building is very old. (far from me)",
+      "options": [
+        "This",
+        "That",
+        "Those",
+        "These"
+      ],
+      "answer": "That"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ mountains are beautiful. (far from me)",
+      "options": [
+        "These",
+        "That",
+        "Those",
+        "This"
+      ],
+      "answer": "Those"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "These books are mine.",
+        "This books are mine.",
+        "That books are mine.",
+        "Those book is mine."
+      ],
+      "answer": "These books are mine."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is wrong?",
+      "options": [
+        "This cars are expensive.",
+        "These cars are expensive.",
+        "That car is expensive.",
+        "Those cars are expensive."
+      ],
+      "answer": "This cars are expensive."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ house is beautiful. (far away)",
+      "options": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ],
+      "answer": "That"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ flowers smell nice. (close to me)",
+      "options": [
+        "These",
+        "This",
+        "That",
+        "Those"
+      ],
+      "answer": "These"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is ___? (pointing at something near)",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "answer": "this"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'Those' is used for:",
+      "options": [
+        "far + many things",
+        "near + many things",
+        "far + one thing",
+        "near + one thing"
+      ],
+      "answer": "far + many things"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ person over there is my teacher.",
+      "options": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ],
+      "answer": "That"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Change to plural: That cat is cute.",
+      "options": [
+        "Those cats are cute.",
+        "These cats are cute.",
+        "That cats are cute.",
+        "This cats are cute."
+      ],
+      "answer": "Those cats are cute."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ pencils on my desk are new.",
+      "options": [
+        "These",
+        "This",
+        "That",
+        "Those"
+      ],
+      "answer": "These"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Are ___ your shoes? (pointing at shoes near you)",
+      "options": [
+        "these",
+        "this",
+        "that",
+        "those"
+      ],
+      "answer": "these"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I like ___ song. (playing on the radio now)",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "answer": "this"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "___ dogs in the park look happy.",
+      "options": [
+        "Those",
+        "That",
+        "This",
+        "These"
+      ],
+      "answer": "Those"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence uses demonstratives correctly?",
+      "options": [
+        "This apples are sweet.",
+        "These apple is sweet.",
+        "These apples are sweet.",
+        "That apples are sweet."
+      ],
+      "answer": "These apples are sweet."
+    }
+  ],
+  "passThreshold": 0.7
 }

@@ -6,18 +6,156 @@
   "level": "A2",
   "explanation_ka": "კუთვნილებითი ნაცვალსახელები აჩვენებენ ვისია საგანი, მაგრამ არსებითი სახელის გარეშე.\n\nmy → mine (ჩემი)\nyour → yours (შენი)\nhis → his (მისი)\nher → hers (მისი)\nour → ours (ჩვენი)\ntheir → theirs (მათი)\n\nგანსხვავება:\nThis is my book. (my + არსებითი)\nThis book is mine. (mine — არსებითის გარეშე)\n\nWhose is this? — It's mine.\nვისია ეს? — ჩემია.",
   "examples": [
-    {"en": "This phone is mine.", "ka": "ეს ტელეფონი ჩემია."},
-    {"en": "Is this yours?", "ka": "ეს შენია?"},
-    {"en": "The car is theirs.", "ka": "მანქანა მათია."},
-    {"en": "Ours is bigger.", "ka": "ჩვენი უფრო დიდია."},
-    {"en": "That idea was hers.", "ka": "ეს იდეა მისი იყო."}
+    {
+      "en": "This phone is mine.",
+      "ka": "ეს ტელეფონი ჩემია."
+    },
+    {
+      "en": "Is this yours?",
+      "ka": "ეს შენია?"
+    },
+    {
+      "en": "The car is theirs.",
+      "ka": "მანქანა მათია."
+    },
+    {
+      "en": "Ours is bigger.",
+      "ka": "ჩვენი უფრო დიდია."
+    },
+    {
+      "en": "That idea was hers.",
+      "ka": "ეს იდეა მისი იყო."
+    }
   ],
   "common_mistakes_ka": "ნუ ურევთ possessive adjectives (my, your, his) და possessive pronouns (mine, yours, his). \"This is mine book\" — არასწორია! სწორია \"This is my book\" ან \"This is mine.\" ასევე: \"her's\" არ არსებობს — სწორია \"hers\".",
   "exercises": [
-    {"type": "fill-blank", "question": "This bag is ___. (I)", "answer": "mine", "options": ["my", "mine", "me"]},
-    {"type": "fill-blank", "question": "Is this pen ___? (you)", "answer": "yours", "options": ["your", "yours", "you"]},
-    {"type": "fill-blank", "question": "The house is ___. (they)", "answer": "theirs", "options": ["their", "theirs", "them"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["This is mine book.", "This book is mine.", "This book is my."], "answer": "This book is mine."},
-    {"type": "fill-blank", "question": "That cat is ___. (she)", "answer": "hers", "options": ["her", "hers", "she"]}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "This bag is ___. (I)",
+      "answer": "mine",
+      "options": [
+        "my",
+        "mine",
+        "me"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Is this pen ___? (you)",
+      "answer": "yours",
+      "options": [
+        "your",
+        "yours",
+        "you"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The house is ___. (they)",
+      "answer": "theirs",
+      "options": [
+        "their",
+        "theirs",
+        "them"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "This is mine book.",
+        "This book is mine.",
+        "This book is my."
+      ],
+      "answer": "This book is mine."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "That cat is ___. (she)",
+      "answer": "hers",
+      "options": [
+        "her",
+        "hers",
+        "she"
+      ]
+    },
+    {
+      "type": "error-correction",
+      "question": "Fix the error: This is mine car.",
+      "answer": "mine car → my car"
+    },
+    {
+      "type": "transformation",
+      "question": "Change: This is our dog. (possessive pronoun)",
+      "answer": "This dog is ours."
+    },
+    {
+      "type": "gap-fill",
+      "question": "The books are ___. (we)",
+      "answer": "ours"
+    },
+    {
+      "type": "matching",
+      "question": "'His' as possessive pronoun is:",
+      "options": ["his", "he's", "him"],
+      "answer": "his"
+    },
+    {
+      "type": "sentence-completion",
+      "question": "Whose phone is this? It's ___. (I)",
+      "answer": "mine"
+    },
+    {
+      "type": "fill-in-blank",
+      "question": "That mistake was ___. (she)",
+      "answer": "hers"
+    },
+    {
+      "type": "transformation",
+      "question": "Change: These are your keys. (possessive pronoun)",
+      "answer": "These keys are yours."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "This pen is ___. (I)",
+      "options": ["mine", "my", "me", "I"],
+      "answer": "mine"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The red car is ___. (they)",
+      "options": ["theirs", "their", "them", "they"],
+      "answer": "theirs"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Is this book ___? (you)",
+      "options": ["yours", "your", "you", "yourself"],
+      "answer": "yours"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The victory was ___. (we)",
+      "answer": "ours",
+      "options": ["ours", "our", "us", "we"]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence:",
+      "options": [
+        "This idea is her's.",
+        "This idea is hers.",
+        "This idea is her.",
+        "This idea is she's."
+      ],
+      "answer": "This idea is hers."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The decision is ___. (he)",
+      "answer": "his",
+      "options": ["his", "him", "he", "he's"]
+    }
+  ],
+  "passThreshold": 0.7
 }

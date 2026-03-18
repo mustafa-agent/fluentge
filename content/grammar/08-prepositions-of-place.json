@@ -2,27 +2,233 @@
   "id": 8,
   "slug": "prepositions-of-place",
   "title_en": "Prepositions of Place (in/on/at/under/next to)",
-  "title_ka": "ადგილის წინდებულები (in/on/at/under/next to)",
+  "title_ka": "ადგილის წინდებულები",
   "level": "A1",
-  "explanation_ka": "ინგლისურში ადგილის წინდებულები გვიჩვენებენ, სად მდებარეობს რაიმე ან ვინმე.\n\nin — შიგნით, რაიმეს შიგნით: in the box (ყუთში), in the room (ოთახში), in Tbilisi (თბილისში), in Georgia (საქართველოში).\n\non — ზედაპირზე: on the table (მაგიდაზე), on the wall (კედელზე), on the floor (იატაკზე).\n\nat — კონკრეტულ ადგილას/წერტილში: at school (სკოლაში), at home (სახლში), at the bus stop (ავტობუსის გაჩერებაზე), at the door (კართან).\n\nunder — ქვეშ: under the table (მაგიდის ქვეშ), under the bed (საწოლის ქვეშ).\n\nnext to — გვერდით: next to the bank (ბანკის გვერდით), next to me (ჩემ გვერდით).\n\nbetween — შორის: between the two buildings (ორ შენობას შორის).\n\nbehind — უკან: behind the house (სახლის უკან).\n\nin front of — წინ: in front of the school (სკოლის წინ).\n\nქართულში ეს მნიშვნელობები თანდებულებით გამოიხატება (-ში, -ზე, -თან), რომლებიც სიტყვის ბოლოს ემატება. ინგლისურში კი წინდებულები სიტყვის წინ დგანან.",
+  "passThreshold": 0.7,
+  "explanation_ka": "ადგილის წინდებულები გვიჩვენებს - სად მდებარეობს რაიმე.\n\n**in - შიგნით:**\n• in the box (ყუთში)\n• in the room (ოთახში) \n• in Tbilisi (თბილისში)\n\n**on - ზედაპირზე:**\n• on the table (მაგიდაზე)\n• on the wall (კედელზე)\n• on the floor (იატაკზე)\n\n**at - კონკრეტულ ადგილზე:**\n• at school (სკოლაში)\n• at home (სახლში)\n• at the door (კართან)\n\n**სხვა მნიშვნელოვანი:**\n• under - ქვეშ: under the bed\n• next to - გვერდით: next to the bank\n• behind - უკან: behind the school\n\n**მთავარი წესი:**\nქართულში: სიტყვის ბოლოში (-ში, -ზე)\nინგლისურში: სიტყვის წინ (in, on, at)",
   "examples": [
-    {"en": "The cat is under the table.", "ka": "კატა მაგიდის ქვეშ არის."},
-    {"en": "My keys are in my bag.", "ka": "ჩემი გასაღებები ჩანთაშია."},
-    {"en": "The picture is on the wall.", "ka": "სურათი კედელზეა."},
-    {"en": "She is at school.", "ka": "ის სკოლაშია."},
-    {"en": "The pharmacy is next to the bank.", "ka": "აფთიაქი ბანკის გვერდითაა."}
+    {
+      "en": "The cat is under the table.",
+      "ka": "კატა მაგიდის ქვეშ არის."
+    },
+    {
+      "en": "My keys are in my bag.",
+      "ka": "ჩემი გასაღებები ჩანთაშია."
+    },
+    {
+      "en": "The picture is on the wall.",
+      "ka": "სურათი კედელზეა."
+    },
+    {
+      "en": "She is at school.",
+      "ka": "ის სკოლაშია."
+    },
+    {
+      "en": "The pharmacy is next to the bank.",
+      "ka": "აფთიაქი ბანკის გვერდითაა."
+    }
   ],
   "common_mistakes_ka": "ქართველები ხშირად ურევენ in, on და at-ს, რადგან ქართულში \"-ში\" შეიძლება სამივეს შეესაბამებოდეს. მაგალითად: \"in school\" ნაცვლად \"at school\"-ისა, ან \"in the table\" ნაცვლად \"on the table\"-ისა. დაიმახსოვრეთ: in = შიგნით (სამგანზომილებიანი), on = ზედაპირზე, at = წერტილი/ადგილი.",
   "exercises": [
-    {"type": "fill-blank", "question": "The book is ___ the table.", "answer": "on", "options": ["in", "on", "at"]},
-    {"type": "fill-blank", "question": "She lives ___ Tbilisi.", "answer": "in", "options": ["in", "on", "at"]},
-    {"type": "fill-blank", "question": "The cat is ___ the bed.", "answer": "under", "options": ["under", "on", "in"]},
-    {"type": "fill-blank", "question": "He is ___ home.", "answer": "at", "options": ["in", "on", "at"]},
-    {"type": "fill-blank", "question": "The bank is ___ the school.", "answer": "next to", "options": ["next to", "under", "in"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["The keys are in my pocket.", "The keys are on my pocket.", "The keys are at my pocket."], "answer": "The keys are in my pocket."},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She is in school.", "She is on school.", "She is at school."], "answer": "She is at school."},
-    {"type": "fill-blank", "question": "The painting is ___ the wall.", "answer": "on", "options": ["in", "on", "at"]},
-    {"type": "fill-blank", "question": "The children are ___ the park.", "answer": "in", "options": ["in", "on", "at"]},
-    {"type": "multiple-choice", "question": "Where is the cat?", "options": ["The cat is under the chair.", "The cat is on the chair.", "The cat is in the chair."], "answer": "The cat is under the chair."}
+    {
+      "type": "fill-blank",
+      "question": "The book is ___ the table.",
+      "answer": "on",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She lives ___ Tbilisi.",
+      "answer": "in",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The cat is ___ the bed.",
+      "answer": "under",
+      "options": [
+        "under",
+        "on",
+        "in"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He is ___ home.",
+      "answer": "at",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The bank is ___ the school.",
+      "answer": "next to",
+      "options": [
+        "next to",
+        "under",
+        "in"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "The keys are in my pocket.",
+        "The keys are on my pocket.",
+        "The keys are at my pocket."
+      ],
+      "answer": "The keys are in my pocket."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She is in school.",
+        "She is on school.",
+        "She is at school."
+      ],
+      "answer": "She is at school."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The painting is ___ the wall.",
+      "answer": "on",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The children are ___ the park.",
+      "answer": "in",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Where is the cat?",
+      "options": [
+        "The cat is under the chair.",
+        "The cat is on the chair.",
+        "The cat is in the chair."
+      ],
+      "answer": "The cat is under the chair."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The pharmacy is ___ the supermarket and the bank.",
+      "answer": "between",
+      "options": [
+        "between",
+        "behind",
+        "under"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "My car is in the garage.",
+        "My car is on the garage.",
+        "My car is at the garage."
+      ],
+      "answer": "My car is in the garage."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The school is ___ the hospital.",
+      "answer": "behind",
+      "options": [
+        "behind",
+        "next to",
+        "under"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I am sitting ___ my friend.",
+      "answer": "next to",
+      "options": [
+        "next to",
+        "under",
+        "behind"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "There is a fly in the ceiling.",
+        "There is a fly on the ceiling.",
+        "There is a fly at the ceiling."
+      ],
+      "answer": "There is a fly on the ceiling."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The dog is sleeping ___ the tree.",
+      "answer": "under",
+      "options": [
+        "under",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "Wait for me in the bus stop.",
+        "Wait for me on the bus stop.",
+        "Wait for me at the bus stop."
+      ],
+      "answer": "Wait for me at the bus stop."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The blackboard is ___ of me.",
+      "answer": "in front",
+      "options": [
+        "in front",
+        "behind",
+        "next to"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Her bag is ___ the floor.",
+      "answer": "on",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "The bird is in the sky.",
+        "The bird is on the sky.",
+        "The bird is at the sky."
+      ],
+      "answer": "The bird is in the sky."
+    }
   ]
 }

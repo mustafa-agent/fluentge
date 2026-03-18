@@ -15,12 +15,9 @@ export function getStaticPaths() {
 }
 
 const { lesson, nextLesson, prevLesson } = Astro.props;
-// All lessons are unlockable via placement test or premium
-// A1 lessons are always free; others unlock based on placement level
 const ALWAYS_FREE_LEVELS = ['A1'];
 const isFree = ALWAYS_FREE_LEVELS.includes(lesson.level);
 
-// Grammar → Flashcard deck mapping for interconnection
 const grammarToDecks: Record<string, {deck: string, label: string, emoji: string}[]> = {
   'to-be': [
     {deck: 'greetings-basics', label: 'მისალმებები', emoji: '👋'},
@@ -79,9 +76,143 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
 ---
 
 <Layout title={`${lesson.title_ka} — FluentGe`}>
-  <section class="max-w-3xl mx-auto px-4 py-16">
-    <!-- Header -->
-    <a href="/grammar/" class="text-[#C8C8C0] hover:underline text-sm mb-6 inline-block">← გრამატიკა</a>
+  <style>
+    /* Grammar lesson page styles */
+    @keyframes grammarSlideIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes wrongShake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-6px); }
+      40% { transform: translateX(6px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+    }
+    @keyframes masteryPulse {
+      0% { box-shadow: 0 0 0 rgba(34,197,94,0); }
+      50% { box-shadow: 0 0 24px rgba(34,197,94,0.5); }
+      100% { box-shadow: 0 0 0 rgba(34,197,94,0); }
+    }
+    @keyframes celebratePop {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.15); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes confettiDrop {
+      0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(30px) rotate(360deg); opacity: 0; }
+    }
+
+    /* Light mode overrides */
+    html.light .gl-card {
+      background: #FFFFFF;
+      border-color: #E5E7EB;
+    }
+    html.light .gl-card-alt {
+      background: #FEF2F2;
+      border-color: #FECACA;
+    }
+    html.light .gl-exercise-card {
+      background: #FFFFFF;
+      border-color: #E5E7EB;
+    }
+    html.light .gl-btn-option {
+      background: #F9FAFB;
+      border-color: #D1D5DB;
+      color: #1F2937;
+    }
+    html.light .gl-btn-option:hover {
+      background: #F3F4F6;
+      border-color: #9CA3AF;
+    }
+    html.light .gl-btn-option .gl-letter {
+      background: #E5E7EB;
+      color: #6B7280;
+    }
+    html.light .gl-progress-track {
+      background: #E5E7EB;
+    }
+    html.light .gl-text-muted {
+      color: #6B7280;
+    }
+    html.light .gl-text-secondary {
+      color: #4B5563;
+    }
+    html.light .gl-text-body {
+      color: #374151;
+    }
+    html.light .gl-breadcrumb {
+      color: #6B7280;
+    }
+    html.light .gl-breadcrumb:hover {
+      color: #3B82F6;
+    }
+    html.light .gl-example-card {
+      background: #F0F9FF;
+      border-color: #BAE6FD;
+    }
+    html.light .gl-example-card .gl-example-en {
+      color: #1E40AF;
+    }
+    html.light .gl-example-card .gl-example-ka {
+      color: #6B7280;
+    }
+    html.light .gl-stat-card {
+      background: #F9FAFB;
+    }
+    html.light .gl-result-heading {
+      color: #111827;
+    }
+    html.light .gl-level-badge-A1 { background: #D1FAE5; color: #065F46; }
+    html.light .gl-level-badge-A2 { background: #DBEAFE; color: #1E40AF; }
+    html.light .gl-level-badge-B1 { background: #FEF3C7; color: #92400E; }
+    html.light .gl-level-badge-B2 { background: #FFEDD5; color: #9A3412; }
+    html.light .gl-level-badge-C1 { background: #EDE9FE; color: #5B21B6; }
+
+    /* Typography */
+    .gl-heading-1 {
+      font-size: 1.875rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .gl-heading-2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.3;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .gl-body-text {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    /* 3D button base */
+    .gl-btn-3d {
+      border-bottom-width: 4px;
+      transition: all 0.1s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+    .gl-btn-3d:active {
+      border-bottom-width: 2px;
+      margin-top: 2px;
+    }
+  </style>
+
+  <section class="max-w-2xl mx-auto px-4 py-10 sm:py-16">
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center gap-2 text-sm mb-8">
+      <a href="/grammar/" class="gl-breadcrumb gl-text-muted hover:underline transition-colors flex items-center gap-1">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        გრამატიკა
+      </a>
+      <span class="gl-text-muted">/</span>
+      <span class="gl-text-secondary font-medium">{lesson.title_ka}</span>
+    </nav>
 
     <!-- Review Mode Banner -->
     <div id="review-banner" class="hidden mb-6 p-4 rounded-xl bg-gradient-to-r from-purple-600/20 to-indigo-600/20 border border-purple-500/30">
@@ -93,99 +224,167 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         </div>
       </div>
     </div>
-    <div class="flex items-center gap-3 mb-2">
-      <span class={`px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : lesson.level === 'A2' ? 'bg-blue-500/20 text-blue-400' : lesson.level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : lesson.level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{lesson.level}</span>
-      <span class="text-[#6B6B65] text-sm">გაკვეთილი #{lesson.id}</span>
-    </div>
-    <h1 class="text-3xl font-bold mb-1">{lesson.title_ka}</h1>
-    <p class="text-[#6B6B65] mb-8">{lesson.title_en}</p>
 
-    <!-- Lesson Content (hidden for non-premium if lesson is premium) -->
+    <!-- Lesson Header -->
+    <header class="mb-10">
+      <div class="flex items-center gap-3 mb-3">
+        <span class={`gl-level-badge-${lesson.level} px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : lesson.level === 'A2' ? 'bg-blue-500/20 text-blue-400' : lesson.level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : lesson.level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{lesson.level}</span>
+        <span class="gl-text-muted text-sm">გაკვეთილი #{lesson.id}</span>
+      </div>
+      <h1 class="gl-heading-1 mb-2">{lesson.title_ka}</h1>
+      <p class="gl-text-muted text-lg">{lesson.title_en}</p>
+    </header>
+
+    <!-- Lesson Content -->
     <div id="lesson-content" class={isFree ? '' : 'hidden'}>
-    <!-- Explanation -->
-    <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-6 mb-8">
-      <h2 class="text-xl font-bold mb-4">📚 ახსნა</h2>
-      <div class="text-[#cbd5e1] leading-relaxed whitespace-pre-line">{lesson.explanation_ka}</div>
-    </div>
 
-    <!-- Examples -->
-    <div class="bg-[#242426] border border-[#2E2E30] rounded-xl p-6 mb-8">
-      <h2 class="text-xl font-bold mb-4">💡 მაგალითები</h2>
-      <div class="space-y-3">
-        {lesson.examples.map((ex: {en: string, ka: string}) => (
-          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 py-2 border-b border-white/5 last:border-0">
-            <span class="font-medium text-[#C8C8C0]">{ex.en}</span>
-            <span class="text-[#6B6B65]">— {ex.ka}</span>
-          </div>
-        ))}
+      <!-- Explanation Section -->
+      <div class="gl-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 mb-8">
+        <h2 class="gl-heading-2 mb-5">
+          <span class="text-2xl">📚</span>
+          <span>ახსნა</span>
+        </h2>
+        <div class="gl-body-text gl-text-body text-[#cbd5e1] leading-relaxed" id="grammar-explanation"></div>
+        <script define:vars={{ explanationText: lesson.explanation_ka }}>
+          (function() {
+            var text = explanationText;
+            text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>');
+            text = text.replace(/^## (.+)$/gm, '<h3 class="text-lg font-bold mt-6 mb-3 text-white flex items-center gap-2"><span class="w-1 h-5 bg-sky-400 rounded-full inline-block"></span>$1</h3>');
+            text = text.replace(/^[•\-] (.+)$/gm, '<div class="flex gap-3 ml-1 my-1.5"><span class="text-sky-400 mt-0.5 shrink-0">•</span><span>$1</span></div>');
+            text = text.replace(/^(\d+)\. (.+)$/gm, '<h3 class="text-lg font-bold mt-6 mb-3 text-white flex items-center gap-2"><span class="w-7 h-7 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center text-sm font-bold shrink-0">$1</span>$2</h3>');
+            text = text.replace(/^(✅.+)$/gm, '<div class="bg-green-500/10 border-l-3 border-green-500 pl-4 py-2 my-2 rounded-r-lg font-medium">$1</div>');
+            text = text.replace(/^(❌.+)$/gm, '<div class="bg-red-500/10 border-l-3 border-red-500 pl-4 py-2 my-2 rounded-r-lg font-medium">$1</div>');
+            text = text.replace(/^\|.*\|$/gm, '');
+            text = text.replace(/^\s*[-|]+\s*$/gm, '');
+            text = text.replace(/\n\n+/g, '</p><p class="mb-4">');
+            text = text.replace(/\n/g, '<br>');
+            text = '<p class="mb-4">' + text + '</p>';
+            text = text.replace(/<p class="mb-4"><\/p>/g, '');
+            text = text.replace(/<p class="mb-4">(<h3)/g, '$1');
+            text = text.replace(/(<\/h3>)<\/p>/g, '$1');
+            document.getElementById('grammar-explanation').innerHTML = text;
+          })();
+        </script>
       </div>
-    </div>
 
-    <!-- Common Mistakes -->
-    <div class="bg-red-500/5 border border-red-500/20 rounded-xl p-6 mb-8">
-      <h2 class="text-xl font-bold mb-4 text-red-400">⚠️ ხშირი შეცდომები</h2>
-      <p class="text-[#cbd5e1] leading-relaxed whitespace-pre-line">{lesson.common_mistakes_ka}</p>
-    </div>
+      <!-- Examples Section — Cards -->
+      <div class="gl-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 mb-8">
+        <h2 class="gl-heading-2 mb-5">
+          <span class="text-2xl">💡</span>
+          <span>მაგალითები</span>
+        </h2>
+        <div class="grid gap-3">
+          {lesson.examples.map((ex: {en: string, ka: string}, i: number) => (
+            <div class="gl-example-card bg-[#1C1C1E] rounded-xl p-4 border border-[#2E2E30] flex items-start gap-4 transition-colors">
+              <span class="w-8 h-8 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">{i + 1}</span>
+              <div class="flex-1 min-w-0">
+                <p class="gl-example-en font-semibold text-white mb-1 leading-relaxed">{ex.en}</p>
+                <p class="gl-example-ka gl-text-muted text-sm leading-relaxed">{ex.ka}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
-    <!-- Exercises -->
-    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden" id="exercises-section">
-      <!-- Progress bar (top) -->
-      <div class="px-6 pt-5 pb-0">
-        <div class="flex items-center gap-3 mb-2">
-          <button id="exercise-close-btn" class="text-[#6B6B65] hover:text-red-400 transition-colors text-lg" title="დახურვა">✕</button>
-          <div class="flex-1 h-4 bg-[#1C1C1E] rounded-full overflow-hidden">
-            <div id="exercise-progress-bar" class="h-full bg-gradient-to-r from-green-400 to-emerald-500 rounded-full transition-all duration-500 relative" style="width:0%">
-              <div class="absolute inset-0 rounded-full bg-gradient-to-b from-white/20 to-transparent"></div>
+      <!-- Common Mistakes Section -->
+      <div class="gl-card-alt bg-red-500/5 border border-red-500/20 rounded-2xl p-6 sm:p-8 mb-10">
+        <h2 class="gl-heading-2 mb-5 text-red-400">
+          <span class="text-2xl">⚠️</span>
+          <span>ხშირი შეცდომები</span>
+        </h2>
+        <div class="gl-body-text gl-text-body text-[#cbd5e1] leading-relaxed" id="grammar-mistakes"></div>
+        <script define:vars={{ mistakesText: lesson.common_mistakes_ka }}>
+          (function() {
+            var text = mistakesText;
+            text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold">$1</strong>');
+            text = text.replace(/^(\d+)\) (.+)$/gm, '<h4 class="font-bold mt-5 mb-2 text-white text-base">$1) $2</h4>');
+            text = text.replace(/^(\d+)\. (.+)$/gm, '<h4 class="font-bold mt-5 mb-2 text-white text-base">$1. $2</h4>');
+            text = text.replace(/^(✅.+)$/gm, '<div class="flex items-start gap-2 bg-green-500/10 border border-green-500/20 rounded-lg px-4 py-2.5 my-2"><span class="shrink-0 mt-0.5">✅</span><span class="text-green-300">$1</span></div>'.replace('$1', '$1').replace(/✅/, ''));
+            // Simpler approach for ✅ and ❌
+            text = text.replace(/^(✅.+)$/gm, '<div class="bg-green-500/10 border border-green-500/20 rounded-lg px-4 py-2.5 my-2 text-green-300 font-medium">$1</div>');
+            text = text.replace(/^(❌.+)$/gm, '<div class="bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-2.5 my-2 text-red-300 font-medium">$1</div>');
+            text = text.replace(/^\|.*\|$/gm, '');
+            text = text.replace(/^\s*[-|]+\s*$/gm, '');
+            text = text.replace(/\n\n+/g, '</p><p class="mb-4">');
+            text = text.replace(/\n/g, '<br>');
+            text = '<p class="mb-4">' + text + '</p>';
+            text = text.replace(/<p class="mb-4"><\/p>/g, '');
+            document.getElementById('grammar-mistakes').innerHTML = text;
+          })();
+        </script>
+      </div>
+
+      <!-- Exercises Section -->
+      <div class="gl-exercise-card bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden" id="exercises-section">
+        <!-- Progress bars -->
+        <div class="px-6 pt-5 pb-0">
+          <!-- Question progress -->
+          <div class="flex items-center gap-3 mb-3">
+            <button id="exercise-close-btn" class="gl-text-muted hover:text-red-400 transition-colors text-lg leading-none" title="დახურვა">✕</button>
+            <div class="flex-1 h-3 gl-progress-track bg-[#1C1C1E] rounded-full overflow-hidden">
+              <div id="exercise-progress-bar" class="h-full bg-gradient-to-r from-sky-400 to-sky-500 rounded-full transition-all duration-500" style="width:0%"></div>
+            </div>
+            <span id="exercise-counter" class="text-sm font-bold gl-text-muted tabular-nums min-w-[3rem] text-right">0/0</span>
+          </div>
+          <!-- Mastery bar -->
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-xs gl-text-muted min-w-[24px]">0%</span>
+            <div class="flex-1 h-5 gl-progress-track bg-[#1C1C1E] rounded-full overflow-hidden relative">
+              <div class="absolute top-0 bottom-0 w-0.5 bg-yellow-400/60 z-10" style="left:70%"></div>
+              <div class="absolute text-[9px] text-yellow-400/80 font-bold z-10" style="left:70%;top:-1px;transform:translateX(-50%)">70%</div>
+              <div id="mastery-bar" class="h-full bg-gradient-to-r from-orange-400 to-amber-500 rounded-full transition-all duration-700 ease-out" style="width:0%"></div>
+            </div>
+            <span id="mastery-pct" class="text-xs font-bold gl-text-muted tabular-nums min-w-[28px] text-right">0%</span>
+          </div>
+        </div>
+
+        <!-- Exercise content -->
+        <div id="exercise-container" class="px-6 py-6"></div>
+
+        <!-- Bottom feedback bar -->
+        <div id="exercise-feedback-bar" class="hidden">
+          <div id="feedback-inner" class="px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span id="feedback-icon" class="text-2xl"></span>
+              <div>
+                <p id="feedback-title" class="font-bold text-lg"></p>
+                <p id="feedback-detail" class="text-sm opacity-80"></p>
+              </div>
+            </div>
+            <button id="continue-btn" class="gl-btn-3d font-bold uppercase tracking-wide px-8 py-3 rounded-xl text-white">გაგრძელება</button>
+          </div>
+        </div>
+
+        <!-- Result screen -->
+        <div id="score-container" class="hidden px-6 py-12 text-center">
+          <div class="text-7xl mb-5" id="score-emoji" style="animation: celebratePop 0.5s ease-out"></div>
+          <div id="pass-badge" class="hidden inline-block px-5 py-2 rounded-full text-sm font-bold mb-4"></div>
+          <h2 class="gl-result-heading text-2xl sm:text-3xl font-extrabold mb-2" id="score-heading">გაკვეთილი დასრულდა!</h2>
+          <p class="gl-text-muted text-lg mb-10" id="score-msg"></p>
+          <div class="grid grid-cols-3 gap-4 max-w-sm mx-auto mb-10">
+            <div class="gl-stat-card bg-[#1C1C1E] rounded-2xl p-5 gl-btn-3d border-b-4 border-green-500/30">
+              <div class="text-3xl font-extrabold text-green-400 mb-1" id="score-correct">0</div>
+              <div class="text-xs gl-text-muted font-medium">სწორი</div>
+            </div>
+            <div class="gl-stat-card bg-[#1C1C1E] rounded-2xl p-5 gl-btn-3d border-b-4 border-sky-500/30">
+              <div class="text-3xl font-extrabold text-sky-400 mb-1" id="score-pct">0%</div>
+              <div class="text-xs gl-text-muted font-medium">სიზუსტე</div>
+            </div>
+            <div class="gl-stat-card bg-[#1C1C1E] rounded-2xl p-5 gl-btn-3d border-b-4 border-amber-500/30">
+              <div class="text-3xl font-extrabold text-amber-400 mb-1" id="score-xp">0</div>
+              <div class="text-xs gl-text-muted font-medium">XP ⭐</div>
             </div>
           </div>
-          <span id="exercise-counter" class="text-sm font-bold text-[#6B6B65] tabular-nums min-w-[3rem] text-right">0/0</span>
+          <div class="flex gap-4 justify-center flex-wrap" id="score-buttons">
+            <button id="retry-btn" class="hidden gl-btn-3d bg-[#2E2E30] hover:bg-[#3E3E40] text-white px-8 py-3.5 rounded-xl font-bold border-b-4 border-[#1C1C1E] transition-all text-base">🔄 თავიდან</button>
+            {nextLesson && (
+              <a id="next-lesson-btn" href={`/grammar/${nextLesson.slug}/`} class="hidden gl-btn-3d bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 text-white px-8 py-3.5 rounded-xl font-bold border-b-4 border-green-600 transition-all inline-block text-base">შემდეგი გაკვეთილი →</a>
+            )}
+          </div>
         </div>
       </div>
-
-      <div id="exercise-container" class="px-6 py-6"></div>
-
-      <!-- Bottom feedback bar -->
-      <div id="exercise-feedback-bar" class="hidden">
-        <div id="feedback-inner" class="px-6 py-4 flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <span id="feedback-icon" class="text-2xl"></span>
-            <div>
-              <p id="feedback-title" class="font-bold text-lg"></p>
-              <p id="feedback-detail" class="text-sm opacity-80"></p>
-            </div>
-          </div>
-          <button id="continue-btn" class="font-bold uppercase tracking-wide px-8 py-3 rounded-xl border-b-4 active:border-b-0 active:mt-[4px] transition-all text-white">გაგრძელება</button>
-        </div>
-      </div>
-
-      <!-- Result screen -->
-      <div id="score-container" class="hidden px-6 py-10 text-center">
-        <div class="text-6xl mb-4" id="score-emoji"></div>
-        <div id="pass-badge" class="hidden inline-block px-4 py-1.5 rounded-full text-sm font-bold mb-3"></div>
-        <h2 class="text-2xl font-bold mb-2" id="score-heading">გაკვეთილი დასრულდა!</h2>
-        <p class="text-[#6B6B65] mb-8" id="score-msg"></p>
-        <div class="grid grid-cols-3 gap-4 max-w-sm mx-auto mb-8">
-          <div class="bg-[#1C1C1E] rounded-xl p-4 border-b-4 border-green-500/30">
-            <div class="text-2xl font-bold text-green-400" id="score-correct">0</div>
-            <div class="text-xs text-[#6B6B65]">სწორი</div>
-          </div>
-          <div class="bg-[#1C1C1E] rounded-xl p-4 border-b-4 border-sky-500/30">
-            <div class="text-2xl font-bold text-sky-400" id="score-pct">0%</div>
-            <div class="text-xs text-[#6B6B65]">სიზუსტე</div>
-          </div>
-          <div class="bg-[#1C1C1E] rounded-xl p-4 border-b-4 border-amber-500/30">
-            <div class="text-2xl font-bold text-amber-400" id="score-xp">0</div>
-            <div class="text-xs text-[#6B6B65]">XP ⭐</div>
-          </div>
-        </div>
-        <div class="flex gap-3 justify-center flex-wrap" id="score-buttons">
-          <button id="retry-btn" class="hidden bg-[#2E2E30] hover:bg-[#3E3E40] text-white px-6 py-3 rounded-xl font-bold border-b-4 border-[#1C1C1E] active:border-b-0 active:mt-[4px] transition-all">🔄 თავიდან</button>
-          {nextLesson && (
-            <a id="next-lesson-btn" href={`/grammar/${nextLesson.slug}/`} class="hidden bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 text-white px-6 py-3 rounded-xl font-bold border-b-4 border-green-600 active:border-b-0 active:mt-[4px] transition-all inline-block">შემდეგი გაკვეთილის გახსნა →</a>
-          )}
-        </div>
-      </div>
-    </div>
     </div>
 
     <!-- Premium locked overlay -->
@@ -193,16 +392,12 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-12">
         <div class="text-6xl mb-4">🔒</div>
         <h2 class="text-2xl font-bold mb-3">ეს გაკვეთილი ჯერ ჩაკეტილია</h2>
-        <p class="text-[#6B6B65] mb-6 max-w-md mx-auto">გაიარე დონის ტესტი რომ გახსნა შენი დონის გაკვეთილები.</p>
-        <a href="/placement/" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-xl text-lg transition-colors">
+        <p class="gl-text-muted mb-6 max-w-md mx-auto">გაიარე დონის ტესტი რომ გახსნა შენი დონის გაკვეთილები.</p>
+        <a href="/placement/" class="gl-btn-3d inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-xl text-lg border-b-4 border-sky-700 transition-colors">
           🎯 დონის ტესტი
         </a>
       </div>
     </div>
-
-    <!-- Related flashcards removed -->
-
-    <!-- Navigation removed — next lesson only via test results -->
   </section>
 
   <script is:inline src="/js/gamification-bridge.js"></script>
@@ -212,12 +407,10 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       var placementLevel = localStorage.getItem('fluentge-placement-level');
       var isPremium = localStorage.getItem('fluentge-premium') === 'true';
       
-      // Unlock if: premium, or lesson level <= placement level
       var shouldUnlock = isPremium;
       if (placementLevel) {
         var placementIdx = LEVEL_ORDER.indexOf(placementLevel);
         var lessonIdx = LEVEL_ORDER.indexOf(lessonLevel);
-        // Unlock all levels up to AND INCLUDING the placement level
         if (lessonIdx >= 0 && placementIdx >= 0 && lessonIdx <= placementIdx) {
           shouldUnlock = true;
         }
@@ -236,34 +429,28 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     // Review mode detection
     var isReviewMode = window.location.search.includes('review=1');
     if (isReviewMode) {
-      // Show review banner
       var banner = document.getElementById('review-banner');
       if (banner) banner.classList.remove('hidden');
-      // Unhide lesson content for review
       var lc = document.getElementById('lesson-content');
       if (lc) lc.classList.remove('hidden');
-      // Allow exercises even for premium in review mode (they already completed it)
-      // Track review date
       try {
         var reviewDates = JSON.parse(localStorage.getItem('fluentge-grammar-reviews') || '{}');
         reviewDates[lessonSlug] = new Date().toISOString();
         localStorage.setItem('fluentge-grammar-reviews', JSON.stringify(reviewDates));
       } catch(e) {}
-      // Shuffle exercises
       for (var i = exercises.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var temp = exercises[i];
         exercises[i] = exercises[j];
         exercises[j] = temp;
       }
-      // Auto-scroll to exercises
       setTimeout(function() {
         var exSection = document.getElementById('exercises-section');
         if (exSection) exSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 500);
     }
 
-    // Sound feedback — resume AudioContext on first user click (required by browsers)
+    // Sound feedback
     let audioCtx = null;
     function getCtx() {
       if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -322,28 +509,24 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     const progressBar = document.getElementById('exercise-progress-bar');
     const counterEl = document.getElementById('exercise-counter');
 
-    // Initialize gamification
     if (window.FluentGe) {
       FluentGe.createXPCounter();
       FluentGe.updateXPCounter(FluentGe.getTotalXP());
       FluentGe.startTimer();
     }
 
-    // Close button
     document.getElementById('exercise-close-btn').addEventListener('click', function() {
       if (confirm('ნამდვილად გსურს გაკვეთილის დატოვება?')) {
         window.location.href = '/grammar/';
       }
     });
 
-    // Continue button
     continueBtn.addEventListener('click', function() {
       feedbackBar.classList.add('hidden');
       current++;
       render();
     });
 
-    // Keyboard: Enter/Space to continue
     document.addEventListener('keydown', function(e) {
       if ((e.key === 'Enter' || e.key === ' ') && answered && !feedbackBar.classList.contains('hidden')) {
         e.preventDefault();
@@ -351,10 +534,41 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       }
     });
 
+    const masteryBar = document.getElementById('mastery-bar');
+    const masteryPct = document.getElementById('mastery-pct');
+    let masteryUnlocked = false;
+
     function updateProgress() {
       const pct = exercises.length > 0 ? (current / exercises.length) * 100 : 0;
       progressBar.style.width = pct + '%';
       counterEl.textContent = current + '/' + exercises.length;
+    }
+
+    function updateMastery() {
+      const totalAnswered = current;
+      if (totalAnswered === 0) return;
+      const scorePct = Math.round((score / exercises.length) * 100);
+      masteryBar.style.width = scorePct + '%';
+      masteryPct.textContent = scorePct + '%';
+      
+      if (scorePct >= 70) {
+        masteryBar.className = masteryBar.className.replace(/from-\S+ to-\S+/, 'from-green-400 to-emerald-500');
+        masteryPct.style.color = 'rgb(74, 222, 128)';
+        if (!masteryUnlocked) {
+          masteryUnlocked = true;
+          masteryBar.style.boxShadow = '0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(34, 197, 94, 0.3)';
+          masteryPct.style.transform = 'scale(1.3)';
+          masteryPct.style.transition = 'transform 0.3s ease';
+          setTimeout(function() { masteryPct.style.transform = 'scale(1)'; }, 500);
+          masteryBar.style.animation = 'masteryPulse 0.6s ease-out';
+        }
+      } else if (scorePct >= 50) {
+        masteryBar.className = masteryBar.className.replace(/from-\S+ to-\S+/, 'from-yellow-400 to-amber-500');
+        masteryPct.style.color = 'rgb(250, 204, 21)';
+      } else {
+        masteryBar.className = masteryBar.className.replace(/from-\S+ to-\S+/, 'from-orange-400 to-amber-500');
+        masteryPct.style.color = '#6B6B65';
+      }
     }
 
     function showFeedback(correct, correctAnswer) {
@@ -366,7 +580,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         feedbackTitle.className = 'font-bold text-lg text-green-400';
         feedbackDetail.textContent = streak > 1 ? '🔥 ' + streak + ' ზედიზედ!' : 'შესანიშნავი!';
         feedbackDetail.className = 'text-sm text-green-400/70';
-        continueBtn.className = 'font-bold uppercase tracking-wide px-8 py-3 rounded-xl border-b-4 active:border-b-0 active:mt-[4px] transition-all text-white bg-green-500 border-green-600 hover:bg-green-600';
+        continueBtn.className = 'gl-btn-3d font-bold uppercase tracking-wide px-8 py-3 rounded-xl text-white bg-green-500 border-b-4 border-green-700 hover:bg-green-600';
       } else {
         feedbackInner.className = 'px-6 py-4 flex items-center justify-between bg-red-500/15 border-t-2 border-red-500';
         feedbackIcon.textContent = '❌';
@@ -374,7 +588,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         feedbackTitle.className = 'font-bold text-lg text-red-400';
         feedbackDetail.textContent = 'სწორი პასუხი: ' + correctAnswer;
         feedbackDetail.className = 'text-sm text-red-400/70';
-        continueBtn.className = 'font-bold uppercase tracking-wide px-8 py-3 rounded-xl border-b-4 active:border-b-0 active:mt-[4px] transition-all text-white bg-red-500 border-red-600 hover:bg-red-600';
+        continueBtn.className = 'gl-btn-3d font-bold uppercase tracking-wide px-8 py-3 rounded-xl text-white bg-red-500 border-b-4 border-red-700 hover:bg-red-600';
       }
     }
 
@@ -385,25 +599,16 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         feedbackBar.classList.add('hidden');
         scoreContainer.classList.remove('hidden');
         const pct = Math.round((score / exercises.length) * 100);
-        // Complete progress bar
         progressBar.style.width = '100%';
         progressBar.classList.remove('from-green-400', 'to-emerald-500');
         progressBar.classList.add('from-amber-400', 'to-yellow-500');
         counterEl.textContent = exercises.length + '/' + exercises.length;
-        // Bonus XP
-        var passed = score === exercises.length; // Must get ALL correct to pass
+        var passed = pct >= 70;
         if (window.FluentGe) {
-          if (pct >= 50) {
-            var bonus = pct >= 80 ? 50 : 25;
-            var br = FluentGe.addXP(bonus);
-            sessionXP += bonus;
-            FluentGe.updateXPCounter(br.newTotal);
-            if (br.levelUp) FluentGe.showLevelUp(br.newLevel);
-          }
+          // XP already added per correct answer (1 XP each)
           FluentGe.updateStreak();
           var mins = FluentGe.stopTimer();
           FluentGe.addStudyTime(mins);
-          // Mark complete and unlock next lesson if passed
           if (passed) {
             console.log('GRAMMAR PASS — marking complete:', lessonSlug);
             FluentGe.markGrammarComplete(lessonSlug);
@@ -414,21 +619,19 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         document.getElementById('score-correct').textContent = score + '/' + exercises.length;
         document.getElementById('score-pct').textContent = pct + '%';
         document.getElementById('score-xp').textContent = '+' + sessionXP;
-        // Pass/fail badge
         var badge = document.getElementById('pass-badge');
         if (badge) {
           badge.classList.remove('hidden');
           if (passed) {
             badge.textContent = '✅ ჩაბარებულია';
-            badge.className = 'inline-block px-4 py-1.5 rounded-full text-sm font-bold mb-3 bg-green-500/20 text-green-400 border border-green-500/30';
+            badge.className = 'inline-block px-5 py-2 rounded-full text-sm font-bold mb-4 bg-green-500/20 text-green-400 border border-green-500/30';
           } else {
             badge.textContent = '❌ ვერ ჩააბარე';
-            badge.className = 'inline-block px-4 py-1.5 rounded-full text-sm font-bold mb-3 bg-red-500/20 text-red-400 border border-red-500/30';
+            badge.className = 'inline-block px-5 py-2 rounded-full text-sm font-bold mb-4 bg-red-500/20 text-red-400 border border-red-500/30';
           }
         }
         var heading = document.getElementById('score-heading');
         if (heading) heading.textContent = passed ? 'ტესტი წარმატებით ჩააბარე!' : 'ტესტი ვერ ჩააბარე';
-        // Pass: show ONLY next lesson button. Fail: show ONLY retry button.
         var nextBtn = document.getElementById('next-lesson-btn');
         var retryBtn = document.getElementById('retry-btn');
         if (passed) {
@@ -441,7 +644,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         if (passed) {
           document.getElementById('score-msg').textContent = 'შესანიშნავი! შემდეგი გაკვეთილი გახსნილია! 🎉';
         } else {
-          document.getElementById('score-msg').textContent = 'ყველა კითხვას სწორად უნდა უპასუხო. სცადე თავიდან!';
+          document.getElementById('score-msg').textContent = '70%-ზე მეტი სწორი პასუხი გჭირდება. სცადე თავიდან!';
         }
         return;
       }
@@ -452,22 +655,21 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       
       let html = '';
       if (isMulti) {
-        html += `<p class="text-xl font-bold mb-6 leading-relaxed">${ex.question}</p>`;
+        html += `<p class="text-xl sm:text-2xl font-bold mb-8 leading-relaxed">${ex.question}</p>`;
       } else {
-        html += `<p class="text-xl font-bold mb-6 leading-relaxed">${ex.question.replace('___', '<span class="inline-block min-w-[80px] border-b-2 border-sky-400 text-sky-400 text-center mx-1">______</span>')}</p>`;
+        html += `<p class="text-xl sm:text-2xl font-bold mb-8 leading-relaxed">${ex.question.replace('___', '<span class="inline-block min-w-[80px] border-b-3 border-sky-400 text-sky-400 text-center mx-1 pb-0.5">______</span>')}</p>`;
       }
       
       html += `<div class="grid gap-3">`;
       ex.options.forEach(function(opt, i) {
-        html += `<button class="grammar-opt-btn flex items-center gap-3 text-left px-4 py-3.5 rounded-xl border-2 border-[#2E2E30] bg-[#1C1C1E] hover:bg-[#2E2E30] transition-all font-medium cursor-pointer active:scale-[0.98]" data-val="${opt}">
-          <span class="w-8 h-8 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#6B6B65] shrink-0">${letters[i] || ''}</span>
-          <span>${opt}</span>
+        html += `<button class="grammar-opt-btn gl-btn-option gl-btn-3d flex items-center gap-4 text-left px-5 py-4 rounded-xl border-2 border-[#2E2E30] border-b-4 border-b-[#1a1a1c] bg-[#1C1C1E] hover:bg-[#2E2E30] hover:border-[#3E3E40] transition-all font-medium cursor-pointer" data-val="${opt}">
+          <span class="gl-letter w-9 h-9 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#6B6B65] shrink-0">${letters[i] || ''}</span>
+          <span class="text-base">${opt}</span>
         </button>`;
       });
       html += `</div>`;
       
       container.innerHTML = html;
-      // Animate in
       container.style.animation = 'none';
       container.offsetHeight;
       container.style.animation = 'grammarSlideIn 0.25s ease-out';
@@ -488,9 +690,9 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         streak++;
         playCorrectSound();
         if (window.FluentGe) {
-          var result = FluentGe.addXP(10);
-          sessionXP += 10;
-          FluentGe.showXPFloat(btn, 10);
+          var result = FluentGe.addXP(1);
+          sessionXP += 1;
+          FluentGe.showXPFloat(btn, 1);
           FluentGe.updateXPCounter(result.newTotal);
           if (result.levelUp) FluentGe.showLevelUp(result.newLevel);
         }
@@ -499,15 +701,17 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         playWrongSound();
       }
 
+      updateMastery();
+
       container.querySelectorAll('.grammar-opt-btn').forEach(function(b) {
         var letter = b.querySelector('span:first-child');
         if (b.dataset.val === ex.answer) {
-          b.classList.remove('border-[#2E2E30]', 'bg-[#1C1C1E]');
-          b.classList.add('border-green-500', 'bg-green-500/15', 'text-green-400');
+          b.classList.remove('border-[#2E2E30]', 'bg-[#1C1C1E]', 'border-b-[#1a1a1c]');
+          b.classList.add('border-green-500', 'bg-green-500/15', 'text-green-400', 'border-b-green-700');
           if (letter) { letter.classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]'); letter.classList.add('bg-green-500', 'text-white'); }
         } else if (b === btn && !correct) {
-          b.classList.remove('border-[#2E2E30]', 'bg-[#1C1C1E]');
-          b.classList.add('border-red-500', 'bg-red-500/15', 'text-red-400');
+          b.classList.remove('border-[#2E2E30]', 'bg-[#1C1C1E]', 'border-b-[#1a1a1c]');
+          b.classList.add('border-red-500', 'bg-red-500/15', 'text-red-400', 'border-b-red-700');
           if (letter) { letter.classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]'); letter.classList.add('bg-red-500', 'text-white'); }
           b.style.animation = 'wrongShake 0.4s ease-out';
         }
@@ -522,7 +726,6 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       if (window.FluentGe) FluentGe.startTimer();
       scoreContainer.classList.add('hidden');
       container.classList.remove('hidden');
-      // Re-hide both buttons for fresh attempt
       var nb = document.getElementById('next-lesson-btn');
       var rb = document.getElementById('retry-btn');
       if (nb) { nb.classList.add('hidden'); nb.style.display = 'none'; }

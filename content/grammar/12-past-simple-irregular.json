@@ -2,27 +2,233 @@
   "id": 12,
   "slug": "past-simple-irregular",
   "title_en": "Past Simple (Irregular Verbs)",
-  "title_ka": "წარსული მარტივი დრო (არარეგულარული ზმნები)",
+  "title_ka": "წარსული მარტივი დრო",
   "level": "A2",
-  "explanation_ka": "ინგლისურში ბევრი ზმნა არარეგულარულია — მათი წარსული ფორმა არ მთავრდება -ed-ზე, არამედ სრულიად იცვლება. ეს ფორმები ზეპირად უნდა ისწავლოთ.\n\nმაგალითები:\ngo → went (წავედი)\neat → ate (მივირთვი)\nsee → saw (ვნახე)\ncome → came (მოვედი)\nhave → had (მქონდა)\nmake → made (გავაკეთე)\ntake → took (ავიღე)\nget → got (მივიღე)\n\nუარყოფითი და კითხვითი ფორმები იგივეა, რაც რეგულარული ზმნებისთვის:\nI didn't go. (არ წავედი)\nDid you see? (ნახე?)\n\nყურადღება: didn't-ის შემდეგ ზმნა საწყის ფორმაში ბრუნდება!\nI didn't went ❌ → I didn't go ✅",
+  "passThreshold": 0.7,
+  "explanation_ka": "არარეგულარული ზმნები არ იყენებს -ed ფორმას.\n\n**ყველაზე ხშირი არარეგულარული ზმნები:**\n• go → went (წავედი)\n• eat → ate (მივირთვი)\n• see → saw (ვნახე)\n• come → came (მოვედი)\n• have → had (მქონდა)\n• make → made (გავაკეთე)\n• take → took (ავიღე)\n• get → got (მივიღე)\n• buy → bought (ვიყიდე)\n• think → thought (ვიფიქრე)\n\n**მაგალითები:**\n• I went to school (სკოლაში წავედი)\n• She ate pizza (მან პიცა მიიღო)\n• We saw a movie (ფილმი ვნახეთ)\n\n**უარყოფითი: didn't + ძირითადი ზმნა**\n• I didn't go (არ წავედი)\n• She didn't eat (არ მიიღო)\n\n**კითხვითი: Did + პირი + ძირითადი ზმნა?**\n• Did you go? (წახვედი?)\n• Did she eat? (მიიღო?)\n\n**მთავარი წესი:**\ndidn't/Did-ის შემდეგ ყოველთვის ძირითადი ფორმა!\n• ✅ I didn't go\n• ❌ I didn't went",
   "examples": [
-    {"en": "I went to the store.", "ka": "მაღაზიაში წავედი."},
-    {"en": "She ate breakfast at 8.", "ka": "მან 8 საათზე მიიღო საუზმე."},
-    {"en": "We saw a movie last night.", "ka": "გუშინ საღამოს ფილმი ვნახეთ."},
-    {"en": "They didn't come to the party.", "ka": "ისინი წვეულებაზე არ მოვიდნენ."},
-    {"en": "Did he take the bus?", "ka": "მან ავტობუსით წავიდა?"}
+    {
+      "en": "I went to the store.",
+      "ka": "მაღაზიაში წავედი."
+    },
+    {
+      "en": "She ate breakfast at 8.",
+      "ka": "მან 8 საათზე მიიღო საუზმე."
+    },
+    {
+      "en": "We saw a movie last night.",
+      "ka": "გუშინ საღამოს ფილმი ვნახეთ."
+    },
+    {
+      "en": "They didn't come to the party.",
+      "ka": "ისინი წვეულებაზე არ მოვიდნენ."
+    },
+    {
+      "en": "Did he take the bus?",
+      "ka": "მან ავტობუსით წავიდა?"
+    }
   ],
   "common_mistakes_ka": "ყველაზე ხშირი შეცდომაა არარეგულარული ზმნების რეგულარულად გამოყენება: \"I goed\" ნაცვლად \"I went\", \"She eated\" ნაცვლად \"She ate\". ასევე, didn't-ის შემდეგ წარსული ფორმის გამოყენება: \"I didn't went\" — არასწორია!",
   "exercises": [
-    {"type": "fill-blank", "question": "I ___ (go) to school yesterday.", "answer": "went", "options": ["went", "goed", "going"]},
-    {"type": "fill-blank", "question": "She ___ (eat) pizza for lunch.", "answer": "ate", "options": ["eated", "ate", "eaten"]},
-    {"type": "fill-blank", "question": "We ___ (see) the new movie.", "answer": "saw", "options": ["seed", "saw", "seen"]},
-    {"type": "fill-blank", "question": "He ___ (make) a cake.", "answer": "made", "options": ["maked", "made", "making"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I didn't went home.", "I didn't go home.", "I didn't goes home."], "answer": "I didn't go home."},
-    {"type": "fill-blank", "question": "They ___ (come) late to class.", "answer": "came", "options": ["comed", "came", "come"]},
-    {"type": "fill-blank", "question": "She ___ (have) a dog when she was young.", "answer": "had", "options": ["haved", "had", "has"]},
-    {"type": "multiple-choice", "question": "What is the past of 'take'?", "options": ["taked", "took", "tooken"], "answer": "took"},
-    {"type": "fill-blank", "question": "I ___ (get) a new phone last week.", "answer": "got", "options": ["getted", "got", "gotten"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Did she saw the cat?", "Did she see the cat?", "Did she seen the cat?"], "answer": "Did she see the cat?"}
+    {
+      "type": "fill-blank",
+      "question": "I ___ (go) to school yesterday.",
+      "answer": "went",
+      "options": [
+        "went",
+        "goed",
+        "going"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (eat) pizza for lunch.",
+      "answer": "ate",
+      "options": [
+        "eated",
+        "ate",
+        "eaten"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ (see) the new movie.",
+      "answer": "saw",
+      "options": [
+        "seed",
+        "saw",
+        "seen"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He ___ (make) a cake.",
+      "answer": "made",
+      "options": [
+        "maked",
+        "made",
+        "making"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I didn't went home.",
+        "I didn't go home.",
+        "I didn't goes home."
+      ],
+      "answer": "I didn't go home."
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ (come) late to class.",
+      "answer": "came",
+      "options": [
+        "comed",
+        "came",
+        "come"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (have) a dog when she was young.",
+      "answer": "had",
+      "options": [
+        "haved",
+        "had",
+        "has"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the past of 'take'?",
+      "options": [
+        "taked",
+        "took",
+        "tooken"
+      ],
+      "answer": "took"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I ___ (get) a new phone last week.",
+      "answer": "got",
+      "options": [
+        "getted",
+        "got",
+        "gotten"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Did she saw the cat?",
+        "Did she see the cat?",
+        "Did she seen the cat?"
+      ],
+      "answer": "Did she see the cat?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ (buy) some bread at the bakery.",
+      "answer": "bought",
+      "options": [
+        "buyed",
+        "bought",
+        "buying"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "He thinked about it.",
+        "He thought about it.",
+        "He thinking about it."
+      ],
+      "answer": "He thought about it."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The children ___ (run) in the park.",
+      "answer": "ran",
+      "options": [
+        "runned",
+        "ran",
+        "running"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ you ___ (know) him when you were young?",
+      "answer": "Did ... know",
+      "options": [
+        "Did ... know",
+        "Did ... knew",
+        "Do ... know"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (give) me a present.",
+      "answer": "gave",
+      "options": [
+        "gived",
+        "gave",
+        "given"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the past form of 'bring'?",
+      "options": [
+        "bringed",
+        "brought",
+        "brung"
+      ],
+      "answer": "brought"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I ___ (feel) sick yesterday.",
+      "answer": "felt",
+      "options": [
+        "feeled",
+        "felt",
+        "feeling"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "They didn't came on time.",
+        "They didn't come on time.",
+        "They not came on time."
+      ],
+      "answer": "They didn't come on time."
+    },
+    {
+      "type": "fill-blank",
+      "question": "My grandfather ___ (tell) me interesting stories.",
+      "answer": "told",
+      "options": [
+        "telled",
+        "told",
+        "telling"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The cat ___ (sleep) all day.",
+      "answer": "slept",
+      "options": [
+        "sleeped",
+        "slept",
+        "sleeping"
+      ]
+    }
   ]
 }

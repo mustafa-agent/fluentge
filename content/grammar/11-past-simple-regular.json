@@ -2,27 +2,233 @@
   "id": 11,
   "slug": "past-simple-regular",
   "title_en": "Past Simple (Regular Verbs)",
-  "title_ka": "წარსული მარტივი დრო (რეგულარული ზმნები)",
+  "title_ka": "წარსული მარტივი დრო",
   "level": "A2",
-  "explanation_ka": "Past Simple (წარსული მარტივი დრო) გამოიყენება იმ მოქმედებების აღსაწერად, რომლებიც წარსულში მოხდა და უკვე დასრულდა.\n\nრეგულარული ზმნების შემთხვევაში, ზმნის ბოლოს ემატება -ed:\nwork → worked (ვიმუშავე)\nplay → played (ვითამაშე)\nlive → lived (ვცხოვრობდი)\n\nწესები:\n1. თუ ზმნა მთავრდება -e-ზე, მხოლოდ -d ემატება: live → lived\n2. თუ ზმნა მთავრდება თანხმოვანი + y, y იცვლება i-ზე + ed: study → studied\n3. თუ ზმნა მთავრდება ერთი ხმოვანი + ერთი თანხმოვანი, თანხმოვანი ორმაგდება: stop → stopped\n\nუარყოფითი: did not (didn't) + ზმნის საწყისი ფორმა\nI didn't work yesterday.\n\nკითხვითი: Did + პირი + ზმნის საწყისი ფორმა?\nDid you work yesterday?",
+  "passThreshold": 0.7,
+  "explanation_ka": "Past Simple ნიშნავს მოქმედებას რომელიც წარსულში დასრულდა.\n\n**ძირითადი წესი: ზმნა + ed**\n• work → worked (ვიმუშავე)\n• play → played (ვითამაშე)\n\n**სპეციალური წესები:**\n• თუ ზმნა e-ზე მთავრდება → მხოლოდ d: live → lived\n• თუ თანხმოვანი + y → ied: study → studied\n• მოკლე ზმნა → ბოლო ასო ორმაგი: stop → stopped\n\n**უარყოფითი: didn't + ძირითადი ზმნა**\n• I didn't work yesterday (გუშინ არ ვიმუშავე)\n• She didn't call (მან არ დარეკა)\n\n**კითხვითი: Did + პირი + ძირითადი ზმნა?**\n• Did you work? (იმუშავე?)\n• Did she call? (დარეკა?)\n\n**მთავარი წესი:**\nDid/didn't-ის შემდეგ ზმნა ძირითად ფორმაში!\n• ✅ Did you work?\n• ❌ Did you worked?",
   "examples": [
-    {"en": "I walked to school yesterday.", "ka": "გუშინ სკოლაში ფეხით წავედი."},
-    {"en": "She cooked dinner last night.", "ka": "მან გუშინ საღამოს სადილი მოამზადა."},
-    {"en": "They played football on Sunday.", "ka": "მათ კვირას ფეხბურთი ითამაშეს."},
-    {"en": "We didn't watch TV.", "ka": "ჩვენ ტელევიზორი არ ვუყურეთ."},
-    {"en": "Did you study English?", "ka": "ინგლისური ისწავლე?"}
+    {
+      "en": "I walked to school yesterday.",
+      "ka": "გუშინ სკოლაში ფეხით წავედი."
+    },
+    {
+      "en": "She cooked dinner last night.",
+      "ka": "მან გუშინ საღამოს სადილი მოამზადა."
+    },
+    {
+      "en": "They played football on Sunday.",
+      "ka": "მათ კვირას ფეხბურთი ითამაშეს."
+    },
+    {
+      "en": "We didn't watch TV.",
+      "ka": "ჩვენ ტელევიზორი არ ვუყურეთ."
+    },
+    {
+      "en": "Did you study English?",
+      "ka": "ინგლისური ისწავლე?"
+    }
   ],
   "common_mistakes_ka": "ქართველები ხშირად ავიწყდებათ, რომ უარყოფით და კითხვით წინადადებებში ზმნა საწყის ფორმაში ბრუნდება: \"Did you worked?\" — არასწორია! სწორია: \"Did you work?\" ასევე ხშირი შეცდომაა -ed-ის არასწორი წარმოთქმა: worked = /wɜːkt/, played = /pleɪd/, wanted = /ˈwɒntɪd/.",
   "exercises": [
-    {"type": "fill-blank", "question": "I ___ (walk) to work yesterday.", "answer": "walked", "options": ["walked", "walking", "walks"]},
-    {"type": "fill-blank", "question": "She ___ (study) all night.", "answer": "studied", "options": ["studyed", "studied", "studies"]},
-    {"type": "fill-blank", "question": "They ___ (play) tennis last week.", "answer": "played", "options": ["plaied", "played", "plays"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Did you watched the movie?", "Did you watch the movie?", "Did you watching the movie?"], "answer": "Did you watch the movie?"},
-    {"type": "fill-blank", "question": "We ___ (not/like) the food.", "answer": "didn't like", "options": ["didn't like", "didn't liked", "not liked"]},
-    {"type": "fill-blank", "question": "He ___ (stop) the car suddenly.", "answer": "stopped", "options": ["stoped", "stopped", "stopping"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["She didn't called me.", "She didn't call me.", "She not called me."], "answer": "She didn't call me."},
-    {"type": "fill-blank", "question": "The train ___ (arrive) on time.", "answer": "arrived", "options": ["arrived", "arriveed", "arriving"]},
-    {"type": "fill-blank", "question": "___ they ___ (enjoy) the party?", "answer": "Did ... enjoy", "options": ["Did ... enjoy", "Did ... enjoyed", "Does ... enjoy"]},
-    {"type": "multiple-choice", "question": "Choose the past form of 'carry':", "options": ["carryed", "carried", "carred"], "answer": "carried"}
+    {
+      "type": "fill-blank",
+      "question": "I ___ (walk) to work yesterday.",
+      "answer": "walked",
+      "options": [
+        "walked",
+        "walking",
+        "walks"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (study) all night.",
+      "answer": "studied",
+      "options": [
+        "studyed",
+        "studied",
+        "studies"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ (play) tennis last week.",
+      "answer": "played",
+      "options": [
+        "plaied",
+        "played",
+        "plays"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Did you watched the movie?",
+        "Did you watch the movie?",
+        "Did you watching the movie?"
+      ],
+      "answer": "Did you watch the movie?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ (not/like) the food.",
+      "answer": "didn't like",
+      "options": [
+        "didn't like",
+        "didn't liked",
+        "not liked"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He ___ (stop) the car suddenly.",
+      "answer": "stopped",
+      "options": [
+        "stoped",
+        "stopped",
+        "stopping"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She didn't called me.",
+        "She didn't call me.",
+        "She not called me."
+      ],
+      "answer": "She didn't call me."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The train ___ (arrive) on time.",
+      "answer": "arrived",
+      "options": [
+        "arrived",
+        "arriveed",
+        "arriving"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ they ___ (enjoy) the party?",
+      "answer": "Did ... enjoy",
+      "options": [
+        "Did ... enjoy",
+        "Did ... enjoyed",
+        "Does ... enjoy"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Choose the past form of 'carry':",
+      "options": [
+        "carryed",
+        "carried",
+        "carred"
+      ],
+      "answer": "carried"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Yesterday I ___ (finish) my homework early.",
+      "answer": "finished",
+      "options": [
+        "finished",
+        "finishe",
+        "finishing"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "He didn't worked yesterday.",
+        "He didn't work yesterday.",
+        "He not worked yesterday."
+      ],
+      "answer": "He didn't work yesterday."
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ (dance) all night at the party.",
+      "answer": "danced",
+      "options": [
+        "danceed",
+        "danced",
+        "dancing"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ you ___ (clean) your room this morning?",
+      "answer": "Did ... clean",
+      "options": [
+        "Did ... clean",
+        "Did ... cleaned",
+        "Do ... clean"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Last week we ___ (visit) our grandparents.",
+      "answer": "visited",
+      "options": [
+        "visited",
+        "visitied",
+        "visiting"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is the past form of 'plan'?",
+      "options": [
+        "planed",
+        "planned",
+        "planning"
+      ],
+      "answer": "planned"
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (cry) when she watched the sad movie.",
+      "answer": "cried",
+      "options": [
+        "cryed",
+        "cried",
+        "crying"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "Did they enjoyed the concert?",
+        "Did they enjoy the concert?",
+        "Do they enjoyed the concert?"
+      ],
+      "answer": "Did they enjoy the concert?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I ___ (not/remember) his name.",
+      "answer": "didn't remember",
+      "options": [
+        "didn't remember",
+        "didn't remembered",
+        "not remembered"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The dog ___ (jump) over the fence.",
+      "answer": "jumped",
+      "options": [
+        "jumped",
+        "jumpped",
+        "jumping"
+      ]
+    }
   ]
 }

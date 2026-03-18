@@ -6,18 +6,141 @@
   "level": "A1",
   "explanation_ka": "ობიექტის ნაცვალსახელები გამოიყენება ზმნის შემდეგ. ისინი აჩვენებენ ვის ან რას ეხება მოქმედება.\n\nI → me (მე)\nyou → you (შენ)\nhe → him (მას, კაცს)\nshe → her (მას, ქალს)\nit → it (მას, საგანს)\nwe → us (ჩვენ)\nthey → them (მათ)\n\nმაგალითად:\nI love her. — მე მას ვუყვარვარ.\nCall me! — დამირეკე!\nShe knows them. — ის მათ იცნობს.",
   "examples": [
-    {"en": "Call me tomorrow.", "ka": "ხვალ დამირეკე."},
-    {"en": "I like him.", "ka": "ის მომწონს."},
-    {"en": "She told us a story.", "ka": "მან ჩვენ ამბავი გვიყვა."},
-    {"en": "Give it to them.", "ka": "მიეცი ეს მათ."},
-    {"en": "Can you help her?", "ka": "შეგიძლია მას დაეხმარო?"}
+    {
+      "en": "Call me tomorrow.",
+      "ka": "ხვალ დამირეკე."
+    },
+    {
+      "en": "I like him.",
+      "ka": "ის მომწონს."
+    },
+    {
+      "en": "She told us a story.",
+      "ka": "მან ჩვენ ამბავი გვიყვა."
+    },
+    {
+      "en": "Give it to them.",
+      "ka": "მიეცი ეს მათ."
+    },
+    {
+      "en": "Can you help her?",
+      "ka": "შეგიძლია მას დაეხმარო?"
+    }
   ],
   "common_mistakes_ka": "ქართველები ხშირად ურევენ subject და object pronouns-ს. მაგალითად, ამბობენ \"I like she\" ნაცვლად \"I like her\"-ისა. დაიმახსოვრეთ: ზმნის შემდეგ ყოველთვის object pronoun გამოიყენეთ.",
   "exercises": [
-    {"type": "fill-blank", "question": "I love ___. (she)", "answer": "her", "options": ["she", "her", "hers"]},
-    {"type": "fill-blank", "question": "Call ___ tomorrow. (I)", "answer": "me", "options": ["I", "me", "my"]},
-    {"type": "fill-blank", "question": "She knows ___. (they)", "answer": "them", "options": ["they", "them", "their"]},
-    {"type": "fill-blank", "question": "Tell ___ the truth. (he)", "answer": "him", "options": ["he", "him", "his"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["Give it to I.", "Give it to me.", "Give it to my."], "answer": "Give it to me."}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "I love ___. (she)",
+      "options": [
+        "she",
+        "her",
+        "hers"
+      ],
+      "answer": "her"
+    },
+    {
+      "type": "fill-in-blank",
+      "question": "Call ___ tomorrow. (I)",
+      "answer": "me"
+    },
+    {
+      "type": "gap-fill",
+      "question": "She knows ___. (they)",
+      "answer": "them"
+    },
+    {
+      "type": "transformation",
+      "question": "Replace with object pronoun: Tell John the truth.",
+      "answer": "Tell him the truth."
+    },
+    {
+      "type": "error-correction",
+      "question": "Fix the error: Give it to I.",
+      "answer": "I → me"
+    },
+    {
+      "type": "sentence-completion",
+      "question": "Listen to ___! (we)",
+      "answer": "us"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Can you see ___? (the cat)",
+      "options": [
+        "he",
+        "she",
+        "it"
+      ],
+      "answer": "it"
+    },
+    {
+      "type": "matching",
+      "question": "Match: 'I' becomes which object pronoun?",
+      "options": ["me", "my", "mine"],
+      "answer": "me"
+    },
+    {
+      "type": "transformation",
+      "question": "Change: Help the students. (Use object pronoun)",
+      "answer": "Help them."
+    },
+    {
+      "type": "gap-fill",
+      "question": "Look at ___! (she)",
+      "answer": "her"
+    },
+    {
+      "type": "fill-in-blank",
+      "question": "Show ___ the way. (we)",
+      "answer": "us"
+    },
+    {
+      "type": "error-correction",
+      "question": "Fix the error: I like they very much.",
+      "answer": "they → them"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Give ___ the book. (I)",
+      "options": ["me", "I", "my", "mine"],
+      "answer": "me"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She knows ___ very well. (he)",
+      "options": ["him", "he", "his", "himself"],
+      "answer": "him"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Can you see ___? (we)",
+      "options": ["us", "we", "our", "ours"],
+      "answer": "us"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The dog follows ___ everywhere. (she)",
+      "answer": "her",
+      "options": ["her", "she", "hers", "herself"]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Choose the correct sentence:",
+      "options": [
+        "Between you and I, this is a secret.",
+        "Between you and me, this is a secret.",
+        "Between you and my, this is a secret.",
+        "Between you and mine, this is a secret."
+      ],
+      "answer": "Between you and me, this is a secret."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Please take ___ with you. (they)",
+      "answer": "them",
+      "options": ["them", "they", "their", "theirs"]
+    }
+  ],
+  "passThreshold": 0.7
 }

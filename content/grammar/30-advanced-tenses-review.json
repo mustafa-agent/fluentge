@@ -4,25 +4,163 @@
   "title_en": "Advanced Tenses Review",
   "title_ka": "დროების მიმოხილვა (Advanced Review)",
   "level": "B2",
-  "explanation_ka": "ეს გაკვეთილი ინგლისური ენის ყველა ძირითად დროს აერთიანებს. მოდით გავიმეოროთ და შევადაროთ:\n\n📌 აწმყო დროები:\n• Present Simple: I work every day. — ყოველდღიური ფაქტი/ჩვევა\n• Present Continuous: I am working now. — ახლა მიმდინარე\n• Present Perfect: I have worked here for 5 years. — წარსულიდან აწმყომდე\n• Present Perfect Continuous: I have been working all day. — ხანგრძლივი, აწმყომდე გაგრძელებული\n\n📌 წარსული დროები:\n• Past Simple: I worked yesterday. — დასრულებული წარსული\n• Past Continuous: I was working when he called. — მიმდინარე წარსულში\n• Past Perfect: I had worked before she arrived. — წარსულის წარსული\n• Past Perfect Continuous: I had been working for hours when... — ხანგრძლივი, წარსულის წინ\n\n📌 მომავალი დროები:\n• Will: I will work tomorrow. — გადაწყვეტილება/პროგნოზი\n• Going to: I am going to work abroad. — გეგმა\n• Future Continuous: I will be working at 8 PM. — მიმდინარე მომავალში\n• Future Perfect: I will have finished by Friday. — მომავლის კონკრეტულ მომენტამდე დასრულებული\n\nგასაღები: ყურადღება მიაქციეთ კონტექსტს — დროის მარკერები (yesterday, now, already, by then...) გეხმარებათ სწორი დროის არჩევაში.",
+  "passThreshold": 0.7,
+  "explanation_ka": "## დროების მიმოხილვა\n\n**აწმყო დროები**\n• Simple: I work (ჩვევა)\n• Continuous: I am working (ახლა)\n• Perfect: I have worked (წარსულიდან ახლამდე)\n\n**წარსული დროები**\n• Simple: I worked (დასრულებული)\n• Continuous: I was working (მიმდინარე წარსული)\n• Perfect: I had worked (წარსულის წინ)\n\n**მომავალი დროები**\n• Will: I will work (გადაწყვეტილება)\n• Going to: I'm going to work (გეგმა)\n\n## რჩევა\nდროის მარკერები გიჩვენებენ რომელი დრო აირჩიოთ:\n• now = Continuous\n• yesterday = Past Simple\n• already = Present Perfect",
   "examples": [
-    {"en": "I have been living in Tbilisi since 2010.", "ka": "2010 წლიდან ვცხოვრობ თბილისში."},
-    {"en": "She was cooking when the phone rang.", "ka": "ის საჭმელს ამზადებდა, როცა ტელეფონმა დარეკა."},
-    {"en": "By next year, I will have graduated from university.", "ka": "მომავალ წლისთვის უნივერსიტეტს დავამთავრებ."},
-    {"en": "He had already left when we arrived.", "ka": "ის უკვე წასული იყო, როცა ჩვენ მივედით."},
-    {"en": "They are going to move to a new apartment.", "ka": "ისინი ახალ ბინაში გადასვლას აპირებენ."}
+    {
+      "en": "I have been living in Tbilisi since 2010.",
+      "ka": "2010 წლიდან ვცხოვრობ თბილისში."
+    },
+    {
+      "en": "She was cooking when the phone rang.",
+      "ka": "ის საჭმელს ამზადებდა, როცა ტელეფონმა დარეკა."
+    },
+    {
+      "en": "By next year, I will have graduated from university.",
+      "ka": "მომავალ წლისთვის უნივერსიტეტს დავამთავრებ."
+    },
+    {
+      "en": "He had already left when we arrived.",
+      "ka": "ის უკვე წასული იყო, როცა ჩვენ მივედით."
+    },
+    {
+      "en": "They are going to move to a new apartment.",
+      "ka": "ისინი ახალ ბინაში გადასვლას აპირებენ."
+    }
   ],
   "common_mistakes_ka": "ქართველებისთვის ყველაზე რთული დროებია Present Perfect და Past Perfect, რადგან ქართულში მსგავსი განსხვავება არ არსებობს.\n\n\"I have been to Paris\" vs \"I went to Paris\" — ქართულად ორივე \"პარიზში ვიყავი\"-ა, მაგრამ ინგლისურში პირველი გამოცდილებაზე მიუთითებს, მეორე — კონკრეტულ მოვლენაზე.\n\nასევე ხშირი შეცდომაა Present Continuous-ის გამოყენება ფაქტებისთვის: \"I am living in Tbilisi\" (დროებით) vs \"I live in Tbilisi\" (მუდმივი).\n\nFuture-ში \"will\" და \"going to\"-ს აღრევაც ხშირია: will = სპონტანური გადაწყვეტილება, going to = წინასწარ გეგმა.",
   "exercises": [
-    {"type": "fill-blank", "question": "I ___ (live) in this city since 2015.", "answer": "have lived", "options": ["have lived", "lived", "am living"]},
-    {"type": "fill-blank", "question": "She ___ (cook) when I arrived.", "answer": "was cooking", "options": ["was cooking", "cooked", "has cooked"]},
-    {"type": "fill-blank", "question": "By tomorrow, they ___ (finish) the project.", "answer": "will have finished", "options": ["will have finished", "will finish", "have finished"]},
-    {"type": "multiple-choice", "question": "Which tense: 'I had already eaten when she called'?", "options": ["Past Simple", "Past Perfect", "Present Perfect"], "answer": "Past Perfect"},
-    {"type": "fill-blank", "question": "He ___ (study) English for 3 hours. He's tired.", "answer": "has been studying", "options": ["has been studying", "studied", "is studying"]},
-    {"type": "fill-blank", "question": "Look at the clouds! It ___ (rain).", "answer": "is going to rain", "options": ["is going to rain", "will rain", "rains"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["I have seen this movie yesterday.", "I saw this movie yesterday.", "I see this movie yesterday."], "answer": "I saw this movie yesterday."},
-    {"type": "fill-blank", "question": "At 8 PM tonight, I ___ (watch) TV.", "answer": "will be watching", "options": ["will be watching", "will watch", "watch"]},
-    {"type": "fill-blank", "question": "She ___ (never/visit) Japan.", "answer": "has never visited", "options": ["has never visited", "never visited", "never visits"]},
-    {"type": "multiple-choice", "question": "'I am going to travel' expresses:", "options": ["A spontaneous decision", "A pre-made plan", "A past action"], "answer": "A pre-made plan"}
+    {
+      "type": "fill-blank",
+      "question": "I ___ (live) in this city since 2015.",
+      "answer": "have lived",
+      "options": [
+        "have lived",
+        "lived",
+        "am living"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (cook) when I arrived.",
+      "answer": "was cooking",
+      "options": [
+        "was cooking",
+        "cooked",
+        "has cooked"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "By tomorrow, they ___ (finish) the project.",
+      "answer": "will have finished",
+      "options": [
+        "will have finished",
+        "will finish",
+        "have finished"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which tense: 'I had already eaten when she called'?",
+      "options": [
+        "Past Simple",
+        "Past Perfect",
+        "Present Perfect"
+      ],
+      "answer": "Past Perfect"
+    },
+    {
+      "type": "fill-blank",
+      "question": "He ___ (study) English for 3 hours. He's tired.",
+      "answer": "has been studying",
+      "options": [
+        "has been studying",
+        "studied",
+        "is studying"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Look at the clouds! It ___ (rain).",
+      "answer": "is going to rain",
+      "options": [
+        "is going to rain",
+        "will rain",
+        "rains"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I have seen this movie yesterday.",
+        "I saw this movie yesterday.",
+        "I see this movie yesterday."
+      ],
+      "answer": "I saw this movie yesterday."
+    },
+    {
+      "type": "fill-blank",
+      "question": "At 8 PM tonight, I ___ (watch) TV.",
+      "answer": "will be watching",
+      "options": [
+        "will be watching",
+        "will watch",
+        "watch"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (never/visit) Japan.",
+      "answer": "has never visited",
+      "options": [
+        "has never visited",
+        "never visited",
+        "never visits"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'I am going to travel' expresses:",
+      "options": [
+        "A spontaneous decision",
+        "A pre-made plan",
+        "A past action"
+      ],
+      "answer": "A pre-made plan"
+    },
+    {
+      "type": "translate",
+      "question": "მე ვმუშაობ ყოველდღე.",
+      "answer": "I work every day."
+    },
+    {
+      "type": "true-false",
+      "question": "Present Simple is used for habits.",
+      "answer": true
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ to school every day.",
+      "answer": "goes",
+      "options": [
+        "go",
+        "goes",
+        "going"
+      ]
+    },
+    {
+      "question": "By next year, I ___ living here for ten years.",
+      "type": "multiple-choice",
+      "options": ["will have been", "will be", "have been", "am"],
+      "correct": 0
+    },
+    {
+      "question": "She said she ___ to Paris the following week.",
+      "type": "multiple-choice",
+      "options": ["would go", "will go", "goes", "went"],
+      "correct": 0
+    }
   ]
 }

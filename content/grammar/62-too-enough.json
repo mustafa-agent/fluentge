@@ -6,18 +6,211 @@
   "level": "B1",
   "explanation_ka": "\"Too\" და \"enough\" გამოიყენება რაოდენობის ან ხარისხის გამოსახატად.\n\nToo = ზედმეტად (ცუდი მნიშვნელობით)\nToo + adjective: Too hot — ზედმეტად ცხელი\nToo + much/many: Too much water — ზედმეტად ბევრი წყალი\n\nEnough = საკმარისად\nAdjective + enough: Old enough — საკმარისად მოხუცი\nEnough + noun: Enough money — საკმარისი ფული\n\nმნიშვნელოვანი: too + adjective, მაგრამ adjective + enough!\nToo young to drive. — ძალიან პატარაა მართვისთვის.\nOld enough to vote. — საკმარისად დიდია ხმის მისაცემად.",
   "examples": [
-    {"en": "This coffee is too hot.", "ka": "ეს ყავა ზედმეტად ცხელია."},
-    {"en": "She is old enough to drive.", "ka": "ის საკმარისად დიდია მანქანის სამართავად."},
-    {"en": "There are too many people.", "ka": "ზედმეტად ბევრი ხალხია."},
-    {"en": "We don't have enough time.", "ka": "ჩვენ საკმარისი დრო არ გვაქვს."},
-    {"en": "It's too expensive for me.", "ka": "ეს ჩემთვის ძალიან ძვირია."}
+    {
+      "en": "This coffee is too hot.",
+      "ka": "ეს ყავა ზედმეტად ცხელია."
+    },
+    {
+      "en": "She is old enough to drive.",
+      "ka": "ის საკმარისად დიდია მანქანის სამართავად."
+    },
+    {
+      "en": "There are too many people.",
+      "ka": "ზედმეტად ბევრი ხალხია."
+    },
+    {
+      "en": "We don't have enough time.",
+      "ka": "ჩვენ საკმარისი დრო არ გვაქვს."
+    },
+    {
+      "en": "It's too expensive for me.",
+      "ka": "ეს ჩემთვის ძალიან ძვირია."
+    }
   ],
   "common_mistakes_ka": "ხშირი შეცდომაა word order: \"enough old\" ნაცვლად \"old enough\". დაიმახსოვრეთ: too იდგება adjective-მდე, enough — adjective-ის შემდეგ. ასევე too ≠ very. \"Too\" ყოველთვის უარყოფითი კონტექსტით — \"too hot\" ნიშნავს ვერ დალევ.",
   "exercises": [
-    {"type": "fill-blank", "question": "This box is ___ heavy to carry.", "answer": "too", "options": ["too", "enough", "very"]},
-    {"type": "fill-blank", "question": "She is smart ___ to understand.", "answer": "enough", "options": ["too", "enough", "much"]},
-    {"type": "fill-blank", "question": "We have ___ many problems.", "answer": "too", "options": ["too", "enough", "very"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He is enough tall.", "He is tall enough.", "He is too tall enough."], "answer": "He is tall enough."},
-    {"type": "fill-blank", "question": "There isn't ___ space.", "answer": "enough", "options": ["too", "enough", "many"]}
-  ]
+    {
+      "type": "multiple-choice",
+      "question": "This box is ___ heavy to carry.",
+      "answer": "too",
+      "options": [
+        "too",
+        "enough",
+        "very"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She is smart ___ to understand.",
+      "answer": "enough",
+      "options": [
+        "too",
+        "enough",
+        "much"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "We have ___ many problems.",
+      "answer": "too",
+      "options": [
+        "too",
+        "enough",
+        "very"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "He is enough tall.",
+        "He is tall enough.",
+        "He is too tall enough."
+      ],
+      "answer": "He is tall enough."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "There isn't ___ space.",
+      "answer": "enough",
+      "options": [
+        "too",
+        "enough",
+        "many"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The music is ___ loud. I can't study.",
+      "options": [
+        "too",
+        "enough",
+        "very",
+        "much"
+      ],
+      "answer": "too"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Is she old ___ to watch this movie?",
+      "options": [
+        "enough",
+        "too",
+        "very",
+        "much"
+      ],
+      "answer": "enough"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I don't have _____ money to buy a car.",
+      "options": [
+        "enough",
+        "too",
+        "very",
+        "much"
+      ],
+      "answer": "enough"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "This shirt is ___ small for me.",
+      "options": [
+        "too",
+        "enough",
+        "very",
+        "much"
+      ],
+      "answer": "too"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Are you strong ___ to lift this table?",
+      "options": [
+        "enough",
+        "too",
+        "very",
+        "much"
+      ],
+      "answer": "enough"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The soup is _____ hot to eat right now.",
+      "options": [
+        "too",
+        "enough",
+        "very",
+        "much"
+      ],
+      "answer": "too"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "We don't have ___ chairs for everyone.",
+      "options": [
+        "enough",
+        "too",
+        "very",
+        "many"
+      ],
+      "answer": "enough"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "He drives ___ fast. It's dangerous.",
+      "options": [
+        "too",
+        "enough",
+        "very",
+        "much"
+      ],
+      "answer": "too"
+    },
+    {
+      "type": "fill-blank",
+      "question": "This room is big _____ for 50 people.",
+      "options": [
+        "enough",
+        "too",
+        "very",
+        "much"
+      ],
+      "answer": "enough"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "This is too much expensive.",
+        "This is too expensive.",
+        "This is enough expensive.",
+        "This is expensive too."
+      ],
+      "answer": "This is too expensive."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "She is enough smart.",
+        "She is too smart enough.",
+        "She is smart enough.",
+        "She is smart too."
+      ],
+      "answer": "She is smart enough."
+    },
+    {
+      "type": "fill-blank",
+      "question": "There are _____ many cars on this street.",
+      "options": [
+        "too",
+        "enough",
+        "very",
+        "much"
+      ],
+      "answer": "too"
+    }
+  ],
+  "passThreshold": 0.7
 }

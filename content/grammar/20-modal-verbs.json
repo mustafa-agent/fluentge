@@ -4,24 +4,231 @@
   "title_en": "Modal Verbs (must/should)",
   "title_ka": "მოდალური ზმნები (must / should)",
   "level": "A2",
-  "explanation_ka": "მოდალური ზმნები must და should გამოიყენება ვალდებულების, რჩევის და აუცილებლობის გამოსახატავად.\n\nMust — \"უნდა\" (ძლიერი ვალდებულება, აუცილებლობა)\nYou must wear a seatbelt. (სავალდებულოა უსაფრთხოების ღვედის შეკვრა)\nI must study for the exam. (გამოცდისთვის უნდა ვისწავლო)\n\nMustn't — \"არ უნდა\" (აკრძალვა)\nYou mustn't smoke here. (აქ მოწევა აკრძალულია)\n\nShould — \"უნდა\" (რჩევა, რეკომენდაცია — უფრო რბილი)\nYou should drink more water. (მეტი წყალი უნდა დალიო)\nShe should see a doctor. (ექიმთან უნდა წავიდეს)\n\nShouldn't — \"არ უნდა\" (რჩევა არ გააკეთო)\nYou shouldn't eat so much sugar. (ამდენი შაქარი არ უნდა ჭამო)\n\nსტრუქტურა: პირი + must/should + ზმნის საწყისი ფორმა\nარ იცვლება პირის მიხედვით! He must ✅ (არა He musts ❌)",
+  "passThreshold": 0.7,
+  "explanation_ka": "## მოდალური ზმნები: Must / Should\n\n**Must** = სავალდებულო!\n• You must study = უკვე უნდა ისწავლო\n• You mustn't smoke = მოწევა აკრძალულია\n\n**Should** = კარგი იქნება\n• You should exercise = კარგი იქნება ვარჯიშობდე\n• You shouldn't eat sugar = შაქარი არ ჭამო\n\n## სტრუქტურა\nPerson + must/should + verb\n\n❌ He musts go\n✅ He must go\n\n❌ I must to study\n✅ I must study",
   "examples": [
-    {"en": "You must be on time.", "ka": "დროულად უნდა მოხვიდე."},
-    {"en": "You mustn't use your phone in class.", "ka": "კლასში ტელეფონის გამოყენება აკრძალულია."},
-    {"en": "You should eat more vegetables.", "ka": "მეტი ბოსტნეული უნდა ჭამო."},
-    {"en": "She shouldn't stay up late.", "ka": "მას არ უნდა იფხიზლოს გვიან."},
-    {"en": "We must finish this project today.", "ka": "დღეს ეს პროექტი უნდა დავამთავროთ."}
+    {
+      "en": "You must be on time.",
+      "ka": "დროულად უნდა მოხვიდე."
+    },
+    {
+      "en": "You mustn't use your phone in class.",
+      "ka": "კლასში ტელეფონის გამოყენება აკრძალულია."
+    },
+    {
+      "en": "You should eat more vegetables.",
+      "ka": "მეტი ბოსტნეული უნდა ჭამო."
+    },
+    {
+      "en": "She shouldn't stay up late.",
+      "ka": "მას არ უნდა იფხიზლოს გვიან."
+    },
+    {
+      "en": "We must finish this project today.",
+      "ka": "დღეს ეს პროექტი უნდა დავამთავროთ."
+    }
   ],
   "common_mistakes_ka": "ქართველები ხშირად must/should-ის შემდეგ to-ს ამატებენ: \"I must to go\" ❌ → \"I must go\" ✅. ასევე, მესამე პირში -s არ ემატება: \"He musts\" ❌ → \"He must\" ✅. must და should-ის სხვაობა: must = ვალდებულება/აკრძალვა, should = რჩევა. \"You must eat vegetables\" (ვალდებული ხარ) vs \"You should eat vegetables\" (კარგი იქნება).",
   "exercises": [
-    {"type": "fill-blank", "question": "You ___ wear a helmet when riding a bike.", "answer": "must", "options": ["must", "should", "can"]},
-    {"type": "fill-blank", "question": "You ___ eat more fruit. It's good for you.", "answer": "should", "options": ["must", "should", "mustn't"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["He must to study.", "He must study.", "He musts study."], "answer": "He must study."},
-    {"type": "fill-blank", "question": "You ___ smoke in the hospital.", "answer": "mustn't", "options": ["mustn't", "shouldn't", "don't must"]},
-    {"type": "multiple-choice", "question": "Which is advice (not obligation)?", "options": ["You must stop.", "You should try yoga.", "You mustn't run."], "answer": "You should try yoga."},
-    {"type": "fill-blank", "question": "She ___ see a doctor. She looks sick.", "answer": "should", "options": ["should", "must", "mustn't"]},
-    {"type": "fill-blank", "question": "Students ___ cheat on exams.", "answer": "mustn't", "options": ["mustn't", "shouldn't", "don't"]},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["You shouldn't to worry.", "You shouldn't worry.", "You should not worrying."], "answer": "You shouldn't worry."},
-    {"type": "fill-blank", "question": "We ___ be more careful next time.", "answer": "should", "options": ["should", "must", "can"]}
+    {
+      "type": "fill-blank",
+      "question": "You ___ wear a helmet when riding a bike.",
+      "answer": "must",
+      "options": [
+        "must",
+        "should",
+        "can"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "You ___ eat more fruit. It's good for you.",
+      "answer": "should",
+      "options": [
+        "must",
+        "should",
+        "mustn't"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "He must to study.",
+        "He must study.",
+        "He musts study."
+      ],
+      "answer": "He must study."
+    },
+    {
+      "type": "fill-blank",
+      "question": "You ___ smoke in the hospital.",
+      "answer": "mustn't",
+      "options": [
+        "mustn't",
+        "shouldn't",
+        "don't must"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is advice (not obligation)?",
+      "options": [
+        "You must stop.",
+        "You should try yoga.",
+        "You mustn't run."
+      ],
+      "answer": "You should try yoga."
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ see a doctor. She looks sick.",
+      "answer": "should",
+      "options": [
+        "should",
+        "must",
+        "mustn't"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Students ___ cheat on exams.",
+      "answer": "mustn't",
+      "options": [
+        "mustn't",
+        "shouldn't",
+        "don't"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "You shouldn't to worry.",
+        "You shouldn't worry.",
+        "You should not worrying."
+      ],
+      "answer": "You shouldn't worry."
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ be more careful next time.",
+      "answer": "should",
+      "options": [
+        "should",
+        "must",
+        "can"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "You must to finish this.",
+        "You must finish this.",
+        "You must finishing this."
+      ],
+      "answer": "You must finish this."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Children ___ play in the street.",
+      "answer": "mustn't",
+      "options": [
+        "mustn't",
+        "shouldn't",
+        "don't must"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "You ___ drink more water. It's healthy.",
+      "answer": "should",
+      "options": [
+        "should",
+        "must",
+        "can"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is strongest obligation?",
+      "options": [
+        "You should come.",
+        "You must come.",
+        "You can come."
+      ],
+      "answer": "You must come."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Drivers ___ stop at red lights.",
+      "answer": "must",
+      "options": [
+        "must",
+        "should",
+        "might"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "She shouldn't to eat so much.",
+        "She shouldn't eat so much.",
+        "She should not eating so much."
+      ],
+      "answer": "She shouldn't eat so much."
+    },
+    {
+      "type": "fill-blank",
+      "question": "You ___ be late for the meeting.",
+      "answer": "shouldn't",
+      "options": [
+        "shouldn't",
+        "mustn't",
+        "don't should"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is prohibition (not allowed)?",
+      "options": [
+        "You should stop smoking.",
+        "You mustn't smoke here.",
+        "You shouldn't smoke."
+      ],
+      "answer": "You mustn't smoke here."
+    },
+    {
+      "type": "fill-blank",
+      "question": "I ___ go to the dentist. My tooth hurts.",
+      "answer": "must",
+      "options": [
+        "must",
+        "should",
+        "might"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "He musts work harder.",
+        "He must work harder.",
+        "He must to work harder."
+      ],
+      "answer": "He must work harder."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Students ___ respect their teachers.",
+      "answer": "should",
+      "options": [
+        "should",
+        "mustn't",
+        "can't"
+      ]
+    }
   ]
 }

@@ -2,30 +2,135 @@
   "id": 40,
   "slug": "future-perfect-continuous",
   "title_en": "Future Perfect & Future Continuous",
-  "title_ka": "მომავალი სრული და მომავალი განგრძობითი დრო",
+  "title_ka": "მომავლის რთული დროები",
   "level": "B2",
-  "explanation_ka": "**Future Continuous (მომავალი განგრძობითი)**\nწარმოება: will be + V-ing\nგამოიყენება მომავალში კონკრეტულ მომენტში მიმდინარე მოქმედების აღსაწერად.\nმაგალითი: At 8 PM tomorrow, I will be watching a movie. (ხვალ 8 საათზე ფილმს ვუყურებ.)\n\nასევე გამოიყენება თავაზიანი კითხვებისთვის: Will you be using the car tonight?\n\n**Future Perfect (მომავალი სრული)**\nწარმოება: will have + Past Participle (V3)\nგამოიყენება მომავალში გარკვეულ მომენტამდე დასრულებული მოქმედების აღსაწერად.\nმაგალითი: By next year, I will have graduated. (მომავალ წლისთვის დავამთავრებ.)\n\n**Future Perfect Continuous (მომავალი სრული განგრძობითი)**\nწარმოება: will have been + V-ing\nგამოიყენება მომავალში გარკვეულ მომენტამდე მიმდინარე მოქმედების ხანგრძლივობის ხაზგასასმელად.\nმაგალითი: By June, I will have been working here for 5 years.\n\n| დრო | წარმოება | გამოყენება | მაგალითი |\n|------|---------|-----------|----------|\n| Future Continuous | will be + V-ing | მომავალში მიმდინარე | I will be sleeping at midnight |\n| Future Perfect | will have + V3 | მომავლამდე დასრულებული | I will have finished by 6 |\n| Future Perfect Continuous | will have been + V-ing | მომავლამდე ხანგრძლივი | I will have been waiting for 2 hours |",
+  "passThreshold": 0.7,
+  "explanation_ka": "**Future Continuous:** will be + V-ing\n• მომავალში კონკრეტულ დროს მიმდინარე მოქმედება\n• At 8 PM tomorrow, I will be watching TV.\n(ხვალ 8 საათზე ტელევიზორს ვუყურებ)\n\n**Future Perfect:** will have + V3\n• მომავალში გარკვეულ დრომდე დასრულებული მოქმედება\n• By 2025, I will have graduated.\n(2025 წლისთვის დავამთავრებ)\n\n**Future Perfect Continuous:** will have been + V-ing\n• მომავლისთვის ხანგრძლივი მოქმედების ხანგრძლივობა\n• By June, I will have been working here for 5 years.\n(ივნისისთვის 5 წელი იქნება, რაც აქ ვმუშაობ)",
   "examples": [
-    {"en": "This time tomorrow, I will be flying to Paris.", "ka": "ხვალ ამ დროს პარიზისკენ ვიფრენ."},
-    {"en": "By 2030, they will have built the new airport.", "ka": "2030 წლისთვის ახალ აეროპორტს ააშენებენ."},
-    {"en": "She will be studying when you arrive.", "ka": "როცა მიხვალ, ის სწავლობს (ისწავლის)."},
-    {"en": "By the time you get here, I will have cooked dinner.", "ka": "სანამ აქ მოხვალ, სადილს მოვამზადებ."},
-    {"en": "Next month, I will have been living here for 10 years.", "ka": "მომავალ თვეში 10 წელი იქნება, რაც აქ ვცხოვრობ."},
-    {"en": "Will you be using the computer this evening?", "ka": "კომპიუტერს ხომ არ გამოიყენებ დღეს საღამოს?"},
-    {"en": "By Friday, she will have read the entire book.", "ka": "პარასკევისთვის მთელ წიგნს წაიკითხავს."},
-    {"en": "At this rate, we will have been waiting for three hours.", "ka": "ამ ტემპით, სამი საათი ვიქნებით ლოდინში."}
+    {
+      "en": "This time tomorrow, I will be flying to Paris.",
+      "ka": "ხვალ ამ დროს პარიზისკენ ვიფრენ."
+    },
+    {
+      "en": "By 2030, they will have built the new airport.",
+      "ka": "2030 წლისთვის ახალ აეროპორტს ააშენებენ."
+    },
+    {
+      "en": "She will be studying when you arrive.",
+      "ka": "როცა მიხვალ, ის სწავლობს (ისწავლის)."
+    },
+    {
+      "en": "By the time you get here, I will have cooked dinner.",
+      "ka": "სანამ აქ მოხვალ, სადილს მოვამზადებ."
+    },
+    {
+      "en": "Next month, I will have been living here for 10 years.",
+      "ka": "მომავალ თვეში 10 წელი იქნება, რაც აქ ვცხოვრობ."
+    },
+    {
+      "en": "Will you be using the computer this evening?",
+      "ka": "კომპიუტერს ხომ არ გამოიყენებ დღეს საღამოს?"
+    },
+    {
+      "en": "By Friday, she will have read the entire book.",
+      "ka": "პარასკევისთვის მთელ წიგნს წაიკითხავს."
+    },
+    {
+      "en": "At this rate, we will have been waiting for three hours.",
+      "ka": "ამ ტემპით, სამი საათი ვიქნებით ლოდინში."
+    }
   ],
-  "common_mistakes_ka": "ხშირი შეცდომები:\n1) Future Simple-ის გამოყენება Future Continuous-ის ნაცვლად:\n❌ At 9 PM I will watch TV. (თუ კონკრეტულ მომენტზეა საუბარი)\n✅ At 9 PM I will be watching TV.\n\n2) by და until-ის აღრევა — 'by' ნიშნავს 'მანამდე/იმ მომენტისთვის', 'until' ნიშნავს 'სანამ':\n✅ By Friday, I will have finished. (პარასკევისთვის დავამთავრებ)\n✅ I will be working until Friday. (პარასკევამდე ვიმუშავებ)\n\n3) Future Perfect-ში have-ს გამოტოვება:\n❌ I will finished by tomorrow.\n✅ I will have finished by tomorrow.",
+  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ At 9 PM I will watch TV.\n✅ At 9 PM I will be watching TV.\n(კონკრეტული მომენტი = Continuous)\n\n❌ I will finished by tomorrow.\n✅ I will have finished by tomorrow.\n(Future Perfect = will have + V3)\n\n❌ Until Friday, I will have finished.\n✅ By Friday, I will have finished.\n(\"by\" = მანამდე, \"until\" = სანამ)\n\n**დაიმახსოვრე:** \"by\" + მომენტი = Perfect, \"at\" + მომენტი = Continuous",
   "exercises": [
-    {"type": "fill-blank", "question": "This time next week, I ___ (lie) on the beach.", "options": ["will be lying", "will have lied", "will lie"], "answer": "will be lying"},
-    {"type": "fill-blank", "question": "By December, she ___ (save) enough money.", "options": ["will have saved", "will be saving", "will save"], "answer": "will have saved"},
-    {"type": "fill-blank", "question": "At 3 PM tomorrow, they ___ (take) the exam.", "options": ["will be taking", "will have taken", "will take"], "answer": "will be taking"},
-    {"type": "fill-blank", "question": "By the end of this year, I ___ (work) here for 5 years.", "options": ["will have been working", "will be working", "will have worked"], "answer": "will have been working"},
-    {"type": "multiple-choice", "question": "რომელია სწორი? 'By next month, he ___ the course.'", "options": ["will be completing", "will have completed", "will complete"], "answer": "will have completed"},
-    {"type": "fill-blank", "question": "___ you ___ the car tonight? (use)", "options": ["Will...be using", "Will...have used", "Will...use"], "answer": "Will...be using"},
-    {"type": "fill-blank", "question": "By the time the movie starts, we ___ (wait) for an hour.", "options": ["will have been waiting", "will be waiting", "will wait"], "answer": "will have been waiting"},
-    {"type": "multiple-choice", "question": "რომელი წინადადება გამოხატავს მომავალში მიმდინარე მოქმედებას?", "options": ["I will finish soon.", "I will be finishing at that time.", "I will have finished by then."], "answer": "I will be finishing at that time."},
-    {"type": "fill-blank", "question": "By 2025, scientists ___ (discover) a cure.", "options": ["will have discovered", "will be discovering", "will discover"], "answer": "will have discovered"},
-    {"type": "fill-blank", "question": "Don't call at 8 — I ___ (have) dinner.", "options": ["will be having", "will have had", "will have"], "answer": "will be having"}
+    {
+      "type": "multiple-choice",
+      "question": "This time next week, I ___ on the beach.",
+      "options": [
+        "will be lying",
+        "will have lied",
+        "will lie"
+      ],
+      "answer": "will be lying"
+    },
+    {
+      "type": "gap-fill",
+      "question": "By December, she ___ (save) enough money.",
+      "answer": "will have saved"
+    },
+    {
+      "type": "fill-in-blank",
+      "question": "At 3 PM tomorrow, they ___ the exam. (taking)",
+      "answer": "will be taking"
+    },
+    {
+      "type": "transformation",
+      "question": "Change to future perfect continuous: I work here for 5 years (by the end of this year).",
+      "answer": "By the end of this year, I will have been working here for 5 years."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "By next month, he ___ the course.",
+      "options": [
+        "will be completing",
+        "will have completed",
+        "will complete"
+      ],
+      "answer": "will have completed"
+    },
+    {
+      "type": "sentence-completion",
+      "question": "___ you ___ the car tonight?",
+      "answer": "Will / be using"
+    },
+    {
+      "type": "error-correction",
+      "question": "Find the error: By the time the movie starts, we will wait for an hour.",
+      "answer": "will wait → will have been waiting"
+    },
+    {
+      "type": "matching",
+      "question": "Match: Future Continuous shows what?",
+      "options": ["completed action", "action in progress", "duration"],
+      "answer": "action in progress"
+    },
+    {
+      "type": "gap-fill",
+      "question": "By 2025, scientists ___ (discover) a cure.",
+      "answer": "will have discovered"
+    },
+    {
+      "type": "fill-in-blank",
+      "question": "Don't call at 8 — I ___ dinner.",
+      "answer": "will be having"
+    },
+    {
+      "type": "sentence-classification",
+      "question": "'At 9 PM, I'll be watching TV' - which tense?",
+      "options": ["Future Simple", "Future Continuous", "Future Perfect"],
+      "answer": "Future Continuous"
+    },
+    {
+      "type": "transformation",
+      "question": "Complete with 'by': ___ Friday, I will have finished.",
+      "answer": "By"
+    },
+    {
+      "question": "By 2025, I ___ English for five years.",
+      "type": "multiple-choice",
+      "options": ["will have been studying", "will study", "will be studying", "have been studying"],
+      "correct": 0
+    },
+    {
+      "question": "Next month, she ___ here for ten years.",
+      "type": "multiple-choice",
+      "options": ["will have been working", "will work", "will be working", "has been working"],
+      "correct": 0
+    },
+    {
+      "question": "How long ___ you ___ when you graduate?",
+      "type": "multiple-choice",
+      "options": ["will have been studying", "will study", "will be studying", "have studied"],
+      "correct": 0
+    }
   ]
 }

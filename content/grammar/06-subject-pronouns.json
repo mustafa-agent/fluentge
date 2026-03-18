@@ -2,27 +2,233 @@
   "id": 6,
   "slug": "subject-pronouns",
   "title_en": "Subject Pronouns (I/you/he/she/it/we/they)",
-  "title_ka": "სუბიექტის ნაცვალსახელები (I/you/he/she/it/we/they)",
+  "title_ka": "სუბიექტის ნაცვალსახელები",
   "level": "A1",
-  "explanation_ka": "სუბიექტის ნაცვალსახელები გამოიყენება წინადადებაში, როცა ვინმე ან რაიმე მოქმედებას ასრულებს. ინგლისურში 7 სუბიექტის ნაცვალსახელია:\n\nI — მე (ყოველთვის დიდი ასოთი იწერება!)\nyou — შენ / თქვენ (ინგლისურში ორივე ერთნაირია)\nhe — ის (მამაკაცი)\nshe — ის (ქალი)\nit — ის (საგანი, ცხოველი, აბსტრაქტული)\nwe — ჩვენ\nthey — ისინი\n\nმნიშვნელოვანი განსხვავებები ქართულთან:\n\n1. ქართულში \"ის\" ერთია და სქესი არ აქვს. ინგლისურში კი he (მამაკაცი) და she (ქალი) ცალკეა. ეს ხშირი შეცდომის წყაროა ქართველებისთვის.\n\n2. \"it\" გამოიყენება საგნებისა და ცხოველებისთვის: The book is new. It is new. / The cat is small. It is small.\n\n3. \"you\" ინგლისურში ერთნაირია მხოლობითშიც და მრავლობითშიც, ფორმალურშიც და არაფორმალურშიც. ქართულში კი განსხვავებაა \"შენ\" და \"თქვენ\" შორის.\n\n4. \"I\" ყოველთვის დიდი ასოთი იწერება, წინადადების ნებისმიერ ადგილას.",
+  "passThreshold": 0.7,
+  "explanation_ka": "სუბიექტის ნაცვალსახელები ნიშნავს - ვინ ასრულებს მოქმედებას.\n\n**ნაცვალსახელები:**\n• I — მე (ყოველთვის დიდი ასოთი!)\n• you — შენ / თქვენ\n• he — ის (მამაკაცი)\n• she — ის (ქალი)\n• it — ის (საგანი, ცხოველი)\n• we — ჩვენ\n• they — ისინი\n\n**მთავარი განსხვავება:**\nქართულში \"ის\" ყველასთვის, ინგლისურში - he/she/it!\n• ✅ Anna is kind. She is my friend\n• ❌ Anna is kind. He is my friend\n\n**მნიშვნელოვანი წესი:**\n\"I\" ყოველთვის დიდი ასოთი!\n• ✅ I am happy\n• ❌ i am happy",
   "examples": [
-    {"en": "I am from Georgia.", "ka": "მე საქართველოდან ვარ."},
-    {"en": "You are my friend.", "ka": "შენ ჩემი მეგობარი ხარ."},
-    {"en": "He is a doctor.", "ka": "ის (მამაკაცი) ექიმია."},
-    {"en": "She is a teacher.", "ka": "ის (ქალი) მასწავლებელია."},
-    {"en": "It is a beautiful day.", "ka": "ლამაზი დღეა."}
+    {
+      "en": "I am from Georgia.",
+      "ka": "მე საქართველოდან ვარ."
+    },
+    {
+      "en": "You are my friend.",
+      "ka": "შენ ჩემი მეგობარი ხარ."
+    },
+    {
+      "en": "He is a doctor.",
+      "ka": "ის (მამაკაცი) ექიმია."
+    },
+    {
+      "en": "She is a teacher.",
+      "ka": "ის (ქალი) მასწავლებელია."
+    },
+    {
+      "en": "It is a beautiful day.",
+      "ka": "ლამაზი დღეა."
+    }
   ],
-  "common_mistakes_ka": "ყველაზე გავრცელებული შეცდომა ქართველებში — he და she აღრევა, რადგან ქართულში ორივესთვის \"ის\" გამოიყენება. მაგალითად, ქალზე საუბრისას წერენ \"he\" ნაცვლად \"she\"-ისა. ასევე ხშირად \"I\" პატარა ასოთი წერენ — ინგლისურში \"I\" ყოველთვის დიდი ასოთი იწერება!",
+  "common_mistakes_ka": "• ❌ Anna is kind. He is my friend. → ✅ She is my friend. (ქალი = she!)\n• ❌ i am happy. → ✅ I am happy. (I ყოველთვის დიდი!)\n• ❌ The cat is cute. He is small. → ✅ It is small. (ცხოველი = it!)",
   "exercises": [
-    {"type": "fill-blank", "question": "___ am a student. (მე)", "answer": "I", "options": ["I", "He", "You"]},
-    {"type": "fill-blank", "question": "___ is my mother. (ის — ქალი)", "answer": "She", "options": ["He", "She", "It"]},
-    {"type": "fill-blank", "question": "___ are from Batumi. (ისინი)", "answer": "They", "options": ["We", "They", "You"]},
-    {"type": "fill-blank", "question": "___ is a big city. (ქალაქი)", "answer": "It", "options": ["He", "She", "It"]},
-    {"type": "fill-blank", "question": "___ is my brother. (ის — მამაკაცი)", "answer": "He", "options": ["He", "She", "It"]},
-    {"type": "multiple-choice", "question": "Maria is kind. ___ is my friend.", "options": ["He is my friend.", "She is my friend.", "It is my friend."], "answer": "She is my friend."},
-    {"type": "multiple-choice", "question": "Which is correct?", "options": ["i am happy.", "I am happy.", "I is happy."], "answer": "I am happy."},
-    {"type": "fill-blank", "question": "___ are students. (ჩვენ)", "answer": "We", "options": ["We", "They", "You"]},
-    {"type": "multiple-choice", "question": "The dog is cute. ___ is small.", "options": ["He is small.", "She is small.", "It is small."], "answer": "It is small."},
-    {"type": "fill-blank", "question": "___ speak English very well. (შენ)", "answer": "You", "options": ["I", "You", "We"]}
+    {
+      "type": "fill-blank",
+      "question": "___ am a student. (მე)",
+      "answer": "I",
+      "options": [
+        "I",
+        "He",
+        "You"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ is my mother. (ის — ქალი)",
+      "answer": "She",
+      "options": [
+        "He",
+        "She",
+        "It"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ are from Batumi. (ისინი)",
+      "answer": "They",
+      "options": [
+        "We",
+        "They",
+        "You"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ is a big city. (ქალაქი)",
+      "answer": "It",
+      "options": [
+        "He",
+        "She",
+        "It"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ is my brother. (ის — მამაკაცი)",
+      "answer": "He",
+      "options": [
+        "He",
+        "She",
+        "It"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Maria is kind. ___ is my friend.",
+      "options": [
+        "He is my friend.",
+        "She is my friend.",
+        "It is my friend."
+      ],
+      "answer": "She is my friend."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "i am happy.",
+        "I am happy.",
+        "I is happy."
+      ],
+      "answer": "I am happy."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ are students. (ჩვენ)",
+      "answer": "We",
+      "options": [
+        "We",
+        "They",
+        "You"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The dog is cute. ___ is small.",
+      "options": [
+        "He is small.",
+        "She is small.",
+        "It is small."
+      ],
+      "answer": "It is small."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ speak English very well. (შენ)",
+      "answer": "You",
+      "options": [
+        "I",
+        "You",
+        "We"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "John and Mary are here. He are happy.",
+        "John and Mary are here. They are happy.",
+        "John and Mary are here. She are happy."
+      ],
+      "answer": "John and Mary are here. They are happy."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The books are on the table. ___ are heavy.",
+      "answer": "They",
+      "options": [
+        "It",
+        "They",
+        "He"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Mr. Smith is a teacher. ___ teaches English.",
+      "options": [
+        "She teaches English.",
+        "He teaches English.",
+        "It teaches English."
+      ],
+      "answer": "He teaches English."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ is raining today.",
+      "answer": "It",
+      "options": [
+        "He",
+        "She",
+        "It"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "me am tired.",
+        "i am tired.",
+        "I am tired."
+      ],
+      "answer": "I am tired."
+    },
+    {
+      "type": "fill-blank",
+      "question": "My sister and ___ are going to school.",
+      "answer": "I",
+      "options": [
+        "I",
+        "me",
+        "my"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Anna is cooking. ___ makes delicious food.",
+      "options": [
+        "He makes delicious food.",
+        "She makes delicious food.",
+        "It makes delicious food."
+      ],
+      "answer": "She makes delicious food."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The children are playing. ___ are having fun.",
+      "answer": "They",
+      "options": [
+        "He",
+        "She",
+        "They"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ are very smart. (თქვენ)",
+      "answer": "You",
+      "options": [
+        "You",
+        "We",
+        "They"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "My father and mother are doctors. ___ work in hospital.",
+      "answer": "They",
+      "options": [
+        "He",
+        "She",
+        "They"
+      ]
+    }
   ]
 }
