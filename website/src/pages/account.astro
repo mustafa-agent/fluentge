@@ -3,6 +3,19 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="ჩემი ანგარიში — FluentGe">
+  <style>
+    html.light .account-card { background: white !important; border-color: #e5e7eb !important; }
+    html.light .account-card h1, html.light .account-card h2, html.light .account-card .font-semibold { color: #1a1a2e !important; }
+    html.light .account-card .text-\[\#6B6B65\], html.light .account-card .text-\[\#A0A09A\] { color: #6b7280 !important; }
+    html.light .account-card .text-\[\#C8C8C0\] { color: #374151 !important; }
+    html.light .account-card .h-px { background: #e5e7eb !important; }
+    html.light .account-card .bg-\[\#C8C8C0\] { background: #4f46e5 !important; color: white !important; }
+    html.light .account-link { background: #f9fafb !important; border-color: #e5e7eb !important; color: #374151 !important; }
+    html.light .account-link:hover { background: #f3f4f6 !important; }
+    html.light #logout-btn { background: #f9fafb !important; border-color: #e5e7eb !important; }
+    html.light #logout-btn:hover { background: #fef2f2 !important; }
+    html.light .stat-num { color: #1a1a2e !important; }
+  </style>
   <div class="min-h-[80vh] flex items-center justify-center px-4 py-12">
     <div class="w-full max-w-lg">
 
@@ -12,14 +25,14 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div id="logged-in" class="hidden">
-        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6 text-center">
+        <div class="account-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6 text-center">
           <img id="avatar-img" class="w-20 h-20 rounded-full mx-auto mb-4 hidden" />
           <div id="avatar-letter" class="w-20 h-20 bg-[#C8C8C0] rounded-full mx-auto mb-4 flex items-center justify-center text-3xl text-[#1C1C1E] font-bold"></div>
           <h1 class="text-xl font-bold mb-1" id="user-name"></h1>
           <p class="text-[#6B6B65] text-sm" id="user-email"></p>
         </div>
 
-        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6">
+        <div class="account-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6">
           <h2 class="font-semibold text-lg mb-4">📋 გამოწერის სტატუსი</h2>
           <div class="space-y-4">
             <div class="flex items-center justify-between">
@@ -39,25 +52,25 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6">
+        <div class="account-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 mb-6">
           <h2 class="font-semibold text-lg mb-4">📊 სტატისტიკა</h2>
           <div class="grid grid-cols-3 gap-4 text-center">
             <div>
-              <p class="text-2xl font-bold" id="stat-words">0</p>
+              <p class="stat-num text-2xl font-bold" id="stat-words">0</p>
               <p class="text-[#6B6B65] text-xs mt-1">გავლილი კატეგორია</p>
             </div>
             <div>
-              <p class="text-2xl font-bold" id="stat-streak">0</p>
+              <p class="stat-num text-2xl font-bold" id="stat-streak">0</p>
               <p class="text-[#6B6B65] text-xs mt-1">დღის სერია</p>
             </div>
             <div>
-              <p class="text-2xl font-bold" id="stat-games">0</p>
+              <p class="stat-num text-2xl font-bold" id="stat-games">0</p>
               <p class="text-[#6B6B65] text-xs mt-1">თამაშები</p>
             </div>
           </div>
         </div>
 
-        <a href="/dashboard/" class="block w-full bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] font-semibold py-3 rounded-xl text-sm transition-colors text-center text-[#C8C8C0] mb-3">
+        <a href="/dashboard/" class="account-link block w-full bg-[#242426] hover:bg-[#2E2E30] border border-[#2E2E30] font-semibold py-3 rounded-xl text-sm transition-colors text-center text-[#C8C8C0] mb-3">
           📊 დეშბორდი
         </a>
 
