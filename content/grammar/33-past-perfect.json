@@ -131,14 +131,24 @@
       "answer": "had completed"
     },
     {
-      "type": "translate",
+      "type": "multiple-choice",
       "question": "მე ვმუშაობ ყოველდღე.",
-      "answer": "I work every day."
+      "answer": "I work every day.",
+      "options": [
+        "I work every day.",
+        "He work every day.",
+        "I day. every work"
+      ]
     },
     {
-      "type": "true-false",
+      "type": "multiple-choice",
       "question": "Present Simple is used for habits.",
-      "answer": true
+      "answer": "True",
+      "options": [
+        "True",
+        "False",
+        "Not mentioned"
+      ]
     },
     {
       "type": "fill-blank",
@@ -153,14 +163,24 @@
     {
       "question": "After she ___ her homework, she watched TV.",
       "type": "multiple-choice",
-      "options": ["had finished", "finished", "has finished", "finishes"],
-      "correct": 0
+      "options": [
+        "had finished",
+        "finished",
+        "has finished",
+        "finishes"
+      ],
+      "answer": "had finished"
     },
     {
       "question": "I realized I ___ my keys at home.",
       "type": "multiple-choice",
-      "options": ["had left", "left", "have left", "leave"],
-      "correct": 0
+      "options": [
+        "had left",
+        "left",
+        "have left",
+        "leave"
+      ],
+      "answer": "had left"
     }
   ]
 }

@@ -53,24 +53,44 @@
       "answer": "had studied"
     },
     {
-      "type": "gap-fill",
+      "type": "fill-blank",
       "question": "If she were taller, she ___ (become) a model last year.",
-      "answer": "would have become"
+      "answer": "would have become",
+      "options": [
+        "won't",
+        "isn't",
+        "would have become"
+      ]
     },
     {
-      "type": "fill-in-blank",
+      "type": "fill-blank",
       "question": "If they ___ money, they would own a house now. (had)",
-      "answer": "had saved"
+      "answer": "had saved",
+      "options": [
+        "had sav",
+        "had savs",
+        "had saved"
+      ]
     },
     {
-      "type": "error-correction",
+      "type": "fill-blank",
       "question": "Find the error: If I would have known, I would be there now.",
-      "answer": "would have → had"
+      "answer": "would have → had",
+      "options": [
+        "would have → had",
+        "won't",
+        "couldn't"
+      ]
     },
     {
-      "type": "transformation",
+      "type": "fill-blank",
       "question": "Complete: If he weren't so lazy, he ___ (finish) the project.",
-      "answer": "would have finished"
+      "answer": "would have finished",
+      "options": [
+        "would have finishs",
+        "would have finished",
+        "would have finish"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -85,52 +105,96 @@
     {
       "type": "sentence-classification",
       "question": "Type of conditional: 'If I had won, I would be rich now.'",
-      "options": ["First", "Second", "Third", "Mixed"],
+      "options": [
+        "First",
+        "Second",
+        "Third",
+        "Mixed"
+      ],
       "answer": "Mixed"
     },
     {
-      "type": "gap-fill",
+      "type": "fill-blank",
       "question": "If I ___ Japanese, I ___ understood the movie.",
-      "answer": "spoke / would have"
+      "answer": "spoke / would have",
+      "options": [
+        "shouldn't",
+        "spoke / would have",
+        "couldn't"
+      ]
     },
     {
-      "type": "fill-in-blank",
+      "type": "fill-blank",
       "question": "If she had accepted the offer, she ___ in Paris now.",
-      "answer": "would be living"
+      "answer": "would be living",
+      "options": [
+        "would be lived",
+        "would be living",
+        "would be liv"
+      ]
     },
     {
       "type": "matching",
       "question": "Past condition + present result: Which structure?",
-      "options": ["If + past simple, would + V", "If + had + V3, would + V", "If + had + V3, would have + V3"],
+      "options": [
+        "If + past simple, would + V",
+        "If + had + V3, would + V",
+        "If + had + V3, would have + V3"
+      ],
       "answer": "If + had + V3, would + V"
     },
     {
-      "type": "transformation",
+      "type": "fill-blank",
       "question": "Make mixed conditional: I didn't study hard. I'm not successful now.",
-      "answer": "If I had studied hard, I would be successful now."
+      "answer": "If I had studied hard, I would be successful now.",
+      "options": [
+        "won't",
+        "isn't",
+        "If I had studied hard, I would be successful now."
+      ]
     },
     {
-      "type": "error-correction",
+      "type": "fill-blank",
       "question": "Find the error: If I was rich, I would have bought that house.",
-      "answer": "was → were"
+      "answer": "was → were",
+      "options": [
+        "was → were",
+        "won't",
+        "couldn't"
+      ]
     },
     {
       "question": "If I were younger, I ___ traveled around the world.",
       "type": "multiple-choice",
-      "options": ["would have", "will have", "would", "will"],
-      "correct": 0
+      "options": [
+        "would have",
+        "will have",
+        "would",
+        "will"
+      ],
+      "answer": "would have"
     },
     {
       "question": "If she had saved money, she ___ rich now.",
       "type": "multiple-choice",
-      "options": ["would be", "will be", "is", "would have been"],
-      "correct": 0
+      "options": [
+        "would be",
+        "will be",
+        "is",
+        "would have been"
+      ],
+      "answer": "would be"
     },
     {
       "question": "If I ___ harder at school, I would have a better job now.",
       "type": "multiple-choice",
-      "options": ["had worked", "worked", "work", "would work"],
-      "correct": 0
+      "options": [
+        "had worked",
+        "worked",
+        "work",
+        "would work"
+      ],
+      "answer": "had worked"
     }
   ]
 }

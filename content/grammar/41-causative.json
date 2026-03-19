@@ -42,89 +42,155 @@
   "common_mistakes_ka": "ხშირი შეცდომები:\n1) აქტიური და კაუზატივის აღრევა:\n❌ I cut my hair. = მე თვითონ შევიჭერი თმა.\n✅ I had my hair cut. = სხვამ შემიჭრა (საპარიკმახეროში).\n\n2) V3-ის ნაცვლად V-ing-ის გამოყენება:\n❌ I had my car repairing.\n✅ I had my car repaired.\n\n3) get + someone + to-ს გამოტოვება:\n❌ I got my friend help me.\n✅ I got my friend to help me.\n\n4) have + someone-ში to-ს დამატება:\n❌ I had him to call me.\n✅ I had him call me.",
   "exercises": [
     {
-      "type": "fill-in-blank",
-      "question": "I need to have my passport ___. (renewed)",
-      "answer": "renewed"
-    },
-    {
-      "type": "gap-fill",
-      "question": "She ___ her dress ___ before the party.",
-      "answer": "had / cleaned"
-    },
-    {
-      "type": "transformation",
-      "question": "Change to causative: My brother helped me move.",
-      "answer": "I got my brother to help me move."
-    },
-    {
-      "type": "error-correction",
-      "question": "Find the error: We had the electrician to install new lights.",
-      "answer": "to install → install"
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which is correct?",
+      "type": "fill-blank",
+      "question": "I had my hair ___.",
+      "answer": "cut",
       "options": [
-        "I had my car wash.",
+        "cut",
+        "cutting",
+        "cuts"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She got her nails ___.",
+      "answer": "done",
+      "options": [
+        "done",
+        "do",
+        "doing"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We need to have the car ___.",
+      "answer": "repaired",
+      "options": [
+        "repaired",
+        "repair",
+        "repairing"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "answer": "I had my car washed.",
+      "options": [
         "I had my car washed.",
+        "I had my car wash.",
         "I had my car washing."
-      ],
-      "answer": "I had my car washed."
+      ]
     },
     {
-      "type": "sentence-completion",
-      "question": "You should get your eyes ___.",
-      "answer": "tested"
+      "type": "fill-blank",
+      "question": "He had his suit ___.",
+      "answer": "cleaned",
+      "options": [
+        "cleaned",
+        "clean",
+        "cleaning"
+      ]
     },
     {
-      "type": "sentence-classification",
-      "question": "'I cut my hair' means:",
-      "options": ["I did it myself", "Someone else did it", "Both"],
-      "answer": "I did it myself"
+      "type": "fill-blank",
+      "question": "I'm going to get my eyes ___.",
+      "answer": "tested",
+      "options": [
+        "tested",
+        "test",
+        "testing"
+      ]
     },
     {
-      "type": "fill-in-blank",
-      "question": "He ___ his assistant send the emails.",
-      "answer": "had"
+      "type": "fill-blank",
+      "question": "She had her photo ___.",
+      "answer": "taken",
+      "options": [
+        "taken",
+        "take",
+        "took"
+      ]
     },
     {
-      "type": "transformation",
-      "question": "Change: Someone painted my kitchen. (I had...)",
-      "answer": "I had my kitchen painted."
-    },
-    {
-      "type": "matching",
-      "question": "Match: 'have something done' means",
-      "options": ["do it yourself", "someone else does it", "plan to do it"],
-      "answer": "someone else does it"
-    },
-    {
-      "type": "gap-fill",
-      "question": "I need ___ get my phone ___ (fix).",
-      "answer": "to / fixed"
-    },
-    {
-      "type": "error-correction",
-      "question": "Find the error: I got my friend helping me.",
-      "answer": "helping → to help"
-    },
-    {
-      "question": "I ___ my hair cut yesterday.",
       "type": "multiple-choice",
-      "options": ["had", "have", "got", "made"],
-      "correct": 0
+      "question": "'Have something done' ნიშნავს:",
+      "answer": "სხვას ვაკეთებინებ",
+      "options": [
+        "სხვას ვაკეთებინებ",
+        "თვითონ ვაკეთებ",
+        "არ ვაკეთებ"
+      ]
     },
     {
-      "question": "She wants to ___ her car serviced.",
-      "type": "multiple-choice",
-      "options": ["get", "make", "let", "allow"],
-      "correct": 0
+      "type": "fill-blank",
+      "question": "They had their house ___.",
+      "answer": "painted",
+      "options": [
+        "painted",
+        "paint",
+        "painting"
+      ]
     },
     {
-      "question": "They ___ us wait outside.",
-      "type": "multiple-choice",
-      "options": ["made", "had", "got", "let"],
-      "correct": 0
+      "type": "fill-blank",
+      "question": "I got my phone ___.",
+      "answer": "fixed",
+      "options": [
+        "fixed",
+        "fix",
+        "fixing"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We had the roof ___.",
+      "answer": "replaced",
+      "options": [
+        "replaced",
+        "replace",
+        "replacing"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She's having her dress ___.",
+      "answer": "altered",
+      "options": [
+        "altered",
+        "alter",
+        "altering"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "He had his teeth ___.",
+      "answer": "whitened",
+      "options": [
+        "whitened",
+        "whiten",
+        "whitening"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We're getting the garden ___.",
+      "answer": "landscaped",
+      "options": [
+        "landscaped",
+        "landscape",
+        "landscaping"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "They had their house ___ last summer.",
+      "answer": "painted",
+      "options": [
+        "painted",
+        "paint",
+        "painting",
+        "paints"
+      ]
     }
   ],
   "passThreshold": 0.7

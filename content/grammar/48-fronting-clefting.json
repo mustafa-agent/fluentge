@@ -144,38 +144,68 @@
     {
       "type": "multiple-choice",
       "question": "Down the hill ___ the children.",
-      "options": ["ran", "run", "running", "to run"],
+      "options": [
+        "ran",
+        "run",
+        "running",
+        "to run"
+      ],
       "answer": "ran"
     },
     {
       "type": "multiple-choice",
       "question": "What I want ___ a peaceful life.",
-      "options": ["is", "are", "was", "were"],
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
       "answer": "is"
     },
     {
       "type": "multiple-choice",
       "question": "Never before ___ I seen such beauty.",
-      "options": ["had", "have", "did", "was"],
+      "options": [
+        "had",
+        "have",
+        "did",
+        "was"
+      ],
       "answer": "had"
     },
     {
       "type": "multiple-choice",
       "question": "It was yesterday ___ I met her.",
-      "options": ["that", "when", "where", "which"],
+      "options": [
+        "that",
+        "when",
+        "where",
+        "which"
+      ],
       "answer": "that"
     },
     {
       "type": "multiple-choice",
       "question": "Under no circumstances ___ you leave.",
-      "options": ["should", "will", "would", "could"],
+      "options": [
+        "should",
+        "will",
+        "would",
+        "could"
+      ],
       "answer": "should"
     },
     {
       "type": "fill-blank",
       "question": "Off ___ the lights when the power failed.",
       "answer": "went",
-      "options": ["went", "go", "going", "to go"]
+      "options": [
+        "went",
+        "go",
+        "going",
+        "to go"
+      ]
     }
   ],
   "passThreshold": 0.7

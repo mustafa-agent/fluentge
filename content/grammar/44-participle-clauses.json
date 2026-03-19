@@ -39,7 +39,7 @@
       "ka": "ლურჯად შეღებილი, ოთახი უფრო დიდი ჩანდა."
     }
   ],
-  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ [შეცდომა 1]\n✅ [სწორი ფორმა 1]\n\n❌ [შეცდომა 2]  \n✅ [სწორი ფორმა 2]\n\n**დაიმახსოვრე:** [მთავარი წესი]",
+  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ Walked in the park, the flowers were beautiful.\n✅ Walking in the park, I saw beautiful flowers.\n(მიმღეობის ქვემდებარე უნდა ემთხვეოდეს მთავარი წინადადების ქვემდებარეს)\n\n❌ Having not finished the work, he left.\n✅ Not having finished the work, he left.\n(უარყოფა \"not\" მიმღეობის წინ იწერება)\n\n❌ Seeing from the hill, the city was small.\n✅ Seen from the hill, the city looked small.\n(თუ ქვემდებარე მოქმედებას არ ასრულებს, Past Participle გამოიყენეთ)\n\n**დაიმახსოვრე:** მიმღეობის ქვემდებარე ყოველთვის მთავარი წინადადების ქვემდებარეს უნდა ემთხვეოდეს!",
   "exercises": [
     {
       "type": "multiple-choice",
@@ -144,50 +144,90 @@
     {
       "type": "multiple-choice",
       "question": "___ finished his homework, he went to bed.",
-      "options": ["Having", "Being", "After", "When"],
+      "options": [
+        "Having",
+        "Being",
+        "After",
+        "When"
+      ],
       "answer": "Having"
     },
     {
       "type": "multiple-choice",
       "question": "___ by the movie, she cried.",
-      "options": ["Moved", "Moving", "Move", "To move"],
+      "options": [
+        "Moved",
+        "Moving",
+        "Move",
+        "To move"
+      ],
       "answer": "Moved"
     },
     {
       "type": "multiple-choice",
       "question": "___ quickly, we caught the bus.",
-      "options": ["Running", "Run", "Having run", "Ran"],
+      "options": [
+        "Running",
+        "Run",
+        "Having run",
+        "Ran"
+      ],
       "answer": "Running"
     },
     {
       "type": "multiple-choice",
       "question": "___ the door, I heard a noise.",
-      "options": ["Opening", "Opened", "Open", "To open"],
+      "options": [
+        "Opening",
+        "Opened",
+        "Open",
+        "To open"
+      ],
       "answer": "Opening"
     },
     {
       "type": "multiple-choice",
       "question": "___ surprised by the news, he didn't say anything.",
-      "options": ["Being", "Having been", "Was", "Were"],
+      "options": [
+        "Being",
+        "Having been",
+        "Was",
+        "Were"
+      ],
       "answer": "Being"
     },
     {
       "type": "fill-blank",
       "question": "The book, ___ in simple language, is easy to understand.",
       "answer": "written",
-      "options": ["written", "writing", "having written", "being written"]
+      "options": [
+        "written",
+        "writing",
+        "having written",
+        "being written"
+      ]
     },
     {
       "type": "multiple-choice",
       "question": "___ about the exam results, he called the teacher.",
-      "options": ["Worried", "Worrying", "Having worried", "Being worried"],
+      "options": [
+        "Worried",
+        "Worrying",
+        "Having worried",
+        "Being worried"
+      ],
       "answer": "Worried"
     },
     {
       "type": "fill-blank",
       "question": "___ the instructions, I started the machine.",
       "answer": "Reading",
-      "options": ["Reading", "Read", "Having read", "Being read"]
+      "options": [
+        "Reading",
+        "Read",
+        "Having read",
+        "Being read"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -204,7 +244,12 @@
       "type": "fill-blank",
       "question": "___ satisfied with the answer, she asked another question.",
       "answer": "Not being",
-      "options": ["Not being", "Not been", "Having not been", "Being not"]
+      "options": [
+        "Not being",
+        "Not been",
+        "Having not been",
+        "Being not"
+      ]
     }
   ],
   "passThreshold": 0.7

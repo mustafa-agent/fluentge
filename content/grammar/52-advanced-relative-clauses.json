@@ -39,7 +39,7 @@
       "ka": "ის იყო ერთადერთი კანდიდატი, ვინც სრული ქულა მიიღო."
     }
   ],
-  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ [შეცდომა 1]\n✅ [სწორი ფორმა 1]\n\n❌ [შეცდომა 2]  \n✅ [სწორი ფორმა 2]\n\n**დაიმახსოვრე:** [მთავარი წესი]",
+  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ The man which helped me was kind.\n✅ The man who helped me was kind.\n(ადამიანებისთვის \"who\" გამოიყენეთ, არა \"which\")\n\n❌ My brother, that lives in London, is a doctor.\n✅ My brother, who lives in London, is a doctor.\n(Non-defining clause-ში \"that\" არ გამოიყენება)\n\n❌ The book, that I read, was interesting.\n✅ The book that I read was interesting.\n(Defining clause-ში მძიმეები არ იწერება)\n\n**დაიმახსოვრე:** Non-defining clause — მძიმეებით, \"who/which\"; Defining clause — მძიმეების გარეშე, \"that/who/which\"!",
   "exercises": [
     {
       "type": "multiple-choice",
@@ -76,7 +76,12 @@
       "type": "fill-blank",
       "question": "Students ___ hard usually succeed. (study)",
       "answer": "studying",
-      "options": ["studying", "studied", "to study", "study"]
+      "options": [
+        "studying",
+        "studied",
+        "to study",
+        "study"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -93,7 +98,12 @@
       "type": "fill-blank",
       "question": "The first person ___ the summit was a local guide. (reach)",
       "answer": "to reach",
-      "options": ["to reach", "reaching", "reached", "who reached"]
+      "options": [
+        "to reach",
+        "reaching",
+        "reached",
+        "who reached"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -110,55 +120,100 @@
       "type": "fill-blank",
       "question": "The letter ___ yesterday contained bad news. (receive)",
       "answer": "received",
-      "options": ["received", "receiving", "to receive", "having received"]
+      "options": [
+        "received",
+        "receiving",
+        "to receive",
+        "having received"
+      ]
     },
     {
       "type": "multiple-choice",
       "question": "The house, ___ roof was damaged, needs repair.",
-      "options": ["whose", "which", "that", "what"],
+      "options": [
+        "whose",
+        "which",
+        "that",
+        "what"
+      ],
       "answer": "whose"
     },
     {
       "type": "multiple-choice",
       "question": "The reason ___ he left early is unknown.",
-      "options": ["why", "which", "that", "what"],
+      "options": [
+        "why",
+        "which",
+        "that",
+        "what"
+      ],
       "answer": "why"
     },
     {
       "type": "multiple-choice",
       "question": "The day ___ we met was special.",
-      "options": ["when", "which", "that", "where"],
+      "options": [
+        "when",
+        "which",
+        "that",
+        "where"
+      ],
       "answer": "when"
     },
     {
       "type": "multiple-choice",
       "question": "This is the place ___ we used to play.",
-      "options": ["where", "which", "that", "when"],
+      "options": [
+        "where",
+        "which",
+        "that",
+        "when"
+      ],
       "answer": "where"
     },
     {
       "type": "multiple-choice",
       "question": "He spoke to the manager, ___ was very helpful.",
-      "options": ["who", "which", "that", "whom"],
+      "options": [
+        "who",
+        "which",
+        "that",
+        "whom"
+      ],
       "answer": "who"
     },
     {
       "type": "multiple-choice",
       "question": "The book, ___ I bought yesterday, is excellent.",
-      "options": ["which", "that", "who", "what"],
+      "options": [
+        "which",
+        "that",
+        "who",
+        "what"
+      ],
       "answer": "which"
     },
     {
       "type": "multiple-choice",
       "question": "The woman ___ car was stolen called the police.",
-      "options": ["whose", "who", "which", "that"],
+      "options": [
+        "whose",
+        "who",
+        "which",
+        "that"
+      ],
       "answer": "whose"
     },
     {
       "type": "fill-blank",
       "question": "The building ___ in 1890 is now a museum. (build)",
       "answer": "built",
-      "options": ["built", "building", "to build", "having built"]
+      "options": [
+        "built",
+        "building",
+        "to build",
+        "having built"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -175,7 +230,12 @@
       "type": "fill-blank",
       "question": "She was the youngest athlete ___ an Olympic record. (break)",
       "answer": "to break",
-      "options": ["to break", "breaking", "broken", "having broken"]
+      "options": [
+        "to break",
+        "breaking",
+        "broken",
+        "having broken"
+      ]
     }
   ],
   "passThreshold": 0.7

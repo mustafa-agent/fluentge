@@ -135,19 +135,20 @@
       "question": "How do you say: 'მე ცურვა შემიძლია.'",
       "options": [
         "I can swim.",
-        "Wrong option 1",
-        "Wrong option 2"
+        "I can swimming.",
+        "I can to swim."
       ],
       "answer": "I can swim."
     },
     {
-      "type": "multiple-choice",
-      "question": "\"He can speaks\" is correct.",
+      "type": "fill-blank",
+      "question": "Birds ___ fly, but dogs ___.",
       "options": [
-        "True",
-        "False"
+        "can ... can't",
+        "can ... can",
+        "can't ... can"
       ],
-      "answer": "False"
+      "answer": "can ... can't"
     },
     {
       "type": "fill-blank",
@@ -174,8 +175,8 @@
       "question": "How do you say: 'შეგიძლია დამეხმარო?'",
       "options": [
         "Can you help me?",
-        "Wrong option 1",
-        "Wrong option 2"
+        "Do you can help me?",
+        "You can help me?"
       ],
       "answer": "Can you help me?"
     }

@@ -34,19 +34,31 @@
       "type": "fill-blank",
       "question": "If I ___ (know) about the party, I would have come.",
       "answer": "had known",
-      "options": ["had known", "knew", "would know"]
+      "options": [
+        "had known",
+        "knew",
+        "would know"
+      ]
     },
     {
       "type": "fill-blank",
       "question": "She would have passed if she ___ (study) harder.",
       "answer": "had studied",
-      "options": ["had studied", "studied", "would study"]
+      "options": [
+        "had studied",
+        "studied",
+        "would study"
+      ]
     },
     {
       "type": "fill-blank",
       "question": "If we ___ (not/miss) the flight, we would have arrived on time.",
       "answer": "hadn't missed",
-      "options": ["hadn't missed", "didn't miss", "wouldn't miss"]
+      "options": [
+        "hadn't missed",
+        "didn't miss",
+        "wouldn't miss"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -62,13 +74,21 @@
       "type": "fill-blank",
       "question": "He ___ (not/get) the job if he hadn't prepared well.",
       "answer": "wouldn't have gotten",
-      "options": ["wouldn't have gotten", "didn't get", "wouldn't get"]
+      "options": [
+        "wouldn't have gotten",
+        "didn't get",
+        "wouldn't get"
+      ]
     },
     {
       "type": "fill-blank",
       "question": "If they had left earlier, they ___ (catch) the bus.",
       "answer": "would have caught",
-      "options": ["would have caught", "would catch", "had caught"]
+      "options": [
+        "would have caught",
+        "would catch",
+        "had caught"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -84,7 +104,11 @@
       "type": "fill-blank",
       "question": "If I had saved money, I ___ (buy) a car.",
       "answer": "would have bought",
-      "options": ["would have bought", "would buy", "had bought"]
+      "options": [
+        "would have bought",
+        "would buy",
+        "had bought"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -100,13 +124,21 @@
       "type": "fill-blank",
       "question": "If I ___ (not/eat) so much, I wouldn't have felt sick.",
       "answer": "hadn't eaten",
-      "options": ["hadn't eaten", "didn't eat", "wouldn't eat"]
+      "options": [
+        "hadn't eaten",
+        "didn't eat",
+        "wouldn't eat"
+      ]
     },
     {
       "type": "fill-blank",
       "question": "We ___ (win) the game if we had practiced more.",
       "answer": "would have won",
-      "options": ["would have won", "would win", "had won"]
+      "options": [
+        "would have won",
+        "would win",
+        "had won"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -121,20 +153,35 @@
     {
       "question": "If the weather ___ better, we would have gone to the beach.",
       "type": "multiple-choice",
-      "options": ["had been", "was", "would be", "were"],
-      "correct": 0
+      "options": [
+        "had been",
+        "was",
+        "would be",
+        "were"
+      ],
+      "answer": "had been"
     },
     {
       "question": "She ___ the test if she had studied the night before.",
       "type": "multiple-choice",
-      "options": ["would have passed", "will pass", "passed", "would pass"],
-      "correct": 0
+      "options": [
+        "would have passed",
+        "will pass",
+        "passed",
+        "would pass"
+      ],
+      "answer": "would have passed"
     },
     {
       "question": "If I had known you were coming, I ___ dinner for you.",
       "type": "multiple-choice",
-      "options": ["would have cooked", "will cook", "cook", "would cook"],
-      "correct": 0
+      "options": [
+        "would have cooked",
+        "will cook",
+        "cook",
+        "would cook"
+      ],
+      "answer": "would have cooked"
     }
   ]
 }

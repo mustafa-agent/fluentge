@@ -131,14 +131,24 @@
       "answer": "hasn't he"
     },
     {
-      "type": "translate",
+      "type": "multiple-choice",
       "question": "მე ვმუშაობ ყოველდღე.",
-      "answer": "I work every day."
+      "answer": "I work every day.",
+      "options": [
+        "He work every day.",
+        "I work every day.",
+        "I day. every work"
+      ]
     },
     {
-      "type": "true-false",
+      "type": "multiple-choice",
       "question": "Present Simple is used for habits.",
-      "answer": true
+      "answer": "True",
+      "options": [
+        "True",
+        "False",
+        "Not mentioned"
+      ]
     },
     {
       "type": "fill-blank",
@@ -153,14 +163,24 @@
     {
       "question": "Nothing is wrong, ___?",
       "type": "multiple-choice",
-      "options": ["is it", "isn't it", "are they", "aren't they"],
-      "correct": 0
+      "options": [
+        "is it",
+        "isn't it",
+        "are they",
+        "aren't they"
+      ],
+      "answer": "is it"
     },
     {
       "question": "Everyone was happy, ___?",
       "type": "multiple-choice",
-      "options": ["weren't they", "wasn't he", "weren't everyone", "wasn't everyone"],
-      "correct": 0
+      "options": [
+        "weren't they",
+        "wasn't he",
+        "weren't everyone",
+        "wasn't everyone"
+      ],
+      "answer": "weren't they"
     }
   ]
 }

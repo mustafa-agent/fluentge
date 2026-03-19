@@ -25,129 +25,568 @@ function isLessonFree(slug: string) {
   return lesson?.level === 'A1';
 }
 
-const levelMeta: Record<string, { icon: string; color: string; colorDark: string; bg: string; bgLight: string; border: string; borderBottom: string; gradient: string; label: string }> = {
-  'A1': { icon: '🌱', color: 'text-green-400', colorDark: 'text-green-600', bg: 'bg-green-500/15', bgLight: 'bg-green-50', border: 'border-green-500/30', borderBottom: 'border-b-green-600', gradient: 'from-green-500 to-emerald-600', label: 'დამწყები' },
-  'A2': { icon: '📘', color: 'text-blue-400', colorDark: 'text-blue-600', bg: 'bg-blue-500/15', bgLight: 'bg-blue-50', border: 'border-blue-500/30', borderBottom: 'border-b-blue-600', gradient: 'from-blue-500 to-indigo-600', label: 'ელემენტარული' },
-  'B1': { icon: '⚡', color: 'text-yellow-400', colorDark: 'text-yellow-600', bg: 'bg-yellow-500/15', bgLight: 'bg-yellow-50', border: 'border-yellow-500/30', borderBottom: 'border-b-yellow-600', gradient: 'from-yellow-500 to-amber-600', label: 'საშუალო' },
-  'B2': { icon: '🔥', color: 'text-orange-400', colorDark: 'text-orange-600', bg: 'bg-orange-500/15', bgLight: 'bg-orange-50', border: 'border-orange-500/30', borderBottom: 'border-b-orange-600', gradient: 'from-orange-500 to-red-600', label: 'საშუალო+' },
-  'C1': { icon: '👑', color: 'text-purple-400', colorDark: 'text-purple-600', bg: 'bg-purple-500/15', bgLight: 'bg-purple-50', border: 'border-purple-500/30', borderBottom: 'border-b-purple-600', gradient: 'from-purple-500 to-violet-600', label: 'მოწინავე' },
+const levelMeta: Record<string, { icon: string; emoji: string; color: string; colorDark: string; bg: string; bgSolid: string; bgLight: string; border: string; borderBottom: string; gradient: string; gradientBg: string; label: string; description: string }> = {
+  'A1': { icon: '🌱', emoji: '🟢', color: 'text-green-400', colorDark: 'text-green-600', bg: 'bg-green-500/15', bgSolid: '#22c55e', bgLight: 'bg-green-50', border: 'border-green-500/30', borderBottom: 'border-b-green-600', gradient: 'from-green-500 to-emerald-600', gradientBg: 'from-green-500/8 to-emerald-600/5', label: 'დამწყები', description: 'ძირითადი გრამატიკა' },
+  'A2': { icon: '📘', emoji: '🔵', color: 'text-blue-400', colorDark: 'text-blue-600', bg: 'bg-blue-500/15', bgSolid: '#3b82f6', bgLight: 'bg-blue-50', border: 'border-blue-500/30', borderBottom: 'border-b-blue-600', gradient: 'from-blue-500 to-indigo-600', gradientBg: 'from-blue-500/8 to-indigo-600/5', label: 'ელემენტარული', description: 'წინადადებების აგება' },
+  'B1': { icon: '⚡', emoji: '🟡', color: 'text-yellow-400', colorDark: 'text-yellow-600', bg: 'bg-yellow-500/15', bgSolid: '#eab308', bgLight: 'bg-yellow-50', border: 'border-yellow-500/30', borderBottom: 'border-b-yellow-600', gradient: 'from-yellow-500 to-amber-600', gradientBg: 'from-yellow-500/8 to-amber-600/5', label: 'საშუალო', description: 'რთული სტრუქტურები' },
+  'B2': { icon: '🔥', emoji: '🟠', color: 'text-orange-400', colorDark: 'text-orange-600', bg: 'bg-orange-500/15', bgSolid: '#f97316', bgLight: 'bg-orange-50', border: 'border-orange-500/30', borderBottom: 'border-b-orange-600', gradient: 'from-orange-500 to-red-600', gradientBg: 'from-orange-500/8 to-red-600/5', label: 'საშუალო+', description: 'თავისუფალი მეტყველება' },
+  'C1': { icon: '👑', emoji: '🟣', color: 'text-purple-400', colorDark: 'text-purple-600', bg: 'bg-purple-500/15', bgSolid: '#a855f7', bgLight: 'bg-purple-50', border: 'border-purple-500/30', borderBottom: 'border-b-purple-600', gradient: 'from-purple-500 to-violet-600', gradientBg: 'from-purple-500/8 to-violet-600/5', label: 'მოწინავე', description: 'აკადემიური დონე' },
 };
 ---
 
-<Layout title="ინგლისური გრამატიკა ქართულად | FluentGe" description="65 ინტერაქტიული გრამატიკის გაკვეთილი ქართულ ენაზე — A1-დან C1-მდე. ტესტები, სავარჯიშოები და XP სისტემა. 8 გაკვეთილი უფასოა!">
+<Layout title="ინგლისური გრამატიკა ქართულად | FluentGe" description="65 ინტერაქტიული გრამატიკის გაკვეთილი ქართულ ენაზე — A1-დან C1-მდე. ტესტები, სავარჯიშოები და XP სისტემა.">
   <style is:global>
-    /* Light mode overrides */
-    html.light .grammar-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; }
-    html.light .grammar-hero h1,
-    html.light .grammar-hero p,
-    html.light .grammar-hero .hero-stat { color: #fff !important; }
-    html.light .grammar-level-bar { background: #e5e7eb !important; }
-    html.light .grammar-level-counter { color: #6b7280 !important; }
-    html.light .grammar-level-header { background: #ffffff !important; border-color: #e5e7eb !important; box-shadow: 0 1px 3px rgba(0,0,0,0.08) !important; }
-    html.light .grammar-level-header:hover { background: #f9fafb !important; }
-    html.light .grammar-lesson-card { background: #ffffff !important; border-color: #e5e7eb !important; box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important; }
-    html.light .grammar-lesson-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important; }
-    html.light .grammar-lesson-card .lesson-title { color: #1f2937 !important; }
-    html.light .grammar-lesson-card .lesson-subtitle { color: #6b7280 !important; }
-    html.light .grammar-lesson-footer { color: #9ca3af !important; }
-    html.light .grammar-level-section .grammar-level-chevron { color: #9ca3af !important; }
-    html.light .grammar-level-header .level-label { color: #1f2937 !important; }
-    html.light .grammar-level-header .level-count { color: #9ca3af !important; }
-    html.light .placement-cta { background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(34,197,94,0.08)) !important; border-color: rgba(56,189,248,0.2) !important; }
-    html.light .placement-cta h3 { color: #1f2937 !important; }
-    html.light .placement-cta p { color: #6b7280 !important; }
-    html.light .grammar-state-completed { border-left-color: rgb(34, 197, 94) !important; }
+    /* ===== GRAMMAR PAGE STYLES ===== */
+    .grammar-hero-new {
+      background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 40%, #312e81 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .grammar-hero-new::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 20%, rgba(99,102,241,0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(139,92,246,0.12) 0%, transparent 50%);
+    }
+    /* Floating particles in hero */
+    .grammar-hero-new::after {
+      content: '';
+      position: absolute;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 70%);
+      top: -100px; right: -80px;
+      animation: heroFloat 8s ease-in-out infinite;
+    }
+    @keyframes heroFloat {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-30px, 20px) scale(1.1); }
+    }
+
+    /* Staggered card entrance */
+    @keyframes cardSlideUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .grammar-lesson-btn {
+      animation: cardSlideUp 0.35s ease-out both;
+    }
+    .grammar-lesson-btn:nth-child(1) { animation-delay: 0.02s; }
+    .grammar-lesson-btn:nth-child(2) { animation-delay: 0.04s; }
+    .grammar-lesson-btn:nth-child(3) { animation-delay: 0.06s; }
+    .grammar-lesson-btn:nth-child(4) { animation-delay: 0.08s; }
+    .grammar-lesson-btn:nth-child(5) { animation-delay: 0.1s; }
+    .grammar-lesson-btn:nth-child(6) { animation-delay: 0.12s; }
+    .grammar-lesson-btn:nth-child(7) { animation-delay: 0.14s; }
+    .grammar-lesson-btn:nth-child(8) { animation-delay: 0.16s; }
+    .grammar-lesson-btn:nth-child(9) { animation-delay: 0.18s; }
+    .grammar-lesson-btn:nth-child(10) { animation-delay: 0.2s; }
+    .grammar-lesson-btn:nth-child(11) { animation-delay: 0.22s; }
+    .grammar-lesson-btn:nth-child(12) { animation-delay: 0.24s; }
+    .grammar-lesson-btn:nth-child(13) { animation-delay: 0.26s; }
+    .grammar-lesson-btn:nth-child(14) { animation-delay: 0.28s; }
+
+    /* Completion sparkle */
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    /* Level section card */
+    .grammar-level-card {
+      background: linear-gradient(180deg, #222226 0%, #1e1e22 100%);
+      border: 1px solid #2e2e33;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .grammar-level-card:hover {
+      border-color: #3a3a40;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    /* 3D Lesson Button */
+    .grammar-lesson-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #2a2a2f 0%, #242428 100%);
+      border: 2px solid #35353a;
+      border-bottom: 5px solid #18181c;
+      cursor: pointer;
+      transition: all 0.18s cubic-bezier(.4,0,.2,1);
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    .grammar-lesson-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    }
+    .grammar-lesson-btn:hover {
+      background: linear-gradient(180deg, #32323a 0%, #2a2a2e 100%);
+      border-color: #45454a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+    .grammar-lesson-btn:active {
+      border-bottom-width: 2px;
+      transform: translateY(2px);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    .grammar-lesson-btn.state-completed {
+      border-left: 4px solid #22c55e;
+      background: linear-gradient(90deg, rgba(34,197,94,0.08) 0%, #2a2a2f 30%);
+      border-color: rgba(34,197,94,0.2);
+    }
+    .grammar-lesson-btn.state-completed:hover {
+      border-color: rgba(34,197,94,0.35);
+      box-shadow: 0 6px 20px rgba(34,197,94,0.12), inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    .grammar-lesson-btn.state-completed .lesson-num {
+      position: relative;
+    }
+    .grammar-lesson-btn.state-completed .lesson-num::before {
+      content: '⭐';
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      font-size: 0.7rem;
+      animation: sparkle 2s ease-in-out infinite;
+    }
+    .grammar-lesson-btn.state-current {
+      border-color: rgba(56,189,248,0.45);
+      border-bottom-color: rgba(56,189,248,0.5);
+      background: linear-gradient(90deg, rgba(56,189,248,0.08) 0%, #2a2a2f 30%);
+      box-shadow: 0 2px 12px rgba(56,189,248,0.12), 0 0 30px rgba(56,189,248,0.06);
+      animation: currentPulse 3s ease-in-out infinite, cardSlideUp 0.35s ease-out both;
+    }
+    .grammar-lesson-btn.state-current .lesson-num {
+      animation: currentNumPulse 2s ease-in-out infinite;
+    }
+    @keyframes currentNumPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+    @keyframes currentPulse {
+      0%, 100% { box-shadow: 0 2px 12px rgba(56,189,248,0.12), 0 0 30px rgba(56,189,248,0.06); }
+      50% { box-shadow: 0 2px 16px rgba(56,189,248,0.2), 0 0 40px rgba(56,189,248,0.1); }
+    }
+    .grammar-lesson-btn.state-locked {
+      opacity: 0.4;
+      cursor: default;
+      filter: grayscale(0.5);
+    }
+    .grammar-lesson-btn.state-locked:hover {
+      transform: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .grammar-lesson-btn.state-premium-locked {
+      opacity: 0.5;
+    }
+
+    /* Lesson number circle */
+    .lesson-num {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      border-bottom: 4px solid rgba(0,0,0,0.25);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.15);
+      position: relative;
+    }
+    .lesson-num::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 20%;
+      right: 20%;
+      height: 30%;
+      background: linear-gradient(180deg, rgba(255,255,255,0.18), transparent);
+      border-radius: 999px;
+    }
+
+    /* Progress ring */
+    .progress-ring-wrap {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+    .progress-ring-wrap svg {
+      transform: rotate(-90deg);
+    }
+    .progress-ring-bg {
+      fill: none;
+      stroke: #2e2e32;
+      stroke-width: 3;
+    }
+    .progress-ring-fill {
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.7s ease;
+    }
+    .progress-ring-icon {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    /* Level toggle header */
+    .level-toggle-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      cursor: pointer;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .level-toggle-header:hover {
+      background: rgba(255,255,255,0.02);
+    }
+
+    /* Level icon badge */
+    .level-icon-badge {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      border-bottom: 5px solid rgba(0,0,0,0.2);
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.15);
+      position: relative;
+    }
+    .level-icon-badge::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 20%;
+      right: 20%;
+      height: 30%;
+      background: linear-gradient(180deg, rgba(255,255,255,0.2), transparent);
+      border-radius: 999px;
+    }
+
+    /* Progress bar */
+    .level-progress-bar {
+      height: 12px;
+      background: #1a1a1e;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 24px 20px;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .level-progress-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.7s cubic-bezier(.4,0,.2,1);
+      position: relative;
+    }
+    .level-progress-fill::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 8px;
+      right: 8px;
+      height: 4px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 999px;
+    }
+
+    /* Content slide */
+    .level-lessons-grid {
+      display: grid;
+      gap: 10px;
+      padding: 0 20px 20px;
+    }
+
+    /* Status chip */
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ===== LIGHT MODE ===== */
+    html.light .grammar-hero-new {
+      background: linear-gradient(160deg, #667eea 0%, #764ba2 60%, #6366f1 100%) !important;
+    }
+    html.light .grammar-hero-new h1,
+    html.light .grammar-hero-new p,
+    html.light .grammar-hero-new span,
+    html.light .grammar-hero-new .hero-stat-val,
+    html.light .grammar-hero-new .hero-stat-label { color: #fff !important; }
+    html.light .grammar-level-card {
+      background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%) !important;
+      border-color: #e2e4e9 !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04) !important;
+    }
+    html.light .grammar-level-card:hover {
+      border-color: #d1d5db !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
+    }
+    html.light .level-toggle-header:hover { background: rgba(0,0,0,0.02) !important; }
+    html.light .level-toggle-header .level-title { color: #1f2937 !important; }
+    html.light .level-toggle-header .level-subtitle { color: #6b7280 !important; }
+    html.light .level-toggle-header .level-chevron { color: #9ca3af !important; }
+    html.light .level-toggle-header .level-count-text { color: #9ca3af !important; }
+    html.light .level-progress-bar {
+      background: #e5e7eb !important;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.08) !important;
+    }
+
+    html.light .grammar-lesson-btn {
+      background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%) !important;
+      border-color: #dfe2e6 !important;
+      border-bottom-color: #c8ccd2 !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.8) !important;
+      color: #1f2937 !important;
+    }
+    html.light .grammar-lesson-btn::before {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent) !important;
+    }
+    html.light .grammar-lesson-btn:hover {
+      background: linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%) !important;
+      border-color: #c8ccd2 !important;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8) !important;
+    }
+    html.light .grammar-lesson-btn .lesson-title-text { color: #1f2937 !important; }
+    html.light .grammar-lesson-btn .lesson-sub-text { color: #6b7280 !important; }
+    html.light .grammar-lesson-btn .lesson-meta-text { color: #9ca3af !important; }
+
+    html.light .grammar-lesson-btn.state-completed {
+      background: linear-gradient(90deg, rgba(34,197,94,0.06) 0%, #ffffff 30%) !important;
+      border-left-color: #22c55e !important;
+      border-color: rgba(34,197,94,0.2) !important;
+      border-left-color: #22c55e !important;
+    }
+    html.light .grammar-lesson-btn.state-current {
+      border-color: rgba(56,189,248,0.35) !important;
+      border-bottom-color: rgba(56,189,248,0.45) !important;
+      background: linear-gradient(90deg, rgba(56,189,248,0.06) 0%, #ffffff 30%) !important;
+      box-shadow: 0 2px 12px rgba(56,189,248,0.1) !important;
+    }
+
+    html.light .lesson-num {
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.3) !important;
+    }
+    html.light .progress-ring-bg { stroke: #e5e7eb !important; }
+
+    html.light .placement-cta-new {
+      background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(34,197,94,0.06)) !important;
+      border-color: rgba(99,102,241,0.15) !important;
+    }
+    html.light .placement-cta-new h3 { color: #1f2937 !important; }
+    html.light .placement-cta-new p { color: #6b7280 !important; }
+
+    /* Status chips light mode */
+    html.light .status-chip.chip-free { background: #dcfce7 !important; color: #166534 !important; }
+    html.light .status-chip.chip-done { background: #dcfce7 !important; color: #166534 !important; }
+    html.light .status-chip.chip-current { background: #dbeafe !important; color: #1e40af !important; }
+    html.light .status-chip.chip-locked { background: #f3f4f6 !important; color: #9ca3af !important; }
+    html.light .status-chip.chip-premium { background: #fef3c7 !important; color: #92400e !important; }
+
+    /* Light mode: completion badge */
+    html.light .level-complete-badge {
+      background: #dcfce7 !important;
+      color: #166534 !important;
+      border-color: #bbf7d0 !important;
+    }
+
+    /* Light mode: hero stats */
+    html.light .grammar-hero-new .backdrop-blur-sm {
+      background: rgba(255,255,255,0.15) !important;
+      border-color: rgba(255,255,255,0.25) !important;
+    }
+
+    /* Light mode: lesson meta text */
+    html.light .grammar-lesson-btn .lesson-meta-text { color: #9ca3af !important; }
+
+    /* Light mode: level icon badges keep their colors */
+    html.light .level-icon-badge {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.3) !important;
+    }
+
+    /* Light mode: progress bar fill shimmer */
+    html.light .level-progress-fill::after {
+      background: rgba(255,255,255,0.4) !important;
+    }
+
+    /* Light mode: completed star */
+    html.light .grammar-lesson-btn.state-completed .lesson-num::before {
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+    }
+
+    /* Light mode: placement CTA */
+    html.light .placement-cta-new h3 { color: #1f2937 !important; }
+    html.light .placement-cta-new p { color: #6b7280 !important; }
+
+    /* Mobile improvements */
+    @media (max-width: 640px) {
+      .grammar-hero-new h1 { font-size: 2rem !important; }
+      .level-toggle-header { padding: 16px 16px !important; gap: 12px !important; }
+      .level-icon-badge { width: 44px !important; height: 44px !important; font-size: 1.4rem !important; border-radius: 12px !important; }
+      .level-lessons-grid { padding: 0 12px 16px !important; gap: 8px !important; }
+      .grammar-lesson-btn { padding: 12px 14px !important; gap: 10px !important; border-radius: 12px !important; }
+      .lesson-num { width: 38px !important; height: 38px !important; border-radius: 10px !important; font-size: 0.95rem !important; }
+      .level-progress-bar { margin: 0 16px 16px !important; }
+    }
   </style>
 
   <!-- Hero Section -->
-  <section class="grammar-hero relative overflow-hidden bg-gradient-to-br from-[#1C1C1E] via-[#2a1a3e] to-[#1C1C1E]">
-    <div class="absolute inset-0 opacity-20">
-      <div class="absolute top-10 left-10 w-72 h-72 bg-purple-500 rounded-full blur-[120px]"></div>
-      <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-[150px]"></div>
-    </div>
-    <div class="relative max-w-4xl mx-auto px-4 pt-28 pb-20 text-center">
+  <section class="grammar-hero-new">
+    <div class="relative max-w-3xl mx-auto px-4 pt-28 pb-20 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mb-6">
         <span class="text-lg">📚</span>
         <span class="text-sm font-medium text-white/80">{allLessonsOrdered.length} გაკვეთილი · A1-დან C1-მდე</span>
       </div>
-      <h1 class="font-['Playfair_Display',serif] text-4xl sm:text-5xl md:text-6xl mb-5 leading-tight font-bold">გრამატიკა</h1>
-      <p class="text-lg sm:text-xl text-[#A0A09A] max-w-xl mx-auto leading-relaxed">ისწავლე ინგლისური გრამატიკა ნაბიჯ-ნაბიჯ, ინტერაქტიული სავარჯიშოებით</p>
-      <div class="flex justify-center gap-8 mt-8">
-        {levels.map(level => (
-          <div class="hero-stat flex flex-col items-center gap-1">
-            <span class="text-2xl">{levelMeta[level]?.icon}</span>
-            <span class={`text-sm font-bold ${levelMeta[level]?.color}`}>{level}</span>
-            <span class="text-xs text-[#6B6B65]">{grouped[level].length}</span>
+      <h1 class="font-['Playfair_Display',serif] text-4xl sm:text-5xl md:text-6xl mb-4 leading-tight font-bold text-white">გრამატიკა</h1>
+      <p class="text-lg text-white/60 max-w-lg mx-auto leading-relaxed mb-8">ისწავლე ინგლისური გრამატიკა ნაბიჯ-ნაბიჯ, ინტერაქტიული სავარჯიშოებით</p>
+      
+      <!-- Overall Progress -->
+      <div class="max-w-md mx-auto mb-8">
+        <div class="flex items-center justify-between text-sm mb-2">
+          <span class="text-white/50 font-medium">საერთო პროგრესი</span>
+          <span class="text-white/80 font-bold" id="hero-progress-text">0/{allLessonsOrdered.length}</span>
+        </div>
+        <div class="h-3 bg-white/10 rounded-full overflow-hidden backdrop-blur-sm">
+          <div id="hero-progress-bar" class="h-full bg-gradient-to-r from-green-400 via-emerald-400 to-cyan-400 rounded-full transition-all duration-1000 ease-out relative" style="width: 0%">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
           </div>
+        </div>
+      </div>
+
+      <!-- Streak + XP Stats -->
+      <div class="flex justify-center gap-4 sm:gap-6 mb-8">
+        <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/8 backdrop-blur-sm border border-white/10">
+          <span class="text-lg">🔥</span>
+          <span class="text-white/90 font-bold text-sm" id="hero-streak">0</span>
+          <span class="text-white/40 text-xs">დღე</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/8 backdrop-blur-sm border border-white/10">
+          <span class="text-lg">⭐</span>
+          <span class="text-white/90 font-bold text-sm" id="hero-xp">0</span>
+          <span class="text-white/40 text-xs">XP</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/8 backdrop-blur-sm border border-white/10">
+          <span class="text-lg">🏆</span>
+          <span class="text-white/90 font-bold text-sm" id="hero-completed">0</span>
+          <span class="text-white/40 text-xs">გავლილი</span>
+        </div>
+      </div>
+
+      <div class="flex justify-center gap-6 sm:gap-10">
+        {levels.map(level => (
+          <a href={`#level-${level}`} class="hero-stat flex flex-col items-center gap-1.5 group cursor-pointer">
+            <span class="text-2xl group-hover:scale-110 transition-transform duration-200">{levelMeta[level]?.icon}</span>
+            <span class={`text-sm font-extrabold hero-stat-val ${levelMeta[level]?.color}`}>{level}</span>
+            <span class="text-xs text-white/40 hero-stat-label">{grouped[level].length} გაკვ.</span>
+          </a>
         ))}
       </div>
     </div>
   </section>
 
   <!-- Lessons Section -->
-  <section class="max-w-4xl mx-auto px-4 py-12 sm:py-16">
+  <section class="max-w-3xl mx-auto px-4 py-10 sm:py-14">
 
-    {levels.map(level => {
+    {levels.map((level, li) => {
       const meta = levelMeta[level] || levelMeta['A1'];
       return (
-        <div class="mb-8 grammar-level-section" data-section-level={level}>
-          <button type="button" class="grammar-level-toggle w-full text-left" data-toggle-level={level} aria-expanded="false" style="border:none;background:none;padding:0;cursor:pointer;">
-            <div class="grammar-level-header flex items-center justify-between p-5 rounded-2xl border border-[#2E2E30] bg-[#242426] hover:bg-[#2A2A2C] transition-all duration-200 active:scale-[0.99]">
-              <div class="flex items-center gap-4">
-                <span class="grammar-level-chevron text-xs text-[#6B6B65] transition-transform duration-300" data-chevron={level}>▶</span>
-                <div class={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl ${meta.bg}`}>
-                  {meta.icon}
+        <div class="mb-6 grammar-level-section" data-section-level={level} id={`level-${level}`}>
+          <div class="grammar-level-card">
+            <!-- Level Header -->
+            <div class="level-toggle-header" data-toggle-level={level} role="button" tabindex="0" aria-expanded="false">
+              <div class={`level-icon-badge bg-gradient-to-b ${meta.gradient}`} style={`box-shadow: 0 4px 12px ${meta.bgSolid}33`}>
+                {meta.icon}
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class={`text-xs font-extrabold ${meta.color} tracking-wider`}>{level}</span>
+                  <span class="level-title text-lg font-bold">{meta.label}</span>
                 </div>
-                <div class="text-left">
-                  <div class="flex items-center gap-2">
-                    <span class={`text-sm font-bold ${meta.color}`}>{level}</span>
-                    <span class="level-label text-lg sm:text-xl font-bold">{meta.label}</span>
-                  </div>
-                  <span class="level-count text-xs text-[#6B6B65] grammar-level-counter" data-level={level} data-total={grouped[level].length}>
-                    0/{grouped[level].length} გავლილი
+                <div class="flex items-center gap-3">
+                  <span class="level-subtitle text-xs text-[#6B6B65]">{meta.description}</span>
+                  <span class="level-count-text text-xs text-[#6B6B65] grammar-level-counter" data-level={level} data-total={grouped[level].length}>
+                    0/{grouped[level].length}
                   </span>
+                  <span class="level-complete-badge hidden text-xs font-bold px-2 py-0.5 rounded-full bg-green-500/20 text-green-400 border border-green-500/20" data-complete-badge={level}>🏅 დასრულებული</span>
                 </div>
               </div>
-              <span class="level-count text-sm text-[#6B6B65] hidden sm:block">{grouped[level].length} გაკვეთილი</span>
+              <span class="level-chevron text-sm text-[#6B6B65] transition-transform duration-300" data-chevron={level}>▶</span>
             </div>
-            <!-- Progress Bar -->
-            <div class="w-full h-3 bg-[#2E2E30] rounded-full mt-3 overflow-hidden grammar-level-bar" data-bar-level={level}>
-              <div class={`h-full rounded-full transition-all duration-700 bg-gradient-to-r ${meta.gradient}`} style="width: 0%" data-bar-fill={level}></div>
-            </div>
-          </button>
 
-          <div class="grammar-level-content" data-content-level={level} style="max-height:0;opacity:0;overflow:hidden;transition:max-height 0.4s ease,opacity 0.3s ease;">
-            <div class="grid gap-4 sm:grid-cols-2 pt-5">
-            {grouped[level].map(lesson => {
-              const free = isLessonFree(lesson.slug);
-              const globalIdx = allLessonsOrdered.indexOf(lesson);
-              return (
-                <a href={free ? `/grammar/${lesson.slug}/` : '/placement/'} 
-                   class="grammar-lesson-card group block border border-[#2E2E30] border-b-4 border-b-[#1a1a1c] rounded-2xl p-5 transition-all duration-200 bg-[#242426] hover:bg-[#2E2E30] active:border-b-2 active:mt-[2px]"
-                   data-slug={lesson.slug}
-                   data-idx={globalIdx}
-                   data-free={free ? 'true' : 'false'}
-                   data-level={lesson.level}
-                   data-lesson-url={`/grammar/${lesson.slug}/`}>
-                  <div class="flex items-start justify-between gap-3 mb-3">
-                    <div class="flex items-center gap-3 min-w-0">
-                      <span class="grammar-lesson-status text-2xl flex-shrink-0" data-status-idx={globalIdx}>📖</span>
-                      <div class="min-w-0">
-                        <h3 class="lesson-title font-semibold text-base sm:text-lg leading-snug break-words">{lesson.title_ka}</h3>
-                        <p class="lesson-subtitle text-[#6B6B65] text-sm mt-0.5">{lesson.title_en}</p>
-                      </div>
+            <!-- Progress Bar -->
+            <div class="level-progress-bar" data-bar-level={level}>
+              <div class={`level-progress-fill bg-gradient-to-r ${meta.gradient}`} style="width: 0%" data-bar-fill={level}></div>
+            </div>
+
+            <!-- Lessons Grid -->
+            <div class="level-lessons-grid" data-content-level={level} style="max-height:0;opacity:0;overflow:hidden;transition:max-height 0.4s ease,opacity 0.3s ease;padding-top:0;padding-bottom:0;">
+              {grouped[level].map((lesson, i) => {
+                const free = isLessonFree(lesson.slug);
+                const globalIdx = allLessonsOrdered.indexOf(lesson);
+                return (
+                  <a href={free ? `/grammar/${lesson.slug}/` : '/placement/'} 
+                     class="grammar-lesson-btn"
+                     data-slug={lesson.slug}
+                     data-idx={globalIdx}
+                     data-free={free ? 'true' : 'false'}
+                     data-level={lesson.level}
+                     data-lesson-url={`/grammar/${lesson.slug}/`}>
+                    
+                    <!-- Number/Status Circle -->
+                    <div class={`lesson-num bg-gradient-to-b ${meta.gradient} text-white`} data-num-idx={globalIdx}>
+                      {i + 1}
                     </div>
-                    <span class="grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-medium whitespace-nowrap flex-shrink-0" data-badge-idx={globalIdx}>
-                      {free ? '✅ უფასო' : '🔒'}
-                    </span>
-                  </div>
-                  <div class="grammar-lesson-footer mt-3 pt-3 border-t border-[#2E2E30] text-xs text-[#6B6B65] flex items-center justify-between" data-footer-idx={globalIdx}>
-                    <span>📝 {lesson.exercises.length} სავარჯიშო</span>
-                    <span class={`text-xs px-2 py-0.5 rounded-full font-medium ${meta.bg} ${meta.color}`}>{level}</span>
-                  </div>
-                </a>
-              );
-            })}
+                    
+                    <!-- Text -->
+                    <div class="flex-1 min-w-0">
+                      <div class="lesson-title-text font-bold text-[0.95rem] leading-snug mb-0.5 truncate">{lesson.title_ka}</div>
+                      <div class="lesson-sub-text text-[#6B6B65] text-xs">{lesson.title_en}</div>
+                    </div>
+
+                    <!-- Status + Exercise Count -->
+                    <div class="flex flex-col items-end gap-1.5">
+                      <span class="status-chip chip-free" data-badge-idx={globalIdx}>
+                        {free ? '✅ უფასო' : '🔒'}
+                      </span>
+                      <span class="lesson-meta-text text-[10px] text-[#6B6B65]">📝 {lesson.exercises.length} · ⏱ {Math.ceil(lesson.exercises.length * 0.5)}წთ</span>
+                    </div>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -155,36 +594,76 @@ const levelMeta: Record<string, { icon: string; color: string; colorDark: string
     })}
 
     <!-- Placement Test CTA -->
-    <div id="placement-cta" class="placement-cta mt-10 bg-gradient-to-r from-sky-500/10 to-green-500/10 border border-sky-500/20 rounded-2xl p-8 sm:p-10 text-center">
+    <div class="placement-cta-new mt-8 bg-gradient-to-r from-indigo-500/8 to-emerald-500/8 border border-indigo-500/15 rounded-2xl p-8 sm:p-10 text-center">
       <div class="text-4xl mb-4">🎯</div>
       <h3 class="text-2xl sm:text-3xl font-bold mb-3">გახსენი შენი დონის გაკვეთილები</h3>
       <p class="text-[#6B6B65] mb-8 max-w-md mx-auto">გაიარე დონის ტესტი და გაიხსნება შენი დონის ყველა გრამატიკის გაკვეთილი</p>
-      <a href="/placement/" class="inline-block bg-sky-500 hover:bg-sky-400 text-white font-bold py-3.5 px-10 rounded-xl text-lg transition-all duration-200 border-b-4 border-sky-600 active:border-b-2 active:mt-[2px] hover:shadow-lg hover:shadow-sky-500/25">
+      <a href="/placement/" class="inline-block bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold py-3.5 px-10 rounded-xl text-lg transition-all duration-200 border-b-4 border-indigo-700 active:border-b-2 active:mt-[2px] hover:shadow-lg hover:shadow-indigo-500/25">
         🎯 დონის ტესტი
       </a>
     </div>
   </section>
 
   <script>
+    // Hero stats
+    (function() {
+      try {
+        var completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}');
+        var completedCount = Object.keys(completed).length;
+        var totalLessons = document.querySelectorAll('.grammar-lesson-btn').length;
+        
+        // Progress bar
+        var pct = totalLessons > 0 ? Math.round((completedCount / totalLessons) * 100) : 0;
+        var bar = document.getElementById('hero-progress-bar');
+        var txt = document.getElementById('hero-progress-text');
+        if (bar) setTimeout(function() { bar.style.width = pct + '%'; }, 300);
+        if (txt) txt.textContent = completedCount + '/' + totalLessons;
+        
+        // Streak
+        var streakData = JSON.parse(localStorage.getItem('fluentge-streak') || '{}');
+        var streakEl = document.getElementById('hero-streak');
+        if (streakEl && streakData.count) streakEl.textContent = streakData.count;
+        
+        // XP
+        var xp = parseInt(localStorage.getItem('fluentge-xp') || '0');
+        var xpEl = document.getElementById('hero-xp');
+        if (xpEl) xpEl.textContent = xp;
+        
+        // Completed count
+        var completedEl = document.getElementById('hero-completed');
+        if (completedEl) completedEl.textContent = completedCount;
+      } catch(e) { console.log('hero stats error', e); }
+    })();
+
     // Level accordion toggle
     (function() {
-      document.querySelectorAll('.grammar-level-toggle').forEach(function(btn) {
+      document.querySelectorAll('.level-toggle-header').forEach(function(btn) {
         var level = btn.dataset.toggleLevel;
         var content = document.querySelector('[data-content-level="' + level + '"]');
         var chevron = btn.querySelector('[data-chevron="' + level + '"]');
-        btn.addEventListener('click', function() {
-          var isOpen = content.style.maxHeight !== '0px' && content.style.maxHeight !== '0';
+        
+        function toggle() {
+          var isOpen = content.style.maxHeight !== '0px' && content.style.maxHeight !== '0' && content.style.maxHeight !== '';
           if (isOpen) {
             content.style.maxHeight = '0';
             content.style.opacity = '0';
+            content.style.paddingTop = '0';
+            content.style.paddingBottom = '0';
             chevron.style.transform = 'rotate(0deg)';
             btn.setAttribute('aria-expanded', 'false');
           } else {
-            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.maxHeight = content.scrollHeight + 200 + 'px';
             content.style.opacity = '1';
+            content.style.paddingTop = '';
+            content.style.paddingBottom = '';
             chevron.style.transform = 'rotate(90deg)';
             btn.setAttribute('aria-expanded', 'true');
           }
+        }
+        
+        btn.addEventListener('click', toggle);
+        btn.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
         });
       });
       // Auto-open A1 by default
@@ -192,18 +671,21 @@ const levelMeta: Record<string, { icon: string; color: string; colorDark: string
       if (a1Btn) a1Btn.click();
     })();
 
-    // Grammar level progress bars
+    // Grammar progress + sequential unlock
     (function() {
-      var completed = {};
-      try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
-      if (Array.isArray(completed)) { var obj = {}; completed.forEach(function(s) { obj[s] = true; }); completed = obj; }
-      // Auto-mark lessons as completed for levels passed via placement test
       var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
+      var isPremium = localStorage.getItem('fluentge-premium') === 'true';
       var placementLevel = localStorage.getItem('fluentge-placement-level');
       var placementIdx = placementLevel ? LEVEL_ORDER.indexOf(placementLevel) : -1;
+      
+      var completed = {};
+      try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
+      if (Array.isArray(completed)) { var obj = {}; completed.forEach(function(s) { obj[s] = true; }); completed = obj; localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed)); }
+      
+      // Auto-mark lessons as completed for levels passed via placement test
       if (placementIdx >= 0) {
         var changed = false;
-        document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
+        document.querySelectorAll('.grammar-lesson-btn').forEach(function(card) {
           var cardLevel = card.dataset.level;
           var cardLevelIdx = LEVEL_ORDER.indexOf(cardLevel);
           if (cardLevelIdx >= 0 && cardLevelIdx <= placementIdx && !completed[card.dataset.slug]) {
@@ -211,14 +693,13 @@ const levelMeta: Record<string, { icon: string; color: string; colorDark: string
             changed = true;
           }
         });
-        if (changed) {
-          localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
-        }
+        if (changed) localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
       }
+
       // Count per level
       var levelCounts = {};
       var levelTotals = {};
-      document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
+      document.querySelectorAll('.grammar-lesson-btn').forEach(function(card) {
         var section = card.closest('.grammar-level-section');
         if (!section) return;
         var level = section.dataset.sectionLevel;
@@ -227,127 +708,76 @@ const levelMeta: Record<string, { icon: string; color: string; colorDark: string
         levelTotals[level]++;
         if (completed[card.dataset.slug]) levelCounts[level]++;
       });
-      // Update UI
+
+      // Update counters
       document.querySelectorAll('.grammar-level-counter').forEach(function(el) {
         var level = el.dataset.level;
         var total = parseInt(el.dataset.total, 10);
         var done = levelCounts[level] || 0;
-        el.textContent = done + '/' + total + ' გავლილი';
-      });
-      // Mark completed levels
-      document.querySelectorAll('.grammar-level-section').forEach(function(section) {
-        var level = section.dataset.sectionLevel;
-        var done = levelCounts[level] || 0;
-        var total = levelTotals[level] || 0;
-        var isCompleted = (done > 0 && done === total);
-        if (isCompleted) {
-          var header = section.querySelector('.grammar-level-header');
-          if (header) {
-            header.style.borderColor = 'rgba(34, 197, 94, 0.4)';
-            header.style.borderWidth = '2px';
-            header.style.background = 'rgba(34, 197, 94, 0.08)';
-          }
-          var counter = section.querySelector('.grammar-level-counter');
-          if (counter) {
-            var label = '✅ ' + done + '/' + total + ' გავლილი';
-            counter.innerHTML = label;
-            counter.style.color = 'rgb(74, 222, 128)';
-            counter.style.fontWeight = 'bold';
-          }
+        el.textContent = done + '/' + total;
+        if (done === total && done > 0) {
+          el.textContent = '✅ ' + done + '/' + total;
+          el.style.color = 'rgb(74, 222, 128)';
+          el.style.fontWeight = 'bold';
+          // Show completion badge
+          var badge = document.querySelector('[data-complete-badge="' + level + '"]');
+          if (badge) badge.classList.remove('hidden');
         }
       });
+
+      // Update progress bars
       document.querySelectorAll('[data-bar-fill]').forEach(function(el) {
         var level = el.dataset.barFill;
-        var total = 0;
         var counter = document.querySelector('.grammar-level-counter[data-level="' + level + '"]');
-        if (counter) total = parseInt(counter.dataset.total, 10);
+        var total = counter ? parseInt(counter.dataset.total, 10) : 0;
         var done = levelCounts[level] || 0;
         var pct = total > 0 ? Math.round((done / total) * 100) : 0;
         setTimeout(function() { el.style.width = pct + '%'; }, 200);
       });
-    })();
 
-    // Sequential Lock/Unlock System
-    (function() {
-      var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
-      var isPremium = localStorage.getItem('fluentge-premium') === 'true';
-      var placementLevel = localStorage.getItem('fluentge-placement-level');
-      var placementIdx = placementLevel ? LEVEL_ORDER.indexOf(placementLevel) : -1;
-      var completed = {};
-      try { completed = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
-      if (Array.isArray(completed)) {
-        var obj = {};
-        completed.forEach(function(s) { obj[s] = true; });
-        completed = obj;
-        localStorage.setItem('fluentge-grammar-completed', JSON.stringify(completed));
-      }
-      
-      var allSlugs = [];
-      document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
-        allSlugs.push(card.dataset.slug);
-      });
-      
+      // Sequential lock/unlock
       var prevCompleted = true;
-      
-      document.querySelectorAll('.grammar-lesson-card').forEach(function(card) {
+      document.querySelectorAll('.grammar-lesson-btn').forEach(function(card) {
         var slug = card.dataset.slug;
         var idx = parseInt(card.dataset.idx);
         var isFree = card.dataset.free === 'true';
         var isCompleted = !!completed[slug];
-        
         var lessonLevel = card.dataset.level;
-        var lessonLevelIdx = lessonLevel ? LEVEL_ORDER.indexOf(lessonLevel) : -1;
+        var lessonLevelIdx = LEVEL_ORDER.indexOf(lessonLevel);
         var unlockedByPlacement = placementIdx >= 0 && lessonLevelIdx >= 0 && lessonLevelIdx <= placementIdx;
-        
         var isUnlocked = prevCompleted || isCompleted || unlockedByPlacement;
-        var statusEl = card.querySelector('.grammar-lesson-status');
-        var badgeEl = card.querySelector('.grammar-lesson-badge');
-        var footerEl = card.querySelector('.grammar-lesson-footer');
+        
+        var numEl = card.querySelector('[data-num-idx]');
+        var badgeEl = card.querySelector('[data-badge-idx]');
         
         if (isCompleted) {
-          statusEl.textContent = '✅';
-          statusEl.style.fontSize = '1.5rem';
-          badgeEl.textContent = 'გავლილი ✓';
-          badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-bold bg-green-500/20 text-green-400 border border-green-500/30';
-          card.classList.add('grammar-state-completed');
-          card.style.borderLeftColor = 'rgb(34, 197, 94)';
-          card.style.borderLeftWidth = '4px';
+          card.classList.add('state-completed');
+          if (numEl) { numEl.textContent = '✓'; numEl.style.fontSize = '1.25rem'; }
+          badgeEl.textContent = '✅ გავლილი';
+          badgeEl.className = 'status-chip chip-done bg-green-500/15 text-green-400 border border-green-500/25';
           card.setAttribute('href', '/grammar/' + slug + '/');
-          var exCount = footerEl.textContent.match(/\d+/)?.[0] || '';
-          footerEl.innerHTML = '<span style="color:rgb(74,222,128)">✅ გავლილი</span> · 📝 ' + exCount + ' სავარჯიშო';
         } else if (isUnlocked && (isFree || isPremium || unlockedByPlacement)) {
-          statusEl.textContent = '▶️';
-          statusEl.style.fontSize = '1.5rem';
-          badgeEl.textContent = '📍 მიმდინარე';
-          badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-bold bg-sky-500/25 text-sky-300 border border-sky-400/40 animate-pulse';
-          card.classList.add('grammar-state-current');
-          card.style.boxShadow = '0 0 20px rgba(56, 189, 248, 0.15)';
-          card.style.borderColor = 'rgba(56, 189, 248, 0.3)';
+          card.classList.add('state-current');
+          if (numEl) { numEl.textContent = '▶'; numEl.style.fontSize = '1rem'; }
+          badgeEl.textContent = '📍 დაიწყე';
+          badgeEl.className = 'status-chip chip-current bg-sky-500/15 text-sky-300 border border-sky-400/25';
+          badgeEl.style.animation = 'pulse 2s infinite';
           card.setAttribute('href', '/grammar/' + slug + '/');
-          footerEl.innerHTML = '▶️ <strong style="color:rgb(125,211,252)">დაიწყე ახლა</strong>';
         } else if (!isCompleted && !isPremium && !isFree && !unlockedByPlacement) {
-          statusEl.textContent = '👑';
-          statusEl.style.fontSize = '1.25rem';
-          statusEl.style.opacity = '0.6';
+          card.classList.add('state-premium-locked');
+          if (numEl) { numEl.textContent = '👑'; numEl.style.fontSize = '1rem'; }
           badgeEl.textContent = '🔒 ჩაკეტილი';
-          badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-bold bg-amber-500/15 text-amber-400/80 border border-amber-500/20';
-          card.style.opacity = '0.55';
+          badgeEl.className = 'status-chip chip-premium bg-amber-500/10 text-amber-400/80 border border-amber-500/15';
           card.setAttribute('href', '/placement/');
-          footerEl.innerHTML = '🎯 გაიარე დონის ტესტი გასახსნელად';
         } else if (!isCompleted) {
-          statusEl.textContent = '🔒';
-          statusEl.style.fontSize = '1rem';
-          statusEl.style.opacity = '0.4';
+          card.classList.add('state-locked');
+          if (numEl) { numEl.textContent = '🔒'; numEl.style.fontSize = '0.9rem'; }
           badgeEl.textContent = 'ჩაკეტილი';
-          badgeEl.className = 'grammar-lesson-badge text-xs px-2.5 py-1 rounded-full font-medium bg-neutral-500/10 text-neutral-500 border border-neutral-500/15';
-          card.style.opacity = '0.4';
+          badgeEl.className = 'status-chip chip-locked bg-neutral-500/10 text-neutral-500 border border-neutral-500/10';
           card.style.pointerEvents = 'none';
-          card.style.filter = 'grayscale(0.5)';
-          footerEl.innerHTML = '🔒 ჯერ წინა გაკვეთილი გაიარე';
         }
         prevCompleted = isCompleted;
       });
     })();
-    
   </script>
 </Layout>

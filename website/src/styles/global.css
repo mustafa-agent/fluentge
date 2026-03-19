@@ -1203,6 +1203,78 @@ html.light .grammar-opt-btn.border-red-500 {
   border-color: #ef4444 !important;
 }
 
+/* ========== GLOBAL LIGHT MODE TEXT OVERRIDES ========== */
+html.light .text-\[\#6B6B65\] { color: #4b5563 !important; }
+html.light .text-\[\#A0A09A\] { color: #6b7280 !important; }
+html.light .text-\[\#C8C8C0\] { color: #1a1a2e !important; }
+html.light .text-\[\#8B8B85\] { color: #6b7280 !important; }
+html.light .text-\[\#5B5B55\] { color: #9ca3af !important; }
+html.light .text-\[\#a0a0aa\] { color: #6b7280 !important; }
+
+/* ========== PHRASES PAGE — LIGHT MODE ========== */
+html.light .category-block {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+html.light .category-block button[class*="cat-toggle"],
+html.light .category-block button[class*="premium-toggle"] {
+  border-color: #e5e7eb !important;
+}
+html.light .category-block button[class*="cat-toggle"]:hover,
+html.light .phrase-item:hover {
+  background: #f9fafb !important;
+}
+html.light .phrase-item {
+  border-color: #f3f4f6 !important;
+}
+html.light .phrases-list {
+  --tw-divide-opacity: 0.08;
+}
+html.light #searchInput {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+  color: #1a1a2e !important;
+}
+html.light #searchInput::placeholder {
+  color: #9ca3af !important;
+}
+html.light .level-btn:not(.active) {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+  color: #374151 !important;
+}
+html.light #premiumModal > div {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+html.light #premiumModal .bg-\[\#1C1C1E\] {
+  background: #f3f4f6 !important;
+}
+/* Hero overlays — light mode for all pages with dark gradient */
+html.light .hero-overlay-dark {
+  background: linear-gradient(to bottom, rgba(240,242,245,0.75), #F0F2F5) !important;
+}
+
+/* ========== PREMIUM PAGE — LIGHT MODE ========== */
+html.light .pricing-card,
+html.light [class*="pricing-card"] {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+html.light .pricing-card.popular {
+  background: linear-gradient(180deg, #eef2ff 0%, #ffffff 40%) !important;
+  border-color: #818cf8 !important;
+}
+html.light .pricing-card .text-white { color: #1a1a2e !important; }
+html.light .compare-table th,
+html.light .compare-table td {
+  border-color: #e5e7eb !important;
+}
+html.light .faq-item {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
 /* Course Units — light mode */
 html.light .unit-card {
   background: #ffffff;

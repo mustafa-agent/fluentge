@@ -135,19 +135,20 @@
       "question": "How do you say: 'აქ ბანკი არის.'",
       "options": [
         "There is a bank here.",
-        "Wrong option 1",
-        "Wrong option 2"
+        "There are a bank here.",
+        "A bank is there here."
       ],
       "answer": "There is a bank here."
     },
     {
-      "type": "multiple-choice",
-      "question": "\"There are a problem\" is correct.",
+      "type": "fill-blank",
+      "question": "There ___ a problem with the car.",
       "options": [
-        "True",
-        "False"
+        "is",
+        "are",
+        "am"
       ],
-      "answer": "False"
+      "answer": "is"
     },
     {
       "type": "fill-blank",
@@ -171,11 +172,11 @@
     },
     {
       "type": "multiple-choice",
-      "question": "How do you say: 'ბაღში სამი ღია არის.'",
+      "question": "How do you say: 'ბაღში სამი ღორი არის.'",
       "options": [
         "There are three pigs in the garden.",
-        "Wrong option 1",
-        "Wrong option 2"
+        "There is three pigs in the garden.",
+        "Three pigs is in the garden."
       ],
       "answer": "There are three pigs in the garden."
     }

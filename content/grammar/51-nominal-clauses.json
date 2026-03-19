@@ -39,7 +39,7 @@
       "ka": "ვინც პირველი დაამთავრებს, პრიზს მიიღებს."
     }
   ],
-  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ [შეცდომა 1]\n✅ [სწორი ფორმა 1]\n\n❌ [შეცდომა 2]  \n✅ [სწორი ფორმა 2]\n\n**დაიმახსოვრე:** [მთავარი წესი]",
+  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ I don't know where is he.\n✅ I don't know where he is.\n(არაპირდაპირ კითხვაში სიტყვების რიგი ჩვეულებრივია, არა კითხვითი)\n\n❌ That does he want is unclear.\n✅ What he wants is unclear.\n(ნომინალურ წინადადებაში \"that\" და \"what\" სწორად გამოიყენეთ)\n\n❌ I wonder does she like it.\n✅ I wonder if/whether she likes it.\n(არაპირდაპირ კითხვაში if/whether გამოიყენეთ, არა კითხვითი ფორმა)\n\n**დაიმახსოვრე:** არაპირდაპირ კითხვაში სიტყვების რიგი ისეთია, როგორც მტკიცებით წინადადებაში!",
   "exercises": [
     {
       "type": "multiple-choice",
@@ -124,50 +124,90 @@
     {
       "type": "multiple-choice",
       "question": "___ you decide to do is fine with me.",
-      "options": ["Whatever", "Whenever", "Wherever", "Whoever"],
+      "options": [
+        "Whatever",
+        "Whenever",
+        "Wherever",
+        "Whoever"
+      ],
       "answer": "Whatever"
     },
     {
       "type": "multiple-choice",
       "question": "The problem is ___ we can afford it.",
-      "options": ["whether", "if", "that", "what"],
+      "options": [
+        "whether",
+        "if",
+        "that",
+        "what"
+      ],
       "answer": "whether"
     },
     {
       "type": "multiple-choice",
       "question": "I wonder ___ she will come to the party.",
-      "options": ["if", "that", "what", "which"],
+      "options": [
+        "if",
+        "that",
+        "what",
+        "which"
+      ],
       "answer": "if"
     },
     {
       "type": "multiple-choice",
       "question": "___ happened was unexpected.",
-      "options": ["What", "That", "Which", "How"],
+      "options": [
+        "What",
+        "That",
+        "Which",
+        "How"
+      ],
       "answer": "What"
     },
     {
       "type": "multiple-choice",
       "question": "Can you tell me ___ the meeting is?",
-      "options": ["when", "that", "if", "how"],
+      "options": [
+        "when",
+        "that",
+        "if",
+        "how"
+      ],
       "answer": "when"
     },
     {
       "type": "multiple-choice",
       "question": "The fact ___ he lied upset everyone.",
-      "options": ["that", "what", "which", "how"],
+      "options": [
+        "that",
+        "what",
+        "which",
+        "how"
+      ],
       "answer": "that"
     },
     {
       "type": "multiple-choice",
       "question": "___ studies hard will pass the exam.",
-      "options": ["Whoever", "Whatever", "Whenever", "However"],
+      "options": [
+        "Whoever",
+        "Whatever",
+        "Whenever",
+        "However"
+      ],
       "answer": "Whoever"
     },
     {
       "type": "fill-blank",
       "question": "___ concerns me is his attitude towards work.",
       "answer": "What",
-      "options": ["What", "That", "Which", "How"]
+      "options": [
+        "What",
+        "That",
+        "Which",
+        "How"
+      ]
     }
   ],
   "passThreshold": 0.7

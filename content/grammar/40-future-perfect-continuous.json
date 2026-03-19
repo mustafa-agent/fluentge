@@ -53,19 +53,34 @@
       "answer": "will be lying"
     },
     {
-      "type": "gap-fill",
+      "type": "fill-blank",
       "question": "By December, she ___ (save) enough money.",
-      "answer": "will have saved"
+      "answer": "will have saved",
+      "options": [
+        "will have savs",
+        "will have saved",
+        "will have sav"
+      ]
     },
     {
-      "type": "fill-in-blank",
+      "type": "fill-blank",
       "question": "At 3 PM tomorrow, they ___ the exam. (taking)",
-      "answer": "will be taking"
+      "answer": "will be taking",
+      "options": [
+        "will be taks",
+        "will be tak",
+        "will be taking"
+      ]
     },
     {
-      "type": "transformation",
+      "type": "fill-blank",
       "question": "Change to future perfect continuous: I work here for 5 years (by the end of this year).",
-      "answer": "By the end of this year, I will have been working here for 5 years."
+      "answer": "By the end of this year, I will have been working here for 5 years.",
+      "options": [
+        "By the end of this year, I will have been working here for 5 years.",
+        "won't",
+        "wouldn't"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -78,59 +93,107 @@
       "answer": "will have completed"
     },
     {
-      "type": "sentence-completion",
+      "type": "fill-blank",
       "question": "___ you ___ the car tonight?",
-      "answer": "Will / be using"
+      "answer": "Will / be using",
+      "options": [
+        "Will / be using",
+        "will / be us",
+        "will / be used"
+      ]
     },
     {
-      "type": "error-correction",
+      "type": "fill-blank",
       "question": "Find the error: By the time the movie starts, we will wait for an hour.",
-      "answer": "will wait → will have been waiting"
+      "answer": "will wait → will have been waiting",
+      "options": [
+        "will wait → will have been waiting",
+        "will wait → will have been waited",
+        "will wait → will have been wait"
+      ]
     },
     {
       "type": "matching",
       "question": "Match: Future Continuous shows what?",
-      "options": ["completed action", "action in progress", "duration"],
+      "options": [
+        "completed action",
+        "action in progress",
+        "duration"
+      ],
       "answer": "action in progress"
     },
     {
-      "type": "gap-fill",
+      "type": "fill-blank",
       "question": "By 2025, scientists ___ (discover) a cure.",
-      "answer": "will have discovered"
+      "answer": "will have discovered",
+      "options": [
+        "will have discovering",
+        "will have discovered",
+        "will have discovers"
+      ]
     },
     {
-      "type": "fill-in-blank",
+      "type": "fill-blank",
       "question": "Don't call at 8 — I ___ dinner.",
-      "answer": "will be having"
+      "answer": "will be having",
+      "options": [
+        "will be havs",
+        "will be having",
+        "will be hav"
+      ]
     },
     {
       "type": "sentence-classification",
       "question": "'At 9 PM, I'll be watching TV' - which tense?",
-      "options": ["Future Simple", "Future Continuous", "Future Perfect"],
+      "options": [
+        "Future Simple",
+        "Future Continuous",
+        "Future Perfect"
+      ],
       "answer": "Future Continuous"
     },
     {
-      "type": "transformation",
+      "type": "fill-blank",
       "question": "Complete with 'by': ___ Friday, I will have finished.",
-      "answer": "By"
+      "answer": "By",
+      "options": [
+        "isn't",
+        "wouldn't",
+        "By"
+      ]
     },
     {
       "question": "By 2025, I ___ English for five years.",
       "type": "multiple-choice",
-      "options": ["will have been studying", "will study", "will be studying", "have been studying"],
-      "correct": 0
+      "options": [
+        "will have been studying",
+        "will study",
+        "will be studying",
+        "have been studying"
+      ],
+      "answer": "will have been studying"
     },
     {
       "question": "Next month, she ___ here for ten years.",
       "type": "multiple-choice",
-      "options": ["will have been working", "will work", "will be working", "has been working"],
-      "correct": 0
+      "options": [
+        "will have been working",
+        "will work",
+        "will be working",
+        "has been working"
+      ],
+      "answer": "will have been working"
     },
     {
       "question": "How long ___ you ___ when you graduate?",
       "type": "multiple-choice",
-      "options": ["will have been studying", "will study", "will be studying", "have studied"],
-      "correct": 0
+      "options": [
+        "will have been studying",
+        "will study",
+        "will be studying",
+        "have studied"
+      ],
+      "answer": "will have been studying"
     }
   ]
 }

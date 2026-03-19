@@ -73,149 +73,150 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
   {deck: 'top-2000-words', label: 'ტოპ 2000 სიტყვა', emoji: '📚'},
   {deck: 'verbs-common', label: 'ხშირი ზმნები', emoji: '🏃'},
 ];
+
+const levelColors: Record<string, {bg: string, text: string, border: string, glow: string}> = {
+  'A1': {bg: 'from-emerald-500 to-green-600', text: 'text-emerald-400', border: 'border-emerald-500/30', glow: 'shadow-emerald-500/20'},
+  'A2': {bg: 'from-blue-500 to-indigo-600', text: 'text-blue-400', border: 'border-blue-500/30', glow: 'shadow-blue-500/20'},
+  'B1': {bg: 'from-amber-500 to-yellow-600', text: 'text-amber-400', border: 'border-amber-500/30', glow: 'shadow-amber-500/20'},
+  'B2': {bg: 'from-orange-500 to-red-600', text: 'text-orange-400', border: 'border-orange-500/30', glow: 'shadow-orange-500/20'},
+  'C1': {bg: 'from-purple-500 to-violet-600', text: 'text-purple-400', border: 'border-purple-500/30', glow: 'shadow-purple-500/20'},
+};
+const lc = levelColors[lesson.level] || levelColors['A1'];
 ---
 
 <Layout title={`${lesson.title_ka} — FluentGe`}>
   <style>
-    /* Grammar lesson page styles */
-    @keyframes grammarSlideIn {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes wrongShake {
-      0%, 100% { transform: translateX(0); }
-      20% { transform: translateX(-6px); }
-      40% { transform: translateX(6px); }
-      60% { transform: translateX(-4px); }
-      80% { transform: translateX(4px); }
-    }
-    @keyframes masteryPulse {
-      0% { box-shadow: 0 0 0 rgba(34,197,94,0); }
-      50% { box-shadow: 0 0 24px rgba(34,197,94,0.5); }
-      100% { box-shadow: 0 0 0 rgba(34,197,94,0); }
-    }
-    @keyframes celebratePop {
-      0% { transform: scale(0.5); opacity: 0; }
-      60% { transform: scale(1.15); }
-      100% { transform: scale(1); opacity: 1; }
-    }
-    @keyframes confettiDrop {
-      0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
-      100% { transform: translateY(30px) rotate(360deg); opacity: 0; }
+    /* ===== ANIMATIONS ===== */
+    @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes wrongShake { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-8px)} 40%{transform:translateX(8px)} 60%{transform:translateX(-5px)} 80%{transform:translateX(5px)} }
+    @keyframes celebratePop { 0%{transform:scale(0.3);opacity:0} 50%{transform:scale(1.15)} 100%{transform:scale(1);opacity:1} }
+    @keyframes pulseGlow { 0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,0)} 50%{box-shadow:0 0 20px 4px rgba(34,197,94,0.4)} }
+    @keyframes confetti { 0%{transform:translateY(0) rotate(0deg);opacity:1} 100%{transform:translateY(-80px) rotate(720deg);opacity:0} }
+    @keyframes progressShine { 0%{left:-100%} 100%{left:200%} }
+    @keyframes bounceIn { 0%{transform:scale(0);opacity:0} 50%{transform:scale(1.1)} 100%{transform:scale(1);opacity:1} }
+    @keyframes streakFire { 0%,100%{transform:scale(1)} 50%{transform:scale(1.2)} }
+    @keyframes fadeSlideUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes xpFloat { 0%{opacity:1;transform:translateY(0) scale(1)} 100%{opacity:0;transform:translateY(-40px) scale(1.3)} }
+
+    .animate-slide-up { animation: slideUp 0.4s ease-out both; }
+    .animate-slide-in { animation: slideIn 0.3s ease-out both; }
+    .stagger-1 { animation-delay: 0.05s; }
+    .stagger-2 { animation-delay: 0.1s; }
+    .stagger-3 { animation-delay: 0.15s; }
+    .stagger-4 { animation-delay: 0.2s; }
+    .stagger-5 { animation-delay: 0.25s; }
+
+    /* ===== DARK MODE (default) ===== */
+    .gl-card { background: #1C1C1E; border: 1px solid #2E2E30; color: #E5E7EB; }
+    .gl-card-inner { background: #242426; border: 1px solid #2E2E30; }
+    .gl-card h2, .gl-card h3, .gl-card strong { color: #FFFFFF; }
+    .gl-muted { color: #9CA3AF; }
+    .gl-body { color: #D1D5DB; }
+    .gl-heading { color: #FFFFFF; }
+
+    /* ===== LIGHT MODE ===== */
+    html.light .gl-card { background: #FFFFFF; border-color: #E5E7EB; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04); color: #374151; }
+    html.light .gl-card h2, html.light .gl-card h3, html.light .gl-card strong { color: #111827 !important; }
+    html.light .gl-card p, html.light .gl-card span, html.light .gl-card div, html.light .gl-card li { color: #374151; }
+    html.light .gl-card-inner { background: #F9FAFB; border-color: #E5E7EB; }
+    html.light .gl-muted { color: #6B7280 !important; }
+    html.light .gl-body { color: #374151 !important; }
+    html.light .gl-heading { color: #111827 !important; }
+
+    html.light .gl-example-card { background: #F0F9FF !important; border-color: #BAE6FD !important; }
+    html.light .gl-example-en { color: #1E3A5F !important; }
+    html.light .gl-example-ka { color: #6B7280 !important; }
+
+    html.light .gl-mistakes-card { background: #FEF2F2 !important; border-color: #FECACA !important; }
+    html.light .gl-mistakes-card h2 { color: #DC2626 !important; }
+    html.light .gl-mistakes-card p, html.light .gl-mistakes-card span, html.light .gl-mistakes-card div { color: #374151 !important; }
+
+    html.light .gl-btn-option { background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%) !important; border-color: #D1D5DB !important; color: #1F2937 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+    html.light .gl-btn-option span { color: #1F2937 !important; }
+    html.light .gl-btn-option:hover { background: linear-gradient(180deg, #FFFFFF 0%, #EFF6FF 100%) !important; border-color: #93C5FD !important; }
+    html.light .gl-btn-option .gl-letter { background: #E5E7EB !important; color: #4B5563 !important; }
+
+    html.light .gl-progress-track { background: #E5E7EB !important; }
+    html.light .gl-breadcrumb { color: #6B7280 !important; }
+    html.light .gl-breadcrumb:hover { color: #3B82F6 !important; }
+
+    html.light .gl-level-badge-A1 { background: #D1FAE5 !important; color: #065F46 !important; }
+    html.light .gl-level-badge-A2 { background: #DBEAFE !important; color: #1E40AF !important; }
+    html.light .gl-level-badge-B1 { background: #FEF3C7 !important; color: #92400E !important; }
+    html.light .gl-level-badge-B2 { background: #FFEDD5 !important; color: #9A3412 !important; }
+    html.light .gl-level-badge-C1 { background: #EDE9FE !important; color: #5B21B6 !important; }
+
+    html.light .gl-exercise-area { background: #FFFFFF !important; border-color: #E5E7EB !important; }
+    html.light .gl-exercise-area p, html.light .gl-exercise-area span { color: #1F2937 !important; }
+
+    html.light .gl-result-card { background: #F9FAFB !important; border-color: #E5E7EB !important; }
+    html.light .gl-result-heading { color: #111827 !important; }
+    html.light #score-msg { color: #6B7280 !important; }
+
+    html.light .gl-related-card { background: #FFFFFF !important; border-color: #E5E7EB !important; }
+    html.light .gl-related-card:hover { border-color: #93C5FD !important; background: #F0F9FF !important; }
+
+    html.light .gl-nav-link { background: #FFFFFF !important; border-color: #E5E7EB !important; color: #374151 !important; }
+    html.light .gl-nav-link:hover { border-color: #93C5FD !important; background: #F0F9FF !important; }
+
+    html.light .gl-feedback-correct { background: #F0FDF4 !important; border-color: #86EFAC !important; }
+    html.light .gl-feedback-correct .gl-feedback-title { color: #15803D !important; }
+    html.light .gl-feedback-correct .gl-feedback-detail { color: #22C55E !important; }
+    html.light .gl-feedback-wrong { background: #FEF2F2 !important; border-color: #FCA5A5 !important; }
+    html.light .gl-feedback-wrong .gl-feedback-title { color: #DC2626 !important; }
+    html.light .gl-feedback-wrong .gl-feedback-detail { color: #EF4444 !important; }
+
+    /* ===== EXERCISE 3D BUTTONS ===== */
+    .gl-btn-3d { border-bottom-width: 4px; transition: all 0.12s ease; cursor: pointer; user-select: none; }
+    .gl-btn-3d:active { border-bottom-width: 2px; margin-top: 2px; }
+
+    /* ===== PROGRESS BAR SHINE ===== */
+    .gl-progress-shine { position: relative; overflow: hidden; }
+    .gl-progress-shine::after {
+      content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      animation: progressShine 2s ease-in-out infinite;
     }
 
-    /* Light mode overrides */
-    html.light .gl-card {
-      background: #FFFFFF;
-      border-color: #E5E7EB;
+    /* ===== MASTERY 70% MARKER ===== */
+    .gl-mastery-marker {
+      position: absolute; top: -2px; bottom: -2px; width: 3px;
+      left: 70%; transform: translateX(-50%);
+      background: #FBBF24; border-radius: 2px;
+      z-index: 10;
     }
-    html.light .gl-card-alt {
-      background: #FEF2F2;
-      border-color: #FECACA;
-    }
-    html.light .gl-exercise-card {
-      background: #FFFFFF;
-      border-color: #E5E7EB;
-    }
-    html.light .gl-btn-option {
-      background: #F9FAFB;
-      border-color: #D1D5DB;
-      color: #1F2937;
-    }
-    html.light .gl-btn-option:hover {
-      background: #F3F4F6;
-      border-color: #9CA3AF;
-    }
-    html.light .gl-btn-option .gl-letter {
-      background: #E5E7EB;
-      color: #6B7280;
-    }
-    html.light .gl-progress-track {
-      background: #E5E7EB;
-    }
-    html.light .gl-text-muted {
-      color: #6B7280;
-    }
-    html.light .gl-text-secondary {
-      color: #4B5563;
-    }
-    html.light .gl-text-body {
-      color: #374151;
-    }
-    html.light .gl-breadcrumb {
-      color: #6B7280;
-    }
-    html.light .gl-breadcrumb:hover {
-      color: #3B82F6;
-    }
-    html.light .gl-example-card {
-      background: #F0F9FF;
-      border-color: #BAE6FD;
-    }
-    html.light .gl-example-card .gl-example-en {
-      color: #1E40AF;
-    }
-    html.light .gl-example-card .gl-example-ka {
-      color: #6B7280;
-    }
-    html.light .gl-stat-card {
-      background: #F9FAFB;
-    }
-    html.light .gl-result-heading {
-      color: #111827;
-    }
-    html.light .gl-level-badge-A1 { background: #D1FAE5; color: #065F46; }
-    html.light .gl-level-badge-A2 { background: #DBEAFE; color: #1E40AF; }
-    html.light .gl-level-badge-B1 { background: #FEF3C7; color: #92400E; }
-    html.light .gl-level-badge-B2 { background: #FFEDD5; color: #9A3412; }
-    html.light .gl-level-badge-C1 { background: #EDE9FE; color: #5B21B6; }
-
-    /* Typography */
-    .gl-heading-1 {
-      font-size: 1.875rem;
-      font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-    }
-    .gl-heading-2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      line-height: 1.3;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .gl-body-text {
-      font-size: 1rem;
-      line-height: 1.75;
+    .gl-mastery-marker::before {
+      content: '70%'; position: absolute; bottom: calc(100% + 4px); left: 50%;
+      transform: translateX(-50%); font-size: 10px; font-weight: 700;
+      color: #FBBF24; white-space: nowrap;
     }
 
-    /* 3D button base */
-    .gl-btn-3d {
-      border-bottom-width: 4px;
-      transition: all 0.1s ease;
-      cursor: pointer;
-      user-select: none;
+    /* ===== XP FLOAT ===== */
+    .xp-float {
+      position: fixed; pointer-events: none; z-index: 9999;
+      font-weight: 800; font-size: 1.25rem; color: #FBBF24;
+      animation: xpFloat 0.8s ease-out forwards;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.3);
     }
-    .gl-btn-3d:active {
-      border-bottom-width: 2px;
-      margin-top: 2px;
-    }
+
+    /* ===== STREAK FIRE ===== */
+    .streak-fire { animation: streakFire 0.5s ease-in-out; }
   </style>
 
-  <section class="max-w-2xl mx-auto px-4 py-10 sm:py-16">
-    <!-- Breadcrumb Navigation -->
-    <nav class="flex items-center gap-2 text-sm mb-8">
-      <a href="/grammar/" class="gl-breadcrumb gl-text-muted hover:underline transition-colors flex items-center gap-1">
+  <section class="max-w-2xl mx-auto px-4 py-8 sm:py-14">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-sm mb-8 animate-slide-up">
+      <a href="/grammar/" class="gl-breadcrumb gl-muted hover:underline transition-colors flex items-center gap-1">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
         გრამატიკა
       </a>
-      <span class="gl-text-muted">/</span>
-      <span class="gl-text-secondary font-medium">{lesson.title_ka}</span>
+      <span class="gl-muted">/</span>
+      <span class="gl-body font-medium">{lesson.title_ka}</span>
     </nav>
 
     <!-- Review Mode Banner -->
-    <div id="review-banner" class="hidden mb-6 p-4 rounded-xl bg-gradient-to-r from-purple-600/20 to-indigo-600/20 border border-purple-500/30">
+    <div id="review-banner" class="hidden mb-6 p-4 rounded-2xl bg-gradient-to-r from-purple-600/20 to-indigo-600/20 border border-purple-500/30 animate-slide-up">
       <div class="flex items-center gap-3">
         <span class="text-2xl">🔄</span>
         <div>
@@ -225,156 +226,158 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       </div>
     </div>
 
-    <!-- Lesson Header -->
-    <header class="mb-10">
-      <div class="flex items-center gap-3 mb-3">
-        <span class={`gl-level-badge-${lesson.level} px-3 py-1 rounded-full text-xs font-bold ${lesson.level === 'A1' ? 'bg-green-500/20 text-green-400' : lesson.level === 'A2' ? 'bg-blue-500/20 text-blue-400' : lesson.level === 'B1' ? 'bg-yellow-500/20 text-yellow-400' : lesson.level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>{lesson.level}</span>
-        <span class="gl-text-muted text-sm">გაკვეთილი #{lesson.id}</span>
+    <!-- ===== LESSON HEADER ===== -->
+    <header class="mb-10 animate-slide-up">
+      <div class="flex items-center gap-3 mb-4">
+        <span class={`gl-level-badge-${lesson.level} px-4 py-1.5 rounded-full text-xs font-extrabold tracking-wide ${lesson.level === 'A1' ? 'bg-emerald-500/20 text-emerald-400' : lesson.level === 'A2' ? 'bg-blue-500/20 text-blue-400' : lesson.level === 'B1' ? 'bg-amber-500/20 text-amber-400' : lesson.level === 'B2' ? 'bg-orange-500/20 text-orange-400' : 'bg-purple-500/20 text-purple-400'}`}>
+          {lesson.level}
+        </span>
+        <span class="gl-muted text-sm font-medium">გაკვეთილი #{lesson.id}</span>
       </div>
-      <h1 class="gl-heading-1 mb-2">{lesson.title_ka}</h1>
-      <p class="gl-text-muted text-lg">{lesson.title_en}</p>
+      <h1 class="gl-heading text-3xl sm:text-4xl font-extrabold tracking-tight mb-2">{lesson.title_ka}</h1>
+      <p class="gl-muted text-lg font-medium">{lesson.title_en}</p>
     </header>
 
-    <!-- Lesson Content -->
+    <!-- ===== LESSON CONTENT ===== -->
     <div id="lesson-content" class={isFree ? '' : 'hidden'}>
 
-      <!-- Explanation Section -->
-      <div class="gl-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 mb-8">
-        <h2 class="gl-heading-2 mb-5">
-          <span class="text-2xl">📚</span>
-          <span>ახსნა</span>
-        </h2>
-        <div class="gl-body-text gl-text-body text-[#cbd5e1] leading-relaxed" id="grammar-explanation"></div>
+      <!-- EXPLANATION CARD -->
+      <div class="gl-card rounded-2xl p-6 sm:p-8 mb-6 animate-slide-up stagger-1">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-sky-500/15 flex items-center justify-center text-xl">📖</div>
+          <h2 class="text-xl font-bold gl-heading">ახსნა</h2>
+        </div>
+        <div class="gl-body text-base leading-relaxed space-y-3" id="grammar-explanation"></div>
         <script define:vars={{ explanationText: lesson.explanation_ka }}>
           (function() {
             var text = explanationText;
             text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-            text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>');
-            text = text.replace(/^## (.+)$/gm, '<h3 class="text-lg font-bold mt-6 mb-3 text-white flex items-center gap-2"><span class="w-1 h-5 bg-sky-400 rounded-full inline-block"></span>$1</h3>');
+            text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold">$1</strong>');
+            text = text.replace(/^## (.+)$/gm, '<h3 class="text-lg font-bold mt-6 mb-3 flex items-center gap-2"><span class="w-1.5 h-5 bg-sky-400 rounded-full inline-block"></span>$1</h3>');
             text = text.replace(/^[•\-] (.+)$/gm, '<div class="flex gap-3 ml-1 my-1.5"><span class="text-sky-400 mt-0.5 shrink-0">•</span><span>$1</span></div>');
-            text = text.replace(/^(\d+)\. (.+)$/gm, '<h3 class="text-lg font-bold mt-6 mb-3 text-white flex items-center gap-2"><span class="w-7 h-7 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center text-sm font-bold shrink-0">$1</span>$2</h3>');
-            text = text.replace(/^(✅.+)$/gm, '<div class="bg-green-500/10 border-l-3 border-green-500 pl-4 py-2 my-2 rounded-r-lg font-medium">$1</div>');
-            text = text.replace(/^(❌.+)$/gm, '<div class="bg-red-500/10 border-l-3 border-red-500 pl-4 py-2 my-2 rounded-r-lg font-medium">$1</div>');
+            text = text.replace(/^(\d+)\. (.+)$/gm, '<h3 class="text-lg font-bold mt-6 mb-3 flex items-center gap-2"><span class="w-7 h-7 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center text-sm font-bold shrink-0">$1</span>$2</h3>');
+            text = text.replace(/^(✅.+)$/gm, '<div class="bg-green-500/10 border-l-[3px] border-green-500 pl-4 py-2 my-2 rounded-r-lg font-medium text-green-400">$1</div>');
+            text = text.replace(/^(❌.+)$/gm, '<div class="bg-red-500/10 border-l-[3px] border-red-500 pl-4 py-2 my-2 rounded-r-lg font-medium text-red-400">$1</div>');
             text = text.replace(/^\|.*\|$/gm, '');
             text = text.replace(/^\s*[-|]+\s*$/gm, '');
-            text = text.replace(/\n\n+/g, '</p><p class="mb-4">');
+            text = text.replace(/\n\n+/g, '</p><p class="mb-3">');
             text = text.replace(/\n/g, '<br>');
-            text = '<p class="mb-4">' + text + '</p>';
-            text = text.replace(/<p class="mb-4"><\/p>/g, '');
-            text = text.replace(/<p class="mb-4">(<h3)/g, '$1');
+            text = '<p class="mb-3">' + text + '</p>';
+            text = text.replace(/<p class="mb-3"><\/p>/g, '');
+            text = text.replace(/<p class="mb-3">(<h3)/g, '$1');
             text = text.replace(/(<\/h3>)<\/p>/g, '$1');
             document.getElementById('grammar-explanation').innerHTML = text;
           })();
         </script>
       </div>
 
-      <!-- Examples Section — Cards -->
-      <div class="gl-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 sm:p-8 mb-8">
-        <h2 class="gl-heading-2 mb-5">
-          <span class="text-2xl">💡</span>
-          <span>მაგალითები</span>
-        </h2>
+      <!-- EXAMPLES CARD -->
+      <div class="gl-card rounded-2xl p-6 sm:p-8 mb-6 animate-slide-up stagger-2">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/15 flex items-center justify-center text-xl">💡</div>
+          <h2 class="text-xl font-bold gl-heading">მაგალითები</h2>
+        </div>
         <div class="grid gap-3">
           {lesson.examples.map((ex: {en: string, ka: string}, i: number) => (
-            <div class="gl-example-card bg-[#1C1C1E] rounded-xl p-4 border border-[#2E2E30] flex items-start gap-4 transition-colors">
-              <span class="w-8 h-8 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">{i + 1}</span>
+            <div class={`gl-example-card gl-card-inner rounded-xl p-4 flex items-start gap-4 transition-all hover:scale-[1.01] animate-slide-in stagger-${Math.min(i+1, 5)}`}>
+              <span class="w-8 h-8 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">{i + 1}</span>
               <div class="flex-1 min-w-0">
-                <p class="gl-example-en font-semibold text-white mb-1 leading-relaxed">{ex.en}</p>
-                <p class="gl-example-ka gl-text-muted text-sm leading-relaxed">{ex.ka}</p>
+                <p class="gl-example-en font-semibold mb-1 leading-relaxed">{ex.en}</p>
+                <p class="gl-example-ka gl-muted text-sm leading-relaxed">{ex.ka}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <!-- Common Mistakes Section -->
-      <div class="gl-card-alt bg-red-500/5 border border-red-500/20 rounded-2xl p-6 sm:p-8 mb-10">
-        <h2 class="gl-heading-2 mb-5 text-red-400">
-          <span class="text-2xl">⚠️</span>
-          <span>ხშირი შეცდომები</span>
-        </h2>
-        <div class="gl-body-text gl-text-body text-[#cbd5e1] leading-relaxed" id="grammar-mistakes"></div>
+      <!-- COMMON MISTAKES CARD -->
+      <div class="gl-card gl-mistakes-card rounded-2xl p-6 sm:p-8 mb-10 animate-slide-up stagger-3 border-red-500/20" style="background: linear-gradient(135deg, rgba(239,68,68,0.05), rgba(239,68,68,0.02));">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-red-500/15 flex items-center justify-center text-xl">⚠️</div>
+          <h2 class="text-xl font-bold text-red-400">ხშირი შეცდომები</h2>
+        </div>
+        <div class="gl-body text-base leading-relaxed" id="grammar-mistakes"></div>
         <script define:vars={{ mistakesText: lesson.common_mistakes_ka }}>
           (function() {
             var text = mistakesText;
             text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
             text = text.replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold">$1</strong>');
-            text = text.replace(/^(\d+)\) (.+)$/gm, '<h4 class="font-bold mt-5 mb-2 text-white text-base">$1) $2</h4>');
-            text = text.replace(/^(\d+)\. (.+)$/gm, '<h4 class="font-bold mt-5 mb-2 text-white text-base">$1. $2</h4>');
-            text = text.replace(/^(✅.+)$/gm, '<div class="flex items-start gap-2 bg-green-500/10 border border-green-500/20 rounded-lg px-4 py-2.5 my-2"><span class="shrink-0 mt-0.5">✅</span><span class="text-green-300">$1</span></div>'.replace('$1', '$1').replace(/✅/, ''));
-            // Simpler approach for ✅ and ❌
-            text = text.replace(/^(✅.+)$/gm, '<div class="bg-green-500/10 border border-green-500/20 rounded-lg px-4 py-2.5 my-2 text-green-300 font-medium">$1</div>');
-            text = text.replace(/^(❌.+)$/gm, '<div class="bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-2.5 my-2 text-red-300 font-medium">$1</div>');
+            text = text.replace(/^(\d+)[\)\.] (.+)$/gm, '<h4 class="font-bold mt-5 mb-2 text-base">$1. $2</h4>');
+            text = text.replace(/^(✅.+)$/gm, '<div class="bg-green-500/10 border border-green-500/20 rounded-lg px-4 py-2.5 my-2 text-green-400 font-medium">$1</div>');
+            text = text.replace(/^(❌.+)$/gm, '<div class="bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-2.5 my-2 text-red-400 font-medium">$1</div>');
             text = text.replace(/^\|.*\|$/gm, '');
             text = text.replace(/^\s*[-|]+\s*$/gm, '');
-            text = text.replace(/\n\n+/g, '</p><p class="mb-4">');
+            text = text.replace(/\n\n+/g, '</p><p class="mb-3">');
             text = text.replace(/\n/g, '<br>');
-            text = '<p class="mb-4">' + text + '</p>';
-            text = text.replace(/<p class="mb-4"><\/p>/g, '');
+            text = '<p class="mb-3">' + text + '</p>';
+            text = text.replace(/<p class="mb-3"><\/p>/g, '');
             document.getElementById('grammar-mistakes').innerHTML = text;
           })();
         </script>
       </div>
 
-      <!-- Exercises Section -->
-      <div class="gl-exercise-card bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden" id="exercises-section">
-        <!-- Progress bars -->
-        <div class="px-6 pt-5 pb-0">
-          <!-- Question progress -->
+      <!-- ===== EXERCISES SECTION ===== -->
+      <div class="gl-card gl-exercise-area rounded-2xl overflow-hidden animate-slide-up stagger-4" id="exercises-section">
+        <!-- Header with progress -->
+        <div class="px-5 sm:px-6 pt-5 pb-2">
+          <!-- Top row: close + question counter -->
           <div class="flex items-center gap-3 mb-3">
-            <button id="exercise-close-btn" class="gl-text-muted hover:text-red-400 transition-colors text-lg leading-none" title="დახურვა">✕</button>
-            <div class="flex-1 h-3 gl-progress-track bg-[#1C1C1E] rounded-full overflow-hidden">
-              <div id="exercise-progress-bar" class="h-full bg-gradient-to-r from-sky-400 to-sky-500 rounded-full transition-all duration-500" style="width:0%"></div>
+            <button id="exercise-close-btn" class="gl-muted hover:text-red-400 transition-colors text-lg leading-none p-1" title="დახურვა">✕</button>
+            <div class="flex-1 h-3.5 gl-progress-track bg-[#2A2A2C] rounded-full overflow-hidden relative">
+              <div id="exercise-progress-bar" class="h-full bg-gradient-to-r from-sky-400 to-blue-500 rounded-full transition-all duration-500 ease-out gl-progress-shine" style="width:0%"></div>
             </div>
-            <span id="exercise-counter" class="text-sm font-bold gl-text-muted tabular-nums min-w-[3rem] text-right">0/0</span>
+            <span id="exercise-counter" class="text-sm font-bold gl-muted tabular-nums min-w-[3rem] text-right">0/0</span>
           </div>
-          <!-- Mastery bar -->
-          <div class="flex items-center gap-3 mb-2">
-            <span class="text-xs gl-text-muted min-w-[24px]">0%</span>
-            <div class="flex-1 h-5 gl-progress-track bg-[#1C1C1E] rounded-full overflow-hidden relative">
-              <div class="absolute top-0 bottom-0 w-0.5 bg-yellow-400/60 z-10" style="left:70%"></div>
-              <div class="absolute text-[9px] text-yellow-400/80 font-bold z-10" style="left:70%;top:-1px;transform:translateX(-50%)">70%</div>
+          <!-- Mastery bar with 70% marker -->
+          <div class="flex items-center gap-3 mb-1">
+            <span class="text-xs gl-muted font-semibold min-w-[24px]">🏆</span>
+            <div class="flex-1 h-4 gl-progress-track bg-[#2A2A2C] rounded-full overflow-hidden relative">
+              <div class="gl-mastery-marker"></div>
               <div id="mastery-bar" class="h-full bg-gradient-to-r from-orange-400 to-amber-500 rounded-full transition-all duration-700 ease-out" style="width:0%"></div>
             </div>
-            <span id="mastery-pct" class="text-xs font-bold gl-text-muted tabular-nums min-w-[28px] text-right">0%</span>
+            <span id="mastery-pct" class="text-xs font-bold gl-muted tabular-nums min-w-[32px] text-right">0%</span>
+          </div>
+          <div class="text-center mb-2">
+            <span class="text-[10px] gl-muted font-medium">გავლისთვის საჭიროა 70%</span>
           </div>
         </div>
 
-        <!-- Exercise content -->
-        <div id="exercise-container" class="px-6 py-6"></div>
+        <!-- Exercise content area -->
+        <div id="exercise-container" class="px-5 sm:px-6 py-6"></div>
 
-        <!-- Bottom feedback bar -->
+        <!-- Feedback bar -->
         <div id="exercise-feedback-bar" class="hidden">
-          <div id="feedback-inner" class="px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-              <span id="feedback-icon" class="text-2xl"></span>
-              <div>
-                <p id="feedback-title" class="font-bold text-lg"></p>
-                <p id="feedback-detail" class="text-sm opacity-80"></p>
+          <div id="feedback-inner" class="px-5 sm:px-6 py-4 flex items-center justify-between gap-4 border-t-2">
+            <div class="flex items-center gap-3 min-w-0">
+              <span id="feedback-icon" class="text-3xl shrink-0" style="animation: bounceIn 0.3s ease-out"></span>
+              <div class="min-w-0">
+                <p id="feedback-title" class="gl-feedback-title font-bold text-lg"></p>
+                <p id="feedback-detail" class="gl-feedback-detail text-sm"></p>
               </div>
             </div>
-            <button id="continue-btn" class="gl-btn-3d font-bold uppercase tracking-wide px-8 py-3 rounded-xl text-white">გაგრძელება</button>
+            <button id="continue-btn" class="gl-btn-3d font-bold uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl text-white shrink-0 text-sm sm:text-base">გაგრძელება</button>
           </div>
         </div>
 
         <!-- Result screen -->
-        <div id="score-container" class="hidden px-6 py-12 text-center">
+        <div id="score-container" class="hidden px-5 sm:px-6 py-12 text-center">
           <div class="text-7xl mb-5" id="score-emoji" style="animation: celebratePop 0.5s ease-out"></div>
+          <div id="confetti-container" class="hidden relative h-0 overflow-visible"></div>
           <div id="pass-badge" class="hidden inline-block px-5 py-2 rounded-full text-sm font-bold mb-4"></div>
-          <h2 class="gl-result-heading text-2xl sm:text-3xl font-extrabold mb-2" id="score-heading">გაკვეთილი დასრულდა!</h2>
-          <p class="gl-text-muted text-lg mb-10" id="score-msg"></p>
-          <div class="grid grid-cols-3 gap-4 max-w-sm mx-auto mb-10">
-            <div class="gl-stat-card bg-[#1C1C1E] rounded-2xl p-5 gl-btn-3d border-b-4 border-green-500/30">
-              <div class="text-3xl font-extrabold text-green-400 mb-1" id="score-correct">0</div>
-              <div class="text-xs gl-text-muted font-medium">სწორი</div>
+          <h2 class="gl-result-heading gl-heading text-2xl sm:text-3xl font-extrabold mb-2" id="score-heading">გაკვეთილი დასრულდა!</h2>
+          <p class="gl-muted text-lg mb-10" id="score-msg"></p>
+          <div class="grid grid-cols-3 gap-3 sm:gap-4 max-w-sm mx-auto mb-10">
+            <div class="gl-result-card gl-card-inner rounded-2xl p-4 sm:p-5 gl-btn-3d border-b-4 border-green-500/30">
+              <div class="text-2xl sm:text-3xl font-extrabold text-green-400 mb-1" id="score-correct">0</div>
+              <div class="text-[11px] gl-muted font-medium">სწორი</div>
             </div>
-            <div class="gl-stat-card bg-[#1C1C1E] rounded-2xl p-5 gl-btn-3d border-b-4 border-sky-500/30">
-              <div class="text-3xl font-extrabold text-sky-400 mb-1" id="score-pct">0%</div>
-              <div class="text-xs gl-text-muted font-medium">სიზუსტე</div>
+            <div class="gl-result-card gl-card-inner rounded-2xl p-4 sm:p-5 gl-btn-3d border-b-4 border-sky-500/30">
+              <div class="text-2xl sm:text-3xl font-extrabold text-sky-400 mb-1" id="score-pct">0%</div>
+              <div class="text-[11px] gl-muted font-medium">სიზუსტე</div>
             </div>
-            <div class="gl-stat-card bg-[#1C1C1E] rounded-2xl p-5 gl-btn-3d border-b-4 border-amber-500/30">
-              <div class="text-3xl font-extrabold text-amber-400 mb-1" id="score-xp">0</div>
-              <div class="text-xs gl-text-muted font-medium">XP ⭐</div>
+            <div class="gl-result-card gl-card-inner rounded-2xl p-4 sm:p-5 gl-btn-3d border-b-4 border-amber-500/30">
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 mb-1" id="score-xp">0</div>
+              <div class="text-[11px] gl-muted font-medium">XP ⭐</div>
             </div>
           </div>
           <div class="flex gap-4 justify-center flex-wrap" id="score-buttons">
@@ -385,17 +388,55 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
           </div>
         </div>
       </div>
+
+      <!-- ===== LESSON NAVIGATION ===== -->
+      <div class="flex gap-3 mt-6 animate-slide-up stagger-5">
+        {prevLesson && (
+          <a href={`/grammar/${prevLesson.slug}/`} class="gl-nav-link gl-card-inner flex-1 flex items-center gap-3 p-4 rounded-xl transition-all hover:scale-[1.02] group">
+            <svg class="w-5 h-5 gl-muted group-hover:text-sky-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            <div class="min-w-0">
+              <div class="text-[11px] gl-muted font-medium">წინა</div>
+              <div class="text-sm font-semibold truncate">{prevLesson.title_ka}</div>
+            </div>
+          </a>
+        )}
+        {nextLesson && (
+          <a href={`/grammar/${nextLesson.slug}/`} class="gl-nav-link gl-card-inner flex-1 flex items-center gap-3 p-4 rounded-xl transition-all hover:scale-[1.02] group text-right justify-end">
+            <div class="min-w-0">
+              <div class="text-[11px] gl-muted font-medium">შემდეგი</div>
+              <div class="text-sm font-semibold truncate">{nextLesson.title_ka}</div>
+            </div>
+            <svg class="w-5 h-5 gl-muted group-hover:text-sky-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        )}
+      </div>
     </div>
 
-    <!-- Premium locked overlay -->
+    <!-- Related Vocabulary -->
+    <div class="gl-card rounded-2xl p-6 sm:p-8 mt-8 animate-slide-up">
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-10 h-10 rounded-xl bg-violet-500/15 flex items-center justify-center text-xl">🔗</div>
+        <h2 class="text-xl font-bold gl-heading">დაკავშირებული ლექსიკა</h2>
+      </div>
+      <p class="gl-muted text-sm mb-4">ივარჯიშე ამ სიტყვებით გრამატიკის უკეთ ასათვისებლად</p>
+      <div class="grid gap-3 sm:grid-cols-2">
+        {relatedDecks.map(rd => (
+          <a href={`/phrases/?deck=${rd.deck}`} class="gl-related-card gl-card-inner flex items-center gap-3 p-4 rounded-xl transition-all hover:scale-[1.02] group">
+            <span class="text-2xl">{rd.emoji}</span>
+            <span class="font-medium text-sm group-hover:text-sky-400 transition-colors">{rd.label}</span>
+            <span class="ml-auto gl-muted text-xs group-hover:text-sky-400 transition-colors">→</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Premium lock -->
     <div id="premium-lock" class={isFree ? 'hidden' : 'mt-8 text-center'}>
       <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-12">
         <div class="text-6xl mb-4">🔒</div>
-        <h2 class="text-2xl font-bold mb-3">ეს გაკვეთილი ჯერ ჩაკეტილია</h2>
-        <p class="gl-text-muted mb-6 max-w-md mx-auto">გაიარე დონის ტესტი რომ გახსნა შენი დონის გაკვეთილები.</p>
-        <a href="/placement/" class="gl-btn-3d inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-xl text-lg border-b-4 border-sky-700 transition-colors">
-          🎯 დონის ტესტი
-        </a>
+        <h2 class="text-2xl font-bold mb-3 gl-heading">ეს გაკვეთილი ჯერ ჩაკეტილია</h2>
+        <p class="gl-muted mb-6 max-w-md mx-auto">გაიარე დონის ტესტი რომ გახსნა შენი დონის გაკვეთილები.</p>
+        <a href="/placement/" class="gl-btn-3d inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-xl text-lg border-b-4 border-sky-700 transition-colors">🎯 დონის ტესტი</a>
       </div>
     </div>
   </section>
@@ -406,16 +447,12 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
       var placementLevel = localStorage.getItem('fluentge-placement-level');
       var isPremium = localStorage.getItem('fluentge-premium') === 'true';
-      
       var shouldUnlock = isPremium;
       if (placementLevel) {
         var placementIdx = LEVEL_ORDER.indexOf(placementLevel);
         var lessonIdx = LEVEL_ORDER.indexOf(lessonLevel);
-        if (lessonIdx >= 0 && placementIdx >= 0 && lessonIdx <= placementIdx) {
-          shouldUnlock = true;
-        }
+        if (lessonIdx >= 0 && placementIdx >= 0 && lessonIdx <= placementIdx) shouldUnlock = true;
       }
-      
       if (shouldUnlock) {
         var lc = document.getElementById('lesson-content');
         if (lc) lc.classList.remove('hidden');
@@ -426,7 +463,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
   </script>
 
   <script define:vars={{ exercises: lesson.exercises, isFree, lessonSlug: lesson.slug }}>
-    // Review mode detection
+    // Review mode
     var isReviewMode = window.location.search.includes('review=1');
     if (isReviewMode) {
       var banner = document.getElementById('review-banner');
@@ -440,9 +477,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       } catch(e) {}
       for (var i = exercises.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
-        var temp = exercises[i];
-        exercises[i] = exercises[j];
-        exercises[j] = temp;
+        var temp = exercises[i]; exercises[i] = exercises[j]; exercises[j] = temp;
       }
       setTimeout(function() {
         var exSection = document.getElementById('exercises-section');
@@ -450,7 +485,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       }, 500);
     }
 
-    // Sound feedback
+    // Sound
     let audioCtx = null;
     function getCtx() {
       if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -459,44 +494,61 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     }
     function playCorrectSound() {
       try {
-        const ctx = getCtx();
-        const o = ctx.createOscillator();
-        const g = ctx.createGain();
-        o.connect(g);
-        g.connect(ctx.destination);
+        const ctx = getCtx(), o = ctx.createOscillator(), g = ctx.createGain();
+        o.connect(g); g.connect(ctx.destination);
         g.gain.setValueAtTime(0.15, ctx.currentTime);
         o.type = 'sine';
         o.frequency.setValueAtTime(523, ctx.currentTime);
-        o.frequency.setValueAtTime(659, ctx.currentTime + 0.1);
-        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
-        o.start(ctx.currentTime);
-        o.stop(ctx.currentTime + 0.35);
-      } catch(e) { console.log('sound error', e); }
+        o.frequency.setValueAtTime(659, ctx.currentTime + 0.08);
+        o.frequency.setValueAtTime(784, ctx.currentTime + 0.16);
+        g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+        o.start(ctx.currentTime); o.stop(ctx.currentTime + 0.4);
+      } catch(e) {}
     }
     function playWrongSound() {
       try {
-        const ctx = getCtx();
-        const o = ctx.createOscillator();
-        const g = ctx.createGain();
-        o.connect(g);
-        g.connect(ctx.destination);
+        const ctx = getCtx(), o = ctx.createOscillator(), g = ctx.createGain();
+        o.connect(g); g.connect(ctx.destination);
         g.gain.setValueAtTime(0.12, ctx.currentTime);
         o.type = 'sine';
         o.frequency.setValueAtTime(330, ctx.currentTime);
         o.frequency.setValueAtTime(262, ctx.currentTime + 0.15);
         g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.25);
-        o.start(ctx.currentTime);
-        o.stop(ctx.currentTime + 0.3);
-      } catch(e) { console.log('sound error', e); }
+        o.start(ctx.currentTime); o.stop(ctx.currentTime + 0.3);
+      } catch(e) {}
+    }
+    function playPassSound() {
+      try {
+        const ctx = getCtx();
+        [523, 659, 784, 1047].forEach(function(freq, i) {
+          const o = ctx.createOscillator(), g = ctx.createGain();
+          o.connect(g); g.connect(ctx.destination);
+          g.gain.setValueAtTime(0.1, ctx.currentTime + i * 0.12);
+          o.type = 'sine'; o.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.12);
+          g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.12 + 0.3);
+          o.start(ctx.currentTime + i * 0.12); o.stop(ctx.currentTime + i * 0.12 + 0.35);
+        });
+      } catch(e) {}
     }
 
-    if (!isFree && !isReviewMode) { /* skip exercises for premium lessons */ }
+    // Confetti
+    function spawnConfetti() {
+      var container = document.getElementById('confetti-container');
+      if (!container) return;
+      container.classList.remove('hidden');
+      var emojis = ['🎉', '⭐', '🏆', '✨', '🎊', '💪'];
+      for (var i = 0; i < 12; i++) {
+        var span = document.createElement('span');
+        span.textContent = emojis[i % emojis.length];
+        span.style.cssText = 'position:absolute;font-size:' + (18 + Math.random() * 14) + 'px;left:' + (Math.random() * 100) + '%;animation:confetti ' + (0.6 + Math.random() * 0.6) + 's ease-out forwards;animation-delay:' + (Math.random() * 0.3) + 's;';
+        container.appendChild(span);
+      }
+      setTimeout(function() { container.innerHTML = ''; container.classList.add('hidden'); }, 2000);
+    }
+
+    if (!isFree && !isReviewMode) { /* skip */ }
     else {
-    let current = 0;
-    let score = 0;
-    let answered = false;
-    let sessionXP = 0;
-    let streak = 0;
+    let current = 0, score = 0, answered = false, sessionXP = 0, streak = 0;
 
     const container = document.getElementById('exercise-container');
     const scoreContainer = document.getElementById('score-container');
@@ -508,6 +560,9 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     const continueBtn = document.getElementById('continue-btn');
     const progressBar = document.getElementById('exercise-progress-bar');
     const counterEl = document.getElementById('exercise-counter');
+    const masteryBar = document.getElementById('mastery-bar');
+    const masteryPct = document.getElementById('mastery-pct');
+    let masteryUnlocked = false;
 
     if (window.FluentGe) {
       FluentGe.createXPCounter();
@@ -516,9 +571,7 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     }
 
     document.getElementById('exercise-close-btn').addEventListener('click', function() {
-      if (confirm('ნამდვილად გსურს გაკვეთილის დატოვება?')) {
-        window.location.href = '/grammar/';
-      }
+      if (confirm('ნამდვილად გსურს გაკვეთილის დატოვება?')) window.location.href = '/grammar/';
     });
 
     continueBtn.addEventListener('click', function() {
@@ -532,63 +585,66 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         e.preventDefault();
         continueBtn.click();
       }
+      // Keyboard shortcuts for options: 1-4 or A-D
+      if (!answered) {
+        var idx = -1;
+        if (e.key >= '1' && e.key <= '4') idx = parseInt(e.key) - 1;
+        if (e.key.toLowerCase() >= 'a' && e.key.toLowerCase() <= 'd') idx = e.key.toLowerCase().charCodeAt(0) - 97;
+        if (idx >= 0) {
+          var btns = container.querySelectorAll('.grammar-opt-btn');
+          if (btns[idx]) btns[idx].click();
+        }
+      }
     });
 
-    const masteryBar = document.getElementById('mastery-bar');
-    const masteryPct = document.getElementById('mastery-pct');
-    let masteryUnlocked = false;
-
     function updateProgress() {
-      const pct = exercises.length > 0 ? (current / exercises.length) * 100 : 0;
+      var pct = exercises.length > 0 ? (current / exercises.length) * 100 : 0;
       progressBar.style.width = pct + '%';
       counterEl.textContent = current + '/' + exercises.length;
     }
 
     function updateMastery() {
-      const totalAnswered = current;
-      if (totalAnswered === 0) return;
-      const scorePct = Math.round((score / exercises.length) * 100);
+      if (current === 0) return;
+      var scorePct = Math.round((score / exercises.length) * 100);
       masteryBar.style.width = scorePct + '%';
       masteryPct.textContent = scorePct + '%';
-      
       if (scorePct >= 70) {
         masteryBar.className = masteryBar.className.replace(/from-\S+ to-\S+/, 'from-green-400 to-emerald-500');
         masteryPct.style.color = 'rgb(74, 222, 128)';
         if (!masteryUnlocked) {
           masteryUnlocked = true;
-          masteryBar.style.boxShadow = '0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(34, 197, 94, 0.3)';
+          masteryBar.style.animation = 'pulseGlow 0.8s ease-out';
           masteryPct.style.transform = 'scale(1.3)';
           masteryPct.style.transition = 'transform 0.3s ease';
           setTimeout(function() { masteryPct.style.transform = 'scale(1)'; }, 500);
-          masteryBar.style.animation = 'masteryPulse 0.6s ease-out';
         }
       } else if (scorePct >= 50) {
         masteryBar.className = masteryBar.className.replace(/from-\S+ to-\S+/, 'from-yellow-400 to-amber-500');
         masteryPct.style.color = 'rgb(250, 204, 21)';
       } else {
         masteryBar.className = masteryBar.className.replace(/from-\S+ to-\S+/, 'from-orange-400 to-amber-500');
-        masteryPct.style.color = '#6B6B65';
+        masteryPct.style.color = '#9CA3AF';
       }
     }
 
     function showFeedback(correct, correctAnswer) {
       feedbackBar.classList.remove('hidden');
       if (correct) {
-        feedbackInner.className = 'px-6 py-4 flex items-center justify-between bg-green-500/15 border-t-2 border-green-500';
-        feedbackIcon.textContent = '✅';
-        feedbackTitle.textContent = 'სწორია!';
-        feedbackTitle.className = 'font-bold text-lg text-green-400';
-        feedbackDetail.textContent = streak > 1 ? '🔥 ' + streak + ' ზედიზედ!' : 'შესანიშნავი!';
-        feedbackDetail.className = 'text-sm text-green-400/70';
-        continueBtn.className = 'gl-btn-3d font-bold uppercase tracking-wide px-8 py-3 rounded-xl text-white bg-green-500 border-b-4 border-green-700 hover:bg-green-600';
+        feedbackInner.className = 'px-5 sm:px-6 py-4 flex items-center justify-between gap-4 border-t-2 gl-feedback-correct bg-green-500/10 border-green-500';
+        feedbackIcon.textContent = '🎉';
+        feedbackTitle.textContent = streak > 2 ? '🔥 ' + streak + ' ზედიზედ!' : 'სწორია!';
+        feedbackTitle.className = 'gl-feedback-title font-bold text-lg text-green-400';
+        feedbackDetail.textContent = streak > 2 ? 'შენიშნავი სერია!' : 'კარგად მიდიხარ!';
+        feedbackDetail.className = 'gl-feedback-detail text-sm text-green-400/70';
+        continueBtn.className = 'gl-btn-3d font-bold uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl text-white bg-green-500 border-b-4 border-green-700 hover:bg-green-600 shrink-0 text-sm sm:text-base';
       } else {
-        feedbackInner.className = 'px-6 py-4 flex items-center justify-between bg-red-500/15 border-t-2 border-red-500';
-        feedbackIcon.textContent = '❌';
+        feedbackInner.className = 'px-5 sm:px-6 py-4 flex items-center justify-between gap-4 border-t-2 gl-feedback-wrong bg-red-500/10 border-red-500';
+        feedbackIcon.textContent = '😔';
         feedbackTitle.textContent = 'არასწორია';
-        feedbackTitle.className = 'font-bold text-lg text-red-400';
-        feedbackDetail.textContent = 'სწორი პასუხი: ' + correctAnswer;
-        feedbackDetail.className = 'text-sm text-red-400/70';
-        continueBtn.className = 'gl-btn-3d font-bold uppercase tracking-wide px-8 py-3 rounded-xl text-white bg-red-500 border-b-4 border-red-700 hover:bg-red-600';
+        feedbackTitle.className = 'gl-feedback-title font-bold text-lg text-red-400';
+        feedbackDetail.textContent = 'სწორი: ' + correctAnswer;
+        feedbackDetail.className = 'gl-feedback-detail text-sm text-red-400/70';
+        continueBtn.className = 'gl-btn-3d font-bold uppercase tracking-wide px-6 sm:px-8 py-3 rounded-xl text-white bg-red-500 border-b-4 border-red-700 hover:bg-red-600 shrink-0 text-sm sm:text-base';
       }
     }
 
@@ -598,22 +654,16 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         container.classList.add('hidden');
         feedbackBar.classList.add('hidden');
         scoreContainer.classList.remove('hidden');
-        const pct = Math.round((score / exercises.length) * 100);
+        var pct = Math.round((score / exercises.length) * 100);
         progressBar.style.width = '100%';
-        progressBar.classList.remove('from-green-400', 'to-emerald-500');
-        progressBar.classList.add('from-amber-400', 'to-yellow-500');
         counterEl.textContent = exercises.length + '/' + exercises.length;
         var passed = pct >= 70;
+        if (passed) { playPassSound(); spawnConfetti(); }
         if (window.FluentGe) {
-          // XP already added per correct answer (1 XP each)
           FluentGe.updateStreak();
           var mins = FluentGe.stopTimer();
           FluentGe.addStudyTime(mins);
-          if (passed) {
-            console.log('GRAMMAR PASS — marking complete:', lessonSlug);
-            FluentGe.markGrammarComplete(lessonSlug);
-            console.log('Saved:', localStorage.getItem('fluentge-grammar-completed'));
-          }
+          if (passed) FluentGe.markGrammarComplete(lessonSlug);
         }
         document.getElementById('score-emoji').textContent = passed ? '🏆' : '💪';
         document.getElementById('score-correct').textContent = score + '/' + exercises.length;
@@ -626,12 +676,12 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
             badge.textContent = '✅ ჩაბარებულია';
             badge.className = 'inline-block px-5 py-2 rounded-full text-sm font-bold mb-4 bg-green-500/20 text-green-400 border border-green-500/30';
           } else {
-            badge.textContent = '❌ ვერ ჩააბარე';
+            badge.textContent = '❌ ვერ ჩააბარე — საჭიროა 70%';
             badge.className = 'inline-block px-5 py-2 rounded-full text-sm font-bold mb-4 bg-red-500/20 text-red-400 border border-red-500/30';
           }
         }
         var heading = document.getElementById('score-heading');
-        if (heading) heading.textContent = passed ? 'ტესტი წარმატებით ჩააბარე!' : 'ტესტი ვერ ჩააბარე';
+        if (heading) heading.textContent = passed ? 'ტესტი წარმატებით ჩააბარე! 🎉' : 'ცოტა მეტი ვარჯიში გჭირდება';
         var nextBtn = document.getElementById('next-lesson-btn');
         var retryBtn = document.getElementById('retry-btn');
         if (passed) {
@@ -641,38 +691,38 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
           if (retryBtn) { retryBtn.classList.remove('hidden'); retryBtn.style.display = ''; }
           if (nextBtn) { nextBtn.classList.add('hidden'); nextBtn.style.display = 'none'; }
         }
-        if (passed) {
-          document.getElementById('score-msg').textContent = 'შესანიშნავი! შემდეგი გაკვეთილი გახსნილია! 🎉';
-        } else {
-          document.getElementById('score-msg').textContent = '70%-ზე მეტი სწორი პასუხი გჭირდება. სცადე თავიდან!';
-        }
+        document.getElementById('score-msg').textContent = passed
+          ? 'შესანიშნავი! შემდეგი გაკვეთილი გახსნილია!'
+          : '70%-ზე მეტი სწორი პასუხი გჭირდება. სცადე თავიდან!';
         return;
       }
       answered = false;
-      const ex = exercises[current];
-      const isMulti = ex.type === 'multiple-choice';
-      const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-      
-      let html = '';
-      if (isMulti) {
-        html += `<p class="text-xl sm:text-2xl font-bold mb-8 leading-relaxed">${ex.question}</p>`;
+      var ex = exercises[current];
+      var letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+      var html = '';
+
+      // Question number badge
+      html += '<div class="flex items-center gap-2 mb-4"><span class="text-xs font-bold gl-muted px-2.5 py-1 rounded-lg bg-sky-500/10 text-sky-400">კითხვა ' + (current + 1) + '/' + exercises.length + '</span></div>';
+
+      if (ex.type === 'multiple-choice') {
+        html += '<p class="text-xl sm:text-2xl font-bold mb-8 leading-relaxed gl-heading">' + ex.question + '</p>';
       } else {
-        html += `<p class="text-xl sm:text-2xl font-bold mb-8 leading-relaxed">${ex.question.replace('___', '<span class="inline-block min-w-[80px] border-b-3 border-sky-400 text-sky-400 text-center mx-1 pb-0.5">______</span>')}</p>`;
+        html += '<p class="text-xl sm:text-2xl font-bold mb-8 leading-relaxed gl-heading">' + ex.question.replace('___', '<span class="inline-block min-w-[80px] border-b-[3px] border-sky-400 text-sky-400 text-center mx-1 pb-0.5 animate-pulse">______</span>') + '</p>';
       }
-      
-      html += `<div class="grid gap-3">`;
+
+      html += '<div class="grid gap-3">';
       ex.options.forEach(function(opt, i) {
-        html += `<button class="grammar-opt-btn gl-btn-option gl-btn-3d flex items-center gap-4 text-left px-5 py-4 rounded-xl border-2 border-[#2E2E30] border-b-4 border-b-[#1a1a1c] bg-[#1C1C1E] hover:bg-[#2E2E30] hover:border-[#3E3E40] transition-all font-medium cursor-pointer" data-val="${opt}">
-          <span class="gl-letter w-9 h-9 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#6B6B65] shrink-0">${letters[i] || ''}</span>
-          <span class="text-base">${opt}</span>
-        </button>`;
+        html += '<button class="grammar-opt-btn gl-btn-option gl-btn-3d flex items-center gap-4 text-left px-5 py-4 rounded-xl border-2 border-[#2E2E30] border-b-4 border-b-[#1a1a1c] bg-[#1C1C1E] hover:bg-[#2a2a2e] hover:border-[#3E3E40] transition-all font-medium cursor-pointer active:scale-[0.98]" data-val="' + opt + '">';
+        html += '<span class="gl-letter w-9 h-9 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#9CA3AF] shrink-0">' + (letters[i] || '') + '</span>';
+        html += '<span class="text-base flex-1">' + opt + '</span>';
+        html += '</button>';
       });
-      html += `</div>`;
-      
+      html += '</div>';
+
       container.innerHTML = html;
       container.style.animation = 'none';
       container.offsetHeight;
-      container.style.animation = 'grammarSlideIn 0.25s ease-out';
+      container.style.animation = 'slideUp 0.3s ease-out';
 
       container.querySelectorAll('.grammar-opt-btn').forEach(function(btn) {
         btn.addEventListener('click', function() { handleAnswer(btn); });
@@ -682,12 +732,11 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
     function handleAnswer(btn) {
       if (answered) return;
       answered = true;
-      const val = btn.dataset.val;
-      const ex = exercises[current];
-      const correct = val === ex.answer;
+      var val = btn.dataset.val;
+      var ex = exercises[current];
+      var correct = val === ex.answer;
       if (correct) {
-        score++;
-        streak++;
+        score++; streak++;
         playCorrectSound();
         if (window.FluentGe) {
           var result = FluentGe.addXP(1);
@@ -700,29 +749,30 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
         streak = 0;
         playWrongSound();
       }
-
       updateMastery();
 
       container.querySelectorAll('.grammar-opt-btn').forEach(function(b) {
-        var letter = b.querySelector('span:first-child');
+        var letter = b.querySelector('.gl-letter');
         if (b.dataset.val === ex.answer) {
-          b.classList.remove('border-[#2E2E30]', 'bg-[#1C1C1E]', 'border-b-[#1a1a1c]');
-          b.classList.add('border-green-500', 'bg-green-500/15', 'text-green-400', 'border-b-green-700');
-          if (letter) { letter.classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]'); letter.classList.add('bg-green-500', 'text-white'); }
+          b.style.cssText = 'border-color:#22C55E !important;background:rgba(34,197,94,0.15) !important;border-bottom-color:#15803D !important;';
+          b.querySelector('span:last-child').style.color = '#22C55E';
+          if (letter) { letter.style.background = '#22C55E'; letter.style.color = '#FFF'; }
         } else if (b === btn && !correct) {
-          b.classList.remove('border-[#2E2E30]', 'bg-[#1C1C1E]', 'border-b-[#1a1a1c]');
-          b.classList.add('border-red-500', 'bg-red-500/15', 'text-red-400', 'border-b-red-700');
-          if (letter) { letter.classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]'); letter.classList.add('bg-red-500', 'text-white'); }
+          b.style.cssText = 'border-color:#EF4444 !important;background:rgba(239,68,68,0.15) !important;border-bottom-color:#DC2626 !important;';
+          b.querySelector('span:last-child').style.color = '#EF4444';
+          if (letter) { letter.style.background = '#EF4444'; letter.style.color = '#FFF'; }
           b.style.animation = 'wrongShake 0.4s ease-out';
+        } else {
+          b.style.opacity = '0.4';
         }
-        b.classList.add('pointer-events-none');
+        b.style.pointerEvents = 'none';
       });
 
       showFeedback(correct, ex.answer);
     }
 
     document.getElementById('retry-btn').addEventListener('click', function() {
-      current = 0; score = 0; sessionXP = 0; streak = 0;
+      current = 0; score = 0; sessionXP = 0; streak = 0; masteryUnlocked = false;
       if (window.FluentGe) FluentGe.startTimer();
       scoreContainer.classList.add('hidden');
       container.classList.remove('hidden');
@@ -730,8 +780,10 @@ const relatedDecks = grammarToDecks[lesson.slug] || [
       var rb = document.getElementById('retry-btn');
       if (nb) { nb.classList.add('hidden'); nb.style.display = 'none'; }
       if (rb) { rb.classList.add('hidden'); rb.style.display = 'none'; }
-      progressBar.classList.add('from-green-400', 'to-emerald-500');
-      progressBar.classList.remove('from-amber-400', 'to-yellow-500');
+      masteryBar.style.width = '0%';
+      masteryPct.textContent = '0%';
+      masteryPct.style.color = '#9CA3AF';
+      masteryBar.className = masteryBar.className.replace(/from-\S+ to-\S+/, 'from-orange-400 to-amber-500');
       render();
     });
 

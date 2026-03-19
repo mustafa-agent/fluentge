@@ -41,9 +41,14 @@
       "answer": "The"
     },
     {
-      "type": "fill-in-blank",
+      "type": "fill-blank",
       "question": "She is ___ best student in our school.",
-      "answer": "the"
+      "answer": "the",
+      "options": [
+        "no article",
+        "the",
+        "a"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -56,14 +61,24 @@
       "answer": "—"
     },
     {
-      "type": "error-correction",
+      "type": "fill-blank",
       "question": "Find the error: I play piano every day.",
-      "answer": "piano → the piano"
+      "answer": "piano → the piano",
+      "options": [
+        "shouldn't",
+        "wouldn't",
+        "piano → the piano"
+      ]
     },
     {
-      "type": "gap-fill",
+      "type": "fill-blank",
       "question": "He loves ___ football but plays ___ guitar.",
-      "answer": "— / the"
+      "answer": "— / the",
+      "options": [
+        "— / the",
+        "doesn't",
+        "shouldn't"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -76,53 +91,97 @@
       "answer": "the"
     },
     {
-      "type": "transformation",
+      "type": "fill-blank",
       "question": "Add the right article: I need honest answer.",
-      "answer": "I need an honest answer."
+      "answer": "I need an honest answer.",
+      "options": [
+        "I need an honest answer.",
+        "wouldn't",
+        "won't"
+      ]
     },
     {
-      "type": "sentence-completion",
+      "type": "fill-blank",
       "question": "___ water is clean, but ___ water in this glass is dirty.",
-      "answer": "— / the"
+      "answer": "— / the",
+      "options": [
+        "couldn't",
+        "— / the",
+        "isn't"
+      ]
     },
     {
-      "type": "fill-in-blank",
+      "type": "fill-blank",
       "question": "I saw ___ dog. ___ dog was very cute.",
-      "answer": "a / The"
+      "answer": "a / The",
+      "options": [
+        "haven't",
+        "a / The",
+        "isn't"
+      ]
     },
     {
       "type": "matching",
       "question": "Match: 'I speak French' uses which article?",
-      "options": ["no article", "the", "a/an"],
+      "options": [
+        "no article",
+        "the",
+        "a/an"
+      ],
       "answer": "no article"
     },
     {
-      "type": "error-correction",
+      "type": "fill-blank",
       "question": "Find the error: The life is beautiful.",
-      "answer": "The → —"
+      "answer": "The → —",
+      "options": [
+        "The → —",
+        "haven't",
+        "couldn't"
+      ]
     },
     {
-      "type": "gap-fill",
+      "type": "fill-blank",
       "question": "First mention: I bought ___ car. Second mention: ___ car is red.",
-      "answer": "a / The"
+      "answer": "a / The",
+      "options": [
+        "doesn't",
+        "shouldn't",
+        "a / The"
+      ]
     },
     {
       "question": "She plays ___ piano beautifully.",
       "type": "multiple-choice",
-      "options": ["the", "a", "an", "—"],
-      "correct": 0
+      "options": [
+        "the",
+        "a",
+        "an",
+        "—"
+      ],
+      "answer": "the"
     },
     {
       "question": "___ honesty is very important in relationships.",
       "type": "multiple-choice",
-      "options": ["—", "The", "A", "An"],
-      "correct": 0
+      "options": [
+        "—",
+        "The",
+        "A",
+        "An"
+      ],
+      "answer": "—"
     },
     {
       "question": "He went to ___ hospital to visit his friend.",
       "type": "multiple-choice",
-      "options": ["the", "a", "an", "—"],
-      "correct": 0
+      "options": [
+        "the",
+        "a",
+        "an",
+        "—"
+      ],
+      "answer": "the"
     }
   ]
 }

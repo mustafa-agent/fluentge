@@ -7,12 +7,12 @@ import Layout from '../layouts/Layout.astro';
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=60" alt="" class="w-full h-full object-cover opacity-20"/>
-      <div class="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/80 to-[#1C1C1E]"></div>
+      <div class="absolute inset-0 about-hero-overlay"></div>
     </div>
     <div class="relative max-w-3xl mx-auto px-4 pt-24 pb-16 text-center">
       <div class="inline-block bg-sky-500/10 border border-sky-500/20 rounded-full px-4 py-1 text-sky-400 text-xs font-bold uppercase tracking-wider mb-6">🇬🇪 Made in Georgia</div>
-      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-5xl mb-4 font-bold">ჩვენი მისია</h1>
-      <p class="text-[#A0A09A] text-base sm:text-lg max-w-xl mx-auto leading-relaxed">ინგლისურის სწავლა ყველა ქართველისთვის ხელმისაწვდომი, სახალისო და ეფექტური გავხადოთ.</p>
+      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-5xl mb-4 font-bold about-hero-text">ჩვენი მისია</h1>
+      <p class="text-[#A0A09A] about-hero-sub text-base sm:text-lg max-w-xl mx-auto leading-relaxed">ინგლისურის სწავლა ყველა ქართველისთვის ხელმისაწვდომი, სახალისო და ეფექტური გავხადოთ.</p>
     </div>
   </section>
 
@@ -155,6 +155,14 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <style is:global>
+    .about-hero-overlay {
+      background: linear-gradient(to bottom, rgba(28,28,30,0.8), #1C1C1E);
+    }
+    .light .about-hero-overlay {
+      background: linear-gradient(to bottom, rgba(240,242,245,0.85), #F0F2F5);
+    }
+    .light .about-hero-text { color: #1a1a2e; }
+    .light .about-hero-sub { color: #6b7280 !important; }
     .about-stats-bar {
       background: linear-gradient(180deg, rgba(36,36,38,0.8), rgba(28,28,30,0.5));
       border-top: 1px solid rgba(255,255,255,0.05);

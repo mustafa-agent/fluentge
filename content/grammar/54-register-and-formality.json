@@ -39,7 +39,7 @@
       "ka": "მოდი, ყავას დავლევთ და გამოვრკვევთ. (არაფორმალური)"
     }
   ],
-  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ [შეცდომა 1]\n✅ [სწორი ფორმა 1]\n\n❌ [შეცდომა 2]  \n✅ [სწორი ფორმა 2]\n\n**დაიმახსოვრე:** [მთავარი წესი]",
+  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ (ფორმალურ წერილში) Hey, I wanna ask about the job.\n✅ Dear Sir/Madam, I am writing to inquire about the position.\n(ფორმალურ ტექსტში სლენგი და შემოკლებები არ გამოიყენება)\n\n❌ (არაფორმალურ საუბარში) I would like to request your assistance.\n✅ Can you help me out?\n(მეგობრულ საუბარში ზედმეტად ფორმალური ენა უცნაურად ჟღერს)\n\n❌ (აკადემიურ ტექსტში) Lots of people think this stuff is cool.\n✅ Many researchers consider this approach effective.\n(აკადემიურ ტექსტში \"lots of\" და \"stuff\" არ გამოიყენება)\n\n**დაიმახსოვრე:** სწორი რეგისტრი = სწორი სიტუაცია. ფორმალური, არაფორმალური და აკადემიური — ყოველთვის გაითვალისწინეთ!",
   "exercises": [
     {
       "type": "multiple-choice",
@@ -124,50 +124,90 @@
     {
       "type": "multiple-choice",
       "question": "Which is more formal: 'I want to...' or ___?",
-      "options": ["I would like to", "I wanna", "I'm gonna", "I gotta"],
+      "options": [
+        "I would like to",
+        "I wanna",
+        "I'm gonna",
+        "I gotta"
+      ],
       "answer": "I would like to"
     },
     {
       "type": "multiple-choice",
       "question": "Formal way to say 'help': Could you ___ me?",
-      "options": ["assist", "help out", "give a hand", "lend a hand"],
+      "options": [
+        "assist",
+        "help out",
+        "give a hand",
+        "lend a hand"
+      ],
       "answer": "assist"
     },
     {
       "type": "multiple-choice",
       "question": "Academic writing uses ___ instead of 'show'.",
-      "options": ["demonstrate", "point out", "prove", "tell"],
+      "options": [
+        "demonstrate",
+        "point out",
+        "prove",
+        "tell"
+      ],
       "answer": "demonstrate"
     },
     {
       "type": "multiple-choice",
       "question": "Formal replacement for 'get': We need to ___ permission.",
-      "options": ["obtain", "get", "grab", "take"],
+      "options": [
+        "obtain",
+        "get",
+        "grab",
+        "take"
+      ],
       "answer": "obtain"
     },
     {
       "type": "multiple-choice",
       "question": "In emails, 'Dear Sir/Madam' is ___ than 'Hi'.",
-      "options": ["more formal", "less formal", "the same", "casual"],
+      "options": [
+        "more formal",
+        "less formal",
+        "the same",
+        "casual"
+      ],
       "answer": "more formal"
     },
     {
       "type": "multiple-choice",
       "question": "Academic style: 'The study ___' instead of 'We found'.",
-      "options": ["revealed", "showed", "told", "said"],
+      "options": [
+        "revealed",
+        "showed",
+        "told",
+        "said"
+      ],
       "answer": "revealed"
     },
     {
       "type": "multiple-choice",
       "question": "Formal way to express opinion: 'It ___ that...'",
-      "options": ["appears", "looks like", "seems like", "feels"],
+      "options": [
+        "appears",
+        "looks like",
+        "seems like",
+        "feels"
+      ],
       "answer": "appears"
     },
     {
       "type": "fill-blank",
       "question": "Formal closing: 'I look forward to ___ from you.'",
       "answer": "hearing",
-      "options": ["hearing", "listen", "talking", "speaking"]
+      "options": [
+        "hearing",
+        "listen",
+        "talking",
+        "speaking"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -184,7 +224,12 @@
       "type": "fill-blank",
       "question": "Academic: 'The data ___ that...' (formal 'shows')",
       "answer": "indicates",
-      "options": ["indicates", "tells", "says", "points"]
+      "options": [
+        "indicates",
+        "tells",
+        "says",
+        "points"
+      ]
     }
   ],
   "passThreshold": 0.7

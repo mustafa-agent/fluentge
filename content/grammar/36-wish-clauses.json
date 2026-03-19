@@ -31,103 +31,154 @@
   "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ I wish I have money (არასწორია)\n✅ I wish I had money (სწორია)\n\n❌ I wish I was taller (არასწორია)\n✅ I wish I were taller (სწორია)\n\n❌ I wish I would be rich (არასწორია)\n✅ I wish I were rich (სწორია)\n\n**დაიმახსოვრე:** \"would\" მხოლოდ სხვა ადამიანების ქცევისთვის გამოიყენება!",
   "exercises": [
     {
-      "type": "multiple-choice",
-      "question": "I wish I ___ rich.",
+      "type": "fill-blank",
+      "question": "I wish I ___ speak French.",
+      "answer": "could",
       "options": [
-        "was",
-        "were",
-        "am"
-      ],
-      "answer": "were"
+        "could",
+        "can",
+        "will"
+      ]
     },
     {
-      "type": "fill-in-blank",
-      "question": "She wishes she ___ that expensive dress yesterday.",
-      "answer": "hadn't bought"
+      "type": "fill-blank",
+      "question": "She wishes she ___ more money.",
+      "answer": "had",
+      "options": [
+        "had",
+        "has",
+        "have"
+      ]
     },
     {
-      "type": "multiple-choice",
-      "question": "I wish my neighbor ___ playing loud music at night.",
+      "type": "fill-blank",
+      "question": "I wish it ___ raining.",
+      "answer": "would stop",
       "options": [
-        "stopped",
         "would stop",
-        "stops"
-      ],
-      "answer": "would stop"
+        "stops",
+        "stopped"
+      ]
     },
     {
-      "type": "transformation",
-      "question": "Transform: I don't speak French. (I wish...)",
-      "answer": "I wish I spoke French."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "We wish we ___ more time together last summer.",
+      "type": "fill-blank",
+      "question": "He wishes he ___ taller.",
+      "answer": "were",
       "options": [
-        "spent",
-        "had spent",
-        "would spend"
-      ],
-      "answer": "had spent"
-    },
-    {
-      "type": "fill-in-blank",
-      "question": "I wish you ___ interrupting me! (would)",
-      "answer": "would stop"
-    },
-    {
-      "type": "error-correction",
-      "question": "Find the error: I wish I can swim better.",
-      "answer": "can → could"
-    },
-    {
-      "type": "transformation",
-      "question": "Transform: I didn't go to the party. (I wish...)",
-      "answer": "I wish I had gone to the party."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "She wishes she ___ taller.",
-      "options": [
-        "was",
         "were",
-        "would be"
-      ],
-      "answer": "were"
+        "is",
+        "was being"
+      ]
     },
     {
-      "type": "sentence-completion",
-      "question": "Complete with wish: I ___ it would rain tomorrow.",
-      "answer": "wish"
+      "type": "fill-blank",
+      "question": "I wish I ___ eaten so much.",
+      "answer": "hadn't",
+      "options": [
+        "hadn't",
+        "haven't",
+        "didn't"
+      ]
     },
     {
-      "type": "gap-fill",
-      "question": "I wish I ___ (study) harder when I was young.",
-      "answer": "had studied"
+      "type": "fill-blank",
+      "question": "We wish we ___ live closer to the beach.",
+      "answer": "could",
+      "options": [
+        "could",
+        "can",
+        "would"
+      ]
     },
     {
-      "type": "matching",
-      "question": "Match the wish type: I wish I were rich.",
-      "options": ["Present wish", "Past wish", "Future wish"],
-      "answer": "Present wish"
+      "type": "fill-blank",
+      "question": "She wishes she ___ the answer.",
+      "answer": "knew",
+      "options": [
+        "knew",
+        "knows",
+        "knowing"
+      ]
     },
     {
-      "question": "I wish I ___ speak Chinese fluently.",
+      "type": "fill-blank",
+      "question": "I wish you ___ making that noise!",
+      "answer": "would stop",
+      "options": [
+        "would stop",
+        "stop",
+        "stopped"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "They wish they ___ harder at school.",
+      "answer": "had studied",
+      "options": [
+        "had studied",
+        "studied",
+        "have studied"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I wish I ___ a car.",
+      "answer": "had",
+      "options": [
+        "had",
+        "have",
+        "would have"
+      ]
+    },
+    {
       "type": "multiple-choice",
-      "options": ["could", "can", "will", "would"],
-      "correct": 0
+      "question": "რომელია სწორი? 'I wish I ___ there yesterday.'",
+      "answer": "had been",
+      "options": [
+        "had been",
+        "was",
+        "am"
+      ]
     },
     {
-      "question": "She wishes she ___ more time to relax.",
       "type": "multiple-choice",
-      "options": ["had", "has", "will have", "have"],
-      "correct": 0
+      "question": "'If only' იგივე მნიშვნელობა აქვს რაც:",
+      "answer": "I wish",
+      "options": [
+        "I wish",
+        "I hope",
+        "I want"
+      ]
     },
     {
-      "question": "I wish it ___ raining outside.",
-      "type": "multiple-choice",
-      "options": ["weren't", "isn't", "won't be", "doesn't"],
-      "correct": 0
+      "type": "fill-blank",
+      "question": "If only I ___ more time!",
+      "answer": "had",
+      "options": [
+        "had",
+        "have",
+        "will have"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I wish the weather ___ better tomorrow.",
+      "answer": "would be",
+      "options": [
+        "would be",
+        "is",
+        "will be"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She wishes she ___ accepted that job offer.",
+      "answer": "had",
+      "options": [
+        "had",
+        "has",
+        "would have"
+      ]
     }
   ]
 }

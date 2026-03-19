@@ -7,33 +7,228 @@
   "passThreshold": 0.7,
   "explanation_ka": "მრავლობითი რიცხვი ნიშნავს - ერთზე მეტი.\n\n**ძირითადი წესი - დაამატე -s:**\n• cat → cats\n• book → books\n\n**თუ სიტყვა მთავრდება s/sh/ch/x/z-ზე - დაამატე -es:**\n• box → boxes\n• watch → watches\n\n**თუ სიტყვა მთავრდება თანხმოვანი + y-ზე - შეცვალე -ies:**\n• baby → babies\n• city → cities\n\n**თუ სიტყვა მთავრდება ხმოვანი + y-ზე - დაამატე -s:**\n• boy → boys\n• day → days\n\n**არარეგულარული (დაიმახსოვრე!):**\n• man → men, woman → women\n• child → children, tooth → teeth\n\n**მთავარი წესი:**\nინგლისურში ყოველთვის ჩაწერე მრავლობითი!\n• ✅ two books\n• ❌ two book",
   "examples": [
-    { "en": "I have two cats.", "ka": "მე ორი კატა მყავს." },
-    { "en": "There are three boxes on the table.", "ka": "მაგიდაზე სამი ყუთია." },
-    { "en": "The children are playing.", "ka": "ბავშვები თამაშობენ." },
-    { "en": "She bought new knives.", "ka": "მან ახალი დანები იყიდა." },
-    { "en": "Those women are doctors.", "ka": "ის ქალები ექიმები არიან." }
+    {
+      "en": "I have two cats.",
+      "ka": "მე ორი კატა მყავს."
+    },
+    {
+      "en": "There are three boxes on the table.",
+      "ka": "მაგიდაზე სამი ყუთია."
+    },
+    {
+      "en": "The children are playing.",
+      "ka": "ბავშვები თამაშობენ."
+    },
+    {
+      "en": "She bought new knives.",
+      "ka": "მან ახალი დანები იყიდა."
+    },
+    {
+      "en": "Those women are doctors.",
+      "ka": "ის ქალები ექიმები არიან."
+    }
   ],
   "common_mistakes_ka": "• ❌ two book → ✅ two books (-s აუცილებელია!)\n• ❌ childs → ✅ children (არარეგულარული!)\n• ❌ babys → ✅ babies (თანხმოვანი + y → ies)\n• ❌ boxs → ✅ boxes (x-ის შემდეგ -es)\n\nქართულში \"ორი წიგნი\" (მხოლობითი), ინგლისურში \"two books\" (მრავლობითი)!",
   "exercises": [
-    { "type": "fill-blank", "question": "One cat, two ___.", "answer": "cats", "options": ["cats", "cates", "caties"] },
-    { "type": "fill-blank", "question": "One box, three ___.", "answer": "boxes", "options": ["boxs", "boxes", "boxies"] },
-    { "type": "fill-blank", "question": "One baby, two ___.", "answer": "babies", "options": ["babys", "babyes", "babies"] },
-    { "type": "fill-blank", "question": "One child, five ___.", "answer": "children", "options": ["childs", "childes", "children"] },
-    { "type": "fill-blank", "question": "One man, two ___.", "answer": "men", "options": ["mans", "mens", "men"] },
-    { "type": "multiple-choice", "question": "Which is correct?", "options": ["I have three watchs.", "I have three watches.", "I have three watchies."], "answer": "I have three watches." },
-    { "type": "multiple-choice", "question": "Which is the plural of 'tooth'?", "options": ["tooths", "toothes", "teeth"], "answer": "teeth" },
-    { "type": "fill-blank", "question": "One knife, two ___.", "answer": "knives", "options": ["knifes", "knives", "knifees"] },
-    { "type": "multiple-choice", "question": "Which is correct?", "options": ["Two boy are here.", "Two boys are here.", "Two boies are here."], "answer": "Two boys are here." },
-    { "type": "fill-blank", "question": "One city, many ___.", "answer": "cities", "options": ["citys", "cityes", "cities"] },
-    { "type": "fill-blank", "question": "One foot, two ___.", "answer": "feet", "options": ["foots", "feets", "feet"] },
-    { "type": "multiple-choice", "question": "რომელია სწორი?", "options": ["Three womans work here.", "Three women work here.", "Three womens work here."], "answer": "Three women work here." },
-    { "type": "fill-blank", "question": "One church, several ___.", "answer": "churches", "options": ["churchs", "churches", "churchies"] },
-    { "type": "fill-blank", "question": "One glass, four ___.", "answer": "glasses", "options": ["glasss", "glasses", "glases"] },
-    { "type": "multiple-choice", "question": "Which is correct?", "options": ["I lost two tooths.", "I lost two teeth.", "I lost two toothes."], "answer": "I lost two teeth." },
-    { "type": "fill-blank", "question": "One library, many ___.", "answer": "libraries", "options": ["librarys", "libraryes", "libraries"] },
-    { "type": "multiple-choice", "question": "რომელია \"leaf\" მრავლობითში?", "options": ["leafs", "leafes", "leaves"], "answer": "leaves" },
-    { "type": "fill-blank", "question": "One story, three ___.", "answer": "stories", "options": ["storys", "storyes", "stories"] },
-    { "type": "fill-blank", "question": "One dish, many ___.", "answer": "dishes", "options": ["dishs", "dishes", "dishies"] },
-    { "type": "multiple-choice", "question": "Which is correct?", "options": ["Five mouse ran away.", "Five mices ran away.", "Five mice ran away."], "answer": "Five mice ran away." }
+    {
+      "type": "fill-blank",
+      "question": "One cat, two ___.",
+      "answer": "cats",
+      "options": [
+        "cats",
+        "cates",
+        "caties"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One box, three ___.",
+      "answer": "boxes",
+      "options": [
+        "boxs",
+        "boxes",
+        "boxies"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One baby, two ___.",
+      "answer": "babies",
+      "options": [
+        "babys",
+        "babyes",
+        "babies"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One child, five ___.",
+      "answer": "children",
+      "options": [
+        "childs",
+        "childes",
+        "children"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One man, two ___.",
+      "answer": "men",
+      "options": [
+        "mans",
+        "mens",
+        "men"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I have three watchs.",
+        "I have three watches.",
+        "I have three watchies."
+      ],
+      "answer": "I have three watches."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is the plural of 'tooth'?",
+      "options": [
+        "tooths",
+        "toothes",
+        "teeth"
+      ],
+      "answer": "teeth"
+    },
+    {
+      "type": "fill-blank",
+      "question": "One knife, two ___.",
+      "answer": "knives",
+      "options": [
+        "knifes",
+        "knives",
+        "knifees"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Two boy are here.",
+        "Two boys are here.",
+        "Two boies are here."
+      ],
+      "answer": "Two boys are here."
+    },
+    {
+      "type": "fill-blank",
+      "question": "One city, many ___.",
+      "answer": "cities",
+      "options": [
+        "citys",
+        "cityes",
+        "cities"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One foot, two ___.",
+      "answer": "feet",
+      "options": [
+        "foots",
+        "feets",
+        "feet"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "Three womans work here.",
+        "Three women work here.",
+        "Three womens work here."
+      ],
+      "answer": "Three women work here."
+    },
+    {
+      "type": "fill-blank",
+      "question": "One church, several ___.",
+      "answer": "churches",
+      "options": [
+        "churchs",
+        "churches",
+        "churchies"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One glass, four ___.",
+      "answer": "glasses",
+      "options": [
+        "glasss",
+        "glasses",
+        "glases"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I lost two tooths.",
+        "I lost two teeth.",
+        "I lost two toothes."
+      ],
+      "answer": "I lost two teeth."
+    },
+    {
+      "type": "fill-blank",
+      "question": "One library, many ___.",
+      "answer": "libraries",
+      "options": [
+        "librarys",
+        "libraryes",
+        "libraries"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია \"leaf\" მრავლობითში?",
+      "options": [
+        "leafs",
+        "leafes",
+        "leaves"
+      ],
+      "answer": "leaves"
+    },
+    {
+      "type": "fill-blank",
+      "question": "One story, three ___.",
+      "answer": "stories",
+      "options": [
+        "storys",
+        "storyes",
+        "stories"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One dish, many ___.",
+      "answer": "dishes",
+      "options": [
+        "dishs",
+        "dishes",
+        "dishies"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "Five mouse ran away.",
+        "Five mices ran away.",
+        "Five mice ran away."
+      ],
+      "answer": "Five mice ran away."
+    }
   ]
 }

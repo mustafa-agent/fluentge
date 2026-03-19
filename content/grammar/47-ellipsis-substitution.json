@@ -39,7 +39,7 @@
       "ka": "ის უფრო მეტს მუშაობს, ვიდრე ის (ქალი)."
     }
   ],
-  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ [შეცდომა 1]\n✅ [სწორი ფორმა 1]\n\n❌ [შეცდომა 2]  \n✅ [სწორი ფორმა 2]\n\n**დაიმახსოვრე:** [მთავარი წესი]",
+  "common_mistakes_ka": "**ყველაზე ხშირი შეცდომები:**\n\n❌ I can swim and she can swim too.\n✅ I can swim and she can too.\n(გამეორებული ზმნა შეიძლება გამოტოვოთ)\n\n❌ \"Do you like coffee?\" — \"Yes, I like.\"\n✅ \"Do you like coffee?\" — \"Yes, I do.\"\n(ზმნის ნაცვლად დამხმარე ზმნა \"do\" გამოიყენეთ)\n\n❌ She said she would come but she didn't come.\n✅ She said she would come but she didn't.\n(განმეორებული ზმნა არ არის საჭირო)\n\n**დაიმახსოვრე:** ინგლისურში გამეორება თავიდან აიცილეთ — გამოიყენეთ დამხმარე ზმნები ან გამოტოვება!",
   "exercises": [
     {
       "type": "multiple-choice",
@@ -144,38 +144,68 @@
     {
       "type": "multiple-choice",
       "question": "'Are you coming?' — 'I hope ___.'",
-      "options": ["so", "yes", "it", "that"],
+      "options": [
+        "so",
+        "yes",
+        "it",
+        "that"
+      ],
       "answer": "so"
     },
     {
       "type": "multiple-choice",
       "question": "'She speaks French.' — '___ does her brother.'",
-      "options": ["So", "Neither", "Not", "Also"],
+      "options": [
+        "So",
+        "Neither",
+        "Not",
+        "Also"
+      ],
       "answer": "So"
     },
     {
       "type": "multiple-choice",
       "question": "'I can't swim.' — 'Neither ___ my sister.'",
-      "options": ["can", "does", "is", "has"],
+      "options": [
+        "can",
+        "does",
+        "is",
+        "has"
+      ],
       "answer": "can"
     },
     {
       "type": "multiple-choice",
       "question": "'Will you help me?' — 'I'd be happy ___.'",
-      "options": ["to", "so", "yes", "helping"],
+      "options": [
+        "to",
+        "so",
+        "yes",
+        "helping"
+      ],
       "answer": "to"
     },
     {
       "type": "multiple-choice",
       "question": "'Did she pass the exam?' — 'I'm afraid ___.'",
-      "options": ["not", "no", "so", "never"],
+      "options": [
+        "not",
+        "no",
+        "so",
+        "never"
+      ],
       "answer": "not"
     },
     {
       "type": "fill-blank",
       "question": "'Which car is yours?' — 'The red ___.'",
       "answer": "one",
-      "options": ["one", "ones", "car", "it"]
+      "options": [
+        "one",
+        "ones",
+        "car",
+        "it"
+      ]
     }
   ],
   "passThreshold": 0.7
