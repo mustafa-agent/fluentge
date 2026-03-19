@@ -63,6 +63,13 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 19 (Cron 4, 7:00 AM)
+- [x] **Phrases page light mode** — Full light mode overrides: category cards, search input, level filter buttons, phrase items, premium modal all properly themed ✅
+- [x] **Premium page light mode** — Pricing cards, comparison table, FAQ items get white backgrounds and proper borders in light mode ✅
+- [x] **Global muted text overrides** — `#C8C8C0`, `#8B8B85`, `#5B5B55`, `#a0a0aa` all get darker readable colors in light mode ✅
+- [x] **Hero overlay light mode** — Added `hero-overlay-dark` class to games, phrases, podcast, and index hero sections for proper light gradient ✅
+- [x] **About page hero light mode** — Hero overlay and text properly themed for light mode ✅
+
 ## ✅ COMPLETED — Mar 15 (Cron 4B, 5:30 PM)
 - [x] **CRITICAL: Entire site CSS broken on live deployment** — CDN was serving stale HTML references pointing to `about.BWfgMbL6.css` (old hash) which returned 404/HTML. Redeployed to fix. All pages (dashboard, grammar, etc.) were completely unstyled. ✅
 
