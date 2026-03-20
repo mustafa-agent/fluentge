@@ -1,5 +1,50 @@
 @import "tailwindcss";
 
+/* ========== GLOBAL BASE STYLES ========== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better text selection */
+::selection {
+  background: rgba(99, 102, 241, 0.25);
+  color: inherit;
+}
+html.light ::selection {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+/* Focus-visible for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth theme transitions */
+body, header, nav, footer, .mobile-bottom-nav {
+  transition: background-color 0.3s ease, color 0.2s ease, border-color 0.3s ease;
+}
+
+/* Global link hover transitions (for links without explicit transitions) */
+a:not([class*="transition"]) {
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+/* Better active states for all buttons */
+button:active, [role="button"]:active {
+  transform: scale(0.98);
+}
+
+/* Reduced motion: disable all animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* ========== GLOBAL ENTRANCE ANIMATIONS ========== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
