@@ -5,7 +5,7 @@
   "title_ka": "სუბიექტის ნაცვალსახელები",
   "level": "A1",
   "passThreshold": 0.7,
-  "explanation_ka": "სუბიექტის ნაცვალსახელები ნიშნავს - ვინ ასრულებს მოქმედებას.\n\n**ნაცვალსახელები:**\n• I — მე (ყოველთვის დიდი ასოთი!)\n• you — შენ / თქვენ\n• he — ის (მამაკაცი)\n• she — ის (ქალი)\n• it — ის (საგანი, ცხოველი)\n• we — ჩვენ\n• they — ისინი\n\n**მთავარი განსხვავება:**\nქართულში \"ის\" ყველასთვის, ინგლისურში - he/she/it!\n• ✅ Anna is kind. She is my friend\n• ❌ Anna is kind. He is my friend\n\n**მნიშვნელოვანი წესი:**\n\"I\" ყოველთვის დიდი ასოთი!\n• ✅ I am happy\n• ❌ i am happy",
+  "explanation_ka": "სუბიექტის (subject - ვინ აკეთებს მოქმედებას) ნაცვალსახელები (pronouns - სახელის შემცვლელი სიტყვები) ნიშნავს - ვინ ასრულებს მოქმედებას.\n\n**ნაცვალსახელები:**\n• I — მე (ყოველთვის დიდი ასოთი!)\n• you — შენ / თქვენ (ერთი და მეტი ადამიანისთვის)\n• he — ის (მამაკაცი)\n• she — ის (ქალი)\n• it — ის (საგანი, ცხოველი, ამინდი)\n• we — ჩვენ\n• they — ისინი (მეტი ადამიანი/საგანი)\n\n**მთავარი განსხვავება:**\nქართულში \"ის\" ყველასთვის, ინგლისურში - he/she/it!\n• ✅ Anna is kind. She is my friend\n• ❌ Anna is kind. He is my friend\n\n**მნიშვნელოვანი წესი:**\n\"I\" ყოველთვის დიდი ასოთი!\n• ✅ I am happy\n• ❌ i am happy",
   "examples": [
     {
       "en": "I am from Georgia.",
@@ -228,6 +228,106 @@
         "He",
         "She",
         "They"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The car is expensive. ___ costs a lot. (მანქანა ძვირია)",
+      "answer": "It",
+      "options": [
+        "He",
+        "She",
+        "It"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია არასწორი?",
+      "options": [
+        "I love music.",
+        "i love music.",
+        "We love music."
+      ],
+      "answer": "i love music."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Nino and Giorgi are students. ___ study together.",
+      "answer": "They",
+      "options": [
+        "He",
+        "She",
+        "They"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ is very cold today. (ამინდი)",
+      "answer": "It",
+      "options": [
+        "He",
+        "She",
+        "It"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Dr. Khatuna is a dentist. ___ helps people.",
+      "options": [
+        "He helps people.",
+        "She helps people.",
+        "It helps people."
+      ],
+      "answer": "She helps people."
+    },
+    {
+      "type": "fill-blank",
+      "question": "My friends and ___ go to the movies. (ჩვენ კინოში მივდივართ)",
+      "answer": "I",
+      "options": [
+        "I",
+        "me",
+        "my"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The cats are hungry. ___ want food.",
+      "answer": "They",
+      "options": [
+        "It",
+        "They",
+        "She"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია \"Levan and Luka are brothers\" შემდეგი სწორი?",
+      "options": [
+        "He are best friends.",
+        "They are best friends.",
+        "It are best friends."
+      ],
+      "answer": "They are best friends."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ am learning English very well. (მე კარგად ვსწავლობ)",
+      "answer": "I",
+      "options": [
+        "I",
+        "Me",
+        "My"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The phone is ringing. ___ is loud. (ტელეფონი რეკავს)",
+      "answer": "It",
+      "options": [
+        "He",
+        "She",
+        "It"
       ]
     }
   ]

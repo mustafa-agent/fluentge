@@ -5,7 +5,7 @@
   "title_ka": "მრავლობითი რიცხვი",
   "level": "A1",
   "passThreshold": 0.7,
-  "explanation_ka": "მრავლობითი რიცხვი ნიშნავს - ერთზე მეტი.\n\n**ძირითადი წესი - დაამატე -s:**\n• cat → cats\n• book → books\n\n**თუ სიტყვა მთავრდება s/sh/ch/x/z-ზე - დაამატე -es:**\n• box → boxes\n• watch → watches\n\n**თუ სიტყვა მთავრდება თანხმოვანი + y-ზე - შეცვალე -ies:**\n• baby → babies\n• city → cities\n\n**თუ სიტყვა მთავრდება ხმოვანი + y-ზე - დაამატე -s:**\n• boy → boys\n• day → days\n\n**არარეგულარული (დაიმახსოვრე!):**\n• man → men, woman → women\n• child → children, tooth → teeth\n\n**მთავარი წესი:**\nინგლისურში ყოველთვის ჩაწერე მრავლობითი!\n• ✅ two books\n• ❌ two book",
+  "explanation_ka": "მრავლობითი რიცხვი (plural - ბევრი) ნიშნავს - ერთზე მეტი.\n\n**ძირითადი წესი - დაამატე -s:**\n• cat → cats (კატები)\n• book → books (წიგნები)\n\n**თუ სიტყვა მთავრდება s/sh/ch/x/z-ზე - დაამატე -es:**\n• box → boxes (ყუთები)\n• watch → watches (საათები)\n\n**თუ სიტყვა მთავრდება თანხმოვანი (consonant - არა ა,ე,ი,ო,უ) + y-ზე - შეცვალე -ies:**\n• baby → babies (ბავშვები)\n• city → cities (ქალაქები)\n\n**თუ სიტყვა მთავრდება ხმოვანი (vowel - ა,ე,ი,ო,უ) + y-ზე - დაამატე -s:**\n• boy → boys (ბიჭები)\n• day → days (დღეები)\n\n**არარეგულარული (irregular - გამონაკლისები, დაიმახსოვრე!):**\n• man → men, woman → women\n• child → children, tooth → teeth\n\n**მთავარი წესი:**\nინგლისურში ყოველთვის ჩაწერე მრავლობითი!\n• ✅ two books\n• ❌ two book",
   "examples": [
     {
       "en": "I have two cats.",
@@ -229,6 +229,106 @@
         "Five mice ran away."
       ],
       "answer": "Five mice ran away."
+    },
+    {
+      "type": "fill-blank",
+      "question": "One pencil, ten ___. (ერთი ფანქარი, ათი ___)",
+      "answer": "pencils",
+      "options": [
+        "pencils",
+        "penciles",
+        "pencilies"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One sheep, many ___.",
+      "answer": "sheep",
+      "options": [
+        "sheeps",
+        "sheepies",
+        "sheep"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია \"fish\" მრავლობითში?",
+      "options": [
+        "fishs",
+        "fishes",
+        "fish"
+      ],
+      "answer": "fish"
+    },
+    {
+      "type": "fill-blank",
+      "question": "One party, several ___.",
+      "answer": "parties",
+      "options": [
+        "partys",
+        "partyes",
+        "parties"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I have three ___. (მე სამი სახლი მაქვს)",
+      "answer": "houses",
+      "options": [
+        "houses",
+        "hous",
+        "housees"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is WRONG?",
+      "options": [
+        "two dogs",
+        "three childrens",
+        "four cats"
+      ],
+      "answer": "three childrens"
+    },
+    {
+      "type": "fill-blank",
+      "question": "One tomato, five ___.",
+      "answer": "tomatoes",
+      "options": [
+        "tomatos",
+        "tomatoes",
+        "tomatoies"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "One photo, many ___.",
+      "answer": "photos",
+      "options": [
+        "photos",
+        "photoes",
+        "photoies"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I bought two breads.",
+        "I bought two bread.",
+        "I bought bread."
+      ],
+      "answer": "I bought bread."
+    },
+    {
+      "type": "fill-blank",
+      "question": "One goose, two ___. (ერთი ბატი, ორი ___)",
+      "answer": "geese",
+      "options": [
+        "gooses",
+        "geese",
+        "goosies"
+      ]
     }
   ]
 }

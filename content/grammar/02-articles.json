@@ -5,7 +5,7 @@
   "title_ka": "არტიკლები",
   "level": "A1",
   "passThreshold": 0.7,
-  "explanation_ka": "არტიკლები არსებითი სახელის წინ დგება. ქართულში ამათი შესატყვისი არ არის.\n\n**a - ვიყენებთ თანხმოვანი ხმის წინ:**\n• a book, a car, a dog\n• a university (იუ-ხმა!)\n\n**an - ვიყენებთ ხმოვნის ხმის წინ:**\n• an apple, an egg\n• an hour (ჰ არ ისმის!)\n\n**the - ვიყენებთ როცა ვიცით რაზე ვლაპარაკობთ:**\n• the sun (მზე)\n• the door (კონკრეტული კარი)\n\n**მთავარი წესი:**\n• ✅ I am a student\n• ❌ I am student\nმნიშვნელოვანია ხმა, არა ასო!",
+  "explanation_ka": "არტიკლები (articles - პატარა სიტყვები) არსებითი სახელის (noun - ადამიანი/ნივთი/ცხოველი) წინ დგება. ქართულში ამათი შესატყვისი არ არის.\n\n**a - ვიყენებთ თანხმოვანი ხმის წინ:**\n• a book (წიგნი), a car (მანქანა), a dog (ძაღლი)\n• a university (იუ-ხმა!)\n\n**an - ვიყენებთ ხმოვნის ხმის წინ:**\n• an apple (ვაშლი), an egg (კვერცხი)\n• an hour (ჰ არ ისმის!)\n\n**the - ვიყენებთ როცა ვიცით რაზე ვლაპარაკობთ:**\n• the sun (მზე - მხოლოდ ერთია)\n• the door (კონკრეტული კარი)\n\n**მთავარი წესი:**\n• ✅ I am a student\n• ❌ I am student\nმნიშვნელოვანია ხმა, არა ასო!",
   "examples": [
     {
       "en": "I have a cat.",
@@ -224,6 +224,106 @@
       "type": "fill-blank",
       "question": "She has ___ idea.",
       "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I bought ___ umbrella yesterday. (გუშინ ქოლგა ვიყიდე)",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია არასწორი? (Which is incorrect?)",
+      "options": [
+        "a house",
+        "an elephant",
+        "a orange"
+      ],
+      "answer": "a orange"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Can you turn off ___ TV?",
+      "answer": "the",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "My father is ___ doctor. (ჩემი მამა ექიმია)",
+      "answer": "a",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: It takes ___ hour to get there.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "answer": "an"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ internet is not working today.",
+      "answer": "The",
+      "options": [
+        "A",
+        "An",
+        "The"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "There's ___ old man at the door.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I live in a house.",
+        "I live in an house.",
+        "I live in house."
+      ],
+      "answer": "I live in a house."
+    },
+    {
+      "type": "fill-blank",
+      "question": "She is reading ___ interesting book.",
+      "answer": "an",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Where is ___ bathroom? (სად არის ტუალეტი?)",
+      "answer": "the",
       "options": [
         "a",
         "an",

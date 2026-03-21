@@ -4,7 +4,7 @@
   "title_en": "This / That / These / Those",
   "title_ka": "ჩვენებითი ნაცვალსახელები",
   "level": "A1",
-  "explanation_ka": "ჩვენებითი ნაცვალსახელები გამოიყენება საგნებზე მისათითებლად.\n\nახლოს:\nthis — ეს (ერთი საგანი)\nthese — ეს (რამდენიმე საგანი)\n\nშორს:\nthat — ის (ერთი საგანი)\nthose — ის (რამდენიმე საგანი)\n\nმაგალითად:\nThis is my phone. — ეს ჩემი ტელეფონია.\nThose are expensive. — ისინი ძვირია.\n\nThis/that + მხოლობითი\nThese/those + მრავლობითი",
+  "explanation_ka": "**ჩვენებითი ნაცვალსახელები** - ვსახავთ თითს და ვეუბნებით \"ეს!\" ან \"ის!\"\n\n**🔸 ოთხი სიტყვა:**\n| **სიტყვა** | **როდის** | **მაგალითი** | **ქართული** |\n|---|---|---|---|\n| **this** | ახლოს + 1 რამ | This book | ეს წიგნი |\n| **that** | შორს + 1 რამ | That house | ის სახლი |\n| **these** | ახლოს + ბევრი | These books | ეს წიგნები |\n| **those** | შორს + ბევრი | Those houses | ის სახლები |\n\n**🔸 როდის ვიყენებთ:**\n• **This** - ჩემს ხელში რაღაცაა\n  \"**This** phone is mine\" (ეს ტელეფონი ჩემია)\n• **That** - შორს რაღაცა ვხედავ\n  \"**That** car is red\" (ის მანქანა წითელია)\n• **These** - ჩემთან ბევრი რამაა\n  \"**These** shoes are new\" (ეს ფეხსაცმელები ახალია)\n• **Those** - შორს ბევრი რამაა\n  \"**Those** people are dancing\" (ის ადამიანები ცეკვავენ)\n\n**❌ ყველაზე ხშირი შეცდომები:**\n• \"This books\" ❌ → \"These books\" ✅\n• \"That cars\" ❌ → \"Those cars\" ✅",
   "examples": [
     {
       "en": "This is my book.",
@@ -215,6 +215,149 @@
         "That apples are sweet."
       ],
       "answer": "These apples are sweet."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Can you see ___ stars in the sky?",
+      "answer": "those",
+      "options": [
+        "those",
+        "this",
+        "that",
+        "these"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'___ cake looks delicious!' (in a bakery window)",
+      "options": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ],
+      "answer": "That"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ cookies in my hand are for you.",
+      "answer": "These",
+      "options": [
+        "These",
+        "This",
+        "That",
+        "Those"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Pointing at a distant bird: '_____ is beautiful!'",
+      "options": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ],
+      "answer": "That"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ restaurant across the street is expensive.",
+      "answer": "That",
+      "options": [
+        "That",
+        "This",
+        "These",
+        "Those"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct for one nearby item?",
+      "options": [
+        "This is my bag.",
+        "These is my bag.",
+        "That are my bag.",
+        "Those is my bag."
+      ],
+      "answer": "This is my bag."
+    },
+    {
+      "type": "fill-blank",
+      "question": "I love ___ weather! (today's weather)",
+      "answer": "this",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Change to singular: 'Those cars are fast.'",
+      "options": [
+        "That car is fast.",
+        "This car is fast.",
+        "These car is fast.",
+        "This cars is fast."
+      ],
+      "answer": "That car is fast."
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ children playing in the park look happy.",
+      "answer": "Those",
+      "options": [
+        "Those",
+        "That",
+        "This",
+        "These"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Phone conversation: 'Is ___ John?'",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "answer": "this"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Put ___ books on the shelf, please. (books near me)",
+      "answer": "these",
+      "options": [
+        "these",
+        "this",
+        "that",
+        "those"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Memory: '_____ were good times.' (past experiences)",
+      "options": [
+        "Those",
+        "This",
+        "That",
+        "These"
+      ],
+      "answer": "Those"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ movie we're watching is boring.",
+      "answer": "This",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ]
     }
   ],
   "passThreshold": 0.7

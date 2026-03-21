@@ -5,7 +5,7 @@
   "title_ka": "Some / Any / Much / Many — რაოდენობის გამოხატვა",
   "level": "A2",
   "passThreshold": 0.7,
-  "explanation_ka": "## რაოდენობის გამოხატვა\n\n**Some** = ცოტა, რამდენიმე\n• დადებით წინადადებებში\n• I have some friends\n• Would you like some tea? (თავაზიანი კითხვა)\n\n**Any** = რაიმე\n• უარყოფითში და კითხვებში\n• I don't have any money\n• Do you have any questions?\n\n**Much** = ბევრი (უთვლადისთვის)\n• much water, much time\n• How much money?\n• I don't have much sugar\n\n**Many** = ბევრი (თვლადისთვის)\n• many books, many people\n• How many children?\n• I have many friends\n\n**A lot of** = ბევრი (ყველაფერი)\n• I have a lot of work\n• A lot of people came",
+  "explanation_ka": "**Quantity words** (რაოდენობის სიტყვები) - Some/Any/Much/Many.\n\n**Some** = ცოტა, რამდენიმე\n• **positive sentences** (დადებით წინადადებებში): I have some friends\n• **polite offers** (თავაზიანი კითხვა): Would you like some tea?\n\n**Any** = რაიმე\n• **negative sentences** (უარყოფითში): I don't have any money\n• **questions** (კითხვებში): Do you have any questions?\n\n**Much** = ბევრი (uncountable nouns-თვის)\n• much water, much time\n• How much money?\n• I don't have much sugar\n\n**Many** = ბევრი (countable nouns-თვის)\n• many books, many people\n• How many children?\n• I have many friends\n\n**A lot of** = ბევრი (ყველა noun-თვის)\n• I have a lot of work (uncountable)\n• A lot of people came (countable)\n\n**🔥 მთავარი წესი:**\n• Countable = many, Uncountable = much\n• Positive = some, Negative/Question = any",
   "examples": [
     {
       "en": "I have some questions.",
@@ -229,6 +229,106 @@
         "any",
         "many"
       ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I need ___ help with my homework.",
+      "answer": "some",
+      "options": [
+        "some",
+        "any",
+        "many"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "There aren't some cookies left.",
+        "There aren't any cookies left.",
+        "There aren't much cookies left."
+      ],
+      "answer": "There aren't any cookies left."
+    },
+    {
+      "type": "fill-blank",
+      "question": "How ___ advice did she give you?",
+      "answer": "much",
+      "options": [
+        "many",
+        "much",
+        "some"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "There are ___ cars in the parking lot.",
+      "answer": "many",
+      "options": [
+        "much",
+        "many",
+        "any"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct for offers?",
+      "options": [
+        "Would you like any tea?",
+        "Would you like some tea?",
+        "Would you like much tea?"
+      ],
+      "answer": "Would you like some tea?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I don't see ___ difference between them.",
+      "answer": "any",
+      "options": [
+        "some",
+        "any",
+        "many"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She spends ___ time on social media.",
+      "answer": "a lot of",
+      "options": [
+        "many",
+        "much",
+        "a lot of"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I have some problem.",
+        "I have a problem.",
+        "I have any problem."
+      ],
+      "answer": "I have a problem."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Are there ___ restaurants near here?",
+      "answer": "any",
+      "options": [
+        "some",
+        "any",
+        "much"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which uses 'much'?",
+      "options": [
+        "How much books?",
+        "How much information?",
+        "How much students?"
+      ],
+      "answer": "How much information?"
     }
   ]
 }

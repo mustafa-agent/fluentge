@@ -4,7 +4,7 @@
   "title_en": "Advanced Passive Structures",
   "title_ka": "პასივის მოწინავე სტრუქტურები",
   "level": "C1",
-  "explanation_ka": "B1 დონეზე ვისწავლეთ ვნებითი გვარის საფუძვლები. ახლა განვიხილოთ რთული პასიური სტრუქტურები, რომლებიც ფორმალურ და აკადემიურ ინგლისურში გამოიყენება.\n\nImpersonal Passive (უპიროვნო პასივი)\nIt is said that... = ამბობენ, რომ...\nIt is believed that he is innocent. = ითვლება, რომ უდანაშაულოა.\nHe is believed to be innocent. = იგი უდანაშაულოდ ითვლება.\n\n**მთავარი წესები ზემოთ ნახეთ.**",
+  "explanation_ka": "**მოწინავე პასივი** — უფრო რთული სტრუქტურები, რასაც ფორმალურ წერასა და ახალ ამბებში ვხვდებით.\n\n**უპიროვნო პასივი (Impersonal Passive)** — როცა ვსაუბრობთ ზოგადად, კონკრეტული ადამიანის მითითების გარეშე:\n\n**ორი ვარიანტი:**\n• **It + пასივი + that წინადადება**\n  - *It is said that he is rich.* (ამბობენ, რომ მდიდარია)\n  - *It is believed that she left.* (ფიქრობენ, რომ წავიდა)\n\n• **ქვემდებარე + პასივი + to + ზმნა**\n  - *He is said to be rich.* (მდიდარად ითვლება)\n  - *She is believed to have left.* (წასულად ფიქრობენ)\n\n**დრო მნიშვნელოვანია:**\n• **ახლა:** *to be* → *He is said to be tired.*\n• **წარსული:** *to have + V3* → *He is said to have left.*\n\n**ზმნები რაც ხშირად გამოიყენება:**\nsay (ამბობენ), believe (ფიქრობენ), think (ფიქრობენ), report (ახსენებენ), expect (მოელიან), know (იციან)",
   "examples": [
     {
       "en": "It is believed that the Earth is 4.5 billion years old.",
@@ -238,6 +238,138 @@
         "has posed"
       ],
       "answer": "poses"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The criminal is supposed ___ fled to another country.",
+      "answer": "to have",
+      "options": [
+        "to have",
+        "to be",
+        "having",
+        "being"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "It is estimated that the project ___ $2 million.",
+      "options": [
+        "will cost",
+        "costs",
+        "costing",
+        "cost"
+      ],
+      "answer": "will cost"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The actress is rumored ___ secretly married last week.",
+      "answer": "to have gotten",
+      "options": [
+        "to have gotten",
+        "to get",
+        "getting",
+        "got"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Transform: 'People say that he is a millionaire.'",
+      "options": [
+        "He is said to be a millionaire.",
+        "He is said being a millionaire.",
+        "It is said he to be a millionaire.",
+        "He said to be a millionaire."
+      ],
+      "answer": "He is said to be a millionaire."
+    },
+    {
+      "type": "fill-blank",
+      "question": "It ___ claimed that the medicine can cure cancer.",
+      "answer": "is",
+      "options": [
+        "is",
+        "has",
+        "was",
+        "will"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The witness is alleged ___ about the incident.",
+      "options": [
+        "to have lied",
+        "to lie",
+        "lying",
+        "lied"
+      ],
+      "answer": "to have lied"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The painting is considered ___ one of the greatest masterpieces.",
+      "answer": "to be",
+      "options": [
+        "to be",
+        "be",
+        "being",
+        "been"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "It is predicted that unemployment ___ next year.",
+      "options": [
+        "will fall",
+        "falls",
+        "falling",
+        "fell"
+      ],
+      "answer": "will fall"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The politician is thought ___ involved in the scandal.",
+      "answer": "to be",
+      "options": [
+        "to be",
+        "be",
+        "being",
+        "been"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is WRONG?",
+      "options": [
+        "It is said that prices will rise.",
+        "Prices are said to rise.",
+        "It is said prices to rise.",
+        "Both A and B are correct."
+      ],
+      "answer": "It is said prices to rise."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The company is reported ___ 500 workers last month.",
+      "answer": "to have fired",
+      "options": [
+        "to have fired",
+        "to fire",
+        "firing",
+        "fired"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "It is acknowledged that she ___ extremely talented.",
+      "options": [
+        "is",
+        "was",
+        "being",
+        "to be"
+      ],
+      "answer": "is"
     }
   ],
   "passThreshold": 0.7

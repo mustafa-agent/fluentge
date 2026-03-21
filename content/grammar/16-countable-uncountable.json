@@ -5,7 +5,7 @@
   "title_ka": "თვლადი და უთვლადი არსებითი სახელები",
   "level": "A2",
   "passThreshold": 0.7,
-  "explanation_ka": "## თვლადი და უთვლადი სიტყვები\n\n**თვლადი** = შეიძლება ვითვალოთ (1, 2, 3...)\n**უთვლადი** = ვერ ვითვლით\n\n## თვლადი სიტყვები\n• შეიძლება ვითვალოთ: one book, two books\n• a/an ეწერება: a cat, an apple\n• მრავლობითი ფორმა: book → books\n\n## უთვლადი სიტყვები\n• ვერ ვითვლით: water, money, advice\n• a/an არ ეწერება\n• some/much ეწერება: some water\n\n## ხშირი უთვლადი სიტყვები\n• money (ფული)\n• information (ინფორმაცია)\n• news (სიახლეები)\n• furniture (ავეჯი)\n• homework (დავალება)\n• bread (პური)\n• music (მუსიკა)\n• advice (რჩევა)\n\n## რაოდენობის გამოხატვა\n• a glass of water\n• a piece of advice\n• a slice of bread",
+  "explanation_ka": "**Countable vs Uncountable Nouns** - თვლადი და უთვლადი არსებითი სახელები.\n\n**Countable (თვლადი)** = შეიძლება ვითვალოთ (1, 2, 3...)\n**Uncountable (უთვლადი)** = ვერ ვითვლით\n\n**თვლადი nouns (არსებითი სახელები):**\n• შეიძლება ვითვალოთ: one book, two books\n• a/an ეწერება: a cat, an apple\n• plural form (მრავლობითი): book → books\n\n**უთვლადი nouns:**\n• ვერ ვითვლით: water, money, advice\n• a/an არ ეწერება\n• some/much ეწერება: some water\n\n**ხშირი უთვლადი სიტყვები:**\n• money (ფული)\n• information (ინფორმაცია)\n• news (სიახლეები) - ყოველთვის singular!\n• furniture (ავეჯი)\n• homework (დავალება)\n• bread (პური)\n• music (მუსიკა)\n• advice (რჩევა)\n\n**რაოდენობის გამოხატვა (quantity):**\n• a glass of water (წყლის ჭიქა)\n• a piece of advice (რჩევა)\n• a slice of bread (პურის ნაჭერი)",
   "examples": [
     {
       "en": "I have three books.",
@@ -229,6 +229,106 @@
         "milk"
       ],
       "answer": "glass"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I bought ___ bottles of juice.",
+      "answer": "three",
+      "options": [
+        "three",
+        "much",
+        "a little"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია უთვლადი?",
+      "options": [
+        "research",
+        "book",
+        "student"
+      ],
+      "answer": "research"
+    },
+    {
+      "type": "fill-blank",
+      "question": "There isn't ___ rice left.",
+      "answer": "much",
+      "options": [
+        "many",
+        "much",
+        "few"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I need a new informations.",
+        "I need new information.",
+        "I need new informations."
+      ],
+      "answer": "I need new information."
+    },
+    {
+      "type": "fill-blank",
+      "question": "How many ___ of coffee did you drink?",
+      "answer": "cups",
+      "options": [
+        "coffee",
+        "cups",
+        "much"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is uncountable?",
+      "options": [
+        "luggage",
+        "suitcase",
+        "bag"
+      ],
+      "answer": "luggage"
+    },
+    {
+      "type": "fill-blank",
+      "question": "She doesn't have ___ experience.",
+      "answer": "much",
+      "options": [
+        "many",
+        "much",
+        "few"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I bought some new furnitures.",
+        "I bought some new furniture.",
+        "I bought a new furniture."
+      ],
+      "answer": "I bought some new furniture."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Could you give me ___ of chocolate?",
+      "answer": "a piece",
+      "options": [
+        "a chocolate",
+        "a piece",
+        "many"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which word is always singular?",
+      "options": [
+        "books",
+        "news",
+        "cars"
+      ],
+      "answer": "news"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "title_en": "Hedging & Vague Language",
   "title_ka": "ჰეჯინგი და ბუნდოვანი ენა",
   "level": "C1",
-  "explanation_ka": "ჰეჯინგი (Hedging) და ბუნდოვანი ენა (Vague Language) გამოიყენება, როცა არ გსურთ ძალიან კატეგორიული ან ზუსტი იყოთ. ეს ძალიან მნიშვნელოვანი აკადემიურ წერაში, თავაზიან კომუნიკაციაში და ყოველდღიურ საუბარში.\n\nჰეჯინგის საშუალებები (Hedging devices):\n\nმოდალური ზმნები: may, might, could, would\nThis could be the reason. — ეს შეიძლება იყოს მიზეზი.\n\n**მთავარი წესები ზემოთ ნახეთ.**",
+  "explanation_ka": "**ჰეჯინგი და ბუნდოვანი ენა** - ეს არის როდესაც არ ვლაპარაკობთ 100%-ით დარწმუნებით, არამედ \"შეიძლება\", \"თითქოს\", \"დაახლოებით\" ვამბობთ.\n\n**🔸 რატომ ვიყენებთ:**\n• **თავაზიანობისთვის** - არ გვინდა ძალიან კატეგორიული ვიყოთ\n• **აკადემიურ წერაში** - სამეცნიერო ტექსტებში\n• **ყოველდღიურ საუბარში** - რომ არ ვჩანდეთ ძალიან დარწმუნებული\n\n**🔸 ჰეჯინგის საშუალებები:**\n• **მოდალური ზმნები:** may, might, could, would\n  \"This **might** be correct\" - \"ეს **შეიძლება** სწორი იყოს\"\n• **ზმნიზედები:** probably, possibly, perhaps, maybe\n  \"**Perhaps** he's right\" - \"**შეიძლება** მართალი იყოს\"\n• **ზმნები:** seem, appear, tend to, suggest\n  \"It **seems** difficult\" - \"**როგორც ჩანს** რთულია\"\n\n**🔸 ბუნდოვანი ენა (რიცხვებისთვის):**\n• approximately, roughly, about, around\n  \"**About** 50 people\" - \"**დაახლოებით** 50 ადამიანი\"\n• or so, and things like that, and stuff\n  \"Books, pens **and things like that**\" - \"წიგნები, კალმები **და ამ ტიპის რამეები**\"",
   "examples": [
     {
       "en": "The results suggest that the method may be effective.",
@@ -265,6 +265,105 @@
         "specifically"
       ],
       "answer": "and so forth"
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ 30% of students failed the exam.",
+      "answer": "Roughly",
+      "options": [
+        "Roughly",
+        "Exactly",
+        "Precisely",
+        "Definitely"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is the most hedged statement?",
+      "options": [
+        "This approach might possibly work.",
+        "This approach works.",
+        "This approach will work.",
+        "This approach always works."
+      ],
+      "answer": "This approach might possibly work."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The data ___ to support this hypothesis.",
+      "answer": "appears",
+      "options": [
+        "appears",
+        "proves",
+        "confirms",
+        "establishes"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Vague language for time: 'The meeting lasted two hours ___.'",
+      "options": [
+        "or so",
+        "exactly",
+        "precisely",
+        "definitely"
+      ],
+      "answer": "or so"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I'm ___ sure that's the right answer.",
+      "answer": "fairly",
+      "options": [
+        "fairly",
+        "absolutely",
+        "completely",
+        "definitely"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Transform to be less direct: 'You are wrong.'",
+      "options": [
+        "You might be mistaken.",
+        "You are definitely wrong.",
+        "You are completely wrong.",
+        "You are absolutely wrong."
+      ],
+      "answer": "You might be mistaken."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The concert will start at 8 o'clock ___ thereabouts.",
+      "answer": "or",
+      "options": [
+        "or",
+        "and",
+        "but",
+        "so"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which shows uncertainty about quantity?",
+      "options": [
+        "Something like 100 people came.",
+        "Exactly 100 people came.",
+        "Precisely 100 people came.",
+        "Definitely 100 people came."
+      ],
+      "answer": "Something like 100 people came."
+    },
+    {
+      "type": "fill-blank",
+      "question": "This ___ be the best solution available.",
+      "answer": "may well",
+      "options": [
+        "may well",
+        "definitely will",
+        "certainly will",
+        "absolutely will"
+      ]
     }
   ],
   "passThreshold": 0.7

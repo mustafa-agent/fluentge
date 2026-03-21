@@ -26,7 +26,9 @@ export default function DeckSelect({ onSelect }: Props) {
   const [loadedDeck, setLoadedDeck] = useState<Deck | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
+  // Premium requires logged-in user
+  const hasUser = !!localStorage.getItem('fluentge-user');
+  const isPremiumUser = hasUser && localStorage.getItem('fluentge-premium') === 'true';
   const freeDecks = isPremiumUser ? deckIndex : deckIndex.filter(d => isDeckFree(d.id));
   const premiumDecks = isPremiumUser ? [] : deckIndex.filter(d => !isDeckFree(d.id));
 

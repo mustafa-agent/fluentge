@@ -5,7 +5,7 @@
   "title_ka": "გერუნდი და ინფინიტივი",
   "level": "B1",
   "passThreshold": 0.7,
-  "explanation_ka": "ზოგიერთი ზმნის შემდეგ -ing ფორმა მოდის, ზოგიერთის შემდეგ to + ზმნა.\n\n1. გერუნდი (-ing) მოდის:\n• enjoy, finish, avoid, mind, suggest, keep, practice, consider, imagine\n✅ I enjoy reading. ❌ I enjoy to read.\n\n2. ინფინიტივი (to + ზმნა) მოდის:\n• want, need, decide, plan, hope, promise, agree, learn, refuse, offer\n✅ I want to learn. ❌ I want learning.\n\n3. ორივე შეიძლება (მნიშვნელობა არ იცვლება):\n• like, love, hate, start, begin, continue\n• I like swimming. = I like to swim.\n\n4. ორივე შეიძლება (მნიშვნელობა იცვლება!):\n• remember: I remember locking the door. (მახსოვს, ჩავკეტე)\n  vs. I remembered to lock the door. (არ დამავიწყდა)\n• stop: He stopped smoking. (თავი დაანება)\n  vs. He stopped to smoke. (გაჩერდა მოსაწევად)",
+  "explanation_ka": "**გერუნდი (-ing) და ინფინიტივი (to + ზმნა)** - ზოგი ზმნა ითხოვს -ing-ს, ზოგი to-ს.\n\n**მხოლოდ -ing (გერუნდი) ითხოვენ:**\n• **enjoy, finish, avoid, mind, suggest, keep, practice**\n• **მაგ:** I **enjoy** **reading** = კითხვა მიყვარს\n• **მაგ:** He **finished** **eating** = ჭამა დაამთავრა\n\n**მხოლოდ to + ზმნა (ინფინიტივი) ითხოვენ:**\n• **want, need, decide, plan, hope, promise, agree, learn**\n• **მაგ:** I **want** **to go** = მინდა წავიდე\n• **მაგ:** She **decided** **to study** = გადაწყვიტა ესწავლა\n\n**ორივე შეიძლება (ერთნაირი მნიშვნელობით):**\n• **like, love, hate, start, begin, continue**\n• **მაგ:** I **like** swimming = I **like** to swim\n\n**ორივე, მაგრამ სხვა მნიშვნელობით:**\n• **stop** smoking = მოწევის მიტოვება\n• **stop** to smoke = გაჩერება მოსაწევად\n• **remember** doing = მახსოვს, რომ გავაკეთე\n• **remember** to do = არ დამავიწყდა, რომ უნდა გამეკეთებინა\n\n**ზმნების სია უნდა ისწავლოს - ქართულში განსხვავება არაა!**",
   "examples": [
     {
       "en": "I enjoy playing football.",
@@ -180,6 +180,146 @@
         "to speak",
         "speak",
         "spoke"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She hopes ___ (pass) the exam.",
+      "answer": "to pass",
+      "options": [
+        "to pass",
+        "passing",
+        "pass"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We consider ___ (move) to another country.",
+      "answer": "moving",
+      "options": [
+        "moving",
+        "to move",
+        "move"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I refuse helping you.",
+        "I refuse to help you.",
+        "I refuse help you."
+      ],
+      "answer": "I refuse to help you."
+    },
+    {
+      "type": "fill-blank",
+      "question": "He offered ___ (drive) me home.",
+      "answer": "to drive",
+      "options": [
+        "to drive",
+        "driving",
+        "drive"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I can't stand ___ (wait) in long lines.",
+      "answer": "waiting",
+      "options": [
+        "waiting",
+        "to wait",
+        "wait"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does 'I stopped to buy milk' mean?",
+      "options": [
+        "I quit buying milk.",
+        "I paused in order to buy milk.",
+        "I continued buying milk."
+      ],
+      "answer": "I paused in order to buy milk."
+    },
+    {
+      "type": "fill-blank",
+      "question": "They planned ___ (visit) us next month.",
+      "answer": "to visit",
+      "options": [
+        "to visit",
+        "visiting",
+        "visit"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She denied ___ (steal) the money.",
+      "answer": "stealing",
+      "options": [
+        "stealing",
+        "to steal",
+        "steal"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which verb takes BOTH forms with same meaning?",
+      "options": [
+        "remember",
+        "stop",
+        "start"
+      ],
+      "answer": "start"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I forgot ___ (lock) the door. (I didn't lock it)",
+      "answer": "to lock",
+      "options": [
+        "to lock",
+        "locking",
+        "lock"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She admitted ___ (make) a mistake.",
+      "answer": "making",
+      "options": [
+        "making",
+        "to make",
+        "make"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "I'd prefer going by train.",
+        "I'd prefer to go by train.",
+        "Both are correct."
+      ],
+      "answer": "Both are correct."
+    },
+    {
+      "type": "fill-blank",
+      "question": "He managed ___ (fix) his car.",
+      "answer": "to fix",
+      "options": [
+        "to fix",
+        "fixing",
+        "fix"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I miss ___ (see) my family.",
+      "answer": "seeing",
+      "options": [
+        "seeing",
+        "to see",
+        "see"
       ]
     }
   ]

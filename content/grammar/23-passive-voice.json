@@ -5,7 +5,7 @@
   "title_ka": "პასიური გვარი (Passive Voice)",
   "level": "B1",
   "passThreshold": 0.7,
-  "explanation_ka": "პასიური გვარი გამოიყენება მაშინ, როცა მოქმედების ობიექტი უფრო მნიშვნელოვანია, ვიდრე მოქმედების შემსრულებელი, ან როცა შემსრულებელი უცნობია.\n\nსტრუქტურა: Subject + to be (შესაბამის დროში) + Past Participle (V3)\n\nაქტიური: Someone stole my phone. — ვიღაცამ მოიპარა ჩემი ტელეფონი.\nპასიური: My phone was stolen. — ჩემი ტელეფონი მოიპარეს.\n\nსხვადასხვა დროში:\n Present Simple: The house is cleaned every day.\n Past Simple: The letter was written yesterday.\n Present Perfect: The work has been done.\n Future: The project will be finished tomorrow.\n Modal: This can be fixed easily.\n\nთუ შემსრულებლის მითითება გსურთ, გამოიყენეთ \"by\":\nThe book was written by Rustaveli.",
+  "explanation_ka": "**პასიური გვარი (Passive Voice)** - ამ წესით ვამბობთ, თუ რა მოხდა რაღაცასთან, მაგრამ არ ვიცით ან არ გვინდა ვთქვათ ვინ გააკეთა.\n\n**როგორ ვაშენებთ:**\n• **to be** (am/is/are/was/were) + **V3** (მესამე ფორმა)\n• **მაგ:** The house **is** **cleaned** = სახლს ასუფთავებენ\n\n**განსხვავება:**\n• **აქტიური (Active):** I clean the house = მე ვასუფთავებ სახლს\n• **პასიური (Passive):** The house is cleaned = სახლს ასუფთავებენ\n\n**სხვა დროებში:**\n• **აწმყო:** is/are + V3 (The car is washed)\n• **წარსული:** was/were + V3 (The car was washed)\n• **Perfect:** has/have been + V3 (The car has been washed)\n• **მომავალი:** will be + V3 (The car will be washed)\n\n**\"by\"-ის გამოყენება:** თუ გვინდა ვთქვათ ვინ გააკეთა\n• **მაგ:** The book was written **by** Rustaveli",
   "examples": [
     {
       "en": "English is spoken all over the world.",
@@ -208,6 +208,126 @@
         "is sung",
         "sings",
         "is sing"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Change to passive: \"The chef cooks the meal.\"",
+      "options": [
+        "The meal cooks by the chef.",
+        "The meal is cooked by the chef.",
+        "The meal was cooked by the chef."
+      ],
+      "answer": "The meal is cooked by the chef."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The movie ___ (watch) by millions of people.",
+      "answer": "was watched",
+      "options": [
+        "was watched",
+        "watched",
+        "is watching"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "These computers ___ (manufacture) in China.",
+      "answer": "are manufactured",
+      "options": [
+        "are manufactured",
+        "manufacture",
+        "is manufactured"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is passive voice?",
+      "options": [
+        "The dog bit the man.",
+        "The man was bitten by the dog.",
+        "The dog is biting the man."
+      ],
+      "answer": "The man was bitten by the dog."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The problem ___ (discuss) in tomorrow's meeting.",
+      "answer": "will be discussed",
+      "options": [
+        "will be discussed",
+        "will discuss",
+        "is discussed"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "All the food ___ (eat) at the party.",
+      "answer": "was eaten",
+      "options": [
+        "was eaten",
+        "ate",
+        "is eaten"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი პასიური ფორმა?",
+      "options": [
+        "The window was breaking.",
+        "The window was broke.",
+        "The window was broken."
+      ],
+      "answer": "The window was broken."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The money ___ (steal) from the bank last night.",
+      "answer": "was stolen",
+      "options": [
+        "was stolen",
+        "stole",
+        "is stolen"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "This building ___ (design) by a famous architect.",
+      "answer": "was designed",
+      "options": [
+        "was designed",
+        "designed",
+        "is design"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Change to passive: \"They will finish the project.\"",
+      "options": [
+        "The project will finish.",
+        "The project will be finished.",
+        "The project was finished."
+      ],
+      "answer": "The project will be finished."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The documents ___ (sign) by the manager.",
+      "answer": "were signed",
+      "options": [
+        "were signed",
+        "signed",
+        "are sign"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "This app ___ (download) by thousands of users.",
+      "answer": "has been downloaded",
+      "options": [
+        "has been downloaded",
+        "downloaded",
+        "is download"
       ]
     }
   ]

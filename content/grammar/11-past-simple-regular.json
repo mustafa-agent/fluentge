@@ -5,7 +5,7 @@
   "title_ka": "წარსული მარტივი დრო",
   "level": "A2",
   "passThreshold": 0.7,
-  "explanation_ka": "Past Simple ნიშნავს მოქმედებას რომელიც წარსულში დასრულდა.\n\n**ძირითადი წესი: ზმნა + ed**\n• work → worked (ვიმუშავე)\n• play → played (ვითამაშე)\n\n**სპეციალური წესები:**\n• თუ ზმნა e-ზე მთავრდება → მხოლოდ d: live → lived\n• თუ თანხმოვანი + y → ied: study → studied\n• მოკლე ზმნა → ბოლო ასო ორმაგი: stop → stopped\n\n**უარყოფითი: didn't + ძირითადი ზმნა**\n• I didn't work yesterday (გუშინ არ ვიმუშავე)\n• She didn't call (მან არ დარეკა)\n\n**კითხვითი: Did + პირი + ძირითადი ზმნა?**\n• Did you work? (იმუშავე?)\n• Did she call? (დარეკა?)\n\n**მთავარი წესი:**\nDid/didn't-ის შემდეგ ზმნა ძირითად ფორმაში!\n• ✅ Did you work?\n• ❌ Did you worked?",
+  "explanation_ka": "**Past Simple** - წარსული მარტივი დრო. ესეიგი რაღაც წარსულში მოხდა და დასრულდა.\n\n**ძირითადი წესი: ზმნა + ed**\n• work → worked (ვიმუშავე)\n• play → played (ვითამაშე)\n\n**სპეციალური წესები:**\n• **თუ ზმნა e-ზე მთავრდება** → მხოლოდ d ვამატებთ: live → lived\n• **თუ თანხმოვანი (consonant) + y** → y იცვლება ied-ით: study → studied  \n• **მოკლე ზმნა** → ბოლო ასო ორმაგდება: stop → stopped\n\n**უარყოფითი წინადადება (negative):** didn't + ძირითადი ზმნა\n• I didn't work yesterday (გუშინ არ ვიმუშავე)\n• She didn't call (მან არ დარეკა)\n\n**კითხვითი წინადადება (question):** Did + subject (ვინ) + ძირითადი ზმნა?\n• Did you work? (იმუშავე?)\n• Did she call? (დარეკა?)\n\n**🔥 მთავარი წესი:**\nDid/didn't-ის შემდეგ ზმნა **ყოველთვის** ძირითად ფორმაში იყოს!\n• ✅ Did you work?\n• ❌ Did you worked?",
   "examples": [
     {
       "en": "I walked to school yesterday.",
@@ -229,6 +229,106 @@
         "jumpped",
         "jumping"
       ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which verb follows the spelling rule: consonant + y → ied?",
+      "options": [
+        "played",
+        "enjoyed", 
+        "studied"
+      ],
+      "answer": "studied"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Yesterday, my sister ___ (help) me with homework.",
+      "answer": "helped",
+      "options": [
+        "helped",
+        "helpeed",
+        "helping"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ you ___ (listen) to music last night?",
+      "answer": "Did ... listen",
+      "options": [
+        "Did ... listen",
+        "Did ... listened",
+        "Do ... listen"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "პატარა ზმნების (short verbs) წესი - რა ხდება 'plan' ზმნასთან?",
+      "options": [
+        "planed",
+        "planned",
+        "planing"
+      ],
+      "answer": "planned"
+    },
+    {
+      "type": "fill-blank",
+      "question": "My parents ___ (travel) to London last month.",
+      "answer": "travelled",
+      "options": [
+        "travelled",
+        "traveled",
+        "travelling"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ (not/book) the hotel in advance.",
+      "answer": "didn't book",
+      "options": [
+        "didn't book",
+        "didn't booked",
+        "not booked"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელი ვარიანტი არის სწორი?",
+      "options": [
+        "She moved to New York last year.",
+        "She move to New York last year.",
+        "She moving to New York last year."
+      ],
+      "answer": "She moved to New York last year."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The baby ___ (smile) when he saw his mother.",
+      "answer": "smiled",
+      "options": [
+        "smiled",
+        "smileed",
+        "smiling"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ they ___ (return) the books to the library?",
+      "answer": "Did ... return",
+      "options": [
+        "Did ... return",
+        "Did ... returned",
+        "Do ... return"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence uses Past Simple correctly?",
+      "options": [
+        "Yesterday I work in the garden.",
+        "Yesterday I worked in the garden.",
+        "Yesterday I working in the garden."
+      ],
+      "answer": "Yesterday I worked in the garden."
     }
   ]
 }

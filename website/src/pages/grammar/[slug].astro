@@ -15,8 +15,8 @@ export function getStaticPaths() {
 }
 
 const { lesson, nextLesson, prevLesson } = Astro.props;
-const ALWAYS_FREE_LEVELS = ['A1'];
-const isFree = ALWAYS_FREE_LEVELS.includes(lesson.level);
+const FREE_LESSON_COUNT = 3; // First 3 lessons are free
+const isFree = lesson.id <= FREE_LESSON_COUNT;
 
 const grammarToDecks: Record<string, {deck: string, label: string, emoji: string}[]> = {
   'to-be': [
@@ -401,7 +401,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
           </a>
         )}
         {nextLesson && (
-          <a href={`/grammar/${nextLesson.slug}/`} class="gl-nav-link gl-card-inner flex-1 flex items-center gap-3 p-4 rounded-xl transition-all hover:scale-[1.02] group text-right justify-end">
+          <a id="nav-next-lesson" data-next-level={nextLesson.level} href={`/grammar/${nextLesson.slug}/`} class="gl-nav-link gl-card-inner flex-1 flex items-center gap-3 p-4 rounded-xl transition-all hover:scale-[1.02] group text-right justify-end">
             <div class="min-w-0">
               <div class="text-[11px] gl-muted font-medium">შემდეგი</div>
               <div class="text-sm font-semibold truncate">{nextLesson.title_ka}</div>
@@ -434,21 +434,27 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
     <div id="premium-lock" class={isFree ? 'hidden' : 'mt-8 text-center'}>
       <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-2xl p-12">
         <div class="text-6xl mb-4">🔒</div>
-        <h2 class="text-2xl font-bold mb-3 gl-heading">ეს გაკვეთილი ჯერ ჩაკეტილია</h2>
-        <p class="gl-muted mb-6 max-w-md mx-auto">გაიარე დონის ტესტი რომ გახსნა შენი დონის გაკვეთილები.</p>
-        <a href="/placement/" class="gl-btn-3d inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-xl text-lg border-b-4 border-sky-700 transition-colors">🎯 დონის ტესტი</a>
+        <h2 class="text-2xl font-bold mb-3 gl-heading">გასაგრძელებლად Premium საჭიროა</h2>
+        <p class="gl-muted mb-6 max-w-md mx-auto">პირველი 3 გაკვეთილი უფასოა. დანარჩენი გაკვეთილების გასახსნელად შეიძინე Premium.</p>
+        <a href="/pricing/" class="gl-btn-3d inline-block bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold py-3 px-8 rounded-xl text-lg border-b-4 border-amber-700 transition-colors">👑 Premium-ის შეძენა</a>
       </div>
     </div>
   </section>
 
   <script is:inline src="/js/gamification-bridge.js"></script>
-  <script is:inline define:vars={{ lessonLevel: lesson.level }}>
+  <script is:inline define:vars={{ lessonLevel: lesson.level, lessonId: lesson.id }}>
     (function() {
+      // Auth check: no user = no premium
+      if (!localStorage.getItem('fluentge-user')) {
+        localStorage.removeItem('fluentge-premium');
+      }
       var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
+      var FREE_LESSONS = 3;
       var placementLevel = localStorage.getItem('fluentge-placement-level');
       var isPremium = localStorage.getItem('fluentge-premium') === 'true';
-      var shouldUnlock = isPremium;
-      if (placementLevel) {
+      var isFreeLessonPage = lessonId <= FREE_LESSONS;
+      var shouldUnlock = isPremium || isFreeLessonPage;
+      if (!shouldUnlock && placementLevel) {
         var placementIdx = LEVEL_ORDER.indexOf(placementLevel);
         var lessonIdx = LEVEL_ORDER.indexOf(lessonLevel);
         if (lessonIdx >= 0 && placementIdx >= 0 && lessonIdx <= placementIdx) shouldUnlock = true;
@@ -458,6 +464,35 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
         if (lc) lc.classList.remove('hidden');
         var pl = document.getElementById('premium-lock');
         if (pl) pl.classList.add('hidden');
+      }
+      // Hide next lesson nav link if current lesson exercises NOT actually passed
+      // Uses 'fluentge-grammar-passed' which only gets set when user scores 70%+
+      // (NOT the auto-completed flag from placement test)
+      var navNext = document.getElementById('nav-next-lesson');
+      console.log('[FluentGe NAV LOCK] navNext:', navNext, 'isPremium:', isPremium);
+      if (navNext) {
+        var grammarCompleted = {};
+        try { grammarCompleted = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
+        if (Array.isArray(grammarCompleted)) { var obj = {}; grammarCompleted.forEach(function(s) { obj[s] = true; }); grammarCompleted = obj; }
+        
+        var currentSlug = window.location.pathname.replace(/^\/grammar\//, '').replace(/\/$/, '');
+        var actuallyPassed = !!grammarCompleted[currentSlug];
+        console.log('[FluentGe NAV LOCK] slug:', currentSlug, 'passed:', actuallyPassed, 'locking:', !actuallyPassed && !isPremium);
+        
+        if (!actuallyPassed) {
+          var nextTitle = navNext.querySelector('.text-sm') ? navNext.querySelector('.text-sm').textContent : '';
+          var nextHref = navNext.getAttribute('href');
+          // Replace <a> with <div> to completely prevent navigation
+          var lockedDiv = document.createElement('div');
+          lockedDiv.className = navNext.className;
+          lockedDiv.style.opacity = '0.4';
+          lockedDiv.style.cursor = 'not-allowed';
+          lockedDiv.innerHTML = '<div class="min-w-0"><div class="text-[11px] font-medium" style="color:#9CA3AF">შემდეგი</div><div class="text-sm font-semibold truncate">🔒 ' + nextTitle + '</div></div>';
+          lockedDiv.id = 'nav-next-lesson-locked';
+          lockedDiv.dataset.href = nextHref;
+          navNext.parentNode.replaceChild(lockedDiv, navNext);
+          window.__nextLessonLocked = true;
+        }
       }
     })();
   </script>
@@ -546,7 +581,9 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
       setTimeout(function() { container.innerHTML = ''; container.classList.add('hidden'); }, 2000);
     }
 
-    if (!isFree && !isReviewMode) { /* skip */ }
+    // Check if lesson content is actually visible (unlocked by placement test or premium)
+    var lessonVisible = isFree || !document.getElementById('lesson-content').classList.contains('hidden');
+    if (!lessonVisible && !isReviewMode) { /* skip */ }
     else {
     let current = 0, score = 0, answered = false, sessionXP = 0, streak = 0;
 
@@ -663,7 +700,15 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
           FluentGe.updateStreak();
           var mins = FluentGe.stopTimer();
           FluentGe.addStudyTime(mins);
-          if (passed) FluentGe.markGrammarComplete(lessonSlug);
+          if (passed) {
+            FluentGe.markGrammarComplete(lessonSlug);
+            // Also mark as actually passed (separate from placement auto-complete)
+            try {
+              var gp = JSON.parse(localStorage.getItem('fluentge-grammar-passed') || '{}');
+              gp[lessonSlug] = true;
+              localStorage.setItem('fluentge-grammar-passed', JSON.stringify(gp));
+            } catch(e) {}
+          }
         }
         document.getElementById('score-emoji').textContent = passed ? '🏆' : '💪';
         document.getElementById('score-correct').textContent = score + '/' + exercises.length;
@@ -684,15 +729,27 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
         if (heading) heading.textContent = passed ? 'ტესტი წარმატებით ჩააბარე! 🎉' : 'ცოტა მეტი ვარჯიში გჭირდება';
         var nextBtn = document.getElementById('next-lesson-btn');
         var retryBtn = document.getElementById('retry-btn');
+        // After passing, next lesson is now unlocked (we just completed current)
         if (passed) {
           if (nextBtn) { nextBtn.classList.remove('hidden'); nextBtn.style.display = ''; }
           if (retryBtn) { retryBtn.classList.add('hidden'); retryBtn.style.display = 'none'; }
+          // Also unlock the nav link (restore <a> from locked <div>)
+          var lockedEl = document.getElementById('nav-next-lesson-locked');
+          if (lockedEl) {
+            var link = document.createElement('a');
+            link.href = lockedEl.dataset.href;
+            link.className = lockedEl.className;
+            link.style.opacity = '';
+            link.style.cursor = '';
+            link.innerHTML = '<div class="min-w-0"><div class="text-[11px] gl-muted font-medium">შემდეგი</div><div class="text-sm font-semibold truncate">' + lockedEl.querySelector('.text-sm').textContent.replace('🔒 ', '') + '</div></div><svg class="w-5 h-5 gl-muted shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+            lockedEl.parentNode.replaceChild(link, lockedEl);
+          }
         } else {
           if (retryBtn) { retryBtn.classList.remove('hidden'); retryBtn.style.display = ''; }
           if (nextBtn) { nextBtn.classList.add('hidden'); nextBtn.style.display = 'none'; }
         }
         document.getElementById('score-msg').textContent = passed
-          ? 'შესანიშნავი! შემდეგი გაკვეთილი გახსნილია!'
+          ? (nextLocked ? 'შესანიშნავი! ეს დონე დასრულებულია!' : 'შესანიშნავი! შემდეგი გაკვეთილი გახსნილია!')
           : '70%-ზე მეტი სწორი პასუხი გჭირდება. სცადე თავიდან!';
         return;
       }

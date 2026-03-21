@@ -4,7 +4,7 @@
   "title_en": "Advanced Word Order",
   "title_ka": "მოწინავე სიტყვათა წესრიგი",
   "level": "C1",
-  "explanation_ka": "C1 დონეზე სტანდარტული SVO (Subject-Verb-Object) წესრიგის გარდა, ინგლისურში არსებობს სიტყვათა წესრიგის ცვლილებები ხაზგასმის, სტილისა და კავშირის მიზნით.\n\nინვერსია უარყოფითი ზმნიზედების შემდეგ:\nუარყოფითი სიტყვით დაწყებისას ქვემდებარე და დამხმარე ზმნა იცვლის ადგილს:\nNever have I seen such a mess. — ასეთი არეულობა არასდროს მინახავს.\nRarely does she complain. — იშვიათად ჩივის.\n\n**მთავარი წესები ზემოთ ნახეთ.**",
+  "explanation_ka": "**სიტყვათა განსაკუთრებული წესრიგი** - ინგლისურში ზოგჯერ ჩვეულებრივ წესრიგს ვცვლით განსაკუთრებული ეფექტისთვის.\n\n**🔸 ჩვეულებრივი წესრიგი:**\nქვემდებარე + ზმნა + ობიექტი (SVO)\n\"I **have never** seen this\" - \"ეს **არასდროს** მინახავს\"\n\n**🔸 შებრუნებული წესრიგი (ინვერსია):**\nუარყოფითი სიტყვა + დამხმარე ზმნა + ქვემდებარე\n\"**Never have I** seen this\" - \"**არასდროს მინახავს** ეს\"\n\n**🔸 როდის ვიყენებთ ინვერსიას:**\n• **Never** (არასდროს), **Rarely** (იშვიათად), **Hardly** (ძლივს)\n• **Not only** (არა მხოლოდ), **No sooner** (იმავე წამსვე)\n• **Under no circumstances** (არავითარ შემთხვევაში)\n• **So + ზედსართავი** - \"So tired was I\" (იმდენად დაღლილი ვიყავი)\n\n**🔸 პირობითი წინადადებები:**\n\"If I were rich\" = \"**Were I** rich\" (მდიდარი რომ ვიყო)\n\"If I had known\" = \"**Had I** known\" (რომ მცოდნოდა)\n\n**🔸 ადგილისა და მიმართულების ზმნიზედები:**\n\"The cat sat **under the tree**\" = \"**Under the tree** sat the cat\"",
   "examples": [
     {
       "en": "Never have I experienced such hospitality.",
@@ -235,6 +235,127 @@
         "Has",
         "Did"
       ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence uses correct inversion?",
+      "options": [
+        "Only then realized I my mistake.",
+        "Only then I realized my mistake.",
+        "Only then did I realize my mistake.",
+        "I only then realized my mistake."
+      ],
+      "answer": "Only then did I realize my mistake."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Not until yesterday ___ the truth about the accident.",
+      "answer": "did we learn",
+      "options": [
+        "did we learn",
+        "we learned",
+        "learned we",
+        "we did learn"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Transform: 'I would have helped if you had asked.'",
+      "options": [
+        "Had you asked, I would have helped.",
+        "You had asked, I would have helped.",
+        "Asked you had, I would have helped.",
+        "If had you asked, I would have helped."
+      ],
+      "answer": "Had you asked, I would have helped."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Away ___ the birds when they heard the noise.",
+      "answer": "flew",
+      "options": [
+        "flew",
+        "fly",
+        "flying",
+        "to fly"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: 'Not a word ___.'",
+      "options": [
+        "did she speak",
+        "she spoke",
+        "spoke she",
+        "she did speak"
+      ],
+      "answer": "did she speak"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Such ___ his anger that everyone was afraid.",
+      "answer": "was",
+      "options": [
+        "was",
+        "is",
+        "were",
+        "are"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Here comes the bus means:",
+      "options": [
+        "The bus is arriving now",
+        "The bus was coming here",
+        "The bus will come here",
+        "The bus has been coming"
+      ],
+      "answer": "The bus is arriving now"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Down ___ the heavy rain just as we left the house.",
+      "answer": "came",
+      "options": [
+        "came",
+        "comes",
+        "coming",
+        "to come"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which shows fronting for emphasis?",
+      "options": [
+        "Beautiful was the sunset.",
+        "The sunset was beautiful.",
+        "Very beautiful the sunset was.",
+        "Was the sunset beautiful."
+      ],
+      "answer": "Beautiful was the sunset."
+    },
+    {
+      "type": "fill-blank",
+      "question": "Little ___ he realize how much trouble he was in.",
+      "answer": "did",
+      "options": [
+        "did",
+        "does",
+        "has",
+        "was"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "On no account ___ the door to strangers.",
+      "options": [
+        "should you open",
+        "you should open",
+        "open you should",
+        "you open should"
+      ],
+      "answer": "should you open"
     }
   ],
   "passThreshold": 0.7

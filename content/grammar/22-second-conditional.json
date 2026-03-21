@@ -5,7 +5,7 @@
   "title_ka": "მეორე კონდიციონალი (If + წარსული → would)",
   "level": "B1",
   "passThreshold": 0.7,
-  "explanation_ka": "მეორე კონდიციონალი გამოიყენება წარმოსახვითი, არარეალური ან ნაკლებად სავარაუდო სიტუაციების აღსაწერად აწმყოში ან მომავალში. სტრუქტურა: If + Past Simple, would + ზმნის ძირითადი ფორმა.\n\nმაგალითად: If I had a million dollars, I would buy a house. — მილიონი დოლარი რომ მქონდეს, სახლს ვიყიდდი.\n\nეს არ ნიშნავს წარსულს! Past Simple აქ არარეალურობას გამოხატავს, არა წარსულ დროს.\n\nმნიშვნელოვანი: \"to be\" ზმნასთან ყველა პირში \"were\" გამოიყენება ფორმალურ ინგლისურში:\nIf I were rich... (არა \"If I was rich...\")\nIf she were here... (არა \"If she was here...\")\n\nმეორე კონდიციონალი ხშირად გამოიყენება რჩევის მიცემისას:\nIf I were you, I would study harder. — შენ რომ ვიყო, მეტს ვისწავლიდი.",
+  "explanation_ka": "**მეორე კონდიციონალი (Second Conditional)** - ეს არის წესი, რომელიც გვეხმარება ვისაუბროთ წარმოსახვით (imaginary) ან შეუძლებელ რამეზე.\n\n**როგორ ვშექმნათ:**\n• If + წარსული დრო (Past Simple) + would + ზმნა\n• **მაგ:** If I **had** money, I **would** buy a car\n• **ქართულად:** ფული რომ მქონდეს, მანქანას ვიყიდდი\n\n**მნიშვნელოვანი:**\n• **\"were\"** ყველა პირთან (I/he/she/it were) - ამას უწოდებენ **subjunctive** (სუბიუნქტივი)\n• **მაგ:** If I **were** rich... (არა \"was\")\n\n**როდის ვიყენებთ:**\n• **რჩევისთვის:** If I were you, I would go = შენ რომ ვიყო, წავიდოდი\n• **ოცნებისთვის:** If I won the lottery... = ლოტარეაში რომ მოვიგო...\n• **შეუძლებელი რამისთვის:** If I could fly... = ფრენა რომ შემეძლოს...",
   "examples": [
     {
       "en": "If I were rich, I would travel the world.",
@@ -208,6 +208,126 @@
         "invited",
         "invite",
         "would invite"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What would you do if you lost your phone?",
+      "options": [
+        "If I lost my phone, I will buy a new one.",
+        "If I lost my phone, I would buy a new one.",
+        "If I lose my phone, I would buy a new one."
+      ],
+      "answer": "If I lost my phone, I would buy a new one."
+    },
+    {
+      "type": "fill-blank",
+      "question": "If I ___ (can) speak Georgian, I would move to Tbilisi.",
+      "answer": "could",
+      "options": [
+        "could",
+        "can",
+        "would"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ (not/worry) so much if she knew the truth.",
+      "answer": "wouldn't worry",
+      "options": [
+        "wouldn't worry",
+        "won't worry",
+        "doesn't worry"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which sentence gives advice?",
+      "options": [
+        "If you study more, you will pass.",
+        "If I were you, I would study more.",
+        "If you studied more, you passed."
+      ],
+      "answer": "If I were you, I would study more."
+    },
+    {
+      "type": "fill-blank",
+      "question": "If it ___ (snow) in summer, everyone would be surprised.",
+      "answer": "snowed",
+      "options": [
+        "snowed",
+        "snows",
+        "would snow"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ (go) to the beach if it wasn't raining.",
+      "answer": "would go",
+      "options": [
+        "would go",
+        "will go",
+        "went"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct for an impossible situation?",
+      "options": [
+        "If I have wings, I will fly.",
+        "If I had wings, I would fly.",
+        "If I had wings, I flew."
+      ],
+      "answer": "If I had wings, I would fly."
+    },
+    {
+      "type": "fill-blank",
+      "question": "If my boss ___ (be) nicer, I would enjoy my job more.",
+      "answer": "were",
+      "options": [
+        "were",
+        "was",
+        "is"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ (move) to a bigger house if they saved more money.",
+      "answer": "would move",
+      "options": [
+        "would move",
+        "will move",
+        "moved"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რა იქნებოდა, რომ უფრო ნაკლები სტრესი გქონდეს?",
+      "options": [
+        "If I have less stress, I will be happier.",
+        "If I had less stress, I would be happier.",
+        "If I had less stress, I was happier."
+      ],
+      "answer": "If I had less stress, I would be happier."
+    },
+    {
+      "type": "fill-blank",
+      "question": "If you ___ (not/work) so late, you would have more free time.",
+      "answer": "didn't work",
+      "options": [
+        "didn't work",
+        "don't work",
+        "wouldn't work"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I ___ (learn) to play guitar if I had more patience.",
+      "answer": "would learn",
+      "options": [
+        "would learn",
+        "will learn",
+        "learned"
       ]
     }
   ]

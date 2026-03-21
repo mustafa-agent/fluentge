@@ -4,7 +4,7 @@
   "title_en": "Ellipsis & Substitution",
   "title_ka": "ელიფსისი და ჩანაცვლება",
   "level": "C1",
-  "explanation_ka": "ელიფსისი (Ellipsis) ნიშნავს სიტყვების გამოტოვებას, რომლებიც კონტექსტიდან გასაგებია. ჩანაცვლება (Substitution) ნიშნავს სიტყვის შეცვლას მოკლე ფორმით (one, do, so და ა.შ.). ორივე ტექნიკა ტექსტს ბუნებრივსა და არაგანმეორებადს ხდის.\n\nელიფსისი (გამოტოვება)\n\nდამხმარე ზმნის შემდეგ:\n'Can you swim?' — 'Yes, I can.' (swim გამოტოვებულია)\n\n**მთავარი წესები ზემოთ ნახეთ.**",
+  "explanation_ka": "**ელიფსისი და ჩანაცვლება** — ეს არის გზები, გამეორების თავიდან ასაცილებლად და უფრო ბუნებრივად სალაპარაკოდ.\n\n**ელიფსისი** — სიტყვების გამოტოვება, რადგან გასაგებია რას ვგულისხმობთ:\n• **დამხმარე ზმნის შემდეგ:** *'Can you swim?' — 'Yes, I **can**.'* (swim არ გავმეორებთ)\n• **to-ს შემდეგ:** *'Do you want to help?' — 'I'd love **to**.'* (help არ გავმეორებთ)\n\n**ჩანაცვლება** — სიტყვის შეცვლა მოკლე ვარიანტით:\n• **one/ones** — ნივთის ნაცვლად: *'Which car?' — 'The red **one**.'*\n• **so** — ფიქრის ნაცვლად: *'Is he coming?' — 'I think **so**.'*\n• **do** — ზმნის ნაცვლად: *'She runs fast and he does **too**.'*\n\n**თანხმობა/უარყოფა:**\n• **So + დამხმარე ზმნა + I** — 'მეც ასევე': *'I like coffee.' — '**So do I**.'*\n• **Neither + დამხმარე ზმნა + I** — 'მეც არა': *'I don't smoke.' — '**Neither do I**.'*",
   "examples": [
     {
       "en": "'Can you drive?' — 'Yes, I can.'",
@@ -205,6 +205,160 @@
         "ones",
         "car",
         "it"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'I studied hard for the exam.' — '___ did my friend.'",
+      "options": [
+        "So",
+        "Neither",
+        "Not",
+        "Also"
+      ],
+      "answer": "So"
+    },
+    {
+      "type": "fill-blank",
+      "question": "'Can you cook?' — 'Yes, I ___.'",
+      "answer": "can",
+      "options": [
+        "can",
+        "do",
+        "am",
+        "cook"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'I won't go to the party.' — '___will I.'",
+      "options": [
+        "Neither",
+        "So",
+        "Not",
+        "Either"
+      ],
+      "answer": "Neither"
+    },
+    {
+      "type": "fill-blank",
+      "question": "'Which shoes should I buy?' — 'I'd choose the black ___.'",
+      "answer": "ones",
+      "options": [
+        "ones",
+        "one",
+        "shoes",
+        "them"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'Is the meeting cancelled?' — 'I suppose ___.'",
+      "options": [
+        "so",
+        "not",
+        "yes",
+        "it"
+      ],
+      "answer": "so"
+    },
+    {
+      "type": "fill-blank",
+      "question": "'Would you like to dance?' — 'I'd prefer not ___.'",
+      "answer": "to",
+      "options": [
+        "to",
+        "so",
+        "dancing",
+        "it"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She works harder than her colleagues ___.",
+      "options": [
+        "do",
+        "does",
+        "work",
+        "are"
+      ],
+      "answer": "do"
+    },
+    {
+      "type": "fill-blank",
+      "question": "'I have three cars.' — 'Which ___ is your favorite?'",
+      "answer": "one",
+      "options": [
+        "one",
+        "ones",
+        "car",
+        "it"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'I'm not ready yet.' — '___am I.'",
+      "options": [
+        "Neither",
+        "So",
+        "Not",
+        "Either"
+      ],
+      "answer": "Neither"
+    },
+    {
+      "type": "fill-blank",
+      "question": "'Will she accept the job?' — 'I expect ___.'",
+      "answer": "so",
+      "options": [
+        "so",
+        "not",
+        "yes",
+        "it"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'I can't speak Chinese.' — '___ can my brother.'",
+      "options": [
+        "Neither",
+        "So",
+        "Not",
+        "Either"
+      ],
+      "answer": "Neither"
+    },
+    {
+      "type": "fill-blank",
+      "question": "He speaks English better than I ___.",
+      "answer": "do",
+      "options": [
+        "do",
+        "am",
+        "speak",
+        "can"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "'Are you tired?' — 'A little, but not as much as you ___.'",
+      "options": [
+        "are",
+        "do",
+        "tired",
+        "were"
+      ],
+      "answer": "are"
+    },
+    {
+      "type": "fill-blank",
+      "question": "'Do you think it will snow?' — 'I doubt ___.'",
+      "answer": "it",
+      "options": [
+        "it",
+        "so",
+        "not",
+        "this"
       ]
     }
   ],

@@ -4,7 +4,7 @@
   "title_en": "Advanced Relative Clauses (Reduced)",
   "title_ka": "მოწინავე შედარებითი წინადადებები",
   "level": "C1",
-  "explanation_ka": "შემოკლებული შედარებითი წინადადებები (Reduced Relative Clauses) წარმოიქმნება, როცა ნათესაობით ნაცვალსახელსა და დამხმარე ზმნას ვშლით. ეს ტექსტს უფრო კომპაქტურსა და აკადემიურს ხდის.\n\nაქტიური შემოკლება (-ing):\nRelative pronoun + be/verb → -ing participle\nThe man who is standing there → The man standing there\nStudents who study hard → Students studying hard\n\n**მთავარი წესები ზემოთ ნახეთ.**",
+  "explanation_ka": "**მოწინავე ნათესაობითი წინადადებები** — უფრო მოკლე და ელეგანტური გზები ისეთივე ინფორმაციის გადმოცემისა.\n\n**შემოკლებული ფორმები** — ვშლით \"who/which + be\" ან დამხმარე ზმნას:\n\n**აქტიური (-ing ფორმა):**\n• *The man **who is standing** there* → *The man **standing** there*\n• *Students **who study** hard* → *Students **studying** hard*\n\n**პასიური (V3 ფორმა):**\n• *The car **which was bought** yesterday* → *The car **bought** yesterday*\n• *Letters **that were written** by hand* → *Letters **written** by hand*\n\n**to + infinitive:**\n• *He was the first person **who climbed** Everest* → *He was the first person **to climb** Everest*\n• *She needs someone **who will help** her* → *She needs someone **to help** her*\n\n**როდის ვიყენებთ:**\n• **-ing** → როცა აქტიური მოქმედებაა (ვინმე რაღაცას აკეთებს)\n• **V3** → როცა პასიური მოქმედებაა (ვინმეზე რაღაც კეთდება)\n• **to + V** → როცა მიზანი, პირველი, ბოლო, ერთადერთია",
   "examples": [
     {
       "en": "The woman sitting next to me is a famous author.",
@@ -236,6 +236,127 @@
         "broken",
         "having broken"
       ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Transform: 'The movie that was directed by Spielberg'",
+      "options": [
+        "The movie directed by Spielberg",
+        "The movie directing by Spielberg",
+        "The Spielberg-directed movie",
+        "The movie to direct by Spielberg"
+      ],
+      "answer": "The movie directed by Spielberg"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Anyone ___ to volunteer should contact the office. (wish)",
+      "answer": "wishing",
+      "options": [
+        "wishing",
+        "wished",
+        "to wish",
+        "having wished"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The problem ___ yesterday was quite complex.",
+      "options": [
+        "discussed",
+        "discussing",
+        "to discuss",
+        "having discussed"
+      ],
+      "answer": "discussed"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The next train ___ is the 3:15 express. (arrive)",
+      "answer": "to arrive",
+      "options": [
+        "to arrive",
+        "arriving",
+        "arrived",
+        "having arrived"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Students ___ their assignments late will be penalized.",
+      "options": [
+        "submitting",
+        "submitted",
+        "to submit",
+        "having submitted"
+      ],
+      "answer": "submitting"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The documents ___ by the lawyer are confidential. (prepare)",
+      "answer": "prepared",
+      "options": [
+        "prepared",
+        "preparing",
+        "to prepare",
+        "having prepared"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "He was the last person ___ the building.",
+      "options": [
+        "to leave",
+        "leaving",
+        "left",
+        "having left"
+      ],
+      "answer": "to leave"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The woman ___ at the front desk is very helpful. (work)",
+      "answer": "working",
+      "options": [
+        "working",
+        "worked",
+        "to work",
+        "having worked"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Transform: 'The email that was sent this morning'",
+      "options": [
+        "The email sent this morning",
+        "The email sending this morning",
+        "The email to send this morning",
+        "The morning-sent email"
+      ],
+      "answer": "The email sent this morning"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The only solution ___ the problem is cooperation. (solve)",
+      "answer": "to solve",
+      "options": [
+        "to solve",
+        "solving",
+        "solved",
+        "having solved"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "People ___ in glass houses shouldn't throw stones.",
+      "options": [
+        "living",
+        "lived",
+        "to live",
+        "having lived"
+      ],
+      "answer": "living"
     }
   ],
   "passThreshold": 0.7

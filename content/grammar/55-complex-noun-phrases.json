@@ -4,7 +4,7 @@
   "title_en": "Complex Noun Phrases",
   "title_ka": "რთული სახელობითი ფრაზები",
   "level": "C1",
-  "explanation_ka": "რთული სახელობითი ფრაზები (Complex Noun Phrases) არის არსებითი სახელის გაფართოება მოდიფიკატორებით — წინ (pre-modification) და უკან (post-modification). აკადემიურ და ფორმალურ ინგლისურში ეს ძალიან ხშირია.\n\nPre-modification (წინა მოდიფიკატორები):\nარსებით სახელს წინ ემატება ზედსართავები, არსებითი სახელები, მიმღეობები:\na well-known international trade agreement\nthe recently published research findings\n\n**მთავარი წესები ზემოთ ნახეთ.**",
+  "explanation_ka": "**რთული სახელობითი ფრაზები** (Complex Noun Phrases) - ეს არის როდესაც ერთ მთავარ სიტყვას (არსებით სახელს) ბევრი დამხმარე სიტყვა ემატება.\n\n**🔸 როგორ ყალიბდება:**\n• **წინა ნაწილი** (pre-modification) - მთავარ სიტყვამდე რაღაც ემატება\n• **უკანა ნაწილი** (post-modification) - მთავარი სიტყვის შემდეგ რაღაც ემატება\n\n**🔸 წინა ნაწილში შედის:**\n• **ზედსართავები** (adjectives) - \"კარგი\", \"ახალი\", \"დიდი\"\n• **მიმღეობები** (participles) - \"-ული/-ილი\" ან \"-ანი/-ენი\" დაბოლოების სიტყვები\n• **სხვა არსებითი სახელები** - მაგ. \"საკვები მაღაზია\"\n\n**🔸 უკანა ნაწილში შედის:**\n• **წინდებულიანი ფრაზები** - \"on the table\", \"in the park\"\n• **that-clauses** - \"the fact **that** he came\"\n• **infinitive** - \"the decision **to** leave\"\n\n**🔸 მაგალითი:**\n\"The **recently built** modern **house** **by the river**\"\n• recently built = წინა ნაწილი\n• house = მთავარი სიტყვა\n• by the river = უკანა ნაწილი",
   "examples": [
     {
       "en": "The recently appointed senior marketing manager resigned.",
@@ -235,6 +235,127 @@
         "for",
         "about"
       ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is the correct adjective order?",
+      "options": [
+        "a plastic small white table",
+        "a small white plastic table",
+        "a white small plastic table",
+        "a plastic white small table"
+      ],
+      "answer": "a small white plastic table"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The woman ___ next to me is my teacher.",
+      "answer": "sitting",
+      "options": [
+        "sitting",
+        "sat",
+        "sits",
+        "to sit"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Post-modification with relative clause:",
+      "options": [
+        "The car which I bought",
+        "The expensive car",
+        "A red fast car",
+        "The well-designed car"
+      ],
+      "answer": "The car which I bought"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The hope ___ finding a better job keeps him motivated.",
+      "answer": "of",
+      "options": [
+        "of",
+        "for",
+        "to",
+        "in"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which has correct noun phrase structure?",
+      "options": [
+        "The meeting scheduled for tomorrow important",
+        "The important meeting scheduled for tomorrow",
+        "The scheduled important meeting for tomorrow",
+        "The for tomorrow scheduled important meeting"
+      ],
+      "answer": "The important meeting scheduled for tomorrow"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The students ___ hard always succeed.",
+      "answer": "working",
+      "options": [
+        "working",
+        "worked",
+        "work",
+        "to work"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Compound noun phrase:",
+      "options": [
+        "a very tall man",
+        "a car insurance policy",
+        "the house by the lake",
+        "people living here"
+      ],
+      "answer": "a car insurance policy"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The news ___ the accident spread quickly.",
+      "answer": "of",
+      "options": [
+        "of",
+        "about",
+        "for",
+        "to"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which uses past participle correctly?",
+      "options": [
+        "The breaking window",
+        "The broken window",
+        "The break window",
+        "The to break window"
+      ],
+      "answer": "The broken window"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Anyone ___ to participate should register.",
+      "answer": "wanting",
+      "options": [
+        "wanting",
+        "wants",
+        "wanted",
+        "to want"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Pre-modification with participle:",
+      "options": [
+        "The running water",
+        "The water running",
+        "Water that runs",
+        "Water to run"
+      ],
+      "answer": "The running water"
     }
   ],
   "passThreshold": 0.7

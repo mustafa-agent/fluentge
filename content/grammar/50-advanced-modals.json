@@ -4,7 +4,7 @@
   "title_en": "Advanced Modal Verbs",
   "title_ka": "მოდალური ზმნების მოწინავე გამოყენება",
   "level": "C1",
-  "explanation_ka": "C1 დონეზე მოდალური ზმნები გამოიყენება წარსულის შესახებ ვარაუდების, ნანობისა და კრიტიკის გამოსახატად. ეს კონსტრუქციები იყენებს ფორმულას: modal + have + past participle (V3).\n\nMust have + V3 — ძლიერი ვარაუდი წარსულში:\nროცა თითქმის დარწმუნებული ხართ, რომ რაღაც მოხდა.\nShe must have left already. — ის უკვე წასული უნდა იყოს.\n\n\n**მთავარი წესები ზემოთ ნახეთ.**",
+  "explanation_ka": "**მოდალური ზმნების მოწინავე გამოყენება** — როცა ვსაუბრობთ წარსულზე, ვარაუდებსა და ნანობაზე.\n\n**ფორმულა:** მოდალური ზმნა + **have** + **V3** (Past Participle)\n\n**ვარაუდები წარსულზე:**\n• **must have + V3** — ძალიან დარწმუნებული ვარ: *She must have left* (ალბათ წავიდა)\n• **might/may have + V3** — შეიძლება: *He might have called* (შეიძლება დარეკა)\n• **can't have + V3** — შეუძლებელია: *She can't have forgotten* (ვერ დაივიწყებს)\n\n**ნანობა/კრიტიკა:**\n• **should have + V3** — უნდა გაეკეთებინა: *You should have called* (უნდა დამერეკა)\n• **could have + V3** — შეძლებდა: *I could have helped* (დავეხმარებოდი)\n• **would have + V3** — გააკეთებდა (პირობით): *He would have come* (მოვიდოდა)\n\n**არასაჭირო მოქმედება:**\n• **needn't have + V3** — არ ჭირდებოდა: *You needn't have waited* (ლოდინი არ გეჭირდება)\n\n**დაიმახსოვრე:** ყოველთვის **have** + **V3**, არასდროს \"had\"!",
   "examples": [
     {
       "en": "She must have forgotten about the meeting.",
@@ -216,6 +216,160 @@
         "He must have been there."
       ],
       "answer": "He can't have been there."
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ have taken the wrong bus. She's never this late.",
+      "answer": "must",
+      "options": [
+        "must",
+        "should",
+        "could",
+        "would"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "We ___ have bought so much food. Half of it went bad.",
+      "options": [
+        "needn't",
+        "shouldn't",
+        "couldn't",
+        "wouldn't"
+      ],
+      "answer": "needn't"
+    },
+    {
+      "type": "fill-blank",
+      "question": "He ___ have been lying. His story doesn't make sense.",
+      "answer": "must",
+      "options": [
+        "must",
+        "should",
+        "could",
+        "would"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "You ___ have told her the truth. She had a right to know.",
+      "options": [
+        "should",
+        "must",
+        "could",
+        "would"
+      ],
+      "answer": "should"
+    },
+    {
+      "type": "fill-blank",
+      "question": "They ___ have arrived by now. The flight landed an hour ago.",
+      "answer": "should",
+      "options": [
+        "should",
+        "must",
+        "could",
+        "would"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She ___ have misunderstood the instructions. That's not what I meant.",
+      "options": [
+        "must",
+        "should",
+        "could",
+        "would"
+      ],
+      "answer": "must"
+    },
+    {
+      "type": "fill-blank",
+      "question": "I ___ have brought an umbrella. It's pouring rain now.",
+      "answer": "should",
+      "options": [
+        "should",
+        "must",
+        "could",
+        "would"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "He ___ have finished the project, but he got distracted.",
+      "options": [
+        "could",
+        "should",
+        "must",
+        "would"
+      ],
+      "answer": "could"
+    },
+    {
+      "type": "fill-blank",
+      "question": "You ___ have wasted your money on that expensive watch.",
+      "answer": "shouldn't",
+      "options": [
+        "shouldn't",
+        "couldn't",
+        "wouldn't",
+        "needn't"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "The lights are on. Someone ___ have forgotten to turn them off.",
+      "options": [
+        "must",
+        "should",
+        "could",
+        "would"
+      ],
+      "answer": "must"
+    },
+    {
+      "type": "fill-blank",
+      "question": "We ___ have taken a taxi. Walking took forever!",
+      "answer": "should",
+      "options": [
+        "should",
+        "must",
+        "could",
+        "would"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "She ___ have gotten lost. She knows this area well.",
+      "options": [
+        "can't",
+        "shouldn't",
+        "couldn't",
+        "wouldn't"
+      ],
+      "answer": "can't"
+    },
+    {
+      "type": "fill-blank",
+      "question": "He ___ have practiced more before the performance.",
+      "answer": "should",
+      "options": [
+        "should",
+        "must",
+        "could",
+        "would"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "That ___ have been the best pizza I've ever had!",
+      "options": [
+        "must",
+        "should",
+        "could",
+        "would"
+      ],
+      "answer": "must"
     }
   ],
   "passThreshold": 0.7

@@ -5,7 +5,7 @@
   "title_ka": "შესაბამისი წინადადებები (who/which/that)",
   "level": "B1",
   "passThreshold": 0.7,
-  "explanation_ka": "## Relative Clauses - დამატებითი ინფორმაცია\n\n**ადამიანებისთვის:** who\n• The woman **who** works here\n• The man **who** called me\n\n**საგნებისთვის:** which\n• The book **which** I read\n• The car **which** is red\n\n**ადგილისთვის:** where\n• The place **where** I live\n• The restaurant **where** we ate\n\n## That = ორივესთვის\n• The person **that** helped me\n• The book **that** I bought\n\n## მძიმე - მნიშვნელოვანია!\n❌ My sister, that lives in Paris\n✅ My sister, who lives in Paris",
+  "explanation_ka": "**შესაბამისი წინადადებები (Relative Clauses)** - ვამატებთ დამატებით ინფორმაციას ადამიანზე ან საგანზე.\n\n**ვინმე ადამიანზე:** **who** (ვინც)\n• The girl **who** studies here = გოგო, **რომელიც** აქ სწავლობს\n• The man **who** called = კაცი, **რომელმაც** დარეკა\n\n**რაღაც საგანზე:** **which** (რომელიც)\n• The car **which** I bought = მანქანა, **რომელიც** ვიყიდე\n• The book **which** is red = წიგნი, **რომელიც** წითელია\n\n**სადღაც ადგილზე:** **where** (სადაც)\n• The house **where** I live = სახლი, **სადაც** ვცხოვრობ\n• The park **where** we play = პარკი, **სადაც** ვთამაშობთ\n\n**უნივერსალური:** **that** (ორივესთვის)\n• The person **that** helped = ადამიანი, რომელმაც დაეხმარა\n• The car **that** I saw = მანქანა, რომელიც ვნახე\n\n**მძიმის წესი:** თუ მძიმეებია, **that**-ს ვერ გამოვიყენებთ!\n• ✅ My brother, **who** lives in Paris\n• ❌ My brother, **that** lives in Paris",
   "examples": [
     {
       "en": "The woman who works here is very kind.",
@@ -179,6 +179,156 @@
         "I need a car that is reliable."
       ],
       "answer": "My boss, who is 50, runs every morning."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The woman ___ dog barks at night lives next door.",
+      "answer": "whose",
+      "options": [
+        "whose",
+        "who",
+        "which"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "That's the restaurant ___ food is delicious.",
+      "answer": "whose",
+      "options": [
+        "whose",
+        "which",
+        "where"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct?",
+      "options": [
+        "The phone who I lost was expensive.",
+        "The phone which I lost was expensive.",
+        "The phone where I lost was expensive."
+      ],
+      "answer": "The phone which I lost was expensive."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The student ___ sits behind me is very smart.",
+      "answer": "who",
+      "options": [
+        "who",
+        "which",
+        "whose"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I remember the day ___ we first met.",
+      "answer": "when",
+      "options": [
+        "when",
+        "where",
+        "which"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "The computer which screen is broken needs repair.",
+        "The computer whose screen is broken needs repair.",
+        "The computer who screen is broken needs repair."
+      ],
+      "answer": "The computer whose screen is broken needs repair."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The place ___ I was born is a small village.",
+      "answer": "where",
+      "options": [
+        "where",
+        "which",
+        "who"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She is the teacher ___ everyone respects.",
+      "answer": "who",
+      "options": [
+        "who",
+        "which",
+        "whose"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "With commas, which is correct?",
+      "options": [
+        "London, that is the capital, is expensive.",
+        "London, which is the capital, is expensive.",
+        "London, where is the capital, is expensive."
+      ],
+      "answer": "London, which is the capital, is expensive."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The reason ___ I'm late is traffic.",
+      "answer": "why",
+      "options": [
+        "why",
+        "which",
+        "where"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "This is the person ___ I told you about.",
+      "answer": "who",
+      "options": [
+        "who",
+        "which",
+        "whose"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which can replace both 'who' and 'which'?",
+      "options": [
+        "that",
+        "whose",
+        "where"
+      ],
+      "answer": "that"
+    },
+    {
+      "type": "fill-blank",
+      "question": "The company ___ I work for is very large.",
+      "answer": "which",
+      "options": [
+        "which",
+        "who",
+        "whose"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "My friend, ___ lives in New York, is visiting.",
+      "answer": "who",
+      "options": [
+        "who",
+        "that",
+        "which"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელი ნაწილადია non-defining clause-ით?",
+      "options": [
+        "The car that is red belongs to me.",
+        "My car, which is red, needs washing.",
+        "I want a car which is red."
+      ],
+      "answer": "My car, which is red, needs washing."
     }
   ]
 }

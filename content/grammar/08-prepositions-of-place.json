@@ -5,7 +5,7 @@
   "title_ka": "ადგილის წინდებულები",
   "level": "A1",
   "passThreshold": 0.7,
-  "explanation_ka": "ადგილის წინდებულები გვიჩვენებს - სად მდებარეობს რაიმე.\n\n**in - შიგნით:**\n• in the box (ყუთში)\n• in the room (ოთახში) \n• in Tbilisi (თბილისში)\n\n**on - ზედაპირზე:**\n• on the table (მაგიდაზე)\n• on the wall (კედელზე)\n• on the floor (იატაკზე)\n\n**at - კონკრეტულ ადგილზე:**\n• at school (სკოლაში)\n• at home (სახლში)\n• at the door (კართან)\n\n**სხვა მნიშვნელოვანი:**\n• under - ქვეშ: under the bed\n• next to - გვერდით: next to the bank\n• behind - უკან: behind the school\n\n**მთავარი წესი:**\nქართულში: სიტყვის ბოლოში (-ში, -ზე)\nინგლისურში: სიტყვის წინ (in, on, at)",
+  "explanation_ka": "ადგილის (place - სად) წინდებულები (prepositions - მდებარეობის მაჩვენებელი სიტყვები) გვიჩვენებს - სად მდებარეობს რაიმე.\n\n**in - შიგნით (ჩაკეტილ სივრცეში):**\n• in the box (ყუთში)\n• in the room (ოთახში) \n• in Tbilisi (თბილისში - დიდი ადგილებისთვის)\n\n**on - ზედაპირზე (რაიმეს ზედა ნაწილზე):**\n• on the table (მაგიდაზე)\n• on the wall (კედელზე)\n• on the floor (იატაკზე)\n\n**at - კონკრეტულ ადგილზე (წერტილი):**\n• at school (სკოლაში)\n• at home (სახლში)\n• at the door (კართან)\n\n**სხვა მნიშვნელოვანი:**\n• under - ქვეშ: under the bed (საწოლის ქვეშ)\n• next to - გვერდით: next to the bank (ბანკის გვერდით)\n• behind - უკან: behind the school (სკოლის უკან)\n\n**მთავარი წესი:**\nქართულში: სიტყვის ბოლოში (-ში, -ზე)\nინგლისურში: სიტყვის წინ (in, on, at)",
   "examples": [
     {
       "en": "The cat is under the table.",
@@ -229,6 +229,106 @@
         "The bird is at the sky."
       ],
       "answer": "The bird is in the sky."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The library is ___ the post office. (ბიბლიოთეკა ფოსტის ოფისის გვერდითაა)",
+      "answer": "next to",
+      "options": [
+        "next to",
+        "under",
+        "behind"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "I'll meet you ___ the coffee shop.",
+      "answer": "at",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია არასწორი?",
+      "options": [
+        "The pen is on the desk.",
+        "She's at work.",
+        "The mouse is on the hole."
+      ],
+      "answer": "The mouse is on the hole."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The shoes are ___ the closet. (ფეხსაცმელები კარადაშია)",
+      "answer": "in",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The clock is ___ the kitchen wall.",
+      "answer": "on",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: The teacher stands ___ the students.",
+      "options": [
+        "in front of",
+        "under",
+        "next to"
+      ],
+      "answer": "in front of"
+    },
+    {
+      "type": "fill-blank",
+      "question": "My friend lives ___ Japan. (ჩემი მეგობარი იაპონიაში ცხოვრობს)",
+      "answer": "in",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The restaurant is ___ the movie theater.",
+      "answer": "behind",
+      "options": [
+        "behind",
+        "under",
+        "in"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "I work in an office.",
+        "I work on an office.",
+        "I work at an office."
+      ],
+      "answer": "I work in an office."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The ball is ___ two chairs. (ბურთი ორ სკამს შორის არის)",
+      "answer": "between",
+      "options": [
+        "between",
+        "under",
+        "behind"
+      ]
     }
   ]
 }

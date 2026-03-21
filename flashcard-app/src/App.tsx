@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { type Deck, type FlashCard, loadDeck } from './lib/deck-loader';
-import { deckIndex, type DeckMeta } from './lib/deck-index';
+import { deckIndex, isDeckFree, type DeckMeta } from './lib/deck-index';
 import { loadFromCloud, syncToCloud, syncNow, isLoggedIn, startRealtimeSync, stopRealtimeSync, setOnSyncCallback } from './lib/firebase-sync';
 import { addXP, recordDailyActivity } from './lib/gamification';
 
@@ -972,9 +972,27 @@ export default function App() {
 
           {/* Top 2000 — Featured Card */}
           {(() => {
+            const hasUserT = !!localStorage.getItem('fluentge-user');
+            const isPremT = hasUserT && localStorage.getItem('fluentge-premium') === 'true';
             const top2000 = deckIndex.find(d => d.id === 'top-2000');
             const showFeatured = !searchQuery || (top2000 && (top2000.nameKa.toLowerCase().includes(searchQuery.toLowerCase()) || top2000.name.toLowerCase().includes(searchQuery.toLowerCase())));
             if (!top2000 || !showFeatured) return null;
+            if (!isPremT) {
+              return (
+                <a href="/premium/" className="block mb-5 fc-fadeInUp opacity-60">
+                  <div className="relative overflow-hidden rounded-2xl">
+                    <img src={top2000.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+                    <div className="relative p-5 text-center">
+                      <span className="text-3xl">{top2000.icon}</span>
+                      <p className="text-base font-bold text-white mt-1">{top2000.nameKa}</p>
+                      <p className="text-xs text-white/60">{top2000.cardCount} ბარათი</p>
+                      <span className="text-amber-400 text-sm mt-2 inline-block">🔒 პრემიუმი</span>
+                    </div>
+                  </div>
+                </a>
+              );
+            }
             return (
               <div className="mb-5 fc-fadeInUp">
                 <CategoryCard
@@ -987,19 +1005,51 @@ export default function App() {
             );
           })()}
 
-          <div className="grid grid-cols-2 gap-2.5">
-            {(searchQuery
+          {/* Free categories */}
+          {(() => {
+            const hasUser = !!localStorage.getItem('fluentge-user');
+            const isPrem = hasUser && localStorage.getItem('fluentge-premium') === 'true';
+            const allDecks = searchQuery
               ? deckIndex.filter(d => d.id !== 'top-2000' && (d.nameKa.toLowerCase().includes(searchQuery.toLowerCase()) || d.name.toLowerCase().includes(searchQuery.toLowerCase())))
-              : deckIndex.filter(d => d.id !== 'top-2000')
-            ).map(meta => (
-              <CategoryCard
-                key={meta.id}
-                meta={meta}
-                isAdded={(mode: Mode) => studyDecks.some(d => d.deckId === meta.id && d.mode === mode)}
-                onSelect={(m, mode) => setShowStyleModal({ meta: m, mode })}
-              />
-            ))}
-          </div>
+              : deckIndex.filter(d => d.id !== 'top-2000');
+            const freeList = isPrem ? allDecks : allDecks.filter(d => isDeckFree(d.id));
+            const lockedList = isPrem ? [] : allDecks.filter(d => !isDeckFree(d.id));
+            return (<>
+              {!isPrem && freeList.length > 0 && (
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-semibold text-green-400 bg-green-500/20 px-2 py-0.5 rounded-full">🆓 უფასო</span>
+                  <div className="h-px flex-1 bg-white/10"></div>
+                </div>
+              )}
+              <div className="grid grid-cols-2 gap-2.5 mb-6">
+                {freeList.map(meta => (
+                  <CategoryCard key={meta.id} meta={meta} isAdded={(mode: Mode) => studyDecks.some(d => d.deckId === meta.id && d.mode === mode)} onSelect={(m, mode) => setShowStyleModal({ meta: m, mode })} />
+                ))}
+              </div>
+              {lockedList.length > 0 && (
+                <>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-semibold text-amber-400 bg-amber-500/20 px-2 py-0.5 rounded-full">🔒 პრემიუმი</span>
+                    <div className="h-px flex-1 bg-white/10"></div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2.5 opacity-50">
+                    {lockedList.map(meta => (
+                      <a key={meta.id} href="/premium/" className="relative overflow-hidden rounded-xl text-center group">
+                        <img src={meta.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30"></div>
+                        <div className="relative p-3 overflow-hidden">
+                          <span className="text-2xl block mb-1">{meta.icon}</span>
+                          <p className="text-[11px] font-semibold leading-tight mb-1 text-white line-clamp-2">{meta.nameKa}</p>
+                          <p className="text-[10px] text-white/60">{meta.cardCount} ბარათი</p>
+                          <span className="text-amber-400 text-[10px]">🔒</span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </>
+              )}
+            </>);
+          })()}
         </div>
       )}
 

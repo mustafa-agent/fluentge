@@ -5,7 +5,7 @@
   "title_ka": "კითხვითი დანართები (Question Tags)",
   "level": "A2",
   "passThreshold": 0.7,
-  "explanation_ka": "კითხვითი დანართები (Question Tags) არის მოკლე კითხვები, რომლებიც წინადადების ბოლოს ემატება დასტურის მისაღებად ან საუბრის გასაგრძელებლად. მთავარი წესი: თუ წინადადება დადებითია, დანართი უარყოფითია და პირიქით. მაგალითად: You are Georgian, aren't you? (შენ ქართველი ხარ, არა?) / She doesn't like coffee, does she? (მას არ უყვარს ყავა, ხომ?). დანართში გამოიყენება იგივე დამხმარე ზმნა, რაც მთავარ წინადადებაშია. თუ მთავარ წინადადებაში დამხმარე ზმნა არ არის, გამოიყენება do/does/did. მაგალითად: You speak English, don't you?",
+  "explanation_ka": "**კითხვითი დანართები (Question Tags)** \n\n**რა არის?** \n• მოკლე კითხვები წინადადების ბოლოს \n• ვიყენებთ დასადასტურებლად ან საუბრის გასაგრძელებლად \n\n**მთავარი წესი:** \n• **დადებითი წინადადება → უარყოფითი დანართი** \n• **უარყოფითი წინადადება → დადებითი დანართი** \n\n**მაგალითები:** \n• You are happy, **aren't you?** (შენ ბედნიერი ხარ, **არა?**) \n• She **doesn't** like coffee, **does she?** (მას **არ უყვარს** ყავა, **ხომ?**) \n• They **can't** swim, **can they?** (მათ **ცურვა არ შეუძლიათ**, **ხომ?**) \n\n**რა ზმნას ვიყენებთ:** \n• **იგივე დამხმარე ზმნას** როგორც წინადადებაში \n• თუ არ არის დამხმარე ზმნა → **do/does/did** \n\n**გამონაკლისები:** \n• **I am** → aren't I? (არა amn't I) \n• **Let's** → shall we? (არა will we)",
   "examples": [
     {
       "en": "You like chocolate, don't you?",
@@ -181,6 +181,156 @@
         "wasn't everyone"
       ],
       "answer": "weren't they"
+    },
+    {
+      "type": "fill-blank",
+      "question": "You have been to Paris, ___?",
+      "options": [
+        "haven't you",
+        "don't you",
+        "didn't you"
+      ],
+      "answer": "haven't you"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: 'She never calls me, ___?'",
+      "options": [
+        "does she",
+        "doesn't she",
+        "never she"
+      ],
+      "answer": "does she"
+    },
+    {
+      "type": "fill-blank",
+      "question": "There isn't any milk, ___?",
+      "options": [
+        "is there",
+        "isn't there",
+        "are there"
+      ],
+      "answer": "is there"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Nobody came to the party, ___?",
+      "options": [
+        "did they",
+        "didn't they",
+        "did nobody"
+      ],
+      "answer": "did they"
+    },
+    {
+      "type": "fill-blank",
+      "question": "You used to live here, ___?",
+      "options": [
+        "didn't you",
+        "don't you",
+        "used you"
+      ],
+      "answer": "didn't you"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which tag is correct for 'It's a beautiful day'?",
+      "options": [
+        "isn't it?",
+        "doesn't it?",
+        "is it?"
+      ],
+      "answer": "isn't it?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "He would help us, ___?",
+      "options": [
+        "wouldn't he",
+        "would he",
+        "doesn't he"
+      ],
+      "answer": "wouldn't he"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: 'You must be kidding, ___?'",
+      "options": [
+        "mustn't you",
+        "must you",
+        "aren't you"
+      ],
+      "answer": "mustn't you"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Don't be late, ___?",
+      "options": [
+        "will you",
+        "won't you",
+        "are you"
+      ],
+      "answer": "will you"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Someone is at the door, ___?",
+      "options": [
+        "aren't they",
+        "isn't he",
+        "isn't someone"
+      ],
+      "answer": "aren't they"
+    },
+    {
+      "type": "fill-blank",
+      "question": "You'd better hurry, ___?",
+      "options": [
+        "hadn't you",
+        "wouldn't you",
+        "better you"
+      ],
+      "answer": "hadn't you"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: 'This is yours, ___?'",
+      "options": [
+        "isn't it",
+        "isn't this",
+        "doesn't it"
+      ],
+      "answer": "isn't it"
+    },
+    {
+      "type": "fill-blank",
+      "question": "She hardly ever smiles, ___?",
+      "options": [
+        "does she",
+        "doesn't she",
+        "hardly she"
+      ],
+      "answer": "does she"
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is correct for commands?",
+      "options": [
+        "Open the window, will you?",
+        "Open the window, do you?",
+        "Open the window, are you?"
+      ],
+      "answer": "Open the window, will you?"
+    },
+    {
+      "type": "fill-blank",
+      "question": "You could help me, ___?",
+      "options": [
+        "couldn't you",
+        "could you",
+        "can't you"
+      ],
+      "answer": "couldn't you"
     }
   ]
 }

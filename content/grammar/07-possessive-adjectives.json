@@ -5,7 +5,7 @@
   "title_ka": "კუთვნილებითი ზედსართავები",
   "level": "A1",
   "passThreshold": 0.7,
-  "explanation_ka": "კუთვნილებითი ზედსართავები ნიშნავს - ვის ეკუთვნის.\n\n**ფორმები:**\n• my — ჩემი\n• your — შენი / თქვენი\n• his — მისი (მამაკაცის)\n• her — მისი (ქალის)\n• its — მისი (საგნის)\n• our — ჩვენი\n• their — მათი\n\n**როგორ ვიყენებთ:**\nყოველთვის არსებითი სახელის წინ!\n• This is my book\n• Her name is Anna\n\n**მთავარი განსხვავება:**\n• მამაკაცი → his: John and his car\n• ქალი → her: Anna and her book\n\n**არ აურიო:**\n• your (შენი) ≠ you're (= you are)\n• its (მისი) ≠ it's (= it is)\n• their (მათი) ≠ there (იქ)",
+  "explanation_ka": "კუთვნილებითი (possessive - ვისია) ზედსართავები (adjectives - ნაცვალსახელებთან მომხდარი სიტყვები) ნიშნავს - ვის ეკუთვნის.\n\n**ფორმები:**\n• my — ჩემი\n• your — შენი / თქვენი\n• his — მისი (მამაკაცის)\n• her — მისი (ქალის)\n• its — მისი (საგნის, ცხოველის)\n• our — ჩვენი\n• their — მათი (ბევრი ადამიანის)\n\n**როგორ ვიყენებთ:**\nყოველთვის არსებითი სახელის (noun - ნივთი/ადამიანი) წინ!\n• This is my book (ეს ჩემი წიგნია)\n• Her name is Anna (მისი სახელია ანა)\n\n**მთავარი განსხვავება:**\n• მამაკაცი → his: John and his car\n• ქალი → her: Anna and her book\n\n**არ აურიო (მნიშვნელოვანი!):**\n• your (შენი) ≠ you're (= you are)\n• its (მისი) ≠ it's (= it is)\n• their (მათი) ≠ there (იქ)",
   "examples": [
     {
       "en": "This is my cat.",
@@ -229,6 +229,106 @@
         "We",
         "Us"
       ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Luka brought ___ guitar to the party. (ლუკამ თავისი გიტარა მოიტანა)",
+      "answer": "his",
+      "options": [
+        "his",
+        "her",
+        "he"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია არასწორი?",
+      "options": [
+        "This is my phone.",
+        "The cat licks it's fur.",
+        "Their car is red."
+      ],
+      "answer": "The cat licks it's fur."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The flowers lost ___ color in winter. (ყვავილებმა ფერი დაკარგეს)",
+      "answer": "their",
+      "options": [
+        "there",
+        "their",
+        "they're"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "Is this ___ coffee or mine? (შენი ყავაა თუ ჩემი?)",
+      "answer": "your",
+      "options": [
+        "you",
+        "your",
+        "you're"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Mrs. Keto teaches English. ___ students love her.",
+      "options": [
+        "His students love her.",
+        "Her students love her.",
+        "Its students love her."
+      ],
+      "answer": "Her students love her."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The dog wagged ___ tail happily. (ძაღლმა კუდი ნაცადა)",
+      "answer": "its",
+      "options": [
+        "its",
+        "it's",
+        "his"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which is WRONG?",
+      "options": [
+        "They're coming today.",
+        "There are books here.",
+        "There books are missing."
+      ],
+      "answer": "There books are missing."
+    },
+    {
+      "type": "fill-blank",
+      "question": "I can't find ___ keys anywhere. (ჩემი გასაღებები ვეღარ ვიპოვე)",
+      "answer": "my",
+      "options": [
+        "my",
+        "I",
+        "me"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "The twins share ___ room. (ტყუპები ოთახს იზიარებენ)",
+      "answer": "their",
+      "options": [
+        "there",
+        "their",
+        "they"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია possessive adjective?",
+      "options": [
+        "She is happy.",
+        "Her smile is beautiful.",
+        "They are here."
+      ],
+      "answer": "Her smile is beautiful."
     }
   ]
 }

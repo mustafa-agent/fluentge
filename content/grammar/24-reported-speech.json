@@ -5,7 +5,7 @@
   "title_ka": "ირიბი თქმა (Reported Speech)",
   "level": "B1",
   "passThreshold": 0.7,
-  "explanation_ka": "ირიბი თქმა გამოიყენება, როცა სხვის ნათქვამს გადმოვცემთ.\n\n1. დრო ერთი საფეხურით \"უკან\" იწევს:\n• Present Simple → Past Simple: \"I like coffee\" → He said he liked coffee.\n• Present Continuous → Past Continuous: \"I am studying\" → She said she was studying.\n• Past Simple → Past Perfect: \"I went home\" → He said he had gone home.\n• Will → Would: \"I will help\" → She said she would help.\n• Can → Could: \"I can swim\" → He said he could swim.\n\n2. სიტყვები იცვლება:\n• this → that, here → there\n• today → that day, tomorrow → the next day\n• yesterday → the day before, now → then\n\n3. Say vs Tell:\n✅ He said (that) he was tired.\n✅ He told me (that) he was tired.\n❌ He said me... — არასწორი!\n❌ He told that... — არასწორი! (tell-ს ყოველთვის პირი სჭირდება)",
+  "explanation_ka": "**ირიბი თქმა (Reported Speech)** - როცა გადმოვიცემთ ვინმეს ნათქვამს.\n\n**დროების ცვლილება (უკან იწევს):**\n• **\"I work\"** → He said he **worked**\n• **\"I am working\"** → He said he **was working**  \n• **\"I worked\"** → He said he **had worked**\n• **\"I will work\"** → He said he **would work**\n• **\"I can work\"** → He said he **could work**\n\n**სიტყვების ცვლილება:**\n• **today** → that day (იმ დღეს)\n• **yesterday** → the day before (წინა დღეს) \n• **tomorrow** → the next day (მეორე დღეს)\n• **here** → there (იქ)\n• **this** → that (ის)\n\n**Say vs Tell - ყურადღება!**\n• ✅ He **said** (that) he was tired\n• ✅ He **told me** (that) he was tired\n• ❌ He said me... (არასწორი!)\n• ❌ He told that... (არასწორი!)\n\n**წესი:** **say**-ს პირი არ უნდა, **tell**-ს პირი სჭირდება",
   "examples": [
     {
       "en": "She said that she was tired.",
@@ -219,6 +219,116 @@
         "tomorrow",
         "the day before"
       ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "\"I play football.\" → He said he ___ football.",
+      "answer": "played",
+      "options": [
+        "played",
+        "plays",
+        "play"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "\"I have a car.\" becomes:",
+      "options": [
+        "She said she has a car.",
+        "She said she had a car.",
+        "She said she having a car."
+      ],
+      "answer": "She said she had a car."
+    },
+    {
+      "type": "fill-blank",
+      "question": "\"We live here.\" → They said they lived ___.",
+      "answer": "there",
+      "options": [
+        "there",
+        "here",
+        "their"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ that she was happy.",
+      "answer": "said",
+      "options": [
+        "said",
+        "told",
+        "say"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "\"Are you coming?\" becomes:",
+      "options": [
+        "He asked me are you coming.",
+        "He asked me if I was coming.",
+        "He asked me that I was coming."
+      ],
+      "answer": "He asked me if I was coming."
+    },
+    {
+      "type": "fill-blank",
+      "question": "\"I will be late.\" → He told me he ___ be late.",
+      "answer": "would",
+      "options": [
+        "would",
+        "will",
+        "could"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "\"I bought this yesterday.\" → She said she had bought ___ ___.",
+      "answer": "that the day before",
+      "options": [
+        "that the day before",
+        "this yesterday",
+        "that yesterday"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "He said me he was tired.",
+        "He said he was tired.",
+        "He told that he was tired."
+      ],
+      "answer": "He said he was tired."
+    },
+    {
+      "type": "fill-blank",
+      "question": "\"I may come.\" → She said she ___ come.",
+      "answer": "might",
+      "options": [
+        "might",
+        "may",
+        "would"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "\"I don't understand.\" → He said he ___ understand.",
+      "answer": "didn't",
+      "options": [
+        "didn't",
+        "doesn't",
+        "don't"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "\"What time is it?\" In reported speech:",
+      "options": [
+        "She asked me what time is it.",
+        "She asked me what time it was.",
+        "She asked me what time was it."
+      ],
+      "answer": "She asked me what time it was."
     }
   ]
 }

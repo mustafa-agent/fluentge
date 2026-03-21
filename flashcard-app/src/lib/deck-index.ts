@@ -15,9 +15,12 @@ export interface DeckMeta {
 }
 
 export const deckIndex: DeckMeta[] = [
+  // === FREE DECKS (first 3) ===
+  { id: 'greetings', name: 'Greetings & Basics', nameKa: 'მისალმებები და საფუძვლები', icon: '👋', image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80', cardCount: 25, sources: ['greetings-basics'] },
+  { id: 'numbers', name: 'Numbers & Time', nameKa: 'რიცხვები და დრო', icon: '🔢', image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&q=80', cardCount: 25, sources: ['numbers-time'] },
+  { id: 'colors', name: 'Colors & Shapes', nameKa: 'ფერები და ფიგურები', icon: '🎨', image: 'https://images.unsplash.com/photo-1502691876148-a84978e59af8?w=400&q=80', cardCount: 50, sources: ['colors-shapes'] },
+  // === PREMIUM DECKS ===
   { id: 'top-2000', name: 'Top 2000 English Words', nameKa: 'ტოპ 2000 ინგლისური სიტყვა', icon: '⭐', image: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&q=80', cardCount: 2000, sources: ['top-2000-words'] },
-  { id: 'greetings', name: 'Greetings & Basics', nameKa: 'მისალმებები და საფუძვლები', icon: '👋', image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80', cardCount: 200, sources: ['greetings-basics'] },
-  { id: 'numbers', name: 'Numbers & Time', nameKa: 'რიცხვები და დრო', icon: '🔢', image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&q=80', cardCount: 200, sources: ['numbers-time'] },
   { id: 'family', name: 'Family & People', nameKa: 'ოჯახი და ხალხი', icon: '👨‍👩‍👧‍👦', image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400&q=80', cardCount: 200, sources: ['family-people'] },
   { id: 'food', name: 'Food & Cooking', nameKa: 'საკვები და კულინარია', icon: '🍳', image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80', cardCount: 50, sources: ['food-drink', 'cooking-kitchen', 'restaurant-cafe', 'fast-food-snacks'], merged: true },
   { id: 'home', name: 'Home & Housing', nameKa: 'სახლი და საცხოვრებელი', icon: '🏠', image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&q=80', cardCount: 200, sources: ['home-housing'] },
@@ -34,7 +37,6 @@ export const deckIndex: DeckMeta[] = [
   { id: 'sports', name: 'Sports & Fitness', nameKa: 'სპორტი და ფიტნესი', icon: '⚽', image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=400&q=80', cardCount: 50, sources: ['sports-fitness', 'gym-fitness', 'mma-fighting', 'sports-extreme'], merged: true },
   { id: 'music', name: 'Music', nameKa: 'მუსიკა', icon: '🎵', image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&q=80', cardCount: 50, sources: ['music-art', 'music-lyrics', 'music-genres'], merged: true },
   { id: 'animals', name: 'Animals', nameKa: 'ცხოველები', icon: '🐾', image: 'https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=400&q=80', cardCount: 200, sources: ['animals'] },
-  { id: 'colors', name: 'Colors & Shapes', nameKa: 'ფერები და ფიგურები', icon: '🎨', image: 'https://images.unsplash.com/photo-1502691876148-a84978e59af8?w=400&q=80', cardCount: 200, sources: ['colors-shapes'] },
   { id: 'bodyparts', name: 'Body Parts', nameKa: 'სხეულის ნაწილები', icon: '🦴', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80', cardCount: 200, sources: ['body-parts'] },
   { id: 'jobs', name: 'Jobs & Professions', nameKa: 'პროფესიები', icon: '👨‍⚕️', image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&q=80', cardCount: 200, sources: ['jobs-professions'] },
   { id: 'socialmedia', name: 'Social Media & Internet', nameKa: 'სოციალური მედია', icon: '📱', image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&q=80', cardCount: 200, sources: ['social-media'] },
@@ -93,8 +95,8 @@ export const deckIndex: DeckMeta[] = [
   { id: 'camping-outdoor', name: 'Camping & Outdoors', nameKa: 'კემპინგი და ბუნება', icon: '⛺', image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&q=80', cardCount: 200, sources: ['camping-outdoor'] },
 ];
 
-// Free tier: only these decks are accessible without premium
-export const FREE_DECK_IDS = ['greetings', 'numbers', 'food', 'top-2000'];
+// Free tier: only these 3 decks are accessible without premium
+export const FREE_DECK_IDS = ['greetings', 'numbers', 'colors'];
 
 export function isDeckFree(deckId: string): boolean {
   return FREE_DECK_IDS.includes(deckId);

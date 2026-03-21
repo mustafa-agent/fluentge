@@ -130,6 +130,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             <span id="nav-account-name"></span>
           </a>
+          <button id="nav-logout" class="hidden text-sm border border-red-500/30 text-red-400 px-3 py-1.5 rounded-lg hover:bg-red-500/10 transition-colors" title="გასვლა">🚪</button>
         </div>
       </div>
       <div id="mobile-menu" class="hidden lg:hidden border-t border-[#2E2E30] bg-[#1C1C1E]/98">
@@ -246,6 +247,19 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
       (function() {
         var PREMIUM_EMAILS = ['tokakhozre@gmail.com'];
         var u = localStorage.getItem('fluentge-user');
+        // If no user data, clear ALL user data (cloud sync restores on login)
+        // Keep only 'theme' setting
+        if (!u) {
+          var keepKeys = {theme: true};
+          var keysToRemove = [];
+          for (var i = 0; i < localStorage.length; i++) {
+            var key = localStorage.key(i);
+            if (key && !keepKeys[key]) {
+              keysToRemove.push(key);
+            }
+          }
+          keysToRemove.forEach(function(k) { localStorage.removeItem(k); });
+        }
         if (u) {
           var data = JSON.parse(u);
           if (PREMIUM_EMAILS.indexOf(data.email) !== -1) {
@@ -258,6 +272,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           el = document.getElementById('nav-account'); if(el) el.classList.remove('hidden');
           el = document.getElementById('nav-account-name'); if(el) el.textContent = data.name || data.email.split('@')[0];
           el = document.getElementById('nav-account-mobile'); if(el) el.classList.remove('hidden');
+          el = document.getElementById('nav-logout'); if(el) el.classList.remove('hidden');
           // Hide premium button for premium users
           if (localStorage.getItem('fluentge-premium') === 'true') {
             el = document.getElementById('nav-premium-btn'); if(el) el.style.display = 'none';
@@ -414,9 +429,31 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
               console.log('[Sync] Real-time update from cloud');
             });
           }
-        } else { uid = null; }
+        } else {
+          uid = null;
+          // Clear premium status on logout
+          localStorage.removeItem('fluentge-premium');
+          localStorage.removeItem('fluentge-user');
+        }
       });
       window.__fluentgeSync = { save: () => uid && saveCloud(uid), load: () => uid && loadCloud(uid) };
+      
+      // Global logout button handler
+      var logoutBtn = document.getElementById('nav-logout');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', async function() {
+          try { await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js").then(m => m.signOut(auth)); } catch(e) {}
+          // Clear all user data
+          var keep = {theme: true};
+          var remove = [];
+          for (var i = 0; i < localStorage.length; i++) {
+            var k = localStorage.key(i);
+            if (k && !keep[k]) remove.push(k);
+          }
+          remove.forEach(function(k) { localStorage.removeItem(k); });
+          window.location.href = '/';
+        });
+      }
     </script>
     <!-- SRS Reminder Banner (cross-page) -->
     <!-- SRS reminder banner removed -->

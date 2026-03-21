@@ -212,6 +212,17 @@ html.light footer {
   background-color: #FFFFFF !important;
   border-color: #E5E7EB !important;
 }
+html.light footer a:hover {
+  color: #1a1a2e !important;
+}
+html.light footer .border-\[\#2E2E30\] {
+  border-color: #E5E7EB !important;
+}
+
+/* Hide dark-mode decorative background blobs in light mode */
+html.light .fixed.inset-0.pointer-events-none.z-0 {
+  opacity: 0;
+}
 
 /* Cards & sections */
 html.light .bg-\[\#242426\]\/50 {

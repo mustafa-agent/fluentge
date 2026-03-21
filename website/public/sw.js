@@ -1,5 +1,5 @@
-// FluentGe Service Worker — lightweight cache-first for static assets
-const CACHE = 'fluentge-v4';
+// FluentGe Service Worker — network-first for HTML, cache-first for assets
+const CACHE = 'fluentge-v5';
 const PRECACHE = ['/', '/flashcards/', '/grammar/', '/games/'];
 
 self.addEventListener('install', e => {
@@ -15,19 +15,33 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
-  // Cache-first for same-origin static assets
-  if (url.origin === self.location.origin) {
+  if (url.origin !== self.location.origin) return;
+
+  // HTML pages: network-first (always get latest)
+  if (e.request.mode === 'navigate' || e.request.headers.get('accept')?.includes('text/html')) {
     e.respondWith(
-      caches.match(e.request).then(cached => {
-        const fetched = fetch(e.request).then(resp => {
-          if (resp.ok) {
-            const clone = resp.clone();
-            caches.open(CACHE).then(c => c.put(e.request, clone));
-          }
-          return resp;
-        }).catch(() => cached);
-        return cached || fetched;
-      })
+      fetch(e.request).then(resp => {
+        if (resp.ok) {
+          const clone = resp.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+        }
+        return resp;
+      }).catch(() => caches.match(e.request))
     );
+    return;
   }
+
+  // Static assets (JS, CSS, images): cache-first
+  e.respondWith(
+    caches.match(e.request).then(cached => {
+      const fetched = fetch(e.request).then(resp => {
+        if (resp.ok && resp.status !== 206) {
+          const clone = resp.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+        }
+        return resp;
+      }).catch(() => cached);
+      return cached || fetched;
+    })
+  );
 });

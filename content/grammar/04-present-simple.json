@@ -5,7 +5,7 @@
   "title_ka": "მარტივი აწმყო დრო",
   "level": "A1",
   "passThreshold": 0.7,
-  "explanation_ka": "Present Simple ნიშნავს ჩვეულებრივ, განმეორებად მოქმედებებს.\n\n**დადებითი:**\n• I/you/we/they + ზმნა: I work, They play\n• he/she/it + ზმნა + s: She works, He goes\n\n**უარყოფითი:**\n• I/you/we/they + don't + ზმნა: I don't like coffee\n• he/she/it + doesn't + ზმნა: She doesn't eat meat\n\n**კითხვითი:**\n• Do + I/you/we/they + ზმნა? Do you speak English?\n• Does + he/she/it + ზმნა? Does he live here?\n\n**მთავარი წესები:**\n• ✅ She speaks English (he/she/it → -s!)\n• ❌ She speak English\n• ✅ Does she speak? (does-ის შემდეგ -s არა!)\n• ❌ Does she speaks?",
+  "explanation_ka": "Present Simple (მარტივი აწმყო) ნიშნავს ჩვეულებრივ, განმეორებად მოქმედებებს.\n\n**დადებითი (positive - დადებითი წინადადება):**\n• I/you/we/they + ზმნა (verb - მოქმედება): I work, They play\n• he/she/it + ზმნა + s: She works, He goes\n\n**უარყოფითი (negative - უარყოფითი წინადადება):**\n• I/you/we/they + don't + ზმნა: I don't like coffee\n• he/she/it + doesn't + ზმნა: She doesn't eat meat\n\n**კითხვითი (question - კითხვა):**\n• Do + I/you/we/they + ზმნა? Do you speak English?\n• Does + he/she/it + ზმნა? Does he live here?\n\n**მთავარი წესები:**\n• ✅ She speaks English (he/she/it → -s!)\n• ❌ She speak English\n• ✅ Does she speak? (does-ის შემდეგ -s არა!)\n• ❌ Does she speaks?",
   "examples": [
     {
       "en": "I work every day.",
@@ -229,6 +229,106 @@
         "She going to bed early."
       ],
       "answer": "She goes to bed early."
+    },
+    {
+      "type": "fill-blank",
+      "question": "My grandmother ___ stories to children. (ჩემი ბებია ბავშვებს ზღაპრებს უყვება)",
+      "answer": "tells",
+      "options": [
+        "tell",
+        "tells",
+        "telling"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "___ you understand Georgian?",
+      "answer": "Do",
+      "options": [
+        "Do",
+        "Does",
+        "Are"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია არასწორი?",
+      "options": [
+        "I eat breakfast at 8.",
+        "He doesn't like tea.",
+        "She don't work here."
+      ],
+      "answer": "She don't work here."
+    },
+    {
+      "type": "fill-blank",
+      "question": "The sun ___ in the east.",
+      "answer": "rises",
+      "options": [
+        "rise",
+        "rises",
+        "rising"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "My cat ___ all day long. (ჩემი კატა მთელი დღე სძინავს)",
+      "answer": "sleeps",
+      "options": [
+        "sleep",
+        "sleeps",
+        "sleeping"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete: ___ it rain a lot in London?",
+      "options": [
+        "Do",
+        "Does",
+        "Is"
+      ],
+      "answer": "Does"
+    },
+    {
+      "type": "fill-blank",
+      "question": "Children ___ games after school.",
+      "answer": "play",
+      "options": [
+        "play",
+        "plays",
+        "playing"
+      ]
+    },
+    {
+      "type": "fill-blank",
+      "question": "She ___ her homework every evening.",
+      "answer": "does",
+      "options": [
+        "do",
+        "does",
+        "doing"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "რომელია სწორი?",
+      "options": [
+        "Water boils at 100 degrees.",
+        "Water boil at 100 degrees.",
+        "Water boiling at 100 degrees."
+      ],
+      "answer": "Water boils at 100 degrees."
+    },
+    {
+      "type": "fill-blank",
+      "question": "My brother ___ the guitar very well. (ჩემი ძმა კარგად უკრავს გიტარაზე)",
+      "answer": "plays",
+      "options": [
+        "play",
+        "plays",
+        "playing"
+      ]
     }
   ]
 }

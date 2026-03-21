@@ -20,9 +20,10 @@ for (const level of levels) {
   allLessonsOrdered.push(...grouped[level]);
 }
 
+const FREE_LESSON_COUNT = 3;
 function isLessonFree(slug: string) {
-  const lesson = allLessonsOrdered.find(l => l.slug === slug);
-  return lesson?.level === 'A1';
+  const idx = allLessonsOrdered.findIndex(l => l.slug === slug);
+  return idx >= 0 && idx < FREE_LESSON_COUNT;
 }
 
 const levelMeta: Record<string, { icon: string; emoji: string; color: string; colorDark: string; bg: string; bgSolid: string; bgLight: string; border: string; borderBottom: string; gradient: string; gradientBg: string; label: string; description: string }> = {
@@ -558,7 +559,7 @@ const levelMeta: Record<string, { icon: string; emoji: string; color: string; co
                 const free = isLessonFree(lesson.slug);
                 const globalIdx = allLessonsOrdered.indexOf(lesson);
                 return (
-                  <a href={free ? `/grammar/${lesson.slug}/` : '/placement/'} 
+                  <a href={free ? `/grammar/${lesson.slug}/` : '/pricing/'} 
                      class="grammar-lesson-btn"
                      data-slug={lesson.slug}
                      data-idx={globalIdx}
@@ -673,6 +674,10 @@ const levelMeta: Record<string, { icon: string; emoji: string; color: string; co
 
     // Grammar progress + sequential unlock
     (function() {
+      // Auth check: no user = no premium
+      if (!localStorage.getItem('fluentge-user')) {
+        localStorage.removeItem('fluentge-premium');
+      }
       var LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
       var isPremium = localStorage.getItem('fluentge-premium') === 'true';
       var placementLevel = localStorage.getItem('fluentge-placement-level');
@@ -768,7 +773,7 @@ const levelMeta: Record<string, { icon: string; emoji: string; color: string; co
           if (numEl) { numEl.textContent = '👑'; numEl.style.fontSize = '1rem'; }
           badgeEl.textContent = '🔒 ჩაკეტილი';
           badgeEl.className = 'status-chip chip-premium bg-amber-500/10 text-amber-400/80 border border-amber-500/15';
-          card.setAttribute('href', '/placement/');
+          card.setAttribute('href', '/pricing/');
         } else if (!isCompleted) {
           card.classList.add('state-locked');
           if (numEl) { numEl.textContent = '🔒'; numEl.style.fontSize = '0.9rem'; }
