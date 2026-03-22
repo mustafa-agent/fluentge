@@ -1351,3 +1351,78 @@ html.light .unit-lessons a:hover {
 html.light .unit-lessons a .w-8 {
   background: #f3f4f6;
 }
+
+/* ========== DASHBOARD — LIGHT MODE ========== */
+html.light .bg-\[\#242426\] {
+  background: #ffffff !important;
+}
+html.light .bg-\[\#1C1C1E\] {
+  background: #e5e7eb !important;
+}
+html.light .border-\[\#2E2E30\] {
+  border-color: #e5e7eb !important;
+}
+html.light .text-\[\#C8C8C0\] {
+  color: #1a1a2e !important;
+}
+html.light .text-\[\#6B6B65\] {
+  color: #6b7280 !important;
+}
+html.light .text-\[\#A0A09A\] {
+  color: #4b5563 !important;
+}
+html.light .from-amber-500\/10 {
+  --tw-gradient-from: rgba(245, 158, 11, 0.08) !important;
+}
+html.light .to-yellow-500\/10 {
+  --tw-gradient-to: rgba(234, 179, 8, 0.08) !important;
+}
+
+/* Games page inline-styled elements — light mode */
+html.light #back-btn {
+  background: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #1a1a2e !important;
+}
+html.light #game-xp-display {
+  background: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #1a1a2e !important;
+}
+/* Game container buttons & text — light mode inline style overrides */
+html.light #game-container button[style*="background:#2A2A2E"],
+html.light #game-container button[style*="background: #2A2A2E"] {
+  background: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #1a1a2e !important;
+}
+html.light #game-container [style*="color:#F5F5F0"],
+html.light #game-container [style*="color: #F5F5F0"] {
+  color: #1a1a2e !important;
+}
+html.light #game-container [style*="color:#A0A09A"],
+html.light #game-container [style*="color: #A0A09A"] {
+  color: #6b7280 !important;
+}
+html.light #game-container [style*="color:#C8C8C0"],
+html.light #game-container [style*="color: #C8C8C0"] {
+  color: #374151 !important;
+}
+html.light #game-container [style*="background:#242426"],
+html.light #game-container [style*="background: #242426"] {
+  background: #f3f4f6 !important;
+  border-color: #d1d5db !important;
+}
+html.light #game-container [style*="background:rgba(200,200,192"] {
+  background: rgba(0,0,0,0.05) !important;
+  border-color: rgba(0,0,0,0.1) !important;
+}
+/* Game difficulty picker — light mode */
+html.light #game-container > div > [style*="background:#242426"] {
+  background: #ffffff !important;
+}
+/* Memory game cards light mode */
+html.light #game-container button[style*="background:linear-gradient(135deg,#9333EA"] {
+  background: linear-gradient(135deg, rgba(147,51,234,0.1), rgba(124,58,237,0.1)) !important;
+  color: #4b5563 !important;
+}
