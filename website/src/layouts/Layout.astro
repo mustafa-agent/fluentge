@@ -385,28 +385,36 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           if (snap.exists()) { apply(gather(), snap.data().progress || {}); console.log('[Sync] Loaded from cloud'); }
         } catch (e) { console.warn('[Sync] Load failed:', e.message); }
       }
+      let lastSavedHash = '';
       async function saveCloud(uid) {
         if (!db) return;
         try {
-          const d = gather(); d.lastSync = new Date().toISOString();
+          const d = gather();
+          // Only save if data actually changed
+          const hash = JSON.stringify(d);
+          if (hash === lastSavedHash) return;
+          d.lastSync = new Date().toISOString();
           lastSaveTime = Date.now();
+          lastSavedHash = hash;
           await setDoc(doc(db, 'users', uid), { progress: d }, { merge: true });
           console.log('[Sync] Saved to cloud');
         } catch (e) { console.warn('[Sync] Save failed:', e.message); }
       }
 
       let iv = null, uid = null, unsubSnap = null, lastSaveTime = 0;
+      function onBeforeUnload() { if (uid) saveCloud(uid); }
       onAuthStateChanged(auth, async (user) => {
         if (iv) { clearInterval(iv); iv = null; }
         if (unsubSnap) { unsubSnap(); unsubSnap = null; }
+        window.removeEventListener('beforeunload', onBeforeUnload);
         if (user) {
           uid = user.uid;
           await loadCloud(uid);
           // Show sync toast
           const toast = document.getElementById('sync-toast');
           if (toast) { toast.style.display = 'flex'; setTimeout(() => { toast.style.display = 'none'; }, 3000); }
-          iv = setInterval(() => saveCloud(uid), 30000);
-          window.addEventListener('beforeunload', () => saveCloud(uid));
+          iv = setInterval(() => saveCloud(uid), 60000);
+          window.addEventListener('beforeunload', onBeforeUnload);
           // Real-time listener for cross-browser sync
           if (db) {
             unsubSnap = onSnapshot(doc(db, 'users', uid), (snap) => {

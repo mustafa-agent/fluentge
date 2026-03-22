@@ -63,6 +63,10 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 22 (Cron 4, 7:00 AM)
+- [x] **Dashboard light mode** — All hardcoded dark colors (#242426, #1C1C1E, #2E2E30, #C8C8C0, #6B6B65, #A0A09A) overridden via CSS utility class selectors ✅
+- [x] **Games light mode (inline styles)** — Game buttons (#2A2A2E bg), text (#F5F5F0, #A0A09A, #C8C8C0), XP display, back button, memory cards all get light overrides via `[style*=]` attribute selectors with `!important` ✅
+
 ## ✅ COMPLETED — Mar 21 (Cron 4, 7:00 AM)
 - [x] **Footer light mode** — Footer link hovers use proper dark color instead of white, footer borders properly themed ✅
 - [x] **Daily challenge results light mode** — Results buttons (retry + practice) properly styled in light mode ✅
