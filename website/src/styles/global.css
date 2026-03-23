@@ -135,8 +135,11 @@ html.light div.h-px.bg-\[\#2E2E30\] {
 }
 
 /* Text overrides */
-html.light .text-white,
 html.light .text-\[\#F5F5F0\] {
+  color: #1A1A2E !important;
+}
+
+html.light .text-white {
   color: #1A1A2E !important;
 }
 

@@ -63,6 +63,12 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 23 (Cron 4, 7:00 AM)
+- [x] **Blog prose light mode** — All 27 blog posts use `prose-invert` which had white text/links in light mode. Added CSS variable overrides for body, headings, links, bold, quotes, code, borders. Tip boxes also get light bg. ✅
+- [x] **Dashboard leaderboard light mode** — Non-top-3 avatar gradient backgrounds (`#3a3a3e`→`#2a2a2e`) now get light gray in light mode ✅
+- [x] **Dashboard reset modal light mode** — Modal container gets white bg and proper borders in light mode ✅
+- [x] **Blog date text** — `#4A4A45` text color gets proper muted color in light mode ✅
+
 ## ✅ COMPLETED — Mar 22 (Cron 4, 7:00 AM)
 - [x] **Dashboard light mode** — All hardcoded dark colors (#242426, #1C1C1E, #2E2E30, #C8C8C0, #6B6B65, #A0A09A) overridden via CSS utility class selectors ✅
 - [x] **Games light mode (inline styles)** — Game buttons (#2A2A2E bg), text (#F5F5F0, #A0A09A, #C8C8C0), XP display, back button, memory cards all get light overrides via `[style*=]` attribute selectors with `!important` ✅

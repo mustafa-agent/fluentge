@@ -559,7 +559,7 @@ const levelMeta: Record<string, { icon: string; emoji: string; color: string; co
                 const free = isLessonFree(lesson.slug);
                 const globalIdx = allLessonsOrdered.indexOf(lesson);
                 return (
-                  <a href={free ? `/grammar/${lesson.slug}/` : '/pricing/'} 
+                  <a href={free ? `/grammar/${lesson.slug}/` : '/premium/'} 
                      class="grammar-lesson-btn"
                      data-slug={lesson.slug}
                      data-idx={globalIdx}
@@ -773,7 +773,7 @@ const levelMeta: Record<string, { icon: string; emoji: string; color: string; co
           if (numEl) { numEl.textContent = '👑'; numEl.style.fontSize = '1rem'; }
           badgeEl.textContent = '🔒 ჩაკეტილი';
           badgeEl.className = 'status-chip chip-premium bg-amber-500/10 text-amber-400/80 border border-amber-500/15';
-          card.setAttribute('href', '/pricing/');
+          card.setAttribute('href', '/premium/');
         } else if (!isCompleted) {
           card.classList.add('state-locked');
           if (numEl) { numEl.textContent = '🔒'; numEl.style.fontSize = '0.9rem'; }
