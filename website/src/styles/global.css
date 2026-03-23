@@ -1426,3 +1426,48 @@ html.light #game-container button[style*="background:linear-gradient(135deg,#933
   background: linear-gradient(135deg, rgba(147,51,234,0.1), rgba(124,58,237,0.1)) !important;
   color: #4b5563 !important;
 }
+
+/* ========== BLOG PROSE — LIGHT MODE ========== */
+html.light .prose-invert {
+  --tw-prose-body: #374151 !important;
+  --tw-prose-headings: #1a1a2e !important;
+  --tw-prose-links: #4f46e5 !important;
+  --tw-prose-bold: #1a1a2e !important;
+  --tw-prose-counters: #6b7280 !important;
+  --tw-prose-bullets: #9ca3af !important;
+  --tw-prose-quotes: #374151 !important;
+  --tw-prose-quote-borders: #d1d5db !important;
+  --tw-prose-code: #1a1a2e !important;
+  --tw-prose-th-borders: #d1d5db !important;
+  --tw-prose-td-borders: #e5e7eb !important;
+}
+
+/* Blog tip/CTA boxes in light mode */
+html.light .prose .bg-\[\#1C1C1E\] {
+  background-color: #f3f4f6 !important;
+}
+
+/* Blog post back link */
+html.light .prose a.text-white {
+  color: #4f46e5 !important;
+}
+
+/* ========== DASHBOARD — LIGHT MODE EXTRAS ========== */
+/* Leaderboard non-top-3 avatar backgrounds */
+html.light .from-\[\#3a3a3e\] {
+  --tw-gradient-from: #e5e7eb !important;
+}
+html.light .to-\[\#2a2a2e\] {
+  --tw-gradient-to: #d1d5db !important;
+}
+
+/* Reset modal */
+html.light #reset-modal > div {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
+/* Text color #4A4A45 used in blog dates */
+html.light .text-\[\#4A4A45\] {
+  color: #9ca3af !important;
+}
