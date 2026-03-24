@@ -298,6 +298,7 @@ export function syncNow(): void {
 
 // Flag to prevent applying our own writes back
 let _isSaving = false;
+let _lastSavedHash = '';
 
 export async function syncToCloud(): Promise<void> {
   const uid = getUid();
@@ -305,13 +306,16 @@ export async function syncToCloud(): Promise<void> {
   await initFirebase();
   if (!db) return;
   try {
-    _isSaving = true;
-    const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js" as any);
     const d = gather();
+    const hash = JSON.stringify(d);
+    if (hash === _lastSavedHash) return; // Skip if nothing changed
+    _isSaving = true;
+    _lastSavedHash = hash;
+    const { doc, setDoc } = await import("https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js" as any);
     d.lastSync = new Date().toISOString();
     await setDoc(doc(db, 'users', uid), { progress: d }, { merge: true });
     console.log('[FluentGe Sync] Saved to cloud');
-    setTimeout(() => { _isSaving = false; }, 1000);
+    setTimeout(() => { _isSaving = false; }, 2000);
   } catch (e: any) {
     _isSaving = false;
     console.warn('[FluentGe Sync] Save failed:', e.message);

@@ -89,7 +89,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
       <!-- Dot grid pattern -->
       <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(200,200,192,0.03) 1px,transparent 1px);background-size:32px 32px;"></div>
     </div>
-    <nav class="fixed top-0 w-full z-50 bg-[#1C1C1E]/95 backdrop-blur-md border-b border-[#2E2E30]">
+    <nav class="site-nav fixed top-0 w-full z-50 bg-[#1C1C1E]/95 backdrop-blur-md border-b border-[#2E2E30]">
       <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-6">
         <a href="/" class="font-['Playfair_Display',serif] text-xl sm:text-2xl tracking-tight flex-shrink-0">
           <span class="text-[#C8C8C0]">Fluent</span><span class="text-white">Ge</span>
@@ -210,7 +210,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
         var streak = parseInt(localStorage.getItem('currentStreak') || '0', 10);
         var xp = parseInt(localStorage.getItem('totalXP') || '0', 10);
         if (streak > 0 || xp > 0) {
-          var xpStr = xp >= 1000 ? (xp/1000).toFixed(1) + 'k' : xp.toString();
+          var xpStr = xp.toLocaleString();
           ['', '-mobile'].forEach(function(suffix) {
             var el = document.getElementById('nav-gamification' + suffix);
             if (el) { el.classList.remove('hidden'); el.classList.add('flex'); }
@@ -421,13 +421,13 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
               if (!snap.exists()) return;
               const now = Date.now();
               // Skip if we just saved (avoid loop)
-              if (now - lastSaveTime < 3000) return;
+              if (now - lastSaveTime < 5000) return;
               const cloud = snap.data().progress || {};
               if (!cloud.lastSync) return;
               apply(gather(), cloud);
               // Update navbar XP display
               const xp = parseInt(localStorage.getItem('totalXP') || '0', 10);
-              const xpStr = xp >= 1000 ? (xp/1000).toFixed(1) + 'k' : xp.toString();
+              const xpStr = xp.toLocaleString();
               ['', '-mobile'].forEach(s => {
                 const el = document.getElementById('nav-xp' + s);
                 if (el) el.textContent = xpStr;

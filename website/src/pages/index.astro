@@ -114,7 +114,7 @@ const todayWord = wordsOfDay[dayOfYear % wordsOfDay.length];
         if (heroNew) heroNew.style.display = 'none';
         if (heroRet) heroRet.style.display = 'block';
         // Populate stats
-        var xpStr = xp >= 1000 ? (xp/1000).toFixed(1) + 'k' : xp.toString();
+        var xpStr = xp.toLocaleString();
         var el;
         el = document.getElementById('ret-streak'); if(el) el.textContent = streak;
         el = document.getElementById('ret-xp'); if(el) el.textContent = xpStr;

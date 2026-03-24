@@ -180,7 +180,7 @@
   function updateXPCounter(total) {
     var val = document.getElementById('grammar-xp-value');
     if (val) {
-      val.textContent = total >= 1000 ? (total / 1000).toFixed(1) + 'k' : total;
+      val.textContent = total.toLocaleString();
       var counter = document.getElementById('grammar-xp-counter');
       if (counter) {
         counter.style.transform = 'scale(1.15)';

@@ -132,12 +132,26 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
     html.light .gl-mistakes-card h2 { color: #DC2626 !important; }
     html.light .gl-mistakes-card p, html.light .gl-mistakes-card span, html.light .gl-mistakes-card div { color: #374151 !important; }
 
-    html.light .gl-btn-option { background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%) !important; border-color: #D1D5DB !important; color: #1F2937 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+    html.light .gl-btn-option { background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%) !important; border-color: #D1D5DB !important; border-bottom-color: #B0B0B0 !important; color: #1F2937 !important; box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
     html.light .gl-btn-option span { color: #1F2937 !important; }
-    html.light .gl-btn-option:hover { background: linear-gradient(180deg, #FFFFFF 0%, #EFF6FF 100%) !important; border-color: #93C5FD !important; }
-    html.light .gl-btn-option .gl-letter { background: #E5E7EB !important; color: #4B5563 !important; }
+    html.light .gl-btn-option:hover { background: linear-gradient(180deg, #FFFFFF 0%, #EFF6FF 100%) !important; border-color: #93C5FD !important; border-bottom-color: #60A5FA !important; }
+    html.light .gl-btn-option .gl-letter { background: #E0E7FF !important; color: #3730A3 !important; font-weight: 700; }
 
-    html.light .gl-progress-track { background: #E5E7EB !important; }
+    html.light .gl-progress-track { background: #E5E7EB !important; background-color: #E5E7EB !important; }
+    html.light .gl-progress-track .gl-progress-shine,
+    html.light #exercise-progress-bar { background: linear-gradient(90deg, #3B82F6, #2563EB) !important; }
+    html.light #mastery-bar { background: linear-gradient(90deg, #F59E0B, #D97706) !important; }
+    html.light .gl-mastery-marker { background: #D97706 !important; }
+    html.light .gl-mastery-marker::before { color: #D97706 !important; }
+    html.light #mastery-pct { color: #6B7280 !important; }
+    html.light #exercise-counter { color: #6B7280 !important; }
+    html.light .gl-exercise-area { background: #FFFFFF !important; border-color: #E5E7EB !important; box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important; }
+    html.light .gl-exercise-area .gl-heading { color: #111827 !important; }
+    html.light .gl-exercise-area p { color: #1F2937 !important; }
+    html.light .gl-exercise-area .text-sky-400 { color: #2563EB !important; }
+    html.light .gl-exercise-area .bg-sky-500\/10 { background: #DBEAFE !important; }
+    html.light .gl-exercise-area .text-sky-400.bg-sky-500\/10,
+    html.light .gl-exercise-area span.text-sky-400 { color: #2563EB !important; }
     html.light .gl-breadcrumb { color: #6B7280 !important; }
     html.light .gl-breadcrumb:hover { color: #3B82F6 !important; }
 
@@ -323,7 +337,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
           <!-- Top row: close + question counter -->
           <div class="flex items-center gap-3 mb-3">
             <button id="exercise-close-btn" class="gl-muted hover:text-red-400 transition-colors text-lg leading-none p-1" title="დახურვა">✕</button>
-            <div class="flex-1 h-3.5 gl-progress-track bg-[#2A2A2C] rounded-full overflow-hidden relative">
+            <div class="flex-1 h-3.5 gl-progress-track rounded-full overflow-hidden relative" style="background:#2A2A2C">
               <div id="exercise-progress-bar" class="h-full bg-gradient-to-r from-sky-400 to-blue-500 rounded-full transition-all duration-500 ease-out gl-progress-shine" style="width:0%"></div>
             </div>
             <span id="exercise-counter" class="text-sm font-bold gl-muted tabular-nums min-w-[3rem] text-right">0/0</span>
@@ -331,7 +345,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
           <!-- Mastery bar with 70% marker -->
           <div class="flex items-center gap-3 mb-1">
             <span class="text-xs gl-muted font-semibold min-w-[24px]">🏆</span>
-            <div class="flex-1 h-4 gl-progress-track bg-[#2A2A2C] rounded-full overflow-hidden relative">
+            <div class="flex-1 h-4 gl-progress-track rounded-full overflow-hidden relative" style="background:#2A2A2C">
               <div class="gl-mastery-marker"></div>
               <div id="mastery-bar" class="h-full bg-gradient-to-r from-orange-400 to-amber-500 rounded-full transition-all duration-700 ease-out" style="width:0%"></div>
             </div>
@@ -585,7 +599,20 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
     var lessonVisible = isFree || !document.getElementById('lesson-content').classList.contains('hidden');
     if (!lessonVisible && !isReviewMode) { /* skip */ }
     else {
-    let current = 0, score = 0, answered = false, sessionXP = 0, streak = 0;
+    // Load saved progress
+    var progressKey = 'fluentge-exercise-progress-' + lessonSlug;
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(progressKey)); } catch(e) {}
+    let current = (saved && saved.current < exercises.length) ? saved.current : 0;
+    let score = (saved && saved.score) ? saved.score : 0;
+    let answered = false, sessionXP = 0, streak = 0;
+
+    function saveProgress() {
+      try { localStorage.setItem(progressKey, JSON.stringify({ current: current, score: score })); } catch(e) {}
+    }
+    function clearProgress() {
+      try { localStorage.removeItem(progressKey); } catch(e) {}
+    }
 
     const container = document.getElementById('exercise-container');
     const scoreContainer = document.getElementById('score-container');
@@ -614,6 +641,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
     continueBtn.addEventListener('click', function() {
       feedbackBar.classList.add('hidden');
       current++;
+      saveProgress();
       render();
     });
 
@@ -688,6 +716,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
     function render() {
       updateProgress();
       if (current >= exercises.length) {
+        clearProgress();
         container.classList.add('hidden');
         feedbackBar.classList.add('hidden');
         scoreContainer.classList.remove('hidden');
@@ -770,7 +799,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
       html += '<div class="grid gap-3">';
       ex.options.forEach(function(opt, i) {
         html += '<button class="grammar-opt-btn gl-btn-option gl-btn-3d flex items-center gap-4 text-left px-5 py-4 rounded-xl border-2 border-[#2E2E30] border-b-4 border-b-[#1a1a1c] bg-[#1C1C1E] hover:bg-[#2a2a2e] hover:border-[#3E3E40] transition-all font-medium cursor-pointer active:scale-[0.98]" data-val="' + opt + '">';
-        html += '<span class="gl-letter w-9 h-9 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#9CA3AF] shrink-0">' + (letters[i] || '') + '</span>';
+        html += '<span class="gl-letter w-9 h-9 rounded-lg flex items-center justify-center text-sm font-bold shrink-0" style="background:#2E2E30;color:#9CA3AF">' + (letters[i] || '') + '</span>';
         html += '<span class="text-base flex-1">' + opt + '</span>';
         html += '</button>';
       });
@@ -808,28 +837,41 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
       }
       updateMastery();
 
+      var isLight = document.documentElement.classList.contains('light');
       container.querySelectorAll('.grammar-opt-btn').forEach(function(b) {
         var letter = b.querySelector('.gl-letter');
         if (b.dataset.val === ex.answer) {
-          b.style.cssText = 'border-color:#22C55E !important;background:rgba(34,197,94,0.15) !important;border-bottom-color:#15803D !important;';
-          b.querySelector('span:last-child').style.color = '#22C55E';
-          if (letter) { letter.style.background = '#22C55E'; letter.style.color = '#FFF'; }
+          b.classList.add('answered-correct');
+          if (isLight) {
+            b.style.cssText = 'border-color:#22C55E;background:#F0FDF4;border-bottom-color:#15803D;pointer-events:none;';
+          } else {
+            b.style.cssText = 'border-color:#22C55E;background:rgba(34,197,94,0.15);border-bottom-color:#15803D;pointer-events:none;';
+          }
+          b.querySelector('span:last-child').style.color = isLight ? '#15803D' : '#22C55E';
+          if (letter) { letter.style.cssText = 'background:#22C55E !important;color:#FFF !important;'; }
         } else if (b === btn && !correct) {
-          b.style.cssText = 'border-color:#EF4444 !important;background:rgba(239,68,68,0.15) !important;border-bottom-color:#DC2626 !important;';
-          b.querySelector('span:last-child').style.color = '#EF4444';
-          if (letter) { letter.style.background = '#EF4444'; letter.style.color = '#FFF'; }
+          b.classList.add('answered-wrong');
+          if (isLight) {
+            b.style.cssText = 'border-color:#EF4444;background:#FEF2F2;border-bottom-color:#DC2626;pointer-events:none;';
+          } else {
+            b.style.cssText = 'border-color:#EF4444;background:rgba(239,68,68,0.15);border-bottom-color:#DC2626;pointer-events:none;';
+          }
+          b.querySelector('span:last-child').style.color = isLight ? '#DC2626' : '#EF4444';
+          if (letter) { letter.style.cssText = 'background:#EF4444 !important;color:#FFF !important;'; }
           b.style.animation = 'wrongShake 0.4s ease-out';
         } else {
-          b.style.opacity = '0.4';
+          b.classList.add('answered-other');
+          b.style.opacity = isLight ? '0.5' : '0.4';
+          b.style.pointerEvents = 'none';
+          if (isLight && letter) { letter.style.cssText = 'background:#D1D5DB !important;color:#6B7280 !important;'; }
         }
-        b.style.pointerEvents = 'none';
       });
 
       showFeedback(correct, ex.answer);
     }
 
     document.getElementById('retry-btn').addEventListener('click', function() {
-      current = 0; score = 0; sessionXP = 0; streak = 0; masteryUnlocked = false;
+      current = 0; score = 0; sessionXP = 0; streak = 0; masteryUnlocked = false; clearProgress();
       if (window.FluentGe) FluentGe.startTimer();
       scoreContainer.classList.add('hidden');
       container.classList.remove('hidden');

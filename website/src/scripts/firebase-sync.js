@@ -153,11 +153,15 @@ async function loadFromCloud(uid) {
   }
 }
 
+let lastSavedHash = '';
 async function saveToCloud(uid) {
   if (!db) return;
   try {
     const data = gatherLocalData();
+    const hash = JSON.stringify(data);
+    if (hash === lastSavedHash) return; // Skip if nothing changed
     data.lastSync = new Date().toISOString();
+    lastSavedHash = hash;
     await setDoc(doc(db, 'users', uid), { progress: data }, { merge: true });
     console.log('[FluentGe Sync] Saved to cloud');
   } catch (e) {
@@ -167,17 +171,20 @@ async function saveToCloud(uid) {
 
 // --- Auth listener ---
 
+let onBeforeUnload = null;
 onAuthStateChanged(auth, async (user) => {
   if (syncInterval) { clearInterval(syncInterval); syncInterval = null; }
+  if (onBeforeUnload) { window.removeEventListener('beforeunload', onBeforeUnload); onBeforeUnload = null; }
 
   if (user) {
     currentUid = user.uid;
     // Load from cloud on login
     await loadFromCloud(user.uid);
-    // Periodic save every 30s
-    syncInterval = setInterval(() => saveToCloud(user.uid), 30000);
+    // Periodic save every 60s (with hash dedup to avoid unnecessary writes)
+    syncInterval = setInterval(() => saveToCloud(user.uid), 60000);
     // Save on page unload
-    window.addEventListener('beforeunload', () => saveToCloud(user.uid));
+    onBeforeUnload = () => saveToCloud(user.uid);
+    window.addEventListener('beforeunload', onBeforeUnload);
   } else {
     currentUid = null;
   }

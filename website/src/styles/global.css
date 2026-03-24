@@ -199,8 +199,8 @@ html.light .hover\:bg-\[\#2A2A2C\]:hover {
 }
 
 /* Navigation */
-html.light header,
-html.light nav {
+html.light header.site-header,
+html.light nav.site-nav {
   background-color: #FFFFFF !important;
   border-color: #E5E7EB !important;
 }

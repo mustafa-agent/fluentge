@@ -63,6 +63,9 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 23 (Cron 4B, 5:30 PM)
+- [x] **CRITICAL BUG: /pricing/ → /premium/ broken links** — 3 links on grammar pages (grammar listing + individual lesson) pointed to `/pricing/` which returned 404. Fixed to `/premium/`. ✅
+
 ## ✅ COMPLETED — Mar 23 (Cron 4, 7:00 AM)
 - [x] **Blog prose light mode** — All 27 blog posts use `prose-invert` which had white text/links in light mode. Added CSS variable overrides for body, headings, links, bold, quotes, code, borders. Tip boxes also get light bg. ✅
 - [x] **Dashboard leaderboard light mode** — Non-top-3 avatar gradient backgrounds (`#3a3a3e`→`#2a2a2e`) now get light gray in light mode ✅
