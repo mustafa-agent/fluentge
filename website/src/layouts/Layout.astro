@@ -38,6 +38,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#1C1C1E" />
     <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="dns-prefetch" href="https://www.gstatic.com">
@@ -382,7 +383,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
         if (!db) return;
         try {
           const snap = await getDoc(doc(db, 'users', uid));
-          if (snap.exists()) { apply(gather(), snap.data().progress || {}); console.log('[Sync] Loaded from cloud'); }
+          if (snap.exists()) { apply(gather(), snap.data().progress || {}); lastSavedHash = JSON.stringify(gather()); console.log('[Sync] Loaded from cloud'); }
         } catch (e) { console.warn('[Sync] Load failed:', e.message); }
       }
       let lastSavedHash = '';
@@ -425,6 +426,8 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
               const cloud = snap.data().progress || {};
               if (!cloud.lastSync) return;
               apply(gather(), cloud);
+              // Update hash so next save skips if nothing changed locally
+              lastSavedHash = JSON.stringify(gather());
               // Update navbar XP display
               const xp = parseInt(localStorage.getItem('totalXP') || '0', 10);
               const xpStr = xp.toLocaleString();
