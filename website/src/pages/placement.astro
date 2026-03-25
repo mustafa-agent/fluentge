@@ -1,50 +1,84 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const questions = [
-  // A1 (1-6)
+const questionBank = [
+  // A1 (12 questions)
   { q: "What ___ your name?", opts: ["is", "are", "am", "do"], ans: 0, level: "A1" },
   { q: "She ___ a teacher.", opts: ["am", "is", "are", "be"], ans: 1, level: "A1" },
   { q: "I have ___ apple.", opts: ["a", "an", "the", "—"], ans: 1, level: "A1" },
   { q: "They ___ from Georgia.", opts: ["is", "am", "are", "be"], ans: 2, level: "A1" },
   { q: "This is ___ book.", opts: ["I", "me", "my", "mine"], ans: 2, level: "A1" },
   { q: "The cat is ___ the table.", opts: ["in", "on", "at", "to"], ans: 1, level: "A1" },
-  // A2 (7-12)
+  { q: "We ___ students.", opts: ["is", "am", "are", "be"], ans: 2, level: "A1" },
+  { q: "He ___ a car.", opts: ["have", "has", "having", "had"], ans: 1, level: "A1" },
+  { q: "I ___ like coffee.", opts: ["doesn't", "don't", "isn't", "not"], ans: 1, level: "A1" },
+  { q: "She ___ to school every day.", opts: ["go", "goes", "going", "gone"], ans: 1, level: "A1" },
+  { q: "___ you like pizza?", opts: ["Do", "Does", "Are", "Is"], ans: 0, level: "A1" },
+  { q: "There ___ two books on the desk.", opts: ["is", "am", "are", "be"], ans: 2, level: "A1" },
+
+  // A2 (12 questions)
   { q: "He ___ to work every day.", opts: ["go", "goes", "going", "gone"], ans: 1, level: "A2" },
   { q: "I ___ TV when she called.", opts: ["watch", "watched", "was watching", "have watched"], ans: 2, level: "A2" },
   { q: "There aren't ___ eggs in the fridge.", opts: ["some", "any", "no", "much"], ans: 1, level: "A2" },
   { q: "She ___ play the piano when she was young.", opts: ["can", "could", "may", "will"], ans: 1, level: "A2" },
   { q: "I went to the store ___ I bought some bread.", opts: ["but", "and", "so", "because"], ans: 1, level: "A2" },
   { q: "My brother is ___ than me.", opts: ["tall", "taller", "tallest", "more tall"], ans: 1, level: "A2" },
-  // B1 (13-18)
+  { q: "We ___ to Paris last summer.", opts: ["go", "goes", "went", "going"], ans: 2, level: "A2" },
+  { q: "She has ___ finished her homework.", opts: ["yet", "already", "still", "since"], ans: 1, level: "A2" },
+  { q: "I'm ___ at cooking than my sister.", opts: ["good", "better", "best", "more good"], ans: 1, level: "A2" },
+  { q: "You ___ wear a uniform at this school.", opts: ["must", "can", "may", "would"], ans: 0, level: "A2" },
+  { q: "He was born ___ 1995.", opts: ["at", "on", "in", "to"], ans: 2, level: "A2" },
+  { q: "What ___ you do yesterday?", opts: ["do", "did", "does", "doing"], ans: 1, level: "A2" },
+
+  // B1 (12 questions)
   { q: "If it rains, I ___ stay home.", opts: ["would", "will", "can", "may"], ans: 1, level: "B1" },
   { q: "She has lived here ___ 2015.", opts: ["for", "since", "from", "during"], ans: 1, level: "B1" },
   { q: "The book ___ by millions.", opts: ["has read", "has been read", "was reading", "is reading"], ans: 1, level: "B1" },
   { q: "If I were rich, I ___ travel the world.", opts: ["will", "would", "can", "shall"], ans: 1, level: "B1" },
   { q: "He told me that he ___ busy.", opts: ["is", "was", "will be", "has been"], ans: 1, level: "B1" },
   { q: "The woman ___ lives next door is a doctor.", opts: ["which", "who", "what", "whose"], ans: 1, level: "B1" },
-  // B2 (19-24)
+  { q: "I've been waiting ___ two hours.", opts: ["since", "for", "during", "while"], ans: 1, level: "B1" },
+  { q: "You should ___ harder for the exam.", opts: ["study", "to study", "studying", "studied"], ans: 0, level: "B1" },
+  { q: "The film ___ when we arrived at the cinema.", opts: ["already started", "had already started", "has already started", "was already starting"], ans: 1, level: "B1" },
+  { q: "She asked me where I ___.", opts: ["live", "lived", "am living", "do live"], ans: 1, level: "B1" },
+  { q: "I ___ English for five years now.", opts: ["study", "studied", "have been studying", "am studying"], ans: 2, level: "B1" },
+  { q: "He ___ to the gym three times a week.", opts: ["is going", "goes", "go", "going"], ans: 1, level: "B1" },
+
+  // B2 (12 questions)
   { q: "I wish I ___ more time.", opts: ["have", "had", "would have", "has"], ans: 1, level: "B2" },
   { q: "Not only ___ he late, but he also forgot the files.", opts: ["was", "did", "is", "has"], ans: 0, level: "B2" },
   { q: "She denied ___ the window.", opts: ["to break", "breaking", "break", "broke"], ans: 1, level: "B2" },
   { q: "If I had studied harder, I ___ the exam.", opts: ["passed", "would pass", "would have passed", "had passed"], ans: 2, level: "B2" },
   { q: "He ___ have left already; his car is gone.", opts: ["can", "must", "should", "would"], ans: 1, level: "B2" },
   { q: "I'm not used to ___ up so early.", opts: ["get", "getting", "got", "gets"], ans: 1, level: "B2" },
-  // C1 (25-30)
+  { q: "By this time next year, I ___ my degree.", opts: ["finish", "will finish", "will have finished", "am finishing"], ans: 2, level: "B2" },
+  { q: "She suggested ___ a break.", opts: ["to take", "taking", "take", "took"], ans: 1, level: "B2" },
+  { q: "The more you practice, the ___ you get.", opts: ["good", "better", "best", "well"], ans: 1, level: "B2" },
+  { q: "He apologized ___ being late.", opts: ["about", "for", "of", "to"], ans: 1, level: "B2" },
+  { q: "Hardly ___ I arrived when it started to rain.", opts: ["did", "had", "have", "was"], ans: 1, level: "B2" },
+  { q: "She ___ rather stay at home than go out.", opts: ["had", "would", "will", "should"], ans: 1, level: "B2" },
+
+  // C1 (12 questions)
   { q: "Seldom ___ such a talented musician.", opts: ["I have seen", "have I seen", "I saw", "did I see"], ans: 1, level: "C1" },
   { q: "Had I known, I ___ differently.", opts: ["would act", "would have acted", "acted", "had acted"], ans: 1, level: "C1" },
   { q: "The results are ___ with previous findings.", opts: ["consistent", "persistent", "resistant", "insistent"], ans: 0, level: "C1" },
   { q: "Under no circumstances ___ leave the building.", opts: ["you should", "should you", "you must", "must you"], ans: 1, level: "C1" },
   { q: "It is essential that he ___ on time.", opts: ["arrives", "arrive", "arrived", "arriving"], ans: 1, level: "C1" },
   { q: "The report, ___ was published yesterday, caused controversy.", opts: ["that", "which", "what", "it"], ans: 1, level: "C1" },
+  { q: "So ___ was the damage that the building was demolished.", opts: ["extensive", "extending", "extent", "extension"], ans: 0, level: "C1" },
+  { q: "Were it not ___ his help, we would have failed.", opts: ["about", "for", "with", "to"], ans: 1, level: "C1" },
+  { q: "She couldn't help but ___ at the joke.", opts: ["laugh", "laughing", "to laugh", "laughed"], ans: 0, level: "C1" },
+  { q: "No sooner ___ the door than the phone rang.", opts: ["I had opened", "had I opened", "I opened", "did I open"], ans: 1, level: "C1" },
+  { q: "The proposal was turned ___ by the committee.", opts: ["off", "out", "down", "up"], ans: 2, level: "C1" },
+  { q: "Little ___ he know what awaited him.", opts: ["does", "did", "had", "was"], ans: 1, level: "C1" },
 ];
 
 const levels = [
-  { code: "A1", label: "Beginner", labelKa: "დამწყები", color: "from-green-400 to-emerald-500", icon: "🌱", min: 0 },
-  { code: "A2", label: "Elementary", labelKa: "საწყისი", color: "from-sky-400 to-blue-500", icon: "📗", min: 7 },
-  { code: "B1", label: "Intermediate", labelKa: "საშუალო", color: "from-violet-400 to-purple-500", icon: "📘", min: 13 },
-  { code: "B2", label: "Upper-Intermediate", labelKa: "საშუალოზე მაღალი", color: "from-orange-400 to-amber-500", icon: "📙", min: 19 },
-  { code: "C1", label: "Advanced", labelKa: "მაღალი", color: "from-rose-400 to-pink-500", icon: "🏆", min: 25 },
+  { code: "A1", label: "Beginner", labelKa: "დამწყები", color: "from-green-400 to-emerald-500", icon: "🌱" },
+  { code: "A2", label: "Elementary", labelKa: "საწყისი", color: "from-sky-400 to-blue-500", icon: "📗" },
+  { code: "B1", label: "Intermediate", labelKa: "საშუალო", color: "from-violet-400 to-purple-500", icon: "📘" },
+  { code: "B2", label: "Upper-Intermediate", labelKa: "საშუალოზე მაღალი", color: "from-orange-400 to-amber-500", icon: "📙" },
+  { code: "C1", label: "Advanced", labelKa: "მაღალი", color: "from-rose-400 to-pink-500", icon: "🏆" },
 ];
 ---
 
@@ -93,7 +127,7 @@ const levels = [
         <div class="text-6xl mb-6">🎯</div>
         <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl font-bold mb-4">რა დონეზე ხარ?</h1>
         <p class="text-[#A0A09A] text-lg mb-2">უპასუხე 30 კითხვას და გაიგე შენი ინგლისურის დონე</p>
-        <p class="text-[#6B6B65] text-sm mb-8">A1 → C1 | დაახლოებით 5 წუთი</p>
+        <p class="text-[#6B6B65] text-sm mb-8">A1 → C1 | ადაპტური ტესტი | დაახლოებით 5 წუთი</p>
         <button id="pt-start" class="bg-sky-400 hover:bg-sky-500 text-white font-bold uppercase tracking-wide border-b-4 border-sky-500 active:border-b-0 rounded-xl px-10 py-4 text-lg transition-all">
           🚀 დაწყება
         </button>
@@ -105,7 +139,7 @@ const levels = [
         <div class="mb-8">
           <div class="flex items-center justify-between text-sm mb-2">
             <span class="text-[#6B6B65]">კითხვა <span id="pt-num">1</span>/30</span>
-            <span id="pt-level-badge" class="text-xs font-bold px-2 py-0.5 rounded-full bg-green-500/20 text-green-400">A1</span>
+            <span id="pt-level-badge" class="text-xs font-bold px-2 py-0.5 rounded-full bg-green-500/20 text-green-400">B1</span>
           </div>
           <div class="w-full h-3 bg-[#242426] rounded-full overflow-hidden">
             <div id="pt-progress" class="h-full bg-gradient-to-r from-sky-400 to-emerald-400 rounded-full transition-all duration-500" style="width: 0%"></div>
@@ -119,11 +153,9 @@ const levels = [
         </div>
 
         <!-- Answer options -->
-        <div id="pt-options" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-          <!-- filled by JS -->
-        </div>
+        <div id="pt-options" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6"></div>
 
-        <!-- Next button (hidden until answer) -->
+        <!-- Next button -->
         <div id="pt-next-wrap" class="hidden text-center">
           <button id="pt-next" class="bg-[#2E2E30] hover:bg-[#3E3E40] text-[#F5F5F0] font-bold border-b-4 border-[#1C1C1E] active:border-b-0 rounded-xl px-8 py-3 transition-all">
             შემდეგი →
@@ -152,17 +184,11 @@ const levels = [
           ))}
         </div>
 
-        <!-- Personalized Next Step -->
-        <div id="pt-next-step" class="mb-6">
-          <!-- filled by JS: a big personalized CTA based on level -->
-        </div>
+        <div id="pt-next-step" class="mb-6"></div>
 
-        <!-- Recommendations -->
         <div class="placement-card bg-[#242426] border border-[#2E2E30] rounded-2xl p-6 text-left mb-6">
           <h3 class="font-bold text-lg mb-4">📋 რეკომენდაციები</h3>
-          <div id="pt-recs" class="space-y-3">
-            <!-- filled by JS -->
-          </div>
+          <div id="pt-recs" class="space-y-3"></div>
         </div>
 
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
@@ -178,28 +204,82 @@ const levels = [
     </div>
   </section>
 
-  <script is:inline define:vars={{ questions, levels }}>
+  <script is:inline define:vars={{ questionBank, levels }}>
     (function() {
-      let current = 0, score = 0, answered = false;
-
+      const TOTAL_QUESTIONS = 30;
+      const LEVEL_ORDER = ["A1", "A2", "B1", "B2", "C1"];
       const $ = s => document.querySelector(s);
       const show = el => el.classList.remove('hidden');
       const hide = el => el.classList.add('hidden');
 
-      function renderQ() {
-        const q = questions[current];
-        $('#pt-num').textContent = current + 1;
-        $('#pt-progress').style.width = ((current) / questions.length * 100) + '%';
-        $('#pt-question').innerHTML = q.q.replace('___', '<span class="inline-block border-b-2 border-sky-400 px-2 mx-1 min-w-[60px]">___</span>');
-        $('#pt-level-badge').textContent = q.level;
+      // Adaptive state
+      let questionNum = 0;
+      let answered = false;
+      let currentLevel = 2; // index into LEVEL_ORDER, start at B1
+      let currentQuestion = null;
+      let usedIndices = new Set();
+      let levelStats = { A1: { correct: 0, total: 0 }, A2: { correct: 0, total: 0 }, B1: { correct: 0, total: 0 }, B2: { correct: 0, total: 0 }, C1: { correct: 0, total: 0 } };
 
-        const colors = { A1: 'bg-green-500/20 text-green-400', A2: 'bg-sky-500/20 text-sky-400', B1: 'bg-violet-500/20 text-violet-400', B2: 'bg-orange-500/20 text-orange-400', C1: 'bg-rose-500/20 text-rose-400' };
-        $('#pt-level-badge').className = 'text-xs font-bold px-2 py-0.5 rounded-full ' + (colors[q.level] || '');
+      // Group questions by level
+      const byLevel = {};
+      LEVEL_ORDER.forEach(l => byLevel[l] = []);
+      questionBank.forEach((q, i) => byLevel[q.level].push(i));
+
+      function pickQuestion() {
+        const lvl = LEVEL_ORDER[currentLevel];
+        // Try current level first, then adjacent levels
+        const tryOrder = [0, -1, 1, -2, 2];
+        for (const offset of tryOrder) {
+          const li = currentLevel + offset;
+          if (li < 0 || li >= LEVEL_ORDER.length) continue;
+          const pool = byLevel[LEVEL_ORDER[li]].filter(i => !usedIndices.has(i));
+          if (pool.length > 0) {
+            const idx = pool[Math.floor(Math.random() * pool.length)];
+            usedIndices.add(idx);
+            return questionBank[idx];
+          }
+        }
+        // Fallback: any unused question
+        for (let i = 0; i < questionBank.length; i++) {
+          if (!usedIndices.has(i)) { usedIndices.add(i); return questionBank[i]; }
+        }
+        return null;
+      }
+
+      function getEstimatedLevel() {
+        // Highest level with 60%+ correct (min 2 attempts)
+        let best = 0;
+        for (let i = LEVEL_ORDER.length - 1; i >= 0; i--) {
+          const s = levelStats[LEVEL_ORDER[i]];
+          if (s.total >= 2 && s.correct / s.total >= 0.6) { best = i; break; }
+        }
+        // If no level has 2+ attempts with 60%, use currentLevel heuristic
+        let found = false;
+        for (let i = 0; i < LEVEL_ORDER.length; i++) {
+          if (levelStats[LEVEL_ORDER[i]].total >= 2 && levelStats[LEVEL_ORDER[i]].correct / levelStats[LEVEL_ORDER[i]].total >= 0.6) { found = true; break; }
+        }
+        if (!found) return currentLevel;
+        return best;
+      }
+
+      const badgeColors = { A1: 'bg-green-500/20 text-green-400', A2: 'bg-sky-500/20 text-sky-400', B1: 'bg-violet-500/20 text-violet-400', B2: 'bg-orange-500/20 text-orange-400', C1: 'bg-rose-500/20 text-rose-400' };
+
+      function renderQ() {
+        currentQuestion = pickQuestion();
+        if (!currentQuestion) { showResult(); return; }
+        questionNum++;
+        $('#pt-num').textContent = questionNum;
+        $('#pt-progress').style.width = ((questionNum - 1) / TOTAL_QUESTIONS * 100) + '%';
+        $('#pt-question').innerHTML = currentQuestion.q.replace('___', '<span class="inline-block border-b-2 border-sky-400 px-2 mx-1 min-w-[60px]">___</span>');
+
+        const estLvl = LEVEL_ORDER[getEstimatedLevel()];
+        $('#pt-level-badge').textContent = estLvl;
+        $('#pt-level-badge').className = 'text-xs font-bold px-2 py-0.5 rounded-full ' + (badgeColors[estLvl] || '');
 
         const optsDiv = $('#pt-options');
         optsDiv.innerHTML = '';
         const letters = ['A', 'B', 'C', 'D'];
-        q.opts.forEach((opt, i) => {
+        currentQuestion.opts.forEach((opt, i) => {
           const btn = document.createElement('button');
           btn.className = 'pt-opt flex items-center gap-3 bg-[#242426] border-2 border-[#2E2E30] hover:border-sky-400/50 rounded-xl px-5 py-4 text-left transition-all font-medium min-h-[52px]';
           btn.innerHTML = `<span class="w-8 h-8 rounded-lg bg-[#2E2E30] flex items-center justify-center text-sm font-bold text-[#6B6B65]">${letters[i]}</span><span>${opt}</span>`;
@@ -213,7 +293,18 @@ const levels = [
       function selectAnswer(i) {
         if (answered) return;
         answered = true;
-        const q = questions[current];
+        const q = currentQuestion;
+        const correct = i === q.ans;
+
+        // Update stats
+        levelStats[q.level].total++;
+        if (correct) levelStats[q.level].correct++;
+
+        // Adapt: move level up/down
+        if (correct) { currentLevel = Math.min(currentLevel + 1, LEVEL_ORDER.length - 1); }
+        else { currentLevel = Math.max(currentLevel - 1, 0); }
+
+        // Visual feedback
         const btns = document.querySelectorAll('.pt-opt');
         btns.forEach((btn, j) => {
           btn.classList.remove('hover:border-sky-400/50');
@@ -222,14 +313,18 @@ const levels = [
             btn.querySelector('span:first-child').classList.add('bg-green-500', 'text-white');
             btn.querySelector('span:first-child').classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]');
           }
-          if (j === i && i !== q.ans) {
+          if (j === i && !correct) {
             btn.classList.add('border-rose-400', 'bg-rose-500/10');
             btn.querySelector('span:first-child').classList.add('bg-rose-500', 'text-white');
             btn.querySelector('span:first-child').classList.remove('bg-[#2E2E30]', 'text-[#6B6B65]');
           }
         });
-        if (i === q.ans) score++;
-        // No immediate feedback text — assessment mode (just color)
+
+        // Update badge in real-time
+        const estLvl = LEVEL_ORDER[getEstimatedLevel()];
+        $('#pt-level-badge').textContent = estLvl;
+        $('#pt-level-badge').className = 'text-xs font-bold px-2 py-0.5 rounded-full ' + (badgeColors[estLvl] || '');
+
         show($('#pt-next-wrap'));
       }
 
@@ -237,20 +332,25 @@ const levels = [
         hide($('#pt-quiz'));
         show($('#pt-result'));
 
-        // Determine level
-        let lvl = levels[0];
-        for (let i = levels.length - 1; i >= 0; i--) {
-          if (score >= levels[i].min) { lvl = levels[i]; break; }
+        // Determine final level: highest level with 60%+ (need at least 1 attempt)
+        let lvlIdx = 0;
+        for (let i = LEVEL_ORDER.length - 1; i >= 0; i--) {
+          const s = levelStats[LEVEL_ORDER[i]];
+          if (s.total >= 1 && s.correct / s.total >= 0.6) { lvlIdx = i; break; }
         }
+        const lvl = levels[lvlIdx];
+
+        // Count total correct
+        let totalCorrect = 0;
+        LEVEL_ORDER.forEach(l => totalCorrect += levelStats[l].correct);
 
         $('#pt-result-icon').textContent = lvl.icon;
         $('#pt-result-badge').textContent = lvl.code;
         $('#pt-result-badge').className = `inline-block text-4xl font-black bg-gradient-to-r ${lvl.color} bg-clip-text text-transparent mb-2`;
         $('#pt-result-label').textContent = `${lvl.label} — ${lvl.labelKa}`;
-        $('#pt-result-score').textContent = `${score}/30 სწორი პასუხი`;
+        $('#pt-result-score').textContent = `${totalCorrect}/${questionNum} სწორი პასუხი`;
 
-        // Color the level bars
-        const lvlIdx = levels.indexOf(lvl);
+        // Color level bars
         document.querySelectorAll('[data-level-bar]').forEach(bar => {
           const idx = parseInt(bar.dataset.levelBar);
           if (idx <= lvlIdx) {
@@ -299,22 +399,19 @@ const levels = [
           </a>`;
         });
 
-        // Save result
         localStorage.setItem('fluentge-placement-level', lvl.code);
-        localStorage.setItem('fluentge-placement-score', score);
+        localStorage.setItem('fluentge-placement-score', totalCorrect);
 
-        // Personalized next step CTA
         const nextSteps = {
-          A1: { emoji: '🌱', title: 'დაიწყე საბაზისო სიტყვებით', desc: 'მისალმებები, რიცხვები, ფერები — ყოველდღიური სიტყვები რომლებიც პირველ რიგში გჭირდება', btnText: '🚀 დაიწყე A1 დეკებით', link: '/flashcards/#study/greetings-farewells/classic', course: 1 },
-          A2: { emoji: '📗', title: 'გააძლიერე საწყისი ცოდნა', desc: 'ყოველდღიური ფრაზები, საკვები, მოგზაურობა — სიტყვები რომლებიც საუბარში დაგჭირდება', btnText: '🚀 გააგრძელე A2 დეკებით', link: '/flashcards/', course: 2 },
-          B1: { emoji: '📘', title: 'გააფართოვე ლექსიკა', desc: 'ბიზნესი, ტექნოლოგიები, ჯანმრთელობა — პროფესიული ლექსიკა', btnText: '🚀 გადადი B1 დეკებზე', link: '/flashcards/', course: 3 },
-          B2: { emoji: '📙', title: 'დახვეწე ენა', desc: 'იდიომები, ფრაზული ზმნები, აკადემიური ლექსიკა — თავისუფალი მეტყველება', btnText: '🚀 B2 ლექსიკა', link: '/flashcards/', course: 5 },
-          C1: { emoji: '🏆', title: 'შენ უკვე მაღალ დონეზე ხარ!', desc: 'გამოიყენე თამაშები, პოდკასტები და გრამატიკა ცოდნის შესანარჩუნებლად', btnText: '🎮 თამაშები და პოდკასტი', link: '/games/', course: 6 },
+          A1: { emoji: '🌱', title: 'დაიწყე საბაზისო სიტყვებით', desc: 'მისალმებები, რიცხვები, ფერები — ყოველდღიური სიტყვები რომლებიც პირველ რიგში გჭირდება', btnText: '🚀 დაიწყე A1 დეკებით', link: '/flashcards/#study/greetings-farewells/classic' },
+          A2: { emoji: '📗', title: 'გააძლიერე საწყისი ცოდნა', desc: 'ყოველდღიური ფრაზები, საკვები, მოგზაურობა — სიტყვები რომლებიც საუბარში დაგჭირდება', btnText: '🚀 გააგრძელე A2 დეკებით', link: '/flashcards/' },
+          B1: { emoji: '📘', title: 'გააფართოვე ლექსიკა', desc: 'ბიზნესი, ტექნოლოგიები, ჯანმრთელობა — პროფესიული ლექსიკა', btnText: '🚀 გადადი B1 დეკებზე', link: '/flashcards/' },
+          B2: { emoji: '📙', title: 'დახვეწე ენა', desc: 'იდიომები, ფრაზული ზმნები, აკადემიური ლექსიკა — თავისუფალი მეტყველება', btnText: '🚀 B2 ლექსიკა', link: '/flashcards/' },
+          C1: { emoji: '🏆', title: 'შენ უკვე მაღალ დონეზე ხარ!', desc: 'გამოიყენე თამაშები, პოდკასტები და გრამატიკა ცოდნის შესანარჩუნებლად', btnText: '🎮 თამაშები და პოდკასტი', link: '/games/' },
         };
         const ns = nextSteps[lvl.code] || nextSteps.A1;
-        const nsDiv = $('#pt-next-step');
-        nsDiv.innerHTML = `
-          <div class="bg-gradient-to-br ${lvl.color.replace('from-', 'from-').replace('to-', 'to-')} rounded-2xl p-6 text-center text-white mb-4 relative overflow-hidden">
+        $('#pt-next-step').innerHTML = `
+          <div class="bg-gradient-to-br ${lvl.color} rounded-2xl p-6 text-center text-white mb-4 relative overflow-hidden">
             <div class="absolute inset-0 bg-black/20"></div>
             <div class="relative">
               <div class="text-4xl mb-3">${ns.emoji}</div>
@@ -328,7 +425,6 @@ const levels = [
           <p class="text-center text-xs text-[#6B6B65]">ან აირჩიე ქვემოთ მოცემული ვარიანტებიდან</p>
         `;
 
-        // Update the main CTA link based on level
         const startBtn = $('#pt-start-learning');
         if (startBtn) startBtn.href = ns.link;
         $('#pt-progress').style.width = '100%';
@@ -337,12 +433,16 @@ const levels = [
       // Events
       $('#pt-start').onclick = () => { hide($('#pt-intro')); show($('#pt-quiz')); renderQ(); };
       $('#pt-next').onclick = () => {
-        current++;
-        if (current >= questions.length) showResult();
+        if (questionNum >= TOTAL_QUESTIONS) showResult();
         else renderQ();
       };
       $('#pt-retry').onclick = () => {
-        current = 0; score = 0;
+        questionNum = 0; currentLevel = 2; usedIndices.clear(); answered = false; currentQuestion = null;
+        LEVEL_ORDER.forEach(l => { levelStats[l] = { correct: 0, total: 0 }; });
+        document.querySelectorAll('[data-level-bar]').forEach(bar => {
+          bar.classList.remove('bg-green-400', 'bg-sky-400', 'bg-violet-400', 'bg-orange-400', 'bg-rose-400');
+          bar.classList.add('bg-[#2E2E30]');
+        });
         hide($('#pt-result')); show($('#pt-intro'));
       };
     })();

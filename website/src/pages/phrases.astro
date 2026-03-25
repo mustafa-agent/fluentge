@@ -116,7 +116,7 @@ const FREE_CATEGORIES = 5;
       {categories.map((cat, catIdx) => {
         const isPremium = catIdx >= FREE_CATEGORIES;
         return (
-        <div class={`category-block bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden ${isPremium ? 'premium-locked' : ''}`} data-cat-index={catIdx} data-premium={isPremium ? 'true' : 'false'}>
+        <div class={`category-block bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden ${isPremium ? 'premium-locked' : ''}`} data-cat-index={catIdx} data-premium={isPremium ? 'true' : 'false'} data-phrases={JSON.stringify(cat.phrases)}>
           <button class={`w-full p-5 border-b border-[#2E2E30] flex items-center justify-between cursor-pointer hover:bg-[#2A2A2C] transition-colors ${isPremium ? 'premium-toggle' : 'cat-toggle'}`}>
             <div class="flex items-center gap-3">
               <span class="text-2xl">{cat.icon}</span>
@@ -133,30 +133,54 @@ const FREE_CATEGORIES = 5;
               )}
             </div>
           </button>
-          <div class={`phrases-list hidden divide-y divide-white/5 ${isPremium ? 'premium-phrases-hidden' : ''}`}>
-            {cat.phrases.map((phrase) => (
-              <div class="phrase-item px-5 py-4 hover:bg-[#2A2A2C] transition-colors" data-level={phrase.level} data-en={phrase.english.toLowerCase()} data-ka={phrase.georgian.toLowerCase()}>
-                <div class="flex items-start gap-3">
-                  <button class="play-btn mt-0.5 w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-full bg-[#D4A853]/20 text-[#D4A853] hover:bg-[#D4A853]/40 transition-colors text-lg" data-audio={`/audio/phrases/${phrase.id}.mp3`} title="მოუსმინე">
-                    🔊
-                  </button>
-                  <div class="flex-1">
-                    <div class="flex items-start justify-between gap-2">
-                      <div>
-                        <p class="text-[#C8C8C0] font-medium text-base sm:text-lg break-words">{phrase.english}</p>
-                        <p class="text-[#8B8B85] mt-1">{phrase.georgian}</p>
+          <!-- Category content (tabs + panels) -->
+          <div class="cat-content hidden">
+            <!-- Mode tabs -->
+            <div class="mode-tabs flex border-b border-[#2E2E30] overflow-x-auto">
+              <button class="mode-tab active flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#D4A853] border-b-2 border-[#D4A853] whitespace-nowrap" data-mode="phrases">📖 ფრაზები</button>
+              <button class="mode-tab flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#6B6B65] border-b-2 border-transparent hover:text-[#C8C8C0] whitespace-nowrap" data-mode="quiz">🎮 Quiz</button>
+              <button class="mode-tab flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#6B6B65] border-b-2 border-transparent hover:text-[#C8C8C0] whitespace-nowrap" data-mode="listen">🎧 მოსმენა</button>
+              <button class="mode-tab flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#6B6B65] border-b-2 border-transparent hover:text-[#C8C8C0] whitespace-nowrap" data-mode="match">🔀 დაწყვილება</button>
+            </div>
+            <!-- Phrases panel -->
+            <div class="mode-panel active" data-panel="phrases">
+              <div class={`phrases-list divide-y divide-white/5 ${isPremium ? 'premium-phrases-hidden' : ''}`}>
+                {cat.phrases.map((phrase) => (
+                  <div class="phrase-item px-5 py-4 hover:bg-[#2A2A2C] transition-colors" data-level={phrase.level} data-en={phrase.english.toLowerCase()} data-ka={phrase.georgian.toLowerCase()}>
+                    <div class="flex items-start gap-3">
+                      <button class="play-btn mt-0.5 w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-full bg-[#D4A853]/20 text-[#D4A853] hover:bg-[#D4A853]/40 transition-colors text-lg" data-audio={`/audio/phrases/${phrase.id}.mp3`} title="მოუსმინე">
+                        🔊
+                      </button>
+                      <div class="flex-1">
+                        <div class="flex items-start justify-between gap-2">
+                          <div>
+                            <p class="text-[#C8C8C0] font-medium text-base sm:text-lg break-words">{phrase.english}</p>
+                            <p class="text-[#8B8B85] mt-1">{phrase.georgian}</p>
+                          </div>
+                        </div>
+                        {phrase.literal && <p class="text-xs text-[#5B5B55] mt-1 italic">პირდაპირი: {phrase.literal}</p>}
+                        <div class="flex items-center gap-2 mt-2">
+                          {phrase.level && <span class={`text-xs px-2 py-0.5 rounded-full ${phrase.level === 'A1' ? 'bg-green-900/30 text-green-400' : phrase.level === 'A2' ? 'bg-blue-900/30 text-blue-400' : phrase.level === 'B1' ? 'bg-yellow-900/30 text-yellow-400' : phrase.level === 'B2' ? 'bg-orange-900/30 text-orange-400' : 'bg-red-900/30 text-red-400'}`}>{phrase.level}</span>}
+                          {phrase.context && <span class="text-xs text-[#5B5B55]">📌 {phrase.context}</span>}
+                        </div>
                       </div>
-<!-- mark-as-done removed -->
-                    </div>
-                    {phrase.literal && <p class="text-xs text-[#5B5B55] mt-1 italic">პირდაპირი: {phrase.literal}</p>}
-                    <div class="flex items-center gap-2 mt-2">
-                      {phrase.level && <span class={`text-xs px-2 py-0.5 rounded-full ${phrase.level === 'A1' ? 'bg-green-900/30 text-green-400' : phrase.level === 'A2' ? 'bg-blue-900/30 text-blue-400' : phrase.level === 'B1' ? 'bg-yellow-900/30 text-yellow-400' : phrase.level === 'B2' ? 'bg-orange-900/30 text-orange-400' : 'bg-red-900/30 text-red-400'}`}>{phrase.level}</span>}
-                      {phrase.context && <span class="text-xs text-[#5B5B55]">📌 {phrase.context}</span>}
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <!-- Quiz panel -->
+            <div class="mode-panel" data-panel="quiz" style="display:none;">
+              <div class="quiz-container p-5"></div>
+            </div>
+            <!-- Listen panel -->
+            <div class="mode-panel" data-panel="listen" style="display:none;">
+              <div class="listen-container p-5"></div>
+            </div>
+            <!-- Match panel -->
+            <div class="mode-panel" data-panel="match" style="display:none;">
+              <div class="match-container p-5"></div>
+            </div>
           </div>
         </div>
         );
@@ -181,8 +205,329 @@ const FREE_CATEGORIES = 5;
   </div>
 </Layout>
 
+<style>
+  .mode-tab{transition:all .2s}
+  .mode-tab.active{color:#D4A853;border-bottom-color:#D4A853}
+  @keyframes popCorrect{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+  @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+  .anim-correct{animation:popCorrect .4s ease}
+  .anim-wrong{animation:shake .4s ease}
+  .quiz-option{transition:all .2s;cursor:pointer}
+  .quiz-option:hover{border-color:#D4A853}
+  .quiz-option.correct{background:#166534!important;border-color:#22c55e!important;color:#fff!important}
+  .quiz-option.wrong{background:#991b1b!important;border-color:#ef4444!important;color:#fff!important}
+  .match-item{transition:all .2s;cursor:pointer}
+  .match-item.selected{border-color:#D4A853!important;background:rgba(212,168,83,.15)!important}
+  .match-item.matched{opacity:.5;pointer-events:none;border-color:#22c55e!important;background:rgba(22,101,52,.2)!important}
+  .match-item.wrong-flash{border-color:#ef4444!important;background:rgba(153,27,27,.2)!important}
+  .progress-bar{height:6px;border-radius:3px;background:#2E2E30;overflow:hidden}
+  .progress-fill{height:100%;background:#D4A853;border-radius:3px;transition:width .3s}
+  .streak-badge{display:inline-flex;align-items:center;gap:4px;background:rgba(212,168,83,.15);color:#D4A853;padding:2px 10px;border-radius:999px;font-size:13px}
+  /* Light mode */
+  html.light .quiz-option{background:#f5f5f4;border-color:#d6d3d1;color:#1c1917}
+  html.light .quiz-option:hover{border-color:#D4A853}
+  html.light .quiz-option.correct{background:#166534!important;color:#fff!important}
+  html.light .quiz-option.wrong{background:#991b1b!important;color:#fff!important}
+  html.light .match-item{background:#f5f5f4;border-color:#d6d3d1;color:#1c1917}
+  html.light .match-item.selected{border-color:#D4A853!important;background:rgba(212,168,83,.15)!important}
+  html.light .progress-bar{background:#d6d3d1}
+  html.light .mode-tab{color:#78716c}
+  html.light .mode-tab.active{color:#D4A853}
+</style>
+
 <script>
   let currentAudio: HTMLAudioElement | null = null;
+  const FREE_CATEGORIES = 5;
+
+  function speakEnglish(text: string) {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = 0.85;
+    speechSynthesis.speak(u);
+  }
+
+  function shuffle<T>(arr: T[]): T[] {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function getPhrases(block: Element): any[] {
+    try { return JSON.parse((block as HTMLElement).dataset.phrases || '[]'); } catch { return []; }
+  }
+
+  function pickRandom<T>(arr: T[], n: number, exclude?: T): T[] {
+    const filtered = exclude ? arr.filter(x => x !== exclude) : [...arr];
+    return shuffle(filtered).slice(0, n);
+  }
+
+  // ---- QUIZ ----
+  function initQuiz(block: Element) {
+    const phrases = getPhrases(block);
+    if (phrases.length < 4) return;
+    const container = block.querySelector('.quiz-container')!;
+    let questions: any[] = [];
+    let current = 0, score = 0, streak = 0, bestStreak = 0;
+    const total = Math.min(10, phrases.length);
+
+    function generateQuestions() {
+      const picked = shuffle(phrases).slice(0, total);
+      questions = picked.map(p => {
+        const isGeoToEng = Math.random() > 0.5;
+        const wrongPool = phrases.filter(x => x.id !== p.id);
+        const wrongs = shuffle(wrongPool).slice(0, 3);
+        const options = shuffle([
+          ...(isGeoToEng ? [p.english] : [p.georgian]),
+          ...wrongs.map(w => isGeoToEng ? w.english : w.georgian)
+        ]);
+        return { phrase: p, isGeoToEng, options, correct: isGeoToEng ? p.english : p.georgian };
+      });
+    }
+
+    function render() {
+      if (current >= questions.length) {
+        container.innerHTML = `
+          <div class="text-center py-8">
+            <div class="text-5xl mb-4">${score >= total * 0.8 ? '🏆' : score >= total * 0.5 ? '👍' : '📚'}</div>
+            <h3 class="text-2xl font-bold text-[#C8C8C0] mb-2">შედეგი: ${score}/${total}</h3>
+            <p class="text-[#8B8B85] mb-1">საუკეთესო სერია: ${bestStreak} 🔥</p>
+            <p class="text-[#8B8B85] mb-6">${score >= total * 0.8 ? 'შესანიშნავი!' : score >= total * 0.5 ? 'კარგია, გააგრძელე!' : 'გაიმეორე კიდევ ერთხელ!'}</p>
+            <button class="quiz-restart bg-[#D4A853] text-black font-bold py-3 px-8 rounded-xl hover:bg-[#C49A48]">🔄 თავიდან</button>
+          </div>`;
+        container.querySelector('.quiz-restart')?.addEventListener('click', () => { current = 0; score = 0; streak = 0; bestStreak = 0; generateQuestions(); render(); });
+        return;
+      }
+      const q = questions[current];
+      const prompt = q.isGeoToEng ? q.phrase.georgian : q.phrase.english;
+      const dir = q.isGeoToEng ? 'ქართული → ინგლისური' : 'ინგლისური → ქართული';
+      container.innerHTML = `
+        <div class="mb-4 flex items-center justify-between flex-wrap gap-2">
+          <span class="text-xs text-[#6B6B65]">${dir}</span>
+          <div class="flex items-center gap-3">
+            ${streak >= 2 ? `<span class="streak-badge">🔥 ${streak}</span>` : ''}
+            <span class="text-sm text-[#C8C8C0] font-medium">${current + 1}/${total}</span>
+          </div>
+        </div>
+        <div class="progress-bar mb-6"><div class="progress-fill" style="width:${(current / total) * 100}%"></div></div>
+        <div class="bg-[#1C1C1E] rounded-xl p-5 mb-6 text-center">
+          <p class="text-xl font-bold text-[#C8C8C0]">${prompt}</p>
+        </div>
+        <div class="space-y-3" id="quizOptions">
+          ${q.options.map((opt: string, i: number) => `
+            <button class="quiz-option w-full text-left p-4 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0]" data-idx="${i}">${opt}</button>
+          `).join('')}
+        </div>`;
+      container.querySelectorAll('.quiz-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (container.querySelector('.quiz-option.correct,.quiz-option.wrong')) return;
+          const picked = btn.textContent!.trim();
+          const isCorrect = picked === q.correct;
+          if (isCorrect) { score++; streak++; bestStreak = Math.max(bestStreak, streak); btn.classList.add('correct', 'anim-correct'); }
+          else { streak = 0; btn.classList.add('wrong', 'anim-wrong'); container.querySelectorAll('.quiz-option').forEach(b => { if (b.textContent!.trim() === q.correct) b.classList.add('correct'); }); }
+          setTimeout(() => { current++; render(); }, 1200);
+        });
+      });
+    }
+
+    generateQuestions();
+    render();
+  }
+
+  // ---- LISTEN ----
+  function initListen(block: Element) {
+    const phrases = getPhrases(block);
+    if (phrases.length < 4) return;
+    const container = block.querySelector('.listen-container')!;
+    let questions: any[] = [];
+    let current = 0, score = 0, streak = 0, bestStreak = 0;
+    const total = Math.min(10, phrases.length);
+
+    function generate() {
+      const picked = shuffle(phrases).slice(0, total);
+      questions = picked.map(p => {
+        const wrongs = shuffle(phrases.filter(x => x.id !== p.id)).slice(0, 3);
+        const options = shuffle([p.georgian, ...wrongs.map(w => w.georgian)]);
+        return { phrase: p, options, correct: p.georgian };
+      });
+    }
+
+    function render() {
+      if (current >= questions.length) {
+        container.innerHTML = `
+          <div class="text-center py-8">
+            <div class="text-5xl mb-4">${score >= total * 0.8 ? '🎧' : '📚'}</div>
+            <h3 class="text-2xl font-bold text-[#C8C8C0] mb-2">შედეგი: ${score}/${total}</h3>
+            <p class="text-[#8B8B85] mb-1">საუკეთესო სერია: ${bestStreak} 🔥</p>
+            <button class="listen-restart bg-[#D4A853] text-black font-bold py-3 px-8 rounded-xl hover:bg-[#C49A48] mt-4">🔄 თავიდან</button>
+          </div>`;
+        container.querySelector('.listen-restart')?.addEventListener('click', () => { current = 0; score = 0; streak = 0; bestStreak = 0; generate(); render(); });
+        return;
+      }
+      const q = questions[current];
+      container.innerHTML = `
+        <div class="mb-4 flex items-center justify-between flex-wrap gap-2">
+          <span class="text-xs text-[#6B6B65]">მოუსმინე და აირჩიე სწორი თარგმანი</span>
+          <div class="flex items-center gap-3">
+            ${streak >= 2 ? `<span class="streak-badge">🔥 ${streak}</span>` : ''}
+            <span class="text-sm text-[#C8C8C0] font-medium">${current + 1}/${total}</span>
+          </div>
+        </div>
+        <div class="progress-bar mb-6"><div class="progress-fill" style="width:${(current / total) * 100}%"></div></div>
+        <div class="text-center mb-6">
+          <button class="listen-play-btn w-20 h-20 rounded-full bg-[#D4A853]/20 text-[#D4A853] text-4xl hover:bg-[#D4A853]/40 transition-colors mx-auto flex items-center justify-center">🔊</button>
+          <p class="text-xs text-[#6B6B65] mt-2">დააჭირე მოსასმენად</p>
+        </div>
+        <div class="space-y-3">
+          ${q.options.map((opt: string, i: number) => `
+            <button class="quiz-option w-full text-left p-4 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0]" data-idx="${i}">${opt}</button>
+          `).join('')}
+        </div>`;
+      // Auto-play
+      setTimeout(() => speakEnglish(q.phrase.english), 300);
+      container.querySelector('.listen-play-btn')?.addEventListener('click', () => speakEnglish(q.phrase.english));
+      container.querySelectorAll('.quiz-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (container.querySelector('.quiz-option.correct,.quiz-option.wrong')) return;
+          const picked = btn.textContent!.trim();
+          const isCorrect = picked === q.correct;
+          if (isCorrect) { score++; streak++; bestStreak = Math.max(bestStreak, streak); btn.classList.add('correct', 'anim-correct'); }
+          else { streak = 0; btn.classList.add('wrong', 'anim-wrong'); container.querySelectorAll('.quiz-option').forEach(b => { if (b.textContent!.trim() === q.correct) b.classList.add('correct'); }); }
+          setTimeout(() => { current++; render(); }, 1200);
+        });
+      });
+    }
+
+    generate();
+    render();
+  }
+
+  // ---- MATCH ----
+  function initMatch(block: Element) {
+    const phrases = getPhrases(block);
+    if (phrases.length < 5) return;
+    const container = block.querySelector('.match-container')!;
+    let pairs: any[] = [], selectedLeft: number | null = null, selectedRight: number | null = null;
+    let matched = new Set<number>(), score = 0, errors = 0, startTime = 0, timerInterval: any = null;
+
+    function start() {
+      pairs = shuffle(phrases).slice(0, 5);
+      matched = new Set(); score = 0; errors = 0; selectedLeft = null; selectedRight = null;
+      startTime = Date.now();
+      render();
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = setInterval(updateTimer, 100);
+    }
+
+    function updateTimer() {
+      const el = container.querySelector('.match-timer');
+      if (el) { const s = ((Date.now() - startTime) / 1000).toFixed(1); el.textContent = s + 'წმ'; }
+    }
+
+    function render() {
+      const leftOrder = shuffle(pairs.map((_, i) => i));
+      const rightOrder = shuffle(pairs.map((_, i) => i));
+      container.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-sm text-[#C8C8C0]">დაწყვილებული: ${matched.size}/${pairs.length}</span>
+          <div class="flex items-center gap-3">
+            <span class="text-sm text-[#6B6B65] match-timer">0.0წმ</span>
+            <span class="text-sm text-[#C8C8C0]">⭐ ${score}</span>
+          </div>
+        </div>
+        <div class="progress-bar mb-5"><div class="progress-fill" style="width:${(matched.size / pairs.length) * 100}%"></div></div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="space-y-2">
+            ${leftOrder.map(i => `<button class="match-item match-left w-full p-3 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] text-sm text-left ${matched.has(i) ? 'matched' : ''}" data-pair="${i}">${pairs[i].english}</button>`).join('')}
+          </div>
+          <div class="space-y-2">
+            ${rightOrder.map(i => `<button class="match-item match-right w-full p-3 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] text-sm text-left ${matched.has(i) ? 'matched' : ''}" data-pair="${i}">${pairs[i].georgian}</button>`).join('')}
+          </div>
+        </div>`;
+
+      container.querySelectorAll('.match-left:not(.matched)').forEach(btn => {
+        btn.addEventListener('click', () => {
+          container.querySelectorAll('.match-left').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          selectedLeft = parseInt((btn as HTMLElement).dataset.pair!);
+          checkMatch();
+        });
+      });
+      container.querySelectorAll('.match-right:not(.matched)').forEach(btn => {
+        btn.addEventListener('click', () => {
+          container.querySelectorAll('.match-right').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          selectedRight = parseInt((btn as HTMLElement).dataset.pair!);
+          checkMatch();
+        });
+      });
+    }
+
+    function checkMatch() {
+      if (selectedLeft === null || selectedRight === null) return;
+      const l = selectedLeft, r = selectedRight;
+      selectedLeft = null; selectedRight = null;
+      if (l === r) {
+        score++;
+        matched.add(l);
+        container.querySelectorAll(`.match-left[data-pair="${l}"],.match-right[data-pair="${r}"]`).forEach(el => { el.classList.add('matched', 'anim-correct'); el.classList.remove('selected'); });
+        if (matched.size === pairs.length) {
+          clearInterval(timerInterval);
+          const time = ((Date.now() - startTime) / 1000).toFixed(1);
+          setTimeout(() => {
+            container.innerHTML = `
+              <div class="text-center py-8">
+                <div class="text-5xl mb-4">🎉</div>
+                <h3 class="text-2xl font-bold text-[#C8C8C0] mb-2">დასრულებულია!</h3>
+                <p class="text-[#8B8B85] mb-1">⏱ ${time} წამი · ❌ ${errors} შეცდომა</p>
+                <button class="match-restart bg-[#D4A853] text-black font-bold py-3 px-8 rounded-xl hover:bg-[#C49A48] mt-4">🔄 თავიდან</button>
+              </div>`;
+            container.querySelector('.match-restart')?.addEventListener('click', start);
+          }, 600);
+        }
+      } else {
+        errors++;
+        const leftEl = container.querySelector(`.match-left[data-pair="${l}"]`);
+        const rightEl = container.querySelector(`.match-right[data-pair="${r}"]`);
+        [leftEl, rightEl].forEach(el => { if (el) { el.classList.add('wrong-flash', 'anim-wrong'); el.classList.remove('selected'); } });
+        setTimeout(() => { [leftEl, rightEl].forEach(el => { if (el) el.classList.remove('wrong-flash'); }); }, 600);
+      }
+    }
+
+    start();
+  }
+
+  // ---- TAB SWITCHING ----
+  document.querySelectorAll('.category-block').forEach(block => {
+    const isPremium = (block as HTMLElement).dataset.premium === 'true';
+    const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
+    const tabs = block.querySelectorAll('.mode-tab');
+    const panels = block.querySelectorAll('.mode-panel');
+    const initialized: Record<string, boolean> = {};
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const mode = (tab as HTMLElement).dataset.mode!;
+        // Premium lock on practice modes
+        if (isPremium && !isPremiumUser && mode !== 'phrases') {
+          document.getElementById('premiumModal')?.classList.remove('hidden');
+          return;
+        }
+        tabs.forEach(t => { t.classList.remove('active'); (t as HTMLElement).style.borderBottomColor = 'transparent'; });
+        tab.classList.add('active'); (tab as HTMLElement).style.borderBottomColor = '#D4A853';
+        panels.forEach(p => { (p as HTMLElement).style.display = 'none'; });
+        const panel = block.querySelector(`[data-panel="${mode}"]`) as HTMLElement;
+        if (panel) panel.style.display = '';
+        // Init practice modes lazily
+        if (mode === 'quiz' && !initialized.quiz) { initialized.quiz = true; initQuiz(block); }
+        if (mode === 'listen' && !initialized.listen) { initialized.listen = true; initListen(block); }
+        if (mode === 'match' && !initialized.match) { initialized.match = true; initMatch(block); }
+      });
+    });
+  });
 
   // Play audio
   document.querySelectorAll('.play-btn').forEach(btn => {
@@ -193,14 +538,8 @@ const FREE_CATEGORIES = 5;
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       currentAudio = new Audio(src);
       currentAudio.play().catch(() => {
-        // Fallback to Web Speech API
         const text = btn.closest('.phrase-item')?.querySelector('.text-lg')?.textContent;
-        if (text) {
-          const u = new SpeechSynthesisUtterance(text);
-          u.lang = 'en-US';
-          u.rate = 0.85;
-          speechSynthesis.speak(u);
-        }
+        if (text) speakEnglish(text);
       });
     });
   });
@@ -209,10 +548,10 @@ const FREE_CATEGORIES = 5;
   document.querySelectorAll('.cat-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
       const block = btn.closest('.category-block');
-      const list = block?.querySelector('.phrases-list');
+      const content = block?.querySelector('.cat-content');
       const arrow = block?.querySelector('.cat-arrow');
-      if (list && arrow) {
-        list.classList.toggle('hidden');
+      if (content && arrow) {
+        content.classList.toggle('hidden');
         arrow.classList.toggle('rotate-180');
       }
     });
@@ -221,28 +560,21 @@ const FREE_CATEGORIES = 5;
   // Unlock premium for premium users
   const isPremiumUser = localStorage.getItem('fluentge-premium') === 'true';
   if (isPremiumUser) {
-    document.querySelectorAll('.premium-locked').forEach(el => {
-      el.classList.remove('premium-locked');
-    });
-    document.querySelectorAll('.premium-phrases-hidden').forEach(el => {
-      el.classList.remove('premium-phrases-hidden');
-    });
+    document.querySelectorAll('.premium-locked').forEach(el => el.classList.remove('premium-locked'));
+    document.querySelectorAll('.premium-phrases-hidden').forEach(el => el.classList.remove('premium-phrases-hidden'));
     document.querySelectorAll('.premium-toggle').forEach(btn => {
       btn.classList.remove('premium-toggle');
       btn.classList.add('cat-toggle');
-      // Fix label colors
       const title = btn.querySelector('h2');
       if (title) { title.classList.remove('text-[#6B6B65]'); title.classList.add('text-[#C8C8C0]'); }
-      // Replace lock badge with arrow
       const badge = btn.querySelector('.text-\\[\\#D4A853\\]');
       if (badge) { badge.outerHTML = '<svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>'; }
     });
-    // Re-bind cat-toggle for newly unlocked
     document.querySelectorAll('.category-block[data-premium="true"] .cat-toggle').forEach(btn => {
       btn.addEventListener('click', () => {
         const block = btn.closest('.category-block');
-        const list = block?.querySelector('.phrases-list');
-        if (list) list.classList.toggle('hidden');
+        const content = block?.querySelector('.cat-content');
+        if (content) content.classList.toggle('hidden');
       });
     });
   }
@@ -250,16 +582,10 @@ const FREE_CATEGORIES = 5;
   // Premium categories → show paywall
   const modal = document.getElementById('premiumModal');
   document.querySelectorAll('.premium-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      modal?.classList.remove('hidden');
-    });
+    btn.addEventListener('click', () => modal?.classList.remove('hidden'));
   });
-  document.getElementById('closeModal')?.addEventListener('click', () => {
-    modal?.classList.add('hidden');
-  });
-  modal?.addEventListener('click', (e) => {
-    if (e.target === modal) modal.classList.add('hidden');
-  });
+  document.getElementById('closeModal')?.addEventListener('click', () => modal?.classList.add('hidden'));
+  modal?.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
 
   // Search
   const searchInput = document.getElementById('searchInput') as HTMLInputElement;
@@ -271,14 +597,13 @@ const FREE_CATEGORIES = 5;
       const match = !q || en.includes(q) || ka.includes(q);
       (el as HTMLElement).style.display = match ? '' : 'none';
     });
-    // Show categories that have visible phrases
     document.querySelectorAll('.category-block').forEach(block => {
       const list = block.querySelector('.phrases-list');
       if (!list) return;
       const visiblePhrases = list.querySelectorAll('.phrase-item:not([style*="display: none"])');
       (block as HTMLElement).style.display = visiblePhrases.length > 0 || !q ? '' : 'none';
       if (q && visiblePhrases.length > 0) {
-        list.classList.remove('hidden');
+        block.querySelector('.cat-content')?.classList.remove('hidden');
         block.querySelector('.cat-arrow')?.classList.add('rotate-180');
       }
     });
@@ -293,7 +618,6 @@ const FREE_CATEGORIES = 5;
       });
       btn.classList.add('active', 'bg-[#D4A853]', 'text-black', 'font-medium');
       btn.classList.remove('bg-[#242426]', 'text-[#C8C8C0]');
-      
       const level = (btn as HTMLElement).dataset.level;
       document.querySelectorAll('.phrase-item').forEach(el => {
         const phraseLevel = (el as HTMLElement).dataset.level;
@@ -308,6 +632,4 @@ const FREE_CATEGORIES = 5;
       });
     });
   });
-
-  // Mark-as-done system removed — progress tracked automatically
 </script>

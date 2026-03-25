@@ -63,6 +63,10 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 24 (Cron 4B, 5:30 PM)
+- [x] **BUG: Firestore sync feedback loop** — onSnapshot→apply() modified localStorage, making hash differ on next save, causing writes every 60s even when idle. Fixed by updating `lastSavedHash` after both `apply()` and `loadCloud()`. Reduces Firestore writes from ~60/hr to near-zero when idle. ✅
+- [x] **Deprecation: apple-mobile-web-app-capable** — Added `mobile-web-app-capable` meta tag alongside the Apple one ✅
+
 ## ✅ COMPLETED — Mar 24 (Cron 4, 7:00 AM)
 - [x] **CRITICAL BUG: Firestore resource-exhausted error** — Both sync scripts (Layout.astro + flashcard firebase-sync.ts) were writing to Firestore every 30-60s even when data hadn't changed, causing "Write stream exhausted maximum allowed queued writes" errors. Added hash deduplication to skip unchanged saves. Also fixed beforeunload listener leak in website sync, increased onSnapshot loop guard to 5s. ✅
 

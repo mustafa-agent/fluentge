@@ -47,7 +47,7 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
     <title>{title}</title>
-    <script is:inline>if(localStorage.getItem('fluentge-theme')==='light')document.documentElement.classList.add('light');</script>
+    <script is:inline>if(localStorage.getItem('fluentge-theme')==='light'){document.documentElement.classList.add('light');document.querySelector('meta[name="theme-color"]').content='#F0F2F5';}</script>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -237,6 +237,8 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           var isLight = document.documentElement.classList.contains('light');
           localStorage.setItem('fluentge-theme', isLight ? 'light' : 'dark');
           btn.textContent = isLight ? '🌙' : '☀️';
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.content = isLight ? '#F0F2F5' : '#1C1C1E';
           // Update active nav link colors for new theme
           var activeColor = isLight ? '#1a1a2e' : 'white';
           document.querySelectorAll('.nav-link, .nav-link-mobile').forEach(function(a) {

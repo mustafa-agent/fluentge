@@ -222,29 +222,44 @@ function saveFreeProgress(deckId: string, mode: string, completedCards: string[]
 
 let currentAudio: HTMLAudioElement | null = null;
 
+// Preload voices for better quality
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+}
+
 function speak(text: string, lang: string = 'en-US') {
   // Stop any playing audio
   if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
 
-  // Try Google Translate TTS first (much better quality)
   const tl = lang.startsWith('ka') ? 'ka' : 'en';
-  const encoded = encodeURIComponent(text.slice(0, 200));
-  const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encoded}&tl=${tl}&client=tw-ob`;
-  const audio = new Audio(url);
-  currentAudio = audio;
-  audio.play().catch(() => {
-    // Fallback to browser TTS
-    if (!('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel();
+
+  // Use high-quality browser voices (prioritize premium/natural voices)
+  if ('speechSynthesis' in window) {
     const u = new SpeechSynthesisUtterance(text);
     u.lang = lang;
     u.rate = 0.9;
+    u.pitch = 1.0;
+
     const voices = window.speechSynthesis.getVoices();
-    const v = voices.find(v => v.lang.startsWith(lang.split('-')[0]) && !v.localService)
-      || voices.find(v => v.lang.startsWith(lang.split('-')[0]));
-    if (v) u.voice = v;
+
+    // Priority order for English: premium cloud voices > any English voice
+    let voice = null;
+    if (tl === 'en') {
+      // Look for high-quality voices (Google, Microsoft, Apple premium)
+      voice = voices.find(v => v.lang.startsWith('en') && /Google|Natural|Premium|Neural|Samantha|Daniel|Karen|Moira/i.test(v.name) && !v.localService)
+        || voices.find(v => v.lang.startsWith('en') && /Google|Natural|Premium|Neural|Samantha|Daniel|Karen|Moira/i.test(v.name))
+        || voices.find(v => v.lang.startsWith('en') && !v.localService)
+        || voices.find(v => v.lang.startsWith('en'));
+    } else {
+      voice = voices.find(v => v.lang.startsWith('ka') && !v.localService)
+        || voices.find(v => v.lang.startsWith('ka'));
+    }
+
+    if (voice) u.voice = voice;
     window.speechSynthesis.speak(u);
-  });
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════ */
@@ -293,6 +308,33 @@ export default function App() {
   // Free mode state
   const [freeQueue, setFreeQueue] = useState<FlashCard[]>([]);
   const [freeCompleted, setFreeCompleted] = useState<string[]>([]);
+
+  // Report bad translation
+  const [reportSent, setReportSent] = useState(false);
+  function reportCard() {
+    if (!currentCard || reportSent) return;
+    const reports: Array<{en: string; ka: string; deck: string; time: number}> = JSON.parse(localStorage.getItem('fluentge-reports') || '[]');
+    reports.push({ en: currentCard.english, ka: currentCard.georgian, deck: sessionDeckId || '', time: Date.now() });
+    localStorage.setItem('fluentge-reports', JSON.stringify(reports));
+    // Also try to save to Firebase via REST API
+    try {
+      const uid = localStorage.getItem('fluentge-uid') || 'anonymous';
+      const apiKey = 'AIzaSyBYJ6xzlp6tP7oIQoz9UzfYbjrVgR3JrwQ';
+      fetch(`https://firestore.googleapis.com/v1/projects/fluentge/databases/(default)/documents/reports?key=${apiKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fields: {
+          english: { stringValue: currentCard.english },
+          georgian: { stringValue: currentCard.georgian },
+          deck: { stringValue: sessionDeckId || '' },
+          uid: { stringValue: uid },
+          time: { integerValue: String(Date.now()) }
+        }})
+      }).catch(() => {});
+    } catch {}
+    setReportSent(true);
+    setTimeout(() => setReportSent(false), 3000);
+  }
 
   // Deck counts cache (for study page)
   const COMPLETION_THRESHOLD = 14; // days — category complete when all cards have interval >= this
@@ -1141,6 +1183,12 @@ export default function App() {
                     <div className="text-sm text-[var(--color-text-muted)]">📖 {currentCard.example_ka}</div>
                   </div>
                 )}
+                <button
+                  onClick={e => { e.stopPropagation(); reportCard(); }}
+                  className={`mt-4 text-xs px-3 py-1.5 rounded-full transition-all ${reportSent ? 'bg-green-500/20 text-green-400' : 'bg-white/5 text-[var(--color-text-muted)] hover:bg-red-500/10 hover:text-red-400'}`}
+                >
+                  {reportSent ? '✅ გაგზავნილია!' : '🚩 არასწორი თარგმანი?'}
+                </button>
               </div>
             )}
           </div>

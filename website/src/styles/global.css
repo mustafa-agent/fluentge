@@ -223,6 +223,11 @@ html.light footer .border-\[\#2E2E30\] {
 }
 
 /* Hide dark-mode decorative background blobs in light mode */
+/* Decorative bg: GPU-composited layer for smooth scrolling */
+.fixed.inset-0.pointer-events-none.z-0 {
+  will-change: transform;
+  contain: strict;
+}
 html.light .fixed.inset-0.pointer-events-none.z-0 {
   opacity: 0;
 }
