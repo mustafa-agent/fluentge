@@ -63,6 +63,9 @@
 - [x] Button/text readability check across all pages ✅ Cron 4B, Mar 14 (all pages verified — text readable, buttons properly styled in both modes)
 - [x] Console error cleanup ✅ Cron 4, Mar 13 (no errors found)
 
+## ✅ COMPLETED — Mar 25 (Cron 4B, 5:30 PM)
+- [x] **Full QA pass — all pages both modes** — Checked homepage, grammar listing, grammar lesson (to-be), dashboard, games, phrases, podcast, profile, premium, flashcards, login in both light and dark mode. Zero visual bugs, zero console errors. Site is in excellent shape. ✅
+
 ## ✅ COMPLETED — Mar 24 (Cron 4B, 5:30 PM)
 - [x] **BUG: Firestore sync feedback loop** — onSnapshot→apply() modified localStorage, making hash differ on next save, causing writes every 60s even when idle. Fixed by updating `lastSavedHash` after both `apply()` and `loadCloud()`. Reduces Firestore writes from ~60/hr to near-zero when idle. ✅
 - [x] **Deprecation: apple-mobile-web-app-capable** — Added `mobile-web-app-capable` meta tag alongside the Apple one ✅
