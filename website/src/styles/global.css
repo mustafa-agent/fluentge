@@ -1460,6 +1460,55 @@ html.light .prose a.text-white {
   color: #4f46e5 !important;
 }
 
+/* ========== GAME HEADER BAR — LIGHT MODE ========== */
+html.light #game-header {
+  background: #ffffff !important;
+  border-color: #d1d5db !important;
+  border-bottom-color: #c0c0c0 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+}
+html.light #game-header .text-\[\#F5F5F0\] {
+  color: #1a1a2e !important;
+}
+html.light #gh-score {
+  background: linear-gradient(135deg, rgba(250,204,21,0.1), rgba(245,158,11,0.06)) !important;
+  border-color: rgba(250,204,21,0.25) !important;
+}
+
+/* ========== PROFILE PAGE — LIGHT MODE ========== */
+/* Logout button */
+html.light button#logout-btn {
+  background: #e5e7eb !important;
+  color: #374151 !important;
+  border-bottom-color: #d1d5db !important;
+}
+html.light button#logout-btn:hover {
+  background: #d1d5db !important;
+}
+/* Heatmap legend empty cell */
+html.light .heatmap-legend-cell[style*="background:#2e2e32"] {
+  background: #e5e7eb !important;
+}
+
+/* ========== GRAMMAR EXERCISE — LIGHT MODE ========== */
+/* Progress track */
+html.light .gl-progress-track[style*="background:#2A2A2C"],
+html.light .gl-progress-track {
+  background: #e5e7eb !important;
+}
+/* Letter boxes */
+html.light .gl-letter[style*="background:#2E2E30"] {
+  background: #f3f4f6 !important;
+  color: #6b7280 !important;
+}
+
+/* ========== GAME INLINE STAT BADGES — LIGHT MODE ========== */
+html.light #game-container span[style*="background:#242426"] {
+  background: #f3f4f6 !important;
+  border-color: #d1d5db !important;
+  color: #374151 !important;
+}
+
 /* ========== DASHBOARD — LIGHT MODE EXTRAS ========== */
 /* Leaderboard non-top-3 avatar backgrounds */
 html.light .from-\[\#3a3a3e\] {
