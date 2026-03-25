@@ -85,7 +85,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
 ---
 
 <Layout title={`${lesson.title_ka} — FluentGe`}>
-  <style>
+  <style is:global>
     /* ===== ANIMATIONS ===== */
     @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes slideIn { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
@@ -163,6 +163,40 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
 
     html.light .gl-exercise-area { background: #FFFFFF !important; border-color: #E5E7EB !important; }
     html.light .gl-exercise-area p, html.light .gl-exercise-area span { color: #1F2937 !important; }
+
+    /* Dynamic content light overrides */
+    html.light #grammar-explanation .text-green-400 { color: #15803D !important; }
+    html.light #grammar-explanation .text-red-400 { color: #DC2626 !important; }
+    html.light #grammar-explanation .text-sky-400 { color: #2563EB !important; }
+    html.light #grammar-explanation .bg-green-500\/10 { background: #F0FDF4 !important; }
+    html.light #grammar-explanation .bg-red-500\/10 { background: #FEF2F2 !important; }
+    html.light #grammar-explanation .bg-sky-500\/15 { background: #DBEAFE !important; }
+    html.light #grammar-explanation .border-green-500 { border-color: #22C55E !important; }
+    html.light #grammar-explanation .border-red-500 { border-color: #EF4444 !important; }
+    html.light #grammar-explanation p, html.light #grammar-explanation span { color: #374151 !important; }
+    html.light #grammar-explanation strong { color: #111827 !important; }
+    html.light #grammar-explanation h3 { color: #111827 !important; }
+
+    html.light #grammar-mistakes .text-green-400 { color: #15803D !important; }
+    html.light #grammar-mistakes .text-red-400 { color: #DC2626 !important; }
+    html.light #grammar-mistakes .bg-green-500\/10,
+    html.light #grammar-mistakes .bg-green-500\/20 { background: #F0FDF4 !important; }
+    html.light #grammar-mistakes .bg-red-500\/10,
+    html.light #grammar-mistakes .bg-red-500\/20 { background: #FEF2F2 !important; }
+    html.light #grammar-mistakes .border-green-500\/20 { border-color: #BBF7D0 !important; }
+    html.light #grammar-mistakes .border-red-500\/20 { border-color: #FECACA !important; }
+    html.light #grammar-mistakes p, html.light #grammar-mistakes span { color: #374151 !important; }
+    html.light #grammar-mistakes strong { color: #111827 !important; }
+    html.light #grammar-mistakes h4 { color: #111827 !important; }
+
+    /* Score/result buttons light mode */
+    html.light #retry-btn { background: #F3F4F6 !important; color: #1F2937 !important; border-color: #D1D5DB !important; border-bottom-color: #B0B0B0 !important; }
+    html.light #retry-btn:hover { background: #E5E7EB !important; }
+    html.light #pass-badge { color: inherit; }
+    html.light #review-banner { background: linear-gradient(to right, rgba(139,92,246,0.08), rgba(99,102,241,0.08)) !important; border-color: rgba(139,92,246,0.2) !important; }
+    html.light #review-banner div { color: #5B21B6 !important; }
+    html.light #review-banner .text-purple-300 { color: #6D28D9 !important; }
+    html.light #review-banner .text-purple-300\/70 { color: #7C3AED !important; }
 
     html.light .gl-result-card { background: #F9FAFB !important; border-color: #E5E7EB !important; }
     html.light .gl-result-heading { color: #111827 !important; }
