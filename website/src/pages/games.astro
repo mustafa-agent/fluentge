@@ -120,34 +120,34 @@ import Layout from '../layouts/Layout.astro';
       <!-- Game Header Bar — back arrow top-left like flashcards -->
       <div style="margin-bottom:12px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <button id="back-btn" style="display:flex;align-items:center;justify-content:center;gap:6px;min-width:52px;height:48px;padding:0 14px;border-radius:12px;background:#242426;border:2px solid #444;color:#F5F5F0;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:all 0.15s;flex-shrink:0;font-weight:700;font-size:14px;">
+          <button id="back-btn" style="display:flex;align-items:center;justify-content:center;gap:6px;min-width:52px;height:48px;padding:0 14px;border-radius:14px;background:linear-gradient(180deg,#3A3A3E,#2A2A2E);border:2px solid #4A4A50;border-bottom:4px solid #1A1A1C;color:#F5F5F0;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:all 0.15s;flex-shrink:0;font-weight:700;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.1);">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
             <span>უკან</span>
           </button>
           <div style="flex:1;"></div>
-          <div id="game-xp-display" style="display:flex;align-items:center;gap:8px;background:#242426;border:1px solid #333;border-radius:10px;padding:6px 12px;">
+          <div id="game-xp-display" style="display:flex;align-items:center;gap:8px;background:linear-gradient(180deg,#333338,#28282C);border:2px solid #4A4A50;border-bottom:3px solid #1A1A1C;border-radius:12px;padding:6px 14px;box-shadow:0 4px 12px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
             <span style="font-size:13px;">⭐</span><span style="font-size:12px;font-weight:700;color:#F5F5F0;" id="gx-xp">0</span>
             <span style="font-size:13px;">🏆</span><span style="font-size:12px;font-weight:700;color:#F5F5F0;">Lv.<span id="gx-level">1</span></span>
           </div>
         </div>
         <!-- Individual Game Header — compact single-line bar -->
-        <div id="game-header" class="bg-[#242426] border border-[#2E2E30] rounded-xl px-3 py-2">
+        <div id="game-header" class="rounded-xl px-3 py-2" style="background:linear-gradient(180deg,#2E2E32,#242426);border:2px solid #3A3A40;border-bottom:4px solid #1A1A1C;box-shadow:0 6px 20px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);"
           <div class="flex items-center gap-2">
             <div id="gh-icon" class="w-8 h-8 bg-[#C8C8C0]/10 rounded-lg flex items-center justify-center shrink-0">
               🎮
             </div>
             <h2 id="gh-title" class="text-sm font-bold text-[#F5F5F0] flex-1 truncate">თამაში</h2>
             <p id="gh-desc" class="hidden">აღწერა</p>
-            <div id="gh-score" class="bg-[#C8C8C0]/10 rounded-lg px-2.5 py-1">
-              <span class="text-xs text-[#C8C8C0] font-bold"><span id="gh-score-value">0</span> ⭐</span>
+            <div id="gh-score" style="background:linear-gradient(135deg,rgba(250,204,21,0.15),rgba(245,158,11,0.1));border:1px solid rgba(250,204,21,0.3);border-radius:10px;padding:4px 12px;">
+              <span class="text-xs font-bold" style="color:#facc15;text-shadow:0 0 8px rgba(250,204,21,0.3);"><span id="gh-score-value">0</span> ⭐</span>
             </div>
-            <div id="gh-timer" class="bg-[#DC2626]/10 rounded-lg px-2.5 py-1 hidden">
-              <span class="text-xs text-[#DC2626] font-bold">⏱ <span id="gh-timer-value">0</span></span>
+            <div id="gh-timer" class="hidden" style="background:linear-gradient(135deg,rgba(220,38,38,0.15),rgba(220,38,38,0.1));border:1px solid rgba(220,38,38,0.3);border-radius:10px;padding:4px 12px;">
+              <span class="text-xs font-bold" style="color:#f87171;text-shadow:0 0 8px rgba(239,68,68,0.3);">⏱ <span id="gh-timer-value">0</span></span>
             </div>
           </div>
           <div id="gh-progress" class="mt-2 hidden">
             <div class="w-full h-1.5 bg-[#1C1C1E] rounded-full overflow-hidden">
-              <div id="gh-progress-bar" class="h-full rounded-full transition-all duration-500" style="width: 0%; background: linear-gradient(90deg, #10B981, #34D399)"></div>
+              <div id="gh-progress-bar" class="h-full rounded-full transition-all duration-500" style="width: 0%; background: linear-gradient(90deg, #10B981, #34D399, #6ee7b7, #34D399); background-size: 200% 100%; animation: progressShimmer 2s linear infinite;"></div>
             </div>
             <div class="flex justify-end mt-0.5"><span class="text-[10px] text-[#6B6B65]"><span id="gh-progress-current">0</span>/<span id="gh-progress-total">10</span></span></div>
           </div>
@@ -172,7 +172,16 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 
-  <style>
+  <style is:global>
+    /* Game animations */
+    @keyframes cardFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @keyframes scorePopup { 0% { transform: scale(1); } 50% { transform: scale(1.3); } 100% { transform: scale(1); } }
+    @keyframes glowPulse { 0%,100% { box-shadow: 0 0 10px rgba(212,168,83,0.3); } 50% { box-shadow: 0 0 25px rgba(212,168,83,0.6); } }
+    @keyframes shineEffect { 0% { left: -100%; } 100% { left: 200%; } }
+    @keyframes progressShimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+    @keyframes shake3d { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-8px)} 40%{transform:translateX(8px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)} }
+    @keyframes correctPop { 0%{transform:scale(1)} 40%{transform:scale(1.08)} 100%{transform:scale(1)} }
+
     /* Difficulty selection buttons */
     .diff-btn {
       background: #242426;
@@ -210,18 +219,43 @@ import Layout from '../layouts/Layout.astro';
 
     .game-card {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border-bottom-width: 4px;
-      border-bottom-color: rgba(0,0,0,0.3);
+      border-bottom-width: 5px;
+      border-bottom-color: rgba(0,0,0,0.4);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.06);
+      background: linear-gradient(180deg, #2A2A2E 0%, #242426 100%) !important;
     }
     .game-card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
     }
     .game-card:active {
       border-bottom-width: 2px;
-      transform: translateY(0px);
+      transform: translateY(0px) scale(0.98);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
-    .game-card:hover img { opacity: 0.9 !important; transform: scale(1.05); }
+    .game-card:hover img { opacity: 0.9 !important; transform: scale(1.1); }
     .game-card img { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    /* Shine effect on card images */
+    .game-card .relative::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%; width: 60%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+      z-index: 5; pointer-events: none;
+      transition: left 0.6s ease;
+    }
+    .game-card:hover .relative::after { left: 200%; }
+    /* FREE badge glow */
+    .game-card .bg-green-500\/90 {
+      box-shadow: 0 0 12px rgba(34,197,94,0.6), 0 0 4px rgba(34,197,94,0.3);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    /* Premium lock badge gold */
+    .game-card .bg-white\/10 {
+      background: linear-gradient(135deg, rgba(212,168,83,0.2), rgba(212,168,83,0.1)) !important;
+      border: 1px solid rgba(212,168,83,0.3);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
@@ -346,38 +380,48 @@ import Layout from '../layouts/Layout.astro';
 
     /* Answer Feedback Animations */
     @keyframes correctAnswer {
-      0% { background-color: #C8C8C0; transform: scale(1); }
-      50% { background-color: #10B981; transform: scale(1.05); }
-      100% { background-color: rgba(16, 185, 129, 0.1); transform: scale(1); }
+      0% { transform: scale(1); }
+      30% { transform: scale(1.08); }
+      100% { transform: scale(1); }
     }
     
     @keyframes wrongAnswer {
-      0% { background-color: #EF4444; transform: scale(1); }
-      25% { transform: translateX(-5px) scale(1.02); }
-      50% { transform: translateX(5px) scale(1.02); }
-      75% { transform: translateX(-3px) scale(1.01); }
-      100% { background-color: rgba(239, 68, 68, 0.1); transform: translateX(0) scale(1); }
+      0% { transform: translateX(0); }
+      15% { transform: translateX(-8px); }
+      30% { transform: translateX(8px); }
+      45% { transform: translateX(-6px); }
+      60% { transform: translateX(6px); }
+      75% { transform: translateX(-3px); }
+      100% { transform: translateX(0); }
     }
 
     .answer-correct {
-      animation: correctAnswer 0.6s ease-out;
-      border-color: #10B981 !important;
+      animation: correctAnswer 0.5s cubic-bezier(0.34,1.56,0.64,1);
+      background: linear-gradient(180deg,#34d399,#22c55e,#16a34a) !important;
+      border-color: #6ee7b7 !important;
+      border-bottom-color: #0f5132 !important;
+      color: #fff !important;
+      box-shadow: 0 6px 30px rgba(34,197,94,0.6) !important;
     }
 
     .answer-wrong {
-      animation: wrongAnswer 0.6s ease-out;
-      border-color: #EF4444 !important;
+      animation: wrongAnswer 0.5s ease-out;
+      background: linear-gradient(180deg,#f87171,#ef4444,#dc2626) !important;
+      border-color: #fca5a5 !important;
+      border-bottom-color: #7f1d1d !important;
+      color: #fff !important;
+      box-shadow: 0 6px 30px rgba(239,68,68,0.5) !important;
     }
 
     /* Game Option Buttons — BIG and tappable */
     .game-option {
-      background: linear-gradient(135deg, #2A2A2E 0%, #333338 100%);
-      border: 2px solid #3A3A40;
-      border-bottom-width: 4px;
+      background: linear-gradient(180deg, #404048 0%, #343438 40%, #2A2A2E 100%);
+      border: 2px solid #4A4A50;
+      border-bottom: 5px solid #1A1A1C;
       border-radius: 1rem;
       padding: 1rem 0.75rem;
       color: #F5F5F0;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1rem;
       min-height: 56px;
       transition: all 0.15s ease;
@@ -389,13 +433,14 @@ import Layout from '../layouts/Layout.astro';
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.5), inset 0 2px 0 rgba(255,255,255,0.12);
     }
 
     .game-option:hover {
-      background: linear-gradient(135deg, #353540 0%, #3E3E48 100%);
+      background: linear-gradient(180deg, #4A4A52 0%, #3E3E42 40%, #343438 100%);
       border-color: #58A6FF;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(88,166,255,0.15);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(88,166,255,0.2), inset 0 2px 0 rgba(255,255,255,0.15);
     }
 
     .game-option:active {
@@ -695,9 +740,51 @@ import Layout from '../layouts/Layout.astro';
     html.light #sub-modal p {
       color: #666 !important;
     }
+    /* Game cards light mode */
+    html.light .game-card {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F0 100%) !important;
+      border-color: #E0E0DB !important;
+      border-bottom-color: #C8C8C0 !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.8) !important;
+    }
+    html.light .game-card:hover {
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.9) !important;
+      border-color: #C8C8C0 !important;
+    }
+    html.light .game-option {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F5 40%, #F0F0EB 100%) !important;
+      border-color: #D8D8D3 !important;
+      border-bottom-color: #B8B8B0 !important;
+      color: #1a1a1a !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06), inset 0 2px 0 rgba(255,255,255,0.8) !important;
+    }
+    html.light .game-option:hover {
+      background: linear-gradient(180deg, #F5F5F0 0%, #EDEDEA 100%) !important;
+      border-color: #58A6FF !important;
+      box-shadow: 0 8px 24px rgba(88,166,255,0.12), inset 0 2px 0 rgba(255,255,255,0.8) !important;
+    }
+    html.light #game-header {
+      background: linear-gradient(180deg, #FFFFFF, #F8F8F5) !important;
+      border-color: #E0E0DB !important;
+      border-bottom-color: #C8C8C0 !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.8) !important;
+    }
+    html.light #back-btn {
+      background: linear-gradient(180deg, #FFFFFF, #F5F5F0) !important;
+      border-color: #E0E0DB !important;
+      border-bottom-color: #C8C8C0 !important;
+      color: #333 !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.8) !important;
+    }
+    html.light #game-xp-display {
+      background: linear-gradient(180deg, #FFFFFF, #F8F8F5) !important;
+      border-color: #E0E0DB !important;
+      border-bottom-color: #C8C8C0 !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
+    }
     /* All buttons inside game container — light theme */
     html.light #game-container button {
-      background: #fff !important;
+      background: linear-gradient(180deg, #FFFFFF, #F5F5F0) !important;
       color: #1a1a1a !important;
       border-color: rgba(0,0,0,0.15) !important;
     }
@@ -905,7 +992,7 @@ import Layout from '../layouts/Layout.astro';
         scoreEl.textContent = newScore;
         scoreEl.parentElement.style.animation = 'none';
         scoreEl.parentElement.offsetHeight; // Trigger reflow
-        scoreEl.parentElement.style.animation = 'correctAnswer 0.6s ease-out';
+        scoreEl.parentElement.style.animation = 'scorePopup 0.4s cubic-bezier(0.34,1.56,0.64,1)';
       }
     }
 
@@ -1184,7 +1271,7 @@ import Layout from '../layouts/Layout.astro';
 
     function createGameCard(g, i) {
       const card=document.createElement('div');
-      card.className=`game-card bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden cursor-pointer hover:border-[#C8C8C0]/30 ${g.free || isPremiumUser ?'':'opacity-75 hover:opacity-100'}`;
+      card.className=`game-card border border-[#3A3A40] rounded-2xl overflow-hidden cursor-pointer hover:border-[#C8C8C0]/40 ${g.free || isPremiumUser ?'':'opacity-80 hover:opacity-100'}`;
       card.style.animationDelay=`${i*0.03}s`;
       const bgImg = GAME_IMAGES[g.id] || '';
       const rec = getGameRecord(g.id);
@@ -1193,7 +1280,7 @@ import Layout from '../layouts/Layout.astro';
           ${bgImg ? `<img src="${bgImg}" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" onerror="this.style.display='none'"/>` : ''}
           <div class="absolute inset-0 bg-gradient-to-t from-[#242426] via-[#242426]/50 to-transparent"></div>
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10 opacity-80">${g.icon}</svg>
-          ${g.free?'<div class="absolute top-2 right-2 bg-green-500/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm z-10">FREE</div>':(isPremiumUser?'':'<div class="absolute top-2 right-2 bg-white/10 backdrop-blur-sm rounded-lg px-2 py-1 z-10"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#A0A09A" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>')}
+          ${g.free?'<div class="absolute top-2 right-2 text-white text-[10px] font-bold px-3 py-1 rounded-full z-10" style="background:linear-gradient(135deg,#22c55e,#16a34a);box-shadow:0 0 14px rgba(34,197,94,0.6),0 2px 6px rgba(0,0,0,0.3);text-shadow:0 1px 2px rgba(0,0,0,0.3);border-bottom:2px solid #0f5132;">FREE</div>':(isPremiumUser?'':'<div class="absolute top-2 right-2 backdrop-blur-sm rounded-lg px-2.5 py-1.5 z-10" style="background:linear-gradient(135deg,rgba(212,168,83,0.25),rgba(212,168,83,0.1));border:1px solid rgba(212,168,83,0.4);animation:glowPulse 3s ease-in-out infinite;"><span style="color:#D4A853;font-size:11px;font-weight:700;">🔒</span></div>')}
           ${rec > 0 ? `<div class="absolute top-2 left-2 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2 py-0.5 rounded-full z-10">🏆 ${rec}</div>` : ''}
         </div>
         <div class="p-3">
@@ -1455,10 +1542,10 @@ import Layout from '../layouts/Layout.astro';
         es.forEach(w=>{
           const b=document.createElement('button');
           b.textContent=w.en;
-          b.style.cssText='display:flex;align-items:center;justify-content:center;width:100%;padding:14px 8px;min-height:52px;border-radius:12px;border:2px solid #3A3A40;border-bottom-width:4px;background:#2A2A2E;color:#F5F5F0;font-weight:700;font-size:0.95rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;';
+          b.style.cssText='display:flex;align-items:center;justify-content:center;width:100%;padding:14px 8px;min-height:52px;border-radius:14px;border:2px solid #4A4A50;border-bottom:5px solid #1A1A1C;background:linear-gradient(180deg,#404048,#343438,#2A2A2E);color:#F5F5F0;font-weight:700;font-size:0.95rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;box-shadow:0 6px 16px rgba(0,0,0,0.5),inset 0 2px 0 rgba(255,255,255,0.12);';
           const handler=()=>{
-            ec.querySelectorAll('button').forEach(x=>{x.style.borderColor='#3A3A40';x.style.boxShadow='none';x.style.background='#2A2A2E';});
-            b.style.borderColor='#58A6FF';b.style.boxShadow='0 0 16px rgba(88,166,255,0.4)';b.style.background='#1E3A5F';
+            ec.querySelectorAll('button').forEach(x=>{x.style.borderColor='#4A4A50';x.style.boxShadow='0 6px 16px rgba(0,0,0,0.5),inset 0 2px 0 rgba(255,255,255,0.12)';x.style.background='linear-gradient(180deg,#404048,#343438,#2A2A2E)';});
+            b.style.borderColor='#58A6FF';b.style.boxShadow='0 0 20px rgba(88,166,255,0.5),inset 0 2px 0 rgba(255,255,255,0.15)';b.style.background='linear-gradient(180deg,#1E3A5F,#162D4D)';
             selE={b,w:w.en};chk();
           };
           b.addEventListener('click',handler);
@@ -1469,10 +1556,10 @@ import Layout from '../layouts/Layout.astro';
         ks.forEach(w=>{
           const b=document.createElement('button');
           b.textContent=w.ka;
-          b.style.cssText='display:flex;align-items:center;justify-content:center;width:100%;padding:14px 8px;min-height:52px;border-radius:12px;border:2px solid #3A3A40;border-bottom-width:4px;background:#2A2A2E;color:#F5F5F0;font-weight:700;font-size:0.95rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;';
+          b.style.cssText='display:flex;align-items:center;justify-content:center;width:100%;padding:14px 8px;min-height:52px;border-radius:14px;border:2px solid #4A4A50;border-bottom:5px solid #1A1A1C;background:linear-gradient(180deg,#404048,#343438,#2A2A2E);color:#F5F5F0;font-weight:700;font-size:0.95rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;box-shadow:0 6px 16px rgba(0,0,0,0.5),inset 0 2px 0 rgba(255,255,255,0.12);';
           const handler=()=>{
-            kc.querySelectorAll('button').forEach(x=>{x.style.borderColor='#3A3A40';x.style.boxShadow='none';x.style.background='#2A2A2E';});
-            b.style.borderColor='#F59E0B';b.style.boxShadow='0 0 16px rgba(245,158,11,0.4)';b.style.background='#3D2E0A';
+            kc.querySelectorAll('button').forEach(x=>{x.style.borderColor='#4A4A50';x.style.boxShadow='0 6px 16px rgba(0,0,0,0.5),inset 0 2px 0 rgba(255,255,255,0.12)';x.style.background='linear-gradient(180deg,#404048,#343438,#2A2A2E)';});
+            b.style.borderColor='#F59E0B';b.style.boxShadow='0 0 20px rgba(245,158,11,0.5),inset 0 2px 0 rgba(255,255,255,0.15)';b.style.background='linear-gradient(180deg,#3D2E0A,#2D1F06)';
             selK={b,w:w.en};chk();
           };
           b.addEventListener('click',handler);
@@ -1575,14 +1662,14 @@ import Layout from '../layouts/Layout.astro';
         opts.forEach(o=>{
           const b=document.createElement('button');
           b.textContent=o.ka;
-          b.style.cssText='display:flex;align-items:center;justify-content:center;padding:16px 8px;min-height:56px;border-radius:14px;border:2px solid #3A3A40;border-bottom-width:4px;background:#2A2A2E;color:#F5F5F0;font-weight:700;font-size:1rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;';
+          b.style.cssText='display:flex;align-items:center;justify-content:center;padding:16px 8px;min-height:56px;border-radius:16px;border:2px solid #4A4A50;border-bottom:5px solid #1A1A1C;background:linear-gradient(180deg,#404048,#343438,#2A2A2E);color:#F5F5F0;font-weight:700;font-size:1rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;box-shadow:0 6px 16px rgba(0,0,0,0.5),inset 0 2px 0 rgba(255,255,255,0.12);';
           const handler=()=>{
             if(o.en===c.en){
               snd(1);sc++;updateGameScore(sc);
-              b.style.background='#10B981';b.style.borderColor='#059669';b.style.color='white';
+              b.style.background='linear-gradient(180deg,#34d399,#22c55e,#16a34a)';b.style.borderColor='#6ee7b7';b.style.borderBottomColor='#0f5132';b.style.color='white';b.style.boxShadow='0 6px 30px rgba(34,197,94,0.6)';b.style.animation='correctPop 0.4s ease';
             }else{
               snd(0);
-              b.style.background='#EF4444';b.style.borderColor='#DC2626';b.style.color='white';b.style.animation='wrongAnswer 0.4s ease';
+              b.style.background='linear-gradient(180deg,#f87171,#ef4444,#dc2626)';b.style.borderColor='#fca5a5';b.style.borderBottomColor='#7f1d1d';b.style.color='white';b.style.boxShadow='0 6px 30px rgba(239,68,68,0.5)';b.style.animation='shake3d 0.4s ease';
             }
             setTimeout(nxt,350);
           };
@@ -1699,7 +1786,7 @@ import Layout from '../layouts/Layout.astro';
     function buildListQuiz(title,desc,data,getQ,getA,getOpts,gameId){
       const gc=gameWrap(title,desc,gameId);let sc=0;
       gc.innerHTML=`<p id="lqw" style="font-size:1.5rem;font-weight:800;text-align:center;margin-bottom:20px;color:#F5F5F0;"></p><div id="lqo" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;"></div><div id="lqf" style="text-align:center;font-weight:700;margin-bottom:8px;min-height:24px;"></div><div style="text-align:center;"><span style="background:rgba(200,200,192,0.1);border:1px solid rgba(200,200,192,0.2);border-radius:10px;padding:6px 16px;color:#C8C8C0;font-weight:700;font-size:0.9rem;">⭐ <span id="lqs">0</span></span></div>`;
-      function nw(){const q=data[Math.floor(Math.random()*data.length)];document.getElementById('lqw').textContent=getQ(q);document.getElementById('lqf').innerHTML='';const ans=getA(q);const opts=sh([ans,...sh(getOpts(data,q)).slice(0,3)]);const d=document.getElementById('lqo');d.innerHTML='';opts.forEach(o=>{const b=document.createElement('button');b.textContent=o;b.style.cssText='display:flex;align-items:center;justify-content:center;padding:14px 8px;min-height:56px;border-radius:14px;border:2px solid #3A3A40;border-bottom-width:4px;background:#2A2A2E;color:#F5F5F0;font-weight:700;font-size:0.95rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;word-break:break-word;';const handler=()=>{if(o===ans){snd(1);sc++;document.getElementById('lqs').textContent=sc;if(gameId)checkRecord(gameId,sc);b.style.background='#10B981';b.style.borderColor='#059669';b.style.color='white';setTimeout(nw,400);}else{snd(0);b.style.background='#EF444430';b.style.borderColor='#EF4444';b.style.opacity='0.4';b.style.pointerEvents='none';}};b.addEventListener('click',handler);b.addEventListener('touchstart',function(e){e.preventDefault();handler();},{passive:false});d.appendChild(b);});}
+      function nw(){const q=data[Math.floor(Math.random()*data.length)];document.getElementById('lqw').textContent=getQ(q);document.getElementById('lqf').innerHTML='';const ans=getA(q);const opts=sh([ans,...sh(getOpts(data,q)).slice(0,3)]);const d=document.getElementById('lqo');d.innerHTML='';opts.forEach(o=>{const b=document.createElement('button');b.textContent=o;b.style.cssText='display:flex;align-items:center;justify-content:center;padding:14px 8px;min-height:56px;border-radius:16px;border:2px solid #4A4A50;border-bottom:5px solid #1A1A1C;background:linear-gradient(180deg,#404048,#343438,#2A2A2E);color:#F5F5F0;font-weight:700;font-size:0.95rem;cursor:pointer;transition:all 0.15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;word-break:break-word;box-shadow:0 6px 16px rgba(0,0,0,0.5),inset 0 2px 0 rgba(255,255,255,0.12);';const handler=()=>{if(o===ans){snd(1);sc++;document.getElementById('lqs').textContent=sc;if(gameId)checkRecord(gameId,sc);b.style.background='linear-gradient(180deg,#34d399,#22c55e,#16a34a)';b.style.borderColor='#6ee7b7';b.style.borderBottomColor='#0f5132';b.style.color='white';b.style.boxShadow='0 6px 30px rgba(34,197,94,0.6)';b.style.animation='correctPop 0.4s ease';setTimeout(nw,400);}else{snd(0);b.style.background='linear-gradient(180deg,#f87171,#ef4444,#dc2626)';b.style.borderColor='#fca5a5';b.style.borderBottomColor='#7f1d1d';b.style.color='white';b.style.boxShadow='0 6px 30px rgba(239,68,68,0.5)';b.style.animation='shake3d 0.4s ease';b.style.opacity='0.5';b.style.pointerEvents='none';}};b.addEventListener('click',handler);b.addEventListener('touchstart',function(e){e.preventDefault();handler();},{passive:false});d.appendChild(b);});}
       nw();
     }
 
