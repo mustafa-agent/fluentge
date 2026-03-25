@@ -85,7 +85,7 @@ const FREE_CATEGORIES = 5;
       <div class="absolute inset-0 hero-overlay-dark bg-gradient-to-b from-[#1C1C1E]/60 to-[#1C1C1E]"></div>
     </div>
     <div class="relative max-w-4xl mx-auto px-4 pt-24 pb-16 text-center">
-      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">ფრაზები</h1>
+      <h1 class="font-['Playfair_Display',serif] text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight text-white">ფრაზები</h1>
       <p class="text-base sm:text-lg text-[#A0A09A] max-w-xl mx-auto">ყოველდღიური ინგლისური ფრაზები ქართული თარგმანით და აუდიოთი</p>
     </div>
   </section>
@@ -93,75 +93,80 @@ const FREE_CATEGORIES = 5;
   <!-- Search & Stats -->
   <section class="max-w-4xl mx-auto px-4 pt-8">
     <div class="text-center mb-6">
-      <p class="text-[#6B6B65] text-sm">{totalPhrases} ფრაზა · {categories.length} კატეგორია · 🔊 აუდიოთი</p>
+      <p class="text-[#8B8B85] text-sm font-medium">{totalPhrases} ფრაზა · {categories.length} კატეგორია · 🔊 აუდიოთი</p>
     </div>
     <div class="mb-8">
-      <input type="text" id="searchInput" placeholder="🔍 მოძებნე ფრაზა..." class="w-full bg-[#242426] border border-[#2E2E30] rounded-xl px-4 py-3 text-[#C8C8C0] placeholder-[#6B6B65] focus:outline-none focus:border-[#D4A853]"/>
+      <div class="relative">
+        <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+          <span class="text-xl">🔍</span>
+        </div>
+        <input type="text" id="searchInput" placeholder="მოძებნე ფრაზა..." class="w-full bg-[#1C1C1E] border-2 border-[#2E2E30] rounded-2xl pl-12 pr-4 py-4 text-[#E8E8E0] placeholder-[#6B6B65] focus:outline-none focus:border-[#D4A853] focus:shadow-[0_0_20px_rgba(212,168,83,0.15)] transition-all text-base"/>
+      </div>
     </div>
 
     <!-- Level Filter -->
     <div class="flex gap-2 justify-center mb-8 flex-wrap">
-      <button class="level-btn active px-4 py-2.5 rounded-full text-sm border border-[#2E2E30] bg-[#D4A853] text-black font-medium min-h-[44px]" data-level="all">ყველა</button>
-      <button class="level-btn px-4 py-2.5 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853] min-h-[44px]" data-level="A1">A1</button>
-      <button class="level-btn px-4 py-2.5 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853] min-h-[44px]" data-level="A2">A2</button>
-      <button class="level-btn px-4 py-2.5 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853] min-h-[44px]" data-level="B1">B1</button>
-      <button class="level-btn px-4 py-2.5 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853] min-h-[44px]" data-level="B2">B2</button>
-      <button class="level-btn px-4 py-2.5 rounded-full text-sm border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] hover:border-[#D4A853] min-h-[44px]" data-level="C1">C1</button>
+      <button class="level-btn active px-5 py-2.5 rounded-full text-sm border-2 border-[#D4A853] bg-[#D4A853] text-black font-bold min-h-[44px] transition-all duration-200 hover:scale-105" data-level="all">ყველა</button>
+      <button class="level-btn px-5 py-2.5 rounded-full text-sm border-2 border-[#2E2E30] bg-[#1C1C1E] text-[#C8C8C0] hover:border-[#D4A853] hover:scale-105 min-h-[44px] transition-all duration-200 font-medium" data-level="A1">A1</button>
+      <button class="level-btn px-5 py-2.5 rounded-full text-sm border-2 border-[#2E2E30] bg-[#1C1C1E] text-[#C8C8C0] hover:border-[#D4A853] hover:scale-105 min-h-[44px] transition-all duration-200 font-medium" data-level="A2">A2</button>
+      <button class="level-btn px-5 py-2.5 rounded-full text-sm border-2 border-[#2E2E30] bg-[#1C1C1E] text-[#C8C8C0] hover:border-[#D4A853] hover:scale-105 min-h-[44px] transition-all duration-200 font-medium" data-level="B1">B1</button>
+      <button class="level-btn px-5 py-2.5 rounded-full text-sm border-2 border-[#2E2E30] bg-[#1C1C1E] text-[#C8C8C0] hover:border-[#D4A853] hover:scale-105 min-h-[44px] transition-all duration-200 font-medium" data-level="B2">B2</button>
+      <button class="level-btn px-5 py-2.5 rounded-full text-sm border-2 border-[#2E2E30] bg-[#1C1C1E] text-[#C8C8C0] hover:border-[#D4A853] hover:scale-105 min-h-[44px] transition-all duration-200 font-medium" data-level="C1">C1</button>
     </div>
   </section>
 
   <!-- Categories -->
   <section class="max-w-4xl mx-auto px-4 pb-16">
-    <div class="space-y-6" id="categoriesContainer">
+    <div class="space-y-5" id="categoriesContainer">
       {categories.map((cat, catIdx) => {
         const isPremium = catIdx >= FREE_CATEGORIES;
         return (
-        <div class={`category-block bg-[#242426] border border-[#2E2E30] rounded-2xl overflow-hidden ${isPremium ? 'premium-locked' : ''}`} data-cat-index={catIdx} data-premium={isPremium ? 'true' : 'false'} data-phrases={JSON.stringify(cat.phrases)}>
-          <button class={`w-full p-5 border-b border-[#2E2E30] flex items-center justify-between cursor-pointer hover:bg-[#2A2A2C] transition-colors ${isPremium ? 'premium-toggle' : 'cat-toggle'}`}>
-            <div class="flex items-center gap-3">
-              <span class="text-2xl">{cat.icon}</span>
+        <div class={`category-block rounded-2xl overflow-hidden cat-card ${isPremium ? 'premium-locked' : ''}`} data-cat-index={catIdx} data-premium={isPremium ? 'true' : 'false'} data-phrases={JSON.stringify(cat.phrases)}>
+          <button class={`w-full p-5 flex items-center justify-between cursor-pointer transition-all duration-300 cat-header ${isPremium ? 'premium-toggle' : 'cat-toggle'}`}>
+            <div class="flex items-center gap-4">
+              <span class="text-3xl cat-icon">{cat.icon}</span>
               <div class="text-left">
-                <h2 class={`text-lg font-bold ${isPremium ? 'text-[#6B6B65]' : 'text-[#C8C8C0]'}`}>{cat.title}</h2>
-                <p class="text-xs text-[#6B6B65]">{cat.phrases.length} ფრაზა</p>
+                <h2 class={`text-lg font-bold ${isPremium ? 'text-[#6B6B65]' : 'text-[#E8E8E0]'}`}>{cat.title}</h2>
+                <p class="text-xs text-[#6B6B65] mt-0.5">{cat.phrases.length} ფრაზა</p>
               </div>
             </div>
             <div class="flex items-center gap-2">
               {isPremium ? (
-                <span class="flex items-center gap-1 text-xs bg-[#D4A853]/20 text-[#D4A853] px-3 py-1 rounded-full">🔒 პრემიუმ</span>
+                <span class="flex items-center gap-1 text-xs bg-[#D4A853]/20 text-[#D4A853] px-3 py-1.5 rounded-full font-medium">🔒 პრემიუმ</span>
               ) : (
-                <svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                <svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               )}
             </div>
           </button>
           <!-- Category content (tabs + panels) -->
           <div class="cat-content hidden">
             <!-- Mode tabs -->
-            <div class="mode-tabs flex border-b border-[#2E2E30] overflow-x-auto">
-              <button class="mode-tab active flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#D4A853] border-b-2 border-[#D4A853] whitespace-nowrap" data-mode="phrases">📖 ფრაზები</button>
-              <button class="mode-tab flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#6B6B65] border-b-2 border-transparent hover:text-[#C8C8C0] whitespace-nowrap" data-mode="quiz">🎮 Quiz</button>
-              <button class="mode-tab flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#6B6B65] border-b-2 border-transparent hover:text-[#C8C8C0] whitespace-nowrap" data-mode="listen">🎧 მოსმენა</button>
-              <button class="mode-tab flex-1 min-w-0 px-3 py-3 text-sm font-medium text-[#6B6B65] border-b-2 border-transparent hover:text-[#C8C8C0] whitespace-nowrap" data-mode="match">🔀 დაწყვილება</button>
+            <div class="mode-tabs flex p-2 gap-1 bg-[#1A1A1C]">
+              <button class="mode-tab active flex-1 min-w-0 px-3 py-2.5 text-sm font-bold rounded-xl whitespace-nowrap transition-all duration-200" data-mode="phrases">📖 ფრაზები</button>
+              <button class="mode-tab flex-1 min-w-0 px-3 py-2.5 text-sm font-bold rounded-xl whitespace-nowrap transition-all duration-200" data-mode="quiz">🎮 Quiz</button>
+              <button class="mode-tab flex-1 min-w-0 px-3 py-2.5 text-sm font-bold rounded-xl whitespace-nowrap transition-all duration-200" data-mode="listen">🎧 მოსმენა</button>
+              <button class="mode-tab flex-1 min-w-0 px-3 py-2.5 text-sm font-bold rounded-xl whitespace-nowrap transition-all duration-200" data-mode="match">🔀 დაწყვილება</button>
             </div>
             <!-- Phrases panel -->
             <div class="mode-panel active" data-panel="phrases">
-              <div class={`phrases-list divide-y divide-white/5 ${isPremium ? 'premium-phrases-hidden' : ''}`}>
+              <div class={`phrases-list divide-y divide-[#2E2E30]/50 ${isPremium ? 'premium-phrases-hidden' : ''}`}>
                 {cat.phrases.map((phrase) => (
                   <div class="phrase-item px-5 py-4 hover:bg-[#2A2A2C] transition-colors" data-level={phrase.level} data-en={phrase.english.toLowerCase()} data-ka={phrase.georgian.toLowerCase()}>
                     <div class="flex items-start gap-3">
-                      <button class="play-btn mt-0.5 w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-full bg-[#D4A853]/20 text-[#D4A853] hover:bg-[#D4A853]/40 transition-colors text-lg" data-audio={`/audio/phrases/${phrase.id}.mp3`} title="მოუსმინე">
+                      <button class="play-btn mt-0.5 w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-gradient-to-br from-[#D4A853]/30 to-[#D4A853]/10 text-[#D4A853] hover:from-[#D4A853]/50 hover:to-[#D4A853]/20 transition-all duration-200 text-lg hover:scale-110 active:scale-95 shadow-lg shadow-[#D4A853]/5" data-audio={`/audio/phrases/${phrase.id}.mp3`} title="მოუსმინე">
                         🔊
                       </button>
                       <div class="flex-1">
                         <div class="flex items-start justify-between gap-2">
                           <div>
-                            <p class="text-[#C8C8C0] font-medium text-base sm:text-lg break-words">{phrase.english}</p>
-                            <p class="text-[#8B8B85] mt-1">{phrase.georgian}</p>
+                            <p class="text-[#E8E8E0] font-semibold text-base sm:text-lg break-words leading-relaxed">{phrase.english}</p>
+                            <p class="text-[#9B9B95] mt-1.5 text-[15px]">{phrase.georgian}</p>
                           </div>
                         </div>
-                        {phrase.literal && <p class="text-xs text-[#5B5B55] mt-1 italic">პირდაპირი: {phrase.literal}</p>}
-                        <div class="flex items-center gap-2 mt-2">
-                          {phrase.level && <span class={`text-xs px-2 py-0.5 rounded-full ${phrase.level === 'A1' ? 'bg-green-900/30 text-green-400' : phrase.level === 'A2' ? 'bg-blue-900/30 text-blue-400' : phrase.level === 'B1' ? 'bg-yellow-900/30 text-yellow-400' : phrase.level === 'B2' ? 'bg-orange-900/30 text-orange-400' : 'bg-red-900/30 text-red-400'}`}>{phrase.level}</span>}
-                          {phrase.context && <span class="text-xs text-[#5B5B55]">📌 {phrase.context}</span>}
+                        {phrase.literal && <p class="text-xs text-[#5B5B55] mt-1.5 italic">პირდაპირი: {phrase.literal}</p>}
+                        <div class="flex items-center gap-2 mt-2.5">
+                          {phrase.level && <span class={`text-xs px-2.5 py-1 rounded-full font-medium ${phrase.level === 'A1' ? 'bg-green-900/40 text-green-400' : phrase.level === 'A2' ? 'bg-blue-900/40 text-blue-400' : phrase.level === 'B1' ? 'bg-yellow-900/40 text-yellow-400' : phrase.level === 'B2' ? 'bg-orange-900/40 text-orange-400' : 'bg-red-900/40 text-red-400'}`}>{phrase.level}</span>}
+                          {phrase.context && <span class="text-xs text-[#6B6B65]">📌 {phrase.context}</span>}
                         </div>
                       </div>
                     </div>
@@ -189,55 +194,515 @@ const FREE_CATEGORIES = 5;
   </section>
 
   <!-- Premium Paywall Modal -->
-  <div id="premiumModal" class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl max-w-md w-full p-8 text-center">
+  <div id="premiumModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#242426] border border-[#2E2E30] rounded-2xl max-w-md w-full p-8 text-center shadow-2xl">
       <div class="text-5xl mb-4">🔒</div>
-      <h3 class="text-2xl font-bold text-[#C8C8C0] mb-3">პრემიუმ კონტენტი</h3>
+      <h3 class="text-2xl font-bold text-[#E8E8E0] mb-3">პრემიუმ კონტენტი</h3>
       <p class="text-[#8B8B85] mb-2">ეს კატეგორია მხოლოდ პრემიუმ მომხმარებლებისთვისაა.</p>
       <p class="text-[#8B8B85] mb-6">გახსენი <strong class="text-[#D4A853]">1,400+ ფრაზა</strong> 35 კატეგორიაში აუდიოთი! მხოლოდ $9.99!</p>
       <div class="bg-[#1C1C1E] rounded-xl p-4 mb-6">
         <p class="text-[#D4A853] text-2xl font-bold">$9.99</p>
         <p class="text-xs text-[#6B6B65] mt-1">ერთჯერადი გადახდა — სამუდამო წვდომა</p>
       </div>
-      <a href="/premium" class="inline-block w-full bg-[#D4A853] text-black font-bold py-3 px-6 rounded-xl hover:bg-[#C49A48] transition-colors mb-3">გახსენი პრემიუმი ⚡</a>
+      <a href="/premium" class="inline-block w-full bg-gradient-to-r from-[#D4A853] to-[#E8C06A] text-black font-bold py-3 px-6 rounded-xl hover:shadow-lg hover:shadow-[#D4A853]/20 transition-all duration-200 mb-3">გახსენი პრემიუმი ⚡</a>
       <button id="closeModal" class="text-[#6B6B65] text-sm hover:text-[#C8C8C0] transition-colors">დახურვა</button>
     </div>
   </div>
 </Layout>
 
-<style>
-  .mode-tab{transition:all .2s}
-  .mode-tab.active{color:#D4A853;border-bottom-color:#D4A853}
-  @keyframes popCorrect{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
-  @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
-  .anim-correct{animation:popCorrect .4s ease}
-  .anim-wrong{animation:shake .4s ease}
-  .quiz-option{transition:all .2s;cursor:pointer}
-  .quiz-option:hover{border-color:#D4A853}
-  .quiz-option.correct{background:#166534!important;border-color:#22c55e!important;color:#fff!important}
-  .quiz-option.wrong{background:#991b1b!important;border-color:#ef4444!important;color:#fff!important}
-  .match-item{transition:all .2s;cursor:pointer}
-  .match-item.selected{border-color:#D4A853!important;background:rgba(212,168,83,.15)!important}
-  .match-item.matched{opacity:.5;pointer-events:none;border-color:#22c55e!important;background:rgba(22,101,52,.2)!important}
-  .match-item.wrong-flash{border-color:#ef4444!important;background:rgba(153,27,27,.2)!important}
-  .progress-bar{height:6px;border-radius:3px;background:#2E2E30;overflow:hidden}
-  .progress-fill{height:100%;background:#D4A853;border-radius:3px;transition:width .3s}
-  .streak-badge{display:inline-flex;align-items:center;gap:4px;background:rgba(212,168,83,.15);color:#D4A853;padding:2px 10px;border-radius:999px;font-size:13px}
+<style is:global>
+  /* Category cards - 3D effect */
+  .cat-card {
+    background: linear-gradient(180deg, #353540 0%, #2C2C32 40%, #242428 100%) !important;
+    border: 2px solid #4A4A50 !important;
+    border-bottom: 5px solid #1A1A1C !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5), 0 3px 6px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.1) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border-radius: 20px !important;
+  }
+  .cat-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 16px 50px rgba(0,0,0,0.6), 0 6px 12px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.12), 0 0 40px rgba(212,168,83,0.08) !important;
+    border-color: #5A5A60 !important;
+  }
+  .cat-header:hover {
+    background: rgba(255,255,255,0.04);
+  }
+  .cat-icon {
+    transition: transform 0.3s ease;
+    font-size: 32px !important;
+  }
+  .cat-card:hover .cat-icon {
+    transform: scale(1.2) rotate(-5deg);
+  }
+
+  /* Mode tabs - pill style */
+  .mode-tab {
+    color: #6B6B65;
+    background: transparent;
+  }
+  .mode-tab.active {
+    color: #000 !important;
+    background: #D4A853 !important;
+    box-shadow: 0 2px 8px rgba(212,168,83,0.3);
+  }
+  .mode-tab:not(.active):hover {
+    color: #C8C8C0;
+    background: rgba(255,255,255,0.05);
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: #2E2E30;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #D4A853, #E8C06A);
+    border-radius: 4px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 10px rgba(212,168,83,0.3);
+  }
+
+  /* Streak badge */
+  .streak-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, rgba(239,68,68,0.2), rgba(249,115,22,0.2));
+    color: #F97316;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid rgba(249,115,22,0.3);
+    animation: streakPulse 1.5s ease-in-out infinite;
+  }
+
+  /* Quiz/Listen option buttons - 3D style */
+  .quiz-option {
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    border: 2px solid #4A4A50 !important;
+    border-bottom: 5px solid #1A1A1C !important;
+    background: linear-gradient(180deg, #404048 0%, #343438 40%, #2A2A2E 100%) !important;
+    color: #F0F0EA !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    padding: 18px 22px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.12) !important;
+    position: relative !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
+    letter-spacing: 0.3px !important;
+  }
+  .quiz-option:hover {
+    border-color: #D4A853 !important;
+    border-bottom-color: #A07830 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 30px rgba(212,168,83,0.3), 0 4px 8px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.15) !important;
+    background: linear-gradient(180deg, #4A4A52 0%, #3C3C42 40%, #323238 100%) !important;
+  }
+  .quiz-option:active {
+    transform: translateY(2px) !important;
+    border-bottom-width: 2px !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5), inset 0 2px 4px rgba(0,0,0,0.2) !important;
+  }
+  .quiz-option.correct {
+    background: linear-gradient(180deg, #34d399 0%, #22c55e 40%, #16a34a 100%) !important;
+    border-color: #6ee7b7 !important;
+    border-bottom-color: #0f5132 !important;
+    color: #fff !important;
+    box-shadow: 0 6px 30px rgba(34,197,94,0.6), 0 0 60px rgba(34,197,94,0.2), inset 0 2px 0 rgba(255,255,255,0.25) !important;
+    animation: correctPop 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+    transform: scale(1.03) !important;
+  }
+  .quiz-option.wrong {
+    background: linear-gradient(180deg, #f87171 0%, #ef4444 40%, #dc2626 100%) !important;
+    border-color: #fca5a5 !important;
+    border-bottom-color: #7f1d1d !important;
+    color: #fff !important;
+    box-shadow: 0 6px 30px rgba(239,68,68,0.6), 0 0 60px rgba(239,68,68,0.2), inset 0 2px 0 rgba(255,255,255,0.25) !important;
+    animation: wrongShake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+  }
+  .quiz-option.correct-reveal {
+    background: linear-gradient(180deg, #34d399 0%, #22c55e 40%, #16a34a 100%) !important;
+    border-color: #6ee7b7 !important;
+    border-bottom-color: #0f5132 !important;
+    color: #fff !important;
+    box-shadow: 0 6px 25px rgba(34,197,94,0.5), inset 0 2px 0 rgba(255,255,255,0.2) !important;
+    animation: correctPop 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.15s !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+    transform: scale(1.02) !important;
+  }
+
+  /* Match items - 3D style */
+  .match-item {
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    border: 2px solid #4A4A50 !important;
+    border-bottom: 5px solid #1A1A1C !important;
+    background: linear-gradient(180deg, #404048 0%, #343438 40%, #2A2A2E 100%) !important;
+    color: #F0F0EA !important;
+    font-weight: 700 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.12) !important;
+    padding: 14px 16px !important;
+  }
+  .match-item:hover:not(.matched) {
+    border-color: #D4A853 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 30px rgba(212,168,83,0.3), inset 0 2px 0 rgba(255,255,255,0.15) !important;
+  }
+  .match-item.selected {
+    border-color: #D4A853 !important;
+    border-bottom-color: #A07830 !important;
+    background: linear-gradient(180deg, #3C3520 0%, #332D1A 100%) !important;
+    box-shadow: 0 0 25px rgba(212,168,83,0.3), inset 0 1px 0 rgba(255,255,255,0.1) !important;
+    transform: translateY(-2px) scale(1.03);
+  }
+  .match-item.matched {
+    opacity: 0.6;
+    pointer-events: none;
+    border-color: #22c55e !important;
+    border-bottom-color: #0f5132 !important;
+    background: linear-gradient(180deg, #1a4d2e 0%, #14532d 100%) !important;
+    box-shadow: 0 0 20px rgba(34,197,94,0.2) !important;
+    animation: matchFade 0.6s ease;
+  }
+  .match-item.wrong-flash {
+    border-color: #ef4444 !important;
+    border-bottom-color: #7f1d1d !important;
+    background: linear-gradient(180deg, #5c1a1a 0%, #4a1515 100%) !important;
+    box-shadow: 0 0 25px rgba(239,68,68,0.4) !important;
+    animation: wrongShake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  }
+
+  /* Animations */
+  @keyframes correctPop {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.08); }
+    60% { transform: scale(0.97); }
+    100% { transform: scale(1); }
+  }
+  @keyframes wrongShake {
+    0%, 100% { transform: translateX(0); }
+    15% { transform: translateX(-10px); }
+    30% { transform: translateX(10px); }
+    45% { transform: translateX(-8px); }
+    60% { transform: translateX(8px); }
+    75% { transform: translateX(-4px); }
+    90% { transform: translateX(4px); }
+  }
+  @keyframes matchFade {
+    0% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.5; }
+  }
+  @keyframes streakPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  @keyframes confettiPop {
+    0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translateY(-120px) rotate(720deg) scale(0); opacity: 0; }
+  }
+  @keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes scoreCount {
+    0% { transform: scale(1.5); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .confetti-particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    animation: confettiPop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    pointer-events: none;
+  }
+  .result-anim {
+    animation: bounceIn 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  }
+  .score-anim {
+    animation: scoreCount 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.3s both;
+  }
+
+  /* Question card */
+  .question-card {
+    background: linear-gradient(145deg, #1E1E20, #1A1A1C);
+    border: 1px solid #2E2E30;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  /* Listen play button */
+  .listen-play-btn {
+    background: linear-gradient(145deg, rgba(212,168,83,0.3), rgba(212,168,83,0.1));
+    border: 2px solid rgba(212,168,83,0.3);
+    transition: all 0.3s ease;
+  }
+  .listen-play-btn:hover {
+    background: linear-gradient(145deg, rgba(212,168,83,0.5), rgba(212,168,83,0.2));
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(212,168,83,0.2);
+  }
+  .listen-play-btn:active {
+    transform: scale(0.95);
+  }
+
   /* Light mode */
-  html.light .quiz-option{background:#f5f5f4;border-color:#d6d3d1;color:#1c1917}
-  html.light .quiz-option:hover{border-color:#D4A853}
-  html.light .quiz-option.correct{background:#166534!important;color:#fff!important}
-  html.light .quiz-option.wrong{background:#991b1b!important;color:#fff!important}
-  html.light .match-item{background:#f5f5f4;border-color:#d6d3d1;color:#1c1917}
-  html.light .match-item.selected{border-color:#D4A853!important;background:rgba(212,168,83,.15)!important}
-  html.light .progress-bar{background:#d6d3d1}
-  html.light .mode-tab{color:#78716c}
-  html.light .mode-tab.active{color:#D4A853}
+  html.light .cat-card {
+    background: linear-gradient(145deg, #ffffff, #f5f5f4);
+    border-color: #e5e5e4;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+  }
+  html.light .cat-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.08);
+  }
+  html.light .cat-header:hover {
+    background: rgba(0,0,0,0.02);
+  }
+  html.light .mode-tabs {
+    background: #f0f0ee;
+  }
+  html.light .mode-tab {
+    color: #78716c;
+  }
+  html.light .mode-tab.active {
+    color: #000 !important;
+    background: #D4A853 !important;
+  }
+  html.light .mode-tab:not(.active):hover {
+    color: #1c1917;
+    background: rgba(0,0,0,0.05);
+  }
+  html.light .quiz-option {
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f4 50%, #eeeeec 100%) !important;
+    border: 2px solid #d6d3d1 !important;
+    border-bottom: 4px solid #b8b5b0 !important;
+    color: #1c1917 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.9) !important;
+  }
+  html.light .quiz-option:hover {
+    border-color: #D4A853 !important;
+    border-bottom-color: #A07830 !important;
+    background: linear-gradient(180deg, #ffffff 0%, #fafaf9 50%, #f5f5f4 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(212,168,83,0.2), inset 0 1px 0 rgba(255,255,255,0.9) !important;
+  }
+  html.light .quiz-option.correct {
+    background: linear-gradient(145deg, #166534, #14532d) !important;
+    color: #fff !important;
+    border-color: #22c55e !important;
+  }
+  html.light .quiz-option.wrong {
+    background: linear-gradient(145deg, #991b1b, #7f1d1d) !important;
+    color: #fff !important;
+    border-color: #ef4444 !important;
+  }
+  html.light .quiz-option.correct-reveal {
+    background: linear-gradient(145deg, #166534, #14532d) !important;
+    color: #fff !important;
+    border-color: #22c55e !important;
+  }
+  html.light .match-item {
+    background: linear-gradient(145deg, #ffffff, #f5f5f4) !important;
+    border-color: #d6d3d1 !important;
+    color: #1c1917 !important;
+  }
+  html.light .match-item.selected {
+    border-color: #D4A853 !important;
+    background: rgba(212,168,83,0.1) !important;
+  }
+  html.light .match-item.matched {
+    border-color: #22c55e !important;
+    background: rgba(22,101,52,0.1) !important;
+  }
+  html.light .progress-bar {
+    background: #e5e5e4;
+  }
+  html.light .question-card {
+    background: linear-gradient(145deg, #fafaf9, #f5f5f4);
+    border-color: #e5e5e4;
+  }
+  html.light .streak-badge {
+    background: linear-gradient(135deg, rgba(239,68,68,0.1), rgba(249,115,22,0.1));
+  }
+  html.light #searchInput {
+    background: #fff;
+    border-color: #d6d3d1;
+    color: #1c1917;
+  }
+  /* Light mode - fix ALL text colors */
+  html.light .cat-card h2,
+  html.light .cat-card .text-lg,
+  html.light .cat-card .font-bold {
+    color: #1c1917 !important;
+  }
+  html.light .cat-card p,
+  html.light .cat-card .text-xs,
+  html.light .cat-card .text-sm {
+    color: #57534e !important;
+  }
+  html.light .cat-arrow {
+    color: #78716c !important;
+  }
+  html.light .phrase-item .text-base,
+  html.light .phrase-item .text-lg,
+  html.light .phrase-item .font-medium {
+    color: #1c1917 !important;
+  }
+  html.light .phrase-item .text-\[\#8B8B85\] {
+    color: #44403c !important;
+  }
+  html.light .phrase-item .text-\[\#5B5B55\],
+  html.light .phrase-item .italic {
+    color: #78716c !important;
+  }
+  html.light .phrase-item .text-\[\#6B6B65\] {
+    color: #78716c !important;
+  }
+  html.light .play-btn {
+    background: rgba(212,168,83,0.15) !important;
+    color: #b8860b !important;
+  }
+  html.light .play-btn:hover {
+    background: rgba(212,168,83,0.3) !important;
+  }
+  html.light .level-btn {
+    background: #fff !important;
+    border-color: #d6d3d1 !important;
+    color: #44403c !important;
+  }
+  html.light .level-btn.active {
+    background: #D4A853 !important;
+    color: #000 !important;
+    border-color: #D4A853 !important;
+  }
+  html.light .premium-locked h2 {
+    color: #a8a29e !important;
+  }
+  html.light .question-card p {
+    color: #1c1917 !important;
+  }
+  html.light .quiz-container .text-sm,
+  html.light .quiz-container .text-xs,
+  html.light .listen-container .text-sm,
+  html.light .listen-container .text-xs {
+    color: #57534e !important;
+  }
+  html.light .quiz-container .text-\[\#C8C8C0\],
+  html.light .listen-container .text-\[\#C8C8C0\],
+  html.light .match-container .text-\[\#C8C8C0\] {
+    color: #1c1917 !important;
+  }
+  html.light .quiz-container .text-\[\#6B6B65\],
+  html.light .listen-container .text-\[\#6B6B65\],
+  html.light .match-container .text-\[\#6B6B65\] {
+    color: #78716c !important;
+  }
+  html.light .quiz-container .text-\[\#8B8B85\],
+  html.light .listen-container .text-\[\#8B8B85\] {
+    color: #57534e !important;
+  }
+  html.light .quiz-container .text-\[\#E8E8E0\],
+  html.light .listen-container .text-\[\#E8E8E0\] {
+    color: #1c1917 !important;
+  }
+  html.light .listen-play-btn {
+    background: rgba(212,168,83,0.15) !important;
+    color: #b8860b !important;
+  }
+  html.light .cat-content {
+    border-top: 1px solid #e5e5e4 !important;
+  }
+  html.light .phrase-item {
+    border-color: #f0f0ee !important;
+  }
+  html.light .phrase-item:hover {
+    background: #fafaf9 !important;
+  }
+  html.light .hero-overlay-dark {
+    display: none !important;
+  }
+  html.light section.relative .absolute {
+    opacity: 0.15 !important;
+  }
+  html.light h1 {
+    color: #1c1917 !important;
+  }
+  html.light .text-\[\#A0A09A\] {
+    color: #57534e !important;
+  }
 </style>
 
 <script>
   let currentAudio: HTMLAudioElement | null = null;
   const FREE_CATEGORIES = 5;
+
+  // ---- SOUND EFFECTS (same as games page) ----
+  let actx: AudioContext | null = null;
+  function snd(ok: boolean) {
+    try {
+      if (!actx) actx = new (window.AudioContext || (window as any).webkitAudioContext)();
+      if (actx.state === 'suspended') actx.resume();
+      const o = actx.createOscillator(), g = actx.createGain();
+      o.connect(g); g.connect(actx.destination);
+      g.gain.setValueAtTime(0.13, actx.currentTime);
+      o.type = 'sine';
+      if (ok) {
+        o.frequency.setValueAtTime(523, actx.currentTime);
+        o.frequency.setValueAtTime(659, actx.currentTime + 0.1);
+      } else {
+        o.frequency.setValueAtTime(330, actx.currentTime);
+        o.frequency.setValueAtTime(262, actx.currentTime + 0.15);
+      }
+      g.gain.exponentialRampToValueAtTime(0.001, actx.currentTime + 0.3);
+      o.start(actx.currentTime);
+      o.stop(actx.currentTime + 0.35);
+    } catch(e) {}
+  }
+  function playCorrectSound() { snd(true); }
+  function playWrongSound() { snd(false); }
+  function playMatchSound() { snd(true); }
+  function playWinSound() { snd(true); }
+
+  // ---- CONFETTI ----
+  function spawnConfetti(container: Element) {
+    const colors = ['#D4A853', '#22c55e', '#3b82f6', '#ef4444', '#a855f7', '#f97316', '#ec4899'];
+    const rect = container.getBoundingClientRect();
+    for (let i = 0; i < 30; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'confetti-particle';
+      particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.top = '40%';
+      particle.style.animationDelay = Math.random() * 0.4 + 's';
+      particle.style.animationDuration = (0.8 + Math.random() * 0.8) + 's';
+      const angle = (Math.random() - 0.5) * 120;
+      particle.style.setProperty('--spread', angle + 'deg');
+      container.querySelector('.confetti-zone')?.appendChild(particle);
+    }
+    setTimeout(() => {
+      container.querySelectorAll('.confetti-particle').forEach(p => p.remove());
+    }, 2000);
+  }
 
   function speakEnglish(text: string) {
     speechSynthesis.cancel();
@@ -290,14 +755,21 @@ const FREE_CATEGORIES = 5;
 
     function render() {
       if (current >= questions.length) {
+        const pct = score / total;
+        const isGreat = pct >= 0.8;
+        if (isGreat) { playWinSound(); }
         container.innerHTML = `
-          <div class="text-center py-8">
-            <div class="text-5xl mb-4">${score >= total * 0.8 ? '🏆' : score >= total * 0.5 ? '👍' : '📚'}</div>
-            <h3 class="text-2xl font-bold text-[#C8C8C0] mb-2">შედეგი: ${score}/${total}</h3>
+          <div class="text-center py-8 relative" style="animation: slideUp 0.5s ease">
+            <div class="confetti-zone absolute inset-0 overflow-hidden pointer-events-none"></div>
+            <div class="text-6xl mb-4 result-anim">${isGreat ? '🏆' : pct >= 0.5 ? '👍' : '📚'}</div>
+            <h3 class="text-2xl font-bold text-[#E8E8E0] mb-2 score-anim">შედეგი: ${score}/${total}</h3>
             <p class="text-[#8B8B85] mb-1">საუკეთესო სერია: ${bestStreak} 🔥</p>
-            <p class="text-[#8B8B85] mb-6">${score >= total * 0.8 ? 'შესანიშნავი!' : score >= total * 0.5 ? 'კარგია, გააგრძელე!' : 'გაიმეორე კიდევ ერთხელ!'}</p>
-            <button class="quiz-restart bg-[#D4A853] text-black font-bold py-3 px-8 rounded-xl hover:bg-[#C49A48]">🔄 თავიდან</button>
+            <p class="text-[#8B8B85] mb-6">${isGreat ? '🎉 შესანიშნავი!' : pct >= 0.5 ? 'კარგია, გააგრძელე!' : 'გაიმეორე კიდევ ერთხელ!'}</p>
+            <button class="quiz-restart bg-gradient-to-r from-[#D4A853] to-[#E8C06A] text-black font-bold py-3.5 px-10 rounded-xl hover:shadow-lg hover:shadow-[#D4A853]/20 transition-all duration-200 hover:scale-105 active:scale-95 text-base">🔄 თავიდან</button>
           </div>`;
+        if (isGreat) {
+          setTimeout(() => spawnConfetti(container), 200);
+        }
         container.querySelector('.quiz-restart')?.addEventListener('click', () => { current = 0; score = 0; streak = 0; bestStreak = 0; generateQuestions(); render(); });
         return;
       }
@@ -305,20 +777,20 @@ const FREE_CATEGORIES = 5;
       const prompt = q.isGeoToEng ? q.phrase.georgian : q.phrase.english;
       const dir = q.isGeoToEng ? 'ქართული → ინგლისური' : 'ინგლისური → ქართული';
       container.innerHTML = `
-        <div class="mb-4 flex items-center justify-between flex-wrap gap-2">
-          <span class="text-xs text-[#6B6B65]">${dir}</span>
+        <div class="mb-4 flex items-center justify-between flex-wrap gap-2" style="animation: slideUp 0.3s ease">
+          <span class="text-xs text-[#6B6B65] font-medium">${dir}</span>
           <div class="flex items-center gap-3">
             ${streak >= 2 ? `<span class="streak-badge">🔥 ${streak}</span>` : ''}
-            <span class="text-sm text-[#C8C8C0] font-medium">${current + 1}/${total}</span>
+            <span class="text-sm text-[#C8C8C0] font-bold">${current + 1}/${total}</span>
           </div>
         </div>
         <div class="progress-bar mb-6"><div class="progress-fill" style="width:${(current / total) * 100}%"></div></div>
-        <div class="bg-[#1C1C1E] rounded-xl p-5 mb-6 text-center">
-          <p class="text-xl font-bold text-[#C8C8C0]">${prompt}</p>
+        <div class="question-card mb-6" style="animation: slideUp 0.4s ease">
+          <p class="text-xl sm:text-2xl font-bold text-[#E8E8E0]">${prompt}</p>
         </div>
         <div class="space-y-3" id="quizOptions">
           ${q.options.map((opt: string, i: number) => `
-            <button class="quiz-option w-full text-left p-4 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0]" data-idx="${i}">${opt}</button>
+            <button class="quiz-option w-full text-left p-4 rounded-xl text-[#E8E8E0]" data-idx="${i}" style="animation: slideUp ${0.4 + i * 0.08}s ease">${opt}</button>
           `).join('')}
         </div>`;
       container.querySelectorAll('.quiz-option').forEach(btn => {
@@ -326,9 +798,20 @@ const FREE_CATEGORIES = 5;
           if (container.querySelector('.quiz-option.correct,.quiz-option.wrong')) return;
           const picked = btn.textContent!.trim();
           const isCorrect = picked === q.correct;
-          if (isCorrect) { score++; streak++; bestStreak = Math.max(bestStreak, streak); btn.classList.add('correct', 'anim-correct'); }
-          else { streak = 0; btn.classList.add('wrong', 'anim-wrong'); container.querySelectorAll('.quiz-option').forEach(b => { if (b.textContent!.trim() === q.correct) b.classList.add('correct'); }); }
-          setTimeout(() => { current++; render(); }, 1200);
+          if (isCorrect) {
+            score++; streak++; bestStreak = Math.max(bestStreak, streak);
+            btn.classList.add('correct');
+            playCorrectSound();
+          } else {
+            streak = 0;
+            btn.classList.add('wrong');
+            playWrongSound();
+            // Reveal correct answer
+            container.querySelectorAll('.quiz-option').forEach(b => {
+              if (b.textContent!.trim() === q.correct) b.classList.add('correct-reveal');
+            });
+          }
+          setTimeout(() => { current++; render(); }, 1400);
         });
       });
     }
@@ -357,33 +840,41 @@ const FREE_CATEGORIES = 5;
 
     function render() {
       if (current >= questions.length) {
+        const pct = score / total;
+        const isGreat = pct >= 0.8;
+        if (isGreat) { playWinSound(); }
         container.innerHTML = `
-          <div class="text-center py-8">
-            <div class="text-5xl mb-4">${score >= total * 0.8 ? '🎧' : '📚'}</div>
-            <h3 class="text-2xl font-bold text-[#C8C8C0] mb-2">შედეგი: ${score}/${total}</h3>
+          <div class="text-center py-8 relative" style="animation: slideUp 0.5s ease">
+            <div class="confetti-zone absolute inset-0 overflow-hidden pointer-events-none"></div>
+            <div class="text-6xl mb-4 result-anim">${isGreat ? '🎧' : '📚'}</div>
+            <h3 class="text-2xl font-bold text-[#E8E8E0] mb-2 score-anim">შედეგი: ${score}/${total}</h3>
             <p class="text-[#8B8B85] mb-1">საუკეთესო სერია: ${bestStreak} 🔥</p>
-            <button class="listen-restart bg-[#D4A853] text-black font-bold py-3 px-8 rounded-xl hover:bg-[#C49A48] mt-4">🔄 თავიდან</button>
+            <p class="text-[#8B8B85] mb-6">${isGreat ? '🎉 შესანიშნავი!' : 'გაიმეორე კიდევ ერთხელ!'}</p>
+            <button class="listen-restart bg-gradient-to-r from-[#D4A853] to-[#E8C06A] text-black font-bold py-3.5 px-10 rounded-xl hover:shadow-lg hover:shadow-[#D4A853]/20 transition-all duration-200 hover:scale-105 active:scale-95 text-base">🔄 თავიდან</button>
           </div>`;
+        if (isGreat) {
+          setTimeout(() => spawnConfetti(container), 200);
+        }
         container.querySelector('.listen-restart')?.addEventListener('click', () => { current = 0; score = 0; streak = 0; bestStreak = 0; generate(); render(); });
         return;
       }
       const q = questions[current];
       container.innerHTML = `
-        <div class="mb-4 flex items-center justify-between flex-wrap gap-2">
-          <span class="text-xs text-[#6B6B65]">მოუსმინე და აირჩიე სწორი თარგმანი</span>
+        <div class="mb-4 flex items-center justify-between flex-wrap gap-2" style="animation: slideUp 0.3s ease">
+          <span class="text-xs text-[#6B6B65] font-medium">მოუსმინე და აირჩიე სწორი თარგმანი</span>
           <div class="flex items-center gap-3">
             ${streak >= 2 ? `<span class="streak-badge">🔥 ${streak}</span>` : ''}
-            <span class="text-sm text-[#C8C8C0] font-medium">${current + 1}/${total}</span>
+            <span class="text-sm text-[#C8C8C0] font-bold">${current + 1}/${total}</span>
           </div>
         </div>
         <div class="progress-bar mb-6"><div class="progress-fill" style="width:${(current / total) * 100}%"></div></div>
-        <div class="text-center mb-6">
-          <button class="listen-play-btn w-20 h-20 rounded-full bg-[#D4A853]/20 text-[#D4A853] text-4xl hover:bg-[#D4A853]/40 transition-colors mx-auto flex items-center justify-center">🔊</button>
-          <p class="text-xs text-[#6B6B65] mt-2">დააჭირე მოსასმენად</p>
+        <div class="text-center mb-6" style="animation: slideUp 0.4s ease">
+          <button class="listen-play-btn w-24 h-24 rounded-full text-[#D4A853] text-4xl mx-auto flex items-center justify-center">🔊</button>
+          <p class="text-xs text-[#6B6B65] mt-3 font-medium">დააჭირე მოსასმენად</p>
         </div>
         <div class="space-y-3">
           ${q.options.map((opt: string, i: number) => `
-            <button class="quiz-option w-full text-left p-4 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0]" data-idx="${i}">${opt}</button>
+            <button class="quiz-option w-full text-left p-4 rounded-xl text-[#E8E8E0]" data-idx="${i}" style="animation: slideUp ${0.4 + i * 0.08}s ease">${opt}</button>
           `).join('')}
         </div>`;
       // Auto-play
@@ -394,9 +885,19 @@ const FREE_CATEGORIES = 5;
           if (container.querySelector('.quiz-option.correct,.quiz-option.wrong')) return;
           const picked = btn.textContent!.trim();
           const isCorrect = picked === q.correct;
-          if (isCorrect) { score++; streak++; bestStreak = Math.max(bestStreak, streak); btn.classList.add('correct', 'anim-correct'); }
-          else { streak = 0; btn.classList.add('wrong', 'anim-wrong'); container.querySelectorAll('.quiz-option').forEach(b => { if (b.textContent!.trim() === q.correct) b.classList.add('correct'); }); }
-          setTimeout(() => { current++; render(); }, 1200);
+          if (isCorrect) {
+            score++; streak++; bestStreak = Math.max(bestStreak, streak);
+            btn.classList.add('correct');
+            playCorrectSound();
+          } else {
+            streak = 0;
+            btn.classList.add('wrong');
+            playWrongSound();
+            container.querySelectorAll('.quiz-option').forEach(b => {
+              if (b.textContent!.trim() === q.correct) b.classList.add('correct-reveal');
+            });
+          }
+          setTimeout(() => { current++; render(); }, 1400);
         });
       });
     }
@@ -432,19 +933,19 @@ const FREE_CATEGORIES = 5;
       const rightOrder = shuffle(pairs.map((_, i) => i));
       container.innerHTML = `
         <div class="flex items-center justify-between mb-4">
-          <span class="text-sm text-[#C8C8C0]">დაწყვილებული: ${matched.size}/${pairs.length}</span>
+          <span class="text-sm text-[#C8C8C0] font-bold">დაწყვილებული: ${matched.size}/${pairs.length}</span>
           <div class="flex items-center gap-3">
-            <span class="text-sm text-[#6B6B65] match-timer">0.0წმ</span>
-            <span class="text-sm text-[#C8C8C0]">⭐ ${score}</span>
+            <span class="text-sm text-[#6B6B65] match-timer font-medium">0.0წმ</span>
+            <span class="text-sm text-[#C8C8C0] font-bold">⭐ ${score}</span>
           </div>
         </div>
         <div class="progress-bar mb-5"><div class="progress-fill" style="width:${(matched.size / pairs.length) * 100}%"></div></div>
         <div class="grid grid-cols-2 gap-3">
           <div class="space-y-2">
-            ${leftOrder.map(i => `<button class="match-item match-left w-full p-3 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] text-sm text-left ${matched.has(i) ? 'matched' : ''}" data-pair="${i}">${pairs[i].english}</button>`).join('')}
+            ${leftOrder.map(i => `<button class="match-item match-left w-full p-3.5 rounded-xl text-sm text-left font-medium ${matched.has(i) ? 'matched' : ''}" data-pair="${i}">${pairs[i].english}</button>`).join('')}
           </div>
           <div class="space-y-2">
-            ${rightOrder.map(i => `<button class="match-item match-right w-full p-3 rounded-xl border border-[#2E2E30] bg-[#242426] text-[#C8C8C0] text-sm text-left ${matched.has(i) ? 'matched' : ''}" data-pair="${i}">${pairs[i].georgian}</button>`).join('')}
+            ${rightOrder.map(i => `<button class="match-item match-right w-full p-3.5 rounded-xl text-sm text-left font-medium ${matched.has(i) ? 'matched' : ''}" data-pair="${i}">${pairs[i].georgian}</button>`).join('')}
           </div>
         </div>`;
 
@@ -473,26 +974,31 @@ const FREE_CATEGORIES = 5;
       if (l === r) {
         score++;
         matched.add(l);
-        container.querySelectorAll(`.match-left[data-pair="${l}"],.match-right[data-pair="${r}"]`).forEach(el => { el.classList.add('matched', 'anim-correct'); el.classList.remove('selected'); });
+        playMatchSound();
+        container.querySelectorAll(`.match-left[data-pair="${l}"],.match-right[data-pair="${r}"]`).forEach(el => { el.classList.add('matched'); el.classList.remove('selected'); });
         if (matched.size === pairs.length) {
           clearInterval(timerInterval);
           const time = ((Date.now() - startTime) / 1000).toFixed(1);
+          playWinSound();
           setTimeout(() => {
             container.innerHTML = `
-              <div class="text-center py-8">
-                <div class="text-5xl mb-4">🎉</div>
-                <h3 class="text-2xl font-bold text-[#C8C8C0] mb-2">დასრულებულია!</h3>
+              <div class="text-center py-8 relative" style="animation: slideUp 0.5s ease">
+                <div class="confetti-zone absolute inset-0 overflow-hidden pointer-events-none"></div>
+                <div class="text-6xl mb-4 result-anim">🎉</div>
+                <h3 class="text-2xl font-bold text-[#E8E8E0] mb-2 score-anim">დასრულებულია!</h3>
                 <p class="text-[#8B8B85] mb-1">⏱ ${time} წამი · ❌ ${errors} შეცდომა</p>
-                <button class="match-restart bg-[#D4A853] text-black font-bold py-3 px-8 rounded-xl hover:bg-[#C49A48] mt-4">🔄 თავიდან</button>
+                <button class="match-restart bg-gradient-to-r from-[#D4A853] to-[#E8C06A] text-black font-bold py-3.5 px-10 rounded-xl hover:shadow-lg hover:shadow-[#D4A853]/20 transition-all duration-200 hover:scale-105 active:scale-95 mt-4 text-base">🔄 თავიდან</button>
               </div>`;
+            spawnConfetti(container);
             container.querySelector('.match-restart')?.addEventListener('click', start);
           }, 600);
         }
       } else {
         errors++;
+        playWrongSound();
         const leftEl = container.querySelector(`.match-left[data-pair="${l}"]`);
         const rightEl = container.querySelector(`.match-right[data-pair="${r}"]`);
-        [leftEl, rightEl].forEach(el => { if (el) { el.classList.add('wrong-flash', 'anim-wrong'); el.classList.remove('selected'); } });
+        [leftEl, rightEl].forEach(el => { if (el) { el.classList.add('wrong-flash'); el.classList.remove('selected'); } });
         setTimeout(() => { [leftEl, rightEl].forEach(el => { if (el) el.classList.remove('wrong-flash'); }); }, 600);
       }
     }
@@ -511,17 +1017,15 @@ const FREE_CATEGORIES = 5;
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const mode = (tab as HTMLElement).dataset.mode!;
-        // Premium lock on practice modes
         if (isPremium && !isPremiumUser && mode !== 'phrases') {
           document.getElementById('premiumModal')?.classList.remove('hidden');
           return;
         }
-        tabs.forEach(t => { t.classList.remove('active'); (t as HTMLElement).style.borderBottomColor = 'transparent'; });
-        tab.classList.add('active'); (tab as HTMLElement).style.borderBottomColor = '#D4A853';
+        tabs.forEach(t => { t.classList.remove('active'); });
+        tab.classList.add('active');
         panels.forEach(p => { (p as HTMLElement).style.display = 'none'; });
         const panel = block.querySelector(`[data-panel="${mode}"]`) as HTMLElement;
         if (panel) panel.style.display = '';
-        // Init practice modes lazily
         if (mode === 'quiz' && !initialized.quiz) { initialized.quiz = true; initQuiz(block); }
         if (mode === 'listen' && !initialized.listen) { initialized.listen = true; initListen(block); }
         if (mode === 'match' && !initialized.match) { initialized.match = true; initMatch(block); }
@@ -538,7 +1042,7 @@ const FREE_CATEGORIES = 5;
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       currentAudio = new Audio(src);
       currentAudio.play().catch(() => {
-        const text = btn.closest('.phrase-item')?.querySelector('.text-lg')?.textContent;
+        const text = btn.closest('.phrase-item')?.querySelector('.text-lg, .font-semibold')?.textContent;
         if (text) speakEnglish(text);
       });
     });
@@ -566,9 +1070,9 @@ const FREE_CATEGORIES = 5;
       btn.classList.remove('premium-toggle');
       btn.classList.add('cat-toggle');
       const title = btn.querySelector('h2');
-      if (title) { title.classList.remove('text-[#6B6B65]'); title.classList.add('text-[#C8C8C0]'); }
+      if (title) { title.classList.remove('text-[#6B6B65]'); title.classList.add('text-[#E8E8E0]'); }
       const badge = btn.querySelector('.text-\\[\\#D4A853\\]');
-      if (badge) { badge.outerHTML = '<svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>'; }
+      if (badge) { badge.outerHTML = '<svg class="w-5 h-5 text-[#6B6B65] cat-arrow transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>'; }
     });
     document.querySelectorAll('.category-block[data-premium="true"] .cat-toggle').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -613,11 +1117,12 @@ const FREE_CATEGORIES = 5;
   document.querySelectorAll('.level-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.level-btn').forEach(b => {
-        b.classList.remove('active', 'bg-[#D4A853]', 'text-black', 'font-medium');
-        b.classList.add('bg-[#242426]', 'text-[#C8C8C0]');
+        b.classList.remove('active');
+        b.classList.remove('bg-[#D4A853]', 'text-black', 'font-bold', 'border-[#D4A853]');
+        b.classList.add('bg-[#1C1C1E]', 'text-[#C8C8C0]', 'border-[#2E2E30]');
       });
-      btn.classList.add('active', 'bg-[#D4A853]', 'text-black', 'font-medium');
-      btn.classList.remove('bg-[#242426]', 'text-[#C8C8C0]');
+      btn.classList.add('active', 'bg-[#D4A853]', 'text-black', 'font-bold', 'border-[#D4A853]');
+      btn.classList.remove('bg-[#1C1C1E]', 'text-[#C8C8C0]', 'border-[#2E2E30]');
       const level = (btn as HTMLElement).dataset.level;
       document.querySelectorAll('.phrase-item').forEach(el => {
         const phraseLevel = (el as HTMLElement).dataset.level;
