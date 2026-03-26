@@ -1,9 +1,40 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-25 (7:30 PM)
+- **Date:** 2026-03-26 (5:30 PM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Evening QA Run (Mar 26, 5:30 PM)
+
+### HTTP Health Checks — ✅ All 200
+- All 8 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Verdict
+Evening QA pass. No code changes since morning. All pages 200, TS clean. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
+
+## Morning QA Run (Mar 26, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 8 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Browser Visual Testing — ✅ Both Modes
+- **Login (dark mode):** Card layout, email/password fields, Google sign-in, footer — all clean ✅
+- **Login (light mode):** White card, readable text, proper contrast, buttons visible ✅
+- **Flashcards (light mode):** Empty state, daily limit selector, add category CTA — all clean ✅
+
+### Verdict
+Morning QA pass. No code changes since last run. All pages 200, TS clean, browser visual tests pass in both light and dark mode. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Evening QA Run (Mar 25, 7:30 PM)
 
