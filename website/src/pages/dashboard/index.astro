@@ -115,7 +115,7 @@ import Layout from '../../layouts/Layout.astro';
                 resolve();
               });
             });
-          } catch(e) { console.log('sync error', e); }
+          } catch(e) { /* sync error */ }
           
           location.reload();
         });

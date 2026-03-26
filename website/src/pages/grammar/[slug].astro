@@ -517,7 +517,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
       // Uses 'fluentge-grammar-passed' which only gets set when user scores 70%+
       // (NOT the auto-completed flag from placement test)
       var navNext = document.getElementById('nav-next-lesson');
-      console.log('[FluentGe NAV LOCK] navNext:', navNext, 'isPremium:', isPremium);
+      // nav lock check
       if (navNext) {
         var grammarCompleted = {};
         try { grammarCompleted = JSON.parse(localStorage.getItem('fluentge-grammar-completed') || '{}'); } catch(e) {}
@@ -525,7 +525,7 @@ const lc = levelColors[lesson.level] || levelColors['A1'];
         
         var currentSlug = window.location.pathname.replace(/^\/grammar\//, '').replace(/\/$/, '');
         var actuallyPassed = !!grammarCompleted[currentSlug];
-        console.log('[FluentGe NAV LOCK] slug:', currentSlug, 'passed:', actuallyPassed, 'locking:', !actuallyPassed && !isPremium);
+        // debug removed
         
         if (!actuallyPassed) {
           var nextTitle = navNext.querySelector('.text-sm') ? navNext.querySelector('.text-sm').textContent : '';

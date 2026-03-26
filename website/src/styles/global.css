@@ -1528,3 +1528,22 @@ html.light #reset-modal > div {
 html.light .text-\[\#4A4A45\] {
   color: #9ca3af !important;
 }
+
+/* ========== GAMES STATS BAR — LIGHT MODE ========== */
+html.light #games-stats {
+  background: linear-gradient(180deg, #ffffff, #f9fafb) !important;
+  border-color: #e5e7eb !important;
+  border-bottom-color: #d1d5db !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.8) !important;
+}
+html.light #games-stats .bg-white\/10 {
+  background: rgba(0,0,0,0.08) !important;
+}
+
+/* Game of the Day — light mode */
+html.light #game-of-day {
+  background: linear-gradient(135deg, rgba(79,70,229,0.06), rgba(147,51,234,0.05), rgba(219,39,119,0.04)) !important;
+  border-color: rgba(99,102,241,0.2) !important;
+  border-bottom-color: rgba(67,56,202,0.25) !important;
+  box-shadow: 0 4px 12px rgba(99,102,241,0.08), inset 0 1px 0 rgba(255,255,255,0.5) !important;
+}

@@ -653,7 +653,7 @@ const levelMeta: Record<string, { icon: string; emoji: string; color: string; co
         // Completed count
         var completedEl = document.getElementById('hero-completed');
         if (completedEl) completedEl.textContent = completedCount;
-      } catch(e) { console.log('hero stats error', e); }
+      } catch(e) { /* hero stats error */ }
     })();
 
     // Level accordion toggle
