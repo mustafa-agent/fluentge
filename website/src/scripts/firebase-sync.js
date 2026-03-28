@@ -3,7 +3,7 @@
 
 import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
-import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+import { getFirestore, doc, getDoc, setDoc, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBYJ6xzlp6tP7oIQoz9UzfYbjrVgR3JrwQ",
@@ -162,7 +162,11 @@ async function saveToCloud(uid) {
     if (hash === lastSavedHash) return; // Skip if nothing changed
     data.lastSync = new Date().toISOString();
     lastSavedHash = hash;
-    await setDoc(doc(db, 'users', uid), { progress: data }, { merge: true });
+    // Also save leaderboard-visible data at top level
+    const totalXP = parseInt(localStorage.getItem('totalXP') || '0', 10);
+    const userName = (() => { try { const u = JSON.parse(localStorage.getItem('fluentge-user') || '{}'); return u.name || 'მომხმარებელი'; } catch { return 'მომხმარებელი'; } })();
+    const avatar = localStorage.getItem('fluentge-avatar') || '😊';
+    await setDoc(doc(db, 'users', uid), { progress: data, displayName: userName, avatar: avatar, totalXP: totalXP }, { merge: true });
     console.log('[FluentGe Sync] Saved to cloud');
   } catch (e) {
     console.warn('[FluentGe Sync] Save failed (offline?):', e.message);
@@ -190,8 +194,30 @@ onAuthStateChanged(auth, async (user) => {
   }
 });
 
+// Fetch top users for leaderboard
+async function getLeaderboard(topN = 10) {
+  if (!db) return [];
+  try {
+    const q = query(collection(db, 'users'), orderBy('totalXP', 'desc'), limit(topN));
+    const snap = await getDocs(q);
+    const results = [];
+    snap.forEach(d => {
+      const data = d.data();
+      if (data.totalXP > 0) {
+        results.push({ uid: d.id, name: data.displayName || 'მომხმარებელი', avatar: data.avatar || '😊', xp: data.totalXP || 0 });
+      }
+    });
+    return results;
+  } catch (e) {
+    console.warn('[FluentGe Sync] Leaderboard fetch failed:', e.message);
+    return [];
+  }
+}
+
 // Expose for manual use
 window.__fluentgeSync = {
   save: () => currentUid && saveToCloud(currentUid),
   load: () => currentUid && loadFromCloud(currentUid),
+  getLeaderboard: getLeaderboard,
+  getCurrentUid: () => currentUid,
 };

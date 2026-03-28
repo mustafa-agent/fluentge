@@ -1,9 +1,44 @@
 # FluentGe QA & Testing Log
 
 ## Last Full QA Run
-- **Date:** 2026-03-26 (5:30 PM)
+- **Date:** 2026-03-28 (9:00 AM)
 - **Status:** ✅ ALL CLEAR
 - **Issues Found:** 0
+
+## Morning QA Run (Mar 28, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 8 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Browser Visual Testing — ✅ Both Modes
+- **Dashboard (dark mode):** Stats card (0 XP, Lv.1), leaderboard, XP bar, footer — all clean ✅
+- **Games (dark mode):** Stats bar, day's game, 3 categories, all 30 game cards, colorful icons — all clean ✅
+- **Games (light mode):** White cards, readable text, proper contrast, all sections visible ✅
+
+### Verdict
+Morning QA pass. No code changes since last run. All pages 200, TS clean, browser visual tests pass in both light and dark mode. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
+
+## Morning QA Run (Mar 27, 9:00 AM)
+
+### HTTP Health Checks — ✅ All 200
+- All 8 pages (`/`, `/flashcards/`, `/grammar/`, `/games/`, `/podcast/`, `/premium/`, `/dashboard/`, `/login/`) — 200
+
+### TypeScript Check — ✅ Clean
+- `npx tsc --noEmit` — no errors
+
+### Browser Visual Testing — ✅ Both Modes
+- **Premium (dark mode):** Stats bar, pricing tiers ($6/$9), features list, testimonials, FAQ, footer — all clean ✅
+- **Grammar (dark mode):** All 5 levels, lesson cards, lock states, progress bars, premium CTA — all clean ✅
+
+### Verdict
+Morning QA pass. No code changes since last run. All pages 200, TS clean, browser visual tests pass. No bugs found. **NO NEW FEATURES per critical rule (Mar 12).** ⚡
+
+---
 
 ## Evening QA Run (Mar 26, 5:30 PM)
 

@@ -710,7 +710,21 @@ const FREE_CATEGORIES = 5;
     }, 2000);
   }
 
-  function speakEnglish(text: string) {
+  function speakEnglish(text: string, phraseId?: string) {
+    if (phraseId) {
+      const src = `/audio/phrases/${phraseId}.mp3`;
+      if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+      currentAudio = new Audio(src);
+      currentAudio.play().catch(() => {
+        // fallback to browser TTS if mp3 missing
+        speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'en-US';
+        u.rate = 0.85;
+        speechSynthesis.speak(u);
+      });
+      return;
+    }
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'en-US';
@@ -884,8 +898,8 @@ const FREE_CATEGORIES = 5;
           `).join('')}
         </div>`;
       // Auto-play
-      setTimeout(() => speakEnglish(q.phrase.english), 300);
-      container.querySelector('.listen-play-btn')?.addEventListener('click', () => speakEnglish(q.phrase.english));
+      setTimeout(() => speakEnglish(q.phrase.english, q.phrase.id), 300);
+      container.querySelector('.listen-play-btn')?.addEventListener('click', () => speakEnglish(q.phrase.english, q.phrase.id));
       container.querySelectorAll('.quiz-option').forEach(btn => {
         btn.addEventListener('click', () => {
           if (container.querySelector('.quiz-option.correct,.quiz-option.wrong')) return;

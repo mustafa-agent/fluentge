@@ -447,7 +447,29 @@ const canonicalUrl = new URL(Astro.url.pathname, 'https://fluentge.pages.dev');
           localStorage.removeItem('fluentge-user');
         }
       });
-      window.__fluentgeSync = { save: () => uid && saveCloud(uid), load: () => uid && loadCloud(uid) };
+      async function getLeaderboard(topN) {
+        if (!db) return [];
+        try {
+          const snap = await getDoc(doc(db, 'leaderboard', 'global'));
+          if (!snap.exists()) return [];
+          const entries = snap.data().entries || {};
+          return Object.entries(entries)
+            .map(([uid, e]) => ({ uid, name: e.name || 'მომხმარებელი', avatar: e.avatar || '😊', xp: e.xp || 0 }))
+            .filter(e => e.xp > 0)
+            .sort((a, b) => b.xp - a.xp)
+            .slice(0, topN || 10);
+        } catch(e) { console.warn('[Sync] Leaderboard failed:', e); return []; }
+      }
+      async function updateLeaderboardEntry(uid) {
+        if (!db || !uid) return;
+        try {
+          const totalXP = parseInt(localStorage.getItem('totalXP') || '0', 10);
+          const uName = (() => { try { const u = JSON.parse(localStorage.getItem('fluentge-user') || '{}'); return u.name || 'მომხმარებელი'; } catch { return 'მომხმარებელი'; } })();
+          const uAvatar = localStorage.getItem('fluentge-avatar') || '😊';
+          await setDoc(doc(db, 'leaderboard', 'global'), { ['entries.' + uid]: { name: uName, avatar: uAvatar, xp: totalXP, updated: Date.now() } }, { merge: true });
+        } catch(e) { console.warn('[Sync] Leaderboard update failed:', e); }
+      }
+      window.__fluentgeSync = { save: () => uid && saveCloud(uid).then(() => updateLeaderboardEntry(uid)), load: () => uid && loadCloud(uid), getLeaderboard, getCurrentUid: () => uid };
       
       // Global logout button handler
       var logoutBtn = document.getElementById('nav-logout');
